@@ -3,10 +3,10 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 1%
+source-wordcount: '1125'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
 
    >[!NOTE]
    >
-   >Als u de klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent, adviseren wij het gebruiken van een ontwikkelingszandbak voor dit leerprogramma.
+   >Als u de klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent, adviseren wij het gebruiken van een ontwikkelingszandbak voor dit leerprogramma. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
 1. Selecteer **[!UICONTROL Schema maken]** knop rechtsboven
@@ -63,10 +63,10 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 
 >[!TIP]
 > 
->In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent Mixin]**_, en _**[!UICONTROL Consumentenervaringsgebeurtenis]**_.
+>In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_, en _**[!UICONTROL Consumentenervaringsgebeurtenis]**_.
 
-1. Behouden **[!UICONTROL Bestaande veldgroep gebruiken]** keuzerondje geselecteerd
-1. Zoeken naar [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. In de **[!UICONTROL Veldgroepen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
+1. Zoeken naar [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Het selectievakje inschakelen
 1. Zoeken naar [!UICONTROL `Consumer Experience Event`]
 1. Het selectievakje inschakelen
@@ -83,7 +83,7 @@ Als de veldgroepen zijn geselecteerd, kunt u het schema een naam geven. Een geme
 
 ![Weblettergegevens Luma](assets/schema-luma-web-event-data.png)
 
-Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
+Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL weergavenaam] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op Platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.jpg)
 

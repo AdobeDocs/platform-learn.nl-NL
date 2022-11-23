@@ -3,9 +3,9 @@ title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 2%
 
 ---
@@ -16,14 +16,14 @@ Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken 
 
 ## Gegevensverzameling
 
-* machtiging hebben om **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Bewerken]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, en **[!UICONTROL Omgevingen beheren]** tageigenschappen. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* machtiging hebben om **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Bewerken]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, **[!UICONTROL Omgevingen beheren]**, en **[!UICONTROL Eigenschappen beheren]**. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Als u de facultatieve gebeurtenis zult voltooien die les door:sturen, een productvergunning hebben die rand door:sturen en toestemmingspunt omvat **[!UICONTROL Platforms]** > **[!UICONTROL Rand]**
 
 ## Experience Platform
 
 Deze eigenschappen zouden aan alle klanten van Experience Cloud beschikbaar moeten zijn, zelfs als u geen klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent.
 
-* Toegang tot de **standaardproductie** sandbox.
+* Toegang tot de **standaardproductie**, **&quot;Prod&quot;** sandbox (.
 * Toegang tot **[!UICONTROL Schema&#39;s beheren]** en **[!UICONTROL Schema&#39;s weergeven]** krachtens **[!UICONTROL Gegevensmodellering]**
 * Toegang tot **[!UICONTROL Identiteitsnaamruimten beheren]** en **[!UICONTROL Identiteitsnaamruimten weergeven]** krachtens **[!UICONTROL Identity Management]**
 * Toegang tot **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]** krachtens **[!UICONTROL Gegevensverzameling]**
