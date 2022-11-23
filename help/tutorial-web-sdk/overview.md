@@ -3,10 +3,10 @@ title: Zelfstudie Adobe Experience Cloud implementeren met Web SDK
 description: Leer hoe te om de toepassingen van Experience Cloud uit te voeren gebruikend het Web SDK van Adobe Experience Platform.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6488faee86a53585bdbf03e069c4d6cf7e81d096
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 2%
+source-wordcount: '417'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,9 @@ Nadat u de zelfstudie hebt voltooid, kunt u het volgende doen:
 
 ## Vereisten
 
-In deze lessen wordt aangenomen dat u een Adobe ID en de [vereiste machtigingen](configure-permissions.md) om de lessen te voltooien. Als niet, moet u uw Beheerder van Experience Cloud bereiken om toegang te verzoeken.
+Alle klanten van Experience Cloud kunnen SDK van het Web van het Platform gebruiken. Het is geen vereiste om een op Platform-gebaseerde toepassing zoals Real-time Customer Data Platform of Journey Optimizer vergunning te geven om Web SDK te gebruiken.
+
+In deze lessen wordt aangenomen dat u een Adobe-account en de [vereiste machtigingen](configure-permissions.md) om de lessen te voltooien. Als niet, moet u uw Beheerder van Experience Cloud bereiken om toegang te verzoeken.
 
 Ook wordt aangenomen dat u bekend bent met de ontwikkelingstalen aan de voorzijde, zoals HTML en JavaScript. U hoeft geen expert in deze talen te zijn, maar u kunt meer uit deze zelfstudie halen als u code kunt lezen en begrijpen.
 

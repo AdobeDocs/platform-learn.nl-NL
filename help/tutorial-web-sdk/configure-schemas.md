@@ -3,9 +3,9 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ Als de veldgroepen zijn geselecteerd, kunt u het schema een naam geven. Een geme
 
 1. In de **[!UICONTROL Compositie**] selecteert u de `Untitled schema name`
 1. In de **[!UICONTROL Schema-eigenschappen]** in het deelvenster **[!UICONTROL Weergavenaam]** `Luma Web Event Data`
+1. Selecteer iets buiten de **[!UICONTROL Weergavenaam]** veld om het **[!UICONTROL Opslaan]** option
 1. Selecteren **[!UICONTROL Opslaan]**
 
 ![Weblettergegevens Luma](assets/schema-luma-web-event-data.png)
