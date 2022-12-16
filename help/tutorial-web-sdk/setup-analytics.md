@@ -3,9 +3,9 @@ title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Vang daarna extra gegevens van de de gegevenslaag van de Luma en verzend het naa
 
 ### E-commercegegevenselementen maken
 
-Tijdens de Create les van gegevenselementen, u [gemaakte JavaScript-gegevenselementen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) die inhoud en identiteitsgegevens heeft vastgelegd. Nu zult u extra gegevenselementen creëren om e-commercegegevens te vangen. Omdat [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} gebruikt verschillende structuren voor gegevenslagen voor productdetailpagina&#39;s en -producten in het winkelwagentje. Voor elk scenario moet u gegevenselementen maken. Gebruik de meegeleverde codefragmenten hieronder:
+Tijdens de Create les van gegevenselementen, u [gemaakte JavaScript-gegevenselementen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) die inhoud en identiteitsgegevens heeft vastgelegd. Nu zult u extra gegevenselementen creëren om e-commercegegevens te vangen. Omdat [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} gebruikt verschillende structuren voor gegevenslagen voor productdetailpagina&#39;s en -producten in het winkelwagentje. Voor elk scenario moet u gegevenselementen maken. U zult sommige elementen van de douanecodegegevens moeten tot stand brengen om te pakken wat u van de de gegevenslaag van de Luma nodig hebt, die al dan niet noodzakelijk wanneer het uitvoeren op uw eigen plaats kan zijn. In dit geval moet u door een reeks winkelwagentjes bladeren om specifieke details van elk product te pakken. Gebruik de meegeleverde codefragmenten hieronder:
 
 1. Open de eigenschap tag die u gebruikt voor de zelfstudie
 1. Ga naar **[!UICONTROL Gegevenselementen]**
