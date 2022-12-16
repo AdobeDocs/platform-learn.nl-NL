@@ -3,9 +3,9 @@ title: Een labelregel maken
 description: Leer hoe u een gebeurtenis naar het Edge Network van het Platform verzendt met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,8 @@ waar;
 
 
 ## Tagregel maken
+
+In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. U zult deze eerste regel gebruiken om het voorwerp XDM naar het Netwerk van de Rand te verzenden gebruikend Web SDK [!UICONTROL Gebeurtenis verzenden] handeling. Later in deze zelfstudie verzendt u verschillende versies van het XDM-object op basis van het type pagina waarop de bezoeker zich bevindt. Om die reden, zult u regelvoorwaarden gebruiken om die andere types van pagina&#39;s uit te sluiten.
 
 Een labelregel maken:
 
