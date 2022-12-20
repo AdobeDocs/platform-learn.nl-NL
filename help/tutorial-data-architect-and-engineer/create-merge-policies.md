@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -134,13 +134,13 @@ Wijzig in de profielzoekopdracht het samenvoegbeleid waarnaar u teruggaat `Defau
 
 ![Een profiel weergeven met een ander samenvoegbeleid](assets/mergepolicies-backToDanny.png)
 
-Wat is hier aan de hand? Welnu, het samenvoegen van profielen is niet één keer. Klantprofielen in real time worden verzameld op basis van verschillende factoren, waaronder het samenvoegbeleid. U kunt meerdere samenvoegbeleidsregels maken om in verschillende contexten te gebruiken, afhankelijk van de weergave van de klant die u wilt gebruiken.
+Wat is hier aan de hand? Welnu, het samenvoegen van profielen is niet één keer. De de klantenprofielen van de in real time worden verzameld op de vlucht, die op diverse factoren wordt gebaseerd, met inbegrip van welk fusieprincipe wordt gebruikt. U kunt meerdere samenvoegbeleidsregels maken om in verschillende contexten te gebruiken, afhankelijk van de weergave van de klant die u wilt gebruiken.
 
 Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Stel bijvoorbeeld dat u gegevens van derden in een Platform invoert die niet kunnen worden gebruikt voor gevallen van verpersoonlijkingsgebruik, maar _kan_ worden gebruikt voor reclamedoeleinden. U kunt een fusiebeleid tot stand brengen dat deze derde dataset sluit en dit fusiebeleid gebruiken om segmenten voor uw het advertentiegebruikgevallen te bouwen.
 
 ## Aanvullende bronnen
 
 * [Documentatie voor samenvoegingsbeleid](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [API voor samenvoegingsbeleid (onderdeel van Real-time gebruikersprofiel-API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [API voor samenvoegingsbeleid (onderdeel van Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Laten we nu verder gaan naar de [gegevensbeheerkader](apply-data-governance-framework.md).

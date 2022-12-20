@@ -1,6 +1,6 @@
 ---
 title: Klantprofielen in realtime inschakelen
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Klantprofielen in realtime inschakelen
 description: In deze les, zult u uw schema's en datasets voor het Profiel van de Klant in real time toelaten.
 role: Data Architect
@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -26,13 +26,13 @@ Met het Profiel van de Klant in real time, kunt u een holistische mening van elk
 
 Hoe verbazingwekkend al dat klinkt, je hoeft niet te activeren *alle gegevens* voor profiel. In feite, zou u slechts de gegevens moeten toelaten u voor activeringsgebruiksgevallen nodig hebt. Laat gegevens toe die u voor de gevallen van het marketinggebruik wilt gebruiken, vraag centrumintegratie, etc., waar u snelle toegang tot een robuust klantenprofiel nodig hebt. Als u gegevens alleen uploadt voor analyse, moet dit waarschijnlijk niet worden ingeschakeld voor profiel.
 
-Er zijn belangrijke [handleidingen voor gegevens in realtime klantprofiel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) die u moet controleren wanneer u bepaalt welke van uw eigen gegevens u voor profiel moet inschakelen.
+Er zijn belangrijke [begeleidingen voor gegevens van het Profiel van de Klant in real time](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) die u moet controleren wanneer u bepaalt welke van uw eigen gegevens u voor profiel moet inschakelen.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Gegevensarchitecten** zal het Profiel van de Klant in real time buiten deze zelfstudie moeten toelaten.
+**Gegevensarchitecten** zal het Profiel van de Klant in real time buiten dit leerprogramma moeten toelaten.
 
-Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informatie over het profiel van de Klant in real time:
+Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informatie over Real-Time Klantprofiel:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Vereiste machtigingen
@@ -47,7 +47,7 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## Schema&#39;s voor realtime klantprofiel inschakelen met de gebruikersinterface van het Platform
+## Schema&#39;s inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het Platform
 
 Laten we beginnen met de eenvoudige taak om een schema in te schakelen:
 
@@ -118,7 +118,7 @@ U zou in het gebruikersinterface moeten kunnen zien dat alle vijf schema&#39;s v
 ![Alle schema&#39;s ingeschakeld](assets/profile-allSchemasEnabled.png)
 
 
-## Gegevenssets inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het Platform
+## Gegevenssets inschakelen voor Real-Time Klantprofiel met behulp van de gebruikersinterface van het Platform
 
 De datasets moeten ook voor Profiel worden toegelaten, en het proces is nog eenvoudiger:
 
@@ -146,7 +146,7 @@ Nu zult u een dataset voor Profiel toelaten gebruikend API. Nogmaals, als u het 
 
 Eerst moeten we de `id` van de `Luma CRM Dataset`:
 
-1. Openen [!DNL Postman]
+1. Open [!DNL Postman]
 1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Selecteer **Verzenden** knop
@@ -187,7 +187,7 @@ U kunt ook bevestigen dat de gebruikersinterface de toegelaten dataset toont:
 
 ## Aanvullende bronnen
 
-* [Documentatie bij real-timeklantprofiel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl)
+* [Real-Time documentatie voor klantprofiel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl)
 * [Real-time verwijzing API voor klantprofiel](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 

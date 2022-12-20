@@ -2,7 +2,7 @@
 title: Een gegevensstroom maken
 description: Een gegevensstroom maken
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -34,7 +34,7 @@ In het volgende scherm kunt u toevoegen welke Adobe-producten en -services de ge
 
 Bedrijven hebben doorgaans een promotiepad voor updates van websites. Iemand bij het bedrijf (een marketeer of ingenieur, afhankelijk van de veranderingen) test typisch hun veranderingen in een ontwikkelomgeving die slechts die persoon gebruikt. Zodra ze zich vertrouwd voelen met de veranderingen, worden de veranderingen bevorderd tot een het opvoeren milieu waar zij verdere tests ontvangen. Tot slot worden de wijzigingen gepubliceerd naar de productiewebsite die gebruikers zien. Dit promotiepatroon wordt ondersteund door gegevensstromen.
 
-Als u op Platform-gebaseerde toepassingen zoals in real time CDP, Journey Optimizer, of Customer Journey Analytics steunt, moeten de extra gegevensstromen in de afzonderlijke zandbakken van het Platform worden gecreeerd die aan deze milieu&#39;s beantwoorden.
+Als u op Platform-gebaseerde toepassingen zoals Real-Time CDP, Journey Optimizer, of Customer Journey Analytics steunt, moeten de extra gegevensstromen in de afzonderlijke zandbakken van het Platform worden gecreeerd die aan deze milieu&#39;s beantwoorden.
 
 Als u geen klant van het Platform bent, kunt u veelvoudige gegevensstromen in één enkele zandbak tot stand brengen en de eigenschap van de gegevensstroomkopie gebruiken om montages te dupliceren.
 

@@ -2,7 +2,7 @@
 title: Profiel
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -19,7 +19,7 @@ De profielgegevens worden door andere extensies gebruikt om acties met betrekkin
 
 >[!IMPORTANT]
 >
->De functionaliteit Profiel die in deze les wordt beschreven is los van de functionaliteit van het Profiel van de Klant in real time in Adobe Experience Platform en op Platform-gebaseerde toepassingen.
+>De functionaliteit Profiel die in deze les wordt beschreven is los van de functionaliteit Real-Time Klantprofiel in Adobe Experience Platform en op Platform gebaseerde toepassingen.
 
 
 ## Vereisten

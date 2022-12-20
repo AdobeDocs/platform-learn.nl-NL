@@ -7,7 +7,7 @@ kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -37,7 +37,7 @@ De onderwerpen omvatten:
 * Gegevensbeheer—inclusief het maken van schema&#39;s, gegevenssets, identiteiten, samenvoegbeleid en gegevensbeheer
 * Gegevensinvoer met batch- en streaming-modi
 * Webgegevens vastleggen met Adobe Experience Platform Web SDK
-* Klantprofielen in realtime samenstellen
+* Klantprofielen voor realtime samenstellen
 * De Dienst van de Vraag gebruiken om gegevens te bevestigen en gegevens te halen
 * Segmenten samenstellen
 
@@ -48,7 +48,7 @@ Adobe Experience Platform is een technisch platform dat u helpt marketingdoelste
 ## Voorwaarden
 
 * U hebt de [Inleiding tot Adobe Experience Platform-cursus](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) over Experience League en vertrouwd zijn met de mogelijkheden van het Platform
-* U hebt toegang tot een account die is ingericht voor Adobe Experience Platform (of een op een Platform gebaseerde toepassing zoals Real-time CDP of Journey Optimizer) en Gegevensverzameling (voorheen Launch).
+* U hebt toegang tot een account die is ingericht voor Adobe Experience Platform (of een op een Platform gebaseerde toepassing zoals Real-Time CDP of Journey Optimizer) en gegevensverzameling (voorheen Starten).
 * U bent systeembeheerder van dat account of u kunt een account hebben [gebruikersmachtigingen configureren](configure-permissions.md) voor jou.
 
 ## Deze zelfstudie gebruiken

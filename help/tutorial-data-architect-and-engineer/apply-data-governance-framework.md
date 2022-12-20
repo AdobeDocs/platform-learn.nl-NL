@@ -8,7 +8,7 @@ feature: Data Governance
 kt: 4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -63,9 +63,9 @@ Nu is het tijd om de gegevens te etiketteren waarvan gebruik wij willen beperken
    ![Data Governance](assets/governance-dataset.png)
 1. Vouw in het modale **[!UICONTROL Labels verkleinen]** en de **[!UICONTROL C2]** label
 1. Selecteer **[!UICONTROL Wijzigingen opslaan]** knop
-   ![Gegevensbeheer](assets/governance-applyLabel.png)
+   ![Data Governance](assets/governance-applyLabel.png)
 1. Terugkeren naar hoofdmap [!UICONTROL Gegevensbeheer] scherm, met de **[!UICONTROL Overerfde labels tonen]** schakelt, kunt u zien hoe het etiket op alle gebieden in de dataset is toegepast.
-   ![Gegevensbeheer](assets/governance-labelsAdded.png)
+   ![Data Governance](assets/governance-labelsAdded.png)
 
 
 <!--adding extra, unnecessary fields from field groups makes it harder to see which fields really need labels-->
@@ -78,7 +78,7 @@ Nu onze gegevens gelabeld zijn, kunnen we een beleid maken.
 1. Selecteer in de gebruikersinterface van het Platform de optie **[!UICONTROL Beleid]** in de linkernavigatie
 1. Op het Browse lusje, is er reeds een uit-van-de-doos beleid genoemd &quot;de uitvoerbeperking van de derde partij&quot;die het C2 etiket met de marketing actie associeert [!UICONTROL Exporteren naar derde partij]—precies wat we nodig hebben!
 1. Selecteer het beleid en schakel het vervolgens in via het dialoogvenster **[!UICONTROL Beleidstatus]** schakelen
-   ![Gegevensbeheer](assets/governance-enablePolicy.png)
+   ![Data Governance](assets/governance-enablePolicy.png)
 
 U kunt uw eigen beleid maken door de **[!UICONTROL Beleid maken]** knop. Hierdoor wordt een wizard geopend waarmee u meerdere labels en beperkingen voor marketingacties kunt combineren.
 

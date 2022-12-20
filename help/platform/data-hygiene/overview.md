@@ -7,7 +7,7 @@ kt: 10360
 thumbnail: 344949.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Meer informatie over de functie Gegevenshygiëne in Adobe Experience Platform.
 
-De Hygiëne van gegevens staat u toe om zowel consumenten als volledige datasets van alle opslagruimten van het Experience Platform, zoals het gegevensmeer, de profieldienst, en de identiteitsdienst te schrappen. U hoeft zich geen zorgen te maken over de plaats waar Adobe de gegevens opslaat op de back-end terwijl u gegevens efficiënt beheert voor al uw op Platform gebaseerde toepassingen zoals Customer Journey Analytics, Journey Optimizer en Real-time CDP. Ga voor meer informatie naar de [documentatie over gegevenshygiëne](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
+De Hygiëne van gegevens staat u toe om zowel consumenten als volledige datasets van alle opslagruimten van het Experience Platform, zoals het gegevensmeer, de profieldienst, en de identiteitsdienst te schrappen. U hoeft zich geen zorgen te maken over waar Adobe de gegevens op de achtergrond opslaat, aangezien u gegevens efficiënt beheert voor al uw op Platform gebaseerde toepassingen zoals Customer Journey Analytics, Journey Optimizer en Real-Time CDP. Ga voor meer informatie naar de [documentatie over gegevenshygiëne](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/344949?quality=12&learn=on)
 

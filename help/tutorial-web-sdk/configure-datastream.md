@@ -3,7 +3,7 @@ title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en Experience Cloud oplossingen te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van he
 
    >[!NOTE]
    >
-   >Als u de klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent, adviseren wij het gebruiken van een ontwikkelingszandbak voor dit leerprogramma. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een Platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL DataStreams]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Nieuwe DataStream]** aan de rechterkant van het scherm.

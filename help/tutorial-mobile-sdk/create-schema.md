@@ -2,7 +2,7 @@
 title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -53,7 +53,7 @@ In deze les zult u:
 
    >[!NOTE]
    >
-   > De klanten van op Platform-gebaseerde toepassingen zoals in real time CDP zouden een ontwikkelingszandbak voor dit leerprogramma moeten gebruiken. Andere klanten gebruiken de standaardproductiesandbox.
+   > Klanten van toepassingen op basis van Platforms, zoals Real-Time CDP, dienen een ontwikkelingssandbox te gebruiken voor deze zelfstudie. Andere klanten gebruiken de standaardproductiesandbox.
 
 
 1. Selecteren **[!UICONTROL Schemas]** krachtens **[!UICONTROL Gegevensbeheer]**.

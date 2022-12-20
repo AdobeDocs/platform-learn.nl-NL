@@ -1,12 +1,12 @@
 ---
 title: Gegevens opnemen via de Adobe Analytics Source-aansluiting
-description: Met de Adobe Analytics Source-aansluiting kunt u gegevens eenvoudig streamen van Adobe Analytics naar Adobe Experience Platform Real-time klantprofiel en Experience Data Lake, op een naadloze en schaalbare manier.
+description: Met de Adobe Analytics Source-aansluiting kunt u gegevens eenvoudig streamen van Adobe Analytics naar Adobe Experience Platform Real-Time Customer Profile (realtime profiel van de klant) en het Data Lake (Engelstalig) beleven. Dit gebeurt op een naadloze en schaalbare manier.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Gegevens opnemen via de Adobe Analytics Source-aansluiting
 
-Met de Adobe Analytics Source-aansluiting kunt u gegevens eenvoudig streamen van Adobe Analytics naar Adobe Experience Platform Real-time klantprofiel en Experience Data Lake, op een naadloze en schaalbare manier. Voor meer gedetailleerde productdocumentatie raadpleegt u [Een Adobe Analytics-bronaansluiting maken in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)
+Met de Adobe Analytics Source-aansluiting kunt u gegevens eenvoudig streamen van Adobe Analytics naar Adobe Experience Platform Real-Time Customer Profile (realtime profiel van de klant) en het Data Lake (Engelstalig) beleven. Dit gebeurt op een naadloze en schaalbare manier. Voor meer gedetailleerde productdocumentatie raadpleegt u [Een Adobe Analytics-bronaansluiting maken in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/29687?quality=12&learn=on)
 

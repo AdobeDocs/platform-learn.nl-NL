@@ -7,7 +7,7 @@ role: Data Architect
 kt: 9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 5%
@@ -22,6 +22,6 @@ Leer hoe u schema&#39;s voor uw bedrijfsgegevens maakt met Real-time Customer Da
 
 >[!INFO]
 >
-> Deze video maakt deel uit van een cursus, [Aan de slag met CDP in real time, B2B Edition voor marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), gratis beschikbaar op Experience League!
+> Deze video maakt deel uit van een cursus, [Aan de slag met Real-Time CDP, B2B Edition voor marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), gratis beschikbaar op Experience League!
 
 Ga voor meer informatie naar de [schemadocumentatie](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl).

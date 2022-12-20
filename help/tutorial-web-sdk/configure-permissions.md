@@ -3,7 +3,7 @@ title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken 
 
 ## Experience Platform
 
-Deze eigenschappen zouden aan alle klanten van Experience Cloud beschikbaar moeten zijn, zelfs als u geen klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent.
+Deze functies moeten beschikbaar zijn voor alle Experience Cloud-klanten, zelfs als u geen klant bent van een op een Platform gebaseerde toepassing zoals Real-Time CDP.
 
 * Toegang tot de **standaardproductie**, **&quot;Prod&quot;** sandbox (.
 * Toegang tot **[!UICONTROL Schema&#39;s beheren]** en **[!UICONTROL Schema&#39;s weergeven]** krachtens **[!UICONTROL Gegevensmodellering]**

@@ -2,7 +2,7 @@
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
@@ -156,7 +156,7 @@ Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, i
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen
 
-De volgende stap is de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-time klantprofiel:
+De volgende stap is de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-Time Customer Profile:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
@@ -235,7 +235,7 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
    ![Klantprofiel](assets/experience-platform-validate-dataset-custProfile.png)
 
-U hebt nu SDK van het Web van het Platform voor Experience Platform (en Real-time CDP toegelaten! En Customer Journey Analytics! En Journey Optimizer!)!
+U hebt nu Platform Web SDK voor Experience Platform toegelaten (en Real-Time CDP! En Customer Journey Analytics! En Journey Optimizer!)!
 
 
 [Volgende: ](setup-analytics.md)

@@ -3,7 +3,7 @@ title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe te om Adobe Target uit te voeren gebruikend het Web SDK van het Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '3783'
 ht-degree: 0%
@@ -161,7 +161,7 @@ Navigeer naar Omgeving-id&#39;s om deze in te stellen of te zoeken **Adobe Targe
 
 ### Doelnaamruimte voor id van derden
 
-Met deze optionele instelling kunt u opgeven welk identiteitssymbool moet worden gebruikt voor de doel-id van derden. Doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie kunt u naar de [Real-time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) van de doelhandleiding.
+Met deze optionele instelling kunt u opgeven welk identiteitssymbool moet worden gebruikt voor de doel-id van derden. Doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie kunt u naar de [Real-Time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) van de doelhandleiding.
 
 De identiteitssymbolen staan in de lijst met identiteiten onder **Gegevensverzameling** > **[!UICONTROL Klant]** > **[!UICONTROL Identiteiten]**.
 

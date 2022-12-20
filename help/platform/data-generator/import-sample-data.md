@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 0%
@@ -159,7 +159,7 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
 
 ## Validatie
 
-De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, de realtime profielen van klanten worden samengesteld die gegevens van meerdere systemen combineren. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://platform.adobe.com/):
+De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, realtime profielen van klanten worden gemaakt waarin gegevens van meerdere systemen worden gecombineerd. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://platform.adobe.com/):
 
 1. Ga naar **[!UICONTROL Profielen]** > **[!UICONTROL Bladeren]**
 1. Selecteren `Luma Loyalty Id` als de **[!UICONTROL Naamruimte identiteit]**

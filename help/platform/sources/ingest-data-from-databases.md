@@ -1,12 +1,12 @@
 ---
 title: Gegevens opnemen met behulp van een databasebronaansluiting
-description: In deze video wordt uitgelegd hoe u een batch-opname van gegevens uit een databasebron kunt uitvoeren naar het Adobe Experience Platform Real-time Klantprofiel en Experience Data Lake, op een naadloze en schaalbare manier.
+description: Deze video loopt door hoe te om een partijenlijst van gegevens van een gegevensbestandbron in Adobe Experience Platform uit te voeren in real time het Profiel van de Klant en het Leer van Gegevens van de Ervaring, op een naadloze en scalable manier.
 role: Data Engineer
 feature: Sources
 kt: 6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Gegevens opnemen met behulp van databasebronaansluiting
 
-In deze video wordt uitgelegd hoe u een batch-opname van gegevens uit een databasebron kunt uitvoeren naar het Adobe Experience Platform Real-time Klantprofiel en Experience Data Lake, op een naadloze en schaalbare manier. Voor meer gedetailleerde productdocumentatie raadpleegt u [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) op de overzichtspagina Source Connectors.
+Deze video loopt door hoe te om een partijenlijst van gegevens van een gegevensbestandbron in Adobe Experience Platform uit te voeren in real time het Profiel van de Klant en het Leer van Gegevens van de Ervaring, op een naadloze en scalable manier. Voor meer gedetailleerde productdocumentatie raadpleegt u [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) op de overzichtspagina Source Connectors.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?quality=12&learn=on)
 

@@ -2,7 +2,7 @@
 title: Gegevens verzenden naar Adobe Experience Platform
 description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 
-Deze optionele les is relevant voor alle klanten van Real-time Customer Data Platform (Real-time CDP), Journey Optimizer en Customer Journey Analytics. Experience Platform, de basis van producten van de Experience Cloud, is een open systeem dat al uw gegevens - Adobe en niet-Adobe - in robuuste klantenprofielen omzet die in echt - tijd bijwerken en AI-gedreven inzichten gebruiken om u te helpen om de juiste ervaringen over elk kanaal te leveren.
+Deze optionele les is relevant voor alle klanten van Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer en Customer Journey Analytics. Experience Platform, de basis van producten van de Experience Cloud, is een open systeem dat al uw gegevens - Adobe en niet-Adobe - in robuuste klantenprofielen omzet die in echt - tijd bijwerken en AI-gedreven inzichten gebruiken om u te helpen om de juiste ervaringen over elk kanaal te leveren.
 
 De [event](events.md), [levenscyclus](lifecycle-data.md), en [identiteit](identity.md) de gegevens die u verzamelde en naar het Netwerk van de Rand van het Platform in vroegere lessen verzendt worden door:sturen aan de diensten die in uw gegevensstroom, met inbegrip van Adobe Experience Platform worden gevormd.
 
@@ -79,7 +79,7 @@ Platform is een robuuster hulpmiddel voor het valideren van gegevens [queryservi
 
 ## Klantprofiel in realtime inschakelen
 
-Met het Real-Time Klantprofiel van Experience Platform kunt u een holistische weergave van elke individuele klant maken waarin gegevens van meerdere kanalen worden gecombineerd, waaronder online-, offline-, CRM- en gegevens van derden. Het profiel staat u toe om uw ongelijke klantengegevens in een verenigde mening te consolideren die een actionable, timestamped rekening van elke klanteninteractie aanbiedt.
+Het Echte Profiel van de Klant van het Experience Platform staat u toe om een holistische mening van elke individuele klant te bouwen die gegevens van veelvoudige kanalen, met inbegrip van online, off-line, CRM, en derdegegevens combineert. Het profiel staat u toe om uw ongelijke klantengegevens in een verenigde mening te consolideren die een actionable, timestamped rekening van elke klanteninteractie aanbiedt.
 
 ### Het schema inschakelen
 

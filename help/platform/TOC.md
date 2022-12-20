@@ -4,7 +4,7 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 3%
@@ -78,7 +78,7 @@ ht-degree: 3%
    + [Modelprestaties analyseren](data-science-workspace/analyze-model-performance.md)
    + [Een getraind model maken en publiceren (UI)](data-science-workspace/create-model-ui.md)
    + [Geautomatiseerde training en scoring voor een service plannen](data-science-workspace/schedule-training-scoring.md)
-   + [Klantprofielen in realtime verrijken met kennis van machinaal leren](data-science-workspace/dsw-profile-segmentation.md)
+   + [Klantprofielen in realtime verrijken met leergegevens over computers](data-science-workspace/dsw-profile-segmentation.md)
    + [Bronbestanden in een recept plaatsen](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
    + [Een verpakt recept (UI) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
    + [Een verpakt recept (API) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
@@ -184,7 +184,7 @@ ht-degree: 3%
    + [Customer Journey Analytics-zelfstudies](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Journey Orchestration-zelfstudies](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Zelfstudies voor offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target=&quot;_blank&quot;}
-   + CDP-zelfstudies in realtime{#rtcdp}
+   + Real-Time CDP-zelfstudies{#rtcdp}
       + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
       + [Eind-aan-eind demo](/help/platform/rtcdp/demo.md)

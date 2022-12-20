@@ -1,13 +1,13 @@
 ---
 title: Cloudopslag voor bestanden of marketingdoelen voor e-mail configureren
-description: Krijg uiteinden tijdens een analyse van de configuratie van een op dossier-gebaseerde bestemming in Adobe in real time CDP. Dit geldt voor cloudopslagbestemmingen (bijvoorbeeld S3 of SFTP) en ook voor marketingbestemmingen via e-mail.
+description: Krijg uiteinden tijdens een analyse van de configuratie van een op dossier-gebaseerde bestemming in Adobe Real-Time CDP. Dit geldt voor cloudopslagbestemmingen (bijvoorbeeld S3 of SFTP) en ook voor marketingbestemmingen via e-mail.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

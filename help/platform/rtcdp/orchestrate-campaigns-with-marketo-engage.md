@@ -6,7 +6,7 @@ role: User
 kt: 9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -21,6 +21,6 @@ Leer hoe u B2B-campagnes kunt ordenen met Marketo Engage en Real-time Customer D
 
 >[!INFO]
 >
-> Deze video maakt deel uit van een cursus, [Aan de slag met CDP in real time, B2B Edition voor marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), gratis beschikbaar op Experience League!
+> Deze video maakt deel uit van een cursus, [Aan de slag met Real-Time CDP, B2B Edition voor marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), gratis beschikbaar op Experience League!
 
-Ga voor meer informatie naar de [Real-time CDP B2B Edition-documentatie](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Ga voor meer informatie naar de [Real-Time CDP B2B Edition-documentatie](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).

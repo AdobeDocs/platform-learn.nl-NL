@@ -6,7 +6,7 @@ feature: Profiles
 kt: 6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Overzicht van Unieregelingen
 
-Deze video geeft u een overzicht van verenigingsschema&#39;s die door Adobe Experience Platform in real time het Profiel van de Klant worden gebruikt. Met Unieschema&#39;s kunt u een samenvoeging zien van alle velden in schema&#39;s die dezelfde klasse delen. Het Profiel van de Klant in real time gebruikt de verenigingsschema&#39;s om een holistische mening van elke individuele klant tot stand te brengen.
+Deze video geeft u een overzicht van verenigingsschema&#39;s die door Adobe Experience Platform in real time het Profiel van de Klant worden gebruikt. Met Unieschema&#39;s kunt u een samenvoeging zien van alle velden in schema&#39;s die dezelfde klasse delen. In real time het Profiel van de Klant gebruikt de verenigingsschema&#39;s om een holistische mening van elke individuele klant tot stand te brengen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?quality=12&learn=on)
 

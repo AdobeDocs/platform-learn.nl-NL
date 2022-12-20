@@ -3,7 +3,7 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -47,7 +47,7 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
 
    >[!NOTE]
    >
-   >Als u de klant van een op Platform-gebaseerde toepassing zoals in real time CDP bent, adviseren wij het gebruiken van een ontwikkelingszandbak voor dit leerprogramma. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een Platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
 1. Selecteer **[!UICONTROL Schema maken]** knop rechtsboven

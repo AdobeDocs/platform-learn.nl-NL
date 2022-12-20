@@ -3,7 +3,7 @@ title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
+source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
 workflow-type: tm+mt
 source-wordcount: '3554'
 ht-degree: 0%
@@ -558,10 +558,10 @@ In deze oefening, wijst u één variabele XDM aan een steun toe zodat kunt u in 
 1. Herhaal de validatiestappen en u moet zien dat real-time rapporten gegevens dienovereenkomstig vullen.
 
    **Paginaweergaven**
-   ![Inhoud in realtime](assets/analytics-real-time-content.png)
+   ![Real-Time inhoud](assets/analytics-real-time-content.png)
 
    **Productweergaven**
-   ![Productweergaven in realtime](assets/analytics-real-time-prodView.png)
+   ![Real-Time productweergaven](assets/analytics-real-time-prodView.png)
 
    **Aankopen**
    ![Aankoop in realtime](assets/analytics-real-time-purchase.png)

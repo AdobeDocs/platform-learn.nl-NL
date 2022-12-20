@@ -3,7 +3,7 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
@@ -61,7 +61,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen h
    * **[!UICONTROL Identity Management]**—machtigingsitems om naamruimten te beheren en weer te geven.
    * **[!UICONTROL Gegevensverzameling]**—machtigingsitems om gegevensstromen te beheren en weer te geven.
 
-   * Als u de klant van een op Platform-gebaseerde toepassing zoals In real time CDP, Journey Optimizer, of Customer Journey Analytics bent, zou u ook moeten hebben:
+   * Als u de klant bent van een toepassing op basis van een Platform, zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, moet u ook het volgende doen:
       * **[!UICONTROL Gegevensbeheer]**—toestemmingspunten om datasets te beheren en te bekijken om te voltooien _optioneel Platform_ (vereist een licentie voor een toepassing op basis van een Platform).
       * Een ontwikkeling **sandbox** die u voor deze zelfstudie kunt gebruiken.
 * Voor Adobe Analytics moet je weten welke **rapportsuites** u kunt deze zelfstudie voltooien.
