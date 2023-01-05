@@ -1,0 +1,64 @@
+---
+title: Migratieoverzicht | Doel migreren van at.js 2.x naar Web SDK
+description: Leer over de belangrijkste verschillen tussen at.js en het Web SDK van het Platform en hoe te om uw migratieinspanning te plannen.=
+source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 0%
+
+---
+
+# Doel in.js aan het migratieoverzicht van SDK van het Web van Platforms
+
+Het niveau van inspanning om van bij.js aan het Web SDK van het Platform te migreren hangt van de ingewikkeldheid van uw huidige implementatie en gebruikte producteigenschappen af.
+
+Hoe eenvoudig of complex uw implementatie ook is, het is belangrijk dat u de huidige status volledig begrijpt voordat u gaat migreren. Deze gids helpt u om de componenten van uw huidige implementatie te breken en een handelbaar plan te ontwikkelen om elk stuk te migreren.
+
+Het migratieproces omvat de volgende belangrijke stappen:
+
+1. Evalueer uw huidige implementatie en bepaal een migratiebenadering
+1. De eerste componenten instellen om verbinding te maken met het Adobe Experience Platform Edge-netwerk
+1. Werk de stitionele implementatie bij om at.js met het Web SDK van het Platform te vervangen
+1. Verbeter de implementatie van SDK van het Web van het Platform voor uw specifieke gebruiksgevallen. Dit kan het doorgeven van extra parameters, het verwerken van wijzigingen in de toepassingsweergave (SPA) van één pagina, het gebruik van reactietokens en meer inhouden.
+1. Objecten in de interface Doel bijwerken, zoals profielscripts, activiteiten en publieksdefinities
+1. Valideer de definitieve implementatie alvorens de schakelaar in uw productiemilieu te maken
+
+## Belangrijkste verschillen tussen at.js en het Web SDK van het Platform
+
+Alvorens het migratieproces te beginnen, is het belangrijk om de verschillen tussen at.js en het Web SDK van het Platform te begrijpen.
+
+### Operationele verschillen
+
+De SDK van het Web van het Platform combineert de functionaliteit van veelvoudige toepassingen van Adobe in één enkele bibliotheek. Deze verenigde benadering betekent u over teamoverschrijdende verantwoordelijkheden en processen zou moeten nadenken om een gezonde implementatie te verzekeren.
+
+|  | Doel op.js 2.x | Platform Web SDK |
+|---|---|---|
+| Eigendom | De bibliotheek at.js is onafhankelijk van andere toepassingsbibliotheken. Aanpassingen en eigendom van deze verschillende bibliotheken kunnen worden uitgelijnd op verschillende teams in de organisatie. | De bibliotheek van SDK van het Web van het Platform en de overgegaane gegevens zijn verenigd voor alle toepassingen van Adobe. De eigendom van de implementatie van SDK van het Web van de Platform zou belanghebbenden van alle stroomafwaartse toepassingen moeten vertegenwoordigen. |
+|  Onderhoud | Afzonderlijke teams kunnen werken aan implementatieverbeteringen voor elke Adobe-toepassing, zoals Doel en Analyse. | Ideaal gezien, zou één enkel team voor verhogingen moeten verantwoordelijk zijn die de implementatie van SDK van het Web van het Platform beïnvloeden. |
+| Proces | Wijzigingen in een doelimplementatie kunnen plaatsvinden na een proces dat andere eisen stelt aan de snelheid of kwaliteit van de kwaliteit in vergelijking met andere toepassingen, zoals Analytics. | De veranderingen in een implementatie van SDK van het Web van het Platform zouden alle stroomafwaartse toepassingen moeten overwegen, en QA en publicatieproces zouden dienovereenkomstig moeten worden aangepast. |
+| Samenwerking | De gegevens specifiek voor Doel kunnen direct in de vraag van het Doel worden overgegaan. Afhankelijk van de implementatie, kunnen er extra vraag van het Doel zijn. Dit heeft geen directe gevolgen voor de gegevens van Adobe Analytics en de coördinatie met het analytisch team is niet zo cruciaal. | Gegevens die in de vraag van SDK van het Web van Platforms worden overgegaan kunnen aan zowel Doel als Analytics door:sturen. Coördinatie tussen teams is vereist om ervoor te zorgen dat wijzigingen geen negatieve gevolgen hebben voor een specifieke toepassing. |
+
+### Technische verschillen
+
+De SDK van het Web van het Platform is geen evolutie van het Doel at.js bibliotheek. Het is een nieuwe en verenigde aanpak voor het implementeren van alle Adobe-toepassingen voor het webkanaal. Er zijn verschillende technische verschillen om op de hoogte te zijn.
+
+|  | Doel op.js 2.x | Platform Web SDK |
+|---|---|---|
+| Bibliotheekfunctionaliteit | Doelfunctionaliteit verstrekt door at.js. Integratie met andere toepassingen die worden geleverd door Visitor.js en AppMeasurement.js | Functionaliteit voor alle toepassingen van Adobe die door één enkele bibliotheek van SDK van het Web van het Platform worden verstrekt: alloy.js |
+| Prestaties | at.js is één van veelvoudige bibliotheken die voor juiste integratie over toepassingen moeten worden geladen. Dit resulteert in minder dan optimale laadtijd. | De SDK van het Web van het Platform is één enkele lichtgewichtbibliotheek die de behoefte aan veelvoudige toepassing-specifieke bibliotheken elimineert resulterend in betere prestaties van de paginading. |
+| Verzoeken | Afzonderlijke vraag voor elke toepassing van Adobe. De vraag van het doel is grotendeels onafhankelijk van andere netwerkvraag. | Één enkele vraag voor alle toepassingen van de Adobe. De veranderingen in de gegevens die in deze vraag worden overgegaan zouden veelvoudige stroomafwaartse toepassingen kunnen beïnvloeden. |
+| Laadvolgorde | De correcte integratie met andere toepassingen van Adobe vereist een specifieke ladingsorde van bibliotheken en netwerkvraag. | De juiste integratie baseert zich niet op het stitching van gegevens van verschillende toepassing-specifieke netwerkvraag, zodat is de ladingsorde geen zorg. |
+| Edge Network | Gebruikt het Adobe Experience Cloud Edge Network (tt.omtr dc.net), optioneel met een CNAME die specifiek is voor Target. | Gebruikt het Adobe Experience Platform Edge Network (edge.adobedc.net), optioneel met één CNAME. |
+| Standaardterminologie | de naam at.js: <br> - `mbox` <br> - `pageLoad` event (global mbox) <br> - `offer` | Platform Web SDK equivalent: <br> - `decisionScope` <br> - `__view__` DecisionScope <br> - `proposition` |
+
+### Video-overzicht
+
+De volgende video geeft een overzicht van de Adobe Experience Platform Web SDK en Adobe Experience Platform Edge Network.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34141/?quality=12&learn=on)
+
+Nu u de verschillen op hoog niveau tussen at.js en het Web SDK van het Platform begrijpt, kunt u [de migratie plannen](plan-migration.md).
+
+>[!NOTE]
+>
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
