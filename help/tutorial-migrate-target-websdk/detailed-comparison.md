@@ -1,9 +1,9 @@
 ---
 title: Vergelijking van at.js 2.x met Web SDK | Doel migreren van at.js 2.x naar Web SDK
 description: Leer over de verschillen tussen at.js 2.x en het Web SDK van het Platform met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punte
 | Aanbiedingen omleiden | Ondersteund | Ondersteund. Nochtans, wordt een omleiding van een pagina met het Web SDK van het Platform aan een pagina met at.js (en in de tegenovergestelde richting) niet gesteund. |
 | Apparaatbeslissingen | Ondersteund | Momenteel niet ondersteund |
 | Prefetch Mboxes | Ondersteund | Gedeeltelijk ondersteund. Neem contact op met de klantenondersteuning om deze functie in te schakelen, omdat deze het gedrag van de activiteitprefetch wijzigt. |
-| Aangepaste gebeurtenissen | Ondersteund | Gedeeltelijk ondersteund via [toezicht op haken](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| Aangepaste gebeurtenissen | Ondersteund | Niet ondersteund. Zie de [openbare routekaart](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) voor de huidige status. |
 | Reactietokens | Ondersteund | Ondersteund. Zie de [speciale reactietokens documentatie](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) voor codevoorbeelden en verschillen tussen at.js en het Web SDK van het Platform |
 | Gegevensleveranciers | Ondersteund | Niet ondersteund. De code van de douane kan worden gebruikt om een SDK van het Web van het Platform teweeg te brengen `sendEvent` bevel nadat het gegeven van een andere leverancier wordt teruggewonnen. |
 
@@ -79,7 +79,7 @@ Vele functies at.js hebben een gelijkwaardige benadering gebruikend het Web SDK 
 | `trackEvent()` en `sendNotifications()` | Gebruik de `sendEvent` gebruiken met een [specifiek `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) set:<br><br>`decisioning.propositionDisplay` geeft aan dat een activiteit wordt gerenderd<br><br>`decisioning.propositionInteract` geeft een gebruikersinteractie met een activiteit aan, zoals een muisklik. |
 | `targetGlobalSettings()` | Geen direct equivalent. Zie de [Vergelijking van doelinstellingen](detailed-comparison.md) voor meer informatie. |
 | `targetPageParams()` en `targetPageParamsAll()` | Alle gegevens die worden doorgegeven in het dialoogvenster `xdm` de `sendEvent` wordt toegewezen aan parameters van Target. Aangezien mbox de parameters gebruikend in series vervaardigde puntaantekening worden genoemd, kan het migreren aan het Web SDK van het Platform u vereisen om bestaande publiek en activiteiten bij te werken om de nieuwe namen van de mbox parameternamen te gebruiken. <br><br>Gegevens doorgegeven als onderdeel van `data.__adobe.target` van de `sendEvent` opdracht is toegewezen aan [Doelprofiel en specifieke Recommendations-parameters](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js, aangepaste gebeurtenissen | Niet ondersteund. Maar [reactietokens](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) worden blootgesteld als onderdeel van de `propositions` in de reactie van de `sendEvent` vraag. |
+| at.js, aangepaste gebeurtenissen | Niet ondersteund. Zie de [openbare routekaart](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) voor de huidige status. [Reactietokens](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) worden blootgesteld als onderdeel van de `propositions` in de reactie van de `sendEvent` vraag. |
 
 ## at.js montages en de equivalenten van SDK van het Web van het Platform
 
