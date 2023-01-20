@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -60,7 +59,7 @@ Zoeken naar de gegevensset `Demo System - Event Dataset for Website (Global v1.1
 
 ![demo](./images/cja7.png)
 
-Zoek nu de selectievakjes voor `Demo System - Event Dataset for Voice Assistants (Global v1.1)` en `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Zoek nu de selectievakjes voor `Demo System - Profile Dataset for Loyalty (Global v1.1)` en `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Dan heb je dit. Klik op **Next**.
 
@@ -84,7 +83,7 @@ Nochtans, kunt u nog beïnvloeden welk herkenningsteken zal worden gebruikt om d
 
 Zoals vermeld, kunt u verschillende Persoon IDs voor elke dataset plaatsen. Dit staat u toe om verschillende datasets van veelvoudige oorsprong in CJA samen te brengen. Stel je voor dat we NPS-gegevens of enquêtegegevens invoeren die erg interessant en nuttig zouden zijn om de context te begrijpen en waarom er iets is gebeurd.
 
-De naam van het veld Person-id is niet belangrijk, zolang de waarde in de velden Person-id overeenkomt. Laten we zeggen: `email` in één gegevensset en `emailAddress` in een andere gegevensset die is gedefinieerd als Person ID. Indien `delaigle@adobe.com` is de zelfde waarde voor de persoon ID-gebied op beide datasets, CJA zal de gegevens kunnen verbinden.
+De naam van het veld Person-id is niet belangrijk, zolang de waarde in de velden Person-id overeenkomt. Bijvoorbeeld, als identiteitskaart van de Persoon is `email` in één gegevensset en `emailAddress` in een andere, en `dnb-bootcamp@adobe.com` is de zelfde waarde voor de persoon ID-gebied in beide datasets, CJA zal de gegevens kunnen verbinden.
 
 Op dit moment zijn er nog enkele andere beperkingen, zoals het aanstichten van het anonieme gedrag aan gekend. Lees hier de veelgestelde vragen: [Veelgestelde vragen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
@@ -107,7 +106,7 @@ Zodra u de drie datasets hebt vastgezet, zijn wij bereid om verder te gaan.
 | gegevensset | Persoon-id |
 | ----------------- |-------------| 
 | Demosysteem - Dataset voor gebeurtenissen voor website (Global v1.1) | email |
-| Demosysteem - Dataset van de Gebeurtenis voor de Medewerkers van de Stem (Globale v1.1) | email |
+| Demosysteem - profielgegevensset voor logo (Global v1.1) | email |
 | Het Systeem van de manifestatie - de Dataset van de Gebeurtenis voor het Centrum van de Vraag (Globale v1.1) | email |
 
 U moet ook ervoor zorgen dat voor elke dataset, deze opties worden toegelaten:

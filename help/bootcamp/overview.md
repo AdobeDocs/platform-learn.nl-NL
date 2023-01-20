@@ -3,9 +3,9 @@ title: Experience Makers Bootkamp
 description: Beginpunt voor deelnemers aan het Bootkamp van de Ervaar
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -28,41 +28,45 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 10.00 - 10.30 uur: Kickoff en introducties
 
-10.30 - 11.15 uur: Whiteboardsessie: &quot;1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV&quot;
+10.30 - 11.00 uur: &quot;Klantenreis demo - Kunst van het mogelijke&quot;
 
-11.15 - 11.30 uur: Break
+11.00 - 11.45 uur: Whiteboardsessie: &quot;1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV&quot;
 
-11.30 - 12.00 uur: &quot;Klantenreis demo - Kunst van het mogelijke&quot;
+11.45 - 12.00 uur: Break
 
-12.00 - 12.45 uur: Whiteboardsessie: &quot;Oplossingsarchitectuur&quot;
+12.00 - 13.00 uur: Whiteboardsessie: &quot;Oplossingsarchitectuur&quot;
 
-12.45 - 13.45 uur: Break
+13.00 - 14.00 uur: Lunch
 
-13.45 - 15.00 uur: Gebruikersstroom 1: &quot;Acquisition&quot; hands-on oefening
+14.00 - 15.30 uur: Gebruikersstroom 1: &quot;Acquisition&quot; hands-on oefening
 
 15.00 - 15.15 uur: Break
 
 15.15 - 17.00 uur: Gebruikersstroom 2: &quot;Registratie en on-boarding&quot; praktische oefening
 
+18.00 - 19.00 uur: Ervaring &quot;Cocktail Making Competition&quot;
+
+19.00 - 22.00 uur: Geniet van eten
+
 ### Dag 2
 
-08.00 - 9.30 uur: Ontbijtsessie: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
+9.00 - 9.30 uur: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
 
 9.30 - 9.45 uur: Break
 
-9.45 - 11.15 uur: Gebruikersstroom 3: &quot;Overvloeien van fysieke en digitale&quot; praktische oefening
+9.45 - 11.15 uur: Gebruikersstroom 4: &quot;Customer Analysis&quot; handige oefening
 
 11.15 - 11.30 uur: Break
 
-11.30 - 12.30 uur: Doorgaan met gebruikersstroom 3
+11.30 - 12.30 uur: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
 
 12.30 - 13.30 uur: Lunch
 
-13.30 - 14.30 uur: Gebruikersstroom 4: &quot;Customer Analysis&quot; handige oefening
+13.30 - 14.30 uur: Personalisatie op schaal - Hoe kan ik dit doen?
 
 14.30 - 15.00 uur: Conclusie, afronding en volgende stappen
 
-15:30: Vertrek
+15.00 uur Adjourn
 
 ## Vereisten
 

@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '755'
 ht-degree: 7%
 
 ---
@@ -48,9 +48,7 @@ Dan zie je een leeg project.
 
 ![demo](./images/premptyprojects.png)
 
-Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. In dit voorbeeld moet de gegevensweergave worden geselecteerd: `vangeluwe - Omnichannel Data View`.
-
-![demo](./images/prdv.png)
+Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. In dit voorbeeld moet de gegevensweergave worden geselecteerd: `CJA Bootcamp - Omnichannel Data View`.
 
 Vervolgens slaat u uw project op en geeft u het een naam. U kunt de volgende opdracht gebruiken om op te slaan:
 
@@ -113,7 +111,7 @@ Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 
 | Titel | Beschrijving |
 | ----------------- |-------------| 
-| Omzetsnelheid | Omzetsnelheid |
+| yourLastName - Conversion Rate | yourLastName - Conversion Rate |
 
 U zult iets als dit op uw scherm hebben:
 

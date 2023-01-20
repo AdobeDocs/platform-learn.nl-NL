@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Laten we het project gebruiken waarin u hebt gemaakt [4.4 Gegevensvoorbereiding 
 
 Uw project openen `yourLastName - Omnichannel Analysis`.
 
-Met uw geopend project en de Mening van Gegevens `yourLastName - Omnichannel Analysis` geselecteerd, bent u klaar om uw eerste visualisaties te bouwen.
+Met uw geopend project en de Mening van Gegevens `CJA Bootcamp - Omnichannel Data View` geselecteerd, bent u klaar om uw eerste visualisaties te bouwen.
 
 ![demo](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ Allereerst moeten we de juiste data selecteren om de gegevens te analyseren. Ga 
 
 >[!IMPORTANT]
 >
->Selecteer een datumbereik als **Deze week** of **Deze maand**. De meest recente beschikbare gegevens zijn opgenomen op 19 september 2022.
+>De meest recente beschikbare gegevens zijn ingevoerd op 19-09-2022. Selecteer een datumbereik dat deze datum bevat.
 
 ![demo](./images/pro1.png)
 
@@ -77,9 +76,9 @@ Klik op Volgende **Selectie vergrendelen** en selecteert u **Geselecteerde items
 
 ![demo](./images/pro7b.png)
 
-## Vijf meest bekeken producten
+## Top 4 van producten weergegeven
 
-Wat zijn de vijf belangrijkste producten die worden weergegeven?
+Wat zijn de vier belangrijkste producten die worden weergegeven?
 
 Vergeet niet om het project nu en dan op te slaan.
 
@@ -88,7 +87,7 @@ Vergeet niet om het project nu en dan op te slaan.
 | Windows | Control + S |
 | Mac | Command + S |
 
-Laten we de beste 5 bekeken producten vinden. In het linkerzijmenu, vind **Productnaam** - Dimension.
+Laten we de beste vier bekeken producten vinden. In het linkerzijmenu, vind **Productnaam** - Dimension.
 
 ![demo](./images/pro8.png)
 
@@ -102,7 +101,7 @@ Probeer vervolgens een van de producten te splitsen op merknaam. Zoeken naar **b
 
 ![demo](./images/pro13.png)
 
-Daarna, doe een verdeling gebruikend de Agent van de Gebruiker. Zoeken naar **Gebruikersagent** en sleep het onder de merknaam.
+Daarna, doe een verdeling gebruikend het loyaliteitsniveau. Zoeken naar **Loyaliteitsniveau** en sleep het onder de merknaam.
 
 ![demo](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Tot slot kunt u meer visualisaties toevoegen. Aan de linkerkant, onder visualisa
 
 ![demo](./images/pro18.png)
 
-Selecteer vervolgens in de tabel de eerste 5 **Gebruikersagent**  rijen uit de ineenstorting die we onder **Google Pixel XL 32 GB zwarte smartphone** > **Citi Signal**. Houd tijdens het selecteren van de vijf rijen de knop **CTRL** (in Windows) of de knop **Opdracht** (op Mac).
+Selecteer vervolgens in de tabel de optie 3 **Loyaliteitsniveau**  rijen uit de ineenstorting die we onder **Google Pixel XL 32 GB zwarte smartphone** > **Citi Signal**. Houd tijdens het selecteren van de drie rijen de knop **CTRL** (in Windows) of de knop **Opdracht** (op Mac).
 
 ![demo](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Klik op visualisatie **Fallout**.
 
 Selecteer hetzelfde datumbereik als in de vorige exercitie.
 
-![demo](./images/prodatef.png)
+![demo](./images/pro1.png)
 
 Dan zie je dit.
 
@@ -216,7 +215,7 @@ U zult dan dit zien:
 
 Selecteer hetzelfde datumbereik als in de vorige exercitie.
 
-![demo](./images/pro0b.png)
+![demo](./images/pro1.png)
 
 Dimensie zoeken **Paginanaam** onder de onderdelen aan de linkerkant:
 
@@ -297,7 +296,7 @@ Voeg nu een nieuw leeg deelvenster toe door op **+ Leeg deelvenster toevoegen**.
 
 Selecteer hetzelfde datumbereik als in de vorige exercitie.
 
-![demo](./images/pro24d.png)
+![demo](./images/pro1.png)
 
 Klikken op **Vrije-vormentabel**.
 
