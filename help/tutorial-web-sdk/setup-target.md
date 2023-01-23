@@ -3,9 +3,9 @@ title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe te om Adobe Target uit te voeren gebruikend het Web SDK van het Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Het doel moet in de gegevensstroomconfiguratie worden toegelaten alvorens om het
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} interface
+1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL DataStreams]**
 1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
 
@@ -184,7 +184,7 @@ Eerst, zou u de terminologie moeten begrijpen die in het Doel wordt gebruikt en 
 
 De visuele verpersoonlijkingsbesluiten van Doel worden geleverd door het Web SDK van het Platform, als het Doel in de datastream wordt toegelaten. Maar _ze worden niet automatisch gerenderd_. U moet de algemene regel voor het laden van pagina&#39;s wijzigen om automatische rendering in te schakelen.
 
-1. In de [Gegevensverzameling](https://experience.adobe.com/#/data-collection)interface {target=&quot;blank&quot;}, opent u de eigenschap tag die u voor deze zelfstudie gebruikt
+1. In de [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface, open het markeringsbezit u voor dit leerprogramma gebruikt
 1. Open de `all pages - library load - AA & AT` regel
 1. Selecteer `Adobe Experience Platform Web SDK - Send event` action
 1. Inschakelen **[!UICONTROL Besluiten over visuele personalisatie renderen]** met het selectievakje
@@ -334,7 +334,7 @@ Nu u SDK van het Web van het Platform hebt gevormd om inhoud voor te verzoeken `
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
