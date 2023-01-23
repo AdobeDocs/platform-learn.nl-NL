@@ -3,7 +3,7 @@ title: Experience Makers Bootkamp
 description: Beginpunt voor deelnemers aan het Bootkamp van de Ervaar
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
@@ -40,9 +40,9 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 14.00 - 15.30 uur: Gebruikersstroom 1: &quot;Acquisition&quot; hands-on oefening
 
-15.00 - 15.15 uur: Break
+15.30 - 15.45 uur: Break
 
-15.15 - 17.00 uur: Gebruikersstroom 2: &quot;Registratie en on-boarding&quot; praktische oefening
+15.45 - 17.00 uur: Gebruikersstroom 2: &quot;Registratie en on-boarding&quot; praktische oefening
 
 18.00 - 19.00 uur: Ervaring &quot;Cocktail Making Competition&quot;
 
