@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2553'
 ht-degree: 0%
 
 ---
@@ -289,6 +289,7 @@ Veel van de Bronnen hebben een gelijkaardige configuratiewerkschema, waarin u:
 
 1. U had al gedownload en gedecomprimeerd moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
 1. Openen `luma-offline-purchases.json` in een teksteditor en vervang alle instanties van `_techmarketingdemos` met uw eigen underscore-huurder-id, zoals die in uw schema&#39;s wordt gezien
+1. Werk alle tijdstempels bij zodat de gebeurtenissen in de laatste maand voorkomen (bijvoorbeeld, onderzoek naar `"timestamp":"2022-06` en vervang het jaar en de maand)
 1. Kies uw voorkeursleverancier voor cloudopslag, zodat deze beschikbaar is in het dialoogvenster [!UICONTROL Bronnen] catalogus
 1. Uploaden `luma-offline-purchases.json` naar een locatie in uw voorkeursprovider voor cloudopslag
 

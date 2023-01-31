@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://w
 
 1. Verplaats vanuit de downloadmap de `platform-utils-main.zip` naar de gewenste locatie op de computer en decomprimeer het bestand.
 1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_techmarketingdemos` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
+1. Openen `luma-offline-purchases.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-06` en vervang het jaar en de maand)
 1. Noteer de locatie van de uitgevouwen map, zoals u deze later nodig hebt bij het instellen van de `FILE_PATH` Postman-omgevingsvariabele:
 
    >[!NOTE]
