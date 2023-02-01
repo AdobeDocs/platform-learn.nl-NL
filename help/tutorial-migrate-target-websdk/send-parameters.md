@@ -1,9 +1,9 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # Parameters naar doel verzenden met Platform Web SDK
 
 De doelimplementaties verschillen per website vanwege de sitearchitectuur, de zakelijke vereisten en de gebruikte functies. De meeste doelimplementaties bevatten het doorgeven van verschillende parameters voor contextuele informatie, doelgroepen en aanbevelingen voor inhoud.
+
+>[!WARNING]
+>
+> De implementaties van SDK van het Web van het Platform begonnen na 1 Oktober, 2022 kunnen moeten gebruiken [tijdelijke oplossing vooraf instellen](prefetch-workaround.md) om de op deze pagina beschreven parameters te kunnen doorgeven.
 
 Laten we een eenvoudige pagina met productdetails en een pagina met orderbevestiging gebruiken om de verschillen tussen de bibliotheken aan te tonen bij het doorgeven van parameters aan Doel.
 
@@ -57,17 +61,17 @@ Productgegevens:
 </html>
 ```
 
-<!--
 
-Order Confirmation:
+
+Bevestiging bestelling:
 
 ```HTML
 <!doctype html>
 <html>
 <head>
   <title>Order Confirmation</title>-->
-<!--Target parameters -->
-<!--  <script>
+  <!--Target parameters -->
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -80,9 +84,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
-<!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -90,7 +94,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## Overzicht van parametertoewijzing
@@ -125,15 +128,12 @@ De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in k
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
 | `mbox3rdPartyId` | In de identityMap instellen. Zie [Profielen synchroniseren met een klant-id](#synching-profiles-with-a-customer-id) | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OF<br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Zie de [entiteitsparameters](#entity-parameters) voor meer informatie. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor de [aangepaste scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) doel van activiteit. |
 
 {style=&quot;table-layout:auto&quot;}
-
-<!--
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
-
 
 ## Aangepaste parameters
 
@@ -245,12 +245,12 @@ Alles [entiteitsparameters](https://experienceleague.adobe.com/docs/target/using
 >
 >Als de `commerce` de veldgroep wordt gebruikt en `productListItems` -array is opgenomen in de XDM-payload, daarna de eerste `SKU` waarde in deze array wordt toegewezen aan `entity.id` om de productweergave te vergroten.
 
-<!-- 
-## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+## Aankoopparameters
 
-at.js example using `targetPageParams()`:
+De parameters van de aankoop worden overgegaan op een de bevestigingspagina van het orde na een succesvolle orde en voor de omzettings en optimalisatiedoelstellingen van het Doel gebruikt. Met een implementatie van SDK van het Web van het Platform, worden deze parameters en automatisch in kaart gebracht van gegevens XDM die als deel van worden overgegaan `commerce` veldgroep.
+
+at.js, voorbeeld met `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -262,9 +262,9 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+Aankoopgegevens worden doorgegeven aan Target wanneer de `commerce` veldgroep heeft `puchases.value` instellen op `1`. De bestellings-id en het ordertotaal worden automatisch toegewezen aan de `order` object. Als de `productListItems` array aanwezig is, dan de `SKU` waarden worden gebruikt voor `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
 
 ```JavaScript
 alloy("sendEvent", {
@@ -289,9 +289,8 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+>De `productPurchasedId` kan ook worden doorgegeven als een door komma&#39;s gescheiden lijst met id&#39;s van entiteiten onder de `data` object.
 
--->
 
 ## Profielen synchroniseren met een klant-id
 
@@ -413,8 +412,8 @@ Productgegevens:
 </html>
 ```
 
-<!--
-Order Confirmation:
+
+Bevestiging bestelling:
 
 ```HTML
 <!doctype html>
@@ -422,9 +421,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
-<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -432,21 +431,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->
-<!--Platform Web SDK base code-->
-<!--
+
+  <!--Platform Web SDK base code-->
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
-<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
-<!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -483,7 +481,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 Leer nu hoe u [Conversiegebeurtenissen volgen](track-events.md) met het Web SDK van het Platform.
 

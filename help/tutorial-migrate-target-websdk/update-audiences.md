@@ -1,9 +1,9 @@
 ---
 title: Soorten publiek en profielscripts bijwerken | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u het Adobe Target-publiek en profielscripts kunt bijwerken voor compatibiliteit met Web SDK van Experience Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Alle parameters van het Doel mbox moeten in formaat XDM met een implementatie va
 * Soorten publiek dat mbox-parameters gebruikt bijwerken
 * Profielscripts bijwerken die mbox-parameters gebruiken
 * Werk om het even welke aanbiedingen en activiteiten bij gebruiken mbox parametersymbolenvervanging (bijvoorbeeld `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> De implementaties van SDK van het Web van het Platform begonnen na 1 Oktober, 2022 kunnen moeten gebruiken [tijdelijke oplossing vooraf instellen](prefetch-workaround.md) om een aantal van de op deze pagina beschreven functies te kunnen gebruiken.
 
 ## Soorten publiek aanpassen
 
