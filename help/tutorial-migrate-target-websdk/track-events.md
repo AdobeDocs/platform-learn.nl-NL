@@ -1,9 +1,9 @@
 ---
 title: Gebeurtenissen bijhouden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om de omzettingsgebeurtenissen van Adobe Target te volgen gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,6 @@ Conversiegebeurtenissen voor Doel kunnen met het Web SDK van het Platform gelijk
 * Automatisch bijgehouden gebeurtenissen waarvoor geen configuratie vereist is
 * Aankoop conversiegebeurtenissen die moeten worden aangepast voor een Web SDK-implementatie van het Platform Best Practice
 * Niet-aankoopconversiegebeurtenissen waarvoor code-updates vereist zijn
-
->[!WARNING]
->
-> De implementaties van SDK van het Web van het Platform begonnen na 1 Oktober, 2022 kunnen moeten gebruiken [tijdelijke oplossing vooraf instellen](prefetch-workaround.md) om een aantal op deze pagina beschreven gebeurtenissen te kunnen volgen.
 
 ## Objectspatiëring vergelijken
 
