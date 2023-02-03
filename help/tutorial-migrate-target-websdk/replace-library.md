@@ -1,9 +1,9 @@
 ---
 title: De bibliotheek vervangen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -207,6 +207,12 @@ Voor meer informatie over hoe de Platform Web SDK flikkering kan beheren, kunt u
 
 De SDK van het Web van het Platform moet op elke paginalading worden gevormd. De `configure` bevel moet altijd het eerste geroepen bevel van SDK zijn. Het volgende voorbeeld veronderstelt dat de volledige plaats aan het Web SDK van het Platform in één enkele plaatsing wordt bevorderd:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+De `edgeConfigId` is de [!UICONTROL DataStream-id]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB tags]
+
+In labels-implementaties worden veel velden automatisch ingevuld of kunnen deze worden geselecteerd in vervolgkeuzemenu&#39;s. Andere Platforms [!UICONTROL sandboxen] en [!UICONTROL gegevensstromen] kan voor elke omgeving worden geselecteerd. De gegevensstroom wordt gewijzigd op basis van de status van de tagbibliotheek tijdens het publicatieproces.
+
+![configureren van de web SDK-tagextensie](assets/tags-config.png)
+>[!ENDTABS]
+
 Als u van om van at.js aan het Web SDK van het Platform op een pagina-door-pagina basis van plan bent te migreren, dan worden de volgende configuratieopties vereist:
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB tags]
+
+![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 De belangrijkste configuratieopties met betrekking tot Target worden hieronder beschreven:
 
