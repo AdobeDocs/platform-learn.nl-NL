@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-# 2.1 Bezoek de website en maak uw account
+# 2.1 Visite op de website e cria sua conta
 
-## Context
+## Contexto
 
-De reis van onbekend naar bekend is tegenwoordig een van de belangrijkste onderwerpen onder merken, evenals de reis van de klant van aankoop naar bewaring.
+A jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atualmente, assim como a jornada do cliente, da aquisição à retenção.
 
-Adobe Experience Platform speelt een enorme rol in deze reis. Platform is de hersenen voor communicatie, de **ervaringssysteem**.
+A Adobe Experience Platform desempenha um papel importante nessa jornada. A plataforma é o cérebro da comunicação, o **ervaringssysteem**.
 
-Platform is een omgeving waarin het woord klant breder is dan alleen de bekende klanten. Een onbekende bezoeker op de website is ook een klant vanuit het perspectief van Platform en als zodanig wordt al het gedrag als onbekende bezoeker ook naar het Platform verzonden. Dankzij deze aanpak, wanneer deze bezoeker uiteindelijk een bekende klant wordt, kan een merk ook visualiseren wat er voor dat moment gebeurde. Dit helpt vanuit een attributie- en ervaringsperspectief.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Ubezoekante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um bezoekante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse bezoekante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experience ência.
 
-## Vervoersstroom voor klanten
+## Fluxo da jornada do cliente
 
-Ga naar [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Klikken **Alles toestaan**. Gebaseerd op uw het doorbladeren gedrag in de vorige gebruikersstroom, zult u personalisering zien gebeuren op de homepage van de website.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Alles toestaan**. Com base no seu comportamento de navegação no fluxo de usuário anterior, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen. Bekijk het deelvenster Profielviewer en het realtime klantprofiel met de **Experience Cloud-id** als primaire id voor deze momenteel onbekende klant.
+Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o chilel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud-id** como o identificador primário para este cliente que ainda é desconhecido .
 
 ![Demo](./images/pv1.png)
 
-U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedrag van de klant.
+Você também pode ver todos os Eventos de ervarência coletados com base no comportamento do cliente.
 
 ![Demo](./images/pv3.png)
 
-Klik op de knop **Profiel** in de rechterbovenhoek van het scherm.
+Clique no ícone **Profiel** de superieure direito da tela is niet te vinden .
 
 ![Demo](./images/pv4.png)
 
-Klikken **Een account maken**.
+Clique em **Een account maken**.
 
 ![Demo](./images/pv5.png)
 
-Vul alle velden van het formulier in. Gebruik een echte waarde voor e-mailadres en telefoonnummer, aangezien deze worden gebruikt bij latere oefeningen voor het verzenden van e-mail en SMS.
+Preencha todos os campos do formulário. Gebruik van um valor real para endereço de e-mail e número de telefone, pois será usado em uitoefícios posteriores para envio de e-mail e SMS.
 
 ![Demo](./images/pv7.png)
 
-Omlaag schuiven en klikken **Registreren**.
+Rol para baixo e clique em **Registreren**.
 
 ![Demo](./images/pv8.png)
 
-Dan zie je dit.
+Em seguida, o seguinte será exibido.
 
 ![Demo](./images/pv9.png)
 
-U ontvangt ook deze e-mail:
+Você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv10.png)
 
-Een paar minuten later ontvang je ook deze e-mail:
+E algun minutos depois, você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv11.png)
 
-Laten we zien hoe deze onboarding reis daarna is geconfigureerd.
+Vamos conferir a seguir como essa jornada de onboarding foi configurada.
 
-Volgende stap: [2.2 Uw gebeurtenis maken](./ex2.md)
+Próxima etapa [2.2 Crie seu evento](./ex2.md)
 
-[Ga terug naar Gebruikersstroom 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

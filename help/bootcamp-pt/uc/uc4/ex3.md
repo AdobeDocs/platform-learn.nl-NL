@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 1%
 
 ---
 
-# 4.3 Een gegevensweergave maken
+# 4.3 Crie uma Visualização de Dados
 
-## Doelstellingen
+## Objetivos
 
-- De interface voor gegevensweergave begrijpen
-- De basisinstellingen van de definitie van een bezoek begrijpen
-- Kenmerk en doorzettingsvermogen in een gegevensweergave begrijpen
+- Entenda a UI de Visualização de Dados
+- Compreenda as configurações básicas de definição de visita
+- Compreenda a atribuição e a Persistência em uma Visualização de
 
-## 4.3.1 Gegevensweergave
+## 4.3.1 Visualização de Dados
 
-Als de verbinding tot stand is gebracht, kunt u nu de visualisatie beïnvloeden. Een verschil tussen Adobe Analytics en CJA is dat CJA een gegevensweergave nodig heeft om de gegevens vóór visualisatie te kunnen opschonen en voorbereiden.
+Agora, com sua conexão concluída, é bezível progredir para influenciar a visualização. Uma diferença entre o Adobe Analytics e o CJA é que o CJA precisa de uma visualização de dados para limpar e preparar os dados antes da visualização.
 
-Een mening van Gegevens is gelijkaardig aan het concept Virtuele Reeksen van het Rapport in Adobe Analytics, waar u context-bewuste bezoekendefinities bepaalt, filtrerend en ook, hoe de componenten worden geroepen.
+Uma Visualização de Dados é semelhante ao conceito de Virtual Report Suites no Adobe Analytics, onde você estabelece as definições de visita com reconhecimento de contexto, filtragem e também como os componentes são chamados.
 
-U hebt minimaal één gegevensweergave per verbinding nodig. Nochtans, voor sommige gebruik-gevallen, is het groot om veelvoudige Mening van Gegevens voor de zelfde verbinding te hebben, met het doel om verschillende inzichten aan verschillende teams te geven.
-Als u uw bedrijf gegevensgedreven wilt worden, zou u moeten aanpassen hoe de gegevens in elk team worden bekeken. Enkele voorbeelden:
+Será necessary ário, no mínimo, uma Visualização de Dados por conexão. Geen entanto, para algun casos de uso, é ótimo ter múltiplas Visualizações de Dados para a mesma conexão, com o objetivo de fornecer insights diferentes para equipes distintas. Se você deseja que sua empresa seja orientada por dados, deve adaptar a forma como os dados são vistos em cada equipe. Alweren:
 
-- UX-meetgegevens alleen voor het UX-ontwerpteam
-- Gebruik dezelfde namen voor KPI&#39;s en Metriek voor Google Analytics als voor Customer Journey Analytics, zodat het digitale analyseteam slechts één taal kan spreken.
-- Gegevensweergave gefilterd om bijvoorbeeld gegevens weer te geven voor één markt, of voor één merk, of alleen voor mobiele apparaten.
+- Métricas de UX apenas para equipe de UX Design
+- Gebruik os mesmos nomes para KPIs e métricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
+- Visualização de Dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Disposivos móveis.
 
-Op de **Verbindingen** , schakelt u het selectievakje in vóór de verbinding die u net hebt gemaakt. Klikken **Gegevensweergave maken**.
+Na tela de **Verbindingen** marque a caixa de seleção da conexão que você acabou de criar. Clique em  **Gegevensweergave maken**.
 
 ![demo](./images/exta.png)
 
-U wordt omgeleid naar de **Gegevensweergave maken** workflow.
+Você será redirecionado para o fluxo de trabalho **Gegevensweergave maken** workflow.
 
 ![demo](./images/0-v2.png)
 
-## 4.3.2 Gegevensweergavedefinitie
+## 4.3.2 Definição de Visualização de Dados
 
-U kunt de basisdefinities voor uw Mening van Gegevens nu vormen.
+Agora você pode configurar as definições básicas para sua Visualização de dados.
 
 ![demo](./images/0-v2.png)
 
-De **Verbinding** die u in de vorige oefening hebt gemaakt, is al geselecteerd. De naam van uw verbinding is `yourLastName – Omnichannel Data Connection`.
+A **Verbinding** que você criou no uitoefício anterior já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Geef vervolgens in de gegevensweergave een naam die volgt op de naamgevingsconventie: `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-Voer dezelfde waarde in voor de beschrijving: `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a describe ção: `yourLastName – Omnichannel Data View`.
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
@@ -61,75 +60,75 @@ Voer dezelfde waarde in voor de beschrijving: `yourLastName – Omnichannel Data
 
 ![demo](./images/1-v2.png)
 
-Voor de **Tijdzone** selecteert u de tijdzone **Berlijn, Stockholm, Rome, Bern, Brussel, Wenen, Amsterdam GMT+01:00**. Dit is een heel interessante situatie, aangezien sommige bedrijven in verschillende landen en geografische gebieden actief zijn. Door de juiste tijdzone voor elk land toe te wijzen, worden typische fouten in de gegevens vermeden, zoals bijvoorbeeld het vermoeden dat in Peru de meerderheid van de mensen om 16.00 uur T-shirts koopt.
+Para **Tijdzone**, selecione of fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdam GMT+01:00**. Este é um cenário realmente interessante, pois algumas empresas operam em diferentes países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exemplo, acreditar que a maioria das pessoas compra camisetas às 4h no Peru.
 
 ![demo](./images/ext7.png)
 
-U kunt ook de namen van de belangrijkste metriek wijzigen (Person, Sessie en Gebeurtenis). Dit is niet verplicht, maar sommige klanten gebruiken graag Personen, Bezoekingen en Verzoeken in plaats van Personen, Sessie en Gebeurtenissen (standaardnaamgevingsconventie van Customer Journey Analytics).
+Você também pode modificar a nomenclatura das métricas princippais (Pessoa, Sessão e Evento). Isso não é obrigatório, mas algun clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessão e Eventos (convenção de nomenclatura padrão do Customer Journey Analytics).
 
-De volgende instellingen moeten nu zijn geconfigureerd:
+Agora vocdeve ter as seguintes configurações definidas:
 
 ![demo](./images/1-v2.png)
 
-Klikken **Opslaan en doorgaan**.
+Clique em **Opslaan en doorgaan**.
 
 ![demo](./images/12-v2.png)
 
-## 4.3.3 Componenten voor gegevensweergave
+## 4.3.3 Componentes da Visualização de Dados
 
-In deze oefening, zult u de componenten vormen u de gegevens moet analyseren en het visualiseren gebruikend Analysis Workspace. In deze interface zijn er drie hoofdgebieden:
+Neste uitoefício, você irá configurar os componentes necessary ários para analisar os dados e visualizá-los usando Analysis Workspace. Nesta IU, há três áreas princippais:
 
-- Linkerkant: Beschikbare componenten van de geselecteerde datasets
-- Midden: Componenten toegevoegd aan de gegevensweergave
-- Rechterkant: Componentinstellingen
+- Lado esquerdo: Componentes disponíveis dos datasets selecionados
+- Meio: Componentes adicionados à Visualização de Dados
+- Lado direito: Configurações do componente
 
 ![demo](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->Als u geen specifieke metrisch of afmeting kunt vinden, gelieve te controleren of het gebied `Contains data` wordt verwijderd uit uw gegevensweergave. Zo niet, verwijder dat veld.
+>Se você não enconr uma métrica ou dimensão específica, verifieque se se o campo `Contains data` foi removido de sua visualização de dados. Caso contrário, exclusief esse campo.
 >
 >![demo](./images/2-v2a.png)
 
-U moet nu de componenten die u nodig hebt voor de analyse naar de **Toegevoegde componenten**. U doet dit door de componenten in het linkermenu te selecteren en ze naar het canvas in het midden te slepen.
+Agora você preca arrastar e soltar os componentes nasários para a análise nos **Toegevoegde componenten**. Para is, você deve selecionar os componentes no menu à esquerda e arrastá-los e soltá-los na tela no meio.
 
-Laten we beginnen met de eerste component: **Naam (web.webPageDetails.name)**. Zoek naar deze component, dan belemmering en laat vallen het op het canvas.
+Vamos começar com o primeiro componente: **Naam (web.webPageDetails.name)**. Pesquise esse componente e arraste-o e solte-o na tela.
 
 ![demo](./images/3-v2.png)
 
-Deze component is de paginanaam, aangezien u uit het lezen van het schemagebied kunt voortkomen `(web.webPageDetails.name)`.
+Esse componente é o nome da página, como você pode deriar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-Bij **Naam** aangezien de naam niet de beste noemende overeenkomst voor een bedrijfsgebruiker is om deze dimensie snel te begrijpen.
+Geen entanto, usar **Naam** como nome não é a melhor convção de nomenclatura para um usuário corporativo compender rapidamente essa dimensão.
 
-Laten we de naam wijzigen om **Paginanaam**. Klik op de component en wijzig de naam ervan in het dialoogvenster **Componentinstellingen** gebied.
+Vamos mudar o nome para **Paginanaam**. Clique no component e o renomlege na área **Componentinstellingen**.
 
 ![demo](./images/3-0-v2.png)
 
-Wat echt belangrijk is, is de **Persistinstellingen**. Het concept gebeurtenissen en prop bestaat niet in CJA maar de montages van de Persistentie maken een gelijkaardig gedrag mogelijk.
+As Configurações de persistência são **Persistinstellingen**. Os conceitos de Vars e prop não existem no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante.
 
 ![demo](./images/3-0-v21.png)
 
-Als u deze montages niet verandert, zal CJA de dimensie als a interpreteren **Prop** (raakniveau). Ook kunnen we de persistentie wijzigen om van de dimensie een **eVar** (zet de waarde over de reis voort).
+Se você não aartessas configurações, o CJA irá interpretar a dimensão como **Prop** (nível de ocorrência). Além disso, podemos alternar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada).
 
-Als u niet vertrouwd bent met eVars en Props, kunt u [meer informatie staat in de documentatie](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se você não estiver familiarizado com Vars e Props [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
 
-Laten we de paginanaam als een pop-up opgeven. Als dusdanig, te hoeven u om het even welk niet te veranderen **Persistinstellingen**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa alternatieve nenhuma **Persistinstellingen**.
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Persistinstellingen |
 | ----------------- |-------------| --------------------| 
 | Naam (web.webPageDetails.name) | Paginanaam |  |
 
-Kies vervolgens de dimensie **phoneNumber** en zet het neer op het canvas. De nieuwe naam moet **Telefoonnummer**.
+Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **Telefoonnummer**.
 
 ![demo](./images/3-1-v2.png)
 
-Tot slot veranderen de montages van de Persistentie, aangezien het Mobiele Aantal op gebruikersniveau zou moeten voortbestaan.
+Por fim, vamos Alternar as Configurações de persistência, pois o Número do Celular deve persistir no nível do usuário.
 
-Als u de persistentie wilt wijzigen, schuift u omlaag in het rechtermenu en opent u het dialoogvenster **Persistentie** tab:
+Para Alternar a Persistência, rol para baixo no menu à direita e abra a aba **Persistentie**:
 
 ![demo](./images/5-v2.png)
 
-Schakel het selectievakje in om de instellingen voor persistentie te wijzigen. Selecteren **Recentste** en de **Persoon (venster Rapportage)** bereik, aangezien we alleen om het laatste mobiele nummer van die persoon geven. Als de klant de mobiele telefoon niet invult bij toekomstige bezoeken, ziet u deze waarde nog steeds gevuld.
+Marque a caixa de seleção para modificar as configurações de persistência. Selecion **Recentste** e o escopo **Persoon (venster Rapportage)** pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não preencher o celular em bezoekas futuras, você ainda verá esse valor preenchido.
 
 ![demo](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ Schakel het selectievakje in om de instellingen voor persistentie te wijzigen. S
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Telefoonnummer | Recentste versie, Persoon (rapportagevenster) |
 
-De volgende component is `web.webPageDetails.pageViews.value`.
+O próximo componente `web.webPageDetails.pageViews.value`.
 
-Zoek in het linkermenu naar `web.webPageDetails.pageViews.value`. Sleep deze metrische waarde naar het canvas.
+Geen menu à esquerda, pesquise `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
 
-De naam wijzigen om **Paginaweergaven** onder de **Componentinstellingen**.
+Altere o nome para **Paginaweergaven** onder de **Componentinstellingen**.
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Attributie-instellingen |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ De naam wijzigen om **Paginaweergaven** onder de **Componentinstellingen**.
 
 ![demo](./images/7-v2.png)
 
-Voor de toewijzingsinstellingen laten we deze leeg.
+Para as configurações de atribuição, deixaremos em branco.
 
-Opmerking: Persistentie-instellingen voor metriek kunnen ook worden gewijzigd in Analysis Workspace. In sommige gevallen kunt u het hier instellen om te voorkomen dat zakelijke gebruikers hoeven te bedenken wat het beste persistentiemodel is.
+Observação: Als configurações de persistência nas métricas também podem ser Veranderadas no Analysis Workspace. Em algun casos, você pode optar por configurá-las aqui para evitar que os usuários de negócios tenham que pensar qual é o melhor modelo de persistência.
 
-Daarna, zult u veel Dimension en Metriek moeten vormen, zoals die in de hieronder lijst wordt vermeld.
+Em seguida, você terá que configurar várias Dimensões e Métricas, conforme indicado na tabela abaixo.
 
-### Dimension
-
+### AFMETINGEN
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Persistinstellingen |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ Daarna, zult u veel Dimension en Metriek moeten vormen, zoals die in de hieronde
 | URL (web.webPageDetails.URL) | URL |  |
 | User Agent | User Agent | Recentste versie, sessie |
 
-### METRISCHE
+### MÉTRICA
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Attributie-instellingen |
 | ----------------- |-------------| --------------------| 
 | Aantal | Aantal |  |
 | commerce.order.priceTotal | Omzet |  |
 
-Uw configuratie zou dan als dit moeten kijken:
+Sua configuração deve ser semelhante ao seguinte:
 
 ![demo](./images/11-v2.png)
 
-Vergeet niet om **Opslaan** uw gegevensweergave. Klik op **Opslaan** nu.
+Não se esqueça de Salvar sua Visualização de Dados. Então clique em **Opslaan**.
 
 ![demo](./images/12-v2s.png)
 
-## 4.3.4 Berekende cijfers
+## 4.3.4 Berekeningen van Métricas
 
-Hoewel wij alle componenten in de Mening van Gegevens hebben georganiseerd, moet u nog enkele hen aanpassen, zodat de bedrijfsgebruikers bereid zijn om hun analyse te beginnen.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar algun deles para que os usuários de negócios estejam prontos para iniciar suas análises.
 
-Als je je herinnert, hebben we Metriek zoals &#39;Add to Cart&#39;, &#39;Product View&#39; of &#39;Purchases&#39; niet specifiek meegenomen in de Data View.
-We hebben echter wel een dimensie met de naam: **Type gebeurtenis**. Dus, laten we deze interactietypen afleiden door 3 berekende Metriek te creëren.
+Se vocse ê lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para Visualização de dados. Geen entanto, temos uma dimensão chamada: **Type gebeurtenis**. Então, vamos deriar esses tipos de interação criando 3 métricas calculadas.
 
-Laten we beginnen met eerste metrisch: **Productweergaven**.
+Vamos começar com a primeira Métrica: **Productweergaven**.
 
-Zoek links in het scherm **Type gebeurtenis** en selecteert u de dimensie. Sleep het vervolgens naar de **Opgenomen onderdelen** canvas.
+Geen lado esquerdo, pesquise **Type gebeurtenis** We selecteren een dimensie. Em seguida, arraste-o e solte-o na tela **Opgenomen onderdelen**.
 
 ![demo](./images/calcmetr1.png)
 
-Klik om de nieuwe metrische waarde te selecteren **Type gebeurtenis**.
+Clique para selecionar a nova métrica **Type gebeurtenis**.
 
 ![demo](./images/calcmetr2.png)
 
-Wijzig nu de naam en beschrijving van de component in de volgende waarden:
+Agora altere o nome e a describe ção do componente para os seguintes valores:
 
 | Componentnaam | Componentbeschrijving |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ Wijzig nu de naam en beschrijving van de component in de volgende waarden:
 
 ![demo](./images/calcmetr3.png)
 
-Nu mag alleen tellen **Productweergaven** gebeurtenissen. Schuif omlaag naar de **Componentinstellingen** tot u ziet **Waarden uitsluiten opnemen**. Zorg ervoor dat de optie is ingeschakeld **Waarden voor opnemen/uitsluiten instellen**.
+Agora vamos contar apenas eventos de **Productweergaven**. Para fazer isso, rol para baixo em **Componentinstellingen** até ver Valores de **Waarden uitsluiten opnemen**. Certifique-se de habilitar a opção **Waarden voor opnemen/uitsluiten instellen**.
 
 ![demo](./images/calcmetr4.png)
 
-Aangezien wij slechts willen tellen **Productweergaven**, gelieve **commerce.productViews** volgens de criteria.
+Como queremos contar apenas **Productweergaven**, specifiek **commerce.productViews** nos critérios.
 
 ![demo](./images/calcmetr5.png)
 
-Uw berekende metrisch is nu klaar!
+Agora a sua métrica calculada está pronta!
 
-Herhaal vervolgens hetzelfde proces voor **Toevoegen aan winkelwagentje** en **Aanschaffen** gebeurtenissen.
+Em seguida, repita o mesmo processo para os eventos **Toevoegen aan winkelwagentje** e **Aanschaffen**.
 
 ### Toevoegen aan winkelwagentje
 
-Dezelfde dimensie eerst slepen en neerzetten **Type gebeurtenis**.
+Primeiro, arraste e solte a mesma dimensão **Type gebeurtenis**.
 
 ![demo](./images/calcmetr1.png)
 
-Er verschijnt een pop-upwaarschuwing voor een gedupliceerd veld terwijl we dezelfde variabele gebruiken. Klik op **Toch toevoegen**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. Clique em **Toch toevoegen**:
 
 ![demo](./images/calcmetr6.png)
 
-Volg nu hetzelfde proces als voor de metrische productweergaven:
-- Wijzig eerst de naam en beschrijving.
-- Tot slot toevoegen **commerce.productListAdds** als criteria om alleen Toevoegen aan winkelwagentje te tellen
+Agora, siga o mesmo processo que fizemos para a métrica Visualizações de produto:
+- Primeiro altere o nome e a description ão.
+- Por fim, adicion **commerce.productListAdds** como critério para contar apenas Add to Cart
 
 | Naam | Beschrijving | Criteria |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ Volg nu hetzelfde proces als voor de metrische productweergaven:
 
 ### Aankopen
 
-Dezelfde dimensie eerst slepen en neerzetten **Type gebeurtenis** zoals wij voor beide vorige metriek deden.
+Primeiro, arraste e solte a mesma dimensão **Type gebeurtenis** como fizemos para als duas métricas anteriores .
 
 ![demo](./images/calcmetr1.png)
 
-Er verschijnt een pop-upwaarschuwing voor een gedupliceerd veld terwijl we dezelfde variabele gebruiken. Klik op **Toch toevoegen**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. Clique em **Toch toevoegen**:
 
 ![demo](./images/calcmetr7.png)
 
-Volg nu hetzelfde proces als voor de metrieke productweergaven en Toevoegen aan winkelwagentje:
-- Wijzig eerst de naam en beschrijving.
-- Tot slot toevoegen **commerce.purchase** als criteria om alleen aankopen te tellen
+Agora, siga o mesmo processo que fizemos para as métricas Product Views e Add to cart:
+- Primeiro altere o nome e a description ão.
+- Por fim, adicion **commerce.purchase** como critérios para contabilizar apenas as Compras
 
 | Naam | Beschrijving | Criteria |
 | ----------------- |-------------| -------------|
@@ -267,36 +264,36 @@ Volg nu hetzelfde proces als voor de metrieke productweergaven en Toevoegen aan 
 
 ![demo](./images/calcmetr7a.png)
 
-Uw definitieve configuratie zou dan gelijkaardig aan dit moeten kijken. Klikken **Opslaan en doorgaan**.
+Sua configuração final deve ser semelhante ao seguinte. Clique em **Opslaan en doorgaan**.
 
 ![demo](./images/calcmetr8.png)
 
-## 4.3.5 Gegevensweergave-instellingen
+## 4.3.5 Componentes da Configuração de Dados
 
-U moet naar dit scherm worden omgeleid:
+Você deve ser redirecionado para esta tela:
 
 ![demo](./images/8-v2.png)
 
-Op dit tabblad kunt u enkele belangrijke instellingen wijzigen om de manier te wijzigen waarop gegevens worden verwerkt. Laten we beginnen met het instellen van de **Time-out sessie** tot 30 min. Dankzij de tijdstempel van elke ervaringsgebeurtenis kunt u het concept van een sessie op alle kanalen uitbreiden. Bijvoorbeeld, wat gebeurt als een klant het vraag-centrum na het bezoeken van de website roept? Wanneer u aangepaste sessietime-outs gebruikt, hebt u veel flexibiliteit om te bepalen wat een sessie is en hoe die sessie gegevens samenvoegt.
+Nesta aba, você pode modificar algumas configurações importantes para alternatieve a forma como os dados são processados. Vamos começar definindo o **Time-out sessie** como 30 min. Graças ao registro de data e hora de cada evento de experience ência, você pode estender o conceito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente ligar para to call center depois de bezoekar to site? Usando Tempos Limite de Sessão personalizados, você tem muita flexbilidade para decidir o que é uma sessão e como essa sessão irá mesclar os dados.
 
 ![demo](./images/ext8.png)
 
-Op dit lusje kunt u andere dingen wijzigen zoals het filtreren van de gegevens door een segment/filter te gebruiken. Dat hoef je in deze oefening niet te doen.
+Nesta aba você pode modificar outras coisas como filtrar os dados usando um segmento/filtro. Você não precará fazer isso neste uitoefício.
 
 ![demo](./images/10-v2.png)
 
-Als u klaar bent, klikt u op **Opslaan en voltooien**.
+Quando terminar, clique em **Opslaan en voltooien**.
 
 ![demo](./images/13-v2.png)
 
 >[!NOTE]
 >
->U kunt later terugkeren naar deze gegevensweergave en op elk gewenst moment instellingen en componenten wijzigen. Wijzigingen zijn van invloed op de manier waarop historische gegevens worden weergegeven.
+>Você pode voltar a esta Visualização de dados posteriormente e corriar as configurações e os componentes a qualquer momento. Als alternações afetarão a forma como os dados históricos são mostrados.
 
-U kunt nu doorgaan met het gedeelte visualisatie en analyse!
+Agora você pode continue ar com a parte de visualização e análise!
 
-Volgende stap: [4.4 Voorbereiding van gegevens in Customer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
-[Ga terug naar Gebruikersstroom 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Terug naar alle modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

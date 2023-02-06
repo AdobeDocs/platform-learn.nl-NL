@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 De mobiele app gebruiken en een baken-item activeren
+# 3.1 Gebruik van aplicativo móvel e acione um beacon
 
-## De mobiele toepassing installeren
+## Installatie van aplicativo móvel
 
 Voordat u de app installeert, moet u **Tekstspatiëring** op uw iOS-apparaat. Ga hiertoe naar **Instellingen** > **Privacy en beveiliging** > **Tekstspatiëring** en ervoor zorgen dat de optie **Toepassingen mogen aanvragen om bij te houden**.
 
+Antes de installar o aplicativo, é nasário habilitar **Rastreamento** geen seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifieque a opção **Permitir que os aplicativos solicitem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Ga naar de Apple App Store en zoek naar `aepmobile-bootcamp`. Klikken **Installeren** of **Downloaden**.
+Aceses a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Downloaden**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Klik op **Openen**.
+Depois que o aplicativo estiver installado, clique em **Openen**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Klikken **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Klikken **Toestaan**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Klikken **Ik ga akkoord**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Klikken **Toestaan tijdens gebruik van app**.
+Clique em **Permitir nasanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Klikken **Toestaan**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-U bent nu in de app, op de startpagina, klaar om de reis van de klant door te gaan.
+Agora vocestá no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Vervoersstroom voor klanten
+## Fluxo da jornada do cliente
 
-Allereerst moet u zich aanmelden. Klikken **Aanmelden**.
+Primeiramente, é necessary ário fazer of login. Clique em **Aanmelden**.
 
 ![DSN](./images/app13.png)
 
-Nadat u uw account in de vorige oefeningen hebt gemaakt, hebt u dit op de website gezien. U moet nu het e-mailadres van het account dat u in de app hebt gemaakt, opnieuw gebruiken om u aan te melden.
+Depois de criar sua conta nos uitoefícios anteriores, isso é exibido no site. Agora é nasário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./images/pv1.png)
 
-Voer hier het e-mailadres in dat u op de website hebt gebruikt en klik op **Aanmelden**.
+Digite o endereço de e-mail que vocusou no site e clique em **Aanmelden**.
 
 ![DSN](./images/app14.png)
 
-U ontvangt dan een bevestiging dat u bent aangemeld, en u ontvangt een pushmelding.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Ga terug naar de startpagina in de app en u ziet extra mogelijkheden.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-Ga eerst naar **Producten**. Klik op een product in dit voorbeeld **Koffie om te gaan**.
+Primeiro, kaas **Producten**. Clique em qualquer product, neste example: **Koffie om te gaan**.
 
 ![DSN](./images/app19.png)
 
-U ziet de **Koffie om te gaan** productpagina in de app.
+Você verá a página do produto **Koffie om te gaan** geen toepassing.
 
 ![DSN](./images/app20.png)
 
-U zult nu een gebeurtenis van de bakeningang in een off-line opslagplaats simuleren. Het doel om dit te simuleren is de klantenervaring op de in-opslagschermen te personaliseren. Om de ervaring in-store te visualiseren, is een pagina gecreeerd die dynamisch de informatie zal tonen die voor de klant relevant is die enkel de opslag inging.
+Agora vocirá simular um evento de entrada de sinalização (baken) em um local de armazenamento offline. O objetivo da simulação é personalizar a experience ência do cliente nas telas da loja. Para visualizar a experience ência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant tes para o cliente ao entrar na loja.
 
-Open deze webpagina op uw computer voordat u doorgaat: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-U zult dan dit zien:
+Em seguida, een tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-Ga vervolgens terug naar de startpagina. Klik op de knop **baken** pictogram.
+Em seguida, retorne para a página inicial. Clique no ícone do **baken**.
 
 ![DSN](./images/app23.png)
 
 Dan zie je dit. Eerst selecteert u **Bootamp Screen Beacon** en klik vervolgens op de knop **ingang** knop. Hierdoor kunt u een baken-item simuleren.
+Após essa etapa, o seguinte será exibido. Primeiro, selecion **Bootamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-Kijk nu eens naar het scherm in de winkel. Het laatste product dat u hebt bekeken, wordt hier binnen 5 seconden weergegeven.
+Agora bevestigde een tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Ga vervolgens terug naar **Producten**. Klik op een product in dit voorbeeld **Stranddeken Tan**.
+Em seguida, retorne para **Producten**. Clique em qualquer product, neste example: **Stranddeken Tan**.
 
 ![DSN](./images/app22.png)
 
-Ga vervolgens terug naar de startpagina. Klik op de knop **baken** pictogram.
+Em seguida, retorne para a página inicial. Clique no ícone do **baken**.
 
 ![DSN](./images/app23.png)
 
-Dan zie je dit. Eerst selecteert u **Bootamp Screen Beacon** en klik vervolgens op de knop **ingang** nogmaals. Hierdoor kunt u een baken-item simuleren.
+Em seguida, selecione **Bootamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (baken).
 
 ![DSN](./images/app21.png)
 
-Kijk nu eens naar het scherm in de winkel. Het laatste product dat u hebt bekeken, wordt hier binnen 5 seconden weergegeven.
+Agora, bevestiging van een tela da loja novamente. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Laten we nu ook naar uw profielviewer op de website kijken. U zult veel gebeurtenissen zien die daar werden toegevoegd, enkel om te tonen dat om het even welke interactie met een klant wordt verzameld en in Adobe Experience Platform opgeslagen.
+Agora, vamos verificar também o seu Visualizador de Perfil, geen gebied. Você verá muitos eventos que foram adicionados, para mostrar que qualquer interação com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-In de volgende oefeningen, zult u uw eigen reis van het baken ingangen vormen en testen.
+de nrs próximos uitoefícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-Volgende stap: [3.2 Uw gebeurtenis maken](./ex2.md)
+Próxima etapa: [3.2 Crie seu evento](./ex2.md)
 
-[Ga terug naar gebruikersstroom 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

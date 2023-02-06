@@ -5,93 +5,93 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 2.2 Uw gebeurtenis maken
+# 2.2 Crie seu evento
 
-Aanmelden bij Adobe Journey Optimizer door naar [Adobe Experience Cloud](https://experience.adobe.com). Klikken **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-U wordt omgeleid naar de **Home**  in Journey Optimizer. Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `Bootcamp`. Als u van de ene naar de andere sandbox wilt gaan, klikt u op **Prod** en selecteert u de sandbox in de lijst. In dit voorbeeld krijgt de sandbox een naam **Bootkamp**. Dan ben je in de **Home** weergave van de sandbox `Bootcamp`.
+Você será redirecionado para visualização da **Home** geen Journey Optimizer. Primeiro, verifieque se você está usando sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em Prod e selecione o sandbox na lista. Neste voorbeeld, o noome do sandbox é **Bootkamp**. Você estará na visualização da **Home** seu-sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-Blader in het linkermenu omlaag en klik op **Configuraties**. Klik op de knop **Beheren** knop onder **Gebeurtenissen**.
+No menu à esquerda, role para baixo e clique em **Configuraties**. Em seguida, clique no botão **Beheren** abaixo de **Gebeurtenissen**.
 
 ![ACOP](./images/acopmenu.png)
 
-Vervolgens ziet u een overzicht van alle beschikbare gebeurtenissen. Klikken **Gebeurtenis maken** om uw eigen gebeurtenis te maken.
+Você verá uma visão geral de todos os eventos disponíveis. Clique em **Gebeurtenis maken** para começar a criar seu próprio evento .
 
 ![ACOP](./images/emptyevent.png)
 
-Er verschijnt dan een nieuw, leeg gebeurtenisvenster.
+Uma nova janela de evento vazia irá aparecer.
 
 ![ACOP](./images/emptyevent1.png)
 
-Geef uw gebeurtenis als volgt een naam: `yourLastNameAccountCreationEvent` en voeg een dergelijke beschrijving toe `Account Creation Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `yourLastNameAccountCreationEvent` e adicione uma describe ção como, por voorbeo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Controleer vervolgens of de **Type** is ingesteld op **Unitair** en voor de **Type gebeurtenis-id** selectie, selecteren **Door systeem gegenereerd**.
+Em seguida, certifique-se de que **Type** está definido como **Unitair** e, para a seleção de **Type gebeurtenis-id**, selecione **Door systeem gegenereerd**.
 
 ![ACOP](./images/eventidtype.png)
 
-Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+A etapa seguinte é a seleção do schema. Het schema foi preparado para este uitoefício. Gebruiken voor schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Nadat u het schema hebt geselecteerd, ziet u een aantal velden die worden geselecteerd in het dialoogvenster **Velden** sectie. U moet nu de muisaanwijzer op de knop **Velden** en u ziet 3 pictogrammen verschijnen. Klik op de knop **Bewerken** pictogram.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Velden**. Agora vocale deve passar o mouse sobre a seção **Velden** e três ícones pop-up serão exibidos. Clique no ícone **Bewerken**.
 
 ![ACOP](./images/eventpayload.png)
 
-Je ziet een **Velden** venster popup, waarin u enkele gebieden moet selecteren die wij e-mail moeten personaliseren.  We kiezen later andere profielkenmerken met de gegevens die al in Adobe Experience Platform staan.
+Você verá uma janela pop-up de **Velden**, onde vocdeve selecionar algun dos campos que precisamos para personalizar o e-mail. Escolheremos outros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-In het object `_experienceplatform.demoEnvironment`, selecteer de velden **brandLogo** en **brandName**.
+Geen object `_experienceplatform.demoEnvironment`, pcertifique-se de selecionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-In het object `_experienceplatform.identification.core`, zorg dat u het veld selecteert **email**.
+Geen object `_experienceplatform.identification.core`, certifique-se de selecionar o campo **email**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Klikken **OK** om uw wijzigingen op te slaan.
+Clique em **OK** aan para salvar suas validações.
 
 ![ACOP](./images/saveok.png)
 
-Dan moet je dit zien. Klikken **Opslaan** nogmaals om uw wijzigingen op te slaan.
+Em seguida, een telabaixo deve ser exibida. Clique em **Opslaan**  mais uma vez para salvar suas validações..
 
 ![ACOP](./images/eventsave.png)
 
-Uw gebeurtenis is nu geconfigureerd en opgeslagen.
+Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Klik nogmaals op uw gebeurtenis om het dialoogvenster **Gebeurtenis bewerken** opnieuw. Overslaan **Velden** nogmaals om de 3 pictogrammen weer te zien. Klik op de knop **Payload weergeven** pictogram.
+Clique no seu evento novamente para abrir mais uma vez a tela **Gebeurtenis bewerken**. Passe o mouse sobre **Velden** para ver os 3 ícones outra vez . Clique no ícone **Payload weergeven**.
 
 ![ACOP](./images/viewevent.png)
 
-U zult nu een voorbeeld van de verwachte nuttige lading zien.
-Uw gebeurtenis heeft een unieke orchestration eventID, die u kunt vinden door neer in die lading te scrollen tot u ziet `_experience.campaign.orchestration.eventID`.
+Agora você verá um exemplo da carga útil esperada.
+Seu evento tem um eventID de orquestração único, que você pode enconr rolando para baixo nessa carga útil (payload) até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-De gebeurtenis-id is wat naar Adobe Experience Platform moet worden verzonden om de reis te activeren die u in een van de volgende oefeningen gaat maken. Onthoud deze eventID, aangezien u deze later nodig kunt hebben.
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos uitoefícios. Lembre-se deste eventID, você pode precisar dele posteriormente.
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-Klikken **OK**, gevolgd door klikken **Annuleren**.
+Clique em **OK** e, em seguida, clique em **Annuleren**.
 
-Je hebt deze oefening nu afgerond.
+Agora você terminou este uitoefício.
 
-Volgende stap: [2.3 Uw e-mailbericht maken](./ex3.md)
+Próxima etapa: [ 2.3 Crie sua mensagem de e-mail](./ex3.md)
 
-[Ga terug naar Gebruikersstroom 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

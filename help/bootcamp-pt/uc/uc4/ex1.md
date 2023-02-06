@@ -5,82 +5,83 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
 # 4,1 Customer Journey Analytics 101
 
-## Doelstellingen
+## Objetivos
 
-- De CJA Application Service begrijpen
-- Leer hoe u CJA kunt positioneren
-- Begrijp de CJA-workflow: van gegevensverbinding tot inzichten
+- Entenda o que é o CJA
+- Entenda qual é of papel do CJA
+- Entenda o workflow do CJA: da conexão de dados aos inzichten
 
-## 4.1.1 Wat is Customer Journey Analytics?
+## 4.1.1 O que é o Customer Journey Analytics?
 
-Customer Journey Analytics (CJA) verstrekt toolkit aan de bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen CJA leveren context en helderheid aan de complexe multi-kanaals klantenreis. De verstrekte context leidt tot actioneel inzicht in het verwijderen van pijnpunten uit het proces van de klantenomzetting en het ontwerpen van en het leveren van uitzonderlijke ervaringen voor de momenten die het belangrijkst zijn.
+O Customer Journey Analytics (CJA) fornece uma interface em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da Companihia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O CJA é capaz de fornecer contexto e clareza para essa jornada, trazendo uma visão acionável em cima das dificuldades no processo de conversão e possibilitando planejamento de experience ências relevant tes e personalizadas nos pontos marelevantes.
 
-CJA brengt Analysis Workspace bovenop Adobe Experience Platform. Adobe Experience Platform is het brein voor communicatie en orchestratie en met CJA kunnen merken nu al die gegevens contextualiseren en visualiseren, zodat Business en Insight teams er van kunnen leren door de volledige online naar offline reis van klanten te analyseren.
+O CJA traz o Analysis Workspace conectado à Adobe Experience Platform. A Adobe Experience Platform é o cérebro da comunicação e da orquestração e, com o CJA, as marcas agora podem contextualizar e visualizar todos esses dados, para que as equipes de negócios e insights possam aprender com eles, analisando toda a jornada on line para off line do ente.
 
-Bedrijfs en Insight teams kunnen met CJA spreken, vragen stellen en op de vlucht antwoorden krijgen met belemmering-en-daling, punt-en-klik en gebruikersvriendelijke UI van Analysis Workspace.
+Zoals equipes de negócios e insights podem conversar com o CJA, fazer perguntas e obter respostas em tempo real com a interface do usuário de arrastar e soltar, apontar e clicar e fácil de usar do Analysis Workspace.
 
 ![demo](./images/cja-adv-analysis1.png)
 
-## 4.1.2 Belangrijkste voordelen
+## 4.1.2 Principesvantaggen
 
-De drie belangrijkste voordelen voor klanten zijn:
+Os três princippais Benefícios para os clientes são:
 
-- De mogelijkheid om inzichten voor iedereen beschikbaar te maken (d.w.z., het democratiseren van de toegang tot gegevens)
-- De mogelijkheid om de klant in een contextuele reis te zien (d.w.z. gegevens kunnen opeenvolgend worden bekeken, die veelvoudige kanalen zowel online als off-line overspannen)
-- De mogelijkheid om de kracht van gegevens te benutten zonder dat dit nodig is (d.w.z. normale mensen kunnen gegevens gebruiken om diepe inzichten en analyses te ontsluiten voor activering van de marketing)
+- A condensidade de disponibilizar insights para todos (ou seja, democratizar o acesso aos dados).
+- A condensidade de ver o cliente em uma jornada contextual (ou seja, os dados podem ser visualizados sequencialmente, abrangendo múltiplos canais on-line e off-line).
+- A condensidade de aproveitar o poder dos dados sem que haja a necessidade (ou seja, permite que indivíduos usem dados para desbloquear insights e análises profundas para ativação de marketing).
 
-## 4.1.3 Waarom kiest u Customer Journey Analytics?
+## 4.1.3 # 4.1.3 Kleurenpipet of Customer Journey Analytics?
 
-CJA is niet bedoeld om een huidige toepassing van BI zoals Power BI, Microstrategy, Locker of Tableau te vervangen. Deze toepassingen van BI zijn bedoeld om gegevens te visualiseren om collectieve dashboards tot stand te brengen zodat iedereen in een organisatie belangrijke metriek snel kan bekijken.\
-Het doel van CJA is om analysemacht aan Marketing en Bedrijfsteams te brengen die het een &quot;moet&quot;analysehulpmiddel voor die mensen maken.
+O CJA não se destina a substituir um aplicativo de BI atual, como Power BI, Microstrategy, Locker ou Tableau. O objetivo desses aplicativos de BI é visualizar dados para criar beschéis corporativos para que todos em uma organização possam ver métricas importantes rapidamente. O objetivo do CJA é trazer poder de análise para as equipes de Marketing e Negócios, tornando-o uma ferramenta de análise obrigatória para essas pessoas
 
-Van oudsher, zijn de toepassingen van BI niet in staat om ware klantenintelligentie toe te laten:
 
-- Ze kunnen geen toeschrijving doen en maken geen analyse van de klantenterichting.
-- BI-toepassingen moeten de vraag van tevoren kennen
-- Interactieve query&#39;s worden beperkt door de structuur van de database
-- SQL-vaardigheden zijn vereist.
-- BI-toepassingen geven je niet de mogelijkheid om je af te vragen waarom er iets is gebeurd.
-- BI-toepassingen hebben geen directe verbinding met aanraakpunten van klanten.
 
-Om deze redenen hebben zakelijke gebruikers en analisten bijna onmiddellijk de dood gevonden, waardoor de analyse duur, traag, inflexibel en losgekoppeld van de systemen van actie is.
+Tradicionalmente, os aplicativos de BI têm sido incapazes de permitir a verda deira inteligência do cliente:
 
-Met CJA kunt u een 360 mening van de klantenreis hebben, gebruikend off-line en online gegevens, met de juiste hulpmiddelen om de tijd aan inzicht te verminderen, die bedrijfsgebruikers onafhankelijk maken in het begrijpen waarom iets gebeurde, en hoe te om aan het te antwoorden.
+- Eles não podem fazer atribuição e não fazem análises de jornada do cliente.
+- Os aplicativos de BI precisam saber a pergunta com antecedência
+- Als consultas interativas são limitadas pela estrutura do banco de dados
+- Habilidades de SQL são necessary árias.
+- Os aplicativos de BI não permitem que você pergunte o motivo de um acontecimento.
+- Os aplicativos de BI não têm conexão direta com os pontos de contato do cliente.
+
+Portanto, usuários de negócios e analistas chegam a becos sem saída quase imediatamente, tornando a análise cara, lenta, inflexível e desconectada dos sistemas de ação.
+
+Com o CJA você pode ter uma visão completa da jornada do cliente, usando dados offline e online, com as ferramentas certas para reduzir o tempo de insight, tornando os usuários de negócios onafhankentes para entender por que algo aconteceu e como responder a isso.
 
 ![demo](./images/cja-use-case.png)
 
-## 4.1.4 Begrijpen wat de Customer Journey Analytics-workflow is
+## 4.1.4 Compreenda o fluxo de trabalho do Customer Journey Analytics
 
-Voordat u de volgende oefeningen start, is het van essentieel belang om te begrijpen welke stappen nodig zijn om gegevens van Adobe Experience Platform naar CJA te brengen om deze zichtbaar te maken en diepgaande inzichten te krijgen. Dat noemen we CJA Workflow. Laten we er eens naar kijken:
+Antes de iniciar os próximos uitoefícios, é essencial compender quais etapas são necessary árias para trazer dados da Adobe Experience Platform para o CJA para visualizá-los e obter algun inghts profundos. É o que chamamos de fluxo de trabalho do CJA. Vamos verificar:
 
 ![demo](./images/cja-work-flow.jpg)
 
-Vergeet voor het starten van de bovenstaande stappen niet stap 0, namelijk de gegevens te begrijpen die beschikbaar zijn in Adobe Experience Platform.
+Antes de iniciar as etapas acima, não se esqueça da etapa 0, que é compender os dados que estão disponíveis na Adobe Experience Platform.
 
-**Vuil in, vuilnis uit.** Herinner je? U moet een duidelijk idee hebben van welke gegevens beschikbaar zijn en hoe de schema&#39;s in Adobe Experience Platform worden gevormd. Kennis van de gegevens in Adobe Experience Platform maakt dingen gemakkelijker, niet alleen op het onderdeel voor gegevensverbinding, maar ook bij het maken van visualisaties en het uitvoeren van analyses.
+**Vuil in, vuilnis uit.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualizações e fazer análises.
 
-## 4.1.5 Stap 0: Adobe Experience Platform-schema&#39;s en gegevenssets
+## 4.1.5 Etapa 0: Compreender esquemas e datasets da Adobe Experience Platform
 
-Meld u aan bij Adobe Experience Platform door naar deze URL te gaan: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça login na Adobe Experience Platform acessando a URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
-![Gegevensinname](../uc1/images/home.png)
+![Gegevensopname](../uc1/images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Prod]** in de rechterbovenhoek van het scherm. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Antes de continue ar, vocêprecisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** de superieure direito da tela is niet te vinden . Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu sandbox toegeado.
 
-![Gegevensinname](../uc1/images/sb1.png)
+![Gegevensopname](../uc1/images/sb1.png)
 
-Bekijk deze schema&#39;s en datasets in Adobe Experience Platform alstublieft.
+Verifique esses schema&#39;s e datasets na Adobe Experience Platform.
 
 | Gegevensset | Schema |
 | ----------------- |-------------| 
@@ -88,23 +89,26 @@ Bekijk deze schema&#39;s en datasets in Adobe Experience Platform alstublieft.
 | Het Systeem van de manifestatie - de Dataset van de Gebeurtenis voor het Centrum van de Vraag (Globale v1.1) | Het Systeem van de demonstratie - het Schema van de Gebeurtenis voor het Centrum van de Vraag (Globale v1.1) |
 | Demosysteem - Dataset van de Gebeurtenis voor de Medewerkers van de Stem (Globale v1.1) | Demosysteem - Gebeurtenisschema voor spraakassistenten (Global v1.1) |
 
-Zorg ervoor dat u op zijn minst de volgende zaken hebt gecontroleerd:
+Certifique-se de ter verificado ao menos:
 
 - Identiteiten: CRMID, phoneNumber, ECID, email. Welke identiteiten zijn de primaire herkenningstekens, welke degenen zijn secundaire herkenningstekens?
 U kunt de id&#39;s vinden door een schema te openen en het object te bekijken `_experienceplatform.identification.core`. Bekijk het schema [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
+- Id&#39;s: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, aquis são os identificadores secundários?
+Você pode encontrar os os identificadores abrindo um schema e observando o object `_experienceplatform.identification.core`. Verifique of schema [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
+
 ![demo](./images/identity.png)
 
-- Het handelsobject binnen het schema verkennen [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Ontdek het schema van Object de comércio dentro [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/commerce.png)
 
-- Voorvertoning van alle [gegevenssets](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) en bekijk de gegevens
+- Gereedschappen visualiseren [gegevenssets](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifieque os dados
 
-U kunt nu de gebruikersinterface van de Customer Journey Analytics gebruiken.
+Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Volgende stap: [4.2 Connect Adobe Experience Platform-gegevensbestanden in Customer Journey Analytics](./ex2.md)
+Próxima etapa: [Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
-[Ga terug naar Gebruikersstroom 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

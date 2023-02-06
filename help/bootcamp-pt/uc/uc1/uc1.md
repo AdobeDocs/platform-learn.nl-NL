@@ -5,47 +5,47 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# 1. Verwerving
+# 1. Aquisição
 
-## Leerdoelen
+## Objetivos de aprendizado
 
-## Vereisten
+## Pré-requisitos
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de demo-website
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->Deze zelfstudie is gemaakt om een bepaalde bootkamp-indeling te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer in één van bootkamp bent en uw toegangsgeloofsbrieven nodig hebt, gelieve uw vertegenwoordiger van de Adobe te contacteren die u van de vereiste informatie zal voorzien.
+>Este tutorial foi criado para facilitar um formato específico de Bootkamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um participante de um Bootkamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações nasárias.
 
-## Uitoefening
+## Exercícios
 
-[1.1 Bezoek de website](./ex1.md)
+[1.1 Visite](./ex1.md)
 
-In deze oefening, zult u een manuscript volgen en door de website lopen.
+Neste uitoefício, você irá seguir um roteiro e percorrer of site.
 
-[1.2 Visualiseer uw eigen real-time klantprofiel - UI](./ex2.md)
+[1.2 Visualiseren seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-In deze oefening, zult u login aan Adobe Experience Platform en u zult uw eigen Profiel van de Klant in real time in UI bekijken.
+Neste uitoefício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-[1.3 Een segment maken - UI](./ex3.md)
+[1.3 Crie um segmento - UI](./ex3.md)
 
-In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwer van het Segment van Adobe Experience Platform te maken.
+Neste uitoefício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 Actie ondernemen: Uw segment verzenden naar Adobe Target](./ex4.md)
+[1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
-Gebruik het segment u in oefening 1.1 bouwde om een Ervaring te vormen richtend Activiteit in Adobe Target.
+Gebruik van segmento construído no uitoefício 1.1 para configurar uma Atividade de segmentmentação por experience ência no Adobe Target.
 
-[1.5 Actie nemen: Uw segment verzenden naar Facebook](./ex5.md)
+[1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
-Sluit het segment dat u hebt gemaakt in oefening 1.1 aan op de doel-Facebook.
+Conecte o segmento que você criou no uitoefício 1.1 ao destino Facebook.
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os módulos](../../overview.md)

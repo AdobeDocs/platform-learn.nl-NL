@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 0%
+source-wordcount: '534'
+ht-degree: 1%
 
 ---
 
-# 1.2 Visualiseer uw eigen Real-time profiel van de Klant - UI
+# 1.2 Visualiseren seu próprio perfil de cliente em tempo real - UI
 
-In deze oefening, zult u login aan Adobe Experience Platform en uw eigen Profiel van de Klant in real time in UI bekijken.
+Neste uitoefício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-## Artikel
+## História
 
-In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande segmentlidmaatschap. De getoonde gegevens kunnen van overal, van de toepassingen van Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het echte ervaringssysteem van record.
+No Perfil do cliente em tempo real, todos os dados do perfil são exibidos juntamente com os dados do evento, além das associações de segmentos existentes. Os dados mostrados podem vir de qualquer lugar, de aplicativos da Adobe e solution ções externas. Essa a a exibição mais poderosa da Adobe Experience Platform, o verda deiro local do sistema de experience ência.
 
-## 1.2.1 De weergave Klantprofiel in Adobe Experience Platform gebruiken
+## 1.2.1 Gebruik een visualização do perfil do cliente e Adobe Experience Platform
 
-Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Antes de continue ar, vocêprecisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootkamp. É bezível fazer isso clicando no texto **[!UICONTROL Productieproduct]** Na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] toewijding.
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
-Ga in het linkermenu naar **Profielen** en **Bladeren**.
+Geen menu à esquerda, acesse **Profielen** e **Bladeren**.
 
 ![Klantprofiel](./images/homemenu.png)
 
-In het deelvenster Profielviewer op uw website vindt u het identiteitsoverzicht. Elke identiteit is gekoppeld aan een naamruimte.
+Geen pijnlijke Visualizador de perfil op seu-locatie, você pode contrasteert een visão geral da identidade. Cada identifier está vinculada a um namespace.
 
 ![Klantprofiel](./images/identities.png)
 
-In het deelvenster Profielviewer kunt u deze identiteit momenteel zien:
+Geen pijnel Visualizador de perfil, agora você pode ver esta identidade:
 
 | Naamruimte | Identiteit |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
-In Adobe Experience Platform zijn alle id&#39;s even belangrijk. Voorheen was de ECID de belangrijkste id in de context van Adobe en alle andere id&#39;s waren hiërarchisch gekoppeld aan de ECID. In Adobe Experience Platform is dit niet langer het geval en kan elke id als een primaire id worden beschouwd.
+Com a Adobe Experience Platform, todos os IDs são igualmente importantes. Anteriormente, o ECID era o ID mais importante no contexto da Adobe e todos os outros IDs estavam vinculados ao ECID em uma relação hierárquica. Com a Adobe Experience Platform, isso mudou e cada ID pode ser overweging, um identificador primário.
 
-Doorgaans is de primaire id afhankelijk van de context. Als u uw Centrum van de Vraag vraagt, **Wat is de belangrijkste ID?** zij zullen waarschijnlijk antwoorden , **het telefoonnummer!** Maar als u uw team van CRM vraagt, zullen zij antwoorden, **Het e-mailadres!**  Adobe Experience Platform begrijpt deze complexiteit en beheert deze voor u. Elke toepassing, of een toepassing van de Adobe of niet-Adobe, zal met Adobe Experience Platform spreken door te verwijzen naar identiteitskaart zij primair beschouwen. Het werkt gewoon.
+Normalmente, o identificador primário depende do contexto. Se você perguntar ao seu Call Centre: **Qual é of ID mais importante?** Eles provavelmente responderão: **o número de telefone!** Mas se você perguntar à sua equipe de CRM, eles responderão: **o endereço de e-mail!** A Adobe Experience Platform entende essa complexidade e gerencia isso para você. Cada aplicativo, seja um aplicativo da Adobe ou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que bezam principal. E simpesmente funciona
 
-Voor het veld **Naamruimte identiteit**, selecteert u **ECID** en voor het veld **Identiteitswaarde** Voer de ECID in die u kunt vinden in het deelvenster Profielviewer van de bootcampingwebsite. Klikken **Weergave**. Vervolgens ziet u uw profiel in de lijst. Klik op de knop **Profiel-id** om uw profiel te openen.
+Para o campo **Naamruimte identiteit**, selecione **ECID** e para o campo **Identiteitswaarde** binnen ECID que você pode is geen pijnlijke Visualizador de perfil do site do Bootkamp. Clique em **Weergave**. Você verá seu perfil na lista. Clique no **Profiel-id** para abrir seu perfil .
 
 ![Klantprofiel](./images/popupecid.png)
 
-U ziet nu een overzicht van een paar belangrijke **Profielkenmerken** van uw klantprofiel.
+Agora voctem uma visão geral de algun **Atributos de perfil** importantes do seu perfil de cliente.
 
 ![Klantprofiel](./images/profile.png)
 
-Ga naar **Gebeurtenissen**, waar u ingangen voor elke ervaringsgebeurtenis kunt zien die met uw Profiel wordt verbonden.
+Acesse **Gebeurtenissen**, de onde você pode ver als entradas de cada evento de ervarência vinculado ao seu Perfil.
 
 ![Klantprofiel](./images/profileee.png)
 
-Tot slot ga naar de menuoptie **Segmentlidmaatschap**. U ziet nu alle segmenten die in aanmerking komen voor dit profiel.
+Por fim, acesse a opção de menu **Segmentlidmaatschap**. Agora você verá todos os segmentos que se kwalificficam para este perfil.
 
 ![Klantprofiel](./images/profileseg.png)
 
-Laten wij nu een nieuw segment tot stand brengen dat u zal toestaan om de klantenervaring voor een anonieme of bekende klant te personaliseren.
+Agora vamos criar um novo segmento que permitirá que você personalize a experience ência do cliente para um cliente anônimo ou conhecido.
 
-Volgende stap: [1.3 Een segment maken - UI](./ex3.md)
+Próxima etapa: [1.3 Crie um segmento - UI](./ex3.md)
 
-[Ga terug naar gebruikersstroom 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

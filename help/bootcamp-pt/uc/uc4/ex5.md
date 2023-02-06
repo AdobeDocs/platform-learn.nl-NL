@@ -5,264 +5,262 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1579'
 ht-degree: 0%
 
 ---
 
-# 4.5 Visualisatie met Customer Journey Analytics
+# 4.5 Visualização usando Customer Journey Analytics
 
-## Doelstellingen
+## Objetivos
 
-- Analysis Workspace-gebruikersinterface begrijpen
-- Leer een functie die Analysis Workspace zo verschillend maakt.
-- Leer hoe u in CJA analyseert met Analysis Workspace
+- Entenda UI do Analysis Workspace
+- Conheça algun recursos que tornam o Analysis Workspace tão diferente.
+- Aprenda a analisar no CJA usando Analysis Workspace
 
 ## Context
 
-In deze exercitie gebruikt u Analysis Workspace in CJA om productweergaven, producttrechters, churn enz. te analyseren.
+Neste uitoefício, você usará o Analysis Workspace no CJA para analisar visualizações de produtos, funis de produtos, rotatividade, enz.
 
-Laten we het project gebruiken waarin u hebt gemaakt [4.4 Gegevensvoorbereiding in Analysis Workspace](./ex4.md), dus ga naar [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em  [4.4 Preparação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Uw project openen `yourLastName - Omnichannel Analysis`.
+Abra seu project `yourLastName - Omnichannel Analysis`.
 
-Met uw geopend project en de Mening van Gegevens `yourLastName - Omnichannel Analysis` geselecteerd, bent u klaar om uw eerste visualisaties te bouwen.
+Com seu project aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a construir suas primeiras visualizações.
 
 ![demo](./images/prodataView1.png)
 
-## Hoeveel productweergaven hebben we dagelijks
+## Quantas visualizações de produtos temos diariamente
 
-Allereerst moeten we de juiste data selecteren om de gegevens te analyseren. Ga naar de kalenderdropdown op de rechterkant van het canvas. Klik erop en selecteer het toepasselijke datumbereik.
+Em primeiro lugar, precisamos selecionar as datas certas para analisar os dados. Acesse o menu Susenso do calendário no lado direito da tela. Clique nele e selecione o intervalo de datas aplicável.
 
 >[!IMPORTANT]
 >
->Selecteer een datumbereik als **Deze week** of **Deze maand**. De meest recente beschikbare gegevens zijn opgenomen op 19 september 2022.
+>Selecione um intervalo de datas como **Deze week** ou **Deze maand**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
 
 ![demo](./images/pro1.png)
-
-In het linkerzijmenu (componentengebied), vind Berekende Metrisch **Productweergaven**. Selecteer het en sleep het en laat vallen binnen het canvas, op het hoogste recht binnen de vrije vormlijst.
+No menu do lado esquerdo (área de componentes), encontre as métricas calculadas **Productweergaven**. Selecione-as e arraste e solte na tela, no canto superior direito da tabela de forma livre.
 
 ![demo](./images/pro2.png)
 
-De dimensie automatisch instellen **Dag** wordt toegevoegd om uw eerste tabel te maken. Nu kunt u zien hoe uw vraag direct wordt beantwoord.
+Automaticamente a dimensão **Dag** será adicionada para criar sua primeira tabela . Agora você pode ver sua pergunta respondida imediatamente.
 
 ![demo](./images/pro3.png)
 
-Klik vervolgens met de rechtermuisknop op het metrische overzicht.
+Em seguida, clique com o botão direito do mouse no resumo da métrica.
 
 ![demo](./images/pro4.png)
 
-Klikken op **Visualiseren** en selecteer vervolgens **Lijn** als visualisatie.
+Clique em **Visualiseren** e selecione **Lijn** como visualização.
 
 ![demo](./images/pro5.png)
 
-Uw producten worden overdag weergegeven.
+Você verá as suas visualizações de produto por dia.
 
 ![demo](./images/pro6.png)
 
-U kunt het tijdsbereik veranderen in dag door op **Instellingen** binnen de visualisatie.
+Você podvarium o escopo de tempo para o dia clicando em **Instellingen** na visualização.
 
 ![demo](./images/pro7.png)
 
-Klik op de stip naast **Lijn** tot **De gegevensbron beheren**.
+Clique no ponto ao lado de **Lijn** e **De gegevensbron beheren**.
 
 ![demo](./images/pro7a.png)
 
-Klik op Volgende **Selectie vergrendelen** en selecteert u **Geselecteerde items** om deze visualisatie te vergrendelen zodat altijd een tijdlijn van productweergaven wordt weergegeven.
+Em seguida, clique em **Selectie vergrendelen** e selecione **Geselecteerde items** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produtos.
 
 ![demo](./images/pro7b.png)
 
-## Vijf meest bekeken producten
+## 5 produtos mais vistos
 
-Wat zijn de vijf belangrijkste producten die worden weergegeven?
+Quais são os 5 produtos mais vistos?
 
-Vergeet niet om het project nu en dan op te slaan.
+Lembre-se de salvar o projeto de tempos em tempos.
 
 | OS | Korte snede |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command + S |
 
-Laten we de beste 5 bekeken producten vinden. In het linkerzijmenu, vind **Productnaam** - Dimension.
+Vamos começar a enconr os 5 produtos mais vistos. Geen menu do lado esquerdo, encontre o Nome do produto - Dimensão.
 
 ![demo](./images/pro8.png)
 
-Nu slepen en neerzetten **Productnaam** ter vervanging van de **Dag** dimensie:
+Agora arraste e solte **Productnaam** para substituir a dimensão **Dag**:
 
-Dit zal het resultaat zijn
+Este será o resultaatado.
 
 ![demo](./images/pro10a.png)
 
-Probeer vervolgens een van de producten te splitsen op merknaam. Zoeken naar **brandName** en sleep het onder de eerste productnaam.
+Em seguida, tente dividir um dos produtos por Nome da marca. Pesquise **brandName** e arraste para baixo do primeiro nome do produto.
 
 ![demo](./images/pro13.png)
 
-Daarna, doe een verdeling gebruikend de Agent van de Gebruiker. Zoeken naar **Gebruikersagent** en sleep het onder de merknaam.
+Em seguida, faça um detalhamento usando o Agente de usuário. Pesquise **Gebruikersagent** e arraste-o para baixo do nome da marca.
 
 ![demo](./images/pro15.png)
 
-U zult dan dit zien:
+Em seguida, será exibida a tela abaixo:
 
 ![demo](./images/pro15a.png)
 
-Tot slot kunt u meer visualisaties toevoegen. Aan de linkerkant, onder visualisatie, zoek naar `Donut`. Neem `Donut`, slepen en neerzetten op het canvas onder de **Lijn** visualisatie.
+Por fim, você pode adicionar mais visualizações. No lado esquerdo, em visualizações, pesquise `Donut`. Pegue `Donut`, arraste e solte na tela sob a visualização **Lijn** 
 
 ![demo](./images/pro18.png)
 
 Selecteer vervolgens in de tabel de eerste 5 **Gebruikersagent**  rijen uit de ineenstorting die we onder **Google Pixel XL 32 GB zwarte smartphone** > **Citi Signal**. Houd tijdens het selecteren van de vijf rijen de knop **CTRL** (in Windows) of de knop **Opdracht** (op Mac).
 
+Em seguida, na Tabela, selecione as primeiras 5 linhas de **Gebruikersagent** do detalhamento que fizemos em **Google Pixel XL 32 GB zwarte smartphone** > **Citi Signal**. Ao selecionar as 5 linhas, segmento botão **CTRL** (geen Windows) u o botão **Opdracht** (geen Mac).
+
 ![demo](./images/pro20.png)
 
-Het donutdiagram is gewijzigd:
+Você verá o gráfico de donut aarttaal:
 
 ![demo](./images/pro21.png)
 
-U kunt zelfs het ontwerp aanpassen om leesbaarder te zijn, door zowel **Lijn** de **Donut** een beetje kleiner uitlijnen zodat ze naast elkaar kunnen passen:
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Lijn** e o gráfico de **Donut** um pouco menor para que sejam exibidos lado a lado:
 
 ![demo](./images/pro22.png)
 
-Klik op de stip naast **Donut** tot **De gegevensbron beheren**.
-Klik op Volgende **Selectie vergrendelen** om deze visualisatie te vergrendelen zodat altijd een tijdlijn van productweergaven wordt weergegeven.
+Clique no ponto ao lado de *Donut** para **De gegevensbron beheren**. Em seguida, clique em **Selectie vergrendelen** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de produto.
 
 ![demo](./images/pro22b.png)
 
-Meer informatie over visualisaties met Analysis Workspace vindt u hier:
+Saiba mais sobre visualizações usando o Analysis Workspace em:
 
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Trechter met productinteracties, van weergave tot aankoop
+## Funil de interação do produto, da visualização à compra
 
-Er zijn veel manieren om deze kwestie op te lossen. Één van hen moet het Type van Interactie van het Product gebruiken en het op een vrije vormlijst gebruiken. Een andere manier is om een **Vallout Visualisatie**. Laten we de laatste gebruiken die we tegelijkertijd willen visualiseren en analyseren.
+Existem muitas formas de resolver esta questão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. Outra forma é usar uma **Vallout Visualisatie**. Vamos usar o último, pois queremos visualizar e analisar ao mesmo tempo.
 
-Sluit het huidige deelvenster door hier te klikken:
+Feche o pijnel atual clicando aqui:
 
 ![demo](./images/pro23.png)
 
-Voeg nu een nieuw leeg deelvenster toe door op **+ Leeg deelvenster toevoegen**.
+Agora adicione um novo chilel em branco clicando **+ Leeg deelvenster toevoegen**.
 
 ![demo](./images/pro24.png)
 
-Klik op visualisatie **Fallout**.
+Clique na visualização de **Fallout**.
 
 ![demo](./images/pro25.png)
 
-Selecteer hetzelfde datumbereik als in de vorige exercitie.
+Selecione o mesmo intervalo de datas do uitoefício anterior.
 
 ![demo](./images/prodatef.png)
 
-Dan zie je dit.
+Em seguida, você verá:
 
 ![demo](./images/prodatefa.png)
 
-Dimensie zoeken **Type gebeurtenis** onder de onderdelen aan de linkerkant:
+Omgaan met een dimensie **Type gebeurtenis** nos componentes no lado esquerdo:
 
 ![demo](./images/pro26.png)
 
-Klik op de pijl om de dimensie te openen:
+Clique na seta para abrir a dimensão:
 
 ![demo](./images/pro27.png)
 
-Alle beschikbare gebeurtenistypen worden weergegeven.
+Você verá todos os Tipos de eventos disponíveis.
 
 ![demo](./images/pro28.png)
 
-Item selecteren **commerce.productViews** en sleep het naar de **Aanraakpunt toevoegen** veld binnen **Vallout Visualisatie**.
+Item selecteren **commerce.productViews** e arraste e solte-o no campo **Aanraakpunt toevoegen** dentro da **Vallout Visualisatie**.
 
 ![demo](./images/pro29.png)
 
-Doe hetzelfde met **commerce.productListAdds** en **commerce.purchase** en zet ze neer op **Aanraakpunt toevoegen** veld binnen **Vallout Visualisatie**. Uw visualisatie ziet er nu als volgt uit:
+Faça o mesmo com **commerce.productListAdds** en **commerce.purchase** e solte-os no campo **Aanraakpunt toevoegen** dentro da  **Vallout Visualisatie**. Sua visualização agora deve ser semelhante ao seguinte:
 
 ![demo](./images/props1.png)
 
-Je kunt hier veel doen. Enkele voorbeelden: vergelijk in tijd, vergelijk elke stap door apparaat of vergelijk door loyaliteit. Nochtans, als wij interessante dingen willen analyseren zoals waarom klanten niet kopen na het toevoegen van een punt aan hun kar, kunnen wij het beste hulpmiddel in CJA gebruiken: klik met de rechtermuisknop.
+Você pode fazer muitas coisas aqui. Alweren: vergelijkar ao longo do tempo , vergelijkar cada passo por dispositivo ou comparar por fidelidade . Geen entanto, se quisermos analisar coisas interessantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: kliar com o botão direito.
 
-Klik met de rechtermuisknop op het aanraakpunt **commerce.productListAdds**. Klik vervolgens op **Brainstormfallout bij dit aanraakpunt**.
+Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida, clique em **Brainstormfallout bij dit aanraakpunt**.
 
 ![demo](./images/pro32.png)
 
-Er wordt een nieuwe vrije-vormtabel gemaakt om te analyseren wat de mensen deden als ze niets hadden aangeschaft.
+Uma nova tabela de formato livre será criada para analisar o que as pessoas fizeram se não compraram.
 
 ![demo](./images/pro33.png)
 
-Wijzig de **Type gebeurtenis** door **Paginanaam** in de nieuwe vrije-formuliertabel om te zien welke pagina&#39;s ze gaan in plaats van de pagina Aankoopbevestiging.
+Altere **Type gebeurtenis** door **Paginanaam**, na nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmação de compra.
 
 ![demo](./images/pro34.png)
 
-## Wat doen de mensen op de plaats alvorens de Cancel pagina van de Dienst te bereiken?
+## O que as pessoas fazem no site antes de acessar a página Cancelar serviço?
 
-Nogmaals, er zijn vele manieren om deze analyse uit te voeren. Laten we de flowanalyse gebruiken om het detectieonderdeel te starten.
+Novamente, há muitas formas de realizar essa análise. Vamos usar a análise de fluxo para iniciar parte da descoberta.
 
-Sluit het huidige deelvenster door hier te klikken:
+Feche o pijnel atual clicando aqui:
 
 ![demo](./images/pro0.png)
 
-Voeg nu een nieuw leeg deelvenster toe door op **+ Leeg deelvenster toevoegen**.
+Agora adicione um novo chilel em branco clicando **+ Leeg deelvenster toevoegen**.
 
 ![demo](./images/pro0a.png)
 
-Klik op visualisatie **Stroom**.
+Clique na visualização **Stroom**.
 
 ![demo](./images/pro35.png)
 
-U zult dan dit zien:
+Em seguida, será exibido:
 
 ![demo](./images/pro351.png)
 
-Selecteer hetzelfde datumbereik als in de vorige exercitie.
+Selecione o mesmo intervalo de datas do uitoefício anterior.
 
 ![demo](./images/pro0b.png)
 
-Dimensie zoeken **Paginanaam** onder de onderdelen aan de linkerkant:
+Omgaan met een dimensie **Paginanaam** nos componentes no lado esquerdo:
 
 ![demo](./images/pro36.png)
 
-Klik op de pijl om de dimensie te openen:
+Clique na seta para abrir a dimensão:
 
 ![demo](./images/pro37.png)
 
-Alle pagina&#39;s worden weergegeven. De paginanaam zoeken: **Service annuleren**.
-Slepen en neerzetten **Service annuleren** In de Visualisatie van de Stroom op het middengebied:
+Você encontrará todas páginas vistas. Encontre nome da página: **Service annuleren**.
+Arraste e solte **Service annuleren** Na Visualização de fluxo no campo do meio:
 
 ![demo](./images/pro38.png)
 
-U zult dan dit zien:
+Em seguida, será exibido:
 
 ![demo](./images/pro40.png)
 
-Laten we nu analyseren of klanten die de **Service annuleren** de pagina op de website noemde ook het callcenter en wat het resultaat was.
+Vamos agora analisar se os clientes que bezoekaram a página C **Service annuleren** geen van de locaties também ligaram para om centre e qual foi o resultado te bellen .
 
-Ga onder de afmetingen terug en zoek **Type oproepinteractie**.
-Slepen en neerzetten **Type oproepinteractie** ter vervanging van de eerste interactie aan de rechterkant in het dialoogvenster **Stroomvisualisatie**.
+Nas dimensões, retorne e encontre Tipo de interação de chamada. Arraste e solte **Type oproepinteractie** para substituir a primeira interação à direita em **Stroomvisualisatie**.
 
 ![demo](./images/pro43.png)
 
-U ziet nu het steunkaartje van de klanten die het callcenter na het bezoeken van het **Service annuleren** pagina.
+Agora você visualiza o ticket de suporte dos clients que ligaram para a central de atendimento depois de bezoekar a página **Service annuleren**.
 
 ![demo](./images/pro44.png)
 
-Zoek vervolgens onder de afmetingen naar **Aanroepfunctie**.  Sleep het object om de eerste interactie aan de rechterkant binnen het deelvenster te vervangen **Stroomvisualisatie**.
+Em seguida, nas dimensões, procureur **Aanroepfunctie**. Arraste e solte para substituir a primeira interação à direita na visualização de fluxo.
 
 ![demo](./images/pro46.png)
 
-U zult dan dit zien:
+Em seguida, será exibido:
 
 ![demo](./images/flow.png)
 
-Zoals u kunt zien, hebben wij een omnichannel analyse in werking gesteld gebruikend de Visualisatie van de Stroom. Daardoor hebben we ontdekt dat sommige klanten die van plan waren hun service te annuleren, een positief gevoel hadden nadat ze het callcenter hadden gebeld. Hebben we misschien hun gedachten veranderd met een promotie?
+Compode ver, executamos uma análise omnichannel usando a visualização de fluxo. Graças a isso, descobrimos que algun clientes que estavam pensando em cancelar o serviço tiveram uma avaliação positiva depois de ligar para o call center. Talvez tenhamos mudado de ideia com uma promoção?
 
+## Qual é o desempenho dos clientes com um contato de Call centre Positivo em relação aos princippais KPIs?
 
-## Hoe presteert de klanten met een Positief contact Callcenter tegen belangrijkste KPIs?
-
-Laten we eerst de gegevens segmenteren om alleen gebruikers te krijgen met **positief** oproepen. In CJA, worden de Segmenten genoemd Filters. Ga naar filters binnen het componentgebied (aan de linkerkant) en klik **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positief**. Geen CJA, os Segmentos são chamados de Filtros. Acesse para filtros na área de componentes (no lado esquerdo) e clique em **+**.
 
 ![demo](./images/pro58.png)
 
-Geef binnen de filterconstructor een naam op voor het filter
+Dentro do Construtor de filtro, dê um nome ao filtro
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
@@ -270,59 +268,58 @@ Geef binnen de filterconstructor een naam op voor het filter
 
 ![demo](./images/pro47.png)
 
-Onder de componenten (binnen de Bouwer van de Filter), vind **Aanroepfunctie** en sleep het in de Definitie van de Bouwer van de Filter.
+nrs-componenten (dentro do Construtor de filtro), encontrol **Aanroepfunctie** e arraste e solte na Definição do constructor de filtro.
 
 ![demo](./images/pro48.png)
 
-Nu selecteren **positief** als waarde voor het filter.
+Agora selecione **positief** comovalor para o filtro.
 
 ![demo](./images/pro49.png)
 
-Het bereik wijzigen **Persoon** niveau.
+Altere o escopo para o nível **Persoon**.
 
 ![demo](./images/pro50.png)
 
-Als u wilt voltooien, klikt u gewoon op **Opslaan**.
+Para finalizar, basta clicar em **Opslaan**.
 
 ![demo](./images/pro51.png)
 
-Dan ben je hier weer. Sluit het vorige deelvenster als dat nog niet is gedaan.
+Então, você irá retornar para esta tela. Se ainda não retornou, feche o pijnel anterior.
 
 ![demo](./images/pro0c.png)
 
-Voeg nu een nieuw leeg deelvenster toe door op **+ Leeg deelvenster toevoegen**.
+Agora adicione um novo chilel em branco clicando **+ Leeg deelvenster toevoegen**.
 
 ![demo](./images/pro24c.png)
 
-Selecteer hetzelfde datumbereik als in de vorige exercitie.
+Selecione o mesmo intervalo de datas do uitoefício anterior.
 
 ![demo](./images/pro24d.png)
 
-Klikken op **Vrije-vormentabel**.
+Clique em **Vrije-vormentabel**.
 
 ![demo](./images/pro52.png)
 
-Sleep nu het filter dat u zojuist hebt gemaakt.
+Agora arraste e solte o filtro que você acabou de criar.
 
 ![demo](./images/pro53.png)
 
-Tijd voor het toevoegen van cijfers. Beginnen met **Productweergaven**. Sleep en zet het neer in de vrije-vormlijst. U kunt ook de opdracht **Gebeurtenissen** metrisch.
+Hora de adicionar algumas métricas. Comece com **Productweergaven**. Arraste e solte na tabela de forma livre. Você também pode excluir a métrica **Gebeurtenissen**.
 
 ![demo](./images/pro54.png)
 
-Doe hetzelfde met **Mensen**,  **Toevoegen aan winkelwagentje** en **Aankopen**. Je komt dan met zo&#39;n tafel.
+Faça o mesmo com **Mensen**, **Toevoegen aan winkelwagentje** e **Aankopen**. Você vai acabar com uma tabela como a seguinte.
 
 ![demo](./images/pro55.png)
 
-Dankzij de eerste stroomanalyse kwam er een nieuwe vraag op. Dus besloten we deze tabel te maken en een aantal KPI&#39;s te controleren op een segment om die vraag te beantwoorden. Zoals u kunt zien, is tijd aan inzicht veel sneller dan het gebruiken van SQL of het gebruiken van andere oplossingen van BI.
+Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar algun KPIs em um segmento para responder a essa pergunta. Como você pode ver, o tempo de insight é muito mais rápido do que usar SQL ou usar outras solution ções de BI.
 
-## Customer Journey Analytics- en Analysis Workspace-rechthoek
+## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-Zoals u in dit laboratorium hebt geleerd, hecht Analysis Workspace gegevens van alle kanalen samen om de volledige klantenreis te analyseren. Vergeet ook niet dat u gegevens naar dezelfde werkruimte kunt brengen die niet aan de reis is gekoppeld.
-Het kan echt nuttig zijn om losgekoppelde gegevens in uw analyse te brengen om context aan de reis te geven. Voorbeelden zijn onder andere NPS-gegevens, enquêtes, Facebook Ads-gebeurtenissen of offline-interacties (niet geïdentificeerd).
+Como você aprendeu neste laboratório, o Analysis Workspace reúne dados de todos os canais para analisar a jornada completa do cliente. Além disso, lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado à jornada. Pode ser muito útil trazer dados desconectados para sua análise para contextualizar a jornada. Algun exEmployment omvat coisas como dados NPS, pesquisas, eventos de anúncios do Facebook ou interações offline (não identificadas).
 
-Volgende stap: [4.6 Van inzichten naar actie](./ex6.md)
+Próxima etapa: [4.6 De inzichten a ação](./ex6.md)
 
-[Ga terug naar Gebruikersstroom 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Terug naar alle modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

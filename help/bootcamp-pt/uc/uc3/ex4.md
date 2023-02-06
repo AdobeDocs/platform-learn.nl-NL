@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# 3.4 Test uw reis
+# 3.4 Teste sua jornada
 
-Om uw reis te testen, zult u gebeurtenisidentiteitskaart van de gebeurtenis moeten gebruiken u in oefening 3.2 creeerde, die als dit kijkt.
+Para testar sua jornada, você deve usar o eventID criado no uitoefício 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-De evenement-id is wat naar Adobe Experience Platform moet worden verzonden om de reis te starten. In dit voorbeeld is de eventID:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Neste voorbeel, of eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Open de mobiele app en ga naar de startpagina. Klik op de knop **Instellingen** pictogram.
+Abra o aplicativo móvel e vá para a página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-De eventID in het veld plakken **Beacon EventID** en klik op **Opslaan**.
+Cole seu eventID no campo **Beacon EventID** e clique em **Opslaan**.
 
 ![DSN](./images/beacon1.png)
 
-Open deze webpagina op uw computer voordat u doorgaat: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-U zult dan dit zien:
+Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Ga vervolgens terug naar de startpagina. Klik op de knop **baken** pictogram.
+Retorne para a página inicial. Clique no ícone do **baken**.
 
 ![DSN](./images/app23.png)
 
-Dan zie je dit. Eerst selecteert u **Bootamp Screen Beacon** en klik vervolgens op de knop **ingang** knop. Hierdoor kunt u een baken-item simuleren.
+Primeiro, selecion **Bootamp Screen Beacon** e clique no botão de **entrada** knop. Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Kijk nu eens naar het scherm in de winkel. Het laatste product dat u hebt bekeken, wordt hier binnen 5 seconden weergegeven.
+Agora bevestigde een tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Je hebt ook je pushmelding ontvangen.
+Você também terá recebido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Je hebt deze oefening nu afgerond.
+Você terminou este uitoefício.
 
-[Ga terug naar gebruikersstroom 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

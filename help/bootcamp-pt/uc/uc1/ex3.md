@@ -5,85 +5,85 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
 
-# 1.3 Een segment maken - UI
+# 1.3 Crie um segmento - UI
 
-In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwer van het Segment van Adobe Experience Platform te maken.
+Neste uitoefício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-## Artikel
+## História
 
-Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Antes de continue ar, vocêprecisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É bezível fazer isso clicando no texto **[!UICONTROL Productieproduct]** Na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] toewijding.
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
-Ga in het menu aan de linkerkant naar **Segmenten**. Op deze pagina ziet u een overzicht van alle bestaande segmenten. Klik op de knop **+ Segment maken** om een nieuw segment te maken.
+Geen menu à esquerda, acesse **Segmenten**. Nesta página, você tem uma visão geral de todos os segmentos bestaat. Clique no botão + Criar segmento para começar a criar um novo segmento.
 
 ![Segmentering](./images/menuseg.png)
 
-Zodra u in de nieuwe segmentbouwer bent, merkt u onmiddellijk **Attributen** en de **Afzonderlijk XDM-profiel** referentie.
+Quando estiver no novo construtor de segmentos, você irá perceber imediatamente a opção de menu **Attributen** e a referência do **Afzonderlijk XDM-profiel**.
 
 ![Segmentering](./images/segmentationui.png)
 
-Aangezien XDM de taal is die de ervaringszaken macht, is XDM ook de stichting voor de segmentbouwer. Alle gegevens die in Platform worden opgenomen, moeten tegen XDM worden toegewezen en als zodanig, worden alle gegevens deel van het zelfde gegevensmodel ongeacht waar die gegevens uit komen. Dit geeft u een groot voordeel wanneer het bouwen van segmenten, zoals van deze één segment bouwer UI, kunt u gegevens van om het even welke oorsprong in het zelfde werkschema combineren. Segmenten die in Segment Builder zijn gemaakt, kunnen voor activering naar oplossingen als Adobe Target, Adobe Campaign en Adobe Audience Manager worden verzonden.
+Como XDM é a linguagem que alimenta o setor de experience ência, o XDM também é a base para o construtor de segmentos. Todos os dados ingeridos na plataforma devem ser mapeados em relação ao XDM e, portanto, todos os dados se tornam parte do mesmo modelo de dados, Independent emente da origem desses dados. Isso oferece uma grande vanvoordm ao criar segmentos, pois a partir dessa interface do usuário do construtor de segmento, é bezível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem ser enviados para solções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-U moet nu een segment tot stand brengen van alle klanten die het product hebben bekeken **Real-Time CDP**.
+Agora você precar criar um segmento de todos os clientes que visualizaram o produto **Real-Time CDP**.
 
-Om dit segment te bouwen, moet u een Gebeurtenis van de Ervaring toevoegen. U kunt alle Experience Events vinden door op **Gebeurtenissen** in het deelvenster **Velden** menubalk.
+Para construir este segmento, você precisa adicionar um Evento de experience ência. Você pode enconr todos os Eventos de ervarência clicando no ícone **Gebeurtenissen** na barra de menu **Velden**.
 
 ![Segmentering](./images/findee.png)
 
-Vervolgens ziet u het hoogste niveau, **XDM ExperienceEvents** knooppunt. Klikken op **XDM ExperienceEvent**.
+Em seguida, você verá o nó **XDM ExperienceEvents** nível superior . Clique em **XDM ExperienceEvent**.
 
 ![Segmentering](./images/see.png)
 
-Ga naar **Objecten in de productlijst**.
+Acesse **Objecten in de productlijst**.
 
 ![Segmentering](./images/plitems.png)
 
-Selecteren **Naam** en sleep de **Naam** object van het linkermenu naar het gesegmenteerde buildercanvas **Gebeurtenissen** sectie. U zult dan dit zien:
+Selecion **Naam** e arraste e solte o object **Naam** do menu à esquerda na tela do construtor de segmentos na seção **Gebeurtenissen**. Em seguida, o seguinte será exibido:
 
 ![Segmentering](./images/eewebpdtlname.png)
 
-De vergelijkingsparameter moet **equals** en in het invoerveld typt u **Real-time CDP**.
+O parâmetro de comparação deve ser **equals** e, geen campo de entrada, insira **Real-time CDP**.
 
 ![Segmentering](./images/pv.png)
 
-Telkens als u een element aan de segmentbouwer toevoegt, kunt u klikken **Offerte vernieuwen** om een nieuwe schatting van de bevolking in uw segment te krijgen.
+Sempre que adicionar um elemento ao construtor de segmentos, você pode clicar no botão **Offerte vernieuwen** para obter uma nova estimativa da população em seu segmento .
 
 ![Segmentering](./images/refreshest.png)
 
-Als **Evaluatiemethode**, selecteert u **Rand**.
+Para **Evaluatiemethode**, selecione **Rand**.
 
 ![Segmentering](./images/evedge.png)
 
-Tot slot geven wij uw segment een naam en bewaren het.
+Por fim, vamos dar um nome ao seu segmento e salvá-lo.
 
-Gebruik als naamgevingsconventie:
+Como modelo de nomenclatura, gebruik:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Klik vervolgens op de knop **Opslaan en sluiten** om uw segment op te slaan.
+Em seguida, clique no botão **Opslaan en sluiten** para salvar seu segmento.
 
 ![Segmentering](./images/segmentname.png)
 
-U zult nu aan de pagina van het segmentoverzicht worden teruggenomen, waar u een steekproefvoorproef van klantenprofielen zult zien die voor uw segment kwalificeren.
+Agora vocirá retornar à página de visão geral do segmento, onde verá uma visualização de amostra dos perfis de clientes que se kwalificficam para o seu segmento.
 
 ![Segmentering](./images/savedsegment.png)
 
-U kunt nu doorgaan met de volgende oefening en uw segment gebruiken met Adobe Target.
+Agora você pode continue no próximo uitoefício e usar seu segmento com o Adobe Target.
 
-Volgende stap: [1.4 Actie ondernemen: Uw segment verzenden naar Adobe Target](./ex4.md)
+Próxima etapa: [1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
-[Ga terug naar gebruikersstroom 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

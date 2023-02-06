@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 2.5 De mobiele app installeren en gebruiken
+# 2.5 Installeer het gebruik van aplicativo móvel
 
 
-## De mobiele toepassing installeren
+## Installatie van aplicativo móvel
 
-Voordat u de app installeert, moet u **Tekstspatiëring** op uw iOS-apparaat. Ga hiertoe naar **Instellingen** > **Privacy en beveiliging** > **Tekstspatiëring** en ervoor zorgen dat de optie **Toepassingen mogen aanvragen om bij te houden**.
+Antes de installar o aplicativo, é necessary ário habilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirm a opção Permitir que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Ga naar de Apple App Store en zoek naar `aepmobile-bootcamp`. Klikken **Installeren** of **Downloaden**.
+Aceses a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **Downloaden**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Klik op **Openen**.
+Depois que o aplicativo estiver installado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Klikken **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Klikken **Toestaan**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Klikken **Ik ga akkoord**.
+Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Klikken **Toestaan tijdens gebruik van app**.
+Clique em **Permitir nasporto uso app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Klikken **Toestaan**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-U bent nu in de app, op de startpagina, klaar om de reis van de klant door te gaan.
+Agora vocestá no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Vervoersstroom voor klanten
+## Fluxo da jornada do cliente
 
-Allereerst moet u zich aanmelden. Klikken **Aanmelden**.
+Primeiramente, é necessary ário fazer of login. Clique em **Aanmelden**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Nadat u uw account in de vorige oefeningen hebt gemaakt, hebt u dit op de website gezien. U moet nu het e-mailadres van het account dat u in de app hebt gemaakt, opnieuw gebruiken om u aan te melden.
+Depois de criar sua conta nos uitoefícios anteriores, isso é exibido no site. Agora é nasário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./../uc3/images/pv1.png)
 
-Voer hier het e-mailadres in dat u op de website hebt gebruikt en klik op **Aanmelden**.
+Digite o endereço de e-mail que vocusou no site e clique em **Aanmelden**.
 
 ![DSN](./../uc3/images/app14.png)
 
-U ontvangt dan een bevestiging dat u bent aangemeld, en u ontvangt een pushmelding.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Ga terug naar de startpagina in de app en u ziet extra mogelijkheden.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Ga naar **Producten**. Klik op een product in dit voorbeeld **Koffie om te gaan**.
+Acesse **Producten**. Clique em qualquer product, neste example: **Koffie om te gaan**.
 
 ![DSN](./images/app19.png)
 
-U ziet de **Koffie om te gaan** productpagina in de app. Klikken **Kopen**.
+Você verá a página do produto **Koffie om te gaan** geen toepassing. Clique em **Kopen**.
 
 ![DSN](./images/app20.png)
 
-Je hebt deze oefening nu afgerond en je bent klaar voor de volgende oefeningen.
+Agora você terminou este uitoefício e está pronto para as próximas atividades.
 
-Volgende stap: [2.6 Personalisatie in het callcenter](./ex6.md)
+Próxima etapa: [ 2.6 Personalização geen callcenter](./ex6.md)
 
-[Ga terug naar Gebruikersstroom 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

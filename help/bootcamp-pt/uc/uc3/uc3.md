@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
 
-# 3. Fysiek en digitaal overvloeien
+# 3. Retornar para Todos os Módulos
 
-## Leerdoelen
+## Objetivos de aprendizado
 
-## Vereisten
+## Pré-requisitos
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de demo-website
+- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->Deze zelfstudie is gemaakt om een bepaalde bootkamp-indeling te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer in één van bootkamp bent en uw toegangsgeloofsbrieven nodig hebt, gelieve uw vertegenwoordiger van de Adobe te contacteren die u van de vereiste informatie zal voorzien.
+>Este tutorial foi criado para facilitar um formato específico de bootkamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um participante de um bootkamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações nasárias.
 
-## Uitoefening
+## Exercícios
 
-[3.1 De mobiele app gebruiken en een baken-item activeren](./ex1.md)
+[3.1 Gebruik van een aplicativo móvel e acione sinalizador beacon](./ex1.md)
 
-In deze oefening, zult u leren hoe te om een gebeurtenis te vormen.
+Neste uitoefício, você irá aprender como configurar um evento.
 
-[3.2 Uw gebeurtenis maken](./ex2.md)
+[3.2 Crie seu evento](./ex2.md)
 
-In deze oefening, zult u leren hoe te om een gebeurtenis te vormen.
+Neste uitoefício, você irá aprender como configurar um evento.
 
-[3.3 Maak uw reis en pushmelding](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-In deze oefening, zult u leren hoe te om een reis en een dupmelding te vormen en hoe te om uw gebeurtenis en bericht aan die reis te verbinden.
+Neste uitoefício, você irá aprender como configurar uma jornada e uma notificação push e como vincular seu evento e mensagem para jornada.
 
-[3.4 Test uw reis](./ex4.md)
+[3.4 Teste sua jornada](./ex4.md)
 
-In deze oefening, zult u leren hoe te om een reis te vormen en hoe te om uw gebeurtenis en bericht aan die reis te verbinden.
+Neste uitoefício, você irá aprender como configurar uma jornada e como vincular seu evento e mensagem para jornada.
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

@@ -5,181 +5,183 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 0%
+source-wordcount: '984'
+ht-degree: 3%
 
 ---
 
-# 2.3 Maak uw reis en e-mailbericht
+# 2.3 Crie sua jornada e mensagem de e-mail
 
-In deze oefening, zult u de reis vormen die moet worden teweeggebracht wanneer iemand een rekening op de demowebsite creeert.
+Neste uitoefício, você irá configurar a jornada que precisa ser acionada quando alguém criar uma conta no site de demonstração.
 
-Aanmelden bij Adobe Journey Optimizer door naar [Adobe Experience Cloud](https://experience.adobe.com). Klikken **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-U wordt omgeleid naar de **Home**  in Journey Optimizer. Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `Bootcamp`. Als u van de ene naar de andere sandbox wilt gaan, klikt u op **Prod** en selecteert u de sandbox in de lijst. In dit voorbeeld krijgt de sandbox een naam **Bootkamp**. Dan ben je in de **Home** weergave van de sandbox `Bootcamp`.
+Você será redirecionado para visualização da **Home**  geen Journey Optimizer. Primeiro, verifieque se você está usando sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** Selecteer een sandbox of lista. Neste voorbeeld, o noome do sandbox é **Bootkamp**. Você estará na visualização da **Home** seu-sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 Uw reis maken
+## 2.3.1 Crie a sua jornada
 
-Klik in het linkermenu op **Reizen**. Klik op Volgende **Reis maken** om een nieuwe reis te maken.
+Geen menu à esquerda, klik op em **Reizen**. Em seguida, clique em **Reis maken** para criar uma nova jornada .
 
 ![ACOP](./images/createjourney.png)
 
-Dan zie je een leeg reisscherm.
+Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-In de vorige oefening creeerde u een nieuw **Gebeurtenis**. U noemde het zo `yourLastNameAccountCreationEvent` en vervangen `yourLastName` met uw achternaam. Dit was het resultaat van het maken van de gebeurtenis:
+No uitoefício anterior, você criou um novo **Gebeurtenis**. Você nomeou o evento `yourLastNameAccountCreationEvent` e substituiu `yourLastName` pelo seu sobrenome . Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-U moet deze gebeurtenis nu als begin van deze reis nemen. U kunt dit doen door naar de linkerkant van het scherm te gaan en naar uw gebeurtenis in de lijst met gebeurtenissen te zoeken.
+Agora vocdeve aanzienlijke este evento como o início desta Jornada. Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Selecteer de gebeurtenis, sleep deze naar het canvas Reis. Uw reis ziet er nu als volgt uit:
+Selecione seu evento, arraste e solte o evento na tela de Jornada. Sua Jornada agora deve ser semelhante ao seguinte:
 
 ![ACOP](./images/journeyevent.png)
 
-Als tweede stap in de reis, moet u een korte toevoegen **Wachten** stap. Naar de linkerkant van het scherm **Orchestratie** voor meer informatie. U zult profielattributen gebruiken en moet ervoor zorgen zij in het Profiel van de Klant in real time worden bevolkt.
+Como segunda etapa da jornada, você deve adicionar uma etapa curta de **Wachten**. Vá para o lado esquerdo da tela até a seção **Orchestratie** para enconr isso . Você usará atributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-Je reis ziet er nu zo uit. Aan de rechterkant van het scherm moet u de wachttijd configureren. Stel dit in op 1 minuut. Dit geeft voldoende tijd om de profielkenmerken beschikbaar te maken nadat de gebeurtenis is gestart.
+Sua jornada agora deve ser semelhante ao seguinte. Geen lado direito da tela você preca configurar o tempo de espera. Defina como 1 minuto. Isso dará bastante tempo para que os atributos do perfil estejam disponíveis após o disparo do evento.
 
 ![ACOP](./images/journeywait1.png)
 
-Klikken **OK** om uw wijzigingen op te slaan.
+Clique em **OK** para salvar suas validações.
 
-Als derde stap in de reis, moet u toevoegen **E-mail** handeling. Naar de linkerkant van het scherm gaan **Handelingen**, selecteert u de **E-mail** actie, dan belemmering en laat vallen het op de tweede knoop in uw reis. U ziet dit nu.
+Como terceira etapa da jornada, você deve adicionar uma ação **E-mail**. Vá para o lado esquerdo da tela para **Handelingen**, selecione a ação **E-mail** e arraste e solte a ação no segundo nó da sua jornada. Agora o seguinte será exibido.
 
 ![ACOP](./images/journeyactions.png)
 
 Stel de **Categorie** tot **Marketing** en selecteer een e-mailoppervlak waarmee u e-mail kunt verzenden. In dit geval is het te selecteren e-mailoppervlak **E-mail**. Zorg ervoor dat de selectievakjes **Klik op e-mail** en **e-mail wordt geopend** zijn beide ingeschakeld.
 
+Defina a **Categorie** como **Marketing** e selecione uma superfície de e-mail que permita o envio de e-mail. Nesse caso, een superfície e-mail een ser selecionada e-mail. Certifique-se de que as caixas de seleção **Klik op e-mail** e **e-mail wordt geopend** estejam marcadas.
+
 ![ACOP](./images/journeyactions1.png)
 
-De volgende stap is uw bericht te creëren. Om dat te doen, klikt u op **Inhoud bewerken**.
+A próximo etapa é criar sua mensagem. Para isso, clique em **Inhoud bewerken**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 Uw bericht maken
+## 2.3.2 Crie a sua mensagem
 
-Klik op **Inhoud bewerken**.
+Para criar sua mensagem, clique em **Inhoud bewerken**.
 
 ![ACOP](./images/journeyactions2.png)
 
-U ziet dit nu.
+O seguinte será exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-Klik op de knop **Onderwerpregel** tekstveld.
+Clique no campo de texto **Onderwerpregel**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Begin met schrijven in het tekstgebied **Hallo**
+Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-De onderwerpregel is nog niet gereed. Vervolgens moet u het personalisatietoken voor het veld introduceren **Voornaam** dat is opgeslagen onder `profile.person.name.firstName`. Blader in het linkermenu omlaag om de **Persoon** en klik op de pijl om een niveau dieper te gaan.
+A linha de assunto ainda não está pronta. Em seguida, você preca trazer o token de personalização para o **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu à esquerda, rol para baixo para enconr o elemento **Persoon** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Zoek nu de **Volledige naam** en klik op de pijl om een niveau dieper te gaan.
+Agora encontre o elemento **Volledige naam** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Tot slot, vind **Voornaam** en klik op de knop **+** onderteken ernaast. Vervolgens ziet u het personalisatietoken in het tekstveld.
+Por fim, localize to campo **Voornaam** e clique no símbolo **+**  ao lado dele. Você verá o token de personalização aparecer no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Voeg vervolgens de tekst toe **, dank u dat u zich hebt aangemeld!**. Klikken **Opslaan**.
+Em seguida, adicione of texto, **agradecemos a sua inscrição** Clique em Salvar. . Clique em **Opslaan**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Dan ben je hier weer. Klikken **E-mailontwerper** om de inhoud van de e-mail te maken.
+Então, você irá retornar para esta tela. Clique em **E-mailontwerper**  para criar o conteúdo do e-mail.
 
 ![Journey Optimizer](./images/msg11.png)
 
-In het volgende scherm krijgt u drie verschillende methoden om de inhoud van de e-mail te verschaffen:
+Na próxima tela, será solicitado que você forneça o conteúdo e-mail através de 3 métodos diferentes:
 
-- **Ontwerpen vanaf nul**: Begin met een leeg canvas en gebruik de WYSIWYG-redacteur om structuur en inhoudscomponenten te slepen en te laten vallen om de inhoud van e-mail visueel op te bouwen.
-- **Uw eigen code schrijven**: Uw eigen e-mailsjabloon maken door deze te coderen met HTML
-- **HTML importeren**: Importeer een bestaande HTML-sjabloon, die u kunt bewerken.
+- **Ontwerpen vanaf nul**: Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo e-mail.
+- **Uw eigen code schrijven**: Crie seu próprio modelo de e-mail codificando usando HTML
+- **HTML importeren**: Importe um modelo HTML existente, que você poderá editar.
 
-Klikken **HTML importeren**.
+Clique em **HTML importeren**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Het bestand slepen en neerzetten **mailtemplatebootkamp.html**, die u kunt downloaden [hier](../../assets/html/mailtemplatebootcamp.html.zip). Klik op Importeren.
+Arraste e solte o arquivo **mailtemplatebootkamp.html**, que você pode baixa [hier](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
-Deze standaard e-mailsjabloon wordt dan weergegeven:
+Você verá este modelo de e-mail padrão:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Laten we de e-mail personaliseren. Klik naast de tekst **Hallo** en klik vervolgens op de knop **Persoonlijkheid toevoegen** pictogram.
+Vamos personalizar o e-mail. Clique ao lado do texto **Olá** e, em seguida, clique no ícone **Persoonlijkheid toevoegen**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Nu moet u de **Voornaam** personalisatietoken dat onder wordt opgeslagen `profile.person.name.firstName`. Zoek in het menu de **Persoon** element, naar beneden boren naar de **Volledige naam** en klik vervolgens op de knop **+** pictogram om het veld Voornaam toe te voegen aan de expressieeditor.
+Em seguida, você preca trazer o token de personalização **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu, lokaliseren naar element **Persoon**, faça uma busca detalhada no elemento **Volledige naam** e clique no ícone **+** para adicionar o campo **Voornaam** redacteur van de expressão.
 
-Klikken **Opslaan**.
+Clique em **Opslaan**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
+Agora você verá como campo de personalização foi adicionado ao seu texto.
 
 ![Journey Optimizer](./images/msg37.png)
 
-Klikken **Opslaan** om uw bericht op te slaan.
+Clique em **Opslaan** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Ga terug naar het berichtdashboard door op het **pijl** naast de tekst van de onderwerpregel in de linkerbovenhoek.
+Retorne para o pijnel de mensagens clicando na seta ao lado do texto da linha de assunto no canto superior esquerdo.
 
 ![Journey Optimizer](./images/msg56.png)
 
-Je hebt je registratiebericht nu gemaakt. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
+Agora você concluiu a criação do seu e-mail de cadastro. Clique na seta no canto superior esquerdo para retornar à sua jornada.
 
 ![Journey Optimizer](./images/msg57.png)
 
-Klikken **OK**.
+Clique em **OK**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Uw reis publiceren
+## 2.3.3 Publique a sua jornada
 
-Je moet je reis nog steeds een naam geven. U kunt dat doen door op de knop **Eigenschappen** in de rechterbovenhoek van het scherm.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Eigenschappen** de superieure direito da tela is niet te vinden .
 
 ![ACOP](./images/journeyname.png)
 
-Je kunt hier de naam van de reis invoeren. Gebruik `yourLastName - Account Creation Journey`. Klikken **OK** om uw wijzigingen op te slaan.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças .
 
 ![ACOP](./images/journeyname1.png)
 
-U kunt uw reis nu publiceren door te klikken **Publiceren**.
+Agora você pode publicar sua jornada clicando **Publiceren**.
 
 ![ACOP](./images/publishjourney.png)
 
-Klikken **Publiceren** opnieuw.
+Clique em **Publiceren**  novamente.
 
 ![ACOP](./images/publish1.png)
 
-Vervolgens ziet u een groene bevestigingsbalk met de mededeling dat uw reis nu is gepubliceerd.
+Você verá uma barra de confirmação verde informando que sua jornada agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-Je hebt deze oefening nu afgerond.
+Você terminou este uitoefício.
 
-Volgende stap: [2.4 Test uw reis](./ex4.md)
+Próxima etapa: [2.4 Teste sua jornada](./ex4.md)
 
-[Ga terug naar Gebruikersstroom 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

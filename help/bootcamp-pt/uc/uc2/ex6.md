@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# 2.6 Personalisatie in het callcenter
+# 2.6 Personalização geen callcenter
 
 Zoals die veelvoudige tijden tijdens bootkamp reeds wordt besproken, is het personaliseren van de klantenervaring iets dat op een omnichannel manier zou moeten gebeuren. Een callcenter is vaak vrij losgekoppeld van de rest van de klantenreis en dat leidt vaak tot frustrerende klantenervaringen, maar het hoeft niet te zijn. Laten wij u een voorbeeld tonen van hoe het callcenter gemakkelijk met Adobe Experience Platform, in real time kan worden verbonden.
 
-## Klantreis
+## Fluxo da jornada do cliente
 
-Tijdens de vorige exercitie hebt u met de mobiele toepassing een product aangeschaft door op de knop **Kopen** knop.
+No uitoefício anterior, usando o aplicativo móvel, você compromis um produto clicando no botão **Kopen**.
 
 ![DSN](./images/app20.png)
 
-Laten we aannemen dat u een vraag hebt over de status van uw bestelling, wat zou u doen? Typisch zou u het vraagcentrum roepen.
+Vamos supor que você tenha pergunta sobre o status do seu pedido, o que você faria? Normalmente, você ligaria para of call center.
 
-Alvorens het vraagcentrum te roepen, moet u uw kennen **Loyalty-id**. U vindt uw Loyalty-id in de profielviewer van de website.
+Antes de ligar para o call center, você preca saber seu **Loyalty-id**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do site.
 
 ![DSN](./images/cc1.png)
 
-In dit geval worden de **Loyalty-id** is **5863105**. Als deel van onze douaneimplementatie van de eigenschap van het vraagcentrum in het demomilieu, moet u een prefix aan uw toevoegen **Loyalty-id**. Het voorvoegsel is **11373** De Loyalty-id die in dit voorbeeld moet worden gebruikt, is **11373 5863105**.
+Nesse caso, o **Loyalty-id** é **5863105**. Como parte de nossa implementação personalizada do recurso de call centre no ambiente de demonstração, você deve adicionar um prefixo ao seu **Loyalty-id**. O prefixo é **11373**, portanto, o ID de fidelidade a ser usado neste voorbeo é **11373 5863105**.
 
-Laten we dat nu doen. Gebruik uw telefoon en roep het aantal **+1 (323) 745-1670**.
+Vamos fazer isso agora. Gebruik seu telefone e ligue para o número **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-Je wordt gevraagd je Loyalty-id in te voeren, gevolgd door **Aantal**. Voer je Loyalty-id in.
+Será solicitado que você insira seu ID de fidelidade, seguido de **Aantal**. Digite seu ID de fidelidade.
 
 ![DSN](./images/cc3.png)
 
-Dan hoor je **Hallo, voornaam**. Deze voornaam is afkomstig uit het Real-Time Klantprofiel in Adobe Experience Platform. Dan heb je 3 keuzes. Drukpersnummer **1**, **Status van bestelling**.
+Você ouvirá **Hallo, seu nome**, nome. Esse nome é pensionrado do Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **Status van bestelling**.
 
 ![DSN](./images/cc4.png)
 
-Nadat u de status van uw bestelling hebt gehoord, kunt u **1** Druk op 2 om terug te gaan naar het hoofdmenu of een ander menu. Druk **2**.
+Depois de ouvir o status do seu pedido, você terá a opção de pressionar **1** para voltar ao menu principal ou pressionar 2 . Pression **2**.
 
 ![DSN](./images/cc5.png)
 
-U zult dan worden gevraagd om uw ervaring van het vraagcentrum te schatten, door een aantal tussen 1 en 5 te selecteren, met 1 laag en 5 die hoog zijn. Maak uw keuze.
+Em seguida, será solicitado que você avalie sua experience ência de call center, selecionando um número entre 1 e 5, sendo 1 baixo e 5 alto. Faça a sua escolha.
 
 ![DSN](./images/cc6.png)
 
-Uw vraag aan het vraagcentrum zal nu beëindigen.
+Sua chamada para om centrum será encerrada te bellen.
 
-Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Antes de continue ar, vocêprecisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É bezível fazer isso clicando no texto **[!UICONTROL Productieproduct]** Na linha azul na parte superior da tela. Depois de selecionar o [!UICONTROL sandbox] apropriado, você verá a tela mudando e agora vocestá em seu [!UICONTROL sandbox] toewijding.
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
-Ga in het linkermenu naar **Profielen** en **Bladeren**.
+Geen menu à esquerda, acesse **Profielen** e **Bladeren**.
 
 ![Klantprofiel](./images/homemenu.png)
 
-Selecteer **Naamruimte identiteit** **E-mail** en voer het e-mailadres van uw klantenprofiel in. Klikken **Weergave**. Klik om uw profiel te openen.
+Selectie o **Naamruimte identiteit** **E-mail** e insira o endereço de e-mail do seu perfil de cliente. Clique em **Weergave**. Clique para abrir seu perfil.
 
 ![DSN](./images/cc7.png)
 
-Je ziet het profiel van je klant opnieuw. Ga naar **Gebeurtenissen**.
+Você verá seu perfil de cliente novamente. Acesse **Gebeurtenissen**.
 
 ![DSN](./images/cc8.png)
 
-Onder gebeurtenissen ziet u 2 gebeurtenissen met een eventType van **callCenter**. De eerste gebeurtenis is het resultaat van uw antwoord op de vraag **Beoordeel uw vraagtevredenheid**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta Avalie o seu **Beoordeel uw vraagtevredenheid**.
 
 ![DSN](./images/cc9.png)
 
-Een beetje omlaag schuiven en u ziet de gebeurtenis die is opgenomen toen u de optie selecteert om uw **Status van bestelling**.
+Rol um pouco para baixo e você verá o evento que foi registrado quando você selecionou a opção de verificar o **Status van bestelling**.
 
 ![DSN](./images/cc10.png)
 
-Ga naar **Segmentlidmaatschap**. U zult nu zien dat 2 segmenten op uw profiel, in real time kwalificeren, die op de interactie wordt gebaseerd u door het vraagcentrum had. Deze segmentlidmaatschappen kunnen en zouden dan moeten worden gebruikt om te beïnvloeden welke mededeling en verpersoonlijking over een ander kanaal gebeurt.
+Acesse **Segmentlidmaatschap**. Agora você verá que 2 segmentos se kwalificficam em seu perfil, em tempo real, com base nas interações que você teve por meio do call center. Essas associações de segmento podem e devem ser usadas para impactar qual comunicação e personalização acontece em qualquer outro canal.
 
 ![DSN](./images/cc11.png)
 
-Je hebt deze oefening nu afgerond.
+Você terminou este uitoefício.
 
-[Ga terug naar Gebruikersstroom 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

@@ -5,106 +5,105 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 7%
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
-# 4.4 Gegevensvoorbereiding in Analysis Workspace
+# 4.4 Preparação de dados em Customer Journey Analytics
 
-## Doelstellingen
+## Objetivos
 
-- De gebruikersinterface van Analysis Workspace in CJA begrijpen
-- Begrijp de concepten van gegevensvoorbereiding in Analysis Workspace
-- Leer hoe u gegevensberekeningen uitvoert
+- Entenda a UO do Analysis Workspace no CJA
+- Entenda os conceitos de preparação de dados no Analysis Workspace
+- Aprenda a fazer cálculos de dados
 
-## 4.4.1 Analysis Workspace-gebruikersinterface in CJA
+## 4.4.1 UI do Analysis Workspace no CJA
 
-Analysis Workspace verwijdert alle typische beperkingen die van toepassing zijn op een enkel Analytics-rapport. Analysis Workspace biedt een robuust en flexibel canvas om analyseprojecten op maat te maken. Sleep een willekeurig aantal gegevenstabellen, visualisaties en componenten (afmetingen, Metriek, segmenten en tijdgranulariteit) naar een project. Maak direct uitsplitsingen en segmenten, maak meldingen en cohorten aan voor analyse, vergelijk segmenten, werk aan uitval- en flowanalyse, en verzorg en plan voor rapporten die u kunt delen met de relevante personen in uw bedrijf.
+O Analysis Workspace remove todas limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-Customer Journey Analytics brengt deze oplossing bovenop de gegevens van het Platform. We raden u aan deze overzichtsvideo van vier minuten te bekijken:
+O Customer Journey Analytics traz essa solution ção além dos dados da plataforma. É altamente recomendável assistir a este vídeo de visão geral de quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Als u Analysis Workspace nog niet eerder hebt gebruikt, raden we u aan deze video te bekijken:
+Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### Uw project maken
+### Crie Seu Projeto
 
-Nu is het tijd om uw eerste CJA-project te maken. Ga naar het projectlusje binnen van CJA.
-Klikken **Nieuw maken**.
+Agora é hora de criar seu primeiro project do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Nieuw maken**.
 
 ![demo](./images/prmenu.png)
 
-Dan zie je dit. Selecteren **Leeg project** en klik vervolgens op **Maken**.
+Em seguida, você verá a tela abaixo. Selecion **Leeg project** então clique em **Maken**.
 
 ![demo](./images/prmenu1.png)
 
-Dan zie je een leeg project.
+Você verá um projeto vazio.
 
 ![demo](./images/premptyprojects.png)
 
-Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. In dit voorbeeld moet de gegevensweergave worden geselecteerd: `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste voorbeel, een Visualização de dados, een ser selecionada é `vangeluwe - Omnichannel Data View`.
 
 ![demo](./images/prdv.png)
 
-Vervolgens slaat u uw project op en geeft u het een naam. U kunt de volgende opdracht gebruiken om op te slaan:
+Em seguida, você irá salvar seu projeto e dar um nome a ele. Você pode usar o seguinte comando para salvar:
 
 | OS | Korte snede |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command + S |
 
-U ziet deze pop-up:
+Pop-up Você verá este:
 
 ![demo](./images/prsave.png)
 
-Gebruik deze naamgevingsconventie:
+Este modelo de nomenclatura gebruiken:
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Klik op Volgende **Opslaan**.
+Em seguida, clique em **Opslaan**.
 
 ![demo](./images/prsave2.png)
 
-## 4.4.2 Berekende cijfers
+## 4.4.2 Berekeningen van Métricas
 
-Hoewel wij alle componenten in de Mening van Gegevens hebben georganiseerd, moet u nog enkele hen aanpassen, zodat de bedrijfsgebruikers bereid zijn om hun analyse te beginnen. Ook, tijdens om het even welke analyse kunt u berekende metrisch tot stand brengen om dieper op de inzichten het vinden te gaan.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar algun deles para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, você pode criar métricas calculadas para aprofundar a descoberta de insights.
 
-Als voorbeeld maken we een berekende **Omzetsnelheid** met de **Aankopen** Metrisch/gebeurtenis wij op de Mening van Gegevens bepaalde.
+Como exemplo, criaremos uma Taxa de conversão calculada usando a métrica/evento Compras que definimos na Visualização de dados.
 
-### Omzetsnelheid
+## Taxa de conversão
 
-Laten we beginnen met het openen van de berekende metrische builder. Klik op de knop **+** om je eerste Berekende metrische waarde te maken in Analysis Workspace.
+Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
 
 ![demo](./images/pradd.png)
 
-De **Berekende metrische bouwer** verschijnt:
+O **Berekende metrische bouwer** irá aparecer :
 
 ![demo](./images/prbuilder.png)
 
-Zoek de **Aankopen** in de lijst Metriek in het linkerzijmenu. Onder **Metrisch** klikken **Alles tonen**
+Encontrol **Aankopen** na lista de métricas no menu do lado esquerdo . Em **Metrisch** clique em **Alles tonen**
 
 ![demo](./images/calcbuildercr1.png)
 
-Sleep nu en zet de **Aankopen** metrisch binnen aan de berekende metrische definitie.
+Agora arraste e solte a métrica **Aankopen** na definição da métrica calculada.
 
 ![demo](./images/calcbuildercr2.png)
 
-Doorgaans betekent de omrekeningskoers: **Conversies/sessies**. Laten we dezelfde berekening uitvoeren in het berekende metrische definitiekanvas. Zoek de **Sessies** metrisch en belemmering en laat vallen het in de definitiebouwer, onder **Aankopen** gebeurtenis.
+Normalmente, taxa de conversão significant **Conversies/sessies**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. Encontre a métrica **Sessies** e arraste e solte-a no criador de definição, no evento **Aankopen**.
 
 ![demo](./images/calcbuildercr3.png)
 
-De operator voor delen wordt automatisch geselecteerd.
+Waarnemingspost que o operador de divisão é selecionado automcamente.
 
 ![demo](./images/calcbuildercr4.png)
 
-De omrekeningskoers wordt gewoonlijk uitgedrukt in een percentage. Dus, veranderen wij het formaat om percentage te worden en ook 2 decimalen selecteren.
+A taxa de conversão é comumente representada em porcentagem. Então, vamos mudar o formato para porcentagem e selecionar 2 casas decimais.
 
 ![demo](./images/calcbuildercr5.png)
 
@@ -114,46 +113,46 @@ Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 | ----------------- |-------------| 
 | Omzetsnelheid | Omzetsnelheid |
 
-U zult iets als dit op uw scherm hebben:
+Por fim, altere o nome e a describe ção da métrica calculada:
 
 ![demo](./images/calcbuildercr6.png)
 
-Vergeet niet om **Opslaan** de berekende metrisch.
+Não se esqueça de **Salvar** een Métrica calculada.
 
 ![demo](./images/pr9.png)
 
-## 4.4.3 Berekende Dimension: Filters (segmentatie) en datumbereiken
+## 4.4.3 Dimensões rekent als volgt: Filtros (segmentação) e intervalos de datas
 
-### Filters: Berekende Dimension
+### Filters: Dimensões calculadas
 
-Berekeningen zijn niet alleen bedoeld voor Metriek. Voordat u een analyse start, is het ook interessant om een **Berekende Dimension**. Dit betekende eigenlijk **segmenten** terug in Adobe Analytics. In Customer Journey Analytics worden deze segmenten aangeroepen **Filters**.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Berekende Dimension**. Isso significant, essencialmente, **segmenten** geen Adobe Analytics. Geen Customer Journey Analytics, esses segmentos são chamados de **Filters**.
 
 ![demo](./images/prfilters.png)
 
-Het creëren van filters zal bedrijfs gebruikers helpen om de analyse met sommige waardevolle berekende afmetingen te beginnen. Dit zal sommige taken automatiseren evenals aan het adoptiedeel helpen. Hier volgen enkele voorbeelden:
+A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensões calculadas valiosas. Isso irá automzar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alweren:
 
-1. Eigen media, betaalde media,
-2. Nieuwe of terugkerende bezoeken
-3. Klanten met Verlaten winkelwagen
+1. Mídia Própria, Mídia Paga,
+2. Visitas novas x recorrentes
+3. Clientes com carrinho stappen
 
-Deze filters kunnen voor of tijdens het analysegedeelte worden gemaakt (dat u in de volgende oefening zult doen).
+Esses filtros podem ser criados antes ou durante a parte de análise (o que você fará no próximo uitoefício).
 
-### Datumbereik: Dimension berekende tijd
+### Intervalos de data: Dimensões de tempo calculadas
 
-De Dimension van de tijd zijn een ander type berekende afmetingen. Sommige zijn reeds creeerd, maar u hebt ook de capaciteit om uw eigen Dimension van de Douane te creëren bij de fase van de gegevensvoorbereiding.
+Als dimensões de tempo são outro tipo de dimensões calculadas. Algun já foram criados, mas você também pode criar suas próprias Dimensões de tempo personalizadas na fase de preparação de dados.
 
-Deze berekende Dimension van de Tijd zullen wij analisten en bedrijfsgebruikers helpen om belangrijke data te herinneren en hen te gebruiken om de rapporttijd te filtreren en te veranderen. Typische vragen en twijfels die ons bij analyses opkomen:
+Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios a lembrar datas importantes e usá-las para filtrar e Alternar o tempo de relatório. Perguntas e dúvidas típicas quando fazemos análises:
 
-- Wanneer was Zwarte Vrijdag vorig jaar? 21e-29e?
-- Wanneer hebben we die tv-campagne in december gevoerd?
-- Van wanneer tot wanneer deden we de zomerverkoop van 2018? Ik wil het vergelijken met 2019. Weet je trouwens de exacte dagen in 2019?
+- Quando foi a Black Vrijdag do ano passado? Wilt u de dias 21 e 29 invoeren?
+- Quando veiculamos aquela campanha de TV em dezembro?
+- De quando a quando fizemos as vendas de verão de 2018? Quero comparar com 2019. A propósito, você sabe os dias exatos em 2019?
 
 ![demo](./images/timedimensions.png)
 
-U hebt nu de gegevensvoorbereidingsoefening met CJA Analysis Workspace voltooid.
+Agora você concluiu o uitoefício de preparação de dados usando o Analysis Workspace do CJA.
 
-Volgende stap: [4.5 Visualisatie met Customer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-[Ga terug naar Gebruikersstroom 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Terug naar alle modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

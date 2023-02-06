@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 2%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5 Actie nemen: Uw segment verzenden naar Facebook
+# 1.5 Ação: envie seu segmento para o Facebook
 
-Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Antes de continue ar, vocêprecisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootkamp. É bezível fazer isso clicando no texto **[!UICONTROL Productieproduct]** Na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] toewijding.
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
-Ga in het linkermenu naar **Doelen** en ga vervolgens naar **Catalogus**. Dan zie je de **Doelcatalogus**. In **Doelen**, klikt u op **Segmenten activeren** op de **Facebook Aangepast publiek** kaart.
+Geen menu à esquerda, vá para **Doelen** e, em seguida, vá para **Catalogus**. Você verá o **Doelcatalogus**. Em **Doelen**, klikem **Segmenten activeren** geen cartão **Facebook Aangepast publiek**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Het doel selecteren **bootkamp-facebook** en klik op **Volgende**.
+Selectie o **bootkamp-facebook** e clique em **Volgende**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Selecteer in de lijst met beschikbare segmenten het segment dat u in de vorige exercitie hebt gemaakt. Klik op **Next**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou no uitoefício anterior. Clique em **Volgende**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Op de **Toewijzing** pagina, zorg ervoor dat **Transformatie toepassen** selectievakje is ingeschakeld. Klik op **Next**.
+Na página **Toewijzing**, controlque se a caixa de seleção **Transformatie toepassen** está marcada . Clique em **Volgende**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Op de **Segmentatieschema** pagina, selecteert u de **Oorsprong van uw publiek** en stel deze in op **Direct van klanten**. Klik op **Next**.
+Na página **Segmentatieschema**, selecteert u een **Oorsprong van uw publiek** e defina como **Direct van klanten**. Clique em **Volgende**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Tot slot, over de **Controleren** pagina, klikt u op **Voltooien**.
+Por fim, na página **Controleren**, klikem **Voltooien**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Uw segment is nu gekoppeld aan Aangepast publiek van Facebook. Telkens wanneer een klant voor dit segment in aanmerking komt, wordt een signaal verzonden naar de Facebook-server om die klant op te nemen in het aangepaste publiek aan Facebook-zijde.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se quality para esse segmento, um sinal será enviado ao lado do servidor (server-side) do Facebook para incluir esse cliente no Público Personalizado no lado do Facebook.
 
-In Facebook vindt u uw segment van Adobe Experience Platform onder Aangepast publiek:
+Geen Facebook, você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Je kunt nu een aangepast publiek weergeven in Facebook:
+Agora você pode ver seu público personalizado aparecer no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Ga terug naar gebruikersstroom 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

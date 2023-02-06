@@ -5,67 +5,67 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # 4. Reisanalyse klant
 
-In deze gebruikersstroom, zult u hands-on ervaring met de de toepassingsdienst van de Customer Journey Analytics krijgen.
+Neste fluxo de usuário, você terá ervarência prática com o serviço de aplicativo Customer Journey Analytics.
 
-Customer Journey Analytics verstrekt toolkit aan bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen Customer Journey Analytics bieden context en helderheid aan de complexe multi-kanaals klantenreizen. De verstrekte context produceert actionable inzicht in hoe te om pijnpunten uit het proces van de klantenomzetting te verwijderen en positieve ervaringen in de momenten te leveren die het belangrijkst zijn.
+O Customer Journey Analytics fornece uma interface em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companies e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de cliente multicanal complex. O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de conversão e possibilita experience ências relevant tes e personalizadas nos pontos mais relevant.
 
-Heb een blik bij deze video om de waarde, de klantenreis en het configuratieproces te begrijpen:
+Assista a este vídeo para compender o valor, a jornada do cliente e o processo de configuração:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Meer informatie over Customer Journey Analytics vindt u op [hier](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## Leerdoelen
+## Objetivos de aprendizado
 
-- Word vertrouwd met Customer Journey Analytics UI
-- Adobe Experience Platform-gegevenssets in Customer Journey Analytics plaatsen
-- De persoon-id en gegevensstitching in Customer Journey Analytics begrijpen
-- Begrijp de concepten een gegevensverbinding en een gegevensmening
-- Analysis Workspace gebruiken met Adobe Experience Platform-gegevenssets
+- Vertrouwensbeheer-gebruik com een UI do Customer Journey Analytics
+- Traga os datasets da Adobe Experience Platform para o Customer Journey Analytics
+- Entenda o ID da pessoa e a junção de dados no Customer Journey Analytics
+- Entenda os conceitos de uma conexão de dados e uma visualização de dados
+- Analysis Workspace com-gegevenssets gebruiken voor Adobe Experience Platform
 
-## Vereisten
+## Pré-requisitos
 
-- Enige kennis van Analysis Workspace verdient de voorkeur, maar is niet vereist
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Customer Journey Analytics Application Service
+- É preferível que haja certa familiaridade com o Analysis Workspace, mas não é obrigatório
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso ao serviço de aplicativo de Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->Deze zelfstudie is gemaakt om een bepaalde bootkamp-indeling te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer in één van bootkamp bent en uw toegangsgeloofsbrieven nodig hebt, gelieve uw vertegenwoordiger van de Adobe te contacteren die u van de vereiste informatie zal voorzien.
+>Este tutorial foi criado para facilitar um formato específico de Bootkamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um participante de um Bootkamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações nasárias.
 
-## Uitoefening
+## Exercícios
 
 [4,1 Customer Journey Analytics 101](./ex1.md)
 
-Leer alles over de concepten van de Customer Journey Analytics.
+Saiba tudo sobre os conceitos do Customer Journey Analytics.
 
-[4.2 Adobe Experience Platform-gegevenssets verbinden in Customer Journey Analytics](./ex2.md)
+[4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
-Leer hoe u meerdere datasets van Adobe Experience Platform in Customer Journey Analytics gebruikt.
+Saiba como consumir múltiplos datasets da Adobe Experience Platform no Customer Journey Analytics.
 
-[4.3 Een gegevensweergave maken](./ex3.md)
+[4.3 Crie uma Visualização de Dados](./ex3.md)
 
-Leer hoe te om een gegevensmening in Customer Journey Analytics te vormen.
+Saiba como configurar uma visualização de dados no Customer Journey Analytics.
 
-[4.4 Voorbereiding van gegevens in Customer Journey Analytics](./ex4.md)
+[4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
-Leer hoe u gegevens voorbereidt voordat u verdergaat met de analyse.
+Aprenda como fazer alguma preparação de dados antes de continuar com a análise.
 
-[4.5 Visualisatie met Customer Journey Analytics](./ex5.md)
+[4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-Leer hoe u Adobe Experience Platform-gegevens visualiseert met behulp van Customer Journey Analytics.
+Saiba como visualizar os dados da Adobe Experience Platform usando o Customer Journey Analytics.
 
-[4.6 Van inzichten naar actie](./ex6.md)
+[4.6 De inzichten a ação](./ex6.md)
 
-Leer hoe u uw inzichten in de vorm van een publiek in actie kunt brengen gebruikend CPD in real time en Adobe Journey Optimizer.
+Aprenda como usar seus insights na forma de um público em ação usando o CPD em tempo real e o Adobe Journey Optimizer.
 
-[Terug naar alle modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

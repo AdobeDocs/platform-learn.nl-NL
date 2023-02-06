@@ -2,111 +2,109 @@
 title: Experience Makers Bootkamp - Brazilië
 description: Beginpunt voor deelnemers aan het Bootkamp van de Ervaar
 doc-type: multipage-overview
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
 
 # Experience Makers Bootkamp
 
-## Overzicht
+## Visão Geral
 
-Portugees: Vele organisaties zijn zich niet bewust van de wrijving die in hun klanten&#39; reis bestaat, die het gevolg van een geïsoleerde en gefragmenteerde benadering in het ordenen van klantenmededeling is. Gegevens, profielen en inhoud moeten perfect worden afgestemd op het ontwerp en leveren van buitengewone ervaringen van klanten.
+Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, gevolgência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experience ências Exccionais ao consumidor.
 
-Sluit u aan bij dit bootkamp om te leren hoe een platformgebaseerde benadering u kan helpen de inzichten te krijgen die nodig zijn om wrijvingspunten te identificeren en te verwijderen om de reis van uw klant te verbeteren.
+Deelname aan het Bootkamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights necessary ários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente.
 
-Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en een real-time weergave van uw klant is hiervoor van essentieel belang. Inzichten leiden tot actie, wat leidt tot meer inzichten. De unieke platform-centric benadering van Adobe geeft u de hulpmiddelen om niet alleen technologische verandering te drijven, maar ook uw organisatie, uw team, en uw capaciteit te beïnvloeden om een holistische klantenervaring in plaats van een kanaal-specifieke klantenervaring te leveren.
+A personalização em escala começa com a compensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. A abordagem exclusiva da Adobe focada na plataforma fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe sua capaciade de oferecer uma ervarência holística ao cliente em vez de uma cliência do cliente específica por canal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## Agenda
 
-### Dag 1
+### Dia 1
 
-10.00 - 10.30 uur: Kickoff en introducties
+9.00 - 10.00 uur: Café da manhã en netwerken
 
-10.30 - 11.15 uur: Whiteboardsessie: &quot;1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV&quot;
+10.00 - 10.30 uur: Boas-vindas &#x200B;
 
-11.15 - 11.30 uur: Break
+10.30 - 11.00 uur: Jornada do cliente: &quot;Kunst van het mogelijke &quot; (sessão em inglês) &#x200B;
 
-11.30 - 12.00 uur: &quot;Klantenreis demo - Kunst van het mogelijke&quot;
+11.00 - 12.00 uur: Personalização exponencial vs. Ecossistemas em silos (sessão em inglês) &#x200B;
 
-12.00 - 12.45 uur: Whiteboardsessie: &quot;Oplossingsarchitectuur&quot;
+12.00 - 13.30 uur: Almoço e &#x200B;
 
-12.45 - 13.45 uur: Break
+13.30 - 14.30 uur: Arquitetura de solution ção (sessão em inglês) &#x200B;
 
-13.45 - 15.00 uur: Gebruikersstroom 1: &quot;Acquisition&quot; hands-on oefening
+14.30 - 16.00 uur: Doe het zelf: Aquisição &#x200B;
 
-15.00 - 15.15 uur: Break
+16.00 - 16.15 uur: Onderbrekingstijd
 
-15.15 - 17.00 uur: Gebruikersstroom 2: &quot;Registratie en on-boarding&quot; praktische oefening
+16.15 - 18.00 uur: Doe het zelf: Cadastro en &#x200B;
 
-### Dag 2
 
-08.00 - 9.30 uur: Ontbijtsessie: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
+### Dia 2
 
-9.30 - 9.45 uur: Break
+9.00 - 10.00 uur: Café da manhã en netwerken
 
-9.45 - 11.15 uur: Gebruikersstroom 3: &quot;Overvloeien van fysieke en digitale&quot; praktische oefening
+10.00 - 10.45 uur: Introdução: jornada do cliente , estrutura de times e backlog
 
-11.15 - 11.30 uur: Break
+10.45 - 12.00 uur: Doe het zelf: Consolideren o online e o offline
 
-11.30 - 12.30 uur: Doorgaan met gebruikersstroom 3
+12.00 - 13.40 uur: Almoço e &#x200B;
 
-12.30 - 13.30 uur: Lunch
+13.45 - 14.45 uur: Doe het zelf: Análise de jornadas - fidelizando e retendo clients
 
-13.30 - 14.30 uur: Gebruikersstroom 4: &quot;Customer Analysis&quot; handige oefening
+14.45 - 16.00 uur: Conclusões e próximos passos
 
-14.30 - 15.00 uur: Conclusie, afronding en volgende stappen
+16.00 - 19.00 uur: Gebruikersstroom 4: Netwerken en een gelukkig uur
 
-15:30: Vertrek
 
-## Vereisten
+## Pré-requisitos
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de website van het bootkamp op [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao-site do bootkamp [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->Deze zelfstudie is gemaakt om een bepaalde indeling voor de workshop te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer bent aan een van de workshops en uw toegangsgegevens nodig hebt, neemt u contact op met uw Adobe-vertegenwoordiger die u de vereiste informatie zal verstrekken.
+>Este tutorial foi criado para facilitar um formato específico de workshop. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se vocé um participante de um dos workshops e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações nasárias. .
 
-## Architectuur
+## Arquitetura
 
-Voordat u begint met de praktische oefeningen, bekijkt u eerst de architectuur achter deze zelfstudie. Dit bootkamp zal diep op een aantal eigenschappen en functionaliteiten rond Adobe Experience Platform gaan, en zal ook veelvoudige integraties over een verscheidenheid van bronnen en bestemmingen bespreken. Om u de architectuur achter deze zelfstudie en de algemene positionering van Adobe Experience Platform in uw bedrijfseconomisch ecosysteem goed te begrijpen, begin door de architectuurvideo en het diagram te herzien.
+Antes de começar os uitoefícios práticos, raadpleeg een zelfstudie van arquitetura por trás deste. Este bootkamp irá detalhar vários recursos e funcionalidades da Adobe Experience Platform e discutir múltiplas integrações em várias fontes e destinos. Para compender de forma passada a arquitetura por trás deste tutorial e o posicionamento geral da Adobe Experience Platform no seu ecossistema corporativo, comece revisando vídeo e o diagrama da arquitetura.
 
-Ga naar [Architectuur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Acessar [Arquitetura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
-## Video&#39;s
+## Vídeos
 
-Het belangrijkste doel van ons Experience Makers Bootkamp is om organisaties te helpen begrijpen wat personalisatie op schaal betekent en hoe het heel anders is dan wat de meeste organisaties vandaag doen. Om klantenervaringen te leveren die verenigbaar, contextafhankelijk en real-time in een wereld met meerdere kanalen zijn, hebt u een platform-eerste gedachte nodig waarin u alles één keer definieert en overal hergebruikt. In het bootkamp nemen wij u op een echte reis die klanteninteractie over website, mobiele app, callcenter en off-line, in-store milieu combineert om te tonen wat verpersoonlijking op schaal werkelijk betekent, op een praktische manier.
+O objetivo principal do nosso bootkamp para Experience Makers é ajudar as a compender o que significant personalização em escala e como isso é muito diferente do que a maioria das empresas fazem atualmente. Para oferecer Experience ncias do cliente que sejam consistentes, contextuais e em tempo real em um mundo omnichannel, você precision a de uma mentalidade que coloque a plataforma em primeiro lugar, onde tudo é definido apenas uma vez e reutilizado em todos os lugares. Geen Bootkamp, levamos você em uma jornada real que combina interações com o cliente no site, no aplicativo móvel, no call center e no ambiente offline da loja para mostrar o que a personalização em escala realmente significant, de maneira prática.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
 
-Er zijn verschillende andere video&#39;s gemaakt waarin elementen van het bootkamp en krachtige integratie tussen Adobe Experience Platform- en niet-Adobe-toepassingen worden geïllustreerd. Klik op de onderstaande koppeling voor een overzicht van deze video&#39;s.
+Vários outros vídeos foram criados para demonstrar elementos do Bootamp e integrações poderosas entre a Adobe Experience Platform e aplicativos que não são da Adobe. Clique no link abaixo para enconr uma visão geral desses vídeos.
 
-Ga naar [Video&#39;s](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Acesse: [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-U vindt aanvullende interessante video&#39;s [op ons YouTube-kanaal](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É bezível enconr vídeos interessantes adicionais [em nosso canal do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Gebruikersstromen
 
-[1. Verwerving](./uc/uc1/uc1.md)
+[1. Aquisição](./uc/uc1/uc1.md)
 
-In deze gebruikersstroom, zult u alle elementen begrijpen u verwerving-geconcentreerde gebruiksgevallen voor onbekende, niet voor authentiek verklaarde gebruikers naast bekende, voor authentiek verklaarde gebruiker moet uitvoeren door Real-Time CDP te gebruiken.
+Neste User Flow, você irá compender todos os elementos need ários para implementar casos de uso com foco em aquisição para usuários desconhecidos e não autenticados, em conjunto com usuários autenticados e conhecidos usando a Real-Time CDP.
 
-[2. Registratie en onboarding](./uc/uc2/uc2.md)
+[2. Cadastro e onboarding](./uc/uc2/uc2.md)
 
-In deze gebruikersstroom begrijpt u alle elementen die u nodig hebt om registratie en gebruiksgevallen bij het instappen te implementeren met Real-Time CDP en Adobe Journey Optimizer.
+Neste User Flow, você irá compender todos os elementos necessary ários para implementar casos de uso de cadastro e onboarding usando a Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Fysiek en digitaal overvloeien](./uc/uc3/uc3.md)
+[3. Combinação do físico e do digital ](./uc/uc3/uc3.md)
 
-In deze gebruikersstroom, zult u de klantenervaring over online en off-line kanalen op een verenigbare manier aanpassen, door Real-Time CDP en Adobe Journey Optimizer te gebruiken.
+Nesse User Flow, você irá personalizar a experience ência do cliente nos canais online e offline de maneira consistente, usando a Real-Time CDP e o Adobe Journey Optimizer.
 
 [4. Reisanalyse klant](./uc/uc4/uc4.md)
 
-In deze gebruikersstroom, zult u met Customer Journey Analytics vertrouwd worden en u zult inzicht in krijgen in hoe klanten zich van één kanaal aan andere, van online aan off-line aan callcenter en meer ontwikkelen.
+Neste User Flow, você irá se familiarizar com o Customer Journey Analytics e obter informações sobre como os clients estão evoluindo de um canal para outro, do online para o offline, para o call center e muito mais.
