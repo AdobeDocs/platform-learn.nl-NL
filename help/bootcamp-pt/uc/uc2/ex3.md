@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-No uitoefício anterior, você criou um novo **Gebeurtenis**. Você nomeou o evento `yourLastNameAccountCreationEvent` e substituiu `yourLastName` pelo seu sobrenome . Este foi o resultado da criação do Evento:
+No uitoefício anterior, você criou um novo **Gebeurtenis**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome . Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Como terceira etapa da jornada, você deve adicionar uma ação **E-mail**. Vá 
 
 ![ACOP](./images/journeyactions.png)
 
-Stel de **Categorie** tot **Marketing** en selecteer een e-mailoppervlak waarmee u e-mail kunt verzenden. In dit geval is het te selecteren e-mailoppervlak **E-mail**. Zorg ervoor dat de selectievakjes **Klik op e-mail** en **e-mail wordt geopend** zijn beide ingeschakeld.
-
-Defina a **Categorie** como **Marketing** e selecione uma superfície de e-mail que permita o envio de e-mail. Nesse caso, een superfície e-mail een ser selecionada e-mail. Certifique-se de que as caixas de seleção **Klik op e-mail** e **e-mail wordt geopend** estejam marcadas.
+Defina a **Categorie** como **Marketing** e selectieve uma **e-mailoppervlak** que permita o envio de e-mail. Nesse caso, a **e-mailoppervlak** een e-mail van ser selecionada. Certifique-se de que as caixas de seleção **Klik op e-mail** e **e-mail wordt geopend** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-A linha de assunto ainda não está pronta. Em seguida, você preca trazer o token de personalização para o **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu à esquerda, rol para baixo para enconr o elemento **Persoon** e clique na seta para ir um nível mais profundo.
+A linha de assunto ainda não está pronta. Em seguida, você preca trazer o token de personalização para o **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu à esquerda, rol para baixo para enconr o elemento **Persoon** e clique na seta para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora encontre o elemento **Volledige naam** e clique na seta para ir um nível mais profundo.
+Agora encontre o elemento **Volledige naam** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ Por fim, localize to campo **Voornaam** e clique no símbolo **+**  ao lado de
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione of texto, **agradecemos a sua inscrição** Clique em Salvar. . Clique em **Opslaan**.
+Em seguida, adicione of texto, **agradecemos a sua inscrição**. Clique em **Opslaan**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Clique em **HTML importeren**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arraste e solte o arquivo **mailtemplatebootkamp.html**, que você pode baixa [hier](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
+Arraste e solte o arquivo **mailtemplatebootkamp.html**, que você pode baixa [aqui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Vamos personalizar o e-mail. Clique ao lado do texto **Olá** e, em seguida, cli
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você preca trazer o token de personalização **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu, lokaliseren naar element **Persoon**, faça uma busca detalhada no elemento **Volledige naam** e clique no ícone **+** para adicionar o campo **Voornaam** redacteur van de expressão.
+Em seguida, você preca trazer o token de personalização **Voornaam** que está armazenado em `profile.person.name.firstName`. Geen menu, lokaliseren naar element **Persoon**, faça uma busca detalhada no elemento **Volledige naam** e clique no ícone **+** para adicionar o campo **Voornaam** redacteur.
 
 Clique em **Opslaan**.
 
@@ -162,7 +160,7 @@ Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando n
 
 ![ACOP](./images/journeyname.png)
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças .
+Você pode fazer isso clicand o no item click no item &quot;Name&quot; e insert to seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças .
 
 ![ACOP](./images/journeyname1.png)
 

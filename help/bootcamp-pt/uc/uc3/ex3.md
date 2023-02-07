@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '838'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Como segunda etapa da jornada, você deve adicionar uma ação **Push**. Vá p
 
 No lado direito da tela, agora você deve criar sua notificação push.
 
-Defina a **Categorie** como **Marketing** e selecione uma superfície push que permite enviar notificações push. Nesse caso, een superfície duw op een ser selecionada é **mmeewis-app-mobile-bootkamp**.
+Defina a **Categorie** como **Marketing** e selecione um push surface que permite enviar notificações push. Nesse caso, een superfície duw op een ser selecionada é **mmeewis-app-mobile-bootkamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,7 +88,7 @@ Na área de texto, escreva `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Em seguida, clique em  **Contextafhankelijke kenmerken** en vervolgens **Journey Orchestration**.
+Em seguida, clique em  **Contextafhankelijke kenmerken** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -127,11 +127,11 @@ Clique em **OK**.
 
 ## 3.3.2 Envie uma mensagem para uma tela
 
-Como terceira etapa da jornada, você deve adicionar uma ação  **sendMessageToScreen** handeling. Vá para o lado esquerdo da tela para **Handelingen**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
+Como terceira etapa da jornada, você deve adicionar uma ação  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **Handelingen**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibição na loja. A ação **sendMessageToScreen** espera que múltiplas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Handelingsparameters**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no **Endpoint** usado pela exibição na loja. A ação **sendMessageToScreen** espera que múltiplas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Handelingsparameters**.
 
 ![ACOP](./images/jomsg16.png)
 

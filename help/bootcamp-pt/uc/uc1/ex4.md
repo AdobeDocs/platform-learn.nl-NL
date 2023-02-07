@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Seu segmento agora está ativado para o Adobe Target.
 >
 >Imediatamente após criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para que o destino seja ativado. Este é um tempo de espera único devido à definição da configuração de back-end. Depois que o tempo de espera inicial de 1 hora e a configuração do back-end forem concluídos, os segmentos de borda recém-adicionados que são enviados ao destino do Adobe Target estarão disponíveis para segmentação em tempo real.
 
-## 1.4.2 Vorm sua atividade baseada em formulário do Adobe Target
+## 1.4.2 Sua atividade configureren op Adobe Target
 
 Agora que seu segmento Real-Time CDP está configurado para ser enviado ao Adobe Target, é bezível configurar sua atividade de Segmentação por experience ência no Adobe Target. Neste oefício, você irá configurar uma atividade baseada no Visual Experience Composer.
 
@@ -62,8 +62,6 @@ Acesse a página inicial da Adobe Experience Cloud acessando [https://experience
 
 ![RTCDP](./images/excl.png)
 
-Op de **Adobe Target** homepage, zult u alle bestaande Activiteiten zien.
-Klikken **+ Activiteit maken** om een nieuwe Activiteit te creëren.
 Na página inicial do **Adobe Target**, bestaat er een você verá todas as atividades.
 Clique em **+ Activiteit maken** para criar uma nova atividade .
 
@@ -73,7 +71,7 @@ Selecion **Gericht op ervaring**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Selecion **Zichtbaar** e defina **URL van activiteit** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes desso, substitua XX por um número entre 01 e 30.
+Selecion **Zichtbaar** e defina **URL van activiteit** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes desso, substitua XX por um número entre 01 e 60.
 
 >[!IMPORTANT]
 >
@@ -137,7 +135,7 @@ Clique no título da sua atividade no canto superior esquerdo para renomeá-la.
 
 Para o nome, gebruik:
 
-- `yourLastName - RTCDP - XT (VEC)`
+- `seuSobrenome - RTCDP - XT (VEC)`
 
 Clique em **Volgende**.
 
@@ -181,7 +179,7 @@ Se agora você voltar ao seu site de demonstração e bezoekar a página do prod
 
 ![RTCDP](./images/atform12a.png)
 
-Próxima etapa: [1.5 Actie nemen: Uw segment verzenden naar Facebook](./ex5.md)
+Próxima etapa: [1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
 [Retornar para Fluxo de Usuário 1](./uc1.md)
 

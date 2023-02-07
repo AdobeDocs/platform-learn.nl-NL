@@ -5,16 +5,16 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
 # 2.6 Personalização geen callcenter
 
-Zoals die veelvoudige tijden tijdens bootkamp reeds wordt besproken, is het personaliseren van de klantenervaring iets dat op een omnichannel manier zou moeten gebeuren. Een callcenter is vaak vrij losgekoppeld van de rest van de klantenreis en dat leidt vaak tot frustrerende klantenervaringen, maar het hoeft niet te zijn. Laten wij u een voorbeeld tonen van hoe het callcenter gemakkelijk met Adobe Experience Platform, in real time kan worden verbonden.
+Conforme discutido várias vezes durante o bootkamp, personalizar a experience ência do cliente é algo que deve acontecer de maneira omnichannel. Bel midden geralmente é bastante desconectado do restante da jornada do cliente e isso pode, com frequentieência, levar a experience fruantes do cliente, mas não preca ser assim. Vamos mostrar um voorbeo de como om center pode ser facilitmente conectado à Adobe Experience Platform, em tempo real te bellen.
 
 ## Fluxo da jornada do cliente
 
@@ -38,7 +38,7 @@ Será solicitado que você insira seu ID de fidelidade, seguido de **Aantal**. D
 
 ![DSN](./images/cc3.png)
 
-Você ouvirá **Hallo, seu nome**, nome. Esse nome é pensionrado do Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **Status van bestelling**.
+Você ouvirá **Hallo, seu nome**. Esse nome é pensionrado do Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **Status van bestelling**.
 
 ![DSN](./images/cc4.png)
 
@@ -72,7 +72,7 @@ Você verá seu perfil de cliente novamente. Acesse **Gebeurtenissen**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta Avalie o seu **Beoordeel uw vraagtevredenheid**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultaatado da sua resposta à pergunta **Beoordeel uw vraagtevredenheid** (avalie seu chamada).
 
 ![DSN](./images/cc9.png)
 

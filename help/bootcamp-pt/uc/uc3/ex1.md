@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Installatie van aplicativo móvel
 
-Voordat u de app installeert, moet u **Tekstspatiëring** op uw iOS-apparaat. Ga hiertoe naar **Instellingen** > **Privacy en beveiliging** > **Tekstspatiëring** en ervoor zorgen dat de optie **Toepassingen mogen aanvragen om bij te houden**.
-
-Antes de installar o aplicativo, é nasário habilitar **Rastreamento** geen seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifieque a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de installar o aplicativo, é nasário habilitar o **Rastreamento** geen seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifieque a opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Aceses a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Ins
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver installado, clique em **Openen**.
+Depois que o aplicativo estiver installado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Você verá a página do produto **Koffie om te gaan** geen toepassing.
 
 ![DSN](./images/app20.png)
 
-Agora vocirá simular um evento de entrada de sinalização (baken) em um local de armazenamento offline. O objetivo da simulação é personalizar a experience ência do cliente nas telas da loja. Para visualizar a experience ência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant tes para o cliente ao entrar na loja.
+Agora vocirá simular um evento de entrada de sinalização (baken) em uma loja offline. O objetivo da simulação é personalizar a experience ência do cliente nas telas da loja. Para visualizar a experience ência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant tes para o cliente ao entrar na loja.
 
 Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida, retorne para a página inicial. Clique no ícone do **baken**.
 
 ![DSN](./images/app23.png)
 
-Dan zie je dit. Eerst selecteert u **Bootamp Screen Beacon** en klik vervolgens op de knop **ingang** knop. Hierdoor kunt u een baken-item simuleren.
 Após essa etapa, o seguinte será exibido. Primeiro, selecion **Bootamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)

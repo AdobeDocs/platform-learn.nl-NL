@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Geen pijnlijke Visualizador de perfil op seu-locatie, você pode contrasteert ee
 
 ![Klantprofiel](./images/identities.png)
 
-Geen pijnel Visualizador de perfil, agora você pode ver esta identidade:
+Geen pijnel Visualizador de perfil, agora você pode ver uma identificeerde semelhante a seguinte:
 
 | Naamruimte | Identiteit |
 |:-------------:| :---------------:|

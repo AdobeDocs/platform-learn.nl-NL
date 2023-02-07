@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud]. C
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para **Home** geen Journey Optimizer. Primeiro, verifieque se você está usando sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** Selecteer een sandbox of lista. Neste voorbeeld, o noome do sandbox é **Bootamp2**. Você estará na visualização da **Home** seu-sandbox `Bootcamp`.
+Você será redirecionado para **Home** geen Journey Optimizer. Primeiro, verifieque se você está usando sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** Selecteer een sandbox of lista. Neste voorbeeld, o noome do sandbox é **Bootkamp**. Você estará na visualização da **Home** seu-sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Clique no seu evento novamente para abrir a tela **Gebeurtenis bewerken** ma
 
 ![ACOP](./images/viewevent.png)
 
-Agora você verá um exemplo da carga útil esperada.
+Agora você verá um exemplo do payload esperado.
 Seu evento tem um eventID de orquestração único, que você pode enconr rolando para baixo nessa carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
