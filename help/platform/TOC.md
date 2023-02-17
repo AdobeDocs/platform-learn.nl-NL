@@ -1,18 +1,18 @@
 ---
-user-guide-title: Tutorials voor Adobe Experience Platform
+user-guide-title: Adobe Experience Platform-tutorials
 breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 3%
+source-wordcount: '950'
+ht-degree: 8%
 
 ---
 
 
-# Tutorials voor Adobe Experience Platform {#tutorials}
+# Adobe Experience Platform-tutorials {#tutorials}
 
 + [Platform Tutorials](/help/platform/overview.md)
 + Inleiding tot Platform {#intro-to-platform}
@@ -26,7 +26,7 @@ ht-degree: 3%
    + [Basisarchitectuur](/help/platform/intro-to-platform/basic-architecture.md)
    + [De gebruikersinterface van het Platform gebruiken](/help/platform/intro-to-platform/interface-tour.md)
    + [Rollen en projectfasen](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ [Aan de slag: Data Architecers en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target=&quot;_blank&quot;}
++ [Aan de slag: Data Architecers en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
@@ -36,10 +36,10 @@ ht-degree: 3%
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Productprofielen beheren](/help/platform/admin/managing-product-profiles.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
-+ [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target=&quot;_blank&quot;}
++ [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
-+ Data Governance {#data-governance}
++ Gegevensbeheer {#data-governance}
    + [Overzicht](/help/platform/governance/understanding-data-governance.md)
    + [Eind-aan-eind demo](/help/platform/governance/introduction-to-data-governance.md)
    + [Gegevens classificeren met beheerlabels](/help/platform/governance/classify-data-using-governance-labels.md)
@@ -47,14 +47,12 @@ ht-degree: 3%
    + [Beleid voor gegevensgebruik afdwingen](/help/platform/governance/enforce-data-usage-policies.md)
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
 + Gegevenshygiëne {#data-hygiene}
-   + [Overzicht](/help/platform/data-hygiene/overview.md)
-   + [Consumenten verwijderen](/help/platform/data-hygiene/delete-consumers.md)
    + [Gegevenssets verwijderen](/help/platform/data-hygiene/delete-datasets.md)
-+ Gegevensinname {#data-ingestion}
++ Gegevensopname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Een CSV-bestand toewijzen aan XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target=&quot;_blank&quot;}
+   + [Een CSV-bestand toewijzen aan XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target="_blank"}
    + [Overzicht van bronnen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Gegevens van Adobe Analytics verzamelen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Gegevens van Audience Manager verzamelen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -64,9 +62,9 @@ ht-degree: 3%
    + [Overzicht van het opnemen van streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Gegevens streamen met HTTP-API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [Gegevens streamen met behulp van Bronverbindingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-   + [Zelfstudies voor Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
-   + [Zelfstudies voor Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
-+ Werkruimte voor gegevenswetenschap {#data-science-workspace}
+   + [Zelfstudies voor Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Zelfstudies voor Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Data Science-werkruimte {#data-science-workspace}
    + [Overzicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architectuur](data-science-workspace/architecture-overview.md)
    + [Het cursusschema en de gegevensset maken](data-science-workspace/create-the-course-schema-and-dataset.md)
@@ -79,9 +77,9 @@ ht-degree: 3%
    + [Een getraind model maken en publiceren (UI)](data-science-workspace/create-model-ui.md)
    + [Geautomatiseerde training en scoring voor een service plannen](data-science-workspace/schedule-training-scoring.md)
    + [Klantprofielen in realtime verrijken met leergegevens over computers](data-science-workspace/dsw-profile-segmentation.md)
-   + [Bronbestanden in een recept plaatsen](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
-   + [Een verpakt recept (UI) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
-   + [Een verpakt recept (API) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
+   + [Bronbestanden in een recept plaatsen](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [Een verpakt recept (UI) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [Een verpakt recept (API) importeren](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Doelen {#destinations}
    + [Overzicht van doelen](/help/platform/destinations/understanding-destinations.md)
    + [Verbinding maken met doelen](/help/platform/destinations/connecting-to-destinations.md)
@@ -106,7 +104,7 @@ ht-degree: 3%
    + [Klantprofiel in realtime](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
    + [Gegevens in profiel plaatsen](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Details van profielweergave aanpassen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
+   + [Details van profielweergave aanpassen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van Unieregelingen](/help/platform/profiles/union-schemas-overview.md)
@@ -131,12 +129,12 @@ ht-degree: 3%
    + [Door Adobe gedefinieerde functies](/help/platform/queries/adobe-defined-functions.md)
    + [Gegevenstoepassingen](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Zoekopdrachten uitvoeren](/help/platform/queries/run-queries.md)
-   + [Gegevenssets genereren op basis van queryresultaten](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target=&quot;_blank&quot;}
+   + [Gegevenssets genereren op basis van queryresultaten](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Gegevens analyseren en visualiseren](/help/platform/queries/analyze-and-visualize.md)
    + [Dashboards maken met BI-gereedschappen](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [De gegevens van uw klant opnieuw laden](/help/platform/queries/recharge-your-customer-data.md)
-   + [Client verbinden met Query-service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target=&quot;_blank&quot;}
+   + [Client verbinden met Query-service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schema&#39;s {#schemas}
    + [Overzicht](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Bouwstenen](/help/platform/schemas/schema-building-blocks.md)
@@ -151,7 +149,7 @@ ht-degree: 3%
    + [Opsommende velden en voorgestelde waarden gebruiken](/help/platform/schemas/use-enumerated-fields.md)
    + [Schema&#39;s kopiëren tussen sandboxen](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Schema&#39;s bijwerken](/help/platform/schemas/update-schemas.md)
-   + [Een ad-hocschema maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target=&quot;_blank&quot;}
+   + [Een ad-hocschema maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Segmenten {#segments}
    + [Overzicht van Segment Builder](/help/platform/segments/segment-builder-overview.md)
    + [Segmenten maken](/help/platform/segments/create-segments.md)
@@ -163,8 +161,8 @@ ht-degree: 3%
    + [Meerdere entiteitssegmenten maken](/help/platform/segments/create-multi-entity-segments.md)
    + [Segmenten maken met B2B-gegevens](/help/platform/segments/create-segments-with-b2b-data.md)
    + [Demo van streamingsegmentatie](/help/platform/segments/streaming-segmentation-demo.md)
-   + [Een segment evalueren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target=&quot;_blank&quot;}
-   + [Een gegevensset maken om gegevens te exporteren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target=&quot;_blank&quot;}
+   + [Een segment evalueren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Een gegevensset maken om gegevens te exporteren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Instellingen voor segmentovereenkomst](/help/platform/segments/segment-match-connection-setup.md)
    + [Beheer van segmentmatchgegevens](/help/platform/segments/segment-match-data-governance.md)
    + [Segment afstemmen, configuratiestroom](/help/platform/segments/segment-match-configuration-flow.md)
@@ -181,9 +179,9 @@ ht-degree: 3%
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
 + Toepassingsservices {#application-services}
-   + [Customer Journey Analytics-zelfstudies](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Journey Orchestration-zelfstudies](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Zelfstudies voor offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target=&quot;_blank&quot;}
+   + [Customer Journey Analytics-zelfstudies](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
+   + [Journey Orchestration-zelfstudies](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
+   + [Zelfstudies voor offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
    + Real-Time CDP-zelfstudies{#rtcdp}
       + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
@@ -198,10 +196,10 @@ ht-degree: 3%
    + [Waarde van Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Attribution AI configureren](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Scores en inzichten van Attribution AI gebruiken](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [AI-overzicht van klant](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [AI-klantoverzicht](/help/platform/intelligent-services/introduction-to-customer-ai.md)
    + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [Klant AI-scores en -inzichten gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+   + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud-integratie {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Campagnes ordenen met Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)

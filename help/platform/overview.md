@@ -4,33 +4,16 @@ description: Meer informatie over Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 2%
+source-wordcount: '164'
+ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform-zelfstudies
 
 Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op de markt voor het ontwikkelen en beheren van volledige oplossingen die de ervaring van klanten stimuleren. Experience Platform stelt organisaties in staat om klantgegevens en -inhoud van elk systeem te centraliseren en te standaardiseren en datamateriaal en computerleren toe te passen om het ontwerp en de levering van rijke, gepersonaliseerde ervaringen drastisch te verbeteren. Gebruik deze video&#39;s en zelfstudies om de vele componenten van Experience Platform te leren.
-
-
-<div id="whats-new-section">
-
-## Nieuwe functies
-
-* **[Op kenmerken gebaseerde toegangscontrole configureren (video)](admin/configure-attribute-based-access-control.md)**
-
-   *Toegang tot specifieke bronnen beperken*
-* **[Overzicht van gegevenshygiëne (video)](/help/platform/data-hygiene/overview.md)**
-
-   *Verbeter uw praktijken van de gegevensminimalisering*
-* **[Gegevenssets verwijderen (video)](/help/platform/data-hygiene/delete-datasets.md)**
-
-   *Tijd-aan-levende voor datasets plaatsen*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
