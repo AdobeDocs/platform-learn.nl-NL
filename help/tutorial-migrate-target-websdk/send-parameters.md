@@ -1,9 +1,9 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,9 @@ De doelimplementaties verschillen per website vanwege de sitearchitectuur, de za
 
 Laten we een eenvoudige pagina met productdetails en een pagina met orderbevestiging gebruiken om de verschillen tussen de bibliotheken aan te tonen bij het doorgeven van parameters aan Doel.
 
-Stel dat de volgende voorbeeldpagina at.js gebruikt:
+Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
 
-<!--Assume the following two example pages using at.js:-->
-
-Productgegevens:
++++at.js op een pagina van de Details van het Product:
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ Productgegevens:
 </html>
 ```
 
++++
 
 
-Bevestiging bestelling:
++++at.js op een pagina van de Bevestiging van de Orde:
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ Bevestiging bestelling:
 </body>
 </html>
 ```
+
++++
 
 
 ## Overzicht van parametertoewijzing
@@ -140,12 +141,16 @@ at.js, voorbeeld met `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
+JavaScript-voorbeelden van de Web SDK van Platforms gebruiken `sendEvent` opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB Tags]
+
+Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan het XDM-veld:
+
+![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-pageName.png)
+
+En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -182,7 +200,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
+Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
+
+![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject.png)
+
+Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## Parameters entiteit
 
@@ -217,7 +251,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
+Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
+
+![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject-entities.png)
+
+Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 Alles [entiteitsparameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) gesteund door at.js wordt ook gesteund door het Web SDK van het Platform.
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-Aankoopgegevens worden doorgegeven aan Target wanneer de `commerce` veldgroep heeft `puchases.value` instellen op `1`. De bestellings-id en het ordertotaal worden automatisch toegewezen aan de `order` object. Als de `productListItems` array aanwezig is, dan de `SKU` waarden worden gebruikt voor `productPurchasedId`.
+Aankoopgegevens worden doorgegeven aan Target wanneer de `commerce` veldgroep heeft `purchases.value` instellen op `1`. De bestellings-id en het ordertotaal worden automatisch toegewezen aan de `order` object. Als de `productListItems` array aanwezig is, dan de `SKU` waarden worden gebruikt voor `productPurchasedId`.
 
-Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
+Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan de XDM-velden:
+
+![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-purchase.png)
+
+En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -309,7 +380,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK-voorbeeld gebruiken `sendEvent` opdracht:
+Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB Tags]
+
+De [!UICONTROL ID] waarde, [!UICONTROL Status geverifieerd] en [!UICONTROL Naamruimte] worden vastgelegd in een [!UICONTROL Identiteitskaart] gegevenselement:
+![Identiteitskaartgegevenselement dat klantenidentiteitskaart vastlegt](assets/params-tags-customerIdDataElement.png)
+
+De [!UICONTROL Identiteitskaart] gegevenselement wordt vervolgens gebruikt om het [!UICONTROL identityMap] in het [!UICONTROL XDM-object] gegevenselement:
+![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png)
+
+De [!UICONTROL XDM-object] wordt vervolgens opgenomen in de [!UICONTROL Gebeurtenis Send] Handeling van een regel:
+
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+
+In de Adobe Target-service van uw datastream moet u de [!UICONTROL Naamruimte derde partij doel] naar dezelfde naamruimte in het dialoogvenster [!UICONTROL Identiteitskaart] gegevenselement
+![De naamruimte van de doel-id van derden instellen in de gegevensstroom](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Platform Web SDK-voorbeeld
 
@@ -335,7 +426,7 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
 - A `configure` om de bibliotheek te initialiseren
 - A `sendEvent` bevel om gegevens te verzenden en de inhoud van het verzoekDoel te verzoeken om terug te geven
 
-Productgegevens:
++++Web SDK op een pagina van de Details van het Product:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ Productgegevens:
 </html>
 ```
 
++++
 
-Bevestiging bestelling:
++++Web SDK op een pagina van de Bevestiging van de Orde:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ Bevestiging bestelling:
 </body>
 </html>
 ```
+
++++
 
 Leer nu hoe u [Conversiegebeurtenissen volgen](track-events.md) met het Web SDK van het Platform.
 

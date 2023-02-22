@@ -1,9 +1,9 @@
 ---
 title: De bibliotheek vervangen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Veronderstel een eenvoudige implementatie van het Doel met at.js:
 * Een of meer hulpbibliotheken van derden waarvan de mogelijkheden kunnen worden gebruikt in doelactiviteiten (bijvoorbeeld jQuery)
 * Een voorverborgen fragment om flikkering te beperken
 * De bibliotheek Doel at.js laadt asynchroon met standaardinstellingen om activiteiten automatisch aan te vragen en weer te geven:
+
++++Zie voorbeeld HTML code van een at.js
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Veronderstel een eenvoudige implementatie van het Doel met at.js:
 </body>
 </html>
 ```
+
++++
 
 Om Doel te bevorderen om het Web SDK van het Platform te gebruiken, verwijder eerst at.js:
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB Tags]
 
 In labels-implementaties worden veel velden automatisch ingevuld of kunnen deze worden geselecteerd in vervolgkeuzemenu&#39;s. Andere Platforms [!UICONTROL sandboxen] en [!UICONTROL gegevensstromen] kan voor elke omgeving worden geselecteerd. De gegevensstroom wordt gewijzigd op basis van de status van de tagbibliotheek tijdens het publicatieproces.
 
