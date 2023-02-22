@@ -1,9 +1,9 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
+source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
         // Property token
         "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
         // Mbox parameters
-        "siteSection": "product details",
+        "pageName": "product detail",
         // Profile parameters
         "profile.gender": "male",
         "user.categoryId": "clothing",
@@ -95,16 +95,16 @@ Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
 
 ## Overzicht van parametertoewijzing
 
-De parameters van het Doel die op deze twee voorbeeldpagina&#39;s worden gebruikt moeten een beetje verschillend worden verzonden gebruikend het Web SDK van het Platform. Er zijn veelvoudige manieren om parameters tot Doel over te gaan gebruikend at.js:
+De parameters van het Doel voor deze pagina&#39;s worden verzonden verschillend gebruikend het Web SDK van het Platform. Er zijn veelvoudige manieren om parameters tot Doel over te gaan gebruikend at.js:
 
 - Instellen met `targetPageParams()` functie voor de gebeurtenis page load
 - Instellen met `targetPageParamsAll()` functie voor alle aanvragen van het Doel op de pagina
 - Parameters rechtstreeks verzenden met de `getOffer()` functie voor één locatie
 - Parameters rechtstreeks verzenden met de `getOffers()` functie voor een of meer locaties
 
-In dit voorbeeld wordt de `targetPageParams()` wordt gebruikt.
+Voor deze voorbeelden worden de `targetPageParams()` wordt gebruikt.
 
-SDK van het Web van het Platform vereenvoudigt dit door één enkele verenigbare manier te verstrekken om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met worden overgegaan `sendEvent` gebruiken.
+SDK van het Web van het Platform verstrekt één enkele verenigbare manier om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met worden overgegaan `sendEvent` gebruiken.
 
 Parameters die met het Web SDK van het Platform worden overgegaan `sendEvent` de lading valt onder twee categorieën :
 
@@ -116,7 +116,7 @@ De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in k
 | Voorbeeld van parameter at.js | Platform Web SDK, optie | Notities |
 | --- | --- | --- |
 | `at_property` | N.v.t. | Eigenschap-tokens worden geconfigureerd in het dialoogvenster [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kan niet worden ingesteld in het dialoogvenster `sendEvent` vraag. |
-| `siteSection` | `xdm.web.webPageDetails.siteSection` | Alle parameters van het Doel moeten als deel van worden overgegaan `xdm` object en conform een schema met de klasse XDM ExperienceEvent. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van de `data` object. |
+| `pageName` | `xdm.web.webPageDetails.name` | Alle parameters van het Doel moeten als deel van worden overgegaan `xdm` object en conform een schema met de klasse XDM ExperienceEvent. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van de `data` object. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters voor het doelprofiel moeten worden doorgegeven als onderdeel van het dialoogvenster `data` object en vooraf ingesteld met `profile.` op passende wijze in kaart te brengen. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de categorie-affiniteit van het doel en die moet worden doorgegeven als onderdeel van de `data` object. |
 | `entity.id` | `data.__adobe.target.entity.id` <br>OF<br> `xdm.productListItems[0].SKU` | Identiteitskaart van de entiteit wordt gebruikt voor het gedrag van Recommendations van het Doel tellers. Deze entiteit-id&#39;s kunnen worden doorgegeven als onderdeel van de `data` object of automatisch toegewezen uit het eerste item in het deelvenster `xdm.productListItems` array als uw implementatie die veldgroep gebruikt. |
@@ -169,18 +169,18 @@ alloy("sendEvent", {
 
 Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan het XDM-veld:
 
-![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-pageName.png)
+![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
 
 En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->Omdat aangepaste mbox-parameters moeten worden verzonden als onderdeel van `xdm` object in het `sendEvent` bevel, om het even welke mbox parameters die in uw at.js implementatie van het Doel worden gebruikt moeten aan een equivalent XDM worden opnieuw toegewezen. Dit betekent u om het even welk publiek, activiteiten, of profielmanuscripten moet bijwerken die deze mbox parameters van verwijzingen voorzien.
+>Omdat aangepaste mbox-parameters deel uitmaken van `xdm` moet u om het even welk publiek, activiteiten, of profielmanuscripten bijwerken die van deze mbox parameters van verwijzingen voorzien gebruikend hun nieuwe namen. Zie de [Doelpubliek en profielscripts bijwerken voor compatibiliteit met SDK van Platform Web](update-audiences.md) pagina van deze zelfstudie voor meer informatie.
 
 
 ## Profielparameters
@@ -223,11 +223,11 @@ alloy("sendEvent", {
 
 Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
 
-![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject.png)
+![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
 
 Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png)
+![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -277,11 +277,11 @@ alloy("sendEvent", {
 
 Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
 
-![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject-entities.png)
+![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
 
 Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png)
+![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -345,11 +345,11 @@ alloy("sendEvent", {
 
 Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan de XDM-velden:
 
-![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-purchase.png)
+![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
 
 En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -402,17 +402,17 @@ alloy("sendEvent", {
 >[!TAB Tags]
 
 De [!UICONTROL ID] waarde, [!UICONTROL Status geverifieerd] en [!UICONTROL Naamruimte] worden vastgelegd in een [!UICONTROL Identiteitskaart] gegevenselement:
-![Identiteitskaartgegevenselement dat klantenidentiteitskaart vastlegt](assets/params-tags-customerIdDataElement.png)
+![Identiteitskaartgegevenselement dat klantenidentiteitskaart vastlegt](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
 
 De [!UICONTROL Identiteitskaart] gegevenselement wordt vervolgens gebruikt om het [!UICONTROL identityMap] in het [!UICONTROL XDM-object] gegevenselement:
-![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png)
+![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
 
 De [!UICONTROL XDM-object] wordt vervolgens opgenomen in de [!UICONTROL Gebeurtenis Send] Handeling van een regel:
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png)
+![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
 In de Adobe Target-service van uw datastream moet u de [!UICONTROL Naamruimte derde partij doel] naar dezelfde naamruimte in het dialoogvenster [!UICONTROL Identiteitskaart] gegevenselement
-![De naamruimte van de doel-id van derden instellen in de gegevensstroom](assets/params-tags-customerIdNamespaceInDatastream.png)
+![De naamruimte van de doel-id van derden instellen in de gegevensstroom](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -472,7 +472,7 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
         "web": {
           "webPageDetails": {
             // Other attributes included according to XDM schema
-            "siteSection": "product detail"
+            "pageName": "product detail"
           }
         }
       },
