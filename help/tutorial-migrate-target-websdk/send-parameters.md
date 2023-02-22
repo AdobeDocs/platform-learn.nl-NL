@@ -1,9 +1,9 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in k
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Parameters voor aangepaste entiteiten worden gebruikt voor het bijwerken van de Recommendations-productcatalogus. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het dialoogvenster `data` object. |
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
-| `mbox3rdPartyId` | In de identityMap instellen. Zie [Profielen synchroniseren met een klant-id](#synching-profiles-with-a-customer-id) | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | In de identityMap instellen. | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OF<br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Zie de [entiteitsparameters](#entity-parameters) voor meer informatie. |
@@ -134,7 +134,7 @@ De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in k
 
 ## Aangepaste parameters
 
-Alle aangepaste mbox-parameters moeten als XDM-gegevens worden doorgegeven met de `sendEvent` gebruiken. Het is belangrijk om ervoor te zorgen dat het schema XDM alle gegevenspunten omvat die voor uw implementatie van het Doel worden vereist.
+Aangepaste mbox-parameters moeten als XDM-gegevens worden doorgegeven met de `sendEvent` gebruiken. Het is belangrijk om ervoor te zorgen dat het schema XDM alle gebieden omvat die voor uw implementatie van het Doel worden vereist.
 
 at.js, voorbeeld met `targetPageParams()`:
 
@@ -359,9 +359,9 @@ En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send
 >De `productPurchasedId` kan ook worden doorgegeven als een door komma&#39;s gescheiden lijst met id&#39;s van entiteiten onder de `data` object.
 
 
-## Profielen synchroniseren met een klant-id
+## Klant-id (mbox3rdPartyId)
 
-Met Doel kunt u met één klant-id synchroniseren tussen apparaten en systemen. Met at.js, kon dit als `mbox3rdPartyId` in het verzoek van het Doel of als eerste klantenidentiteitskaart die naar de Dienst van de Identiteit van Experience Cloud wordt verzonden. In tegenstelling tot at.js, staat een implementatie van SDK van het Web van het Platform u toe om te specificeren welke klant identiteitskaart aan gebruik als `mbox3rdPartyId` als er meerdere zijn. Bijvoorbeeld, als uw zaken een globale klant identiteitskaart en afzonderlijke klant IDs voor verschillende lijnen van zaken hebben, kunt u vormen welk Doel van identiteitskaart zou moeten gebruiken.
+Het doel staat profielsynchronisatie over apparaten en systemen toe gebruikend één enkele klantIdentiteitskaart. Met at.js, kon dit als `mbox3rdPartyId` in het verzoek van het Doel of als eerste klantenidentiteitskaart die naar de Dienst van de Identiteit van Experience Cloud wordt verzonden. In tegenstelling tot at.js, staat een implementatie van SDK van het Web van het Platform u toe om te specificeren welke klant identiteitskaart aan gebruik als `mbox3rdPartyId` als er meerdere zijn. Bijvoorbeeld, als uw zaken een globale klant identiteitskaart en afzonderlijke klant IDs voor verschillende lijnen van zaken hebben, kunt u vormen welk Doel van identiteitskaart zou moeten gebruiken.
 
 Er zijn een paar stappen aan opstellingsidentiteitskaart die voor het dwars-apparaat van het Doel en de het gebruikscituaties van de Attributen van de Klant synchroniseert:
 
@@ -411,7 +411,7 @@ De [!UICONTROL XDM-object] wordt vervolgens opgenomen in de [!UICONTROL Gebeurte
 
 ![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-In de Adobe Target-service van uw datastream moet u de [!UICONTROL Naamruimte derde partij doel] naar dezelfde naamruimte in het dialoogvenster [!UICONTROL Identiteitskaart] gegevenselement
+In de Adobe Target-service van uw datastream moet u de [!UICONTROL Naamruimte derde partij doel] naar dezelfde naamruimte in het dialoogvenster [!UICONTROL Identiteitskaart] gegevenselement:
 ![De naamruimte van de doel-id van derden instellen in de gegevensstroom](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

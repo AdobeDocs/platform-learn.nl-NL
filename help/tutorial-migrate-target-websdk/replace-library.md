@@ -1,9 +1,9 @@
 ---
 title: De bibliotheek vervangen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Veronderstel een eenvoudige implementatie van het Doel met at.js:
 * Een voorverborgen fragment om flikkering te beperken
 * De bibliotheek Doel at.js laadt asynchroon met standaardinstellingen om activiteiten automatisch aan te vragen en weer te geven:
 
-+++Zie voorbeeld HTML code van een at.js
++++at.js voorbeeld van een implementatie op een pagina van de HTML
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe adviseert asynchroon het uitvoeren van SDK van het Web van het Platform vo
 
 De prehide stijl voor synchrone implementaties kan worden gevormd gebruikend [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) optie. De configuratie van SDK van het Web van het Platform is behandeld in de volgende sectie.
 
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, kan de prehide stijl in de de uitbreidingsconfiguratie van SDK van het Web van Adobe Experience Platform worden uitgegeven.
-
 Voor meer informatie over hoe de Platform Web SDK flikkering kan beheren, kunt u naar de geleidingssectie verwijzen:  [flikkering beheren voor persoonlijke ervaringen](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Vorm de SDK van het Web van het Platform
 
-De SDK van het Web van het Platform moet op elke paginalading worden gevormd. De `configure` bevel moet altijd het eerste geroepen bevel van SDK zijn. Het volgende voorbeeld veronderstelt dat de volledige plaats aan het Web SDK van het Platform in één enkele plaatsing wordt bevorderd:
+De SDK van het Web van het Platform moet op elke paginalading worden gevormd. Het volgende voorbeeld veronderstelt dat de volledige plaats aan het Web SDK van het Platform in één enkele plaatsing wordt bevorderd:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-De `edgeConfigId` is de [!UICONTROL DataStream-id]
+De `configure` bevel moet altijd het eerste geroepen bevel van SDK zijn. De `edgeConfigId` is de [!UICONTROL DataStream-id]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 In labels-implementaties worden veel velden automatisch ingevuld of kunnen deze worden geselecteerd in vervolgkeuzemenu&#39;s. Andere Platforms [!UICONTROL sandboxen] en [!UICONTROL gegevensstromen] kan voor elke omgeving worden geselecteerd. De gegevensstroom wordt gewijzigd op basis van de status van de tagbibliotheek tijdens het publicatieproces.
 
-![configureren van de web SDK-tagextensie](assets/tags-config.png)
+![configureren van de web SDK-tagextensie](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Als u van om van at.js aan het Web SDK van het Platform op een pagina-door-pagina basis van plan bent te migreren, dan worden de volgende configuratieopties vereist:
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB Tags]
 
-![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png)
+![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 De belangrijkste configuratieopties met betrekking tot Target worden hieronder beschreven:
@@ -263,19 +259,15 @@ De belangrijkste configuratieopties met betrekking tot Target worden hieronder b
 | `thirdPartyCookiesEnabled` | Hiermee schakelt u het instellen van cookies van derden voor Adobe in. De SDK kan de bezoekersidentiteitskaart in een derdecontext voortzetten om de zelfde bezoekersidentiteitskaart toe te laten om over plaatsen worden gebruikt. Gebruik deze optie als u meerdere sites hebt. soms is deze optie echter om privacyredenen niet gewenst . | `true` |
 | `prehidingStyle` | Wordt gebruikt om een CSS-stijldefinitie te maken die inhoudsgebieden van uw webpagina verbergt terwijl gepersonaliseerde inhoud van de server wordt geladen. Dit wordt slechts gebruikt met synchrone plaatsingen van SDK. | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` kan worden ingesteld op `true` om een consistent profiel voor doelbezoekers in meerdere domeinen te behouden. Deze optie moet worden ingesteld op `false` of weggelaten, tenzij het profiel van de multi-domeinbezoeker persistentie wordt vereist.
-
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, kunnen deze configuraties in de de uitbreidingsconfiguratie van SDK van het Web van Adobe Experience Platform worden beheerd.
-
 Voor een volledige lijst met opties raadpleegt u de [configureren van Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) hulplijn.
 
 ## Voorbeeld van implementatie
 
 Zodra het Web SDK van het Platform behoorlijk op zijn plaats is, zou de voorbeeldpagina als dit kijken.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Zodra het Web SDK van het Platform behoorlijk op zijn plaats is, zou de voorbeel
 </html>
 ```
 
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, vervangt de markeringen bedden code de basiscode van het Web SDK van het Platform, &quot;het Web SDK van het Platform dat asynchroon wordt geladen&quot;, en &quot;vormt het Web SDK van het Platform&quot;secties hierboven.
+>[!TAB Tags]
+
+Paginacode:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Voeg de extensie Adobe Experience Platform Web SDK toe aan tags:
+
+![De extensie Adobe Experience Platform Web SDK toevoegen](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Voeg de gewenste configuraties toe:
+![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 Het is belangrijk om op te merken dat eenvoudig het omvatten van en het vormen van de bibliotheek van SDK van het Web van het Platform zoals hierboven getoond geen netwerkvraag aan het Netwerk van Adobe Edge uitvoert.
 

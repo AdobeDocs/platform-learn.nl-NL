@@ -2,9 +2,9 @@
 title: VEC-activiteiten renderen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u composer-activiteiten voor visuele beleving ophaalt en toepast met een Web SDK-implementatie van Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De visuele het Uitgeven browser van Helper uitbreiding werkt met websites die at
 1. Ga naar de [Adobe Experience Cloud Visual Editing Helper-browserextensie in de Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. Klik op Toevoegen aan **Chroom** > **Extensie toevoegen**.
 1. Open VEC in Doel.
-1. Als u de extensie wilt gebruiken, klikt u op het pictogram voor de extensie van de browser van de visuele bewerkingshulp ![Pictogram Visuele bewerkingsextensie](assets/VEC-Helper.png) in de werkbalk van uw Chrome-browser in de modus VEC of QA.
+1. Als u de extensie wilt gebruiken, klikt u op het pictogram voor de extensie van de browser van de visuele bewerkingshulp ![Pictogram Visuele bewerkingsextensie](assets/VEC-Helper.png){zoomable=&quot;yes&quot;} op de werkbalk van de Chrome-browser in de modus VEC of QA.
 
 De visuele het Uitgeven Helper wordt automatisch toegelaten wanneer een website in het Doel VEC aan macht authoring wordt geopend. De extensie heeft geen voorwaardelijke instellingen. De extensie verwerkt automatisch alle instellingen, inclusief de instellingen voor SameSite-cookies.
 
@@ -44,25 +44,35 @@ Nadat SDK van het Web van het Platform op de pagina wordt gevormd, kunt u inhoud
 
 Als uw at.js-implementatie de `pageLoadEnabled` instellen op `true` die automatische teruggave van op VEC-Gebaseerde activiteiten toelaat, dan zou u het volgende uitvoeren `sendEvent` bevel met het Web SDK van het Platform:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, &quot;sendEvent&quot;bevelen voor VEC activiteiten kan in een regel worden uitgevoerd gebruikend [!UICONTROL Gebeurtenis Send] actietype met de [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerd.
+>[!TAB Tags]
 
-Wanneer SDK van het Web van het Platform een activiteit aan de pagina met teruggeeft `renderDecisions` instellen op `true`Een extra meldingsaanroep wordt automatisch geactiveerd om een indruk te wekken en de bezoeker aan de activiteit toe te wijzen. Deze vraag gebruikt een gebeurtenistype met de waarde `decisioning.propositionDisplay`.
+Gebruik in de labels de [!UICONTROL Gebeurtenis Send] actietype met de [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerde optie:
 
-![De vraag van SDK van het Web van het Platform verhogend een impositie van het Doel](assets/target-impression-call.png)
+![Een gebeurtenis verzenden waarvoor Aanpassingen renderen is ingesteld op true in tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## Inhoud aanvragen en op aanvraag toepassen
 
-Sommige Target at.js-implementaties hebben mogelijk `pageLoadEnabled` instellen op `false` en gebruikt in plaats daarvan de `getOffers()` functie om een `pageLoad` verzoek. Dit type opstelling wordt gebruikt als uw implementatie extra verwerking van vereist `getOffers()` antwoord alvorens inhoud op de pagina toe te passen of om inhoud voor veelvoudige plaatsen in één enkele vraag te verzoeken.
+Sommige implementaties van het Doel vereisen één of andere douaneverwerking van aanbiedingen VEC alvorens hen op de pagina toe te passen. Of, vragen zij veelvoudige plaatsen in één enkele vraag. In een at.js-implementatie kunt u dit doen door `pageLoadEnabled` tot `false` en het gebruik van de `getOffers()` functie om een `pageLoad` verzoek.
 
-De volgende code gebruikt `getOffers()` en `applyOffers()` om VEC-gebaseerde activiteiten op verzoek toe te passen in plaats van automatisch bij het laden van de bibliotheek.
++++ at.js, voorbeeld met `getOffers()` en `applyOffers()` om VEC-gebaseerde activiteiten handmatig uit te voeren
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-De SDK van het Web Platform heeft geen specifieke `pageLoad` gebeurtenis. Alle aanvragen voor doelinhoud worden beheerd met de `decisionScopes` met de `sendEvent` gebruiken. De `__view__` het toepassingsgebied dient het doel van `pageLoad` verzoek. Een equivalente Platform Web SDK `sendEvent` de aanpak zou als volgt zijn :
++++
+
+De SDK van het Web Platform heeft geen specifieke `pageLoad` gebeurtenis. Alle aanvragen voor doelinhoud worden beheerd met de `decisionScopes` met de `sendEvent` gebruiken. De `__view__` het toepassingsgebied dient het doel van `pageLoad` verzoek.
+
++++ Een equivalente Platform Web SDK `sendEvent` aanpak:
 
 1. Een `sendEvent` bevat de opdracht `__view__` beslissingsbereik
 1. De geretourneerde inhoud met de opdracht `applyPropositions` command
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >Het is mogelijk [wijzigingen handmatig renderen](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) gemaakt in Visual Experience Composer. Handmatige rendering van op VEC gebaseerde wijzigingen komt niet vaak voor. Controleren of de implementatie van uw at.js gebruikmaakt van de `getOffers()` functie om een Doel manueel uit te voeren `pageLoad` aanvraag zonder gebruik te maken van `applyOffers()` om de inhoud toe te passen op de pagina.
@@ -118,7 +134,9 @@ De SDK van het Web van de Platform biedt ontwikkelaars een grote flexibiliteit m
 
 ## Voorbeeld van implementatie
 
-De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig. Onze basisvoorbeeldpagina met automatische functionaliteit voor het renderen van doelinhoud moet er als volgt uitzien:
+De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig.
+
++++Web SDK voorbeeldpagina met automatische het teruggeven van de inhoud van het Doel:
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig. O
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >

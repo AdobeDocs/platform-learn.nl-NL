@@ -1,10 +1,10 @@
 ---
 title: Foutopsporing | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u fouten in een Adobe Target-implementatie kunt opsporen met de SDK van Adobe Experience Platform Web. De onderwerpen omvatten het zuiveren opties, browser uitbreidingen, en verschillen tussen at.js en het Web SDK van het Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 1%
+source-wordcount: '1534'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ U kunt Foutopsporing voor Platforms uitvoeren op elke webpagina en de extensie h
 Foutopsporing voor Adobe Experience Platform kan worden geïnstalleerd in Google Chrome- of Mozilla Firefox-browsers. Volg de onderstaande koppeling om de extensie te installeren in uw voorkeursbrowser:
 
 - [Chroom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+- [Firefox](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 
 Nadat u de Chrome-extensie of de Firefox-invoegtoepassing hebt geïnstalleerd, verschijnt er een pictogram (![](assets/start-icon.jpg)) wordt toegevoegd aan de extensiebalk. Selecteer dit pictogram om de extensie te openen.
 
@@ -120,7 +120,7 @@ Ga als volgt te werk om Platform Web SDK Target-sporen met Adobe Experience Plat
 1. Laad de pagina opnieuw en het logboek zou met gedetailleerde informatie over de interacties van het randnetwerk moeten bevolken
 1. Focus op de logitems die beginnen met &quot;Doelsporen&quot; in de beschrijving en selecteer **[!UICONTROL Weergave]** om de details van het Doel spoor te zien
 
-![Doelsporen weergeven met Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![Doelsporen weergeven met Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 Na het selecteren **[!UICONTROL Weergave]** Er wordt een overlay weergegeven waarmee u de volgende informatie over het verzoek kunt zien:
 
@@ -142,7 +142,7 @@ De informatie van het spoor van het doel is viewable in zowel de browser van Fou
 1. Selecteer een logbestandvermelding met het type `com.adobe.target.trace`
 1. Breid de details van de lading uit en bekijk de informatie onder `context > targetTrace`
 
-![Hoe te om de sporen van het Doel met Verzekering te bekijken](assets/target-trace-assurance.png)
+![Hoe te om de sporen van het Doel met Verzekering te bekijken](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## Onderzoek netwerkverzoek en reactie
 
@@ -150,7 +150,7 @@ De verzoeklading en de reactie van het Web SDK van het Platform `sendEvent` de v
 
 ### Payload voor inhoudsverzoek
 
-![Doelspecifieke elementen van de SDK van het Web Platform](assets/target-payload.png)
+![Doelspecifieke elementen van de SDK van het Web Platform](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - Profiel, entiteit en andere parameters anders dan mbox worden doorgegeven in de gebeurtenisarray onder `data.__adobe.target`
 - Beslissingsbereiken bevinden zich in de gebeurtenissenarray onder `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ De verzoeklading en de reactie van het Web SDK van het Platform `sendEvent` de v
 
 ### Inhoudsresponsinstantie
 
-![Doelspecifieke elementen van het de reactielichaam van SDK van het Web van het Platform](assets/target-response.png)
+![Doelspecifieke elementen van het de reactielichaam van SDK van het Web van het Platform](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - De SDK van het Web van de Platform keert acties voor alle toepassingen van de Adobe onder terug `handle` object
 - De `personalization:decisions` handeling betekent een reactie van Doel of offer decisioning
@@ -169,7 +169,7 @@ De verzoeklading en de reactie van het Web SDK van het Platform `sendEvent` de v
 
 ### lading propositiegebeurtenis
 
-![Voorbeeld van doelpropositie](assets/target-proposition-event.png)
+![Voorbeeld van doelpropositie](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Doelspecifieke SDK-gebeurtenissen zijn: `decisioning.propositionDisplay` voor een indruk of `decisioning.propositionInteract` voor een interactie, zoals een klik
 - De details van de proposition-gebeurtenis bevinden zich in de events-array onder `xdm._experience.decisioning`

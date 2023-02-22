@@ -1,9 +1,9 @@
 ---
 title: Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,8 @@ Sommige doelimplementaties gebruiken mogelijk regionale selectievakjes (nu beken
 
 Activiteiten die zijn gemaakt met behulp van de op formulieren gebaseerde composer van Target en die zijn geleverd aan regionale vakken, kunnen niet automatisch worden gerenderd door de Web SDK van het Platform. Gelijkaardig aan at.js, moeten de aanbiedingen die aan specifieke plaatsen van het Doel worden geleverd op bestelling worden teruggegeven.
 
-at.js Voorbeeld gebruiken `getOffer()` en `applyOffer()`:
+
++++at.js Voorbeeld gebruiken `getOffer()` en `applyOffer()`:
 
 1. Uitvoeren `getOffer()` om een voorstel voor een plaats aan te vragen
 1. Uitvoeren `applyOffer()` om de aanbieding aan een gespecificeerde selecteur terug te geven
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-Platform Web SDK equivalent gebruiken `applyPropositions` opdracht:
++++
+
++++Platform Web SDK equivalent gebruiken `applyPropositions` opdracht:
 
 1. Uitvoeren `sendEvent` bevel om aanbiedingen (voorstellen) voor één of meerdere plaatsen (werkingsgebied) te verzoeken
 1. Uitvoeren `applyPropositions` bevel met meta-gegevensvoorwerp dat instructies voor verstrekt hoe te om inhoud op de pagina voor elk werkingsgebied toe te passen
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 Het Web SDK van het Platform biedt grotere controle voor het toepassen van op vorm-gebaseerde activiteiten op de pagina gebruikend aan `applyPropositions` gebruiken met een `actionType` gespecificeerd:
 
 | `actionType` | Beschrijving | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
@@ -99,6 +104,8 @@ Zie de [speciale documentatie](https://experienceleague.adobe.com/docs/experienc
 ## Voorbeeld van implementatie
 
 De onderstaande voorbeeldpagina bouwt verder op de implementatie die in de vorige sectie wordt beschreven, maar voegt alleen extra bereik toe aan de `sendEvent` gebruiken.
+
++++Platform het voorbeeld van SDK van het Web met veelvoudige werkingsgebied
 
 ```HTML
 <!doctype html>

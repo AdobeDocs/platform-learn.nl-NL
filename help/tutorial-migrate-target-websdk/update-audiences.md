@@ -1,9 +1,9 @@
 ---
 title: Soorten publiek en profielscripts bijwerken | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u het Adobe Target-publiek en profielscripts kunt bijwerken voor compatibiliteit met Web SDK van Experience Platform.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Om het even welk publiek dat douanembox parameters gebruikt zou moeten worden bi
 
 Één benadering om verenigbaarheid met zowel at.js als het Web SDK van het Platform te verzekeren moet om het even welk relevant publiek bijwerken zodat `OR` er worden voorwaarden gebruikt, zoals hieronder aangegeven:
 
-![Hoe te om update een publiek van het Doel voor de verenigbaarheid van SDK van het Web van het Platform te bekijken](assets/target-audience-update.png)
+![Hoe te om update een publiek van het Doel voor de verenigbaarheid van SDK van het Web van het Platform te bekijken](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## Profielscripts bewerken
 
