@@ -1,9 +1,9 @@
 ---
 title: Gebeurtenissen bijhouden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om de omzettingsgebeurtenissen van Adobe Target te volgen gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -147,4 +147,4 @@ Leer nu hoe u [delen van verschillende domeinen-id&#39;s inschakelen](cross-doma
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

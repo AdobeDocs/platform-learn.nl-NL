@@ -1,9 +1,9 @@
 ---
 title: Foutopsporing | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u fouten in een Adobe Target-implementatie kunt opsporen met de SDK van Adobe Experience Platform Web. De onderwerpen omvatten het zuiveren opties, browser uitbreidingen, en verschillen tussen at.js en het Web SDK van het Platform.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1535'
 ht-degree: 2%
 
 ---
@@ -180,4 +180,4 @@ Gefeliciteerd, u hebt het einde van de zelfstudie bereikt! Veel succes bij het m
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

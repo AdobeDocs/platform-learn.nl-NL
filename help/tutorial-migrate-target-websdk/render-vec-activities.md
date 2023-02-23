@@ -2,9 +2,9 @@
 title: VEC-activiteiten renderen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u composer-activiteiten voor visuele beleving ophaalt en toepast met een Web SDK-implementatie van Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 Gebruik in de labels de [!UICONTROL Gebeurtenis Send] actietype met de [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerde optie:
 
-![Een gebeurtenis verzenden waarvoor Aanpassingen renderen is ingesteld op true in tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![Verzend een gebeurtenis met Render visuele verpersoonlijkingsbesluiten die in markeringen worden geselecteerd](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ De SDK van het Web van de Platform biedt ontwikkelaars een grote flexibiliteit m
 
 De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig.
 
-+++Web SDK voorbeeldpagina met automatische het teruggeven van de inhoud van het Doel:
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+JavaScript-voorbeeld met automatische rendering van Target-inhoud:
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig.
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, vervangt de markeringen bedden code de basiscode van het Web SDK van het Platform, &quot;het Web SDK van het Platform dat asynchroon wordt geladen&quot;, en &quot;vormt het Web SDK van het Platform&quot;secties hierboven. De opdracht &#39;sendEvent&#39; wordt uitgevoerd in een regel met de opdracht [!UICONTROL Gebeurtenis Send] actietype met de [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerd.
+>[!TAB Tags]
+
+Hiermee wordt de voorbeeldpagina gecodeerd met de automatische rendering van Target-inhoud:
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Voeg de extensie Adobe Experience Platform Web SDK toe aan tags:
+
+![De extensie Adobe Experience Platform Web SDK toevoegen](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Voeg de gewenste configuraties toe:
+![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+Een regel maken met een [!UICONTROL Gebeurtenis Send] actie en [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerd:
+![Een gebeurtenis verzenden waarvoor Aanpassingen renderen is geselecteerd in tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 Leer nu hoe u kunt aanvragen en [formuliergebaseerde doelactiviteiten weergeven](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

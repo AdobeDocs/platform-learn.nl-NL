@@ -1,9 +1,9 @@
 ---
 title: De bibliotheek vervangen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe u uw on-page Adobe Target-implementatie kunt vervangen om te migreren v
 * Controleer uw beheerinstellingen voor Doel en noteer uw IMS-organisatie-id
 * Vervang de bibliotheek at.js met het Web SDK van het Platform
 * Het vooraf verbergende fragment bijwerken voor synchrone bibliotheekimplementaties
-* Vorm SDK van het Web van het Platform op de pagina
+* Vorm de SDK van het Web van het Platform
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Veronderstel een eenvoudige implementatie van het Doel met at.js:
 * Een voorverborgen fragment om flikkering te beperken
 * De bibliotheek Doel at.js laadt asynchroon met standaardinstellingen om activiteiten automatisch aan te vragen en weer te geven:
 
-+++at.js voorbeeld van een implementatie op een pagina van de HTML
++++at.js voorbeeldimplementatie op een HTML-pagina
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Om Doel te bevorderen om het Web SDK van het Platform te gebruiken, verwijder ee
 <script src="/libraries/at.js" async></script>
 ```
 
-En vervang door de huidige gesteunde versie van het Web SDK van het Platform (alloy.js):
+En vervang dit door een geldige JavsScript-bibliotheek of door uw tags insluitcode en de Adobe Experience Platform Web SDK-extensie:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ En vervang door de huidige gesteunde versie van het Web SDK van het Platform (al
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB Tags]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+Voeg in de eigenschap tag de extensie Adobe Experience Platform Web SDK toe:
+
+![De extensie Adobe Experience Platform Web SDK toevoegen](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 Voor de vooraf samengestelde zelfstandige versie is een &quot;basiscode&quot; vereist die rechtstreeks aan de pagina wordt toegevoegd en die een algemene functie met de naam legering maakt. Gebruik deze functie om te communiceren met de SDK. Als u de algemene functie een andere naam wilt geven, wijzigt u de instelling `alloy` naam.
-
->[!TIP]
->
-> Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, wordt de bibliotheek alloy.js toegevoegd aan de markeringsbibliotheek door de uitbreiding van SDK van het Web van Adobe Experience Platform toe te voegen.
-
 
 Zie de [De SDK van het Web Platform installeren](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) documentatie voor extra details en plaatsingsopties.
 
@@ -168,9 +181,9 @@ De implementatie van SDK van het Web van het Platform kan een prehide fragment v
 
 ### Asynchrone implementatie
 
-Net als bij at.js, als de bibliotheek van SDK van het Web van het Platform asynchroon laadt, kan de pagina beëindigen teruggevend alvorens het Doel een inhoudsruil heeft uitgevoerd. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen die door Doel wordt gespecificeerd. Als u dit flikkering wilt vermijden, adviseert Adobe om een speciaal prehide fragment onmiddellijk vóór de asynchrone het manuscriptverwijzing van SDK van het Web van het Platform toe te voegen.
+Net als bij at.js, als de bibliotheek van SDK van het Web van het Platform asynchroon laadt, kan de pagina beëindigen teruggevend alvorens het Doel een inhoudsruil heeft uitgevoerd. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen die door Doel wordt gespecificeerd. Als u dit flikkering wilt vermijden, raadt Adobe u aan een speciaal vooraf verborgen fragment toe te voegen vlak vóór de asynchrone het manuscriptverwijzing van SDK van het Web SDK van het Platform of markeringen bed code in.
 
-Als uw implementatie asynchroon is, zoals in het bovenstaande voorbeeld, vervangt u het voorverborgen fragment at.js door de onderstaande versie die compatibel is met de Web SDK van het Platform:
+Als uw implementatie asynchroon is, zoals de bovenstaande voorbeelden, vervangt u het voorverborgen fragment at.js door de onderstaande versie die compatibel is met de Web SDK van het Platform:
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ Het gedrag voor het voorverbergen wordt bepaald door twee configuraties helemaal
 
 * `3000` geeft de time-out op in milliseconden voor het voorverbergen. Als een reactie van Target niet vóór de time-out wordt ontvangen, wordt de vooraf verborgen stijltag verwijderd. Het bereiken van deze time-out moet zeldzaam zijn.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Ben zeker om het correcte fragment voor het Web SDK van het Platform te gebruiken aangezien het een verschillende stijlidentiteitskaart van gebruikt `alloy-prehiding`. Als het voorverborgen fragment voor at.js wordt gebruikt, werkt het mogelijk niet correct.
 
 ### Synchrone implementatie
 
-Adobe adviseert asynchroon het uitvoeren van SDK van het Web van het Platform voor de beste algemene paginaprestaties. Als de bibliotheek echter synchroon wordt geladen, is het voorverborgen fragment niet vereist. In plaats daarvan, wordt de prehide stijl gespecificeerd in de configuratie van SDK van het Web van het Platform.
+Adobe adviseert asynchroon het uitvoeren van SDK van het Web van het Platform voor de beste algemene paginaprestaties. Als de insluitcode van de bibliotheek alloy.js of -tags echter synchroon wordt geladen, is het voorverborgen fragment niet vereist. In plaats daarvan, wordt de prehide stijl gespecificeerd in de configuratie van SDK van het Web van het Platform.
 
 De prehide stijl voor synchrone implementaties kan worden gevormd gebruikend [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) optie. De configuratie van SDK van het Web van het Platform is behandeld in de volgende sectie.
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB Tags]
 
 ![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 De belangrijkste configuratieopties met betrekking tot Target worden hieronder beschreven:
@@ -352,9 +366,8 @@ Paginacode:
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Leer nu hoe u [VEC-activiteiten aanvragen en toepassen](render-vec-activities.md
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

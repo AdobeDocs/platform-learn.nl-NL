@@ -1,9 +1,9 @@
 ---
 title: Bevestig de implementaties van het Doel met Web SDK | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om activiteiten te bevestigen en een implementatie van Adobe Target te zuiveren gebruikend het Web SDK van Adobe Experience Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -95,4 +95,4 @@ Leer nu hoe u [Los een implementatie van het Doel problemen op gebruikend het We
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

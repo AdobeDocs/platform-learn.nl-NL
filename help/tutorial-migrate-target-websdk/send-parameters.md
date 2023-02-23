@@ -1,9 +1,9 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -97,19 +97,16 @@ Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
 
 De parameters van het Doel voor deze pagina&#39;s worden verzonden verschillend gebruikend het Web SDK van het Platform. Er zijn veelvoudige manieren om parameters tot Doel over te gaan gebruikend at.js:
 
-- Instellen met `targetPageParams()` functie voor de gebeurtenis page load
+- Instellen met `targetPageParams()` functie voor de gebeurtenis load van de pagina (wordt gebruikt in de voorbeelden op deze pagina)
 - Instellen met `targetPageParamsAll()` functie voor alle aanvragen van het Doel op de pagina
 - Parameters rechtstreeks verzenden met de `getOffer()` functie voor één locatie
 - Parameters rechtstreeks verzenden met de `getOffers()` functie voor een of meer locaties
 
-Voor deze voorbeelden worden de `targetPageParams()` wordt gebruikt.
 
-SDK van het Web van het Platform verstrekt één enkele verenigbare manier om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met worden overgegaan `sendEvent` gebruiken.
+SDK van het Web van het Platform verstrekt één enkele verenigbare manier om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met worden overgegaan `sendEvent` en vallen onder twee categorieën:
 
-Parameters die met het Web SDK van het Platform worden overgegaan `sendEvent` de lading valt onder twee categorieën :
-
-1. Automatisch toegewezen via het dialoogvenster `xdm` object
-1. Handmatig worden doorgegeven met het gereedschap `data.__adobe.target` object
+- Automatisch toegewezen via het dialoogvenster `xdm` object
+- Handmatig worden doorgegeven met het gereedschap `data.__adobe.target` object
 
 De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in kaart gebracht gebruikend het Web SDK van het Platform:
 
@@ -124,7 +121,7 @@ De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in k
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Parameters voor aangepaste entiteiten worden gebruikt voor het bijwerken van de Recommendations-productcatalogus. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het dialoogvenster `data` object. |
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
-| `mbox3rdPartyId` | In de identityMap instellen. | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | In het dialoogvenster `xdm.identityMap` object | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OF<br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Zie de [entiteitsparameters](#entity-parameters) voor meer informatie. |
@@ -233,7 +230,7 @@ Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICO
 
 ## Parameters entiteit
 
-Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder de `data.__adobe.target` object in de Web SDK van Platform `sendEvent` opdrachtlading.
+Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Alles [entiteitsparameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) gesteund door at.js wordt ook gesteund door het Web SDK van het Platform. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder de `data.__adobe.target` object in de Web SDK van Platform `sendEvent` opdrachtlading.
 
 Entiteitsparameters voor een specifiek item moeten vooraf worden ingesteld met `entity.` voor het correct vastleggen van gegevens. De gereserveerde `cartIds` en `excludedIds` parameters voor aanbevelingen mogen niet worden voorafgegaan door algoritmen en de waarde voor elke parameter moet een door komma&#39;s gescheiden lijst van entiteit-id&#39;s bevatten.
 
@@ -284,12 +281,6 @@ Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICO
 ![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-Alles [entiteitsparameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) gesteund door at.js wordt ook gesteund door het Web SDK van het Platform.
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ Leer nu hoe u [Conversiegebeurtenissen volgen](track-events.md) met het Web SDK 
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
