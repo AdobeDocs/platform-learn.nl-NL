@@ -3,23 +3,22 @@ user-guide-title: Doel migreren van at.js 2.x naar Web SDK
 breadcrumb-title: Doel migreren van at.js 2.x naar Web SDK
 user-guide-description: Een hands-on zelfstudie voor de klanten van het Doel die hoe te met succes van een implementatie van at.js aan het Web SDK behandelen.
 feature-set: Target,Experience Platform
-solution: Experience Platform,Data Collection,Target
+solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
 role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-hide: true
 kt: 11159
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 5%
 
 ---
 
 
-# Migreer een implementatie van het Doel bij.js aan Web SDK {#migrate-target-to-websdk}
+# Doel migreren van at.js 2.x aan het Web SDK van het Platform {#migrate-target-to-websdk}
 
 + [Zelfstudie](introduction.md)
 

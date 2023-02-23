@@ -1,7 +1,7 @@
 ---
 title: Migratieoverzicht | Doel migreren van at.js 2.x naar Web SDK
-description: Leer over de belangrijkste verschillen tussen at.js en het Web SDK van het Platform en hoe te om uw migratieinspanning te plannen.=
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+description: Leer over de belangrijkste verschillen tussen at.js en het Web SDK van het Platform en hoe te om uw migratieinspanning te plannen.
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%

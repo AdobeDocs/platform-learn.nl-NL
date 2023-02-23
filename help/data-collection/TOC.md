@@ -1,18 +1,18 @@
 ---
-user-guide-title: Zelfstudies voor gegevensverzameling
+user-guide-title: Tutorials voor gegevensverzameling
 breadcrumb-title: Tutorials voor gegevensverzameling
-user-guide-description: Hoe kan ik-video's en zelfstudies om u een grootmacht-gebruiker van de Inzameling van Gegevens in Experience Platform te maken.
+user-guide-description: Instructievideo's en tutorials waarmee u een krachtige gebruiker van gegevensverzameling in Experience Platform wordt.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 6f2410a66538d3e16ba27f5330ec95ef2600b154
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 3%
+source-wordcount: '239'
+ht-degree: 17%
 
 ---
 
 
-# Zelfstudies voor gegevensverzameling{#data-collection}
+# Tutorials voor gegevensverzameling{#data-collection}
 
 + [Tutorials voor gegevensverzameling](overview.md)
 + Tags{#tags}
@@ -24,13 +24,14 @@ ht-degree: 3%
    + [Regels maken](tags/build-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
    + [Gebruikers en machtigingen](tags/users-and-permissions.md)
-   + [Implementeren in websites met Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
-   + [Implementeren in websites met oplossing-SDK&#39;s](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [Implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementeren in websites met Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+   + [Implementeren in websites met oplossing-SDK&#39;s](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Zelfstudie over implementatie (met tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Zelfstudie over implementatie (met tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+   + [Zelfstudie Doel migreren](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
    + Toestemming{#consent}
       + [Overzicht](web-sdk/consent/overview.md)
       + [De waarden voor de toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +42,7 @@ ht-degree: 3%
    + [Overzicht](mobile-sdk/overview.md)
    + [Mobiele eigenschappen maken](mobile-sdk/create-mobile-properties.md)
    + [Afhankelijkheidsmanagers gebruiken](mobile-sdk/use-dependency-managers.md)
-   + [Implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Server-API{#server-api}
    + [Overzicht](server-api/overview.md)
    + [Basisbeginselen van API&#39;s](server-api/introduction.md)
@@ -60,10 +61,10 @@ ht-degree: 3%
    + [Gegevensprep](edge/data-prep.md)
    + [Gevoelige gegevens beheren](edge/manage-sensitive-data-in-datastreams.md)
    + [Apparaat-id&#39;s van eerste partij](edge/generate-first-party-device-ids.md)
-+ Foutopsporing{#debugger}
++ Debugger{#debugger}
    + [Overzicht](debugger/overview.md)
    + Experience Cloud Debugger{#experience-cloud}
       + [Foutopsporing installeren](debugger/experience-cloud/add-the-extension.md)
       + [Foutopsporing gebruiken](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [Doel oplossen](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target=&quot;_blank&quot;}
-      + [Tagomgevingen wijzigen](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target=&quot;_blank&quot;}
+      + [Doel oplossen](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+      + [Tagomgevingen wijzigen](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}
