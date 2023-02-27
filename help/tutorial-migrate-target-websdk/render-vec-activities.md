@@ -1,9 +1,9 @@
 ---
 title: VEC-activiteiten renderen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u composer-activiteiten voor visuele beleving ophaalt en toepast met een Web SDK-implementatie van Adobe Target.
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,6 @@ Met de Adobe Experience Cloud Visual Editing Helper-browserextensie voor Google 
 
 De visuele het Uitgeven browser van Helper uitbreiding werkt met websites die at.js of het Web SDK van het Platform gebruiken.
 
->[!IMPORTANT]
->
->De nieuwe Visuele het Uitgeven uitbreiding van de Helper vervangt vorige [Doel VEC Helper-browserextensie](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
-
 ### Vraag de Visual Editing Helper aan en installeer deze
 
 1. Ga naar de [Adobe Experience Cloud Visual Editing Helper-browserextensie in de Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -36,6 +32,10 @@ De visuele het Uitgeven browser van Helper uitbreiding werkt met websites die at
 De visuele het Uitgeven Helper wordt automatisch toegelaten wanneer een website in het Doel VEC aan macht authoring wordt geopend. De extensie heeft geen voorwaardelijke instellingen. De extensie verwerkt automatisch alle instellingen, inclusief de instellingen voor SameSite-cookies.
 
 Raadpleeg de speciale documentatie voor meer informatie over de [De extensie Visuele bewerkingshulp](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) en [het oplossen van problemen de Visuele Composer van de Ervaring](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>De nieuwe [De extensie Visuele bewerkingshulp](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) vervangt het vorige [Doel VEC Helper-browserextensie](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
 
 ## Inhoud automatisch aanvragen en toepassen
 
