@@ -1,5 +1,5 @@
 ---
-title: Gegevenssets verwijderen
+title: Gegevensset van schema verwijderen
 description: Leer hoe u gegevenssets kunt verwijderen met de functie Adobe Experience Platform Data Hygiene.
 role: Data Engineer, Data Architect
 feature: Data Hygiene
@@ -7,16 +7,16 @@ kt: 10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cd30d8f4bf37e8a3d087adf4092051d704049034
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
-# Gegevenssets verwijderen
+# Gegevensset van schema verwijderen
 
-Leer hoe u gegevenssets kunt verwijderen met de functie Adobe Experience Platform Data Hygiene.
+Leer hoe te om dataset te plannen schrapt gebruikend de eigenschap van de Hygiëne van Gegevens van Adobe Experience Platform.
 
 De schrapping van de gegevensreeks staat gegevenstewards en gegevensingenieurs toe om een vervaldatum voor een dataset te plaatsen. Ga voor meer informatie naar de [documentatie over gegevenshygiëne](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
