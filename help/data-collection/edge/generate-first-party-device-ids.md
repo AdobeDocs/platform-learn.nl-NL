@@ -1,14 +1,14 @@
 ---
 title: Apparaat-id's van de eerste fabrikant genereren
-description: Leer hoe u id's voor eerste apparaten kunt genereren
+description: ID's voor uw apparaten leren genereren
 feature: Web SDK
 kt: 9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 0%
+source-wordcount: '687'
+ht-degree: 1%
 
 ---
 
@@ -32,8 +32,13 @@ Hier volgt een kort voorbeeld van de werking van de functionaliteit:
 1. De Adobe Experience Platform Web SDK-implementatie van de van de klant vraagt om een aanvraag bij het Edge Network van de Platform, inclusief de FPID in de identiteitskaart.
 1. Experience Platform Edge Network ontvangt de FPID en gebruikt deze om een Experience Cloud-id (ECID) te genereren.
 1. De reactie van SDK van het Web van het Platform verzendt ECID terug naar browser van de eindgebruiker.
-1. Platform Web SDK gebruikt JavaScript om de ECID op te slaan als de `AMCV_` cookie in de browser van de eindgebruiker.
+1. Als de `idMigrationEnabled=true`, gebruikt Platform Web SDK JavaScript om de ECID op te slaan als de `AMCV_` cookie in de browser van de eindgebruiker.
 1. In geval van `AMCV_` cookie verloopt, wordt het proces zelf herhaald. Zolang dezelfde apparaat-id van de eerste fabrikant beschikbaar is, voert u een nieuwe `AMCV_` cookie wordt gemaakt met dezelfde ECID-waarde als voorheen.
+
+>[!NOTE]
+>
+>De `idMigrationEnabled` hoeft niet te worden ingesteld op `true` om FPID te gebruiken. Met `idMigrationEnabled=false` u kunt geen `AMCV_` cookie, echter, en zal naar de waarde ECID in de netwerkreactie moeten zoeken.
+
 
 In deze zelfstudie wordt een specifiek voorbeeld met PHP-scripttaal gebruikt om te tonen hoe:
 

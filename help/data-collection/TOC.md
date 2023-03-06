@@ -4,7 +4,7 @@ breadcrumb-title: Tutorials voor gegevensverzameling
 user-guide-description: Instructievideo's en tutorials waarmee u een krachtige gebruiker van gegevensverzameling in Experience Platform wordt.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 17%
@@ -31,7 +31,7 @@ ht-degree: 17%
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [Zelfstudie over implementatie (met tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
-   + [Zelfstudie Doel migreren](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+   + [Zelfstudie Doel migreren](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + Toestemming{#consent}
       + [Overzicht](web-sdk/consent/overview.md)
       + [De waarden voor de toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
