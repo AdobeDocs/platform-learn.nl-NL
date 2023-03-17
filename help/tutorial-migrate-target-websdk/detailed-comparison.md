@@ -1,9 +1,9 @@
 ---
 title: Vergelijking van at.js 2.x met Web SDK | Doel migreren van at.js 2.x naar Web SDK
 description: Leer over de verschillen tussen at.js 2.x en het Web SDK van het Platform met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punte
 | Externe aanbiedingen | Ondersteund | Ondersteund |
 | Aanbiedingen omleiden | Ondersteund | Ondersteund. Nochtans, wordt een omleiding van een pagina met het Web SDK van het Platform aan een pagina met at.js (en in de tegenovergestelde richting) niet gesteund. |
 | Apparaatbeslissingen | Ondersteund | Momenteel niet ondersteund |
-| Prefetch Mboxes | Ondersteund | Wordt standaard ingeschakeld in alle nieuwe migraties die na 1 oktober 2022 worden gestart |
+| Prefetch Mboxes | Ondersteund voor aangepaste scènes en SPA VEC | Momenteel niet ondersteund voor standaard VEC |
 | Aangepaste gebeurtenissen | Ondersteund | Niet ondersteund. Zie de [openbare routekaart](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) voor de huidige status. |
 | Reactietokens | Ondersteund | Ondersteund. Zie de [speciale reactietokens documentatie](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) voor codevoorbeelden en verschillen tussen at.js en het Web SDK van het Platform |
 | Gegevensleveranciers | Ondersteund | Niet ondersteund. De code van de douane kan worden gebruikt om een SDK van het Web van het Platform teweeg te brengen `sendEvent` bevel nadat het gegeven van een andere leverancier wordt teruggewonnen. |
