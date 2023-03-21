@@ -6,10 +6,10 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 0%
+source-wordcount: '938'
+ht-degree: 3%
 
 ---
 
@@ -113,11 +113,11 @@ In het volgende scherm krijgt u drie verschillende methoden om de inhoud van de 
 - **Uw eigen code schrijven**: Uw eigen e-mailsjabloon maken door deze te coderen met HTML
 - **HTML importeren**: Importeer een bestaande HTML-sjabloon, die u kunt bewerken.
 
-Klikken **HTML importeren**.
+Klikken **HTML importeren**. U kunt ook op **Opgeslagen sjablonen** en selecteer de sjabloon **Bootkamp - E-mailsjabloon**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Het bestand slepen en neerzetten **mailtemplatebootkamp.html**, die u kunt downloaden [hier](../../assets/html/mailtemplatebootcamp.html.zip). Klik op Importeren.
+Als u **HTML importeren** kunt u nu het bestand slepen en neerzetten **mailtemplatebootkamp.html**, die u kunt downloaden [hier](../../assets/html/mailtemplatebootcamp.html.zip). Klik op Importeren.
 
 ![Journey Optimizer](./images/msg13.png)
 

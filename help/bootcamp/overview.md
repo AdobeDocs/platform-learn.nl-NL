@@ -3,10 +3,10 @@ title: Experience Makers Bootkamp
 description: Beginpunt voor deelnemers aan het Bootkamp van de Ervaar
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,47 +26,12 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 ### Dag 1
 
-10.00 - 10.30 uur: Kickoff en introducties
 
-10.30 - 11.00 uur: &quot;Klantenreis demo - Kunst van het mogelijke&quot;
-
-11.00 - 11.45 uur: Whiteboardsessie: &quot;1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV&quot;
-
-11.45 - 12.00 uur: Break
-
-12.00 - 13.00 uur: Whiteboardsessie: &quot;Oplossingsarchitectuur&quot;
-
-13.00 - 14.00 uur: Lunch
-
-14.00 - 15.30 uur: Gebruikersstroom 1: &quot;Acquisition&quot; hands-on oefening
-
-15.30 - 15.45 uur: Break
-
-15.45 - 17.00 uur: Gebruikersstroom 2: &quot;Registratie en on-boarding&quot; praktische oefening
-
-18.00 - 19.00 uur: Ervaring &quot;Cocktail Making Competition&quot;
-
-19.00 - 22.00 uur: Geniet van eten
+10:00: Kickoff 10:30: Klantenreis demo: een illustratie van de mogelijke 11:00: 1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV (whiteboard) 11:45: Onderbreking 12:00: Uitsplitsing naar architectuur van oplossing (whiteboard) 13:00: Lunch 14:00: Gebruikerstroming 1 Registratie &amp; Onboarding - walkthrough (waarom-wat-hoe) 15:30: Onderbreking 16:00: Gebruikerstroming 2 Overvloeien fysiek en digitaal - doorloop en praktische overgangen / diepe duik 18:00: Onderbreking 18:30: Wandelen naar het restaurant 19:00: Diner
 
 ### Dag 2
 
-9.00 - 9.30 uur: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
-
-9.30 - 9.45 uur: Break
-
-9.45 - 11.15 uur: Gebruikersstroom 4: &quot;Customer Analysis&quot; handige oefening
-
-11.15 - 11.30 uur: Break
-
-11.30 - 12.30 uur: &quot;Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, de achterstand van de Levering&quot;
-
-12.30 - 13.30 uur: Lunch
-
-13.30 - 14.30 uur: Personalisatie op schaal - Hoe kan ik dit doen?
-
-14.30 - 15.00 uur: Conclusie, afronding en volgende stappen
-
-15.00 uur Adjourn
+08:00: Ontbijt 08:30: Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, achterstand van de Levering 09.45: Gebruikerstroom 3 Overvloeien fysiek en digitaal - Doorloop met praktische oefening 11.15: Onderbreking 11.30: Samenvattingsstromen - (waar en wanneer) 12:00: Groep Presentations 12.30: Lunch 13.30: Gebruiksstroom 4: Klantenanalyse - diepgaande 14.30: Conclusie, afronding en volgende stappen 15.00: Drink en onderbreek
 
 ## Vereisten
 
@@ -100,7 +65,7 @@ U vindt aanvullende interessante video&#39;s [op ons YouTube-kanaal](https://www
 
 ## Gebruikersstromen
 
-[1. Verwerving](./uc/uc1/uc1.md)
+[1. Acquisitie](./uc/uc1/uc1.md)
 
 In deze gebruikersstroom, zult u alle elementen begrijpen u verwerving-geconcentreerde gebruiksgevallen voor onbekende, niet voor authentiek verklaarde gebruikers naast bekende, voor authentiek verklaarde gebruiker moet uitvoeren door Real-Time CDP te gebruiken.
 
