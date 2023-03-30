@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,6 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
    * `2-Luma-CRM-Data.postman_collection.json` leidt tot een schema en bevolkte dataset voor de gegevens van CRM van klanten. Het schema is gebaseerd op de klasse van het Profiel van Individuele XDM die Demografische Details, Persoonlijke Details van het Contact, de Details van de Voorkeur en een groep van het het gebiedsveld van de douaneidentiteit omvat.
    * `3-Luma-Product-Catalog.postman_collection.json` leidt tot een schema en een bevolkte dataset voor de informatie van de productcatalogus. Het schema is gebaseerd op een aangepaste productcatalogusklasse en gebruikt een aangepaste productcatalogusveldgroep.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` leidt tot een schema en een bevolkte dataset voor off-line gegevens van de koopgebeurtenis van klanten. Het schema is gebaseerd op de klasse XDM ExperienceEvent en omvat een aangepaste identiteit en de de gebiedsgroepen van de Details van de Handel.
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` leidt tot een schema en bevolkte dataset voor gebeurtenissen met betrekking tot producten die in en uit voorraad gaan. Het schema is gebaseerd op een aangepaste bedrijfsgebeurtenisklasse en een aangepaste veldgroep.
    * `6-Luma-Test-Profiles.postman_collection.json` leidt tot een schema en bevolkte dataset met testprofielen in Adobe Journey Optimizer te gebruiken
    * `7-Luma-Web-Events.postman_collection.json` leidt tot een schema en bevolkte dataset met eenvoudige historische Webgegevens.
@@ -173,7 +172,12 @@ De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn u
 1. Ga naar **[!UICONTROL Profielen]** > **[!UICONTROL Bladeren]**
 1. Selecteren `Luma Loyalty Id` als de **[!UICONTROL Naamruimte identiteit]**
 1. Zoeken naar `5625458` als de **[!UICONTROL Identiteitswaarde]**
-1. Open de `Danny Wright` profiel
+1. Open de `Daniel Wright` profiel
+
+>[!TIP]
+>
+>Als u het profiel niet ziet, controleert u de [!UICONTROL Gegevenssets] pagina om te bevestigen dat alle datasets met succes werden gecreeerd en opgenomen gegevens. Als dat er goed uitziet, wacht u vijftien minuten en controleert u of het profiel beschikbaar is in de viewer.  Als er problemen zijn met de gegevensinvoer, controleert u de foutberichten om te proberen het probleem op te sporen. U kunt ook proberen foutdiagnoses in te schakelen op de [!UICONTROL Gegevenssets] en sleep het JSON-gegevensbestand om de gegevens opnieuw in te voeren.
+
 
 ![Een profiel openen](../assets/data-generator/images/validation-profile-open.png)
 
