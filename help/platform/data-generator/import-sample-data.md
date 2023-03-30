@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investe
 
 >[!NOTE]
 >
->Het eindresultaat van deze zelfstudie is een sandbox met dezelfde voorbeeldgegevens als de [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers - zelfstudie](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>Het eindresultaat van deze zelfstudie is een sandbox met vergelijkbare gegevens als de [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers - zelfstudie](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Het is in april 2023 bijgewerkt om de [Journey Optimizer-uitdagingen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html).
 
 
 ## Vereisten
@@ -49,8 +49,8 @@ Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://w
    >Gebruikersgegevens in de [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) het bestand is fictief en mag alleen voor demonstratiedoeleinden worden gebruikt.
 
 1. Verplaats vanuit de downloadmap de `platform-utils-main.zip` naar de gewenste locatie op de computer en decomprimeer het bestand.
-1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_techmarketingdemos` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
-1. Openen `luma-offline-purchases.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-06` en vervang het jaar en de maand)
+1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_yourOrganizationID` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
+1. Openen `luma-offline-purchases.json` en `luma-web-events.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-11` en vervang het jaar en de maand)
 1. Noteer de locatie van de uitgevouwen map, zoals u deze later nodig hebt bij het instellen van de `FILE_PATH` Postman-omgevingsvariabele:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Vervolgens moet u de verzamelingen importeren in Postman.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Verzamelingen importeren](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
    * `3-Luma-Product-Catalog.postman_collection.json` leidt tot een schema en een bevolkte dataset voor de informatie van de productcatalogus. Het schema is gebaseerd op een aangepaste productcatalogusklasse en gebruikt een aangepaste productcatalogusveldgroep.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` leidt tot een schema en een bevolkte dataset voor off-line gegevens van de koopgebeurtenis van klanten. Het schema is gebaseerd op de klasse XDM ExperienceEvent en omvat een aangepaste identiteit en de de gebiedsgroepen van de Details van de Handel.
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` leidt tot een schema en bevolkte dataset voor gebeurtenissen met betrekking tot producten die in en uit voorraad gaan. Het schema is gebaseerd op een aangepaste bedrijfsgebeurtenisklasse en een aangepaste veldgroep.
+   * `6-Luma-Test-Profiles.postman_collection.json` leidt tot een schema en bevolkte dataset met testprofielen in Adobe Journey Optimizer te gebruiken
+   * `7-Luma-Web-Events.postman_collection.json` leidt tot een schema en bevolkte dataset met eenvoudige historische Webgegevens.
+
+
 ## Validatie
 
 De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, realtime profielen van klanten worden gemaakt waarin gegevens van meerdere systemen worden gecombineerd. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Door de gegevens in het dialoogvenster **[!UICONTROL Attributen]** en **[!UICONT
 ![Gebeurtenisgegevens uit het offlinebestand Purchase-gebeurtenissen](../assets/data-generator/images/validation-profile-events.png)
 
 ## Volgende stappen
+
+Als u meer wilt weten over Adobe Journey Optimizer, bevat deze sandbox alles wat u nodig hebt om de [Journey Optimizer-uitdagingen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html)
 
 Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer zou willen leren, over aan [les 11 in het Getting Started for Data Architects and Data Engineers lesbestand](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). De vroegere lessen van dit andere leerprogramma hebben u manueel alles bouwen dat enkel door deze inzameling van Postman bevolkt was—geniet van het hoofdbegin!
 
