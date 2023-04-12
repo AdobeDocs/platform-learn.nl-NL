@@ -2,14 +2,14 @@
 title: Overzicht van Adobe Experience Platform Web SDK en Edge Network
 description: Leer hoe Adobe Experience Platform Web SDK en Edge Network klanten toestaan om één JavaScript-bibliotheek en één baken te gebruiken om gegevens naar Adobe-toepassingen en bestemmingen van derden te verzenden.
 landing-page-description: Krijg een overzicht van Web SDK en Edge Network.
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: Krijg een overzicht van Web SDK en Edge Network.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '217'
+ht-degree: 35%
 
 ---
 
