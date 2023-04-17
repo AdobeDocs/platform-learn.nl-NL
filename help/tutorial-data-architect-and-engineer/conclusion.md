@@ -6,9 +6,9 @@ description: In deze les, zult u Adobe Experience Platform gebruikerstoestemming
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -50,9 +50,5 @@ De belangrijkste bronnen:
 * [Zelfstudies voor Experience Platforms](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Cursussen Experience League](https://experienceleague.adobe.com/#dashboard/learning)
-
-Hier volgt een andere zelfstudie die u kunt bekijken voor meer informatie over verbindingen met toepassingen van derden:
-
-* [Uitgebreide technische zelfstudie voor Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Hartelijk dank voor uw inspanningen en veel succes op uw reis met Adobe Experience Platform!

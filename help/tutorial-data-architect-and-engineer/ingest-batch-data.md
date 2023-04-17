@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2538'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 1. Als u de pagina na een paar minuten opnieuw laadt, ziet u dat de batch is geüpload met 1000 records en 1000 profielfragmenten.
 
    ![Inname](assets/ingestion-loyalty-uploadJson.png)
-<!--do i need to explain error diagnostics and partial ingestion-->
+   <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
 >
@@ -338,7 +338,6 @@ Adobe partners met veelvoudige verkopers ETL om gegevensopname in Experience Pla
 * [Ontwikkeling van ETL-integratie voor Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Informatica documentatie van de Adobe Experience Platform-connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
-* [Unieke ervaring van het publiek Voortgekomen uit Gegevens: Unifi en Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Aanvullende bronnen
