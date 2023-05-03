@@ -1,6 +1,6 @@
 ---
 title: Overzicht van het doorsturen van gebeurtenissen
-description: Leer hoe het door:sturen van gebeurtenissen gegevensinzameling centraliseert, de hoeveelheid code vermindert die in uw Web en mobiele apps wordt vereist, en stroomgegevens aan niet-Adobe oplossingen via het Netwerk van de Rand van Adobe Experience Platform stroomt.
+description: Leer hoe door het doorsturen van gebeurtenissen gegevensinzameling wordt gecentraliseerd, de hoeveelheid code wordt verminderd die in uw web en mobiele apps wordt vereist, en gegevens naar niet-Adobe-oplossingen worden gestreamd via Adobe Experience Platform Edge Network.
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937.jpeg
@@ -8,13 +8,13 @@ exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '137'
-ht-degree: 0%
+ht-degree: 45%
 
 ---
 
 # Overzicht van het doorsturen van gebeurtenissen
 
-Leer hoe het door:sturen van gebeurtenissen gegevensinzameling centraliseert, de hoeveelheid code vermindert die in uw Web en mobiele apps wordt vereist, en stroomgegevens aan niet-Adobe oplossingen via het Netwerk van de Rand van Adobe Experience Platform stroomt.
+Leer hoe door het doorsturen van gebeurtenissen gegevensinzameling wordt gecentraliseerd, de hoeveelheid code wordt verminderd die in uw web en mobiele apps wordt vereist, en gegevens naar niet-Adobe-oplossingen worden gestreamd via Adobe Experience Platform Edge Network.
 
 >[!NOTE]
 >

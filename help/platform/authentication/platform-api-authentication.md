@@ -1,6 +1,6 @@
 ---
 title: Experience Platform-API's verifiëren en openen
-description: Leer hoe u toegang krijgt tot Adobe Experience Platform API's.
+description: Leer hoe u toegang krijgt tot Adobe Experience Platform-API's.
 role: Developer
 feature: API
 kt: 3688
@@ -9,7 +9,7 @@ exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -49,6 +49,6 @@ Houd er rekening mee dat door Adobe verschafte Postman-verzamelingen mogelijk ni
 
 * [Adobe I/O-console](https://console.adobe.io)
 * [Adobe Experience Platform Postman-voorbeelden](https://github.com/adobe/experience-platform-postman-samples)
-   * [Adobe I/O Access Token Generation Postman Collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+   * [Adobe I/O Access Token Generation Postman Collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims?lang=nl)
    * [Adobe Experience Platform API&#39;s Postman Collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
 * [Postman downloaden](https://www.getpostman.com/)

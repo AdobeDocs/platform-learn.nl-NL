@@ -1,6 +1,6 @@
 ---
 title: Gegevensstromen configureren
-description: Leer om gegevensstromen tot stand te brengen en te vormen
+description: Datastreams leren maken en configureren
 feature: Web SDK
 kt: 9762
 thumbnail: 340825.jpeg
@@ -8,7 +8,7 @@ exl-id: 890a2129-1c17-43d1-9568-ce8025470306
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 0%
+ht-degree: 28%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Overzicht van bronnen
-description: Leer hoe u eenvoudig gegevens van Adobe-, first-party- en externe toepassingen kunt opnemen in het Real-Time Klantprofiel en het datumpomeer van Platform.
+description: Leer hoe u eenvoudig gegevens uit toepassingen van Adobe, eerste en derde partijen kunt opnemen in het realtimeklantprofiel en de data lake van het Platform.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
@@ -9,7 +9,7 @@ exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 6%
+ht-degree: 26%
 
 ---
 

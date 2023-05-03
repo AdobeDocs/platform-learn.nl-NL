@@ -1,6 +1,6 @@
 ---
 title: Overzicht van het gegevensmodel voor schema's en ervaringen (XDM)
-description: Leer over het Model van Gegevens van de Ervaring (XDM), het standaardgegevensmodel om klantenervaringen te beschrijven.
+description: Leer over Experience Data Model (XDM), het standaardgegevensmodel om klantervaringen te beschrijven.
 role: Data Architect, Data Engineer
 feature: Schemas
 kt: 2696
@@ -9,7 +9,7 @@ exl-id: f517ada0-c106-45f0-96ea-3b3cc8bd03ba
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 4%
+ht-degree: 16%
 
 ---
 

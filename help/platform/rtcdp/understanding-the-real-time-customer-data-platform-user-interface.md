@@ -1,6 +1,6 @@
 ---
 title: Real-time Customer Data Platform-gebruikersinterface en -workflow
-description: Leer hoe u door de Real-time Customer Data Platform (CDP)-gebruikersinterface kunt navigeren om te zien hoe de functies ervan samenkomen en real-time activering tijdens de digitale reis van de klant mogelijk maken.
+description: Leer hoe u door de Real-time Customer Data Platform (CDP)-gebruikersinterface kunt navigeren om te zien hoe de functies samenkomen om realtimeactivering tijdens de digitale journey van de klant mogelijk maken.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
@@ -10,13 +10,13 @@ exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 6%
+ht-degree: 69%
 
 ---
 
 # Real-time Customer Data Platform-gebruikersinterface en -workflow
 
-Leer hoe u door de Real-time Customer Data Platform (CDP)-gebruikersinterface kunt navigeren om te zien hoe de functies ervan samenkomen en real-time activering tijdens de digitale reis van de klant mogelijk maken.
+Leer hoe u door de Real-time Customer Data Platform (CDP)-gebruikersinterface kunt navigeren om te zien hoe de functies samenkomen om realtimeactivering tijdens de digitale journey van de klant mogelijk maken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&learn=on)
 
