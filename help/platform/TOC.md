@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '925'
 ht-degree: 8%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 8%
    + [Basisarchitectuur](/help/platform/intro-to-platform/basic-architecture.md)
    + [De gebruikersinterface van het Platform gebruiken](/help/platform/intro-to-platform/interface-tour.md)
    + [Rollen en projectfasen](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Inleiding tot Real-Time CDP {#rtcdp}
+   + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [Eind-aan-eind demo](/help/platform/rtcdp/demo.md)
+   + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Campagnes ordenen met Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Aan de slag: Data Architecers en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
@@ -46,13 +52,14 @@ ht-degree: 8%
    + [Beleid voor gegevensgebruik maken](/help/platform/governance/create-data-usage-policies.md)
    + [Beleid voor gegevensgebruik afdwingen](/help/platform/governance/enforce-data-usage-policies.md)
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
+   + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
    + [Gegevenssets verwijderen](/help/platform/data-hygiene/delete-datasets.md)
 + Gegevensopname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Een CSV-bestand toewijzen aan XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target="_blank"}
+   + [Een CSV-bestand toewijzen aan XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Overzicht van bronnen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Gegevens van Adobe Analytics verzamelen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Gegevens van Audience Manager verzamelen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -90,12 +97,25 @@ ht-degree: 8%
    + [De Marketo-bestemming configureren](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Op bestanden gebaseerde cloudopslag of e-mailmarketingdoelen configureren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Een sociale bestemming configureren](/help/platform/destinations/configure-a-social-destination.md)
-   + [Volgend-klare personalisatie met Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+   + Adobe Target en Aangepaste personalisatie{#target}
+      + [Volgend-klare personalisatie met Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+      + [De Adobe Target-bestemming configureren](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [Gegevens activeren voor webinar van niet-Adobe-toepassingen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identiteiten {#identities}
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identiteitsgegevens labelen, opnemen en verifiëren](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Identiteitsgrafieken weergeven](/help/platform/identities/view-identity-graphs.md)
++ Intelligente services {#intelligent-services}
+   + [Overzicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Overzicht van Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Waarde van Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Attribution AI configureren](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [Scores en inzichten van Attribution AI gebruiken](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [AI-klantoverzicht](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Bewaking {#monitoring}
    + [Gegevens bijhouden](/help/platform/monitoring/monitoring-dashboard.md)
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -178,28 +198,7 @@ ht-degree: 8%
    + [Gegevens uit databases samenvoegen](/help/platform/sources/ingest-data-from-databases.md)
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ Toepassingsservices {#application-services}
-   + [Customer Journey Analytics-zelfstudies](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Journey Orchestration-zelfstudies](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [Zelfstudies voor offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
-   + Real-Time CDP-zelfstudies{#rtcdp}
-      + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
-      + [Eind-aan-eind demo](/help/platform/rtcdp/demo.md)
-      + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [Campagnes ordenen met Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [Beleid voor gegevensgebruik afdwingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligente services {#intelligent-services}
-   + [Overzicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [Overzicht van Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Waarde van Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [Attribution AI configureren](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [Scores en inzichten van Attribution AI gebruiken](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [AI-klantoverzicht](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud-integratie {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Campagnes ordenen met Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
