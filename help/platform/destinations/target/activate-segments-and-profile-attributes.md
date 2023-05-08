@@ -1,15 +1,15 @@
 ---
 title: Hoe deel ik segmenten en profielattributen van Adobe in real time CDP aan Adobe Target?
-description: Ontbrekende beschrijving
+description: Leer hoe u segmenten en profielkenmerken van Adobe Real-time Customer Data Platform naar Adobe Target deelt om op maat gemaakte inhoud in real-time weer te geven op uw websites, mobiele apps en andere digitale eigenschappen.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---

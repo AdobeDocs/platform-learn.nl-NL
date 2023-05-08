@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '932'
 ht-degree: 8%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 8%
    + [Op bestanden gebaseerde cloudopslag of e-mailmarketingdoelen configureren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Een sociale bestemming configureren](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Target en Aangepaste personalisatie{#target}
-      + [Volgend-klare personalisatie met Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+      + [Volgend-klare personalisatie met Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [De Adobe Target-bestemming configureren](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Real-Time CDP-segmenten in doel gebruiken](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -199,11 +199,10 @@ ht-degree: 8%
    + [Gegevens uit databases samenvoegen](/help/platform/sources/ingest-data-from-databases.md)
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+   + [Volgend-klare personalisatie met Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud-integratie {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Campagnes ordenen met Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Volgend-klare personalisatie met Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
 + Tendensen in de industrie {#industry}
    + [De toekomst van gegevensbeheer en de veranderende omgeving](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Een overzicht van twee percepties - merken versus consumenten](/help/platform/industry/brands-vs-consumers.md)
