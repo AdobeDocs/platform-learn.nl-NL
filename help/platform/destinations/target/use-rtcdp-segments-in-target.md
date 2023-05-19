@@ -1,5 +1,5 @@
 ---
-title: Hoe gebruik ik Real-time CDP segmenten in Adobe Target?
+title: Hoe gebruik ik Real-Time CDP-segmenten in Adobe Target?
 description: Leer hoe u met Real-time Customer Data Platform-segmenten in Adobe Target persoonlijke ervaringen kunt opdoen op uw website en mobiele apps.
 feature-set: Experience Platform, Target
 feature: Destinations, Segments, Audiences, Integrations
@@ -9,16 +9,16 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-05T00:00:00Z
 jira: KT-13141
-source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
+source-git-commit: c3da54576445ab0137d7367145ea8268ea7a5ad2
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
 
 
-# CDP-segmenten in realtime gebruiken in Doel
+# Real-Time CDP-segmenten in doel gebruiken
 
-Leer hoe u met Real-time Customer Data Platform-segmenten in Adobe Target persoonlijke ervaringen kunt opdoen op uw website en mobiele apps.
+Leer hoe u met Real-time Customer Data Platform-segmenten in Adobe Target persoonlijke ervaringen kunt opdoen op uw website en mobiele apps. Zie voor meer informatie [de documentatie](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419149/?learn=on)

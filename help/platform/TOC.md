@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
+source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 8%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 8%
       + [De Adobe Target-bestemming configureren](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Real-Time CDP-segmenten in doel gebruiken](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
+      + [Real-Time CDP-profielkenmerken gebruiken in Doel](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Gegevens activeren voor webinar van niet-Adobe-toepassingen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identiteiten {#identities}
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
