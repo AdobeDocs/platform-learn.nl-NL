@@ -7,9 +7,9 @@ role: User
 kt: 4807
 thumbnail: 32664.jpg
 exl-id: a6a9302f-b9dd-4201-a81e-5c8a2f58b82d
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,5 @@ ht-degree: 0%
 Een overzicht op hoog niveau van de manier waarop marketeers met de AI van de Klant de voorspellingen van de klant kunnen produceren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?quality=12&learn=on)
-
->[!INFO]
->
-> Deze video maakt deel uit van een cursus, [Aan de slag met de intelligente services voor markters](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), gratis beschikbaar op Experience League!
 
 Ga voor meer informatie naar de [AI-documentatie van klant](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)

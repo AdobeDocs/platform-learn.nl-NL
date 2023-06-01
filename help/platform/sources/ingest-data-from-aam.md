@@ -6,9 +6,9 @@ feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '295'
 ht-degree: 2%
 
 ---
@@ -24,9 +24,5 @@ Terwijl u uw processen en personeel opnieuw configureert om van Adobe Audience M
 >In de bovenstaande video ziet u een optie voor het kiezen van ALLE segmenten en/of kenmerken. We raden u niet aan deze optie te gebruiken, tenzij u een beperkt aantal segmenten met een duidelijk aantal unieke bezoekers in die segmenten hebt. Als u grote aantallen bezoekersprofielen in &quot;alle segmenten&quot; of &quot;alle kenmerken&quot; overbrengt, kan de profielservice in Real-Time CDP worden geballoneerd. Dit kan een enorm effect hebben op de prijsstelling van de toepassing (aangezien het aantal profielen van invloed is op de kosten van de toepassing). Daarom wordt aangeraden dat u in plaats van &quot;all&quot; specifieke segmenten kiest om over te brengen naar Real-Time CDP.
 >
 >Kijk naar de [28 april 2022 episode van Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=nl) waar dit in detail wordt besproken.
-
->[!INFO]
->
-> Deze video maakt deel uit van een cursus [Gegevensinname voor gegevensengineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), gratis beschikbaar op Experience League!
 
 Zie voor meer informatie de [Documentatie over de Audience Manager-bronaansluiting](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).

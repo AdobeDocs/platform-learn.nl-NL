@@ -7,9 +7,9 @@ kt: 7285
 thumbnail: 333312.jpg
 hidefromtoc: true
 exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,5 @@ Leer hoe te om de de cursusdataset en het schema tot stand te brengen van de Wer
 * [Voorbeeldgegevens downloaden (25 MB ZIP)](../assets/DSW-course-sample-assets.zip)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333312?quality=12&learn=on)
-
->[!INFO]
->
-> Deze video maakt deel uit van een cursus, [Aan de slag met Data Science Workspace voor Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), gratis beschikbaar op Experience League!
 
 Ga voor meer informatie naar de [Documentatie over wetenschapswerkruimte](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
