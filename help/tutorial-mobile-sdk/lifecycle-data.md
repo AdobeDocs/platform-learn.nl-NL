@@ -2,7 +2,7 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 
-Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u levenscyclusgegevens van uw mobiele app verzamelen. De uitbreiding van het Netwerk van Adobe Experience Platform Edge verzendt deze levenscyclusgegevens naar het Netwerk van de Rand van het Platform waar het dan aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen. Meer informatie over de [Levenscyclusextensie](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network) in de productdocumentatie.
+Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u levenscyclusgegevens van uw mobiele app verzamelen. De uitbreiding van het Netwerk van Adobe Experience Platform Edge verzendt deze levenscyclusgegevens naar het Netwerk van de Rand van het Platform waar het dan aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen. Meer informatie over de [Levenscyclusextensie](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in de productdocumentatie.
 
 
 ## Vereisten
@@ -69,7 +69,7 @@ Nu kunt u bijwerken `AppDelegate.swift` om de levenscyclusgebeurtenissen te regi
 
 >[!NOTE]
 >
->Voor iOS 13 en hoger raadpleegt u de [documentatie](https://aep-sdks.gitbook.io/docs/foundation-extensions/mobile-core/lifecycle#register-lifecycle-with-mobile-core-and-add-appropriate-start-pause-calls) voor iets andere code.
+>Voor iOS 13 en hoger raadpleegt u de [documentatie](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) voor iets andere code.
 
 ## Valideren met betrouwbaarheid
 
@@ -82,7 +82,7 @@ Nu kunt u bijwerken `AppDelegate.swift` om de levenscyclusgebeurtenissen te regi
 
 ## Gegevens doorsturen naar Edge Network van Platform
 
-De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Mobile SDK. Om deze gebeurtenissen naar het Netwerk van de Rand van het Platform te verzenden, volg de vermelde stappen [hier](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Zodra de gebeurtenissen naar het Netwerk van de Rand van het Platform worden verzonden, zullen zij aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen.
+De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Mobile SDK. Om deze gebeurtenissen naar het Netwerk van de Rand van het Platform te verzenden, volg de vermelde stappen [hier](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Zodra de gebeurtenissen naar het Netwerk van de Rand van het Platform worden verzonden, zullen zij aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen.
 
 Zodra u de regel hebt toegevoegd om de levenstijlgebeurtenissen naar het Netwerk van de Rand van het Platform te verzenden, zou u moeten zien `Application Close (Background)` en `Application Launch (Foreground)` gebeurtenissen met XDM-gegevens in Verzekering.
 

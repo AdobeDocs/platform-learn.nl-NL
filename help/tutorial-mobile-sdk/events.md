@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer hoe u gebeurtenisgegevens kunt verzamelen in een mobiele app.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
-De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van de Ervaring naar het Netwerk van de Rand van het Platform te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra het gegeven door het Netwerk van de Rand van het Platform wordt ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Meer informatie over de [Experience Events](https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk) in de productdocumentatie.
+De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van de Ervaring naar het Netwerk van de Rand van het Platform te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra het gegeven door het Netwerk van de Rand van het Platform wordt ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Meer informatie over de [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
 
 ## Vereisten
 

@@ -2,9 +2,9 @@
 title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
 De borging, die formeel Project Griffon wordt genoemd, wordt ontworpen om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen in uw mobiele app dient.
 
-Met de optie Betrouwbaarheid kunt u onbewerkte SDK-gebeurtenissen controleren die zijn gegenereerd door de Adobe Experience Platform Mobile SDK. Alle gebeurtenissen die door de SDK worden verzameld, zijn beschikbaar voor inspectie. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren in de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Meer informatie over de [Betrouwbaarheid](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance) in de productdocumentatie.
+Met de optie Betrouwbaarheid kunt u onbewerkte SDK-gebeurtenissen controleren die zijn gegenereerd door de Adobe Experience Platform Mobile SDK. Alle gebeurtenissen die door de SDK worden verzameld, zijn beschikbaar voor inspectie. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren in de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Meer informatie over de [Betrouwbaarheid](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) in de productdocumentatie.
 
 
 ## Vereisten
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-Meer informatie is beschikbaar op [hier](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
+Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Een basis-URL instellen
 
@@ -94,7 +94,7 @@ De verzekering werkt door een URL, of via browser of code QR, te openen die URL 
    * Experience Cloud-gebeurtenissen die worden weergegeven in de webinterface.
       ![betrouwbaarheidsgebeurtenissen](assets/mobile-assurance-events.png)
 
-Als u problemen ondervindt, kunt u de [technisch](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
+Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 Volgende: **[Toestemming](consent.md)**
 

@@ -3,9 +3,9 @@ title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de
 Als u gebeurtenissen wilt doorsturen in Adobe Experience Platform, moeten gegevens eerst naar Adobe Experience Platform Edge Network worden verzonden met een of meer van de volgende drie opties:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/)
-<!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -84,7 +84,7 @@ Voor gebeurtenis door:sturen om de gegevens te gebruiken u naar het netwerk van 
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} interface
+1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL DataStreams]**
 1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
 

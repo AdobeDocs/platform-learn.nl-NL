@@ -1,11 +1,11 @@
 ---
 title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
-recommendation: noDisplay,catalog
+recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met de Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via het Adobe Experience Platform Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [Adobe Experience Platform Mobile SDK-documentatie](https://aep-sdks.gitbook.io/docs/) voor meer gedetailleerde informatie.
+Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via het Adobe Experience Platform Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/) voor meer gedetailleerde informatie.
 
 ![build-instellingen](assets/data-collection-mobile-sdk.png)
 
@@ -55,7 +55,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen h
    * **[!UICONTROL Eigendomsrechten]**—machtigingsitems naar **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, en **[!UICONTROL Omgevingen beheren]**.
    * **[!UICONTROL Bedrijfsrechten]**—machtigingsitems naar **[!UICONTROL Eigenschappen beheren]** en, als het voltooien van de optionele pushberichtles, **[!UICONTROL App Configurations beheren]**
 
-      Zie voor meer informatie over tagmachtigingen [Gebruikersmachtigingen voor tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en){target=&quot;_blank&quot;} in de productdocumentatie.
+      Zie voor meer informatie over tagmachtigingen [Gebruikersmachtigingen voor tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en){target="_blank"} in de productdocumentatie.
 * In Experience Platform moet u beschikken over:
    * **[!UICONTROL Gegevensmodellering]**—machtigingsitems om schema&#39;s te beheren en weer te geven.
    * **[!UICONTROL Identity Management]**—machtigingsitems om naamruimten te beheren en weer te geven.
@@ -74,8 +74,8 @@ Ook wordt aangenomen dat u vertrouwd bent met [!DNL Swift]. U hoeft geen expert 
 
 U kunt twee versies van de voorbeeldtoepassing downloaden.
 
-1. [Leeg](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} - versie zonder Experience Cloud-code om de praktische oefeningen in deze zelfstudie te voltooien
-1. [Volledig geïmplementeerd](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;} - versie met volledige Experience Cloud-implementatie ter referentie.
+1. [Leeg](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - versie zonder enige Experience Cloud-code om de praktische oefeningen in deze zelfstudie te voltooien
+1. [Volledig geïmplementeerd](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - versie met volledige Experience Cloud-implementatie ter referentie.
 
 Laten we beginnen!
 

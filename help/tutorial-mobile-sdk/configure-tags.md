@@ -2,7 +2,7 @@
 title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag kunt configureren in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -33,7 +33,7 @@ In deze les zult u:
 ## Eerste configuratie
 
 1. Een nieuwe eigenschap voor mobiele tags maken:
-   1. In de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/){target=&quot;_blank&quot;}, selecteer **[!UICONTROL Tags]** in de linkernavigatie
+   1. In de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/){target="_blank"}, selecteert u **[!UICONTROL Tags]** in de linkernavigatie
    1. Selecteren **[!UICONTROL Nieuwe eigenschap]**
 
       ![een tag-eigenschap maken](assets/mobile-tags-new-property.png).
@@ -45,7 +45,7 @@ In deze les zult u:
 
       >[!NOTE]
       >
-      > Standaardinstellingen voor toestemming voor de op randen gebaseerde mobiele SDK-implementaties, zoals de instellingen die u in deze zelfstudie uitvoert, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U zult de uitbreiding van de Toestemming later in deze les toevoegen en vormen. Zie voor meer informatie [de documentatie](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+      > Standaardinstellingen voor toestemming voor de op randen gebaseerde mobiele SDK-implementaties, zoals de instellingen die u in deze zelfstudie uitvoert, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U zult de uitbreiding van de Toestemming later in deze les toevoegen en vormen. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. De nieuwe eigenschap openen
@@ -81,7 +81,7 @@ In deze les zult u:
 
 1. Installeer de **Toestemming** extensie.
 
-   In deze zelfstudie selecteert u **[!UICONTROL In behandeling]**. Meer informatie over de extensie Goedkeuring in [de documentatie](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network).
+   In deze zelfstudie selecteert u **[!UICONTROL In behandeling]**. Meer informatie over de extensie Goedkeuring in [de documentatie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![toestemmingsinstellingen](assets/mobile-tags-extension-consent.png)
 
@@ -110,14 +110,14 @@ In deze les zult u:
 
 1. De installatieinstructies bieden u een goed beginpunt voor de implementatie.
 
-   Meer informatie vindt u [hier](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).
+   Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
    * **[!UICONTROL Omgevingsbestand-id]**: Deze unieke id verwijst naar uw ontwikkelomgeving. Noteer deze waarde. Productie/Staging/Ontwikkeling hebben allemaal verschillende id-waarden.
    * **[!UICONTROL Podfile]**: CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [documentatie](https://cocoapods.org/).
    * **[!UICONTROL Initialisatiecode]**: Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten.
 
 >[!NOTE]
->De installatie-instructies moeten worden beschouwd als een beginpunt en geen definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://aep-sdks.gitbook.io/docs/).
+>De installatie-instructies moeten worden beschouwd als een beginpunt en geen definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/documentation/).
 
 ## Architectuur van mobiele tags
 

@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3346'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Voordat u met de oefeningen begint, bekijkt u deze twee korte video&#39;s voor m
 
 >[!NOTE]
 >
->Hoewel deze zelfstudie vooral gericht is op het streamen van ingesloten gegevens van websites met Web SDK, kunt u ook gegevens streamen met de [Adobe Mobile SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)en andere mechanismen.
+>Hoewel deze zelfstudie vooral gericht is op het streamen van ingesloten gegevens van websites met Web SDK, kunt u ook gegevens streamen met de [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)en andere mechanismen.
 
 ## Vereiste machtigingen
 
@@ -252,7 +252,7 @@ Zoals u kunt zien op het tabblad [!UICONTROL Publishing Flow] screen, is er veel
 
 Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
 
-* [Firefox-extensie](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Firefox-extensie](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Als u Foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
@@ -324,7 +324,7 @@ U kunt ook bevestigen dat het nieuwe profiel wordt weergegeven:
 1. Selecteer **[!UICONTROL Profiel-id]** om het profiel te openen
    ![Het profiel zoeken en openen](assets/websdk-platform-openProfile.png)
 1. Selecteer **[!UICONTROL Gebeurtenissen]** tabblad om de weergegeven pagina&#39;s weer te geven
-   ![Profielgebeurtenissen](assets/websdk-platform-profileEvents.png)
+   ![Profielgebeurtenissen](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
 ## Aangepaste gegevens aan de gebeurtenis toevoegen

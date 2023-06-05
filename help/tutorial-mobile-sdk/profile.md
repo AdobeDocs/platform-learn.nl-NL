@@ -2,7 +2,7 @@
 title: Profiel
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -15,7 +15,7 @@ Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 
 U kunt de extensie Profiel gebruiken om kenmerken van de gebruiker op de client op te slaan. Deze informatie kan later worden gebruikt om berichten tijdens online of off-line scenario&#39;s te richten en te personaliseren, zonder het moeten met een server voor optimale prestaties verbinden. De extensie Profiel beheert het Client-Side Operation Profile (CSOP), biedt een manier om op API&#39;s te reageren, werkt gebruikersprofielkenmerken bij en deelt de gebruikersprofielkenmerken met de rest van het systeem als een gegenereerde gebeurtenis.
 
-De profielgegevens worden door andere extensies gebruikt om acties met betrekking tot profielen uit te voeren. Een voorbeeld is de uitbreiding van de Motor van Regels die de profielgegevens verbruikt en regels in werking stelt die op de profielgegevens worden gebaseerd. Meer informatie over de [Profielextensie](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) in de documentatie
+De profielgegevens worden door andere extensies gebruikt om acties met betrekking tot profielen uit te voeren. Een voorbeeld is de uitbreiding van de Motor van Regels die de profielgegevens verbruikt en regels in werking stelt die op de profielgegevens worden gebaseerd. Meer informatie over de [Profielextensie](https://developer.adobe.com/client-sdks/documentation/profile/) in de documentatie
 
 >[!IMPORTANT]
 >
@@ -65,7 +65,7 @@ Het verpersoonlijkingsteam zou ook kunnen willen richten gebaseerd op het loyali
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Extra `updateUserAttributes` documentatie is te vinden [hier](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+Extra `updateUserAttributes` documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Get
 
@@ -78,7 +78,7 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-Extra `getUserAttributes` documentatie is te vinden [hier](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+Extra `getUserAttributes` documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Valideren met betrouwbaarheid
 

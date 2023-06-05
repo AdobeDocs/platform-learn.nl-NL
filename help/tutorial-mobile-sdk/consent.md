@@ -2,7 +2,7 @@
 title: Toestemming
 description: Leer hoe u toestemming implementeert in een mobiele app.
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Leer hoe u toestemming implementeert in een mobiele app.
 
-Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network)in de documentatie.
+Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)in de documentatie.
 
 ## Vereisten
 

@@ -1,19 +1,19 @@
 ---
-user-guide-title: De zelfstudie Experience Cloud in mobiele apps implementeren
-breadcrumb-title: Zelfstudie over mobiele toepassingen
+user-guide-title: Tutorial voor Experience Cloud in mobiele apps implementeren
+breadcrumb-title: Tutorial voor mobiele apps
 user-guide-description: Leer hoe u Adobe Experience Cloud-toepassingen kunt implementeren in mobiele apps met Experience Platform Mobile SDK.
 solution: Data Collection
 kt: 6987
-recommendation: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+recommendations: noDisplay,noCatalog
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 15%
+ht-degree: 68%
 
 ---
 
 
-# Experience Cloud implementeren in mobiele apps {#implement-mobile-sdk}
+#  voor Experience Cloud in mobiele apps implementeren {#implement-mobile-sdk}
 
 + [Overzicht van tutorial](overview.md)
 + Initiële configuratie {#initial-configuration}

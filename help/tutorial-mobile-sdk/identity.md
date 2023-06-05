@@ -2,10 +2,10 @@
 title: Identiteit
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 0%
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 
 Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien door identiteiten tussen apparaten en systemen te overbruggen, zodat u in real-time een indrukwekkende, persoonlijke digitale ervaring kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
-Meer informatie over de [Identiteitsextensie](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) en de [identiteitsservice](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) in de documentatie.
+Meer informatie over de [Identiteitsextensie](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [identiteitsservice](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) in de documentatie.
 
 ## Vereisten
 

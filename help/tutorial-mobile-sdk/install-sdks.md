@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implemente
 
 * Tagbibliotheek is gemaakt met de extensies die zijn beschreven in het dialoogvenster [vorige les](configure-tags.md).
 * Bestand-id voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
-* Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;}.
-* Ervaring met [XCode](https://developer.apple.com/xcode/){target=&quot;_blank&quot;}.
-* Basis [opdrachtregel](https://en.wikipedia.org/wiki/Command-line_interface){target=&quot;_blank&quot;} kennis.
+* Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Ervaring met [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* Basis [opdrachtregel](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} kennis.
 
 ## Leerdoelstellingen
 
@@ -142,7 +142,7 @@ De bovenstaande code doet het volgende:
 
 * Registreert de vereiste extensies.
 * Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
-* Schakelt foutopsporingslogbestand in. Meer details en opties vindt u in het gedeelte [Mobiele SDK-documentatie](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* Schakelt foutopsporingslogbestand in. Meer details en opties vindt u in het gedeelte [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >In een productie-app moet u van appId wisselen op basis van de huidige omgeving (dev/stag/prod).
