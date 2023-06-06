@@ -7,9 +7,9 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
+source-git-commit: 3df5214a445cbf4c9862bb82cd32a9f243228539
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,3 @@ Leer hoe te om op attribuut-gebaseerde toegangsbeheer te vormen om toegang tot s
 >[!NOTE]
 >
 > De beleid-bouwende eigenschap die in deze video wordt getoond is niet volledig beschikbaar, maar het standaardbeleid in klantenrekeningen wordt gevormd gelijkaardig aan getoond.
-
->[!IMPORTANT]
->
-> Op attributen-gebaseerde toegangscontrole is momenteel beschikbaar in een beperkte versie voor op VS-Gebaseerde gezondheidszorgklanten. Deze mogelijkheid is beschikbaar voor alle Real-time Customer Data Platform-klanten zodra deze volledig is vrijgegeven. Bovendien is het etiket met gezondheidsgegevens dat in deze video wordt gebruikt, alleen toegestaan voor klanten van het gezondheidsschild.
