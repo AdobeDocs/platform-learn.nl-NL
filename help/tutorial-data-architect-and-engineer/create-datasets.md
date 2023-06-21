@@ -8,9 +8,9 @@ feature: Data Management
 kt: 4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Maak nu de `Luma CRM Dataset` met de API.
 Eerst moeten we de `$id` van de `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen, enkel zoals u in [!DNL Postman] les.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Selecteer **Verzenden** knop
 1. Je moet 200 reacties krijgen
@@ -117,10 +117,9 @@ Nu kunt u de dataset tot stand brengen:
 > Gemeenschappelijke kwesties die dit verzoek indienen en waarschijnlijk oplossen:
 >
 > * `400: There was a problem retrieving xdm schema`. Controleer of u de id in het bovenstaande voorbeeld hebt vervangen door de id van uw eigen id `Luma CRM Schema`
-> * Geen auteur-token: Voer de **IMS: JWT Genereren + Auth via gebruikerstoken** aanroep om nieuwe tokens te genereren
+> * Geen auteur-token: Voer de **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Werk de **CONTAINER_ID** omgevingsvariabele van `global` tot `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Gebruikersmachtigingen controleren in de Admin Console
-
 
 
 U kunt teruggaan naar de **[!UICONTROL Gegevenssets]** het scherm in het gebruikersinterface van het Platform, kunt u de succesvolle verwezenlijking van alle vijf datasets verifiëren!

@@ -6,15 +6,16 @@ role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 191fe710c6cd00b5355881158a7e0af85523e22e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
 
 ---
 
-# Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers
+# Aan de slag met Adobe Experience Platform voor Data Architecers en Data Engineers
 
 <!--5min-->
 

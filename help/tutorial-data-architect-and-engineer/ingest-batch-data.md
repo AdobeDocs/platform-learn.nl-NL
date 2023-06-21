@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,6 @@ Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 >* Als u foutdiagnostiek inschakelt, worden gegevens over de inname van uw gegevens gegenereerd. U kunt deze gegevens vervolgens controleren met de API voor gegevenstoegang. Meer informatie hierover vindt u in [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* Gedeeltelijke invoer maakt het mogelijk gegevens met fouten in te voeren, tot een bepaalde drempel die u kunt opgeven. Meer informatie hierover vindt u in [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
-
 ### De gegevens valideren
 
 Er zijn een paar manieren om te bevestigen dat de gegevens met succes werden opgenomen.
@@ -103,7 +102,6 @@ Om te bevestigen dat de in Profiel aangelande gegevens (kan een paar minuten dur
 1. Selecteer uw `Luma Loyalty Id` namespace
 1. Voer vervolgens een van de `loyaltyId` waarden uit uw gegevensset,  `5625458`
 1. Selecteren **[!UICONTROL Weergave]**
-
    ![Een profiel uit de gegevensset bevestigen](assets/ingestion-loyalty-profile.png)
 
 #### Valideren met gebeurtenissen voor gegevensinvoer
@@ -137,7 +135,7 @@ Laten we nu gegevens uploaden met behulp van de API.
 Eerst krijgen wij identiteitskaart van dataset identiteitskaart van de dataset waarin wij gegevens willen opnemen:
 
 1. Open [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen, enkel zoals u in [!DNL Postman] les.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. Open uw omgevingsvariabelen en zorg ervoor dat de waarde van **CONTAINER_ID** nog steeds `tenant`
 1. De aanvraag openen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** en selecteert u **Verzenden**
 1. U moet een `200 OK` reactie
@@ -337,7 +335,7 @@ Adobe partners met veelvoudige verkopers ETL om gegevensopname in Experience Pla
 
 * [Ontwikkeling van ETL-integratie voor Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Informatica documentatie van de Adobe Experience Platform-connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Informatica documentatie van de Adobe Experience Platform-connector](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Aanvullende bronnen

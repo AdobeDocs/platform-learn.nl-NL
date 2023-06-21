@@ -8,9 +8,9 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '944'
 ht-degree: 2%
 
 ---
@@ -92,12 +92,11 @@ We maken onze CRM-naamruimte via API.
 > 1. Als de **[!UICONTROL Identiteitssymbool]**, gebruik `lumaCrmId`
 > 1. Als de **[!UICONTROL Type]**, gebruikt u Cross-device
 
-
 We maken de naamruimte Identiteit `Luma CRM Id`:
 
 1. Downloaden [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` map
 1. De verzameling importeren in [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen.
 1. Selecteer de aanvraag **[!UICONTROL Identiteitsservice] > [!UICONTROL Naamruimte van identiteit] > [!UICONTROL Een nieuwe naamruimte maken].**
 1. Plak het volgende als de [!DNL Body] van het verzoek:
 

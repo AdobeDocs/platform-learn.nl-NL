@@ -8,9 +8,9 @@ feature: Schemas
 kt: 4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,6 @@ Veldgroepen moeten worden gemaakt in de schemaworkflow. De veldgroep maken:
 1. Gebruiken `Luma Identity profile field group` als de **[!UICONTROL Weergavenaam]**
 1. Gebruiken `system identifiers for XDM Individual Profile class` als de **[!UICONTROL Beschrijving]**
 1. Selecteren **[!UICONTROL Veldgroepen toevoegen]**
-
    ![Een nieuwe veldgroep toevoegen](assets/schemas-loyalty-nameFieldGroup.png)
 
 De nieuwe, lege veldgroep wordt toegevoegd aan uw schema. De **[!UICONTROL +]** U kunt knoppen gebruiken om nieuwe velden toe te voegen aan elke locatie in de hiërarchie. In ons geval willen we velden toevoegen op het hoofdniveau:
@@ -177,11 +176,10 @@ Nu maken we een schema met behulp van de API.
 > 1. Naam geven `Luma CRM Schema`
 > 1. Gebruik de volgende veldgroepen: Demografische details, persoonlijke contactgegevens en veldgroep Luminimitatieprofiel
 
-
 Eerst maken we het lege schema:
 
 1. Open [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen.
 1. Open de omgevingsvariabelen en wijzig de waarde van **CONTAINER_ID** van `global` tot `tenant`. Vergeet niet dat u `tenant` wanneer u met uw eigen douaneelementen in Platform wilt in wisselwerking staan, zoals het creëren van een schema.
 1. Selecteren **Opslaan**
    ![CONTAINER_ID wijzigen in huurder](assets/schemas-crm-changeContainerId.png)
@@ -218,10 +216,9 @@ Eerst maken we het lege schema:
 >
 > Gemeenschappelijke kwesties met deze vraag en waarschijnlijke moeilijke situaties:
 >
-> * Geen auteur-token: Voer de **IMS: JWT Genereren + Auth via gebruikerstoken** aanroep om nieuwe tokens te genereren
+> * Geen auteur-token: Voer de **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Werk de **CONTAINER_ID** omgevingsvariabele van `global` tot `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Gebruikersmachtigingen controleren in de Admin Console
-
 
 ### Standaardveldgroepen toevoegen
 
@@ -277,7 +274,6 @@ Laten we nu onze `Luma Identity profile field group` naar het schema. Ten eerste
    ```
 
 1. Selecteren **Verzenden**
-
    ![De groep Identiteitsveld toevoegen](assets/schemas-crm-addIdentityMixin.png)
 
 Controleer of de veldgroep aan het schema is toegevoegd door zowel de API-reactie als de interface te controleren.

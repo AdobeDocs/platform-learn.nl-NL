@@ -5,10 +5,11 @@ role: Developer
 feature: API
 kt: 7349
 thumbnail: 7349.jpg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,11 @@ Leer hoe u een Experience Platform-sandboxomgeving instelt met voorbeeldgegevens
 
 Zakelijke gebruikers van Experience Platforms moeten vaak een reeks stappen doorlopen die het identificeren van veldgroepen, het creëren van schema&#39;s, het voorbereiden van gegevens, het creëren van datasets, en dan het opnemen van gegevens omvatten alvorens zij de marketing mogelijkheden kunnen onderzoeken die door Experience Platform worden aangeboden. In deze zelfstudie worden enkele stappen geautomatiseerd, zodat u gegevens zo snel mogelijk in een sandbox met Platforms kunt ophalen.
 
-Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investeren in Adobe Experience Platform om loyaliteit, CRM, productcatalogus en offline aankoopgegevens te combineren in realtime klantprofielen en activeren deze profielen om hun marketing naar het volgende niveau te brengen. We hebben voorbeeldgegevens gegenereerd voor Luma en in de rest van deze zelfstudie importeert u deze gegevens in een van uw Experience Platform-sandboxomgevingen.
+Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investeren in Adobe Experience Platform om loyaliteit, CRM, productcatalogus, en off-line aankoopgegevens in klantenprofielen in real time te combineren en deze profielen te activeren om hun marketing aan het volgende niveau te brengen. We hebben voorbeeldgegevens gegenereerd voor Luma en in de rest van deze zelfstudie importeert u deze gegevens in een van uw Experience Platform-sandboxomgevingen.
 
 >[!NOTE]
 >
->Het eindresultaat van deze zelfstudie is een sandbox met vergelijkbare gegevens als de [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers - zelfstudie](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Het is in april 2023 bijgewerkt om de [Journey Optimizer-uitdagingen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html).
+>Het eindresultaat van deze zelfstudie is een sandbox met vergelijkbare gegevens als de [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers - zelfstudie](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Het is in april 2023 bijgewerkt om de [Journey Optimizer-uitdagingen](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html). Het werd bijgewerkt in juni 2023 om de authentificatiemethode op OAuth te schakelen.
 
 
 ## Vereisten
@@ -33,14 +34,13 @@ Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investe
 * U hebt toegang tot Experience Platform APIs en weet hoe te voor authentiek te verklaren. Zo niet, bekijk dit [zelfstudie](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=nl).
 * U hebt toegang tot een sandbox voor het ontwikkelen van Experience Platforms.
 * Je kent je Experience Platform huurder-id. U kunt het verkrijgen door voor authentiek te maken [API-verzoek](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
-of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account. In de volgende URL is de huurder bijvoorbeeld &quot;
-`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
+of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account. In de volgende URL is de huurder bijvoorbeeld &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
-## Postman gebruiken {#postman}
+## Gebruiken [!DNL Postman] {#postman}
 
 ### Omgevingsvariabelen instellen
 
-Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://www.postman.com/downloads/) toepassing.  Laten we beginnen!
+Voordat u de stappen uitvoert, moet u controleren of u de [Postman](https://www.postman.com/downloads/) toepassing. Laten we beginnen!
 
 1. Download de [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) bestand, dat alle bestanden bevat die voor deze zelfstudie zijn vereist.
 
@@ -49,9 +49,9 @@ Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://w
    >Gebruikersgegevens in de [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) het bestand is fictief en mag alleen voor demonstratiedoeleinden worden gebruikt.
 
 1. Verplaats vanuit de downloadmap de `platform-utils-main.zip` naar de gewenste locatie op de computer en decomprimeer het bestand.
-1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_yourOrganizationID` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
-1. Openen `luma-offline-purchases.json` en `luma-web-events.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-11` en vervang het jaar en de maand)
-1. Noteer de locatie van de uitgevouwen map, zoals u deze later nodig hebt bij het instellen van de `FILE_PATH` Postman-omgevingsvariabele:
+1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_yourTenantId` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
+1. Openen `luma-offline-purchases.json`, `luma-inventory-events.json`, en `luma-web-events.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-11` en vervang het jaar en de maand)
+1. Noteer de locatie van de uitgevouwen map, zoals u deze later nodig hebt bij het instellen van de `FILE_PATH` [!DNL Postman] omgevingsvariabele:
 
    >[!NOTE]
    > Als u een bestandspad op uw Mac wilt verkrijgen, navigeert u naar de `platform-utils-main` map, klikt u met de rechtermuisknop op de map en selecteert u **Info ophalen** optie.
@@ -63,16 +63,16 @@ Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://w
    > 
    > ![Windows-bestandspad](../assets/data-generator/images/windows-file-path.png)
 
-1. Open Postman en maak een nieuwe werkruimte via de **Werkruimten** vervolgkeuzemenu:\
+1. Openen [!DNL Postman] en maakt u een werkruimte op basis van de **Werkruimten** vervolgkeuzemenu:\
    ![Werkruimte maken](../assets/data-generator/images/create-workspace.png)
-1. Voer een **Naam** en optioneel **Samenvatting** voor uw werkruimte en klik op **Werkruimte maken**. Postman schakelt over naar de nieuwe werkruimte wanneer u deze maakt.
+1. Voer een **Naam** en optioneel **Samenvatting** voor uw werkruimte en klik op **Werkruimte maken**. [!DNL Postman] schakelt u over naar de nieuwe werkruimte wanneer u deze maakt.
    ![Werkruimte opslaan](../assets/data-generator/images/save-workspace.png)
-1. Pas nu enkele instellingen aan om de Postman-verzamelingen in deze werkruimte uit te voeren. Klik in de koptekst van Postman op het tandwielpictogram en selecteer **Instellingen** om de instellingen modaal te openen. U kunt ook de sneltoets (CMD/CTRL + ,) gebruiken om het modaal te openen.
+1. Pas nu enkele instellingen aan om het dialoogvenster [!DNL Postman] verzamelingen in deze werkruimte. In de koptekst van [!DNL Postman], klikt u op het tandwielpictogram en selecteert u **Instellingen** om de instellingen modaal te openen. U kunt ook de sneltoets (CMD/CTRL + ,) gebruiken om het modaal te openen.
 1. Onder de `General` tabblad, de time-out van de aanvraag in ms bijwerken naar `5000 ms` en `allow reading file outside this directory`
    ![Instellingen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
-   > Als bestanden vanuit de werkmap worden geladen, worden ze op alle apparaten probleemloos uitgevoerd als dezelfde bestanden op de andere apparaten worden opgeslagen. Als u echter bestanden van buiten de werkmap wilt uitvoeren, moet een instelling worden ingeschakeld om dezelfde intentie aan te geven. Als uw `FILE_PATH` is niet hetzelfde als het pad naar de Postman-werkmap. Schakel deze optie in.
+   > Als bestanden vanuit de werkmap worden geladen, worden ze op alle apparaten probleemloos uitgevoerd als dezelfde bestanden op de andere apparaten worden opgeslagen. Als u echter bestanden van buiten de werkmap wilt uitvoeren, moet een instelling worden ingeschakeld om dezelfde intentie aan te geven. Als uw `FILE_PATH` is niet gelijk aan [!DNL Postman]Het pad naar de werkmap moet nu zijn ingeschakeld.
 
 1. Sluit de **Instellingen** deelvenster.
 1. Selecteer **Omgevingen** en selecteer vervolgens **Importeren**:
@@ -85,14 +85,13 @@ Voordat u de stappen uitvoert, moet u ervoor zorgen dat u de [Postman](https://w
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` in Adobe Developer Console
+   * `SCOPES`
    * `TECHNICAL_ACCOUNT_ID`
-   * `META_SCOPE`
    * `IMS`
    * `IMS_ORG`—`Organization ID` in Adobe Developer Console
-   * `PRIVATE_KEY`
    * `SANDBOX_NAME`
-   * `CONTAINER_ID`
    * `TENANT_ID`—moet met een onderstrepingsteken bijvoorbeeld beginnen `_techmarketingdemos`
+   * `CONTAINER_ID`
    * `platform_end_point`
    * `FILE_PATH`—gebruik het lokale omslagweg waar u uitgepakt `platform-utils-main.zip` bestand. Zorg ervoor dat de map bijvoorbeeld de mapnaam bevat `/Users/dwright/Desktop/platform-utils-main`
 
@@ -123,11 +122,11 @@ Vervolgens moet u de verzamelingen importeren in Postman.
 
 Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening mee dat de methoden voor het genereren van tokens die in deze zelfstudie worden gebruikt, alleen geschikt zijn voor niet-productiedoeleinden. Bij Lokaal ondertekenen wordt een JavaScript-bibliotheek geladen van een host van een andere fabrikant en bij Extern ondertekenen wordt de persoonlijke sleutel naar een webservice verzonden die eigendom is van een Adobe. Hoewel Adobe deze persoonlijke sleutel niet opslaat, mogen productietoetsen nooit met iemand worden gedeeld.
 
-1. Open de `Authentication` verzameling, selecteer de `IMS: JWT Generate + Auth via User Token` POST verzoek, en klik `SEND` om het toegangstoken voor authentiek te verklaren en te verkrijgen.
+1. Open de `0-Authentication` verzameling, selecteer de `OAuth: Request Access Token` verzoek, en klik `SEND` om het toegangstoken voor authentiek te verklaren en te verkrijgen.
 
    ![Verzamelingen importeren](../assets/data-generator/images/authentication.png)
 
-1. Controleer de omgevingsvariabelen en merk op dat de `JWT_TOKEN` en `ACCESS_TOKEN` zijn nu gevuld.
+1. Controleer de omgevingsvariabelen en merk op dat de `ACCESS_TOKEN` is nu gevuld.
 
 ### Gegevens importeren
 
@@ -167,7 +166,7 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
 
 ## Validatie
 
-De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, realtime profielen van klanten worden gemaakt waarin gegevens van meerdere systemen worden gecombineerd. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://platform.adobe.com/):
+De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, realtime profielen van klanten worden gemaakt waarin gegevens van meerdere systemen worden gecombineerd. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://experience.adobe.com/platform/):
 
 1. Ga naar **[!UICONTROL Profielen]** > **[!UICONTROL Bladeren]**
 1. Selecteren `Luma Loyalty Id` als de **[!UICONTROL Naamruimte identiteit]**

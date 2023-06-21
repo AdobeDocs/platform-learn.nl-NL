@@ -8,10 +8,10 @@ feature: Sandboxes
 kt: 4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In deze les maakt u een sandbox voor de ontwikkelomgeving die u voor de rest van de zelfstudie wilt gebruiken.
 
-Sandboxen bieden geïsoleerde omgevingen waarin u functionaliteit kunt uitproberen zonder bronnen en gegevens te combineren met uw productieomgeving. Zie voor meer informatie de [sandboxdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
+Sandboxen bieden geïsoleerde omgevingen waarin u functionaliteit kunt uitproberen zonder bronnen en gegevens te combineren met uw productieomgeving. Zie voor meer informatie de [sandboxdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=nl).
 
 **Gegevensarchitecten** en **Gegevensengineers** moet buiten deze zelfstudie sandboxen maken.
 
@@ -64,27 +64,17 @@ Wacht tot uw sandbox &quot;[!UICONTROL Actief]&quot; voordat u doorgaat met de v
 
 ## De nieuwe sandbox toevoegen aan het productprofiel
 
-Wanneer de sandbox actief is, moet u deze in uw productprofiel opnemen om deze te kunnen gebruiken. Zo voegt u het toe aan uw productprofiel:
+Wanneer de sandbox actief is, moet u deze in uw rol opnemen om deze te kunnen gebruiken. Als u deze aan uw rol wilt toevoegen (hiervoor hebt u systeembeheer of productbeheerdersrechten nodig):
 
-1. Meld u aan bij het tabblad [Admin Console](https://adminconsole.adobe.com)
-1. Ga naar **[!UICONTROL Producten > Adobe Experience Platform]**
-1. Open de `Luma Tutorial Platform` profiel
-
-   ![Selecteer het productprofiel](assets/sandbox-selectProfile.png)
-
-1. Ga naar de **[!UICONTROL Machtigingen]** tab
-
+1. Ga naar de [!UICONTROL Machtigingen] scherm
+1. Open de `Luma Tutorial Platform` rol
+1. _Verwijderen_ de `Prod` sandbox van de rol
+1. Voeg de `Luma Tutorial` sandbox
+1. Selecteren **[!UICONTROL Opslaan]**
 1. Op de [!UICONTROL Sandboxen] rij, selecteren **[!UICONTROL Bewerken]**
 
-   ![Bewerken selecteren](assets/sandbox-selectSandboxes.png)
+   ![Luminantieleiding toevoegen](assets/sandbox-addLumaTutorial.png)
 
-1. _Verwijderen_ de **[!UICONTROL Prod]** sandbox die u oorspronkelijk aan het profiel hebt toegewezen
-1. Selecteer **[!UICONTROL +]** pictogram om de nieuwe `Luma Tutorial` sandbox naar rechterkolom
-1. Selecteren **[!UICONTROL Opslaan]** om de bijgewerkte machtigingen op te slaan
-
-   ![De sandbox naar de andere kolom verplaatsen](assets/sandbox-addLumaTutorial.png)
-
-1. Ga terug naar het browsertabblad met Experience Platform
 1. Laad de pagina opnieuw (of houd Shift ingedrukt en laad de pagina opnieuw). U moet nu ofwel in het deelvenster `Luma Tutorial` sandbox of wordt weergegeven in de vervolgkeuzelijst van de sandbox
 1. Naar de `Luma Tutorial` sandbox als u er nog niet in bent
 

@@ -8,9 +8,9 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ Laten we beginnen met de eenvoudige taak om een schema in te schakelen:
    > 1. De gegevens opnieuw invoeren
 
 
-
    ![Profiel in-/uitschakelen](assets/profile-loyalty-enableSchema.png)
 
 Eenvoudig, niet? Herhaal bovenstaande stappen voor dit andere schema:
@@ -86,7 +85,7 @@ Nu is het tijd om de `Luma CRM Schema` met de API. Als u deze oefening wilt over
 Laten we eerst de `meta:altId` van de `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen, enkel zoals u in [!DNL Postman] les.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Selecteer **Verzenden** knop
 1. Je moet 200 reacties krijgen
@@ -147,7 +146,7 @@ Nu zult u een dataset voor Profiel toelaten gebruikend API. Nogmaals, als u het 
 Eerst moeten we de `id` van de `Luma CRM Dataset`:
 
 1. Open [!DNL Postman]
-1. Als je de afgelopen 24 uur geen aanvraag hebt ingediend, zijn je autorisatietokens waarschijnlijk verlopen. De aanvraag openen **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** en selecteert u **Verzenden** om nieuwe JWT en Tokens van de Toegang aan te vragen, enkel zoals u in [!DNL Postman] les.
+1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Selecteer **Verzenden** knop
 1. Je moet 200 reacties krijgen
