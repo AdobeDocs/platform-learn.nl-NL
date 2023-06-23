@@ -1,11 +1,12 @@
 ---
 title: Bootkamp - Customer Journey Analytics - Een gegevensweergave maken
 description: Customer Journey Analytics - Een gegevensweergave maken
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
+exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -117,7 +118,7 @@ Laten we de paginanaam als een pop-up opgeven. Als dusdanig, te hoeven u om het 
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Persistinstellingen |
 | ----------------- |-------------| --------------------| 
-| Naam (web.webPageDetails.name) | Paginanaam |  |
+| Naam (web.webPageDetails.name) | Paginanaam |          |
 
 Kies vervolgens de dimensie **phoneNumber** en zet het neer op het canvas. De nieuwe naam moet **Telefoonnummer**.
 
@@ -145,7 +146,7 @@ De naam wijzigen om **Paginaweergaven** onder de **Componentinstellingen**.
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Attributie-instellingen |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Paginaweergaven |  |
+| web.webPageDetails.pageViews.value | Paginaweergaven |         |
 
 ![demo](./images/7-v2.png)
 
@@ -161,28 +162,28 @@ Daarna, zult u veel Dimension en Metriek moeten vormen, zoals die in de hieronde
 | Componentnaam die u wilt zoeken | Nieuwe naam | Persistinstellingen |
 | ----------------- |-------------| --------------------| 
 | brandName | Merknaam | Recentste versie, sessie |
-| aanfluiting | Aanroepfunctie |  |
-| call-id | Type oproepinteractie |  |
+| aanfluiting | Aanroepfunctie |          |
+| call-id | Type oproepinteractie |          |
 | callTopic | Het Onderwerp van de vraag | Recentste versie, sessie |
 | ecid | ECID | Recentste versie, Persoon (rapportagevenster) |
 | email | E-mailid | Recentste versie, Persoon (rapportagevenster) |
-| Betalingstype | Betalingstype |  |
+| Betalingstype | Betalingstype |          |
 | Product toevoegen, methode | Product toevoegen, methode | Recentste versie, sessie |
-| Type gebeurtenis | Type gebeurtenis |  |
-| Naam (productListItems.name) | Productnaam |  |
+| Type gebeurtenis | Type gebeurtenis |         |
+| Naam (productListItems.name) | Productnaam |         |
 | SKU | SKU (sessie) | Recentste versie, sessie |
-| Transactie-id | Transactie-id |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| Transactie-id | Transactie-id |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | User Agent | User Agent | Recentste versie, sessie |
-| niveau | Loyaliteitsniveau |  |
-| punten | Levensduur van klant |  |
+| niveau | Loyaliteitsniveau |          |
+| punten | Levensduur van klant |          |
 
 ### METRISCHE
 
 | Componentnaam die u wilt zoeken | Nieuwe naam | Attributie-instellingen |
 | ----------------- |-------------| --------------------| 
-| Aantal | Aantal |  |
-| commerce.order.priceTotal | Omzet |  |
+| Aantal | Aantal |          |
+| commerce.order.priceTotal | Omzet |         |
 
 Uw configuratie zou dan als dit moeten kijken:
 

@@ -5,10 +5,10 @@ breadcrumb-title: Abonneren op gebeurtenissen voor gegevensinvoer
 description: In deze les meldt u zich aan gebeurtenissen voor het opnemen van gegevens door een webhaak in te stellen met de Adobe Developer-console en een hulpprogramma voor het ontwikkelen van online webhaken. U zult deze gebeurtenissen gebruiken om de status van uw taken van de gegevensopname in de verdere lessen te controleren.
 role: Data Engineer
 feature: Data Management
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%

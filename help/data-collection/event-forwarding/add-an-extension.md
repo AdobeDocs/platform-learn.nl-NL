@@ -2,10 +2,10 @@
 title: Een extensie voor het doorsturen van gebeurtenissen toevoegen
 description: Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen.
 feature: Event Forwarding
-kt: 6422
+jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -23,7 +23,6 @@ Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gege
 > * platform launch (clientzijde) is nu **[!DNL tags]**
 > * platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)
 

@@ -3,11 +3,11 @@ title: Denk na bewegend verkopermarkeringen aan gebeurtenis door:sturen
 description: Leer hoe u een client-side leverancierstag voor gegevensdistributie op de server evalueert.
 feature: Event Forwarding, Tags, Integrations
 solution: Data Collection
-kt: 9921
+jira: KT-9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -45,7 +45,7 @@ In ons voorbeeld volgen we conversies met de Facebook-pixel wanneer bezoekers op
 
 ### Gegevens {#data}
 
-Met de bestaande client-side tag, wanneer deze wordt uitgevoerd of uitgevoerd op onze site, wat gebeurt er dan met de gegevens voor ons gebruik? Kunnen wij de gegevens vangen wij in de cliënt, zonder de verkoperstag nodig hebben, zodat kunnen wij het naar gebeurtenis verzenden die door:sturen? Wanneer u [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) Voor andere systemen voor tagbeheer zijn de meeste interactiegegevens van bezoekers beschikbaar voor verzameling en distributie. Maar zijn de gegevens die wij voor ons gebruiksgeval nodig hebben beschikbaar wanneer wij het nodig hebben, waar wij het, en in het formaat nodig hebben wij het-zonder de cliënt-zijverkoperstag nodig hebben? Hieronder volgen nog enkele vragen over de gegevens die u in overweging wilt nemen:
+Met de bestaande client-side tag, wanneer deze wordt uitgevoerd of uitgevoerd op onze site, wat gebeurt er dan met de gegevens voor ons gebruik? Kunnen wij de gegevens vangen wij in de cliënt, zonder de verkoperstag nodig hebben, zodat kunnen wij het naar gebeurtenis verzenden die door:sturen? Wanneer u [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) Voor andere systemen voor tagbeheer zijn de meeste interactiegegevens van bezoekers beschikbaar voor verzameling en distributie. Maar zijn de gegevens die wij voor ons gebruiksgeval nodig hebben beschikbaar wanneer wij het nodig hebben, waar wij het, en in het formaat nodig hebben wij het-zonder de cliënt-zijverkoperstag nodig hebben? Hieronder volgen nog enkele vragen over de gegevens die u in overweging wilt nemen:
 
 - Is er een gebruiker-id van de leverancier vereist met elke gebeurtenis?
 - Zo ja, hoe kan het worden verzameld of gegenereerd zonder de client-side tag?
@@ -102,6 +102,6 @@ Het onderzoeken van en het testen van leveranciers API eindpunten is gemakkelijk
 
 Dit artikel verstrekte een opeenvolging van stappen om een verkoper cliënt-zijmarkering te evalueren en potentieel het server-kant in een gebeurtenis te bewegen die bezit door:sturen. Zie de volgende koppelingen voor meer informatie over verwante onderwerpen:
 
-- [Tagbeheer](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in Adobe Experience Platform
+- [Tagbeheer](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in Adobe Experience Platform
 - [Gebeurtenis doorsturen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) voor verwerking op de server
 - [Terminologie-updates](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) in gegevensverzameling

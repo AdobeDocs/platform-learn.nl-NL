@@ -3,10 +3,10 @@ title: Meerdere entiteitssegmenten maken
 description: In deze video ziet u hoe u uit meerdere entiteiten bestaande segmenten kunt maken in Adobe Experience Platform Segment Builder.  Met segmentatie over meerdere entiteiten, of segmentatie over klassen, kunt u segmenten samenstellen die gegevens combineren op basis van meerdere XDM-klassen.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

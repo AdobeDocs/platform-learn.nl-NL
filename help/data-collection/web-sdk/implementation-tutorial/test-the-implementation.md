@@ -4,14 +4,14 @@ description: De implementatie testen
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: e2213c23-d395-4c57-8c6c-0319cd0fb0ac
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -74,8 +74,8 @@ U moet misschien een paar minuten wachten, maar u zou spoedig aanwijzingen moete
 
 ## De extensie Adobe Experience Platform Debugger gebruiken
 
-Voor meer inzicht in hoe uw implementatie zich zowel op browser als op Adobe servers gedraagt, controleer de browser van Foutopsporing van Adobe Experience Platform browser uitbreiding!
+Voor meer inzicht in hoe uw implementatie zowel browser als op Adobe servers gedraagt, controleer de browser van het Adobe Experience Platform Debugger uitbreiding!
 
-[Adobe Experience Platform Debugger-extensie voor Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+[Adobe Experience Platform Debugger extensie voor Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-[Adobe Experience Platform Debugger-extensie voor Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+[Adobe Experience Platform Debugger-extensie voor Firefox](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)

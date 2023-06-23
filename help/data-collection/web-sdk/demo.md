@@ -3,10 +3,10 @@ title: Demo van Adobe Experience Platform Web SDK en Edge Network
 description: Zie Adobe Experience Platform Web SDK en Edge Network in actie, met één oproep aan Adobe om gegevens naar Experience Platform, Analytics, Audience Manager en Target te verzenden.
 landing-page-description: Bekijk een demo van Web SDK en Edge Network in actie, met één oproep aan Adobe om gegevens te verzenden naar Experience Platform, Analytics, Audience Manager en Target.
 short-description: Bekijk een demo van Web SDK en Edge Network in actie, met één oproep aan Adobe om gegevens te verzenden naar Experience Platform, Analytics, Audience Manager en Target.
-kt: 5206
+jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 74%

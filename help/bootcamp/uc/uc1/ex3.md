@@ -1,15 +1,15 @@
 ---
 title: Het Profiel van de Klant Van Bootkamp - In real time - creeer een segment - UI
 description: Het Profiel van de Klant Van Bootkamp - In real time - creeer een segment - UI
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 37d4a5e8-e2bc-4c8c-a74f-09f74ea79962
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,11 +21,11 @@ In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwe
 
 Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
 Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
 Ga in het menu aan de linkerkant naar **Segmenten**. Op deze pagina ziet u een overzicht van alle bestaande segmenten. Klik op de knop **+ Segment maken** om een nieuw segment te maken.
 

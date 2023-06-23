@@ -5,10 +5,10 @@ breadcrumb-title: De grootste streaminggegevens
 description: In deze les, zult u gegevens in Experience Platform stromen gebruikend het Web SDK.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 0%
@@ -82,7 +82,6 @@ Eerst zullen wij de datastream vormen. Een gegevensstroom vertelt het netwerk va
 Om uw [!UICONTROL datastream]:
 
 1. Aanmelden bij [Gebruikersinterface voor gegevensverzameling Experience Platforms](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. Selecteren **[!UICONTROL DataStreams]** in de linkernavigatie
@@ -103,7 +102,6 @@ In het volgende scherm geeft u op waar u gegevens wilt verzenden. Gegevens verze
 1. Voor **[!UICONTROL Gebeurtenisgegevens]**, selecteert u `Luma Web Events Dataset`
 1. Als u andere toepassingen van Adobe gebruikt, voel vrij om de andere secties te onderzoeken om te zien welke informatie in de Configuratie van de Rand van deze andere oplossingen wordt vereist. Herinner me, werd SDK van het Web ontwikkeld niet alleen om gegevens in Experience Platform te stromen, maar ook om alle vorige bibliotheken te vervangen JavaScript die door andere toepassingen van Adobe worden gebruikt. De configuratie van de Rand wordt gebruikt om de rekeningsdetails van elke toepassing te specificeren waarnaar u de gegevens wilt verzenden.
 1. Selecteren **[!UICONTROL Opslaan]**
-
    ![De gegevensstroom configureren en opslaan](assets/websdk-edgeConfig-addEnvironment.png)
 
 Zodra de Configuratie van de Rand heeft bewaard, zal het resulterende scherm drie milieu&#39;s voor Ontwikkeling, het Opvoeren, en Productie tonen zijn gecreeerd. Er kunnen extra ontwikkelomgevingen worden toegevoegd:
@@ -124,7 +122,6 @@ Een eigenschap maken:
 1. Als de **[!UICONTROL Naam]**, enter `Luma Platform Tutorial` (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf dit leerprogramma nemen)
 1. Als de **[!UICONTROL Domeinen]**, enter `enablementadobe.com` (later toegelicht)
 1. Selecteren **[!UICONTROL Opslaan]**
-
    ![Eigendomsdetails](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -248,7 +245,7 @@ Zoals u kunt zien op het tabblad [!UICONTROL Publishing Flow] screen, is er veel
 
 ## De gegevens in de aanvraag valideren
 
-### Foutopsporing voor Adobe Experience Platform toevoegen
+### Het Adobe Experience Platform Debugger toevoegen
 
 Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
 
@@ -281,7 +278,6 @@ Foutopsporing voor Experience Platform heeft een coole functie waarmee u een bes
 1. Ga nu naar **[!UICONTROL Starten]** in de linkernavigatie
 1. Selecteer het tabblad Configuratie
 1. Rechts van waar het u toont **[!UICONTROL Pagina-insluitcodes]**, opent u de **[!UICONTROL Handelingen]** vervolgkeuzelijst en selecteert u **[!UICONTROL Vervangen]**
-
    ![Handelingen selecteren > Vervangen](assets/websdk-debugger-replaceLibrary.png)
 1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing in uw beschikbare eigenschappen en milieu&#39;s van de Lancering trekken. Selecteer uw `Luma Platform Tutorial` eigenschap
 1. Selecteer uw `Development` milieu
@@ -364,7 +360,6 @@ Op de **[!UICONTROL Gegevenselementen]** pagina:
 1. Selecteer `web.webPageDetails.name` field
 1. Als de **[!UICONTROL Waarde]**, selecteert u het pictogram om de selectie van het gegevenselement modaal te openen en uw `Page Name` gegevenselement
 1. Selecteren **[!UICONTROL Opslaan in bibliotheek]**
-
    ![De paginanaam toewijzen aan het gegevenselement XDM Object](assets/websdk-property-dataElement-createXDMObject.png)
 
 Hetzelfde proces wordt gebruikt om extra aangepaste gegevens op uw website toe te wijzen aan XDM-velden.

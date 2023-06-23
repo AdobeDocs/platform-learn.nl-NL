@@ -2,10 +2,10 @@
 title: Overzicht van het doorsturen van gebeurtenissen
 description: Leer hoe door het doorsturen van gebeurtenissen gegevensinzameling wordt gecentraliseerd, de hoeveelheid code wordt verminderd die in uw web en mobiele apps wordt vereist, en gegevens naar niet-Adobe-oplossingen worden gestreamd via Adobe Experience Platform Edge Network.
 feature: Event Forwarding
-kt: 6419
+jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 45%
@@ -23,7 +23,6 @@ Leer hoe door het doorsturen van gebeurtenissen gegevensinzameling wordt gecentr
 > * platform launch (clientzijde) is nu **[!DNL tags]**
 > * platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331937?quality=12&learn=on)
 

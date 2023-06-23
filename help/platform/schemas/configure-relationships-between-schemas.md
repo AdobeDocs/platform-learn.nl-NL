@@ -3,10 +3,10 @@ title: Relaties tussen schema's configureren
 description: Deze video toont hoe te om een verhouding tussen twee schema's in Adobe Experience Platform te vormen. De verhoudingen staan u toe om één dataset als raadplegingslijst voor een andere te gebruiken.
 role: Data Architect
 feature: Schemas
-kt: 7935
+jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

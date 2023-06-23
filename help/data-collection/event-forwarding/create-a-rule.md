@@ -2,10 +2,10 @@
 title: Creeer een gebeurtenis-door:sturen regel
 description: Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen.
 feature: Event Forwarding, Tags
-kt: 6423
+jira: KT-6423
 thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -23,7 +23,6 @@ Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens t
 > * platform launch (clientzijde) is nu **[!DNL tags]**
 > * platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331942?quality=12&learn=on)
 

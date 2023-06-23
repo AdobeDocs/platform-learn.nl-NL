@@ -1,11 +1,12 @@
 ---
 title: Bootkamp - Customer Journey Analytics - Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics - Brazilië
 description: Bootkamp - Customer Journey Analytics - Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics - Brazilië
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
+exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%

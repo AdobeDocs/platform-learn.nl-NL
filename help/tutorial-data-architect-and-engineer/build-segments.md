@@ -5,10 +5,10 @@ breadcrumb-title: Segmenten maken
 description: In deze les, zullen wij sommige segmenten bouwen die op de profielgegevens worden gebaseerd die wij in de vorige lessen hebben ingegeten.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -67,7 +67,6 @@ In deze oefening, zullen wij een segment voor klanten creëren die het zelfde pr
 1. Sleep de **[!UICONTROL Aankopen]** gebeurtenistype op het canvas _twee afzonderlijke tijden_
 1. Het klokpictogram tussen beide selecteren **[!UICONTROL Aankopen]** en kies &quot;binnen 30 dagen&quot;
 1. Bevestig dat uw segmentdefinitie op dit punt leest **&quot;Neem een publiek op dat minstens 1 aankoopgebeurtenis heeft en dat vervolgens binnen 30 dagen minstens 1 aankoopgebeurtenis heeft&quot;**
-
    ![Twee aankopen binnen 30 dagen](assets/segment-twoPurchases.png)
 1. Wijzig nu het gebeurtenisfilter in `sku`
 1. Sleep het veld SKU naar de tweede aankoopgebeurtenis

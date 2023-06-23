@@ -1,13 +1,14 @@
 ---
 title: Bootkamp - Overvloeien fysiek en digitaal - Journey Optimizer Maak een reis en duw - Brazilnotification
 description: Bootkamp - Overvloeien fysiek en digitaal - Journey Optimizer Maak een reis en duw - Brazilnotification
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
@@ -149,7 +150,7 @@ Agora você preca definir os valores para cada parâmetro de ação. Siga esta t
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Para definir esses valores, clique no ícone **Bewerken**.
 

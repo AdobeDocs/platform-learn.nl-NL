@@ -3,10 +3,10 @@ title: Overzicht van Adobe Experience Platform Debugger
 description: Leer hoe u met de Adobe Experience Platform Debugger Chrome-extensie en de Firefox-invoegtoepassing fouten kunt opsporen in uw webimplementaties van de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags en meer.
 landing-page-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
 short-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
-kt: 4723
+jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 58%
@@ -15,7 +15,7 @@ ht-degree: 58%
 
 # Overzicht van Adobe Experience Platform Debugger
 
-Meer informatie over Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [Firefox-invoegtoepassing](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) helpt u bij het opsporen van fouten in uw webimplementaties van de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags en meer.
+Meer informatie over het Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [Firefox-invoegtoepassing](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) helpt u bij het opsporen van fouten in uw webimplementaties van de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags en meer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 

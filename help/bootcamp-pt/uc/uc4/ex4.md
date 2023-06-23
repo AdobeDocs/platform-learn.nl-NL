@@ -1,11 +1,12 @@
 ---
 title: Bootkamp - Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace - Brazilië
 description: Bootkamp - Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace - Brazilië
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: d56128af-dd1e-47ea-922f-85418e9da687
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 0%
@@ -133,7 +134,7 @@ A criação de filtros ajudará os usuários de negócios a iniciar o analytics 
 
 1. Mídia Própria, Mídia Paga,
 2. Visitas novas x recorrentes
-3. Clientes com carrinho stappen
+3. Clientes com carrinho stoponado
 
 Esses filtros podem ser criados antes ou durante a parte de análise (o que você fará no próximo uitoefício).
 

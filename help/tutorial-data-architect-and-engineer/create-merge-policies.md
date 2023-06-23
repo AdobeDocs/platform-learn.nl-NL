@@ -5,13 +5,13 @@ breadcrumb-title: Samenvoegbeleid maken
 description: In deze les, zult u samenvoegbeleid creëren om te bepalen hoe de gegevens in profielen samenvoegen.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -73,8 +73,8 @@ Wat gebeurt er als dat standaardsamenvoegbeleid u niet bevalt? Wat als Luma besl
 1. Slepen en neerzetten `Luma Loyalty Dataset` en `Luma CRM Dataset` aan de **[!UICONTROL Gegevensset]** deelvenster.
 1. Controleer of `Luma Loyalty Dataset` is bovenaan door te slepen en neer te zetten boven de `Luma CRM Dataset`
 1. Selecteer **[!UICONTROL Opslaan]** knop
-<!--do i need to explain Private Graph? Is that GA?-->
-![Samenvoegingsbeleid](assets/mergepolicies-newPolicy.png)
+   <!--do i need to explain Private Graph? Is that GA?-->
+   ![Samenvoegingsbeleid](assets/mergepolicies-newPolicy.png)
 
 ## Het samenvoegingsbeleid valideren
 

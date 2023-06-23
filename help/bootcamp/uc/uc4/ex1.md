@@ -1,12 +1,12 @@
 ---
 title: Bootkamp - Customer Journey Analytics - Customer Journey Analytics 101
 description: Bootkamp - Customer Journey Analytics - Customer Journey Analytics 101
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 0%
@@ -75,11 +75,11 @@ Meld u aan bij Adobe Experience Platform door naar deze URL te gaan: [https://ex
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensinname](../uc1/images/home.png)
+![Gegevensopname](../uc1/images/home.png)
 
 Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Prod]** in de rechterbovenhoek van het scherm. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![Gegevensinname](../uc1/images/sb1.png)
+![Gegevensopname](../uc1/images/sb1.png)
 
 Bekijk deze schema&#39;s en datasets in Adobe Experience Platform alstublieft.
 

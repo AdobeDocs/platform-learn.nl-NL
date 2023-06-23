@@ -3,35 +3,39 @@ title: Experience Platform-API's verifiëren en openen
 description: Leer hoe u toegang krijgt tot Adobe Experience Platform-API's.
 role: Developer
 feature: API
-kt: 3688
+jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 15%
+source-wordcount: '334'
+ht-degree: 11%
 
 ---
 
 # Verifiëren en toegang [!DNL Experience Platform] API&#39;s
 
-Als u aanvragen wilt indienen bij Adobe Experience Platform API&#39;s, hebt u een Experience Platform-ontwikkelaarsaccount nodig.
+Leer hoe u aan de slag gaat met Adobe Experience Platform API&#39;s. Deze zelfstudie begeleidt u door het proces om verificatiereferenties te maken en Experience Platform API-aanvragen te maken.
 
-## Een project maken in Adobe Developer Console en een Postman-omgeving exporteren
+## Een project maken in Adobe Developer Console en een Postman-omgeving exporteren{#export-integration-details-to-postman}
 
-[[!DNL Postman]](https://www.postman.com/) is een hulpmiddel waarmee ontwikkelaars snel en gemakkelijk kunnen communiceren met Adobe Experience Platform API&#39;s.
+[[!DNL Postman]](https://www.postman.com/) is een externe toepassing waarmee ontwikkelaars snel en gemakkelijk kunnen communiceren met Adobe Experience Platform API&#39;s.
 
-Adobe Developer Console **Exportdetails voor Postman** biedt een eenvoudige manier om alle accountgegevens te exporteren die nodig zijn voor toegang tot en interactie met een Experience Platform-API in één Postman-milieubestand. Hierdoor hoeft u geen waarden meer te kopiëren en te plakken van Adobe Developer Console naar Postman.
-
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
+[Adobe Developer Console](https://developer.adobe.com/console/home) **Exportdetails voor Postman** biedt een eenvoudige manier om de accountgegevens te exporteren die nodig zijn voor toegang tot en interactie met een Experience Platform-API&#39;s in één Postman-milieubestand. Hierdoor hoeven waarden niet meer van Adobe Developer Console naar Postman te worden gekopieerd en geplakt.
 
 >[!IMPORTANT]
 >
->Na het creëren van uw API referentie, moet een Beheerder van het Systeem bij uw bedrijf de referentie met een rol van het Experience Platform associëren.
+>Om toegang te krijgen tot [Adobe Developer Console](https://developer.adobe.com/console/home)u moet een van de [Systeembeheerder](https://helpx.adobe.com/enterprise/using/admin-roles.html) of [Ontwikkelaar](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in de [Adobe Admin Console](https://adminconsole.adobe.com).
+>
+> Nadat u de API-referentie hebt gemaakt, moet een systeembeheerder de referentie aan een rol in het Experience Platform koppelen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
 
-## Een toegangstoken genereren met Postman
+
+
+## Een toegangstoken genereren met Postman{#generate-an-access-token-with-postman}
 
 Gebruik de [Adobe Identity Management Service-API&#39;s](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims?lang=nl) om een toegangstoken te verkrijgen voor toegang tot de Adobe Experience Platform API&#39;s.
 
@@ -40,12 +44,12 @@ Gebruik de [Adobe Identity Management Service-API&#39;s](https://github.com/adob
 
 ## Interactie met Experience Platform-API&#39;s met Postman
 
-Ontdek de interactie met Adobe Experience Platform API&#39;s met de [Adobe-API voor Experience Platform Postman-verzamelingen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [Adobe Developer Console-omgevingsvariabelen](#export-adobe-io-integration-details-to-postman) en [gegenereerd toegangstoken](#generate-an-access-token-with-postman).
+Ontdek de interactie met Adobe Experience Platform API&#39;s met de [Adobe-API voor Experience Platform Postman-verzamelingen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [Adobe Developer Console-omgevingsvariabelen](#export-integration-details-to-postman) en [gegenereerd toegangstoken](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
 
-## Aanvullende bronnen
+## Bronnen waarnaar in deze video&#39;s wordt verwezen
 
 * [Adobe Developer Console](https://developer.adobe.com/console/home)
 * [Adobe Experience Platform Postman-voorbeelden](https://github.com/adobe/experience-platform-postman-samples)

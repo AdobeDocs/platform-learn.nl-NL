@@ -1,15 +1,15 @@
 ---
 title: Bootkamp - Echte-tijd CDP - bouw een segment en neem actie - verzend uw segment naar DV360
 description: Bootkamp - Echte-tijd CDP - bouw een segment en neem actie - verzend uw segment naar DV360
-kt: 5342
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![Gegevensopname](./images/home.png)
 
 Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
 
-![Gegevensinname](./images/sb1.png)
+![Gegevensopname](./images/sb1.png)
 
 Ga in het linkermenu naar **Doelen** en ga vervolgens naar **Catalogus**. Dan zie je de **Doelcatalogus**. In **Doelen**, klikt u op **Segmenten activeren** op de **Facebook Aangepast publiek** kaart.
 

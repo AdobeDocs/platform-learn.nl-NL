@@ -2,10 +2,10 @@
 title: Een gegevensstroom instellen voor het doorsturen van gebeurtenissen
 description: Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen.
 feature: Event Forwarding, Datastreams
-kt: 6421
+jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -23,7 +23,6 @@ Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen.
 > * platform launch (clientzijde) is nu **[!DNL tags]**
 > * platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
 

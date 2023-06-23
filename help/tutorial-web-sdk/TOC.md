@@ -1,18 +1,18 @@
 ---
-user-guide-title: Zelfstudie Adobe Experience Cloud implementeren met Web SDK
-breadcrumb-title: Zelfstudie over SDK op het web
+user-guide-title: Tutorial voor Adobe Experience Cloud met Web SDK implementeren
+breadcrumb-title: Tutorial voor Web SDK
 solution: Data Collection
-kt: 6953
+jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 4%
+ht-degree: 30%
 
 ---
 
 
-# Adobe Experience Cloud implementeren met Web SDK-zelfstudie. {#implement-web-sdk}
+# Tutorial voor Adobe Experience Cloud met Web SDK implementeren. {#implement-web-sdk}
 
 + [Overzicht van tutorial](overview.md)
 + Eerste configuratie {#initial-configuration}
