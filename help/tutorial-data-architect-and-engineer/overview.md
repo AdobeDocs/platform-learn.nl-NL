@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Platform is in de eerste plaats gebaseerd op de ingebouwde API. Hoewel de interf
 ### Technologieën van derden
 
 Hoewel u in deze zelfstudie meerdere technologieën gebruikt, blijft u vrijwel volledig binnen het Adobe-ecosysteem. In uw eigen implementatie van het Platform, zult u waarschijnlijk Platform met specifieke derdetechnologieën integreren. Om dit leerprogramma relevant voor alle klanten te houden, zullen wij een generischere implementatie gebruiken.
+
+## Lesbestanden bijwerken
+
+* juni 2023: Bijgewerkt om een nieuwe machtigingsworkflow op te nemen en de referentie van OAuth Server-to-Server-API te gebruiken
+
 
 Laten we nu overgaan tot de eerste les—[machtigingen configureren](configure-permissions.md).
