@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '943'
 ht-degree: 8%
 
 ---
@@ -130,6 +130,7 @@ ht-degree: 8%
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van Unieregelingen](/help/platform/profiles/union-schemas-overview.md)
+   + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
    + [Inleiding tot de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Identiteitsgegevens in privacyverzoeken](/help/platform/privacy/identity-data-in-privacy-requests.md)
