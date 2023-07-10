@@ -1,8 +1,9 @@
 ---
 title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag kunt configureren in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -35,7 +36,6 @@ In deze les zult u:
 1. Een nieuwe eigenschap voor mobiele tags maken:
    1. In de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/){target="_blank"}, selecteert u **[!UICONTROL Tags]** in de linkernavigatie
    1. Selecteren **[!UICONTROL Nieuwe eigenschap]**
-
       ![een tag-eigenschap maken](assets/mobile-tags-new-property.png).
    1. Voor de **[!UICONTROL Naam]**, enter `Mobile SDK Course`.
    1. Voor de **[!UICONTROL Platform]**, selecteert u **[!UICONTROL Mobiel]**.

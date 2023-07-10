@@ -1,9 +1,9 @@
 ---
 title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Als u gebeurtenissen wilt doorsturen in Adobe Experience Platform, moeten gegeve
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ Aan dit eind van deze les, zult u kunnen:
 * Een softwarelicentie die het doorsturen van gebeurtenissen omvat. Het doorsturen van gebeurtenissen is een betaalde eigenschap van de Inzameling van Gegevens. Neem contact op met uw Adobe-accountteam voor meer informatie.
 * Gebeurtenis doorsturen ingeschakeld in uw Experience Cloud-organisatie.
 * Gebruikersmachtiging voor het doorsturen van gebeurtenissen. (In [Admin Console](https://adminconsole.adobe.com/), onder het Adobe Experience Platform Launch-product, machtigingsitems voor[!UICONTROL Platforms] > [!UICONTROL Rand] en alle [!UICONTROL Eigendomsrechten]). Wanneer u het geneesmiddel heeft gekregen, zie [!UICONTROL Gebeurtenis doorsturen] in de linkernavigatie van de interface van de Inzameling van Gegevens:
-   ![Eigenschappen van Event Forwarding](assets/event-forwarding-menu.png)
+  ![Eigenschappen van Event Forwarding](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web of Mobile SDK die wordt geconfigureerd om gegevens naar Edge Network te verzenden. U moet de volgende lessen uit deze zelfstudie hebben geleerd:
 
@@ -55,13 +55,13 @@ Aan dit eind van deze les, zult u kunnen:
       * [Een XDM-schema configureren](configure-schemas.md)
       * [Naamruimte configureren](configure-identities.md)
       * [Een gegevensstroom configureren](configure-datastream.md)
+
    * Configuratie van tags
 
       * [Web SDK-extensie installeren](install-web-sdk.md)
       * [Gegevenselementen maken](create-data-elements.md)
       * [Een labelregel maken](create-tag-rule.md)
       * [Valideren met Adobe Experience Platform Debugger](validate-with-debugger.md)
-
 
 
 ## Een eigenschap voor het doorsturen van gebeurtenissen maken
@@ -91,7 +91,6 @@ Om Doel in de gegevensstroom te vormen:
    ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
 
 1. Selecteren **[!UICONTROL Service toevoegen]**
-
    ![Een service toevoegen aan de gegevensstroom](assets/event-forwarding-datastream-addService.png)
 1. Selecteren **[!UICONTROL Gebeurtenis doorsturen]** als de **[!UICONTROL Service]**
 
@@ -183,6 +182,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van de E
 
 
    >[!TIP]
+   >
    Wanneer u met uw eigen website werkt, kunt u het XDM-objectpad vinden met de netwerkgereedschappen van uw webbrowser en filteren op `/ee` verzoeken, het baken openen [!UICONTROL **Payload**] en naar de gewenste variabele te gaan. Klik vervolgens met de rechtermuisknop en selecteer &quot;Pad eigenschap kopiëren&quot;. Hier volgt een voorbeeld voor de Viewport-hoogte van de browser:
    ![Gebeurtenis die XDM-pad doorstuurt](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoon
 Creeer een bibliotheek en bouw alle veranderingen in uw gebeurtenis-door:sturen ontwikkelomgeving zoals u normaal in een markeringsbezit zou doen.
 
 >[!NOTE]
+>
 Als u het Staging en de productie gebeurtenis-door:sturen eigenschappen aan uw gegevensstroom niet hebt verbonden, zult u het milieu van de Ontwikkeling als enige optie zien om een bibliotheek aan te bouwen.
 
 ![Gebeurtenis-door:sturen regel opslaan](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ Gefeliciteerd! U hebt gebeurtenis gevormd door:sturen!
 [Volgende: ](conclusion.md)
 
 >[!NOTE]
+>
 Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

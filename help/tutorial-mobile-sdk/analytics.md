@@ -1,8 +1,9 @@
 ---
 title: Analysetoewijzing
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
+solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%

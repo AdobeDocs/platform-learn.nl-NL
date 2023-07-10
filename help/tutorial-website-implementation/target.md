@@ -3,7 +3,7 @@ title: Adobe Target met tags toevoegen
 description: Leer hoe u Adobe Target implementeert met tags met at.js, een aanvraag voor het laden van een pagina, parameters, een aanvraag voor een bestelling en aangepaste code voor kop- en voetteksten. Deze les maakt deel uit van de zelfstudie Experience Cloud in websites implementeren.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 0%
@@ -23,7 +23,6 @@ In deze les zullen we de [Adobe Target-extensie](https://experienceleague.adobe.
 > * platform launch (clientzijde) is nu **[!DNL tags]**
 > * platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
-
 
 ## Leerdoelen
 
@@ -363,7 +362,7 @@ Hier volgt een optionele oefening als u een klant van de Premium van het Doel be
 
 1. Ga naar **[!UICONTROL Beheer > Eigenschappen]**
 
-1. Identificeer het bezit dat u wilt gebruiken en klik het **[!UICONTROL &lt;/>]** (of maak een nieuwe eigenschap)
+1. Identificeer het Bezit dat u wilt gebruiken en klik het **[!UICONTROL &lt;/>]** (of maak een nieuwe eigenschap)
 
 1. Kopieer het codefragment in het dialoogvenster `<script></script>` naar uw klembord
 
@@ -388,7 +387,6 @@ Hier volgt een optionele oefening als u een klant van de Premium van het Doel be
    ![Klik op Wijzigingen behouden](images/target-addATProperty-keepChanges.png)
 
 1. Klikken **[!UICONTROL Opslaan in bibliotheek en samenstellen]**
-
    ![Klik op Opslaan en bouwen naar bibliotheek](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -566,7 +564,7 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 
 Er zijn zeldzame gevallen waarin u een ander doelverzoek moet indienen dan het verzoek om pagina te laden en de bestelling te bevestigen. Soms worden bijvoorbeeld belangrijke gegevens die u voor personalisatie wilt gebruiken, niet op de pagina gedefinieerd vóór de insluitcodes van de tag. Deze kunnen onderaan op de pagina worden gecodeerd of worden geretourneerd door een asynchrone API-aanvraag. Deze gegevens kunnen naar Target worden verzonden met behulp van een extra aanvraag, maar het is niet optimaal om deze aanvraag voor de levering van inhoud te gebruiken omdat de pagina al zichtbaar is. Deze gegevens kunnen worden gebruikt om het bezoekersprofiel te verrijken voor later gebruik (met behulp van profielparameters) of om de Recommendations-catalogus te vullen.
 
-In deze omstandigheden kunt u de handeling Aangepaste code in de Core-extensie gebruiken om een aanvraag uit te voeren met de opdracht [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) en [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) methoden. Dit lijkt sterk op wat u zojuist deed in de [Bevestigingsaanvraag voor bestelling](#order-confirmation-request) oefening, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Zorg ervoor dat u de **[!UICONTROL Doel laden]** handeling voordat u doelverzoeken vanuit aangepaste code maakt.
+In deze omstandigheden kunt u de handeling Aangepaste code in de Core-extensie gebruiken om een aanvraag uit te voeren met de opdracht [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) en [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) methoden. Dit lijkt sterk op wat u zojuist deed in de [Bevestigingsaanvraag voor bestelling](#order-confirmation-request) oefening, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Zorg ervoor dat u de **[!UICONTROL Doel laden]** handeling voordat u doelverzoeken vanuit aangepaste code maakt.
 
 ## Bibliotheekkoptekst en Bibliotheekvoettekst
 

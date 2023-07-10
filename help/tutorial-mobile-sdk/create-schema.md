@@ -1,8 +1,9 @@
 ---
 title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
+feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -113,9 +114,9 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 >[!NOTE]
 >
->Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. Als dit handig is, kunt u een schema zien als een lege gegevenslaag. In uw app vult u de relevante waarden op het juiste moment in.
+>Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
 >
->De `Consumer Experience Event` heeft een gegevenstype genaamd `Web information`, waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is deze functie niet gelijk aan een mobiele app, dus maakt u uw eigen app.
+>De `Consumer Experience Event` heeft een gegevenstype genaamd `Web information`, waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
 
 ## Een aangepast gegevenstype maken
 

@@ -3,10 +3,12 @@ user-guide-title: Experience Makers Bootkamp
 breadcrumb-title: Experience Makers Bootkamp
 user-guide-description: Een praktische zelfstudie over veel aspecten van Adobe Experience Platform.
 audience: all
+role: User,Developer
+level: Beginner,Intermediate
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 3%

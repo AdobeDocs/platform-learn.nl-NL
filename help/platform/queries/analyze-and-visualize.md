@@ -1,12 +1,12 @@
 ---
 title: Analyseer en visualiseer omni-channel inzichten in Tableau gebruikend de Dienst van de Vraag
 description: Leer hoe u de Dienst van de Vraag van Adobe Experience Platform met externe hulpmiddelen van de gegevensvisualisatie kunt gebruiken gebruikend een voorbeeld van de kanaalanalyse.
-role: Data Engineer, User
 feature: Queries
+role: Data Engineer
 jira: KT-10191
 thumbnail: 342115.jpeg
 exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 8%

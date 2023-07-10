@@ -1,8 +1,9 @@
 ---
 title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 0%
@@ -36,7 +37,6 @@ Voordat u de privacy-instellingen gaat configureren en de regels voor het instel
 >1. Organisaties gebruiken een Platform voor beheer van toestemming (of CMP) om de toestemmingskeuzes van een bezoeker wettelijk te documenteren en te beheren voordat ze bezoekersgegevens verzamelen, delen of verkopen van online bronnen zoals websites en apps.
 >
 >2. De aanbevolen methode voor het injecteren van een CMP is rechtstreeks via broncode vóór het script voor tagbeheer.
-
 
 ### Klaro configureren
 

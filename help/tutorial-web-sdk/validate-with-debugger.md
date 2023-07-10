@@ -1,22 +1,22 @@
 ---
 title: Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
-description: Leer hoe u uw Platform Web SDK-implementatie kunt valideren met Adobe Experience Platform Debugger. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-feature: Debugger
+description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 0%
+source-wordcount: '1073'
+ht-degree: 1%
 
 ---
 
 # Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
 
-Leer hoe u uw Platform Web SDK-implementatie kunt valideren met Adobe Experience Platform Debugger.
+Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen.
 
 Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
 
-* [Firefox-extensie](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Firefox-extensie](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Als u foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
@@ -36,7 +36,7 @@ Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 
 ## Vereisten
 
-U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} en hebben de volgende lessen voltooid in de zelfstudie:
+U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en hebben in de zelfstudie de volgende lessen getrokken:
 
 * [Machtigingen configureren](configure-permissions.md)
 * [Een XDM-schema configureren](configure-schemas.md)

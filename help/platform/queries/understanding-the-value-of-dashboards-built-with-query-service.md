@@ -1,12 +1,12 @@
 ---
 title: Begrijpen van de Waarde van Dashboards die met de Dienst van de Vraag worden gebouwd
 description: Met Adobe Experience Platform kunnen merken alle opgeslagen datasets&mdash opnemen, opslaan, structureren en ophalen, inclusief gedrag, CRM, verkooppuntgegevens en meer. Gebruikend de Dienst van de Vraag van het Experience Platform, kunnen de merken op deze datasets vragen en specifieke vragen over de zaken beantwoorden en dan beginnen het produceren van impactful inzichten. Deze video toont de waarde aan van het bouwen van dashboards in bedrijfsintelligentie (BI) hulpmiddelen gebruikend de Dienst van de Vraag.
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%

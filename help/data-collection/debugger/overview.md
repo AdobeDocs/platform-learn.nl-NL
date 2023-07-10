@@ -3,10 +3,13 @@ title: Overzicht van Adobe Experience Platform Debugger
 description: Leer hoe u met de Adobe Experience Platform Debugger Chrome-extensie en de Firefox-invoegtoepassing fouten kunt opsporen in uw webimplementaties van de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags en meer.
 landing-page-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
 short-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
+feature: Debugger
+role: Data Engineer
+level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 58%

@@ -2,10 +2,11 @@
 title: Gegevens voorbereiden
 description: Leer hoe te om, gegevens van veelvoudige datasets schoon te maken voor te bereiden en te combineren om een nieuwe dataset tot stand te brengen gebruikend CTAS (Creeer Lijst AS) en SQL van de Vonk functies voor het melden en dashboarding.
 feature: Queries
+role: Data Engineer
 jira: KT-8005
 thumbnail: 333699.jpg
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 7%

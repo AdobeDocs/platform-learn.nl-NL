@@ -1,11 +1,11 @@
 ---
 title: Naamruimte configureren
 description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-feature: Identities
+feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 Maak nu een naamruimte voor de Luma CRM-id:
 
-1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
 1. Selecteer de sandbox die u gebruikt voor de zelfstudie
 
    >[!NOTE]

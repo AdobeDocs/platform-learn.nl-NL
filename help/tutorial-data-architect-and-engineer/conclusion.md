@@ -6,7 +6,7 @@ description: In deze les, zult u Adobe Experience Platform gebruikerstoestemming
 role: Data Architect, Data Engineer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Ik stel voor dat u het vasthoudt en gebruikt voor verdere experimenten met Platf
 
 De belangrijkste bronnen:
 
-* [Zelfstudies voor Experience Platforms](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Zelfstudies voor Experience Platforms](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Cursussen Experience League](https://experienceleague.adobe.com/#dashboard/learning)
 

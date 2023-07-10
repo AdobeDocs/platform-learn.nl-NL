@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 role: Developer, Data Engineer
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: 951987c5c360aca005c78a976a6090d088f36455
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3321'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Veel wettelijke privacyverordeningen hebben vereisten ingevoerd voor actieve en 
 > * platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
 > * platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-configuraties zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
 
 Deze zelfstudie laat zien hoe u toestemmingsgegevens die zijn verkregen van een CMP (Consent Management Platform) implementeert en activeert met de extensie SDK van het Web Platform in Gegevensverzameling. We doen dit met zowel de Adobe-standaarden als de IAB TCF 2.0 toestemmingsstandaard, met OneTrust of SourcePoint als voorbeeld-CMP&#39;s.
 
@@ -231,7 +230,7 @@ Selecteer de blauwe knop Opslaan om de handeling op te slaan en de blauwe knop O
 
 ### Stap 3: Opslaan in bibliotheek en samenstellen
 
-Als u de [werkbibliotheek](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) voorwaarde, hebt u reeds deze veranderingen opgeslagen en uw ontwikkelingsbibliotheek gebouwd:
+Als u de [werkbibliotheek](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) voorwaarde, hebt u reeds deze veranderingen opgeslagen en uw ontwikkelingsbibliotheek gebouwd:
 
 ![](./images/save-library.png)
 

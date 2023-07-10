@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ Met gegevensinvoer via batch kunt u een grote hoeveelheid gegevens tegelijk in A
 **Gegevensengineers** moet u batchgegevens buiten deze zelfstudie invoeren.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over gegevensinvoer:
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -341,6 +342,6 @@ Adobe partners met veelvoudige verkopers ETL om gegevensopname in Experience Pla
 ## Aanvullende bronnen
 
 * [Batchdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Referentie voor API voor batchverwerking](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Referentie voor API voor batchverwerking](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Laten we nu [stroomgegevens met de SDK van het Web](ingest-streaming-data.md)

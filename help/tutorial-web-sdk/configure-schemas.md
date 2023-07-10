@@ -1,11 +1,11 @@
 ---
 title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Alle noodzakelijke levering en gebruikerstoestemmingen voor de Inzameling van Ge
 
 De schema&#39;s XDM zijn de standaardmanier om gegevens in Experience Platform te beschrijven, toestaand alle gegevens die aan de schema&#39;s voldoen om over een organisatie zonder conflicten worden opnieuw gebruikt, of zelfs tussen veelvoudige organisaties worden gedeeld. Zie voor meer informatie de [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en).
 
-In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van het basislijngebied voor het vangen van de gegevens van de Webgebeurtenis op creëren [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}:
+In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van het basislijngebied voor het vangen van de gegevens van de Webgebeurtenis op creëren [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
 1. Zorg ervoor dat u zich in de juiste sandbox bevindt
 
    >[!NOTE]

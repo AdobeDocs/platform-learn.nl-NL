@@ -1,11 +1,11 @@
 ---
 title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en Experience Cloud oplossingen te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-feature: Datastreams
+feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van he
 
 **Een gegevensstroom maken:**
 
-1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
 1. Zorg ervoor dat u zich in de juiste sandbox bevindt
 
    >[!NOTE]

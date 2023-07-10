@@ -1,8 +1,9 @@
 ---
 title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -90,9 +91,9 @@ De verzekering werkt door een URL, of via browser of code QR, te openen die URL 
    ![initiaal](assets/mobile-assurance-enter-pin.png)
 1. Als de verbinding tot stand is gebracht, ziet u gebeurtenissen in de gebruikersinterface van het venster Betrouwbaarheid en een zwevend betrouwbaarheidspictogram in de app.
    * Verzekeringspictogram zwevend.
-      ![verzekering, modaal](assets/mobile-assurance-modal.png)
+     ![verzekering, modaal](assets/mobile-assurance-modal.png)
    * Experience Cloud-gebeurtenissen die worden weergegeven in de webinterface.
-      ![betrouwbaarheidsgebeurtenissen](assets/mobile-assurance-events.png)
+     ![betrouwbaarheidsgebeurtenissen](assets/mobile-assurance-events.png)
 
 Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

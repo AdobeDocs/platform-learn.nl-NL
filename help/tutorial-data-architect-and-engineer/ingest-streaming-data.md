@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Er zijn twee belangrijke taken wij in de interface van de Inzameling van Gegeven
 **Gegevensengineers** streaming gegevens opnemen buiten deze zelfstudie. Wanneer het uitvoeren van het Web van Adobe Experience Platform of Mobiele SDKs, typisch is een Web of een mobiele ontwikkelaar betrokken bij de verwezenlijking van de gegevenslaag en de configuratie van het markeringsbezit.
 
 Voordat u met de oefeningen begint, bekijkt u deze twee korte video&#39;s voor meer informatie over het streamen van gegevensinvoer en Web SDK:
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -454,7 +455,7 @@ Om te bevestigen dat CRM identiteitskaart nu door het Web SDK wordt verzonden:
 
 * [Adobe Experience Cloud implementeren met Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Documentatie voor streaming insluiting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl)
-* [Referentie voor API voor streaming](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Referentie voor API voor streaming](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Geweldig werk! Dat was veel informatie over Web SDK en Starten. Er is veel meer betrokken bij een volledige implementatie, maar dat zijn de basisbeginselen om u te helpen aan de slag te gaan en de resultaten in het Platform te zien.
 

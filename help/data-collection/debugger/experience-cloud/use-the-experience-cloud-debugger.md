@@ -4,9 +4,12 @@ description: Leer hoe u de Adobe Experience Cloud Debugger kunt gebruiken om uw 
 landing-page-description: Leer de Experience Cloud Debugger gebruiken om problemen met uw implementaties op te lossen. Begrijp welke Adobe-oplossingen worden uitgevoerd en welke oproepen deze uitvoeren.
 short-description: Leer de Experience Cloud Debugger gebruiken om problemen met uw implementaties op te lossen. Begrijp welke Adobe-oplossingen worden uitgevoerd en welke oproepen deze uitvoeren.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
+feature: Debugger
+role: Data Engineer
+level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 47%
