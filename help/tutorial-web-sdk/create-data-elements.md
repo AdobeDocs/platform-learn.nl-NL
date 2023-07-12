@@ -3,9 +3,9 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} gegevenslaag en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende vorige stappen in de zelfstudie hebben uitgevoerd
+U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag, en weet hoe te om gegevenselementen in markeringen van verwijzingen te voorzien. U moet de volgende vorige stappen in de zelfstudie hebben uitgevoerd
 
 * [Machtigingen configureren](configure-permissions.md)
 * [Een XDM-schema configureren](configure-schemas.md)
@@ -61,7 +61,7 @@ U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosit
 
 ## Gegevenselementen maken om de gegevenslaag vast te leggen
 
-Voordat u begint met het maken van het XDM-object, moet u de volgende set gegevenselementen maken die zijn toegewezen aan de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} gegevenslaag:
+Voordat u begint met het maken van het XDM-object, moet u de volgende set gegevenselementen maken die zijn toegewezen aan de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag:
 
 1. Ga naar **[!UICONTROL Gegevenselementen]** en selecteert u **[!UICONTROL Gegevenselement toevoegen]** (of **[!UICONTROL Nieuw gegevenselement maken]** als er geen bestaande gegevenselementen zijn in de eigenschap tag)
 
@@ -81,16 +81,16 @@ Voordat u begint met het maken van het XDM-object, moet u de volgende set gegeve
 Voer dezelfde stappen uit om deze vier aanvullende gegevenselementen te maken:
 
 * **`page.pageInfo.server`**  toegewezen aan
-   `digitalData.page.pageInfo.server`
+  `digitalData.page.pageInfo.server`
 
 * **`page.pageInfo.hierarchie1`**  toegewezen aan
-   `digitalData.page.pageInfo.hierarchie1`
+  `digitalData.page.pageInfo.hierarchie1`
 
 * **`user.profile.attributes.username`**  toegewezen aan
-   `digitalData.user.0.profile.0.attributes.username`
+  `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** toegewezen aan
-   `digitalData.user.0.profile.0.attributes.loggedIn`
+  `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`cart.orderId`** toegewezen aan `digitalData.cart.orderId` (u gebruikt dit tijdens het [Analyses instellen](setup-analytics.md) les)
 
@@ -135,10 +135,6 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
 1. Selecteren **[!UICONTROL Opslaan]**
 
    ![Interface voor gegevensverzameling](assets/identity-id-namespace.png)
-
->[!WARNING]
->
->De primaire identiteit is vereist voor alle records die naar Adobe Experience Platform worden verzonden. Door gebrek, wordt identiteitskaart van de Experience Cloud (ECID) gebruikt als primaire identiteit van SDK van het Web van het Platform. Je zou nooit iets willen gebruiken zoals `Luma CRM ID` als primaire identiteit met Web SDK, aangezien het slechts bestaat nadat de gebruiker voor authentiek verklaart en zo niet in alle verslagen beschikbaar zou zijn.
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
@@ -208,10 +204,10 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
 | `page.pageInfo.hierarchie1` | `xdm.content` |
-| `page.pageInfo.pageName` |  |
-| `page.pageInfo.server` |  |
-| `user.profile.attributes.loggedIn` |  |
-| `user.profile.attributes.username` |  |
+| `page.pageInfo.pageName` | |
+| `page.pageInfo.server` | |
+| `user.profile.attributes.loggedIn` | |
+| `user.profile.attributes.username` | |
 
 Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar het Netwerk van de Rand van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
 
