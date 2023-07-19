@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '955'
 ht-degree: 8%
 
 ---
@@ -41,6 +41,26 @@ ht-degree: 8%
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Productprofielen beheren](/help/platform/admin/managing-product-profiles.md)
++ Segmentering en publiek {#audiences}
+   + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
+   + [Soorten publiek uploaden](audiences/upload-audiences.md)
+   + [Overzicht van Audience Rule builder](audiences/audience-rule-builder-overview.md)
+   + [Soorten publiek maken](audiences/create-audiences.md)
+   + [Op inhoud gebaseerd publiek maken](audiences/create-content-based-audiences.md)
+   + [Conversiepubliek maken](audiences/create-conversion-audiences.md)
+   + [Soorten publiek maken van bestaand publiek](audiences/create-audiences-from-existing-audiences.md)
+   + [Opeenvolgend publiek maken](audiences/create-sequential-audiences.md)
+   + [Dynamisch publiek maken](audiences/create-dynamic-audiences.md)
+   + [Eenvoudig publiek maken](audiences/create-multi-entity-audiences.md)
+   + [Soorten publiek maken met B2B-gegevens](audiences/create-audiences-with-b2b-data.md)
+   + [Demo van streamingsegmentatie](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Een publieksregel evalueren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Een gegevensset maken om gegevens te exporteren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [Instellingen voor segmentovereenkomst](/help/platform/segments/segment-match-connection-setup.md)
+   + [Beheer van segmentmatchgegevens](/help/platform/segments/segment-match-data-governance.md)
+   + [Segment afstemmen, configuratiestroom](/help/platform/segments/segment-match-configuration-flow.md)
+   + [Segment afstemmen op inzichten vóór delen](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
 + [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
@@ -173,24 +193,6 @@ ht-degree: 8%
    + [Schema&#39;s kopiëren tussen sandboxen](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Schema&#39;s bijwerken](/help/platform/schemas/update-schemas.md)
    + [Een ad-hocschema maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ Segmenten {#segments}
-   + [Overzicht van Segment Builder](/help/platform/segments/segment-builder-overview.md)
-   + [Segmenten maken](/help/platform/segments/create-segments.md)
-   + [Op inhoud gebaseerde segmenten maken](/help/platform/segments/create-content-based-segments.md)
-   + [Conversiesegmenten maken](/help/platform/segments/create-conversion-segments.md)
-   + [Segmenten maken van bestaande segmenten](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [Opeenvolgende segmenten maken](/help/platform/segments/create-sequential-segments.md)
-   + [Dynamische segmenten maken](/help/platform/segments/create-dynamic-segments.md)
-   + [Meerdere entiteitssegmenten maken](/help/platform/segments/create-multi-entity-segments.md)
-   + [Segmenten maken met B2B-gegevens](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [Demo van streamingsegmentatie](/help/platform/segments/streaming-segmentation-demo.md)
-   + [Een segment evalueren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [Een gegevensset maken om gegevens te exporteren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [Instellingen voor segmentovereenkomst](/help/platform/segments/segment-match-connection-setup.md)
-   + [Beheer van segmentmatchgegevens](/help/platform/segments/segment-match-data-governance.md)
-   + [Segment afstemmen, configuratiestroom](/help/platform/segments/segment-match-configuration-flow.md)
-   + [Segment afstemmen op inzichten vóór delen](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + Bronnen {#sources}
    + [Overzicht van bronnen](/help/platform/sources/overview.md)
    + [Gegevens van Adobe Analytics verzamelen](/help/platform/sources/ingest-data-from-adobe-analytics.md)
