@@ -2,13 +2,13 @@
 title: Wat is de eerstvolgende persoonlijke personalisatie met Real-Time CDP en Adobe Target?
 description: Leer hoe u uw persoonlijke voorkeuren kunt aanpassen bij de volgende druk op Real-time Customer Data Platform (CDP) en Adobe Target.
 role: User
-solution: Real-time Customer Data Platform,Target
+solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

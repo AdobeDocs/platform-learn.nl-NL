@@ -1,13 +1,13 @@
 ---
 title: Inleiding tot intelligente diensten
 description: Een introductie op hoog niveau van Intelligent Services, waarmee marketinganalisten en uitvoerders de kracht van kunstmatige intelligentie en machine learning in de ervaring van de klant kunnen gebruiken zonder kennis van gegevenswetenschap.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI, Attribution AI
 role: User
 jira: KT-4170
 thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 72%
