@@ -8,7 +8,7 @@ feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experi
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -17,8 +17,7 @@ ht-degree: 0%
 
 # Volgend-klare personalisatie met Real-Time CDP en Adobe Target
 
-Leer hoe je je kunt aanpassen bij de volgende hit met Real-time Customer Data Platform en Adobe Target. Met de Adobe Target-bestemming in Real-Time CDP kunt u Experience Platform-segmenten in Adobe Target gebruiken voor dezelfde pagina en paginagrootte op de volgende pagina met ondersteuning voor beheer en privacy.
+Leer hoe je je kunt aanpassen bij de volgende hit met Real-time Customer Data Platform en Adobe Target. Met de Adobe Target-bestemming in Real-Time CDP kunt u Experience Platform-segmenten in Adobe Target gebruiken voor dezelfde pagina en paginagrootte op de volgende pagina met ondersteuning voor beheer en privacy. Zie voor meer informatie de [Vorm verpersoonlijkingsbestemmingen voor zelfde-pagina en volgende-pagina verpersoonlijkingsdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 
-Zie voor meer informatie de [Vorm verpersoonlijkingsbestemmingen voor zelfde-pagina en volgende-pagina verpersoonlijkingsdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
