@@ -5,8 +5,11 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -70,7 +73,7 @@ Dan heb je dit. Klik op **Next**.
 
 ### Persoon-id
 
-Het doel is nu om zich bij deze datasets aan te sluiten. Voor elke gegevensset die u hebt geselecteerd, wordt een veld weergegeven met de naam **Persoon-id**. Elke dataset heeft zijn eigen gebied van identiteitskaart van de Persoon.
+Het doel is nu om zich bij deze datasets aan te sluiten. Voor elke dataset u selecteerde, zult u een gebied geroepen zien **Persoon-id**. Elke dataset heeft zijn eigen gebied van identiteitskaart van de Persoon.
 
 ![demo](./images/cja11.png)
 
