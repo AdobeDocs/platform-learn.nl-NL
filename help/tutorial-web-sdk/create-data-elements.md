@@ -3,7 +3,7 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
+source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
 >
 > Adobe raadt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primair] identiteit.
 >
-> Als het identiteitsoverzicht beide bevat `Luma CRM Id` en ECID, dan de `Luma CRM Id` wordt de [!UICONTROL primair] identiteit. Als het identiteitsoverzicht alleen ECID bevat, wordt ECID de [!UICONTROL primair] identiteit.
+> Als de identiteitskaart de persoon-id bevat (bijvoorbeeld Luma CRM-id), wordt de persoon-id de persoon-id [!UICONTROL primair] identiteit. Anders wordt ECID de [!UICONTROL primair] identiteit.
 
 
 
