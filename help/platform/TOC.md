@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '975'
 ht-degree: 8%
 
 ---
@@ -17,22 +17,22 @@ ht-degree: 8%
 + [Platform Tutorials](/help/platform/overview.md)
 + Inleiding tot Platform {#intro-to-platform}
    + [Een klantervaring met Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [Achter de schermen: Een klantervaring met Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Achter de schermen: een klantervaring met Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Overzicht van Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Belangrijkste mogelijkheden](/help/platform/intro-to-platform/key-capabilities.md)
    + [Toepassings- en intelligente services](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [Integratie met Experience Cloud-toepassingen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Hoofdgebruik](/help/platform/intro-to-platform/key-use-cases.md)
    + [Basisarchitectuur](/help/platform/intro-to-platform/basic-architecture.md)
-   + [De gebruikersinterface van het Platform gebruiken](/help/platform/intro-to-platform/interface-tour.md)
+   + [Gebruikersinterface](/help/platform/intro-to-platform/interface-tour.md)
    + [Rollen en projectfasen](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Inleiding tot Real-Time CDP {#rtcdp}
    + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-   + [Eind-aan-eind demo](/help/platform/rtcdp/demo.md)
+   + [Eind-aan-eind demonstratie](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
    + [Campagnes ordenen met Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Aan de slag: Data Architecers en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [Aan de slag: Data Architects en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
@@ -67,7 +67,7 @@ ht-degree: 8%
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
 + Gegevensbeheer {#data-governance}
    + [Overzicht](/help/platform/governance/understanding-data-governance.md)
-   + [Eind-aan-eind demo](/help/platform/governance/introduction-to-data-governance.md)
+   + [Eind-aan-eind demonstratie](/help/platform/governance/introduction-to-data-governance.md)
    + [Gegevens classificeren met labels](/help/platform/governance/classify-data-using-labels.md)
    + [Beleid voor gegevensgebruik maken](/help/platform/governance/create-data-usage-policies.md)
    + [Beleid voor gegevensgebruik afdwingen](/help/platform/governance/enforce-data-usage-policies.md)
@@ -146,10 +146,10 @@ ht-degree: 8%
    + [Klantprofiel in realtime](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
    + [Gegevens in profiel plaatsen](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Details van profielweergave aanpassen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [Details van de profielweergave aanpassen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
-   + [Overzicht van Unieregelingen](/help/platform/profiles/union-schemas-overview.md)
+   + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
    + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
    + [Inleiding tot de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
@@ -157,7 +157,7 @@ ht-degree: 8%
    + [Privacy JavaScript-bibliotheek](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Privacy-labels in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Aan de slag met de Privacy Service-API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [UI Privacy Service](/help/platform/privacy/using-privacy-services-ui.md)
+   + [UI PRIVACY SERVICE](/help/platform/privacy/using-privacy-services-ui.md)
    + [Privacy Service-API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [Abonneren op privacygebeurtenissen](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [Door de klant beheerde sleutels instellen](/help/platform/privacy/set-up-customer-managed-keys.md)
@@ -210,7 +210,7 @@ ht-degree: 8%
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
    + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ Tendensen in de industrie {#industry}
++ Tendensen industrie {#industry}
    + [De toekomst van gegevensbeheer en de veranderende omgeving](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Een overzicht van twee percepties - merken versus consumenten](/help/platform/industry/brands-vs-consumers.md)
    + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
