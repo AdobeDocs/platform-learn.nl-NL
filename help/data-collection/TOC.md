@@ -4,7 +4,8 @@ breadcrumb-title: Tutorials voor gegevensverzameling
 user-guide-description: Instructievideo's en tutorials waarmee u een krachtige gebruiker van gegevensverzameling in Experience Platform wordt.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
+role: Developer, Data Engineer
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 17%

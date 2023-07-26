@@ -4,12 +4,11 @@ description: Leer hoe u met de Adobe Experience Platform Debugger Chrome-extensi
 landing-page-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
 short-description: Los fouten met webimplementaties van de Adobe Experience Platform Web SDK en de Experience Cloud-toepassingen op.
 feature: Debugger
-role: Data Engineer
 level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 58%

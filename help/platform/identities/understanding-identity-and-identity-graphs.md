@@ -1,12 +1,13 @@
 ---
 title: Overzicht van identiteits- en identiteitsgrafieken
 description: Leer over de belangrijkste mogelijkheden van identiteitsresolutie in Adobe Experience Platform&mdash;identiteitsinzameling, identiteitsgrafieken, en APIs. Leer hoe de Identiteitsdienst losgemaakte identiteiten verbindt om een verenigbare verbonden ervaring te leveren door een verenigd profiel te construeren.
-role: Data Architect
 feature: Identities
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%

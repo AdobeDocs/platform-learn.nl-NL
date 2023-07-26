@@ -2,12 +2,11 @@
 title: Een gegevensstroom instellen voor het doorsturen van gebeurtenissen
 description: Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen.
 feature: Event Forwarding, Datastreams
-role: Data Engineer
 level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -22,8 +21,8 @@ Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen.
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 > 
-> * platform launch (clientzijde) is nu **[!DNL tags]**
-> * platform launch Server-zijde is nu **[!DNL event forwarding]**
+> * Platform launch (clientzijde) is nu **[!DNL tags]**
+> * Platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)

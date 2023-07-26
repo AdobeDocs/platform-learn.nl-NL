@@ -4,11 +4,10 @@ description: Krijg een inleiding aan de de regelbouwer van het Publiek in Experi
 feature: Segments
 role: User
 level: Beginner
-doc-type: feature video
-thumbnail: 333301.jpg
 jira: KT-7887
+thumbnail: 333301.jpg
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Krijg een inleiding aan de de regelbouwer van het Publiek in Experience Platform
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface van het Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
+> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)

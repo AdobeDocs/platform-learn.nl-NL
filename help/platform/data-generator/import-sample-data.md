@@ -1,13 +1,14 @@
 ---
 title: Voorbeeldgegevens importeren naar Adobe Experience Platform
 description: Leer hoe u een Experience Platform-sandboxomgeving instelt met voorbeeldgegevens.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -48,34 +49,34 @@ Voordat u de stappen uitvoert, moet u controleren of u de [Postman](https://www.
    >
    >Gebruikersgegevens in de [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) het bestand is fictief en mag alleen voor demonstratiedoeleinden worden gebruikt.
 
-1. Verplaats vanuit de downloadmap de `platform-utils-main.zip` naar de gewenste locatie op de computer en decomprimeer het bestand.
+1. Verplaats vanuit de map met downloads de `platform-utils-main.zip` naar de gewenste locatie op de computer en decomprimeer het bestand.
 1. In de `luma-data` map, alle `json` bestanden in een teksteditor en vervang alle instanties van `_yourTenantId` met je eigen huurder-id, voorafgegaan door een onderstrepingsteken.
 1. Openen `luma-offline-purchases.json`, `luma-inventory-events.json`, en `luma-web-events.json` in een teksteditor en werk alle tijdstempels bij, zodat de gebeurtenissen in de laatste maand plaatsvinden (bijvoorbeeld om `"timestamp":"2022-11` en vervang het jaar en de maand)
 1. Noteer de locatie van de uitgevouwen map, zoals u deze later nodig hebt bij het instellen van de `FILE_PATH` [!DNL Postman] omgevingsvariabele:
 
    >[!NOTE]
-   > Als u een bestandspad op uw Mac wilt verkrijgen, navigeert u naar de `platform-utils-main` map, klikt u met de rechtermuisknop op de map en selecteert u **Info ophalen** optie.
+   > Als u een bestandspad op uw Mac wilt verkrijgen, navigeert u naar de `platform-utils-main` map, klikt u met de rechtermuisknop op de map en selecteert u **Info opvragen** -optie.
    >
-   > ![Mac-bestandspad](../assets/data-generator/images/mac-file-path.png)
+   > ![MAC-bestandspad](../assets/data-generator/images/mac-file-path.png)
 
    >[!NOTE]
    > U verkrijgt dossierweg op uw vensters, klik om de plaats van de gewenste omslag te openen, en dan met de rechtermuisknop aan het recht van de weg in de adresbar te klikken. Kopieer het adres om het bestandspad te verkrijgen.
    > 
    > ![Windows-bestandspad](../assets/data-generator/images/windows-file-path.png)
 
-1. Openen [!DNL Postman] en maakt u een werkruimte op basis van de **Werkruimten** vervolgkeuzemenu:\
+1. Openen [!DNL Postman] en maakt u een werkruimte op basis van de **Werkruimten** vervolgkeuzelijst:\
    ![Werkruimte maken](../assets/data-generator/images/create-workspace.png)
 1. Voer een **Naam** en optioneel **Samenvatting** voor uw werkruimte en klik op **Werkruimte maken**. [!DNL Postman] schakelt u over naar de nieuwe werkruimte wanneer u deze maakt.
    ![Werkruimte opslaan](../assets/data-generator/images/save-workspace.png)
-1. Pas nu enkele instellingen aan om het dialoogvenster [!DNL Postman] verzamelingen in deze werkruimte. In de koptekst van [!DNL Postman], klikt u op het tandwielpictogram en selecteert u **Instellingen** om de instellingen modaal te openen. U kunt ook de sneltoets (CMD/CTRL + ,) gebruiken om het modaal te openen.
+1. Pas nu enkele instellingen aan om het dialoogvenster [!DNL Postman] in deze werkruimte. In de koptekst van [!DNL Postman], klikt u op het tandwielpictogram en selecteert u **Instellingen** om de instellingen modaal te openen. U kunt ook de sneltoets (CMD/CTRL + ,) gebruiken om het modaal te openen.
 1. Onder de `General` tabblad, de time-out van de aanvraag in ms bijwerken naar `5000 ms` en `allow reading file outside this directory`
    ![Instellingen](../assets/data-generator/images/settings.png)
 
    >[!NOTE]
    > Als bestanden vanuit de werkmap worden geladen, worden ze op alle apparaten probleemloos uitgevoerd als dezelfde bestanden op de andere apparaten worden opgeslagen. Als u echter bestanden van buiten de werkmap wilt uitvoeren, moet een instelling worden ingeschakeld om dezelfde intentie aan te geven. Als uw `FILE_PATH` is niet gelijk aan [!DNL Postman]Het pad naar de werkmap moet nu zijn ingeschakeld.
 
-1. Sluit de **Instellingen** deelvenster.
-1. Selecteer **Omgevingen** en selecteer vervolgens **Importeren**:
+1. Sluit het dialoogvenster **Instellingen** deelvenster.
+1. Selecteer de **Omgevingen** en selecteer vervolgens **Importeren**:
    ![Omgevingsimport](../assets/data-generator/images/env-import.png)
 1. Importeer het gedownloade JSON-omgevingsbestand. `DataInExperiencePlatform.postman_environment`
 1. Selecteer in Postman de omgeving in het vervolgkeuzemenu rechtsboven en klik op het oogpictogram om de omgevingsvariabelen weer te geven:
@@ -192,7 +193,7 @@ Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer
 Als u een voorbeeldimplementatie van SDK van het Web aan verbinding aan deze zandbak wilt bouwen, ga door
 [Zelfstudie Adobe Experience Cloud implementeren met Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;Configuratie van tags&quot; en &quot;Experience Platform instellen&quot; van de zelfstudie van de SDK van Web hebt ingesteld, meldt u zich aan bij de Luma-website met de eerste tien e-mailadressen in het dialoogvenster `luma-crm.json` bestand met het wachtwoord `test` om te zien hoe de profielfragmenten worden samengevoegd met gegevens die in deze zelfstudie zijn geüpload.
 
-Als u een voorbeeld van een mobiele SDK-implementatie wilt maken om een koppeling naar deze sandbox te maken, doorloopt u het dialoogvenster
+Als u een voorbeeld van een mobiele SDK-implementatie wilt maken om een koppeling naar deze sandbox te maken, doorloopt u de
 [Zelfstudie Adobe Experience Cloud implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;App-implementatie&quot; en &quot;Experience Platform&quot; van de zelfstudie van de Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met de eerste e-mailadressen in het dialoogvenster `luma-crm.json` bestand om een profielfragment samen te voegen met gegevens die in deze zelfstudie zijn geüpload.
 
 ## Sandbox-omgeving opnieuw instellen {#reset-sandbox}

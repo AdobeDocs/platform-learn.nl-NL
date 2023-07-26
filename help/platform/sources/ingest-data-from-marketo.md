@@ -3,12 +3,13 @@ title: Gegevens van Marketo Engage verzamelen
 description: Leer hoe te om gegevens van Marketo Engage in te voeren gebruikend de bronschakelaar gebruikend de standaard en malplaatjewerkschema's.
 solution: Real-Time Customer Data Platform
 feature: Sources
-role: Data Engineer, Data Architect
-jira: KT-9259, 13303
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -27,10 +28,10 @@ Leer hoe u de bronconnector voor Marketo configureert met behulp van de sjabloon
 
 ## Standaardworkflow
 
-Leer hoe u de bronconnector voor Marketo configureert met de standaardworkflow. Voor de standaardworkflow moeten vooraf schema&#39;s en naamruimten worden gemaakt.
+Leer hoe u de bronconnector voor Marketo configureert met behulp van de standaardworkflow. Voor de standaardworkflow moeten vooraf schema&#39;s en naamruimten worden gemaakt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
 
 Raadpleeg de volgende documentatie voor meer informatie:
 * [Documentatie Marketo Engage-bronaansluiting](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Een gegevensstroom voor bronnen maken met behulp van sjablonen in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Een gegevensstroom voor bronnen maken met sjablonen in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

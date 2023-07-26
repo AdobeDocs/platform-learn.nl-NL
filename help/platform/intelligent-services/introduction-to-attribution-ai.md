@@ -3,10 +3,11 @@ title: Inleiding tot Attribution AI
 description: Een overzicht op hoog niveau van de manier waarop marketeers en analisten Attribution AI kunnen gebruiken om de impact van hun marketingkanalen en campagnes te begrijpen.
 feature: Attribution AI
 role: User
+level: Beginner
 jira: KT-4808
 thumbnail: 32667.jpg
 exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%

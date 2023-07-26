@@ -3,10 +3,11 @@ title: De gegevens van uw klant opladen voor elektrificatieervaringen
 description: Leer hoe u de impact van gegevens van lage kwaliteit kunt beperken, tijd tot waarde kunt beperken en rendement op investeringen kunt vermenigvuldigen door dezelfde gegevens te gebruiken voor een groot aantal gebruiksgevallen.
 feature: Queries
 role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

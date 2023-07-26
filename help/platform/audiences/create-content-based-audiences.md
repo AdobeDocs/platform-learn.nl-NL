@@ -3,12 +3,11 @@ title: Op inhoud gebaseerd publiek maken
 description: Leer de grondbeginselen van het creëren van een publiek van de inhoudsaffiniteit in de bouwer van de publieksregel in Experience Platform.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333302.jpg
+level: Intermediate
 jira: KT-7889
+thumbnail: 333302.jpg
 exl-id: bafe275e-19f3-4b86-9fcd-0516fada55ec
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Leer de grondbeginselen van het creëren van een publiek van de inhoudsaffinitei
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface van het Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
+> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333302/?quality=12&learn=on)
 

@@ -1,12 +1,13 @@
 ---
 title: Eenvoudig publiek maken
 description: In deze video ziet u hoe u een publiek met meerdere entiteiten kunt maken in de Adobe Experience Platform-instructeur voor publieksregels.  Met segmentatie over meerdere entiteiten, of segmentatie over klassen, kunt u soorten publiek maken dat gegevens combineert op basis van meerdere XDM-klassen.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -21,7 +22,7 @@ In deze video ziet u hoe u een publiek met meerdere entiteiten kunt maken in de 
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface van het Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
+> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32179?quality=12&learn=on)
 

@@ -1,13 +1,14 @@
 ---
 title: Het cursusschema en de gegevensset maken
 description: Leer hoe te om de de cursusdataset en het schema tot stand te brengen van de Werkruimte van de Wetenschap van Gegevens die in de rest van de cursus worden gebruikt.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7285
 thumbnail: 333312.jpg
 hidefromtoc: true
 exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%

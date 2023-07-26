@@ -1,14 +1,15 @@
 ---
-user-guide-title: Aan de slag met Experience Platform voor Data Architecers en Data Engineers
-breadcrumb-title: Aan de slag voor Data Architecers en Engineers
-user-guide-description: Een praktische zelfstudie om het Platform te implementeren. Voorbeelden van verstrekte gegevens en elementen.
-audience: all
+user-guide-title: Aan de slag met Experience Platform voor Data Architects en Data Engineers
+breadcrumb-title: Aan de slag voor Data Architects en Engineers
+user-guide-description: Een praktische tutorial om het Platform te implementeren. Voorbeelden van verstrekte voorbeeldgegevens en assets.
+role: Data Architect, Data Engineer, Developer
+level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 0%
+ht-degree: 33%
 
 ---
 
@@ -18,16 +19,16 @@ ht-degree: 0%
 + [Zelfstudie voor gegevensarchitect en engineer](overview.md)
 + [1. Machtigingen configureren](configure-permissions.md)
 + [2. Een sandbox maken](create-a-sandbox.md)
-+ [3. Developer Console en Postman instellen](set-up-developer-console-and-postman.md)
++ [3. Stel Developer Console en Postman in](set-up-developer-console-and-postman.md)
 + [4. Modelgegevens in schema&#39;s](model-data-in-schemas.md)
-+ [5. Identiteiten toewijzen](map-identities.md)
-+ [6. Gegevenssets maken](create-datasets.md)
++ [5. Kaartidentiteiten](map-identities.md)
++ [6. Gegevensbestanden maken](create-datasets.md)
 + [7. Profielen inschakelen](enable-profiles.md)
 + [8. Abonneren op gebeurtenissen voor gegevensinvoer](subscribe-to-data-ingestion-events.md)
-+ [9. Gegevens van groep samenvoegen](ingest-batch-data.md)
-+ [10 De grootste streaminggegevens](ingest-streaming-data.md)
++ [9. Samenvatting van batchgegevens](ingest-batch-data.md)
++ [10. De grootste streaminggegevens](ingest-streaming-data.md)
 + [11. Samenvoegbeleid maken](create-merge-policies.md)
-+ [12. Gegevensbeheerkader toepassen](apply-data-governance-framework.md)
++ [12. Toepassen van het kader voor gegevensbeheer](apply-data-governance-framework.md)
 + [13. Zoekopdrachten uitvoeren](run-queries.md)
-+ [14. Segmenten maken](build-segments.md)
++ [14. Segmenten opbouwen](build-segments.md)
 + [Conclusie](conclusion.md)

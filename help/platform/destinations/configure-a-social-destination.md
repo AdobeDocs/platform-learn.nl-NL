@@ -1,23 +1,23 @@
 ---
 title: Hoe te om een sociale bestemming te vormen
-description: In deze video bekijken we de configuratie van een sociale bestemming in Adobe Experience Platform, inclusief verificatie, segmenttoewijzing, id-toewijzing, enzovoort.
+description: Leer hoe u een sociale bestemming in Adobe Experience Platform configureert, zoals verificatie, segmenttoewijzing, id-toewijzing, enz.
 solution: Real-Time Customer Data Platform
 feature: Destinations
-role: User
-level: Beginner
+role: User, Admin
+level: Intermediate
 jira: KT-7206
 thumbnail: 332599.jpg
 exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
 # Een sociale bestemming configureren
 
-In deze video bekijken we de configuratie van een sociale bestemming in Adobe Experience Platform, inclusief verificatie, segmenttoewijzing, id-toewijzing, enzovoort.
+Leer hoe u een sociale bestemming in Adobe Experience Platform configureert, zoals verificatie, segmenttoewijzing, id-toewijzing, enz.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?quality=12&learn=on)
 

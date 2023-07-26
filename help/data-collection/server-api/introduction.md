@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User,Developer
+role: User, Data Engineer, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '2087'
 ht-degree: 0%
@@ -23,13 +23,13 @@ API staat voor Application Programming Interface. Het betekent enkel wat het zeg
 
 API&#39;s zijn een manier om zakelijke uitdagingen met software op te lossen. In de meeste bedrijven is dat een gezamenlijke inspanning. Samenwerken is altijd gemakkelijker met een gedeeld begrip van zeer belangrijke termijnen, concepten, en stappen.
 
-Als u nadenkt over het klikken op een koppeling op een webpagina, gebruikt de browser heel wat API&#39;s wanneer u op de koppeling klikt. De browser herkent de klik, vraagt om de pagina die u wilt bezoeken, haalt de pagina op via internet en geeft deze vervolgens weer op uw scherm. Er zijn veel kleinere tussenliggende stappen, maar uw browser is software die communiceert en interageert met verschillende API&#39;s, alleen om u een webpagina te laten zien. In dit artikel worden termen, concepten en stappen gemarkeerd die belangrijk zijn bij het gebruik van API&#39;s of het bespreken van deze API&#39;s.
+Als u nadenkt over het klikken op een koppeling op een webpagina, gebruikt de browser heel wat API&#39;s wanneer u op de koppeling klikt. De browser herkent de klik, vraagt om de pagina die u wilt bezoeken, haalt de pagina op via internet en geeft deze vervolgens weer op uw scherm. Er zijn veel kleinere tussenliggende stappen, maar uw browser is software die communiceert en interageert met verschillende API&#39;s, alleen om u een webpagina te laten zien. In dit artikel zullen we termen, concepten en stappen markeren die belangrijk zijn bij het gebruik van of het bespreken van API&#39;s.
 
 Aan het einde van dit artikel hebt u een duidelijk inzicht in deze grondbegrippen, concepten en stappen nodig. API-documentatie kan uitgebreid zijn en discussies over het gebruik van API&#39;s voor het aanpakken van specifieke gebruiksgevallen kunnen zeer gedetailleerd worden. Het navigeren van documentatie en het bespreken van APIs is gemakkelijker en productiever met duidelijke grondbeginselen en gedeeld begrip.
 
 >[!NOTE]
 >
-> Terwijl er vele APIs zijn, zal de nadruk hier op Web en browser APIs zijn: in feite wanneer de ene softwaretoepassing via internet met de andere communiceert.
+> Terwijl er veel API&#39;s zijn, is de focus hier op API&#39;s voor het web en de browser: in feite wanneer een softwaretoepassing via internet met een andere toepassing communiceert.
 
 ## API Voorwaarden en concepten
 
@@ -37,7 +37,7 @@ Wat betekent een woord of uitdrukking, en hoe kan ik er eenvoudig over denken? I
 
 ![Afbeelding van hyperlink met doel-URL](../assets/api101-link-destination.png)
 
-In dit schermafbeelding zweeft de muiscursor boven de Adobe Experience Platform-koppeling. Onderaan ziet u de statusbalk van de webbrowser met het adres van de pagina die de browser krijgt. Met andere woorden, als je op de Adobe Experience Platform link klikt, vertelt de browser dat ze die pagina voor mij krijgt zodat ik hem hier op mijn scherm kan zien.
+In dit schermafbeelding zweeft de muiscursor boven de Adobe Experience Platform-koppeling. Onderaan ziet u de statusbalk van de webbrowser met het &quot;adres&quot; van de pagina die de browser krijgt. Met andere woorden, als je op de Adobe Experience Platform link klikt, vertelt de browser dat ze die pagina voor mij krijgt zodat ik hem hier op mijn scherm kan zien.
 
 Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagina op te halen. Dit is een `GET` request, een van de aanvraagmethoden die veel worden gebruikt met web-API&#39;s. Eén ding dat de browser aan het verzoek moet voldoen, is het adres van de pagina - waar bevindt het zich op het web?
 
@@ -63,7 +63,7 @@ Voor web-API&#39;s gebeurt de overdracht van deze bronnen via HTTP-aanvragen, me
 
 De `business.adobe.com` is de gastheer van het middel dat wordt gevraagd. Wanneer op de voorbeeldkoppeling wordt geklikt, gebruikt de browser dit gedeelte van de URL om de server te zoeken waarop de pagina wordt gehost. Het is niet altijd precies het zelfde als de Webserver, maar op een basisniveau kunnen wij het als server zien waar browser de pagina zal krijgen wij vroegen.
 
-De namen van het domein maken deel uit van het Systeem van de Naam van het Domein, beter gekend als DNS. De meeste mensen denken aan `adobe.com` of `example.com` als een &quot;domeinnaam&quot;, maar er zijn onderdelen die relevant zijn voor API&#39;s. `www.adobe.com` en `business.adobe.com` kan domeinnamen worden genoemd, maar `www.` en de `business.` onderdelen worden subdomeinen genoemd. API&#39;s werken vaak samen met een URL die een subdomein bevat, zoals `api.example.com` of `sub.www.example.com`.
+De namen van het domein maken deel uit van het Systeem van de Naam van het Domein, beter gekend als DNS. De meeste mensen denken aan `adobe.com` of `example.com` als een &quot;domeinnaam&quot;, maar er zijn onderdelen relevant voor API&#39;s. `www.adobe.com` en `business.adobe.com` kan domeinnamen worden genoemd, maar `www.` en de `business.` onderdelen worden subdomeinen genoemd. API&#39;s werken vaak samen met een URL die een subdomein bevat, zoals `api.example.com` of `sub.www.example.com`.
 
 Het is heel gebruikelijk om de term te zien _host_ verwijzen naar een volledige domeinnaam, inclusief subdomein zoals `business.adobe.com`. Het is ook gebruikelijk om de termen te zien _domein_ of _domeinnaam_ wanneer het verwijzen van naar een gastheer zonder subdomain zoals `adobe.com`. Het is hier niet van belang de specifieke voorwaarden voor elk onderdeel en elke variant van een host te herkennen. Maar bewust zijn van dat deze termijnen algemeen worden gebruikt is belangrijk zodat kunt u om het even welke relevante details voor uw zaken en besprekingen verduidelijken.
 
@@ -89,7 +89,7 @@ Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele to
 
 ## Voorbeeld-API&#39;s
 
-Browser APIs staat programmeurs toe om met eigenschappen van browser direct in wisselwerking te staan. Met de batterij-API kan de software de batterijstatus van een apparaat controleren, zodat het u kan waarschuwen als dat nodig is. Met de klembordAPI kan software kopiëren of plakken met het klembord van uw apparaat. Met de API Volledig scherm kan software de optie presenteren om de weergave uit te breiden naar het volledige scherm van het apparaat, zoals YouTube.
+Browser APIs staat programmeurs toe om met eigenschappen van browser direct in wisselwerking te staan. Met de batterij-API kan de software de batterijstatus van een apparaat controleren, zodat het u kan waarschuwen als dat nodig is. Met de klembordAPI kan software kopiëren of plakken met het klembord van uw apparaat. Met de API Volledig scherm kan software de optie presenteren om de weergave op het volledige scherm van het apparaat uit te breiden, zoals YouTube.
 
 Adobe Experience Platform Data Access-API is een web-API waarmee programmeurs toegang hebben tot gegevenssetbestanden van Adobe Experience Platform en deze kunnen downloaden, zodat ze de gegevens van het klantprofiel in hun eigen programma&#39;s kunnen gebruiken. API&#39;s als deze maken vaak deel uit van een softwareautomatiseringsproces waarbij software is geprogrammeerd om een reeks stappen uit te voeren in combinatie met verschillende API&#39;s. Dit kan vaak een aanzienlijke kostenbesparing opleveren in vergelijking met het handmatig uitvoeren van dezelfde stappen.
 
@@ -103,7 +103,7 @@ Met andere woorden, net zoals browser een pagina bij een specifieke URL krijgt, 
 
 ## Methoden van HTTP-aanvragen
 
-Op dit punt moet duidelijk zijn dat web-API&#39;s verzoeken indienen voor bronnen zoals webpagina&#39;s of gegevenssets. Zoals de meeste softwareconcepten, volgen deze HTTP- verzoeken herhaalbare patronen. Een verzoek wordt verzonden van een softwaretoepassing naar een andere softwaretoepassing die het verzoek evalueert en dan antwoordt: de browser vraagt een pagina op van een webserver en reageert met de pagina-inhoud.
+Op dit punt moet duidelijk zijn dat web-API&#39;s verzoeken indienen voor bronnen zoals webpagina&#39;s of gegevenssets. Zoals de meeste softwareconcepten, volgen deze HTTP- verzoeken herhaalbare patronen. Een verzoek wordt verzonden van een softwaretoepassing naar een andere softwaretoepassing die het verzoek evalueert en dan antwoordt: browser vraagt een pagina van een Webserver en antwoordt met de pagina inhoud.
 
 Het hele proces van verzoek tot antwoord omvat vele kleinere en zeer gedetailleerde stappen, maar de verzoekmethodes zijn duidelijk. De verzoekmethodes bepalen de verrichting die wordt gevraagd.
 
@@ -133,7 +133,7 @@ Er zijn verschillende andere methoden, maar dit is een lijst met de meest gebrui
 
 Nu u de basistermen, concepten en stappen hebt die met API&#39;s samenhangen, kunnen we in de praktijk naar een voorbeeld-API-verzoek kijken.
 
-De pagina uit ons browservoorbeeld heeft een URL van `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, maakt de browser een `GET` voor deze pagina aanvragen. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
+De pagina uit ons browservoorbeeld heeft een URL van `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, wordt een `GET` voor deze pagina aanvragen. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
 
 Hier is hoe dat in de code zou kunnen kijken:
 
@@ -162,7 +162,7 @@ fetch(
 );
 ```
 
-In de bovenstaande code kunt u de `URL` de browser vraagt om informatie en onderaan staat de `method: "GET"` aanvraagmethode. De andere coderegels zijn ook onderdelen van het verzoek, maar vallen buiten het bereik van dit artikel.
+In de bovenstaande code kunt u de `URL` de browser vraagt om informatie, en onderaan staat de `method: "GET"` aanvraagmethode. De andere coderegels zijn ook onderdelen van het verzoek, maar vallen buiten het bereik van dit artikel.
 
 
-*[API]: Toepassingsprogrammeringsinterface *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: Domeinnaamsysteem
+*[API]: Application Programming Interface *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: Domain Name System

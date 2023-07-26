@@ -2,11 +2,12 @@
 title: Gebruikersinterface Query Service
 description: Leer hoe u query's schrijft en uitvoert, eerder uitgevoerde query's bekijkt en query's opent die zijn opgeslagen door andere gebruikers binnen uw IMS-organisatie in Adobe Experience Platform Query Service.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-7680
 thumbnail: 333403.jpg
 exl-id: 63de8b83-5da2-4f24-a47d-70c14bdfe437
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 7%

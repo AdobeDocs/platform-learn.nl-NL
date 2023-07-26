@@ -1,12 +1,13 @@
 ---
 title: Overzicht van gegevensbeheer
 description: Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform.
-role: Data Architect
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

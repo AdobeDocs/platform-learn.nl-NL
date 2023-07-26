@@ -3,11 +3,10 @@ title: De Experience Cloud Debugger toevoegen
 description: Leer hoe u de Adobe Experience Cloud Debugger-extensie toevoegt aan uw Chrome-webbrowser zodat u uw Experience Cloud-implementaties kunt begrijpen en er problemen mee kunt oplossen.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/add-the-extension.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: ba94065e-ef18-4b8c-8f83-c772287bbfe4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 11%
@@ -20,7 +19,7 @@ Leer hoe u [de extensie Adobe Experience Cloud Debugger toevoegen aan uw Chrome-
 
 >[!NOTE]
 >
->Overweeg een upgrade uit te voeren naar de [Adobe Experience Platform Debugger](../overview.md), een bijgewerkte versie van de extensie die in deze video wordt weergegeven en ondersteuning bevat voor nieuwere functies zoals Platform Web SDK.
+>Overweeg een upgrade naar de [Adobe Experience Platform Debugger](../overview.md), een bijgewerkte versie van de extensie die in deze video wordt weergegeven en ondersteuning bevat voor nieuwere functies zoals Platform Web SDK.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
 

@@ -2,12 +2,11 @@
 title: Een extensie voor het doorsturen van gebeurtenissen toevoegen
 description: Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen.
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -22,8 +21,8 @@ Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gege
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * platform launch (clientzijde) is nu **[!DNL tags]**
-> * platform launch Server-zijde is nu **[!DNL event forwarding]**
+> * Platform launch (clientzijde) is nu **[!DNL tags]**
+> * Platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)

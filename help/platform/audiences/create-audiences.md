@@ -1,12 +1,13 @@
 ---
 title: Soorten publiek maken
 description: Leer hoe u een publiek kunt maken in Adobe Experience Platform.
-role: User
 feature: Segments
+role: User
+level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Leer hoe u een publiek kunt maken in Adobe Experience Platform. Bouw publieksreg
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface van het Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
+> &quot;[!UICONTROL Segmenten]&quot; hebben de naam gewijzigd in &quot;[!UICONTROL Soorten publiek]&quot; in de interface Platform. Selecteren **[!UICONTROL publiek maken]** > **[!UICONTROL Regel samenstellen]** om de regelbuilder in te voeren die in deze video wordt weergegeven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
 

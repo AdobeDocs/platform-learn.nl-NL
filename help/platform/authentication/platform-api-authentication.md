@@ -1,13 +1,14 @@
 ---
 title: Experience Platform-API's verifiëren en openen
 description: Leer hoe u toegang krijgt tot Adobe Experience Platform-API's.
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 11%
@@ -26,7 +27,7 @@ Leer hoe u aan de slag gaat met Adobe Experience Platform API&#39;s. Deze zelfst
 
 >[!IMPORTANT]
 >
->Om toegang te krijgen tot [Adobe Developer Console](https://developer.adobe.com/console/home)u moet een van de [Systeembeheerder](https://helpx.adobe.com/enterprise/using/admin-roles.html) of [Ontwikkelaar](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in de [Adobe Admin Console](https://adminconsole.adobe.com).
+>Als u toegang wilt krijgen tot [Adobe Developer Console](https://developer.adobe.com/console/home)u moet een van de [Systeembeheerder](https://helpx.adobe.com/enterprise/using/admin-roles.html) of [Ontwikkelaar](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in de [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Nadat u de API-referentie hebt gemaakt, moet een systeembeheerder de referentie aan een rol in het Experience Platform koppelen.
 
