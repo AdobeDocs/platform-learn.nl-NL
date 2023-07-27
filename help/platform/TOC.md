@@ -4,10 +4,10 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 8%
+source-wordcount: '965'
+ht-degree: 9%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 8%
    + [Gegevens uit databases samenvoegen](/help/platform/sources/ingest-data-from-databases.md)
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [Volgend-klare personalisatie met Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Problemen oplossen: SFTP-connector](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud-integratie {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
