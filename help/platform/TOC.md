@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
+source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '969'
 ht-degree: 8%
 
 ---
@@ -217,4 +217,3 @@ ht-degree: 8%
    + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Betere ervaringen opbouwen met klantprofielen](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [De Samenwerking van gegevens in de Context van Gegevens van de Eerste partij](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [Vertalen](translate.md)

@@ -2,15 +2,17 @@
 title: Gegevens opnemen via de Adobe Audience Manager-gegevensconnector
 description: Aangezien u uw processen en personeel aan beweging van Adobe Audience Manager aan Real-time Customer Data Platform aanpast, kunt u de Verbinding van Gegevens van de Audience Manager gebruiken om eigenschappen en segmenten van AAM in het Platform te brengen, hen te combineren met andere rijke gegevens (met inbegrip van PII), en hen te verzenden naar bestemmingspartners. Deze video bespreekt u de configuratie van de Verbinding van Gegevens van de AAM voor Real-Time CDP.
 feature: Sources
+topic: Integrations
+badgeIntegration: label="Integratie" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 3%
 
 ---
 
