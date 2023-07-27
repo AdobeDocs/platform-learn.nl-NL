@@ -4,10 +4,10 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
+source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 9%
+source-wordcount: '970'
+ht-degree: 8%
 
 ---
 
@@ -178,6 +178,7 @@ ht-degree: 9%
    + [Dashboards maken met BI-gereedschappen](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [De gegevens van uw klant opnieuw laden](/help/platform/queries/recharge-your-customer-data.md)
    + [Client verbinden met Query-service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Gegevens valideren in de datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schema&#39;s {#schemas}
    + [Overzicht](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Bouwstenen](/help/platform/schemas/schema-building-blocks.md)
