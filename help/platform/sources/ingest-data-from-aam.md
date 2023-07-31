@@ -1,6 +1,6 @@
 ---
 title: Gegevens opnemen via de Adobe Audience Manager-gegevensconnector
-description: Aangezien u uw processen en personeel aan beweging van Adobe Audience Manager aan Real-time Customer Data Platform aanpast, kunt u de Verbinding van Gegevens van de Audience Manager gebruiken om eigenschappen en segmenten van AAM in het Platform te brengen, hen te combineren met andere rijke gegevens (met inbegrip van PII), en hen te verzenden naar bestemmingspartners. Deze video bespreekt u de configuratie van de Verbinding van Gegevens van de AAM voor Real-Time CDP.
+description: Leer hoe te om de gegevensschakelaar van de Audience Manager te gebruiken om eigenschappen en segmenten van AAM in het Platform te brengen en hen met andere rijke gegevens te combineren.
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integratie" type="positive"
@@ -9,18 +9,20 @@ level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 97008a03dbafdca044bfc9c1fed3672feb7fe0f7
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '286'
 ht-degree: 3%
 
 ---
 
 # Gegevens opnemen via de Adobe Audience Manager-gegevensconnector
 
-Terwijl u uw processen en personeel opnieuw configureert om van Adobe Audience Manager naar Real-time Customer Data Platform (Real-Time CDP) te gaan, kunt u de gegevensconnector van de Audience Manager gebruiken om sporen en segmenten van AAM naar het Platform te brengen, deze te combineren met andere rijke gegevens (waaronder PII) en ze naar de bestemmingspartners te sturen. Deze video bespreekt u de configuratie van de AAM gegevensschakelaar voor Real-Time CDP.
+In deze integratievideo, leer hoe te om de gegevensschakelaar van de Audience Manager te gebruiken om eigenschappen en segmenten van AAM in het Platform te brengen en hen te combineren met andere rijke gegevens.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
+
+Terwijl u uw processen en personeel opnieuw configureert om van Adobe Audience Manager naar Real-time Customer Data Platform (Real-Time CDP) te gaan, kunt u de gegevensconnector van de Audience Manager gebruiken om sporen en segmenten van AAM naar het Platform te brengen, deze te combineren met andere rijke gegevens (waaronder PII) en ze naar de bestemmingspartners te sturen. Deze video bespreekt u de configuratie van de AAM gegevensschakelaar voor Real-Time CDP.
 
 >[!WARNING]
 >
