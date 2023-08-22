@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '989'
 ht-degree: 8%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 8%
 # Adobe Experience Platform-tutorials {#tutorials}
 
 + [Platform Tutorials](/help/platform/overview.md)
-+ Inleiding tot Platform {#intro-to-platform}
++ Inleiding tot platform {#intro-to-platform}
    + [Een klantervaring met Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Achter de schermen: een klantervaring met Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Overzicht van Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Belangrijkste mogelijkheden](/help/platform/intro-to-platform/key-capabilities.md)
    + [Toepassings- en intelligente services](/help/platform/intro-to-platform/application-and-intelligent-services.md)
-   + [Integratie met Experience Cloud-toepassingen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Integratie met Experience Cloud toepassingen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Hoofdgebruik](/help/platform/intro-to-platform/key-use-cases.md)
    + [Basisarchitectuur](/help/platform/intro-to-platform/basic-architecture.md)
    + [Gebruikersinterface](/help/platform/intro-to-platform/interface-tour.md)
@@ -123,7 +123,7 @@ ht-degree: 8%
       + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Real-Time CDP-segmenten in doel gebruiken](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Real-Time CDP-profielkenmerken gebruiken in Doel](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Gegevens activeren voor webinar van niet-Adobe-toepassingen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Gegevens activeren voor webinar van toepassingen zonder Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identiteiten {#identities}
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identiteitsgegevens labelen, opnemen en verifiëren](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -142,6 +142,11 @@ ht-degree: 8%
    + [Gegevens bijhouden](/help/platform/monitoring/monitoring-dashboard.md)
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Dataflows bewaken](/help/platform/monitoring/data-monitoring.md)
++ Ondersteuning van partnergegevens {#partner-data-support}
+   + [Overzicht van ondersteuning van partnergegevens](/platform/partner-data-support/partner-data-support-overview.md)
+   + [Offsite prospectie ondersteunen](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [Partnerkenmerken toevoegen aan profielen](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [Onsite aanpassen voor onbekende bezoekers](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Profielen {#profiles}
    + [Klantprofiel in realtime](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
@@ -205,7 +210,7 @@ ht-degree: 8%
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Problemen oplossen: SFTP-connector](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Experience Cloud-integratie {#experience-cloud}
++ Integratie van Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
