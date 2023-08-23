@@ -4,9 +4,9 @@ description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Geg
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Om de les te voltooien, moet u toestemming hebben om een markeringsbezit tot sta
 
 >[!NOTE]
 >
-> Platform launch (clientzijde) is nu [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform launch (clientzijde) is nu [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
 
 ## Leerdoelstellingen
 
@@ -136,7 +136,12 @@ Uw bibliotheek is gebouwd voor de nieuwe uitbreidingen en configuraties. Een ges
 
    De installatieinstructies bieden u een goed beginpunt voor de implementatie. Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Selecteer de **[!UICONTROL Swift]** tab onder **[!UICONTROL Initialisatiecode toevoegen]**. Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten.
+   >[!INFO]
+   >
+   >Voor de rest van deze zelfstudie gaat u **niet** gebruik de CocoaPods-instructies, maar gebruik in plaats daarvan een native Swift Package Manager (SPM)-gebaseerde setup.
+   >
+
+1. Selecteer de **[!UICONTROL Swift]** tab onder **[!UICONTROL Initialisatiecode toevoegen]**. Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Dit zal in meer details worden behandeld in [SDK&#39;s installeren](install-sdks.md).
 
 1. Kopiëren ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de **[!UICONTROL Omgevingsbestand-id]** en bewaar het op een plaats zoals u het later nodig hebt. Deze unieke id verwijst naar uw ontwikkelomgeving. Elke omgeving (Productie, Staging, Ontwikkeling) heeft zijn eigen unieke id-waarde.
 
@@ -146,14 +151,9 @@ Uw bibliotheek is gebouwd voor de nieuwe uitbreidingen en configuraties. Een ges
 >
 >De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->Voor de rest van deze zelfstudie bent u **niet** met de CocoaPods-instructies, maar bekijk een native Swift-pakketgebaseerde installatie.
-
-
 ## Architectuur van mobiele tags
 
-Als u bekend bent met de webversie van tags, voorheen Starten, is het belangrijk dat u de verschillen op mobiele apparaten begrijpt.
+Als u bekend bent met de webversie van Tags, voorheen Starten, is het belangrijk dat u de verschillen op mobiele apparaten begrijpt.
 
 * Op het web wordt een eigenschap tag gerenderd in JavaScript, die vervolgens (gewoonlijk) wordt gehost in de cloud. Er wordt rechtstreeks in de website naar dat JavaScript-bestand verwezen.
 
