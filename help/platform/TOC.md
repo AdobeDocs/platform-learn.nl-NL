@@ -4,7 +4,7 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 8%
@@ -143,10 +143,10 @@ ht-degree: 8%
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Dataflows bewaken](/help/platform/monitoring/data-monitoring.md)
 + Ondersteuning van partnergegevens {#partner-data-support}
-   + [Overzicht van ondersteuning van partnergegevens](/platform/partner-data-support/partner-data-support-overview.md)
-   + [Offsite prospectie ondersteunen](/platform/partner-data-support/offsite-prospecting-partner-data.md)
-   + [Partnerkenmerken toevoegen aan profielen](/platform/partner-data-support/partner-enrichment-partner-data.md)
-   + [Onsite aanpassen voor onbekende bezoekers](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
+   + [Overzicht van ondersteuning van partnergegevens](/help/platform/partner-data-support/partner-data-support-overview.md)
+   + [Offsite prospectie ondersteunen](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [Partnerkenmerken toevoegen aan profielen](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [Onsite aanpassen voor onbekende bezoekers](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Profielen {#profiles}
    + [Klantprofiel in realtime](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
