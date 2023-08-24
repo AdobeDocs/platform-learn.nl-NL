@@ -4,7 +4,7 @@ description: Leer hoe u in-app berichten voor een mobiele app maakt met Platform
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -123,6 +123,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 1. Ga naar de **[!UICONTROL Instellingen]** tab.
 
 1. Tikken **[!UICONTROL Bericht in de app]**. Het bericht in de app wordt weergegeven in uw app.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 

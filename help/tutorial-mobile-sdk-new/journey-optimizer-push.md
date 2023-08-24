@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -97,8 +97,8 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
 1. In de **[!UICONTROL Extensie installeren]** dialoogvenster
    1. Selecteer bijvoorbeeld een omgeving **[!UICONTROL Ontwikkeling]**.
    1. Selecteer de **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** gegevensset van de **[!UICONTROL Gebeurtenisgegevens]** vervolgkeuzelijst.
-      ![AJO-extensie-instellingen](assets/push-tags-ajo.png)
    1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
+      ![AJO-extensie-instellingen](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Als u uw eigen pushmelding wilt maken, moet u een gebeurtenis in Journey Optimiz
    1. Geef een **[!UICONTROL Beschrijving]** bijvoorbeeld `Test event to trigger push notifications in Luma app`.
 
    1. Selecteer het gebeurtenissenschema voor de mobiele app-ervaring dat u eerder hebt gemaakt in [Een XDM-schema maken](create-schema.md) van de **[!UICONTROL Schema]** lijst, bijvoorbeeld **[!UICONTROL Luma Mobile App Event-schema v.1]**.
-   1. Selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast de lijst Velden.
+   1. Selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast de **[!UICONTROL Velden]** lijst.
 
       ![Gebeurtenisstap 1 bewerken](assets/ajo-edit-event1.png)
 
