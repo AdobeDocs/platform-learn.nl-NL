@@ -3,10 +3,9 @@ title: Identiteit
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -52,35 +51,20 @@ Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experien
 
 U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma CRM-id) bijwerken wanneer de gebruiker zich aanmeldt bij de app.
 
-1. Navigeren naar **[!UICONTROL Aanmeldingsblad]** (in **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]**) in het app-project Xcode Luma en zoek naar `updateIdentities`:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator en vind `func updateIdentities(emailAddress: String, crmId: String)` functie-implementatie. Voeg de volgende code toe aan de functie.
 
-   ```swift {highlight="3,4"}
-   Button("Login") {
-       // call updaeIdentities
-       MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   ```swift
+   // Set up identity map
+   let identityMap: IdentityMap = IdentityMap()
    
-       // Send app interaction event
-       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-       dismiss()
-   }
-   .disabled(currentEmailId.isValidEmail == false)
-   .buttonStyle(.bordered)
-   ```
-
-1. Ga naar de `updateIdentities` functie-implementatie in **[!UICONTROL MobileSDK]** (in **[!UICONTROL Utils]**) in het app-project Xcode Luma. Voeg de volgende gemarkeerde code toe aan de functie.
-
-   ```swift {highlight="2-12"}
-   func updateIdentities(emailAddress: String, crmId: String) {
-       let identityMap: IdentityMap = IdentityMap()
-       // Add identity items
-       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-       identityMap.add(item:emailIdentity, withNamespace: "Email")
-       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+   // Add identity items to identity map
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-       // Update identities
-       Identity.updateIdentities(with: identityMap)
-   }
+   // Update identities
+   Identity.updateIdentities(with: identityMap)
    ```
 
    Deze code:
@@ -111,6 +95,13 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
       Identity.updateIdentities(with: identityMap) 
       ```
 
+1. Navigeren naar **[!UICONTROL Luminantie]** **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Aanmelden]** knop. Voeg de volgende code toe:
+
+   ```swift
+   // call updaeIdentities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
+
 
 >[!NOTE]
 >
@@ -121,27 +112,22 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 U kunt `removeIdentity` om de identiteit uit de opgeslagen cliënt-kant IdentityMap te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Als u deze API gebruikt, wordt de id niet verwijderd uit de grafiek of de identiteitsgrafiek van het gebruikersprofiel aan de serverzijde.
 
-1. Navigeren naar **[!UICONTROL Aanmeldingsblad]** (in **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]**) in het app-project Xcode Luma en zoek naar `removeIdentities`:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Algemeen]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator en voeg de volgende code aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
-   ```swift {highlight="3"}
-   Button("Logout", role: .destructive) {
-       // call removeIdentities
-       MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-       dismiss()                   
-   }
-   .buttonStyle(.bordered)
+   ```swift
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   // reset email and CRM Id to their defaults
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Voeg de volgende code toe aan de `removeIdentities` functie in `MobileSDK`:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Aanmeldingsblad]** in Xcode Project navigator en zoek de uit te voeren code wanneer het selecteren van **[!UICONTROL Afmelden]** knop. Voeg de volgende code toe:
 
-   ```swift {highlight="2-8"}
-   func removeIdentities(emailAddress: String, crmId: String) {
-       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-       // reset email and CRM Id to their defaults
-       currentEmailId = "testUser@gmail.com"
-       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
-   }
+   ```swift
+   // call removeIdentities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   dismiss()                   
    ```
 
 
@@ -150,9 +136,9 @@ U kunt `removeIdentity` om de identiteit uit de opgeslagen cliënt-kant Identity
 1. Controleer de [installatie-instructies](assurance.md) en sluit de simulator of het apparaat aan op Betrouwbaarheid.
 1. In de app Luma
    1. Selecteer de **[!UICONTROL Home]** tab.
-   1. Selecteer de **[!UICONTROL Aanmelden]** van rechtsboven.
+   1. Selecteer het <img src="assets/login.png" width="15" /> van rechtsboven.
    1. Geef een e-mailadres en een CRM-id op, of
-   1. Selecteer A| om een willekeurig **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
+   1. Selecteer <img src="assets/insert.png" width="15" /> om willekeurig een **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
    1. Selecteren **[!UICONTROL Aanmelden]**.
 
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">

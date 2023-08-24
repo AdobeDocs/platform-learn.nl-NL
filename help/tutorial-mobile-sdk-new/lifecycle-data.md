@@ -2,10 +2,9 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -51,23 +50,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## Wijzigingen in implementatie
 
-Nu kunt u bijwerken `SceneDelegate` om de levenscyclusgebeurtenissen te registreren:
+Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
 
-1. Als uw toepassing wordt gestart en de toepassing wordt hervat vanuit een achtergrondstatus, kan iOS mogelijk uw `sceneWillEnterForeground:` afgevaardigde methode en dit is waar u een gebeurtenis van het levenscyclusbegin wilt teweegbrengen. De gemarkeerde code toevoegen:
+1. Navigeer naar Luma > Luma > SceneDelegate in Xcode Project navigator.
 
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+1. Als uw toepassing wordt gestart en de toepassing wordt hervat vanuit een achtergrondstatus, kan iOS mogelijk uw `sceneWillEnterForeground:` afgevaardigde methode en dit is waar u een gebeurtenis van het levenscyclusbegin wilt teweegbrengen. Deze code toevoegen aan `func sceneWillEnterForeground(_ scene: UIScene)`:
+
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. Wanneer de app op de achtergrond wordt geplaatst, wilt u de verzameling van gegevens over de levenscyclus van uw app pauzeren `sceneDidEnterBackground:` gedelegeerde methode. De gemarkeerde code toevoegen:
+1. Wanneer de app op de achtergrond wordt geplaatst, wilt u de verzameling van levenscyclusgegevens uit de app pauzeren `sceneDidEnterBackground:` gedelegeerde methode. Deze code toevoegen aan  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 

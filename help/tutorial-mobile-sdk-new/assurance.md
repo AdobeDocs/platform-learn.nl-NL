@@ -3,10 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -43,17 +42,19 @@ Bevestig dat uw organisatie toegang tot Verzekering heeft door de volgende stapp
 
 ## Implementeren
 
-Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les hebt voltooid, vereist iOS ook de volgende toevoeging om de betrouwbaarheidssessie voor uw app te starten. De volgende code toevoegen aan **[!UICONTROL SceneDelegate]**:
+Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les hebt voltooid, vereist iOS ook de volgende toevoeging om de betrouwbaarheidssessie voor uw app te starten.
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL SceneDelegate]** in de projectnavigator van uw Xcode.
+
+1. De volgende code toevoegen aan `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -94,7 +95,7 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 1. Geef een **[!UICONTROL Naam van sessie]** zoals `Luma Mobile App Session` en de **[!UICONTROL Basis-URL]**, dit zijn de URL-schema&#39;s die u hebt ingevoerd in Xcode, gevolgd door `://`. Bijvoorbeeld: `lumatutorialswiftui://`.
 1. Selecteren **[!UICONTROL Volgende]**.
    ![betrouwbaarheidssessie maken](assets/assurance-create-session.png)
-1. In het dialoogvenster Nieuwe sessie maken:
+1. In de **[!UICONTROL Nieuwe sessie maken]** modale dialoog:
 
    Als u een fysiek apparaat gebruikt:
 

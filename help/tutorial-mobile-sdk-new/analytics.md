@@ -3,10 +3,9 @@ title: Analysetoewijzing
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 Zo ziet een verwerkingsregel met deze gegevens eruit:
 
-* U overschrijft de waarde van `App Screen Name (eVar2)` (1) met de waarde van `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` is ingesteld.
+* U **[!UICONTROL Waarde overschrijven van]** (1) **[!UICONTROL Schermnaam van app (eVar2)]** (2) met de waarde van **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (3) **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is ingesteld]** (5)
 
-* U kunt instellen `Add to Wishlist (Event 3)` tot `a.x.commerce.saveForLaters.value(Context)` indien `a.x.commerce.saveForLaters.value(Context)` is ingesteld.
+* U **[!UICONTROL Gebeurtenis instellen]** (6) **[!UICONTROL Toevoegen aan Wishlist (gebeurtenis 3)]** (7) tot **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is ingesteld]** 10.
 
 ![regels voor analytische verwerking](assets/analytics-processing-rules.png)
 

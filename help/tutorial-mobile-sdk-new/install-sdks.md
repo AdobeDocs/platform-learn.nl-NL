@@ -2,10 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -58,9 +57,10 @@ Nadat u alle pakketten hebt geïnstalleerd, voert u uw Xcode **[!UICONTROL Pakke
 
 ## Extensies importeren
 
-In Xcode, in de bron voor **[!UICONTROL AppDelegate]** en **[!UICONTROL MobileSDK]**, voegt u de volgende importbewerkingen toe.
+Navigeer in Xcode naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** en voeg de volgende import toe.
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -76,9 +76,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+Doe het zelfde voor **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+
 ## AppDelegate bijwerken
 
-In **AppDelegate**,
+Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **AppDelegate** in Xcode Project navigator.
 
 1. Stel de `@AppStorage` waarde voor `environmentFileId` naar de waarde voor het bestand-id van de ontwikkelomgeving die u hebt opgehaald van de tags in stap 6 van [SDK-installatie-instructies genereren](configure-tags.md#generate-sdk-install-instructions).
 
