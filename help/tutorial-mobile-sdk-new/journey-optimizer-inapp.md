@@ -4,7 +4,7 @@ description: Leer hoe u in-app berichten voor een mobiele app maakt met Platform
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -73,11 +73,11 @@ In deze zelfstudie gaat u de generieke API&#39;s en onafhankelijke API&#39;s voo
 1. Omlaag schuiven naar **[!UICONTROL Handeling]** en selecteert u **[!UICONTROL Inhoud bewerken]**.
 1. In de **[!UICONTROL Bericht in de app]** scherm:
    1. Selecteren **[!UICONTROL Modal]** als de **[!UICONTROL Berichtlay-out]**.
-   1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for **[!UICONTROL Media-URL]**.
-   1. Voer een **[!UICONTROL Koptekst]** bijvoorbeeld `Welcome to this Luma In-App Message` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Triggered by pushing that button in the app...`.
-   1. Enter **[!UICONTROL Afwijzen]** als de **[!UICONTROL Knop #1 tekst (primair)]**.
-   1. De voorvertoning wordt bijgewerkt.
-   1. Selecteren **[!UICONTROL Controleren om te activeren]**.
+   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for **[!UICONTROL Media-URL]**.
+   3. Voer een **[!UICONTROL Koptekst]** bijvoorbeeld `Welcome to this Luma In-App Message` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Triggered by pushing that button in the app...`.
+   4. Enter **[!UICONTROL Afwijzen]** als de **[!UICONTROL Knop #1 tekst (primair)]**.
+   5. De voorvertoning wordt bijgewerkt.
+   6. Selecteren **[!UICONTROL Controleren om te activeren]**.
       ![Editor in app](assets/ajo-in-app-editor.png)
 1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in de **[!UICONTROL Schema]** tegel.
    ![Plan voor revisie selecteren](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ In deze zelfstudie gaat u de generieke API&#39;s en onafhankelijke API&#39;s voo
    1. Klikken **[!UICONTROL Gereed]**.
       ![Triggerlogica](assets/ajo-trigger-logic.png)
 
-   U hebt een handeling track gedefinieerd, waarbij de **[!UICONTROL Handeling]** equals `in-app` en de **[!UICONTROL Contextgegevens]** met de handeling is een sleutelwaardepaar van `showMessage = true`.
+   U hebt een handeling track gedefinieerd, waarbij de **[!UICONTROL Handeling]** equals `in-app` en de **[!UICONTROL Contextgegevens]** met de handeling is een sleutelwaardepaar van `"showMessage" : "true"`.
 
 1. Terug in de **[!UICONTROL Luma - in-app berichtcampagne]** scherm, selecteren **[!UICONTROL Controleren om te activeren]**.
 1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren **[!UICONTROL Activeren]**.
@@ -103,14 +103,14 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 1. Ga naar Luma > Luminantie > Hulpmiddelen > MobileSDK in Xcode Project navigator, zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de `MobileCore.track` functie, gebaseerd op de parameters `action` en `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Ga naar Luma > Luminantie > Weergaven > Algemeen > ConfigView in Xcode Project Navigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
+1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL ConfigView]** in Xcode Project Navigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
