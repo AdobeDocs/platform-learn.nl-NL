@@ -4,9 +4,9 @@ description: Leer hoe u in-app berichten voor een mobiele app maakt met Platform
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,28 @@ Met Journey Optimizer kunt u uw reizen maken en in-app berichten naar bepaalde d
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* Toegang tot Adobe Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Ook hebt u voldoende rechten nodig voor de volgende Adobe Journey Optimizer-functies.
-   * Een campagne maken.
+* Toegang tot Adobe Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Adobe Journey Optimizer-functies.
+   * Een campagne beheren.
 * Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
 * Fysiek iOS-apparaat of simulator voor testen.
-* [Geregistreerde toepassings-id met APN](journey-optimizer-push.md#register-app-id-with-apn)
+* [Geregistreerde toepassings-id met Apple Push Notification Service](journey-optimizer-push.md#register-app-id-with-apn)
 * [Uw pushgegevens voor de app toegevoegd in Gegevensverzameling](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
 * [Extensie Adobe Journey Optimizer-tags geïnstalleerd](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
 * [Adobe Journey Optimizer geïmplementeerd in de app](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+
+
+## Leerdoelstellingen
+
+In deze les zult u
+
+* Registreer de toepassings-id bij de APN (Apple Push Notification service).
+* Een **[!UICONTROL App Surface]** in AJO.
+* Werk uw **[!UICONTROL schema]** om velden voor pushberichten op te nemen.
+* Installeer en configureer de **[!UICONTROL Adobe Journey Optimizer]** tagextensie.
+* Werk uw app bij om de AJO-tagextensie op te nemen.
+* Valideer installatie in Betrouwbaarheid.
+* Definieer uw eigen campagne en berichtervaring in de app in Journey Optimizer.
+* Verzend uw eigen in-app-bericht vanuit de app.
 
 
 ## Valideren met betrouwbaarheid
@@ -146,4 +160,4 @@ U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing pu
 >
 >U hebt nu de app voor berichten in de app ingeschakeld en een berichtencampagne in de app toegevoegd met Adobe Journey Optimizer en de Adobe Journey Optimizer-extensie voor de Adobe Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[Conclusie en volgende stappen](conclusion.md)**
+Volgende: **[Aanbiedingen weergeven met Journey Optimizer](journey-optimizer-offers.md)**
