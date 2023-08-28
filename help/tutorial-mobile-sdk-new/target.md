@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 0%
@@ -42,7 +42,7 @@ In deze les zult u
 * Werk uw schema bij om aanvraaggebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
 * Maak een eenvoudige A/B-test in Doel.
-* Werk uw app bij om de extensie Optimize op te nemen.
+* Werk uw app bij om de extensie Optimizer op te nemen.
 * Implementeer de A/B-test in uw app.
 * Implementatie valideren in Betrouwbaarheid.
 
@@ -192,9 +192,9 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * een XDM-woordenboek `xdmData`, met de ECID om het profiel te identificeren waarvoor u de A/B-test moet presenteren, en
    * de `decisionScope`, een array van locaties waar de A/B-test moet worden gepresenteerd.
 
-   Vervolgens roept de functie twee API&#39;s aan: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
+   Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionAT(location: String) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionAT(location: String) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
    * Hiermee worden de voorstellen voor het huidige profiel opgehaald op basis van het beslissingsbereik (de locatie die u in de A/B-test hebt gedefinieerd) en
    * geeft het resultaat weer in inhoud die op de juiste wijze in de app kan worden weergegeven.
 

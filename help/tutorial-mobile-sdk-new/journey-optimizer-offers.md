@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2309'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ In deze les zult u
 * Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
 * Werk uw schema bij om propositiegebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
-* Maak een eenvoudige A/B-test in Doel.
-* Werk uw app bij om de extensie Optimize op te nemen.
+* Maak een biedbesluit op basis van aanbiedingen in Journey Optimizer - Beslissingsbeheer.
+* Werk uw app bij om de extensie Optimizer op te nemen.
 * Voer aanbiedingen van Beslissingsbeheer in uw app uit.
 
 
@@ -283,7 +283,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
    * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de aanbiedingen moet presenteren.
    * define `decisionScope`, een object dat de plaatsing, de te gebruiken verzameling, de rangschikkingsformule en de subsidiabiliteitsregels bepaalt, zoals u hebt gedefinieerd in de gebruikersinterface Journey Optimizer - Decision Management.
-   * roept twee API&#39;s aan: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt. De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
+   * roept twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt. De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
 
      ```swift
      "scopes": [
@@ -298,7 +298,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
      U kunt echter elke gewenste implementatie gebruiken om ervoor te zorgen dat de optimaliser-API&#39;s de juiste parameters krijgen (`activityId`, `placementId` en `itemCount`), om een geldige waarde samen te stellen [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) -object voor uw implementatie.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL EdgeOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL EdgeOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
 
    * de voorstellen voor het huidige profiel ophaalt op basis van het beslissingsbereik (dat u hebt gedefinieerd in Journey Optimizer - Decision Management) en
    * geeft het resultaat weer in inhoud die op de juiste wijze in de app kan worden weergegeven.
