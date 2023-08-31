@@ -3,9 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ In deze les zult u:
 
 Bevestig dat uw organisatie toegang tot Verzekering heeft door de volgende stappen te voltooien:
 
-1. Bezoek [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. Bezoek [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. Meld u aan met uw Adobe ID-referenties voor het Experience Cloud.
 1. Als u de **[!UICONTROL Sessies]** , hebt u toegang. Als u de toegangspagina (bèta) ziet, selecteert u **[!UICONTROL Registreren]** om te registreren.
 
@@ -56,7 +56,7 @@ Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les heb
    }
    ```
 
-Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Ondertekenen
 
@@ -81,7 +81,7 @@ Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de onderte
 
    ![verzekerings-URL](assets/assurance-url-type.png)
 
-Voor meer informatie over URL-schema&#39;s in iOS raadpleegt u [Apple-documentatie](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+Voor meer informatie over URL-schema&#39;s in iOS raadpleegt u [Apple-documentatie](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 De verzekering werkt door een URL, of via browser of QR code te openen. Die URL begint met de basis-URL die de app opent en aanvullende parameters bevat. Deze unieke parameters worden gebruikt om de sessie te verbinden.
 
@@ -129,7 +129,7 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 
      ![betrouwbaarheidsgebeurtenissen](assets/assurance-events.png)
 
-Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) en [algemene documentatie](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 >[!SUCCESS]
 >
