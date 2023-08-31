@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implemente
 
 * Tagbibliotheek is gemaakt met de extensies die in het dialoogvenster [vorige les](configure-tags.md).
 * Bestandsidentiteitskaart voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
-* Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* Ervaring met [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Ervaring met [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Leerdoelstellingen
 
@@ -80,7 +80,7 @@ Doe het zelfde voor **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > 
 
 ## AppDelegate bijwerken
 
-Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **AppDelegate** in Xcode Project navigator.
+Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **AppDelegate** in de Xcode-projectnavigator.
 
 1. Stel de `@AppStorage` waarde voor `environmentFileId` naar de waarde voor het bestand-id van de ontwikkelomgeving die u hebt opgehaald van de tags in stap 6 van [SDK-installatie-instructies genereren](configure-tags.md#generate-sdk-install-instructions).
 
