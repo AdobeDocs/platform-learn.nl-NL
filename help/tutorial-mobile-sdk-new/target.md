@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Leer hoe u A/B-tests kunt uitvoeren in uw mobiele apps met Platform Mobile SDK e
 
 Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. In deze zelfstudie wordt de nadruk gelegd op de A/B-testfunctionaliteit van Target. Zie de [A/B-testoverzicht](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) voor meer informatie .
 
-Voordat u A/B-tests kunt uitvoeren met Target Premium, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd.
+Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd.
 
 >[!NOTE]
 >
->Deze les is optioneel en is alleen van toepassing op Adobe Target Premium-gebruikers die A/B-tests willen uitvoeren.
+>Deze les is optioneel en is alleen van toepassing op Adobe Target-gebruikers die A/B-tests willen uitvoeren.
 
 
 ## Vereisten
@@ -47,7 +47,13 @@ In deze les zult u
 * Implementatie valideren in Betrouwbaarheid.
 
 
-## Edge-configuratie bijwerken
+## Uw app instellen
+
+>[!TIP]
+>
+>Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) zelfstudie,
+
+### Edge-configuratie bijwerken
 
 Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Adobe Target worden doorgestuurd, moet u de Edge-configuratie bijwerken.
 
@@ -62,7 +68,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
    ![Doel toevoegen aan gegevensstroom](assets/edge-datastream-target.png)
 
 
-## Adobe Journey Optimizer installeren - extensie voor beslissingstags
+### Adobe Journey Optimizer installeren - extensie voor beslissingstags
 
 1. Navigeren naar **[!UICONTROL Tags]** en zoekt u de eigenschap voor de mobiele tag en opent u deze.
 1. Selecteren **[!UICONTROL Extensies]**.
@@ -73,7 +79,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
    ![Decisitie-extensie toevoegen](assets/tag-add-decisioning-extension.png)
 
 
-## Uw schema bijwerken
+### Uw schema bijwerken
 
 1. Navigeer naar UI voor gegevensverzameling en selecteer Schema&#39;s in de linkertrack.
 1. Selecteren **[!UICONTROL Bladeren]** in de bovenste balk.
@@ -84,7 +90,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 1. om de wijzigingen in uw schema op te slaan, selecteert u **[!UICONTROL Opslaan]** .
 
 
-## Setup valideren bij Betrouwbaarheid
+### Setup valideren bij Betrouwbaarheid
 
 Uw instellingen valideren in Betrouwbaarheid:
 
@@ -161,12 +167,12 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 >[!NOTE]
 >
->Als u het [SDK&#39;s installeren](install-sdks.md) , is de SDK al geïnstalleerd en kunt u stap #7 overslaan.
+>Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
 >
 
 1. Controleer in Xcode of [AEP optimaliseren](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]**.
-1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Zorgen `AEPOptimize` maakt deel uit van uw lijst met importbewerkingen.
 
    `import AEPOptimize`
 
@@ -239,17 +245,17 @@ Om de A/B-test in betrouwbaarheid te valideren:
 1. Selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Reviseren en simuleren]** ondergronds **[!UICONTROL ADOBE JOURNEY OPTIMIZER-BESLISSING]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Reviseren en simuleren]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
-1. Selecteren **[!UICONTROL Verzoeken]** op de bovenste balk. Uw doelverzoeken worden weergegeven.
+1. Selecteren **[!UICONTROL Verzoeken]** op de bovenste balk. U ziet uw **[!UICONTROL Doel]** verzoeken.
    ![Validatie van AJO-beslissingen](assets/assurance-decisioning-requests.png)
 
 1. U kunt de tabbladen Simuleren en Gebeurtenissenlijst bekijken voor meer functionaliteit bij het controleren van de instellingen voor de aanbiedingen van Target.
 
-## Implementeren in uw app
+## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om meer A/B-tests of andere doelactiviteiten, indien relevant en van toepassing, toe te voegen aan de Luma-app.
+U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing meer A/B-tests of andere doelactiviteiten (zoals Experience Targeting, Multivariate Test) toe te voegen aan de Luma-app.
 
 >[!SUCCESS]
 >
->U hebt de app nu ingeschakeld voor A/B-tests en de resultaten van een A/B-test weergegeven met Adobe Target en de Adobe Journey Optimizer - Decisioning-extensie voor de Adobe Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt de app voor A/B-tests ingeschakeld en de resultaten van een A/B-test met Adobe Target en de Adobe Journey Optimizer - Decisioning-extensie voor de Adobe Experience Platform Mobile SDK weergegeven.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Conclusie en volgende stappen](conclusion.md)**
