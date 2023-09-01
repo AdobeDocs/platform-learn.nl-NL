@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,11 @@ In deze les zult u
 * Voer aanbiedingen van Beslissingsbeheer in uw app uit.
 
 
-## Uw app instellen
+## Instellen
 
 >[!TIP]
 >
->Als u de app al hebt ingesteld als onderdeel van de [A/B-tests instellen met Doel](target.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
+>Als u uw omgeving al hebt ingesteld als onderdeel van het [A/B-tests instellen met Doel](target.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
 
 ### Edge-configuratie bijwerken
 
@@ -368,7 +368,7 @@ Nu hebt u alle gereedschappen om meer functionaliteit toe te voegen aan uw Journ
 
 * verschillende parameters toepassen op uw aanbiedingen (bijvoorbeeld prioriteit, aftopping)
 * profielkenmerken verzamelen in de app (zie [Profiel](profile.md)) en gebruik deze profielkenmerken om een publiek te maken. Gebruik deze soorten publiek vervolgens als onderdeel van de subsidiabiliteitsregels in uw besluit.
-* meer dan één beslissingsbereik combineren
+* meer dan één beslissingsbereik combineren.
 
 >[!SUCCESS]
 >

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ In deze les zult u
 * Verzend uw eigen pushmelding vanuit de app.
 
 
-## Uw app instellen
+## Instellen
 
 >[!TIP]
 >
->Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) Deze zelfstudie kunt u overslaan.
+>Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) Deze zelfstudie kunt u overslaan.
 
 ### Toepassings-id registreren bij APNS
 

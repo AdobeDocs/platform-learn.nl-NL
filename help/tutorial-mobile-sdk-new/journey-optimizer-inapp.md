@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ In deze les zult u
 * Definieer uw eigen campagne en berichtervaring in de app in Journey Optimizer.
 * Verzend uw eigen in-app-bericht vanuit de app.
 
-## Uw app instellen
+## Instellen
 
 >[!TIP]
 >
->Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer-pushberichten](journey-optimizer-push.md) Deze zelfstudie kunt u overslaan.
+>Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer-pushberichten](journey-optimizer-push.md) Deze zelfstudie kunt u overslaan.
 
 ### Toepassings-id registreren bij APNS
 

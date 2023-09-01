@@ -2,9 +2,9 @@
 title: Profiel
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 1%
 
 ---
@@ -128,4 +128,4 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 >
 >U hebt nu uw app ingesteld om kenmerken van profielen in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[Gegevens toewijzen aan Adobe Analytics](analytics.md)**
+Volgende: **[Geolocatieservices gebruiken](places.md)**
