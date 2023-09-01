@@ -2,9 +2,9 @@
 title: Profiel
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ In deze les zult u:
 
 Het zou handig zijn als u zich richt op en/of personalisatie om snel te weten of een gebruiker al eerder een aankoop heeft gedaan in de app. Laten we dat instellen in de Luma-app.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** en de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
 
    ```swift
    // Create a profile map
@@ -75,7 +75,7 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
 Zodra u het attribuut van een gebruiker hebt bijgewerkt, is het beschikbaar aan andere Adobe SDKs maar u kunt attributen ook uitdrukkelijk terugwinnen.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > Algemeen > **[!UICONTROL HomeView]** in Xcode Project navigator en vind `.onAppear` modifier. Voeg de volgende code toe:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > Algemeen > **[!UICONTROL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
 
    ```swift
    // Get attributes
@@ -113,9 +113,13 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
    1. Selecteer <img src="assets/addtocart.png" width="20" />.
    1. Selecteer <img src="assets/purchase.png" width="15" />.
-   1. Terug naar **[!UICONTROL Home]** scherm. U moet de bijgewerkte waarden voor **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. Terug naar **[!UICONTROL Home]** scherm. Er moet een badge worden toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. In de UI van de Verzekering, zou u een **[!UICONTROL UserProfileUpdate]** en **[!UICONTROL getUserAttributes]** gebeurtenissen met de bijgewerkte `profileMap` waarde.
    ![profiel valideren](assets/profile-validate.png)

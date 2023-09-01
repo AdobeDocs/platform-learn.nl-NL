@@ -3,9 +3,9 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '659'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,10 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
    * [Profiel](profile.md)
    * [Adobe Experience Platform](platform.md)
    * [Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)
+   * [Messaging tussen iMp-apps met Journey Optimizer](journey-optimizer-inapp.md)
+   * [Voorstellen met Journey Optimizer](journey-optimizer-offers.md)
+   * [A/B-tests met doel](target.md)
+
 * Geef Experience Cloud-parameters correct door aan een [webweergave](web-views.md).
 * De implementatie valideren met [Adobe Experience Platform Assurance](assurance.md).
 
@@ -74,12 +78,12 @@ Ook wordt aangenomen dat u vertrouwd bent met [!DNL Swift]. U hoeft geen expert 
 
 U kunt twee versies van de voorbeeldtoepassing downloaden.
 
-1. [Leeg](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): een versie zonder enige code van het Experience Cloud om de hands-on oefeningen in dit leerprogramma te voltooien
-1. [Volledig geïmplementeerd](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): een versie met volledige implementatie van het Experience Cloud ter referentie.
+1. [Leeg](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): een versie zonder enige code van het Experience Cloud om de hands-on oefeningen in dit leerprogramma te voltooien
+1. [Volledig geïmplementeerd](https://git.corp.adobe.com/Luma{target="_blank"}): een versie met volledige implementatie van het Experience Cloud ter referentie.
 
 Laten we beginnen!
 
->[!NOTE]
+>[!SUCCESS]
 >
 >Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

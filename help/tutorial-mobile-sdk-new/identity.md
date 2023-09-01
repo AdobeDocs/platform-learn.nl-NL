@@ -3,9 +3,9 @@ title: Identiteit
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experien
 
 U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma CRM-id) bijwerken wanneer de gebruiker zich aanmeldt bij de app.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator en vind `func updateIdentities(emailAddress: String, crmId: String)` functie-implementatie. Voeg de volgende code toe aan de functie.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateIdentities(emailAddress: String, crmId: String)` functie-implementatie. Voeg de volgende code toe aan de functie.
 
    ```swift
    // Set up identity map
@@ -112,7 +112,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 U kunt `removeIdentity` om de identiteit uit de opgeslagen cliënt-kant IdentityMap te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Als u deze API gebruikt, wordt de id niet verwijderd uit de grafiek of de identiteitsgrafiek van het gebruikersprofiel aan de serverzijde.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Algemeen]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator en voeg de volgende code aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Algemeen]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
    ```swift
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
@@ -122,7 +122,7 @@ U kunt `removeIdentity` om de identiteit uit de opgeslagen cliënt-kant Identity
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Aanmeldingsblad]** in Xcode Project navigator en zoek de uit te voeren code wanneer het selecteren van **[!UICONTROL Afmelden]** knop. Voeg de volgende code toe:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Afmelden]** knop. Voeg de volgende code toe:
 
    ```swift
    // call removeIdentities
@@ -144,7 +144,7 @@ U kunt `removeIdentity` om de identiteit uit de opgeslagen cliënt-kant Identity
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Kijk in het Web UI van de Verzekering voor **[!UICONTROL Identiteitsupdates rand]**gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
+1. Kijk in het Web UI van de Verzekering voor het Web **[!UICONTROL Identiteitsupdates rand]** gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
 1. Selecteer de gebeurtenis en bekijk de gegevens in het dialoogvenster **[!UICONTROL ACPExtensionEventData]** object. U moet de identiteiten zien die u hebt bijgewerkt.
    ![update identiteiten valideren](assets/identity-validate-assurance.png)
 

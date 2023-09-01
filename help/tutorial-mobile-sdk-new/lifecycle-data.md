@@ -2,9 +2,9 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
 
-1. Navigeer naar Luma > Luma > SceneDelegate in Xcode Project navigator.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL SceneDelegate]** in de Xcode-projectnavigator.
 
 1. Als uw toepassing wordt gestart en de toepassing wordt hervat vanuit een achtergrondstatus, kan iOS mogelijk uw `sceneWillEnterForeground:` afgevaardigde methode en dit is waar u een gebeurtenis van het levenscyclusbegin wilt teweegbrengen. Deze code toevoegen aan `func sceneWillEnterForeground(_ scene: UIScene)`:
 
@@ -87,24 +87,23 @@ De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Exp
 1. Selecteren **[!UICONTROL Eerste build]** als de te gebruiken bibliotheek.
 1. Selecteren **[!UICONTROL Nieuwe regel maken]**.
    ![Nieuwe regel maken](assets/rules-create-new.png)
-1. In de [!UICONTROL Regel maken] scherm, enter `Application Status` for **[!UICONTROL Naam]**.
+1. In de **[!UICONTROL Regel maken]** scherm, enter `Application Status` for **[!UICONTROL Naam]**.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** onder **[!UICONTROL EVENTS]**.
    ![Dialoogvenster Regel maken](assets/rule-create-name.png)
-1. In de [!UICONTROL Gebeurtenisconfiguratie] stap:
+1. In de **[!UICONTROL Gebeurtenisconfiguratie]** stap:
    1. Selecteren **[!UICONTROL Mobiele kern]** als de **[!UICONTROL Extensie]**.
    1. Selecteren **[!UICONTROL Voorgrond]** als de **[!UICONTROL Type gebeurtenis]**.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
       ![Configuratie van regelgebeurtenissen](assets/rule-event-configuration.png)
-1. Terug in het Create scherm van de Regel, selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast **[!UICONTROL Mobiele kern - Voorgrond]**.
+1. Terug in de **[!UICONTROL Regel maken]** scherm, selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast **[!UICONTROL Mobiele kern - Voorgrond]**.
    ![Volgende gebeurtenisconfiguratie](assets/rule-event-configuration-next.png)
-1. In de [!UICONTROL Gebeurtenisconfiguratie] stap:
+1. In de **[!UICONTROL Gebeurtenisconfiguratie]** stap:
    1. Selecteren **[!UICONTROL Mobiele kern]** als de **[!UICONTROL Extensie]**.
    1. Selecteren **[!UICONTROL Achtergrond]** als de **[!UICONTROL Type gebeurtenis]**.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
       ![Configuratie van regelgebeurtenissen](assets/rule-event-configuration-background.png)
-1. Terug in het Create scherm van de Regel, selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** onder **[!UICONTROL ACTIES]**.
-   ![Handeling voor toevoegen regel](assets/rule-action-button.png)
-1. In de [!UICONTROL Configuratie van handelingen] stap:
+      ![Handeling voor toevoegen regel](assets/rule-action-button.png)
+1. In de **[!UICONTROL Configuratie van handelingen]** stap:
    1. Selecteren **[!UICONTROL Adobe Experience Edge Network]** als de **[!UICONTROL Extensie]**.
    1. Selecteren **[!UICONTROL Door gebeurtenis naar Edge Network]** als de **[!UICONTROL Type handeling]**.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
