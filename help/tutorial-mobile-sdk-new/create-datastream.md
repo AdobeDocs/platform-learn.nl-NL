@@ -3,9 +3,9 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van 
 
 ## Vereisten
 
-Om een gegevensstroom tot stand te brengen, moet uw organisatie provisioned voor deze eigenschap in de interface van de Inzameling van Gegevens (vroeger [!UICONTROL Starten]) en u moet over gebruikersmachtigingen beschikken voor [!UICONTROL Experience Platform] > [!UICONTROL Gegevensverzameling] > **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]**.
+Om een gegevensstroom tot stand te brengen, moet uw organisatie provisioned voor deze eigenschap in de interface van de Inzameling van Gegevens (vroeger [!UICONTROL Starten]) en u moet gebruikersmachtigingen hebben voor het beheren en weergeven van gegevensstromen.
 
 ## Leerdoelstellingen
 
@@ -74,7 +74,7 @@ Mogelijk wilt u ook de Adobe Experience Platform-service inschakelen.
 
 1. Laat de dienst door omschakeling toe **[!UICONTROL Ingeschakeld]** op.
 
-1. Selecteer de **[!UICONTROL Gebeurtenisgegevens]** die u hebt gemaakt als onderdeel van de [Een gegevensset maken](platform.md#create-a-dataset) instructie, bijvoorbeeld **Dataset voor Luma Mobile-toepassingsgebeurtenis**
+1. Selecteer de **[!UICONTROL Gebeurtenisgegevens]** die u hebt gemaakt als onderdeel van de [Een gegevensset maken](platform.md#create-a-dataset) instructies, bijvoorbeeld **Dataset voor Luma Mobile-toepassingsgebeurtenis**
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
@@ -88,7 +88,7 @@ Mogelijk wilt u ook de Adobe Experience Platform-service inschakelen.
 >
 >Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Raadpleeg de documentatie voor meer informatie over gegevensstroominstellingen [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken van het Platform tot stand te brengen.
+Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken tot stand te brengen.
 
 >[!SUCCESS]
 >

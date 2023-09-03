@@ -3,9 +3,9 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '725'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 * Configureer een eigenschap voor een mobiele tag.
 * Opstelling een dataset van het Experience Platform (facultatief).
 * Tagextensies installeren en implementeren in een app.
+* Geef Experience Cloud-parameters correct door aan een [webweergave](web-views.md).
+* De implementatie valideren met [Adobe Experience Platform Assurance](assurance.md).
 * Voeg de volgende Adobe Experience Cloud-toepassingen/extensies toe:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Levenscyclusgegevensverzameling](lifecycle-data.md)
@@ -37,14 +39,14 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
    * [Toestemming](consent.md)
    * [Identiteit](identity.md)
    * [Profiel](profile.md)
+   * [Plaatsen](places.md)
+   * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)
    * [Messaging tussen iMp-apps met Journey Optimizer](journey-optimizer-inapp.md)
    * [Voorstellen met Journey Optimizer](journey-optimizer-offers.md)
    * [A/B-tests met doel](target.md)
 
-* Geef Experience Cloud-parameters correct door aan een [webweergave](web-views.md).
-* De implementatie valideren met [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
@@ -72,14 +74,18 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen h
 
 Alle klanten van het Experience Cloud zouden toegang tot de vereiste eigenschappen moeten hebben nodig om Mobiele SDK op te stellen.
 
-Ook wordt aangenomen dat u vertrouwd bent met [!DNL Swift]. U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+>[!NOTE]
+>
+>U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Men veronderstelt dat u enigszins vertrouwd bent met [!DNL Swift] en [!DNL SwiftUI]. U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+
 
 ## De app Luma downloaden
 
-U kunt twee versies van de voorbeeldtoepassing downloaden.
+U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen worden gedownload/gekloond vanaf [Github](https://git.corp.adobe.com/rmaur/Luma). U vindt twee mappen:
 
-1. [Leeg](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): een versie zonder enige code van het Experience Cloud om de hands-on oefeningen in dit leerprogramma te voltooien
-1. [Volledig geïmplementeerd](https://git.corp.adobe.com/Luma{target="_blank"}): een versie met volledige implementatie van het Experience Cloud ter referentie.
+
+1. [Start](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+1. [Voltooien](https://git.corp.adobe.com/Luma{target="_blank"}): een versie met de volledige implementatie ter referentie.
 
 Laten we beginnen!
 

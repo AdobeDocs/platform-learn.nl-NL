@@ -3,9 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ In deze les zult u:
 Bevestig dat uw organisatie toegang tot Verzekering heeft door de volgende stappen te voltooien:
 
 1. Bezoek [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Meld u aan met uw Adobe ID-referenties voor het Experience Cloud.
+1. Meld u aan met uw Adobe ID-gebruikersgegevens voor Experience Cloud.
 1. Als u de **[!UICONTROL Sessies]** , hebt u toegang. Als u de toegangspagina (bèta) ziet, selecteert u **[!UICONTROL Registreren]** om te registreren.
 
 ## Implementeren
@@ -56,6 +56,8 @@ Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les heb
    }
    ```
 
+   Met deze code wordt een verzekeringssessie gestart wanneer de app op de achtergrond wordt uitgevoerd en met een diepe koppeling wordt geopend.
+
 Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Ondertekenen
@@ -63,21 +65,21 @@ Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks
 Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de ondertekening bijwerken.
 
 1. Open het project in Xcode.
-1. Selecteren **[!UICONTROL Luminantie]** in de Navigator.
+1. Selecteren **[!UICONTROL Luminantie]** in de projectnavigator.
 1. Selecteer de **[!UICONTROL Luminantie]** doel.
 1. Selecteer de **Ondertekenen en mogelijkheden** tab.
-1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]**.
+1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
 
    ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png)
 
 ## Een basis-URL instellen
 
 1. Ga naar uw project in Xcode.
-1. Selecteren **[!UICONTROL Luminantie]** in de Navigator.
+1. Selecteren **[!UICONTROL Luminantie]** in de projectnavigator.
 1. Selecteer de **[!UICONTROL Luminantie]** doel.
 1. Selecteer de **Info** tab.
 1. Als u een basis-URL wilt toevoegen, schuift u omlaag naar **URL-typen** en selecteert u de **+** knop.
-1. Set **Id** aan de bundel-id waarin u zich hebt geconfigureerd [Ondertekenen](#signing) (bijvoorbeeld `com.adobe.luma.tutorial.swiftui`) en **URL-schema&#39;s** tot `lumatutorialswiftui`.
+1. Set **Id** aan de bundel-id waarin u zich hebt geconfigureerd [Ondertekenen](#signing) (bijvoorbeeld `com.adobe.luma.tutorial.swiftui`) en stelt een **URL-schema&#39;s** bijvoorbeeld `lumatutorialswiftui`.
 
    ![verzekerings-URL](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
    Als u een simulator gebruikt:
 
    1. Selecteren **[!UICONTROL Koppeling kopiëren]**.
-   1. De diepe koppeling kopiëren met de kopie ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe koppeling om de app met Safari in de simulator te openen.
+   1. De diepe koppeling kopiëren met ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  en gebruik de diepe koppeling om de app met Safari in de simulator te openen.
       ![Koppeling naar kopie voor controle](assets/assurance-copy-link.png)
 
 1. Wanneer de app wordt geladen, ziet u een modaal dialoogvenster waarin u wordt gevraagd de pincode in te voeren die in stap 7 wordt getoond.
@@ -119,15 +121,15 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 1. Als de verbinding tot stand is gebracht, ziet u:
    * Er zweeft een verzekeringspictogram boven op uw app.
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * De updates van het Experience Cloud die door in Assurance web-based UI komen, die tonen:
+   * De updates van het Experience Cloud die door in Assurance UI komen, die tonen:
 
       1. Ervaar gebeurtenissen die afkomstig zijn uit de app.
       1. Details van een geselecteerde gebeurtenis.
       1. Het apparaat en de tijdlijn.
 
-     ![betrouwbaarheidsgebeurtenissen](assets/assurance-events.png)
+         ![betrouwbaarheidsgebeurtenissen](assets/assurance-events.png)
 
 Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

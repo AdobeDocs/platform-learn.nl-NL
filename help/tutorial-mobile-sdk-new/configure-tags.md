@@ -3,7 +3,7 @@ title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Uw bibliotheek is gebouwd voor de nieuwe uitbreidingen en configuraties. Een ges
 
    ![home-scherm van omgevingen](assets/tags-environments.png)
 
-1. In de [!UICONTROL Instructies voor mobiele installatie] selecteert u de **[!UICONTROL iOS]** tab.
+1. In de **[!UICONTROL Instructies voor mobiele installatie]** selecteert u de **[!UICONTROL iOS]** tab.
 
 1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [documentatie](https://cocoapods.org/).
 

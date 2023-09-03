@@ -2,9 +2,9 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,8 @@ De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Exp
    1. Selecteren **[!UICONTROL Achtergrond]** als de **[!UICONTROL Type gebeurtenis]**.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
       ![Configuratie van regelgebeurtenissen](assets/rule-event-configuration-background.png)
-      ![Handeling voor toevoegen regel](assets/rule-action-button.png)
+1. Terug in de **[!UICONTROL Regel maken]** scherm, selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** ondergronds **[!UICONTROL ACTIES]**.
+   ![Handeling voor toevoegen regel](assets/rule-action-button.png)
 1. In de **[!UICONTROL Configuratie van handelingen]** stap:
    1. Selecteren **[!UICONTROL Adobe Experience Edge Network]** als de **[!UICONTROL Extensie]**.
    1. Selecteren **[!UICONTROL Door gebeurtenis naar Edge Network]** als de **[!UICONTROL Type handeling]**.

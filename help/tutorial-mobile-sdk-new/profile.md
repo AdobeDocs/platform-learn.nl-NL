@@ -2,10 +2,10 @@
 title: Profiel
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
@@ -41,16 +41,14 @@ In deze les zult u:
 
 ## Gebruikerskenmerken instellen en bijwerken
 
-Het zou handig zijn als u zich richt op en/of personalisatie om snel te weten of een gebruiker al eerder een aankoop heeft gedaan in de app. Laten we dat instellen in de Luma-app.
+Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel te weten of een gebruiker in het verleden of onlangs een aankoop heeft gedaan. Laten we dat instellen in de Luma-app.
 
 1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ Het zou handig zijn als u zich richt op en/of personalisatie om snel te weten of
 
    1. Hiermee wordt een element aan het woordenboek toegevoegd met `attributeName` (bijvoorbeeld `isPaidUser`), en `attributeValue` (bijvoorbeeld `yes`).
 
-   1. Gebruikt de `profileMap` woordenboek als een waarde voor de `attributeDict` parameter van de `UserProfile.updateUserAttributes` API-aanroep.
+   1. Gebruikt de `profileMap` woordenboek als een waarde voor de `attributeDict` parameter van de [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API-aanroep.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Producten]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de aankopen <img src="assets/purchase.png" width="15" /> knop):
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Producten]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de aankopen <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Gebruikerskenmerken ophalen
 
-Zodra u het attribuut van een gebruiker hebt bijgewerkt, is het beschikbaar aan andere Adobe SDKs maar u kunt attributen ook uitdrukkelijk terugwinnen.
+Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor andere Adobe-SDK&#39;s, maar u kunt kenmerken ook expliciet ophalen, zodat de toepassing zich naar wens gedraagt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > Algemeen > **[!UICONTROL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ Zodra u het attribuut van een gebruiker hebt bijgewerkt, is het beschikbaar aan 
 
    Deze code:
 
-   1. roept de `UserProfile.getUserAttributes` sluiting met de `iPaidUser` kenmerknaam als één element in het dialoogvenster `attributeNames` array.
+   1. roept de [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `iPaidUser` kenmerknaam als één element in het dialoogvenster `attributeNames` array.
    1. Vervolgens wordt gecontroleerd op de waarde van de optie `isPaidUser` kenmerk en wanneer `yes`, plaatst een badge op de <img src="assets/paiduser.png" width="20" /> in de werkbalk rechtsboven.
 
 Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
    1. Verplaats het pictogram Verzekering naar links.
    1. Selecteren **[!UICONTROL Home]** in de tabbalk.
    1. Als u het aanmeldingsblad wilt openen, selecteert u de optie <img src="assets/login.png" width="15" /> knop.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de <img src="assets/insert.png" width="15" /> knop .
    1. Selecteren **[!UICONTROL Aanmelden]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. Selecteren **[!UICONTROL Producten]** in de tabbalk.
    1. Selecteer één product.
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
    1. Selecteer <img src="assets/addtocart.png" width="20" />.
    1. Selecteer <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. Terug naar **[!UICONTROL Home]** scherm. Er moet een badge worden toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

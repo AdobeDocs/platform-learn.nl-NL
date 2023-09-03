@@ -3,9 +3,9 @@ title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
    ![ExperienceEvent selecteren vanuit vervolgkeuzelijst](assets/schema-create.png)
 
-1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Toevoegen** naast [!UICONTROL Veldgroepen].
+1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Toevoegen** naast **[!UICONTROL Veldgroepen]**.
 
    ![Veldgroep toevoegen](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
    U wordt teruggebracht naar het hoofdscherm van de schemacompositie waar u alle beschikbare gebieden kunt zien.
 
-1. Geef uw schema een naam door te selecteren **[!UICONTROL Naamloos schema]** van linksboven en vervolgens een **[!UICONTROL Weergavenaam]** &amp; **[!UICONTROL Beschrijving]** bijvoorbeeld `Luma Mobile App Event Schema` en `Schema for Luma mobile app experience events.`
+1. Geef uw schema een naam door te selecteren **[!UICONTROL Naamloos schema]** van de **[!UICONTROL Samenstelling]** deelvenster (onder) **[!UICONTROL Schema]**) en een **[!UICONTROL Weergavenaam]** &amp; **[!UICONTROL Beschrijving]** bijvoorbeeld `Luma Mobile App Event Schema` en `Schema for Luma mobile app experience events.`
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
@@ -125,8 +125,8 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 >[!NOTE]
 >
 >Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
->
->De `Consumer Experience Event` heeft een gegevenstype genaamd `Web information`, waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
+
+De [!UICONTROL Consumentenervaringsgebeurtenis] veldgroep heeft een gegevenstype genaamd [!UICONTROL Webinformatie], waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
 
 ## Een aangepast gegevenstype maken
 
@@ -152,9 +152,8 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
 
 1. Als u een veld wilt toevoegen, selecteert u de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knop.
 
-   Dit veld is een containerobject voor toepassingsinteractie.
 
-1. Een kamelenhoofdletter bieden **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL Weergavenaam]** `App Interaction`en selecteert u `Object` van de **[!UICONTROL Type]** lijst.
+1. Dit veld is een containerobject voor toepassingsinteractie. Geef dus een kamelcase op. **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL Weergavenaam]** `App Interaction`en selecteert u `Object` van de **[!UICONTROL Type]** lijst.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
@@ -180,7 +179,7 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
 
 1. Schuif naar de onderkant van de rechterrail en selecteer **[!UICONTROL Toepassen]**.
 
-1. Om een `appStateDetails` object dat een **[!UICONTROL Meetlat]** veld aangeroepen `screenView` en twee **[!UICONTROL String]** velden aangeroepen `screenName` en `screenType` Volg dezelfde stappen als bij het maken van de **[!UICONTROL appInteraction]** object.
+1. Om een `appStateDetails` object dat een **[!UICONTROL Meetlat]** veld aangeroepen `screenView` en twee **[!UICONTROL String]** velden aangeroepen `screenName` en `screenType`Volg dezelfde stappen als bij het maken van de **[!UICONTROL appInteraction]** object.
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
@@ -196,7 +195,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
    ![Nieuwe veldgroep toevoegen](assets/schema-fieldgroup-add.png)
 
-1. Een aangepaste veldgroep maken door de optie **[!UICONTROL Nieuwe veldgroep maken]** keuzerondje boven.
+1. Selecteren **[!UICONTROL Nieuwe veldgroep maken]**.
 
 1. Geef een **[!UICONTROL Weergavenaam]** en **[!UICONTROL Beschrijving]**, bijvoorbeeld `App Interactions` en `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 1. Geef in de rechterspoorlijn een **[!UICONTROL Veldnaam]** van `appInformation`, **[!UICONTROL Weergavenaam]** van `App Information`en **[!UICONTROL Type]** van `App Information`.
 
-1. Selecteren **[!UICONTROL Interacties tussen toepassingen]** van de **[!UICONTROL Type]** vervolgkeuzelijst, het gegevenstype dat u in de vorige oefening hebt gemaakt.
+1. Selecteren **[!UICONTROL Interacties tussen toepassingen]** van de **[!UICONTROL Type]** drop-down, dat het type van douanegegevens is u in de vorige oefening creeerde.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
@@ -220,7 +219,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 >[!NOTE]
 >
->Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst. Dus `_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
+>Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst. Dus `_techmarketingdemos`, die in de schermafbeeldingen worden gebruikt, wordt vervangen door de unieke waarde van uw organisatie.
 
 
 >[!SUCCESS]

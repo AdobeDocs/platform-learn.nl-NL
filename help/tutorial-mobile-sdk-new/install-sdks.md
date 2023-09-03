@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 hide: true
-source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implemente
 
 ## Vereisten
 
-* Tagbibliotheek is gemaakt met de extensies die in het dialoogvenster [vorige les](configure-tags.md).
+* Er is een tagbibliotheek gemaakt met de extensies die in het dialoogvenster [vorige les](configure-tags.md).
 * Bestandsidentiteitskaart voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
-* Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Lege bestanden gedownload [voorbeeldapp](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * Ervaring met [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Leerdoelstellingen
@@ -44,10 +44,10 @@ In Xcode gebruiken **[!UICONTROL Bestand]** > **[!UICONTROL Pakketten toevoegen.
 | [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | Met de mobiele extensie AEP Edge Identity kunnen identiteitsgegevens van gebruikers van een mobiele toepassing worden verwerkt wanneer de SDK van Adobe Experience Platform en de extensie Edge Network worden gebruikt. |
 | [AEP randgoedkeuring](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | Met de mobiele extensie AEP Consent Collection Collection kunnen toestemmingsvoorkeuren worden verzameld vanuit de mobiele toepassing wanneer de SDK van Adobe Experience Platform en de Edge Network-extensie worden gebruikt. |
 | [AEP-gebruikersprofiel](https://github.com/adobe/aepsdk-userprofile-ios.git) | De extensie Adobe Experience Platform-gebruikersprofiel voor mobiele apparaten is een extensie voor het beheren van gebruikersprofielen voor de Adobe Experience Platform-SDK. |
-| [AEP-plaatsen](https://github.com/adobe/aepsdk-places-ios) | Adobe Experience Platform Places-extensie is een extensie voor de Adobe Experience Platform Swift SDK. Met de extensie AEPPlaces kunt u gebeurtenissen voor geolocatie bijhouden zoals gedefinieerd in de gebruikersinterface van Plaatsen van Adobe en in de regels voor het starten van Adoben. |
-| [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios.git) | De extensie AEP Messaging is een extensie voor de Adobe Experience Platform Swift SDK. Met de AEP Messaging-extensie kunt u tokens voor pushmeldingen verzenden en doorklikken op pushberichten doorsturen naar de Adobe Experience Platform. |
+| [AEP-plaatsen](https://github.com/adobe/aepsdk-places-ios) | Met de extensie AEPPlaces kunt u gebeurtenissen voor geolocatie bijhouden zoals gedefinieerd in de gebruikersinterface van Plaatsen van Adobe en in de regels voor de tag voor gegevensverzameling van Adoben. |
+| [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios.git) | Met de AEP Messaging-extensie kunt u tokens voor pushmeldingen verzenden en doorklikken op pushberichten doorsturen naar de Adobe Experience Platform. |
 | [AEP optimaliseren](https://github.com/adobe/aepsdk-optimize-ios) | De extensie AEP optimaliseren biedt API&#39;s om realtime workflows voor personalisatie in de Adobe Experience Platform Mobile SDK&#39;s mogelijk te maken met Adobe Target of Adobe Journey Optimizer Offer decisioning. Hiervoor is `AEPCore` en `AEPEdge` extensies om verpersoonlijkingsquerygebeurtenissen naar het Edge-netwerk van Experience te verzenden. |
-| [AEP-betrouwbaarheid](https://github.com/adobe/aepsdk-assurance-ios.git) | Betrouwbaarheid (alias project Griffon) is een nieuw, vernieuwend product waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet in uw mobiele app. |
+| [AEP-betrouwbaarheid](https://github.com/adobe/aepsdk-assurance-ios.git) | Betrouwbaarheid (alias project Griffon) is een nieuw, vernieuwend product waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet in uw mobiele app. Met deze extensie wordt uw app voor betrouwbaarheidsverklaring ingeschakeld. |
 
 
 Nadat u alle pakketten hebt geïnstalleerd, voert u uw Xcode **[!UICONTROL Pakketafhankelijke onderdelen]** scherm moet er als volgt uitzien:
@@ -57,7 +57,7 @@ Nadat u alle pakketten hebt geïnstalleerd, voert u uw Xcode **[!UICONTROL Pakke
 
 ## Extensies importeren
 
-Navigeer in Xcode naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** en voeg de volgende import toe.
+Navigeer in Xcode naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** en zorg ervoor dat de volgende importbewerkingen deel uitmaken van dit bronbestand.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -91,6 +91,7 @@ Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **App
 1. Voeg de volgende code toe aan de `application(_, didFinishLaunchingWithOptions)` functie.
 
    ```swift
+   // Define extensions
    let extensions = [
        AEPIdentity.Identity.self,
        Lifecycle.self,
@@ -105,6 +106,7 @@ Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **App
        Assurance.self
    ]
    
+   // Register extensions
    MobileCore.registerExtensions(extensions, {
        // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
        Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -120,10 +122,6 @@ Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **App
    
        // assume unknown, adapt to your needs.
        MobileCore.setPrivacyStatus(.unknown)
-   
-       // update version and build
-       Logger.configuration.info("Luma - Updating version and build number...")
-       SettingsBundleHelper.setVersionAndBuildNumber()
    })
    ```
 
@@ -132,6 +130,8 @@ De bovenstaande code doet het volgende:
 1. Registreert de vereiste extensies.
 1. Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
 1. Schakelt foutopsporingslogbestand in. Meer details en opties vindt u in het gedeelte [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. Start levenscycluscontrole. Zie [Levenscyclus](lifecycle-data.md) voor meer informatie.
+1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [Toestemming](consent.md) voor meer informatie.
 
 >[!IMPORTANT]
 >

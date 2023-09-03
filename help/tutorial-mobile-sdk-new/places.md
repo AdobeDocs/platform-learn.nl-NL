@@ -2,9 +2,9 @@
 title: Plaatsen
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 1. Navigeren naar **[!UICONTROL Tags]** en zoekt u de eigenschap voor de mobiele tag en opent u deze.
 1. Selecteren **[!UICONTROL Extensies]**.
 1. Selecteren **[!UICONTROL Catalogus]**.
-1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer - Beslissing]** extensie.
-1. De extensie installeren. Voor de extensie is geen aanvullende configuratie vereist.
+1. Zoeken naar **[!UICONTROL Plaatsen]** extensie.
+1. De extensie installeren.
 
    ![Decisitie-extensie toevoegen](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Controleren of uw schema, zoals gedefinieerd in [Schema maken](create-schema.md)
 
 ### De tag bijwerken
 
-De extensie Plaatsen biedt functionaliteit om gebeurtenissen voor geolocatie te controleren en stelt u in staat handelingen te activeren op basis van deze gebeurtenissen. U kunt deze functionaliteit gebruiken om de API-codering die u in de app moet implementeren, tot een minimum te beperken.
+De extensie Plaatsen voor tags biedt functionaliteit om gebeurtenissen met betrekking tot geolocatie te controleren en biedt u de mogelijkheid om handelingen te activeren op basis van deze gebeurtenissen. U kunt deze functionaliteit gebruiken om de API-codering die u in de app moet implementeren, tot een minimum te beperken.
 
 **Gegevenselementen**
 
@@ -128,7 +128,7 @@ Eerst maakt u verschillende gegevenselementen.
 1. In de **[!UICONTROL Gegevenselement maken]** scherm, ga een naam in, bijvoorbeeld `Name - Entered`.
 1. Selecteren **[!UICONTROL Plaatsen]** van de **[!UICONTROL Extensie]** lijst.
 1. Selecteren **[!UICONTROL Naam]** van de **[!UICONTROL Type gegevenselement]** lijst.
-1. Selecteren **[!UICONTROL Huidige POI]**onder **[!UICONTROL DOEL]**.
+1. Selecteren **[!UICONTROL Huidige POI]** ondergronds **[!UICONTROL DOEL]**.
 1. Selecteren **[!UICONTROL Opslaan in bibliotheek]**.
    ![Gegevenselement](assets/tags-create-data-element.png)
 
@@ -148,9 +148,9 @@ Eerst maakt u verschillende gegevenselementen.
 
 **Regels**
 
-Nu gaat u regels bepalen om met deze gegevenselementen te werken.
+Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
 
-1. Selecteren **[!UICONTROL Regels]** van de linkerspoorstaaf.
+1. In uw eigenschap tag. selecteren **[!UICONTROL Regels]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Regel toevoegen]**.
 1. In de **[!UICONTROL Regel maken]** scherm, ga een naam voor de regel in, bijvoorbeeld `POI - Entry`.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ondergronds **[!UICONTROL EVENTS]**.
@@ -158,7 +158,7 @@ Nu gaat u regels bepalen om met deze gegevenselementen te werken.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
       ![Gebeurtenis Tag](assets/tags-event-mobile-core.png).
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ondergronds **[!UICONTROL ACTIES]**.
-   1. Selecteren **[!UICONTROL Mobiele kern]** van **[!UICONTROL Extensie]** list, selecteer **[!UICONTROL Gegevens bijvoegen]** van **[!UICONTROL Type handeling]** lijst. Met deze handeling worden gegevens over de lading gekoppeld.
+   1. Selecteren **[!UICONTROL Mobiele kern]** van de **[!UICONTROL Extensie]** list, selecteer **[!UICONTROL Gegevens bijvoegen]** van **[!UICONTROL Type handeling]** de lijst. Met deze handeling worden gegevens over de lading gekoppeld.
    1. In de **[!UICONTROL JSON Payload]**, plakt u de volgende payload:
 
       ```json
@@ -183,7 +183,7 @@ Nu gaat u regels bepalen om met deze gegevenselementen te werken.
       }
       ```
 
-      De `{%% ... %%}` u kunt waarden ook eenvoudig invoegen door de optie ![Gegevens](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) naast het dialoogvenster en het selecteren van een gegevenselement in het dialoogvenster.
+      U kunt ook invoegen `{%% ... %%}` plaatsaanduidingswaarden voor gegevenselementen in JSON door de ![Gegevens](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). In een pop-updialoogvenster kunt u elk gegevenselement kiezen dat u hebt gemaakt.
 
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
       ![Tags, actie](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Alle wijzigingen in de tag worden gepubliceerd
 Uw instellingen valideren in Betrouwbaarheid:
 
 1. Ga naar de betrouwbaarheidsinterface.
-1. Indien niet reeds beschikbaar in de linkerspoorstaaf. selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Gebeurtenissen]** en **[!UICONTROL Toewijzen en simuleren]** ondergronds **[!UICONTROL PLAATSINGSSERVICE]**.
+1. Indien niet reeds beschikbaar in het linkerspoor, selecteer **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Gebeurtenissen]** en **[!UICONTROL Toewijzen en simuleren]** ondergronds **[!UICONTROL PLAATSINGSSERVICE]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Toewijzen en simuleren]** in het linkerspoor.
 1. Selecteer een van de POI&#39;s die zijn gedefinieerd in de service Plaatsen en selecteer in het pop-upvenster ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Invoergebeurtenis simuleren]**.
@@ -291,12 +291,21 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeer naar Luma > Luma > Hulpmiddelen > MobileSDK in de Xcode-projectnavigator en zoek de functie func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion: CLRegion) async. Deze functie loopt om de [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API.
-1. Navigeer naar Luma > Luma > Weergaven > Locatie > GeofenceSheet in de projectnavigator van Xcode.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Voeg de volgende code toe:
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   Dit [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatiegegevens aan de dienst van Plaatsen mee.
+
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Locatie]** > **[!UICONTROL GeofenceSheet]** in Xcode&#39;s Project navigator.
 
    1. Voer voor de knop Item de volgende code in
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,12 +314,13 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    1. Voer voor de knop Afsluiten de volgende code in
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
    ```
 
-Het is voorbij het onderwerp van dit leerprogramma om details over de implementatie van de plaatsleider binnen iOS te verklaren.
+Het is buiten het onderwerp van deze zelfstudie om details over de implementatie van locatiebeheer binnen iOS uit te leggen.
 
 
 ## Valideren met uw app
@@ -321,13 +331,13 @@ Het is voorbij het onderwerp van dit leerprogramma om details over de implementa
 
 1. Verplaats de kaart om ervoor te zorgen dat de blauwe cirkel in het midden boven op een van je POI&#39;s ligt, bijvoorbeeld Londen.
 
-1. Tik op blauw <img src="assets/geobutton.png" width="20" /> herhaaldelijk tot u de categorie en de naam bij het bodemrecht ziet.
+1. Tik op <img src="assets/geobutton.png" width="20" /> herhaaldelijk tot u de categorie en de naam bij het bodemrecht ziet.
 
-1. Tik op het label van de POI, die het POI-blad in de buurt opent.
+1. Tik op het label van de POI, die het **[!UICONTROL Nearby POI]** blad.
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. Druk op de knoppen Item of Afsluiten om geolocatiegebeurtenissen vanuit de app te simuleren.
+1. Druk op **[!UICONTROL Invoer]** of **[!UICONTROL Afsluiten]** knoppen om geofence-entry- en geofence exit-gebeurtenissen uit de app te simuleren.
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ Het is voorbij het onderwerp van dit leerprogramma om details over de implementa
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Aangezien u de gebeurtenissen aan het Netwerk van de Rand en door uw gegevensstroom aan Experience Platform hebt doorgestuurd, zou u de ervaringsgebeurtenissen moeten zien die voor het profiel verschijnen dat in app wordt gebruikt. Deze ervaringen kunnen worden gebruikt om reizen in Journey Optimizer te starten (zie [pushmelding](journey-optimizer-inapp.md) en [in-app-berichten](journey-optimizer-push.md) met Journey Optimizer). Het gebruikelijke voorbeeld om een pushmelding naar uw app te sturen wanneer iemand zich in de geofence van een fysieke winkel begeeft.
+U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Nadat u de gebeurtenissen naar Edge Network hebt doorgestuurd, kunt u de app voor [Experience Platform](platform.md)worden de ervaringsgebeurtenissen weergegeven voor het profiel dat wordt gebruikt in de app.
 
-U hebt een implementatie van de functionaliteit voor uw app gezien, voornamelijk door de service Plaatsen en gegevenselementen en -regels die u in de eigenschap Tag hebt gedefinieerd. U kunt dezelfde functionaliteit ook rechtstreeks in uw app implementeren met de [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (zie [Gebeurtenissen](events.md) voor meer informatie) met een XDM-lading die een gevuld placeContext-object bevat.
+In het Journey Optimizer gedeelte van deze zelfstudie ziet u dat ervaringsgebeurtenissen kunnen worden gebruikt om ritten te activeren (zie [pushmelding](journey-optimizer-inapp.md) en [in-app-berichten](journey-optimizer-push.md) met Journey Optimizer). Bijvoorbeeld, het gebruikelijke voorbeeld om uw toepassingsgebruiker een dupbericht met één of andere productbevordering te verzenden wanneer die gebruiker de geofence van een fysieke opslag ingaat.
+
+U hebt een implementatie van de functionaliteit voor uw app gezien, voornamelijk door de service Plaatsen en gegevenselementen en -regels die u in de eigenschap Tag hebt gedefinieerd. Hierdoor wordt de code in uw app geminimaliseerd. U kunt dezelfde functionaliteit ook rechtstreeks in uw app implementeren met de [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (zie [Gebeurtenissen](events.md) voor meer informatie) met een XDM nuttige lading die een bevolkt bevat `placeContext` object.
 
 >[!SUCCESS]
 >

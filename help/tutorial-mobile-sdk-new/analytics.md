@@ -3,9 +3,9 @@ title: Analysetoewijzing
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabel
 
 ### Voorbeeld 1 - s.products
 
-Een goed voorbeeld is de [productvariabele](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die niet kunnen worden gevuld met verwerkingsregels. Met een implementatie XDM, gaat u alle noodzakelijke gegevens in productListItems en s.products automatisch door via afbeelding Analytics.
+Een goed voorbeeld is de [productvariabele](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die niet kunnen worden gevuld met verwerkingsregels. Met een implementatie XDM, gaat u alle noodzakelijke gegevens binnen over `productListItems` en `s.products` worden automatisch ingevuld via Analytics-toewijzing.
 
 Dit object:
 
@@ -56,7 +56,7 @@ Dit object:
 ]
 ```
 
-Dit resulteert in het volgende:
+resulteert in:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Momenteel `productListItems[N].SKU` wordt genegeerd door automatische toewijzing.
+
 
 ### Voorbeeld 2 - scAdd
 
@@ -80,7 +81,7 @@ Dit object:
 }
 ```
 
-Dit resulteert in het volgende:
+resulteert in:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Dit object:
 }
 ```
 
-Dit resulteert in het volgende:
+resulteert in:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Valideren met betrouwbaarheid
 
-Met de [Gereedschap KA controleren](assurance.md) U kunt bevestigen dat u een ExperienceEvent verzendt, zijn de XDM gegevens correct en de afbeelding van Analytics gebeurt zoals verwacht. Bijvoorbeeld:
+Met de [Betrouwbaarheid](assurance.md) u kunt bevestigen dat u een ervaringsgebeurtenis verzendt, zijn de gegevens XDM correct en de afbeelding van Analytics gebeurt zoals verwacht. Bijvoorbeeld:
 
 1. Verzend een productListAdds-gebeurtenis.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Bijvoorbeeld:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 
@@ -192,7 +193,7 @@ Extra informatie over verwerkingsregels en contextgegevens is te vinden [hier](h
 
 >[!TIP]
 >
->In tegenstelling tot de vorige implementaties van mobiele apps is er geen onderscheid tussen een pagina/scherm-weergave en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen de schermnaam toe te wijzen aan **[!UICONTROL Paginanaam]** in een verwerkingsregel.
+>In tegenstelling tot de vorige implementaties van mobiele apps, is er geen onderscheid tussen een pagina/het scherm meningen en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen de schermnaam toe te wijzen aan **[!UICONTROL Paginanaam]** in een verwerkingsregel.
 
 >[!SUCCESS]
 >
