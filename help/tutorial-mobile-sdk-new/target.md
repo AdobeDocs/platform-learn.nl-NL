@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * Hiermee worden de voorstellen voor het huidige profiel opgehaald op basis van het beslissingsbereik (de locatie die u in de A/B-test hebt gedefinieerd) en
    * geeft het resultaat weer in inhoud die op de juiste wijze in de app kan worden weergegeven.
 
-1. Nog steeds in **[!UICONTROL TargetOffersView]**, zoek de f`unc updatePropositions(location: String) async` en voeg de volgende code toe:
+1. Nog steeds in **[!UICONTROL TargetOffersView]**, de `func updatePropositions(location: String) async` en voeg de volgende code toe:
 
    ```swift
        Task {

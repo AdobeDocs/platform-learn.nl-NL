@@ -4,9 +4,9 @@ description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -133,6 +133,9 @@ Van het scherm van profieldetails:
    Deze visualisatie toont u alle identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier ziet u een voorbeeld van een identiteitsgrafiek die is samengesteld uit gegevens die zijn verzameld tijdens het voltooien van deze zelfstudie voor Mobile SDK (gegevensbron 2) en de [Zelfstudie over Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Gegevensbron 1):
 
    ![identiteitswaarde vastleggen](assets/platform-profile-identitygraph.png)
+
+
+## Volgende stappen
 
 Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience Platform zijn vastgelegd, waaronder het analyseren ervan in de Customer Journey Analytics en de bouwsegmenten in Real-time Customer Data Platform. Je bent klaar om te beginnen!
 
