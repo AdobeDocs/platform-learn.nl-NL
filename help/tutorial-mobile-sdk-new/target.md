@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) zelfstudie,
+>Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
 
 ### Edge-configuratie bijwerken
 
@@ -61,7 +61,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 1. Selecteren **[!UICONTROL Service toevoegen]** en selecteert u **[!UICONTROL Adobe Target]** van de **[!UICONTROL Service]** lijst.
 1. Voer het doel in **[!UICONTROL Eigenschapstoken]** waarde die u voor deze integratie wilt gebruiken.
 
-   U kunt uw eigenschappen in het Doel UI, in vinden **[!UICONTROL Administratie]** > **[!UICONTROL Eigenschappen]**. Selecteren ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschap token heeft een vergelijkbare indeling `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; u moet alleen de waarde invoeren `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
+   U kunt uw eigenschappen in het Doel UI, in vinden **[!UICONTROL Administratie]** > **[!UICONTROL Eigenschappen]**. Selecteren ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschap token heeft een vergelijkbare indeling `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; u mag alleen de waarde invoeren `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
@@ -104,13 +104,13 @@ Uw instellingen valideren in Betrouwbaarheid:
 
 1. Selecteer in de interface Doel de optie **[!UICONTROL Activiteiten]** in de bovenste balk.
 1. Selecteren **[!UICONTROL Activiteit maken]** en **[!UICONTROL A/B-test]** in het contextmenu.
-1. In de **[!UICONTROL Testactiviteit A/B maken]** modal, selecteer **[!UICONTROL Mobiel]** als de **[!UICONTROL Type]**, selecteert u een werkruimte in het menu **[!UICONTROL Werkruimte kiezen]** en selecteert u de eigenschap in het menu **[!UICONTROL Eigenschap kiezen]** lijst.
+1. In de **[!UICONTROL Testactiviteit A/B maken]** dialoogvenster, selecteren **[!UICONTROL Mobiel]** als de **[!UICONTROL Type]**, selecteert u een werkruimte in het menu **[!UICONTROL Werkruimte kiezen]** en selecteert u de eigenschap in het menu **[!UICONTROL Eigenschap kiezen]** lijst.
 1. Selecteer **[!UICONTROL Maken]**.
    ![Doelactiviteit maken](assets/target-create-activity1.png)
 
 1. In de **[!UICONTROL Naamloze activiteit]** scherm, op **[!UICONTROL Ervaringen]** stap:
 
-   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Locatie selecteren]** onder L**[!UICONTROL OCATIE 1]**.
+   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Locatie selecteren]** ondergronds **[!UICONTROL LOCATIE 1]**.
    1. Selecteren ![Chrevron omlaag](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) naast **[!UICONTROL Standaardinhoud]** en selecteert u **[!UICONTROL JSON-aanbieding maken]** in het contextmenu.
    1. Kopieer de volgende JSON naar **[!UICONTROL Een geldig JSON-object invoeren]**.
 
@@ -194,9 +194,23 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de ` func updatePropositionAT(ecid: String, location: String) async` functie. De code die wordt ingesteld Inspect
-   * een XDM-woordenboek `xdmData`, met de ECID om het profiel te identificeren waarvoor u de A/B-test moet presenteren, en
-   * de `decisionScope`, een array van locaties waar de A/B-test moet worden gepresenteerd.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de ` func updatePropositionAT(ecid: String, location: String) async` functie. Voeg de volgende code toe:
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Deze functie
+
+   * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de A/B-test moet presenteren, en
+   * definieert een `decisionScope`, een array van locaties waar de A/B-test moet worden gepresenteerd.
 
    Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 

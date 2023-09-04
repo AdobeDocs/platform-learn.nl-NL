@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2368'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer-aanbiedingen
 
-Leer hoe u aanbiedingen van Journey Optimizer-beslissingsbeheer kunt weergeven in uw mobiele apps met Platform Mobile SDK.
+Leer hoe u aanbiedingen van Journey Optimizer Decision Management in uw mobiele apps kunt weergeven met Experience Platform Mobile SDK.
 
 Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op het juiste moment de beste aanbieding en ervaring bieden. Als u ze eenmaal hebt ontworpen, richt u zich op uw publiek met persoonlijke aanbiedingen.
 
@@ -23,7 +23,7 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 
 >[!NOTE]
 >
->Deze les is optioneel en is alleen van toepassing op gebruikers die de functie Beslissingsbeheer willen gebruiken om aanbiedingen in een mobiele app weer te geven.
+>Deze les is optioneel en is alleen van toepassing op Journey Optimizer-gebruikers die de functie Beslissingsbeheer willen gebruiken om aanbiedingen in een mobiele app weer te geven.
 
 
 ## Vereisten
@@ -92,7 +92,7 @@ Uw instellingen valideren in Betrouwbaarheid:
 1. Ga naar de betrouwbaarheidsinterface.
 1. Selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Instellingen valideren]** ondergronds **[!UICONTROL ADOBE JOURNEY OPTIMIZER-BESLISSING]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
-1. Selecteren **[!UICONTROL Instellingen valideren]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
+1. Selecteren **[!UICONTROL Instellingen valideren]** in het linkerspoor. Zowel de gegevensstroomopstelling als de opstelling van SDK in uw toepassing worden bevestigd.
    ![Validatie van AJO-beslissingen](assets/ajo-decisioning-validation.png)
 
 
@@ -144,7 +144,7 @@ Uw instellingen valideren in Betrouwbaarheid:
 
       In de onderstaande tabel kunt u de vier andere aanbiedingen definiëren.
 
-      | Naam van aanbieding | Inhoud aanbieden |
+      | Naam van aanbieding | Inhoud aanbieden in JSON |
       |---|---|
       | Luminantie - Fles in water met bevestigen | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luminantie - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -192,10 +192,11 @@ Als u een voorstel aan uw mobiele-app-gebruiker wilt aanbieden, moet u een aanbi
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Aanbiedingen]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Verzamelingen]** in de bovenste balk.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Verzameling maken]**.
-1. In de **[!UICONTROL Nieuwe verzameling]** modal, voert u een **[!UICONTROL Naam]** voor uw verzameling, bijvoorbeeld `Luma - Mobile App Collection`, selecteert u **[!UICONTROL Statische verzameling maken]** en klik op **[!UICONTROL Volgende]**.
-1. In **[!UICONTROL Luminantie - mobiele App Collection]**selecteert u de aanbiedingen die u in de verzameling wilt opnemen. Kies voor deze zelfstudie de vijf aanbiedingen die u hebt gemaakt.
-   ![Aanbiedingen - Verzameling](assets/ajo-collection-offersselected.png)
+1. In de **[!UICONTROL Nieuwe verzameling]** voert u een **[!UICONTROL Naam]** voor uw verzameling, bijvoorbeeld `Luma - Mobile App Collection`, selecteert u **[!UICONTROL Statische verzameling maken]** en klik op **[!UICONTROL Volgende]**.
+1. In **[!UICONTROL Luminantie - mobiele App Collection]** selecteert u de aanbiedingen die u in de verzameling wilt opnemen. Kies voor deze zelfstudie de vijf aanbiedingen die u hebt gemaakt. U kunt de lijst eenvoudig filteren met het zoekveld, bijvoorbeeld door te typen **[!UICONTROL Luminantie]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
+
+   ![Aanbiedingen - Verzameling](assets/ajo-collection-offersselected.png)
 
 
 ## Een beslissing nemen
@@ -206,11 +207,11 @@ Een beslissingsbereik is een combinatie van een specifieke plaatsing (bijvoorbee
 
 Een evaluatiecriterium is de combinatie van
 
-* de inzameling van aanbiedingen;
-* subsidiabiliteitsregels: het aanbod is bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
-* rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
+* een aanbod-collectie;
+* subsidiabiliteitsregels: is het aanbod bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
+* een rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
 
-Zie [Belangrijke stappen voor het maken en beheren van aanbiedingen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) als u beter wilt begrijpen hoe plaatsen, regels, waarderingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en betrekking hebben. Deze zelfstudie is uitsluitend gericht op het gebruik van de uitkomsten van een beslissing in plaats van op de flexibiliteit bij het definiëren van een beslissing.
+Zie [Belangrijke stappen voor het maken en beheren van aanbiedingen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) als u beter wilt begrijpen hoe plaatsen, regels, waarderingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en betrekking hebben. Deze zelfstudie is uitsluitend gericht op het gebruik van de uitkomsten van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Aanbiedingen]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Besluiten]** in de bovenste balk.
@@ -286,24 +287,38 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` functie. Inspect de code die
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` functie. Voeg de volgende code toe:
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Deze functie:
 
    * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de aanbiedingen moet presenteren.
-   * define `decisionScope`, een object dat is gebaseerd op het besluit dat u hebt gedefinieerd in de gebruikersinterface Journey Optimizer - Decision Management en dat is gedefinieerd met behulp van het gekopieerde beslissingsbereik van [Een beslissing maken](#create-a-decision).
-   * roept twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt. De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
+   * define `decisionScope`, een object dat is gebaseerd op het besluit dat u hebt gedefinieerd in de gebruikersinterface Journey Optimizer - Decision Management en dat is gedefinieerd met behulp van het gekopieerde beslissingsbereik van [Een beslissing maken](#create-a-decision).  De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
 
      ```swift
      "scopes": [
          {
-             "name": "luma - Mobile App Decision",
-             "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-             "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
              "itemCount": 2
          }
      ]
      ```
 
      U kunt echter elke gewenste implementatie gebruiken om ervoor te zorgen dat de Optimize API&#39;s de juiste parameters krijgen (`activityId`, `placementId` en `itemCount`), om een geldige waarde samen te stellen [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) -object voor uw implementatie.
+   * roept twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
 1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL EdgeOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
 
@@ -313,22 +328,24 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 1. Nog steeds in **[!UICONTROL EdgeOffersView]**, de `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` en voeg de volgende code toe:
 
    ```swift
-       Task {
-           await self.updatePropositionOD(
-               ecid: currentEcid,
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionOD(
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
+   // Update and then get propositions
+   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+   Task {
+      await self.updatePropositionOD(
+          ecid: currentEcid,
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+     )
+   }
+   try? await Task.sleep(seconds: 2.0)
+   Task {
+      await self.getPropositionOD(
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+      )
+   }
    ```
 
    Deze code zorgt ervoor dat u de voorstellen bijwerkt en de resultaten vervolgens ophaalt met de functies die in stap 5 en 6 worden beschreven.

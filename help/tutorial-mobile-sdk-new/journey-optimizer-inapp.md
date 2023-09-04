@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1569'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer in-app messaging
 
-Leer hoe u in-app berichten voor mobiele apps maakt met Platform Mobile SDK en Journey Optimizer.
+Leer hoe u in-app berichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
 Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde doelgroepen te verzenden. Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Voor meer informatie over de gegevensstroom in de app in Journey Optimizer raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Voeg de `MobileCore.setPushIdentifier` aan de `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie.
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   Deze functie haalt het apparaattoken op dat uniek is voor het apparaat waarop de toepassing is geïnstalleerd. Dan plaatst het teken voor de levering van het dupbericht gebruikend de configuratie die u opstelling hebt en die op de dienst van het Bericht van de Duw van Apple (APNs) vertrouwt.
-
-
-## Installatiezekerheid valideren
+## Setup valideren met betrouwbaarheid
 
 1. Controleer de [installatie-instructies](assurance.md) sectie.
 1. Installeer de toepassing op het fysieke apparaat of op de simulator.
@@ -166,8 +157,8 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 1. Selecteren **[!UICONTROL Opslaan]**.
    ![opslaan](assets/assurance-in-app-config.png)
 1. Selecteren **[!UICONTROL In-app berichten]** in de linkernavigatie.
-1. Selecteer de **[!UICONTROL Validatie]** tab.
-1. Bevestig dat u geen fouten krijgt.
+1. Selecteer de **[!UICONTROL Validatie]** tab. Bevestig dat u geen fouten krijgt.
+
    ![Validatie in de toepassing](assets/assurance-in-app-validate.png)
 
 
@@ -193,7 +184,7 @@ In deze zelfstudie gaat u de generieke API&#39;s en onafhankelijke API&#39;s voo
 1. Omlaag schuiven naar **[!UICONTROL Handeling]** en selecteert u **[!UICONTROL Inhoud bewerken]**.
 1. In de **[!UICONTROL Bericht in de app]** scherm:
    1. Selecteren **[!UICONTROL Modal]** als de **[!UICONTROL Berichtlay-out]**.
-   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for **[!UICONTROL Media-URL]**.
+   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` voor de **[!UICONTROL Media-URL]**.
    3. Voer een **[!UICONTROL Koptekst]** bijvoorbeeld `Welcome to this Luma In-App Message` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Triggered by pushing that button in the app...`.
    4. Enter **[!UICONTROL Afwijzen]** als de **[!UICONTROL Knop #1 tekst (primair)]**.
    5. De voorvertoning wordt bijgewerkt.
@@ -220,17 +211,18 @@ In deze zelfstudie gaat u de generieke API&#39;s en onafhankelijke API&#39;s voo
 
 U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit bericht in de app blijft in de app geactiveerd.
 
-1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de `MobileCore.track` functie, gebaseerd op de parameters `action` en `data`.
+1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) functie, gebaseerd op de parameters `action` en `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }

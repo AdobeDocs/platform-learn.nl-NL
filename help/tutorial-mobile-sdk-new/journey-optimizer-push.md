@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer-pushberichten
 
-Leer hoe u pushberichten voor mobiele apps kunt maken met Platform Mobile SDK en Journey Optimizer.
+Leer hoe u pushberichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
 Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -28,7 +28,7 @@ Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepe
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
 * Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een toepassingsoppervlak.
-   * Een journey maken
+   * Een journey maken.
    * Maak een bericht.
    * Voorinstellingen voor berichten maken.
 * Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
@@ -38,10 +38,10 @@ Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepe
 
 In deze les zult u
 
-* Registreer de toepassings-id bij de APNS (Apple Push Notification service).
-* Maak een App Surface in AJO.
+* Registreer de toepassings-id bij de APNs (Apple Push Notification service).
+* Maak een App Surface in Journey Optimizer.
 * Werk uw schema bij om velden voor pushberichten op te nemen.
-* De Journey Optimizer-tagextensie installeren en configureren.
+* Installeer en configureer de extensie Journey Optimizer.
 * Werk uw app bij om de Journey Optimizer-tagextensie op te nemen.
 * Valideer installatie in Betrouwbaarheid.
 * Een testbericht verzenden vanuit de Betrouwbaarheid
@@ -110,7 +110,7 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 >[!NOTE]
 >
->Als u het niet ziet `AJO Push Tracking Experience Event Dataset` als optie, contacteer klantenzorg.
+>Als u het niet ziet **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** als optie, contacteer klantenzorg.
 >
 
 ### Journey Optimizer implementeren in de app
@@ -146,16 +146,18 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Voeg de `MobileCore.setPushIdentifier` aan de `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie.
+### Apparaattoken registreren voor pushberichten
+
+1. Voeg de [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API aan `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie.
 
    ```swift
-   // Send push token to Experience Platform
+   // Send push token to Mobile SDK
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
    Deze functie haalt het apparaattoken op dat uniek is voor het apparaat waarop de toepassing is geïnstalleerd. Dan plaatst het teken voor de levering van het dupbericht gebruikend de configuratie die u opstelling hebt en die op de dienst van het Bericht van de Duw van Apple (APNs) vertrouwt.
 
-## Installatiezekerheid valideren
+## Setup valideren met betrouwbaarheid
 
 1. Controleer de [installatie-instructies](assurance.md) sectie.
 1. Installeer de toepassing op het fysieke apparaat of op de simulator.
@@ -238,7 +240,7 @@ Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om 
    1. Selecteren **[!UICONTROL Opslaan]**.
       ![Gebeurtenisstap 2 bewerken](assets/ajo-edit-event2.png)
 
-U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Met deze gebeurtenisconfiguratie worden inkomende ervaringsgebeurtenissen gefilterd met uw id voor de mobiele app. U zorgt er dus voor dat alleen gebeurtenissen die vanuit uw mobiele app worden geïnitieerd, de reis activeren die u in de volgende stap maakt. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
+U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Met deze gebeurtenisconfiguratie worden inkomende ervaringsgebeurtenissen gefilterd met uw specifieke gebeurtenistype (`application.test`), zodat u ervoor zorgt dat alleen gebeurtenissen van dat specifieke type die vanuit uw mobiele app worden geïnitieerd, de reis activeren die u maakt in de volgende stap. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
 
 ### De reis maken
 
@@ -278,9 +280,9 @@ Uw volgende stap is het maken van de reis die het verzenden van de pushmelding a
 
 ## De pushmelding activeren
 
-U hebt alle ingrediënten op zijn plaats om een pushmelding te verzenden. Wat overblijft, is hoe deze pushmelding wordt geactiveerd. In wezen is het hetzelfde als u eerder hebt gezien: verzend eenvoudig een ervaringsgebeurtenis met de juiste lading (zoals in ![Gebeurtenissen](events.md)).
+U hebt alle ingrediënten op zijn plaats om een pushmelding te verzenden. Wat overblijft, is hoe deze pushmelding wordt geactiveerd. In wezen is het hetzelfde als u eerder hebt gezien: verzend eenvoudig een ervaringsgebeurtenis met de juiste lading (zoals in [Gebeurtenissen](events.md)).
 
-Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, niet samengesteld als een eenvoudig XDM-woordenboek. U gaat een instructie gebruiken die een payload van een pushmelding vertegenwoordigt. Het bepalen van een specifiek gegevenstype is een alternatieve manier op hoe te om het construeren gebeurtenislading in uw toepassing uit te voeren.
+Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, niet samengesteld als een eenvoudig XDM-woordenboek. U gaat een `struct` die een payload van een pushmelding vertegenwoordigt. Het bepalen van een specifiek gegevenstype is een alternatieve manier op hoe te om het construeren gebeurtenislading in uw toepassing uit te voeren.
 
 1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Model]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** in de Xcode-projectnavigator en inspecteer de code.
 
@@ -313,6 +315,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
+   // Create payload and send experience event
    Task {
        let testPushPayload = TestPushPayload(
            application: Application(
@@ -333,9 +336,11 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 
    ```swift
    // Setting parameters and calling function to send push notification
-   let eventType = "mobileapp.testpush"
-   let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
-   await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+   Task {
+       let eventType = testPushEventType
+       let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+       await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)
+   }
    ```
 
 
@@ -346,6 +351,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 1. Ga naar de **[!UICONTROL Instellingen]** tab.
 
 1. Tikken **[!UICONTROL Pushmelding]**. De pushmelding wordt weergegeven in uw app.
+
    <img src="assets/ajo-test-push.png" width="300" />
 
 

@@ -4,9 +4,9 @@ description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -51,21 +51,20 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 1. Selecteren **[!UICONTROL Gegevensset maken van schema]**.
    ![gegevensbank](assets/dataset-create.png)
 
-1. Zoeken naar uw schema
-
-1. Selecteer uw schema.
+1. Zoek naar uw schema. bijvoorbeeld `Luma Mobile` in het zoekveld.
+1. Selecteer bijvoorbeeld uw schema **[!UICONTROL Gebeurtenisschema Luma Mobile App]**.
 
 1. Selecteren **[!UICONTROL Volgende]**.
    ![gegevensset configureren](assets/dataset-configure.png)
 
-1. Geef een **[!UICONTROL Naam]** en **[!UICONTROL Beschrijving]**.
+1. Geef een **[!UICONTROL Naam]** bijvoorbeeld `Luma Mobile App Events Dataset` en **[!UICONTROL Beschrijving]**.
 
 1. Selecteren **[!UICONTROL Voltooien]**.
    ![gegevensset voltooien](assets/dataset-finish.png)
 
 ## De gegevensstroom bijwerken
 
-Zodra u uw dataset hebt gecreeerd, ben zeker om [uw gegevensstroom bijwerken](create-datastream.md) Adobe Experience Platform toevoegen. Deze update zorgt voor gegevensstromen naar Platform.
+Zodra u uw dataset hebt gecreeerd, ben zeker om [uw gegevensstroom bijwerken](create-datastream.md#adobe-experience-platform) Adobe Experience Platform toevoegen. Deze update zorgt voor gegevensstromen naar Platform.
 
 ## Gegevens in de gegevensset valideren
 
@@ -88,23 +87,23 @@ Het Echte Profiel van de Klant van het Experience Platform staat u toe om een ho
 
 ### Het schema inschakelen
 
-1. Uw schema openen
-1. Inschakelen **[!UICONTROL Profiel]**
-1. Selecteren **[!UICONTROL De gegevens voor dit schema zullen een primaire identiteit op het identityMap gebied bevatten.]** in de modale dialoog
-1. **[!UICONTROL Opslaan]** het schema
+1. Open bijvoorbeeld uw schema **[!UICONTROL Gebeurtenisschema Luma Mobile App]**.
+1. Inschakelen **[!UICONTROL Profiel]**.
+1. Selecteren **[!UICONTROL De gegevens voor dit schema zullen een primaire identiteit op het identityMap gebied bevatten.]** in het dialoogvenster.
+1. **[!UICONTROL Opslaan]** het schema.
 
    ![het schema inschakelen voor profiel](assets/platform-profile-schema.png)
 
 ### De gegevensset inschakelen
 
-1. Uw gegevensset openen
-1. Inschakelen **[!UICONTROL Profiel]**
+1. Open uw gegevensset, bijvoorbeeld **[!UICONTROL Dataset voor Luma Mobile-toepassingsgebeurtenis]**.
+1. Inschakelen **[!UICONTROL Profiel]**.
 
    ![de dataset voor profiel inschakelen](assets/platform-profile-dataset.png)
 
 ### Gegevens in profiel valideren
 
-Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt. Meld u aan bij de app Luma en schaf een aankoop.
+Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt, bijvoorbeeld: meld u aan bij de app Luma en schaf een aankoop.
 
 Gebruik Verzekering om een van de identiteiten te vinden die in identityMap zijn doorgegeven (Email, lumaCrmId of ECID), bijvoorbeeld de CRM-id.
 
@@ -112,7 +111,7 @@ Gebruik Verzekering om een van de identiteiten te vinden die in identityMap zijn
 
 In de interface van het Platform,
 
-1. Navigeren naar **[!UICONTROL Profielen]** > **[!UICONTROL Bladeren]**,
+1. Navigeren naar **[!UICONTROL Profielen]** en selecteert u **[!UICONTROL Bladeren]** in de bovenste balk.
 1. Geef de identiteitsgegevens op die u net hebt opgehaald, bijvoorbeeld `Luma CRM ID` for **[!UICONTROL Naamruimte identiteit]** en de waarde waarvoor u hebt gekopieerd **[!UICONTROL Identiteitswaarde]**. Selecteer vervolgens **[!UICONTROL Weergave]**.
 1. Selecteer het profiel om details weer te geven.
 
@@ -128,7 +127,7 @@ Op de **[!UICONTROL Gebeurtenissen]** kunt u de gebeurtenissen zien die bij uw m
 
 Van het scherm van profieldetails:
 
-1. Als u de identiteitsgrafiek wilt weergeven, klikt u op de koppeling of navigeert u naar **[!UICONTROL Identiteiten]** > **[!UICONTROL Naamgrafiek]**
+1. Als u de identiteitsgrafiek wilt weergeven, klikt u op de koppeling of navigeert u naar **[!UICONTROL Identiteiten]** selecteert u vervolgens **[!UICONTROL Naamgrafiek]** in de bovenste balk.
 1. Als u de identiteitswaarde wilt opzoeken, geeft u `Luma CRM ID` als de **[!UICONTROL Naamruimte identiteit]** en de gekopieerde waarde als de **[!UICONTROL Identiteitswaarde]**. Selecteer vervolgens **[!UICONTROL Weergave]**.
 
    Deze visualisatie toont u alle identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier ziet u een voorbeeld van een identiteitsgrafiek die is samengesteld uit gegevens die zijn verzameld tijdens het voltooien van deze zelfstudie voor Mobile SDK (gegevensbron 2) en de [Zelfstudie over Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Gegevensbron 1):

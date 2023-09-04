@@ -3,10 +3,10 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 0%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 
@@ -50,6 +50,8 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
 Vervolgens sluit u de services van uw Experience Cloud aan op uw gegevensstroom. Wanneer Platform Mobile SDK gegevens naar Edge Network verzendt, verzendt de datastream de gegevens naar deze services:
 
+### Adobe Analytics
+
 1. Selecteren **[!UICONTROL Service toevoegen]**.
 
 1. Toevoegen **[!UICONTROL Adobe Analytics]** van de [!UICONTROL Service] lijst,
@@ -61,6 +63,9 @@ Vervolgens sluit u de services van uw Experience Cloud aan op uw gegevensstroom.
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![Adobe Analytics toevoegen als DataStream-service](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 Mogelijk wilt u ook de Adobe Experience Platform-service inschakelen.
 
