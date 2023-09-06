@@ -6,11 +6,11 @@ role: Admin, User
 level: Beginner
 jira: KT-10363
 thumbnail: 345641.jpeg
-last-substantial-update: 2022-07-28T00:00:00Z
+last-substantial-update: 2023-09-06T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 996a241dca2b7d622524d4a9259f253113a835f3
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,4 @@ ht-degree: 0%
 
 Leer hoe te om op attribuut-gebaseerde toegangsbeheer te vormen om toegang tot specifieke middelen van het Experience Platform te beperken. Ga voor meer informatie naar de [toegangsbeheerdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
-
->[!NOTE]
->
-> De beleid-bouwende eigenschap die in deze video wordt getoond is niet volledig beschikbaar, maar het standaardbeleid in klantenrekeningen wordt gevormd gelijkaardig aan getoond.
+>[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on)
