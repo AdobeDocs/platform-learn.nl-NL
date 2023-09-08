@@ -3,9 +3,9 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling
 
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het samenstellen van schema&#39;s in Adobe Experience Platform.
 
-SDK van het Web van het Platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar het Netwerk van de Rand van het Platform te verzenden, en uiteindelijk de gegevens naar om het even welke Experience Cloud toepassingen door:sturen die in de gegevensstroom worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
+De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar het Netwerk van de Rand van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke die toepassingen van het Experience Cloud in de gegevensstroom worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
 
 >[!NOTE]
 >
@@ -47,10 +47,10 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
 
    >[!NOTE]
    >
-   >Als u de klant bent van een toepassing op basis van een Platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
-1. Selecteer **[!UICONTROL Schema maken]** knop rechtsboven
+1. Selecteer de **[!UICONTROL Schema maken]** knop rechtsboven
 1. Selecteer in het vervolgkeuzemenu de optie **[!UICONTROL XDM ExperienceEvent]**
 
 ![Schema Experience Event](assets/schema-XDM-experience-event.jpg)
@@ -83,7 +83,7 @@ Als de veldgroepen zijn geselecteerd, kunt u het schema een naam geven. Een geme
 
 ![Weblettergegevens Luma](assets/schema-luma-web-event-data.png)
 
-Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL weergavenaam] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op Platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
+Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL weergavenaam] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.jpg)
 
@@ -101,16 +101,16 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 
 >[!IMPORTANT]
 >
-> Het is mogelijk **[!UICONTROL Profiel]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. Ook kunnen velden na dit punt niet uit het schema worden verwijderd. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
+> Het is mogelijk **[!UICONTROL Profiel]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. Ook kunnen velden na dit punt niet uit het schema worden verwijderd. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >Deze instelling wordt tijdens het [Experience Platform instellen](setup-experience-platform.md) les.
 >![Profielschema](assets/schema-profile.png)
 
-Nu kunt u naar dit schema verwijzen wanneer u de uitbreiding van SDK van het Web uw markeringsbezit toevoegt.
+Nu kunt u naar dit schema verwijzen wanneer u de uitbreiding van SDK van het Web aan uw markeringsbezit toevoegt.
 
 
 [Volgende: ](configure-identities.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
