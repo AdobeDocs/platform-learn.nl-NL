@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1519'
 ht-degree: 0%
 
 ---
@@ -214,29 +214,27 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
    Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func getPropositionAT(location: String) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API-aanroep, welke
-   * Hiermee worden de voorstellen voor het huidige profiel opgehaald op basis van het beslissingsbereik (de locatie die u in de A/B-test hebt gedefinieerd) en
-   * geeft het resultaat weer in inhoud die op de juiste wijze in de app kan worden weergegeven.
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, welke
+   * wint de voorstellen voor het huidige profiel terug dat op het beslissingswerkingsgebied wordt gebaseerd (die de plaats is u in de A/B Test hebt bepaald);
+   * het aanbod uit het voorstel ophaalt;
+   * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
+   * activeert de `displayed()` actie op de aanbieding die een gebeurtenis terug naar het Edge Network zal sturen om het aanbod te informeren, wordt weergegeven.
 
-1. Nog steeds in **[!UICONTROL TargetOffersView]**, de `func updatePropositions(location: String) async` en voeg de volgende code toe:
+1. Nog steeds in **[!UICONTROL TargetOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   Deze code zorgt ervoor dat u de voorstellen bijwerkt en de resultaten vervolgens ophaalt met de functies die in stap 5 en 6 worden beschreven.
+1. Nog steeds in **[!UICONTROL TargetOffersView]** voegt u de volgende code toe aan de `.task` modifier. Met deze code worden de aanbiedingen bijgewerkt wanneer de weergave wordt vernieuwd.
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## Valideren met de app
 
@@ -262,11 +260,11 @@ Om de A/B-test in betrouwbaarheid te valideren:
 1. Selecteren **[!UICONTROL Verzoeken]** op de bovenste balk. U ziet uw **[!UICONTROL Doel]** verzoeken.
    ![Validatie van AJO-beslissingen](assets/assurance-decisioning-requests.png)
 
-1. U kunt de tabbladen Simuleren en Gebeurtenissenlijst bekijken voor meer functionaliteit bij het controleren van de instellingen voor de aanbiedingen van Target.
+1. U kunt **[!UICONTROL Simuleren]** en **[!UICONTROL Gebeurtenislijst]** tabbladen voor meer functionaliteit die uw installatie voor Target-aanbiedingen controleren.
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing meer A/B-tests of andere doelactiviteiten (zoals Experience Targeting, Multivariate Test) toe te voegen aan de Luma-app.
+U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing meer A/B-tests of andere doelactiviteiten (zoals Experience Targeting, Multivariate Test) toe te voegen aan de Luma-app. Er is meer uitgebreide informatie beschikbaar in het dialoogvenster [Github repo voor de extensie Optimaliseren](https://github.com/adobe/aepsdk-optimize-ios) waar u ook een verbinding aan een specifiek kunt vinden [zelfstudie](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) op hoe je aanbiedingen van Adobe Target kunt volgen.
 
 >[!SUCCESS]
 >
