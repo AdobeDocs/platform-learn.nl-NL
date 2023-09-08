@@ -3,7 +3,7 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 1%
@@ -84,8 +84,8 @@ Alle klanten van het Experience Cloud zouden toegang tot de vereiste eigenschapp
 U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen worden gedownload/gekloond vanaf [Github](https://git.corp.adobe.com/rmaur/Luma). U vindt twee mappen:
 
 
-1. [Start](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
-1. [Voltooien](https://git.corp.adobe.com/Luma{target="_blank"}): een versie met de volledige implementatie ter referentie.
+1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+1. [Voltooien](https://git.corp.adobe.com/Luma){target="_blank"}: een versie met de volledige implementatie ter referentie.
 
 Laten we beginnen!
 
