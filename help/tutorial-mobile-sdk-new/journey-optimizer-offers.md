@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2412'
 ht-degree: 0%
 
 ---
@@ -326,6 +326,23 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * het aanbod uit het voorstel ophaalt;
    * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
    * activeert de `displayed()` actie op de aanbieding die een gebeurtenis terug naar het Edge Network zal sturen om het aanbod te informeren, wordt weergegeven.
+
+1. Nog steeds in **[!UICONTROL EdgeOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
+
+   ```swift
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   }
+   ```
+
+1. Nog steeds in **[!UICONTROL EdgeOffersView]** voegt u de volgende code toe aan de `.task` modifier. Met deze code worden de aanbiedingen bijgewerkt wanneer de weergave wordt vernieuwd.
+
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   ```
+
 
 
 ## Valideren met de app
