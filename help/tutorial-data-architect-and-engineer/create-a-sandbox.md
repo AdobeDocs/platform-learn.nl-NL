@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Het maken van sandboxen duurt ongeveer 30 seconden, gedurende welke tijd een &qu
 
 Wacht tot uw sandbox &quot;[!UICONTROL Actief]&quot; voordat u doorgaat met de volgende oefening.
 
-## De nieuwe sandbox toevoegen aan uw rol
+## De nieuwe sandbox toevoegen aan de rol
 
 Wanneer de sandbox actief is, moet u deze in uw rol opnemen om deze te kunnen gebruiken. Als u deze aan uw rol wilt toevoegen (hiervoor hebt u systeembeheer of productbeheerdersrechten nodig):
 
