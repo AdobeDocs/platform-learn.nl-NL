@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Laten we een sandbox maken:
 1. Selecteren **[!UICONTROL Ontwikkeling]** als de **[!UICONTROL Type]**
 1. Geef uw sandbox een naam `luma-tutorial` (Denk na toevoegend uw naam aan het eind)
 1. Titel uw zelfstudie `Luma Tutorial` (Denk na toevoegend uw naam aan het eind)
-1. Selecteer **[!UICONTROL Maken]** knop
+1. Selecteer de **[!UICONTROL Maken]** knop
    ![Uw sandbox maken](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >
@@ -62,13 +62,13 @@ Het maken van sandboxen duurt ongeveer 30 seconden, gedurende welke tijd een &qu
 
 Wacht tot uw sandbox &quot;[!UICONTROL Actief]&quot; voordat u doorgaat met de volgende oefening.
 
-## De nieuwe sandbox toevoegen aan het productprofiel
+## De nieuwe sandbox toevoegen aan uw rol
 
 Wanneer de sandbox actief is, moet u deze in uw rol opnemen om deze te kunnen gebruiken. Als u deze aan uw rol wilt toevoegen (hiervoor hebt u systeembeheer of productbeheerdersrechten nodig):
 
 1. Ga naar de [!UICONTROL Machtigingen] scherm
 1. Open de `Luma Tutorial Platform` rol
-1. _Verwijderen_ de `Prod` sandbox van de rol
+1. Optioneel _remove_ de `Prod` sandbox van de rol
 1. Voeg de `Luma Tutorial` sandbox
 1. Selecteren **[!UICONTROL Opslaan]**
 1. Op de [!UICONTROL Sandboxen] rij, selecteren **[!UICONTROL Bewerken]**
@@ -76,7 +76,7 @@ Wanneer de sandbox actief is, moet u deze in uw rol opnemen om deze te kunnen ge
    ![Luminantieleiding toevoegen](assets/sandbox-addLumaTutorial.png)
 
 1. Laad de pagina opnieuw (of houd Shift ingedrukt en laad de pagina opnieuw). U moet nu ofwel in het deelvenster `Luma Tutorial` sandbox of wordt weergegeven in de vervolgkeuzelijst van de sandbox
-1. Naar de `Luma Tutorial` sandbox als u er nog niet in bent
+1. Schakel over naar de `Luma Tutorial` sandbox als u er nog niet in bent
 
    ![Sandbox bevestigen](assets/sandbox-confirmDropdown.png)
 
