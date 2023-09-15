@@ -3,9 +3,9 @@ title: Identiteit
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen client-side identiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Als u deze API gebruikt, wordt de id niet verwijderd uit de grafiek of de identiteitsgrafiek van het gebruikersprofiel aan de serverzijde.
+U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen client-side identiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [Identiteitsgrafieken weergeven](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
 
 1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Algemeen]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
@@ -144,13 +144,13 @@ U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/do
       <img src="./assets/identity2.png" width="300">
 
 
-1. Kijk in het Web UI van de Verzekering voor het Web **[!UICONTROL Identiteitsupdates rand]** gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
+1. Kijk in de Assurance-webinterface voor de **[!UICONTROL Identiteitsupdates rand]** gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
 1. Selecteer de gebeurtenis en bekijk de gegevens in het dialoogvenster **[!UICONTROL ACPExtensionEventData]** object. U moet de identiteiten zien die u hebt bijgewerkt.
    ![update identiteiten valideren](assets/identity-validate-assurance.png)
 
 ## Valideren met identiteitsgrafiek
 
-Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md), kunt u de invoer bevestigen in de identiteitsweergave van platforms:
+Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md)kunt u de identiteitsopname bevestigen in de identiteitsgrafiek van platforms:
 
 1. Selecteren **[!UICONTROL Identiteiten]** in de UI voor gegevensverzameling.
 1. Selecteren **[!UICONTROL Naamgrafiek]** in de bovenste balk.

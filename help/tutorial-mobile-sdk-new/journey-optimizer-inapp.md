@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,11 @@ ht-degree: 0%
 
 Leer hoe u in-app berichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde doelgroepen te verzenden. Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Voor meer informatie over de gegevensstroom in de app in Journey Optimizer raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde doelgroepen te verzenden. Campagnes in Journey Optimizer worden gebruikt om via verschillende kanalen eenmalige inhoud aan een specifiek publiek te leveren. Met campagnes, worden de acties uitgevoerd gelijktijdig, of onmiddellijk, of gebaseerd op een gespecificeerd programma. Als u reizen gebruikt (zie de [Journey Optimizer-pushberichten](journey-optimizer-push.md) les), worden handelingen op volgorde uitgevoerd.
+
+![Architectuur](assets/architecture-ajo.png)
+
+Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Voor meer informatie over de gegevensstroom in de app in Journey Optimizer raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde d
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
+* Stel de app in voor Adobe Experience Platform.
 * Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Campagnes beheren.
 * Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
@@ -43,7 +48,7 @@ In deze les zult u
 * Registreer de toepassings-id bij de APN (Apple Push Notification service).
 * Maak een App Surface in AJO.
 * De Journey Optimizer-tagextensie installeren en configureren.
-* Werk uw app bij om de Journey Optimizer-tagextensie op te nemen.
+* Werk uw app bij om de Journey Optimizer-tagextensie te registreren.
 * Valideer installatie in Betrouwbaarheid.
 * Definieer uw eigen campagne en berichtervaring in de app in Journey Optimizer.
 * Verzend uw eigen in-app-bericht vanuit de app.
@@ -96,7 +101,7 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
 
 Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
-1. Navigeren naar **[!UICONTROL Tags]** > **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**,
+1. Navigeren naar **[!UICONTROL Tags]** > **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**.
 1. De eigenschap openen, bijvoorbeeld **[!UICONTROL Zelfstudie voor Luma Mobile-app]**.
 1. Selecteren **[!UICONTROL Catalogus]**.
 1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer]** extensie.
@@ -167,11 +172,12 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 Als u uw eigen bericht in de app wilt maken, moet u een campagne in Journey Optimizer definiëren die een bericht in de app activeert op basis van gebeurtenissen die plaatsvinden. Deze gebeurtenissen kunnen zijn:
 
 * naar Adobe Experience Platform verzonden gegevens;
-* kern volgende gebeurtenissen, zoals actie, of staat of inzameling van PII gegevens, door de Mobile Core generische APIs;
+* kern volgende gebeurtenissen, zoals actie, of staat of inzameling van PII- gegevens, door Mobile Core generische APIs;
 * levenscyclusgebeurtenissen van toepassingen, zoals starten, installeren, upgraden, sluiten of vastlopen,
 * gebeurtenissen voor geolocatie, zoals het betreden of afsluiten van een interessant punt.
 
-In deze zelfstudie gaat u de generieke API&#39;s en onafhankelijke API&#39;s voor de mobiele kern gebruiken om het bijhouden van gebeurtenissen van gebruikersschermen, handelingen en PII-gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. Wanneer bijvoorbeeld de extensie Analytics is geïnstalleerd, worden alle gebruikersacties en toepassingsschermen met gebeurtenisgegevens verzonden naar de desbetreffende eindpunten voor Analytics-rapportage.
+In deze zelfstudie gaat u de generieke API&#39;s van de Mobile Core en de API&#39;s die onafhankelijk zijn van de extensie gebruiken (zie [Algemene mobiele kern-API&#39;s](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om het bijhouden van gebeurtenissen van gebruikersschermen, handelingen en PII-gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle AEP Mobile SDK-extensies is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
+De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistreerde extensies om de integratie met Adobe en oplossingen van derden te vereenvoudigen. Wanneer bijvoorbeeld de extensie Optimize is geïnstalleerd, worden alle verzoeken en interacties met de aanbiedingsengine van Journey Optimizer - Decision Management afgehandeld door de gebeurtenishub.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Campagnes]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Campagne maken]**.
@@ -252,7 +258,7 @@ U kunt uw in-app berichten in de UI van de Verzekering bevestigen.
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in-app berichten toe te voegen aan de Luma-app. Zo kunt u bijvoorbeeld producten promoten op basis van specifieke interacties die u in de app hebt bijgehouden.
+U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in-app berichten toe te voegen.  Zo kunt u bijvoorbeeld producten promoten op basis van specifieke interacties die u in uw app bijhoudt.
 
 >[!SUCCESS]
 >

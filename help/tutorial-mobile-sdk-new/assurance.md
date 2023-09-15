@@ -3,9 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang tot Verzekering heeft door de volgende stappen te voltooien:
-
-1. Bezoek [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Meld u aan met uw Adobe ID-gebruikersgegevens voor Experience Cloud.
-1. Als u de **[!UICONTROL Sessies]** , hebt u toegang. Als u de toegangspagina (bèta) ziet, selecteert u **[!UICONTROL Registreren]** om te registreren.
+Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie [Toegang van gebruikers](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) in de handleiding voor verzekeringen voor meer informatie.
 
 ## Implementeren
 
@@ -70,7 +66,7 @@ Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de onderte
 1. Selecteer de **Ondertekenen en mogelijkheden** tab.
 1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
 
-   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png)
+   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## Een basis-URL instellen
 

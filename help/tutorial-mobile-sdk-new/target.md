@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 0%
 
 Leer hoe u A/B-tests kunt uitvoeren in uw mobiele apps met Platform Mobile SDK en Adobe Target.
 
-Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. In deze zelfstudie wordt de nadruk gelegd op de A/B-testfunctionaliteit van Target. Zie de [A/B-testoverzicht](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) voor meer informatie .
+Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel.  Zie de [A/B-testoverzicht](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) voor meer informatie .
+
+![Architectuur](assets/architecture-at.png)
 
 Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd.
 
@@ -29,20 +31,19 @@ Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juist
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* Toegang tot Adobe Target Premium met rechten, correct geconfigureerde rollen, werkruimten en eigenschappen zoals beschreven [hier](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
-U zou de Norm van het Doel ook moeten kunnen gebruiken, maar het leerprogramma gebruikt sommige geavanceerde concepten (bijvoorbeeld de eigenschappen van het Doel) die aan de Premium van het Doel uniek zijn.
+* Toegang tot Adobe Target met machtigingen, correct geconfigureerde rollen, werkruimten en eigenschappen zoals beschreven [hier](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
 
 
 ## Leerdoelstellingen
 
 In deze les zult u
 
-* Werk uw Edge-configuratie bij voor integratie met Doel.
+* Werk uw gegevensstroom bij voor integratie van het Doel.
 * Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
 * Werk uw schema bij om aanvraaggebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
 * Maak een eenvoudige A/B-test in Doel.
-* Werk uw app bij om de extensie Optimizer op te nemen.
+* Werk uw app bij om de extensie Optimizer te registreren.
 * Implementeer de A/B-test in uw app.
 * Implementatie valideren in Betrouwbaarheid.
 
@@ -51,15 +52,15 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u de app al hebt ingesteld als onderdeel van de [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
+>Als u uw app al hebt ingesteld als onderdeel van het [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) les, kunt u beide overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
 
-### Edge-configuratie bijwerken
+### Gegevensstroomconfiguratie bijwerken
 
-Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Adobe Target worden doorgestuurd, moet u de Edge-configuratie bijwerken.
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van Experience Platform verzendt, naar Adobe Target worden doorgestuurd, moet u de configuratie van de gegevensstroom bijwerken.
 
 1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!UICONTROL Luma Mobile-toepassing]**.
 1. Selecteren **[!UICONTROL Service toevoegen]** en selecteert u **[!UICONTROL Adobe Target]** van de **[!UICONTROL Service]** lijst.
-1. Voer het doel in **[!UICONTROL Eigenschapstoken]** waarde die u voor deze integratie wilt gebruiken.
+1. Als u een klant van de Premium van het Doel bent en bezitstokens wilt gebruiken, ga het Doel in **[!UICONTROL Eigenschapstoken]** waarde die u voor deze integratie wilt gebruiken. Gebruikers van de doelstandaard kunnen deze stap overslaan.
 
    U kunt uw eigenschappen in het Doel UI, in vinden **[!UICONTROL Administratie]** > **[!UICONTROL Eigenschappen]**. Selecteren ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschap token heeft een vergelijkbare indeling `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; u mag alleen de waarde invoeren `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -70,7 +71,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 
 ### Adobe Journey Optimizer installeren - extensie voor beslissingstags
 
-1. Navigeren naar **[!UICONTROL Tags]** en zoekt u de eigenschap voor de mobiele tag en opent u deze.
+1. Navigeren naar **[!UICONTROL Tags]**, zoek de eigenschap mobile tag en open de eigenschap.
 1. Selecteren **[!UICONTROL Extensies]**.
 1. Selecteren **[!UICONTROL Catalogus]**.
 1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer - Beslissing]** extensie.
@@ -81,13 +82,13 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 
 ### Uw schema bijwerken
 
-1. Navigeer naar UI voor gegevensverzameling en selecteer Schema&#39;s in de linkertrack.
+1. Navigeer naar de interface voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Bladeren]** in de bovenste balk.
 1. Selecteer het schema om het te openen.
 1. Selecteer in de Schema-editor de optie ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast **[!UICONTROL Veldgroepen]**.
 1. Zoek in het dialoogvenster Veldgroepen toevoegen naar `proposition`, selecteert u **[!UICONTROL Experience Event - Propositie-interacties]** en selecteert u **[!UICONTROL Veldgroepen toevoegen]**.
    ![Voorstelling](assets/schema-fieldgroup-proposition.png)
-1. om de wijzigingen in uw schema op te slaan, selecteert u **[!UICONTROL Opslaan]** .
+1. Selecteer **[!UICONTROL Opslaan]**.
 
 
 ### Setup valideren bij Betrouwbaarheid
@@ -102,15 +103,17 @@ Uw instellingen valideren in Betrouwbaarheid:
 
 ## Een A/B-test maken
 
+Er zijn vele soorten activiteiten die u kunt maken in Adobe Target en implementeren in een mobiele app, zoals vermeld in de inleiding. Voor deze les, zult u zich op het creëren van een het uitvoeren van een test A/B concentreren.
+
 1. Selecteer in de interface Doel de optie **[!UICONTROL Activiteiten]** in de bovenste balk.
 1. Selecteren **[!UICONTROL Activiteit maken]** en **[!UICONTROL A/B-test]** in het contextmenu.
-1. In de **[!UICONTROL Testactiviteit A/B maken]** dialoogvenster, selecteren **[!UICONTROL Mobiel]** als de **[!UICONTROL Type]**, selecteert u een werkruimte in het menu **[!UICONTROL Werkruimte kiezen]** en selecteert u de eigenschap in het menu **[!UICONTROL Eigenschap kiezen]** lijst.
+1. In de **[!UICONTROL Testactiviteit A/B maken]** dialoogvenster, selecteren **[!UICONTROL Mobiel]** als de **[!UICONTROL Type]**, selecteert u een werkruimte in het menu **[!UICONTROL Werkruimte kiezen]** en selecteert u de eigenschap in het menu **[!UICONTROL Eigenschap kiezen]** lijst als u een klant van de Premium van het Doel bent en een bezitstoken in de gegevensstroom specificeerde.
 1. Selecteer **[!UICONTROL Maken]**.
    ![Doelactiviteit maken](assets/target-create-activity1.png)
 
 1. In de **[!UICONTROL Naamloze activiteit]** scherm, op **[!UICONTROL Ervaringen]** stap:
 
-   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Locatie selecteren]** ondergronds **[!UICONTROL LOCATIE 1]**.
+   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Locatie selecteren]** ondergronds **[!UICONTROL LOCATIE 1]**. Deze locatienaam (vaak mbox genoemd) wordt later gebruikt in de app-implementatie.
    1. Selecteren ![Chrevron omlaag](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) naast **[!UICONTROL Standaardinhoud]** en selecteert u **[!UICONTROL JSON-aanbieding maken]** in het contextmenu.
    1. Kopieer de volgende JSON naar **[!UICONTROL Een geldig JSON-object invoeren]**.
 
@@ -207,14 +210,14 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    }
    ```
 
-   Deze functie
+   Deze functie:
 
    * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de A/B-test moet presenteren, en
    * definieert een `decisionScope`, een array van locaties waar de A/B-test moet worden gepresenteerd.
 
    Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, welke
+1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, die:
    * wint de voorstellen voor het huidige profiel terug dat op het beslissingswerkingsgebied wordt gebaseerd (die de plaats is u in de A/B Test hebt bepaald);
    * het aanbod uit het voorstel ophaalt;
    * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
@@ -264,7 +267,7 @@ Om de A/B-test in betrouwbaarheid te valideren:
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing meer A/B-tests of andere doelactiviteiten (zoals Experience Targeting, Multivariate Test) toe te voegen aan de Luma-app. Er is meer uitgebreide informatie beschikbaar in het dialoogvenster [Github repo voor de extensie Optimaliseren](https://github.com/adobe/aepsdk-optimize-ios) waar u ook een verbinding aan een specifiek kunt vinden [zelfstudie](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) op hoe je aanbiedingen van Adobe Target kunt volgen.
+U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing meer A/B-tests of andere doelactiviteiten (zoals Experience Targeting, Multivariate Test) aan uw app toe te voegen. Er is meer uitgebreide informatie beschikbaar in het dialoogvenster [Github repo voor de extensie Optimaliseren](https://github.com/adobe/aepsdk-optimize-ios) waar u ook een verbinding aan een specifiek kunt vinden [zelfstudie](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) op hoe je aanbiedingen van Adobe Target kunt volgen.
 
 >[!SUCCESS]
 >

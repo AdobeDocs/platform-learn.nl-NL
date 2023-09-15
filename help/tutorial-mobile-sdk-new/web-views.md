@@ -3,9 +3,9 @@ title: WebViews verwerken
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Als u gegevens verzendt vanuit het native gedeelte van de app en vanuit een WebV
 
 Om die ongewenste situatie op te lossen, is het belangrijk om de ECID van de gebruiker van het inheemse gedeelte van uw app tot een WebView over te gaan u in uw app zou kunnen willen gebruiken.
 
-De uitbreiding van de Dienst JavaScript van identiteitskaart van het Experience Cloud in WebView haalt ECID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De id-service gebruikt deze ECID om de bezoeker bij te houden.
+De uitbreiding van de Identiteit van de Rand AEP binnen WebView wordt gebruikt verzamelt huidige ECID en voegt het aan URL toe in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart die. De implementatie gebruikt deze ECID vervolgens om de URL aan te vragen.
 
 ## Implementatie
 

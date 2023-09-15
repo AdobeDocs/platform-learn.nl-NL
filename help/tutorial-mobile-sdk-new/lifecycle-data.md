@@ -2,9 +2,9 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u l
 
 ## Vereisten
 
-* App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
+* App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd. Als onderdeel van deze les bent u al begonnen met levenscycluscontrole. Zie [SDK&#39;s installeren - AppDelegate bijwerken](install-sdks.md#update-appdelegate) ter beoordeling.
 * Geregistreerd de uitbreiding van de Verzekering zoals die in wordt beschreven [vorige les](install-sdks.md).
 
 ## Leerdoelstellingen

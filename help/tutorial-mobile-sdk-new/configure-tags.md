@@ -3,9 +3,9 @@ title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ In deze les zult u:
 
       >[!NOTE]
       >
-      > Standaardinstellingen voor toestemming voor de op randen gebaseerde mobiele SDK-implementaties, zoals de instellingen die u in deze zelfstudie uitvoert, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > De standaardinstellingen voor toestemming voor de op rand gebaseerde mobiele SDK-implementaties, zoals de toestemming die u in deze les doet, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Open de nieuwe eigenschap.
@@ -112,13 +112,13 @@ In deze les zult u:
 
    1. In **[!UICONTROL Gegevensstromen]** Selecteer de **[!UICONTROL DataStream]** die u hebt gemaakt in het dialoogvenster [vorige stap](create-datastream.md) voor elke omgeving, bijvoorbeeld **[!UICONTROL Luma Mobile-toepassing]**.
 
-   1. Geef de **[!UICONTROL Edge Network-domein]** binnen **[!UICONTROL Domeinconfiguratie]**. Het Edge Network-domein is de naam van uw sandbox, gevolgd door `data.adobedc.net`bijvoorbeeld `techmarketingdemos.data.adobedc.net`.
+   1. Geef de **[!UICONTROL Edge Network-domein]** binnen **[!UICONTROL Domeinconfiguratie]**. Het domein van het Netwerk van de Rand is de naam van uw organisatie, die door wordt gevolgd `data.adobedc.net`bijvoorbeeld `techmarketingdemos.data.adobedc.net`.
 
    1. Van de **[!UICONTROL Opslaan in bibliotheek]** menu, selecteert u **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
 
       ![Edge-netwerkinstellingen](assets/tags-extension-edge.png)
 
-Uw bibliotheek is gebouwd voor de nieuwe uitbreidingen en configuraties. Een geslaagde build wordt aangegeven met een <span style="color:green">●</span> in de **[!UICONTROL Eerste build]** knop.
+Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een geslaagde build wordt aangegeven met een <span style="color:green">●</span> in de **[!UICONTROL Eerste build]** knop.
 
 
 ## SDK-installatie-instructies genereren
@@ -131,7 +131,7 @@ Uw bibliotheek is gebouwd voor de nieuwe uitbreidingen en configuraties. Een ges
 
 1. In de **[!UICONTROL Instructies voor mobiele installatie]** selecteert u de **[!UICONTROL iOS]** tab.
 
-1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [documentatie](https://cocoapods.org/).
+1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [Documentatie over cocoapods](https://cocoapods.org/). Als u Android gebruikt als ontwikkelingsplatform, is Gradle de tool voor het beheren van SDK-versies, downloads en afhankelijkheden. Voor meer informatie raadpleegt u de [Gradle-documentatie](https://gradle.org/)
 
    De installatieinstructies bieden u een goed beginpunt voor de implementatie. Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Als u bekend bent met de webversie van Tags, voorheen Starten, is het belangrijk
 
 * Op het web wordt een eigenschap tag gerenderd in JavaScript, die vervolgens (gewoonlijk) wordt gehost in de cloud. Er wordt rechtstreeks in de website naar dat JavaScript-bestand verwezen.
 
-* In een eigenschap voor mobiele tags worden regels en configuraties gerenderd in JSON-bestanden die worden gehost in de cloud. De JSON-bestanden worden gedownload en gelezen door de Mobile Core-extensie in de mobiele app. Extensies zijn afzonderlijke SDK&#39;s die samenwerken. Als u een extensie toevoegt aan de eigenschap tag, moet u de app ook bijwerken. Als u een extensie-instelling wijzigt of een regel maakt, worden deze wijzigingen doorgevoerd in de app nadat u de bijgewerkte tagbibliotheek hebt gepubliceerd.
+* In een eigenschap voor mobiele tags worden regels en configuraties gerenderd in JSON-bestanden die worden gehost in de cloud. De JSON-bestanden worden gedownload en gelezen door de Mobile Core-extensie in de mobiele app. Extensies zijn afzonderlijke SDK&#39;s die samenwerken. Als u een extensie toevoegt aan de eigenschap tag, moet u de app ook bijwerken. Als u een extensie-instelling wijzigt of een regel maakt, worden deze wijzigingen doorgevoerd in de app nadat u de bijgewerkte tagbibliotheek hebt gepubliceerd. Dankzij deze flexibiliteit kunt u instellingen wijzigen (zoals het rapport Adobe Analyrics bevat id) of zelfs het gedrag van uw app wijzigen (met gegevenselementen en regels, zoals u in latere lessen zult zien) zonder dat u code in uw app hoeft te wijzigen en de app opnieuw moet indienen bij de App Store.
 
 >[!SUCCESS]
 >

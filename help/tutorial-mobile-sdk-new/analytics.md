@@ -3,7 +3,7 @@ title: Analysetoewijzing
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 Leer hoe u mobiele gegevens kunt toewijzen aan Adobe Analytics.
 
 De [event](events.md) gegevens die u in eerdere lessen hebt verzameld en naar Platform Edge Network hebt verzonden, worden doorgestuurd naar de services die in uw gegevensstroom zijn geconfigureerd, waaronder Adobe Analytics. U brengt de gegevens aan de correcte variabelen in uw rapportreeks in kaart.
+
+![Architectuur](assets/architecture-aa.png)
 
 ## Vereisten
 
@@ -186,10 +188,10 @@ Zo ziet een verwerkingsregel met deze gegevens eruit:
 >Sommige automatisch toegewezen variabelen zijn mogelijk niet beschikbaar voor gebruik in verwerkingsregels.
 >
 >
->De eerste keer dat u een verwerkingsregel toewijst die de UI u niet de variabelen van de contextgegevens van het voorwerp XDM toont. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
+>De eerste keer u aan een verwerkingsregel in kaart brengt, toont de interface u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
 
 
-Extra informatie over verwerkingsregels en contextgegevens is te vinden [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Aanvullende informatie over verwerkingsregels en contextgegevens is te vinden [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >

@@ -3,10 +3,10 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '598'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 1%
 Leer hoe u een gegevensstroom in Experience Platform maakt.
 
 Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van het Platform. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Netwerk van de Rand van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Zie de klasse [documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) of dit [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+
+![Architectuur](assets/architecture.png)
 
 ## Vereisten
 
@@ -40,6 +42,11 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
    ![datastreams home](assets/datastream-new.png)
 
 1. Geef een **[!UICONTROL Naam]** bijvoorbeeld `Luma Mobile App` en **[!UICONTROL Beschrijving]** bijvoorbeeld `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Dataset - Joe Smith` in plaats van `Luma Mobile App Event Dataset`. Zie ook de opmerking in [Overzicht](overview.md).
+
 1. Selecteer het schema dat u in de vorige les van het **Gebeurtenisschema** een lijst.
 1. Selecteren **[!UICONTROL Opslaan]**.
 
@@ -62,7 +69,7 @@ Vervolgens sluit u de services van uw Experience Cloud aan op uw gegevensstroom.
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
-   ![Adobe Analytics toevoegen als DataStream-service](assets/datastream-service-aa.png)
+   ![Adobe Analytics toevoegen als datastreamservice](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
@@ -83,7 +90,7 @@ Mogelijk wilt u ook de Adobe Experience Platform-service inschakelen.
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
-   ![Adobe Experience Platform toevoegen als DataStream-service](assets/datastream-service-aep.png)
+   ![Adobe Experience Platform toevoegen als datastreamservice](assets/datastream-service-aep.png)
 1. De uiteindelijke configuratie moet er ongeveer zo uitzien.
 
    ![gegevensstroominstellingen](assets/datastream-settings.png)

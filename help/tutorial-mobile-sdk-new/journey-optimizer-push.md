@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2241'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 0%
 
 Leer hoe u pushberichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+
+![Architectuur](assets/architecture-ajo.png)
 
 >[!NOTE]
 >
@@ -26,6 +28,7 @@ Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepe
 ## Vereisten
 
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
+* Stel de app in voor Adobe Experience Platform.
 * Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een toepassingsoppervlak.
    * Een journey maken.
@@ -42,7 +45,7 @@ In deze les zult u
 * Maak een App Surface in Journey Optimizer.
 * Werk uw schema bij om velden voor pushberichten op te nemen.
 * Installeer en configureer de extensie Journey Optimizer.
-* Werk uw app bij om de Journey Optimizer-tagextensie op te nemen.
+* Werk uw app bij om de Journey Optimizer-tagextensie te registreren.
 * Valideer installatie in Betrouwbaarheid.
 * Een testbericht verzenden vanuit de Betrouwbaarheid
 * Definieer uw eigen pushmelding voor een Journey Optimizer.
@@ -53,11 +56,11 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) Deze zelfstudie kunt u overslaan.
+>Als u uw omgeving al hebt ingesteld als onderdeel van de [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) Deze zelfstudie kunt u overslaan.
 
-### Toepassings-id registreren bij APNS
+### Toepassings-id registreren bij APNs
 
-De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen om u door de configuratie van APNS te begeleiden.
+De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen om u door de configuratie van APNs te begeleiden.
 
 ### Een persoonlijke sleutel maken
 
@@ -70,7 +73,7 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
 1. Selecteren **[!UICONTROL Doorgaan]**.
    ![nieuwe sleutel configureren](assets/mobile-push-apple-dev-config-key.png)
 1. Controleer de configuratie en selecteer **[!UICONTROL Registreren]**.
-1. Download de `.p8` persoonlijke sleutel. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
+1. Download de `.p8` persoonlijke sleutel. Het wordt gebruikt in de configuratie van de Oppervlakte van de Toepassing later in deze les.
 1. Noteer de **[!UICONTROL Sleutel-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
 1. Noteer de **[!UICONTROL Team-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
    ![Belangrijkste details](assets/push-apple-dev-key-details.png)
@@ -194,7 +197,7 @@ U gaat een nieuw gebeurtenistype bepalen, nog niet beschikbaar als deel van de l
 1. Selecteer bijvoorbeeld uw schema **[!UICONTROL Gebeurtenisschema Luma Mobile App]** om het te openen.
 1. In de Schema-editor:
    1. Selecteer de **[!UICONTROL eventType]** veld.
-   1. In de **[!UICONTROL Veldeigenschappen]** schuift u omlaag om de lijst met mogelijke waarden voor het gebeurtenistype weer te geven. Selecteren **[!UICONTROL Rij toevoegen]** en toevoegen `application.test` als de **[!UICONTROL WAARDE]** en **[!UICONTROL Testgebeurtenis voor pushmelding]** als de `DISPLAY NAME`.
+   1. In de **[!UICONTROL Veldeigenschappen]** schuift u omlaag om de lijst met mogelijke waarden voor het gebeurtenistype weer te geven. Selecteren **[!UICONTROL Rij toevoegen]** en toevoegen `application.test` als de **[!UICONTROL WAARDE]** en `[!UICONTROL Test event for push notification]` als de `DISPLAY NAME`.
    1. Selecteren **[!UICONTROL Toepassen]**.
    1. Selecteren **[!UICONTROL Opslaan]**.
       ![Waarde toevoegen aan gebeurtenistypen](assets/ajo-update-schema-eventtype-enum.png)
@@ -357,7 +360,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om ritten te maken en pushberichten en pushberichten voor de app te verzenden. Bijvoorbeeld, verwelkomend de gebruiker wanneer het registreren in app.
+U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te handelen. U kunt bijvoorbeeld een reis maken in Journey Optimizer die een welkomstbericht verstuurt wanneer een gebruiker van de app zich aanmeldt. Of een bevestigingspushbericht wanneer een gebruiker een product in de app aanschaft. Of voert de geofence van een locatie in (zoals u ziet in het dialoogvenster [Plaatsen](places.md) les).
 
 >[!SUCCESS]
 >

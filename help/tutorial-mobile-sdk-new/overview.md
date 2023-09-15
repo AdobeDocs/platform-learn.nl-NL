@@ -3,9 +3,9 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app m
 
 Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via het Adobe Experience Platform Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/) voor meer gedetailleerde informatie.
 
-![build-instellingen](assets/data-collection-mobile-sdk.png)
+![Architectuur](assets/architecture.png)
 
 
 Deze zelfstudie begeleidt u bij de implementatie van de Platform Mobile SDK in een voorbeeldtoepassing die Luma wordt genoemd. De [Luma-app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit waarmee u een realistische implementatie kunt maken. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
@@ -35,7 +35,6 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 * Voeg de volgende Adobe Experience Cloud-toepassingen/extensies toe:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Levenscyclusgegevensverzameling](lifecycle-data.md)
-   * [Adobe Analytics via XDM](analytics.md)
    * [Toestemming](consent.md)
    * [Identiteit](identity.md)
    * [Profiel](profile.md)
@@ -43,7 +42,7 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)
-   * [Messaging tussen iMp-apps met Journey Optimizer](journey-optimizer-inapp.md)
+   * [In-app messaging met Journey Optimizer](journey-optimizer-inapp.md)
    * [Voorstellen met Journey Optimizer](journey-optimizer-offers.md)
    * [A/B-tests met doel](target.md)
 
@@ -70,13 +69,19 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen h
    * Als u de klant bent van een platformgebaseerde toepassing zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, moet u ook:
       * **[!UICONTROL Gegevensbeheer]**—toestemmingspunten om datasets te beheren en te bekijken om te voltooien _optionele platformoefeningen_ (vereist een licentie voor een toepassing op basis van een platform).
       * Een ontwikkeling **sandbox** die u voor deze zelfstudie kunt gebruiken.
+
 * Voor Adobe Analytics moet je weten welke **rapportsuites** u kunt deze zelfstudie voltooien.
+
+* Voor Adobe Target moet u beschikken over de juiste machtigingen **rollen**, **werkruimten**, en **eigenschappen** zoals beschreven [hier](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
+
+* Voor Adobe Journey Optimizer hebt u voldoende machtigingen nodig om de **pushmeldingsservice** en om een **toepassingsoppervlak**, **reis**, **message** en **berichtvoorinstellingen**. Voor Beslissingsbeheer hebt u de juiste machtigingen nodig om **aanbiedingen beheren** en **besluiten** zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 Alle klanten van het Experience Cloud zouden toegang tot de vereiste eigenschappen moeten hebben nodig om Mobiele SDK op te stellen.
 
+
 >[!NOTE]
 >
->U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Men veronderstelt dat u enigszins vertrouwd bent met [!DNL Swift] en [!DNL SwiftUI]. U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+>In het kader van deze zelfstudie zult u schema&#39;s, gegevenssets, identiteiten enzovoort maken. Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u bij het maken van deze objecten overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Voeg bijvoorbeeld ` - <your name or initials>` op de naam van het object dat u moet maken.
 
 
 ## De app Luma downloaden
@@ -86,6 +91,11 @@ U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen 
 
 1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
 1. [Voltooien](https://git.corp.adobe.com/Luma){target="_blank"}: een versie met de volledige implementatie ter referentie.
+
+>[!NOTE]
+>
+>U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. En velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+
 
 Laten we beginnen!
 

@@ -3,9 +3,9 @@ title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Standaardisering en interoperabiliteit zijn de belangrijkste concepten achter Ad
 
 ## Wat zijn XDM-schema&#39;s?
 
-XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities die om het even welke toepassing toestaan om met de diensten van het Platform te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U kunt waardevolle inzichten van klantenacties bereiken, klantenpubliek door segmenten bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uitdrukken.
+XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities die om het even welke toepassing toestaan om met de diensten van het Platform te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U krijgt waardevolle inzichten van klantenacties, bepaalt klantenpubliek door segmenten, en gebruikt klantenattributen voor verpersoonlijkingsdoeleinden.
 
 Het Experience Platform gebruikt schema&#39;s om de structuur van gegevens op een verenigbare en herbruikbare manier te beschrijven. Door gegevens consistent in verschillende systemen te definiëren, wordt het eenvoudiger om betekenis te behouden en zo waarde te verkrijgen van gegevens.
 
@@ -118,13 +118,18 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 1. Geef uw schema een naam door te selecteren **[!UICONTROL Naamloos schema]** van de **[!UICONTROL Samenstelling]** deelvenster (onder) **[!UICONTROL Schema]**) en een **[!UICONTROL Weergavenaam]** &amp; **[!UICONTROL Beschrijving]** bijvoorbeeld `Luma Mobile App Event Schema` en `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Schema - Joe Smith` in plaats van `Luma Mobile App Event Schema`. Zie ook de opmerking in [Overzicht](overview.md).
+
+
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![Selecteren toepassen](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
+>Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. U kunt ook velden verwijderen als het schema daardoor beknopt en begrijpelijk blijft. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
 
 De [!UICONTROL Consumentenervaringsgebeurtenis] veldgroep heeft een gegevenstype genaamd [!UICONTROL Webinformatie], waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
 

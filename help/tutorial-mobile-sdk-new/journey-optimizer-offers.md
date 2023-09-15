@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,11 @@ Leer hoe u aanbiedingen van Journey Optimizer Decision Management in uw mobiele 
 
 Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op het juiste moment de beste aanbieding en ervaring bieden. Als u ze eenmaal hebt ontworpen, richt u zich op uw publiek met persoonlijke aanbiedingen.
 
+![Architectuur](assets/architecture-od.png)
+
 Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [Over Besluitbeheer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) voor meer informatie .
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
+* Stel de app in voor Adobe Experience Platform.
 * Toegang tot Journey Optimizer - Beslissingsbeheer met de juiste machtigingen om aanbiedingen en beslissingen te beheren zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ In deze les zult u
 * Werk uw schema bij om propositiegebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
 * Maak een biedbesluit op basis van aanbiedingen in Journey Optimizer - Beslissingsbeheer.
-* Werk uw app bij om de extensie Optimizer op te nemen.
+* Werk uw app bij om de extensie Optimizer te registreren.
 * Voer aanbiedingen van Beslissingsbeheer in uw app uit.
 
 
@@ -49,9 +54,9 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u uw omgeving al hebt ingesteld als onderdeel van het [A/B-tests instellen met Doel](target.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
+>Als u uw omgeving al hebt ingesteld als onderdeel van de [A/B-tests instellen met Doel](target.md) zelfstudie, u kunt overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
 
-### Edge-configuratie bijwerken
+### Gegevensstroomconfiguratie bijwerken
 
 Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
 
@@ -76,11 +81,11 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network 
 
 ### Uw schema bijwerken
 
-1. Ga naar UI voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
+1. Navigeer naar de interface voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Bladeren]** in de bovenste balk.
 1. Selecteer het schema om het te openen.
 1. Selecteer in de Schema-editor de optie ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast Veldgroepen.
-1. In de **[!UICONTROL Veldgroepen toevoegen]** dialoogvenster, ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) zoeken naar `proposition`, selecteert u **[!UICONTROL Experience Event - Propositie-interacties]** en selecteert u **[!UICONTROL Veldgroepen toevoegen]**.
+1. In de **[!UICONTROL Veldgroepen toevoegen]** dialoogvenster, ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) zoeken naar `proposition`, selecteert u **[!UICONTROL Experience Event - Propositie-interacties]** en selecteert u **[!UICONTROL Veldgroepen toevoegen]**. Deze veldgroep verzamelt de gegevens van de ervaringsgebeurtenis die relevant zijn voor aanbiedingen: wat aanbod wordt gepresenteerd, als onderdeel van welke verzameling, beslissing en andere parameters (zie later in deze les). Maar ook wat er gebeurt met het aanbod: wordt het weergegeven, wordt er met elkaar omgesprongen, wordt het afgewezen, enzovoort.
    ![Voorstelling](assets/schema-fieldgroup-proposition.png)
 1. Selecteren **[!UICONTROL Opslaan]** om de wijzigingen in uw schema op te slaan.
 
@@ -211,7 +216,7 @@ Een evaluatiecriterium is de combinatie van
 * subsidiabiliteitsregels: is het aanbod bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
 * een rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
 
-Zie [Belangrijke stappen voor het maken en beheren van aanbiedingen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) als u beter wilt begrijpen hoe plaatsen, regels, waarderingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en betrekking hebben. Deze zelfstudie is uitsluitend gericht op het gebruik van de uitkomsten van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
+Zie [Belangrijke stappen voor het maken en beheren van aanbiedingen](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) als u beter wilt begrijpen hoe plaatsen, regels, waarderingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Aanbiedingen]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Besluiten]** in de bovenste balk.
@@ -304,7 +309,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    Deze functie:
 
    * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de aanbiedingen moet presenteren.
-   * define `decisionScope`, een object dat is gebaseerd op het besluit dat u hebt gedefinieerd in de gebruikersinterface Journey Optimizer - Decision Management en dat is gedefinieerd met behulp van het gekopieerde beslissingsbereik van [Een beslissing maken](#create-a-decision).  De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
+   * define `decisionScope`, een object dat is gebaseerd op de beslissing die u hebt gedefinieerd in de Journey Optimizer - Decision Management interface en dat is gedefinieerd met behulp van het gekopieerde beslissingsbereik van [Een beslissing maken](#create-a-decision).  De toepassing Luma gebruikt een configuratiebestand (`decisions.json`) die de bereikparameters ophaalt, op basis van de volgende JSON-indeling:
 
      ```swift
      "scopes": [

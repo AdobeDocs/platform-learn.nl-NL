@@ -2,7 +2,7 @@
 title: Plaatsen
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 0%
@@ -31,7 +31,7 @@ In deze les zult u
 * Werk de eigenschap tag bij met de extensie Plaatsen.
 * Werk uw schema bij om geolocatiegebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
-* Werk uw app bij om de extensie Plaatsen op te nemen.
+* Werk uw app bij om de extensie Plaatsen te registreren.
 * Implementeer geo-locatie bijhouden via de service Plaatsen in uw app.
 
 
@@ -49,7 +49,7 @@ In deze les zult u
 * Werk uw schema bij om propositiegebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
 * Maak een biedbesluit op basis van aanbiedingen in Journey Optimizer - Beslissingsbeheer.
-* Werk uw app bij om de extensie Optimizer op te nemen.
+* Werk uw app bij om de extensie Optimizer te registreren.
 * Voer aanbiedingen van Beslissingsbeheer in uw app uit.
 
 
@@ -106,7 +106,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 
 Controleren of uw schema, zoals gedefinieerd in [Schema maken](create-schema.md), worden de benodigde veldgroepen en klassen opgenomen om gegevens over de POI en de geolocatie te verzamelen.
 
-1. Ga naar UI voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
+1. Navigeer naar de interface voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Bladeren]** in de bovenste balk.
 1. Selecteer het schema om het te openen.
 1. Selecteer in de Schema-editor de optie **[!UICONTROL Consumentenervaringsgebeurtenis]**.
@@ -320,7 +320,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    }
    ```
 
-Het is buiten het onderwerp van deze zelfstudie om details over de implementatie van locatiebeheer binnen iOS uit te leggen.
+Het is buiten het onderwerp van deze les om details over de implementatie van plaatsmanager binnen iOS te verklaren.
 
 
 ## Valideren met uw app

@@ -2,10 +2,10 @@
 title: Gebeurtenissen
 description: Leer hoe u gebeurtenisgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 1%
+source-wordcount: '1321'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
    * `commerce.productViews.id`: een tekenreekswaarde die de SKU van het product vertegenwoordigt
    * `commerce.productViews.value`: de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
-* In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItem]** Dit is een standaardset velden die worden gebruikt voor aan handel gerelateerde gebeurtenissen:
+* In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItems]** Dit is een standaardset velden die worden gebruikt bij elke handelsgerelateerde gebeurtenis:
 
   ![productlijstitemschema](assets/datacollection-prodListItems-schema.png)
    * Let op: **[!UICONTROL productListItems]** is een array, zodat er meerdere producten kunnen worden geleverd.
@@ -189,6 +189,11 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Gebruik Kaart (`java.util.Map`) als de basisinterface voor het samenstellen van uw XDM-payload.
+
 
 ### Aangepaste veldgroepen
 
@@ -339,15 +344,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 1. Voer de app uit, meld u aan en communiceer met een product.
 
    1. Verplaats het pictogram Verzekering naar links.
-   1. Selecteren **[!UICONTROL Home]** in de tabbalk.
-   1. Selecteer het <img src="assets/login.png" width="15" /> om het aanmeldingsblad te openen.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Selecteer het <img src="assets/insert.png" width="15" /> om een willekeurige e-mail en een klant-id in te voegen.
-   1. Selecteren **[!UICONTROL Aanmelden]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]** in het Startscherm.
    1. Selecteren **[!UICONTROL Producten]** in de tabbalk.
    1. Selecteer een product.
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
