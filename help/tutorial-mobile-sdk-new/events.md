@@ -1,15 +1,15 @@
 ---
-title: Gebeurtenisgegevens verzamelen
-description: Leer hoe u gebeurtenisgegevens kunt verzamelen in een mobiele app.
+title: Gebeurtenisgegevens bijhouden
+description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-# Gebeurtenisgegevens verzamelen
+# Gebeurtenisgegevens bijhouden
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
@@ -380,4 +380,4 @@ Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Pl
 >
 >U hebt uw app nu ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en schermtracering bij te houden naar het Adobe Experience Platform Edge-netwerk en alle services die u in uw gegevensstroom hebt gedefinieerd.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[WebViews](web-views.md)**
+Volgende: **[WebViews verwerken](web-views.md)**

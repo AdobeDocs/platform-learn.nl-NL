@@ -1,17 +1,17 @@
 ---
-title: Gegevens verzenden naar Adobe Experience Platform
-description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
+title: Gegevens naar Experience Platform verzenden
+description: Leer hoe u gegevens naar het Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
 
-# Gegevens verzenden naar Adobe Experience Platform
+# Gegevens naar Experience Platform verzenden
 
 Leer hoe u gegevens van mobiele apps naar Adobe Experience Platform verzendt.
 
@@ -170,4 +170,4 @@ Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience 
 >
 >U hebt uw app nu zo ingesteld dat gegevens niet alleen naar het Edge-netwerk, maar ook naar Adobe Experience Platform worden verzonden.<br>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)**
+Volgende: **[Meldingen maken en verzenden](journey-optimizer-push.md)**

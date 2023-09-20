@@ -3,9 +3,9 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -106,4 +106,4 @@ Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk
 >
 >U hebt nu een gegevensstroom voor de rest van de zelfstudie te gebruiken.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Volgende: **[Tags configureren](configure-tags.md)**
+Volgende: **[Een eigenschap voor een tag configureren](configure-tags.md)**

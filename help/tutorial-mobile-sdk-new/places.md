@@ -1,15 +1,15 @@
 ---
-title: Geo-locatieservices gebruiken
+title: Geolocatieservices gebruiken
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
 
-# Geo-locatieservices gebruiken
+# Geolocatieservices gebruiken
 
 Leer hoe u de geolocatieservice in uw app gebruikt.
 
@@ -33,24 +33,6 @@ In deze les zult u
 * Valideer installatie in Betrouwbaarheid.
 * Werk uw app bij om de extensie Plaatsen te registreren.
 * Implementeer geo-locatie bijhouden via de service Plaatsen in uw app.
-
-
-## Vereisten
-
-* App is gemaakt en uitgevoerd met de juiste SDK&#39;s geïnstalleerd en geconfigureerd.
-
-
-## Leerdoelstellingen
-
-In deze les zult u
-
-* Werk uw Edge-configuratie bij voor beslissingsbeheer.
-* Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
-* Werk uw schema bij om propositiegebeurtenissen vast te leggen.
-* Valideer installatie in Betrouwbaarheid.
-* Maak een biedbesluit op basis van aanbiedingen in Journey Optimizer - Beslissingsbeheer.
-* Werk uw app bij om de extensie Optimizer te registreren.
-* Voer aanbiedingen van Beslissingsbeheer in uw app uit.
 
 
 ## Instellen

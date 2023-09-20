@@ -3,9 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de onderte
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een unieke bundle-id selecteert die anders is dan de standaardid die al is ingevoerd in het Start-project, omdat elke bundle-id uniek moet zijn.
+   >Zorg ervoor dat u een unieke bundle-id gebruikt, anders dan de standaardinstelling `com.adobe.luma.tutorial.swiftui`  zijn ingevoerd in het Start-project, omdat elke bundle-id uniek moet zijn.
 
 
    ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -139,4 +139,4 @@ Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/cl
 >U hebt nu een app ingesteld om Verzekering te gebruiken voor de rest van de zelfstudie.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-Volgende: **[Toestemming](consent.md)**
+Volgende: **[Goedkeuring implementeren](consent.md)**

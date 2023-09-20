@@ -2,9 +2,9 @@
 title: Levenscyclusgegevens verzamelen
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -124,4 +124,4 @@ U moet **[!UICONTROL Toepassing sluiten (achtergrond)]** en **[!UICONTROL Toepas
 >
 >U hebt nu uw app zo ingesteld dat toepassingsstatusgebeurtenissen (voorgrond, achtergrond) naar het Adobe Experience Platform Edge Network en alle services die u in uw gegevensstroom hebt gedefinieerd, worden verzonden.<br>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Volgende: **[Gebeurtenissen bijhouden](events.md)**
+Volgende: **[Gebeurtenisgegevens bijhouden](events.md)**
