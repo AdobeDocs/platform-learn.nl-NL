@@ -1,15 +1,15 @@
 ---
-title: Gebeurtenissen
+title: Gebeurtenisgegevens verzamelen
 description: Leer hoe u gebeurtenisgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
 
-# Gebeurtenissen
+# Gebeurtenisgegevens verzamelen
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
@@ -127,7 +127,7 @@ U hebt verschillende acties met betrekking tot handelsproducten in uw app en u w
 
 Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herbruikbare manier uit te voeren, gebruikt u een specifieke functie:
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, en voeg het volgende aan toe `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, en voeg het volgende aan toe `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie.
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
    * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
    * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Producten]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en voeg diverse vraag aan toe `sendCommerceExperienceEvent` functie:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en voeg diverse vraag aan toe `sendCommerceExperienceEvent` functie:
 
    1. Bij de `.task` modifier, binnen de `ATTrackingManager.trackingAuthorizationStatus` sluiting. Dit `.task` De bepaling wordt geroepen wanneer de productmening wordt geïnitialiseerd en getoond, zodat wilt u een gebeurtenis van de productmening op dat specifieke ogenblik verzenden.
 
@@ -263,7 +263,7 @@ Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt 
 
 Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
-1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]**. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in uw Xcode-projectnavigator.
+1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]**. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in uw Xcode-projectnavigator.
 
    1. Een voor app-interacties. Deze code toevoegen aan de `func sendAppInteractionEvent(actionName: String)` functie:
 
@@ -321,7 +321,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
       * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
       * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Aanmeldingsblad]**.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]**.
 
    1. Voeg de volgende gemarkeerde code toe aan de knop Aanmelden:
 
@@ -345,7 +345,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
    1. Verplaats het pictogram Verzekering naar links.
    1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]** in het Startscherm.
-   1. Selecteren **[!UICONTROL Producten]** in de tabbalk.
+   1. Selecteren **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
    1. Selecteer <img src="assets/addtocart.png" width="20" />.
@@ -361,7 +361,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om gegevensverzameling toe te voegen aan de Luma-app. U kunt meer informatie toevoegen over de manier waarop de gebruiker in de app met uw producten werkt en u kunt meer oproepen voor interactie tussen de apps en het bijhouden van schermen toevoegen aan de app:
+U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app toe te voegen. U kunt meer informatie toevoegen over de manier waarop de gebruiker in de app met uw producten werkt en u kunt meer oproepen voor interactie tussen de apps en het bijhouden van schermen toevoegen aan de app:
 
 * Implementeer de opdracht, kassa, lege mand en andere functionaliteit van de app en voeg relevante gebeurtenissen uit de handelservaring toe aan deze functionaliteit.
 * Herhaal de oproep om `sendAppInteractionEvent` met de juiste parameter om andere toepassingsinteracties van de gebruiker bij te houden.

@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer in-app messaging
-description: Leer hoe u in-app berichten voor een mobiele app maakt met Platform Mobile SDK en Adobe Journey Optimizer.
+title: In-app berichten maken en verzenden
+description: Leer hoe u in-app berichten maakt en verzendt naar een mobiele app met Platform Mobile SDK en Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer in-app messaging
+# In-app berichten maken en verzenden
 
 Leer hoe u in-app berichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
@@ -35,10 +35,6 @@ Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen 
    * Campagnes beheren.
 * Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
 * Fysiek iOS-apparaat of simulator voor testen.
-* Geregistreerde toepassings-id met Apple Push Notification Service
-* Uw pushgegevens voor de app toegevoegd in Gegevensverzameling
-* Extensie Journey Optimizer-tags geïnstalleerd
-* Journey Optimizer geïmplementeerd in de app
 
 
 ## Leerdoelstellingen
@@ -57,31 +53,10 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer-pushberichten](journey-optimizer-push.md) Deze zelfstudie kunt u overslaan.
+>Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer-pushberichten](journey-optimizer-push.md) les, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
 
-### Toepassings-id registreren bij APNS
 
-De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen om u door de configuratie van APNS te begeleiden.
-
-### Een persoonlijke sleutel maken
-
-1. Navigeer in de Apple Developer Portal naar **[!UICONTROL Toetsen]**.
-1. Selecteer **[!UICONTROL +]**.
-   ![nieuwe sleutel maken](assets/mobile-push-apple-dev-new-key.png)
-
-1. Geef een **[!UICONTROL Sleutelnaam]**.
-1. Selecteer de **[!UICONTROL Apple Push Notification-service] (APN&#39;s)** selectievakje.
-1. Selecteren **[!UICONTROL Doorgaan]**.
-   ![nieuwe sleutel configureren](assets/mobile-push-apple-dev-config-key.png)
-1. Controleer de configuratie en selecteer **[!UICONTROL Registreren]**.
-1. Download de `.p8` persoonlijke sleutel. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-1. Noteer de **[!UICONTROL Sleutel-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-1. Noteer de **[!UICONTROL Team-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-   ![Belangrijkste details](assets/push-apple-dev-key-details.png)
-
-Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-account/#/devcdfbb56a3).
-
-### Uw pushreferenties voor de app toevoegen in Gegevensverzameling
+### Een toepassingsoppervlak toevoegen aan gegevensverzameling
 
 1. Van de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/), selecteert u **[!UICONTROL Toepassingsoppervlakken]** in het linkerdeelvenster.
 1. Als u een configuratie wilt maken, selecteert u **[!UICONTROL App-oppervlak maken]**.
@@ -89,20 +64,28 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
 1. Voer een **[!UICONTROL Naam]** voor de configuratie, bijvoorbeeld `Luma App Tutorial`  .
 1. Van **[!UICONTROL Configuratie van mobiele toepassingen]**, selecteert u **[!UICONTROL Apple iOS]**.
 1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld,  `com.adobe.luma.tutorial.swiftui`.
-1. Schakel de **[!UICONTROL Credentials duwen]** schakelen om uw referenties toe te voegen.
-1. Sleep uw `.p8` **Apple Push Notification Authentication Key** bestand.
-1. Geef de **[!UICONTROL Sleutel-id]**, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van `p8` auth key. Het bestand is te vinden onder de **[!UICONTROL Toetsen]** in de **Certificaten, id&#39;s en profielen** pagina&#39;s van de Apple Developer-portal. Zie ook [Een persoonlijke sleutel maken](#create-a-private-key).
-1. Geef de **[!UICONTROL Team-id]**. De team-id is een waarde die u kunt vinden onder de **Lidmaatschap** of boven aan de pagina Apple Developer Portal. Zie ook [Een persoonlijke sleutel maken](#create-a-private-key).
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![configuratie toepassingsoppervlak](assets/push-app-surface-config.png)
+
+### Gegevensstroomconfiguratie bijwerken
+
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Journey Optimizer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+
+1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
+1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
+1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
+1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
+
+   ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration.png)
+
 
 ### Journey Optimizer-extensie installeren
 
 Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 1. Navigeren naar **[!UICONTROL Tags]** > **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**.
-1. De eigenschap openen, bijvoorbeeld **[!UICONTROL Zelfstudie voor Luma Mobile-app]**.
+1. De eigenschap openen, bijvoorbeeld **[!DNL Luma Mobile App Tutorial]**.
 1. Selecteren **[!UICONTROL Catalogus]**.
 1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer]** extensie.
 1. De extensie installeren.
@@ -127,7 +110,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >
 
 1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
 
    `import AEPMessaging`
@@ -182,7 +165,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Campagnes]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Campagne maken]**.
 1. In de **[!UICONTROL Campagne maken]** scherm:
-   1. Selecteren **[!UICONTROL Bericht in de app]** en selecteer een toepassingsoppervlak in het menu **[!UICONTROL App-oppervlak]** lijst, bijvoorbeeld **[!UICONTROL Luma Mobile-toepassing]**.
+   1. Selecteren **[!UICONTROL Bericht in de app]** en selecteer een toepassingsoppervlak in het menu **[!UICONTROL App-oppervlak]** lijst, bijvoorbeeld **[!DNL Luma Mobile App]**.
    1. Selecteer **[!UICONTROL Maken]**
       ![Campagneigenschappen](assets/ajo-campaign-properties.png)
 1. In het scherm Campagne-definitie, op **[!UICONTROL Eigenschappen]**, voert u een **[!UICONTROL Naam]** bijvoorbeeld voor de campagne `Luma - In-App Messaging Campaign`en **[!UICONTROL Beschrijving]** bijvoorbeeld `In-app messaging campaign for Luma app`.
@@ -198,7 +181,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
       ![Editor in app](assets/ajo-in-app-editor.png)
 1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in de **[!UICONTROL Schema]** tegel.
    ![Plan voor revisie selecteren](assets/ajo-review-select-schedule.png)
-1. Terug in de **[!UICONTROL Luma - in-app berichtcampagne]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Triggers bewerken]**.
+1. Terug in de **[!DNL Luma - In-App Messaging Campaign]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Triggers bewerken]**.
 1. In de **[!UICONTROL In-app berichttrigger]** configureren, configureert u de details van de trackactie die het bericht in de app activeert:
    1. Om te verwijderen **[!UICONTROL Gebeurtenis voor starten van toepassing]**, selecteert u ![Sluiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
    1. Gebruiken ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Voorwaarde toevoegen]** herhaaldelijk de volgende logica maken voor **[!UICONTROL Bericht weergeven als]**.
@@ -207,9 +190,9 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
 
    U hebt een handeling track gedefinieerd, waarbij de **[!UICONTROL Handeling]** equals `in-app` en de **[!UICONTROL Contextgegevens]** met de handeling is een sleutelwaardepaar van `"showMessage" : "true"`.
 
-1. Terug in de **[!UICONTROL Luma - in-app berichtcampagne]** scherm, selecteren **[!UICONTROL Controleren om te activeren]**.
+1. Terug in de **[!DNL Luma - In-App Messaging Campaign]** scherm, selecteren **[!UICONTROL Controleren om te activeren]**.
 1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren **[!UICONTROL Activeren]**.
-1. U ziet uw **[!UICONTROL Luma - in-app berichtcampagne]** met status **[!UICONTROL Live]** in de **[!UICONTROL Campagnes]** lijst.
+1. U ziet uw **[!DNL Luma - In-App Messaging Campaign]** met status **[!UICONTROL Live]** in de **[!UICONTROL Campagnes]** lijst.
    ![Lijst met campagnes](assets/ajo-campaign-list.png)
 
 
@@ -217,7 +200,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
 
 U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit bericht in de app blijft in de app geactiveerd.
 
-1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) functie, gebaseerd op de parameters `action` en `data`.
+1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) functie, gebaseerd op de parameters `action` en `data`.
 
 
    ```swift
@@ -225,7 +208,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
    MobileCore.track(action: action, data: data)
    ```
 
-1. Ga naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
+1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
 
    ```swift
    // Setting parameters and calling function to send in-app message

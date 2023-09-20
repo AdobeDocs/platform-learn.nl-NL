@@ -3,9 +3,9 @@ title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 1%
 
 ---
@@ -110,9 +110,9 @@ In deze les zult u:
 
 1. Gebruik de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Zoeken]** te zoeken en te installeren **Adobe Experience Platform Edge Network** extensie.
 
-   1. In **[!UICONTROL Gegevensstromen]** Selecteer de **[!UICONTROL DataStream]** die u hebt gemaakt in het dialoogvenster [vorige stap](create-datastream.md) voor elke omgeving, bijvoorbeeld **[!UICONTROL Luma Mobile-toepassing]**.
+   1. In **[!UICONTROL Gegevensstromen]** Selecteer de **[!UICONTROL DataStream]** die u hebt gemaakt in het dialoogvenster [vorige stap](create-datastream.md) voor elke omgeving, bijvoorbeeld **[!DNL Luma Mobile App]**.
 
-   1. Geef de **[!UICONTROL Edge Network-domein]** binnen **[!UICONTROL Domeinconfiguratie]**. Het domein van het Netwerk van de Rand is de naam van uw organisatie, die door wordt gevolgd `data.adobedc.net`bijvoorbeeld `techmarketingdemos.data.adobedc.net`.
+   1. Als deze nog niet is gevuld, geeft u de **[!UICONTROL Edge Network-domein]** binnen **[!UICONTROL Domeinconfiguratie]**. Het domein van het Netwerk van de Rand is de naam van uw organisatie, die door wordt gevolgd `data.adobedc.net`bijvoorbeeld `techmarketingdemos.data.adobedc.net`.
 
    1. Van de **[!UICONTROL Opslaan in bibliotheek]** menu, selecteert u **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
 

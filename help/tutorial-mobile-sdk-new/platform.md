@@ -4,9 +4,9 @@ description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Als u geen toegang hebt, kunt u [deze les overslaan](install-sdks.md).
 In deze les zult u:
 
 * Maak een gegevensset voor Experience Platforms.
+* Configureer uw gegevensstroom om gegevens door te sturen naar het Experience Platform.
 * Valideer gegevens in de dataset.
 * Laat uw schema en dataset voor het Profiel van de Klant in real time toe.
 * Gegevens valideren in realtime-klantprofiel.
@@ -54,7 +55,7 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
    ![gegevensbank](assets/dataset-create.png)
 
 1. Zoek naar uw schema. bijvoorbeeld `Luma Mobile` in het zoekveld.
-1. Selecteer bijvoorbeeld uw schema **[!UICONTROL Gebeurtenisschema Luma Mobile App]**.
+1. Selecteer bijvoorbeeld uw schema **[!DNL Luma Mobile App Event Schema]**.
 
 1. Selecteren **[!UICONTROL Volgende]**.
    ![gegevensset configureren](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 1. Selecteren **[!UICONTROL Voltooien]**.
    ![gegevensset voltooien](assets/dataset-finish.png)
 
-## De gegevensstroom bijwerken
 
-Zodra u uw dataset hebt gecreeerd, ben zeker om [uw gegevensstroom bijwerken](create-datastream.md#adobe-experience-platform) Adobe Experience Platform toevoegen. Deze update zorgt voor gegevensstromen naar Platform.
+## Adobe Experience Platform-datastreamservice toevoegen
+
+Als u uw XDM-gegevens van het Edge-netwerk naar Adobe Experience Platform wilt verzenden, configureert u de Adobe Experience Platform-service naar de gegevensstroom die u instelt als onderdeel van [Een gegevensstroom maken](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>U kunt de dienst van Adobe Experience Platform slechts toelaten wanneer het hebben tot een gebeurtenisdataset geleid.
+
+1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en uw gegevensstroom.
+
+1. Selecteer vervolgens ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Service toevoegen]**.
+
+1. Selecteren **[!UICONTROL Adobe Experience Platform]** van de [!UICONTROL Service] lijst.
+
+1. Laat de dienst door omschakeling toe **[!UICONTROL Ingeschakeld]** op.
+
+1. Selecteer de **[!UICONTROL Gebeurtenisgegevens]** die u eerder hebt gemaakt, bijvoorbeeld **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Selecteren **[!UICONTROL Opslaan]**.
+
+   ![Adobe Experience Platform toevoegen als datastreamservice](assets/datastream-service-aep.png)
+1. De uiteindelijke configuratie moet er ongeveer zo uitzien.
+
+   ![gegevensstroominstellingen](assets/datastream-settings.png)
+
 
 ## Gegevens in de gegevensset valideren
 
@@ -89,7 +113,7 @@ Het Echte Profiel van de Klant van het Experience Platform staat u toe om een ho
 
 ### Het schema inschakelen
 
-1. Open bijvoorbeeld uw schema **[!UICONTROL Gebeurtenisschema Luma Mobile App]**.
+1. Open bijvoorbeeld uw schema **[!DNL Luma Mobile App Event Schema]**.
 1. Inschakelen **[!UICONTROL Profiel]**.
 1. Selecteren **[!UICONTROL De gegevens voor dit schema zullen een primaire identiteit op het identityMap gebied bevatten.]** in het dialoogvenster.
 1. **[!UICONTROL Opslaan]** het schema.
@@ -98,7 +122,7 @@ Het Echte Profiel van de Klant van het Experience Platform staat u toe om een ho
 
 ### De gegevensset inschakelen
 
-1. Open uw gegevensset, bijvoorbeeld **[!UICONTROL Dataset voor Luma Mobile-toepassingsgebeurtenis]**.
+1. Open uw gegevensset, bijvoorbeeld **[!DNL Luma Mobile App Event Dataset]**.
 1. Inschakelen **[!UICONTROL Profiel]**.
 
    ![de dataset voor profiel inschakelen](assets/platform-profile-dataset.png)

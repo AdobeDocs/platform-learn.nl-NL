@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -48,17 +48,19 @@ In deze les zult u
 * Implementatie valideren in Betrouwbaarheid.
 
 
-## Uw app instellen
+## Instellen
 
 >[!TIP]
 >
->Als u uw app al hebt ingesteld als onderdeel van het [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) les, kunt u beide overslaan [Adobe Journey Optimizer installeren - extensie voor beslissingstags](#install-adobe-journey-optimizer---decisioning-tags-extension) en [Uw schema bijwerken](#update-your-schema).
+>Als u uw app al hebt ingesteld als onderdeel van het [Journey Optimizer-aanbiedingen](journey-optimizer-offers.md) les, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
 
 ### Gegevensstroomconfiguratie bijwerken
 
+### Adobe Target
+
 Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van Experience Platform verzendt, naar Adobe Target worden doorgestuurd, moet u de configuratie van de gegevensstroom bijwerken.
 
-1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!UICONTROL Luma Mobile-toepassing]**.
+1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
 1. Selecteren **[!UICONTROL Service toevoegen]** en selecteert u **[!UICONTROL Adobe Target]** van de **[!UICONTROL Service]** lijst.
 1. Als u een klant van de Premium van het Doel bent en bezitstokens wilt gebruiken, ga het Doel in **[!UICONTROL Eigenschapstoken]** waarde die u voor deze integratie wilt gebruiken. Gebruikers van de doelstandaard kunnen deze stap overslaan.
 
@@ -67,6 +69,18 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![Doel toevoegen aan gegevensstroom](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+
+1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
+1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
+1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Offer decisioning]**, **[!UICONTROL Randsegmentatie]**, en **[!UICONTROL Aanpassingsdoelen]** zijn geselecteerd. Als u ook de Journey Optimizer-lessen volgt, selecteert u **[!UICONTROL Adobe Journey Optimizer]** ook. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
+1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]** .
+
+   ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration-target.png)
 
 
 ### Adobe Journey Optimizer installeren - extensie voor beslissingstags
@@ -143,7 +157,7 @@ Er zijn vele soorten activiteiten die u kunt maken in Adobe Target en implemente
 
       ![Ervaring B](assets/target-create-activity-experienceB.png)
 
-1. In de **[!UICONTROL Targeting]** de opstelling van uw A/B-test. Beide aanbiedingen worden standaard gelijkelijk over alle bezoekers verdeeld. Selecteren **[!UICONTROL Volgende]** om door te gaan.
+1. In de **[!DNL Targeting]** de opstelling van uw A/B-test. Beide aanbiedingen worden standaard gelijkelijk over alle bezoekers verdeeld. Selecteren **[!UICONTROL Volgende]** om door te gaan.
 
    ![Targeting](assets/taget-targeting.png)
 
@@ -151,7 +165,7 @@ Er zijn vele soorten activiteiten die u kunt maken in Adobe Target en implemente
 
    1. De naam van uw activiteit zonder naam wijzigen, bijvoorbeeld in `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. Voer een **[!UICONTROL Doelstelling]** voor uw A/B test bijvoorbeeld `A/B Test for Luma mobile app tutorial`.
-   1. Selecteren **[!UICONTROL Conversie]**, **[!UICONTROL Klikken op mbox]** in de **[!UICONTROL Goal Metric]** > **[!UICONTROL MIJN PRIMAIRE GOAL]** tegel en voer de naam van uw locatie (mbox) in, bijvoorbeeld `luma-mobileapp-abtest`.
+   1. Selecteren **[!UICONTROL Conversie]**, **[!UICONTROL Een box weergegeven]** in de **[!UICONTROL Goal Metric]** > **[!UICONTROL MIJN PRIMAIRE GOAL]** tegel en voer de naam van uw locatie (mbox) in, bijvoorbeeld `luma-mobileapp-abtest`.
    1. Selecteren **[!UICONTROL Opslaan en sluiten]**.
 
       ![Instellingen voor doelen](assets/target-goals.png)
@@ -174,7 +188,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >
 
 1. Controleer in Xcode of [AEP optimaliseren](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPOptimize` maakt deel uit van uw lijst met importbewerkingen.
 
    `import AEPOptimize`
@@ -197,7 +211,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de ` func updatePropositionAT(ecid: String, location: String) async` functie. Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** in de Xcode-projectnavigator. Zoek de ` func updatePropositionAT(ecid: String, location: String) async` functie. Voeg de volgende code toe:
 
    ```swift
    Task {
@@ -217,13 +231,13 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
    Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, die:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, die:
    * wint de voorstellen voor het huidige profiel terug dat op het beslissingswerkingsgebied wordt gebaseerd (die de plaats is u in de A/B Test hebt bepaald);
    * het aanbod uit het voorstel ophaalt;
    * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
    * activeert de `displayed()` actie op de aanbieding die een gebeurtenis terug naar het Edge Network zal sturen om het aanbod te informeren, wordt weergegeven.
 
-1. Nog steeds in **[!UICONTROL TargetOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
+1. Nog steeds in **[!DNL TargetOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
 
    ```swift
    // Invoke callback for offer updates
@@ -232,12 +246,15 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    }
    ```
 
-1. Nog steeds in **[!UICONTROL TargetOffersView]** voegt u de volgende code toe aan de `.task` modifier. Met deze code worden de aanbiedingen bijgewerkt wanneer de weergave wordt vernieuwd.
+1. Nog steeds in **[!DNL TargetOffersView]** voegt u de volgende code toe aan de `.task` modifier. Met deze code worden de aanbiedingen bijgewerkt wanneer de weergave wordt vernieuwd.
 
    ```swift
    // Clear and update offers
    await self.updatePropositionsAT(ecid: currentEcid, location: location)
    ```
+
+U kunt extra parameters van het Doel (zoals mbox, profiel, product, of ordeparameters) in een verzoek van de verpersoonlijkingsvraag naar het netwerk van de Rand van de Ervaring verzenden, door hen in een gegevenswoordenboek toe te voegen wanneer het roepen van [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. Zie voor meer informatie [Doelparameters](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## Valideren met de app
 
@@ -260,7 +277,7 @@ Om de A/B-test in betrouwbaarheid te valideren:
 1. Selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Reviseren en simuleren]** ondergronds **[!UICONTROL ADOBE JOURNEY OPTIMIZER-BESLISSING]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Reviseren en simuleren]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
-1. Selecteren **[!UICONTROL Verzoeken]** op de bovenste balk. U ziet uw **[!UICONTROL Doel]** verzoeken.
+1. Selecteren **[!UICONTROL Verzoeken]** op de bovenste balk. U ziet uw **[!DNL Target]** verzoeken.
    ![Validatie van AJO-beslissingen](assets/assurance-decisioning-requests.png)
 
 1. U kunt **[!UICONTROL Simuleren]** en **[!UICONTROL Gebeurtenislijst]** tabbladen voor meer functionaliteit die uw installatie voor Target-aanbiedingen controleren.

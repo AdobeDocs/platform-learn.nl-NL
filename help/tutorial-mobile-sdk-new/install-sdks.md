@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,12 @@ In deze les zult u:
 
 ## Swift Package Manager
 
-In plaats van CocoaPods te gebruiken en een Poddossier te gebruiken (zoals die in de Mobiele Installatieinstructies worden geschetst, zie [SDK-installatie-instructies genereren](./configure-tags.md#generate-sdk-install-instructions)), voegt u afzonderlijke pakketten toe met gebruik van de native Swift Package Manager van Xcode.
+In plaats van CocoaPods te gebruiken en een Poddossier te gebruiken (zoals die in de Mobiele Installatieinstructies worden geschetst, zie [SDK-installatie-instructies genereren](./configure-tags.md#generate-sdk-install-instructions)), voegt u afzonderlijke pakketten toe met gebruik van de native Swift Package Manager van Xcode. Het Xcode-project heeft al alle pakketafhankelijkheden die voor u zijn toegevoegd. De Xcode **[!UICONTROL Pakketafhankelijke onderdelen]** scherm moet er als volgt uitzien:
 
-In Xcode gebruiken **[!UICONTROL Bestand]** > **[!UICONTROL Pakketten toevoegen...]** en installeer alle pakketten die in de onderstaande tabel worden vermeld. Selecteer de koppeling van het pakket in de tabel om de volledige URL voor het specifieke pakket te verkrijgen.
+![Xcode-pakketafhankelijke](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+
+
+In Xcode kunt u **[!UICONTROL Bestand]** > **[!UICONTROL Pakketten toevoegen...]** pakketten toevoegen. De onderstaande tabel bevat koppelingen naar de URL&#39;s die u zou gebruiken om pakketten toe te voegen. De koppelingen leiden u ook naar meer informatie over elk specifiek pakket.
 
 | Pakket | Beschrijving |
 |---|---|
@@ -50,14 +53,9 @@ In Xcode gebruiken **[!UICONTROL Bestand]** > **[!UICONTROL Pakketten toevoegen.
 | [AEP-betrouwbaarheid](https://github.com/adobe/aepsdk-assurance-ios.git) | Betrouwbaarheid (alias Griffon-project) is een nieuwe, innovatieve uitbreiding (`AEPAssurance`) om u te helpen bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet in uw mobiele app. Met deze extensie wordt uw app voor betrouwbaarheidsverklaring ingeschakeld. |
 
 
-Nadat u alle pakketten hebt geïnstalleerd, voert u uw Xcode **[!UICONTROL Pakketafhankelijke onderdelen]** scherm moet er als volgt uitzien:
-
-![Xcode-pakketafhankelijke](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## Extensies importeren
 
-Navigeer in Xcode naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** en zorg ervoor dat de volgende importbewerkingen deel uitmaken van dit bronbestand.
+Navigeer in Xcode naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en zorg ervoor dat de volgende importbewerkingen deel uitmaken van dit bronbestand.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-Doe het zelfde voor **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+Doe het zelfde voor **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## AppDelegate bijwerken
 
-Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **AppDelegate** in de Xcode-projectnavigator.
+Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in de Xcode-projectnavigator.
 
-1. Stel de `@AppStorage` waarde voor `environmentFileId` naar de waarde voor het bestand-id van de ontwikkelomgeving die u hebt opgehaald van de tags in stap 6 van [SDK-installatie-instructies genereren](configure-tags.md#generate-sdk-install-instructions).
+1. Vervang de `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` naar de waarde voor het bestand-id van de ontwikkelomgeving die u hebt opgehaald van de tags in stap 6 van [SDK-installatie-instructies genereren](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. Voeg de volgende code toe aan de `application(_, didFinishLaunchingWithOptions)` functie.

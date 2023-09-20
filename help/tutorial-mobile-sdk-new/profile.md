@@ -1,15 +1,15 @@
 ---
-title: Profiel
+title: Profielgegevens verzamelen
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# Profiel
+# Profielgegevens verzamelen
 
 Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 
@@ -43,7 +43,7 @@ In deze les zult u:
 
 Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel te weten of een gebruiker in het verleden of onlangs een aankoop heeft gedaan. Laten we dat instellen in de Luma-app.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel t
 
    1. Gebruikt de `profileMap` woordenboek als een waarde voor de `attributeDict` parameter van de [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API-aanroep.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Producten]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de aankopen <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de aankopen <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
 
    ```swift
    // Update attributes
@@ -72,7 +72,7 @@ Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel t
 
 Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor andere Adobe-SDK&#39;s, maar u kunt kenmerken ook expliciet ophalen, zodat de toepassing zich naar wens gedraagt.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Algemeen]** > **[!UICONTROL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
 
    ```swift
    // Get attributes
@@ -111,7 +111,7 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. Selecteren **[!UICONTROL Producten]** in de tabbalk.
+   1. Selecteren **[!DNL Products]** in de tabbalk.
    1. Selecteer één product.
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
    1. Selecteer <img src="assets/addtocart.png" width="20" />.

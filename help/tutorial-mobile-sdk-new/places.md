@@ -1,15 +1,15 @@
 ---
-title: Plaatsen
+title: Geo-locatieservices gebruiken
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
 
-# Plaatsen
+# Geo-locatieservices gebruiken
 
 Leer hoe u de geolocatieservice in uw app gebruikt.
 
@@ -72,7 +72,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 1. Als u het dialoogvenster **[!UICONTROL Bibliotheken beheren]** dialoogvenster, selecteren **[!UICONTROL Sluiten]**.
 1. Terug naar **[!UICONTROL POI-beheer]**, selecteert u **[!UICONTROL POI&#39;s importeren]**.
 1. Selecteren **[!UICONTROL Start]** in t**[!UICONTROL De importplaatsen]**.
-1. Selecteren **[!UICONTROL Luminantie]** van de lijst van bibliotheken,
+1. Selecteren **[!DNL Luma]** van de lijst van bibliotheken,
 1. Selecteren **[!UICONTROL Volgende]**.
    ![Bibliotheek selecteren](assets/places-import-select-library.png)
 1. Download de [ZIP-bestand van POI&#39;s van luminantie](assets/luma_pois.csv.zip) en extraheer het naar een locatie op uw computer.
@@ -94,7 +94,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
    ![Decisitie-extensie toevoegen](assets/tag-places-extension.png)
 
 1. In de **[!UICONTROL Extensie installeren]** dialoogvenster:
-   1. Selecteren **[!UICONTROL Luminantie]** van de **[!UICONTROL Een bibliotheek selecteren]** lijst.
+   1. Selecteren **[!DNL Luma]** van de **[!UICONTROL Een bibliotheek selecteren]** lijst.
    1. Controleer of u de werkbibliotheek hebt gekozen, bijvoorbeeld **[!UICONTROL Eerste build]**.
    1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]** van **[!UICONTROL Opslaan in bibliotheek]**.
       ![De extensie Plaatsen installeren](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >
 
 1. Controleer in Xcode of [AEP-plaatsen](https://github.com/adobe/aepsdk-places-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPPlaces` maakt deel uit van uw lijst met importbewerkingen.
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Voeg de volgende code toe:
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
    Dit [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatiegegevens aan de dienst van Plaatsen mee.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Locatie]** > **[!UICONTROL GeofenceSheet]** in Xcode&#39;s Project navigator.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** in Xcode&#39;s Project navigator.
 
    1. Voer voor de knop Item de volgende code in
 

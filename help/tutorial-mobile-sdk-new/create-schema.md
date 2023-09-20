@@ -3,9 +3,9 @@ title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Voor meer informatie over het model van de schemacompositie, met inbegrip van on
 
 >[!TIP]
 >
->Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken.
+>Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken. Zie [Creeer en handhaaf een Document van de Verwijzing van het Ontwerp van de Oplossing (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) voor meer informatie .
 
 ## Vereisten
 
@@ -214,7 +214,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 1. Geef in de rechterspoorlijn een **[!UICONTROL Veldnaam]** van `appInformation`, **[!UICONTROL Weergavenaam]** van `App Information`en **[!UICONTROL Type]** van `App Information`.
 
-1. Selecteren **[!UICONTROL Interacties tussen toepassingen]** van de **[!UICONTROL Type]** drop-down, dat het type van douanegegevens is u in de vorige oefening creeerde.
+1. Selecteren **[!UICONTROL Interacties tussen toepassingen]** van de **[!UICONTROL Veldgroep]** vervolgkeuzelijst om de velden toe te wijzen aan uw nieuwe veldgroep.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
@@ -224,7 +224,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 >[!NOTE]
 >
->Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst. Dus `_techmarketingdemos`, die in de schermafbeeldingen worden gebruikt, wordt vervangen door de unieke waarde van uw organisatie.
+>Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst.
 
 
 >[!SUCCESS]

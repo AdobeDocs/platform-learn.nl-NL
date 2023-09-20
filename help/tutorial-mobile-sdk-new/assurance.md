@@ -3,14 +3,14 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
 
-# Betrouwbaarheid
+# Betrouwbaarheid instellen
 
 Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
@@ -40,7 +40,7 @@ Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker 
 
 Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les hebt voltooid, vereist iOS ook de volgende toevoeging om de betrouwbaarheidssessie voor uw app te starten.
 
-1. Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL SceneDelegate]** in de projectnavigator van uw Xcode.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in de projectnavigator van uw Xcode.
 
 1. De volgende code toevoegen aan `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
 
@@ -61,18 +61,23 @@ Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks
 Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de ondertekening bijwerken.
 
 1. Open het project in Xcode.
-1. Selecteren **[!UICONTROL Luminantie]** in de projectnavigator.
-1. Selecteer de **[!UICONTROL Luminantie]** doel.
+1. Selecteren **[!DNL Luma]** in de projectnavigator.
+1. Selecteer de **[!DNL Luma]** doel.
 1. Selecteer de **Ondertekenen en mogelijkheden** tab.
 1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
+
+   >[!IMPORTANT]
+   >
+   >Zorg ervoor dat u een unieke bundle-id selecteert die anders is dan de standaardid die al is ingevoerd in het Start-project, omdat elke bundle-id uniek moet zijn.
+
 
    ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## Een basis-URL instellen
 
 1. Ga naar uw project in Xcode.
-1. Selecteren **[!UICONTROL Luminantie]** in de projectnavigator.
-1. Selecteer de **[!UICONTROL Luminantie]** doel.
+1. Selecteren **[!DNL Luma]** in de projectnavigator.
+1. Selecteer de **[!DNL Luma]** doel.
 1. Selecteer de **Info** tab.
 1. Als u een basis-URL wilt toevoegen, schuift u omlaag naar **URL-typen** en selecteert u de **+** knop.
 1. Set **Id** aan de bundel-id waarin u zich hebt geconfigureerd [Ondertekenen](#signing) (bijvoorbeeld `com.adobe.luma.tutorial.swiftui`) en stelt een **URL-schema&#39;s** bijvoorbeeld `lumatutorialswiftui`.
@@ -90,7 +95,7 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 1. Selecteren **[!UICONTROL Betrouwbaarheid]** van de linkerspoorlijn in de UI van de Inzameling van Gegevens.
 1. Selecteren **[!UICONTROL Sessie maken]**.
 1. Selecteren **[!UICONTROL Start]**.
-1. Geef een **[!UICONTROL Naam van sessie]** zoals `Luma Mobile App Session` en de **[!UICONTROL Basis-URL]**, dit zijn de URL-schema&#39;s die u hebt ingevoerd in Xcode, gevolgd door `://`. Bijvoorbeeld: `lumatutorialswiftui://`.
+1. Geef een **[!UICONTROL Naam van sessie]** zoals `Luma Mobile App Session` en de **[!UICONTROL Basis-URL]**, dit zijn de URL-schema&#39;s die u hebt ingevoerd in Xcode, gevolgd door `://` Bijvoorbeeld: `lumatutorialswiftui://`
 1. Selecteren **[!UICONTROL Volgende]**.
    ![betrouwbaarheidssessie maken](assets/assurance-create-session.png)
 1. In de **[!UICONTROL Nieuwe sessie maken]** modale dialoog:

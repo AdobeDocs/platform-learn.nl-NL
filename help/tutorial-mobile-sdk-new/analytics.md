@@ -1,16 +1,16 @@
 ---
-title: Analysetoewijzing
-description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
+title: Analysegegevens verzamelen en toewijzen
+description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen en toewijzen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
 
-# Analysetoewijzing
+# Analysegegevens verzamelen en toewijzen
 
 Leer hoe u mobiele gegevens kunt toewijzen aan Adobe Analytics.
 
@@ -28,8 +28,28 @@ De [event](events.md) gegevens die u in eerdere lessen hebt verzameld en naar Pl
 
 In deze les zult u:
 
+* Configureer uw gegevensstroom met de Adobe Analytics-service.
 * Begrijp automatisch in kaart brengen van de variabelen van de Analyse.
 * Stel verwerkingsregels in om XDM-gegevens toe te wijzen aan analytische variabelen.
+
+## Adobe Analytics-datastreamservice toevoegen
+
+Als u uw XDM-gegevens van het Edge-netwerk naar Adobe Analytics wilt verzenden, configureert u de Adobe Analytics-service naar de gegevensstroom die u instelt als onderdeel van [Een gegevensstroom maken](create-datastream.md).
+
+1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en uw gegevensstroom.
+
+1. Selecteer vervolgens ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Service toevoegen]**.
+
+1. Toevoegen **[!UICONTROL Adobe Analytics]** van de [!UICONTROL Service] lijst,
+
+1. Voer de naam in van de rapportsuite van Adobe Analytics waarin u wilt gebruiken **[!UICONTROL ID van rapportsuite]**.
+
+1. Laat de dienst door omschakeling toe **[!UICONTROL Ingeschakeld]** op.
+
+1. Selecteren **[!UICONTROL Opslaan]**.
+
+   ![Adobe Analytics toevoegen als datastreamservice](assets/datastream-service-aa.png)
+
 
 ## Automatische toewijzing
 
@@ -164,7 +184,7 @@ Bijvoorbeeld:
 a.x.commerce.saveforlaters.value
 
 // Custom Field
-a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
+a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 ```
 
 >[!NOTE]
@@ -173,29 +193,38 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >
 >`_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
 
+Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in kaart te brengen, kunt u:
 
-Zo ziet een verwerkingsregel met deze gegevens eruit:
+* Voeg de **[!UICONTROL Adobe Analytics ExperienceEvent Volledige extensie]** veldgroep aan uw schema.
 
-* U **[!UICONTROL Waarde overschrijven van]** (1) **[!UICONTROL Schermnaam van app (eVar2)]** (2) met de waarde van **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (3) **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is ingesteld]** (5)
+  ![Analytics ExperienceEvent FullExtension, veldgroep](assets/schema-analytics-extension.png)
+* Stel regels samen in de eigenschap Tags om de contextgegevens toe te wijzen aan de velden in de veldgroep Volledige extensie van Adobe Analytics ExperienceEvent. Bijvoorbeeld, map `_techmarketingdemo.appinformation.appstatedetails.screenname` tot `_experience.analytics.customDimensions.eVars.eVar2`.
 
-* U **[!UICONTROL Gebeurtenis instellen]** (6) **[!UICONTROL Toevoegen aan Wishlist (gebeurtenis 3)]** (7) tot **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is ingesteld]** 10.
+<!-- Old processing rules section
+Here is what a processing rule using this data might look like:
 
-![regels voor analytische verwerking](assets/analytics-processing-rules.png)
+* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
+
+* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+
+![analytics processing rules](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Sommige automatisch toegewezen variabelen zijn mogelijk niet beschikbaar voor gebruik in verwerkingsregels.
+>Some of the automatically mapped variables may not be available for use in processing rules.
 >
 >
->De eerste keer u aan een verwerkingsregel in kaart brengt, toont de interface u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
+>The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-Aanvullende informatie over verwerkingsregels en contextgegevens is te vinden [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->In tegenstelling tot de vorige implementaties van mobiele apps, is er geen onderscheid tussen een pagina/het scherm meningen en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen de schermnaam toe te wijzen aan **[!UICONTROL Paginanaam]** in een verwerkingsregel.
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+
+-->
 
 >[!SUCCESS]
 >

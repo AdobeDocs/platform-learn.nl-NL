@@ -3,9 +3,9 @@ title: WebViews verwerken
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ De uitbreiding van de Identiteit van de Rand AEP binnen WebView wordt gebruikt v
 
 ## Implementatie
 
-Navigeren naar **[!UICONTROL Luminantie]** > **[!UICONTROL Luminantie]** > **[!UICONTROL Weergaven]** > **[!UICONTROL Info]** > **[!UICONTROL TermsOfServiceSheet]** en zoek de `func loadUrl()` in de `final class SwiftUIWebViewModel: ObservableObject` klasse. Voeg de volgende vraag toe om de Webmening te behandelen:
+Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** en zoek de `func loadUrl()` in de `final class SwiftUIWebViewModel: ObservableObject` klasse. Voeg de volgende vraag toe om de Webmening te behandelen:
 
 ```swift
 // Handle web view
@@ -63,12 +63,12 @@ De [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/clie
 
 Meer informatie over de `Identity.getUrlVariables` API in de [Identiteit voor Edge Network Extension API-naslaggids](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validatie
+## Valideren
 
 De code uitvoeren:
 
 1. Ga naar de **[!UICONTROL Instellingen]** in de app
-1. Tik op de knop **[!UICONTROL Weergeven...]** om de **[!UICONTROL Gebruiksvoorwaarden]**.
+1. Tik op de knop **[!DNL View...]** om de **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ De code uitvoeren:
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+Jammer genoeg, is het zuiveren van de Webzitting beperkt; u kunt niet het Adobe Experience Platform Debugger in uw browser bijvoorbeeld gebruiken om de Webmeningszitting te blijven zuiveren.
 
 >[!NOTE]
 >

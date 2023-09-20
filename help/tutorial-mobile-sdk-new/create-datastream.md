@@ -3,10 +3,10 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
    >
    >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Dataset - Joe Smith` in plaats van `Luma Mobile App Event Dataset`. Zie ook de opmerking in [Overzicht](overview.md).
 
-1. Selecteer het schema dat u in de vorige les van het **Gebeurtenisschema** een lijst.
+1. Selecteer het schema dat u in de vorige les van het **Gebeurtenisschema** lijst.
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![nieuwe gegevensstromen](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
 ## Services toevoegen
 
-Vervolgens sluit u de services van uw Experience Cloud aan op uw gegevensstroom. Wanneer Platform Mobile SDK gegevens naar Edge Network verzendt, verzendt de datastream de gegevens naar deze services:
+Wanneer u door (facultatief) gaat [Analyse](analytics.md) en [Experience Platform](platform.md) de lessen in dit leerprogramma, voegt u de diensten aan uw gegevensstroom toe om ervoor te zorgen dat wanneer Platform Mobiele SDK gegevens naar het Netwerk van de Rand verzendt, de gegevensstroom door:sturen die gegevens aan de gevormde diensten.
 
 ### Adobe Analytics
 
