@@ -4,9 +4,9 @@ breadcrumb-title: Lesbestanden
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 8%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 8%
    + [Verbinding maken met doelen](/help/platform/destinations/connecting-to-destinations.md)
    + [Doelen maken en gegevens activeren](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Profielen en segmenten naar een doel activeren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Vorm een bestemming van de datasetuitvoer](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integreren met Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [De Azure Blob-bestemming configureren](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [De Marketo-bestemming configureren](/help/platform/destinations/configure-the-marketo-destination.md)
