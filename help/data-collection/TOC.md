@@ -5,9 +5,9 @@ user-guide-description: Instructievideo's en tutorials waarmee u een krachtige g
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 17%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 17%
    + [Zelfstudie Doel migreren](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + Toestemming{#consent}
       + [Overzicht](web-sdk/consent/overview.md)
-      + [De waarden voor de toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
+      + [Stel waarden voor toestemming in met de standaard voor Adobe](web-sdk/consent/set-consent-adobe.md)
       + [Stel toestemmingswaarden in met de IAB TCF 2.0-standaard](web-sdk/consent/set-consent-iab.md)
       + [Inspect en valideren toestemmingsgegevens](web-sdk/consent/inspect.md)
       + [Zelfstudie voor verwerking van begin tot eind](web-sdk/consent/tutorial.md)
@@ -53,10 +53,11 @@ ht-degree: 17%
    + [Een gegevensstroom instellen](event-forwarding/set-up-a-datastream.md)
    + [Een extensie toevoegen](event-forwarding/add-an-extension.md)
    + [Een regel maken](event-forwarding/create-a-rule.md)
+   + [Workflows snel starten](event-forwarding/quick-start-workflows.md)
    + [Gebeurtenis controleren door:sturen](event-forwarding/monitor.md)
    + [Client-tags verplaatsen](event-forwarding/consider-moving-tags.md)
    + [Uitgebreide conversies voor Google Ads instellen](event-forwarding/set-up-google-ads-enhanced-conversions.md)
-   + [Adobe-extensie voor Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
+   + [Adobe extensie voor Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
 + DataStreams en Edge Network{#edge-network}
    + [Gegevensstromen configureren](edge/configure-datastreams.md)
    + [Gegevensprep](edge/data-prep.md)
