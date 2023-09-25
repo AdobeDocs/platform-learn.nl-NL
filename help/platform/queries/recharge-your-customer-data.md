@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # De gegevens van uw klant opladen voor elektrificatieervaringen
 
 Omnichannel-gegevens zijn een essentieel ingrediënt van energieke klantprofielen die door marketers worden gebruikt om activering te organiseren en de resulterende klantritten te meten. Organisaties staan echter voor uitdagingen bij het beheer van de kwaliteit, schaal en diversiteit van deze gegevens. Ze vereisen gestroomlijnde oplossingen om de impact van gegevens van lage kwaliteit te beperken, tijd tot waarde te beperken en rendement te vermenigvuldigen door dezelfde gegevens te gebruiken voor een groot aantal gebruiksgevallen.
+Ga voor meer informatie naar de [Documentatie bij Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
 
 In deze video wordt het volgende besproken:
 
 * Adobe Experience Platform-mogelijkheden voor gegevensvoorbereiding die u kunt benutten
 * Het verhogen van ROI van Adobe Real-Time CDP, Adobe Journey Optimizer, en Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## SQL-voorbeeld
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-Ga voor meer informatie naar de [Documentatie bij Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
 
 >[!NOTE]
 >

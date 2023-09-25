@@ -9,7 +9,7 @@ thumbnail: 332077.jpg
 jira: KT-7333
 type: Event
 exl-id: 6704016a-a6fc-42d9-af33-761e5f4fed60
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Naarmate de marktkrachten verandering brengen in ons digitale landschap, moeten bedrijven zich aanpassen aan een nieuwe realiteit op het gebied van gegevensbeheer, identiteitsoplossing en hoe zij vooruitzichten en pseudoniem bezoekers met betekenisvolle inhoud kunnen inschakelen. Daartoe zijn er vele verschillende wegen die zich ontwikkelen om duurzame herkenningstekens met externe systemen te gebruiken om schaal te bereiken. In dit webinar, zie hoe Adobe en 451 Onderzoek over de toekomst van technologie en gegevens denken om het nieuwe marketing milieu te richten en beginnen uw zaken voor de toekomst van gegevensbeheer voor te bereiden.
 
->[!VIDEO](https://video.tv.adobe.com/v/332077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332077/?learn=on)

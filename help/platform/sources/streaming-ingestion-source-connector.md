@@ -1,25 +1,25 @@
 ---
 title: Gegevens streamen met behulp van Bronverbindingen
-description: Deze video laat zien hoe gegevens in real-time kunnen worden gestreamd van een bron voor cloudopslag naar Platform en hoe de gegevens in real-time kunnen worden gebruikt voor de betrokkenheid van klanten.
+description: Leer hoe u gegevens in real-time kunt streamen van een bron voor cloudopslag naar Platform en de gegevens in real-time kunt gebruiken voor de betrokkenheid van de klant.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
 
 # Gegevens streamen met behulp van Bronverbindingen
 
-Deze video laat zien hoe gegevens in real-time kunnen worden gestreamd van een bron voor cloudopslag naar Platform en hoe de gegevens in real-time kunnen worden gebruikt voor de betrokkenheid van klanten.
+Leer hoe u gegevens in real-time kunt streamen van een bron voor cloudopslag naar Platform en de gegevens in real-time kunt gebruiken voor de betrokkenheid van de klant.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Aanvullende bronnen
 

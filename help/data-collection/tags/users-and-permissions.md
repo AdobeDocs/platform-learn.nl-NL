@@ -6,7 +6,7 @@ feature: Tags
 level: Beginner
 jira: KT-3532
 exl-id: 8db9d937-289f-4570-b602-5656abc75295
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u de Adobe Admin Console kunt gebruiken om machtigingen in tags te beheren, zodat werknemers van uw bedrijf toegang hebben tot hun taken.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on)

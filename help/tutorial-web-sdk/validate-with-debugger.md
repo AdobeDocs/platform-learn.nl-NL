@@ -3,7 +3,7 @@ title: Valideer de implementaties van SDK van het Web met Foutopsporing van het 
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor 
 
 Als u foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In deze les gebruikt u de opdracht [Adobe Experience Cloud Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) om de eigenschap tag te vervangen die op de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen eigenschap.
 
@@ -58,27 +58,27 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 1. Zorg ervoor dat de Luminasite is geopend en selecteer het extensiepictogram Experience Platform debugger
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie, die met dit leerprogramma niet verwant is (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Controleer of Foutopsporing &quot;**[!UICONTROL Verbonden met luminantie]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL vergrendelen]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
-1. Selecteer **[!UICONTROL Aanmelden]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
+1. Selecteer de **[!UICONTROL Aanmelden]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
 1. Ga nu naar **[!UICONTROL Experience Platform-tags]** in de linkernavigatie
 
    ![Tagscherm Foutopsporing](assets/validate-launch-screen.png)
 
-1. Selecteer **[!UICONTROL Configuratie]** tab
-1. Rechts van waar het u toont **[!UICONTROL Pagina-insluitcodes]**, opent u de **[!UICONTROL Handelingen]** vervolgkeuzelijst en selecteert u **[!UICONTROL Vervangen]**
+1. Selecteer de **[!UICONTROL Configuratie]** tab
+1. Rechts van waar het u toont **[!UICONTROL Pagina-insluitcodes]**, opent u de **[!UICONTROL Handelingen]** vervolgkeuzelijst en selecteer **[!UICONTROL Vervangen]**
 
    ![Handelingen selecteren > Vervangen](assets/validate-switch-environment.png)
 
 1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer uw `Web SDK Course` eigenschap
 1. Selecteer uw `Development` milieu
-1. Selecteer **[!UICONTROL Toepassen]** knop
+1. Selecteer de **[!UICONTROL Toepassen]** knop
 
    ![De eigenschap Alternatieve tag selecteren](assets/validate-switch-selection.png)
 
-1. De Luma-website wordt nu opnieuw geladen _met uw eigenschap tag_.
+1. De Luma-website wordt nu opnieuw geladen _met uw tag-eigenschap_.
 
    ![tag, eigenschap is vervangen](assets/validate-switch-success.png)
 
-Aangezien u het leerprogramma voortzet, zult u deze techniek gebruiken om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u deze techniek ook gebruiken om wijzigingen te valideren.
+Aangezien u het leerprogramma voortzet, zult u deze techniek gebruiken om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u met dezelfde techniek wijzigingen valideren.
 
 ## Implementatie valideren in Foutopsporing Experience Platform
 
@@ -111,7 +111,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
    ![Web SDK in Foutopsporing](assets/identity-debugger-websdk-dark.png)
 
-1. Selecteer **[!UICONTROL gebeurtenissen]** rij voor het openen van details in een pop-up
+1. Selecteer de **[!UICONTROL gebeurtenissen]** rij voor het openen van details in een pop-up
 
    ![Web SDK in Foutopsporing](assets/identity-deugger-websdk-event-dark.png)
 
@@ -123,7 +123,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
 Deze typen aanvraagdetails zijn ook zichtbaar in de webontwikkelaarsgereedschappen van de browser **Netwerk** tabblad (ervan uitgaande dat de website uw tagbibliotheek laadt).
 
-1. De webontwikkelaarsgereedschappen van de browser openen **Netwerk** en laadt de pagina opnieuw. Filter voor aanroepen met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in te kijken **Kopteksten** tab, en **Payload** tab
+1. De webontwikkelaarsgereedschappen van de browser openen **Netwerk** en laadt de pagina opnieuw. Filter voor aanroepen met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in te kijken **Kopteksten** en **Payload** tab
 
    ![Het tabblad Netwerk](assets/validate-dev-console.png)
 
@@ -141,4 +141,4 @@ Met een voorwerp XDM dat nu op een pagina, en met de kennis van hoe te om uw geg
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

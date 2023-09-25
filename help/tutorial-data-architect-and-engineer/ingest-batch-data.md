@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 <!-- 1hr-->
 In deze les, zult u partijgegevens in Experience Platform opnemen gebruikend diverse methodes.
 
-Met gegevensinvoer via batch kunt u een grote hoeveelheid gegevens tegelijk in Adobe Experience Platform innemen. U kunt batchgegevens invoeren in één keer uploaden binnen de interface van het Platform of met de API. U kunt regelmatig geplande batch-uploads van de derdediensten zoals de diensten van de wolkenopslag ook vormen gebruikend Bron schakelaars.
+Met gegevensinvoer via batch kunt u een grote hoeveelheid gegevens tegelijk in Adobe Experience Platform innemen. U kunt batchgegevens invoeren in één keer uploaden binnen de interface van Platform of met de API. U kunt regelmatig geplande batch-uploads van de derdediensten zoals de diensten van de wolkenopslag ook vormen gebruikend Bron schakelaars.
 
 **Gegevensengineers** moet u batchgegevens buiten deze zelfstudie invoeren.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over gegevensinvoer:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## Vereiste machtigingen
@@ -44,11 +44,11 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 
 Voor de Bronenoefening hebt u toegang nodig tot een (S)FTP-server of cloudopslagoplossing. Er is een oplossing als u er geen hebt.
 
-## Gegevens batchgewijs samenvoegen met gebruikersinterface van Platform
+## Gegevens in batches samenvoegen met de gebruikersinterface van Platform
 
 De gegevens kunnen direct in een dataset op het datasetscherm in JSON en parquet formaten worden geupload. Dit is een goede manier om inname van sommige gegevens te testen nadat u een
 
-### Gegevens downloaden en voorbereiden
+### De gegevens downloaden en voorbereiden
 
 Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 
@@ -59,13 +59,13 @@ Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 1. Downloaden [luma-data.zip](assets/luma-data.zip) aan uw **Luminantieleidingselementen** map.
 1. Pak het bestand uit en maak een map met de naam `luma-data` die de vier gegevensbestanden bevat die we in deze les zullen gebruiken
 1. Openen `luma-loyalty.json` in een teksteditor en vervang alle instanties van `_techmarketingdemos` met uw eigen underscore-huurder identiteitskaart, zoals die in uw eigen schema&#39;s wordt gezien:
-   ![Onderstrepingshuurder-id](assets/ingestion-underscoreTenant.png)
+   ![Onderstrepingshuurder](assets/ingestion-underscoreTenant.png)
 
 1. Het bijgewerkte bestand opslaan
 
 ### De gegevens samenvoegen
 
-1. Selecteer in de gebruikersinterface van het Platform de optie **[!UICONTROL Gegevenssets]** in de linkernavigatie
+1. Selecteer in de gebruikersinterface van het platform de optie **[!UICONTROL Gegevenssets]** in de linkernavigatie
 1. Open uw `Luma Loyalty Dataset`
 1. Schuif omlaag totdat u de **[!UICONTROL Gegevens toevoegen]** in de rechterkolom
 1. Upload de `luma-loyalty.json` bestand.
@@ -91,7 +91,7 @@ Er zijn een paar manieren om te bevestigen dat de gegevens met succes werden opg
 Om te bevestigen dat de gegevens in de dataset werden opgenomen:
 
 1. Selecteer op dezelfde pagina waar u de gegevens hebt ingevoerd de optie **[!UICONTROL Gegevensset voorvertoning]** knop rechtsboven
-1. Selecteer **Voorvertoning** en u zou sommige ingebedde gegevens moeten kunnen zien.
+1. Selecteer de **Voorvertoning** en u zou sommige ingebedde gegevens moeten kunnen zien.
 
    ![Een voorvertoning weergeven van de voltooide gegevensset](assets/ingestion-loyalty-preview.png)
 
@@ -109,7 +109,7 @@ Om te bevestigen dat de in Profiel aangelande gegevens (kan een paar minuten dur
 
 Als u zich in de vorige les hebt geabonneerd op gegevensinsluitingsgebeurtenissen, controleert u de unieke URL van website.site. U zou drie verzoeken moeten zien verschijnen in de volgende orde, met wat tijd tussen hen, met het volgende: `eventCode` waarden:
 
-1. `ing_load_success`—de partij als ingeslikt
+1. `ing_load_success`—de partij als ingenomen
 1. `ig_load_success`—de batch is in de identiteitsgrafiek opgenomen
 1. `ps_load_success`—de batch is in de profielservice opgenomen
 
@@ -117,17 +117,17 @@ Als u zich in de vorige les hebt geabonneerd op gegevensinsluitingsgebeurtenisse
 
 Zie de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) voor meer informatie over de kennisgevingen .
 
-## Gegevens batchgewijs samenvoegen met Platform-API
+## Gegevens in batches samenvoegen met platform-API
 
-Laten we nu gegevens uploaden met behulp van de API.
+Laten we nu gegevens uploaden met de API.
 
 >[!NOTE]
 >
 >Gegevensarchitecten kunnen de CRM-gegevens gratis uploaden via de gebruikersinterfacemethode.
 
-### Gegevens downloaden en voorbereiden
+### De gegevens downloaden en voorbereiden
 
-1. U had al gedownload en gedecomprimeerd moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
+1. U had al gedownload en uitgepakt moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
 2. Openen `luma-crm.json` in een teksteditor en vervang alle instanties van `_techmarketingdemos` met uw eigen underscore-huurder-id, zoals die in uw schema&#39;s wordt gezien
 3. Het bijgewerkte bestand opslaan
 
@@ -137,7 +137,7 @@ Eerst krijgen wij identiteitskaart van dataset identiteitskaart van de dataset w
 
 1. Open [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
-1. Open uw omgevingsvariabelen en zorg ervoor dat de waarde van **CONTAINER_ID** nog steeds `tenant`
+1. Open uw omgevingsvariabelen en zorg ervoor dat de waarde van **CONTAINER_ID** is nog steeds `tenant`
 1. De aanvraag openen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** en selecteert u **Verzenden**
 1. U moet een `200 OK` reactie
 1. De id van het dialoogvenster kopiëren `Luma CRM Dataset` van het responsorgaan
@@ -150,7 +150,7 @@ Nu kunnen wij een partij in de dataset tot stand brengen:
 1. Downloaden [Gegevensinname API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) aan uw `Luma Tutorial Assets` map
 1. De verzameling importeren in [!DNL Postman]
 1. Selecteer de aanvraag **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]**
-1. Plak het volgende als de **Lichaam** van het verzoek, ***het vervangen van de waarde datasetId met uw eigen***:
+1. Plak het volgende als de **Lichaam** van het verzoek ***het vervangen van de waarde datasetId met uw eigen***:
 
    ```json
    {
@@ -161,9 +161,9 @@ Nu kunnen wij een partij in de dataset tot stand brengen:
    }
    ```
 
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Er moet een 201 Created-reactie komen met de id van de nieuwe batch!
-1. Kopieer de `id` van de nieuwe partij
+1. De `id` van de nieuwe partij
    ![Batch gemaakt](assets/ingestion-crm-createBatch.png)
 
 ### De gegevens samenvoegen
@@ -214,7 +214,7 @@ Ten slotte kunt u bevestigen dat een van uw profielen is gemaakt door een van de
 
 ![Profiel toegevoegd](assets/ingestion-crm-profile.png)
 
-Er is één interessant ding dat zojuist is gebeurd en waarop ik wil wijzen. Open `Danny Wright` profiel. Het profiel heeft een `Lumacrmid` en `Lumaloyaltyid`. Onthoud de `Luma Loyalty Schema` bevatte twee identiteitsgebieden, Luma Loyalty ID en CRM Identiteitskaart Nu we beide gegevenssets hebben geüpload, zijn ze samengevoegd tot één profiel. De Loyalty-gegevens hadden `Daniel` als voornaam en &quot;New York City&quot; als huisadres, terwijl de CRM-gegevens `Danny` als voornaam en `Portland` als het huisadres voor de klant met zelfde identiteitskaart van de Loyalty. We zullen terugkomen op de reden waarom de voornaam wordt weergegeven `Danny` in de les over samenvoegingsbeleid.
+Er is één interessant ding dat zojuist is gebeurd en waarop ik wil wijzen. Open `Danny Wright` profiel. Het profiel heeft een `Lumacrmid` en `Lumaloyaltyid`. De `Luma Loyalty Schema` bevatte twee identiteitsgebieden, Luma Loyalty ID en CRM Identiteitskaart Nu we beide gegevenssets hebben geüpload, zijn ze samengevoegd tot één profiel. De Loyalty-gegevens hadden `Daniel` als voornaam en &quot;New York City&quot; als huisadres, terwijl de CRM-gegevens `Danny` als voornaam en `Portland` als het huisadres voor de klant met zelfde identiteitskaart van de Loyalty. We zullen terugkomen op waarom de voornaam wordt weergegeven `Danny` in de les over samenvoegingsbeleid.
 
 U hebt zojuist profielen samengevoegd.
 
@@ -232,9 +232,9 @@ Zie de [documentatie](https://experienceleague.adobe.com/docs/experience-platfor
 
 Laten we eens kijken naar een andere manier om gegevens te uploaden. Met de workflows kunt u CSV-gegevens invoeren die nog niet in XDM zijn gemodelleerd.
 
-### Gegevens downloaden en voorbereiden
+### De gegevens downloaden en voorbereiden
 
-1. U had al gedownload en gedecomprimeerd moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
+1. U had al gedownload en uitgepakt moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
 1. Bevestig dat u`luma-products.csv`
 
 ### Een workflow maken
@@ -249,20 +249,20 @@ Laten we nu een workflow instellen:
 1. Voeg de `luma-products.csv` bestand dat u hebt gedownload en selecteer **[!UICONTROL Volgende]** knop
    ![Uw gegevensset selecteren](assets/ingestion-products-selectData.png)
 1. Nu bevindt u zich in de mapperinterface, waarin u een veld kunt toewijzen vanuit de brongegevens (een van de kolomnamen in het dialoogvenster `luma-products.csv` bestand) naar XDM-velden in het doelschema. In ons voorbeeld, zijn de kolomnamen dicht genoeg aan de namen van het schemagebied dat mapper de juiste afbeelding kan auto-ontdekken! Als de mapper het juiste veld niet automatisch kan detecteren, selecteert u het pictogram rechts van het doelveld om het juiste XDM-veld te selecteren. Ook, als u niet één van de kolommen van CSV wilt opnemen, kon u de rij van mapper schrappen. Voel u vrij om rond te spelen en kolomrubrieken in te veranderen `luma-products.csv` om vertrouwd te raken met hoe de mapper werkt.
-1. Selecteer **[!UICONTROL Voltooien]** knop
+1. Selecteer de **[!UICONTROL Voltooien]** knop
    ![Uw gegevensset selecteren](assets/ingestion-products-mapper.png)
 
 ### De gegevens valideren
 
 Wanneer de partij heeft geupload, verifieer upload door de dataset te bekijken.
 
-Aangezien `Luma Product SKU` is een naamruimte zonder personen. Er worden geen profielen voor de productskus weergegeven.
+Aangezien de `Luma Product SKU` is een naamruimte zonder personen. Er worden geen profielen voor de productskus weergegeven.
 
 Je moet de drie hits op je website zien.
 
 ## Gegevens samenvoegen met bronnen
 
-Oké, je deed dingen op de moeilijke manier. Laten we nu het beloofde land van _geautomatiseerd_ batch-opname! Als ik zeg: &quot;SET IT!&quot; je zegt: &quot;VERGEET HET!&quot; &quot;SET IT!&quot; &quot;VERGEET HET!&quot; &quot;SET IT!&quot; &quot;VERGEET HET!&quot; Grapje, je zou zoiets nooit doen! Oké, weer aan het werk. Je bent bijna klaar.
+Oké, je deed dingen op de moeilijke manier. Laten we nu het beloofde land van _automatisch_ batch-opname! Als ik zeg: &quot;SET IT!&quot; je zegt: &quot;VERGEET HET!&quot; &quot;STEL IT IN!&quot; &quot;VERGEET HET!&quot; &quot;STEL IT IN!&quot; &quot;VERGEET HET!&quot; Grapje, je zou zoiets nooit doen! Oké, weer aan het werk. Je bent bijna klaar.
 
 Ga naar **[!UICONTROL Bronnen]** in de linkernavigatie om de Broncatalogus te openen. Hier ziet u verschillende kant-en-klare integraties met toonaangevende gegevens- en opslagproviders.
 
@@ -278,15 +278,15 @@ Veel van de Bronnen hebben een gelijkaardige configuratiewerkschema, waarin u:
 1. Selecteer de gegevens die u wilt invoeren
 1. Selecteer de dataset van het Platform waarin u het wilt opnemen
 1. De velden toewijzen aan uw XDM-schema
-1. Kies de frequentie waarmee u gegevens van die plaats wilt opnieuw opnemen
+1. Kies de frequentie waarmee u gegevens vanaf die locatie opnieuw wilt invoeren
 
 >[!NOTE]
 >
->De gegevens voor offline aanschaf die we in deze exercitie gebruiken, bevatten gegevens over datumtijd. Datumtijdgegevens moeten in een van beide staan [Tekenreeksen met ISO 8061-indeling](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15&quot;):05:59,000-08:00&quot;) of Unix Tijd die in milliseconden (1531263959000) wordt geformatteerd en bij inname in het doelXDM type wordt omgezet. Voor meer informatie over gegevensconversie en andere beperkingen raadpleegt u [de documentatie van de API voor batchverwerking](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>De gegevens voor offline aanschaf die we in deze exercitie gebruiken, bevatten gegevens over datumtijd. Datumtijdgegevens moeten in een van beide staan [Tekenreeksen met ISO 8061-indeling](https://www.iso.org/iso-8601-date-and-time-format.html) (2018-07-10T15):05:59,000-08:00&quot;) of Unix Tijd die in milliseconden (1531263959000) wordt geformatteerd en bij inname in het doelXDM type wordt omgezet. Zie voor meer informatie over gegevensconversie en andere beperkingen [de documentatie van de API voor batchverwerking](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Download, prep en upload de gegevens naar de voorkeursleverancier voor cloudopslag
 
-1. U had al gedownload en gedecomprimeerd moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
+1. U had al gedownload en uitgepakt moeten zijn [luma-data.zip](assets/luma-data.zip) in uw `Luma Tutorial Assets` map.
 1. Openen `luma-offline-purchases.json` in een teksteditor en vervang alle instanties van `_techmarketingdemos` met uw eigen underscore-huurder-id, zoals die in uw schema&#39;s wordt gezien
 1. Werk alle tijdstempels bij zodat de gebeurtenissen in de laatste maand voorkomen (bijvoorbeeld, onderzoek naar `"timestamp":"2022-06` en vervang het jaar en de maand)
 1. Kies uw voorkeursleverancier voor cloudopslag, zodat deze beschikbaar is in het dialoogvenster [!UICONTROL Bronnen] catalogus
@@ -299,15 +299,15 @@ Veel van de Bronnen hebben een gelijkaardige configuratiewerkschema, waarin u:
 1. Selecteer in het vak van uw voorkeursleverancier voor cloudopslag de optie **[!UICONTROL Configureren]** knop
    ![Configureer](assets/ingestion-offline-selectFTP.png)
 1. **[!UICONTROL Verificatie]** is de eerste stap. Voer bijvoorbeeld de naam van uw account in `Luma's FTP Account` en uw verificatiegegevens. Deze stap zou voor alle bronnen van de wolkenopslag vrij gelijkaardig moeten zijn, hoewel de gebieden lichtjes kunnen variëren. Zodra u de authentificatiedetails voor een rekening hebt ingegaan, kunt u hen voor andere bronverbindingen opnieuw gebruiken die verschillende gegevens over verschillende programma&#39;s van andere dossiers in de zelfde rekening zouden kunnen verzenden
-1. Selecteer **[!UICONTROL Verbinding maken met bronknop]**
-1. Wanneer het Platform met succes met de Bron heeft verbonden, selecteer **[!UICONTROL Volgende]** knop
+1. Selecteer de **[!UICONTROL Verbinding maken met bronknop]**
+1. Wanneer Platform met succes met de Bron heeft verbonden, selecteer **[!UICONTROL Volgende]** knop
    ![Verifiëren voor de bron](assets/ingestion-offline-authentication.png)
 
 1. Op de **[!UICONTROL Gegevens selecteren]** stap, gebruikt de gebruikersinterface uw gegevens om de map op uw cloudopslagoplossing te openen
 1. Selecteer de bestanden die u wilt invoeren, bijvoorbeeld `luma-offline-purchases.json`
 1. Als de **[!UICONTROL Gegevensindeling]**, selecteert u `XDM JSON`
 1. U kunt dan een voorbeeld van de verbindingsstructuur en voorbeeldgegevens in uw bestand bekijken
-1. Selecteer **[!UICONTROL Volgende]** knop
+1. Selecteer de **[!UICONTROL Volgende]** knop
    ![Gegevensbestand(en) selecteren](assets/ingestion-offline-selectData.png)
 
 1. Op de **[!UICONTROL Toewijzing]** stap, selecteer uw `Luma Offline Purchase Events Dataset` en selecteert u de **[!UICONTROL Volgende]** knop. Let op: aangezien de gegevens die we invoeren een JSON-bestand zijn, is er geen toewijzingsstap waarin we het bronveld aan het doelveld toewijzen. JSON-gegevens moeten zich al in XDM bevinden. Als u een CSV opnam, zou u de volledige kaartgebruiker interface op deze stap zien:
@@ -332,7 +332,7 @@ Profiel opzoeken met waarde `5625458` in de `loyaltyId` naamruimte opnieuw gebru
 
 ## ETL-gereedschappen
 
-Adobe partners met veelvoudige verkopers ETL om gegevensopname in Experience Platform te steunen. Wegens de verscheidenheid van derdeverkopers, is ETL niet behandeld in dit leerprogramma, hoewel u welkom bent om sommige van deze middelen te herzien:
+De partners van de Adobe met veelvoudige verkopers ETL om gegevensopname in Experience Platform te steunen. Wegens de verscheidenheid van derdeverkopers, is ETL niet behandeld in dit leerprogramma, hoewel u welkom bent om sommige van deze middelen te herzien:
 
 * [Ontwikkeling van ETL-integratie voor Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)

@@ -8,7 +8,7 @@ jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 11%
@@ -31,23 +31,20 @@ Leer hoe u aan de slag gaat met Adobe Experience Platform API&#39;s. Deze zelfst
 >
 > Nadat u de API-referentie hebt gemaakt, moet een systeembeheerder de referentie aan een rol in het Experience Platform koppelen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
 ## Een toegangstoken genereren met Postman{#generate-an-access-token-with-postman}
 
 Gebruik de [Adobe Identity Management Service-API&#39;s](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims?lang=nl) om een toegangstoken te verkrijgen voor toegang tot de Adobe Experience Platform API&#39;s.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## Interactie met Experience Platform-API&#39;s met Postman
 
-Ontdek de interactie met Adobe Experience Platform API&#39;s met de [Adobe-API voor Experience Platform Postman-verzamelingen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [Adobe Developer Console-omgevingsvariabelen](#export-integration-details-to-postman) en [gegenereerd toegangstoken](#generate-an-access-token-with-postman).
+Ontdek de interactie met Adobe Experience Platform API&#39;s met de [Door Adobe verschafte Experience Platform API Postman-verzamelingen](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [Adobe Developer Console-omgevingsvariabelen](#export-integration-details-to-postman) en [gegenereerd toegangstoken](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
 
 ## Bronnen waarnaar in deze video&#39;s wordt verwezen

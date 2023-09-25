@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Er zijn belangrijke [begeleidingen voor gegevens van het Profiel van de Klant in
 **Gegevensarchitecten** zal het Profiel van de Klant in real time buiten dit leerprogramma moeten toelaten.
 
 Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informatie over Real-Time Klantprofiel:
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Vereiste machtigingen
 
@@ -47,14 +47,14 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## Schema&#39;s inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het Platform
+## Schema&#39;s inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het platform
 
 Laten we beginnen met de eenvoudige taak om een schema in te schakelen:
 
-1. Open in de gebruikersinterface van het Platform de **Luma Loyalty Schema**
+1. Open in de gebruikersinterface van het platform de **Luma Loyalty Schema**
 1. In **[!UICONTROL Schema-eigenschappen]**, schakelt u de **Profiel** switch
-1. Druk in het bevestigingsmodaal op **[!UICONTROL Inschakelen]** te bevestigen knop
-1. Selecteer **[!UICONTROL Opslaan]** knop om uw wijzigingen op te slaan
+1. Druk in het bevestigingsmodaal op de knop **[!UICONTROL Inschakelen]** te bevestigen knop
+1. Selecteer de **[!UICONTROL Opslaan]** knop om uw wijzigingen op te slaan
 
    >[!IMPORTANT]
    >
@@ -76,7 +76,7 @@ Eenvoudig, niet? Herhaal bovenstaande stappen voor dit andere schema:
 1. Luma-schema voor offlineaankoopgebeurtenissen
 1. Het Schema van de Gebeurtenissen van het Web van Luma (op bevestigingsmodaal, controleer de doos &quot;Gegevens voor dit schema zullen een primaire identiteit op het identityMap gebied bevatten.&quot;)
 
-## Schema&#39;s inschakelen voor realtime klantprofiel met Platform-API
+## Schema&#39;s inschakelen voor realtime klantprofiel met behulp van platform-API
 
 Nu is het tijd om de `Luma CRM Schema` met de API. Als u deze oefening wilt overslaan en enkel het in het gebruikersinterface toelaten, ga onmiddellijk.
 
@@ -87,7 +87,7 @@ Laten we eerst de `meta:altId` van de `Luma CRM Schema`:
 1. Open [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Je moet 200 reacties krijgen
 1. Kijk in de reactie voor de `Luma CRM Schema` en kopieer het `meta:altId` value
    ![Meta:altIid kopiëren](assets/profile-crm-getMetaAltId.png)
@@ -108,7 +108,7 @@ Nu wij meta:altId van het schema hebben, kunnen wij het voor profiel toelaten:
    }]
    ```
 
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Je moet 200 reacties krijgen
 
    ![Laat het schema van CRM voor profiel met uw douanemeta:altIid toe die als param SCHEMA_ID wordt gebruikt](assets/profile-crm-enableProfile.png)
@@ -117,13 +117,13 @@ U zou in het gebruikersinterface moeten kunnen zien dat alle vijf schema&#39;s v
 ![Alle schema&#39;s ingeschakeld](assets/profile-allSchemasEnabled.png)
 
 
-## Gegevenssets inschakelen voor Real-Time Klantprofiel met behulp van de gebruikersinterface van het Platform
+## Gegevenssets inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het platform
 
 De datasets moeten ook voor Profiel worden toegelaten, en het proces is nog eenvoudiger:
 
-1. Open in de gebruikersinterface van het Platform de `Luma Loyalty Dataset`
+1. Open in de gebruikersinterface van het platform de `Luma Loyalty Dataset`
 1. Schakelen tussen **[!UICONTROL Profiel]** switch
-1. Druk in het bevestigingsmodaal op **[!UICONTROL Inschakelen]** te bevestigen knop
+1. Druk in het bevestigingsmodaal op de knop **[!UICONTROL Inschakelen]** te bevestigen knop
 
    ![ Profiel in-/uitschakelen](assets/profile-loyalty-enableDataset.png)
 
@@ -137,7 +137,7 @@ Herhaal bovenstaande stappen voor deze andere datasets:
 >
 >In tegenstelling tot schema&#39;s, kunt u datasets van Profiel onbruikbaar maken, nochtans zullen alle eerder opgenomen gegevens in Profiel blijven.
 
-## Gegevenssets inschakelen voor realtime klantprofiel met Platform-API
+## Gegevenssets inschakelen voor realtime klantprofiel met behulp van platform-API
 
 Nu zult u een dataset voor Profiel toelaten gebruikend API. Nogmaals, als u het via de gebruikersinterface wilt toelaten gebruikend de hierboven vermelde methode, is dat ook prima.
 
@@ -148,7 +148,7 @@ Eerst moeten we de `id` van de `Luma CRM Dataset`:
 1. Open [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Je moet 200 reacties krijgen
 1. Kijk in de reactie voor de `Luma CRM Dataset` -item en kopieer de id:
    ![De id kopiëren](assets/profile-crm-copyDatasetId.png)
@@ -172,7 +172,7 @@ Nu wij identiteitskaart van de dataset hebben, kunnen wij het voor profiel toela
    }
    ```
 
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Je moet 200 reacties krijgen
 
    ![Laat de dataset van CRM voor profiel toe, ervoor zorgend om uw identiteitskaart van de douanedataset als param te gebruiken DATASET_ID](assets/profile-crm-enableDataset.png)
@@ -190,5 +190,5 @@ U kunt ook bevestigen dat de gebruikersinterface de toegelaten dataset toont:
 * [Real-time verwijzing API voor klantprofiel](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**Gegevensengineers** de [Abonneren op gebeurtenissen voor gegevensinvoer](subscribe-to-data-ingestion-events.md) les.
+**Gegevensengineers** moet de [Abonneren op gebeurtenissen voor gegevensinvoer](subscribe-to-data-ingestion-events.md) les.
 **Gegevensarchitecten** _kan vooruit overslaan_ en ga naar de [batch-opname les](ingest-batch-data.md).

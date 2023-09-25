@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 **Gegevensarchitecten** zal datasets buiten dit leerprogramma moeten tot stand brengen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over gegevenssets:
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## Vereiste machtigingen
 
@@ -44,11 +44,11 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 In deze oefening, zullen wij datasets in UI creëren. Laten we beginnen met de loyaliteitsgegevens:
 
 1. Ga naar **[!UICONTROL Gegevenssets]** in de linkernavigatie van de gebruikersinterface van het Platform
-1. Selecteer **[!UICONTROL Gegevensset maken]** knop
+1. Selecteer de **[!UICONTROL Gegevensset maken]** knop
    ![Een gegevensset maken](assets/datasets-createDataset.png)
 
 1. Selecteer in het volgende scherm de optie **Gegevensset maken van schema**
-1. Selecteer in het volgende scherm de optie `Luma Loyalty Schema` en selecteer vervolgens de **[!UICONTROL Volgende]** knop
+1. Selecteer in het volgende scherm de optie `Luma Loyalty Schema` en selecteert u vervolgens de **[!UICONTROL Volgende]** knop
    ![De gegevensset selecteren](assets/datasets-selectSchema.png)
 
 1. De gegevensset een naam geven `Luma Loyalty Dataset` en selecteert u de **[!UICONTROL Voltooien]** knop
@@ -56,7 +56,7 @@ In deze oefening, zullen wij datasets in UI creëren. Laten we beginnen met de l
 1. Wanneer de dataset heeft bewaard, zult u aan een scherm als dit worden genomen:
    ![Gegevensset gemaakt](assets/datasets-created.png)
 
-Dat is het! Ik zei dat dit snel zou gaan. Creeer deze andere datasets gebruikend de zelfde stappen:
+Dat is het! Ik vertelde je dat dit snel zou gaan. Creeer deze andere datasets gebruikend de zelfde stappen:
 
 1. `Luma Offline Purchase Events Dataset` voor uw `Luma Offline Purchase Events Schema`
 1. `Luma Web Events Dataset` voor uw `Luma Web Events Schema`
@@ -78,7 +78,7 @@ Eerst moeten we de `$id` van de `Luma CRM Schema`:
 1. Open [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen, enkel zoals u in [!DNL Postman] les.
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. Je moet 200 reacties krijgen
 1. Kijk in de reactie voor de `Luma CRM Schema` en kopieer het `$id` value
    ![$id kopiëren](assets/dataset-crm-getSchemaId.png)
@@ -90,7 +90,7 @@ Nu kunt u de dataset tot stand brengen:
 1. Downloaden [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) aan uw `Luma Tutorial Assets` map.
 1. De verzameling importeren in [!DNL Postman]
 1. Selecteer de aanvraag **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
-1. Plak het volgende als de **Lichaam** van het verzoek, ***de id-waarde vervangen door uw eigen waarde***:
+1. Plak het volgende als de **Lichaam** van het verzoek ***de id-waarde vervangen door uw eigen waarde***:
 
    ```json
    {
@@ -108,7 +108,7 @@ Nu kunt u de dataset tot stand brengen:
    }
    ```
 
-1. Selecteer **Verzenden** knop
+1. Selecteer de **Verzenden** knop
 1. U zou 201 moeten krijgen leidde reactie die identiteitskaart van uw nieuwe dataset bevat!
    ![Gegevensset gemaakt met API, uw aangepaste $id gebruikt in de hoofdtekst](assets/datasets-crm-created.png)
 
@@ -117,18 +117,18 @@ Nu kunt u de dataset tot stand brengen:
 > Gemeenschappelijke kwesties die dit verzoek indienen en waarschijnlijk oplossen:
 >
 > * `400: There was a problem retrieving xdm schema`. Controleer of u de id in het bovenstaande voorbeeld hebt vervangen door de id van uw eigen id `Luma CRM Schema`
-> * Geen auteur-token: Voer de **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
+> * Geen auteur-token: voer de opdracht **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Werk de **CONTAINER_ID** omgevingsvariabele van `global` tot `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Gebruikersmachtigingen controleren in de Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Controleer de gebruikersmachtigingen in de Admin Console
 
 
-U kunt teruggaan naar de **[!UICONTROL Gegevenssets]** het scherm in het gebruikersinterface van het Platform, kunt u de succesvolle verwezenlijking van alle vijf datasets verifiëren!
+U kunt teruggaan naar de **[!UICONTROL Gegevenssets]** scherm in het gebruikersinterface van het Platform, kunt u de succesvolle verwezenlijking van alle vijf datasets verifiëren!
 ![Vijf datasets voltooid](assets/datasets-allComplete.png)
 
 
 ## Aanvullende bronnen
 
 * [Documentatie over gegevenssets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)
-* [Referentie voor de API voor gegevenssets (onderdeel van Catalog Service)](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
+* [Referentie voor de API voor gegevenssets (onderdeel van de Catalogusservice)](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
 
 Nu al onze schema&#39;s, identiteiten, en datasets op zijn plaats zijn, kunnen we [hen voor het Profiel van de Klant in real time toelaten](enable-profiles.md).

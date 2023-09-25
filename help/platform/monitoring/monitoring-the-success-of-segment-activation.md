@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10450
 thumbnail: 343248.jpg
 exl-id: 425c8876-db9e-4fc3-9ce4-208c560244da
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -16,8 +16,7 @@ ht-degree: 0%
 
 # Het succes van de segmentactivering volgen
 
-Wanneer het verzenden van segmentprofielen uit naar uw activeringspartners, is het noodzakelijk om informatie betreffende het succes van deze gegevensoverdracht te zien, vooral zodat kunt u om het even welke problemen bevestigen. Deze video toont twee belangrijke manieren om de stroom van uw segmenten uit aan bestemmingen te controleren.
+Wanneer het verzenden van segmentprofielen uit naar uw activeringspartners, is het noodzakelijk om informatie betreffende het succes van deze gegevensoverdracht te zien, vooral zodat kunt u om het even welke problemen bevestigen. Deze video toont twee belangrijke manieren om de stroom van uw segmenten uit aan bestemmingen te controleren. Ga voor meer informatie naar de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en).
 
->[!VIDEO](https://video.tv.adobe.com/v/343248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on)
 
-Ga voor meer informatie naar de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en).

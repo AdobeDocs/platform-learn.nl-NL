@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-13831
 thumbnail: 3423076.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 880a878725ff06a8254942ab5a0ce1ac6948ea48
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
@@ -17,8 +17,7 @@ ht-degree: 0%
 
 # Onsite ervaringen voor onbekende bezoekers personaliseren met de erkenning van bezoekers met hulp van partners
 
-Leer hoe u kenmerken van derden kunt verzamelen via de [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring aanpassen aan onbekende bezoekers met de herkenning van bezoekers met instructies voor partners.
+Leer hoe u kenmerken van derden kunt verzamelen via de [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring aanpassen aan onbekende bezoekers met de herkenning van bezoekers met instructies voor partners. Ga voor meer informatie naar de [Erkenning door bezoekers met hulp van partners gebruiken om ervaringen op locatie aan te passen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) documentatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)
 
-Ga voor meer informatie naar de [Erkenning door bezoekers met hulp van partners gebruiken om ervaringen op locatie aan te passen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) documentatie.

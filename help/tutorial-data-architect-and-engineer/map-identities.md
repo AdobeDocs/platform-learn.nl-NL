@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedra
 **Gegevensarchitecten** moet identiteiten buiten deze zelfstudie toewijzen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Hierbij maken we naamruimten voor aangepaste identiteitsvelden van Luma. `loyalt
 Laten we beginnen met het maken van een naamruimte voor het Luma Loyalty-schema:
 
 1. Ga in de gebruikersinterface van het Platform naar **[!UICONTROL Identiteiten]** in de linkernavigatie
-1. U zult merken dat er verschillende naamruimten beschikbaar zijn die buiten de box vallen. Selecteer **[!UICONTROL Naamruimte maken]** knop
+1. U zult merken dat er verschillende naamruimten beschikbaar zijn die buiten de box vallen. Selecteer de **[!UICONTROL Naamruimte maken]** knop
 1. Geef de volgende gegevens op:
 
    | Veld | Waarde |
@@ -74,7 +74,7 @@ Stel nu een andere naamruimte in voor het schema Luminageproductcatalogus met de
 
 | Veld | Waarde |
 |---------------|-----------|
-| Weergavenaam | Luma Product SKU |
+| Weergavenaam | Luminageproduct SKU |
 | Identiteitssymbool | lumaProductSKU |
 | Type | Id van niet-personen |
 
@@ -129,10 +129,10 @@ Laten we een primaire identiteit toevoegen aan de `Luma Loyalty Schema`:
 
 1. Open de `Luma Loyalty Schema`
 1. Selecteer het `Luma Identity profile field group`
-1. Selecteer `loyaltyId` field
+1. Selecteer de `loyaltyId` field
 1. Controleer de **[!UICONTROL Identiteit]** box
 1. Controleer de **[!UICONTROL Primaire identiteit]** vak, ook
-1. Selecteer `Luma Loyalty Id` naamruimte van **[!UICONTROL Identiteitsnaamruimten]** druppel
+1. Selecteer de `Luma Loyalty Id` naamruimte van **[!UICONTROL Identiteitsnaamruimten]** druppel
 1. Selecteren **[!UICONTROL Toepassen]**
 1. Selecteren **[!UICONTROL Opslaan]**
 
@@ -140,15 +140,15 @@ Laten we een primaire identiteit toevoegen aan de `Luma Loyalty Schema`:
 
 Herhaal het proces voor een deel van uw andere schema:
 
-1. In de `Luma CRM Schema`, de `crmId` veld als primaire identiteit met de `Luma CRM Id` namespace
-1. In de `Luma Offline Purchase Events Schema`, de `loyaltyId` veld als primaire identiteit met de `Luma Loyalty Id` namespace
-1. In de `Luma Product Catalog Schema`, de `productSku` veld als primaire identiteit met de `Luma Product SKU` namespace
+1. In de `Luma CRM Schema`, de `crmId` veld als primaire identiteit met behulp van de `Luma CRM Id` namespace
+1. In de `Luma Offline Purchase Events Schema`, de `loyaltyId` veld als primaire identiteit met behulp van de `Luma Loyalty Id` namespace
+1. In de `Luma Product Catalog Schema`, de `productSku` veld als primaire identiteit met behulp van de `Luma Product SKU` namespace
 
 >[!NOTE]
 >
->De gegevens die met SDK van het Web worden verzameld zijn een uitzondering op de typische praktijk van het etiketteren van identiteitsgebieden in het schema. De SDK van het Web gebruikt de Kaart van de Identiteit om identiteiten te etiketteren *aan de kant van de uitvoering* en zo zullen wij de identiteiten voor `Luma Web Events Schema` wanneer wij SDK van het Web op de website van de Luma uitvoeren. In die latere les, zullen wij Experience Cloud Bezoeker identiteitskaart (ECID) als primaire identiteitskaart en crmId als secundaire identiteitskaart verzamelen.
+>De gegevens die met SDK van het Web worden verzameld zijn een uitzondering op de typische praktijk van het etiketteren van identiteitsgebieden in het schema. Web SDK gebruikt de Identiteitskaart om identiteiten te etiketteren *aan de kant van de uitvoering* en zo zullen wij de identiteiten voor `Luma Web Events Schema` wanneer wij SDK van het Web op de website van de Luma uitvoeren. In die latere les, zullen wij identiteitskaart van de Bezoeker van het Experience Cloud (ECID) als primaire identiteitskaart en crmId als secundaire identiteitskaart verzamelen.
 
-Met onze selectie van primaire identiteiten is het duidelijk om te zien hoe `Luma CRM Schema` kan verbinding maken met de `Luma Offline Purchase Events Schema` aangezien zij beide `loyaltyId` als id. Maar hoe kunnen we onze offlineaankopen aan online gedrag verbinden? Hoe kunnen we de aangeschafte producten indelen in onze productcatalogus? Wij zullen extra identiteitsgebieden en schemaverhoudingen gebruiken.
+Met onze selectie van primaire identiteiten is het duidelijk om te zien hoe `Luma CRM Schema` kan verbinding maken met de `Luma Offline Purchase Events Schema` aangezien zij beide `loyaltyId` als id. Maar hoe kunnen we onze offlineaankopen aan online gedrag verbinden? Hoe kunnen we de aangekochte producten indelen in onze productcatalogus? Wij zullen extra identiteitsgebieden en schemaverhoudingen gebruiken.
 
 <!--use a visual-->
 
@@ -160,8 +160,8 @@ U kunt meerdere identiteitsvelden toevoegen aan een schema. Niet-primaire identi
 1. Selecteer `Luma Identity Profile Field group`
 1. Selecteren `crmId` field
 1. Controleer de **[!UICONTROL Identiteit]** box
-1. Selecteer `Luma CRM Id` naamruimte van **[!UICONTROL Identiteitsnaamruimten]** druppel
-1. Selecteren **[!UICONTROL Toepassen]** en selecteer vervolgens de **[!UICONTROL Opslaan]** knop om uw wijzigingen op te slaan
+1. Selecteer de `Luma CRM Id` naamruimte van **[!UICONTROL Identiteitsnaamruimten]** druppel
+1. Selecteren **[!UICONTROL Toepassen]** en selecteert u vervolgens de **[!UICONTROL Opslaan]** knop om uw wijzigingen op te slaan
 
    ![Secundaire identiteit](assets/identity-loyalty-secondaryId.png)
 
@@ -180,7 +180,7 @@ Nu onze identiteitsgebieden geëtiketteerd hebben, kunnen wij de opstelling van 
 
    ![Referentieveld](assets/identity-offlinePurchase-relationship.png)
 
-Herhaal dit proces om een relatie tot stand te brengen tussen `Luma Web Events Schema` en de `Luma Product Catalog Schema`.
+Herhaal dit proces om een relatie te creëren tussen `Luma Web Events Schema` en de `Luma Product Catalog Schema`.
 
 Na het definiëren van de relatie wordt deze aangegeven in zowel de **[!UICONTROL Samenstelling]** en **[!UICONTROL Structuur]** van de schema-editor.
 
@@ -191,6 +191,6 @@ Na het definiëren van de relatie wordt deze aangegeven in zowel de **[!UICONTRO
 ## Aanvullende bronnen
 
 * [Identiteitsdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl)
-* [Identiteitsservice-API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
+* [Identity Service API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Nu onze identiteiten er zijn, kunnen we [onze gegevenssets maken](create-datasets.md)!

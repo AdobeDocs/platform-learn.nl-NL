@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 2%
@@ -20,12 +20,12 @@ ht-degree: 2%
 <!-- 15 min-->
 In deze les, zult u leren om, vragen te plaatsen te schrijven en uit te voeren om de gegevens te bevestigen u hebt opgenomen.
 
-Met Adobe Experience Platform Query Service kunt u uw gegevens begrijpen door standaard SQL te gebruiken voor het zoeken naar gegevens in Platform. Gebruikend de Dienst van de Vraag, kunt u zich bij om het even welke dataset in het meer van Gegevens aansluiten en de vraagresultaten vangen als nieuwe dataset voor gebruik in rapportering, machine het leren, of voor opname in het Profiel van de Klant in real time.
+Met de Adobe Experience Platform Query Service kunt u uw gegevens begrijpen door standaard SQL te gebruiken voor query&#39;s op gegevens in het Platform. Gebruikend de Dienst van de Vraag, kunt u zich bij om het even welke dataset in het meer van Gegevens aansluiten en de vraagresultaten vangen als nieuwe dataset voor gebruik in rapportering, machine het leren, of voor opname in het Profiel van de Klant in real time.
 
 **Gegevensarchitecten** en **Gegevensengineers** zal de vraagdienst buiten dit leerprogramma moeten gebruiken.
 
 Alvorens u met de oefeningen begint, bekijk deze korte video om meer over de Dienst van de Vraag te leren:
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Vereiste machtigingen
 
@@ -42,7 +42,7 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 Laten we beginnen met enkele eenvoudige vragen:
 
 1. Ga in de gebruikersinterface van het Platform naar **Zoekopdrachten** in de linkernavigatie
-1. Selecteer **Query maken** knop rechtsboven om een tekstvak te openen voor het uitvoeren en uitvoeren van query&#39;s
+1. Selecteer de **Query maken** knop rechtsboven om een tekstvak te openen voor het uitvoeren en uitvoeren van query&#39;s
 1. Voer de volgende query in de editor in en druk op Shift+Enter of Shift+Return om de query uit te voeren.
 
    ```
@@ -68,7 +68,7 @@ Laten we beginnen met enkele eenvoudige vragen:
    ![Fout in de query](assets/queries-error.png)
 
 1. Met uw succesvolle vraag, **[!UICONTROL Naam]** het `Luma Gold Level Customers`
-1. Selecteer **[!UICONTROL Opslaan]** knop
+1. Selecteer de **[!UICONTROL Opslaan]** knop
    ![De query opslaan](assets/queries-loyaltySelect-save.png)
 
 

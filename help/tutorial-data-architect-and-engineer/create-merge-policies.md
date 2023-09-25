@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -31,7 +31,7 @@ We blijven bij de gebruikersinterface voor deze les, maar API-opties bestaan ook
 **Gegevensarchitecten** moet een samenvoegbeleid maken buiten deze zelfstudie.
 
 Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informatie over het samenvoegbeleid:
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Vereiste machtigingen
 
@@ -49,9 +49,9 @@ U kunt zich herinneren, in de les over partijopname, uploadden wij twee verslage
 
 Waarom? `Danny` win out as the first name ? Laten we eens kijken:
 
-1. Selecteer in de gebruikersinterface van het Platform de optie **[!UICONTROL Profielen]** in de linkernavigatie
+1. Selecteer in de gebruikersinterface van het platform de optie **[!UICONTROL Profielen]** in de linkernavigatie
 1. Ga naar de **[!UICONTROL Beleid samenvoegen]** tab
-1. Het standaardbeleid voor samenvoegen is geordende tijdstempel. Omdat u de CRM-gegevens na de Loyalty-gegevens hebt geüpload, `Danny` wordt weergegeven als voornaam in het profiel:
+1. Het standaardbeleid voor samenvoegen is een geordende tijdstempel. Omdat u de CRM-gegevens na de Loyalty-gegevens hebt geüpload, `Danny` wordt weergegeven als voornaam in het profiel:
 
 ![Scherm Beleid samenvoegen](assets/mergepolicies-default.png)
 
@@ -71,10 +71,10 @@ Wat gebeurt er als dat standaardsamenvoegbeleid u niet bevalt? Wat als Luma besl
 1. Voor **[!UICONTROL Id-instelling]**, selecteert u **[!UICONTROL Privégrafiek]**
 1. Voor **[!UICONTROL Kenmerksamenvoeging]**, selecteert u **[!UICONTROL Dataset-prioriteit]**
 1. Slepen en neerzetten `Luma Loyalty Dataset` en `Luma CRM Dataset` aan de **[!UICONTROL Gegevensset]** deelvenster.
-1. Controleer of `Luma Loyalty Dataset` is bovenaan door te slepen en neer te zetten boven de `Luma CRM Dataset`
-1. Selecteer **[!UICONTROL Opslaan]** knop
+1. Controleer of `Luma Loyalty Dataset` is bovenaan door te slepen en boven de `Luma CRM Dataset`
+1. Selecteer de **[!UICONTROL Opslaan]** knop
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![Samenvoegingsbeleid](assets/mergepolicies-newPolicy.png)
+   ![Beleid samenvoegen](assets/mergepolicies-newPolicy.png)
 
 ## Het samenvoegingsbeleid valideren
 
@@ -84,7 +84,7 @@ Laten we eens kijken of het fusiebeleid doet wat we zouden verwachten:
 1. Wijzig de **[!UICONTROL Samenvoegbeleid]** aan uw nieuwe `Loyalty Prioritized` beleid
 1. Als de **[!UICONTROL Naamruimte identiteit]**, gebruik uw `Luma CRM Id`
 1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `112ca06ed53d3db37e4cea49cc45b71e`
-1. Selecteer **[!UICONTROL Profiel weergeven]** knop
+1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
 1. `Daniel` is terug!
 
 ![Een profiel weergeven met een ander samenvoegbeleid](assets/mergepolicies-lookupProfileWithMergePolicy.png)
@@ -98,8 +98,8 @@ Wanneer het creëren van beleid van de Fusie gebruikend datasetbelangrijkheid, s
 1. Als de **[!UICONTROL Schema]**, selecteert u **[!UICONTROL XDM-profiel]**
 1. Voor **[!UICONTROL Id-instelling]**, selecteert u **[!UICONTROL Geen]**
 1. Voor **[!UICONTROL Kenmerksamenvoeging]**, selecteert u **[!UICONTROL Dataset-prioriteit]**
-1. Alleen slepen en neerzetten `Luma Loyalty Dataset` tot **[!UICONTROL Geselecteerde gegevensset]** deelvenster.
-1. Selecteer **[!UICONTROL Opslaan]** knop
+1. Sleep alleen de `Luma Loyalty Dataset` tot **[!UICONTROL Geselecteerde gegevensset]** deelvenster.
+1. Selecteer de **[!UICONTROL Opslaan]** knop
 
 ![Beleid voor alleen-geldigheids samenvoegen](assets/mergepolicies-loyaltyOnly.png)
 
@@ -111,15 +111,15 @@ Laten we nu eens kijken wat dit samenvoegbeleid doet:
 1. Wijzig de **[!UICONTROL Samenvoegbeleid]** aan uw nieuwe `Loyalty Only` beleid
 1. Als de **[!UICONTROL Naamruimte identiteit]**, gebruik uw `Luma CRM Id`
 1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `112ca06ed53d3db37e4cea49cc45b71e`
-1. Selecteer **[!UICONTROL Profiel weergeven]** knop
+1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
 1. Bevestig dat er geen profielen zijn gevonden:
-   ![Alleen Loyalty is geen CRM-id-opzoekopdracht.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
+   ![Alleen Loyalty is geen CRM-id opzoekbewerking.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
 
 CRM-id is een identiteitsveld in het dialoogvenster `Luma Loyalty Dataset`, maar alleen primaire identiteiten kunnen worden gebruikt om profielen op te zoeken. Laten we dus het profiel opzoeken met de primaire identiteit. `Luma Loyalty Id`&quot;
 
 1. Wijzig de **[!UICONTROL Naamruimte van identiteit]** tot `Luma Loyalty Id`
 1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `5625458`
-1. Selecteer **[!UICONTROL Profiel weergeven]** knop
+1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
 1. Selecteer profiel-id om het profiel te openen
 1. Ga naar de **[!UICONTROL Attributen]** tab
 1. Andere profieldetails van de dataset van CRM, zoals het mobiele telefoonaantal en e-mailadres niet beschikbaar zijn omdat wij slechts
@@ -136,7 +136,7 @@ Wijzig in de profielzoekopdracht het samenvoegbeleid waarnaar u teruggaat `Defau
 
 Wat is hier aan de hand? Welnu, het samenvoegen van profielen is niet één keer. De de klantenprofielen van de in real time worden verzameld op de vlucht, die op diverse factoren wordt gebaseerd, met inbegrip van welk fusieprincipe wordt gebruikt. U kunt meerdere samenvoegbeleidsregels maken om in verschillende contexten te gebruiken, afhankelijk van de weergave van de klant die u wilt gebruiken.
 
-Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Stel bijvoorbeeld dat u gegevens van derden in een Platform invoert die niet kunnen worden gebruikt voor gevallen van verpersoonlijkingsgebruik, maar _kan_ worden gebruikt voor reclamedoeleinden. U kunt een fusiebeleid tot stand brengen dat deze derde dataset sluit en dit fusiebeleid gebruiken om segmenten voor uw het advertentiegebruikgevallen te bouwen.
+Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Stel bijvoorbeeld dat u gegevens van derden in Platform opgeeft die niet kunnen worden gebruikt voor gevallen waarin persoonlijke instellingen worden gebruikt, maar _kan_ worden gebruikt voor reclamedoeleinden. U kunt een fusiebeleid tot stand brengen dat deze derde dataset sluit en dit fusiebeleid gebruiken om segmenten voor uw het advertentiegebruikgevallen te bouwen.
 
 ## Aanvullende bronnen
 

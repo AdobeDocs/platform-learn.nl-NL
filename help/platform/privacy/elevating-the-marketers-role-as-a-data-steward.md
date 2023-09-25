@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -22,6 +22,6 @@ De rol van de &quot;datasturij&quot; loopt over de disciplines heen en is een ex
 
 * Voorbeelden van hoe te om klantengegevens binnen een marketing context van inzameling, segmentatie, en publieksactivering te regeren
 * Hoe kan ik op instemming gebaseerde strategieën integreren die het vertrouwen van de consument bevorderen en naadloos integreren in de reis van de consument
-* Verantwoordelijkheden op het gebied van gegevenssturing binnen de rol van de markt met efficiëntie en vertrouwen
+* Verantwoordelijkheden op het gebied van gegevensbeheer in het kader van de rol van de markt met efficiëntie en vertrouwen
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

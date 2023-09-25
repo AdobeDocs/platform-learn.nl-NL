@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Standaardisering en interoperabiliteit zijn de belangrijkste concepten achter Ad
 
 XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities voor om het even welke toepassing om met de diensten van het Platform te gebruiken te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U kunt waardevolle inzichten van klantenacties bereiken, klantenpubliek door segmenten bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uitdrukken.
 
-XDM is het grondkader dat Adobe Experience Cloud, aangedreven door Experience Platform, toestaat om het juiste bericht aan de juiste persoon, op het juiste kanaal, op precies het juiste moment te leveren. de methode waarop het Experience Platform is gebouwd; **XDM-systeem**, exploiteert de Modelschema&#39;s van de Gegevens van de Ervaring voor gebruik door de diensten van de Platform.
+XDM is het grondkader dat Adobe Experience Cloud, aangedreven door Experience Platform, toestaat om het juiste bericht aan de juiste persoon, op het juiste kanaal, op precies het juiste moment te leveren. de methode waarop het Experience Platform is gebouwd; **XDM-systeem**, exploiteert de Modelschema&#39;s van de Gegevens van de Ervaring voor gebruik door de diensten van het Platform.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -42,8 +42,8 @@ Key terms:
 
 **Gegevensarchitecten** buiten deze zelfstudie schema&#39;s maken, maar **Gegevensengineers** zal nauw samenwerken met de schema&#39;s die door de Architect van Gegevens worden gecreeerd.
 
-Voordat u met de oefeningen begint, bekijkt u deze korte video om meer te leren over schema&#39;s en het model van de Gegevens van de Ervaring (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+Voordat u met de oefeningen begint, bekijk deze korte video om meer over schema&#39;s en het Model van de Gegevens van de Ervaring te leren (XDM):
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
@@ -65,23 +65,23 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 ## Luma's goals
 -->
 
-## Loyalty-schema maken via UI
+## Loyalty-schema maken via gebruikersinterface
 
 In deze oefening, zullen wij een schema voor de loyaliteitsgegevens van Luma tot stand brengen.
 
 1. Ga naar de gebruikersinterface van het Platform en zorg ervoor dat uw zandbak wordt geselecteerd.
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
-1. Selecteer **[!UICONTROL Schema maken]** knop rechtsboven
+1. Selecteer de **[!UICONTROL Schema maken]** knop rechtsboven
 1. Selecteer in het vervolgkeuzemenu de optie **[!UICONTROL Afzonderlijk XDM-profiel]**, aangezien wij attributen van een individuele klant (punten, status, etc.) zullen modelleren.
    ![Schema met OTB-veldgroep](assets/schemas-loyaltyCreateSchema.png)
 
 ### Standaardveldgroepen toevoegen
 
-Vervolgens wordt u gevraagd veldgroepen toe te voegen aan het schema. Alle velden moeten aan schema&#39;s worden toegevoegd met behulp van groepen. U kunt kiezen uit een groot aantal industriestandaard veldgroepen die door Adobe worden geleverd, of u kunt uw eigen veldgroepen maken. Wanneer u uw eigen gegevens in het Experience Platform gaat modelleren, is het goed om bekend te raken met de industriestandaard veldgroepen die door Adobe worden geleverd. Waar mogelijk, is het beste praktijken om hen te gebruiken aangezien zij soms stroomafwaartse diensten, zoals KlantenAI, Attribution AI, en Adobe Analytics aandrijven.
+Vervolgens wordt u gevraagd veldgroepen toe te voegen aan het schema. Alle velden moeten aan schema&#39;s worden toegevoegd met behulp van groepen. U kunt kiezen uit een groot aantal industriestandaard veldgroepen die door Adobe worden geleverd, of u kunt uw eigen veldgroepen maken. Wanneer u uw eigen gegevens in het Experience Platform gaat modelleren, is het goed om vertrouwd te raken met de industriestandaard veldgroepen die door de Adobe worden geleverd. Waar mogelijk, is het beste praktijken om hen te gebruiken aangezien zij soms stroomafwaartse diensten, zoals KlantenAI, Attribution AI, en Adobe Analytics aandrijven.
 
-Wanneer u met uw eigen gegevens werkt, is het belangrijk te bepalen welke van uw eigen gegevens in het Platform moeten worden vastgelegd en hoe het moet worden gemodelleerd. Dit grote onderwerp wordt besproken meer diepgaand in cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In deze zelfstudie zal ik u enkel door de implementatie van sommige vooraf bepaalde schema&#39;s begeleiden.
+Wanneer u met uw eigen gegevens werkt, is het belangrijk te bepalen welke van uw eigen gegevens in Platform moeten worden vastgelegd en hoe deze moeten worden gemodelleerd. Dit grote onderwerp wordt besproken meer diepgaand in cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In deze zelfstudie zal ik u enkel door de implementatie van sommige vooraf bepaalde schema&#39;s begeleiden.
 
-Veldgroepen toevoegen:
+Veld toevoegen:
 
 1. In de **[!UICONTROL Veldgroepen toevoegen]** modaal, selecteer volgende gebiedsgroepen:
    1. **[!UICONTROL Demografische details]** voor elementaire klantgegevens zoals naam en geboortedatum
@@ -146,14 +146,14 @@ Voeg nu twee velden toe onder de `systemIdentifier` object:
    1. **[!UICONTROL Weergavenaam]**: `CRM Id`
    1. **[!UICONTROL Type]**: **[!UICONTROL String]**
 
-Uw nieuwe veldgroep moet er zo uitzien. Selecteer **[!UICONTROL Opslaan]** om uw schema op te slaan, maar laat het schema open voor de volgende oefening.
+Uw nieuwe veldgroep moet er zo uitzien. Selecteer de **[!UICONTROL Opslaan]** om uw schema op te slaan, maar laat het schema open voor de volgende oefening.
 ![Loyalty, veldgroep voltooid](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## Een gegevenstype maken
 
 Veldgroepen, zoals uw nieuwe `Luma Identity profile field group`, kan in andere schema&#39;s opnieuw worden gebruikt, toestaand u om standaardgegevensdefinities op veelvoudige systemen af te dwingen. Maar ze kunnen alleen opnieuw worden gebruikt _in schema&#39;s die een klasse delen_, in dit geval de klasse Individueel profiel XDM.
 
-Het gegevenstype is een andere constructie met meerdere velden die opnieuw kan worden gebruikt in schema&#39;s _over meerdere klassen_. Laten we onze nieuwe `systemIdentifier` object in een gegevenstype:
+Het gegevenstype is een andere constructie met meerdere velden die opnieuw kan worden gebruikt in schema&#39;s _over meerdere klassen_. Laten we onze nieuwe `systemIdentifier` -object in een gegevenstype:
 
 Met de `Luma Loyalty Schema` nog open, selecteer `systemIdentifier` object en selecteer  **[!UICONTROL Omzetten in nieuw gegevenstype]**
 
@@ -166,7 +166,7 @@ Als u **[!UICONTROL Annuleren]** uit het schema en navigeer naar de **[!UICONTRO
 
 ## CRM-schema maken via API
 
-Nu maken we een schema met behulp van de API.
+Nu maken we een schema met de API.
 
 >[!TIP]
 >
@@ -174,13 +174,13 @@ Nu maken we een schema met behulp van de API.
 >
 > 1. Gebruik de [!UICONTROL Afzonderlijk XDM-profiel] class
 > 1. Naam geven `Luma CRM Schema`
-> 1. Gebruik de volgende veldgroepen: Demografische details, persoonlijke contactgegevens en veldgroep Luminimitatieprofiel
+> 1. Gebruik de volgende veldgroepen: Demografische details, Persoonlijke contactgegevens en Luminimitatieprofielveldgroep
 
 Eerst maken we het lege schema:
 
 1. Open [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteert u **Verzenden** om een nieuw toegangstoken aan te vragen.
-1. Open de omgevingsvariabelen en wijzig de waarde van **CONTAINER_ID** van `global` tot `tenant`. Vergeet niet dat u `tenant` wanneer u met uw eigen douaneelementen in Platform wilt in wisselwerking staan, zoals het creëren van een schema.
+1. Omgevingsvariabelen openen en de waarde wijzigen van **CONTAINER_ID** van `global` tot `tenant`. Vergeet niet dat u `tenant` wanneer u met uw eigen douaneelementen in Platform wilt in wisselwerking staan, zoals het creëren van een schema.
 1. Selecteren **Opslaan**
    ![CONTAINER_ID wijzigen in huurder](assets/schemas-crm-changeContainerId.png)
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Create a new custom schema.]**
@@ -216,9 +216,9 @@ Eerst maken we het lege schema:
 >
 > Gemeenschappelijke kwesties met deze vraag en waarschijnlijke moeilijke situaties:
 >
-> * Geen auteur-token: Voer de **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
+> * Geen auteur-token: voer de opdracht **OAuth: Toegangstoken aanvragen** verzoek om een nieuw token te genereren
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Werk de **CONTAINER_ID** omgevingsvariabele van `global` tot `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Gebruikersmachtigingen controleren in de Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Controleer de gebruikersmachtigingen in de Admin Console
 
 ### Standaardveldgroepen toevoegen
 
@@ -256,12 +256,12 @@ Nu is het tijd om de gebiedsgroepen aan het schema toe te voegen:
 Laten we nu onze `Luma Identity profile field group` naar het schema. Ten eerste moeten we de id van onze nieuwe veldgroep vinden met een lijst-API:
 
 1. De aanvraag openen **[!DNL Schema Registry API > Field groups > Retrieve a list of field groups within the specified container.]**
-1. Selecteer **Verzenden** om een lijst op te halen met alle aangepaste veldgroepen in uw account
+1. Selecteer de **Verzenden** om een lijst op te halen met alle aangepaste veldgroepen in uw account
 1. Pak de `$id` waarde van de `Luma Identity profile field group` (uw waarde verschilt van de waarde in deze schermafbeelding)
    ![De lijst met veldgroepen ophalen](assets/schemas-crm-getListOfMixins.png)
 1. De aanvraag openen **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** opnieuw
 1. De **Params** de tab moet nog steeds de `$id` van uw schema
-1. Open de **Lichaam** het tabblad en plakt de volgende code, waarbij u de `$ref` met de `$id` van u `Luma Identity profile field group`:
+1. Open de **Lichaam** de volgende code, die vervangt `$ref` met de `$id` van u `Luma Identity profile field group`:
 
    ```json
    [{
@@ -285,16 +285,16 @@ Laten we nu een schema maken op basis van het **[!UICONTROL XDM ExperienceEvent]
 1. Een schema maken met de opdracht **[!UICONTROL XDM ExperienceEvent]** class
 1. De standaardveldgroep toevoegen **[!UICONTROL Handelsgegevens]** om algemene orderdetails vast te leggen. Besteed een paar minuten om de objecten daarbinnen te verkennen.
 1. Zoeken naar `Luma Identity profile field group`. Het is niet beschikbaar! Herinner dat de gebiedsgroepen aan een klasse gebonden zijn, en aangezien wij een verschillende klasse voor dit schema gebruiken kunnen wij het niet gebruiken. We moeten een nieuwe veldgroep toevoegen voor de klasse XDM ExperienceEvent die de identiteitsvelden bevat. Ons gegevenstype maakt dat echt gemakkelijk!
-1. Selecteer **[!UICONTROL Nieuwe veldgroep maken]** keuzerondje
+1. Selecteer de **[!UICONTROL Nieuwe veldgroep maken]** keuzerondje
 1. Voer de **[!UICONTROL Weergavenaam]** als `Luma Identity ExperienceEvent field group` en selecteert u de **[!UICONTROL Veldgroepen toevoegen]** knop
 1. Zorg ervoor dat de **[!UICONTROL +]** knoppen worden weergegeven in het dialoogvenster **[!UICONTROL Structuur]** zodat u nieuwe velden kunt toevoegen
 1. In **[!UICONTROL Structuur]** sectie, selecteert u **[!UICONTROL +]** op het hoogste niveau van het schema
 1. Als de **[!UICONTROL Veldnaam]**, enter `systemIdentifier`
 1. Als de **[!UICONTROL Weergavenaam]**, enter `System Identifier`
 1. Als de **[!UICONTROL Type]**, selecteert u **Systeem-id** Dit is het aangepaste gegevenstype dat u eerder hebt gemaakt
-1. Selecteer **[!UICONTROL Toepassen]** knop
+1. Selecteer de **[!UICONTROL Toepassen]** knop
 1. Geef uw schema een naam `Luma Offline Purchase Events Schema`
-1. Selecteer **[!UICONTROL Opslaan]** knop
+1. Selecteer de **[!UICONTROL Opslaan]** knop
 
 Houd er rekening mee hoe het gegevenstype alle velden heeft toegevoegd!
 
@@ -302,7 +302,7 @@ Houd er rekening mee hoe het gegevenstype alle velden heeft toegevoegd!
 
 Selecteer ook **[!UICONTROL XDM ExperienceEvent]** onder de **[!UICONTROL Klasse]** enkele velden die door deze klasse worden toegevoegd, te doorlopen en te inspecteren. _id- en tijdstempelvelden zijn vereist bij gebruik van de XDM ExperienceEvent-klasse. Deze velden moeten worden ingevuld voor elke record die u opgeeft bij gebruik van dit schema:
 
-![Basisstructuur van gebeurtenissen ervaren](assets/schemas-offlinePurchase-experienceEventbase.png)
+![Basisstructuur van gebeurtenissen beleven](assets/schemas-offlinePurchase-experienceEventbase.png)
 
 ## Webgebeurtenissenschema maken
 
@@ -315,14 +315,14 @@ Nu gaan we nog een schema maken voor de websitegegevens van Luma. Op dit punt zo
 | Veldgroep | Consumentenervaringsgebeurtenis |
 | Schemanaam | Luma-webgebeurtenissenschema |
 
-Selecteer **[!UICONTROL Consumentenervaringsgebeurtenis]** veldgroep. Deze veldgroep bevat de objecten commerce en productListItems die zich ook in [!UICONTROL Handelsgegevens]. Inderdaad [!UICONTROL Consumentenervaringsgebeurtenis] is een combinatie van verschillende andere standaardveldgroepen die ook afzonderlijk beschikbaar zijn. [!UICONTROL AEP Web SDK ExperienceEvent Mixin] de veldgroep bevat ook andere veldgroepen, waaronder enkele van dezelfde in [!UICONTROL Consumentenervaringsgebeurtenis]. Gelukkig vloeien ze naadloos samen.
+Selecteer de **[!UICONTROL Consumentenervaringsgebeurtenis]** veldgroep. Deze veldgroep bevat de objecten commerce en productListItems die zich ook in [!UICONTROL Handelsgegevens]. Inderdaad [!UICONTROL Consumentenervaringsgebeurtenis] is een combinatie van verschillende andere standaardveldgroepen die ook afzonderlijk beschikbaar zijn. [!UICONTROL AEP Web SDK ExperienceEvent Mixin] de veldgroep bevat ook andere veldgroepen, waaronder enkele van dezelfde in [!UICONTROL Consumentenervaringsgebeurtenis]. Gelukkig vloeien ze naadloos samen.
 
-We hebben de `Luma Identity ExperienceEvent field group` naar dit schema. Dit komt doordat de SDK van het Web een andere manier heeft om identiteiten te verzamelen. Als u **[!UICONTROL XDM ExperienceEvent]** in de **[!UICONTROL Samenstelling]** in de schema-editor. Een van de velden die standaard worden toegevoegd, wordt genoemd **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] wordt gebruikt door diverse Adobe toepassingen om met Platform te verbinden. U zult zien hoe identiteiten via identityMap naar Platform worden verzonden in de streaming opname les.
+We hebben de `Luma Identity ExperienceEvent field group` naar dit schema. Dit komt doordat de SDK van het Web een andere manier heeft om identiteiten te verzamelen. Als u **[!UICONTROL XDM ExperienceEvent]** in de **[!UICONTROL Samenstelling]** in de schema-editor. Een van de velden die standaard worden toegevoegd, wordt genoemd **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] wordt gebruikt door diverse Adobe toepassingen om aan Platform te verbinden. U zult zien hoe identiteiten via identityMap naar Platform worden verzonden in de streaming opname les.
 
 
 ## Productcatalogusschema maken
 
-Met de  [!UICONTROL Handelsgegevens] en [!UICONTROL Consumentenervaringsgebeurtenis] veldgroepen. Luma rapporteert details van productgerelateerde gebeurtenissen via het standaardgegevenstype productListItems. Maar ze hebben ook extra productdetailvelden die ze naar het Platform willen sturen. In plaats van al deze velden op te nemen in hun verkooppunten en e-commercesystemen, zou Luma liever deze velden rechtstreeks uit hun productcatalogussysteem innemen. Een &quot;schemaverhouding&quot;staat u toe om een verhouding tussen twee schema&#39;s voor classificaties of raadplegingen te bepalen. Luma gebruikt een relatie om hun productdetails in te delen. We beginnen het proces nu en voltooien het aan het einde van de volgende les.
+Met de opdracht  [!UICONTROL Handelsgegevens] en [!UICONTROL Consumentenervaringsgebeurtenis] veldgroepen. Luma rapporteert details van productgerelateerde gebeurtenissen via het standaardgegevenstype productListItems. Maar ze hebben ook extra productdetailvelden die ze naar Platform willen sturen. In plaats van al deze velden op te nemen in hun verkooppunten en e-commercesystemen, zou Luma liever deze velden rechtstreeks uit hun productcatalogussysteem innemen. Een &quot;schemaverhouding&quot;staat u toe om een verhouding tussen twee schema&#39;s voor classificaties of raadplegingen te bepalen. Luma gebruikt een relatie om hun productdetails in te delen. We beginnen het proces nu en voltooien het aan het einde van de volgende les.
 
 >[!NOTE]
 >
@@ -330,24 +330,24 @@ Met de  [!UICONTROL Handelsgegevens] en [!UICONTROL Consumentenervaringsgebeurte
 
 Eerst moeten we een schema voor de productcatalogus van Luma maken met behulp van een aangepaste klasse:
 
-1. Selecteer **[!UICONTROL Schema maken]** en selecteert u de **[!UICONTROL Bladeren]** van de vervolgkeuzelijst
+1. Selecteer de **[!UICONTROL Schema maken]** en selecteert u de **[!UICONTROL Bladeren]** van de vervolgkeuzelijst
    ![Nieuw schema maken](assets/schemas-newSchema-browseClasses.png)
-1. Selecteer **[!UICONTROL Nieuwe klasse maken]** keuzerondje
+1. Selecteer de **[!UICONTROL Nieuwe klasse maken]** keuzerondje
 1. Naam geven `Luma Product Catalog Class`
 1. Laat de **[!UICONTROL Gedrag]** als **[!UICONTROL Opnemen]**
-1. Selecteer **[!UICONTROL Klasse toewijzen]** knop
+1. Selecteer de **[!UICONTROL Klasse toewijzen]** knop
    ![Nieuwe klasse maken](assets/schemas-productClass.png)
 1. Een nieuwe [!UICONTROL veldgroep] gebeld `Luma Product Catalog field group` met de volgende velden:
-   1. productName: Productnaam: String
+   1. productName: Product Name: String
    1. productCategorie: Productcategorie: String
-   1. productColor: Productkleur: String
+   1. productColor: Product Color: String
    1. productSku: Product SKU: String | Vereist
-   1. productSize: Productgrootte: String
-   1. productPrice: Productprijs: Dubbel
+   1. productSize : Product Size : String
+   1. productPrice: Product Price: Double
 1. Geef het schema een naam `Luma Product Catalog Schema` (zorg dat u het juiste veld bijwerkt en werk de klassenaam niet bij)
 1. **[!UICONTROL Opslaan]** het schema
 
-Uw nieuwe schema zou als dit moeten kijken. Let op hoe de `productSku` wordt weergegeven in het dialoogvenster [!UICONTROL Vereiste velden] sectie:
+Uw nieuwe schema zou als dit moeten kijken. Let op het volgende: `productSku` wordt weergegeven in het dialoogvenster [!UICONTROL Vereiste velden] sectie:
 ![Productschema](assets/schemas-productSchema.png)
 
 De volgende stap bestaat uit het definiëren van de relatie tussen de twee ExperienceEvent-schema&#39;s en de `Luma Product Catalog Schema`Er zijn echter nog een paar extra stappen die we in de volgende les moeten zetten voordat we dat kunnen doen.
@@ -359,4 +359,4 @@ De volgende stap bestaat uit het definiëren van de relatie tussen de twee Exper
 * [Schema-register-API](https://www.adobe.io/experience-platform-apis/references/schema-registry/)
 
 
-Nu hebt u uw schema&#39;s u kunt [kaartidentiteiten](map-identities.md)!
+Nu hebt u uw schema&#39;s u kunt [map-id&#39;s](map-identities.md)!

@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6423
 thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Creeer een gebeurtenis-door:sturen regel
 
-Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen.
+Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen. Ga voor meer informatie naar de [documentatie voor het doorsturen van gebeurtenissen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,6 +25,4 @@ Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens t
 > * Platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?quality=12&learn=on)
-
-Ga voor meer informatie naar de [documentatie voor het doorsturen van gebeurtenissen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on)

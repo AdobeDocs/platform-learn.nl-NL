@@ -1,6 +1,6 @@
 ---
-title: Google Customer Match integreren met Adobe Real-time Customer Data Platform
-description: In deze video ziet u hoe Adobe Real-time Customer Data Platform en Google Customer Match-mogelijkheden merken helpen bij het aanspreken van hun klanten op door Google bediende en bediende eigendommen om hun outreach-campagnes te schalen.
+title: Google Customer Match integreren met Real-time Customer Data Platform van Adobe
+description: In deze video wordt getoond hoe de Real-time Customer Data Platform- en Google Customer Match-mogelijkheden van Adobe brandmerken helpen om met klanten op Google-eigendommen en -bediende eigendommen hun outreach-campagnes te schalen.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-5948
 thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -17,8 +17,6 @@ ht-degree: 0%
 
 # Google Customer Match integreren
 
-Leer hoe Adobe Real-time Customer Data Platform en de Klant van Google de mogelijkheden van de Hulp met klanten in dienst en werkende eigenschappen van Google om hun outreach te schrapen in dienst nemen.
+Leer hoe Adobe Real-time Customer Data Platform en Google Customer Match-mogelijkheden merken helpen om met klanten op Google-eigendommen en -bediende eigendommen hun outreach-campagnes te schalen. Ga voor meer informatie naar de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
-
-Ga voor meer informatie naar de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+>[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on)
