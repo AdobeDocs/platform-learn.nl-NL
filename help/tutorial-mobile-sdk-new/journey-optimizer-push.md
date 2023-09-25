@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 0%
@@ -153,7 +153,7 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Mogelijkheden voor pushmeldingen toevoegen aan uw app
+## Mogelijkheden voor pushmeldingen toevoegen aan uw app
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Er moet nu een extensie voor pushmeldingen aan uw app worden toegevoegd, vergeli
 ![extensie Pusn-meldingen](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Journey Optimizer implementeren in de app
+## Journey Optimizer implementeren in de app
 
 Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [SDK&#39;s installeren](install-sdks.md) sectie.
 
@@ -205,7 +205,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-### Apparaattoken registreren voor pushberichten
+## Apparaattoken registreren voor pushberichten
 
 1. Voeg de [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API aan `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie.
 
