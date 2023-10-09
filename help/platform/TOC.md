@@ -5,7 +5,7 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 8%
@@ -38,8 +38,8 @@ ht-degree: 8%
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
-   + [Sandboxen gebruiken](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Objecten kopiëren tussen sandboxen](/help/platform/admin/use-sandboxes.md)
+   + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
+   + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Productprofielen beheren](/help/platform/admin/managing-product-profiles.md)
