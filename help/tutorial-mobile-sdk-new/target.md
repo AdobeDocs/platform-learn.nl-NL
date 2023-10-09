@@ -5,17 +5,17 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
 
+# Optimaliseren en aanpassen met Adobe Target
 
-# A/B-tests uitvoeren
-
-Leer hoe u A/B-tests kunt uitvoeren in uw mobiele apps met Platform Mobile SDK en Adobe Target.
+Leer hoe u de ervaringen in uw mobiele apps kunt optimaliseren en aanpassen met Platform Mobile SDK en Adobe Target.
 
 Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel.  Zie de [A/B-testoverzicht](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) voor meer informatie .
 
@@ -36,7 +36,7 @@ Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juist
 
 ## Leerdoelstellingen
 
-In deze les zult u
+In deze les zult u:
 
 * Werk uw gegevensstroom bij voor integratie van het Doel.
 * Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
@@ -56,7 +56,7 @@ In deze les zult u
 
 ### Gegevensstroomconfiguratie bijwerken
 
-### Adobe Target
+#### Adobe Target
 
 Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van Experience Platform verzendt, naar Adobe Target worden doorgestuurd, moet u de configuratie van de gegevensstroom bijwerken.
 
@@ -66,6 +66,10 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van 
 
    U kunt uw eigenschappen in het Doel UI, in vinden **[!UICONTROL Administratie]** > **[!UICONTROL Eigenschappen]**. Selecteren ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschap token heeft een vergelijkbare indeling `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; u mag alleen de waarde invoeren `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
+   U kunt ook een doel-omgeving-id opgeven. Het doel gebruikt omgevingen om uw sites en pre-productieomgevingen te organiseren voor eenvoudig beheer en gescheiden rapportage. De vooraf ingestelde omgevingen zijn onder andere Productie, Staging en Ontwikkeling. Zie [Omgevingen](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) en [Id van doelomgeving](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) voor meer informatie .
+
+   U kunt desgewenst een naamruimte van een externe doelid opgeven ter ondersteuning van profielsynchronisatie op een naamruimte van een identiteit (bijvoorbeeld CRM-id). Zie [Naamruimte derde partij doel](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) voor meer informatie .
+
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![Doel toevoegen aan gegevensstroom](assets/edge-datastream-target.png)
@@ -73,7 +77,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Edge Network van 
 
 #### Adobe Journey Optimizer
 
-Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van uw gegevensstroom bij.
 
 1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
 1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
@@ -214,6 +218,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** in de Xcode-projectnavigator. Zoek de ` func updatePropositionAT(ecid: String, location: String) async` functie. Voeg de volgende code toe:
 
    ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
    Task {
        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
        let identityMap = ["identityMap" : ecid]
@@ -229,7 +234,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * Hiermee wordt een XDM-woordenboek ingesteld `xdmData`, met de ECID om het profiel te identificeren waarvoor u de A/B-test moet presenteren, en
    * definieert een `decisionScope`, een array van locaties waar de A/B-test moet worden gepresenteerd.
 
-   Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
+   Vervolgens roept de functie twee API&#39;s aan: [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt. Een voorstel in deze context is de ervaring (aanbieding) die is geselecteerd uit de doelactiviteit (uw A/B-test) en die u hebt gedefinieerd in [Een A/B-test maken](#create-an-ab-test).
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateAT(location: String) async {` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, die:
    * wint de voorstellen voor het huidige profiel terug dat op het beslissingswerkingsgebied wordt gebaseerd (die de plaats is u in de A/B Test hebt bepaald);
@@ -258,11 +263,9 @@ U kunt extra parameters van het Doel (zoals mbox, profiel, product, of ordeparam
 
 ## Valideren met de app
 
-1. Open uw app op een apparaat of in de simulator.
+1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Ga naar de **[!UICONTROL Personalisatie]** tab.
-
-1. Selecteren **[!UICONTROL Edge-personalisatie]**.
 
 1. Schuif omlaag naar de onderkant en u ziet een van de twee aanbiedingen die u in de A/B-test hebt gedefinieerd die in het dialoogvenster **[!UICONTROL DOEL]** tegel.
 
@@ -273,7 +276,7 @@ U kunt extra parameters van het Doel (zoals mbox, profiel, product, of ordeparam
 
 Om de A/B-test in betrouwbaarheid te valideren:
 
-1. Ga naar de betrouwbaarheidsinterface.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Reviseren en simuleren]** ondergronds **[!UICONTROL ADOBE JOURNEY OPTIMIZER-BESLISSING]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Reviseren en simuleren]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.

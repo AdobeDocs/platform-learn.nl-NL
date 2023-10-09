@@ -2,9 +2,10 @@
 title: Gebeurtenisgegevens bijhouden
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: b926480b-b431-4db8-835c-fa1db6436a93
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,6 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
       "eventType": "commerce.productViews",
       "commerce": [
           "productViews": [
-            "id": sku,
             "value": 1
           ]
       ]
@@ -75,7 +75,6 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
   ```
 
    * `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [bekende waarde](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) indien mogelijk.
-   * `commerce.productViews.id`: een tekenreekswaarde die de SKU van het product vertegenwoordigt
    * `commerce.productViews.value`: de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
 * In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItems]** Dit is een standaardset velden die worden gebruikt bij elke handelsgerelateerde gebeurtenis:
@@ -85,25 +84,24 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
 
 * Als u deze gegevens wilt toevoegen, vouwt u uw `xdmData` object dat aanvullende gegevens moet bevatten:
 
-```swift
-var xdmData: [String: Any] = [
-    "eventType": "commerce.productViews",
-        "commerce": [
-        "productViews": [
-            "id": sku,
-            "value": 1
-        ]
-    ],
-    "productListItems": [
-        [
-            "name":  productName,
-            "SKU": sku,
-            "priceTotal": priceString,
-            "quantity": 1
-        ]
-    ]
-]
-```
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
 
 * U kunt deze gegevensstructuur nu gebruiken om een `ExperienceEvent`:
 
@@ -116,6 +114,8 @@ var xdmData: [String: Any] = [
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+
+De [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is de AEP Mobile SDK equivalent aan de [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API-aanroepen. Zie [Migreren van de mobiele extensie Analytics naar Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) voor meer informatie .
 
 U gaat nu eigenlijk deze code in uw project van Xcode uitvoeren.
 U hebt verschillende acties met betrekking tot handelsproducten in uw app en u wilt gebeurtenissen verzenden op basis van deze acties die door de gebruiker worden uitgevoerd:
@@ -135,7 +135,6 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
        "eventType": "commerce." + commerceEventType,
        "commerce": [
            commerceEventType: [
-               "id": product.sku,
                "value": 1
            ]
        ],
@@ -328,7 +327,6 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
       ```swift
       // Send app interaction event
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-      dismiss()
       ```
 
    1. De volgende gemarkeerde code toevoegen aan `onAppear` modifier:
@@ -340,8 +338,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 ## Validatie
 
-1. Controleer de [installatie-instructies](assurance.md) en sluit de simulator of het apparaat aan op Betrouwbaarheid.
-1. Voer de app uit, meld u aan en communiceer met een product.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 
    1. Verplaats het pictogram Verzekering naar links.
    1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]** in het Startscherm.
@@ -355,7 +352,8 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 
 1. In Verzekering UI, zoek naar **[!UICONTROL hitReceived]** gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** leverancier.
-1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het dialoogvenster **[!UICONTROL berichten]** object.
+1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het dialoogvenster **[!UICONTROL berichten]** object. U kunt ook ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Raw-gebeurtenis kopiëren]** en gebruik een tekst- of code-editor van uw voorkeur om de gebeurtenis te plakken en te inspecteren.
+
    ![gegevensverzamelingsvalidatie](assets/datacollection-validation.png)
 
 
@@ -374,7 +372,7 @@ U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform
 
-Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, worden zij verzonden naar de toepassingen en de diensten die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md) en [Adobe Experience Platform](platform.md).
+Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, worden zij verzonden naar de toepassingen en de diensten die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) en andere Adobe Experience Cloud-oplossingen zoals [Adobe Target](target.md) en Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >

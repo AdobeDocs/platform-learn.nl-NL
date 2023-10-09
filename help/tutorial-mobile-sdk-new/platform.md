@@ -4,9 +4,10 @@ description: Leer hoe u gegevens naar het Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -98,7 +99,7 @@ Nu u een dataset hebt gecreeerd en uw gegevensstroom bijgewerkt om gegevens naar
 
 Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt. U kunt levenscyclusmetriek ook teweegbrengen.
 
-Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien aankomend in partijen aan de dataset
+Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien aankomend in partijen aan de dataset. De gegevens worden gewoonlijk om de 15 minuten in microbatches weergegeven, zodat u de gegevens mogelijk niet meteen ziet.
 
 ![gegevensreeksen voor gegevenstransportplatform valideren](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience 
 >
 >U hebt uw app nu zo ingesteld dat gegevens niet alleen naar het Edge-netwerk, maar ook naar Adobe Experience Platform worden verzonden.<br>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[Meldingen maken en verzenden](journey-optimizer-push.md)**
+Volgende: **[Pushmeldingen maken en verzenden](journey-optimizer-push.md)**

@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2618'
 ht-degree: 0%
 
 ---
 
-# Aanbiedingen maken en weergeven
+# Aanbiedingen maken en weergeven met Besluitbeheer
 
 Leer hoe u aanbiedingen van Journey Optimizer Decision Management in uw mobiele apps kunt weergeven met Experience Platform Mobile SDK.
 
@@ -101,6 +102,27 @@ Uw instellingen valideren in Betrouwbaarheid:
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Instellingen valideren]** in het linkerspoor. Zowel de gegevensstroomopstelling als de opstelling van SDK in uw toepassing worden bevestigd.
    ![Validatie van AJO-beslissingen](assets/ajo-decisioning-validation.png)
+
+
+## Plaatsing maken
+
+Voordat u aanbiedingen kunt maken, moet u definiëren hoe en waar deze aanbiedingen in de mobiele app kunnen worden geplaatst. In Beslissingsbeheer definieert u plaatsingen voor dit doel en definieert u een plaatsing voor het mobiele kanaal dat een JSON-payload ondersteunt:
+
+1. Selecteer in de interface van Journey Optimizer de optie ![Componenten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Componenten]** van **[!UICONTROL BESLISSINGSBEHEER]** in het linkerspoor.
+
+1. Selecteren **[!UICONTROL Plaatsen]** in de bovenste balk.
+
+1. Als er geen plaatsing met naam is **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobiel]** als **[!UICONTROL Het type Channel]** en **[!UICONTROL JSON]** als **[!UICONTROL Inhoudstype]** wordt weergegeven, moet u een plaatsing maken. Anders gaat u door met [Aanbiedingen maken](#create-offers).
+
+De Mobile JSON-plaatsing maken:
+
+1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Plaatsing maken.
+
+   1. in de **[!UICONTROL Details]** sectie, enter `Mobile JSON` als de **[!UICONTROL Naam]**, selecteert u **[!UICONTROL Mobiel]** van **[!UICONTROL Het type Channel]** en **[!UICONTROL JSON]** van **[!UICONTROL Inhoudstype]**.
+   1. Selecteren **[!UICONTROL Opslaan]** om de plaatsing op te slaan.
+
+   ![Plaatsing maken](assets/ajo-create-placement.png)
+
 
 
 ## Aanbiedingen maken
@@ -354,7 +376,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 ## Valideren met de app
 
-1. Open uw app op een apparaat of in de simulator.
+1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Ga naar het tabblad **[!DNL Personalisation]**. 
 
@@ -371,7 +393,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 U kunt als volgt de implementatie van de aanbiedingen in Betrouwbaarheid valideren:
 
-1. Ga naar de betrouwbaarheidsinterface.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Selecteren **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Reviseren en simuleren]** ondergronds **[!UICONTROL ADOBE JOURNEY OPTIMIZER-BESLISSING]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Reviseren en simuleren]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.

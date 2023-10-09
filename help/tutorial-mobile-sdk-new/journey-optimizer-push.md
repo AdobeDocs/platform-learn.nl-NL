@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2607'
 ht-degree: 0%
 
 ---
@@ -102,8 +103,13 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 
 1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
 1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
-1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
-1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
+1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm:
+
+   1. Als deze optie nog niet is geselecteerd, selecteert u **[!UICONTROL Dataset AJO-pushprofiel]** van **[!UICONTROL Profielgegevens]**. Deze profieldataset wordt vereist wanneer het gebruiken van `MobileCore.setPushIdentifier` API-aanroep (zie [Apparaattoken registreren voor pushberichten](#register-device-token-for-push-notifications)) die ervoor zorgt dat de unieke id voor pushmeldingen (ook wel push-id genoemd) wordt opgeslagen als onderdeel van het profiel van de gebruiker.
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
+
+   1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
 
    ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration.png)
 
@@ -131,9 +137,7 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 ## Setup valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) sectie.
-1. Installeer de toepassing op het fysieke apparaat of op de simulator.
-1. Start de app met de gegenereerde URL voor Betrouwbaarheid.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Selecteer in de betrouwbaarheidsinterface de optie **[!UICONTROL Configureren]**.
    ![configureren, klik](assets/push-validate-config.png)
 1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Push Debug]**.
@@ -386,7 +390,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 
 ## Valideren met uw app
 
-1. Open uw app op een apparaat of in de simulator.
+1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Ga naar de **[!UICONTROL Instellingen]** tab.
 
@@ -404,4 +408,3 @@ U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te h
 >U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[In-app berichten maken en verzenden](journey-optimizer-inapp.md)**
-

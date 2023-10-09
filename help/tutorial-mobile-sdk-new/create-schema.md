@@ -3,9 +3,10 @@ title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -96,9 +97,22 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 1. Selecteren **[!UICONTROL Schema maken]**.
 
-1. Selecteren **[!UICONTROL XDM ExperienceEvent]** in het menu.
+1. In de **[!UICONTROL Een klasse selecteren]** van de **[!UICONTROL Schema maken]** wizard, selecteert u **[!UICONTROL Experience Event]** ondergronds **[!UICONTROL Selecteer een basisklasse voor dit schema]**.
 
-   ![ExperienceEvent selecteren vanuit vervolgkeuzelijst](assets/schema-create.png)
+1. Selecteren **[!UICONTROL Volgende]**.
+
+   ![Basisklasse Schema Wizard](assets/schema-wizard-base-class.png)
+
+1. In de **[!UICONTROL Naam en revisie]** van de **[!UICONTROL Schema maken]** wizard, voert u een **[!UICONTROL Weergavenaam schema]** bijvoorbeeld `Luma Mobile Event Schema` en [!UICONTROL Beschrijving]bijvoorbeeld `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Schema - Joe Smith` in plaats van `Luma Mobile App Event Schema`. Zie ook de opmerking in [Overzicht](overview.md).
+
+1. Selecteren **[!UICONTROL Voltooien]** om de wizard te voltooien.
+
+   ![Naam schema en revisie](assets/schema-wizard-name-and-review.png)
+
 
 1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Toevoegen** naast **[!UICONTROL Veldgroepen]**.
 
@@ -116,16 +130,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
    U wordt teruggebracht naar het hoofdscherm van de schemacompositie waar u alle beschikbare gebieden kunt zien.
 
-1. Geef uw schema een naam door te selecteren **[!UICONTROL Naamloos schema]** van de **[!UICONTROL Samenstelling]** deelvenster (onder) **[!UICONTROL Schema]**) en een **[!UICONTROL Weergavenaam]** &amp; **[!UICONTROL Beschrijving]** bijvoorbeeld `Luma Mobile App Event Schema` en `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Schema - Joe Smith` in plaats van `Luma Mobile App Event Schema`. Zie ook de opmerking in [Overzicht](overview.md).
-
-
 1. Selecteren **[!UICONTROL Opslaan]**.
-
-   ![Selecteren toepassen](assets/schema-name-save.png)
 
 >[!NOTE]
 >

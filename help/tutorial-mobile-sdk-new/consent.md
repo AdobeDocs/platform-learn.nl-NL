@@ -3,9 +3,10 @@ title: Goedkeuring uitvoeren
 description: Leer hoe u toestemming implementeert in een mobiele app.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -32,9 +33,9 @@ In deze les zult u:
 
 Als u de zelfstudie vanaf het begin hebt gevolgd, zult u zich wellicht herinneren dat u de standaardtoestemming in de extensie Goedkeuring hebt ingesteld op **[!UICONTROL In behandeling - de gebeurtenissen van de Rij die voorkomen alvorens de gebruiker toestemmingsvoorkeur verstrekt.]**
 
-Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebruiker krijgen. In deze zelfstudie krijgt u toestemming van de gebruiker door er een waarschuwing op te vragen. In een echte app wilt u de beste praktijken voor uw regio raadplegen.
+Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebruiker krijgen. In een echte app wilt u de beste praktijken voor uw regio raadplegen. In deze zelfstudie krijgt u toestemming van de gebruiker door er gewoon om te vragen met een waarschuwing:
 
-1. U wilt het de gebruiker slechts eenmaal vragen. U wilt dus de toestemming van de Mobile SDK combineren met de vereiste machtigingen voor tracering met behulp van Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker tracering toestaat, de gebruiker ook instemt met het verzamelen van gebeurtenissen.
+1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U wilt dus de toestemming van de Mobile SDK combineren met de vereiste machtigingen voor tracering met behulp van Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker tracering toestaat, de gebruiker ook instemt met het verzamelen van gebeurtenissen.
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator.
 
@@ -95,9 +96,7 @@ In het bovenstaande voorbeeld registreert u gewoon de toestemmingsstatus aan de 
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [Betrouwbaarheid](assurance.md) les.
-1. Installeer de toepassing.
-1. Start de app met de door Betrouwbaarheid gegenereerde URL.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Als u de bovenstaande code correct hebt toegevoegd, wordt u gevraagd om toestemming te geven.
 
    Selecteren **[!UICONTROL Doorgaan...]** en selecteer vervolgens **[!UICONTROL Toestaan]**.
@@ -107,6 +106,17 @@ In het bovenstaande voorbeeld registreert u gewoon de toestemmingsstatus aan de 
 
 1. U dient een **[!UICONTROL Respons voor constanten ophalen]** gebeurtenis in de betrouwbaarheidsinterface.
    ![toestemming valideren](assets/consent-update.png)
+
+
+## Goedkeuring opnieuw instellen
+
+Als u de toestemming opnieuw wilt instellen:
+
+1. Ga naar **[!UICONTROL Instellingen]** in de app.
+
+1. Selecteren **[!UICONTROL Toepassingsinstellingen...]** Hiermee worden de instellingen voor Luma App geopend in de app iOS Settings.
+
+1. Schakelen **[!UICONTROL Tekstspatiëring toestaan]** uit.
 
 
 

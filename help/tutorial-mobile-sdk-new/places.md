@@ -1,19 +1,20 @@
 ---
-title: Geolocatieservices gebruiken
+title: Plaatsen gebruiken
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 0%
 
 ---
 
-# Geolocatieservices gebruiken
+# Plaatsen gebruiken
 
-Leer hoe u de geolocatieservice in uw app gebruikt.
+Leer hoe u de geolocatieservice Plaatsen in uw app gebruikt.
 
-De Adobe Experience Platform Data Collection Places Service is een geo-locatieservice waarmee mobiele apps met het bewustzijn van de locatie de context van de locatie kunnen begrijpen. De dienst gebruikt rijke en makkelijk te gebruiken interfaces van SDK vergezeld van een flexibele gegevensbestand van belangenpunten (POIs).
+De Adobe Experience Platform Data Collection Places Service is een geolocatieservice waarmee mobiele apps met het bewustzijn van de locatie de context van de locatie kunnen begrijpen. De dienst gebruikt rijke en makkelijk te gebruiken interfaces van SDK vergezeld van een flexibele gegevensbestand van belangenpunten (POIs).
 
 ## Vereisten
 
@@ -32,7 +33,7 @@ In deze les zult u
 * Werk uw schema bij om geolocatiegebeurtenissen vast te leggen.
 * Valideer installatie in Betrouwbaarheid.
 * Werk uw app bij om de extensie Plaatsen te registreren.
-* Implementeer geo-locatie bijhouden via de service Plaatsen in uw app.
+* Implementeer de functie voor het bijhouden van geolocaties via de service Plaatsen in uw app.
 
 
 ## Instellen
@@ -81,7 +82,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
    1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]** van **[!UICONTROL Opslaan in bibliotheek]**.
       ![De extensie Plaatsen installeren](assets/places-install-extension.png).
 
-1. Uw bibliotheek wordt opnieuw opgebouwd.
+1. Uw bibliotheek wordt opnieuw samengesteld.
 
 
 ### Uw schema verifiëren
@@ -96,7 +97,7 @@ Controleren of uw schema, zoals gedefinieerd in [Schema maken](create-schema.md)
    ![Schemaplaatsen](assets/schema-places-context.png).
 
 
-### De tag bijwerken
+### De eigenschap tag bijwerken
 
 De extensie Plaatsen voor tags biedt functionaliteit om gebeurtenissen met betrekking tot geolocatie te controleren en biedt u de mogelijkheid om handelingen te activeren op basis van deze gebeurtenissen. U kunt deze functionaliteit gebruiken om de API-codering die u in de app moet implementeren, tot een minimum te beperken.
 
@@ -132,7 +133,7 @@ Eerst maakt u verschillende gegevenselementen.
 
 Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
 
-1. In uw eigenschap tag. selecteren **[!UICONTROL Regels]** van de linkerspoorstaaf.
+1. Selecteer in de eigenschap Tag **[!UICONTROL Regels]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Regel toevoegen]**.
 1. In de **[!UICONTROL Regel maken]** scherm, ga een naam voor de regel in, bijvoorbeeld `POI - Entry`.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ondergronds **[!UICONTROL EVENTS]**.
@@ -215,6 +216,10 @@ Laten we een andere regel maken
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Gegevens koppelen]** handeling.
    1. Selecteren **[!UICONTROL Adobe Experience Platform Edge Network]** van de **[!UICONTROL Extensie]** lijst en selecteer **[!UICONTROL Door gebeurtenis naar Edge Network]**.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
+
+1. Als u de regel wilt opslaan, selecteert u **[!UICONTROL Opslaan in bibliotheek]**.
+
+   ![Regel](assets/tags-rule-poi-exit.png)
 
 
 Alle wijzigingen in de tag worden gepubliceerd
@@ -302,18 +307,15 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    }
    ```
 
-Het is buiten het onderwerp van deze les om details over de implementatie van plaatsmanager binnen iOS te verklaren.
-
-
 ## Valideren met uw app
 
 1. Open uw app op een apparaat of in de simulator.
 
 1. Ga naar de **[!UICONTROL Locatie]** tab.
 
-1. Verplaats de kaart om ervoor te zorgen dat de blauwe cirkel in het midden boven op een van je POI&#39;s ligt, bijvoorbeeld Londen.
+1. Verplaats (sleep) de kaart om ervoor te zorgen dat de blauwe middelste cirkel zich boven een van uw POI&#39;s bevindt, bijvoorbeeld Londen.
 
-1. Tik op <img src="assets/geobutton.png" width="20" /> herhaaldelijk tot u de categorie en de naam bij het bodemrecht ziet.
+1. Tik op <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in de tabel op de rode locatie met de pin.
 
 1. Tik op het label van de POI, die het **[!UICONTROL Nearby POI]** blad.
 

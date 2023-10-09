@@ -2,9 +2,10 @@
 title: Levenscyclusgegevens verzamelen
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -66,13 +67,11 @@ Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) en sluit de simulator of het apparaat aan op Betrouwbaarheid.
-1. Start de app.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Verzend de app naar de achtergrond. Controleren op **[!UICONTROL LevenscyclusPauze]** gebeurtenissen in de gebruikersinterface van de verzekering.
 1. Breng de app naar de voorgrond. Controleren op **[!UICONTROL LevenscyclusHervatten]** gebeurtenissen in de gebruikersinterface van de verzekering.
    ![levenscyclus valideren](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
 
 De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Experience Platform Mobile SDK. Om deze gebeurtenissen aan het Netwerk van de Rand van het Platform door:sturen:
 
-1. Selecteren **[!UICONTROL Regels]** in de UI voor gegevensverzameling.
+1. Selecteren **[!UICONTROL Regels]** in de eigenschap Tags.
    ![Regel maken](assets/rule-create.png)
 1. Selecteren **[!UICONTROL Eerste build]** als de te gebruiken bibliotheek.
 1. Selecteren **[!UICONTROL Nieuwe regel maken]**.

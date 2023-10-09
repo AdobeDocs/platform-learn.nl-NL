@@ -3,9 +3,10 @@ title: Gegevens toewijzen aan analysegegevens
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen en toewijzen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ De [event](events.md) gegevens die u in eerdere lessen hebt verzameld en naar Pl
 
 * Inzicht in het bijhouden van ExperienceEvent.
 * XDM-gegevens worden naar uw voorbeeld-app verzonden.
-* DataStream geconfigureerd voor Adobe Analytics
+* Een Adobe Analytics-rapportsuite die u kunt gebruiken voor deze les.
 
 ## Leerdoelstellingen
 
@@ -128,9 +129,11 @@ s.events = "scAdd:321435"
 
 ## Valideren met betrouwbaarheid
 
-Met de [Betrouwbaarheid](assurance.md) u kunt bevestigen dat u een ervaringsgebeurtenis verzendt, zijn de gegevens XDM correct en de afbeelding van Analytics gebeurt zoals verwacht. Bijvoorbeeld:
+Met de [Betrouwbaarheid](assurance.md) u kunt bevestigen dat u een ervaringsgebeurtenis verzendt, zijn de gegevens XDM correct en de afbeelding van Analytics gebeurt zoals verwacht.
 
-1. Verzend een productListAdds-gebeurtenis.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+
+1. Een **[!UICONTROL productListAdds]** (voeg een product toe aan uw mandje).
 
 1. Bekijk de ExperienceEvent hit.
 
@@ -149,7 +152,6 @@ Met de [Betrouwbaarheid](assurance.md) u kunt bevestigen dat u een ervaringsgebe
    "eventType" : "commerce.productListAdds",
    "commerce" : {
      "productListAdds" : {
-       "id" : "LLWS05.1-XS",
        "value" : 1
      }
    }
@@ -193,38 +195,45 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
 
+
+
 Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in kaart te brengen, kunt u:
+
+### Een veldgroep gebruiken
 
 * Voeg de **[!UICONTROL Adobe Analytics ExperienceEvent Volledige extensie]** veldgroep aan uw schema.
 
   ![Analytics ExperienceEvent FullExtension, veldgroep](assets/schema-analytics-extension.png)
-* Stel regels samen in de eigenschap Tags om de contextgegevens toe te wijzen aan de velden in de veldgroep Volledige extensie van Adobe Analytics ExperienceEvent. Bijvoorbeeld, map `_techmarketingdemo.appinformation.appstatedetails.screenname` tot `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
-Here is what a processing rule using this data might look like:
+* XDM-ladingen maken in uw app, conform de Adobe Analytics ExperienceEvent Full Extension field group, vergelijkbaar met wat u in het dialoogvenster [Gebeurtenisgegevens bijhouden](events.md) les, of
+* Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer informatie [Gegevens koppelen aan SDK-gebeurtenissen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [Gegevens wijzigen in SDK-gebeurtenissen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
-* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+### Verwerkingsregels gebruiken
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+Zo ziet een verwerkingsregel met deze gegevens eruit:
+
+* U **[!UICONTROL Waarde overschrijven van]** (1) **[!UICONTROL Schermnaam van app (eVar2)]** (2) met de waarde van **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (3) **[!UICONTROL a.x_techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is ingesteld]** (5)
+
+* U **[!UICONTROL Gebeurtenis instellen]** (6) **[!UICONTROL Toevoegen aan Wishlist (gebeurtenis 3)]** (7) tot **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is ingesteld]** 10.
+
+![regels voor analytische verwerking](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Some of the automatically mapped variables may not be available for use in processing rules.
+>Sommige automatisch toegewezen variabelen zijn mogelijk niet beschikbaar voor gebruik in verwerkingsregels.
 >
 >
->The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
+>De eerste keer u aan een verwerkingsregel in kaart brengt, toont de interface u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Aanvullende informatie over verwerkingsregels en contextgegevens is te vinden [hier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>In tegenstelling tot de vorige implementaties van mobiele apps, is er geen onderscheid tussen een pagina/het scherm meningen en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen de schermnaam toe te wijzen aan **[!UICONTROL Paginanaam]** in een verwerkingsregel.
 
--->
 
 >[!SUCCESS]
 >

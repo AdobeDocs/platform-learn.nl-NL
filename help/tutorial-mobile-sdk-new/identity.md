@@ -3,9 +3,10 @@ title: Identiteitsgegevens verzamelen
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -103,7 +104,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 1. Navigeren naar **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Aanmelden]** knop. Voeg de volgende code toe:
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen client-side identiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [Identiteitsgrafieken weergeven](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/do
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) en sluit de simulator of het apparaat aan op Betrouwbaarheid.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. In de app Luma
-   1. Selecteer de **[!UICONTROL Home]** tab.
+   1. Selecteer de **[!UICONTROL Home]** en verplaatst u het pictogram Verzekering naar links.
    1. Selecteer het <img src="assets/login.png" width="15" /> van rechtsboven.
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md)k
 1. U ziet de **[!UICONTROL Identiteiten]** vermeld.
 
    ![identiteitsgrafiek valideren](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>De toepassing bevat geen code om de ECID opnieuw in te stellen. Dit betekent dat u de ECID alleen opnieuw kunt instellen (en effectief een nieuw profiel kunt maken met een nieuwe ECID op het apparaat) door de toepassing te verwijderen en opnieuw te installeren. Als u de reset van id&#39;s wilt implementeren, raadpleegt u de [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API-aanroepen. Houd er echter rekening mee dat wanneer u een id voor pushmeldingen gebruikt (zie [Pushmeldingen verzenden](journey-optimizer-push.md)), wordt die id een andere &#39;sticky&#39;-profielid op het apparaat.
 
 
 >[!SUCCESS]

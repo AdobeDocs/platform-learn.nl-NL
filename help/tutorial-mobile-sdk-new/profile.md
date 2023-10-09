@@ -2,9 +2,10 @@
 title: Profielgegevens verzamelen
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,7 @@ Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel t
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) sectie.
-1. Installeer de toepassing.
-1. Start de app met de gegenereerde URL voor Betrouwbaarheid.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Voer de app uit om u aan te melden en te communiceren met een product.
 
    1. Verplaats het pictogram Verzekering naar links.
@@ -132,4 +131,4 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 >
 >U hebt nu uw app ingesteld om kenmerken van profielen in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Volgende: **[Geolocatieservices gebruiken](places.md)**
+Volgende: **[Plaatsen gebruiken](places.md)**

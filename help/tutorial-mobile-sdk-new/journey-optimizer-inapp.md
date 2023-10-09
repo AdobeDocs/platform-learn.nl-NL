@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -136,9 +137,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 ## Setup valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) sectie.
-1. Installeer de toepassing op het fysieke apparaat of op de simulator.
-1. Start de app met de gegenereerde URL voor Betrouwbaarheid.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Selecteer in de betrouwbaarheidsinterface de optie **[!UICONTROL Configureren]**.
    ![configureren, klik](assets/push-validate-config.png)
 1. Selecteer de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knop naast **[!UICONTROL In-app berichten]**.
@@ -159,7 +158,8 @@ Als u uw eigen bericht in de app wilt maken, moet u een campagne in Journey Opti
 * levenscyclusgebeurtenissen van toepassingen, zoals starten, installeren, upgraden, sluiten of vastlopen,
 * gebeurtenissen voor geolocatie, zoals het betreden of afsluiten van een interessant punt.
 
-In deze zelfstudie gaat u de generieke API&#39;s van de Mobile Core en de API&#39;s die onafhankelijk zijn van de extensie gebruiken (zie [Algemene mobiele kern-API&#39;s](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om het bijhouden van gebeurtenissen van gebruikersschermen, handelingen en PII-gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle AEP Mobile SDK-extensies is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
+In deze zelfstudie gaat u de generieke API&#39;s van de Mobile Core en de API&#39;s die onafhankelijk zijn van de extensie gebruiken (zie [Algemene mobiele kern-API&#39;s](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om het bijhouden van gebeurtenissen van gebruikersschermen, handelingen en PII-gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle SDK-extensies van het mobiele platform is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
+
 De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistreerde extensies om de integratie met Adobe en oplossingen van derden te vereenvoudigen. Wanneer bijvoorbeeld de extensie Optimize is geïnstalleerd, worden alle verzoeken en interacties met de aanbiedingsengine van Journey Optimizer - Decision Management afgehandeld door de gebeurtenishub.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Campagnes]** van de linkerspoorstaaf.
@@ -219,7 +219,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 
 ## Valideren met uw app
 
-1. Open uw app op een apparaat of in de simulator.
+1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Ga naar de **[!UICONTROL Instellingen]** tab.
 
@@ -232,6 +232,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 
 U kunt uw in-app berichten in de UI van de Verzekering bevestigen.
 
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Selecteren **[!UICONTROL In-app berichten]**.
 1. Selecteren **[!UICONTROL Gebeurtenislijst]**.
 1. Selecteer een **[!UICONTROL Bericht weergeven]** vermelding.

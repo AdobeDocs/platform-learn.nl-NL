@@ -3,9 +3,10 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de onderte
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een unieke bundle-id gebruikt, anders dan de standaardinstelling `com.adobe.luma.tutorial.swiftui`  zijn ingevoerd in het Start-project, omdat elke bundle-id uniek moet zijn.
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `Luma` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 
 ## Verbinding maken met een sessie
 
-1. Voer de toepassing uit in de simulator of op een aangesloten fysiek apparaat.
+1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. Selecteren **[!UICONTROL Betrouwbaarheid]** van de linkerspoorlijn in de UI van de Inzameling van Gegevens.
 1. Selecteren **[!UICONTROL Sessie maken]**.
 1. Selecteren **[!UICONTROL Start]**.
@@ -133,6 +134,34 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
          ![betrouwbaarheidsgebeurtenissen](assets/assurance-events.png)
 
 Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## Extensies verifiëren
+
+Om te controleren of uw app de meest actuele extensies gebruikt:
+
+1. Selecteren **[!UICONTROL Configureren]**.
+
+1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) for ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extensieversies]**.
+
+1. Selecteren **[!UICONTROL Opslaan]**.
+
+   ![Extensieversies configureren](assets/assurance-configure-extension-versions.png)
+
+1. Selecteren ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extensieversies]**. Er wordt een overzicht weergegeven van de meest recente beschikbare extensies en de extensies die worden gebruikt in uw versie van de app.
+
+   ![Extensies](assets/assurance-extension-versions.png)
+
+1. De extensieversies bijwerken (bijvoorbeeld **[!UICONTROL Berichten]** en **[!UICONTROL Optimaliseren]**), in Xcode, voor de specifieke extensies die een upgrade nodig hebben, selecteert u het pakket (extensie) van **[!UICONTROL Pakketafhankelijke onderdelen]** (bijvoorbeeld **[!UICONTROL AEPMessaging]**) en in het contextmenu selecteert u **[!UICONTROL Pakket bijwerken]**. Xcode werkt de pakketafhankelijkheden bij.
+
+
+>[!NOTE]
+>
+>Wanneer u de extensies (pakketten) in Xcode hebt bijgewerkt, moet u de huidige sessie sluiten en verwijderen en alle stappen uit [Verbinding maken met een sessie](#connecting-to-a-session) en [Extensies verifiëren](#verify-extensions) om ervoor te zorgen dat de verzekering de juiste extensies in een nieuwe betrouwbaarheidssessie meldt.
+
+
+
+
 
 >[!SUCCESS]
 >

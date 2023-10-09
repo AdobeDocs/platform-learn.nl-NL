@@ -3,13 +3,13 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
-
 
 # Een gegevensstroom maken
 
@@ -57,43 +57,47 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
 Wanneer u door (facultatief) gaat [Analyse](analytics.md) en [Experience Platform](platform.md) de lessen in dit leerprogramma, voegt u de diensten aan uw gegevensstroom toe om ervoor te zorgen dat wanneer Platform Mobiele SDK gegevens naar het Netwerk van de Rand verzendt, de gegevensstroom door:sturen die gegevens aan de gevormde diensten.
 
+<!--
+
 ### Adobe Analytics
 
-1. Selecteren **[!UICONTROL Service toevoegen]**.
+1. Select **[!UICONTROL Add Service]**.
 
-1. Toevoegen **[!UICONTROL Adobe Analytics]** van de [!UICONTROL Service] lijst,
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. Ga de naam van de rapportplaats in die u binnen wilt gebruiken **[!UICONTROL ID van rapportsuite]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. Laat de dienst door omschakeling toe **[!UICONTROL Ingeschakeld]** op.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Selecteren **[!UICONTROL Opslaan]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Adobe Analytics toevoegen als datastreamservice](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-Mogelijk wilt u ook de Adobe Experience Platform-service inschakelen.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->U kunt de dienst van Adobe Experience Platform slechts toelaten wanneer het hebben tot een gebeurtenisdataset geleid. Als u nog geen gemaakte gebeurtenisdataset hebt, volgt u de instructies [hier](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. Klikken ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Service toevoegen]** om een andere service toe te voegen.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. Selecteren **[!UICONTROL Adobe Experience Platform]** van de [!UICONTROL Service] lijst.
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. Laat de dienst door omschakeling toe **[!UICONTROL Ingeschakeld]** op.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Selecteer de **[!UICONTROL Gebeurtenisgegevens]** die u hebt gemaakt als onderdeel van de [Een gegevensset maken](platform.md#create-a-dataset) instructies, bijvoorbeeld **Dataset voor Luma Mobile-toepassingsgebeurtenis**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. Selecteren **[!UICONTROL Opslaan]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Adobe Experience Platform toevoegen als datastreamservice](assets/datastream-service-aep.png)
-1. De uiteindelijke configuratie moet er ongeveer zo uitzien.
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![gegevensstroominstellingen](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]
