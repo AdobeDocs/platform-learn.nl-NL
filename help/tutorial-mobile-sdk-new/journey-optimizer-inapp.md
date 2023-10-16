@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1690'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,27 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 >
 >Als u het niet ziet `AJO Push Tracking Experience Event Dataset` als optie, contacteer klantenzorg.
 >
+
+
+## Ondertekenen
+
+De app Luma hoeft alleen te worden ondertekend voor de [Pushmeldingen maken en verzenden](journey-optimizer-push.md) en de [In-app berichten maken en verzenden](journey-optimizer-inapp.md) lessen in deze zelfstudie. Voor deze lessen is een Apple-inrichtingsprofiel vereist dat **vereist een betaald Apple-ontwikkelingsaccount**.
+
+U kunt als volgt de ondertekening voor uw app bijwerken:
+
+1. Ga naar uw app in Xcode.
+1. Selecteren **[!DNL Luma]** in de projectnavigator.
+1. Selecteer de **[!DNL Luma]** doel.
+1. Selecteer de **Ondertekenen en mogelijkheden** tab.
+1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
+
+   >[!IMPORTANT]
+   >
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+
 
 ### Journey Optimizer implementeren in de app
 
@@ -213,7 +234,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
    ```swift
    // Setting parameters and calling function to send in-app message
    Task {
-       AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+       MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
    ```
 

@@ -3,13 +3,13 @@ title: WebViews verwerken
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # WebViews verwerken
 
@@ -67,6 +67,7 @@ Meer informatie over de `Identity.getUrlVariables` API in de [Identiteit voor Ed
 
 De code uitvoeren:
 
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Ga naar de **[!UICONTROL Instellingen]** in de app
 1. Tik op de knop **[!DNL View...]** om de **[!DNL Terms of Use]**.
 

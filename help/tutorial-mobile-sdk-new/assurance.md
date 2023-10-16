@@ -4,9 +4,9 @@ description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -57,22 +57,28 @@ Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les heb
 
 Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## Ondertekenen
+<!-- not initially required
 
-Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de ondertekening bijwerken.
+## Signing
 
-1. Open het project in Xcode.
-1. Selecteren **[!DNL Luma]** in de projectnavigator.
-1. Selecteer de **[!DNL Luma]** doel.
-1. Selecteer de **Ondertekenen en mogelijkheden** tab.
-1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `Luma` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## Een basis-URL instellen
 
@@ -81,9 +87,13 @@ Voordat u de toepassing voor de eerste keer uitvoert in Xcode, moet u de onderte
 1. Selecteer de **[!DNL Luma]** doel.
 1. Selecteer de **Info** tab.
 1. Als u een basis-URL wilt toevoegen, schuift u omlaag naar **URL-typen** en selecteert u de **+** knop.
-1. Set **Id** aan de bundel-id waarin u zich hebt geconfigureerd [Ondertekenen](#signing) (bijvoorbeeld `com.adobe.luma.tutorial.swiftui`) en stelt een **URL-schema&#39;s** bijvoorbeeld `lumatutorialswiftui`.
+1. Set **Id** naar de bundel-id van uw keuze en stel een **URL-schema&#39;s** van uw keuze.
 
    ![verzekerings-URL](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`.<br/>Gebruik op dezelfde manier een uniek URL-schema en vervang de reeds opgegeven `lumatutorialswiftui` met uw unieke URL-schema.
 
 Voor meer informatie over URL-schema&#39;s in iOS raadpleegt u [Apple-documentatie](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 
 ## Verbinding maken met een sessie
 
-1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. Selecteren **[!UICONTROL Betrouwbaarheid]** van de linkerspoorlijn in de UI van de Inzameling van Gegevens.
+In Xcode:
+
+1. De app maken of opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode, met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. In de **[!UICONTROL Laat &quot;Luma App&quot; gebruiken om uw locatie te gebruiken]** dialoogvenster, selecteren **[!UICONTROL Toestaan tijdens gebruik van app]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. In de **[!UICONTROL &quot;Luma-app&quot; wil berichten naar u sturen]** dialoogvenster, selecteren **[!UICONTROL Toestaan]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. Selecteren **[!UICONTROL Doorgaan...]** zodat de app uw activiteiten kan volgen.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. In de **[!UICONTROL Laat &quot;Luma App&quot; uw activiteiten bijhouden voor de app en websites van andere bedrijven]** dialoogvenster, selecteren **[!UICONTROL Toestaan]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+In uw browser:
+
+1. Ga naar de interface voor gegevensverzameling.
+1. Selecteren **[!UICONTROL Betrouwbaarheid]** van de linkerspoorstaaf.
 1. Selecteren **[!UICONTROL Sessie maken]**.
 1. Selecteren **[!UICONTROL Start]**.
 1. Geef een **[!UICONTROL Naam van sessie]** zoals `Luma Mobile App Session` en de **[!UICONTROL Basis-URL]**, dit zijn de URL-schema&#39;s die u hebt ingevoerd in Xcode, gevolgd door `://` Bijvoorbeeld: `lumatutorialswiftui://`

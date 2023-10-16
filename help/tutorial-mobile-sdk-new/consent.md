@@ -4,9 +4,9 @@ description: Leer hoe u toestemming implementeert in een mobiele app.
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -96,28 +96,10 @@ In het bovenstaande voorbeeld registreert u gewoon de toestemmingsstatus aan de 
 
 ## Valideren met betrouwbaarheid
 
+1. Verwijder de toepassing van het apparaat of de simulator als we de tracering en toestemming op de juiste wijze opnieuw willen instellen en initialiseren.
 1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
-1. Als u de bovenstaande code correct hebt toegevoegd, wordt u gevraagd om toestemming te geven.
-
-   Selecteren **[!UICONTROL Doorgaan...]** en selecteer vervolgens **[!UICONTROL Toestaan]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. U dient een **[!UICONTROL Respons voor constanten ophalen]** gebeurtenis in de betrouwbaarheidsinterface.
+1. Wanneer u de app verplaatst van **[!UICONTROL Home]** scherm naar **[!UICONTROL Producten]** scherm en terug naar **[!UICONTROL Home]** scherm, moet u een **[!UICONTROL Respons voor constanten ophalen]** gebeurtenis in de betrouwbaarheidsinterface.
    ![toestemming valideren](assets/consent-update.png)
-
-
-## Goedkeuring opnieuw instellen
-
-Als u de toestemming opnieuw wilt instellen:
-
-1. Ga naar **[!UICONTROL Instellingen]** in de app.
-
-1. Selecteren **[!UICONTROL Toepassingsinstellingen...]** Hiermee worden de instellingen voor Luma App geopend in de app iOS Settings.
-
-1. Schakelen **[!UICONTROL Tekstspatiëring toestaan]** uit.
-
 
 
 >[!SUCCESS]

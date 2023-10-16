@@ -3,9 +3,9 @@ title: Plaatsen gebruiken
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -239,7 +239,10 @@ Uw instellingen valideren in Betrouwbaarheid:
 1. Indien niet reeds beschikbaar in het linkerspoor, selecteer **[!UICONTROL Configureren]** in linkerspoor en selecteer ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Gebeurtenissen]** en **[!UICONTROL Toewijzen en simuleren]** ondergronds **[!UICONTROL PLAATSINGSSERVICE]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Toewijzen en simuleren]** in het linkerspoor.
-1. Selecteer een van de POI&#39;s die zijn gedefinieerd in de service Plaatsen en selecteer in het pop-upvenster ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Invoergebeurtenis simuleren]**.
+1. Verplaats de kaart naar een locatie van een van uw POI&#39;s.
+1. Selecteren ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI&#39;s laden simuleren.  Uw POI wordt geïdentificeerd gebruikend een cirkel en een speld.
+1. Selecteer uw POI.
+1. Van popup uitgezocht ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Invoergebeurtenis simuleren]**.
    ![Invoergebeurtenis simuleren](assets/places-simulate.png)
 1. Selecteren **[!UICONTROL Gebeurtenissen]** van de linkerspoorstaaf, en je zou de gebeurtenissen moeten zien die je simuleerde.
    ![Validatie van AJO-beslissingen](assets/places-events.png)
@@ -258,7 +261,9 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPPlaces` maakt deel uit van uw lijst met importbewerkingen.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Zorgen `Places.self` maakt deel uit van de array met extensies die u registreert.
 

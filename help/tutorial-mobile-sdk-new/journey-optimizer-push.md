@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2734'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,26 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 1. De pushmelding voor de test wordt weergegeven in uw app.
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## Ondertekenen
+
+De app Luma hoeft alleen te worden ondertekend voor de [Pushmeldingen maken en verzenden](journey-optimizer-push.md) en de [In-app berichten maken en verzenden](journey-optimizer-inapp.md) lessen in deze zelfstudie. Voor deze lessen is een Apple-inrichtingsprofiel vereist dat **vereist een betaald Apple-ontwikkelingsaccount**.
+
+U kunt als volgt de ondertekening voor uw app bijwerken:
+
+1. Ga naar uw app in Xcode.
+1. Selecteren **[!DNL Luma]** in de projectnavigator.
+1. Selecteer de **[!DNL Luma]** doel.
+1. Selecteer de **Ondertekenen en mogelijkheden** tab.
+1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
+
+   >[!IMPORTANT]
+   >
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## Mogelijkheden voor pushmeldingen toevoegen aan uw app

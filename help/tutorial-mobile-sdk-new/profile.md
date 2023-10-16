@@ -3,9 +3,9 @@ title: Profielgegevens verzamelen
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,6 @@ De profielgegevens worden door andere extensies gebruikt om acties met betrekkin
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* De SDK van het profiel is geïmporteerd.
-
-  ```swift
-  import AEPUserProfile
-  ```
 
 ## Leerdoelstellingen
 
@@ -78,11 +73,13 @@ Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor a
    ```swift
    // Get attributes
    UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-       if attributes?["isPaidUser"] as! String == "yes" {
-           showBadgeForUser = true
-       }
-       else {
-           showBadgeForUser = false
+       if attributes?.count ?? 0 > 0 {
+           if attributes?["isPaidUser"] as? String == "yes" {
+               showBadgeForUser = true
+           }
+           else {
+               showBadgeForUser = false
+           }
        }
    }
    ```
