@@ -1,12 +1,12 @@
 ---
 title: Tutorials voor gegevensverzameling
-description: Hoe kan ik-video's en zelfstudies om u een krachtige gebruiker van de Inzameling van Gegevens te maken
+description: Hoe kan ik-video's en zelfstudies om u een krachtige gebruiker te maken van Gegevensverzameling
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 11%
+source-wordcount: '241'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
 * **[Overzicht van de server-API (video)](server-api/overview.md)**
   *Gegevens verzenden met een beveiligde, geverifieerde server-API.*
 * **[Adobe Experience Cloud implementeren in mobiele apps (zelfstudie)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
-  *Experience Cloud-toepassingen implementeren met Mobile SDK.*
+  *Implementeer Experience Cloud-toepassingen met Mobile SDK.*
 * **[Client-side tags verplaatsen (zelfstudie)](event-forwarding/consider-moving-tags.md)**
   *Overweeg cliënt-zijmarkeringen aan gebeurtenis het door:sturen.*
 
@@ -46,11 +46,11 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implementeer de Experience Cloud met Web SDK</strong>
+    <strong>Implementeer het Experience Cloud met Web SDK</strong>
     </a>
     </div>
     <p>
-    <em>De markeringen van het gebruik om Platform Web SDK uit te voeren</em>
+    <em>Tags gebruiken om Platform Web SDK te implementeren</em>
     <p>
   </td>
   <td>
@@ -62,6 +62,19 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </div>
     <p>
     <em>Tags gebruiken om Platform Mobile SDK te implementeren</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Doel migreren naar SDK van web" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Adobe Target migreren naar Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migreren van at.js naar Web SDK</em>
     <p>
   </td>
 </tr>

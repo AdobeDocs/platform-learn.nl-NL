@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform-zelfstudies
+title: Adobe Experience Platform-tutorials
 description: Meer informatie over Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
-# Adobe Experience Platform-zelfstudies
+# Adobe Experience Platform-tutorials
 
 Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op de markt voor het ontwikkelen en beheren van volledige oplossingen die de ervaring van klanten stimuleren. Experience Platform stelt organisaties in staat om klantgegevens en -inhoud van elk systeem te centraliseren en te standaardiseren en datamateriaal en computerleren toe te passen om het ontwerp en de levering van rijke, gepersonaliseerde ervaringen drastisch te verbeteren. Gebruik deze video&#39;s en zelfstudies om de vele componenten van Experience Platform te leren.
 
@@ -38,12 +38,12 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
     </a>
     </div>
     <p>
-    <em>Ontdek hoe Platform kan worden gebruikt om een klantervaring aan te zwengelen</em>
+    <em>Ontdek hoe Platform kan worden gebruikt om een klantervaring van stroom te voorzien</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-      <img alt="miniatuurafbeelding voor de zelfstudie 'Aan de slag voor gegevensarchitecten en -engineers'" src="assets/thumb_Getting_started.jpg" />
+      <img alt="miniatuurafbeelding voor de zelfstudie &apos;Aan de slag voor gegevensarchitecten en -engineers&apos;" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
@@ -56,7 +56,7 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="miniatuurafbeelding voor de video 'Inzicht in bronconnectors'" src="assets/thumb_Sources.png" />
+      <img alt="miniatuurafbeelding voor de video &apos;Inzicht in bronconnectors&apos;" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
