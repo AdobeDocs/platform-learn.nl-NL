@@ -4,9 +4,9 @@ description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,11 @@ De verzekering werkt door een URL, of via browser of QR code te openen. Die URL 
 In Xcode:
 
 1. De app maken of opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode, met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >U kunt desgewenst uw build &#39;opschonen&#39;, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Buildmap opschonen...]** van de Xcode **[!UICONTROL Product]** -menu.
+
 
 1. In de **[!UICONTROL Laat &quot;Luma App&quot; gebruiken om uw locatie te gebruiken]** dialoogvenster, selecteren **[!UICONTROL Toestaan tijdens gebruik van app]**.
 
