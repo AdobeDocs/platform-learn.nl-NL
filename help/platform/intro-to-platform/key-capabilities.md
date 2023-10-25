@@ -1,27 +1,22 @@
 ---
 title: Belangrijkste mogelijkheden
-description: In deze video worden de belangrijkste mogelijkheden van Adobe Experience Platform besproken.
+description: Leer over de belangrijkste mogelijkheden van Experience Platform en hoe zij waarde aan uw zaken brengen.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
+last-substantial-update: 2023-10-24T00:00:00Z
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: ca7acd3678b4af4a5b5a040d931a79b7a570fc51
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '40'
 ht-degree: 0%
 
 ---
 
 # Belangrijkste mogelijkheden van Adobe Experience Platform
 
-Meer informatie over de belangrijkste mogelijkheden van Experience Platform:
-
-1. Creeer actionable, intelligente, in real time klantenprofielen
-1. Verrijk gegevens en verbeter meer inzicht met modellen AI/ML en gegevensvragen
-1. Innoveren met open en composable componenten
-1. Verbeter levering en personalisatie van real-time ervaringen
-1. Verbeter vertrouwen met bestuur, veiligheid, en privacycontroles
+Leer over de belangrijkste mogelijkheden van Experience Platform en hoe zij waarde aan uw zaken brengen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 
