@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 8%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 8%
    + [Segment afstemmen op inzichten vóór delen](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
-+ [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [Dataverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
 + Gegevensbeheer {#data-governance}
@@ -120,6 +120,7 @@ ht-degree: 8%
    + [De Marketo-bestemming configureren](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Op bestanden gebaseerde cloudopslag of e-mailmarketingdoelen configureren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Een sociale bestemming configureren](/help/platform/destinations/configure-a-social-destination.md)
+   + [Activeren via LiveRamp-doelen](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target en Aangepaste personalisatie{#target}
       + [Volgend-klare personalisatie met Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [De Adobe Target-bestemming configureren](/help/platform/destinations/target/configure-the-target-destination.md)
