@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Wanneer meerdere schema&#39;s zijn ingeschakeld voor het profiel, wordt een [!UI
 
 Merk op dat er geen verenigingsschema voor de klasse ExperienceEvent is. ExperienceEvent-gegevens blijven in het profiel staan, omdat het tijdreeksen zijn, elke gebeurtenis een tijdstempel en id bevat en botsingen geen probleem zijn.
 
-Wat gebeurt er als dat standaardsamenvoegbeleid u niet bevalt? Wat als Luma beslist hun CRM-systeem de bron van de waarheid zou moeten zijn als er een conflict is? Daarvoor zullen we een fusiebeleid ontwikkelen.
+Wat gebeurt er als dat standaardsamenvoegbeleid u niet bevalt? Wat als Luma beslist dat hun loyaliteitssysteem de bron van de waarheid zou moeten zijn als er een conflict is? Daarvoor zullen we een fusiebeleid ontwikkelen.
 
 ## Een samenvoegbeleid maken in de gebruikersinterface
 
