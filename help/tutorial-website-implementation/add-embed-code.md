@@ -1,10 +1,10 @@
 ---
 title: De insluitcode toevoegen
-description: Leer hoe u de insluitcodes van de eigenschap tag ophaalt en deze implementeert in uw website. Deze les maakt deel uit van de zelfstudie Experience Cloud in websites implementeren.
+description: Leer hoe u de insluitcodes van de eigenschap tag ophaalt en deze implementeert in uw website. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,9 @@ In deze les, zult u asynchrone inbedcode van de milieu van de Ontwikkeling van u
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * Platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-configuraties zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
 
 ## Leerdoelen
 
@@ -51,7 +50,7 @@ Kopieer nu de insluitcode:
 
 1. Merk op dat de markeringen aan de asynchrone insluitcodes zullen gebrek
 
-1. Klik op het pictogram Kopiëren ![Pictogram Kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren.
+1. Klik op het pictogram Copy ![Pictogram kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren.
 
 1. Klikken **[!UICONTROL Sluiten]** om het modaal te sluiten.
 
@@ -59,9 +58,58 @@ Kopieer nu de insluitcode:
 
 ## Implementeer de ingesloten code in het dialoogvenster `<head>` van de HTML-voorbeeldpagina
 
-De insluitcode moet worden geïmplementeerd in het dialoogvenster `<head>` -element van alle HTML-pagina&#39;s die de eigenschap delen. U hebt mogelijk een of meer sjabloonbestanden die de `<head>` over de hele site heen. Hierdoor is het eenvoudig tags toe te voegen.
+De insluitcode moet worden geïmplementeerd in de `<head>` -element van alle HTML-pagina&#39;s die de eigenschap delen. U hebt mogelijk een of meer sjabloonbestanden die de `<head>` over de hele site heen, zodat het eenvoudig is om tags toe te voegen.
 
-Als u dit nog niet hebt gedaan, downloadt u [de HTML-voorbeeldpagina](https://www.enablementadobe.com/multi/web/basic-sample.html) (Klik met de rechtermuisknop op deze koppeling en klik op &quot;Koppeling opslaan als&quot;) en open deze in een code-editor. [Haakjes](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
+Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat nog niet hebt gedaan. [Haakjes](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
+
++++HTML-voorbeeldcode
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
 
 Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembord en sla de pagina op. Open de pagina nu in een webbrowser. Als u de pagina laadt met de `file://` moet u &quot;https:&quot; toevoegen aan het begin van de insluitcode-URL in de code-editor). Regels 33-36 van de voorbeeldpagina kunnen er ongeveer als volgt uitzien:
 
@@ -74,7 +122,7 @@ Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembor
 Open de ontwikkelaarsgereedschappen van uw webbrowser en ga naar het tabblad Netwerk. Op dit punt wordt een fout van 404 weergegeven voor de URL van de tagomgeving:
 ![404-fout](images/samplepage-404.png)
 
-De fout 404 wordt verwacht omdat u nog geen bibliotheek in deze milieu van Markeringen hebt gebouwd. Dat zult u in de volgende les doen. Als u een &quot;ontbroken&quot;bericht in plaats van een 404 fout ziet, bent u waarschijnlijk vergeten om toe te voegen `https://` protocol in de insluitcode. Opnieuw hoeft u alleen de `https://` protocol als u de steekproefpagina gebruikend `file://` protocol. Breng deze wijziging aan en laad de pagina opnieuw totdat de fout 404 wordt weergegeven.
+De fout 404 wordt verwacht omdat u nog geen bibliotheek in deze milieu van Markeringen hebt gebouwd. Dat zult u in de volgende les doen. Als u een &quot;ontbroken&quot;bericht in plaats van een 404 fout ziet, bent u waarschijnlijk vergeten om toe te voegen `https://` protocol in de insluitcode. Opnieuw hoeft u alleen de opdracht `https://` protocol als u de steekproefpagina gebruikend `file://` protocol. Breng deze wijziging aan en laad de pagina opnieuw totdat de fout 404 wordt weergegeven.
 
 ## Aanbevolen werkwijzen voor implementatie van tags
 
@@ -82,19 +130,19 @@ Neem even de tijd om enkele best practices bij de implementatie van Codes te bek
 
 * **Gegevenslaag**:
 
-   * Wij *krachtig* adviseer het creëren van een gegevenslaag op uw plaats die alle attributen nodig bevat om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Voor meer informatie over gegevenslagen raadpleegt u [Klantenervaring met digitale gegevenslaag 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * Wij *krachtig* adviseer het creëren van een gegevenslaag op uw plaats die alle attributen nodig bevat om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Zie voor meer informatie over gegevenslagen [Klantenervaring met digitale gegevenslaag 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
-   * Definieer de gegevenslaag vóór de code voor het insluiten van tags om te maximaliseren wat u kunt doen met Experience Cloud-oplossingen.
+   * Definieer de gegevenslaag vóór de code voor het insluiten van tags om te maximaliseren wat u kunt doen met oplossingen voor Experiencen Cloud.
 
-* **JavaScript-hulplijnbibliotheken**: Als u al een bibliotheek zoals JQuery hebt geïmplementeerd in het dialoogvenster `<head>` van uw pagina&#39;s, laad het voor markeringen om zijn syntaxis in markeringen en Doel te gebruiken
+* **JavaScript-hulpbibliotheken**: Als u al een bibliotheek zoals JQuery hebt geïmplementeerd in het dialoogvenster `<head>` van uw pagina&#39;s, laad het voor markeringen om zijn syntaxis in markeringen en Doel te gebruiken
 
-* **HTML5-doctype**: Het documenttype HTML5 wordt vereist door Doel
+* **HTML5-doctype**: Het doctype HTML5 wordt vereist door Doel
 
 * **preconnect en dns-prefetch**: Gebruik preconnect en dns-prefetch om de laadtijd van de pagina te verbeteren. Zie ook: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **het pre-verbergen van fragment voor asynchrone implementaties van het Doel**: U zult meer over dit in de les van het Doel leren, maar wanneer het Doel via asynchrone markering wordt opgesteld bed codes in, zou u een pre-verbergend fragment op uw pagina&#39;s vóór de markering inbedt codes moeten hard coderen om inhoudflikkering te beheren
+* **het pre-verbergen van fragment voor asynchrone implementaties van het Doel**: U zult meer over dit in de les van het Doel leren, maar wanneer het Doel via asynchrone markering wordt opgesteld bed codes in, zou u een pre-verbergend fragment op uw pagina&#39;s vóór de markering moeten hardcoderen inbedt codes om inhoudflikkering te beheren
 
-Hier volgt een overzicht van hoe deze beste praktijken in de voorgestelde orde eruit zien. Let op: er zijn enkele tijdelijke aanduidingen voor accountspecifieke details:
+Hier volgt een overzicht van hoe deze beste praktijken in de voorgestelde orde eruit zien. Houd er rekening mee dat er enkele plaatsaanduidingen zijn voor accountspecifieke details:
 
 ```html
 <!doctype html>
