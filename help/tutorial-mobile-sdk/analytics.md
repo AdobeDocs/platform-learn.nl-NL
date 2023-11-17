@@ -3,9 +3,9 @@ title: Analysetoewijzing
 description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen in een mobiele app.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,12 @@ ht-degree: 0%
 
 Leer hoe u mobiele gegevens kunt toewijzen aan Adobe Analytics.
 
-De [event](events.md) de gegevens die u verzamelde en naar het Netwerk van de Rand van het Platform in vroegere lessen verzendt worden door:sturen aan de diensten die in uw gegevensstroom, met inbegrip van Adobe Analytics worden gevormd. U moet enkel de gegevens aan de correcte variabelen in uw rapportreeks in kaart brengen.
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
+
+
+De [event](events.md) gegevens die u in eerdere lessen hebt verzameld en naar Platform Edge Network hebt verzonden, worden doorgestuurd naar de services die in uw gegevensstroom zijn geconfigureerd, waaronder Adobe Analytics. U moet enkel de gegevens aan de correcte variabelen in uw rapportreeks in kaart brengen.
 
 ## Vereisten
 
@@ -186,7 +191,7 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 >[!NOTE]
 >
->Aangepaste velden worden onder de Experience Cloud Org-id geplaatst.
+>Aangepaste velden worden onder de Org-id van het Experience Cloud geplaatst.
 >
 >&quot;_techmarketingdemos&quot; wordt vervangen door de unieke waarde van uw organisatie.
 
@@ -207,7 +212,7 @@ Extra informatie over verwerkingsregels en contextgegevens is te vinden [hier](h
 
 >[!TIP]
 >
->In tegenstelling tot de vorige implementaties van mobiele apps is er geen onderscheid tussen een pagina/scherm-weergave en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen dit toe te wijzen aan **[!UICONTROL Paginanaam]** in een verwerkingsregel.
+>In tegenstelling tot de vorige implementaties van mobiele apps is er geen onderscheid tussen een pagina/scherm-weergave en andere gebeurtenissen. In plaats daarvan kunt u de **[!UICONTROL Paginaweergave]** metrisch door te plaatsen **[!UICONTROL Paginanaam]** dimensie in een verwerkingsregel. Aangezien u de aangepaste `screenName` in de zelfstudie wordt het ten zeerste aanbevolen om deze **[!UICONTROL Paginanaam]** in een verwerkingsregel.
 
 
 Volgende: **[Experience Platform](platform.md)**

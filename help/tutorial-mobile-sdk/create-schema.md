@@ -3,9 +3,9 @@ title: Een XDM-schema maken
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Een XDM-schema maken
 
 Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 Standaardisering en interoperabiliteit zijn de belangrijkste concepten achter Adobe Experience Platform. Het Model van Gegevens van de ervaring (XDM), die door Adobe wordt gedreven, is een inspanning om de gegevens van de klantenervaring te standaardiseren en schema&#39;s voor het beheer van de klantenervaring te bepalen.
 
@@ -22,7 +26,7 @@ XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht
 
 Het Experience Platform gebruikt schema&#39;s om de structuur van gegevens op een verenigbare en herbruikbare manier te beschrijven. Door gegevens consistent in verschillende systemen te definiëren, wordt het eenvoudiger om betekenis te behouden en zo waarde te verkrijgen van gegevens.
 
-Voordat gegevens in Platform kunnen worden opgenomen, moet een schema zijn samengesteld om de gegevensstructuur te beschrijven en om beperkingen te bieden aan het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied.
+Voordat gegevens in Platform kunnen worden opgenomen, moet een schema worden samengesteld om de gegevensstructuur te beschrijven en beperkingen te bieden aan het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied.
 
 Voor meer informatie over het model van de schemacompositie, met inbegrip van ontwerpprincipes en beste praktijken, zie [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) of de cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
 
@@ -38,13 +42,13 @@ Om de les te voltooien, moet u toestemming hebben om een schema van het Experien
 
 In deze les zult u:
 
-* Creeer een schema in de interface van de Inzameling van Gegevens
+* Een schema maken in de interface voor gegevensverzameling
 * Een standaardveldgroep toevoegen aan het schema
 * Een aangepaste veldgroep maken en aan het schema toevoegen
 
 ## Naar schema&#39;s navigeren
 
-1. Meld u aan bij de Adobe Experience Cloud.
+1. Log in bij de Adobe Experience Cloud.
 
 1. Open de app-switch en selecteer **[!UICONTROL Gegevensverzameling]**
 
@@ -54,7 +58,7 @@ In deze les zult u:
 
    >[!NOTE]
    >
-   > Klanten van toepassingen op basis van Platforms, zoals Real-Time CDP, dienen een ontwikkelingssandbox te gebruiken voor deze zelfstudie. Andere klanten gebruiken de standaardproductiesandbox.
+   > Klanten van platformgebaseerde toepassingen zoals Real-Time CDP dienen een ontwikkelingssandbox te gebruiken voor deze zelfstudie. Andere klanten gebruiken de standaardproductiesandbox.
 
 
 1. Selecteren **[!UICONTROL Schemas]** krachtens **[!UICONTROL Gegevensbeheer]**.
@@ -73,7 +77,7 @@ In deze zelfstudie gebruikt u de vervolgkeuzelijst Consumer Experience Event en 
 
 >[!NOTE]
 >
->Adobe blijft meer standaardveldgroepen toevoegen en deze moeten waar mogelijk worden gebruikt, aangezien deze velden impliciet worden begrepen door de diensten van het Experience Platform en een grotere consistentie bieden bij gebruik in Platforms. Het gebruik van standaardveldgroepen biedt tastbare voordelen, zoals automatische toewijzing in Analytics en AI-functies in Platform.
+>De Adobe blijft meer standaardveldgroepen toevoegen en zij zouden waar mogelijk moeten worden gebruikt aangezien deze gebieden impliciet door de diensten van het Experience Platform worden begrepen en grotere consistentie verstrekken wanneer gebruikt over de componenten van het Platform. Het gebruik van standaardveldgroepen biedt tastbare voordelen, zoals automatische toewijzing in Analytics en AI-functies in Platform.
 
 ## Luma-toepassingsschemaarchitectuur
 
@@ -85,8 +89,8 @@ In een echt scenario, zou het proces van het schemaontwerp als dit kunnen kijken
 
 Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
-* **Consumentenervaringsgebeurtenis**: Vooraf gebouwde veldgroep met veel voorkomende velden.
-* **Toepassingsgegevens**: De gebiedsgroep van de douane die wordt ontworpen om concepten TrackState/TrackAction te simuleren Analytics.
+* **Consumentenervaringsgebeurtenis**: Geïntegreerde veldgroep met veel voorkomende velden.
+* **Toepassingsgegevens**: De veldgroep van de douane wordt ontworpen om concepten te simuleren TrackState/TrackAction Analytics die.
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
@@ -125,7 +129,7 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
 * Schermweergave
 * Toepassingsinteractie
 
-1. Selecteer **[!UICONTROL Gegevenstypen]** tab, dan selecteren **[!UICONTROL Gegevenstype maken]**.
+1. Selecteer de **[!UICONTROL Gegevenstypen]** tab, dan selecteren **[!UICONTROL Gegevenstype maken]**.
 
    ![Het menu Gegevenstype selecteren](assets/mobile-schema-datatype-create.png)
 
@@ -138,17 +142,17 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
    > Altijd leesbaar, beschrijvend gebruiken [!UICONTROL weergavenamen] voor uw douanegebieden, aangezien deze praktijk hen toegankelijker voor marketers maakt wanneer de gebieden in de stroomafwaartse diensten zoals de segmentbouwer overstijgen.
 
 
-1. Als u een veld wilt toevoegen, selecteert u de knop (+).
+1. Selecteer de knop (+) om een veld toe te voegen.
 
-   Dit veld is een containerobject voor toepassingsinteractie. Geef het een kamelendoosje **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL weergavenaam]** `App Interaction`, en **[!UICONTROL type]** `Object`.
+   Dit veld is een containerobject voor toepassingsinteractie. Geef het een kamelentcase **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL weergavenaam]** `App Interaction`, en **[!UICONTROL type]** `Object`.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
    ![Nieuwe gebeurtenis voor app-actie toevoegen](assets/mobile-schema-datatype-app-action.png)
 
-1. Als u wilt meten hoe vaak een actie is uitgevoerd, voegt u een veld toe door op de knop (+) naast de knop `appInteraction` -object dat u hebt gemaakt.
+1. Als u wilt meten hoe vaak een actie is uitgevoerd, voegt u een veld toe door op de knop (+) naast de knop `appInteraction` door u gemaakt object.
 
-1. Geef het een kamelendoosje **[!UICONTROL Veldnaam]** `appAction`, **[!UICONTROL weergavenaam]** van `App Action` en **[!UICONTROL type]** `Measure`.
+1. Geef het een kamelentcase **[!UICONTROL Veldnaam]** `appAction`, **[!UICONTROL weergavenaam]** van `App Action` en **[!UICONTROL type]** `Measure`.
 
    Deze stap zou het equivalent zijn van een succesgebeurtenis in Adobe Analytics.
 
@@ -190,7 +194,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 1. Selecteer de (+) naast de naam van het schema.
 
-1. In de juiste spoorstaaf, verstrek een **[!UICONTROL Veldnaam]** van `appInformation`, een weergavenaam van `App Information`.
+1. Geef in de rechterspoorlijn een **[!UICONTROL Veldnaam]** van `appInformation`, een weergavenaam van `App Information`.
 
 1. Selecteren `App Information` van de **[!UICONTROL Type]** vervolgkeuzelijst, het gegevenstype dat u in de vorige oefening hebt gemaakt.
 
@@ -200,7 +204,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 >[!NOTE]
 >
->Aangepaste veldgroepen worden altijd onder de Experience Cloud Org-id geplaatst.
+>Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst.
 >
 >`_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
 

@@ -3,9 +3,9 @@ title: Betrouwbaarheid instellen
 description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Betrouwbaarheid
 
 Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 De borging, die formeel Project Griffon wordt genoemd, wordt ontworpen om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen in uw mobiele app dient.
 
@@ -37,8 +41,8 @@ In deze les zult u:
 Bevestig dat uw organisatie toegang tot Verzekering heeft door de volgende stappen te voltooien:
 
 1. Bezoek [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
-1. Meld u aan met uw Adobe ID-referenties voor de Experience Cloud.
-1. Als u naar de **[!UICONTROL Sessies]** , hebt u toegang. Selecteer **[!UICONTROL Registreren]**.
+1. Meld u aan met uw Adobe ID-referenties voor het Experience Cloud.
+1. Als u naar de **[!UICONTROL Sessies]** , hebt u toegang. Als u naar de toegangspagina voor de bèta wordt gebracht, selecteert u **[!UICONTROL Registreren]**.
 
 ## Implementeren
 
@@ -51,7 +55,7 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 }
 ```
 
-Het voorbeeld Luma dat voor deze zelfstudie wordt geleverd, gebruikt iOS 12.0. Als u met iOS 13 en hoger de volgende stappen uitvoert in uw eigen op scènes gebaseerde toepassing, gebruikt u de opdracht `UISceneDelegate's scene(_:openURLContexts:)` als volgt:
+Het voorbeeld Luma dat voor deze zelfstudie wordt geleverd, gebruikt iOS 12.0. Als u met iOS 13 en hoger de volgende stappen uitvoert in uw eigen op scènes gebaseerde toepassing, gebruikt u de opdracht `UISceneDelegate's scene(_:openURLContexts:)` methode als volgt:
 
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
@@ -92,7 +96,7 @@ De verzekering werkt door een URL, of via browser of code QR, te openen die URL 
 1. Als de verbinding tot stand is gebracht, ziet u gebeurtenissen in de gebruikersinterface van het venster Betrouwbaarheid en een zwevend betrouwbaarheidspictogram in de app.
    * Verzekeringspictogram zwevend.
      ![verzekering, modaal](assets/mobile-assurance-modal.png)
-   * Experience Cloud-gebeurtenissen die worden weergegeven in de webinterface.
+   * Gebeurtenissen van het Experience Cloud die door in Web UI komen.
      ![betrouwbaarheidsgebeurtenissen](assets/mobile-assurance-events.png)
 
 Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.

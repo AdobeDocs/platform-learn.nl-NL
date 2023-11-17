@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer hoe u gebeurtenisgegevens kunt verzamelen in een mobiele app.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
-De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van de Ervaring naar het Netwerk van de Rand van het Platform te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra het gegeven door het Netwerk van de Rand van het Platform wordt ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Meer informatie over de [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
+
+De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van de Ervaring naar het Netwerk van de Rand van het Platform te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra de gegevens door het Netwerk van de Rand van het Platform worden ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Meer informatie over de [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
 
 ## Vereisten
 
@@ -21,7 +25,7 @@ De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van d
 * Geregistreerde extensies in AppDelegate.
 * MobileCore is geconfigureerd om uw ontwikkelings-appId te gebruiken.
 * Geïmporteerde SDK&#39;s.
-* App met bovenstaande wijzigingen gemaakt en uitgevoerd.
+* App met bovenstaande wijzigingen is gemaakt en uitgevoerd.
 
 ## Leerdoelstellingen
 
@@ -41,7 +45,7 @@ Het proces gaat als volgt...
 
 1. Identificeer de mobiele toepassingsinteractie die u probeert te volgen.
 
-1. Controleer uw schema en identificeer de aangewezen gebeurtenis.
+1. Herzie uw schema en identificeer de aangewezen gebeurtenis.
 
 1. Controleer uw schema en identificeer om het even welke extra gebieden die zouden moeten worden gebruikt om de gebeurtenis te beschrijven.
 
@@ -73,7 +77,7 @@ Controleer het volgende voorbeeld zonder te proberen om het in steekproefapp uit
    ]
    ```
 
-   * eventType: Beschrijft de gebeurtenis die voorkwam, gebruik a [bekende waarde](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) indien mogelijk.
+   * eventType: Beschrijft de gebeurtenis die voorkwam, gebruik een [bekende waarde](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) indien mogelijk.
    * commerce.productViews.value: Geef de numerieke waarde van de gebeurtenis op. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, is de waarde altijd 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
 1. In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis. In dit voorbeeld neemt u `productListItems` Dit is een standaardset velden die worden gebruikt voor aan handel gerelateerde gebeurtenissen:
@@ -107,7 +111,7 @@ Controleer het volgende voorbeeld zonder te proberen om het in steekproefapp uit
    let productViewEvent = ExperienceEvent(xdm: xdmData)
    ```
 
-1. Verzend de gebeurtenis en de gegevens naar het Netwerk van de Rand van het Platform:
+1. Verzend de gebeurtenis en de gegevens naar Platform Edge Network:
 
    ```swift
    Edge.sendEvent(experienceEvent: productViewEvent)
@@ -120,7 +124,7 @@ Controleer het volgende voorbeeld zonder te proberen om het in steekproefapp uit
 1. In uw schema, identificeer de gebeurtenis u probeert te verzamelen. In dit voorbeeld volgt u een &quot;App Interaction&quot; die bestaat uit een App Action-gebeurtenis en -naam.
    ![interactieschema app](assets/mobile-datacollection-appInteraction-schema.png)
 
-1. Beginnen met het samenstellen van het object.
+1. Constructie van het object beginnen.
 
    >[!NOTE]
    >
@@ -218,7 +222,7 @@ In dit voorbeeld gaat u ervan uit dat de gebruiker de volgende aankoop heeft uit
 * Product nr. 2 - Waterfles.
    * $ 10,00 x 3
    * SKU: 9841
-* Totaal bestelling: $ 79,99
+* Totaal bestelling: $79,99
 * Unieke bestelling-id: 298234720
 * Betalingstype: Visa Creditcard
 * Unieke betalingstransactie-ID: 847361
@@ -235,7 +239,7 @@ Hier zijn de verwante schemagebieden aan gebruik:
 
 >[!TIP]
 >
->Aangepaste veldgroepen worden altijd onder de Experience Cloud Org-id geplaatst.
+>Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst.
 >
 >&quot;_techmarketingdemos&quot; wordt vervangen door de unieke waarde van uw organisatie.
 
@@ -321,11 +325,11 @@ U moet over alle gereedschappen beschikken om gegevensverzameling toe te voegen 
    * Schemavelden: appInteraction.name, appAction
 * Handelingen in de handel:
    * Productpagina: productViews
-   * Toevoegen aan winkelwagentje: productListAdds
+   * Toevoegen aan winkelwagen: productListAdds
    * Verwijderen uit winkelwagentje: productListRemovals
-   * Afhandeling beginnen: kassa
+   * Afhandeling beginnen: uitchecken
    * Winkelwagentje weergeven: productListViews
-   * Toevoegen aan Wishlist: saveForLaters
+   * Toevoegen aan lijst met bestandsnamen: saveForLaters
    * Aankoop: aankopen, bestellen
 
 >[!TIP]
@@ -343,7 +347,7 @@ U moet over alle gereedschappen beschikken om gegevensverzameling toe te voegen 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform
 
-Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform verzonden, zullen zij naar de toepassingen en de diensten worden verzonden die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md) en [Adobe Experience Platform](platform.md).
+Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, zullen zij naar de toepassingen en de diensten worden verzonden die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md) en [Adobe Experience Platform](platform.md).
 
 Volgende: **[WebViews](web-views.md)**
 

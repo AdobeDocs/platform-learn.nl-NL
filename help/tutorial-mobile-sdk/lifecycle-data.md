@@ -2,9 +2,9 @@
 title: Levenscyclusgegevens
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Levenscyclusgegevens
 
 Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u levenscyclusgegevens van uw mobiele app verzamelen. De uitbreiding van het Netwerk van Adobe Experience Platform Edge verzendt deze levenscyclusgegevens naar het Netwerk van de Rand van het Platform waar het dan aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen. Meer informatie over de [Levenscyclusextensie](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in de productdocumentatie.
 
@@ -21,11 +25,11 @@ Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u l
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Geïmporteerd de SDK van de Betrouwbaarheid.
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
-* Geregistreerd de uitbreiding van de Verzekering zoals die in [vorige les](install-sdks.md).
+* Geregistreerd de uitbreiding van de Verzekering zoals die in wordt beschreven [vorige les](install-sdks.md).
 
 ## Leerdoelstellingen
 
@@ -33,7 +37,7 @@ In deze les zult u:
 
 * Voeg levenscyclusveldgroep toe aan het schema.
 * Zorg voor nauwkeurige levenscyclusmetrische gegevens door de toepassing correct te starten/pauzeren wanneer deze van de voorgrond naar de achtergrond gaat.
-* Gegevens vanuit de toepassing verzenden naar Edge Network van Platform.
+* Gegevens verzenden van de app naar Platform Edge Network.
 * Valideren bij Betrouwbaarheid.
 
 ## Levenscyclusveldgroep toevoegen aan schema
@@ -80,11 +84,11 @@ Nu kunt u bijwerken `AppDelegate.swift` om de levenscyclusgebeurtenissen te regi
    ![levenscyclus valideren](assets/mobile-lifecycle-lifecycle-assurance.png)
 
 
-## Gegevens doorsturen naar Edge Network van Platform
+## Gegevens doorsturen naar Platform Edge Network
 
-De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Mobile SDK. Om deze gebeurtenissen naar het Netwerk van de Rand van het Platform te verzenden, volg de vermelde stappen [hier](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Zodra de gebeurtenissen naar het Netwerk van de Rand van het Platform worden verzonden, zullen zij aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen.
+De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Mobile SDK. Volg de onderstaande stappen om deze gebeurtenissen naar Platform Edge Network te verzenden [hier](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Zodra de gebeurtenissen naar het Netwerk van de Rand van het Platform worden verzonden, zullen zij aan andere toepassingen en de diensten volgens uw configuratie van de gegevensstroom door:sturen.
 
-Zodra u de regel hebt toegevoegd om de levenstijlgebeurtenissen naar het Netwerk van de Rand van het Platform te verzenden, zou u moeten zien `Application Close (Background)` en `Application Launch (Foreground)` gebeurtenissen met XDM-gegevens in Verzekering.
+Nadat u de regel hebt toegevoegd om de levensstijlgebeurtenissen naar het Edge-netwerk van het platform te verzenden, ziet u `Application Close (Background)` en `Application Launch (Foreground)` gebeurtenissen met XDM-gegevens in Verzekering.
 
 ![levenscyclus valideren die naar Platform Edge is verzonden](assets/mobile-lifecycle-edge-assurance.png)
 

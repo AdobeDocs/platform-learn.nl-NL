@@ -1,18 +1,22 @@
 ---
 title: Een eigenschap voor een tag configureren
-description: Leer hoe u een eigenschap tag kunt configureren in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
 
 # Een eigenschap voor een tag configureren
 
-Leer hoe u een eigenschap tag kunt configureren in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig alle analytische, marketing- en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Meer informatie over [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in de productdocumentatie.
 
@@ -22,7 +26,7 @@ Om de les te voltooien, moet u toestemming hebben om een markeringsbezit tot sta
 
 >[!NOTE]
 >
-> platform launch (clientzijde) is nu [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform launch (clientzijde) is nu [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
 
 ## Leerdoelstellingen
 
@@ -98,7 +102,7 @@ In deze les zult u:
 
 1. Selecteren **[!UICONTROL Omgevingen]**.
 
-1. Selecteer **[!UICONTROL Ontwikkeling]** installatiepictogram.
+1. Selecteer de **[!UICONTROL Ontwikkeling]** installatiepictogram
 
    ![home-scherm van omgevingen](assets/mobile-tags-environments.png)
 
@@ -112,12 +116,12 @@ In deze les zult u:
 
    Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   * **[!UICONTROL Omgevingsbestand-id]**: Deze unieke id verwijst naar uw ontwikkelomgeving. Noteer deze waarde. Productie/Staging/Ontwikkeling hebben allemaal verschillende id-waarden.
-   * **[!UICONTROL Podfile]**: CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [documentatie](https://cocoapods.org/).
+   * **[!UICONTROL Omgevingsbestand-id]**: Deze unieke id verwijst naar uw ontwikkelomgeving en noteert deze waarde. Productie/Staging/Ontwikkeling hebben allemaal verschillende id-waarden.
+   * **[!UICONTROL Podfile]**: CocoaPods wordt gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [documentatie](https://cocoapods.org/).
    * **[!UICONTROL Initialisatiecode]**: Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten.
 
 >[!NOTE]
->De installatie-instructies moeten worden beschouwd als een beginpunt en geen definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/documentation/).
+>De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/documentation/).
 
 ## Architectuur van mobiele tags
 

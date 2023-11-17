@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK's installeren
 description: Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,14 @@ ht-degree: 0%
 
 Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implementeert.
 
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
+
 ## Vereisten
 
-* Tagbibliotheek is gemaakt met de extensies die zijn beschreven in het dialoogvenster [vorige les](configure-tags.md).
-* Bestand-id voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
+* Tagbibliotheek is gemaakt met de extensies die in het dialoogvenster [vorige les](configure-tags.md).
+* Bestandsidentiteitskaart voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
 * Gedownload, leeg [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
 * Ervaring met [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 * Basis [opdrachtregel](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} kennis.
@@ -26,7 +30,7 @@ Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implemente
 In deze les zult u:
 
 * Werk het CocoaPod-bestand bij.
-* Importeer de vereiste SDK&#39;s.
+* De vereiste SDK&#39;s importeren.
 * Registreer de extensies.
 
 >[!NOTE]
@@ -89,7 +93,7 @@ Om CocoaPods te bouwen, open `Luma.xcworkspace`en selecteert u **Product**, gevo
 
 >[!NOTE]
 >
-> U moet mogelijk instellen **Alleen actieve architectuur maken** tot **Nee**. Om dit te doen, selecteer het project van Pods van de projectnavigator, uitgezocht **Instellingen samenstellen** en stelt de **Actieve architectuur maken** tot **Nee**.
+> U moet mogelijk instellen **Alleen actieve architectuur maken** tot **Nee**. Selecteer hiertoe het Pods-project in de projectnavigator en selecteer **Build-instellingen** en stelt de **Active Architecture maken** tot **Nee**.
 
 U kunt het project nu bouwen en in werking stellen.
 
@@ -99,13 +103,13 @@ U kunt het project nu bouwen en in werking stellen.
 >
 >Het Luma-project is gemaakt met Xcode v12.5 op een M1-chipset en wordt uitgevoerd op de iOS-simulator. Als u een verschillende opstelling gebruikt, kunt u uw bouwstijlmontages moeten veranderen om op uw architectuur te wijzen.
 >
->Als uw build niet is gelukt, probeert u de **Actieve architectuur maken** > **Foutopsporing** instellen op **Ja**.
+>Als uw build niet is gelukt, probeert u de **Active Architecture maken** > **Foutopsporing** instellen op **Ja**.
 >
 >Simulatorconfiguratie &quot;iPod touch (7e generatie)&quot; werd gebruikt tijdens het ontwerpen van deze zelfstudie.
 
 ## Extensies importeren
 
-In elk van de `.swift` voegt u de volgende importbewerkingen toe. Starten door aan toe te voegen `AppDelegate.swift`.
+In elk van de `.swift` bestanden, voegt u de volgende importbewerkingen toe. Starten met toevoegen aan `AppDelegate.swift`.
 
 ```swift
 import AEPUserProfile
@@ -146,6 +150,7 @@ De bovenstaande code doet het volgende:
 
 >[!IMPORTANT]
 >In een productie-app moet u van appId wisselen op basis van de huidige omgeving (dev/stag/prod).
+>
 
 Volgende: **[Betrouwbaarheid instellen](assurance.md)**
 

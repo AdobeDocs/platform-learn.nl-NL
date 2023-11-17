@@ -3,9 +3,9 @@ title: WebViews verwerken
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # WebViews verwerken
 
 Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 ## Vereisten
 
@@ -31,7 +35,7 @@ Als u gegevens verzendt van het native gedeelte van de app en een WebView, gener
 
 Om voor die ongewenste situatie op te lossen, is het belangrijk om ECID van de gebruiker van het inheemse gedeelte tot WebView over te gaan.
 
-De Experience Cloud ID Service JavaScript-extensie in de WebView extraheert de ECID uit de URL in plaats van een aanvraag naar Adobe voor een nieuwe id te verzenden. De id-service gebruikt deze ECID om de bezoeker bij te houden.
+De uitbreiding van de Dienst JavaScript van identiteitskaart van het Experience Cloud in WebView haalt ECID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De id-service gebruikt deze ECID om de bezoeker bij te houden.
 
 ## Implementatie
 
@@ -44,7 +48,7 @@ let myRequest = URLRequest(url: url!)
 self.webView.load(myRequest)
 ```
 
-Dit is een eenvoudige manier om een WebView te laden. In dit geval is het een lokaal bestand, maar zijn dezelfde concepten van toepassing op externe pagina&#39;s.
+Dit is een eenvoudige manier om een WebView te laden. In dit geval is het een lokaal bestand, maar dezelfde concepten gelden voor externe pagina&#39;s.
 
 Verwijs de webweergavecode als volgt:
 
@@ -78,9 +82,9 @@ Meer informatie over de `Identity.getUrlVariables` API in de [Identiteit voor Ed
 
 Nadat u de [installatie-instructies](assurance.md) en het aansluiten van uw simulator of apparaat aan Verzekering, laadt WebView en zoekt naar `Edge Identity Response URL Variables` gebeurtenis van de `com.adobe.griffon.mobile` leverancier.
 
-Als u de WebView wilt laden, gaat u naar het beginscherm van de Luma-app en selecteert u het pictogram &quot;Account&quot;, gevolgd door &quot;Gebruiksvoorwaarden&quot; in de voettekst.
+Als u de WebView wilt laden, gaat u naar het beginscherm van de Luma-app en selecteert u het pictogram &quot;Account&quot;, gevolgd door de gebruiksvoorwaarden in de voettekst.
 
-Na het laden van de WebView, selecteer de gebeurtenis en herzie `urlvariables` in het `ACPExtensionEventData` -object, waarbij de volgende parameters worden bevestigd, aanwezig zijn in de URL: `adobe_mc`, `mcmid`, en `mcorgid`.
+Na het laden van de WebView, selecteer de gebeurtenis en herzie `urlvariables` in het veld `ACPExtensionEventData` -object, waarbij de volgende parameters worden bevestigd, aanwezig zijn in de URL: `adobe_mc`, `mcmid`, en `mcorgid`.
 
 ![webweergave valideren](assets/mobile-webview-validation.png)
 
@@ -96,7 +100,7 @@ adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB
 
 >[!NOTE]
 >
->Bezoekersstitching via deze URL-parameters wordt momenteel ondersteund in de Web SDK van het Platform (versies 2.11.0 of hoger) en `VisitorAPI.js`.
+>Bezoekersstitching via deze URL-parameters wordt momenteel ondersteund in de Platform Web SDK (versies 2.11.0 of hoger) en `VisitorAPI.js`.
 
 
 Volgende: **[Identiteit](identity.md)**

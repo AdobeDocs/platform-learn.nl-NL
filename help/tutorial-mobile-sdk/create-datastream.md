@@ -3,9 +3,9 @@ title: Een gegevensstroom configureren
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,15 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom in Experience Platform maakt.
 
-Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van het Platform.  De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Netwerk van de Rand van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Zie voor meer informatie de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) of dit [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
+
+Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van het Platform.  De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Netwerk van de Rand van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Zie de klasse [documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) of dit [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
 ## Vereisten
 
-Om een gegevensstroom tot stand te brengen, moet uw organisatie voor deze eigenschap in de interface van de Inzameling van Gegevens (vroeger) worden provisioned [!UICONTROL Starten]) en u moet over gebruikersmachtigingen beschikken voor [!UICONTROL Experience Platform] > [!UICONTROL Gegevensverzameling] > **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]**.
+Om een gegevensstroom tot stand te brengen, moet uw organisatie provisioned voor deze eigenschap in de interface van de Inzameling van Gegevens (vroeger [!UICONTROL Starten]) en u moet over gebruikersmachtigingen beschikken voor [!UICONTROL Experience Platform] > [!UICONTROL Gegevensverzameling] > **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]**.
 
 ## Leerdoelstellingen
 
@@ -30,9 +34,9 @@ In deze les zult u:
 
 ## Een gegevensstroom maken
 
-Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevensverzameling] interface gebruiken [!UICONTROL DataStream] configuratieprogramma. Een gegevensstroom maken:
+Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevensverzameling] interface die de [!UICONTROL DataStream] configuratieprogramma. Een gegevensstroom maken:
 
-1. Zorg ervoor dat u zich in de juiste sandbox met Platforms bevindt.
+1. Zorg ervoor dat u zich in de juiste platformsandbox bevindt.
 1. Selecteren **[!UICONTROL Nieuwe DataStream]**.
 
    ![datastreams home](assets/mobile-datastream-new.png)
@@ -46,9 +50,9 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
 ## Services toevoegen
 
-Vervolgens kunt u uw Experience Cloud-services verbinden met uw gegevensstroom. Wanneer Platform Mobile SDK gegevens naar Edge Network verzendt, verzendt de gegevensstroom de gegevens naar deze services:
+Vervolgens kunt u de services van uw Experience Cloud verbinden met uw gegevensstroom. Wanneer Platform Mobile SDK gegevens naar Edge Network verzendt, verzendt de datastream de gegevens naar deze services:
 
-1. Toevoegen **[!UICONTROL Adobe Analytics]** en een rapportsuite.
+1. Toevoegen **[!UICONTROL Adobe Analytics]** en een rapportenpakket.
 
 1. Inschakelen **[!UICONTROL Adobe Audience Manager]** (optioneel).
 
@@ -63,7 +67,7 @@ Vervolgens kunt u uw Experience Cloud-services verbinden met uw gegevensstroom. 
 >
 >Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Meer informatie over gegevensstroominstellingen vindt u in de documentatie [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Wanneer u Platform Mobile SDK implementeert op uw eigen website, moet u drie gegevensstreams maken om deze toe te wijzen aan uw drie labelomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op Platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken van het Platform tot stand te brengen.
+Wanneer u Platform Mobile SDK op uw eigen website implementeert, moet u drie gegevensstreams maken om deze toe te wijzen aan uw drie labelomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken van het Platform tot stand te brengen.
 
 Volgende: **[Tags configureren](configure-tags.md)**
 

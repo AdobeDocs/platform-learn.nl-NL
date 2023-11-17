@@ -4,9 +4,9 @@ description: Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,13 @@ ht-degree: 0%
 
 Leer hoe u gegevens naar Adobe Experience Platform verzendt.
 
-Deze optionele les is relevant voor alle klanten van Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer en Customer Journey Analytics. Experience Platform, de basis van producten van de Experience Cloud, is een open systeem dat al uw gegevens - Adobe en niet-Adobe - in robuuste klantenprofielen omzet die in echt - tijd bijwerken en AI-gedreven inzichten gebruiken om u te helpen om de juiste ervaringen over elk kanaal te leveren.
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
-De [event](events.md), [levenscyclus](lifecycle-data.md), en [identiteit](identity.md) de gegevens die u verzamelde en naar het Netwerk van de Rand van het Platform in vroegere lessen verzendt worden door:sturen aan de diensten die in uw gegevensstroom, met inbegrip van Adobe Experience Platform worden gevormd.
+Deze optionele les is relevant voor alle klanten van Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer en Customer Journey Analytics. Experience Platform, de basis van producten van het Experience Cloud, is een open systeem dat al uw gegevens — Adobe en niet-Adobe — in robuuste klantenprofielen omzet die in real time bijwerken en AI-gedreven inzichten gebruiken om u te helpen de juiste ervaringen over elk kanaal te leveren.
+
+De [event](events.md), [levenscyclus](lifecycle-data.md), en [identiteit](identity.md) gegevens die u in eerdere lessen hebt verzameld en naar Platform Edge Network hebt verzonden, worden doorgestuurd naar de services die in uw gegevensstroom zijn geconfigureerd, waaronder Adobe Experience Platform.
 
 
 ## Vereisten
@@ -57,12 +61,12 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 1. Selecteren **[!UICONTROL Volgende]**.
    ![gegevensset configureren](assets/mobile-dataset-configure.png)
 
-1. Een **[!UICONTROL Naam]**, **[!UICONTROL Beschrijving]** en selecteert u **[!UICONTROL Voltooien]**.
+1. Geef een **[!UICONTROL Naam]**, **[!UICONTROL Beschrijving]** en selecteert u **[!UICONTROL Voltooien]**.
    ![gegevensset voltooien](assets/mobile-dataset-finish.png)
 
 ## De gegevensstroom bijwerken
 
-Zodra u uw dataset hebt gecreeerd, ben zeker om [uw gegevensstroom bijwerken](create-datastream.md) om Adobe Experience Platform toe te voegen. Deze update zorgt voor gegevensstromen naar Platform.
+Zodra u uw dataset hebt gecreeerd, ben zeker om [uw gegevensstroom bijwerken](create-datastream.md) Adobe Experience Platform toevoegen. Deze update zorgt voor gegevensstromen naar Platform.
 
 ## Gegevens in de gegevensset valideren
 
@@ -72,10 +76,10 @@ Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt. U kunt lev
 
 Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien aankomend in partijen aan de dataset
 
-![gegevensreeksen voor gegevensaanvoer Platform valideren](assets/mobile-platform-dataset-batches.png)
+![gegevensreeksen voor gegevenstransportplatform valideren](assets/mobile-platform-dataset-batches.png)
 
 U moet ook voorbeeldrecords en velden kunnen zien met de opdracht **[!UICONTROL Gegevensset voorvertoning]** functie:
-![levenscyclus valideren die naar gegevensset Platform is verzonden](assets/mobile-lifecycle-platform-dataset.png)
+![levenscyclus valideren die naar de gegevensset Platform is verzonden](assets/mobile-lifecycle-platform-dataset.png)
 
 Platform is een robuuster hulpmiddel voor het valideren van gegevens [queryservice](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
 
@@ -107,7 +111,7 @@ Kies Verzekering om een van de identiteiten te zoeken die in de identityMap zijn
 
 >[!TIP]
 >
->   De waarde van de `lumaCrmId` is `112ca06ed53d3db37e4cea49cc45b71e`
+>   De waarde van `lumaCrmId` is `112ca06ed53d3db37e4cea49cc45b71e`
 
 
 ![identiteitswaarde vastleggen](assets/mobile-platform-identity.png)
@@ -124,11 +128,11 @@ Op de **[!UICONTROL Gebeurtenissen]** kunt u de gebeurtenissen zien die bij uw m
 ![profielgebeurtenissen](assets/mobile-platform-profile-events.png)
 
 
-Klik in het scherm met profieldetails op de koppeling om de identiteitsgrafiek weer te geven of navigeer naar **[!UICONTROL Identiteiten]** > **[!UICONTROL Identiteitsgrafiek]** en zoekt u de identiteitswaarde op. Deze visualisatie toont u alle identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier ziet u een voorbeeld van een identiteitsgrafiek die is samengesteld uit gegevens die zijn verzameld tijdens het voltooien van deze zelfstudie voor Mobile SDK (gegevensbron 2) en de [Zelfstudie over Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Gegevensbron 1):
+Klik in het scherm met profieldetails op de koppeling om de identiteitsgrafiek weer te geven of navigeer naar **[!UICONTROL Identiteiten]** > **[!UICONTROL Naamgrafiek]** en zoekt u de identiteitswaarde op. Deze visualisatie toont u alle identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier ziet u een voorbeeld van een identiteitsgrafiek die is samengesteld uit gegevens die zijn verzameld tijdens het voltooien van deze zelfstudie voor Mobile SDK (gegevensbron 2) en de [Zelfstudie over Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Gegevensbron 1):
 
 ![identiteitswaarde vastleggen](assets/mobile-platform-profile-identitygraph.png)
 
-Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience Platform zijn vastgelegd, waaronder het analyseren ervan in Customer Journey Analytics en bouwsegmenten in Real-time Customer Data Platform. Je bent klaar om te beginnen!
+Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience Platform zijn vastgelegd, waaronder het analyseren ervan in de Customer Journey Analytics en de bouwsegmenten in Real-time Customer Data Platform. Je bent klaar om te beginnen!
 
 Volgende: **[Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)**
 

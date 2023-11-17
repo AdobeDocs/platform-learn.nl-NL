@@ -3,7 +3,7 @@ title: Gebeurtenisgegevens bijhouden
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -367,7 +367,7 @@ U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app 
 
 >[!TIP]
 >
->Controleer de [voltooide app](https://git.corp.adobe.com/rmaur/Luma) voor meer voorbeelden .
+>Controleer de [voltooide app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden .
 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform

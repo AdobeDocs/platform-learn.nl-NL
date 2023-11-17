@@ -3,9 +3,9 @@ title: Identiteit
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # Identiteit
 
 Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien door identiteiten tussen apparaten en systemen te overbruggen, zodat u in real-time een indrukwekkende, persoonlijke digitale ervaring kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
@@ -53,7 +57,7 @@ Begin door de identiteitskaart van de gebruiker bij te werken wanneer zij login.
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    ```
 
-1. Bellen `updateIdentities` om de gegevens naar het Netwerk van de Rand van het Platform te verzenden.
+1. Bellen `updateIdentities` om de gegevens naar het Platform Edge Network te verzenden.
 
    ```swift
    Identity.updateIdentities(with: identityMap)
@@ -70,7 +74,7 @@ Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experien
 
 1. Selecteer in de interface Gegevensverzameling de optie **[!UICONTROL Identiteiten]** van de linkse spoorwegnavigatie.
 1. Selecteren **[!UICONTROL Naamruimte maken]**.
-1. Een **[!UICONTROL Weergavenaam]** van `Luma CRM ID` en **[!UICONTROL Identiteitssymbool]** waarde van `lumaCrmId`.
+1. Geef een **[!UICONTROL Weergavenaam]** van `Luma CRM ID` en **[!UICONTROL Identiteitssymbool]** waarde van `lumaCrmId`.
 1. Selecteren **[!UICONTROL Apparaatoverschrijdende id]**.
 1. Selecteer **[!UICONTROL Maken]**.
 
@@ -125,7 +129,7 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 1. Selecteer in de app het accountpictogram rechtsonder.
 
    ![luma-app-account](assets/mobile-identity-login.png)
-1. Selecteer **Aanmelden** knop.
+1. Selecteer de **Aanmelden** knop.
 1. U krijgt de optie om een gebruikersnaam en wachtwoord in te voeren. Beide opties zijn optioneel en u kunt gewoon **Aanmelden**.
 
    ![luma app-aanmelding](assets/mobile-identity-login-final.png)
@@ -135,7 +139,7 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 
 ## Valideren met identiteitsgrafiek
 
-Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md), kunt u ook de id capture bevestigen in de viewer voor identiteitsgrafieken van Platforms:
+Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md), kunt u ook de invoer bevestigen in de identiteitsgrafiek van platforms:
 
 ![identiteitsgrafiek valideren](assets/mobile-identity-validate.png)
 

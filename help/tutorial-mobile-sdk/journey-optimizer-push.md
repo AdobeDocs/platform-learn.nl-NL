@@ -5,16 +5,20 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
 
 # Adobe Journey Optimizer-pushberichten
 
-Leer hoe u pushberichten voor mobiele apps maakt met Platform Mobile SDK en Adobe Journey Optimizer.
+Leer hoe u pushberichten voor mobiele apps kunt maken met Platform Mobile SDK en Adobe Journey Optimizer.
+
+>[!INFO]
+>
+> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 Met Journey Optimizer kunt u uw reizen maken en berichten sturen naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Adobe Journey Optimizer wilt begrijpen, raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -57,8 +61,8 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
 1. Selecteer + pictogram om een sleutel tot stand te brengen.
    ![nieuwe sleutel maken](assets/mobile-push-apple-dev-new-key.png)
 
-1. Een **[!UICONTROL Sleutelnaam]**.
-1. Selecteer **[!UICONTROL APN]** selectievakje.
+1. Geef een **[!UICONTROL Sleutelnaam]**.
+1. Selecteer de **[!UICONTROL APN]** selectievakje.
 1. Selecteren **[!UICONTROL Doorgaan]**.
    ![nieuwe sleutel configureren](assets/mobile-push-apple-dev-config-key.png)
 1. Configuratie controleren en selecteren **[!UICONTROL Registreren]**.
@@ -82,7 +86,7 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
 1. Voer de bundel-id voor mobiele apps in het veld App ID (iOS Bundle ID) in. Als u samen met de Luma-app de waarde volgt, is `com.adobe.luma.tutorial`.
 1. Schakel de **[!UICONTROL Credentials duwen]** om uw referenties toe te voegen.
 1. Sleep uw `.p8` **Apple Push Notification Authentication Key** bestand.
-1. Geef de sleutel-id op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van `p8` auth key. U vindt deze onder het tabblad Toetsen in **Certificaten, id&#39;s en profielen** pagina.
+1. Geef de sleutel-id op, een tekenreeks van 10 tekens die tijdens het maken van `p8` auth key. U vindt deze onder het tabblad Toetsen in **Certificaten, id&#39;s en profielen** pagina.
 1. Geef de team-id op. Dit is een tekenreekswaarde die onder de **Lidmaatschap** tab.
 1. Selecteren **[!UICONTROL Opslaan]**.
    ![configuratie toepassingsoppervlak](assets/mobile-push-app-surface-config.png)
@@ -90,7 +94,7 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
 ## Adobe Journey Optimizer-extensie installeren
 
 1. Navigeren naar [!UICONTROL Tags] > [!UICONTROL Extensies] > [!UICONTROL Catalogus]en de **[!UICONTROL Adobe Journey Optimizer]** extensie.
-1. Installeer de extensie.
+1. De extensie installeren.
    ![ajo-extensie installeren](assets/mobile-push-tags-install.png)
 1. Selecteren `CJM Push Tracking Experience Event Dataset` het gegevensbestand van Adobe Experience Platform.
    ![AJO-extensie-instellingen](assets/mobile-push-tags-ajo.png)
@@ -127,7 +131,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    }
    ```
 
-   Deze functie haalt het apparaattoken op dat uniek is voor het apparaat waarop de app is geïnstalleerd en verzendt het naar Adobe/Apple voor het verzenden van pushberichten.
+   Deze functie haalt het apparaattoken op dat uniek is voor het apparaat waarop de toepassing is geïnstalleerd en verzendt het naar Adobe/Apple voor het verzenden van pushberichten.
 
 ## Valideren door een testpushbericht te verzenden
 
@@ -137,7 +141,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 1. Verzend de app naar de achtergrond.
 1. Selecteer in de betrouwbaarheidsinterface de optie **[!UICONTROL Configureren]**.
    ![configureren, klik](assets/mobile-push-validate-config.png)
-1. Selecteer **[!UICONTROL +]** knop naast **[!UICONTROL Push Debug]**.
+1. Selecteer de **[!UICONTROL +]** knop naast **[!UICONTROL Push Debug]**.
 1. Selecteren **[!UICONTROL Opslaan]**.
    ![opslaan](assets/mobile-push-validate-save.png)
 1. Selecteren **[!UICONTROL Push Debug]** in de linkernavigatie.
