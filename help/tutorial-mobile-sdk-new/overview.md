@@ -4,10 +4,10 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met de Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via het Adobe Experience Platform Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/) voor meer gedetailleerde informatie.
+Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via het Adobe Experience Platform Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/home/) voor meer gedetailleerde informatie.
 
 ![Architectuur](assets/architecture.png)
 
@@ -41,11 +41,11 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
    * [Profiel](profile.md)
    * [Plaatsen](places.md)
    * [Analytics](analytics.md)
-   * [Adobe Experience Platform](platform.md)
+   * [Experience Platform](platform.md)
    * [Push messaging (Push messaging) met Journey Optimizer](journey-optimizer-push.md)
    * [In-app messaging met Journey Optimizer](journey-optimizer-inapp.md)
-   * [Voorstellen met Journey Optimizer](journey-optimizer-offers.md)
-   * [A/B-tests met doel](target.md)
+   * [Besluitbeheer met Journey Optimizer](journey-optimizer-offers.md)
+   * [Target](target.md)
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 
 ## Vereisten
 
-In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen hebt om de oefeningen te voltooien. Zo niet, dan moet u contact opnemen met de beheerder van de Adobe om toegang aan te vragen.
+In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de vereiste gebruiker-vlakke toestemmingen hebt om de oefeningen te voltooien. Zo niet, dan moet u contact opnemen met de beheerder van de Adobe om toegang aan te vragen.
 
 * In de Inzameling van Gegevens, moet u:
    * **[!UICONTROL Platforms]**—machtigingsitem **[!UICONTROL Mobiel]**
@@ -67,22 +67,20 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen h
    * **[!UICONTROL Identity Management]**—machtigingsitems om naamruimten te beheren en weer te geven.
    * **[!UICONTROL Gegevensverzameling]**—machtigingsitems om gegevensstromen te beheren en weer te geven.
 
-   * Als u de klant bent van een platformgebaseerde toepassing zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, moet u ook:
-      * **[!UICONTROL Gegevensbeheer]**—toestemmingspunten om datasets te beheren en te bekijken om te voltooien _optionele platformoefeningen_ (vereist een licentie voor een toepassing op basis van een platform).
+   * Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, en de verwante lessen uitvoert die u ook moet hebben:
+      * **[!UICONTROL Gegevensbeheer]**—toestemmingspunten om datasets te beheren en te bekijken.
       * Een ontwikkeling **sandbox** die u voor deze zelfstudie kunt gebruiken.
+
+   * Voor de Journey Optimizer-lessen hebt u machtigingen nodig om de **pushmeldingsservice** en om een **toepassingsoppervlak**, **reis**, **message**, en **berichtvoorinstellingen**. Voor Beslissingsbeheer hebt u de juiste machtigingen nodig om **aanbiedingen beheren** en **besluiten** zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * Voor Adobe Analytics moet je weten welke **rapportsuites** u kunt deze zelfstudie voltooien.
 
-* Voor Adobe Target moet u beschikken over de juiste machtigingen **rollen**, **werkruimten**, en **eigenschappen** zoals beschreven [hier](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
-
-* Voor Adobe Journey Optimizer hebt u voldoende machtigingen nodig om de **pushmeldingsservice** en om een **toepassingsoppervlak**, **reis**, **message** en **berichtvoorinstellingen**. Voor Beslissingsbeheer hebt u de juiste machtigingen nodig om **aanbiedingen beheren** en **besluiten** zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
-
-Alle klanten van het Experience Cloud zouden toegang tot de vereiste eigenschappen moeten hebben nodig om Mobiele SDK op te stellen.
+* Voor Adobe Target moet u toestemming hebben om activiteiten te maken en activeren.
 
 
 >[!NOTE]
 >
->In het kader van deze zelfstudie zult u schema&#39;s, gegevenssets, identiteiten enzovoort maken. Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u bij het maken van deze objecten overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Voeg bijvoorbeeld ` - <your name or initials>` op de naam van het object dat u moet maken.
+>Als deel van dit leerprogramma, creeert u schema&#39;s, datasets, identiteiten, etc. Als meerdere personen deze zelfstudie in één sandbox doorlopen, kunt u bij het maken van deze objecten overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Voeg bijvoorbeeld ` - <your name or initials>` op de naam van het object dat u moet maken.
 
 
 ## De app Luma downloaden
@@ -93,15 +91,16 @@ U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen 
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
 1. [Voltooien](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een versie met de volledige implementatie ter referentie.
 
+
 >[!NOTE]
 >
->U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. En velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+>U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
 
 
 Laten we beginnen!
 
 >[!SUCCESS]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Een XDM-schema maken](create-schema.md)**

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,8 @@ Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Campagnes beheren.
-* Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
 * Fysiek iOS-apparaat of simulator voor testen.
 
 
@@ -67,16 +66,19 @@ In deze les zult u
 1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld,  `com.adobe.luma.tutorial.swiftui`.
 1. Selecteren **[!UICONTROL Opslaan]**.
 
-   ![configuratie toepassingsoppervlak](assets/push-app-surface-config.png)
+   ![configuratie toepassingsoppervlak](assets/push-app-surface-config-inapp.png)
 
 ### Gegevensstroomconfiguratie bijwerken
 
 Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Journey Optimizer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
 
+
+
 1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
 1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
 1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
 1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
+
 
    ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration.png)
 
@@ -101,27 +103,6 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 >Als u het niet ziet `AJO Push Tracking Experience Event Dataset` als optie, contacteer klantenzorg.
 >
 
-
-## Ondertekenen
-
-De app Luma hoeft alleen te worden ondertekend voor de [Pushmeldingen maken en verzenden](journey-optimizer-push.md) en de [In-app berichten maken en verzenden](journey-optimizer-inapp.md) lessen in deze zelfstudie. Voor deze lessen is een Apple-inrichtingsprofiel vereist dat **vereist een betaald Apple-ontwikkelingsaccount**.
-
-U kunt als volgt de ondertekening voor uw app bijwerken:
-
-1. Ga naar uw app in Xcode.
-1. Selecteren **[!DNL Luma]** in de projectnavigator.
-1. Selecteer de **[!DNL Luma]** doel.
-1. Selecteer de **Ondertekenen en mogelijkheden** tab.
-1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
-
-   >[!IMPORTANT]
-   >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### Journey Optimizer implementeren in de app
 
 Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [SDK&#39;s installeren](install-sdks.md) sectie.
@@ -131,7 +112,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
 >
 
-1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
 
@@ -263,10 +244,12 @@ U kunt uw in-app berichten in de UI van de Verzekering bevestigen.
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in-app berichten toe te voegen.  Zo kunt u bijvoorbeeld producten promoten op basis van specifieke interacties die u in uw app bijhoudt.
+U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in-app berichten toe te voegen. Zo kunt u bijvoorbeeld producten promoten op basis van specifieke interacties die u in uw app bijhoudt.
 
 >[!SUCCESS]
 >
->U hebt de app voor berichten in de app ingeschakeld en een berichtencampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt de app voor berichten in de app ingeschakeld en een berichtencampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Aanbiedingen maken en weergeven](journey-optimizer-offers.md)**

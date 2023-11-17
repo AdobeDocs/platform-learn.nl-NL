@@ -3,7 +3,7 @@ title: Gebeurtenisgegevens bijhouden
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       1. Voor <img src="assets/saveforlater.png" width="15" />:
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       1. Voor <img src="assets/purchase.png" width="20" />:
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->Gebruik Kaart (`java.util.Map`) als de basisinterface voor het samenstellen van uw XDM-payload.
+>Als u ontwikkelt voor Android™, gebruikt u Kaart (`java.util.Map`) als de basisinterface voor het samenstellen van uw XDM-payload.
 
 
 ### Aangepaste veldgroepen
@@ -205,9 +205,9 @@ Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt 
 
   >[!NOTE]
   >
-  >* Standaardveldgroepen beginnen altijd in de hoofdmap van het object.
+  * Standaardveldgroepen beginnen altijd in de hoofdmap van het object.
   >
-  >* Groepen aangepaste velden beginnen altijd onder een object dat uniek is voor uw Experience Cloud Org. `_techmarketingdemos` in dit voorbeeld.
+  * Groepen aangepaste velden beginnen altijd onder een object dat uniek is voor uw Experience Cloud Org. `_techmarketingdemos` in dit voorbeeld.
 
   Voor de toepassingsinteractiegebeurtenis maakt u een object als:
 
@@ -338,10 +338,10 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 ## Validatie
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan te sluiten met Betrouwbaarheid.
 
    1. Verplaats het pictogram Verzekering naar links.
-   1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]** in het Startscherm.
+   1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]**, en **[!UICONTROL CRM-id]** in het Startscherm.
    1. Selecteren **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
    1. Selecteer <img src="assets/saveforlater.png" width="15" />.
@@ -367,15 +367,17 @@ U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app 
 
 >[!TIP]
 >
->Controleer de [voltooide app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden .
+Controleer de [voltooide app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden .
 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform
 
-Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, worden zij verzonden naar de toepassingen en de diensten die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) en andere Adobe Experience Cloud-oplossingen zoals [Adobe Target](target.md) en Adobe Journey Optimizer.
+Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, worden zij verzonden naar de toepassingen en de diensten die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)en andere Adobe Experience Cloud-oplossingen zoals [Adobe Target](target.md) en Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
->U hebt uw app nu ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en schermtracering bij te houden naar het Adobe Experience Platform Edge-netwerk en alle services die u in uw gegevensstroom hebt gedefinieerd.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+U hebt uw app nu ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en schermtracering bij te houden naar het Adobe Experience Platform Edge-netwerk en alle services die u in uw gegevensstroom hebt gedefinieerd.
+>
+Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[WebViews verwerken](web-views.md)**

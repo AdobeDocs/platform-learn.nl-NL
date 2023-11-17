@@ -1,22 +1,22 @@
 ---
 title: Een labelregel maken
-description: Leer hoe u een gebeurtenis naar het Edge Network van het Platform verzendt met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
 
 # Een labelregel maken
 
-Leer hoe u een gebeurtenis naar het Edge Network van het Platform verzendt met uw XDM-object aan de hand van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
+Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
 
 >[!NOTE]
 >
-> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op het voorbeeld dat tijdens wordt gebruikt [Gegevenselementen maken](create-data-elements.md) stap; verzenden van een XDM-gebeurtenisactie voor het vastleggen van inhoud en identiteiten van gebruikers op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
+> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op het voorbeeld dat tijdens wordt gebruikt [Gegevenselementen maken](create-data-elements.md) stap; verzenden van een XDM-gebeurtenisactie om inhoud en identiteiten van gebruikers op de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 
 ## Leerdoelstellingen
@@ -60,7 +60,7 @@ Een labelregel maken:
 
 1. De eigenschap tag openen die u gebruikt voor deze zelfstudie
 1. Ga naar **[!UICONTROL Regels]** in de linkernavigatie
-1. Selecteer **[!UICONTROL Nieuwe regel maken]** knop
+1. Selecteer de **[!UICONTROL Nieuwe regel maken]** knop
    ![Een regel maken](assets/rules-create.png)
 1. Naam van de regel `all pages - library load - AA & AT`
 
@@ -69,7 +69,6 @@ Een labelregel maken:
    > Deze regel wordt door Adobe Analytics en Target in een toekomstige les op een specifieke manier gebruikt, en daarom `AA & AT` wordt gebruikt aan het einde van de naam.
 
 1. In de **[!UICONTROL Gebeurtenissen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
-
    ![Geef de regel een naam en voeg een gebeurtenis toe](assets/rule-name.png)
 1. Gebruik de **[!UICONTROL Core Extension]** en selecteert u `Library Loaded (Page Top)` als de **[!UICONTROL Type gebeurtenis]**.
 
@@ -81,7 +80,6 @@ Een labelregel maken:
 1. Selecteren **[!UICONTROL Logische typen]** `Exception`, **[!UICONTROL Extensie]** `Core`, en **[!UICONTROL Type voorwaarde]** `Path Without Query String`
 1. Voer het URL-pad in `/content/luma/us/en/user/cart.html` in de **[!UICONTROL pad is gelijk aan]** veld, en **[!UICONTROL name]** het `Core - cart page`
 1. Selecteren **[!UICONTROL Wijzigingen behouden]**
-
    ![Voorwaarden toevoegen](assets/rule-condition-exception.png)
 1. Voeg nog drie uitzonderingen toe voor de volgende URL-paden
 
@@ -98,7 +96,7 @@ Een labelregel maken:
 
    >[!WARNING]
    >
-   > In dit vervolgkeuzemenu worden de **`xdm.eventType`** in het XDM-object. Hoewel u in dit veld ook vrije-formulierlabels kunt typen, wordt u ten zeerste aangeraden **niet** aangezien het bijwerkingen met Platform zal hebben.
+   > In dit vervolgkeuzemenu worden de **`xdm.eventType`** in het XDM-object. Hoewel u in dit veld ook vrije-formulierlabels kunt typen, wordt u ten zeerste aangeraden **niet** omdat dit negatieve effecten heeft voor Platform.
 
 1. Als de **[!UICONTROL XDM-gegevens]**, selecteert u de `xdm.content` gegevenselement dat in de vorige les is gemaakt
 1. Selecteren **[!UICONTROL Wijzigingen behouden]** om op het belangrijkste regelscherm terug te keren
@@ -130,16 +128,16 @@ Een bibliotheek maken:
 
    ![De bibliotheek maken en bouwen](assets/rule-publish-add-all-changes.png)
 
-Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze is voltooid, wordt links van de bibliotheeknaam een groene stip weergegeven:
+Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze is voltooid, wordt links van de naam van de bibliotheek een groene stip weergegeven:
 
 ![Samenstellen voltooid](assets/rule-publish-success.png)
 
 Zoals u kunt zien op het tabblad [!UICONTROL Publishing Flow] screen, is er veel meer aan het het publiceren proces dat buiten het werkingsgebied van deze zelfstudie is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
 
-Nu kunt u de gegevens in de aanvraag valideren met de Adobe Experience Platform Debugger.
+Nu bent u bereid om de gegevens in het verzoek te bevestigen gebruikend het Adobe Experience Platform Debugger.
 
 [Volgende ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

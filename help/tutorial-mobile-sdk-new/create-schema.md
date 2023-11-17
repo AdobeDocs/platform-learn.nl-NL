@@ -4,9 +4,9 @@ description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenis
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 >[!NOTE]
 >
->Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. U kunt ook velden verwijderen als het schema daardoor beknopt en begrijpelijk blijft. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
+>Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. U kunt ook velden verwijderen om het schema beknopt en begrijpelijk te houden. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
 
 De [!UICONTROL Consumentenervaringsgebeurtenis] veldgroep heeft een gegevenstype genaamd [!UICONTROL Webinformatie], waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
 
@@ -163,7 +163,7 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
 1. Als u een veld wilt toevoegen, selecteert u de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knop.
 
 
-1. Dit veld is een containerobject voor toepassingsinteractie. Geef dus een kamelcase op. **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL Weergavenaam]** `App Interaction`en selecteert u `Object` van de **[!UICONTROL Type]** lijst.
+1. Dit veld is een containerobject voor toepassingsinteractie, dus een kamelcase **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL Weergavenaam]** `App Interaction`en selecteert u `Object` van de **[!UICONTROL Type]** lijst.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
@@ -234,6 +234,8 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 >[!SUCCESS]
 >
->U hebt nu een schema voor de rest van de zelfstudie te gebruiken.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt nu een schema voor de rest van de zelfstudie te gebruiken.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Een [!UICONTROL datastream]](create-datastream.md)**

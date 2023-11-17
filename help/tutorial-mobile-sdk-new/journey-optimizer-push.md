@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2701'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Leer hoe u pushmeldingen voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![Architectuur](assets/architecture-ajo.png)
 
@@ -30,12 +30,12 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een toepassingsoppervlak.
    * Een journey maken.
    * Maak een bericht.
    * Voorinstellingen voor berichten maken.
-* Apple-ontwikkelaarsaccount is betaald met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
+* **Betaald Apple-ontwikkelingsaccount** met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
 * Fysiek iOS-apparaat of simulator voor testen.
 
 ## Leerdoelstellingen
@@ -159,7 +159,7 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 ## Ondertekenen
 
-De app Luma hoeft alleen te worden ondertekend voor de [Pushmeldingen maken en verzenden](journey-optimizer-push.md) en de [In-app berichten maken en verzenden](journey-optimizer-inapp.md) lessen in deze zelfstudie. Voor deze lessen is een Apple-inrichtingsprofiel vereist dat **vereist een betaald Apple-ontwikkelingsaccount**.
+U moet de app Luma ondertekenen om pushmeldingen te verzenden en **vereist een betaald Apple-ontwikkelingsaccount**.
 
 U kunt als volgt de ondertekening voor uw app bijwerken:
 
@@ -171,7 +171,7 @@ U kunt als volgt de ondertekening voor uw app bijwerken:
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundle identifier, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -185,7 +185,7 @@ U kunt als volgt de ondertekening voor uw app bijwerken:
 
 1. Selecteer in Xcode **[!DNL Luma]** van de **[!UICONTROL DOELSTELLINGEN]** Selecteer de **[!UICONTROL Ondertekenen en mogelijkheden]** selecteert u de **[!UICONTROL + Capaciteit]** en vervolgens selecteert u **[!UICONTROL Pushmeldingen]**. Hierdoor kan uw app pushmeldingen ontvangen.
 
-1. Vervolgens moet u een Berichtgevingsextensie toevoegen aan de app. Ga terug naar de **[!DNL General]** en selecteert u de **[!UICONTROL +]** pictogram onder aan **[!UICONTROL DOELSTELLINGEN]** sectie.
+1. Vervolgens moet u een Berichtgevingsextensie aan de app toevoegen. Ga terug naar de **[!DNL General]** en selecteert u de **[!UICONTROL +]** pictogram onder aan **[!UICONTROL DOELSTELLINGEN]** sectie.
 
 1. U wordt gevraagd om de sjabloon voor uw nieuwe doel te selecteren. Selecteren **[!UICONTROL Meldingsservice-extensie]** Selecteer vervolgens **[!UICONTROL Volgende]**.
 
@@ -205,7 +205,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
 >
 
-1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
 
@@ -265,7 +265,7 @@ U gaat een nieuw gebeurtenistype bepalen, nog niet beschikbaar als deel van de l
 
 ### Een gebeurtenis definiëren
 
-Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om berichten te verzenden, zoals bijvoorbeeld pushberichten. Zie [Gebeurtenissen](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) voor meer informatie .
+Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om berichten te verzenden, bijvoorbeeld pushberichten. Zie [Gebeurtenissen](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) voor meer informatie .
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Configuraties]** van de linkerspoorstaaf.
 
@@ -304,7 +304,7 @@ Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om 
    1. Selecteren **[!UICONTROL Opslaan]**.
       ![Gebeurtenisstap 2 bewerken](assets/ajo-edit-event2.png)
 
-U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Met deze gebeurtenisconfiguratie worden inkomende ervaringsgebeurtenissen gefilterd met uw specifieke gebeurtenistype (`application.test`), zodat u ervoor zorgt dat alleen gebeurtenissen van dat specifieke type die vanuit uw mobiele app worden geïnitieerd, de reis activeren die u maakt in de volgende stap. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
+U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Met deze gebeurtenisconfiguratie worden inkomende ervaringsgebeurtenissen gefilterd met uw specifieke gebeurtenistype (`application.test`), dus alleen gebeurtenissen van dat specifieke type die vanuit uw mobiele app worden geïnitieerd, zullen de reis die u maakt, in de volgende stap activeren. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
 
 ### De reis maken
 
@@ -425,6 +425,8 @@ U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te h
 
 >[!SUCCESS]
 >
->U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[In-app berichten maken en verzenden](journey-optimizer-inapp.md)**

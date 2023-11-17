@@ -4,9 +4,9 @@ description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een m
 jira: KT-6987
 hide: true
 exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 
 In deze les zult u:
 
-* Begrijp waarom u speciale overwegingen voor WebViews in uw app moet nemen.
+* Begrijp waarom u speciale aandacht voor WebViews in uw app moet houden.
 * Begrijp de code die wordt vereist om volgende kwesties te verhinderen.
 
 ## Mogelijke problemen met bijhouden
@@ -92,7 +92,7 @@ De code uitvoeren:
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-Jammer genoeg, is het zuiveren van de Webzitting beperkt; u kunt niet het Adobe Experience Platform Debugger in uw browser bijvoorbeeld gebruiken om de Webmeningszitting te blijven zuiveren.
+Jammer genoeg, is het zuiveren van de Webzitting beperkt. U kunt bijvoorbeeld het Adobe Experience Platform Debugger in uw browser niet gebruiken om de webweergavesessie te blijven opsporen.
 
 >[!NOTE]
 >
@@ -101,6 +101,8 @@ Jammer genoeg, is het zuiveren van de Webzitting beperkt; u kunt niet het Adobe 
 
 >[!SUCCESS]
 >
->U hebt uw app nu ingesteld om inhoud weer te geven op basis van een URL in een webweergave met dezelfde ECID als de ECID die al is uitgegeven door de Adobe Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt uw app nu ingesteld om inhoud weer te geven op basis van een URL in een webweergave met dezelfde ECID als de ECID die al is uitgegeven door de Adobe Experience Platform Mobile SDK.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Volgende: **[Identiteit](identity.md)**

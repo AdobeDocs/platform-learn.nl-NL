@@ -3,31 +3,31 @@ title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 3%
 
 ---
 
 # Machtigingen voor de zelfstudie configureren
 
-Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om dit leerprogramma te voltooien. Om Platform Web SDK uit te voeren gebruikend markeringen in de interface van de Inzameling van Gegevens, moet u de juiste gebruikerstoestemmingen hebben die binnen worden gevormd [Admin Console](https://adminconsole.adobe.com).
+Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om dit leerprogramma te voltooien. Om het Web SDK van het Platform uit te voeren gebruikend markeringen in de interface van de Inzameling van Gegevens, moet u de juiste gebruikerstoestemmingen hebben die binnen worden gevormd [Admin Console](https://adminconsole.adobe.com).
 
-## Gegevensverzameling
+## Dataverzameling
 
-* machtiging hebben om **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Bewerken]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, **[!UICONTROL Omgevingen beheren]**, en **[!UICONTROL Eigenschappen beheren]**. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Heeft toestemming om **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Bewerken]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, **[!UICONTROL Omgevingen beheren]**, en **[!UICONTROL Eigenschappen beheren]**. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Als u de facultatieve gebeurtenis zult voltooien die les door:sturen, een productvergunning hebben die rand door:sturen en toestemmingspunt omvat **[!UICONTROL Platforms]** > **[!UICONTROL Rand]**
 
 ## Experience Platform
 
-Deze functies moeten beschikbaar zijn voor alle Experience Cloud-klanten, zelfs als u geen klant bent van een op een Platform gebaseerde toepassing zoals Real-Time CDP.
+Deze functies moeten beschikbaar zijn voor alle klanten van het Experience Cloud, zelfs als u geen klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP.
 
 * Toegang tot de **standaardproductie**, **&quot;Prod&quot;** sandbox.
 * Toegang tot **[!UICONTROL Schema&#39;s beheren]** en **[!UICONTROL Schema&#39;s weergeven]** krachtens **[!UICONTROL Gegevensmodellering]**
-* Toegang tot **[!UICONTROL Identiteitsnaamruimten beheren]** en **[!UICONTROL Identiteitsnaamruimten weergeven]** krachtens **[!UICONTROL Identity Management]**
+* Toegang tot **[!UICONTROL Naamruimten beheren]** en **[!UICONTROL Identiteitsnaamruimten weergeven]** krachtens **[!UICONTROL Identity Management]**
 * Toegang tot **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]** krachtens **[!UICONTROL Gegevensverzameling]**
-* Als u een klant bent van een toepassing op basis van een Platform en u de [Experience Platform instellen](setup-experience-platform.md) les, zou u ook moeten hebben:
+* Als u een klant bent van een toepassing op basis van een platform en de [Experience Platform instellen](setup-experience-platform.md) les, zou u ook moeten hebben:
    * Toegang tot een **ontwikkeling** sandbox.
    * Alle machtigingsitems onder **[!UICONTROL Gegevensbeheer]**, en **[!UICONTROL Profielbeheer]**:
 
@@ -52,4 +52,4 @@ Nu bent u klaar om de eerste configuratiestappen te beginnen.
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

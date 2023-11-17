@@ -3,9 +3,9 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -16,19 +16,19 @@ Leer hoe te om de essentiële gegevenselementen tot stand te brengen nodig om ge
 
 >[!NOTE]
 >
-> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op het voorbeeld dat tijdens wordt gebruikt [Een schema configureren](configure-schemas.md) stap; voorbeeld-XDM-objecten maken die inhoud vastleggen die wordt weergegeven en identiteit van gebruikers op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
+> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op het voorbeeld dat tijdens wordt gebruikt [Een schema configureren](configure-schemas.md) stap; voorbeeld-XDM-objecten maken die weergegeven inhoud en identiteiten van gebruikers vastleggen op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >De gegevens voor deze les zijn afkomstig uit de `[!UICONTROL digitalData]` gegevenslaag op de Luminasite. Om de gegevenslaag te bekijken, open uw ontwikkelaarsconsole en typ binnen `[!UICONTROL digitalData]` om de volledige beschikbare gegevenslaag te zien.![digitalData-gegevenslaag](assets/data-element-data-layer.png)
 
 
-Ongeacht het Web SDK van het Platform, moet u gegevenselementen binnen uw markeringsbezit blijven creëren die aan de variabelen van de gegevensinzameling van uw website, zoals een gegevenslaag, een attribuut van HTML, of anderen in kaart brengen. Zodra u die gegevenselementen creeert, moet u hen aan het XDM schema in kaart brengen u tijdens creeerde [vormen schema&#39;s](configure-schemas.md) les. Om dit te doen, stelt de uitbreiding van SDK van het Web van het Platform een nieuw gegevenstype ter beschikking genoemd voorwerp XDM. Daarom bestaat het creëren van gegevenselementen uit twee acties:
+Ongeacht Platform SDK, moet u gegevenselementen binnen uw markeringsbezit blijven creëren die aan de variabelen van de gegevensinzameling van uw website, zoals een gegevenslaag, een attribuut van HTML, of anderen in kaart brengen. Zodra u die gegevenselementen creeert, moet u hen aan het XDM schema in kaart brengen u tijdens creeerde [vormen schema&#39;s](configure-schemas.md) les. Hiertoe maakt de uitbreiding van SDK van het Web van het Platform een nieuw gegevenstype beschikbaar genoemd voorwerp XDM. Daarom bestaat het creëren van gegevenselementen uit twee acties:
 
 1. Websitevariabelen toewijzen aan gegevenselementen, en
 1. Die gegevenselementen toewijzen aan een XDM-object
 
-Voor stap 1, blijft u uw gegevenslaag aan gegevenselementen in kaart brengen de manier u momenteel doet, gebruikend om het even welke de types van gegevenselement van de de markeringsuitbreiding van de Kern. Voor stap 2, leidt de uitbreiding van SDK van het Web van het Platform tot een reeks nieuwe gegevenselematypen die niet eerder beschikbaar waren:
+Voor stap 1, blijft u uw gegevenslaag aan gegevenselementen in kaart brengen de manier u momenteel doet, gebruikend om het even welke de types van gegevenselement van de de markeringsuitbreiding van de Kern. Voor stap 2, leidt de uitbreiding van SDK van het Web van het Platform tot een reeks nieuwe gegevens elementtypes niet eerder beschikbaar:
 
 * Samenvoegen-id gebeurtenis
 * Identiteitskaart
@@ -47,7 +47,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag, en weet hoe te om gegevenselementen in markeringen van verwijzingen te voorzien. U moet de volgende vorige stappen in de zelfstudie hebben uitgevoerd
+U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende vorige stappen in de zelfstudie hebben uitgevoerd
 
 * [Machtigingen configureren](configure-permissions.md)
 * [Een XDM-schema configureren](configure-schemas.md)
@@ -121,7 +121,7 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
    >
    >    Als u uw `Luma CRM Id` naamruimte, controleert u of u deze ook hebt gemaakt in uw standaardproductiestandbox. Alleen naamruimten die zijn gemaakt in de standaardproductiefsandbox worden momenteel weergegeven in het vervolgkeuzemenu voor naamruimten.
 
-1. Na de **[!UICONTROL Naamruimte]** is geselecteerd, moet een id worden ingesteld. Selecteer `user.profile.attributes.username` gegevenselement dat eerder in deze les wordt gecreeerd, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
+1. Na de **[!UICONTROL Naamruimte]** is geselecteerd, moet een id worden ingesteld. Selecteer de `user.profile.attributes.username` gegevenselement dat eerder in deze les wordt gecreeerd, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
 
 <!--  >[!TIP]
    >
@@ -130,7 +130,7 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
    >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
 -->
 
-1. Als de **[!UICONTROL Status geverifieerd]**, selecteert u **[!UICONTROL Geverifieerd]**
+1. Als de **[!UICONTROL Status voor authentiek]**, selecteert u **[!UICONTROL Geverifieerd]**
 1. Selecteren **[!UICONTROL Primair]**
 
 1. Selecteren **[!UICONTROL Opslaan]**
@@ -139,7 +139,7 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
 
 >[!TIP]
 >
-> Adobe raadt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primair] identiteit.
+> Adobe beveelt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primair] identiteit.
 >
 > Als het identiteitsbewijs de personsidentificatie bevat (bijvoorbeeld `Luma CRM Id`), wordt de persoon-identificator de [!UICONTROL primair] identiteit. Anders, `ECID` wordt de [!UICONTROL primair] identiteit.
 
@@ -175,7 +175,7 @@ Maak een XDM-object om inhoudsgegevens vast te leggen:
 1. **[!UICONTROL Naam]** het gegevenselement **`xdm.content`**
 1. Als de **[!UICONTROL Extensie]** selecteren `Adobe Experience Platform Web SDK`
 1. Als de **[!UICONTROL Type gegevenselement]** selecteren `XDM object`
-1. Selecteer het Platform **[!UICONTROL Sandbox]** waarin u het XDM-schema hebt gemaakt tijdens het [Een XDM-schema configureren](configure-schemas.md) les, in dit voorbeeld `DEVELOPMENT Mobile and Web SDK Courses`
+1. Selecteer het platform **[!UICONTROL Sandbox]** waarin u het XDM-schema hebt gemaakt tijdens het [Een XDM-schema configureren](configure-schemas.md) les, in dit voorbeeld `DEVELOPMENT Mobile and Web SDK Courses`
 1. Als de **[!UICONTROL Schema]**, selecteert u uw `Luma Web Event Data` schema:
 
    ![XDM-object](assets/data-element-xdm.content-fields.png)
@@ -200,7 +200,7 @@ Maak een XDM-object om inhoudsgegevens vast te leggen:
 
 1. Zoek vervolgens de `identityMap` object in het schema en selecteer het
 
-1. Toewijzen aan de `identityMap.loginID` gegevenselement
+1. Toewijzen aan `identityMap.loginID` gegevenselement
 
 1. Selecteren **[!UICONTROL Opslaan]**
 
@@ -211,7 +211,7 @@ Maak een XDM-object om inhoudsgegevens vast te leggen:
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
-| CORE Extension Data Elements | Platform SDK-gegevenselementen |
+| CORE Extension Data Elements | Platform Web SDK Data Elements |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
 | `page.pageInfo.hierarchie1` | `xdm.content` |
@@ -226,4 +226,4 @@ Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar het Net
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

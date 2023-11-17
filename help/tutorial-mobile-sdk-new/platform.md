@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 
 ## Adobe Experience Platform-datastreamservice toevoegen
 
-Als u uw XDM-gegevens van het Edge-netwerk naar Adobe Experience Platform wilt verzenden, configureert u de Adobe Experience Platform-service naar de gegevensstroom die u instelt als onderdeel van [Een gegevensstroom maken](create-datastream.md).
+Als u uw XDM-gegevens van het Edge-netwerk naar Adobe Experience Platform wilt verzenden, voegt u de Adobe Experience Platform-service toe aan de gegevensstroom die u instelt als onderdeel van [Een gegevensstroom maken](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -169,6 +169,6 @@ Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience 
 
 >[!SUCCESS]
 >
->U hebt uw app nu zo ingesteld dat gegevens niet alleen naar het Edge-netwerk, maar ook naar Adobe Experience Platform worden verzonden.<br>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt uw app nu zo ingesteld dat gegevens niet alleen naar het Edge-netwerk, maar ook naar Adobe Experience Platform worden verzonden.<br>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Pushmeldingen maken en verzenden](journey-optimizer-push.md)**

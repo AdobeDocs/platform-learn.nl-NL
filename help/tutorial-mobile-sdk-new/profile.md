@@ -3,9 +3,9 @@ title: Profielgegevens verzamelen
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ In deze les zult u:
 
 Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel te weten of een gebruiker in het verleden of onlangs een aankoop heeft gedaan. Laten we dat instellen in de Luma-app.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttributes(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel t
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -115,7 +115,7 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Terug naar **[!UICONTROL Home]** scherm. Er moet een badge worden toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
+   1. Terug naar **[!UICONTROL Home]** scherm. Je moet zien dat er een badge is toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
 >[!SUCCESS]
 >
->U hebt nu uw app ingesteld om kenmerken van profielen in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt nu uw app ingesteld om kenmerken van profielen in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Plaatsen gebruiken](places.md)**

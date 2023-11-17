@@ -3,10 +3,11 @@ title: Een eigenschap voor een tag configureren
 description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 1%
+source-wordcount: '1090'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +46,7 @@ In deze les zult u:
 
       >[!NOTE]
       >
-      > De standaardinstellingen voor toestemming voor de op rand gebaseerde mobiele SDK-implementaties, zoals de toestemming die u in deze les doet, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > De standaardinstellingen voor toestemming voor de op rand gebaseerde mobiele SDK-implementaties, zoals de toestemming die u in deze les doet, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Open de nieuwe eigenschap.
@@ -131,7 +132,7 @@ Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een geslaag
 
 1. In de **[!UICONTROL Instructies voor mobiele installatie]** selecteert u de **[!UICONTROL iOS]** tab.
 
-1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [Documentatie over cocoapods](https://cocoapods.org/). Als u Android gebruikt als ontwikkelingsplatform, is Gradle de tool voor het beheren van SDK-versies, downloads en afhankelijkheden. Voor meer informatie raadpleegt u de [Gradle-documentatie](https://gradle.org/)
+1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [CocoaPods-documentatie](https://cocoapods.org/). Als u Android™ als ontwikkelingsplatform gebruikt, is Gradle het hulpmiddel om de versie van SDK, downloads, en gebiedsdelen te beheren. Voor meer informatie raadpleegt u de [Gradle-documentatie](https://gradle.org/)
 
    De installatieinstructies bieden u een goed beginpunt voor de implementatie. Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een geslaag
    >Voor de rest van deze zelfstudie gaat u **niet** gebruik de CocoaPods-instructies, maar gebruik in plaats daarvan een native Swift Package Manager (SPM)-gebaseerde setup.
    >
 
-1. Selecteer de **[!UICONTROL Swift]** tab onder **[!UICONTROL Initialisatiecode toevoegen]**. Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Dit zal in meer details worden behandeld in [SDK&#39;s installeren](install-sdks.md).
+1. Selecteer de **[!UICONTROL Swift]** tab onder **[!UICONTROL Initialisatiecode toevoegen]**. Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Hierover wordt meer in detail ingegaan [SDK&#39;s installeren](install-sdks.md).
 
 1. Kopiëren ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de **[!UICONTROL Omgevingsbestand-id]** en bewaar het op een plaats zoals u het later nodig hebt. Deze unieke id verwijst naar uw ontwikkelomgeving. Elke omgeving (Productie, Staging, Ontwikkeling) heeft zijn eigen unieke id-waarde.
 
@@ -148,7 +149,7 @@ Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een geslaag
 
 >[!NOTE]
 >
->De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/documentation/).
+>De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/home/).
 
 ## Architectuur van mobiele tags
 
@@ -156,10 +157,12 @@ Als u bekend bent met de webversie van Tags, voorheen Starten, is het belangrijk
 
 * Op het web wordt een eigenschap tag gerenderd in JavaScript, die vervolgens (gewoonlijk) wordt gehost in de cloud. Er wordt rechtstreeks in de website naar dat JavaScript-bestand verwezen.
 
-* In een eigenschap voor mobiele tags worden regels en configuraties gerenderd in JSON-bestanden die worden gehost in de cloud. De JSON-bestanden worden gedownload en gelezen door de Mobile Core-extensie in de mobiele app. Extensies zijn afzonderlijke SDK&#39;s die samenwerken. Als u een extensie toevoegt aan de eigenschap tag, moet u de app ook bijwerken. Als u een extensie-instelling wijzigt of een regel maakt, worden deze wijzigingen doorgevoerd in de app nadat u de bijgewerkte tagbibliotheek hebt gepubliceerd. Dankzij deze flexibiliteit kunt u instellingen wijzigen (zoals het rapport Adobe Analyrics bevat id) of zelfs het gedrag van uw app wijzigen (met gegevenselementen en regels, zoals u in latere lessen zult zien) zonder dat u code in uw app hoeft te wijzigen en de app opnieuw moet indienen bij de App Store.
+* In een eigenschap voor mobiele tags worden regels en configuraties gerenderd in JSON-bestanden die worden gehost in de cloud. De JSON-bestanden worden gedownload en gelezen door de Mobile Core-extensie in de mobiele app. Extensies zijn afzonderlijke SDK&#39;s die samenwerken. Als u een extensie toevoegt aan de eigenschap tag, moet u de app ook bijwerken. Als u een extensie-instelling wijzigt of een regel maakt, worden deze wijzigingen doorgevoerd in de app nadat u de bijgewerkte tagbibliotheek hebt gepubliceerd. Dankzij deze flexibiliteit kunt u instellingen wijzigen (zoals de id van Adobe Analytics-rapportsuite) of zelfs het gedrag van uw app wijzigen (met gegevenselementen en regels, zoals u in latere lessen zult zien) zonder dat u code hoeft te wijzigen in uw app en de App Store opnieuw hoeft in te dienen.
 
 >[!SUCCESS]
 >
->U kunt nu een eigenschap voor mobiele tags gebruiken in de rest van deze zelfstudie.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U kunt nu een eigenschap voor mobiele tags gebruiken in de rest van deze zelfstudie.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Volgende: **[SDK&#39;s installeren](install-sdks.md)**

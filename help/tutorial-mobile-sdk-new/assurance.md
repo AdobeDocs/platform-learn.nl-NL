@@ -4,9 +4,9 @@ description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Naast de algemene [SDK-installatie](install-sdks.md), die u in de vorige les heb
    }
    ```
 
-   Met deze code wordt een verzekeringssessie gestart wanneer de app op de achtergrond wordt uitgevoerd en met een diepe koppeling wordt geopend.
+   Met deze code wordt een verzekeringssessie gestart wanneer de toepassing op de achtergrond wordt uitgevoerd en via een diepe koppeling wordt geopend.
 
 Meer informatie is beschikbaar op [hier](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -93,7 +93,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundel-id, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`.<br/>Gebruik op dezelfde manier een uniek URL-schema en vervang de reeds opgegeven `lumatutorialswiftui` met uw unieke URL-schema.
+   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundle identifier, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`.<br/>Gebruik op dezelfde manier een uniek URL-schema en vervang de reeds opgegeven `lumatutorialswiftui` met uw unieke URL-schema.
 
 Voor meer informatie over URL-schema&#39;s in iOS raadpleegt u [Apple-documentatie](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -123,7 +123,7 @@ In Xcode:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. In de **[!UICONTROL Laat &quot;Luma App&quot; uw activiteiten bijhouden voor de app en websites van andere bedrijven]** dialoogvenster, selecteren **[!UICONTROL Toestaan]**.
+1. In de **[!UICONTROL Laat &quot;Luma App&quot; uw activiteiten bijhouden voor apps en websites van andere bedrijven]** dialoogvenster, selecteren **[!UICONTROL Toestaan]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ In uw browser:
 
    Als u een fysiek apparaat gebruikt:
 
-   * Selecteren **[!UICONTROL QR-code scannen]**. Gebruik uw camera op uw fysieke apparaat om de QR-code te scannen en tik op de koppeling om de app te openen.
+   * Selecteren **[!UICONTROL QR-code scannen]**. Als u de app wilt openen, gebruikt u de camera op het fysieke apparaat om de QR-code te scannen en tikt u op de koppeling.
 
      ![betrouwbaarheidsQA-code](assets/assurance-qr-code.png)
 
@@ -171,7 +171,7 @@ In uw browser:
 
          ![betrouwbaarheidsgebeurtenissen](assets/assurance-events.png)
 
-Als u problemen ondervindt, kunt u de [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+Als u om het even welke uitdagingen loopt, herzie [technisch](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 
 ## Extensies verifiëren
@@ -186,16 +186,16 @@ Om te controleren of uw app de meest actuele extensies gebruikt:
 
    ![Extensieversies configureren](assets/assurance-configure-extension-versions.png)
 
-1. Selecteren ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extensieversies]**. Er wordt een overzicht weergegeven van de meest recente beschikbare extensies en de extensies die worden gebruikt in uw versie van de app.
+1. Selecteren ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extensieversies]** voor een overzicht van de meest recente beschikbare extensies en de extensies die worden gebruikt in uw versie van de app.
 
    ![Extensies](assets/assurance-extension-versions.png)
 
-1. De extensieversies bijwerken (bijvoorbeeld **[!UICONTROL Berichten]** en **[!UICONTROL Optimaliseren]**), in Xcode, voor de specifieke extensies die een upgrade nodig hebben, selecteert u het pakket (extensie) van **[!UICONTROL Pakketafhankelijke onderdelen]** (bijvoorbeeld **[!UICONTROL AEPMessaging]**) en in het contextmenu selecteert u **[!UICONTROL Pakket bijwerken]**. Xcode werkt de pakketafhankelijkheden bij.
+1. Om uw uitbreidingsversies bij te werken (bijvoorbeeld **[!UICONTROL Berichten]** en **[!UICONTROL Optimaliseren]**) selecteer het pakket (extensie) vanuit **[!UICONTROL Pakketafhankelijke onderdelen]** (bijvoorbeeld **[!UICONTROL AEPMessaging]**) en in het contextmenu selecteert u **[!UICONTROL Pakket bijwerken]**. Xcode werkt de pakketafhankelijkheden bij.
 
 
 >[!NOTE]
 >
->Wanneer u de extensies (pakketten) in Xcode hebt bijgewerkt, moet u de huidige sessie sluiten en verwijderen en alle stappen uit [Verbinding maken met een sessie](#connecting-to-a-session) en [Extensies verifiëren](#verify-extensions) om ervoor te zorgen dat de verzekering de juiste extensies in een nieuwe betrouwbaarheidssessie meldt.
+>Nadat u de extensies (pakketten) in Xcode hebt bijgewerkt, sluit en verwijdert u de huidige sessie en herhaalt u alle stappen van [Verbinding maken met een sessie](#connecting-to-a-session) en [Extensies verifiëren](#verify-extensions) om ervoor te zorgen dat de verzekering de juiste extensies in een nieuwe betrouwbaarheidssessie meldt.
 
 
 
@@ -203,7 +203,9 @@ Om te controleren of uw app de meest actuele extensies gebruikt:
 
 >[!SUCCESS]
 >
->U hebt nu een app ingesteld om Verzekering te gebruiken voor de rest van de zelfstudie.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt nu een app ingesteld om Verzekering te gebruiken voor de rest van de zelfstudie.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Volgende: **[Goedkeuring implementeren](consent.md)**

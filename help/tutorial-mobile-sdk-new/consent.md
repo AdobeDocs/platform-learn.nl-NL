@@ -4,9 +4,9 @@ description: Leer hoe u toestemming implementeert in een mobiele app.
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u toestemming implementeert in een mobiele app.
 
-Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)in de documentatie.
+Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in de documentatie.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ Als u de zelfstudie vanaf het begin hebt gevolgd, zult u zich wellicht herinnere
 
 Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebruiker krijgen. In een echte app wilt u de beste praktijken voor uw regio raadplegen. In deze zelfstudie krijgt u toestemming van de gebruiker door er gewoon om te vragen met een waarschuwing:
 
-1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U wilt dus de toestemming van de Mobile SDK combineren met de vereiste machtigingen voor tracering met behulp van Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker tracering toestaat, de gebruiker ook instemt met het verzamelen van gebeurtenissen.
+1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U kunt dit doen door de toestemming van Mobile SDK met de vereiste vergunning voor het volgen te combineren gebruikend Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker toestemming geeft om gebeurtenissen te volgen, deze toestemming geeft om gebeurtenissen te verzamelen.
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator.
 
@@ -96,14 +96,16 @@ In het bovenstaande voorbeeld registreert u gewoon de toestemmingsstatus aan de 
 
 ## Valideren met betrouwbaarheid
 
-1. Verwijder de toepassing van het apparaat of de simulator als we de tracering en toestemming op de juiste wijze opnieuw willen instellen en initialiseren.
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+1. Verwijder de toepassing van het apparaat of de simulator om het bijhouden en goedkeuren correct opnieuw in te stellen en te initialiseren.
+1. Als u uw simulator of apparaat wilt aansluiten op Betrouwbaarheid, raadpleegt u de [installatie-instructies](assurance.md#connecting-to-a-session) sectie.
 1. Wanneer u de app verplaatst van **[!UICONTROL Home]** scherm naar **[!UICONTROL Producten]** scherm en terug naar **[!UICONTROL Home]** scherm, moet u een **[!UICONTROL Respons voor constanten ophalen]** gebeurtenis in de betrouwbaarheidsinterface.
    ![toestemming valideren](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->U hebt nu de toepassing ingeschakeld om de gebruiker bij de eerste start na de installatie (of herinstallatie) te vragen toestemming te geven met de SDK van Adobe Experience Platform Mobile.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt nu de toepassing ingeschakeld om de gebruiker bij de eerste start na de installatie (of herinstallatie) te vragen toestemming te geven met de SDK van Adobe Experience Platform Mobile.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Volgende: **[Levenscyclusgegevens verzamelen](lifecycle-data.md)**

@@ -3,16 +3,16 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
 # Goedkeuring instellen met Platform Web SDK
 
-Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel toestemming in op basis van de interactie van de bezoeker met een banner van een Platform voor beheer van instemming (CMP).
+Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
 
 >[!NOTE]
 > 
@@ -31,10 +31,10 @@ Aan het einde van deze les kunt u het volgende doen:
 
 U zou met markeringen en de stappen vertrouwd moeten zijn om regels, gegevenselementen tot stand te brengen, bibliotheken aan milieu&#39;s te bouwen, en markeringsbibliotheken te schakelen gebruikend Foutopsporing van het Experience Platform.
 
-Voordat u de privacy-instellingen gaat configureren en de regels voor het instellen van de toestemming gaat maken, moet u controleren of u het script van het toestemmingsbeheerplatform op de website hebt ingespoten en correct werkt. Een CMP kan rechtstreeks in de broncode worden geladen met behulp van siteontwikkelaars of door tags zelf worden geladen. Deze les toont de laatste aanpak aan.
+Voordat u de privacy-instellingen gaat configureren en de regels voor het instellen van de toestemming gaat maken, moet u ervoor zorgen dat u het script van het toestemmingsbeheerplatform op de website hebt ingespoten en correct werkt. Een CMP kan rechtstreeks in de broncode worden geladen met behulp van siteontwikkelaars of door tags zelf worden geladen. Deze les toont de laatste aanpak aan.
 >[!NOTE]
 > 
->1. Organisaties gebruiken een Platform voor beheer van toestemming (of CMP) om de toestemmingskeuzes van een bezoeker wettelijk te documenteren en te beheren voordat ze bezoekersgegevens verzamelen, delen of verkopen van online bronnen zoals websites en apps.
+>1. Organisaties gebruiken een Consent Management Platform (of CMP) om de toestemmingskeuzes van een bezoeker wettelijk te documenteren en te beheren voordat ze bezoekersgegevens verzamelen, delen of verkopen van online bronnen zoals websites en apps.
 >
 >2. De aanbevolen methode voor het injecteren van een CMP is rechtstreeks via broncode vóór het script voor tagbeheer.
 
@@ -98,16 +98,16 @@ Privacyhandelingen zoals GDPR, CCPA en andere spelen een cruciale rol in de mani
 ![Goedkeuringsscenario&#39;s](assets/consent-scenarios.jpeg)
 
 
-### Scenario 1: Impliciete optie-in
+### Scenario 1: Impliciete optie
 
 Impliciete opt-in betekent dat het bedrijf de toestemming van de bezoeker (of de &quot;opt-in&quot;) niet hoeft te verkrijgen voordat het zijn gegevens verzamelt, en dat alle bezoekers van de website daarom standaard als gekozen worden behandeld. De bezoeker kan er echter voor kiezen de cookies te negeren via de bevestigingsbanner. Dit gebruik-geval is gelijkaardig aan CCPA.
 
 Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 
-1. In de **[!UICONTROL Privacy]** sectie van de de markeringsuitbreiding van SDK van het Web van het Experience Platform, zorg ervoor  **[!UICONTROL Standaardtoestemming]** is ingesteld op **[!UICONTROL In]** :
+1. In de **[!UICONTROL Privacy]** sectie van de de markeringsuitbreiding van SDK van het Experience Platform Web, zorg ervoor  **[!UICONTROL Standaardtoestemming]** is ingesteld op **[!UICONTROL In]** :
 
 
-   ![Goedkeuring AEP-configuratie voor extensieprivacyconfiguratie](assets/consent-web-sdk-privacy-in.png)
+   ![Config. extensie-privacy voor AEP](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
@@ -177,13 +177,13 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 1. In **[!UICONTROL Privacy]** sectie van de uitbreiding van SDK van het Web van het Experience Platform, vastgestelde standaardtoestemming aan **[!UICONTROL Uit]** of **[!UICONTROL In behandeling]** zoals vereist.
 
-   ![Goedkeuring AEP-configuratie voor extensieprivacyconfiguratie](assets/consent-implied-opt-out.png)
+   ![Config. extensie-privacy voor AEP](assets/consent-implied-opt-out.png)
 
 1. **Opslaan** de bijgewerkte configuratie aan uw markeringsbibliotheek en herbouwt het.
 
    Met deze configuratie, zorgt het Web SDK van het Experience Platform ervoor dat geen verzoek brandt tenzij de toestemmingstoestemming verandert in **[!UICONTROL In]**. Dit kan gebeuren als een bezoeker de cookies handmatig accepteert door in te schakelen.
 
-1. Zorg er in Foutopsporing voor dat de Luminantiesite is toegewezen aan uw tageigenschap en dat de logboekregistratie voor de tagconsole is ingeschakeld.
+1. Controleer in Foutopsporing of de Luministoepassing is toegewezen aan uw tageigenschap en of de logboekregistratie voor de tagconsole is ingeschakeld.
 1. Gebruik de ontwikkelaarsconsole van uw browser aan **Sitegegevens wissen** in **Toepassing** > **Opslag**
 
 1. Laad de Luminasite opnieuw en zorg dat `defaultConsent` is ingesteld op **[!UICONTROL Uit]** en er zijn geen Web SDK-verzoeken ingediend
@@ -192,7 +192,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), moet u de toestemming wijzigen en instellen op **[!UICONTROL In]**. Hieronder wordt beschreven hoe u dit kunt doen met een regel:
 
-1. Een regel maken die wordt geactiveerd wanneer de bezoeker klikt **Dat is oké**.  Noem deze regel als: `all pages - click consent banner - set consent "in"`
+1. Een regel maken die wordt geactiveerd wanneer de bezoeker klikt **Dat klopt**.  Noem deze regel als: `all pages - click consent banner - set consent "in"`
 
 1. Als de **[!UICONTROL Gebeurtenis]**, gebruik **[!UICONTROL Klikken]** op **[!UICONTROL Elementen die overeenkomen met de CSS-kiezer]** `#klaro .cm-btn-success`
 
@@ -200,7 +200,7 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 1. Voeg een actie toe gebruikend het Web SDK van het Experience Platform [!UICONTROL Extensie], **[!UICONTROL Type handeling]** van **[!UICONTROL Goedkeuring instellen]**, **[!UICONTROL Algemene instemming]** als **[!UICONTROL In]**.
 
-   ![Handeling voor inschakelen van regel](assets/consent-rule-optin-action.png)
+   ![Handeling voor inschakelen regel](assets/consent-rule-optin-action.png)
 
    Eén ding is dat dit [!UICONTROL Goedkeuring instellen] actie zal het eerste verzoek zijn dat uitgaat en de identiteit vaststelt . Daarom kan het belangrijk zijn om identiteiten op het eerste verzoek zelf te synchroniseren. Het identiteitsoverzicht kan worden toegevoegd aan [!UICONTROL Goedkeuring instellen] door een gegevenselement voor het type identiteit door te geven.
 
@@ -212,7 +212,7 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten beginnen wanneer een bezoeker opteert-binnen.
 
-![Optie voor verzending van berichten](assets/consent-post-user-optin.png)
+![Optie voor verzending van berichten met toestemming](assets/consent-post-user-optin.png)
 
 
 Voor meer informatie over toestemming in Web SDK, zie [Voorkeuren voor toestemming van klanten ondersteunen](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
@@ -224,4 +224,4 @@ Voor meer informatie over de [!UICONTROL Goedkeuring instellen] actie, zie [Goed
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

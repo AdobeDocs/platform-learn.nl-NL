@@ -4,9 +4,9 @@ description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Leer hoe u een gegevensstroom in Experience Platform maakt.
 
-Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van het Platform. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Netwerk van de Rand van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Zie de klasse [documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) of dit [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+Een gegevensstroom is een server-zijconfiguratie op het Netwerk van de Rand van het Platform. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Netwerk van de Rand van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Zie de klasse [documentatie](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) of dit [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
 ![Architectuur](assets/architecture.png)
 
@@ -55,7 +55,7 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
 ## Services toevoegen
 
-Wanneer u door (facultatief) gaat [Analyse](analytics.md) en [Experience Platform](platform.md) de lessen in dit leerprogramma, voegt u de diensten aan uw gegevensstroom toe om ervoor te zorgen dat wanneer Platform Mobiele SDK gegevens naar het Netwerk van de Rand verzendt, de gegevensstroom door:sturen die gegevens aan de gevormde diensten.
+Wanneer u door (facultatief) gaat [Analyse](analytics.md) en [Experience Platform](platform.md) de lessen in dit leerprogramma, voegt u de diensten aan uw gegevensstroom toe zodat de gegevens die naar het Netwerk van de Rand van het Platform worden verzonden door:sturen naar deze toepassingen.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Raadpleeg de documentatie voor meer informatie over gegevensstroominstellingen [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Raadpleeg de documentatie voor meer informatie over gegevensstroominstellingen [hier](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken tot stand te brengen.
 
 >[!SUCCESS]
 >
->U hebt nu een gegevensstroom voor de rest van de zelfstudie te gebruiken.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt nu een gegevensstroom voor de rest van de zelfstudie te gebruiken.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Volgende: **[Een eigenschap voor een tag configureren](configure-tags.md)**

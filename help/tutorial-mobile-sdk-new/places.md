@@ -3,9 +3,9 @@ title: Plaatsen gebruiken
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
    ![Bibliotheek maken](assets/places-create-library.png)
 1. Als u het dialoogvenster **[!UICONTROL Bibliotheken beheren]** dialoogvenster, selecteren **[!UICONTROL Sluiten]**.
 1. Terug naar **[!UICONTROL POI-beheer]**, selecteert u **[!UICONTROL POI&#39;s importeren]**.
-1. Selecteren **[!UICONTROL Start]** in t**[!UICONTROL De importplaatsen]**.
+1. Selecteren **[!UICONTROL Start]** in de **[!UICONTROL Plaatsen importeren]** in.
 1. Selecteren **[!DNL Luma]** van de lijst van bibliotheken,
 1. Selecteren **[!UICONTROL Volgende]**.
    ![Bibliotheek selecteren](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
       ![Tags, actie](assets/tags-action-mobile-core.png)
 
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Gegevens koppelen]** handeling.
-   1. Selecteren **[!UICONTROL Adobe Experience Platform Edge Network]** van de **[!UICONTROL Extensie]** lijst en selecteer **[!UICONTROL Door gebeurtenis naar Edge Network]**. Deze actie zorgt ervoor dat de gebeurtenis en de extra ladingsgegevens aan het Netwerk van de Rand door:sturen.
+   1. Selecteren **[!UICONTROL Adobe Experience Platform Edge Network]** van de **[!UICONTROL Extensie]** lijst en selecteer **[!UICONTROL Door gebeurtenis naar Edge Network]**. Deze actie zorgt ervoor dat de gebeurtenis en de extra ladingsgegevens aan het Netwerk van de Rand van het Platform door:sturen.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
 
 1. Als u de regel wilt opslaan, selecteert u **[!UICONTROL Opslaan in bibliotheek]**.
@@ -240,9 +240,9 @@ Uw instellingen valideren in Betrouwbaarheid:
 1. Selecteren **[!UICONTROL Opslaan]**.
 1. Selecteren **[!UICONTROL Toewijzen en simuleren]** in het linkerspoor.
 1. Verplaats de kaart naar een locatie van een van uw POI&#39;s.
-1. Selecteren ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI&#39;s laden simuleren.  Uw POI wordt geïdentificeerd gebruikend een cirkel en een speld.
+1. Selecteren ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) POI&#39;s laden simuleren. Uw POI wordt geïdentificeerd gebruikend een cirkel en een speld.
 1. Selecteer uw POI.
-1. Van popup uitgezocht ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Invoergebeurtenis simuleren]**.
+1. Selecteer in het pop-upmenu ![Tandwiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Invoergebeurtenis simuleren]**.
    ![Invoergebeurtenis simuleren](assets/places-simulate.png)
 1. Selecteren **[!UICONTROL Gebeurtenissen]** van de linkerspoorstaaf, en je zou de gebeurtenissen moeten zien die je simuleerde.
    ![Validatie van AJO-beslissingen](assets/places-events.png)
@@ -283,7 +283,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ]
    ```
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` functie. Voeg de volgende code toe:
 
    ```swift
    // Process geolocation event
@@ -320,7 +320,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 1. Verplaats (sleep) de kaart om ervoor te zorgen dat de blauwe middelste cirkel zich boven een van uw POI&#39;s bevindt, bijvoorbeeld Londen.
 
-1. Tik op <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in de tabel op de rode locatie met de pin.
+1. Tik op <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in het label op de rode locatie met de pin.
 
 1. Tik op het label van de POI, die het **[!UICONTROL Nearby POI]** blad.
 
@@ -344,6 +344,8 @@ U hebt een implementatie van de functionaliteit voor uw app gezien, voornamelijk
 
 >[!SUCCESS]
 >
->U hebt de app voor geolocatieservices nu ingeschakeld met de extensie Plaatsen in de Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt de app voor geolocatieservices nu ingeschakeld met de extensie Plaatsen in de Experience Platform Mobile SDK.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Gegevens toewijzen aan Adobe Analytics](analytics.md)**

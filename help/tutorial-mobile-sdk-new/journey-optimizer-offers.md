@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2630'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe u aanbiedingen van Journey Optimizer Decision Management in uw mobiele 
 
 Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op het juiste moment de beste aanbieding en ervaring bieden. Als u ze eenmaal hebt ontworpen, richt u zich op uw publiek met persoonlijke aanbiedingen.
 
-![Architectuur](assets/architecture-od.png)
+![Architectuur](assets/architecture-ajo.png)
 
 Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [Over Besluitbeheer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) voor meer informatie .
 
@@ -59,11 +59,11 @@ In deze les zult u
 
 ### Gegevensstroomconfiguratie bijwerken
 
-Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Network worden verzonden, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u uw gegevensstroom bij.
 
 1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
 1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
-1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Offer decisioning]**, **[!UICONTROL Randsegmentatie]**, en **[!UICONTROL Adobe Journey Optimizer]** zijn geselecteerd. Als u ook de les van het Doel volgt, zou u moeten selecteren **[!UICONTROL Aanpassingsdoelen]** ook. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
+1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Offer decisioning]**, **[!UICONTROL Randsegmentatie]**, en **[!UICONTROL Adobe Journey Optimizer]** zijn geselecteerd. Als u de les van het Doel zult doen, selecteer **[!UICONTROL Aanpassingsdoelen]**, ook. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
 1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]** .
 
    ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration-offers.png)
@@ -88,7 +88,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge Network 
 1. Selecteren **[!UICONTROL Bladeren]** in de bovenste balk.
 1. Selecteer het schema om het te openen.
 1. Selecteer in de Schema-editor de optie ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast Veldgroepen.
-1. In de **[!UICONTROL Veldgroepen toevoegen]** dialoogvenster, ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) zoeken naar `proposition`, selecteert u **[!UICONTROL Experience Event - Propositie-interacties]** en selecteert u **[!UICONTROL Veldgroepen toevoegen]**. Deze veldgroep verzamelt de gegevens van de ervaringsgebeurtenis die relevant zijn voor aanbiedingen: wat aanbod wordt gepresenteerd, als onderdeel van welke verzameling, beslissing en andere parameters (zie later in deze les). Maar ook wat er gebeurt met het aanbod: wordt het weergegeven, wordt er met elkaar omgesprongen, wordt het afgewezen, enzovoort.
+1. In de **[!UICONTROL Veldgroepen toevoegen]** dialoogvenster, ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) zoeken naar `proposition`, selecteert u **[!UICONTROL Experience Event - Propositie-interacties]** en selecteert u **[!UICONTROL Veldgroepen toevoegen]**. Deze veldgroep verzamelt de gegevens van de ervaringsgebeurtenis die relevant zijn voor aanbiedingen: wat aanbod wordt gepresenteerd, als onderdeel van welke verzameling, beslissing en andere parameters (zie later in deze les). Maar wat gebeurt er ook met het aanbod? Wordt het getoond, interactie met, gesloten, etc.
    ![Voorstelling](assets/schema-fieldgroup-proposition.png)
 1. Selecteren **[!UICONTROL Opslaan]** om de wijzigingen in uw schema op te slaan.
 
@@ -108,7 +108,7 @@ Uw instellingen valideren in Betrouwbaarheid:
 
 Voordat u aanbiedingen kunt maken, moet u definiëren hoe en waar deze aanbiedingen in de mobiele app kunnen worden geplaatst. In Beslissingsbeheer definieert u plaatsingen voor dit doel en definieert u een plaatsing voor het mobiele kanaal dat een JSON-payload ondersteunt:
 
-1. Selecteer in de interface van Journey Optimizer de optie ![Componenten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Componenten]** van **[!UICONTROL BESLISSINGSBEHEER]** in het linkerspoor.
+1. Selecteer in de gebruikersinterface van Journey Optimizer ![Componenten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Componenten]** van **[!UICONTROL BESLISSINGSBEHEER]** in het linkerspoor.
 
 1. Selecteren **[!UICONTROL Plaatsen]** in de bovenste balk.
 
@@ -145,7 +145,7 @@ De Mobile JSON-plaatsing maken:
          ```json
          { 
              "title": "Juno Jacket",
-             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
              "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
          }  
          ```
@@ -178,39 +178,37 @@ De Mobile JSON-plaatsing maken:
       | Luminantie - Fles in water met bevestigen | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luminantie - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
       | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - Aero Daily Fitness Tee | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | Luma - Aero Daily Fitness Tee | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
 1. Als laatste stap moet u een fallback-aanbieding maken. Dit is een aanbieding die naar klanten wordt gestuurd als ze niet in aanmerking komen voor andere aanbiedingen.
    1. Selecteren **[!UICONTROL Voorstel maken]**.
-   1. In de **[!UICONTROL Details]** stap van **[!UICONTROL Nieuwe persoonlijke aanbieding maken]**:
-   1. Voer een **[!UICONTROL Naam]** voor de aanbieding, bijvoorbeeld `Luma - Fallback Offer`en voert u een **[!UICONTROL Begindatum en -tijd]** en **[!UICONTROL Einddatum en -tijd]**.
-   1. Selecteren **[!UICONTROL Volgende]**.
+   1. In de **[!UICONTROL Nieuwe aanbieding]** dialoogvenster, selecteren **[!UICONTROL Persoonlijk aanbod]** en selecteert u **[!UICONTROL Volgende]**.
+   1. In de **[!UICONTROL Details]** stap van **[!UICONTROL Nieuwe fallback-aanbieding maken]**, voert u een **[!UICONTROL Naam]** voor de aanbieding, bijvoorbeeld `Luma - Fallback Offer`en selecteert u **[!UICONTROL Volgende]**.
 
-1. In de **[!UICONTROL Afbeeldingen toevoegen]** van de **[!UICONTROL Nieuwe persoonlijke aanbieding maken]** scherm:
-   1. Selecteren ![Mobiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobiel]** van **[!UICONTROL Kanaal]** en selecteert u **[!UICONTROL Mobile JSON]** van **[!UICONTROL Plaatsing]** lijst.
-   1. Selecteren **[!UICONTROL Aangepast]** for **[!UICONTROL Inhoud]**.
-   1. Selecteren **[!UICONTROL Inhoud toevoegen]**. In de **[!UICONTROL Aanpassing toevoegen]** dialoogvenster:
-      1. Voer de volgende JSON in:
+   1. In de **[!UICONTROL Afbeeldingen toevoegen]** stap van  **[!UICONTROL Nieuwe fallback-aanbieding maken]**:
+      1. Selecteren ![Mobiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobiel]** van **[!UICONTROL Kanaal]** en selecteert u **[!UICONTROL Mobile JSON]** van **[!UICONTROL Plaatsing]** lijst.
+      1. Selecteren **[!UICONTROL Aangepast]** for **[!UICONTROL Inhoud]**.
+      1. Selecteren **[!UICONTROL Inhoud toevoegen]**.
+      1. In de **[!UICONTROL Aanpassing toevoegen]** voert u de volgende JSON in en selecteert u **[!UICONTROL Opslaan]**:
 
          ```json
          {  
-             "title": "Luma",
-             "text": "Your store for sports wear and equipment.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "title": "Luma",
+            "text": "Your store for sports wear and equipment.", 
+            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
          }  
          ```
 
-      1. Selecteren **[!UICONTROL Opslaan]**.
-   1. Selecteren **[!UICONTROL Volgende]**.
+      1. Selecteren **[!UICONTROL Volgende]**.
 
 
-1. In de **[!UICONTROL Controleren]** stap van **[!UICONTROL Nieuwe gepersonaliseerde maken]** voorstel:
+1. In de **[!UICONTROL Controleren]** stap van **[!UICONTROL Nieuwe fallback maken]** voorstel:
    1. Bekijk het voorstel en selecteer vervolgens **[!UICONTROL Voltooien]**.
    1. In de **[!UICONTROL Aanbieding opslaan]** dialoogvenster, selecteren **[!UICONTROL Opslaan en goedkeuren]**.
 
-Je moet nu de volgende lijst met voorstellen hebben.
+Je moet nu de volgende lijst met voorstellen hebben:
 ![Lijst met aanbiedingen](assets/ajo-offers-list.png)
 
 
@@ -292,7 +290,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
 >
 
-1. Controleer in Xcode of [AEP optimaliseren](https://github.com/adobe/aepsdk-messaging-ios.git) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Controleer in Xcode of [AEP optimaliseren](https://github.com/adobe/aepsdk-messaging-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Zorgen `AEPOptimize` maakt deel uit van uw lijst met importbewerkingen.
 
@@ -317,6 +315,8 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
        Assurance.self
    ]
    ```
+
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL besluiten]** in de Xcode-projectnavigator. Werk de `activityId` en `placementId` waarden met de details van het beslissingsbereik die u hebt gekopieerd van de Journey Optimizer-interface.
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` functie. Voeg de volgende code toe:
 
@@ -356,9 +356,9 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * de voorstellen voor het huidige profiel ophaalt op basis van het beslissingsbereik (dat u hebt gedefinieerd in Journey Optimizer - Decision Management),
    * het aanbod uit het voorstel ophaalt;
    * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
-   * activeert de `displayed()` actie op de aanbieding die een gebeurtenis terug naar het Edge Network zal sturen om het aanbod te informeren, wordt weergegeven.
+   * activeert de `displayed()` actie op de aanbieding die een gebeurtenis naar het Edge Network terugstuurt om de aanbieding te melden, wordt weergegeven.
 
-1. Nog steeds in **[!DNL EdgeOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
+1. Nog steeds in **[!DNL EdgeOffersView]** voegt u de volgende code toe aan de `.onFirstAppear` modifier. Deze code zorgt ervoor dat callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
 
    ```swift
    // Invoke callback for offer updates
@@ -414,6 +414,8 @@ Nu hebt u alle gereedschappen om meer functionaliteit toe te voegen aan uw Journ
 
 >[!SUCCESS]
 >
->U hebt de app ingeschakeld om aanbiedingen weer te geven met de Journey Optimizer-beslissingsextensie voor de Experience Platform Mobile SDK.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt de app ingeschakeld om aanbiedingen weer te geven met de Journey Optimizer-beslissingsextensie voor de Experience Platform Mobile SDK.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[A/B-tests uitvoeren](target.md)**

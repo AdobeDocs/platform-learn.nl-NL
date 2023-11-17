@@ -4,9 +4,9 @@ description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experien
 
 >[!NOTE]
 >
->De mobiele SDK genereert een unieke identiteit in een eigen naamruimte, de zogenaamde Experience Cloud-id (ECID), wanneer de toepassing wordt geïnstalleerd. Deze ECID wordt opgeslagen in permanent geheugen op het mobiele apparaat en wordt bij elke hit verzonden. De ECID wordt verwijderd wanneer de gebruiker de app verwijdert of wanneer de gebruiker de algemene privacystatus van de Mobile SDK instelt op optedout. In de voorbeeldtoepassing Luma moet u de toepassing verwijderen en opnieuw installeren om een nieuw profiel met een eigen unieke ECID te maken.
+>De mobiele SDK genereert een unieke identiteit in een eigen naamruimte, de zogenaamde Experience Cloud-id (ECID), wanneer de toepassing wordt geïnstalleerd. Deze ECID wordt opgeslagen in permanent geheugen op het mobiele apparaat en wordt bij elke hit verzonden. De ECID wordt verwijderd wanneer de gebruiker de app verwijdert of wanneer de gebruiker de algemene privacystatus van de Mobile SDK instelt op opt-out. In de voorbeeldtoepassing Luma moet u de toepassing verwijderen en opnieuw installeren om een nieuw profiel met een eigen unieke ECID te maken.
 
 
 Een nieuwe naamruimte maken:
@@ -101,10 +101,10 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. Navigeren naar **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Aanmelden]** knop. Voeg de volgende code toe:
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Aanmelden]** knop. Voeg de volgende code toe:
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md)k
 
 >[!INFO]
 >
->De toepassing bevat geen code om de ECID opnieuw in te stellen. Dit betekent dat u de ECID alleen opnieuw kunt instellen (en effectief een nieuw profiel kunt maken met een nieuwe ECID op het apparaat) door de toepassing te verwijderen en opnieuw te installeren. Als u de reset van id&#39;s wilt implementeren, raadpleegt u de [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API-aanroepen. Houd er echter rekening mee dat wanneer u een id voor pushmeldingen gebruikt (zie [Pushmeldingen verzenden](journey-optimizer-push.md)), wordt die id een andere &#39;sticky&#39;-profielid op het apparaat.
+>De toepassing bevat geen code om de ECID opnieuw in te stellen. Dit betekent dat u de ECID alleen opnieuw kunt instellen (en daadwerkelijk een nieuw profiel met een nieuwe ECID kunt maken) door de toepassing te verwijderen en opnieuw te installeren. Als u de reset van id&#39;s wilt implementeren, raadpleegt u de [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API-aanroepen. Houd er echter rekening mee dat wanneer u een id voor pushmeldingen gebruikt (zie [Pushmeldingen verzenden](journey-optimizer-push.md)), wordt die id een andere &#39;sticky&#39;-profielid op het apparaat.
 
 
 >[!SUCCESS]
 >
->U hebt nu uw app ingesteld om de identiteiten in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.<br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt nu uw app ingesteld om de identiteiten in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Volgende: **[Profielgegevens verzamelen](profile.md)**
