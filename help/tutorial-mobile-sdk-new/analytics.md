@@ -4,7 +4,7 @@ description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen en toewijz
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Als u uw XDM-gegevens van het Edge-netwerk naar Adobe Analytics wilt verzenden, 
 
 ## Automatische toewijzing
 
-Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de volledige lijst [hier](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en).
+Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de volledige lijst [hier](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
 
 ### Voorbeeld 1 - s.products
 
@@ -237,6 +237,6 @@ Aanvullende informatie over verwerkingsregels en contextgegevens is te vinden [h
 
 >[!SUCCESS]
 >
->U hebt uw app zo ingesteld dat uw Experience Edge XDM-objecten worden toegewezen aan Adobe Analytics-variabelen, waardoor de Adobe Analytics-service in uw gegevensstroom kan worden gebruikt en waar van toepassing verwerkingsregels kunnen worden gebruikt.<br/> Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>U hebt uw app zo ingesteld dat uw Experience Edge XDM-objecten worden toegewezen aan Adobe Analytics-variabelen, waardoor de Adobe Analytics-service in uw gegevensstroom kan worden gebruikt en waar van toepassing verwerkingsregels kunnen worden gebruikt.<br/> Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Gegevens naar Experience Platform verzenden](platform.md)**
