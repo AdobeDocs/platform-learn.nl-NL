@@ -3,9 +3,9 @@ title: Het Experience Cloud implementeren in websites met tags
 description: Implementeer het Experience Cloud op websites met tags is het perfecte startpunt voor professionele ontwikkelaars of technische marketers die willen leren hoe ze de Adobe Experience Cloud-oplossingen op hun website kunnen implementeren.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandel
 ## De gereedschappen ophalen
 
 1. Omdat u bepaalde browserspecifieke extensies gaat gebruiken, raden we u aan de zelfstudie te voltooien met de opdracht [Chrome-webbrowser](https://www.google.com/chrome/)
-1. Voeg de [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extensie voor uw Chrome-browser
+1. Voeg de [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extensie voor uw Chrome-browser
 1. De HTML-voorbeeldpaginacode kopiëren
 
    +++HTML-voorbeeldcode

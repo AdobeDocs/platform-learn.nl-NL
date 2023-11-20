@@ -1,17 +1,17 @@
 ---
 title: Overschakelen van labelomgevingen met Adobe Experience Cloud Debugger
-description: Leer hoe u de Experience Cloud Debugger gebruikt om verschillende insluitcodes voor tags te laden. Deze les maakt deel uit van de zelfstudie Experience Cloud in websites implementeren.
+description: Leer hoe u het Experience Cloud Debugger kunt gebruiken om verschillende tags in te sluiten. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# Tagomgevingen wisselen met de Experience Cloud Debugger
+# Tagomgevingen wisselen met het Experience Cloud Debugger
 
-In deze les gebruikt u de [Adobe Experience Cloud Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) om de eigenschap tag te vervangen die op de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen eigenschap.
+In deze les gebruikt u de [Adobe Experience Platform Debugger-extensie](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om de eigenschap tag te vervangen die op de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen eigenschap.
 
 Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. U kunt uw productiewebsite in uw browser, maar met uw *ontwikkeling* tagomgeving. Hierdoor kunt u met vertrouwen wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases.  Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
 
@@ -19,10 +19,9 @@ Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u m
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * Platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-configuraties zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
 
 ## Leerdoelen
 
@@ -37,7 +36,7 @@ Aan het eind van deze les, zult u kunnen:
 
 1. In de **[!UICONTROL Ontwikkeling]** rij, klik het Install pictogram ![Installatiepictogram](images/launch-installIcon.png) om het modale
 
-1. Klik op het pictogram Kopiëren ![Pictogram Kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren
+1. Klik op het pictogram Copy ![Pictogram kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren
 
 1. Klikken **[!UICONTROL Sluiten]** om het modale
 
@@ -47,7 +46,7 @@ Aan het eind van deze les, zult u kunnen:
 
 1. Open de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) in uw Chrome-browser
 
-1. Open de [Experience Cloud Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) door op de knop ![Foutopsporingspictogram](images/icon-debugger.png) pictogram
+1. Open de [Experience Platform debugger-extensie](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door op de knop ![Foutopsporingspictogram](images/icon-debugger.png) pictogram
 
    ![Klik op het pictogram Foutopsporing](images/switchEnvironments-openDebugger.png)
 
@@ -71,6 +70,6 @@ Aan het eind van deze les, zult u kunnen:
 >
 >De foutopsporing slaat deze configuratie op en vervangt de insluitcodes van de tag wanneer u terugkeert naar de Luministensite. Het heeft geen invloed op andere sites die u in andere geopende tabbladen bezoekt. Als u wilt voorkomen dat Foutopsporing de insluitcode vervangt, klikt u op de knop **[!UICONTROL Verwijderen]** naast de insluitcode op het tabblad Gereedschappen van Foutopsporing.
 
-Terwijl u de zelfstudie voortzet, gebruikt u deze techniek om de Luministsite toe te wijzen aan uw eigen tageigenschap om de implementatie van de tag te valideren. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u deze techniek ook gebruiken om wijzigingen te valideren.
+Terwijl u de zelfstudie voortzet, gebruikt u deze techniek om de Luministsite toe te wijzen aan uw eigen tageigenschap om de implementatie van de tag te valideren. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u met dezelfde techniek wijzigingen valideren.
 
 [Volgende &quot;Voeg de Adobe Experience Platform Identity Service toe&quot; >](id-service.md)

@@ -2,7 +2,8 @@
 title: CSC Bootkamp - De Keten van de Levering van inhoud in 4 fasen
 description: Hoewel het lastig kan zijn om de stijgende vraag naar inhoud bij te houden, kunt u inhoud snel en gemakkelijk plannen, produceren en leveren met een goed ontworpen toeleveringsketen.
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -38,8 +39,8 @@ Theoretisch is het een proces dat bedrijven overal moet helpen hun inhoud snelle
 Om een nog betere blik bij gemeenschappelijke schuldigen achter gebroken ketens van de inhoudslevering te krijgen, helpt het om elk van de drie high-level fasen te bekijken:
 
 1. In de  **planning**  fase, het ontbreken van een uniform projectproces of een centrale manier om middelen te traceren leidt tot meerdere herzieningen, buitensporige kosten, prijsvertragingen en het onvermogen om werk in evenwicht te brengen. Bovendien leidt het verbreken van de verbinding tussen teamleden tot verspilde cycli en langzame prioriteitswijzigingen.
-2. Tijdens  **productie** Niet-verbonden systemen en losgekoppelde workflows beperken live samenwerken, de mogelijkheid om middelen te vinden, vertragingen en uitval. En omdat creatieve personen taken en middelen handmatig moeten bijhouden en herhalende taken handmatig moeten uitvoeren, zijn er hogere kosten en meer fouten.
-3. Wanneer het tijd is voor  **levering** Omdat er geen centraal systeem voor middelenbeheer bestaat — en omdat de automatisering beperkt is tot het schalen van inhoud — is het voor teams minder mogelijk om via verschillende kanalen samenhangende, persoonlijke ervaringen op te doen. Bovendien beperken gefragmenteerde leveringsgereedschappen en gegevens een nauwkeurige meting van de prestaties van de bedrijfsmiddelen.
+2. Tijdens  **productie** Niet-verbonden systemen en losgekoppelde workflows beperken live samenwerken, de mogelijkheid om bedrijfsmiddelen te zoeken, vertragingen en uitval. En omdat creatieve personen taken en middelen handmatig moeten bijhouden en herhalende taken handmatig moeten uitvoeren, zijn er hogere kosten en meer fouten.
+3. Wanneer het tijd is voor  **bezorging** Omdat er geen centraal systeem voor middelenbeheer bestaat — en omdat de automatisering beperkt is tot het schalen van inhoud — is het voor teams minder mogelijk om via verschillende kanalen samenhangende, persoonlijke ervaringen op te doen. Bovendien beperken gefragmenteerde leveringsgereedschappen en gegevens een nauwkeurige meting van de prestaties van de bedrijfsmiddelen.
 
 ![In een verbroken toeleveringsketen veroorzaken gefragmenteerde systemen chaos.](./images/fragmented-supply-chain.png)
 
@@ -51,7 +52,7 @@ Net als bij alles wat te lijden heeft onder verkeerde stappen en verkeerde commu
 
 Idealiter gebruikt uw marketingteam een oplossing voor werkbeheer die interfunctionele samenwerking toestaat en projecten verbindt met geplande, gegevensgestuurde resultaten. Het zou het marketing team ook moeten machtigen om werk strategisch prioriteit te geven en die prioriteiten aan uw creatief team mee te delen. Vanaf dat punt moeten de creatieve samenvatting, inhoudsversies, en terugkoppelen in elk project worden samengevoegd zodat uw team niet door oude e-mails hoeft te zoeken om te vinden wat zij zoeken.
 
-Uw creatieve team moet worden ingesteld met [een groot beheer van digitale middelen](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[ systeem](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) dat is geïntegreerd met uw creatieve en werkbeheertools. Op die manier is het voor hen gemakkelijk om relevante middelen te vinden, te gebruiken, bij te werken of opnieuw te gebruiken. Door dit alles te doen, kunt u uw go-aan-marktsnelheid verbeteren en interne verrichtingen en processen vereenvoudigen.
+Uw creatieve team moet worden ingesteld met [een groot beheer van digitale middelen](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[systeem](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) dat is geïntegreerd met uw creatieve en werkbeheertools. Op die manier is het voor hen gemakkelijk om relevante middelen te vinden, te gebruiken, bij te werken of opnieuw te gebruiken. Door dit alles te doen, kunt u uw go-aan-marktsnelheid verbeteren en interne verrichtingen en processen vereenvoudigen.
 
 ### Verhoog de efficiëntie in productie met naadloze workflows
 
@@ -67,17 +68,17 @@ Bovendien maakt een werkelijk grote toeleveringsketen van inhoud gebruik van een
 
 ![](./images/csc-in-action.png)
 
-## Bij Adobe bouwen we een &#39;best-in-class&#39;-toeleveringsketen voor inhoud
+## Bij de Adobe bouwen we een best-in-class leveringsketen voor inhoud
 
 Onze eigen [Adobe Experience Cloud business](https://business.adobe.com/) is gericht op het volgen van de eerder beschreven stappen om onze campagnes tot leven te brengen en veelvoudige segmenten te steunen. Onze visie was om wereldwijd aantrekkelijke inhoud te leveren die aansluit bij ons campagnerekader en onze boodschap.
 
-De sleutel tot het maken van end-to-end content is de koppeling van [Adobe Workfront](https://business.adobe.com/products/workfront/main.html/) en [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Laten we eens kijken hoe we ons proces benaderen met dezelfde drie fasen op hoog niveau.
+De sleutel tot het maken van end-to-end content is de koppeling van [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) en [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Laten we eens kijken hoe we ons proces benaderen met dezelfde drie fasen op hoog niveau.
 
 We beginnen met  **planning** , waar we honderden inhoudverzoeken van over het hele bedrijf innemen en deze vervolgens prioriteren in vergelijking met onze driemaandelijkse prioriteiten. Vervolgens gebruiken we een inhoudvoorstel-dashboard in Workfront om transparantie te bieden, zodat we ons kunnen aansluiten bij onze belanghebbenden en snel een aftekening kunnen maken door onze marketing-, creatieve, web- en verkoopteams. Door dit te doen, maken we een verslag van wat we voor het kwart vastleggen, en geven we onze creatieve en webteams ook zichtbaarheid in het totale aanvraagvolume zodat ze kunnen plannen om middelen te besteden. Bovendien kunnen managers de werklasten voor hun teams gemakkelijk controleren.
 
 Als we naar  **productie** goedgekeurde verzoeken worden omgezet in projecten die ons creatieve team meer details geven — zaken als creatieve briefjes, landingsplaatsen op het web, promotievereisten en nog veel meer. Onze inhoudstrategen werken vervolgens samen met belanghebbenden en creatieven in Workfront om de inhoud te beoordelen en de termijnen te halen. Omdat we dit allemaal doen in Workfront, hebben we dubbele stappen, overbodige e-mails en meerdere invullingen geëlimineerd, en we beginnen zelfs productiecycli te volgen op basis van het type middel. Dit laat ons personeel in evenwicht brengen en herprioriteren wanneer nodig, allen door een diepgaande blik op projectgegevens te krijgen.
 
-En wanneer onze inhoud klaar is voor  **levering** , wij [onze aanbiedingen, middelen en promotiemateriaal publiceren](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) naar Experience Manager Assets. Specifiek, gaat het allen in onze interne Hub van de Marketing, waar iedereen in het bedrijf het nauwkeurige stuk van inhoud snel kan vinden zij, juist wanneer zij het nodig hebben.
+En wanneer onze inhoud klaar is voor  **bezorging** , wij [onze aanbiedingen, middelen en promotiemateriaal publiceren](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) naar Experience Manager Assets. Specifiek, gaat het allen in onze interne Hub van de Marketing, waar iedereen in het bedrijf het nauwkeurige stuk van inhoud snel kan vinden zij, juist wanneer zij het nodig hebben.
 
 We hebben belangrijke voordelen gezien van het bouwen van een werkende toeleveringsketen voor inhoud. Specifiek, hebben wij onze dubbele gegevensingang in de helft gekrompen door aan één enkel werkbeheersysteem te migreren. En hoewel er altijd ruimte voor verbetering is, weten we dat we op de weg zijn naar een proces dat ons zal helpen één stap voor de verwachtingen van de klant te blijven.
 
@@ -91,7 +92,7 @@ De keten van de Levering van de inhoud is geen magische oplossing voor al uw pro
 
 ![Crawl Walrun](./images/crawl-walk-run.png)
 
-En als je eindelijk aan de slag bent, is er nog iets dat je uit je end-to-end-keten voor de levering van inhoud kunt krijgen: inzichten. Na enige tijd kunt u gaan onderzoeken hoe bepaalde acties invloed hebben op tijd, begroting, ... We zullen dit ook aan het einde van het bootkamp behandelen.
+En als je eindelijk aan de slag bent, is er nog iets dat je uit je end-to-end Content Supply Chain kan krijgen: inzichten. Na enige tijd kunt u gaan onderzoeken hoe bepaalde acties invloed hebben op tijd, begroting, ... We zullen dit ook aan het einde van het bootkamp behandelen.
 
 Volgende stap: [Creative Brief](./creative-brief.md)
 

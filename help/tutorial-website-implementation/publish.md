@@ -1,10 +1,10 @@
 ---
 title: De eigenschap tag publiceren
-description: Leer hoe u uw eigenschap tag kunt publiceren vanuit de ontwikkelomgeving naar de omgeving voor staging en productie. Deze les maakt deel uit van de zelfstudie Experience Cloud in websites implementeren.
+description: Leer hoe u uw eigenschap tag kunt publiceren vanuit de ontwikkelomgeving naar de omgeving voor staging en productie. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,9 @@ Nu u enkele belangrijke oplossingen van de Adobe Experience Cloud in uw ontwikke
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * Platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Edge-configuraties zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
 
 ## Leerdoelen
 
@@ -54,7 +53,7 @@ Nu u uw bibliotheek in de ontwikkelomgeving hebt gemaakt en gevalideerd, is het 
 
 In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw team te hebben QA de veranderingen in de het Opvoeren bibliotheek bevestigen. Ze kunnen dit doen met Foutopsporing.
 
-**De wijzigingen in de staging-bibliotheek valideren**
+**De wijzigingen in de testbibliotheek valideren**
 
 1. Open in de eigenschap Tag de optie [!UICONTROL Omgevingen] page
 
@@ -62,7 +61,7 @@ In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw
 
    ![Ga naar de pagina Milieu&#39;s en klik om het modale](images/publishing-getStagingCode.png)
 
-1. Klik op het pictogram Kopiëren ![Pictogram Kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren
+1. Klik op het pictogram Copy ![Pictogram kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren
 
 1. Klikken **[!UICONTROL Sluiten]** om het modale
 
@@ -70,7 +69,7 @@ In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw
 
 1. Open de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) in uw Chrome-browser
 
-1. Open de [Experience Cloud Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) door op de knop ![Foutopsporingspictogram](images/icon-debugger.png) pictogram
+1. Open de [Experience Platform debugger-extensie](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door op de knop ![Foutopsporingspictogram](images/icon-debugger.png) pictogram
 
    ![Klik op het pictogram Foutopsporing](images/switchEnvironments-openDebugger.png)
 
@@ -83,7 +82,7 @@ In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw
 
    ![tagomgeving weergegeven in Foutopsporing](images/switchEnvironments-debugger-save.png)
 
-1. Laad en controleer het Summiere lusje van Debugger opnieuw. Onder de sectie van de Lancering, zou u uw het Staging Bezit nu moeten zien wordt uitgevoerd, tonend uw bezitsnaam (d.w.z. &quot;Tags Tutorial&quot; of wat u ook maar een naam hebt gegeven aan uw eigenschap)!
+1. Laad en controleer het Summiere lusje van Debugger opnieuw. Onder de sectie Starten ziet u nu dat de eigenschap Staging is geïmplementeerd en de naam van uw eigenschap (dat wil zeggen &#39;tagzelfstudie&#39; of een andere naam voor uw eigenschap) wordt weergegeven!
 
    ![tagomgeving weergegeven in Foutopsporing](images/publishing-debugger-staging.png)
 
@@ -101,7 +100,7 @@ In het echte leven, zodra uw team QA door de veranderingen in het het Opvoeren m
 
    ![Klik op Goedkeuren](images/publishing-approve.png)
 
-1. De bibliotheek wordt nu weergegeven in het dialoogvenster [!UICONTROL Goedgekeurd] kolom in ongebouwde staat (gele punt):
+1. De bibliotheek wordt nu weergegeven in [!UICONTROL Goedgekeurd] kolom in ongebouwde staat (gele punt):
 
 1. Open het vervolgkeuzemenu en selecteer **[!UICONTROL Samenstellen en publiceren naar productie]**:
 
@@ -111,7 +110,7 @@ In het echte leven, zodra uw team QA door de veranderingen in het het Opvoeren m
 
    ![Klik op Publiceren](images/publishing-publish.png)
 
-1. De bibliotheek wordt nu weergegeven in het dialoogvenster [!UICONTROL Gepubliceerd] kolom:
+1. De bibliotheek wordt nu weergegeven in [!UICONTROL Gepubliceerd] kolom:
 
    ![Gepubliceerd](images/publishing-published.png)
 

@@ -1,9 +1,9 @@
 ---
 title: Adobe Target met tags toevoegen
-description: Leer hoe u Adobe Target implementeert met tags met at.js, een aanvraag voor het laden van een pagina, parameters, een aanvraag voor een bestelling en aangepaste code voor kop- en voetteksten. Deze les maakt deel uit van de zelfstudie Experience Cloud in websites implementeren.
+description: Leer hoe u Adobe Target implementeert met tags met at.js, een aanvraag voor het laden van een pagina, parameters, een aanvraag voor een bestelling en aangepaste code voor kop- en voetteksten. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 0%
@@ -20,8 +20,8 @@ In deze les zullen we de [Adobe Target-extensie](https://experienceleague.adobe.
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * platform launch (clientzijde) is nu **[!DNL tags]**
-> * platform launch Server-zijde is nu **[!DNL event forwarding]**
+> * Platform launch (clientzijde) is nu **[!DNL tags]**
+> * Platform launch Server-zijde is nu **[!DNL event forwarding]**
 > * Edge-configuraties zijn nu **[!DNL datastreams]**
 
 ## Leerdoelen
@@ -86,7 +86,7 @@ Open de voorbeeldpagina en plak deze vlak voor de code die u met de tag insluit,
 
 ![Houd de extensie boven](images/target-prehidingSnippet.png)
 
-Laad de voorbeeldpagina opnieuw. De pagina wordt drie seconden verborgen voordat deze wordt weergegeven. Dit gedrag is tijdelijk en zal verdwijnen nadat u Doel hebt opgesteld. Dit gedrag voor het vooraf verbergen wordt beheerd door twee configuraties helemaal aan het einde van het fragment, die kunnen worden aangepast maar meestal het beste links blijven bij de standaardinstellingen:
+Laad de voorbeeldpagina opnieuw. De pagina wordt drie seconden verborgen voordat deze wordt weergegeven. Dit gedrag is tijdelijk en zal verdwijnen nadat u Doel hebt opgesteld. Dit gedrag voor het voorverbergen wordt beheerd door twee configuraties helemaal aan het einde van het fragment, die kunnen worden aangepast maar meestal het beste links blijven bij de standaardinstellingen:
 
 * `body {opacity: 0 !important}` geeft de css-definitie aan die moet worden gebruikt voor het vooraf verbergen totdat Doel wordt geladen. Standaard wordt het gehele lichaam verborgen. Als u een verenigbare DOM structuur met een gemakkelijk identificeerbaar containerelement hebt dat alle inhoud onder uw navigatie verpakt, bijvoorbeeld, en u nooit uw navigatie wilde testen of personaliseren, kon u dit plaatsen gebruiken om het pre-verbergen tot dat containerelement te beperken.
 * `3000` Hiermee wordt de time-out-instelling voor het voorverbergen opgegeven. Als Doel niet in drie seconden is geladen, wordt de pagina standaard weergegeven. Dit zou zeer zeldzaam moeten zijn.
@@ -128,7 +128,7 @@ Op dit moment doet Target niets, dus is er niets te valideren.
 >
 >Elke versie van de extensie Doel wordt geleverd met een specifieke versie van at.js. Deze versie wordt vermeld in de extensiebeschrijving. U werkt de versie at.js bij door de uitbreiding van het Doel bij te werken.
 
-## Doel laden en aanvraag voor laden van pagina afvuren
+## Doel laden en verzoek pagina laden afvuren
 
 Marketers gebruiken Doel om de bezoekerservaring op de pagina te bepalen wanneer ze inhoud testen en als doel instellen. Vanwege deze belangrijke rol in de weergave van de pagina, moet u Doel zo vroeg mogelijk laden om de invloed op de zichtbaarheid van de pagina te minimaliseren. In deze sectie wordt de JavaScript-doelbibliotheek geladen—at.js—en wordt de aanvraag voor het laden van de pagina uitgevoerd (in eerdere versies van at.js wordt deze &#39;&#39;globale box&#39;&#39; genoemd).
 
@@ -162,7 +162,7 @@ Met de `Load Target` toegevoegde actie, at.js zal op de pagina laden. Er worden 
 
 1. Selecteren **[!UICONTROL Extension > Adobe Target v2]**
 
-1. Selecteren **[!UICONTROL Handelingstype > Aanvraag voor laden van brandpagina]**
+1. Selecteren **[!UICONTROL Handelingstype > Aanvraag voor laden van brandbluspagina]**
 
 1. Er zijn enkele configuraties beschikbaar voor de aanvraag voor het laden van de pagina die betrekking hebben op het al dan niet verbergen van de pagina en de CSS-kiezer voor het vooraf verbergen. Deze instellingen werken in combinatie met het vooraf verborgen fragment dat op de pagina is gecodeerd. Laat de standaardinstellingen staan.
 
@@ -178,7 +178,7 @@ Met de `Load Target` toegevoegde actie, at.js zal op de pagina laden. Er worden 
 
 ### De aanvraag voor het laden van de pagina valideren
 
-Nu u de extensie Doel v2 hebt toegevoegd en de opdracht `Load Target` en `Fire Page Load Request` handelingen, moet er een aanvraag voor het laden van een pagina worden gedaan op alle pagina&#39;s waarop de eigenschap tag wordt gebruikt.
+Nu u de extensie Doel v2 hebt toegevoegd en de opdracht `Load Target` en `Fire Page Load Request` handelingen, moet er een aanvraag voor het laden van een pagina zijn die wordt uitgevoerd op alle pagina&#39;s waarop de eigenschap tag wordt gebruikt.
 
 **De handelingen voor de aanvraag voor het laden van doel- en branddoelpagina valideren**
 
@@ -194,7 +194,7 @@ Nu u de extensie Doel v2 hebt toegevoegd en de opdracht `Load Target` en `Fire P
 
 1. In de `Launch` bevestigen dat `Target` verschijnt onder de `Extensions` kop
 
-1. In de `Target` -sectie, bevestigen dat uw bibliotheekversie van at.js wordt weergegeven
+1. In de `Target` , bevestig dat uw bibliotheekversie at.js wordt weergegeven
 
    ![Bevestig dat Doel in het Summiere lusje van Debugger verschijnt](images/target-summaryTab.png)
 
@@ -212,7 +212,7 @@ Het overgaan van parameters in het verzoek van het Doel voegt krachtige mogelijk
 
 1. `Add Params to All Requests`, die parameters toevoegt in alle doelverzoeken, bijvoorbeeld de aanvraag voor het laden van de pagina plus aanvullende verzoeken die zijn gedaan via aangepaste codesacties of die op uw site zijn gecodeerd (equivalent aan de [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) methode)
 
-Deze handelingen kunnen worden gebruikt *voor* de `Load Target` actie en kan verschillende parameters op verschillende pagina&#39;s plaatsen die op uw regelconfiguraties worden gebaseerd. Gebruik de regelbestelfunctie die u hebt gebruikt bij het instellen van de id&#39;s van de klant met de identiteitsservice om aanvullende parameters in te stellen voor de `Library Loaded` -gebeurtenis voordat de regel de aanvraag voor het laden van de pagina afsluit.
+Deze handelingen kunnen worden gebruikt *voor* de `Load Target` actie en kan verschillende parameters op verschillende pagina&#39;s plaatsen die op uw regelconfiguraties worden gebaseerd. Gebruik de regelbestelfunctie die u hebt gebruikt bij het instellen van de id&#39;s van de klant met de identiteitsservice om aanvullende parameters in te stellen voor de `Library Loaded` -gebeurtenis voordat de regel de aanvraag voor het laden van de pagina afvaagt.
 >[!TIP]
 >
 >Aangezien de meeste implementaties de aanvraag voor het laden van de pagina gebruiken voor het leveren van activiteiten, volstaat het gewoonlijk om alleen de `Add Params to Page Load Requests` handeling.
@@ -279,7 +279,7 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 
 Net als bij aanvraagparameters worden profielparameters ook doorgegeven via de aanvraag Doel. Profielparameters worden echter opgeslagen in de database van het bezoekersprofiel van het doel en blijven voor de [duur van het profiel van de bezoeker](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html). U kunt ze instellen op de ene pagina van uw site en ze gebruiken in doelactiviteiten op een andere pagina. Hier is een voorbeeld van een automobielwebsite. Wanneer een bezoeker naar een pagina met voertuigen gaat, kunt u een profielparameter &quot;profile.lastViewed=sportscar&quot; doorgeven om de interesse van de bezoeker in dat voertuig te registreren. Wanneer de bezoeker naar andere, niet-voertuigpagina&#39;s bladert, kunt u inhoud als doel instellen op basis van het laatst bekeken voertuig.  Profielparameters zijn ideaal voor kenmerken die zelden worden gewijzigd of die alleen beschikbaar zijn op bepaalde pagina&#39;s
 
-In deze zelfstudie zult u geen profielparameters doorgeven, maar de workflow is bijna gelijk aan wat u zojuist hebt gedaan bij het doorgeven van de `pageName` parameter. Het enige verschil is dat u parameternamen voor profielen als `profile.` voorvoegsel. Zo ziet een profielparameter met de naam &quot;userType&quot; eruit in het dialoogvenster `Add Params to Page Load Request` handeling:
+In deze zelfstudie zult u geen profielparameters doorgeven, maar de workflow is bijna gelijk aan wat u zojuist hebt gedaan toen u de `pageName` parameter. Het enige verschil is dat u parameternamen voor profielen als `profile.` voorvoegsel Zo ziet een profielparameter met de naam &quot;userType&quot; eruit in het dialoogvenster `Add Params to Page Load Request` handeling:
 
 ![Een profielparameter instellen](images/target-profileParameter.png)
 
@@ -343,13 +343,13 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 >
 >Met de Adobe Experience Platform Identity Service kunt u meerdere id&#39;s naar de Service verzenden. Alleen de eerste id wordt echter naar Target verzonden.
 
-### De parameter Eigenschaptoken toevoegen
+### De parameter voor het token van eigenschappen toevoegen
 
 >[!NOTE]
 >
 >Dit is een optionele exercitie voor Target Premium-klanten.
 
-Het bezitstoken is een gereserveerde parameter die met de Premie van het Doel wordt gebruikt [Machtigingen voor zakelijke gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) gebruiken. Het wordt gebruikt om verschillende digitale eigenschappen te bepalen zodat de verschillende leden van een Organisatie van de Experience Cloud verschillende toestemmingen op elk bezit kunnen worden toegewezen. U wilt bijvoorbeeld dat één groep gebruikers doelactiviteiten kan instellen op uw website, maar niet in uw mobiele toepassing.
+Het bezitstoken is een gereserveerde parameter die met de Premie van het Doel wordt gebruikt [Machtigingen voor zakelijke gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) gebruiken. Het wordt gebruikt om verschillende digitale eigenschappen te bepalen zodat de verschillende leden van een Organisatie van het Experience Cloud verschillende toestemmingen op elk bezit kunnen worden toegewezen. U wilt bijvoorbeeld dat één groep gebruikers doelactiviteiten kan instellen op uw website, maar niet in uw mobiele toepassing.
 
 De eigenschappen van het doel zijn analoog aan etiketeigenschappen en de rapportreeksen van Analytics. Een onderneming met meerdere merken, websites en marketingteams kan voor elke website of mobiele app een andere doeleigenschap, tag-eigenschap en analytische rapportsuite gebruiken. De eigenschappen van markeringen worden onderscheiden door hun insluitcodes, de rapportreeksen van Analytics worden onderscheiden door hun identiteitskaart van de rapportreeks, en de eigenschappen van het Doel worden verschillend door hun bezit symbolische parameter.
 
@@ -432,7 +432,7 @@ De beste praktijk is om een verzoek tot bevestiging van de bestelling in alle or
 
 Klanten die de integratie Analytics for Target (A4T) voor het grootste deel van hun rapportage gebruiken, willen mogelijk ook het orderverzoek implementeren als ze Automated Personalization-activiteiten gebruiken, die geen A4T ondersteunen. Bovendien is het orderverzoek een essentieel element in Recommendations-implementaties, waarbij algoritmen op basis van aankoopgedrag worden ingeschakeld. Voor de meest recente informatie over A4T-ondersteuning raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
-Het verzoek om bevestiging van de bestelling moet worden uitgevoerd vanuit een regel die alleen wordt geactiveerd op de pagina of gebeurtenis waarin uw bestelling wordt bevestigd. Het kan vaak worden gecombineerd met een regel die de Adobe Analytics-aankoopgebeurtenis instelt. Het moet worden gevormd gebruikend de actie van de Code van de Douane van de uitbreiding van de Kern, gebruikend de aangewezen gegevenselementen om ordeId, orderTotal, en productPurchasedId parameters te plaatsen.
+Het verzoek om bevestiging van de bestelling moet worden uitgevoerd vanuit een regel die alleen wordt geactiveerd op de pagina of gebeurtenis waarin uw bestelling wordt bevestigd. Vaak kan dit worden gecombineerd met een regel die de Adobe Analytics-aankoopgebeurtenis instelt. Het moet worden gevormd gebruikend de actie van de Code van de Douane van de uitbreiding van de Kern, gebruikend de aangewezen gegevenselementen om ordeId, orderTotal, en productPurchasedId parameters te plaatsen.
 
 Voeg de gegevenselementen en regel toe die we nodig hebben om een aanvraag voor bevestiging van de bestelling in te dienen op de Luma-site. Aangezien u reeds verscheidene gegevenselementen hebt gecreeerd, zullen deze instructies worden afgekort.
 
@@ -441,7 +441,7 @@ Voeg de gegevenselementen en regel toe die we nodig hebben om een aanvraag voor 
 1. Klikken **[!UICONTROL Gegevenselementen]** in de linkernavigatie
 1. Klikken **[!UICONTROL Gegevenselement toevoegen]**
 1. Geef het gegevenselement een naam `Order Id`
-1. Selecteren **[!UICONTROL Type gegevenselement > JavaScript-variabele]**
+1. Selecteren **[!UICONTROL Gegevenselement Type > JavaScript-variabele]**
 1. Gebruiken `digitalData.cart.orderId` als de `JavaScript variable name`
 1. Schakel de optie `Clean text` in
 1. Klikken **[!UICONTROL Opslaan in bibliotheek]**
@@ -451,7 +451,7 @@ Voeg de gegevenselementen en regel toe die we nodig hebben om een aanvraag voor 
 
 1. Klikken **[!UICONTROL Gegevenselement toevoegen]**
 1. Geef het gegevenselement een naam `Cart Amount`
-1. Selecteren **[!UICONTROL Type gegevenselement > JavaScript-variabele]**
+1. Selecteren **[!UICONTROL Gegevenselement Type > JavaScript-variabele]**
 1. Gebruiken `digitalData.cart.cartAmount` als de `JavaScript variable name`
 1. Schakel de optie `Clean text` in
 1. Klikken **[!UICONTROL Opslaan in bibliotheek]**
@@ -522,7 +522,7 @@ Nu moeten wij een regel tot stand brengen om het verzoek van de ordesbevestiging
       });
       ```
 
-   1. Klikken **[!UICONTROL Opslaan]** om de aangepaste code op te slaan
+   1. Klikken **[!UICONTROL Opslaan]** de aangepaste code opslaan
    1. Klikken **[!UICONTROL Wijzigingen behouden]** om de handeling te behouden
 1. Klikken **[!UICONTROL Opslaan in bibliotheek en samenstellen]**
 
@@ -564,12 +564,12 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 
 Er zijn zeldzame gevallen waarin u een ander doelverzoek moet indienen dan het verzoek om pagina te laden en de bestelling te bevestigen. Soms worden bijvoorbeeld belangrijke gegevens die u voor personalisatie wilt gebruiken, niet op de pagina gedefinieerd vóór de insluitcodes van de tag. Deze kunnen onderaan op de pagina worden gecodeerd of worden geretourneerd door een asynchrone API-aanvraag. Deze gegevens kunnen naar Target worden verzonden met behulp van een extra aanvraag, maar het is niet optimaal om deze aanvraag voor de levering van inhoud te gebruiken omdat de pagina al zichtbaar is. Deze gegevens kunnen worden gebruikt om het bezoekersprofiel te verrijken voor later gebruik (met behulp van profielparameters) of om de Recommendations-catalogus te vullen.
 
-In deze omstandigheden kunt u de handeling Aangepaste code in de Core-extensie gebruiken om een aanvraag uit te voeren met de opdracht [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) en [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) methoden. Dit lijkt sterk op wat u zojuist deed in de [Bevestigingsaanvraag voor bestelling](#order-confirmation-request) oefening, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Zorg ervoor dat u de **[!UICONTROL Doel laden]** handeling voordat u doelverzoeken vanuit aangepaste code maakt.
+In deze omstandigheden kunt u de handeling Aangepaste code in de Core-extensie gebruiken om een aanvraag uit te voeren met de opdracht [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) en [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) methoden. Dit lijkt sterk op wat u zojuist deed in de [Bevestigingsaanvraag voor bestelling](#order-confirmation-request) oefening, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Gebruik de **[!UICONTROL Doel laden]** handeling voordat u doelverzoeken vanuit aangepaste code maakt.
 
 ## Bibliotheekkoptekst en Bibliotheekvoettekst
 
 Het scherm Edit at.js in de gebruikersinterface van het Doel heeft plaatsen waarin u douane JavaScript kunt kleven die onmiddellijk voor of na het at.js- dossier zal uitvoeren. De bibliotheekkoptekst wordt soms gebruikt om de instellingen van at.js te overschrijven via het dialoogvenster
-[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) gegevens van derden die [Gegevensleveranciers](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) gebruiken. De bibliotheekvoettekst wordt soms gebruikt om toe te voegen [at.js, aangepaste gebeurtenis](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html) listeners.
+[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) gegevens van derden die [Gegevensleveranciers](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) gebruiken. De bibliotheekvoettekst wordt soms gebruikt om toe te voegen [at.js, aangepaste gebeurtenis](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) listeners.
 
 Als u deze mogelijkheid in tags wilt repliceren, gebruikt u gewoon de handeling Aangepaste code in de Core-extensie en voert u de handeling voor (bibliotheekkoptekst) of na (Bibliotheekvoettekst) de handeling Doel laden uit. Dit kan in de zelfde regel worden gedaan zoals `Load Target` handeling (zoals hieronder afgebeeld) of in afzonderlijke regels met gebeurtenissen of orderinstellingen die op betrouwbare wijze worden geactiveerd voor of na de regel die `Load Target`:
 
