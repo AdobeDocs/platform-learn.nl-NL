@@ -4,9 +4,9 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de verei
 >
 >Als deel van dit leerprogramma, creeert u schema&#39;s, datasets, identiteiten, etc. Als meerdere personen deze zelfstudie in één sandbox doorlopen, kunt u bij het maken van deze objecten overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Voeg bijvoorbeeld ` - <your name or initials>` op de naam van het object dat u moet maken.
 
+>[!NOTE]
+>
+>U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+
 
 ## De app Luma downloaden
 
@@ -91,11 +95,9 @@ U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen 
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de Experience Platform Mobiele SDK code u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
 1. [Voltooien](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een versie met de volledige implementatie ter referentie.
 
+Als u alleen met de uiteindelijke app wilt experimenteren, kunt u de app ook rechtstreeks downloaden vanuit de Apple App Store.
 
->[!NOTE]
->
->U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 Laten we beginnen!
 
