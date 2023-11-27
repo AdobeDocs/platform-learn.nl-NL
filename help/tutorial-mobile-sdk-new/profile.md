@@ -3,7 +3,7 @@ title: Profielgegevens verzamelen
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -96,8 +96,8 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. Voer de app uit om u aan te melden en te communiceren met een product.
 
-   1. Verplaats het pictogram Verzekering naar links.
    1. Selecteren **[!UICONTROL Home]** in de tabbalk.
+   1. Verplaats het pictogram Verzekering naar links.
    1. Als u het aanmeldingsblad wilt openen, selecteert u de optie <img src="assets/login.png" width="15" /> knop.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2672'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,7 @@ De Mobile JSON-plaatsing maken:
    1. Selecteren ![Mobiel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobiel]** van **[!UICONTROL Kanaal]** en selecteert u **[!UICONTROL Mobile JSON]** van de **[!UICONTROL Plaatsing]** lijst.
    1. Selecteren **[!UICONTROL Aangepast]** for **[!UICONTROL Inhoud]**.
    1. Selecteren **[!UICONTROL Inhoud toevoegen]**. In de **[!UICONTROL Aanpassing toevoegen]** dialoogvenster:
+      1. In geval van een [!UICONTROL Modus] kiezer beschikbaar is, controleer of deze is ingesteld op **[!UICONTROL JSON]**.
       1. Voer de volgende JSON in:
 
          ```json
@@ -348,7 +349,8 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
      ]
      ```
 
-     U kunt echter elke gewenste implementatie gebruiken om ervoor te zorgen dat de Optimize API&#39;s de juiste parameters krijgen (`activityId`, `placementId` en `itemCount`), om een geldige waarde samen te stellen [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) -object voor uw implementatie.
+     U kunt echter elke gewenste implementatie gebruiken om ervoor te zorgen dat de Optimize API&#39;s de juiste parameters krijgen (`activityId`, `placementId` en `itemCount`), om een geldige waarde samen te stellen [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) -object voor uw implementatie. <br/>Voor uw informatie: de andere sleutelwaarden in de `decisions.json` Deze bestanden zijn voor toekomstig gebruik en zijn niet relevant en worden momenteel in deze les en als onderdeel van de zelfstudie gebruikt.
+
    * roept twee API&#39;s aan: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  en [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Met deze functies worden alle in de cache opgeslagen voorstellingen gewist en worden de voorstellingen voor dit profiel bijgewerkt.
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalisatie]** > **[!UICONTROL EdgeOffersView]** in de Xcode-projectnavigator. Zoek de `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` en inspecteer de code van deze functie. Het belangrijkste onderdeel van deze functie is de [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API-aanroep, welke

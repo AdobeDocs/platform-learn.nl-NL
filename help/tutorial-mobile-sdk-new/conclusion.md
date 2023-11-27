@@ -4,9 +4,9 @@ description: Wat moet u doen nadat de zelfstudie is voltooid
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,7 @@ En er is altijd nog meer te leren! Om op uw implementatie voort te bouwen, zijn 
 * **Meer informatie over Experience Platform**. Meer informatie over hoe u gegevens uit andere bronnen kunt opnemen en deze kunt combineren met uw mobiele SDK-gegevens, in [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**Gefeliciteerd!** U hebt deze zelfstudie over de mobiele SDK van het Experience Platform voltooid. U kunt de zelfstudie regelmatig opnieuw bekijken, aangezien we updates uitvoeren en meer inhoud toevoegen.<br/><br/>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

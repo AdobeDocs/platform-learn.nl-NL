@@ -3,9 +3,9 @@ title: Gebeurtenisgegevens bijhouden
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]**.
 
-   1. Voeg de volgende gemarkeerde code toe aan de knop Aanmelden:
+   1. Voeg de volgende gemarkeerde code toe aan de `Button("Login") {` sluiting:
 
       ```swift
       // Send app interaction event

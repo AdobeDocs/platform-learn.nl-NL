@@ -4,9 +4,9 @@ description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. Instellen `IdentityItem` objecten voor e-mail- en CRM-id.
+   1. Instellen `IdentityItem` objecten voor e-mail- en CRM-id. Adobe raadt aan identiteiten die een persoon vertegenwoordigen, zoals Luma CRM-id, als primaire identiteit te verzenden. Als de identiteitskaart de persoon-id bevat (bijvoorbeeld Luma CRM-id), wordt de persoon-id de primaire identiteit. Anders wordt ECID de primaire identiteit. Het plaatsen van een persoonsidentiteitskaart als primaire identiteitskaart vergemakkelijkt efficiëntere raadplegingen van een profiel in verdere API vraag.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. Hiermee voegt u deze `IdentityItem` objecten naar de `IdentityMap` object.
 

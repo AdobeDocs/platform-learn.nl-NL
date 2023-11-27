@@ -4,9 +4,9 @@ description: Leer hoe u de betrouwbaarheidsextensie implementeert in een mobiele
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Selecteren **[!DNL Luma]** in de projectnavigator.
 1. Selecteer de **[!DNL Luma]** doel.
 1. Selecteer de **Info** tab.
-1. Als u een basis-URL wilt toevoegen, schuift u omlaag naar **URL-typen** en selecteert u de **+** knop.
+1. Omlaag schuiven naar **URL-typen (1)** en open de sectie met de chevron (>) als er nog geen open sectie is.
 1. Set **Id** naar de bundel-id van uw keuze en stel een **URL-schema&#39;s** van uw keuze.
 
    ![verzekerings-URL](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundle identifier, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`.<br/>Gebruik op dezelfde manier een uniek URL-schema en vervang de reeds opgegeven `lumatutorialswiftui` met uw unieke URL-schema.
+   >Zorg ervoor dat u een _uniek_ bundle identifier, dus vervang de `com.adobe.luma.tutorial.swiftui` bundle identifier, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`.<br/>Gebruik op dezelfde manier een uniek URL-schema, dus vervang de reeds opgegeven `lumatutorialswiftui` met uw unieke URL-schema.
 
 Voor meer informatie over URL-schema&#39;s in iOS raadpleegt u [Apple-documentatie](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
