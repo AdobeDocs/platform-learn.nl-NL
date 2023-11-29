@@ -3,9 +3,9 @@ title: Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implementeert. Deze zelfstudie begeleidt u door een implementatie van Experience Cloud-toepassingen in een voorbeeldtoepassing Swift.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,10 @@ In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de verei
 >
 >Als deel van dit leerprogramma, creeert u schema&#39;s, datasets, identiteiten, etc. Als meerdere personen deze zelfstudie in één sandbox doorlopen, kunt u bij het maken van deze objecten overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Voeg bijvoorbeeld ` - <your name or initials>` op de naam van het object dat u moet maken.
 
+## Versiehistorie
+
+* 29 nov. 2023: ingrijpende revisie met nieuwe voorbeeldapp en nieuwe lessen voor in-app messaging, beslissingsbeheer en Adobe Target.
+* 9 mrt. 2022: eerste publicatie
 
 ## De app Luma downloaden
 
