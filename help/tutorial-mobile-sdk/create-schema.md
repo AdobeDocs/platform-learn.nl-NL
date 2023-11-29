@@ -1,11 +1,11 @@
 ---
-title: Een XDM-schema maken
+title: Een XDM-schema maken voor de implementatie van Platform Mobile SDK
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1510'
 ht-degree: 0%
 
 ---
@@ -14,25 +14,21 @@ ht-degree: 0%
 
 Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 
->[!INFO]
->
-> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
-
 Standaardisering en interoperabiliteit zijn de belangrijkste concepten achter Adobe Experience Platform. Het Model van Gegevens van de ervaring (XDM), die door Adobe wordt gedreven, is een inspanning om de gegevens van de klantenervaring te standaardiseren en schema&#39;s voor het beheer van de klantenervaring te bepalen.
 
 ## Wat zijn XDM-schema&#39;s?
 
-XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities die om het even welke toepassing toestaan om met de diensten van het Platform te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U kunt waardevolle inzichten van klantenacties bereiken, klantenpubliek door segmenten bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uitdrukken.
+XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities die om het even welke toepassing toestaan om met de diensten van het Platform te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U krijgt waardevolle inzichten van klantenacties, bepaalt klantenpubliek door segmenten, en gebruikt klantenattributen voor verpersoonlijkingsdoeleinden.
 
 Het Experience Platform gebruikt schema&#39;s om de structuur van gegevens op een verenigbare en herbruikbare manier te beschrijven. Door gegevens consistent in verschillende systemen te definiëren, wordt het eenvoudiger om betekenis te behouden en zo waarde te verkrijgen van gegevens.
 
 Voordat gegevens in Platform kunnen worden opgenomen, moet een schema worden samengesteld om de gegevensstructuur te beschrijven en beperkingen te bieden aan het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied.
 
-Voor meer informatie over het model van de schemacompositie, met inbegrip van ontwerpprincipes en beste praktijken, zie [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) of de cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
+Voor meer informatie over het model van de schemacompositie, met inbegrip van ontwerpprincipes, en beste praktijken, zie [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) of de cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
 
 >[!TIP]
 >
->Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken.
+>Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken. Zie [Creeer en handhaaf een Document van de Verwijzing van het Ontwerp van de Oplossing (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) voor meer informatie .
 
 ## Vereisten
 
@@ -50,20 +46,22 @@ In deze les zult u:
 
 1. Log in bij de Adobe Experience Cloud.
 
-1. Open de app-switch en selecteer **[!UICONTROL Gegevensverzameling]**
-
-   ![3x3 drop-down](assets/mobile-schema-navigate1.png)
-
 1. Zorg ervoor dat u zich in de sandbox Experience Platform bevindt die u voor deze zelfstudie gebruikt.
+
+1. App-schakeloptie openen ![App Switcher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  (rechtsboven),
+
+1. Selecteren **[!UICONTROL Gegevensverzameling]** in het menu.
+
+   ![Aanmelden bij Experience Cloud](assets/experiencecloud-login.png)
 
    >[!NOTE]
    >
-   > Klanten van platformgebaseerde toepassingen zoals Real-Time CDP dienen een ontwikkelingssandbox te gebruiken voor deze zelfstudie. Andere klanten gebruiken de standaardproductiesandbox.
+   > Klanten van platformgebaseerde toepassingen zoals Real-Time CDP dienen een ontwikkelingssandbox te gebruiken voor deze zelfstudie. Andere klanten gebruiken de standaardproductiestandaard.
 
 
-1. Selecteren **[!UICONTROL Schemas]** krachtens **[!UICONTROL Gegevensbeheer]**.
+1. Selecteren **[!UICONTROL Schemas]** krachtens **[!UICONTROL Gegevensbeheer]** in het linkerspoor.
 
-   ![tags home screen](assets/mobile-schema-navigate3.png)
+   ![tags home screen](assets/mobile-schema-navigate.png)
 
 U bevindt zich nu op de pagina met hoofdschema&#39;s en krijgt een lijst met bestaande schema&#39;s te zien. U kunt ook tabbladen zien die overeenkomen met de kernelementen van een schema:
 
@@ -96,31 +94,48 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 ## Een schema maken
 
-1. Selecteren **[!UICONTROL Schema maken]** om het vervolgkeuzemenu met opties weer te geven, selecteert u **[!UICONTROL XDM ExperienceEvent]**.
+1. Selecteren **[!UICONTROL Schema maken]**.
 
-   ![ExperienceEvent selecteren vanuit vervolgkeuzelijst](assets/mobile-schema-create.png)
+1. In de **[!UICONTROL Een klasse selecteren]** van de **[!UICONTROL Schema maken]** wizard, selecteert u **[!UICONTROL Experience Event]** ondergronds **[!UICONTROL Selecteer een basisklasse voor dit schema]**.
+
+1. Selecteren **[!UICONTROL Volgende]**.
+
+   ![Basisklasse Schema Wizard](assets/schema-wizard-base-class.png)
+
+1. In de **[!UICONTROL Naam en revisie]** van de **[!UICONTROL Schema maken]** wizard, voert u een **[!UICONTROL Weergavenaam schema]** bijvoorbeeld `Luma Mobile Event Schema` en [!UICONTROL Beschrijving]bijvoorbeeld `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Schema - Joe Smith` in plaats van `Luma Mobile App Event Schema`. Zie ook de opmerking in [Overzicht](overview.md).
+
+1. Selecteren **[!UICONTROL Voltooien]** om de wizard te voltooien.
+
+   ![Naam schema en revisie](assets/schema-wizard-name-and-review.png)
+
+
+1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Toevoegen** naast **[!UICONTROL Veldgroepen]**.
+
+   ![Veldgroep toevoegen](assets/add-field-group.png)
 
 1. Zoeken naar `Consumer Experience Event`.
 
-1. U kunt de velden voorvertonen en/of de beschrijving lezen voor meer informatie voordat u selecteert.
+1. Selecteren ![Voorvertoning](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Preview_18_N.svg) om een voorvertoning van de velden weer te geven en/of de beschrijving voor meer informatie te lezen voordat u een veldgroep selecteert.
 
-1. Schakel het selectievakje in en **[!UICONTROL Veldgroepen toevoegen]**.
+1. Selecteren **Consumentenervaringsgebeurtenis**.
 
-   ![Veldgroep selecteren](assets/mobile-schema-select-field-groups.png)
+1. Selecteren **[!UICONTROL Veldgroepen toevoegen]**.
+
+   ![Veldgroep selecteren](assets/schema-select-field-groups.png)
 
    U wordt teruggebracht naar het hoofdscherm van de schemacompositie waar u alle beschikbare gebieden kunt zien.
 
-1. Geef uw schema een naam door te selecteren **[!UICONTROL Naamloos schema]** van linksboven en vervolgens een **[!UICONTROL Weergavenaam]** &amp; **[!UICONTROL Beschrijving]** bijvoorbeeld `Luma Tutorial Mobile` en `"Luma App" schema for Adobe Tutorial`
-
 1. Selecteren **[!UICONTROL Opslaan]**.
-
-   ![Selecteren toepassen](assets/mobile-schema-name-save.png)
 
 >[!NOTE]
 >
->Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
->
->De `Consumer Experience Event` heeft een gegevenstype genaamd `Web information`, waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
+>Houd er rekening mee dat u niet alle velden in een groep hoeft te gebruiken. U kunt ook velden verwijderen om het schema beknopt en begrijpelijk te houden. Als het nuttig is, kunt u aan een schema als lege gegevenslaag denken. In uw app vult u de relevante waarden op het juiste moment in.
+
+De [!UICONTROL Consumentenervaringsgebeurtenis] veldgroep heeft een gegevenstype genaamd [!UICONTROL Webinformatie], waarin gebeurtenissen zoals paginaweergave en koppelingsklikken worden beschreven. Op het moment van schrijven is er geen pariteit voor mobiele apps aan deze functie, dus gaat u uw eigen functie maken.
 
 ## Een aangepast gegevenstype maken
 
@@ -129,52 +144,55 @@ Eerst maakt u een aangepast gegevenstype waarin de twee gebeurtenissen worden be
 * Schermweergave
 * Toepassingsinteractie
 
-1. Selecteer de **[!UICONTROL Gegevenstypen]** tab, dan selecteren **[!UICONTROL Gegevenstype maken]**.
+1. Selecteer de **[!UICONTROL Gegevenstypen]** tab.
 
-   ![Het menu Gegevenstype selecteren](assets/mobile-schema-datatype-create.png)
+1. Selecteren **[!UICONTROL Gegevenstype maken]**.
 
-1. Geef het een **[!UICONTROL Weergavenaam]** en **[!UICONTROL Beschrijving]** bijvoorbeeld `App Information` en `Custom data type describing "Screen Views" & "App Actions"`
+   ![Het menu Gegevenstype selecteren](assets/schema-datatype-create.png)
 
-   ![Naam en beschrijving opgeven](assets/mobile-schema-datatype-name.png)
+1. Geef een **[!UICONTROL Weergavenaam]** en **[!UICONTROL Beschrijving]** bijvoorbeeld `App Information` en `Custom data type describing "Screen Views" & "App Actions"`
+
+   ![Naam en beschrijving opgeven](assets/schema-datatype-name.png)
 
    >[!TIP]
    >
    > Altijd leesbaar, beschrijvend gebruiken [!UICONTROL weergavenamen] voor uw douanegebieden, aangezien deze praktijk hen toegankelijker voor marketers maakt wanneer de gebieden in de stroomafwaartse diensten zoals de segmentbouwer overstijgen.
 
 
-1. Selecteer de knop (+) om een veld toe te voegen.
+1. Als u een veld wilt toevoegen, selecteert u de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knop.
 
-   Dit veld is een containerobject voor toepassingsinteractie. Geef het een kamelentcase **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL weergavenaam]** `App Interaction`, en **[!UICONTROL type]** `Object`.
+
+1. Dit veld is een containerobject voor toepassingsinteractie, dus een kamelcase **[!UICONTROL Veldnaam]** `appInteraction`, **[!UICONTROL Weergavenaam]** `App Interaction`en selecteert u `Object` van de **[!UICONTROL Type]** lijst.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
-   ![Nieuwe gebeurtenis voor app-actie toevoegen](assets/mobile-schema-datatype-app-action.png)
+   ![Nieuwe gebeurtenis voor app-actie toevoegen](assets/schema-datatype-app-action.png)
 
-1. Als u wilt meten hoe vaak een actie is uitgevoerd, voegt u een veld toe door op de knop (+) naast de knop `appInteraction` door u gemaakt object.
+1. Als u wilt meten hoe vaak een actie is uitgevoerd, voegt u een veld toe door de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de knop **[!UICONTROL appInteraction]** door u gemaakt object.
 
-1. Geef het een kamelentcase **[!UICONTROL Veldnaam]** `appAction`, **[!UICONTROL weergavenaam]** van `App Action` en **[!UICONTROL type]** `Measure`.
+1. Geef het een kamelentcase **[!UICONTROL Veldnaam]** `appAction`, **[!UICONTROL Weergavenaam]** van `App Action` en **[!UICONTROL Type]** `Measure`.
 
    Deze stap zou het equivalent zijn van een succesgebeurtenis in Adobe Analytics.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
-   ![Veld voor handelingnaam toevoegen](assets/mobile-schema-datatype-action-name.png)
+   ![Veld voor handelingnaam toevoegen](assets/schema-datatype-action-name.png)
 
-1. Voeg een veld toe waarin het type interactie wordt beschreven door op de knop (+) naast de knop `appInteraction` object.
+1. Voeg een gebied toe beschrijvend het type van interactie door te selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de knop **[!UICONTROL appInteraction]** object.
 
-1. Geef het een **[!UICONTROL Veldnaam]** `name`, **[!UICONTROL weergavenaam]** van `Name` en **[!UICONTROL type]** `String`.
+1. Geef het een **[!UICONTROL Veldnaam]** `name`, **[!UICONTROL Weergavenaam]** van `Name` en **[!UICONTROL Type]** `String`.
 
    Deze stap is het equivalent van een dimensie in Adobe Analytics.
 
-   ![Selecteren toepassen](assets/mobile-schema-datatype-apply.png)
+   ![Selecteren toepassen](assets/schema-datatype-apply.png)
 
 1. Schuif naar de onderkant van de rechterrail en selecteer **[!UICONTROL Toepassen]**.
 
-1. Volg hetzelfde patroon om een `appStateDetails` object met een veld Meetlat genaamd `screenView` en twee geroepen Koorden `screenName` en `screenType`.
+1. Om een `appStateDetails` object dat een **[!UICONTROL Meetlat]** veld aangeroepen `screenView` en twee **[!UICONTROL String]** velden aangeroepen `screenName` en `screenType`Volg dezelfde stappen als bij het maken van de **[!UICONTROL appInteraction]** object.
 
 1. Selecteren **[!UICONTROL Opslaan]**.
 
-   ![Eindstaat van gegevenstype](assets/mobile-schema-datatype-final.png)
+   ![Eindstaat van gegevenstype](assets/schema-datatype-final.png)
 
 ## Een aangepaste veldgroep toevoegen
 
@@ -182,36 +200,41 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
 1. Open het schema dat u eerder in deze les creeerde.
 
-1. Selecteren **[!UICONTROL Toevoegen]** naast **[!UICONTROL Veldgroepen]**.
+1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast **[!UICONTROL Veldgroepen]**.
 
-   ![Nieuwe veldgroep toevoegen](assets/mobile-schema-fieldgroup-add.png)
+   ![Nieuwe veldgroep toevoegen](assets/schema-fieldgroup-add.png)
 
-1. Deze keer maakt u een aangepaste veldgroep door de optie **[!UICONTROL Nieuwe veldgroep maken]** keuzerondje boven in het scherm, geef een naam en een beschrijving, bijvoorbeeld `App Interactions` en `Fields for app interactions`.
+1. Selecteren **[!UICONTROL Nieuwe veldgroep maken]**.
 
-   ![Naam en beschrijving opgeven](assets/mobile-schema-fieldgroup-name.png)
+1. Geef een **[!UICONTROL Weergavenaam]** en **[!UICONTROL Beschrijving]**, bijvoorbeeld `App Interactions` en `Fields for app interactions`.
 
-1. Van het belangrijkste samenstellingsscherm, voeg een gebied aan de wortel van het schema toe.
+1. Selecteren **Veldgroepen toevoegen**.
 
-1. Selecteer de (+) naast de naam van het schema.
+   ![Naam en beschrijving opgeven](assets/schema-fieldgroup-name.png)
 
-1. Geef in de rechterspoorlijn een **[!UICONTROL Veldnaam]** van `appInformation`, een weergavenaam van `App Information`.
+1. Van het belangrijkste samenstellingsscherm, uitgezochte **[!UICONTROL Interacties met toepassingen**].
 
-1. Selecteren `App Information` van de **[!UICONTROL Type]** vervolgkeuzelijst, het gegevenstype dat u in de vorige oefening hebt gemaakt.
+1. Voeg een gebied aan de wortel van het schema toe door te selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de schemanaam.
+
+1. Geef in de rechterspoorlijn een **[!UICONTROL Veldnaam]** van `appInformation`, **[!UICONTROL Weergavenaam]** van `App Information`en **[!UICONTROL Type]** van `App Information`.
+
+1. Selecteren **[!UICONTROL Interacties tussen toepassingen]** van de **[!UICONTROL Veldgroep]** vervolgkeuzelijst om de velden toe te wijzen aan uw nieuwe veldgroep.
 
 1. Selecteren **[!UICONTROL Toepassen]**.
 
-   ![Selecteren toepassen](assets/mobile-schema-fieldgroup-apply.png)
+1. Selecteren **[!UICONTROL Opslaan]**.
+
+   ![Selecteren toepassen](assets/schema-fieldgroup-apply.png)
 
 >[!NOTE]
 >
 >Aangepaste veldgroepen worden altijd onder uw Experience Cloud-Org-id geplaatst.
->
->`_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
 
-U hebt nu een schema om voor de rest van het leerprogramma te gebruiken.
+
+>[!SUCCESS]
+>
+>U hebt nu een schema voor de rest van de zelfstudie te gebruiken.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Volgende: **[Een [!UICONTROL datastream]](create-datastream.md)**
-
->[!NOTE]
->
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

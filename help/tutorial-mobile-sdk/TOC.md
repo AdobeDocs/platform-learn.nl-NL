@@ -4,14 +4,14 @@ breadcrumb-title: Tutorial voor mobiele apps
 user-guide-description: Leer hoe u Adobe Experience Cloud-toepassingen kunt implementeren in mobiele apps met Experience Platform Mobile SDK.
 solution: Data Collection
 feature: Mobile SDK
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 779ce60b8e89520231d4d9cbaecfe09a8cabc38f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 68%
+source-wordcount: '75'
+ht-degree: 69%
 
 ---
 
@@ -32,8 +32,14 @@ ht-degree: 68%
    + [WebViews](web-views.md)
    + [Identiteit](identity.md)
    + [Profiel](profile.md)
+   + [Plaatsen](places.md)
 + Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Journey Optimizer-pushberichten](journey-optimizer-push.md)
+   + Reisoptimalisatie{#journey-optimizer}
+      + [Pushmeldingen](journey-optimizer-push.md)
+      + [In-app berichten](journey-optimizer-inapp.md)
+      + [Beslissingsbeheer](journey-optimizer-offers.md)
+   + [Target](target.md)
 + [Conclusie](conclusion.md)
+

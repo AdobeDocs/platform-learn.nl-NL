@@ -1,24 +1,20 @@
 ---
-title: Toestemming
+title: Goedkeuring implementeren voor Platform Mobile SDK-implementaties
 description: Leer hoe u toestemming implementeert in een mobiele app.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 1%
+source-wordcount: '544'
+ht-degree: 0%
 
 ---
 
-# Toestemming
+# Goedkeuring uitvoeren
 
 Leer hoe u toestemming implementeert in een mobiele app.
 
->[!INFO]
->
-> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
-
-Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)in de documentatie.
+Met de mobiele extensie Adobe Experience Platform Consent kunt u de verzameling met voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Meer informatie over de [Toegestane extensie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in de documentatie.
 
 ## Vereisten
 
@@ -34,73 +30,81 @@ In deze les zult u:
 
 ## Goedkeuring aanvragen
 
-Als u de zelfstudie vanaf het begin hebt gevolgd, zult u het instellen van de **[!UICONTROL Standaardniveau van toestemming]** in &quot;In behandeling&quot;. Om te beginnen met het verzamelen van gegevens, moet u toestemming van de gebruiker krijgen. In deze zelfstudie vraagt u eenvoudig om toestemming door in een echte app de beste praktijken voor toestemming voor uw regio te raadplegen.
+Als u de zelfstudie vanaf het begin hebt gevolgd, zult u zich wellicht herinneren dat u de standaardtoestemming in de extensie Goedkeuring hebt ingesteld op **[!UICONTROL In behandeling - de gebeurtenissen van de Rij die voorkomen alvorens de gebruiker toestemmingsvoorkeur verstrekt.]**
 
-1. U wilt het de gebruiker slechts eenmaal vragen. Een eenvoudige manier om dat te beheren is door eenvoudig te gebruiken `UserDefaults`.
-1. Ga naar `Home.swift`.
-1. De volgende code toevoegen aan `viewDidLoad()`.
+Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebruiker krijgen. In een echte app wilt u de beste praktijken voor uw regio raadplegen. In deze zelfstudie krijgt u toestemming van de gebruiker door er gewoon om te vragen met een waarschuwing:
+
+1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U kunt dit doen door de toestemming van Mobile SDK met de vereiste vergunning voor het volgen te combineren gebruikend Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker toestemming geeft om gebeurtenissen te volgen, deze toestemming geeft om gebeurtenissen te verzamelen.
+
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator.
+
+   Deze code toevoegen aan de `updateConsent` functie.
 
    ```swift
-   let defaults = UserDefaults.standard
-   let consentKey = "askForConsentYet"
-   let hidePopUp = defaults.bool(forKey: consentKey)
+   // Update consent
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Als de gebruiker de waarschuwing nog niet eerder heeft gezien, geeft u deze weer en werkt u de toestemming bij op basis van hun reactie. De volgende code toevoegen aan `viewDidLoad()`.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in de projectnavigator van Xcode, die de mening is die na het installeren van of het opnieuw installeren van de toepassing en het beginnen van app voor de eerste keer wordt getoond. De gebruiker wordt gevraagd het bijhouden van gegevens te autoriseren per Apple [Transparantie-framework voor toepassingscontrole](https://developer.apple.com/documentation/apptrackingtransparency). Als de gebruiker autoriseert, werkt u ook de toestemming bij.
+
+   Voeg de volgende code toe aan de `ATTrackingManager.requestTrackingAuthorization { status in` sluiting.
 
    ```swift
-   if(hidePopUp == false){
-       //Consent Alert
-       let alert = UIAlertController(title: "Allow Data Collection?", message: "Selecting Yes will begin data collection", preferredStyle: .alert)
-       alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-           //Update Consent -> "yes"
-           let collectConsent = ["collect": ["val": "y"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
-           //Update Consent -> "no"
-           let collectConsent = ["collect": ["val": "n"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       self.present(alert, animated: true)
+   // Add consent based on authorization
+   if status == .authorized {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
-
 ## Huidige status van toestemming ophalen
 
-De mobiele extensie voor toestemming onderdrukt automatisch het bijhouden van wijzigingen, voegt deze toe of staat deze toe op basis van de huidige waarde van de toestemming. U kunt ook zelf toegang krijgen tot de huidige staat van toestemming:
+De mobiele extensie voor toestemming onderdrukt automatisch het bijhouden van wijzigingen / breidt deze uit op basis van de huidige waarde voor toestemming. U kunt ook zelf toegang krijgen tot de huidige staat van toestemming:
 
-1. Ga naar `Home.swift`.
-1. De volgende code toevoegen aan `viewDidLoad()`.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode&#39;s Project navigator.
 
-```swift
-Consent.getConsents{ consents, error in
-    guard error == nil, let consents = consents else { return }
-    guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-    guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-    print("Consent getConsents: ",jsonStr)
-}
-```
+   Voeg de volgende code toe aan de `getConsents` functie:
 
-In het bovenstaande voorbeeld drukt u gewoon de toestemmingsstatus af op de console. In een echt scenario, zou u het kunnen gebruiken om te wijzigen welke menu&#39;s of opties aan de gebruiker worden getoond.
+   ```swift
+   // Get consents
+   Consent.getConsents { consents, error in
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
+   ```
+
+2. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** in Xcode&#39;s Project navigator.
+
+   Voeg de volgende code toe aan de `.task` modifier:
+
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
+   ```
+
+In het bovenstaande voorbeeld registreert u gewoon de toestemmingsstatus aan de console in Xcode. In een echt scenario, zou u het kunnen gebruiken om te wijzigen welke menu&#39;s of opties aan de gebruiker worden getoond.
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [Betrouwbaarheid](assurance.md) les.
-1. Installeer de toepassing.
-1. Start de app met de door Betrouwbaarheid gegenereerde URL.
-1. Als u de bovenstaande code correct hebt toegevoegd, wordt u gevraagd om toestemming te geven. Selecteren **Ja**.
-   ![instemming pop](assets/mobile-consent-validate.png)
-1. U dient een **[!UICONTROL Voorkeuren voor goedkeuring bijgewerkt]** gebeurtenis in de betrouwbaarheidsinterface.
-   ![toestemming valideren](assets/mobile-consent-update.png)
+1. Verwijder de toepassing van het apparaat of de simulator om het bijhouden en goedkeuren correct opnieuw in te stellen en te initialiseren.
+1. Als u uw simulator of apparaat wilt aansluiten op Betrouwbaarheid, raadpleegt u de [installatie-instructies](assurance.md#connecting-to-a-session) sectie.
+1. Wanneer u de app verplaatst van **[!UICONTROL Home]** scherm naar **[!UICONTROL Producten]** scherm en terug naar **[!UICONTROL Home]** scherm, moet u een **[!UICONTROL Respons voor constanten ophalen]** gebeurtenis in de betrouwbaarheidsinterface.
+   ![toestemming valideren](assets/consent-update.png)
 
-Volgende: **[Levenscyclusgegevens verzamelen](lifecycle-data.md)**
 
->[!NOTE]
+>[!SUCCESS]
+>
+>U hebt nu de toepassing ingeschakeld om de gebruiker bij de eerste start na de installatie (of herinstallatie) te vragen toestemming te geven met de SDK van Adobe Experience Platform Mobile.
 >
 >Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Volgende: **[Levenscyclusgegevens verzamelen](lifecycle-data.md)**

@@ -1,21 +1,17 @@
 ---
-title: Profiel
+title: Profielgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 1%
+source-wordcount: '600'
+ht-degree: 0%
 
 ---
 
-# Profiel
+# Profielgegevens verzamelen
 
 Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
-
->[!INFO]
->
-> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 U kunt de extensie Profiel gebruiken om kenmerken van de gebruiker op de client op te slaan. Deze informatie kan later worden gebruikt om berichten tijdens online of off-line scenario&#39;s te richten en te personaliseren, zonder het moeten met een server voor optimale prestaties verbinden. De extensie Profiel beheert het Client-Side Operation Profile (CSOP), biedt een manier om op API&#39;s te reageren, werkt gebruikersprofielkenmerken bij en deelt de gebruikersprofielkenmerken met de rest van het systeem als een gegenereerde gebeurtenis.
 
@@ -29,11 +25,6 @@ De profielgegevens worden door andere extensies gebruikt om acties met betrekkin
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* De SDK van het profiel is geïmporteerd.
-
-  ```swift
-  import AEPUserProfile
-  ```
 
 ## Leerdoelstellingen
 
@@ -43,59 +34,99 @@ In deze les zult u:
 * Gebruikerskenmerken ophalen.
 
 
-## Instellen en bijwerken
+## Gebruikerskenmerken instellen en bijwerken
 
-Het zou handig zijn als u zich richt op en/of personalisatie om snel te weten of een gebruiker al eerder een aankoop heeft gedaan in de app. Laten we dat instellen in de Luma-app.
+Het zou handig zijn als u zich richt op en/of personalisatie in de app om snel te weten of een gebruiker in het verleden of onlangs een aankoop heeft gedaan. Laten we dat instellen in de Luma-app.
 
-1. Ga naar `Cart.swift`
-
-1. Voeg de onderstaande code toe aan de `processOrder() `functie.
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateUserAttribute(attributeName: String, attributeValue: String)` functie. Voeg de volgende code toe:
 
    ```swift
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   profileMap["isPaidUser"] = "yes"
+   profileMap[attributeName] = attributeValue
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Het verpersoonlijkingsteam zou ook kunnen willen richten gebaseerd op het loyaliteitsniveau van de gebruiker. Laten we dat instellen in de Luma-app.
+   Deze code:
 
-1. Ga naar `Account.swift`
+   1. Hiermee wordt een leeg woordenboek ingesteld met de naam `profileMap`.
 
-1. Voeg de onderstaande code toe aan de `showUserInfo()` functie.
+   1. Hiermee wordt een element aan het woordenboek toegevoegd met `attributeName` (bijvoorbeeld `isPaidUser`), en `attributeValue` (bijvoorbeeld `yes`).
+
+   1. Gebruikt de `profileMap` woordenboek als een waarde voor de `attributeDict` parameter van de [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API-aanroep.
+
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de aankopen <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
 
    ```swift
-   var profileMap = [String: Any]()
-   profileMap["loyaltyLevel"] = loyaltyLevel
-   UserProfile.updateUserAttributes(attributeDict: profileMap)
+   // Update attributes
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-Extra `updateUserAttributes` documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
-## Get
+## Gebruikerskenmerken ophalen
 
-Zodra u het attribuut van een gebruiker hebt bijgewerkt, zal het aan andere Adobe SDKs beschikbaar zijn maar u kunt attributen ook uitdrukkelijk terugwinnen.
+Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor andere Adobe-SDK&#39;s, maar u kunt kenmerken ook expliciet ophalen, zodat de toepassing zich naar wens gedraagt.
 
-```swift
-UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
-    attributes, error in
-    print("Profile: getUserAttributes: ",attributes as Any)
-}
-```
+1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** in de Xcode-projectnavigator en zoek de `.onAppear` modifier. Voeg de volgende code toe:
 
-Extra `getUserAttributes` documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+   ```swift
+   // Get attributes
+   UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
+       if attributes?.count ?? 0 > 0 {
+           if attributes?["isPaidUser"] as? String == "yes" {
+               showBadgeForUser = true
+           }
+           else {
+               showBadgeForUser = false
+           }
+       }
+   }
+   ```
+
+   Deze code:
+
+   1. roept de [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `isPaidUser` kenmerknaam als één element in het dialoogvenster `attributeNames` array.
+   1. Vervolgens wordt gecontroleerd op de waarde van de optie `isPaidUser` kenmerk en wanneer `yes`, plaatst een badge op de <img src="assets/paiduser.png" width="20" /> in de werkbalk rechtsboven.
+
+Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md) sectie.
-1. Installeer de toepassing.
-1. Start de app met de gegenereerde URL voor Betrouwbaarheid.
-1. Selecteer het accountpictogram en selecteer Aanmelden. Opmerking: u hebt geen gegevens opgegeven.
-1. Sluit de aanmeldingsmenu&#39;s en selecteer vervolgens opnieuw het accountpictogram. Dit brengt u aan het scherm van rekeningsdetails waar `loyaltyLevel` is ingesteld.
-1. U dient een **[!UICONTROL UserProfileUpdate]** gebeurtenis in de betrouwbaarheidsinterface met de bijgewerkte `profileMap` waarde.
-   ![profiel valideren](assets/mobile-profile-validate.png)
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+1. Voer de app uit om u aan te melden en te communiceren met een product.
 
-Volgende: **[Gegevens toewijzen aan Adobe Analytics](analytics.md)**
+   1. Verplaats het pictogram Verzekering naar links.
+   1. Selecteren **[!UICONTROL Home]** in de tabbalk.
+   1. Als u het aanmeldingsblad wilt openen, selecteert u de optie <img src="assets/login.png" width="15" /> knop.
 
->[!NOTE]
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
+   1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de <img src="assets/insert.png" width="15" /> knop .
+   1. Selecteren **[!UICONTROL Aanmelden]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
+   1. Selecteren **[!DNL Products]** in de tabbalk.
+   1. Selecteer één product.
+   1. Selecteer <img src="assets/saveforlater.png" width="15" />.
+   1. Selecteer <img src="assets/addtocart.png" width="20" />.
+   1. Selecteer <img src="assets/purchase.png" width="15" />.
+
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
+   1. Terug naar **[!UICONTROL Home]** scherm. Je moet zien dat er een badge is toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
+
+      <img src="./assets/personbadges.png" width="300">
+
+
+
+1. In de UI van de Verzekering, zou u een **[!UICONTROL UserProfileUpdate]** en **[!UICONTROL getUserAttributes]** gebeurtenissen met de bijgewerkte `profileMap` waarde.
+   ![profiel valideren](assets/profile-validate.png)
+
+>[!SUCCESS]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>U hebt nu uw app ingesteld om kenmerken van profielen in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.
+>
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+Volgende: **[Plaatsen gebruiken](places.md)**

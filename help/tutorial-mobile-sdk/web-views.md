@@ -1,11 +1,11 @@
 ---
-title: WebViews verwerken
+title: Webweergaven afhandelen met Platform Mobile SDK
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # WebViews verwerken
 
 Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
-
->[!INFO]
->
-> Deze zelfstudie wordt eind november 2023 vervangen door een nieuwe zelfstudie met een nieuwe mobiele voorbeeldtoepassing
 
 ## Vereisten
 
@@ -26,85 +22,86 @@ Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 
 In deze les zult u:
 
-* Begrijp waarom u speciale overwegingen voor WebViews moet nemen.
+* Begrijp waarom u speciale aandacht voor WebViews in uw app moet houden.
 * Begrijp de code die wordt vereist om volgende kwesties te verhinderen.
 
 ## Mogelijke problemen met bijhouden
 
-Als u gegevens verzendt van het native gedeelte van de app en een WebView, genereert elk hun eigen Experience Cloud-id (ECID). Dit leidt tot ongekoppelde treffers en opgeblazen bezoek-/bezoekersgegevens. Meer informatie over de ECID vindt u in de [ECID-overzicht](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Als u gegevens verzendt vanuit het native gedeelte van de app en vanuit een WebView in de app, genereert elk zijn eigen Experience Cloud-id (ECID), wat leidt tot verbroken resultaten en opgeblazen bezoek-/bezoekersgegevens. Meer informatie over de ECID vindt u in de [ECID-overzicht](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
-Om voor die ongewenste situatie op te lossen, is het belangrijk om ECID van de gebruiker van het inheemse gedeelte tot WebView over te gaan.
+Om die ongewenste situatie op te lossen, is het belangrijk om de ECID van de gebruiker van het inheemse gedeelte van uw app tot een WebView over te gaan u in uw app zou kunnen willen gebruiken.
 
-De uitbreiding van de Dienst JavaScript van identiteitskaart van het Experience Cloud in WebView haalt ECID uit URL in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart. De id-service gebruikt deze ECID om de bezoeker bij te houden.
+De uitbreiding van de Identiteit van de Rand AEP binnen WebView wordt gebruikt verzamelt huidige ECID en voegt het aan URL toe in plaats van het verzenden van een verzoek naar Adobe voor een nieuwe identiteitskaart die. De implementatie gebruikt deze ECID vervolgens om de URL aan te vragen.
 
 ## Implementatie
 
-Zoek in de voorbeeldtoepassing Luma naar de `TermsOfService.swift` bestand (in het `Intro-Login_SignUp` en zoek de volgende code:
+Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** en zoek de `func loadUrl()` in de `final class SwiftUIWebViewModel: ObservableObject` klasse. Voeg de volgende vraag toe om de Webmening te behandelen:
 
 ```swift
-// Show tou.html
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-let myRequest = URLRequest(url: url!)
-self.webView.load(myRequest)
-```
-
-Dit is een eenvoudige manier om een WebView te laden. In dit geval is het een lokaal bestand, maar dezelfde concepten gelden voor externe pagina&#39;s.
-
-Verwijs de webweergavecode als volgt:
-
-```swift
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-if var urlString = url?.absoluteString {
-    // Adobe Experience Platform - Handle Web View
-    AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-        if let error = error {
-            self.simpleAlert("\(error.localizedDescription)")
-            return;
-        }
-
-        if let urlVariables: String = urlVariables {
-            urlString.append("?" + urlVariables)
-        }
-
-        DispatchQueue.main.async {
-            self.webView.load(URLRequest(url: URL(string: urlString)!))
-        }
-        print("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+// Handle web view
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
     }
-} else {
-    self.simpleAlert("Failed to create URL for webView")
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
+        }
+    }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
 }
 ```
 
+De [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API stelt de variabelen voor URL in zodat deze alle relevante informatie bevatten, zoals ECID, en meer. In het voorbeeld gebruikt u een lokaal bestand, maar op externe pagina&#39;s zijn dezelfde concepten van toepassing.
+
 Meer informatie over de `Identity.getUrlVariables` API in de [Identiteit voor Edge Network Extension API-naslaggids](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validatie
+## Valideren
 
-Nadat u de [installatie-instructies](assurance.md) en het aansluiten van uw simulator of apparaat aan Verzekering, laadt WebView en zoekt naar `Edge Identity Response URL Variables` gebeurtenis van de `com.adobe.griffon.mobile` leverancier.
+De code uitvoeren:
 
-Als u de WebView wilt laden, gaat u naar het beginscherm van de Luma-app en selecteert u het pictogram &quot;Account&quot;, gevolgd door de gebruiksvoorwaarden in de voettekst.
+1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+1. Ga naar de **[!UICONTROL Instellingen]** in de app
+1. Tik op de knop **[!DNL View...]** om de **[!DNL Terms of Use]**.
 
-Na het laden van de WebView, selecteer de gebeurtenis en herzie `urlvariables` in het veld `ACPExtensionEventData` -object, waarbij de volgende parameters worden bevestigd, aanwezig zijn in de URL: `adobe_mc`, `mcmid`, en `mcorgid`.
+   <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-![webweergave valideren](assets/mobile-webview-validation.png)
+1. In Verzekering UI, zoek naar **[!UICONTROL URL-variabelen van Edge Identity Response]** gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
+1. Selecteer de gebeurtenis en bekijk de **[!UICONTROL urlvariable]** in het veld **[!UICONTROL ACPExtensionEventData]** -object, waarbij de volgende parameters worden bevestigd, aanwezig zijn in de URL: `adobe_mc`, `mcmid`, en `mcorgid`.
 
-Een monster `urvariables` het veld is hieronder te vinden :
+   ![webweergave valideren](assets/webview-validation.png)
 
-```html
-// Original (with escaped characters)
-adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+   Een monster `urvariables` het veld is hieronder te vinden :
 
-// Beautified
-adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
-```
+   * Origineel (met escape-tekens)
+
+     ```html
+     adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+     ```
+
+   * Mooi
+
+     ```html
+     adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
+     ```
+
+Jammer genoeg, is het zuiveren van de Webzitting beperkt. U kunt bijvoorbeeld het Adobe Experience Platform Debugger in uw browser niet gebruiken om de webweergavesessie te blijven opsporen.
 
 >[!NOTE]
 >
->Bezoekersstitching via deze URL-parameters wordt momenteel ondersteund in de Platform Web SDK (versies 2.11.0 of hoger) en `VisitorAPI.js`.
+>Bezoekerstitching via deze URL-parameters wordt ondersteund in de Platform Web SDK (versies 2.11.0 of hoger) en bij gebruik van `VisitorAPI.js`.
 
 
-Volgende: **[Identiteit](identity.md)**
-
->[!NOTE]
+>[!SUCCESS]
+>
+>U hebt uw app nu ingesteld om inhoud weer te geven op basis van een URL in een webweergave met dezelfde ECID als de ECID die al is uitgegeven door de Adobe Experience Platform Mobile SDK.
 >
 >Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Volgende: **[Identiteit](identity.md)**
