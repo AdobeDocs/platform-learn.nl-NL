@@ -2,7 +2,7 @@
 title: Plaatsen gebruiken met Platform Mobile SDK
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 0%
@@ -182,7 +182,7 @@ Laten we een andere regel maken
 
 1. In de **[!UICONTROL Regel maken]** scherm, ga een naam voor de regel in, bijvoorbeeld `POI - Exit`.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ondergronds **[!UICONTROL EVENTS]**.
-   1. Selecteren **[!UICONTROL Plaatsen]** van de **[!UICONTROL Extensie]** lijst en selecteer **[!UICONTROL POI invoeren]** van de **[!UICONTROL Type gebeurtenis]** lijst.
+   1. Selecteren **[!UICONTROL Plaatsen]** van de **[!UICONTROL Extensie]** lijst en selecteer **[!UICONTROL POI afsluiten]** van de **[!UICONTROL Type gebeurtenis]** lijst.
    1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
 1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ondergronds **[!UICONTROL ACTIES]**.
    1. Selecteren **[!UICONTROL Mobiele kern]** van **[!UICONTROL Extensie]** list, selecteer **[!UICONTROL Gegevens bijvoegen]** van **[!UICONTROL Type handeling]** lijst.
