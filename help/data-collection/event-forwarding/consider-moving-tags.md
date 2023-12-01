@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Deze evaluatie is slechts noodzakelijk als u overweegt verwijderend een cliënt-
 >
 >Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
-Browser de verkopers veranderen hoe zij derdekoekjes behandelen. Adverteer- en marketingleveranciers en -technologieën vereisen vaak het gebruik van vele tags aan de clientzijde. Deze uitdagingen zijn slechts twee dwingende redenen dat onze klanten server-zijgegevensdistributie toevoegen.
+Browser de verkopers veranderen hoe zij derdekoekjes behandelen. Adverteer- en marketingleveranciers en -technologieën vereisen vaak het gebruik van vele tags aan de clientzijde. Deze uitdagingen zijn slechts twee dwingende redenen die onze klanten server-zijgegevensdistributie toevoegen.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Browser de verkopers veranderen hoe zij derdekoekjes behandelen. Adverteer- en m
 
 ## Gebruik gevallen en gegevens {#use-cases-data}
 
-De eerste stap bestaat uit het definiëren van de gebruiksgevallen die worden geïmplementeerd met de client-side leverancierstag. Neem bijvoorbeeld de Facebook-pixel (Meta). Het van onze site naar de [Facebook Conversies-API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) met de door:sturen uitbreiding van de gebeurtenis betekent het documenteren van de specifieke gebruiksgevallen eerst.
+De eerste stap bestaat uit het definiëren van de gebruiksgevallen die worden geïmplementeerd met de client-side leverancierstag. Neem bijvoorbeeld de Facebook-pixel (Meta). Het van onze site naar de [API voor metaconversie](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) met de door:sturen uitbreiding van de gebeurtenis betekent het documenteren van de specifieke gebruiksgevallen eerst.
 
 Voor de huidige clientleveranciercode:
 
@@ -83,11 +83,11 @@ Met andere woorden:
 
 De markering is waarschijnlijk een goede kandidaat om zich van de cliënt aan onze servers in een gebeurtenis te bewegen die bezit door:sturen als wij ja op die vragen kunnen antwoorden.
 
-Als de leverancier niet de API eindpunten heeft om onze gebruiksgevallen te steunen, dan duidelijk is die verkoperstag geen goede kandidaat voor het gebruiken van gebeurtenis door:sturen in plaats van de cliënt-zijverkoperstag.
+Als de leverancier niet de API eindpunten heeft om onze gebruiksgevallen te steunen, dan duidelijk is die verkoperstag geen goede kandidaat voor het gebruiken van gebeurtenis het door:sturen in plaats van de cliënt-zijverkoperstag.
 
 Wat gebeurt er als ze API&#39;s hebben, maar ook een unieke bezoeker- of gebruikers-id nodig hebben voor elke API-aanroep? Hoe kunnen wij tot die identiteitskaart toegang hebben als wij niet de verkoper cliënt-zijcode (markering) hebben die op de plaats loopt?
 
-Sommige leveranciers veranderen hun systemen voor de nieuwe wereld zonder derdekoekjes. Deze wijzigingen omvatten het gebruik van alternatieve unieke id&#39;s, zoals een [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) of andere [door klant gegenereerde id](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Als de verkoper een klant-geproduceerde identiteitskaart toestaat, kunnen wij of het van de cliënt naar het Netwerk van de Rand van het Platform met Web of Mobiele SDK verzenden, of het misschien krijgen van een API vraag in gebeurtenis het door:sturen. Wanneer wij gegevens naar die verkoper in een gebeurtenis verzenden die regel door:sturen, omvatten wij eenvoudig die herkenningsteken zoals-nodig.
+Sommige leveranciers veranderen hun systemen voor de nieuwe wereld zonder derdekoekjes. Deze wijzigingen omvatten het gebruik van alternatieve unieke id&#39;s, zoals een [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) of andere [door klant gegenereerde id](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Als de verkoper een klant-geproduceerde identiteitskaart toestaat, kunnen wij of het van de cliënt naar het Netwerk van de Rand van het Platform met Web of Mobiele SDK verzenden, of misschien het van een API vraag in gebeurtenis krijgen die door:sturen. Wanneer wij gegevens naar die verkoper in een gebeurtenis verzenden die regel door:sturen, omvatten wij eenvoudig die herkenningsteken zoals-nodig.
 
 Als de leverancier gegevens (zoals een leverancier-specifieke unieke identiteitskaart, bijvoorbeeld) vereist die slechts door hun eigen cliënt-zijmarkering kunnen worden geproduceerd of worden betreden, dan is die verkoperstag waarschijnlijk geen goede kandidaat om zich te bewegen. _Het wordt afgeraden om een client-side tag om te buigen met het idee om die gegevensverzameling te verplaatsen naar het doorsturen van gebeurtenissen zonder de juiste API&#39;s._
 
