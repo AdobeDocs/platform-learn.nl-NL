@@ -4,10 +4,11 @@ description: Leer hoe u in-app berichten maakt en verzendt naar een mobiele app 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ In deze les zult u
    ![startpagina van app](assets/push-app-surface.png)
 1. Voer een **[!UICONTROL Naam]** voor de configuratie, bijvoorbeeld `Luma App Tutorial`  .
 1. Van **[!UICONTROL Configuratie van mobiele toepassingen]**, selecteert u **[!UICONTROL Apple iOS]**.
-1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld,  `com.adobe.luma.tutorial.swiftui`.
+1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld:  `com.adobe.luma.tutorial.swiftui`.
 1. Selecteren **[!UICONTROL Opslaan]**.
 
    ![configuratie toepassingsoppervlak](assets/push-app-surface-config-inapp.png)
@@ -166,7 +167,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
 1. Selecteren **[!UICONTROL Campagne maken]**.
 1. In de **[!UICONTROL Campagne maken]** scherm:
    1. Selecteren **[!UICONTROL Bericht in de app]** en selecteer een toepassingsoppervlak in het menu **[!UICONTROL App-oppervlak]** lijst, bijvoorbeeld **[!DNL Luma Mobile App]**.
-   1. Selecteer **[!UICONTROL Maken]**
+   1. Selecteren **[!UICONTROL Maken]**
       ![Campagneigenschappen](assets/ajo-campaign-properties.png)
 1. In het scherm Campagne-definitie, op **[!UICONTROL Eigenschappen]**, voert u een **[!UICONTROL Naam]** bijvoorbeeld voor de campagne `Luma - In-App Messaging Campaign`en **[!UICONTROL Beschrijving]** bijvoorbeeld `In-app messaging campaign for Luma app`.
    ![Campagneraam](assets/ajo-campaign-properties-name.png)

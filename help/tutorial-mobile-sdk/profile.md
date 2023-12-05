@@ -1,10 +1,11 @@
 ---
 title: Profielgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
+jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -108,9 +109,9 @@ Aanvullende documentatie is te vinden [hier](https://developer.adobe.com/client-
 
    1. Selecteren **[!DNL Products]** in de tabbalk.
    1. Selecteer één product.
-   1. Selecteer <img src="assets/saveforlater.png" width="15" />.
-   1. Selecteer <img src="assets/addtocart.png" width="20" />.
-   1. Selecteer <img src="assets/purchase.png" width="15" />.
+   1. Selecteren <img src="assets/saveforlater.png" width="15" />.
+   1. Selecteren <img src="assets/addtocart.png" width="20" />.
+   1. Selecteren <img src="assets/purchase.png" width="15" />.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 

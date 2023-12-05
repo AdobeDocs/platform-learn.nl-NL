@@ -2,11 +2,12 @@
 title: Verzamel identiteitsgegevens in een mobiele toepassing met Mobile SDK
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 1%
+source-wordcount: '815'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +48,7 @@ Een nieuwe naamruimte maken:
 1. Selecteren **[!UICONTROL Naamruimte maken]**.
 1. Geef een **[!UICONTROL Weergavenaam]** van `Luma CRM ID` en **[!UICONTROL Identiteitssymbool]** waarde van `lumaCRMId`.
 1. Selecteren **[!UICONTROL Apparaatoverschrijdende id]**.
-1. Selecteer **[!UICONTROL Maken]**.
+1. Selecteren **[!UICONTROL Maken]**.
 
    ![naamruimte voor identiteit maken](assets/identity-create.png)
 
@@ -140,12 +141,12 @@ U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/do
 1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
 1. In de app Luma
    1. Selecteer de **[!UICONTROL Home]** en verplaatst u het pictogram Verzekering naar links.
-   1. Selecteer het <img src="assets/login.png" width="15" /> van rechtsboven.
+   1. Selecteer de <img src="assets/login.png" width="15" /> van rechtsboven.
 
       <img src="./assets/identity1.png" width="300">
 
    1. Geef een e-mailadres en een CRM-id op, of
-   1. Selecteer <img src="assets/insert.png" width="15" /> om willekeurig een **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
+   1. Selecteren <img src="assets/insert.png" width="15" /> om willekeurig een **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
    1. Selecteren **[!UICONTROL Aanmelden]**.
 
       <img src="./assets/identity2.png" width="300">

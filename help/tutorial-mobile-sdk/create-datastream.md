@@ -2,11 +2,12 @@
 title: Een gegevensstroom configureren voor de implementatie van Platform Mobile SDK
 description: Leer hoe u een gegevensstroom in Experience Platform maakt.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 1%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +45,7 @@ Gegevensstromen kunnen worden gemaakt in het dialoogvenster [!UICONTROL Gegevens
 
    >[!NOTE]
    >
-   >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Dataset - Joe Smith` in plaats van `Luma Mobile App Event Dataset`. Zie ook de opmerking in [Overzicht](overview.md).
+   >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. In plaats van `Luma Mobile App Event Dataset`, gebruik `Luma Mobile App Event Dataset - Joe Smith`. Zie ook de opmerking in [Overzicht](overview.md).
 
 1. Selecteer het schema dat u in de vorige les van het **Gebeurtenisschema** lijst.
 1. Selecteren **[!UICONTROL Opslaan]**.

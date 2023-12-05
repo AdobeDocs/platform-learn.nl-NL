@@ -2,10 +2,11 @@
 title: Een XDM-schema maken voor de implementatie van Platform Mobile SDK
 description: Leer hoe u een XDM-schema maakt voor mobiele toepassingsgebeurtenissen.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -106,7 +107,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
    >[!NOTE]
    >
-   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Schema - Joe Smith` in plaats van `Luma Mobile App Event Schema`. Zie ook de opmerking in [Overzicht](overview.md).
+   >Als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of vooraf in te stellen als onderdeel van uw naamgevingsconventies. In plaats van `Luma Mobile App Event Schema`, gebruik `Luma Mobile App Event Schema - Joe Smith`. Zie ook de opmerking in [Overzicht](overview.md).
 
 1. Selecteren **[!UICONTROL Voltooien]** om de wizard te voltooien.
 

@@ -4,10 +4,11 @@ description: Leer hoe u aanbiedingen kunt maken en weergeven met Platform Mobile
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -250,7 +251,7 @@ Zie [Belangrijke stappen voor het maken en beheren van aanbiedingen](https://exp
 1. In de **[!UICONTROL Beslissingsbereik toevoegen]** stap van **[!UICONTROL Een nieuw biedingsbesluit maken]**:
    1. Selecteren **[!UICONTROL Mobile JSON]** van **[!UICONTROL Plaatsing]** lijst.
    1. In de **[!UICONTROL Evaluatiecriteria]** tegel, selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]**.
-      1. In de **[!UICONTROL Verzameling voorstel toevoegen]** selecteert u de verzameling voorstellen. Bijvoorbeeld, **[!DNL Luma - Mobile App Collection]**.
+      1. In de **[!UICONTROL Verzameling voorstel toevoegen]** selecteert u de verzameling voorstellen. Bijvoorbeeld: **[!DNL Luma - Mobile App Collection]**.
       1. Selecteren **[!UICONTROL Toevoegen]**.
          ![Beslissing - Selecteer verzameling](assets/ajo-decision-selectcollection.png)
    1. Zorg ervoor dat **[!UICONTROL Geen]** is geselecteerd voor **[!UICONTROL Subsidiabiliteit]**, en **[!UICONTROL Voorstelprioriteit]** is geselecteerd als de **[!UICONTROL Beoordelingsmethode]**.
@@ -381,7 +382,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Ga naar het tabblad **[!DNL Personalisation]**. 
+1. Ga naar de **[!DNL Personalisation]** tab.
 
 1. Selecteer **[!DNL Edge Personalisation]**.
 

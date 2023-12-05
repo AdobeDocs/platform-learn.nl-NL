@@ -4,10 +4,11 @@ description: Leer hoe u een Target A/B-test gebruikt in uw mobiele app met Platf
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
@@ -125,7 +126,7 @@ Er zijn vele soorten activiteiten die u kunt maken in Adobe Target en implemente
 1. Selecteer in de interface Doel de optie **[!UICONTROL Activiteiten]** in de bovenste balk.
 1. Selecteren **[!UICONTROL Activiteit maken]** en **[!UICONTROL A/B-test]** in het contextmenu.
 1. In de **[!UICONTROL Testactiviteit A/B maken]** dialoogvenster, selecteren **[!UICONTROL Mobiel]** als de **[!UICONTROL Type]**, selecteert u een werkruimte in het menu **[!UICONTROL Werkruimte kiezen]** en selecteert u de eigenschap in het menu **[!UICONTROL Eigenschap kiezen]** lijst als u een klant van de Premium van het Doel bent en een bezitstoken in de gegevensstroom specificeerde.
-1. Selecteer **[!UICONTROL Maken]**.
+1. Selecteren **[!UICONTROL Maken]**.
    ![Doelactiviteit maken](assets/target-create-activity1.png)
 
 1. In de **[!UICONTROL Naamloze activiteit]** scherm, op **[!UICONTROL Ervaringen]** stap:

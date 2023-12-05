@@ -4,10 +4,11 @@ description: Leer hoe u pushberichten kunt maken voor een mobiele app met Platfo
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2556'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 * Stel de app in voor Adobe Experience Platform.
 * Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een toepassingsoppervlak.
-   * Een journey maken.
+   * Maak een reis.
    * Maak een bericht.
    * Voorinstellingen voor berichten maken.
 * **Betaald Apple-ontwikkelingsaccount** met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
@@ -87,7 +88,7 @@ Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-ac
    ![startpagina van app](assets/push-app-surface.png)
 1. Voer een **[!UICONTROL Naam]** voor de configuratie, bijvoorbeeld `Luma App Tutorial`  .
 1. Van **[!UICONTROL Configuratie van mobiele toepassingen]**, selecteert u **[!UICONTROL Apple iOS]**.
-1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld,  `com.adobe.luma.tutorial.swiftui`.
+1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld:  `com.adobe.luma.tutorial.swiftui`.
 1. Schakel de **[!UICONTROL Credentials duwen]** schakelen om uw referenties toe te voegen.
 1. Sleep uw `.p8` **Apple Push Notification Authentication Key** bestand.
 1. Geef de **[!UICONTROL Sleutel-id]**, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van `p8` auth key. Het bestand is te vinden onder de **[!UICONTROL Toetsen]** in de **Certificaten, id&#39;s en profielen** pagina&#39;s van de Apple Developer-portal. Zie ook [Een persoonlijke sleutel maken](#create-a-private-key).

@@ -1,10 +1,11 @@
 ---
 title: Gebeurtenisgegevens bijhouden in mobiele apps met Platform Mobile SDK
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -343,9 +344,9 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
    1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]**, en **[!UICONTROL CRM-id]** in het Startscherm.
    1. Selecteren **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
-   1. Selecteer <img src="assets/saveforlater.png" width="15" />.
-   1. Selecteer <img src="assets/addtocart.png" width="20" />.
-   1. Selecteer <img src="assets/purchase.png" width="15" />.
+   1. Selecteren <img src="assets/saveforlater.png" width="15" />.
+   1. Selecteren <img src="assets/addtocart.png" width="20" />.
+   1. Selecteren <img src="assets/purchase.png" width="15" />.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 

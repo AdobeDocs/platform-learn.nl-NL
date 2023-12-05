@@ -1,10 +1,11 @@
 ---
 title: Plaatsen gebruiken met Platform Mobile SDK
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
@@ -319,7 +320,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 1. Verplaats (sleep) de kaart om ervoor te zorgen dat de blauwe middelste cirkel zich boven een van uw POI&#39;s bevindt, bijvoorbeeld Londen.
 
-1. Tik op <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in het label op de rode locatie met de pin.
+1. Tikken <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in het label op de rode locatie met de pin.
 
 1. Tik op het label van de POI, die het **[!UICONTROL Nearby POI]** blad.
 
