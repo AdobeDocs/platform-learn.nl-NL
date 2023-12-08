@@ -1,14 +1,14 @@
 ---
 user-guide-title: Adobe Experience Platform-tutorials
-breadcrumb-title: Lesbestanden
+breadcrumb-title: Tutorials
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 8%
+source-wordcount: '847'
+ht-degree: 7%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 8%
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Gebruikers toevoegen](/help/platform/admin/add-users.md)
+   + [Productbeheerders toevoegen](/help/platform/admin/add-product-administrators.md)
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)
-   + [Admin Console](/help/platform/admin/admin-console.md)
-   + [Productprofielen beheren](/help/platform/admin/managing-product-profiles.md)
 + Segmentering en publiek {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
@@ -64,10 +64,10 @@ ht-degree: 8%
    + [Segment afstemmen op inzichten vóór delen](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
-+ [Dataverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
-+ Gegevensbeheer {#data-governance}
++ Data Governance {#data-governance}
    + [Overzicht](/help/platform/governance/understanding-data-governance.md)
    + [Eind-aan-eind demonstratie](/help/platform/governance/introduction-to-data-governance.md)
    + [Gegevens classificeren met labels](/help/platform/governance/classify-data-using-labels.md)
@@ -77,7 +77,7 @@ ht-degree: 8%
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
    + [Gegevenssets verwijderen](/help/platform/data-hygiene/delete-datasets.md)
-+ Gegevensopname {#data-ingestion}
++ Gegevensinname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -93,7 +93,7 @@ ht-degree: 8%
    + [Gegevens streamen met behulp van Bronverbindingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
    + [Zelfstudies voor Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Zelfstudies voor Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ Data Science-werkruimte {#data-science-workspace}
++ Werkruimte voor gegevenswetenschap {#data-science-workspace}
    + [Overzicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architectuur](data-science-workspace/architecture-overview.md)
    + [Het cursusschema en de gegevensset maken](data-science-workspace/create-the-course-schema-and-dataset.md)
@@ -142,7 +142,7 @@ ht-degree: 8%
    + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
    + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Bewaking {#monitoring}
++ Controleren {#monitoring}
    + [Gegevens bijhouden](/help/platform/monitoring/monitoring-dashboard.md)
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Dataflows bewaken](/help/platform/monitoring/data-monitoring.md)
@@ -159,6 +159,7 @@ ht-degree: 8%
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
+   + [Een berekend kenmerk maken](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
    + [Inleiding tot de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
@@ -188,7 +189,7 @@ ht-degree: 8%
    + [De gegevens van uw klant opnieuw laden](/help/platform/queries/recharge-your-customer-data.md)
    + [Client verbinden met Query-service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Gegevens valideren in de datalake](/help/platform/queries/validate-data-in-the-datalake.md)
-+ Schema&#39;s {#schemas}
++ Schemas {#schemas}
    + [Overzicht](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Bouwstenen](/help/platform/schemas/schema-building-blocks.md)
    + [Uw gegevensmodel plannen](/help/platform/schemas/plan-your-data-model.md)
