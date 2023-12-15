@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 7%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 7%
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Gebruikers toevoegen](/help/platform/admin/add-users.md)
+   + [Ontwikkelaars toevoegen](/help/platform/admin/add-developers.md)
    + [Productbeheerders toevoegen](/help/platform/admin/add-product-administrators.md)
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)
 + Segmentering en publiek {#audiences}
