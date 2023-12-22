@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
 
 
-   ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration.png)
+   ![AEP-configuratie gegevensstroom](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer-extensie installeren
@@ -91,16 +91,9 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 1. Selecteren **[!UICONTROL Catalogus]**.
 1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer]** extensie.
 1. De extensie installeren.
-1. In de **[!UICONTROL Extensie installeren]** dialoogvenster
-   1. Selecteer bijvoorbeeld een omgeving **[!UICONTROL Ontwikkeling]**.
-   1. Selecteer de **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** gegevensset van de **[!UICONTROL Gebeurtenisgegevens]** lijst.
-   1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
-      ![AJO-extensie-instellingen](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->Als u het niet ziet `AJO Push Tracking Experience Event Dataset` als optie, contacteer klantenzorg.
->
+Wanneer *alleen* in uw app berichten gebruiken, in **[!UICONTROL Extensie installeren]** of **[!UICONTROL Extensie configureren]** hoeft u niets te configureren. Als u echter al de [Pushmeldingen](journey-optimizer-push.md) in de zelfstudie ziet u dat voor de **[!UICONTROL Ontwikkeling]** milieu, **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** dataset wordt geselecteerd uit de **[!UICONTROL Gebeurtenisgegevens]** lijst.
+
 
 ### Journey Optimizer implementeren in de app
 

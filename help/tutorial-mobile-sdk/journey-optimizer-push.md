@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
@@ -333,6 +333,7 @@ Uw volgende stap is het maken van de reis die het verzenden van de pushmelding a
       In de **[!UICONTROL Pushmelding]** editor:
 
       1. Voer een **[!UICONTROL Titel]** bijvoorbeeld `Luma Test Push Notification` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Test push notification for Luma mobile app`.
+      1. U kunt desgewenst een koppeling naar een afbeelding (.png of .jpg) invoeren in **[!UICONTROL Media toevoegen]**. Als u dit doet, maakt de afbeelding deel uit van de pushmelding.
       1. Om de redacteur te bewaren en te verlaten, selecteer ![Chevron left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![Push-editor](assets/ajo-push-editor.png)
 
