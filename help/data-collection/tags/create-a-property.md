@@ -1,6 +1,6 @@
 ---
 title: Een eigenschap voor tags maken
-description: Leer hoe u tag-eigenschappen kunt maken om de marketinglabels op uw website te beheren.
+description: Leer tageigenschappen maken om de marketingtags op uw website te beheren.
 feature: Tags
 level: Beginner
 jira: KT-3524
@@ -9,12 +9,12 @@ exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
 source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 77%
 
 ---
 
 # Een eigenschap voor tags maken
 
-Leer hoe u tag-eigenschappen kunt maken om de marketinglabels op uw website te beheren.
+Leer tageigenschappen maken om de marketingtags op uw website te beheren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
