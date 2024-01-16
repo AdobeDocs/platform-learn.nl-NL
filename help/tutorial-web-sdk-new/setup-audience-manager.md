@@ -2,7 +2,7 @@
 title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experiencele
 1. Selecteer de **[!UICONTROL Gegevensbron]** die u in de vorige sectie hebt gemaakt.
 1. **[!UICONTROL Selecteer een map]** waarin u de eigenschap wilt opslaan in het deelvenster aan de rechterkant. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
 1. Breid uit **[!UICONTROL Trainingsexpressie]** inlasteken en selecteren **[!UICONTROL Expressiebouwer]** U moet een sleutelwaardepaar verstrekken dat een homepagebezoek betekent.
-1. Open de [Luminantiepage](https://luma.enablementadobe.com/content/luma/us/en.html) (toegewezen aan uw eigenschap tag) en de **Platform Web SDK Debugger** en vernieuw de pagina.
+1. Open de [Luminantiepage](https://luma.enablementadobe.com/content/luma/us/en.html) (toegewezen aan uw eigenschap tag) en de **Adobe Experience Platform Debugger** en vernieuw de pagina.
 1. Bekijk de Verzoeken van het Netwerk en de gebeurtenisdetails voor het Web SDK van het Platform om de sleutel en naamwaarde voor de homepage te vinden.
    ![Adobe Experience Platform Audience Manager XDM-gegevens](assets/xdm-keyvalue.jpg)
 1. Ga terug naar de Bouwer van de Uitdrukking in de UI van de Audience Manager en ga sleutel in als **`web.webPageDetails.name`** en de waarde van **`content:luma:us:en`**. Deze stap zorgt ervoor dat u een eigenschap brandt wanneer u de homepage laadt.
@@ -100,7 +100,8 @@ De volgende stap is het creëren van een **segment** en wijs uw nieuw gedefiniee
 1. Selecteren **[!UICONTROL Nieuwe toevoegen]** linksboven op de pagina om de segmentbuilder te openen
 1. Geef uw segment een vriendelijke naam en beschrijving, zoals `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Selecteer een map]** waar uw segment in de ruit aan het recht zal worden bewaard. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
-1. Voeg een integratiecode toe, die in dit geval een willekeurige reeks getallen is. 1. In de **[!UICONTROL Gegevensbron]** sectie, selecteert u **[!UICONTROL Audience Manager]** en de eerder gemaakte gegevensbron
+1. Voeg een integratiecode toe, die in dit geval een willekeurige reeks getallen is.
+1. In de **[!UICONTROL Gegevensbron]** sectie, selecteert u **[!UICONTROL Audience Manager]** en de eerder gemaakte gegevensbron
 1. Breid uit **[!UICONTROL Treinen]** sectie en zoek naar het kenmerk dat u hebt gemaakt
 1. Selecteren **[!UICONTROL Tracering toevoegen]**.
 1. Selecteren **[!UICONTROL Opslaan]** onder aan de pagina
@@ -181,4 +182,4 @@ Nu u deze les hebt voltooid, zou u moeten kunnen zien hoe het Web SDK van het Pl
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

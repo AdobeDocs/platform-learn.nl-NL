@@ -2,9 +2,9 @@
 title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ Aan dit eind van deze les, zult u kunnen:
 
       * [Web SDK-extensie installeren](install-web-sdk.md)
       * [Gegevenselementen maken](create-data-elements.md)
+      * [Identiteiten maken](create-identities.md)
       * [Een labelregel maken](create-tag-rule.md)
       * [Valideren met Adobe Experience Platform Debugger](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ Gefeliciteerd! U hebt gebeurtenis gevormd door:sturen!
 
 >[!NOTE]
 >
-Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

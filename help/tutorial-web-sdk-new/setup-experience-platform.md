@@ -1,9 +1,9 @@
 ---
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ Aan het eind van deze les, zult u kunnen:
 U had de volgende lessen reeds moeten voltooien:
 
 * De **Eerste configuratie** lessen:
-   * [Machtigingen configureren](configure-permissions.md)
    * [Een XDM-schema configureren](configure-schemas.md)
    * [Een gegevensstroom configureren](configure-datastream.md)
    * [Naamruimte configureren](configure-identities.md)
@@ -38,6 +37,7 @@ U had de volgende lessen reeds moeten voltooien:
 * De **Configuratie van tags** lessen:
    * [Web SDK-extensie installeren](install-web-sdk.md)
    * [Gegevenselementen maken](create-data-elements.md)
+   * [Identiteiten maken](create-identities.md)
    * [Tagregels maken](create-tag-rule.md)
 
 
@@ -54,7 +54,7 @@ In deze oefening, creeert u een dataset om inhoud en elektronische handeldetails
 
 1. Ga naar de [Interface Experience Platform](https://experience.adobe.com/platform/)
 1. Bevestig dat u zich in de ontwikkelingssandbox bevindt die u voor deze zelfstudie gebruikt
-1. Openen **[!UICONTROL Gegevenssets]** van de linkernavigatie
+1. Openen **[!UICONTROL Gegevensbeheer > Gegevensbestanden]** van de linkernavigatie
 1. Selecteren **[!UICONTROL Gegevensset maken]**
 
    ![Schema maken](assets/experience-platform-create-dataset.png)
@@ -92,7 +92,7 @@ Nu kunt u uw [!UICONTROL datastream] gegevens verzenden naar [!UICONTROL Adobe E
 
    ![DataStream Config](assets/experience-platform-datastream-config.png)
 
-Terwijl u verkeer binnen op [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html) Aan uw markeringsbezit in kaart gebracht, zullen de gegevens de dataset in Experience Platform bevolken!
+Terwijl u verkeer op de [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html) Aan uw markeringsbezit in kaart gebracht, zullen de gegevens de dataset in Experience Platform bevolken!
 
 ## De gegevensset valideren
 
@@ -129,7 +129,7 @@ Gegevens moeten nu worden ingevuld in het dialoogvenster `Luma Web Event Data` d
 
 Om te bevestigen dat de gegevens in het datumpigment van Platform zijn geland, is het snel mogelijk om de **[!UICONTROL Gegevensset voorvertoning]** gebruiken. De gegevens van SDK van het Web zijn micro-gebatcheerd aan het gegevens meer en op periodieke basis verfrist in de interface van het Platform. Het kan 10 tot 15 minuten duren om de gegevens te zien die u hebt gegenereerd.
 
-1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Gegevenssets]** in de linkernavigatie om het dialoogvenster **[!UICONTROL Gegevenssets]** dashboard.
+1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Gegevensbeheer > Gegevensbestanden]** in de linkernavigatie om het dialoogvenster **[!UICONTROL Gegevenssets]** dashboard.
 
    Het dashboard maakt een lijst van alle beschikbare datasets voor uw organisatie. De details worden getoond voor elke vermelde dataset, met inbegrip van zijn naam, het schema de dataset zich aan, en status van de meest recente versiereeks houdt.
 
@@ -220,7 +220,7 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Profielen]** in de linkernavigatie
 
 1. Als de **[!UICONTROL Naamruimte identiteit]** gebruiken `lumaCRMId`
-1. De waarde van de opdracht kopiëren en plakken `lumaCRMId` overgegaan in de vraag u in Debugger van het Experience Platform (waarschijnlijk) inspecteerde `112ca06ed53d3db37e4cea49cc45b71e`).
+1. De waarde van de opdracht kopiëren en plakken `lumaCRMId` overgegaan in de vraag u in Debugger van het Experience Platform inspecteerde, in dit geval `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![Profiel](assets/experience-platform-validate-dataset-profile.png)
 
@@ -228,15 +228,22 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
    ![Profiel](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. Klik in het dialoogvenster [!UICONTROL Profiel-id] en [!UICONTROL Klantprofiel] wordt gevuld. Hier kunt u alle identiteiten zien verbonden aan `lumaCRMId`, zoals de `ECID`:
+1. Als u de volledige **[!UICONTROL Klantprofiel]** Selecteer voor elke id de optie **[!UICONTROL Profiel-id]** in het hoofdvenster.
+
+   >[!NOTE]
+   >
+   >U kunt de hyperlink van de profiel-id selecteren of als u de rij selecteert, wordt een rechts menu geopend waarin u de hyperlink Profiel-id kunt selecteren
+   > ![Klantprofiel](assets/experience-platform-select-profileId.png)
+
+   Hier kunt u alle identiteiten zien verbonden aan `lumaCRMId`, zoals de `ECID`.
 
    ![Klantprofiel](assets/experience-platform-validate-dataset-custProfile.png)
 
-U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Customer Journey Analytics! En Journey Optimizer!)!
+U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer!)!
 
 
 [Volgende: ](setup-analytics.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
