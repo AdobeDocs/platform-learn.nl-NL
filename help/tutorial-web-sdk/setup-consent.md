@@ -3,9 +3,9 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van he
 
 >[!NOTE]
 > 
->Ter demonstratie gebruikt deze zelfstudie [Klaro](https://heyklaro.com/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
+>Ter demonstratie gebruikt deze zelfstudie [Klaro](https://heyklaro.com/){target="_blank"} als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
 
 
 ## Leerdoelstellingen
