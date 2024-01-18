@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '855'
 ht-degree: 7%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 7%
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Gebruikers toevoegen](/help/platform/admin/add-users.md)
+   + [Gebruikers toevoegen aan gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Ontwikkelaars toevoegen](/help/platform/admin/add-developers.md)
    + [Productbeheerders toevoegen](/help/platform/admin/add-product-administrators.md)
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)

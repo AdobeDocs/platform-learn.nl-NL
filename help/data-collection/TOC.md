@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '185'
 ht-degree: 20%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 20%
 # Tutorials voor gegevensverzameling{#data-collection}
 
 + [Tutorials voor gegevensverzameling](overview.md)
++ [Gebruikers en machtigingen](admin/users-and-permissions.md)
 + Tags{#tags}
    + [Overzicht en een eigenschap maken](tags/create-a-property.md)
    + [Een hostingoptie kiezen](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 20%
    + [Gegevenselementen maken](tags/create-data-elements.md)
    + [Regels maken](tags/build-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
-   + [Gebruikers en machtigingen](tags/users-and-permissions.md)
    + [Implementeren in websites met Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
    + [Implementeren in websites met oplossing-SDK&#39;s](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementeren in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
@@ -64,5 +64,5 @@ ht-degree: 20%
    + [Gegevensprep](edge/data-prep.md)
    + [Gevoelige gegevens beheren](edge/manage-sensitive-data-in-datastreams.md)
    + [Apparaat-id&#39;s van eerste partij](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ Foutopsporing{#debugger}
    + [Overzicht](debugger/overview.md)
