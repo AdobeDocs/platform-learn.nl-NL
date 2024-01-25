@@ -4,9 +4,9 @@ description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen en toewijz
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Dit object:
 resulteert in:
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in 
 
 * XDM-ladingen maken in uw app, conform de Adobe Analytics ExperienceEvent Full Extension field group, vergelijkbaar met wat u in het dialoogvenster [Gebeurtenisgegevens bijhouden](events.md) les, of
 * Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer informatie [Gegevens koppelen aan SDK-gebeurtenissen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [Gegevens wijzigen in SDK-gebeurtenissen](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### Merchandising-eVars
+
+Als u [merchandising Vars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in uw analyseprogramma, bijvoorbeeld om de kleur van producten vast te leggen, zoals `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, moet u de XDM-lading uitbreiden die u in [Gebeurtenisgegevens bijhouden](events.md) om die informatie over de handel vast te leggen.
+
+* In JSON:
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* In code:
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### Verwerkingsregels gebruiken
