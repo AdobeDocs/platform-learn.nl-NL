@@ -2,9 +2,9 @@
 title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4282'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Dit fragment is al aanwezig op de Luma-site, maar laten we eens nader kijken om 
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -122,7 +122,7 @@ Het doel moet in de gegevensstroomconfiguratie worden toegelaten alvorens om het
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. Ga naar de [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Gegevensstromen]**
 1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
 
@@ -144,16 +144,17 @@ Als u eigenschapstokens wilt instellen of zoeken, navigeert u naar **Adobe Targe
 
 ![Eigenschap-token doel](assets/target-admin-properties.png)
 
->[!NOTE]
->
->Per datastream kan slechts één eigenschapstoken worden opgegeven.
+<a id="advanced-pto"></a>
 
+Er kan slechts één eigenschapstoken per gegevensstroom worden opgegeven, maar met overschrijvingen van eigenschapstoken kunt u alternatieve eigenschapstokens opgeven ter vervanging van het primaire eigenschapstoken dat in de gegevensstroom is gedefinieerd. Een update van de `sendEvent` Er is ook actie nodig om de gegevensstroom te overschrijven.
+
+![Identiteitslijst](assets/advanced-property-token.png)
 
 ### Id van doelomgeving
 
 [Omgevingen](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) in Target Help kunt u uw implementatie in alle ontwikkelingsstadia beheren. Deze optionele instelling geeft aan welke doelomgeving u voor elke gegevensstroom wilt gebruiken.
 
-De Adobe raadt aan om de ID van het Milieu van het Doel voor elk van uw ontwikkeling, het opvoeren, en productiegegevensstromen verschillend te plaatsen om dingen eenvoudig te houden.
+De Adobe raadt aan om de ID van het Milieu van het Doel voor elk van uw ontwikkeling, het opvoeren, en productiegegevensstromen verschillend te plaatsen om dingen eenvoudig te houden. U kunt uw omgevingen ook in de doelinterface ordenen met de [gastheren](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) gebruiken.
 
 Navigeer naar Omgeving-id&#39;s om deze in te stellen of te zoeken **Adobe Target** > **[!UICONTROL Administratie]** > **[!UICONTROL Omgevingen]**.
 
@@ -165,22 +166,15 @@ Navigeer naar Omgeving-id&#39;s om deze in te stellen of te zoeken **Adobe Targe
 
 ### Doelnaamruimte voor id van derden
 
-Met deze optionele instelling kunt u opgeven welk identiteitssymbool moet worden gebruikt voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie kunt u naar de [Real-Time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) van de doelhandleiding.
-
-De identiteitssymbolen staan in de lijst met identiteiten onder **Gegevensverzameling** > **[!UICONTROL Klant]** > **[!UICONTROL Identiteiten]**.
-<a id="advanced-pto"></a>
-
-### Geavanceerde tokenoverschrijvingen van eigenschappen
-
-De geavanceerde sectie bevat een gebied voor het symbolische met voeten treedt van het Bezit die u toestaat om te specificeren welke tokens van het Bezit het primaire bezitstoken kunnen vervangen u in de configuratie bepaalde.
-
-![Identiteitslijst](assets/advanced-property-token.png)
+Met deze optionele instelling kunt u opgeven welk identiteitssymbool u wilt gebruiken voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie kunt u naar de [Real-Time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) van de doelhandleiding.
 
 De identiteitssymbolen staan in de lijst met identiteiten onder **Gegevensverzameling** > **[!UICONTROL Klant]** > **[!UICONTROL Identiteiten]**.
 
 ![Identiteitslijst](assets/target-identities.png)
 
 In deze zelfstudie gebruikt u de site Luma en gebruikt u het identiteitssymbool `lumaCrmId` opstelling tijdens de les over [Identiteiten](configure-identities.md).
+
+
 
 
 ## Besluiten over visuele personalisatie renderen
@@ -263,7 +257,7 @@ Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans
 >
 >Als u Google Chrome gebruikt en de [Helperextensie Visual Experience Composer (VEC)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) geïnstalleerd, zorg ervoor de **Doelbibliotheken injecteren** instellen is uitgeschakeld. Als u deze instelling inschakelt, worden er extra aanvragen voor het doel ingediend.
 
-1. De Adobe Experience Platform Debugger-browserextensie openen
+1. De browserextensie van het Adobe Experience Platform Debugger openen
 1. Ga naar de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik foutopsporing om [schakelen van de markeringseigenschap op de site naar uw eigen ontwikkeleigenschap](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. De pagina opnieuw laden
 1. Selecteer de **[!UICONTROL Netwerk]** in de foutopsporing
@@ -318,11 +312,11 @@ Nu u SDK van het Web van het Platform hebt gevormd om inhoud voor te verzoeken `
 
 1. Enter `%event.propositions%` in het veld Proposities als we de gebeurtenis &quot;Send event complete&quot; gebruiken als trigger voor deze regel.
 1. Selecteer in de sectie &#39;Metagegevens van voorstel&#39; de optie **[!UICONTROL Een formulier gebruiken]**
-1. Invoer in het veld Toepassingsgebied `homepage-hero`
-1. Voor de invoer in het veld Selector `div.heroimage`
-1. Handelingstype behouden als `Set HTML`
+1. Voor de **[!UICONTROL Toepassingsgebied]** veldinvoer `homepage-hero`
+1. Voor de **[!UICONTROL Kiezer]** veldinvoer `div.heroimage`
+1. Voor **[!UICONTROL Type handeling]** selecteren **[!UICONTROL HTML instellen]**
 
-![Herdenkingsactie homepage weergeven](assets/target-action-render-hero.png)
+   ![Herdenkingsactie homepage weergeven](assets/target-action-render-hero.png)
 
 1. Uw wijzigingen opslaan en samenstellen in uw bibliotheek
 1. Laad de Luminantiepagina een paar keer, wat voldoende zou moeten zijn om de nieuwe pagina te maken `homepage-hero` register van het beslissingswerkingsgebied in de interface van het Doel.
@@ -452,15 +446,16 @@ Als u aanvullende gegevens voor Doel buiten het XDM-object wilt doorgeven, moet 
 
 ## Aanpassingsbesluit en gebeurtenissen voor analytische collectie splitsen
 
-U kunt een Verzoek van de Positie van de Beslissing en verzoeken van de Inzameling van Gegevens van de Analyse afzonderlijk verzenden. Door de gebeurtenisregels op deze manier op te splitsen, kan de gebeurtenis Target Decisioning zo vroeg mogelijk worden uitgevoerd. De gebeurtenis Analytics kan wachten tot het object data layer is gevuld.
+De gegevenslaag op de Luminasite is volledig gedefinieerd voordat de tags code insluiten. Op deze manier kunnen we een enkele oproep doen om persoonlijke inhoud op te halen (bijvoorbeeld vanuit Adobe Target) en analysegegevens te verzenden (bijvoorbeeld naar Adobe Analytics). Op veel websites kan de gegevenslaag niet vroeg genoeg of snel genoeg worden geladen om te kunnen worden gebruikt met verpersoonlijkingstoepassingen. In dergelijke situaties kunt u twee `sendEvent` roept op één enkele paginading en gebruik eerste voor verpersoonlijking en tweede voor analytics. Door de gebeurtenisregels op deze manier op te splitsen, kan de gebeurtenis Target Decisioning zo vroeg mogelijk worden uitgevoerd. De gebeurtenis Analytics kan wachten tot het object data layer is gevuld. Dit is gelijkaardige implementaties van pre-Web SDK, waar Adobe Target de `target-global-mbox` boven aan de pagina en Adobe Analytics zou de `s.t()` bellen onderaan op de pagina
 
-1. Een aangeroepen regel maken `all pages - page top - request decisions`.
-2. Voeg een gebeurtenis aan de regel toe. Gebruik de **Kern** en de **[!UICONTROL Bibliotheek geladen (pagina boven)]** gebeurtenistype.
-3. Voeg een handeling aan de regel toe. Gebruik de **Adobe Experience Platform Web SDK** uitbreiding en **Gebeurtenis Send** actietype.
-4. In de **Gebeurtenisstijl Met instructies** selecteert u de **[!UICONTROL Boven aan pagina-gebeurtenis - verzoek om personalisatiebeslissingen]** keuzerondje
-5. Hierdoor worden de **Type** als **[!UICONTROL Fetch voor beslissingsvoorstel]**
 
-![send_decisions_request_alone](assets/target-decision-request.png)
+1. Een aangeroepen regel maken `all pages - page top - request decisions`
+1. Voeg een gebeurtenis aan de regel toe. Gebruik de **Kern** en de **[!UICONTROL Bibliotheek geladen (pagina boven)]** gebeurtenistype
+1. Voeg een handeling aan de regel toe. Gebruik de **Adobe Experience Platform Web SDK** uitbreiding en **Gebeurtenis Send** actietype
+1. Selecteren **[!UICONTROL Geleide gebeurtenissen gebruiken]** en selecteer vervolgens **[!UICONTROL Aanpassing aanvragen]**
+1. Hierdoor worden de **Type** als **[!UICONTROL Fetch voor beslissingsvoorstel]**
+
+   ![send_decisions_request_alone](assets/target-decision-request.png)
 
 1. Wanneer u uw `Adobe Analytics Send Event rule` gebruiken **Gebeurtenisstijl Met instructies** sectie selecteert u de **[!UICONTROL Bottom of page event - Collect Analytics]** keuzerondje
 1. Hierdoor worden de **[!UICONTROL Inclusief weergavemeldingen in behandeling]** checkbox selecteerde zodat zal het een rij gevormde vertoningsbericht van het beslissingsverzoek worden verzonden.
@@ -514,7 +509,7 @@ Als u Target Premium hebt, kunt u ook controleren of de eenheidgegevens correct 
 
 ### Valideren met betrouwbaarheid
 
-Daarnaast kunt u Waar nodig de optie Waarschuwing gebruiken om te bevestigen dat aanvragen voor doelbeslissingen de juiste gegevens krijgen en dat transformaties aan serverzijde correct worden uitgevoerd. U kunt campagne en ervaringsinformatie ook bevestigen is bevat in de vraag van Adobe Analytics zelfs wanneer het besluit van het Doel en de vraag van Adobe Analytics afzonderlijk worden verzonden.
+Bovendien kunt u Verzekering waar nodig gebruiken om de het besluitvormingsverzoeken van het Doel te bevestigen krijgen de correcte gegevens en dat om het even welke server zijtransformaties correct voorkomen. U kunt campagne en ervaringsinformatie ook bevestigen is bevat in de vraag van Adobe Analytics zelfs wanneer het besluit van het Doel en de vraag van Adobe Analytics afzonderlijk worden verzonden.
 
 1. Openen [Betrouwbaarheid](https://experience.adobe.com/assurance)
 1. Start een nieuwe betrouwbaarheidssessie en voer de **[!UICONTROL sessienaam]** en voert u de **[!UICONTROL basis-URL]** voor uw site of een andere pagina die u test
@@ -539,7 +534,7 @@ Daarnaast kunt u Waar nodig de optie Waarschuwing gebruiken om te bevestigen dat
 
    ![Betalen bij detectietechnische analyse](assets/validate-in-assurance-analyticsevent.png)
 
-Dit bevestigt dat de informatie A4T die voor recentere transmissie in de rij werd geplaatst toen wij de doelbeslissende vraag maakten behoorlijk werd verzonden wanneer de analytische volgende vraag later op de pagina in brand werd gestoken.
+Dit bevestigt dat de informatie A4T die voor recentere transmissie een rij werd gevormd toen wij de doelbeslissende vraag maakten behoorlijk werd verzonden wanneer de analytische volgende vraag later op de pagina in brand werd gestoken.
 
 Nu u deze les hebt voltooid zou u een werkende implementatie van Adobe Target moeten hebben gebruikend het Web SDK van het Platform.
 

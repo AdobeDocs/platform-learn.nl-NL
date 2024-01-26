@@ -4,9 +4,9 @@ description: Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
 
-Door deze documentatie te volgen, zijn de gebruikers van Journey Optimizer uitgerust om de eigenschappen van de offer decisioning effectief toe te passen, die de verpersoonlijking en de relevantie van hun klanteninteractie verbeteren.
+Door deze zelfstudie te volgen, zijn Journey Optimizer-gebruikers uitgerust om offer decisioning-functies effectief toe te passen, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
 
 ## Leerdoelen
 
@@ -24,7 +24,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 * Pak de kernconcepten van Beslissingsbeheer binnen de Adobe Journey Optimizer en de integratie ervan met de SDK van het Web van Adobe Experience Platform.
 
-* Leer het geleidelijke proces om SDK van het Web voor Offer decisioning te vormen, die naadloze integratie met AJO verzekeren.
+* Leer het geleidelijke proces om SDK van het Web voor Offer decisioning te vormen, die naadloze integratie met Journey Optimizer verzekeren.
 
 * Onderzoek een gedetailleerd gebruiksgeval dat op loyaliteitsstatusaanbiedingen wordt geconcentreerd, die inzicht in het creëren van en het leiden van aanbiedingen, besluiten, en plaatsen effectief krijgt.
 
@@ -38,13 +38,11 @@ Aan het einde van deze les kunt u het volgende doen:
 
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
-* Zorg ervoor dat uw organisatie toegang heeft tot Adobe Journey Optimizer Ultimate (AJO en Offer decisioning) of Adobe Experience Platform en de invoegtoepassing voor de Offer decisioning-toepassingsservice.
+* Zorg ervoor dat uw organisatie toegang heeft tot Adobe Journey Optimizer Ultimate (Journey Optimizer en Offer decisioning) of Adobe Experience Platform en de invoegtoepassing voor de toepassingsservice van de Offer decisioning.
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform.
 
 * Schakel uw organisatie in voor Edge-besluitvorming.
-
-* Publiceer uw DataStream.
 
 * Begrijp hoe te om een plaatsing te vormen, en plaats en activiteit IDs binnen uw Reikwijdte JSON van het Besluit te concretiseren.
 
@@ -64,7 +62,7 @@ Offer decisioning moet zijn ingeschakeld in het dialoogvenster **datastream** co
 
 Om Offer decisioning in de gegevensstroom te vormen:
 
-1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection) interface.
+1. Ga naar de [Gegevensverzameling](https://experience.adobe.com/#/data-collection) interface.
 
 1. Selecteer in de linkernavigatie de optie **Gegevensstromen**.
 
@@ -143,7 +141,7 @@ Met dit gebruiksscenario kunt u beter begrijpen hoe Journey Optimizer uw klanten
 
 >[!NOTE]
 >
-> Aangezien deze zelfstudie op implementatoren is gericht, is het opmerkelijk dat deze les wezenlijk werk UI in AJO impliceert. Terwijl dergelijke taken UI typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om inzicht in het proces te krijgen, zelfs als zij niet verantwoordelijk voor de verwezenlijking van de campagne van het besluitvormingsbeheer op de lange termijn zijn.
+> Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Terwijl dergelijke interfacetaken typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om inzicht in het proces te krijgen, zelfs als zij niet verantwoordelijk voor de verwezenlijking van de campagne van het besluitvormingsbeheer op de lange termijn zijn.
 
 ## Onderdelen
 
@@ -173,13 +171,13 @@ Voer de volgende stappen uit om de plaatsing te maken:
 
 1. Klikken **Opslaan**.
 1. Zodra de plaatsing wordt gecreeerd, toont het in de plaatsingslijst.
-1. Neem nota van plaatsings identiteitskaart, aangezien dit voor configuratie binnen uw Reikwijdte van het Besluit noodzakelijk kan zijn.
+1. Selecteer de rij met uw nieuwe plaatsing en neem nota van plaatsidentiteitskaart, aangezien dit voor configuratie binnen uw Reikwijdte van het Besluit noodzakelijk kan zijn.
 
    ![Zie Plaatsing-id ](../assets/decisioning-placement-id.png)
 
 ### Beslissingsregels voor de status van Loyalty
 
-**Besluitvormingsregels** de voorwaarden voor de indiening van de offertes specificeren. In dit voorbeeld maakt u beslissingsregels voor verschillende aanbiedingen, afhankelijk van de status Loyalty van een gebruiker.
+**Besluitvormingsregels** de voorwaarden voor de indiening van de offertes specificeren. In dit voorbeeld maakt u beslissingsregels voor verschillende aanbiedingen afhankelijk van de Loyalty-status van een gebruiker.
 
 De lijst met besluitvormingsregels is toegankelijk in het **Componenten** -menu.
 
@@ -189,7 +187,7 @@ Voer de volgende stappen uit om de beslissingsregels te maken:
 
    ![De regel maken](../assets/decisioning-create-rule.png)
 
-1. Laten we de eerste regel &#39;*Gouden regel voor de status van Loyalty*&quot;. U kunt XDM-velden gebruiken om de regel te definiëren. De Adobe Experience Platform **Segment Builder** is een intuïtieve UI die u kunt gebruiken om de regelvoorwaarden te bouwen.
+1. Laten we de eerste regel &#39;*Gouden regel voor de status van Loyalty*&quot;. U kunt XDM-velden gebruiken om de regel te definiëren. De Adobe Experience Platform **Segment Builder** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
 
    ![De regel definiëren](../assets/decisioning-define-rule.png)
 
