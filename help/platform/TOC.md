@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 7%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 7%
    + [Schema&#39;s bijwerken](/help/platform/schemas/update-schemas.md)
    + [Een ad-hocschema maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Bronnen {#sources}
-   + [Overzicht van bronnen](/help/platform/sources/overview.md)
+   + [Overzicht](/help/platform/sources/overview.md)
    + [Gegevens van Adobe Analytics verzamelen](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Gegevens van Audience Manager verzamelen](/help/platform/sources/ingest-data-from-aam.md)
    + [Gegevens van Marketo verzamelen](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 7%
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met behulp van Bronverbindingen](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Problemen oplossen: SFTP-connector](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Hoofdletters gebruiken {#use-case-playbooks}
+   + [Overzicht](/help/platform/use-case-playbooks/overview.md)
+   + [Een sandbox met afspeelboeken configureren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Een instantie voor een afspeelboek maken en publiceren](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integratie van Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
