@@ -8,9 +8,9 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Leer hoe u een sandbox configureert voor Use Case Playbooks. Als u aan de slag w
 1. Een ontwikkelingssandbox maken met `-ucp` als achtervoegsel in de naam
 1. Machtigingen en gebruikers toevoegen aan de sandbox
 1. Kanaaloppervlakken configureren voor e-mail, push en SMS
+
+Zie voor meer informatie [Aan de slag](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
 
