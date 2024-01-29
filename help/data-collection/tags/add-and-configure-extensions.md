@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3528
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
 # Tagextensies toevoegen en configureren
 
-Leer om uitbreidingen in uw markeringsbezit toe te voegen en te vormen. Extensies zijn vooraf verpakte &quot;apps&quot; die u op uw site installeert, zodat u over de benodigde trackingmogelijkheden, personalisatie of andere mogelijkheden beschikt. De uitbreidingsmarkt groeit altijd, aangezien de Adobe, de partners, en de klanten uitbreidingen aan machtsgebruiksgevallen tot stand brengen.
+Leer om uitbreidingen in uw markeringsbezit toe te voegen en te vormen. Extensies zijn vooraf verpakte &quot;apps&quot; die u op uw site installeert, zodat u over de benodigde trackingmogelijkheden, personalisatie of andere mogelijkheden beschikt. De uitbreidingsmarkt groeit altijd, aangezien de Adobe, de partners, en de klanten uitbreidingen aan machtsgebruiksgevallen tot stand brengen. Zie de klasse [extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html) documentatie.
 
 >[!NOTE]
 >

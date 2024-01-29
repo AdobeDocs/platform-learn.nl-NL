@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 20%
+source-wordcount: '188'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 20%
 + Tags{#tags}
    + [Overzicht en een eigenschap maken](tags/create-a-property.md)
    + [Een hostingoptie kiezen](tags/choose-a-hosting-option.md)
-   + [Omgevingen gebruiken](tags/use-environments.md)
+   + [Omgevingen en insluitcodes gebruiken](tags/use-environments-and-embed-codes.md)
    + [Extensies toevoegen en configureren](tags/add-and-configure-extensions.md)
    + [Gegevenselementen maken](tags/create-data-elements.md)
    + [Regels maken](tags/build-rules.md)
