@@ -1,9 +1,9 @@
 ---
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Platform Web SDK.
 
 Experience Platform is de ruggengraat van alle nieuwe Experience Cloud toepassingen, zoals Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics en Adobe Journey Optimizer. Deze toepassingen worden ontworpen om het Web SDK van het Platform als hun optimale methode van Webgegevensinzameling te gebruiken.
+
+
+![WebSDK en Adobe Experience Platform-diagram](assets/dc-websdk-aep.png)
 
 Experience Platform gebruikt hetzelfde XDM-schema dat u eerder hebt gemaakt om gebeurtenisgegevens van de Luma-website vast te leggen. Wanneer die gegevens naar het Netwerk van de Rand van het Platform worden verzonden, kan de configuratie van de gegevensstroom het aan Experience Platform door:sturen.
 

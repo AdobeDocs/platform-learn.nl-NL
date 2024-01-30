@@ -2,9 +2,9 @@
 title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 0%
 Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform.
 
 Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers van het Netwerk van de Rand van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser rechtstreeks te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in [Overzicht van doorsturen van gebeurtenissen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK en gebeurtenis die diagram door:sturen](assets/dc-websdk-eventforwarding.png)
 
 Als u gebeurtenissen wilt doorsturen in Adobe Experience Platform, moeten gegevens eerst naar Adobe Experience Platform Edge Network worden verzonden met een of meer van de volgende drie opties:
 
@@ -50,7 +53,6 @@ Aan dit eind van deze les, zult u kunnen:
 
    * Eerste configuratie
 
-      * [Machtigingen configureren](configure-permissions.md)
       * [Een XDM-schema configureren](configure-schemas.md)
       * [Naamruimte configureren](configure-identities.md)
       * [Een gegevensstroom configureren](configure-datastream.md)

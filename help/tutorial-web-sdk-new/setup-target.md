@@ -2,9 +2,9 @@
 title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4282'
+source-wordcount: '4288'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ Leer hoe u Adobe Target implementeert met de Platform Web SDK. Leer hoe u ervari
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) is de Adobe Experience Cloud-toepassing die alles biedt wat u nodig hebt om de ervaring van uw klanten op maat te maken en aan te passen, zodat u uw omzet kunt maximaliseren op uw websites en mobiele sites, apps en andere digitale kanalen.
 
+![WebSDK en Adobe Target-diagram](assets/dc-websdk-at.png)
 
 ## Leerdoelstellingen
 
