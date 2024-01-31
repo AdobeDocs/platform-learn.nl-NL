@@ -1,17 +1,17 @@
 ---
-title: Een labelregel maken
+title: Tagregels maken
 description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
 
-# Een labelregel maken
+# Tagregels maken
 
-Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
+Leer hoe u gebeurtenissen naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
 
 >[!NOTE]
 >
@@ -52,18 +52,25 @@ waar;
 1. **opeenvolging** is de volgorde waarin de regel ten opzichte van andere regels moet worden toegepast
 <!-- minor update -->
 
-## Tagregel maken
+## Tagregels maken
 
 In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les zullen worden gebruikt:
 
 * **[!UICONTROL Variabele bijwerken]** koppelen gegevenselementen aan XDM-velden
 * **[!UICONTROL Gebeurtenis verzenden]** Hiermee wordt het XDM-object naar het Edge Network-Experience Platform verzonden
 
-### Variabele bijwerken
+Eerst definiëren we een regel met de **[!UICONTROL Variabele bijwerken]** handeling, die een &quot;globale configuratie&quot;van XDM gebieden bepaalt wij op elke pagina van de plaats (bijvoorbeeld, de paginanaam) willen verzenden.
 
-Creeer deze eerste regel als &quot;globale configuratie&quot;om alle essentiële inhoudsvariabelen in het voorwerp te plaatsen XDM gebruikend het Web SDK van het Platform **[!UICONTROL Variabele bijwerken]** handeling. Dan creeer een tweede regel, die wordt gerangschikt om na eerste te teweegbrengen, om het voorwerp XDM naar het Netwerk van de Rand van het Platform te verzenden gebruikend **[!UICONTROL Gebeurtenis verzenden]** handeling. Verderop in deze zelfstudie verzendt u verschillende XDM-velden op basis van het type pagina waarop de bezoeker zich bevindt (bijvoorbeeld product-SKU&#39;s op productpagina&#39;s). U verwezenlijkt dit door de regels te rangschikken die **[!UICONTROL Variabele bijwerken]** handelingen voor de regel die de **[!UICONTROL Gebeurtenis verzenden]** handeling.
+Vervolgens kunnen we aanvullende regels definiëren met de **[!UICONTROL Variabele bijwerken]** handeling die de globale XDM-velden aanvult met extra velden die alleen onder bepaalde omstandigheden beschikbaar zijn (bijvoorbeeld productdetails toevoegen op productpagina&#39;s).
 
-Een labelregel maken:
+Tot slot zullen wij met de **[!UICONTROL Gebeurtenis verzenden]** handeling die het volledige XDM-object naar Adobe Experience Platform Edge Network verzendt.
+
+
+### Regels voor variabelen bijwerken
+
+#### Algemene velden
+
+Een labelregel maken voor de globale XDM-velden:
 
 1. Open de eigenschap tag die u voor deze zelfstudie gebruikt
 
@@ -119,6 +126,8 @@ Wijs nu uw [!UICONTROL gegevenselementen] aan de [!UICONTROL schema] wordt gebru
    * **`web.webPageDetials.server`** tot `%page.pageInfo.server%`
    * **`web.webPageDetials.siteSection`** tot `%page.pageInfo.hierarchie1%`
 
+1. Set `web.webPageDetials.pageViews.value` tot `1`
+
    ![Variabele inhoud bijwerken](assets/create-rule-xdm-variable-content.png)
 
 1. Zoek vervolgens de `identityMap` object in het schema en selecteer het
@@ -133,16 +142,202 @@ Wijs nu uw [!UICONTROL gegevenselementen] aan de [!UICONTROL schema] wordt gebru
 
    >[!WARNING]
    >
-   > In dit vervolgkeuzemenu worden de **`xdm.eventType`** in het XDM-object. Hoewel u in dit veld ook vrije-formulierlabels kunt typen, wordt u ten zeerste aangeraden **niet** omdat dit bijwerkingen heeft met Platform.
+   > In dit vervolgkeuzemenu worden de **`xdm.eventType`** in het XDM-object. Hoewel u in dit veld ook vrije-formulierlabels kunt typen, wordt u ten zeerste aangeraden **niet** omdat het negatieve effecten heeft op Platform.
 
    >[!TIP]
    >
    > Om te begrijpen welke waarden in te vullen `eventType` veld, moet u naar de schemapagina gaan en de `eventType` veld om de voorgestelde waarden op het rechterspoor weer te geven.
 
+   >[!TIP]
+   >
+   > while `web.webPageDetials.pageViews.value` noch `eventType` instellen op `web.webpagedetails.pageViews` Adobe Analytics is vereist om een baken als paginaweergave te verwerken. Het is handig om over een standaardmanier te beschikken om een paginaweergave voor andere downstreamtoepassingen aan te geven.
+
    ![Variabele-identiteitskaart bijwerken](assets/create-tag-rule-eventType.png)
 
 
 1. Selecteren **[!UICONTROL Wijzigingen behouden]** en vervolgens **[!UICONTROL Opslaan]** de regel in het volgende scherm om het maken van de regel te voltooien
+
+
+#### Verrijk het voorwerp XDM gebruikend extra regels met de Update veranderlijke actie
+
+U kunt **[!UICONTROL Variabele bijwerken]**  in meerdere, gerangschikte regels om het XDM-object te verrijken voordat het naar [!UICONTROL Platform Edge Network].
+
+>[!TIP]
+>
+>De regelvolgorde bepaalt welke regel het eerst wordt uitgevoerd wanneer een gebeurtenis wordt geactiveerd. Als twee regels hetzelfde gebeurtenistype hebben, wordt eerst de regel met het laagste getal uitgevoerd.
+> 
+>![regelvolgorde](assets/set-up-analytics-sequencing.png)
+
+##### Productpaginavelden
+
+Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
+
+1. Selecteren **[!UICONTROL Regel toevoegen]**
+1. Naam geven  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
+1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
+1. Naam geven `Core - Page Bottom - order 20`
+1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`. Dit verzekert de regellooppas na `all pages global content variables - page bottom - AA (order 1)` dat de globale inhoudsvariabelen plaatst, maar vóór `all pages send event - page bottom - AA (order 50)` die de XDM-gebeurtenis verzendt.
+
+   ![XDM-regels voor analyse](assets/set-up-analytics-pdp.png)
+
+1. Onder **[!UICONTROL Voorwaarden]**, selecteert u **[!UICONTROL Toevoegen]**
+1. Verlaten **[!UICONTROL Logische typen]** als **[!UICONTROL Standaard]**
+1. Verlaten **[!UICONTROL Extensies]** als **[!UICONTROL Kern]**
+1. Selecteren **[!UICONTROL Type voorwaarde]** als **[!UICONTROL Pad zonder queryreeks]**
+1. Schakel rechts de optie **[!UICONTROL Regex]** schakelen
+1. Onder **[!UICONTROL pad is gelijk aan]** set `/products/`. Voor de Luma-demo-site zorgt deze ervoor dat de regel alleen op productpagina&#39;s wordt geactiveerd
+1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+
+   ![XDM-regels voor analyse](assets/set-up-analytics-product-condition.png)
+
+1. Onder **[!UICONTROL Handelingen]** selecteren **[!UICONTROL Toevoegen]**
+1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
+1. Selecteren **[!UICONTROL Type handeling]** als **[!UICONTROL Variabele bijwerken]**
+1. Omlaag schuiven naar de `commerce` en selecteert u deze om het te openen.
+1. Open de **[!UICONTROL productViews]** object en set **[!UICONTROL value]** tot `1`
+
+   ![Productweergave instellen](assets/set-up-analytics-prodView.png)
+
+   >[!TIP]
+   >
+   >Het plaatsen van commerce.productViews.value=1 in XDM brengt automatisch aan `prodView` gebeurtenis in Analytics
+
+
+1. Omlaag schuiven naar en selecteren `productListItems` array
+1. Selecteren **[!UICONTROL Afzonderlijke items opgeven]**
+1. Selecteren **[!UICONTROL Item toevoegen]**
+
+   ![Weergavegebeurtenis product instellen](assets/set-up-analytics-xdm-individual.png)
+
+   >[!CAUTION]
+   >
+   >De **`productListItems`** is een `array` gegevenstype zodat verwacht het gegevens binnen als inzameling van elementen komen. Vanwege de gegevenslaagstructuur van de demo-site van Luma en omdat het alleen mogelijk is om één product tegelijk weer te geven op de Luministsite, voegt u afzonderlijke items toe. Afhankelijk van de structuur van de gegevenslaag kunt u bij de implementatie op uw eigen website mogelijk een volledige array opgeven.
+
+1. Selecteren om te openen **[!UICONTROL Item 1]**
+1. Kaart **`productListItems.item1.SKU`** tot `%product.productInfo.sku%`
+
+   ![Product SKU XDM-objectvariabele](assets/set-up-analytics-sku.png)
+
+1. Zoeken `eventType` en stel deze in op `commerce.productViews`
+
+1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+
+1. Selecteren **[!UICONTROL Opslaan]** om de regel op te slaan
+
+
+
+
+### Kaarten weergeven
+
+U kunt een volledige array toewijzen aan een XDM-object, mits de array overeenkomt met de indeling van het XDM-schema. Het gegevenselement van de aangepaste code `cart.productInfo` u hebt eerdere lussen gemaakt via de `digitalData.cart.cartEntries` gegevenslaagobject op Luma en zet dit om in de vereiste indeling van het `productListItems` object van het XDM-schema.
+
+Zie de vergelijking hieronder van de gegevenslaag van de Luminasite (links) met het vertaalde gegevenselement (rechts) voor illustratie:
+
+![XDM-objectmatrixindeling](assets/data-element-xdm-array.png)
+
+Vergelijk het gegevenselement met de `productListItems` structuur (hint, it should match).
+
+>[!IMPORTANT]
+>
+>Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` opnieuw opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [vormen schema&#39;s](configure-schemas.md) stap. In het voorbeeld: **[!UICONTROL hoeveelheid]** gebruikt de **[!UICONTROL Geheel]** gegevenstype.
+> ![Gegevenstype XDM-schema](assets/set-up-analytics-quantity-integer.png)
+
+Laten we nu onze array toewijzen aan het XDM-object&quot;
+
+
+1. Een nieuwe regel maken met de naam `ecommerce - cart page bottom - AA (order 20)`
+1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
+1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
+1. Naam geven `Core - Page Bottom - order 20`
+1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`
+1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+
+   ![XDM-regels voor analyse](assets/set-up-analytics-cart-sequence.png)
+
+1. Onder **[!UICONTROL Voorwaarden]**, selecteert u **[!UICONTROL Toevoegen]**
+1. Verlaten **[!UICONTROL Logische typen]** als **[!UICONTROL Standaard]**
+1. Verlaten **[!UICONTROL Extensies]** als **[!UICONTROL Kern]**
+1. Selecteren **[!UICONTROL Type voorwaarde]** als **[!UICONTROL Pad zonder queryreeks]**
+1. Rechts **niet** de **[!UICONTROL Regex]** schakelen
+1. Onder **[!UICONTROL pad is gelijk aan]** set `/content/luma/us/en/user/cart.html`. Voor de demo-site Luma zorgt deze optie ervoor dat de regel alleen triggers op de cartpagina bevat
+1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+
+   ![XDM-regels voor analyse](assets/set-up-analytics-cart-condition.png)
+
+1. Onder **[!UICONTROL Handelingen]** selecteren **[!UICONTROL Toevoegen]**
+1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
+1. Selecteren **[!UICONTROL Type handeling]** als **[!UICONTROL Variabele bijwerken]**
+1. Omlaag schuiven naar de `commerce` en selecteert u deze om het te openen.
+1. Open de **[!UICONTROL productListViews]** object en set **[!UICONTROL value]** tot `1`
+
+   ![Productweergave instellen](assets/set-up-analytics-cart-view.png)
+
+   >[!TIP]
+   >
+   >Het plaatsen van commerce.productListViews.value=1 in XDM brengt automatisch aan toe `scView` gebeurtenis in Analytics
+
+
+
+1. Omlaag schuiven naar en selecteren **[!UICONTROL productListItems]** array
+
+1. Selecteren **[!UICONTROL Volledige array opgeven]**
+
+1. Toewijzen aan **`cart.productInfo`** gegevenselement
+
+1. Selecteren `eventType` en instellen op `commerce.productListViews`
+
+1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+
+1. Selecteren **[!UICONTROL Opslaan]** om de regel op te slaan
+
+Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, met de onderstaande verschillen:
+
+**Naam van regel**: `ecommerce - checkout page bottom - AA (order 20)`
+
+* **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout.html
+* Set `eventType` tot `commerce.checkouts`
+* Set **XDM Commerce, gebeurtenis**: commerce.checkout.value to `1`
+
+  >[!TIP]
+  >
+  >Dit is gelijk aan de instelling `scCheckout` gebeurtenis in Analytics
+
+**Naam van regel**: `ecommerce - purchase page bottom - AA (order 20)`
+
+* **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout/order/thank-you.html
+* Set `eventType` tot `commerce.purchases`
+* Set **XDM Commerce, gebeurtenis**: commerce.purchase.value to `1`
+
+  >[!TIP]
+  >
+  >Dit is gelijk aan de instelling `purchase` gebeurtenis in Analytics
+
+Er zijn aanvullende stappen voor het vastleggen van alle vereiste `purchase` gebeurtenisvariabelen:
+
+1. Openen **[!UICONTROL handel]** object
+1. Open de **[!UICONTROL bestellen]** object
+1. Kaart **[!UICONTROL purchaseID]** aan de `cart.orderId` gegevenselement
+1. Set **[!UICONTROL currencyCode]** op de hardcoderingswaarde `USD`
+
+   ![Aankoop-id instellen voor Analytics](assets/set-up-analytics-purchase.png)
+
+   >[!TIP]
+   >
+   >Dit is gelijk aan de instelling `s.purchaseID` en `s.currencyCode` variabelen in Analytics
+
+
+1. Omlaag schuiven naar en selecteren **[!UICONTROL productListItems]** array
+1. Selecteren **[!UICONTROL Volledige array opgeven]**
+1. Toewijzen aan **`cart.productInfo.purchase`** gegevenselement
+1. Selecteren **[!UICONTROL Opslaan]**
+
+Als u klaar bent, worden de volgende regels gemaakt.
+
+![XDM-regels voor analyse](assets/set-up-analytics-rules.png)
+
 
 ### Gebeurtenis Send
 

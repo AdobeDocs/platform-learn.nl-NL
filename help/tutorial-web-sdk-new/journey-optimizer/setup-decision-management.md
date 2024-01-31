@@ -4,9 +4,9 @@ description: Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 0%
 Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
 
 Door deze zelfstudie te volgen, zijn Journey Optimizer-gebruikers uitgerust om offer decisioning-functies effectief toe te passen, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
+
+
+![WebSDK en Adobe Analytics-diagram](../assets/dc-websdk-ajo.png)
 
 ## Leerdoelen
 

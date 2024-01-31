@@ -2,9 +2,9 @@
 title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ Er zijn enkele gegevenspunten die nuttig kunnen zijn voor Doel en die niet zijn 
 * [Voor Recommendations gereserveerde parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Categoriewaarden voor [categorie-affiniteit](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Gegevenselementen maken voor doelparameters
+### Gegevenselement maken voor speciale doelparameters
 
-Eerst stelt u een aantal extra gegevenselementen in voor een profielkenmerk, entiteitskenmerk, categoriewaarde en vervolgens stelt u het `data` object dat wordt gebruikt om niet-XDM-gegevens door te geven:
-
-* **`target.entity.id`** toegewezen aan `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** toegewezen aan `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** door de volgende aangepaste code te gebruiken om de site-URL voor de categorie op hoofdniveau te parseren:
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+Gebruik eerst de gegevenselementen die in het dialoogvenster [Gegevenselementen maken](create-data-elements.md) les om de `data` object dat wordt gebruikt om niet-XDM-gegevens door te geven:
 
 * **`data.content`** de volgende aangepaste code gebruiken:
 
@@ -417,10 +404,10 @@ Eerst stelt u een aantal extra gegevenselementen in voor een profielkenmerk, ent
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

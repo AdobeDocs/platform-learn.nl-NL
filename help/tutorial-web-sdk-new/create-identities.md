@@ -2,9 +2,9 @@
 title: Identiteiten maken
 description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identiteitskaart gebruikt om gebruikers-id's vast te leggen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,7 @@ ht-degree: 0%
 
 Leer hoe te om identiteiten met het Web SDK van het Experience Platform te vangen. Leg niet-geverifieerde en geverifieerde identiteitsgegevens vast op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om de gegevenselementen te gebruiken u vroeger voor het verzamelen van voor authentiek verklaarde gegevens met een het gegevenselementtype van SDK van het Web van het Platform riep Identiteitskaart creeerde.
 
-Er zijn vier nieuwe types van gegevenselement die door de de etikettenuitbreiding van SDK van het Web van het Platform worden geïntroduceerd:
-
-1. Samenvoegen-id gebeurtenis
-1. Identiteitskaart
-1. Variabele
-1. XDM-object
-
-Deze les concentreert zich op het element van de het kaartgegevens van de Identiteit. U wijst gegevenselementen met een geverifieerde gebruikers-id en verificatiestatus toe aan XDM.
+Deze les richt zich op het element van de het kaartgegevens van de Identiteit beschikbaar met de de etikettenuitbreiding van SDK van het Web van Adobe Experience Platform. U wijst gegevenselementen met een geverifieerde gebruikers-id en verificatiestatus toe aan XDM.
 
 ## Leerdoelstellingen
 
@@ -32,7 +25,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende vorige stappen in het leerprogramma hebben voltooid:
+U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende lessen in de zelfstudie hebben voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -40,14 +33,10 @@ U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosit
 * [Web SDK-extensie geïnstalleerd in de eigenschap Tag](install-web-sdk.md)
 * [Gegevenselementen maken](create-data-elements.md)
 
->[!IMPORTANT]
->
->De [Experience Cloud ID Service-extensie](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is niet nodig wanneer het uitvoeren van het Web SDK van Adobe Experience Platform, aangezien de functionaliteit van de Dienst van identiteitskaart in het Web SDK van het Platform wordt gebouwd.
 
 ## Experience Cloud-id
 
-De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is een naamruimte voor gedeelde identiteit die wordt gebruikt in Adobe Experience Platform- en Adobe Experience Cloud-toepassingen. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. Hierdoor is ECID de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag, omdat dit altijd aanwezig is.
-
+De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is een naamruimte voor gedeelde identiteit die wordt gebruikt in Adobe Experience Platform- en Adobe Experience Cloud-toepassingen. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. Hierdoor is ECID de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag omdat dit altijd aanwezig is
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experien
 Meer informatie over hoe [ECIDs wordt gevolgd gebruikend het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies en Platform Edge Network. Door gebrek, worden de eerste-partijkoekjes geplaatst door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen cookies van de eerste fabrikant in te stellen en te beheren. Deze worden ook wel FPID&#39;s (First-Party Device ID&#39;s) genoemd.
+
+>[!IMPORTANT]
+>
+>De [Experience Cloud ID Service-extensie](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is niet nodig wanneer het uitvoeren van het Web SDK van Adobe Experience Platform, aangezien de functionaliteit van de Dienst van identiteitskaart in het Web SDK van het Platform wordt gebouwd.
 
 ## FPID (First Party Device ID)
 

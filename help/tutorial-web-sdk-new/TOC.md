@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 15%
 
 + [Overzicht van tutorial](overview.md)
 + Eerste configuratie {#initial-configuration}
-   + [Machtigingen configureren](configure-permissions.md)
    + [Een XDM-schema configureren](configure-schemas.md)
    + [Naamruimte configureren](configure-identities.md)
    + [Een gegevensstroom configureren](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 15%
    + [Identiteiten maken](create-identities.md)
    + [Een labelregel maken](create-tag-rule.md)
    + [Valideren met foutopsporing](validate-with-debugger.md)
+   + [Valideren met betrouwbaarheid](validate-with-assurance.md)
 
 + Toepassingsinstellingen {#applications-setup}
    + [Experience Platform instellen](setup-experience-platform.md)

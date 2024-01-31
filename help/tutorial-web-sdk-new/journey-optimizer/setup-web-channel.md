@@ -4,9 +4,9 @@ description: Leer hoe te om het Kanaal van het Web uit te voeren gebruikend Plat
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Leer hoe te om het Kanaal van het Web uit te voeren gebruikend Platform Web SDK. Deze gids behandelt de fundamentele eerste vereisten van het Kanaal van het Web, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
 
 Met deze handleiding zijn Journey Optimizer-gebruikers uitgerust om het webkanaal effectief toe te passen voor geavanceerde onlinepersonalisatie met de Journey Optimizer Web Designer.
+
+![WebSDK en Adobe Analytics-diagram](../assets/dc-websdk-ajo.png)
 
 ## Leerdoelen
 

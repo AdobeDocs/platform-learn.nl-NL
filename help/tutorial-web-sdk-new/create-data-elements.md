@@ -2,43 +2,22 @@
 title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
 
 # Gegevenselementen maken
 
-Leer hoe te om de essentiële gegevenselementen tot stand te brengen nodig om gegevens met het Web SDK van het Experience Platform te vangen. Leg zowel inhoud als identiteitsgegevens vast op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om het XDM schema te gebruiken u vroeger voor het verzamelen van gegevens gebruikend het gegevenstype van SDK van het Web van het Platform geroepen Variabele.
+Leer hoe u gegevenselementen maakt in codes voor inhoud, handel en identiteitsgegevens in de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Vervolgens vult u velden in uw XDM-schema met het elementtype Variabele.
 
->[!NOTE]
->
-> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op het voorbeeld dat tijdens wordt gebruikt [Een schema configureren](configure-schemas.md) stap; voorbeeld-XDM-objecten maken die weergegeven inhoud en identiteiten van gebruikers vastleggen op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >De gegevens voor deze les zijn afkomstig uit de `[!UICONTROL digitalData]` gegevenslaag op de Luminasite. Om de gegevenslaag te bekijken, open uw ontwikkelaarsconsole en typ binnen `[!UICONTROL digitalData]` om de volledige beschikbare gegevenslaag te zien.![digitalData-gegevenslaag](assets/data-element-data-layer.png)
 
-
-Ongeacht Platform Web SDK, moet u gegevenselementen binnen uw markeringsbezit blijven creëren die aan de variabelen van de gegevensinzameling van uw website, zoals een gegevenslaag, een attribuut van HTML, of anderen in kaart brengen. Zodra u die gegevenselementen creeert, moet u hen aan het XDM schema in kaart brengen u tijdens creeerde [vormen schema&#39;s](configure-schemas.md) les. Daarom bestaat het creëren van gegevenselementen uit twee acties:
-
-1. Websitevariabelen toewijzen aan gegevenselementen, en
-1. Die gegevenselementen toewijzen aan een XDM-object
-
-Voor stap 1, blijft u uw gegevenslaag aan gegevenselementen in kaart brengen de manier u momenteel doet, gebruikend om het even welke de types van gegevenselement van de de markeringsuitbreiding van de Kern. Voor stap 2, heeft de uitbreiding van SDK van het Web van het Platform de volgende beschikbare types van gegevenselement:
-
-* Samenvoegen-id gebeurtenis
-* Identiteitskaart
-* Variabele
-* XDM-object
-
-Deze les concentreert zich op het Variabele type van gegevenselement. U maakt een gegevenselement om de activiteit van Luminagebezoekers vast te leggen op basis van de beschikbare gegevenslaag op de Luministensite. In de volgende les leert u meer over Identiteitskaart.
-
->[!NOTE]
->
-> Gegevenselstypen voor gebeurtenissamenvoegings-id en XDM-object worden zelden gebruikt voor randgevallen.
 
 ## Leerdoelstellingen
 
@@ -51,18 +30,14 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende vorige stappen in het leerprogramma hebben voltooid.
+U hebt inzicht in wat een gegevenslaag is en de volgende vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
 * [Een gegevensstroom configureren](configure-datastream.md)
 * [Web SDK-extensie geïnstalleerd in de eigenschap Tag](install-web-sdk.md)
 
->[!IMPORTANT]
->
->De [Experience Cloud ID Service-extensie](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is niet nodig wanneer het uitvoeren van het Web SDK van Adobe Experience Platform, aangezien de functionaliteit van de Dienst van identiteitskaart in het Web SDK van het Platform wordt gebouwd.
-
-## Gegevenslaagbenaderingen
+## Datalaagbenaderingen
 
 Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM gebruikend de markeringsfunctionaliteit van Adobe Experience Platform. Hieronder volgen een paar voor- en nadelen van drie verschillende benaderingen:
 
@@ -192,7 +167,7 @@ Voordat u het XDM-object maakt, maakt u de volgende set gegevenselementen voor d
 
    ![Gegevenselement paginanaam](assets/data-element-pageName.jpg)
 
-Maak deze vier aanvullende gegevenselementen door dezelfde stappen uit te voeren:
+Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
 * **`page.pageInfo.server`**  toegewezen aan
   `digitalData.page.pageInfo.server`
@@ -206,7 +181,70 @@ Maak deze vier aanvullende gegevenselementen door dezelfde stappen uit te voeren
 * **`user.profile.attributes.loggedIn`** toegewezen aan
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** toegewezen aan `digitalData.cart.orderId` (u gebruikt dit tijdens de [Analyses instellen](setup-analytics.md) les)
+* **`product.productInfo.sku`** toegewezen aan `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** toegewezen aan `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** toegewezen aan `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** met de **[!UICONTROL Aangepaste code]** **[!UICONTROL Het type Data Element]** en de volgende aangepaste code om de site-URL voor de categorie op hoofdniveau te parseren:
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** de volgende aangepaste code gebruiken:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** de volgende aangepaste code gebruiken:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
@@ -229,59 +267,21 @@ Het gegevenselement Variabele maken:
 
    ![Variabele-gegevenselement](assets/analytics-tags-data-element-xdm-variable.png)
 
-<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
-
-Create an XDM object to capture content data:
-
-1. In the left navigation, select **[!UICONTROL Data Elements]**
-1. Select **[!UICONTROL Add Data Element]**
-1. **[!UICONTROL Name]** the data element **`xdm.content`**
-1. As the **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
-1. As the **[!UICONTROL Data Element Type]** select `XDM object`
-1. Select the Platform **[!UICONTROL Sandbox]** in which you created the XDM schema in during the [Configure an XDM Schema](configure-schemas.md) lesson, in this example `DEVELOPMENT Mobile and Web SDK Courses`
-1. As the **[!UICONTROL Schema]**, select your `Luma Web Event Data` schema:
-
-    ![XDM object](assets/data-element-xdm.content-fields.png)
-
-    >[!NOTE]
-    >
-    >The sandbox corresponds to the Experience Platform sandbox in which you created the schema. There can be multiple sandboxes available in your Experience Platform instance, so make sure to select the right one. Always work in development first, then production.
-
-1. Scroll down until you reach the **`web`** object
-1. Select to open it
-
-    ![Web Object](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Map the following web XDM variables to data elements
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-    ![XDM object](assets/data-element-xdm.content.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-1. Select **[!UICONTROL Save]**
-
-   ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
--->
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
 | CORE Extension Data Elements | Platform Web SDK Data Elements |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
-
 
 >[!TIP]
 >
