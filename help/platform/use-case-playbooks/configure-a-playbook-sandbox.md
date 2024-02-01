@@ -8,9 +8,9 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: c0466656d0133055d809a9304aec5cd65c67c49c
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,3 @@ Leer hoe u een sandbox configureert voor Use Case Playbooks. Als u aan de slag w
 Zie voor meer informatie [Aan de slag](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
-
->[!AVAILABILITY]
->
->Deze functionaliteit is in bèta en is niet beschikbaar voor alle gebruikers. De documentatie en de functionaliteit kunnen worden gewijzigd.
