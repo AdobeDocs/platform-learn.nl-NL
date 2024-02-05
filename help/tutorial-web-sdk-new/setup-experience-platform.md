@@ -1,7 +1,7 @@
 ---
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Nu kunt u uw [!UICONTROL datastream] gegevens verzenden naar [!UICONTROL Adobe E
 1. Selecteren **[!UICONTROL Gegevensstromen]** van de linkernavigatie
 1. Open de gegevensstroom die u in het dialoogvenster [Een gegevensstroom configureren](configure-datastream.md) les, `Luma Web SDK`
 
-   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
+   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Service toevoegen]**
    ![Een service toevoegen aan de gegevensstroom](assets/experience-platform-addService.png)

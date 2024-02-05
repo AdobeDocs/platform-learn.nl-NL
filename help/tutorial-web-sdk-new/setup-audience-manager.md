@@ -2,7 +2,7 @@
 title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 0%
@@ -38,9 +38,9 @@ De implementatie van de Audience Manager die het Web SDK van het Platform gebrui
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Gegevensstromen]**
-1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
+1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
-   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
+   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Service toevoegen]**
    ![Een service toevoegen aan de gegevensstroom](assets/aam-datastream-addService.png)

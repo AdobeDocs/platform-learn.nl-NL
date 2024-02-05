@@ -2,7 +2,7 @@
 title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 0%
@@ -304,13 +304,13 @@ Nadat u deze gegevenselementen hebt toegevoegd en de vorige elementen in het dia
 
 ## Aanvullende regels maken
 
-In de [Een labelregel maken](create-tag-rule.md) les, u opstelling een `all pages global content variables - page bottom - AA (order 1)` bepalen dat [heeft een XDM-basislijnobject gemaakt met het **[!UICONTROL Variabele bijwerken]** **[!UICONTROL actietypen]**](create-tag-rule.md#create-tag-rule). De volgende oefeningen verrijken dat voorwerp XDM om extra gegevens specifiek voor bepaalde pagina&#39;s te vangen.
+In de [Een labelregel maken](create-tag-rule.md) les, u opstelling een `all pages global content variables - library loaded - AA (order 1)` bepalen dat [heeft een XDM-basislijnobject gemaakt met het **[!UICONTROL Variabele bijwerken]** **[!UICONTROL actietypen]**](create-tag-rule.md#create-tag-rule). De volgende oefeningen verrijken dat voorwerp XDM om extra gegevens specifiek voor bepaalde pagina&#39;s te vangen.
 
 ### Weergaven van versleutelingspagina
 
 Aangezien u nu gegevens naar Adobe Analytics verzendt, raden wij u aan een extra XDM-veld toe te wijzen om een paginaweergave aan te geven. Hoewel Analytics technisch niet vereist om een baken als paginamening te verwerken, is het nuttig om een standaardmanier te hebben om op een paginamening voor andere stroomafwaartse toepassingen te wijzen.
 
-1. Open de `all pages global content variables - page bottom - AA (order 1)` regel
+1. Open de `all pages global content variables - library loaded - AA (order 1)` regel
 1. Open de **[!UICONTROL Variabele bijwerken]** action
 1. Omlaag schuiven en selecteren tot `web.webPageDetails`
 1. Selecteer deze optie om het dialoogvenster **[!UICONTROL pageViews]** object
@@ -324,17 +324,17 @@ Aangezien u nu gegevens naar Adobe Analytics verzendt, raden wij u aan een extra
 
 Creeer een regel om een extra vraag van de paginamening naar een verschillende rapportreeks te verzenden. Gebruik de gegevensstroomoverschrijvingsfunctie om de rapportsuite voor een pagina te wijzigen met de functie **[!UICONTROL Gebeurtenis verzenden]** Actie.
 
-1. Een nieuwe regel maken, een naam geven `homepage report suite override - page bottom - AA (order 51)`
+1. Een nieuwe regel maken, een naam geven `homepage report suite override - library loaded - AA (order 51)`
 
 1. Selecteer het plusteken onder **[!UICONTROL Gebeurtenis]** een nieuwe trigger toevoegen
 
 1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
 
-1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
+1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL bibliotheek geladen]**
 
-1. Naam geven `Core - Page Bottom - order 51`
+1. Naam geven `Core - library loaded - order 51`
 
-1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `51`. Dit verzekert de regellooppas na `all pages global content variables - page bottom - AA (order 50)` dat de basislijn-XDM instelt met de **[!UICONTROL Variabele bijwerken]** actietype.
+1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `51`. Dit verzekert de regellooppas na `all pages global content variables - library loaded - AA (order 50)` dat de basislijn-XDM instelt met de **[!UICONTROL Variabele bijwerken]** actietype.
 
    ![Analyserapport Suite negeren](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Creeer een regel om een extra vraag van de paginamening naar een verschillende r
 
 ### Verrijk het XDM-object met de variabele Update
 
-Met de **[!UICONTROL Variabele bijwerken]** actietype u kunt extra regels tot stand brengen om &quot;globale inhoud XDM&quot;te verrijken alvorens het wordt verzonden naar [!UICONTROL Platform Edge Network]. Voltooi dit door de nieuwe regels voor de `all pages send event - page bottom - AA (order 50)` die de gebeurtenis verzendt [!UICONTROL Platform Edge Network].
+Met de **[!UICONTROL Variabele bijwerken]** actietype u kunt extra regels tot stand brengen om &quot;globale inhoud XDM&quot;te verrijken alvorens het wordt verzonden naar [!UICONTROL Platform Edge Network]. Voltooi dit door de nieuwe regels voor de `all pages send event - library loaded - AA (order 50)` die de gebeurtenis verzendt [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Zie [Gegevens over handel en producten verzamelen](https://experienceleague.adob
 Begin door productmeningen op de productdetailpagina van Luma te volgen.
 
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Regels]** en selecteer vervolgens **[!UICONTROL Regel toevoegen]**
-1. Naam geven  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Naam geven  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
-1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
-1. Naam geven `Core - Page Bottom - order 20`
-1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`. Dit verzekert de regellooppas na `all pages global content variables - page bottom - AA (order 1)` dat de globale inhoudsvariabelen plaatst, maar vóór `all pages send event - page bottom - AA (order 50)` die de XDM-gebeurtenis verzendt.
+1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL bibliotheek geladen]**
+1. Naam geven `Core - library loaded - order 20`
+1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`. Dit verzekert de regellooppas na `all pages global content variables - library loaded - AA (order 1)` dat de globale inhoudsvariabelen plaatst, maar vóór `all pages send event - library loaded - AA (order 50)` die de XDM-gebeurtenis verzendt.
 
    ![XDM-regels voor analyse](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Vergelijk het gegevenselement met de `productListItems` structuur (hint, it shou
 >Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` opnieuw opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [vormen schema&#39;s](configure-schemas.md) stap. In het voorbeeld: **[!UICONTROL hoeveelheid]** gebruikt de **[!UICONTROL Geheel]** gegevenstype.
 > ![Gegevenstype XDM-schema](assets/set-up-analytics-quantity-integer.png)
 
-Nu terug naar het toewijzen van het XDM-object aan een volledige array. Herhaal dezelfde stappen als bij het maken van de `ecommerce - pdp page bottom - AA (order 20)` regel:
+Nu terug naar het toewijzen van het XDM-object aan een volledige array. Herhaal dezelfde stappen als bij het maken van de `ecommerce - pdp library loaded - AA (order 20)` regel:
 
-1. Naam geven  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. Naam geven  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
-1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
-1. Naam geven `Core - Page Bottom - order 20`
+1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL bibliotheek geladen]**
+1. Naam geven `Core - library loaded - order 20`
 1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`
 1. Selecteren **[!UICONTROL Wijzigingen behouden]**
 
@@ -574,7 +574,7 @@ Nu terug naar het toewijzen van het XDM-object aan een volledige array. Herhaal 
 
 Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, met de onderstaande verschillen:
 
-**Naam van regel**: `ecommerce - checkout page bottom - AA (order 20)`
+**Naam van regel**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout.html
 * Set `eventType` tot `commerce.checkouts`
@@ -584,7 +584,7 @@ Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, m
   >
   >Dit is gelijk aan de instelling `scCheckout` gebeurtenis in Analytics
 
-**Naam van regel**: `ecommerce - purchase page bottom - AA (order 20)`
+**Naam van regel**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Set `eventType` tot `commerce.purchases`
@@ -745,7 +745,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Spoor
 
    >[!TIP]
    >
-   > De `ecommerce - pdp page bottom - AA (order 20)` regel overschrijft de waarde van `eventType` door de `all pages global content variables - page bottom - AA (order 1)` regel zoals deze is ingesteld om later in de reeks te worden geactiveerd
+   > De `ecommerce - pdp library loaded - AA (order 20)` regel overschrijft de waarde van `eventType` door de `all pages global content variables - library loaded - AA (order 1)` regel zoals deze is ingesteld om later in de reeks te worden geactiveerd
 
 
    ![Productweergave Analyseren](assets/analytics-debugger-prodView.png)

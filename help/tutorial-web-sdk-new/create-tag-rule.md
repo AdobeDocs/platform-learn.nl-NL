@@ -2,7 +2,7 @@
 title: Tagregels maken
 description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Een labelregel maken voor de globale XDM-velden:
 
    ![Een regel maken](assets/rules-create.png)
 
-1. Naam van de regel `all pages global content variables - page bottom - AA (order 1)`
+1. Naam van de regel `all pages global content variables - library loaded - AA (order 1)`
 
 1. In de **[!UICONTROL Gebeurtenissen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
 
@@ -173,12 +173,12 @@ U kunt **[!UICONTROL Variabele bijwerken]**  in meerdere, gerangschikte regels o
 Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 
 1. Selecteren **[!UICONTROL Regel toevoegen]**
-1. Naam geven  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Naam geven  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
 1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
 1. Naam geven `Core - Page Bottom - order 20`
-1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`. Dit verzekert de regellooppas na `all pages global content variables - page bottom - AA (order 1)` dat de globale inhoudsvariabelen plaatst, maar vóór `all pages send event - page bottom - AA (order 50)` die de XDM-gebeurtenis verzendt.
+1. Selecteren om te openen **[!UICONTROL Geavanceerde opties]**, typt u `20`. Dit verzekert de regellooppas na `all pages global content variables - library loaded - AA (order 1)` dat de globale inhoudsvariabelen plaatst, maar vóór `all pages send event - library loaded - AA (order 50)` die de XDM-gebeurtenis verzendt.
 
    ![XDM-regels voor analyse](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ Vergelijk het gegevenselement met de `productListItems` structuur (hint, it shou
 Laten we nu onze array toewijzen aan het XDM-object&quot;
 
 
-1. Een nieuwe regel maken met de naam `ecommerce - cart page bottom - AA (order 20)`
+1. Een nieuwe regel maken met de naam `ecommerce - cart library loaded - AA (order 20)`
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extensie]**, selecteert u **[!UICONTROL Kern]**
 1. Onder **[!UICONTROL Type gebeurtenis]**, selecteert u **[!UICONTROL Pagina onder]**
@@ -295,7 +295,7 @@ Laten we nu onze array toewijzen aan het XDM-object&quot;
 
 Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, met de onderstaande verschillen:
 
-**Naam van regel**: `ecommerce - checkout page bottom - AA (order 20)`
+**Naam van regel**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout.html
 * Set `eventType` tot `commerce.checkouts`
@@ -305,7 +305,7 @@ Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, m
   >
   >Dit is gelijk aan de instelling `scCheckout` gebeurtenis in Analytics
 
-**Naam van regel**: `ecommerce - purchase page bottom - AA (order 20)`
+**Naam van regel**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Set `eventType` tot `commerce.purchases`
@@ -345,7 +345,7 @@ Nu u de variabelen hebt ingesteld, kunt u de tweede regel maken om het XDM-objec
 
 1. Selecteer rechts de optie **[!UICONTROL Regel toevoegen]** om een andere regel te creëren
 
-1. Naam van de regel `all pages send event - page bottom - AA (order 50)`
+1. Naam van de regel `all pages send event - library loaded - AA (order 50)`
 
 1. In de **[!UICONTROL Gebeurtenissen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
 
@@ -390,7 +390,7 @@ Een bibliotheek maken:
 
    >[!NOTE]
    >
-   >    Naast de Adobe Experience Platform Web SDK-extensie en de `all pages global content variables - page bottom - AA (order 50)` regel, ziet u de markeringscomponenten die in vorige lessen worden gecreeerd. De Core-extensie bevat de basis-JavaScript die is vereist voor alle eigenschappen van webtags.
+   >    Naast de Adobe Experience Platform Web SDK-extensie en de `all pages global content variables - library loaded - AA (order 50)` regel, ziet u de markeringscomponenten die in vorige lessen worden gecreeerd. De Core-extensie bevat de basis-JavaScript die is vereist voor alle eigenschappen van webtags.
 
 1. Selecteren **[!UICONTROL Opslaan en bouwen voor ontwikkeling]**
 

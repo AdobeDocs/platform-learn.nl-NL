@@ -2,7 +2,7 @@
 title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
@@ -154,7 +154,7 @@ Voordat u het XDM-object maakt, maakt u de volgende set gegevenselementen voor d
 
 1. Ga naar **[!UICONTROL Gegevenselementen]** en selecteert u **[!UICONTROL Gegevenselement toevoegen]** (of **[!UICONTROL Nieuw gegevenselement maken]** als er geen bestaande gegevenselementen zijn in de eigenschap tag)
 
-   ![Gegevenselement maken](assets/data-element-create.jpg)
+   ![Gegevenselement maken](assets/data-element-create.png)
 
 1. Geef het gegevenselement een naam `page.pageInfo.pageName`
 1. Gebruik de **[!UICONTROL JavaScript-variabele]** **[!UICONTROL Het type Data Element]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ Voordat u het XDM-object maakt, maakt u de volgende set gegevenselementen voor d
 
 1. Selecteren **[!UICONTROL Opslaan]**
 
-   ![Gegevenselement paginanaam](assets/data-element-pageName.jpg)
+   ![Gegevenselement paginanaam](assets/data-element-pageName.png)
 
 Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
