@@ -2,9 +2,9 @@
 title: Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 
 ## Vereisten
 
-U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en hebben in de zelfstudie de volgende lessen getrokken:
+U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en hebben de vorige lessen in de zelfstudie voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -49,14 +49,10 @@ U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](http
 
 ## Alternatieve tagbibliotheken laden met Foutopsporing
 
-Deze zelfstudie gebruikt een openbaar gehoste versie van het dialoogvenster [Luma-demo-website](https://luma.enablementadobe.com/content/luma/us/en.html). Open de startpagina en bladwijzer.
-
-![Luminantiepage](assets/validate-luma-site.png)
-
 Foutopsporing op Experience Platform heeft een coole functie waarmee u een bestaande tagbibliotheek kunt vervangen door een andere. Deze techniek is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
 
-1. Zorg ervoor dat de Luminasite is geopend en selecteer het extensiepictogram Experience Platform debugger
-1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie, die met dit leerprogramma niet verwant is (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
+1. Zorg ervoor dat u de [Luma-demo-website](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Het extensiepictogram Foutopsporing Experience Platform openen en selecteren
+1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Controleer of Foutopsporing &quot;**[!UICONTROL Verbonden met luminantie]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL vergrendelen]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
 1. Selecteer de **[!UICONTROL Aanmelden]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
 1. Ga nu naar **[!UICONTROL Experience Platform-tags]** in de linkernavigatie
@@ -78,7 +74,7 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
    ![tag, eigenschap is vervangen](assets/validate-switch-success.png)
 
-Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u met dezelfde techniek wijzigingen valideren.
+Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u met deze techniek wijzigingen valideren terwijl u deze aanbrengt in de ontwikkelomgeving van labels.
 
 ## Valideer client-side netwerkverzoeken met Foutopsporing van Experience Platform
 
@@ -138,18 +134,20 @@ Deze typen aanvraagdetails zijn ook zichtbaar in de webontwikkelaarsgereedschapp
 
    ![Het tabblad Netwerk](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > De waarde ECID is zichtbaar in de netwerkreactie. Het is niet opgenomen in de `identityMap` deel van het netwerkverzoek, noch wordt het opgeslagen in dit formaat in een koekje.
 
 ## Valideer server-zijnetwerkverzoeken met Foutopsporing van het Experience Platform
 
-Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het Web SDK van het Platform verzendt eerst gegevens van uw digitaal bezit naar het Netwerk van de Rand van het Platform. Dan, doet het Netwerk van de Rand van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten.
+Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het Web SDK van het Platform verzendt eerst gegevens van uw digitaal bezit naar het Netwerk van de Rand van het Platform. Dan, doet het Netwerk van de Rand van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten. U kunt de server-zijverzoeken bevestigen die door het Netwerk van de Rand van het Platform door het Spoor van de Rand in Debugger worden gemaakt te gebruiken.
 
-U kunt verzoeken aan de serverzijde valideren door Edge Trace in te schakelen in Foutopsporing. Bovendien kunt u de volledig verwerkte lading ook bevestigen nadat het een toepassing van de Adobe door te gebruiken bereikt [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-In de volgende twee oefeningen, laat u het Spoor van de Rand toe en bekijkt identiteitskaart van het Experience Cloud die van het Netwerk van de Rand van het Platform door Verzekering wordt geproduceerd te gebruiken.
 
 ### Randovertrekken inschakelen
 
-Het Edge-overtrekken inschakelen
+U schakelt Edge Trace als volgt in:
 
 1. In de linkernavigatie van **[!UICONTROL Foutopsporing Experience Platform]** selecteren **[!UICONTROL Logboeken]**
 1. Selecteer de **[!UICONTROL Rand]** en selecteert u **[!UICONTROL Verbinden]**
@@ -164,37 +162,9 @@ Het Edge-overtrekken inschakelen
 
    ![Analysebaken Edge Trace](assets/validate-edge-trace.png)
 
-Op dit punt, kunt u geen verzoeken van het Netwerk van de Rand van het Platform bekijken die naar een toepassing van de Adobe gaan omdat u geen om het even welk in de gegevensstroom hebt toegelaten. In toekomstige lessen, gebruikt u het Spoor van de Rand om de uitgaande server-zijverzoeken aan de toepassingen van de Adobe te bekijken. Nochtans, gebruikend Verzekering kunt u nog bekijken identiteitskaart van het Experience Cloud door het Netwerk van de Rand van het Platform wordt geproduceerd.
+Op dit punt, kunt u geen verzoeken van het Netwerk van de Rand van het Platform bekijken die naar een toepassingen van de Adobe gaan omdat u geen om het even welk in de datastream hebt toegelaten. In toekomstige lessen, gebruikt u het Spoor van de Rand om de uitgaande server-zijverzoeken aan de toepassingen van de Adobe en gebeurtenis te bekijken door:sturen. Maar eerst, leer over een ander hulpmiddel om server-zijverzoeken te bevestigen die door Platform Edge Network-Adobe Experience Platform Assurance worden gemaakt!
 
-### Een betrouwbaarheidssessie starten
-
-Adobe Experience Platform Assurance is een product van Adobe Experience Cloud dat u helpt bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet.
-
-Meer informatie over [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Telkens wanneer u Edge Trace inschakelt, wordt een Assurance-sessie gestart op de achtergrond.
-
-U kunt als volgt de betrouwbaarheidssessie weergeven:
-
-1. Als Edge Trace is ingeschakeld, ziet u bovenaan een pictogram voor uitgaande koppelingen. Selecteer het pictogram om Verzekering te openen. Er wordt een nieuw tabblad in de browser geopend.
-
-   ![Beginnen met betrouwbaarheidssessie](assets/validate-debugger-start-assurnance.png)
-
-1. Selecteer de rij met de gebeurtenis genoemd de Handgreep van de Reactie van de Adobe.
-1. Rechts wordt een menu weergegeven. Selecteer de `+` ondertekenen naast `[!UICONTROL ACPExtensionEvent]`
-1. Omlaag boven door `[!UICONTROL payload > 0 > payload > 0 > namespace]`. De id die wordt weergegeven onder de laatste `0` komt overeen met de `ECID`. U weet dat met de waarde die onder verschijnt `namespace` overeenkomst `ECID`
-
-   ![Betrouwbaarheid valideren ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >Mogelijk wordt een ingekorte ECID-waarde weergegeven vanwege de breedte van het venster. Selecteer gewoon de greep in de interface en sleep naar links om de volledige ECID weer te geven.
-
-In toekomstige lessen, gebruikt u Verzekering om volledig verwerkte nuttige lasten te bevestigen die een Adobe toepassing bereiken die in uw gegevensstroom wordt toegelaten.
-
-Met een voorwerp XDM dat nu op een pagina, en met de kennis van hoe te om uw gegevensinzameling te bevestigen vuurt, bent u klaar aan opstelling de individuele toepassingen van de Adobe gebruikend het Web SDK van het Platform.
-
-[Volgende: ](setup-experience-platform.md)
+[Volgende: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

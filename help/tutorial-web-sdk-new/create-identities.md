@@ -2,9 +2,9 @@
 title: Identiteiten maken
 description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identiteitskaart gebruikt om gebruikers-id's vast te leggen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Deze les richt zich op het element van de het kaartgegevens van de Identiteit be
 
 Aan het einde van deze les kunt u het volgende doen:
 
-* Begrijp het verschil tussen Experience Cloud-id (ECID) en eerste-partijapparaat-id
+* Begrijp het verband tussen Experience Cloud ID (ECID) en eerste partij Apparaat ID (FPID)
 * Het verschil begrijpen tussen niet-geverifieerde versus geverifieerde id&#39;s
 * Een gegevenselement voor een identiteitsoverzicht maken
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de volgende lessen in de zelfstudie hebben voltooid:
+U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} en weet hoe u naar gegevenselementen in tags kunt verwijzen. U moet de vorige lessen in het leerprogramma hebben voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -55,11 +55,11 @@ ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies
 
 ## FPID (First Party Device ID)
 
-FPID&#39;s zijn cookies van de eerste fabrikant _u kunt instellen met uw eigen webservers_ welke Adobe dan gebruikt om ECID te plaatsen, in plaats van het eerste partijkoekje te gebruiken dat door SDK van het Web wordt geplaatst. De koekjes van de eerste partij zijn het meest efficiënt wanneer zij gebruikend een server worden geplaatst die een DNS A verslag (voor IPv4) of het verslag van de Amerikaanse club van automobilisten (voor IPv6), in tegenstelling tot een DNS CNAME of code JavaScript gebruikt.
+FPID&#39;s zijn cookies van de eerste fabrikant _u kunt instellen met uw eigen webservers_ welke Adobe dan gebruikt om ECID tot stand te brengen, in plaats van het eerste partijkoekje te gebruiken dat door SDK van het Web wordt geplaatst. Hoewel de browserondersteuning kan variëren, zijn cookies van de eerste partij meestal duurzamer wanneer ze worden ingesteld door een server die gebruikmaakt van een DNS A-record (voor IPv4) of AAAA-record (voor IPv6), in tegenstelling tot wanneer ze worden ingesteld door een DNS CNAME- of JavaScript-code.
 
 Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar de Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, wat de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
 
-Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en)
+Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform
 
 Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe wanneer het gebruiken van het Web SDK van het Platform. Hierdoor is ECID de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
-U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en), kan Target zijn derde instellen. Dit wordt gedaan door te gebruiken [!UICONTROL Identiteitskaart] type gegevenselement.
+U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Dit wordt gedaan door te gebruiken [!UICONTROL Identiteitskaart] type gegevenselement.
 
 Als u de opdracht [!UICONTROL Identiteitskaart] gegevenselement:
 
@@ -133,12 +133,17 @@ Als u de opdracht [!UICONTROL Identiteitskaart] gegevenselement:
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
-| CORE Extension Data Elements | Platform Web SDK Data Elements |
+| Core Extension Data Elements | Platform Web SDK Extension Data Elements |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

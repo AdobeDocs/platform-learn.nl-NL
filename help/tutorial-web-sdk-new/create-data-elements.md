@@ -2,9 +2,9 @@
 title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ Leer hoe u gegevenselementen maakt in codes voor inhoud, handel en identiteitsge
 Aan het einde van deze les kunt u het volgende doen:
 
 * Begrijp verschillende benaderingen om een gegevenslaag aan XDM in kaart te brengen
-* Gegevenselementen maken om inhoudsgegevens vast te leggen
-* Gegevenselementen toewijzen aan een XDM-objectelement
+* Gegevenselementen maken om gegevens vast te leggen
+* Gegevenselementen toewijzen aan een XDM-object
 
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is en de volgende vorige lessen in het leerprogramma voltooid:
+U hebt inzicht in wat een gegevenslaag is en de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -41,9 +41,9 @@ U hebt inzicht in wat een gegevenslaag is en de volgende vorige lessen in het le
 
 Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM gebruikend de markeringsfunctionaliteit van Adobe Experience Platform. Hieronder volgen een paar voor- en nadelen van drie verschillende benaderingen:
 
-* [XDM in de gegevenslaag implementeren](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [Toewijzen aan XDM in de gegevensstroom](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [Toewijzen aan XDM in tags](create-data-elements.md#map-data-layer-in-tags)
+1. XDM in de gegevenslaag implementeren
+1. Toewijzen aan XDM in tags
+1. Toewijzen aan XDM in de gegevensstroom
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM 
 
 ### XDM in de gegevenslaag implementeren
 
-Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de gehele gegevenslaag toe aan een XDM-objectelement in Adobe Tags. Als voor uw implementatie geen tagbeheer wordt gebruikt, is deze aanpak mogelijk ideaal omdat u gegevens rechtstreeks vanuit uw toepassing naar XDM kunt verzenden met de [XDM sendEvent, opdracht](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Als u Adobe-tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
+Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als voor uw implementatie geen tagbeheer wordt gebruikt, is deze aanpak mogelijk ideaal omdat u gegevens rechtstreeks vanuit uw toepassing naar XDM kunt verzenden met de [XDM sendEvent, opdracht](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Als u labels gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de volledige gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
 
 Hieronder is een voorbeeld van hoe de gegevenslaag als het gebruiken van het formaat van de Laag van de Gegevens van de Cliënt van de Adobe zou kijken:
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 Pros
 
-* Hiermee worden stappen overgeslagen om afzonderlijke variabelen voor gegevenslagen toe te wijzen aan XDM
+* Elimineert extra stappen die aan de variabelen van de gegevenslaag opnieuw aan XDM worden toegewezen
 * Mogelijk is de implementatie sneller als uw ontwikkelingsteam eigenaar is van tags voor digitaal gedrag
 
 Cons
@@ -108,41 +108,44 @@ Cons
 * Kan de gegevenslaag niet gebruiken voor pixels van derden
 * Kan de gegevens niet transformeren tussen de gegevenslaag en XDM
 
-### Toewijzen aan XDM in de gegevensstroom
-
-Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van de gegevensstroom wordt genoemd [Gegevensvoorvoegsel voor gegevensverzameling](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
-
-Pros
-
-* Flexibel omdat u individuele variabelen aan XDM kunt in kaart brengen
-* Vermogen [nieuwe waarden berekenen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) of [gegevenstypen transformeren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) van een gegevenslaag voordat deze naar XDM gaat
-* Gebruik een [Toewijzingsinterface](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) om velden in uw brongegevens toe te wijzen aan XDM met een punt-en-klik UI
-
-Cons
-
-* Kan gegevenslaagvariabelen niet als gegevenselementen voor cliënt-kant derdepixel gebruiken, maar kan hen met Adobe gebruiken - de gebeurtenis-door:sturen
-* Kan de plakfunctie van de tagfunctie van Adobe Experience Platform niet gebruiken
-* De complexiteit van onderhoud neemt toe als de gegevenslaag zowel in tags als in gegevensstroom wordt toegewezen
-
 ### Gegevenslaag toewijzen in tags
 
 Deze benadering omvat het in kaart brengen van individuele gegevenslaagvariabelen OF gegevenslaagvoorwerpen aan gegevenselementen in markeringen en uiteindelijk aan XDM. Dit is de traditionele benadering van implementatie gebruikend een systeem van het markeringsbeheer.
 
-Pros
+#### Pros
 
 * De meest flexibele benadering zoals u individuele variabelen kunt controleren en gegevens omzetten alvorens het XDM krijgt
 * Kan Adobe-tagtriggers en -schrappingsfunctionaliteit gebruiken om gegevens door te geven aan XDM
 * Gegevenselementen kunnen worden toegewezen aan client-side pixels van derden
 
-Cons
+#### Cons
 
-* Het kan langer duren om
+* Er is tijd nodig om de gegevenslaag te reconstrueren als gegevenselementen
+
 
 >[!TIP]
 >
 > Google-gegevenslaag
 > 
-> Als uw organisatie al Googles Analytics gebruikt en het traditionele Google dataLayer-object op uw website heeft, kunt u de [Google Data Layer-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Adobe Tags. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+> Als uw organisatie al Googles Analytics gebruikt en het traditionele Google dataLayer-object op uw website heeft, kunt u de [Google Data Layer-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in tags. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+
+### Toewijzen aan XDM in de gegevensstroom
+
+Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van de gegevensstroom wordt genoemd [Gegevensvoorvoegsel voor gegevensverzameling](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
+
+#### Pros
+
+* Flexibel omdat u individuele variabelen aan XDM kunt in kaart brengen
+* Vermogen [nieuwe waarden berekenen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) of [gegevenstypen transformeren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) van een gegevenslaag voordat deze naar XDM gaat
+* Gebruik een [Toewijzingsinterface](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) om velden in uw brongegevens toe te wijzen aan XDM met een punt-en-klik UI
+
+#### Cons
+
+* Kan gegevenslaagvariabelen niet als gegevenselementen voor cliënt-kant derdepixel gebruiken, maar kan hen gebruiken met gebeurtenis het door:sturen
+* Kan de plakfunctie van de tagfunctie van Adobe Experience Platform niet gebruiken
+* De complexiteit van onderhoud neemt toe als de gegevenslaag zowel in tags als in gegevensstroom wordt toegewezen
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ Het gegevenselement Variabele maken:
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
-| CORE Extension Data Elements | Platform Web SDK Data Elements |
+| Core Extension Data Elements | Platform Web SDK Extension Data Elements |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 
 >[!TIP]
 >
->In de toekomst [Een labelregel maken](create-tag-rule.md) les, leert u hoe **[!UICONTROL Variabele]** met gegevenselement kunt u meerdere regels in tags stapelen met behulp van de **[!UICONTROL Type handeling variabele bijwerken]**. Vervolgens kunt u het XDM-object onafhankelijk naar Adobe Experience Platform Edge Network verzenden met behulp van een aparte **[!UICONTROL Gebeurtenisactietype verzenden]**.
+>In de toekomst [Een labelregel maken](create-tag-rule.md) les, leert u hoe **[!UICONTROL Variabele]** met gegevenselement kunt u meerdere regels in tags stapelen met behulp van de **[!UICONTROL Type handeling variabele bijwerken]**.
 
 Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar het Netwerk van de Rand van het Platform met een etikettenregel te beginnen te verzenden. Maar eerst, leer over het verzamelen van identiteiten met Web SDK.
 

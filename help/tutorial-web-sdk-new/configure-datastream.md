@@ -2,9 +2,9 @@
 title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van he
 
    >[!NOTE]
    >
-   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Gegevensstromen]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Nieuwe DataStream]** aan de rechterkant van het scherm.
@@ -52,13 +52,6 @@ Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van he
 1. Selecteren **[!UICONTROL Opslaan]**
 
    ![De gegevensstroom maken](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >De toewijzingsfunctie wordt later in deze zelfstudie opgenomen.
-
-
-
 
 Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aan de datastream toevoegen, nochtans zult u geen diensten op dit punt in het leerprogramma toevoegen. U zult dit later doen in de lessen [Experience Platform instellen](setup-experience-platform.md), [Analyses instellen](setup-analytics.md), [Audience Manager instellen](setup-audience-manager.md), [Doel instellen](setup-target.md), of [Gebeurtenis doorsturen](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 1. Eerst definieert u de gegevensstroom overschrijft in de configuratie van de gegevensstroom. Dit moet worden gedaan per Adobe toepassing u probeert met voeten te treden.
 1. Dan, verzendt u de met voeten treedt naar het Netwerk van de Rand of door SDK van het Web verzendt de Actie van de Gebeurtenis, of door een configuratie in de de markeringsuitbreiding van SDK van het Web.
 
-Zie de [datastream configuratie heeft voorrang op documentatie](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) voor gedetailleerde instructies op hoe te om configuraties met betrekking tot gegevensstroom met voeten te treden.
+In de [Adobe Analytics instellen](setup-analytics.md) les treedt u de rapportreeks voor een pagina met voeten gebruikend het Web SDK van het Platform verzendt de Actie van de Gebeurtenis.
 
-In de Adobe Analytics-les voor instellen [treedt de rapportreeks voor een pagina met voeten gebruikend het Web SDK van het Platform verzendt de Actie van de Gebeurtenis](setup-analytics.md).
+Zie de [datastream configuratie heeft voorrang op documentatie](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) voor gedetailleerde instructies op hoe te om configuraties met betrekking tot gegevensstroom met voeten te treden.
 
 U bent nu klaar om de uitbreiding van SDK van het Web van het Platform in uw markeringsbezit te installeren!
 
