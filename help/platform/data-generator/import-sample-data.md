@@ -5,12 +5,11 @@ feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ Leer hoe u een Experience Platform-sandboxomgeving instelt met voorbeeldgegevens
 
 ## Voorbeeld van gebruik van gegevens
 
-Zakelijke gebruikers van Experience Platforms moeten vaak een reeks stappen doorlopen die het identificeren van veldgroepen, het creëren van schema&#39;s, het voorbereiden van gegevens, het creëren van datasets, en dan het opnemen van gegevens omvatten alvorens zij de marketing mogelijkheden kunnen onderzoeken die door Experience Platform worden aangeboden. In deze zelfstudie worden enkele stappen geautomatiseerd, zodat u gegevens zo snel mogelijk in een sandbox met Platforms kunt ophalen.
+Zakelijke gebruikers van Experience Platforms moeten vaak een reeks stappen doorlopen die het identificeren van veldgroepen, het creëren van schema&#39;s, het voorbereiden van gegevens, het creëren van datasets, en dan het opnemen van gegevens omvatten alvorens zij de marketing mogelijkheden kunnen onderzoeken die door Experience Platform worden aangeboden. In deze zelfstudie worden enkele stappen geautomatiseerd, zodat u gegevens zo snel mogelijk in een platformsandbox kunt plaatsen.
 
 Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investeren in Adobe Experience Platform om loyaliteit, CRM, productcatalogus, en off-line aankoopgegevens in klantenprofielen in real time te combineren en deze profielen te activeren om hun marketing aan het volgende niveau te brengen. We hebben voorbeeldgegevens gegenereerd voor Luma en in de rest van deze zelfstudie importeert u deze gegevens in een van uw Experience Platform-sandboxomgevingen.
 
@@ -121,7 +120,7 @@ Vervolgens moet u de verzamelingen importeren in Postman.
 
 ### Verifiëren
 
-Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening mee dat de methoden voor het genereren van tokens die in deze zelfstudie worden gebruikt, alleen geschikt zijn voor niet-productiedoeleinden. Bij Lokaal ondertekenen wordt een JavaScript-bibliotheek geladen van een host van een andere fabrikant en bij Extern ondertekenen wordt de persoonlijke sleutel naar een webservice verzonden die eigendom is van een Adobe. Hoewel Adobe deze persoonlijke sleutel niet opslaat, mogen productietoetsen nooit met iemand worden gedeeld.
+Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening mee dat de methoden voor het genereren van tokens die in deze zelfstudie worden gebruikt, alleen geschikt zijn voor niet-productiedoeleinden. Bij Lokaal ondertekenen wordt een JavaScript-bibliotheek geladen van een host van een andere fabrikant en bij Extern ondertekenen wordt de persoonlijke sleutel verzonden naar een Adobe die eigendom is van en wordt beheerd met de webservice. Hoewel deze persoonlijke sleutel niet wordt opgeslagen in de Adobe, mogen productietoetsen nooit met iemand worden gedeeld.
 
 1. Open de `0-Authentication` verzameling, selecteer de `OAuth: Request Access Token` verzoek, en klik `SEND` om het toegangstoken voor authentiek te verklaren en te verkrijgen.
 
@@ -131,7 +130,7 @@ Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening
 
 ### Gegevens importeren
 
-Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform. De Postman-verzamelingen die u hebt geïmporteerd, maken het hele heft!
+Nu kunt u de gegevens voorbereiden en importeren in uw platformsandbox. De Postman-verzamelingen die u hebt geïmporteerd, maken het hele heft!
 
 1. Open de `1-Luma-Loyalty-Data` verzameling en klik op **Uitvoeren** op het overzichtslusje om een Runner van de Inzameling te beginnen.
 
@@ -154,7 +153,7 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
    ![Loyalty Result](../assets/data-generator/images/loyalty-result.png)
 
 1. Nu aanmelden bij [Adobe Experience Platform-interface](https://platform.adobe.com/) en navigeer naar gegevenssets.
-1. Open de `Luma Loyalty Dataset` dataset, en onder het venster van de gegevenssetactiviteit, kunt u een succesvolle partijlooppas bekijken die 1000 verslagen ingebed. U kunt ook op de optie van de voorproefdataset klikken om de opgenomen verslagen te verifiëren. Mogelijk moet u enkele minuten wachten om te bevestigen dat 1000 [!UICONTROL Nieuwe profielfragmenten] zijn gemaakt.
+1. Open de `Luma Loyalty Dataset` dataset, en onder het venster van de gegevenssetactiviteit, kunt u een succesvolle partijlooppas bekijken die 1000 verslagen ingebed. U kunt ook op de optie van de voorproefdataset klikken om de opgenomen verslagen te verifiëren. Mogelijk moet u enkele minuten wachten om te bevestigen dat 1000 [!UICONTROL New Profile Fragments] zijn gemaakt.
    ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
 1. Herhaal stap 1-3 om de andere verzamelingen uit te voeren:
    * `2-Luma-CRM-Data.postman_collection.json` leidt tot een schema en bevolkte dataset voor de gegevens van CRM van klanten. Het schema is gebaseerd op de klasse van het Profiel van Individuele XDM die Demografische Details, Persoonlijke Details van het Contact, de Details van de Voorkeur en een groep van het het gebiedsveld van de douaneidentiteit omvat.
@@ -169,19 +168,19 @@ Nu kunt u de gegevens voorbereiden en importeren in de sandbox van het Platform.
 
 De voorbeeldgegevens zijn zodanig ontworpen dat, wanneer de verzamelingen zijn uitgevoerd, realtime profielen van klanten worden gemaakt waarin gegevens van meerdere systemen worden gecombineerd. Een goed voorbeeld hiervan is de eerste record van de gegevens over loyaliteit, CRM en offline aankopen. Zoek dat profiel op om te bevestigen dat de gegevens zijn opgenomen. In de [Adobe Experience Platform-interface](https://experience.adobe.com/platform/):
 
-1. Ga naar **[!UICONTROL Profielen]** > **[!UICONTROL Bladeren]**
-1. Selecteren `Luma Loyalty Id` als de **[!UICONTROL Naamruimte identiteit]**
-1. Zoeken naar `5625458` als de **[!UICONTROL Identiteitswaarde]**
+1. Ga naar **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**
+1. Selecteren `Luma Loyalty Id` als de **[!UICONTROL Identity namespace]**
+1. Zoeken naar `5625458` als de **[!UICONTROL Identity value]**
 1. Open de `Daniel Wright` profiel
 
 >[!TIP]
 >
->Als u het profiel niet ziet, controleert u de [!UICONTROL Gegevenssets] pagina om te bevestigen dat alle datasets met succes werden gecreeerd en opgenomen gegevens. Als dat er goed uitziet, wacht u vijftien minuten en controleert u of het profiel beschikbaar is in de viewer.  Als er problemen zijn met de gegevensinvoer, controleert u de foutberichten om te proberen het probleem op te sporen. U kunt ook proberen foutdiagnoses in te schakelen op de [!UICONTROL Gegevenssets] en sleep het JSON-gegevensbestand om de gegevens opnieuw in te voeren.
+>Als u het profiel niet ziet, controleert u de [!UICONTROL Datasets] pagina om te bevestigen dat alle datasets met succes werden gecreeerd en opgenomen gegevens. Als dat er goed uitziet, wacht u vijftien minuten en controleert u of het profiel beschikbaar is in de viewer.  Als er problemen zijn met de gegevensinvoer, controleert u de foutberichten om te proberen het probleem op te sporen. U kunt ook proberen foutdiagnoses in te schakelen op de [!UICONTROL Datasets] en sleep het JSON-gegevensbestand om de gegevens opnieuw in te voeren.
 
 
 ![Een profiel openen](../assets/data-generator/images/validation-profile-open.png)
 
-Door de gegevens in het dialoogvenster **[!UICONTROL Attributen]** en **[!UICONTROL Gebeurtenissen]** tabbladen, ziet u dat het profiel gegevens bevat uit de verschillende gegevensbestanden:
+Door de gegevens in het dialoogvenster **[!UICONTROL Attributes]** en **[!UICONTROL Events]** tabbladen, ziet u dat het profiel gegevens bevat uit de verschillende gegevensbestanden:
 ![Gebeurtenisgegevens uit het offlinebestand Purchase-gebeurtenissen](../assets/data-generator/images/validation-profile-events.png)
 
 ## Volgende stappen
