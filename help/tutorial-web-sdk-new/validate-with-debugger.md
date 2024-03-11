@@ -2,9 +2,9 @@
 title: Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 * Een alternatieve tagbibliotheek laden
 * Valideer de client-side XDM-gebeurtenis vangt gegevens op en verzendt deze naar verwachting naar Platform Edge Network
 * Edge Trace inschakelen om verzoeken aan de serverzijde te bekijken die door Platform Edge Network worden verzonden
-* Een Adobe Experience Platform Assurance-sessie starten om een Experience Cloud-id weer te geven die is gegenereerd door Platform Edge Network
 
 ## Vereisten
 
@@ -45,7 +44,7 @@ U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](http
 * [Web SDK-extensie geïnstalleerd in de eigenschap Tag](install-web-sdk.md)
 * [Gegevenselementen maken](create-data-elements.md)
 * [Identiteiten maken](create-identities.md)
-* [Een labelregel maken](create-tag-rule.md)
+* [Tagregels maken](create-tag-rule.md)
 
 ## Alternatieve tagbibliotheken laden met Foutopsporing
 
@@ -53,20 +52,20 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
 1. Zorg ervoor dat u de [Luma-demo-website](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Het extensiepictogram Foutopsporing Experience Platform openen en selecteren
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
-1. Controleer of Foutopsporing &quot;**[!UICONTROL Verbonden met luminantie]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL vergrendelen]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
-1. Selecteer de **[!UICONTROL Aanmelden]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
-1. Ga nu naar **[!UICONTROL Experience Platform-tags]** in de linkernavigatie
+1. Controleer of Foutopsporing &quot;**[!UICONTROL Connected to Luma]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL lock]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
+1. Selecteer de **[!UICONTROL Sign In]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
+1. Ga nu naar **[!UICONTROL Experience Platform Tags]** in de linkernavigatie
 
    ![Tagscherm Foutopsporing](assets/validate-launch-screen.png)
 
-1. Selecteer de **[!UICONTROL Configuratie]** tab
-1. Rechts van waar het u toont **[!UICONTROL Pagina-insluitcodes]**, opent u de **[!UICONTROL Handelingen]** vervolgkeuzelijst en selecteer **[!UICONTROL Vervangen]**
+1. Selecteer de **[!UICONTROL Configuration]** tab
+1. Rechts van waar het u toont **[!UICONTROL Page Embed Codes]**, opent u de **[!UICONTROL Actions]** vervolgkeuzelijst en selecteer **[!UICONTROL Replace]**
 
    ![Handelingen selecteren > Vervangen](assets/validate-switch-environment.png)
 
 1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer de eigenschap; in dit geval `Web SDK Course 3`
 1. Selecteer uw `Development` milieu
-1. Selecteer de **[!UICONTROL Toepassen]** knop
+1. Selecteer de **[!UICONTROL Apply]** knop
 
    ![De eigenschap Alternatieve tag selecteren](assets/validate-switch-selection.png)
 
@@ -80,16 +79,16 @@ Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats va
 
 U kunt Debugger gebruiken om cliënt-zijbakens te bevestigen die van uw implementatie van SDK van het Web van het Platform worden teweeggebracht om de gegevens te bekijken die naar het Netwerk van de Rand van het Platform worden verzonden:
 
-1. Ga naar **[!UICONTROL Samenvatting]** in de linkernavigatie, om de details van uw markeringsbezit te zien
+1. Ga naar **[!UICONTROL Summary]** in de linkernavigatie, om de details van uw markeringsbezit te zien
 
    ![Tabblad Samenvatting](assets/validate-summary.png)
 
-1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Netwerkverzoeken]**
-1. Open de **[!UICONTROL gebeurtenissen]** rij
+1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]**
+1. Open de **[!UICONTROL events]** rij
 
    ![Adobe Experience Platform Web SDK-verzoek](assets/validate-aep-screen.png)
 
-1. Let op hoe u de `web.webpagedetails.pageView` gebeurtenistype dat u in uw [!UICONTROL Variabele bijwerken] handeling en andere variabelen die zich aan de `AEP Web SDK ExperienceEvent` veldgroep
+1. Let op hoe u de `web.webpagedetails.pageView` gebeurtenistype dat u in uw [!UICONTROL Update variable] handeling en andere variabelen die zich aan de `AEP Web SDK ExperienceEvent` veldgroep
 
    ![Gebeurtenisdetails](assets/validate-event-pageViews.png)
 
@@ -115,7 +114,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
    ![Web SDK in Foutopsporing](assets/identity-debugger-websdk-dark.png)
 
-1. Selecteer de **[!UICONTROL gebeurtenissen]** rij voor het openen van details in een pop-up
+1. Selecteer de **[!UICONTROL events]** rij voor het openen van details in een pop-up
 
    ![Web SDK in Foutopsporing](assets/identity-deugger-websdk-event-dark.png)
 
@@ -149,8 +148,8 @@ Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het W
 
 U schakelt Edge Trace als volgt in:
 
-1. In de linkernavigatie van **[!UICONTROL Foutopsporing Experience Platform]** selecteren **[!UICONTROL Logboeken]**
-1. Selecteer de **[!UICONTROL Rand]** en selecteert u **[!UICONTROL Verbinden]**
+1. In de linkernavigatie van **[!UICONTROL Experience Platform Debugger]** selecteren **[!UICONTROL Logs]**
+1. Selecteer de **[!UICONTROL Edge]** en selecteert u **[!UICONTROL Connect]**
 
    ![Edge-overtrekken aansluiten](assets/analytics-debugger-edgeTrace.png)
 
@@ -158,7 +157,7 @@ U schakelt Edge Trace als volgt in:
 
    ![Verbonden randspoor](assets/analytics-debugger-edge-connected.png)
 
-1. Vernieuw de [Luminagestartpagina](https://luma.enablementadobe.com/) en controle **[!UICONTROL Foutopsporing Experience Platform]** om de data weer te zien komen.
+1. Vernieuw de [Luminagestartpagina](https://luma.enablementadobe.com/) en controle **[!UICONTROL Experience Platform Debugger]** om de data weer te zien komen.
 
    ![Analysebaken Edge Trace](assets/validate-edge-trace.png)
 

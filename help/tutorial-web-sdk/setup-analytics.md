@@ -3,14 +3,19 @@ title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3305'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics instellen met Platform Web SDK
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Meer informatie over het instellen van Adobe Analytics met [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), maakt u labelregels om gegevens naar Adobe Analytics te verzenden en controleert u of Analytics gegevens vastlegt zoals u had verwacht.
 
@@ -33,7 +38,7 @@ Aan het eind van deze les, zult u kunnen:
 
 U kent tags, Adobe Analytics en de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} aanmeldings- en winkelfunctionaliteit.
 
-U hebt minstens één test/dev rapportsuite-id nodig. Als u geen test/dev-rapportsuite hebt die u voor deze zelfstudie kunt gebruiken, [Maak een](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+U hebt minstens één test/dev rapportsuite-id nodig. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [Maak een](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
 U moet alle stappen van de vorige secties in het leerprogramma hebben voltooid:
 
@@ -92,22 +97,22 @@ Het schema dat in het dialoogvenster [Een schema configureren](configure-schemas
 Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw gegevensstroom vertelt dan het Netwerk van de Rand van het Platform waar om die gegevens door:sturen, in dit geval, welke van uw Adobe Analytics rapportreeksen.
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Selecteer in de linkernavigatie de optie **[!UICONTROL Gegevensstromen]**
+1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
 1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
 
    ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
 
-1. Selecteren **[!UICONTROL Service toevoegen]**
+1. Selecteren **[!UICONTROL Add Service]**
    ![Een service toevoegen aan de gegevensstroom](assets/analytics-addService.png)
 1. Selecteren **[!UICONTROL Adobe Analytics]** als de **[!UICONTROL Service]**
-1. Voer de  **[!UICONTROL ID van rapportsuite]** van uw pakket ontwikkelingsrapporten
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Voer de  **[!UICONTROL Report Suite ID]** van uw pakket ontwikkelingsrapporten
+1. Selecteren **[!UICONTROL Save]**
 
    ![Analyse gegevensstroom opslaan](assets/analytics-datastream-save.png)
 
    >[!TIP]
    >
-   >Meer rapportsuites toevoegen door te selecteren **[!UICONTROL Rapportsuite toevoegen]** is gelijk aan taggen met meerdere suite&#39;s.
+   >Meer rapportsuites toevoegen door te selecteren **[!UICONTROL Add Report Suite]** is gelijk aan taggen met meerdere suite&#39;s.
 
 >[!WARNING]
 >
@@ -123,13 +128,13 @@ Leg vervolgens aanvullende gegevens vast uit de gegevenslaag Luminantie en verze
 Tijdens de Create les van gegevenselementen, u [gemaakte JavaScript-gegevenselementen](create-data-elements.md#create-data-elements-to-capture-the-data-layer) die inhoud en identiteitsgegevens heeft vastgelegd. Nu zult u extra gegevenselementen creëren om e-commercegegevens te vangen. Omdat de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gebruikt verschillende structuren van de gegevenslaag voor productdetailpagina&#39;s en producten in het karretje, moet u gegevenselementen voor elk scenario tot stand brengen. U zult sommige elementen van de douanecodegegevens moeten tot stand brengen om te pakken wat u van de de gegevenslaag van de Luma nodig hebt, die al dan niet noodzakelijk wanneer het uitvoeren op uw eigen plaats kan zijn. In dit geval moet u door een reeks winkelwagentjes bladeren om specifieke details van elk product te pakken. Gebruik de meegeleverde codefragmenten hieronder:
 
 1. Open de eigenschap tag die u gebruikt voor de zelfstudie
-1. Ga naar **[!UICONTROL Gegevenselementen]**
-1. Selecteren **[!UICONTROL Gegevenselement toevoegen]**
+1. Ga naar **[!UICONTROL Data Elements]**
+1. Selecteren **[!UICONTROL Add Data Element]**
 1. Naam geven **`product.productInfo.sku`**
-1. Gebruik de **[!UICONTROL Aangepaste code]** **[!UICONTROL Type gegevenselement]**
-1. Selectievakjes laten staan voor **[!UICONTROL Waarde in kleine letters forceren]** en **[!UICONTROL Tekst opschonen]** ongecontroleerd
-1. Verlaten `None` als de **[!UICONTROL Opslagduur]** instellen omdat deze waarde op elke pagina anders is
-1. Selecteren **[!UICONTROL Editor openen]**
+1. Gebruik de **[!UICONTROL Custom Code]** **[!UICONTROL Data Element Type]**
+1. Selectievakjes laten staan voor **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** ongecontroleerd
+1. Verlaten `None` als de **[!UICONTROL Storage Duration]** instellen omdat deze waarde op elke pagina anders is
+1. Selecteren **[!UICONTROL Open Editor]**
 
    ![Aangepast code-gegevenselement](assets/data-element-open-editor.jpg)
 
@@ -144,11 +149,11 @@ Tijdens de Create les van gegevenselementen, u [gemaakte JavaScript-gegevenselem
    return cartItem;
    ```
 
-1. Selecteren **[!UICONTROL Opslaan]** de aangepaste code opslaan
+1. Selecteren **[!UICONTROL Save]** de aangepaste code opslaan
 
    ![SKU van aangepast codeproduct](assets/data-element-products-sku-custom-code.jpg)
 
-1. Selecteren **[!UICONTROL Opslaan]** het gegevenselement opslaan
+1. Selecteren **[!UICONTROL Save]** het gegevenselement opslaan
 
 Voer dezelfde stappen uit om deze extra gegevenselementen te maken:
 
@@ -230,7 +235,7 @@ Alvorens u aan het productkoord in kaart brengt, is het belangrijk om te begrijp
 
 Zie [Gegevens over handel en producten verzamelen](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) voor meer informatie .
 
-Het is ook belangrijk te begrijpen dat u **[!UICONTROL afzonderlijke kenmerken opgeven]** naar afzonderlijke XDM-velden of **[!UICONTROL een volledige array opgeven]** naar een XDM-object.
+Het is ook belangrijk te begrijpen dat u **[!UICONTROL provide individual attributes]** naar afzonderlijke XDM-velden of **[!UICONTROL provide an entire array]** naar een XDM-object.
 
 ![Pagina geeft XDM-object weer](assets/analytics-xdm-population.png)
 
@@ -238,9 +243,9 @@ Het is ook belangrijk te begrijpen dat u **[!UICONTROL afzonderlijke kenmerken o
 
 U kunt aan individuele variabelen in kaart brengen om gegevens op de pagina van productdetails van de Plaats van de Demo van de Luma te vangen:
 
-1. Een **[!UICONTROL XDM-object]** **[!UICONTROL Type gegevenselement]** benoemd **`xdm.commerce.prodView`**
+1. Een **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** benoemd **`xdm.commerce.prodView`**
 1. Dezelfde platformsandbox en hetzelfde XDM-schema selecteren die in vorige lessen zijn gebruikt
-1. Open de **[!UICONTROL handel]** object
+1. Open de **[!UICONTROL commerce]** object
 1. Open de **[!UICONTROL productViews]** object en set **[!UICONTROL value]** tot `1`
 
    ![Toewijzing gegevenselement aan XDM-object](assets/analytics-commerce-prodView.png)
@@ -251,8 +256,8 @@ U kunt aan individuele variabelen in kaart brengen om gegevens op de pagina van 
 
 
 1. Omlaag schuiven naar en selecteren `productListItems` array
-1. Selecteren **[!UICONTROL Afzonderlijke items opgeven]**
-1. Selecteren **[!UICONTROL Item toevoegen]**
+1. Selecteren **[!UICONTROL Provide individual items]**
+1. Selecteren **[!UICONTROL Add Item]**
 
    ![Weergavegebeurtenis product instellen](assets/data-element-xdm-productlistitem.png)
 
@@ -273,7 +278,7 @@ U kunt aan individuele variabelen in kaart brengen om gegevens op de pagina van 
    >Voordat u dit XDM-object opslaat, moet u de variabelen &quot;global&quot; en de toename van de paginaweergave ook instellen:
    >![Algemene variabelen opnieuw instellen in XDM](assets/analytics-global-xdm.png)
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
 ### Een volledige array toewijzen aan een XDM-object
 
@@ -287,14 +292,14 @@ Vergelijk het gegevenselement met de `productListItems` structuur (hint, it shou
 
 >[!IMPORTANT]
 >
->Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` opnieuw opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [vormen schema&#39;s](configure-schemas.md) stap. In het voorbeeld: **[!UICONTROL hoeveelheid]** gebruikt de **[!UICONTROL Geheel]** gegevenstype.
+>Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` opnieuw opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [vormen schema&#39;s](configure-schemas.md) stap. In het voorbeeld: **[!UICONTROL quantity]** gebruikt de **[!UICONTROL Integer]** gegevenstype.
 > ![Gegevenstype XDM-schema](assets/schema-data-type.png)
 
 Nu terug naar het toewijzen van het XDM-object aan een volledige array. Maak een XDM-objectelement om producten op de basispagina vast te leggen:
 
-1. Een **[!UICONTROL XDM-object]** **[!UICONTROL Type gegevenselement]** benoemd **`xdm.commerce.cartView`**
+1. Een **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** benoemd **`xdm.commerce.cartView`**
 1. Dezelfde platformsandbox en hetzelfde XDM-schema selecteren die u voor deze zelfstudie gebruikt
-1. Open de **[!UICONTROL handel]** object
+1. Open de **[!UICONTROL commerce]** object
 1. Open de **[!UICONTROL productListViews]** object en set `value` tot `1`
 
    >[!TIP]
@@ -302,7 +307,7 @@ Nu terug naar het toewijzen van het XDM-object aan een volledige array. Maak een
    >Deze stap is gelijk aan het instellen `scView` gebeurtenis in Analytics
 
 1. Omlaag schuiven naar en selecteren **[!UICONTROL productListItems]** array
-1. Selecteren **[!UICONTROL Volledige array opgeven]**
+1. Selecteren **[!UICONTROL Provide entire array]**
 1. Toewijzen aan **`cart.productInfo`** gegevenselement
 
    ![Volledige arraytoewijzing aan XDM-object](assets/data-element-xdm-provide-array.png)
@@ -312,9 +317,9 @@ Nu terug naar het toewijzen van het XDM-object aan een volledige array. Maak een
    >Voordat u dit XDM-object opslaat, moet u de variabelen &quot;global&quot; en de toename van de paginaweergave ook instellen:
    >![Algemene variabelen opnieuw instellen in XDM](assets/analytics-global-xdm.png)
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
-Een andere maken **[!UICONTROL XDM-object]**  **[!UICONTROL Type gegevenselement]** voor afhandelingsberichten `xdm.commerce.checkout`. Deze tijd stelt de **[!UICONTROL commerce.checkouts.value]** tot `1`, kaart **[!UICONTROL productListItems]** tot **`cart.productInfo`** zoals u zojuist hebt gedaan, voegt u de variabelen &quot;global&quot; en de teller van de paginaweergave toe.
+Een andere maken **[!UICONTROL XDM object]**  **[!UICONTROL Data Element Type]** voor afhandelingsberichten `xdm.commerce.checkout`. Deze tijd stelt de **[!UICONTROL commerce.checkouts.value]** tot `1`, kaart **[!UICONTROL productListItems]** tot **`cart.productInfo`** zoals u zojuist hebt gedaan, voegt u de variabelen &quot;global&quot; en de teller van de paginaweergave toe.
 
 >[!TIP]
 >
@@ -323,9 +328,9 @@ Een andere maken **[!UICONTROL XDM-object]**  **[!UICONTROL Type gegevenselement
 
 Er zijn aanvullende stappen voor het vastleggen van de `purchase` gebeurtenis:
 
-1. Een andere maken  **[!UICONTROL XDM-object]**  **[!UICONTROL Type gegevenselement]** voor afgeroepen aankopen `xdm.commerce.purchase`
-1. Openen **[!UICONTROL handel]** object
-1. Open de **[!UICONTROL bestellen]** object
+1. Een andere maken  **[!UICONTROL XDM object]**  **[!UICONTROL Data Element Type]** voor afgeroepen aankopen `xdm.commerce.purchase`
+1. Openen **[!UICONTROL commerce]** object
+1. Open de **[!UICONTROL order]** object
 1. Kaart **[!UICONTROL purchaseID]** aan de `cart.orderId` gegevenselement
 1. Set **[!UICONTROL currencyCode]** op de hardcoderingswaarde `USD`
 
@@ -345,7 +350,7 @@ Er zijn aanvullende stappen voor het vastleggen van de `purchase` gebeurtenis:
    >Voordat u dit XDM-object opslaat, moet u de variabelen &quot;global&quot; en de toename van de paginaweergave ook instellen:
    >![Algemene variabelen opnieuw instellen in XDM](assets/analytics-global-xdm.png)
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
 Aan het einde van deze stappen moeten de volgende vijf gegevenselementen van XDM-objecten worden gemaakt:
 
@@ -363,37 +368,37 @@ Aan het einde van deze stappen moeten de volgende vijf gegevenselementen van XDM
 
 Met de veelvoudige gemaakte elementen van XDM objecten gegevens, bent u bereid om de bakens te plaatsen gebruikend regels. In deze oefening, creeert u individuele regels per e-commercegebeurtenis en gebruiksvoorwaarden zodat de regels op de juiste pagina&#39;s in brand steken. Laten we beginnen met een Product View-gebeurtenis.
 
-1. Selecteer in de linkernavigatie de optie **[!UICONTROL Regels]** en selecteer vervolgens **[!UICONTROL Regel toevoegen]**
+1. Selecteer in de linkernavigatie de optie **[!UICONTROL Rules]** en selecteer vervolgens **[!UICONTROL Add Rule]**
 1. Naam geven  [!UICONTROL `product view - library load - AA`]
-1. Onder **[!UICONTROL Gebeurtenissen]**, selecteert u **[!UICONTROL Bibliotheek geladen (pagina boven)]**
-1. Onder **[!UICONTROL Voorwaarden]**, selecteert u **[!UICONTROL Toevoegen]**
+1. Onder **[!UICONTROL Events]**, selecteert u **[!UICONTROL Library Loaded (Page Top)]**
+1. Onder **[!UICONTROL Conditions]**, selecteert u **[!UICONTROL Add]**
 
    ![XDM-regels voor analyse](assets/analytics-rule-product-view-event.png)
 
-1. Verlaten **[!UICONTROL Logische typen]** als **[!UICONTROL Standaard]**
-1. Verlaten **[!UICONTROL Extensies]** als **[!UICONTROL Kern]**
-1. Selecteren **[!UICONTROL Type voorwaarde]** als **[!UICONTROL Pad zonder queryreeks]**
+1. Verlaten **[!UICONTROL Logic Type]** als **[!UICONTROL Regular]**
+1. Verlaten **[!UICONTROL Extensions]** als **[!UICONTROL Core]**
+1. Selecteren **[!UICONTROL Condition Type]** als **[!UICONTROL Path Without Query String]**
 1. Schakel rechts de optie **[!UICONTROL Regex]** schakelen
-1. Onder **[!UICONTROL pad is gelijk aan]** set `/products/`. Voor de Luma-demo-site zorgt deze ervoor dat de regel alleen op productpagina&#39;s wordt geactiveerd
-1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+1. Onder **[!UICONTROL path equals]** set `/products/`. Voor de Luma-demo-site zorgt deze ervoor dat de regel alleen op productpagina&#39;s wordt geactiveerd
+1. Selecteren **[!UICONTROL Keep Changes]**
 
    ![XDM-regels voor analyse](assets/analytics-tags-prodView.png)
 
-1. Onder **[!UICONTROL Handelingen]** selecteren **[!UICONTROL Toevoegen]**
+1. Onder **[!UICONTROL Actions]** selecteren **[!UICONTROL Add]**
 1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
-1. Selecteren **[!UICONTROL Type handeling]** als **[!UICONTROL Gebeurtenis Send]**
-1. De **[!UICONTROL Type]** veld bevat een vervolgkeuzelijst met waarden waaruit u kunt kiezen. Selecteer `[!UICONTROL commerce.productViews]`
+1. Selecteren **[!UICONTROL Action Type]** als **[!UICONTROL Send event]**
+1. De **[!UICONTROL Type]** veld bevat een vervolgkeuzelijst met waarden waaruit u kunt kiezen. Selecteren `[!UICONTROL commerce.productViews]`
 
    >[!TIP]
    >
    >De hier geselecteerde waarde heeft geen effect op hoe de gegevens aan Analytics worden in kaart gebracht, nochtans wordt het geadviseerd om deze variabele zorgvuldig toe te passen, aangezien het in de bouwerinterface van het segment van Adobe Experience Platform wordt gebruikt. De geselecteerde waarde kan worden gebruikt in het dialoogvenster `[!UICONTROL c.a.x.eventtype]` de variabele van contextgegevens.
 
-1. Onder **[!UICONTROL XDM-gegevens]**, selecteert u de `[!UICONTROL xdm.commerce.prodView]` XDM-objectgegevenselement
-1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+1. Onder **[!UICONTROL XDM Data]**, selecteert u de `[!UICONTROL xdm.commerce.prodView]` XDM-objectgegevenselement
+1. Selecteren **[!UICONTROL Keep Changes]**
 
    ![XDM-regels voor analyse](assets/analytics-rule-commerce-productViews.png)
 
-1. Uw regel moet er ongeveer als volgt uitzien. Selecteren **[!UICONTROL Opslaan]**
+1. Uw regel moet er ongeveer als volgt uitzien. Selecteren **[!UICONTROL Save]**
 
    ![XDM-regels voor analyse](assets/analytics-rule-product-view.png)
 
@@ -402,22 +407,22 @@ Herhaal dit voor alle andere e-commercegebeurtenissen met de volgende parameters
 
 **Naam van regel**: cartweergave - laden bibliotheek - AA
 
-* **[!UICONTROL Type gebeurtenis]**: Bibliotheek geladen (pagina boven)
-* **[!UICONTROL Voorwaarde]**: /content/luma/us/en/user/cart.html
+* **[!UICONTROL Event Type]**: Bibliotheek geladen (pagina boven)
+* **[!UICONTROL Condition]**: /content/luma/us/en/user/cart.html
 * **Typ waarde onder Web SDK - Handeling verzenden**: commerce.productListViews
 * **XDM-gegevens voor Web SDK - Handeling verzenden:** `%xdm.commerce.cartView%`
 
 **Naam van regel**: uitchecken - laden bibliotheek - AA
 
-* **[!UICONTROL Type gebeurtenis]**: Bibliotheek geladen (pagina boven)
-* **[!UICONTROL Voorwaarde]** /content/luma/us/en/user/checkout.html
+* **[!UICONTROL Event Type]**: Bibliotheek geladen (pagina boven)
+* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout.html
 * **Type voor Web SDK - Handeling verzenden**: commerce.checkouts
 * **XDM-gegevens voor Web SDK - Handeling verzenden:** `%xdm.commerce.checkout%`
 
 **Naam van regel**: aankoop - laden bibliotheek - AA
 
-* **[!UICONTROL Type gebeurtenis]**: Bibliotheek geladen (pagina boven)
-* **[!UICONTROL Voorwaarde]** /content/luma/us/en/user/checkout/order/thank-you.html
+* **[!UICONTROL Event Type]**: Bibliotheek geladen (pagina boven)
+* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout/order/thank-you.html
 * **Type voor Web SDK - Handeling verzenden**: commerce.purchase
 * **XDM-gegevens voor Web SDK - Handeling verzenden:** `%xdm.commerce.purchase%`
 
@@ -453,7 +458,7 @@ Leer hoe u met de functie Edge Trace van Foutopsporing in Experience Platform ku
    >
    > 1. U wordt automatisch omgeleid naar de [pagina Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) op de volgende pagina laden
 
-1. Als u Edge Trace wilt inschakelen, gaat u naar Foutopsporing Experience Platform en selecteert u in de linkernavigatie **[!UICONTROL Logboeken]** en selecteert u vervolgens de **[!UICONTROL Rand]** en selecteert u **[!UICONTROL Verbinden]**
+1. Als u Edge Trace wilt inschakelen, gaat u naar Foutopsporing Experience Platform en selecteert u in de linkernavigatie **[!UICONTROL Logs]** en selecteert u vervolgens de **[!UICONTROL Edge]** en selecteert u **[!UICONTROL Connect]**
 
    ![Edge-overtrekken aansluiten](assets/analytics-debugger-edgeTrace.png)
 
@@ -535,12 +540,12 @@ Nu u de bakens Analytics met het Spoor van de Rand bevestigde, kunt u de gegeven
 
 In deze oefening, wijst u één variabele XDM aan een steun toe zodat kunt u in rapporten in real time bekijken. Voer dezelfde stappen uit voor elke aangepaste toewijzing die u voor een toepassing moet uitvoeren `eVar`, `prop`, `event`of variabele die toegankelijk is via verwerkingsregels.
 
-1. Ga in de interface Analytics naar [!UICONTROL Beheerder] > [!UICONTROL Admin Tools] > [!UICONTROL Rapportageopties]
-1. Selecteer de set met ontwikkelings-/testrapporten die u gebruikt voor de zelfstudie > [!UICONTROL Instellingen bewerken] > [!UICONTROL Algemeen] > [!UICONTROL Verwerkingsregels]
+1. Ga in de interface Analytics naar [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites]
+1. Selecteer de set met ontwikkelings-/testrapporten die u gebruikt voor de zelfstudie > [!UICONTROL Edit Settings] > [!UICONTROL General] > [!UICONTROL Processing Rules]
 
    ![Aanschaf van analysemogelijkheden](assets/analytics-process-rules.png)
 
-1. Een regel maken voor **[!UICONTROL Waarde overschrijven van]** `[!UICONTROL Product Name (prop1)]` tot `a.x.productlistitems.0.name`. Herinner me om uw nota toe te voegen waarom u de regel creeert en uw regeltitel noemt. Selecteren **[!UICONTROL Opslaan]**
+1. Een regel maken voor **[!UICONTROL Overwrite value of]** `[!UICONTROL Product Name (prop1)]` tot `a.x.productlistitems.0.name`. Herinner me om uw nota toe te voegen waarom u de regel creeert en uw regeltitel noemt. Selecteren **[!UICONTROL Save]**
 
    ![Aanschaf van analysemogelijkheden](assets/analytics-set-processing-rule.png)
 
@@ -548,7 +553,7 @@ In deze oefening, wijst u één variabele XDM aan een steun toe zodat kunt u in 
    >
    >De eerste keer u aan een verwerkingsregel in kaart brengt UI toont u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
 
-1. Ga naar [!UICONTROL Instellingen bewerken] >  [!UICONTROL Real-time]. Configureer alle drie met de volgende hieronder getoonde parameters, zodat u de weergaven van de inhoudspagina, de productweergaven en de aankopen kunt valideren
+1. Ga naar [!UICONTROL Edit Settings] >  [!UICONTROL Real-Time]. Configureer alle drie met de volgende hieronder getoonde parameters, zodat u de weergaven van de inhoudspagina, de productweergaven en de aankopen kunt valideren
 
    ![Aanschaf van analysemogelijkheden](assets/analytics-debugger-real-time.png)
 

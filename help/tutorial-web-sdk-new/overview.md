@@ -2,9 +2,9 @@
 title: Tutorial voor Adobe Experience Cloud met Web SDK implementeren
 description: Leer hoe te om de toepassingen van het Experience Cloud uit te voeren gebruikend het Web SDK van Adobe Experience Platform.
 recommendations: catalog, noDisplay
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: b46666013f39a5a71323810ee69876d9e32e02e3
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '656'
 ht-degree: 2%
 
 ---
@@ -40,24 +40,24 @@ Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingtoepassingen implem
 
 Alle klanten van het Experience Cloud kunnen Platform Web SDK gebruiken. Het is geen vereiste om een op platform-gebaseerde toepassing zoals Real-time Customer Data Platform of Journey Optimizer vergunning te geven om Web SDK te gebruiken.
 
-In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigingen hebt om de lessen te voltooien. Als niet, moet u uw Beheerder van het Experience Cloud bereiken om toegang te verzoeken.
+In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigingen hebt om de lessen te voltooien. Als niet, moet u uit naar een Beheerder van het Experience Cloud bij uw bedrijf om toegang te verkrijgen.
 
 * Voor **Gegevensverzameling** moet u beschikken over:
-   * **[!UICONTROL Platforms]**—toestemming voor **[!UICONTROL Web]** en, indien een vergunning is verleend, **[!UICONTROL Rand]**
-   * **[!UICONTROL Eigendomsrechten]**—toestemming om **[!UICONTROL Goedkeuren]**, **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Eigenschap bewerken]**, **[!UICONTROL Omgevingen beheren]**, **[!UICONTROL Extensies beheren]**, en **[!UICONTROL Publiceren]**,
-   * **[!UICONTROL Bedrijfsrechten]**—toestemming om **[!UICONTROL Eigenschappen beheren]**
+   * **[!UICONTROL Platforms]**—toestemming voor **[!UICONTROL Web]** en, indien een vergunning is verleend, **[!UICONTROL Edge]**
+   * **[!UICONTROL Property Rights]**—toestemming om **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Edit Property]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, en **[!UICONTROL Publish]**,
+   * **[!UICONTROL Company Rights]**—toestemming om **[!UICONTROL Manage Properties]**
 
      Zie voor meer informatie over machtigingen voor tags [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 * Voor **Experience Platform** moet u beschikken over:
 
    * Toegang tot de **standaardproductie**, **&quot;Prod&quot;** sandbox.
-   * Toegang tot **[!UICONTROL Schema&#39;s beheren]** en **[!UICONTROL Schema&#39;s weergeven]** krachtens **[!UICONTROL Gegevensmodellering]**.
-   * Toegang tot **[!UICONTROL Naamruimten beheren]** en **[!UICONTROL Identiteitsnaamruimten weergeven]** krachtens **[!UICONTROL Identity Management]**.
-   * Toegang tot **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]** krachtens **[!UICONTROL Gegevensverzameling]**.
+   * Toegang tot **[!UICONTROL Manage Schemas]** en **[!UICONTROL View Schemas]** krachtens **[!UICONTROL Data Modeling]**.
+   * Toegang tot **[!UICONTROL Manage Identity Namespaces]** en **[!UICONTROL View Identity Namespaces]** krachtens **[!UICONTROL Identity Management]**.
+   * Toegang tot **[!UICONTROL Manage Datastreams]** en **[!UICONTROL View Datastreams]** krachtens **[!UICONTROL Data Collection]**.
    * Als u een klant bent van een toepassing op basis van een platform en de [Experience Platform instellen](setup-experience-platform.md) les, zou u ook moeten hebben:
       * Toegang tot een **ontwikkeling** sandbox.
-      * Alle machtigingsitems onder **[!UICONTROL Gegevensbeheer]**, en **[!UICONTROL Profielbeheer]**:
+      * Alle machtigingsitems onder **[!UICONTROL Data Management]**, en **[!UICONTROL Profile Management]**:
 
      De vereiste functies moeten beschikbaar zijn voor alle klanten van het Experience Cloud, zelfs als u geen klant bent van een platformgebaseerde toepassing zoals Real-Time CDP.
 

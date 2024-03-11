@@ -3,14 +3,19 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
 
 # Een XDM-schema voor webgegevens maken
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen.
 
@@ -50,7 +55,7 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
    >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
-1. Selecteer de **[!UICONTROL Schema maken]** knop rechtsboven
+1. Selecteer de **[!UICONTROL Create Schema]** knop rechtsboven
 1. Selecteer in het vervolgkeuzemenu de optie **[!UICONTROL XDM ExperienceEvent]**
 
 ![Schema Experience Event](assets/schema-XDM-experience-event.jpg)
@@ -63,27 +68,27 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 
 >[!TIP]
 > 
->In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_, en _**[!UICONTROL Consumentenervaringsgebeurtenis]**_.
+>In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_, en_**[!UICONTROL Consumer Experience Event]**_.
 
-1. In de **[!UICONTROL Veldgroepen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
+1. In de **[!UICONTROL Field groups]** sectie, selecteert u **[!UICONTROL Add]**
 1. Zoeken naar [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Het selectievakje inschakelen
 1. Zoeken naar [!UICONTROL `Consumer Experience Event`]
 1. Het selectievakje inschakelen
-1. Selecteren **[!UICONTROL Veldgroepen toevoegen]**
+1. Selecteren **[!UICONTROL Add field groups]**
 
    ![Veldgroep toevoegen](assets/schema-add-field-group.jpg)
 
 Als de veldgroepen zijn geselecteerd, kunt u het schema een naam geven. Een gemeenschappelijke noemende overeenkomst voor schema XDM moet het schema na de bron van de gegevens noemen:
 
-1. In de **[!UICONTROL Compositie**] selecteert u de `Untitled schema name`
-1. In de **[!UICONTROL Schema-eigenschappen]** in het deelvenster **[!UICONTROL Weergavenaam]** `Luma Web Event Data`
-1. Selecteer iets buiten de **[!UICONTROL Weergavenaam]** veld om het **[!UICONTROL Opslaan]** option
-1. Selecteren **[!UICONTROL Opslaan]**
+1. In de **[!UICONTROL Composition**] selecteert u de `Untitled schema name`
+1. In de **[!UICONTROL Schema properties]** in het deelvenster **[!UICONTROL Display Name]** `Luma Web Event Data`
+1. Selecteer iets buiten de **[!UICONTROL Display Name]** veld om het **[!UICONTROL Save]** option
+1. Selecteren **[!UICONTROL Save]**
 
 ![Weblettergegevens Luma](assets/schema-luma-web-event-data.png)
 
-Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL weergavenaam] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
+Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL display name] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.jpg)
 
@@ -101,7 +106,7 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 
 >[!IMPORTANT]
 >
-> Het is mogelijk **[!UICONTROL Profiel]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. Ook kunnen velden na dit punt niet uit het schema worden verwijderd. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
+> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. Ook kunnen velden na dit punt niet uit het schema worden verwijderd. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >Deze instelling wordt tijdens het [Experience Platform instellen](setup-experience-platform.md) les.
 >![Profielschema](assets/schema-profile.png)

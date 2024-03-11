@@ -3,14 +3,19 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1152'
 ht-degree: 0%
 
 ---
 
 # Gegevenselementen maken
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om de essentiële gegevenselementen tot stand te brengen nodig om gegevens met het Web SDK van het Experience Platform te vangen. Leg zowel inhoud als identiteitsgegevens vast op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om het XDM schema te gebruiken u vroeger voor het verzamelen van gegevens gebruikend het Web SDK van het Platform door een nieuw gegevenstype genoemd XDM Voorwerp creeerde.
 
@@ -63,18 +68,18 @@ U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosit
 
 Voordat u begint met het maken van het XDM-object, moet u de volgende set gegevenselementen maken die zijn toegewezen aan de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag:
 
-1. Ga naar **[!UICONTROL Gegevenselementen]** en selecteert u **[!UICONTROL Gegevenselement toevoegen]** (of **[!UICONTROL Nieuw gegevenselement maken]** als er geen bestaande gegevenselementen zijn in de eigenschap tag)
+1. Ga naar **[!UICONTROL Data Elements]** en selecteert u **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als er geen bestaande gegevenselementen zijn in de eigenschap tag)
 
    ![Gegevenselement maken](assets/data-element-create.jpg)
 
 1. Geef het gegevenselement een naam `page.pageInfo.pageName`
-1. Gebruik de **[!UICONTROL JavaScript-variabele]** **[!UICONTROL Het type Data Element]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
+1. Gebruik de **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
 
-1. Schakel de selectievakjes in voor **[!UICONTROL Waarde in kleine letters forceren]** en **[!UICONTROL Tekst opschonen]** om het hoofdlettergebruik te standaardiseren en vreemde ruimten te verwijderen
+1. Schakel de selectievakjes in voor **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** om het hoofdlettergebruik te standaardiseren en vreemde ruimten te verwijderen
 
-1. Verlaten `None` als de **[!UICONTROL Opslagduur]** instellen omdat deze waarde op elke pagina anders is
+1. Verlaten `None` als de **[!UICONTROL Storage Duration]** instellen omdat deze waarde op elke pagina anders is
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
    ![Gegevenselement paginanaam](assets/data-element-pageName.jpg)
 
@@ -97,31 +102,31 @@ Voer dezelfde stappen uit om deze vier aanvullende gegevenselementen te maken:
 
 >[!CAUTION]
 >
->De [!UICONTROL JavaScript-variabele] het type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zo verwijzend het element van gebruikerslijstgegevens als `digitalData.user[0].profile[0].attributes.username` **werkt niet**.
+>De [!UICONTROL JavaScript variable] het type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zo verwijzend het element van gebruikerslijstgegevens als `digitalData.user[0].profile[0].attributes.username` **werkt niet**.
 
 ## Gegevenselement identiteitskaarten maken
 
 Vervolgens kunt u het gegevenselement Identiteitskaart maken:
 
-1. Ga naar **[!UICONTROL Gegevenselementen]** en selecteert u **[!UICONTROL Gegevenselement toevoegen]**
+1. Ga naar **[!UICONTROL Data Elements]** en selecteert u **[!UICONTROL Add Data Element]**
 
-1. **[!UICONTROL Naam]** het gegevenselement `identityMap.loginID`
+1. **[!UICONTROL Name]** het gegevenselement `identityMap.loginID`
 
-1. Als de **[!UICONTROL Extensie]**, selecteert u `Adobe Experience Platform Web SDK`
+1. Als de **[!UICONTROL Extension]**, selecteert u `Adobe Experience Platform Web SDK`
 
-1. Als de **[!UICONTROL Type gegevenselement]**, selecteert u `Identity map`
+1. Als de **[!UICONTROL Data Element Type]**, selecteert u `Identity map`
 
-1. Hiermee wordt een schermgebied rechts in het venster **[!UICONTROL Interface voor gegevensverzameling]** voor u om de identiteit te vormen:
+1. Hiermee wordt een schermgebied rechts in het venster **[!UICONTROL Data Collection interface]** voor u om de identiteit te vormen:
 
    ![Interface voor gegevensverzameling](assets/identity-identityMap-setup.png)
 
-1. Als de  **[!UICONTROL Naamruimte]**, selecteert u de `Luma CRM Id` naamruimte die u eerder hebt gemaakt in het dialoogvenster [Identiteiten configureren](configure-identities.md) les.
+1. Als de  **[!UICONTROL Namespace]**, selecteert u de `Luma CRM Id` naamruimte die u eerder hebt gemaakt in het dialoogvenster [Identiteiten configureren](configure-identities.md) les.
 
    >[!NOTE]
    >
    >    Als u uw `Luma CRM Id` naamruimte, controleert u of u deze ook hebt gemaakt in uw standaardproductiestandbox. Alleen naamruimten die zijn gemaakt in de standaardproductiefsandbox worden momenteel weergegeven in het vervolgkeuzemenu voor naamruimten.
 
-1. Na de **[!UICONTROL Naamruimte]** is geselecteerd, moet een id worden ingesteld. Selecteer de `user.profile.attributes.username` gegevenselement dat eerder in deze les wordt gecreeerd, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
+1. Na de **[!UICONTROL Namespace]** is geselecteerd, moet een id worden ingesteld. Selecteer de `user.profile.attributes.username` gegevenselement dat eerder in deze les wordt gecreeerd, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
 
 <!--  >[!TIP]
    >
@@ -130,18 +135,18 @@ Vervolgens kunt u het gegevenselement Identiteitskaart maken:
    >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
 -->
 
-1. Als de **[!UICONTROL Status voor authentiek]**, selecteert u **[!UICONTROL Geverifieerd]**
-1. Selecteren **[!UICONTROL Primair]**
+1. Als de **[!UICONTROL Authenticated state]**, selecteert u **[!UICONTROL Authenticated]**
+1. Selecteren **[!UICONTROL Primary]**
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
    ![Interface voor gegevensverzameling](assets/identity-id-namespace.png)
 
 >[!TIP]
 >
-> Adobe beveelt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primair] identiteit.
+> Adobe beveelt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primary] identiteit.
 >
-> Als het identiteitsbewijs de personsidentificatie bevat (bijvoorbeeld `Luma CRM Id`), wordt de persoon-identificator de [!UICONTROL primair] identiteit. Anders, `ECID` wordt de [!UICONTROL primair] identiteit.
+> Als het identiteitsbewijs de personsidentificatie bevat (bijvoorbeeld `Luma CRM Id`), wordt de persoon-identificator de [!UICONTROL primary] identiteit. Anders, `ECID` wordt de [!UICONTROL primary] identiteit.
 
 
 
@@ -170,11 +175,11 @@ Er zijn verschillende manieren om gegevenselementen toe te wijzen aan XDM object
 
 Maak een XDM-object om inhoudsgegevens vast te leggen:
 
-1. Selecteer in de linkernavigatie de optie **[!UICONTROL Gegevenselementen]**
-1. Selecteren **[!UICONTROL Gegevenselement toevoegen]**
-1. **[!UICONTROL Naam]** het gegevenselement **`xdm.content`**
-1. Als de **[!UICONTROL Extensie]** selecteren `Adobe Experience Platform Web SDK`
-1. Als de **[!UICONTROL Type gegevenselement]** selecteren `XDM object`
+1. Selecteer in de linkernavigatie de optie **[!UICONTROL Data Elements]**
+1. Selecteren **[!UICONTROL Add Data Element]**
+1. **[!UICONTROL Name]** het gegevenselement **`xdm.content`**
+1. Als de **[!UICONTROL Extension]** selecteren `Adobe Experience Platform Web SDK`
+1. Als de **[!UICONTROL Data Element Type]** selecteren `XDM object`
 1. Selecteer het platform **[!UICONTROL Sandbox]** waarin u het XDM-schema hebt gemaakt tijdens het [Een XDM-schema configureren](configure-schemas.md) les, in dit voorbeeld `DEVELOPMENT Mobile and Web SDK Courses`
 1. Als de **[!UICONTROL Schema]**, selecteert u uw `Luma Web Event Data` schema:
 
@@ -202,7 +207,7 @@ Maak een XDM-object om inhoudsgegevens vast te leggen:
 
 1. Toewijzen aan `identityMap.loginID` gegevenselement
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
    ![Interface voor gegevensverzameling](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 

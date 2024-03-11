@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 15%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 15%
    + [Web SDK-extensie installeren](install-web-sdk.md)
    + [Gegevenselementen maken](create-data-elements.md)
    + [Identiteiten maken](create-identities.md)
-   + [Een labelregel maken](create-tag-rule.md)
+   + [Tagregels maken](create-tag-rule.md)
    + [Valideren met foutopsporing](validate-with-debugger.md)
    + [Valideren met betrouwbaarheid](validate-with-assurance.md)
 

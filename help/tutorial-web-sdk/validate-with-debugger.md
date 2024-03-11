@@ -3,14 +3,19 @@ title: Valideer de implementaties van SDK van het Web met Foutopsporing van het 
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1039'
+ht-degree: 0%
 
 ---
 
 # Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen.
 
@@ -57,20 +62,20 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
 1. Zorg ervoor dat de Luminasite is geopend en selecteer het extensiepictogram Experience Platform debugger
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie, die met dit leerprogramma niet verwant is (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
-1. Controleer of Foutopsporing &quot;**[!UICONTROL Verbonden met luminantie]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL vergrendelen]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
-1. Selecteer de **[!UICONTROL Aanmelden]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
-1. Ga nu naar **[!UICONTROL Experience Platform-tags]** in de linkernavigatie
+1. Controleer of Foutopsporing &quot;**[!UICONTROL Connected to Luma]**&quot; zoals hieronder wordt weergegeven en selecteer vervolgens &quot;**[!UICONTROL lock]**&quot; pictogram om Foutopsporing te vergrendelen op de Luministensite.
+1. Selecteer de **[!UICONTROL Sign In]** en meld je aan bij Adobe Experience Cloud met je Adobe-id.
+1. Ga nu naar **[!UICONTROL Experience Platform Tags]** in de linkernavigatie
 
    ![Tagscherm Foutopsporing](assets/validate-launch-screen.png)
 
-1. Selecteer de **[!UICONTROL Configuratie]** tab
-1. Rechts van waar het u toont **[!UICONTROL Pagina-insluitcodes]**, opent u de **[!UICONTROL Handelingen]** vervolgkeuzelijst en selecteer **[!UICONTROL Vervangen]**
+1. Selecteer de **[!UICONTROL Configuration]** tab
+1. Rechts van waar het u toont **[!UICONTROL Page Embed Codes]**, opent u de **[!UICONTROL Actions]** vervolgkeuzelijst en selecteer **[!UICONTROL Replace]**
 
    ![Handelingen selecteren > Vervangen](assets/validate-switch-environment.png)
 
 1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer uw `Web SDK Course` eigenschap
 1. Selecteer uw `Development` milieu
-1. Selecteer de **[!UICONTROL Toepassen]** knop
+1. Selecteer de **[!UICONTROL Apply]** knop
 
    ![De eigenschap Alternatieve tag selecteren](assets/validate-switch-selection.png)
 
@@ -84,16 +89,16 @@ Aangezien u het leerprogramma voortzet, zult u deze techniek gebruiken om de pla
 
 U kunt Debugger gebruiken om uw implementatie van SDK van het Web van het Platform te bevestigen en de gegevens te bekijken die naar het Netwerk van de Rand van het Platform worden verzonden:
 
-1. Ga naar **[!UICONTROL Samenvatting]** in de linkernavigatie, om de details van uw markeringsbezit te zien
+1. Ga naar **[!UICONTROL Summary]** in de linkernavigatie, om de details van uw markeringsbezit te zien
 
    ![Tabblad Samenvatting](assets/validate-summary.png)
 
-1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Netwerkverzoeken]**
-1. Open de **[!UICONTROL gebeurtenissen]** rij (maak geen zorgen als dit schermafbeelding meer verzoeken dan van u toont, omvat het verzoeken uit toekomstige lessen en u kunt nu negeren)
+1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]**
+1. Open de **[!UICONTROL events]** rij (maak geen zorgen als dit schermafbeelding meer verzoeken dan van u toont, omvat het verzoeken uit toekomstige lessen en u kunt nu negeren)
 
    ![Adobe Experience Platform Web SDK-verzoek](assets/validate-aep-screen.png)
 
-1. Let op hoe we de `web.webpagedetails.pageView` gebeurtenistype dat we in onze [!UICONTROL Gebeurtenis verzenden] handeling en andere variabelen die zich aan de `AEP Web SDK ExperienceEvent Mixin` format
+1. Let op hoe we de `web.webpagedetails.pageView` gebeurtenistype dat we in onze [!UICONTROL Send Event] handeling en andere variabelen die zich aan de `AEP Web SDK ExperienceEvent Mixin` format
 
    ![Gebeurtenisdetails](assets/validate-event-pageViews.png)
 
@@ -111,7 +116,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
    ![Web SDK in Foutopsporing](assets/identity-debugger-websdk-dark.png)
 
-1. Selecteer de **[!UICONTROL gebeurtenissen]** rij voor het openen van details in een pop-up
+1. Selecteer de **[!UICONTROL events]** rij voor het openen van details in een pop-up
 
    ![Web SDK in Foutopsporing](assets/identity-deugger-websdk-event-dark.png)
 

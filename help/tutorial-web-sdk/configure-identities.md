@@ -3,14 +3,19 @@ title: Naamruimte configureren
 description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
+source-wordcount: '686'
+ht-degree: 0%
 
 ---
 
 # Naamruimte configureren
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
@@ -57,16 +62,16 @@ Maak nu een naamruimte voor de Luma CRM-id:
    >
    >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
-1. Selecteren **[!UICONTROL Identiteiten]** in de linkernavigatie
-1. Selecteren **[!UICONTROL Bladeren]**
+1. Selecteren **[!UICONTROL Identities]** in de linkernavigatie
+1. Selecteren **[!UICONTROL Browse]**
 
    In de hoofdinterface van de pagina wordt een lijst met naamruimten weergegeven met de namen, identiteitssymbolen, de datum die als laatste is bijgewerkt en of het standaardnaamruimten of aangepaste naamruimten zijn. De rechterspoorstaaf bevat informatie over de sterkte van de identiteitsgrafiek.
 
-1. Selecteren **[!UICONTROL Naamruimte maken]**
+1. Selecteren **[!UICONTROL Create identity namespace]**
 
    ![Identiteiten weergeven](assets/configure-identities-screen.png)
 
-1. Geef de volgende gegevens op en selecteer **[!UICONTROL Maken]**.
+1. Geef de volgende gegevens op en selecteer **[!UICONTROL Create]**.
 
    | Veld | Waarde |
    |---------------|-----------|
@@ -78,7 +83,7 @@ Maak nu een naamruimte voor de Luma CRM-id:
    ![Naamruimten maken](assets/identities-create-namespace.png)
 
 
-   De naamruimte Identiteit wordt gevuld in het dialoogvenster **[!UICONTROL Identiteiten]** scherm.
+   De naamruimte Identiteit wordt gevuld in het dialoogvenster **[!UICONTROL Identities]** scherm.
 
    ![Naamruimten maken](assets/configure-identities-namespace-lumaCrmId.png)
 

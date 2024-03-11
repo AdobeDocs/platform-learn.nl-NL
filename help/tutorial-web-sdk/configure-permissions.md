@@ -3,33 +3,38 @@ title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
 
 # Machtigingen voor de zelfstudie configureren
 
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+
 Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om dit leerprogramma te voltooien. Om het Web SDK van het Platform uit te voeren gebruikend markeringen in de interface van de Inzameling van Gegevens, moet u de juiste gebruikerstoestemmingen hebben die binnen worden gevormd [Admin Console](https://adminconsole.adobe.com).
 
 ## Dataverzameling
 
-* Heeft toestemming om **[!UICONTROL Ontwikkelen]**, **[!UICONTROL Bewerken]**, **[!UICONTROL Goedkeuren]**, **[!UICONTROL Publiceren]**, **[!UICONTROL Extensies beheren]**, **[!UICONTROL Omgevingen beheren]**, en **[!UICONTROL Eigenschappen beheren]**. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
-* Als u de facultatieve gebeurtenis zult voltooien die les door:sturen, een productvergunning hebben die rand door:sturen en toestemmingspunt omvat **[!UICONTROL Platforms]** > **[!UICONTROL Rand]**
+* Heeft toestemming om **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, en **[!UICONTROL Manage Properties]**. Zie voor meer informatie over labels [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Als u de facultatieve gebeurtenis zult voltooien die les door:sturen, een productvergunning hebben die rand door:sturen en toestemmingspunt omvat **[!UICONTROL Platforms]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 Deze functies moeten beschikbaar zijn voor alle klanten van het Experience Cloud, zelfs als u geen klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP.
 
 * Toegang tot de **standaardproductie**, **&quot;Prod&quot;** sandbox.
-* Toegang tot **[!UICONTROL Schema&#39;s beheren]** en **[!UICONTROL Schema&#39;s weergeven]** krachtens **[!UICONTROL Gegevensmodellering]**
-* Toegang tot **[!UICONTROL Naamruimten beheren]** en **[!UICONTROL Identiteitsnaamruimten weergeven]** krachtens **[!UICONTROL Identity Management]**
-* Toegang tot **[!UICONTROL Gegevensstromen beheren]** en **[!UICONTROL Gegevensstromen weergeven]** krachtens **[!UICONTROL Gegevensverzameling]**
+* Toegang tot **[!UICONTROL Manage Schemas]** en **[!UICONTROL View Schemas]** krachtens **[!UICONTROL Data Modeling]**
+* Toegang tot **[!UICONTROL Manage Identity Namespaces]** en **[!UICONTROL View Identity Namespaces]** krachtens **[!UICONTROL Identity Management]**
+* Toegang tot **[!UICONTROL Manage Datastreams]** en **[!UICONTROL View Datastreams]** krachtens **[!UICONTROL Data Collection]**
 * Als u een klant bent van een toepassing op basis van een platform en de [Experience Platform instellen](setup-experience-platform.md) les, zou u ook moeten hebben:
    * Toegang tot een **ontwikkeling** sandbox.
-   * Alle machtigingsitems onder **[!UICONTROL Gegevensbeheer]**, en **[!UICONTROL Profielbeheer]**:
+   * Alle machtigingsitems onder **[!UICONTROL Data Management]**, en **[!UICONTROL Profile Management]**:
 
 
 Voor meer informatie over de toegangscontrole van het Platform, zie [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).

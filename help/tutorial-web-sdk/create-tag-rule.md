@@ -3,14 +3,19 @@ title: Een labelregel maken
 description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
 
 # Een labelregel maken
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
 
@@ -54,13 +59,13 @@ waar;
 
 ## Tagregel maken
 
-In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. U zult deze eerste regel gebruiken om het voorwerp XDM naar het Netwerk van de Rand te verzenden gebruikend Web SDK [!UICONTROL Gebeurtenis verzenden] handeling. Later in deze zelfstudie verzendt u verschillende versies van het XDM-object op basis van het type pagina waarop de bezoeker zich bevindt. Om die reden, zult u regelvoorwaarden gebruiken om die andere types van pagina&#39;s uit te sluiten.
+In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. U zult deze eerste regel gebruiken om het voorwerp XDM naar het Netwerk van de Rand te verzenden gebruikend Web SDK [!UICONTROL Send Event] handeling. Later in deze zelfstudie verzendt u verschillende versies van het XDM-object op basis van het type pagina waarop de bezoeker zich bevindt. Om die reden, zult u regelvoorwaarden gebruiken om die andere types van pagina&#39;s uit te sluiten.
 
 Een labelregel maken:
 
 1. De eigenschap tag openen die u gebruikt voor deze zelfstudie
-1. Ga naar **[!UICONTROL Regels]** in de linkernavigatie
-1. Selecteer de **[!UICONTROL Nieuwe regel maken]** knop
+1. Ga naar **[!UICONTROL Rules]** in de linkernavigatie
+1. Selecteer de **[!UICONTROL Create New Rule]** knop
    ![Een regel maken](assets/rules-create.png)
 1. Naam van de regel `all pages - library load - AA & AT`
 
@@ -68,18 +73,18 @@ Een labelregel maken:
    >
    > Deze regel wordt door Adobe Analytics en Target in een toekomstige les op een specifieke manier gebruikt, en daarom `AA & AT` wordt gebruikt aan het einde van de naam.
 
-1. In de **[!UICONTROL Gebeurtenissen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
+1. In de **[!UICONTROL Events]** sectie, selecteert u **[!UICONTROL Add]**
    ![Geef de regel een naam en voeg een gebeurtenis toe](assets/rule-name.png)
-1. Gebruik de **[!UICONTROL Core Extension]** en selecteert u `Library Loaded (Page Top)` als de **[!UICONTROL Type gebeurtenis]**.
+1. Gebruik de **[!UICONTROL Core Extension]** en selecteert u `Library Loaded (Page Top)` als de **[!UICONTROL Event Type]**.
 
    Deze instelling betekent dat de regel wordt geactiveerd wanneer de tagbibliotheek op een pagina wordt geladen.
-1. Selecteren **[!UICONTROL Wijzigingen behouden]** om op het belangrijkste regelscherm terug te keren
+1. Selecteren **[!UICONTROL Keep Changes]** om op het belangrijkste regelscherm terug te keren
    ![De gebeurtenis Library Loaded toevoegen](assets/rule-event-pagetop.png)
-1. In de **[!UICONTROL Voorwaarden]** selecteert u de **[!UICONTROL Toevoegen]** knop
+1. In de **[!UICONTROL Conditions]** selecteert u de **[!UICONTROL Add]** knop
    ![Voorwaarden toevoegen](assets/rules-add-conditions.png)
-1. Selecteren **[!UICONTROL Logische typen]** `Exception`, **[!UICONTROL Extensie]** `Core`, en **[!UICONTROL Type voorwaarde]** `Path Without Query String`
-1. Voer het URL-pad in `/content/luma/us/en/user/cart.html` in de **[!UICONTROL pad is gelijk aan]** veld, en **[!UICONTROL name]** het `Core - cart page`
-1. Selecteren **[!UICONTROL Wijzigingen behouden]**
+1. Selecteren **[!UICONTROL Logic Type]** `Exception`, **[!UICONTROL Extension]** `Core`, en **[!UICONTROL Condition Type]** `Path Without Query String`
+1. Voer het URL-pad in `/content/luma/us/en/user/cart.html` in de **[!UICONTROL path equals]** veld, en **[!UICONTROL name]** het `Core - cart page`
+1. Selecteren **[!UICONTROL Keep Changes]**
    ![Voorwaarden toevoegen](assets/rule-condition-exception.png)
 1. Voeg nog drie uitzonderingen toe voor de volgende URL-paden
 
@@ -89,20 +94,20 @@ Een labelregel maken:
 
    ![Voorwaarden toevoegen](assets/rule-condition-exception-all.png)
 
-1. In de **[!UICONTROL Handelingen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
-1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extensie]**
-1. Selecteren **[!UICONTROL Gebeurtenis verzenden]** als de **[!UICONTROL Type handeling]**
+1. In de **[!UICONTROL Actions]** sectie, selecteert u **[!UICONTROL Add]**
+1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
+1. Selecteren **[!UICONTROL Send Event]** als de **[!UICONTROL Action Type]**
 1. Selecteren **[!UICONTROL web.webpagedetails.pageViews]** als de **[!UICONTROL Type]**.
 
    >[!WARNING]
    >
    > In dit vervolgkeuzemenu worden de **`xdm.eventType`** in het XDM-object. Hoewel u in dit veld ook vrije-formulierlabels kunt typen, wordt u ten zeerste aangeraden **niet** omdat dit negatieve effecten heeft voor Platform.
 
-1. Als de **[!UICONTROL XDM-gegevens]**, selecteert u de `xdm.content` gegevenselement dat in de vorige les is gemaakt
-1. Selecteren **[!UICONTROL Wijzigingen behouden]** om op het belangrijkste regelscherm terug te keren
+1. Als de **[!UICONTROL XDM data]**, selecteert u de `xdm.content` gegevenselement dat in de vorige les is gemaakt
+1. Selecteren **[!UICONTROL Keep Changes]** om op het belangrijkste regelscherm terug te keren
 
    ![De handeling Verzendgebeurtenis toevoegen](assets/rule-set-action-xdm.png)
-1. Selecteren **[!UICONTROL Opslaan]** om de regel op te slaan
+1. Selecteren **[!UICONTROL Save]** om de regel op te slaan
 
    ![De regel opslaan](assets/rule-save.png)
 
@@ -113,18 +118,18 @@ Vervolgens publiceert u de regel naar uw ontwikkelomgeving, zodat we kunnen cont
 Een bibliotheek maken:
 
 1. Ga naar **[!UICONTROL Publishing Flow]** in de linkernavigatie
-1. Selecteren **[!UICONTROL Bibliotheek toevoegen]**
+1. Selecteren **[!UICONTROL Add Library]**
 
    ![Bibliotheek toevoegen selecteren](assets/rule-publish-library.png)
-1. Voor de **[!UICONTROL Naam]**, enter `Luma Web SDK Tutorial`
-1. Voor de **[!UICONTROL Omgeving]**, selecteert u `Development`
-1. Selecteren  **[!UICONTROL Alle gewijzigde bronnen toevoegen]**
+1. Voor de **[!UICONTROL Name]**, enter `Luma Web SDK Tutorial`
+1. Voor de **[!UICONTROL Environment]**, selecteert u `Development`
+1. Selecteren  **[!UICONTROL Add All Changed Resources]**
 
    >[!NOTE]
    >
    >    Naast de Adobe Experience Platform Web SDK-extensie en de `all pages - library load - AA & AT` regel, zult u de markeringscomponenten zien die in vorige lessen worden gecreeerd. De Core-extensie bevat de basis-JavaScript die is vereist voor alle eigenschappen van webtags.
 
-1. Selecteren **[!UICONTROL Opslaan en bouwen voor ontwikkeling]**
+1. Selecteren **[!UICONTROL Save & Build for Development]**
 
    ![De bibliotheek maken en bouwen](assets/rule-publish-add-all-changes.png)
 

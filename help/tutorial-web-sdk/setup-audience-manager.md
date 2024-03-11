@@ -3,14 +3,19 @@ title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
 
 # Audience Manager instellen met Platform Web SDK
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming.
 
@@ -37,16 +42,16 @@ Om deze les te voltooien, moet u eerst:
 De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van het Web SDK van het Platform gaat XDM gegevens over die naar het Netwerk van de Rand van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Selecteer in de linkernavigatie de optie **[!UICONTROL Gegevensstromen]**
+1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
 1. Selecteer de eerder gemaakte `Luma Web SDK` datastream
 
    ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
 
-1. Selecteren **[!UICONTROL Service toevoegen]**
+1. Selecteren **[!UICONTROL Add Service]**
    ![Een service toevoegen aan de gegevensstroom](assets/aam-datastream-addService.png)
 1. Selecteren **[!UICONTROL Adobe Audience Manager]** als de **[!UICONTROL Service]**
-1. Bevestig dat **[!UICONTROL Cookie-doelen ingeschakeld]** en **[!UICONTROL URL-doelen ingeschakeld]** zijn geselecteerd
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Bevestig dat **[!UICONTROL Cookie Destinations Enabled]** en **[!UICONTROL URL Destinations Enabled]** zijn geselecteerd
+1. Selecteren **[!UICONTROL Save]**
    ![Bevestig de gegevensstroominstellingen van de Audience Manager en sla de gegevens op](assets/aam-datastream-save.png)
 
 ## Een gegevensbron maken
@@ -54,19 +59,19 @@ De implementatie van de Audience Manager die het Web SDK van het Platform gebrui
 Maak vervolgens een [Gegevensbron](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en), een fundamenteel instrument voor het ordenen van gegevens binnen de Audience Manager:
 
 1. Ga naar de [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
-1. Selecteren **[!UICONTROL Poortgegevens]** vanaf de bovenste navigatie
-1. Selecteer de **[!UICONTROL Gegevensbronnen]** in het keuzemenu
-1. Selecteer de **[!UICONTROL Nieuwe toevoegen]** knoop van de bovenkant van de pagina van Gegevensbronnen
+1. Selecteren **[!UICONTROL Audience Data]** vanaf de bovenste navigatie
+1. Selecteer de **[!UICONTROL Data Sources]** in het keuzemenu
+1. Selecteer de **[!UICONTROL Add New]** knoop van de bovenkant van de pagina van Gegevensbronnen
 
    ![Gegevensbronnen Adobe Experience Platform Audience Manager](assets/data-sources-list.jpg)
 
 1. Geef de gegevensbron een vriendelijke naam en beschrijving. Voor de eerste setup kunt u deze`Platform Web SDK tutorial`.
-1. Set **[!UICONTROL Type id]** tot **[!UICONTROL Cookie]**
-1. In de **[!UICONTROL Besturingselementen voor gegevensexport]** sectie, selecteert u **[!UICONTROL Geen beperking]**
+1. Set **[!UICONTROL ID Type]** tot **[!UICONTROL Cookie]**
+1. In de **[!UICONTROL Data Export Controls]** sectie, selecteert u **[!UICONTROL No Restriction]**
 
    ![Adobe Experience Platform Audience Manager Data Source Setup](assets/data-source-details.png)
 
-1. **[!UICONTROL Opslaan]** de gegevensbron
+1. **[!UICONTROL Save]** de gegevensbron
 
 
 ## Een kenmerk maken
@@ -77,34 +82,34 @@ Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experiencele
 >
 >Alle gegevens XDM worden verzonden naar Audience Manager als het in de gegevensstroom wordt toegelaten, nochtans zouden de gegevens 24u kunnen vergen tot het in het Ongebruikte rapport van Signalen beschikbaar is. Maak expliciete kenmerken voor de XDM-gegevens die u direct in de Audience Manager wilt gebruiken, zoals in deze oefening wordt beschreven.
 
-1. Selecteren **[!UICONTROL Poortgegevens]** >  **[!UICONTROL Treinen]**
-1. Selecteren **[!UICONTROL Nieuwe toevoegen]** >  **[!UICONTROL Op regels gebaseerd]** eigenschap
+1. Selecteren **[!UICONTROL Audience Data]** >  **[!UICONTROL Traits]**
+1. Selecteren **[!UICONTROL Add New]** >  **[!UICONTROL Rule-Based]** eigenschap
 
    ![Op regel gebaseerde reis van Adobe Experience Platform Audience Manager](assets/rule-based-trait.jpg)
 
 1. Geef uw kenmerk een vriendelijke naam en beschrijving, `Luma homepage view`
-1. Selecteer de **[!UICONTROL Gegevensbron]** die u in de vorige sectie hebt gemaakt.
-1. **[!UICONTROL Selecteer een map]** waarin u de eigenschap wilt opslaan in het deelvenster aan de rechterkant. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
-1. Breid uit **[!UICONTROL Trainingsexpressie]** inlasteken en selecteren **[!UICONTROL Expressiebouwer]** U moet een sleutelwaardepaar verstrekken dat een homepagebezoek betekent.
+1. Selecteer de **[!UICONTROL Data Source]** die u in de vorige sectie hebt gemaakt.
+1. **[!UICONTROL Select a Folder]** waarin u de eigenschap wilt opslaan in het deelvenster aan de rechterkant. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
+1. Breid uit **[!UICONTROL Trait Expression]** inlasteken en selecteren **[!UICONTROL Expression Builder]** U moet een sleutelwaardepaar verstrekken dat een homepagebezoek betekent.
 1. Open de [Luminantiepage](https://luma.enablementadobe.com/content/luma/us/en.html) (toegewezen aan uw eigenschap tag) en de **Platform Web SDK Debugger** en vernieuw de pagina.
 1. Bekijk de Verzoeken van het Netwerk en de gebeurtenisdetails voor het Web SDK van het Platform om de sleutel en naamwaarde voor de homepage te vinden.
    ![Adobe Experience Platform Audience Manager XDM-gegevens](assets/xdm-keyvalue.jpg)
 1. Ga terug naar de Bouwer van de Uitdrukking in de UI van de Audience Manager en ga sleutel in als **`web.webPageDetails.name`** en de waarde van **`content:luma:us:en`**. Deze stap zorgt ervoor dat u een eigenschap brandt wanneer u de homepage laadt.
-1. **[!UICONTROL Opslaan]** de eigenschap.
+1. **[!UICONTROL Save]** de eigenschap.
 
 
 ## Een segment maken
 
 De volgende stap is het creëren van een **segment** en wijs uw nieuw gedefinieerde kenmerk toe aan dit segment.
 
-1. Selecteren **[!UICONTROL Poortgegevens]** in de bovenste navigatie en selecteer **[!UICONTROL Segmenten]**
-1. Selecteren **[!UICONTROL Nieuwe toevoegen]** linksboven op de pagina om de segmentbuilder te openen
+1. Selecteren **[!UICONTROL Audience Data]** in de bovenste navigatie en selecteer **[!UICONTROL Segments]**
+1. Selecteren **[!UICONTROL Add New]** linksboven op de pagina om de segmentbuilder te openen
 1. Geef uw segment een vriendelijke naam en beschrijving, zoals `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Selecteer een map]** waar uw segment in de ruit aan het recht zal worden bewaard. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
-1. Voeg een integratiecode toe, die in dit geval een willekeurige reeks getallen is. 1. In de **[!UICONTROL Gegevensbron]** sectie, selecteert u **[!UICONTROL Audience Manager]** en de eerder gemaakte gegevensbron
-1. Breid uit **[!UICONTROL Treinen]** sectie en zoek naar het kenmerk dat u hebt gemaakt
-1. Selecteren **[!UICONTROL Tracering toevoegen]**.
-1. Selecteren **[!UICONTROL Opslaan]** onder aan de pagina
+1. **[!UICONTROL Select a Folder]** waar uw segment in de ruit aan het recht zal worden bewaard. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
+1. Voeg een integratiecode toe, die in dit geval een willekeurige reeks getallen is. 1. In de **[!UICONTROL Data Source]** sectie, selecteert u **[!UICONTROL Audience Manager]** en de eerder gemaakte gegevensbron
+1. Breid uit **[!UICONTROL Traits]** sectie en zoek naar het kenmerk dat u hebt gemaakt
+1. Selecteer **[!UICONTROL Add Trait]**.
+1. Selecteren **[!UICONTROL Save]** onder aan de pagina
 
    ![Adobe Experience Platform Audience Manager Trait toevoegen](assets/add-trait-segment.jpg)
 
@@ -114,21 +119,21 @@ De volgende stap is het creëren van een **segment** en wijs uw nieuw gedefiniee
 
 Maak vervolgens een **Op cookie gebaseerd doel** met de **Bestemmingsbouwer**. De Bouwer van de Bestemming laat u koekje, URL, en server-aan-server bestemmingen tot stand brengen en beheren.
 
-1. Open de Bouwer van de Bestemming door te selecteren **[!UICONTROL Doelen]** binnen de **Poortgegevens** menu in de bovenste navigatie
-1. Selecteren **[!UICONTROL Doel maken]**
+1. Open de Bouwer van de Bestemming door te selecteren **[!UICONTROL Destinations]** binnen de **Poortgegevens** menu in de bovenste navigatie
+1. Selecteren **[!UICONTROL Create Destination]**
 1. Voer een naam en beschrijving in. `Platform Web SDK tutorial`
-1. Als de **[!UICONTROL Categorie]**, selecteert u **[!UICONTROL Aangepast]**
+1. Als de **[!UICONTROL Category]**, selecteert u **[!UICONTROL Custom]**
 1. Als de **[!UICONTROL Type]**, selecteert u **[!UICONTROL Cookie]**
 
    ![Adobe Experience Platform Audience Manager Trait toevoegen](assets/destination-settings.jpg)
 
-1. Open de **[!UICONTROL Configuratie]** sectie om de details over uw koekjesbestemming in te gaan
+1. Open de **[!UICONTROL Configuration]** sectie om de details over uw koekjesbestemming in te gaan
 1. Geef uw koekje een vriendschappelijke naam, `platform_web_sdk_tutorial`
-1. Als de **[!UICONTROL Cookie-domein]**, voegt u het domein van de site toe waar u de integratie wilt uitvoeren, voor de zelfstudie-invoer in het domein Luma. `luma.enablementadobe.com`
-1. Als de **[!UICONTROL Gegevens publiceren naar]** selecteert u **[!UICONTROL Alleen de geselecteerde domeinen]**
+1. Als de **[!UICONTROL Cookie Domain]**, voegt u het domein van de site toe waar u de integratie wilt uitvoeren, voor de zelfstudie-invoer in het domein Luma. `luma.enablementadobe.com`
+1. Als de **[!UICONTROL Publish data to]** selecteert u **[!UICONTROL Only the Selected domains]**
 1. Selecteer uw domein als dit nog niet is toegevoegd
-1. Als de **[!UICONTROL Gegevensindeling]**, selecteert u **[!UICONTROL Enkele toets]** en geef je koekje een sleutel. Voor deze zelfstudie `segment` als de sleutelwaarde.
-1. Tot slot selecteert u **[!UICONTROL Opslaan]** om de details van de bestemmingsconfiguratie te bewaren.
+1. Als de **[!UICONTROL Data Format]**, selecteert u **[!UICONTROL Single Key]** en geef je koekje een sleutel. Voor deze zelfstudie `segment` als de sleutelwaarde.
+1. Tot slot selecteert u **[!UICONTROL Save]** om de details van de bestemmingsconfiguratie te bewaren.
 
    ![sectie Configuratie Audience Manager bestemming](assets/aam-destination-config-dw.png)
 
@@ -139,14 +144,14 @@ Maak vervolgens een **Op cookie gebaseerd doel** met de **Bestemmingsbouwer**. D
    ![Adobe Experience Platform Audience Manager Add Trait](assets/cookie-destination-config.jpg)
 -->
 
-1. In de **[!UICONTROL Segmenttoewijzingen]** de sectie gebruiken **[!UICONTROL Segmenten zoeken en toevoegen]** functie om te zoeken naar uw eerder gemaakte `Platform Web SDK - Homepage visitors` en selecteert u **[!UICONTROL Toevoegen]**.
+1. In de **[!UICONTROL Segment Mappings]** de sectie gebruiken **[!UICONTROL Search and Add Segments]** functie om te zoeken naar uw eerder gemaakte `Platform Web SDK - Homepage visitors` en selecteert u **[!UICONTROL Add]**.
 
 
 1. Nadat u het segment hebt toegevoegd, wordt een pop-upvenster geopend waarin u een verwachte waarde voor de cookie moet opgeven. Voer voor deze oefening de waarde &quot;hpbezoeker&quot; in.
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
-1. Selecteren **[!UICONTROL Gereed]**
+1. Selecteren **[!UICONTROL Done]**
    ![Adobe Experience Platform Audience Manager Trait toevoegen](assets/luma-cookie-segment-dw.png)
 
 De periode van de segmentafbeelding vereist een paar uren om worden geactiveerd. Zodra voltooid, kunt u de interface van de Audience Manager verfrissen en zien dat **Toegewezen segmenten** bijgewerkte lijst.

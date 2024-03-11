@@ -3,14 +3,19 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
 
 # Goedkeuring instellen met Platform Web SDK
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
 
@@ -66,9 +71,9 @@ Voordat u in de tagconfiguraties gaat, leert u meer over het platform voor het b
 
 Nu, zodra u met de configuraties van Klaro wordt gedaan, creeer een markeringsregel met de volgende configuraties:
 
-* [!UICONTROL Naam]: `all pages - library load - Klaro`
-* [!UICONTROL Gebeurtenis]: [!UICONTROL Bibliotheek geladen (pagina boven)] with [!UICONTROL Geavanceerde opties] > [!UICONTROL Volgorde] ingesteld op 1
-* [!UICONTROL Handeling]: [!UICONTROL Aangepaste code], [!UICONTROL Taal]: HTML om het CMP-script te laden.
+* [!UICONTROL Name]: `all pages - library load - Klaro`
+* [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] ingesteld op 1
+* [!UICONTROL Action]: [!UICONTROL Custom Code], [!UICONTROL Language]: HTML om het CMP-script te laden.
 
 ![CMP-regel injecteren](assets/consent-cmp-inject-rule-1.png)
 
@@ -104,7 +109,7 @@ Impliciete opt-in betekent dat het bedrijf de toestemming van de bezoeker (of de
 
 Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 
-1. In de **[!UICONTROL Privacy]** sectie van de de markeringsuitbreiding van SDK van het Experience Platform Web, zorg ervoor  **[!UICONTROL Standaardtoestemming]** is ingesteld op **[!UICONTROL In]** :
+1. In de **[!UICONTROL Privacy]** sectie van de de markeringsuitbreiding van SDK van het Experience Platform Web, zorg ervoor  **[!UICONTROL Default consent]** is ingesteld op **[!UICONTROL In]** :
 
 
    ![Config. extensie-privacy voor AEP](assets/consent-web-sdk-privacy-in.png)
@@ -126,7 +131,7 @@ Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 
 
 
-Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de toestemming wijzigen om **[!UICONTROL Uit]**. Wijzig de instelling voor toestemming door de volgende stappen uit te voeren:
+Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de toestemming wijzigen om **[!UICONTROL Out]**. Wijzig de instelling voor toestemming door de volgende stappen uit te voeren:
 
 <!--
 1. Create a data element to store the consent value of the visitor. Let's call it `klaro consent value`. Use the code snippet to create a custom code type data element:
@@ -150,19 +155,19 @@ Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de
 
 1. Een regel maken die wordt geactiveerd wanneer de bezoeker klikt **Ik weiger**.  Noem deze regel als: `all pages - click consent banner - set consent "out"`
 
-1. Als de **[!UICONTROL Gebeurtenis]**, gebruik **[!UICONTROL Klikken]** op **[!UICONTROL Elementen die overeenkomen met de CSS-kiezer]** `#klaro .cn-decline`
+1. Als de **[!UICONTROL Event]**, gebruik **[!UICONTROL Click]** op **[!UICONTROL Elements matching the CSS selector]** `#klaro .cn-decline`
 
    ![De gebruiker van de Voorwaarde van de regel klikt &quot;ik verwerp&quot;](assets/consent-optOut-clickEvent.png)
 
-1. Nu, gebruik SDK van het Web van het Experience Platform, [!UICONTROL Goedkeuring instellen] [!UICONTROL actietype] om de toestemming als &quot;out&quot; vast te stellen:
+1. Nu, gebruik SDK van het Web van het Experience Platform, [!UICONTROL Set consent] [!UICONTROL action type] om de toestemming als &quot;out&quot; vast te stellen:
 
    ![Handeling voor Weigeren van regel voor instemming](assets/consent-rule-optout-action.png)
 
-1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]**:
+1. Selecteren **[!UICONTROL Save to Library and Build]**:
 
    ![Uw bibliotheek opslaan en samenstellen](assets/consent-rule-optout-saveAndBuild.png)
 
-Nu, wanneer een bezoeker uit opteert, zou de regel die op de bovengenoemde manier wordt gevormd in brand steken en de toestemming van SDK van het Web als plaatst **[!UICONTROL Uit]**.
+Nu, wanneer een bezoeker uit opteert, zou de regel die op de bovengenoemde manier wordt gevormd in brand steken en de toestemming van SDK van het Web als plaatst **[!UICONTROL Out]**.
 
 Valideren door naar de Luma-demo-site te gaan, cookies negeren en bevestigen dat geen Web SDK-aanvraag wordt geactiveerd nadat u deze hebt uitgeschakeld.
 
@@ -175,7 +180,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 1. Schakel in Klaro de **Standaardstatus service** in uw `aep web sdk` en sla de bijgewerkte configuratie op.
 
-1. In **[!UICONTROL Privacy]** sectie van de uitbreiding van SDK van het Web van het Experience Platform, vastgestelde standaardtoestemming aan **[!UICONTROL Uit]** of **[!UICONTROL In behandeling]** zoals vereist.
+1. In **[!UICONTROL Privacy]** sectie van de uitbreiding van SDK van het Web van het Experience Platform, vastgestelde standaardtoestemming aan **[!UICONTROL Out]** of **[!UICONTROL Pending]** zoals vereist.
 
    ![Config. extensie-privacy voor AEP](assets/consent-implied-opt-out.png)
 
@@ -186,7 +191,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 1. Controleer in Foutopsporing of de Luministoepassing is toegewezen aan uw tageigenschap en of de logboekregistratie voor de tagconsole is ingeschakeld.
 1. Gebruik de ontwikkelaarsconsole van uw browser aan **Sitegegevens wissen** in **Toepassing** > **Opslag**
 
-1. Laad de Luminasite opnieuw en zorg dat `defaultConsent` is ingesteld op **[!UICONTROL Uit]** en er zijn geen Web SDK-verzoeken ingediend
+1. Laad de Luminasite opnieuw en zorg dat `defaultConsent` is ingesteld op **[!UICONTROL Out]** en er zijn geen Web SDK-verzoeken ingediend
 
    ![Ingevoerde toestemming om uit te schakelen](assets/consent-implied-out-cmp.png)
 
@@ -194,21 +199,21 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 1. Een regel maken die wordt geactiveerd wanneer de bezoeker klikt **Dat klopt**.  Noem deze regel als: `all pages - click consent banner - set consent "in"`
 
-1. Als de **[!UICONTROL Gebeurtenis]**, gebruik **[!UICONTROL Klikken]** op **[!UICONTROL Elementen die overeenkomen met de CSS-kiezer]** `#klaro .cm-btn-success`
+1. Als de **[!UICONTROL Event]**, gebruik **[!UICONTROL Click]** op **[!UICONTROL Elements matching the CSS selector]** `#klaro .cm-btn-success`
 
    ![De gebruiker van de Voorwaarde van de regel klikt &quot;dat is ok&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Voeg een actie toe gebruikend het Web SDK van het Experience Platform [!UICONTROL Extensie], **[!UICONTROL Type handeling]** van **[!UICONTROL Goedkeuring instellen]**, **[!UICONTROL Algemene instemming]** als **[!UICONTROL In]**.
+1. Voeg een actie toe gebruikend het Web SDK van het Experience Platform [!UICONTROL Extension], **[!UICONTROL Action Type]** van **[!UICONTROL Set consent]**, **[!UICONTROL General consent]** als **[!UICONTROL In]**.
 
    ![Handeling voor inschakelen regel](assets/consent-rule-optin-action.png)
 
-   Eén ding is dat dit [!UICONTROL Goedkeuring instellen] actie zal het eerste verzoek zijn dat uitgaat en de identiteit vaststelt . Daarom kan het belangrijk zijn om identiteiten op het eerste verzoek zelf te synchroniseren. Het identiteitsoverzicht kan worden toegevoegd aan [!UICONTROL Goedkeuring instellen] door een gegevenselement voor het type identiteit door te geven.
+   Eén ding is dat dit [!UICONTROL Set consent] actie zal het eerste verzoek zijn dat uitgaat en de identiteit vaststelt . Daarom kan het belangrijk zijn om identiteiten op het eerste verzoek zelf te synchroniseren. Het identiteitsoverzicht kan worden toegevoegd aan [!UICONTROL Set consent] door een gegevenselement voor het type identiteit door te geven.
 
-1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]**:
+1. Selecteren **[!UICONTROL Save to Library and Build]**:
 
    ![Weigeren van instemming](assets/consent-rule-optin-saveAndBuild.png)
 
-1. **[!UICONTROL Opslaan]** de regel aan uw bibliotheek en herbouwt het.
+1. **[!UICONTROL Save]** de regel aan uw bibliotheek en herbouwt het.
 
 Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten beginnen wanneer een bezoeker opteert-binnen.
 
@@ -218,7 +223,7 @@ Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten begi
 Voor meer informatie over toestemming in Web SDK, zie [Voorkeuren voor toestemming van klanten ondersteunen](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
 
 
-Voor meer informatie over de [!UICONTROL Goedkeuring instellen] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
 
 [Volgende: ](setup-event-forwarding.md)
 

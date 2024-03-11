@@ -3,14 +3,19 @@ title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
 # Een gegevensstroom configureren
+
+
+>[!CAUTION]
+>
+>We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen.
 
@@ -45,11 +50,11 @@ Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van he
    >
    >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, raden wij u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
-1. Ga naar **[!UICONTROL Gegevensstromen]** in de linkernavigatie
-1. Selecteren **[!UICONTROL Nieuwe DataStream]** aan de rechterkant van het scherm.
-1. Enter `Luma Web SDK` als de **[!UICONTROL Naam]**. Deze naam wordt van verwijzingen voorzien later wanneer u de uitbreiding van SDK van het Web in uw markeringsbezit vormt.
-1. Selecteer uw `Luma Web Event Data` als de **[!UICONTROL Gebeurtenisschema]**
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Ga naar **[!UICONTROL Datastreams]** in de linkernavigatie
+1. Selecteren **[!UICONTROL New Datastream]** aan de rechterkant van het scherm.
+1. Enter `Luma Web SDK` als de **[!UICONTROL Name]**. Deze naam wordt van verwijzingen voorzien later wanneer u de uitbreiding van SDK van het Web in uw markeringsbezit vormt.
+1. Selecteer uw `Luma Web Event Data` als de **[!UICONTROL Event Schema]**
+1. Selecteren **[!UICONTROL Save]**
 
    ![De gegevensstroom maken](assets/datastream-create-datastream.png)
 
