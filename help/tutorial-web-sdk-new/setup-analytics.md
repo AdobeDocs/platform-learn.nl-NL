@@ -2,9 +2,9 @@
 title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2930'
+source-wordcount: '2876'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,12 @@ Meer informatie over het instellen van Adobe Analytics met [Experience Platform 
 
 Aan het eind van deze les, zult u kunnen:
 
-* Een XDM-schema voor Adobe Analytics configureren
-* Begrijp het verschil tussen automatisch in kaart gebrachte en manueel in kaart gebrachte XDM variabelen voor Analytics
 * Een gegevensstroom configureren om Adobe Analytics in te schakelen
-* Een gegevensstroom negeren om gegevens naar een andere Adobe Analytics-rapportsuite te verzenden
-* Afzonderlijke of volledige arraygegevenselementen toewijzen aan het XDM-object
-* Gebruik de veranderlijke regelactietype van de Update om veelvoudige regels in één gebeurtenis te stapelen XDM
-* Paginaweergaven vastleggen in Adobe Analytics met het XDM-object
-* Leg e-commercegegevens vast met het XDM-object voor de Adobe Analytics-productreeks
+* Begrijp het verschil tussen automatisch in kaart gebrachte en manueel in kaart gebrachte XDM variabelen voor Analytics
+* Een XDM-schema voor Adobe Analytics-specifieke variabelen configureren
 * Een eVar voor productsyntaxisverwerking instellen met XDM
-* Validatie van Adobe Analytics-variabelen wordt ingesteld met het XDM-object met behulp van Foutopsporing in Experience Platform
+* Een gegevensstroom negeren om gegevens naar een andere Adobe Analytics-rapportsuite te verzenden
+* Adobe Analytics-variabelen valideren met Foutopsporing Experience Platform
 * Adobe Analytics-verwerkingsregels gebruiken om aangepaste variabelen in te stellen
 * Gegevens valideren wordt vastgelegd door Adobe Analytics met Adobe Experience Platform Assurance
 * Valideren van gegevens wordt vastgelegd door Adobe Analytics met Real-Time rapporten

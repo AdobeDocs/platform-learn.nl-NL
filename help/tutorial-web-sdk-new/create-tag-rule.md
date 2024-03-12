@@ -2,9 +2,9 @@
 title: Tagregels maken
 description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,9 @@ Leer hoe u gebeurtenissen naar het Platform Edge Network kunt verzenden met uw X
 Aan het einde van deze les kunt u het volgende doen:
 
 * Een naamgevingsconventie gebruiken voor het beheer van regels binnen tags
-* Verzend een XDM-gebeurtenis met de actietypen Variabele bijwerken en Gebeurtenis verzenden in een tagregel
+* Een gebeurtenis verzenden met XDM-velden met de acties Variabele bijwerken en Gebeurtenis verzenden
+* Meerdere sets XDM-velden stapelen over meerdere regels
+* Afzonderlijke of volledige arraygegevenselementen toewijzen aan het XDM-object
 * Een labelregel publiceren naar een ontwikkelingsbibliotheek
 
 
