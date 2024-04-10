@@ -3,10 +3,10 @@ title: Experience Makers Bootkamp
 description: Beginpunt voor deelnemers aan het Bootkamp van de Ervaar
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
+source-git-commit: 7ee17ab7d847b82dc56c91f552d79b24649a8c6a
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -14,34 +14,71 @@ ht-degree: 1%
 
 ## Overzicht
 
-Vele organisaties zijn zich niet bewust van de wrijving die in hun klanten&#39; reis bestaat, die het gevolg van een geïsoleerde en gefragmenteerde benadering in het ordenen van klantenmededeling is. Gegevens, profielen en inhoud moeten perfect worden afgestemd op het ontwerp en leveren van buitengewone ervaringen van klanten.
+Vele organisaties zijn zich niet bewust van de wrijving die in hun klantenreis bestaat, die het gevolg van een gesiloed en gefragmenteerde benadering in het ordenen van klantenmededeling is. Gegevens, profielen en inhoud moeten perfect worden afgestemd op het ontwerp en leveren van buitengewone ervaringen van klanten.
 
 Sluit u aan bij dit bootkamp om te leren hoe een platformgebaseerde benadering u kan helpen de inzichten te krijgen die nodig zijn om wrijvingspunten te identificeren en te verwijderen om de reis van uw klant te verbeteren.
 
-Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en een real-time weergave van uw klant is hiervoor van essentieel belang. Inzichten leiden tot actie, wat leidt tot meer inzichten. De unieke platform-centric benadering van Adobe geeft u de hulpmiddelen om niet alleen technologische verandering te drijven, maar ook uw organisatie, uw team, en uw capaciteit te beïnvloeden om een holistische klantenervaring in plaats van een kanaal-specifieke klantenervaring te leveren.
-
->[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
+Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en een real-time weergave van uw klant is hiervoor van essentieel belang. Inzichten leiden tot actie, wat leidt tot meer inzichten. De unieke platform-centric benadering van de Adobe geeft u de hulpmiddelen om niet alleen technologische verandering te drijven, maar ook uw organisatie, uw team, en uw capaciteit te beïnvloeden om een holistische klantenervaring in plaats van een kanaal-specifieke klantenervaring te leveren.
 
 ## Agenda
 
 ### Dag 1
 
 
-10:00: Kickoff 10:30: Klantenreis demo: een illustratie van de mogelijke 11:00: 1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV (whiteboard) 11:45: Onderbreking 12:00: Uitsplitsing naar architectuur van oplossing (whiteboard) 13:00: Lunch 14:00: Gebruikerstroming 1 Registratie &amp; Onboarding - walkthrough (waarom-wat-hoe) 15:30: Onderbreking 16:00: Gebruikerstroming 2 Overvloeien fysiek en digitaal - doorloop en praktische overgangen / diepe duik 18:00: Onderbreking 18:30: Wandelen naar het restaurant 19:00: Diner
+9:30: Lopen
+
+10:00: Kickoff/Intro &amp; Bootkamp Uitdaging
+
+11:00: 1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV (whiteboard)
+
+12:00: Break
+
+12:15: Probleem met architectuur van oplossing (whiteboard)
+
+13:00: Lunch
+
+14:00: Gebruikersstroom 1 - Doorloop &quot;Acquisition&quot; en Hands-On diep duiken
+
+15:30: Break
+
+16:00: Gebruikerscentrale 2 registratie en onboarding
+
+17:30: Golfkliniek &amp; Borrel
+
+19:30: Diner
 
 ### Dag 2
 
-08:00: Ontbijt 08:30: Inleiding aan op reis gebaseerde Levering van de gebruiker, de Structuur van het Team, achterstand van de Levering 09.45: Gebruikerstroom 3 Overvloeien fysiek en digitaal - Doorloop met praktische oefening 11.15: Onderbreking 11.30: Samenvattingsstromen - (waar en wanneer) 12:00: Groep Presentations 12.30: Lunch 13.30: Gebruiksstroom 4: Klantenanalyse - diepgaande 14.30: Conclusie, afronding en volgende stappen 15.00: Drink en onderbreek
+08:30: Ontbijtsessie: Inleiding tot op reis gebaseerde levering van gebruiker, teamstructuur, leveringsachterstand
+
+09.45: Inzicht in AEP-gegevensstromen door praktische scenario&#39;s
+
+10.15: &#39;Intelligente privacy: Inzichten in gegevensbeheer met AEP&#39;
+
+10.45: Break
+
+12:00: Gebruikersstroom 3 &quot; Overvloeiing fysiek en digitaal&quot;
+
+12.30: Lunch
+
+13.30: Customer Journey Analytics - diepgaand
+
+14.15: Verkennen van de nieuwste aanroepen rond GenAI voor AEP en verder
+
+14.45: Conversie en afronding
+
+15.00 uur: drinken en onderbreken
+
 
 ## Vereisten
 
 - Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de website van het bootkamp op [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Toegang tot de bootkampwebsite op [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->Deze zelfstudie is gemaakt om een bepaalde indeling voor de workshop te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer bent aan een van de workshops en uw toegangsgegevens nodig hebt, neemt u contact op met uw Adobe-vertegenwoordiger die u de vereiste informatie zal verstrekken.
+>Deze zelfstudie is gemaakt om een bepaalde indeling voor de workshop te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer bent aan een van de workshops en uw toegangsgegevens nodig hebt, neemt u contact op met uw Adobe die u de vereiste informatie zal verstrekken.
 
 ## Architectuur
 
@@ -65,7 +102,7 @@ U vindt aanvullende interessante video&#39;s [op ons YouTube-kanaal](https://www
 
 ## Gebruikersstromen
 
-[1. Acquisitie](./uc/uc1/uc1.md)
+[1. Verwerving](./uc/uc1/uc1.md)
 
 In deze gebruikersstroom, zult u alle elementen begrijpen u verwerving-geconcentreerde gebruiksgevallen voor onbekende, niet voor authentiek verklaarde gebruikers naast bekende, voor authentiek verklaarde gebruiker moet uitvoeren door Real-Time CDP te gebruiken.
 
@@ -79,4 +116,4 @@ In deze gebruikersstroom, zult u de klantenervaring over online en off-line kana
 
 [4. Reisanalyse klant](./uc/uc4/uc4.md)
 
-In deze gebruikersstroom, zult u met Customer Journey Analytics vertrouwd worden en u zult inzicht in krijgen in hoe klanten zich van één kanaal aan andere, van online aan off-line aan callcenter en meer ontwikkelen.
+In deze gebruikersstroom, zult u vertrouwd met Customer Journey Analytics worden en u zult inzicht in krijgen in hoe klanten zich van één kanaal aan andere, van online aan off-line aan callcenter en meer ontwikkelen.

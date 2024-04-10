@@ -1,35 +1,35 @@
 ---
-title: Bootkamp - Real-time CDP - Bouw een segment en neem actie - verzend uw segment naar Adobe Target
-description: Bootkamp - Real-time CDP - Bouw een segment en neem actie - verzend uw segment naar Adobe Target
+title: Bootkamp - Real-time CDP - Bouw een publiek en neem actie - verzend uw publiek naar Adobe Target
+description: Bootkamp - Real-time CDP - Bouw een publiek en neem actie - verzend uw publiek naar Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 1%
+source-wordcount: '863'
+ht-degree: 0%
 
 ---
 
-# 1.4 Actie ondernemen: Uw segment verzenden naar Adobe Target
+# 1.4 Actie nemen: stuur je publiek naar Adobe Target
 
 Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensopname](./images/home.png)
+![Gegevensinname](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Productieproduct]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
 
-![Gegevensopname](./images/sb1.png)
+![Gegevensinname](./images/sb1.png)
 
-## 1.4.1 Activeer uw segment naar uw Adobe Target-bestemming
+## 1.4.1 Activeer je publiek naar de Adobe Target-bestemming
 
 Adobe Target is beschikbaar als een bestemming vanuit Real-Time CDP. Ga naar **Doelen**, naar **Catalogus**.
 
-Klikken **Personalisatie** in de **Categorieën** -menu. Dan zie je de **Adobe Target** doelkaart. Klikken **Segmenten activeren**.
+Klikken **Personalisatie** in de **Categorieën** -menu. Dan zie je de **Adobe Target** doelkaart. Klikken **Soorten publiek activeren**.
 
 ![AT](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Het doel selecteren ``Bootcamp Target`` en klik op **Volgende**.
 
 ![AT](./images/atdest3.png)
 
-Selecteer in de lijst met beschikbare segmenten het segment waarin u hebt gemaakt [1.3 Een segment maken](./ex3.md), die `yourLastName - Interest in Real-Time CDP`. Klik vervolgens op **Volgende**.
+Selecteer in de lijst met beschikbare doelgroepen het publiek dat u hebt gemaakt in [1.3 Een publiek maken](./ex3.md), die `yourLastName - Interest in Real-Time CDP`. Klik vervolgens op **Volgende**.
 
 ![AT](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Klikken **Voltooien**.
 
 ![AT](./images/atdest10.png)
 
-Uw segment wordt nu geactiveerd naar Adobe Target.
+Uw publiek wordt nu geactiveerd voor Adobe Target.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Als je net je Adobe Target-bestemming hebt gemaakt in Real-Time CDP, kan het tot een uur duren voordat de bestemming live is. Dit is eenmalig wachttijd, wegens de opstelling van de backendconfiguratie. Zodra de aanvankelijke 1 uur wachttijd en achtergrondconfiguratie wordt gedaan, zullen de onlangs toegevoegde randsegmenten die naar de bestemming van Adobe Target worden verzonden voor het richten in real time beschikbaar zijn.
+>Als je net je Adobe Target-bestemming hebt gemaakt in Real-Time CDP, kan het tot een uur duren voordat de bestemming live is. Dit is eenmalig wachttijd, wegens de opstelling van de backendconfiguratie. Zodra de aanvankelijke 1 uur wachttijd en de backendconfiguratie wordt gedaan, zal het onlangs toegevoegde randpubliek dat naar de bestemming van Adobe Target wordt verzonden voor richten in real time beschikbaar zijn.
 
 ## 1.4.2 Configureer uw Adobe Target-formuliergebaseerde activiteit
 
-Nu uw Real-Time CDP-segment is geconfigureerd voor verzending naar Adobe Target, kunt u uw Experience Targeting-activiteit configureren in Adobe Target. In deze oefening zult u een Visuele op Composer-Gebaseerde activiteit van de Ervaring vormen.
+Nu uw Real-Time CDP-publiek is geconfigureerd om naar Adobe Target te worden verzonden, kunt u uw Experience Targeting-activiteit in Adobe Target configureren. In deze oefening zult u een Visuele op Composer-Gebaseerde activiteit van de Ervaring vormen.
 
 Ga naar de Adobe Experience Cloud-homepage door naar [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klikken **Doel** om het te openen.
 
@@ -78,11 +78,11 @@ Selecteren **Zichtbaar** en stelt de **URL van activiteit** tot `https://bootcam
 
 >[!IMPORTANT]
 >
->Elke deelnemer aan het activering moet een aparte webpagina gebruiken om botsing met verschillende Adobe Target-ervaringen te voorkomen. U kunt hier een webpagina kiezen en de URL vinden: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Elke deelnemer aan het activering moet een aparte webpagina gebruiken om botsing met verschillende Adobe Target-ervaringen te voorkomen. U kunt een webpagina kiezen en de URL vinden door hier te gaan: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Pagina&#39;s delen allemaal dezelfde basis-URL en eindigen op het nummer van de deelnemer.
 >
->Als voorbeeld zou deelnemer 1 URL moeten gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, deelnemer 30 moet URL gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Als voorbeeld zou deelnemer 1 URL moeten gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, deelnemer 30 de URL moet gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 De werkruimte selecteren **AT Bootkamp**.
 
@@ -90,7 +90,7 @@ Klik op **Next**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-U bevindt zich nu in de composer voor visuele ervaring. Het kan 20-30 seconden duren totdat de website volledig is geladen.
+U bent nu in de Composer van de Visuele Ervaring. Het kan 20-30 seconden duren totdat de website volledig is geladen.
 
 ![RTCDP](./images/atform1.png)
 
@@ -98,11 +98,11 @@ Het standaardpubliek is momenteel **Alle bezoekers**. Klik op de knop **3 punten
 
 ![RTCDP](./images/atform3.png)
 
-U ziet nu de lijst met beschikbare soorten publiek. Het Adobe Experience Platform-segment dat u eerder hebt gemaakt en naar Adobe Target hebt verzonden, maakt nu deel uit van deze lijst. Selecteer het segment dat u eerder in Adobe Experience Platform hebt gemaakt. Klikken **Publiek toewijzen**.
+U ziet nu de lijst met beschikbare soorten publiek. Het Adobe Experience Platform-publiek dat u eerder hebt gemaakt en naar Adobe Target hebt verzonden, maakt nu deel uit van deze lijst. Selecteer het publiek dat u eerder in Adobe Experience Platform hebt gemaakt. Klikken **Publiek toewijzen**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Uw Adobe Experience Platform-segment maakt nu deel uit van deze Experience Targeting Activity.
+Uw Adobe Experience Platform-publiek maakt nu deel uit van deze Experience Targeting Activity.
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,19 +170,19 @@ Je krijgt dan een visuele bevestiging dat je activiteit nu actief is.
 
 Uw activiteiten zijn nu live en kunnen worden getest op de website van het bootkamp.
 
-Als u nu teruggaat naar uw demo-website en de productpagina bezoekt voor **Real-Time CDP** U komt dan meteen in aanmerking voor het segment dat u hebt gemaakt en u ziet dat de Adobe Target-activiteit in real-time wordt weergegeven op de homepage.
+Als u nu teruggaat naar uw demo-website en de productpagina bezoekt voor **Real-Time CDP** U komt dan meteen in aanmerking voor het publiek dat u hebt gemaakt en u ziet dat de Adobe Target-activiteit in real-time wordt weergegeven op de homepage.
 
 >[!IMPORTANT]
 >
->Elke deelnemer aan het activering moet een aparte webpagina gebruiken om botsing met verschillende Adobe Target-ervaringen te voorkomen. U kunt hier een webpagina kiezen en de URL vinden: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Elke deelnemer aan het activering moet een aparte webpagina gebruiken om botsing met verschillende Adobe Target-ervaringen te voorkomen. U kunt een webpagina kiezen en de URL vinden door hier te gaan: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Pagina&#39;s delen allemaal dezelfde basis-URL en eindigen op het nummer van de deelnemer.
 >
->Als voorbeeld zou deelnemer 1 URL moeten gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, deelnemer 30 moet URL gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Als voorbeeld zou deelnemer 1 URL moeten gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, deelnemer 30 de URL moet gebruiken `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-Volgende stap: [1.5 Actie nemen: Uw segment verzenden naar Facebook](./ex5.md)
+Volgende stap: [1.5 Actie nemen: stuur je publiek naar Facebook](./ex5.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 
