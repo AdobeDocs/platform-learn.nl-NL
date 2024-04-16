@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 7%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 7%
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
    + [Gegevenssets verwijderen](/help/platform/data-hygiene/delete-datasets.md)
+   + [Pseudoniem profiel en vervaldatum van gebeurtenis](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Gegevensinname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
