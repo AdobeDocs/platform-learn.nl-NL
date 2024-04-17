@@ -2,9 +2,10 @@
 title: Valideer de implementaties van SDK van het Web met de Verzekering van het Experience Platform
 description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience Platform Assurance kunt valideren. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform Assurance is een product van Adobe Experience Cloud da
 Aan het eind van deze les, zult u kunnen:
 
 * Een betrouwbaarheidssessie starten
-* Verzoeken weergeven die van en naar het Edge-netwerk van Platform worden verzonden
+* Verzoeken weergeven die van en naar de Edge Network Platform worden verzonden
 
 ## Vereisten
 
@@ -31,7 +32,7 @@ U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](http
 * [Web SDK-extensie geïnstalleerd in de eigenschap Tag](install-web-sdk.md)
 * [Gegevenselementen maken](create-data-elements.md)
 * [Identiteiten maken](create-identities.md)
-* [Tagregels maken](create-tag-rule.md)
+* [Een labelregel maken](create-tag-rule.md)
 * [Valideren met foutopsporing](validate-with-debugger.md)
 
 
@@ -70,7 +71,7 @@ In de les Foutopsporing bekijken hoe we dit deden:
 
 ## Valideer de huidige staat van uw implementatie van SDK van het Web
 
-Er is beperkte informatie om in deze fase van uw implementatie te bekijken. Één waarde wij kunnen zien is uw Experience Cloud identiteitskaart (ECID) die op het Netwerk van de Rand van het Platform wordt geproduceerd:
+Er is beperkte informatie om in deze fase van uw implementatie te bekijken. Één waarde wij kunnen zien is uw Experience Cloud identiteitskaart (ECID) die op de Edge Network van het Platform wordt geproduceerd:
 
 1. Selecteer de rij met de gebeurtenis genoemd de Handgreep van de Reactie van de Adobe.
 1. Rechts wordt een menu weergegeven. Selecteer de `+` ondertekenen naast `[!UICONTROL ACPExtensionEvent]`
