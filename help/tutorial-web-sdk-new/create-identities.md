@@ -2,9 +2,10 @@
 title: Identiteiten maken
 description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identiteitskaart gebruikt om gebruikers-id's vast te leggen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -47,7 +48,7 @@ De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experien
 
 Meer informatie over hoe [ECIDs wordt gevolgd gebruikend het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies en Platform Edge Network. Door gebrek, worden de eerste-partijkoekjes geplaatst door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen cookies van de eerste fabrikant in te stellen en te beheren. Deze worden ook wel FPID&#39;s (First-Party Device ID&#39;s) genoemd.
+ECID&#39;s worden ingesteld met behulp van een combinatie van cookies van de eerste fabrikant en Platform Edge Network. Door gebrek, worden de eerste-partijkoekjes geplaatst cliënt-kant door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen server-side voor cookies van eerste bedrijven in te stellen. Deze worden ook wel FPID&#39;s (First-Party Device ID&#39;s) genoemd.
 
 >[!IMPORTANT]
 >
@@ -57,7 +58,7 @@ ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies
 
 FPID&#39;s zijn cookies van de eerste fabrikant _u kunt instellen met uw eigen webservers_ welke Adobe dan gebruikt om ECID tot stand te brengen, in plaats van het eerste partijkoekje te gebruiken dat door SDK van het Web wordt geplaatst. Hoewel de browserondersteuning kan variëren, zijn cookies van de eerste partij meestal duurzamer wanneer ze worden ingesteld door een server die gebruikmaakt van een DNS A-record (voor IPv4) of AAAA-record (voor IPv6), in tegenstelling tot wanneer ze worden ingesteld door een DNS CNAME- of JavaScript-code.
 
-Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar de Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, wat de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
+Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar de Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, die de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
 
 Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en)
 
@@ -69,29 +70,29 @@ Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om F
 
 Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe wanneer het gebruiken van het Web SDK van het Platform. Hierdoor is ECID de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
-U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Dit wordt gedaan door te gebruiken [!UICONTROL Identiteitskaart] type gegevenselement.
+U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Dit wordt gedaan door te gebruiken [!UICONTROL Identity Map] type gegevenselement.
 
-Als u de opdracht [!UICONTROL Identiteitskaart] gegevenselement:
+Als u de opdracht [!UICONTROL Identity Map] gegevenselement:
 
-1. Ga naar **[!UICONTROL Gegevenselementen]** en selecteert u **[!UICONTROL Gegevenselement toevoegen]**
+1. Ga naar **[!UICONTROL Data Elements]** en selecteert u **[!UICONTROL Add Data Element]**
 
-1. **[!UICONTROL Naam]** het gegevenselement `identityMap.loginID`
+1. **[!UICONTROL Name]** het gegevenselement `identityMap.loginID`
 
-1. Als de **[!UICONTROL Extensie]**, selecteert u `Adobe Experience Platform Web SDK`
+1. Als de **[!UICONTROL Extension]**, selecteert u `Adobe Experience Platform Web SDK`
 
-1. Als de **[!UICONTROL Type gegevenselement]**, selecteert u `Identity map`
+1. Als de **[!UICONTROL Data Element Type]**, selecteert u `Identity map`
 
-1. Hiermee wordt een schermgebied rechts in het venster **[!UICONTROL Interface voor gegevensverzameling]** voor u om de identiteit te vormen:
+1. Hiermee wordt een schermgebied rechts in het venster **[!UICONTROL Data Collection interface]** voor u om de identiteit te vormen:
 
    ![Interface voor gegevensverzameling](assets/identity-identityMap-setup.png)
 
-1. Als de  **[!UICONTROL Naamruimte]**, selecteert u de `lumaCrmId` naamruimte die u eerder hebt gemaakt in het dialoogvenster [Identiteiten configureren](configure-identities.md) les.
+1. Als de  **[!UICONTROL Namespace]**, selecteert u de `lumaCrmId` naamruimte die u eerder hebt gemaakt in het dialoogvenster [Identiteiten configureren](configure-identities.md) les.
 
    >[!NOTE]
    >
    >    Als u uw `lumaCrmId` naamruimte, controleert u of u deze ook hebt gemaakt in uw standaardproductiestandbox. Alleen naamruimten die zijn gemaakt in de standaardproductiefsandbox worden momenteel weergegeven in het vervolgkeuzemenu voor naamruimten.
 
-1. Na de **[!UICONTROL Naamruimte]** is geselecteerd, moet een id worden ingesteld. Selecteer de `user.profile.attributes.username` gegevenselement dat eerder in het dialoogvenster [Gegevenselementen maken](create-data-elements.md#create-data-elements-to-capture-the-data-layer) les, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
+1. Na de **[!UICONTROL Namespace]** is geselecteerd, moet een id worden ingesteld. Selecteer de `user.profile.attributes.username` gegevenselement dat eerder in het dialoogvenster [Gegevenselementen maken](create-data-elements.md#create-data-elements-to-capture-the-data-layer) les, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
 
    <!--  >[!TIP]
     >
@@ -100,18 +101,18 @@ Als u de opdracht [!UICONTROL Identiteitskaart] gegevenselement:
     >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
     -->
 
-1. Als de **[!UICONTROL Status voor authentiek]**, selecteert u **[!UICONTROL Geverifieerd]**
-1. Selecteren **[!UICONTROL Primair]**
+1. Als de **[!UICONTROL Authenticated state]**, selecteert u **[!UICONTROL Authenticated]**
+1. Selecteren **[!UICONTROL Primary]**
 
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
    ![Interface voor gegevensverzameling](assets/identity-id-namespace.png)
 
 >[!TIP]
 >
-> Adobe beveelt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primair] identiteit.
+> Adobe beveelt aan identiteiten te verzenden die een persoon vertegenwoordigen, zoals `Luma CRM Id`als de [!UICONTROL primary] identiteit.
 >
-> Als het identiteitsbewijs de personsidentificatie bevat (bijvoorbeeld `Luma CRM Id`), wordt de persoon-identificator de [!UICONTROL primair] identiteit. Anders, `ECID` wordt de [!UICONTROL primair] identiteit.
+> Als het identiteitsbewijs de personsidentificatie bevat (bijvoorbeeld `Luma CRM Id`), wordt de persoon-identificator de [!UICONTROL primary] identiteit. Anders, `ECID` wordt de [!UICONTROL primary] identiteit.
 
 
 
@@ -147,7 +148,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar het Netwerk van de Rand van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
+Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar de Edge Network van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
 
 [Volgende: ](create-tag-rule.md)
 

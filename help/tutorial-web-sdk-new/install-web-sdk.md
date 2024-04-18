@@ -2,9 +2,10 @@
 title: De tagextensie Adobe Experience Platform Web SDK installeren en configureren
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -37,11 +38,11 @@ Een nieuwe eigenschap voor tags maken voor de zelfstudie:
 
 1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
 1. Selecteren **[!UICONTROL Tags]** in de linkernavigatie
-1. Selecteer de **[!UICONTROL Nieuwe eigenschap]** knop
+1. Selecteer de **[!UICONTROL New Property]** knop
    ![Een nieuwe eigenschap toevoegen](assets/websdk-property-addNewProperty.png)
-1. Als de **[!UICONTROL Naam]**, enter `Web SDK Course` (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf dit leerprogramma nemen)
-1. Als de **[!UICONTROL Domeinen]**, enter `enablementadobe.com` (later toegelicht)
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Als de **[!UICONTROL Name]**, enter `Web SDK Course` (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf dit leerprogramma nemen)
+1. Als de **[!UICONTROL Domains]**, enter `enablementadobe.com` (later toegelicht)
+1. Selecteren **[!UICONTROL Save]**
    ![Eigendomsdetails](assets/websdk-property-propertyDetails.png)
 
 ## De Web SDK-extensie toevoegen
@@ -49,20 +50,20 @@ Een nieuwe eigenschap voor tags maken voor de zelfstudie:
 Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, kunt u de extensie Platform Web SDK installeren:
 
 1. De nieuwe eigenschap tag openen
-1. Ga naar **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**
+1. Ga naar **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**
 1. Zoeken naar `Adobe Experience Platform Web SDK`
-1. Selecteren **[!UICONTROL Installeren]**
+1. Selecteren **[!UICONTROL Install]**
 
-   ![Web SDK-extensie installeren](assets/extension-platform-web-sdk.jpg)
+   ![Web SDK-extensie installeren](assets/extension-platform-web-sdk.png)
 
 
 ## De SDK van het Web van het Platform van de verbinding aan uw gegevensstroom
 
 Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later bij. Het enige wat u nu moet doen is de uitbreiding met uw gegevensstroom verbinden:
 
-1. Onder **[!UICONTROL Gegevensstromen]**, selecteert u de **[!UICONTROL Kiezen uit lijst]** invoermethode
+1. Onder **[!UICONTROL Datastreams]**, selecteert u de **[!UICONTROL Choose from list]** invoermethode
 1. Selecteer de gegevensstroom u vroeger creeerde, `Luma Web SDK`
-1. Selecteren **[!UICONTROL Opslaan]**
+1. Selecteren **[!UICONTROL Save]**
 
    >[!NOTE]
    >
@@ -78,7 +79,7 @@ Nu u het Web SDK van het Platform hebt geïnstalleerd en het aan de datastream a
 
 >[!NOTE]
 >
->Terwijl u geen CNAME in [!UICONTROL Edge-domein] het plaatsen in deze les, adviseert de Adobe u een CNAME gebruikt wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
+>Terwijl u geen CNAME in [!UICONTROL Edge domain] het plaatsen in deze les, adviseert de Adobe u een CNAME gebruikt wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
 Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe Experience Platform Web SDK configureren](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)
 

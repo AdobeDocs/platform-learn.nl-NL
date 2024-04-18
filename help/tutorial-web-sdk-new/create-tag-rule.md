@@ -1,8 +1,9 @@
 ---
 title: Tagregels maken
-description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Tagregels maken
 
-Leer hoe u gebeurtenissen naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar het Netwerk van de Rand van het Platform met de juiste XDM gebieden te verzenden.
+Leer hoe u gebeurtenissen naar de Edge Network Platform kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gebieden te verzenden XDM.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ waar;
 In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les zullen worden gebruikt:
 
 * **[!UICONTROL Update variable]** koppelen gegevenselementen aan XDM-velden
-* **[!UICONTROL Send Event]** Hiermee wordt het XDM-object naar het Edge Network-Experience Platform verzonden
+* **[!UICONTROL Send Event]** verzendt het XDM-object naar de Edge Network Experience Platform
 
 In de rest van deze les:
 
@@ -105,7 +106,7 @@ U kunt als volgt tagregels maken voor de globale XDM-velden:
    > Hoe lager de volgordenummer, des te eerder de waarde wordt uitgevoerd. Daarom geven wij onze &quot;globale configuratie&quot;een laag orde aantal.
 
 1. Selecteren **[!UICONTROL Keep Changes]** om op het belangrijkste regelscherm terug te keren
-   ![Trigger voor geladen bibliotheek selecteren](assets/create-tag-rule-trigger-bottom.png)
+   ![Trigger voor geladen bibliotheek selecteren](assets/create-tag-rule-trigger-loaded.png)
 
 1. In de **[!UICONTROL Actions]** sectie, selecteert u **[!UICONTROL Add]**
 
@@ -352,7 +353,7 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 1. Selecteren **[!UICONTROL Advanced]** vervolgkeuzelijst en Enter `50` in **[!UICONTROL Order]**. Dit zorgt ervoor dat de tweede regel wordt geactiveerd na de eerste regel die u hebt ingesteld om te activeren als `1`.
 
 1. Selecteren **[!UICONTROL Keep Changes]** om op het belangrijkste regelscherm terug te keren
-   ![Trigger voor geladen bibliotheek selecteren](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Trigger voor geladen bibliotheek selecteren](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. In de **[!UICONTROL Actions]** sectie, selecteert u **[!UICONTROL Add]**
 

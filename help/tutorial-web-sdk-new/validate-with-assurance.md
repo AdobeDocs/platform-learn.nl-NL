@@ -3,9 +3,9 @@ title: Valideer de implementaties van SDK van het Web met de Verzekering van het
 description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience Platform Assurance kunt valideren. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -61,13 +61,16 @@ In de les Foutopsporing bekijken hoe we dit deden:
 1. Open de [Interface voor gegevensverzameling](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Selecteer Betrouwbaarheid in de linkernavigatie
 1. Sessie maken selecteren
+   ![Een betrouwbaarheidssessie maken](assets/assurance-create-session.png)
 1. Begin selecteren
 1. Geef de sessie bijvoorbeeld een naam. `Luma Web SDK validation`
 1. Als de **[!UICONTROL Base URL]** enter `https://luma.enablementadobe.com/`
+   ![Geef een naam op voor de betrouwbaarheidssessie](assets/assurance-name-session.png)
 1. Selecteer in het volgende scherm de optie **[!UICONTROL Copy Link]**
 1. Selecteer het pictogram om de koppeling naar het klembord te kopiëren
 1. Plak de URL in uw browser, die de Luma-website opent met een speciale URL-parameter `adb_validation_sessionid` en start de sessie
 1. In de interface van de Verzekering, zou u een bericht moeten zien erop wijzen dat u met succes met de zitting hebt verbonden en u zou gebeurtenissen moeten zien die in de interface van de Verzekering worden gevangen.
+   ![Betrouwbaarheidssessie heeft verbinding](assets/assurance-success.png)
 
 ## Valideer de huidige staat van uw implementatie van SDK van het Web
 

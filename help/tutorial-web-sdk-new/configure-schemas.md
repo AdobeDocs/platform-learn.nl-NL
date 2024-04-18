@@ -2,9 +2,10 @@
 title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling
 
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het verzamelen van gegevens in Adobe Experience Platform.
 
-De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar het Netwerk van de Rand van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke die toepassingen van het Experience Cloud in de gegevensstroom worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
+De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar de Edge Network van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke Experience Cloud toepassingen die in de datastream worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
 
 ## Waarom modelleren de gegevens?
 
@@ -80,15 +81,15 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
    >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
 
 1. Ga naar **[!UICONTROL Schemas]** in de linkernavigatie
-1. Selecteer de **[!UICONTROL Schema maken]** knop rechtsboven
+1. Selecteer de **[!UICONTROL Create Schema]** knop rechtsboven
 
    ![Schema maken](assets/schema-xdm-create-schema.png)
 1. Selecteren **[!UICONTROL Experience Event]** in het volgende scherm
-1. Selecteren **[!UICONTROL Volgende]**
+1. Selecteren **[!UICONTROL Next]**
 
    ![Schema Experience Event](assets/schema-experience-event.png)
 
-1. Voer de naam in voor het schema onder **[!UICONTROL Weergavenaam schema]** veld, in dit geval `Luma Web Event Data`
+1. Voer de naam in voor het schema onder **[!UICONTROL Schema display name]** veld, in dit geval `Luma Web Event Data`
 
    >[!TIP]
    >
@@ -107,12 +108,12 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 
 >[!TIP]
 > 
->In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ en _**[!UICONTROL Consumentenervaringsgebeurtenis]**_.
+>In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_en_**[!UICONTROL Consumer Experience Event]**_.
 >
 >
-> Als u alleen implementeert **Adobe Analytics** met Web SDK en het verzenden van geen gegevens naar **Experience Platform**, gebruikt u de [!UICONTROL Adobe Analytics ExperienceEvent-sjabloon] veldgroep om het XDM-schema te definiëren. Dit wordt gebruikt in het dialoogvenster [Analyses instellen](setup-analytics.md) les.
+> Als u alleen implementeert **Adobe Analytics** met Web SDK en het verzenden van geen gegevens naar **Experience Platform**, gebruikt u de [!UICONTROL Adobe Analytics ExperienceEvent Template] veldgroep om het XDM-schema te definiëren. Dit wordt gebruikt in het dialoogvenster [Analyses instellen](setup-analytics.md) les.
 
-1. In de **[!UICONTROL Veldgroepen]** sectie, selecteert u **[!UICONTROL Toevoegen]**
+1. In de **[!UICONTROL Field groups]** sectie, selecteert u **[!UICONTROL Add]**
 
    ![Nieuwe veldgroep](assets/schema-new-field-group.png)
 
@@ -120,11 +121,11 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 1. Het selectievakje inschakelen
 1. Zoeken naar [!UICONTROL `Consumer Experience Event`]
 1. Het selectievakje inschakelen
-1. Selecteren **[!UICONTROL Veldgroepen toevoegen]**
+1. Selecteren **[!UICONTROL Add field groups]**
 
-   ![Veldgroep toevoegen](assets/schema-add-field-group.jpg)
+   ![Veldgroep toevoegen](assets/schema-add-field-group.png)
 
-Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL weergavenaam] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumentenervaringsgebeurtenis]**.
+Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL display name] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.png)
 
@@ -142,13 +143,13 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 
 >[!IMPORTANT]
 >
-> Het is mogelijk **[!UICONTROL Profiel]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
+> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >
 >Deze instelling wordt tijdens het [Experience Platform instellen](setup-experience-platform.md) les.
 >![Profielschema](assets/schema-profile.png)
 
-Om deze les te voltooien, selecteer **[!UICONTROL Opslaan]** rechtsboven.
+Om deze les te voltooien, selecteer **[!UICONTROL Save]** rechtsboven.
 
 ![Schema opslaan](assets/schema-select-save.png)
 
