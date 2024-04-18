@@ -3,7 +3,7 @@ title: Naamruimte configureren
 description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
@@ -90,7 +90,7 @@ Maak nu een naamruimte voor de Luma CRM-id:
 
 >[!INFO]
 >
-> In de [Gegevenselementen maken](create-data-elements.md) les, zult u leren hoe te om deze namespace te gebruiken wanneer het verzenden van identiteiten naar het Netwerk van de Rand van het Platform.
+> In de [Gegevenselementen maken](create-data-elements.md) les, zult u leren hoe te om deze namespace te gebruiken wanneer het verzenden van identiteiten naar de Edge Network van het Platform.
 
 ## Naamruimte maken in uw productiesandbox
 

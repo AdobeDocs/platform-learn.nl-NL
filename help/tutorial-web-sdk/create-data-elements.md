@@ -3,7 +3,7 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om de essentiële gegevenselementen tot stand te brengen nodig om gegevens met het Web SDK van het Experience Platform te vangen. Leg zowel inhoud als identiteitsgegevens vast op het tabblad [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om het XDM schema te gebruiken u vroeger voor het verzamelen van gegevens gebruikend het Web SDK van het Platform door een nieuw gegevenstype genoemd XDM Voorwerp creeerde.
 
@@ -225,7 +225,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar het Netwerk van de Rand van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
+Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar de Edge Network van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
 
 [Volgende: ](create-tag-rule.md)
 

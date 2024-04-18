@@ -3,7 +3,7 @@ title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3305'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Meer informatie over het instellen van Adobe Analytics met [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), maakt u labelregels om gegevens naar Adobe Analytics te verzenden en controleert u of Analytics gegevens vastlegt zoals u had verwacht.
 
@@ -94,7 +94,7 @@ Het schema dat in het dialoogvenster [Een schema configureren](configure-schemas
 
 ## De gegevensstroom configureren
 
-Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw gegevensstroom vertelt dan het Netwerk van de Rand van het Platform waar om die gegevens door:sturen, in dit geval, welke van uw Adobe Analytics rapportreeksen.
+Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw gegevensstroom vertelt dan de Edge Network van het Platform waar te om die gegevens door te sturen, in dit geval, welke van uw Adobe Analytics rapportreeksen.
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
@@ -121,7 +121,7 @@ Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw
 
 ## Aanvullende gegevenselementen maken
 
-Leg vervolgens aanvullende gegevens vast uit de gegevenslaag Luminantie en verzend deze naar het Edge Network van het platform. Terwijl de les zich op gemeenschappelijke vereisten van Adobe Analytics concentreert, kunnen alle gevangen gegevens gemakkelijk naar andere bestemmingen worden verzonden die op uw gegevensstroomconfiguratie worden gebaseerd. Als u bijvoorbeeld de Adobe Experience Platform-les hebt voltooid, worden de aanvullende gegevens die u in deze les vastlegt, ook verzonden naar Platform.
+Leg vervolgens aanvullende gegevens vast uit de gegevenslaag Luminantie en verstuur deze naar de Edge Network Platform. Terwijl de les zich op gemeenschappelijke vereisten van Adobe Analytics concentreert, kunnen alle gevangen gegevens gemakkelijk naar andere bestemmingen worden verzonden die op uw gegevensstroomconfiguratie worden gebaseerd. Als u bijvoorbeeld de Adobe Experience Platform-les hebt voltooid, worden de aanvullende gegevens die u in deze les vastlegt, ook verzonden naar Platform.
 
 ### E-commercegegevenselementen maken
 
@@ -233,7 +233,7 @@ Alvorens u aan het productkoord in kaart brengt, is het belangrijk om te begrijp
 1. De `commerce` objectsets Analytische gebeurtenissen zoals `prodView`, `scView`, en `purchase`
 1. De `productListItems` objectsets Analysdimensies zoals `productID`.
 
-Zie [Gegevens over handel en producten verzamelen](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) voor meer informatie .
+Zie [Gegevens over Commerce en producten verzamelen](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) voor meer informatie .
 
 Het is ook belangrijk te begrijpen dat u **[!UICONTROL provide individual attributes]** naar afzonderlijke XDM-velden of **[!UICONTROL provide an entire array]** naar een XDM-object.
 
@@ -439,7 +439,7 @@ Voeg uw nieuwe gegevenselementen en regels toe aan uw `Luma Web SDK Tutorial` ta
 
 In de [Foutopsporing](validate-with-debugger.md) les, leerde u hoe te om het cliënt-kant XDM objecten baken met de Debugger van het Platform en browser ontwikkelaarsconsole te inspecteren, die aan gelijkaardig is hoe u zuivert `AppMeasurement.js` Implementatie van analysemogelijkheden. Om Analytics te bevestigen vangt correct gegevens door het Web SDK van het Platform, moet u twee stappen verder gaan:
 
-1. Valideer hoe de gegevens door het voorwerp XDM op het Netwerk van de Rand van het Platform worden verwerkt, gebruikend de eigenschap van het Spoor van de Rand van Foutopsporing van het Experience Platform
+1. Valideer hoe de gegevens door het voorwerp XDM op de Edge Network van het Platform worden verwerkt, gebruikend de eigenschap van het Spoor van de Rand van Foutopsporing van het Experience Platform
 1. Valideer hoe de gegevens door Analytics worden verwerkt gebruikend de Regels van de Verwerking en rapporten in real time.
 
 ### Rand overtrekken gebruiken
@@ -496,7 +496,7 @@ U gebruikt hetzelfde baken voor het valideren van weergaven van inhoudspagina&#3
 
 ### Tekenreeks- en e-commercegebeurtenissen van producten
 
-Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Spoor gebruiken om productgegevens te bevestigen wordt gevangen door Analytics. Zowel worden het productkoord als e-commercegebeurtenissen automatisch in kaart gebracht XDM variabelen aan Analytics. Zolang u aan het juiste hebt toegewezen `productListItem` XDM variable while [configureren van een XDM-schema voor Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), zorgt het Platform Edge Network ervoor dat de gegevens worden toegewezen aan de juiste analytische variabelen.
+Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Spoor gebruiken om productgegevens te bevestigen wordt gevangen door Analytics. Zowel worden het productkoord als e-commercegebeurtenissen automatisch in kaart gebracht XDM variabelen aan Analytics. Zolang u aan het juiste hebt toegewezen `productListItem` XDM variable while [configureren van een XDM-schema voor Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)De Edge Network van het Platform zorgt ervoor dat de gegevens worden gekoppeld aan de juiste analytische variabelen.
 
 1. Eerst controleert u `Product String` is ingesteld
 1. Zoeken naar `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. De variabele legt de gegevenselementwaarde vast die u aan de `productListItems.item1.sku` eerder in deze les
@@ -505,7 +505,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Spoor
 
    ![Analyse van productreeks](assets/analytics-debugger-prodstring.png)
 
-De behandeling Rand overtrekken `commerce` gebeurtenissen iets anders dan `productList` afmetingen. U ziet geen Variabele van de Gegevens van de Context in kaart gebracht de zelfde manier u de productnaam in kaart brengt aan `[!UICONTROL c.a.x.productlistitem.[0].name]` hierboven. In plaats daarvan wordt in het Edge Trace de uiteindelijke gebeurtenis automatisch toegewezen in de Analytics `event` variabele. Het Netwerk van de Rand van het platform brengt het dienovereenkomstig in kaart zolang u aan juiste XDM in kaart brengt `commerce` variabele while [configureren van schema voor Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); in dit geval `commerce.productViews.value=1`.
+De behandeling Rand overtrekken `commerce` gebeurtenissen iets anders dan `productList` afmetingen. U ziet geen Variabele van de Gegevens van de Context in kaart gebracht de zelfde manier u de productnaam in kaart brengt aan `[!UICONTROL c.a.x.productlistitem.[0].name]` hierboven. In plaats daarvan wordt in het Edge Trace de uiteindelijke gebeurtenis automatisch toegewezen in de Analytics `event` variabele. De Edge Network van het platform brengt het dienovereenkomstig in kaart zolang u aan juiste XDM in kaart brengt `commerce` variabele while [configureren van schema voor Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); in dit geval `commerce.productViews.value=1`.
 
 1. Ga terug in het venster van Foutopsporing Experience Platform en schuif omlaag naar de `[!UICONTROL event]` variable, it is ingesteld op `[!UICONTROL prodView]`
 

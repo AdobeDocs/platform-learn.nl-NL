@@ -3,7 +3,7 @@ title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen.
 
-De gegevensstromen vertellen het Netwerk van Adobe Experience Platform Edge waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen. Zie de [Grondbeginselen van het Vormen van een DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) voor meer gedetailleerde informatie.
+De gegevensstromen vertellen de Edge Network van Adobe Experience Platform waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen. Zie de [Grondbeginselen van het Vormen van een DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) voor meer gedetailleerde informatie.
 
 ## Leerdoelstellingen
 
@@ -39,7 +39,7 @@ Voordat u de gegevensstroom configureert, moet u de volgende lessen al hebben vo
 
 ## Een gegevensstroom maken
 
-Nu kunt u een gegevensstroom tot stand brengen om het Netwerk van de Rand van het Platform te vertellen waar te om gegevens te verzenden die door SDK van het Web worden verzameld.
+Nu kunt u een gegevensstroom tot stand brengen om de Edge Network van het Platform te vertellen waar te om gegevens te verzenden die door Web SDK worden verzameld.
 
 **Een gegevensstroom maken:**
 

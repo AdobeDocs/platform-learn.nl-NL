@@ -3,7 +3,7 @@ title: De tagextensie Adobe Experience Platform Web SDK installeren en configure
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze tagextensie is de _alleen tagextensie_ vereist om gegevens te verzenden naar _alle Adobe Experience Cloud-toepassingen_, inclusief [Analyse](setup-analytics.md), [Doel](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform en Journey Optimizer!
 

@@ -1,9 +1,9 @@
 ---
 title: Een labelregel maken
-description: Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
-Leer hoe u een gebeurtenis naar het Platform Edge Network kunt verzenden met uw XDM-object aan de hand van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
+Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ waar;
 
 ## Tagregel maken
 
-In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. U zult deze eerste regel gebruiken om het voorwerp XDM naar het Netwerk van de Rand te verzenden gebruikend Web SDK [!UICONTROL Send Event] handeling. Later in deze zelfstudie verzendt u verschillende versies van het XDM-object op basis van het type pagina waarop de bezoeker zich bevindt. Om die reden, zult u regelvoorwaarden gebruiken om die andere types van pagina&#39;s uit te sluiten.
+In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. U zult deze eerste regel gebruiken om het voorwerp XDM naar de Edge Network te verzenden gebruikend Web SDK [!UICONTROL Send Event] handeling. Later in deze zelfstudie verzendt u verschillende versies van het XDM-object op basis van het type pagina waarop de bezoeker zich bevindt. Om die reden, zult u regelvoorwaarden gebruiken om die andere types van pagina&#39;s uit te sluiten.
 
 Een labelregel maken:
 

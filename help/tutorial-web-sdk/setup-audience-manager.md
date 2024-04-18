@@ -3,7 +3,7 @@ title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming.
 
@@ -39,7 +39,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## De gegevensstroom configureren
 
-De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van het Web SDK van het Platform gaat XDM gegevens over die naar het Netwerk van de Rand van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
+De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van SDK van het Web van het Platform gaat XDM gegevens over die naar de Edge Network van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**

@@ -3,7 +3,7 @@ title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om dit leerprogramma te voltooien. Om het Web SDK van het Platform uit te voeren gebruikend markeringen in de interface van de Inzameling van Gegevens, moet u de juiste gebruikerstoestemmingen hebben die binnen worden gevormd [Admin Console](https://adminconsole.adobe.com).
 

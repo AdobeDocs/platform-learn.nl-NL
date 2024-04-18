@@ -3,7 +3,7 @@ title: Conclusie en volgende stappen
 description: Wat moet u doen nadat de zelfstudie is voltooid
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Gefeliciteerd! U hebt de zelfstudie &quot;Adobe Experience Cloud met Web SDK implementeren&quot; voltooid!
 
@@ -24,14 +24,14 @@ Laten we snel alle resultaten bekijken. U hebt:
 * Een schema maken met standaard- en aangepaste veldgroepen.
 * Een gegevensstroom geconfigureerd.
 * Er is een tag-eigenschap gemaakt.
-* Vastgelegde gebieden van een gegevenslaag, transformeerde hen aan XDM, en verzond hen naar het Netwerk van de Rand van het Platform.
+* Vastgelegde gebieden van een gegevenslaag, transformeerde hen aan XDM, en verzond hen naar de Edge Network van het Platform.
 * Vastgelegde toestemming en geverifieerde identiteiten.
 * Verbind de implementatie van SDK van het Web met de volgende toepassingen van het Experience Cloud:
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Gebruikte gebeurtenis door:sturen om gegevens van het Netwerk van de Rand van het Platform naar een Webhaak te verzenden.
+* Gebruikte gebeurtenis door:sturen om gegevens van de Edge Network van het Platform naar een Webhaak te verzenden.
 * De implementatie met Adobe Experience Platform Debugger is gevalideerd.
 
 U bent klaar om de volgende fase van uw reis te beginnen—Adobe Experience Cloud in uw eigen website implementeren!

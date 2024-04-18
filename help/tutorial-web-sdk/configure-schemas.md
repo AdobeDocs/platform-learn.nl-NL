@@ -3,7 +3,7 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen.
 
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het samenstellen van schema&#39;s in Adobe Experience Platform.
 
-De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar het Netwerk van de Rand van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke die toepassingen van het Experience Cloud in de gegevensstroom worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
+De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar de Edge Network van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke Experience Cloud toepassingen die in de datastream worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
 
 >[!NOTE]
 >

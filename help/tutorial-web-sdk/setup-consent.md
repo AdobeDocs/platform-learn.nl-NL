@@ -3,7 +3,7 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->We verwachten dat we op vrijdag 15 maart 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
+>We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
 
