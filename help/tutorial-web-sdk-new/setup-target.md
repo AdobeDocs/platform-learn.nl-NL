@@ -2,9 +2,10 @@
 title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4176'
+source-wordcount: '4175'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Leer hoe u Adobe Target implementeert met de Platform Web SDK. Leer hoe u ervari
 
 ## Leerdoelstellingen
 
-Aan het eind van deze les, zult u kunnen:
+Aan het eind van deze les, zult u het volgende met een implementatie van SDK van het Web van Doel kunnen doen:
 
-* Begrijp hoe te om het pre-verbergen fragment van SDK van het Web van het Platform toe te voegen SDK om flikkering te verhinderen wanneer het gebruiken van Doel met asynchrone markering bed codes in
+* Voeg het voorverborgen fragment toe om flikkering te voorkomen
 * Een gegevensstroom configureren om de functionaliteit Doel in te schakelen
 * De visuele ervaringscomposeractiviteiten renderen
 * Activiteiten van formuliercomposers renderen
 * Geef XDM-gegevens door aan Doel en begrijp de toewijzing aan Doelparameters
 * Aangepaste gegevens aan doel doorgeven, zoals profiel- en entiteitsparameters
-* Valideer een implementatie van het Doel met Platform Web SDK
-* Aanvragen voor doelpropositie afzonderlijk van Adobe Analytics-aanvragen verzenden en de weergavegebeurtenissen later oplossen
+* Een doelimplementatie valideren
+* Afzonderlijke personalisatieverzoeken van analyseverzoeken
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
    * [De Form-Based Experience Composer gebruiken](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Gericht op ervaring maken](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Beperking flikkering toevoegen
+## Flikkeringsafhandeling toevoegen
 
 Bepaal voordat u begint of er een extra flikkerafhandelingsoplossing nodig is, afhankelijk van de manier waarop de tagbibliotheek is geladen.
 
@@ -59,7 +60,7 @@ Bepaal voordat u begint of er een extra flikkerafhandelingsoplossing nodig is, a
 
 ### Asynchrone implementatie
 
-Wanneer een tagbibliotheek asynchroon wordt geladen, is de rendering van de pagina mogelijk voltooid voordat door Target een inhoudswisseling is uitgevoerd. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen die door Doel wordt gespecificeerd. Als u deze flikkering wilt vermijden, raadt de Adobe aan een speciaal vooraf verborgen fragment toe te voegen vlak voor de asynchrone code voor het insluiten van tags.
+Wanneer een tagbibliotheek asynchroon wordt geladen, kan de pagina de rendering voltooien voordat Target de standaardinhoud heeft vervangen door gepersonaliseerde inhoud. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen die door Doel wordt gespecificeerd. Als u deze flikkering wilt vermijden, raadt de Adobe aan een speciaal vooraf verborgen fragment toe te voegen vlak voor de asynchrone code voor het insluiten van tags.
 
 Dit fragment is al aanwezig op de Luma-site, maar laten we eens nader kijken om te begrijpen wat deze code doet:
 
@@ -181,7 +182,7 @@ In deze zelfstudie gebruikt u de site Luma en gebruikt u het identiteitssymbool 
 
 ## Besluiten over visuele personalisatie renderen
 
-Eerst, zou u de terminologie moeten begrijpen die in het Doel wordt gebruikt en etiketteert interfaces.
+Visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe Target visuele ervaringscomposer worden gecreeerd. Eerst, zou u de terminologie moeten begrijpen die in het Doel wordt gebruikt en etiketteert interfaces:
 
 * **Activiteit**: Een reeks ervaringen voor een of meer doelgroepen. Een eenvoudige A/B-test kan bijvoorbeeld een activiteit zijn met twee ervaringen.
 * **Ervaring**: Een reeks acties die op een of meer locaties zijn gericht, of beslissingsbereik.

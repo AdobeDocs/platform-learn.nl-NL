@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2537'
 ht-degree: 0%
 
 ---
@@ -127,10 +127,29 @@ Met dit gebruiksgeval kunt u beter begrijpen hoe Journey Optimizer uw klanten de
 
 ### Een kwaliteitsschema maken en voorbeeldgegevens invoeren
 
-Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door alle andere gegevens worden verrijkt u hebt opgenomen. Wanneer een gebruiker in de plaats van de Luma voor authentiek verklaart, en de voor authentiek verklaarde identiteit wordt verzonden naar Platform die een identiteit in het systeem van CRM van Luma vertegenwoordigen. Een identiteitsgrafiek wordt geconstrueerd in Experience Platform en alle andere profiel-toegelaten datasets die identiteiten met de `lumaCrmId` namespace kan samen worden samengevoegd om Profielen van de Klant in real time te bouwen. Wij zullen snel een andere dataset in Adobe Experience Platform met één of andere gegevens van de steekproefloyaliteit tot stand brengen zodat kunnen wij aantonen hoe de Profielen van de Klant in real time in de Webcampagnes van Journey Optimizer kunnen worden gebruikt. Aangezien u al soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
+Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Wanneer een gebruiker zich bijvoorbeeld aanmeldt bij de Luma-site, `lumaCrmId` wordt verzonden naar Platform dat een identiteit in het systeem van CRM van Luma vertegenwoordigt. Een identiteitsgrafiek wordt geconstrueerd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Wij zullen snel een andere dataset in Adobe Experience Platform met één of andere gegevens van de steekproefloyaliteit tot stand brengen zodat kunnen wij aantonen hoe de Profielen van de Klant in real time in de Webcampagnes van Journey Optimizer kunnen worden gebruikt. Aangezien u al soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
 
+Het schema maken:
 
+1. Een nieuw schema maken
+1. Kies **[!UICONTROL Individual Profile]** als de [!UICONTROL base class]
+1. Geef het schema een naam `Luma Loyalty Schema`
+1. Selecteer de `personID` veld en markering is als [!UICONTROL Identity] en [!UICONTROL Primary identity] met de `Luma CRM Id` [!UICONTROL Identity namespace].
+1. Voeg de [!UICONTROL Loyalty Details] veldgroep
+1. Het schema inschakelen voor [!UICONTROL Profile]
 
+SCREENSHOT VAN SCHEMA
+
+Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
+
+1. Maak een nieuwe dataset van de `Luma Loyalty Schema`
+1. De gegevensset een naam geven `Luma Loyalty Dataset`
+1. De gegevensset inschakelen voor [!UICONTROL Profile]
+1. Download het voorbeeldbestand LoyaltyWebSDK.json
+1. Sleep het bestand naar uw gegevensset en zet het neer
+1. Bevestig dat de gegevens correct zijn ingevoerd
+
+SCREENSHOT OF DATASET AND CONFIRMATION
 
 ### Loyalty Rewards-campagne maken
 
