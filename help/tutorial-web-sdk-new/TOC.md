@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: e9e5e1dec8a0595bb789f0324c3263cf914dec31
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '95'
 ht-degree: 15%
 
 ---
@@ -38,9 +38,8 @@ ht-degree: 15%
    + [Adobe Analytics instellen](setup-analytics.md)
    + [Audience Manager instellen](setup-audience-manager.md)
    + [Doel instellen](setup-target.md)
-   + Journey Optimizer-functies instellen {#journey-optimizer}
-      + [Webkanaal instellen](journey-optimizer/setup-web-channel.md)
-      + [Beslissingsbeheer instellen](journey-optimizer/setup-decision-management.md)
+   + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
+   + [Journey Optimizer-besluitvormingsbeheer instellen](setup-decision-management.md)
 
 + Consent Management {#consent-management}
    + [Goedkeuring instellen](setup-consent.md)

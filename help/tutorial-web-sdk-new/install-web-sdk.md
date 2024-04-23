@@ -3,7 +3,7 @@ title: De tagextensie Adobe Experience Platform Web SDK installeren en configure
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
 exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: e0046b8c233e8831f4f354b32d059ffe33880f36
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Experience Platform Web SDK-tagextensie installeren
 
-Leer om de de marktextensie van SDK van het Web van het Platform te installeren en te vormen. De gemakkelijkste manier om Web SDK uit te voeren is het gebruiken van de markeringsmanager van de Adobe, markeringen (vroeger die als Lancering wordt bekend). De tagextensie van Platform Web SDK is _alleen tagextensie_ vereist om gegevens te verzenden naar _alle Adobe Experience Cloud-toepassingen_, inclusief [Analyse](setup-analytics.md), [Doel](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform, en [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
+Leer om de de marktextensie van SDK van het Web van het Platform te installeren en te vormen. De gemakkelijkste manier om Web SDK uit te voeren is het gebruiken van de markeringsmanager van de Adobe, markeringen (vroeger die als Lancering wordt bekend). De tagextensie van Platform Web SDK is _alleen tagextensie_ vereist om gegevens te verzenden naar _alle Adobe Experience Cloud-toepassingen_, inclusief [Analyse](setup-analytics.md), [Doel](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform, en [Journey Optimizer](setup-web-channel.md)!
 
 ## Leerdoelstellingen
 
