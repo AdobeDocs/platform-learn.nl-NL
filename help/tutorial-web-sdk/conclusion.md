@@ -2,20 +2,15 @@
 title: Conclusie en volgende stappen
 description: Wat moet u doen nadat de zelfstudie is voltooid
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
 # Conclusie en volgende stappen
-
-
->[!CAUTION]
->
->We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
 
 Gefeliciteerd! U hebt de zelfstudie &quot;Adobe Experience Cloud met Web SDK implementeren&quot; voltooid!
 
@@ -48,4 +43,4 @@ En er is altijd nog meer te leren! Hier volgen enkele suggesties voor andere inh
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

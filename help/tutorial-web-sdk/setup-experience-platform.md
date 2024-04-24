@@ -2,23 +2,20 @@
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
 
 # Gegevens streamen naar Experience Platform met Web SDK
 
-
->[!CAUTION]
->
->We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
-
 Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Platform Web SDK.
 
 Experience Platform is de ruggengraat van alle nieuwe Experience Cloud toepassingen, zoals Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics en Adobe Journey Optimizer. Deze toepassingen worden ontworpen om het Web SDK van het Platform als hun optimale methode van Webgegevensinzameling te gebruiken.
+
+![WebSDK en Adobe Experience Platform-diagram](assets/dc-websdk-aep.png)
 
 Experience Platform gebruikt hetzelfde XDM-schema dat u eerder hebt gemaakt om gebeurtenisgegevens van de Luma-website vast te leggen. Wanneer die gegevens naar de Edge Network van het Platform worden verzonden, kan de configuratie van de gegevensstroom het aan Experience Platform door:sturen.
 
@@ -33,34 +30,22 @@ Aan het eind van deze les, zult u kunnen:
 
 ## Vereisten
 
-U had de volgende lessen reeds moeten voltooien:
+Om deze les te voltooien, moet u eerst:
 
-* De **Eerste configuratie** lessen:
-   * [Machtigingen configureren](configure-permissions.md)
-   * [Een XDM-schema configureren](configure-schemas.md)
-   * [Een gegevensstroom configureren](configure-datastream.md)
-   * [Naamruimte configureren](configure-identities.md)
-
-* De **Configuratie van tags** lessen:
-   * [Web SDK-extensie installeren](install-web-sdk.md)
-   * [Gegevenselementen maken](create-data-elements.md)
-   * [Tagregels maken](create-tag-rule.md)
+* Toegang hebben tot een Adobe Experience Platform-toepassing zoals Real-time Customer Data Platform, Journey Optimizer of Customer Journey Analytics
+* Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
 
 ## Een gegevensset maken
 
 Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [gegevensset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst, die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
-In deze oefening, creeert u een dataset om inhoud en elektronische handeldetails voor te volgen [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->U moet de `Luma Web Event Data` schema, zoals in de vorige les wordt geïnstrueerd, [Een XDM-schema configureren](configure-schemas.md).
+Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
 
 1. Ga naar de [Interface Experience Platform](https://experience.adobe.com/platform/)
 1. Bevestig dat u zich in de ontwikkelingssandbox bevindt die u voor deze zelfstudie gebruikt
-1. Openen **[!UICONTROL Datasets]** van de linkernavigatie
+1. Openen **[!UICONTROL Data Management > Datasets]** van de linkernavigatie
 1. Selecteren **[!UICONTROL Create dataset]**
 
    ![Schema maken](assets/experience-platform-create-dataset.png)
@@ -87,7 +72,7 @@ Nu kunt u uw [!UICONTROL datastream] gegevens verzenden naar [!UICONTROL Adobe E
 1. Selecteren **[!UICONTROL Datastreams]** van de linkernavigatie
 1. Open de gegevensstroom die u in het dialoogvenster [Een gegevensstroom configureren](configure-datastream.md) les, `Luma Web SDK`
 
-   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk.png)
+   ![Selecteer de Luma Web SDK-gegevensstroom](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Add Service]**
    ![Een service toevoegen aan de gegevensstroom](assets/experience-platform-addService.png)
@@ -98,7 +83,7 @@ Nu kunt u uw [!UICONTROL datastream] gegevens verzenden naar [!UICONTROL Adobe E
 
    ![DataStream Config](assets/experience-platform-datastream-config.png)
 
-Terwijl u verkeer binnen op [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html) Aan uw markeringsbezit in kaart gebracht, zullen de gegevens de dataset in Experience Platform bevolken!
+Terwijl u verkeer op de [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html) Aan uw markeringsbezit in kaart gebracht, zullen de gegevens de dataset in Experience Platform bevolken!
 
 ## De gegevensset valideren
 
@@ -135,7 +120,7 @@ Gegevens moeten nu worden ingevuld in het dialoogvenster `Luma Web Event Data` d
 
 Om te bevestigen dat de gegevens in het datumpigment van Platform zijn geland, is het snel mogelijk om de **[!UICONTROL Preview dataset]** gebruiken. De gegevens van SDK van het Web zijn micro-gebatcheerd aan het gegevens meer en op periodieke basis verfrist in de interface van het Platform. Het kan 10 tot 15 minuten duren om de gegevens te zien die u hebt gegenereerd.
 
-1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Datasets]** in de linkernavigatie om het dialoogvenster **[!UICONTROL Datasets]** dashboard.
+1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Data Management > Datasets]** in de linkernavigatie om het dialoogvenster **[!UICONTROL Datasets]** dashboard.
 
    Het dashboard maakt een lijst van alle beschikbare datasets voor uw organisatie. De details worden getoond voor elke vermelde dataset, met inbegrip van zijn naam, het schema de dataset zich aan, en status van de meest recente versiereeks houdt.
 
@@ -214,7 +199,7 @@ Het schema is nu ook ingeschakeld voor het profiel.
 > * Eerst, ga sommige gegevens in uw datasets in.
 > * Oplossen van problemen die zich tijdens het invoeren van gegevens voordoen (bijvoorbeeld problemen met gegevensvalidatie of -toewijzing).
 > * Uw gegevenssets en schema&#39;s voor profiel inschakelen
-> * De gegevens opnieuw invoeren
+> * Voer de gegevens opnieuw in, indien nodig
 
 
 ### Een profiel valideren
@@ -226,7 +211,7 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Profiles]** in de linkernavigatie
 
 1. Als de **[!UICONTROL Identity namespace]** gebruiken `lumaCRMId`
-1. De waarde van de opdracht kopiëren en plakken `lumaCRMId` overgegaan in de vraag u in Debugger van het Experience Platform (waarschijnlijk) inspecteerde `112ca06ed53d3db37e4cea49cc45b71e`).
+1. De waarde van de opdracht kopiëren en plakken `lumaCRMId` overgegaan in de vraag u in Debugger van het Experience Platform inspecteerde, in dit geval `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![Profiel](assets/experience-platform-validate-dataset-profile.png)
 
@@ -234,15 +219,22 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
    ![Profiel](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. Klik in het dialoogvenster [!UICONTROL Profile ID] en [!UICONTROL Customer profile] wordt gevuld. Hier kunt u alle identiteiten zien verbonden aan `lumaCRMId`, zoals de `ECID`:
+1. Als u de volledige **[!UICONTROL Customer Profile]** Selecteer voor elke id de optie **[!UICONTROL Profile ID]** in het hoofdvenster.
+
+   >[!NOTE]
+   >
+   >U kunt de hyperlink van de profiel-id selecteren of als u de rij selecteert, wordt een rechts menu geopend waarin u de hyperlink Profiel-id kunt selecteren
+   > ![Klantprofiel](assets/experience-platform-select-profileId.png)
+
+   Hier kunt u alle identiteiten zien verbonden aan `lumaCRMId`, zoals de `ECID`.
 
    ![Klantprofiel](assets/experience-platform-validate-dataset-custProfile.png)
 
-U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Customer Journey Analytics! En Journey Optimizer!)!
+U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer!)!
 
 
 [Volgende: ](setup-analytics.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

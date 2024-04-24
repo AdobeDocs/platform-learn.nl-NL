@@ -3,25 +3,20 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
 
 # Goedkeuring instellen met Platform Web SDK
 
-
->[!CAUTION]
->
->We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
-
 Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
 
 >[!NOTE]
 > 
->Ter demonstratie gebruikt deze zelfstudie [Klaro](https://heyklaro.com/){target="_blank"} als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
+>Ter demonstratie gebruikt deze zelfstudie [Klaro](https://heyklaro.com/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
 
 
 ## Leerdoelstellingen
@@ -69,7 +64,7 @@ Voordat u in de tagconfiguraties gaat, leert u meer over het platform voor het b
 >De beste praktijken om een Platform van het Beheer van de Toestemming uit te voeren zijn typisch om CMP te laden _voor_ het laden van uw tagbeheer. Om deze zelfstudie te vergemakkelijken, laadt u de CMP _with_ de tagmanager. Deze les wordt ontworpen om u te tonen hoe te om de toestemmingseigenschappen in het Web SDK van het Platform te gebruiken en zou niet als gids moeten worden gebruikt om Klaro of een andere CMP correct te vormen.
 
 
-Nu, zodra u met de configuraties van Klaro wordt gedaan, creeer een markeringsregel met de volgende configuraties:
+Nu, zodra u met de configuraties van Klaro wordt gedaan, creeer markeringsregels met de volgende configuraties:
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] ingesteld op 1
@@ -229,4 +224,4 @@ Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring in
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

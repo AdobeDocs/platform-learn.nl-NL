@@ -3,21 +3,16 @@ title: De tagextensie Adobe Experience Platform Web SDK installeren en configure
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Platform Web SDK-tagextensie installeren
 
-
->[!CAUTION]
->
->We verwachten dat we op dinsdag 23 april 2024 belangrijke wijzigingen in deze zelfstudie zullen publiceren. Na dat punt zullen vele oefeningen veranderen en u kunt het leerprogramma van het begin moeten opnieuw beginnen om alle lessen te voltooien.
-
-Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze tagextensie is de _alleen tagextensie_ vereist om gegevens te verzenden naar _alle Adobe Experience Cloud-toepassingen_, inclusief [Analyse](setup-analytics.md), [Doel](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform en Journey Optimizer!
+Leer om de de marktextensie van SDK van het Web van het Platform te installeren en te vormen. De gemakkelijkste manier om Web SDK uit te voeren is het gebruiken van de markeringsmanager van de Adobe, markeringen (vroeger die als Lancering wordt bekend). De tagextensie van Platform Web SDK is _alleen tagextensie_ vereist om gegevens te verzenden naar _alle Adobe Experience Cloud-toepassingen_, inclusief [Analyse](setup-analytics.md), [Doel](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform, en [Journey Optimizer](setup-web-channel.md)!
 
 ## Leerdoelstellingen
 
@@ -31,9 +26,6 @@ Aan het eind van deze les, zult u kunnen:
 
 U moet de vorige lessen in deze zelfstudie hebben voltooid:
 
-* [Machtigingen configureren](configure-permissions.md)
-* [Een XDM-schema configureren](configure-schemas.md)
-* [Naamruimte configureren](configure-identities.md)
 * [Een gegevensstroom configureren](configure-datastream.md)
 
 ## Experience Platform Web SDK-extensie installeren
@@ -62,7 +54,7 @@ Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, k
 1. Zoeken naar `Adobe Experience Platform Web SDK`
 1. Selecteren **[!UICONTROL Install]**
 
-   ![Web SDK-extensie installeren](assets/extension-platform-web-sdk.jpg)
+   ![Web SDK-extensie installeren](assets/extension-platform-web-sdk.png)
 
 
 ## De SDK van het Web van het Platform van de verbinding aan uw gegevensstroom
@@ -72,6 +64,7 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 1. Onder **[!UICONTROL Datastreams]**, selecteert u de **[!UICONTROL Choose from list]** invoermethode
 1. Selecteer de gegevensstroom u vroeger creeerde, `Luma Web SDK`
 1. Selecteren **[!UICONTROL Save]**
+
    >[!NOTE]
    >
    > Als u uw gegevensstroom niet kunt vinden, ga naar [Een gegevensstroom configureren](configure-datastream.md) les en volg de stappen om één te creëren
@@ -82,9 +75,7 @@ Nu u het Web SDK van het Platform hebt geïnstalleerd en het aan de datastream a
 
 >[!NOTE]
 >
->Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u Platform Web SDK op uw eigen website implementeert, moet u een aparte gegevensstroom voor elke omgeving configureren en deze toewijzen aan uw tagomgevingen met behulp van de **[!UICONTROL Input method]** > **[!UICONTROL Enter values]**
->
->![Gegevensstroom selecteren](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u Platform Web SDK op uw eigen website implementeert, moet u een aparte gegevensstroom voor elke omgeving configureren en deze toewijzen aan uw tagomgevingen.
 
 >[!NOTE]
 >
@@ -98,4 +89,4 @@ Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

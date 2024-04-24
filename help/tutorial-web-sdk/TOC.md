@@ -7,19 +7,20 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 30%
+source-wordcount: '95'
+ht-degree: 15%
 
 ---
 
 
-# Tutorial voor Adobe Experience Cloud met Web SDK implementeren. {#implement-web-sdk}
+# Adobe Experience Cloud implementeren met Web SDK-zelfstudie. {#implement-web-sdk-new}
 
 + [Overzicht van tutorial](overview.md)
 + Eerste configuratie {#initial-configuration}
-   + [Machtigingen configureren](configure-permissions.md)
    + [Een XDM-schema configureren](configure-schemas.md)
    + [Naamruimte configureren](configure-identities.md)
    + [Een gegevensstroom configureren](configure-datastream.md)
@@ -27,14 +28,18 @@ ht-degree: 30%
 + Configuratie van tags {#tags-configuration}
    + [Web SDK-extensie installeren](install-web-sdk.md)
    + [Gegevenselementen maken](create-data-elements.md)
-   + [Een labelregel maken](create-tag-rule.md)
+   + [Identiteiten maken](create-identities.md)
+   + [Tagregels maken](create-tag-rule.md)
    + [Valideren met foutopsporing](validate-with-debugger.md)
+   + [Valideren met betrouwbaarheid](validate-with-assurance.md)
 
 + Toepassingsinstellingen {#applications-setup}
    + [Experience Platform instellen](setup-experience-platform.md)
    + [Adobe Analytics instellen](setup-analytics.md)
    + [Audience Manager instellen](setup-audience-manager.md)
    + [Doel instellen](setup-target.md)
+   + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
+   + [Journey Optimizer-besluitvormingsbeheer instellen](setup-decision-management.md)
 
 + Consent Management {#consent-management}
    + [Goedkeuring instellen](setup-consent.md)
