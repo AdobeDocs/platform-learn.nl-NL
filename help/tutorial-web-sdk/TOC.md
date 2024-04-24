@@ -9,7 +9,7 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: a56a63c79417fc98f2c3ec4a9613e39c46ac098a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 15%
@@ -17,7 +17,7 @@ ht-degree: 15%
 ---
 
 
-# Adobe Experience Cloud implementeren met Web SDK-zelfstudie. {#implement-web-sdk-new}
+# Adobe Experience Cloud implementeren met Web SDK-zelfstudie. {#implement-web-sdk}
 
 + [Overzicht van tutorial](overview.md)
 + Eerste configuratie {#initial-configuration}
