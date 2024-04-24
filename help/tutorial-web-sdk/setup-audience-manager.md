@@ -3,7 +3,7 @@ title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is de Adobe Experience Cloud-oplossing die alles biedt wat nodig is om commercieel relevante informatie over sitebezoekers te verzamelen, verhandelbare segmenten te maken en gerichte reclame en inhoud aan het juiste publiek te bezorgen.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) is de Adobe Experience Cloud-oplossing die alles biedt wat nodig is om commercieel relevante informatie over sitebezoekers te verzamelen, verhandelbare segmenten te maken en gerichte reclame en inhoud aan het juiste publiek te bezorgen.
 
 ![WebSDK en Adobe Audience Manager-diagram](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ Aan het eind van deze les, zult u kunnen:
 Om deze les te voltooien, moet u eerst:
 
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
-* Heb toegang tot Adobe Audience Manager en de aangewezen toestemmingen om, attributen, segmenten, en bestemmingen tot stand te brengen te lezen en te schrijven. Lees voor meer informatie [Op rol-Gebaseerd Toegangsbeheer van Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Heb toegang tot Adobe Audience Manager en de aangewezen toestemmingen om, attributen, segmenten, en bestemmingen tot stand te brengen te lezen en te schrijven. Lees voor meer informatie [Op rol-Gebaseerd Toegangsbeheer van Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## De gegevensstroom configureren
 
-De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van SDK van het Web van het Platform gaat XDM gegevens over die naar de Edge Network van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
+De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van SDK van het Web van het Platform gaat XDM gegevens over die naar de Edge Network van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
@@ -52,7 +52,7 @@ De implementatie van de Audience Manager die het Web SDK van het Platform gebrui
 
 ## Een gegevensbron maken
 
-Maak vervolgens een [Gegevensbron](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en), een fundamenteel instrument voor het ordenen van gegevens binnen de Audience Manager:
+Maak vervolgens een [Gegevensbron](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), een fundamenteel instrument voor het ordenen van gegevens binnen de Audience Manager:
 
 1. Ga naar de [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
 1. Selecteren **[!UICONTROL Audience Data]** vanaf de bovenste navigatie
@@ -72,7 +72,7 @@ Maak vervolgens een [Gegevensbron](https://experienceleague.adobe.com/docs/audie
 
 ## Een kenmerk maken
 
-Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=en). De sporen zijn een combinatie van één of meerdere signalen in Audience Manager. Maak een kenmerk voor bezoekers van de startpagina.
+Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). De sporen zijn een combinatie van één of meerdere signalen in Audience Manager. Maak een kenmerk voor bezoekers van de startpagina.
 
 >[!NOTE]
 >

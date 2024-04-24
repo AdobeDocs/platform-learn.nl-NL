@@ -3,7 +3,7 @@ title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Dit is het doel van de Adobe [Experience Data Model](https://business.adobe.com/
 >
 > Voor demonstratiedoeleinden bouwen de oefeningen in deze les een voorbeeldschema om inhoud te vangen die en producten door klanten in worden bekeken in [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html). Terwijl u deze stappen kunt gebruiken om een verschillend schema voor uw eigen doeleinden tot stand te brengen, adviseert men dat u eerst samen met het creëren van het voorbeeldschema volgt om de mogelijkheden van de schemaredacteur te leren.
 
-Voor meer informatie over XDM-schema&#39;s neemt u de cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) of zie de [XDM System, overzicht](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl).
+Voor meer informatie over XDM-schema&#39;s neemt u de cursus [Uw klantgegevens modelleren met XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) of zie de [XDM System, overzicht](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Leerdoelstellingen
 
@@ -69,7 +69,7 @@ Alle noodzakelijke levering en gebruikerstoestemmingen voor de Inzameling van Ge
 
 ## Een XDM-schema maken
 
-De schema&#39;s XDM zijn de standaardmanier om gegevens in Experience Platform te beschrijven, toestaand alle gegevens die aan de schema&#39;s voldoen om over een organisatie zonder conflicten worden opnieuw gebruikt, of zelfs tussen veelvoudige organisaties worden gedeeld. Zie voor meer informatie de [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en).
+De schema&#39;s XDM zijn de standaardmanier om gegevens in Experience Platform te beschrijven, toestaand alle gegevens die aan de schema&#39;s voldoen om over een organisatie zonder conflicten worden opnieuw gebruikt, of zelfs tussen veelvoudige organisaties worden gedeeld. Zie voor meer informatie de [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van het basislijngebied voor het vangen van de gegevens van de Webgebeurtenis op creëren [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -102,9 +102,9 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
 
 ## Veldgroepen toevoegen
 
-Zoals eerder vermeld, is XDM het kernkader dat klantenervaringsgegevens door gemeenschappelijke structuren en definities voor gebruik in de stroomafwaartse diensten van Adobe Experience Platform te verstrekken gestandaardiseerd. Door te voldoen aan XDM-standaarden, _alle gegevens van de klantenervaring_ kan worden opgenomen in een gemeenschappelijke vertegenwoordiging. Deze benadering staat u toe om waardevolle inzichten van klantenacties te bereiken, klantenpubliek door segmenten te bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uit te drukken gebruikend gegevens uit veelvoudige bronnen. Zie [Aanbevolen procedures voor gegevensmodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) voor meer informatie .
+Zoals eerder vermeld, is XDM het kernkader dat klantenervaringsgegevens door gemeenschappelijke structuren en definities voor gebruik in de stroomafwaartse diensten van Adobe Experience Platform te verstrekken gestandaardiseerd. Door te voldoen aan XDM-standaarden, _alle gegevens van de klantenervaring_ kan worden opgenomen in een gemeenschappelijke vertegenwoordiging. Deze benadering staat u toe om waardevolle inzichten van klantenacties te bereiken, klantenpubliek door segmenten te bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uit te drukken gebruikend gegevens uit veelvoudige bronnen. Zie [Aanbevolen procedures voor gegevensmodellering](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) voor meer informatie .
 
-Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te houden aan een product-agnostisch model en naamgevingsconventies. Voor alle gegevens die specifiek zijn voor uw organisatie en die niet in de hierboven vooraf gedefinieerde veldgroepen passen, kunt u een aangepaste veldgroep maken. Zie [Schema&#39;s maken met de Schema-editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#create) voor meer gedetailleerde stappen op douaneschema&#39;s.
+Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te houden aan een product-agnostisch model en naamgevingsconventies. Voor alle gegevens die specifiek zijn voor uw organisatie en die niet in de hierboven vooraf gedefinieerde veldgroepen passen, kunt u een aangepaste veldgroep maken. Zie [Schema&#39;s maken met de Schema-editor](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) voor meer gedetailleerde stappen op douaneschema&#39;s.
 
 >[!TIP]
 > 
@@ -129,7 +129,7 @@ Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleut
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.png)
 
-Deze les is slechts een uitgangspunt. Wanneer het bouwen van uw eigen schema van Webgebeurtenissen, moet u uw bedrijfsvereisten onderzoeken en documenteren. Dit proces lijkt op het maken van een [Document met zakelijke vereisten](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) en [Referentie voor ontwerp van oplossing](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) voor een Adobe Analytics-implementatie, maar moet vereisten bevatten voor _alle downstreamontvangers_ zoals Platform, Doel, en gebeurtenis die bestemmingen door:sturen.
+Deze les is slechts een uitgangspunt. Wanneer het bouwen van uw eigen schema van Webgebeurtenissen, moet u uw bedrijfsvereisten onderzoeken en documenteren. Dit proces lijkt op het maken van een [Document met zakelijke vereisten](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) en [Referentie voor ontwerp van oplossing](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) voor een Adobe Analytics-implementatie, maar moet vereisten bevatten voor _alle downstreamontvangers_ zoals Platform, Doel, en gebeurtenis die bestemmingen door:sturen.
 
 
 ### Het object identityMap
@@ -143,7 +143,7 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 
 >[!IMPORTANT]
 >
-> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
+> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >
 >Deze instelling wordt tijdens het [Experience Platform instellen](setup-experience-platform.md) les.

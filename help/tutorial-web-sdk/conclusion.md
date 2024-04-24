@@ -3,7 +3,7 @@ title: Conclusie en volgende stappen
 description: Wat moet u doen nadat de zelfstudie is voltooid
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 2%
@@ -34,11 +34,11 @@ U bent klaar om de volgende fase van uw reis te beginnen—Adobe Experience Clou
 En er is altijd nog meer te leren! Hier volgen enkele suggesties voor andere inhoud die u kunt gebruiken om verder te bouwen op uw implementatie:
 
 
-* **Een reis maken in Journey Optimizer**. De gebeurtenissen die u op de Luma-website hebt geïmplementeerd, kunnen worden gebruikt om ritten te activeren. Meer informatie in deze [videozelfstudie](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html).
-* **Connect Customer Journey Analytics**. Als u de [Platformgegevensset](setup-experience-platform.md), kunt u de dataset met Customer Journey Analytics verbinden. Meer informatie in deze [videozelfstudie](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
-* **Een segment maken in Platform**. Als u uw [schema en dataset voor het Profiel van de Klant in real time](setup-experience-platform.md), kunt u segmenten bouwen die op uw Webgebeurtenissen worden gebaseerd, hen combineren met gegevens uit andere bronnen en dan deze segmenten verzenden naar bestemmingen in Real-time Customer Data Platform. Meer informatie over de segmentbuilder in dit artikel [videozelfstudie](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
-* **Platform Mobile SDK implementeren**. Nu je de ene SDK hebt beheerst, leer er nog een! De Adobe Experience Platform Mobile SDK wordt gebruikt om Experience Cloud en services van derden aan te sturen op mobiele apps. Er is een vergelijkbare [praktische zelfstudie voor Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Voltooi beide en zie de profielen samenvoegen over apparaten!
-* **Meer informatie over Experience Platform**. Leer meer over hoe te om gegevens uit andere bronnen in te voeren en dat met uw gegevens van SDK van het Web te combineren, in [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
+* **Een reis maken in Journey Optimizer**. De gebeurtenissen die u op de Luma-website hebt geïmplementeerd, kunnen worden gebruikt om ritten te activeren. Meer informatie in deze [videozelfstudie](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
+* **Connect Customer Journey Analytics**. Als u de [Platformgegevensset](setup-experience-platform.md), kunt u de dataset met Customer Journey Analytics verbinden. Meer informatie in deze [videozelfstudie](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **Een segment maken in Platform**. Als u uw [schema en dataset voor het Profiel van de Klant in real time](setup-experience-platform.md), kunt u segmenten bouwen die op uw Webgebeurtenissen worden gebaseerd, hen combineren met gegevens uit andere bronnen en dan deze segmenten verzenden naar bestemmingen in Real-time Customer Data Platform. Meer informatie over de segmentbuilder in dit artikel [videozelfstudie](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Platform Mobile SDK implementeren**. Nu je de ene SDK hebt beheerst, leer er nog een! De Adobe Experience Platform Mobile SDK wordt gebruikt om Experience Cloud en services van derden aan te sturen op mobiele apps. Er is een vergelijkbare [praktische zelfstudie voor Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). Voltooi beide en zie de profielen samenvoegen over apparaten!
+* **Meer informatie over Experience Platform**. Leer meer over hoe te om gegevens uit andere bronnen in te voeren en dat met uw gegevens van SDK van het Web te combineren, in [Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]

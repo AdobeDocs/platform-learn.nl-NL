@@ -3,7 +3,7 @@ title: De tagextensie Adobe Experience Platform Web SDK installeren en configure
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Nu u het Web SDK van het Platform hebt geïnstalleerd en het aan de datastream a
 >
 >Terwijl u geen CNAME in [!UICONTROL Edge domain] het plaatsen in deze les, adviseert de Adobe u een CNAME gebruikt wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe Experience Platform Web SDK configureren](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)
+Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe Experience Platform Web SDK configureren](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

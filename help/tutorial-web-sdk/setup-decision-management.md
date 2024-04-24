@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Neem nota van de volgende beperking:
 
 ## Toegang verlenen tot het beheer van besluiten
 
-Als u toegang wilt verlenen tot de functionaliteit van het beslissingsbeheer, moet u een **Productprofiel** en wijs de overeenkomstige toestemmingen aan uw gebruikers toe. [Meer informatie over het beheren van Journey Optimizer-gebruikers en -machtigingen in deze sectie](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+Als u toegang wilt verlenen tot de functionaliteit van het beslissingsbeheer, moet u een **Productprofiel** en wijs de overeenkomstige toestemmingen aan uw gebruikers toe. [Meer informatie over het beheren van Journey Optimizer-gebruikers en -machtigingen in deze sectie](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## De gegevensstroom configureren
 
@@ -340,7 +340,7 @@ Als u wilt beginnen met testen, selecteert u de optie **Simulaties** van de **Aa
 
 ### Loyalty-aanbiedingen testen
 
-1. Selecteer een testprofiel voor de simulatie. Klikken **Profiel beheren**. [Volg deze handleiding om een nieuw testprofiel voor het testen van aanbiedingen te maken of aan te wijzen](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. Selecteer een testprofiel voor de simulatie. Klikken **Profiel beheren**. [Volg deze handleiding om een nieuw testprofiel voor het testen van aanbiedingen te maken of aan te wijzen](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ De **Adobe Experience Platform Debugger** Deze extensie, die zowel beschikbaar i
 
 U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Dit is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om alles te verzekeren correct wordt gevormd.
 
-[Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 

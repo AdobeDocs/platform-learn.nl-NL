@@ -3,7 +3,7 @@ title: Identiteiten maken
 description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identiteitskaart gebruikt om gebruikers-id's vast te leggen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -37,7 +37,7 @@ U hebt inzicht in wat een gegevenslaag is, u bent vertrouwd met de [Luma-demosit
 
 ## Experience Cloud-id
 
-De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is een naamruimte voor gedeelde identiteit die wordt gebruikt in Adobe Experience Platform- en Adobe Experience Cloud-toepassingen. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. Hierdoor is ECID de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag omdat dit altijd aanwezig is
+De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) is een naamruimte voor gedeelde identiteit die wordt gebruikt in Adobe Experience Platform- en Adobe Experience Cloud-toepassingen. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. Hierdoor is ECID de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag omdat dit altijd aanwezig is
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -46,7 +46,7 @@ De [Experience Cloud-id (ECID)](https://experienceleague.adobe.com/docs/experien
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Meer informatie over hoe [ECIDs wordt gevolgd gebruikend het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
+Meer informatie over hoe [ECIDs wordt gevolgd gebruikend het Web SDK van het Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 ECID&#39;s worden ingesteld met behulp van een combinatie van cookies van de eerste fabrikant en Platform Edge Network. Door gebrek, worden de eerste-partijkoekjes geplaatst cliënt-kant door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen server-side voor cookies van eerste bedrijven in te stellen. Deze worden ook wel FPID&#39;s (First-Party Device ID&#39;s) genoemd.
 
@@ -60,7 +60,7 @@ FPID&#39;s zijn cookies van de eerste fabrikant _u kunt instellen met uw eigen w
 
 Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar de Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, die de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
 
-Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en)
+Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Meer informatie over [Eerste partij apparaat IDs in het Web SDK van het Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om F
 
 Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe wanneer het gebruiken van het Web SDK van het Platform. Hierdoor is ECID de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
-U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Dit wordt gedaan door te gebruiken [!UICONTROL Identity Map] type gegevenselement.
+U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Dit wordt gedaan door te gebruiken [!UICONTROL Identity Map] type gegevenselement.
 
 Als u de opdracht [!UICONTROL Identity Map] gegevenselement:
 

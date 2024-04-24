@@ -2,7 +2,7 @@
 title: Machtigingen voor de zelfstudie configureren
 description: Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken en de toestemming te vormen die wordt vereist om Adobe Experience Cloud met het leerprogramma van SDK van het Web te voltooien.
 feature: Web SDK,Tags,Access Control
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 3%
@@ -15,7 +15,7 @@ Leer hoe te om toegang tot het Web SDK van het Experience Platform te verzoeken 
 
 ## Dataverzameling
 
-* Heeft toestemming om **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, en **[!UICONTROL Manage Properties]**. Zie voor meer informatie over machtigingen voor tags [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Heeft toestemming om **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, en **[!UICONTROL Manage Properties]**. Zie voor meer informatie over machtigingen voor tags [de documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * Als u de facultatieve gebeurtenis zult voltooien die les door:sturen, een productvergunning hebben die rand door:sturen en toestemmingspunt omvat **[!UICONTROL Platforms]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -31,11 +31,11 @@ Deze functies moeten beschikbaar zijn voor alle klanten van het Experience Cloud
    * Alle machtigingsitems onder **[!UICONTROL Data Management]**, en **[!UICONTROL Profile Management]**:
 
 
-Voor meer informatie over de toegangscontrole van het Platform, zie [de documentatie](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+Voor meer informatie over de toegangscontrole van het Platform, zie [de documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 ## Adobe Analytics
 
-Voor de optionele Adobe Analytics les moet je beschikken over [beheerdersrechten voor de instellingen van de rapportsuite, verwerkingsregels en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+Voor de optionele Adobe Analytics les moet je beschikken over [beheerdersrechten voor de instellingen van de rapportsuite, verwerkingsregels en Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -43,7 +43,7 @@ Voor de optionele Adobe Target les moet je beschikken over [Editor of fiatteur](
 
 ## Adobe Audience Manager
 
-* Voor de facultatieve les van de Audience Manager, moet u toegang hebben tot creeer, lees, en schrijf eigenschappen, segmenten, en bestemmingen. Raadpleeg de zelfstudie over voor meer informatie [Op rol-Gebaseerd Toegangsbeheer van Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Voor de facultatieve les van de Audience Manager, moet u toegang hebben tot creeer, lees, en schrijf eigenschappen, segmenten, en bestemmingen. Raadpleeg de zelfstudie over voor meer informatie [Op rol-Gebaseerd Toegangsbeheer van Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 Nu bent u klaar om de eerste configuratiestappen te beginnen.
 

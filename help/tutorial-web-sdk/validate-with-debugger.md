@@ -3,7 +3,7 @@ title: Valideer de implementaties van SDK van het Web met Foutopsporing van het 
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -142,7 +142,7 @@ Deze typen aanvraagdetails zijn ook zichtbaar in de webontwikkelaarsgereedschapp
 
 Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het Web SDK van het Platform verzendt eerst gegevens van uw digitaal bezit naar de Edge Network van het Platform. Dan, maakt de Edge Network van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten. U kunt de server-zijverzoeken bevestigen die door het Netwerk van de Rand van het Platform door het Spoor van de Rand in Debugger worden gemaakt te gebruiken.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Randovertrekken inschakelen

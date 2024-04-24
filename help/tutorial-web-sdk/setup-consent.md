@@ -3,7 +3,7 @@ title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten begi
 ![Optie voor verzending van berichten met toestemming](assets/consent-post-user-optin.png)
 
 
-Voor meer informatie over toestemming in Web SDK, zie [Voorkeuren voor toestemming van klanten ondersteunen](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Voor meer informatie over toestemming in Web SDK, zie [Voorkeuren voor toestemming van klanten ondersteunen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [Volgende: ](setup-event-forwarding.md)
 

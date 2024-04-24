@@ -3,7 +3,7 @@ title: Valideer de implementaties van SDK van het Web met de Verzekering van het
 description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience Platform Assurance kunt valideren. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Valideer de implementaties van SDK van het Web met de Verzekering van het Experience Platform
 
-Adobe Experience Platform Assurance is een product van Adobe Experience Cloud dat u helpt bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet. Meer informatie over [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance is een product van Adobe Experience Cloud dat u helpt bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet. Meer informatie over [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Leerdoelstellingen

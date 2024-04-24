@@ -3,7 +3,7 @@ title: Gegevenselementen maken
 description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijst in tags. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM 
 
 ### XDM in de gegevenslaag implementeren
 
-Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als voor uw implementatie geen tagbeheer wordt gebruikt, is deze aanpak mogelijk ideaal omdat u gegevens rechtstreeks vanuit uw toepassing naar XDM kunt verzenden met de [XDM sendEvent, opdracht](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Als u labels gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de volledige gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
+Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als voor uw implementatie geen tagbeheer wordt gebruikt, is deze aanpak mogelijk ideaal omdat u gegevens rechtstreeks vanuit uw toepassing naar XDM kunt verzenden met de [XDM sendEvent, opdracht](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u labels gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de volledige gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
 
 Hieronder is een voorbeeld van hoe de gegevenslaag als het gebruiken van het formaat van de Laag van de Gegevens van de Cliënt van de Adobe zou kijken:
 
@@ -128,16 +128,16 @@ Deze benadering omvat het in kaart brengen van individuele gegevenslaagvariabele
 >
 > Google-gegevenslaag
 > 
-> Als uw organisatie al Googles Analytics gebruikt en het traditionele Google dataLayer-object op uw website heeft, kunt u de [Google Data Layer-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in tags. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+> Als uw organisatie al Googles Analytics gebruikt en het traditionele Google dataLayer-object op uw website heeft, kunt u de [Google Data Layer-extensie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in tags. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
 
 ### Toewijzen aan XDM in de gegevensstroom
 
-Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van de gegevensstroom wordt genoemd [Gegevensvoorvoegsel voor gegevensverzameling](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
+Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van de gegevensstroom wordt genoemd [Gegevensvoorvoegsel voor gegevensverzameling](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
 
 #### Pros
 
 * Flexibel omdat u individuele variabelen aan XDM kunt in kaart brengen
-* Vermogen [nieuwe waarden berekenen](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) of [gegevenstypen transformeren](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) van een gegevenslaag voordat deze naar XDM gaat
+* Vermogen [nieuwe waarden berekenen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [gegevenstypen transformeren](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag voordat deze naar XDM gaat
 * Gebruik een [Toewijzingsinterface](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) om velden in uw brongegevens toe te wijzen aan XDM met een punt-en-klik UI
 
 #### Cons

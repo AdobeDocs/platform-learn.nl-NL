@@ -2,7 +2,7 @@
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [gegevensset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst, die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [gegevensset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst, die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
@@ -140,7 +140,7 @@ Om te bevestigen dat de gegevens in het datumpigment van Platform zijn geland, i
 
 >[!INFO]
 >
->De de vraagdienst van Adobe Experience Platform is een robuustere methode om gegevens in het meer te bevestigen, maar is voorbij het werkingsgebied van dit leerprogramma. Zie voor meer informatie [Gegevens verkennen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html) in de sectie Platform-zelfstudies.
+>De de vraagdienst van Adobe Experience Platform is een robuustere methode om gegevens in het meer te bevestigen, maar is voorbij het werkingsgebied van dit leerprogramma. Zie voor meer informatie [Gegevens verkennen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie Platform-zelfstudies.
 
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen

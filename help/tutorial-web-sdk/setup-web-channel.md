@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 0%
@@ -249,7 +249,7 @@ U kunt als volgt het inhoudexperiment maken:
 
 1. Kies desgewenst ook **[!UICONTROL Distribute evenly]**. Schakel deze optie in om ervoor te zorgen dat de splitsingen van de behandeling altijd gelijkmatig zijn verdeeld.
 
-[Meer informatie over contentexperimenten in Adobe Journey Optimizer-webkanalen](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Meer informatie over contentexperimenten in Adobe Journey Optimizer-webkanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Inhoud bewerken met de visuele hulp
 
@@ -350,7 +350,7 @@ Met de extensie Adobe Experience Platform Debugger, die beschikbaar is voor Chro
 
 Met het foutopsporingsprogramma op de Luminasite kunt u de ervaring met het webkanaal tijdens de productie valideren. Dit is beste praktijken zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om alles te verzekeren correct wordt gevormd.
 
-[Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 

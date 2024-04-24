@@ -3,7 +3,7 @@ title: Naamruimte configureren
 description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
-De [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) Hiermee stelt u een gemeenschappelijke bezoeker-id (de ECID) in voor alle SDK-toepassingen voor Adobe om de mogelijkheden van het Experience Cloud, zoals het delen van het publiek tussen toepassingen, te versterken. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
+De [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) Hiermee stelt u een gemeenschappelijke bezoeker-id (de ECID) in voor alle SDK-toepassingen voor Adobe om de mogelijkheden van het Experience Cloud, zoals het delen van het publiek tussen toepassingen, te versterken. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
 
-De [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) (Ja, er zijn er twee!) gebruikt de ECIDs en klant IDs om identiteitsgrafieken te produceren, die u toestaan om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
+De [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (Ja, er zijn er twee!) gebruikt de ECIDs en klant IDs om identiteitsgrafieken te produceren, die u toestaan om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ U moet de vorige lessen reeds hebben voltooid:
 >
 >De [Extensie Experience Cloud-id](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is niet nodig bij het implementeren van Adobe Experience Platform Web SDK, aangezien de Web SDK JavaScript-bibliotheek van de Bezoeker ID-service functionaliteit bevat.
 >
-> Als uw website de Experience Cloud-id Service al op uw website gebruikt—via de Bezoeker-API of de de etiketuitbreiding van de Dienst van identiteitskaart van het Experience Cloud - en u zou het willen blijven gebruiken terwijl het migreren aan de SDK van het Web van Adobe Experience Platform, moet u de recentste versie van Bezoeker API of de de marktextensie van de Dienst van identiteitskaart van het Experience Cloud gebruiken. Zie [ID-migratie](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) voor meer informatie .
+> Als uw website de Experience Cloud-id Service al op uw website gebruikt—via de Bezoeker-API of de de etiketuitbreiding van de Dienst van identiteitskaart van het Experience Cloud - en u zou het willen blijven gebruiken terwijl het migreren aan de SDK van het Web van Adobe Experience Platform, moet u de recentste versie van Bezoeker API of de de marktextensie van de Dienst van identiteitskaart van het Experience Cloud gebruiken. Zie [ID-migratie](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) voor meer informatie .
 
 ## Naamruimte maken
 

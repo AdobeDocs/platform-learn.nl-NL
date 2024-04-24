@@ -3,7 +3,7 @@ title: Een gegevensstroom configureren
 description: Leer hoe te om een gegevensstroom toe te laten en de oplossingen van het Experience Cloud te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe te om een gegevensstroom toe te laten en de toepassingen van het Experience Cloud te vormen.
 
-De gegevensstromen vertellen de Edge Network van Adobe Experience Platform waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen. Zie de [Grondbeginselen van het Vormen van een DataStream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) voor meer gedetailleerde informatie.
+De gegevensstromen vertellen de Edge Network van Adobe Experience Platform waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen. Zie de [Grondbeginselen van het Vormen van een DataStream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) voor meer gedetailleerde informatie.
 
 
 ![Web SDK, gegevensstromen, en Edge Network diagram](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 
 In de [Adobe Analytics instellen](setup-analytics.md) les treedt u de rapportreeks voor een pagina met voeten gebruikend het Web SDK van het Platform verzendt de Actie van de Gebeurtenis.
 
-Zie de [datastream configuratie heeft voorrang op documentatie](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) voor gedetailleerde instructies op hoe te om configuraties met betrekking tot gegevensstroom met voeten te treden.
+Zie de [datastream configuratie heeft voorrang op documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) voor gedetailleerde instructies op hoe te om configuraties met betrekking tot gegevensstroom met voeten te treden.
 
 U bent nu klaar om de uitbreiding van SDK van het Web van het Platform in uw markeringsbezit te installeren!
 

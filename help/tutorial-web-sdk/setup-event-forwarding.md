@@ -3,7 +3,7 @@ title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform.
 
-Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers rechtstreeks van de Edge Network van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in [Overzicht van doorsturen van gebeurtenissen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers rechtstreeks van de Edge Network van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in [Overzicht van doorsturen van gebeurtenissen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 ![Web SDK en gebeurtenis die diagram door:sturen](assets/dc-websdk-eventforwarding.png)
@@ -23,7 +23,7 @@ Om gebeurtenis te gebruiken die in Adobe Experience Platform door:sturen, moeten
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
