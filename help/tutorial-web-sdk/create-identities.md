@@ -3,9 +3,9 @@ title: Identiteiten maken
 description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identiteitskaart gebruikt om gebruikers-id's vast te leggen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar de Edge Network van het Platform via het voorwerp te verzenden XDM door een regel in markeringen te creëren.
+Met deze gegevenselementen op zijn plaats, bent u bereid om te beginnen gegevens naar de Edge Network van het Platform te verzenden door een regel in markeringen te creëren.
 
 [Volgende: ](create-tag-rule.md)
 

@@ -2,9 +2,9 @@
 title: Gegevens streamen naar Adobe Experience Platform met Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -230,7 +230,7 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
    ![Klantprofiel](assets/experience-platform-validate-dataset-custProfile.png)
 
-U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer!)!
+U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer! En Customer Journey Analytics!).
 
 
 [Volgende: ](setup-analytics.md)

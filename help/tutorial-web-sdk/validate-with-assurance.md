@@ -3,16 +3,16 @@ title: Valideer de implementaties van SDK van het Web met de Verzekering van het
 description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience Platform Assurance kunt valideren. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
 # Valideer de implementaties van SDK van het Web met de Verzekering van het Experience Platform
 
-Adobe Experience Platform Assurance is een product van Adobe Experience Cloud dat u helpt bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet. Meer informatie over [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance is een functie waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet. Meer informatie over [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Leerdoelstellingen
@@ -51,10 +51,11 @@ In de les Foutopsporing bekijken hoe we dit deden:
 1. Selecteer de **[!UICONTROL Edge]** en selecteert u **[!UICONTROL Connect]**
 
    ![Edge-overtrekken aansluiten](assets/analytics-debugger-edgeTrace.png)
-1. Als Edge Trace is ingeschakeld, ziet u bovenaan een pictogram voor uitgaande koppelingen. Selecteer het pictogram om Verzekering te openen. Er wordt een nieuw tabblad in de browser geopend.
+1. Als Edge Trace is ingeschakeld, ziet u bovenaan een pictogram voor uitgaande koppelingen. Selecteer het pictogram om Verzekering te openen.
 
    ![Beginnen met betrouwbaarheidssessie](assets/validate-debugger-start-assurnance.png)
 
+1. Er wordt een nieuw browsertabblad geopend met de interface voor Betrouwbaarheid.
 
 ### Een Assurance-sessie starten vanuit de interface voor Betrouwbaarheid
 
@@ -88,7 +89,7 @@ Er is beperkte informatie om in deze fase van uw implementatie te bekijken. Éé
 
 In toekomstige lessen, gebruikt u Verzekering om volledig verwerkte nuttige lasten te bevestigen die een Adobe toepassing bereiken die in uw gegevensstroom wordt toegelaten.
 
-Met een voorwerp XDM dat nu op een pagina, en met de kennis van hoe te om uw gegevensinzameling te bevestigen vuurt, bent u klaar aan opstelling de individuele toepassingen van de Adobe gebruikend het Web SDK van het Platform.
+Met een voorwerp XDM dat nu op een pagina, en met de kennis van hoe te om uw gegevensinzameling te bevestigen vuurt, bent u klaar aan opstellings Experience Platform en de individuele toepassingen van de Adobe gebruikend het Web SDK van het Platform.
 
 [Volgende: ](setup-experience-platform.md)
 

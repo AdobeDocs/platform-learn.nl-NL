@@ -3,9 +3,9 @@ title: Valideer de implementaties van SDK van het Web met Foutopsporing van het 
 description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1153'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor 
 * [Firefox-extensie](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Als u foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
+Als u debugger nooit eerder hebt gebruikt, zou u deze vijf-minieme overzichtsvideo kunnen willen letten:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In deze les gebruikt u de opdracht [Adobe Experience Cloud Debugger-extensie](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) om de eigenschap tag te vervangen die op de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen eigenschap.
 
-Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. U kunt uw productiewebsite in uw browser, maar met uw *ontwikkeling* tagomgeving. Hierdoor kunt u op een betrouwbare manier wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases. Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
+Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. Hiermee kunt u uw productiewebsite laden in uw browser, maar met uw *ontwikkeling* tagbibliotheek. Hierdoor kunt u op een betrouwbare manier wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases. Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
 
 ## Leerdoelstellingen
 
@@ -64,7 +64,7 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
    ![Handelingen selecteren > Vervangen](assets/validate-switch-environment.png)
 
-1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer de eigenschap; in dit geval `Web SDK Course 3`
+1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer uw eigenschap
 1. Selecteer uw `Development` milieu
 1. Selecteer de **[!UICONTROL Apply]** knop
 

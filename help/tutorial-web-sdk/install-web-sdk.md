@@ -3,9 +3,9 @@ title: De tagextensie Adobe Experience Platform Web SDK installeren en configure
 description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,7 @@ U moet de vorige lessen in deze zelfstudie hebben voltooid:
 
 * [Een gegevensstroom configureren](configure-datastream.md)
 
-## Experience Platform Web SDK-extensie installeren
-
-### Een eigenschap toevoegen
+### Een eigenschap voor een tag toevoegen
 
 Eerst moet u een eigenschap tag hebben. Een eigenschap is een container voor alle JavaScript, regels en andere functies die vereist zijn om gegevens van een webpagina te verzamelen en naar verschillende locaties te verzenden.
 
@@ -57,7 +55,7 @@ Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, k
    ![Web SDK-extensie installeren](assets/extension-platform-web-sdk.png)
 
 
-## De SDK van het Web van het Platform van de verbinding aan uw gegevensstroom
+## De extensie koppelen aan uw gegevensstroom
 
 Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later bij. Het enige wat u nu moet doen is de uitbreiding met uw gegevensstroom verbinden:
 
@@ -71,19 +69,17 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 
    ![Gegevensstroom selecteren](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Nu u het Web SDK van het Platform hebt geïnstalleerd en het aan de datastream associeerde, bent u klaar om gegevenselementen aan een voorwerp van XDM met het schema te beginnen in kaart te brengen u creeerde.
-
->[!NOTE]
->
->Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u Platform Web SDK op uw eigen website implementeert, moet u een aparte gegevensstroom voor elke omgeving configureren en deze toewijzen aan uw tagomgevingen.
+Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe Experience Platform Web SDK configureren](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >Terwijl u geen CNAME in [!UICONTROL Edge domain] het plaatsen in deze les, adviseert de Adobe u een CNAME gebruikt wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [De extensie Adobe Experience Platform Web SDK configureren](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u het Web SDK van het Platform op uw eigen website uitvoert, zou u een afzonderlijke gegevensstroom voor elk milieu moeten vormen en hen dienovereenkomstig in kaart brengen in de uitbreidingsconfiguratie.
 
-
+Nu u het Web SDK van het Platform hebt geïnstalleerd en het aan de datastream associeerde, bent u klaar om te beginnen gegevens te verzamelen.
 
 [Volgende: ](create-data-elements.md)
 

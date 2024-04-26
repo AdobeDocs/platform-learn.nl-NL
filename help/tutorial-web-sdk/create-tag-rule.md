@@ -3,21 +3,16 @@ title: Tagregels maken
 description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
 
 # Tagregels maken
 
-Leer hoe u gebeurtenissen naar de Edge Network Platform kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gebieden te verzenden XDM.
-
->[!NOTE]
->
-> Voor demonstratiedoeleinden bouwen de oefeningen in deze les op de vorige lessen voort om gebeurtenissen van gebruikers op te sturen [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Leer hoe u gebeurtenissen naar de Edge Network Platform kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gegevens te verzenden.
 
 ## Leerdoelstellingen
 
@@ -45,29 +40,28 @@ U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](http
 
 Voor een beter beheer van de regels in tags is het raadzaam een standaardnaamgevingsconventie te volgen. In deze zelfstudie wordt een naamgevingsconventie gebruikt die uit vijf delen bestaat:
 
-* [**locatie**] - [**event**] - [**doel**] - [**gereedschap**] - [**bestellen**]
+* [**locatie**] - [**event**] - [**doel**] - [**bestellen**]
 
 waar;
 
 1. **locatie** is de pagina of pagina&#39;s op de plaats waar de regel wordt geactiveerd
 1. **event** is de trigger voor de regel
 1. **doel** is de belangrijkste handeling die door de regel wordt uitgevoerd
-1. **gereedschap** is de specifieke toepassing of de toepassingen die in de actiestreep voor die regel worden gebruikt, die met Web SDK zeldzaam zou moeten zijn
-1. **opeenvolging** is de volgorde waarin de regel ten opzichte van andere regels moet worden toegepast
+1. **bestellen** is de volgorde waarin de regel ten opzichte van andere regels moet worden toegepast
 <!-- minor update -->
 
 ## Tagregels maken
 
 In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les zullen worden gebruikt:
 
-* **[!UICONTROL Update variable]** koppelen gegevenselementen aan XDM-velden
+* **[!UICONTROL Update variable]** koppelen gegevenselementen aan eigenschappen in een XDM-object
 * **[!UICONTROL Send Event]** verzendt het XDM-object naar de Edge Network Experience Platform
 
 In de rest van deze les:
 
-1. Een regel maken om een &quot;algemene configuratie&quot; van XDM-velden te definiëren (met [!UICONTROL Update variable] die we op elke pagina van de website (bijvoorbeeld de paginanaam) willen verzenden met de **[!UICONTROL Update Variable]** handeling.
+1. Maak een regel met de **[!UICONTROL Update variable]** handeling om een &quot;globale configuratie&quot; van XDM-velden te definiëren.
 
-1. Maak aanvullende regels die onze &quot;globale configuratie&quot; overschrijven of extra XDM-velden (met [!UICONTROL Update variable] nogmaals) die alleen onder bepaalde omstandigheden relevant zijn (bijvoorbeeld door productdetails op productpagina&#39;s toe te voegen).
+1. Maak aanvullende regels met de **[!UICONTROL Update variable]** actie die onze &quot;globale configuratie&quot;met voeten treedt en extra gebieden XDM onder bepaalde voorwaarden bijdragen (bijvoorbeeld, toevoegend productdetails op productpagina&#39;s).
 
 1. Een andere regel maken met de opdracht **[!UICONTROL Send Event]** handeling die het volledige XDM-object naar Adobe Experience Platform Edge Network verzendt.
 
@@ -77,11 +71,9 @@ Deze video geeft een overzicht van het proces:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Regels voor variabelen bijwerken
+### Algemene configuratievelden
 
-#### Algemene configuratie
-
-U kunt als volgt tagregels maken voor de globale XDM-velden:
+Een labelregel maken voor de globale XDM-velden:
 
 1. Open de eigenschap tag die u voor deze zelfstudie gebruikt
 
@@ -118,11 +110,7 @@ U kunt als volgt tagregels maken voor de globale XDM-velden:
 
    ![Variabel schema bijwerken](assets/create-rule-update-variable.png)
 
-Wijs nu uw [!UICONTROL data elements] aan de [!UICONTROL schema] wordt gebruikt door uw XDM-object.
-
->[!NOTE]
-> 
-> U kunt toewijzen aan afzonderlijke eigenschappen of volledige objecten. In dit voorbeeld wijst u een afbeelding toe aan afzonderlijke eigenschappen.
+Wijs nu uw [!UICONTROL data elements] aan de [!UICONTROL schema] wordt gebruikt door uw XDM-object. U kunt toewijzen aan afzonderlijke eigenschappen of volledige objecten. In dit voorbeeld koppelt u de eigenschappen aan individuele eigenschappen:
 
 1. Het veld eventType zoeken en selecteren
 
@@ -160,13 +148,13 @@ Wijs nu uw [!UICONTROL data elements] aan de [!UICONTROL schema] wordt gebruikt 
 
    >[!TIP]
    >
-   > while `eventType` instellen op `web.webpagedetails.pageViews` noch `web.webPageDetials.pageViews.value` Adobe Analytics is vereist om een baken als paginaweergave te verwerken. Het is handig om over een standaardmanier te beschikken om een paginaweergave voor andere downstreamtoepassingen aan te geven.
+   > while `eventType` instellen op `web.webpagedetails.pageViews` noch `web.webPageDetails.pageViews.value` Adobe Analytics is vereist om een baken als paginaweergave te verwerken. Het is handig om over een standaardmanier te beschikken om een paginaweergave voor andere downstreamtoepassingen aan te geven.
 
 
 1. Selecteren **[!UICONTROL Keep Changes]** en vervolgens **[!UICONTROL Save]** de regel in het volgende scherm om het maken van de regel te voltooien
 
 
-#### Productpaginavelden
+### Productpaginavelden
 
 Nu gebruiken **[!UICONTROL Update variable]** in extra, gerangschikte regels om het voorwerp te verrijken XDM alvorens het te verzenden naar [!UICONTROL Platform Edge Network].
 
@@ -235,7 +223,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 1. Selecteren **[!UICONTROL Save]** om de regel op te slaan
 
 
-#### Kaarten weergeven
+### Kaarten weergeven
 
 U kunt een volledige array toewijzen aan een XDM-object, mits de array overeenkomt met de indeling van het XDM-schema. Het gegevenselement van de aangepaste code `cart.productInfo` u hebt eerdere lussen gemaakt via de `digitalData.cart.cartEntries` gegevenslaagobject op Luma en zet dit om in de vereiste indeling van het `productListItems` object van het XDM-schema.
 
