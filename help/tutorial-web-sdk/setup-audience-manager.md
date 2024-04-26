@@ -2,17 +2,18 @@
 title: Audience Manager instellen met Platform Web SDK
 description: Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
 
 # Audience Manager instellen met Platform Web SDK
 
-Leer hoe te opstelling Adobe Audience Manager gebruikend het Web SDK van het Platform en de implementatie te bevestigen gebruikend een koekjesbestemming.
+Leer hoe u Adobe Audience Manager instelt met de SDK van Adobe Experience Platform Web en de implementatie valideert met een cookiebestemming.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) is de Adobe Experience Cloud-oplossing die alles biedt wat nodig is om commercieel relevante informatie over sitebezoekers te verzamelen, verhandelbare segmenten te maken en gerichte reclame en inhoud aan het juiste publiek te bezorgen.
 
@@ -35,7 +36,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## De gegevensstroom configureren
 
-De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van SDK van het Web van het Platform gaat XDM gegevens over die naar de Edge Network van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
+De implementatie van de Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie die [server-kant door:sturen (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Door:sturen op de server geeft Adobe Analytics-aanvraaggegevens door aan de Audience Manager. Een implementatie van SDK van het Web van het Platform gaat XDM gegevens over die naar de Edge Network van het Platform aan Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
@@ -76,7 +77,7 @@ Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experiencele
 
 >[!NOTE]
 >
->Alle gegevens XDM worden verzonden naar Audience Manager als het in de gegevensstroom wordt toegelaten, nochtans zouden de gegevens 24u kunnen vergen tot het in het Ongebruikte rapport van Signalen beschikbaar is. Maak expliciete kenmerken voor de XDM-gegevens die u direct in de Audience Manager wilt gebruiken, zoals in deze oefening wordt beschreven.
+>Alle gegevens XDM worden verzonden naar Audience Manager als het in de gegevensstroom wordt toegelaten, nochtans zouden de gegevens 24u kunnen vergen tot het in het Ongebruikte rapport van Signalen beschikbaar is. Maak expliciete eigenschappen voor de XDM-gegevens die u direct in de Audience Manager wilt gebruiken, zoals in deze oefening wordt beschreven.
 
 1. Selecteren **[!UICONTROL Audience Data]** >  **[!UICONTROL Traits]**
 1. Selecteren **[!UICONTROL Add New]** >  **[!UICONTROL Rule-Based]** eigenschap
@@ -96,12 +97,12 @@ Als de gegevensbron is opgeslagen, stelt u een [eigenschap](https://experiencele
 
 ## Een segment maken
 
-De volgende stap is het creëren van een **segment** en wijs uw nieuw gedefinieerde kenmerk toe aan dit segment.
+De volgende stappen zijn het maken van een **segment** en wijs uw onlangs bepaalde eigenschap aan dit segment toe.
 
 1. Selecteren **[!UICONTROL Audience Data]** in de bovenste navigatie en selecteer **[!UICONTROL Segments]**
 1. Selecteren **[!UICONTROL Add New]** linksboven op de pagina om de segmentbuilder te openen
 1. Geef uw segment een vriendelijke naam en beschrijving, zoals `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Select a Folder]** waar uw segment in de ruit aan het recht zal worden bewaard. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
+1. **[!UICONTROL Select a Folder]** waarbij het segment wordt opgeslagen in het deelvenster rechts. U kunt een map maken door **het pictogram + selecteren** naast een bestaande bovenliggende map. U kunt deze nieuwe map een naam geven `Platform Web SDK tutorial`.
 1. Voeg een integratiecode toe, die in dit geval een willekeurige reeks getallen is.
 1. In de **[!UICONTROL Data Source]** sectie, selecteert u **[!UICONTROL Audience Manager]** en de eerder gemaakte gegevensbron
 1. Breid uit **[!UICONTROL Traits]** sectie en zoek naar het kenmerk dat u hebt gemaakt
@@ -184,4 +185,4 @@ Nu u deze les hebt voltooid, zou u moeten kunnen zien hoe het Web SDK van het Pl
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

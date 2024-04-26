@@ -2,17 +2,18 @@
 title: Een XDM-schema voor webgegevens maken
 description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 # Een XDM-schema voor webgegevens maken
 
-Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen.
+Leer hoe u een XDM-schema voor webgegevens maakt in de interface van de Adobe Experience Platform-gegevensverzameling.
 
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het verzamelen van gegevens in Adobe Experience Platform.
 
@@ -22,7 +23,7 @@ De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Web
 
 De ondernemingen hebben hun eigen taal voor het communiceren over hun domein. De autohandel handelt merk, modellen, en cilinders. Luchtvaartmaatschappijen hebben te maken met vluchtnummers, dienstencategorieën en zitplaatsen. Sommige van deze termen zijn uniek voor een bepaalde onderneming, sommige worden gedeeld door een verticale industrie, en sommige worden gedeeld door bijna alle ondernemingen. Voor termen die worden gedeeld tussen een verticale of zelfs bredere branche, kunt u krachtige dingen met uw gegevens beginnen te doen wanneer u deze termen op een gemeenschappelijke manier noemt en structureert.
 
-Bijvoorbeeld, behandelen vele ondernemingen bevelen. Wat als deze bedrijven gezamenlijk besloten om een order op dezelfde manier te modelleren? Bijvoorbeeld, wat als het gegevensmodel uit een voorwerp met een `priceTotal` eigendom die de totale prijs van de order vertegenwoordigde? Wat als dat object ook eigenschappen had met een naam `currencyCode` en `purchaseOrderNumber`? Misschien bevat het object order een eigenschap met de naam `payments` dat zou een array van betalingsobjecten zijn . Elk object zou een betaling voor de bestelling zijn. Een klant heeft bijvoorbeeld een deel van de bestelling betaald met een cadeaukaart en de rest betaald met een creditcard. U kunt beginnen een model te construeren dat er ongeveer als volgt uitziet:
+Bijvoorbeeld, behandelen vele ondernemingen bevelen. Wat als deze bedrijven gezamenlijk besloten om een order op dezelfde manier te modelleren? Bijvoorbeeld, wat als het gegevensmodel uit een voorwerp met een `priceTotal` eigendom die de totale prijs van de order vertegenwoordigde? Wat als dat object ook eigenschappen had met een naam `currencyCode` en `purchaseOrderNumber`? Misschien bevat het object order een eigenschap met de naam `payments` dat zou een array van betalingsobjecten zijn . Elk object zou een betaling voor de bestelling zijn. Bijvoorbeeld, misschien betaalde een klant voor een deel van de orde met een geschenkkaart en de rest gebruikend een creditcard. U kunt beginnen een model te construeren dat er ongeveer als volgt uitziet:
 
 ```json
 {
@@ -125,7 +126,7 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 
    ![Veldgroep toevoegen](assets/schema-add-field-group.png)
 
-Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL display name] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke groepen behoren **[!UICONTROL Consumer Experience Event]**.
+Bij beide veldgroepen zult u zien dat u toegang hebt tot de meestgebruikte sleutelwaardeparen die vereist zijn voor gegevensverzameling op het web. De [!UICONTROL display name] van elk gebied verschijnt aan marketers in de segmentbouwerinterface van op platform-gebaseerde toepassingen en u kunt de vertoningsnaam van standaardgebieden veranderen om uw behoeften aan te passen. U kunt ook velden verwijderen die u niet wilt. Wanneer u op één van beide naam van de gebiedsgroep klikt, benadrukt de interface welke sleutel-waarde paargroeperingen tot het behoren. In het onderstaande voorbeeld ziet u tot welke velden behoren **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema veldgroepen](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 
 >[!IMPORTANT]
 >
-> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
+> Het is mogelijk **[!UICONTROL Profile]** voor een schema alvorens uw schema op te slaan. **Niet gebruiken** het op dit punt mogelijk te maken. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd zonder de volledige sandbox opnieuw in te stellen. De gebieden kunnen niet uit schema&#39;s op dit punt ook worden verwijderd, hoewel het mogelijk is om [Velden in de gebruikersinterface verwijderen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >
 >Deze instelling wordt tijdens het [Experience Platform instellen](setup-experience-platform.md) les.
@@ -154,11 +155,11 @@ Om deze les te voltooien, selecteer **[!UICONTROL Save]** rechtsboven.
 ![Schema opslaan](assets/schema-select-save.png)
 
 
-Nu kunt u naar dit schema verwijzen wanneer u de uitbreiding van SDK van het Web aan uw markeringsbezit toevoegt.
+Nu, kunt u dit schema van verwijzingen voorzien wanneer u de uitbreiding van SDK van het Web aan uw markeringsbezit toevoegt.
 
 
 [Volgende: ](configure-identities.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

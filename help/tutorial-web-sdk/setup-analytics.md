@@ -2,17 +2,18 @@
 title: Adobe Analytics instellen met Experience Platform Web SDK
 description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2678'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics instellen met Platform Web SDK
+# Adobe Analytics instellen met Adobe Experience Platform Web SDK
 
-Meer informatie over het instellen van Adobe Analytics met [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), maakt u labelregels om gegevens naar Adobe Analytics te verzenden en controleert u of Analytics gegevens vastlegt zoals u had verwacht.
+Meer informatie over het instellen van Adobe Analytics met [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), maakt u labelregels om gegevens naar Adobe Analytics te verzenden en controleert u of Analytics gegevens vastlegt zoals u had verwacht.
 
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) is een industrie-leidende toepassing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
 
@@ -23,7 +24,7 @@ Meer informatie over het instellen van Adobe Analytics met [Experience Platform 
 Aan het eind van deze les, zult u kunnen:
 
 * Een gegevensstroom configureren om Adobe Analytics in te schakelen
-* Weet welke standaard-XDM-velden automatisch worden toegewezen aan analytische variabelen
+* Weet welke standaard-XDM velden automatisch worden toegewezen aan analytische variabelen
 * Aangepaste analytische variabelen instellen met de Adobe Analytics ExperienceEvent-sjabloonveldgroep of verwerkingsregels
 * Gegevens naar een andere rapportsuite verzenden door de gegevensstroom te overschrijven
 * Adobe Analytics-variabelen valideren met Foutopsporing en Betrouwbaarheid
@@ -34,13 +35,13 @@ Om deze les te voltooien, moet u eerst:
 
 * Ben vertrouwd met en heb toegang tot Adobe Analytics.
 
-* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [Maak een](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [Maak een](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
 ## De gegevensstroom configureren
 
-Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw gegevensstroom vertelt dan de Edge Network van het Platform aan welke Adobe Analytics het rapport uw gegevens zou moeten door:sturen.
+Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw gegevensstroom vertelt dan de Edge Network van het Platform aan welke Adobe Analytics rapportreeksen uw gegevens zouden moeten worden verzonden.
 
 1. Ga naar [Gegevensverzameling](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecteer in de linkernavigatie de optie **[!UICONTROL Datastreams]**
@@ -51,7 +52,7 @@ Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw
 1. Selecteren **[!UICONTROL Add Service]**
    ![Een service toevoegen aan de gegevensstroom](assets/datastream-analytics-addService.png)
 1. Selecteren **[!UICONTROL Adobe Analytics]** als de **[!UICONTROL Service]**
-1. Voer de  **[!UICONTROL Report Suite ID]** van uw pakket ontwikkelingsrapporten
+1. Voer de **[!UICONTROL Report Suite ID]** van uw pakket ontwikkelingsrapporten
 1. Selecteren **[!UICONTROL Save]**
 
    ![Analyse gegevensstroom opslaan](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw
 
 >[!WARNING]
 >
->In deze zelfstudie configureert u alleen de Adobe Analytics-rapportsuite voor uw ontwikkelomgeving. Wanneer u gegevensstromen voor uw eigen website creeert, zou u extra gegevensstromen en rapportsuites voor uw het opvoeren en productiemilieu&#39;s creëren.
+>In deze zelfstudie configureert u alleen de Adobe Analytics-rapportsuite voor uw ontwikkelomgeving. Wanneer u gegevensstromen voor uw eigen website creeert, zou u extra gegevensstromen en rapportsuites voor uw het opvoeren en productiemilieu&#39;s moeten tot stand brengen.
 
 ## XDM-schema&#39;s en analysevariabelen
 
@@ -117,7 +118,7 @@ Het schema dat in het dialoogvenster [Een schema configureren](configure-schemas
 De afzonderlijke secties van de producttekenreeks Analytics worden ingesteld via verschillende XDM-variabelen onder de `productListItems` object.
 >Vanaf 18 augustus 2022, `productListItems[].SKU` neemt prioriteit aan afbeelding aan de productnaam in de s.products variabele.
 >De waarde die is ingesteld op `productListItems[].name` alleen aan de productnaam wordt toegewezen als `productListItems[].SKU` bestaat niet. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
->Stel geen lege tekenreeks of null in op  `productListItems[].SKU`. Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
+>Stel geen lege tekenreeks of null in op `productListItems[].SKU`. Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
 
 Voor de meest recente lijst met toewijzingen raadpleegt u [Variabeletoewijzing analyseren in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -126,7 +127,7 @@ Voor de meest recente lijst met toewijzingen raadpleegt u [Variabeletoewijzing a
 
 Alle velden in het XDM-schema zijn beschikbaar voor Adobe Analytics als Context Data Variables met het volgende voorvoegsel `a.x.`. Bijvoorbeeld: `a.x.web.webinteraction.region`
 
-In deze oefening, wijst u één variabele XDM aan een steun toe. Voer dezelfde stappen uit voor elke aangepaste toewijzing die u voor een toepassing moet uitvoeren `eVar`, `prop`, `event`of variabele die toegankelijk is via verwerkingsregels.
+In deze oefening, wijst u één variabele XDM aan een steun toe. Voer dezelfde stappen uit voor elke aangepaste toewijzing die u moet uitvoeren voor elke aangepaste toewijzing `eVar`, `prop`, `event`of variabele die toegankelijk is via verwerkingsregels.
 
 1. Naar de interface Analytics
 1. Ga naar [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites]
@@ -187,7 +188,7 @@ U kunt wijzigen naar welke Adobe Analytics-rapportsuite gegevens worden verzonde
 
 ### Vorm de gegevensstroom voor een de opheffing van de rapportreeks
 
-U configureert als volgt een overschrijvingsinstelling voor de Adobe Analytics-rapportsuite in de gegevensstroom:
+U configureert als volgt de overschrijvingsinstelling van de Adobe Analytics-rapportsuite in de gegevensstroom:
 
 1. De gegevensstroom openen
 1. Bewerk de **[!UICONTROL Adobe Analytics]** configuratie door de ![meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en selecteert u vervolgens **[!UICONTROL Edit]**
@@ -243,7 +244,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. Als de **[!UICONTROL Type]**, selecteert u `web.webpagedetails.pageViews`
 
-1. Als de **[!UICONTROL XDM data]**, selecteert u de `xdm.variable.content` u in [Gegevenselementen maken](create-data-elements.md) les
+1. Als de **[!UICONTROL XDM data]**, selecteert u de `xdm.variable.content` gegevenselement dat u in het dialoogvenster [Gegevenselementen maken](create-data-elements.md) les
 
    ![Gegevensstroomoverschrijving voor analyse](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ In de vorige oefening bevestigde u dat Adobe Analytics ECID, paginameningen, het
 Zoals u in [Betrouwbaarheid](validate-with-assurance.md) les, er zijn verscheidene manieren om een zitting van de Verzekering in werking te stellen. Aangezien u reeds Adobe Experience Platform Debugger open hebt met een zitting van het Spoor van de Rand die van de laatste oefening in werking wordt gesteld, adviseren wij toegang tot Verzekering door Debugger:
 ![Betrouwbaarheid via Adobe Experience Platform Data Collection](assets/assurance-open-aep-debugger.png)
 
-Binnen de **[!UICONTROL "Web SDK Tutorial 3"]** Verzekeringssessie openen **[!UICONTROL "hitdebugger"]** in de bar van het Onderzoek van Gebeurtenissen om de resultaten aan de Adobe te filtreren Analytics Post Verwerkte gegevens.
+Binnen de **[!UICONTROL "Web SDK Tutorial 3"]** Verzekeringssessie openen **[!UICONTROL "hitdebugger"]** in de zoekbalk voor gebeurtenissen om de resultaten naar de verwerkte gegevens van Adobe Analytics Post te filteren.
 ![Verzekeringsanalyse Adobe na verwerking van gegevens](assets/assurance-hitdebugger.png)
 
 ### Validatie van Experience Cloud-id
@@ -452,4 +453,4 @@ Gefeliciteerd! Je hebt het gedaan! Dit is het einde van de les en nu bent u klaa
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

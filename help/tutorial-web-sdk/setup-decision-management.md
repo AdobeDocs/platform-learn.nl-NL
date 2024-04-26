@@ -1,22 +1,23 @@
 ---
-title: Beslissingsbeheer instellen met Platform Web SDK
+title: Journey Optimizer-besluitvormingsbeheer instellen met Platform Web SDK
 description: Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # Beslissingsbeheer instellen met Platform Web SDK
 
-Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
+Leer hoe u Adobe Journey Optimizer Decision Management-functionaliteit implementeert met Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
 
-Door deze zelfstudie te volgen, zijn Journey Optimizer-gebruikers uitgerust om offer decisioning-functies effectief toe te passen, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
+Met deze zelfstudie zijn Journey Optimizer-gebruikers uitgerust om functies voor Beslissingsbeheer te gebruiken, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
 
 
 ![WebSDK en Adobe Analytics-diagram](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
 
 ## Beperkingen
 
-Neem nota van de volgende beperking:
-
-* Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Adobe Journey Optimizer. Als u een beslissingsregel maakt die is gebaseerd op een gebeurtenis, kunt u deze regel niet toepassen in een aanbieding.
+Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Adobe Journey Optimizer. Als u een beslissingsregel maakt die is gebaseerd op een gebeurtenis, kunt u deze regel niet toepassen in een aanbieding.
 
 ## Toegang verlenen tot het beheer van besluiten
 
@@ -140,7 +139,7 @@ Ten eerste moet u de terminologie begrijpen die wordt gebruikt in de interface v
 
 In deze les, implementeert u een voorbeeld van het gebruik van beloningen van de Loyalty om het Beheer van het Besluit te begrijpen gebruikend SDK van het Web.
 
-Met dit gebruiksscenario kunt u beter begrijpen hoe Journey Optimizer uw klanten de beste aanbieding kan bieden door gebruik te maken van de gecentraliseerde aanbiedingsbibliotheek en de besluitvormingsengine voor de aanbieding.
+Met dit gebruiksscenario kunt u beter begrijpen hoe Journey Optimizer uw klanten de beste aanbieding kan bieden door gebruik te maken van de gecentraliseerde aanbiedingsbibliotheek en de beslissingsengine voor Beslissingsbeheer.
 
 >[!NOTE]
 >
@@ -311,7 +310,7 @@ Voer de volgende stappen uit om de beslissing te maken:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Volgende moet u toevoegen **evaluatiecriteria** voor het toepassingsgebied van de beschikking. Klikken **Toevoegen** en kies de eerder gemaakte &#39;*Loyalty&#39;s*&#39; **collectie** die alle trouwe aanbiedingen bevat die in overweging moeten worden genomen.
+1. Volgende moet u toevoegen **evaluatiecriteria** voor het toepassingsgebied van de beschikking. Klikken **Toevoegen** en kies de eerder gemaakte &#39;*Loyalty&#39;s*&#39; **collectie, die alle loyaliteitsaanbiedingen bevat om te overwegen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Voer de volgende stappen uit om de beslissing te maken:
 
 ## Simulaties
 
-Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt dit doen door **testprofielen**. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
+Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze validatie uitvoeren met **testprofielen**. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
 
 Als u wilt beginnen met testen, selecteert u de optie **Simulaties** van de **Aanbiedingen** -menu.
 
@@ -370,7 +369,7 @@ Als u wilt beginnen met testen, selecteert u de optie **Simulaties** van de **Aa
 
 De **Adobe Experience Platform Debugger** Deze extensie, die zowel beschikbaar is voor Chrome als Firefox, analyseert uw webpagina&#39;s om problemen te identificeren bij de implementatie van Adobe Experience Cloud-oplossingen.
 
-U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Dit is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om alles te verzekeren correct wordt gevormd.
+U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Deze bevestiging is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
 [Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

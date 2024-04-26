@@ -1,18 +1,19 @@
 ---
-title: Een eigenschap voor het doorsturen van gebeurtenissen instellen
+title: Opstelling een gebeurtenis door:sturen met de gegevens van SDK van het Web van het Platform
 description: Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
 
-# Een eigenschap voor het doorsturen van gebeurtenissen instellen
+# De gebeurtenis van de opstelling door:sturen met de gegevens van SDK van het Web van het Platform
 
-Leer hoe te om gebeurtenis-door:sturen bezit te gebruiken gebruikend de gegevens van SDK van het Web van het Experience Platform.
+Leer hoe te om gebeurtenis te gebruiken die met de gegevens van SDK van het Web van Adobe Experience Platform door:sturen.
 
 Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers rechtstreeks van de Edge Network van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in [Overzicht van doorsturen van gebeurtenissen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de
 Om gebeurtenis te gebruiken die in Adobe Experience Platform door:sturen, moeten de gegevens naar de Edge Network van Adobe Experience Platform eerst worden verzonden gebruikend één of meerdere van de volgende drie opties:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,11 +47,11 @@ Aan dit eind van deze les, zult u kunnen:
 ## Vereisten
 
 * Een softwarelicentie die het doorsturen van gebeurtenissen omvat. Het doorsturen van gebeurtenissen is een betaalde eigenschap van de Inzameling van Gegevens. Neem contact op met het accountteam van uw Adobe voor meer informatie.
-* Het door:sturen van de gebeurtenis toegelaten in uw organisatie van het Experience Cloud.
+* Het door:sturen van de gebeurtenis wordt toegelaten in uw organisatie van het Experience Cloud.
 * Gebruikersmachtiging voor het doorsturen van gebeurtenissen. (In [Admin Console](https://adminconsole.adobe.com/), onder het Adobe Experience Platform Launch-product, machtigingsitems voor[!UICONTROL Platforms] > [!UICONTROL Edge] en alle [!UICONTROL Property Rights]). Wanneer u het geneesmiddel heeft gekregen, zie [!UICONTROL Event Forwarding] in de linkernavigatie van de interface van de Gegevensverzameling:
   ![Eigenschappen van Event Forwarding](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web of Mobile SDK wordt geconfigureerd om gegevens naar Edge Network te verzenden. U moet de volgende lessen uit deze zelfstudie hebben geleerd:
+* Adobe Experience Platform Web of Mobiele SDK wordt gevormd om gegevens naar Edge Network te verzenden. U moet de volgende lessen uit deze zelfstudie hebben geleerd:
 
    * Eerste configuratie
 
@@ -76,14 +77,14 @@ Begin door een gebeurtenis-door:sturen bezit te creëren:
 1. Selecteer **[!UICONTROL New Property]**.
    ![Eigenschappen van Event Forwarding](assets/event-forwarding-new.png)
 
-1. Geef de eigenschap een naam. In dit geval `Server-Side - Web SDK Course`
+1. Geef de eigenschap een naam. In dit geval: `Server-Side - Web SDK Course`
 
 1. Selecteer **[!UICONTROL Save]**.
    ![event-forward, eigenschap save](assets/event-forwarding-save.png)
 
 ## De gegevensstroom configureren
 
-Voor gebeurtenis door:sturen om de gegevens te gebruiken u naar het netwerk van de Rand verzendt, moet u het onlangs gecreeerde gebeurtenis-door:sturen bezit aan de zelfde gegevensstroom verbinden die wordt gebruikt om gegevens naar de oplossingen van de Adobe te verzenden.
+Voor gebeurtenis door:sturen om de gegevens te gebruiken u naar de Edge Network van het Platform verzendt, moet u het onlangs gecreeerde gebeurtenis-door:sturen bezit aan de zelfde gegevensstroom verbinden die wordt gebruikt om gegevens naar de oplossingen van de Adobe te verzenden.
 
 Om Doel in de gegevensstroom te vormen:
 
@@ -113,7 +114,7 @@ Herhaal deze stappen voor het opvoeren en productie gegevensstromen wanneer u be
 
 ## Gegevens doorsturen van de Edge Network Platform naar een oplossing zonder Adobe
 
-In deze oefening zult u leren hoe te opstelling een gebeurtenis-door:sturen gegevenselement, een gebeurtenis-door:sturen regel vormen, en het gebruiken van een derde genoemd hulpmiddel bevestigen [Webhaak.site](https://webhook.site/).
+In deze oefening leert u hoe te opstelling een gebeurtenis-door:sturen gegevenselement, een gebeurtenis-door:sturen regel vormen, en het gebruiken van een derde genoemd hulpmiddel bevestigen [Webhaak.site](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -209,7 +210,7 @@ Er zijn een paar belangrijkste verschillen tussen het vormen regels in een marke
 
 * **[!UICONTROL Events]&amp;[!UICONTROL Conditions]**:
 
-   * **Tags**: Alle regels worden geactiveerd door een gebeurtenis die bijvoorbeeld in de regel moet worden opgegeven. `Library Loaded - Page Top`. Voorwaarden zijn optioneel.
+   * **Tags**: Alle regels worden geactiveerd door een gebeurtenis die in de regel moet worden opgegeven, bijvoorbeeld `Library Loaded - Page Top`. Voorwaarden zijn optioneel.
    * **Gebeurtenis doorsturen**: Er wordt aangenomen dat elke gebeurtenis die naar het Edge-netwerk van het platform wordt verzonden, een trigger is voor het doorsturen van gegevens. Er zijn dus geen [!UICONTROL Events] die in gebeurtenis-door:sturen regels moeten worden geselecteerd. Om te beheren welke gebeurtenissen een gebeurtenis-door:sturen regel teweegbrengen, moet u voorwaarden vormen.
 
 * **Tokenisering gegevenselement**:
@@ -231,7 +232,7 @@ Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoon
 
 1. Ga naar [Webhaak.site](https://webhook.site)
 
-1. Zoeken **Uw unieke URL**, zult u dit als verzoek URL in uw gebeurtenis-door:sturen regel gebruiken
+1. Zoeken **Uw unieke URL**, gebruikt u dit als URL-verzoek in uw gebeurtenis-door:sturen regel
 
 1. Selecteren **[!UICONTROL Copy to clipboard]**
 
@@ -324,4 +325,4 @@ Gefeliciteerd! U hebt gebeurtenis gevormd door:sturen!
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

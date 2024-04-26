@@ -1,18 +1,19 @@
 ---
-title: Tagregels maken
+title: Tagregels maken voor Platform Web SDK
 description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1751'
 ht-degree: 0%
 
 ---
 
 # Tagregels maken
 
-Leer hoe u gebeurtenissen naar de Edge Network Platform kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gegevens te verzenden.
+Leer hoe u gebeurtenissen naar de Adobe Experience Platform-Edge Network kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gegevens te verzenden.
 
 ## Leerdoelstellingen
 
@@ -38,7 +39,7 @@ U bent vertrouwd met de tags voor gegevensverzameling en de [Luma-demosite](http
 
 ## Naamgevingsconventies
 
-Voor een beter beheer van de regels in tags is het raadzaam een standaardnaamgevingsconventie te volgen. In deze zelfstudie wordt een naamgevingsconventie gebruikt die uit vijf delen bestaat:
+Als u regels in tags wilt beheren, kunt u het beste een standaardnaamgevingsconventie volgen. In deze zelfstudie wordt een naamgevingsconventie gebruikt die uit vijf delen bestaat:
 
 * [**locatie**] - [**event**] - [**doel**] - [**bestellen**]
 
@@ -52,7 +53,7 @@ waar;
 
 ## Tagregels maken
 
-In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les zullen worden gebruikt:
+In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les worden gebruikt:
 
 * **[!UICONTROL Update variable]** koppelen gegevenselementen aan eigenschappen in een XDM-object
 * **[!UICONTROL Send Event]** verzendt het XDM-object naar de Edge Network Experience Platform
@@ -63,7 +64,7 @@ In de rest van deze les:
 
 1. Maak aanvullende regels met de **[!UICONTROL Update variable]** actie die onze &quot;globale configuratie&quot;met voeten treedt en extra gebieden XDM onder bepaalde voorwaarden bijdragen (bijvoorbeeld, toevoegend productdetails op productpagina&#39;s).
 
-1. Een andere regel maken met de opdracht **[!UICONTROL Send Event]** handeling die het volledige XDM-object naar Adobe Experience Platform Edge Network verzendt.
+1. Een andere regel maken met de opdracht **[!UICONTROL Send Event]** handeling, die het volledige XDM-object naar Adobe Experience Platform Edge Network verzendt.
 
 Al deze regels zullen behoorlijk worden gesequenceerd gebruikend &quot;[!UICONTROL order]&quot;.
 
@@ -110,7 +111,7 @@ Een labelregel maken voor de globale XDM-velden:
 
    ![Variabel schema bijwerken](assets/create-rule-update-variable.png)
 
-Wijs nu uw [!UICONTROL data elements] aan de [!UICONTROL schema] wordt gebruikt door uw XDM-object. U kunt toewijzen aan afzonderlijke eigenschappen of volledige objecten. In dit voorbeeld koppelt u de eigenschappen aan individuele eigenschappen:
+Nu, kaart uw [!UICONTROL data elements] aan de [!UICONTROL schema] wordt gebruikt door uw XDM-object. U kunt toewijzen aan afzonderlijke eigenschappen of volledige objecten. In dit voorbeeld koppelt u de eigenschappen aan individuele eigenschappen:
 
 1. Het veld eventType zoeken en selecteren
 
@@ -171,7 +172,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]**, selecteert u **[!UICONTROL Core]**
 1. Onder **[!UICONTROL Event Type]**, selecteert u **[!UICONTROL Library Loaded (Page Top)]**
-1. Selecteren om te openen **[!UICONTROL Advanced Options]**, typt u `20`. Dit verzekert de regellooppas na `all pages - library loaded - set global variables - 1` dat de globale configuratie plaatst.
+1. Selecteren om te openen **[!UICONTROL Advanced Options]**, typt u `20`. Deze ordewaarde verzekert de regellooppas na `all pages - library loaded - set global variables - 1` dat de globale configuratie plaatst.
 
    ![XDM-regels voor analyse](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
 1. In de **[!UICONTROL Actions]** sectie, selecteert u **[!UICONTROL Add]**
 
-1. Als de **[!UICONTROL Extension]**, selecteert u  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Als de **[!UICONTROL Extension]**, selecteert u **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. Als de  **[!UICONTROL Action Type]**, selecteert u  **[!UICONTROL Send event]**
+1. Als de  **[!UICONTROL Action Type]**, selecteert u **[!UICONTROL Send event]**
 
 1. Als de **[!UICONTROL XDM]**, selecteert u de `xdm.variable.content` gegevenselement dat in de vorige les is gemaakt
 
@@ -358,7 +359,7 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
    ![De regel opslaan](assets/create-rule-save-rule.png)
 
-## De regel in een bibliotheek publiceren
+## De regels in een bibliotheek publiceren
 
 Vervolgens publiceert u de regel naar de ontwikkelomgeving, zodat u kunt controleren of deze werkt.
 
@@ -385,12 +386,12 @@ Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze i
 
 ![Samenstellen voltooid](assets/create-rule-development-success.png)
 
-Zoals u kunt zien op het tabblad [!UICONTROL Publishing Flow] screen, is er veel meer aan het het publiceren proces dat buiten het werkingsgebied van deze zelfstudie is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
+Zoals u kunt zien op het tabblad [!UICONTROL Publishing Flow] scherm, is er veel meer aan het het publiceren proces, dat buiten het werkingsgebied van dit leerprogramma is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
 
-Nu bent u bereid om de gegevens in het verzoek te bevestigen gebruikend het Adobe Experience Platform Debugger.
+U kunt nu de gegevens in de aanvraag valideren met het Adobe Experience Platform Debugger.
 
 [Volgende ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

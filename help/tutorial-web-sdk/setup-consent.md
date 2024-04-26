@@ -2,21 +2,22 @@
 title: Goedkeuring instellen met Platform Web SDK
 description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
 
 # Goedkeuring instellen met Platform Web SDK
 
-Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
+Leer hoe u de privacyinstellingen van de Adobe Experience Platform Web SDK-tagextensie configureert. Stel de toestemming in op basis van de interactie van de bezoeker met een banner van een CMP (Consent Management Platform).
 
 >[!NOTE]
 > 
->Ter demonstratie gebruikt deze zelfstudie [Klaro](https://heyklaro.com/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
+>Ter demonstratie gebruikt deze zelfstudie [Klaro](https://klaro.org/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
 
 
 ## Leerdoelstellingen
@@ -32,20 +33,21 @@ Aan het einde van deze les kunt u het volgende doen:
 U zou met markeringen en de stappen vertrouwd moeten zijn om regels, gegevenselementen tot stand te brengen, bibliotheken aan milieu&#39;s te bouwen, en markeringsbibliotheken te schakelen gebruikend Foutopsporing van het Experience Platform.
 
 Voordat u de privacy-instellingen gaat configureren en de regels voor het instellen van de toestemming gaat maken, moet u ervoor zorgen dat u het script van het toestemmingsbeheerplatform op de website hebt ingespoten en correct werkt. Een CMP kan rechtstreeks in de broncode worden geladen met behulp van siteontwikkelaars of door tags zelf worden geladen. Deze les toont de laatste aanpak aan.
+
 >[!NOTE]
 > 
 >1. Organisaties gebruiken een Consent Management Platform (of CMP) om de toestemmingskeuzes van een bezoeker wettelijk te documenteren en te beheren voordat ze bezoekersgegevens verzamelen, delen of verkopen van online bronnen zoals websites en apps.
 >
->2. De aanbevolen methode voor het injecteren van een CMP is rechtstreeks via broncode vóór het script voor tagbeheer.
+>2. De aanbevolen methode voor het injecteren van een CMP is rechtstreeks via de broncode vóór het script voor tagbeheer.
 
 ### Klaro configureren
 
 Voordat u in de tagconfiguraties gaat, leert u meer over het platform voor het beheer van de toestemming dat in deze zelfstudie Klaro wordt gebruikt.
 
-1. Bezoek [Klaro](https://heyklaro.com/) en een account instellen.
+1. Bezoek [Klaro](https://klaro.org/) en een account instellen.
 1. Ga naar **Privacy Manager** en maak een instantie volgens de instructies.
 1. Gebruik de **Integratiecode** om Klaro in uw tag-eigenschap te injecteren (instructies zijn in de volgende oefening).
-1. Sla de **Scannen** , omdat hiermee de eigenschap tag wordt gedetecteerd die op de demo-website van Luma is gecodeerd en niet de eigenschap die u voor deze zelfstudie hebt gemaakt.
+1. Sla de **Scannen** , omdat deze de eigenschap tag detecteert die op de demo-website van Luma is gecodeerd en niet de eigenschap die u voor deze zelfstudie hebt gemaakt.
 1. Voeg de geroepen dienst toe `aep web sdk` en schakelt u de **Standaardstatus service**. Wanneer deze optie is ingeschakeld, is de standaardwaarde voor de toestemming `true`anders is het `false`. Deze configuratie is handig wanneer u wilt bepalen wat de status van de standaardtoestemming (vóór toestemming van de bezoeker) is voor uw webtoepassing. Bijvoorbeeld:
    * Voor CCPA wordt de standaardtoestemming algemeen geplaatst aan `true`. U gaat naar dit scenario verwijzen als **Impliciete opt-in** door deze zelfstudie
    * Voor GDPR wordt de standaardtoestemming doorgaans ingesteld op `false`. U gaat naar dit scenario verwijzen als **Impliciete opt-out** in deze zelfstudie.
@@ -183,7 +185,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
    Met deze configuratie, zorgt het Web SDK van het Experience Platform ervoor dat geen verzoek brandt tenzij de toestemmingstoestemming verandert in **[!UICONTROL In]**. Dit kan gebeuren als een bezoeker de cookies handmatig accepteert door in te schakelen.
 
-1. Controleer in Foutopsporing of de Luministoepassing is toegewezen aan uw tageigenschap en of de logboekregistratie voor de tagconsole is ingeschakeld.
+1. Zorg er in Foutopsporing voor dat de Luminantiesite is toegewezen aan uw tageigenschap en dat de logboekregistratie voor de tagconsole is ingeschakeld.
 1. Gebruik de ontwikkelaarsconsole van uw browser aan **Sitegegevens wissen** in **Toepassing** > **Opslag**
 
 1. Laad de Luminasite opnieuw en zorg dat `defaultConsent` is ingesteld op **[!UICONTROL Out]** en er zijn geen Web SDK-verzoeken ingediend
@@ -218,10 +220,10 @@ Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten begi
 Voor meer informatie over toestemming in Web SDK, zie [Voorkeuren voor toestemming van klanten ondersteunen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [Goedkeuring instellen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Volgende: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,7 +3,7 @@ title: Tutorial voor Adobe Experience Cloud met Web SDK implementeren
 description: Leer hoe te om de toepassingen van het Experience Cloud uit te voeren gebruikend het Web SDK van Adobe Experience Platform.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee kl
 
 Deze zelfstudie begeleidt u door de implementatie van de Platform Web SDK op een voorbeeldwebsite in de detailhandel met de naam Luma. De [Luminantiesite](https://luma.enablementadobe.com/content/luma/us/en.html) heeft een rijke gegevenslaag en functionaliteit die u een realistische implementatie laat bouwen. Voor deze zelfstudie:
 
-* Maak uw eigen eigenschap voor tags in uw eigen account met een Platform Web SDK-implementatie voor de Luma-website.
+* Maak in uw eigen account uw eigen eigenschap voor tags met een Platform Web SDK-implementatie voor de Luma-website.
 * Vorm alle eigenschappen van de gegevensinzameling voor de implementaties van SDK van het Web zoals gegevensstromen, schema&#39;s, en identiteitsnamespaces.
 * Voeg de volgende Adobe Experience Cloud-toepassingen toe:
    * **[Adobe Experience Platform](setup-experience-platform.md)** (en toepassingen die zijn gebaseerd op Platform zoals Adobe Real-time Customer Data Platform, Adobe Journey Optimizer en Adobe Customer Journey Analytics)
@@ -48,7 +48,7 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
    * **[!UICONTROL Property Rights]**—toestemming om **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Edit Property]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, en **[!UICONTROL Publish]**,
    * **[!UICONTROL Company Rights]**—toestemming om **[!UICONTROL Manage Properties]**
 
-     Zie voor meer informatie over machtigingen voor tags [de documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Zie voor meer informatie over tagmachtigingen [de documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Voor **Experience Platform** moet u beschikken over:
 
@@ -66,7 +66,7 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
 * Voor het facultatieve **Adobe Analytics** les, u moet hebben [beheerdersrechten voor de instellingen van de rapportsuite, verwerkingsregels en Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Voor het facultatieve **Adobe Target** les, u moet hebben [Editor of fiatteur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) toegang.
+* Voor het facultatieve **Adobe Target** les, u moet hebben [Editor of fiatteur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) toegang.
 
 * Voor het facultatieve **Audience Manager** les, moet u toegang hebben tot creeer, lees, en schrijf eigenschappen, segmenten, en bestemmingen. Raadpleeg de zelfstudie over voor meer informatie [Op rol-Gebaseerd Toegangsbeheer van Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
 ## Updates
 
-* 24 april 2024: Grote update inclusief toevoeging van Set Variable/Update Variable, split personalization and analytics request, Journey Optimizer lesssons
+* 24 april 2024: belangrijke updates, waaronder toevoeging van Set Variable/Update Variable, split personalization and analytics request, Journey Optimizer lessen
 
 ## De Luma-website laden
 
@@ -91,4 +91,4 @@ Laten we beginnen!
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

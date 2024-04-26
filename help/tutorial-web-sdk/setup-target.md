@@ -2,17 +2,18 @@
 title: Adobe Target instellen met Platform Web SDK
 description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4175'
+source-wordcount: '4173'
 ht-degree: 0%
 
 ---
 
 # Adobe Target instellen met Platform Web SDK
 
-Leer hoe u Adobe Target implementeert met de Platform Web SDK. Leer hoe u ervaringen kunt bieden en hoe u extra parameters aan Target kunt doorgeven.
+Leer hoe u Adobe Target implementeert met Adobe Experience Platform Web SDK. Leer hoe u ervaringen kunt bieden en hoe u extra parameters aan Target kunt doorgeven.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) is de Adobe Experience Cloud-toepassing die alles biedt wat u nodig hebt om de ervaring van uw klanten op maat te maken en aan te passen, zodat u uw omzet kunt maximaliseren op uw websites en mobiele sites, apps en andere digitale kanalen.
 
@@ -20,11 +21,11 @@ Leer hoe u Adobe Target implementeert met de Platform Web SDK. Leer hoe u ervari
 
 ## Leerdoelstellingen
 
-Aan het eind van deze les, zult u het volgende met een implementatie van SDK van het Web van Doel kunnen doen:
+Aan het eind van deze les, kunt u het volgende met een implementatie van SDK van het Web van Doel doen:
 
 * Voeg het voorverborgen fragment toe om flikkering te voorkomen
 * Een gegevensstroom configureren om de functionaliteit Doel in te schakelen
-* De visuele ervaringscomposeractiviteiten renderen
+* Componentactiviteiten voor visuele beleving renderen
 * Activiteiten van formuliercomposers renderen
 * Geef XDM-gegevens door aan Doel en begrijp de toewijzing aan Doelparameters
 * Aangepaste gegevens aan doel doorgeven, zoals profiel- en entiteitsparameters
@@ -41,7 +42,7 @@ Aan het eind van deze les, zult u het volgende met een implementatie van SDK van
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van opstellings gegevenselementen en regels.
-* Zorg ervoor dat u een [De rol Editor of fiatteur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
+* Zorg ervoor dat u een [De rol Editor of fiatteur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
 * Installeer de [Helpextensie Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u de Google Chrome-browser gebruikt.
 * Weet hoe u activiteiten in Target kunt instellen. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
    * [De extensie Visual Experience Composer (VEC) gebruiken](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Bepaal voordat u begint of er een extra flikkerafhandelingsoplossing nodig is, a
 
 >[!NOTE]
 >
->Deze zelfstudie gebruikt de [Luminantiesite](https://luma.enablementadobe.com/content/luma/us/en.html) die een asynchrone implementatie van tags en flikkermitigatie heeft. Deze sectie is voor verwijzing om te begrijpen hoe de het flikkeren matiging met het Web SDK van het Platform werkt.
+>Deze zelfstudie gebruikt de [Luma-website](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, die een asynchrone implementatie van tags en flikkeronderdrukking heeft. Deze sectie is voor verwijzing om te begrijpen hoe de het flikkeren matiging met het Web SDK van het Platform werkt.
 
 
 ### Asynchrone implementatie
 
-Wanneer een tagbibliotheek asynchroon wordt geladen, kan de pagina de rendering voltooien voordat Target de standaardinhoud heeft vervangen door gepersonaliseerde inhoud. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen die door Doel wordt gespecificeerd. Als u deze flikkering wilt vermijden, raadt de Adobe aan een speciaal vooraf verborgen fragment toe te voegen vlak voor de asynchrone code voor het insluiten van tags.
+Wanneer een tagbibliotheek asynchroon wordt geladen, kan de pagina de rendering voltooien voordat Target de standaardinhoud heeft vervangen door gepersonaliseerde inhoud. Dit gedrag kan leiden tot wat &quot;flikkering&quot;wordt genoemd, waar de standaardinhoud kort toont alvorens door de gepersonaliseerde inhoud wordt vervangen. Als u deze flikkering wilt vermijden, raadt de Adobe aan een speciaal vooraf verborgen fragment toe te voegen vlak voor de asynchrone code voor het insluiten van tags.
 
 Dit fragment is al aanwezig op de Luma-site, maar laten we eens nader kijken om te begrijpen wat deze code doet:
 
@@ -182,13 +183,13 @@ In deze zelfstudie gebruikt u de site Luma en gebruikt u het identiteitssymbool 
 
 ## Besluiten over visuele personalisatie renderen
 
-Visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe Target visuele ervaringscomposer worden gecreeerd. Eerst, zou u de terminologie moeten begrijpen die in het Doel wordt gebruikt en etiketteert interfaces:
+De visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe Target visuele ervaringscomposer worden gecreeerd. Eerst, zou u de terminologie moeten begrijpen die in het Doel wordt gebruikt en etiketteert interfaces:
 
 * **Activiteit**: Een reeks ervaringen voor een of meer doelgroepen. Een eenvoudige A/B-test kan bijvoorbeeld een activiteit zijn met twee ervaringen.
 * **Ervaring**: Een reeks acties die op een of meer locaties zijn gericht, of beslissingsbereik.
 * **Beslissingsbereik**: Een locatie waar een doelervaring wordt geleverd. Beslissingsbereik is gelijk aan &quot;box&quot; als u vertrouwd bent met het gebruik van oudere versies van Target.
 * **Personeelsbesluit**: Een actie die de server bepaalt, moet worden toegepast. Deze beslissingen kunnen gebaseerd zijn op publiekscriteria en prioritering van doelactiviteiten.
-* **Voorstelling**: Het resultaat van besluiten die door de server worden genomen die in de reactie van SDK van het Web van het Platform worden geleverd. Bijvoorbeeld, zou het ruilen van een bannerbeeld een voorstel zijn.
+* **Voorstelling**: Het resultaat van besluiten die door de server worden genomen, die in de reactie van SDK van het Web van het Platform worden geleverd. Bijvoorbeeld, zou het ruilen van een bannerbeeld een voorstel zijn.
 
 ### Werk de [!UICONTROL Send event] action
 
@@ -231,7 +232,7 @@ Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richt
 
    ![Een nieuwe XT-activiteit maken](assets/target-xt-create-activity.png)
 
-1. Wijzig de pagina, bijvoorbeeld wijzig de tekst op de homepage hoofdbanner.  Selecteer **[!UICONTROL Save]** dan **[!UICONTROL Next]**.
+1. Wijzig de pagina bijvoorbeeld, verander de tekst op de homepage hoofdbanner.  Selecteer **[!UICONTROL Save]** dan **[!UICONTROL Next]**.
 
    ![Doel VEC-wijziging](assets/target-xt-vec-modification.png)
 
@@ -256,7 +257,7 @@ Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richt
 
 ### Valideren met Foutopsporing
 
-Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans zelfs als geen activiteiten levend zijn, kunt u de Send het netwerkvraag van de Gebeurtenis ook bekijken om te bevestigen dat het Doel behoorlijk wordt gevormd.
+Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans, zelfs als geen activiteiten levend zijn, kunt u de Send het netwerkvraag van de Gebeurtenis ook bekijken om te bevestigen dat het Doel behoorlijk wordt gevormd.
 
 >[!CAUTION]
 >
@@ -302,7 +303,7 @@ Wijzig de regel voor het laden van de pagina om een aangepast beslissingsbereik 
 
 ### De reactie van Doel verwerken
 
-Nu u SDK van het Web van het Platform hebt gevormd om inhoud voor te verzoeken `homepage-hero` bereik, moet je iets doen met het antwoord. De tagextensie Platform Web SDK biedt een [!UICONTROL Send Event Complete] gebeurtenis die kan worden gebruikt om onmiddellijk een nieuwe regel te activeren wanneer een reactie van een [!UICONTROL Send Event] actie is ontvangen.
+Nu u SDK van het Web van het Platform hebt gevormd om inhoud voor te verzoeken `homepage-hero` bereik, moet je iets doen met het antwoord. De tagextensie Platform Web SDK biedt een [!UICONTROL Send Event Complete] gebeurtenis, die kan worden gebruikt om een nieuwe regel onmiddellijk te activeren wanneer een reactie van een [!UICONTROL Send Event] actie is ontvangen.
 
 1. Een aangeroepen regel maken `homepage - send event complete - render homepage-hero`.
 1. Voeg een gebeurtenis aan de regel toe. Gebruik de **Adobe Experience Platform Web SDK** en de **[!UICONTROL Send event complete]** gebeurtenistype.
@@ -393,7 +394,7 @@ In deze sectie, zult u specifiek doel-specifieke gegevens overgaan en een dichte
 
 ### Parameters pagina (mbox) en XDM
 
-Alle XDM-velden worden automatisch als doel doorgegeven [paginaparameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) of mbox-parameters.
+Alle XDM-velden worden automatisch als doel doorgegeven [paginaparameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) of mbox-parameters.
 
 Sommige van deze XDM-velden worden toegewezen aan speciale objecten op de achtergrond van Target. Bijvoorbeeld: `web.webPageDetails.URL` is automatisch beschikbaar voor het maken van URL-doelvoorwaarden of als de `page.url` -object bij het maken van profielscripts.
 
@@ -401,7 +402,7 @@ Sommige van deze XDM-velden worden toegewezen aan speciale objecten op de achter
 
 Er zijn enkele gegevenspunten die nuttig kunnen zijn voor Doel en die niet zijn toegewezen vanuit het XDM-object. Deze speciale doelparameters zijn onder meer:
 
-* [Profielkenmerken](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Profielkenmerken](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Kenmerken Recommendations-entiteit](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Voor Recommendations gereserveerde parameters](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Categoriewaarden voor [categorie-affiniteit](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Bovendien kunt u Verzekering waar nodig gebruiken om de het besluitvormingsverzo
 
    ![Betalen bij detectietechnische analyse](assets/validate-in-assurance-analyticsevent.png)
 
-Dit bevestigt dat de informatie A4T die voor recentere transmissie een rij werd gevormd toen wij de doelbeslissende vraag maakten behoorlijk werd verzonden wanneer de analytische volgende vraag later op de pagina in brand werd gestoken.
+Dit bevestigt dat de informatie A4T die voor recentere transmissie een rij werd gevormd toen wij de vraag van het doelbesluit maakten behoorlijk werd verzonden wanneer de analytische volgende vraag later op de pagina in brand werd gestoken.
 
 Nu u deze les hebt voltooid zou u een werkende implementatie van Adobe Target moeten hebben gebruikend het Web SDK van het Platform.
 
@@ -551,4 +552,4 @@ Nu u deze les hebt voltooid zou u een werkende implementatie van Adobe Target mo
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
