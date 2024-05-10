@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Klik op de knop **Titel** tekstveld.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Begin met schrijven in het tekstgebied **Hallo**. Klik op het verpersoonlijkingspictogram.
+Begin met schrijven in het tekstgebied **Hallo**. Klik op het pictogram voor aanpassen.
 
 ![Journey Optimizer](./images/msg6.png)
 
@@ -181,7 +181,7 @@ Omhoog schuiven en klikken **OK**.
 
 ![ACOP](./images/jomsg21.png)
 
-Je moet je reis nog steeds een naam geven. U kunt dat doen door op de knop **Eigenschappen** in de rechterbovenhoek van het scherm.
+Je moet je reis nog steeds een naam geven. U kunt dat doen door op de knop **Potlood** in de linkerbovenhoek van het scherm.
 
 ![ACOP](./images/journeyname.png)
 

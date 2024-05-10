@@ -9,14 +9,14 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 3%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
-# 2.3 Maak uw reis en e-mailbericht
+# 2.3 Uw reis- en e-mailbericht maken
 
 In deze oefening, zult u de reis vormen die moet worden teweeggebracht wanneer iemand een rekening op de demowebsite creeert.
 
@@ -50,7 +50,7 @@ Selecteer de gebeurtenis, sleep deze naar het canvas Reis. Uw reis ziet er nu al
 
 ![ACOP](./images/journeyevent.png)
 
-Als tweede stap in de reis, moet u een korte toevoegen **Wachten** stap. Naar de linkerkant van het scherm **Orchestratie** voor meer informatie. U zult profielattributen gebruiken en moet ervoor zorgen zij in het Profiel van de Klant in real time worden bevolkt.
+Als tweede stap in de reis, moet u een korte **Wachten** stap. Naar de linkerkant van het scherm **Orchestratie** voor meer informatie. U zult profielattributen gebruiken en moet ervoor zorgen zij in het Profiel van de Klant in real time worden bevolkt.
 
 ![ACOP](./images/journeywait.png)
 
@@ -64,17 +64,17 @@ Als derde stap in de reis, moet u toevoegen **E-mail** handeling. Naar de linker
 
 ![ACOP](./images/journeyactions.png)
 
-Stel de **Categorie** tot **Marketing** en selecteer een e-mailoppervlak waarmee u e-mail kunt verzenden. In dit geval is het te selecteren e-mailoppervlak **E-mail**. Zorg ervoor dat de selectievakjes **Klik op e-mail** en **e-mail wordt geopend** zijn beide ingeschakeld.
+Stel de **Categorie** tot **Marketing** en selecteer een e-mailoppervlak waarmee u e-mail kunt verzenden. In dit geval is het te selecteren e-mailoppervlak **E-mail**. Zorg ervoor dat de selectievakjes **Klikken op e-mail** en **e-mail wordt geopend** zijn beide ingeschakeld.
 
 ![ACOP](./images/journeyactions1.png)
 
-De volgende stap is uw bericht te creëren. Om dat te doen, klikt u op **Inhoud bewerken**.
+De volgende stap is uw bericht te creëren. Om dat te doen, klik **Inhoud bewerken**.
 
 ![ACOP](./images/journeyactions2.png)
 
 ## 2.3.2 Uw bericht maken
 
-Klik op **Inhoud bewerken**.
+Als u uw bericht wilt maken, klikt u op **Inhoud bewerken**.
 
 ![ACOP](./images/journeyactions2.png)
 
@@ -106,21 +106,21 @@ Voeg vervolgens de tekst toe **, dank u dat u zich hebt aangemeld!**. Klikken **
 
 ![Journey Optimizer](./images/msg10.png)
 
-Dan ben je hier weer. Klikken **E-mailontwerper** om de inhoud van de e-mail te maken.
+Dan ben je hier weer. Klikken **E-mailDesigner** om de inhoud van de e-mail te maken.
 
 ![Journey Optimizer](./images/msg11.png)
 
 In het volgende scherm krijgt u drie verschillende methoden om de inhoud van de e-mail te verschaffen:
 
-- **Ontwerpen vanaf nul**: Begin met een leeg canvas en gebruik de WYSIWYG-redacteur om structuur en inhoudscomponenten te slepen en te laten vallen om de inhoud van e-mail visueel op te bouwen.
-- **Uw eigen code schrijven**: Uw eigen e-mailsjabloon maken door deze te coderen met HTML
+- **Ontwerpen vanaf nul**: Begin met een leeg canvas en gebruik de WYSIWYG-editor om structuur en inhoudcomponenten te slepen en neer te zetten om de inhoud van de e-mail visueel op te bouwen.
+- **Uw eigen code schrijven**: Maak uw eigen e-mailsjabloon door deze te coderen met HTML
 - **HTML importeren**: Importeer een bestaande HTML-sjabloon, die u kunt bewerken.
 
 Klikken **HTML importeren**. U kunt ook op **Opgeslagen sjablonen** en selecteer de sjabloon **Bootkamp - E-mailsjabloon**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Als u **HTML importeren** kunt u nu het bestand slepen en neerzetten **mailtemplatebootkamp.html**, die u kunt downloaden [hier](../../assets/html/mailtemplatebootcamp.html.zip). Klik op Importeren.
+Als u **HTML importeren** kunt u nu het bestand slepen en neerzetten **mailtemplatebootkamp.html**, die u kunt downloaden [hier](../../assets/html/mailtemplatebootcamp.html.zip). Klik op Import.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -128,7 +128,7 @@ Deze standaard e-mailsjabloon wordt dan weergegeven:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Laten we de e-mail personaliseren. Klik naast de tekst **Hallo** en klik vervolgens op de knop **Persoonlijkheid toevoegen** pictogram.
+Laten we de email personaliseren. Klik naast de tekst **Hallo** en klik vervolgens op de knop **Persoonlijkheid toevoegen** pictogram.
 
 ![Journey Optimizer](./images/msg35.png)
 
@@ -146,7 +146,7 @@ Klikken **Opslaan** om uw bericht op te slaan.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Ga terug naar het berichtdashboard door op het **pijl** naast de tekst van de onderwerpregel in de linkerbovenhoek.
+Ga terug naar het berichtdashboard door op het **pijl** naast de onderwerpregel in de linkerbovenhoek.
 
 ![Journey Optimizer](./images/msg56.png)
 
@@ -160,7 +160,7 @@ Klikken **OK**.
 
 ## 2.3.3 Uw reis publiceren
 
-Je moet je reis nog steeds een naam geven. U kunt dat doen door op de knop **Eigenschappen** in de rechterbovenhoek van het scherm.
+Je moet je reis nog steeds een naam geven. U kunt dat doen door op de knop **Potlood** in de linkerbovenhoek van het scherm.
 
 ![ACOP](./images/journeyname.png)
 

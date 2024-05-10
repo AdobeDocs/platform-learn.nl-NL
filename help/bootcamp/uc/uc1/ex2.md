@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,6 @@ Ga in het linkermenu naar **Profielen** en **Bladeren**.
 In het deelvenster Profielviewer op uw website vindt u het identiteitsoverzicht. Elke identiteit is gekoppeld aan een naamruimte.
 
 ![Klantprofiel](./images/identities.png)
-
-In het deelvenster Profielviewer kunt u deze identiteit momenteel zien:
-
-| Naamruimte | Identiteit |
-|:-------------:| :---------------:|
-| Experience Cloud-id (ECID) | 19428085896177382402834560825640259081 |
 
 In Adobe Experience Platform zijn alle id&#39;s even belangrijk. Eerder was de ECID de belangrijkste id in de context van de Adobe en alle andere id&#39;s waren hiërarchisch gekoppeld aan de ECID. In Adobe Experience Platform is dit niet langer het geval en kan elke id als een primaire id worden beschouwd.
 
