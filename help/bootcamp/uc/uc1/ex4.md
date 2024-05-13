@@ -1,6 +1,6 @@
 ---
-title: Bootkamp - Real-time CDP - Bouw een segment en neem actie - verzend uw segment naar Adobe Target
-description: Bootkamp - Real-time CDP - Bouw een segment en neem actie - verzend uw segment naar Adobe Target
+title: Bootkamp - Real-time CDP - Bouw een publiek en neem actie - verzend uw publiek naar Adobe Target
+description: Bootkamp - Real-time CDP - Bouw een publiek en neem actie - verzend uw publiek naar Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -8,14 +8,14 @@ activity: develop
 solution: Experience Platform, Target
 feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
 
 ---
 
-# 1.4 Actie nemen: stuur je segment naar Adobe Target
+# 1.4 Actie nemen: stuur je publiek naar Adobe Target
 
 Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
@@ -25,11 +25,11 @@ Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselec
 
 ![Gegevensinname](./images/sb1.png)
 
-## 1.4.1 Activeer uw segment naar uw Adobe Target-bestemming
+## 1.4.1 Activeer je publiek naar de Adobe Target-bestemming
 
 Adobe Target is beschikbaar als een bestemming vanuit Real-Time CDP. Ga naar **Doelen**, naar **Catalogus**.
 
-Klikken **Personalisatie** in de **Categorieën** -menu. Dan zie je de **Adobe Target** doelkaart. Klikken **Segmenten activeren**.
+Klikken **Personalisatie** in de **Categorieën** -menu. Dan zie je de **Adobe Target** doelkaart. Klikken **Soorten publiek activeren**.
 
 ![AT](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Het doel selecteren ``Bootcamp Target`` en klik op **Volgende**.
 
 ![AT](./images/atdest3.png)
 
-Selecteer in de lijst met beschikbare segmenten het segment waarin u hebt gemaakt [1.3 Een segment maken](./ex3.md), die `yourLastName - Interest in Real-Time CDP`. Klik vervolgens op **Volgende**.
+Selecteer in de lijst met beschikbare doelgroepen het publiek dat u hebt gemaakt in [1.3 Een publiek maken](./ex3.md), die `yourLastName - Interest in Real-Time CDP`. Klik vervolgens op **Volgende**.
 
 ![AT](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Klikken **Voltooien**.
 
 ![AT](./images/atdest10.png)
 
-Uw segment wordt nu geactiveerd naar Adobe Target.
+Uw publiek wordt nu geactiveerd voor Adobe Target.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Als je net je Adobe Target-bestemming hebt gemaakt in Real-Time CDP, kan het tot een uur duren voordat de bestemming live is. Dit is eenmalig wachttijd, wegens de opstelling van de backendconfiguratie. Zodra de aanvankelijke 1 uur wachttijd en achtergrondconfiguratie wordt gedaan, zullen de onlangs toegevoegde randsegmenten die naar de bestemming van Adobe Target worden verzonden voor het richten in real time beschikbaar zijn.
+>Als je net je Adobe Target-bestemming hebt gemaakt in Real-Time CDP, kan het tot een uur duren voordat de bestemming live is. Dit is eenmalig wachttijd, wegens de opstelling van de backendconfiguratie. Zodra de aanvankelijke 1 uur wachttijd en de backendconfiguratie wordt gedaan, zal het onlangs toegevoegde randpubliek dat naar de bestemming van Adobe Target wordt verzonden voor richten in real time beschikbaar zijn.
 
 ## 1.4.2 Configureer uw Adobe Target-formuliergebaseerde activiteit
 
-Nu uw Real-Time CDP-segment is geconfigureerd voor verzending naar Adobe Target, kunt u uw Experience Targeting-activiteit configureren in Adobe Target. In deze oefening zult u een Visuele op Composer-Gebaseerde activiteit van de Ervaring vormen.
+Nu uw Real-Time CDP-publiek is geconfigureerd om naar Adobe Target te worden verzonden, kunt u uw Experience Targeting-activiteit in Adobe Target configureren. In deze oefening zult u een Visuele op Composer-Gebaseerde activiteit van de Ervaring vormen.
 
 Ga naar de Adobe Experience Cloud-homepage door naar [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Klikken **Doel** om het te openen.
 
@@ -98,11 +98,11 @@ Het standaardpubliek is momenteel **Alle bezoekers**. Klik op de knop **3 punten
 
 ![RTCDP](./images/atform3.png)
 
-U ziet nu de lijst met beschikbare soorten publiek. Het Adobe Experience Platform-segment dat u eerder hebt gemaakt en naar Adobe Target hebt verzonden, maakt nu deel uit van deze lijst. Selecteer het segment dat u eerder in Adobe Experience Platform hebt gemaakt. Klikken **Publiek toewijzen**.
+U ziet nu de lijst met beschikbare soorten publiek. Het Adobe Experience Platform-publiek dat u eerder hebt gemaakt en naar Adobe Target hebt verzonden, maakt nu deel uit van deze lijst. Selecteer het publiek dat u eerder in Adobe Experience Platform hebt gemaakt. Klikken **Publiek toewijzen**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Uw Adobe Experience Platform-segment maakt nu deel uit van deze Experience Targeting Activity.
+Uw Adobe Experience Platform-publiek maakt nu deel uit van deze Experience Targeting Activity.
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,7 +170,7 @@ Je krijgt dan een visuele bevestiging dat je activiteit nu actief is.
 
 Uw activiteiten zijn nu live en kunnen worden getest op de website van het bootkamp.
 
-Als u nu teruggaat naar uw demo-website en de productpagina bezoekt voor **Real-Time CDP** U komt dan meteen in aanmerking voor het segment dat u hebt gemaakt en u ziet dat de Adobe Target-activiteit in real-time wordt weergegeven op de homepage.
+Als u nu teruggaat naar uw demo-website en de productpagina bezoekt voor **Real-Time CDP** U komt dan meteen in aanmerking voor het publiek dat u hebt gemaakt en u ziet dat de Adobe Target-activiteit in real-time wordt weergegeven op de homepage.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Als u nu teruggaat naar uw demo-website en de productpagina bezoekt voor **Real-
 
 ![RTCDP](./images/atform12a.png)
 
-Volgende stap: [1.5 Actie nemen: stuur je segment naar Facebook](./ex5.md)
+Volgende stap: [1.5 Actie nemen: stuur je publiek naar Facebook](./ex5.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

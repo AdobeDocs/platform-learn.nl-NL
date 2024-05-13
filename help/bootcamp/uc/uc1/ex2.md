@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In deze oefening, zult u login aan Adobe Experience Platform en uw eigen Profiel
 
 ## Artikel
 
-In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande segmentlidmaatschap. De getoonde gegevens kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het echte ervaringssysteem van record.
+In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande publiekslidmaatschappen. De getoonde gegevens kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het echte ervaringssysteem van record.
 
 ## 1.2.1 De weergave Klantprofiel in Adobe Experience Platform gebruiken
 
@@ -30,7 +30,7 @@ Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na h
 
 Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
 
-![Gegevensinname](./images/sb1.png)
+
 
 Ga in het linkermenu naar **Profielen** en **Bladeren**.
 
@@ -39,6 +39,9 @@ Ga in het linkermenu naar **Profielen** en **Bladeren**.
 In het deelvenster Profielviewer op uw website vindt u het identiteitsoverzicht. Elke identiteit is gekoppeld aan een naamruimte.
 
 ![Klantprofiel](./images/identities.png)
+
+
+
 
 In Adobe Experience Platform zijn alle id&#39;s even belangrijk. Eerder was de ECID de belangrijkste id in de context van de Adobe en alle andere id&#39;s waren hiërarchisch gekoppeld aan de ECID. In Adobe Experience Platform is dit niet langer het geval en kan elke id als een primaire id worden beschouwd.
 
@@ -56,13 +59,13 @@ Ga naar **Gebeurtenissen**, waar u ingangen voor elke ervaringsgebeurtenis kunt 
 
 ![Klantprofiel](./images/profileee.png)
 
-Tot slot ga naar de menuoptie **Segmentlidmaatschap**. U ziet nu alle segmenten die in aanmerking komen voor dit profiel.
+Tot slot ga naar de menuoptie **Publiek lidmaatschap**. U ziet nu alle soorten publiek die in aanmerking komen voor dit profiel.
 
 ![Klantprofiel](./images/profileseg.png)
 
-Laten wij nu een nieuw segment tot stand brengen dat u zal toestaan om de klantenervaring voor een anonieme of bekende klant te personaliseren.
+Laten wij nu een nieuw publiek creëren dat u zal toestaan om de klantenervaring voor een anonieme of bekende klant te personaliseren.
 
-Volgende stap: [1.3 Een segment maken - UI](./ex3.md)
+Volgende stap: [1.3 Een publiek maken - UI](./ex3.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 
