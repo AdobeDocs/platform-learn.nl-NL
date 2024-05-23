@@ -4,9 +4,9 @@ description: Leer hoe u de interacties met uw mobiele app meldt en analyseert me
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3116'
 ht-degree: 0%
 
 ---
@@ -85,9 +85,9 @@ Een verbinding in Customer Journey Analytics bepaalt de datasets (en de gegevens
          | ODE-beslissingsgebeurtenissen - *naam sandbox* beslissing | identityMap | tijdstempel | Mobiele toepassingsgegevens | enable | enable |
          | Dataset voor AJO-gebeurtenis voor het bijhouden van push | identityMap | tijdstempel | Mobiele toepassingsgegevens | enable | enable |
 
-         ![CJA-verbindingen 3](assets/cja-connections-3.png)
-
       1. Selecteren **[!UICONTROL Add datasets]**.
+
+         ![CJA-verbindingen 3](assets/cja-connections-3.png)
 
 1. Terug in de **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Connection]**, selecteert u **[!UICONTROL Save]** om uw verbinding op te slaan.
 
@@ -156,8 +156,6 @@ Uw gegevensweergave maken:
       ![Instellingen van de CJA-gegevensweergave](assets/cja-dataview-component-settings.png)
 
    1. Nu u begrijpt hoe u velden aan uw gegevensweergave kunt toevoegen en de resulterende component kunt configureren, gebruikt u de onderstaande tabellen voor een lijst met schemavelden die u als metrisch of dimensionaal wilt toevoegen. Gebruik de **Schemapad** de kolomwaarde van de lijst hieronder om naar het specifieke schemagebied te zoeken of te doorkruisen. Nadat u het gereedschap hebt gesleept en neergezet, controleert u de knop **Componentinstellingen** kolomwaarde in de tabel of specifieke instellingen zijn vereist voor een component, zoals het wijzigen van de kolomwaarde **[!UICONTROL Component name]** of definiëren **[!UICONTROL INCLUDE EXCLUDE VALUES]**.
-
-      ![Instellingen van de CJA-gegevensweergave](assets/cja-dataview-component-settings.png)
 
       **METRISCHE**
 
@@ -232,9 +230,9 @@ Uw project maken:
 
    1. Selecteren **[!UICONTROL Blank Workspace project]** in het pop-updialoogvenster.
 
-      ![CJA-projecten - 1](assets/cja-projects-1.png)
-
    1. Selecteren **[!UICONTROL Create]**.
+
+      ![CJA-projecten - 1](assets/cja-projects-1.png)
 
 1. U krijgt de **[!UICONTROL New project]** interface. In deze interface, bouwt u uw rapporten en visualisaties.
 
@@ -357,8 +355,10 @@ Gebaseerd op het vorige rapport, wilt u de reserve in de handelskrechter visuali
    ![CJA-projecten 18](assets/cja-projects-18.png)
 U kunt ook de **[!UICONTROL Products View]** afmeting onder de **[!UICONTROL All people]** in de **[!UICONTROL Fallout]** visualisatie.
 
-1. Herhaal bovenstaande stap voor **[!UICONTROL Product Add To Lists]** en **[!UICONTROL Purchases]** afmetingen. Uw **[!UICONTROL Fallout]** de visualisatie toont nu een visuele weergave van de conversietrechter voor uw producten.
-   ![CJA-projecten 19](assets/cja-projects-19.png)
+1. Herhaal bovenstaande stap voor **[!UICONTROL Product Add To Lists]** en **[!UICONTROL Purchases]** afmetingen.
+
+Uw **[!UICONTROL Fallout]** de visualisatie toont nu een visuele weergave van de conversietrechter voor uw producten.
+![CJA-projecten 19](assets/cja-projects-19.png)
 
 Vergeet niet uw project op te slaan!
 
