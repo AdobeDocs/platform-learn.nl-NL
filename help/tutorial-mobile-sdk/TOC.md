@@ -1,6 +1,6 @@
 ---
-user-guide-title: Tutorial voor Experience Cloud in mobiele apps implementeren
-breadcrumb-title: Tutorial voor mobiele apps
+user-guide-title: Zelfstudie Experience Cloud implementeren in mobiele apps
+breadcrumb-title: Zelfstudie over mobiele toepassingen
 user-guide-description: Leer hoe u Adobe Experience Cloud-toepassingen kunt implementeren in mobiele apps met Experience Platform Mobile SDK.
 solution: Data Collection
 feature: Mobile SDK
@@ -8,18 +8,18 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 8c588f7aeefe0d4e4b17cf5f34268dcca943e2a0
+source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 72%
+source-wordcount: '78'
+ht-degree: 15%
 
 ---
 
 
-#  voor Experience Cloud in mobiele apps implementeren {#implement-mobile-sdk}
+# Het Experience Cloud implementeren in mobiele apps {#implement-mobile-sdk}
 
-+ [Overzicht van tutorial](overview.md)
-+ Initiële configuratie {#initial-configuration}
++ [Overzicht van zelfstudie](overview.md)
++ Oorspronkelijke configuratie {#initial-configuration}
    + [Een schema maken](create-schema.md)
    + [Een gegevensstroom maken](create-datastream.md)
    + [Tags configureren](configure-tags.md)
@@ -41,5 +41,6 @@ ht-degree: 72%
       + [In-app berichten](journey-optimizer-inapp.md)
       + [Beslissingsbeheer](journey-optimizer-offers.md)
    + [Target](target.md)
+   + [Customer Journey Analytics](customer-journey-analytics.md)
 + [Conclusie](conclusion.md)
 
