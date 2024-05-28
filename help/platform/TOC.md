@@ -1,19 +1,19 @@
 ---
-user-guide-title: Adobe Experience Platform-tutorials
+user-guide-title: Adobe Experience Platform Tutorials
 breadcrumb-title: Tutorials
 user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 7%
+source-wordcount: '876'
+ht-degree: 4%
 
 ---
 
 
-# Adobe Experience Platform-tutorials {#tutorials}
+# Adobe Experience Platform Tutorials {#tutorials}
 
 + [Platform Tutorials](/help/platform/overview.md)
 + Inleiding tot platform {#intro-to-platform}
@@ -36,7 +36,7 @@ ht-degree: 7%
 + [Aan de slag: Data Architects en Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
-+ Beheer {#admin}
++ Administratie {#admin}
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -69,7 +69,7 @@ ht-degree: 7%
 + [Gegevensverzameling](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
-+ Data Governance {#data-governance}
++ Gegevensbeheer {#data-governance}
    + [Overzicht](/help/platform/governance/understanding-data-governance.md)
    + [Eind-aan-eind demonstratie](/help/platform/governance/introduction-to-data-governance.md)
    + [Gegevens classificeren met labels](/help/platform/governance/classify-data-using-labels.md)
@@ -78,7 +78,6 @@ ht-degree: 7%
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
-   + [Gegevenssets verwijderen](/help/platform/data-hygiene/delete-datasets.md)
    + [Pseudoniem profiel en vervaldatum van gebeurtenis](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Gegevensinname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -96,6 +95,8 @@ ht-degree: 7%
    + [Gegevens streamen met behulp van Bronverbindingen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
    + [Zelfstudies voor Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Zelfstudies voor Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Levenscyclus gegevens {#data-lifecycle}
+   + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
 + Werkruimte voor gegevenswetenschap {#data-science-workspace}
    + [Overzicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architectuur](data-science-workspace/architecture-overview.md)
@@ -145,7 +146,7 @@ ht-degree: 7%
    + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
    + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Controleren {#monitoring}
++ Toezicht {#monitoring}
    + [Gegevens bijhouden](/help/platform/monitoring/monitoring-dashboard.md)
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Dataflows bewaken](/help/platform/monitoring/data-monitoring.md)
@@ -227,7 +228,7 @@ ht-degree: 7%
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Doel](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Tendensen industrie {#industry}
    + [De toekomst van gegevensbeheer en de veranderende omgeving](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Een overzicht van twee percepties - merken versus consumenten](/help/platform/industry/brands-vs-consumers.md)
