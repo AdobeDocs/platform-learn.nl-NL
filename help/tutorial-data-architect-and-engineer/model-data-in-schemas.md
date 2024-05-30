@@ -8,9 +8,9 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
+source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
 workflow-type: tm+mt
-source-wordcount: '2469'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -99,19 +99,19 @@ Veld toevoegen:
    ![Standaardveldgroepen selecteren](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Controleer de **[!UICONTROL Industry]** > **[!UICONTROL Retail]** om industriespecifieke veldgroepen beschikbaar te maken.
-1. Selecteren **[!UICONTROL Loyalty]** om de gebieden van het loyaliteitsprogramma toe te voegen.
-1. Selecteren **[!UICONTROL Add field group]** om alle drie gebiedsgroepen aan het schema toe te voegen.
+1. Selecteren **[!UICONTROL Loyalty Details]** om de gebieden van het loyaliteitsprogramma toe te voegen.
+1. Selecteren **[!UICONTROL Add field groups]** om alle drie gebiedsgroepen aan het schema toe te voegen.
    ![Standaardveldgroepen toevoegen aan loyaliteitsschema](assets/schemas-loyalty-saveOotbMixins.png)
 
 
-Neem nu tijd om de huidige status van het schema te verkennen. De veldgroepen hebben standaardvelden toegevoegd die betrekking hebben op een persoon, de contactgegevens en de status van het loyaliteitsprogramma. Deze twee veldgroepen zijn wellicht handig wanneer u schema&#39;s voor de gegevens van uw eigen bedrijf maakt. Selecteer een specifieke veldgroeprij of schakel het selectievakje naast de naam van de veldgroep in om te zien hoe de visualisatie verandert.
+Nu, neem wat tijd om de huidige staat van het schema te onderzoeken. De veldgroepen hebben standaardvelden toegevoegd die betrekking hebben op een persoon, de contactgegevens en de status van het loyaliteitsprogramma. Deze twee veldgroepen zijn wellicht handig wanneer u schema&#39;s voor de gegevens van uw eigen bedrijf maakt. Selecteer een specifieke veldgroeprij of schakel het selectievakje naast de naam van de veldgroep in om te zien hoe de visualisatie verandert.
 
 Selecteer **[!UICONTROL Save]**.
 ![Het schema opslaan](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
->Het is oké als een veldgroep een veld toevoegt voor een gegevenspunt dat u niet verzamelt. &#39;faxPhone&#39; kan bijvoorbeeld een veld zijn waarvoor Luma geen gegevens verzamelt. Dat is prima. Alleen omdat een veld in het schema is gedefinieerd, betekent dit niet dat er gegevens voor zijn *moet* later worden ingeslikt.
+>Het is oké als een veldgroep een veld toevoegt voor een gegevenspunt dat u niet verzamelt. &#39;faxPhone&#39; kan bijvoorbeeld een veld zijn waarvoor Luma geen gegevens verzamelt. Dat is prima. Alleen omdat een veld in het schema is gedefinieerd, betekent dit niet dat er gegevens voor zijn *moet* later worden ingeslikt. U kunt het veld ook uit het schema verwijderen.
 
 ### Een aangepaste veldgroep toevoegen
 
@@ -119,7 +119,12 @@ Laten we nu een aangepaste veldgroep maken.
 
 Terwijl de groep van het loyaliteitsgebied een `loyaltyID` veld, wil Luma al hun systeem-id&#39;s in één groep beheren om consistentie tussen de schema&#39;s te garanderen.
 
-Veldgroepen moeten worden gemaakt in de schemaworkflow. U kunt een nieuw aangepast veld aan uw schema toevoegen en op die manier een aangepaste veldgroep maken. U kunt ook eerst een aangepaste veldgroep maken en vervolgens velden aan deze groep toevoegen. In deze zelfstudie beginnen we met het maken van een aangepaste veldgroep.
+Veldgroepen moeten worden gemaakt in de schemaworkflow. U kunt:
+
+* Voeg eerst een nieuw aangepast veld toe aan uw schema en maak vervolgens een aangepaste veldgroep, of
+* Maak eerst een aangepaste veldgroep en voeg daar vervolgens velden aan toe.
+
+In deze zelfstudie beginnen we met het maken van een aangepaste veldgroep.
 
 De veldgroep maken:
 

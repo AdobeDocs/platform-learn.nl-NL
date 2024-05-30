@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 4%
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
-   + [Pseudoniem profiel en vervaldatum van gebeurtenis](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Gegevensprep voor gegevenshygiëne](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Gegevenssets vervallen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Een profielkenmerk bijwerken](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Gegevensinname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
