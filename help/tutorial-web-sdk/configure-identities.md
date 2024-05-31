@@ -4,9 +4,9 @@ description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experien
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform W
 De [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) Hiermee stelt u een gemeenschappelijke bezoeker-id (de ECID) in voor alle SDK-toepassingen voor Adobe om de mogelijkheden van het Experience Cloud, zoals het delen van het publiek tussen toepassingen, in te schakelen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
 
 De [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (Ja, er zijn er twee!) gebruikt de ECIDs en klant IDs om identiteitsgrafieken te produceren, die u toestaan om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
+
+>[!NOTE]
+>
+>Een aangepaste naamruimte voor identiteiten is _niet vereist_ om Adobe Analytics, Adobe Target of Adobe Audience Manager te implementeren met Web SDK (geverifieerde identiteiten kunnen worden doorgegeven in het dialoogvenster `data` object in plaats van het `xdm` object zoals u later zult zien). Naamruimten zijn vereist voor toepassingen die zijn gebaseerd op een platform, zoals Journey Optimizer, Real-time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om een identiteitsnamespace in uw eigen implementatie niet te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
 
 >[!NOTE]
 >

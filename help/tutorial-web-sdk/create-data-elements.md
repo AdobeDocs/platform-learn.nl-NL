@@ -4,9 +4,9 @@ description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijs
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1237'
 ht-degree: 0%
 
 ---
@@ -256,29 +256,41 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 >
 >De [!UICONTROL JavaScript variable] het type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zo verwijzend het element van gebruikerslijstgegevens als `digitalData.user[0].profile[0].attributes.username` **werkt niet**.
 
-## Variabele-gegevenselement maken
+## Variabele-gegevenselementen maken voor XDM- en gegevensobjecten
 
-Nadat u de gegevenselementen hebt gemaakt, wijst u deze met de **[!UICONTROL Variable]** gegevenselement dat het schema bepaalt dat voor het voorwerp XDM wordt gebruikt. Dit object moet overeenkomen met het XDM-schema dat u hebt gemaakt tijdens het [Een schema configureren](configure-schemas.md) les.
+De gegevenselementen u enkel creeerde zullen worden gebruikt om een voorwerp XDM (voor de toepassingen van het Platform) en een gegevensvoorwerp (voor Analytics, Doel, en Audience Manager) te bouwen. Deze objecten hebben hun eigen speciale gegevenselementen, genaamd **[!UICONTROL Variable]** gegevenselementen die heel gemakkelijk te creëren zijn.
 
-Het gegevenselement Variabele maken:
+Als u het gegevenselement Variabele voor XDM wilt maken, koppelt u het aan het schema dat u in het dialoogvenster [Een schema configureren](configure-schemas.md) les:
 
 1. Selecteren **[!UICONTROL Add Data element]**
 1. Geef uw gegevenselement een naam `xdm.variable.content`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor XDM, vooraf in te delen met &quot;xdm&quot; om de eigenschap tag beter te organiseren
 1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
 1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
+1. Selecteren **[!UICONTROL XDM]** als de **[!UICONTROL property]**
 1. Selecteer het juiste Experience Platform **[!UICONTROL Sandbox]**
 1. Selecteer de juiste **[!UICONTROL Schema]** in dit geval `Luma Web Event Data`
 1. Selecteren **[!UICONTROL Save]**
 
-   ![Variabele-gegevenselement](assets/analytics-tags-data-element-xdm-variable.png)
+   ![Variabel gegevenselement voor XDM](assets/analytics-tags-data-element-xdm-variable.png)
+
+Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
+
+1. Selecteren **[!UICONTROL Add Data element]**
+1. Geef uw gegevenselement een naam `data.variable`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor het gegevensobject, vooraf in te stellen op &#39;data&#39; om de eigenschap tag beter te organiseren
+1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
+1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
+1. Selecteren **[!UICONTROL data]** als de **[!UICONTROL property]**
+1. Selecteren **[!UICONTROL Save]**
+
+   ![Variabel gegevenselement voor gegevensobject](assets/data-element-data-variable.png.png)
 
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
 | Core Extension Data Elements | Platform Web SDK Extension Data Elements |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 
 >[!TIP]
 >
->In de toekomst [Tagregels maken](create-tag-rule.md) les, leert u hoe **[!UICONTROL Variable]** met gegevenselement kunt u meerdere regels in tags stapelen met behulp van de **[!UICONTROL Update Variable Action type]**.
+>In de toekomst [Tagregels maken](create-tag-rule.md) les, leert u hoe **[!UICONTROL Variable]** met gegevenselementen kunt u meerdere regels in tags stapelen met behulp van de **[!UICONTROL Update Variable Action type]**.
 
 Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar de Edge Network van het Platform met een markeringsregel te beginnen te verzenden. Maar eerst, leer over het verzamelen van identiteiten met Web SDK.
 

@@ -4,9 +4,9 @@ description: Leer hoe te om een schema XDM voor Webgegevens in de interface van 
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1510'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ Leer hoe u een XDM-schema voor webgegevens maakt in de interface van de Adobe Ex
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het verzamelen van gegevens in Adobe Experience Platform.
 
 De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar de Edge Network van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke Experience Cloud toepassingen die in de datastream worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
+
+>[!NOTE]
+>
+>Een XDM-schema is _niet vereist_ om Adobe Analytics, Adobe Target of Adobe Audience Manager te implementeren met Web SDK (gegevens kunnen worden doorgegeven in het dialoogvenster `data` object in plaats van het `xdm` object zoals u later zult zien). Een XDM-schema is vereist voor de krachtigste implementaties van Platform-native toepassingen zoals Journey Optimizer, Real-time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om geen schema XDM in uw eigen implementatie te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
 
 ## Waarom modelleren de gegevens?
 
@@ -111,8 +115,7 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 > 
 >In deze oefening, voegt u de geadviseerde vooraf bepaalde gebiedsgroepen voor Webgegevensinzameling toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_en_**[!UICONTROL Consumer Experience Event]**_.
 >
->
-> Als u alleen implementeert **Adobe Analytics** met Web SDK en het verzenden van geen gegevens naar **Experience Platform**, gebruikt u de [!UICONTROL Adobe Analytics ExperienceEvent Template] veldgroep om het XDM-schema te definiëren. Dit wordt gebruikt in het dialoogvenster [Analyses instellen](setup-analytics.md) les.
+
 
 1. In de **[!UICONTROL Field groups]** sectie, selecteert u **[!UICONTROL Add]**
 

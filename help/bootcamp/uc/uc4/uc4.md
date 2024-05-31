@@ -9,30 +9,30 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-# 4. Reisanalyse klant
+# 4. Klantenreisanalyse
 
-In deze gebruikersstroom, zult u hands-on ervaring met de de toepassingsdienst van de Customer Journey Analytics krijgen.
+In deze gebruikersstroom krijgt u praktische ervaring met de toepassing Customer Journey Analytics.
 
-Customer Journey Analytics verstrekt toolkit aan bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen Customer Journey Analytics bieden context en helderheid aan de complexe multi-kanaals klantenreizen. De verstrekte context produceert actionable inzicht in hoe te om pijnpunten uit het proces van de klantenomzetting te verwijderen en positieve ervaringen in de momenten te leveren die het belangrijkst zijn.
+Customer Journey Analytics verstrekt toolkit aan bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen de Customer Journey Analytics bieden context en helderheid aan de complexe multi-kanaals klantenreizen. De verstrekte context produceert actionable inzicht in hoe te om pijnpunten uit het proces van de klantenomzetting te verwijderen en positieve ervaringen in de momenten te leveren die het belangrijkst zijn.
 
 Heb een blik bij deze video om de waarde, de klantenreis en het configuratieproces te begrijpen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Meer informatie over Customer Journey Analytics vindt u op [hier](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Meer informatie over Customer Journey Analytics is beschikbaar op [hier](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Leerdoelen
 
-- Word vertrouwd met Customer Journey Analytics UI
+- Word vertrouwd met de UI van de Customer Journey Analytics
 - Adobe Experience Platform-gegevenssets in Customer Journey Analytics plaatsen
-- De persoon-id en gegevensstitching in Customer Journey Analytics begrijpen
+- De persoon-id en gegevensstitching in de Customer Journey Analytics begrijpen
 - Begrijp de concepten een gegevensverbinding en een gegevensmening
 - Analysis Workspace gebruiken met Adobe Experience Platform-gegevenssets
 
@@ -40,7 +40,7 @@ Meer informatie over Customer Journey Analytics vindt u op [hier](https://spark.
 
 - Enige kennis van Analysis Workspace verdient de voorkeur, maar is niet vereist
 - Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Customer Journey Analytics Application Service
+- Toegang tot de toepassing Customer Journey Analytics
 
 >[!IMPORTANT]
 >
@@ -48,25 +48,25 @@ Meer informatie over Customer Journey Analytics vindt u op [hier](https://spark.
 
 ## Uitoefening
 
-[4,1 Customer Journey Analytics 101](./ex1.md)
+[4.1 Customer Journey Analytics 101](./ex1.md)
 
 Leer alles over de concepten van de Customer Journey Analytics.
 
 [4.2 Adobe Experience Platform-gegevenssets verbinden in Customer Journey Analytics](./ex2.md)
 
-Leer hoe u meerdere datasets van Adobe Experience Platform in Customer Journey Analytics gebruikt.
+Leer hoe u meerdere gegevenssets van Adobe Experience Platform in Customer Journey Analytics kunt gebruiken.
 
 [4.3 Een gegevensweergave maken](./ex3.md)
 
 Leer hoe te om een gegevensmening in Customer Journey Analytics te vormen.
 
-[4.4 Voorbereiding van gegevens in Customer Journey Analytics](./ex4.md)
+[4.4 Voorbereiding van gegevens in de Customer Journey Analytics](./ex4.md)
 
 Leer hoe u gegevens voorbereidt voordat u verdergaat met de analyse.
 
 [4.5 Visualisatie met Customer Journey Analytics](./ex5.md)
 
-Leer hoe u Adobe Experience Platform-gegevens visualiseert met behulp van Customer Journey Analytics.
+Leer hoe u Adobe Experience Platform-gegevens visualiseert met Customer Journey Analytics.
 
 [4.6 Van inzichten naar actie](./ex6.md)
 

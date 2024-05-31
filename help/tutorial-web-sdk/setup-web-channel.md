@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2736'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Adobe Journey Optimizer configureren in de gegevensstroom:
 
    ![Vak AJO controleren](assets/web-channel-check-ajo-box.png)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 Dit zorgt ervoor dat binnenkomende gebeurtenissen voor Journey Optimizer correct door de Edge Network van Adobe Experience Platform worden behandeld.
 
@@ -114,7 +114,7 @@ Zorg ervoor dat er een samenvoegbeleid is gedefinieerd met de **[!UICONTROL Acti
 De optie configureren in het samenvoegbeleid:
 
 1. Ga naar de **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in het Experience Platform of de interface van Journey Optimizer.
-1. Selecteer het tabblad **[!UICONTROL Merge Policies]**. 
+1. Selecteer de **[!UICONTROL Merge Policies]** tab.
 1. Selecteer uw beleid (u kunt het beste de [!UICONTROL Default Timebased] beleid), en knevel **[!UICONTROL Active-On-Edge Merge Policy]** in de **[!UICONTROL Configure]** stap.
 
    ![Samenvoegbeleid in-/uitschakelen](assets/web-channel-active-on-edge-merge-policy.png)
@@ -132,55 +132,6 @@ In deze les, wordt een geval van het de gebruiks van de beloningen van de steekp
 Met dit gebruiksgeval kunt u beter begrijpen hoe Journey Optimizer uw klanten de beste binnenkomende ervaringen kan bieden, door gebruik te maken van Journey Optimizer-campagnes en de webontwerper.
 
 Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Terwijl dergelijke interfacetaken typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om inzicht in het proces te krijgen, zelfs als zij typisch niet verantwoordelijk voor de verwezenlijking van de campagne van het Webkanaal zijn.
-
-### Een kwaliteitsschema maken en voorbeeldgegevens invoeren
-
-Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, creeer snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit zodat u de Profielen van de Klant in real time in de Webcampagnes van Journey Optimizer kunt gebruiken. Aangezien u al soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
-
-Maak het loyaliteitsschema:
-
-1. Een nieuw schema maken
-1. Kies **[!UICONTROL Individual Profile]** als de [!UICONTROL base class]
-1. Geef het schema een naam `Luma Loyalty Schema`
-1. Voeg de [!UICONTROL Loyalty Details] veldgroep
-1. Voeg de [!UICONTROL Demographic Details] veldgroep
-1. Selecteer de `Person ID` veld en markeren als een [!UICONTROL Identity] en [!UICONTROL Primary identity] met de `Luma CRM Id` [!UICONTROL Identity namespace].
-1. Het schema inschakelen voor [!UICONTROL Profile]
-
-   ![Loyaliteitsschema](assets/web-channel-loyalty-schema.png)
-
-Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
-
-1. Maak een nieuwe dataset van de `Luma Loyalty Schema`
-1. De gegevensset een naam geven `Luma Loyalty Dataset`
-1. De gegevensset inschakelen voor [!UICONTROL Profile]
-1. Het voorbeeldbestand downloaden [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Sleep het bestand naar uw gegevensset en zet het neer
-1. Bevestig dat de gegevens correct zijn ingevoerd
-
-   ![Loyaliteitsschema](assets/web-channel-loyalty-dataset.png)
-
-### Een publiek maken
-
-Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Bouw een snel publiek u in uw Webcampagne kunt gebruiken:
-
-1. Ga in de interface Experience Platform naar **[!UICONTROL Audiences]** in de linkernavigatie
-1. Selecteren **[!UICONTROL Create audience]**
-1. Selecteren **[!UICONTROL Build rule]**
-1. Selecteren **[!UICONTROL Create]**
-
-   ![Een doelgroep maken](assets/web-campaign-create-audience.png)
-
-1. Selecteren **[!UICONTROL Attributes]**
-1. Zoek de **[!UICONTROL Loyalty]** > **[!UICONTROL Tier]** en sleep het naar het **[!UICONTROL Attributes]** sectie
-1. Het publiek definiëren als gebruikers van wie `tier` is `gold`
-1. Naam van het publiek `Luma Loyalty Rewards – Gold Status`
-1. Selecteren **[!UICONTROL Edge]** als de **[!UICONTROL Evaluation method]**
-1. Selecteren **[!UICONTROL Save]**
-
-   ![De doelgroep definiëren](assets/web-campaign-define-audience.png)
-
-Aangezien dit een zeer eenvoudig publiek is, kunnen wij de de evaluatiemethode van de Rand gebruiken. Het publiek van de rand evalueert op de rand, zodat in het zelfde verzoek dat door SDK van het Web aan de Edge Network van het Platform wordt gemaakt, kunnen wij de publieksdefinitie evalueren en onmiddellijk bevestigen als de gebruiker zal kwalificeren.
 
 ### Loyalty Rewards-campagne maken
 
@@ -236,7 +187,7 @@ Als u omhoog scrolt, in **[!UICONTROL Action]** kunt u desgewenst een experiment
 
 U kunt als volgt het inhoudexperiment maken:
 
-1. Klik op **[!UICONTROL Create experiment]**.
+1. Klikken **[!UICONTROL Create experiment]**.
 
    ![Experimenteren maken](assets/web-channel-create-content-experiment.png)
 
@@ -258,7 +209,7 @@ Nu, auteur de ervaring van het Webkanaal. Gebruik hiervoor de Adobe Experience C
 
 1. Binnen de **[!UICONTROL Action]** tabblad van de campagne, klikt u op **[!UICONTROL Edit content]**. Aangezien u één pagina-URL hebt ingevoerd als het oppervlak, kunt u beter beginnen te werken in de composer.
 
-   ![Content bewerken](assets/web-channel-edit-content.png)
+   ![Inhoud bewerken](assets/web-channel-edit-content.png)
 
 1. Klik nu op **[!UICONTROL Edit web page]** om te beginnen met ontwerpen.
 
@@ -293,7 +244,7 @@ Voeg een nieuwe HTML-component toe boven aan de pagina. Bewerk de HTML binnen de
 
 U kunt ook HTML-bewerkingen toevoegen vanuit de **[!UICONTROL Modifications]** venster. In dit deelvenster kunt u een component op de pagina selecteren en deze bewerken vanuit de ontwerpinterface.
 
-Voeg in de editor de HTML voor de `Luma Loyalty Rewards – Gold Status` publiek. Selecteer **[!UICONTROL Validate]**.
+Voeg in de editor de HTML voor de `Luma Loyalty Rewards – Gold Status` publiek. Selecteren **[!UICONTROL Validate]**.
 
 ![HTML valideren](assets/web-channel-add-custom-html-validate.png)
 
@@ -331,7 +282,7 @@ Ten slotte activeert u de campagne voor het webkanaal.
 
 1. Selecteren **Controleren om te activeren**.
 
-1. U wordt gevraagd de details van de campagne een laatste keer te bevestigen. Selecteer **[!UICONTROL Activate]**. Het kan tot 15 minuten duren voordat de campagne live gaat op de site.
+1. U wordt gevraagd de details van de campagne een laatste keer te bevestigen. Selecteren **[!UICONTROL Activate]**. Het kan tot 15 minuten duren voordat de campagne live gaat op de site.
 
 ### Loyalty Rewards QA
 

@@ -3,9 +3,9 @@ title: Gegevens streamen naar Adobe Experience Platform met Platform Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Nu kunt u uw [!UICONTROL datastream] gegevens verzenden naar [!UICONTROL Adobe E
 1. Selecteren **[!UICONTROL Adobe Experience Platform]** als de **[!UICONTROL Service]**
 1. Selecteren `Luma Web Event Data` als de **[!UICONTROL Event Dataset]**
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
    ![DataStream Config](assets/experience-platform-datastream-config.png)
 
@@ -232,6 +232,57 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
    ![Klantprofiel](assets/experience-platform-validate-dataset-custProfile.png)
 
 U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer! En Customer Journey Analytics!).
+
+### Een kwaliteitsschema maken en voorbeeldgegevens invoeren
+
+Deze exercitie zal naar verwachting worden voltooid voor klanten van Real-time Customer Data Platform en Journey Optimizer.
+
+Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, creeer snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit zodat u de Profielen van de Klant in real time met Real-time Customer Data Platform en Journey Optimizer kunt gebruiken. Aangezien u reeds soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
+
+Maak het loyaliteitsschema:
+
+1. Een nieuw schema maken
+1. Kies **[!UICONTROL Individual Profile]** als de [!UICONTROL base class]
+1. Geef het schema een naam `Luma Loyalty Schema`
+1. Voeg de [!UICONTROL Loyalty Details] veldgroep
+1. Voeg de [!UICONTROL Demographic Details] veldgroep
+1. Selecteer de `Person ID` veld en markeren als een [!UICONTROL Identity] en [!UICONTROL Primary identity] met de `Luma CRM Id` [!UICONTROL Identity namespace].
+1. Het schema inschakelen voor [!UICONTROL Profile]
+
+   ![Loyaliteitsschema](assets/web-channel-loyalty-schema.png)
+
+Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
+
+1. Maak een nieuwe dataset van de `Luma Loyalty Schema`
+1. De gegevensset een naam geven `Luma Loyalty Dataset`
+1. De gegevensset inschakelen voor [!UICONTROL Profile]
+1. Het voorbeeldbestand downloaden [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Sleep het bestand naar uw gegevensset en zet het neer
+1. Bevestig dat de gegevens correct zijn ingevoerd
+
+   ![Loyaliteitsschema](assets/web-channel-loyalty-dataset.png)
+
+### Een publiek maken
+
+Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Bouw een snel publiek u in uw Webcampagne kunt gebruiken:
+
+1. Ga in de interface Experience Platform naar **[!UICONTROL Audiences]** in de linkernavigatie
+1. Selecteren **[!UICONTROL Create audience]**
+1. Selecteren **[!UICONTROL Build rule]**
+1. Selecteren **[!UICONTROL Create]**
+
+   ![Een publiek maken](assets/web-campaign-create-audience.png)
+
+1. Selecteren **[!UICONTROL Attributes]**
+1. Zoek de **[!UICONTROL Loyalty]** > **[!UICONTROL Tier]** en sleep het naar het **[!UICONTROL Attributes]** sectie
+1. Het publiek definiëren als gebruikers van wie `tier` is `gold`
+1. Naam van het publiek `Luma Loyalty Rewards – Gold Status`
+1. Selecteren **[!UICONTROL Edge]** als de **[!UICONTROL Evaluation method]**
+1. Selecteren **[!UICONTROL Save]**
+
+   ![Het publiek definiëren](assets/web-campaign-define-audience.png)
+
+Aangezien dit een zeer eenvoudig publiek is, kunnen wij de de evaluatiemethode van de Rand gebruiken. Het publiek van de rand evalueert op de rand, zodat in het zelfde verzoek dat door SDK van het Web aan de Edge Network van het Platform wordt gemaakt, kunnen wij de publieksdefinitie evalueren en onmiddellijk bevestigen als de gebruiker zal kwalificeren.
 
 
 [Volgende: ](setup-analytics.md)
