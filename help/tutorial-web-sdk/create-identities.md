@@ -4,9 +4,9 @@ description: Leer hoe u identiteiten in XDM maakt en het gegevenselement Identit
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Hoewel FPIDs niet in dit leerprogramma wordt gebruikt, wordt u aangemoedigd om F
 
 ## Geverifieerde id
 
-Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe wanneer het gebruiken van het Web SDK van het Platform. ECID the default identity for tracking unauthenticated digital behavior.
+Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe wanneer het gebruiken van het Web SDK van het Platform. ECID is de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
 U kunt ook een geverifieerde gebruikers-id verzenden, zodat Platform [Identiteitsgrafiek](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) en Target kan zijn [Id van derde partij](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Het plaatsen van voor authentiek verklaarde identiteitskaart wordt gedaan door te gebruiken [!UICONTROL Identity Map] type gegevenselement.
 

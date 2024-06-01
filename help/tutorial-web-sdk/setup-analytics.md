@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK.
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2628'
+source-wordcount: '2732'
 ht-degree: 0%
 
 ---
@@ -74,15 +74,15 @@ Er zijn verscheidene manieren om de variabelen van de Analyse in een implementat
 1. XDM-velden toewijzen aan analytische variabelen in de verwerkingsregels voor Analytics (niet langer aanbevolen).
 1. Wijs variabelen rechtstreeks toe aan Analytics in het XDM-schema (niet meer aanbevolen).
 
-Vanaf mei 2024 hoeft u niet langer een XDM-schema te maken om Adobe Analytics met Platform Web SDK te implementeren. De `data` en de `data.variable` gegevenselement dat u in deze zelfstudie hebt gemaakt) kunt u gebruiken om alle aangepaste analytische variabelen in te stellen. Het instellen van deze variabelen in het gegevensobject is vertrouwd voor bestaande klanten van Analytics, is efficiënter dan het gebruik van de interface met verwerkingsregels en voorkomt dat overbodige gegevens ruimte in realtime-klantprofielen opnemen (belangrijk als u Real-time Customer Data Platform of Journey Optimizer hebt).
+Vanaf mei 2024 hoeft u niet langer een XDM-schema te maken om Adobe Analytics met Platform Web SDK te implementeren. De `data` en de `data.variable` gegevenselement dat u in het dialoogvenster [Gegevenselementen maken](create-data-elements.md) les) kan worden gebruikt om alle variabelen van de douanAnalytics te plaatsen. Het instellen van deze variabelen in het gegevensobject is vertrouwd voor bestaande klanten van Analytics, is efficiënter dan het gebruik van de interface met verwerkingsregels en voorkomt dat overbodige gegevens ruimte in realtime-klantprofielen opnemen (belangrijk als u Real-time Customer Data Platform of Journey Optimizer hebt).
 
 ### Automatisch toegewezen velden
 
 Veel XDM-velden worden automatisch toegewezen aan analytische variabelen. Voor de meest recente lijst met toewijzingen raadpleegt u [Variabeletoewijzing analyseren in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-Dit gebeurt als _zelfs als u geen aangepast schema hebt gedefinieerd_. SDK van het Web van het Experience Platform verzamelt automatisch sommige gegevens en verzendt hen naar de Edge Network van het Platform als gebieden XDM. Web SDK leest bijvoorbeeld de URL van de huidige pagina en verzendt deze als `web.webPageDetails.URL`. Dit veld wordt doorgestuurd naar Adobe Analytics en wordt automatisch ingevuld in de pagina-URL-rapporten in Adobe Analytics.
+Dit gebeurt als _zelfs als u geen aangepast schema hebt gedefinieerd_. SDK van het Web van het Experience Platform verzamelt automatisch sommige gegevens en verzendt het naar de Edge Network van het Platform als gebieden XDM. Web SDK leest bijvoorbeeld de URL van de huidige pagina en verzendt deze als het XDM-veld `web.webPageDetails.URL`. Dit veld wordt doorgestuurd naar Adobe Analytics en de pagina-URL-rapporten worden automatisch ingevuld in Adobe Analytics.
 
-Wanneer u SDK van het Web voor Analytics en Op platform-gebaseerde toepassing uitvoert, zult u een douaneXDM schema, aangezien u in dit leerprogramma in [Een schema configureren](configure-schemas.md) les. Sommige XDM gebieden u auto-kaart aan variabelen van Analytics, zoals geschetst in deze lijst hebt uitgevoerd:
+Als u Web SDK voor Adobe Analytics met een schema XDM, aangezien u in dit leerprogramma hebt, sommige gebieden XDM u douane-uitgevoerde auto-kaart aan de variabelen van Analytics, zoals die in deze lijst worden beschreven uitvoert:
 
 | Automatisch toegewezen variabelen van XDM naar Analytics | Adobe Analytics-variabele |
 |-------|---------|
@@ -103,15 +103,18 @@ Wanneer u SDK van het Web voor Analytics en Op platform-gebaseerde toepassing ui
 
 De afzonderlijke secties van de producttekenreeks Analytics worden ingesteld via verschillende XDM-variabelen onder de `productListItems` object.
 
+>[!NOTE]
+>
 >Vanaf 18 augustus 2022, `productListItems[].SKU` neemt prioriteit aan afbeelding aan de productnaam in de s.products variabele.
 >De waarde die is ingesteld op `productListItems[].name` alleen aan de productnaam wordt toegewezen als `productListItems[].SKU` bestaat niet. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
 >Stel geen lege tekenreeks of null in op `productListItems[].SKU`. Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
 
+
 ### Variabelen instellen in het gegevensobject
 
-Variabelen instellen in het dialoogvenster `data` -object is de aanbevolen manier om analytische variabelen in te stellen met Web SDK. Als u variabelen in het gegevensobject instelt, kunnen ook alle automatisch toegewezen variabelen worden overschreven.
+Maar hoe zit het met gebeurtenissen, props en gebeurtenissen? Variabelen instellen in het dialoogvenster `data` -object is de aanbevolen manier om deze variabelen voor Analytics in te stellen met Web SDK. Als u variabelen in het gegevensobject instelt, kunnen ook alle automatisch toegewezen variabelen worden overschreven.
 
-Ten eerste, wat is de `data` object? In elke Web SDK-gebeurtenis kunt u twee objecten verzenden met aangepaste gegevens: `data` en de `xdm` object. Beide worden verzonden naar de Edge Network van het Platform, maar slechts `xdm` object wordt naar de gegevensset Experience Platform verzonden. Eigenschappen in het dialoogvenster `data` object kan op de rand worden toegewezen aan `xdm` velden die de functie Gegevensvoorinstelling voor gegevensverzameling gebruiken, maar die anders niet naar het Experience Platform worden verzonden. Dit maakt het een ideale manier om gegevens naar toepassingen als Analytics te verzenden, die niet op Experience Platform zelf zijn gebaseerd.
+Ten eerste, wat is de `data` object? In elke Web SDK-gebeurtenis kunt u twee objecten verzenden met aangepaste gegevens: `xdm` en de `data` object. Beide worden verzonden naar de Edge Network van het Platform, maar slechts `xdm` object wordt naar de gegevensset Experience Platform verzonden. Eigenschappen in het dialoogvenster `data` object kan op de rand worden toegewezen aan `xdm` velden die de functie Gegevensvoorinstelling voor gegevensverzameling gebruiken, maar die anders niet naar het Experience Platform worden verzonden. Dit maakt het een ideale manier om gegevens naar toepassingen als Analytics te verzenden, die niet op Experience Platform zelf zijn gebaseerd.
 
 Hier zijn de twee voorwerpen in een generische vraag van SDK van het Web:
 
@@ -119,9 +122,28 @@ Hier zijn de twee voorwerpen in een generische vraag van SDK van het Web:
 
 Adobe Analytics is geconfigureerd om te zoeken naar eigenschappen in de `data.__adobe.analytics` gebruiken voor variabelen van Analytics.
 
-Laten we dit nu doen.
+Laten we eens kijken hoe dit werkt. Laten we instellen `eVar1` en `prop1` met onze paginanaam en zie hoe de in XDM omgezette waarde kan worden overschreven
 
-We gebruiken de `data.variable` gegevenselement t
+1. De labelregel openen `all pages - library loaded - set global variables - 1`
+1. Een nieuwe toevoegen **[!UICONTROL Action]**
+1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
+1. Selecteren **[!UICONTROL Action Type]** als **[!UICONTROL Update variable]**
+1. Selecteren `data.variable` als de **[!UICONTROL Data element]**
+1. Selecteer de **[!UICONTROL analytics]** object
+1. Set `eVar1` als de `page.pageInfo.pageName` gegevenselement
+1. Set `prop1` om de waarde van `eVar1`
+1. Als u het overschrijven van in XDM omgezette waarden wilt testen, gaat u in het dialoogvenster **[!UICONTROL Additional property]** sectie de paginanaam instellen als een statische waarde `test`
+1. De regel opslaan
+
+
+Nu, moeten wij het gegevensvoorwerp in onze send gebeurtenisregel omvatten.
+
+1. De labelregel openen `all pages - library loaded - send event - 50`
+1. Open de **[!UICONTROL Send Event]** action
+1. Selecteren `data.variable` als de **[!UICONTROL Data]**
+1. Selecteren **[!UICONTROL Keep Changes]**
+1. Selecteren **[!UICONTROL Save]**
+
 
 
 <!--
@@ -200,7 +222,7 @@ U configureert als volgt de overschrijvingsinstelling van de Adobe Analytics-rap
 
    ![De gegevensstroom overschrijven](assets/datastream-edit-analytics.png)
 
-1. Selecteer de **[!UICONTROL Advance Options]** openen **[!UICONTROL Report Suite Overrides]**
+1. Selecteren **[!UICONTROL Advanced Options]** openen **[!UICONTROL Report Suite Overrides]**
 
 1. Selecteer de rapportsuites die u wilt met voeten treden. In dit geval: `Web SDK Course Dev` en `Web SDK Course Stg`
 
@@ -219,9 +241,10 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. Onder **[!UICONTROL Extension]**, selecteert u **[!UICONTROL Core]**
 
-1. Onder **[!UICONTROL Event Type]**, selecteert u **[!UICONTROL library loaded]**
+1. Onder **[!UICONTROL Event Type]**, selecteert u **[!UICONTROL Library Loaded (Page Top)]**
 
 1. Selecteren om te openen **[!UICONTROL Advanced Options]**, typt u `51`. Dit verzekert de regellooppas na `all pages - library loaded - send event - 50` dat de basislijn-XDM instelt met de **[!UICONTROL Update variable]** actietype.
+1. Selecteren **[!UICONTROL Keep Changes]**
 
    ![Analyserapport Suite negeren](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. Als de **[!UICONTROL Action Type]**, selecteert u **[!UICONTROL Send Event]**
 
-1. Als de **[!UICONTROL Type]**, selecteert u `web.webpagedetails.pageViews`
-
 1. Als de **[!UICONTROL XDM data]**, selecteert u de `xdm.variable.content` gegevenselement dat u in het dialoogvenster [Gegevenselementen maken](create-data-elements.md) les
+
+1. Als de **[!UICONTROL Data]**, selecteert u de `data.variable` gegevenselement dat u in het dialoogvenster [Gegevenselementen maken](create-data-elements.md) les
 
    ![Gegevensstroomoverschrijving voor analyse](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
    >
    >    Dit tabblad bepaalt in welke tagomgeving de overschrijving plaatsvindt. Voor dit oefening specificeert u slechts het milieu van de Ontwikkeling maar wanneer u dit aan productie opstelt herinner zich om het in ook te doen in **[!UICONTROL Production]** milieu.
 
-
+1. Selecteer de **[!UICONTROL Sandbox]** u gebruikt voor de zelfstudie
 1. Selecteer de **[!UICONTROL Datastream]** in dit geval `Luma Web SDK: Development Environment`
 
 1. Onder **[!UICONTROL Report suites]** selecteert u de rapportsite waarvoor u deze wilt gebruiken. In dit geval: `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 ## Bouw uw milieu van de Ontwikkeling
 
-Voeg uw nieuwe gegevenselementen en regels toe aan uw `Luma Web SDK Tutorial` tagbibliotheek en herstel de ontwikkelomgeving.
+Voeg uw bijgewerkte regels toe aan uw `Luma Web SDK Tutorial` tagbibliotheek en herstel de ontwikkelomgeving.
 
 Gefeliciteerd! De volgende stap bestaat uit het valideren van uw Adobe Analytics-implementatie via Experience Platform Web SDK.
 

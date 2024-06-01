@@ -4,9 +4,9 @@ description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijs
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 Pros
 
 * Elimineert extra stappen die aan de variabelen van de gegevenslaag opnieuw aan XDM worden toegewezen
-* Het kan sneller zijn om te implementeren als uw ontwikkelingsteam eigenaar is van taggen voor digitaal gedrag
+* Mogelijk is de implementatie sneller als uw webontwikkelingsteam ook eigenaar is van taggen met digitaal gedrag
 
 Cons
 
 * Volledige afhankelijkheid van ontwikkelingsteam en ontwikkelingscyclus voor het bijwerken van welke gegevens naar XDM gaan
 * Beperkte flexibiliteit omdat XDM de exacte lading van de gegevenslaag ontvangt
 * Kan ingebouwde tagfuncties, zoals plakken, persistentie, functies voor snelle implementatie niet gebruiken
-* Kan de gegevenslaag niet gebruiken voor pixels van derden
+* De gegevenslaag is moeilijker te gebruiken voor pixels van derden (maar u wilt deze pixels mogelijk verplaatsen naar [gebeurtenis doorsturen](setup-event-forwarding.md)!
 * Kan de gegevens niet transformeren tussen de gegevenslaag en XDM
 
 ### Gegevenslaag toewijzen in tags
@@ -267,7 +267,7 @@ Als u het gegevenselement Variabele voor XDM wilt maken, koppelt u het aan het s
 1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
 1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
 1. Selecteren **[!UICONTROL XDM]** als de **[!UICONTROL property]**
-1. Selecteer het juiste Experience Platform **[!UICONTROL Sandbox]**
+1. Selecteer de **[!UICONTROL Sandbox]** waarin u het schema creeerde
 1. Selecteer de juiste **[!UICONTROL Schema]** in dit geval `Luma Web Event Data`
 1. Selecteren **[!UICONTROL Save]**
 
@@ -280,6 +280,7 @@ Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
 1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
 1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
 1. Selecteren **[!UICONTROL data]** als de **[!UICONTROL property]**
+1. Selecteer de oplossingen voor Experiencen Cloud die u wilt implementeren als onderdeel van deze zelfstudie
 1. Selecteren **[!UICONTROL Save]**
 
    ![Variabel gegevenselement voor gegevensobject](assets/data-element-data-variable.png.png)

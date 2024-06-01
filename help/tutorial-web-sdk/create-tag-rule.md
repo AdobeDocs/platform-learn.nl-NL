@@ -4,9 +4,9 @@ description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt m
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,6 @@ Nu gebruiken **[!UICONTROL Update variable]** in extra, gerangschikte regels om 
 >
 >De regelvolgorde bepaalt welke regel het eerst wordt uitgevoerd wanneer een gebeurtenis wordt geactiveerd. Als twee regels hetzelfde gebeurtenistype hebben, wordt eerst de regel met het laagste getal uitgevoerd.
 > 
->![regelvolgorde](assets/set-up-analytics-sequencing.png)
 
 Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 
@@ -172,7 +171,8 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 1. Selecteer de ![+ symbool](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]**, selecteert u **[!UICONTROL Core]**
 1. Onder **[!UICONTROL Event Type]**, selecteert u **[!UICONTROL Library Loaded (Page Top)]**
-1. Selecteren om te openen **[!UICONTROL Advanced Options]**, typt u `20`. Deze ordewaarde verzekert de regellooppas na `all pages - library loaded - set global variables - 1` dat de globale configuratie plaatst.
+1. Selecteren om te openen **[!UICONTROL Advanced Options]**, typt u `20`. Deze ordewaarde verzekert de regellooppas _na_ de `all pages - library loaded - set global variables - 1` waarmee de algemene configuratie wordt ingesteld.
+1. Selecteren **[!UICONTROL Keep changes]**
 
    ![XDM-regels voor analyse](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 1. Onder **[!UICONTROL Actions]** selecteren **[!UICONTROL Add]**
 1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Selecteren **[!UICONTROL Action Type]** als **[!UICONTROL Update variable]**
+1. Selecteren `xdm.variable.content` als de **[!UICONTROL Data element]**
 1. Omlaag schuiven naar de `commerce` object
 1. Open de **[!UICONTROL productViews]** object en set **[!UICONTROL value]** tot `1`
 
@@ -202,7 +203,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 
    >[!NOTE]
    >
-   >Omdat deze regel een hogere orde heeft, zal het het `eventType` ingesteld in de regel &quot;Algemene configuratie&quot;. `eventType` kan slechts één waarde bevatten en we raden u aan deze waarde in te stellen met de gebeurtenis met de hoogste waarde.
+   >Omdat deze regel een hogere orde heeft, zal het het `eventType` ingesteld in de regel &quot;Algemene configuratie&quot;. `eventType` kan slechts één waarde bevatten en wij adviseren het plaatsen met de waardevolste gebeurtenis.
 
 1. Omlaag schuiven naar en selecteren `productListItems` array
 1. Selecteren **[!UICONTROL Provide individual items]**
@@ -264,6 +265,7 @@ Laten we nu onze array toewijzen aan het XDM-object:
 1. Onder **[!UICONTROL Actions]** selecteren **[!UICONTROL Add]**
 1. Selecteren **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Selecteren **[!UICONTROL Action Type]** als **[!UICONTROL Update variable]**
+1. Selecteren `xdm.variable.content` als de **[!UICONTROL Data element]**
 1. Omlaag schuiven naar de `commerce` en selecteert u deze om het te openen.
 1. Open de **[!UICONTROL productListViews]** object en set **[!UICONTROL value]** tot `1`
 
@@ -320,6 +322,7 @@ Maak twee andere regels voor afhandeling en aankoop volgens hetzelfde patroon, m
 1. Omlaag schuiven naar en selecteren **[!UICONTROL productListItems]** array
 1. Selecteren **[!UICONTROL Provide entire array]**
 1. Toewijzen aan **`cart.productInfo.purchase`** gegevenselement
+1. Selecteren **[!UICONTROL Keep Changes]**
 1. Selecteren **[!UICONTROL Save]**
 
 Als u klaar bent, worden de volgende regels gemaakt.
@@ -339,7 +342,7 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
 1. Gebruik de **[!UICONTROL Core Extension]** en selecteert u `Library Loaded (Page Top)` als de **[!UICONTROL Event Type]**
 
-1. Selecteren **[!UICONTROL Advanced]** vervolgkeuzelijst en Enter `50` in **[!UICONTROL Order]**. Dit zorgt ervoor dat de tweede regel wordt geactiveerd na de eerste regel die u hebt ingesteld om te activeren als `1`.
+1. Selecteren **[!UICONTROL Advanced]** vervolgkeuzelijst en Enter `50` in **[!UICONTROL Order]**. Dit zal deze regel na alle andere regels verzekeren u hebt gevormd (die had `1` of `20` als [!UICONTROL Order]).
 
 1. Selecteren **[!UICONTROL Keep Changes]** om op het belangrijkste regelscherm terug te keren
    ![Trigger voor geladen bibliotheek selecteren](assets/create-tag-rule-trigger-loaded-send.png)

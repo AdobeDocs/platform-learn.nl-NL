@@ -4,9 +4,9 @@ description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience P
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -78,8 +78,8 @@ In de les Foutopsporing bekijken hoe we dit deden:
 
 Er is beperkte informatie om in deze fase van uw implementatie te bekijken. Één waarde wij kunnen zien is uw Experience Cloud identiteitskaart (ECID) die op de Edge Network van het Platform wordt geproduceerd:
 
-1. Selecteer de rij met de gebeurtenis genoemd de Handgreep van de Reactie van de Adobe.
-1. Rechts wordt een menu weergegeven. Selecteer de `+` ondertekenen naast `[!UICONTROL ACPExtensionEvent]`
+1. Selecteer de rij met de geroepen gebeurtenis `Alloy Response Handle`.
+1. Rechts wordt een menu weergegeven. Selecteer de `+` ondertekenen naast `[!UICONTROL ACPExtensionEventData]`
 1. Omlaag boven door `[!UICONTROL payload > 0 > payload > 0 > namespace]`. De id die wordt weergegeven onder de laatste `0` komt overeen met de `ECID`. U weet dat met de waarde die onder verschijnt `namespace` overeenkomst `ECID`
 
    ![Betrouwbaarheid valideren ECID](assets/validate-assurance-ecid.png)

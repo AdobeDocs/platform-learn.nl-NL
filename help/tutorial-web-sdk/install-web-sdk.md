@@ -4,9 +4,9 @@ description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van 
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,7 @@ Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, k
 Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later bij. Het enige wat u nu moet doen is de uitbreiding met uw gegevensstroom verbinden:
 
 1. Onder **[!UICONTROL Datastreams]**, selecteert u de **[!UICONTROL Choose from list]** invoermethode
+1. Selecteer de sandbox waarin u het schema, de naamruimte en de gegevensstroom hebt gemaakt
 1. Selecteer de gegevensstroom die u vroeger creeerde, `Luma Web SDK`
 1. Selecteren **[!UICONTROL Save]**
 

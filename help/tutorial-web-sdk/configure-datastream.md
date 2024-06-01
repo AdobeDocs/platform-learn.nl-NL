@@ -4,9 +4,9 @@ description: Leer hoe te om een gegevensstroom toe te laten en de oplossingen va
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Nu, kunt u een gegevensstroom tot stand brengen om de Edge Network van het Platf
 
    >[!NOTE]
    >
-   >U hoeft alleen een schema te selecteren als u de opdracht [Gegevensvoorvoegsel voor gegevensverzameling](/help/data-collection/edge/data-prep.md) gebruiken.
+   >U hoeft geen schema te selecteren. Een schemaselectie wordt slechts vereist als u gebruikt [Gegevensvoorvoegsel voor gegevensverzameling](/help/data-collection/edge/data-prep.md) gebruiken.
 
-Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aan de datastream toevoegen, nochtans zult u geen diensten op dit punt in het leerprogramma toevoegen. U zult dit later doen in de lessen [Experience Platform instellen](setup-experience-platform.md), [Analyses instellen](setup-analytics.md), [Audience Manager instellen](setup-audience-manager.md), [Doel instellen](setup-target.md), of [Gebeurtenis doorsturen](setup-event-forwarding.md).
+Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aan de datastream toevoegen, nochtans zult u geen diensten op dit punt toevoegen. U zult dit later doen in de lessen [Experience Platform instellen](setup-experience-platform.md), [Analyses instellen](setup-analytics.md), [Audience Manager instellen](setup-audience-manager.md), [Doel instellen](setup-target.md), of [Gebeurtenis doorsturen](setup-event-forwarding.md).
 
 >[!NOTE]
 >

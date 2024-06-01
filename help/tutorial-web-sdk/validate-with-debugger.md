@@ -4,9 +4,9 @@ description: Leer hoe te om uw implementatie van SDK van het Web van het Platfor
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
    ![tag, eigenschap is vervangen](assets/validate-switch-success.png)
 
-Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u labels gaat gebruiken op uw productiewebsite, kunt u met deze techniek wijzigingen valideren terwijl u deze aanbrengt in de ontwikkelomgeving van labels.
+Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u tags op uw eigen website gebruikt, kunt u dezelfde techniek gebruiken om bibliotheken met ontwikkelingslabels op uw productiewebsite te valideren.
 
 ## Valideer client-side netwerkverzoeken met Foutopsporing van Experience Platform
 
@@ -131,7 +131,7 @@ Deze typen aanvraagdetails zijn ook zichtbaar in de webontwikkelaarsgereedschapp
 
    ![Het tabblad Netwerk](assets/validate-dev-console.png)
 
-1. Ga naar de **Antwoord** en noteer hoe de ECID-waarde wordt opgenomen in het antwoord. Deze waarde kopiëren zoals u deze gebruikt om de profielgegevens in de volgende exercitie te valideren
+1. Ga naar de **Antwoord** en noteer hoe de ECID-waarde wordt opgenomen in het antwoord.
 
    ![Het tabblad Netwerk](assets/validate-dev-console-ecid.png)
 
@@ -141,7 +141,7 @@ Deze typen aanvraagdetails zijn ook zichtbaar in de webontwikkelaarsgereedschapp
 
 ## Valideer server-zijnetwerkverzoeken met Foutopsporing van het Experience Platform
 
-Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het Web SDK van het Platform verzendt eerst gegevens van uw digitaal bezit naar de Edge Network van het Platform. Dan, maakt de Edge Network van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten. U kunt de server-zijverzoeken bevestigen die door het Netwerk van de Rand van het Platform door het Spoor van de Rand in Debugger worden gemaakt te gebruiken.
+Zoals u in [Een gegevensstroom configureren](configure-datastream.md) les, het Web SDK van het Platform verzendt eerst gegevens van uw digitaal bezit naar de Edge Network van het Platform. Dan, maakt de Edge Network van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten. U kunt de server-zijverzoeken bevestigen die door de Edge Network van het Platform door het Spoor van de Rand in Debugger worden gemaakt te gebruiken.
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 

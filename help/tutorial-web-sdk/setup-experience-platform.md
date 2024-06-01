@@ -3,9 +3,9 @@ title: Gegevens streamen naar Adobe Experience Platform met Platform Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Aan het eind van deze les, zult u kunnen:
 * Vorm de gegevensstroom om de gegevens van SDK van het Web naar Adobe Experience Platform te verzenden
 * Streaming webgegevens inschakelen voor realtime klantprofiel
 * Bevestig de gegevens zowel in de dataset van het Platform als in het Profiel van de Klant in real time zijn geland
+* De gegevens van het steekproefloyaliteitsprogramma in Platform opnemen
+* Een eenvoudig platformpubliek maken
 
 ## Vereisten
 
@@ -36,6 +38,9 @@ Om deze les te voltooien, moet u eerst:
 * Toegang hebben tot een Adobe Experience Platform-toepassing zoals Real-time Customer Data Platform, Journey Optimizer of Customer Journey Analytics
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
+>[!NOTE]
+>
+>Als u geen toepassingen van het Platform hebt, kunt u deze les overslaan of lezen.
 
 ## Een gegevensset maken
 
@@ -44,7 +49,7 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
 
-1. Ga naar de [Interface Experience Platform](https://experience.adobe.com/platform/)
+1. Ga naar de [Experience Platform](https://experience.adobe.com/platform/) of [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) interface
 1. Bevestig dat u zich in de ontwikkelingssandbox bevindt die u voor deze zelfstudie gebruikt
 1. Openen **[!UICONTROL Data Management > Datasets]** van de linkernavigatie
 1. Selecteren **[!UICONTROL Create dataset]**
@@ -139,14 +144,28 @@ Om te bevestigen dat de gegevens in het datumpigment van Platform zijn geland, i
 
    ![Dataset Voorvertoning 1](assets/experience-platform-dataset-preview-1.png)
 
+
+### De gegevens opvragen
+
+1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Data Management > Queroes]** in de linkernavigatie om het dialoogvenster **[!UICONTROL Queries]** scherm.
+1. Selecteren **[!UICONTROL Create query]**
+1. Eerst, stel een vraag in werking om alle namen van de lijsten in het gegevensmeer te zien. Enter `SHOW TABLES` in de vraagredacteur en klik het playbackpictogram om de vraag in werking te stellen.
+1. In de resultaten ziet u hoe de naam van de tabel eruit ziet `luma_web_event_data`
+1. Vraag nu de lijst met een eenvoudige vraag die naar uw lijst van verwijzingen voorzien (merk op dat door gebrek de vraag tot 100 resultaten zal worden beperkt): `SELECT * FROM "luma_web_event_data"`
+1. Na een paar ogenblikken ziet u voorbeeldrecords van uw webgegevens.
+
+>[!ERROR]
+>
+>Als er een fout optreedt met de instelling &quot;Tabel niet voorzien&quot;, controleert u de naam van de tabel nogmaals. Het kan ook zijn dat de micropartij gegevens nog niet in het datumpeer is geland. Probeer het over 10-15 minuten opnieuw.
+
 >[!INFO]
 >
->De de vraagdienst van Adobe Experience Platform is een robuustere methode om gegevens in het meer te bevestigen, maar is voorbij het werkingsgebied van dit leerprogramma. Zie voor meer informatie [Gegevens verkennen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie Platform-zelfstudies.
+>  Zie voor meer informatie over de Adobe Experience Platform-queryservice [Gegevens verkennen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie Platform-zelfstudies.
 
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen
 
-De volgende stap is de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-Time Customer Profile:
+Voor klanten van Real-time Customer Data Platform en Journey Optimizer, is de volgende stap de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-Time Customer Profile:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ De volgende stap is de dataset en het schema voor het Profiel van de Klant in re
 
    >[!IMPORTANT]
    >
-   >    Primaire id&#39;s zijn vereist voor elk record dat wordt verzonden naar het Real-Time Klantprofiel. Identiteitsvelden worden doorgaans gelabeld in het schema. Als u identiteitskaarten gebruikt, zijn de identiteitsvelden echter niet zichtbaar binnen het schema. In dit dialoogvenster kunt u bevestigen dat u een primaire identiteit voor ogen hebt en dat u deze in een identiteitsoverzicht opgeeft wanneer u uw gegevens verzendt. Zoals u weet, gebruikt SDK van het Web een identiteitskaart en Experience Cloud identiteitskaart (ECID) is de standaard primaire identiteit.
+   >    Primaire id&#39;s zijn vereist voor elk record dat wordt verzonden naar het Real-Time Klantprofiel. Identiteitsvelden worden doorgaans gelabeld in het schema. Als u identiteitskaarten gebruikt, zijn de identiteitsvelden echter niet zichtbaar binnen het schema. In dit dialoogvenster kunt u bevestigen dat u een primaire identiteit voor ogen hebt en dat u deze in een identiteitsoverzicht opgeeft wanneer u uw gegevens verzendt. Zoals u weet, gebruikt SDK van het Web een identiteitskaart met Experience Cloud identiteitskaart (ECID) als standaard primaire identiteit en voor authentiek verklaarde identiteitskaart als primaire identiteit wanneer beschikbaar.
 
 
 1. Selecteren **[!UICONTROL Enable]**
@@ -192,7 +211,7 @@ Het schema is nu ook ingeschakeld voor het profiel.
 
 >[!IMPORTANT]
 >
->    Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd. Ook kunnen velden na dit punt niet uit het schema worden verwijderd. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt. In deze zelfstudie moet u een ontwikkelingssandbox gebruiken die u op elk gewenst moment kunt verwijderen.
+>    Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd zonder de volledige sandbox opnieuw in te stellen of te verwijderen. Ook kunnen velden na dit punt niet uit het schema worden verwijderd.
 >
 >   
 > Als u met uw eigen gegevens werkt, is het raadzaam de volgende handelingen uit te voeren:
@@ -209,7 +228,7 @@ U kunt een klantprofiel opzoeken in de interface Platform (of Journey Optimizer-
 
 Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere versies in deze les om u aan te melden bij de Luma-website wanneer deze is toegewezen aan uw tag-eigenschap. Inspect het verzoek van SDK van het Web van het Platform om ervoor te zorgen het gegevens met verzendt `lumaCRMId`.
 
-1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Profiles]** in de linkernavigatie
+1. In de [Experience Platform](https://experience.adobe.com/platform/) interface, selecteren **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de linkernavigatie
 
 1. Als de **[!UICONTROL Identity namespace]** gebruiken `lumaCRMId`
 1. De waarde van de opdracht kopiëren en plakken `lumaCRMId` overgegaan in de vraag die u in Debugger van het Experience Platform inspecteerde, in dit geval `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Maak het loyaliteitsschema:
 1. Voeg de [!UICONTROL Loyalty Details] veldgroep
 1. Voeg de [!UICONTROL Demographic Details] veldgroep
 1. Selecteer de `Person ID` veld en markeren als een [!UICONTROL Identity] en [!UICONTROL Primary identity] met de `Luma CRM Id` [!UICONTROL Identity namespace].
-1. Het schema inschakelen voor [!UICONTROL Profile]
+1. Het schema inschakelen voor [!UICONTROL Profile]. Als u de schakeloptie Profiel niet kunt vinden, klikt u op de schemanaam linksboven.
+1. Het schema opslaan
 
    ![Loyaliteitsschema](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
 
 Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Bouw een snel publiek u in uw Webcampagne kunt gebruiken:
 
-1. Ga in de interface Experience Platform naar **[!UICONTROL Audiences]** in de linkernavigatie
+1. Ga in de interface Experience Platform of Journey Optimizer naar **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Create audience]**
 1. Selecteren **[!UICONTROL Build rule]**
 1. Selecteren **[!UICONTROL Create]**
