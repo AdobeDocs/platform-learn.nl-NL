@@ -4,9 +4,10 @@ description: Leer hoe u de interacties met uw mobiele app meldt en analyseert me
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '2991'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 Leer hoe u interacties van uw mobiele app met Customer Journey Analytics kunt rapporteren en analyseren.
 
-De mobiele gegevens van de toepassingsgebeurtenis, die u verzamelde en naar de Edge Network van het Platform in vroegere lessen verzond wordt door:sturen aan de diensten die in uw gegevensstroom worden gevormd. Als u de [Gegevens naar Experience Platform verzenden](platform.md) les, dat de gegevens nu in het gegevensmeer van Experience Platform als datasets worden opgeslagen. Op dit moment kunnen de Customers Journey Analytics de gegevens nu gebruiken voor rapportage en analyse.
+De mobiele gegevens van de toepassingsgebeurtenis, die u verzamelde en naar de Edge Network van het Platform in vroegere lessen verstuurde, worden door:sturen aan de diensten die in uw gegevensstroom worden gevormd. Als u de [Gegevens naar Experience Platform verzenden](platform.md) les, dat het gegeven nu in een dataset van het Experience Platform wordt opgeslagen en beschikbaar voor Customer Journey Analytics voor het melden en analyse te gebruiken.
 
 In tegenstelling tot Adobe Analytics, Customer Journey Analytics *gebruik* gegevens van datasets die in Experience Platform worden gecreeerd. Gegevens worden niet rechtstreeks naar de Customer Journey Analytics verzonden met de Adobe Experience Platform Mobile SDK, maar de gegevens worden naar gegevenssets verzonden. De verbindingen worden dan gevormd in Customer Journey Analytics om de datasets te selecteren u in uw het melden en analyseprojecten zult gebruiken.
 
