@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 4%
 + Gegevenshygiëne {#data-hygiene}
    + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Gegevensprep voor gegevenshygiëne](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Gegevenssets en batches verwijderen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Gegevenssets vervallen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Een profielkenmerk bijwerken](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Gegevensinname {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 4%
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
    + [Een berekend kenmerk maken](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Profielen verwijderen](/help/platform/profiles/delete-profiles.md)
    + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
    + [Inleiding tot de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
