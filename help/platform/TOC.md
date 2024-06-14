@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 4%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 4%
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administratie {#admin}
+   + [AI-assistent gebruiken](/help/platform/admin/ai-assistant.md)
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
