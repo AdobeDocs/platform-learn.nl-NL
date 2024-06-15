@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
+source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '912'
 ht-degree: 4%
 
 ---
@@ -79,15 +79,17 @@ ht-degree: 4%
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
-   + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Gegevensprep voor gegevenshygiëne](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Gegevenssets en batches verwijderen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Gegevenssets vervallen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Profielen verwijderen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Een profielkenmerk bijwerken](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Gegevensinname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [Gegevenssets en batches verwijderen](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Een CSV-bestand toewijzen aan XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Overzicht van bronnen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Gegevens van Adobe Analytics verzamelen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
@@ -169,6 +171,7 @@ ht-degree: 4%
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
    + [Een berekend kenmerk maken](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Verlopen van pseudoniem profiel (TTL)](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Profielen verwijderen](/help/platform/profiles/delete-profiles.md)
    + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
