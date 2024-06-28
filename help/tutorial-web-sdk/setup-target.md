@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Target implementeert met de Platform Web SDK. Deze
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4226'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van opstellings gegevenselementen en regels.
 * Zorg ervoor dat u een [De rol Editor of fiatteur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
-* Installeer de [Helpextensie Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u de Google Chrome-browser gebruikt.
+* Installeer de [Helpextensie Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u de Google Chrome browser gebruikt.
 * Weet hoe u activiteiten in Target kunt instellen. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
    * [De extensie Visual Experience Composer (VEC) gebruiken](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
    * [De composer voor visuele ervaring gebruiken](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
@@ -188,7 +188,7 @@ De visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe
 * **Activiteit**: Een reeks ervaringen voor een of meer doelgroepen. Een eenvoudige A/B-test kan bijvoorbeeld een activiteit zijn met twee ervaringen.
 * **Ervaring**: Een reeks acties die op een of meer locaties zijn gericht, of beslissingsbereik.
 * **Beslissingsbereik**: Een locatie waar een doelervaring wordt geleverd. Beslissingsbereik is gelijk aan &quot;box&quot; als u vertrouwd bent met het gebruik van oudere versies van Target.
-* **Personeelsbesluit**: Een actie die de server bepaalt, moet worden toegepast. Deze beslissingen kunnen gebaseerd zijn op publiekscriteria en prioritering van doelactiviteiten.
+* **Personalization-besluit**: Een actie die de server bepaalt, moet worden toegepast. Deze beslissingen kunnen gebaseerd zijn op publiekscriteria en prioritering van doelactiviteiten.
 * **Voorstelling**: Het resultaat van besluiten die door de server worden genomen, die in de reactie van SDK van het Web van het Platform worden geleverd. Bijvoorbeeld, zou het ruilen van een bannerbeeld een voorstel zijn.
 
 ### Werk de [!UICONTROL Send event] action
@@ -267,7 +267,7 @@ Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans
 1. Ga naar de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik foutopsporing om [schakelen van de markeringseigenschap op de site naar uw eigen ontwikkeleigenschap](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. De pagina opnieuw laden
 1. Selecteer de **[!UICONTROL Network]** in de foutopsporing
-1. Filteren op **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Filteren op **[!UICONTROL Experience Platform Web SDK]**
 1. Selecteer de waarde in de gebeurtenisrij voor de eerste aanroep
 
    ![Netwerkaanroep in Adobe Experience Platform Debugger](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Nu u SDK van het Web van het Platform hebt gevormd om inhoud voor te verzoeken `
 1. Voor de **[!UICONTROL Scope]** veldinvoer `homepage-hero`
 1. Voor de **[!UICONTROL Selector]** veldinvoer `div.heroimage`
 1. Voor **[!UICONTROL Action Type]** selecteren **[!UICONTROL Set HTML]**
+1. Selecteren **[!UICONTROL Keep Changes]**
 
    ![Herdenkingsactie homepage weergeven](assets/target-action-render-hero.png)
 
+   Naast het renderen van de activiteit, moet u een extra vraag aan Doel richten om erop te wijzen dat de op vorm-gebaseerde activiteit heeft teruggegeven:
+
+1. Voeg een andere actie aan de regel toe. Gebruik de **Kern** en de **[!UICONTROL Custom code]** actietype:
+1. Plak de volgende JavaScript-code:
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![Herdenkingsactie homepage weergeven](assets/target-action-fire-display.png)
+
+1. Selecteren **[!UICONTROL Keep Changes]**
+
 1. Uw wijzigingen opslaan en samenstellen in uw bibliotheek
 1. Laad de Luminantiepagina een paar keer, wat voldoende zou moeten zijn om de nieuwe pagina te maken `homepage-hero` register van het beslissingswerkingsgebied in de interface van het Doel.
+
+
+
+
 
 ### Een doelactiviteit instellen met de Form-based Experience Composer
 
@@ -381,10 +427,10 @@ Als u uw activiteit hebt geactiveerd, wordt de inhoud weergegeven op de pagina. 
 
 1. Er zijn toetsen onder `query` > `personalization` en  `decisionScopes` heeft een waarde van `__view__` zoals voorheen , maar nu is er ook een `homepage-hero` toepassingsgebied opgenomen. Deze vraag van SDK van het Web van het Platform verzocht om besluiten van Doel voor veranderingen die worden aangebracht gebruikend VEC en specifiek `homepage-hero` locatie.
 
-   ![`__view__` DecisionScope-verzoek](assets/target-debugger-view-scope.png)
+   ![`__view__` DecisionScope-verzoek](assets/target-debugger-view-custom-scope.png)
 
 1. Sluit de bedekking en selecteer de gebeurtenisdetails voor de tweede netwerkvraag. Deze vraag is slechts aanwezig als het Doel een activiteit terugkeerde.
-1. U ziet dat er details zijn over de activiteit en ervaring die door Target zijn geretourneerd. Deze vraag van SDK van het Web van Platform verzendt een bericht dat een activiteit van het Doel aan de gebruiker werd teruggegeven en verhoogt een indruk.
+1. U ziet dat er details zijn over de activiteit en ervaring die door Target zijn geretourneerd. Deze vraag van SDK van het Web van Platform verzendt een bericht dat een activiteit van het Doel aan de gebruiker werd teruggegeven en verhoogt een indruk. Deze actie is gestart door de aangepaste code-actie die u eerder hebt toegevoegd.
 
    ![Weergave doelactiviteit](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ In deze sectie, zult u specifiek doel-specifieke gegevens overgaan en een dichte
 Alle XDM-velden worden automatisch als doel doorgegeven [paginaparameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) of mbox-parameters.
 
 Sommige van deze XDM-velden worden toegewezen aan speciale objecten op de achtergrond van Target. Bijvoorbeeld: `web.webPageDetails.URL` is automatisch beschikbaar voor het maken van URL-doelvoorwaarden of als de `page.url` -object bij het maken van profielscripts.
+
+U kunt ook paginaparameters toevoegen met het gegevensobject.
 
 ### Speciale parameters en het gegevensobject
 
@@ -440,14 +488,13 @@ Als u aanvullende gegevens voor Doel buiten het XDM-object wilt doorgeven, moet 
    ![Doelgegevens aan regel toevoegen](assets/target-rule-data.png)
 
 1. Uw wijzigingen opslaan en samenstellen in uw bibliotheek
-1. Herhaal stap 1 tot en met 4 voor de **e-commerce - geladen bibliotheek - stel productdetailvariabelen in - 20** regel
 
 >[!NOTE]
 >
 >In het bovenstaande voorbeeld wordt een `data` -object dat niet op alle paginatypen volledig is ingevuld. Deze situatie wordt op de juiste wijze afgehandeld door labels en er worden sleutels weggelaten met een ongedefinieerde waarde. Bijvoorbeeld: `entity.id` en `entity.name` niet op pagina&#39;s worden doorgestuurd, afgezien van de productdetails.
 
 
-## Aanvragen voor personalisatie en analyse splitsen
+## Personalization- en analyseverzoeken splitsen
 
 De gegevenslaag op de Luminasite is volledig gedefinieerd voordat de tags code insluiten. Op deze manier kunnen we een enkele oproep doen om persoonlijke inhoud op te halen (bijvoorbeeld vanuit Adobe Target) en analysegegevens te verzenden (bijvoorbeeld naar Adobe Analytics).
 
