@@ -2,10 +2,10 @@
 title: Vergelijking van at.js 2.x met Web SDK | Doel migreren van at.js 2.x naar Web SDK
 description: Leer over de verschillen tussen at.js 2.x en het Web SDK van het Platform met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 3%
+source-wordcount: '2007'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punte
 | Externe aanbiedingen | Ondersteund | Ondersteund |
 | Aanbiedingen omleiden | Ondersteund | Ondersteund. Nochtans, wordt een omleiding van een pagina met het Web SDK van het Platform aan een pagina met at.js (en in de tegenovergestelde richting) niet gesteund. |
 | Apparaatbeslissingen | Ondersteund | Momenteel niet ondersteund |
-| Prefetch Mboxes | Ondersteund voor aangepaste scènes en SPA VEC | Momenteel niet ondersteund voor standaard VEC |
+| Prefetch Mboxes | Ondersteund voor aangepaste scènes en SPA VEC | Prefetch is de standaardmodus voor Web SDK |
 | Aangepaste gebeurtenissen | Ondersteund | Niet ondersteund. Zie de [openbare routekaart](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) voor de huidige status. |
 | Reactietokens | Ondersteund | Ondersteund. Zie de [speciale reactietokens documentatie](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) voor codevoorbeelden en verschillen tussen at.js en Platform Web SDK |
 | Gegevensleveranciers | Ondersteund | Niet ondersteund. De code van de douane kan worden gebruikt om een Platform Web SDK teweeg te brengen `sendEvent` bevel nadat het gegeven van een andere leverancier wordt teruggewonnen. |
@@ -119,7 +119,7 @@ De volgende diagrammen zouden u moeten helpen de verschillen van de gegevensstro
 
 ### at.js 2.x systeemdiagram
 
-![gedrag at.js 2.0 bij laden van pagina](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
+![gedrag at.js 2.0 bij laden van pagina](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
 | Bellen | Details |
 | --- | --- |
