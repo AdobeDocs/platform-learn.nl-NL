@@ -11,19 +11,19 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 46861546-6483-4997-98b7-1d3addef65dd
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
-# 3. Fysiek en digitaal overvloeien
+# 3. Overvloeien van fysiek en digitaal
 
 ## Leerdoelen
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot de demo-website
 
 >[!IMPORTANT]

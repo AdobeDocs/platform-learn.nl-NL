@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
@@ -32,18 +32,18 @@ ht-degree: 3%
    + [2.1 Visite op de website e cria sua conta](/help/bootcamp-pt/uc/uc2/ex1.md)
    + [2.2 Crie seu evento](/help/bootcamp-pt/uc/uc2/ex2.md)
    + [2.3 Crie sua jornada e mensagem de e-mail](/help/bootcamp-pt/uc/uc2/ex3.md)
-   + [2.4 Teste sua jornada](/help/bootcamp-pt/uc/uc2/ex4.md)
-   + [2.5 Installeer het gebruik van aplicativo móvel](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Personalização geen callcenter](/help/bootcamp-pt/uc/uc2/ex6.md)
+   + [ 2.4 Teste sua jornada ](/help/bootcamp-pt/uc/uc2/ex4.md)
+   + [ 2.5 Onmiddellijk e gebruik aan aplicativo móvel ](/help/bootcamp-pt/uc/uc2/ex5.md)
+   + [ 2.6 Personalização geen callcenter ](/help/bootcamp-pt/uc/uc2/ex6.md)
 + 3 - Consolidando físico e o digital {#uc3}
    + [Overzicht](/help/bootcamp-pt/uc/uc3/uc3.md)
-   + [3.1 Gebruik van aplicativo móvel e acione um beacon](/help/bootcamp-pt/uc/uc3/ex1.md)
+   + [3.1 Gebruik van een aplicativo móvel e acione um beacon](/help/bootcamp-pt/uc/uc3/ex1.md)
    + [3.2 Crie seu evento](/help/bootcamp-pt/uc/uc3/ex2.md)
    + [3.3 Crie sua jornada e notificação push](/help/bootcamp-pt/uc/uc3/ex3.md)
    + [3.4 Teste sua jornada](/help/bootcamp-pt/uc/uc3/ex4.md)
-+ 4 - Reisanalyse van de klant {#uc4}
++ 4 - Reisanalyse van klanten {#uc4}
    + [Overzicht](/help/bootcamp-pt/uc/uc4/uc4.md)
-   + [4,1 Customer Journey Analytics 101](/help/bootcamp-pt/uc/uc4/ex1.md)
+   + [4.1 Customer Journey Analytics 101](/help/bootcamp-pt/uc/uc4/ex1.md)
    + [4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](/help/bootcamp-pt/uc/uc4/ex2.md)
    + [4.3 Crie uma Visualização de Dados](/help/bootcamp-pt/uc/uc4/ex3.md)
    + [4.4 Preparação de dados em Customer Journey Analytics](/help/bootcamp-pt/uc/uc4/ex4.md)

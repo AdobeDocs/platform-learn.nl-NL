@@ -1,31 +1,31 @@
 ---
 title: Gebeurtenissen bijhouden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om de omzettingsgebeurtenissen van Adobe Target te volgen gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
-
-# De omzettingsgebeurtenissen van het Doel van het spoor gebruikend het Web SDK van het Platform
+# De omzettingsgebeurtenissen van het Doel van het spoor gebruikend Platform Web SDK
 
 Conversiegebeurtenissen voor Doel kunnen met het Web SDK van het Platform gelijkend op at.js worden gevolgd. Conversiegebeurtenissen behoren meestal tot de volgende categorieën:
 
 * Automatisch bijgehouden gebeurtenissen waarvoor geen configuratie vereist is
-* Aankoop conversiegebeurtenissen die moeten worden aangepast voor een Web SDK-implementatie van het Platform Best Practice
+* Aankoop conversiegebeurtenissen die moeten worden aangepast voor een Web SDK-implementatie van het platform voor best practices
 * Niet-aankoopconversiegebeurtenissen waarvoor code-updates vereist zijn
 
 ## Objectspatiëring vergelijken
 
-De volgende lijst vergelijkt hoe de gebeurtenissen van de de spooromzetting van het Web SDK van at.js en van het Platform
+De volgende lijst vergelijkt hoe de de spooromzettingsgebeurtenissen van at.js en van SDK van het Web van het Platform
 
 | Activiteitsdoelstelling | Doel op.js 2.x | Platform Web SDK |
 |---|---|---|
-| Conversie > Pagina&#39;s weergeven | Automatisch bijgehouden. Gebaseerd op de waarde van `context.address.url` in de aanvraag at.js. | Automatisch bijgehouden. Gebaseerd op de waarde van `xdm.web.webPageDetails.URL` in de `sendEvent` payload |
-| Conversie > Een box weergegeven | Wordt bijgehouden met de aanvraag voor een locatie van een weergavekader of een melding met `trackEvent()` of `sendNotifications()` met een `type` waarde van `display`. | Bijgehouden met een Platform Web SDK `sendEvent` met de `eventType` van `decisioning.propositionDisplay`. |
-| Conversie > Op een element klikken | Automatisch bijgehouden voor VEC-activiteiten. Wordt weergegeven als een netwerkaanroep van at.js met een `notifications` object in de aanvraag en een `type` waarde van `click`. | Automatisch bijgehouden voor VEC-activiteiten. Verschijnt als SDK van het Web van het Platform `sendEvent` met de `eventType` van `decisioning.propositionInteract`. |
+| Conversie > Pagina&#39;s weergeven | Automatisch bijgehouden. Gebaseerd op de waarde van `context.address.url` in de aanvraag at.js payload. | Automatisch bijgehouden. Gebaseerd op de waarde van `xdm.web.webPageDetails.URL` in de `sendEvent` payload |
+| Conversie > Een box weergegeven | Wordt bijgehouden met de aanvraag voor een locatie van een weergavekader of een melding met `trackEvent()` of `sendNotifications()` met de waarde `type` `display` . | Wordt gevolgd door een Platform Web SDK `sendEvent` -aanroep met de lus `eventType` of `decisioning.propositionDisplay` . |
+| Conversie > Op een element klikken | Automatisch bijgehouden voor VEC-activiteiten. Wordt weergegeven als een netwerkaanroep van at.js met een `notifications` -object in de payload in aanvraag en een `type` waarde van `click` . | Automatisch bijgehouden voor VEC-activiteiten. Wordt weergegeven als een Platform Web SDK `sendEvent` -aanroep met `eventType` van `decisioning.propositionInteract` . |
 | Betrokkenheid > Paginaweergaven | Automatisch bijgehouden | Automatisch bijgehouden |
 | Betrokkenheid > Tijd op site | Automatisch bijgehouden | Automatisch bijgehouden |
 
@@ -46,7 +46,7 @@ Voor de volgende omzettingsdoelstellingen zijn geen specifieke aanpassingen in u
 
 >[!NOTE]
 >
->SDK van het Web van het Platform staat grotere controle over de waarden toe die in de verzoeklading worden overgegaan. Als u ervoor wilt zorgen dat doelfuncties zoals URL&#39;s met kwaliteitscontrole en conversiedoelstellingen voor Pagina&#39;s goed werken, controleert u of de conversiedoelstellingen `xdm.web.webPageDetails.URL` De waarde bevat de volledige pagina-URL met het juiste hoofdlettergebruik.
+>De het Web SDK van het Platform staat grotere controle over de waarden toe die in de verzoeklading worden overgegaan. Om ervoor te zorgen dat doelfuncties zoals URL&#39;s met kwaliteitscontrole en conversiedoelstellingen voor Pagina&#39;s goed werken, controleert u of de waarde van `xdm.web.webPageDetails.URL` de volledige pagina-URL bevat met het juiste hoofdlettergebruik.
 
 <!--
 ## Purchase conversion events
@@ -69,20 +69,20 @@ For more information and an example, refer to the tutorial section about [sendin
 
 De implementaties van het doel gebruiken over het algemeen de gebeurtenissen van de douaneomzetting om kliks voor op vorm-gebaseerde activiteiten te volgen, om een omzetting in een stroom te betekenen, of parameters over te gaan zonder om nieuwe inhoud te vragen.
 
-De lijst hieronder schetst de at.js benadering en het equivalent van SDK van het Web van het Platform voor een paar gemeenschappelijke omzetting-volgende gebruiksgevallen.
+In de onderstaande tabel worden de benadering at.js en het equivalent van Platform Web SDK voor een paar algemene gevallen van conversie-tracking-gebruik beschreven.
 
 | Gebruiksscenario | Doel op.js 2.x | Platform Web SDK |
 |---|---|---|
-| Houd een klikomzettingsgebeurtenis voor een mbox plaats (werkingsgebied) bij | Uitvoeren `trackEvent()` of `sendNotifications()` met een `type` waarde van `click` voor een specifieke mbox-locatie | Een `sendEvent` gebruiken met een gebeurtenistype van `decisioning.propositionInteract` |
-| Een aangepaste conversiegebeurtenis bijhouden die mogelijk ook aanvullende gegevens bevat, zoals doelprofielparameters | Uitvoeren `trackEvent()` of `sendNotifications()` met een `type` waarde van `display` voor een specifieke mbox-locatie | Een `sendEvent` gebruiken met een gebeurtenistype van `decisioning.propositionDisplay` |
+| Houd een klikomzettingsgebeurtenis voor een mbox plaats (werkingsgebied) bij | Voer `trackEvent()` of `sendNotifications()` met een `type` waarde `click` uit voor een specifieke locatie van het selectievakje | Een opdracht `sendEvent` uitvoeren met het gebeurtenistype `decisioning.propositionInteract` |
+| Een aangepaste conversiegebeurtenis bijhouden die mogelijk ook aanvullende gegevens bevat, zoals doelprofielparameters | Voer `trackEvent()` of `sendNotifications()` met een `type` waarde `display` uit voor een specifieke locatie van het selectievakje | Een opdracht `sendEvent` uitvoeren met het gebeurtenistype `decisioning.propositionDisplay` |
 
 >[!NOTE]
 >
->Hoewel `decisioning.propositionDisplay` wordt het meest gebruikt voor het verhogen van indrukkingen voor specifieke werkingsgebieden, zou het ook als directe vervanging voor at.js moeten worden gebruikt `trackEvent()` meestal. De `trackEvent()` functie is standaard ingesteld op een type `display` indien niet opgegeven. Controleer uw implementatie om ervoor te zorgen dat u het juiste gebeurtenistype gebruikt voor aangepaste conversies die u hebt gedefinieerd.
+>Hoewel `decisioning.propositionDisplay` het meest wordt gebruikt voor het verhogen van indrukkingen voor specifiek werkingsgebied, zou het ook als directe vervanging voor at.js `trackEvent()` gewoonlijk moeten worden gebruikt. De functie `trackEvent()` heeft als standaardwaarde een type `display` als dat niet is opgegeven. Controleer uw implementatie om ervoor te zorgen dat u het juiste gebeurtenistype gebruikt voor aangepaste conversies die u hebt gedefinieerd.
 
-Raadpleeg de speciale documentatie van at.js voor meer informatie over het gebruik van [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) en [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) voor het bijhouden van Target-gebeurtenissen.
+Verwijs naar de specifieke documentatie at.js voor meer informatie over hoe te om [`trackEvent()` ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) en [`sendNotifications()` ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) voor het volgen gebeurtenissen van het Doel te gebruiken.
 
-at.js, voorbeeld met `trackEvent()` om een klik op een mbox-locatie bij te houden:
+in.js-voorbeeld met `trackEvent()` om een klik op een locatie van een box bij te houden:
 
 ```JavaScript
 adobe.target.trackEvent({
@@ -91,12 +91,12 @@ adobe.target.trackEvent({
 });
 ```
 
-Met een implementatie van SDK van het Web van het Platform, kunt u gebeurtenissen en gebruikersacties volgen door te roepen `sendEvent` opdracht, vullen `_experience.decisioning.propositions` XDM gebiedsgroep, en het plaatsen van `eventType` tot één van twee waarden:
+Met een Platform Web SDK implementatie, kunt u gebeurtenissen en gebruikersacties volgen door het `sendEvent` bevel te roepen, de `_experience.decisioning.propositions` XDM gebiedsgroep te bevolken, en `eventType` aan één van twee waarden te plaatsen:
 
-* `decisioning.propositionDisplay`: Geeft aan dat de doelactiviteit wordt gerenderd.
-* `decisioning.propositionInteract`: Geeft een gebruikersinteractie met de activiteit aan, zoals een muisklik.
+* `decisioning.propositionDisplay`: hiermee wordt de rendering van de doelactiviteit aangegeven.
+* `decisioning.propositionInteract`: hiermee wordt een gebruikersinteractie met de activiteit aangegeven, zoals een muisklik.
 
-De `_experience.decisioning.propositions` XDM-veldgroep is een array met objecten. De eigenschappen van elk object worden afgeleid van de `result.propositions` die wordt geretourneerd in het dialoogvenster `sendEvent` opdracht: `{ id, scope, scopeDetails }`
+De `_experience.decisioning.propositions` XDM gebiedsgroep is een serie van voorwerpen. De eigenschappen van elk object worden afgeleid van de `result.propositions` die wordt geretourneerd in de `sendEvent` command: `{ id, scope, scopeDetails }`
 
 ```JavaScript
 alloy("sendEvent", {
@@ -143,8 +143,8 @@ alloy("sendEvent", {
 });
 ```
 
-Leer nu hoe u [delen van verschillende domeinen-id&#39;s inschakelen](cross-domain.md) voor consistente bezoekersprofielen.
+Daarna, leer hoe te [ om het delen van dwars-domeinidentiteitskaart ](cross-domain.md) voor verenigbare bezoekersprofielen toe te laten.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

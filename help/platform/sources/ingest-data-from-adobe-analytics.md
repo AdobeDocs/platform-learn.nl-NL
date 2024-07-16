@@ -1,6 +1,6 @@
 ---
 title: Gegevens opnemen via de Adobe Analytics-bronaansluiting
-description: Met de Adobe Analytics Source-aansluiting kunt u eenvoudig gegevens streamen, toewijzen en filteren van Adobe Analytics naar Adobe Experience Platform Real-Time Customer Profile and Experience data Lake.
+description: Met de Adobe Analytics Source-connector kunt u gegevens eenvoudig streamen, toewijzen en filteren van Adobe Analytics naar Adobe Experience Platform in Real-Time Customer Profile and Experience data Lake.
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integratie" type="positive"
@@ -12,13 +12,13 @@ thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
 # Gegevens opnemen via de Adobe Analytics-bronaansluiting
 
-Met de Adobe Analytics Source-aansluiting kunt u eenvoudig gegevens streamen, toewijzen en filteren van Adobe Analytics naar Adobe Experience Platform Real-Time Customer Profile and Experience data Lake. Leer hoe te om gegevens prep eigenschappen te gebruiken om semantische en berekende gebieden tot stand te brengen om gebruikerservaring in de toepassingen van de Bouwer van het Segment en van het Platform te verbeteren. De interregionale rapportsuites worden gesteund voor deze schakelaar. Raadpleeg voor meer gedetailleerde productdocumentatie [Een Adobe Analytics-bronaansluiting maken in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Met de Adobe Analytics Source-connector kunt u gegevens eenvoudig streamen, toewijzen en filteren van Adobe Analytics naar Adobe Experience Platform in Real-Time Customer Profile and Experience data Lake. Leer hoe te om gegevens prep eigenschappen te gebruiken om semantische en berekende gebieden tot stand te brengen om gebruikerservaring in de toepassingen van de Bouwer van het Segment en van het Platform te verbeteren. De interregionale rapportsuites worden gesteund voor deze schakelaar. Voor meer gedetailleerde productdocumentatie, zie [ een bron van Adobe Analytics schakelaar in UI ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) creëren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on)

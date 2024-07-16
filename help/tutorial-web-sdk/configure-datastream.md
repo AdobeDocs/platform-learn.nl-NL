@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe te om een gegevensstroom voor het Web SDK van Adobe Experience Platform te vormen.
 
-[Gegevensstromen](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) vertel de Edge Network van Adobe Experience Platform waar om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen.
+[ Datastreams ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) vertelt de Edge Network van Adobe Experience Platform waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van het Experience Cloud, uw rekening van het Experience Platform, en gebeurtenis toe door:sturen.
 
-![Web SDK, gegevensstromen, en Edge Network diagram](assets/dc-websdk-datastreams.png)
+![ SDK van het Web, gegevensstromen, en het diagram van de Edge Network ](assets/dc-websdk-datastreams.png)
 
 ## Leerdoelstellingen
 
@@ -37,27 +37,27 @@ Voordat u de gegevensstroom configureert, moet u de volgende lessen al hebben vo
 
 Nu, kunt u een gegevensstroom tot stand brengen om de Edge Network van het Platform te vertellen waar te om gegevens te verzenden die door Web SDK worden verzameld.
 
-**Een gegevensstroom maken:**
+**om een gegevensstroom tot stand te brengen:**
 
-1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
+1. Open de [ interface van de Inzameling van Gegevens ](https://launch.adobe.com/) {target="_blank"}
 1. Zorg ervoor dat u zich in de juiste sandbox bevindt
 
    >[!NOTE]
    >
-   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als u dat niet doet, gebruikt u de **[!UICONTROL Prod]** -sandbox.
 
 1. Ga naar **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Selecteren **[!UICONTROL New Datastream]**
-1. Enter `Luma Web SDK: Development Environment` als de **[!UICONTROL Name]**. Deze naam wordt van verwijzingen voorzien later wanneer u de uitbreiding van SDK van het Web in uw markeringsbezit vormt.
+1. Voer `Luma Web SDK: Development Environment` in als de **[!UICONTROL Name]** . Deze naam wordt van verwijzingen voorzien later wanneer u de uitbreiding van SDK van het Web in uw markeringsbezit vormt.
 1. Selecteren **[!UICONTROL Save]**
 
-   ![De gegevensstroom maken](assets/datastream-create-new-datastream.png)
+   ![ creeer de datastream ](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >U hoeft geen schema te selecteren. Een schemaselectie wordt slechts vereist als u gebruikt [Gegevensvoorvoegsel voor gegevensverzameling](/help/data-collection/edge/data-prep.md) gebruiken.
+   >U hoeft geen schema te selecteren. Een schemaselectie wordt slechts vereist als u [ Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens ](/help/data-collection/edge/data-prep.md) gebruikt.
 
-Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aan de datastream toevoegen, nochtans zult u geen diensten op dit punt toevoegen. U zult dit later doen in de lessen [Experience Platform instellen](setup-experience-platform.md), [Analyses instellen](setup-analytics.md), [Audience Manager instellen](setup-audience-manager.md), [Doel instellen](setup-target.md), of [Gebeurtenis doorsturen](setup-event-forwarding.md).
+Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aan de datastream toevoegen, nochtans zult u geen diensten op dit punt toevoegen. U zult dit later in de lessen [ Experience Platform van de Opstelling ](setup-experience-platform.md) doen, [ Opstelling Analytics ](setup-analytics.md), [ Opstelling Audience Manager ](setup-audience-manager.md), [ het Doel van de Opstelling ](setup-target.md), of [ Gebeurtenis door:sturen ](setup-event-forwarding.md).
 
 >[!NOTE]
 >
@@ -65,14 +65,14 @@ Op het volgende scherm, kunt u de diensten zoals de toepassingen van de Adobe aa
 
 ## Een gegevensstroom overschrijven
 
-[DataStream-overschrijvingen](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) kunt u extra configuraties voor uw gegevensstroom bepalen en dan uw standaardconfiguratie in bepaalde omstandigheden met voeten treden.
+[ DataStream treedt ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
 
 De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 
 1. Eerst, bepaalt u gegevensstroom met voeten treedt in de configuratie van de datastream dienst. Bijvoorbeeld, zou u afwisselende het rapportreeksen van Analytics, de werkruimten van het Doel, of de datasets van het Platform kunnen bepalen om als met voeten te treden.
 1. Dan, verzendt u de met voeten treedt naar de Edge Network of met SDK van het Web verzendt gebeurtenisactie, of door een configuratie in de de markeringsuitbreiding van SDK van het Web.
 
-In de [Adobe Analytics instellen](setup-analytics.md) les, treedt u de rapportreeks voor een pagina met voeten gebruikend het Web SDK van het Platform verzendt de Actie van de Gebeurtenis.
+In de ](setup-analytics.md) les van de Opstelling Adobe Analytics [ {, treedt u de rapportreeks voor een pagina met voeten gebruikend het Web SDK van het Platform verzendt de Actie van de Gebeurtenis.
 
 U bent nu klaar om de uitbreiding van SDK van het Web van het Platform in uw markeringsbezit te installeren!
 
@@ -80,4 +80,4 @@ U bent nu klaar om de uitbreiding van SDK van het Web van het Platform in uw mar
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

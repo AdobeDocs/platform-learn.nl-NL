@@ -2,9 +2,10 @@
 title: CSC Bootkamp - Inzichten voor een Marketing Manager
 description: CSC Bootkamp - Inzichten voor een Marketing Manager
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -15,93 +16,93 @@ ht-degree: 0%
 
 Klik in de linkerkolom op de wekelijkse weergave van de projectleider:
 
-![wekelijkse weergave van projectleiders](./images/weekly-view.png)
+![ de wekelijkse mening van projectleiders ](./images/weekly-view.png)
 
 Dit behandelt een rijke serie rapporten, altijd klikbaar/actionable voor verdere details:
 
-- De **taken die deze week per project moeten worden uitgevoerd**
+- De **taken wegens deze week door Project**
 
-![verschuldigd deze week](./images/tasks-due.png)
+![ te wijten deze week ](./images/tasks-due.png)
 
-- De **De komende mijlpalen voor projectbeheer** :
+- De **komende Mijlpalen van het Beheer van het Project**:
 
-![komende mijlpalen](./images/upcoming-milestones.png)
+![ aanstaande mijlpalen ](./images/upcoming-milestones.png)
 
-- De **Problemen openen op basis van prioriteit**
+- De **Open Kwesties door Prioriteit**
 
-![kwesties per prioriteit](./images/open-issues.png)
+![ kwesties door prioriteit ](./images/open-issues.png)
 
 - De **Late Taken door Afdeling**
 
-![late taken](./images/late-tasks.png)
+![ late taken ](./images/late-tasks.png)
 
-- De **Late Taken door Individu**
+- De **Late Taken door Individueel**
 
-![afzonderlijke late taken](./images/individual-late-tasks.png)
+![ individuele late taken ](./images/individual-late-tasks.png)
 
 ## SCRUM-gerelateerde inzichten
 
-Klik in de linkerkolom op &#39;Interferatiestatus&#39;
+Klik in de linkerkolom op Interferatiestatus
 
-![klik op iteratiestatus](./images/iteration-status.png)
+![ klik iteratiestatus ](./images/iteration-status.png)
 
 Als uw Teams met de Methodologie SCRUM werken, is dit een interessante reeks rapporten van het Beheer:
 
-- **Snelheid door herhaling**
+- **Winst door Herhaling**
 
-![snelheid](./images/velocity.png)
+![ snelheid ](./images/velocity.png)
 
-- **Gemiddelde snelheid per team**
+- **Gemiddelde Snelheid door Team**
 
-![gemiddelde snelheid](./images/average-velocity.png)
+![ gemiddelde snelheid ](./images/average-velocity.png)
 
-- **Huidige herhalingen voltooid aantal uren per ontvanger**
+- **Huidige herhalingen voltooide de totalen van het Uur door Assignee**
 
-![voltooide uurtotalen](./images/iteration-status.png)
+![ voltooide uurtotalen ](./images/iteration-status.png)
 
-- **Herhalingen door team**
+- **Herhalingen door Team**
 
-![herhalingen door teams](./images/iterations-by-team.png)
+![ herhalingen door teams ](./images/iterations-by-team.png)
 
 ## Efficiëntierapportage
 
 Nog steeds in de linkerkolom, klik op &#39;Efficiëntie&#39;
 
-![klikken op efficiëntie](./images/efficiency.png)
+![ klik efficiency ](./images/efficiency.png)
 
-- **Geplande/niet-geplande verhouding** (van de verrichte werkzaamheden)
+- **Geplande/niet-Geplande Verhouding** (van het uitgevoerde werk)
 
-![geplande/niet-geplande verhouding](./images/planned-unplanned.png)
+![ geplande/ongeplande verhouding ](./images/planned-unplanned.png)
 
-- **Voltooide verzoeken per week**
+- **voltooide Verzoeken door Week**
 
-![voltooide verzoeken](./images/completed-requests.png)
+![ voltooide verzoeken ](./images/completed-requests.png)
 
 ## Inzichten van projecten tijdens de vlucht
 
 Nog steeds in de linkerkolom klikt u op &#39;Marketing - Projecten tijdens de vlucht&#39;
 
-- **Status van vluchtprojecten**
+- **Status van de Projecten van de Vlucht**
 
-![projecten tijdens de vlucht](./images/inflight-projects.png)
+![ in-vlucht projecten ](./images/inflight-projects.png)
 
-- **Projecten per voorwaarde per maand**
+- **projecten door voorwaarde door maand**
 
-![projecten op voorwaarde](./images/project-by-condition.png)
+![ projecten door voorwaarde ](./images/project-by-condition.png)
 
-- Lijst, voortgang en financiële details van de **Projecten tijdens de vlucht**
+- Lijst, vooruitgang en financiële details van de **In-Vluchtprojecten**
 
-![financiële details](./images/inflights-projects.png)
+![ financiële details ](./images/inflights-projects.png)
 
 ## Afhankelijkheden visualiseren (cross-project)
 
-Klik terug naar de regel &#39;PIN&#39; op &#39;Portfolio Gant View&#39;:
+Klik terug naar de lijn van de &quot;SPELD&quot;op de Mening van de Gant van het Portfolio:
 
-![klik op de overzichtsweergave van portfolio](./images/gant-view.png)
+![ klik portefeuille gant mening ](./images/gant-view.png)
 
-Hier heb je een **De mening van de Grafiek van de Gant van een groep projecten** met mogelijke afhankelijkheden (voorgangers) tussen projecten
+Hier hebt u de mening van de Grafiek van de Gant van een groep projecten **met mogelijke gebiedsdelen (predecessors) tussen projecten**
 
-![afhankelijkheden tussen projecten](./images/gant-chart.png)
+![ gebiedsdelen tussen projecten ](./images/gant-chart.png)
 
 ## Integratie-inzichten van derden
 
@@ -111,19 +112,19 @@ Hier heb je een **De mening van de Grafiek van de Gant van een groep projecten**
 
 Klik op de regel &#39;PIN&#39; op &#39;Campagneoverzicht&#39;:
 
-- **Adobe Campaign-overzicht**
+- **Samenvatting van Adobe Campaign**
 
-![samenvatting](./images/campaign-summary.png)
+![ samenvatting ](./images/campaign-summary.png)
 
-- **Adobe Campaign verzonden naar openen**
+- **Adobe Campaign die naar Opens wordt verzonden**
 
-![verzonden naar open](./images/sent-to-open.png)
+![ wordt verzonden naar open ](./images/sent-to-open.png)
 
-- **Adobe Campaign opent naar klikken**
+- **Adobe Campaign opent aan Klikken**
 
-![openen om te klikken](./images/open-to-click.png)
+![ open om ](./images/open-to-click.png) te klikken
 
-Volgende stap: [Conclusie](../../conclusion.md)
+Volgende Stap: [ Conclusie ](../../conclusion.md)
 
 [Terug naar fase 4 - Inzichten voor een projectmanager](./project-manager.md)
 

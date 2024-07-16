@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Tagregels maken
 
-Leer hoe u regels maakt, zodat u opdrachten in tags kunt uitvoeren. Gebeurtenissen en voorwaarden bepalen *wanneer* om dingen te doen terwijl de acties bepalen *wat* om te doen. Zie de klasse [regels](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) documentatie.
+Leer hoe u regels maakt, zodat u opdrachten in tags kunt uitvoeren. De gebeurtenissen en de voorwaarden bepalen *wanneer* om dingen te doen terwijl de acties *bepalen wat* te doen. Voor meer informatie, zie de [ regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) documentatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on)

@@ -1,14 +1,15 @@
 ---
 title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
 
-# Parameters naar doel verzenden met Platform Web SDK
+# Parameters verzenden naar doel met gebruik van Platform Web SDK
 
 De doelimplementaties verschillen per website vanwege de sitearchitectuur, de zakelijke vereisten en de gebruikte functies. De meeste doelimplementaties bevatten het doorgeven van verschillende parameters voor contextuele informatie, doelgroepen en aanbevelingen voor inhoud.
 
@@ -58,7 +59,7 @@ Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
 +++
 
 
-+++at.js op een pagina van de Bevestiging van de Orde:
++++at.js op een pagina voor bevestiging van bestelling:
 
 ```HTML
 <!doctype html>
@@ -95,45 +96,45 @@ Stel dat de volgende twee voorbeeldpagina&#39;s at.js gebruiken:
 
 ## Overzicht van parametertoewijzing
 
-De parameters van het Doel voor deze pagina&#39;s worden verzonden verschillend gebruikend het Web SDK van het Platform. Er zijn veelvoudige manieren om parameters tot Doel over te gaan gebruikend at.js:
+De parameters van het Doel voor deze pagina&#39;s worden anders verzonden gebruikend het Web SDK van het Platform. Er zijn veelvoudige manieren om parameters tot Doel over te gaan gebruikend at.js:
 
-- Instellen met `targetPageParams()` functie voor de gebeurtenis load van de pagina (wordt gebruikt in de voorbeelden op deze pagina)
-- Instellen met `targetPageParamsAll()` functie voor alle aanvragen van het Doel op de pagina
-- Parameters rechtstreeks verzenden met de `getOffer()` functie voor één locatie
-- Parameters rechtstreeks verzenden met de `getOffers()` functie voor een of meer locaties
+- Instellen met functie `targetPageParams()` voor de gebeurtenis load van de pagina (wordt gebruikt in de voorbeelden op deze pagina)
+- Instellen met functie `targetPageParamsAll()` voor alle doelaanvragen op de pagina
+- Parameters rechtstreeks verzenden met de functie `getOffer()` voor één locatie
+- Parameters rechtstreeks verzenden met de functie `getOffers()` voor een of meer locaties
 
 
-SDK van het Web van het Platform verstrekt één enkele verenigbare manier om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met worden overgegaan `sendEvent` en vallen onder twee categorieën:
+De SDK van het Web van het Platform verstrekt één enkele verenigbare manier om gegevens zonder de behoefte aan extra functies te verzenden. Alle parameters moeten in de lading met het `sendEvent` bevel worden overgegaan en onder twee categorieën vallen:
 
-- Automatisch toegewezen via het dialoogvenster `xdm` object
-- Handmatig worden doorgegeven met het gereedschap `data.__adobe.target` object
+- Automatisch toegewezen via het `xdm` -object
+- Handmatig worden doorgegeven met het object `data.__adobe.target`
 
-De lijst hieronder schetst hoe de voorbeeldparameters zouden worden opnieuw in kaart gebracht gebruikend het Web SDK van het Platform:
+In de onderstaande tabel wordt beschreven hoe de voorbeeldparameters opnieuw worden toegewezen met gebruik van Platform Web SDK:
 
 | Voorbeeld van parameter at.js | Platform Web SDK, optie | Notities |
 | --- | --- | --- |
-| `at_property` | N.v.t. | Eigenschap-tokens worden geconfigureerd in het dialoogvenster [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kan niet worden ingesteld in het dialoogvenster `sendEvent` vraag. |
-| `pageName` | `xdm.web.webPageDetails.name` | Alle parameters van het Doel moeten als deel van worden overgegaan `xdm` object en conform een schema met de klasse XDM ExperienceEvent. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van de `data` object. |
-| `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters voor het doelprofiel moeten worden doorgegeven als onderdeel van het dialoogvenster `data` object en vooraf ingesteld met `profile.` op passende wijze in kaart te brengen. |
-| `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de categorie-affiniteit van het doel en die moet worden doorgegeven als onderdeel van de `data` object. |
-| `entity.id` | `data.__adobe.target.entity.id` <br>OF<br> `xdm.productListItems[0].SKU` | Identiteitskaart van de entiteit wordt gebruikt voor het gedrag van Recommendations van het Doel tellers. Deze entiteit-id&#39;s kunnen worden doorgegeven als onderdeel van de `data` object of automatisch toegewezen uit het eerste item in het deelvenster `xdm.productListItems` array als uw implementatie die veldgroep gebruikt. |
-| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | ID&#39;s van de categorie Entiteiten kunnen worden doorgegeven als onderdeel van de `data` object. |
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Parameters voor aangepaste entiteiten worden gebruikt voor het bijwerken van de Recommendations-productcatalogus. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het dialoogvenster `data` object. |
+| `at_property` | N.v.t. | De tokens van het bezit worden gevormd in [ datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kunnen niet in de `sendEvent` vraag worden geplaatst. |
+| `pageName` | `xdm.web.webPageDetails.name` | Alle parameters van Target mbox moeten worden doorgegeven als onderdeel van het `xdm` -object en moeten in overeenstemming zijn met een schema met behulp van de XDM ExperienceEvent-klasse. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van het `data` -object. |
+| `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters van het doelprofiel moeten worden doorgegeven als onderdeel van het `data` -object en vooraf ingesteld met `profile.` om correct te worden toegewezen. |
+| `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de functie Categorie-affiniteit van Doel die moet worden doorgegeven als onderdeel van het `data` -object. |
+| `entity.id` | `data.__adobe.target.entity.id` <br> OF <br> `xdm.productListItems[0].SKU` | Identiteitskaart van de entiteit wordt gebruikt voor het gedrag van Recommendations van het Doel tellers. Deze entiteit-id&#39;s kunnen worden doorgegeven als onderdeel van het `data` -object of automatisch worden toegewezen vanuit het eerste item in de `xdm.productListItems` -array als die veldgroep door de implementatie wordt gebruikt. |
+| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Identiteitscategorie-id&#39;s kunnen worden doorgegeven als onderdeel van het `data` -object. |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Parameters voor aangepaste entiteiten worden gebruikt voor het bijwerken van de Recommendations-productcatalogus. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het object `data` . |
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
-| `mbox3rdPartyId` | In het dialoogvenster `xdm.identityMap` object | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. De naamruimte die voor de klant-id moet worden gebruikt, moet worden opgegeven in het dialoogvenster [Doelconfiguratie van de gegevensstroom](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. Namespace voor klantidentiteitskaart te gebruiken moet in de [ configuratie van het Doel van de datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) worden gespecificeerd. |
 | `orderId` | `xdm.commerce.order.purchaseID` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OF<br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Zie de [entiteitsparameters](#entity-parameters) voor meer informatie. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor de [aangepaste scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) doel van activiteit. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> OF <br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Verwijs naar de [ sectie van entiteitparameters ](#entity-parameters) hieronder voor details. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activiteitendoel scoren. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Aangepaste parameters
 
-Aangepaste mbox-parameters moeten als XDM-gegevens worden doorgegeven met de `sendEvent` gebruiken. Het is belangrijk om ervoor te zorgen dat het schema XDM alle gebieden omvat die voor uw implementatie van het Doel worden vereist.
+Aangepaste mbox-parameters moeten als XDM-gegevens worden doorgegeven met de opdracht `sendEvent` . Het is belangrijk om ervoor te zorgen dat het schema XDM alle gebieden omvat die voor uw implementatie van het Doel worden vereist.
 
-at.js, voorbeeld met `targetPageParams()`:
+bij.js-voorbeeld met `targetPageParams()` :
 
 ```JavaScript
 targetPageParams = function() {
@@ -143,11 +144,11 @@ targetPageParams = function() {
 };
 ```
 
-JavaScript-voorbeelden van de Web SDK van Platforms gebruiken `sendEvent` opdracht:
+Platform Web SDK JavaScript voorbeelden met de opdracht `sendEvent` :
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -162,31 +163,31 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan het XDM-veld:
+Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijzen aan het XDM-veld:
 
-![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
+![ Toewijzing aan een XDM gebied in een XDM gegevenselement van Objecten ](assets/params-tags-pageName.png){zoomable="yes"}
 
-En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
+![ die een XDM objecten gegevenselement in een Send gebeurtenis ](assets/params-tags-sendEvent.png){zoomable="yes"} omvat
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->Omdat aangepaste mbox-parameters deel uitmaken van `xdm` moet u om het even welk publiek, activiteiten, of profielmanuscripten bijwerken die van deze mbox parameters van verwijzingen voorzien gebruikend hun nieuwe namen. Zie de [Doelpubliek en profielscripts bijwerken voor compatibiliteit met SDK van Platform Web](update-audiences.md) pagina van deze zelfstudie voor meer informatie.
+>Omdat aangepaste mbox-parameters deel uitmaken van `xdm` -object, moet u alle soorten publiek-, activiteiten- of profielscripts die naar deze mbox-parameters verwijzen, bijwerken met hun nieuwe naam. Zie het [ publiek van het Doel van de Update en profielmanuscripten voor de verenigbaarheid van SDK van het Web van het Platform ](update-audiences.md) pagina van dit leerprogramma voor meer informatie.
 
 
 ## Profielparameters
 
-Doelprofielparameters moeten worden doorgegeven onder `data.__adobe.target` object in de Web SDK van Platform `sendEvent` opdrachtlading.
+Doelprofielparameters moeten worden doorgegeven onder het `data.__adobe.target` -object in de opdrachtpayload van de opdracht Platform Web SDK `sendEvent` .
 
-Net als bij at.js, moeten alle profielparameters ook vooraf worden ingesteld op `profile.` voor de waarde die correct moet worden opgeslagen als een blijvend doelprofielkenmerk. De gereserveerde `user.categoryId` parameter voor de Categorie-affiniteit van Target is vooraf ingesteld op `user.`.
+Net als bij at.js moeten alle profielparameters ook vooraf met `profile.` worden opgeslagen om de waarde als blijvend doelprofielkenmerk correct te kunnen opslaan. De gereserveerde `user.categoryId` -parameter voor de Categorie-affiniteit van Doel wordt vooraf ingesteld door `user.` .
 
-at.js, voorbeeld met `targetPageParams()`:
+bij.js-voorbeeld met `targetPageParams()` :
 
 ```JavaScript
 targetPageParams = function() {
@@ -197,11 +198,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+Voorbeelden van Platform Web SDK met de opdracht `sendEvent` :
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -216,25 +217,25 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
+Maak in tags eerst een gegevenselement om het object `data.__adobe.target` te definiëren:
 
-![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
+![ die uw gegevensvoorwerp in een gegevenselement bepalen ](assets/params-tags-dataObject.png){zoomable="yes"}
 
-Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
+![ Omvat een gegevensvoorwerp in een Send gebeurtenis ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 ## Parameters entiteit
 
-Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Alles [entiteitsparameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) gesteund door at.js wordt ook gesteund door het Web SDK van het Platform. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder de `data.__adobe.target` object in de Web SDK van Platform `sendEvent` opdrachtlading.
+Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Alle [ entiteitparameters ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) die door at.js worden gesteund worden ook gesteund door het Web SDK van het Platform. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder het `data.__adobe.target` -object in de opdrachtpayload van de opdracht Platform Web SDK `sendEvent` .
 
-Entiteitsparameters voor een specifiek item moeten vooraf worden ingesteld met `entity.` voor het correct vastleggen van gegevens. De gereserveerde `cartIds` en `excludedIds` parameters voor aanbevelingen mogen niet worden voorafgegaan door algoritmen en de waarde voor elke parameter moet een door komma&#39;s gescheiden lijst van entiteit-id&#39;s bevatten.
+Entiteiteits-parameters voor een specifiek item moeten vooraf met `entity.` worden vastgelegd om de gegevens correct vast te leggen. De gereserveerde `cartIds` - en `excludedIds` -parameters voor aanbevelingen-algoritmen mogen niet vooraf worden ingesteld en de waarde voor beide moet een door komma&#39;s gescheiden lijst met entiteit-id&#39;s bevatten.
 
-at.js, voorbeeld met `targetPageParams()`:
+bij.js-voorbeeld met `targetPageParams()` :
 
 ```JavaScript
 targetPageParams = function() {
@@ -248,11 +249,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+Voorbeelden van Platform Web SDK met de opdracht `sendEvent` :
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -270,28 +271,28 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-Maak in tags eerst een gegevenselement om het `data.__adobe.target` object:
+Maak in tags eerst een gegevenselement om het object `data.__adobe.target` te definiëren:
 
-![Het gegevensobject definiëren in een gegevenselement](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
+![ die uw gegevensvoorwerp in een gegevenselement bepalen ](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-Neem vervolgens het gegevensobject op in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een gegevensobject opnemen in een verzendgebeurtenis](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
+![ Omvat een gegevensvoorwerp in een Send gebeurtenis ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->Als de `commerce` de veldgroep wordt gebruikt en `productListItems` -array is opgenomen in de XDM-payload, daarna de eerste `SKU` waarde in deze array wordt toegewezen aan `entity.id` om de productweergave te vergroten.
+>Als de veldgroep `commerce` wordt gebruikt en de array `productListItems` is opgenomen in de XDM-payload, wordt de eerste `SKU` -waarde in deze array toegewezen aan `entity.id` voor het verhogen van de productweergave.
 
 
 ## Aankoopparameters
 
-De parameters van de aankoop worden overgegaan op een de bevestigingspagina van het orde na een succesvolle orde en voor de omzettings en optimalisatiedoelstellingen van het Doel gebruikt. Met een implementatie van SDK van het Web van het Platform, worden deze parameters en automatisch in kaart gebracht van gegevens XDM die als deel van worden overgegaan `commerce` veldgroep.
+De parameters van de aankoop worden overgegaan op een de bevestigingspagina van het orde na een succesvolle orde en voor de omzettings en optimalisatiedoelstellingen van het Doel gebruikt. Met een implementatie van het Web SDK van het Platform, deze parameters en automatisch in kaart gebracht van gegevens XDM die als deel van de `commerce` gebiedsgroep worden overgegaan.
 
-at.js, voorbeeld met `targetPageParams()`:
+bij.js-voorbeeld met `targetPageParams()` :
 
 ```JavaScript
 targetPageParams = function() {
@@ -303,13 +304,13 @@ targetPageParams = function() {
 };
 ```
 
-Aankoopgegevens worden doorgegeven aan Target wanneer de `commerce` veldgroep heeft `purchases.value` instellen op `1`. De bestellings-id en het ordertotaal worden automatisch toegewezen aan de `order` object. Als de `productListItems` array aanwezig is, dan de `SKU` waarden worden gebruikt voor `productPurchasedId`.
+Aankoopgegevens worden doorgegeven aan Target wanneer voor de veldgroep `commerce` `purchases.value` is ingesteld op `1` . De bestellings-id en het totaal van de bestellingen worden automatisch toegewezen aan het `order` -object. Als de array `productListItems` aanwezig is, worden de waarden `SKU` gebruikt voor `productPurchasedId` .
 
-Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+Voorbeelden van Platform Web SDK met de opdracht `sendEvent` :
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -332,36 +333,36 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-Gebruik in tags eerst een [!UICONTROL XDM-object] gegevenselement dat moet worden toegewezen aan de XDM-velden:
+Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijzen aan de XDM-velden:
 
-![Toewijzing aan een XDM-veld in een XDM Object-gegevenselement](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
+![ Toewijzing aan een XDM gebied in een XDM gegevenselement van Objecten ](assets/params-tags-purchase.png){zoomable="yes"}
 
-En neem vervolgens uw [!UICONTROL XDM-object] in uw [!UICONTROL Gebeurtenis Send] [!UICONTROL action] (meerdere [!UICONTROL XDM-objecten] kan [verenigd](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
+![ die een XDM objecten gegevenselement in een Send gebeurtenis ](assets/params-tags-sendEvent-purchase.png){zoomable="yes"} omvat
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->De `productPurchasedId` kan ook worden doorgegeven als een door komma&#39;s gescheiden lijst met id&#39;s van entiteiten onder de `data` object.
+>De waarde `productPurchasedId` kan ook worden doorgegeven als een door komma&#39;s gescheiden lijst met entiteit-id&#39;s onder het object `data` .
 
 
 ## Klant-id (mbox3rdPartyId)
 
-Het doel staat profielsynchronisatie over apparaten en systemen toe gebruikend één enkele klantIdentiteitskaart. Met at.js, kon dit als `mbox3rdPartyId` in het verzoek van het Doel of als eerste klantenidentiteitskaart die naar de Dienst van de Identiteit van Experience Cloud wordt verzonden. In tegenstelling tot at.js, staat een implementatie van SDK van het Web van het Platform u toe om te specificeren welke klant identiteitskaart aan gebruik als `mbox3rdPartyId` als er meerdere zijn. Bijvoorbeeld, als uw zaken een globale klant identiteitskaart en afzonderlijke klant IDs voor verschillende lijnen van zaken hebben, kunt u vormen welk Doel van identiteitskaart zou moeten gebruiken.
+Het doel staat profielsynchronisatie over apparaten en systemen toe gebruikend één enkele klant ID. Met at.js, kon dit als `mbox3rdPartyId` in het verzoek van het Doel worden geplaatst of als eerste klantenidentiteitskaart die naar de Dienst van de Identiteit van het Experience Cloud wordt verzonden. In tegenstelling tot at.js, staat een implementatie van SDK van het Web van het Platform u toe om te specificeren welke klantenidentiteitskaart aan gebruik als `mbox3rdPartyId` als er veelvoudige zijn. Bijvoorbeeld, als uw zaken een globale klant identiteitskaart en afzonderlijke klant IDs voor verschillende lijnen van zaken hebben, kunt u vormen welk Doel van identiteitskaart zou moeten gebruiken.
 
 Er zijn een paar stappen aan opstellingsidentiteitskaart die voor het dwars-apparaat van het Doel en de het gebruikscituaties van de Attributen van de Klant synchroniseert:
 
-1. Een **[!UICONTROL naamruimte identity]** voor de klant-id in **[!UICONTROL Identiteiten]** scherm van de Inzameling of het Platform van Gegevens
-1. Zorg ervoor dat de **[!UICONTROL alias]** in Klantkenmerken komt overeen met de **[!UICONTROL identiteitssymbool]** van uw naamruimte
-1. Geef de **[!UICONTROL identy-symbool]** als de **[!UICONTROL Naamruimte derde partij doel]** in de configuratie Doel van de gegevensstroom
-1. Een `sendEvent` gebruiken `identityMap` veldgroep
+1. Maak een **[!UICONTROL identity namespace]** voor de klant-id in het **[!UICONTROL Identities]** -scherm van gegevensverzameling of -platform
+1. Zorg ervoor dat **[!UICONTROL alias]** in Klantkenmerken overeenkomt met de **[!UICONTROL identity symbol]** van uw naamruimte
+1. Geef de **[!UICONTROL identy symbol]** op als de **[!UICONTROL Target Third Party ID Namespace]** in de configuratie Doel van de gegevensstroom
+1. Een opdracht `sendEvent` uitvoeren met de veldgroep `identityMap`
 
-at.js, voorbeeld met `targetPageParams()`:
+bij.js-voorbeeld met `targetPageParams()` :
 
 ```JavaScript
 targetPageParams = function() {
@@ -371,11 +372,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK voorbeelden gebruiken `sendEvent` opdracht:
+Voorbeelden van Platform Web SDK met de opdracht `sendEvent` :
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -390,32 +391,32 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-De [!UICONTROL ID] waarde, [!UICONTROL Status geverifieerd] en [!UICONTROL Naamruimte] worden vastgelegd in een [!UICONTROL Identiteitskaart] gegevenselement:
-![Identiteitskaartgegevenselement dat klantenidentiteitskaart vastlegt](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
+De [!UICONTROL ID] value [!UICONTROL Authenticated state] en [!UICONTROL Namespace] worden vastgelegd in een [!UICONTROL Identity map] data-element:
+![ het gegevenselement van de Kaart van de Identiteit die klantenidentiteitskaart ](assets/params-tags-customerIdDataElement.png){zoomable="yes"} vangen
 
-De [!UICONTROL Identiteitskaart] gegevenselement wordt vervolgens gebruikt om het [!UICONTROL identityMap] in het [!UICONTROL XDM-object] gegevenselement:
-![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
+Het gegevenselement [!UICONTROL Identity map] wordt vervolgens gebruikt om het [!UICONTROL identityMap] veld in het gegevenselement [!UICONTROL XDM object] in te stellen:
+![ het gegevenselement van de Kaart van de Identiteit dat in XDM objecten gegevenselement ](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"} wordt gebruikt
 
-De [!UICONTROL XDM-object] wordt vervolgens opgenomen in de [!UICONTROL Gebeurtenis Send] Handeling van een regel:
+[!UICONTROL XDM object] wordt vervolgens opgenomen in de [!UICONTROL Send event] -handeling van een regel:
 
-![Een XDM-objectelement opnemen in een Send-gebeurtenis](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
+![ die een XDM objecten gegevenselement in een Send gebeurtenis ](assets/params-tags-sendEvent-xdm.png){zoomable="yes"} omvat
 
-In de Adobe Target-service van uw datastream moet u de [!UICONTROL Naamruimte derde partij doel] naar dezelfde naamruimte in het dialoogvenster [!UICONTROL Identiteitskaart] gegevenselement:
-![De naamruimte van de doel-id van derden instellen in de gegevensstroom](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
+In de Adobe Target-service van uw gegevensstroom moet u de [!UICONTROL Target Third Party ID Namespace] instellen op dezelfde naamruimte als in het gegevenselement [!UICONTROL Identity map] :
+![ plaats identiteitskaart Namespace van de Derde van het Doel in de datastream ](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-## Platform Web SDK-voorbeeld
+## Platform Web SDK, voorbeeld
 
 Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SDK van het Platform in kaart worden gebracht, zouden onze twee voorbeeldpagina&#39;s van at.js aan het Web SDK van het Platform zoals hieronder getoond kunnen worden gemigreerd. De voorbeeldpagina&#39;s omvatten het volgende:
 
-- Doel voor het vooraf verbergen van een fragment voor een asynchrone bibliotheekimplementatie
-- De SDK-basiscode van het Platform Web
+- Voorverborgen fragment voor asynchrone bibliotheekimplementatie als doel
+- De basiscode van de SDK van het Web Platform
 - De Platform Web SDK JavaScript-bibliotheek
-- A `configure` om de bibliotheek te initialiseren
-- A `sendEvent` bevel om gegevens te verzenden en de inhoud van het verzoekDoel te verzoeken om terug te geven
+- Een opdracht `configure` om de bibliotheek te initialiseren
+- Een opdracht `sendEvent` om gegevens te verzenden en om te vragen dat doelinhoud moet worden gerenderd
 
 +++Web SDK op een pagina van de Details van het Product:
 
@@ -563,8 +564,8 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
 
 +++
 
-Leer nu hoe u [Conversiegebeurtenissen volgen](track-events.md) met het Web SDK van het Platform.
+Daarna, leer hoe te [ de omzettingsgebeurtenissen van het spoordoel ](track-events.md) met het Web SDK van het Platform.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

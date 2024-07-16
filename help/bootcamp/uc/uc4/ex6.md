@@ -11,7 +11,7 @@ feature: Audiences
 exl-id: 7a38a0a4-46e4-41f2-9a75-316dfde7128f
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -25,81 +25,81 @@ ht-degree: 0%
 
 ## 4.6.1 Een publiek maken en dit publiceren
 
-In uw project, creeerde u een filter genoemd **Bellen** en konden het aantal gebruikers bekijken die hun vraag aan het vraagcentrum hadden geclassificeerd als **positief**. U kunt nu een segment maken met deze gebruikers en deze activeren via reizen of communicatiekanalen.
+In uw project, creeerde u een filter riep **de Ontvangingen van de Vraag** en kon het aantal gebruikers bekijken die hun vraag aan het vraagcentrum hadden geclassificeerd als **positief**. U kunt nu een segment maken met deze gebruikers en deze activeren via reizen of communicatiekanalen.
 
-De eerste stap is: Selecteer regel in het deelvenster dat u tijdens de laatste oefening hebt gemaakt **1. Bellen - Positief**, klikt u met de rechtermuisknop en selecteert u de **publiek maken van selectie** optie:
+De eerste stap is: In het paneel dat in de laatste oefening wordt gecreeerd, uitgezochte lijn **1. Het Etiketteren van de vraag - Positief**, klik met de rechtermuisknop aan en selecteer **creeer publiek van selectie** optie:
 
-![demo](./images/aud1.png)
+![ demo ](./images/aud1.png)
 
-Geef daarna een naam aan uw publiek volgens het model **yourLastName - CJA-publieksoproep voelt positief**:
+Daarna, geef een naam aan uw publiek na het model **yourLastName - CJA publieksvraag positief** voelen:
 
-![demo](./images/aud2.png)
+![ demo ](./images/aud2.png)
 
 U kunt een voorvertoning weergeven van het publiek dat wordt gemaakt:
 
-![demo](./images/aud3.png)
+![ demo ](./images/aud3.png)
 
-Tot slot klikt u op **Publiceren**.
+Tot slot klik **Publish**.
 
-![demo](./images/aud4.png)
+![ demo ](./images/aud4.png)
 
 ## 4.6.2 Gebruik uw publiek als onderdeel van een segment
 
-Ga terug naar de Adobe Experience Platform, ga naar **Segmenten > Bladeren** en u zult uw segment die in CJA wordt gecreeerd klaar en beschikbaar kunnen zien om in uw activeringen en reizen worden gebruikt!
+Ga terug naar Adobe Experience Platform, ga naar **Segmenten > doorbladeren** en u zult uw segment kunnen zien dat in CJA klaar en beschikbaar wordt gecreeerd om in uw activeringen en reizen worden gebruikt!
 
-![demo](./images/aud5.png)
+![ demo ](./images/aud5.png)
 
 Laten we dit segment nu gebruiken in een Facebook-activering en in een klantentransport!
 
 ## 4.6.3 Gebruik uw segment in Real-Time CDP in real-time
 
-Ga in Adobe Experience Platform naar **Segmenten > Bladeren** en zoek het publiek dat u in CJA hebt gemaakt:
+In Adobe Experience Platform, ga naar **Segmenten > doorbladeren** en het publiek vinden u in CJA hebt gecreeerd:
 
-![demo](./images/aud6.png)
+![ demo ](./images/aud6.png)
 
-Klik op uw segment en klik vervolgens op **Activeren naar doel**:
+Klik uw segment, en klik dan **activeren aan Bestemming**:
 
-![demo](./images/aud7.png)
+![ demo ](./images/aud7.png)
 
-Benoemde bestemming selecteren **bootkamp-facebook** en klik vervolgens op **Volgende**.
+Selecteer de bestemming genoemd **bootkamp-facebook**, en klik dan **daarna**.
 
-![demo](./images/aud8.png)
+![ demo ](./images/aud8.png)
 
-Klikken **Volgende** opnieuw.
+Klik **daarna** opnieuw.
 
-![demo](./images/aud9.png)
+![ demo ](./images/aud9.png)
 
-Selecteer **Oorsprong van uw publiek** en instellen op **Direct van klanten**, klikt u op **Volgende**.
+Selecteer de **Oorsprong van uw publiek** optie en plaats het aan **direct van klanten**, klik **daarna**.
 
-![demo](./images/aud10.png)
+![ demo ](./images/aud10.png)
 
-Klikken **Voltooien**.
+Klik **Afwerking**.
 
-![demo](./images/aud11.png)
+![ demo ](./images/aud11.png)
 
 Uw segment is nu verbonden met Aangepast publiek voor Facebook. Laten we dat zelfde segment nu gebruiken in Adobe Journey Optimizer.
 
 ## 4.6.4 Gebruik uw segment in Adobe Journey Optimizer
 
-Klik in Adobe Experience Platform op **Journey Optimizer** en klik vervolgens in het linkermenu op **Reizen** en begin een reis te maken door op **Reis maken**.
+In Adobe Experience Platform, klik **Journey Optimizer**, en dan in het linkerzijmenu, klik **Reizen** en begin een reis te creëren door **te klikken creeer Weg**.
 
-![demo](./images/aud20.png)
+![ demo ](./images/aud20.png)
 
-![demo](./images/aud21.png)
+![ demo ](./images/aud21.png)
 
-![demo](./images/aud22.png)
+![ demo ](./images/aud22.png)
 
-Dan, in het linkerzijmenu, onder **Gebeurtenissen**, selecteert u **Segmentkwalificatie** en sleep het naar de reis:
+Dan, in het linkerzijmenu, onder **Gebeurtenissen**, selecteer **de Kwalificatie van het Segment** en sleep het aan de reis:
 
-![demo](./images/aud23.png)
+![ demo ](./images/aud23.png)
 
-Klik onder Segment op **Bewerken** om een segment te selecteren:
+Onder Segment, geeft de klik **** uit om een segment te selecteren:
 
-![demo](./images/aud24.png)
+![ demo ](./images/aud24.png)
 
-Selecteer het publiek dat u eerder in CJA hebt gemaakt en klik op  **Opslaan**.
+Selecteer het publiek u vroeger in CJA creeerde en **klik sparen**.
 
-![demo](./images/aud25.png)
+![ demo ](./images/aud25.png)
 
 Klaar! Van hier kunt u een reis voor klanten tot stand brengen die voor dit segment kwalificeren.
 

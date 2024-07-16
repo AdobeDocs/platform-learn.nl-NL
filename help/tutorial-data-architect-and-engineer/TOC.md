@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 33%
+source-wordcount: '104'
+ht-degree: 28%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 33%
 + [Zelfstudie voor gegevensarchitect en engineer](overview.md)
 + [1. Machtigingen configureren](configure-permissions.md)
 + [2. Een sandbox maken](create-a-sandbox.md)
-+ [3. Stel Developer Console en Postman in](set-up-developer-console-and-postman.md)
++ [3. Developer Console en Postman instellen](set-up-developer-console-and-postman.md)
 + [4. Modelgegevens in schema&#39;s](model-data-in-schemas.md)
 + [5. Kaartidentiteiten](map-identities.md)
 + [6. Gegevensbestanden maken](create-datasets.md)

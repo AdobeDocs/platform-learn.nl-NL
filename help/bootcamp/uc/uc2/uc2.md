@@ -11,7 +11,7 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot de demo-website
 
 >[!IMPORTANT]
@@ -40,7 +40,7 @@ In deze oefening, zult u leren hoe te om een gebeurtenis te vormen.
 
 In deze oefening, zult u leren hoe te om een gebeurtenis te vormen.
 
-[2.3 Maak uw reis en e-mailbericht](./ex3.md)
+[2.3 Uw reis- en e-mailbericht maken](./ex3.md)
 
 In deze oefening, zult u leren hoe te om een reis en een e-mailbericht te vormen.
 
@@ -52,7 +52,7 @@ In deze oefening, zult u de reis testen u enkel creeerde.
 
 In deze exercitie installeert u de mobiele app.
 
-[2.6 Personalisatie in het callcenter](./ex6.md)
+[2.6 Personalization in het callcenter](./ex6.md)
 
 In deze oefening, zult u zien hoe een ervaring van het vraagcentrum op de intelligentie van Adobe Experience Platform kan worden geoptimaliseerd.
 

@@ -1,6 +1,6 @@
 ---
 title: Hoofdgebruik
-description: Bekijk een overzicht van de vijf belangrijkste gebruiksgevallen van Experience Platform&mdash;Intelligente re-engagement, Verliescampagnes niet, Optimalisatie van klantconversie, Contextafhankelijke herkenning en One-Time Value to Lifetime Value.
+description: Bekijk een overzicht van de vijf belangrijkste gebruiksgevallen van Experience Platform&mdash;Intelligente re-engagement, Verliescampagnes niet verliezen, Optimalisatie van klantconversie, Contextafhankelijke herkenning en One-Time Value to Lifetime Value.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

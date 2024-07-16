@@ -18,37 +18,37 @@ Vele organisaties zijn zich niet bewust van de wrijving die in hun klantenreis b
 
 Sluit u aan bij dit bootkamp om te leren hoe een platformgebaseerde benadering u kan helpen de inzichten te krijgen die nodig zijn om wrijvingspunten te identificeren en te verwijderen om de reis van uw klant te verbeteren.
 
-Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en een real-time weergave van uw klant is hiervoor van essentieel belang. Inzichten leiden tot actie, wat leidt tot meer inzichten. De unieke platform-centric benadering van de Adobe geeft u de hulpmiddelen om niet alleen technologische verandering te drijven, maar ook uw organisatie, uw team, en uw capaciteit te beïnvloeden om een holistische klantenervaring in plaats van een kanaal-specifieke klantenervaring te leveren.
+Personalization begint op grote schaal met het begrijpen wat verbeterd kan worden, en een real-time weergave van uw klant is hiervoor van essentieel belang. Inzichten leiden tot actie, wat leidt tot meer inzichten. De unieke platform-centric benadering van de Adobe geeft u de hulpmiddelen om niet alleen technologische verandering te drijven, maar ook uw organisatie, uw team, en uw capaciteit te beïnvloeden om een holistische klantenervaring in plaats van een kanaal-specifieke klantenervaring te leveren.
 
 ## Agenda
 
 ### Dag 1
 
-9:30: Lopen
+9 :30: Lopen-binnen
 
-10:00: Kickoff/Intro &amp; Bootkamp Uitdaging
+10 :00: Kickoff/Intro &amp; de Uitdaging van het kamp van de Kerk
 
-11:00: 1-1 personalisatie, wrijvingsjacht, silo&#39;s, Adobe POV (whiteboard)
+11 :00: 1-1 verpersoonlijking, wrijvingsjacht, silo&#39;s, Adobe POV (whiteboard)
 
 12:00: Break
 
-12:15: Probleem met architectuur van oplossing (whiteboard)
+12 :15: Oplossingsarchitectuur (whiteboard)
 
-13:00: Lunch
+13 :00: Lunch
 
-14:00: Gebruikersstroom 1 - Doorloop &quot;Acquisition&quot; en Hands-On diep duiken
+14 :00: de stroom van de Gebruiker 1 - &quot;Acquisition&quot;Analyse &amp; Hands-On diep-duif
 
-15:30: Break
+15 :30: Break
 
-16:00: Gebruikerscentrale 2 registratie en onboarding
+16 :00: Gebruikerscentrale 2 Registratie &amp; Onboarding
 
-17:30: Golfkliniek &amp; Borrel
+17 :30: Golfkliniek &amp; Borrel
 
-19:30: Diner
+19 :30: Diner
 
 ### Dag 2
 
-08:30: Ontbijtsessie: Inleiding tot op reis gebaseerde levering van gebruiker, teamstructuur, leveringsachterstand
+08 :30: Ontbijt zitting: Inleiding aan gebruiker op Reis gebaseerde Levering, de Structuur van het Team, de achterstand van de Levering
 
 09.45: Inzicht in AEP-gegevensstromen door praktische scenario&#39;s
 
@@ -56,7 +56,7 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 10.45: Break
 
-12:00: Gebruikersstroom 3 &quot; Overvloeiing fysiek en digitaal&quot;
+12 :00: Gebruikersstroom 3 &quot;Overvloeien: fysiek en digitaal&quot;
 
 12.30: Lunch
 
@@ -71,9 +71,9 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-gegevensverzameling: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de bootkampwebsite op [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot de bootkampwebsite op [ https://bootcamp.aepdemo.net ](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ Personalisatie op schaal begint met het begrijpen wat kan worden verbeterd en ee
 
 Voordat u begint met de praktische oefeningen, bekijkt u eerst de architectuur achter deze zelfstudie. Dit bootkamp zal diep op een aantal eigenschappen en functionaliteiten rond Adobe Experience Platform gaan, en zal ook veelvoudige integraties over een verscheidenheid van bronnen en bestemmingen bespreken. Om u de architectuur achter deze zelfstudie en de algemene positionering van Adobe Experience Platform in uw bedrijfseconomisch ecosysteem goed te begrijpen, begin door de architectuurvideo en het diagram te herzien.
 
-Ga naar [Architectuur](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Ga naar [ Architectuur ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
 
 ## Video&#39;s
 
@@ -93,27 +93,27 @@ Het belangrijkste doel van ons Experience Makers Bootkamp is om organisaties te 
 
 Er zijn verschillende andere video&#39;s gemaakt waarin elementen van het bootkamp en krachtige integratie tussen Adobe Experience Platform- en niet-Adobe-toepassingen worden geïllustreerd. Klik op de onderstaande koppeling voor een overzicht van deze video&#39;s.
 
-Ga naar [Video&#39;s](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Ga naar [ Video&#39;s ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
 
 ## YouTube
 
-U vindt aanvullende interessante video&#39;s [op ons YouTube-kanaal](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+U kunt extra interessante video&#39;s [ op ons kanaal van YouTube ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) vinden.
 
 ## Gebruikersstromen
 
-[1. Verwerving](./uc/uc1/uc1.md)
+[1. Verwerving ](./uc/uc1/uc1.md)
 
 In deze gebruikersstroom, zult u alle elementen begrijpen u verwerving-geconcentreerde gebruiksgevallen voor onbekende, niet voor authentiek verklaarde gebruikers naast bekende, voor authentiek verklaarde gebruiker moet uitvoeren door Real-Time CDP te gebruiken.
 
-[2. Registratie en onboarding](./uc/uc2/uc2.md)
+[ 2. Registratie en onboarding ](./uc/uc2/uc2.md)
 
 In deze gebruikersstroom begrijpt u alle elementen die u nodig hebt om registratie en gebruiksgevallen bij het instappen te implementeren met Real-Time CDP en Adobe Journey Optimizer.
 
-[3. Fysiek en digitaal overvloeien](./uc/uc3/uc3.md)
+[ 3. Fysiek en digitaal overvloeien ](./uc/uc3/uc3.md)
 
 In deze gebruikersstroom, zult u de klantenervaring over online en off-line kanalen op een verenigbare manier aanpassen, door Real-Time CDP en Adobe Journey Optimizer te gebruiken.
 
-[4. Reisanalyse klant](./uc/uc4/uc4.md)
+[ 4. De Analyse van de Reis van de klant ](./uc/uc4/uc4.md)
 
 In deze gebruikersstroom, zult u vertrouwd met Customer Journey Analytics worden en u zult inzicht in krijgen in hoe klanten zich van één kanaal aan andere, van online aan off-line aan callcenter en meer ontwikkelen.
 

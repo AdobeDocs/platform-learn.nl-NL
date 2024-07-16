@@ -1,6 +1,6 @@
 ---
-title: Voeg partnerattributen aan first-party profielen in toe [!DNL Real-Time CDP]
-description: Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen uit te breiden in [!DNL Real-Time CDP].
+title: Voeg partnerattributen aan first-party profielen in  [!DNL Real-Time CDP] toe
+description: Leer hoe te om partnerattributen aan uw eerste-partijprofielen toe te voegen om het bereik door extra kanalen in  [!DNL Real-Time CDP] uit te breiden.
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Voeg partnerattributen aan first-party profielen in toe [!DNL Real-Time CDP]
+# Partnerkenmerken toevoegen aan profielen van eerste partijen in [!DNL Real-Time CDP]
 
-Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen uit te breiden in [!DNL Real-Time CDP]. Ga voor meer informatie naar de [Voeg eerste-partijprofielen met partner-verstrekte attributen toe](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentatie.
+Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen in [!DNL Real-Time CDP] uit te breiden. Voor meer informatie, gelieve de [ eerste partijprofielen van de Supplement met partner-verstrekte attributen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentatie te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)

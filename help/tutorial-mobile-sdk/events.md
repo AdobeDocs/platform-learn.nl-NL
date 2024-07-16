@@ -5,7 +5,7 @@ jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1308'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
-De uitbreiding van het Netwerk van Edge verstrekt API om de Gebeurtenissen van de Ervaring naar het Netwerk van de Rand van het Platform te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra de gegevens door het Netwerk van de Rand van het Platform worden ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Meer informatie over de [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
+De extensie Edge Network biedt een API om Experience Events naar Platform Edge Network te verzenden. Een Experience Event is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, vangen zij wat mensen in uw mobiele app doen. Zodra het gegeven door de Edge Network van het Platform wordt ontvangen, kan het aan toepassingen en de diensten door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Leer meer over de [ Gebeurtenissen van de Ervaring ](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
 
 ## Vereisten
 
 * Alle pakketgebiedsdelen zijn op zijn plaats in uw project van Xcode.
-* Registreerde extensies in **[!UICONTROL AppDelegate]**.
-* De geconfigureerde MobileCore-extensie om uw ontwikkeling te gebruiken `appId`.
+* Geregistreerde extensies in **[!UICONTROL AppDelegate]** .
+* De geconfigureerde MobileCore-extensie voor gebruik van uw ontwikkeling `appId`.
 * Geïmporteerde SDK&#39;s.
 * De app is gemaakt en uitgevoerd met de bovenstaande wijzigingen.
 
@@ -36,7 +36,7 @@ In deze les zult u
 
 ## Een ervaringsgebeurtenis maken
 
-De Adobe Experience Platform Edge-extensie kan gebeurtenissen die een eerder gedefinieerd XDM-schema volgen, verzenden naar Adobe Experience Platform Edge Network.
+De extensie Adobe Experience Platform Edge kan gebeurtenissen die een eerder gedefinieerd XDM-schema volgen, naar Adobe Experience Platform Edge Network verzenden.
 
 Het proces gaat als volgt...
 
@@ -57,9 +57,9 @@ Het proces gaat als volgt...
 
 Voor de standaardveldgroepen ziet het proces er als volgt uit:
 
-* In uw schema, identificeer de gebeurtenissen die u probeert te verzamelen. In dit voorbeeld volgt u de gebeurtenissen van de handelservaring, bijvoorbeeld een productmening (**[!UICONTROL productViews]**).
+* In uw schema, identificeer de gebeurtenissen die u probeert te verzamelen. In dit voorbeeld volgt u de gebeurtenissen van de handelservaring, bijvoorbeeld een gebeurtenis van de productmening (**[!UICONTROL productViews]**).
 
-  ![productweergaveschema](assets/datacollection-prodView-schema.png)
+  ![ schema van de productmening ](assets/datacollection-prodView-schema.png)
 
 * Als u een object wilt maken dat de ervaringsgebeurtenisgegevens in uw app bevat, gebruikt u de volgende code:
 
@@ -74,15 +74,15 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
   ]
   ```
 
-   * `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [bekende waarde](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) indien mogelijk.
-   * `commerce.productViews.value`: de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
+   * `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [ bekende waarde ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) wanneer mogelijk.
+   * `commerce.productViews.value` : de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
-* In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItems]** Dit is een standaardset velden die worden gebruikt bij elke handelsgerelateerde gebeurtenis:
+* In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItems]** op. Dit is een standaardset velden die worden gebruikt met aan handel gerelateerde gebeurtenissen:
 
-  ![productlijstitemschema](assets/datacollection-prodListItems-schema.png)
-   * Let op: **[!UICONTROL productListItems]** is een array, zodat er meerdere producten kunnen worden geleverd.
+  ![ schema van de punten van de productlijst ](assets/datacollection-prodListItems-schema.png)
+   * **[!UICONTROL productListItems]** is een array, zodat meerdere producten kunnen worden geleverd.
 
-* Als u deze gegevens wilt toevoegen, vouwt u uw `xdmData` object dat aanvullende gegevens moet bevatten:
+* Als u deze gegevens wilt toevoegen, vouwt u het `xdmData` -object uit om aanvullende gegevens op te nemen:
 
   ```swift
   var xdmData: [String: Any] = [
@@ -103,19 +103,19 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
   ]
   ```
 
-* U kunt deze gegevensstructuur nu gebruiken om een `ExperienceEvent`:
+* U kunt deze gegevensstructuur nu gebruiken om een `ExperienceEvent` te maken:
 
   ```swift
   let productViewEvent = ExperienceEvent(xdm: xdmData)
   ```
 
-* En verzend de gebeurtenis en de gegevens naar het Netwerk van de Rand van het Platform gebruikend `sendEvent` API:
+* En verzend de gebeurtenis en de gegevens naar de Edge Network van het Platform gebruikend `sendEvent` API:
 
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
 
-De [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is de AEP Mobile SDK equivalent aan de [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API-aanroepen. Zie [Migreren van de mobiele extensie Analytics naar Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) voor meer informatie .
+De [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is het equivalent van AEP Mobile SDK aan de [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API vraag. Zie [ migreren van Mobiele uitbreiding van Analytics aan de Edge Network van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) voor meer informatie.
 
 U gaat nu eigenlijk deze code in uw project van Xcode uitvoeren.
 U hebt verschillende acties met betrekking tot handelsproducten in uw app en u wilt gebeurtenissen verzenden op basis van deze acties die door de gebruiker worden uitgevoerd:
@@ -127,7 +127,7 @@ U hebt verschillende acties met betrekking tot handelsproducten in uw app en u w
 
 Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herbruikbare manier uit te voeren, gebruikt u een specifieke functie:
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, en voeg het volgende aan toe `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator en voeg het volgende toe aan de `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie.
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -155,18 +155,18 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 
    * stelt de XDM-payload in als een woordenboek, waarbij de parameters van de functie worden gebruikt;
    * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** in de navigator van het Project van Xcode en voeg diverse vraag aan toe `sendCommerceExperienceEvent` functie:
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** in de Xcode-projectnavigator en voeg verschillende aanroepen toe aan de functie `sendCommerceExperienceEvent` :
 
-   1. Bij de `.task` modifier, binnen de `ATTrackingManager.trackingAuthorizationStatus` sluiting. Dit `.task` De bepaling wordt geroepen wanneer de productmening wordt geïnitialiseerd en getoond, zodat wilt u een gebeurtenis van de productmening op dat specifieke ogenblik verzenden.
+   1. Bij de `.task` -modifier, binnen de `ATTrackingManager.trackingAuthorizationStatus` -closure. Deze optie `.task` wordt aangeroepen wanneer de productweergave wordt geïnitialiseerd en weergegeven, zodat u op dat specifieke moment een productweergave-gebeurtenis wilt verzenden.
 
       ```swift
       // Send productViews commerce experience event
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Voor elk van de knoppen (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> en <img src="assets/purchase.png" width="20" />) in de werkbalk de desbetreffende oproep toevoegen binnen de `ATTrackingManager.trackingAuthorizationStatus == .authorized` sluiting:
+   1. Voor elk van de knoppen (<img src="assets/saveforlater.png" width="15" /> , <img src="assets/addtocart.png" width="20" /> en <img src="assets/purchase.png" width="20" />) voegt u in de werkbalk de relevante aanroep toe in de map `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
 
       1. Voor <img src="assets/saveforlater.png" width="15" />:
 
@@ -191,7 +191,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 
 >[!TIP]
 >
->Als u ontwikkelt voor Android™, gebruikt u Kaart (`java.util.Map`) als de basisinterface voor het samenstellen van uw XDM-payload.
+>Voor het geval u voor Android™ ontwikkelt, gebruik Kaart (`java.util.Map`) als stichtingsinterface om uw nuttige lading XDM te construeren.
 
 
 ### Aangepaste veldgroepen
@@ -199,15 +199,15 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt een aangepaste veldgroep voor dit type gebeurtenissen gedefinieerd.
 
 * In uw schema, identificeer de gebeurtenissen u probeert te verzamelen.
-  ![interactieschema app](assets/datacollection-appInteraction-schema.png)
+  ![ schema van de toepassingsinteractie ](assets/datacollection-appInteraction-schema.png)
 
 * Constructie van het object beginnen.
 
   >[!NOTE]
   >
-  * Standaardveldgroepen beginnen altijd in de hoofdmap van het object.
+  >* Standaardveldgroepen beginnen altijd in de hoofdmap van het object.
   >
-  * Groepen aangepaste velden beginnen altijd onder een object dat uniek is voor uw Experience Cloud Org. `_techmarketingdemos` in dit voorbeeld.
+  >* Groepen aangepaste velden beginnen altijd onder een object dat uniek is voor uw Experience Cloud Org, `_techmarketingdemos` in dit voorbeeld.
 
   Voor de toepassingsinteractiegebeurtenis maakt u een object als:
 
@@ -247,13 +247,13 @@ Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt 
   ```
 
 
-* U kunt deze gegevensstructuur nu gebruiken om een `ExperienceEvent`.
+* U kunt deze gegevensstructuur nu gebruiken om een `ExperienceEvent` te maken.
 
   ```swift
   let event = ExperienceEvent(xdm: xdmData)
   ```
 
-* Verzend de gebeurtenis en de gegevens naar het Netwerk van de Rand van het Platform.
+* Verzend de gebeurtenis en de gegevens naar de Edge Network van het Platform.
 
   ```swift
   Edge.sendEvent(experienceEvent: event)
@@ -262,9 +262,9 @@ Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt 
 
 Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
-1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]**. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in uw Xcode-projectnavigator.
+1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]** . Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator.
 
-   1. Een voor app-interacties. Deze code toevoegen aan de `func sendAppInteractionEvent(actionName: String)` functie:
+   1. Een voor app-interacties. Voeg deze code toe aan de functie `func sendAppInteractionEvent(actionName: String)` :
 
       ```swift
       // Set up a data dictionary, create an experience event and send the event.
@@ -289,10 +289,10 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
       * stelt de XDM-payload in als een woordenboek, waarbij de parameter van de functie wordt gebruikt;
       * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 
-   1. En één voor het volgen van het scherm. Deze code toevoegen aan de `func sendTrackScreenEvent(stateName: String) ` functie:
+   1. En één voor het volgen van het scherm. Voeg deze code toe aan de functie `func sendTrackScreenEvent(stateName: String) ` :
 
       ```swift
       // Set up a data dictionary, create an experience event and send the event.
@@ -318,9 +318,9 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
       * stelt de XDM-payload in als een woordenboek, waarbij de parameter van de functie wordt gebruikt;
       * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]**.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** .
 
    1. Voeg de volgende gemarkeerde code toe aan de knop Aanmelden:
 
@@ -329,7 +329,7 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
       ```
 
-   1. De volgende gemarkeerde code toevoegen aan `onAppear` modifier:
+   1. Voeg de volgende gemarkeerde code toe aan de optie `onAppear` :
 
       ```swift
       // Send track screen event
@@ -338,11 +338,11 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 ## Validatie
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan te sluiten met Betrouwbaarheid.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Verzekering te verbinden.
 
    1. Verplaats het pictogram Verzekering naar links.
-   1. Selecteren **[!UICONTROL Home]** in de tabbalk en controleer of er een **[!UICONTROL ECID]**, **[!UICONTROL E-mail]**, en **[!UICONTROL CRM-id]** in het Startscherm.
-   1. Selecteren **[!DNL Products]** in de tabbalk.
+   1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
+   1. Selecteer **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
    1. Selecteren <img src="assets/saveforlater.png" width="15" />.
    1. Selecteren <img src="assets/addtocart.png" width="20" />.
@@ -351,10 +351,10 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. In Verzekering UI, zoek naar **[!UICONTROL hitReceived]** gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** leverancier.
-1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het dialoogvenster **[!UICONTROL berichten]** object. U kunt ook ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Raw-gebeurtenis kopiëren]** en gebruik een tekst- of code-editor van uw voorkeur om de gebeurtenis te plakken en te inspecteren.
+1. Zoek in de gebruikersinterface van Verzekering naar de **[!UICONTROL hitReceived]** -gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** -leverancier.
+1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het **[!UICONTROL messages]** -object. Alternatief, kunt u ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) gebruiken **[!UICONTROL Copy Raw Event]** en een tekst of coderedacteur van uw voorkeur gebruiken om de gebeurtenis te kleven en te inspecteren.
 
-   ![gegevensverzamelingsvalidatie](assets/datacollection-validation.png)
+   ![ de bevestiging van de gegevensinzameling ](assets/datacollection-validation.png)
 
 
 ## Volgende stappen
@@ -362,22 +362,22 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app toe te voegen. U kunt meer informatie toevoegen over de manier waarop de gebruiker in de app met uw producten werkt en u kunt meer oproepen voor interactie tussen de apps en het bijhouden van schermen toevoegen aan de app:
 
 * Implementeer de opdracht, kassa, lege mand en andere functionaliteit van de app en voeg relevante gebeurtenissen uit de handelservaring toe aan deze functionaliteit.
-* Herhaal de oproep om `sendAppInteractionEvent` met de juiste parameter om andere toepassingsinteracties van de gebruiker bij te houden.
-* Herhaal de oproep om `sendTrackScreenEvent` met de juiste parameter om schermen bij te houden die door de gebruiker in de app worden weergegeven.
+* Herhaal de aanroep van `sendAppInteractionEvent` met de juiste parameter om andere toepassingsinteracties van de gebruiker bij te houden.
+* Herhaal de aanroep van `sendTrackScreenEvent` met de juiste parameter om schermen bij te houden die door de gebruiker in de app worden weergegeven.
 
 >[!TIP]
 >
-Controleer de [voltooide app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden .
+>Herzie [ voltooide app ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden.
 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform
 
-Nu u de gebeurtenissen hebt verzameld en naar het Netwerk van de Rand van het Platform hebt verzonden, worden zij verzonden naar de toepassingen en de diensten die in uw worden gevormd [datastream](create-datastream.md). In latere lessen wijst u deze gegevens toe aan [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)en andere Adobe Experience Cloud-oplossingen zoals [Adobe Target](target.md) en Adobe Journey Optimizer.
+Nu u de gebeurtenissen hebt verzameld en hen verzonden naar de Edge Network van het Platform, worden zij verzonden naar de toepassingen en de diensten die in uw [ worden gevormd datastream ](create-datastream.md). In recentere lessen, brengt u deze gegevens in kaart aan [ Adobe Analytics ](analytics.md), [ Adobe Experience Platform ](platform.md), en andere oplossingen van Adobe Experience Cloud zoals [ Adobe Target ](target.md) en Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
-U hebt uw app nu ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en schermtracering bij te houden naar het Adobe Experience Platform Edge-netwerk en alle services die u in uw gegevensstroom hebt gedefinieerd.
+>U hebt nu uw app ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en schermtracering bij te houden voor de Adobe Experience Platform-Edge Network en alle services die u in uw gegevensstroom hebt gedefinieerd.
 >
-Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
-Volgende: **[WebViews verwerken](web-views.md)**
+Volgende: **[Handle WebViews](web-views.md)**

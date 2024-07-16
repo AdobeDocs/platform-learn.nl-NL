@@ -8,8 +8,8 @@ jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
 source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1308'
+ht-degree: 1%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Leer hoe u in-app berichten voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde doelgroepen te verzenden. Campagnes in Journey Optimizer worden gebruikt om via verschillende kanalen eenmalige inhoud aan een specifiek publiek te leveren. Met campagnes, worden de acties uitgevoerd gelijktijdig, of onmiddellijk, of gebaseerd op een gespecificeerd programma. Als u reizen gebruikt (zie de [Journey Optimizer-pushberichten](journey-optimizer-push.md) les), worden handelingen op volgorde uitgevoerd.
+Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde doelgroepen te verzenden. Campagnes in Journey Optimizer worden gebruikt om via verschillende kanalen eenmalige inhoud aan een specifiek publiek te leveren. Met campagnes, worden de acties uitgevoerd gelijktijdig, of onmiddellijk, of gebaseerd op een gespecificeerd programma. Wanneer het gebruiken van reizen (zie [ Journey Optimizer duw berichten ](journey-optimizer-push.md) les), worden de acties uitgevoerd in opeenvolging.
 
 ![Architectuur](assets/architecture-ajo.png)
 
-Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Voor meer informatie over de gegevensstroom in de app in Journey Optimizer raadpleegt u [de documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Om de in-app overseinenstroom in Journey Optimizer te begrijpen, verwijs naar [ de documentatie ](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* Toegang tot Journey Optimizer en voldoende toestemmingen zoals die [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html) worden beschreven. U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Campagnes beheren.
 * Fysiek iOS-apparaat of simulator voor testen.
 
@@ -52,65 +52,65 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u uw omgeving al hebt ingesteld als onderdeel van het [Journey Optimizer-pushberichten](journey-optimizer-push.md) les, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
+>Als u opstelling uw milieu reeds als deel van [ Journey Optimizer duw overseinen ](journey-optimizer-push.md) les hebt, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
 
 
 ### Een toepassingsoppervlak toevoegen aan gegevensverzameling
 
-1. Van de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/), selecteert u **[!UICONTROL Toepassingsoppervlakken]** in het linkerdeelvenster.
-1. Als u een configuratie wilt maken, selecteert u **[!UICONTROL App-oppervlak maken]**.
-   ![startpagina van app](assets/push-app-surface.png)
-1. Voer een **[!UICONTROL Naam]** voor de configuratie, bijvoorbeeld `Luma App Tutorial`  .
-1. Van **[!UICONTROL Configuratie van mobiele toepassingen]**, selecteert u **[!UICONTROL Apple iOS]**.
-1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld:  `com.adobe.luma.tutorial.swiftui`.
-1. Selecteren **[!UICONTROL Opslaan]**.
+1. Van de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/), selecteer **[!UICONTROL App Surfaces]** in het linkerpaneel.
+1. Selecteer **[!UICONTROL Create App Surface]** als u een configuratie wilt maken.
+   ![ app oppervlakte huis ](assets/push-app-surface.png)
+1. Voer een **[!UICONTROL Name]** in voor de configuratie, bijvoorbeeld `Luma App Tutorial` .
+1. Selecteer **[!UICONTROL Apple iOS]** in **[!UICONTROL Mobile Application Configuration]** .
+1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID (iOS Bundle ID)]** in. Bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
+1. Selecteer **[!UICONTROL Save]**.
 
-   ![configuratie toepassingsoppervlak](assets/push-app-surface-config-inapp.png)
+   ![ de configuratie van de toepassingsoppervlakte ](assets/push-app-surface-config-inapp.png)
 
 ### Gegevensstroomconfiguratie bijwerken
 
-Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Journey Optimizer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network worden verzonden, naar Journey Optimizer worden doorgestuurd.
 
 
 
-1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
-1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
-1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm, controleren **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
-1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
+1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
+1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.[
+1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
 
-   ![AEP-configuratie gegevensstroom](assets/datastream-ajo-inapp-configuration.png)
+   ![ AEP gegevensstroomconfiguratie ](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer-extensie installeren
 
 Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
-1. Navigeren naar **[!UICONTROL Tags]** > **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**.
-1. De eigenschap openen, bijvoorbeeld **[!DNL Luma Mobile App Tutorial]**.
-1. Selecteren **[!UICONTROL Catalogus]**.
-1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer]** extensie.
+1. Navigeer naar **[!UICONTROL Tags]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]** .
+1. Open uw eigenschap, bijvoorbeeld **[!DNL Luma Mobile App Tutorial]** .
+1. Selecteer **[!UICONTROL Catalog]**.
+1. Zoek naar de extensie **[!UICONTROL Adobe Journey Optimizer]** .
 1. De extensie installeren.
 
-Wanneer *alleen* in uw app berichten gebruiken, in **[!UICONTROL Extensie installeren]** of **[!UICONTROL Extensie configureren]** hoeft u niets te configureren. Als u echter al de [Pushmeldingen](journey-optimizer-push.md) in de zelfstudie ziet u dat voor de **[!UICONTROL Ontwikkeling]** milieu, **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** dataset wordt geselecteerd uit de **[!UICONTROL Gebeurtenisgegevens]** lijst.
+Wanneer *slechts* gebruikend in-app berichten in uw app, in **[!UICONTROL Install Extension]** of **[!UICONTROL Configure Extension]**, te hoeven u om het even wat te vormen. Nochtans, als u reeds de [ Push berichten ](journey-optimizer-push.md) les in het leerprogramma hebt gevolgd, zult u zien dat voor het **[!UICONTROL Development]** milieu, de **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset van de **[!UICONTROL Event Dataset]** lijst wordt geselecteerd.
 
 
 ### Journey Optimizer implementeren in de app
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [SDK&#39;s installeren](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
 
 >[!NOTE]
 >
->Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
+>Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
-1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
+1. In Xcode, zorg ervoor dat [ het Overseinen AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Controleer of `AEPMessaging` deel uitmaakt van uw lijst met importbewerkingen.
 
    `import AEPMessaging`
 
-1. Zorgen `Messaging.self` maakt deel uit van de array met extensies die u registreert.
+1. Controleer of `Messaging.self` deel uitmaakt van de array met extensies die u registreert.
 
    ```swift
    let extensions = [
@@ -131,16 +131,16 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 ## Setup valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
-1. Selecteer in de betrouwbaarheidsinterface de optie **[!UICONTROL Configureren]**.
-   ![configureren, klik](assets/push-validate-config.png)
-1. Selecteer de ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knop naast **[!UICONTROL In-app berichten]**.
-1. Selecteren **[!UICONTROL Opslaan]**.
-   ![opslaan](assets/assurance-in-app-config.png)
-1. Selecteren **[!UICONTROL In-app berichten]** in de linkernavigatie.
-1. Selecteer de **[!UICONTROL Validatie]** tab. Bevestig dat u geen fouten krijgt.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Verzekering.
+   ![ vorm klik ](assets/push-validate-config.png)
+1. Selecteer ![ plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knoop naast **[!UICONTROL In-App Messaging]**.
+1. Selecteer **[!UICONTROL Save]**.
+   ![ sparen ](assets/assurance-in-app-config.png)
+1. Selecteer **[!UICONTROL In-App Messaging]** in de linkernavigatie.
+1. Selecteer het tabblad **[!UICONTROL Validation]**. Bevestig dat u geen fouten krijgt.
 
-   ![Validatie in de toepassing](assets/assurance-in-app-validate.png)
+   ![ In-app Bevestiging ](assets/assurance-in-app-validate.png)
 
 
 ## Uw eigen bericht in de app maken
@@ -152,49 +152,49 @@ Als u uw eigen bericht in de app wilt maken, moet u een campagne in Journey Opti
 * levenscyclusgebeurtenissen van toepassingen, zoals starten, installeren, upgraden, sluiten of vastlopen,
 * gebeurtenissen voor geolocatie, zoals het betreden of afsluiten van een interessant punt.
 
-In deze zelfstudie gaat u de generieke API&#39;s van de Mobile Core en de API&#39;s die onafhankelijk zijn van de extensie gebruiken (zie [Algemene mobiele kern-API&#39;s](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om het bijhouden van gebeurtenissen van gebruikersschermen, handelingen en PII-gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle SDK-extensies van het mobiele platform is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
+In dit leerprogramma, gaat u de Mobiele Kern generische en uitbreiding-onafhankelijke APIs gebruiken (zie [ Mobiele Kern generische APIs ](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om gebeurtenis het volgen van gebruikersschermen, acties, en PII gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle SDK-extensies van het mobiele platform is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
 
 De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistreerde extensies om de integratie met Adobe en oplossingen van derden te vereenvoudigen. Wanneer bijvoorbeeld de extensie Optimize is geïnstalleerd, worden alle verzoeken en interacties met de aanbiedingsengine van Journey Optimizer - Decision Management afgehandeld door de gebeurtenishub.
 
-1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Campagnes]** van de linkerspoorstaaf.
-1. Selecteren **[!UICONTROL Campagne maken]**.
-1. In de **[!UICONTROL Campagne maken]** scherm:
-   1. Selecteren **[!UICONTROL Bericht in de app]** en selecteer een toepassingsoppervlak in het menu **[!UICONTROL App-oppervlak]** lijst, bijvoorbeeld **[!DNL Luma Mobile App]**.
-   1. Selecteren **[!UICONTROL Maken]**
-      ![Campagneigenschappen](assets/ajo-campaign-properties.png)
-1. In het scherm Campagne-definitie, op **[!UICONTROL Eigenschappen]**, voert u een **[!UICONTROL Naam]** bijvoorbeeld voor de campagne `Luma - In-App Messaging Campaign`en **[!UICONTROL Beschrijving]** bijvoorbeeld `In-app messaging campaign for Luma app`.
-   ![Campagneraam](assets/ajo-campaign-properties-name.png)
-1. Omlaag schuiven naar **[!UICONTROL Handeling]** en selecteert u **[!UICONTROL Inhoud bewerken]**.
-1. In de **[!UICONTROL Bericht in de app]** scherm:
-   1. Selecteren **[!UICONTROL Modal]** als de **[!UICONTROL Berichtlay-out]**.
-   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` voor de **[!UICONTROL Media-URL]**.
-   3. Voer een **[!UICONTROL Koptekst]** bijvoorbeeld `Welcome to this Luma In-App Message` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Triggered by pushing that button in the app...`.
-   4. Enter **[!UICONTROL Afwijzen]** als de **[!UICONTROL Knop #1 tekst (primair)]**.
+1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Campaigns]** in het linkerspoor.
+1. Selecteer **[!UICONTROL Create Campaign]**.
+1. In het **[!UICONTROL Create Campaign]** -scherm:
+   1. Selecteer **[!UICONTROL In-app message]** en selecteer bijvoorbeeld een toepassingsoppervlak in de lijst **[!UICONTROL App surface]** **[!DNL Luma Mobile App]** .
+   1. Selecteren **[!UICONTROL Create]**
+      ![ Eigenschappen van de Campagne ](assets/ajo-campaign-properties.png)
+1. Voer in het definitiescherm Campagne op **[!UICONTROL Properties]** een **[!UICONTROL Name]** voor de campagne in, bijvoorbeeld `Luma - In-App Messaging Campaign` , en een **[!UICONTROL Description]** , bijvoorbeeld `In-app messaging campaign for Luma app` .
+   ![ naam van de Campagne ](assets/ajo-campaign-properties-name.png)
+1. Schuif omlaag naar **[!UICONTROL Action]** en selecteer **[!UICONTROL Edit Content]** .
+1. In het **[!UICONTROL In-App Message]** -scherm:
+   1. Selecteer **[!UICONTROL Modal]** als de **[!UICONTROL Message Layout]** .
+   2. Voer `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` in voor de **[!UICONTROL Media URL]** .
+   3. Voer bijvoorbeeld een **[!UICONTROL Header]** `Welcome to this Luma In-App Message` in en voer een **[!UICONTROL Body]** in, bijvoorbeeld `Triggered by pushing that button in the app...` .
+   4. Voer **[!UICONTROL Dismiss]** in als de **[!UICONTROL Button #1 text (primary)]** .
    5. De voorvertoning wordt bijgewerkt.
-   6. Selecteren **[!UICONTROL Controleren om te activeren]**.
-      ![Editor in app](assets/ajo-in-app-editor.png)
-1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in de **[!UICONTROL Schema]** tegel.
-   ![Plan voor revisie selecteren](assets/ajo-review-select-schedule.png)
-1. Terug in de **[!DNL Luma - In-App Messaging Campaign]** scherm, selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Triggers bewerken]**.
-1. In de **[!UICONTROL In-app berichttrigger]** configureren, configureert u de details van de trackactie die het bericht in de app activeert:
-   1. Om te verwijderen **[!UICONTROL Gebeurtenis voor starten van toepassing]**, selecteert u ![Sluiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
-   1. Gebruiken ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Voorwaarde toevoegen]** herhaaldelijk de volgende logica maken voor **[!UICONTROL Bericht weergeven als]**.
-   1. Klikken **[!UICONTROL Gereed]**.
-      ![Triggerlogica](assets/ajo-trigger-logic.png)
+   6. Selecteer **[!UICONTROL Review to activate]**.
+      ![ In-app redacteur ](assets/ajo-in-app-editor.png)
+1. In het **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** scherm, uitgezocht ![ geef ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in de **[!UICONTROL Schedule]** tegel uit.
+   ![ programma van het Overzicht uitgezocht Programma ](assets/ajo-review-select-schedule.png)
+1. Terug in het **[!DNL Luma - In-App Messaging Campaign]** scherm, uitgezocht ![ geef ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit triggers]** uit.
+1. In het dialoogvenster **[!UICONTROL In-app message trigger]** configureert u de details van de handeling track waarmee het bericht in de app wordt geactiveerd:
+   1. Om **[!UICONTROL Application launch event]** te verwijderen, selecteer ![ Sluiten ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).
+   1. Het gebruik ![ voegt ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **[!UICONTROL Add condition]** herhaaldelijk om de volgende logica voor **[!UICONTROL Show message if]** te bouwen.
+   1. Klik op **[!UICONTROL Done]**.
+      ![ de logica van de Trekker ](assets/ajo-trigger-logic.png)
 
-   U hebt een handeling track gedefinieerd, waarbij de **[!UICONTROL Handeling]** equals `in-app` en de **[!UICONTROL Contextgegevens]** met de handeling is een sleutelwaardepaar van `"showMessage" : "true"`.
+   U hebt een handeling track gedefinieerd, waarbij de waarde **[!UICONTROL Action]** gelijk is aan `in-app` en de waarde **[!UICONTROL Context data]** aan de handeling een sleutelwaardepaar is van `"showMessage" : "true"` .
 
-1. Terug in de **[!DNL Luma - In-App Messaging Campaign]** scherm, selecteren **[!UICONTROL Controleren om te activeren]**.
-1. In de **[!UICONTROL Controleren om te activeren (Luma - Berichtencampagne in de app)]** scherm, selecteren **[!UICONTROL Activeren]**.
-1. U ziet uw **[!DNL Luma - In-App Messaging Campaign]** met status **[!UICONTROL Live]** in de **[!UICONTROL Campagnes]** lijst.
-   ![Lijst met campagnes](assets/ajo-campaign-list.png)
+1. Selecteer **[!UICONTROL Review to activate]** weer in het **[!DNL Luma - In-App Messaging Campaign]** -scherm.
+1. Selecteer **[!UICONTROL Activate]** in het **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** -scherm.
+1. U ziet de **[!DNL Luma - In-App Messaging Campaign]** with status **[!UICONTROL Live]** in de lijst **[!UICONTROL Campaigns]** .
+   ![ lijst van de Campagne ](assets/ajo-campaign-list.png)
 
 
 ## Het bericht in de app activeren
 
 U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit bericht in de app blijft in de app geactiveerd.
 
-1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Zoek de `func sendTrackAction(action: String, data: [String: Any]?)` en voegt de volgende code toe, die de [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) functie, gebaseerd op de parameters `action` en `data`.
+1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator. Vind de `func sendTrackAction(action: String, data: [String: Any]?)` functie, en voeg de volgende code toe, die de [`MobileCore.track` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) functie, die op de parameters `action` en `data` wordt gebaseerd roept.
 
 
    ```swift
@@ -202,7 +202,7 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
    MobileCore.track(action: action, data: data)
    ```
 
-1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
+1. Ga naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode Project Navigator. Zoek de code voor de knoop van het Bericht in-App en voeg de volgende code toe:
 
    ```swift
    // Setting parameters and calling function to send in-app message
@@ -213,11 +213,11 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 
 ## Valideren met uw app
 
-1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Rebuild en stel app in werking in de simulator of op een fysiek apparaat van Xcode, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Ga naar de **[!UICONTROL Instellingen]** tab.
+1. Ga naar de tab **[!UICONTROL Settings]** .
 
-1. Tikken **[!UICONTROL Bericht in de app]**. Het bericht in de app wordt weergegeven in uw app.
+1. Tik op **[!UICONTROL In-App Message]**. Het bericht in de app wordt weergegeven in uw app.
 
    <img src="assets/ajo-in-app-message.png" width="300" />
 
@@ -226,12 +226,12 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
 
 U kunt uw in-app berichten in de UI van de Verzekering bevestigen.
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
-1. Selecteren **[!UICONTROL In-app berichten]**.
-1. Selecteren **[!UICONTROL Gebeurtenislijst]**.
-1. Selecteer een **[!UICONTROL Bericht weergeven]** vermelding.
-1. Inspect the raw event, vooral the `html`, die de volledige lay-out en inhoud van het bericht in de app bevat.
-   ![Betrouwbaarheid in app-bericht](assets/assurance-in-app-display-message.png)
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Selecteer **[!UICONTROL In-App Messaging]**.
+1. Selecteer **[!UICONTROL Event List]**.
+1. Selecteer een **[!UICONTROL Display message]** -item.
+1. Inspect de onbewerkte gebeurtenis, met name de `html` , die de volledige lay-out en inhoud van het bericht in de app bevat.
+   ![ Verzekering In-app Bericht ](assets/assurance-in-app-display-message.png)
 
 
 ## Volgende stappen
@@ -242,6 +242,6 @@ U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in
 >
 >U hebt de app voor berichten in de app ingeschakeld en een berichtencampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
-Volgende: **[Aanbiedingen maken en weergeven](journey-optimizer-offers.md)**
+Volgende: **[creeer en vertoningsaanbiedingen](journey-optimizer-offers.md)**

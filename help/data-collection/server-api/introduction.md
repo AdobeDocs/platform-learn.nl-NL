@@ -12,7 +12,7 @@ topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2086'
 ht-degree: 0%
 
 ---
@@ -35,45 +35,45 @@ Aan het einde van dit artikel hebt u een duidelijk inzicht in deze grondbegrippe
 
 Wat betekent een woord of uitdrukking, en hoe kan ik er eenvoudig over denken? In een API betekent het &quot;toepassings&quot;deel een softwaretoepassing, of programma. In het gedeelte &quot;Programmeerinterface&quot; wordt aangegeven hoe en waar een toepassing voor bepaalde doeleinden met een andere toepassing communiceert. Wanneer u in ons voorbeeld van de webpagina op een koppeling klikt, verzendt de browser een aanvraag naar een server voor de webpagina.
 
-![Afbeelding van hyperlink met doel-URL](../assets/api101-link-destination.png)
+![ Beeld van hyperlink met bestemmingsURL ](../assets/api101-link-destination.png)
 
 In dit schermafbeelding zweeft de muiscursor boven de Adobe Experience Platform-koppeling. Onderaan ziet u de statusbalk van de webbrowser met het &quot;adres&quot; van de pagina die de browser krijgt. Met andere woorden, als je op de Adobe Experience Platform link klikt, vertelt de browser dat ze die pagina voor mij krijgt zodat ik hem hier op mijn scherm kan zien.
 
-Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagina op te halen. Dit is een `GET` request, een van de aanvraagmethoden die veel worden gebruikt met web-API&#39;s. Eén ding dat de browser aan het verzoek moet voldoen, is het adres van de pagina - waar bevindt het zich op het web?
+Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagina op te halen. Dit is een `GET` -aanvraag, een van de aanvraagmethoden die veel worden gebruikt voor web-API&#39;s. Eén ding dat de browser aan het verzoek moet voldoen, is het adres van de pagina - waar bevindt het zich op het web?
 
 ### Delen van een URL
 
-![Adresbalk van browser met URL](../assets/api101-address-bar.png)
+![ Browser adresbar met URL ](../assets/api101-address-bar.png)
 
 De meeste browsers hebben een &quot;adresbar&quot;die sommige of al &quot;adres&quot;voor een Web-pagina toont. Wanneer browser &quot;krijgt&quot;de pagina voor de verbinding wij klikte, toont het het &quot;adres&quot;van de pagina in deze adresbar. Wat is het &quot;adres&quot; van een webpagina?
 
-dat `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web en het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
+Dat `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
 
-![Delen van een URL](../assets/api101-url-parts.jpg)
+![ Delen van een URL ](../assets/api101-url-parts.jpg)
 
 Dit adres, de URL, bevat specifieke onderdelen die erg relevant zijn voor API&#39;s voor het web en de browser.
 
 **Regeling**
 
-De `scheme` hierboven wordt ook een `protocol` met web-API&#39;s en het is meestal `http` of `https`. HTTP of HyperText Transfer Protocol is hoe bronnen zoals webpagina&#39;s worden overgebracht van een webserver naar een webbrowser. HTTPS is de veilige versie, waarbij de overdracht via internet plaatsvindt met behulp van beveiliging die bedoeld is om interferentie met de overdracht van de bron te voorkomen. Het is gebruikelijk om een klein slotpictogram in de browser adresbar te zien wanneer het bekijken van een pagina over HTTPS.
+De bovenstaande `scheme` wordt ook een `protocol` met web-API&#39;s genoemd en is doorgaans ofwel `http` ofwel `https` . HTTP of HyperText Transfer Protocol is hoe bronnen zoals webpagina&#39;s worden overgebracht van een webserver naar een webbrowser. HTTPS is de veilige versie, waarbij de overdracht via internet plaatsvindt met behulp van beveiliging die bedoeld is om interferentie met de overdracht van de bron te voorkomen. Het is gebruikelijk om een klein slotpictogram in de browser adresbar te zien wanneer het bekijken van een pagina over HTTPS.
 
 Voor web-API&#39;s gebeurt de overdracht van deze bronnen via HTTP-aanvragen, met andere woorden via HTTP.
 
-**Gastheren en domeinen**
+**Gastheren en Domeinen**
 
-De `business.adobe.com` is de gastheer van het middel dat wordt gevraagd. Wanneer op de voorbeeldkoppeling wordt geklikt, gebruikt de browser dit gedeelte van de URL om de server te zoeken waarop de pagina wordt gehost. Het is niet altijd precies het zelfde als de Webserver, maar op een basisniveau kunnen wij het als server zien waar browser de pagina zal krijgen wij vroegen.
+`business.adobe.com` is de host van de bron die wordt aangevraagd. Wanneer op de voorbeeldkoppeling wordt geklikt, gebruikt de browser dit gedeelte van de URL om de server te zoeken waarop de pagina wordt gehost. Het is niet altijd precies het zelfde als de Webserver, maar op een basisniveau kunnen wij het als server zien waar browser de pagina zal krijgen wij vroegen.
 
-De namen van het domein maken deel uit van het Systeem van de Naam van het Domein, beter gekend als DNS. De meeste mensen denken aan `adobe.com` of `example.com` als een &quot;domeinnaam&quot;, maar er zijn onderdelen relevant voor API&#39;s. `www.adobe.com` en `business.adobe.com` kan domeinnamen worden genoemd, maar `www.` en de `business.` onderdelen worden subdomeinen genoemd. API&#39;s werken vaak samen met een URL die een subdomein bevat, zoals `api.example.com` of `sub.www.example.com`.
+De namen van het domein maken deel uit van het Systeem van de Naam van het Domein, beter gekend als DNS. De meeste mensen denken aan `adobe.com` of `example.com` als een &quot;domeinnaam&quot;, maar er zijn onderdelen die relevant zijn voor API&#39;s. `www.adobe.com` en `business.adobe.com` kunnen domeinnamen worden genoemd, maar de onderdelen `www.` en `business.` worden subdomeinen genoemd. API&#39;s werken vaak samen met een URL die een subdomein zoals `api.example.com` of `sub.www.example.com` bevat.
 
-Het is heel gebruikelijk om de term te zien _host_ verwijzen naar een volledige domeinnaam, inclusief subdomein zoals `business.adobe.com`. Het is ook gebruikelijk om de termen te zien _domein_ of _domeinnaam_ wanneer het verwijzen van naar een gastheer zonder subdomain zoals `adobe.com`. Het is hier niet van belang de specifieke voorwaarden voor elk onderdeel en elke variant van een host te herkennen. Maar bewust zijn van dat deze termijnen algemeen worden gebruikt is belangrijk zodat kunt u om het even welke relevante details voor uw zaken en besprekingen verduidelijken.
+Het is zeer gemeenschappelijk om de termijn _gastheer_ te zien verwijzen naar een volledige domeinnaam met inbegrip van om het even welk subdomein zoals `business.adobe.com`. Het is ook gemeenschappelijk om de termijnen _domein_ of _domeinnaam_ te zien wanneer het verwijzen naar een gastheer zonder subdomain als `adobe.com`. Het is hier niet van belang de specifieke voorwaarden voor elk onderdeel en elke variant van een host te herkennen. Maar bewust zijn van dat deze termijnen algemeen worden gebruikt is belangrijk zodat kunt u om het even welke relevante details voor uw zaken en besprekingen verduidelijken.
 
 **Oorsprong**
 
-Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` leuk `https://business.adobe.com`. Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com` en `http://business.adobe.com` niet dezelfde oorsprong hebben omdat zij verschillende regelingen hebben. `https://www.adobe.com` en `https://business.adobe.com` zijn ook niet de zelfde oorsprong in veel gebruik wegens de verschillende subdomeinen.
+Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` as `https://business.adobe.com` . Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com` en `http://business.adobe.com` , zijn niet dezelfde oorsprong omdat ze verschillende schema&#39;s hebben. `https://www.adobe.com` en `https://business.adobe.com` zijn in veel toepassingen ook niet dezelfde oorsprong vanwege de verschillende subdomeinen.
 
-**Pad**
+**Weg**
 
-De laatste bit in het bovenstaande URL-voorbeeld is de `path` aan het middel-pagina in ons voorbeeld. De `/products/experience-platform/` deel vertegenwoordigt typisch omslagen of folders op de Webserver. Net als op onze computers mappen of mappen voor documenten en foto&#39;s staan er ook mappen op webservers voor het ordenen van inhoud. En tot slot, de `/adobe-experience-platform.html` part is de naam van het bestand, de webpagina.
+Het laatste beetje in het URL voorbeeld hierboven is `path` aan het middel-pagina in ons voorbeeld. Het `/products/experience-platform/` -onderdeel vertegenwoordigt doorgaans mappen of mappen op de webserver. Net als op onze computers mappen of mappen voor documenten en foto&#39;s staan er ook mappen op webservers voor het ordenen van inhoud. Tot slot is het `/adobe-experience-platform.html` -onderdeel de naam van het bestand, de webpagina.
 
 Er zijn andere meer gedetailleerde delen van een URL die in het volgende deel van deze reeks zullen worden benadrukt.
 
@@ -85,7 +85,7 @@ Het is gebruikelijk dat een webpagina inhoud of bronnen van andere hosts of bron
 
 ## Veelvoorkomende toepassingen voor web-API&#39;s
 
-Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en anderen hebben een verscheidenheid aan API&#39;s die programmeurs met hun toepassingen kunnen gebruiken. En natuurlijk heeft Adobe ook [een grote verscheidenheid aan API&#39;s](https://developer.adobe.com/apis) dat de programmeurs gebruiken zodat hun software met de producten en de diensten van de Adobe kan communiceren. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
+Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en andere beschikken over een groot aantal API&#39;s die programmeurs kunnen gebruiken voor hun toepassingen. En natuurlijk, heeft de Adobe ook [ een grote verscheidenheid van APIs ](https://developer.adobe.com/apis) die de programmeurs gebruiken zodat kan hun software met de producten en de diensten van de Adobe in wisselwerking staan. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
 
 ## Voorbeeld-API&#39;s
 
@@ -95,9 +95,9 @@ Adobe Experience Platform Data Access-API is een web-API waarmee programmeurs to
 
 ## API-eindpunten
 
-Wanneer programmeurs een browser of web-API in hun programma&#39;s &#39;gebruiken&#39;, doen ze doorgaans aanvragen om bronnen te verzenden of te ontvangen, zoals onze voorbeeldbrowser die een webpagina aanvraagt. In API-documentatie worden vaak &quot;eindpunten&quot; voor deze aanvragen vermeld, bijvoorbeeld: `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. Dit is het specifieke patroon of het &quot;eindpunt&quot;van de Toegang API van de Gegevens van het Platform een programmeur zal gebruiken om een datasetdossier te krijgen.
+Wanneer programmeurs een browser of web-API in hun programma&#39;s &#39;gebruiken&#39;, doen ze doorgaans aanvragen om bronnen te verzenden of te ontvangen, zoals onze voorbeeldbrowser die een webpagina aanvraagt. In API-documentatie wordt vaak &quot;eindpunten&quot; voor deze aanvragen vermeld, bijvoorbeeld: `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}` . Dit is het specifieke patroon of het &quot;eindpunt&quot;van de Toegang API van de Gegevens van het Platform een programmeur zal gebruiken om een datasetdossier te krijgen.
 
-De `{dataSetFileId}` omringd door die accolades vertegenwoordigt een waarde die de programmeur in het verzoek moet verzenden. De URL in de eigenlijke API-aanvraag ziet er dus ongeveer zo uit `https://platform.adobe.io/data/foundation/export/files/xyz123brb` waarbij `xyz123brb` moet een geldige id zijn van het gegevenssetbestand dat de programmeur wil ontvangen.
+De `{dataSetFileId}` die door deze accolades wordt omringd, vertegenwoordigt een waarde die de programmeur in de aanvraag moet verzenden. De URL in de eigenlijke API-aanvraag zou er dus ongeveer als volgt uitzien: `xyz123brb` moet een geldige id zijn van het gegevensbestand dat de programmeur wil ontvangen.`https://platform.adobe.io/data/foundation/export/files/xyz123brb`
 
 Met andere woorden, net zoals browser een pagina bij een specifieke URL krijgt, krijgen de API verzoeken middelen van, of verzenden middelen naar, een specifiek eindpunt zoals dit datasetvoorbeeld.
 
@@ -109,23 +109,23 @@ Het hele proces van verzoek tot antwoord omvat vele kleinere en zeer gedetaillee
 
 **`GET`**
 
-De `GET` de verzoekmethode wordt gebruikt wanneer het vragen van een reactie die een middel, zoals onze Web-pagina en datasetvoorbeelden levert. Wanneer we op een koppeling in een browser klikken of op een koppeling op een mobiel apparaat tikken, maken we een `GET` achter de schermen aanvragen.
+De aanvraagmethode `GET` wordt gebruikt bij het aanvragen van een antwoord dat een bron levert, zoals de voorbeelden van onze webpagina en dataset. Wanneer we op een koppeling in een browser klikken of op een koppeling op een mobiel apparaat tikken, vragen we achter de schermen een `GET` -aanvraag.
 
 **`POST`**
 
-De `POST` De methode verzendt gegevens met het verzoek. Het kan vreemd klinken dat een &quot;verzoek&quot;gegevens verzendt, maar het idee is dat het maken van het API verzoek het eindpunt-ontvangende software-vraagt om het verzoek goed te keuren, en in het geval van een `POST`om ook de verzonden gegevens te accepteren. De verzonden gegevens worden doorgaans als een database of bestand naar een gegevensopslagruimte geschreven, zodat deze kunnen worden opgeslagen.
+De methode `POST` verzendt gegevens met de aanvraag. Het kan vreemd klinken dat een &quot;verzoek&quot;gegevens verzendt, maar het idee is dat het maken van het API verzoek het eindpunt-ontvangende software-vraagt om het verzoek goed te keuren, en in het geval van a `POST`, om de gegevens ook goed te keuren die worden verzonden. De verzonden gegevens worden doorgaans als een database of bestand naar een gegevensopslagruimte geschreven, zodat deze kunnen worden opgeslagen.
 
 **`PUT`**
 
-De `PUT` aanvraagmethode is vergelijkbaar met `POST` aangezien het gegevens verzendt, maar als de gegevens die reeds op het eindpunt worden verzonden bestaan, a `PUT` de bestaande gegevens bijwerken door deze te vervangen. A `POST` wordt niet bijgewerkt, maar wordt gewoon verzonden, zodat meerdere `POST` Met aanvragen kunt u meerdere records maken van de verzonden gegevens in plaats van bestaande records bij te werken.
+De aanvraagmethode `PUT` is vergelijkbaar met `POST` omdat deze gegevens verzendt, maar als de gegevens die worden verzonden al op het eindpunt bestaan, werkt a `PUT` de bestaande gegevens bij door deze te vervangen. Een `POST` wordt niet bijgewerkt, het verzendt gewoon, zodat kunnen veelvoudige `POST` verzoeken veelvoudige verslagen van de verzonden gegevens tot stand brengen, in plaats van het bijwerken van om het even welk bestaand verslag.
 
 **`PATCH`**
 
-De `PATCH` aanvraagmethode wordt gebruikt om gegevens te verzenden die een deel van een bestaande record bijwerken, zoals wanneer we ons adres wijzigen door ons accountprofiel bij te werken. Met een `POST` kan een extra profiel worden gemaakt, en met een `PUT`kan het bestaande profiel worden vervangen, maar door het `PATCH` methode wij werken eenvoudig het relevante deel van het bestaande verslag bij, zoals ons adres.
+De aanvraagmethode `PATCH` wordt gebruikt om gegevens te verzenden die een deel van een bestaande record bijwerken, zoals wanneer we ons adres wijzigen door ons accountprofiel bij te werken. Met een `POST` -aanvraag kan een extra profiel worden gemaakt. Met een `PUT` kan het bestaande profiel worden vervangen. Met de `PATCH` -methode werkt u echter gewoon het relevante deel van de bestaande record bij, zoals ons adres.
 
 **`DELETE`**
 
-De `DELETE` Met de aanvraagmethode wordt een bron verwijderd die in de aanvraag is opgegeven, bijvoorbeeld als we op een koppeling klikken om ons accountprofiel volledig te verwijderen.
+De aanvraagmethode `DELETE` verwijdert een bron die in de aanvraag is opgegeven, net als wanneer we op een koppeling klikken om ons accountprofiel volledig te verwijderen.
 
 Er zijn verschillende andere methoden, maar dit is een lijst met de meest gebruikte methoden bij het werken met API&#39;s.
 
@@ -133,7 +133,7 @@ Er zijn verschillende andere methoden, maar dit is een lijst met de meest gebrui
 
 Nu u de basistermen, concepten en stappen hebt die met API&#39;s samenhangen, kunnen we in de praktijk naar een voorbeeld-API-verzoek kijken.
 
-De pagina uit ons browservoorbeeld heeft een URL van `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, wordt een `GET` voor deze pagina aanvragen. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
+De pagina in ons browservoorbeeld heeft de URL `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` . Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, vraagt de browser `GET` om deze pagina. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
 
 Hier is hoe dat in de code zou kunnen kijken:
 
@@ -162,7 +162,10 @@ fetch(
 );
 ```
 
-In de bovenstaande code kunt u de `URL` de browser vraagt om informatie, en onderaan staat de `method: "GET"` aanvraagmethode. De andere coderegels zijn ook onderdelen van het verzoek, maar vallen buiten het bereik van dit artikel.
+In de bovenstaande code ziet u de `URL` -code die de browser aanvraagt, en onderaan ziet u de aanvraagmethode `method: "GET"` . De andere coderegels zijn ook onderdelen van het verzoek, maar vallen buiten het bereik van dit artikel.
 
 
-*[API]: Application Programming Interface *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: Domain Name System
+*[ API ]: De Interface van de Programmering van de toepassing
+*[ URL ]: Het unieke Merkteken van het Middel
+*[ HTTP ]: Het Protocol van de Overdracht HyperText
+*[ DNS ]: Het Systeem van de Naam van het domein

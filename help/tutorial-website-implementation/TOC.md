@@ -1,5 +1,5 @@
 ---
-user-guide-title: De Experience Cloud op websites implementeren met tags
+user-guide-title: Het Experience Cloud implementeren in websites met tags
 breadcrumb-title: Zelfstudie op internet
 user-guide-description: Leer hoe u Adobe Experience Cloud-oplossingen implementeert op een website met tags.
 solution: Data Collection
@@ -16,19 +16,19 @@ ht-degree: 0%
 ---
 
 
-# De Experience Cloud op websites implementeren met tags {#implement-in-websites}
+# Het Experience Cloud implementeren in websites met tags {#implement-in-websites}
 
 + [Implementeren in websites met zelfstudie over tags](overview.md)
-+ Tags configureren{#configure-tags}
++ Tags configureren {#configure-tags}
    + [Een tag-eigenschap maken](create-a-property.md)
    + [De insluitcode toevoegen](add-embed-code.md)
    + [Een gegevenselement, regel en bibliotheek toevoegen](add-data-elements-rules.md)
    + [Omgevingen wisselen met Foutopsporing](switch-environments.md)
-+ Oplossingen implementeren{#implement-solutions}
++ Oplossingen implementeren {#implement-solutions}
    + [Identiteitsservice toevoegen](id-service.md)
    + [Adobe Target toevoegen](target.md)
    + [Adobe Analytics toevoegen](analytics.md)
    + [Adobe Audience Manager toevoegen](audience-manager.md)
-   + [Experience Cloud-integratie](integrations.md)
-+ Uw eigenschap publiceren{#publish}
-   + [Uw eigenschap publiceren](publish.md)
+   + [Integratie van Experience Cloud](integrations.md)
++ Publish your property {#publish}
+   + [Publish your Property](publish.md)

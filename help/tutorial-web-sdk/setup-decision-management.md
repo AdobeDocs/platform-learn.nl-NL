@@ -20,7 +20,7 @@ Leer hoe u Adobe Journey Optimizer Decision Management-functionaliteit implement
 Met deze zelfstudie zijn Journey Optimizer-gebruikers uitgerust om functies voor Beslissingsbeheer te gebruiken, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
 
 
-![WebSDK en Adobe Analytics-diagram](assets/dc-websdk-ajo.png)
+![ SDK van het Web en het diagram van Adobe Analytics ](assets/dc-websdk-ajo.png)
 
 ## Leerdoelen
 
@@ -56,40 +56,40 @@ Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Ad
 
 ## Toegang verlenen tot het beheer van besluiten
 
-Als u toegang wilt verlenen tot de functionaliteit van het beslissingsbeheer, moet u een **Productprofiel** en wijs de overeenkomstige toestemmingen aan uw gebruikers toe. [Meer informatie over het beheren van Journey Optimizer-gebruikers en -machtigingen in deze sectie](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [ Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## De gegevensstroom configureren
 
-Offer decisioning moet zijn ingeschakeld in het dialoogvenster **datastream** configuratie vóór om het even welke activiteiten van het Beheer van Besluit kunnen door het Web SDK van het Platform worden geleverd.
+De offer decisioning moet in de **datastream** configuratie worden toegelaten alvorens om het even welke activiteiten van het Beheer van het Besluit door het Web SDK van het Platform kunnen worden geleverd.
 
 Om Offer decisioning in de gegevensstroom te vormen:
 
-1. Ga naar de [Gegevensverzameling](https://experience.adobe.com/#/data-collection) interface.
+1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection).
 
-1. Selecteer in de linkernavigatie de optie **Gegevensstromen**.
+1. Voor de linkernavigatie, uitgezochte **Gegevensstromen**.
 
 1. Selecteer de eerder gemaakte Luma Web SDK-gegevensstroom.
 
-   ![Gegevensstroom selecteren](assets/decisioning-datastream-select.png)
+   ![ Uitgezochte datastream ](assets/decisioning-datastream-select.png)
 
-1. Selecteren **Bewerken** binnen de **Adobe Experience Platform Service**.
+1. Selecteer **uitgeven** binnen de **Dienst van Adobe Experience Platform**.
 
-   ![Service bewerken](assets/decisioning-edit-datastream.png)
+   ![ geeft de dienst ](assets/decisioning-edit-datastream.png) uit
 
 1. Controleer de **Offer decisioning** doos.
 
-   ![SCREENSHOT TOEVOEGEN](assets/decisioning-check-offer-box.png)
+   ![ VOEG SCREENSHOT ](assets/decisioning-check-offer-box.png) TOE
 
-1. Selecteren **Opslaan**.
+1. Selecteer **sparen**.
 
-Dit zorgt ervoor dat binnenkomende gebeurtenissen voor Journey Optimizer correct worden afgehandeld door de **Adobe Experience Platform Edge**.
+Dit zorgt ervoor dat de binnenkomende gebeurtenissen voor Journey Optimizer correct door **Edge van Adobe Experience Platform** worden behandeld.
 
 ## SDK configureren voor Beslissingsbeheer
 
 Het Beheer van het besluit vereist extra stappen van SDK, afhankelijk van uw de implementatietype van SDK van het Web. Er zijn twee beschikbare opties om SDK voor Beslissingsbeheer te vormen.
 
 * Zelfstandige SDK-installatie
-   1. Vorm `sendEvent` handeling met uw `decisionScopes`.
+   1. Configureer de handeling `sendEvent` met uw `decisionScopes` .
 
       ```javascript
       alloy("sendEvent", {
@@ -104,36 +104,36 @@ Het Beheer van het besluit vereist extra stappen van SDK, afhankelijk van uw de 
 * Installatie van SDK-tags
    1. Ga naar de interface voor gegevensverzameling.
 
-   1. Selecteer in de linkernavigatie de optie **Tags**.
+   1. Voor de linkernavigatie, uitgezochte **Markeringen**.
 
-      ![Labels selecteren](assets/decisioning-data-collection-tags.png)
+      ![ Uitgezochte Markeringen ](assets/decisioning-data-collection-tags.png)
 
-   1. Selecteer de **Tageigenschap**.
+   1. Selecteer het **Bezit van de Markering**.
 
-   1. Maak uw **Regels**.
-      * Een Platform Web SDK toevoegen **Gebeurtenis verzenden, actie** en voeg de relevante `decisionScopes` aan de configuratie van die actie.
+   1. Creeer uw **Regels**.
+      * Voeg een van het Web SDK van het Platform **toe verzendt de actie van de Gebeurtenis** en voeg relevant `decisionScopes` aan de configuratie van die actie toe.
 
-   1. Een **Bibliotheek** alle relevante **Regels**, **Gegevenselementen**, en **Extensies** u hebt gevormd.
+   1. Creeer en publiceer a **Bibliotheek** die alle relevante **Regels** bevat, **Elementen van Gegevens**, en **Uitbreidingen** u hebt gevormd.
 
 ## Terminologie
 
 Ten eerste moet u de terminologie begrijpen die wordt gebruikt in de interface voor Beslissingsbeheer.
 
-* **Afbeelding**: Een beperking die bepaalt hoe vaak een aanbieding wordt weergegeven. Twee typen:
+* **Aftappen**: Een beperking die dicteert hoe vaak een aanbieding verschijnt. Twee typen:
    * Totale uiteinden: Maximale tijden kunnen over het doelpubliek worden getoond.
    * Profielbijschrift: de tijden waarin een aanbieding aan een bepaalde gebruiker kan worden getoond.
-* **Verzamelingen**: Subsets van aanbiedingen die zijn gegroepeerd op specifieke voorwaarden die zijn ingesteld door bijvoorbeeld een aanbiedingscategorie.
-* **Besluit**: Logica die de keuze van een aanbieding voorschrijft.
-* **Beslissingsregel**: Beperkt het aantal voorstellen om na te gaan of een gebruiker in aanmerking komt.
-* **In aanmerking komende aanbieding**: Een aanbieding die de vooraf ingestelde beperkingen aanpast en aan een gebruiker kan worden getoond.
-* **Beslissingsbeheer**: Het systeem om gepersonaliseerde aanbiedingen te creëren en te verspreiden gebruikend bedrijfslogica en besluitvormingsregels.
-* **Terugvalvoorstellen**: De standaardaanbieding die wordt weergegeven wanneer een gebruiker niet in aanmerking komt voor aanbiedingen in een verzameling.
-* **Voorstel**: Een marketingbericht met potentiële toelatingsregels die bepalend zijn voor de kijkers.
-* **Bibliotheek van aanbieding**: Een centrale opslagplaats die aanbiedingen, besluiten, en bijbehorende regels beheert.
-* **Persoonlijke aanbiedingen**: Aangepaste marketingberichten op maat van geschiktheidsbeperkingen.
-* **Plaatsen**: De instelling of het scenario waarin een aanbieding aan een gebruiker wordt weergegeven.
-* **Prioriteit**: Metrische waarde voor aanbiedingen met inachtneming van verschillende beperkingen, zoals geschiktheid en aftopping.
-* **Vertegenwoordigingen**: Kanaalspecifieke informatie, bijvoorbeeld locatie of taal, die de weergave van een aanbieding begeleidt.
+* **Verzamelingen**: Subsets van aanbiedingen die door specifieke voorwaarden worden gegroepeerd die door een teller, bijvoorbeeld, aanbiedingscategorie worden geplaatst.
+* **Besluit**: logica die de keus van een aanbieding dicteert.
+* **Regel van het Besluit**: Beperkingen op aanbiedingen om de geschiktheid van een gebruiker te weten te komen.
+* **In aanmerking komende Aanbieding**: Een aanbieding die de vooraf ingestelde beperkingen aanpast en aan een gebruiker kan worden getoond.
+* **Beheer van het Besluit**: Het systeem om gepersonaliseerde aanbiedingen te creëren en te verdelen gebruikend bedrijfslogica en besluitvormingsregels.
+* **Aanbiedingen van de Fallback**: De standaardaanbieding getoond wanneer een gebruiker niet voor om het even welke aanbiedingen in een inzameling kwalificeert.
+* **Aanbieding**: Een marketing bericht met potentiële geschiktheidsregels die zijn kijkers bepalen.
+* **Bibliotheek van de Aanbieding**: Een centrale bewaarplaats die aanbiedingen, besluiten, en bijbehorende regels beheert.
+* **Gepersonaliseerde Aanbiedingen**: Aangepaste marketing berichten die op geschiktheidsbeperkingen worden gebaseerd.
+* **Plaatsen**: Het plaatsen of het scenario waar een aanbieding aan een gebruiker wordt getoond.
+* **Prioriteit**: Het rangschikken metrisch voor aanbiedingen die diverse beperkingen zoals geschiktheid en het maximum overwegen.
+* **Vertegenwoordigingen**: Kanaalspecifieke informatie, bijvoorbeeld, plaats of taal, die de vertoning van een aanbieding begeleiden.
 
 ## Hoofdletters gebruiken - Loyalty&#39;s
 
@@ -151,143 +151,143 @@ Voordat u de aanbiedingen gaat maken, moet u verschillende onderdelen definiëre
 
 ### Een Plaatsing maken voor aanbiedingen met een logo
 
-**Plaatsen** zijn containers die worden gebruikt om de aanbiedingen te tonen. In dit voorbeeld maakt u een plaatsing boven aan de Luminasite.
+**Plaatsingen** zijn containers die worden gebruikt om de aanbiedingen te tonen. In dit voorbeeld maakt u een plaatsing boven aan de Luminasite.
 
-De lijst met stages is toegankelijk in het **Componenten** -menu. Er zijn filters beschikbaar waarmee u plaatsingen kunt ophalen op basis van een specifiek kanaal of specifieke inhoud.
+De lijst van plaatsen is toegankelijk in het **menu van Componenten**. Er zijn filters beschikbaar waarmee u plaatsingen kunt ophalen op basis van een specifiek kanaal of specifieke inhoud.
 
-![Plaatsen weergeven](assets/decisioning-placements-list.png)
+![ Plaatsen van de Mening ](assets/decisioning-placements-list.png)
 
 Voer de volgende stappen uit om de plaatsing te maken:
 
-1. Klikken **Plaatsing maken**.
+1. Klik **creëren plaatsing**.
 
-   ![Plaatsing maken](assets/decisioning-create-placement.png)
+   ![ creeer plaatsing ](assets/decisioning-create-placement.png)
 
 1. Definieer de eigenschappen van de plaatsing:
-   * **Naam**: De naam van de plaatsing. Laten we de voorbeeldplaatsing noemen *&#39;Homepage Banner&#39;*.
-   * **Het type Channel**: Het kanaal waarvoor de plaatsing wordt gebruikt. Laten we het gebruiken *&#39;Web&#39;* omdat de aanbiedingen op de Luma-website worden weergegeven.
-   * **Inhoudstype**: Het type inhoud dat de plaatsing mag weergeven: Tekst, HTML, Afbeeldingskoppeling of JSON. U kunt *&quot;HTML&quot;* voor het voorstel.
-   * **Beschrijving**: Een beschrijving van de plaatsing (optioneel).
+   * **Naam**: De naam van de plaatsing. Laten wij de voorbeeldplaatsing *&quot;Banner van de Homepage&quot;roepen*.
+   * **type van het Kanaal**: Het kanaal waarvoor de plaatsing wordt gebruikt. Laten we *&#39;Web&#39;* gebruiken omdat de aanbiedingen op de website van de Luma worden weergegeven.
+   * **inhoudstype**: Het type van inhoud dat de plaatsing wordt toegestaan om te tonen: Tekst, HTML, de Verbinding van het Beeld, of JSON. U kunt *&quot;HTML&quot;* voor de aanbieding gebruiken.
+   * **Beschrijving**: Een beschrijving van de plaatsing (facultatief).
 
-   ![Details toevoegen](assets/decisioning-placement-details.png)
+   ![ voeg details ](assets/decisioning-placement-details.png) toe
 
-1. Klikken **Opslaan**.
+1. Klik **sparen**.
 1. Zodra de plaatsing wordt gecreeerd, toont het in de plaatsingslijst.
 1. Selecteer de rij met uw nieuwe plaatsing en neem nota van plaatsidentiteitskaart, aangezien dit voor configuratie binnen uw Reikwijdte van het Besluit noodzakelijk kan zijn.
 
-   ![Zie Plaatsing-id ](assets/decisioning-placement-id.png)
+   ![ Zie Plaatsing-id ](assets/decisioning-placement-id.png)
 
 ### Beslissingsregels voor de status van Loyalty
 
-**Besluitvormingsregels** de voorwaarden voor de indiening van de offertes specificeren. In dit voorbeeld maakt u beslissingsregels voor verschillende aanbiedingen afhankelijk van de Loyalty-status van een gebruiker.
+**de regels van het Besluit** specificeren de voorwaarden waaronder de aanbiedingen worden voorgesteld. In dit voorbeeld maakt u beslissingsregels voor verschillende aanbiedingen afhankelijk van de Loyalty-status van een gebruiker.
 
-De lijst met besluitvormingsregels is toegankelijk in het **Componenten** -menu.
+De lijst van besluitvormingsregels is toegankelijk in het **menu van Componenten**.
 
 Voer de volgende stappen uit om de beslissingsregels te maken:
 
-1. Ga naar de **Regels** en klikt u op **Regel maken**.
+1. Navigeer aan het **Regels** lusje, en klik **creeer regel**.
 
-   ![De regel maken](assets/decisioning-create-rule.png)
+   ![ creeer de regel ](assets/decisioning-create-rule.png)
 
-1. Laten we de eerste regel &#39;*Gouden regel voor de status van Loyalty*&quot;. U kunt XDM-velden gebruiken om de regel te definiëren. De Adobe Experience Platform **Segment Builder** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
+1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
 
-   ![De regel definiëren](assets/decisioning-define-rule.png)
+   ![ bepaal de regel ](assets/decisioning-define-rule.png)
 
-1. Klikken **Opslaan** om de regelvoorwaarde te bevestigen.
-1. De zojuist opgeslagen &#39;*Gouden regel voor de status van Loyalty*&#39; wordt weergegeven in het dialoogvenster **Lijsten**. Selecteer deze optie om de eigenschappen ervan weer te geven.
+1. Klik **sparen** om de regelvoorwaarde te bevestigen.
+1. De onlangs bewaarde &#39;*Gouden Regel van de Status van de Loyalty*&#39; zal in de **lijst van Regels** tonen. Selecteer deze optie om de eigenschappen ervan weer te geven.
 
-   ![Regel voor weergave gemaakt](assets/decisioning-view-rules.png)
+   ![ Mening leidde tot regel ](assets/decisioning-view-rules.png)
 
 1. Creëer nu de resterende voorwaarden van de loyaliteitsaanbieding voor het gebruiksgeval.
 
 
 ### Verzamelingskwalificaties
 
-**Verzamelingsaanduidingen** kunt u aanbiedingen gemakkelijk organiseren en zoeken binnen de aanbiedingsbibliotheek. In dit voorbeeld, voegt u inzamelingsbepalers aan de aanbiedingen van de Beloning van de Loyalty toe om de aanbiedingsorganisatie te verbeteren.
+**de bepalende eigenschappen van de Inzameling** staan u toe om aanbiedingen binnen de aanbiedingsbibliotheek gemakkelijk te organiseren en te zoeken. In dit voorbeeld, voegt u inzamelingsbepalers aan de aanbiedingen van de Beloning van de Loyalty toe om de aanbiedingsorganisatie te verbeteren.
 
-De lijst met verzamelingsaanduidingen is toegankelijk in het dialoogvenster **Componenten** -menu.
+De lijst van inzamelingsbepalers is toegankelijk in het **menu van Componenten**.
 
 Voer de volgende stappen uit om de verzamelingskwalificatie Loyalty Rewards te maken:
 
-1. Ga naar de **Verzamelingsaanduidingen** en klikt u op **Verzamelingskwalificatie maken**.
+1. Navigeer aan de **kwalificeerders van de Inzameling** tabel, en klik **creeer inzamelingsbepaler**.
 
-   ![Verzamelingskwalificatie maken](assets/decisioning-create-collection-qualifier.png)
+   ![ creeer inzamelingsbepaler ](assets/decisioning-create-collection-qualifier.png)
 
-1. Geef de verzamelingskwalificatie &#39;*Loyalty&#39;s*&#39;
+1. Laat de inzamelingskwalificatie &quot;*Beloningen van de Loyalty* noemen
 
-   ![Geef de verzameling een naam](assets/decisioning-name-collection.png)
+   ![ Naam de inzameling ](assets/decisioning-name-collection.png)
 
-1. De nieuwe verzamelingskwalificatie moet nu worden weergegeven in het dialoogvenster **Verzamelingskwalificatie** tab
+1. Het nieuwe inzamelingsbepaler zou nu in het **bepalende gebied van de Inzameling** tabel moeten tonen
 
 ## Aanbiedingen
 
 Nu is het tijd om de Loyalty Rewards aanbiedingen te creëren.
 
-De lijst met aanbiedingen is toegankelijk in het **Aanbiedingen** -menu.
+De lijst van aanbiedingen is toegankelijk in het **menu van Aanbiedingen**.
 
-![Het menu Aanbiedingen weergeven](assets/decisioning-offers-menu.png)
+![ de aanbiedingen van de Mening menu ](assets/decisioning-offers-menu.png)
 
 
 ### Aanbiedingen maken voor verschillende kwaliteitstips
 
 Begin met het maken van persoonlijke aanbiedingen voor de verschillende Luma Loyalty Tiers.
 
-Als u de eerste **aanbieden** Voer de volgende stappen uit:
+Om de eerste **aanbieding** tot stand te brengen, volg deze stappen:
 
-1. Klikken **Voorstel maken** selecteert u vervolgens **Persoonlijk aanbod**.
+1. Klik **creëren aanbieding**, dan selecteren **Gepersonaliseerde aanbieding**.
 
-1. Geef de eerste aanbieding een naam &#39;*Luminantiegroeven - goud*&quot;. Je moet een begin-/einddatum en -tijd voor dit voorstel opgeven. U moet ook de opdracht **verzamelingskwalificatie** &#39;*Loyalty&#39;s*&quot; aan de aanbieding, zodat u zich beter kunt organiseren binnen **Bibliotheek van aanbieding**. Klik vervolgens op **Volgende**.
+1. Laten wij de eerste aanbieding noemen &quot;*Luma Loyalty Rij - Goud*&#39;. Je moet een begin-/einddatum en -tijd voor dit voorstel opgeven. U zou het **inzamelingsbepalende** &quot;*Loyalty beloningen*&quot;aan de aanbieding ook moeten associëren, toestaand u om binnen de **Bibliotheek van de Aanbieding** beter te organiseren. Daarna, klik **daarna**.
 
-   ![Details voorstel toevoegen](assets/decisioning-add-offer-details.png)
+   ![ voeg aanbiedingsdetails toe ](assets/decisioning-add-offer-details.png)
 
-1. Nu moet u toevoegen **representaties** om te bepalen waar de aanbieding wordt weergegeven. Laten we de **webkanaal**. Laten we ook de &#39;*Homepage Banner*&#39; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of de inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend **Aangepast** keuzerondje.
+1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3} radioknoop van de Douane {.**
 
-   ![Details van representatie toevoegen](assets/decisioning-add-representation-details.png)
+   ![ voeg representatiedetails ](assets/decisioning-add-representation-details.png) toe
 
-1. Bewerk de inhoud van de aanbieding rechtstreeks met de **Expressieeditor**. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Zorg ervoor dat u de juiste **mode** onder aan de editor, afhankelijk van het inhoudstype. U kunt ook **validate** om ervoor te zorgen dat er geen fouten zijn.
+1. Bewerk direct de aanbiedingsinhoud met de **Redacteur van de Uitdrukking**. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Verzeker u de correcte **wijze** bij de bodem van de redacteur selecteert, afhankelijk van uw inhoudstype. U kunt **ook raken bevestigt** om er geen fouten te verzekeren.
 
-   ![HTML van aanbieding toevoegen](assets/decisioning-add-offer-html.png)
+   ![ voeg aanbiedingsHTML ](assets/decisioning-add-offer-html.png) toe
 
 1. U kunt ook de Expressieeditor gebruiken om kenmerken op te halen die zijn opgeslagen in Adobe Experience Platform. Laten we de voornaam van een profiel toevoegen aan de inhoud van het aanbod om de loyaliteitsleden op een 1:1-niveau beter te personaliseren.
 
-   ![Aanbiedingspersonalisatie toevoegen](assets/decisioning-add-offer-personalization.png)
+   ![ voeg aanbiedingspitalisatie toe ](assets/decisioning-add-offer-personalization.png)
 
-1. Voeg beperkingen toe om alleen de aanbieding weer te geven aan profielen die in aanmerking komen voor de &#39;*Gouden regel voor de status van Loyalty*&quot;.
+1. Voeg beperkingen toe om de aanbieding aan profielen slechts te tonen die voor de &quot;*Gouden Regel van de Status van de Loyalty*&quot;kwalificeren.
 
-   ![Regelbeperking toevoegen](assets/decisioning-add-rule-constraint.png)
+   ![ voeg regelbeperking ](assets/decisioning-add-rule-constraint.png) toe
 
-1. Als je je voorstel hebt bekeken, klik je op **Voltooien**. Selecteren **Opslaan en goedkeuren**.
+1. Zodra u klaar bent met het herzien van uw aanbieding, klik **Afwerking**. Selecteer **sparen en keur** goed.
 
 Maak nu de rest van de aanbiedingen voor de verschillende Luminantiegrenzen
 
 ### Terugvalvoorstellen
 
-U wilt nog steeds een aanbieding doen aan bezoekers van de Luministensite die geen Luma Loyalty zijn. Om dit te doen, kunt u vormen **fallback-aanbieding** voor de campagne.
+U wilt nog steeds een aanbieding doen aan bezoekers van de Luministensite die geen Luma Loyalty zijn. Om dit te doen, kunt u a **fallback aanbieden** voor de campagne vormen.
 
 Ga als volgt te werk om de fallback-aanbieding te maken:
 
-1. Klikken **Voorstel maken** selecteert u vervolgens **Fallback-aanbieding**.
+1. Klik **creëren aanbieding**, dan selecteren de uitgezochte **aanbieding van de Fallback**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Geef de fallback-aanbieding een naam &#39;*Loyalty non-Luma*&quot;. U kunt de eerder gemaakte **verzamelingskwalificatie**, &#39;*Loyalty&#39;s*&quot; aan de fallback-aanbieding voor een eenvoudige organisatie van aanbiedingen.
+1. Laat de fallback aanbieding &quot;*niet-Luma Loyalty*&quot;noemen. U kunt het eerder gecreeerde **inzamelingsbepalingsbepaler**, &quot;*Loyalty beloningen*&quot;aan de reserveaanbieding voor gemak van aanbiedingsorganisatie ook associëren.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Voeg de inhoud van de fallback-aanbieding toe aan de **Expressieeditor**. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Zorg ervoor dat u de juiste **mode** onder aan de editor, afhankelijk van het inhoudstype. U kunt ook **validate** om ervoor te zorgen dat er geen fouten zijn.
+1. Voeg de inhoud van de reserveaanbieding aan de **Redacteur van de Uitdrukking** toe. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Verzeker u de correcte **wijze** bij de bodem van de redacteur selecteert, afhankelijk van uw inhoudstype. U kunt **ook raken bevestigt** om er geen fouten te verzekeren.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Als alles correct wordt gevormd, druk **Voltooien** en vervolgens **Opslaan en goedkeuren**.
+1. Als alles correct wordt gevormd, toon **Afwerking** en dan **sparen en keur** goed.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Besluiten
 
-**Besluiten** zijn containers voor aanbiedingen die de beste aanbieding kiezen beschikbaar voor een klant, afhankelijk van het doel.
+**Besluiten** zijn containers voor aanbiedingen die de beste aanbieding beschikbaar voor een klant, afhankelijk van het doel kiezen.
 
-De lijst van besluiten is beschikbaar in **Besluiten** tabblad van het **Aanbiedingen** -menu.
+De lijst van besluiten is beschikbaar in het **1} lusje van Besluiten {van het** 3} menu van Aanbiedingen.****
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -298,48 +298,48 @@ Laten we een beslissing maken voor de Luma Loyalty Rewards use case.
 
 Voer de volgende stappen uit om de beslissing te maken:
 
-1. Klikken **Beslissing maken**.
+1. Klik **creeer besluit**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Laten we de beslissing noemen, &#39;*Luminantiegraad van december*&quot;. De aanbiedingen moeten één maand lopen, dus laten we dat hier specificeren.
+1. Laten wij het besluit roepen, &quot;*Aanbiedingen van de Loyalty van december Luma*&#39;. De aanbiedingen moeten één maand lopen, dus laten we dat hier specificeren.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Nu moet u de **beslissingsbereik**. Selecteer eerst een plaatsing. U kunt de eerder gemaakte &#39;*Homepage Banner*&quot;.
+1. Nu, moet u het **besluitvormingswerkingsgebied** bepalen. Selecteer eerst een plaatsing. U kunt eerder gecreeerd gebruiken &quot;*Banner van de Homepage*&quot;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Volgende moet u toevoegen **evaluatiecriteria** voor het toepassingsgebied van de beschikking. Klikken **Toevoegen** en kies de eerder gemaakte &#39;*Loyalty&#39;s*&#39; **collectie, die alle loyaliteitsaanbiedingen bevat om te overwegen.
+1. Daarna moet u **evaluatiecriteria** voor het besluitvormingswerkingsgebied toevoegen. Klik **toevoegen** en kies eerder gecreeerd &#39; *Beloningen van de Loyalty*&#39; **inzameling, die alle loyaliteitsaanbiedingen bevat om te overwegen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Binnen de &#39;*Loyalty&#39;s*&#39; verzameling, kunt u het veld Geschiktheid gebruiken om de levering van de aanbieding te beperken tot een subset van Luministers. In dit geval wilt u echter dat elke bezoeker een van de aanbiedingen ontvangt. Herinner me, vormde u **fallback-aanbieding** voor alle niet-loyaliteitsbezoekers. Stel de geschiktheid in op Geen.
+1. Binnen de inzameling &quot;*van de Beloningen van de Loyalty*&quot;, kunt u het toelatingsgebied gebruiken om de aanbiedingslevering tot een ondergroep van bezoekers van de Luma te beperken. In dit geval wilt u echter dat elke bezoeker een van de aanbiedingen ontvangt. Herinner me, vormde u a **fallback aanbieding** voor alle niet loyaliteitsbezoekers. Stel de geschiktheid in op Geen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. U kunt ook de opdracht **waarderingsmethode** veld voor het selecteren van de beste aanbieding voor elke Luma-bezoeker, als meerdere aanbiedingen in aanmerking komen voor de combinatie gebruiker/plaatsing. Voor dit gebruik kunt u de opdracht **Voorstelprioriteit** methode, die de waarden gebruikt die in de aanbiedingen worden bepaald om de beste aanbieding te dienen.
+1. Ook, kunt u het **het rangschikken methode** gebied gebruiken om de beste aanbieding voor elke bezoeker van de Luma te selecteren, als de veelvoudige aanbiedingen voor de gebruiker/plaatsingscombinatie geschikt zijn. Voor dit gebruiksgeval, kunt u de **prioritaire** methode van de Aanbieding gebruiken, die de waarden gebruikt die in de aanbiedingen worden bepaald om de beste aanbieding te dienen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Voeg nu de **fallback-aanbieding** op het besluit. Herinnering dat de fallback-aanbieding het standaardaanbod is dat wordt weergegeven aan Luministers als ze niet onder een Luma Loyalty-publiek vallen. Selecteren &#39;*Loyalty non-Luma*&quot; uit de lijst met beschikbare fallback-aanbiedingen voor de &quot;*Homepage Banner*&#39; placement.
+1. Voeg nu de **fallback aanbieding** aan het besluit toe. Herinnering dat de fallback-aanbieding het standaardaanbod is dat wordt weergegeven aan Luministers als ze niet onder een Luma Loyalty-publiek vallen. Selecteer &quot;*Loyalty niet-Luma*&quot;van de lijst van beschikbare reserveaanbiedingen voor de &quot;*Banner van de Homepage*&quot;plaatsing.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Voordat u de beslissing activeert, bekijken we eerst het bereik van de beslissing, de fallback-aanbieding, een voorvertoning van de beschikbare aanbiedingen en een schatting van de gekwalificeerde profielen. Als alles er goed uitziet, kunt u klikken op **Voltooien** en **Opslaan en activeren**.
+1. Voordat u de beslissing activeert, bekijken we eerst het bereik van de beslissing, de fallback-aanbieding, een voorvertoning van de beschikbare aanbiedingen en een schatting van de gekwalificeerde profielen. Zodra alles goed kijkt, kunt u **Afwerking** en **klikken sparen en** activeren.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Simulaties
 
-Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze validatie uitvoeren met **testprofielen**. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
+Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze bevestiging doen door **testprofielen** te gebruiken. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
 
-Als u wilt beginnen met testen, selecteert u de optie **Simulaties** van de **Aanbiedingen** -menu.
+Om met het testen te beginnen, selecteer het **** lusje van Simulaties van het **3} menu van Aanbiedingen {.**
 
 ### Loyalty-aanbiedingen testen
 
-1. Selecteer een testprofiel voor de simulatie. Klikken **Profiel beheren**. [Volg deze handleiding om een nieuw testprofiel voor het testen van aanbiedingen te maken of aan te wijzen](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [ om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids ](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -347,31 +347,31 @@ Als u wilt beginnen met testen, selecteert u de optie **Simulaties** van de **Aa
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Selecteer het beslissingsbereik dat u wilt testen. Selecteren **Beslissingsbereik toevoegen**.
+1. Selecteer het beslissingsbereik dat u wilt testen. Selecteer **toevoegt besluitvormingswerkingsgebied**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Selecteer de eerder gemaakte &#39;*Homepage Banner*&#39; placement.
+1. Selecteer eerder gecreeerd &quot;*Banner van de Homepage*&quot;plaatsing.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. De beschikbare beslissingen worden weergegeven. Selecteer de eerder gemaakte *Luminantiegraad van december*&#39; beslissing en klik op **Toevoegen**.
+1. De beschikbare besluiten worden getoond, selecteren eerder gecreeerd &quot;*Luma van de Luma het besluit van de Aanbieding van de Luma*, en de klik **voegt** toe.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Als u een testprofiel hebt geselecteerd, klikt u op **Resultaten weergeven**. De beste beschikbare aanbieding wordt getoond aan het geselecteerde testprofiel voor &quot;*Luminantiegraad van december*&quot; besluit.
+1. Zodra u een testprofiel selecteert, klik **resultaten van de Mening**. De beste beschikbare aanbieding wordt getoond aan het geselecteerde testprofiel voor de &quot;*Aanbiedingen van de Loyalty van de Luma van december*&quot;besluit.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Selecteer een ander testprofiel en klik op **Resultaten weergeven**. In het ideale geval ziet u een andere gesimuleerde aanbieding die overeenkomt met de loyaliteitslaag van het testprofiel.
+1. Selecteer een verschillend testprofiel, en klik **resultaten van de Mening**. In het ideale geval ziet u een andere gesimuleerde aanbieding die overeenkomt met de loyaliteitslaag van het testprofiel.
 
 ## Beslissingsbeheervalidering met Adobe Experience Platform Debugger
 
-De **Adobe Experience Platform Debugger** Deze extensie, die zowel beschikbaar is voor Chrome als Firefox, analyseert uw webpagina&#39;s om problemen te identificeren bij de implementatie van Adobe Experience Cloud-oplossingen.
+De **Adobe Experience Platform Debugger** uitbreiding, beschikbaar voor zowel Chrome als Firefox, analyseert uw Web-pagina&#39;s om kwesties in de implementatie van de oplossingen van Adobe Experience Cloud te identificeren.
 
 U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Deze bevestiging is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -379,23 +379,23 @@ De validatie starten met de foutopsporing:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Open tijdens de webpagina de **Adobe Experience Platform debugger**.
+1. Terwijl op de Web-pagina, open **debugger van Adobe Experience Platform**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigeren naar **Samenvatting**. Controleer of de **DataStream-id** komt overeen met de **datastream** in **Gegevensverzameling Adoben** waarvoor u Offer decisioning hebt ingeschakeld.
+1. Navigeer aan **Samenvatting**. Verifieer dat **identiteitskaart DataStream** de **datastream** in **de Inzameling van Gegevens van de Adobe** aanpast waarvoor u Offer decisioning toeliet.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Onder **Oplossingen** navigeer naar de **Experience Platform Web SDK**.
+1. Onder **Oplossingen** navigeer aan het **Web SDK van het Experience Platform**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Binnen de **Configuratie** tab, in-/uitschakelen **Foutopsporing inschakelen**. Hiermee kunt u zich aanmelden voor de sessie in een **Adobe Experience Platform Assurance** sessie.
+1. Binnen het **lusje van de Configuratie**, Knevel op **toelaten het Zuiveren**. Dit laat registreren voor de zitting binnen een **1} zitting van de Verzekering van Adobe Experience Platform toe.**
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. U kunt zich dan bij de plaats met diverse rekeningen van de loyaliteit van de Luma aanmelden en debugger gebruiken om de verzoeken te bevestigen die naar worden verzonden **Adobe Experience Platform Edge-netwerk**. Al deze verzoeken moeten worden vastgelegd in **Betrouwbaarheid** voor het bijhouden van logbestanden.
+1. U kunt dan login aan de plaats met diverse Luma loyaliteitsrekeningen, en gebruiken debugger om de verzoeken te bevestigen die naar het **netwerk van Adobe Experience Platform Edge** worden verzonden. Al deze verzoeken zouden in **Verzekering** voor logboek het volgen moeten worden gevangen.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -404,4 +404,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

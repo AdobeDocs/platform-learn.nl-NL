@@ -1,16 +1,17 @@
 ---
 title: Planning | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u uw Adobe Target-implementatie kunt plannen van at.js 2.x naar Adobe Experience Platform Web SDK.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
-# Plan de migratie van at.js aan het Web SDK van het Platform
+# De migratie van at.js naar Platform Web SDK plannen
 
-Alvorens aan het Web SDK van het Platform op uw plaats te bevorderen, zou u uw huidige implementatie moeten beoordelen.
+Voordat u een upgrade uitvoert naar de Platform Web SDK op uw site, moet u uw huidige implementatie beoordelen.
 
 ## Huidige implementatie van at.js evalueren
 
@@ -18,11 +19,11 @@ De eerste stap naar een geslaagde migratie is een duidelijk inzicht te krijgen i
 
 ### Welke functies worden ondersteund?
 
-SDK van het Web van het Platform is onder ononderbroken actieve ontwikkeling en de eigenschappen en de verhogingen worden regelmatig toegevoegd. Als u uw huidige implementatie at.js evalueert, raadpleegt u de [ondersteunde gebruiksgevallen](https://github.com/orgs/adobe/projects/18/views/1) voor de meest recente informatie.
+De SDK van het Web van het platform is onder ononderbroken actieve ontwikkeling en de eigenschappen en de verhogingen worden regelmatig toegevoegd. Aangezien u uw huidige implementatie at.js evalueert, verwijs naar de [ gesteunde gebruikscase ](https://github.com/orgs/adobe/projects/18/views/1) pagina voor de recentste informatie.
 
 ### Welke functies gebruikt u vandaag?
 
-SDK van het Web van het Platform is een nieuwe bibliotheek die alle oplossingen van de Adobe voor de websites in één enkele SDK consolideert. Dit maakt een nauwere integratie mogelijk en maakt nieuwe mogelijkheden mogelijk die uniek zijn voor Adobe Experience Platform. Nochtans, betekent dit ook functies at.js niet achterwaarts compatibel compatibel met het Web SDK van het Platform zijn. Let op het volgende terwijl u de huidige implementatie evalueert:
+Platform Web SDK is een nieuwe bibliotheek die alle oplossingen van de Adobe voor de websites in één enkele SDK consolideert. Dit maakt een nauwere integratie mogelijk en maakt nieuwe mogelijkheden mogelijk die uniek zijn voor Adobe Experience Platform. Nochtans, betekent dit ook de functies at.js niet achterwaarts compatibel met het Web SDK van het Platform zijn. Let op het volgende terwijl u de huidige implementatie evalueert:
 
 - at.js-functies zoals `getOffer()` en `applyOffer()`
 - Wijzigingen in de algemene instellingen van Target
@@ -39,7 +40,7 @@ Zodra u uw implementatie at.js hebt herzien, moet u een migratiebenadering bepal
 - Alle Adobe-toepassingen tegelijk migreren op de gehele site
 - Per pagina migreren
 
-Omdat het Web SDK van het Platform veelvoudige toepassingen van Adobe combineert en toelaat, moet u de migratie van het Doel van andere toepassingen van Adobe zoals Analytics en Audience Manager coördineren. Alle Adobe-bibliotheken op een bepaalde pagina moeten tegelijkertijd worden gemigreerd. Een gemengde implementatie van Platform Web SDK voor Doel en AppMeasurement voor Analytics op een bepaalde pagina wordt niet gesteund. Nochtans, wordt een gemengde implementatie over verschillende pagina&#39;s gesteund, bijvoorbeeld het Web SDK van het Platform op pagina A, en at.js met AppMeasurement op pagina B.
+Omdat het Web SDK van het Platform veelvoudige toepassingen van de Adobe combineert en toelaat, moet u de migratie van het Doel van andere toepassingen van de Adobe zoals Analytics en Audience Manager coördineren. Alle bibliotheken met Adoben op een bepaalde pagina moeten tegelijkertijd worden gemigreerd. Een gemengde implementatie van Platform Web SDK voor Doel en AppMeasurement voor Analytics op een bepaalde pagina wordt niet gesteund. Nochtans, wordt een gemengde implementatie over verschillende pagina&#39;s gesteund, bijvoorbeeld het Web SDK van het Platform op pagina A, en at.js met AppMeasurement op pagina B.
 
 Tijdens het migreren moet u het proces van uw bedrijf volgen om nieuwe code te testen en vrij te geven en om zaken zoals ontwikkeling, qa, en het opvoeren milieu&#39;s te gebruiken alvorens u aan productie vrijgeeft.
 
@@ -48,8 +49,8 @@ Tijdens het migreren moet u het proces van uw bedrijf volgen om nieuwe code te t
 >Aanbiedingen doorsturen wordt niet ondersteund voor migraties van pagina voor pagina als de omleiding plaatsvindt van een pagina met één bibliotheek naar een pagina met een andere bibliotheek
 
 
-Controleer vervolgens de gedetailleerde [vergelijking van at.js met het Web SDK van het Platform](detailed-comparison.md) een beter inzicht te krijgen in de technische verschillen en gebieden aan te wijzen die extra aandacht behoeven .
+Daarna, herzie de gedetailleerde [ vergelijking van at.js aan het Web SDK van het Platform ](detailed-comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

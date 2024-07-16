@@ -10,13 +10,13 @@ last-substantial-update: 2022-09-28T00:00:00Z
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
 
 # Beheerde gegevens in gegevensstromen beheren
 
-Leer hoe u vertrouwelijke gegevens in gegevensstromen beheert.  Zie voor meer informatie [de gegevensstroomdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
+Leer hoe u vertrouwelijke gegevens in gegevensstromen beheert.  Voor meer informatie, zie [ de documentatie van gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

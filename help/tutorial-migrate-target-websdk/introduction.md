@@ -1,33 +1,34 @@
 ---
 title: Inleiding | Doel migreren van at.js 2.x naar Web SDK
-description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten het laden van de bibliotheek JavaScript, het verzenden van parameters, het teruggeven activiteiten, en andere opmerkelijke callouts.
+description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten het laden van de bibliotheek van JavaScript, het verzenden van parameters, het teruggeven activiteiten, en andere opmerkelijke callouts.
 last-substantial-update: 2023-02-23T00:00:00Z
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 1%
+source-wordcount: '557'
+ht-degree: 0%
 
 ---
 
-# Doel migreren van at.js 2.x aan het Web SDK van het Platform
+# Doel migreren van at.js 2.x naar Platform Web SDK
 
 Deze gids is voor ervaren implementatoren van Adobe Target leren hoe te om een implementatie at.js aan het Web SDK van Adobe Experience Platform te migreren.
 
-Adobe Experience Platform Web SDK is een JavaScript-bibliotheek aan de clientzijde waarmee Adobe Experience Cloud-klanten via het Adobe Experience Platform Edge Network kunnen communiceren met Experience Cloud-services. Deze nieuwe bibliotheek combineert de mogelijkheden van de afzonderlijke Adobe-toepassingsbibliotheken tot één lichtgewichtpakket dat de nieuwe Adobe Experience Platform-functies ten volle kan benutten.
+Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud via de Adobe Experience Platform-Edge Network kunnen communiceren met services van Experiencen Cloud. Deze nieuwe bibliotheek combineert de mogelijkheden van de afzonderlijke toepassingsbibliotheken van de Adobe tot één lichtgewichtpakket dat de nieuwe Adobe Experience Platform-functies ten volle kan benutten.
 
 ## Belangrijkste voordelen
 
 Enkele voordelen van het Web SDK van het Platform in vergelijking met de standalone bibliotheek at.js omvatten:
 
-* Sneller delen van publiek van [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Doel integreren met Journey Optimizer ter ondersteuning [Levering offer decisioning](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Gebruiksmogelijkheden [eersteklas id&#39;s](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html) om de ECID te genereren voor bezoekersidentificatie van langere duur
+* Sneller het delen van publiek van [ Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+* Het integreren Doel met Journey Optimizer om [ levering van de Offer decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
 * Consolidatie van netwerkaanroepen in Adobe-toepassingen
 * Een kleinere voetafdruk voor verbeterde afmetingen voor de paginasnelheid
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
-Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime klantprofielen te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. De SDK van het Web van het Platform is een vereiste om deze eigenschappen RTCDP in uw Webkanaal te gebruiken.
+Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. Platform Web SDK is een vereiste om deze RTCDP-functies in uw webkanaal te gebruiken.
 
 ## Leerdoelstellingen
 
@@ -50,14 +51,14 @@ Aan het einde van deze zelfstudie kunt u het volgende doen:
 Als u deze zelfstudie wilt voltooien, moet u eerst:
 
 * Heb een technisch inzicht in uw huidige implementatie van Target at.js
-* Zorg ervoor dat u beschikt over een [De rol Editor of Uitgever](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw doelinstantie zodat u zelf voorbeelden kunt proberen
+* Verzeker u een [ Redacteur of rol van de Uitgever ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw instantie van het Doel hebt zodat kunt u voorbeelden op uw eigen proberen
 * Weet hoe u activiteiten kunt opzetten in Adobe Target. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
-   * [De Visual Experience Composer gebruiken](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [De Form-Based Experience Composer gebruiken](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [Gericht op ervaring maken](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [ Gebruik Composer van de Visuele Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
+   * [ gebruik de op vorm-Gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
+   * [ creeer ervaring richtend Activiteiten ](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-Wanneer u klaar bent, is de eerste stap naar een geslaagde migratie: [meer informatie over het migratieproces](migration-overview.md) en hoe te.js en het Web SDK van het Platform verschillen.
+Zodra u klaar bent, moet de eerste stap aan een succesvolle migratie [ over het migratieproces ](migration-overview.md) leren en hoe at.js en het Web SDK van het Platform verschillen.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

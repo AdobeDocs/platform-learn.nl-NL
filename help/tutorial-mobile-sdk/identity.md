@@ -6,7 +6,7 @@ jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 
 Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien door identiteiten tussen apparaten en systemen te overbruggen, zodat u in real-time een indrukwekkende, persoonlijke digitale ervaring kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
-Meer informatie over de [Identiteitsextensie](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [identiteitsservice](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) in de documentatie.
+Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) in de documentatie.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) die dienen als indicatoren van de context waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld een waarde van `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Identiteitsnaamruimten zijn onderdelen van [Identiteitsservice](https://experien
 
 Een nieuwe naamruimte maken:
 
-1. Selecteer in de interface Gegevensverzameling de optie **[!UICONTROL Identiteiten]** van de linkse spoorwegnavigatie.
-1. Selecteren **[!UICONTROL Naamruimte maken]**.
-1. Geef een **[!UICONTROL Weergavenaam]** van `Luma CRM ID` en **[!UICONTROL Identiteitssymbool]** waarde van `lumaCRMId`.
-1. Selecteren **[!UICONTROL Apparaatoverschrijdende id]**.
-1. Selecteren **[!UICONTROL Maken]**.
+1. Selecteer in de interface Gegevensverzameling de optie **[!UICONTROL Identities]** bij de navigatie links/rechts.
+1. Selecteer **[!UICONTROL Create identity namespace]**.
+1. Geef **[!UICONTROL Display name]** van `Luma CRM ID` en **[!UICONTROL Identity symbol]** de waarde `lumaCRMId` op.
+1. Selecteer **[!UICONTROL Cross-device ID]**.
+1. Selecteer **[!UICONTROL Create]**.
 
-   ![naamruimte voor identiteit maken](assets/identity-create.png)
+   ![ creeer identiteit namespace ](assets/identity-create.png)
 
 
 
@@ -59,7 +59,7 @@ Een nieuwe naamruimte maken:
 
 U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma CRM-id) bijwerken wanneer de gebruiker zich aanmeldt bij de app.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en zoek de `func updateIdentities(emailAddress: String, crmId: String)` functie-implementatie. Voeg de volgende code toe aan de functie.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode Project navigator en zoek de `func updateIdentities(emailAddress: String, crmId: String)` functie-implementatie. Voeg de volgende code toe aan de functie.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -75,33 +75,33 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
    Deze code:
 
-   1. Hiermee maakt u een lege `IdentityMap` object.
+   1. Maakt een leeg `IdentityMap` -object.
 
       ```swift
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. Instellen `IdentityItem` objecten voor e-mail- en CRM-id.
+   1. Stelt `IdentityItem` -objecten in voor e-mail- en CRM-id.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
       ```
 
-   1. Hiermee voegt u deze `IdentityItem` objecten naar de `IdentityMap` object.
+   1. Voegt deze `IdentityItem` -objecten toe aan het `IdentityMap` -object.
 
       ```swift
       identityMap.add(item:emailIdentity, withNamespace: "Email")
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. Hiermee verzendt u de `IdentityItem` object als onderdeel van het `Identity.updateIdentities` API-aanroep naar het Edge-netwerk.
+   1. Verzendt het `IdentityItem` -object als onderdeel van de `Identity.updateIdentities` API-aanroep naar de Edge Network.
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Aanmelden]** knop. Voeg de volgende code toe:
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de knop **[!UICONTROL Login]** selecteert. Voeg de volgende code toe:
 
    ```swift
    // Update identities
@@ -111,14 +111,14 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 >[!NOTE]
 >
->U kunt meerdere identiteiten in één keer verzenden `updateIdentities` vraag. U kunt eerder verzonden identiteiten ook wijzigen.
+>U kunt meerdere identiteiten verzenden in één `updateIdentities` oproep. U kunt eerder verzonden identiteiten ook wijzigen.
 
 
 ## Een identiteit verwijderen
 
-U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen client-side identiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar het Netwerk van de Rand. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [Identiteitsgrafieken weergeven](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func removeIdentities(emailAddress: String, crmId: String)` functie:
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode Project navigator en voeg de volgende code toe aan de `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -128,7 +128,7 @@ U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/do
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Aanmeldingsblad]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de **[!UICONTROL Afmelden]** knop. Voeg de volgende code toe:
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de knop **[!UICONTROL Logout]** selecteert. Voeg de volgende code toe:
 
    ```swift
    // Remove identities
@@ -138,44 +138,44 @@ U kunt de [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/do
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
 1. In de app Luma
-   1. Selecteer de **[!UICONTROL Home]** en verplaatst u het pictogram Verzekering naar links.
-   1. Selecteer de <img src="assets/login.png" width="15" /> van rechtsboven.
+   1. Selecteer de tab **[!UICONTROL Home]** en verplaats het pictogram Verzekering naar links.
+   1. Selecteer de <img src="assets/login.png" width="15" /> vanaf de rechterbovenhoek.
 
       <img src="./assets/identity1.png" width="300">
 
    1. Geef een e-mailadres en een CRM-id op, of
-   1. Selecteren <img src="assets/insert.png" width="15" /> om willekeurig een **[!UICONTROL E-mail]** en **[!UICONTROL CRM-id]**.
-   1. Selecteren **[!UICONTROL Aanmelden]**.
+   1. Selecteren <img src="assets/insert.png" width="15" /> om een **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** willekeurig te genereren.
+   1. Selecteer **[!UICONTROL Login]**.
 
       <img src="./assets/identity2.png" width="300">
 
 
-1. Kijk in de Assurance-webinterface voor de **[!UICONTROL Identiteitsupdates rand]** gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** leverancier.
-1. Selecteer de gebeurtenis en bekijk de gegevens in het dialoogvenster **[!UICONTROL ACPExtensionEventData]** object. U moet de identiteiten zien die u hebt bijgewerkt.
-   ![update identiteiten valideren](assets/identity-validate-assurance.png)
+1. Kijk in de webinterface van de **[!UICONTROL com.adobe.griffon.mobile]** -leverancier voor de **[!UICONTROL Edge Identity Update Identities]** -gebeurtenis.
+1. Selecteer de gebeurtenis en bekijk de gegevens in het **[!UICONTROL ACPExtensionEventData]** -object. U moet de identiteiten zien die u hebt bijgewerkt.
+   ![ bevestigt identiteitsupdate ](assets/identity-validate-assurance.png)
 
 ## Valideren met identiteitsgrafiek
 
-Nadat u de stappen in het dialoogvenster [Experience Platform les](platform.md)kunt u de identiteitsopname bevestigen in de identiteitsgrafiek van platforms:
+Zodra u de stappen in de [ les van het Experience Platform ](platform.md) voltooit, kunt u de identiteit bevestigen vangen in de kijker van de identiteitsgrafiek van Platforms:
 
-1. Selecteren **[!UICONTROL Identiteiten]** in de UI voor gegevensverzameling.
-1. Selecteren **[!UICONTROL Naamgrafiek]** in de bovenste balk.
-1. Enter `Luma CRM ID` als de **[!UICONTROL Naamruimte identiteit]** en uw CRM-id (bijvoorbeeld `24e620e255734d8489820e74f357b5c8`) als **[!UICONTROL Identiteitswaarde]**.
-1. U ziet de **[!UICONTROL Identiteiten]** vermeld.
+1. Selecteer **[!UICONTROL Identities]** in de gebruikersinterface voor gegevensverzameling.
+1. Selecteer **[!UICONTROL Identity Graph]** in de bovenste balk.
+1. Voer `Luma CRM ID` in als de **[!UICONTROL Identity namespace]** en uw CRM-id (bijvoorbeeld `24e620e255734d8489820e74f357b5c8` ) als de **[!UICONTROL Identity value]** .
+1. U ziet de **[!UICONTROL Identities]** weergegeven.
 
-   ![identiteitsgrafiek valideren](assets/identity-validate-graph.png)
+   ![ bevestigt identiteitsgrafiek ](assets/identity-validate-graph.png)
 
 >[!INFO]
 >
->De toepassing bevat geen code om de ECID opnieuw in te stellen. Dit betekent dat u de ECID alleen opnieuw kunt instellen (en daadwerkelijk een nieuw profiel met een nieuwe ECID kunt maken) door de toepassing te verwijderen en opnieuw te installeren. Als u de reset van id&#39;s wilt implementeren, raadpleegt u de [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API-aanroepen. Houd er echter rekening mee dat wanneer u een id voor pushmeldingen gebruikt (zie [Pushmeldingen verzenden](journey-optimizer-push.md)), wordt die id een andere &#39;sticky&#39;-profielid op het apparaat.
+>De toepassing bevat geen code om de ECID opnieuw in te stellen. Dit betekent dat u de ECID alleen opnieuw kunt instellen (en daadwerkelijk een nieuw profiel met een nieuwe ECID kunt maken) door de toepassing te verwijderen en opnieuw te installeren. Om het terugstellen van herkenningstekens uit te voeren, zie [`Identity.resetIdentities` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API vraag. Ben zich bewust niettemin, wanneer het gebruiken van een herkenningsteken van het duw- bericht (zie [ Verzendende duw berichten ](journey-optimizer-push.md)), dat herkenningsteken een andere &quot;kleverige&quot;profielherkenningsteken op het apparaat wordt.
 
 
 >[!SUCCESS]
 >
->U hebt nu uw app ingesteld om de identiteiten in het Edge-netwerk bij te werken en (wanneer deze is ingesteld) met Adobe Experience Platform.
+>U hebt nu uw app ingesteld om de identiteiten in de Edge Network en (wanneer deze is ingesteld) met Adobe Experience Platform bij te werken.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
-Volgende: **[Profielgegevens verzamelen](profile.md)**
+Volgende: **[verzamel profielgegevens](profile.md)**

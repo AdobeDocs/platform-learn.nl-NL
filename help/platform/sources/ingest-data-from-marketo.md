@@ -13,7 +13,7 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -35,5 +35,5 @@ Leer hoe u de bronconnector voor Marketo configureert met behulp van de standaar
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Raadpleeg de volgende documentatie voor meer informatie:
-* [Documentatie over de Marketo Engage-bronaansluiting](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Een gegevensstroom voor bronnen maken met sjablonen in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* {de documentatie van de de bronschakelaar van 0} Marketo Engage ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).[
+* [ creeer een bronnen dataflow gebruikend malplaatjes in UI ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

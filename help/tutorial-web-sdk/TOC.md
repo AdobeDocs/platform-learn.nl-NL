@@ -10,7 +10,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 15%
    + [Valideren met foutopsporing](validate-with-debugger.md)
    + [Valideren met betrouwbaarheid](validate-with-assurance.md)
 
-+ Toepassingsinstellingen {#applications-setup}
++ Toepassingen instellen {#applications-setup}
    + [Experience Platform instellen](setup-experience-platform.md)
    + [Adobe Analytics instellen](setup-analytics.md)
    + [Audience Manager instellen](setup-audience-manager.md)
@@ -39,7 +39,7 @@ ht-degree: 15%
    + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
    + [Journey Optimizer-besluitvormingsbeheer instellen](setup-decision-management.md)
 
-+ Consent Management {#consent-management}
++ Beheer van toestemming {#consent-management}
    + [Goedkeuring instellen](setup-consent.md)
 
 + Gebeurtenis doorsturen {#event-forwarding}

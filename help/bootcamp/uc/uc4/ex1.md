@@ -30,7 +30,7 @@ CJA brengt Analysis Workspace bovenop Adobe Experience Platform. Adobe Experienc
 
 Bedrijfs en Insight teams kunnen met CJA spreken, vragen stellen en op de vlucht antwoorden krijgen met belemmering-en-daling, punt-en-klik en gebruikersvriendelijke UI van Analysis Workspace.
 
-![demo](./images/cja-adv-analysis1.png)
+![ demo ](./images/cja-adv-analysis1.png)
 
 ## 4.1.2 Belangrijkste voordelen
 
@@ -58,29 +58,29 @@ Om deze redenen hebben zakelijke gebruikers en analisten bijna onmiddellijk de d
 
 Met CJA kunt u een 360 mening van de klantenreis hebben, gebruikend off-line en online gegevens, met de juiste hulpmiddelen om de tijd aan inzicht te verminderen, die bedrijfsgebruikers onafhankelijk maken in het begrijpen waarom iets gebeurde, en hoe te om aan het te antwoorden.
 
-![demo](./images/cja-use-case.png)
+![ demo ](./images/cja-use-case.png)
 
 ## 4.1.4 Begrijpen hoe de Customer Journey Analytics werkt
 
 Voordat u de volgende oefeningen start, is het van essentieel belang om te begrijpen welke stappen nodig zijn om gegevens van Adobe Experience Platform naar CJA te brengen om deze zichtbaar te maken en diepgaande inzichten te krijgen. Dat noemen we CJA Workflow. Laten we er eens naar kijken:
 
-![demo](./images/cja-work-flow.jpg)
+![ demo ](./images/cja-work-flow.jpg)
 
 Vergeet voor het starten van de bovenstaande stappen niet stap 0, namelijk de gegevens te begrijpen die beschikbaar zijn in Adobe Experience Platform.
 
-**Vuil in, vuilnis uit.** Herinner je? U moet een duidelijk idee hebben van welke gegevens beschikbaar zijn en hoe de schema&#39;s in Adobe Experience Platform worden gevormd. Kennis van de gegevens in Adobe Experience Platform maakt dingen gemakkelijker, niet alleen op het onderdeel voor gegevensverbinding, maar ook bij het maken van visualisaties en het uitvoeren van analyses.
+**huisvuil binnen, huisvuil uit.** Herinner je? U moet een duidelijk idee hebben van welke gegevens beschikbaar zijn en hoe de schema&#39;s in Adobe Experience Platform worden gevormd. Kennis van de gegevens in Adobe Experience Platform maakt dingen gemakkelijker, niet alleen op het onderdeel voor gegevensverbinding, maar ook bij het maken van visualisaties en het uitvoeren van analyses.
 
 ## 4.1.5 Stap 0: Inzicht in Adobe Experience Platform-schema&#39;s en gegevenssets
 
-Meld u aan bij Adobe Experience Platform via deze URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensinname](../uc1/images/home.png)
+![ Ingestie van Gegevens ](../uc1/images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Prod]** in de rechterbovenhoek van het scherm. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``Bootcamp`` . U kunt dit doen door op de tekst **[!UICONTROL Prod]** in de rechterbovenhoek van het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![Gegevensinname](../uc1/images/sb1.png)
+![ Ingestie van Gegevens ](../uc1/images/sb1.png)
 
 Bekijk deze schema&#39;s en datasets in Adobe Experience Platform alstublieft.
 
@@ -93,19 +93,19 @@ Bekijk deze schema&#39;s en datasets in Adobe Experience Platform alstublieft.
 Zorg ervoor dat u op zijn minst de volgende zaken hebt gecontroleerd:
 
 - Identiteiten: CRMID, phoneNumber, ECID, e-mail. Welke identiteiten zijn de primaire herkenningstekens, welke degenen zijn secundaire herkenningstekens?
-U kunt de id&#39;s vinden door een schema te openen en het object te bekijken `_experienceplatform.identification.core`. Bekijk het schema [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
+U vindt de id&#39;s door een schema te openen en het object `_experienceplatform.identification.core` te bekijken. Heb een blik bij het schema [ Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1) ](https://experience.adobe.com/platform/schema).
 
-![demo](./images/identity.png)
+![ demo ](./images/identity.png)
 
-- Het handelsobject binnen het schema verkennen [Demosysteem - Gebeurtenisschema voor website (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Onderzoek het handelsobject binnen het schema [ Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1) ](https://experience.adobe.com/platform/schema).
 
-![demo](./images/commerce.png)
+![ demo ](./images/commerce.png)
 
-- Voorvertoning van alle [gegevenssets](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) en bekijk de gegevens
+- Voorproef alle [ datasets ](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) en hebben een blik bij de gegevens
 
 U kunt nu de gebruikersinterface van de Customer Journey Analytics gebruiken.
 
-Volgende stap: [4.2 Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics](./ex2.md)
+Volgende Stap: [ 4.2 verbindt de Datasets van Adobe Experience Platform in Customer Journey Analytics ](./ex2.md)
 
 [Ga terug naar Gebruikersstroom 4](./uc4.md)
 

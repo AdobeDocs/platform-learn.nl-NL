@@ -8,7 +8,7 @@ jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
 source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Leer hoe u pushmeldingen voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Als u de gegevensstroom van pushberichten in Journey Optimizer wilt begrijpen, raadpleegt u de [documentatie](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
+Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Om de de gegevensstroom van de Berichten van de Duw in Journey Optimizer te begrijpen, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![Architectuur](assets/architecture-ajo.png)
 
@@ -30,12 +30,12 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer en voldoende toegangsrechten zoals beschreven [hier](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* Toegang tot Journey Optimizer en voldoende toestemmingen zoals die [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en) worden beschreven. U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een toepassingsoppervlak.
    * Maak een reis.
    * Maak een bericht.
    * Voorinstellingen voor berichten maken.
-* **Betaald Apple-ontwikkelingsaccount** met voldoende toegang om certificaten, id&#39;s en sleutels te maken.
+* **betaalde de ontwikkelaarsrekening van Apple** met voldoende toegang om certificaten, herkenningstekens, en sleutels tot stand te brengen.
 * Fysiek iOS-apparaat of simulator voor testen.
 
 ## Leerdoelstellingen
@@ -57,7 +57,7 @@ In deze les zult u
 
 >[!TIP]
 >
->Als u uw omgeving al hebt ingesteld als onderdeel van de [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) les, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
+>Als u opstelling uw milieu reeds als deel van [ Journey Optimizer in-app overseinen ](journey-optimizer-inapp.md) les hebt, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
 
 ### Toepassings-id registreren bij APNs
 
@@ -65,53 +65,53 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
 
 #### Een persoonlijke sleutel maken
 
-1. Navigeer in de Apple Developer Portal naar **[!UICONTROL Toetsen]**.
-1. Selecteer **[!UICONTROL +]**.
-   ![nieuwe sleutel maken](assets/mobile-push-apple-dev-new-key.png)
+1. Navigeer in de Apple Developer Portal naar **[!UICONTROL Keys]** .
+1. Selecteer **[!UICONTROL +]** om een sleutel te maken.
+   ![ creeer nieuwe sleutel ](assets/mobile-push-apple-dev-new-key.png)
 
-1. Geef een **[!UICONTROL Sleutelnaam]**.
-1. Selecteer de **[!UICONTROL Apple Push Notification-service] (APN&#39;s)** selectievakje.
-1. Selecteren **[!UICONTROL Doorgaan]**.
-   ![nieuwe sleutel configureren](assets/mobile-push-apple-dev-config-key.png)
-1. Controleer de configuratie en selecteer **[!UICONTROL Registreren]**.
-1. Download de `.p8` persoonlijke sleutel. Het wordt gebruikt in de configuratie van de Oppervlakte van de Toepassing later in deze les.
-1. Noteer de **[!UICONTROL Sleutel-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-1. Noteer de **[!UICONTROL Team-id]**. Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-   ![Belangrijkste details](assets/push-apple-dev-key-details.png)
+1. Geef een **[!UICONTROL Key Name]** op.
+1. Selecteer **[!UICONTROL Apple Push Notification service](APNs)** checkbox.
+1. Selecteer **[!UICONTROL Continue]**.
+   ![ vorm nieuwe sleutel ](assets/mobile-push-apple-dev-config-key.png)
+1. Controleer de configuratie en selecteer **[!UICONTROL Register]** .
+1. Download de persoonlijke sleutel van `.p8` . Het wordt gebruikt in de configuratie van de Oppervlakte van de Toepassing later in deze les.
+1. Noteer de **[!UICONTROL Key ID]** . Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
+1. Noteer de **[!UICONTROL Team ID]** . Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
+   ![ Zeer belangrijke Details ](assets/push-apple-dev-key-details.png)
 
-Aanvullende documentatie kan [hier gevonden](https://help.apple.com/developer-account/#/devcdfbb56a3).
+De extra documentatie kan [ hier ](https://help.apple.com/developer-account/#/devcdfbb56a3) worden gevonden.
 
 #### Een toepassingsoppervlak toevoegen aan gegevensverzameling
 
-1. Van de [Interface voor gegevensverzameling](https://experience.adobe.com/data-collection/), selecteert u **[!UICONTROL Toepassingsoppervlakken]** in het linkerdeelvenster.
-1. Als u een configuratie wilt maken, selecteert u **[!UICONTROL App-oppervlak maken]**.
-   ![startpagina van app](assets/push-app-surface.png)
-1. Voer een **[!UICONTROL Naam]** voor de configuratie, bijvoorbeeld `Luma App Tutorial`  .
-1. Van **[!UICONTROL Configuratie van mobiele toepassingen]**, selecteert u **[!UICONTROL Apple iOS]**.
-1. Voer de bundel-id voor de mobiele app in het dialoogvenster **[!UICONTROL Toepassings-id (iOS-bundel-id)]** veld. Bijvoorbeeld:  `com.adobe.luma.tutorial.swiftui`.
-1. Schakel de **[!UICONTROL Credentials duwen]** schakelen om uw referenties toe te voegen.
-1. Sleep uw `.p8` **Apple Push Notification Authentication Key** bestand.
-1. Geef de **[!UICONTROL Sleutel-id]**, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van `p8` auth key. Het bestand is te vinden onder de **[!UICONTROL Toetsen]** in de **Certificaten, id&#39;s en profielen** pagina&#39;s van de Apple Developer-portal. Zie ook [Een persoonlijke sleutel maken](#create-a-private-key).
-1. Geef de **[!UICONTROL Team-id]**. De team-id is een waarde die u kunt vinden onder de **Lidmaatschap** of boven aan de pagina Apple Developer Portal. Zie ook [Een persoonlijke sleutel maken](#create-a-private-key).
-1. Selecteren **[!UICONTROL Opslaan]**.
+1. Van de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/), selecteer **[!UICONTROL App Surfaces]** in het linkerpaneel.
+1. Selecteer **[!UICONTROL Create App Surface]** als u een configuratie wilt maken.
+   ![ app oppervlakte huis ](assets/push-app-surface.png)
+1. Voer een **[!UICONTROL Name]** in voor de configuratie, bijvoorbeeld `Luma App Tutorial` .
+1. Selecteer **[!UICONTROL Apple iOS]** in **[!UICONTROL Mobile Application Configuration]** .
+1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID (iOS Bundle ID)]** in. Bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
+1. Schakel de schakeloptie **[!UICONTROL Push Credentials]** in om uw referenties toe te voegen.
+1. De belemmering en laat vallen uw `.p8` **Sleutel van de Authentificatie van het Bericht van de Duw van Apple** dossier.
+1. Geef **[!UICONTROL Key ID]** op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van de `p8` auth-toets. Het kan onder het **[!UICONTROL Keys]** lusje in de **Certificaten, Herkenningstekens en de pagina van Profielen** van de de poortpagina&#39;s van de Ontwikkelaar van Apple worden gevonden. Zie ook [ tot een privé sleutel ](#create-a-private-key) leiden.
+1. Geef de **[!UICONTROL Team ID]** op. Identiteitskaart van het Team is een waarde die onder het **1} lusje van het Lidmaatschap {of bij de bovenkant van de het poortpagina van de Ontwikkelaar van Apple kan worden gevonden.** Zie ook [ tot een privé sleutel ](#create-a-private-key) leiden.
+1. Selecteer **[!UICONTROL Save]**.
 
-   ![configuratie toepassingsoppervlak](assets/push-app-surface-config.png)
+   ![ de configuratie van de toepassingsoppervlakte ](assets/push-app-surface-config.png)
 
 ### Gegevensstroomconfiguratie bijwerken
 
-Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk verzendt, naar Journey Optimizer worden doorgestuurd, werkt u de configuratie van Experience Edge bij.
+Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network worden verzonden, naar Journey Optimizer worden doorgestuurd.
 
-1. Selecteer in de gebruikersinterface voor gegevensverzameling de optie **[!UICONTROL Gegevensstromen]** en selecteert u bijvoorbeeld uw gegevensstroom **[!DNL Luma Mobile App]**.
-1. Selecteren ![Meer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** en selecteert u ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bewerken]** in het contextmenu.
-1. In de **[!UICONTROL Gegevensstromen]** > ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** scherm:
+1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
+1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm:
 
-   1. Als deze optie nog niet is geselecteerd, selecteert u **[!UICONTROL Dataset AJO-pushprofiel]** van **[!UICONTROL Profielgegevens]**. Deze profieldataset wordt vereist wanneer het gebruiken van `MobileCore.setPushIdentifier` API-aanroep (zie [Apparaattoken registreren voor pushberichten](#register-device-token-for-push-notifications)) die ervoor zorgt dat de unieke id voor pushmeldingen (ook wel push-id genoemd) wordt opgeslagen als onderdeel van het profiel van de gebruiker.
+   1. Selecteer **[!UICONTROL AJO Push Profile Dataset]** in **[!UICONTROL Profile Dataset]** als dit nog niet is geselecteerd. Deze profieldataset wordt vereist wanneer het gebruiken van de `MobileCore.setPushIdentifier` API vraag (zie [ het apparatenteken van het Register voor duw berichten ](#register-device-token-for-push-notifications)) die het unieke herkenningsteken voor duw berichten (a.k.a. duw herkenningsteken) als deel van het profiel van de gebruiker verzekert.
 
-   1. **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie [Adobe Experience Platform-instellingen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie .
+   1. **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie {de montages van 0} Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.[
 
-   1. Als u de configuratie van de gegevensstroom wilt opslaan, selecteert u **[!UICONTROL Opslaan]**.
+   1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
-   ![AEP-configuratie gegevensstroom](assets/datastream-aep-configuration.png)
+   ![ AEP gegevensstroomconfiguratie ](assets/datastream-aep-configuration.png)
 
 
 
@@ -119,39 +119,39 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar het Edge-netwerk 
 
 Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
-1. Navigeren naar **[!UICONTROL Tags]** > **[!UICONTROL Extensies]** > **[!UICONTROL Catalogus]**,
-1. De eigenschap openen, bijvoorbeeld **[!DNL Luma Mobile App Tutorial]**.
-1. Selecteren **[!UICONTROL Catalogus]**.
-1. Zoeken naar **[!UICONTROL Adobe Journey Optimizer]** extensie.
+1. Navigeer naar **[!UICONTROL Tags]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]** ,
+1. Open uw eigenschap, bijvoorbeeld **[!DNL Luma Mobile App Tutorial]** .
+1. Selecteer **[!UICONTROL Catalog]**.
+1. Zoek naar de extensie **[!UICONTROL Adobe Journey Optimizer]** .
 1. De extensie installeren.
-1. In de **[!UICONTROL Extensie installeren]** dialoogvenster
-   1. Selecteer bijvoorbeeld een omgeving **[!UICONTROL Ontwikkeling]**.
-   1. Selecteer de **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** gegevensset van de **[!UICONTROL Gebeurtenisgegevens]** lijst.
-   1. Selecteren **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
-      ![AJO-extensie-instellingen](assets/push-tags-ajo.png)
+1. In het dialoogvenster **[!UICONTROL Install Extension]**
+   1. Selecteer een omgeving, bijvoorbeeld **[!UICONTROL Development]** .
+   1. Selecteer de **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset van de **[!UICONTROL Event Dataset]** lijst.
+   1. Selecteer **[!UICONTROL Save to Library and Build]**.
+      ![ de uitbreidingsmontages van AJO ](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
->Als u het niet ziet **[!UICONTROL Dataset voor AJO-gebeurtenis voor het bijhouden van push]** als optie, contacteer klantenzorg.
+>Neem contact op met de klantenservice als u **[!UICONTROL AJO Push Tracking Experience Event Dataset]** niet ziet als een optie.
 >
 
 ## Setup valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
-1. Selecteer in de betrouwbaarheidsinterface de optie **[!UICONTROL Configureren]**.
-   ![configureren, klik](assets/push-validate-config.png)
-1. Selecteren ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Push Debug]**.
-1. Selecteren **[!UICONTROL Opslaan]**.
-   ![opslaan](assets/push-validate-save.png)
-1. Selecteren **[!UICONTROL Push Debug]** in de linkernavigatie.
-1. Selecteer de **[!UICONTROL Instellingen valideren]** tab.
-1. Selecteer het apparaat in het menu **[!UICONTROL Client]** lijst.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Verzekering.
+   ![ vorm klik ](assets/push-validate-config.png)
+1. Selecteer ![ plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Push Debug]**.
+1. Selecteer **[!UICONTROL Save]**.
+   ![ sparen ](assets/push-validate-save.png)
+1. Selecteer **[!UICONTROL Push Debug]** in de linkernavigatie.
+1. Selecteer het tabblad **[!UICONTROL Validate Setup]**. 
+1. Selecteer het apparaat in de lijst **[!UICONTROL Client]** .
 1. Bevestig dat u geen fouten krijgt.
-   ![validate](assets/push-validate-confirm.png)
-1. Selecteer de **[!UICONTROL Test Push verzenden]** tab.
-1. (optioneel) Wijzig de standaarddetails voor **[!UICONTROL Titel]** en **[!UICONTROL Lichaam]**
-1. Selecteren ![Bug](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Melding van proefdruk verzenden]**.
-1. Controleer de **[!UICONTROL Testresultaten]**.
+   ![ bevestigt ](assets/push-validate-confirm.png)
+1. Selecteer het tabblad **[!UICONTROL Send Test Push]**. 
+1. (optioneel) Wijzig de standaarddetails voor **[!UICONTROL Title]** en **[!UICONTROL Body]**
+1. Selecteer ![ Bug ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Send Test Push Notification]**.
+1. Controleer **[!UICONTROL Test Results]**.
 1. De pushmelding voor de test wordt weergegeven in uw app.
 
    <img src="assets/luma-app-push.png" width="300" />
@@ -159,59 +159,59 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 ## Ondertekenen
 
-U moet de app Luma ondertekenen om pushmeldingen te verzenden en **vereist een betaald Apple-ontwikkelingsaccount**.
+Het ondertekenen van app Luma is nodig om pushmeldingen te verzenden en **vereist een betaalde Apple-ontwikkelaarsaccount** .
 
 U kunt als volgt de ondertekening voor uw app bijwerken:
 
 1. Ga naar uw app in Xcode.
-1. Selecteren **[!DNL Luma]** in de projectnavigator.
-1. Selecteer de **[!DNL Luma]** doel.
-1. Selecteer de **Ondertekenen en mogelijkheden** tab.
-1. Configureren **[!UICONTROL Automatisch ondertekenen beheren]**, **[!UICONTROL Team]**, en **[!UICONTROL Bundel-id]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
+1. Selecteer **[!DNL Luma]** in de projectnavigator.
+1. Selecteer het doel **[!DNL Luma]** .
+1. Selecteer het **Ondertekenen &amp; Capabilities** lusje.
+1. Configureer **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]** en **[!UICONTROL Bundle Identifier]** of gebruik uw specifieke Apple-ontwikkelinrichtingsgegevens.
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u een _uniek_ bundel-id en vervang de `com.adobe.luma.tutorial.swiftui` bundle identifier, aangezien elke bundel-id uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier`. De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui`.
+   >Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
 
 
-   ![Xcode-ondertekeningsmogelijkheden](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+   ![ Xcode ondertekenende mogelijkheden ](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 
 ## Mogelijkheden voor pushmeldingen toevoegen aan uw app
 
 >[!IMPORTANT]
 >
->Als u pushmeldingen wilt implementeren en testen in een iOS-app, moet u beschikken over een **betaald** Apple Developer-account. Als u geen betaald Apple-ontwikkelaarsaccount hebt, kunt u het restant van deze les overslaan.
+>Om dupmelding in een iOS app uit te voeren en te testen, moet u a **betaalde** de ontwikkelaarsrekening van Apple hebben. Als u geen betaald Apple-ontwikkelaarsaccount hebt, kunt u het restant van deze les overslaan.
 
-1. Selecteer in Xcode **[!DNL Luma]** van de **[!UICONTROL DOELSTELLINGEN]** Selecteer de **[!UICONTROL Ondertekenen en mogelijkheden]** selecteert u de **[!UICONTROL + Capaciteit]** en vervolgens selecteert u **[!UICONTROL Pushmeldingen]**. Hierdoor kan uw app pushmeldingen ontvangen.
+1. Selecteer in Xcode **[!DNL Luma]** in de lijst **[!UICONTROL TARGETS]** , selecteer het tabblad **[!UICONTROL Signing & Capabilities]** , selecteer de knop **[!UICONTROL + Capability]** en selecteer vervolgens **[!UICONTROL Push Notifications]** . Hierdoor kan uw app pushmeldingen ontvangen.
 
-1. Vervolgens moet u een Berichtgevingsextensie aan de app toevoegen. Ga terug naar de **[!DNL General]** en selecteert u de **[!UICONTROL +]** pictogram onder aan **[!UICONTROL DOELSTELLINGEN]** sectie.
+1. Vervolgens moet u een Berichtgevingsextensie aan de app toevoegen. Ga terug naar de tab **[!DNL General]** en selecteer het pictogram **[!UICONTROL +]** onder aan de sectie **[!UICONTROL TARGETS]** .
 
-1. U wordt gevraagd om de sjabloon voor uw nieuwe doel te selecteren. Selecteren **[!UICONTROL Meldingsservice-extensie]** Selecteer vervolgens **[!UICONTROL Volgende]**.
+1. U wordt gevraagd om de sjabloon voor uw nieuwe doel te selecteren. Selecteer **[!UICONTROL Notification Service Extension]** en selecteer vervolgens **[!UICONTROL Next]** .
 
-1. In het volgende venster kunt u `NotificationExtension` als de naam van de extensie en klik op de knop **[!UICONTROL Voltooien]** knop.
+1. Gebruik `NotificationExtension` in het volgende venster als de naam van de extensie en klik op de knop **[!UICONTROL Finish]** .
 
 Er moet nu een extensie voor pushmeldingen aan uw app worden toegevoegd, vergelijkbaar met het onderstaande scherm.
 
-![extensie Pusn-meldingen](assets/xcode-signing-capabilities-pushnotifications.png)
+![ de uitbreiding van Pusn- mededelingen ](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
 ## Journey Optimizer implementeren in de app
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [SDK&#39;s installeren](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
 
 >[!NOTE]
 >
->Als u het [SDK&#39;s installeren](install-sdks.md) is de SDK al geïnstalleerd en kunt u deze stap overslaan.
+>Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. Controleer in Xcode of [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios) wordt toegevoegd aan de lijst met pakketten in Pakketafhankelijke onderdelen. Zie [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
-1. Zorgen `AEPMessaging` maakt deel uit van uw lijst met importbewerkingen.
+1. In Xcode, zorg ervoor dat [ het Overseinen AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
+1. Controleer of `AEPMessaging` deel uitmaakt van uw lijst met importbewerkingen.
 
    `import AEPMessaging`
 
-1. Zorgen `Messaging.self` maakt deel uit van de array met extensies die u registreert.
+1. Controleer of `Messaging.self` deel uitmaakt van de array met extensies die u registreert.
 
    ```swift
    let extensions = [
@@ -231,7 +231,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 ## Apparaattoken registreren voor pushberichten
 
-1. Voeg de [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API aan `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie.
+1. Voeg de [`MobileCore.setPushIdentifier` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API aan de `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` functie toe.
 
    ```swift
    // Send push token to Mobile SDK
@@ -242,7 +242,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 >[!IMPORTANT]
 >
->De `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` Hiermee bepaalt u of pushberichten een APNs-sandbox of productieserver gebruiken voor het verzenden van pushberichten. Wanneer u uw app in de simulator of op een apparaat test, moet u ervoor zorgen dat `messaging.useSandbox` is ingesteld op `true` dus u ontvangt pushmeldingen. Wanneer u uw app voor productie implementeert om te testen met gebruik van Apple Testflight, moet u controleren of deze is ingesteld `messaging.useSandbox` tot `false` anders kan uw productie-app geen pushmeldingen ontvangen.
+>Met `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` bepaalt u of pushberichten een APNs-sandbox of productieserver gebruiken voor het verzenden van pushberichten. Wanneer u de app test in de simulator of op een apparaat, moet u controleren of `messaging.useSandbox` is ingesteld op `true` , zodat u pushmeldingen ontvangt. Wanneer u uw app implementeert voor productie om te testen met gebruik van Apple Testflight, moet u `messaging.useSandbox` instellen op `false` anders kan uw productie-app geen pushmeldingen ontvangen.
 
 
 ## Uw eigen pushmelding maken
@@ -253,103 +253,103 @@ Als u uw eigen pushmelding wilt maken, moet u een gebeurtenis in Journey Optimiz
 
 U gaat een nieuw gebeurtenistype bepalen, nog niet beschikbaar als deel van de lijst van gebeurtenissen die in uw schema worden bepaald. U gebruikt dit gebeurtenistype later wanneer u pushmeldingen activeert.
 
-1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Schemas]** van de linkerspoorstaaf.
-1. Selecteren **[!UICONTROL Bladeren]** in de tabbalk.
-1. Selecteer bijvoorbeeld uw schema **[!DNL Luma Mobile App Event Schema]** om het te openen.
+1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Schemas]** in het linkerspoor.
+1. Selecteer **[!UICONTROL Browse]** in de tabbalk.
+1. Selecteer het schema, bijvoorbeeld **[!DNL Luma Mobile App Event Schema]** om het te openen.
 1. In de Schema-editor:
-   1. Selecteer de **[!UICONTROL eventType]** veld.
-   1. In de **[!UICONTROL Veldeigenschappen]** schuift u omlaag om de lijst met mogelijke waarden voor het gebeurtenistype weer te geven. Selecteren **[!UICONTROL Rij toevoegen]** en toevoegen `application.test` als de **[!UICONTROL WAARDE]** en `[!UICONTROL Test event for push notification]` als de `DISPLAY NAME`.
-   1. Selecteren **[!UICONTROL Toepassen]**.
-   1. Selecteren **[!UICONTROL Opslaan]**.
-      ![Waarde toevoegen aan gebeurtenistypen](assets/ajo-update-schema-eventtype-enum.png)
+   1. Selecteer het veld **[!UICONTROL eventType]** .
+   1. Schuif in het deelvenster **[!UICONTROL Field properties]** omlaag om de lijst met mogelijke waarden voor het gebeurtenistype weer te geven. Selecteer **[!UICONTROL Add row]** en voeg `application.test` toe als de **[!UICONTROL VALUE]** en `[!UICONTROL Test event for push notification]` als de `DISPLAY NAME` .
+   1. Selecteer **[!UICONTROL Apply]**.
+   1. Selecteer **[!UICONTROL Save]**.
+      ![ voegt waarde aan gebeurtenistypen ](assets/ajo-update-schema-eventtype-enum.png) toe
 
 ### Een gebeurtenis definiëren
 
-Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om berichten te verzenden, bijvoorbeeld pushberichten. Zie [Gebeurtenissen](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) voor meer informatie .
+Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om berichten te verzenden, bijvoorbeeld pushberichten. Zie [ Ongeveer gebeurtenissen ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) voor meer informatie.
 
-1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Configuraties]** van de linkerspoorstaaf.
+1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Configurations]** in het linkerspoor.
 
-1. In de **[!UICONTROL Dashboard]** scherm, selecteert u de **[!UICONTROL Beheren]** in de **[!UICONTROL Gebeurtenissen]** tegel.
+1. Selecteer in het scherm **[!UICONTROL Dashboard]** de knop **[!UICONTROL Manage]** in de tegel **[!UICONTROL Events]** .
 
-1. In de **[!UICONTROL Gebeurtenissen]** scherm, selecteren **[!UICONTROL Gebeurtenis maken]**.
+1. Selecteer **[!UICONTROL Create Event]** in het **[!UICONTROL Events]** -scherm.
 
-1. In de **[!UICONTROL Gebeurtenis 1 bewerken]** deelvenster:
+1. In het deelvenster **[!UICONTROL Edit event event1]** :
 
-   1. Enter `LumaTestEvent` als de **[!UICONTROL Naam]** van het evenement.
-   1. Geef een **[!UICONTROL Beschrijving]** bijvoorbeeld `Test event to trigger push notifications in Luma app`.
+   1. Voer `LumaTestEvent` in als de **[!UICONTROL Name]** van de gebeurtenis.
+   1. Geef een **[!UICONTROL Description]** op, bijvoorbeeld `Test event to trigger push notifications in Luma app` .
 
-   1. Selecteer het gebeurtenissenschema voor de mobiele app-ervaring dat u eerder hebt gemaakt in [Een XDM-schema maken](create-schema.md) van de **[!UICONTROL Schema]** lijst, bijvoorbeeld **[!DNL Luma Mobile App Event Schema v.1]**.
-   1. Selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast de **[!UICONTROL Velden]** lijst.
+   1. Selecteer het mobiele schema van de toepassingservaring die u vroeger in [ creeerde een schema XDM ](create-schema.md) van de **[!UICONTROL Schema]** lijst, bijvoorbeeld **[!DNL Luma Mobile App Event Schema v.1]** creeerde.
+   1. Selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast de **[!UICONTROL Fields]** lijst.
 
-      ![Gebeurtenisstap 1 bewerken](assets/ajo-edit-event1.png)
+      ![ geef gebeurtenisstap 1 ](assets/ajo-edit-event1.png) uit
 
-      In de **[!UICONTROL Velden]** selecteert u de volgende velden (boven op de standaardvelden die altijd zijn geselecteerd (**[!UICONTROL _id]**, **[!UICONTROL id]**, en **[!UICONTROL tijdstempel]**). U kunt in de vervolgkeuzelijst schakelen tussen **[!UICONTROL Geselecteerd]**, **[!UICONTROL Alles]** en **[!UICONTROL Primair]** of de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) veld.
+      Controleer in het dialoogvenster **[!UICONTROL Fields]** of de volgende velden zijn geselecteerd (boven op de standaardvelden die altijd zijn geselecteerd (**[!UICONTROL _id]** , **[!UICONTROL id]** en **[!UICONTROL timestamp]**). U kunt, het gebruiken van de dropdown lijst, tussen **[!UICONTROL Selected]**, **[!UICONTROL All]** en **[!UICONTROL Primary]** van een knevel voorzien of het ![ Onderzoek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) gebied gebruiken.
 
-      * **[!UICONTROL Toepassing geïdentificeerd (id)]**,
-      * **[!UICONTROL Type gebeurtenis (eventType)]**,
-      * **[!UICONTROL Primair (primair)]**.
+      * **[!UICONTROL Application Identified (id)]** ,
+      * **[!UICONTROL Event Type (eventType)]**,
+      * **[!UICONTROL Primary (primary)]**.
 
-      ![Gebeurtenisvelden bewerken](assets/ajo-event-fields.png)
+      ![ geeft gebeurtenisgebieden ](assets/ajo-event-fields.png) uit
 
-      Selecteer vervolgens **[!UICONTROL OK]**.
+      Selecteer vervolgens **[!UICONTROL Ok]** .
 
-   1. Selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast de **[!UICONTROL Voorwaarde van id van gebeurtenis]** veld.
+   1. Selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) naast het **[!UICONTROL Event id condition]** gebied.
 
-      1. In de **[!UICONTROL Voorwaarde voor een gebeurtenis-id toevoegen]** dialoogvenster, slepen en neerzetten **[!UICONTROL Type gebeurtenis (eventType)]** op **[!UICONTROL Een element hier slepen en neerzetten]**.
-      1. Blader in de pop-up naar de onderkant en selecteer **[!UICONTROL application.test]** (Dit is het gebeurtenistype dat u eerder als onderdeel van [Uw schema bijwerken](#update-your-schema)). Ga vervolgens omhoog en selecteer **[!UICONTROL OK]**.
-      1. Selecteren **[!UICONTROL OK]** om de voorwaarde op te slaan.
-         ![Gebeurtenisvoorwaarde bewerken](assets/ajo-edit-condition.png)
+      1. Sleep in het dialoogvenster **[!UICONTROL Add an event id condition]** **[!UICONTROL Event Type (eventType)]** naar **[!UICONTROL Drag and drop an element here]** .
+      1. In popover, rol aan de bodem en selecteer **[!UICONTROL application.test]** (dat het gebeurtenistype is u vroeger aan de lijst van gebeurtenistypen als deel van [ toevoegde Werk uw schema ](#update-your-schema)). Blader vervolgens omhoog en selecteer **[!UICONTROL Ok]** .
+      1. Selecteer **[!UICONTROL Ok]** om de voorwaarde op te slaan.
+         ![ geef gebeurtenisvoorwaarde ](assets/ajo-edit-condition.png) uit
 
-   1. Selecteren **[!UICONTROL ECID]** van de **[!UICONTROL Naamruimte]** lijst. Automatisch de **[!UICONTROL Profiel-id]** veld is gevuld met **[!UICONTROL De id van het eerste element van de sleutel-ECID voor de map identityMap]**.
-   1. Selecteren **[!UICONTROL Opslaan]**.
-      ![Gebeurtenisstap 2 bewerken](assets/ajo-edit-event2.png)
+   1. Selecteer **[!UICONTROL ECID (ECID)]** in de lijst **[!UICONTROL Namespace]** . Het veld **[!UICONTROL Profile identifier]** wordt automatisch gevuld met **[!UICONTROL The id of the first element of the key ECID for the map identityMap]** .
+   1. Selecteer **[!UICONTROL Save]**.
+      ![ geef gebeurtenisstap 2 ](assets/ajo-edit-event2.png) uit
 
-U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Met deze gebeurtenisconfiguratie worden inkomende ervaringsgebeurtenissen gefilterd met uw specifieke gebeurtenistype (`application.test`), dus alleen gebeurtenissen van dat specifieke type die vanuit uw mobiele app worden geïnitieerd, zullen de reis die u maakt, in de volgende stap activeren. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
+U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Deze gebeurtenisconfiguratie zal inkomende ervaringsgebeurtenissen filtreren gebruikend uw specifiek gebeurtenistype (`application.test`), zodat slechts de gebeurtenissen met dat specifieke type, die van uw mobiele app in werking worden gesteld, de reis zullen activeren u in de volgende stap bouwt. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
 
 ### De reis maken
 
 Uw volgende stap is het maken van de reis die het verzenden van de pushmelding activeert wanneer de juiste gebeurtenis wordt ontvangen.
 
-1. Selecteer in de gebruikersinterface van Journey Optimizer **[!UICONTROL Reizen]** van de linkerspoorstaaf.
-1. Selecteren **[!UICONTROL Reis maken]**.
-1. In de **[!UICONTROL Reiseigenschappen]** paneel:
+1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Journeys]** in het linkerspoor.
+1. Selecteer **[!UICONTROL Create Journey]**.
+1. In het deelvenster **[!UICONTROL Journey Properties]** :
 
-   1. Voer een **[!UICONTROL Naam]** bijvoorbeeld voor de reis `Luma - Test Push Notification Journey`.
-   1. Voer een **[!UICONTROL Beschrijving]** bijvoorbeeld voor de reis `Journey for test push notifications in Luma mobile app`.
-   1. Zorgen **[!UICONTROL Hernieuwde toegang toestaan]** is geselecteerd en ingesteld **[!UICONTROL Wachttijd bij terugkeer]** tot **[!UICONTROL 30]** **[!UICONTROL Seconden]**.
-   1. Selecteren **[!UICONTROL OK]**.
+   1. Voer een **[!UICONTROL Name]** in voor de rit, bijvoorbeeld `Luma - Test Push Notification Journey` .
+   1. Voer een **[!UICONTROL Description]** in voor de rit, bijvoorbeeld `Journey for test push notifications in Luma mobile app` .
+   1. Zorg ervoor dat **[!UICONTROL Allow re-entrance]** is geselecteerd en stel **[!UICONTROL Re-entrance wait period]** in op **[!UICONTROL 30]** **[!UICONTROL Seconds]** .
+   1. Selecteer **[!UICONTROL Ok]**.
       ![Journeyeigenschappen](assets/ajo-journey-properties.png)
 
-1. Terug op het reiscanvas, van **[!UICONTROL EVENTS]**, sleept u uw ![Gebeurtenis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** op het canvas waar het wordt weergegeven **[!UICONTROL Selecteer een entry-gebeurtenis of een lezen-publieksactiviteit]**.
+1. Terug bij het wegcanvas, van **[!UICONTROL EVENTS]**, sleep en laat vallen uw ![ Gebeurtenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** op het canvas waar het **[!UICONTROL Select an entry event or a read audience activity]** toont.
 
-   * In de **[!UICONTROL Gebeurtenissen: LumaTestEvent]** in, voert u een **[!UICONTROL Label]** bijvoorbeeld `Luma Test Event`.
+   * Voer in het deelvenster **[!UICONTROL Events: LumaTestEvent]** bijvoorbeeld een **[!UICONTROL Label]** `Luma Test Event` in.
 
-1. Van de **[!UICONTROL ACTIES]** vervolgkeuzelijst, slepen en neerzetten ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** op de ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) rechts van uw **[!DNL LumaTestEvent]** activiteit. In de **[!UICONTROL Handelingen: Push]** deelvenster:
+1. Van **[!UICONTROL ACTIONS]** dropdown, belemmering en laat vallen ![ Duw ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** op ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe die aan het recht van uw **[!DNL LumaTestEvent]** activiteit verschijnen. In het deelvenster **[!UICONTROL Actions: Push]** :
 
-   1. Geef een **[!UICONTROL Label]** bijvoorbeeld `Luma Test Push Notification`een **[!UICONTROL Beschrijving]** bijvoorbeeld `Test push notification for Luma mobile app`, selecteert u **[!UICONTROL Transactioneel]** van de **[!UICONTROL Categorie]** lijst en selecteer **[!DNL Luma]** van de **[!UICONTROL Push-oppervlak]**.
-   1. Selecteren ![Bewerken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Inhoud bewerken]** om de werkelijke pushmelding te bewerken.
-      ![Push-eigenschappen](assets/ajo-push-properties.png)
+   1. Geef een **[!UICONTROL Label]** op, bijvoorbeeld `Luma Test Push Notification` , geef een **[!UICONTROL Description]** , bijvoorbeeld `Test push notification for Luma mobile app` , selecteer **[!UICONTROL Transactional]** in de lijst **[!UICONTROL Category]** en selecteer **[!DNL Luma]** in de lijst **[!UICONTROL Push surface]** .
+   1. Selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit content]** beginnen het daadwerkelijke dupbericht uit te geven.
+      ![ Push eigenschappen ](assets/ajo-push-properties.png)
 
-      In de **[!UICONTROL Pushmelding]** editor:
+      In de **[!UICONTROL Push Notification]** editor:
 
-      1. Voer een **[!UICONTROL Titel]** bijvoorbeeld `Luma Test Push Notification` en voert u een **[!UICONTROL Lichaam]** bijvoorbeeld `Test push notification for Luma mobile app`.
-      1. U kunt desgewenst een koppeling naar een afbeelding (.png of .jpg) invoeren in **[!UICONTROL Media toevoegen]**. Als u dit doet, maakt de afbeelding deel uit van de pushmelding.
-      1. Om de redacteur te bewaren en te verlaten, selecteer ![Chevron left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
-         ![Push-editor](assets/ajo-push-editor.png)
+      1. Voer bijvoorbeeld een **[!UICONTROL Title]** `Luma Test Push Notification` in en voer een **[!UICONTROL Body]** in, bijvoorbeeld `Test push notification for Luma mobile app` .
+      1. U kunt desgewenst een koppeling naar een afbeelding (.png of .jpg) invoeren in **[!UICONTROL Add media]** . Als u dit doet, maakt de afbeelding deel uit van de pushmelding.
+      1. Om de redacteur te bewaren en te verlaten, uitgezochte ![ Bevestig verlaten ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
+         ![ Push redacteur ](assets/ajo-push-editor.png)
 
-   1. Als u de definitie van het pushbericht wilt opslaan en voltooien, selecteert u **[!UICONTROL OK]**.
+   1. Selecteer **[!UICONTROL Ok]** als u de definitie van de pushmelding wilt opslaan en voltooien.
 
-1. Je reis moet er hieronder uitzien. Selecteren **[!UICONTROL Publiceren]** om uw reis te publiceren en te activeren.
-   ![Voltooide reis](assets/ajo-journey-finished.png)
+1. Je reis moet er hieronder uitzien. Selecteer **[!UICONTROL Publish]** om uw reis te publiceren en te activeren.
+   ![ Voltooide reis ](assets/ajo-journey-finished.png)
 
 
 ## De pushmelding activeren
 
-U hebt alle ingrediënten op zijn plaats om een pushmelding te verzenden. Wat overblijft, is hoe deze pushmelding wordt geactiveerd. In wezen is het hetzelfde als u eerder hebt gezien: verzend eenvoudig een ervaringsgebeurtenis met de juiste lading (zoals in [Gebeurtenissen](events.md)).
+U hebt alle ingrediënten op zijn plaats om een pushmelding te verzenden. Wat overblijft, is hoe deze pushmelding wordt geactiveerd. In wezen, is het het zelfde als u eerder hebt gezien: verzend eenvoudig een ervaringsgebeurtenis met de juiste nuttige lading (zoals in [ Gebeurtenissen ](events.md)).
 
-Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, niet samengesteld als een eenvoudig XDM-woordenboek. U gaat een `struct` die een payload van een pushmelding vertegenwoordigt. Het bepalen van een specifiek gegevenstype is een alternatieve manier op hoe te om het construeren gebeurtenislading in uw toepassing uit te voeren.
+Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, niet samengesteld als een eenvoudig XDM-woordenboek. U gaat een `struct` gebruiken die een payload van een pushmelding vertegenwoordigt. Het bepalen van een specifiek gegevenstype is een alternatieve manier op hoe te om het construeren gebeurtenislading in uw toepassing uit te voeren.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL Model]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** in de Xcode-projectnavigator en inspecteer de code.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL Model]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** in de Xcode-projectnavigator en inspecteer de code.
 
    ```swift
    import Foundation
@@ -377,7 +377,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
    }
    ```
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator en voeg de volgende code toe aan `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode Project navigator en voeg de volgende code toe aan `func sendTestPushEvent(applicationId: String, eventType: String)` :
 
    ```swift
    // Create payload and send experience event
@@ -395,9 +395,9 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
    }
    ```
 
-   Deze code maakt een `testPushPayload` instantie die de parameters gebruikt die aan de functie worden verstrekt (`applicationId` en `eventType`) en vervolgens aanroepen `sendExperienceEvent` tijdens het omzetten van de lading in een woordenboek. Deze code, deze keer, neemt ook de asynchrone aspecten van het roepen van SDK van Adobe Experience Platform in aanmerking door het gelijktijdig valutamodel van Swift te gebruiken dat op wordt gebaseerd `await` en `async`.
+   Met deze code wordt een instantie `testPushPayload` gemaakt met behulp van de parameters die aan de functie ( `applicationId` en `eventType` ) worden doorgegeven. Vervolgens wordt `sendExperienceEvent` aangeroepen tijdens het omzetten van de laadbewerking naar een woordenboek. In deze code wordt deze keer ook rekening gehouden met de asynchrone aspecten van het aanroepen van de Adobe Experience Platform SDK door gebruik te maken van het gelijktijdige aanroepen van Swift-model op basis van `await` en `async` .
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Voeg in de definitie van Knop voor pushmeldingen de volgende code toe om de lading van de testpushmelding tijdens de gebeurtenisbeleving te verzenden, zodat de rit wordt geactiveerd wanneer op die knop wordt getikt.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Voeg in de definitie van Knop voor pushmeldingen de volgende code toe om de lading van de testpushmelding tijdens de gebeurtenisbeleving te verzenden, zodat de rit wordt geactiveerd wanneer op die knop wordt getikt.
 
    ```swift
    // Setting parameters and calling function to send push notification
@@ -411,23 +411,23 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
 
 ## Valideren met uw app
 
-1. De app opnieuw samenstellen en uitvoeren in de simulator of op een fysiek apparaat van Xcode met ![Afspelen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Rebuild en stel app in werking in de simulator of op een fysiek apparaat van Xcode, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Ga naar de **[!UICONTROL Instellingen]** tab.
+1. Ga naar de tab **[!UICONTROL Settings]** .
 
-1. Tikken **[!UICONTROL Pushmelding]**. De pushmelding wordt weergegeven in uw app.
+1. Tik op **[!UICONTROL Push Notification]**. De pushmelding wordt weergegeven in uw app.
 
    <img src="assets/ajo-test-push.png" width="300" />
 
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te handelen. U kunt bijvoorbeeld een reis maken in Journey Optimizer die een welkomstbericht verstuurt wanneer een gebruiker van de app zich aanmeldt. Of een bevestigingspushmelding wanneer een gebruiker een product in de app aanschaft. Of voert de geofence van een locatie in (zoals u ziet in het dialoogvenster [Plaatsen](places.md) les).
+U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te handelen. U kunt bijvoorbeeld een reis maken in Journey Optimizer die een welkomstbericht verstuurt wanneer een gebruiker van de app zich aanmeldt. Of een bevestigingspushmelding wanneer een gebruiker een product in de app aanschaft. Of gaat de geofence van een plaats in (aangezien u in de ](places.md) les 0} Plaatsen {zult zien).[
 
 >[!SUCCESS]
 >
 >U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
-Volgende: **[In-app berichten maken en verzenden](journey-optimizer-inapp.md)**
+Volgende: **[creeer en verzend in-app berichten](journey-optimizer-inapp.md)**

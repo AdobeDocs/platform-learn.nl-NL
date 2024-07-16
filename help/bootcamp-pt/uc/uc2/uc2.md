@@ -1,6 +1,6 @@
 ---
-title: Bootkamp - registratie en onboarding - Brazilië
-description: Bootkamp - registratie en onboarding - Brazilië
+title: Bootkamp - Registratie en onboarding - Brazilië
+description: Bootkamp - Registratie en onboarding - Brazilië
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -11,7 +11,7 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 ## Pré-requisitos
 
-- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso à Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Acesso ao site de demonstração
 
 >[!IMPORTANT]

@@ -9,13 +9,13 @@ thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 10%
+source-wordcount: '52'
+ht-degree: 1%
 
 ---
 
 # Overzicht van Query Service
 
-Leer hoe de Dienst van de Vraag in Adobe Experience Platform u kan helpen klantengedrag begrijpen en impactful inzichten produceren. Ga voor meer informatie naar de [Documentatie bij Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
+Leer hoe de Dienst van de Vraag in Adobe Experience Platform u kan helpen klantengedrag begrijpen en impactful inzichten produceren. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)

@@ -10,14 +10,14 @@ thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 72%
+source-wordcount: '80'
+ht-degree: 38%
 
 ---
 
 # Inleiding tot intelligente diensten
 
-Een introductie op hoog niveau van Intelligent Services, waarmee marketinganalisten en uitvoerders de kracht van kunstmatige intelligentie en machine learning in de ervaring van de klant kunnen gebruiken zonder kennis van gegevenswetenschap. Ga voor meer informatie naar de [Documentatie over intelligente services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html).
+Een introductie op hoog niveau van de Intelligente Diensten, die marketinganalisten en artsen in staat stelt om de kracht van Kunstmatige Intelligentie en het Leren van de Machine in de ervaring van de klant te gebruiken gevallen zonder deskundigheid op het gebied van gegevenswetenschap. Voor meer informatie, gelieve de [ Intelligente documentatie van de Diensten ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on)
 

@@ -33,11 +33,11 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implementeer het Experience Cloud met Web SDK</strong>
+    <strong> voer het Experience Cloud met Web SDK uit </strong>
     </a>
     </div>
     <p>
-    <em>Tags gebruiken om Platform Web SDK te implementeren</em>
+    <em> de markeringen van het Gebruik om het Web SDK van het Platform uit te voeren </em>
     <p>
   </td>
   <td>
@@ -46,11 +46,11 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
-    <strong>Het Experience Cloud implementeren in mobiele apps</strong>
+    <strong> voer het Experience Cloud in mobiele apps </strong> uit
     </a>
     </div>
     <p>
-    <em>Tags gebruiken om Platform Mobile SDK te implementeren</em>
+    <em> de markeringen van het Gebruik om Platform Mobiele SDK uit te voeren </em>
     <p>
   </td>
   <td>
@@ -59,11 +59,11 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Adobe Target migreren naar Web SDK</strong>
+    <strong> Migreer Adobe Target aan Web SDK </strong>
     </a>
     </div>
     <p>
-    <em>Migreren van at.js naar Web SDK</em>
+    <em> Migreer van at.js aan Web SDK </em>
     <p>
   </td>
 </tr>
@@ -71,4 +71,4 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
 
 </div>
 
-*Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift en het Swift-logo zijn handelsmerken van Apple Inc.*
+*Apple, het embleem van Apple, iPad, iPhone, iPod, en iPod aanraking zijn handelsmerken van Apple Inc., die in de V.S. en andere landen worden geregistreerd. Swift en het Swift embleem zijn handelsmerken van Apple Inc.*

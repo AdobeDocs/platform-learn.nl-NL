@@ -1,10 +1,11 @@
 ---
 title: Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '400'
+ht-degree: 0%
 
 ---
 
@@ -12,19 +13,19 @@ ht-degree: 1%
 
 Sommige doelimplementaties gebruiken mogelijk regionale selectievakjes (nu bekend als &quot;bereik&quot;) om inhoud te leveren van activiteiten die gebruikmaken van de op formulieren gebaseerde Experience Composer. Als uw at.js Implementatie van het Doel mboxes gebruikt, dan moet u het volgende doen:
 
-* Werk om het even welke verwijzingen van uw at.js implementatie bij die gebruiken `getOffer()` of `getOffers()` aan de gelijkwaardige methodes van SDK van het Web van het Platform.
-* Code toevoegen om een trigger te maken `propositionDisplay` zodat een indruk wordt geteld.
+* Werk alle verwijzingen van uw at.js-implementatie die `getOffer()` of `getOffers()` gebruiken, bij naar de equivalente Web SDK-methoden van het Platform.
+* Voeg code toe om een `propositionDisplay` -gebeurtenis te activeren, zodat een indruk wordt geteld.
 
 ## Inhoud aanvragen en op aanvraag toepassen
 
-Activiteiten die zijn gemaakt met behulp van de op formulieren gebaseerde composer van Target en die zijn geleverd aan regionale vakken, kunnen niet automatisch worden gerenderd door de Web SDK van het Platform. Gelijkaardig aan at.js, moeten de aanbiedingen die aan specifieke plaatsen van het Doel worden geleverd op bestelling worden teruggegeven.
+Activiteiten die zijn gemaakt met behulp van de op formulieren gebaseerde composer van Target en die worden geleverd aan regionale boxes, kunnen niet automatisch worden gerenderd door de Platform Web SDK. Gelijkaardig aan at.js, moeten de aanbiedingen die aan specifieke plaatsen van het Doel worden geleverd op bestelling worden teruggegeven.
 
 
-+++at.js Voorbeeld gebruiken `getOffer()` en `applyOffer()`:
++++at.js Voorbeeld met `getOffer()` en `applyOffer()` :
 
-1. Uitvoeren `getOffer()` om een voorstel voor een plaats aan te vragen
-1. Uitvoeren `applyOffer()` om de aanbieding aan een gespecificeerde selecteur terug te geven
-1. Een activiteitsindruk wordt automatisch vergroot op het moment van het `getOffer()` verzoek
+1. Uitvoeren `getOffer()` om een voorstel voor een locatie aan te vragen
+1. Uitvoeren `applyOffer()` om de aanbieding te renderen naar een opgegeven kiezer
+1. Een activiteitsindruk wordt automatisch verhoogd op het moment van het `getOffer()` -verzoek
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -48,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++Platform Web SDK equivalent gebruiken `applyPropositions` opdracht:
++++Platform Web SDK equivalent gebruikend het `applyPropositions` bevel:
 
-1. Uitvoeren `sendEvent` bevel om aanbiedingen (voorstellen) voor één of meerdere plaatsen (werkingsgebied) te verzoeken
-1. Uitvoeren `applyPropositions` bevel met meta-gegevensvoorwerp dat instructies voor verstrekt hoe te om inhoud op de pagina voor elk werkingsgebied toe te passen
-1. Uitvoeren `sendEvent` command met eventType van `decisioning.propositionDisplay` om een indruk te volgen
+1. Voer `sendEvent` bevel uit om aanbiedingen (voorstellen) voor één of meerdere plaatsen (werkingsgebied) te verzoeken
+1. Opdracht uitvoeren `applyPropositions` met object metadata dat instructies biedt voor het toepassen van inhoud op de pagina voor elk bereik
+1. Voer de opdracht `sendEvent` uit met eventType van `decisioning.propositionDisplay` om een indruk te volgen
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -91,7 +92,7 @@ alloy("sendEvent", {
 
 +++
 
-Het Web SDK van het Platform biedt grotere controle voor het toepassen van op vorm-gebaseerde activiteiten op de pagina gebruikend aan `applyPropositions` gebruiken met een `actionType` gespecificeerd:
+De SDK van het Web van het Platform biedt grotere controle voor het toepassen van op vorm-gebaseerde activiteiten op de pagina gebruikend het `applyPropositions` bevel met `actionType` gespecificeerd:
 
 | `actionType` | Beschrijving | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
@@ -99,13 +100,13 @@ Het Web SDK van het Platform biedt grotere controle voor het toepassen van op vo
 | `replaceHtml` | De container verwijderen en vervangen door de aanbieding | Nee | Ja |
 | `appendHtml` | Hiermee wordt het aanbod toegevoegd na de opgegeven kiezer | Nee | Ja |
 
-Zie de [speciale documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) over het renderen van inhoud met de SDK van het Web Platform voor extra renderopties en voorbeelden.
+Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) over het teruggeven van inhoud gebruikend het Web SDK van het Platform voor extra het teruggeven opties en voorbeelden.
 
 ## Voorbeeld van implementatie
 
-De onderstaande voorbeeldpagina bouwt verder op de implementatie die in de vorige sectie wordt beschreven, maar voegt alleen extra bereik toe aan de `sendEvent` gebruiken.
+De voorbeeldpagina hieronder bouwt verder op de implementatie die in de vorige sectie wordt geschetst, slechts voegt het extra werkingsgebied aan het `sendEvent` bevel toe.
 
-+++Platform het voorbeeld van SDK van het Web met veelvoudige werkingsgebied
++++Platform Web SDK voorbeeld met veelvoudige werkingsgebied
 
 ```HTML
 <!doctype html>
@@ -196,8 +197,8 @@ De onderstaande voorbeeldpagina bouwt verder op de implementatie die in de vorig
 </html>
 ```
 
-Leer nu hoe u [Geef de parameters van het Doel gebruikend het Web SDK van het Platform door](send-parameters.md).
+Daarna, leer hoe te [ parameters overgaan van het Doel gebruikend het Web SDK van het Platform ](send-parameters.md).
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

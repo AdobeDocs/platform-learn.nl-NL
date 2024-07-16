@@ -2,9 +2,10 @@
 title: CSC Bootkamp - Creative Brief
 description: CSC Bootkamp - Creative Brief
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: e404b54d-cdd6-4ecf-9740-838c002b7872
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ Het budget voor het project is $100.000.
 De lancering van onze nieuwe elektrische motor A1-productlijn biedt een geweldige kans om consumenten die zich bewust zijn van het milieu en de gezondheid, aan te trekken die op zoek zijn naar een betrouwbare, stijlvolle en handige manier van vervoer. Door ons merk te positioneren als modern, trendy en milieuvriendelijk, en door creatieve en innovatieve marketingstrategieën te gebruiken, kunnen we onze doelen bereiken en een marktleider worden in de elektrische fietsindustrie.
 
 
-Volgende stap: [Fase 1 - Planning: Planning](./phases/planning/planning.md)
+Volgende Stap: [ Fase 1 - Planning: Planning ](./phases/planning/planning.md)
 
 [Ga terug naar de toeleveringsketen voor inhoud in vier fasen](./csc-in-4-phases.md)
 

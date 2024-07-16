@@ -1,6 +1,6 @@
 ---
 title: Onsite ervaringen voor onbekende bezoekers personaliseren met de erkenning van bezoekers met hulp van partners
-description: Leer hoe u kenmerken van derden kunt verzamelen via de [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring aanpassen aan onbekende bezoekers met de herkenning van bezoekers met instructies voor partners.
+description: Leer hoe te om derdeattributen van  [!DNL Adobe Experience Platform Web SDK]  te verzamelen en uw onsite ervaring voor onbekende bezoekers te personaliseren gebruikend partner-gesteunde bezoekerserkenning.
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Onsite ervaringen voor onbekende bezoekers personaliseren met de erkenning van bezoekers met hulp van partners
 
-Leer hoe u kenmerken van derden kunt verzamelen via de [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring aanpassen aan onbekende bezoekers met de herkenning van bezoekers met instructies voor partners. Ga voor meer informatie naar de [Erkenning door bezoekers met hulp van partners gebruiken om ervaringen op locatie aan te passen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) documentatie.
+Leer hoe u kenmerken van derden kunt verzamelen in [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring kunt aanpassen aan onbekende bezoekers met behulp van de herkenning van bezoekers met instructies voor partners. Voor meer informatie, gelieve te bezoeken de [ partner-gesteunde bezoekerserkenning van het Gebruik om onsite ervaringen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) documentatie te personaliseren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

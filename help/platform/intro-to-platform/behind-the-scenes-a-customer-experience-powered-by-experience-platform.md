@@ -1,5 +1,5 @@
 ---
-title: 'Achter de schermen: een klantervaring met Adobe Experience Platform'
+title: Achter de scènes&#58; Een klantervaring met Adobe Experience Platform
 description: In de vorige video zagen we hoe een voorbeeldmerk, Luma, in staat was om een rijke, belonende en relevante klantervaring te creëren. In deze video ziet u hoe Adobe Experience Platform wordt gebruikt om deze reis te voltooien.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner

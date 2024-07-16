@@ -16,10 +16,10 @@ ht-degree: 0%
 
 # Schema&#39;s kopiëren tussen sandboxen
 
-In deze video wordt getoond hoe u een schema van de ene sandbox naar een andere in Adobe Experience Platform kunt kopiëren met behulp van de API voor het exporteren/importeren van schema. Ontwikkel en test uw schema&#39;s in ontwikkelingszandbakken en kopieer hen dan aan productie. Ga voor meer informatie naar de [schemadocumentatie](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl).
+In deze video wordt getoond hoe u een schema van de ene sandbox naar een andere in Adobe Experience Platform kunt kopiëren met behulp van de API voor het exporteren/importeren van schema. Ontwikkel en test uw schema&#39;s in ontwikkelingszandbakken en kopieer hen dan aan productie. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!TIP]
 >
->Eind 2023 werd een veel eenvoudiger, op interface gericht proces geïntroduceerd om schema&#39;s en andere voorwerpen tussen zanddozen te bewegen die wij in plaats daarvan adviseren gebruiken. Zie [Objecten kopiëren tussen sandboxen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html).
+>Eind 2023 werd een veel eenvoudiger, op interface gericht proces geïntroduceerd om schema&#39;s en andere voorwerpen tussen zanddozen te bewegen die wij in plaats daarvan adviseren gebruiken. Gelieve te zien [ voorwerpen van het Exemplaar tussen zandbakken ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

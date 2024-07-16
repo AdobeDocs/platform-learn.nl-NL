@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gegevenselementen maken
 
-Leer hoe u gegevenselementen maakt in codes voor inhoud, handel en identiteitsgegevens in de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html). Vul vervolgens velden in uw XDM-schema met het gegevenstype Variabele voor gegevenselement in de extensie van Adobe Experience Platform Web SDK.
+Leer hoe te om gegevenselementen in markeringen voor inhoud, handel, en identiteitsgegevens over de [ de demoplaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) tot stand te brengen. Vul vervolgens velden in uw XDM-schema met het gegevenstype Variabele voor gegevenselement in de extensie van Adobe Experience Platform Web SDK.
 
 ## Leerdoelstellingen
 
@@ -36,7 +36,7 @@ U hebt inzicht in wat een gegevenslaag is en de vorige lessen in het leerprogram
 
 >[!IMPORTANT]
 >
->De gegevens voor deze les zijn afkomstig uit de `[!UICONTROL digitalData]` gegevenslaag op de Luminasite. Om de gegevenslaag te bekijken, open uw ontwikkelaarsconsole en typ binnen `[!UICONTROL digitalData]` om de volledige beschikbare gegevenslaag te zien.![digitalData-gegevenslaag](assets/data-element-data-layer.png)
+>De gegevens voor deze les komen uit de `[!UICONTROL digitalData]` gegevenslaag op de plaats van de Luma. Als u de gegevenslaag wilt weergeven, opent u de ontwikkelaarsconsole en typt u in `[!UICONTROL digitalData]` om de volledige beschikbare gegevenslaag weer te geven.![ digitalData gegevenslaag ](assets/data-element-data-layer.png)
 
 
 ## Datalaagbenaderingen
@@ -54,7 +54,7 @@ Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM 
 
 ### XDM in de gegevenslaag implementeren
 
-Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als voor uw implementatie geen tagbeheer wordt gebruikt, is deze aanpak mogelijk ideaal omdat u gegevens rechtstreeks vanuit uw toepassing naar XDM kunt verzenden met de [XDM sendEvent, opdracht](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
+Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als uw implementatie geen markeringsmanager gebruikt, kan deze benadering ideaal zijn omdat u gegevens naar XDM direct van uw toepassing kunt verzenden gebruikend het [ XDM sendEvent bevel ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
 
 Hieronder is een voorbeeld van hoe de gegevenslaag als het gebruiken van het formaat van de Laag van de Gegevens van de Cliënt van de Adobe zou kijken:
 
@@ -107,7 +107,7 @@ Cons
 * Volledige afhankelijkheid van ontwikkelingsteam en ontwikkelingscyclus voor het bijwerken van welke gegevens naar XDM gaan
 * Beperkte flexibiliteit omdat XDM de exacte lading van de gegevenslaag ontvangt
 * Kan ingebouwde tagfuncties, zoals plakken, persistentie, functies voor snelle implementatie niet gebruiken
-* De gegevenslaag is moeilijker te gebruiken voor pixels van derden (maar u wilt deze pixels mogelijk verplaatsen naar [gebeurtenis doorsturen](setup-event-forwarding.md)!
+* Harder om de gegevenslaag voor derdepixel te gebruiken (maar u zou deze pixel aan [ gebeurtenis kunnen willen bewegen door:sturen ](setup-event-forwarding.md)!
 * Kan de gegevens niet transformeren tussen de gegevenslaag en XDM
 
 ### Gegevenslaag toewijzen in tags
@@ -129,17 +129,17 @@ Deze benadering omvat het in kaart brengen van individuele gegevenslaagvariabele
 >
 > Google-gegevenslaag
 > 
-> Als uw organisatie al Googles Analytics gebruikt en het traditionele Google dataLayer-object op uw website heeft, kunt u de [Google Data Layer-extensie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in tags. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+> Als uw organisatie reeds Googles Analytics gebruikt en het traditionele Google dataLayer voorwerp op uw website heeft, kunt u de [ uitbreiding van de Laag van Gegevens van Google ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in markeringen gebruiken. Hierdoor kunt u sneller Adobe technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
 
 ### Toewijzen aan XDM in de gegevensstroom
 
-Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van de gegevensstroom wordt genoemd [Gegevensvoorvoegsel voor gegevensverzameling](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
+Deze benadering gebruikt functionaliteit die in de configuratie van de gegevensstroom [ wordt ingebouwd Prep van Gegevens voor de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
 
 #### Pros
 
 * Flexibel omdat u individuele variabelen aan XDM kunt in kaart brengen
-* Vermogen [nieuwe waarden berekenen](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [gegevenstypen transformeren](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag voordat deze naar XDM gaat
-* Gebruik een [Toewijzingsinterface](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) om velden in uw brongegevens toe te wijzen aan XDM met een punt-en-klik UI
+* Capaciteit om [ nieuwe waarden ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [ transformatie gegevenstypes ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag gegevens uit te werken alvorens het naar XDM gaat
+* Hefboomwerking a [ Afbeelding UI ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) aan kaartgebieden in uw brongegevens aan XDM met een punt-en-klik UI
 
 #### Cons
 
@@ -155,32 +155,32 @@ Deze benadering gebruikt ingebouwde functionaliteit in de configuratie die van d
 
 ## Gegevenselementen maken om de gegevenslaag vast te leggen
 
-Voordat u het XDM-object maakt, maakt u de volgende set gegevenselementen voor de [Luma-demosite](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag:
+Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen voor de ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} gegevenslaag 1} van de Luminagedemo [:
 
-1. Ga naar **[!UICONTROL Data Elements]** en selecteert u **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als er geen bestaande gegevenselementen zijn in de eigenschap tag)
+1. Ga naar **[!UICONTROL Data Elements]** en selecteer **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als de eigenschap tag geen bestaande gegevenselementen bevat)
 
-   ![Gegevenselement maken](assets/data-element-create.png)
+   ![ creeer het Element van Gegevens ](assets/data-element-create.png)
 
-1. Geef het gegevenselement een naam `page.pageInfo.pageName`
-1. Gebruik de **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
+1. Naam van het gegevenselement `page.pageInfo.pageName`
+1. Gebruik **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
 
-1. Schakel de selectievakjes in voor **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** om het hoofdlettergebruik te standaardiseren en vreemde ruimten te verwijderen
+1. Schakel de selectievakjes voor **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** in om het hoofdlettergebruik te standaardiseren en overbodige spaties te verwijderen
 
-1. Verlaten `None` als de **[!UICONTROL Storage Duration]** instellen omdat deze waarde op elke pagina anders is
+1. Laat `None` staan als de instelling **[!UICONTROL Storage Duration]** omdat deze waarde op elke pagina anders is
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![Gegevenselement paginanaam](assets/data-element-pageName.png)
+   ![ het Element van Gegevens van de Naam van de Pagina ](assets/data-element-pageName.png)
 
 Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
-* **`page.pageInfo.server`**  toegewezen aan
+* **`page.pageInfo.server`** toegewezen aan
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**  toegewezen aan
+* **`page.pageInfo.hierarchie1`** toegewezen aan
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**  toegewezen aan
+* **`user.profile.attributes.username`** toegewezen aan
   `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** toegewezen aan
@@ -209,7 +209,7 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
     return cartItem;
     ```
     -->
-* **`product.category`** met de **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** en de volgende aangepaste code om de site-URL voor de categorie op hoofdniveau te parseren:
+* **`product.category`** door de URL van de site te parseren voor de categorie op hoofdniveau met de **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** en de volgende aangepaste code:
 
   ```javascript
   var cat = location.pathname.split(/[/.]+/);
@@ -220,7 +220,7 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
   }
   ```
 
-* **`cart.productInfo`** de volgende aangepaste code gebruiken:
+* **`cart.productInfo`** gebruiken van de volgende douanecode:
 
   ```javascript
   var cart = digitalData.cart.cartEntries; 
@@ -233,7 +233,7 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
   return cartItem; 
   ```
 
-* **`cart.productInfo.purchase`** de volgende aangepaste code gebruiken:
+* **`cart.productInfo.purchase`** gebruiken van de volgende douanecode:
 
   ```javascript
   var cart = digitalData.cart.cartEntries; 
@@ -254,36 +254,36 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
 >[!CAUTION]
 >
->De [!UICONTROL JavaScript variable] het type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zo verwijzend het element van gebruikerslijstgegevens als `digitalData.user[0].profile[0].attributes.username` **werkt niet**.
+>Het [!UICONTROL JavaScript variable] type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zodat zal het van verwijzingen voorzien van het element van gebruikersnaamelementen zoals `digitalData.user[0].profile[0].attributes.username` **niet** werken.
 
 ## Variabele-gegevenselementen maken voor XDM- en gegevensobjecten
 
-De gegevenselementen u enkel creeerde zullen worden gebruikt om een voorwerp XDM (voor de toepassingen van het Platform) en een gegevensvoorwerp (voor Analytics, Doel, en Audience Manager) te bouwen. Deze objecten hebben hun eigen speciale gegevenselementen, genaamd **[!UICONTROL Variable]** gegevenselementen die heel gemakkelijk te creëren zijn.
+De gegevenselementen u enkel creeerde zullen worden gebruikt om een voorwerp XDM (voor de toepassingen van het Platform) en een gegevensvoorwerp (voor Analytics, Doel, en Audience Manager) te bouwen. Deze objecten hebben hun eigen speciale gegevenselementen, **[!UICONTROL Variable]** gegevenselementen, die u heel gemakkelijk kunt maken.
 
-Als u het gegevenselement Variabele voor XDM wilt maken, koppelt u het aan het schema dat u in het dialoogvenster [Een schema configureren](configure-schemas.md) les:
+Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aan het schema u in [ creeerde vormt een schema ](configure-schemas.md) les:
 
 1. Selecteren **[!UICONTROL Add Data element]**
 1. Geef uw gegevenselement een naam `xdm.variable.content`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor XDM, vooraf in te delen met &quot;xdm&quot; om de eigenschap tag beter te organiseren
-1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
-1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
-1. Selecteren **[!UICONTROL XDM]** als de **[!UICONTROL property]**
-1. Selecteer de **[!UICONTROL Sandbox]** waarin u het schema creeerde
-1. Selecteer de juiste **[!UICONTROL Schema]** in dit geval `Luma Web Event Data`
+1. Selecteer **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Extension]**
+1. Selecteer **[!UICONTROL Variable]** als **[!UICONTROL Data Element Type]**
+1. Selecteer **[!UICONTROL XDM]** als de **[!UICONTROL property]**
+1. Selecteer de **[!UICONTROL Sandbox]** waarin u het schema hebt gemaakt
+1. Selecteer in dit geval de juiste **[!UICONTROL Schema]** `Luma Web Event Data` .
 1. Selecteren **[!UICONTROL Save]**
 
-   ![Variabel gegevenselement voor XDM](assets/analytics-tags-data-element-xdm-variable.png)
+   ![ Variabel gegevenselement voor XDM ](assets/analytics-tags-data-element-xdm-variable.png)
 
 Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
 
 1. Selecteren **[!UICONTROL Add Data element]**
 1. Geef uw gegevenselement een naam `data.variable`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor het gegevensobject, vooraf in te stellen op &#39;data&#39; om de eigenschap tag beter te organiseren
-1. Selecteer de **[!UICONTROL Adobe Experience Platform Web SDK]** als de **[!UICONTROL Extension]**
-1. Selecteer de **[!UICONTROL Variable]** als de **[!UICONTROL Data Element Type]**
-1. Selecteren **[!UICONTROL data]** als de **[!UICONTROL property]**
+1. Selecteer **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Extension]**
+1. Selecteer **[!UICONTROL Variable]** als **[!UICONTROL Data Element Type]**
+1. Selecteer **[!UICONTROL data]** als de **[!UICONTROL property]**
 1. Selecteer de oplossingen voor Experiencen Cloud die u wilt implementeren als onderdeel van deze zelfstudie
 1. Selecteren **[!UICONTROL Save]**
 
-   ![Variabel gegevenselement voor gegevensobject](assets/data-element-data-variable.png.png)
+   ![ Variabel gegevenselement voor gegevensvoorwerp ](assets/data-element-data-variable.png.png)
 
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
@@ -304,7 +304,7 @@ Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaa
 
 >[!TIP]
 >
->In de toekomst [Tagregels maken](create-tag-rule.md) les, leert u hoe **[!UICONTROL Variable]** met gegevenselementen kunt u meerdere regels in tags stapelen met behulp van de **[!UICONTROL Update Variable Action type]**.
+>In een toekomstige [ creeer markeringsregels ](create-tag-rule.md) les, leert u hoe de **[!UICONTROL Variable]** gegevenselementen u toestaan om veelvoudige regels in markeringen te stapelen gebruikend **[!UICONTROL Update Variable Action type]**.
 
 Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar de Edge Network van het Platform met een markeringsregel te beginnen te verzenden. Maar eerst, leer over het verzamelen van identiteiten met Web SDK.
 
@@ -312,4 +312,4 @@ Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar de Edg
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

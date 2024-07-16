@@ -1,22 +1,23 @@
 ---
 title: VEC-activiteiten renderen | Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u composer-activiteiten voor visuele beleving ophaalt en toepast met een Web SDK-implementatie van Adobe Target.
-source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
+exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
 # Adobe Target Visual Experience Composer (VEC)-activiteiten renderen
 
-De doelactiviteiten worden opstelling gebruikend of Visual Experience Composer (VEC) of op vorm-gebaseerde composer. De SDK van het Web van het Platform kan op VEC-Gebaseerde activiteiten op de pagina enkel zoals at.js terugwinnen en toepassen. Voor dit onderdeel van de migratie gaat u als volgt te werk:
+De doelactiviteiten worden opstelling gebruikend of Visual Experience Composer (VEC) of op vorm-gebaseerde composer. De het Web SDK van het Platform kan op VEC-Gebaseerde activiteiten op de pagina enkel zoals at.js terugwinnen en toepassen. Voor dit onderdeel van de migratie gaat u als volgt te werk:
 
 * De extensie van de browser Visual Editing Helper installeren
-* Een `sendEvent` vraag met het Web SDK van het Platform om activiteiten te verzoeken.
-* Werk om het even welke verwijzingen van uw at.js implementatie bij die gebruiken `getOffers()` om een Doel uit te voeren `pageLoad` verzoek.
+* Voer een `sendEvent` vraag met het Web SDK van het Platform uit om activiteiten te verzoeken.
+* Werk alle verwijzingen van uw at.js-implementatie bij die `getOffers()` gebruiken om een Target `pageLoad` -aanvraag uit te voeren.
 
-## Visuele bewerkingsfunctie voor de browserextensie van Helper
+## Visuele bewerkingshulpprogramma voor browsers
 
 Met de Adobe Experience Cloud Visual Editing Helper-browserextensie voor Google Chrome kunt u websites betrouwbaar laden binnen de Adobe Target Visual Experience Composer (VEC) voor een snelle auteur en QA-webbeleving.
 
@@ -24,28 +25,28 @@ De visuele het Uitgeven browser van Helper uitbreiding werkt met websites die at
 
 ### Vraag de Visual Editing Helper aan en installeer deze
 
-1. Ga naar de [Adobe Experience Cloud Visual Editing Helper-browserextensie in de Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. Klik op Toevoegen aan **Chroom** > **Extensie toevoegen**.
+1. Navigeer aan [ Adobe Experience Cloud Visuele het Uitgeven Helper browser uitbreiding in de Opslag van het Web van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+1. Klik toevoegen aan **Chrome** > **Uitbreiding** toevoegen.
 1. Open VEC in Doel.
-1. Als u de extensie wilt gebruiken, klikt u op het pictogram voor de extensie van de browser van de visuele bewerkingshulp ![Pictogram Visuele bewerkingsextensie](assets/VEC-Helper.png){zoomable=&quot;yes&quot;} op de werkbalk van de Chrome-browser in de modus VEC of QA.
+1. Om de uitbreiding te gebruiken, klik het Visuele het Uitgeven de browser van de Helper browser van de Helper pictogram ![ Visuele het Uitgeven van het pictogram van de Uitbreiding ](assets/VEC-Helper.png){zoomable="yes"} in uw browser van Chrome terwijl op de Wijze VEC of QA.
 
 De visuele het Uitgeven Helper wordt automatisch toegelaten wanneer een website in het Doel VEC aan macht authoring wordt geopend. De extensie heeft geen voorwaardelijke instellingen. De extensie verwerkt automatisch alle instellingen, inclusief de instellingen voor SameSite-cookies.
 
-Raadpleeg de speciale documentatie voor meer informatie over de [De extensie Visuele bewerkingshulp](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) en [het oplossen van problemen de Visuele Composer van de Ervaring](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+Verwijs naar de specifieke documentatie voor meer informatie over de [ Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) en [ het oplossen van problemen de Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 >[!IMPORTANT]
 >
->De nieuwe [De extensie Visuele bewerkingshulp](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) vervangt het vorige [Doel VEC Helper-browserextensie](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
+>De nieuwe [ Visuele het Uitgeven uitbreiding van de Helper ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) vervangt de vorige [ de Browser van de Helper van het Doel VEC uitbreiding ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
 
 ## Inhoud automatisch aanvragen en toepassen
 
 Nadat SDK van het Web van het Platform op de pagina wordt gevormd, kunt u inhoud van Doel verzoeken. In tegenstelling tot at.js die kan worden gevormd om inhoud automatisch te verzoeken wanneer de bibliotheek laadt, vereist het Web SDK van het Platform u uitdrukkelijk om een bevel uit te voeren.
 
-Als uw at.js-implementatie de `pageLoadEnabled` instellen op `true` die automatische teruggave van op VEC-Gebaseerde activiteiten toelaat, dan zou u het volgende uitvoeren `sendEvent` bevel met het Web SDK van het Platform:
+Als voor uw at.js-implementatie de `pageLoadEnabled` -instelling is ingesteld op `true` , die automatische rendering van VEC-gebaseerde activiteiten mogelijk maakt, voert u de volgende `sendEvent` -opdracht uit met de Platform Web SDK:
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 ```Javascript
 alloy("sendEvent", {
@@ -53,11 +54,11 @@ alloy("sendEvent", {
 });
 ```
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
-Gebruik in de labels de [!UICONTROL Gebeurtenis Send] actietype met de [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerde optie:
+Gebruik in tags het actietype [!UICONTROL Send event] met de optie [!UICONTROL Render visual personalization decisions] geselecteerd:
 
-![Verzend een gebeurtenis met Render visuele verpersoonlijkingsbesluiten die in markeringen worden geselecteerd](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![ verzend een gebeurtenis met Render visuele verpersoonlijkingsbesluiten die in markeringen ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"} worden geselecteerd
 
 >[!ENDTABS]
 
@@ -69,9 +70,9 @@ When the Platform Web SDK renders an activity to the page with `renderDecisions`
 
 ## Inhoud aanvragen en op aanvraag toepassen
 
-Sommige implementaties van het Doel vereisen één of andere douaneverwerking van aanbiedingen VEC alvorens hen op de pagina toe te passen. Of, vragen zij veelvoudige plaatsen in één enkele vraag. In een at.js-implementatie kunt u dit doen door `pageLoadEnabled` tot `false` en het gebruik van de `getOffers()` functie om een `pageLoad` verzoek.
+Sommige implementaties van het Doel vereisen één of andere douaneverwerking van aanbiedingen VEC alvorens hen op de pagina toe te passen. Of, vragen zij veelvoudige plaatsen in één enkele vraag. In een at.js-implementatie kunt u dit doen door `pageLoadEnabled` in te stellen op `false` en de `getOffers()` functie te gebruiken om een `pageLoad` request uit te voeren.
 
-+++ at.js, voorbeeld met `getOffers()` en `applyOffers()` om VEC-gebaseerde activiteiten handmatig uit te voeren
++++ at.js-voorbeeld met `getOffers()` en `applyOffers()` om VEC-gebaseerde activiteiten handmatig te renderen
 
 ```JavaScript
 adobe.target.getOffers({
@@ -86,13 +87,13 @@ then(response => adobe.target.applyOffers({ response: response }));
 
 +++
 
-De SDK van het Web Platform heeft geen specifieke `pageLoad` gebeurtenis. Alle aanvragen voor doelinhoud worden beheerd met de `decisionScopes` met de `sendEvent` gebruiken. De `__view__` het toepassingsgebied dient het doel van `pageLoad` verzoek.
+De Platform Web SDK heeft geen specifieke `pageLoad` -gebeurtenis. Alle aanvragen voor doelinhoud worden beheerd met de optie `decisionScopes` met de opdracht `sendEvent` . Het `__view__` bereik dient voor het doel van de `pageLoad` aanvraag.
 
-+++ Een equivalente Platform Web SDK `sendEvent` aanpak:
++++ Een equivalente Web SDK van het Platform `sendEvent` benadering:
 
-1. Een `sendEvent` bevat de opdracht `__view__` beslissingsbereik
-1. De geretourneerde inhoud met de opdracht `applyPropositions` command
-1. Een `sendEvent` gebruiken met de `decisioning.propositionDisplay` gebeurtenistype en propositiegegevens om een indruk te vergroten
+1. Een opdracht `sendEvent` uitvoeren die het `__view__` beslissingsbereik bevat
+1. De geretourneerde inhoud met de opdracht `applyPropositions` toepassen op de pagina
+1. Een opdracht `sendEvent` uitvoeren met het gebeurtenistype en de propositiegegevens van `decisioning.propositionDisplay` om de indruk te vergroten
 
 ```Javascript
 alloy("sendEvent", {
@@ -127,17 +128,17 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Het is mogelijk [wijzigingen handmatig renderen](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) gemaakt in Visual Experience Composer. Handmatige rendering van op VEC gebaseerde wijzigingen komt niet vaak voor. Controleren of de implementatie van uw at.js gebruikmaakt van de `getOffers()` functie om een Doel manueel uit te voeren `pageLoad` aanvraag zonder gebruik te maken van `applyOffers()` om de inhoud toe te passen op de pagina.
+>Het is mogelijk om [ manueel wijzigingen ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) terug te geven die in de Visuele Composer van de Ervaring worden gemaakt. Handmatige rendering van op VEC gebaseerde wijzigingen komt niet vaak voor. Controleer of uw at.js-implementatie de functie `getOffers()` gebruikt om handmatig een Target `pageLoad` -aanvraag uit te voeren zonder `applyOffers()` te gebruiken om de inhoud op de pagina toe te passen.
 
-De SDK van het Web van de Platform biedt ontwikkelaars een grote flexibiliteit met het vragen van en het teruggeven van inhoud aan. Zie de [speciale documentatie over het renderen van gepersonaliseerde inhoud](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) voor aanvullende opties en details.
+De SDK van het Web van het Platform biedt ontwikkelaars heel wat flexibiliteit met het vragen van en het teruggeven van inhoud aan. Verwijs naar de [ specifieke documentatie over het teruggeven van gepersonaliseerde inhoud ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) voor extra opties en details.
 
 ## Voorbeeld van implementatie
 
-De basisimplementatie van SDK van het Web SDK van het Platform is nu volledig.
+De basisimplementatie van Web SDK van het Platform is nu voltooid.
 
 >[!BEGINTABS]
 
->[!TAB JavaScript]
+>[!TAB  JavaScript ]
 
 JavaScript-voorbeeld met automatische rendering van Target-inhoud:
 
@@ -202,7 +203,7 @@ JavaScript-voorbeeld met automatische rendering van Target-inhoud:
 ```
 
 
->[!TAB Tags]
+>[!TAB  Markeringen ]
 
 Hiermee wordt de voorbeeldpagina gecodeerd met de automatische rendering van Target-inhoud:
 
@@ -248,18 +249,18 @@ Hiermee wordt de voorbeeldpagina gecodeerd met de automatische rendering van Tar
 
 Voeg de extensie Adobe Experience Platform Web SDK toe aan tags:
 
-![De extensie Adobe Experience Platform Web SDK toevoegen](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+![ voeg de uitbreiding van SDK van het Web van Adobe Experience Platform ](assets/library-tags-addExtension.png){zoomable="yes"} toe
 
 Voeg de gewenste configuraties toe:
-![migratieopties voor de Web SDK-tagextensie configureren](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+![ vormend de de migratieopties van de de marktextensie van SDK van het Web ](assets/tags-config-migration.png){zoomable="yes"}
 
-Een regel maken met een [!UICONTROL Gebeurtenis Send] actie en [!UICONTROL Besluiten over visuele personalisatie renderen] geselecteerd:
-![Een gebeurtenis verzenden waarvoor Aanpassingen renderen is geselecteerd in tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+Maak een regel met een [!UICONTROL Send event] -handeling en [!UICONTROL Render visual personalization decisions] geselecteerd:
+![ verzend een gebeurtenis met Render Personalizations die in markeringen worden geselecteerd ](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-Leer nu hoe u kunt aanvragen en [formuliergebaseerde doelactiviteiten weergeven](render-form-based-activities.md).
+Daarna, leer hoe te om te verzoeken en [ vorm-gebaseerde activiteiten van het Doel ](render-form-based-activities.md) teruggeven.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u problemen ondervindt met uw migratie of als u denkt dat er essentiële informatie ontbreekt in deze handleiding, kunt u het ons laten weten door te posten in [deze communautaire discussie](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

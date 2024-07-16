@@ -8,14 +8,14 @@ thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
 
 # Een extensie voor het doorsturen van gebeurtenissen toevoegen
 
-Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Ga voor meer informatie naar de [documentatie voor het doorsturen van gebeurtenissen](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) door:sturen.
 
 >[!NOTE]
 >

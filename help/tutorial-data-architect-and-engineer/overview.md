@@ -19,22 +19,22 @@ ht-degree: 0%
 
 <!--5min-->
 
-_Aan de slag met Adobe Experience Platform voor Data Architects en Data Engineers_ is het perfecte startpunt om handen en Experience Platform te krijgen.
+_Begonnen het Worden met Adobe Experience Platform voor de Architecten van Gegevens en de Ingenieurs van Gegevens_ is het perfecte uitgangspunt om hands-on met Experience Platform te krijgen.
 
 
 <!--How do we address ETL-->
 
 ## Leerdoelen
 
-De Architecten van gegevens en de Ingenieurs van Gegevens moeten nauw samenwerken voor een succesvolle plaatsing van het Experience Platform. Deze praktische zelfstudie leert u welke belangrijke taken worden uitgevoerd door _beide rollen_ Zo weet u hoe u begint Platform voor uw eigen zaken uit te voeren. U zult door oefeningen worden geleid die u aan de belangrijkste terminologie, eigenschappen, interface, en APIs van Experience Platform zullen introduceren. Klanten van Adobe Experience Cloud-toepassingen zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer zullen deze inhoud ook nuttig vinden, omdat de platformservices essentiële fundamenten van deze toepassingen vormen.
+De Architecten van gegevens en de Ingenieurs van Gegevens moeten nauw samenwerken voor een succesvolle plaatsing van het Experience Platform. Dit hands-on leerprogramma leert u de belangrijkste taken die door _worden uitgevoerd beide rollen_ zodat weet u hoe te beginnen Platform voor uw eigen zaken uit te voeren. U zult door oefeningen worden geleid die u aan de belangrijkste terminologie, eigenschappen, interface, en APIs van Experience Platform zullen introduceren. Klanten van Adobe Experience Cloud-toepassingen zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer zullen deze inhoud ook nuttig vinden, omdat de platformservices essentiële fundamenten van deze toepassingen vormen.
 
-![Adobe Experience Cloud Marketecture die de platformservices markeert die in deze zelfstudie worden behandeld: Identiteit, Profiel, Segmentatie, Ingestie, Query en Beheer](assets/marketecture.png)
+![ de marktectuur die van Adobe Experience Cloud de diensten van het Platform benadrukt in dit leerprogramma-identiteit, Profiel, Segmentatie, Opname, Vraag, en Governance ](assets/marketecture.png) worden behandeld
 
 Onderwerpen zijn onder meer:
 
 * Gebruikersmachtigingen configureren
 * Sandboxen maken
-* Een project voor de ontwikkelconsole instellen en de platform-API gebruiken
+* Een Developer Console-project instellen en de platform-API gebruiken
 * Gegevensbeheer—inclusief het maken van schema&#39;s, gegevenssets, identiteiten, samenvoegbeleid en gegevensbeheer
 * Gegevensinvoer met batch- en streaming-modi
 * Webgegevens vastleggen met Adobe Experience Platform Web SDK
@@ -48,9 +48,9 @@ Adobe Experience Platform is een technisch platform dat u helpt marketingdoelste
 
 ## Voorwaarden
 
-* U hebt de [Inleiding tot Adobe Experience Platform-cursus](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) op Experience League en vertrouwd met de mogelijkheden van het Platform
+* U hebt de [ Inleiding aan de cursus van Adobe Experience Platform ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) op Experience League voltooid en bent vertrouwd met de mogelijkheden van het Platform
 * U hebt toegang tot een account die is ingericht voor Adobe Experience Platform (of een op een platform gebaseerde toepassing zoals Real-Time CDP of Journey Optimizer) en gegevensverzameling (voorheen Starten).
-* U bent systeembeheerder van dat account of u kunt een account hebben [gebruikersmachtigingen configureren](configure-permissions.md) voor jou.
+* U bent een Beheerder van het Systeem van die rekening of kan één [ hebben gebruikerstoestemmingen ](configure-permissions.md) voor u vormen.
 
 ## Deze zelfstudie gebruiken
 
@@ -58,7 +58,7 @@ Deze zelfstudie combineert taken voor zowel gegevensengineers als gegevensarchit
 
 Terwijl u tijdens deze zelfstudie verschillende platformelementen maakt, kunt u proberen om de namen die ik aanbeveel zoveel mogelijk te gebruiken. Nochtans, zijn er een paar high-level elementennamen die u kunt willen aanpassen voor het geval dat er veelvoudige mensen bij uw organisatie zijn die deze zelfstudie gelijktijdig nemen. U kunt bijvoorbeeld de sandbox Platform de naam geven van &#39;&#39;Luma Tutorial Platform - Ignatius J Reilly&#39;&#39; in plaats van alleen &#39;&#39;Luma Tutorial Platform&#39;&#39;.
 
-Als u vastzit, probeert u eerst de instructies opnieuw te lezen en gebruikt u vervolgens de ![Een probleem aanmelden](https://experienceleague.adobe.com/assets/img/feedback.svg) link op de zijbalk van elke pagina om contact met me op te nemen.
+Als u geplakt wordt, probeer eerst de instructies opnieuw te lezen, en dan het ![ Logboek en de kwestie ](https://experienceleague.adobe.com/assets/img/feedback.svg) verbinding op sidebar van elke pagina te gebruiken om me te contacteren.
 
 ## Technische noten
 
@@ -68,7 +68,7 @@ In de zelfstudie maakt u een sandboxomgeving en gebruikt u deze om de oefeningen
 
 ### API
 
-Platform is in eerste instantie een API. Hoewel de interfacewerkschema&#39;s voor alle belangrijke werkschema&#39;s van het Platform bestaan en hoofdzakelijk zullen worden gebruikt, bevat het leerprogramma sommige API-georiënteerde oefeningen. Ik zal u door de basisprojectopstelling in de Console van Adobe Developer begeleiden en u voorzien van [!DNL Postman] omgevingen en verzamelingen om aan de slag te gaan met de platform-API. Nadat u de zelfstudie hebt voltooid, vindt u het misschien handig om bekend te zijn met de platform-API en deze te gebruiken in uw eigen implementatie.
+Platform is in eerste instantie een API. Hoewel de interfacewerkschema&#39;s voor alle belangrijke werkschema&#39;s van het Platform bestaan en hoofdzakelijk zullen worden gebruikt, bevat het leerprogramma sommige API-georiënteerde oefeningen. Ik zal u door de basisprojectopstelling in Adobe Developer Console begeleiden en u van [!DNL Postman] milieu&#39;s en inzamelingen voorzien om met Platform API te beginnen. Nadat u de zelfstudie hebt voltooid, vindt u het misschien handig om bekend te zijn met de platform-API en deze te gebruiken in uw eigen implementatie.
 
 ### Technologieën van derden
 
@@ -79,4 +79,4 @@ Hoewel u in deze zelfstudie meerdere technologieën gebruikt, blijft u vrijwel v
 * Juni 2023: Bijgewerkt om nieuw werkschema van de Toestemming te omvatten en de referentie van Server-aan-Server API van OAuth te gebruiken
 
 
-Nu de eerste les:[machtigingen configureren](configure-permissions.md).
+Nu beweging op de eerste les - [ vormt toestemmingen ](configure-permissions.md).

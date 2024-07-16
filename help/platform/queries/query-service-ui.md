@@ -9,13 +9,13 @@ thumbnail: 333403.jpg
 exl-id: 63de8b83-5da2-4f24-a47d-70c14bdfe437
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 7%
+source-wordcount: '72'
+ht-degree: 1%
 
 ---
 
 # Gebruikersinterface Query Service
 
-Leer hoe u query&#39;s schrijft en uitvoert, eerder uitgevoerde query&#39;s bekijkt en query&#39;s opent die zijn opgeslagen door andere gebruikers binnen uw IMS-organisatie in Adobe Experience Platform Query Service. Ga voor meer informatie naar de [Documentatie bij Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
+Leer hoe u query&#39;s schrijft en uitvoert, eerder uitgevoerde query&#39;s bekijkt en query&#39;s opent die zijn opgeslagen door andere gebruikers binnen uw IMS-organisatie in Adobe Experience Platform Query Service. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333403?learn=on)

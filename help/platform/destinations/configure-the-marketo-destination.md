@@ -12,14 +12,14 @@ thumbnail: 338248.jpg
 exl-id: 7e7e2647-0eb8-4f37-8a91-a506c9c2abb9
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '64'
 ht-degree: 1%
 
 ---
 
 # De Marketo-bestemming configureren
 
-Leer hoe u de Marketo-bestemming in Adobe Experience Platform configureert, zodat u uw platformsegmenten kunt activeren voor uw Marketo Engage-exemplaar. Zie voor meer informatie de [Documentatie voor profielen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Leer hoe u de Marketo-bestemming in Adobe Experience Platform configureert, zodat u uw platformsegmenten kunt activeren voor uw Marketo Engage-exemplaar. Voor meer informatie, te zien gelieve de [ documentatie van Profielen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on)
 

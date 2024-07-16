@@ -13,7 +13,7 @@ thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
 source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -28,14 +28,14 @@ Met Adobe Experience Platform kunt u gegevens uit meerdere bronnen samenbrengen 
 
 We blijven bij de gebruikersinterface voor deze les, maar API-opties bestaan ook voor het maken van samenvoegbeleid.
 
-**Gegevensarchitecten** moet een samenvoegbeleid maken buiten deze zelfstudie.
+**Architecten van Gegevens** zullen fusiebeleid buiten dit leerprogramma moeten tot stand brengen.
 
 Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informatie over het samenvoegbeleid:
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Vereiste machtigingen
 
-In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 <!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
@@ -45,19 +45,19 @@ In de [Machtigingen configureren](configure-permissions.md) les, plaatst u opste
 
 ## Over het samenvoegingsbeleid en Unieschema
 
-U kunt zich herinneren, in de les over partijopname, uploadden wij twee verslagen met lichtjes verschillende informatie voor de zelfde klant. In de [!DNL Loyalty] gegevens, de voornaam van de klant was `Daniel` en hij leefde in `New York City`, maar in de CRM-gegevens was de voornaam van de klant `Danny` en hij leefde in `Portland`. Wijzigingen in klantgegevens in de loop der tijd. Misschien is hij van `Portland` tot `New York City`. Ook andere dingen veranderen, zoals telefoonnummers en e-mailadressen. Met samenvoegingsbeleid kunt u bepalen hoe deze soorten conflicten moeten worden afgehandeld wanneer twee gegevensbronnen verschillende informatie voor dezelfde gebruiker geven.
+U kunt zich herinneren, in de les over partijopname, uploadden wij twee verslagen met lichtjes verschillende informatie voor de zelfde klant. In de [!DNL Loyalty] -gegevens was de voornaam van de klant `Daniel` en woonde hij in `New York City` , maar in de CRM-gegevens was de voornaam van de klant `Danny` en woonde hij in `Portland` . Wijzigingen in klantgegevens in de loop der tijd. Misschien is hij van `Portland` naar `New York City` gegaan. Ook andere dingen veranderen, zoals telefoonnummers en e-mailadressen. Met samenvoegingsbeleid kunt u bepalen hoe deze soorten conflicten moeten worden afgehandeld wanneer twee gegevensbronnen verschillende informatie voor dezelfde gebruiker geven.
 
-Waarom? `Danny` win out as the first name ? Laten we eens kijken:
+Dus waarom heeft `Danny` gewonnen als voornaam? Laten we eens kijken:
 
-1. Selecteer in de gebruikersinterface van het platform de optie **[!UICONTROL Profielen]** in de linkernavigatie
-1. Ga naar de **[!UICONTROL Beleid samenvoegen]** tab
-1. Het standaardbeleid voor samenvoegen is een geordende tijdstempel. Omdat u de CRM-gegevens na de Loyalty-gegevens hebt geüpload, `Danny` wordt weergegeven als voornaam in het profiel:
+1. Selecteer in de gebruikersinterface van Platform de optie **[!UICONTROL Profiles]** in de linkernavigatie
+1. Ga naar de tab **[!UICONTROL Merge Polices]**
+1. Het standaardbeleid voor samenvoegen is een geordende tijdstempel. Omdat u de CRM-gegevens na de Loyalty-gegevens hebt geüpload, wordt `Danny` als voornaam in het profiel weergegeven:
 
-![Scherm Beleid samenvoegen](assets/mergepolicies-default.png)
+![ het scherm van het Beleid van de Fusie ](assets/mergepolicies-default.png)
 
-Wanneer meerdere schema&#39;s zijn ingeschakeld voor het profiel, wordt een [!UICONTROL Unieschema] wordt automatisch gemaakt voor alle voor profielen ingeschakelde recordschema&#39;s die een basisklasse delen. U kunt de [!UICONTROL Unieregelingen] door naar de **[!UICONTROL Unieschema]** tab.
+Wanneer meerdere schema&#39;s zijn ingeschakeld voor een profiel, wordt automatisch een [!UICONTROL Union Schema] gemaakt voor alle voor profielen ingeschakelde, recordschema&#39;s die een basisklasse delen. U kunt de [!UICONTROL Union Schemas] weergeven door naar de tab **[!UICONTROL Union Schema]** te gaan.
 
-![Scherm Beleid samenvoegen](assets/mergepolicies-unionSchema.png)
+![ het scherm van het Beleid van de Fusie ](assets/mergepolicies-unionSchema.png)
 
 Merk op dat er geen verenigingsschema voor de klasse ExperienceEvent is. ExperienceEvent-gegevens blijven in het profiel staan, omdat het tijdreeksen zijn, elke gebeurtenis een tijdstempel en id bevat en botsingen geen probleem zijn.
 
@@ -65,82 +65,82 @@ Wat gebeurt er als dat standaardsamenvoegbeleid u niet bevalt? Wat als Luma besl
 
 ## Een samenvoegbeleid maken in de gebruikersinterface
 
-1. Selecteer in het scherm Beleid samenvoegen de optie **[!UICONTROL Samenvoegbeleid maken]** knop rechtsboven
-1. Als de **[!UICONTROL Naam]**, enter `Loyalty Prioritized`
-1. Als de **[!UICONTROL Schema]**, selecteert u **[!UICONTROL XDM-profiel]** (aangezien de aangepaste klasse recordgegevens bevat, is de aangepaste klasse ook beschikbaar voor samenvoegbeleidsregels)
-1. Voor **[!UICONTROL Id-instelling]**, selecteert u **[!UICONTROL Privégrafiek]**
-1. Voor **[!UICONTROL Kenmerksamenvoeging]**, selecteert u **[!UICONTROL Dataset-prioriteit]**
-1. Slepen en neerzetten `Luma Loyalty Dataset` en `Luma CRM Dataset` aan de **[!UICONTROL Gegevensset]** deelvenster.
-1. Controleer of `Luma Loyalty Dataset` is bovenaan door te slepen en boven de `Luma CRM Dataset`
-1. Selecteer de **[!UICONTROL Opslaan]** knop
+1. Selecteer in het scherm Beleid samenvoegen de knop **[!UICONTROL Create Merge Policy]** rechtsboven
+1. Als **[!UICONTROL Name]** voert u `Loyalty Prioritized` in
+1. Als **[!UICONTROL Schema]**, uitgezochte **[!UICONTROL XDM Profile]** (merk op dat uw douaneklasse—aangezien het recordgegevens is—voor samenvoegbeleid, ook beschikbaar is)
+1. Selecteer **[!UICONTROL Private Graph]** bij **[!UICONTROL Id Stitching]**
+1. Selecteer **[!UICONTROL Dataset precedence]** bij **[!UICONTROL Attribute Merge]**
+1. Sleep `Luma Loyalty Dataset` en `Luma CRM Dataset` naar het deelvenster **[!UICONTROL Dataset]** .
+1. Zorg ervoor dat `Luma Loyalty Dataset` bovenaan staat door te slepen en neer te zetten boven `Luma CRM Dataset`
+1. Selecteer de knop **[!UICONTROL Save]**
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![Beleid samenvoegen](assets/mergepolicies-newPolicy.png)
+   ![ Beleid van de Fusie ](assets/mergepolicies-newPolicy.png)
 
 ## Het samenvoegingsbeleid valideren
 
 Laten we eens kijken of het fusiebeleid doet wat we zouden verwachten:
 
-1. Ga naar de **[!UICONTROL Bladeren]** tab
-1. Wijzig de **[!UICONTROL Samenvoegbeleid]** aan uw nieuwe `Loyalty Prioritized` beleid
-1. Als de **[!UICONTROL Naamruimte identiteit]**, gebruik uw `Luma CRM Id`
-1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `112ca06ed53d3db37e4cea49cc45b71e`
-1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
+1. Ga naar de tab **[!UICONTROL Browse]**
+1. Wijzig de **[!UICONTROL Merge policy]** in uw nieuwe `Loyalty Prioritized` -beleid
+1. Als **[!UICONTROL Identity namespace]** gebruikt u uw `Luma CRM Id`
+1. Als **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Selecteer de knop **[!UICONTROL Show profile]**
 1. `Daniel` is terug!
 
-![Een profiel weergeven met een ander samenvoegbeleid](assets/mergepolicies-lookupProfileWithMergePolicy.png)
+![ het Bekijken van een profiel met een verschillend samenvoegbeleid ](assets/mergepolicies-lookupProfileWithMergePolicy.png)
 
 ## Een samenvoegbeleid met beperkte gegevenssets maken
 
 Wanneer het creëren van beleid van de Fusie gebruikend datasetbelangrijkheid, slechts zijn de datasets van de zelfde basisklasse die u in het recht omvat inbegrepen in het profiel. Laten we een ander samenvoegingsbeleid instellen
 
-1. Selecteer in het scherm Beleid samenvoegen de optie **[!UICONTROL Samenvoegbeleid maken]** knop rechtsboven
-1. Als de **[!UICONTROL Naam]**, enter  `Loyalty Only`
-1. Als de **[!UICONTROL Schema]**, selecteert u **[!UICONTROL XDM-profiel]**
-1. Voor **[!UICONTROL Id-instelling]**, selecteert u **[!UICONTROL Geen]**
-1. Voor **[!UICONTROL Kenmerksamenvoeging]**, selecteert u **[!UICONTROL Dataset-prioriteit]**
-1. Sleep alleen de `Luma Loyalty Dataset` tot **[!UICONTROL Geselecteerde gegevensset]** deelvenster.
-1. Selecteer de **[!UICONTROL Opslaan]** knop
+1. Selecteer in het scherm Beleid samenvoegen de knop **[!UICONTROL Create Merge Policy]** rechtsboven
+1. Als **[!UICONTROL Name]** voert u `Loyalty Only` in
+1. Als **[!UICONTROL Schema]** selecteert u **[!UICONTROL XDM Profile]**
+1. Selecteer **[!UICONTROL None]** bij **[!UICONTROL Id Stitching]**
+1. Selecteer **[!UICONTROL Dataset precedence]** bij **[!UICONTROL Attribute Merge]**
+1. Sleep alleen de `Luma Loyalty Dataset` naar het deelvenster **[!UICONTROL Selected Dataset]** .
+1. Selecteer de knop **[!UICONTROL Save]**
 
-![Beleid voor alleen-geldigheids samenvoegen](assets/mergepolicies-loyaltyOnly.png)
+![ het Beleid van de Fusie van de Loyalty slechts ](assets/mergepolicies-loyaltyOnly.png)
 
 ## Het samenvoegingsbeleid valideren
 
 Laten we nu eens kijken wat dit samenvoegbeleid doet:
 
-1. Ga naar de **[!UICONTROL Bladeren]** tab
-1. Wijzig de **[!UICONTROL Samenvoegbeleid]** aan uw nieuwe `Loyalty Only` beleid
-1. Als de **[!UICONTROL Naamruimte identiteit]**, gebruik uw `Luma CRM Id`
-1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `112ca06ed53d3db37e4cea49cc45b71e`
-1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
+1. Ga naar de tab **[!UICONTROL Browse]**
+1. Wijzig de **[!UICONTROL Merge policy]** in uw nieuwe `Loyalty Only` -beleid
+1. Als **[!UICONTROL Identity namespace]** gebruikt u uw `Luma CRM Id`
+1. Als **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Selecteer de knop **[!UICONTROL Show profile]**
 1. Bevestig dat er geen profielen zijn gevonden:
-   ![Alleen Loyalty is geen CRM-id opzoekbewerking.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
+   ![ Loyalty slechts geen raadpleging van identiteitskaart van CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
 
-CRM-id is een identiteitsveld in het dialoogvenster `Luma Loyalty Dataset`, maar alleen primaire identiteiten kunnen worden gebruikt om profielen op te zoeken. Laten we dus het profiel opzoeken met de primaire identiteit. `Luma Loyalty Id`&quot;
+CRM-id is een identiteitsveld in de `Luma Loyalty Dataset` , maar alleen primaire identiteiten kunnen worden gebruikt om profielen op te zoeken. Laten we dus het profiel opzoeken met de primaire identiteit, `Luma Loyalty Id`&quot;
 
-1. Wijzig de **[!UICONTROL Naamruimte van identiteit]** tot `Luma Loyalty Id`
-1. Als de **[!UICONTROL Identiteitswaarde]** gebruiken `5625458`
-1. Selecteer de **[!UICONTROL Profiel weergeven]** knop
+1. De **[!UICONTROL Identity Namespace]** wijzigen in `Luma Loyalty Id`
+1. Als **[!UICONTROL Identity value]** use `5625458`
+1. Selecteer de knop **[!UICONTROL Show profile]**
 1. Selecteer profiel-id om het profiel te openen
-1. Ga naar de **[!UICONTROL Attributen]** tab
+1. Ga naar de tab **[!UICONTROL Attributes]**
 1. Andere profieldetails van de dataset van CRM, zoals het mobiele telefoonaantal en e-mailadres niet beschikbaar zijn omdat wij slechts
-   ![CRM-gegevens kunnen niet worden weergegeven in het alleen-geldigheidbeleid](assets/mergepolicies-loyaltyOnly-attributes.png)
-1. Ga naar de **[!UICONTROL Gebeurtenissen]** tab
+   ![ gegevens van CRM is niet viewable in het slechts beleid van de Loyalty ](assets/mergepolicies-loyaltyOnly-attributes.png)
+1. Ga naar de tab **[!UICONTROL Events]**
 1. De gegevens van ExperienceEvent zijn beschikbaar ondanks niet uitdrukkelijk het opnemen in de datasets van het fusiebeleid:
-   ![Gebeurtenissen kunnen worden weergegeven in het beleid Alleen logo](assets/mergepolicies-loyaltyOnly-events.png)
+   ![ de Gebeurtenissen zijn viewable in het slechts beleid van de Loyalty ](assets/mergepolicies-loyaltyOnly-events.png)
 
 ## Meer informatie over samenvoegingsbeleid
 
-Wijzig in de profielzoekopdracht het samenvoegbeleid waarnaar u teruggaat `Default Timebased` en selecteert u de **[!UICONTROL Profiel weergeven]** knop. Danny is terug!
+Wijzig in de profielzoekopdracht het samenvoegbeleid terug naar `Default Timebased` en selecteer de knop **[!UICONTROL Show profile]** . Danny is terug!
 
-![Een profiel weergeven met een ander samenvoegbeleid](assets/mergepolicies-backToDanny.png)
+![ het Bekijken van een profiel met een verschillend samenvoegbeleid ](assets/mergepolicies-backToDanny.png)
 
 Wat is hier aan de hand? Welnu, het samenvoegen van profielen is niet één keer. De de klantenprofielen van de in real time worden verzameld op de vlucht, die op diverse factoren wordt gebaseerd, met inbegrip van welk fusieprincipe wordt gebruikt. U kunt meerdere samenvoegbeleidsregels maken om in verschillende contexten te gebruiken, afhankelijk van de weergave van de klant die u wilt gebruiken.
 
-Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Stel bijvoorbeeld dat u gegevens van derden in Platform opgeeft die niet kunnen worden gebruikt voor gevallen waarin persoonlijke instellingen worden gebruikt, maar _kan_ worden gebruikt voor reclamedoeleinden. U kunt een fusiebeleid tot stand brengen dat deze derde dataset sluit en dit fusiebeleid gebruiken om segmenten voor uw het advertentiegebruikgevallen te bouwen.
+Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Bijvoorbeeld, zeg u derdegegevens in Platform opneemt die niet voor verpersoonlijkingsgebruiksgevallen kunnen worden gebruikt, maar _kan_ voor het adverteren van gebruiksgevallen worden gebruikt. U kunt een fusiebeleid tot stand brengen dat deze derde dataset sluit en dit fusiebeleid gebruiken om segmenten voor uw het advertentiegebruikgevallen te bouwen.
 
 ## Aanvullende bronnen
 
-* [Documentatie voor samenvoegingsbeleid](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [API voor samenvoegingsbeleid (onderdeel van Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [ documentatie van het Beleid van de Fusie ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [ het Beleid van de Fusie API (deel van Realtime API van het Profiel van de Klant) verwijzing ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
-Laten we nu verder gaan naar de [gegevensbeheerkader](apply-data-governance-framework.md).
+Nu gaan op het [ kader van het gegevensbeheer ](apply-data-governance-framework.md).

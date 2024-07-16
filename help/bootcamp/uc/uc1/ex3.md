@@ -20,61 +20,61 @@ In deze oefening, zult u een publiek creëren door gebruik van de Bouwer van het
 
 ## Artikel
 
-Ga naar [Adobe Experience Platform](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![Gegevensinname](./images/home.png)
+![ Ingestie van Gegevens ](./images/home.png)
 
-Voordat u verdergaat, moet u een **sandbox**. De sandbox die moet worden geselecteerd, krijgt een naam ``Bootcamp``. U kunt dit doen door op de tekst te klikken **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm. Nadat u de juiste [!UICONTROL sandbox], ziet u de schermwijziging en nu bent u in uw eigen omgeving [!UICONTROL sandbox].
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``Bootcamp`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![Gegevensinname](./images/sb1.png)
+![ Ingestie van Gegevens ](./images/sb1.png)
 
-Ga in het menu aan de linkerkant naar **Soorten publiek**. Op deze pagina ziet u dashboards met essentiële informatie over **Publiek** prestaties.
+In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina, zult u dashboards met essentiële informatie over **publiek** prestaties zien.
 
-![Segmentering](./images/menuseg.png)
+![Segmentatie](./images/menuseg.png)
 
-Klikken op **Bladeren** een overzicht van alle bestaande doelgroepen te zien. Klik op de knop **+ Personeel maken** om een nieuw publiek te maken.
+Klik op **doorbladeren** om een overzicht van alle bestaande soorten publiek te zien. Klik op **+ creeer publiek** knoop om een nieuw publiek te beginnen creëren.
 
 
-![Segmentering](./images/segmentationui.png)
+![Segmentatie](./images/segmentationui.png)
 
-Er wordt een pop-uppictogram weergegeven met de vraag of u **&#39;Doelgroep samenstellen&#39;** of **&#39;Build rule&#39;**. Kies **&#39;Build rule&#39;** om door te gaan en te klikken **maken**.
+Pop-IP zal verschijnen dat u zal vragen of u **&quot;publiek&quot;wilt samenstellen** of **&quot;regel van de Bouwstijl&quot;**. Kies **&quot;bouwt regel&quot;** om verder te gaan en **te klikken creeert**.
 
-![Segmentering][def]
+![Segmentatie][def]
 
-Zodra u in de publieksbouwer bent, merkt u onmiddellijk **Attributen** en de **Afzonderlijk XDM-profiel** referentie.
+Zodra u in de publieksbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
 
 
 Aangezien XDM de taal is die de ervaringszaken macht, is XDM ook de stichting voor de publieksbouwer. Alle gegevens die in Platform worden opgenomen, moeten tegen XDM worden toegewezen en als zodanig, worden alle gegevens deel van het zelfde gegevensmodel ongeacht waar die gegevens uit komen. Dit geeft u een groot voordeel wanneer het bouwen van publiek, zoals van deze één kijkbouwer UI, kunt u gegevens van om het even welke oorsprong in het zelfde werkschema combineren. Soorten publiek dat is gemaakt in de Audience Builder kunnen worden verzonden naar oplossingen zoals Adobe Target, Adobe Campaign of een ander activeringskanaal.
 
-U moet nu een publiek maken van alle klanten die het product hebben bekeken **Real-Time CDP**.
+U moet nu een publiek van alle klanten tot stand brengen die het product **Real-Time CDP** hebben bekeken.
 
-U moet een Experience Event toevoegen om dit publiek op te bouwen. U kunt alle Experience Events vinden door op **Gebeurtenissen** in het deelvenster **Velden** menubalk.
+U moet een Experience Event toevoegen om dit publiek op te bouwen. U kunt alle Gebeurtenissen van de Ervaring vinden door op het **pictogram van Gebeurtenissen** in de **Gebieden** menubar te klikken.
 
-![Segmentering](./images/findee.png)
+![Segmentatie](./images/findee.png)
 
-Vervolgens ziet u het hoogste niveau, **XDM ExperienceEvents** knooppunt. Klikken op **XDM ExperienceEvent**.
+Daarna, zult u de top-level, **XDM ExperienceEvents** knoop zien. Klik op **XDM ExperienceEvent**.
 
-![Segmentering](./images/see.png)
+![Segmentatie](./images/see.png)
 
-Ga naar **Objecten in de productlijst**.
+Ga naar **Punten van de Lijst van het Product**.
 
-![Segmentering](./images/plitems.png)
+![Segmentatie](./images/plitems.png)
 
-Selecteren **Naam** en sleep de **Naam** object van het linkermenu naar het canvas van de publieksbuilder **Gebeurtenissen** sectie. U zult dan dit zien:
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **** sectie van Gebeurtenissen. U zult dan dit zien:
 
-![Segmentering](./images/eewebpdtlname.png)
+![Segmentatie](./images/eewebpdtlname.png)
 
-De vergelijkingsparameter moet **equals** en in het invoerveld typt u **Real-time CDP**.
+De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, ga **in real time CDP**.
 
-![Segmentering](./images/pv.png)
+![Segmentatie](./images/pv.png)
 
-Telkens wanneer u een element aan de publieksbouwer toevoegt, kunt u klikken **Offerte vernieuwen** om een nieuwe schatting van de bevolking in uw publiek te krijgen.
+Telkens als u een element aan de publieksbouwer toevoegt, kunt u **klikken verfrist Schatting** knoop om een nieuwe schatting van de bevolking in uw publiek te krijgen.
 
-![Segmentering](./images/refreshest.png)
+![Segmentatie](./images/refreshest.png)
 
-Als **Evaluatiemethode**, selecteert u **Rand**.
+Als **Methode van de Evaluatie**, uitgezochte **Edge**.
 
-![Segmentering](./images/evedge.png)
+![Segmentatie](./images/evedge.png)
 
 Tot slot geven wij uw publiek een naam en bewaren het.
 
@@ -82,17 +82,17 @@ Gebruik als naamgevingsconventie:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Klik vervolgens op de knop **Opslaan en sluiten** om uw publiek op te slaan.
+Dan, klik **sparen en sluit** knoop om uw publiek te bewaren.
 
-![Segmentering](./images/segmentname.png)
+![Segmentatie](./images/segmentname.png)
 
 U gaat nu terug naar de overzichtspagina van het publiek, waar u een voorbeeldvoorproef van klantenprofielen zult zien die voor uw publiek kwalificeren.
 
-![Segmentering](./images/savedsegment.png)
+![Segmentatie](./images/savedsegment.png)
 
 U kunt nu doorgaan met de volgende oefening en uw publiek gebruiken met Adobe Target.
 
-Volgende stap: [1.4 Actie nemen: stuur je publiek naar Adobe Target](./ex4.md)
+Volgende Stap: [ 1.4 Actie nemen: verzend uw publiek naar Adobe Target ](./ex4.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

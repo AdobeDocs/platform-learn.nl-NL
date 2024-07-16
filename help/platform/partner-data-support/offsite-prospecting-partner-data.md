@@ -1,6 +1,6 @@
 ---
-title: Steun offsite het prospecteren gebruiksgevallen gebruikend partnergegevens in [!DNL Real-Time CDP]
-description: Leer over het werkschema wordt gebruikt om nieuwe vooruitzichten van partners in te nemen die [!DNL Real-Time CDP] voor doelgerichte acties voorafgaand aan het bezoek. 
+title: Steun offsite het prospecteren gebruiksgevallen gebruikend partnergegevens in  [!DNL Real-Time CDP]
+description: Leer over het werkschema wordt gebruikt om nieuwe vooruitzichten van partners in  [!DNL Real-Time CDP]  voor het richten van pre-bezoek in te voeren dat. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Steun offsite het prospecteren gebruiksgevallen gebruikend partnergegevens in [!DNL Real-Time CDP]
+# Ondersteuning voor externe prospectie van gebruiksgevallen met partnergegevens in [!DNL Real-Time CDP]
 
-Leer over het werkschema wordt gebruikt om nieuwe vooruitzichten van partners in te nemen die [!DNL Real-Time CDP] voor doelgerichte acties voorafgaand aan het bezoek. Ga voor meer informatie naar de [Nieuwe klanten aantrekken en aanschaffen door gebruiksscenario&#39;s te bekijken](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) documentatie.
+Meer informatie over de workflow die wordt gebruikt om nieuwe perspectieven in te voeren bij partners in [!DNL Real-Time CDP] voor doelgerichte acties vóór een bezoek. Voor meer informatie, gelieve te bezoeken de [ Vraag en nieuwe klanten door het prospecteren van gebruiksgevallen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) documentatie te verwerven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)

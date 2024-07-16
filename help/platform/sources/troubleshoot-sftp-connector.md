@@ -6,15 +6,16 @@ role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-11950
 last-substantial-update: 2023-07-26T00:00:00Z
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+exl-id: 50f7a50c-ab0d-4cc8-bf58-2e0c9fc373ad
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # Problemen oplossen: kan geen verbinding maken met SFTP-bronconnector
 
-Leer beste praktijken om verbindingskwesties met de bron SFTP schakelaar te vermijden. Controleer de specifieke controlepunten om uw SFTP-server met succes te verbinden met Adobe Experience Platform. Zie de klasse [Documentatie SFTP-bronconnector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
+Leer beste praktijken om verbindingskwesties met de bron SFTP schakelaar te vermijden. Controleer de specifieke controlepunten om uw SFTP-server met succes te verbinden met Adobe Experience Platform. Voor meer informatie, zie de [ documentatie van de bron van SFTP bron ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on)

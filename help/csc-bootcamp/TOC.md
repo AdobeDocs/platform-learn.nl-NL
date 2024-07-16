@@ -1,7 +1,7 @@
 ---
 user-guide-title: Experience Makers Content Supply Chain Bootamp
 breadcrumb-title: Experience Makers Content Supply Chain Bootamp
-user-guide-description: Een praktische zelfstudie waarin wordt getoond hoe de Adobe-producten u kunnen helpen uw Content Supply Chain te optimaliseren.
+user-guide-description: Een praktische zelfstudie die laat zien hoe de producten van de Adobe u kunnen helpen uw toeleveringsketen voor inhoud te optimaliseren.
 audience: all
 role: User,Developer
 level: Beginner,Intermediate
@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 3%
+source-wordcount: '97'
+ht-degree: 2%
 
 ---
 

@@ -15,17 +15,17 @@ ht-degree: 0%
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
-De [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) Hiermee stelt u een gemeenschappelijke bezoeker-id (de ECID) in voor alle SDK-toepassingen voor Adobe om de mogelijkheden van het Experience Cloud, zoals het delen van het publiek tussen toepassingen, in te schakelen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
+De [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/en/docs/id-service/using/home) plaatst een gemeenschappelijke bezoekersidentiteitskaart (ECID) over op SDK-Gebaseerde toepassingen van de Adobe aan macht Experience Cloud mogelijkheden zoals publiek-deel tussen toepassingen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
 
-De [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (Ja, er zijn er twee!) gebruikt de ECIDs en klant IDs om identiteitsgrafieken te produceren, die u toestaan om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
-
->[!NOTE]
->
->Een aangepaste naamruimte voor identiteiten is _niet vereist_ om Adobe Analytics, Adobe Target of Adobe Audience Manager te implementeren met Web SDK (geverifieerde identiteiten kunnen worden doorgegeven in het dialoogvenster `data` object in plaats van het `xdm` object zoals u later zult zien). Naamruimten zijn vereist voor toepassingen die zijn gebaseerd op een platform, zoals Journey Optimizer, Real-time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om een identiteitsnamespace in uw eigen implementatie niet te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
+De [ Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (ja, zijn er twee!) gebruikt de ECIDs en klant IDs om identiteitsgrafieken te produceren, die u toestaan om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
 
 >[!NOTE]
 >
-> Voor demonstratiedoeleinden, hebben de oefeningen in deze les u de identiteitsdetails van een fictieve klant vangen die in wordt geregistreerd [Luma-demo-site](https://luma.enablementadobe.com/content/luma/us/en.html) de referenties gebruiken, **gebruiker: `test@adobe.com` / wachtwoord: testen**.
+>Een douaneidentiteit namespace wordt _vereist_ niet om Adobe Analytics, Adobe Target, of Adobe Audience Manager met Web SDK uit te voeren (de voor authentiek verklaarde identiteiten kunnen in het `data` voorwerp in plaats van het `xdm` voorwerp worden overgegaan aangezien u later zult zien). Naamruimten zijn vereist voor toepassingen die zijn gebaseerd op een platform, zoals Journey Optimizer, Real-time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om een identiteitsnamespace in uw eigen implementatie niet te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
+
+>[!NOTE]
+>
+> Voor demonstratiedoeleinden, hebben de oefeningen in deze les u de identiteitsdetails van een fictieve klant vangen die in de [ Plaats van de Demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) wordt geregistreerd gebruikend de geloofsbrieven, **gebruiker: `test@adobe.com` / wachtwoord: test**.
 
 ## Leerdoelstellingen
 
@@ -43,13 +43,13 @@ U moet de vorige lessen reeds hebben voltooid:
 
 >[!IMPORTANT]
 >
->De [Extensie Experience Cloud-id](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig bij het implementeren van Adobe Experience Platform Web SDK, aangezien de Web SDK JavaScript-bibliotheek van de Bezoeker ID-service functionaliteit bevat.
+>De [ Uitbreiding van identiteitskaart van het Experience Cloud ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig wanneer het uitvoeren van SDK van het Web van Adobe Experience Platform, aangezien de bibliotheek van JavaScript van SDK van het Web de dienstfunctionaliteit van identiteitskaart van de Bezoeker bevat.
 >
-> Als uw website de Experience Cloud-id Service al gebruikt op uw website—via de Bezoeker-API of de extensie van de Experience Cloud-id-service - en u wilt deze blijven gebruiken tijdens het migreren naar de Adobe Experience Platform Web SDK, moet u de nieuwste versie van de Bezoeker-API of de uitbreiding van de Experience Cloud-id-service gebruiken. Zie [ID-migratie](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) voor meer informatie .
+> Als uw website de Experience Cloud-id Service al gebruikt op uw website—via de Bezoeker-API of de extensie van de Experience Cloud-id-service - en u wilt deze blijven gebruiken tijdens het migreren naar de Adobe Experience Platform Web SDK, moet u de nieuwste versie van de Bezoeker-API of de uitbreiding van de Experience Cloud-id-service gebruiken. Zie [ Migratie van identiteitskaart ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) voor meer informatie.
 
 ## Naamruimte maken
 
-In deze oefening, creeert u een identiteitsnamespace voor het gebied van de douaneidentiteit van Luma, `lumaCrmId`. Identiteitsnaamruimten spelen een kritieke rol in de bouw van klantenprofielen in real time, aangezien twee passende waarden in zelfde namespace twee gegevensbronnen toestaan om een identiteitsgrafiek te vormen.
+In deze oefening, creeert u een identiteitsnaamruimte voor het gebied van de douaneIdentiteit van Luma, `lumaCrmId`. Identiteitsnaamruimten spelen een kritieke rol in de bouw van klantenprofielen in real time, aangezien twee passende waarden in zelfde namespace twee gegevensbronnen toestaan om een identiteitsgrafiek te vormen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
 
@@ -57,23 +57,23 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 Maak nu een naamruimte voor de Luma CRM-id:
 
-1. Open de [Interface voor gegevensverzameling](https://launch.adobe.com/){target="_blank"}
+1. Open de [ interface van de Inzameling van Gegevens ](https://launch.adobe.com/) {target="_blank"}
 1. Selecteer de sandbox die u gebruikt voor de zelfstudie
 
    >[!NOTE]
    >
-   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als dat niet het geval is, gebruikt u de **[!UICONTROL Prod]** sandbox.
+   >Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP of Journey Optimizer, raden we u aan een ontwikkelingssandbox voor deze zelfstudie te gebruiken. Als u dat niet doet, gebruikt u de **[!UICONTROL Prod]** -sandbox.
 
 1. Selecteren **[!UICONTROL Identities]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Browse]**
 
-   In de hoofdinterface van de pagina wordt een lijst met naamruimten weergegeven met de namen, identiteitssymbolen, de datum die als laatste is bijgewerkt en of het standaardnaamruimten of aangepaste naamruimten zijn. De rechterspoorlijn bevat informatie over [!UICONTROL Identity graph strength].
+   In de hoofdinterface van de pagina wordt een lijst met naamruimten weergegeven met de namen, identiteitssymbolen, de datum die als laatste is bijgewerkt en of het standaardnaamruimten of aangepaste naamruimten zijn. De rechtertrack bevat informatie over [!UICONTROL Identity graph strength] .
 
 1. Selecteren **[!UICONTROL Create identity namespace]**
 
-   ![Identiteiten weergeven](assets/configure-identities-screen.png)
+   ![ Identiteiten van de Mening ](assets/configure-identities-screen.png)
 
-1. Geef de volgende gegevens op en selecteer **[!UICONTROL Create]**.
+1. Geef de volgende gegevens op en selecteer **[!UICONTROL Create]** .
 
    | Veld | Waarde |
    |---------------|-----------|
@@ -82,17 +82,17 @@ Maak nu een naamruimte voor de Luma CRM-id:
    | Type | Individuele apparaat-id |
 
 
-   ![Naamruimten maken](assets/identities-create-namespace.png)
+   ![ creeer Namespaces ](assets/identities-create-namespace.png)
 
 
-   De naamruimte Identiteit wordt gevuld in het dialoogvenster **[!UICONTROL Identities]** scherm.
+   De naamruimte Identiteit wordt in het scherm **[!UICONTROL Identities]** gevuld.
 
-   ![Naamruimten maken](assets/configure-identities-namespace-lumaCrmId.png)
+   ![ creeer Namespaces ](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!NOTE]
 >
-> In de [Identiteiten maken](create-identities.md) les, zult u leren hoe te om deze namespace te gebruiken wanneer het verzenden van identiteiten naar de Edge Network van het Platform.
+> In [ creeer Identiteiten ](create-identities.md) les, zult u leren hoe te om dit te gebruiken namespace wanneer het verzenden van identiteiten naar de Edge Network van het Platform.
 
 Nu de identiteiten op zijn plaats zijn, kan de gegevensstroom worden gevormd.
 
@@ -100,4 +100,4 @@ Nu de identiteiten op zijn plaats zijn, kan de gegevensstroom worden gevormd.
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud hebt, kunt u deze delen over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

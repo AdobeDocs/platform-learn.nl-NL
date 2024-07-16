@@ -4,7 +4,7 @@ description: Leer hoe u de insluitcodes van de eigenschap tag ophaalt en deze im
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In deze les, zult u asynchrone inbedcode van de milieu van de Ontwikkeling van u
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * Platform launch (clientzijde) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * Platform launch Server-zijde is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge-configuraties zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * Platform launch (de Kant van de Cliënt) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## Leerdoelen
 
@@ -28,15 +28,15 @@ Aan het eind van deze les, zult u kunnen:
 * Haal de insluitcode voor de eigenschap tag op
 * Begrijp het verschil tussen een Ontwikkeling, het Opvoeren, en het milieu van de Productie
 * Code voor het insluiten van tags toevoegen aan een HTML-document
-* Beschrijf de optimale locatie van de code voor het insluiten van tags ten opzichte van andere code in het dialoogvenster `<head>` van een HTML-document
+* Beschrijf de optimale locatie van de code voor het insluiten van tags ten opzichte van andere code in de `<head>` van een HTML-document
 
 ## De insluitcode kopiëren
 
-De insluitcode is een `<script>` -tags die u op uw webpagina&#39;s plaatst om de logica die u in tags maakt te laden en uit te voeren. Als u de bibliotheek asynchroon laadt, blijft de browser de pagina laden, wordt de tagbibliotheek opgehaald en parallel uitgevoerd. In dit geval is er slechts één insluitcode die u in de `<head>`. (Wanneer tags synchroon worden geïmplementeerd, zijn er twee insluitcodes die u in het dialoogvenster `<head>` en een ander punt dat u aan de `</body>`).
+De insluitcode is een `<script>` -tag die u op uw webpagina&#39;s plaatst om de logica die u in tags maakt te laden en uit te voeren. Als u de bibliotheek asynchroon laadt, blijft de browser de pagina laden, wordt de tagbibliotheek opgehaald en parallel uitgevoerd. In dit geval is er slechts één insluitcode die u in `<head>` plaatst. (Wanneer tags synchroon worden geïmplementeerd, zijn er twee insluitcodes die u in de `<head>` plaatst en een andere die u vóór de `</body>` plaatst.)
 
-Van het scherm van het Overzicht van het bezit, klik **[!UICONTROL Omgevingen]** in de linkernavigatie om naar de milieu&#39;s pagina te gaan. Merk op dat de milieu&#39;s van de Ontwikkeling, van het Staging, en van de Productie voor u vooraf zijn gecreeerd.
+Klik in het scherm Overzicht van de eigenschap op **[!UICONTROL Environments]** in de linkernavigatie om naar de pagina met omgevingen te gaan. Merk op dat de milieu&#39;s van de Ontwikkeling, van het Staging, en van de Productie voor u vooraf zijn gecreeerd.
 
-![Klik op Omgevingen in de bovenste nav](images/launch-environments.png)
+![ klik Milieu&#39;s in hoogste nav ](images/launch-environments.png)
 
 De ontwikkeling, het Staging, en de milieu&#39;s van de Productie beantwoorden aan de typische milieu&#39;s in het codeontwikkeling en versieproces. De code wordt eerst geschreven door een ontwikkelaar in een milieu van de Ontwikkeling. Wanneer zij hun werk hebben voltooid, sturen zij het naar een het Opvoeren milieu voor QA en andere teams om te herzien. Zodra de kwaliteitscontrole en andere teams tevreden zijn, wordt de code vervolgens gepubliceerd naar de productieomgeving. Dit is de openbare omgeving die uw bezoekers ervaren wanneer ze naar uw website komen.
 
@@ -46,21 +46,21 @@ Dit zijn de enige omgevingen die we nodig hebben om de zelfstudie te voltooien. 
 
 Kopieer nu de insluitcode:
 
-1. In de **[!UICONTROL Ontwikkeling]** rij, klik het Install pictogram ![Installatiepictogram](images/launch-installIcon.png) om het modaal te openen.
+1. In de **[!UICONTROL Development]** rij, klik het Install pictogram ![ installeren pictogram ](images/launch-installIcon.png) om modaal te openen.
 
 1. Merk op dat de markeringen aan de asynchrone insluitcodes zullen gebrek
 
-1. Klik op het pictogram Copy ![Pictogram kopiëren](images/launch-copyIcon.png) om de insluitcode naar het klembord te kopiëren.
+1. Klik het pictogram van het Exemplaar ![ pictogram van het Exemplaar ](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren.
 
-1. Klikken **[!UICONTROL Sluiten]** om het modaal te sluiten.
+1. Klik op **[!UICONTROL Close]** om het modaal te sluiten.
 
-   ![Installatiepictogram](images/launch-copyInstallCode.png)
+   ![ installeer pictogram ](images/launch-copyInstallCode.png)
 
-## Implementeer de ingesloten code in het dialoogvenster `<head>` van de HTML-voorbeeldpagina
+## De insluitcode implementeren in de `<head>` van de HTML-voorbeeldpagina
 
-De insluitcode moet worden geïmplementeerd in de `<head>` -element van alle HTML-pagina&#39;s die de eigenschap delen. U hebt mogelijk een of meer sjabloonbestanden die de `<head>` over de hele site heen, zodat het eenvoudig is om tags toe te voegen.
+De insluitcode moet worden geïmplementeerd in het element `<head>` van alle HTML-pagina&#39;s die de eigenschap delen. U hebt mogelijk een of meerdere sjabloonbestanden die de `<head>` globaal op de site beheren, waardoor het eenvoudig is tags toe te voegen.
 
-Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat nog niet hebt gedaan. [Haakjes](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
+Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat nog niet hebt gedaan. [ Haakjes ](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
 
 +++HTML-voorbeeldcode
 
@@ -111,7 +111,7 @@ Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat no
 
 +++
 
-Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembord en sla de pagina op. Open de pagina nu in een webbrowser. Als u de pagina laadt met de `file://` moet u &quot;https:&quot; toevoegen aan het begin van de insluitcode-URL in de code-editor). Regels 33-36 van de voorbeeldpagina kunnen er ongeveer als volgt uitzien:
+Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembord en sla de pagina op. Open de pagina nu in een webbrowser. Als u de pagina laadt met het protocol `file://` , moet u &quot;https:&quot; toevoegen aan het begin van de insluitcode-URL in uw code-editor). Regels 33-36 van de voorbeeldpagina kunnen er ongeveer als volgt uitzien:
 
 ```html
     <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -120,27 +120,27 @@ Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembor
 ```
 
 Open de ontwikkelaarsgereedschappen van uw webbrowser en ga naar het tabblad Netwerk. Op dit punt wordt een fout van 404 weergegeven voor de URL van de tagomgeving:
-![404-fout](images/samplepage-404.png)
+![ 404 fout ](images/samplepage-404.png)
 
-De fout 404 wordt verwacht omdat u nog geen bibliotheek in deze milieu van Markeringen hebt gebouwd. Dat zult u in de volgende les doen. Als u een &quot;ontbroken&quot;bericht in plaats van een 404 fout ziet, bent u waarschijnlijk vergeten om toe te voegen `https://` protocol in de insluitcode. Opnieuw hoeft u alleen de opdracht `https://` protocol als u de steekproefpagina gebruikend `file://` protocol. Breng deze wijziging aan en laad de pagina opnieuw totdat de fout 404 wordt weergegeven.
+De fout 404 wordt verwacht omdat u nog geen bibliotheek in deze milieu van Markeringen hebt gebouwd. Dat zult u in de volgende les doen. Als u een &#39;&#39;failed&#39;&#39;-bericht ziet in plaats van een 404-fout, bent u waarschijnlijk vergeten het `https://` -protocol toe te voegen aan de insluitcode. U hoeft het `https://` -protocol alleen op te geven als u de voorbeeldpagina laadt met het `file://` -protocol. Breng deze wijziging aan en laad de pagina opnieuw totdat de fout 404 wordt weergegeven.
 
 ## Aanbevolen werkwijzen voor implementatie van tags
 
 Neem even de tijd om enkele best practices bij de implementatie van Codes te bekijken die op de voorbeeldpagina worden getoond:
 
-* **Gegevenslaag**:
+* **Laag van Gegevens**:
 
-   * Wij *krachtig* adviseer het creëren van een gegevenslaag op uw plaats die alle attributen nodig bevat om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Zie voor meer informatie over gegevenslagen [Klantenervaring met digitale gegevenslaag 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * Wij *adviseren sterk* creërend een gegevenslaag op uw plaats die alle attributen bevat nodig om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Voor meer info over gegevenslagen, gelieve te zien [ de Ervaring Digitale Laag van Gegevens 1.0 van de Klant ](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * Definieer de gegevenslaag vóór de code voor het insluiten van tags om te maximaliseren wat u kunt doen met oplossingen voor Experiencen Cloud.
 
-* **JavaScript-hulpbibliotheken**: Als u al een bibliotheek zoals JQuery hebt geïmplementeerd in het dialoogvenster `<head>` van uw pagina&#39;s, laad het voor markeringen om zijn syntaxis in markeringen en Doel te gebruiken
+* **de helperbibliotheken van JavaScript**: Als u reeds een bibliotheek als JQuery hebt die in `<head>` van uw pagina&#39;s wordt uitgevoerd, laad het vóór markeringen om zijn syntaxis in markeringen en Doel te hefboomwerking
 
-* **HTML5-doctype**: Het doctype HTML5 wordt vereist door Doel
+* **HTML5 doctype**: Het HTML5 documenttype wordt vereist door Doel
 
-* **preconnect en dns-prefetch**: Gebruik preconnect en dns-prefetch om de laadtijd van de pagina te verbeteren. Zie ook: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
+* **preconnect en dns-prefetch**: Gebruik preconnect en dns-prefetch om de tijd van de paginading te verbeteren. Zie ook: [ https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **het pre-verbergen van fragment voor asynchrone implementaties van het Doel**: U zult meer over dit in de les van het Doel leren, maar wanneer het Doel via asynchrone markering wordt opgesteld bed codes in, zou u een pre-verbergend fragment op uw pagina&#39;s vóór de markering moeten hardcoderen inbedt codes om inhoudflikkering te beheren
+* **pre-verbergend fragment voor asynchrone implementaties van het Doel**: U zult meer over dit in de les van het Doel leren, maar wanneer het Doel via asynchrone markering wordt opgesteld bed codes in, zou u een pre-verbergend fragment op uw pagina&#39;s vóór de markering moeten hardcoderen bed codes in om inhoudflikkering te beheren
 
 Hier volgt een overzicht van hoe deze beste praktijken in de voorgestelde orde eruit zien. Houd er rekening mee dat er enkele plaatsaanduidingen zijn voor accountspecifieke details:
 

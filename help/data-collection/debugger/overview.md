@@ -10,20 +10,20 @@ thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 58%
+source-wordcount: '134'
+ht-degree: 53%
 
 ---
 
 # Overzicht van Adobe Experience Platform Debugger
 
-Meer informatie over het Adobe Experience Platform Debugger [Chrome-extensie](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [Firefox-invoegtoepassing](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) helpt u bij het opsporen van fouten in uw webimplementaties van de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags en meer.
+Leer hoe de Adobe Experience Platform Debugger [ uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [ toe:voegen-op Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) u helpt uw Webimplementaties van het Web SDK van Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, markeringen en meer zuiveren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## Aanvullende bronnen
 
-* [De Firefox-invoegtoepassing downloaden](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
-* [De Chrome-extensie downloaden](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Documentatie foutopsporing Experience Platform](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
-* [Fouten opsporen in een tagimplementatie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [ Download toe:voegen-op Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
+* [ Download de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [ Debugger van het Experience Platform documentatie ](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
+* [ zuivert een markeringsimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

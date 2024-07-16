@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Profielen en segmenten naar een doel activeren
 
-Leer hoe u doelsegmenten activeert voor bestemmingen in Real-Time CDP.  Begin deze werkstroom in of de bestemmingen of segmentinterface. Ga voor meer informatie naar de [documentatie](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html).
+Leer hoe u doelsegmenten activeert voor bestemmingen in Real-Time CDP.  Begin deze werkstroom in of de bestemmingen of segmentinterface. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on)
 

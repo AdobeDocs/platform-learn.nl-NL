@@ -1,5 +1,5 @@
 ---
-title: Bedrijfswaarde van Platform en Handel
+title: Bedrijfswaarde van Platform en Commerce
 description: In deze video ziet u hoe Adobe Experience Platform met Magento Commerce kan worden gebruikt om één weergave van klanten te maken en op intelligente wijze ervaringen te personaliseren op een digitale winkel en via verschillende kanalen.
 solution: Experience Platform, Commerce
 feature: Integrations
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# Bedrijfswaarde van Platform en Handel
+# Bedrijfswaarde van Platform en Commerce
 
 In deze video ziet u hoe Adobe Experience Platform met Adobe Commerce kan worden gebruikt om één weergave van klanten te maken en op intelligente wijze ervaringen aan te passen aan een digitale winkel en aan de verschillende kanalen.
 

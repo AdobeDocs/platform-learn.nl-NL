@@ -2,9 +2,10 @@
 title: CSC Bootkamp - Mobiele app-inhoud maken
 description: CSC Bootkamp - Mobiele app-inhoud maken
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: db4e91da-2077-4133-aca9-e3413990f4be
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Een zeer belangrijk voordeel van een koploze topologie CMS is de capaciteit om i
 
 AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zonder kop door drie krachtige functies te bieden:
 
-![Levering van inhoud zonder kop](./images/prod-app-headless.png)
+![ Zwaarloze Levering van Inhoud ](./images/prod-app-headless.png)
 
 1. Inhoudsmodellen
    - Inhoudsmodellen zijn een gestructureerde weergave van inhoud.
@@ -36,70 +37,70 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
 1. Inhoudsfragmenten
    - Inhoudsfragmenten worden gemaakt op basis van een inhoudsmodel.
    - Gemaakt door auteurs van inhoud met de AEM Content Fragment-editor.
-   - Inhoudsfragmenten worden opgeslagen in AEM Assets en beheerd in de interface voor middelenbeheer.
+   - Inhoudsfragmenten worden opgeslagen in AEM Assets en beheerd in de gebruikersinterface van Assets Admin.
 1. Inhoud-API voor levering
    - De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    - De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
-   - Directe levering van inhoud is ook mogelijk met de [JSON-export van de Content Fragment Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
 
 ## Uitoefening
 
 Voor dit bootkamp richten we ons op het &quot;content&quot;-gedeelte - het is immers de toeleveringsketen van content die we nastreven. We hebben al een inhoudsmodel en de vereiste API&#39;s voor levering voorzien, zodat u zich kunt richten op wat belangrijk is.
 
-Laten we eerst ons inhoudsmodel bekijken: het is het &#39;contract&#39; dat we hebben met het &#39;headless CMS&#39;, dus we weten welke inhoud ons kan bereiken en in welke vorm.
+Laten we eerst ons inhoudsmodel verkennen: het is het &#39;contract&#39; dat we hebben met het headless CMS, dus we weten welke inhoud onze weg kan vinden en in welke vorm.
 
-- Ga naar de AEM auteur op [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) en meld u aan met de gegevens die we hebben verstrekt.
+- Ga naar de AEM auteur op [ https://author-p105462-e991028.adobeaemcloud.com/ ](https://author-p105462-e991028.adobeaemcloud.com/) en login met de geloofsbrieven die wij verstrekten.
 
 - Selecteer in het menu AEM Start de optie Gereedschappen \> Algemeen \> Modellen van inhoudsfragmenten
 
-![menu met inhoudsfragmentmodellen](./images/prod-app-cfm.png)
+![ het modelmenu van het inhoudsfragment ](./images/prod-app-cfm.png)
 
 - Op het volgende scherm krijgt u een overzicht van alle sites die inhoud zonder kop gebruiken. Dit staat u toe om bestuur over veelvoudige hoofdloze plaatsen te houden, zonder het moeten vrezen zij zich met elkaar zullen mengen. In ons geval werken we met onze website van Adobe, dus selecteer dat model.
 
-![verschillende headless plaatsen](./images/prod-app-cfm-folder.png)
+![ verschillende hoofdloze plaatsen ](./images/prod-app-cfm-folder.png)
 
-- In deze map kunnen we technische inhoud zonder kop zien die we gebruiken op de website van Adobe. Wil je meer weten? Voel je vrij om uit te reiken. Laten we ons nu concentreren op de taak voordat we de handen ineenslaan: de mobiele app. Houd de muisaanwijzer boven de Homepage van de Mobile App en klik op het potloodpictogram om het inhoudsmodel te openen.
+- In deze map kunnen we technische inhoud zonder kop zien die we gebruiken op de website van Adobe. Wil je meer weten? Voel je vrij om uit te reiken. Laten we ons nu concentreren op de taak die voor de hand ligt: de mobiele app. Houd de muisaanwijzer boven de Homepage van de Mobile App en klik op het potloodpictogram om het inhoudsmodel te openen.
 
-![homepage-inhoudsmodel mobiele app](./images/prod-app-created-cfm.png)
+![ mobiel model van de toepassingshomepage inhoud ](./images/prod-app-created-cfm.png)
 
 - In de Editor van het inhoudsfragmentmodel ziet u de details van een bepaald inhoudsmodel. In ons geval zien we de homepage van onze mobiele app: het Adobe-logo, een kop, een optionele, gratis tekst en een optioneel product. Al deze punten zijn gemakkelijk te vormen en bij te werken, zodat als uw inhoudsmodel extra elementen nodig heeft, dit zonder ontwikkelaarsinterferentie op CMS kant kan worden gedaan.
 
-![detailinhoudsmodel](./images/prod-app-cfm-details.png)
+![ model van de detailsinhoud van details ](./images/prod-app-cfm-details.png)
 
 >[!WARNING]
 >
-> **Houd er rekening mee dat het wijzigen van het inhoudsmodel implicaties heeft die verder omlaag gaan**, omdat de mobiele toepassing bepaalde informatie moet ontvangen om de juiste elementen te kunnen weergeven. Wees extra voorzichtig wanneer u velden bijwerkt of verwijdert, maar het toevoegen van velden heeft geen effect.
+> **gelieve te merken op dat het veranderen van het inhoudsmodel implicaties verder onderaan de lijn** heeft, aangezien mobiele app zich op het ontvangen van bepaalde informatie baseert om de correcte elementen te kunnen tonen. Wees extra voorzichtig wanneer u velden bijwerkt of verwijdert, maar het toevoegen van velden heeft geen effect.
 
 Nu we een idee hebben van waar onze inhoud van moet bestaan, kunnen we ons inhoudfragment maken.
 
 - Klik op AEM logo in de linkerbovenhoek om de navigatie te openen en navigeer vervolgens naar Navigatie \> Inhoudsfragmenten.
 
-![inhoudsfragmenten, menuoptie](./images/prod-cf-ui.png)
+![ de menuoptie van inhoudsfragmenten ](./images/prod-cf-ui.png)
 
 - In de volgende interface krijgt u een overzicht van alle bestaande inhoud binnen AEM. De filters aan de linkerkant kunnen worden gebruikt om omlaag te versmallen als u naar een specifiek inhoudsfragment zoekt. Als u een nieuw inhoudsfragment wilt maken, klikt u rechtsboven op de knop Maken.
 
-![knop Inhoudsfragment maken](./images/prod-app-create-cf.png)
+![ creeer de knoop van het inhoudsfragment ](./images/prod-app-create-cf.png)
 
-- In de modus die wordt geopend, ziet u dat sommige velden nog niet bewerkbaar zijn. Dit is logisch: verschillende modellen zijn beschikbaar op basis van waar we het fragment maken .
-   ![inhoudsfragment maken](./images/prod-app-create-cf-details.png)
+- In de modus die wordt geopend, ziet u dat sommige velden nog niet bewerkbaar zijn. Dit is logisch: op basis van waar we ons fragment maken, zijn er verschillende modellen beschikbaar.
+  ![ creeer inhoudsfragment ](./images/prod-app-create-cf-details.png)
    - Selecteer eerst waar het fragment wordt gemaakt door op het mappictogram naast het veld Locatie te klikken. Vouw de structuur van de inhoud uit door op de mappen &quot;adocycle&quot; \> &quot;en&quot; \> &quot;mobile-app&quot; te klikken en vervolgens uw selectie te bevestigen door op de knop &quot;Choose&quot; te klikken.
-      ![de juiste locatie selecteren](./images/prod-app-folder.png)
-   - Het veld &quot;Inhoudsfragmentmodel&quot; kan nu worden bewerkt. Klik op de pijl naast het veld om het vervolgkeuzemenu te openen en selecteer het inhoudsmodel dat we eerder hebben bekeken: &quot;startpagina van mobiele toepassing&quot;.
-   - Geef uw inhoudsfragment vervolgens een betekenisvolle titel (tip: neemt uw teamnummer op om uw inhoud gemakkelijk terug te vinden). U zult merken dat het veld Naam automatisch wordt ingevuld. Dit is om uw leven makkelijker te maken: het is de naam die het systeem gebruikt om uw fragment te identificeren en mag niet worden aangeraakt.
+     ![ selecteer de correcte plaats ](./images/prod-app-folder.png)
+   - U zult merken dat het veld &quot;Inhoudsfragmentmodel&quot; nu bewerkbaar is. Klik op de pijl naast het veld om het vervolgkeuzemenu te openen en selecteer het inhoudsmodel waarnaar we eerder hebben gekeken: &#39;&#39;Mobiele startpagina van toepassing&#39;&#39;.
+   - Geef uw inhoudsfragment vervolgens een betekenisvolle titel (tip: neem uw teamnummer op om de inhoud gemakkelijk terug te vinden). U zult merken dat het veld Naam automatisch wordt ingevuld. Dit is om uw leven makkelijker te maken: het is de naam die het systeem gebruikt om uw fragment te identificeren en mag niet worden aangeraakt.
    - Klik ten slotte op de knop &quot;Maken en openen&quot;. Deze knop geeft aan dat het inhoudsfragment wordt gemaakt en wordt geopend zodat u het direct kunt bewerken.
 
-- Hier kan uw team bepalen welke inhoud u wilt weergeven in de mobiele app. ![details inhoudsfragment](./images/prod-cf-details.png)
+- Hier kan uw team bepalen welke inhoud u wilt weergeven in de mobiele app. ![ details van het inhoudsfragment ](./images/prod-cf-details.png)
    - Selecteer uw team nr., zodat u uw inhoud later in de mobiele app kunt controleren.
    - Als u afbeeldingselementen wilt selecteren, klikt u op het mappictogram om in AEM Assets naar de juiste afbeelding te bladeren.
-   - Voor het aanbevolen product klikt u op het pictogram voor productopzoeking zodat u eenvoudig ons &quot;Adobe-product 1&quot; kunt selecteren, zodat de gegevens over de handel in de app worden geladen.
+   - Voor het aanbevolen product klikt u op het opzoekpictogram van het product, zodat u eenvoudig ons Commerce-product &quot;Adobe-1&quot; kunt selecteren, zodat de gegevens over de handel in de app worden geladen.
    - Klik op de knop Opslaan als u klaar bent om alle geschreven inhoud op te slaan en uw wijzigingen te publiceren.
-      ![publicatiewijzigingen](./images/prod-app-publish.png)
+     ![ publiceer veranderingen ](./images/prod-app-publish.png)
 
 Nu we de mobiele app met wat inhoud hebben voorzien, zijn we klaar om onze campagne te leveren.
 
 
-Volgende stap: [Fase 3 - Levering: Mobiele app verifiëren](../delivery/app.md)
+Volgende Stap: [ Fase 3 - Levering: Verifieer mobiele app ](../delivery/app.md)
 
-[Ga terug naar Fase 2 - Productie: Een advertentie voor sociale media maken](./social.md)
+[Terug naar fase 2 - Productie: sociale media maken](./social.md)
 
 [Terug naar alle modules](../../overview.md)

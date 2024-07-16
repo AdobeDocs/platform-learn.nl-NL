@@ -6,7 +6,8 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
+exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Ontwikkelaars toevoegen en machtigingen voor API-referenties geven
 
-Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in de Admin Console. Nadat zij hun project van het Platform in de Console van de Ontwikkelaar hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in het Platform of de interface van Journey Optimizer. Ga voor meer informatie naar de [Documentatie betreffende toegangscontrole](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in de Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
@@ -25,5 +26,4 @@ Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassing
 
 >[!TIP]
 >
->U wordt aangeraden de ontwikkelaar ook toe te voegen als een **user** aan de `AEP-Default-All-Users` productprofiel in Admin Console en voeg deze vervolgens toe aan dezelfde rol in de platforminterface als de API-referentie. Dit staat hen toe om de interface te gebruiken, indien nodig. Zie [Gebruikers toevoegen](add-users.md) voor meer informatie .
-
+>Wij adviseren u ook de ontwikkelaar als a **gebruiker** aan het `AEP-Default-All-Users` productprofiel in Admin Console toe te voegen en dan hen toe te voegen aan de zelfde rol in de interface van het Platform zoals de API referentie. Dit staat hen toe om de interface te gebruiken, indien nodig. Zie [ gebruikers ](add-users.md) voor meer details toevoegen.

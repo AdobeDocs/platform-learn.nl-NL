@@ -1,21 +1,21 @@
 ---
 title: Een eigenschap voor tags configureren voor de implementatie van Platform Mobile SDK
-description: Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+description: Leer hoe u een eigenschap tag in de interface [!UICONTROL Data Collection] configureert.
 feature: Mobile SDK,Tags
 jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 0%
+source-wordcount: '919'
+ht-degree: 1%
 
 ---
 
 # Een eigenschap voor een tag configureren
 
-Leer hoe u een eigenschap tag in het dialoogvenster [!UICONTROL Gegevensverzameling] interface.
+Leer hoe u een eigenschap tag in de interface [!UICONTROL Data Collection] configureert.
 
-Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig analyses, marketing en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Meer informatie over [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in de productdocumentatie.
+Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig analyses, marketing en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Leer meer over [ Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in de productdocumentatie.
 
 ## Vereisten
 
@@ -23,7 +23,7 @@ Om de les te voltooien, moet u toestemming hebben om een markeringsbezit tot sta
 
 >[!NOTE]
 >
-> Platform launch (clientzijde) is nu [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform launch (Kant van de Cliënt) is nu [ Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
 
 ## Leerdoelstellingen
 
@@ -35,127 +35,127 @@ In deze les zult u:
 ## Eerste configuratie
 
 1. Maak een nieuwe eigenschap voor mobiele tags in de interface voor gegevensverzameling:
-   1. Selecteren **[!UICONTROL Tags]** in de linkernavigatie.
-   1. Selecteren **[!UICONTROL Nieuwe eigenschap]**
-      ![een tag-eigenschap maken](assets/tags-new-property.png).
-   1. Voor de **[!UICONTROL Naam]**, enter `Luma Mobile App Tutorial`.
-   1. Voor de **[!UICONTROL Platform]**, selecteert u **[!UICONTROL Mobiel]**.
-   1. Selecteren  **[!UICONTROL Opslaan]**.
+   1. Selecteer **[!UICONTROL Tags]** in de linkernavigatie.
+   1. Selecteren **[!UICONTROL New Property]**
+      ![ creeer een markeringsbezit ](assets/tags-new-property.png).
+   1. Voer bij **[!UICONTROL Name]** `Luma Mobile App Tutorial` in.
+   1. Selecteer **[!UICONTROL Mobile]** voor **[!UICONTROL Platform]** .
+   1. Selecteer **[!UICONTROL Save]** .
 
-      ![vorm het markeringsbezit](assets/tags-property-config.png)
+      ![ vorm het markeringsbezit ](assets/tags-property-config.png)
 
       >[!NOTE]
       >
-      > De standaardinstellingen voor toestemming voor de op rand gebaseerde mobiele SDK-implementaties, zoals de toestemming die u in deze les doet, zijn afkomstig uit de [!UICONTROL Toegestane extensie] en niet de [!UICONTROL Privacy] het plaatsen in de configuratie van het markeringsbezit. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Zie voor meer informatie [de documentatie](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
+      > Standaardinstellingen voor toestemming voor de op randen gebaseerde mobiele SDK-implementaties, zoals de implementatie die u in deze les uitvoert, zijn afkomstig uit de [!UICONTROL Consent extension] -instelling en niet uit de [!UICONTROL Privacy] -instelling in de configuratie van de eigenschap Tag. U voegt en vormt de uitbreiding van de Toestemming later in deze les toe. Voor meer info, zie [ de documentatie ](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Open de nieuwe eigenschap.
 1. Een bibliotheek maken:
 
    1. Ga naar **[!UICONTROL Publishing Flow]** in de linkernavigatie.
-   1. Selecteren **[!UICONTROL Bibliotheek toevoegen]**.
+   1. Selecteer **[!UICONTROL Add Library]**.
 
-      ![Bibliotheek toevoegen selecteren](assets/tags-create-library.png)
+      ![ Uitgezocht voeg Bibliotheek ](assets/tags-create-library.png) toe
 
-   1. Voor de **[!UICONTROL Naam]**, enter `Initial Build`.
-   1. Voor de **[!UICONTROL Omgeving]**, selecteert u **[!UICONTROL Ontwikkeling (ontwikkeling)]**.
-   1. Selecteren  ![Knop Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Alle gewijzigde bronnen toevoegen]**.
-   1. Selecteren **[!UICONTROL Opslaan en samenstellen tot ontwikkeling]**.
+   1. Voer bij **[!UICONTROL Name]** `Initial Build` in.
+   1. Selecteer **[!UICONTROL Development (development)]** voor **[!UICONTROL Environment]** .
+   1. Selecteer ![ toevoegen knoop ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add All Changed Resources]**.
+   1. Selecteer **[!UICONTROL Save and Build to Development]**.
 
-      ![De bibliotheek maken](assets/tags-save-library.png)
+      ![ bouwt de Bibliotheek ](assets/tags-save-library.png)
 
-   1. Tot slot selecteert u **[!UICONTROL Eerste build]** als uw werkbibliotheek vanuit de **[!UICONTROL Een werkbibliotheek selecteren]** -menu.
-      ![Selecteren als werkbibliotheek](assets/tags-working-library.png)
+   1. Selecteer ten slotte **[!UICONTROL Initial Build]** als werkbibliotheek in het menu **[!UICONTROL Select a working library]** .
+      ![ Uitgezocht als het werk bibliotheek ](assets/tags-working-library.png)
 1. Extensies controleren:
 
-   1. Zorg ervoor dat **[!UICONTROL Eerste build]** is geselecteerd als standaardbibliotheek.
+   1. Zorg ervoor dat **[!UICONTROL Initial Build]** is geselecteerd als standaardbibliotheek.
 
-   1. Selecteren **[!UICONTROL Extensies]** in het linkerspoor.
+   1. Selecteer **[!UICONTROL Extensions]** in het linkerspoor.
 
-   1. Selecteer de **[!UICONTROL Geïnstalleerd]** tab.
+   1. Selecteer het tabblad **[!UICONTROL Installed]**. 
 
-      De [!UICONTROL Mobiele kern] en [!UICONTROL Profiel] extensies moeten vooraf worden geïnstalleerd.
+      De extensies [!UICONTROL Mobile Core] en [!UICONTROL Profile] moeten vooraf zijn geïnstalleerd.
 
-      ![Geïnstalleerde tags](assets/tags-installed.png)
+      ![ geïnstalleerde Markeringen ](assets/tags-installed.png)
 
 ## Extensieconfiguratie
 
-1. Zorg ervoor dat u binnen bent **[!UICONTROL Extensies]** in uw eigenschap voor mobiele apps.
+1. Zorg ervoor dat u zich in **[!UICONTROL Extensions]** bevindt binnen de eigenschap voor uw mobiele app.
 
-1. Selecteren **[!UICONTROL Catalogus]**.
+1. Selecteer **[!UICONTROL Catalog]**.
 
-   ![eerste installatie](assets/tags-starting.png)
+   ![ aanvankelijke opstelling ](assets/tags-starting.png)
 
-1. Gebruik de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Zoeken]** veld de zoekopdracht **Identiteit** extensie.
+1. Gebruik het ![ gebied van het Onderzoek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** het vinden van de **uitbreiding van de Identiteit**.
 
-   1. Zoeken naar `Identity`.
+   1. Zoeken naar `Identity` .
 
-   2. Selecteer de **[!UICONTROL Identiteit]** extensie.
+   2. Selecteer de extensie **[!UICONTROL Identity]** .
 
-   3. Selecteren **[!UICONTROL Installeren]**.
+   3. Selecteer **[!UICONTROL Install]**.
 
-      ![Identiteitsinstallatie](assets/tags-identity-install.png)
-
-   Voor deze extensie is geen verdere configuratie vereist.
-
-1. Gebruik de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Zoeken]** te zoeken en te installeren **AEP-betrouwbaarheid** extensie.
+      ![ Identiteitsinstallatie ](assets/tags-identity-install.png)
 
    Voor deze extensie is geen verdere configuratie vereist.
 
-1. Gebruik de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Zoeken]** te zoeken en te installeren **Toestemming** extensie. In het configuratiescherm:
+1. Gebruik het ![ gebied van het Onderzoek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** om de **Verzekering AEP** uitbreiding te vinden en te installeren.
 
-   1. Selecteren **[!UICONTROL In behandeling]**. In deze zelfstudie beheert u de toestemming verder in de toepassing. Meer informatie over de extensie Goedkeuring in [de documentatie](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
-   1. Selecteren **[!UICONTROL Opslaan in bibliotheek]**.
+   Voor deze extensie is geen verdere configuratie vereist.
 
-      ![toestemmingsinstellingen](assets/tags-extension-consent.png)
+1. Gebruik het ![ gebied van het Onderzoek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** om de **toestemming** uitbreiding te vinden en te installeren. In het configuratiescherm:
 
-1. Gebruik de ![Zoeken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Zoeken]** te zoeken en te installeren **Adobe Experience Platform Edge Network** extensie.
+   1. Selecteer **[!UICONTROL Pending]**. In deze zelfstudie beheert u de toestemming verder in de toepassing. Leer meer over de uitbreiding van de Toestemming in [ de documentatie ](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
+   1. Selecteer **[!UICONTROL Save to Library]**.
 
-   1. In **[!UICONTROL Gegevensstromen]** Selecteer de **[!UICONTROL DataStream]** die u hebt gemaakt in het dialoogvenster [vorige stap](create-datastream.md) voor elke omgeving, bijvoorbeeld **[!DNL Luma Mobile App]**.
+      ![ toestemmingsmontages ](assets/tags-extension-consent.png)
 
-   1. Als deze nog niet is gevuld, geeft u de **[!UICONTROL Edge Network-domein]** binnen **[!UICONTROL Domeinconfiguratie]**. Het domein van het Netwerk van de Rand is de naam van uw organisatie, die door wordt gevolgd `data.adobedc.net`bijvoorbeeld `techmarketingdemos.data.adobedc.net`.
+1. Gebruik het ![ gebied van het Onderzoek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** om de **Edge Network van Adobe Experience Platform** uitbreiding te vinden en te installeren.
 
-   1. Van de **[!UICONTROL Opslaan in bibliotheek]** menu, selecteert u **[!UICONTROL Opslaan in bibliotheek en samenstellen]**.
+   1. In **[!UICONTROL Datastreams]** selecteer **[!UICONTROL Datastream]** dat u in de [ vorige stap ](create-datastream.md) voor elk van de milieu&#39;s, bijvoorbeeld **[!DNL Luma Mobile App]** creeerde.
 
-      ![Edge-netwerkinstellingen](assets/tags-extension-edge.png)
+   1. Als deze nog niet is gevuld, geeft u de **[!UICONTROL Edge Network domain]** within **[!UICONTROL Domain Configuration]** op. Het domein Edge Network is de naam van uw organisatie, gevolgd door `data.adobedc.net`, bijvoorbeeld `techmarketingdemos.data.adobedc.net` .
 
-Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een geslaagde build wordt aangegeven met een <span style="color:green">●</span> in de **[!UICONTROL Eerste build]** knop.
+   1. Selecteer **[!UICONTROL Save to Library and Build]** in het menu **[!UICONTROL Save to Library]** .
+
+      ![ de montages van het randnetwerk ](assets/tags-extension-edge.png)
+
+Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een succesvolle bouwstijl wordt aangewezen door a <span style="color:green"> ・ </span> in de **[!UICONTROL Initial Build]** knoop.
 
 
 ## SDK-installatie-instructies genereren
 
-1. Selecteren **[!UICONTROL Omgevingen]** van de linkerspoorstaaf.
+1. Selecteer **[!UICONTROL Environments]** in het linkerspoor.
 
-1. Selecteer de **[!UICONTROL Ontwikkeling]** installatiepictogram ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
+1. Selecteer **[!UICONTROL Development]** installeer pictogram ![ Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg).
 
-   ![home-scherm van omgevingen](assets/tags-environments.png)
+   ![ milieu&#39;s het homescherm ](assets/tags-environments.png)
 
-1. In de **[!UICONTROL Instructies voor mobiele installatie]** selecteert u de **[!UICONTROL iOS]** tab.
+1. Selecteer de tab **[!UICONTROL iOS]** in het dialoogvenster **[!UICONTROL Mobile Install Instructions]** .
 
-1. U kunt ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies voor het instellen van uw project met CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Voor meer informatie raadpleegt u de [CocoaPods-documentatie](https://cocoapods.org/). Als u Android™ als ontwikkelingsplatform gebruikt, is Gradle het hulpmiddel om de versie van SDK, downloads, en gebiedsdelen te beheren. Voor meer informatie raadpleegt u de [Gradle-documentatie](https://gradle.org/)
+1. U kunt ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de instructies aan opstelling uw project kopiëren gebruikend CocoaPods. CocoaPods worden gebruikt om SDK-versies en -downloads te beheren. Om meer te leren, te herzien gelieve de [ documentatie CocoaPods ](https://cocoapods.org/). Als u Android™ als ontwikkelingsplatform gebruikt, is Gradle het hulpmiddel om de versie van SDK, downloads, en gebiedsdelen te beheren. Om meer te leren, te herzien gelieve de [ documentatie van de Gradle ](https://gradle.org/)
 
-   De installatieinstructies bieden u een goed beginpunt voor de implementatie. Meer informatie vindt u [hier](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+   De installatieinstructies bieden u een goed beginpunt voor de implementatie. U kunt extra informatie [ hier ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) vinden.
 
    >[!INFO]
    >
-   >Voor de rest van deze zelfstudie gaat u **niet** gebruik de CocoaPods-instructies, maar gebruik in plaats daarvan een native Swift Package Manager (SPM)-gebaseerde setup.
+   >Voor de rest van dit leerprogramma, zult u **** niet de instructies CocoaPods gebruiken maar in plaats daarvan een inheemse Swift gebaseerde Opstelling van de Manager van het Pakket (SPM) gebruiken.
    >
 
-1. Selecteer de **[!UICONTROL Swift]** tab onder **[!UICONTROL Initialisatiecode toevoegen]**. Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Hierover wordt meer in detail ingegaan [SDK&#39;s installeren](install-sdks.md).
+1. Selecteer de tab **[!UICONTROL Swift]** onder **[!UICONTROL Add Initialization Code]** . Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Dit wordt behandeld meer in detail in [ installeert SDKs ](install-sdks.md).
 
-1. Kopiëren ![Kopiëren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) de **[!UICONTROL Omgevingsbestand-id]** en bewaar het op een plaats zoals u het later nodig hebt. Deze unieke id verwijst naar uw ontwikkelomgeving. Elke omgeving (Productie, Staging, Ontwikkeling) heeft zijn eigen unieke id-waarde.
+1. Het exemplaar ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Environment File ID]** en slaat het op een plaats op aangezien u het later nodig hebt. Deze unieke id verwijst naar uw ontwikkelomgeving. Elke omgeving (Productie, Staging, Ontwikkeling) heeft zijn eigen unieke id-waarde.
 
-   ![installatie-instructies](assets/tags-install-instructions.png)
+   ![ installeer instructies ](assets/tags-install-instructions.png)
 
 >[!NOTE]
 >
->De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De meest recente SDK-versies en codevoorbeelden vindt u in de officiële [documentatie](https://developer.adobe.com/client-sdks/home/).
+>De installatie-instructies moeten worden beschouwd als een beginpunt en niet als definitieve documentatie. De recentste versies van SDK en codesteekproeven kunnen in de officiële [ documentatie ](https://developer.adobe.com/client-sdks/home/) worden gevonden.
 
 ## Architectuur van mobiele tags
 
 Als u bekend bent met de webversie van Tags, voorheen Starten, is het belangrijk dat u de verschillen op mobiele apparaten begrijpt.
 
-* Op het web wordt een eigenschap tag gerenderd in JavaScript, die vervolgens (gewoonlijk) wordt gehost in de cloud. Er wordt rechtstreeks in de website naar dat JavaScript-bestand verwezen.
+* Op het web wordt een tag-eigenschap gerenderd naar JavaScript die vervolgens (gewoonlijk) wordt gehost in de cloud. Er wordt rechtstreeks in de website naar dat JavaScript-bestand verwezen.
 
 * In een eigenschap voor mobiele tags worden regels en configuraties gerenderd in JSON-bestanden die worden gehost in de cloud. De JSON-bestanden worden gedownload en gelezen door de Mobile Core-extensie in de mobiele app. Extensies zijn afzonderlijke SDK&#39;s die samenwerken. Als u een extensie toevoegt aan de eigenschap tag, moet u de app ook bijwerken. Als u een extensie-instelling wijzigt of een regel maakt, worden deze wijzigingen doorgevoerd in de app nadat u de bijgewerkte tagbibliotheek hebt gepubliceerd. Dankzij deze flexibiliteit kunt u instellingen wijzigen (zoals de id van Adobe Analytics-rapportsuite) of zelfs het gedrag van uw app wijzigen (met gegevenselementen en regels, zoals u in latere lessen zult zien) zonder dat u code hoeft te wijzigen in uw app en de App Store opnieuw hoeft in te dienen.
 
@@ -163,6 +163,6 @@ Als u bekend bent met de webversie van Tags, voorheen Starten, is het belangrijk
 >
 >U kunt nu een eigenschap voor mobiele tags gebruiken in de rest van deze zelfstudie.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
-Volgende: **[SDK&#39;s installeren](install-sdks.md)**
+Volgende: **[installeer SDKs](install-sdks.md)**

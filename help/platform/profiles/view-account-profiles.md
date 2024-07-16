@@ -10,13 +10,13 @@ thumbnail: 338251.jpg
 exl-id: 2b739872-0f15-429c-8d19-f3bcc81f2f89
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '44'
 ht-degree: 0%
 
 ---
 
 # Accountprofielen weergeven
 
-Leer hoe u accountprofielen en mogelijkheden bekijkt in Real-time Customer Data Platform, B2B Edition en Adobe Experience Platform. Zie voor meer informatie de [Documentatie voor profielen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Leer hoe u accountprofielen en mogelijkheden bekijkt in Real-time Customer Data Platform, B2B Edition en Adobe Experience Platform. Voor meer informatie, te zien gelieve de [ documentatie van Profielen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on)

@@ -5,7 +5,7 @@ jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,10 @@ Leer hoe u de Adobe Experience Platform Mobile SDK in een mobiele app implemente
 
 ## Vereisten
 
-* Er is een tagbibliotheek gemaakt met de extensies die in het dialoogvenster [vorige les](configure-tags.md).
-* Bestandsidentiteitskaart voor ontwikkelomgeving van de [Instructies voor mobiele installatie](configure-tags.md#generate-sdk-install-instructions).
-* Lege bestanden gedownload [voorbeeldapp](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
-* Ervaring met [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
+* Opvolger bouwde met succes een markeringsbibliotheek met de uitbreidingen die in de [ vorige les ](configure-tags.md) worden beschreven.
+* Identiteitskaart van het Dossier van het Milieu van de ontwikkeling van [ Mobiele Installatieinstructies ](configure-tags.md#generate-sdk-install-instructions).
+* Gedownload lege [ steekproef app ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}.
+* Ervaring met [ Xcode ](https://developer.apple.com/xcode/) {target="_blank"}.
 
 ## Leerdoelstellingen
 
@@ -34,29 +34,29 @@ In deze les zult u:
 
 ## Swift Package Manager
 
-In plaats van CocoaPods en een podbestand te gebruiken (zoals beschreven in [SDK-installatie-instructies genereren](./configure-tags.md#generate-sdk-install-instructions)), voegt u afzonderlijke pakketten toe met gebruik van de native Swift Package Manager van Xcode. Het Xcode-project heeft al alle pakketafhankelijkheden die voor u zijn toegevoegd. De Xcode **[!UICONTROL Pakketafhankelijke onderdelen]** scherm moet er als volgt uitzien:
+In plaats van het gebruiken van CocoaPods en een dossier van de Pod (zoals die in [ worden geschetst produceert SDK installeert instructies ](./configure-tags.md#generate-sdk-install-instructions)), voegt u individuele pakketten toe gebruikend de inheemse Manager van het Pakket van Xcode Swift. Het Xcode-project heeft al alle pakketafhankelijkheden die voor u zijn toegevoegd. Het scherm Xcode **[!UICONTROL Package Dependencies]** moet er als volgt uitzien:
 
-![Xcode-pakketafhankelijke](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+![ Afhankelijkheden van het Pakket Xcode ](assets/xcode-package-dependencies.png){zoomable="yes"}
 
 
-In Xcode kunt u **[!UICONTROL Bestand]** > **[!UICONTROL Pakketten toevoegen...]** pakketten toevoegen. De onderstaande tabel bevat koppelingen naar de URL&#39;s die u zou gebruiken om pakketten toe te voegen. De koppelingen leiden u ook naar meer informatie over elk specifiek pakket.
+In Xcode kunt u **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** gebruiken om pakketten toe te voegen. De onderstaande tabel bevat koppelingen naar de URL&#39;s die u zou gebruiken om pakketten toe te voegen. De koppelingen leiden u ook naar meer informatie over elk specifiek pakket.
 
 | Pakket | Beschrijving |
 |---|---|
-| [AEP Core](https://github.com/adobe/aepsdk-core-ios) | De `AEPCore`, `AEPServices`, en `AEPIdentity` extensies vormen de basis voor de SDK van Adobe Experience Platform. Elke toepassing die de SDK gebruikt, moet deze bevatten. Deze modules bevatten een gemeenschappelijke reeks functionaliteit en diensten die door alle uitbreidingen van SDK worden vereist.<br/><ul><li>`AEPCore` Bevat implementatie van de Hub van de Gebeurtenis. De hub van de Gebeurtenis is het mechanisme dat voor het leveren van gebeurtenissen tussen app en SDK wordt gebruikt. De hub van de Gebeurtenis wordt ook gebruikt voor het delen van gegevens tussen uitbreidingen.</li><li>`AEPServices` verstrekt verscheidene herbruikbare implementaties nodig voor platformsteun, met inbegrip van voorzien van een netwerk, schijftoegang, en gegevensbestandbeheer.</li><li>`AEPIdentity` implementeert de integratie met Adobe Experience Platform Identity-services.</li><li>`AEPSignal` vertegenwoordigt de Adobe Experience Platform SDKs Signal extension die marketers toestaat een &quot;signaal&quot;naar hun apps te verzenden om gegevens naar externe bestemmingen te verzenden of URLs te openen.</li><li>`AEPLifecycle` vertegenwoordigt de Levenscyclusuitbreiding van SDKs van Adobe Experience Platform die helpt metriek van de toepassingslevenscyclus zoals toepassingsinstallatie of verbeteringsinformatie, toepassingslancering en zittingsinformatie, apparateninformatie, en om het even welke extra die contextgegevens verzamelen door de toepassingsontwikkelaar worden verstrekt.</li></ul> |
-| [AEP rand](https://github.com/adobe/aepsdk-edge-ios) | De mobiele extensie Adobe Experience Platform Edge Network (`AEPEdge`) kunt u gegevens naar het Adobe Edge-netwerk verzenden vanuit een mobiele toepassing. Deze uitbreiding staat u toe om de mogelijkheden van Adobe Experience Cloud op een robuustere manier uit te voeren, veelvoudige oplossingen van de Adobe door middel van één netwerkvraag te dienen, en deze informatie gelijktijdig door te sturen aan Adobe Experience Platform.<br/>De mobiele extensie van Edge Network is een extensie voor de Adobe Experience Platform SDK en vereist de opdracht `AEPCore` en `AEPServices` extensies voor gebeurtenisafhandeling en de `AEPEdgeIdentity` voor het ophalen van de identiteiten, zoals ECID. |
-| [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios) | De mobiele extensie AEP Edge Identity (`AEPEdgeIdentity`) maakt het mogelijk om identiteitsgegevens van gebruikers van een mobiele toepassing af te handelen wanneer de SDK van Adobe Experience Platform en de extensie Edge Network worden gebruikt. |
-| [AEP randgoedkeuring](https://github.com/adobe/aepsdk-edgeconsent-ios) | De mobiele extensie AEP Consent Collection (`AEPConsent`) schakelt de verzameling met voorkeuren voor toestemming van de mobiele toepassing in als u de SDK van Adobe Experience Platform en de extensie Edge Network gebruikt. |
-| [AEP-gebruikersprofiel](https://github.com/adobe/aepsdk-userprofile-ios) | De extensie Adobe Experience Platform-gebruikersprofiel (`AEPUserProfile`) is een extensie voor het beheren van gebruikersprofielen voor de Adobe Experience Platform SDK. |
-| [AEP-plaatsen](https://github.com/adobe/aepsdk-places-ios) | De extensie AEP-plaatsen (`AEPPlaces`) kunt u geolocatiegebeurtenissen bijhouden zoals gedefinieerd in de interface Plaatsen van Adoben en in de regels voor de tag voor gegevensverzameling van Adoben. |
-| [AEP-berichten](https://github.com/adobe/aepsdk-messaging-ios) | De extensie AEP-berichten (`AEPMessaging`) kunt u tokens voor pushmeldingen en doorklikfeedback voor pushmeldingen naar de Adobe Experience Platform sturen. |
-| [AEP optimaliseren](https://github.com/adobe/aepsdk-optimize-ios) | De extensie AEP optimaliseren (`AEPOptimize`) bevat API&#39;s waarmee u realtime workflows voor personalisatie kunt inschakelen in de Adobe Experience Platform Mobile SDK&#39;s met Adobe Target of Adobe Journey Optimizer Offer decisioning. Hiervoor is `AEPCore` en `AEPEdge` extensies om verpersoonlijkingsquerygebeurtenissen naar het Edge-netwerk van Experience te verzenden. |
-| [AEP-betrouwbaarheid](https://github.com/adobe/aepsdk-assurance-ios) | Betrouwbaarheid (alias Griffon-project) is een nieuwe, innovatieve uitbreiding (`AEPAssurance`) om u te helpen bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet in uw mobiele app. Met deze extensie wordt uw app voor betrouwbaarheidsverklaring ingeschakeld. |
+| [ Kern AEP ](https://github.com/adobe/aepsdk-core-ios) | De extensies `AEPCore` , `AEPServices` en `AEPIdentity` vertegenwoordigen de basis van de SDK van Adobe Experience Platform. Elke toepassing die de SDK gebruikt, moet deze bevatten. Deze modules bevatten een gemeenschappelijke reeks functionaliteit en de diensten die door alle uitbreidingen van SDK worden vereist.<br/><ul><li>`AEPCore` bevat implementatie van de gebeurtenishub. De hub van de Gebeurtenis is het mechanisme dat voor het leveren van gebeurtenissen tussen app en SDK wordt gebruikt. De hub van de Gebeurtenis wordt ook gebruikt voor het delen van gegevens tussen uitbreidingen.</li><li>`AEPServices` biedt verschillende herbruikbare implementaties die nodig zijn voor platformondersteuning, zoals netwerken, schijftoegang en databasebeheer.</li><li>`AEPIdentity` implementeert de integratie met Adobe Experience Platform Identity-services.</li><li>`AEPSignal` staat voor de Adobe Experience Platform SDK&#39;s Signal-extensie waarmee marketers een &quot;signaal&quot; naar hun apps kunnen sturen om gegevens naar externe doelen te verzenden of om URL&#39;s te openen.</li><li>`AEPLifecycle` vertegenwoordigt de Levenscyclusuitbreiding van SDK van Adobe Experience Platform die helpt metriek van de toepassingslevenscyclus zoals toepassingsinstallatie of verbeteringsinformatie, toepassingslancering en zittingsinformatie, apparateninformatie, en om het even welke extra contextgegevens te verzamelen die door de toepassingsontwikkelaar worden verstrekt.</li></ul> |
+| [ AEP Edge ](https://github.com/adobe/aepsdk-edge-ios) | Met de mobiele extensie Adobe Experience Platform Edge Network (`AEPEdge` ) kunt u gegevens naar het Adobe Edge-netwerk verzenden vanuit een mobiele toepassing. Deze uitbreiding staat u toe om de mogelijkheden van Adobe Experience Cloud op een robuustere manier uit te voeren, veelvoudige oplossingen van de Adobe door middel van één netwerkvraag te dienen, en deze informatie gelijktijdig door te sturen aan Adobe Experience Platform.<br/> de mobiele uitbreiding van de Edge Network is een uitbreiding voor Adobe Experience Platform SDK en vereist `AEPCore` en `AEPServices` uitbreidingen voor gebeurtenis behandeling, evenals de `AEPEdgeIdentity` uitbreiding voor het terugwinnen van de identiteiten, zoals ECID. |
+| [ AEP Edge Identity ](https://github.com/adobe/aepsdk-edgeidentity-ios) | Met de AEP Edge Identity Mobile-extensie (`AEPEdgeIdentity`) kunnen identiteitsgegevens van gebruikers van een mobiele toepassing worden verwerkt wanneer de SDK van Adobe Experience Platform en de extensie van Edge Network worden gebruikt. |
+| [ AEP Edge Toestemming ](https://github.com/adobe/aepsdk-edgeconsent-ios) | De mobiele uitbreiding van de Inzameling van de Instemming AEP (`AEPConsent`) laat de inzameling van de toestemmingsvoorkeur van de mobiele toepassing toe wanneer het gebruiken van de SDK van Adobe Experience Platform en de uitbreiding van de Edge Network. |
+| [ AEP het Profiel van de Gebruiker ](https://github.com/adobe/aepsdk-userprofile-ios) | De extensie Adobe Experience Platform User Profile Mobile (`AEPUserProfile`) is een extensie voor het beheren van gebruikersprofielen voor de Adobe Experience Platform SDK. |
+| [ Plaatsen AEP ](https://github.com/adobe/aepsdk-places-ios) | De uitbreiding van Plaatsen AEP (`AEPPlaces`) staat u toe om geolocatiegebeurtenissen te volgen zoals die in de interface van Plaatsen van de Adobe en in de regels van de Markering van de Inzameling van Gegevens van de Adobe worden bepaald. |
+| [ AEP Overseinen ](https://github.com/adobe/aepsdk-messaging-ios) | Met de extensie AEP Messaging (`AEPMessaging` ) kunt u tokens voor pushmeldingen verzenden en doorklikken op pushberichten naar de Adobe Experience Platform. |
+| [ AEP optimaliseert ](https://github.com/adobe/aepsdk-optimize-ios) | De extensie AEP optimaliseren (`AEPOptimize`) biedt API&#39;s om realtime workflows voor personalisatie in de Adobe Experience Platform Mobile SDK&#39;s mogelijk te maken met Adobe Target of Adobe Journey Optimizer Offer decisioning. Voor deze functie zijn `AEPCore` - en `AEPEdge` -extensies nodig om verpersoonlijkingsquery-gebeurtenissen naar het Experience Edge-netwerk te verzenden. |
+| [ Verzekering AEP ](https://github.com/adobe/aepsdk-assurance-ios) | De verzekering (a.k.a. project Griffon) is een nieuwe, innovatieve uitbreiding (`AEPAssurance`) om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen in uw mobiele app dient. Met deze extensie wordt uw app voor betrouwbaarheidsverklaring ingeschakeld. |
 
 
 ## Extensies importeren
 
-Navigeer in Xcode naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en zorg ervoor dat de volgende importbewerkingen deel uitmaken van dit bronbestand.
+Navigeer in Xcode naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en controleer of de volgende importbewerkingen deel uitmaken van dit bronbestand.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -75,19 +75,19 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-Doe het zelfde voor **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
+Doe hetzelfde voor **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** .
 
 ## AppDelegate bijwerken
 
-Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in de Xcode-projectnavigator.
+Navigeer aan **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in de navigator van het Project van Xcode.
 
-1. Vervang de `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` naar de waarde voor het bestand-id van de ontwikkelomgeving die u hebt opgehaald van de tags in [SDK-installatie-instructies genereren](configure-tags.md#generate-sdk-install-instructions).
+1. Vervang de `@AppStorage` waarde `YOUR_ENVIRONMENT_ID_GOES_HERE` voor `environmentFileId` aan de waarde van identiteitskaart van het Dossier van het Milieu van de Ontwikkelomgeving die u van markeringen in [ teruggewonnen produceert SDK installeert instructies ](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
    @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
-1. Voeg de volgende code toe aan de `application(_, didFinishLaunchingWithOptions)` functie.
+1. Voeg de volgende code toe aan de functie `application(_, didFinishLaunchingWithOptions)` .
 
    ```swift
    // Define extensions
@@ -128,19 +128,19 @@ De bovenstaande code doet het volgende:
 
 1. Registreert de vereiste extensies.
 1. Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
-1. Schakelt foutopsporingslogbestand in. Meer details en opties vindt u in het gedeelte [Adobe Experience Platform Mobile SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
-1. Start levenscycluscontrole. Zie [Levenscyclus](lifecycle-data.md) voor meer informatie.
-1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [Toestemming](consent.md) voor meer informatie.
+1. Schakelt foutopsporingslogbestand in. Meer details en de opties kunnen in de [ Mobiele documentatie van SDK van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/) worden gevonden.
+1. Start levenscycluscontrole. Zie [ Levenscyclus ](lifecycle-data.md) stap in het leerprogramma voor meer details.
+1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie ](consent.md) stap 0} van de Toestemming {in het leerprogramma voor meer details.[
 
 >[!IMPORTANT]
 >
->Zorg ervoor dat u bijwerkt `MobileCore.configureWith(appId: self.environmentFileId)` met de `appId` op basis van de `environmentFileId` vanuit de tagomgeving waarvoor u ontwikkelt (ontwikkelen, opvoeren of produceren).
+>Zorg ervoor dat u `MobileCore.configureWith(appId: self.environmentFileId)` bijwerkt met de `appId` op basis van de `environmentFileId` -code uit de tagomgeving waarvoor u ontwikkelt (ontwikkelen, opvoeren of produceren).
 >
 
 >[!SUCCESS]
 >
 >U hebt nu de benodigde pakketten geïnstalleerd en uw project bijgewerkt om de vereiste Adobe Experience Platform Mobile SDK-extensies die u voor de rest van de zelfstudie gaat gebruiken, correct te registreren.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
-Volgende: **[Betrouwbaarheid instellen](assurance.md)**
+Volgende: **[de Verzekering van de opstelling](assurance.md)**

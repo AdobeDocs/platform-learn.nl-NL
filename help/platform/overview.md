@@ -6,7 +6,7 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '154'
 ht-degree: 6%
 
 ---
@@ -34,11 +34,11 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Een klantervaring met Experience Platform</strong>
+    <strong> De klantenervaring van A die door Experience Platform </strong> wordt aangedreven
     </a>
     </div>
     <p>
-    <em>Ontdek hoe Platform kan worden gebruikt om een klantervaring van stroom te voorzien</em>
+    <em> zie hoe het Platform kan worden gebruikt om een klantenervaring te aandrijven </em>
     <p>
   </td>
   <td>
@@ -47,11 +47,11 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-    <strong>Aan de slag met gegevensarchitecten en -engineers</strong>
+    <strong> het Worden begonnen voor gegevensarchitecten en gegevensingenieurs </strong>
     </a>
     </div>
     <p>
-    <em>Aan de slag met handenoefeningen</em>
+    <em> Hands-on oefeningen om begonnen te worden </em>
     <p>
   </td>
   <td>
@@ -60,11 +60,11 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong>Inzicht in bronconnectors</strong>
+    <strong> Begrijpend bronschakelaars </strong>
     </a>
     </div>
     <p>
-    <em>Eenvoudig uw gegevens in te nemen</em>
+    <em> neemt gemakkelijk uw gegevens </em> in
     <p>
   </td>
    <!--

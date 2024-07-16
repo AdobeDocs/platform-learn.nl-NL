@@ -1,6 +1,6 @@
 ---
 title: Overzicht van partnergegevensondersteuning in Real-Time CDP
-description: Meer informatie [!DNL Real-Time Customer Data Platform] ondersteunt full-funnel marketing met behulp van partnergegevens voor gegevensverrijking van de eerste partij en het verkennen van gebruiksgevallen als cookies van derden worden afgekeurd. 
+description: Leer hoe  [!DNL Real-Time Customer Data Platform]  volledige-kanaalmarketing gebruikend partnergegevens voor de verrijking van de eerste-partijgegevens en het prospecteren gebruiksgevallen als derdekoekjes blijven worden afgekeurd. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Overzicht van ondersteuning van partnergegevens in [!DNL Real-Time CDP]
 
-Meer informatie [!DNL Real-Time Customer Data Platform] ondersteunt full-funnel marketing met behulp van partnergegevens voor gegevensverrijking van de eerste partij en het verkennen van gebruiksgevallen als cookies van derden worden afgekeurd. 
+Leer hoe [!DNL Real-Time Customer Data Platform] full-funnel marketing gebruikend partnergegevens voor de verrijking van de eerste-partijgegevens en het prospecteren gebruiksgevallen als derdekoekjes blijft verouderd. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

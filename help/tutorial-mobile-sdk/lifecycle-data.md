@@ -5,8 +5,8 @@ jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '531'
+ht-degree: 1%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 
-Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u levenscyclusgegevens van uw mobiele app verzamelen. De uitbreiding van het Netwerk van Adobe Experience Platform Edge verzendt deze levenscyclusgegevens naar het Netwerk van de Rand van het Platform waar het dan aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen. Meer informatie over de [Levenscyclusextensie](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in de productdocumentatie.
+Met de Levenscyclusextensie van de Adobe Experience Platform Mobile SDK kunt u levenscyclusgegevens van uw mobiele app verzamelen. De uitbreiding van de Edge Network van Adobe Experience Platform verzendt deze levenscyclusgegevens naar de Edge Network van het Platform waar het dan aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie door:sturen. Leer meer over de [ uitbreiding van de Levenscyclus ](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in de productdocumentatie.
 
 
 ## Vereisten
 
-* App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd. Als onderdeel van deze les bent u al begonnen met levenscycluscontrole. Zie [SDK&#39;s installeren - AppDelegate bijwerken](install-sdks.md#update-appdelegate) ter beoordeling.
-* Geregistreerd de uitbreiding van de Verzekering zoals die in wordt beschreven [vorige les](install-sdks.md).
+* App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd. Als onderdeel van deze les bent u al begonnen met levenscycluscontrole. Zie [ SDKs installeren - Update AppDelegate ](install-sdks.md#update-appdelegate) aan overzicht.
+* Registreerde de uitbreiding van de Verzekering zoals die in de [ vorige les ](install-sdks.md) wordt beschreven.
 
 ## Leerdoelstellingen
 
@@ -53,16 +53,16 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
 
-1. Navigeren naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in de Xcode-projectnavigator.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in de Xcode-projectnavigator.
 
-1. Als uw toepassing wordt gestart en de toepassing wordt hervat vanuit een achtergrondstatus, kan iOS mogelijk uw `sceneWillEnterForeground:` afgevaardigde methode en dit is waar u een gebeurtenis van het levenscyclusbegin wilt teweegbrengen. Deze code toevoegen aan `func sceneWillEnterForeground(_ scene: UIScene)`:
+1. Als uw app wordt gestart en de toepassing wordt hervat vanaf een achtergrondstatus, roept iOS mogelijk uw gedelegeerde methode `sceneWillEnterForeground:` aan en u wilt deze methode activeren voor het starten van een levenscyclusgebeurtenis. Deze code toevoegen aan `func sceneWillEnterForeground(_ scene: UIScene)` :
 
    ```swift
    // When in foreground start lifecycle data collection
    MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. Wanneer de app op de achtergrond wordt geplaatst, wilt u de verzameling van levenscyclusgegevens uit de app pauzeren `sceneDidEnterBackground:` gedelegeerde methode. Deze code toevoegen aan  `func sceneDidEnterBackground(_ scene: UIScene)`:
+1. Wanneer de app de achtergrond betreedt, wilt u de gegevensverzameling tijdens de levenscyclus van de gedelegeerde methode van uw app voor `sceneDidEnterBackground:` pauzeren. Deze code toevoegen aan `func sceneDidEnterBackground(_ scene: UIScene)` :
 
    ```swift
    // When in background pause lifecycle data collection
@@ -71,58 +71,58 @@ Nu kunt u uw project bijwerken om de levenscyclusgebeurtenissen te registreren.
 
 ## Valideren met betrouwbaarheid
 
-1. Controleer de [installatie-instructies](assurance.md#connecting-to-a-session) om de simulator of het apparaat aan te sluiten op Betrouwbaarheid.
-1. Verzend de app naar de achtergrond. Controleren op **[!UICONTROL LevenscyclusPauze]** gebeurtenissen in de gebruikersinterface van de verzekering.
-1. Breng de app naar de voorgrond. Controleren op **[!UICONTROL LevenscyclusHervatten]** gebeurtenissen in de gebruikersinterface van de verzekering.
-   ![levenscyclus valideren](assets/lifecycle-lifecycle-assurance.png)
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Verzend de app naar de achtergrond. Controleer of er **[!UICONTROL LifecyclePause]** -gebeurtenissen zijn in de gebruikersinterface van Verzekering.
+1. Breng de app naar de voorgrond. Controleer of er **[!UICONTROL LifecycleResume]** -gebeurtenissen zijn in de gebruikersinterface van Verzekering.
+   ![ bevestigt levenscyclus ](assets/lifecycle-lifecycle-assurance.png)
 
 
 ## Gegevens doorsturen naar Platform Edge Network
 
-De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Experience Platform Mobile SDK. Om deze gebeurtenissen aan het Netwerk van de Rand van het Platform door:sturen:
+De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Experience Platform Mobile SDK. Deze gebeurtenissen doorsturen naar Platform Edge Network:
 
-1. Selecteren **[!UICONTROL Regels]** in de eigenschap Tags.
-   ![Regel maken](assets/rule-create.png)
-1. Selecteren **[!UICONTROL Eerste build]** als de te gebruiken bibliotheek.
-1. Selecteren **[!UICONTROL Nieuwe regel maken]**.
-   ![Nieuwe regel maken](assets/rules-create-new.png)
-1. In de **[!UICONTROL Regel maken]** scherm, enter `Application Status` for **[!UICONTROL Naam]**.
-1. Selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** onder **[!UICONTROL EVENTS]**.
-   ![Dialoogvenster Regel maken](assets/rule-create-name.png)
-1. In de **[!UICONTROL Gebeurtenisconfiguratie]** stap:
-   1. Selecteren **[!UICONTROL Mobiele kern]** als de **[!UICONTROL Extensie]**.
-   1. Selecteren **[!UICONTROL Voorgrond]** als de **[!UICONTROL Type gebeurtenis]**.
-   1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
-      ![Configuratie van regelgebeurtenissen](assets/rule-event-configuration.png)
-1. Terug in de **[!UICONTROL Regel maken]** scherm, selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** naast **[!UICONTROL Mobiele kern - Voorgrond]**.
-   ![Volgende gebeurtenisconfiguratie](assets/rule-event-configuration-next.png)
-1. In de **[!UICONTROL Gebeurtenisconfiguratie]** stap:
-   1. Selecteren **[!UICONTROL Mobiele kern]** als de **[!UICONTROL Extensie]**.
-   1. Selecteren **[!UICONTROL Achtergrond]** als de **[!UICONTROL Type gebeurtenis]**.
-   1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
-      ![Configuratie van regelgebeurtenissen](assets/rule-event-configuration-background.png)
-1. Terug in de **[!UICONTROL Regel maken]** scherm, selecteren ![Toevoegen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Toevoegen]** ondergronds **[!UICONTROL ACTIES]**.
-   ![Handeling voor toevoegen regel](assets/rule-action-button.png)
-1. In de **[!UICONTROL Configuratie van handelingen]** stap:
-   1. Selecteren **[!UICONTROL Adobe Experience Edge Network]** als de **[!UICONTROL Extensie]**.
-   1. Selecteren **[!UICONTROL Door gebeurtenis naar Edge Network]** als de **[!UICONTROL Type handeling]**.
-   1. Selecteren **[!UICONTROL Wijzigingen behouden]**.
-      ![Configuratie van handelingen regel](assets/rule-action-configuration.png)
-1. Selecteren **[!UICONTROL Opslaan in bibliotheek]**.
-   ![Regel - Opslaan in bibliotheek](assets/rule-save-to-library.png)
-1. Selecteren **[!UICONTROL Opbouwen]** om de bibliotheek opnieuw op te bouwen.
-   ![Regel - Opbouwen](assets/rule-build.png)
+1. Selecteer **[!UICONTROL Rules]** in de eigenschap Codes.
+   ![ creeer Regel ](assets/rule-create.png)
+1. Selecteer **[!UICONTROL Initial Build]** als de bibliotheek die u wilt gebruiken.
+1. Selecteer **[!UICONTROL Create New Rule]**.
+   ![ creeer Nieuwe Regel ](assets/rules-create-new.png)
+1. Typ `Application Status` for **[!UICONTROL Name]** in het scherm **[!UICONTROL Create Rule]** .
+1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** hieronder **[!UICONTROL EVENTS]**.
+   ![ creeer de dialoog van de Regel ](assets/rule-create-name.png)
+1. In de stap **[!UICONTROL Event Configuration]** :
+   1. Selecteer **[!UICONTROL Mobile Core]** als de **[!UICONTROL Extension]** .
+   1. Selecteer **[!UICONTROL Foreground]** als de **[!UICONTROL Event Type]** .
+   1. Selecteer **[!UICONTROL Keep Changes]**.
+      ![ Configuratie van de Gebeurtenis van de Regel ](assets/rule-event-configuration.png)
+1. Terug in het **[!UICONTROL Create Rule]** scherm, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** naast **[!UICONTROL Mobile Core - Foreground]** toe.
+   ![ Volgende gebeurtenisconfiguratie ](assets/rule-event-configuration-next.png)
+1. In de stap **[!UICONTROL Event Configuration]** :
+   1. Selecteer **[!UICONTROL Mobile Core]** als de **[!UICONTROL Extension]** .
+   1. Selecteer **[!UICONTROL Background]** als de **[!UICONTROL Event Type]** .
+   1. Selecteer **[!UICONTROL Keep Changes]**.
+      ![ Configuratie van de Gebeurtenis van de Regel ](assets/rule-event-configuration-background.png)
+1. Terug in het **[!UICONTROL Create Rule]** scherm, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **[!UICONTROL Add]** onder **[!UICONTROL ACTIONS]**.
+   ![ Regel voegt Actie ](assets/rule-action-button.png) toe
+1. In de stap **[!UICONTROL Action Configuration]** :
+   1. Selecteer **[!UICONTROL Adobe Experience Edge Network]** als de **[!UICONTROL Extension]** .
+   1. Selecteer **[!UICONTROL Forward event to Edge Network]** als de **[!UICONTROL Action Type]** .
+   1. Selecteer **[!UICONTROL Keep Changes]**.
+      ![ Configuratie van de Actie van de Regel ](assets/rule-action-configuration.png)
+1. Selecteer **[!UICONTROL Save to Library]**.
+   ![ Regel - sparen aan Bibliotheek ](assets/rule-save-to-library.png)
+1. Selecteer **[!UICONTROL Build]** om de bibliotheek opnieuw samen te stellen.
+   ![ Regel - bouw ](assets/rule-build.png)
 
-Zodra u met succes het bezit hebt gebouwd, worden de gebeurtenissen verzonden naar het Netwerk van de Rand van het Platform, en de gebeurtenissen door:sturen aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie.
+Zodra u met succes het bezit hebt gebouwd, worden de gebeurtenissen verzonden naar de Edge Network van het Platform, en de gebeurtenissen door:sturen aan andere toepassingen en de diensten volgens uw gegevensstroomconfiguratie.
 
-U moet **[!UICONTROL Toepassing sluiten (achtergrond)]** en **[!UICONTROL Toepassing starten (voorgrond)]** gebeurtenissen met XDM-gegevens in Verzekering.
+Gebeurtenissen **[!UICONTROL Application Close (Background)]** en **[!UICONTROL Application Launch (Foreground)]** die XDM-gegevens bevatten, worden weergegeven in Verzekering.
 
-![levenscyclus valideren die naar Platform Edge is verzonden](assets/lifecycle-edge-assurance.png)
+![ bevestigt levenscyclus die naar Platform Edge wordt verzonden ](assets/lifecycle-edge-assurance.png)
 
 >[!SUCCESS]
 >
->U hebt nu uw app zo ingesteld dat toepassingsstatusgebeurtenissen (voorgrond, achtergrond) naar het Adobe Experience Platform Edge Network en alle services die u in uw gegevensstroom hebt gedefinieerd, worden verzonden.
+>U hebt nu uw app zo ingesteld dat toepassingsstatusgebeurtenissen (voorgrond, achtergrond) naar de Adobe Experience Platform-Edge Network en alle services die u in uw gegevensstroom hebt gedefinieerd, worden verzonden.
 >
-> Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene feedback wilt delen of suggesties voor toekomstige inhoud wilt hebben, deelt u deze over deze [Experience League Communautaire discussiestuk](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+> Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
-Volgende: **[Gebeurtenisgegevens bijhouden](events.md)**
+Volgende: **[de gebeurtenisgegevens van het Spoor](events.md)**
