@@ -2,9 +2,9 @@
 title: Integratie van Experiencen Cloud met tags implementeren
 description: Leer hoe u de integratie van Soorten publiek, A4T en Klantkenmerken in uw Adobe Experience Cloud-implementatie kunt valideren. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,12 @@ U zou alle vorige lessen in deze zelfstudie moeten voltooien alvorens de instruc
 >
 >Er zijn vele gebruiker-toestemmingsvereisten, rekeningsconfiguraties, en leveringsstappen die worden vereist om deze integratie volledig te gebruiken en die buiten het werkingsgebied van dit leerprogramma zijn. Als u deze integratie nog niet gebruikt in uw huidige implementatie van het Experience Cloud, moet u het volgende overwegen:
 >
->* Herzie de volledige vereisten van de [ Integraties van de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)
->* Herzie de volledige vereisten van [ Analytics voor de integratie van het Doel ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
->* Heb een Beheerder van uw organisatie van het Experience Cloud [ verzoeklevering van deze integraties ](https://www.adobe.com/go/audiences)
+>* Herzie de volledige vereisten van de [ Integraties van de Diensten van de Kern ](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Herzie de volledige vereisten van [ Analytics voor de integratie van het Doel ](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Doelgroepen
 
-[ Soorten publiek ](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in de Audience Manager maken en dit gebruiken om gepersonaliseerde inhoud met Target te leveren.
+[ Soorten publiek ](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in de Audience Manager maken en dit gebruiken om gepersonaliseerde inhoud met Target te leveren.
 
 De belangrijkste vereisten om A4T uit te voeren-die u reeds hebt gedaan-zijn:
 
