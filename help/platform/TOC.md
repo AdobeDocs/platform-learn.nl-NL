@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 6%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 6%
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
    + [Overzicht van Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
+   + [Federale publiekscompositie verbinden en configureren](audiences/connect-and-configure-federated-audience-composition.md)
+   + [Een federatieve publiekscompositie maken](audiences/create-a-federated-audience-composition.md)
    + [Overzicht van Audience Rule builder](audiences/audience-rule-builder-overview.md)
    + [Soorten publiek maken](audiences/create-audiences.md)
    + [Tijdbeperkingen gebruiken](audiences/time-constraints.md)
