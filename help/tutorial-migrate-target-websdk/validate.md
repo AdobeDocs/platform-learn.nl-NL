@@ -1,8 +1,8 @@
 ---
-title: Bevestig de implementaties van het Doel met Web SDK | Doel migreren van at.js 2.x naar Web SDK
+title: Bevestig de implementaties van het Doel met Web SDK - Migreer Doel van at.js 2.x aan Web SDK
 description: Leer hoe te om activiteiten te bevestigen en een implementatie van Adobe Target te zuiveren gebruikend de SDK van het Web van Adobe Experience Platform.
 exl-id: 09b4ebeb-fae9-470d-8ea9-f6e3c7d7da5e
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%

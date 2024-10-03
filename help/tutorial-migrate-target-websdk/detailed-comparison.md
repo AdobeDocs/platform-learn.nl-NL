@@ -1,8 +1,8 @@
 ---
-title: Vergelijking van at.js 2.x met Web SDK | Doel migreren van at.js 2.x naar Web SDK
+title: Vergelijking van at.js 2.x met Web SDK - Migreer Doel van at.js 2.x aan Web SDK
 description: Leer over de verschillen tussen at.js 2.x en het Web SDK van het Platform met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 1%

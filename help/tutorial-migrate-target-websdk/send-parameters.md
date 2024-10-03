@@ -1,8 +1,8 @@
 ---
-title: Parameters verzenden | Doel migreren van at.js 2.x naar Web SDK
+title: Parameters verzenden - Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
-title: Planning | Doel migreren van at.js 2.x naar Web SDK
+title: Planning - Migreer Doel van at.js 2.x aan Web SDK
 description: Leer hoe u uw Adobe Target-implementatie kunt plannen van at.js 2.x naar Adobe Experience Platform Web SDK.
 exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

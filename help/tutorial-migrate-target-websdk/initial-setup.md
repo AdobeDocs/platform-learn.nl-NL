@@ -1,8 +1,8 @@
 ---
-title: Eerste configuratie | Doel migreren van at.js 2.x naar Web SDK
+title: Aanvankelijke opstelling - Migreer Doel van at.js 2.x aan Web SDK
 description: Leer over en opstelling de belangrijke die basiselementen voor uw implementatie van SDK van het Web van het Platform worden vereist
 exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%

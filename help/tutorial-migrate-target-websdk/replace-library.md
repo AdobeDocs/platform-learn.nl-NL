@@ -1,8 +1,8 @@
 ---
-title: De bibliotheek vervangen | Doel migreren van at.js 2.x naar Web SDK
+title: Vervang de bibliotheek - Migreer Doel van at.js 2.x aan Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten bibliotheekoverzicht, implementatieverschillen, en andere opmerkelijke callouts.
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 0%

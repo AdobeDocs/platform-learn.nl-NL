@@ -1,8 +1,8 @@
 ---
-title: Ondersteuning voor verschillende domeinen inschakelen | Doel migreren van at.js 2.x naar Web SDK
+title: Interdomeinondersteuning inschakelen - Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u Adobe Target voor interdomein- en mobiele app configureert voor webbrowserscenario's met gebruik van Web SDK van Experience Platform.
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
