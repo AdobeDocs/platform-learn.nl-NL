@@ -4,7 +4,7 @@ description: Leer hoe te om een schema XDM voor Webgegevens in de interface van 
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Dit is het doel van het Model van de Gegevens van de Ervaring van de Adobe [ ](h
 >
 > Voor demonstratiedoeleinden, bouwen de oefeningen in deze les een voorbeeldschema om inhoud te vangen bekeken en producten die door klanten in de [ Plaats van de Demo van de Luma worden gekocht ](https://luma.enablementadobe.com/content/luma/us/en.html). Terwijl u deze stappen kunt gebruiken om een verschillend schema voor uw eigen doeleinden tot stand te brengen, adviseert men dat u eerst samen met het creëren van het voorbeeldschema volgt om de mogelijkheden van de schemaredacteur te leren.
 
-Meer over schema&#39;s XDM leren, neem het cursus [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) of zie het [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Om meer over schema&#39;s te leren XDM, op de playlist [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) of zie het [ XDM overzicht van het Systeem ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Leerdoelstellingen
 
