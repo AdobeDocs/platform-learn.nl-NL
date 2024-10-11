@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Cloud-toepassingen hebben van oudsher cookies gegenereerd om ap
 1. De koekjes van de eerste partij die door een server van de Adobe worden geplaatst gebruikend de configuratie van CNAME van een domeinnaam
 1. Door JavaScript ingestelde cookies van de eerste partij
 
-Recente browserwijzigingen beperken de duur van dit type cookies. De koekjes van de eerste partij zijn het meest efficiënt wanneer zij gebruikend een klant-bezeten server gebruikend DNS A/AAAA-verslag in tegenstelling tot DNS CNAME worden geplaatst. Met de FPID-functionaliteit (First-party device ID) kunnen klanten die Adobe Experience Platform Web SDK implementeren, apparaat-id&#39;s gebruiken in cookies van servers die DNS A/AAAA-records gebruiken. Deze id&#39;s kunnen vervolgens naar de Adobe worden verzonden en worden gebruikt als zaden om Experience Cloud-id&#39;s (ECID&#39;s) te genereren, wat de primaire id blijft in Adobe Experience Cloud-toepassingen.
+Recente browserwijzigingen beperken de duur van dit type cookies. De koekjes van de eerste partij zijn het meest efficiënt wanneer zij gebruikend een klant-bezeten server gebruikend DNS A/AAAA-verslag in tegenstelling tot DNS CNAME worden geplaatst. De [ eerste-partij apparaat identiteitskaart (FPID) functionaliteit ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) staat klanten die SDK van het Web van Adobe Experience Platform uitvoeren toe om apparaat IDs in koekjes van servers te gebruiken die DNS A/AAAA-verslagen gebruiken. Deze id&#39;s kunnen vervolgens naar de Adobe worden verzonden en worden gebruikt als zaden om Experience Cloud-id&#39;s (ECID&#39;s) te genereren, wat de primaire id blijft in Adobe Experience Cloud-toepassingen.
 
 Hier volgt een kort voorbeeld van de werking van de functionaliteit:
 
@@ -30,7 +30,9 @@ Hier volgt een kort voorbeeld van de werking van de functionaliteit:
 1. De browser van een eindgebruiker vraagt om een webpagina van de webserver of CDN van een klant.
 1. De klant genereert een apparaat-id (FPID) op zijn webserver of CDN (de webserver moet zijn gekoppeld aan de DNS A/AAAA-record van de domeinnaam).
 1. De klant stelt een cookie van de eerste partij in om de FPID in de browser van de eindgebruiker op te slaan.
-1. De Adobe Experience Platform Web SDK-implementatie van de klant vraagt de Edge Network van het platform om een aanvraag, inclusief de FPID in de identiteitskaart.
+1. De Adobe Experience Platform Web SDK-implementatie van de Web SDK van de klant vraagt de Edge Network van het platform om:
+   1. Hiermee neemt u de FPID op in de identiteitskaart.
+   1. Vormt een CNAME voor hun verzoeken van SDK van het Web en vormt hun gegevensstroom met de naam van hun koekje FPID.
 1. De Edge Network van het Experience Platform ontvangt FPID en gebruikt het om een Experience Cloud identiteitskaart (ECID) te produceren.
 1. De reactie van SDK van het Web van het platform verzendt ECID terug naar browser van de eindgebruiker.
 1. Als de `idMigrationEnabled=true` , gebruikt Platform Web SDK JavaScript om ECID als `AMCV_` koekje in browser van de eindgebruiker op te slaan.
