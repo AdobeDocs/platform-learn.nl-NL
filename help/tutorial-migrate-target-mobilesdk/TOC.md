@@ -1,5 +1,5 @@
 ---
-user-guide-title: De implementaties van het Doel in Mobiele SDK van de uitbreiding van het Doel aan de Optimize uitbreiding migreren
+user-guide-title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 user-guide-description: Een hands-on zelfstudie voor de klanten van het Doel die hoe te om Mobiele implementatie SDK van de uitbreiding van het Doel met succes te migreren aan de Optimie uitbreiding behandelt
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -10,15 +10,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: 4488bcc52d7c9a88d106777af968c131cdb4dac1
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 3%
 
 ---
 
 
-# De implementaties van het Doel in Mobiele SDK van de uitbreiding van het Doel aan de Optimize uitbreiding migreren {#migrate-target-to-mobile-sdk-optimize}
+# Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen{#migrate-target-to-mobile-sdk-decisioning}
 
 + [Zelfstudie](overview.md)
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [De migratie plannen](plan-migration.md)
 
-+ [De extensie Doel vergelijken met de extensie Optimaliseren](detailed-comparison.md)
++ [Vergelijk de uitbreiding van het Doel met de Beslissende uitbreiding](detailed-comparison.md)
 
 + [Eerste instelling uitvoeren](initial-setup.md)
 

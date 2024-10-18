@@ -1,14 +1,14 @@
 ---
-title: Parameters verzenden - Doel migreren van at.js 2.x naar Web SDK
+title: Parameters verzenden - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# Parameters verzenden naar doel met gebruik van Platform Web SDK
+# Parameters naar doel verzenden met de extensie Adobe Journey Optimizer - Mobiele beslissingen nemen
 
 De doelimplementaties verschillen per website vanwege de sitearchitectuur, de zakelijke vereisten en de gebruikte functies. De meeste doelimplementaties bevatten het doorgeven van verschillende parameters voor contextuele informatie, doelgroepen en aanbevelingen voor inhoud.
 
@@ -53,7 +53,7 @@ Entiteiteits-parameters voor een specifiek item moeten vooraf met `entity.` word
 
 ## Aankoopparameters
 
-De parameters van de aankoop worden overgegaan op een de bevestigingspagina van het orde na een succesvolle orde en voor de omzettings en optimalisatiedoelstellingen van het Doel gebruikt. Met een Platform Mobile SDK-implementatie met de extensie Optimize worden deze parameters en automatisch toegewezen aan XDM-gegevens die worden doorgegeven als onderdeel van de veldgroep `commerce` .
+De parameters van de aankoop worden overgegaan op een de bevestigingspagina van het orde na een succesvolle orde en voor de omzettings en optimalisatiedoelstellingen van het Doel gebruikt. Met een Platform Mobile SDK-implementatie die de extensie Decisioning gebruikt, worden deze parameters en automatisch toegewezen aan XDM-gegevens die worden doorgegeven als onderdeel van de veldgroep `commerce` .
 
 
 Aankoopgegevens worden doorgegeven aan Target wanneer voor de veldgroep `commerce` `purchases.value` is ingesteld op `1` . De bestellings-id en het totaal van de bestellingen worden automatisch toegewezen aan het `order` -object. Als de array `productListItems` aanwezig is, worden de waarden `SKU` gebruikt voor `productPurchasedId` .
@@ -69,4 +69,4 @@ Daarna, leer hoe te [ de omzettingsgebeurtenissen van het spoordoel ](track-even
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de extensie Doel naar de extensie Optimaliseren. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

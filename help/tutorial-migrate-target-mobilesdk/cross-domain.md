@@ -1,9 +1,9 @@
 ---
-title: Interdomeinondersteuning inschakelen - Doel migreren van at.js 2.x naar Web SDK
+title: Interdomeinondersteuning inschakelen - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie bepalen
 description: Leer hoe u Adobe Target voor interdomein- en mobiele app configureert voor webbrowserscenario's met gebruik van Web SDK van Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ Daarna, leer hoe te [ bijwerk publiek en profielmanuscripten ](update-audiences.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de extensie Doel naar de extensie Optimaliseren. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

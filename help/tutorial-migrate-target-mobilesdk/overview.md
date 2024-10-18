@@ -1,23 +1,23 @@
 ---
-title: Implementaties van de doel-mobiele SDK migreren van de doelextensie naar de extensie Optimaliseren
-description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten het laden van de bibliotheek van JavaScript, het verzenden van parameters, het teruggeven activiteiten, en andere opmerkelijke callouts.
+title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
+description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# Implementaties van de doel-mobiele SDK migreren van de doelextensie naar de extensie Optimaliseren
+# Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 
-Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande implementaties van het Platform voor Adobe-ervaring voor mobiele SDK kunt migreren van de Adobe Target-extensie naar de extensie Optimie.
+Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande implementaties van het Platform voor Adobe-ervaring voor mobiele SDK kunt migreren van de Adobe Target-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
 
-Adobe Experience Platform Mobile SDK is een... De extensie Doel is... De extensie Optimaliseren is...
+Adobe Experience Platform Mobile SDK is een... De extensie Doel is... De extensie Decisioning is..
 
 ## Belangrijkste voordelen
 
-Enkele voordelen van de extensie Optimaliseren zijn:
+Enkele voordelen van de uitbreiding van het Besluit omvatten:
 
 * Opsommingsteken 1
 * Opsommingsteken 2
@@ -40,4 +40,4 @@ Als u deze zelfstudie wilt voltooien, moet u eerst:
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de extensie Doel naar de extensie Optimaliseren. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

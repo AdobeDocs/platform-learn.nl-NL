@@ -1,16 +1,16 @@
 ---
-title: Bevestig de implementaties van het Doel met Web SDK - Migreer Doel van at.js 2.x aan Web SDK
-description: Leer hoe te om activiteiten te bevestigen en een implementatie van Adobe Target te zuiveren gebruikend de SDK van het Web van Adobe Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Doelimplementaties valideren in de Adobe Journey Optimizer - Mobiele extensie beslissen
+description: Leer hoe u activiteiten valideert en fouten opspoort in een Adobe Target-implementatie met behulp van de extensie Adobe Journey Optimizer - Besluit over mobiele apparaten.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Valideer de implementatie van de SDK van het Web van het Platform
+# De Adobe Journey Optimizer valideren - De implementatie van de mobiele extensie bepalen
 
-Nadat u uw doelimplementatie van de uitbreiding van het Doel aan de Optimize uitbreiding hebt gemigreerd, is het belangrijk om alles te bevestigen behoorlijk werkt alvorens om het even welke veranderingen in uw productieapp te publiceren. Adobe beveelt het volgende aan, dat in detail op deze pagina wordt besproken:
+Nadat u uw implementatie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen hebt gemigreerd, is het belangrijk om alles te bevestigen behoorlijk werkt alvorens om het even welke veranderingen in uw productie app te publiceren. Adobe beveelt het volgende aan, dat in detail op deze pagina wordt besproken:
 
 * Voer een technische bevestiging uit om ervoor te zorgen de basisimplementatie en de Mobiele SDK van het Platform verzoeken en de reacties correct kijken
 * Zorgen dat doelactiviteiten correct worden geleverd en weergegeven
@@ -54,10 +54,10 @@ Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur
 |---|---|
 | | |
 
-Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u er zeker van zijn dat de implementatie van Platform Mobile SDK met de extensie Optimize gereed is om over te gaan naar de productie.
+Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u er zeker van zijn dat de implementatie van Platform Mobile SDK met de extensie Decisioning gereed is om over te gaan naar de productie.
 
 Daarna, leer hoe te [ een implementatie van het Doel problemen oplossen gebruikend het Web SDK van het Platform ](debugging.md).
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de extensie Doel naar de extensie Optimaliseren. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
