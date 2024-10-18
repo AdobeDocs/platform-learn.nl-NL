@@ -1,41 +1,41 @@
 ---
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
-description: Leer over de verschillen tussen at.js 2.x en het Web SDK van het Platform met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 
-De zelfstandige Adobe Target at.js-bibliotheek verschilt aanzienlijk van Platform Web SDK. De volgende tabellen zijn een referentie om u te helpen gebieden van uw implementatie te evalueren waarop u zich tijdens het migratieproces moet concentreren.
+De Adobe Journey Optimizer - beslissingsextensie verschilt van de Adobe Target-extensie voor mobiele apps. De volgende tabellen zijn een referentie om u te helpen gebieden van uw implementatie te evalueren waarop u zich tijdens het migratieproces moet concentreren.
 
-Na het herzien van de informatie hieronder en het beoordelen van uw huidige technische implementatie at.js, zou u het volgende moeten kunnen begrijpen:
+Na het herzien van de informatie hieronder en het beoordelen van uw huidige technische implementatie van de uitbreiding van het Doel, zou u het volgende moeten kunnen begrijpen:
 
-- Welke eigenschappen van het Doel door het Web SDK van het Platform worden gesteund
-- Welke functies at.js hebben de equivalenten van SDK van het Web van het Platform
-- Hoe de montages van het Doel met het Web SDK van het Platform worden toegepast
-- Hoe de gegevensstroom van at.js en het Web SDK van het Platform verschillen
+- Welke doelfuncties door Adobe Journey Optimizer worden ondersteund - Beslissing
+- Welke Adobe Target-extensiefuncties hebben Adobe Journey Optimizer-beslissingsequivalenten
+- Hoe de montages van het Doel met Adobe Journey Optimizer worden toegepast - Beslissing
+- De verschillen in de gegevensstroom van de Adobe Target-extensie en de Adobe Journey Optimizer-beslissingsextensie
 
 Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punten hieronder zijn behandeld meer in detail door dit leerprogramma.
 
 ## Functievergelijking
 
-| | Doelextensie | Decisioning-extensie (Doel via Edge) | AJO Code-based Ervaringen (Berichten SDK) |
+| | Doelextensie | Decisioning-extensie (Doel via Edge) |
 |---|---|---|---|
-| Prefetmodus | Ondersteund | Ondersteund | Ondersteund |
-| Uitvoeren, modus | Ondersteund | Niet ondersteund | Niet ondersteund |
-| Aangepaste parameters | Ondersteund | Parameters per box worden niet ondersteund | Niet ondersteund |
-| Toegangspubliek | Ondersteund | Ondersteund | Ondersteund via het campagnepubliek en holdout-instellingen voor experimenten |
-| Segmentering van het publiek met meetgegevens van mobiele levenscyclus | Ondersteund | Ondersteund via regels voor gegevensverzameling | Gericht op ervaring wordt momenteel niet ondersteund |
-| thirdPartyId (mbox3rdPartyId) | Ondersteund via Identity Map- en namespace-configuratie in de gegevensstroom | Niet ondersteund |
-| Meldingen (weergeven, klikken) | Ondersteund | Ondersteund | Ondersteund |
-| Reactietokens | Ondersteund | Ondersteund | Geen equivalent voor het retourneren van specifieke metagegevens voor campagne buiten de inhoud |
-| Dynamische aanbiedingen | Ondersteund | Ondersteund | De symbolische weergave van profiel- en beslissingsitems in inhoud wordt ondersteund |
-| Analyses voor doel (A4T) | Alleen client | Client en server | Niet ondersteund |
-| Mobiele voorvertoningen (QA-modus) | Ondersteund | Beperkte ondersteuning | In uitvoering |
+| Prefetmodus | Ondersteund | Ondersteund |
+| Uitvoeren, modus | Ondersteund | Niet ondersteund |
+| Aangepaste parameters | Ondersteund | Parameters per box worden niet ondersteund |
+| Toegangspubliek | Ondersteund | Ondersteund |
+| Segmentering van het publiek met meetgegevens van mobiele levenscyclus | Ondersteund | Ondersteund via regels voor gegevensverzameling |
+| thirdPartyId (mbox3rdPartyId) | Ondersteund via Identity Map- en namespace-configuratie in de gegevensstroom |
+| Meldingen (weergeven, klikken) | Ondersteund | Ondersteund |
+| Reactietokens | Ondersteund | Ondersteund |
+| Dynamische aanbiedingen | Ondersteund | Ondersteund |
+| Analyses voor doel (A4T) | Alleen client | Client en server |
+| Mobiele voorvertoningen (QA-modus) | Ondersteund | Beperkte ondersteuning |
 
 
 
@@ -66,13 +66,13 @@ De uitbreiding van het Doel kan met diverse montages in worden gevormd en worden
 
 ## Vergelijking systeemdiagram
 
-De volgende diagrammen zouden u moeten helpen de verschillen van de gegevensstroom tussen een implementatie van het Doel begrijpen gebruikend at.js en een implementatie gebruikend het Web SDK van het Platform.
+De volgende diagrammen zouden u moeten helpen de verschillen van de gegevensstroom tussen een implementatie van het Doel begrijpen gebruikend Adobe Journey Optimizer - beslissende uitbreiding en een implementatie gebruikend de uitbreiding van Adobe Target.
 
 ### Doeluitbreidingssysteemdiagram
 
 
 
-### Decisioning extensionsystem diagram
+### Schema voor extensiesysteem voor besluitvorming
 
 
 
