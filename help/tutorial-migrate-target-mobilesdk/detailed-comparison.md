@@ -1,9 +1,9 @@
 ---
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punte
 
 ## Functievergelijking
 
-| | Doelextensie | Decisioning-extensie (Doel via Edge) |
-|---|---|---|---|
+| Functie | Doelextensie | Decisioning-extensie (Doel via Edge) |
+|---|---|---|
 | Prefetmodus | Ondersteund | Ondersteund |
 | Uitvoeren, modus | Ondersteund | Niet ondersteund |
 | Aangepaste parameters | Ondersteund | Parameters per box worden niet ondersteund |
