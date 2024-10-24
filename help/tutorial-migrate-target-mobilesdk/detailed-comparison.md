@@ -1,9 +1,9 @@
 ---
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Als u aan het Web SDK van het Platform nieuw bent, maak u geen zorgen - de punte
 | Aangepaste parameters | Ondersteund | Parameters per box worden niet ondersteund |
 | Toegangspubliek | Ondersteund | Ondersteund |
 | Segmentering van het publiek met meetgegevens van mobiele levenscyclus | Ondersteund | Ondersteund via regels voor gegevensverzameling |
-| thirdPartyId (mbox3rdPartyId) | Ondersteund via Identity Map- en namespace-configuratie in de gegevensstroom |
+| thirdPartyId (mbox3rdPartyId) | Ondersteund | Ondersteund via Identity Map- en namespace-configuratie in de gegevensstroom |
 | Meldingen (weergeven, klikken) | Ondersteund | Ondersteund |
 | Reactietokens | Ondersteund | Ondersteund |
 | Dynamische aanbiedingen | Ondersteund | Ondersteund |

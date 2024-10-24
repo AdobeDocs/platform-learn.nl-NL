@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '934'
 ht-degree: 6%
 
 ---
@@ -31,13 +31,12 @@ ht-degree: 6%
    + [Overzicht](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Eind-aan-eind demonstratie](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Overzicht van B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Overzicht van B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Campagnes ordenen met Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) {target="_blank"}
 + [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
-   + [AI-assistent gebruiken](/help/platform/admin/ai-assistant.md)
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
    + [Sandboxen gebruiken](/help/platform/admin/use-sandboxes.md)
    + [Objecten kopiëren tussen sandboxen](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 6%
    + [Ontwikkelaars toevoegen](/help/platform/admin/add-developers.md)
    + [Productbeheerders toevoegen](/help/platform/admin/add-product-administrators.md)
    + [Op kenmerken gebaseerd toegangsbeheer configureren](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI-assistent {#ai-assistant}
+   + [Overzicht](/help/platform/ai-assistant/overview.md)
+   + [Publiek opruimen](/help/platform/ai-assistant/find-unused-audiences.md)
 + Soorten publiek en segmentatie {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
