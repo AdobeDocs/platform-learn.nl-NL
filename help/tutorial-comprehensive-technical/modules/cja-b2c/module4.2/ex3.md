@@ -3,7 +3,7 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - GCP en BigQuery aansluiten op Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Het enige ding om hier te doen is de naam van het toestemmingsscherm op het **ge
 
 | Naamgeving | Voorbeeld |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |
 
 ![ demo ](./images/ex2/6-3.png)
 
@@ -305,7 +305,7 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -325,8 +325,8 @@ Gebruik deze naamgevingsconventie:
 
 | Credentials voor BigQuery Connector | Waarde | Voorbeeld |
 | ----------------- |-------------| -------------| 
-| Accountnaam | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
-| Beschrijving | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
+| Accountnaam | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
+| Beschrijving | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
 
 Dat zou je iets als dit moeten geven:
 

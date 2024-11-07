@@ -3,7 +3,7 @@ title: CDP in real time - bouw een segment en neem actie - verzend uw segment na
 description: CDP in real time - bouw een segment en neem actie - verzend uw segment naar Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 0%
@@ -16,23 +16,23 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 Controleer uw gegevensstroom
 
-De Adobe Target-bestemming in Real-Time CDP is verbonden met de gegevensstroom die wordt gebruikt om gegevens in te voeren in het Edge-netwerk van de Adobe. Als u uw Adobe Target-bestemming wilt instellen, moet u eerst controleren of uw gegevensstroom al is ingeschakeld voor Adobe Target. Uw datastram werd gevormd in [ Uitoefening 0.2 creeer uw Datasstream ](./../../../modules/gettingstarted/gettingstarted/ex2.md) en werd genoemd `--demoProfileLdap-- - Demo System Datastream`.
+De Adobe Target-bestemming in Real-Time CDP is verbonden met de gegevensstroom die wordt gebruikt om gegevens in te voeren in het Edge-netwerk van de Adobe. Als u uw Adobe Target-bestemming wilt instellen, moet u eerst controleren of uw gegevensstroom al is ingeschakeld voor Adobe Target. Uw datastram werd gevormd in [ Uitoefening 0.2 creeer uw Datasstream ](./../../../modules/gettingstarted/gettingstarted/ex2.md) en werd genoemd `--aepUserLdap-- - Demo System Datastream`.
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/), dan klik **Datastreams** of **Datastreams (Beta)**.
 
 ![ Ingestie van Gegevens ](./images/atdestds1.png)
 
-Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxId--` moet zijn.
+Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
-Zoek in Datastreams naar de gegevensstroom met de naam `--demoProfileLdap-- - Demo System Datastream` . Klik op de gegevensstroom om deze te openen.
+Zoek in Datastreams naar de gegevensstroom met de naam `--aepUserLdap-- - Demo System Datastream` . Klik op de gegevensstroom om deze te openen.
 
 ![ Ingestie van Gegevens ](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Dan zie je dit.
 
 In **vorm nieuw bestemmings** scherm, moet u twee dingen vormen:
 
-- Naam: gebruik de naam `--demoProfileLdap-- - Adobe Target (Web)`, die als dit zou moeten kijken: **vangeluw - Adobe Target (Web)**.
-- Identiteitskaart van de gegevensstroom: u moet de gegevensstroom selecteren die u in [ Uitoefening 0.2 vormde creeer uw DataStream ](./../../../modules/gettingstarted/gettingstarted/ex2.md). De naam van de gegevensstroom moet zijn: `--demoProfileLdap-- - Demo System Datastream` .
+- Naam: gebruik de naam `--aepUserLdap-- - Adobe Target (Web)`, die als dit zou moeten kijken: **vangeluw - Adobe Target (Web)**.
+- Identiteitskaart van de gegevensstroom: u moet de gegevensstroom selecteren die u in [ Uitoefening 0.2 vormde creeer uw DataStream ](./../../../modules/gettingstarted/gettingstarted/ex2.md). De naam van de gegevensstroom moet zijn: `--aepUserLdap-- - Demo System Datastream` .
 
 Klik **daarna**.
 
@@ -91,7 +91,7 @@ Uw bestemming wordt nu gecreeerd en zal in de lijst worden getoond. Selecteer uw
 
 ![ AT ](./images/atdest7.png)
 
-In de lijst van beschikbare segmenten, selecteer het segment u in [ Uitoefening 6.1 creeerde een segment ](./ex1.md), dat `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` wordt genoemd. Dan, klik **daarna**.
+In de lijst van beschikbare segmenten, selecteer het segment u in [ Uitoefening 6.1 creeerde een segment ](./ex1.md), dat `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` wordt genoemd. Dan, klik **daarna**.
 
 ![ AT ](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Klik op de titel van uw activiteit in de linkerbovenhoek om de naam ervan te wij
 
 Gebruik voor de naam:
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![ RTCDP ](./images/atform8.png)
 

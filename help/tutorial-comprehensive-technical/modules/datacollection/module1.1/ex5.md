@@ -3,7 +3,7 @@ title: Foundation - Setup van Adobe Experience Platform Data Collection en de We
 description: Foundation - Setup van Adobe Experience Platform Data Collection en de Web SDK-extensie - Adobe Analytics en Adobe Audience Manager implementeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Voor het geval u gegevens wilt verzenden die door Web SDK aan Adobe Analytics en
 
 Ga naar [ https://experience.adobe.com/launch/ ](https://experience.adobe.com/launch/) en ga naar **Datastreams**.
 
-Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxId--` moet zijn. Open uw specifieke gegevensstroom, die `--demoProfileLdap-- - Demo System Datastream` wordt genoemd.
+Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn. Open uw specifieke gegevensstroom, die `--aepUserLdap-- - Demo System Datastream` wordt genoemd.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 

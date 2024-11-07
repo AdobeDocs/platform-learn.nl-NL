@@ -3,7 +3,7 @@ title: Intelligente services - Voorbereiding van AI-gegevens van klanten (Ingest
 description: AI van de klant - Gegevensvoorbereiding (samenvatting)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Geef uw schema nu een naam.
 
 Als naam voor ons schema, zult u dit gebruiken:
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 Als voorbeeld, voor ldap **vangeluw**, zou dit de naam van het schema moeten zijn:
 
@@ -111,7 +111,7 @@ In het volgende scherm, selecteer de dataset u in de vorige oefening creeerde, d
 
 ![ Dataset ](./images/createds1.png)
 
-Gebruik `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset` als naam voor uw gegevensset. Klik **Afwerking**.
+Gebruik `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` als naam voor uw gegevensset. Klik **Afwerking**.
 
 ![ Dataset ](./images/createds2.png)
 

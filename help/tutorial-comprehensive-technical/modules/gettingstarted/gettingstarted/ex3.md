@@ -3,7 +3,7 @@ title: Aan de slag - Maak uw DataStream
 description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** .
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1a.png)
 
-Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxId--` moet zijn.
+Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--demoProfileLdap-- - Demo System Datastream` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - Demo System Datastream` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ Dan zie je dit. Voor **Datastreams**, zult u momenteel een dummywaarde zien die 
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig13.png)
 
-Zorg ervoor om uw **Datastream** te hebben geselecteerd. TIP: U kunt de resultaten in het vervolgkeuzemenu eenvoudig filteren door uw `--demoProfileLdap--` te typen.
+Zorg ervoor om uw **Datastream** te hebben geselecteerd. TIP: U kunt de resultaten in het vervolgkeuzemenu eenvoudig filteren door uw `--aepUserLdap--` te typen.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** .
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1a.png)
 
-Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxId--` moet zijn.
+Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--demoProfileLdap-- - Demo System Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele App (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - Demo System Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele App (Globale v1.1)**. Klik **sparen**.
 
 Klik op **[!UICONTROL Save]**.
 
@@ -144,7 +144,7 @@ Voor de **Edge Network van Adobe Experience Platform** uitbreiding, klik **vorme
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig12m.png)
 
-Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxId--` en de datastream wordt `--demoProfileLdap-- - Demo System Datastream (Mobile)` genoemd.
+Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxName--` en de datastream wordt `--aepUserLdap-- - Demo System Datastream (Mobile)` genoemd.
 
 Voor het **domein van de Edge Network**, gelieve het standaarddomein te gebruiken dat **edge.adobedc.net** is.
 

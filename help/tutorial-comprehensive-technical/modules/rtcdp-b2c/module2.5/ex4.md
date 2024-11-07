@@ -3,7 +3,7 @@ title: Gegevensverzameling en doorsturen aan serverzijde in realtime - Een Googl
 description: Google Cloud Function maken en configureren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Dan zie je dit.
 
 Maak de volgende keuzen:
 
-- **Naam van de Functie**: `--demoProfileLdap---event-forwarding`
+- **Naam van de Functie**: `--aepUserLdap---event-forwarding`
 - **Gebied**: selecteer om het even welk gebied
 - **Type van Trekker**: uitgezochte **HTTP**
 - **Authentificatie**: uitgezochte **staat unauthenticated aanroepen** toe

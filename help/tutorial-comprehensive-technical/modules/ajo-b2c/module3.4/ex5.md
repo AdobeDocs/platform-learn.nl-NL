@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Zakelijke gebeurtenissen
 description: In deze sectie wordt uitgelegd hoe u de mogelijkheid voor bedrijfsgebeurtenissen kunt gebruiken om een gebruiksgeval van een "item terug in voorraad" uit te voeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Klik **creëren Gebeurtenis**.
 
 Voer de volgende waarden in het formulier voor het maken van gebeurtenissen in:
 
-- **Naam**: `--demoProfileLdap--ItemBackInStock`. Bijvoorbeeld: **vangeluwItemBackInStock**
+- **Naam**: `--aepUserLdap--ItemBackInStock`. Bijvoorbeeld: **vangeluwItemBackInStock**
 - **Beschrijving**: Deze gebeurtenis wordt teweeggebracht wanneer een product terug in voorraad is
 - **Type**: uitgezochte **Zaken** in de daling neer
 
@@ -66,7 +66,7 @@ Op de linkerkant, breid het `--aepTenantId--` voorwerp uit, breid het voorwerp *
 
 ![ Journey Optimizer ](./images/23.8-7.png)
 
-Voor het gebied **eventName**, ga de volgende waarde in: `--demoProfileLdap--ItemBackInStock`. Bijvoorbeeld: vangeluwItemBackInStock.
+Voor het gebied **eventName**, ga de volgende waarde in: `--aepUserLdap--ItemBackInStock`. Bijvoorbeeld: vangeluwItemBackInStock.
 Klik **OK**.
 
 ![ Journey Optimizer ](./images/23.8-8.png)
@@ -87,14 +87,14 @@ U kunt deze zakelijke gebeurtenis en het bericht nu gebruiken voor een reis. Ga 
 
 Rechts ziet u een formulier waarin u de naam en de beschrijving van het transport moet vermelden. Voer de volgende waarden in:
 
-- **Naam**: `--demoProfileLdap-- - Item back in stock journey`. Bijvoorbeeld: vangeluw - Item terug in de aandelenreis
+- **Naam**: `--aepUserLdap-- - Item back in stock journey`. Bijvoorbeeld: vangeluw - Item terug in de aandelenreis
 - **Beschrijving**: Deze reis verzendt SMS wanneer een punt terug in voorraad aan bezoeker is die een belang hebben getoond.
 
 Klik **OK**.
 
 ![ Journey Optimizer ](./images/bej11.png)
 
-In het linkermenu, onder **Gebeurtenissen**, onderzoek naar uw ldap. U vindt de eerder gemaakte bedrijfsgebeurtenis `--demoProfileLdap--ItemBackInStock` . Sleep en zet deze gebeurtenis neer op het canvas, aangezien dit het uitgangspunt van de reis zal zijn.
+In het linkermenu, onder **Gebeurtenissen**, onderzoek naar uw ldap. U vindt de eerder gemaakte bedrijfsgebeurtenis `--aepUserLdap--ItemBackInStock` . Sleep en zet deze gebeurtenis neer op het canvas, aangezien dit het uitgangspunt van de reis zal zijn.
 
 ![ Journey Optimizer ](./images/bej12.png)
 
@@ -105,7 +105,7 @@ De **Gelezen configuratie van het Segment** verwacht u om het segment te selecte
 
 ![ Journey Optimizer ](./images/bej13.png)
 
-In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
+In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/bej14.png)
 
@@ -200,14 +200,14 @@ U moet nu de volgende regel van `xdmEntity` vervangen...
 }
 ```
 
-...door deze lijn, zorg ervoor om field eventName te verifiëren zoals het zou moeten zeggen `--demoProfileLdap--ItemBackInStock`, die de voorwaarde vertegenwoordigt u in uw bedrijfsgebeurtenis hebt gespecificeerd om uw reis te teweegbrengen.
+...door deze lijn, zorg ervoor om field eventName te verifiëren zoals het zou moeten zeggen `--aepUserLdap--ItemBackInStock`, die de voorwaarde vertegenwoordigt u in uw bedrijfsgebeurtenis hebt gespecificeerd om uw reis te teweegbrengen.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

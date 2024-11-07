@@ -3,7 +3,7 @@ title: Het HTTP API-eindpunt in Adobe Experience Platform configureren
 description: Het HTTP API-eindpunt in Adobe Experience Platform configureren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -28,7 +28,7 @@ In het linkermenu, ga naar **Bronnen** en rol neer in de **Broncatalogus** tot u
 
 ![ Ingestie van Gegevens ](./images/kaep1.png)
 
-Klik **Nieuwe rekening**. Gebruik `--demoProfileLdap-- - Kafka` als naam voor uw verbinding van HTTP API, in dit geval **vangeluw - Kafka**. Laat checkbox voor **Compatible XDM** toe. Klik **verbinden met bron**.
+Klik **Nieuwe rekening**. Gebruik `--aepUserLdap-- - Kafka` als naam voor uw verbinding van HTTP API, in dit geval **vangeluw - Kafka**. Laat checkbox voor **Compatible XDM** toe. Klik **verbinden met bron**.
 
 ![ Ingestie van Gegevens ](./images/kaep2.png)
 

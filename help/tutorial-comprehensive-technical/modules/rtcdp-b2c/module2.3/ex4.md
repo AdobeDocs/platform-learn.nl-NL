@@ -3,7 +3,7 @@ title: In real time CDP - Bouw een segment en neem actie - verzend uw segment na
 description: In real time CDP - Bouw een segment en neem actie - verzend uw segment naar een S3-bestemming
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -38,7 +38,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 In **creeer het 1} scherm van het Emmertje {, moet u twee dingen vormen:**
 
-- Naam: gebruik de naam `aepmodulertcdp--demoProfileLdap--` . Als voorbeeld, in deze oefening is de emmernaam **aepmodulertcdpvangeluw**
+- Naam: gebruik de naam `aepmodulertcdp--aepUserLdap--` . Als voorbeeld, in deze oefening is de emmernaam **aepmodulertcdpvangeluw**
 - Regio: gebruik de regio **EU (Frankfurt) eu-central-1**
 
 ![ ETL ](./images/bucketname.png)
@@ -69,7 +69,7 @@ In het linkermenu, klik **Gebruikers**. U zult dan het **scherm van Gebruikers**
 
 Configureer vervolgens de gebruiker:
 
-- Gebruikersnaam: gebruik `s3_--demoProfileLdap--_rtcdp` als naam, dus in dit voorbeeld is de naam `s3_vangeluw_rtcdp` .
+- Gebruikersnaam: gebruik `s3_--aepUserLdap--_rtcdp` als naam, dus in dit voorbeeld is de naam `s3_vangeluw_rtcdp` .
 - Het toegangstype van AWS: uitgezochte **sleutel van de Toegang - Programmatische toegang**.
 
 Klik **daarna: Toestemmingen**.
@@ -121,7 +121,7 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ Als naamgevingsconventie kunt u het volgende gebruiken:
 
 | Toegangstoets-id | Geheime toegangstoets |
 |:-----------------------:| :-----------------------:|
-| Naam | `AWS - S3 - --demoProfileLdap--` |
-| Beschrijving | `AWS - S3 - --demoProfileLdap--` |
-| Naam emmertje | `aepmodulertcdp--demoProfileLdap--` |
+| Naam | `AWS - S3 - --aepUserLdap--` |
+| Beschrijving | `AWS - S3 - --aepUserLdap--` |
+| Naam emmertje | `aepmodulertcdp--aepUserLdap--` |
 | Mappad | / |
 
 Klik **daarna**.

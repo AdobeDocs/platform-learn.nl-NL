@@ -3,7 +3,7 @@ title: Query-service - Power BI/Tableau
 description: Query-service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Selecteer uw vraag en klik **Dataset van de Output**.
 
 ![ onderzoek-vraag-voor-ctas.png ](./images/search-query-for-ctasa.png)
 
-Ga `--demoProfileLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en druk de **knoop van de Vraag van de Looppas**
+Ga `--aepUserLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en druk de **knoop van de Vraag van de Looppas**
 
 ![ create-ctas-dataset.png ](./images/create-ctas-dataset.png)
 

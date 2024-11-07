@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS-actie en meer - Aange
 description: Adobe Journey Optimizer - External Weather API, SMS-actie en meer - Aangepaste acties definiëren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -46,7 +46,7 @@ Er verschijnt een leeg actiepopup.
 
 ![ Demo ](./images/emptyact.png)
 
-Gebruik `--demoProfileLdap--TextSlack` als naam voor de handeling. In dit voorbeeld is de naam van de handeling `vangeluwTextSlack` .
+Gebruik `--aepUserLdap--TextSlack` als naam voor de handeling. In dit voorbeeld is de naam van de handeling `vangeluwTextSlack` .
 
 Stel Beschrijving in op: `Send Text to Slack` .
 

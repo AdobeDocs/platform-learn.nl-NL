@@ -3,7 +3,7 @@ title: Foundation - Real-time klantprofiel - Visualiseer uw eigen real-time klan
 description: Foundation - Real-time klantprofiel - Visualiseer uw eigen real-time klantprofiel - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 0%
@@ -141,10 +141,10 @@ Klik **uitgeven Project**.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api14.png)
 
-Voer een naam en beschrijving in voor uw integratie. We gebruiken `AEP API --demoProfileLdap--` als naamgevingsconventie. Vervang ldap door uw ldap.
+Voer een naam en beschrijving in voor uw integratie. We gebruiken `AEP API --aepUserLdap--` als naamgevingsconventie. Vervang ldap door uw ldap.
 Als uw LDAP bijvoorbeeld vangeluw is, worden de naam en beschrijving van uw integratie gewijzigd in AEP API vangeluw.
 
-Ga `AEP API --demoProfileLdap--` als **Titel van het Project** in. Klik **sparen**.
+Ga `AEP API --aepUserLdap--` als **Titel van het Project** in. Klik **sparen**.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api15.png)
 
@@ -307,11 +307,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik **verzenden** om uw verzoek naar Platform te verzenden.
 
@@ -478,11 +478,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik de blauwe **verzenden** knoop en verifieer de reactie.
 
@@ -512,11 +512,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik de blauwe **verzenden** knoop en verifieer de reactie.
 
@@ -570,11 +570,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik **verzenden** om uw verzoek naar Platform te verzenden.
 

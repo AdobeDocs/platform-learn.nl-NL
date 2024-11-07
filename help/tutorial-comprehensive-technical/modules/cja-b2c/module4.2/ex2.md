@@ -3,7 +3,7 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - Maak uw eerste query in BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Voor **identiteitskaart van de Dataset**, gebruik de hieronder noemende overeenk
 
 | Naamgeving | Voorbeeld |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![ demo ](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ U zult dan een nieuwe popup zien, waar uw **Naam van het Project** en **Naam van
 
 | Naamgeving | Voorbeeld |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 U moet nu een tabelnaam invoeren. Gebruik deze naamgevingsconventie:
 
 | Naamgeving | Voorbeeld |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![ demo ](./images/ex3/16.png)
 
 Klik **OPSLAAN**.
 
-Het kan enige tijd duren tot de gegevens klaar zijn in de tabel die u hebt gemaakt. Vernieuw na een paar minuten de browser. U zou dan binnen uw dataset de `--demoProfileLdap--_GAdataTableBigquery` lijst onder **Ontdekkingsreiziger** binnen uw project BigQuery moeten zien.
+Het kan enige tijd duren tot de gegevens klaar zijn in de tabel die u hebt gemaakt. Vernieuw na een paar minuten de browser. U zou dan binnen uw dataset de `--aepUserLdap--_GAdataTableBigquery` lijst onder **Ontdekkingsreiziger** binnen uw project BigQuery moeten zien.
 
 ![ demo ](./images/ex3/19.png)
 

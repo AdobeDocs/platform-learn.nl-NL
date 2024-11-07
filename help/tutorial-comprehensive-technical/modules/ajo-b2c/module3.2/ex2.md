@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Een e
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Een externe gegevensbron definiëren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -73,7 +73,7 @@ Ga terug naar **Adobe Journey Optimizer**, aan uw lege **Externe Gegevens Source
 
 ![ Demo ](./images/emptyds.png)
 
-Gebruik `--demoProfileLdap--WeatherApi` als naam voor de gegevensbron. In dit voorbeeld is de naam van de gegevensbron `vangeluwWeatherApi ` .
+Gebruik `--aepUserLdap--WeatherApi` als naam voor de gegevensbron. In dit voorbeeld is de naam van de gegevensbron `vangeluwWeatherApi ` .
 
 Stel Beschrijving in op: `Access to the Open Weather Map` .
 
@@ -106,7 +106,7 @@ Configureer uw FieldGroup als volgt om de verwachte API-aanvraag af te stemmen:
 
 >[!IMPORTANT]
 >
->De naam van de veldgroep moet uniek zijn. Gebruik de volgende naamgevingsconventie: `--demoProfileLdap--WeatherByCity` in dit geval moet de naam `vangeluwWeatherByCity` zijn
+>De naam van de veldgroep moet uniek zijn. Gebruik de volgende naamgevingsconventie: `--aepUserLdap--WeatherByCity` in dit geval moet de naam `vangeluwWeatherByCity` zijn
 
 ![ Demo ](./images/fg1.png)
 

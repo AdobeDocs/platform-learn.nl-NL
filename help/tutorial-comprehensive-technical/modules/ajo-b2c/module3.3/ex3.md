@@ -3,7 +3,7 @@ title: Offer decisioning - Test uw besluit
 description: Offer decisioning - Test uw besluit
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## 3.3.3.1 De gegevensstroom bijwerken
 
-In [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md), creeerde u uw eigen **[!UICONTROL Datastream]**. Vervolgens hebt u de naam `--demoProfileLdap-- - Demo System Datastream` gebruikt.
+In [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md), creeerde u uw eigen **[!UICONTROL Datastream]**. Vervolgens hebt u de naam `--aepUserLdap-- - Demo System Datastream` gebruikt.
 
 In deze oefening, moet u dat **[!UICONTROL Datastream]** vormen om met **[!DNL Offer Decisioning]** te werken.
 
 Om dat te doen, ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Dan zie je dit. Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** .
 
-Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxId--` moet zijn.
+Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
-Zoek naar uw **[!UICONTROL Datastream]**, die `--demoProfileLdap-- - Demo System Datastream` wordt genoemd. Klik op de **[!UICONTROL Datastream]** om deze te openen.
+Zoek naar uw **[!UICONTROL Datastream]**, die `--aepUserLdap-- - Demo System Datastream` wordt genoemd. Klik op de **[!UICONTROL Datastream]** om deze te openen.
 
 ![ WebSDK ](./images/websdk1.png)
 
@@ -42,7 +42,7 @@ Uw **[!UICONTROL Datastream]** is nu klaar om te werken met **[!DNL Offer Decisi
 
 ## 3.3.3.2 Configureer uw Adobe Experience Platform Data Collection Client-eigenschap om persoonlijke aanbiedingen aan te vragen
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/), aan **[!UICONTROL Client]**. Zoek naar uw eigenschappen van de Inzameling van Gegevens, die `--demoProfileLdap-- - Demo System (DD/MM/YYYY)` worden genoemd. Open de de cliëntbezit van de Inzameling van Gegevens voor Web.
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/), aan **[!UICONTROL Client]**. Zoek naar uw eigenschappen van de Inzameling van Gegevens, die `--aepUserLdap-- - Demo System (DD/MM/YYYY)` worden genoemd. Open de de cliëntbezit van de Inzameling van Gegevens voor Web.
 
 ![ WebSDK ](./images/launch1.png)
 
@@ -79,7 +79,7 @@ Om [!UICONTROL Placement ID] voor [!UICONTROL Web - Image] te vinden ga naar Ado
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -91,15 +91,15 @@ Zoals u in de bovenstaande afbeelding kunt zien, is in dit voorbeeld de waarde [
 
 ### 3.3.3.2.2 Haal uw [!UICONTROL Decision ID] op
 
-In [!UICONTROL Decision ID] wordt aangegeven welke combinatie van persoonlijke aanbiedingen en een terugvalaanbieding u wilt gebruiken. In de vorige oefening, creeerde u uw eigen [!UICONTROL Decision] en noemde het `--demoProfileLdap-- - Luma Decision`.
+In [!UICONTROL Decision ID] wordt aangegeven welke combinatie van persoonlijke aanbiedingen en een terugvalaanbieding u wilt gebruiken. In de vorige oefening, creeerde u uw eigen [!UICONTROL Decision] en noemde het `--aepUserLdap-- - Luma Decision`.
 
-Om [!UICONTROL Decision ID] voor uw `--demoProfileLdap-- - Luma Decision` te vinden, ga [ https://platform.adobe.com ](https://platform.adobe.com).
+Om [!UICONTROL Decision ID] voor uw `--aepUserLdap-- - Luma Decision` te vinden, ga [ https://platform.adobe.com ](https://platform.adobe.com).
 
-Ga vervolgens naar [!UICONTROL Offers] en ga naar [!UICONTROL Decisions] . Klik om de [!UICONTROL Decision] te selecteren. Deze heeft de naam `--demoProfileLdap-- - Luma Decision` .
+Ga vervolgens naar [!UICONTROL Offers] en ga naar [!UICONTROL Decisions] . Klik om de [!UICONTROL Decision] te selecteren. Deze heeft de naam `--aepUserLdap-- - Luma Decision` .
 
 ![ WebSDK ](./images/launch7.png)
 
-Zoals u in de bovenstaande afbeelding kunt zien, is in dit voorbeeld de waarde [!UICONTROL Decision ID] `xcore:offer-activity:14c052382e1b6505` . Schrijf de [!UICONTROL Decision ID] voor uw beslissing `--demoProfileLdap-- - Luma Decision` neer aangezien u het in de volgende oefening zult nodig hebben.
+Zoals u in de bovenstaande afbeelding kunt zien, is in dit voorbeeld de waarde [!UICONTROL Decision ID] `xcore:offer-activity:14c052382e1b6505` . Schrijf de [!UICONTROL Decision ID] voor uw beslissing `--aepUserLdap-- - Luma Decision` neer aangezien u het in de volgende oefening zult nodig hebben.
 
 Nu u de twee elementen hebt teruggewonnen u moet creëren **[!UICONTROL Decision Scopes]**, kunt u met de volgende stap verdergaan, die het besluitvormingswerkingsgebied impliceert coderen.
 
@@ -120,11 +120,11 @@ Nu u de twee elementen hebt teruggewonnen u moet creëren **[!UICONTROL Decision
 
   ![ WebSDK ](./images/launch8.png)
 
-- Haal de met BASE64 gecodeerde tekenreeks op uit Adobe Experience Platform. Ga naar [!UICONTROL Decisions] en klik om de [!UICONTROL Decision] , die `--demoProfileLdap-- - Luma Decision` heet, te openen.
+- Haal de met BASE64 gecodeerde tekenreeks op uit Adobe Experience Platform. Ga naar [!UICONTROL Decisions] en klik om de [!UICONTROL Decision] , die `--aepUserLdap-- - Luma Decision` heet, te openen.
 
   ![ WebSDK ](./images/launch9.png)
 
-  Na het openen van `--demoProfileLdap-- - Luma Decision`, zult u dit zien. Zoek de plaatsing [!UICONTROL Web - Image] en klik op de knop **[!UICONTROL Copy]** . Klik vervolgens op **[!UICONTROL Encoded decision scope]** . **[!UICONTROL Decision Scope]** wordt nu gekopieerd naar het klembord.
+  Na het openen van `--aepUserLdap-- - Luma Decision`, zult u dit zien. Zoek de plaatsing [!UICONTROL Web - Image] en klik op de knop **[!UICONTROL Copy]** . Klik vervolgens op **[!UICONTROL Encoded decision scope]** . **[!UICONTROL Decision Scope]** wordt nu gekopieerd naar het klembord.
 
   ![ WebSDK ](./images/launch10.png)
 
@@ -152,7 +152,7 @@ Telkens als u a **Algemene Pagina** nu laadt, zoals bijvoorbeeld de homepage van
 
 ## 3.3.3.3 Configureer uw Adobe Experience Platform Data Collection Client-eigenschap om persoonlijke aanbiedingen te ontvangen en toe te passen
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/), aan **[!UICONTROL Properties]**. Zoek naar uw eigenschappen van de Inzameling van Gegevens, die `--demoProfileLdap-- - Demo System (DD/MM/YYYY)` worden genoemd. Open de eigenschap Gegevensverzameling voor het web.
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/), aan **[!UICONTROL Properties]**. Zoek naar uw eigenschappen van de Inzameling van Gegevens, die `--aepUserLdap-- - Demo System (DD/MM/YYYY)` worden genoemd. Open de eigenschap Gegevensverzameling voor het web.
 
 ![ WebSDK ](./images/launch1.png)
 

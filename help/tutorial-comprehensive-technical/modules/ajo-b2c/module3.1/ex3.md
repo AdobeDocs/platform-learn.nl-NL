@@ -3,7 +3,7 @@ title: Werk uw Configuratie-id bij en test uw reis
 description: Werk uw Configuratie-id bij en test uw reis
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 
 ![ pagina van Eigenschappen ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--demoProfileLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../modules/datacollection/module1.1/images/property6.png)
 

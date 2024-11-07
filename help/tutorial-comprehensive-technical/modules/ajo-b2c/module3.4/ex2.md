@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Een op batch gebaseerde reis configureren
 description: In deze sectie configureert u een batch-e-mailtransport voor het verzenden van een nieuwsbrief
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -30,7 +30,7 @@ In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
 Rechts ziet u een formulier waarin u de naam en de beschrijving van het transport moet vermelden. Voer de volgende waarden in:
 
-- **Naam**: `--demoProfileLdap-- - Newsletter Journey`. Bijvoorbeeld: **vangeluw - de Reizen van de Bulletin**.
+- **Naam**: `--aepUserLdap-- - Newsletter Journey`. Bijvoorbeeld: **vangeluw - de Reizen van de Bulletin**.
 - **Beschrijving**: Maandelijkse Nieuwsbrief
 
 Klik **OK**.
@@ -41,7 +41,7 @@ Onder **Orchestratie**, belemmering en laat vallen **Gelezen Segment** op het ca
 
 ![ Journey Optimizer ](./images/batchj3.png)
 
-In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
+In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/batchj5.png)
 

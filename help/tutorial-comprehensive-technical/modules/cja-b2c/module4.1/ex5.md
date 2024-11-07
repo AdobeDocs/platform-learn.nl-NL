@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Visualisatie met Customer Journey Analytics
 description: Customer Journey Analytics - Visualisatie met Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Laten wij het project gebruiken u in [ 11.4 Voorbereiding van Gegevens in Analys
 
 ![ demo ](./images/prohome.png)
 
-Open uw project `--demoProfileLdap-- - Omnichannel Analysis` .
+Open uw project `--aepUserLdap-- - Omnichannel Analysis` .
 
-Als uw project is geopend en de gegevensweergave `--demoProfileLdap-- - Omnichannel Analysis` is geselecteerd, kunt u uw eerste visualisaties gaan maken.
+Als uw project is geopend en de gegevensweergave `--aepUserLdap-- - Omnichannel Analysis` is geselecteerd, kunt u uw eerste visualisaties gaan maken.
 
 ![ demo ](./images/prodataView1.png)
 

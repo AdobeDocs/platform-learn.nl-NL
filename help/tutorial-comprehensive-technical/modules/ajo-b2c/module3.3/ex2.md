@@ -3,7 +3,7 @@ title: Offer decisioning - Configureer je voorstellen en besluit-id
 description: Offer decisioning - Configureer je voorstellen en besluit-id
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 1%
@@ -18,10 +18,10 @@ In deze oefening, zult u vier **Gepersonaliseerde Aanbiedingen** creëren. Hier 
 
 | Naam | Datumbereik | Afbeeldingskoppeling voor e-mail | Afbeeldingskoppeling voor web | Tekst | Prioriteit | Subsidiabiliteit | Taal |
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--demoProfileLdap-- - Nadia Elements Shell` | vandaag - 1 maand later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
-| `--demoProfileLdap-- - Radiant Tee` | vandaag - 1 maand later | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
-| `--demoProfileLdap-- - Zeppelin Yoga Pant` | vandaag - 1 maand later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all - Mannelijke klanten | Engels (Verenigde Staten) |
-| `--demoProfileLdap-- - Proteus Fitness Jackshirt` | vandaag - 1 maand later | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all - Mannelijke klanten | Engels (Verenigde Staten) |
+| `--aepUserLdap-- - Nadia Elements Shell` | vandaag - 1 maand later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
+| `--aepUserLdap-- - Radiant Tee` | vandaag - 1 maand later | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
+| `--aepUserLdap-- - Zeppelin Yoga Pant` | vandaag - 1 maand later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all - Mannelijke klanten | Engels (Verenigde Staten) |
+| `--aepUserLdap-- - Proteus Fitness Jackshirt` | vandaag - 1 maand later | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all - Mannelijke klanten | Engels (Verenigde Staten) |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -45,7 +45,7 @@ U bent nu op de **mening van Details**.
 
 ![ Regel van het Besluit ](./images/offers3.png)
 
-In dit geval moet u de aanbieding configureren `--demoProfileLdap-- - Nadia Elements Shell` . Gebruik de informatie in de bovenstaande tabel om de velden in te vullen. In dit voorbeeld, is de naam van de Gepersonaliseerde Aanbieding **vangeluw - Elementen Nadia Shell**. Ook, plaats de **datum en de tijd van het Begin** aan gisteren, en plaats de **datum en de tijd van het Eind** aan een datum in een maand van nu.
+In dit geval moet u de aanbieding configureren `--aepUserLdap-- - Nadia Elements Shell` . Gebruik de informatie in de bovenstaande tabel om de velden in te vullen. In dit voorbeeld, is de naam van de Gepersonaliseerde Aanbieding **vangeluw - Elementen Nadia Shell**. Ook, plaats de **datum en de tijd van het Begin** aan gisteren, en plaats de **datum en de tijd van het Eind** aan een datum in een maand van nu.
 
 Als je klaar bent, moet je dit hebben. Klik **daarna**.
 
@@ -182,7 +182,7 @@ U zult dan dit zien:
 
 ![ Regel van het Besluit ](./images/foffers3.png)
 
-Voer deze naam in voor uw fallback-aanbieding: `--demoProfileLdap-- - Luma Fallback Offer` . Klik **daarna**.
+Voer deze naam in voor uw fallback-aanbieding: `--aepUserLdap-- - Luma Fallback Offer` . Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/foffers4.png)
 
@@ -281,7 +281,7 @@ Ga naar **Inzamelingen**. Klik op **+ Verzameling maken** .
 
 Dan zie je deze popup. Configureer uw verzameling op deze manier. Klik **daarna**.
 
-- Naam van verzameling: gebruik `--demoProfileLdap-- - Luma Collection`
+- Naam van verzameling: gebruik `--aepUserLdap-- - Luma Collection`
 - Selecteer **creeer statische inzameling**.
 
 ![ Regel van het Besluit ](./images/createcollectionpopup1.png)
@@ -308,7 +308,7 @@ U zult dan dit zien:
 
 Vul de velden zo in. Klik **daarna**.
 
-- Naam: `--demoProfileLdap-- - Luma Decision`
+- Naam: `--aepUserLdap-- - Luma Decision`
 - Begindatum en -tijd: gisteren
 - Einddatum en -tijd: vandaag + 1 maand
 
@@ -322,7 +322,7 @@ Eerst, creeer het besluitvormingswerkingsgebied voor **niet-digitaal - Tekst** d
 
 ![ Regel van het Besluit ](./images/activity3.png)
 
-Selecteer uw inzameling `--demoProfileLdap-- - Luma Collection` en klik **toevoegen**.
+Selecteer uw inzameling `--aepUserLdap-- - Luma Collection` en klik **toevoegen**.
 
 ![ Regel van het Besluit ](./images/activity4text.png)
 
@@ -330,15 +330,15 @@ Dan zie je dit. Klik op de knop **-** om een nieuw beslissingsbereik toe te voeg
 
 ![ Regel van het Besluit ](./images/activity5text.png)
 
-Selecteer het plaatsing **Web - Beeld** en voeg uw inzameling `--demoProfileLdap-- - Luma Collection` onder evaluatiecriteria toe. Klik vervolgens nogmaals op de knop **+** om een nieuw beslissingsbereik toe te voegen.
+Selecteer het plaatsing **Web - Beeld** en voeg uw inzameling `--aepUserLdap-- - Luma Collection` onder evaluatiecriteria toe. Klik vervolgens nogmaals op de knop **+** om een nieuw beslissingsbereik toe te voegen.
 
 ![ Regel van het Besluit ](./images/activity6text.png)
 
-Selecteer de plaatsing **E-mail - Beeld** en voeg uw inzameling `--demoProfileLdap-- - Luma Collection` onder evaluatiecriteria toe. Dan, klik **daarna**.
+Selecteer de plaatsing **E-mail - Beeld** en voeg uw inzameling `--aepUserLdap-- - Luma Collection` onder evaluatiecriteria toe. Dan, klik **daarna**.
 
 ![ Regel van het Besluit ](./images/activity4.png)
 
-U moet nu uw **Aanbieding van de Fallback** selecteren, die `--demoProfileLdap-- - Luma Fallback Offer` wordt genoemd. Klik **daarna**.
+U moet nu uw **Aanbieding van de Fallback** selecteren, die `--aepUserLdap-- - Luma Fallback Offer` wordt genoemd. Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/activity10.png)
 

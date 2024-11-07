@@ -3,7 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Event Forwarding Si
 description: Een Adobe Experience Platform-eigenschap voor het doorsturen van gegevensverzamelingsgebeurtenissen maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.a
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/launchhome.png)
 
-U moet nu een naam voor uw Adobe Experience Platform-eigenschap voor het doorsturen van gegevensverzamelingsgebeurtenissen invoeren. Gebruik `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)` als naamgevingsconventie. Bijvoorbeeld, in dit voorbeeld, is de naam **vangeluw - het Systeem van de Demo (22/02/2022) (Edge)**. Klik **sparen**.
+U moet nu een naam voor uw Adobe Experience Platform-eigenschap voor het doorsturen van gegevensverzamelingsgebeurtenissen invoeren. Gebruik `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)` als naamgevingsconventie. Bijvoorbeeld, in dit voorbeeld, is de naam **vangeluw - het Systeem van de Demo (22/02/2022) (Edge)**. Klik **sparen**.
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/ssf1.png)
 

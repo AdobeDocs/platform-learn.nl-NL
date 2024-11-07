@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace
 description: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Gebruik deze naamgevingsconventie:
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - Omnichannel Analysis` | `--demoProfileLdap-- - Omnichannel Analysis` |
+| `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 Daarna, klik **sparen**.
 

@@ -3,7 +3,7 @@ title: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azu
 description: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azure
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -36,13 +36,13 @@ Klik **creëren**:
 
 Als dit de eerste keer is dat u een middel in Azure creeert, zult u een nieuwe **groep van het Middel** moeten creëren. Als u al een middelgroep hebt kunt u het selecteren (of nieuwe creëren).
 
-Selecteer **creeer nieuw**, noem uw groep `--demoProfileLdap---aep-enablement`.
+Selecteer **creeer nieuw**, noem uw groep `--aepUserLdap---aep-enablement`.
 
 ![ 1-04-creeer-middel-group.png ](./images/1-04-create-resource-group.png)
 
 Voltooi de test van de velden zoals aangegeven:
 
-- Naamruimte: definieer de naamruimte, deze moet uniek zijn en gebruik het volgende patroon `--demoProfileLdap---aep-enablement`
+- Naamruimte: definieer de naamruimte, deze moet uniek zijn en gebruik het volgende patroon `--aepUserLdap---aep-enablement`
 - Plaats: **West-Europa** verwijst naar Azure datacenter in Amsterdam
 - Prijsende rij: **Basis**
 - De Eenheden van de productie: **1**
@@ -67,11 +67,11 @@ Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en se
 
 ![ 1-09-all-resources.png ](./images/1-09-all-resources.png)
 
-Selecteer in de lijst met bronnen de naamruimte `--demoProfileLdap---aep-enablement` :
+Selecteer in de lijst met bronnen de naamruimte `--aepUserLdap---aep-enablement` :
 
 ![ 1-10-list-resources.png ](./images/1-10-list-resources.png)
 
-In `--demoProfileLdap---aep-enablement` detailscherm, uitgezochte **Hubs van de Gebeurtenis**:
+In `--aepUserLdap---aep-enablement` detailscherm, uitgezochte **Hubs van de Gebeurtenis**:
 
 ![ 1-11-eventhub-namespace.png ](./images/1-11-eventhub-namespace.png)
 
@@ -79,7 +79,7 @@ Klik **+ de Hub van de Gebeurtenis**.
 
 ![ 1-12-toe:voegen-gebeurtenis-hub.png ](./images/1-12-add-event-hub.png)
 
-Gebruik `--demoProfileLdap---aep-enablement-event-hub` als naam en klik **creeer**.
+Gebruik `--aepUserLdap---aep-enablement-event-hub` als naam en klik **creeer**.
 
 ![ 1-13-create-event-hub.png ](./images/1-13-create-event-hub.png)
 
@@ -103,7 +103,7 @@ Selecteer **creeer**.
 
 ![ 1-17-event-hub-create-storage.png ](./images/1-17-event-hub-create-storage.png)
 
-Specificeer uw **Groep van het Middel** (gecreeerd in het begin van deze oefening), gebruik `--demoProfileLdap--aepstorage` als uw naam van de de rekeningsrekening van de Opslag, en selecteer **lokaal-overtollige opslag (LRS)**, dan klik **Overzicht + creeer**.
+Specificeer uw **Groep van het Middel** (gecreeerd in het begin van deze oefening), gebruik `--aepUserLdap--aepstorage` als uw naam van de de rekeningsrekening van de Opslag, en selecteer **lokaal-overtollige opslag (LRS)**, dan klik **Overzicht + creeer**.
 
 ![ 1-18-event-hub-create-review-storage.png ](./images/1-18-event-hub-create-review-storage.png)
 

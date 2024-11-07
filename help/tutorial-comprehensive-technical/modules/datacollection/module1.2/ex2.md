@@ -3,7 +3,7 @@ title: Stichting - de Ingestie van Gegevens - vorm Schema's en reeks Herkennings
 description: Stichting - de Ingestie van Gegevens - vorm Schema's en reeks Herkenningstekens
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3306'
 ht-degree: 0%
@@ -114,7 +114,7 @@ In plaats van een bestaande [!UICONTROL Field Group] opnieuw te gebruiken, maakt
 U moet nu een **[!UICONTROL Display Name]** en **[!UICONTROL Description]** opgeven voor uw nieuwe [!UICONTROL Field Group] .
 
 Als naam voor ons schema, zullen wij dit gebruiken:
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 
@@ -287,7 +287,7 @@ Geef nu uw schema een naam. Selecteer het gebied **Naamloos schema**.
 
 Als naam voor ons schema, zult u dit gebruiken:
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 Vervang **[!UICONTROL ldap]** door uw specifieke label. Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 
@@ -419,7 +419,7 @@ U moet nu een **[!UICONTROL Display Name]** en **[!UICONTROL Description]** opge
 
 Gebruik deze naam als naam voor uw veldgroep:
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 
@@ -528,7 +528,7 @@ Geef nu uw schema een naam. Selecteer het gebied **Naamloos schema**.
 ![ Ingestie van Gegevens ](./images/schemaname1ee.png)
 
 Als naam voor ons schema, zullen wij dit gebruiken:
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 

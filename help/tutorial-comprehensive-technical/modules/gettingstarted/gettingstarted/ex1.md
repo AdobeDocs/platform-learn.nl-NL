@@ -3,7 +3,7 @@ title: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het 
 description: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen mome
 |:-------------:| :---------------:|
 | AEP IMS Org ID | `--aepImsOrgId--` |
 | AEP-huurnummer | `--aepTenantId--` |
-| DCS-inlaat-id | `--dcsInletId--` |
-| LDAP demoiliteitsprofiel | `--demoProfileLdap--` |
+| Naam AEP-sandbox | `--aepSandboxName--` |
+| Leerlingprofiel LDAP | `--aepUserLdap--` |
 
 In de onderstaande schermafbeelding ziet u bijvoorbeeld een verwijzing naar `--aepTenantId--` .
 

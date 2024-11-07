@@ -3,9 +3,9 @@ title: Aan de slag - Overzicht
 description: Aan de slag - Overzicht
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,6 @@ ht-degree: 0%
 - Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Adobe Experience Platform Launch: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot het Systeem van de Demo daarna: [ https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->Deze zelfstudie is gemaakt om een bepaalde indeling voor de workshop te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer bent aan een van de workshops en uw toegangsgegevens nodig hebt, neemt u contact op met uw Adobe die u de vereiste informatie zal verstrekken.
-
 
 ## Uitoefening
 

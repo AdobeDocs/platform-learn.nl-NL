@@ -3,7 +3,7 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - Inleiding aan de Inzameling van Gegevens van Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 
 ![ pagina van Eigenschappen ](./images/launch1.png)
 
-In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--demoProfileLdap--` in het vak **[!UICONTROL Search]** .
+In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** .
 
 ![ vakje van het Onderzoek ](./images/property6.png)
 
@@ -44,7 +44,7 @@ Als het Edge-domein van uw instantie afwijkt van het standaard domein, moet u he
 
 ![ het huis van Uitbreidingen ](./images/property9edgedomain.png)
 
-Zorg er nu voor dat het keuzerondje **[!UICONTROL Choose from list]** is geselecteerd onder de kop **[!UICONTROL Datastreams]** en selecteer in de lijst in het vak **[!UICONTROL Datastream]** de gegevensstroom met de naam `--demoProfileLdap-- - Demo System Datastream` .
+Zorg er nu voor dat het keuzerondje **[!UICONTROL Choose from list]** is geselecteerd onder de kop **[!UICONTROL Datastreams]** en selecteer in de lijst in het vak **[!UICONTROL Datastream]** de gegevensstroom met de naam `--aepUserLdap-- - Demo System Datastream` .
 
 ![ het huis van Uitbreidingen ](./images/property9edge.png)
 

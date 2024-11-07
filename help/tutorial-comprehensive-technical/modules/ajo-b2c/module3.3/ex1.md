@@ -4,7 +4,7 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -106,7 +106,7 @@ Dan zie je de segmentatieomgeving van Adobe Experience Platform.
 
 U kunt tot alle gebieden nu toegang hebben die deel van het Schema van de Vereniging voor het Profiel van de Klant in real time uitmaken en om het even welke regel kunnen bouwen.
 
-Het is ook interessant om te weten dat u reeds bepaalde segmenten in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten publiek** te gaan > ``--aepTenantIdSchema--``.
+Het is ook interessant om te weten dat u reeds bepaalde segmenten in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten publiek** te gaan > ``--aepTenantId--``.
 
 ![ Regel van het Besluit ](./images/decisionruleaud.png)
 

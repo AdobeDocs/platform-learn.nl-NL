@@ -3,7 +3,7 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - Edge Network, Gegevensstromen en de Inzameling van Gegevens van de Server
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** in h
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1.png)
 
-Zoek naar uw DataStream, die `--demoProfileLdap-- - Demo System Datastream` wordt genoemd.
+Zoek naar uw DataStream, die `--aepUserLdap-- - Demo System Datastream` wordt genoemd.
 
 ![ noem DataStream en bewaar ](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ U moet de onderstaande velden als volgt interpreteren:
 
 Voor deze gegevensstroom...
 
-- Alle verzamelde gegevens worden opgeslagen in de `--aepSandboxId--` -sandbox in Adobe Experience Platform
+- Alle verzamelde gegevens worden opgeslagen in de `--aepSandboxName--` -sandbox in Adobe Experience Platform
 - Alle gegevens van de Gebeurtenis van de Ervaring worden verzameld door gebrek in het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**
 - Alle gegevens van het Profiel zullen door gebrek in het dataset **Systeem van de Manifestatie - de Dataset van het Profiel voor Website (Globale v1.1) worden verzameld** (het opnemen van profielgegevens nefend met Web SDK momenteel wordt niet gesteund nog door Web SDK, en zal in een recentere fase beschikbaar worden gemaakt)
 - Als u de **de toepassingsdienst van de Offer decisioning** voor deze DataStream wilt gebruiken, moet u de doos voor Offer decisioning controleren. (Dit zal deel van [ Module 3.3 ](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) zijn)

@@ -3,7 +3,7 @@ title: Segmentactivering naar Microsoft Azure Event Hub - Segment activeren
 description: Segmentactivering naar Microsoft Azure Event Hub - Segment activeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 2.4.4.1 Segment toevoegen aan Azure Event Hub Destination
 
-In deze exercitie voegt u uw segment `--demoProfileLdap-- - Interest in Equipment` toe aan uw `--demoProfileLdap---aep-enablement` Azure Event Hub-bestemming.
+In deze exercitie voegt u uw segment `--aepUserLdap-- - Interest in Equipment` toe aan uw `--aepUserLdap---aep-enablement` Azure Event Hub-bestemming.
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -22,7 +22,7 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -30,7 +30,7 @@ Ga naar **Doelen**, dan klik **doorbladeren**. U zult dan alle beschikbare beste
 
 ![ 5-01-select-destination.png ](./images/5-01-select-destination.png)
 
-Dan zie je dit. Zoek het segment met uw ldap en selecteer `--demoProfileLdap-- - Interest in Equipment` in de lijst met segmenten.
+Dan zie je dit. Zoek het segment met uw ldap en selecteer `--aepUserLdap-- - Interest in Equipment` in de lijst met segmenten.
 
 Klik **daarna**.
 

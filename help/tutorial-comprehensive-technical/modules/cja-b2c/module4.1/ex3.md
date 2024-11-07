@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Een gegevensweergave maken
 description: Customer Journey Analytics - Een gegevensweergave maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -45,17 +45,17 @@ U kunt de basisdefinities voor uw Mening van Gegevens nu vormen.
 
 ![ demo ](./images/0-v2.png)
 
-De **Verbinding** u in de vorige oefening creeerde is reeds geselecteerd. Uw verbinding heeft de naam `--demoProfileLdap-- – Omnichannel Data Connection` .
+De **Verbinding** u in de vorige oefening creeerde is reeds geselecteerd. Uw verbinding heeft de naam `--aepUserLdap-- – Omnichannel Data Connection` .
 
 ![ demo ](./images/ext5.png)
 
-Geef vervolgens in de gegevensweergave een naam die volgt op de naamgevingsconventie: `--demoProfileLdap-- – Omnichannel Data View` .
+Geef vervolgens in de gegevensweergave een naam die volgt op de naamgevingsconventie: `--aepUserLdap-- – Omnichannel Data View` .
 
-Voer dezelfde waarde in voor de beschrijving: `--demoProfileLdap-- – Omnichannel Data View` .
+Voer dezelfde waarde in voor de beschrijving: `--aepUserLdap-- – Omnichannel Data View` .
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![ demo ](./images/1-v2.png)
 

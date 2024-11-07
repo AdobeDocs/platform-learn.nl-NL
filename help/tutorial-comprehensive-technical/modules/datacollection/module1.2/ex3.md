@@ -3,7 +3,7 @@ title: Stichting - de Ingestie van Gegevens - vorm Datasets
 description: Stichting - de Ingestie van Gegevens - vorm Datasets
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -53,7 +53,7 @@ U moet een dataset van het schema bepalen dat u in de vorige stap bepaalde. Klik
 
 ![ Ingestie van Gegevens ](./images/datasetfromschema.png)
 
-In het volgende scherm, moet u het schema selecteren dat u in 1 creeerde, `--demoProfileLdap-- - Demo System - Profile Schema for Website`.
+In het volgende scherm, moet u het schema selecteren dat u in 1 creeerde, `--aepUserLdap-- - Demo System - Profile Schema for Website`.
 
 ![ Ingestie van Gegevens ](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Geef een naam aan uw dataset.
 
 Als naam voor onze dataset, gebruik dit:
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 
@@ -101,7 +101,7 @@ U moet een dataset van het schema bepalen dat u in de vorige stap bepaalde. Klik
 
 ![ Ingestie van Gegevens ](./images/datasetfromschema.png)
 
-In het volgende scherm, moet u het schema selecteren dat u in 2.2 creeerde, `--demoProfileLdap-- - Demo System - Event Schema for Website`.
+In het volgende scherm, moet u het schema selecteren dat u in 2.2 creeerde, `--aepUserLdap-- - Demo System - Event Schema for Website`.
 
 ![ Ingestie van Gegevens ](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Geef een naam aan uw dataset.
 
 Als naam voor onze dataset, zullen wij dit gebruiken:
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 Voor LDAP **[!UICONTROL vangeluw]** moet dit bijvoorbeeld de naam van het schema zijn:
 
@@ -137,7 +137,7 @@ Ga terug naar het [!UICONTROL Datasets] overzichtsscherm.
 
 U moet nu uw datasets toelaten om deel van Adobe Experience Platform in real time het Profiel van de Klant te maken.
 
-Open uw dataset `--demoProfileLdap--` - demosysteem - de Dataset van het Profiel voor Website door het te klikken.
+Open uw dataset `--aepUserLdap--` - demosysteem - de Dataset van het Profiel voor Website door het te klikken.
 
 Zoek het schakelpictogram [!UICONTROL Profile] aan de rechterkant van het scherm.
 
@@ -153,7 +153,7 @@ Klik op **[!UICONTROL Enable]** .
 
 Uw gegevensset is nu ingeschakeld voor [!UICONTROL Profile] .
 
-Ga terug naar het overzicht van datasets en open uw dataset `--demoProfileLdap-- - Demo System - Event Dataset` voor Website door het te klikken.
+Ga terug naar het overzicht van datasets en open uw dataset `--aepUserLdap-- - Demo System - Event Dataset` voor Website door het te klikken.
 
 Zoek het schakelpictogram [!UICONTROL Profile] aan de rechterkant van het scherm.
 

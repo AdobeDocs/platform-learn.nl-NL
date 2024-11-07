@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer - Het SMS-kanaal configureren en gebruiken 
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ In het linkermenu, ga naar **Reizen** en klik **creeer Reis** beginnen uw Reis t
 
 Je moet eerst je reis benoemen.
 
-Gebruik `--demoProfileLdap-- - Geofence Entry Journey` als naam voor de rit. In dit voorbeeld is de naam van de rit `vangeluw - Geofence Entry Journey` . Er mogen op dit moment geen andere waarden worden ingesteld. Klik **OK**.
+Gebruik `--aepUserLdap-- - Geofence Entry Journey` als naam voor de rit. In dit voorbeeld is de naam van de rit `vangeluw - Geofence Entry Journey` . Er mogen op dit moment geen andere waarden worden ingesteld. Klik **OK**.
 
 ![ Demo ](./images/joname.png)
 
@@ -76,7 +76,7 @@ U zult dan de **Geavanceerde Redacteur** zien die codeingang toestaat.
 
 Selecteer de hieronder code en kleef het in de **Geavanceerde Redacteur**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 Dan zie je dit.
 
@@ -93,7 +93,7 @@ Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de 
 
 ![ Demo ](./images/jo12.png)
 
-U kunt het veld vinden door naar `--demoProfileLdap--GeofenceEntry.placeContext.geo.city` te navigeren.
+U kunt het veld vinden door naar `--aepUserLdap--GeofenceEntry.placeContext.geo.city` te navigeren.
 
 Door op dat veld te klikken, wordt het toegevoegd als de dynamische waarde voor de parameter `q` . Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
 
@@ -119,7 +119,7 @@ U zult dan de **Geavanceerde Redacteur** zien die codeingang toestaat.
 
 Selecteer de hieronder code en kleef het in de **Geavanceerde Redacteur**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 Dan zie je dit.
 
@@ -136,7 +136,7 @@ Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de 
 
 ![ Demo ](./images/jo12.png)
 
-U kunt het veld vinden door naar `--demoProfileLdap--GeofenceEntry.placeContext.geo.city` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
+U kunt het veld vinden door naar `--aepUserLdap--GeofenceEntry.placeContext.geo.city` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
 
 ![ Demo ](./images/jo13.png)
 
@@ -163,7 +163,7 @@ U zult dan de **Geavanceerde Redacteur** zien die codeingang toestaat.
 
 Selecteer de hieronder code en kleef het in de **Geavanceerde Redacteur**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 Dan zie je dit.
 
@@ -180,7 +180,7 @@ Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de 
 
 ![ Demo ](./images/jo12.png)
 
-U kunt het veld vinden door naar ```--demoProfileLdap--GeofenceEntry.placeContext.geo.city``` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
+U kunt het veld vinden door naar ```--aepUserLdap--GeofenceEntry.placeContext.geo.city``` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
 
 ![ Demo ](./images/jo13.png)
 
@@ -254,7 +254,7 @@ Dan ben je hier weer. Klik **OK**.
 
 ![ Journey Optimizer ](./images/sms4b.png)
 
-In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--demoProfileLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
+In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
 
 ![ Demo ](./images/joa18.png)
 
@@ -342,7 +342,7 @@ U ziet nu de voltooide actie. Klik **OK**.
 
 ![ Demo ](./images/jop17.png)
 
-In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--demoProfileLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
+In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
 
 ![ Demo ](./images/jop18.png)
 
@@ -430,7 +430,7 @@ U ziet nu de voltooide actie. Klik **OK**.
 
 ![ Demo ](./images/jod17.png)
 
-In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--demoProfileLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van Berichten**.
+In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van Berichten**.
 
 ![ Demo ](./images/jod18.png)
 

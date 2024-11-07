@@ -3,7 +3,7 @@ title: Gegevens van Googles Analytics in Adobe Experience Platform verzamelen en
 description: Gegevens van Googles Analytics in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source-connector - Gegevens van Googles Analytics analyseren met Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
@@ -40,7 +40,7 @@ U zult dan **** UI zien creëren Verbinding.
 
 ![ demo ](./images/5.png)
 
-Ten eerste moet u de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `--aepSandboxId--` moet zijn. In dit voorbeeld, is de zandbak aan gebruik **AEP Enablement FY21**.
+Ten eerste moet u de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `--aepSandboxName--` moet zijn. In dit voorbeeld, is de zandbak aan gebruik **AEP Enablement FY21**.
 
 ![ demo ](./images/cjasb.png)
 

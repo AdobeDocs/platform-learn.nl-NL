@@ -3,7 +3,7 @@ title: Segmentactivering naar Microsoft Azure Event Hub - Actie
 description: Segmentactivering naar Microsoft Azure Event Hub - Actie
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke d
 
 ## 2.4.6.3 Geschikt voor uw interesse in het segment Apparatuur
 
-Navigeer aan de **pagina van het Materiaal** eens, en **herlaad of vernieuw het**. Deze actie zou u voor uw `--demoProfileLdap-- - Interest in Equipment` segment moeten kwalificeren.
+Navigeer aan de **pagina van het Materiaal** eens, en **herlaad of vernieuw het**. Deze actie zou u voor uw `--aepUserLdap-- - Interest in Equipment` segment moeten kwalificeren.
 
 ![ 6-04-luma-telco-nav-sports.png ](./images/luma1.png)
 
-Open het deelvenster Profielviewer om dit te verifiëren. U moet nu lid zijn van de `--demoProfileLdap-- - Interest in Equipment` . Als uw segmentlidmaatschappen nog niet zijn bijgewerkt in het deelvenster Profielviewer, klikt u op de knop Opnieuw laden.
+Open het deelvenster Profielviewer om dit te verifiëren. U moet nu lid zijn van de `--aepUserLdap-- - Interest in Equipment` . Als uw segmentlidmaatschappen nog niet zijn bijgewerkt in het deelvenster Profielviewer, klikt u op de knop Opnieuw laden.
 
 ![ 6-05-luma-telco-nav-breedband.png ](./images/luma2.png)
 
-De schakelaar terug naar de Code van Visual Studio en bekijkt uw **TERMINAL** lusje, zou u een lijst van segmenten voor uw specifiek **ECID** moeten zien. Deze activeringslading wordt geleverd aan uw gebeurtenishub zodra u voor het `--demoProfileLdap-- - Interest in Equipment` segment kwalificeert.
+De schakelaar terug naar de Code van Visual Studio en bekijkt uw **TERMINAL** lusje, zou u een lijst van segmenten voor uw specifiek **ECID** moeten zien. Deze activeringslading wordt geleverd aan uw gebeurtenishub zodra u voor het `--aepUserLdap-- - Interest in Equipment` segment kwalificeert.
 
-Wanneer u een dichtere blik bij de segmentlading neemt, kunt u zien dat `--demoProfileLdap-- - Interest in Equipment` in status **gerealiseerde** is.
+Wanneer u een dichtere blik bij de segmentlading neemt, kunt u zien dat `--aepUserLdap-- - Interest in Equipment` in status **gerealiseerde** is.
 
 Een segmentstatus van **realiseerde** betekent dat ons profiel enkel het segment is ingegaan. Terwijl de **bestaande** status betekent dat ons profiel in het segment blijft.
 

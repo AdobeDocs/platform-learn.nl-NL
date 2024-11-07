@@ -3,7 +3,7 @@ title: Real-time CDP - Bouw een segment en neem actie - Bouw een segment
 description: Real-time CDP - Bouw een segment en neem actie - Bouw een segment
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -105,7 +105,7 @@ Tot slot geven wij uw segment een naam en bewaren het.
 
 Gebruik als naamgevingsconventie:
 
-- `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
 
 De segmentnaam moet er als volgt uitzien:
 `vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`

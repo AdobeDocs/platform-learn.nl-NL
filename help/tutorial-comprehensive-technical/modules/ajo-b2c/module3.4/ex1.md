@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Een op trigger gebaseerde reis configureren - B
 description: In deze sectie zult u een op trekker-gebaseerde reis - de Bevestiging van de Orde vormen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1997'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ U ziet dan een lege gebeurtenisconfiguratie.
 
 ![ Journey Optimizer ](./images/oc32.png)
 
-Geef uw gebeurtenis eerst een naam als deze: `--demoProfileLdap--PurchaseEvent` en voeg een beschrijving als deze toe: `Purchase Event` .
+Geef uw gebeurtenis eerst een naam als deze: `--aepUserLdap--PurchaseEvent` en voeg een beschrijving als deze toe: `Purchase Event` .
 
 ![ Journey Optimizer ](./images/oc34.png)
 
@@ -100,11 +100,11 @@ In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
 ![ Journey Optimizer ](./images/oc43.png)
 
-Dan zie je dit. Geef je reis een naam. Gebruik `--demoProfileLdap-- - Order Confirmation journey` . Klik **OK**.
+Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Order Confirmation journey` . Klik **OK**.
 
 ![ Journey Optimizer ](./images/oc45.png)
 
-Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--demoProfileLdap--PurchaseEvent` en sleep deze naar het canvas. Klik **OK**.
+Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--PurchaseEvent` en sleep deze naar het canvas. Klik **OK**.
 
 ![ Journey Optimizer ](./images/oc46.png)
 
@@ -266,7 +266,7 @@ Klik de pijl naast **Gebeurtenissen** om dieper te boren.
 
 ![ Journey Optimizer ](./images/oc62.png)
 
-Klik op de pijl naast `--demoProfileLdap--PurchaseEvent` om dieper te boren.
+Klik op de pijl naast `--aepUserLdap--PurchaseEvent` om dieper te boren.
 
 ![ Journey Optimizer ](./images/oc63.png)
 
@@ -314,7 +314,7 @@ Klik de pijl naast **Gebeurtenissen** om dieper te boren.
 
 ![ Journey Optimizer ](./images/oc722.png)
 
-Klik op de pijl naast `--demoProfileLdap--PurchaseEvent` om dieper te boren.
+Klik op de pijl naast `--aepUserLdap--PurchaseEvent` om dieper te boren.
 
 ![ Journey Optimizer ](./images/oc73.png)
 
@@ -379,7 +379,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 
 ![ pagina van Eigenschappen ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--demoProfileLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../modules/datacollection/module1.1/images/property6.png)
 

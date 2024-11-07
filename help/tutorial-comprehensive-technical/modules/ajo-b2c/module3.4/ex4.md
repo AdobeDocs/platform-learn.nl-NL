@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Pushmeldingen instellen en gebruiken voor iOS
 description: Pushmeldingen instellen en gebruiken voor iOS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxId--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxId--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Laat de optie **toe tonen systeemdatasets** en onderzoek naar **AJO**. U zult da
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
 
-In het linkermenu, ga naar **[!UICONTROL Datastream]** en onderzoek naar uw gegevensstroom die u in [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde, die `--demoProfileLdap-- - Demo System Datastream (Mobile)` wordt genoemd. Klik om het te openen.
+In het linkermenu, ga naar **[!UICONTROL Datastream]** en onderzoek naar uw gegevensstroom die u in [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde, die `--aepUserLdap-- - Demo System Datastream (Mobile)` wordt genoemd. Klik om het te openen.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ Klik **Begin**.
 
 Vul de waarden in:
 
-- Naam van sessie: gebruik `--demoProfileLdap-- - push debugging` en vervang LDAP door uw LDAP
+- Naam van sessie: gebruik `--aepUserLdap-- - push debugging` en vervang LDAP door uw LDAP
 - Basis URL: gebruik **dxdemo://default**
 
 Klik **daarna**.
@@ -232,7 +232,7 @@ U ziet dan een lege gebeurtenisconfiguratie.
 
 ![ ACOP ](./images/emptyevent.png)
 
-Geef uw gebeurtenis eerst een naam zoals deze: `--demoProfileLdap--StoreEntryEvent` en stel een beschrijving in op `Store Entry Event` .
+Geef uw gebeurtenis eerst een naam zoals deze: `--aepUserLdap--StoreEntryEvent` en stel een beschrijving in op `Store Entry Event` .
 
 ![ ACOP ](./images/eventname.png)
 
@@ -283,11 +283,11 @@ In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
 ![ DSN ](./images/sjourney1.png)
 
-Dan zie je dit. Geef je reis een naam. Gebruik `--demoProfileLdap-- - Store Entry journey` . Klik **OK**.
+Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Store Entry journey` . Klik **OK**.
 
 ![ DSN ](./images/sjourney3.png)
 
-Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--demoProfileLdap--StoreEntryEvent` en sleep deze naar het canvas. Klik **OK**.
+Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--StoreEntryEvent` en sleep deze naar het canvas. Klik **OK**.
 
 ![ DSN ](./images/sjourney4.png)
 

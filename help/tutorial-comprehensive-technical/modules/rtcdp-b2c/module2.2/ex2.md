@@ -3,7 +3,7 @@ title: 'Intelligente services - Klantenservice: AI maakt een nieuw exemplaar (co
 description: Klant-AI - Een nieuwe instantie maken (configureren)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Dan zie je dit.
 
 Voer de vereiste gegevens voor de AI-instantie van de Klant in:
 
-- Naam: gebruik `--demoProfileLdap-- Product Purchase Propensity`
+- Naam: gebruik `--aepUserLdap-- Product Purchase Propensity`
 - Beschrijving: gebruik: **voorspelt de waarschijnlijkheid voor klanten om een product** te kopen
 - Type van Eigenschap: uitgezochte **Omzetting**
 

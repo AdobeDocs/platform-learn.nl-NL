@@ -3,7 +3,7 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - vereisten van het Schema XDM in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/p
 
 ![ Debugger AEP ](./images/exp1.png)
 
-Na het programma openen, selecteer de aangewezen zandbak door de tekst **Prod van de Productie** in de blauwe lijn bovenop uw scherm te klikken. Selecteer de sandbox `--aepSandboxId--` .
+Na het programma openen, selecteer de aangewezen zandbak door de tekst **Prod van de Productie** in de blauwe lijn bovenop uw scherm te klikken. Selecteer de sandbox `--aepSandboxName--` .
 
 Na het selecteren van uw zandbak, zult u de het schermverandering zien en nu bent u in uw zandbak.
 

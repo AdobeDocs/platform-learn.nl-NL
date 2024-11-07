@@ -3,7 +3,7 @@ title: Offer decisioning - Test uw besluit met de demo-website
 description: Uw beslissing testen met de demo-website
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -66,11 +66,11 @@ Klik het gebied dat de tekst **Aanbevolen Categorieën** bevat. Klik **Tussenvoe
 
 ![ RTCDP ](./images/vec3.png)
 
-Dan zie je deze popup. Selecteer uw zandbak `--aepSandboxId--` en selecteer dan de plaatsing **Web - Beeld**.
+Dan zie je deze popup. Selecteer uw zandbak `--aepSandboxName--` en selecteer dan de plaatsing **Web - Beeld**.
 
 ![ RTCDP ](./images/vec4.png)
 
-Selecteer vervolgens uw beslissing `--demoProfileLdap-- - Luma Decision` . Klik **sparen**.
+Selecteer vervolgens uw beslissing `--aepUserLdap-- - Luma Decision` . Klik **sparen**.
 
 ![ RTCDP ](./images/vec5.png)
 
@@ -82,7 +82,7 @@ Dan zie je dit. Klik **daarna**.
 
 ![ RTCDP ](./images/vec7.png)
 
-Voer een naam in voor uw aanbieding. Gebruik deze naam: `--demoProfileLdap-- - XT with Offers (VEC)` . Klik **daarna**.
+Voer een naam in voor uw aanbieding. Gebruik deze naam: `--aepUserLdap-- - XT with Offers (VEC)` . Klik **daarna**.
 
 ![ RTCDP ](./images/vec8.png)
 

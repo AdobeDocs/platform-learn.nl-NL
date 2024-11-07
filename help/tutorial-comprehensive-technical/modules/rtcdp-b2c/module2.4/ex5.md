@@ -3,7 +3,7 @@ title: Segmentactivering naar Microsoft Azure Event Hub - Een Azure Function def
 description: Segmentactivering naar Microsoft Azure Event Hub - Een Azure Function definiëren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Selecteer {de trekker van de Hub van de Gebeurtenis 0} Azure **als eerste de fun
 
 ![ 3-08-vsc-function-template.png ](./images/vsc5.png)
 
-Voer een naam voor de functie in, gebruik de volgende notatie `--demoProfileLdap---aep-event-hub-trigger` en druk op Enter:
+Voer een naam voor de functie in, gebruik de volgende notatie `--aepUserLdap---aep-event-hub-trigger` en druk op Enter:
 
 ![ 3-09-vsc-function-name.png ](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ De eerste keer u in werking stelt u zuivert wijze, zult u een Azure opslagrekeni
 
 ![ 3-17-vsc-looppas-project.png ](./images/vsc15.png)
 
-Van de lijst van opslagrekeningen, selecteer die u als deel van [ 13.1.4 Opstelling uw Azure Rekening van de Opslag ](./ex1.md) hebt gecreeerd. Uw opslagrekening wordt genoemd `--demoProfileLdap--aepstorage`, bijvoorbeeld: **mmewisaepstorage**.
+Van de lijst van opslagrekeningen, selecteer die u als deel van [ 13.1.4 Opstelling uw Azure Rekening van de Opslag ](./ex1.md) hebt gecreeerd. Uw opslagrekening wordt genoemd `--aepUserLdap--aepstorage`, bijvoorbeeld: **mmewisaepstorage**.
 
 ![ 3-22-vsc-select-storage-account.png ](./images/vsc16.png)
 

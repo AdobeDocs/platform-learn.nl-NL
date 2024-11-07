@@ -3,7 +3,7 @@ title: Foundation - Real-time klantprofiel - Een segment maken - API
 description: Foundation - Real-time klantprofiel - Een segment maken - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 2%
@@ -77,11 +77,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Nu, klik het blauwe **verzenden** knoop om het segment tot stand te brengen en de resultaten van dat te bekijken.
 
@@ -111,11 +111,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik op blauw **verzenden** knoop.
 
@@ -142,11 +142,11 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 | Sleutel | Waarde |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxId--` zijn.
+>U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
 Klik op blauw **verzenden** knoop.
 

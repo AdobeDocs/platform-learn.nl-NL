@@ -3,7 +3,7 @@ title: Segmentactivering naar Microsoft Azure Event Hub - Setup the Event Hub RT
 description: Segmentactivering naar Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Selecteer **Alle Middelen** in Azure Portal:
 
 ### Gebeurtenissenhub
 
-Zoek een middel met middeltype **Namespace van de Hubs van de Gebeurtenis**, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u de Hubs Namespace van de Gebeurtenis `--demoProfileLdap---aep-enablement` zijn. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+Zoek een middel met middeltype **Namespace van de Hubs van de Gebeurtenis**, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u de Hubs Namespace van de Gebeurtenis `--aepUserLdap---aep-enablement` zijn. Neem er nota van, u zult het in de volgende oefening nodig hebben.
 
 ![ 2-02-selecteren-gebeurtenis-hubs-namespace.png ](./images/2-02-select-event-hubs-namespace.png)
 
@@ -41,7 +41,7 @@ Klik op de naam van de naamruimte Gebeurtenishubs om de details op te halen:
 
 ![ 2-03-select-event-hub.png ](./images/2-03-select-event-hub.png)
 
-Selecteer **de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een genoemde Hub van de Gebeurtenis `--demoProfileLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+Selecteer **de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een genoemde Hub van de Gebeurtenis `--aepUserLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
 
 ![ 2-04-gebeurtenis-hub-selected.png ](./images/2-04-event-hub-selected.png)
 
@@ -69,8 +69,8 @@ Op dit punt zou u alle waarden moeten geïdentificeerd hebben nodig om de Azure 
 |---|---|---|
 | sasKeyName | SAS-sleutelnaam | RootManageSharedAccessKey |
 | sasKey | SAS-sleutelwaarde | srREx9ShJG1Rv7f/... |
-| namespace | Naamruimte van gebeurtenishubs | `--demoProfileLdap---aep-enablement` |
-| eventHubName | Gebeurtenissenhub | `--demoProfileLdap---aep-enablement-event-hub` |
+| namespace | Naamruimte van gebeurtenishubs | `--aepUserLdap---aep-enablement` |
+| eventHubName | Gebeurtenissenhub | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 2.4.2.2 Azure Event Hub Destination in Adobe Experience Platform maken
 
@@ -80,7 +80,7 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -100,7 +100,7 @@ Als uw geloofsbrieven correct waren, zult u een bevestiging zien: **Verbonden**.
 
 ![ 2-09-bestemming-values.png ](./images/2-09-destination-valuesa.png)
 
-U moet nu de naam en beschrijving invoeren in de notatie `--demoProfileLdap---aep-enablement` . Ga **eventHubName** in (zie vorige oefening, kijkt het als dit: `--demoProfileLdap---aep-enablement-event-hub`) en klik **daarna**.
+U moet nu de naam en beschrijving invoeren in de notatie `--aepUserLdap---aep-enablement` . Ga **eventHubName** in (zie vorige oefening, kijkt het als dit: `--aepUserLdap---aep-enablement-event-hub`) en klik **daarna**.
 
 ![ 2-10-create-destination.png ](./images/2-10-create-destination.png)
 

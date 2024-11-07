@@ -3,7 +3,7 @@ title: Gegevensverzameling en doorsturen van gebeurtenissen - Voorwaartse gebeur
 description: Toekomstige gebeurtenissen naar het ecosysteem van AWS
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -55,7 +55,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 In **creeer het 1} scherm van het Emmertje {, moet u twee dingen vormen:**
 
-- Naam: gebruik de naam `eventforwarding---demoProfileLdap--` . Als voorbeeld, in deze oefening is de emmernaam **aepmodulertcdpvangeluw**
+- Naam: gebruik de naam `eventforwarding---aepUserLdap--` . Als voorbeeld, in deze oefening is de emmernaam **aepmodulertcdpvangeluw**
 - Regio: gebruik de regio **EU (Frankfurt) eu-central-1**
 
 ![ ETL ](./images/bucketname.png)
@@ -78,7 +78,7 @@ Selecteer **de Streams van Gegevens van Kinesis**. Klik **creëren gegevensstroo
 
 ![ ETL ](./images/kinesis2.png)
 
-Voor de **naam van de gegevensstroom**, gebruik `--demoProfileLdap---datastream`.
+Voor de **naam van de gegevensstroom**, gebruik `--aepUserLdap---datastream`.
 
 ![ ETL ](./images/kinesis3.png)
 
@@ -246,7 +246,7 @@ Dan zie je dit. Vul de instellingen als volgt in:
 - Kies het protocol: uitgezochte **REST**
 - Creeer nieuwe API: uitgezochte **Nieuwe API**
 - Instellingen:
-   - API-naam: gebruik `--demoProfileLdap---eventforwarding`
+   - API-naam: gebruik `--aepUserLdap---eventforwarding`
    - Type eindpunt: uitgezochte **Regionale**
 
 Klik **creeer API**.
@@ -341,7 +341,7 @@ De rol neer, en kleeft deze code onder **Lichaam van het Verzoek**. Klik **Test*
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -370,14 +370,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -470,7 +470,7 @@ Dan zie je dit. Plak de volgende code op het gebied **Lichaam (Ruwe)**. Klik **h
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

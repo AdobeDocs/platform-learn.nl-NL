@@ -3,7 +3,7 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - Maak uw Google Cloud Platform-account
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Geef uw project een naam volgens deze naamgevingsconventie:
 
 | Conventie | Voorbeeld |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud |
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
 
 ![ demo ](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Voordat u verdergaat met de volgende oefening, noteer gelieve de volgende dingen
 
 | Credentials | Naamgeving | Voorbeeld |
 | ----------------- |-------------| -------------|
-| Projectnaam | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| Projectnaam | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | Project-id | random | composiet-task-306413 |
 
 U kunt uw Naam van het Project en identiteitskaart van het Project vinden door op uw **Naam van het Project** in de hoogste menubar te klikken:

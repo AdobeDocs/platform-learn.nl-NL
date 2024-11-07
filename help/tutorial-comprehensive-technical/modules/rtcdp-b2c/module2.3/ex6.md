@@ -3,7 +3,7 @@ title: CDP in realtime - extern publiek
 description: CDP in realtime - extern publiek
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Dan zie je dit. Selecteer het gebied **_id**. In het juiste menu, scrol neer en 
 
 ![ Extern Schema van Metagegevens van het publiek 4 ](images/extAudMDXDM4.png)
 
-Daarna, selecteer de schemanaam **Naamloos schema**. Wijzig de naam in `--demoProfileLdap-- - External Audiences Metadata` .
+Daarna, selecteer de schemanaam **Naamloos schema**. Wijzig de naam in `--aepUserLdap-- - External Audiences Metadata` .
 
 ![ Extern Schema van Metagegevens van het publiek 5 ](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ Laat het **Profiel** knevel en bevestig toe. Tot slot klik **sparen**.
 
 ## 2.3.6.1.3 De gegevensset met metagegevens voor externe doelgroepen maken
 
-In **Schema&#39;s**, ga **doorbladeren**. Zoek en klik op het schema `--demoProfileLdap-- - External Audiences Metadata` dat u in de vorige stap hebt gemaakt. Daarna, klik **creeer Dataset van Schema**.
+In **Schema&#39;s**, ga **doorbladeren**. Zoek en klik op het schema `--aepUserLdap-- - External Audiences Metadata` dat u in de vorige stap hebt gemaakt. Daarna, klik **creeer Dataset van Schema**.
 
 ![ Externe Metagegevens van het publiek DS 1 ](images/extAudMDDS1.png)
 
-Voor het gebied **Naam**, ga `--demoProfileLdap-- - External Audience Metadata` in. Klik **creëren dataset**.
+Voor het gebied **Naam**, ga `--aepUserLdap-- - External Audience Metadata` in. Klik **creëren dataset**.
 
 ![ Externe Metagegevens van het publiek DS 2 ](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ Ga naar **Bronnen**. Op het onderzoeksgebied, ga **HTTP** in. Klik **toevoegen g
 Voer de volgende gegevens in:
 
 - **Type van Rekening**: uitgezochte **Nieuwe rekening**
-- **naam van de Rekening**: ga `--demoProfileLdap-- - External Audience Metadata` in
+- **naam van de Rekening**: ga `--aepUserLdap-- - External Audience Metadata` in
 - Controle checkbox **XDM compatibel vakje**
 
 Daarna, klik **verbinden met bron**.
@@ -115,7 +115,7 @@ Dan zie je dit. Klik **daarna**.
 
 ![ Externe Metagegevens van het publiek http 2 ](images/extAudMDhttp2a.png)
 
-Selecteer **Bestaande dataset** en in het dropdown menu, onderzoek en selecteer de dataset `--demoProfileLdap-- - External Audience Metadata`.
+Selecteer **Bestaande dataset** en in het dropdown menu, onderzoek en selecteer de dataset `--aepUserLdap-- - External Audience Metadata`.
 
 Verifieer de **details Dataflow** en klik dan **daarna**.
 
@@ -149,15 +149,15 @@ Het voorwerp **xdmEntiteit** moet door de hieronder code worden vervangen. Kopie
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ Vernieuw het Source-verbindingsscherm van de HTTP API, waar u nu ziet dat de geg
 
 Wanneer de verwerking wordt voltooid kunt u de gegevensbeschikbaarheid in de dataset controleren gebruikend de Dienst van de Vraag.
 
-In het juiste menu, ga naar **Datasets** en selecteer de `--demoProfileLdap-- - External Audience Metadata` dataset u eerder creeerde.
+In het juiste menu, ga naar **Datasets** en selecteer de `--aepUserLdap-- - External Audience Metadata` dataset u eerder creeerde.
 
 ![ Externe de Metagegevens van het publiek str 3 ](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ In het juiste menu, ga naar Vragen en klik **creeer vraag**.
 Ga de volgende code in en duik dan **SHIFT + ENTER**:
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 In de vraagresultaten zult u de meta-gegevens van de externe publiek zien die u hebt opgenomen.
@@ -229,7 +229,7 @@ Klik **toepassen**.
 
 ![ Extern Schema 4 van het Profiel van het publiek ](images/extAudPrXDM4.png)
 
-Daarna, selecteer de naam van het Schema **Naamloos schema**. Typ `--demoProfileLdap-- - External Audiences Membership` in het veld Weergavenaam.
+Daarna, selecteer de naam van het Schema **Naamloos schema**. Typ `--aepUserLdap-- - External Audiences Membership` in het veld Weergavenaam.
 
 ![ Extern Schema van het Profiel van het publiek 5 ](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ Daarna, laat het **knevel en bevestig van het Profiel toe 0}.** Klik **sparen**.
 
 ## 2.3.6.2.2 Maak een gegevensset voor leden van externe doelgroepen
 
-In **Schema&#39;s**, ga **doorbladeren**. Zoek en klik op het schema `--demoProfileLdap-- - External Audiences Membership` dat u in de vorige stap hebt gemaakt. Daarna, klik **creeer Dataset van Schema**.
+In **Schema&#39;s**, ga **doorbladeren**. Zoek en klik op het schema `--aepUserLdap-- - External Audiences Membership` dat u in de vorige stap hebt gemaakt. Daarna, klik **creeer Dataset van Schema**.
 
 ![ Externe Metagegevens van het publiek DS 1 ](images/extAudPrDS1.png)
 
-Voor het gebied **Naam**, ga `--demoProfileLdap-- - External Audiences Membership` in. Klik **creëren dataset**.
+Voor het gebied **Naam**, ga `--aepUserLdap-- - External Audiences Membership` in. Klik **creëren dataset**.
 
 ![ Externe Metagegevens van het publiek DS 2 ](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ Ga naar **Bronnen**. Op het onderzoeksgebied, ga **HTTP** in. Klik **toevoegen g
 Voer de volgende gegevens in:
 
 - **Type van Rekening**: uitgezochte **Nieuwe rekening**
-- **naam van de Rekening**: ga `--demoProfileLdap-- - External Audience Membership` in
+- **naam van de Rekening**: ga `--aepUserLdap-- - External Audience Membership` in
 - Controle checkbox **XDM compatibel vakje**
 
 Daarna, klik **verbinden met bron**.
@@ -274,7 +274,7 @@ Dan zie je dit. Klik **daarna**.
 
 ![ Externe Metagegevens van het publiek http 2 ](images/extAudPrhttp2a.png)
 
-Selecteer **Bestaande dataset** en in het dropdown menu, onderzoek en selecteer de dataset `--demoProfileLdap-- - External Audiences Membership`.
+Selecteer **Bestaande dataset** en in het dropdown menu, onderzoek en selecteer de dataset `--aepUserLdap-- - External Audiences Membership`.
 
 Verifieer de **details Dataflow** en klik dan **daarna**.
 
@@ -308,18 +308,18 @@ Het voorwerp **xdmEntiteit** moet door de hieronder code worden vervangen. Kopie
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ Vernieuw het Source-verbindingsscherm van de HTTP API, waar u na een paar minute
 
 Wanneer de verwerking wordt voltooid kunt u de gegevensbeschikbaarheid in de dataset controleren gebruikend de Dienst van de Vraag.
 
-In het juiste menu, ga naar **Datasets** en selecteer de `--demoProfileLdap-- - External Audiences Membership ` dataset u eerder creeerde.
+In het juiste menu, ga naar **Datasets** en selecteer de `--aepUserLdap-- - External Audiences Membership ` dataset u eerder creeerde.
 
 ![ Externe de Metagegevens van het publiek str 3 ](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ In het juiste menu, ga naar Vragen en klik **creeer vraag**.
 Ga de volgende code in en duik dan **SHIFT + ENTER**:
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 In de vraagresultaten zult u de meta-gegevens van de externe publiek zien die u hebt opgenomen.
@@ -382,11 +382,11 @@ Ga naar **Soorten publiek**. Dan zie je dit. Klik **Extern publiek**.
 
 ![ Externe SegBuilder van het publiek 1 ](images/extAudSegUI2a.png)
 
-Selecteer het externe publiek dat u eerder hebt gemaakt en dat de naam `--demoProfileLdap---extaudience-01` heeft. Sleep het publiek naar het canvas.
+Selecteer het externe publiek dat u eerder hebt gemaakt en dat de naam `--aepUserLdap---extaudience-01` heeft. Sleep het publiek naar het canvas.
 
 ![ Externe SegBuilder van het publiek 1 ](images/extAudSegUI2b.png)
 
-Geef uw segment een naam, gebruik `--demoProfileLdap-- - extaudience-01`. Klik **sparen en Sluiten**.
+Geef uw segment een naam, gebruik `--aepUserLdap-- - extaudience-01`. Klik **sparen en Sluiten**.
 
 ![ Externe SegBuilder van het publiek 1 ](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ Uw segment is nu klaar en kan naar een bestemming voor activering worden verzond
 
 ## 2.3.6.4 Het profiel van uw klant visualiseren
 
-U kunt nu ook de segmentkwalificatie visualiseren op uw klantprofiel. Ga naar **Profielen**, gebruik het identiteit namespace **Systeem van de Manifestatie - CRMID** en verstrek de identiteit `--demoProfileLdap---profile-test-01`, die u als deel van oefening 6.6.2.4 gebruikte, en klik **Mening**. Vervolgens klikt u op de **Profiel-id** om het profiel te openen.
+U kunt nu ook de segmentkwalificatie visualiseren op uw klantprofiel. Ga naar **Profielen**, gebruik het identiteit namespace **Systeem van de Manifestatie - CRMID** en verstrek de identiteit `--aepUserLdap---profile-test-01`, die u als deel van oefening 6.6.2.4 gebruikte, en klik **Mening**. Vervolgens klikt u op de **Profiel-id** om het profiel te openen.
 
 ![ Externe SegBuilder van het publiek 1 ](images/extAudProfileUI1.png)
 

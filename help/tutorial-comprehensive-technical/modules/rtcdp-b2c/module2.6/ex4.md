@@ -3,7 +3,7 @@ title: Kafka Connect en de Adobe Experience Platform Sink Connector installeren 
 description: Kafka Connect en de Adobe Experience Platform Sink Connector installeren en configureren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Neem de onderstaande voorbeeldervaring op bij het laden van de gebeurtenis en ko
 
 Dan zie je dit. U moet twee velden handmatig bijwerken:
 
-- **_id**: te plaatsen gelieve willekeurige identiteitskaart, iets als `--demoProfileLdap--1234`
+- **_id**: te plaatsen gelieve willekeurige identiteitskaart, iets als `--aepUserLdap--1234`
 - **timestamp**: werk timestamp aan de huidige datum en de tijd bij
 - **phoneNumber**: ga phoneNumber van de rekening in die enkel op de demowebsite werd gecreeerd. U kunt het op het paneel van de Kijker van het Profiel onder **Identiteiten** vinden.
 

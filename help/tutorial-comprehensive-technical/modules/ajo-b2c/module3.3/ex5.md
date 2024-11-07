@@ -3,7 +3,7 @@ title: Offer decisioning - Gebruik uw beslissing in een e-mail
 description: Gebruik uw beslissing in een e-mail
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In deze oefening, zult u uw besluit gebruiken om de levering van e-mail en SMS te personaliseren.
 
-Ga naar **Reizen**. Vind de reis u in oefening 7.2 creeerde, die `--demoProfileLdap-- - Account Creation Journey` wordt genoemd. Klik op uw reis om deze te openen.
+Ga naar **Reizen**. Vind de reis u in oefening 7.2 creeerde, die `--aepUserLdap-- - Account Creation Journey` wordt genoemd. Klik op uw reis om deze te openen.
 
 ![ Journey Optimizer ](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ In het menu, ga naar **Componenten van de Inhoud**. Selecteer de **component van
 
 ![ Journey Optimizer ](./images/emailoffer7.png)
 
-Selecteer het type plaatsing dat u in de e-mail wilt opnemen. In het **drop-down menu van Plaatsen** uitgezochte **E-mail - Beeld**, dan selecteer uw besluit `--demoProfileLdap-- - Luma Decision`. Klik **toevoegen**.
+Selecteer het type plaatsing dat u in de e-mail wilt opnemen. In het **drop-down menu van Plaatsen** uitgezochte **E-mail - Beeld**, dan selecteer uw besluit `--aepUserLdap-- - Luma Decision`. Klik **toevoegen**.
 
 ![ Journey Optimizer ](./images/emailoffer8.png)
 

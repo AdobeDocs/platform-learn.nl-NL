@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ In deze module gaan we diep in de mogelijkheden van Adobe Experience Platform om
 - Toegang tot [ https://public.aepdemo.net](https://public.aepdemo.net)
 - **Download deze activa**:
    - [Postman-verzamelingen](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->Deze zelfstudie is gemaakt om een bepaalde indeling voor de workshop te vergemakkelijken. Het gebruikt specifieke systemen en rekeningen waartot u geen toegang zou kunnen hebben. Zelfs zonder toegang denken we dat je nog veel kunt leren door deze zeer gedetailleerde inhoud te lezen. Als u een deelnemer bent aan een van de workshops en uw toegangsgegevens nodig hebt, neemt u contact op met uw Adobe die u de vereiste informatie zal verstrekken.
 
 >[!NOTE]
 >

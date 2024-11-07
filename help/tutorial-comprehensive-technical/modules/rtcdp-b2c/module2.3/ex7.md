@@ -3,7 +3,7 @@ title: Real-time CDP - Doelen SDK
 description: Real-time CDP - Doelen SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2382'
 ht-degree: 0%
@@ -122,10 +122,10 @@ Klik **uitgeven Project**.
 
 ![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api14.png)
 
-Voer een naam en beschrijving in voor uw integratie. We gebruiken `AEP API --demoProfileLdap--` als naamgevingsconventie. Vervang ldap door uw ldap.
+Voer een naam en beschrijving in voor uw integratie. We gebruiken `AEP API --aepUserLdap--` als naamgevingsconventie. Vervang ldap door uw ldap.
 Als uw LDAP bijvoorbeeld vangeluw is, worden de naam en beschrijving van uw integratie gewijzigd in AEP API vangeluw.
 
-Ga `AEP API --demoProfileLdap--` als **Titel van het Project** in. Klik **sparen**.
+Ga `AEP API --aepUserLdap--` als **Titel van het Project** in. Klik **sparen**.
 
 ![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Wat het formaat betreft, zullen wij een standaardmalplaatje gebruiken dat segmen
 
 De eerste stap om uw eigen Doel in Adobe Experience Platform te creëren is een server en malplaatjeconfiguratie tot stand te brengen.
 
-Om dat te doen, ga naar **Authoring API van de Bestemming**, naar **de servers en de malplaatjes van de Bestemming** en klik om de verzoek **POST te openen - creeer een configuratie van de bestemmingsserver**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxId--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
+Om dat te doen, ga naar **Authoring API van de Bestemming**, naar **de servers en de malplaatjes van de Bestemming** en klik om de verzoek **POST te openen - creeer een configuratie van de bestemmingsserver**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
 
 ![ Ingestie van Gegevens ](./images/sdkpm1.png)
 
-Vervang deze door `--aepSandboxId--` .
+Vervang deze door `--aepSandboxName--` .
 
 ![ Ingestie van Gegevens ](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Na het klikken **verzend**, zal uw servermalplaatje worden gecreeerd, en als dee
 
 ## 2.3.7.5 creeer uw bestemmingsconfiguratie
 
-In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om de verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxId--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
+In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om de verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
 
 ![ Ingestie van Gegevens ](./images/sdkpm7.png)
 
-Vervang deze door `--aepSandboxId--` .
+Vervang deze door `--aepSandboxName--` .
 
 ![ Ingestie van Gegevens ](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxId--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Ga een dummy dragerteken, als **1234** in. Klik **verbinden met bestemming**.
 
 ![ Ingestie van Gegevens ](./images/destsdk3.png)
 
-Dan zie je dit. Gebruik `--demoProfileLdap-- - Webhook` als naam voor uw doel. Selecteer een eindpunt van keus, in dit voorbeeld **EU**. Klik **daarna**.
+Dan zie je dit. Gebruik `--aepUserLdap-- - Webhook` als naam voor uw doel. Selecteer een eindpunt van keus, in dit voorbeeld **EU**. Klik **daarna**.
 
 ![ Ingestie van Gegevens ](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ U kunt desgewenst een beleid voor gegevensbeheer selecteren. Klik **daarna**.
 
 ![ Ingestie van Gegevens ](./images/destsdk5.png)
 
-Selecteer het segment dat u eerder hebt gemaakt en dat de naam `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` heeft. Klik **daarna**.
+Selecteer het segment dat u eerder hebt gemaakt en dat de naam `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` heeft. Klik **daarna**.
 
 ![ Ingestie van Gegevens ](./images/destsdk6.png)
 
