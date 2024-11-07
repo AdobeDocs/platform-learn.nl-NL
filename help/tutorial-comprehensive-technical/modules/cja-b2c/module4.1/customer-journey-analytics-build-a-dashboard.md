@@ -1,0 +1,76 @@
+---
+title: Customer Journey Analytics - Een dashboard maken met Analysis Workspace boven op Adobe Experience Platform
+description: Customer Journey Analytics - Een dashboard maken met Analysis Workspace boven op Adobe Experience Platform
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
+
+---
+
+# 4.1 Customer Journey Analytics - Een dashboard maken met Analysis Workspace boven op Adobe Experience Platform
+
+**Auteur: [ Victor de la Iglesia ](https://www.linkedin.com/in/victordelaiglesia/), [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
+
+In deze module, zult u hands-on ervaring met de de toepassingsdienst van de Customer Journey Analytics krijgen.
+
+Customer Journey Analytics verstrekt toolkit aan bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen de Customer Journey Analytics bieden context en helderheid aan de complexe multi-kanaals klantenreizen. De verstrekte context produceert actionable inzicht in hoe te om pijnpunten uit het proces van de klantenomzetting te verwijderen en positieve ervaringen in de momenten te leveren die het belangrijkst zijn.
+
+
+Heb een blik bij deze video om de waarde, de klantenreis en het configuratieproces te begrijpen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+
+Meer informatie over Customer Journey Analytics kan [ hier ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) worden gevonden.
+
+## Leerdoelen
+
+- Word vertrouwd met de UI van de Customer Journey Analytics
+- Adobe Experience Platform-gegevenssets in Customer Journey Analytics plaatsen
+- De persoon-id en gegevensstitching in de Customer Journey Analytics begrijpen
+- Begrijp de concepten een gegevensverbinding en een gegevensmening
+- Analysis Workspace gebruiken met Adobe Experience Platform-gegevenssets
+
+## Vereisten
+
+- Enige kennis van Analysis Workspace verdient de voorkeur, maar is niet vereist
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Dienst van de Toepassing van Customer Journey Analytics
+
+>[!NOTE]
+>
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ 0.1 van verwijzingen wordt voorzien - installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+
+## Uitoefening
+
+[4.1.1 Customer Journey Analytics 101](./ex1.md)
+
+Leer alles over de concepten van de Customer Journey Analytics.
+
+[4.1.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
+
+Leer hoe u meerdere gegevenssets van Adobe Experience Platform in Customer Journey Analytics kunt gebruiken.
+
+[4.1.3 Een gegevensweergave maken](./ex3.md)
+
+Leer hoe te om een gegevensmening in Customer Journey Analytics te vormen.
+
+[4.1.4 Gegevensvoorbereiding in de Customer Journey Analytics](./ex4.md)
+
+Leer hoe u gegevens voorbereidt voordat u verdergaat met de analyse.
+
+[4.1.5 Visualisatie met Customer Journey Analytics](./ex5.md)
+
+Leer hoe u Adobe Experience Platform-gegevens visualiseert met Customer Journey Analytics.
+
+[Samenvatting en voordelen](./summary.md)
+
+Overzicht van deze module en overzicht van de voordelen.
+
+>[!NOTE]
+>
+>Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+
+[Terug naar alle modules](../../../overview.md)
