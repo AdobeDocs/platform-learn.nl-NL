@@ -3,16 +3,17 @@ title: Aan de slag - De mobiele app gebruiken
 description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 De mobiele app gebruiken
+# De mobiele app gebruiken
 
-## 0.5.1 De app downloaden
+## De app downloaden
 
 Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app) op uw computer. Dan zie je dit.
 
@@ -22,7 +23,7 @@ Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw 
 
 >[!NOTE]
 >
->Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > het Beheer van het Apparaat > Adobe Systems Inc. gaan** en **Vertrouwen Adobe Systems Inc.** klikken.
+>Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **Vertrouwen Adobe Systems Inc.** klikken.
 
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
 
@@ -48,21 +49,25 @@ U kunt nu een aangepast project laden. Klik de code QR om uw project gemakkelijk
 
 ![ DSN ](./images/mobileappn6.png)
 
-Na oefening 0.1, had u dit resultaat. Klik om het **Mobiele Retail project** te openen dat voor u werd gecreeerd.
+Na de vorige oefening, had u dit resultaat. Klik om het **Mobiele project van Edge Telco** te openen dat voor u werd gecreeerd.
 
 ![ DSN ](./images/dsn5b.png)
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw mobiele-toepassingsproject om het te openen.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com ](https://dsn.adobe.com) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de drie punten **...** op uw mobiel app project en klik dan **uitgeven**.
 
 ![ DSN ](./images/web8a.png)
 
-Dan zie je dit. Klik **Integraties**.
+Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in de vorige oefening werd gecreeerd. Om dat te doen, klik **Uitgezochte milieu**.
 
 ![ DSN ](./images/web8aa.png)
 
-U moet het bezit van de Inzameling van Gegevens voor mobiel selecteren dat in oefening 0.1 werd gecreeerd. Daarna, klik **Looppas**.
+Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)` wordt genoemd. Dan, klik **sparen**.
 
 ![ DSN ](./images/web8b.png)
+
+Dan zie je dit. Daarna, klik **Looppas**.
+
+![ DSN ](./images/web8bb.png)
 
 U zult dan deze popup zien, die een QR code bevat. Scan deze QR-code vanuit de mobiele app.
 
@@ -76,8 +81,8 @@ Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
 
 ![ DSN ](./images/mobileappn8.png)
 
-U hebt nu module 0 voltooid.
+U hebt nu de Getting Started module voltooid en u bent klaar om met de volgende oefeningen te beginnen.
 
-[Ga terug naar module 0](./getting-started.md)
+[Terug naar Aan de slag](./getting-started.md)
 
 [Terug naar alle modules](./../../../overview.md)

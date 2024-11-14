@@ -3,26 +3,31 @@ title: Aan de slag - Maak uw DataStream
 description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
 
-# 0.3 Maak uw gegevensstroom
+# Uw gegevensstroom maken
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Na de vorige oefening, hebt u nu twee eigenschappen van de Inzameling van Gegevens: voor Web en voor mobiel.
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
 
 ![ DSN ](./images/launchprop.png)
 
-Deze eigenschappen zijn bijna klaar om te worden gebruikt, maar alvorens u gegevens kunt beginnen te verzamelen gebruikend deze eigenschappen moet u opstelling een gegevensstroom. U zult meer informatie over het concept krijgen wat een gegevensstroom is en wat het in Uitoefening 1.2 betekent.
+Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige oefening, hebt u nu twee eigenschappen van de Inzameling van Gegevens: voor Web en voor mobiel.
+
+![ DSN ](./images/launchprop1.png)
+
+Deze eigenschappen zijn bijna klaar om te worden gebruikt, maar alvorens u gegevens kunt beginnen te verzamelen gebruikend deze eigenschappen moet u opstelling een gegevensstroom. U zult meer informatie rond het concept krijgen wat een gegevensstroom is en wat het in een recentere oefening in de module van de Inzameling van Gegevens betekent.
 
 Voer voorlopig deze stappen uit.
 
-## 0.3.1 Maak uw DataStream voor het Web
+## Maak uw gegevensstroom voor het web
 
-Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** .
+Klik op **[!UICONTROL Datastreams]**.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--aepUserLdap-- - Demo System Datastream` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - Demo System Datastream` in voor de **[!UICONTROL Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ Dan zie je dit. Klik **Uitbreidingen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig11.png)
 
-Voor de uitbreiding van SDK van het Web van Adobe Experience Platform, vormt de klik ****.
+Eerst, klik de uitbreiding van SDK van het Web van Adobe Experience Platform en klik dan **vormen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig12.png)
 
-Dan zie je dit. Voor **Datastreams**, zult u momenteel een dummywaarde zien die aan 1 wordt geplaatst. U moet nu **klikken kiest van lijst** radio-knoop. Selecteer in de vervolgkeuzelijst de DataStream die u eerder hebt gemaakt.
+Dan zie je dit. Heb een blik bij het **menu van Gegevensstromen** en zorg ervoor de juiste zandbak wordt geselecteerd, die in u geval `--aepSandboxName--` zou moeten zijn.
+
+![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig12a.png)
+
+Open **Datastreams** dropdown, en selecteer de Datasstream u vroeger creeerde.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig13.png)
 
-Zorg ervoor om uw **Datastream** te hebben geselecteerd. TIP: U kunt de resultaten in het vervolgkeuzemenu eenvoudig filteren door uw `--aepUserLdap--` te typen.
+Zorg ervoor om uw **Datastream** in alle drie verschillende milieu&#39;s te hebben geselecteerd. Dan, klik **sparen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig14.png)
-
-De rol neer tot u **Inzameling van Gegevens** ziet. Gelieve te zorgen ervoor dat checkbox voor **toelaten klik gegevensinzameling** niet wordt toegelaten. Klik **sparen** om uw veranderingen te bewaren.
-
-![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig14a.png)
 
 Ga naar **het Publiceren Stroom**.
 
@@ -92,13 +97,15 @@ Klik **toevoegen Alle Gewijzigde Middelen** en klik dan **sparen &amp; bouwt voo
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17.png)
 
-Uw wijzigingen worden nu gepubliceerd en zijn over een paar minuten klaar.
+Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn, waarna zult u de groene punt naast **Hoofd** zien.
 
-## 0.3.2 Maak uw gegevensstroom voor mobiele apparaten
+![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17a.png)
+
+## Maak uw gegevensstroom voor mobiele apparaten
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
 
-Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** .
+Klik op **[!UICONTROL Datastreams]**.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--aepUserLdap-- - Demo System Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor het Schema van de Gebeurtenis, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele App (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - Demo System Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele Toepassing (Globale v1.1)**. Klik **sparen**.
 
 Klik op **[!UICONTROL Save]**.
 
@@ -130,7 +137,7 @@ Dan zie je dit.
 
 ![ noem de Configuratie DataStream en sparen ](./images/edgeconfig5m.png)
 
-Uw DataStream is nu klaar om in uw bezit van de Cliënt van de Inzameling van Gegevens van Adobe Experience Platform voor Mobiel te worden gebruikt.
+Uw datastream kan nu worden gebruikt in uw Adobe Experience Platform Data Collection Client-eigenschap voor mobiele apparatuur.
 
 Ga naar **Markeringen** en filter de onderzoeksresultaten om uw twee eigenschappen van de Inzameling van Gegevens te zien. Open het bezit voor **Mobiel** door het te klikken.
 
@@ -140,13 +147,13 @@ Dan zie je dit. Klik **Uitbreidingen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig11m.png)
 
-Voor de **Edge Network van Adobe Experience Platform** uitbreiding, klik **vormen**.
+Klik de **Edge Network van Adobe Experience Platform** uitbreiding en klik dan **vormen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig12m.png)
 
 Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxName--` en de datastream wordt `--aepUserLdap-- - Demo System Datastream (Mobile)` genoemd.
 
-Voor het **domein van de Edge Network**, gelieve het standaarddomein te gebruiken dat **edge.adobedc.net** is.
+Voor het **domein van de Edge Network**, gelieve het standaarddomein te gebruiken.
 
 Klik **sparen** om uw veranderingen te bewaren.
 
@@ -164,10 +171,12 @@ Klik **toevoegen Alle Gewijzigde Middelen**, dan klik **sparen &amp; bouwt voor 
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17m.png)
 
-Uw wijzigingen worden nu gepubliceerd en zijn over een paar minuten klaar.
+Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn, waarna zult u de groene punt naast **Hoofd** zien.
 
-Volgende Stap: [ 0.4 Gebruik de website ](./ex4.md)
+![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17ma.png)
 
-[Ga terug naar module 0](./getting-started.md)
+Volgende Stap: [ gebruik de website ](./ex4.md)
+
+[Terug naar Aan de slag](./getting-started.md)
 
 [Terug naar alle modules](./../../../overview.md)

@@ -3,40 +3,37 @@ title: Aan de slag - Gebruik het demosysteem naast het instellen van de opstarte
 description: Aan de slag - Gebruik het demosysteem naast het instellen van de opstarteigenschap
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 0.2 Het Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform
+# Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling
 
-Nadat u zich hebt aangemeld voor de uitgebreide technische zelfstudie voor Adobe Experience Platform, is er een geautomatiseerd proces dat u toegang biedt tot het demosysteem, zodat u de onderstaande configuratie kunt openen en uitvoeren.
+Om de lessen in dit leerprogramma te visualiseren en het voor u mogelijk te maken om uw configuratie in een veilige milieu te testen, gebruikt dit leerprogramma de hulpmiddelen van het Systeem van de Demo van de Adobe Volgende. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
 
-Als u toegang hebt tot het demosysteem, gaat u verder met de onderstaande stappen.
+Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
-Ga naar [ https://dashboard.adobedemo.com/ ](https://dashboard.adobedemo.com/). Selecteer uw zandbak en klik **Snelle Opstelling**.
+Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) en navigeer aan **Opstelling**.
+
+![ DSN ](./images/dsnsetup.png)
+
+In **Milieu** dropdown, selecteer uw instantie AEP en zandbak.
 
 ![ DSN ](./images/dsnh1.png)
 
-Dit ziet u:
+Daarna, selecteer de vooraf ingestelde **Gebruiker van het Leerprogramma AEP**.
 
 ![ DSN ](./images/dsnhome.png)
 
-Onder **Algemeen** - **Milieu**, selecteer uw instantie van Adobe Experience Platform en uw zandbak, in dit geval:
-
-- **Internationaal Experience Platform**
-- **aepenablementfy22**
-- Configuratie: gelieve te selecteren **Globale v2.0**
-
-![ DSN ](./images/dsn1.png)
-
-Daarna, selecteer vooraf ingesteld **Gebruiker van Enablement** en klik **Begin**.
+Daarna, klik **Begin**.
 
 ![ DSN ](./images/dsn2.png)
 
-In popup, ga een naam voor uw bezit van de Inzameling van Gegevens in. Gelieve te gebruiken deze noemende overeenkomst: **Systeem van de Demo (DD/MM/JJJJ)**. FYI: de LDAP wordt automatisch toegevoegd, u hoeft deze niet zelf toe te voegen.
+In popup, ga een naam voor uw eigenschappen van de Inzameling van Gegevens en de projecten van de Bouwer van de Ervaring in. Gelieve te gebruiken deze noemende overeenkomst: **Systeem van de Demo (DD/MM/JJJJ)**. FYI: de LDAP wordt automatisch toegevoegd, u hoeft deze niet zelf toe te voegen.
 
 Klik **Begin**.
 
@@ -48,9 +45,9 @@ Deze pop-up toont u de voortgang tijdens het maken van uw website en mobiele app
 
 Zodra het snelle opstellingsproces heeft voltooid, zult u hebben:
 
-- 1 Web Retail-project, dat het mogelijk maakt een demo-website te gebruiken met het Luma-demo-merk
-- 1 Mobile Retail-project, dat het mogelijk maakt een mobiele demo-app te gebruiken met het Luma-demo-merk
-- 1 CX App Retail-project, dat het mogelijk maakt een callcenter en een clienteling-app te gebruiken met het Luma-demo-merk
+- 1 webproject dat het mogelijk maakt een demo-website te gebruiken met een merk telco demo
+- 1 mobiel app-project, dat het mogelijk maakt een mobiele demo-app met een merk telco demo te gebruiken
+- 1 CX App-project, waardoor het mogelijk wordt een callcenter-app te gebruiken met een telco-demo-merk
 - 1 eigenschap Gegevensverzameling voor web, dat u gaat gebruiken om gegevens van de website te verzamelen
 - 1 eigenschap voor gegevensverzameling voor mobiele apparaten, die u gebruikt om gegevens te verzamelen van de mobiele app
 
@@ -58,8 +55,8 @@ Zodra het snelle opstellingsproces heeft voltooid, zult u hebben:
 
 Zorg dat dit scherm open blijft, zoals u het in de volgende stappen nodig hebt.
 
-Volgende Stap: [ 0.3 leidt tot uw DataStream ](./ex3.md)
+Volgende Stap: [ creeer uw DataStream ](./ex3.md)
 
-[Ga terug naar module 0](./getting-started.md)
+[Terug naar Aan de slag](./getting-started.md)
 
 [Terug naar alle modules](./../../../overview.md)

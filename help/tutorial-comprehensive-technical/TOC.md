@@ -5,9 +5,9 @@ user-guide-description: Een praktische zelfstudie waarin veel aspecten van Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
+source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 2%
 
 + [Overzicht van tutorial](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0 Aan de slag {#gettingstarted}
-   + 0.1 Aan de slag {#gettingstarted}
++ Aan de slag {#gettingstarted}
+   + Aan de slag {#gettingstarted}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.1.1 De Chrome-extensie installeren voor de documentatie bij het Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.1.2 Het Systeem van de Demo van het Gebruik naast opstelling uw het cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.1.3 Maak uw gegevensstroom](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.1.4 De website gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.1.5 De mobiele app gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [De Chrome-extensie installeren voor de documentatie van het Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [Uw gegevensstroom maken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [De website gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [De mobiele app gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Gegevensverzameling {#datacollection}
    + 1.1 Adobe Experience Platform-gegevensverzameling en de Web SDK-extensie {#module11}

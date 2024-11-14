@@ -4,14 +4,14 @@ description: Aan de slag - Installeer de Chrome-extensie voor de documentatie va
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 De Chrome-extensie installeren voor de documentatie bij het Experience League
+# De Chrome-extensie installeren voor de documentatie van het Experience League
 
 ## Over de Chrome-extensie
 
@@ -35,7 +35,7 @@ Nadat de extensie is geïnstalleerd, wordt dezelfde tekst automatisch gewijzigd 
 
 ![ DSN ](./images/mod7.png)
 
-## 0.1.1.1 De Chrome-extensie installeren
+## De Chrome-extensie installeren
 
 Om die uitbreiding van Chrome te installeren, open uw browser van Chrome en ga naar: [ https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi ](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Dan zie je dit.
 
@@ -55,7 +55,7 @@ In het **menu van uitbreidingen**, klik het **puzzelstuk** pictogram en speld he
 
 ![ DSN ](./images/c6.png)
 
-## 0.1.1.2 De Chrome-extensie configureren
+## De Chrome-extensie configureren
 
 Ga naar [ https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) en klik dan het uitbreidingspictogram om het te openen.
 
@@ -133,7 +133,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ![ DSN ](./images/c10.png)
 
-## 0.1.1.3 De inhoud van de zelfstudie controleren
+## Inhoud van zelfstudie controleren
 
 Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -141,10 +141,10 @@ U zou nu moeten zien dat alle **Variabelen van het Milieu** door hun ware waarde
 
 U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de omgevingsvariabele `aepTenantId` door uw echte identiteitskaart van de Huurder van AEP is vervangen, die in dit geval **_experiencePlatform** is.
 
-![ DSN ](./images/c12.png)
+![ DSN ](./images/mod7.png)
 
-Volgende Stap: [ 0.2 het Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
+Volgende Stap: [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
 
-[Ga terug naar module 0](./getting-started.md)
+[Terug naar Aan de slag](./getting-started.md)
 
 [Terug naar alle modules](./../../../overview.md)

@@ -3,22 +3,23 @@ title: Aan de slag - De website gebruiken
 description: Aan de slag - De website gebruiken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# 0.4 De website gebruiken
+# De website gebruiken
 
-## 0.4.1 Optie 1: Doorgaan met vorige oefening
+## Optie 1: Doorgaan met vorige oefening
 
 >[!NOTE]
 >
->Als u het onderliggende scherm niet meer open hebt, ga in plaats daarvan naar oefening 0.4.2.
+>Als u het onderliggende scherm niet meer hebt geopend, gaat u naar optie 2.
 
-Na oefening 0.1, had u dit resultaat. Klik om het **Detailhandelproject van het Web** te openen dat voor u werd gecreeerd.
+Na oefening 0.1, had u dit resultaat. Klik om het **project van Telco van het Web** te openen dat voor u werd gecreeerd.
 
 ![ DSN ](./images/dsn5a.png)
 
@@ -26,9 +27,17 @@ Dan zie je dit. Klik **Integraties**.
 
 ![ DSN ](./images/web1.png)
 
-Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in oefening 0.1 werd gecreeerd.
+Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in de vorige oefening werd gecreeerd. Om dat te doen, klik **Uitgezochte milieu**.
 
 ![ DSN ](./images/web2.png)
+
+Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` wordt genoemd.
+
+![ DSN ](./images/web2a.png)
+
+Dan zie je dit. Klik **Looppas** om de demowebsite te openen.
+
+![ DSN ](./images/web2b.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -50,9 +59,9 @@ Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke d
 
 ![ DSN ](./images/web7.png)
 
-## 0.4.2 Optie 2: Begin met een nieuw Incognito-browservenster
+## Optie 2: Beginnen met een nieuw Incognito-browservenster
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **uitgeven**.
 
 ![ DSN ](./images/web8.png)
 
@@ -60,9 +69,17 @@ U kunt nu de onderstaande workflow volgen om toegang te krijgen tot de website. 
 
 ![ DSN ](./images/web1.png)
 
-Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in oefening 0.1 werd gecreeerd.
+Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in de vorige oefening werd gecreeerd. Om dat te doen, klik **Uitgezochte milieu**.
 
 ![ DSN ](./images/web2.png)
+
+Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap - Demo System (DD/MM/YYYY) (web)` wordt genoemd.
+
+![ DSN ](./images/web2a.png)
+
+Dan zie je dit. Klik **Looppas** om de demowebsite te openen.
+
+![ DSN ](./images/web2b.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -84,8 +101,8 @@ Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke d
 
 ![ DSN ](./images/web7.png)
 
-Volgende Stap: [ 0.5 Gebruik mobiele app ](./ex5.md)
+Volgende Stap: [ gebruik mobiele app ](./ex5.md)
 
-[Ga terug naar module 0](./getting-started.md)
+[Terug naar Aan de slag](./getting-started.md)
 
 [Terug naar alle modules](./../../../overview.md)
