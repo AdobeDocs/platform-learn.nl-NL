@@ -4,9 +4,9 @@ description: Leer hoe u gegevens voor Adobe Analytics kunt verzamelen en toewijz
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -127,11 +127,11 @@ resulteert in:
 s.events = "scAdd:321435"
 ```
 
-## Valideren met betrouwbaarheid
+## Valideren met Assurance
 
-Gebruikend de [ Verzekering ](assurance.md) kunt u bevestigen dat u een ervaringsgebeurtenis verzendt, zijn de gegevens XDM correct en de afbeelding van Analytics gebeurt zoals verwacht.
+Gebruikend [ Assurance ](assurance.md) kunt u bevestigen dat u een ervaringsgebeurtenis verzendt, is het XDM- gegeven correct en de afbeelding van Analytics gebeurt zoals verwacht.
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Verzend een **[!UICONTROL productListAdds]** -gebeurtenis (voeg een product toe aan uw mandje).
 
@@ -306,6 +306,17 @@ De extra informatie over verwerkingsregels en contextgegevens kan [ hier ](https
 >[!TIP]
 >
 >In tegenstelling tot de vorige implementaties van mobiele apps, is er geen onderscheid tussen een pagina/het scherm meningen en andere gebeurtenissen. In plaats daarvan kunt u de metrische waarde van **[!UICONTROL Page View]** verhogen door de **[!UICONTROL Page Name]** -dimensie in te stellen in een verwerkingsregel. Aangezien u het aangepaste veld `screenName` in de zelfstudie verzamelt, wordt het ten zeerste aanbevolen de schermnaam toe te wijzen aan **[!UICONTROL Page Name]** in een verwerkingsregel.
+
+## Migreren vanuit mobiele extensie Analytics
+
+Als u uw mobiele toepassing gebruikend de [ mobiele uitbreiding van Adobe Analytics ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) hebt ontwikkeld hebt u zeer waarschijnlijk [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag gebruikt.
+
+Als u besluit te migreren om de geadviseerde Edge Network te gebruiken, hebt u opties:
+
+* Voer de [ uitbreiding van de Edge Network ](configure-tags.md#extension-configuration) uit en gebruik [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) APIs, zoals geïllustreerd in de les op hoe te [ de gebeurtenisgegevens van het Spoor ](events.md). Deze zelfstudie richt zich op deze implementatie.
+* Voer de [ uitbreiding van Edge Bridge ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) uit, en gebruik uw [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag. Zie [ de uitbreiding van Edge Bridge ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) voor meer details en een afzonderlijk leerprogramma uitvoeren.
+
+
 
 
 >[!SUCCESS]

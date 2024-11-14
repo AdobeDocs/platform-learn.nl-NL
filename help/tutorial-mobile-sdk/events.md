@@ -3,7 +3,7 @@ title: Gebeurtenisgegevens bijhouden in mobiele apps met Platform Mobile SDK
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 0%
@@ -32,7 +32,7 @@ In deze les zult u
 * Verzend een XDM-gebeurtenis op basis van een standaardveldgroep.
 * Verzend een XDM-gebeurtenis op basis van een aangepaste veldgroep.
 * Verzend een XDM-aankoopgebeurtenis.
-* Valideren met betrouwbaarheid.
+* Valideren met Assurance.
 
 ## Een ervaringsgebeurtenis maken
 
@@ -121,9 +121,9 @@ U gaat nu eigenlijk deze code in uw project van Xcode uitvoeren.
 U hebt verschillende acties met betrekking tot handelsproducten in uw app en u wilt gebeurtenissen verzenden op basis van deze acties die door de gebruiker worden uitgevoerd:
 
 * weergave: vindt plaats wanneer een gebruiker een specifiek product weergeeft,
-* toevoegen aan winkelwagentje: wanneer een gebruiker tikt <img src="assets/addtocart.png" width="20" /> in een productdetailscherm,
-* opslaan voor later: wanneer een gebruiker op tikt <img src="assets/saveforlater.png" width="15" /> in een productdetailscherm,
-* aankoop: wanneer een gebruiker tikt <img src="assets/purchase.png" width="20" /> in een productdetailscherm.
+* toevoegen aan winkelwagentje: wanneer een gebruiker tikt <img src="assets/addtocart.png" width="20"/> in een productdetailscherm,
+* opslaan voor later: wanneer een gebruiker op tikt <img src="assets/saveforlater.png" width="15"/> in een productdetailscherm,
+* aankoop: wanneer een gebruiker tikt <img src="assets/purchase.png" width="20"/> in een productdetailscherm.
 
 Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herbruikbare manier uit te voeren, gebruikt u een specifieke functie:
 
@@ -166,23 +166,23 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Voor elk van de knoppen (<img src="assets/saveforlater.png" width="15" /> , <img src="assets/addtocart.png" width="20" /> en <img src="assets/purchase.png" width="20" />) voegt u in de werkbalk de relevante aanroep toe in de map `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
+   1. Voor elk van de knoppen (<img src="assets/saveforlater.png" width="15"/> , <img src="assets/addtocart.png" width="20"/> en <img src="assets/purchase.png" width="20"/>) voegt u in de werkbalk de relevante aanroep toe in de map `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
 
-      1. Voor <img src="assets/saveforlater.png" width="15" />:
+      1. Voor <img src="assets/saveforlater.png" width="15"/>:
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Voor <img src="assets/addtocart.png" width="20" />:
+      1. Voor <img src="assets/addtocart.png" width="20"/>:
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Voor <img src="assets/purchase.png" width="20" />:
+      1. Voor <img src="assets/purchase.png" width="20"/>:
 
          ```swift
          // Send purchase commerce experience event
@@ -338,20 +338,20 @@ Nogmaals, laten eigenlijk deze code in uw project van Xcode uitvoeren.
 
 ## Validatie
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
-   1. Verplaats het pictogram Verzekering naar links.
+   1. Het Assurance-pictogram naar links verplaatsen.
    1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
    1. Selecteer **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
-   1. Selecteren <img src="assets/saveforlater.png" width="15" />.
-   1. Selecteren <img src="assets/addtocart.png" width="20" />.
-   1. Selecteren <img src="assets/purchase.png" width="15" />.
+   1. Selecteren <img src="assets/saveforlater.png" width="15"/>.
+   1. Selecteren <img src="assets/addtocart.png" width="20"/>.
+   1. Selecteren <img src="assets/purchase.png" width="15"/>.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. Zoek in de gebruikersinterface van Verzekering naar de **[!UICONTROL hitReceived]** -gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** -leverancier.
+1. Zoek in de gebruikersinterface van Assurance naar de **[!UICONTROL hitReceived]** -gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** -leverancier.
 1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het **[!UICONTROL messages]** -object. Alternatief, kunt u ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) gebruiken **[!UICONTROL Copy Raw Event]** en een tekst of coderedacteur van uw voorkeur gebruiken om de gebeurtenis te kleven en te inspecteren.
 
    ![ de bevestiging van de gegevensinzameling ](assets/datacollection-validation.png)
