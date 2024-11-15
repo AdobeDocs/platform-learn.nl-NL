@@ -3,9 +3,10 @@ title: Adobe Experience Platform Data Collection & Real-time server Side Forward
 description: In deze module, zult u de eerder gevormde datasets, schema's en het bezit van de Server van de Gegevensverzameling van Adobe Experience Platform gebruiken om gegevens te verzamelen, en dan door:sturen die gegevens server-kant aan een eindpunt van keus.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Bekijk deze video om inzicht te krijgen in de waarde, de reis van de klant en he
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ 0.1 van verwijzingen wordt voorzien - installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 

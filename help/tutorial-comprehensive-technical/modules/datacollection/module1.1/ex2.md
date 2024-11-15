@@ -3,9 +3,10 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - Edge Network, Gegevensstromen en de Inzameling van Gegevens van de Server
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## Context
 
-In deze oefening zult u a **Datastream** creëren. A **Datastream** vertelt de servers van Adobe Edge waar te om de gegevens te verzenden nadat het door Web SDK wordt verzameld. Wilt u de gegevens bijvoorbeeld naar Adobe Experience Platform verzenden? Adobe Analytics? Adobe Audience Manager? Adobe Target?
+In deze oefening zult u a **Datastream** creëren. A **datastream** vertelt de servers van Adobe Edge waar te om de gegevens te verzenden nadat het door Web SDK wordt verzameld. Wilt u de gegevens bijvoorbeeld naar Adobe Experience Platform verzenden? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
 De gegevensstromen worden altijd geleid in het gebruikersinterface van de Gegevensverzameling van Adobe Experience Platform en zijn kritiek aan de gegevensinzameling van Adobe Experience Platform met Web SDK. Zelfs wanneer u Web SDK met een niet-Adobe oplossing van het markeringsbeheer uitvoert, zult u nog uw DataStream in het gebruikersinterface van de Inzameling van Gegevens van Adobe Experience Platform moeten creëren.
 
@@ -22,23 +23,23 @@ U zult SDK van het Web op browser in de volgende oefening uitvoeren. Het zal u d
 
 ## Een DataStream maken
 
-In [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde u reeds een Datastream, maar wij bespraken niet de achtergrond en de reden voor zijn van de Datastream.
+In [ Aan de slag ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde u reeds een datastream, maar wij bespraken niet de achtergrond en de reden om van de Datstream te zijn.
 
-Een DataStream vertelt de servers van Adobe Edge waar te om de gegevens te verzenden nadat het door het Web SDK wordt verzameld. Wilt u de gegevens bijvoorbeeld naar Adobe Experience Platform verzenden? Adobe Analytics? Adobe Audience Manager? Adobe Target? De stromen van gegevens worden beheerd in het gebruikersinterface van de Gegevensverzameling van Adobe Experience Platform en zijn kritiek aan de gegevensinzameling van het Platform met Web SDK, ongeacht of u Web SDK via de Inzameling van Gegevens van Adobe Experience Platform uitvoert.
+Een satastream vertelt de Adobe Edge-servers waar ze de gegevens moeten verzenden nadat ze door de SDK van het web zijn verzameld. Wilt u de gegevens bijvoorbeeld naar Adobe Experience Platform verzenden? Adobe Analytics? Adobe Audience Manager? Adobe Target? De stromen van gegevens worden beheerd in het gebruikersinterface van de Gegevensverzameling van Adobe Experience Platform en zijn kritiek aan gegevensinzameling met Web SDK, ongeacht of u Web SDK via de Inzameling van Gegevens van Adobe Experience Platform uitvoert of niet.
 
 Controleer uw **[!UICONTROL Datastream]** :
 
 Ga naar [ https://experience.adobe.com/launch/ ](https://experience.adobe.com/launch/).
 
-Klik op **[!UICONTROL Datastreams]** of **[!UICONTROL Datastreams (Beta)]** in het linkermenu.
+Klik op **[!UICONTROL Datastreams]** in het linkermenu.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1.png)
 
-Zoek naar uw DataStream, die `--aepUserLdap-- - Demo System Datastream` wordt genoemd.
+Open de gegevensstroom met de naam `--aepUserLdap-- - Demo System Datastream` .
 
 ![ noem DataStream en bewaar ](./images/edgeconfig2.png)
 
-Dan zie je de details van je DataStream.
+U zult dan de details van uw gegevensstroom zien.
 
 ![ noem DataStream en bewaar ](./images/edgecfg1.png)
 
@@ -56,12 +57,15 @@ Voor deze gegevensstroom...
 
 - Alle verzamelde gegevens worden opgeslagen in de `--aepSandboxName--` -sandbox in Adobe Experience Platform
 - Alle gegevens van de Gebeurtenis van de Ervaring worden verzameld door gebrek in het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**
-- Alle gegevens van het Profiel zullen door gebrek in het dataset **Systeem van de Manifestatie - de Dataset van het Profiel voor Website (Globale v1.1) worden verzameld** (het opnemen van profielgegevens nefend met Web SDK momenteel wordt niet gesteund nog door Web SDK, en zal in een recentere fase beschikbaar worden gemaakt)
-- Als u de **de toepassingsdienst van de Offer decisioning** voor deze DataStream wilt gebruiken, moet u de doos voor Offer decisioning controleren. (Dit zal deel van [ Module 3.3 ](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) zijn)
-- Als u de **Segmentatie van Edge** wilt gebruiken, moet u de doos voor de Segmentatie van Edge controleren.
+- Alle gegevens van het Profiel zullen door gebrek in het dataset **Systeem van de Demo - de Dataset van het Profiel voor Website (Globale v1.1)** worden verzameld (het opnemen van profielgegevens nationaal met Web SDK wordt momenteel niet gesteund door Web SDK)
+- Als u de **de toepassingsdienst van de Offer decisioning** voor deze gegevensstroom wilt gebruiken, moet u de doos voor Offer decisioning controleren. (Dit zal deel van [ Module 3.3 ](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) zijn)
+- **de Segmentatie van Edge** wordt toegelaten door gebrek, zo betekent het dat de kwalificerende segmenten bij de rand, op opname van inkomend verkeer zullen worden geëvalueerd
 - Als u de **Doelen van Personalization** wilt gebruiken, moet u de doos voor de Doelen van Personalization controleren.
+- 
+   - Als u **Adobe Journey Optimizer** mogelijkheden in deze gegevensstroom wilt gebruiken, moet u de doos voor Adobe Journey Optimizer controleren.
 
-Voor nu, is geen andere configuratie nodig voor uw DataStream.
+
+Voor nu, is geen andere configuratie nodig voor uw gegevensstroom.
 
 Volgende Stap: [ 1.1.3 Inleiding aan de Inzameling van Gegevens van Adobe Experience Platform ](./ex3.md)
 

@@ -3,9 +3,10 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - voer Adobe Target uit
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Dan zie je dit. Om Adobe Target toe te laten, klik **+ voeg de Dienst** toe.
 
 ![ Debugger AEP ](./images/aa2.png)
 
-Dan zie je dit. Selecteer de dienst **Adobe Target**, waarna u naar keuze extra informatie kunt verstrekken. Op dit ogenblik, is er geen behoefte om dit te bewaren, zo klik **annuleert**.
+Dan zie je dit. Selecteer de dienst **Adobe Target**, waarna u naar keuze extra informatie kunt verstrekken. Klik **sparen**.
 
 ![ Debugger AEP ](./images/at1.png)
 

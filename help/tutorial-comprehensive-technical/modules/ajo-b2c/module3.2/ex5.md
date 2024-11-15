@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigg
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ Klik **toevoegen Alle Gewijzigde Middelen** en klik dan **sparen &amp; bouwen aa
 Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Op de **Screens** pagina, klik **Looppas**.
-
-![ DSN ](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 

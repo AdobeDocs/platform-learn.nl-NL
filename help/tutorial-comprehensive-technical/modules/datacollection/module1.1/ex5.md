@@ -3,9 +3,10 @@ title: Foundation - Setup van Adobe Experience Platform Data Collection en de We
 description: Foundation - Setup van Adobe Experience Platform Data Collection en de Web SDK-extensie - Adobe Analytics en Adobe Audience Manager implementeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,19 +15,19 @@ ht-degree: 0%
 
 ## Context
 
-U weet nu dat XDM-gegevens naar een platform stromen. U zult meer over onderzoeken wat XDM in [ Module 2 ](./../module1.2/data-ingestion.md) is, evenals hoe te om uw eigen schema te bouwen om douanevariabelen te volgen. Voor nu gaat u bekijken wat gebeurt wanneer u uw Datasstream plaatst om gegevens aan Analytics en Audience Manager door:sturen.
+U weet nu dat XDM-gegevens naar een platform stromen. U zult meer over onderzoeken wat XDM in [ Module 1.2 ](./../module1.2/data-ingestion.md) is, evenals hoe te om uw eigen schema te bouwen om douanevariabelen te volgen. Voor nu gaat u bekijken wat gebeurt wanneer u uw Datasstream plaatst om gegevens aan Analytics en Audience Manager door:sturen.
 
 ## 1.1.5.1 Variabelen in kaart brengen in analyses
 
 Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via de Web SDK zo snel mogelijk plaatsvindt. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
-Voor XDM gegevens die niet automatisch in kaart worden gebracht aan [!DNL Adobe Analytics], kunt u [ contextgegevens ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=nl) gebruiken om uw [ schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) aan te passen. Dan kan het in [!DNL Analytics] worden in kaart gebracht gebruikend [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) om [!DNL Analytics] variabelen te bevolken. De Regels van de Gegevens van de context en van de Verwerking zullen concepten vertrouwd aan die zijn geweest met Analytics in het verleden, maar maak zich geen zorgen over de details voor nu als zij nieuwe concepten zijn.
+Voor XDM gegevens die niet automatisch aan Adobe Analytics in kaart worden gebracht, kunt u [ contextgegevens ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=nl) gebruiken om uw [ schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) aan te passen. Dan kan het in Analytics worden in kaart gebracht gebruikend [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) om de variabelen van de Analyse te bevolken. De Regels van de Gegevens van de context en van de Verwerking zullen concepten vertrouwd aan die zijn geweest met Analytics in het verleden, maar maak zich geen zorgen over de details voor nu als zij nieuwe concepten zijn.
 
-U kunt ook een standaardset handelingen en productlijsten gebruiken om gegevens te verzenden of op te halen met de AEP [!DNL Web SDK] . Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+U kunt een standaardreeks acties en productlijsten ook gebruiken om gegevens met het Web SDK van AEP te verzenden of terug te winnen. Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
 
 ### Contextgegevens
 
-Voor gebruik door [!DNL Analytics] worden XDM-gegevens afgevlakt met puntnotatie en beschikbaar gemaakt als `contextData` . In de volgende lijst met waardeparen ziet u een voorbeeld van `context data` :
+Voor gebruik door Analytics worden XDM-gegevens afgevlakt met puntnotatie en beschikbaar gemaakt als `contextData` . In de volgende lijst met waardeparen ziet u een voorbeeld van `context data` :
 
 ```javascript
 {
@@ -53,7 +54,7 @@ Voor gebruik door [!DNL Analytics] worden XDM-gegevens afgevlakt met puntnotatie
 
 ### Verwerkingsregels
 
-Alle gegevens die door het randnetwerk worden verzameld kunnen via [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) worden betreden. In [!DNL Analytics] kunt u verwerkingsregels gebruiken om contextgegevens op te nemen in [!DNL Analytics] -variabelen.
+Alle gegevens die door het randnetwerk worden verzameld kunnen via [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) worden betreden. In Analytics, kunt u verwerkingsregels gebruiken om contextgegevens in de variabelen van de Analyse op te nemen.
 
 ## 1.1.5.2 Audience Manager op de Edge Network van het Experience Platform
 

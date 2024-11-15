@@ -3,9 +3,10 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - de Inzameling van Gegevens van het Web aan de cliënt-kant
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Het Adobe Experience Platform Debugger installeren
 
-Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
+Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Installeer de versie voor uw voorkeursbrowser:
 
 - [ uitbreiding Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Controleer of deze twee instellingen zijn ingeschakeld:
 
 ### De demo-website openen
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Op de **Screens** pagina, klik **Looppas**.
-
-![ DSN ](./images/web2.png)
+![ DSN ](.//images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -77,15 +74,19 @@ Klik op de knop **[!UICONTROL Sign In]** rechtsboven om te verifiëren. Als u al
 
 ![ Debugger AEP ](./images/validate2.png)
 
+U wordt dan aangemeld bij Foutopsporing.
+
+![ Debugger AEP ](./images/validate2ab.png)
+
 Druk op de knop Opnieuw laden op uw demowebsite om de foutopsporing te verbinden met dat specifieke tabblad.
 
 ![ Debugger AEP ](./images/validate2a.png)
 
-Controleer of Foutopsporing **[!UICONTROL Connected to Home]** de bovenstaande afbeelding heeft en klik op het pictogram **[!UICONTROL lock]** om Foutopsporing te vergrendelen op de demowebsite. Als u dit niet doet, zal Debugger blijven overschakelen om de implementatiedetails van om het even welk browser lusje in nadruk bloot te stellen, wat verwarrend kan zijn.
+Controleer of Foutopsporing **[!UICONTROL Connected to Home]** de bovenstaande afbeelding heeft en klik op het pictogram **[!UICONTROL lock]** om Foutopsporing te vergrendelen op de demowebsite. Als u dit niet doet, zal Debugger blijven overschakelen om de implementatiedetails van om het even welk browser lusje in nadruk bloot te stellen, wat verwarrend kan zijn. Zodra debugger wordt gesloten, zal het pictogram in **ontgrendelen** veranderen.
 
 ![ Debugger AEP ](./images/validate3.png)
 
-Daarna, ga naar om het even welke pagina op de demowebsite als bijvoorbeeld, de **Mannen** categoriepagina.
+Daarna, ga naar om het even welke pagina op de demowebsite zoals bijvoorbeeld, de **Plannen** categoriepagina.
 
 ![ Debugger AEP de uitbreiding van SDK van het Web van AEP ](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Elke aanvraag bevat een **[!UICONTROL events]** rij.
 
 ![ Debugger AEP de uitbreiding van SDK van het Web van AEP ](./images/validate5.png)
 
-Klik om de rij **[!UICONTROL events]** te openen. Merk op hoe u de {**gebeurtenis 0} web.webpagedetails.pageViews, evenals andere, uit-van-de-doos variabelen ziet die aan het** XDM van SDK van het Web **formaat vasthangen.**
+Klik om een **[!UICONTROL events]** rij te openen. Merk op hoe u de {**gebeurtenis 0} web.webpagedetails.pageViews, evenals andere, uit-van-de-doos variabelen ziet die aan het** XDM van SDK van het Web **formaat vasthangen.**
 
 ![ waarde van Gebeurtenissen ](./images/validate8.png)
 
-Deze types van verzoekdetails zijn ook zichtbaar in het Netwerk tabel. Filter voor verzoeken met **wisselt** in om van de verzoeken de plaats te bepalen die door Web SDK worden verzonden. U kunt alle details van de XDM nuttige lading in de Kopballen van de Payload van het Verzoek vinden:
+Deze types van verzoekdetails zijn ook zichtbaar in het Netwerk tabel. Filter voor verzoeken met **wisselt** in om van de verzoeken de plaats te bepalen die door Web SDK worden verzonden. U kunt alle details van de XDM lading in de sectie van de Lading vinden:
 
 ![ lusje van het Netwerk ](./images/validate9.png)
 

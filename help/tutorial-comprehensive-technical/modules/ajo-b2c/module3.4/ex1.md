@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Een op trigger gebaseerde reis configureren - B
 description: In deze sectie zult u een op trekker-gebaseerde reis - de Bevestiging van de Orde vormen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '1990'
 ht-degree: 0%
 
 ---
@@ -404,10 +405,6 @@ Laten we de bijgewerkte reis testen door een product te kopen op de demo-website
 Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Op de **Screens** pagina, klik **Looppas**.
-
-![ DSN ](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 

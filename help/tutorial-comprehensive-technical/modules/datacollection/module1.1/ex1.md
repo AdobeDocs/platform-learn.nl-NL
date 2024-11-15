@@ -3,9 +3,10 @@ title: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experienc
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web - het Verklaren van de Inzameling van Gegevens van Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,12 @@ Kijk nu naar de linkerspoorlijn.
 - **[!UICONTROL Tags]** geeft een overzicht van alle eigenschappen aan de clientzijde
 - **[!UICONTROL App Surfaces]** geeft een overzicht van alle App Configurations om pushmeldingen in te schakelen (wordt gebruikt/ingeschakeld in combinatie met Project Sierra)
 - **[!UICONTROL Datastreams]** worden verkend in de [ volgende oefening ](./ex2.md)
-- **[!UICONTROL Event Forwarding]** geeft een overzicht van alle server-zijeigenschappen die in [ Module 14 - de Verbindingen van Real-Time CDP worden verkend: Gebeurtenis door:sturen ](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Event Forwarding]** geeft een overzicht van alle server-zijeigenschappen die in [ Module 2.5 - de Verbindingen van Real-Time CDP worden verkend: Gebeurtenis door:sturen ](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Monitoring]** geeft een overzicht van het inkomende en uitgaande gebeurtenisverkeer via Event Forwarding
+- **[!UICONTROL Assurance]** biedt toegang tot foutopsporing voor een implementatie met de Adobe Debugger
+- **[!UICONTROL Places]** biedt toegang tot het beheer van inhoud die toegankelijk wordt voor op locatie gebaseerde personalisatie in mobiele toepassingen
+- **[!UICONTROL Schemas]** biedt toegang tot de Adobe Experience Platform-schemaeditor
+- **[!UICONTROL Identities]** biedt toegang tot Adobe Experience Platform Identity Graph Setup
 
 ## Aanvullende informatie
 

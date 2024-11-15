@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Een dashboard maken met Analysis Workspace b
 description: Customer Journey Analytics - Een dashboard maken met Analysis Workspace boven op Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Meer informatie over Customer Journey Analytics kan [ hier ](https://spark.adobe
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ 0.1 van verwijzingen wordt voorzien - installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 

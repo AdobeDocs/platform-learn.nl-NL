@@ -3,9 +3,10 @@ title: Gegevens van Apache Kafka streamen naar Adobe Experience Platform
 description: In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen, producenten en consumenten definieert en gegevens stroomt naar Adobe Experience Platform met behulp van de Adobe Experience Platform Sink Connector voor Kafka Connect.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen,
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ 0.1 van verwijzingen wordt voorzien - installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 

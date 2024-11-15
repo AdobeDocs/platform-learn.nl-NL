@@ -3,16 +3,15 @@ title: 1.1 Opstelling van de Inzameling van Gegevens van Adobe Experience Platfo
 description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web
-
-**Auteur: [ Matthew Joseph Woolley ](https://www.linkedin.com/in/matthewjwoolley/), [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe en verklaart hoe te om gegevens van een website en mobiele toepassing in Adobe Experience Platform en andere toepassingen via de Inzameling van Gegevens van Adobe Experience Platform, de SDKs van Adobe Experience Platform en de Edge Network van Adobe Experience Platform te krijgen. Deze module introduceert enkele concepten en technologieën die een impact hebben buiten het bereik van een technische zelfstudie van Adobe Experience Platform. Het moet duidelijk zijn welke delen van deze oefeningen de basis vormen voor de rest van de uitgebreide zelfstudie, die u meer leert over de ervaring van Edge en zijn mogelijkheden, en waar u verder gaat voor informatie en zelfstudies.
 
@@ -35,7 +34,7 @@ Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ 0.1 van verwijzingen wordt voorzien - installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 

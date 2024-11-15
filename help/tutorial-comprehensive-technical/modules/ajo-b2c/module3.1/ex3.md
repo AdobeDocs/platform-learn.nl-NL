@@ -3,9 +3,10 @@ title: Werk uw Configuratie-id bij en test uw reis
 description: Werk uw Configuratie-id bij en test uw reis
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ Uw bibliotheek wordt dan bijgewerkt en na 1-2 minuten kunt u uw configuratie tes
 Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Op de **Screens** pagina, klik **Looppas**.
-
-![ DSN ](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
