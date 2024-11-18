@@ -4,14 +4,14 @@ description: Stichting - Gegevensinsluiting - Van onbekend naar bekend op de web
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
 
-# 1.2.1 - Van onbekend naar bekend op de website
+# 1.2.1 Van onbekend naar bekend op de website
 
 ## Context
 
@@ -27,7 +27,7 @@ U gaat nu gegevens in Adobe Experience Platform invoeren en die gegevens worden 
 
 ### Reisstroom van klant
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **uitgeven**.
 
 ![ DSN ](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Open een nieuw Incognito-browservenster.
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
-
 
 Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen.
 
@@ -58,43 +55,45 @@ Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de 
 
 U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedrag van de klant. De lijst is momenteel leeg, maar dat zal binnenkort veranderen.
 
-![ Demo ](../module1.2/images/pv3.png)
+![ Demo ](./images/pv3.png)
 
-Ga naar de **Mannen** productcategorie. Daarna, klik op het product **jasje van de Soort Montana**.
+Ga naar de **Telefoons &amp; apparaten** productcategorie. Daarna, klik op het product **iPhone 15 Pro**.
 
-![ Demo ](../module1.2/images/pv4.png)
+![ Demo ](./images/pv4.png)
 
-Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring van type **Mening van het Product** is nu verzonden naar Adobe Experience Platform gebruikend de implementatie van SDK van het Web die u in Module 1 herzien.
+Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring van type **Mening van het Product** is nu verzonden naar Adobe Experience Platform gebruikend de implementatie van SDK van het Web die u in de vorige module herzien.
 
-![ Demo ](../module1.2/images/pv5.png)
+![ Demo ](./images/pv5.png)
 
 Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurtenissen van de Ervaring**.
 
-![ Demo ](../module1.2/images/pv6.png)
+![ Demo ](./images/pv6.png)
 
-Ga terug naar de **Vrouwen** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform.
+Ga terug naar de **Telefoons &amp; apparaten** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform.
 
-![ Demo ](../module1.2/images/pv7.png)
+Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Terwijl het gedrag anoniem is, met de juiste toestemming op zijn plaats, kunnen wij elke klik volgen en het opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
 
-Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Hoewel het gedrag anoniem is, kunnen we elke klik volgen en deze opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
+![ Demo ](./images/pv7.png)
 
-![ Demo ](../module1.2/images/pv8.png)
+Klik **Teken binnen** om naar de Register/Login pagina te gaan.
 
-Ga naar de pagina Registreren/Aanmelden. Klik **CREËREN EEN ACCOUNT**.
+![ Demo ](./images/pv8.png)
 
-![ Demo ](../module1.2/images/pv9.png)
+Klik **CREËREN EEN ACCOUNT**.
+
+![ Demo ](./images/pv9.png)
 
 Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
 
-![ Demo ](../module1.2/images/pv10.png)
+![ Demo ](./images/pv10.png)
 
 Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het deelvenster Profielviewer worden al uw persoonlijke gegevens weergegeven, zoals de zojuist toegevoegde e-mail- en telefoon-id&#39;s.
 
-![ Demo ](../module1.2/images/pv11.png)
+![ Demo ](./images/pv11.png)
 
 Ga in het deelvenster Profile Viewer naar Experience Events. De twee producten die u eerder hebt bekeken, worden weergegeven in het deelvenster Profielviewer. Beide gebeurtenissen zijn nu ook verbonden met uw &#39;gekende&#39; profiel.
 
-![ Demo ](../module1.2/images/pv12.png)
+![ Demo ](./images/pv12.png)
 
 U hebt nu gegevens in Adobe Experience Platform ingevoerd en u hebt die gegevens gekoppeld aan id&#39;s zoals ECID&#39;s en e-mailadressen. Het doel hiervan is om de zakelijke context te begrijpen van wat je gaat doen. In de volgende oefening, zult u beginnen alles te vormen u nodig hebt om al die gegevensopname mogelijk te maken.
 

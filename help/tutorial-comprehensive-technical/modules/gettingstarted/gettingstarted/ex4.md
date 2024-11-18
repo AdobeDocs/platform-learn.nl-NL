@@ -4,9 +4,9 @@ description: Aan de slag - De website gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Als u het onderliggende scherm niet meer hebt geopend, gaat u naar optie 2.
 
-Na oefening 0.1, had u dit resultaat. Klik om het **project van Telco van het Web** te openen dat voor u werd gecreeerd.
+Na de vorige oefening, had u dit resultaat. Klik om het **project van Telco van het Web** te openen dat voor u werd gecreeerd.
 
 ![ DSN ](./images/dsn5a.png)
 
