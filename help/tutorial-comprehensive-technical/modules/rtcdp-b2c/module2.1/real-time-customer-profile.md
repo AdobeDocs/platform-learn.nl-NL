@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # 2.1 Foundation - Real-time klantprofiel
 
-**Auteur: [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In deze module gaan we diep in de mogelijkheden van Adobe Experience Platform om in real-time klantprofiel en identiteit te gebruiken. U zult leren hoe het publiek, de rol van de Dienst van de Identiteit en identiteitskaart van het Experience Cloud kan worden bepaald, en hoe te om de vragen van de segmentbouwer te bepalen om uw eigen segmenten te bepalen.
+In deze module gaat u diep in de mogelijkheden van het profiel en de identiteit van de klant in real time van Adobe Experience Platform duiken. U zult leren hoe het publiek, de rol van de Dienst van de Identiteit en identiteitskaart van het Experience Cloud kan worden bepaald, en hoe te om de vragen van de segmentbouwer te bepalen om uw eigen segmenten te bepalen.
 
 ## Leerdoelen
 
 - Leer hoe u het realtime klantprofiel van een klant visualiseert via de gebruikersinterface van Adobe Experience Platform
 - Leer hoe u een segment maakt met Adobe Experience Platform Segment Builder
-- Leer hoe u een segment maakt en de resultaten van het segment opslaat in een dataset met Adobe Experience Platform API&#39;s
 - Leer over de gevolgen van het hebben van toegang tot een volledig klantenprofiel, met inbegrip van gedrag in real time, in off-line milieu&#39;s
 
 ## Vereisten
@@ -54,11 +51,7 @@ In deze oefening, zult u Postman en Adobe I/O gebruiken om uw eigen real-time kl
 
 In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwer van het Segment van Adobe Experience Platform te maken.
 
-[2.1.5 Een segment maken - API](./ex5.md)
-
-In deze oefening, zult u Postman en Adobe I/O gebruiken om een segment tot stand te brengen en de resultaten van dat segment op te slaan als dataset, door Adobe Experience Platform APIs te gebruiken.
-
-[2.1.6 Zie uw profiel van de Klant in real time in actie in het Centrum van de Vraag](./ex6.md)
+[2.1.5 Bekijk uw profiel van de Klant in real time in actie in het Centrum van de Vraag](./ex5.md)
 
 In deze oefening, zult u een medewerker van het vraagcentrum nadoen die een vraag van een klant ontvangt. Om werkelijk invloed op de ervaring van deze klant te kunnen uitoefenen, hebt u toegang tot alle beschikbare informatie in real time nodig.
 

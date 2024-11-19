@@ -3,9 +3,10 @@ title: Foundation - Real-time klantprofiel - Een segment maken - UI
 description: Foundation - Real-time klantprofiel - Een segment maken - UI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: db1d744d-c4ff-4131-b104-98bb70269140
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
@@ -14,27 +15,29 @@ ht-degree: 2%
 
 In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwer van het Segment van Adobe Experience Platform te maken.
 
-## Artikel
-
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In het menu op de linkerkant, ga naar **Segmenten**. Op deze pagina ziet u een overzicht van alle bestaande segmenten. Klik op de knop **+ Segment maken** om een nieuw segment te maken.
+In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina ziet u een overzicht van alle bestaande segmenten. Klik op **+ creeer publiek** knoop om een nieuw segment te beginnen tot stand te brengen.
 
 ![Segmentatie](./images/menuseg.png)
+
+Selecteer **bouwt regel** en klik **creëren**.
+
+![Segmentatie](./images/menusegbr.png)
 
 Zodra u in de nieuwe segmentbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
 
 ![Segmentatie](./images/segmentationui.png)
 
-Aangezien XDM de taal is die de ervaringszaken macht, is XDM ook de stichting voor de segmentbouwer. Alle gegevens die in Platform worden opgenomen, moeten tegen XDM worden toegewezen en als zodanig, worden alle gegevens deel van het zelfde gegevensmodel ongeacht waar die gegevens uit komen. Dit geeft u een groot voordeel wanneer het bouwen van segmenten, zoals van deze één segment bouwer UI, kunt u gegevens van om het even welke oorsprong in het zelfde werkschema combineren. Segmenten die in Segment Builder zijn gemaakt, kunnen voor activering naar oplossingen als Adobe Target, Adobe Campaign en Adobe Audience Manager worden verzonden.
+Aangezien XDM de taal is die de ervaringszaken macht, is XDM ook de stichting voor de publieksbouwer. Alle gegevens die in Platform worden opgenomen, moeten tegen XDM worden toegewezen en als zodanig, worden alle gegevens deel van het zelfde gegevensmodel ongeacht waar die gegevens uit komen. Dit geeft u een groot voordeel wanneer het bouwen van publiek, zoals van deze één kijkbouwer UI, kunt u gegevens van om het even welke oorsprong in het zelfde werkschema combineren. Soorten publiek dat in de builder van het publiek is gemaakt, kunnen voor activering naar oplossingen als Adobe Target, Adobe Campaign en Adobe Audience Manager worden gestuurd.
 
-Laten wij een segment bouwen dat alle **mannelijke** klanten omvat.
+Laten wij een publiek bouwen dat alle **mannelijke** klanten omvat.
 
 Om aan het genderattribuut te krijgen, moet u XDM begrijpen en kennen.
 
@@ -42,7 +45,7 @@ Gender is een kenmerk van Person, dat te vinden is onder Kenmerken. Zo om daar t
 
 ![Segmentatie](./images/person.png)
 
-Dan zie je dit. In **Persoon**, kunt u het **3} attribuut van het Geslacht {vinden.** Sleep het attribuut Gender op de segmentbouwer.
+Dan zie je dit. In **Persoon**, kunt u het **3} attribuut van het Geslacht {vinden.** Sleep het attribuut Gender naar de publieksbouwer.
 
 ![Segmentatie](./images/gender.png)
 
@@ -50,7 +53,7 @@ Nu kunt u het specifieke geslacht kiezen uit de vooraf ingevulde opties. In dit 
 
 ![Segmentatie](./images/genderselection.png)
 
-Na het selecteren van **Mannelijke**, kunt u een schatting van de bevolking van het segment krijgen door **te duwen verfrissen Schatting** knoop. Dit is zeer nuttig voor een bedrijfsgebruiker, zodat zij het effect van bepaalde attributen op de resulterende segmentgrootte kunnen zien.
+Na het selecteren van **Mannelijke**, kunt u een schatting van de bevolking van het publiek krijgen door **te duwen verfrissen Schatting** knoop. Dit is zeer nuttig voor een bedrijfsgebruiker, zodat zij de invloed van bepaalde attributen op de resulterende publieksgrootte kunnen zien.
 
 ![Segmentatie](./images/segmentpreview.png)
 
@@ -58,21 +61,17 @@ Hieronder ziet u een schatting:
 
 ![Segmentatie](./images/segmentpreviewest.png)
 
-Daarna, zou u uw segment een beetje moeten verfijnen. U moet een segment van alle mannelijke klanten opbouwen die het product **(Oranje) jasje van de Fitness van de Proteus** hebben bekeken.
+Vervolgens moet u het publiek wat verfijnen. U moet een publiek van alle mannelijke klanten opbouwen die het product **iPhone 15 Pro** hebben bekeken.
 
-Om dit segment te bouwen, moet u een Gebeurtenis van de Ervaring toevoegen. U kunt alle Gebeurtenissen van de Ervaring vinden door op het **pictogram van Gebeurtenissen** in de **Gebieden** menubar te klikken.
+U moet een Experience Event toevoegen om dit publiek op te bouwen. U kunt alle Gebeurtenissen van de Ervaring vinden door op het **pictogram van Gebeurtenissen** in de **Gebieden** menubar te klikken. Daarna, zult u de top-level, **XDM ExperienceEvents** knoop zien. Klik **XDM ExperienceEvent**.
 
 ![Segmentatie](./images/findee.png)
-
-Daarna, zult u de top-level, **XDM ExperienceEvents** knoop zien. Klik op **XDM ExperienceEvent**.
-
-![Segmentatie](./images/see.png)
 
 Ga naar **Punten van de Lijst van het Product**.
 
 ![Segmentatie](./images/plitems.png)
 
-Selecteer **Naam** en belemmering en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de segmentbouwer in de **** sectie van Gebeurtenissen.
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **** sectie van Gebeurtenissen.
 
 ![Segmentatie](./images/eeweb.png)
 
@@ -80,45 +79,42 @@ U zult dan dit zien:
 
 ![Segmentatie](./images/eewebpdtlname.png)
 
-De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, gaat **MONTANA WINT JACKET** in.
+De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, ga **iPhone 15 Pro** in.
 
 ![Segmentatie](./images/pv.png)
 
-Telkens als u een element aan de segmentbouwer toevoegt, kunt u **klikken verfrist schatten** knoop om een nieuwe schatting van de bevolking in uw segment te krijgen.
+Telkens als u een element aan de publieksbouwer toevoegt, kunt u **klikken verfrist Schatting** knoop om een nieuwe schatting van de bevolking in uw publiek te krijgen.
 
-Tot dusver, hebt u slechts UI gebruikt om uw segment te bouwen, maar er is ook een code-optie om een segment te bouwen.
+Tot dusver, hebt u slechts UI gebruikt om uw publiek te bouwen, maar er is ook een code-optie om een publiek te bouwen.
 
-Wanneer u een segment maakt, stelt u een Profile Query Language-query (PQL) samen. Om de code van PQL te visualiseren, kunt u op de **schakelaar van de Mening van de Code** in de hogere juiste hoek van de segmentbouwer klikken.
+Wanneer u een publiek maakt, stelt u eigenlijk een Profile Query Language (PQL) query samen. Om de code van PQL te visualiseren, kunt u op de **schakelaar van de Mening van de Code** in de hogere juiste hoek van de publieksbouwer klikken.
 
 ![Segmentatie](./images/codeview.png)
 
 Nu kunt u de volledige PQL-verklaring zien:
 
 ```sql
-person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("MONTANA WIND JACKET", false)))])
+person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("iPhone 15 Pro", false)))])
 ```
 
-U kunt een steekproef van de klantenprofielen ook voorproef die deel van dit segment uitmaken, door op **Profielen van de Mening** te klikken.
-
-![Segmentatie](./images/previewprofiles.png)
+U kunt een steekproef van de klantenprofielen ook voorproef die deel van dit publiek uitmaken, door op **Profielen van de Mening** te klikken.
 
 ![Segmentatie](./images/previewprofilesdtl.png)
 
-Tot slot geven wij uw segment een naam en bewaren het.
+Tot slot, geven wij uw publiek een naam,
+plaats de **methode van de Evaluatie** aan **het stromen** en klik **Publish**.
 
 Gebruik als naamgevingsconventie:
 
-- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`
 
 ![Segmentatie](./images/segmentname.png)
 
-Dan, klik **sparen en sluit** knoop om uw segment te bewaren, waarna u terug naar de het overzichtspagina van het Segment zult worden genomen.
+U gaat terug naar de overzichtspagina van het publiek.
 
 ![Segmentatie](./images/savedsegment.png)
 
-U kunt nu doorgaan met de volgende oefening en een segment maken via de API.
-
-Volgende Stap: [ 2.1.5 leidt tot een segment - API ](./ex5.md)
+Volgende Stap: [ 2.1.5 zie uw Real-time Profiel van de Klant in actie in het Centrum van de Vraag ](./ex5.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

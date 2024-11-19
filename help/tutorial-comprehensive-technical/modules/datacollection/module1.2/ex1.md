@@ -4,9 +4,9 @@ description: Stichting - Gegevensinsluiting - Van onbekend naar bekend op de web
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ U gaat nu gegevens in Adobe Experience Platform invoeren en die gegevens worden 
 
 ### Reisstroom van klant
 
-Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **uitgeven**.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../gettingstarted/gettingstarted/images/web8.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -79,7 +79,7 @@ Klik **Teken binnen** om naar de Register/Login pagina te gaan.
 
 ![ Demo ](./images/pv8.png)
 
-Klik **CREËREN EEN ACCOUNT**.
+Klik **creeer een rekening**.
 
 ![ Demo ](./images/pv9.png)
 

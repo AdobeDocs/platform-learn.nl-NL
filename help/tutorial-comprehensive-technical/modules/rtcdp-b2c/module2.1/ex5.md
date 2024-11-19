@@ -1,170 +1,64 @@
 ---
-title: Foundation - Real-time klantprofiel - Een segment maken - API
-description: Foundation - Real-time klantprofiel - Een segment maken - API
+title: Zie uw Profiel van de Klant in real time in actie in het Centrum van de Vraag
+description: Zie uw Profiel van de Klant in real time in actie in het Centrum van de Vraag
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 2%
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
-# 2.1.5 Een segment maken - API
+# 2.1.5 Bekijk uw profiel van de Klant in real time in actie in het Centrum van de Vraag
 
-In deze oefening, zult u Postman en Adobe I/O gebruiken om een segment tot stand te brengen en de resultaten van dat segment op te slaan als dataset, door Adobe Experience Platform APIs te gebruiken.
+In deze oefening, is het doel om u door de klantenreis te laten lopen en als echte klant te handelen.
 
-## Artikel
+Op deze website hebben we Adobe Experience Platform geïmplementeerd. Elke actie wordt beschouwd als een ervaringsgebeurtenis en wordt verzonden naar Adobe Experience Platform in real-time, waardoor het profiel van de Klant in real-time wordt gehydrateerd.
 
-In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens en bestaand segmentlidmaatschap. De gegevens die worden getoond kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het ervaringssysteem.
+In een vroegere oefening, begon u als anonieme klant die de plaats doorbladerde, en na een paar stappen, werd u een bekende klant.
 
-## 2.1.5.1 - Een segment maken via de platform-API
+Wanneer die zelfde klant uiteindelijk hun telefoon ophaalt en uw vraagcentrum roept, is het cruciaal dat de informatie van andere kanalen onmiddellijk beschikbaar is, zodat de ervaring van het vraagcentrum relevant en gepersonaliseerd kan zijn.
 
-Ga naar Postman.
+## De CX-app gebruiken
 
-Zoek de verzameling: **_Adobe Experience Platform Enablement** . In deze inzameling, zult u een omslag **zien. Segmentatie**. We zullen deze verzoeken in deze oefening gebruiken.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **...** op uw CX App project en klik dan **uitgeven** om het te openen.
 
-![Segmentatie](./images/pmdtl.png)
+![ Demo ](./images/cxapp3.png)
 
-Hierna volgen alle vereiste stappen om een segment te maken via de API. Wij gaan een eenvoudig segment bouwen: &quot;**ldap** - Alle Vrouwelijke Klanten&quot;.
+In uw project van CX App, ga naar **Integraties**. Klik **Uitgezochte milieu**.
 
-### Stap 1 - Een segmentdefinitie maken
+![ Demo ](./images/cxapp3a.png)
 
-Klik op het verzoek genoemd **Stap 1 - Profiel: creeer een Definitie van het Segment**.
+Selecteer het bezit van de Inzameling van Gegevens van Adobe Experience Platform dat in Aan de slag werd gecreeerd. U moet het bezit selecteren dat **(cx-app)** in zijn naam heeft.
 
-![Segmentatie](./images/s1_call.png)
+![ Demo ](./images/cxapp4.png)
 
-Ga de **sectie van het Lichaam** van dit verzoek.
+Dan zie je dit. Klik **Looppas**.
 
-![Segmentatie](./images/s1_body.png)
+![ Demo ](./images/cxapp4a.png)
 
-In het **Lichaam** van dit verzoek, zult u het volgende zien:
+Daarna, moet u één van uw identiteiten en volgens namespace selecteren, en **onderzoek-pictogram** klikken.
 
-![Segmentatie](./images/s1_bodydtl.png)
+![ Profiel van de Klant ](./images/identities.png)
 
-De taal die voor dit verzoek wordt gebruikt wordt genoemd Profile Query Language, of **PQL**.
+| Identiteit | Naamruimte |
+|:-------------:| :---------------:|
+| Experience Cloud-id (ECID) | 79943948563923140522865572770524243489 |
+| Experience Cloud-id (ECID) | 70559351147248820114888181867542007989 |
+| E-mailid | woutervangeluwe+18112024-01@gmail.com |
+| Mobiel nummer-id | +32473622044+18112024-01 |
 
-U kunt meer info en documentatie over PQL [ hier ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=en) vinden.
+Wanneer de klant uw vraagcentrum roept, kan het telefoonaantal worden gebruikt om de klant te identificeren. In deze oefening, zult u het telefoonaantal gebruiken om het profiel van de klant in CX App terug te winnen.
 
+![ Demo ](./images/19.png)
 
-Aandacht: te werk gelieve veranderlijke **naam** in het hieronder verzoek bij door **ldap** met uw specifieke **ldap** te vervangen.
+U zult nu de informatie zien die idealiter in het Centrum van de Vraag zou worden getoond, zodat de werknemers van het Centrum van de Vraag alle relevante informatie beschikbaar wanneer het spreken aan een klant hebben.
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![ Demo ](./images/20.png)
 
-Na het toevoegen van uw specifieke **ldap**, zou het Lichaam aan dit gelijkaardig moeten kijken:
-
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
-
-U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
-
-![ Postman ](./images/s1_h.png)
-
-| Sleutel | Waarde |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
-
-Nu, klik het blauwe **verzenden** knoop om het segment tot stand te brengen en de resultaten van dat te bekijken.
-
-![Segmentatie](./images/s1_bodydtl_results.png)
-
-Na deze stap, kunt u uw segmentdefinitie in Platform UI bekijken. Om dit te controleren, login aan Adobe Experience Platform en ga naar **Segmenten**.
-
-![Segmentatie](./images/s1_segmentdef.png)
-
-### Stap 2 - creeer een Baan van de POST van het Segment
-
-In de vorige oefening, creeerde u a _het stromen_ segment. Een streaming segment evalueert voortdurend kwalificaties in real-time. Wat u hier doet, creeert a _partij_ segment. Het segment van de partij geeft u een voorproef van wat het segment als in termen van kwalificaties kon kijken, maar _dat niet betekent dat het segment eigenlijk_ in werking heeft gesteld. Momenteel, _kwalificeert niemand voor dit segment_. Om mensen in aanmerking te laten komen, moet het batchsegment lopen, wat precies is wat we hier gaan doen.
-
-Laten we nu een segmenttaak POSTEN.
-
-Ga naar Postman.
-
-![Segmentatie](./images/pmdtl.png)
-
-In uw inzameling van Postman, klik op het verzoek genoemd **Stap 2 - de Baan van het Segment van de POST** om het te openen.
-
-![Segmentatie](./images/s2_call.png)
-
-U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
-
-![ Postman ](./images/s2headers.png)
-
-| Sleutel | Waarde |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
-
-Klik op blauw **verzenden** knoop.
-
-U ziet een vergelijkbaar resultaat:
-
-![Segmentatie](./images/s2_call_response.png)
-
-Deze segmenttaak is nu actief en dit kan enige tijd in beslag nemen. In Stap 3, zult u de status van deze baan kunnen controleren.
-
-
-### Stap 3 - Taakstatus van segment
-
-Ga naar Postman.
-
-![Segmentatie](./images/pmdtl.png)
-
-In uw inzameling van Postman, klik op het verzoek genoemd **Stap 3 - de status van de Baan van het GET**.
-
-![Segmentatie](./images/s3_call.png)
-
-U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
-
-![ Postman ](./images/s3headers.png)
-
-| Sleutel | Waarde |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
-
-Klik op blauw **verzenden** knoop.
-
-U ziet een vergelijkbaar resultaat:
-
-![Segmentatie](./images/s3_status.png)
-
-In dit voorbeeld, wordt de **status** van de baan geplaatst aan **GEDAAN**.
-
-Herhaal dit verzoek door de blauwe **te klikken verzend** knoop om de paar notulen tot de **status** aan **SUCCEEDED** wordt geplaatst.
-
-![Segmentatie](./images/s3_status_succeeded.png)
-
-Zodra de status **SUCCEEDED** is, heeft uw segmentbaan in werking gesteld en de klanten kwalificeren nu voor het segment.
-
-Gefeliciteerd, u hebt met succes de oefening van de Segmentatie voltooid. Laten we nu eens kijken hoe het Real-Time Klantprofiel in de hele onderneming kan worden geactiveerd.
-
-Volgende Stap: [ 2.1.6 zie u Real-time het Profiel van de Klant in actie in het Centrum van de Vraag ](./ex6.md)
+Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

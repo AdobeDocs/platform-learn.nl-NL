@@ -3,9 +3,10 @@ title: Foundation - Real-time klantprofiel - Van onbekend naar bekend op de webs
 description: Foundation - Real-time klantprofiel - Van onbekend naar bekend op de website
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -22,13 +23,9 @@ Platform is een omgeving waarin het woord klant breder is dan alleen de bekende 
 
 ## Vervoersstroom voor klanten
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](../../gettingstarted/gettingstarted/images/web8.png)
-
-Op de **Screens** pagina, klik **Looppas**.
-
-![ DSN ](../../gettingstarted/gettingstarted/images/web2.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -62,7 +59,7 @@ U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedra
 
 ![ Demo ](../../datacollection/module1.2/images/pv3.png)
 
-Ga naar de **Mannen** productcategorie. Daarna, klik op het product **jasje van de Soort Montana**.
+Ga naar de **Telefoons &amp; apparaten** productcategorie. Daarna, klik op het product **iPhone 15 Pro**.
 
 ![ Demo ](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurten
 
 ![ Demo ](../../datacollection/module1.2/images/pv6.png)
 
-Ga terug naar de **Vrouwen** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform.
+Ga terug naar de **Telefoons &amp; apparaten** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform. Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Terwijl het gedrag anoniem is, met de juiste toestemming op zijn plaats, kunt u elke klik volgen en het opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
 
 ![ Demo ](../../datacollection/module1.2/images/pv7.png)
 
-Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Hoewel het gedrag anoniem is, kunnen we elke klik volgen en deze opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
+Ga naar de pagina Registreren/Aanmelden. Klik **Teken binnen**.
 
 ![ Demo ](../../datacollection/module1.2/images/pv8.png)
 
-Ga naar de pagina Registreren/Aanmelden. Klik **CREËREN EEN ACCOUNT**.
+Klik **creeer een rekening**.
 
 ![ Demo ](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ U hebt nu gegevens in Adobe Experience Platform ingevoerd en u hebt die gegevens
 
 Nadat u een bekende klant bent geworden, is het tijd om de mobiele app te gaan gebruiken. Open de mobiele app op uw iPhone en meld u vervolgens aan bij de app.
 
-Als u niet app hebt die meer wordt geïnstalleerd, of als u niet kunt herinneren hoe te om het te installeren, gelieve een blik hier te hebben: [ 0.5 Gebruik mobiele app ](../../gettingstarted/gettingstarted/ex5.md)
+Als u niet app hebt die meer wordt geïnstalleerd, of als u niet kunt herinneren hoe te om het te installeren, gelieve een blik hier te hebben: [ Gebruik mobiele app ](../../gettingstarted/gettingstarted/ex5.md)
 
-Nadat u de app hebt geïnstalleerd zoals u is uitgelegd, ziet u de openingspagina van de app met het merk Luma geladen. Klik op het accountpictogram in het linkerbovengedeelte van het scherm.
+Nadat u de app volgens de instructies hebt geïnstalleerd, ziet u de openingspagina van de app met het Citi Signal-merk geladen. Klik op het accountpictogram in het linkerbovengedeelte van het scherm.
 
-![ Demo ](./images/app_hp.png)
+![ Demo ](./images/app_hp1.png)
 
 Meld u aan met het e-mailadres dat u op de bureaubladwebsite hebt gebruikt in het aanmeldingsscherm. Klik **Login**.
 
@@ -120,15 +117,23 @@ Ga naar het beginscherm van de app en klik om een product te openen.
 
 Vervolgens ziet u de pagina met productdetails.
 
-![ Demo ](./images/app_carst.png)
+![ Demo ](./images/app_galaxy.png)
 
 Ga naar het beginscherm in de app en vegen naar links op het scherm om het deelvenster Profielviewer weer te geven. U zult dan het product zien u enkel in de **sectie van de Gebeurtenissen van de Ervaring**, samen met alle productmeningen van de websitezitting voordien bekeken.
 
-![ Demo ](./images/app_after_carst.png)
+>[!NOTE]
+>
+>Het kan een paar minuten duren voordat de geconsolideerde weergave in de app en op de website wordt weergegeven.
+
+![ Demo ](./images/app_after_galaxy.png)
 
 Ga nu terug naar uw desktopcomputer en vernieuw de homepage, waarna u het product ook daar zult zien.
 
-![ Demo ](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>Het kan een paar minuten duren voordat de geconsolideerde weergave in de app en op de website wordt weergegeven.
+
+![ Demo ](./images/web_x_aftermobile.png)
 
 U hebt nu gegevens in Adobe Experience Platform ingevoerd en u hebt die gegevens gekoppeld aan id&#39;s zoals ECID&#39;s en e-mailadressen. Het doel van deze oefening was om de bedrijfscontext te begrijpen van wat u op het punt staat te doen. U hebt nu effectief een real-time, cross-device klantenprofiel gebouwd. In de volgende oefening, ga u verder en visualiseer uw profiel in Adobe Experience Platform.
 

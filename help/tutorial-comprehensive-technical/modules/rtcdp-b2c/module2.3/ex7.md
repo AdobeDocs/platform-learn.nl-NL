@@ -3,256 +3,25 @@ title: Real-time CDP - Doelen SDK
 description: Real-time CDP - Doelen SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
 
 # 2.3.7 SDK van bestemmingen
 
-## 2.3.7.1 Uw Adobe I/O-project instellen
+## Uw Adobe I/O-project instellen
 
->[!IMPORTANT]
->
->Als u uw project van de Adobe I/O na December 2021 hebt gecreeerd, kunt u dat project hergebruiken, deze oefening overslaan en zich aan oefening 6.7.2 onmiddellijk bewegen.
->
->Als u uw Adobe I/O project vóór December 2021 creeerde, gelieve een nieuw project tot stand te brengen om het met de Authoring API van Doelen compatibel te maken.
+In deze oefening zult u Adobe I/O opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw Adobe I/O project nog niet hebt gevormd, ga terug naar [ oefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar.
 
-In deze oefening zult u Adobe I/O vrij intensief aan vraag tegen Platform APIs gebruiken. Volg de onderstaande stappen om Adobe I/O in te stellen.
+## Postman-verificatie naar Adobe I/O
 
-Ga naar [ https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw toepassing van Postman nog niet hebt gevormd, ga terug naar [ oefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar.
 
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/iohome.png)
-
-Selecteer de juiste Adobe Experience Platform-instantie in de rechterbovenhoek van het scherm. Uw instantie is `--envName--` .
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/iocomp.png)
-
-Klik **creëren nieuw project**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/adobe_io_new_integration.png) of
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/adobe_io_new_integration1.png)
-
-Selecteer **+ toevoegen aan Project** en selecteren **API**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/adobe_io_access_api.png)
-
-U zult dan dit zien:
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api1.png)
-
-Klik het **pictogram van Adobe Experience Platform**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api2.png)
-
-Klik **Experience Platform API**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api3.png)
-
-Klik **daarna**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/next.png)
-
-U kunt er nu voor kiezen om Adobe I/O uw beveiligingssleutel te laten genereren of een bestaand sleutelpaar te laten uploaden.
-
-Kies **Optie 1 - produceer een zeer belangrijk paar**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api4.png)
-
-Klik **produceren sleutelpaar**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/generate.png)
-
-Je ziet een spinner voor ongeveer 30 seconden.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/spin.png)
-
-U zult dan dit zien, en uw geproduceerde keypair zal als zip dossier worden gedownload: **config.zip**.
-
-Pak het dossier **config.zip** op uw Desktop uit, zult u het 2 dossiers zien bevat:
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/zip.png)
-
-- **certificate_pub.crt** is uw Openbaar zeer belangrijke certificaat. Vanuit een veiligheidsperspectief, is dit het certificaat dat vrij aan opstellingsintegratie met online toepassingen wordt gebruikt.
-- **private.key** is uw Persoonlijke sleutel. Dit mag nooit met iemand worden gedeeld. De persoonlijke sleutel is wat u gebruikt voor verificatie voor uw API-implementatie en moet een geheim zijn. Als u uw Privé Sleutel met iedereen deelt, kunnen zij tot uw implementatie toegang hebben en API misbruiken om kwaadwillige gegevens in Platform in te voeren en alle gegevens te halen die in Platform zitten.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/config.png)
-
-Zorg ervoor om het {**dossier 0} config.zip in een veilige plaats te bewaren, aangezien u dit voor de volgende stappen en voor toekomstige toegang tot Adobe I/O en Adobe Experience Platform APIs zult nodig hebben.**
-
-Klik **daarna**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/next.png)
-
-U moet nu de **Profiel(en) van het Product** voor uw integratie selecteren.
-
-Selecteer de vereiste productprofielen.
-
-**FYI**: in uw instantie van Adobe Experience Platform, zullen de Profielen van het Product een verschillende noemende hebben. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api9.png)
-
-Klik **sparen Vormde API**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/saveconfig.png)
-
-Je ziet een spinner voor een paar seconden.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api10.png)
-
-En daarna zie je je integratie.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api11.png)
-
-Klik de **Download voor Postman** knoop en klik dan **Rekening van de Dienst (JWT)** om een milieu van Postman te downloaden (wacht tot het milieu wordt gedownload, kan dit een paar seconden) nemen.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/iopm.png)
-
-De rol neer tot u **Rekening van de Dienst (JWT)** ziet, die is waar u al uw integratiedetails kunt vinden die worden gebruikt om de integratie met Adobe Experience Platform te vormen.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api12.png)
-
-Uw IO-project heeft momenteel een algemene naam. Je moet je integratie een vriendelijke naam geven. Klik op **Project 1** (of gelijkaardige naam) zoals vermeld
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api13.png)
-
-Klik **uitgeven Project**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api14.png)
-
-Voer een naam en beschrijving in voor uw integratie. We gebruiken `AEP API --aepUserLdap--` als naamgevingsconventie. Vervang ldap door uw ldap.
-Als uw LDAP bijvoorbeeld vangeluw is, worden de naam en beschrijving van uw integratie gewijzigd in AEP API vangeluw.
-
-Ga `AEP API --aepUserLdap--` als **Titel van het Project** in. Klik **sparen**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api15.png)
-
-Uw Adobe I/O-integratie is nu voltooid.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/api16.png)
-
-## 2.3.7.2 Postman-verificatie naar Adobe I/O
-
-Ga naar [ https://www.getpostman.com/ ](https://www.getpostman.com/).
-
-Klik op **krijgen Begonnen**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/getstarted.png)
-
-Download en installeer vervolgens Postman.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/downloadpostman.png)
-
-Start de toepassing nadat u Postman hebt geïnstalleerd.
-
-In Postman zijn er twee concepten: omgevingen en verzamelingen.
-
-- Het milieu bevat al uw milieuvariabelen die min of meer samenhangend zijn. In het milieu, zult u dingen zoals IMSOrg van ons milieu van het Platform, naast veiligheidsgeloofsbrieven zoals uw Privé Sleutel en anderen vinden. Het milieudossier is die u tijdens de opstelling van de Adobe I/O in de vorige oefening hebt gedownload, is het naam als dit: **service.postman_environment.json**.
-
-- De verzameling bevat een aantal API-aanvragen die u kunt gebruiken. We gebruiken twee verzamelingen
-   - 1 Verzameling voor verificatie naar Adobe I/0
-   - 1 Verzameling voor de oefeningen in deze module
-   - 1 inzameling voor de oefeningen in de module van Real-Time CDP, voor de Authoring van de Bestemming
-
-Gelieve te downloaden het dossier [ postman.zip ](./../../../assets/postman/postman_profile.zip) aan uw lokale Desktop.
-
-In dit {**dossier 0} postman.zip, zult u de volgende dossiers vinden:**
-
-- `_Adobe I-O - Token.postman_collection.json`
-- `_Adobe Experience Platform Enablement.postman_collection.json`
-- `Destination_Authoring_API.json`
-
-Pak het {**dossier 0} postman.zip uit en sla deze 3 dossiers in een omslag op uw Desktop, samen met het gedownloade milieu van Postman van Adobe I/O op. U hebt deze 4 bestanden nodig in die map:**
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/pmfolder.png)
-
-Ga terug naar Postman. Klik **Invoer**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/postmanui.png)
-
-Klik **uploadt Dossiers**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/choosefiles.png)
-
-Navigeer naar de map op uw bureaublad waarin u de vier gedownloade bestanden hebt uitgepakt. Selecteer deze 4 dossiers tezelfdertijd en klik **Open**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/selectfiles.png)
-
-Na het klikken **Open**, zal Postman u een overzicht van het Milieu en de Inzamelingen tonen u op het punt staat in te voeren. Klik **Invoer**.
-
-![ Adobe I/O Nieuwe Integratie ](../module2.1/images/impconfirm.png)
-
-U hebt nu alles wat u nodig hebt in Postman om te gaan communiceren met Adobe Experience Platform via de API&#39;s.
-
-Het eerste wat je moet doen, is ervoor zorgen dat je op de juiste manier geverifieerd bent. Om voor authentiek te worden verklaard, moet u om een toegangstoken verzoeken.
-
-Zorg ervoor dat u het juiste Milieu hebt geselecteerd alvorens om het even welk verzoek uit te voeren. U kunt de momenteel geselecteerde omgeving controleren door de vervolgkeuzelijst Omgeving in de rechterbovenhoek te controleren.
-
-De geselecteerde omgeving moet een naam hebben die vergelijkbaar is met deze:
-
-![ Postman ](../module2.1/images/envselemea.png)
-
-Klik het **oog** pictogram en klik dan **uitgeven** om de Privé Sleutel in het milieudossier bij te werken.
-
-![ Postman ](../module2.1/images/gear.png)
-
-Dan zie je dit. Alle gebieden zijn pre-bevolkt, behalve het gebied **PRIVATE_KEY**.
-
-![ Postman ](../module2.1/images/pk2.png)
-
-De persoonlijke sleutel is gegenereerd toen u uw Adobe I/O-project hebt gemaakt. Het werd gedownload als zip dossier, genoemd **config.zip**. Pak dat ZIP-bestand uit op uw bureaublad.
-
-![ Postman ](../module2.1/images/pk3.png)
-
-Open de omslag **config** en open het dossier **private.key** met uw tekstredacteur van keus.
-
-![ Postman ](../module2.1/images/pk4.png)
-
-Vervolgens ziet u iets dat hierop lijkt, en kopieert u alle tekst naar het klembord.
-
-![ Postman ](../module2.1/images/pk5.png)
-
-Ga terug naar Postman en kleef de privé sleutel op de gebieden naast veranderlijke **PRIVATE_KEY**, voor zowel de kolommen **OORSPRONKELIJKE WAARDE** en **HUIDIGE WAARDE**. Klik **sparen**.
-
-![ Postman ](../module2.1/images/pk6.png)
-
-Uw Postman-omgeving en -verzamelingen zijn nu geconfigureerd en werken. U kunt nu verifiëren van Postman naar Adobe I/O.
-
-Hiervoor moet u een externe bibliotheek laden die zorgt voor de codering en ontsleuteling van communicatie. Om deze bibliotheek te laden, moet u het verzoek met de naam **INIT uitvoeren: De Bibliotheek van Crypto van de Lading voor RS256**. Selecteer dit verzoek in de **_Adobe I/O - Symbolische inzameling** en u zult het in het midden van uw scherm zien.
-
-![ Postman ](../module2.1/images/iocoll.png)
-
-![ Postman ](../module2.1/images/cryptolib.png)
-
-Klik de blauwe **verzenden** knoop. Na een paar seconden, zou u een reactie moeten zien die in de **1} sectie van het Lichaam {van Postman wordt getoond:**
-
-![ Postman ](../module2.1/images/cryptoresponse.png)
-
-Met de cryptobibliotheek nu geladen, kunnen wij aan Adobe I/O voor authentiek verklaren.
-
-In **\_Adobe I/O - de Symbolische inzameling**, selecteer het verzoek met de naam **IMS: JWT produceert + Auth**. Opnieuw, zult u de verzoekdetails zien in het midden van het scherm worden getoond.
-
-![ Postman ](../module2.1/images/ioauth.png)
-
-Klik de blauwe **verzenden** knoop. Na een paar seconden, zou u een reactie moeten zien die in de **1} sectie van het Lichaam {van Postman wordt getoond:**
-
-![ Postman ](../module2.1/images/ioauthresp.png)
-
-Als uw configuratie succesvol was, zou u een gelijkaardige reactie moeten zien die de volgende informatie bevat:
-
-| Sleutel | Waarde |
-|:-------------:| :---------------:| 
-| token_type | **drager** |
-| access_token | **eyJ4NXUiOiJpbXNfbmEx...QT7mqZkumN1tdsPEioOEl4087Dg** |
-| verloopt_in | **8639997** |
-
-Adobe I/O heeft u a **drager** - teken, met een specifieke waarde (dit zeer lange access_token) en een vervalvenster gegeven.
-
-De token die we hebben ontvangen, is nu 24 uur geldig. Dit betekent dat na 24 uur, als u Postman wilt gebruiken om aan Adobe I/O voor authentiek te verklaren, u een nieuw teken zult moeten produceren door dit verzoek opnieuw in werking te stellen.
-
-## 2.3.7.3 Definiëren van eindpunt en formaat
+## Definiëren van eindpunt en formaat
 
 Voor deze oefening, zult u een eindpunt nodig hebben om te vormen zodat wanneer een segment kwalificeert, de kwalificatiegebeurtenis aan dat eindpunt kan worden gestroomd. In deze oefening, zult u een steekproefeindpunt gebruiken gebruikend [ https://webhook.site/ ](https://webhook.site/). Ga naar [ https://webhook.site/ ](https://webhook.site/), waar u iets gelijkend op dit zult zien. Klik **Exemplaar aan klembord** om url te kopiëren. U zult deze url in de volgende oefening moeten specificeren. De URL in dit voorbeeld is `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` .
 
@@ -281,7 +50,7 @@ Wat het formaat betreft, zullen wij een standaardmalplaatje gebruiken dat segmen
 }
 ```
 
-## 2.3.7.4 Een server- en sjabloonconfiguratie maken
+## Een server- en sjabloonconfiguratie maken
 
 De eerste stap om uw eigen Doel in Adobe Experience Platform te creëren is een server en malplaatjeconfiguratie tot stand te brengen.
 
@@ -333,7 +102,7 @@ Na het klikken **verzend**, zal uw servermalplaatje worden gecreeerd, en als dee
 
 ![ Ingestie van Gegevens ](./images/sdkpm6.png)
 
-## 2.3.7.5 creeer uw bestemmingsconfiguratie
+## Uw doelconfiguratie maken
 
 In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om de verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
 
@@ -436,7 +205,7 @@ In het linkermenu, ga naar **Doelen**, klik **Catalogus** en scrol neer aan de c
 
 ![ Ingestie van Gegevens ](./images/destsdk1.png)
 
-## 2.3.7.6 Verbinding uw segment aan uw bestemming
+## Uw segment koppelen aan uw doel
 
 In **Doelen** > **Catalogus**, klik **Opstelling** op uw bestemming beginnen segmenten aan uw nieuwe bestemming toe te voegen.
 
@@ -470,7 +239,7 @@ Uw bestemming is nu live. Nieuwe segmentkwalificaties worden nu gestreamd naar u
 
 ![ Ingestie van Gegevens ](./images/destsdk9.png)
 
-## 2.3.7.7 Test uw segment activeren
+## De segmentactivering testen
 
 Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
 

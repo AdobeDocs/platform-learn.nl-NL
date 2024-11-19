@@ -4,16 +4,16 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
 
 # 1.1.6 Adobe Target implementeren
 
-## 1.1.6.1 Werk uw DataStream bij om Adobe Target te gebruiken
+## Uw DataStream bijwerken voor gebruik van Adobe Target
 
 Als u gegevens die door Web SDK worden verzameld naar Adobe Target wilt verzenden en Adobe Target een antwoord wilt geven met een persoonlijke ervaring voor elke klant, voert u deze stappen uit.
 

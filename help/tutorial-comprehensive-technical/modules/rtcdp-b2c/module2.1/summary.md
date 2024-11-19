@@ -3,9 +3,10 @@ title: Foundation - Real-time klantprofiel - Summary
 description: Foundation - Real-time klantprofiel - Summary
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ Laat ons de voordelen van het Profiel van de Klant benadrukken In real time:
 - Het profiel van de Klant in real time wordt voortgebouwd op een flexibele en real-time identiteitsgrafiek die het mogelijk maakt om profielfragmenten over veelvoudige datasets samen dynamisch samen te voegen die op de herkenningstekens wordt gebaseerd.
 - Als profielfragmenten zijn samengevoegd met de identiteitsgrafiek, kunnen alle beschikbare id&#39;s worden gebruikt om het profiel van een klant op te halen
 - De segmentatie wordt nu gedaan gebruikend XDM als taal achter het segment dat het segment gemakkelijk herbruikbaar en begrijpelijk maakt
-- De segmenten kunnen nu ook door API worden gecreeerd, die het mogelijk maakt om een segment extern op een programmatische manier te bepalen en dan de segmentdefinitie door API op te nemen.
 
 ## Bekijk dit
 

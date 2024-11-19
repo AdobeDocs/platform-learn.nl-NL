@@ -4,20 +4,20 @@ description: Foundation - Setup van Adobe Experience Platform Data Collection en
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# 1.1.5. Implementeren van Adobe Analytics en Adobe Audience Manager
+# 1.1.5 Adobe Analytics en Adobe Audience Manager implementeren
 
 ## Context
 
 U weet nu dat XDM-gegevens naar een platform stromen. U zult meer over onderzoeken wat XDM in [ Module 1.2 ](./../module1.2/data-ingestion.md) is, evenals hoe te om uw eigen schema te bouwen om douanevariabelen te volgen. Voor nu gaat u bekijken wat gebeurt wanneer u uw Datasstream plaatst om gegevens aan Analytics en Audience Manager door:sturen.
 
-## 1.1.5.1 Variabelen in kaart brengen in analyses
+## Variabelen toewijzen in Analytics
 
 Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via de Web SDK zo snel mogelijk plaatsvindt. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
@@ -56,11 +56,11 @@ Voor gebruik door Analytics worden XDM-gegevens afgevlakt met puntnotatie en bes
 
 Alle gegevens die door het randnetwerk worden verzameld kunnen via [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) worden betreden. In Analytics, kunt u verwerkingsregels gebruiken om contextgegevens in de variabelen van de Analyse op te nemen.
 
-## 1.1.5.2 Audience Manager op de Edge Network van het Experience Platform
+## Audience Manager op de Edge Network van het Experience Platform
 
 Server-kant door:sturen is geen nieuw concept voor Audience Manager, en het zelfde proces zoals vroeger van toepassing is. U kunt identiteiten ook synchroniseren.
 
-## 1.1.5.3 Controleer uw gegevensstroom om gegevens naar Adobe Analytics te verzenden
+## Controleer uw gegevensstroom om gegevens naar Adobe Analytics te verzenden
 
 Voor het geval u gegevens wilt verzenden die door Web SDK aan Adobe Analytics en Adobe Audience Manager worden verzameld, volg deze stappen.
 
@@ -78,7 +78,7 @@ Dan zie je dit. Selecteer de dienst **Adobe Analytics**, waarna u de rapportreek
 
 ![ Debugger AEP ](./images/aa3.png)
 
-## 1.1.5.4 Controleer uw gegevensstroom om gegevens naar Adobe Audience Manager te verzenden
+## Controleer uw gegevensstroom om gegevens naar Adobe Audience Manager te verzenden
 
 Dan zie je dit. Om Adobe Audience Manager toe te laten, klik **+ voeg de Dienst** toe.
 

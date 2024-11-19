@@ -4,16 +4,16 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Clientside Web Data Collection
 
-## 1.1.4.1 De gegevens in het verzoek valideren
+## De gegevens in de aanvraag valideren
 
 ### Het Adobe Experience Platform Debugger installeren
 
@@ -40,7 +40,7 @@ Controleer of deze twee instellingen zijn ingeschakeld:
 
 Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](.//images/web8.png)
+![ DSN ](./images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 

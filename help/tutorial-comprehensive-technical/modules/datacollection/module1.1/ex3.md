@@ -4,20 +4,20 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 - Inleiding tot Adobe Experience Platform-gegevensverzameling
+# 1.1.3 Inleiding tot Adobe Experience Platform-gegevensverzameling
 
 ## Context
 
 Laten we nu dieper kijken naar de bouwstenen van Adobe Experience Platform Data Collection, om te begrijpen wat er op uw demo-website is geïnstalleerd. U zult een dichtere blik bij de Uitbreiding van SDK van het Web van Adobe Experience Platform hebben, zult u een gegevenselement en een regel vormen en u zult leren hoe te om een bibliotheek te publiceren.
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK Extension
+## Adobe Experience Platform Web SDK Extension
 
 Een extensie is een set verpakte code waarmee de interface van Adobe Experience Platform Data Collection en de bibliotheekfunctionaliteit worden uitgebreid. Adobe Experience Platform Data Collection is het platform en extensies zijn vergelijkbaar met apps die op het platform worden uitgevoerd. Alle extensies die in de zelfstudie worden gebruikt, worden gemaakt en beheerd door Adobe, maar derden kunnen hun eigen extensies maken om de hoeveelheid aangepaste code te beperken die Adobe Experience Platform-gebruikers moeten beheren.
 
@@ -52,7 +52,7 @@ Klik op **[!UICONTROL Save]** om terug te gaan naar de weergave Extensies.
 
 ![ het huis van Uitbreidingen ](./images/property9edge.png)
 
-## 1.1.3.2 Gegevenselementen
+## Gegevenselementen
 
 Gegevenselementen zijn de bouwstenen voor uw gegevenswoordenboek (of gegevenskaart). Gebruik gegevenselementen om gegevens te verzamelen, te organiseren en te leveren over marketing- en advertentietechnologie.
 
@@ -88,7 +88,7 @@ Schuif omhoog en voer de tekst in `%Product Category%` . Klik op **[!UICONTROL S
 
 Op dit punt, is de Uitbreiding van SDK van het Web van Adobe Experience Platform geïnstalleerd en u hebt een gegevenselement bijgewerkt om gegevens tegen een structuur te verzamelen XDM. Daarna, controleren de regels die gegevens op de correcte tijd zullen verzenden.
 
-## 1.1.3.3 Regels
+## Regels
 
 Adobe Experience Platform Data Collection is een op regel gebaseerd systeem. Er wordt gezocht naar gebruikersinteractie en bijbehorende gegevens. Wanneer aan de criteria die in uw regels worden geschetst wordt voldaan, teweegbrengt de regel de uitbreiding, het manuscript, of cliënt-zijcode in werking u identificeerde.
 
@@ -130,7 +130,7 @@ Hier kunt u de gegevens zien die door de SDK van het Web van Adobe Experience Pl
 
 Nu u naar de Regel hebt gekeken, kunt u al uw veranderingen in de Inzameling van Gegevens van Adobe Experience Platform publiceren.
 
-## 1.1.3.4 Publish in een bibliotheek
+## Publish in een bibliotheek
 
 Tot slot om de regel en het gegevenselement te bevestigen u enkel hebt bijgewerkt, moet u een bibliotheek publiceren die de uitgegeven punten in ons bezit bevatten. In de sectie **[!UICONTROL Publishing]** van de Adobe Experience Platform-gegevensverzameling moeten enkele snelle stappen worden uitgevoerd.
 
