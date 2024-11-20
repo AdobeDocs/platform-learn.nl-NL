@@ -1,21 +1,38 @@
 ---
-title: Segmentactivering naar Microsoft Azure Event Hub - Segment activeren
-description: Segmentactivering naar Microsoft Azure Event Hub - Segment activeren
+title: Audience Activation naar Microsoft Azure Event Hub - Een publiek maken
+description: Audience Activation naar Microsoft Azure Event Hub - Een publiek maken
 kt: 5342
 doc-type: tutorial
 exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
-# 2.4.4 Segment activeren
+# 2.4.4 Een publiek maken
 
-## 2.4.4.1 Segment toevoegen aan Azure Event Hub Destination
+## Inleiding
 
-In deze exercitie voegt u uw segment `--aepUserLdap-- - Interest in Equipment` toe aan uw `--aepUserLdap---aep-enablement` Azure Event Hub-bestemming.
+U maakt een eenvoudig publiek:
+
+- **Belang in Abonnees** waarvoor de klanten zullen kwalificeren wanneer zij de **Punten** pagina van de CitiSignal demo website bezoeken.
+
+### Goed om te weten
+
+CDP in real time zal een activering aan een bestemming teweegbrengen wanneer u voor een publiek kwalificeert dat deel van de activeringslijst van die bestemming uitmaakt. Wanneer dat het geval is, zal de nuttige lading van de publiekskwalificatie die naar die bestemming zal worden verzonden **alle publiek bevatten waarvoor uw klantenprofiel** kwalificeert.
+
+Het doel van deze module is te tonen dat de het publiekskwalificatie van het Profiel van uw Klant naar uw bestemming van de Hub van de Gebeurtenis in dichtbij real time wordt verzonden.
+
+### Status van publiek
+
+Een publiekskwalificatie in Adobe Experience Platform heeft altijd a **status** - bezit en kan één van het volgende zijn:
+
+- **realiseerde**: dit wijst op een nieuwe publiekskwalificatie
+- **verlaten**: dit wijst erop dat het profiel niet meer voor het publiek kwalificeert
+
+## Het publiek samenstellen
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -27,39 +44,29 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Ga naar **Doelen**, dan klik **doorbladeren**. U zult dan alle beschikbare bestemmingen zien. Zoek de bestemming en klik op het pictogram **+** zoals hieronder aangegeven.
+Ga naar **Soorten publiek**. Klik op de knop **+ voor een publiek maken** .
 
-![ 5-01-select-destination.png ](./images/5-01-select-destination.png)
+![ Ingestie van Gegevens ](./images/seg.png)
 
-Dan zie je dit. Zoek het segment met uw ldap en selecteer `--aepUserLdap-- - Interest in Equipment` in de lijst met segmenten.
+Selecteer **bouwt regel** en klik **creëren**.
 
-Klik **daarna**.
+![ Ingestie van Gegevens ](./images/seg1.png)
 
-![ 5-04-select-segment.png ](./images/5-04-select-segment.png)
+Noem uw publiek `--aepUserLdap-- - Interest in Plans`, plaats de evaluatiemethode aan **Edge** en voeg de paginanaam van de ervaringsgebeurtenis toe.
 
-Adobe Experience Platform Real-time CDP kan een lading aan twee soorten bestemmingen, segmentbestemmingen en profielbestemmingen leveren.
+Klik op **Gebeurtenissen**, en belemmering en laat vallen **XDM ExperienceEvent > Web > Web-pagina details > Naam**. Ga **plannen** als waarde in:
 
-De bestemmingen van het segment zullen een vooraf bepaalde lading van de segmentkwalificatie ontvangen die later zal worden besproken. Zulk een nuttige lading bevat **alle** de segmentkwalificaties voor een specifiek profiel. Zelfs voor segmenten die niet in de activeringslijst van de bestemming zijn. Een voorbeeld van zulk een segmentbestemming is **Azure de Hubs van de Gebeurtenis** en **AWS Kinesis**.
+![ 4-05-create-ee-2.png ](./images/405createee2.png)
 
-Op profiel gebaseerde bestemmingen laten u om het even welk attribuut (firstName, lastName, ...) van het Schema van de Unie van het Profiel selecteren XDM en het omvatten in de activeringslading. Een voorbeeld van dergelijke bestemming is de **E-mail marketing**.
+De belemmering en laat vallen **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Ga `--aepUserLdap--` als waarde in, plaats de vergelijkingsparameter aan **bevat** en klik **Publish**:
 
-Omdat uw Azure bestemming van de Hub van de Gebeurtenis a **segment** bestemming, uitgezocht bijvoorbeeld het gebied `--aepTenantId--.identification.core.ecid` is.
+![ 4-05-create-ee-2-brand.png ](./images/405createee2brand.png)
 
-Klik **toevoegen nieuw gebied**, doorblader schema en selecteer het gebied `--aepTenantId--identification.core.ecid` (schrap om het even welk ander gebied dat automatisch zou worden getoond).
+Uw publiek is nu gepubliceerd.
 
-Klik **daarna**.
+![ 4-05-create-ee-2-brand.png ](./images/405createee2brand1.png)
 
-![ 5-05-select-attributes.png ](./images/5-05-select-attributes.png)
-
-Klik **Afwerking**.
-
-![ 5-06-bestemming-finish.png ](./images/5-06-destination-finish.png)
-
-Uw segment wordt nu geactiveerd naar uw bestemming van de Hub van de Gebeurtenis van Microsoft.
-
-![ 5-07-bestemming-segment-added.png ](./images/5-07-destination-segment-added.png)
-
-Volgende Stap: [ 2.4.5 leidt tot uw Microsoft Azure Project ](./ex5.md)
+Volgende Stap: [ 2.4.5 activeert uw publiek ](./ex5.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

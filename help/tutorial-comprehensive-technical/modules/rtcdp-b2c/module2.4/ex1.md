@@ -1,131 +1,132 @@
 ---
-title: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azure
-description: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azure
+title: Segmentactivering naar Microsoft Azure Event Hub - Configureer uw Microsoft Azure-omgeving
+description: Segmentactivering naar Microsoft Azure Event Hub - Configureer uw Microsoft Azure-omgeving
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
-# 2.4.1 De Microsoft Azure EventHub-omgeving configureren
+# 2.4.1 Uw omgeving configureren
 
-Azure Event Hubs is een hoogst scalable publish-subscribe dienst die miljoenen gebeurtenissen per seconde kan opnemen en hen in veelvoudige toepassingen stroomt. Zo kunt u de enorme hoeveelheden gegevens verwerken en analyseren die door de aangesloten apparaten en toepassingen worden geproduceerd.
+## Een Azure-abonnement maken
 
-## 2.4.1.1 Wat is Azure Event Hubs?
+>[!NOTE]
+>
+>Als u al een Azure-abonnement hebt, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
 
-Azure Event Hubs is een groot platform voor gegevensstreaming en service voor het opnemen van gebeurtenissen. Het kan miljoenen gebeurtenissen per seconde ontvangen en verwerken. Gegevens die naar een gebeurtenishub worden verzonden, kunnen worden getransformeerd en opgeslagen met behulp van een realtime analyseprovider of batchadapters.
+Ga naar [ https://portal.azure.com ](https://portal.azure.com) en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
 
-De Hubs van de gebeurtenis vertegenwoordigt de **voordeur** voor een gebeurtenispijpleiding, vaak genoemd een gebeurtenis ingestor in oplossingsarchitectuur. Een gebeurtenislistener is een component of service die zich tussen gebeurtenisuitgevers (zoals Adobe Experience Platform RTCDP) en gebeurtenisgebruikers bevindt om de productie van een gebeurtenisstream los te koppelen van het gebruik van die gebeurtenissen. De Hubs van de gebeurtenis verstrekt een verenigd stromend platform met tijdretentiebuffer, ontkoppelt gebeurtenisproducenten van gebeurtenisconsumenten.
+![ 02-azure-portal-email.png ](./images/02azureportalemail.png)
 
-## 2.4.1.2 Een naamruimte Gebeurtenishubs maken
+Na succesvolle login zult u het volgende scherm zien:
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een middel**.
+![ 03-azure-gelogd-in.png ](./images/03azureloggedin.png)
 
-![ 1-01-open-azure-portal.png ](./images/1-01-open-azure-portal.png)
+Klik op het aan linkermenu en selecteer **Alle Middelen**, zal het Azure abonnementsscherm verschijnen als u nog niet wordt ingetekend. In dat geval uitgezocht **Begin met een Azure vrije Proef**.
 
-In het middelscherm, ga **Gebeurtenis** in de onderzoeksbar in en selecteer **de Hubs van de Gebeurtenis** van dropdown:
+![ 04-azure-start-subscribe.png ](./images/04azurestartsubscribe.png)
 
-![ 1-02-onderzoek-gebeurtenis-hubs.png ](./images/1-02-search-event-hubs.png)
+Vul het Azure-abonnementsformulier in, geef uw mobiele telefoon en creditcard op voor activering (u hebt 30 dagen een gratis label en u wordt geen kosten in rekening gebracht, tenzij u een upgrade uitvoert).
 
-Klik **creëren**:
+Als het abonnementsproces is voltooid, kunt u het beste gaan:
 
-![ 1-03-gebeurtenis-hub-create.png ](./images/1-03-event-hub-create.png)
+![ 06-azure-subscription-ok.png ](./images/06azuresubscriptionok.png)
 
-Als dit de eerste keer is dat u een middel in Azure creeert, zult u een nieuwe **groep van het Middel** moeten creëren. Als u al een middelgroep hebt kunt u het selecteren (of nieuwe creëren).
+## Visual Code Studio installeren
 
-Selecteer **creeer nieuw**, noem uw groep `--aepUserLdap---aep-enablement`.
+U zult Microsoft Visual Code Studio gebruiken om uw Azure Project te beheren. U kunt het via [ deze verbinding ](https://code.visualstudio.com/download) downloaden. Volg de installatie-instructies voor uw specifieke besturingssysteem op dezelfde website.
 
-![ 1-04-creeer-middel-group.png ](./images/1-04-create-resource-group.png)
+## Visuele codeextensies installeren
 
-Voltooi de test van de velden zoals aangegeven:
+Installeer de Azure Functies voor de Code van Visual Studio van [ https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions ](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Klik op de knop Installeren:
 
-- Naamruimte: definieer de naamruimte, deze moet uniek zijn en gebruik het volgende patroon `--aepUserLdap---aep-enablement`
-- Plaats: **West-Europa** verwijst naar Azure datacenter in Amsterdam
-- Prijsende rij: **Basis**
-- De Eenheden van de productie: **1**
+![ 07-azure-code-uitbreiding-install.png ](./images/07azurecodeextensioninstall.png)
 
-![ 1-05-create-namespace.png ](./images/1-05-create-namespace.png)
+Installeer Azure Account en Sign-In voor de Code van Visual Studio van [ https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account ](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account). Klik op de knop Installeren:
 
-Klik **Overzicht + creeer**.
+![ 08-azure-account-extension-install.png ](./images/08azureaccountextensioninstall.png)
 
-![ 1-06-namespace-revisie-create.png ](./images/1-06-namespace-review-create.png)
+## Knooppunt.js installeren
 
-Klik **creëren**.
+>[!NOTE]
+>
+>Als node.js al is geïnstalleerd, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
 
-![ 1-07-namespace-create.png ](./images/1-07-namespace-create.png)
+### macOS
 
-De plaatsing van uw middelgroep kan 1-2 minuten vergen, wanneer succesvol u het volgende scherm zult zien:
+Zorg ervoor om [ eerst geïnstalleerde Homebrew ](https://brew.sh/) te hebben. Volg hier de instructies [ ](https://brew.sh/).
 
-![ 1-08-namespace-deploy.png ](./images/1-08-namespace-deploy.png)
+![ Knoop ](./images/brew.png)
 
-## 2.4.1.3 Opstelling uw Hub van de Gebeurtenis in Azure
+Nadat u Homebrew hebt geïnstalleerd, voert u deze opdracht uit:
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **Alle middelen**.
+```javascript
+brew install node
+```
 
-![ 1-09-all-resources.png ](./images/1-09-all-resources.png)
+### Windows
 
-Selecteer in de lijst met bronnen de naamruimte `--aepUserLdap---aep-enablement` :
+Download direct de [ Installateur van Vensters ](https://nodejs.org/en/#home-downloadhead) van [ nodejs.org ](https://nodejs.org/en/) website.
 
-![ 1-10-list-resources.png ](./images/1-10-list-resources.png)
+## Versie van node.js verifiëren
 
-In `--aepUserLdap---aep-enablement` detailscherm, uitgezochte **Hubs van de Gebeurtenis**:
+Voor deze module, moet u node.js versie 18 geïnstalleerd hebben. Elke andere versie van node.js kan problemen veroorzaken met deze oefening.
 
-![ 1-11-eventhub-namespace.png ](./images/1-11-eventhub-namespace.png)
+Verifieer nu uw versie van node.js voordat u verdergaat.
 
-Klik **+ de Hub van de Gebeurtenis**.
+Voer deze opdracht uit om de versie van node.js te verifiëren:
 
-![ 1-12-toe:voegen-gebeurtenis-hub.png ](./images/1-12-add-event-hub.png)
+```javascript
+node -v
+```
 
-Gebruik `--aepUserLdap---aep-enablement-event-hub` als naam en klik **creeer**.
+Als uw versie onder of boven de 18 ligt, moet u een upgrade uitvoeren of de kwaliteit verlagen.
 
-![ 1-13-create-event-hub.png ](./images/1-13-create-event-hub.png)
+### Upgrade/downgrade node.js-versie op macOS
 
-Klik **de Hubs van de Gebeurtenis** in uw naamruimte van de gebeurtenishub. U zou uw **vermelde Hub van de Gebeurtenis** nu moeten zien. Als dat het geval is, kunt u overgaan op de volgende oefening.
+Zorg ervoor dat u het pakket **n** geïnstalleerd hebt.
 
-![ 1-14-event-hub-list.png ](./images/1-14-event-hub-list.png)
+Om het pakket **n** te installeren, stel dit bevel in werking:
 
-## 2.4.1.4 Stel uw Azure Storage Account in
+```javascript
+sudo npm install -g n
+```
 
-Om uw functie van de Hub van de Gebeurtenis van de Azure in recentere oefeningen te zuiveren, zult u een Azure Rekening van de Opslag als deel van uw het projectopstelling van de Code van Visual Studio moeten verstrekken. U gaat nu die Azure Storage Account maken.
+Als uw versie onder of boven versie 12 ligt, voert u deze opdracht uit om een upgrade uit te voeren of de upgrade uit te voeren:
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een Middel**.
+```javascript
+sudo n 18
+```
 
-![ 1-15-event-hub-storage.png ](./images/1-15-event-hub-storage.png)
+### Upgrade/downgrade node.js-versie in Windows
 
-Ga **opslag** in het onderzoek in en selecteer **Rekening van de Opslag** van de lijst.
+Verwijder node.js uit Windows > Configuratiescherm > Software.
 
-![ 1-16-event-hub-search-storage.png ](./images/1-16-event-hub-search-storage.png)
+Het installeren van de vereiste versie van de {](https://nodejs.org/en/) website 0} nodejs.org.[
 
-Selecteer **creeer**.
+## NPM-pakket installeren: verzoek
 
-![ 1-17-event-hub-create-storage.png ](./images/1-17-event-hub-create-storage.png)
+U moet het pakket **verzoek** als deel van uw knoop.js opstelling installeren.
 
-Specificeer uw **Groep van het Middel** (gecreeerd in het begin van deze oefening), gebruik `--aepUserLdap--aepstorage` als uw naam van de de rekeningsrekening van de Opslag, en selecteer **lokaal-overtollige opslag (LRS)**, dan klik **Overzicht + creeer**.
+Om het pakket **verzoek** te installeren, stel dit bevel in werking:
 
-![ 1-18-event-hub-create-review-storage.png ](./images/1-18-event-hub-create-review-storage.png)
+```javascript
+npm install request
+```
 
-Klik **creëren**.
+## Azure Functions Core Tools installeren:
 
-![ 1-19-gebeurtenis-hub-submit-storage.png ](./images/1-19-event-hub-submit-storage.png)
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-Het maken van uw opslagaccount duurt een paar seconden:
-
-![ 1-20-gebeurtenis-hub-opstellen-storage.png ](./images/1-20-event-hub-deploy-storage.png)
-
-Wanneer gebeëindigd zal uw scherm **aan middel** knoop tonen.
-
-Klik **Microsoft Azure**.
-
-![ 1-21-gebeurtenis-hub-opstellen-klaar-storage.png ](./images/1-21-event-hub-deploy-ready-storage.png)
-
-Uw Rekening van de Opslag is nu zichtbaar onder **Recente Middelen**.
-
-![ 1-22-gebeurtenis-hub-opstellen-middelen-list.png ](./images/1-22-event-hub-deploy-resources-list.png)
-
-Volgende Stap: [ 2.4.2 vormt uw Azure Doel van de Hub van de Gebeurtenis in Adobe Experience Platform ](./ex2.md)
+Volgende Stap: [ 2.4.2 vormt uw milieu van Microsoft Azure EventHub ](./ex2.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

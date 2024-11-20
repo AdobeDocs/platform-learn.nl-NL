@@ -5,7 +5,7 @@ user-guide-description: Een praktische zelfstudie waarin veel aspecten van Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -79,13 +79,13 @@ ht-degree: 2%
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP: Audience Activation naar Microsoft Azure Event Hub {#module24}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
-      + [2.4.0 Uw omgeving configureren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
-      + [2.4.1 De Microsoft Azure EventHub-omgeving configureren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
-      + [2.4.2 Configureer uw Azure Event Hub Destination in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3 Soorten publiek maken](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4 Activeer uw publiek](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
-      + [2.4.5 Uw Microsoft Azure-project maken](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
-      + [2.4.6 Eindscenario](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.1 Uw omgeving configureren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
+      + [2.4.2 Uw Microsoft Azure EventHub-omgeving configureren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
+      + [2.4.3 Configureer uw Azure Event Hub Destination in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4 Soorten publiek maken](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.5 Activeer uw publiek](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
+      + [2.4.6 Maak uw Microsoft Azure-project](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.7 End-to-end scenario](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex7.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)
    + 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen {#module25}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

@@ -1,119 +1,126 @@
 ---
-title: Segmentactivering naar Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
-description: Segmentactivering naar Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
+title: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azure
+description: Segmentactivering naar Microsoft Azure Event Hub - Setup Event Hub in Azure
 kt: 5342
 doc-type: tutorial
 exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
 
-# 2.4.2 Configureer uw Azure Event Hub Destination in Adobe Experience Platform
+# 2.4.2 Uw Microsoft Azure EventHub-omgeving configureren
 
-## 2.4.2.1 Vereiste parameters voor Azure Connection identificeren
+Azure Event Hubs is een hoogst scalable publish-subscribe dienst die miljoenen gebeurtenissen per seconde kan opnemen en hen in veelvoudige toepassingen stroomt. Zo kunt u de enorme hoeveelheden gegevens verwerken en analyseren die door de aangesloten apparaten en toepassingen worden geproduceerd.
 
-Als u een bestemming van een gebeurtenishub in Adobe Experience Platform wilt definiëren, hebt u uw:
+## Wat is Azure Event Hubs?
 
-- Naamruimte van gebeurtenishubs
-- Gebeurtenissenhub
-- Azure SAS Key Name
-- Azure SAS Key
+Azure Event Hubs is een groot platform voor gegevensstreaming en service voor het opnemen van gebeurtenissen. Het kan miljoenen gebeurtenissen per seconde ontvangen en verwerken. Gegevens die naar een gebeurtenishub worden verzonden, kunnen worden getransformeerd en opgeslagen met behulp van een realtime analyseprovider of batchadapters.
 
-De Hub van de gebeurtenis en EventHub namespace zijn bepaald in de vorige oefening: [ oefent 1 uit - de Hub van de Gebeurtenis van de Opstelling in Azure ](./ex1.md)
+De Hubs van de gebeurtenis vertegenwoordigt de **voordeur** voor een gebeurtenispijpleiding, vaak genoemd een gebeurtenis ingestor in oplossingsarchitectuur. Een gebeurtenislistener is een component of service die zich tussen gebeurtenisuitgevers (zoals Adobe Experience Platform RTCDP) en gebeurtenisgebruikers bevindt om de productie van een gebeurtenisstream los te koppelen van het gebruik van die gebeurtenissen. De Hubs van de gebeurtenis verstrekt een verenigd stromend platform met tijdretentiebuffer, ontkoppelt gebeurtenisproducenten van gebeurtenisconsumenten.
 
-### Naamruimte van gebeurtenishubs
+## Een naamruimte voor gebeurtenishubs maken
 
-Om de bovengenoemde informatie in Azure Portal te zoeken, navigeer aan [ https://portal.azure.com/#home ](https://portal.azure.com/#home). Zorg ervoor dat u het correcte Azure-account gebruikt.
+Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een middel**.
 
-Selecteer **Alle Middelen** in Azure Portal:
+![ 1-01-open-azure-portal.png ](./images/101openazureportal.png)
 
-![ 2-01-azure-all-resources.png ](./images/2-01-azure-all-resources.png)
+In het middelscherm, ga **Gebeurtenis** in de onderzoeksbar in. Vind de **kaart van de Hubs van de Gebeurtenis 0} {, klik** creeer **en klik dan** de Hubs van de Gebeurtenis **.**
 
-### Gebeurtenissenhub
+![ 1-02-onderzoek-gebeurtenis-hubs.png ](./images/102searcheventhubs.png)
 
-Zoek een middel met middeltype **Namespace van de Hubs van de Gebeurtenis**, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u de Hubs Namespace van de Gebeurtenis `--aepUserLdap---aep-enablement` zijn. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+Als dit de eerste keer is dat u een middel in Azure creeert, zult u een nieuwe **groep van het Middel** moeten creëren. Als u al een middelgroep hebt kunt u het selecteren (of nieuwe creëren).
 
-![ 2-02-selecteren-gebeurtenis-hubs-namespace.png ](./images/2-02-select-event-hubs-namespace.png)
+Klik **creeer nieuw** en noem uw groep `--aepUserLdap---aep-enablement`, klik **O.K.**.
 
-Klik op de naam van de naamruimte Gebeurtenishubs om de details op te halen:
+![ 1-04-creeer-middel-group.png ](./images/104createresourcegroup.png)
 
-![ 2-03-select-event-hub.png ](./images/2-03-select-event-hub.png)
+Vul de overige opgegeven velden in:
 
-Selecteer **de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een genoemde Hub van de Gebeurtenis `--aepUserLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+- Naamruimte: definieer de naamruimte, deze moet uniek zijn en gebruik het volgende patroon `--aepUserLdap---aep-enablement`
+- Locatie: kies een locatie
+- Prijsende rij: **Basis**
+- De Eenheden van de productie: **1**
 
-![ 2-04-gebeurtenis-hub-selected.png ](./images/2-04-event-hub-selected.png)
+Klik **Overzicht + creeer**.
 
-### SAS-sleutelnaam
+![ 1-05-create-namespace.png ](./images/105createnamespace.png)
 
-Selecteer **Gedeeld toegangsbeleid** voor uw **Namespace van de Hubs van de Gebeurtenis**
+Klik **creëren**.
 
-![ 2-05-select-sas.png ](./images/2-05-select-sas.png)
+![ 1-07-namespace-create.png ](./images/107namespacecreate.png)
 
-U zult een lijst van Gedeeld toegangsbeleid zien. De SAS Sleutel die wij zoeken is **RootManageSharedAccessKey**. Dit is de SAS Key-naam. Schrijf het op.
+De plaatsing van uw middelgroep kan 1-2 minuten vergen, wanneer succesvol u het volgende scherm zult zien:
 
-![ 2-06-sas-overview.png ](./images/2-06-sas-overview.png)
+![ 1-08-namespace-deploy.png ](./images/108namespacedeploy.png)
 
-### SAS-sleutelwaarde
+## Uw gebeurtenishub in Azure instellen
 
-Klik op **RootManageSharedAccessKey** om de Belangrijkste Waarde van SAS te krijgen. En druk het **Exemplaar aan klembord** pictogram om de **Primaire sleutel** te kopiëren:
+Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **Alle middelen**.
 
-![ 2-07-sas-key-value.png ](./images/2-07-sas-key-value.png)
+![ 1-09-all-resources.png ](./images/109allresources.png)
 
-### Overzicht van doelwaarden
+Klik in de lijst met bronnen op de naamruimte `--aepUserLdap---aep-enablement` Gebeurtenishubs:
 
-Op dit punt zou u alle waarden moeten geïdentificeerd hebben nodig om de Azure bestemming van de Hub van de Gebeurtenis in Adobe Experience Platform in real time CDP te bepalen.
+![ 1-10-list-resources.png ](./images/110listresources.png)
 
-| Naam doelkenmerk | Waarde doelkenmerk | Voorbeeldwaarde |
-|---|---|---|
-| sasKeyName | SAS-sleutelnaam | RootManageSharedAccessKey |
-| sasKey | SAS-sleutelwaarde | srREx9ShJG1Rv7f/... |
-| namespace | Naamruimte van gebeurtenishubs | `--aepUserLdap---aep-enablement` |
-| eventHubName | Gebeurtenissenhub | `--aepUserLdap---aep-enablement-event-hub` |
+In `--aepUserLdap---aep-enablement` detailscherm, ga **Entiteiten** en klik **de Hubs van de Gebeurtenis**:
 
-## 2.4.2.2 Azure Event Hub Destination in Adobe Experience Platform maken
+![ 1-11-eventhub-namespace.png ](./images/111eventhubnamespace.png)
 
-Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+Klik **+ de Hub van de Gebeurtenis**.
 
-Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+![ 1-12-toe:voegen-gebeurtenis-hub.png ](./images/112addeventhub.png)
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
+Gebruik `--aepUserLdap---aep-enablement-event-hub` als naam en klik **Overzicht + creeer**.
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+![ 1-13-create-event-hub.png ](./images/113createeventhub.png)
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
+Klik **creëren**.
 
-Ga naar **Doelen**, dan gaan naar **Catalogus**.
+![ 1-13-create-event-hub.png ](./images/113createeventhub1.png)
 
-![ Ingestie van Gegevens ](./images/sb2a.png)
+In **de Hubs van de Gebeurtenis** onder uw gebeurtenishub namespace, zult u uw **vermelde Hub van de Gebeurtenis** nu zien.
 
-Selecteer **de Opslag van de Wolk van 0} {en ga naar** Azure de Hubs van de Gebeurtenis **en klik** Opstelling **of** vormen **:**
+![ 1-14-event-hub-list.png ](./images/114eventhublist.png)
 
-![ 2-08-list-references.png ](./images/2-08-list-destinations.png)
+## Uw Azure Storage Account instellen
 
-Vul de bestemmingswaarden in die u in de vorige oefening hebt verzameld. Daarna, klik **verbinden met Doel**.
+Om uw functie van de Hub van de Gebeurtenis van de Azure in recentere oefeningen te zuiveren, zult u een Azure Rekening van de Opslag als deel van uw het projectopstelling van de Code van Visual Studio moeten verstrekken. U gaat nu die Azure Storage Account maken.
 
-![ 2-09-bestemming-values.png ](./images/2-09-destination-values.png)
+Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een Middel**.
 
-Als uw geloofsbrieven correct waren, zult u een bevestiging zien: **Verbonden**.
+![ 1-15-event-hub-storage.png ](./images/115eventhubstorage.png)
 
-![ 2-09-bestemming-values.png ](./images/2-09-destination-valuesa.png)
+Ga **opslagrekening** in het onderzoek in, vind de kaart voor **Rekening van de Opslag** en klik **rekening van de Opslag**.
 
-U moet nu de naam en beschrijving invoeren in de notatie `--aepUserLdap---aep-enablement` . Ga **eventHubName** in (zie vorige oefening, kijkt het als dit: `--aepUserLdap---aep-enablement-event-hub`) en klik **daarna**.
+![ 1-16-event-hub-search-storage.png ](./images/116eventhubsearchstorage.png)
 
-![ 2-10-create-destination.png ](./images/2-10-create-destination.png)
+Specificeer uw **Groep van het Middel** (gecreeerd in het begin van deze oefening), gebruik `--aepUserLdap--aepstorage` als uw naam van de de rekeningsrekening van de Opslag en selecteer **lokaal-overtollige opslag (LRS)**, dan klik **Overzicht + creeer**.
 
-Klik **sparen en weg**.
+![ 1-18-event-hub-create-review-storage.png ](./images/118eventhubcreatereviewstorage.png)
 
-![ 2-11-save-exit-activation.png ](./images/2-11-save-exit-activation.png)
+Klik **creëren**.
 
-Je bestemming is nu gemaakt en beschikbaar in Adobe Experience Platform.
+![ 1-19-gebeurtenis-hub-submit-storage.png ](./images/119eventhubsubmitstorage.png)
 
-![ 2-12-bestemming-created.png ](./images/2-12-destination-created.png)
+Het maken van onze opslagaccount duurt een paar seconden:
 
-Volgende Stap: [ 2.4.3 leidt tot een segment ](./ex3.md)
+![ 1-20-gebeurtenis-hub-opstellen-storage.png ](./images/120eventhubdeploystorage.png)
+
+Wanneer gebeëindigd zal uw scherm **aan middel** knoop tonen.
+
+Klik **Huis**.
+
+![ 1-21-gebeurtenis-hub-opstellen-klaar-storage.png ](./images/121eventhubdeployreadystorage.png)
+
+Uw Rekening van de Opslag is nu zichtbaar onder **Recente Middelen**.
+
+![ 1-22-gebeurtenis-hub-opstellen-middelen-list.png ](./images/122eventhubdeployresourceslist.png)
+
+Volgende Stap: [ 2.4.3 vormt uw Azure Doel van de Hub van de Gebeurtenis in Adobe Experience Platform ](./ex3.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

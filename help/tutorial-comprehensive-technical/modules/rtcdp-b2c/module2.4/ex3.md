@@ -1,43 +1,75 @@
 ---
-title: Segmentactivering naar Microsoft Azure Event Hub - Een streaming segment maken
-description: Segmentactivering naar Microsoft Azure Event Hub - Een streaming segment maken
+title: Audience Activation naar Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
+description: Audience Activation naar Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# 2.4.3 Een segment maken
+# 2.4.3 Configureer uw Azure Event Hub Destination in Adobe Experience Platform
 
-## 2.4.3.1 Inleiding
+## Vereiste Azure Connection-parameters identificeren
 
-U maakt een eenvoudig segment:
+Om een bestemming van de Hub van de Gebeurtenis in Adobe Experience Platform te vormen hebt u uw nodig:
 
-- **Interesse in Apparatuur** waarvoor de klantenprofielen zullen kwalificeren wanneer zij de **pagina van het Apparaat** van de de demowebsite van de Luma bezoeken.
+- Naamruimte van gebeurtenishubs
+- Gebeurtenissenhub
+- Azure SAS Key Name
+- Azure SAS Key
 
-### Goed om te weten
+De Hub van de gebeurtenis en EventHub namespace zijn bepaald in de vorige oefening: [ de Hub van de Gebeurtenis van de Opstelling in Azure ](./ex2.md)
 
-In real time CDP zal een activering aan een bestemming teweegbrengen wanneer u voor een segment kwalificeert dat deel van de activeringslijst van die bestemming uitmaakt. Wanneer dat het geval is, zal de segmentkwalificatielading die naar die bestemming zal worden verzonden **alle segmenten bevatten waarvoor uw profiel** kwalificeert.
+### Naamruimte van gebeurtenishubs
 
-Het doel van deze module is te tonen dat de het segmentkwalificatie van het Profiel van uw Klant wordt verzonden naar **uw** bestemming van de gebeurtenishub in real time.
+Om de bovengenoemde informatie in Azure Portal te zoeken, navigeer aan [ https://portal.azure.com/#home ](https://portal.azure.com/#home). Zorg ervoor dat u het correcte Azure-account gebruikt.
 
-### Segmentstatus
+Klik **Alle Middelen** in uw Azure portaal:
 
-Een segmentkwalificatie in Adobe Experience Platform heeft altijd a **status** - bezit en kan één van het volgende zijn:
+![ 2-01-azure-all-resources.png ](./images/201azureallresources.png)
 
-- **gerealiseerde**: dit wijst op een nieuwe segmentkwalificatie
-- **bestaand**: dit wijst op een bestaande segmentkwalificatie
-- **verlaten**: dit wijst erop dat het profiel niet meer voor het segment kwalificeert
+Vind uw **Namespace van de Hubs van de Gebeurtenis** in de lijst en klik het.
 
-## 2.4.3.2 Het segment opbouwen
+![ 2-01-azure-all-resources.png ](./images/201azureallresources1.png)
 
-De bouw van een segment wordt verklaard in detail in [ Module 2.3 ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md).
+De naam van uw **Namespace van de Hubs van de Gebeurtenis** is nu duidelijk zichtbaar. Deze zou vergelijkbaar moeten zijn met `--aepUserLdap---aep-enablement` .
 
-### Segment maken
+![ 2-01-azure-all-resources.png ](./images/201azureallresources2.png)
+
+### Gebeurtenissenhub
+
+Op uw **pagina van de Hubs Namespace van de Gebeurtenis 0}**, klik **Entiteiten > de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een Hub van de Gebeurtenis genoemd `--aepUserLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+
+![ 2-04-gebeurtenis-hub-selected.png ](./images/204eventhubselected.png)
+
+### SAS-sleutelnaam
+
+Voor uw **pagina van Namespace van de Hubs van de Gebeurtenis 0} {, klik** Montages > Gedeeld toegangsbeleid **.** U zult een lijst van Gedeeld toegangsbeleid zien. De SAS Sleutel die wij zoeken is **RootManageSharedAccessKey**, die de **SAS Zeer belangrijke Naam is. Schrijf het op.
+
+![ 2-05-select-sas.png ](./images/205selectsas.png)
+
+### SAS-sleutelwaarde
+
+Daarna, klik op **RootManageSharedAccessKey** om de Belangrijkste Waarde van SAS te krijgen. En druk het **Exemplaar aan klembord** pictogram om de **Primaire sleutel**, in dit geval `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=` te kopiëren.
+
+![ 2-07-sas-key-value.png ](./images/207saskeyvalue.png)
+
+### Overzicht van doelwaarden
+
+Op dit punt zou u alle waarden moeten geïdentificeerd hebben nodig om de Azure bestemming van de Hub van de Gebeurtenis in Adobe Experience Platform in real time CDP te bepalen.
+
+| Naam doelkenmerk | Waarde doelkenmerk | Voorbeeldwaarde |
+|---|---|---|
+| sasKeyName | SAS-sleutelnaam | RootManageSharedAccessKey |
+| sasKey | SAS-sleutelwaarde | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
+| namespace | Naamruimte van gebeurtenishubs | `--aepUserLdap---aep-enablement` |
+| eventHubName | Gebeurtenissenhub | `--aepUserLdap---aep-enablement-event-hub` |
+
+## Azure Event Hub Destination in Adobe Experience Platform maken
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -49,29 +81,31 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Ga naar **Segmenten**. Klik op de knop **+ Segment maken** .
+Ga naar **Doelen**, dan gaan naar **Catalogus**. Selecteer **Opslag van de Wolk**, ga naar **Azure de Hubs van de Gebeurtenis** en klik **Opstelling**.
 
-![ Ingestie van Gegevens ](./images/seg.png)
+![ 2-08-list-references.png ](./images/208listdestinations.png)
 
-Geef het segment een naam `--aepUserLdap-- - Interest in Equipment` en voeg de ervaringsgebeurtenis voor de paginanaam toe:
+Selecteer **Standaardauthentificatie**. Vul de verbindingsgegevens in die u tijdens de vorige oefening hebt verzameld. Daarna, klik **verbinden met Doel**.
 
-Klik op **Gebeurtenissen**, en belemmering en laat vallen **XDM ExperienceEvent > Web > Web-pagina details > Naam**. Ga **materiaal** als waarde in:
+![ 2-09-bestemming-values.png ](./images/209destinationvalues.png)
 
-![ 4-05-create-ee-2.png ](./images/4-05-create-ee-2.png)
+Als uw geloofsbrieven correct waren, zult u een bevestiging zien: **Verbonden**.
 
-De belemmering en laat vallen **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Ga `--aepUserLdap--` als waarde in, plaats de vergelijkingsparameter aan **bevat** en klik **sparen**:
+![ 2-09-bestemming-values.png ](./images/209destinationvaluesa.png)
 
-![ 4-05-create-ee-2-brand.png ](./images/4-05-create-ee-2-brand.png)
+U moet nu de naam en beschrijving invoeren in de notatie `--aepUserLdap---aep-enablement` . Ga **eventHubName** in (zie vorige oefening, kijkt het als dit: `--aepUserLdap---aep-enablement-event-hub`) en klik **daarna**.
 
-### PQL Definition
+![ 2-10-create-destination.png ](./images/210createdestination.png)
 
-De PQL van uw segment ziet er als volgt uit:
+U kunt desgewenst een beleid voor gegevensbeheer selecteren. Klik **sparen en weg**.
 
-```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
-```
+![ 2-11-save-exit-activation.png ](./images/211saveexitactivation.png)
 
-Volgende Stap: [ 2.4.4 activeer segment ](./ex4.md)
+Je bestemming is nu gemaakt en beschikbaar in Adobe Experience Platform.
+
+![ 2-12-bestemming-created.png ](./images/212destinationcreated.png)
+
+Volgende Stap: [ 2.4.4 leidt tot een publiek ](./ex4.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

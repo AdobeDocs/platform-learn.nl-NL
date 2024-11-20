@@ -4,9 +4,9 @@ description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van 
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -42,22 +42,22 @@ Nadat u de oefeningen in deze zelfstudie hebt voltooid, kunt u het volgende doen
 - Gegevens in real-time naar Adobe Experience Platform streamen met Adobe Experience Platform Data Collection
 - Gegevens in Adobe Experience Platform opnemen met behulp van een workflow of met behulp van een ETL-toepassing (extract, transform, load)
 - Het Real-time klantprofiel in Adobe Experience Platform visualiseren en gebruiken
-- Segmenten maken
+- Soorten publiek maken
 - Verschillende Adobe Experience Platform API&#39;s gebruiken
 - SQL gebruiken om query&#39;s uit te voeren op uw gegevens in Adobe Experience Platform
 - Realtime, op trigger gebaseerde reizen configureren en uitvoeren
-- Gebruik Real-time CDP om actie te voeren door een segment aan diverse bestemmingen te activeren
+- Gebruik Real-time CDP om actie te ondernemen door een publiek aan diverse bestemmingen te activeren
 - Gebruik Customer Journey Analytics om te rapporteren over omnichannel klantgegevens uit verschillende bronnen, waaronder Google BigQuery
 
 ## Vereisten
 
 - Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot het Systeem van de Demo: [ https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Toegang tot het Systeem van de Demo: [ https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Video&#39;s
 
-U kunt veel interessante video&#39;s van onze gebeurtenissen van de Academie van de Technologie, van Bootcamps en meer op ons [ Communautaire kanaal van YouTube van de Makers van de Ervaring vinden Communautaire ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+U kunt veel interessante video&#39;s van onze webinars van de Academie van de Technologie, van bootcamps en meer op ons [ Communautaire kanaal van YouTube van de Makers van de Ervaring vinden Communautaire ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Inhoud
 
@@ -109,19 +109,19 @@ U kunt veel interessante video&#39;s van onze gebeurtenissen van de Academie van
 - **Beschrijving:** In deze module, zult u leren hoe te opstelling, vorm en gebruik de Intelligente Diensten van Adobe Experience Platform.
 - **de Investering van de Tijd:** 60 minuten
 
-[2.3 Real-Time CDP - Een segment maken en actie ondernemen](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP - Bouw een publiek en onderneem actie](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **Publiek:** Architect van Gegevens, de Ingenieur van Orchestratie, Marketer
 - **Vereisten:** Toegang tot Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
-- **Beschrijving:** In deze module, zult u een segment vormen, het voor het Streamen Segmentatie toelaten en het segment aan verscheidene bestemmingen, met inbegrip van Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target en S3 bestemmingen zoals de Marketing Cloud van Salesforce activeren.
+- **Beschrijving:** In deze module, zult u een publiek vormen en het publiek aan verscheidene bestemmingen, met inbegrip van Google DV360, Adobe Target en AWS S3 activeren.
 - **de Investering van de Tijd:** 90 minuten
 
-[2.4 Real-Time CDP: Segmentactivering naar Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP: Audience Activation naar Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **Publiek:** De Ingenieur van Gegevens, Architect van Gegevens, de Analyst van Gegevens
 - **Vereisten:** Toegang tot Adobe Experience Platform, Real-time CDP en Microsoft Azure
-- **Beschrijving:** In deze module, zult u een bestemming van Microsoft Azure EventHub als bestemming in real time voor Adobe Experience Platform in real time CDP plaatsen. U zult ook opstelling en een Azure functie opstellen die in real time zal teweeggebracht worden wanneer Adobe Experience Platform een segmentlading aan uw Azure bestemming EventHub levert. De Azure Functie die u zult teweegbrengen zal het mechanisme van Adobe Experience Platform in real time CDP activeringsmogelijkheden tonen.
-Als deel van deze module zult u ook een begrip van krijgen wat in real time CDP teweegbrengt om een nuttige lading aan een gespecificeerde bestemming eigenlijk te leveren. We zullen ook de status van een segmentkwalificatie bespreken en de relatie ervan met activering.
+- **Beschrijving:** In deze module, zult u een bestemming van Microsoft Azure EventHub als bestemming in real time voor Adobe Experience Platform in real time CDP plaatsen. U zult ook opstelling en een Azure functie opstellen die in real time zal teweegbrengen wanneer Adobe Experience Platform een publiekslading aan uw Azure bestemming EventHub levert. De Azure Functie die u zult teweegbrengen zal het mechanisme van Adobe Experience Platform in real time CDP activeringsmogelijkheden tonen.
+Als deel van deze module zult u ook een begrip van krijgen wat in real time CDP teweegbrengt om een nuttige lading aan een gespecificeerde bestemming eigenlijk te leveren. We zullen ook de status van een publiekskwalificatie bespreken en de relatie ervan met activering.
 - **de Investering van de Tijd:** 90 minuten
 
 [2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
