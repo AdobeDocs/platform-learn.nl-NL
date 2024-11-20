@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel - Visualiseer uw eigen real-tim
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In deze oefening, zult u Postman en Adobe I/O gebruiken om Adobe Experience Plat
 
 ## Context
 
-In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande segmentlidmaatschap. De getoonde gegevens kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het ervaringssysteem.
+In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande publiekslidmaatschappen. De getoonde gegevens kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het ervaringssysteem.
 
 Het profiel van de Klant in real time kan door alle toepassingen van de Adobe, maar ook door externe oplossingen zoals de Centers van de Vraag of in-store clienteling apps worden verbruikt. De manier om dit te doen is die externe oplossingen met Adobe Experience Platform APIs te verbinden.
 
@@ -58,9 +58,6 @@ U zult dan dit zien:
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api1.png)
 
-Klik het **pictogram van Adobe Experience Platform**.
-/images/api2.png)
-
 Selecteer **Experience Platform API** en klik **daarna**.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api3.png)
@@ -75,7 +72,7 @@ Selecteer de vereiste productprofielen.
 
 >[!NOTE]
 >
-> De namen van productprofielen variëren in uw Adobe Experience Platform-instantie omdat dit instantiespectine is. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console en de interface voor AEP-machtigingen.
+> De namen van productprofielen variëren in uw Adobe Experience Platform-instantie omdat ze instantiespecifiek zijn. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console en de interface voor AEP-machtigingen.
 
 Klik **sparen Vormde API**.
 
@@ -119,7 +116,7 @@ Ga naar **Toestemmingen**, **Rollen**, en klik het relevante productprofiel.
 
 >[!NOTE]
 >
-> De namen van productprofielen variëren in uw Adobe Experience Platform-instantie omdat dit instantiespectine is. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console en de interface voor AEP-machtigingen.
+> De namen van productprofielen variëren in uw Adobe Experience Platform-instantie omdat ze instantiespecifiek zijn. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console en de interface voor AEP-machtigingen.
 
 ![ Toestemmingen ](./images/perm1.png)
 
@@ -150,7 +147,7 @@ In Postman zijn er twee concepten: omgevingen en verzamelingen.
 - Het milieu bevat al uw milieuvariabelen die min of meer samenhangend zijn. In het milieu, zult u dingen zoals IMSOrg van ons milieu van het Platform, naast veiligheidsgeloofsbrieven zoals uw Privé Sleutel en anderen vinden. Het omgevingsbestand is het bestand dat u tijdens de vorige Adobe I/O-installatie hebt gedownload. De naam ziet er als volgt uit: **`oauth_server_to_server.postman_environment.json`** .
 
 - De verzameling bevat een aantal API-aanvragen die u kunt gebruiken. We gebruiken twee verzamelingen
-   - 1 Verzameling voor verificatie naar Adobe I/0
+   - 1 Verzameling voor Authentificatie aan Adobe I/O
    - 1 Verzameling voor de oefeningen in deze module
    - 1 inzameling voor de oefeningen in de module van Real-Time CDP, voor de Authoring van de Bestemming
 
@@ -632,7 +629,7 @@ Dit zijn momenteel alle beschikbare ExperienceEvent-gegevens in Platform voor de
 
 U hoeft de ECID niet te gebruiken om ExperienceEvent-gegevens aan te vragen vanuit Adobe Experience Platform in real-time profiel. U kunt elke id in een naamruimte gebruiken om deze gegevens aan te vragen.
 
-Volgende Stap: [ 2.1.4 leidt tot een segment - UI ](./ex4.md)
+Volgende Stap: [ 2.1.4 leidt tot een publiek - UI ](./ex4.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

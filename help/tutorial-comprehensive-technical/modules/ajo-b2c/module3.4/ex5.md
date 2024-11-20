@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Zakelijke gebeurtenissen
 description: In deze sectie wordt uitgelegd hoe u de mogelijkheid voor bedrijfsgebeurtenissen kunt gebruiken om een gebruiksgeval van een "item terug in voorraad" uit te voeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -98,14 +99,14 @@ In het linkermenu, onder **Gebeurtenissen**, onderzoek naar uw ldap. U vindt de 
 
 ![ Journey Optimizer ](./images/bej12.png)
 
-Zoals u kunt zien, is de a **Gelezen activiteit van het Segment** automatisch toegevoegd aan het canvas. Dit is omdat de bedrijfsgebeurtenissen slechts een trekker voor de reis verzenden om een specifiek segment te lezen, dat dan de lijst van profielen voor die reis zal terugwinnen.
+Zoals u kunt zien, is de a **Gelezen activiteit van het Publiek** automatisch toegevoegd aan het canvas. Dit is omdat de bedrijfsgebeurtenissen slechts een trekker voor de reis verzenden om een specifiek publiek te lezen, dat dan de lijst van profielen voor die reis zal terugwinnen.
 
-Klik de **Gelezen activiteit van het Segment**.
-De **Gelezen configuratie van het Segment** verwacht u om het segment te selecteren dat u van de bedrijfsgebeurtenis wilt op de hoogte brengen die enkel gebeurde. Klik **selecteren een segment** gebied.
+Klik de **Gelezen activiteit van het Publiek**.
+De **Gelezen configuratie van het Publiek** verwacht u om het publiek te selecteren dat u van de bedrijfsgebeurtenis wilt op de hoogte brengen die enkel gebeurde. Klik **selecteren een publiek** gebied.
 
 ![ Journey Optimizer ](./images/bej13.png)
 
-In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
+In **kies een publiek** popup, onderzoek naar uw ldap en selecteer het publiek u in [ Module 2.3 - In real time CDP creeerde - Bouw een publiek en neem actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in Galaxy S24`. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/bej14.png)
 

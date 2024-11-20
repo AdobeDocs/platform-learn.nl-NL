@@ -4,7 +4,7 @@ description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van 
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 0%
@@ -84,7 +84,7 @@ U kunt veel interessante video&#39;s van onze gebeurtenissen van de Academie van
 - **Beschrijving:** In deze stichtingsmodule, zult u gegevens van de website in Platform innemen
 - **de Investering van de Tijd:** 120 minuten
 
-[1.3 Federatieve Audience Composition](./modules/datacollection/module1.3/fac.md)
+[1.3 Federale Audience Composition](./modules/datacollection/module1.3/fac.md)
 
 - **Publiek:** Analyst van Gegevens, de Ingenieur van Gegevens, Architect van Gegevens
 - **Vereisten:** Toegang tot Adobe Experience Platform

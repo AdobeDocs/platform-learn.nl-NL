@@ -4,7 +4,7 @@ description: Foundation - Real-time klantprofiel - Van onbekend naar bekend op d
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 

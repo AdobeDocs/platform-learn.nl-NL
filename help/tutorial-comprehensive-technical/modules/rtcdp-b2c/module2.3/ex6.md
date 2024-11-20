@@ -3,27 +3,28 @@ title: CDP in realtime - extern publiek
 description: CDP in realtime - extern publiek
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1948'
 ht-degree: 0%
 
 ---
 
 # 2.3.6 Extern publiek
 
-In veel gevallen wil uw bedrijf bestaande segmenten uit andere toepassingen gebruiken om het klantprofiel in Adobe Experience Platform te verrijken.
+In veel gevallen wil uw bedrijf bestaande doelgroepen uit andere toepassingen gebruiken om het klantprofiel in Adobe Experience Platform te verrijken.
 Die externe doelgroepen kunnen zijn gedefinieerd op basis van een model voor gegevenswetenschap of met behulp van externe gegevensplatforms.
 
-Met de functie Extern publiek van Adobe Experience Platform kunt u de aandacht richten op de opname van het externe publiek en de activering ervan zonder dat u de definitie van het desbetreffende segment in Adobe Experience Platform nader hoeft te definiëren.
+Met de functie voor extern publiek van Adobe Experience Platform kunt u de aandacht richten op de opname van het externe publiek en de activering ervan zonder dat u de definitie van het desbetreffende publiek in Adobe Experience Platform in detail hoeft te herdefiniëren.
 
 Het algemene proces bestaat uit drie hoofdstappen:
 
 - Importeer de metagegevens van het externe publiek: deze stap is bedoeld om de metagegevens van het externe publiek, zoals de naam van het publiek, in Adobe Experience Platform in te voeren.
-- Wijs het externe publiekslidmaatschap aan het klantenprofiel toe: deze stap moet het klantenprofiel met de externe attributen van het segmentlidmaatschap verrijken.
-- Maak de segmenten in Adobe Experience Platform: deze stap is bedoeld om actioneerbare segmenten te maken op basis van het lidmaatschap van externe doelgroepen.
+- Wijs het externe publiekslidmaatschap aan het klantprofiel toe: deze stap is bedoeld om het klantprofiel met het externe attribuut van het publiek te verrijken.
+- Maak het publiek in Adobe Experience Platform: deze stap is bedoeld om een actief publiek te maken dat is gebaseerd op het lidmaatschap van een extern publiek.
 
-## 2.3.6.1 Metagegevens
+## Metagegevens
 
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
@@ -31,13 +32,13 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 >[!IMPORTANT]
 >
->De sandbox die u voor deze oefening wilt gebruiken, is ``--module2sandbox--`` .
+>De sandbox die u voor deze oefening wilt gebruiken, is ``--aepSandboxName--`` .
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--module2sandbox--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./images/sb1.png)
 
-Terwijl de segmentgegevens de voorwaarde voor een profiel om deel van een segment bepalen te zijn, zijn de segmentmeta-gegevens informatie over het segment zoals de naam, de beschrijving en de status van het segment. Aangezien de metagegevens van het externe publiek in Adobe Experience Platform worden opgeslagen, moet u een naamruimte gebruiken om de metagegevens in Adobe Experience Platform in te voeren.
+Terwijl de publieksgegevens de voorwaarde voor een profiel om deel uit te maken van een publiek bepalen, zijn de publieksmeta-gegevens informatie over het publiek zoals de naam, de beschrijving en de status van het publiek. Aangezien de metagegevens van het externe publiek in Adobe Experience Platform worden opgeslagen, moet u een naamruimte gebruiken om de metagegevens in Adobe Experience Platform in te voeren.
 
 ## 2.3.6.1.1 Identiteitsnaamruimte voor externe doelgroepen
 
@@ -47,19 +48,19 @@ Om de identiteit te bekijken die reeds werd gecreeerd, ga **Identiteiten**, en o
 Opmerking:
 
 - Het identiteitssymbool **externalaudiences** zal in de volgende stappen worden gebruikt om naar de externe publieksidentiteit te verwijzen.
-- Het **herkenningsteken niet-mensen** type wordt gebruikt voor deze identiteit namespace, aangezien dit namespace niet bedoeld is om klantenprofielen maar segmenten te identificeren.
+- Het **herkenningsteken niet-mensen** type wordt gebruikt voor deze identiteit namespace, aangezien dit namespace niet bedoeld is om klantenprofielen maar publiek te identificeren.
 
 ![ Externe Identiteit van publiek ](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Het schema voor metagegevens van externe doelgroepen maken
 
-De externe publieksmeta-gegevens zijn gebaseerd op het **Schema van de definitiedefinitie van het Segment**. U kunt meer details in de [ bewaarplaats van XDM Github ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md) vinden.
+De externe publieksmeta-gegevens zijn gebaseerd op het **Schema van de definitie van het publiek**. U kunt meer details in de [ bewaarplaats van XDM Github ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md) vinden.
 
 Ga in het linkermenu naar Schemas. Klik **+ creëren Schema** en klik dan **doorbladeren**.
 
 ![ Extern schema van de Metagegevens van het publiek 1 ](images/extAudMDXDM1.png)
 
-Om een klasse toe te wijzen, onderzoek naar **segmentdefinitie**. Selecteer de **klasse van de definitie van het 0} Segment {en klik** toewijzen Klasse **.**
+Om een klasse toe te wijzen, onderzoek naar **publieksdefinitie**. Selecteer de **klasse van de definitie van het publiek 0} en klik** toewijzen Klasse **.**
 
 ![ Extern Schema van Metagegevens van het publiek 2 ](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ In de vraagresultaten zult u de meta-gegevens van de externe publiek zien die u 
 
 ![ Externe de Metagegevens van het publiek str 5 ](images/extAudMDstr5.png)
 
-## 2.3.6.2 Segmentlidmaatschap
+## Publiek lidmaatschap
 
-Met de externe publieksmeta-gegevens beschikbaar kunt u nu het segmentlidmaatschap voor een specifiek klantenprofiel opnemen.
+Met de externe publieksmeta-gegevens beschikbaar kunt u het publiekslidmaatschap voor een specifiek klantenprofiel nu opnemen.
 
-U moet nu een profieldataset voorbereiden die tegen het het lidmaatschapsschema van het Segment wordt verrijkt. U kunt meer details in de [ bewaarplaats van XDM Github ](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md) vinden.
+U moet nu een profieldataset voorbereiden die tegen het schema van het publiekslidmaatschap wordt verrijkt. U kunt meer details in de [ bewaarplaats van XDM Github ](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md) vinden.
 
-## 2.3.6.2.1 Het lidmaatschapsschema voor externe doelgroepen maken
+### Het abonnementsschema voor externe soorten publiek maken
 
 In het juiste menu, ga naar **Schema&#39;s**. Klik **creëren Schema** en klik dan **Individueel Profiel XDM**.
 
@@ -237,7 +238,7 @@ Daarna, laat het **knevel en bevestig van het Profiel toe 0}.** Klik **sparen**.
 
 ![ Extern Schema van het Profiel van het publiek 5 ](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 Maak een gegevensset voor leden van externe doelgroepen
+### De gegevensset Extern publiekslidmaatschap maken
 
 In **Schema&#39;s**, ga **doorbladeren**. Zoek en klik op het schema `--aepUserLdap-- - External Audiences Membership` dat u in de vorige stap hebt gemaakt. Daarna, klik **creeer Dataset van Schema**.
 
@@ -251,7 +252,7 @@ Dan zie je dit. Vergeet niet om de **knevel van het Profiel** toe te laten!
 
 ![ Externe Metagegevens van het publiek DS 3 ](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 Een HTTP API Source-verbinding maken
+### Een HTTP API Source-verbinding maken
 
 
 Vervolgens moet u de HTTP API Source-connector configureren die u gebruikt om de metagegevens in de gegevensset in te voeren.
@@ -294,7 +295,7 @@ Dan zie je dit.
 
 ![ Externe Metagegevens van het publiek http 4 ](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Opname van gegevens van het externe publiek
+### Opname van gegevens van het externe publiek
 
 Op uw het overzichtslusje van de Schakelaar van Source, klik **..** en klik dan **het schemalading van het Exemplaar**.
 
@@ -346,7 +347,7 @@ Vernieuw het Source-verbindingsscherm van de HTTP API, waar u na een paar minute
 
 ![ Externe de Metagegevens van het publiek str 2 ](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Valideren van lidmaatschap voor externe doelgroepen
+### Valideren van lidmaatschap voor extern publiek
 
 Wanneer de verwerking wordt voltooid kunt u de gegevensbeschikbaarheid in de dataset controleren gebruikend de Dienst van de Vraag.
 
@@ -368,7 +369,7 @@ In de vraagresultaten zult u de meta-gegevens van de externe publiek zien die u 
 
 ![ Externe de Metagegevens van het publiek str 5 ](images/extAudPrstr5.png)
 
-## 2.3.6.3 Een segment maken
+## Een segment maken
 
 Nu bent u klaar om actie te ondernemen tegen het externe publiek.
 In Adobe Experience Platform wordt actie ondernomen door het creëren van segmenten, het vullen van de respectieve doelgroepen en het delen van die doelgroepen.
@@ -396,7 +397,7 @@ Dan zie je dit. U zult ook opmerken dat het profiel waarvoor u het segmentlidmaa
 
 Uw segment is nu klaar en kan naar een bestemming voor activering worden verzonden.
 
-## 2.3.6.4 Het profiel van uw klant visualiseren
+## Uw klantprofiel visualiseren
 
 U kunt nu ook de segmentkwalificatie visualiseren op uw klantprofiel. Ga naar **Profielen**, gebruik het identiteit namespace **Systeem van de Manifestatie - CRMID** en verstrek de identiteit `--aepUserLdap---profile-test-01`, die u als deel van oefening 6.6.2.4 gebruikte, en klik **Mening**. Vervolgens klikt u op de **Profiel-id** om het profiel te openen.
 

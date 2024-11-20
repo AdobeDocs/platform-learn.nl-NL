@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Een op batch gebaseerde reis configureren
 description: In deze sectie configureert u een batch-e-mailtransport voor het verzenden van een nieuwsbrief
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw geri
 
 ## 3.4.2.1 Een nieuwsbrief maken
 
-U zult nu een op partij-gebaseerde reis creëren. In tegenstelling tot de op gebeurtenis-gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of segmentingangen of uitgang steunt om een reis voor één specifieke klant teweeg te brengen, richten de op partij-gebaseerde reizen één keer een heel segment met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
+U zult nu een op partij-gebaseerde reis creëren. In tegenstelling tot de op gebeurtenissen gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang steunt om een reis voor één specifieke klant teweeg te brengen, richten de op partij-gebaseerde reizen één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
 
 In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
@@ -37,11 +38,11 @@ Klik **OK**.
 
 ![ Journey Optimizer ](./images/batchj2.png)
 
-Onder **Orchestratie**, belemmering en laat vallen **Gelezen Segment** op het canvas. Dit betekent dat, zodra de reis wordt gepubliceerd, het hele segmentpubliek zal terugwinnen, dat dan het doelpubliek van de reis en de boodschap wordt. Klik **selecteren een segment**.
+Onder **Orchestratie**, belemmering en laat vallen **Gelezen Publiek** op het canvas. Dit betekent dat, zodra de reis gepubliceerd wordt, het hele publiek zal terugwinnen, dat dan het doelpubliek van de reis en de boodschap wordt. Klik **Uitgezocht een publiek**.
 
 ![ Journey Optimizer ](./images/batchj3.png)
 
-In **kies een segment** popup, onderzoek naar uw ldap en selecteer het segment u in [ Module 2.3 creeerde - Echte tijd CDP - bouw een segment en doe actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. bijvoorbeeld: vangeluw - interesse in PROTEUS FITNESS JACKSHIRT. Klik **sparen**.
+In **kies een publiek** popup, onderzoek naar uw ldap en selecteer het publiek u in [ Module 2.3 - In real time CDP creeerde - Bouw een publiek en neem actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in Galaxy S24`. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/batchj5.png)
 

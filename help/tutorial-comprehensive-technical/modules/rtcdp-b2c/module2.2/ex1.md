@@ -3,9 +3,10 @@ title: Intelligente services - Voorbereiding van AI-gegevens van klanten (Ingest
 description: AI van de klant - Gegevensvoorbereiding (samenvatting)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 Om de Intelligente Diensten inzichten van uw marketing gebeurtenisgegevens te ontdekken, moeten de gegevens semantisch worden verrijkt en in een standaardstructuur worden gehandhaafd. Intelligent Services gebruikt de schema&#39;s van het Model van de Gegevens van de Ervaring van de Adobe (XDM) om dit te bereiken.
 Specifiek, moeten alle datasets die in de Intelligente Diensten worden gebruikt met het **schema van XDM van de Gebeurtenis van de Consumentenervaring** in overeenstemming zijn.
 
-## 2.2.1.1 Schema maken
+## Schema maken
 
 In deze oefening, zult u een schema tot stand brengen dat de **mix van de Gebeurtenis van de Ervaring van de Consumenten** bevat, die door de **Intelligente Dienst van de Klant AI** wordt vereist.
 
@@ -25,37 +26,40 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](../../datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--module10sandbox--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](../../datacollection/module1.2/images/sb1.png)
 
 Van het linkermenu, klik **Schema&#39;s** en ga **doorbladeren**. Klik **creëren Schema**.
 
-![ creeer nieuw schema ](./images/create-schema-button.png)
+![ creeer nieuw schema ](./images/createschemabutton.png)
 
-In popup, uitgezochte **XDM ExperienceEvent**.
+In popup, uitgezochte **Handboek** en klik **Uitgezocht**.
+
+![ creeer nieuw schema ](./images/schmanual.png)
+
+Daarna, uitgezochte **Gebeurtenis van de Ervaring** en klik **daarna**.
 
 ![ creeer nieuw schema ](./images/xdmee.png)
 
-Dan zie je dit.
+U moet nu een naam voor uw schema opgeven. Als naam voor ons schema, gebruik dit: `--aepUserLdap-- - Demo System - Customer Experience Event` en klik **Afwerking**.
+
+![ creeer nieuw schema ](./images/schname.png)
+
+Dan zie je dit. Klik op **+ Toevoegen** onder Veldgroepen.
 
 ![ creeer nieuw schema ](./images/xdmee1.png)
 
-Onderzoek en selecteer de volgende **Mixins** om aan dit Schema toe te voegen:
+Onderzoek en selecteer de volgende **Groepen van het Gebied** om aan dit Schema toe te voegen:
 
 - Consumentenervaringsgebeurtenis
-
-  ![ Nieuw CEE schema ](./images/cee.png)
-
 - Gegevens van eindgebruiker
-
-  ![ Nieuw CEE schema ](./images/identitymap.png)
 
 Klik **toevoegen de Groepen van het Gebied**.
 
-![ de zeer belangrijke definitie van de Identiteit ](./images/addmixin.png)
+![ Nieuw CEE schema ](./images/cee.png)
 
-Dan zie je dit. Selecteer de Gegevens van de Gebruiker van het Eind van de Mixin ****.
+Dan zie je dit. Klik de Details van de Gebruiker van het Eind van de Groep van het Gebied ****.
 
 ![ creeer nieuw schema ](./images/eui1.png)
 
@@ -63,7 +67,7 @@ Ga aan het gebied **endUserIDs._experience.emailid.id**.
 
 ![ creeer nieuw schema ](./images/eui2.png)
 
-In het juiste menu voor het gebied **endUserIDs._experience.emailid.id**, scrol neer en controleer checkbox voor **Identiteit**, controleer checkbox voor **Primaire Identiteit** en selecteer **Identiteit namespace** van **E-mail**.
+In het juiste menu voor het gebied **endUserIDs._experience.emailid.id**, scrol neer en controleer checkbox voor **Identiteit**, controleer checkbox voor **Primaire Identiteit** en selecteer **Identiteit namespace** van **E-mail**. Klik **toepassen**.
 
 ![ creeer nieuw schema ](./images/eui3.png)
 
@@ -71,21 +75,7 @@ Ga aan het gebied **endUserIDs._experience.mcid.id**. Controleer checkbox voor *
 
 ![ creeer nieuw schema ](./images/eui4.png)
 
-Geef uw schema nu een naam.
-
-Als naam voor ons schema, zult u dit gebruiken:
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-Als voorbeeld, voor ldap **vangeluw**, zou dit de naam van het schema moeten zijn:
-
-- **vangeluw - het Systeem van de Demo - de Gebeurtenis van de Ervaring van de Klant**
-
-Dat zou je iets dergelijks moeten geven. Klik **+ toevoegen** knoop om nieuwe **Mixins** toe te voegen.
-
-![ creeer nieuw schema ](./images/xdmee2.png)
-
-Selecteer de naam van het schema. U zou uw schema voor **Profiel** nu moeten toelaten, door de **knevel van het Profiel** te klikken.
+Dan heb je dit. Selecteer vervolgens de naam van het schema. U zou uw schema voor **Profiel** nu moeten toelaten, door de **knevel van het Profiel** te klikken.
 
 ![ creeer nieuw schema ](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ Dat zou u nu moeten doen. Klik **sparen** om uw schema te bewaren.
 
 ![ creeer nieuw schema ](./images/xdmee5.png)
 
-## 2.2.1.2 Gegevensset maken
+## Gegevensset maken
 
 Van het linkermenu, klik **Datasets** en ga **doorbladeren**. Klik **creëren dataset**.
 
@@ -129,7 +119,7 @@ U zou nu het volgende moeten hebben:
 
 U bent nu klaar om gegevens van de Gebeurtenis van de Ervaring van de Consumenten te beginnen en de dienst van AI van de Klant te gebruiken.
 
-## 2.2.1.3 Testgegevens van downloadervaring
+## Testgegevens van Gebeurtenis downloaden
 
 Zodra het **Schema** en **Dataset** worden gevormd, bent u nu klaar om de gegevens van de Gebeurtenis van de Ervaring in te voeren. Aangezien AI van de Klant gegevens over **2 kwartalen minstens** vereist, zult u extern voorbereide gegevens moeten opnemen.
 
@@ -145,7 +135,7 @@ U hebt nu een dossier genoemd **retail-v1-dec2020-xl.json.zip** gedownload. Plaa
 
 ![ Dataset ](./images/ingest.png)
 
-## 2.2.1.4 Testgegevens over gebeurtenissen met het overzicht
+## Testgegevens van Ingest Experience Event
 
 In Adobe Experience Platform, ga naar **Datasets** en open uw dataset, die **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]** wordt genoemd.
 

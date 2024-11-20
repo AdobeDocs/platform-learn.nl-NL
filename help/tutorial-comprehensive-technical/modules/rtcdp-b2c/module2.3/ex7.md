@@ -4,9 +4,9 @@ description: Real-time CDP - Doelen SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,13 @@ In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform A
 
 ## Definiëren van eindpunt en formaat
 
-Voor deze oefening, zult u een eindpunt nodig hebben om te vormen zodat wanneer een segment kwalificeert, de kwalificatiegebeurtenis aan dat eindpunt kan worden gestroomd. In deze oefening, zult u een steekproefeindpunt gebruiken gebruikend [ https://webhook.site/ ](https://webhook.site/). Ga naar [ https://webhook.site/ ](https://webhook.site/), waar u iets gelijkend op dit zult zien. Klik **Exemplaar aan klembord** om url te kopiëren. U zult deze url in de volgende oefening moeten specificeren. De URL in dit voorbeeld is `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` .
+Voor deze oefening, zult u een eindpunt nodig hebben om te vormen zodat wanneer een publiek kwalificeert, de kwalificatiegebeurtenis aan dat eindpunt kan worden gestroomd. In deze oefening, zult u een steekproefeindpunt gebruiken gebruikend [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin). Ga naar [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin), creeer een rekening en creeer dan een werkruimte. Als de werkruimte eenmaal is gemaakt, ziet u iets gelijkaardigs.
+
+Klik **exemplaar** om url te kopiëren. U zult deze url in de volgende oefening moeten specificeren. De URL in dit voorbeeld is `https://eodts05snjmjz67.m.pipedream.net` .
 
 ![ Ingestie van Gegevens ](./images/webhook1.png)
 
-Wat het formaat betreft, zullen wij een standaardmalplaatje gebruiken dat segmentkwalificaties of onkwalificaties samen met meta-gegevens zoals klantenherkenningstekens stroomt. De malplaatjes kunnen worden aangepast om aan de verwachtingen van specifieke eindpunten te voldoen, maar in deze oefening zullen wij een standaardmalplaatje opnieuw gebruiken, dat in een nuttige last als dit zal resulteren die aan het eindpunt zal worden gestroomd.
+Wat de indeling betreft, gebruiken we een standaardsjabloon voor het streamen van publiekskwalificaties of -kwalificaties, samen met metagegevens zoals klantid&#39;s. De malplaatjes kunnen worden aangepast om aan de verwachtingen van specifieke eindpunten te voldoen, maar in deze oefening zullen wij een standaardmalplaatje opnieuw gebruiken, dat in een nuttige last als dit zal resulteren die aan het eindpunt zal worden gestroomd.
 
 ```json
 {
@@ -52,9 +54,15 @@ Wat het formaat betreft, zullen wij een standaardmalplaatje gebruiken dat segmen
 
 ## Een server- en sjabloonconfiguratie maken
 
-De eerste stap om uw eigen Doel in Adobe Experience Platform te creëren is een server en malplaatjeconfiguratie tot stand te brengen.
+De eerste stap voor het maken van uw eigen bestemming in Adobe Experience Platform is het maken van een server- en sjabloonconfiguratie met Postman.
 
-Om dat te doen, ga naar **Authoring API van de Bestemming**, naar **de servers en de malplaatjes van de Bestemming** en klik om de verzoek **POST te openen - creeer een configuratie van de bestemmingsserver**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
+Om dat te doen, open uw toepassing van Postman en ga naar **Authoring API van de Bestemming**, aan **de servers en de malplaatjes van de Bestemming** en klik om de verzoek **POST te openen - creeer een configuratie van de bestemmingsserver**.
+
+>[!NOTE]
+>
+>Als u niet die inzameling van Postman hebt, ga terug naar [ oefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar aan opstelling Postman met de verstrekte inzamelingen van Postman.
+
+Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
 
 ![ Ingestie van Gegevens ](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
 }
 ```
 
-Na het kleven van de bovengenoemde code, moet u het gebied **urlBasedDestination.url.value** manueel bijwerken, en u moet het aan url van Webhaak plaatsen u in de vorige stap creeerde, die `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` in dit voorbeeld was.
+Na het kleven van de bovengenoemde code, moet u het gebied **urlBasedDestination.url.value** manueel bijwerken, en u moet het aan url van Webhaak plaatsen u in de vorige stap creeerde, die `https://eodts05snjmjz67.m.pipedream.net` in dit voorbeeld was.
 
 ![ Ingestie van Gegevens ](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Na het bijwerken van het gebied **urlBasedDestiantion.url.value**, zou het als d
 
 ![ Ingestie van Gegevens ](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>Vergeet niet dat u een geldige `access_token` moet hebben voordat u een aanvraag naar Adobe I/O verzendt. Om een geldige `access_token` te krijgen, stel de verzoek **POST in werking - krijg het Token van de Toegang** in de inzameling **Adobe IO - OAuth**.
+
 Na het klikken **verzend**, zal uw servermalplaatje worden gecreeerd, en als deel van de reactie zult u een gebied genoemd **instanceId** zien. Schrijf het neer, aangezien u het in de volgende stap zult nodig hebben. In dit voorbeeld, is **instanceId**
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` .
+`52482c90-8a1e-42fc-b729-7f0252e5cebd` .
 
 ![ Ingestie van Gegevens ](./images/sdkpm6.png)
 
 ## Uw doelconfiguratie maken
 
-In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om de verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
+In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om de verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** en vervang deze door `--aepSandboxName--` .
 
 ![ Ingestie van Gegevens ](./images/sdkpm7.png)
-
-Vervang deze door `--aepSandboxName--` .
-
-![ Ingestie van Gegevens ](./images/sdkpm8.png)
 
 Daarna, ga naar **Lichaam**. Selecteer de tijdelijke aanduiding **{{body}}** .
 
@@ -183,7 +191,7 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
 
 ![ Ingestie van Gegevens ](./images/sdkpm11.png)
 
-Na het kleven van de bovengenoemde code, moet u het gebied **destinationDelivery manueel bijwerken. destinationServerId**, en u moet het plaatsen aan **instanceId** van het malplaatje van de bestemmingsserver u in de vorige stap creeerde, die `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` in dit voorbeeld was. Daarna, klik **verzenden**.
+Na het kleven van de bovengenoemde code, moet u het gebied **destinationDelivery manueel bijwerken. destinationServerId**, en u moet het plaatsen aan **instanceId** van het malplaatje van de bestemmingsserver u in de vorige stap creeerde, die `52482c90-8a1e-42fc-b729-7f0252e5cebd` in dit voorbeeld was. Daarna, klik **verzenden**.
 
 ![ Ingestie van Gegevens ](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ In het linkermenu, ga naar **Doelen**, klik **Catalogus** en scrol neer aan de c
 
 ![ Ingestie van Gegevens ](./images/destsdk1.png)
 
-## Uw segment koppelen aan uw doel
+## Uw publiek aan uw bestemming koppelen
 
-In **Doelen** > **Catalogus**, klik **Opstelling** op uw bestemming beginnen segmenten aan uw nieuwe bestemming toe te voegen.
+In **Doelen** > **Catalogus**, klik **Opstelling** op uw bestemming beginnen publiek aan uw nieuwe bestemming toe te voegen.
 
 ![ Ingestie van Gegevens ](./images/destsdk2.png)
 
-Ga een dummy dragerteken, als **1234** in. Klik **verbinden met bestemming**.
+Ga een willekeurige waarde voor het **dragerteken** in, als **1234**. Klik **verbinden met bestemming**.
 
 ![ Ingestie van Gegevens ](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ U kunt desgewenst een beleid voor gegevensbeheer selecteren. Klik **daarna**.
 
 ![ Ingestie van Gegevens ](./images/destsdk5.png)
 
-Selecteer het segment dat u eerder hebt gemaakt en dat de naam `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT` heeft. Klik **daarna**.
+Selecteer het publiek dat u eerder hebt gemaakt en dat de naam `--aepUserLdap-- - Interest in Galaxy S24` heeft. Klik **daarna**.
 
 ![ Ingestie van Gegevens ](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Klik **Afwerking**.
 
 ![ Ingestie van Gegevens ](./images/destsdk8.png)
 
-Uw bestemming is nu live. Nieuwe segmentkwalificaties worden nu gestreamd naar uw aangepaste webhaak.
+Uw bestemming is nu live. Nieuwe publiekskwalificaties worden nu gestreamd naar uw aangepaste webhaak.
 
 ![ Ingestie van Gegevens ](./images/destsdk9.png)
 
-## De segmentactivering testen
+## Activering van het publiek testen
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](../../gettingstarted/gettingstarted/images/web8.png)
-
-U kunt nu de onderstaande workflow volgen om toegang te krijgen tot de website. Klik **Integraties**.
-
-![ DSN ](../../gettingstarted/gettingstarted/images/web1.png)
-
-Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in oefening 0.1 werd gecreeerd.
-
-![ DSN ](../../gettingstarted/gettingstarted/images/web2.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -269,23 +269,24 @@ Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
-Van de **homepage 0} Luma {, ga naar** Mannen **, en klik het product** PROTEUS FITNESS JACKSHIRT **.**
+In dit voorbeeld wilt u reageren op een specifieke klant die een specifiek product weergeeft.
+Van de **homepage van het Signaal 0} Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
 
-![ Ingestie van Gegevens ](./images/homenadia.png)
+![ Ingestie van Gegevens ](./images/homegalaxy.png)
 
-U hebt nu de productpagina voor **PROTEUS FITNESS JACKSHIRT** bezocht, wat betekent u nu voor het segment zult kwalificeren dat u vroeger in deze oefening creeerde.
+De productpagina voor Galaxy S24 is nu weergegeven. Uw doelgroep komt dus in aanmerking voor uw profiel in de volgende minuten.
 
-![ Ingestie van Gegevens ](./images/homenadiapp.png)
+![ Ingestie van Gegevens ](./images/homegalaxy1.png)
 
-Wanneer u de Kijker van het Profiel opent, en naar **Segmenten** gaat, zult u het segment zien kwalificeren.
+Wanneer u de Kijker van het Profiel opent, en naar **Soorten publiek** gaat gaan, zult u het publiek zien kwalificeren.
 
-![ Ingestie van Gegevens ](./images/homenadiapppb.png)
+![ Ingestie van Gegevens ](./images/homegalaxydsdk.png)
 
-Ga nu terug naar uw open webhaak op [ https://webhook.site/ ](https://webhook.site/), waar u een nieuw inkomend verzoek zou moeten zien, dat uit Adobe Experience Platform voortkomt en die de gebeurtenis van de segmentkwalificatie bevat.
+Ga nu terug naar uw open webhaak op [ https://eodts05snjmjz67.m.pipedream.net ](https://eodts05snjmjz67.m.pipedream.net), waar u een nieuw inkomend verzoek zou moeten zien, dat uit Adobe Experience Platform voortkomt en die de gebeurtenis van de publiekskwalificatie bevat.
 
 ![ Ingestie van Gegevens ](./images/destsdk10.png)
 

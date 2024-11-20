@@ -1,87 +1,84 @@
 ---
-title: Real-time CDP - Bouw een segment en neem actie - Bouw een segment
-description: Real-time CDP - Bouw een segment en neem actie - Bouw een segment
+title: CDP in real time - Bouw een publiek en neem actie - Bouw een publiek
+description: CDP in real time - Bouw een publiek en neem actie - Bouw een publiek
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a46b1640-769d-4fb3-97e6-beaf9706efbf
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
 
-# 2.3.1 Een segment maken
+# 2.3.1 Een publiek maken
 
-In deze oefening, zult u een segment tot stand brengen door gebruik te maken van de bouwer van het segment van Adobe Experience Platform.
+In deze oefening, zult u een publiek creëren door gebruik te maken van Adobe Experience Platform het publiek bouwer.
 
-## 2.3.1.1 Context
+## Context
 
-In de wereld van vandaag, moet het antwoorden op het gedrag van een klant in real time zijn. Één van de manieren om aan klantengedrag in real time te antwoorden is door een segment te gebruiken, op voorwaarde dat het segment in real time kwalificeert. In deze oefening, moet u een segment opbouwen, rekening houdend met echte activiteit op de website die wij hebben gebruikt.
+Reageren op de interesse van een klant moet realtime zijn. Één van de manieren om aan klantengedrag in real time te antwoorden is door een publiek te gebruiken, op voorwaarde dat het publiek in real time kwalificeert. In deze oefening, moet u een publiek opbouwen, rekening houdend met echte activiteit op de website die wij hebben gebruikt.
 
-## 2.3.1.2 Identificeer het gedrag waarop u wilt reageren
+## Bepaal het gedrag waarop u wilt reageren
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-U kunt nu de onderstaande workflow volgen om toegang te krijgen tot de website. Klik **Integraties**.
-
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
-
-Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in oefening 0.1 werd gecreeerd.
-
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
 In dit voorbeeld wilt u reageren op een specifieke klant die een specifiek product weergeeft.
-Van de **homepage 0} Luma {, ga naar** Mannen **, en klik het product** PROTEUS FITNESS JACKSHIRT **.**
+Van de **homepage van het Signaal 0} Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
 
-![ Ingestie van Gegevens ](./images/homenadia.png)
+![ Ingestie van Gegevens ](./images/homegalaxy.png)
 
-Dus wanneer iemand de productpagina voor **PROTEUS FITNESS JACKSHIRT** bezoekt, wilt u actie kunnen nemen. Het eerste wat je moet doen om actie te ondernemen, is een segment definiëren.
+Dus wanneer iemand de productpagina voor **Galaxy S24** bezoekt, wilt u actie kunnen nemen. Het eerste wat je moet doen om actie te ondernemen, is een publiek definiëren.
 
-![ Ingestie van Gegevens ](./images/homenadiapp.png)
+![ Ingestie van Gegevens ](./images/homegalaxy1.png)
 
-## 2.3.1.3 Het segment creëren
+## Het publiek maken
 
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In het menu op de linkerkant, ga naar **Segmenten** en ga dan naar **doorbladeren** waar u een overzicht van alle bestaande segmenten kunt zien. Klik op **creeer de knoop van het Segment** beginnen een nieuw segment te creëren.
+In het menu op de linkerkant, ga naar **Soorten publiek** en ga dan naar **doorbladeren** waar u een overzicht van alle bestaande wijzen kunt zien. Klik op **creeer de knoop van het Publiek** beginnen een nieuw publiek te creëren.
 
 ![Segmentatie](./images/menuseg.png)
 
-Zoals hierboven vermeld, moet u een segment uit alle klanten bouwen die het product **JACKSHIRT van de FITNESS van PROTEUS** hebben bekeken.
+Selecteer **bouwt Regel** en klik **creeer**.
 
-Om dit segment op te bouwen, moet u een gebeurtenis toevoegen. U kunt alle gebeurtenissen vinden door op het **pictogram van Gebeurtenissen** in de **3} menubar van Segmenten te klikken.**
+![Segmentatie](./images/menuseg1.png)
+
+Zoals hierboven vermeld, moet u een publiek uit alle klanten bouwen die het product **Galaxy S24** hebben bekeken.
+
+U moet een gebeurtenis toevoegen om dit publiek op te bouwen. U kunt alle gebeurtenissen vinden door op het **pictogram van Gebeurtenissen** in de **publiek** menubar te klikken.
 
 Daarna, zult u het hoogste niveau **XDM ExperienceEvent** knoop zien.
 
-Om klanten te vinden die het **product van de FITNESS JACKSHIRT van 0} PROTEUS hebben bezocht, klik op** XDM ExperienceEvent **.**
+Om klanten te vinden die het **Galaxy S24** product hebben bezocht, klik op **XDM ExperienceEvent**.
 
 ![Segmentatie](./images/findee.png)
 
@@ -89,32 +86,29 @@ De rol neer aan **Punten van de Lijst van het Product** en klikt het.
 
 ![Segmentatie](./images/see.png)
 
-Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van de linker **Punten van de Lijst van het Product** menu op het canvas van de segmentbouwer in de **sectie van Gebeurtenissen**.
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van de linker **Punten van de Lijst van het Product** menu op het canvas van de publieksbouwer in de **sectie van Gebeurtenissen**.
 
 ![Segmentatie](./images/eewebpdtlname1.png)
 
-De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, ga `PROTEUS FITNESS JACKSHIRT` binnen.
+De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, ga `Galaxy S24` binnen.
 
 ![Segmentatie](./images/pv.png)
 
-Uw **Regels van de Gebeurtenis** zouden nu als dit moeten kijken. Telkens als u een element aan de segmentbouwer toevoegt, kunt u **klikken verfrist schatten** knoop om een nieuwe schatting van de bevolking in uw segment te krijgen.
+Uw **Regels van de Gebeurtenis** zouden nu als dit moeten kijken. Telkens als u een element aan de publieksbouwer toevoegt, kunt u **klikken verfrist Schatting** knoop om een nieuwe schatting van de bevolking in uw publiek te krijgen.
 
 ![Segmentatie](./images/ldap4.png)
 
-Tot slot geven wij uw segment een naam en bewaren het.
+Geef uw publiek een naam en plaats de **Methode van de Evaluatie** aan **Edge**.
 
 Gebruik als naamgevingsconventie:
 
-- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in Galaxy S24`
 
-De segmentnaam moet er als volgt uitzien:
-`vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`
-
-Daarna, klik **sparen en sluit** knoop om uw segment te bewaren.
+Daarna, klik de **knoop van Publish** om uw publiek te bewaren.
 
 ![Segmentatie](./images/segmentname.png)
 
-U wordt nu teruggezet naar de pagina van het segmentoverzicht.
+U gaat nu terug naar de overzichtspagina van het publiek.
 
 ![Segmentatie](./images/savedsegment.png)
 

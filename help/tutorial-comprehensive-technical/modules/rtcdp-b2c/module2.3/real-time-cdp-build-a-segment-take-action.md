@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
 # 2.3 Real-time CDP - Bouw een segment en neem actie
-
-**Auteur: [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/), [ Alberto De Caro ](https://www.linkedin.com/in/albertodecaro/), [ Benedikt Wedenik ](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 In deze module, zult u een het stromen segment vormen en zult het segment aan veelvoudige bestemmingen activeren.
 
@@ -38,25 +36,25 @@ In deze module, zult u een het stromen segment vormen en zult het segment aan ve
 
 ## Uitoefening
 
-[2.3.1 Een segment maken](./ex1.md)
+[2.3.1 Een publiek maken](./ex1.md)
 
-Leer hoe u een segment maakt.
+Leer hoe u een publiek kunt maken.
 
 [2.3.2 Overzicht hoe te om DV360 Bestemming te vormen die Doelen gebruiken](./ex2.md)
 
 Leer hoe u een advertentiebestemming configureert met de gebruikersinterface van Real-Time CDP.
 
-[2.3.3 Actie nemen: stuur uw segment naar DV360](./ex3.md)
+[2.3.3 Actie nemen: stuur uw publiek naar DV360](./ex3.md)
 
-Sluit het segment dat u in oefening 6.1 bouwde aan de bestemming DV360 aan.
+Sluit het publiek aan u aan de bestemming DV360 bouwde.
 
-[2.3.4 Actie nemen: verzend uw segment naar een S3-bestemming](./ex4.md)
+[2.3.4 Actie ondernemen: stuur je publiek naar een S3-bestemming](./ex4.md)
 
-Gebruik het segment u in oefening 6.1 bouwde en verzend het naar een S3-bestemming, typisch gebruikt voor E-mail marketing-bestemmingen.
+Gebruik het publiek u creeerde en verzend het naar een S3-bestemming, typisch gebruikt voor E-mail marketing-bestemmingen.
 
-[2.3.5 Actie nemen: stuur je segment naar Adobe Target](./ex5.md)
+[2.3.5 Actie nemen: stuur je publiek naar Adobe Target](./ex5.md)
 
-Gebruik het segment u in oefening 6.1 bouwde om een Ervaring te vormen richtend Activiteit in Adobe Target.
+Gebruik het publiek u creeerde om een Ervaring te vormen richtend Activiteit in Adobe Target.
 
 [2.3.6 Extern publiek](./ex6.md)
 

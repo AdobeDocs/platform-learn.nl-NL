@@ -1,11 +1,12 @@
 ---
-title: Real-time CDP - Bouw een segment en neem actie - Vorm een Bestemming van Advertising zoals Google DV360
-description: Real-time CDP - Bouw een segment en neem actie - Vorm een Bestemming van Advertising zoals Google DV360
+title: CDP in real time - Bouw een publiek en neem actie - Vorm een Bestemming van Advertising zoals Google DV360
+description: CDP in real time - Bouw een publiek en neem actie - Vorm een Bestemming van Advertising zoals Google DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De hieronder inhoud is voorgenomen als FYI - u **NIET** moet een nieuwe bestemming voor DV360 vormen. De bestemming is reeds gecreeerd en u kunt het in de volgende oefening gebruiken.
+>De hieronder inhoud is gedeeltelijk bedoeld als FYI - als zulk een bestemming reeds in uw instantie bestaat, dan moet u **NIET** een nieuwe bestemming voor DV360 vormen. De bestemming is reeds gecreeerd in dat geval en u kunt het in de volgende oefening gebruiken.
 
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ Na het creëren van de bestemming, zult u dit zien. U kunt desgewenst een beleid
 ![ RTCDP ](./images/rtcdpcreatedest1.png)
 
 U zult dan een lijst van beschikbare bestemmingen zien.
-In de volgende oefening, zult u het segment verbinden u in de vorige oefening bouwde aan de bestemming van Google DV360.
+In de volgende oefening, zult u het publiek verbinden u in de vorige oefening bouwde aan de bestemming van Google DV360.
 
-Volgende Stap: [ 2.3.3 Actie nemen: verzend uw segment naar DV360 ](./ex3.md)
+Volgende Stap: [ 2.3.3 Actie nemen: verzend uw publiek naar DV360 ](./ex3.md)
 
 [Terug naar module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

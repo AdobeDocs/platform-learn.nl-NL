@@ -1,19 +1,19 @@
 ---
-title: Foundation - Real-time klantprofiel - Een segment maken - UI
-description: Foundation - Real-time klantprofiel - Een segment maken - UI
+title: Foundation - Real-time klantprofiel - Een publiek maken - UI
+description: Foundation - Real-time klantprofiel - Een publiek maken - UI
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 2%
 
 ---
 
-# 2.1.4 Een segment maken - UI
+# 2.1.4 Een publiek maken - gebruikersinterface
 
-In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwer van het Segment van Adobe Experience Platform te maken.
+In deze oefening, zult u een publiek creëren door gebruik van de Bouwer van het Publiek van Adobe Experience Platform te maken.
 
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina ziet u een overzicht van alle bestaande segmenten. Klik op **+ creeer publiek** knoop om een nieuw segment te beginnen tot stand te brengen.
+In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina ziet u een overzicht van alle bestaande doelgroepen. Klik op **+ creeer publiek** knoop om een nieuw publiek te beginnen creëren.
 
 ![Segmentatie](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Selecteer **bouwt regel** en klik **creëren**.
 
 ![Segmentatie](./images/menusegbr.png)
 
-Zodra u in de nieuwe segmentbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
+Zodra u in de nieuwe publieksbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
 
 ![Segmentatie](./images/segmentationui.png)
 

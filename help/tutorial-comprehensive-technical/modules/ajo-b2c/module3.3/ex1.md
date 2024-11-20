@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -92,9 +93,9 @@ U ziet nu alle velden van de Placement:
 
 ## 3.3.1.4 Regels voor besluiten
 
-Een regel (ook genoemd toelatingsregel) is het equivalent van a **Segment**. Een regel is in feite een Segment zelf met het enige verschil dat een Regel met een Voorstel kan worden gebruikt om de beste aanbieding aan een profiel in Adobe Experience Platform te verstrekken.
+Een regel (ook genoemd toelatingsregel) is het equivalent van een **publiek**. Een regel is in feite een publiek zelf met het enige verschil dat een regel met een aanbieding kan worden gebruikt om de beste aanbieding aan een profiel in Adobe Experience Platform te verstrekken.
 
-Aangezien u reeds weet hoe te om Segmenten te bepalen die op de vorige enablement modules worden gebaseerd, herzien enkel snel het Milieu van de Segmentatie:
+Aangezien u reeds weet hoe te om publiek te bepalen dat op de vorige enablement modules wordt gebaseerd, herzien wij enkel snel het Milieu van de Segmentatie:
 
 Ga naar **Regels**. Klik op **+ Regel maken** .
 
@@ -106,7 +107,7 @@ Dan zie je de segmentatieomgeving van Adobe Experience Platform.
 
 U kunt tot alle gebieden nu toegang hebben die deel van het Schema van de Vereniging voor het Profiel van de Klant in real time uitmaken en om het even welke regel kunnen bouwen.
 
-Het is ook interessant om te weten dat u reeds bepaalde segmenten in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten publiek** te gaan > ``--aepTenantId--``.
+Het is ook interessant om te weten dat u reeds bepaald publiek in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten van publiek** te gaan > ``--aepTenantId--``.
 
 ![ Regel van het Besluit ](./images/decisionruleaud.png)
 

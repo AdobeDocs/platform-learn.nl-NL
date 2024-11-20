@@ -4,7 +4,7 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Voor deze gegevensstroom...
 - Alle gegevens van de Gebeurtenis van de Ervaring worden verzameld door gebrek in het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**
 - Alle gegevens van het Profiel zullen door gebrek in het dataset **Systeem van de Demo - de Dataset van het Profiel voor Website (Globale v1.1)** worden verzameld (het opnemen van profielgegevens nationaal met Web SDK wordt momenteel niet gesteund door Web SDK)
 - Als u de **de toepassingsdienst van de Offer decisioning** voor deze gegevensstroom wilt gebruiken, moet u de doos voor Offer decisioning controleren. (Dit zal deel van [ Module 3.3 ](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md) zijn)
-- **de Segmentatie van Edge** wordt toegelaten door gebrek, zo betekent het dat de kwalificerende segmenten bij de rand, op opname van inkomend verkeer zullen worden geëvalueerd
+- **de Segmentatie van Edge** wordt toegelaten door gebrek, zo betekent het dat het gekwalificeerde publiek bij de rand, bij opname van inkomend verkeer zal worden geëvalueerd
 - Als u de **Doelen van Personalization** wilt gebruiken, moet u de doos voor de Doelen van Personalization controleren.
 - 
    - Als u **Adobe Journey Optimizer** mogelijkheden in deze gegevensstroom wilt gebruiken, moet u de doos voor Adobe Journey Optimizer controleren.

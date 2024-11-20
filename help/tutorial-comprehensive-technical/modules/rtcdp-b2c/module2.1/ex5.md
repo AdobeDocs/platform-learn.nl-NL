@@ -4,9 +4,9 @@ description: Zie uw Profiel van de Klant in real time in actie in het Centrum va
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,9 @@ Daarna, moet u één van uw identiteiten en volgens namespace selecteren, en **o
 | E-mailid | woutervangeluwe+18112024-01@gmail.com |
 | Mobiel nummer-id | +32473622044+18112024-01 |
 
-Wanneer de klant uw vraagcentrum roept, kan het telefoonaantal worden gebruikt om de klant te identificeren. In deze oefening, zult u het telefoonaantal gebruiken om het profiel van de klant in CX App terug te winnen.
-
 ![ Demo ](./images/19.png)
 
-U zult nu de informatie zien die idealiter in het Centrum van de Vraag zou worden getoond, zodat de werknemers van het Centrum van de Vraag alle relevante informatie beschikbaar wanneer het spreken aan een klant hebben.
+U zult nu de informatie zien die idealiter in het Centrum van de Vraag zou worden getoond, zodat de agenten van het Centrum van de Vraag alle relevante informatie beschikbaar wanneer het spreken aan een klant hebben.
 
 ![ Demo ](./images/20.png)
 
