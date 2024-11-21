@@ -3,9 +3,10 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Werk uw DataStream bij om gegevens ter beschikking te stellen van uw bezit van de Server van de Gegevensverzameling van Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 0%
 
 ## 2.5.2.1 De gegevensstroom bijwerken
 
-In [ Uitoefening 0.2 ](./../../gettingstarted/gettingstarted/ex2.md), creeerde u uw eigen **[!UICONTROL Datastream]**. Vervolgens hebt u de naam `--aepUserLdap-- - Demo System Datastream` gebruikt.
+In [ Aan de slag ](./../../gettingstarted/gettingstarted/ex2.md), creeerde u uw eigen **[!UICONTROL Datastream]**. Vervolgens hebt u de naam `--aepUserLdap-- - Demo System Datastream` gebruikt.
 
-In deze oefening, moet u dat **[!UICONTROL Datastream]** vormen om met uw **[!DNL Data Collection Server property]** te werken.
+In deze oefening, moet u dat **[!UICONTROL Datastream]** vormen om met uw **bezit van de Server van de Inzameling van Gegevens te werken**.
 
 Om dat te doen, ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Dan zie je dit. Klik in het linkermenu op **[!UICONTROL Datastreams]** .
 

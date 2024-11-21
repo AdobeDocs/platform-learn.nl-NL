@@ -4,16 +4,14 @@ description: In deze module, zult u de eerder gevormde datasets, schema's en het
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen
-
-**Auteur: [ Van Geluwe Wouter ](https://www.linkedin.com/in/woutervangeluwe/), [ Clement Delalande ](https://www.linkedin.com/in/clement-delalande/)**
 
 In deze module, zult u de eerder gevormde datasets, schema&#39;s en het bezit van de Cliënt van de Gegevensverzameling van Adobe Experience Platform gebruiken om gegevens te verzamelen, en dan door:sturen die gegevens server-kant aan een eindpunt van keus.
 
@@ -23,10 +21,6 @@ In deze module, zult u:
 - Installeer en gebruik de extensie Adobe Cloud Connector in Adobe Experience Platform Data Collection
 - Een Google-eindpunt voor functie maken en er gegevens naar streamen
 - Een AWS-eindpunt maken en er gegevens naar streamen
-
-Bekijk deze video om inzicht te krijgen in de waarde, de reis van de klant en het configuratieproces:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Leerdoelen
 

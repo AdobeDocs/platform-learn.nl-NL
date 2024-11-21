@@ -4,7 +4,7 @@ description: Audience Activation naar Microsoft Azure Event Hub - Publiek active
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## publiek toevoegen aan Azure Event Hub Destination
 
-In deze exercitie voegt u uw publiek `--aepUserLdap-- - Interest in Equipment` toe aan uw `--aepUserLdap---aep-enablement` Azure Event Hub-bestemming.
+In deze exercitie voegt u uw publiek `--aepUserLdap-- - Interest in Plans` toe aan uw `--aepUserLdap---aep-enablement` Azure Event Hub-bestemming.
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 

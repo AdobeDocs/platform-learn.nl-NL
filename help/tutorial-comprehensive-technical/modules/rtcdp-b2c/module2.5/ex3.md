@@ -3,26 +3,29 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Een aangepaste webhaak maken en configureren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
 
 # 2.5.3 Een aangepaste webhaak maken en configureren
 
-## 2.5.3.1 Uw aangepaste webhaak maken
+## Uw aangepaste webhaak maken
 
-Ga naar [ https://webhook.site/ ](https://webhook.site/). Je ziet iets als dit:
+Ga naar [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin). U gebruikte reeds deze toepassing in [ Uitoefening 2.3.7 Doelen SDK ](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+
+Als u die service nog niet hebt gebruikt, maakt u een account en maakt u een werkruimte. Als de werkruimte eenmaal is gemaakt, ziet u iets gelijkaardigs.
+
+Klik **exemplaar** om url te kopiëren. U zult deze url in de volgende oefening moeten specificeren. De URL in dit voorbeeld is `https://eodts05snjmjz67.m.pipedream.net` .
 
 ![ demo ](./images/webhook1.png)
 
-U ziet hier uw unieke URL, die er als volgt uitziet: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d` .
-
 Deze website heeft deze website nu voor u gemaakt en u kunt deze webhaak in uw **[!DNL Event Forwarding property]** configureren om het doorsturen van gebeurtenissen te testen.
 
-## 2.5.3.2 Werk uw Event Forwarding-eigenschap bij: Maak een Data Element
+## Werk uw Event Forwarding-eigenschap bij: Maak een Data Element
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/) en ga naar **Gebeurtenis door:sturen**. Zoek in de eigenschap Event Forwarding en klik erop om deze te openen.
 
@@ -41,11 +44,13 @@ Maak de volgende selectie:
 - Als **Naam**, ga **Gebeurtenis XDM** in.
 - Als **Uitbreiding**, uitgezochte **Kern**.
 - Als het **Type van Element van Gegevens**, uitgezochte **Weg**.
-- Als **Weg**, ga **arc.event.xdm** in. Door deze weg in te gaan, zult u uit de **XDM** sectie van de gebeurtenislading filtreren die door de website of mobiele toepassing in Adobe Edge wordt verzonden.
+- Als **Weg**, uitgezochte **Gelezen gegevens van XDM (arc.event.xdm)**. Door deze weg te selecteren, zult u uit de **XDM** sectie van de gebeurtenislading filtreren die door de website of mobiele toepassing in Adobe Edge wordt verzonden.
+
+![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/de3.png)
 
 Nu heb je dit. Klik **sparen**.
 
-![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/de3.png)
+![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ Nu heb je dit. Klik **sparen**.
 >
 >In de bovengenoemde weg, wordt een verwijzing gemaakt aan **gebeurtenis**. **gebeurtenis** staat voor een unieke gebeurtenis en de Server van de Inzameling van Gegevens van Adobe Experience Platform zal altijd elke gebeurtenis individueel evalueren. Soms, kunt u een verwijzing naar **gebeurtenissen** in de nuttige lading zien die door de Kant van de Cliënt van SDK van het Web wordt verzonden, maar in de Server van de Inzameling van Gegevens van Adobe Experience Platform, wordt elke gebeurtenis individueel geëvalueerd.
 
-## 2.5.3.3 Werk uw Adobe Experience Platform-eigenschap van de Server van de Gegevensverzameling bij: Maak een regel
+## Werk uw Adobe Experience Platform-eigenschap voor de gegevensverzamelingsserver bij: Een regel maken
 
 In het linkermenu, ga naar **Regels**. Klik **creëren Nieuwe Regel**.
 
@@ -75,7 +80,7 @@ Dat zou u deze **Naam** moeten geven: **de Schakelaar van de Wolk van de Adobe -
 Configureer daarna het volgende:
 
 - Verandering de verzoekmethode van GET in **POST**
-- Ga URL van de douane webhaak in u in één van de vorige stappen op de [ https://webhook.site/ ](https://webhook.site/) website creeerde, die als dit kijkt: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- Voer de URL in van de aangepaste webhaak die u in een van de vorige stappen hebt gemaakt en die er als volgt uitziet: `https://eodts05snjmjz67.m.pipedream.net`
 
 Dat zou u nu moeten doen. Daarna, ga naar **Lichaam**.
 
@@ -110,19 +115,11 @@ Na een paar minuten zult u zien dat de implementatie klaar is en klaar om te wor
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/rl14.png)
 
-## 2.5.3.4 Test uw configuratie
+## Uw configuratie testen
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](../../gettingstarted/gettingstarted/images/web8.png)
-
-U kunt nu de onderstaande workflow volgen om toegang te krijgen tot de website. Klik **Integraties**.
-
-![ DSN ](../../gettingstarted/gettingstarted/images/web1.png)
-
-Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in oefening 0.1 werd gecreeerd.
-
-![ DSN ](../../gettingstarted/gettingstarted/images/web2.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
@@ -140,7 +137,7 @@ Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
 ![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ Wanneer u uw browser de Mening van de Ontwikkelaar opent, kunt u de verzoeken va
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook1.png)
 
-Als u onbewerkte lading selecteert, ga [ https://jsonformatter.org/json-pretty-print ](https://jsonformatter.org/json-pretty-print) en kleef de nuttige lading. Klik **maken Behoorlijk**. U zult dan de nuttige lading JSON, het **gebeurtenissen** voorwerp en het **xdm** voorwerp zien. In één van de vorige stappen, toen u het Element van Gegevens bepaalde, gebruikte u de verwijzing **arc.event.xdm**, die in u het **xdm** voorwerp van deze nuttige lading zal resulteren ontleden.
+Als u onbewerkte lading selecteert, ga [ https://jsonformatter.org/json-pretty-print ](https://jsonformatter.org/json-pretty-print) en kleef de nuttige lading. Klik **Minify/Beautify**. U zult dan de nuttige lading JSON, het **gebeurtenissen** voorwerp en het **xdm** voorwerp zien. In één van de vorige stappen, toen u het Element van Gegevens bepaalde, gebruikte u de verwijzing **arc.event.xdm**, die in u het **xdm** voorwerp van deze nuttige lading zal resulteren ontleden.
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook2.png)
 
-Schakelaar uw mening aan de website [ https://webhook.site/ ](https://webhook.site/) die u in één van de vorige stappen gebruikte. U zou nu een mening gelijkend op dit moeten hebben, met netwerkverzoeken die in het linkermenu worden getoond. U ziet de **xdm** nuttige lading die uit het netwerkverzoek filterde dat hierboven werd getoond.
+Schakelaar uw mening aan uw douane webhaak [ https://webhook.site/ ](https://webhook.site/) die u in één van de vorige stappen gebruikte. U zou nu een mening gelijkend op dit moeten hebben, met netwerkverzoeken die in het linkermenu worden getoond. U ziet de **xdm** nuttige lading die uit het netwerkverzoek filterde dat hierboven werd getoond.
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook3.png)
 
-De rol neer een beetje in de nuttige lading om de paginanaam te vinden, die in dit geval **vangeluw-OCUC** is (die de projectnaam van uw demowebsite is).
+De rol neer een beetje in de nuttige lading om de paginanaam te vinden, die in dit geval **huis** is.
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook4.png)
 
@@ -164,7 +161,7 @@ Als u nu door de website navigeert, zult u extra netwerkverzoeken zien die op de
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook5.png)
 
-U hebt nu de Server Door:sturen van de nuttige ladingen van SDK/XDM van het Web aan een externe douanetoewijzing gevormd. In de volgende oefeningen, zult u een gelijkaardige benadering vormen, en u zult die zelfde gegevens naar de milieu&#39;s van Google en van AWS verzenden.
+U hebt nu de server-side Gebeurtenis gevormd door:sturen van de nuttige ladingen van SDK/XDM van het Web aan een externe douane webhaak. In de volgende oefeningen, zult u een gelijkaardige benadering vormen, en u zult die zelfde gegevens naar de milieu&#39;s van Google en van AWS verzenden.
 
 Volgende Stap: [ 2.5.4 creeer en vorm een Functie van de Wolk van Google ](./ex4.md)
 

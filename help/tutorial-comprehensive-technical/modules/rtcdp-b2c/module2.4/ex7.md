@@ -3,7 +3,8 @@ title: Audience Activation naar Microsoft Azure Event Hub - Handeling
 description: Audience Activation naar Microsoft Azure Event Hub - Handeling
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Open het deelvenster Profielviewer om dit te verifiëren. U moet nu lid zijn van
 
 De schakelaar terug naar de Code van Visual Studio en bekijkt uw **TERMINAL** lusje, zou u een lijst van publiek voor uw specifiek **ECID** moeten zien. Deze activeringslading wordt geleverd aan uw gebeurtenishub zodra u voor het `--aepUserLdap-- - Interest in Plans` publiek kwalificeert.
 
+![ 6-06-vsc-activatie-gerealiseerde.png ](./images/cs3.png)
+
 Wanneer u een dichtere blik bij de publiekslading neemt, kunt u zien dat `--aepUserLdap-- - Interest in Plans` in status **gerealiseerde** is.
 
-Een publieksstatus van **realiseerde** betekent dat uw profiel deel van het publiek uitmaakt, terwijl de **verlaten** status betekent dat ons profiel uit het publiek is verwijderd.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![ 6-06-vsc-activatie-gerealiseerde.png ](./images/cs3.png)
+Een publieksstatus van **realiseerde** betekent dat uw profiel deel van het publiek uitmaakt, terwijl de **verlaten** status betekent dat ons profiel uit het publiek is verwijderd.
 
 Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
 

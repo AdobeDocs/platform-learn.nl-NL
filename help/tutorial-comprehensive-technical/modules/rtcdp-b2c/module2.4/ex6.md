@@ -4,9 +4,9 @@ description: Audience Activation naar Microsoft Azure Event Hub - Definieer een 
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Klik **creëren het Project van de Functie...**:
 
 ![ 3-05-vsc-create-project.png ](./images/vsc2.png)
 
-Selecteer een lokale omslag van uw keus om het project te bewaren en **Uitgezocht** te klikken:
+Selecteer of creeer een lokale omslag van uw keus om het project te bewaren en **Uitgezocht** te klikken:
 
 ![ 3-06-vsc-select-folder.png ](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Dan krijg je een bericht als deze. In dat geval, klik ja **, vertrouw ik de aute
 
 ![ 3-15-vsc-project-toe:voegen-aan-werkspace.png ](./images/vsc12a.png)
 
-Nadat u project wordt gecreeerd, klik op **index.js** om het dossier te hebben open in de redacteur:
+Nadat u een project hebt gemaakt, opent u het bestand `--aepUserLdap---aep-event-hub-trigger.js` in de editor:
 
 ![ 3-16-vsc-open-index-js.png ](./images/vsc13.png)
 
-De nuttige lading die door Adobe Experience Platform naar uw Hub van de Gebeurtenis wordt verzonden zal publiek identiteitskaart&#39;s omvatten:
+De lading die door Adobe Experience Platform naar uw Hub van de Gebeurtenis wordt verzonden zal als dit kijken:
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-Vervang de code in index.js van uw Code van Visual Studio met de hieronder code. Deze code zal worden uitgevoerd telkens als CDP in real time publiekskwalificaties naar uw bestemming van de Hub van de Gebeurtenis verzendt. In ons voorbeeld gaat de code alleen over het weergeven en verbeteren van de ontvangen lading. Maar je kunt je een of andere functie voorstellen om publiekskwalificaties in real-time te verwerken.
+Werk de code in uw Code van Visual Studio `--aepUserLdap---aep-event-hub-trigger.js` met de hieronder code bij. Deze code zal worden uitgevoerd telkens als CDP in real time publiekskwalificaties naar uw bestemming van de Hub van de Gebeurtenis verzendt. In dit voorbeeld gaat de code alleen over het weergeven van de binnenkomende lading, maar u kunt zich elke aanvullende functie voorstellen om de publiekskwalificaties in real-time te verwerken en het ecosysteem van de gegevenspijpleiding verder te gebruiken.
+
+Regel 11 in het bestand `--aepUserLdap---aep-event-hub-trigger.js` geeft het volgende aan:
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+Wijzig regel 11 in `--aepUserLdap---aep-event-hub-trigger.js` om er als volgt uit te zien:
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+De totale lading zou dan als volgt moeten zijn:
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 Het resultaat moet er als volgt uitzien:
 
@@ -175,7 +182,13 @@ Nu is het tijd om uw project uit te voeren. In dit stadium zullen wij niet het p
 
 ![ 3-17-vsc-looppas-project.png ](./images/vsc14.png)
 
-De eerste keer u in werking stelt u zuivert wijze, zult u een Azure opslagrekening moeten vastmaken, **Uitgezochte opslagrekening** klikken en dan de opslagrekening selecteren die u vroeger creeerde, die `--aepUserLdap--aepstorage` wordt genoemd.
+De eerste keer u in werking stelt u zuivert wijze, zult u een Azure opslagrekening moeten vastmaken, **Uitgezochte opslagrekening** klikken.
+
+![ 3-17-vsc-looppas-project.png ](./images/vsc14a.png)
+
+en selecteer vervolgens de opslagaccount die u eerder hebt gemaakt, met de naam `--aepUserLdap--aepstorage` .
+
+![ 3-17-vsc-looppas-project.png ](./images/vsc14b.png)
 
 Uw project is nu in gebruik en maakt een lijst van voor gebeurtenissen in de Hub van de Gebeurtenis. In de volgende oefening zult u gedrag op de CitiSignal demo website aantonen die u voor publiek zal kwalificeren. Dientengevolge zult u een nuttige lading van de publiekskwalificatie in de terminal van uw de trekkerfunctie van de Hub van de Gebeurtenis ontvangen.
 
