@@ -4,9 +4,9 @@ description: In deze module, zult u de eerder gevormde datasets, schema's en het
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ In deze oefening, zult u uw bestaande DataStream bijwerken om gegevens te maken 
 
 In deze oefening, zult u een douane webhaak tot stand brengen en vormen en zult u beginnen gegevens door:sturen die door Web SDK aan die douanewebhaak worden verzameld.
 
-[2.5.4 Een Google Cloud-functie maken en configureren](./ex4.md)
+[2.5.4 Voorwaartse gebeurtenissen naar GCP Pub/Sub](./ex4.md)
 
 In deze oefening, zult u een Functie van de Wolk van Google creëren en vormen en zult u beginnen gegevens door:sturen die door Web SDK aan Google worden verzameld.
 
-[2.5.5 Toekomstige ontwikkelingen in het ecosysteem van AWS](./ex5.md)
+[2.5.5 Gebeurtenissen doorsturen naar AWS Kinesis en AWS S3](./ex5.md)
 
-In deze oefening, zult u uw milieu van AWS vormen gebruikend AWS API Gateway, AWS Kinesis, AWS Firehose en AWS S3 waarna u begint door:sturen gebeurtenisgegevens die door Web SDK worden verzameld.
+In deze oefening, zult u uw milieu van AWS vormen gebruikend AWS IAM, AWS Kinesis, AWS Firehose en AWS S3 waarna u begint door:sturen gebeurtenisgegevens die door Web SDK worden verzameld.
 
 [Samenvatting en voordelen](./summary.md)
 

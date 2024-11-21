@@ -4,7 +4,7 @@ description: Een aangepaste webhaak maken en configureren
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 0%
@@ -149,7 +149,7 @@ Als u onbewerkte lading selecteert, ga [ https://jsonformatter.org/json-pretty-p
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook2.png)
 
-Schakelaar uw mening aan uw douane webhaak [ https://webhook.site/ ](https://webhook.site/) die u in één van de vorige stappen gebruikte. U zou nu een mening gelijkend op dit moeten hebben, met netwerkverzoeken die in het linkermenu worden getoond. U ziet de **xdm** nuttige lading die uit het netwerkverzoek filterde dat hierboven werd getoond.
+Schakelaar uw mening aan uw douane webhaak [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin) die u in één van de vorige stappen gebruikte. U zou nu een mening gelijkend op dit moeten hebben, met netwerkverzoeken die in het linkermenu worden getoond. U ziet de **xdm** nuttige lading die uit het netwerkverzoek filterde dat hierboven werd getoond.
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Als u nu door de website navigeert, zult u extra netwerkverzoeken zien die op de
 
 ![ de Opstelling van de Inzameling van Gegevens van Adobe Experience Platform ](./images/hook5.png)
 
-U hebt nu de server-side Gebeurtenis gevormd door:sturen van de nuttige ladingen van SDK/XDM van het Web aan een externe douane webhaak. In de volgende oefeningen, zult u een gelijkaardige benadering vormen, en u zult die zelfde gegevens naar de milieu&#39;s van Google en van AWS verzenden.
+U hebt nu de server-side Gebeurtenis gevormd door:sturen van de nuttige ladingen van SDK/XDM van het Web aan een externe douane webhaak. In de volgende oefeningen, zult u een gelijkaardige benadering vormen, en u zult die zelfde gegevens naar Google Cloud Platform en AWS verzenden.
 
-Volgende Stap: [ 2.5.4 creeer en vorm een Functie van de Wolk van Google ](./ex4.md)
+Volgende Stap: [ 2.5.4 door:sturen gebeurtenissen aan GCP Pub/Sub ](./ex4.md)
 
 [Ga terug naar Module 2.5](./aep-data-collection-ssf.md)
 
