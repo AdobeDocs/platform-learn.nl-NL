@@ -4,9 +4,9 @@ description: Toekomstige gebeurtenissen naar het ecosysteem van AWS
 kt: 5342
 doc-type: tutorial
 exl-id: 87c2c85d-f624-4972-a9c6-32ddf8a39570
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Platform ondersteunt verschillende Amazon-services als bestemmi
 Kinesis en S3 zijn zowel [ de uitvoerbestemmingen van het profielaandeel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) en kunnen als deel van Adobe Experience Platform Real-Time CDP worden gebruikt.
 U kunt hoogwaardige segmentgebeurtenissen en de bijbehorende profielkenmerken eenvoudig in uw eigen systemen invoeren.
 
-In deze oefening leert u hoe u uw eigen Amazon Kinesis-stream instelt om gebeurtenisgegevens te streamen die van het Adobe Experience Platform Edge-ecosysteem naar een cloudopslagbestemming, zoals Amazon S3, komen. Dit is handig voor het geval u ervaringsgebeurtenissen wilt verzamelen van web- en mobiele eigenschappen en deze in uw database wilt plaatsen voor analyse en operationele rapportage. Datalakes nemen over het algemeen gegevens op een partijwijze met grote dagelijkse dossierinvoer op, zij stellen openbaar http eindpunt niet bloot dat samen met gebeurtenis kon worden gebruikt door:sturen.
+In deze oefening, zult u leren hoe te om uw eigen stroom van Amazon Kinesis te plaatsen om gebeurtenisgegevens te stromen die van het ecosysteem van Adobe Experience Platform Edge aan een bestemming van de wolkenopslag, zoals Amazon S3 komen. Dit is handig voor het geval u ervaringsgebeurtenissen wilt verzamelen van web- en mobiele eigenschappen en deze in uw database wilt plaatsen voor analyse en operationele rapportage. Datalakes nemen over het algemeen gegevens op een partijwijze met grote dagelijkse dossierinvoer op, zij stellen openbaar http eindpunt niet bloot dat samen met gebeurtenis kon worden gebruikt door:sturen.
 
 Als u de bovenstaande gebruiksgevallen ondersteunt, moeten gestreamde gegevens worden gebufferd of in een wachtrij worden geplaatst voordat ze naar een bestand worden geschreven. Er moet op worden gelet dat het bestand niet wordt geopend voor schrijftoegang in meerdere processen. Het delegeren van deze taak aan toegewijde systemen is ideaal om mooi te schalen en tegelijk een hoog niveau van dienstverlening te garanderen, daar komt Kinesis bij.
 
@@ -348,3 +348,4 @@ Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
 [Ga terug naar Module 2.5](./aep-data-collection-ssf.md)
 
 [Terug naar alle modules](./../../../overview.md)
+
