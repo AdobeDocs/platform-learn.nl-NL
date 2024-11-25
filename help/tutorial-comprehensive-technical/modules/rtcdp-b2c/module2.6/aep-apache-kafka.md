@@ -4,16 +4,14 @@ description: In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt,
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # 2.6 Gegevens streamen van Apache Kafka naar Adobe Experience Platform
-
-**Auteurs: [ Vivek Tiwari ](https://www.linkedin.com/in/vivek-tiwari-25092656/), [ Nipun Nair ](https://www.linkedin.com/in/nipunnair/), [ Van Geluwe Wouter ](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen, producenten en consumenten definieert en gegevens stroomt naar Adobe Experience Platform met behulp van de Adobe Experience Platform Sink Connector via Kafka Connect.
 
@@ -27,7 +25,7 @@ In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen,
 
 ## Vereisten
 
-- Java JDK11 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [ https://www.oracle.com/java/technologies/javase-jdk11-downloads.html ](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [ https://www.oracle.com/java/technologies/javase-jdk11-downloads.html ](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Toegang tot Adobe Experience Platform
 
 >[!NOTE]

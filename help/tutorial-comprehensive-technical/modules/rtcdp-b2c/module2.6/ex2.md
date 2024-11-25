@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2 Uw Kafka-cluster installeren en configureren
 
-## 2.6.2.1 Apache Kafka downloaden
+## Apache Kafka downloaden
 
-Ga naar [ https://kafka.apache.org/downloads ](https://kafka.apache.org/downloads) en download de recentste vrijgegeven versie. Selecteer de recentste binaire versie, in dit geval **Scala 2.13**.
+Ga naar [ https://kafka.apache.org/downloads ](https://kafka.apache.org/downloads) en download de recentste vrijgegeven versie. Selecteer de recentste binaire versie, in dit geval **3.9.0**. Het downloaden wordt gestart.
 
 ![ Kafka ](./images/kafka1.png)
-
-Je wordt dan naar een spiegelsite gebracht. Klik op de voorgestelde koppeling om Kafka te downloaden.
-
-![ Kafka ](./images/kafka2.png)
 
 Creeer een omslag op uw Desktop genoemd **Kafka_AEP** en plaats het gedownloade dossier in die folder.
 
@@ -35,7 +31,7 @@ Open a **Eind** venster door uw omslag met de rechtermuisknop aan te klikken en 
 
 Voer dit bevel in uw Eind venster in werking om het gedownloade dossier te decomprimeren:
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ En in die folder, zult u deze subdirecteuren zien:
 
 Ga terug naar uw Eind venster. Voer de volgende opdracht in:
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ Voer vervolgens de opdracht `bin/kafka-topics.sh` in.
 
 ![ Kafka ](./images/kafka10a.png)
 
-U zou dan deze reactie moeten zien. Dit betekent dat Kafka correct is geïnstalleerd en dat Java prima werkt. (Herinnering: dit werkt alleen als Java 8 JDK of Java 11 JDK is geïnstalleerd. U kunt zien welke Java-versie u hebt geïnstalleerd met de opdracht `java -version` .)
+U zou dan deze reactie moeten zien. Dit betekent dat Kafka correct is geïnstalleerd en dat Java prima werkt. (Herinnering: dit werkt alleen als Java 23 JDK is geïnstalleerd!. U kunt zien welke Java-versie u hebt geïnstalleerd met de opdracht `java -version` .)
 
 ![ Kafka ](./images/kafka10.png)
 
-## 2.6.2.2 Kafka starten
+## Start Kafka
 
 Om Kafka te starten, moet je Kafka Zookeeper en Kafka starten, in deze volgorde.
 
-Open a **Eind** venster door uw omslag **kafka_2.13-3.1.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
+Open a **Eind** venster door uw omslag **kafka_2.13-3.9.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
 
 ![ Kafka ](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ U zult dan dit zien:
 
 Houd dit venster open terwijl u deze oefeningen doorloopt!
 
-Open een ander, nieuw **Eind** venster door uw omslag **kafka_2.13-3.1.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
+Open een ander, nieuw **Eind** venster door uw omslag **kafka_2.13-3.9.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
 
 ![ Kafka ](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ U zult dan dit zien:
 
 Houd dit venster open terwijl u deze oefeningen doorloopt!
 
-## 2.6.2.3 Een Kafka-onderwerp maken
+## Een Kafka-onderwerp maken
 
-Open a **Eind** venster door uw omslag **kafka_2.13-3.1.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
+Open a **Eind** venster door uw omslag **kafka_2.13-3.9.0** met de rechtermuisknop aan te klikken en **Nieuwe Eind bij Omslag** te klikken.
 
 ![ Kafka ](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ Ga dit bevel in om een nieuw onderwerp Kafka met de naam **te creëren ontvankel
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![ Kafka ](./images/kafka16a.png)
-
-Je ziet dan een vergelijkbare bevestiging:
+Je ziet dan een bevestiging:
 
 ![ Kafka ](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ Ga dit bevel in om een nieuw onderwerp Kafka met de naam **te creëren aep**. Di
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![ Kafka ](./images/kafka16.png)
-
 Je ziet dan een vergelijkbare bevestiging:
 
 ![ Kafka ](./images/kafka17.png)
 
-## 2.6.2.4 Productieevenementen
+## Gebeurtenissen maken
 
 Ga terug naar het Eind venster waarin u uw eerste Kafka onderwerp creeerde en het volgende bevel ingaat:
 
@@ -163,7 +155,7 @@ Klik op het toetsenbord op `Control` en `C` tegelijk om de producent te sluiten.
 
 ![ Kafka ](./images/kafka22.png)
 
-## 2.6.2.4 Consumptie
+## Gebeurtenissen van Consume
 
 In het zelfde Eindvenster dat u gebruikte om gebeurtenissen te veroorzaken, ga het volgende bevel in:
 

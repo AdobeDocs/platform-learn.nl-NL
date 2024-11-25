@@ -4,9 +4,9 @@ description: Het HTTP API-eindpunt in Adobe Experience Platform configureren
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In het linkermenu, ga naar **Bronnen** en rol neer in de **Broncatalogus** tot u **HTTP API** ziet. Klik **toevoegen Gegevens**.
+In het linkermenu, ga naar **Bronnen** en rol neer in de **Broncatalogus** tot u **HTTP API** ziet. Klik **Opstelling**.
 
 ![ Ingestie van Gegevens ](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ U zult dan dit zien, klik **daarna**.
 
 Selecteer **Bestaande dataset**, open het dropdown menu. Onderzoek en selecteer het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor het Centrum van de Vraag (Globale v1.1)**.
 
+Klik **daarna**.
+
 ![ Ingestie van Gegevens ](./images/kaep4.png)
-
-Klik **daarna**.
-
-![ Ingestie van Gegevens ](./images/kaep6.png)
-
-Klik **daarna**.
-
-![ Ingestie van Gegevens ](./images/kaep7.png)
 
 Klik **Afwerking**.
 
@@ -55,11 +49,11 @@ Klik **Afwerking**.
 
 Vervolgens ziet u een overzicht van de HTTP API Source Connector die u zojuist hebt gemaakt.
 
-![ Ingestie van Gegevens ](./images/kaep9.png)
-
 U zult het **Streaming eindpunt** URL moeten kopiëren, die als hieronder kijkt, aangezien u het in de volgende oefening zult nodig hebben.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![ Ingestie van Gegevens ](./images/kaep9.png)
 
 U hebt deze oefening voltooid.
 

@@ -4,16 +4,16 @@ description: Werk uw DataStream bij om gegevens ter beschikking te stellen van u
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # 2.5.2 Werk uw DataStream bij om gegevens ter beschikking te stellen van uw Adobe Experience Platform-eigenschap van de Server van de Gegevensverzameling
 
-## 2.5.2.1 De gegevensstroom bijwerken
+## Uw DataStream bijwerken
 
 In [ Aan de slag ](./../../gettingstarted/gettingstarted/ex2.md), creeerde u uw eigen **[!UICONTROL Datastream]**. Vervolgens hebt u de naam `--aepUserLdap-- - Demo System Datastream` gebruikt.
 
