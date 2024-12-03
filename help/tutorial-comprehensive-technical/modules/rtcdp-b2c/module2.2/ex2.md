@@ -3,9 +3,10 @@ title: 'Intelligente services - Klantenservice: AI maakt een nieuw exemplaar (co
 description: Klant-AI - Een nieuwe instantie maken (configureren)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 067f3fa2-5c1e-4861-b26a-4315cad73a85
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 De AI van de klant werkt door bestaande gegevens van de Gebeurtenis van de Consumentenervaring te analyseren om karn of de scores van de omzetneigheidswaarde te voorspellen. Door een nieuwe AI-instantie van de klant te maken, kunnen marketeers doelstellingen en maatregelen definiëren.
 
-## 2.2.2.1 Een nieuwe AI-instantie van een klant instellen
+## Nieuwe Customer AI-instantie instellen
 
 In Adobe Experience Platform, klik **Diensten** in het linkermenu. De **browser van de Diensten** verschijnt en toont alle beschikbare diensten bij uw beschikking. In de kaart voor Klant AI, klik **Open**.
 
@@ -28,49 +29,53 @@ Dan zie je dit.
 
 ![ creeer nieuwe instantie ](./images/custai1.png)
 
+
 Voer de vereiste gegevens voor de AI-instantie van de Klant in:
 
 - Naam: gebruik `--aepUserLdap-- Product Purchase Propensity`
 - Beschrijving: gebruik: **voorspelt de waarschijnlijkheid voor klanten om een product** te kopen
 - Type van Eigenschap: uitgezochte **Omzetting**
 
+Klik **sparen en ga** verder.
+
 ![ pagina 1 van de Opstelling ](./images/setuppage1.png)
 
-Klik **daarna**.
-
-![ pagina 1 van de Opstelling ](./images/next.png)
-
-Dan zie je dit. Selecteer de dataset u in de vorige oefening creeerde die `--demoProfileLdap - Demo System - Customer Experience Event Dataset` wordt genoemd. Klik **daarna**.
+Dan zie je dit. Selecteer de dataset u in de vorige oefening creeerde die `--demoProfileLdap - Demo System - Customer Experience Event Dataset` wordt genoemd. Klik **toevoegen**.
 
 ![ pagina 1 van de Opstelling ](./images/custai2.png)
 
-Selecteer **zal voorkomen** en het gebied **commerce.purchase.value** als doelvariabele bepalen.
+Dan zie je dit. u moet het **gebied van de Identiteit** bepalen. Klik **niets**.
+
+![ pagina 1 van de Opstelling ](./images/custai2a.png)
+
+In popup, uitgezochte **Identiteitskaart (identityMap)** en selecteer dan het namespace **Systeem van de Demo - CRMID (crmId)**. Daarna, klik **sparen**.
+
+![ pagina 1 van de Opstelling ](./images/custai2b.png)
+
+Klik **sparen en ga** verder.
+
+![ pagina 1 van de Opstelling ](./images/custai2c.png)
+
+Selecteer **zal voorkomen** in uw specifieke dataset, en bepaalt het gebied **commerce.purchase.value** als doelvariabele.
 
 ![ die het Doel van CAI bepalen ](./images/caidefinegoal.png)
 
-Klik **daarna**.
-
-![ pagina 1 van de Opstelling ](./images/next.png)
-
-Daarna, plaats uw programma om **wekelijks** in werking te stellen en de tijd zo dicht mogelijk aan uw huidige tijd te plaatsen. Zorg ervoor dat de knevel **scores voor Profiel** toelaat wordt toegelaten.
+Daarna, plaats uw programma om **wekelijks** in werking te stellen en de tijd zo dicht mogelijk aan uw huidige tijd te plaatsen. Zorg ervoor dat de knevel **scores voor Profiel** toelaat wordt toegelaten. Klik **sparen en ga** verder.
 
 ![ bepalen CAI vooruit ](./images/caiadvancepage.png)
 
-Klik **Afwerking**.
-
-![ pagina 1 van de Opstelling ](./images/finish.png)
-
-Dan zie je deze popup. Klik **OK**.
-
-![ pagina 1 van de Opstelling ](./images/finish1.png)
-
-Nadat u het exemplaar vormt, kunt u het in de de instantielijst van de KlantAI zien en ook voorproef de samenvatting van de opstelling en uitvoeringsdetails door op de de instantielijst van de KlantAI te klikken. In het deelvenster Samenvatting worden ook foutgegevens weergegeven voor het geval er fouten zijn gevonden.
+Nadat u het exemplaar vormt, kunt u het in de de dienstlijst van AI van de Klant zien en u kunt de samenvatting van de opstelling en uitvoeringsdetails ook voorproef door op de de instantielijst van de KlantAI te klikken. In het deelvenster Samenvatting worden ook foutgegevens weergegeven voor het geval er fouten zijn gevonden.
 
 ![ overzicht van de de opstellingsopstelling van de Instantie ](./images/caiinstancesummary.png)
 
 >[!NOTE]
 >
 >U kunt om het even welke definitie of attribuut wijzigen zolang de status van uw instantie van de Klant AI of **wachtende opleiding** of **Fout** is
+
+Als je model eenmaal is uitgevoerd, zie je dit.
+
+![ overzicht van de de opstellingsopstelling van de Instantie ](./images/caiinstancesummary1.png)
+
 
 Volgende Stap: [ 2.2.3 Klant AI - het Scoren Dashboard en de Segmentatie (Voorkeur &amp; neem Actie) ](./ex3.md)
 

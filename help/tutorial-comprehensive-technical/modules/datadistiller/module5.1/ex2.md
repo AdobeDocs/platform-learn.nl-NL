@@ -1,177 +1,112 @@
 ---
-title: De Dienst van de vraag - Gebruikend de Dienst van de Vraag
-description: De Dienst van de vraag - Gebruikend de Dienst van de Vraag
+title: Query-service - Aan de slag
+description: Query-service - Aan de slag
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
-# 5.1.2 Het gebruiken van de Dienst van de Vraag
+# 5.1.2 Aan de slag
 
-## Doelstelling
+## De gebruikersinterface van Adobe Experience Platform leren kennen
 
-- Gegevensbestanden zoeken en verkennen
-- Leer hoe te om de voorwerpen en de attributen van de Modellen van Gegevens van de Ervaring in uw vragen te richten
+Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-## Context
+![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
 
-In dit zult u leren hoe te om PSQL te gebruiken om informatie over de beschikbare datasets terug te winnen, hoe te om vragen voor het Model van Gegevens van de Ervaring (XDM) te schrijven, en uw eerste eenvoudige rapporteringsvragen te schrijven gebruikend de Dienst van de Vraag en de Datasets van het Signaal van Citi.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-## 5.1.2.1 Basisquery&#39;s
+![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In dit zult u over de methodes leren om informatie over de beschikbare datasets terug te winnen en hoe te om gegevens met een vraag van een dataset behoorlijk terug te winnen XDM.
 
-Alle datasets die wij via Adobe Experience Platform in het begin van 1 hebben onderzocht, zijn ook beschikbaar voor toegang via een SQL interface als lijsten. Om van die lijsten een lijst te maken kunt u **gebruiken toont lijsten;** bevel.
+## Gegevens op het platform verkennen
 
-Uitvoeren **toont lijsten;** in uw **bevel-lijn PSQL interface**. (vergeet niet uw opdracht te beëindigen met een puntkomma).
+Het leveren van gegevens van verschillende kanalen is een zware taak voor elk merk. In deze exercitie werken Citi Signal-klanten samen met Citi Signal op haar website, op haar mobiele app. De aankoopgegevens worden verzameld door het Point of Sale-systeem van Citi Signal en ze beschikken over CRM- en Loyalty-gegevens. Citi Signal gebruikt Adobe Analytics en Adobe Launch om gegevens vast te leggen op zijn website, mobiele app en POS-systeem. Deze gegevens stromen dus al naar Adobe Experience Platform. Laten we beginnen met het verkennen van alle gegevens voor Citi Signal die al in Adobe Experience Platform bestaan.
 
-Kopieer het bevel **tonen lijsten;** en kleef het bij de herinnering:
+In het linkermenu, ga naar **Datasets**.
 
-![ bevel-herinnering-show-tables.png ](./images/command-prompt-show-tables.png)
+![ emea-website-interactie-dataset.png ](./images/emea-website-interaction-dataset.png)
 
-Het volgende resultaat wordt weergegeven:
+Citi Signal streamt gegevens naar Adobe Experience Platform en deze gegevens zijn beschikbaar in de gegevensset `Demo System - Event Dataset for Website (Global v1.1)` . Zoeken naar `Demo System - Event Dataset for Website` .
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![ emea-callcenter-interaction-dataset.png ](./images/emea-website-interaction-dataset1.png)
 
-Druk op de dubbelepunten op de spatiebalk om de volgende pagina van de resultaatset te zien of voer `q` in om terug te keren naar de opdrachtprompt.
+De Interactie-gegevens van Callcenter van Citi Signal worden vastgelegd in de gegevensset `Demo System - Event Dataset for Call Center (Global v1.1)` . Zoek naar `Demo System - Event Dataset for Call Center` gegevens in onderzoeksdoos. Klik op de naam van de gegevensset om deze te openen.
 
-Elke dataset in Platform heeft zijn overeenkomstige lijst van de Dienst van de Vraag. U kunt de lijst van een dataset via de Datasets ui vinden:
+![ emea-callcenter-interaction-dataset.png ](./images/emea-callcenter-interaction-dataset.png)
 
-![ ui-dataset-tablename.png ](./images/ui-dataset-tablename.png)
+Na het klikken van de dataset, zult u een overzicht van de datasetactiviteit zoals ingebed en ontbroken partijen krijgen.
 
-De tabel `demo_system_event_dataset_for_website_global_v1_1` is de tabel Query Service die overeenkomt met de gegevensset `Demo System - Event Schema for Website (Global v1.1)` .
+![ voorproef-interactie-dataset.png ](./images/preview-interaction-dataset.png)
 
-Om sommige informatie over te vragen waar een product werd bekeken, zullen wij de **geo** informatie selecteren.
+Klik op **Dataset van de Voorproef** om een steekproef van de gegevens te zien die in `Demo System - Event Dataset for Call Center (Global v1.1)` dataset worden opgeslagen. Het linkerpaneel toont schemastructuur voor deze dataset.
 
-Kopieer de verklaring hieronder en kleef het bij de herinnering in uw **bevel-lijn PSQL interface** en de slag gaat binnen:
+![ onderzoek-interactie-dataset.png ](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Klik de **Dichte** knoop om het **venster van de Dataset van de Voorproef** te sluiten.
 
-In uw vraagresultaat, zult u opmerken dat de kolommen in het Model van de Gegevens van de Ervaring (XDM) complexe types en niet alleen scalaire types kunnen zijn. In de vraag hierboven zouden wij geografische plaatsen willen identificeren waar a **commerce.productViews** voorkwam. Om a **commerce.productViews** te identificeren moeten wij door het model navigeren XDM gebruikend **.** (punt) notatie.
+## Inleiding aan de Dienst van de Vraag
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+De Dienst van de Vraag van Adobe Experience Platform wordt betreden door op **Vragen** in het linkermenu te klikken.
 
-U ziet dat het resultaat een vlak object is in plaats van een enkele waarde? Het {**voorwerp 0} placecontext.geo bevat vier attributen: schema, land en stad.** Wanneer een object wordt gedeclareerd als een kolom, retourneert dit het gehele object als een tekenreeks. Het schema XDM kan complexer zijn dan wat u vertrouwd met bent maar het is zeer krachtig en is ontworpen om vele oplossingen, kanalen, en gebruiksgevallen te steunen.
+![ select-questions.png ](./images/select-queries.png)
 
-Gebruik **om de afzonderlijke eigenschappen van een object te selecteren.** (punt) notatie.
+Door naar **Logboek** te gaan zult u de pagina van de Lijst van de Vraag zien, die u een lijst van alle vragen verstrekt die in deze organisatie, met het recentste bij de bovenkant in werking hebben gesteld.
 
-Kopieer de verklaring hieronder en kleef het bij de herinnering in uw **bevel-lijn PSQL interface**:
+![ vraag-list.png ](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Klik op een SQL-query in de lijst en bekijk de details in de rechtertrack.
 
-Het resultaat van de bovenstaande query moet er als volgt uitzien.
-Het resultaat is nu een set eenvoudige waarden:
+![ klik-sql-query.png ](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+U kunt door het venster bladeren om de volledige query weer te geven, of u kunt op het hieronder gemarkeerde pictogram klikken om de volledige query naar uw laptop te kopiëren. U hoeft de query momenteel niet te kopiëren.
 
-Maak u geen zorgen, er is een gemakkelijke manier om de weg naar een specifiek bezit te verkrijgen. In het volgende gedeelte leert u hoe u dit kunt doen.
+![ klik-exemplaar-query.png ](./images/click-copy-query.png)
 
-U zult een vraag moeten uitgeven, zodat openen eerst een redacteur.
+U kunt niet enkel de vragen zien die zijn uitgevoerd, laat dit Gebruikersinterface u nieuwe datasets van vragen tot stand brengen. Deze gegevenssets kunnen worden gekoppeld aan het Adobe Experience Platform-klantprofiel in realtime of kunnen worden gebruikt als invoer voor Adobe Experience Platform Data Science Workspace.
 
-Op Windows
+## Connect PSQL Client to Query Service
 
-Klik het **pictogram van het 0} onderzoek {in de vensterswerkbalk, type** notepad **in het** onderzoek **gebied, klik het** notebookpad **resultaat:**
+De Dienst van de vraag steunt cliënten met een bestuurder voor PostSQL. In dit zullen wij PSQL, een bevel-lijn interface, en Power BI of Tableau gebruiken. Laten we verbinding maken met PSQL.
 
-![ windows-start-notepad.png ](./images/windows-start-notepad.png)
+Klik op **Geloofsbrieven**.
 
-Op Mac
+![ vragen-selecteren-configuration.png ](./images/queries-select-configuration.png)
 
-Installeer [ Haakjes ](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) of gebruik een andere Redacteur van de Tekst van keus als u het geïnstalleerd niet hebt en de instructies volgt. Na installatie, onderzoek naar **Haakjes** via het spotlightonderzoek van Mac en open het.
+U ziet hieronder het scherm. Het scherm van de Configuratie verstrekt serverinformatie en geloofsbrieven voor het voor authentiek verklaren aan de Dienst van de Vraag. Momenteel, zullen wij op de rechterkant van het scherm concentreren dat een verbindingsbevel voor PSQL bevat. Klik op de knop Kopiëren om de opdracht naar het klembord te kopiëren.
 
-Kopieer de volgende instructie naar het toetsenblok of de vierkante haakjes:
+![ copy-psql-connection.png ](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Voor Vensters: open de bevellijn door de venstersleutel te raken en cmd te typen en dan op het Snelle resultaat van het Bevel te klikken.
 
-Ga terug naar uw Adobe Experience Platform UI (zou open in uw browser moeten zijn) of aan [ https://platform.adobe.com ](https://platform.adobe.com) navigeren.
+![ open-bevel-prompt.png ](./images/open-command-prompt.png)
 
-Selecteer **Schema&#39;s**, ga `Demo System - Event Schema for Website (Global v1.1)` op het **onderzoek** gebied in en selecteer `Demo System - Event Schema for Website (Global v1.1) Schema` van de lijst.
+Voor macOS: open terminal.app via spotlight-zoekopdracht:
 
-![ browse-schema.png ](./images/browse-schema.png)
+![ open-terminal-osx.png ](./images/open-terminal-osx.png)
 
-Onderzoek het model XDM voor **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**, door op een voorwerp te klikken. Breid de boom voor **placecontext**, **geo** en **schema** uit. Wanneer u de daadwerkelijke attributen **lengtegraad** selecteert, zult u de volledige weg in de benadrukte rode doos zien. Als u het pad van het kenmerk wilt kopiëren, klikt u op het pictogram van het kopieerpad.
+Plak het verbindingsbevel dat u van de Dienst UI van de Vraag hebt gekopieerd en druk binnengaan in het venster van de bevelherinnering:
 
-![ onderzoek-schema-voor-weg.png ](./images/explore-schema-for-path.png)
+Windows:
 
-De schakelaar aan uw notitieblok/steunen en verwijdert **your_attribute_path_here** uit de eerste lijn. Plaats uw curseur na **uitgezocht** op de eerste lijn en deeg (CTRL-V).
+![ bevel-herinnering-connected.png ](./images/command-prompt-connected.png)
 
-Kopieer de gewijzigde verklaring van nota&#39;s/steunen en kleef het bij de herinnering in uw **PSQL bevel-lijn interface** en slag gaat binnen.
+MacOS:
 
-Het resultaat moet er als volgt uitzien:
+![ bevel-herinnering-deeg-osx.png ](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+U bent nu verbonden met de Dienst van de Vraag gebruikend PSQL.
 
-Volgende Stap: [ 5.1.3 Vragen, vragen, vragen... en koordanalyse ](./ex3.md)
+In de volgende oefeningen zal er behoorlijk wat interactie met dit venster zijn. Wij zullen naar het als uw **PSQL bevel-lijn interface** verwijzen.
+
+Nu bent u klaar om vragen te beginnen verzenden.
+
+Volgende Stap: [ 5.1.3 Gebruikend de Dienst van de Vraag ](./ex3.md)
 
 [Ga terug naar module 5.1](./query-service.md)
 

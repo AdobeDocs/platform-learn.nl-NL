@@ -4,9 +4,9 @@ description: AI van de klant - Gegevensvoorbereiding (samenvatting)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -53,33 +53,20 @@ Dan zie je dit. Klik op **+ Toevoegen** onder Veldgroepen.
 Onderzoek en selecteer de volgende **Groepen van het Gebied** om aan dit Schema toe te voegen:
 
 - Consumentenervaringsgebeurtenis
-- Gegevens van eindgebruiker
+
+![ Nieuw CEE schema ](./images/cee1.png)
+
+- IdentityMap
 
 Klik **toevoegen de Groepen van het Gebied**.
 
-![ Nieuw CEE schema ](./images/cee.png)
+![ Nieuw CEE schema ](./images/cee2.png)
 
-Dan zie je dit. Klik de Details van de Gebruiker van het Eind van de Groep van het Gebied ****.
-
-![ creeer nieuw schema ](./images/eui1.png)
-
-Ga aan het gebied **endUserIDs._experience.emailid.id**.
-
-![ creeer nieuw schema ](./images/eui2.png)
-
-In het juiste menu voor het gebied **endUserIDs._experience.emailid.id**, scrol neer en controleer checkbox voor **Identiteit**, controleer checkbox voor **Primaire Identiteit** en selecteer **Identiteit namespace** van **E-mail**. Klik **toepassen**.
-
-![ creeer nieuw schema ](./images/eui3.png)
-
-Ga aan het gebied **endUserIDs._experience.mcid.id**. Controleer checkbox voor **Identiteit** en selecteer **Identiteit namespace** van **ECID**. Klik **toepassen**.
-
-![ creeer nieuw schema ](./images/eui4.png)
-
-Dan heb je dit. Selecteer vervolgens de naam van het schema. U zou uw schema voor **Profiel** nu moeten toelaten, door de **knevel van het Profiel** te klikken.
+Dan zie je dit. Selecteer vervolgens de naam van het schema. U zou uw schema voor **Profiel** nu moeten toelaten, door de **knevel van het Profiel** te klikken.
 
 ![ creeer nieuw schema ](./images/xdmee3.png)
 
-Dan zie je dit. Klik **toelaten**.
+Dan zie je dit. Controle checkbox voor **Gegevens voor dit schema zal een primaire identiteit op het identityMap gebied bevatten.**. Klik **toelaten**.
 
 ![ creeer nieuw schema ](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ U bent nu klaar om gegevens van de Gebeurtenis van de Ervaring van de Consumente
 
 ## Testgegevens van Gebeurtenis downloaden
 
-Zodra het **Schema** en **Dataset** worden gevormd, bent u nu klaar om de gegevens van de Gebeurtenis van de Ervaring in te voeren. Aangezien AI van de Klant gegevens over **2 kwartalen minstens** vereist, zult u extern voorbereide gegevens moeten opnemen.
+Zodra het **Schema** en **Dataset** worden gevormd, bent u nu klaar om de gegevens van de Gebeurtenis van de Ervaring in te voeren. Aangezien voor AI specifieke gegevensvereisten zijn vereist, moet u extern voorbereide gegevens invoeren.
 
-De gegevens die voor de ervaringsgebeurtenissen worden voorbereid moeten aan de vereisten en het schema van de [ Mixin van de Gebeurtenis XDM van de Ervaring van de Consumenten ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) voldoen.
+De gegevens die voor de ervaringsgebeurtenissen in deze oefening worden voorbereid moeten aan de vereisten en het schema van de [ Groep van het Gebied van de Gebeurtenis XDM van de Consumentenervaring ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) voldoen.
 
-Gelieve te downloaden het dossier dat steekproefgegevens van deze plaats bevat: [ https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Klik de **knoop van de Download**.
+Gelieve te downloaden het zip dossier met demo gegevens van deze plaats: [ https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![ Dataset ](./images/dsn1.png)
-
-Alternatief, als u tot de bovengenoemde verbinding niet kunt toegang hebben, kunt u het dossier ook van deze plaats downloaden: [ https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip ](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-U hebt nu een dossier genoemd **retail-v1-dec2020-xl.json.zip** gedownload. Plaats het dossier op de Desktop van uw computer en unzip het, waarna zult u een dossier genoemd **retail-v1.json** zien. U hebt dit bestand nodig in de volgende oefening.
+U hebt nu een dossier genoemd **CUSTOM-CAI-EVENTS-WEB.zip** gedownload. Plaats het dossier op de Desktop van uw computer en unzip het, waarna zult u een omslag genoemd **CUSTOM-CAI-EVENTS-WEB** zien.
 
 ![ Dataset ](./images/ingest.png)
+
+In die omslag, zult u veelvoudige geordende JSON dossiers vinden, die allen in de volgende oefening moeten worden opgenomen.
+
+![ Dataset ](./images/ingest1a.png)
 
 ## Testgegevens van Ingest Experience Event
 
@@ -145,9 +132,11 @@ In uw dataset, kiest de klik **dossiers** om gegevens toe te voegen.
 
 ![ Dataset ](./images/ingest2.png)
 
-In popup, selecteer het dossier **retail-v1.json** en klik **Open**.
+In popup, selecteer de dossiers **WEBSITE-EE-1.json** tot **WEBSITE-EE-5.json** en klik **Open**.
 
 ![ Dataset ](./images/ingest3.png)
+
+Herhaal dit insluitingsproces voor de dossiers **WEBSITE-EE-6.json** en **WEBSITE-EE-7.json**.
 
 U zult dan de gegevens zien die worden ingevoerd, en een nieuwe partij wordt gecreeerd in de **Lading** staat. Navigeer niet van deze pagina weg tot het dossier wordt geupload.
 
@@ -159,11 +148,9 @@ Zodra het dossier is geupload, zult u de verandering van de partijstatus van **h
 
 Het installeren en verwerken van de gegevens kan 10 tot 20 minuten duren.
 
-Zodra gegevensopname succesvol is, zal de partijstatus in **Succes** veranderen.
+Zodra gegevensopname succesvol is, zal de partijstatus van diverse uploads in **Succes** veranderen.
 
 ![ Dataset ](./images/ingest7.png)
-
-![ Dataset ](./images/ingest8.png)
 
 Volgende Stap: [ 2.2.2 Klant AI - creeer een Nieuwe Instantie (vorm) ](./ex2.md)
 

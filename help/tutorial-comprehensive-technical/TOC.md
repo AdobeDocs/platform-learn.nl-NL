@@ -5,9 +5,9 @@ user-guide-description: Een praktische zelfstudie waarin veel aspecten van Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
+source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '913'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 # Uitgebreide technische zelfstudie voor Adobe Experience Platform {#tutorial-comprehensive-technical}
 
 + [Overzicht van tutorial](/help/tutorial-comprehensive-technical/overview.md)
++ [Voltooiing](/help/tutorial-comprehensive-technical/completion.md)
 
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
@@ -27,7 +28,7 @@ ht-degree: 2%
       + [De mobiele app gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Gegevensverzameling {#datacollection}
-   + 1.1 Adobe Experience Platform-gegevensverzameling en de Web SDK-extensie {#module11}
+   + 1.1 Adobe Experience Platform Data Collection and Web SDK {#module11}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Adobe Experience Platform-gegevensverzameling](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Edge Network, gegevensstreams en gegevensverzameling op de server](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -37,7 +38,7 @@ ht-degree: 2%
       + [1.1.6 Adobe Target implementeren](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [1.1.7 XDM-schemavereisten in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 - Gegevensinname {#module12}
+   + 1.2 Gegevensinname {#module12}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 De website verkennen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -45,7 +46,7 @@ ht-degree: 2%
       + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5 Gegevenslandingszone](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 - Federated Audience Composition {#module13}
+   + 1.3 Federated Audience Composition {#module13}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1 Een Snowflake-account instellen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Schema&#39;s, gegevensmodel en koppelingen maken](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -137,7 +138,7 @@ ht-degree: 2%
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
-   + 4.1-Customer Journey Analytics: een dashboard maken met Analysis Workspace boven op Adobe Experience Platform {#module41}
+   + 4.1 Customer Journey Analytics: een dashboard maken met Analysis Workspace {#module41}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -157,16 +158,16 @@ ht-degree: 2%
 + 5 Data Distiller {#datadistiller}
    + 5.1 Query-service {#module51}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-      + [5.1.0 Vereisten](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-      + [5.1.1 Aan de slag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-      + [5.1.2 Het gebruiken van de Dienst van de Vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-      + [5.1.3 Vragen, query&#39;s, query&#39;s... en churn-analyse](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-      + [5.1.4 Genereer een dataset van een vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-      + [5.1.5 Query-service en -Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6 Query-service en Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-      + [5.1.7 API voor Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.1 Vereisten](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+      + [5.1.2 Aan de slag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+      + [5.1.3 Het gebruiken van de Dienst van de Vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+      + [5.1.4 Vragen, query&#39;s, query&#39;s... en churn-analyse](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+      + [5.1.5 Genereer een dataset van een vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+      + [5.1.6 Query-service en -Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.7 Query-service en Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.8 API voor Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [Instellen](/help/tutorial-comprehensive-technical/setup.md)
 
 

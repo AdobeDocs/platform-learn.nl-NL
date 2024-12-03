@@ -1,0 +1,256 @@
+---
+title: Instellen
+description: AEP-instantie instellen
+doc-type: multipage-overview
+hide: false
+source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+workflow-type: tm+mt
+source-wordcount: '1028'
+ht-degree: 0%
+
+---
+
+# Instellen
+
+>[!IMPORTANT]
+>
+>Deze pagina is alleen bedoeld voor systeembeheerdersrollen. U hebt toegangsrechten voor systeembeheerders nodig om de onderstaande stappen te kunnen volgen. Als u geen systeembeheerder op uw Adobe Experience Cloud-org bent, neemt u contact op met uw systeembeheerder en vraagt u om goedkeuring en hulp voordat u verdergaat met een van de onderstaande stappen.
+
+## Overzicht
+
+Als u al deze zelfstudies in handen wilt hebben, dient u de volgende Adobe Experience Cloud-toepassingen op te nemen in uw IMS-organisatie:
+
+- Adobe in realtime CDP
+- Adobe Experience Platform-gegevensverzameling
+- Adobe Journey Optimizer
+- Customer Journey Analytics
+- Data Distiller
+- Samenstelling van Federated-doelgroep
+
+Als een specifieke toepassingsservice niet is ingericht voor uw IMS-organisatie, kunt u die specifieke oefening niet in de praktijk uitvoeren.
+
+## Sandbox maken
+
+Als u de zelfstudie wilt doorlopen in uw eigen AEP-instantie, is het raadzaam eerst een nieuwe ontwikkelingssandbox in te stellen. Om een nieuwe zandbak tot stand te brengen, ga [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), ga naar Sandboxes en ga dan naar **doorbladeren**. Klik **creeer zandbak**.
+
+![ creeer zandbak ](./assets/images/sandbox1.png)
+
+Maak uw zandbak als volgt:
+
+- Type: **Ontwikkeling**
+- Naam: **aep-tutorial**
+- Titel: **AEP Leerprogramma**
+
+Klik **creëren**.
+
+![ creeer zandbak ](./assets/images/sandbox2.png)
+
+Uw sandbox wordt nu gemaakt. Na een paar minuten zie je dit.
+
+![ creeer zandbak ](./assets/images/sandbox3.png)
+
+## Machtigingen instellen
+
+Ga naar **Toestemmingen**, dan gaan **Rollen**.
+
+Klik om de specifieke **Rol** te openen die door de studenten zal worden gebruikt die door dit leerprogramma zullen gaan. Klik **creeer rol**.
+
+![ creeer zandbak ](./assets/images/perm1.png)
+
+Geef uw rol een naam als **Leerprogramma AEP**, klik **bevestigen**.
+
+![ creeer zandbak ](./assets/images/perm2.png)
+
+In het **zandbakken** dropdown menu, selecteer de zandbak die u enkel creeerde en verzekerde om het even welke andere zandbak (ook verwijder **Prod**) te verwijderen.
+
+![ creeer zandbak ](./assets/images/perm3.png)
+
+Voeg de verschillende bronnen toe en stel machtigingen in. Gelieve te verzekeren niet om het even welke toestemmingen voor **Beleid Sandbox** toe te voegen.
+
+![ creeer zandbak ](./assets/images/perm4.png)
+
+Voeg meer bronnen toe zoals aangegeven en stel machtigingen in.
+
+![ creeer zandbak ](./assets/images/perm5.png)
+
+Voeg meer bronnen toe zoals aangegeven en stel machtigingen in. Klik **sparen**. Dan, klik **dicht**.
+
+![ creeer zandbak ](./assets/images/perm6.png)
+
+## Adobe I/O instellen
+
+Ga naar
+[ https://developer.adobe.com/console/integrations ](https://developer.adobe.com/console/integrations). Zorg ervoor dat je in de juiste instantie bent. Klik **creëren nieuw project**.
+
+![ creeer zandbak ](./assets/images/io1.png)
+
+Klik **+ toevoegen aan Project** en klik dan **API**.
+
+![ creeer zandbak ](./assets/images/io2.png)
+
+Klik **Adobe Experience Platform** en laat dan **Experience Platform API** toe. Klik **daarna**.
+
+![ creeer zandbak ](./assets/images/io3.png)
+
+Voor de **Referentienaam**, gebruik **DSN AEP Leerprogramma**. Klik **daarna**.
+
+![ creeer zandbak ](./assets/images/io4.png)
+
+Selecteer een van de beschikbare productprofielen. Dit productprofiel bepaalt geen toestemmingen voor dit project van Adobe I/O - dit zal in een volgende stap worden gedaan. Klik **sparen gevormde API**.
+
+![ creeer zandbak ](./assets/images/io5.png)
+
+Klik **+ toevoegen aan Project** en klik dan **API** opnieuw.
+
+![ creeer zandbak ](./assets/images/io6.png)
+
+Klik **Adobe Experience Platform** en laat dan **Experience Platform Launch API** toe. Klik **daarna**.
+
+![ creeer zandbak ](./assets/images/io7.png)
+
+Klik **daarna**.
+
+![ creeer zandbak ](./assets/images/io8.png)
+
+Selecteer een productprofiel waarmee u eigenschappen voor gegevensverzameling kunt maken en beheren. Klik **sparen gevormde API**.
+
+![ creeer zandbak ](./assets/images/io9.png)
+
+Dan zie je dit. Klik de huidige **naam van 0} Project XXX.**
+
+![ creeer zandbak ](./assets/images/io10.png)
+
+Klik **uitgeven Project**.
+
+![ creeer zandbak ](./assets/images/io11.png)
+
+Ga een nieuwe **Titel van het Project**, zoals **DSN AEP Leerprogramma** in. Klik **sparen**.
+
+![ creeer zandbak ](./assets/images/io12.png)
+
+Uw Adobe I/O-project is nu klaar.
+
+## Adobe I/O-project koppelen aan rol
+
+Ga naar **Toestemmingen**, aan **Rollen** en klik dan de nieuwe rol u vroeger creeerde.
+
+![ creeer zandbak ](./assets/images/role1.png)
+
+Ga naar **API geloofsbrieven**. Klik op **+ Add API credentials**.
+
+![ creeer zandbak ](./assets/images/role2.png)
+
+Vervolgens ziet u de Adobe I/O-referentie die u in de vorige stap hebt gemaakt. Selecteer het en klik **sparen**.
+
+![ creeer zandbak ](./assets/images/role3.png)
+
+Uw Adobe I/O Project is nu ingesteld met de vereiste machtigingen voor toegang tot Adobe Experience Platform API&#39;s.
+
+![ creeer zandbak ](./assets/images/role4.png)
+
+>[!IMPORTANT]
+>
+>U moet minimaal 10 minuten wachten voordat u verdergaat met de volgende stappen in Demo System Next.
+
+## Uw omgeving instellen in Demo System Next
+
+Ga naar [ https://dsn.adobe.com/tools/org-admin ](https://dsn.adobe.com/tools/org-admin). Klik op **+ Org toevoegen** .
+
+![ creeer zandbak ](./assets/images/dsnorg1.png)
+
+Vul de vereiste velden in:
+
+- IMS Org ID
+- Naam
+- Identiteitskaart van de huurder (omvat geen **onderstrepingsteken**)
+- Regio
+
+Uw systeembeheerder zou u met de waarden voor deze gebieden moeten kunnen helpen.
+
+Klik **sparen**.
+
+![ creeer zandbak ](./assets/images/dsnorg2.png)
+
+Uw omgeving wordt nu opgenomen in de lijst. Vind het in de lijst en klik het **verbindings** pictogram.
+
+![ creeer zandbak ](./assets/images/dsnorg3.png)
+
+U moet nu de waarden ingaan die u als deel van de geloofsbrieven van uw Project van Adobe I/O creeerde. U kunt **identiteitskaart van de Cliënt** vinden, **Geheime Cliënt** en **Scopes** hier:
+
+![ creeer zandbak ](./assets/images/dsnorg4.png)
+
+**identiteitskaart van de Technische Rekening**:
+
+![ creeer zandbak ](./assets/images/dsnorg5.png)
+
+Kopieer en kleef die hier, klik **sparen**.
+
+![ creeer zandbak ](./assets/images/dsnorg6.png)
+
+Uw DSN-omgeving is nu op de juiste wijze ingesteld.
+
+## Uw toegang tot de DSN-omgeving instellen
+
+Ga naar [ https://dsn.adobe.com/tools/environment-admin ](https://dsn.adobe.com/tools/environment-admin). Selecteer IMS Org die u enkel creeerde, uw gebruiker selecteren en dan klikken **+ toewijzen** onder **Sandboxes**.
+
+![ creeer zandbak ](./assets/images/dsnorg7.png)
+
+Ga de **Naam Sandbox** in die u in de eerste hierboven stap bepaalde. Het moet er als volgt uitzien:
+
+- Naam: **aep-tutorial**
+
+Klik **bevestigen**.
+
+![ creeer zandbak ](./assets/images/dsnorg8.png)
+
+Uw sandbox is nu beschikbaar voor de gebruiker die u hebt geselecteerd.
+
+![ creeer zandbak ](./assets/images/dsnorg9.png)
+
+## DSN Quick Setup
+
+Ga naar [ https://dsn.adobe.com/quick-setup ](https://dsn.adobe.com/quick-setup). Open het **Milieu** dropdown menu en selecteer uw IMS Org/Sandbox.
+
+![ creeer zandbak ](./assets/images/dsnorg10.png)
+
+Voor **Configuratie**, uitgezochte **Globale v2.0**.
+
+![ creeer zandbak ](./assets/images/dsnorg11.png)
+
+De rol neer aan **Industrie - Telco** en selecteert **Signaal van Citi - Geavanceerd**.
+
+![ creeer zandbak ](./assets/images/dsnorg12.png)
+
+De rol omhoog en klikt **Begin**.
+
+![ creeer zandbak ](./assets/images/dsnorg13.png)
+
+Ga a **Titel** in en klik **Begin**.
+
+![ creeer zandbak ](./assets/images/dsnorg14.png)
+
+>[!NOTE]
+>
+>Er kunnen fouten optreden als er geen standaardbeleid voor samenvoegen in de sandbox is gemaakt. Als dat het geval is, of wacht een beetje meer op automatisch tot het fusiebeleid wordt gecreeerd, of ga manueel in Adobe Experience Platform, aan Profielen > het Beleid van de Fusie en creeer een nieuw standaard fusiebeleid.
+
+U zult dan de vooruitgang van de aan de gang zijnde installatie zien, die een paar notulen zal nemen.
+
+![ creeer zandbak ](./assets/images/dsnorg15.png)
+
+Zodra alles met succes wordt voltooid, wordt uw AEP-instantie met succes gevormd en klaar voor studenten om het leerprogramma te nemen.
+
+>[!NOTE]
+>
+>De stap van de Invoer van Gegevens wordt niet gebruikt door het leerprogramma, zodat als die stap ontbreekt, maak zich geen zorgen en gelieve verder te gaan.
+
+![ creeer zandbak ](./assets/images/dsnorg16.png)
+
+Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), aan **Datasets**. U zou nu een gelijkaardige lijst van datasets moeten zien, die allen door DSN Snelle Opstelling werden gecreeerd.
+
+![ creeer zandbak ](./assets/images/dsnorg17.png)
+
+>[!NOTE]
+>
+>Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+
+[Terug naar alle modules](./overview.md)

@@ -1,76 +1,85 @@
 ---
-title: De Dienst van de vraag - Onderzoek de dataset met Power BI
-description: De Dienst van de vraag - Onderzoek de dataset met Power BI
+title: Query-service - Power BI/Tableau
+description: Query-service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5 Query-service en -Power BI
+# 5.1.5 Genereer een dataset van een vraag
 
-Open Microsoft Power BI Desktop.
+## Doelstelling
 
-![ start-power-bi.png ](./images/start-power-bi.png)
+Leer hoe te om datasets van vraagresultaten te produceren
+Microsoft Power BI Desktop/Tableau rechtstreeks verbinden met de Query Service
+Een rapport maken in Microsoft Power BI Desktop/Tableau Desktop
 
-Klik **krijgen Gegevens**.
+## Lessoncontext
 
-![ macht-bi-get-data.png ](./images/power-bi-get-data.png)
+Een interface van de bevellijn aan vraaggegevens is opwindend maar het presenteert niet goed. In deze les, zullen wij u door een geadviseerde werkschema voor hoe u Microsoft Power BI Desktop/Tableau direct de Dienst van de Vraag kunt gebruiken om visuele rapporten voor uw belanghebbenden tot stand te brengen.
 
-Onderzoek naar **postgres** (1), uitgezochte **Postgres** (2) van de lijst en **verbindt** (3).
+## Een dataset maken van een SQL-query
 
-![ macht-bi-connect-progress.png ](./images/power-bi-connect-progress.png)
+De ingewikkeldheid van uw vraag zal beïnvloeden hoe lang het voor de Dienst van de Vraag duurt om resultaten terug te keren. En wanneer het vragen direct van de bevellijn of andere oplossingen zoals Microsoft Power BI/Tableau wordt de Dienst van de Vraag gevormd met een miniem onderbreking 5 (600 seconden). En in bepaalde gevallen zullen deze oplossingen met kortere onderbrekingen worden gevormd. Om grotere vragen in werking te stellen en voorladen de tijd het neemt om resultaten terug te keren bieden wij een eigenschap aan om een dataset van de vraagresultaten te produceren. Deze functie gebruikt de standaard SQL eigenschap die als Create Lijst als Uitgezochte (CTAS) wordt bekend. Het is beschikbaar in Platform UI van de Lijst van de Vraag en ook beschikbaar om direct van de bevellijn met PSQL te worden in werking gesteld.
 
-Ga naar Adobe Experience Platform, aan **Vragen** en aan **Geloofsbrieven**.
+In vorige u **hebt vervangen ga uw naam** met uw eigen ldap in alvorens het in PSQL uit te voeren.
 
-![ vraag-dienst-credentials.png ](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-Van de **pagina van Referenties** in Adobe Experience Platform, kopieer de **Gastheer** en kleef het op het **gebied van de Server**, en kopieer het **Gegevensbestand** en kleef het in het **Gegevensbestand** gebied in PowerBI, dan klik O.K. (2).
+Navigeer aan Adobe Experience Platform UI - [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Zorg ervoor om haven **te omvatten:80** aan het eind van de waarde van de Server omdat de Dienst van de Vraag momenteel niet de standaard haven PostgreSQL van 5432 gebruikt.
+U zoekt naar de uitgevoerde instructie in de gebruikersinterface van de Adobe Experience Platform-query door uw LDAP in te voeren in het zoekveld:
 
-![ macht-bi-connect-server.png ](./images/power-bi-connect-server.png)
+Selecteer **Vragen**, ga naar **Logboek** en ga uw ldap op het onderzoeksgebied in.
 
-In de volgende dialoog bevolkt de naam en het Wachtwoord van de Gebruiker met uw Gebruikersnaam en Wachtwoord dat in **wordt gevonden Referenties** van Vragen in Adobe Experience Platform.
+![ onderzoek-vraag-voor-ctas.png ](./images/search-query-for-ctas.png)
 
-![ vraag-dienst-credentials.png ](./images/query-service-credentials.png)
+Selecteer uw vraag en klik **Dataset van de Output**.
 
-In de dialoog van de Navigator, zet uw **LDAP** op het onderzoeksgebied (1) om van uw datasets CTAS de plaats te bepalen en de doos naast elk (2) te controleren. Klik vervolgens op Laden (3).
+![ onderzoek-vraag-voor-ctas.png ](./images/search-query-for-ctasa.png)
 
-![ macht-bi-lading-churn-data.png ](./images/power-bi-load-churn-data.png)
+Ga `--aepUserLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en druk de **knoop van de Vraag van de Looppas**
 
-Zorg ervoor het **lusje van het 0} Rapport** (1) wordt geselecteerd.
+![ create-ctas-dataset.png ](./images/create-ctas-dataset.png)
 
-![ macht-bi-rapport-tab.png ](./images/power-bi-report-tab.png)
+Dientengevolge, zult u een nieuwe vraag met een status **Voorgelegd** zien.
 
-Selecteer de kaart (1) en vergroot de kaart (2) nadat deze aan het rapportcanvas is toegevoegd.
+![ ctas-query-submitted.png ](./images/ctas-query-submitted.png)
 
-![ macht-bi-select-map.png ](./images/power-bi-select-map.png)
+Op voltooiing, zult u een nieuwe ingang voor **Gemaakte Dataset** zien (u zou de pagina kunnen moeten verfrissen).
 
-Daarna moeten wij de maatregelen en de afmetingen bepalen, doet u dit door gebieden van de **gebieden** sectie op de overeenkomstige placeholders (die onder **worden gevestigd visualisaties**) te slepen zoals hieronder vermeld:
+![ ctas-dataset-created.png ](./images/ctas-dataset-created.png)
 
-![ macht-bi-belemmering-lat-lon.png ](./images/power-bi-drag-lat-lon.png)
+Zodra uw dataset wordt gecreeerd (die 5-10 minuten kan vergen), kunt u de oefening voortzetten.
 
-Als maatregel zullen wij een telling van **customerId** gebruiken. Sleep het **midden** gebied van de **gebieden** sectie in **placeholder van de Grootte**:
+Volgende Stap - Optie A: [ 5.1.6 de Dienst en Power BI van de Vraag ](./ex6.md)
 
-![ macht-bi-belemmering-crmid.png ](./images/power-bi-drag-crmid.png)
-
-Tot slot om wat **callTopic** analyse te doen, versleep het **callTopic** gebied op **de filters van het paginaniveau** placeholder (u zou in de **visualisaties** sectie kunnen moeten scrollen);
-
-![ macht-bi-belemmering-calltopic.png ](./images/power-bi-drag-calltopic.png)
-
-Selecteer/unselect **callTopics** om te onderzoeken:
-
-![ macht-bi-rapport-select-calltopic.png ](./images/power-bi-report-select-calltopic.png)
-
-Je hebt deze oefening nu afgerond.
-
-Volgende Stap: [ 5.1.7 de Dienst API van de Vraag ](./ex7.md)
+Volgende Stap - Optie B: [ 5.1.7 de Dienst van de Vraag en Tableau ](./ex7.md)
 
 [Ga terug naar module 5.1](./query-service.md)
 

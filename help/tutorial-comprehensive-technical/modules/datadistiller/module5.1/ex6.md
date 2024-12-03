@@ -1,62 +1,77 @@
 ---
-title: De Dienst van de vraag - Onderzoek de dataset met Tableau
-description: De Dienst van de vraag - Onderzoek de dataset met Tableau
+title: De Dienst van de vraag - Onderzoek de dataset met Power BI
+description: De Dienst van de vraag - Onderzoek de dataset met Power BI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 Query-service en Tableau
+# 5.1.6 Query-service en -Power BI
 
-Open Tabel.
+Open Microsoft Power BI Desktop.
 
-![ start-tableau.png ](./images/start-tableau.png)
+![ start-power-bi.png ](./images/start-power-bi.png)
 
-In **verbind met een Server** uitgezocht **PostgreSQL**:
+Klik **krijgen Gegevens**.
 
-![ tableau-connect-postgress.png ](./images/tableau-connect-postgress.png)
+![ macht-bi-get-data.png ](./images/power-bi-get-data.png)
+
+Onderzoek naar **postgres** (1), uitgezochte **Postgres** (2) van de lijst en **verbindt** (3).
+
+![ macht-bi-connect-progress.png ](./images/power-bi-connect-progress.png)
 
 Ga naar Adobe Experience Platform, aan **Vragen** en aan **Geloofsbrieven**.
 
 ![ vraag-dienst-credentials.png ](./images/query-service-credentials.png)
 
-Van de **Credentials** pagina in Adobe Experience Platform, kopieer de **Gastheer** en kleef het in het **gebied van de Server**, kopieer het **Gegevensbestand** en kleef het in het **Gegevensbestand** gebied in Tableau, kopieer de **Haven** en kleef het op het gebied **in Tableau, doe het zelfde voor** Gebruikersnaam **en** Wachtwoord **.** Daarna, klik **Teken binnen**.
+Van de **pagina van Referenties** in Adobe Experience Platform, kopieer de **Gastheer** en kleef het op het **gebied van de Server**, en kopieer het **Gegevensbestand** en kleef het in het **Gegevensbestand** gebied in PowerBI, dan klik O.K. (2).
 
-Aanmelden:
+>[!IMPORTANT]
+>
+>Zorg ervoor om haven **te omvatten:80** aan het eind van de waarde van de Server omdat de Dienst van de Vraag momenteel niet de standaard haven PostgreSQL van 5432 gebruikt.
 
-![ tableau-connection-dialog.png ](./images/tableau-connection-dialog.png)
+![ macht-bi-connect-server.png ](./images/power-bi-connect-server.png)
 
-Klik onderzoek (1) en ga uw **ldap** in het onderzoeksgebied in, identificeer u lijst van de resultaatreeks en sleep (3) het op de plaats genoemd **hier van de Belemmering lijsten**. Wanneer gebeëindigd, klik op **Blad 1** (3).
+In de volgende dialoog bevolkt de naam en het Wachtwoord van de Gebruiker met uw Gebruikersnaam en Wachtwoord dat in **wordt gevonden Referenties** van Vragen in Adobe Experience Platform.
 
-![ tableau-drag-table.png ](./images/tableau-drag-table.png)
+![ vraag-dienst-credentials.png ](./images/query-service-credentials.png)
 
-Om onze gegevens op de kaart zichtbaar te maken, moeten we lengte en breedte in dimensies omzetten. In **Maatregelen** selecteer **Breedte** (1) en open dropdown van het gebied en selecteer **Bekeerling in Dimension** (2). Doe het zelfde voor de **maatregel van de Lengte 0} {.**
+In de dialoog van de Navigator, zet uw **LDAP** op het onderzoeksgebied (1) om van uw datasets CTAS de plaats te bepalen en de doos naast elk (2) te controleren. Klik vervolgens op Laden (3).
 
-![ tableau-convert-Dimension.png ](./images/tableau-convert-dimension.png)
+![ macht-bi-lading-churn-data.png ](./images/power-bi-load-churn-data.png)
 
-Sleep de **maatregel van de Lengte** {aan de **Kolommen** en de **5} maatregel van de Breedte {aan** Rijen **.** Automatisch zal de kaart van **België** met weinig punten verschijnen die de steden in uit gegevensreeks vertegenwoordigen.
+Zorg ervoor het **lusje van het 0} Rapport** (1) wordt geselecteerd.
 
-![ tableau-drag-lon-lat.png ](./images/tableau-drag-lon-lat.png)
+![ macht-bi-rapport-tab.png ](./images/power-bi-report-tab.png)
 
-Selecteer **Namen van de Maatregel** (1), open dropdown en selecteer **toevoegen aan Blad** (2):
+Selecteer de kaart (1) en vergroot de kaart (2) nadat deze aan het rapportcanvas is toegevoegd.
 
-![ tab-select-maatregel-names.png ](./images/tableau-select-measure-names.png)
+![ macht-bi-select-map.png ](./images/power-bi-select-map.png)
 
-Nu heb je een kaart met puntjes van verschillende grootten. De grootte wijst op het aantal interactie van het vraagcentrum voor die specifieke stad. Om de grootte van de punten te variëren, navigeer aan het juiste paneel en open **Waarden van de Maatregel** (gebruikend het drop-down pictogram). Van de drop-down lijst uitgezocht **geeft Grootte** uit. Speel rond met verschillende grootten.
+Daarna moeten wij de maatregelen en de afmetingen bepalen, doet u dit door gebieden van de **gebieden** sectie op de overeenkomstige placeholders (die onder **worden gevestigd visualisaties**) te slepen zoals hieronder vermeld:
 
-![ tableau-variatie-size-dots.png ](./images/tableau-vary-size-dots.png)
+![ macht-bi-belemmering-lat-lon.png ](./images/power-bi-drag-lat-lon.png)
 
-Om de gegevens per **Onderwerp van de Vraag** verder te tonen, sleep (1) de **3} dimensie van het Onderwerp van de Vraag {op** Pagina&#39;s **.** Navigeer door de verschillende **onderwerpen van de Vraag** gebruikend het **Onderwerp van de Vraag** (2) op de rechterkant van het scherm:
+Als maatregel zullen wij een telling van **customerId** gebruiken. Sleep het **midden** gebied van de **gebieden** sectie in **placeholder van de Grootte**:
 
-![ tableau-call-topic-navigation.png ](./images/tableau-call-topic-navigation.png)
+![ macht-bi-belemmering-crmid.png ](./images/power-bi-drag-crmid.png)
+
+Tot slot om wat **callTopic** analyse te doen, versleep het **callTopic** gebied op **de filters van het paginaniveau** placeholder (u zou in de **visualisaties** sectie kunnen moeten scrollen);
+
+![ macht-bi-belemmering-calltopic.png ](./images/power-bi-drag-calltopic.png)
+
+Selecteer/unselect **callTopics** om te onderzoeken:
+
+![ macht-bi-rapport-select-calltopic.png ](./images/power-bi-report-select-calltopic.png)
 
 Je hebt deze oefening nu afgerond.
 
-Volgende Stap: [ 5.1.7 de Dienst API van de Vraag ](./ex7.md)
+Volgende Stap: [ 5.1.8 de Dienst API van de Vraag ](./ex8.md)
 
 [Ga terug naar module 5.1](./query-service.md)
 
