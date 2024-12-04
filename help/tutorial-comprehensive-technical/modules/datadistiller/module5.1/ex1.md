@@ -4,9 +4,9 @@ description: Query-service - Vereisten
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 Volg de instructies in de documentatie van Adobe Experience Platform om de psql cliënt te installeren:
 [ PSQL installeert Gids ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+
+Zodra u PSQL hebt geïnstalleerd, kunt u uw **PAD** moeten bijwerken door het hieronder bevel in een eindvenster in werking te stellen:
+
+Voor macOS (vervang XX in de onderstaande opdracht door het versienummer van de PSQL die u hebt geïnstalleerd):
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
 ## Power BI installeren
 

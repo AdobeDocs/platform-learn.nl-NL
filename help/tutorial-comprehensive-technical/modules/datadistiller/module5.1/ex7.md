@@ -4,9 +4,9 @@ description: De Dienst van de vraag - Onderzoek de dataset met Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: 29525740-fe1f-4770-bcc9-f2ad499a2cb5
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,45 +15,67 @@ ht-degree: 0%
 
 Open Tabel.
 
-![ start-tableau.png ](./images/start-tableau.png)
+![ start-tableau.png ](./images/starttableau.png)
 
-In **verbind met een Server** uitgezocht **PostgreSQL**:
+In **verbind met een Server**, klik **Meer** en klik dan **PostgreSQL**.
 
-![ tableau-connect-postgress.png ](./images/tableau-connect-postgress.png)
+![ tableau-connect-postgress.png ](./images/tableauconnectpostgress.png)
+
+Als u PostgeSQL nog niet met Tableau hebt gebruikt, kunt u dit zien. Klik **Bestuurder van de Download**.
+
+![ tableau-connect-postgress.png ](./images/tableauconnectpostgress1.png)
+
+Volg de instructies om het PostgreSQL-stuurprogramma te downloaden en installeren.
+
+![ tableau-connect-postgress.png ](./images/tableauconnectpostgress2.png)
+
+Als u klaar bent met de installatie van het stuurprogramma, sluit u Tableau Desktop af en start u deze opnieuw. Dan na het nieuwe begin, ga **met een Server** opnieuw verbinden, klik **Meer** en klik dan **PostgreSQL** opnieuw.
+
+![ tableau-connect-postgress.png ](./images/tableauconnectpostgress.png)
+
+Dan zie je dit.
+
+![ tableau-connect-postgress.png ](./images/tableauconnectpostgress3.png)
 
 Ga naar Adobe Experience Platform, aan **Vragen** en aan **Geloofsbrieven**.
 
-![ vraag-dienst-credentials.png ](./images/query-service-credentials.png)
+![ vraag-dienst-credentials.png ](./images/queryservicecredentials.png)
 
 Van de **Credentials** pagina in Adobe Experience Platform, kopieer de **Gastheer** en kleef het in het **gebied van de Server**, kopieer het **Gegevensbestand** en kleef het in het **Gegevensbestand** gebied in Tableau, kopieer de **Haven** en kleef het op het gebied **in Tableau, doe het zelfde voor** Gebruikersnaam **en** Wachtwoord **.** Daarna, klik **Teken binnen**.
 
-Aanmelden:
+![ tableau-connection-dialog.png ](./images/tableauconnectiondialog.png)
 
-![ tableau-connection-dialog.png ](./images/tableau-connection-dialog.png)
+Zoek in de lijst met beschikbare tabellen de tabel die u in de vorige exercitie hebt gemaakt. Deze tabel wordt `--aepUserLdap--_callcenter_interaction_analysis` genoemd. Sleep het naar het canvas.
 
-Klik onderzoek (1) en ga uw **ldap** in het onderzoeksgebied in, identificeer u lijst van de resultaatreeks en sleep (3) het op de plaats genoemd **hier van de Belemmering lijsten**. Wanneer gebeëindigd, klik op **Blad 1** (3).
+![ tableau-drag-table.png ](./images/tableaudragtable.png)
 
-![ tableau-drag-table.png ](./images/tableau-drag-table.png)
+Dan zie je dit. Klik **Update nu**.
 
-Om onze gegevens op de kaart zichtbaar te maken, moeten we lengte en breedte in dimensies omzetten. In **Maatregelen** selecteer **Breedte** (1) en open dropdown van het gebied en selecteer **Bekeerling in Dimension** (2). Doe het zelfde voor de **maatregel van de Lengte 0} {.**
+![ tableau-drag-table.png ](./images/tableaudragtable1.png)
 
-![ tableau-convert-Dimension.png ](./images/tableau-convert-dimension.png)
+Vervolgens ziet u de gegevens van AEP beschikbaar komen in Tableau. Klik **Blad 1** beginnen met het werken met de gegevens.
+
+![ tableau-drag-table.png ](./images/tableaudragtable2.png)
+
+Om uw gegevens op de kaart zichtbaar te maken, moet u lengte en breedte in dimensies omzetten. In **Maatregelen**, klik **Breedte** met de rechtermuisknop aan, uitgezochte **Bekeerling in Dimension** in het menu. Doe het zelfde voor de **maatregel van de Lengte 0} {.**
+
+![ tableau-convert-Dimension.png ](./images/tableauconvertdimension.png)
 
 Sleep de **maatregel van de Lengte** {aan de **Kolommen** en de **5} maatregel van de Breedte {aan** Rijen **.** Automatisch zal de kaart van **België** met weinig punten verschijnen die de steden in uit gegevensreeks vertegenwoordigen.
 
-![ tableau-drag-lon-lat.png ](./images/tableau-drag-lon-lat.png)
+![ tableau-drag-lon-lat.png ](./images/tableaudraglonlat.png)
 
-Selecteer **Namen van de Maatregel** (1), open dropdown en selecteer **toevoegen aan Blad** (2):
+Selecteer **Namen van de Maatregel**, klik **toevoegen aan Blad**.
 
-![ tab-select-maatregel-names.png ](./images/tableau-select-measure-names.png)
+![ tab-select-maatregel-names.png ](./images/selectmeasurenames.png)
 
 Nu heb je een kaart met puntjes van verschillende grootten. De grootte wijst op het aantal interactie van het vraagcentrum voor die specifieke stad. Om de grootte van de punten te variëren, navigeer aan het juiste paneel en open **Waarden van de Maatregel** (gebruikend het drop-down pictogram). Van de drop-down lijst uitgezocht **geeft Grootte** uit. Speel rond met verschillende grootten.
 
-![ tableau-variatie-size-dots.png ](./images/tableau-vary-size-dots.png)
+![ tableau-variatie-size-dots.png ](./images/tableauvarysizedots.png)
 
-Om de gegevens per **Onderwerp van de Vraag** verder te tonen, sleep (1) de **3} dimensie van het Onderwerp van de Vraag {op** Pagina&#39;s **.** Navigeer door de verschillende **onderwerpen van de Vraag** gebruikend het **Onderwerp van de Vraag** (2) op de rechterkant van het scherm:
+Om de gegevens per **Onderwerp van de Vraag** verder te tonen, sleep het **Onderwerp van de Vraag** dimensie op **Pagina&#39;s**. Navigeer door de verschillende **onderwerpen van de Vraag** gebruikend het **Onderwerp van de Vraag** op de rechterkant van het scherm:
 
-![ tableau-call-topic-navigation.png ](./images/tableau-call-topic-navigation.png)
+![ tableau-call-topic-navigation.png ](./images/tableaucalltopicnavigation.png)
 
 Je hebt deze oefening nu afgerond.
 

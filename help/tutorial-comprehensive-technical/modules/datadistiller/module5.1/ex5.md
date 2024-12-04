@@ -4,9 +4,9 @@ description: Query-service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe te om datasets van vraagresultaten te produceren
 Microsoft Power BI Desktop/Tableau rechtstreeks verbinden met de Query Service
 Een rapport maken in Microsoft Power BI Desktop/Tableau Desktop
 
-## Lessoncontext
+## Context
 
 Een interface van de bevellijn aan vraaggegevens is opwindend maar het presenteert niet goed. In deze les, zullen wij u door een geadviseerde werkschema voor hoe u Microsoft Power BI Desktop/Tableau direct de Dienst van de Vraag kunt gebruiken om visuele rapporten voor uw belanghebbenden tot stand te brengen.
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ U zoekt naar de uitgevoerde instructie in de gebruikersinterface van de Adobe Ex
 
 Selecteer **Vragen**, ga naar **Logboek** en ga uw ldap op het onderzoeksgebied in.
 
-![ onderzoek-vraag-voor-ctas.png ](./images/search-query-for-ctas.png)
+![ onderzoek-vraag-voor-ctas.png ](./images/searchqueryforctas.png)
 
-Selecteer uw vraag en klik **Dataset van de Output**.
+Selecteer uw vraag en klik **Looppas als CTAS**.
 
-![ onderzoek-vraag-voor-ctas.png ](./images/search-query-for-ctasa.png)
+![ onderzoek-vraag-voor-ctas.png ](./images/searchqueryforctasa.png)
 
-Ga `--aepUserLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en druk de **knoop van de Vraag van de Looppas**
+Ga `--aepUserLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en klik **Looppas als CTAS**.
 
-![ create-ctas-dataset.png ](./images/create-ctas-dataset.png)
+![ create-ctas-dataset.png ](./images/createctasdataset.png)
 
 Dientengevolge, zult u een nieuwe vraag met een status **Voorgelegd** zien.
 
-![ ctas-query-submitted.png ](./images/ctas-query-submitted.png)
+![ ctas-query-submitted.png ](./images/ctasquerysubmitted.png)
 
 Op voltooiing, zult u een nieuwe ingang voor **Gemaakte Dataset** zien (u zou de pagina kunnen moeten verfrissen).
 
-![ ctas-dataset-created.png ](./images/ctas-dataset-created.png)
+![ ctas-dataset-created.png ](./images/ctasdatasetcreated.png)
 
 Zodra uw dataset wordt gecreeerd (die 5-10 minuten kan vergen), kunt u de oefening voortzetten.
 
