@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '947'
 ht-degree: 6%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 6%
    + [Overzicht](/help/platform/ai-assistant/overview.md)
    + [Toegang instellen](/help/platform/ai-assistant/access.md)
    + [Publiek opruimen](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Aan boord met een nieuw product](/help/platform/ai-assistant/onboard.md)
 + Soorten publiek en segmentatie {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)

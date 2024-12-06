@@ -2,9 +2,9 @@
 title: Parameters verzenden - Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 Aankoopgegevens worden doorgegeven aan Target wanneer voor de veldgroep `commerce` `purchases.value` is ingesteld op `1` . De bestellings-id en het totaal van de bestellingen worden automatisch toegewezen aan het `order` -object. Als de array `productListItems` aanwezig is, worden de waarden `SKU` gebruikt voor `productPurchasedId` .
 
-Voorbeelden van Platform Web SDK met de opdracht `sendEvent` :
+Voorbeeld van Platform Web SDK met `sendEvent` :
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB  Markeringen ]
 
-Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijzen aan de XDM-velden:
+Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijzen aan de vereiste XDM-velden (zie het JavaScript-voorbeeld) en een optioneel aangepast bereik:
 
 ![ Toewijzing aan een XDM gebied in een XDM gegevenselement van Objecten ](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTRO
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> `_experience.decisioning.propositionEventType` moet met `display: 1` worden geplaatst om de vraag te gebruiken om metrisch van het Doel te verhogen.
+
+>[!NOTE]
+>
+> Als u bijvoorbeeld een aangepaste naam voor de locatie of het selectievakje wilt gebruiken in de definitie van het doel, `orderConfirmPage` , vult u de array `_experience.decisioning.propositions` met een aangepast bereik, zoals in het bovenstaande voorbeeld.
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ In de Adobe Target-service van uw gegevensstroom moet u de [!UICONTROL Target Th
 ![ plaats identiteitskaart Namespace van de Derde van het Doel in de datastream ](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe raadt aan naamruimten die een persoon vertegenwoordigen, zoals geverifieerde identiteiten, als primaire identiteit te verzenden.
+
+
 
 ## Platform Web SDK, voorbeeld
 
@@ -458,7 +482,8 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ Nu u begrijpt hoe de verschillende parameters van het Doel gebruikend het Web SD
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
