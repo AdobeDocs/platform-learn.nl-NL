@@ -2,9 +2,9 @@
 title: Parameters verzenden - Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe te om mbox, profiel, en entiteitsparameters naar Adobe Target te verzenden gebruikend het Web SDK van het Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTRO
 
 Het doel staat profielsynchronisatie over apparaten en systemen toe gebruikend één enkele klant ID. Met at.js, kon dit als `mbox3rdPartyId` in het verzoek van het Doel worden geplaatst of als eerste klantenidentiteitskaart die naar de Dienst van de Identiteit van het Experience Cloud wordt verzonden. In tegenstelling tot at.js, staat een implementatie van SDK van het Web van het Platform u toe om te specificeren welke klantenidentiteitskaart aan gebruik als `mbox3rdPartyId` als er veelvoudige zijn. Bijvoorbeeld, als uw zaken een globale klant identiteitskaart en afzonderlijke klant IDs voor verschillende lijnen van zaken hebben, kunt u vormen welk Doel van identiteitskaart zou moeten gebruiken.
 
-Er zijn een paar stappen aan opstellingsidentiteitskaart die voor het dwars-apparaat van het Doel en de het gebruikscituaties van de Attributen van de Klant synchroniseert:
+Er zijn een paar stappen aan opstellingsidentiteitskaart die voor dwars-apparaat en de het gebruikscituaties van Attributen van de Klant synchroniseert:
 
 1. Maak een **[!UICONTROL identity namespace]** voor de klant-id in het **[!UICONTROL Identities]** -scherm van gegevensverzameling of -platform
 1. Zorg ervoor dat **[!UICONTROL alias]** in Klantkenmerken overeenkomt met de **[!UICONTROL identity symbol]** van uw naamruimte
