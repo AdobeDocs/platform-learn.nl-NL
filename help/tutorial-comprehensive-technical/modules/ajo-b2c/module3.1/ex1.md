@@ -3,9 +3,10 @@ title: Journey Optimizer Create your event
 description: Journey Optimizer Create your event
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b132ad78-aaa3-458d-9895-0935f8ba88bb
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
@@ -33,18 +34,11 @@ Er verschijnt dan een nieuw, leeg gebeurtenisvenster.
 ![ ACOP ](./images/emptyevent1.png)
 
 Geef uw gebeurtenis eerst een naam zoals deze: `--aepUserLdap--AccountCreationEvent` .
-
-![ ACOP ](./images/eventname.png)
-
-Voeg vervolgens een beschrijving als deze toe `Account Creation Event` .
+Plaats de beschrijving aan `Account Creation Event`, zorg ervoor het **Type** aan **Eenheids** wordt geplaatst en voor de **Identiteitskaart van de Gebeurtenis** selectie, uitgezocht **Gegenereerd Systeem**.
 
 ![ ACOP ](./images/eventdescription.png)
 
-Daarna, zorg ervoor het **Type** aan **Eenheids** wordt geplaatst, en voor de **Verzamelde het Type van identiteitskaart van de Gebeurtenis** selectie, uitgezocht **Systeem**.
-
-![ ACOP ](./images/eventidtype.png)
-
-Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1` .
+Nu de selectie van het schema. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1` .
 
 ![ ACOP ](./images/eventschema.png)
 
@@ -60,21 +54,13 @@ In het voorwerp `--aepTenantId--.demoEnvironment`, zorg gelieve ervoor om de geb
 
 ![ ACOP ](./images/eventpayloadbr.png)
 
-In het voorwerp `--aepTenantId--.identification.core`, gelieve ervoor te zorgen om het gebied **e-mail** te selecteren.
+In het voorwerp `--aepTenantId--.identification.core`, gelieve ervoor te zorgen om het gebied **e-mail** te selecteren. Klik **O.K.** om uw veranderingen te bewaren.
 
 ![ ACOP ](./images/eventpayloadbrid.png)
 
-Klik **O.K.** om uw veranderingen te bewaren.
-
-![ ACOP ](./images/saveok.png)
-
-U zou dan dit moeten zien:
+Dan moet je dit zien. Plaats **Namespace** aan **ECID (ECID)**. Klik **sparen**.
 
 ![ ACOP ](./images/eventsave.png)
-
-Klik **sparen** opnieuw om uw veranderingen te bewaren.
-
-![ ACOP ](./images/save1.png)
 
 Uw gebeurtenis is nu geconfigureerd en opgeslagen.
 
@@ -90,16 +76,20 @@ U zult nu een voorbeeld van de verwachte nuttige lading zien.
 
 Uw gebeurtenis heeft een unieke orchestration eventID, die u kunt vinden door neer in die lading te scrollen tot u `_experience.campaign.orchestration.eventID` ziet.
 
+De gebeurtenis-id is wat naar Adobe Experience Platform moet worden verzonden om de volgende reis te activeren. Herinner deze eventID, aangezien u het in één van de volgende oefeningen zult nodig hebben.
+`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+
+Klik **OK**.
+
 ![ ACOP ](./images/payloadeventID.png)
 
-De gebeurtenis-id is wat naar Adobe Experience Platform moet worden verzonden om de Reis te activeren die u maakt in Oefening 7.2. Herinner deze eventID, aangezien u het in Oefening 7.3 zult nodig hebben.
-`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
+Klik **annuleren**.
 
-Klik **O.K.**, die door **wordt gevolgd annuleert**.
+![ ACOP ](./images/payloadeventID1.png)
 
 Je hebt deze oefening nu afgerond.
 
-Volgende Stap: [ 3.1.2 Journey Optimizer: Creeer uw reis en e-mailbericht ](./ex2.md)
+Volgende Stap: [ 3.1.2 creeer fragmenten die in uw bericht ](./ex2.md) moeten worden gebruikt
 
 [Terug naar module 3.1](./journey-orchestration-create-account.md)
 

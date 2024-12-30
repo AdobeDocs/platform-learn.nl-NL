@@ -1,125 +1,228 @@
 ---
-title: Werk uw Configuratie-id bij en test uw reis
-description: Werk uw Configuratie-id bij en test uw reis
+title: Journey Optimizer Maak je reis en e-mailbericht
+description: Journey Optimizer Je e-mailbericht maken
 kt: 5342
 doc-type: tutorial
 exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
 
-# 3.1.3 Werk uw bezit van de Inzameling van Gegevens bij en test uw reis
+# 3.1.3 Maak uw reis, fragmenten en bericht
 
-## 3.1.3.1 Werk uw bezit van de Gegevensverzameling bij
+In deze oefening, zult u de reis en het bericht vormen die moeten worden teweeggebracht wanneer iemand een rekening op de demowebsite creeert.
 
-Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/launch/) en selecteer **Markeringen**.
+Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling die u eerder hebt gezien.
+![ ACOP ](./images/acophome.png)
 
-![ pagina van Eigenschappen ](./../../../modules/datacollection/module1.1/images/launch1.png)
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
-In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+![ ACOP ](./images/acoptriglp.png)
 
-![ vakje van het Onderzoek ](./../../../modules/datacollection/module1.1/images/property6.png)
+## 3.1.3.1 Uw reis maken
 
-Dan zie je dit.
+In het linkermenu, klik **Reizen**. Daarna, klik **creeer Reis** om een nieuwe reis tot stand te brengen.
 
-![ Opstelling van de Lancering ](./images/rule1.png)
+![ ACOP ](./images/createjourney.png)
 
-In het linkermenu, ga **Regels** en onderzoek naar het profiel van het regel **Register**. Klik het profiel van het regel **Register** om het te openen.
+Dan zie je een leeg reisscherm.
 
-![ Opstelling van de Lancering ](./images/rule2.png)
+![ ACOP ](./images/journeyempty.png)
 
-U zult dan de details van deze regel zien. Klik om de actie **te openen verzend &quot;Gebeurtenis van de Registratie&quot;aan AEP - trekker JO**.
+In de vorige oefening, creeerde u een nieuwe **Gebeurtenis**. U noemde het als dit `--aepUserLdap--AccountCreationEvent` en vervangt `ldap` door uw ldap. Dit was het resultaat van het maken van de gebeurtenis:
 
-![ Opstelling van de Lancering ](./images/rule3.png)
+![ ACOP ](./images/eventdone.png)
 
-U zult dan zien dat wanneer deze actie wordt teweeggebracht, een specifiek gegevenselement wordt gebruikt om de XDM gegevensstructuur te bepalen. U moet dat gegevenselement bijwerken, en u moet **identiteitskaart van de Gebeurtenis** van de gebeurtenis bepalen die u in [ Uitoefening 7.1 ](./ex1.md) vormde.
+U moet deze gebeurtenis nu als begin van deze reis nemen. U kunt dit doen door naar de linkerkant van het scherm te gaan en naar uw gebeurtenis in de lijst met gebeurtenissen te zoeken.
 
-![ Opstelling van de Lancering ](./images/rule4.png)
+![ ACOP ](./images/eventlist.png)
 
-U moet nu gaan bijwerken het gegevenselement **XDM - de Gebeurtenis van de Registratie**. Om dit te doen, ga naar **Elementen van Gegevens**. Onderzoek naar **XDM - de Gebeurtenis van de Registratie** en klik om dat gegevenselement te openen.
+Selecteer de gebeurtenis, sleep deze naar het canvas Reis. Uw reis ziet er nu als volgt uit:
 
-![ Opstelling van de Lancering ](./images/rule5.png)
+![ ACOP ](./images/journeyevent.png)
 
-U zult dan dit zien:
+Als tweede stap in de reis, moet u een korte **toevoegen wacht** stap. Ga naar de linkerkant van uw scherm aan de **sectie van het Orchestration** om dit te vinden. U zult profielattributen gebruiken en moet ervoor zorgen zij in het Profiel van de Klant in real time worden bevolkt.
 
-![ Opstelling van de Lancering ](./images/rule6.png)
+![ ACOP ](./images/journeywait.png)
 
-Navigeer naar het veld `_experience.campaign.orchestration.eventID` . Verwijder de huidige waarde en plak de eventID daar.
+Je reis ziet er nu zo uit. Aan de rechterkant van het scherm moet u de wachttijd configureren. Stel dit in op 1 minuut. Dit geeft voldoende tijd om de profielkenmerken beschikbaar te maken nadat de gebeurtenis is gestart. Klik **sparen** om uw veranderingen te bewaren.
 
-Als herinnering, identiteitskaart van de Gebeurtenis kan in Adobe Journey Optimizer onder **Configuraties > Gebeurtenissen** worden gevonden en u zult gebeurtenistidentiteitskaart in de steekproeflading van uw even vinden, die als dit kijkt: `"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`.
+![ ACOP ](./images/journeywait1.png)
 
-![ ACOP ](./images/payloadeventID.png)
+Als derde stap in de reis, moet u een **E-mail** actie toevoegen. Ga naar de linkerkant van uw scherm aan **Acties**, selecteer de **E-mail** actie, dan belemmering en laat vallen het op de tweede knoop in uw reis. U ziet dit nu.
 
-Na het plakken van eventID, zou uw scherm als dit moeten kijken. Daarna, klik **sparen** of **sparen aan Bibliotheek**.
+![ ACOP ](./images/journeyactions.png)
 
-![ Opstelling van de Lancering ](./images/rule7.png)
+Plaats de **Categorie** aan **Marketing** en selecteer een e-mailconfiguratie die u toelaat om e-mail te verzenden. In dit geval, is de e-mailconfiguratie om te selecteren **E-mail**. Zorg ervoor dat checkboxes voor **klikt op e-mail** en **e-mail opent** allebei worden toegelaten.
 
-Tot slot moet u uw wijzigingen publiceren. Ga naar **het Publiceren Stroom** in het linkermenu.
+![ ACOP ](./images/journeyactions1.png)
 
-![ Opstelling van de Lancering ](./images/rule8.png)
+## 3.1.3.2 Uw bericht maken
 
-Klik **toevoegen Alle Gewijzigde Middelen** en klik dan **sparen &amp; bouwen aan Ontwikkeling**.
+Om uw bericht tot stand te brengen, klik **geef inhoud** uit.
 
-![ Opstelling van de Lancering ](./images/rule9.png)
+![ ACOP ](./images/journeyactions2.png)
 
-Uw bibliotheek wordt dan bijgewerkt en na 1-2 minuten kunt u uw configuratie testen.
+U ziet dit nu.
 
-## 3.1.3.2 Uw reis testen
+![ ACOP ](./images/journeyactions3.png)
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Klik het **Open pictogram van de verpersoonlijkingsdialoog**.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![ Journey Optimizer ](./images/msg5.png)
 
-Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
+Schrijf de tekst `Hi ` . Daarna moet u het verpersoonlijkingstoken voor het gebied **Eerste naam** brengen die onder `profile.person.name.firstName` wordt opgeslagen. In het linkermenu, navigeer om **Persoon > Volledige Naam > Voornaam** gebied te vinden en op **+** pictogram te klikken. Vervolgens ziet u het personalisatietoken in het tekstveld.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![ Journey Optimizer ](./images/msg9.png)
 
-Open een nieuw Incognito-browservenster.
+Voeg vervolgens de tekst **toe. Hartelijk dank voor uw aanmelding.**. Klik **sparen**.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![ Journey Optimizer ](./images/msg10.png)
 
-Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
+U kunt nu de hoofdtekst van uw e-mail configureren. Klik **uitgeeft e-maillichaam**.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![ Journey Optimizer ](./images/msg11.png)
 
-Selecteer uw accounttype en voltooi het aanmeldingsproces.
+Voordat u begint met het maken van de inhoud van de boodschap zelf, is het een goed idee om na te denken over de inhoud van de boodschap. Sommige inhoud in het bericht is uniek voor het bericht zelf, maar andere delen zijn standaardcomponenten die waarschijnlijk het zelfde voor elke e-mail zullen zijn u naar klanten zult verzenden.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+In de vorige oefening, creeerde u reeds deze standaardcomponenten als Fragments in Journey Optimizer, die u in dit bericht en alle andere toekomstige berichten kunt nu van verwijzingen voorzien u zult creëren.
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+In het volgende scherm krijgt u drie verschillende methoden om de inhoud van de e-mail te verschaffen:
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+- **Ontwerp van kras**: Begin met een leeg canvas en gebruik WYSIWYG-redacteur om structuur en inhoudscomponenten te slepen en neer te zetten om de inhoud van e-mail visueel op te bouwen.
+- **Code uw eigen**: Creeer uw eigen e-mailmalplaatje door het te coderen gebruikend HTML
+- **de HTML van de Invoer**: De invoer een bestaand malplaatje van HTML, dat u zult kunnen uitgeven.
 
-Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen.
+Klik **Ontwerp van kras**.
 
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv1.png)
+![ Journey Optimizer ](./images/msg12.png)
 
-Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de Klant in real time met **identiteitskaart van het Experience Cloud** als primaire herkenningsteken voor deze momenteel onbekende klant.
+In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
 
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv2.png)
+![ Journey Optimizer ](./images/msg13.png)
 
-Ga naar de pagina Registreren/Aanmelden. Klik **CREËREN EEN ACCOUNT**.
+U zult ook **Fragmenten** in het linkermenu vinden, waar u de fragmenten zult zien u vroeger creeerde.
 
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv9.png)
+![ Journey Optimizer ](./images/msg14.png)
 
-Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
+Voordat u de kop- en voettekst op het canvas kunt plaatsen, moet u twee structuren aan de e-mail toevoegen. Klik het **+** pictogram in het linkermenu, en sleep 2 **1:1 kolomcomponenten** op het canvas.
 
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv10.png)
+![ Journey Optimizer ](./images/msg14a.png)
 
-Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het deelvenster Profielviewer worden al uw persoonlijke gegevens weergegeven, zoals de zojuist toegevoegde e-mail- en telefoon-id&#39;s.
+In het linkermenu, ga terug naar **Fragments**. Sleep het koptekstfragment naar de eerste component en het voettekstfragment naar de tweede component. Dan zie je dit.
 
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv11.png)
+![ Journey Optimizer ](./images/msg15.png)
 
-1 minuut nadat je je account hebt gemaakt, ontvang je een e-mail over het aanmaken van je account van Adobe Journey Optimizer.
+Klik het **+** pictogram in het linkermenu en belemmering en laat vallen 2 meer **1:1 kolomcomponenten** op het canvas, binnen tussen de kopbal en footer.
 
-![ Opstelling van de Lancering ](./images/email.png)
+![ Journey Optimizer ](./images/msg16.png)
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+De belemmering en laat vallen een **component van het Beeld** in eerste **1:1 kolom** component. Klik **doorbladeren**.
+
+![ Journey Optimizer ](./images/msg17.png)
+
+In de **citi-signaal-beelden** omslag. Selecteer het beeld **`welcome_email_image.png`** en klik **Uitgezocht**.
+
+![ Journey Optimizer ](./images/msg28.png)
+
+Dan heb je het volgende:
+
+![ Journey Optimizer ](./images/msg30.png)
+
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst in de structuurcomponent op de vierde rij.
+
+![ Journey Optimizer ](./images/msg33.png)
+
+Selecteer de standaardtekst **Gelieve te typen hier uw tekst.** zoals u met een teksteditor zou doen. Schrijf **Onthaal aan de familie,** in plaats daarvan. In de toolbar, klik **verpersoonlijking** pictogram toevoegen.
+
+![ Journey Optimizer ](./images/msg34.png)
+
+Daarna, moet u het **Voornaam** verpersoonlijkingstoken brengen dat onder `profile.person.name.firstName` wordt opgeslagen. In het menu, vind het **element van de Persoon**, boor neer aan het **Volledige element van de Naam**, en klik dan het **+** pictogram om het Eerste gebied van de Naam op uitdrukkingsredacteur toe te voegen.
+
+Klik **sparen**.
+
+![ Journey Optimizer ](./images/msg36.png)
+
+U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
+
+![ Journey Optimizer ](./images/msg37.png)
+
+Op het zelfde tekstgebied, duik **** binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
+
+```
+Welcome aboard! We're thrilled to have you join the CitiSignal family. 
+As a valued member of our community, you're now poised to experience top-notch telecommunications services that cater to your every need.
+
+At CitiSignal, we understand that staying connected is more than just a convenience - it's a necessity. Whether you're browsing the web, streaming your favourite content, or keeping in touch with loved ones, we're here to ensure you have the best tools and resources at your fingertips.
+```
+
+![ Journey Optimizer ](./images/msg38.png)
+
+Plaats de **groepering van de Tekst** om worden gecentreerd, en voel vrij om de blik en het gevoel van het bericht aan te passen om aan uw eigen behoeften te voldoen. Wanneer u wordt gedaan, klik **sparen**.
+
+![ Journey Optimizer ](./images/msg39.png)
+
+De definitieve controle om uit te voeren om uw e-mail te verzekeren is klaar om het voor te vertonen, klik op de **Simuleer Inhoud** knoop.
+
+![ Journey Optimizer ](./images/msg50.png)
+
+Voordat u het e-mailbericht kunt simuleren, moet u een testprofiel toevoegen. Klik **leiden testprofielen**.
+
+![ Journey Optimizer ](./images/test1.png)
+
+Selecteer **e-mail** namespace door op het pictogram naast **te klikken ingaat identiteit namespace** gebied.
+
+In de lijst van identiteit namespaces, selecteer **E-mail** namespace. Op het **waarde van de Identiteit** gebied, ga het e-mailadres van een vorig profiel in dat u in een vorige oefening gebruikte, en dat reeds in Adobe Experience Platform wordt opgeslagen. Klik **toevoegen profiel**. Ga terug naar het vorige scherm.
+
+![ Journey Optimizer ](./images/msg53.png)
+
+U ziet dan uw e-mailbericht, nu gesimuleerd voor dit klantprofiel. U kunt nu de personalisatie op de onderwerpregel en de hoofdtekst valideren en desgewenst een e-mail met een proefdruk verzenden.
+
+Klik **dicht** om de voorproef te sluiten.
+
+![ Journey Optimizer ](./images/msg54.png)
+
+Klik **sparen** om uw bericht te bewaren en terug naar het berichtdashboard te gaan door de **pijl** naast de onderwerpregel tekst in de top-left hoek te klikken.
+
+![ Journey Optimizer ](./images/msg55.png)
+
+Klik de **pijl** om terug naar uw reis te gaan.
+
+![ Journey Optimizer ](./images/msg57a.png)
+
+## 3.1.3.3 Publish uw reis
+
+Klik **sparen**.
+
+![ Journey Optimizer ](./images/msg58.png)
+
+Je moet je reis nog steeds een naam geven. U kunt dat doen door het **pictogram van Eigenschappen** in de hoogste rechterkant van uw scherm te klikken.
+
+![ ACOP ](./images/journeyname.png)
+
+Je kunt hier de naam van de reis invoeren. Gebruik `--aepUserLdap-- - Registration Journey` . Klik **sparen**.
+
+![ ACOP ](./images/journeyname1.png)
+
+U kunt uw reis nu publiceren door **Publish** te klikken.
+
+![ ACOP ](./images/publishjourney.png)
+
+Klik **opnieuw Publish**.
+
+![ ACOP ](./images/publish1.png)
+
+Na een opeenvolging van notulen, zal het statuut van uw reis in **Levend** veranderen en u zult een dashboard in real time van de prestaties van uw reis zien.
+
+![ ACOP ](./images/published.png)
+
+Je hebt deze oefening nu afgerond.
+
+Volgende Stap: [ 3.1.4 Werk uw bezit van de Inzameling van Gegevens bij en test uw reis ](./ex4.md)
 
 [Terug naar module 3.1](./journey-orchestration-create-account.md)
 

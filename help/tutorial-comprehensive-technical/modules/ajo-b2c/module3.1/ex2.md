@@ -1,258 +1,240 @@
 ---
-title: Journey Optimizer Maak je reis en e-mailbericht
-description: Journey Optimizer Je e-mailbericht maken
+title: Journey Optimizer - Maak uw fragmenten
+description: Journey Optimizer - Maak uw fragmenten
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 81810b3a-7eca-436f-a5dc-48c46cb33980
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
 
-# 3.1.2 Uw reis- en e-mailbericht maken
+# 3.1.2 Fragmenten maken voor gebruik in uw bericht
 
-In deze oefening, zult u de reis en het bericht vormen die moeten worden teweeggebracht wanneer iemand een rekening op de demowebsite creeert.
+In deze oefening, zult u 2 fragmenten, 1 voor een herbruikbare kopbal en 1 voor herbruikbare footer vormen.
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
-## 3.1.2.1 Maak uw reis
+## 3.1.2.1 Een koptekstfragment maken
 
-In het linkermenu, klik **Reizen**. Daarna, klik **creeer Reis** om een nieuwe reis tot stand te brengen.
+In het linkermenu, klik **Fragmenten**. Een fragment is een herbruikbare component in Journey Optimizer die dubbel werk voorkomt en toekomstige wijzigingen vergemakkelijkt die van invloed zijn op alle berichten, zoals wijzigingen in een kop- of voettekst in een e-mailbericht.
 
-![ ACOP ](./images/createjourney.png)
+Klik **tot fragment** leiden.
 
-Dan zie je een leeg reisscherm.
+![ ACOP ](./images/fragm1.png)
 
-![ ACOP ](./images/journeyempty.png)
+Ga de naam `--aepUserLdap-- - CitiSignal - Header` in en selecteer het **Type: Visuele Fragment**. Klik **creëren**.
 
-In de vorige oefening, creeerde u een nieuwe **Gebeurtenis**. U noemde het als dit `ldapAccountCreationEvent` en vervangt `ldap` door uw ldap. Dit was het resultaat van het maken van de gebeurtenis:
+![ ACOP ](./images/fragm2.png)
 
-![ ACOP ](./images/eventdone.png)
+Dan zie je dit. In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
 
-U moet deze gebeurtenis nu als begin van deze reis nemen. U kunt dit doen door naar de linkerkant van het scherm te gaan en naar uw gebeurtenis in de lijst met gebeurtenissen te zoeken.
+De belemmering en laat vallen a **1:1 kolom** van het menu in het canvas. Dit is de plaatsaanduiding voor de logoafbeelding.
 
-![ ACOP ](./images/eventlist.png)
+![ Journey Optimizer ](./images/fragm3.png)
 
-Selecteer de gebeurtenis, sleep deze naar het canvas Reis. Uw reis ziet er nu als volgt uit:
+Vervolgens kunt u Inhoud-componenten gebruiken om inhoud binnen deze blokken toe te voegen. De belemmering en laat vallen een **component van het Beeld** in de eerste cel op de eerste rij. Klik **doorbladeren**.
 
-![ ACOP ](./images/journeyevent.png)
+![ Journey Optimizer ](./images/fragm4.png)
 
-Als tweede stap in de reis, moet u een korte **toevoegen wacht** stap. Ga naar de linkerkant van uw scherm aan de **sectie van het Orchestration** om dit te vinden. U zult profielattributen gebruiken en moet ervoor zorgen zij in het Profiel van de Klant in real time worden bevolkt.
+Dan zie je een popup opening, die je je AEM Assets Media Library toont. Ga naar de omslag **citi-signaal-beelden**, klik om het beeld **te selecteren CitiSignal-Logo-White.png** en **Uitgezocht** te klikken.
 
-![ ACOP ](./images/journeywait.png)
+>[!NOTE]
+>
+>Als u niet de beelden van het Signaal van Citi in uw Bibliotheek van AEM Assets ziet, kunt u hen [ hier ](../../../assets/ajo/CitiSignal-images.zip) vinden. Download hen aan uw Desktop, creeer de omslag **citi-signaal-beelden** en upload alle beelden in die omslag.
 
-Je reis ziet er nu zo uit. Aan de rechterkant van het scherm moet u de wachttijd configureren. Stel dit in op 1 minuut. Dit geeft voldoende tijd om de profielkenmerken beschikbaar te maken nadat de gebeurtenis is gestart.
+![ Journey Optimizer ](./images/fragm5.png)
 
-![ ACOP ](./images/journeywait1.png)
+Dan zie je dit. Uw afbeelding is wit en wordt nog niet weergegeven. U moet nu een achtergrondkleur definiëren om de afbeelding correct weer te geven. Klik **Stijlen**, dan klik de **Achtergrondkleur** doos.
 
-Klik **O.K.** om uw veranderingen te bewaren.
+![ Journey Optimizer ](./images/fragm6.png)
 
-Als derde stap in de reis, moet u een **E-mail** actie toevoegen. Ga naar de linkerkant van uw scherm aan **Acties**, selecteer de **E-mail** actie, dan belemmering en laat vallen het op de tweede knoop in uw reis. U ziet dit nu.
+In popup, verander de **kleurencode 0} Hex {in** #8821F4 **en verander dan nadruk door in het** 100% **gebied te klikken.** Vervolgens ziet u de nieuwe kleur die op de afbeelding is toegepast.
 
-![ ACOP ](./images/journeyactions.png)
+![ Journey Optimizer ](./images/fragm7.png)
 
-Plaats de **Categorie** aan **Marketing** en selecteer een e-mailoppervlakte die u toelaat om e-mail te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **E-mail**. Zorg ervoor dat checkboxes voor **klikt op e-mail** en **e-mail opent** allebei worden toegelaten.
+De afbeelding is nu ook een beetje te groot. Laat ons de breedte veranderen door de **schakelaar van de Breedte** aan **40%** te schuiven.
 
-![ ACOP ](./images/journeyactions1.png)
+![ Journey Optimizer ](./images/fragm8.png)
 
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
+Het koptekstfragment is nu gereed. Klik **sparen** en klik dan de pijl om terug naar het vorige scherm te gaan.
 
-![ ACOP ](./images/journeyactions2.png)
+![ Journey Optimizer ](./images/fragm9.png)
 
-## 3.1.2.2 Uw bericht maken
+Uw fragment moet worden gepubliceerd voordat het kan worden gebruikt. Klik **Publish**.
 
-Om uw bericht tot stand te brengen, klik **geef inhoud** uit.
+![ Journey Optimizer ](./images/fragm10.png)
 
-![ ACOP ](./images/journeyactions2.png)
+Na een paar notulen, zult u zien dat u de status van het fragment in **Levend** is veranderd.
+Maak vervolgens een nieuw fragment voor de voettekst van uw e-mailberichten. Klik **tot fragment** leiden.
 
-U ziet dit nu.
+![ Journey Optimizer ](./images/fragm11.png)
 
-![ ACOP ](./images/journeyactions3.png)
+## 3.1.2.1 Een voettekstfragment maken
 
-Klik het **Onderwerplijn** tekstgebied.
+Klik **tot fragment** leiden.
 
-![ Journey Optimizer ](./images/msg5.png)
+![ Journey Optimizer ](./images/fragm11.png)
 
-In het tekstgebied begin **te schrijven Hoog**
+Ga de naam `--aepUserLdap-- - CitiSignal - Footer` in en selecteer het **Type: Visuele Fragment**. Klik **creëren**.
 
-![ Journey Optimizer ](./images/msg6.png)
+![ Journey Optimizer ](./images/fragm12.png)
 
-De onderwerpregel is nog niet gereed. Daarna moet u het verpersoonlijkingstoken voor het gebied **Eerste naam** brengen die onder `profile.person.name.firstName` wordt opgeslagen. In het linkermenu, scrol neer om het **element van de Persoon** te vinden en op de pijl te klikken om een niveau diepers te gaan.
+Dan zie je dit. In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
 
-![ Journey Optimizer ](./images/msg7.png)
+De belemmering en laat vallen a **1:1 kolom** van het menu in het canvas. Dit is de plaatsaanduiding voor de voettekstinhoud.
 
-Nu vind het **Volledige naam** element en klik op de pijl om een niveau dieper te gaan.
+![ Journey Optimizer ](./images/fragm13.png)
 
-![ Journey Optimizer ](./images/msg8.png)
+Vervolgens kunt u Inhoud-componenten gebruiken om inhoud binnen deze blokken toe te voegen. De belemmering en laat vallen een **HTML** component in de eerste cel op de eerste rij. Klik de component om het te selecteren en dan, **&lt;/>** te klikken pictogram om de HTML broncode uit te geven.
 
-Tot slot vind het **Voornaam** gebied en klik op **+** teken naast het. Vervolgens ziet u het personalisatietoken in het tekstveld.
+![ Journey Optimizer ](./images/fragm14.png)
 
-![ Journey Optimizer ](./images/msg9.png)
+Dan zie je dit.
 
-Voeg vervolgens de tekst **toe. Hartelijk dank voor uw aanmelding.**. Klik **sparen**.
+![ Journey Optimizer ](./images/fragm15.png)
 
-![ Journey Optimizer ](./images/msg10.png)
+Kopieer het hieronder codefragment van HTML en kleef het in **uitgeven HTML** venster in Journey Optimizer.
 
-Dan ben je hier weer. Klik **E-mail Designer** om de inhoud van e-mail tot stand te brengen.
+```html
+<!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td style="text-align: center;" ><![endif]-->
+<table style="width: auto; display: inline-block;">
+  <tbody>
+    <tr class="component-social-container">
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.facebook.com" data-component-social-icon-id="facebook">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://x.com" data-component-social-icon-id="twitter">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.instagram.com" data-component-social-icon-id="instagram">
+         
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+```
 
-![ Journey Optimizer ](./images/msg11.png)
+Dan heb je dit. Op de regels 7, 12 en 17 moet u nu een afbeeldingsbestand invoegen met de elementen in uw AEM Assets-bibliotheek.
 
-In het volgende scherm krijgt u drie verschillende methoden om de inhoud van de e-mail te verschaffen:
+![ Journey Optimizer ](./images/fragm16.png)
 
-- **Ontwerp van kras**: Begin met een leeg canvas en gebruik WYSIWYG-redacteur om structuur en inhoudscomponenten te slepen en neer te zetten om de inhoud van e-mail visueel op te bouwen.
-- **Code uw eigen**: Creeer uw eigen e-mailmalplaatje door het te coderen gebruikend HTML
-- **de HTML van de Invoer**: De invoer een bestaand malplaatje van HTML, dat u zult kunnen uitgeven.
+Zorg ervoor dat uw curseur op lijn 7 wordt gevestigd, en klik dan **Assets** in het linkermenu. Klik **Open activa selecteur** om uw beeld te selecteren.
 
-Klik **Ontwerp van kras**.
+![ Journey Optimizer ](./images/fragm17.png)
 
-![ Journey Optimizer ](./images/msg12.png)
+Open de omslag **citi-signaal-beelden** en klik om het beeld **Icon_Facebook.png** te selecteren. Klik **Uitgezocht**.
 
-In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
+![ Journey Optimizer ](./images/fragm18.png)
 
-![ Journey Optimizer ](./images/msg13.png)
+Zorg ervoor dat uw curseur op lijn 12 wordt gevestigd, en klik dan **Open activaselecteur** om uw beeld te selecteren.
 
-De belemmering en laat vallen a **1:2 kolom links** van het menu in het canvas. Dit is de plaatsaanduiding voor de logoafbeelding.
+![ Journey Optimizer ](./images/fragm19.png)
 
-![ Journey Optimizer ](./images/msg14.png)
+Open de omslag **citi-signaal-beelden** en klik om het beeld **Icon_X.png** te selecteren. Klik **Uitgezocht**.
 
-De belemmering en laat vallen a **1:1 kolom** onder de vorige component. Dit wordt het bannerblok.
+![ Journey Optimizer ](./images/fragm20.png)
 
-![ Journey Optimizer ](./images/msg15.png)
+Zorg ervoor dat uw curseur op lijn 17 wordt gevestigd, en klik dan **Open activaselecteur** om uw beeld te selecteren.
 
-De belemmering en laat vallen a **1:2 linkerkolom** onder de vorige component. Dit is de werkelijke inhoud met een afbeelding aan de linkerkant en tekst aan de rechterkant.
+![ Journey Optimizer ](./images/fragm21.png)
 
-![ Journey Optimizer ](./images/msg16.png)
+Open de omslag **citi-signaal-beelden** en klik om het beeld **Icon_Instagram.png** te selecteren. Klik **Uitgezocht**.
 
-Daarna, belemmering en laat vallen a **1:1 kolom** onder de vorige component. Dit wordt de voettekst van e-mail. Uw canvas moet er nu als volgt uitzien:
+![ Journey Optimizer ](./images/fragm22.png)
 
-![ Journey Optimizer ](./images/msg17.png)
+Dan zie je dit. Klik **sparen**.
 
-Vervolgens gebruiken we Inhoud-componenten om inhoud toe te voegen binnen deze blokken. Klik op het **menupunt van de Componenten van de Inhoud** {
+![ Journey Optimizer ](./images/fragm23.png)
 
-![ Journey Optimizer ](./images/msg18.png)
+Dan ben je weer in de editor. De pictogrammen zijn nog niet zichtbaar omdat de achtergrond en de afbeeldingsbestanden allemaal wit zijn. Om de achtergrondkleur te veranderen, ga naar **Stijlen** en klik **de achtergrondkleur** checkbox.
 
-De belemmering en laat vallen een **component van het Beeld** in de eerste cel op de eerste rij. Klik **doorbladeren**.
+![ Journey Optimizer ](./images/fragm24.png)
 
-![ Journey Optimizer ](./images/msg19.png)
+Verander de **kleurencode 0} Hex {in** #000000 **.**
 
-Dan zie je dit. Navigeer aan de omslag **enablement-activa** en selecteer het dossier **luma-logo.png**. Klik **Uitgezocht**.
+![ Journey Optimizer ](./images/fragm25.png)
 
-![ Journey Optimizer ](./images/msg21.png)
+De uitlijning wijzigen die moet worden gecentreerd.
 
-U bent nu weer hier:
+![ Journey Optimizer ](./images/fragm26.png)
 
-![ Journey Optimizer ](./images/msg25.png)
+Laten we andere onderdelen toevoegen aan de voettekst. De belemmering en laat vallen een **component van het Beeld** boven de component van HTML u enkel creeerde. Klik **doorbladeren**.
 
-Ga naar **Componenten van de Inhoud** en sleep en laat vallen een **component van het Beeld** in de eerste cel op de eerste rij. Klik **doorbladeren**.
+![ Journey Optimizer ](./images/fragm27.png)
 
-![ Journey Optimizer ](./images/msg26.png)
+Klik om het beelddossier **`CitiSignal_Footer_Logo.png`** te selecteren en **Uitgezocht** te klikken.
 
-In **Assets** pop-up, ga naar de **enablement-activa** omslag. In deze map vindt u alle middelen die eerder door het creatieve team zijn voorbereid en geüpload. Selecteer **module23-thankyou-new.png** en klik **Uitgezocht**.
+![ Journey Optimizer ](./images/fragm28.png)
 
-![ Journey Optimizer ](./images/msg28.png)
+Ga naar **Stijlen** en klik **de kleur van de Achtergrond** checkbox, veranderen het opnieuw in zwart. Verander de **kleurencode 0} Hex {in** #000000 **.**
 
-Dan heb je het volgende:
+![ Journey Optimizer ](./images/fragm29.png)
 
-![ Journey Optimizer ](./images/msg30.png)
+Verander de breedte in **20%** en verifieer dat de groepering wordt geplaatst om worden gecentreerd.
 
-Selecteer uw beeld en in het juiste menu, scrol neer tot u de **component van de de breedteschuifregelaar van de Grootte** ziet. Gebruik de schuifregelaar om de breedte te wijzigen in f.i. **60%**.
+![ Journey Optimizer ](./images/fragm30.png)
 
-![ Journey Optimizer ](./images/msg31.png)
+Daarna, belemmering en laat vallen de component van de a **Tekst** onder de component van HTML u creeerde. Klik **doorbladeren**.
 
-Daarna, ga naar **Componenten van de Inhoud** en sleep en laat vallen a **** component van de Tekst in de structuurcomponent op de vierde rij.
+![ Journey Optimizer ](./images/fragm31.png)
 
-![ Journey Optimizer ](./images/msg33.png)
+Kopieer en plak de onderste tekst door de plaatsaanduidingstekst te vervangen.
 
-Selecteer de standaardtekst **Gelieve te typen hier uw tekst.** zoals u met een teksteditor zou doen. Schrijf **Beste** in plaats daarvan. De werkbalk Tekst wordt weergegeven in de tekstmodus.
+```
+1234 N. South Street, Anywhere, US 12345
 
-![ Journey Optimizer ](./images/msg34.png)
+Unsubscribe
 
-In de toolbar klikt **verpersoonlijking** pictogram toevoegen.
+©2024 CitiSignal, Inc and its affiliates. All rights reserved.
+```
 
-![ Journey Optimizer ](./images/msg35.png)
+Plaats de **uitlijning van de Tekst** om worden gecentreerd.
 
-Daarna, moet u het **Voornaam** verpersoonlijkingstoken brengen dat onder `profile.person.name.firstName` wordt opgeslagen. In het menu, vind het **element van de Persoon**, boor neer aan het **Volledige element van de Naam**, en klik dan het **+** pictogram om het Eerste gebied van de Naam op uitdrukkingsredacteur toe te voegen.
+![ Journey Optimizer ](./images/fragm32.png)
 
-Klik **sparen**.
+Verander de **kleur van de Doopvont** in wit, **#FFFFFF**.
 
-![ Journey Optimizer ](./images/msg36.png)
+![ Journey Optimizer ](./images/fragm33.png)
 
-U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
+Verander de **Achtergrondkleur** in zwart, **#000000**.
 
-![ Journey Optimizer ](./images/msg37.png)
+![ Journey Optimizer ](./images/fragm34.png)
 
-Op het zelfde tekstgebied, ga **binnen** tweemaal om twee lijnen toe te voegen en **te schrijven Dank u voor het creëren van uw rekening met Luma!**.
+Selecteer de tekst **Unsubscribe** in footer, en klik het **pictogram van de Verbinding** in de menubar. Plaats het **Type** aan **Externe Opt-out/Unsubscription** en plaats URL aan **https://aepdemo.net/unsubscribe.html** (het is niet toegestaan om een lege URL voor unsubscribe verbinding te hebben).
 
-![ Journey Optimizer ](./images/msg38.png)
+![ Journey Optimizer ](./images/fragm35.png)
 
-De definitieve controle om uit te voeren om uw e-mail te verzekeren is klaar om het voor te vertonen, klik op de **Simuleer Inhoud** knoop.
+Dan heb je dit. Uw voettekst is nu klaar. Klik **sparen** en klik dan de pijl om terug naar de vorige pagina te gaan.
 
-![ Journey Optimizer ](./images/msg50.png)
+![ Journey Optimizer ](./images/fragm36.png)
 
-Geef eerst aan welk profiel u voor de voorvertoning wilt gebruiken. Selecteer **e-mail** namespace door op het pictogram naast **te klikken ingaat identiteit namespace** gebied.
+Klik **Publish** om uw footer te publiceren zodat kan het in een e-mail worden gebruikt.
 
-In de lijst van identiteit namespaces, selecteer **E-mail** namespace.
+![ Journey Optimizer ](./images/fragm37.png)
 
-Op het **waarde van de Identiteit** gebied, ga het e-mailadres van een vorig demoprofiel in dat reeds in het Profiel van de Klant in real time wordt opgeslagen. Bijvoorbeeld **woutervangeluwe+06022022-01@gmail.com** en klik op de **knoop van het Profiel van de Test van de Vondst**
+Na een paar notulen, zult u zien dat het statuut van uw footer is veranderd in **Levend**.
 
-![ Journey Optimizer ](./images/msg53.png)
-
-Zodra uw profiel in de lijst verschijnt, klik op het **lusje van de Voorproef** om tot het voorproefscherm toegang te hebben.
-
-Wanneer de voorvertoning gereed is, controleert u of de personalisatie correct is in de onderwerpregel. De hoofdtekst en de koppeling voor het opzeggen van het abonnement worden dan gemarkeerd als een hyperlink.
-
-Klik **dicht** om de voorproef te sluiten.
-
-![ Journey Optimizer ](./images/msg54.png)
-
-Klik **sparen** om uw bericht te bewaren.
-
-![ Journey Optimizer ](./images/msg55.png)
-
-Ga terug naar het berichtdashboard door de **pijl** naast de onderwerplijntekst in de top-left hoek te klikken.
-
-![ Journey Optimizer ](./images/msg56.png)
-
-Je hebt je registratiebericht nu gemaakt. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
-
-![ Journey Optimizer ](./images/msg57.png)
-
-Klik **OK**.
-
-![ Journey Optimizer ](./images/msg57a.png)
-
-## 3.1.2.3 Publish uw reis
-
-Je moet je reis nog steeds een naam geven. U kunt dat doen door het **pictogram van Eigenschappen** in de hoogste rechterkant van uw scherm te klikken.
-
-![ ACOP ](./images/journeyname.png)
-
-Je kunt hier de naam van de reis invoeren. Gebruik `--aepUserLdap-- - Account Creation Journey` . Klik **O.K.** om uw veranderingen te bewaren.
-
-![ ACOP ](./images/journeyname1.png)
-
-U kunt uw reis nu publiceren door **Publish** te klikken.
-
-![ ACOP ](./images/publishjourney.png)
-
-Klik **opnieuw Publish**.
-
-![ ACOP ](./images/publish1.png)
-
-Vervolgens ziet u een groene bevestigingsbalk met de mededeling dat uw reis nu is gepubliceerd.
-
-![ ACOP ](./images/published.png)
+![ Journey Optimizer ](./images/fragm38.png)
 
 Je hebt deze oefening nu afgerond.
 
-Volgende Stap: [ 3.1.3 Werk uw bezit van de Inzameling van Gegevens bij en test uw reis ](./ex3.md)
+Volgende Stap: [ 3.1.3 leidt tot uw reis en e-mailbericht ](./ex3.md)
 
 [Terug naar module 3.1](./journey-orchestration-create-account.md)
 
