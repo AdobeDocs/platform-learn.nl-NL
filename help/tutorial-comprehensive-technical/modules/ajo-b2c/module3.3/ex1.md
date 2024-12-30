@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Als u met Offer decisioning werkt, moet u de volgende concepten begrijpen:
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In het linkermenu, klik **Aanbiedingen**. U ziet nu het menu Aanbiedingen, dat dingen als Aanbiedingen, Verzamelingen en Besluiten bevat.
 

@@ -4,9 +4,9 @@ description: In deze sectie zult u een op trekker-gebaseerde reis - de Bevestigi
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 Uw gebeurtenis maken
 
@@ -33,23 +33,14 @@ Op het **scherm van Gebeurtenissen**, zult u een mening gelijkend op dit zien. K
 
 U ziet dan een lege gebeurtenisconfiguratie.
 
-![ Journey Optimizer ](./images/oc32.png)
-
 Geef uw gebeurtenis eerst een naam als deze: `--aepUserLdap--PurchaseEvent` en voeg een beschrijving als deze toe: `Purchase Event` .
 
-![ Journey Optimizer ](./images/oc34.png)
-
-Daarna is het **Type van Gebeurtenis** selectie. Selecteer **Eenheids**.
-
-![ Journey Optimizer ](./images/eventidtype1.png)
-
-Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0}.** Selecteer **Gegenereerd Systeem**
+Voor **Type**, uitgezochte **Eenheids**.
+Voor **Type van identiteitskaart van de Gebeurtenis**, uitgezochte **Gegenereerd Systeem**.
 
 ![ Journey Optimizer ](./images/eventidtype.png)
 
 Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1` .
-
-![ Journey Optimizer ](./images/oc35.png)
 
 Na het selecteren van het Schema, zult u een aantal gebieden zien die in de **sectie van de Lading** worden geselecteerd. Klik het **uitgeven/Potlood** pictogram om extra gebieden aan deze gebeurtenis toe te voegen.
 
@@ -63,21 +54,19 @@ Schakel eerst het selectievakje op de regel `--aepTenantId--` in.
 
 ![ Journey Optimizer ](./images/oc38.png)
 
-Blader vervolgens omlaag en schakel het selectievakje op de regel in `productListItems` .
-
-![ Journey Optimizer ](./images/oc39.png)
-
 Blader vervolgens omlaag en schakel het selectievakje op de regel in `commerce` .
 
 ![ Journey Optimizer ](./images/oc391.png)
 
-Daarna, klik O.K. ****.
+Blader vervolgens omlaag en schakel het selectievakje op de regel in `productListItems` . Klik **OK**.
+
+![ Journey Optimizer ](./images/oc39.png)
 
 Vervolgens ziet u dat er extra velden zijn toegevoegd aan de gebeurtenis. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/oc40.png)
 
-Uw nieuwe gebeurtenis wordt dan gedeeld en u zult uw gebeurtenis in de lijst van beschikbare gebeurtenissen nu zien.
+Uw nieuwe gebeurtenis wordt dan opgeslagen en u zult uw gebeurtenis in de lijst van beschikbare gebeurtenissen nu zien.
 
 Klik opnieuw op uw gebeurtenis om **te openen geef het 1} scherm van de Gebeurtenis {opnieuw uit.**
 Beweeg over het **gebied van de Lading** opnieuw om de 3 pictogrammen opnieuw te zien. Klik op het **pictogram van de Payload van de Mening**.
@@ -89,7 +78,7 @@ U zult nu een voorbeeld van de verwachte nuttige lading zien. Uw gebeurtenis hee
 ![ Journey Optimizer ](./images/oc42.png)
 
 De gebeurtenis-id is wat naar Adobe Journey Optimizer moet worden verzonden om de reis te activeren die u in de volgende stap maakt. Schrijf deze eventID neer, aangezien u het in één van de volgende stappen zult nodig hebben.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 Klik **O.K.**, die door **wordt gevolgd annuleert**.
 
@@ -101,11 +90,11 @@ In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
 ![ Journey Optimizer ](./images/oc43.png)
 
-Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Order Confirmation journey` . Klik **OK**.
+Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Order Confirmation journey` . Klik **sparen**.
 
 ![ Journey Optimizer ](./images/oc45.png)
 
-Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--PurchaseEvent` en sleep deze naar het canvas. Klik **OK**.
+Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--PurchaseEvent` en sleep deze naar het canvas. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/oc46.png)
 
@@ -125,7 +114,7 @@ U ziet dit nu. Klik het **Onderwerplijn** tekstgebied.
 
 ![ ACOP ](./images/journeyactions3.png)
 
-In het tekstgebied begin **bedankt voor uw orde te schrijven,**
+In het tekstgebied begint te schrijven **Dank voor uw orde,** en klik het **Personalization** pictogram.
 
 ![ Journey Optimizer ](./images/oc5.png)
 
@@ -133,7 +122,7 @@ De onderwerpregel is nog niet gereed. Daarna moet u het verpersoonlijkingstoken 
 
 ![ Journey Optimizer ](./images/oc6.png)
 
-Dan ben je hier weer. Klik **E-mail Designer** om de inhoud van e-mail tot stand te brengen.
+Dan ben je hier weer. Klik **uitgeeft e-maillichaam** om de inhoud van e-mail tot stand te brengen.
 
 ![ Journey Optimizer ](./images/oc7.png)
 
@@ -147,35 +136,27 @@ De belemmering en laat vallen 8 keer a **1:1 kolom** op het canvas, dat u dit zo
 
 ![ Journey Optimizer ](./images/oc9.png)
 
-Ga naar **Componenten van de Inhoud**.
+In het linkermenu, ga naar **Fragments**. Sleep de header die u eerder in oefening 3.2.2 hebt gemaakt naar de eerste component in het canvas. Sleep de voettekst die u eerder in oefening 3.2.2 hebt gemaakt naar de laatste component in het canvas.
+
+![ Journey Optimizer ](./images/fragm1.png)
+
+Klik op het pictogram **+** in het linkermenu. Ga naar **Inhoud** beginnen inhoud op het canvas toe te voegen.
 
 ![ Journey Optimizer ](./images/oc10.png)
 
-De belemmering en laat vallen een **component van het Beeld** op de eerste rij. Klik **doorbladeren**.
-
-![ Journey Optimizer ](./images/oc11.png)
-
-Ga naar de omslag **enablement-activa**, selecteer het dossier **luma-logo.png** en klik **Uitgezochte**.
-
-![ Journey Optimizer ](./images/oc12.png)
-
-Je bent nu weer hier. Klik uw beeld om het te selecteren en dan de **schuif van de Grootte** te gebruiken om het embleembeeld een beetje kleiner te maken.
-
-![ Journey Optimizer ](./images/oc13.png)
-
-Ga naar **Componenten van de Inhoud** en sleep en laat vallen een **component van het Beeld** op de tweede rij. Selecteer de **component van het Beeld** maar klik niet doorbladeren.
+Ga naar **Inhoud** en sleep en laat vallen een **component van het Beeld** op de tweede rij. Klik **doorbladeren**.
 
 ![ Journey Optimizer ](./images/oc15.png)
 
-Plak dit beeldURL op het gebied **Source**: `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`. Deze afbeelding wordt buiten de Adobe gehost.
+Open de omslag **citi-signaal-beelden**, klik om het beeld **te selecteren burgerschap-preparing.png**, en klik **Uitgezocht**.
 
 ![ Journey Optimizer ](./images/oc14.png)
 
-Wanneer u het bereik in een ander veld wijzigt, wordt de afbeelding gerenderd en ziet u het volgende:
+Onder **Stijlen**, verander de breedte in **40%**.
 
-![ Journey Optimizer ](./images/oc16.png)
+![ Journey Optimizer ](./images/oc14a.png)
 
-Daarna, ga naar **Componenten van de Inhoud** en sleep en laat vallen a **de component van de Tekst** op de derde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst op de derde rij.
 
 ![ Journey Optimizer ](./images/oc17.png)
 
@@ -207,7 +188,7 @@ U zult dan dit zien:
 
 ![ Journey Optimizer ](./images/oc21.png)
 
-Daarna, ga naar **Componenten van de Inhoud** en sleep en laat vallen a **** component van de Tekst op de vierde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst op de vierde rij.
 
 ![ Journey Optimizer ](./images/oc22.png)
 
@@ -219,7 +200,7 @@ Verander de doopvontgrootte in **26px** en centrum uw tekst in deze cel. Dan heb
 
 ![ Journey Optimizer ](./images/oc23.png)
 
-Daarna, ga naar **Componenten van de Inhoud** en sleep en laat vallen een **HTML** component op de vijfde rij. Klik de component van de HTML en klik dan **tonen de broncode**.
+Daarna, ga naar **Inhoud** en sleep en laat vallen een **HTML** component op de vijfde rij. Klik de component van de HTML en klik dan **tonen de broncode**.
 
 ![ Journey Optimizer ](./images/oc24.png)
 
@@ -235,7 +216,7 @@ Dan heb je dit. Klik **sparen** om uw vooruitgang te bewaren.
 
 ![ Journey Optimizer ](./images/oc26.png)
 
-Ga naar **Componenten van de Inhoud** en sleep en laat vallen een **HTML** component op de zesde rij. Klik de component van de HTML en klik dan **tonen de broncode**.
+Ga naar **Inhoud** en sleep en laat vallen een **HTML** component op de zesde rij. Klik de component van de HTML en klik dan **tonen de broncode**.
 
 ![ Journey Optimizer ](./images/oc57.png)
 
@@ -257,11 +238,9 @@ Eerst, schrap **xxx** in uw code van HTML eerst.
 
 In het linkermenu, klik **Contextafhankelijke attributen**. Deze context wordt doorgegeven aan de boodschap van de reis.
 
-![ Journey Optimizer ](./images/oc601.png)
-
 Dan zie je dit. Klik de pijl naast **Journey Orchestration** om dieper te boren.
 
-![ Journey Optimizer ](./images/oc61.png)
+![ Journey Optimizer ](./images/oc601.png)
 
 Klik de pijl naast **Gebeurtenissen** om dieper te boren.
 
@@ -287,7 +266,7 @@ Je bent nu weer in de e-mail-Designer. Klik **sparen** om uw vooruitgang te bewa
 
 ![ Journey Optimizer ](./images/oc67.png)
 
-Daarna, ga naar **Componenten van de Inhoud** en sleep en laat vallen een **HTML** component op de zevende rij. Klik de component van de HTML en klik dan **tonen de broncode**.
+Daarna, ga naar **Inhoud** en sleep en laat vallen een **HTML** component op de zevende rij. Klik de component van de HTML en klik dan **tonen de broncode**.
 
 ![ Journey Optimizer ](./images/oc68.png)
 
@@ -304,9 +283,6 @@ Eerst, schrap eerste **xxx** in uw code van HTML.
 ![ Journey Optimizer ](./images/oc71.png)
 
 In het linkermenu, klik **Contextafhankelijke Attributen**.
-
-![ Journey Optimizer ](./images/oc711.png)
-
 Klik de pijl naast **Journey Orchestration** om dieper te boren.
 
 ![ Journey Optimizer ](./images/oc72.png)
@@ -336,13 +312,10 @@ Dan heb je dit. Nu schrap tweede **xxx** in uw code van HTML.
 ![ Journey Optimizer ](./images/oc76.png)
 
 Klik opnieuw het **+** pictogram naast **Totaal van de Prijs** om dat aan het canvas toe te voegen.
-
-![ Journey Optimizer ](./images/oc77.png)
-
 U kunt het gebied **Valuta** van binnen het **voorwerp van de Orde** op het canvas ook toevoegen, aangezien u hier kunt zien.
 Wanneer u wordt gedaan, klik **sparen** om uw veranderingen te bewaren.
 
-![ Journey Optimizer ](./images/oc771.png)
+![ Journey Optimizer ](./images/oc77.png)
 
 Je bent dan terug in de e-mail Designer. Klik **sparen** opnieuw.
 
@@ -356,7 +329,7 @@ Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
 
 ![ Journey Optimizer ](./images/oc79a.png)
 
-Klik **O.K.** om uw e-mailactie te sluiten.
+Klik **sparen** om uw e-mailactie te sluiten.
 
 ![ Journey Optimizer ](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 
 ![ pagina van Eigenschappen ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-In module 0 heeft het demosysteem twee Client-eigenschappen voor u gemaakt: een voor de website en een voor de mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ Ga naar **Elementen van Gegevens**. Onderzoek en open het gegevenselement **XDM 
 
 ![ Journey Optimizer ](./images/oc91.png)
 
-Dan zie je dit. Navigeer naar het veld **_experience.campagne.orchestration.eventID** en vul hier uw eventID in. De eventID die u hier moet invullen, is de eventID die u hebt gemaakt als onderdeel van oefening 10.1.2. Klik **sparen** of **sparen aan Bibliotheek**.
+Dan zie je dit. Navigeer naar het veld **_experience.campagne.orchestration.eventID** en vul hier uw eventID in. EventID om hier te vullen, is eventID u als deel van oefening 3.4.1.1 creeerde klikt **sparen** of **sparen aan Bibliotheek**.
 
 ![ Journey Optimizer ](./images/oc92.png)
 
-Sla uw wijzigingen op in de eigenschap Client en publiceer uw wijzigingen door uw ontwikkelingsbibliotheek bij te werken.
+Sla de wijzigingen in de eigenschap op en publiceer de wijzigingen door de ontwikkelingsbibliotheek bij te werken.
 
 ![ Journey Optimizer ](./images/oc93.png)
 
@@ -402,33 +375,29 @@ Uw wijzigingen worden nu geïmplementeerd en kunnen worden getest.
 
 Laten we de bijgewerkte reis testen door een product te kopen op de demo-website.
 
-Ga naar [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw websiteproject om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![ DSN ](./../../datacollection/module1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
+Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen.
-
-![ Demo ](./../../../modules/datacollection/module1.2/images/pv1.png)
+![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
 Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de Klant in real time met **identiteitskaart van het Experience Cloud** als primaire herkenningsteken voor deze momenteel onbekende klant.
 
@@ -442,13 +411,25 @@ Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zul
 
 ![ Demo ](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-Voeg om het even welk product aan uw kar toe, en ga naar de **Kar** pagina. Klik **ga aan controle** te werk.
+Elk product aan uw winkelwagentje toevoegen
+
+![ Journey Optimizer ](./images/cart1a.png)
+
+Ga naar de **Kar** pagina. Klik **Controle**.
 
 ![ Journey Optimizer ](./images/cart1.png)
 
-Daarna, verifieer de gebieden op de controlepagina en klik **Controle**.
+Controleer vervolgens de velden en vul deze zo nodig in. Klik **ga** verder.
 
 ![ Journey Optimizer ](./images/cart2.png)
+
+Klik **bevestigen Orde**.
+
+![ Journey Optimizer ](./images/cart2a.png)
+
+Uw bestelling wordt nu bevestigd.
+
+![ Journey Optimizer ](./images/cart2b.png)
 
 U ontvangt dan binnen enkele seconden een bevestigingsbericht voor uw bestelling.
 

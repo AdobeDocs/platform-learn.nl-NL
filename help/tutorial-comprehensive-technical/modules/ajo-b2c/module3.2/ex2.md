@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Een e
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Een externe gegevensbron definiëren
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -16,11 +17,11 @@ In deze oefening, zult u een douane externe gegevensbron tot stand brengen door 
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In het linkermenu, scrol neer en klik **Configuraties**. Daarna, klik **leiden** knoop onder **Gegevensbronnen**.
 
@@ -45,13 +46,9 @@ Klik **creeer een Rekening**.
 
 ![ WeatherMap ](./images/owm1.png)
 
-Vul de details in.
+Vul de details in. Klik **creëren Rekening**.
 
 ![ WeatherMap ](./images/owm2.png)
-
-Klik **creëren Rekening**.
-
-![ WeatherMap ](./images/owm3.png)
 
 U wordt vervolgens omgeleid naar uw accountpagina.
 
@@ -65,7 +62,7 @@ Een **Sleutel van API** kijkt als dit: `b2c4c36b6bb59c3458d6686b05311dc3`.
 
 U kunt de **API Documentatie** voor **Huidige Weer** [ hier ](https://openweathermap.org/current) vinden.
 
-In ons gebruik-geval, zullen wij de verbinding met Open Kaart van het Weer uitvoeren die op de plaats wordt gebaseerd de klant in is.
+Voor dit gebruik-geval, zult u de verbinding met Open Weather Kaart uitvoeren die op de plaats wordt gebaseerd de klant binnen is, gebruikend het **ingebouwde API verzoek door plaatsnaam**.
 
 ![ WeatherMap ](./images/owm6.png)
 
@@ -73,7 +70,7 @@ Ga terug naar **Adobe Journey Optimizer**, aan uw lege **Externe Gegevens Source
 
 ![ Demo ](./images/emptyds.png)
 
-Gebruik `--aepUserLdap--WeatherApi` als naam voor de gegevensbron. In dit voorbeeld is de naam van de gegevensbron `vangeluwWeatherApi ` .
+Gebruik `--aepUserLdap--WeatherApi` als naam voor de gegevensbron.
 
 Stel Beschrijving in op: `Access to the Open Weather Map` .
 
@@ -98,7 +95,7 @@ Tot slot moet u a **FieldGroup** bepalen, die fundamenteel het verzoek is u naar
 
 ![ Demo ](./images/fg.png)
 
-Volgens de Weather API-documentatie moeten we een parameter `q=City` verzenden.
+Volgens de Weather API-documentatie moet u een parameter `q=City` verzenden.
 
 ![ Demo ](./images/owmapi.png)
 
@@ -106,58 +103,68 @@ Configureer uw FieldGroup als volgt om de verwachte API-aanvraag af te stemmen:
 
 >[!IMPORTANT]
 >
->De naam van de veldgroep moet uniek zijn. Gebruik de volgende naamgevingsconventie: `--aepUserLdap--WeatherByCity` in dit geval moet de naam `vangeluwWeatherByCity` zijn
+>De naam van de veldgroep moet uniek zijn. Gebruik de volgende naamgevingsconventie: `--aepUserLdap--WeatherByCity`
 
 ![ Demo ](./images/fg1.png)
 
 Voor de Payload van de Reactie, moet u een voorbeeld van de Reactie kleven die door Weather API zal worden verzonden.
 
-U kunt de verwachte Reactie van API JSON op de API documentatiepagina [ hier ](https://openweathermap.org/current) vinden.
+U kunt de verwachte Reactie van API JSON op de API documentatiepagina [ hier ](https://openweathermap.org/current) vinden, onder het **JSON** onderwerp.
 
 ![ Demo ](./images/owmapi1.png)
 
 Of u kunt de JSON-reactie hier kopiëren:
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 Kopieer de bovenstaande JSON-reactie naar het klembord en ga vervolgens naar het configuratiescherm van de aangepaste gegevensbron.

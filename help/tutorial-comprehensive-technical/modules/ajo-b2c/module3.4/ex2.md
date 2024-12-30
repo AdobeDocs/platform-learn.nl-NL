@@ -4,7 +4,7 @@ description: In deze sectie configureert u een batch-e-mailtransport voor het ve
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.2.1 Een nieuwsbrief maken
 

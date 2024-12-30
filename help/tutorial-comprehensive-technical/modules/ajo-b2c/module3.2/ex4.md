@@ -1,12 +1,12 @@
 ---
-title: Adobe Journey Optimizer - Het SMS-kanaal configureren en gebruiken in Adobe Journey Optimizer
-description: Adobe Journey Optimizer - Het SMS-kanaal configureren en gebruiken in Adobe Journey Optimizer
+title: Adobe Journey Optimizer - Uw reis en bericht configureren
+description: Adobe Journey Optimizer - Uw reis en bericht configureren
 kt: 5342
-audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: dc7c6f18-06d2-4497-96b0-8dc78d389731
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '2300'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -15,24 +15,23 @@ ht-degree: 0%
 
 In deze oefening, zult u een reis en verscheidene tekstberichten creëren door Adobe Journey Optimizer te gebruiken.
 
-Voor dit gebruiksgeval, is het doel verschillende sms- berichten te verzenden die op de weersomstandigheden van de plaats van uw klant worden gebaseerd. Er zijn drie scenario&#39;s vastgesteld:
+Voor dit gebruiksgeval, is het doel verschillende berichten te verzenden die op de weersomstandigheden van de plaats van uw klant worden gebaseerd. Er zijn drie scenario&#39;s vastgesteld:
 
 - Kleiner dan 10° Celsius
 - Tussen 10° en 25° Celsius
 - Warmer dan 25° Celsius
 
-Voor deze 3 voorwaarden moet je 3 SMS-berichten definiëren in Adobe Journey Optimizer.
+Voor deze 3 voorwaarden moet u 3 berichten definiëren in Adobe Journey Optimizer.
 
 ## 3.2.4.1 Maak uw reis
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
-
+![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In het linkermenu, ga naar **Reizen** en klik **creeer Reis** beginnen uw Reis te creëren.
 
@@ -40,11 +39,11 @@ In het linkermenu, ga naar **Reizen** en klik **creeer Reis** beginnen uw Reis t
 
 Je moet eerst je reis benoemen.
 
-Gebruik `--aepUserLdap-- - Geofence Entry Journey` als naam voor de rit. In dit voorbeeld is de naam van de rit `vangeluw - Geofence Entry Journey` . Er mogen op dit moment geen andere waarden worden ingesteld. Klik **OK**.
+Gebruik `--aepUserLdap-- - Geofence Entry Journey` als naam voor de rit. Er mogen op dit moment geen andere waarden worden ingesteld. Klik **sparen**.
 
 ![ Demo ](./images/joname.png)
 
-Op de linkerkant van uw scherm, heb een blik bij **Gebeurtenissen**. De eerder gemaakte gebeurtenis wordt in die lijst weergegeven. Selecteer het, sleep het en laat vallen het op het reiscanvas. Uw reis ziet er dan zo uit. Klik **OK**.
+Op de linkerkant van uw scherm, heb een blik bij **Gebeurtenissen**. De eerder gemaakte gebeurtenis wordt in die lijst weergegeven. Selecteer het, sleep het en laat vallen het op het reiscanvas. Uw reis ziet er dan zo uit. Klik **sparen**.
 
 ![ Demo ](./images/joevents.png)
 
@@ -52,7 +51,7 @@ Daarna, klik op **Orchestration**. U ziet nu de beschikbare **mogelijkheden van 
 
 ![ Demo ](./images/jo2.png)
 
-U moet nu drie voorwaarden definiëren:
+U moet nu drie paden configureren voor deze voorwaarde:
 
 - Het is kouder dan 10° Celsius
 - Het ligt tussen 10° en 25° Celsius
@@ -83,25 +82,25 @@ Dan zie je dit.
 ![ Demo ](./images/jo10.png)
 
 Om de temperatuur als deel van deze voorwaarde terug te winnen, moet u de stad verstrekken waarin de klant momenteel is.
-De **Stad** moet met de dynamische parameter `q` worden verbonden, enkel zoals wij eerder in de Open Weather API Documentatie zagen.
+De **Stad** moet met de dynamische parameter `q` worden verbonden, enkel zoals u eerder in de Open Weather API Documentatie zag.
 
 Klik het gebied **dynamische val: q** zoals die in het schermafbeelding wordt vermeld.
 
 ![ Demo ](./images/jo11.png)
 
-Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de beschikbare Gegevensbronnen bevat.
+U moet dan het gebied vinden dat de huidige stad van de klant in één van de beschikbare Gegevensbronnen bevat, in dit geval, moet u het onder **Context** vinden.
 
 ![ Demo ](./images/jo12.png)
 
 U kunt het veld vinden door naar `--aepUserLdap--GeofenceEntry.placeContext.geo.city` te navigeren.
 
-Door op dat veld te klikken, wordt het toegevoegd als de dynamische waarde voor de parameter `q` . Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
+Door op dat veld te klikken of op **+** te klikken, wordt het veld toegevoegd als de dynamische waarde voor de parameter `q` . Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In dit geval simuleert u dit met de eigenschap voor gegevensverzameling van de demo-website. Klik **OK**.
 
 ![ Demo ](./images/jo13.png)
 
 ### Voorwaarde 2: tussen 10° en 25° Celsius
 
-Nadat u de eerste voorwaarde hebt toegevoegd, ziet u dit scherm. Klik **toevoegen Weg**.
+Nadat u de eerste voorwaarde hebt toegevoegd, ziet u dit scherm. Klik **toevoegen een weg**.
 
 ![ Demo ](./images/joc2.png)
 
@@ -126,7 +125,7 @@ Dan zie je dit.
 ![ Demo ](./images/joc10.png)
 
 Om de temperatuur als deel van deze Voorwaarde terug te winnen, moet u de stad verstrekken waarin de klant momenteel is.
-De **Stad** moet met de dynamische parameter **q** worden verbonden, enkel als wij eerder in de Open Weather API Documentatie zagen.
+De **Stad** moet met de dynamische parameter **q** worden verbonden, enkel als u eerder in de Open Weather API Documentatie zag.
 
 Klik het gebied **dynamische val: q** zoals die in het schermafbeelding wordt vermeld.
 
@@ -136,7 +135,7 @@ Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de 
 
 ![ Demo ](./images/jo12.png)
 
-U kunt het veld vinden door naar `--aepUserLdap--GeofenceEntry.placeContext.geo.city` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
+U kunt het veld vinden door naar `--aepUserLdap--GeofenceEntry.placeContext.geo.city` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In dit geval simuleert u dit met de eigenschap voor gegevensverzameling van de demo-website. Klik **OK**.
 
 ![ Demo ](./images/jo13.png)
 
@@ -144,7 +143,7 @@ Vervolgens voegt u de derde voorwaarde toe.
 
 ### Voorwaarde 3: Warmer dan 25° Celsius
 
-Nadat u de tweede voorwaarde hebt toegevoegd, ziet u dit scherm. Klik **toevoegen Weg**.
+Nadat u de tweede voorwaarde hebt toegevoegd, ziet u dit scherm. Klik **toevoegen een weg**.
 
 ![ Demo ](./images/joct2.png)
 
@@ -170,7 +169,7 @@ Dan zie je dit.
 ![ Demo ](./images/joct10.png)
 
 Om de temperatuur als deel van deze Voorwaarde terug te winnen, moet u de stad verstrekken waarin de klant momenteel is.
-De **Stad** moet met de dynamische parameter **q** worden verbonden, enkel als wij eerder in de Open Weather API Documentatie zagen.
+De **Stad** moet met de dynamische parameter **q** worden verbonden, enkel als u eerder in de Open Weather API Documentatie zag.
 
 Klik het gebied **dynamische val: q** zoals die in het schermafbeelding wordt vermeld.
 
@@ -180,85 +179,29 @@ Dan moet u het gebied vinden dat de huidige plaats van de klant in één van de 
 
 ![ Demo ](./images/jo12.png)
 
-U kunt het veld vinden door naar ```--aepUserLdap--GeofenceEntry.placeContext.geo.city``` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In ons geval simuleren we dit met de beheerconsole van de demo-website. Klik **OK**.
+U kunt het veld vinden door naar ```--aepUserLdap--GeofenceEntry.placeContext.geo.city``` te navigeren. Door dat gebied te klikken, zal het als dynamische waarde voor de parameter **q** worden toegevoegd. Dit veld wordt gevuld met bijvoorbeeld de geolocatieservice die u in uw mobiele app hebt geïmplementeerd. In dit geval simuleert u dit met de eigenschap voor gegevensverzameling van de demo-website. Klik **OK**.
 
 ![ Demo ](./images/jo13.png)
 
-U hebt nu drie geconfigureerde paden. Klik **OK**.
+U hebt nu drie geconfigureerde paden. Klik **sparen**.
 
 ![ Demo ](./images/jo3path.png)
 
-Aangezien dit een reis voor het leren doel is, zullen wij nu een paar acties vormen om de verscheidenheid van opties te tonen moeten de verkopers nu berichten leveren.
+Aangezien dit een reis voor het leren doel is, zult u nu een paar acties vormen om de verscheidenheid van opties te tonen moeten de verkopers nu berichten leveren.
 
 ## 3.2.4.2 Berichten verzenden voor een pad: lager dan 10° Celsius
 
-Voor elk van de temperatuurcontexten, zullen wij proberen om een tekstbericht naar onze klant te verzenden. Wij kunnen een tekstbericht slechts verzenden als wij een Mobiel Aantal beschikbaar voor een klant hebben, zodat zullen wij eerst moeten verifiëren dat wij.
+Voor elk van de temperatuurcontexten, zult u proberen om een tekstbericht naar een klant te verzenden. Voor deze oefening, zult u een echt bericht naar een kanaal van de Slack in plaats van een mobiel telefoonaantal verzenden.
 
-Laten wij op **Kleur dan 10 C** concentreren.
+Laten de nadruk op de weg **Kleur dan 10 C**.
 
 ![ Demo ](./images/p1steps.png)
-
-Neem een ander **element van de Voorwaarde** en sleep het zoals hieronder vermeld in het schermschot. We gaan controleren of er voor deze klant een mobiel nummer beschikbaar is.
-
-![ Demo ](./images/joa1.png)
-
-Aangezien dit slechts een voorbeeld is, vormen wij slechts de optie waar de klant een mobiel aantal beschikbaar heeft. Voeg een etiket van **toe heeft mobiel?**.
-
-Klik op **uitgeven** pictogram voor de Uitdrukking voor de **weg Path1**.
-
-![ Demo ](./images/joa2.png)
-
-In de Gegevensbronnen die op de linkerzijde worden getoond, navigeer aan **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. U leest het mobiele telefoonnummer nu rechtstreeks vanuit het Adobe Experience Platform Real-Time Klantprofiel.
-
-![ Demo ](./images/joa3.png)
-
-Selecteer het gebied **Aantal**, dan belemmering en laat vallen het aan het Canvas van de Voorwaarde.
-
-Selecteer de exploitant **is niet leeg**. Klik **OK**.
-
-![ Demo ](./images/joa4.png)
-
-Dan zie je dit. Klik nogmaals **O.K.**.
-
-![ Demo ](./images/joa6.png)
-
-Je reis zal er dan zo uitzien. Klik op **Acties** zoals die in het schermafbeelding worden vermeld.
-
-![ Demo ](./images/joa8.png)
-
-Selecteer de actie **SMS**, dan belemmering en laat vallen het na de voorwaarde u enkel toevoegde.
-
-![ Demo ](./images/joa9.png)
-
-Plaats de **Categorie** aan **Marketing** en selecteer een oppervlakte van SMS die u toelaat om SMS te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **SMS**.
-
-![ ACOP ](./images/journeyactions1.png)
-
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
-
-![ ACOP ](./images/journeyactions2.png)
-
-U ziet nu het berichtdashboard, waar u de tekst van uw SMS kunt vormen. Klik het **samenstellen bericht** gebied om uw bericht tot stand te brengen.
-
-![ Journey Optimizer ](./images/sms3.png)
-
-Voer de volgende tekst in: `Brrrr... {{profile.person.name.firstName}}, it's freezing. 20% discount on jackets today!`. Klik **sparen**.
-
-![ Journey Optimizer ](./images/sms4.png)
-
-Dan zie je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
-
-![ Journey Optimizer ](./images/sms4a.png)
-
-Dan ben je hier weer. Klik **OK**.
-
-![ Journey Optimizer ](./images/sms4b.png)
 
 In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
 
 ![ Demo ](./images/joa18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `TEXTTOSLACK`.
+Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
 
 ![ Demo ](./images/joa19.png)
 
@@ -268,11 +211,11 @@ In popup-venster, klik **Geavanceerde Wijze**.
 
 Selecteer de hieronder code, kopieer het en kleef het in de **Geavanceerde Redacteur van de Wijze**. Klik **OK**.
 
-`"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " It's freezing. 20% discount on Jackets today!"`
+`"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ",  it's cold and freezing outside. Get comfortable at home with a 20% discount on a Disney+ subscription!"`
 
 ![ Demo ](./images/joa21.png)
 
-Je ziet de voltooide actie. Klik **OK**.
+Je ziet de voltooide actie. Klik **sparen**.
 
 ![ Demo ](./images/joa22.png)
 
@@ -280,73 +223,17 @@ Deze weg van de reis is nu gereed.
 
 ## 3.2.4.3 Berichten verzenden voor een pad: tussen 10° en 25° Celsius
 
-Voor elk van de temperatuurcontexten, zullen wij proberen om een tekstbericht naar onze klant te verzenden. Wij kunnen een tekstbericht slechts verzenden als wij een Mobiel Aantal beschikbaar voor een klant hebben, zodat zullen wij eerst moeten verifiëren dat wij.
+Voor elk van de temperatuurcontexten, zult u proberen om een bericht naar uw klant te verzenden. Voor deze oefening, zult u een echt bericht naar een kanaal van de Slack in plaats van een mobiel telefoonaantal verzenden.
 
 Laten wij op **tussen 10 en 25 de weg van C** concentreren.
 
 ![ Demo ](./images/p2steps.png)
 
-Neem een ander **element van de Voorwaarde** en sleep het zoals hieronder vermeld in het schermschot. We gaan controleren of er voor deze klant een mobiel nummer beschikbaar is.
-
-![ Demo ](./images/jop1.png)
-
-Aangezien dit slechts een voorbeeld is, vormen wij slechts de optie waar de klant een mobiel aantal beschikbaar heeft. Voeg een etiket van **toe heeft mobiel?**.
-
-Klik op **uitgeven** pictogram voor de Uitdrukking voor de **weg Path1**.
-
-![ Demo ](./images/joa2p2.png)
-
-In de Gegevensbronnen die op de linkerzijde worden getoond, navigeer aan **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. U leest het mobiele telefoonnummer nu rechtstreeks vanuit het Adobe Experience Platform Real-Time Klantprofiel.
-
-![ Demo ](./images/joa3.png)
-
-Selecteer het gebied **Aantal**, dan belemmering en laat vallen het aan het Canvas van de Voorwaarde.
-
-Selecteer de exploitant **is niet leeg**. Klik **OK**.
-
-![ Demo ](./images/joa4.png)
-
-Dan zie je dit. Klik **OK**.
-
-![ Demo ](./images/joa6.png)
-
-Je reis zal er dan zo uitzien. Klik op **Acties** zoals die in het schermafbeelding worden vermeld.
-
-![ Demo ](./images/jop8.png)
-
-Selecteer de actie **SMS**, dan belemmering en laat vallen het na de voorwaarde u enkel toevoegde.
-
-![ Demo ](./images/jop9.png)
-
-Plaats de **Categorie** aan **Marketing** en selecteer een oppervlakte van SMS die u toelaat om SMS te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **SMS**.
-
-![ ACOP ](./images/journeyactions1z.png)
-
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
-
-![ ACOP ](./images/journeyactions2z.png)
-
-U ziet nu het berichtdashboard, waar u de tekst van uw SMS kunt vormen. Klik het **samenstellen bericht** gebied om uw bericht tot stand te brengen.
-
-![ Journey Optimizer ](./images/sms3a.png)
-
-Voer de volgende tekst in: `What a nice weather for the time of year, {{profile.person.name.firstName}} - 20% discount on Sweaters today!`. Klik **sparen**.
-
-![ Journey Optimizer ](./images/sms4az.png)
-
-Dan zie je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
-
-![ Journey Optimizer ](./images/sms4azz.png)
-
-U ziet nu de voltooide actie. Klik **OK**.
-
-![ Demo ](./images/jop17.png)
-
 In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van het Bericht**.
 
 ![ Demo ](./images/jop18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `TEXTTOSLACK`.
+Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
 
 ![ Demo ](./images/joa19z.png)
 
@@ -356,7 +243,7 @@ In popup-venster, klik **Geavanceerde Wijze**.
 
 Selecteer de hieronder code, kopieer het en kleef het in de **Geavanceerde Redacteur van de Wijze**. Klik **OK**.
 
-`"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Sweaters today!"`
+`"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Apple AirPods so you can go for a walk and listen to your favorite podcast!"`
 
 ![ Demo ](./images/jop21.png)
 
@@ -368,73 +255,17 @@ Deze weg van de reis is nu gereed.
 
 ## 3.2.4.4 Berichten verzenden voor een pad: Warmer dan 25° Celsius
 
-Voor elk van de temperatuurcontexten, zullen wij proberen om een tekstbericht naar onze klant te verzenden. Wij kunnen een tekstbericht slechts verzenden als wij een Mobiel Aantal beschikbaar voor een klant hebben, zodat zullen wij eerst moeten verifiëren dat wij.
+Voor elk van de temperatuurcontexten, zult u proberen om een bericht naar uw klant te verzenden. Voor deze oefening, zult u een echt bericht naar een kanaal van de Slack in plaats van een mobiel telefoonaantal verzenden.
 
 Laten wij op **Warmer dan 25 weg van C** concentreren.
 
 ![ Demo ](./images/p3steps.png)
 
-Neem een ander **element van de Voorwaarde** en sleep het zoals hieronder vermeld in het schermschot. U gaat controleren of er voor deze klant een mobiel nummer beschikbaar is.
-
-![ Demo ](./images/jod1.png)
-
-Aangezien dit slechts een voorbeeld is, vormen wij slechts de optie waar de klant een mobiel aantal beschikbaar heeft. Voeg een etiket van **toe heeft mobiel?**.
-
-Klik op **uitgeven** pictogram voor de Uitdrukking voor de **weg Path1**.
-
-![ Demo ](./images/joa2p3.png)
-
-In de Gegevensbronnen die op de linkerzijde worden getoond, navigeer aan **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. U leest het mobiele telefoonnummer nu rechtstreeks vanuit het Adobe Experience Platform Real-Time Klantprofiel.
-
-![ Demo ](./images/joa3.png)
-
-Selecteer het gebied **Aantal**, dan belemmering en laat vallen het aan het Canvas van de Voorwaarde.
-
-Selecteer de exploitant **is niet leeg**. Klik **OK**.
-
-![ Demo ](./images/joa4.png)
-
-Dan zie je dit. Klik **OK**.
-
-![ Demo ](./images/joa6.png)
-
-Je reis zal er dan zo uitzien. Klik op **Acties** zoals die in het schermafbeelding worden vermeld.
-
-![ Demo ](./images/jod8.png)
-
-Selecteer de actie **SMS**, dan belemmering en laat vallen het na de voorwaarde u enkel toevoegde.
-
-![ Demo ](./images/jod9.png)
-
-Plaats de **Categorie** aan **Marketing** en selecteer een oppervlakte van SMS die u toelaat om SMS te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **SMS**.
-
-![ ACOP ](./images/journeyactions1zy.png)
-
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
-
-![ ACOP ](./images/journeyactions2zy.png)
-
-U ziet nu het berichtdashboard, waar u de tekst van uw SMS kunt vormen. Klik het **samenstellen bericht** gebied om uw bericht tot stand te brengen.
-
-![ Journey Optimizer ](./images/sms3ab.png)
-
-Voer de volgende tekst in: `So warm, {{profile.person.name.firstName}}! 20% discount on swimwear today!`. Klik **sparen**.
-
-![ Journey Optimizer ](./images/sms4ab.png)
-
-Dan zie je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
-
-![ Journey Optimizer ](./images/sms4azzz.png)
-
-U ziet nu de voltooide actie. Klik **OK**.
-
-![ Demo ](./images/jod17.png)
-
 In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--TextSlack`, dan belemmering en laat vallen het na de **actie van Berichten**.
 
 ![ Demo ](./images/jod18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `TEXTTOSLACK`.
+Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
 
 ![ Demo ](./images/joa19zzz.png)
 
@@ -444,11 +275,11 @@ In popup-venster, klik **Geavanceerde Wijze**.
 
 Selecteer de hieronder code, kopieer het en kleef het in de **Geavanceerde Redacteur van de Wijze**. Klik **OK**.
 
-`"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on swimwear today!"`
+`"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on adding 10GB of extra data so you can get online at the beach!"`
 
 ![ Demo ](./images/jod21.png)
 
-Je ziet de voltooide actie. Klik **OK**.
+Je ziet de voltooide actie. Klik **sparen**.
 
 ![ Demo ](./images/jod22.png)
 
