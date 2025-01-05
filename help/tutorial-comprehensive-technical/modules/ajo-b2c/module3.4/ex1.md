@@ -4,9 +4,9 @@ description: In deze sectie zult u een op trekker-gebaseerde reis - de Bevestigi
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1918'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ De belemmering en laat vallen 8 keer a **1:1 kolom** op het canvas, dat u dit zo
 
 ![ Journey Optimizer ](./images/oc9.png)
 
-In het linkermenu, ga naar **Fragments**. Sleep de header die u eerder in oefening 3.2.2 hebt gemaakt naar de eerste component in het canvas. Sleep de voettekst die u eerder in oefening 3.2.2 hebt gemaakt naar de laatste component in het canvas.
+In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1 ](./../module3.1/ex2.md) op de eerste component in het canvas creeerde. Sleep de footer u vroeger in [ oefening 3.1.2.2 ](./../module3.1/ex2.md) op de laatste component in het canvas creeerde.
 
 ![ Journey Optimizer ](./images/fragm1.png)
 

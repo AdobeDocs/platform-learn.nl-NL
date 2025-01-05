@@ -4,151 +4,191 @@ description: In deze sectie configureert u een batch-e-mailtransport voor het ve
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
-# 3.4.2 Een op batch gebaseerde nieuwsbrief-reis configureren
+# 3.4.2 Een campagne configureren
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.2.1 Een nieuwsbrief maken
 
-U zult nu een op partij-gebaseerde reis creëren. In tegenstelling tot de op gebeurtenissen gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang steunt om een reis voor één specifieke klant teweeg te brengen, richten de op partij-gebaseerde reizen één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
+## 3.4.2.1 Het publiek maken
 
-In het menu, ga naar **Reizen** en klik **creeer Reizen**.
+Voordat u uw campagne maakt, moet u het publiek definiëren dat de campagne moet ontvangen. Om een publiek tot stand te brengen, ga naar **Soorten publiek** in het linkermenu. Je ziet hier al eerder gecreëerd publiek.
+
+Klik op **+ Publiek maken** .
+
+![ Journey Optimizer ](./images/audcampaign1.png)
+
+Selecteer **bouwt regel** en klik **creëren**.
+
+![ Journey Optimizer ](./images/audcampaign2.png)
+
+Selecteer het gebied **Individueel Profiel XDM > Persoonlijke E-mail > Adres** en voeg het aan het canvas toe. Plaats de regelvoorwaarde aan **bestaat**.
+
+Om het verzenden van e-mails naar andere gebruikers in uw gedeelde opleidingsmilieu te vermijden, kunt u een filter zoals **ook toevoegen Voornaam evenaart - uw voornaam -**.
+
+Plaats de naam van uw publiek aan `--aepUserLdap-- - All customers with email` en klik **Publish**.
+
+![ Journey Optimizer ](./images/audcampaign3.png)
+
+Uw publiek wordt nu gepubliceerd en kan in een campagne worden gebruikt.
+
+## 3.4.2.2 Een nieuwsbrief maken
+
+U maakt nu een campagne. In tegenstelling tot de op een gebeurtenis gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang baseert om een reis voor één specifieke klant teweeg te brengen, richten de campagnes één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op een regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
+
+In het menu, ga naar **Campagnes** en klik **creeer campagne**.
 
 ![ Journey Optimizer ](./images/oc43.png)
 
-Rechts ziet u een formulier waarin u de naam en de beschrijving van het transport moet vermelden. Voer de volgende waarden in:
+Selecteer **Gepland - Op de markt brengend** en klik **creeer**.
 
-- **Naam**: `--aepUserLdap-- - Newsletter Journey`. Bijvoorbeeld: **vangeluw - de Reizen van de Bulletin**.
+![ Journey Optimizer ](./images/campaign1.png)
+
+Voor het scherm van de campagneverwezenlijking, vorm het volgende:
+
+- **Naam**: `--aepUserLdap-- - CitiSignal Newsletter`.
 - **Beschrijving**: Maandelijkse Nieuwsbrief
+- **Type van Identiteit**: verandering in E-mail
 
-Klik **OK**.
+Klik **Uitgezochte publiek**.
 
-![ Journey Optimizer ](./images/batchj2.png)
+![ Journey Optimizer ](./images/campaign2.png)
 
-Onder **Orchestratie**, belemmering en laat vallen **Gelezen Publiek** op het canvas. Dit betekent dat, zodra de reis gepubliceerd wordt, het hele publiek zal terugwinnen, dat dan het doelpubliek van de reis en de boodschap wordt. Klik **Uitgezocht een publiek**.
+Voor het **publiek**, selecteer het publiek u in de vorige stap, `--aepUserLdap-- - All customers with email` creeerde. Klik **sparen**.
 
-![ Journey Optimizer ](./images/batchj3.png)
+![ Journey Optimizer ](./images/campaign2a.png)
 
-In **kies een publiek** popup, onderzoek naar uw ldap en selecteer het publiek u in [ Module 2.3 - In real time CDP creeerde - Bouw een publiek en neem actie ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) genoemd `--aepUserLdap-- - Interest in Galaxy S24`. Klik **sparen**.
+Voor de **Actie**, selecteer **E-mail** en selecteer een bestaande **E-mailconfiguratie**. U gaat de inhoud over een paar minuten bewerken.
 
-![ Journey Optimizer ](./images/batchj5.png)
+![ Journey Optimizer ](./images/campaign3.png)
 
-Klik **OK**.
+Voor het **Programma**, kies **op een specifieke datum en een tijd** en plaats een tijd van keus.
 
-![ Journey Optimizer ](./images/batchj6.png)
+![ Journey Optimizer ](./images/campaign4.png)
 
-In het linkermenu, vind de **sectie van Acties** en sleep en laat vallen een **E-mail** actie op het canvas.
+U kunt nu het e-mailbericht zelf maken. De rol omhoog een beetje, en klikt **geeft inhoud** uit.
 
-![ Journey Optimizer ](./images/batchj7.png)
+![ Journey Optimizer ](./images/campaign5.png)
 
-Plaats de **Categorie** aan **Marketing** en selecteer een e-mailoppervlakte die u toelaat om e-mail te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **E-mail**. Zorg ervoor dat checkboxes voor **klikt op e-mail** en **e-mail opent** allebei worden toegelaten.
+Dan zie je dit. Voor de **lijn van het Onderwerp**, gebruik dit: `Your monthly CitiSignal update has arrived.`. Daarna, klik **uitgeeft e-maillichaam**.
 
-![ ACOP ](./images/journeyactions1eee.png)
+![ Journey Optimizer ](./images/campaign6.png)
 
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
+Kies **Ontwerp van kras**.
 
-![ ACOP ](./images/journeyactions2.png)
+![ Journey Optimizer ](./images/campaign7.png)
 
-U ziet dit nu. Klik het **Onderwerplijn** tekstgebied.
+Dan zie je dit. In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
 
-![ Journey Optimizer ](./images/batch4.png)
+De belemmering en laat vallen 3 keer a **1:1 kolom** op het canvas, 1 keer een 1:2 kolom verlaten en 1 keer een 2:1 kolom recht die u deze structuur zou moeten geven:
 
-Voer deze tekst voor de onderwerpregel in: `Luma Newsletter - your monthly update has arrived.`. Klik **sparen**.
+![ Journey Optimizer ](./images/campaign8.png)
 
-![ Journey Optimizer ](./images/batch5.png)
+In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1 ](./../module3.1/ex2.md) op de eerste component in het canvas creeerde. Sleep de footer u vroeger in [ oefening 3.1.2.2 ](./../module3.1/ex2.md) op de laatste component in het canvas creeerde.
 
-Dan ben je hier weer. Klik **E-mail Designer** beginnen de e-mailinhoud tot stand te brengen.
+![ Journey Optimizer ](./images/campaign9.png)
 
-![ Journey Optimizer ](./images/batch6.png)
+Klik op het pictogram **+** in het linkermenu. Ga naar **Inhoud** beginnen inhoud op het canvas toe te voegen.
 
-Dan zie je dit. Klik **de HTML van de Invoer**.
+![ Journey Optimizer ](./images/campaign10.png)
 
-![ Journey Optimizer ](./images/batch7.png)
+De belemmering en laat vallen component van de a **Tekst** op de tweede rij.
 
-In het pop-upscherm moet u het HTML-bestand van de e-mail slepen en neerzetten. U kunt het malplaatje van de HTML [ hier ](./../../../assets/html/ajo-newsletter.html.zip) vinden. Download het ZIP-bestand met de HTML-sjabloon naar uw lokale computer en pak het uit op uw bureaublad.
+![ Journey Optimizer ](./images/campaign11.png)
 
-![ Journey Optimizer ](./images/html1.png)
+Selecteer de standaardtekst in die component **gelieve te typen hier uw tekst.** en vervangt deze door de onderstaande tekst. Verander de groepering aan **groepering van het Centrum**.
 
-De belemmering en laat vallen het dossier **ajo-newsletter.html** om het in Journey Optimizer te uploaden. Klik **Invoer**.
+```javascript
+Hi {{profile.person.name.firstName}}
 
-![ Journey Optimizer ](./images/batch8.png)
+As a CitiSignal member, you're part of a dynamic community that's constantly evolving to meet your needs. We're committed to delivering innovative solutions that enhance your digital lifestyle and keep you ahead of the curve.
 
-Deze e-mailinhoud is klaar voor gebruik omdat deze alle verwachte personalisatie, afbeeldingen en tekst bevat. Alleen de tijdelijke aanduiding voor het aanbod blijft leeg.
+Stay connected.
+```
 
-U zou een foutenmelding kunnen krijgen: **Fout wanneer het proberen om activa** te halen. Dit is gekoppeld aan de afbeelding in de e-mail.
+![ Journey Optimizer ](./images/campaign12.png)
 
-![ Journey Optimizer ](./images/errorfetch.png)
+De belemmering en laat vallen een **component van het Beeld** op de 3de en 4de rij. Klik **doorbladeren** op de 3de rij.
 
-Als u deze fout krijgt, selecteer het beeld en klik **geef beeld** knoop uit.
+![ Journey Optimizer ](./images/campaign13.png)
 
-![ Journey Optimizer ](./images/errorfetch1.png)
+Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_AirPods.jpg** te selecteren, en **Uitgezocht** te klikken.
 
-Klik **Assets Essentials** om terug naar uw bibliotheek van de Hoofdzaak van AEM Assets te gaan.
+![ Journey Optimizer ](./images/campaign14.png)
 
-![ Journey Optimizer ](./images/errorfetch2.png)
+Klik **doorbladeren** op beeldplaceholder op de 4de rij.
 
-Dan zie je deze popup. Navigeer aan de omslag **enablement-activa** en selecteer het beeld **luma-newsletterContent.png**. Klik **Uitgezocht**.
+![ Journey Optimizer ](./images/campaign15.png)
 
-![ Journey Optimizer ](./images/errorfetch3.png)
+Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_Phone.jpg** te selecteren, en **Uitgezocht** te klikken.
+
+![ Journey Optimizer ](./images/campaign16.png)
+
+De belemmering en laat vallen a **component van de Tekst van 0} {op de 3de en 4de rij.**
+
+![ Journey Optimizer ](./images/campaign17.png)
+
+Selecteer de standaardtekst in de component op de 3de rij **Gelieve te typen hier uw tekst.** en vervangt deze door de onderstaande tekst.
+
+```javascript
+Get AirPods for free:
+
+Experience seamless connectivity like never before with CitiSignal. Sign up for select premium plans and receive a complimentary pair of Apple AirPods. Stay connected in style with our unbeatable offer.
+```
+
+Selecteer de standaardtekst in de component op de 4de rij **Gelieve te typen hier uw tekst.** en vervangt deze door de onderstaande tekst.
+
+```javascript
+We'll pay off your phone:
+
+Make the switch to CitiSignal and say goodbye to phone payments! Switching to CitiSignal has never been more rewarding. Say farewell to hefty phone bills as we help pay off your phone, up to 800$!
+```
+
+![ Journey Optimizer ](./images/campaign18.png)
 
 Je standaardnieuwsbrief is nu klaar. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/ready.png)
 
-Ga terug naar het berichtdashboard door de **pijl** naast de onderwerplijntekst in de top-left hoek te klikken.
+Ga terug naar het campagnesdashboard door de **pijl** naast de onderwerpregel tekst in de top-left hoek te klikken.
 
-![ Journey Optimizer ](./images/batch9.png)
+![ Journey Optimizer ](./images/campaign19.png)
 
-Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
+Klik **Overzicht om** te activeren.
 
-![ Journey Optimizer ](./images/oc79aeee.png)
+![ Journey Optimizer ](./images/campaign20.png)
 
-Klik **O.K.** om uw e-mailactie te sluiten.
+Deze fout kan dan optreden. Als dat het geval is, dan kunt u tot 24 uur moeten wachten tot het publiek is geëvalueerd, en dan proberen om uw campagne opnieuw te activeren. Mogelijk moet u ook het programma van uw campagne bijwerken zodat deze later kan worden uitgevoerd.
 
-![ Journey Optimizer ](./images/oc79beee.png)
+Klik **activeren**.
 
-Uw nieuwsbrief is nu klaar om te worden gepubliceerd. Alvorens u dit doet, zie de **sectie van het Programma** waar u deze reis van het zijn van één-off aan een terugkomende campagne kunt schakelen. Klik de **knoop van het Programma**.
+![ Journey Optimizer ](./images/campaign21.png)
 
-![ Journey Optimizer ](./images/batchj12.png)
+Als de campagne eenmaal is geactiveerd, wordt deze gepland.
 
-Dan zie je dit. Selecteer **eens**.
+![ Journey Optimizer ](./images/campaign22.png)
 
-![ Journey Optimizer ](./images/sch1.png)
+Uw campagne is nu geactiveerd. Uw e-mailbericht voor de nieuwsbrief wordt verzonden zoals u het in uw programma hebt gedefinieerd. Uw campagne wordt beëindigd zodra het laatste e-mailbericht is verzonden.
 
-Selecteer een datum en tijd binnen het volgende uur zodat u uw reis kunt testen. Klik **OK**.
+U ontvangt de e-mail ook op het e-mailadres dat u hebt gebruikt voor het demoprofiel dat u eerder hebt gemaakt.
 
->[!NOTE]
->
->De verzenddatum en -tijd van het bericht moeten binnen een uur liggen.
-
-Klik **Publish**.
-
-![ Journey Optimizer ](./images/batchj13.png)
-
-Klik **opnieuw Publish**.
-
-![ Journey Optimizer ](./images/batchj14.png)
-
-Uw standaardnieuwsbrief is nu gepubliceerd. Uw e-mailbericht voor nieuwsbrieven wordt verzonden zoals u het in uw planning hebt gedefinieerd. Uw reis wordt beëindigd zodra het laatste e-mailbericht is verzonden.
-
-![ Journey Optimizer ](./images/batchj14eee.png)
+![ Journey Optimizer ](./images/campaign23.png)
 
 U hebt deze oefening voltooid.
 
-Volgende Stap: [ 3.4.3 is verpersoonlijking in een e-mailbericht ](./ex3.md) van toepassing
+Volgende Stap: [ 3.4.3 past op segment-gebaseerde verpersoonlijking in een e-mailbericht ](./ex3.md) toe
 
 [Terug naar module 3.4](./journeyoptimizer.md)
 

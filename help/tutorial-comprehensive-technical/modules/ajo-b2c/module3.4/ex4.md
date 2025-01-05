@@ -4,9 +4,9 @@ description: Pushmeldingen instellen en gebruiken voor iOS
 kt: 5342
 doc-type: tutorial
 exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,11 @@ U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw geri
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.4.1 Gegevensverzameling
+## 3.4.4.1 Gegevensset met pushgegevens
 
 Adobe Journey Optimizer gebruikt datasets om dingen zoals de pushtokens van mobiele apparaten of interactie met pushberichten (zoals: bericht verzonden, bericht geopend, enz.) op te slaan in een dataset in Adobe Journey Optimizer.
 
 U kunt deze datasets vinden door naar **[!UICONTROL Datasets]** in het menu op de linkerkant van het scherm te gaan. Om systeemdatasets te tonen, klik het filterpictogram.
-
-![ Ingestie van Gegevens ](./images/menudsjo.png)
 
 Laat de optie **toe tonen systeemdatasets** en onderzoek naar **AJO**. U zult dan de datasets zien die voor dupberichten worden gebruikt.
 
@@ -49,7 +47,7 @@ Laat de optie **toe tonen systeemdatasets** en onderzoek naar **AJO**. U zult da
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
 
-In het linkermenu, ga naar **[!UICONTROL Datastream]** en onderzoek naar uw gegevensstroom die u in [ Uitoefening 0.2 ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde, die `--aepUserLdap-- - Demo System Datastream (Mobile)` wordt genoemd. Klik om het te openen.
+In het linkermenu, ga naar **[!UICONTROL Datastream]** en onderzoek naar uw gegevensstroom die u in [ het Begonnen worden ](./../../../modules/gettingstarted/gettingstarted/ex2.md) creeerde, die `--aepUserLdap-- - Demo System Datastream (Mobile)` wordt genoemd. Klik om het te openen.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1a.png)
 
@@ -59,13 +57,19 @@ Klik **uitgeven** op de **Adobe Experience Platform** dienst.
 
 U zult dan de gegevensstroommontages zien die werden bepaald, en waarin datasets gebeurtenissen en profielattributen zullen worden opgeslagen.
 
-![ noem DataStream en bewaar ](./images/edgeconfig2.png)
+U zou ook de volgende opties moeten toelaten als zij nog niet worden toegelaten:
 
-Er zijn geen wijzigingen nodig. Uw gegevensstroom is nu klaar om te worden gebruikt in uw Client-eigenschap voor gegevensverzameling voor Mobile.
+- **Offer decisioning**
+- **de Doelen van Personalization**
+- **Adobe Journey Optimizer**
+
+Klik **sparen**.
+
+![ noem DataStream en bewaar ](./images/edgeconfig2.png)
 
 ## 3.4.4.3 Herzie uw bezit van de Inzameling van Gegevens voor Mobiel
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Als deel van [ Uitoefening 0.1 ](./../../../modules/gettingstarted/gettingstarted/ex1.md), werden 2 eigenschappen van de Inzameling van Gegevens gecreeerd.
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Als deel van [ Aan de slag ](./../../../modules/gettingstarted/gettingstarted/ex1.md), werden 2 eigenschappen van de Inzameling van Gegevens gecreeerd.
 U hebt deze eigenschappen van de Cliënt van de Inzameling van Gegevens reeds als deel van vorige modules gebruikt.
 
 Klik om de eigenschap Gegevensverzameling voor mobiel te openen.
@@ -96,7 +100,7 @@ U hoeft geen wijzigingen aan te brengen in de eigenschap Gegevensverzameling.
 
 ## 3.4.4.4 Controleer de installatie van uw toepassingsoppervlak
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). In het linkermenu, ga naar **de Oppervlakken van de App** en open, de Oppervlakte van de App voor **DX demo App APNS**.
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). In het linkermenu, ga naar **de Oppervlakken van de App** en open de Oppervlakte van de App voor **DX Demo App APNS**.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/appsf.png)
 
@@ -130,21 +134,17 @@ U kunt nu een aangepast project laden. Klik de code QR om uw project gemakkelijk
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
-Na oefening 0.1, had u dit resultaat. Klik om het **Mobiele Retail project** te openen dat voor u werd gecreeerd.
+Na het gaan door de **Begonnen** sectie, had u dit resultaat. Klik om het **Mobiele Retail project** te openen dat voor u werd gecreeerd.
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://builder.adobedemo.com/projects ](https://builder.adobedemo.com/projects) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw mobiele-toepassingsproject om het te openen.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com/projects ](https://dsn.adobe.com/projects) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik op uw mobiele-toepassingsproject om het te openen.
 
 ![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
-Dan zie je dit. Klik **Integraties**.
+Daarna, klik **Looppas**.
 
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
-
-U moet het bezit van de Inzameling van Gegevens voor mobiel selecteren dat in oefening 0.1 werd gecreeerd. Daarna, klik **Looppas**.
-
-![ DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
+![ DSN ](./images/web8b.png)
 
 U zult dan deze popup zien, die een QR code bevat. Scan deze QR-code vanuit de mobiele app.
 
@@ -160,7 +160,7 @@ Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
 
 U moet nu een QR-code scannen om uw mobiele apparaat aan te sluiten op uw AEP Assurance-sessie.
 
-Om een zitting van AEP Assurance te beginnen, ga [ https://experience.adobe.com/#/@experienceplatform/griffon ](https://experience.adobe.com/#/@experienceplatform/griffon). Klik **creeer Zitting**.
+Om een zitting van AEP Assurance te beginnen, ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/). Klik **Assurance** in het linkermenu. Dan, klik **creeer Zitting**.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/griffon3.png)
 
@@ -171,7 +171,7 @@ Klik **Begin**.
 Vul de waarden in:
 
 - Naam van sessie: gebruik `--aepUserLdap-- - push debugging` en vervang LDAP door uw LDAP
-- Basis URL: gebruik **dxdemo://default**
+- Basis-URL: gebruik `dxdemo://default`
 
 Klik **daarna**.
 
@@ -193,21 +193,27 @@ Dan zie je dit.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/ipadPushTest11.png)
 
-In AEP Assurance zie je nu dat een apparaat naar de AEP Assurance-sessie gaat.
+In Assurance zie je nu dat een apparaat naar de Assurance-sessie gaat. Klik **Gedaan**.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/griffon7.png)
 
-Ga naar **Push zuivert**. Je ziet iets dergelijks.
+Ga naar **Push zuivert**.
+
+>[!NOTE]
+>
+>In het geval dat u **Push niet kunt vinden zuivert** in het linkermenu, **** vormt {in de bodem linkerhoek van uw scherm en voegt **Push toe zuivert** aan het menu.
+
+Je ziet iets dergelijks.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/griffon10.png)
 
 Enkele uitleg:
 
 - De eerste kolom, **Cliënt**, toont de beschikbare herkenningstekens op uw apparaat van iOS. U ziet een ECID en een pushtoken.
+- De tweede kolom toont de **Credentials &amp; Configuratie van App Store**, die opstelling als deel van oefening **3.4.5.4 creeert de Configuratie van de Toepassing in Lancering**
 - De tweede kolom toont **informatie van het Profiel**, met extra informatie over welk platform de Duw Symbolische levens in (APNS of APNSSandbox). Als u de **knoop van het Profiel van Inspect** klikt, zult u aan Adobe Experience Platform worden genomen en u zult het volledige Profiel van de Klant in real time zien.
-- De 3de kolom toont de **Configuratie van de Toepassing**, die opstelling als deel van oefening **3.4.5.4 creeert de Configuratie van de App in Lancering**
 
-Om uw opstelling van de Push configuratie te testen, klik **verzenden het Duwbericht** knoop.
+Om uw opstelling van de Push configuratie te testen, ga **verzenden de knoop van de Opstelling van de Druk van de Test**. Klik **verzenden het Bericht van de Duw van de Test**
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/griffon11.png)
 
@@ -217,11 +223,11 @@ Vervolgens verschijnt er een pushmelding zoals deze op uw mobiele apparaat.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/ipadPush2.png)
 
-Als u het pushbericht hebt ontvangen, betekent dit dat uw instelling juist is en prima werkt.
+Als u de pushmelding hebt ontvangen, betekent dit dat uw setup correct is en goed werkt en dat u nu een echte reis kunt maken die zal leiden tot het verzenden van een pushbericht vanuit Journey Optimizer.
 
 ## 3.4.4.6 Een nieuwe gebeurtenis maken
 
-In het menu, ga naar **Beleid van de Reis** en klik **leiden** onder **Gebeurtenissen**.
+Ga naar **Journey Optimizer**. In het linkermenu, ga naar **Configuraties** en klik **leiden** onder **Gebeurtenissen**.
 
 ![ ACOP ](./images/acopmenu.png)
 
@@ -230,32 +236,19 @@ Op het **scherm van Gebeurtenissen**, zult u een mening gelijkend op dit zien. K
 ![ ACOP ](./images/add.png)
 
 U ziet dan een lege gebeurtenisconfiguratie.
-
-![ ACOP ](./images/emptyevent.png)
-
 Geef uw gebeurtenis eerst een naam zoals deze: `--aepUserLdap--StoreEntryEvent` en stel een beschrijving in op `Store Entry Event` .
+Daarna is het **Type van Gebeurtenis** selectie. Selecteer **Eenheids**.
+Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0}.** Selecteer **Gegenereerd Systeem**.
 
 ![ ACOP ](./images/eventname.png)
 
-Daarna is het **Type van Gebeurtenis** selectie. Selecteer **Eenheids**.
-
-![ ACOP ](./images/eventidtype1.png)
-
-Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0}.** Selecteer **Gegenereerd Systeem**
-
-![ ACOP ](./images/eventidtype.png)
-
 Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1` .
-
-![ ACOP ](./images/eventschema.png)
 
 Na het selecteren van het Schema, zult u een aantal gebieden zien die in de **sectie van de Lading** worden geselecteerd. Uw gebeurtenis is nu volledig geconfigureerd.
 
-![ ACOP ](./images/eventpayload.png)
+Klik **sparen**.
 
-Dan moet je dit zien. Klik **sparen**.
-
-![ ACOP ](./images/eventsave.png)
+![ ACOP ](./images/eventschema.png)
 
 Uw gebeurtenis is nu geconfigureerd en opgeslagen. Klik opnieuw op uw gebeurtenis om **te openen geef het 1} scherm van de Gebeurtenis {opnieuw uit.**
 
@@ -267,14 +260,12 @@ Beweeg over het **gebied van de Payload** en klik op het **3} pictogram van de P
 
 U zult nu een voorbeeld van de verwachte nuttige lading zien.
 
-![ ACOP ](./images/fullpayload.png)
-
 Uw gebeurtenis heeft een unieke orchestration eventID, die u kunt vinden door neer in die lading te scrollen tot u `_experience.campaign.orchestration.eventID` ziet.
 
 ![ ACOP ](./images/payloadeventID.png)
 
 De gebeurtenis-id is wat naar Adobe Experience Platform moet worden verzonden om de Reis te activeren die u in de volgende stap maakt. Schrijf deze eventID neer, aangezien u het in de volgende stap zult nodig hebben.
-`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
 Klik **O.K.**, die door **wordt gevolgd annuleert**.
 
@@ -284,20 +275,21 @@ In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
 ![ DSN ](./images/sjourney1.png)
 
-Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Store Entry journey` . Klik **OK**.
+Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Store Entry journey` . Klik **sparen**.
 
 ![ DSN ](./images/sjourney3.png)
 
-Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--StoreEntryEvent` en sleep deze naar het canvas. Klik **OK**.
+Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--StoreEntryEvent` en sleep deze naar het canvas. Klik **sparen**.
 
 ![ DSN ](./images/sjourney4.png)
 
-Daarna, onder **Acties**, onderzoek naar de **Duw** actie.
-De belemmering en laat vallen **duw** actie op het canvas.
-
-![ DSN ](./images/sjourney5.png)
+Daarna, onder **Acties**, onderzoek naar de **Duw** actie. De belemmering en laat vallen **duw** actie op het canvas.
 
 Plaats de **Categorie** aan **Marketing** en selecteer een drukkend oppervlak dat u toelaat om pushberichten te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **duw-iOS-Android**.
+
+>[!NOTE]
+>
+>Een Kanaal in Journey Optimizer moet bestaan dat de **Oppervlakte van de App** zoals eerder herzien gebruikt.
 
 ![ ACOP ](./images/journeyactions1push.png)
 
@@ -310,8 +302,6 @@ Dan zie je dit. Klik het **verpersoonlijkings** pictogram voor het **gebied van 
 ![ Duw ](./images/bp5.png)
 
 Dan zie je dit. U kunt nu elk profiel rechtstreeks selecteren in het realtime profiel van de klant.
-
-![ Duw ](./images/bp6.png)
 
 Onderzoek naar het gebied **Voornaam**, dan klik het **+** pictogram naast het gebied **Voornaam**. Vervolgens ziet u het personalisatietoken voor Voornaam die wordt toegevoegd: **{{profile.person.name.firstName}}** .
 
@@ -335,7 +325,7 @@ Dan heb je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw r
 
 ![ Journey Optimizer ](./images/bp12a.png)
 
-Klik **O.K.** om uw duwactie te sluiten.
+Klik **sparen** om uw duwactie te sluiten.
 
 ![ DSN ](./images/sjourney8.png)
 
@@ -363,15 +353,13 @@ In uw DX demo 2.0 mobiele toepassing, ga naar het **scherm van Montages**. Klik 
 
 Zorg ervoor om app onmiddellijk te sluiten na het klikken van het **pictogram van de Ingang van de Opslag**, anders zal het duwbericht niet worden getoond.
 
-![ DSN ](./images/demo2.png)
-
 Na een paar seconden, zult u het bericht zien verschijnen.
 
-![ DSN ](./images/demo3.png)
+![ DSN ](./images/demo2.png)
 
 U hebt deze oefening voltooid.
 
-Volgende Stap: [ 3.4.5 leidt tot een zakengebeurtenisreis ](./ex5.md)
+Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
 
 [Terug naar module 3.4](./journeyoptimizer.md)
 

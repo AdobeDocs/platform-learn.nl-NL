@@ -4,14 +4,14 @@ description: Deze oefening verklaart hoe te om segment personalisatie binnen een
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-# 3.4.3 Verpersoonlijking toepassen in een e-mailbericht
+# 3.4.3 Pas segment-gebaseerde verpersoonlijking in een e-mailbericht toe
 
 Login aan Adobe Experience Cloud door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Adobe Journey Optimizer**.
 
@@ -23,25 +23,25 @@ U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw geri
 
 ## 3.4.3.1 personalisatie op basis van segmenten
 
-In deze exercitie zult u uw nieuwsbrief e-mailbericht met een gepersonaliseerde tekst verbeteren die op segmentlidmaatschap wordt gebaseerd.
+In deze oefening zult u het nieuwsbrief e-mailbericht verbeteren dat u in de vorige oefening met een gepersonaliseerde tekst creeerde die op segmentlidmaatschap wordt gebaseerd.
 
-Ga naar **Reizen**. Vind de nieuwsbrief die u in de vorige oefening hebt gecreeerd. Zoeken naar `--aepUserLdap-- - Newsletter` . Klik op uw reis om deze te openen.
+Ga naar **Campagnes**. Vind de nieuwsbrief die u in de vorige oefening hebt gecreeerd. Zoeken naar `--aepUserLdap-- - CitiSignal Newsletter` . Klik op de 3 punten **met de rechtermuisknop aan...** en klik **Dupliceren**.
 
 ![ Journey Optimizer ](./images/sbp1.png)
 
-Dan zie je dit. Klik **Dupliceren**.
+Dan zie je dit. Gebruik dit voor de **Titel**: `--aepUserLdap-- - CitiSignal Newsletter (SBP)`. Klik **Dupliceren**.
 
 ![ Journey Optimizer ](./images/sbp2.png)
 
-Klik **Dupliceren**.
+Klik op de gedupliceerde campagne om deze te openen.
 
 ![ Journey Optimizer ](./images/sbp3.png)
 
-Selecteer uw **E-mail** actie en klik **uitgeven inhoud**.
+Klik **uitgeven** om de inhoud te veranderen.
 
 ![ Journey Optimizer ](./images/sbp3a.png)
 
-Klik **E-mail Designer**.
+Klik **uitgeeft e-maillichaam**.
 
 ![ Journey Optimizer ](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ Dan zie je dit.
 
 ![ Journey Optimizer ](./images/sbp5.png)
 
-Open {de Componenten van 0} Inhoud **en sleep de component van de a** Tekst **onder de huidige nieuwsbrief inhoud.**
+Open {de Componenten van 0} Inhoud **en sleep a** 1:1 kolom **boven de aanbieding AirPods.**
 
 ![ Journey Optimizer ](./images/sbp6.png)
+
+De belemmering en laat vallen component van de a **Tekst** in die 1:1 kolom.
+
+![ Journey Optimizer ](./images/sbp6a.png)
 
 Selecteer de volledige standaardtekst en verwijder deze. Dan klik op **verpersoonlijking** knoop in de toolbar toevoegen.
 
 ![ Journey Optimizer ](./images/sbp7.png)
 
-U zult dan dit zien:
+Dan zie je dit. In het linkermenu, klik **Soorten publiek**.
 
 ![ Journey Optimizer ](./images/seg1.png)
 
-In het linkermenu, klik **Lidmaatschappen van het Segment**.
-
-![ Journey Optimizer ](./images/seg2.png)
-
->[!NOTE]
->
->Als u uw segment niet in deze lijst kunt vinden, scrol neer een beetje om instructies op te zoeken hoe te om segmentidentiteitskaart manueel terug te winnen.
-
-Selecteer het segment `Luma - Women's Category Interest` en klik het **+** pictogram, dat als volgt zou moeten kijken:
+Selecteer het segment `--aepUserLdap-- - Interest in Plans` en klik **+** pictogram om het aan het canvas toe te voegen.
 
 ![ Journey Optimizer ](./images/seg3.png)
 
 Vervolgens laat u de eerste regel ongewijzigd en vervangt u regel 2 en 3 door de volgende code:
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-Dan heb je het volgende:
+Dan heb je dit. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/seg4.png)
 
-Klik **bevestigen** om ervoor te zorgen de code correct is. Klik **sparen**.
-
-![ Journey Optimizer ](./images/sbp8.png)
-
-U kunt dit bericht nu bewaren door **te klikken sparen** knoop in de hoger-juiste hoek. Dan, klik **Simuleer Inhoud**.
+Verander de tekstgroepering in **groepering van het Centrum**.
 
 ![ Journey Optimizer ](./images/sbp9.png)
 
-Selecteer één van de profielen u als deel van dit leerprogramma creeerde en **Voorproef** klikt. U zult dan het resultaat van uw configuratie zien.
+U kunt dit bericht nu bewaren door **te klikken sparen** knoop in de hoger-juiste hoek. Dan, klik **pijl** naast de onderwerpregel tekst in de top-left hoek.
 
-![ Journey Optimizer ](./images/sbp10.png)
+![ Journey Optimizer ](./images/sbp9a.png)
 
-Dan zie je dit. Dan, klik **dicht**.
-
-![ Journey Optimizer ](./images/sbp10fff.png)
-
-Ga terug naar het berichtdashboard door de **pijl** naast de onderwerplijntekst in de top-left hoek te klikken.
-
-![ Journey Optimizer ](./images/sbp11.png)
-
-Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
+Klik **Overzicht om** te activeren.
 
 ![ Journey Optimizer ](./images/oc79afff.png)
 
-Klik **O.K.** om uw e-mailactie te sluiten.
+Klik **activeren**.
 
 ![ Journey Optimizer ](./images/oc79bfff.png)
 
-Verander uw **Programma** aan **eens** en bepaal a **Datum/Tijd**. Klik **OK**.
+Uw nieuwsbrief met op segment-gebaseerde verpersoonlijking wordt nu gepubliceerd. Uw e-mailbericht voor nieuwsbrieven wordt op basis van uw planning verzonden en uw reis wordt beëindigd zodra het laatste e-mailbericht is verzonden.
 
->[!NOTE]
->
->De verzenddatum en -tijd van het bericht moeten binnen een uur liggen.
-
-![ Journey Optimizer ](./images/sbp18.png)
-
-Klik op de **Publish** knoop in de reis.
-
-![ Journey Optimizer ](./images/sbp19.png)
-
-In het pop-up venster, klik opnieuw **Publish**.
-
-![ Journey Optimizer ](./images/sbp20.png)
-
-Uw standaardnieuwsbrief is nu gepubliceerd. Uw e-mailbericht voor nieuwsbrieven wordt op basis van uw planning verzonden en uw reis wordt beëindigd zodra het laatste e-mailbericht is verzonden.
+Als u in aanmerking komt voor het gebruikte segment, ziet u dit in de e-mail die u ontvangt:
 
 ![ Journey Optimizer ](./images/sbp20fff.png)
 
