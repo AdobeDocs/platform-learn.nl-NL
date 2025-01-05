@@ -2,9 +2,10 @@
 title: Overzicht
 description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van Gegevens, de Architecten van Gegevens, de Wetenschappers van Gegevens, de Ingenieurs van Orchestratie en Marketers om een volledig inzicht in de bedrijfswaarde van Adobe Experience Platform en al zijn Diensten van de Toepassing te krijgen.
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -67,6 +68,8 @@ Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, m
 
 ## Inhoud
 
+Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md) te gaan.
+
 [0. Aan de slag](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 In deze grondmodule, zult u alles plaatsen zodat u tot het demomilieu kunt toegang hebben en gebruiken.
@@ -77,7 +80,7 @@ In deze grondmodule, zult u alles plaatsen zodat u tot het demomilieu kunt toega
 
 [1.1 Foundation - Setup of Adobe Experience Platform Data Collection &amp; Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-In deze grondmodule, zult u over de Inzameling van Gegevens van Adobe Experience Platform en de nieuwe uitbreiding van SDK van het Web leren.
+In deze basismodule leert u meer over Adobe Experience Platform Data Collection en de nieuwe Web SDK-extensie.
 
 **de Investering van de Tijd:** 30 minuten
 

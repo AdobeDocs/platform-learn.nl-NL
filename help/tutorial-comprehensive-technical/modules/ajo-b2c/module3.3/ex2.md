@@ -4,9 +4,9 @@ description: Offer decisioning - Configureer je voorstellen en besluit-id
 kt: 5342
 doc-type: tutorial
 exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1425'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 In deze oefening, zult u vier **Gepersonaliseerde Aanbiedingen** creëren. Hier volgen de details waarmee u rekening moet houden bij het maken van deze aanbiedingen:
 
-| Naam | Datumbereik | Afbeeldingskoppeling voor e-mail | Afbeeldingskoppeling voor web | Tekst | Prioriteit | Subsidiabiliteit | Taal |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--aepUserLdap-- - Nadia Elements Shell` | vandaag - 1 maand later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
-| `--aepUserLdap-- - Radiant Tee` | vandaag - 1 maand later | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all - Vrouwelijke klanten | Engels (Verenigde Staten) |
-| `--aepUserLdap-- - Zeppelin Yoga Pant` | vandaag - 1 maand later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all - Mannelijke klanten | Engels (Verenigde Staten) |
-| `--aepUserLdap-- - Proteus Fitness Jackshirt` | vandaag - 1 maand later | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all - Mannelijke klanten | Engels (Verenigde Staten) |
+| Naam | Datumbereik | Afbeeldingskoppeling voor e-mail | Afbeeldingskoppeling voor web | Tekst | Prioriteit | Subsidiabiliteit | Taal | Bijschriftfrequentie | Afbeeldingsnaam |
+|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
+| `--aepUserLdap-- - AirPods Max` | vandaag - 1 maand later | https://bit.ly/4a9RJ5d | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | all - Vrouwelijke klanten | Engels (Verenigde Staten) | 3 | Apple AirPods Max- Vrouwelijk.jpg |
+| `--aepUserLdap-- - Galaxy S24` | vandaag - 1 maand later | https://bit.ly/3W8yuDv | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | all - Vrouwelijke klanten | Engels (Verenigde Staten) | 3 | Galaxy S24 - Female.jpg |
+| `--aepUserLdap-- - Apple Watch` | vandaag - 1 maand later | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | all - Mannelijke klanten | Engels (Verenigde Staten) | 3 | Apple Watch - Male.jpg |
+| `--aepUserLdap-- - Galaxy Watch 7` | vandaag - 1 maand later | https://bit.ly/4gTrkeo | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | all - Mannelijke klanten | Engels (Verenigde Staten) | 3 | Galaxy Watch7 - Male.jpg |
 
 {style="table-layout:auto"}
 
@@ -30,7 +30,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. Om van één zandbak in een andere te veranderen, klik op **Prod van de PRODUCTIE (VA7)** en selecteer de zandbak van de lijst. In dit voorbeeld, wordt de zandbak genoemd **AEP Enablement FY22**. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -46,11 +46,39 @@ U bent nu op de **mening van Details**.
 
 ![ Regel van het Besluit ](./images/offers3.png)
 
-In dit geval moet u de aanbieding configureren `--aepUserLdap-- - Nadia Elements Shell` . Gebruik de informatie in de bovenstaande tabel om de velden in te vullen. In dit voorbeeld, is de naam van de Gepersonaliseerde Aanbieding **vangeluw - Elementen Nadia Shell**. Ook, plaats de **datum en de tijd van het Begin** aan gisteren, en plaats de **datum en de tijd van het Eind** aan een datum in een maand van nu.
+In dit geval moet u de aanbieding configureren `--aepUserLdap-- - AirPods Max` . Gebruik de informatie in de bovenstaande tabel om de velden in te vullen. In dit voorbeeld, is de naam van de Gepersonaliseerde Aanbieding **vangeluw - Max AirPods**. Ook, plaats de **datum en de tijd van het Begin** aan vandaag, en plaats de **datum en de tijd van het Eind** aan een datum in een maand van nu.
 
 Als je klaar bent, moet je dit hebben. Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/offers4.png)
+
+U zult dan dit zien:
+
+![ Regel van het Besluit ](./images/constraints.png)
+
+Selecteer **door bepaalde besluitvormingsregel** en klik **+** pictogram om de regel **allen toe te voegen - Vrouwelijke Klanten**.
+
+Vul de **Prioriteit** zoals vermeld in de bovengenoemde lijst uit. Klik vervolgens op **+ Afbeelding maken** om het aantal keren te definiëren dat deze aanbieding aan een klant kan worden getoond.
+
+![ Regel van het Besluit ](./images/constraints1.png)
+
+Selecteer de volgende opties voor de uitlijning:
+
+- **kies het Bedekken gebeurtenis**: **gebeurtenis van het Besluit**
+- **Afdekkend type**: **per profiel (pas GLB voor elk profiel toe)**
+- **de gebeurtenistelling van de Aftapping**: **3**
+- **Terugstellen die frequentie** begrenzen: **Dagelijks**
+- **Elke**: **1 dag**
+
+Dit zorgt ervoor dat dit voorstel niet meer dan drie keer per dag per klant wordt weergegeven.
+
+Klik **creëren**.
+
+![ Regel van het Besluit ](./images/constraints2.png)
+
+Dan ben je hier weer. Klik **daarna**.
+
+![ Regel van het Besluit ](./images/constraints3.png)
 
 U moet nu **Vertegenwoordigingen** tot stand brengen. De vertegenwoordiging is een combinatie a **Plaatsing** en een echt middel.
 
@@ -67,42 +95,30 @@ Alternatief, kunt u **bibliotheek van Activa** voor de inhoud selecteren en dan 
 
 ![ Regel van het Besluit ](./images/addcontent2.png)
 
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **nadia-web.png**. Dan, klik **Uitgezocht**.
+U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **Max Apple AirPods - Female.jpg**. Dan, klik **Uitgezocht**.
 
 ![ Regel van het Besluit ](./images/addcontent3.png)
 
-U zult dan dit zien:
+Dan zie je dit. Klik op **+ Weergave toevoegen** .
 
 ![ Regel van het Besluit ](./images/addcontentrep20.png)
-
-Klik op **+ Weergave toevoegen** .
-
-![ Regel van het Besluit ](./images/addrep.png)
 
 Voor **Vertegenwoordiging 2**, selecteer:
 
 - Kanaal: E-mail
 - Plaatsing: E-mail - Afbeelding
 - Inhoud: URL
-- Openbare plaats: kopieer URL van de kolom **Verbinding van het Beeld voor E-mail** in de bovengenoemde lijst
+- Openbare plaats: uitgezochte **bibliotheek van Activa**. Klik **doorbladeren**
 
 ![ Regel van het Besluit ](./images/addcontentrep21.png)
 
-Alternatief, kunt u **bibliotheek van Activa** voor de inhoud selecteren en dan **klikken doorbladert**.
-
-![ Regel van het Besluit ](./images/addcontent2b.png)
-
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **nadia-email.png**. Dan, klik **Uitgezocht**.
+U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **Max Apple AirPods - Female.jpg**. Dan, klik **Uitgezocht**.
 
 ![ Regel van het Besluit ](./images/addcontent3b.png)
 
-U zult dan dit zien:
+Dan zie je dit. Klik vervolgens op **+ Voorstelling toevoegen** .
 
 ![ Regel van het Besluit ](./images/addcontentrep20b.png)
-
-Klik vervolgens op **+ Voorstelling toevoegen** .
-
-![ Regel van het Besluit ](./images/addrep.png)
 
 Voor **Vertegenwoordiging 3**, selecteer:
 
@@ -111,7 +127,7 @@ Voor **Vertegenwoordiging 3**, selecteer:
 
 Vervolgens moet u inhoud toevoegen. In dit geval betekent dit dat de tekst wordt toegevoegd die moet worden gebruikt als een oproep tot actie.
 
-Klik **toevoegen Inhoud**.
+Selecteer **Douane** en klik **toevoegen Inhoud**.
 
 ![ Regel van het Besluit ](./images/addcontentrep31.png)
 
@@ -119,9 +135,7 @@ Dan zie je deze popup.
 
 ![ Regel van het Besluit ](./images/addcontent3text.png)
 
-Selecteer **de tekst van de Douane** en vul deze gebieden in:
-
-Kijk naar het **1} gebied van de Tekst {van de bovengenoemde lijst en ga die tekst hier in, in dit geval: `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell`.**
+Kijk naar het **1} gebied van de Tekst {van de bovengenoemde lijst en ga die tekst hier in, in dit geval: `{{ profile.person.name.firstName }}, 10% discount on AirPods Max`.**
 
 U zult ook opmerken dat u om het even welk profielattribuut kunt selecteren en het als dynamisch gebied in de aanbiedingstekst opnemen. In dit voorbeeld zorgt het veld `{{ profile.person.name.firstName }}` ervoor dat de voornaam van de klant die dit aanbod ontvangt, wordt opgenomen in de aanbiedingstekst.
 
@@ -133,23 +147,11 @@ U hebt dit nu. Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/addcontentrep3textdone.png)
 
-U zult dan dit zien:
-
-![ Regel van het Besluit ](./images/constraints.png)
-
-Selecteer **door bepaalde besluitvormingsregel** en klik **+** pictogram om de regel **allen toe te voegen - Vrouwelijke Klanten**.
-
-![ Regel van het Besluit ](./images/constraints1.png)
-
-Dan zie je dit. Vul de **Prioriteit** zoals vermeld in de bovengenoemde lijst uit. Klik **daarna**.
-
-![ Regel van het Besluit ](./images/constraints2.png)
-
-U zult dan een overzicht van uw nieuwe **Gepersonaliseerde Aanbieding** zien.
+U zult dan een overzicht van uw nieuwe **Gepersonaliseerde Aanbieding** zien. Klik **Afwerking**.
 
 ![ Regel van het Besluit ](./images/offeroverview.png)
 
-Tot slot klik **sparen en keur** goed.
+Klik **sparen en keur** goed.
 
 ![ Regel van het Besluit ](./images/saveapprove.png)
 
@@ -157,7 +159,7 @@ Je ziet dan dat je nieuwe persoonlijke aanbieding beschikbaar komt in het Overzi
 
 ![ Regel van het Besluit ](./images/offeroverview1.png)
 
-Herhaal de bovenstaande stappen om de drie andere persoonlijke aanbiedingen voor de producten Radiant Tee, Zeppelin Yoga Pant en Proteus Fitness Jackshirt te maken.
+Herhaal nu de bovenstaande stappen om de drie andere persoonlijke aanbiedingen te maken voor de producten die u in de bovenstaande tabel vindt.
 
 Wanneer gedaan, zouden uw **Overzichten van de Aanbieding** scherm voor **Gepersonaliseerde Aanbiedingen** al uw aanbiedingen moeten tonen.
 
@@ -167,11 +169,7 @@ Wanneer gedaan, zouden uw **Overzichten van de Aanbieding** scherm voor **Gepers
 
 Na het creëren van vier Gepersonaliseerde Aanbiedingen, zou u a **Aanbieding van de Fallback** nu moeten vormen.
 
-Zorg ervoor u in de **mening van Aanbiedingen** bent:
-
-![ Definitieve Aanbiedingen ](./images/finaloffers.png)
-
-Klik op **+ Voorstel maken** .
+Zorg ervoor u in de **mening van Aanbiedingen** bent. Klik op **+ Voorstel maken** .
 
 ![ Regel van het Besluit ](./images/createoffer.png)
 
@@ -179,11 +177,7 @@ Dan zie je deze popup. Selecteer {de aanbieding van 0} Fallback **en klik** daar
 
 ![ Regel van het Besluit ](./images/foffers2.png)
 
-U zult dan dit zien:
-
-![ Regel van het Besluit ](./images/foffers3.png)
-
-Voer deze naam in voor uw fallback-aanbieding: `--aepUserLdap-- - Luma Fallback Offer` . Klik **daarna**.
+Dan zie je dit. Voer deze naam in voor uw fallback-aanbieding: `--aepUserLdap-- - CitiSignal Fallback Offer` . Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/foffers4.png)
 
@@ -191,68 +185,51 @@ U moet nu **Vertegenwoordigingen** tot stand brengen. De vertegenwoordiging is e
 
 Voor **Vertegenwoordiging 1**, selecteer:
 
-- Kanaal: Web
-- Plaatsing: Web - Afbeelding
-- Inhoud: URL
-- Openbare locatie: `https://bit.ly/3nBOt9h`
+- **Kanaal**: **Web**
+- **Plaatsing**: **Web - Beeld**
+- **Inhoud**: **bibliotheek van Activa**
+
+Klik **doorbladeren** om uw beeld te selecteren.
 
 ![ Regel van het Besluit ](./images/addcontent1fb.png)
 
-Alternatief, kunt u **bibliotheek van Activa** voor de inhoud selecteren en dan **klikken doorbladert**.
-
-![ Regel van het Besluit ](./images/addcontent2fb.png)
-
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **spriteyogastraps-web.png**. Dan, klik **Uitgezocht**.
+U zult dan popup van de Bibliotheek van Assets zien, naar de omslag **citi-signaal-beelden** gaan en het beelddossier **app-Banner-Ad.jpg** selecteren. Dan, klik **Uitgezocht**.
 
 ![ Regel van het Besluit ](./images/addcontent3fb.png)
 
-U zult dan dit zien:
+Dan zie je dit. Klik op **+ Voorstelling toevoegen** .
 
 ![ Regel van het Besluit ](./images/addcontentrep20fb.png)
 
 Voor **Vertegenwoordiging 2**, selecteer:
 
-- Kanaal: E-mail
-- Plaatsing: E-mail - Afbeelding
-- Inhoud: URL
-- Openbare locatie: `https://bit.ly/3nF4qvE`
+- **Kanaal**: **E-mail**
+- **Plaatsing**: **E-mail - Beeld**
+- **Inhoud**: **bibliotheek van Activa**
+
+Klik **doorbladeren** om uw beeld te selecteren.
 
 ![ Regel van het Besluit ](./images/addcontentrep21fb.png)
 
-Alternatief, kunt u **bibliotheek van Activa** voor de inhoud selecteren en dan **klikken doorbladert**.
-
-![ Regel van het Besluit ](./images/addcontent2bfb.png)
-
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **spriteyogastraps-email.png**. Dan, klik **Uitgezocht**.
+U zult dan popup van de Bibliotheek van Assets zien, naar de omslag **citi-signaal-beelden** gaan en het beelddossier **app-Banner-Ad.jpg** selecteren. Dan, klik **Uitgezocht**.
 
 ![ Regel van het Besluit ](./images/addcontent3bfb.png)
 
-U zult dan dit zien:
+Dan zie je dit. Klik op **+ Voorstelling toevoegen** .
 
 ![ Regel van het Besluit ](./images/addcontentrep20bfb.png)
 
-Klik vervolgens op **+ Voorstelling toevoegen** .
-
-![ Regel van het Besluit ](./images/addrep.png)
-
 Voor **Vertegenwoordiging 3**, selecteer:
 
-- Kanaal: niet-digitaal
-- Plaatsing: niet-digitaal - tekst
-
-Vervolgens moet u inhoud toevoegen. In dit geval betekent dat het toevoegen van de Verbinding van het Beeld.
+- **Kanaal**: **niet-digitaal**
+- **Plaatsing**: **niet-digitaal - Tekst**
+- **Inhoud**: **Douane**
 
 Klik **toevoegen Inhoud**.
 
 ![ Regel van het Besluit ](./images/addcontentrep21text.png)
 
-Dan zie je deze popup.
-
-![ Regel van het Besluit ](./images/addcontent2text.png)
-
-Selecteer **de tekst van de Douane** en vul deze gebieden in:
-
-Ga de tekst `{{ profile.person.name.firstName }}, discover our Sprite Yoga Straps!` in en klik **sparen**.
+Dan zie je deze popup. Ga de tekst `{{ profile.person.name.firstName }}, download the CitiSignal app now!` in en klik **sparen**.
 
 ![ Regel van het Besluit ](./images/faddcontent3text.png)
 
@@ -282,8 +259,10 @@ Ga naar **Inzamelingen**. Klik op **+ Verzameling maken** .
 
 Dan zie je deze popup. Configureer uw verzameling op deze manier. Klik **daarna**.
 
-- Naam van verzameling: gebruik `--aepUserLdap-- - Luma Collection`
+- Naam van verzameling: gebruik `--aepUserLdap-- - CitiSignal Collection`
 - Selecteer **creeer statische inzameling**.
+
+Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/createcollectionpopup1.png)
 
@@ -299,18 +278,14 @@ U ziet nu het volgende:
 
 In een besluit worden Plaatsingen, een collectie persoonlijke aanbiedingen en een terugvalaanbieding gecombineerd die uiteindelijk door de Offer decisioning-engine worden gebruikt om de beste aanbieding voor een specifiek profiel te vinden, op basis van elk van de individuele kenmerken van de gepersonaliseerde aanbieding, zoals prioriteit, geschiktheidsbeperking en totale/gebruikersbeperking.
 
-Om uw **Besluit** te vormen, ga **Besluiten**. Klik op **+ activiteit maken** .
+Om uw **Besluit** te vormen, ga **Besluiten**. Klik op **+ Beslissing maken** .
 
 ![ Regel van het Besluit ](./images/activitydd.png)
 
-U zult dan dit zien:
+Dan zie je dit. Vul de velden zo in. Klik **daarna**.
 
-![ Regel van het Besluit ](./images/activity1.png)
-
-Vul de velden zo in. Klik **daarna**.
-
-- Naam: `--aepUserLdap-- - Luma Decision`
-- Begindatum en -tijd: gisteren
+- Naam: `--aepUserLdap-- - CitiSignal Decision`
+- Begindatum en -tijd: vandaag
 - Einddatum en -tijd: vandaag + 1 maand
 
 ![ Regel van het Besluit ](./images/activity2.png)
@@ -323,23 +298,23 @@ Eerst, creeer het besluitvormingswerkingsgebied voor **niet-digitaal - Tekst** d
 
 ![ Regel van het Besluit ](./images/activity3.png)
 
-Selecteer uw inzameling `--aepUserLdap-- - Luma Collection` en klik **toevoegen**.
+Selecteer uw inzameling `--aepUserLdap-- - CitiSignal Collection` en klik **toevoegen**.
 
 ![ Regel van het Besluit ](./images/activity4text.png)
 
-Dan zie je dit. Klik op de knop **-** om een nieuw beslissingsbereik toe te voegen.
+Dan zie je dit. Klik op de knop **+** om een nieuw beslissingsbereik toe te voegen.
 
 ![ Regel van het Besluit ](./images/activity5text.png)
 
-Selecteer het plaatsing **Web - Beeld** en voeg uw inzameling `--aepUserLdap-- - Luma Collection` onder evaluatiecriteria toe. Klik vervolgens nogmaals op de knop **+** om een nieuw beslissingsbereik toe te voegen.
+Selecteer het plaatsing **Web - Beeld** en voeg uw inzameling `--aepUserLdap-- - CitiSignal Collection` onder evaluatiecriteria toe. Klik vervolgens nogmaals op de knop **+** om een nieuw beslissingsbereik toe te voegen.
 
 ![ Regel van het Besluit ](./images/activity6text.png)
 
-Selecteer de plaatsing **E-mail - Beeld** en voeg uw inzameling `--aepUserLdap-- - Luma Collection` onder evaluatiecriteria toe. Dan, klik **daarna**.
+Selecteer de plaatsing **E-mail - Beeld** en voeg uw inzameling `--aepUserLdap-- - CitiSignal Collection` onder evaluatiecriteria toe. Dan, klik **daarna**.
 
 ![ Regel van het Besluit ](./images/activity4.png)
 
-U moet nu uw **Aanbieding van de Fallback** selecteren, die `--aepUserLdap-- - Luma Fallback Offer` wordt genoemd. Klik **daarna**.
+U moet nu uw **Aanbieding van de Fallback** selecteren, die `--aepUserLdap-- - CitiSignal Fallback Offer` wordt genoemd. Klik **daarna**.
 
 ![ Regel van het Besluit ](./images/activity10.png)
 

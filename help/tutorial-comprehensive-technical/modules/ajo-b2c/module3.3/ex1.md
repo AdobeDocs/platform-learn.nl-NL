@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ In het linkermenu, klik **Aanbiedingen**. U ziet nu het menu Aanbiedingen, dat d
 
 ![ Plaatsingen ](./images/homedec.png)
 
-Klik **Componenten**. U ziet nu het menu Aanbiedingen, dat elementen als Plaatsen, Markeringen, Regels en Waarderingen bevat.
+Klik **Componenten**. U zult nu dingen zoals Plaatsen, het kwalificeren van de Inzameling, Regels en Rankingen zien.
 
 ![ Plaatsingen ](./images/components.png)
 
@@ -61,7 +61,7 @@ Ga naar **Plaatsen**.
 
 In het **lusje van Plaatsen** kunt u uw plaatsingen voor uw aanbiedingen bepalen. Wanneer u een beslissing definieert, bepaalt de plaatsing waar de resulterende aanbieding wordt weergegeven (Kanaaltype) en in welke vorm of vorm (Inhoudstype).
 
-Als u geen plaatsingen in uw Adobe Experience Platform-exemplaar ziet, gelieve te creëren zoals hieronder en in het screenshot wordt vermeld.
+Als u geen plaatsingen in uw milieu ziet, te creëren gelieve hen zoals hieronder en in het screenshot wordt vermeld.
 
 | Naam | Kanaaltype | Inhoudstype |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Ga naar **Regels**. Klik op **+ Regel maken** .
 
 ![ Regels van het Besluit ](./images/rules.png)
 
-Dan zie je de segmentatieomgeving van Adobe Experience Platform.
+Dan zie je de interface Audience creation van Adobe Experience Platform.
 
 ![ Regels van het Besluit ](./images/createrule1.png)
 
 U kunt tot alle gebieden nu toegang hebben die deel van het Schema van de Vereniging voor het Profiel van de Klant in real time uitmaken en om het even welke regel kunnen bouwen.
 
-Het is ook interessant om te weten dat u reeds bepaald publiek in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten van publiek** te gaan > ``--aepTenantId--``.
-
-![ Regel van het Besluit ](./images/decisionruleaud.png)
+Het is ook goed om te weten dat u reeds bepaald publiek in Adobe Experience Platform eenvoudig kunt hergebruiken, door **Soorten van publiek** te gaan > ``--aepTenantId--``.
 
 U zult dan dit zien:
 
-![ Regel van het Besluit ](./images/decisionruleaud1.png)
+![ Regel van het Besluit ](./images/decisionruleaud.png)
 
 Als u wenst, kunt u uw eigen Regels nu vormen. Hiervoor hebt u twee regels nodig:
 

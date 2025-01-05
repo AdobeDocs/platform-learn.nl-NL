@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
 # 3.3 Offer decisioning
 
-**Auteurs: [ Rob in der Maur ](https://www.linkedin.com/in/ridmaur/), [ Wouter van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In deze module, zult u een hands-on analyse van de mogelijkheden van de Offer decisioning van Adobe Journey Optimizer krijgen.
 
 Adobe Journey Optimizer biedt de mogelijkheid om persoonlijke aanbiedingen te maken en deze op geordende wijze te leveren aan alle bestemmingen die aan Adobe Journey Optimizer zijn gekoppeld.
 
 Met Offer decisioning kunt u de beste optie bepalen op basis van een set beschikbare opties. Deze opties kunnen aanbiedingen, productaanbevelingen, inhoudscomponenten voor een Webervaring, gespreksmanuscripten, en te nemen acties zijn.
-
-Kijk naar deze video om inzicht te krijgen in de waarde en de reis van de klant:
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## Leerdoelen
 
@@ -50,7 +44,7 @@ In deze oefening zult u een beter inzicht in alle verschillende concepten van Of
 
 In deze oefening zult u uw eigen gepersonaliseerde aanbiedingen en uw eigen besluit vormen, die dan zullen worden gepubliceerd.
 
-[3.3.3 Bereid uw bezit van de Cliënt van de Inzameling van Gegevens en de opstelling van SDK van het Web voor Offer decisioning voor](./ex3.md)
+[3.3.3 Bereid uw het bezit van de Cliënt van de Inzameling van Gegevens en de opstelling van SDK van het Web voor Offer decisioning voor](./ex3.md)
 
 In deze oefening zult u de demo website gebruiken om uw besluit te testen.
 
