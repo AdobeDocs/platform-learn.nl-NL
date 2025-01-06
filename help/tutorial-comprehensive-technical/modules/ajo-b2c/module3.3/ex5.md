@@ -3,9 +3,10 @@ title: Offer decisioning - Gebruik uw beslissing in een e-mail
 description: Gebruik uw beslissing in een e-mail
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7eddb239-2666-485a-b81a-1f7e6f3aeed2
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 0%
 
 In deze oefening, zult u uw besluit gebruiken om de levering van e-mail en SMS te personaliseren.
 
-Ga naar **Reizen**. Vind de reis u in oefening 7.2 creeerde, die `--aepUserLdap-- - Account Creation Journey` wordt genoemd. Klik op uw reis om deze te openen.
+Ga naar **Reizen**. Vind de reis u in oefening 3.1.3 creeerde, die `--aepUserLdap-- - Registration Journey` wordt genoemd. Klik op uw reis om deze te openen.
 
 ![ Journey Optimizer ](./images/emailoffer1.png)
 
-Dan zie je dit. Klik **creeer een nieuwe versie**.
+Dan zie je dit. Klik op **.. Meer** en klik dan **creeer een nieuwe versie**.
 
 ![ Journey Optimizer ](./images/journey1.png)
 
@@ -30,51 +31,35 @@ Klik de **E-mail** actie en klik dan **uitgeven inhoud**.
 
 ![ Journey Optimizer ](./images/journey3.png)
 
-U zult dan het berichtdashboard zien. Klik **E-mail Designer**.
+U zult dan het berichtdashboard zien. Klik **uitgeeft e-maillichaam**.
 
 ![ Journey Optimizer ](./images/emailoffer2.png)
-
-Dan zie je dit.
-
-![ Journey Optimizer ](./images/emailoffer5.png)
 
 Dan zie je dit. Sleep een nieuwe **1:1 kolom** structuurcomponent op het canvas.
 
 ![ Journey Optimizer ](./images/emailoffer6.png)
 
-In het menu, ga naar **Componenten van de Inhoud**. Selecteer de **component van het besluit van de Aanbieding 0} {en sleep en laat vallen deze component in de inhoud van e-mail placeholder zoals vermeld aanbiedt.** Dan, klik **toevoegen**.
+In het menu, ga naar **Inhoud**. Selecteer de **component van het besluit van de Aanbieding 0} {en sleep en laat vallen deze component in de inhoud van e-mail placeholder zoals vermeld aanbiedt.** Dan, klik **toevoegen**.
 
 ![ Journey Optimizer ](./images/emailoffer7.png)
 
-Selecteer het type plaatsing dat u in de e-mail wilt opnemen. In het **drop-down menu van Plaatsen** uitgezochte **E-mail - Beeld**, dan selecteer uw besluit `--aepUserLdap-- - Luma Decision`. Klik **toevoegen**.
+Selecteer het type plaatsing dat u in de e-mail wilt opnemen. In het **drop-down menu van Plaatsen** uitgezochte **E-mail - Beeld**, dan selecteer uw besluit `--aepUserLdap-- - CitiSignal Decision`. Klik **toevoegen**.
 
 ![ Journey Optimizer ](./images/emailoffer8.png)
 
-U ziet nu alle persoonlijke aanbiedingen en de fallback-aanbieding die in de e-mailontwerper worden weergegeven. Klik **Simuleren Inhoud** om het e-mailbericht met een echt klantenprofiel voor te vertonen.
+U kunt nu alle gepersonaliseerde aanbiedingen en de fallback-aanbieding doorlopen, die allemaal worden weergegeven in de e-mailontwerper. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/emailoffer9.png)
-
-Geef eerst aan welk profiel u voor de voorvertoning wilt gebruiken. Selecteer **e-mail** namespace en ga het e-mailadres van een klantenprofiel in u op de demowebsite hebt gecreeerd. Daarna, klik **Voorproef**.
-
-![ Journey Optimizer ](./images/emailoffer10.png)
-
-Zodra e-mail is getoond en de aanbieding correct wordt getoond klik op de **Dichte** knoop.
-
-![ Journey Optimizer ](./images/emailoffer11.png)
-
-Tot slot klik **sparen**.
-
-![ Journey Optimizer ](./images/emailoffer12.png)
 
 Klik nu op de pijl om terug te gaan naar het vorige scherm.
 
 ![ Journey Optimizer ](./images/emailoffer13.png)
 
-Dan zie je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
+Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
 
 ![ Journey Optimizer ](./images/emailoffer14.png)
 
-Klik **O.K.** om uw **E-mail** actie te sluiten.
+Klik **sparen** om uw **E-mail** actie te sluiten.
 
 ![ Journey Optimizer ](./images/emailoffer14a.png)
 
