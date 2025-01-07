@@ -4,16 +4,14 @@ description: Gegevensverzameling - Federale Audience Composition
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 Federale Audience Composition
-
-**Auteur: [ Ludovic Latapie ](https://www.linkedin.com/in/ludoviclatapie/), [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In deze module, is het doel allen te leren over het creëren van publiek gebruikend de Samenstelling van het Federale publiek.
 
@@ -38,7 +36,7 @@ Federated Audience Composition biedt Real-Time CDP- en Journey Optimizer-klanten
 
 ## Uitoefening
 
-[1.3.1 Een Snowflake-account instellen](./ex1.md)
+[1.3.1 De Snowflake-omgeving instellen](./ex1.md)
 
 In deze oefening, zult u uw Snowflake proefrekening en u zult het met Adobe Experience Platform verbinden
 

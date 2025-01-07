@@ -5,7 +5,7 @@ user-guide-description: Een praktische zelfstudie waarin veel aspecten van Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
+source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 2%
@@ -49,7 +49,7 @@ ht-degree: 2%
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 Federated Audience Composition {#module13}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 Een Snowflake-account instellen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1 De Snowflake-omgeving instellen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Schema&#39;s, gegevensmodel en koppelingen maken](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3 Een gefederaliseerde compositie maken](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)

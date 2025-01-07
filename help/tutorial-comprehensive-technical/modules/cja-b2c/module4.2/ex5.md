@@ -4,9 +4,9 @@ description: Gegevens van Googles Analytics in Adobe Experience Platform verzame
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -119,69 +119,44 @@ Klik **sparen en ga** verder.
 
 ![ demo ](./images/22.png)
 
+Klik **sparen**.
+
+![ demo ](./images/22a.png)
+
 U kunt nu componenten toevoegen aan uw gegevensweergave. Zoals u kunt zien, worden sommige metriek en afmetingen automatisch toegevoegd.
 
 ![ demo ](./images/24.png)
 
-Voeg de volgende componenten aan de gegevensmening toe:
+Voeg de onderstaande componenten toe aan de gegevensweergave. Zorg er ook voor dat u de veldnamen bijwerkt naar vriendelijke namen. Om dat te doen, selecteer metrisch of afmeting en werk het **gebied van de 1} naam van de Component** in het juiste menu bij.
 
-| Componentnaam | Componenttype | Componentpad |
-| -----------------|-----------------|-----------------|
-| niveau | Dimension | _experiencePlatform.loyaltyDetails.level |
-| punten | Metrisch | _experiencePlatform.loyaltyDetails.points |
-| commerce.checkouts.value | Metrisch | commerce.checkouts.value |
-| commerce.productListRemovals.value | Metrisch | commerce.productListRemovals.value |
-| commerce.productListAdds | Metrisch | commerce.productListAdds |
-| commerce.productViews.value | Metrisch | commerce.productViews.value |
-| commerce.purchases.value | Metrisch | commerce.purchases.value |
-| web.webPageDetails.pageViews | Metrisch | web.webPageDetails.pageViews |
-| Transactie-id | Dimension | commerce.order.payments.transactionID |
-| channel.mediaType | Dimension | channel.mediaType |
-| channel.typeAtSource | Dimension | channel.typeAtSource |
-| Code bijhouden | Dimension | marketing.trackingCode |
-| onbeschaamd | Dimension | _ExperiencePlatform.identification.core.gaid |
-| web.webPageDetails.name | Dimension | web.webPageDetails.name |
-| Type gebeurtenis | Dimension | eventType |
-| Leverancier | Dimension | environment.browserDetails.vendor |
-| Id | Dimension | _id |
-| Tijdstempel | Dimension | tijdstempel |
-| Type | Dimension | device.type |
-| loyaltyId | Dimension | _ExperiencePlatform.identification.core.loyaltyId |
-
-Dan heb je het volgende:
-
-![ demo ](./images/25.png)
-
-Vervolgens moet u de vriendelijke naam wijzigen van enkele van de bovenstaande metriek en dimensies, zodat u deze eenvoudig kunt gebruiken wanneer u de analyse maakt. Om dat te doen, selecteer metrisch of afmeting en werk het **gebied van de Naam** zoals vermeld in hieronder beeld bij.
-
-![ demo ](./images/25a.png)
-
-| Oorspronkelijke naam component | Weergavenaam |
-| -----------------|-----------------|
-| niveau | Loyaliteitsniveau |
-| punten | Loyalty-punten |
-| commerce.checkouts.value | Afbeeldingen |
-| commerce.productListRemovals.value | Winkelwagentjes |
-| commerce.productListAdds | Extra winkelwagentjes |
-| commerce.productViews.value | Productweergaven |
-| commerce.purchases.value | Aankopen |
-| web.webPageDetails.pageViews | Paginaweergaven |
-| channel.mediaType | Traffic Medium |
-| channel.typeAtSource | Traffic Source |
-| Code bijhouden | Marketingkanaal |
-| onbeschaamd | Googles Analytics-id |
-| Naam | Paginatitel |
-| Leverancier | Browser |
-| Type | Apparaattype |
-| loyaltyId | Loyalty-id |
+| Componenttype | Oorspronkelijke naam component | Weergavenaam | Componentpad |
+| -----------------| -----------------|-----------------|-----------------|
+| Metrisch | commerce.checkouts.value | Afbeeldingen | `commerce.checkouts.value` |
+| Metrisch | commerce.productListRemovals.value | Winkelwagentjes | `commerce.productListRemovals.value` |
+| Metrisch | commerce.productListAdds | Extra winkelwagentjes | `commerce.productListAdds` |
+| Metrisch | commerce.productViews.value | Productweergaven | `commerce.productViews.value` |
+| Metrisch | commerce.purchases.value | Aankopen | `commerce.purchases.value` |
+| Metrisch | web.webPageDetails.pageViews | Paginaweergaven | `web.webPageDetails.pageViews` |
+| Metrisch | punten | Loyalty-punten | `_experienceplatform.loyaltyDetails.points` |
+| Dimension | niveau | Loyaliteitsniveau | `_experienceplatform.loyaltyDetails.level` |
+| Dimension | channel.mediaType | Traffic Medium | `channel.mediaType` |
+| Dimension | channel.typeAtSource | Traffic Source | `channel.typeAtSource` |
+| Dimension | Code bijhouden | Marketingkanaal | `marketing.trackingCode` |
+| Dimension | onbeschaamd | Googles Analytics-id | `_experienceplatform.identification.core.gaid` |
+| Dimension | web.webPageDetails.name | Paginatitel | `web.webPageDetails.name` |
+| Dimension | Leverancier | Browser | `environment.browserDetails.vendor` |
+| Dimension | Type | Apparaattype | `device.type` |
+| Dimension | loyaltyId | Loyalty-id | `_experienceplatform.identification.core.loyaltyId` |
+| Dimension | commerce.order.payments.transactionID | Transactie-id | `commerce.order.payments.transactionID` |
+| Dimension | eventType | Type gebeurtenis | `eventType` |
+| Dimension | tijdstempel | Tijdstempel | `timestamp` |
+| Dimension | `_id` | Id | `_id` |
 
 Dan heb je iets als dit:
 
 ![ demo ](./images/25b.png)
 
-Daarna, moet u sommige veranderingen in de Persoon en context van de Zitting voor sommige van deze componenten aanbrengen door de **Montages van de Attributie** te veranderen.
-
-![ demo ](./images/25c.png)
+Daarna, moet u sommige veranderingen in de Persoon en context van de Zitting voor sommige van deze componenten aanbrengen door de **Montages van de Attributie of van de Persistentie** te veranderen.
 
 Gelieve te veranderen de **Montages van de Attributie** voor de hieronder componenten:
 
@@ -193,37 +168,30 @@ Gelieve te veranderen de **Montages van de Attributie** voor de hieronder compon
 | Traffic Medium |
 | Apparaattype |
 | Googles Analytics-id |
-| Loyalty-id |
-| Loyaliteitsniveau |
-| Loyalty-punten |
 
-Om dat te doen, selecteer de component, klik **model van de douaneattributie van het Gebruik** en plaats het **Model** aan **Laatste Aanraak**, en de **Vervalsing** aan **Persoon (Meldend Venster)**. Herhaal dit voor alle bovengenoemde componenten.
+Om dat te doen, selecteer de component, klik **model van de douaneattributie van het Gebruik** en plaats het **Model** aan **Recentste**, en de **Vervalsing** aan **Persoon die Venster** meldt. Herhaal dit voor alle bovengenoemde componenten.
 
 ![ demo ](./images/27a.png)
 
-Na het aanbrengen van de veranderingen in attributie montages voor alle bovengenoemde componenten, zou u deze mening dan moeten hebben:
+Na het aanbrengen van de veranderingen in attributie montages voor alle bovengenoemde componenten, zou u deze mening moeten hebben. Klik **sparen en ga** verder.
 
 ![ demo ](./images/27.png)
 
-Uw gegevensweergave is nu geconfigureerd. Klik **sparen**.
+Op het **scherm van Montages**, worden geen veranderingen vereist. Klik **sparen en beëindigen**.
 
-![ demo ](./images/30.png)
+![ demo ](./images/27b.png)
 
 U kunt nu de gegevens van Googles Analytics analyseren in Adobe Analytics Analysis Workspace. Laten we naar de volgende oefening gaan.
 
 ## 4.2.5.3 Uw project maken
 
-In Customer Journey Analytics, ga naar **Projecten**.
+In Customer Journey Analytics, ga naar **Workspace**. Klik **creëren Project**
 
 ![ demo ](./images/pro1.png)
 
-U zult dan dit zien:
+Selecteer **Leeg Project van Workspace** en klik **creëren**.
 
 ![ demo ](./images/pro2.png)
-
-Creeer een Project door **te klikken leidt tot Nieuw Project**.
-
-![ demo ](./images/pro3.png)
 
 U hebt nu een leeg project:
 
@@ -236,27 +204,21 @@ Sla eerst het project op en geef het een naam. U kunt de volgende opdracht gebru
 | Windows | Control + S |
 | Mac | Command + S |
 
-U ziet deze pop-up:
-
-![ demo ](./images/prsave.png)
-
-Gebruik deze naamgevingsconventie:
+Je ziet deze popup. Gebruik deze naamgevingsconventie:
 
 | Naam | Beschrijving |
 | ----------------- |-------------| 
-| ldap - GA + Loyalty Workspace | ldap - GA + Loyalty Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-Daarna, klik **sparen Project**.
+Daarna, klik **sparen**.
 
-![ demo ](./images/prsave2.png)
+![ demo ](./images/prsave.png)
 
-Selecteer vervolgens de juiste gegevensweergave in de rechterbovenhoek van het scherm. Dit is de gegevensweergave die u in de vorige exercitie hebt gemaakt, met de naamgevingsconventie `ldap - GA + Loyalty Data View` . In dit voorbeeld is de gegevensweergave die moet worden geselecteerd `ldap - GA + Loyalty Data View` .
+Selecteer vervolgens de juiste gegevensweergave in de rechterbovenhoek van het scherm. Dit is de gegevensweergave die u in de vorige exercitie hebt gemaakt, met de naamgevingsconventie `--aepUserLdap-- - GA + Loyalty Data View` .
 
 ![ demo ](./images/prdvlist.png)
 
-![ demo ](./images/prdv.png)
-
-### 12.5.3.1 Vrije-vormtabellen
+### 4.2.5.3.1 Vrije-vormtabellen
 
 Vrije-vormtabellen werken min of meer als draaitabellen in Excel. U kiest iets van de linkerbar en u sleept en laat vallen het in de Vrije vorm en u zult een lijstrapport krijgen.
 
@@ -270,17 +232,13 @@ Laat twee voorbeelden zien waar u SQL, BigQuery en wat tijd moet gebruiken om ee
 
 Laten we deze vragen en nog wat meer beantwoorden met Analysis Workspace in CJA.
 
-Eerst, selecteer de juiste datumwaaier (**Laatste 53 volledige weken**) op de rechterkant van het paneel.
+Eerst, selecteer de juiste datumwaaier (**vandaag**) op de rechterkant van het paneel. CLick **is van toepassing**.
 
 ![ demo ](./images/pro11.png)
 
-Dan klik **toepassen** om de datumwaaier toe te passen. Onthoud deze stap voor volgende oefeningen.
-
-![ demo ](./images/apply.png)
-
 >[!NOTE]
 >
->Als u enkel de **verbinding van Gegevens** creeerde en **mening van Gegevens** u een paar uren zou kunnen moeten wachten. CJA heeft enige tijd nodig om historische gegevens terug te vullen wanneer er een enorme hoeveelheid gegevensverslagen is.
+>Als u enkel de **verbinding van Gegevens** creeerde en **mening van Gegevens** u een paar uren zou kunnen moeten wachten. CJA heeft wat tijd nodig om historische gegevens terug te vullen wanneer er een grote hoeveelheid gegevensverslagen is.
 
 Laten wij wat dimensies en metriek slepen en laten vallen om de kanalen van de Marketing te analyseren. Eerst gebruik het afmetings **In de handel brengen Kanaal** en sleep en laat vallen het aan het canvas van de **Vrije lijst van de Vorm**. (Klik op **tonen allen** in het geval u metrisch onmiddellijk in het menu van Metriek niet ziet)
 
@@ -296,9 +254,13 @@ Alvorens u dat kunt doen, moet u het Berekende Metrische **Tarief van de Omzetti
 
 ![ demo ](./images/procalc1.png)
 
-Als naam voor Berekend Metrisch, gebruik **Tarief van de Omzetting**. Dan sleep de metrieke **aankoop** en **Zittingen** op het canvas. Plaats **Formaat** aan **Percentage** en **Decimale Plaatsen** aan **2**. Tot slot klik **sparen**.
+Als naam voor Berekend Metrisch, gebruik **Tarief van de Omzetting** en gebruik **conversionRate** voor **Externe identiteitskaart**. Dan sleep de metrieke **aankoop** en **Zittingen** op het canvas. Plaats **Formaat** aan **Percentage** en **Decimale Plaatsen** aan **2**. Tot slot klik **sparen**.
 
 ![ demo ](./images/procalc2.png)
+
+Klik **sparen**.
+
+![ demo ](./images/procalc2a.png)
 
 Daarna, om al deze Metriek in de **Vrije Lijst** te gebruiken, sleep en laat vallen hen één voor één op de **Vrije Lijst van de Vorm**. Zie het onderstaande voorbeeld.
 

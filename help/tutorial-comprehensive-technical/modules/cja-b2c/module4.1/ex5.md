@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Visualisatie met Customer Journey Anal
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ Automatisch zal de afmeting **Dag** worden toegevoegd om uw eerste lijst tot sta
 
 ![ demo ](./images/pro3.png)
 
-Klik vervolgens met de rechtermuisknop op het metrische overzicht.
+Klik vervolgens met de rechtermuisknop op het metrische overzicht. Klik **visualiseren**.
 
 ![ demo ](./images/pro4.png)
 
-Klik op **visualiseren** en selecteer dan **Lijn** als visualisatie.
+Klik **Lijn**.
 
 ![ demo ](./images/pro5.png)
 
-Uw producten worden overdag weergegeven.
+Uw producten worden per uur weergegeven.
 
 ![ demo ](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Laten we de beste 5 bekeken producten vinden. In het linkerzijmenu, vind de **Na
 
 Nu belemmering en laat vallen {de Naam van het 0} Product **om de** 3} dimensie van de Dag te vervangen:****
 
-Dit zal het resultaat zijn
+Dat zal het resultaat zijn. Selecteer de vier productnamen en u zult de vizualization update zien.
 
 ![ demo ](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Tot slot kunt u meer visualisaties toevoegen. Zoek links onder visualisatie naar
 
 ![ demo ](./images/pro18.png)
 
-Daarna, in de Lijst, selecteer de eerste 5 **rijen van de Agent van de Gebruiker** van de onderbreking wij onder **het Pixel XL 32GB Zwarte Smartphone van Google** > **Citi Signaal** deden. Terwijl het selecteren van de 3 rijen, houd **CTRL** knoop (op Vensters) of **Bevel** knoop (op Mac).
+Daarna, in de Lijst, selecteer de eerste 5 **rijen van de Agent van de Gebruiker** van de onderbreking wij onder **het Pixel XL 32GB Zwarte Smartphone van Google** > **Citi Signaal** deden. Terwijl het selecteren van de 3 rijen, houd **CTRL** knoop (op Vensters) of **Bevel** knoop (op Mac). U zult de donutgrafiek zien bijwerken.
 
 ![ demo ](./images/pro20.png)
-
-Het donutdiagram is gewijzigd:
-
-![ demo ](./images/pro21.png)
 
 U kunt zelfs het ontwerp aanpassen om beter leesbaar te zijn, door zowel de **grafiek van de Lijn** als de **grafiek van de Donut** kleiner te maken zodat kunnen zij naast elkaar passen:
 
@@ -156,13 +152,9 @@ Dan zie je dit.
 
 ![ demo ](./images/prodatefa.png)
 
-Vind het Type van de afmeting **Gebeurtenis** onder de componenten op de linkerkant:
+Vind het Type van de afmeting **Gebeurtenis** onder de componenten op de linkerkant. Klik op de pijl om de dimensie te openen.
 
 ![ demo ](./images/pro26.png)
-
-Klik op de pijl om de dimensie te openen:
-
-![ demo ](./images/pro27.png)
 
 Alle beschikbare gebeurtenistypen worden weergegeven.
 
@@ -176,7 +168,7 @@ Doe het zelfde met **commerce.productListAdds** en **commerce.purchase** en laat
 
 ![ demo ](./images/props1.png)
 
-Je kunt hier veel doen. Sommige voorbeelden: vergelijk in de loop der tijd elke stap per apparaat of vergelijk elke stap per loyaliteit. Maar als we interessante dingen willen analyseren zoals waarom klanten geen artikelen kopen nadat ze een artikel aan hun winkelwagentje hebben toegevoegd, kunnen we het beste hulpmiddel in CJA gebruiken: klik met de rechtermuisknop.
+Je kunt hier veel doen. Sommige voorbeelden: vergelijk in de loop der tijd elke stap per apparaat of vergelijk elke stap per loyaliteit. Als u echter interessante zaken wilt analyseren, zoals waarom klanten geen artikelen kopen nadat ze een artikel aan hun winkelwagentje hebben toegevoegd, kunnen we het beste hulpmiddel in CJA gebruiken: klik met de rechtermuisknop.
 
 Klik met de rechtermuisknop op het aanraakpunt **commerce.productListAdds**. Dan klik op **val van de Onderbreking op dit aanraakpunt**.
 
@@ -194,36 +186,24 @@ Verander het **Type van Gebeurtenis** door **Naam van de Pagina**, in de nieuwe 
 
 Nogmaals, er zijn vele manieren om deze analyse uit te voeren. Laten we de flowanalyse gebruiken om het detectieonderdeel te starten.
 
-Sluit het huidige deelvenster door hier te klikken:
+Sluit het huidige paneel door hier te klikken en dan een nieuw leeg paneel toe te voegen door op **+ te klikken voegt het Lege Comité toe**.
 
 ![ demo ](./images/pro0.png)
-
-Voeg nu een nieuw leeg paneel toe door op **+ te klikken voegt Leeg Comité toe**.
-
-![ demo ](./images/pro0a.png)
 
 Klik de visualisatie **Stroom**.
 
 ![ demo ](./images/pro35.png)
 
-U zult dan dit zien:
-
-![ demo ](./images/pro351.png)
-
-Selecteer hetzelfde datumbereik als in de vorige exercitie.
+Dan zie je dit. Selecteer hetzelfde datumbereik als in de vorige exercitie. Klik **toepassen**.
 
 ![ demo ](./images/pro0b.png)
 
-Vind de afmeting **Naam van de Pagina** onder de componenten op de linkerkant:
+Vind de afmeting **Naam van de Pagina** onder de componenten op de linkerkant en klik de pijl om de afmeting te openen.
 
 ![ demo ](./images/pro36.png)
 
-Klik op de pijl om de dimensie te openen:
-
-![ demo ](./images/pro37.png)
-
 Alle weergegeven pagina&#39;s worden gevonden. Vind de paginanaam: **annuleert Dienst**.
-De belemmering en laat vallen **annuleert Dienst** in de Visualisatie van de Stroom op het middelste gebied:
+De belemmering en laat vallen **annuleert Dienst** in de Visualisatie van de Stroom op het middelste gebied. Klik **bouwen**.
 
 ![ demo ](./images/pro38.png)
 
@@ -274,27 +254,19 @@ Nu uitgezochte **positief** als waarde voor de filter.
 
 ![ demo ](./images/pro49.png)
 
-Verander het werkingsgebied om **Persoonlijk** niveau te zijn.
+Verander het werkingsgebied om **Persoonlijk** niveau te zijn. Klik **sparen**.
 
 ![ demo ](./images/pro50.png)
 
-Om te beëindigen, klik eenvoudig **sparen**.
-
-![ demo ](./images/pro51.png)
-
-Dan ben je hier weer. Sluit het vorige deelvenster als dat nog niet is gedaan.
+Dan ben je hier weer. Sluit het vorige deelvenster en voeg een nieuw leeg deelvenster toe door op **+ Lege deelvenster toevoegen** te klikken.
 
 ![ demo ](./images/pro0c.png)
 
-Voeg nu een nieuw leeg paneel toe door op **+ te klikken voegt Leeg Comité toe**.
-
-![ demo ](./images/pro24c.png)
-
-Selecteer hetzelfde datumbereik als in de vorige exercitie.
+Selecteer hetzelfde datumbereik als in de vorige exercitie. Klik **toepassen**.
 
 ![ demo ](./images/pro24d.png)
 
-Klik op **Vrije vormlijst**.
+Klik **Vrije lijst van de Vorm**.
 
 ![ demo ](./images/pro52.png)
 
