@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace
 description: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Workspace
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ Als u Analysis Workspace nog niet eerder hebt gebruikt, raden we u aan deze vide
 
 ### Uw project maken
 
-Nu is het tijd om uw eerste CJA-project te maken. Ga naar het projectlusje binnen van CJA.
-Klik **creëren nieuw**.
+Nu is het tijd om uw eerste CJA-werkruimte te maken. Ga naar het **Workspace** lusje binnen van CJA.
+Klik **tot project** leiden.
 
 ![ demo ](./images/prmenu.png)
 
-Dan zie je dit. Selecteer **Leeg project** en klik dan **creeer**.
+Dan zie je dit. Selecteer **Leeg project van Workspace** en klik dan **creeer**.
 
 ![ demo ](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ Dan zie je een leeg project.
 
 ![ demo ](./images/premptyprojects.png)
 
-Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. In dit voorbeeld is de gegevensweergave die moet worden geselecteerd `vangeluwe - Omnichannel Data View` .
+Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. De gegevensweergave die moet worden geselecteerd, is `--aepUserLdap-- - Omnichannel Data View` .
 
 ![ demo ](./images/prdv.png)
 
@@ -108,17 +109,17 @@ De omrekeningskoers wordt gewoonlijk uitgedrukt in een percentage. Dus, verander
 
 Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 
-| Titel | Beschrijving |
-| ----------------- |-------------| 
-| Conversiesnelheid | Conversiesnelheid |
+| Titel | Beschrijving | Externe id |
+| ----------------- |-------------| -------------| 
+| Conversiesnelheid | Conversiesnelheid | conversionRate |
 
-U zult iets als dit op uw scherm hebben:
+Dan heb je dit. Klik **sparen**.
 
 ![ demo ](./images/calcbuildercr6.png)
 
-Vergeet niet om **** te sparen Berekend Metrisch.
+Klik **sparen** opnieuw.
 
-![ demo ](./images/pr9.png)
+![ demo ](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 Berekende Dimensionen: filters (segmentatie) en datumbereiken
 

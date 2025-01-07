@@ -4,27 +4,18 @@ description: Customer Journey Analytics - Een dashboard maken met Analysis Works
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # 4.1 Customer Journey Analytics - Een dashboard maken met Analysis Workspace boven op Adobe Experience Platform
 
-**Auteur: [ Victor de la Iglesia ](https://www.linkedin.com/in/victordelaiglesia/), [ Wouter Van Geluwe ](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In deze module, zult u hands-on ervaring met de de toepassingsdienst van de Customer Journey Analytics krijgen.
 
 Customer Journey Analytics verstrekt toolkit aan bedrijfsintelligentie en gegevenswetenschapsteams voor het stitching en de analyse van kanaalgegevens (online en off-line). De mogelijkheden binnen de Customer Journey Analytics bieden context en helderheid aan de complexe multi-kanaals klantenreizen. De verstrekte context produceert actionable inzicht in hoe te om pijnpunten uit het proces van de klantenomzetting te verwijderen en positieve ervaringen in de momenten te leveren die het belangrijkst zijn.
-
-
-Heb een blik bij deze video om de waarde, de klantenreis en het configuratieproces te begrijpen:
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Meer informatie over Customer Journey Analytics kan [ hier ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) worden gevonden.
 
 ## Leerdoelen
 

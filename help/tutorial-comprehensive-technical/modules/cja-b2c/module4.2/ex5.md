@@ -3,9 +3,10 @@ title: Gegevens van Googles Analytics in Adobe Experience Platform verzamelen en
 description: Gegevens van Googles Analytics in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source-connector - Gegevens van Googles Analytics analyseren met Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 0%
 
 ---
@@ -26,11 +27,7 @@ Ga naar [ analytics.adobe.com ](https://analytics.adobe.com) om tot Customer Jou
 
 Op de homepage van de Customer Journey Analytics, ga naar **Verbindingen**.
 
-![ demo ](./images/conn1.png)
-
 Hier kunt u alle verschillende verbindingen zien die tussen CJA en Platform worden gemaakt. Deze verbindingen hebben hetzelfde doel als rapportsuites in Adobe Analytics. De gegevensverzameling is echter totaal anders. Alle gegevens komen uit de datasets van Adobe Experience Platform.
-
-![ demo ](./images/2.png)
 
 Klik **creëren nieuwe verbinding**.
 
@@ -40,71 +37,45 @@ U zult dan **** UI zien creëren Verbinding.
 
 ![ demo ](./images/5.png)
 
-Ten eerste moet u de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `--aepSandboxName--` moet zijn. In dit voorbeeld, is de zandbak aan gebruik **AEP Enablement FY21**.
+Gebruik voor de naam: `--aepUserLdap-- - GA + Loyalty Data Connection` .
 
-![ demo ](./images/cjasb.png)
+U moet de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `--aepSandboxName--` moet zijn. In dit voorbeeld, is de zandbak aan gebruik **de Instanties van de Tech**.
 
-Nadat u de sandbox hebt geselecteerd, worden de beschikbare gegevenssets bijgewerkt.
+Plaats het **Gemiddelde aantal dagelijkse gebeurtenissen** aan **minder dan 1 miljoen**.
 
-![ demo ](./images/cjasb1.png)
-
-In het linkermenu, kunt u alle beschikbare datasets van Adobe Experience Platform zien. Zoek naar de dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`. Klik **+** om de dataset aan deze verbinding toe te voegen.
+In het datastemenu, kunt u beginnen datasets toe te voegen. Klik **toevoegen datasets**.
 
 ![ demo ](./images/6.png)
 
-Na het toevoegen van het, zult u de dataset binnen de verbinding zien.
+De gegevenssets die moeten worden toegevoegd zijn:
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-U moet nu **identiteitskaart van de Persoon** selecteren. Gelieve te verzekeren **loyaltyId** als identiteitskaart van de Persoon wordt geselecteerd.
+Onderzoek naar beide datasets, controleer hun checkbox en klik dan **daarna**.
+
+![ demo ](./images/d1.png)
+
+U zult dan dit zien:
 
 ![ demo ](./images/8.png)
 
-U zult nu de gegevens van de Interactie van de Website van Googles Analytics met een andere dataset van Adobe Experience Platform verrijken.
+Voor de dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verander **identiteitskaart van de Persoon** in **loyaltyId** en plaats het **Van de Gegevensbron type** aan **Gegevens van het Web**. Laat beide opties voor **invoer toe alle nieuwe gegevens** en **Achtergrond alle bestaande gegevens**.
 
-Zoek naar de dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` gegevensreeks en voeg het aan deze verbinding toe.
+![ demo ](./images/d2.png)
 
-![ demo ](./images/10.png)
+Voor de dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verifieer dat **identiteitskaart van de Persoon** aan **crmId** wordt geplaatst en het **Van de Gegevensbron type** plaatst aan **Gegevens van het Web**. Laat beide opties voor **invoer toe alle nieuwe gegevens** en **Achtergrond alle bestaande gegevens**. Klik **toevoegen datasets**.
 
-U zult dan dit zien:
+![ demo ](./images/d3.png)
 
-![ demo ](./images/10a.png)
+Dan ben je hier. Klik **sparen**.
 
-Om beide datasets samen te voegen, moet u identiteitskaart van de a **Persoon** selecteren die het zelfde type van IDs bevat. De dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` gebruikt **loyaltyId** als identiteitskaart van de Persoon, die het zelfde type van IDs zoals `Demo System - Event Dataset for BigQuery (Global v1.1)` bevat, die ook **loyaltyId** als identiteitskaart van de Persoon gebruikt.
-
-![ demo ](./images/12.png)
-
-Klik **daarna**.
-
-![ demo ](./images/14.png)
-
-U zult dan dit zien:
-
-![ demo ](./images/15.png)
-
-Hier moet u een naam aan uw verbinding geven.
-
-Gebruik deze naamgevingsconventie: `ldap - GA + Loyalty Data Connection` .
-
-Voorbeeld: `vangeluw - GA + Loyalty Data Connection`
-
-Alvorens te voltooien, gelieve **ook te activeren automatisch alle nieuwe gegevens voor alle datasets in deze verbinding, die vandaag beginnen.** zoals in de onderstaande afbeelding.
-
-![ demo ](./images/16.png)
-
-Hierdoor wordt om de 60 minuten een gegevensstroom van Adobe Experience Platform naar CJA gestart, maar met grote hoeveelheden gegevens kan dit tot 24 uur duren.
-
-U moet ook backfill historische gegevens, zodat gelieve te controleren checkbox voor **invoer alle bestaande gegevens** en **minder dan 1 miljoen** selecteren onder **Gemiddeld aantal dagelijkse gebeurtenissen**.
-
-![ demo ](./images/17.png)
+![ demo ](./images/d4.png)
 
 Na het creëren van uw **Verbinding** kan het een paar uren nemen alvorens uw gegevens in CJA beschikbaar zijn.
 
-Klik **sparen** en ga naar de volgende oefening.
-
-![ demo ](./images/cjasave.png)
-
 U zult dan uw verbinding in de lijst van beschikbare verbindingen zien.
 
-![ demo ](./images/18.png)
+![ demo ](./images/d5.png)
 
 ## 4.2.5.2 Een gegevensweergave maken
 
@@ -120,13 +91,9 @@ Als u uw bedrijf gegevensgedreven wilt worden, zou u moeten aanpassen hoe de geg
 - Gebruik dezelfde namen voor KPI&#39;s en Metriek voor Googles Analytics als voor Customers Journey Analytics, zodat het digitale analyseteam slechts één taal kan spreken.
 - gegevensweergave gefilterd om bijvoorbeeld gegevens weer te geven voor 1 markt, of 1 merk, of alleen voor mobiele apparaten.
 
-Voor het **scherm van Verbindingen**, controleer checkbox voor de verbinding u enkel creeerde.
+Voor het **scherm van Verbindingen**, controleer checkbox voor de verbinding u enkel creeerde. Klik **creëren gegevensmening**.
 
 ![ demo ](./images/exta.png)
-
-Nu klik **creeer de Mening van Gegevens**.
-
-![ demo ](./images/extb.png)
 
 U zult aan **worden opnieuw gericht creeer het werkschema van de Mening van Gegevens**.
 
@@ -134,26 +101,23 @@ U zult aan **worden opnieuw gericht creeer het werkschema van de Mening van Gege
 
 U kunt de basisdefinities voor uw gegevensmening nu vormen. Dingen zoals Tijdzone, Sessietime-out of het filteren van de gegevensweergave (het segmenteringsonderdeel dat lijkt op Virtuele rapportsets in Adobe Analytics).
 
-De **Verbinding** u in de vorige oefening creeerde is reeds geselecteerd. Uw verbinding heeft de naam `ldap - GA + Loyalty Data Connection` .
+De **Verbinding** u in de vorige oefening creeerde is reeds geselecteerd. Uw verbinding heeft de naam `--aepUserLdap-- - GA + Loyalty Data Connection` .
 
-![ demo ](./images/ext5.png)
+Geef de gegevensweergave vervolgens een naam die volgt op de naamgevingsconventie: `--aepUserLdap-- - GA + Loyalty Data View` .
 
-Geef de gegevensweergave vervolgens een naam die volgt op de naamgevingsconventie: `ldap - GA + Loyalty Data View` .
-
-Voer dezelfde waarde in voor de beschrijving: `ldap - GA + Loyalty Data View` .
+Voer dezelfde waarde in voor de beschrijving: `--aepUserLdap-- - GA + Loyalty Data View` .
 
 Voordat we een analyse of visualisatie kunnen uitvoeren, moeten we een gegevensweergave maken met alle velden, afmetingen en metriek en hun attributie-instellingen.
 
-| Veld | Naamgevingsconventie | Voorbeeld |
-| ----------------- |-------------|-------------|  
-| Naam van verbinding | LDAP - GA + Loyalty Data View | vangeluw - GA + Loyalty Data View |
-| Beschrijving | LDAP - GA + Loyalty Data View | vangeluw - GA + Loyalty Data View |
-
-![ demo ](./images/22.png)
+| Veld | Naamgevingsconventie |
+| ----------------- |-------------|  
+| Naam van verbinding | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + Loyalty Data View |
+| Beschrijving | `--aepUserLdap-- - GA + Loyalty Data View` |
+| Externe id | `--aepUserLdap--GA` |
 
 Klik **sparen en ga** verder.
 
-![ demo ](./images/23.png)
+![ demo ](./images/22.png)
 
 U kunt nu componenten toevoegen aan uw gegevensweergave. Zoals u kunt zien, worden sommige metriek en afmetingen automatisch toegevoegd.
 

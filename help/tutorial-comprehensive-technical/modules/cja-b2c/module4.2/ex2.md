@@ -3,9 +3,10 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - Maak uw eerste query in BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -28,42 +29,40 @@ De oplossing voor dit probleem is de gegevens van Googles Analytics om te zetten
 
 Ga naar de [ Console BigQuery ](https://console.cloud.google.com/bigquery).
 
-![ demo ](./images/ex3/1.png)
+![ demo ](./images/ex31.png)
 
-In **Ontdekkingsreiziger**, zult u uw identiteitskaart van het Project zien. Klik uw identiteitskaart van het Project (klik niet op **bigquery-public-data** dataset).
+In **Ontdekkingsreiziger**, zult u uw identiteitskaart van het Project zien. Klik uw identiteitskaart van het Project (klik niet **bigquery-public-data** dataset).
 
-![ demo ](./images/ex3/2.png)
+![ demo ](./images/ex32.png)
 
 Je kunt zien dat er nog geen dataset is, dus laten we er nu een maken.
-Klik **CREËREN DATASET**.
+Klik 3 **...** en klik dan **CREEER DATASET**.
 
-![ demo ](./images/ex3/4.png)
+![ demo ](./images/ex34.png)
 
 Op de rechterkant van uw scherm, zult u **zien leiden dataset** menu.
 
-![ demo ](./images/ex3/5.png)
+![ demo ](./images/ex35.png)
 
 Voor **identiteitskaart van de Dataset**, gebruik de hieronder noemende overeenkomst. Voor de andere velden laat u de standaardinstellingen ongewijzigd.
 
 | Naamgeving | Voorbeeld |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![ demo ](./images/ex3/6.png)
+Klik **CREEER GEGEVENSSET**.
 
-Daarna, klik **creëren dataset**.
-
-![ demo ](./images/ex3/7.png)
+![ demo ](./images/ex36.png)
 
 U zult dan terug in de Console BigQuery met uw gemaakte dataset zijn.
 
-![ demo ](./images/ex3/8.png)
+![ demo ](./images/ex38.png)
 
 ## 4.2.2.2 Maak uw eerste SQL BigQuery
 
-Daarna, zult u uw eerste vraag in BigQuery creëren. Het doel van deze query is om de voorbeeldgegevens van de Googles Analytics te nemen en te transformeren zodat deze in Adobe Experience Platform kunnen worden opgenomen. Ga naar **EDITOR** tabel.
+Daarna, zult u uw eerste vraag in BigQuery creëren. Het doel van deze query is om de voorbeeldgegevens van de Googles Analytics te nemen en te transformeren zodat deze in Adobe Experience Platform kunnen worden opgenomen. Ga naar de **Naamloze vraag** tabel.
 
-![ demo ](./images/ex3/9.png)
+![ demo ](./images/ex39.png)
 
 Kopieer de volgende SQL-query en plak deze in die Query Editor. Voel vrij om de vraag te lezen en de syntaxis van Googles Analytics te begrijpen BigQuery.
 
@@ -232,29 +231,29 @@ GROUP BY
 
 Wanneer u klaar bent, klik **Looppas** om de vraag in werking te stellen:
 
-![ demo ](./images/ex3/10.png)
+![ demo ](./images/ex310.png)
 
 Het uitvoeren van de query kan een paar minuten duren.
 
 Zodra de vraag het lopen gebeëindigd heeft, zult u de hieronder output in de **resultaten van de Vraag** zien.
 
-![ demo ](./images/ex3/12.png)
+![ demo ](./images/ex312.png)
 
 ## 4.2.2.3 Sla de resultaten van uw BigQuery SQL-query op
 
 De volgende stap moet de output van uw vraag bewaren door **te klikken SLEEPT RESULTATEN** knoop.
 
-![ demo ](./images/ex3/13.png)
+![ demo ](./images/ex313.png)
 
 Als plaats voor uw output, uitgezochte **Lijst BigQuery**.
 
-![ demo ](./images/ex3/14.png)
+![ demo ](./images/ex314.png)
 
 U zult dan een nieuwe popup zien, waar uw **Naam van het Project** en **Naam van de Dataset** pre-bevolkt zijn. De naam van de dataset zou de dataset moeten zijn die u in het begin van deze oefening, met deze noemende overeenkomst creeerde:
 
 | Naamgeving | Voorbeeld |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 U moet nu een tabelnaam invoeren. Gebruik deze naamgevingsconventie:
 
@@ -262,13 +261,13 @@ U moet nu een tabelnaam invoeren. Gebruik deze naamgevingsconventie:
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![ demo ](./images/ex3/16.png)
-
 Klik **OPSLAAN**.
+
+![ demo ](./images/ex316.png)
 
 Het kan enige tijd duren tot de gegevens klaar zijn in de tabel die u hebt gemaakt. Vernieuw na een paar minuten de browser. U zou dan binnen uw dataset de `--aepUserLdap--_GAdataTableBigquery` lijst onder **Ontdekkingsreiziger** binnen uw project BigQuery moeten zien.
 
-![ demo ](./images/ex3/19.png)
+![ demo ](./images/ex319.png)
 
 U gaat nu verder met de volgende oefening, waar u deze lijst aan Adobe Experience Platform zult verbinden.
 

@@ -3,20 +3,19 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - Maak uw Google Cloud Platform-account
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6dbfb5a3-adc2-4818-8f79-bbb00e56fbdf
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
 
-# 4.2.1 Uw Google Cloud Platform-account maken
+# 4.2.1 Start Google Cloud Platform
 
-## Doelstellingen
-
-- Uw Google Cloud Platform-account maken
-- Bekend worden met Google Cloud Platform Console
-- Uw BigQuery-project maken en voorbereiden
+>[!NOTE]
+>
+>Hiervoor hebt u toegang nodig tot een Google Cloud Platform-omgeving. Als u nog geen toegang hebt tot GCP, maakt u een nieuw account met uw persoonlijke e-mailadres.
 
 ## 4.2.1.1 Waarom maakt u verbinding met Google BigQuery met Adobe Experience Platform om gegevens van Googles Analytics op te halen
 
@@ -33,98 +32,86 @@ De connector GCP/BigQuery Source moet worden gebruikt voor...
 - Volg al klantengedrag op de website en laad die gegevens in Adobe Experience Platform voor analyse, gegevenswetenschap en verpersoonlijking gebruiksgevallen die geen activering in real time vereisen.
 - historische gegevens van Googles Analytics naar Adobe Experience Platform laden, ook voor gebruik in analysen en gegevenswetenschappen
 
-## 4.2.1.2 Een Google-account maken
+## 4.2.1.2 Uw Google-account
 
-Voor een Google Cloud Platform-account hebt u een Google-account nodig.
+>[!NOTE]
+>
+>Hiervoor hebt u toegang nodig tot een Google Cloud Platform-omgeving. Als u nog geen toegang hebt tot GCP, maakt u een nieuw account met uw persoonlijke e-mailadres.
 
-## 4.2.1.3 Uw Google Cloud Platform-account activeren
+## 4.2.1.3 Een project selecteren of maken
 
-Nu u een Google-account hebt, kunt u een Google Cloud Platform-omgeving maken. Om dat te doen, ga naar [ https://console.cloud.google.com/ ](https://console.cloud.google.com/).
+Ga naar [ https://console.cloud.google.com/ ](https://console.cloud.google.com/).
 
-Accepteer de Algemene voorwaarden op de volgende pagina.
+Daarna, klik op **selecteer een project** of klik een bestaand project.
 
-![ demo ](./images/ex1/1.png)
+![ demo ](./images/ex12.png)
 
-Daarna, klik op **Selecteer een project**.
+Als u nog geen project hebt, klik op **NIEUW PROJECT**. Als u al een project hebt, kunt u ervoor kiezen om dat te selecteren en door te gaan naar de volgende stap.
 
-![ demo ](./images/ex1/2.png)
+![ demo ](./images/ex1createproject.png)
 
-Klik op **NIEUW PROJECT**.
+Geef uw project een naam volgens deze naamgevingsconventie. Klik **CREËREN**.
 
-![ demo ](./images/ex1/createproject.png)
+| Conventie |
+| ----------------- |
+| `--aepUserLdap---googlecloud` |
 
-Geef uw project een naam volgens deze naamgevingsconventie:
+![ demo ](./images/ex13.png)
 
-| Conventie | Voorbeeld |
-| ----------------- |-------------| 
-| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
+Wacht tot het bericht in de rechterbovenhoek van het scherm u vertelt dat het maken is voltooid. Dan, klik **UITGEZOCHT PROJECT**.
 
-![ demo ](./images/ex1/3.png)
-
-Klik **creëren**.
-
-![ demo ](./images/ex1/3-1.png)
-
-Wacht tot het bericht in de rechterbovenhoek van het scherm u vertelt dat het maken is voltooid. Dan, klik op **project van de Mening**.
-
-![ demo ](./images/ex1/4.png)
+![ demo ](./images/ex14.png)
 
 Daarna, ga naar de onderzoeksbar bovenop het scherm en type **BigQuery**. Selecteer het eerste resultaat.
 
-![ demo ](./images/ex1/7.png)
+![ demo ](./images/ex17.png)
 
-U wordt vervolgens omgeleid naar de BigQuery Console en er wordt een pop-upbericht weergegeven.
+Het doel van deze module is om gegevens van Googles Analytics in Adobe Experience Platform te krijgen. Om dat te doen, hebt u dummygegevens in een dataset van Googles Analytics nodig om met te beginnen.
 
-**klik Gedaan**.
+Klik op **+ voeg** toe, en klik dan **Openbare datasets** in het juiste menu.
 
-![ demo ](./images/ex1/5.png)
-
-Het doel van deze module is om gegevens van Googles Analytics in Adobe Experience Platform te krijgen. Om dat te doen, hebben we dummygegevens nodig in een dataset van Googles Analytics om mee te beginnen.
-
-Klik op **voeg Gegevens** op het linkerzijmenu toe, dat door te klikken **wordt gevolgd openbare datasets** ontdekken.
-
-![ demo ](./images/ex1/18.png)
+![ demo ](./images/ex118.png)
 
 U ziet dan dit venster:
 
-![ demo ](./images/ex1/19.png)
+![ demo ](./images/ex119.png)
 
-Ga de steekproef van de Googles Analytics van de onderzoekstermijn **** in de onderzoeksbar in en selecteer het eerste resultaat.
+Ga de steekproef van de Googles Analytics van de onderzoekstermijn **** in de onderzoeksbar in en klik het eerste onderzoeksresultaat.
 
-![ demo ](./images/ex1/20.png)
+![ demo ](./images/ex120.png)
 
 U zult het volgende scherm met een beschrijving van de dataset zien. Klik op **DATASET VAN DE MENING**.
 
-![ demo ](./images/ex1/21.png)
+![ demo ](./images/ex121.png)
 
 U zult dan aan BigQuery opnieuw worden gericht waar u dit **bigquery-public-data** dataset onder **Ontdekkingsreiziger** zult zien.
 
-![ demo ](./images/ex1/22a.png)
+![ demo ](./images/ex122a.png)
 
 In **Ontdekkingsreiziger**, zou u een aantal lijsten nu moeten zien. Voel je vrij om ze te verkennen. Ga naar `google_analytics_sample` .
 
-![ demo ](./images/ex1/22.png)
+![ demo ](./images/ex122.png)
 
 Klik om de tabel te openen `ga_sessions` .
 
-![ demo ](./images/ex1/23.png)
+![ demo ](./images/ex123.png)
 
 Voordat u verdergaat met de volgende oefening, noteer gelieve de volgende dingen in een afzonderlijk tekstdossier op uw computer:
 
 | Credentials | Naamgeving | Voorbeeld |
 | ----------------- |-------------| -------------|
 | Projectnaam | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
-| Project-id | random | composiet-task-306413 |
+| Project-id | random | mogelijk-bijen-447102-h3 |
 
 U kunt uw Naam van het Project en identiteitskaart van het Project vinden door op uw **Naam van het Project** in de hoogste menubar te klikken:
 
-![ demo ](./images/ex1/projectMenu.png)
+![ demo ](./images/ex1projectMenu.png)
 
 U ziet dan uw project-id aan de rechterkant:
 
-![ demo ](./images/ex1/projetcselection.png)
+![ demo ](./images/ex1projetcselection.png)
 
-U kunt nu naar oefening 12.2 gaan waar u uw handen vuil maakt door de gegevens van Googles Analytics te vragen.
+Je kunt nu naar de volgende oefening gaan waar je handen vuil wordt door de gegevens van Googles Analytics te vragen.
 
 Volgende Stap: [ 4.2.2 leidt tot uw eerste vraag in BigQuery ](./ex2.md)
 

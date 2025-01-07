@@ -3,9 +3,10 @@ title: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experien
 description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector - Gegevens laden van BigQuery naar Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 793b35c6-761f-4b0a-b0bc-3eab93c82162
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -20,45 +21,33 @@ ht-degree: 0%
 
 ## Voordat u begint
 
-Na oefening 12.3, zou u deze pagina in Adobe Experience Platform moeten open hebben:
+Na de vorige oefening, zou u deze pagina in Adobe Experience Platform moeten openen:
 
 ![ demo ](./images/datasets.png)
 
-**als u het open hebt, ga met oefening 12.4.1 voort.**
+**als u het open hebt, ga met de volgende oefening verder.**
 
 **als u het niet open hebt, ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform/home).**
 
-Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, klik op **Gegevensbestanden**.
+Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, ga naar de **** bronschakelaar van Google BigQuery en klik **Opstelling**.
 
 ![ demo ](./images/sourceshome.png)
 
-Selecteer de **Schakelaar van Google BigQuery** Source en klik op **+ vormen**.
+U ziet dan het selectiescherm voor Google BigQuery-accounts. Selecteer uw rekening en klik **daarna**.
 
-![ demo ](./images/bq.png)
+![ demo ](./images/0c.png)
 
-U ziet dan het selectiescherm voor Google BigQuery-accounts.
-
-![ demo ](./images/0-c.png)
-
-Selecteer uw rekening en klik **daarna**.
-
-![ demo ](./images/ex4/0-d.png)
-
-U zult dan **gegevens** bekijken toevoegen mening.
+U zult dan het **Uitgezochte gegevens** scherm zien.
 
 ![ demo ](./images/datasets.png)
 
 ## 4.2.4.1 Selectie van BigQuery-tabel
 
-In **voeg gegevens** mening toe, selecteer uw dataset BigQuery.
-
-![ demo ](./images/datasets.png)
-
-U kunt nu een voorbeeld van voorbeeldgegevens van de gegevens van Googles Analytics in BigQuery zien.
+In het **Uitgezochte gegevens** scherm, selecteer uw dataset BigQuery. U kunt nu een voorbeeld van voorbeeldgegevens van de gegevens van Googles Analytics in BigQuery zien.
 
 Klik **daarna**.
 
-![ demo ](./images/ex4/3.png)
+![ demo ](./images/datasets1.png)
 
 ## 4.2.4.2 XDM-toewijzing
 
@@ -72,7 +61,7 @@ Selecteer **Bestaande dataset**. Open het vervolgkeuzemenu om een dataset te sel
 
 ![ demo ](./images/xdm6.png)
 
-Omlaag schuiven. U moet nu elk **Gebied van Source** van Googles Analytics/BigQuery aan een XDM **Gebied van het Doel** in kaart brengen, gebied door gebied.
+Omlaag schuiven. U moet nu elk **Gebied van Source** van Googles Analytics/BigQuery aan een XDM **Gebied van het Doel** in kaart brengen, gebied door gebied. U ziet mogelijk een aantal fouten, die worden verholpen door onderstaande toewijzingsexercitie.
 
 ![ demo ](./images/xdm8.png)
 
@@ -80,43 +69,51 @@ Gebruik de onderstaande toewijzingstabel voor deze oefening.
 
 | Source-veld | Doelveld |
 | ----------------- |-------------| 
-| **_id** | _id |
-| **_id** | kanaal._id |
-| timeStamp | tijdstempel |
-| GA_ID | ``--aepTenantId--``.identification.core.gaid |
-| customerID | ``--aepTenantId--``.identification.core.loyaltyId |
-| Pagina | web.webPageDetails.name |
-| Apparaat | device.type |
-| Browser | environment.browserDetails.vendor |
-| MarketingChannel | marketing.trackingCode |
-| TrafficSource | channel.typeAtSource |
-| TrafficMedium | channel.mediaType |
-| TransactionID | commerce.order.payments.transactionID |
-| Ecommerce_Action_Type | eventType |
-| Pageviews | web.webPageDetails.pageViews.value |
-| Unique_Purchases | commerce.purchases.value |
-| Product_Details_Weergaven | commerce.productViews.value |
-| Adds_To_Cart | commerce.productListAdds.value |
-| Product_Verwijderen_Uit_winkelwagentje | commerce.productListRemovals.value |
-| Product_kassa&#39;s | commerce.checkouts.value |
+| `_id` | `_id` |
+| `_id` | kanaal._id |
+| `timeStamp` | tijdstempel |
+| `GA_ID` | ``--aepTenantId--``.identification.core.gaid |
+| `customerID` | ``--aepTenantId--``. identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor |
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | eventType |
+| `Pageviews` | web.webPageDetails.pageViews.value |
 
-Nadat u de bovenstaande toewijzing naar de gebruikersinterface van Adobe Experience Platform hebt gekopieerd en geplakt, controleert u of er geen fouten optreden die te wijten zijn aan typos of leading/trailing spaties.
 
-U hebt nu a **Afbeelding** als dit:
+Voor sommige gebieden, moet u de originele afbeelding verwijderen en nieuwe creëren, voor a **Berekend Gebied**.
 
-![ demo ](./images/xdm34.png)
+| Berekend veld | Doelveld |
+| ----------------- |-------------| 
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value |
+| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value |
+
+Om a **Berekend Gebied** tot stand te brengen, klik **+ Nieuw gebiedstype** en klik dan **Berekend gebied**.
+
+![ demo ](./images/xdm8a.png)
+
+Plak de bovengenoemde regel en klik **sparen** voor elk van de gebieden in de bovengenoemde lijst.
+
+![ demo ](./images/xdm8b.png)
+
+U hebt nu a **Afbeelding** als dit.
 
 De brongebieden **GA_ID** en **customerID** worden in kaart gebracht aan een Herkenningsteken in dit Schema XDM. Hierdoor kunt u gegevens van Googles Analytics (web/app-gedragsgegevens) verrijken met andere gegevenssets, zoals Loyalty of Call Center-data.
 
 Klik **daarna**.
 
-![ demo ](./images/ex4/38.png)
+![ demo ](./images/xdm34.png)
 
 ## 4.2.4.3 Verbinding en planning van gegevensinvoer
 
 U zult nu **het plannen** tabel {zien:
-
-![ demo ](./images/xdm38a.png)
 
 In het **Plannend** lusje, kunt u een frequentie voor het proces van gegevensopname voor dit **Afbeelding** en gegevens bepalen.
 
@@ -124,59 +121,26 @@ Aangezien u demo gegevens in Google BigQuery gebruikt die niet zullen worden ver
 
 - Frequentie: **Week**
 - Interval: **200**
-
-![ demo ](./images/ex4/39.png)
+- De tijd van het begin: **om het even welke tijd in het volgende uur**
 
 **Belangrijk**: ben zeker u de **Achtergrond** schakelaar activeert.
 
-![ demo ](./images/ex4/39a.png)
-
 Last but not least, moet u a **delta** gebied bepalen.
-
-![ demo ](./images/ex4/36.png)
 
 Het **delta** gebied wordt gebruikt om de verbinding te plannen en slechts nieuwe rijen te uploaden die in uw dataset BigQuery komen. Een deltaveld is doorgaans altijd een tijdstempelkolom. Voor toekomstige geplande gegevensinvoer worden dus alleen de rijen met een nieuwe, recentere tijdstempel opgenomen.
 
 Selecteer **timeStamp** als deltagebied.
-
-![ demo ](./images/ex4/37.png)
-
-U hebt dit nu.
-
-![ demo ](./images/xdm37a.png)
-
 Klik **daarna**.
 
-![ demo ](./images/ex4/42.png)
+![ demo ](./images/ex437.png)
 
 ## 4.2.4.4 Verbinding controleren en starten
 
-In de **mening van het de stroomdetail van de Dataset**. U moet uw verbinding noemen, die u zal helpen om het later te vinden.
-
-Gebruik deze naamgevingsconventie:
-
-| Veld | Naamgeving | Voorbeeld |
-| ----------------- |-------------| -------------|
-| Naam gegevensstroom | DataFlow - LDAP - BigQuery Website Interaction | DataFlow - vangeluw - BigQuery Website Interaction |
-| Beschrijving | DataFlow - LDAP - BigQuery Website Interaction | DataFlow - vangeluw - BigQuery Website Interaction |
-
-![ demo ](./images/xdm44.png)
-
-Klik **daarna**.
-
-![ demo ](./images/ex4/45.png)
-
 U ziet nu een gedetailleerd overzicht van uw verbinding. Zorg ervoor dat alles juist is voordat u verdergaat, aangezien sommige instellingen achteraf niet meer kunnen worden gewijzigd, zoals bijvoorbeeld de XDM-toewijzing.
-
-![ demo ](./images/xdm46.png)
 
 Klik **Afwerking**.
 
-![ demo ](./images/ex4/finish.png)
-
-Het instellen van de verbinding kan enige tijd in beslag nemen, dus maak u geen zorgen als u dit ziet:
-
-![ demo ](./images/ex4/47.png)
+![ demo ](./images/xdm46.png)
 
 Zodra de verbinding is gecreeerd, zult u dit zien:
 

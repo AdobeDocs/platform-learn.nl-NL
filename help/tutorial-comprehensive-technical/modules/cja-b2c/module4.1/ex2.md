@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Connect Adobe Experience Platform-gegevensse
 description: Customer Journey Analytics - Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -41,23 +42,21 @@ U kunt nu een naam aan uw verbinding geven.
 
 Gebruik deze naamgevingsconventie: `--aepUserLdap-- – Omnichannel Data Connection` .
 
-Voorbeeld: `vangeluw - Omnichannel Data Connection`
-
-U moet ook de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `Bootcamp` moet zijn. In dit voorbeeld, is de zandbak aan gebruik **Bootkamp**. En u moet ook het **Gemiddelde aantal dagelijkse gebeurtenissen** aan **minder dan 1 miljoen** plaatsen.
+U moet ook de juiste sandbox selecteren om te gebruiken. Selecteer de sandbox in het menu van de sandbox, die `--aepSandboxName--` moet zijn. In dit voorbeeld, is de zandbak **de Instanties van de Tech**. U moet ook het **Gemiddelde aantal dagelijkse gebeurtenissen** aan **minder dan 1 miljoen** plaatsen.
 
 ![ demo ](./images/cjasb.png)
 
-Nadat u de sandbox hebt geselecteerd, worden de beschikbare gegevenssets bijgewerkt.
+Nadat u de sandbox hebt geselecteerd, kunt u beginnen met het toevoegen van gegevenssets. Klik **toevoegen datasets**.
 
 ![ demo ](./images/cjasb1.png)
 
 ## 4.1.2.2 Selecteer Adobe Experience Platform-gegevenssets
 
-Zoek naar de dataset `Demo System - Event Dataset for Website (Global v1.1)`. Klik **+** om de dataset aan deze verbinding toe te voegen.
+Zoek naar de dataset `Demo System - Event Dataset for Website (Global v1.1)`. Laat de doos voor deze dataset toe om het aan deze verbinding toe te voegen.
 
 ![ demo ](./images/cja7.png)
 
-Zoek en controleer nu de selectievakjes voor `Demo System - Event Dataset for Voice Assistants (Global v1.1)` en `Demo System - Event Dataset for Call Center (Global v1.1)` .
+Blijf op hetzelfde scherm en zoek en schakel het selectievakje `Demo System - Event Dataset for Call Center (Global v1.1)` in.
 
 Dan heb je dit. Klik **daarna**.
 
@@ -71,7 +70,7 @@ Het doel is nu om zich bij deze datasets aan te sluiten. Voor elke dataset u sel
 
 ![ demo ](./images/cja11.png)
 
-Zoals u kunt zien, hebben de meeste van hen automatisch geselecteerde identiteitskaart van de Persoon. Dit komt omdat in elk schema in Adobe Experience Platform een primaire id is geselecteerd. Hier ziet u bijvoorbeeld het schema voor `Demo System - Event Schema for Call Center (Global v1.1)` , waarin u kunt zien dat de primaire id is ingesteld op `phoneNumber` .
+Zoals u kunt zien, hebben de meeste van hen automatisch geselecteerde identiteitskaart van de Persoon. Dit komt omdat er in elk schema in Adobe Experience Platform een primaire identiteit is geselecteerd. Hier ziet u bijvoorbeeld het schema voor `Demo System - Event Schema for Website (Global v1.1)` , waarin u kunt zien dat de primaire identiteit is ingesteld op `ecid` .
 
 ![ demo ](./images/cja13.png)
 
@@ -83,7 +82,7 @@ Zoals vermeld, kunt u verschillende Persoon IDs voor elke dataset plaatsen. Dit 
 
 De naam van het veld Person-id is niet belangrijk, zolang de waarde in de velden Person-id overeenkomt. Stel dat er `email` in een gegevensset staat en `emailAddress` in een andere gegevensset die is gedefinieerd als Person ID. Als `delaigle@adobe.com` de zelfde waarde voor de persoon identiteitskaart-gebied op beide datasets is, zal CJA de gegevens kunnen verbinden.
 
-Op dit moment zijn er nog enkele andere beperkingen, zoals het aanstichten van het anonieme gedrag aan gekend. Gelieve te herzien FAQs hier: [ Veelgestelde vragen ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Herzie Veelgestelde vragen CJA hier om de nuances met identiteit het stitching te begrijpen: [ Veelgestelde vragen ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### De gegevens tikken met de persoon-id
 
@@ -91,32 +90,38 @@ Nu u het concept het stitching datasets gebruikend identiteitskaart van de Perso
 
 ![ demo ](./images/cja15.png)
 
-Ga naar elke dataset om de Persoon identiteitskaart bij te werken.
+Ga naar elke dataset om de Persoon identiteitskaart bij te werken. Vul nu het veld Persoon-id met de `email` in de vervolgkeuzelijst.
 
 ![ demo ](./images/cja12a.png)
 
-Vul nu het veld Persoon-id met de `email` in de vervolgkeuzelijst.
-
-![ demo ](./images/cja17.png)
-
-Zodra u de drie datasets hebt vastgezet, zijn wij bereid om verder te gaan.
+Zodra u de twee datasets hebt vastgezet, bent u bereid om verder te gaan.
 
 | gegevensset | Persoon-id |
 | ----------------- |-------------| 
 | Demosysteem - Dataset voor gebeurtenissen voor website (Global v1.1) | email |
-| Demosysteem - Dataset van de Gebeurtenis voor de Medewerkers van de Stem (Globale v1.1) | email |
 | Het Systeem van de manifestatie - de Dataset van de Gebeurtenis voor het Centrum van de Vraag (Globale v1.1) | email |
 
-U moet ook ervoor zorgen dat voor elke dataset, deze opties worden toegelaten:
+U moet er ook voor zorgen dat voor beide datasets, deze opties worden toegelaten:
 
 - Alle nieuwe gegevens importeren
 - Back-up maken van alle bestaande gegevens
+
+(Vergeet niet om beide opties voor de tweede dataset toe te laten)
+
+U moet ook het type van gegevensbron van a **** voor elke dataset selecteren.
+
+Dit zijn de montages voor het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**.
+
+![ demo ](./images/cja16a.png)
+
+Dit zijn de montages voor het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**.
 
 Klik **toevoegen datasets**.
 
 ![ demo ](./images/cja16.png)
 
 Klik **sparen** en ga naar de volgende oefening.
+
 Na het creëren van uw **Verbinding** kan het een paar uren nemen alvorens uw gegevens in CJA beschikbaar zijn.
 
 ![ demo ](./images/cja20.png)

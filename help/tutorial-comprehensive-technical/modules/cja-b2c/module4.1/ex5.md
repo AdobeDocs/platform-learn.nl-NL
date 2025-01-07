@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Visualisatie met Customer Journey Analytics
 description: Customer Journey Analytics - Visualisatie met Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ In deze oefeningen zult u Analysis Workspace binnen CJA gebruiken om productmeni
 
 Wij zullen enkele vragen behandelen die in Module 7 - de Dienst van de Vraag worden gedaan zodat kunt u zien hoe gemakkelijk is om de zelfde vragen en meer in werking te stellen maar zonder SQL te gebruiken en slechts op de belemmering en dalingsfilosofie van Analysis Workspace te vertrouwen.
 
-Laten wij het project gebruiken u in [ 11.4 Voorbereiding van Gegevens in Analysis Workspace ](./ex4.md) creeerde, zo ga [ https://analytics.adobe.com ](https://analytics.adobe.com).
+Laten wij het project gebruiken u in [ 4.1.4 Voorbereiding van Gegevens in Analysis Workspace ](./ex4.md) creeerde, zo ga [ https://analytics.adobe.com ](https://analytics.adobe.com).
+
+Klik om uw project te openen `--aepUserLdap-- - Omnichannel Analysis`.
 
 ![ demo ](./images/prohome.png)
-
-Open uw project `--aepUserLdap-- - Omnichannel Analysis` .
 
 Als uw project is geopend en de gegevensweergave `--aepUserLdap-- - Omnichannel Analysis` is geselecteerd, kunt u uw eerste visualisaties gaan maken.
 
@@ -36,7 +37,7 @@ Als uw project is geopend en de gegevensweergave `--aepUserLdap-- - Omnichannel 
 
 ## Hoeveel productweergaven hebben we dagelijks
 
-Allereerst moeten we de juiste data selecteren om de gegevens te analyseren. Ga naar de kalenderdropdown op de rechterkant van het canvas. Klik erop en selecteer het toepasselijke datumbereik.
+Allereerst moet u de juiste datums selecteren om de gegevens te analyseren. Ga naar de kalenderdropdown op de rechterkant van het canvas. Klik erop en selecteer het toepasselijke datumbereik.
 
 ![ demo ](./images/pro1.png)
 

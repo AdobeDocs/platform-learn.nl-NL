@@ -4,16 +4,14 @@ description: Gegevens van Googles Analytics verzamelen en analyseren in Adobe Ex
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2 Gegevens van Googles Analytics verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source-connector
-
-**Auteurs: [ Victor de la Iglesia ](https://www.linkedin.com/in/victordelaiglesia/), [ Van Geluwe Wouter ](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In deze module stelt u uw eigen exemplaar van Google Cloud Platform in, laadt u voorbeeldgegevens in het Google Cloud Platform en gebruikt u vervolgens de BigQuery Source Connector om die gegevens van het Google Cloud Platform in Adobe Experience Platform in te voeren. Tot slot zult u Customer Journey Analytics gebruiken om die gegevens te visualiseren.
 
@@ -43,9 +41,9 @@ Bovendien kunnen wij die Googles Analytics gegevens verrijken door het met ander
 
 ## Uitoefening
 
-[4.2.1 Uw Google Cloud Platform-account maken](./ex1.md)
+[4.2.1 Start Google Cloud Platform](./ex1.md)
 
-Maak uw Google Cloud Platform-account.
+Gebruik uw Google Cloud Platform-omgeving.
 
 [4.2.2 Maak uw eerste query in BigQuery](./ex2.md)
 
