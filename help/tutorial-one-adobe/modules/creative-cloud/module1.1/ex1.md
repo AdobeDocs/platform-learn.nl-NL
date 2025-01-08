@@ -4,9 +4,9 @@ description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ U ziet nu een mooi beeldportretteren `horses in a field` .
 
 U kunt vrij spelen met de API-aanvraag voordat u verdergaat met de volgende oefening.
 
-Volgende Stap: [ 1.1.2 beelden van het Verzoek met specificaties ](./ex2.md)
+Volgende Stap: [ 1.1.2 optimaliseer uw proces van de Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md)
 
 [Terug naar module 1.1](./firefly-services.md)
 
