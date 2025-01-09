@@ -4,9 +4,9 @@ description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -119,13 +119,13 @@ Open **Containers van de Klodder** en klik dan de container u in de vorige oefen
 
 ![ Azure Opslag ](./images/az18.png)
 
-## 1.1.2.4 Handmatig bestanden uploaden en een verloopbestand gebruiken als stijlverwijzing
+## 1.1.2.4 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlreferentie
 
-U moet nu een gewenste verloopbestand in uw container uploaden. U kunt om het even welk gradiëntdossier van keus gebruiken, of u kunt [ dit dossier ](./images/gradient.jpg) gebruiken door het te downloaden uw computer.
+U moet nu een afbeeldingsbestand naar keuze in uw container uploaden. U kunt om het even welk beelddossier van keus gebruiken, of u kunt [ dit dossier ](./images/gradient.jpg) gebruiken door het uw computer te downloaden.
 
 ![ Azure Opslag ](./images/gradient.jpg)
 
-Zet het verloopbestand neer in uw container in Azure Storage Explorer.
+Zet het afbeeldingsbestand neer in uw container in Azure Storage Explorer.
 
 Na het uploaden ziet u het in uw container:
 
@@ -147,7 +147,7 @@ Ga terug naar Postman. Open het verzoek **POST - Firefly - T2I (styleref) V3**. 
 
 ![ Azure Opslag ](./images/az23.png)
 
-Vervang de plaatsaanduiding-URL door de vooraf ondertekende URL voor het verloopbestand die u hebt gekopieerd vanuit Azure Storage Explorer. Dan heb je dit. Klik **verzenden**.
+Vervang de tijdelijke aanduiding-URL door de vooraf ondertekende URL voor het afbeeldingsbestand die u hebt gekopieerd vanuit Azure Storage Explorer. Dan heb je dit. Klik **verzenden**.
 
 ![ Azure Opslag ](./images/az24.png)
 
@@ -155,7 +155,7 @@ U zult dan een reactie van de Diensten van de Firefly opnieuw, met een nieuw bee
 
 ![ Azure Opslag ](./images/az25.png)
 
-Vervolgens ziet u een andere afbeelding met `horses in a field` , maar deze keer lijkt de stijl op het verloopbestand dat u als stijlverwijzing hebt opgegeven.
+Vervolgens ziet u een andere afbeelding met `horses in a field` , maar deze keer lijkt de stijl op het afbeeldingsbestand dat u als stijlverwijzing hebt opgegeven.
 
 ![ Azure Opslag ](./images/az26.png)
 
@@ -195,7 +195,7 @@ Dan, klik **Lichaam**.
 
 ![ Azure Opslag ](./images/az31.png)
 
-U moet nu een bestand op uw lokale computer selecteren. U kunt een nieuw beelddossier van keus gebruiken, of u kunt een ander gradiëntdossier gebruiken dat u [ hier ](./images/gradient2-p.jpg) kunt vinden.
+U moet nu een bestand op uw lokale computer selecteren. U kunt een nieuw beelddossier van keus gebruiken, of u kunt een ander beelddossier gebruiken dat u [ hier ](./images/gradient2-p.jpg) kunt vinden.
 
 ![ dossier van de Gradiënt ](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ De te gebruiken bestandsnaam is `gradient2-p.jpg` . Dat betekent dat de URL moet
 
 Daarna, ga naar **Kopballen** waar u een nieuwe kopbal moet manueel toevoegen. Gebruik deze:
 
-x-ms-blob-type BlockBlob
+| Sleutel | Waarde |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![ Azure Opslag ](./images/az35.png)
 
@@ -238,6 +241,27 @@ Deze lege reactie wordt dan weergegeven in Postman, wat betekent dat het uploade
 Als u vervolgens teruggaat naar Azure Storage Explorer en de inhoud van uw map vernieuwt, vindt u nu het zojuist geüploade bestand.
 
 ![ Azure Opslag ](./images/az38.png)
+
+## 1.1.2.5 Programmatisch bestandsgebruik
+
+Om programmatically te gebruiken lees dossiers van de Rekeningen van de Opslag van Azure, zult u een nieuw **Gedeelde handtekening van de Toegang (SAS)**, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te lezen. U kon SAS-teken technisch gebruiken u in de vorige oefening creeerde, maar het is beste praktijken om een afzonderlijk teken met slechts **Gelezen** toestemmingen te hebben.
+
+Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+
+![ Azure Opslag ](./images/az27.png)
+
+Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
+
+- **Gelezen**
+- **voeg toe**
+- **creeer**
+- **schrijf**
+- **Lijst**
+
+Klik **creëren**.
+
+![ Azure Opslag ](./images/az28.png)
+
 
 Volgende Stap: [ 1.1.3.. ](./ex3.md)
 
