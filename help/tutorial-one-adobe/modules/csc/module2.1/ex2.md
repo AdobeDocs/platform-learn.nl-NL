@@ -3,9 +3,9 @@ title: Cloud Manager-programma maken
 description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -307,9 +307,38 @@ Uw website zal dan in de **Universele Redacteur** openen.
 
 ![ AEMCS ](./images/aemcssetup45.png)
 
-U kunt nu ook naar uw website navigeren door naar `main--citisignal--woutervangeluwe.aem.live/us/en` te gaan
+U kunt nu toegang krijgen tot uw website door naar `main--citisignal--XXX.aem.page/us/en` en/of `main--citisignal--XXX.aem.live/us/en` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
+In dit voorbeeld wordt de volledige URL als volgt:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en` .
 
+Het kan enige tijd duren voordat alle activa correct zijn weergegeven, aangezien deze eerst moeten worden gepubliceerd.
+
+U zult dan dit zien:
+
+![ AEMCS ](./images/aemcssetup46.png)
+
+Na een paar minuten worden alle elementen correct geladen.
+
+![ AEMCS ](./images/aemcssetup47.png)
+
+## 2.1.2.7 Prestaties van testpagina&#39;s
+
+Ga naar [ https://pagespeed.web.dev/ ](https://pagespeed.web.dev/). Ga uw URL in en klik **analyseren**.
+
+![ AEMCS ](./images/aemcssetup48.png)
+
+Vervolgens ziet u dat uw website, zowel voor mobiele als voor desktoptoepassingen, een hoge score haalt:
+
+**Mobiel**:
+
+![ AEMCS ](./images/aemcssetup49.png)
+
+**Desktop**:
+
+![ AEMCS ](./images/aemcssetup50.png)
+
+Volgende Stap: [ 2.1.3 vormt een douaneblok ](./ex3.md)
 
 [Terug naar module 2.1](./aemcs.md)
 
