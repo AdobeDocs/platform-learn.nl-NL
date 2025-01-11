@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 6%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 6%
 + AI-assistent {#ai-assistant}
    + [Overzicht](/help/platform/ai-assistant/overview.md)
    + [Toegang instellen](/help/platform/ai-assistant/access.md)
-   + [Publiek opruimen](/help/platform/ai-assistant/find-unused-audiences.md)
    + [Aan boord met een nieuw product](/help/platform/ai-assistant/onboard.md)
+   + [Meer informatie over producten](/help/platform/ai-assistant/product-knowledge.md)
+   + [Reacties valideren](/help/platform/ai-assistant/validate-responses.md)
+   + [Deelvenster Detectie](/help/platform/ai-assistant/discoverability-panel.md)
+   + [Ongebruikt publiek zoeken](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Effectanalyse](/help/platform/ai-assistant/impact-analysis.md)
+   + [Beveiligingsoverzicht](/help/platform/ai-assistant/security-overview.md)
 + Soorten publiek en segmentatie {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
@@ -109,7 +114,7 @@ ht-degree: 6%
    + [Overzicht van het opnemen van streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [ gegevens van de Stroom met HTTP API ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [ gegevens van de Stroom gebruikend de Schakelaars van Source ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-   + [ leerprogramma&#39;s van SDK van het Web ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html) {target="_blank"}
+   + ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html) {target="_blank"} zelfstudies van SDK van het 0} Web[
    + [ Mobiele zelfstudies van SDK ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html) {target="_blank"}
 + Levenscyclus gegevens {#data-lifecycle}
    + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
