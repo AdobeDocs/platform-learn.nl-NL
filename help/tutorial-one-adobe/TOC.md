@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '180'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 6%
       + [1.1.2 Optimaliseer uw Firefly met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly en Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
+   + 1.2 Automatiseren van Adobe Firefly Services {#module21}
+      + [Overzicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
+      + [1.2.1 Aan de slag met Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+      + [1.2.2. ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.3.](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 Aanvoerketen voor inhoud {#csc}
    + 2.1 Adobe Experience Manager Cloud Service {#module21}
