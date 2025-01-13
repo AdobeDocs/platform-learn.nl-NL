@@ -4,7 +4,7 @@ description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 0%
@@ -242,7 +242,7 @@ Als u vervolgens teruggaat naar Azure Storage Explorer en de inhoud van uw map v
 
 ![ Azure Opslag ](./images/az38.png)
 
-## 1.1.2.5 Programmatisch bestandsgebruik
+## 1.1.2.6 Programmatisch bestandsgebruik
 
 Om programmatically te gebruiken lees dossiers van de Rekeningen van de Opslag van Azure op de lange termijn, zult u een nieuw **Gedeelde teken van de Toegang (SAS)**, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te lezen. U kon SAS-teken technisch gebruiken u in de vorige oefening creeerde, maar het is beste praktijken om een afzonderlijk teken met slechts **te hebben gelezen** toestemmingen en afzonderlijk teken met slechts **schrijft** toestemmingen.
 
@@ -359,7 +359,7 @@ Als de variabelen op een correcte manier werden gevormd, zult u een beeld URL zi
 
 Open de URL van de afbeelding om uw afbeelding te controleren.
 
-![ Azure Opslag ](./images/az108.png)
+![ Azure Opslag ](./images/az108.jpg)
 
 Volgende Stap: [ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md)
 

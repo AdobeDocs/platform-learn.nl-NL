@@ -2,10 +2,11 @@
 title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - één Adobe
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 2%
+source-wordcount: '302'
+ht-degree: 1%
 
 ---
 
@@ -62,8 +63,12 @@ In deze basismodule gebruikt u Adobe Firefly aan...
 
 In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
+
 ### 3. Unified Customer Experience
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 Federatieve Audience Composition](./modules/uce/module3.1/fac.md)
 
 In deze basismodule leert u meer over Adobe Experience Platform Data Collection en de nieuwe Web SDK-extensie.
