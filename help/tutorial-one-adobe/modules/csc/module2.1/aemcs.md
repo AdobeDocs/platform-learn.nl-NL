@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,15 @@ ht-degree: 0%
 
 In deze oefening, zult u uw Cloud Manager Programma creëren dat de Sites, Assets en de producten van de Edge Delivery Services voor u zal creëren.
 
-[2.1.2 De AEM CS-omgeving instellen](./ex2.md)
+[2.1.2 Uw op documenten gebaseerde website maken](./ex2.md)
+
+In deze aan de slag-oefening, zult u uw eigen op document-gebaseerde website door een bestaand Websitesjabloon te kopiëren opzetten.
+
+[2.1.3 De AEM CS-omgeving instellen](./ex3.md)
 
 In deze exercitie stelt u uw AEM CS-omgeving in en opent u uw CitiSignal-website.
 
-[2.1.3 Een aangepast blok ontwikkelen](./ex3.md)
+[2.1.4 Een aangepast blok ontwikkelen](./ex4.md)
 
 Hierbij ontwikkelt u een aangepaste blokcomponent voor uw website.
 

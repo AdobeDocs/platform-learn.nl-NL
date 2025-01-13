@@ -4,9 +4,9 @@ description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -244,7 +244,9 @@ Als u vervolgens teruggaat naar Azure Storage Explorer en de inhoud van uw map v
 
 ## 1.1.2.5 Programmatisch bestandsgebruik
 
-Om programmatically te gebruiken lees dossiers van de Rekeningen van de Opslag van Azure, zult u een nieuw **Gedeelde handtekening van de Toegang (SAS)**, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te lezen. U kon SAS-teken technisch gebruiken u in de vorige oefening creeerde, maar het is beste praktijken om een afzonderlijk teken met slechts **Gelezen** toestemmingen te hebben.
+Om programmatically te gebruiken lees dossiers van de Rekeningen van de Opslag van Azure op de lange termijn, zult u een nieuw **Gedeelde teken van de Toegang (SAS)**, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te lezen. U kon SAS-teken technisch gebruiken u in de vorige oefening creeerde, maar het is beste praktijken om een afzonderlijk teken met slechts **te hebben gelezen** toestemmingen en afzonderlijk teken met slechts **schrijft** toestemmingen.
+
+### Leesbaar SAS-token op lange termijn
 
 Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
 
@@ -253,17 +255,113 @@ Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechterm
 Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
 
 - **Gelezen**
-- **voeg toe**
-- **creeer**
-- **schrijf**
 - **Lijst**
+
+Plaats de **Vervaltijd** aan 1 jaar van nu.
 
 Klik **creëren**.
 
-![ Azure Opslag ](./images/az28.png)
+![ Azure Opslag ](./images/az100.png)
 
+Vervolgens krijgt u uw SAS-token voor de lange termijn met leesrechten. Kopieer de URL en noteer deze in een bestand op uw computer.
 
-Volgende Stap: [ 1.1.3.. ](./ex3.md)
+![ Azure Opslag ](./images/az101.png)
+
+Uw URL ziet er als volgt uit:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+U kunt enkele waarden afleiden van de bovenstaande URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### SAS-token voor schrijven op lange termijn
+
+Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+
+![ Azure Opslag ](./images/az27.png)
+
+Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
+
+- **voeg toe**
+- **creeer**
+- **schrijf**
+
+Plaats de **Vervaltijd** aan 1 jaar van nu.
+
+Klik **creëren**.
+
+![ Azure Opslag ](./images/az102.png)
+
+Vervolgens krijgt u uw SAS-token voor de lange termijn met leesrechten. Kopieer de URL en noteer deze in een bestand op uw computer.
+
+![ Azure Opslag ](./images/az103.png)
+
+Uw URL ziet er als volgt uit:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+U kunt opnieuw een paar waarden van bovengenoemde URL afleiden:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variabelen in Postman
+
+Zoals u in de bovengenoemde sectie kunt zien, zijn er sommige gemeenschappelijke variabelen in zowel Gelezen als het Schrijven teken.
+
+Nu moet u in Postman variabelen maken waarin de verschillende elementen van de bovenstaande SAS-tokens worden opgeslagen.
+Er zijn enkele waarden die hetzelfde zijn in beide URL&#39;s:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Voor toekomstige API-interacties is de naam van het element het belangrijkste wat wordt gewijzigd, terwijl de bovenstaande variabelen ongewijzigd blijven. In dat geval is het handig om variabelen te maken in Postman, zodat u ze niet telkens handmatig hoeft op te geven.
+
+Open Postman om dit te doen. Klik het **pictogram van Milieu**, open het **Alle variabelen** menu en klik **Milieu**.
+
+![ Azure Opslag ](./images/az104.png)
+
+Dan zie je dit. Creeer deze 4 variabelen in de lijst die wordt getoond en voor de kolommen **Aanvankelijke waarde** en **Huidige waarde**, ga uw specifieke persoonlijke waarden in.
+
+- `AZURE_STORAGE_URL`: uw URL
+- `AZURE_STORAGE_CONTAINER`: de naam van uw container
+- `AZURE_STORAGE_SAS_READ`: uw SAS-leestoken
+- `AZURE_STORAGE_SAS_WRITE`: uw SAS-schrijftoken
+
+Klik **sparen**.
+
+![ Azure Opslag ](./images/az105.png)
+
+In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly - T2I (styleref) V3** als dit:
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![ Azure Opslag ](./images/az24.png)
+
+U kunt de URL nu wijzigen in:
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+Klik **verzenden** om de veranderingen te testen u aanbracht.
+
+![ Azure Opslag ](./images/az106.png)
+
+Als de variabelen op een correcte manier werden gevormd, zult u een beeld URL zien die wordt teruggekeerd.
+
+![ Azure Opslag ](./images/az107.png)
+
+Open de URL van de afbeelding om uw afbeelding te controleren.
+
+![ Azure Opslag ](./images/az108.png)
+
+Volgende Stap: [ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md)
 
 [Terug naar module 1.1](./firefly-services.md)
 

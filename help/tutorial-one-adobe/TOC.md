@@ -4,10 +4,10 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 7%
+source-wordcount: '145'
+ht-degree: 6%
 
 ---
 
@@ -23,15 +23,16 @@ ht-degree: 7%
       + [Overzicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Aan de slag met Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Optimaliseer uw Firefly met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3.](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Adobe Firefly en Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2 Aanvoerketen voor inhoud {#csc}
    + 2.1 Adobe Experience Manager Cloud Service {#module21}
       + [Overzicht](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1 Uw Cloud Manager-programma maken](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
-      + [2.1.2 De AEM CS-omgeving instellen](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
-      + [2.1.3 Een aangepast blok ontwikkelen](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.2 Uw op documenten gebaseerde website maken](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
+      + [2.1.3 De AEM CS-omgeving instellen](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.4 Een aangepast blok ontwikkelen](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Overzicht](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
