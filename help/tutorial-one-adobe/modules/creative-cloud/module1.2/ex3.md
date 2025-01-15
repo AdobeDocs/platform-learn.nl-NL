@@ -3,14 +3,19 @@ title: Aan de slag met Firefly Services
 description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '26'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
 
-# 1.2.3.
+# 1.2.3 Procesautomatisering met Workfront Fusion
+
+Uw scenario ziet er nu zo uit.
+
+![ WF Fusion ](./images/wffusion125.png)
 
 
 Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md)

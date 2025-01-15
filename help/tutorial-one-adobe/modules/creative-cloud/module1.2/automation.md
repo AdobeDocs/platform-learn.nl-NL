@@ -4,9 +4,9 @@ description: Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ In deze oefening, verken Workfront Fusion in combinatie met de Diensten van de F
 
 [1.2.2 Adobe-API&#39;s gebruiken in Workfront Fusion](./ex2.md)
 
-In deze oefening, zult u Firefly Services APIs en Photoshop APIs binnen Workfront Fusion vormen en gebruiken.
+In deze oefening, vormt en gebruikt u de Diensten APIs van de Firefly en Photoshop APIs binnen Workfront Fusion, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
 
-[1.2.3.](./ex3.md)
+[1.2.3 Procesautomatisering met Workfront Fusion](./ex3.md)
 
-In deze exercitie ...
+In deze oefening, blijft u uw reis verfijnen om beeldverwezenlijking te automatiseren proces.
 
 [Samenvatting en voordelen](./summary.md)
 
