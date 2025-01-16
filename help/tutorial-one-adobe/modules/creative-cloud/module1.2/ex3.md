@@ -1,12 +1,12 @@
 ---
-title: Aan de slag met Firefly Services
-description: Aan de slag met Firefly Services
+title: Procesautomatisering met Workfront Fusion
+description: Procesautomatisering met Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,9 @@ Uw scenario zal dan opnieuw lopen, en creeer de 2 dossiers enkel als voordien.
 
 ![ WF Fusion ](./images/wffusion232.png)
 
-Wijzig voordat u doorgaat de naam van uw Postman-aanvraag in `POST - Send Request to Workfront Fusion Webhook` .
+Ten slotte wijzigt u de naam van uw Postman-verzoek in `POST - Send Request to Workfront Fusion Webhook` .
 
 ![ WF Fusion ](./images/wffusion233.png)
-
 
 Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md)
 

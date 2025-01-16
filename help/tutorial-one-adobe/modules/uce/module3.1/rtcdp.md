@@ -1,37 +1,29 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: Stichting - FAC - Samenvatting
+description: Stichting - FAC - Samenvatting
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---
 
-# 3.1 Adobe Real-Time CDP
+# Samenvatting en voordelen
 
-## Leerdoelen
+Gefeliciteerd en bedankt dat u uw tijd hebt geïnvesteerd in het leren over Adobe Experience Platform!
 
-- Leer hoe u Adobe Real-Time CDP op verschillende manieren kunt gebruiken.
+## Voordelen
 
-## Vereisten
+Laten we de voordelen benadrukken van de mogelijkheden voor gegevensinvoer van Federated Audience Composition in Adobe Experience Platform:
 
-- Toegang tot Adobe Real-Time CDP
 
-## Uitoefening
 
-[3.1.1 Real-Time CDP](./ex1.md)
+## Bekijk dit
 
-In deze exercitie ...
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
->[!NOTE]
->
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+[Terug naar module 3.1](./fac.md)
 
 [Terug naar alle modules](../../../overview.md)

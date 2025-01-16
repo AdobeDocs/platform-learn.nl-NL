@@ -1,35 +1,30 @@
 ---
-title: Workflowbeheer met Adobe Workfront
-description: Workflowbeheer met Adobe Workfront
+title: Adobe Journey Optimizer-vertaalservices
+description: Adobe Journey Optimizer-vertaalservices
 kt: 5342
 doc-type: tutorial
-exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-# 2.2 Workflowbeheer met Adobe Workfront
+# 3.2 Adobe Journey Optimizer Translation Services
 
 ## Leerdoelen
 
-- Leer hoe u Adobe Workfront op verschillende manieren kunt gebruiken.
+- Leer hoe u Adobe Journey Optimizer Translation Services configureert en gebruikt.
 
 ## Vereisten
 
-- Toegang tot Workfront en Workfront Fusion
+- Toegang tot Adobe Journey Optimizer
 
 ## Uitoefening
 
-[2.2.1 Aan de slag met Workfront](./ex1.md)
+[3.2.1.](./ex1.md)
 
 In deze exercitie ...
-
-[2.2.5 Integratie van Workfront en Photoshop](./ex5.md)
-
-In deze exercitie, zult u opstelling en beginnen gebruikend de stop die Adobe Photoshop met Adobe Workfront verbindt.
 
 [Samenvatting en voordelen](./summary.md)
 

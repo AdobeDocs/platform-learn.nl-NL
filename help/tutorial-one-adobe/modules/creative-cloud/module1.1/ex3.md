@@ -1,17 +1,17 @@
 ---
-title: Aan de slag met Firefly Services
-description: Aan de slag met Firefly Services
+title: Werken met Photoshop API's
+description: Werken met Photoshop API's
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Firefly en Adobe Photoshop
+# 1.1.3 Werken met Photoshop API&#39;s
 
 ## 1.1.3.1 De Adobe I/O-integratie bijwerken
 
@@ -73,6 +73,8 @@ U hebt dan een geldig toegangstoken om met Photoshop APIs in wisselwerking te st
 
 ![ Azure Opslag ](./images/ps9.png)
 
+### 1.1.3.2.1 Photoshop API - Hello World
+
 Laten we nu de groeten overbrengen aan Photoshop API&#39;s om te testen of alle machtigingen en toegangsrechten correct zijn ingesteld. In de inzameling **Photoshop**, open het verzoek met de naam **Photoshop Hello (de Auteur van de Test.)**. Klik **verzenden**.
 
 ![ Azure Opslag ](./images/ps10.png)
@@ -82,6 +84,8 @@ U zou deze reactie dan moeten ontvangen: **Onthaal aan Photoshop API!**.
 ![ Azure Opslag ](./images/ps11.png)
 
 Daarna, om programmatically met het dossier van PSD **te interactie aan te gaan** wordt  gebruikt   , moet u het aan uw opslagrekening uploaden. Dat kunt u handmatig doen door het bestand met Azure Storage Explorer naar uw container te slepen, maar dit keer moet u het doen via de API.
+
+### 1.1.3.2.2 Upload PSD naar Azure
 
 In Postman, open het verzoek **uploadt PSD naar de Rekening van de Opslag Azure**. In de vorige oefening, vormde u deze milieuvariabelen in Postman, die u nu zult gebruiken:
 
@@ -109,6 +113,8 @@ U moet deze lege reactie dan terugkrijgen van Azure, wat betekent dat uw bestand
 Als u Azure Storage Explorer gebruikt voor een look, ziet u uw bestand nadat u de map hebt vernieuwd.
 
 ![ Azure Opslag ](./images/ps16.png)
+
+### 1.1.3.2.3 Photoshop API - Get Manifest
 
 Vervolgens moet u het manifestbestand van uw PSD-bestand ophalen. In Postman, open het verzoek **Photoshop - krijg PSD Manifest**. Ga naar **Lichaam**.
 
@@ -155,6 +161,8 @@ Wanneer de reactie beschikbaar is, zult u een JSON dossier dat informatie over a
 Zoek bijvoorbeeld naar de tekst `2048x2048-cta` . Dan moet je dit zien.
 
 ![ Azure Opslag ](./images/ps21.png)
+
+### 1.1.3.2.4 Photoshop API - Tekst wijzigen
 
 Vervolgens moet u nu de tekst wijzigen voor de oproep tot actie met de API&#39;s. In Postman, open het verzoek **Photoshop - de Tekst van de Verandering** en ga naar **Lichaam**.
 

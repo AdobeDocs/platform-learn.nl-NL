@@ -4,10 +4,10 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
+source-git-commit: ad36efe6c3a590ddc79c39f6d7511e31b51f9dcb
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 5%
+source-wordcount: '305'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,17 @@ ht-degree: 5%
 # Uitgebreide technische zelfstudie - één Adobe {#tutorial-one-adobe}
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
++ [Content Status](/help/tutorial-one-adobe/status.md)
 
 + Aan de slag {#gettingstarted}
-   + [Aan de slag](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
+   + Aan de slag {#gettingstarted}
+      + [Overzicht](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
+      + [De Chrome-extensie installeren voor de documentatie van het Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
+      + [Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [Uw gegevensstroom maken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+      + [De website gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+      + [De mobiele app gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Adobe Firefly Services {#module11}
       + [Overzicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -53,4 +61,17 @@ ht-degree: 5%
       + [3.1.2 Schema&#39;s, gegevensmodel en koppelingen maken](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
       + [3.1.3 Een gefederaliseerde samenstelling maken](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
+   + 3.2 Adobe Journey Optimizer: Vertaalservices {#module32}
+      + [Overzicht](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
+      + [3.2.1.](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
+   + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
+      + [Overzicht](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
+      + [3.3.1 Offer decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.2 Configureer uw aanbiedingen en besluit](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
+      + [3.3.3 Bereid uw bezit van de Cliënt van de Gegevensverzameling van Adobe Experience Platform en de opstelling van het Web SDK voor Offer decisioning voor](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.4 Combineer Adobe Target en Offer decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+      + [3.3.5 Gebruik uw beslissing in een e-mail](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
+      + [3.3.6 Test uw besluit met behulp van de API](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
+      + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)
 
