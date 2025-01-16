@@ -3,10 +3,10 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - één Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '342'
+ht-degree: 2%
 
 ---
 
@@ -32,6 +32,7 @@ Deze zelfstudie richt zich niet alleen op Adobe toepassingen, maar houdt rekenin
 - Google Cloud Platform
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 Nadat u de oefeningen in deze zelfstudie hebt voltooid, kunt u het volgende doen:
@@ -55,7 +56,11 @@ Als u deze zelfstudie wilt gebruiken met uw eigen Adobe Experience Cloud-exempla
 
 [1.1 Adobe Firefly](./modules/creative-cloud/module1.1/firefly-services.md)
 
-In deze basismodule gebruikt u Adobe Firefly aan...
+In deze module gebruikt u Adobe Firefly Services API&#39;s, Photoshop API&#39;s en Microsoft Azure Storage Services om images te genereren en via programmacode op te slaan.
+
+[1.2 Creative Workflow Automation met Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+
+In deze basismodule gebruikt u Adobe Workfront Fusion om workflows voor het maken van inhoud te automatiseren en schalen.
 
 ### 2. Aanvoerketen voor inhoud
 
