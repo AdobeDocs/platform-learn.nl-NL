@@ -5,9 +5,10 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: d52ec3c8-8628-4a52-9107-471342118a53
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -65,6 +66,7 @@ Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [Terug naar alle modules](../../../overview.md)

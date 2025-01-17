@@ -4,7 +4,7 @@ description: Aan de slag met Firefly Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In deze oefening, zult u Postman en Adobe I/O gebruiken om de Diensten APIs van 
 
 In deze oefening zult u Adobe I/O vrij intensief aan vraag tegen de Diensten APIs van de Firefly gebruiken. Volg de onderstaande stappen om Adobe I/O in te stellen.
 
-Ga naar [ https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"}
 
 ![ Adobe I/O Nieuwe Integratie ](./images/iohome.png)
 
@@ -79,7 +79,7 @@ De instellingen van uw Adobe I/O-integratie zijn nu voltooid.
 
 ## Postman-verificatie naar Adobe I/O
 
-Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/).
+Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/) {target="_blank"}.
 
 Download en installeer de relevante versie van Postman voor uw besturingssysteem.
 
@@ -178,8 +178,8 @@ U ziet nu een mooi beeldportretteren `horses in a field` .
 
 U kunt vrij spelen met de API-aanvraag voordat u verdergaat met de volgende oefening.
 
-Volgende Stap: [ 1.1.2 optimaliseer uw proces van de Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md)
+Volgende Stap: [ 1.1.2 optimaliseer uw proces van de Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md){target="_blank"}
 
-[Terug naar module 1.1](./firefly-services.md)
+[ ga terug naar Module 1.1 ](./firefly-services.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

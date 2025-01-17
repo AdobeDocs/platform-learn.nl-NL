@@ -3,7 +3,8 @@ title: Een aangepast blok ontwikkelen
 description: Een aangepast blok ontwikkelen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## 2.1.4.1 De lokale ontwikkelomgeving instellen
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/), download en installeer **Desktop van Github**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/) {target="_blank"}, download en installeer **Desktop van Github**.
 
 ![ Blok ](./images/block1.png)
 
@@ -29,6 +30,6 @@ Uw reactie GitHub zal dan in de Desktop worden geopend GitHub. Voel vrij om de *
 Een lokale fo
 
 
-[Terug naar module 2.1](./aemcs.md)
+[ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

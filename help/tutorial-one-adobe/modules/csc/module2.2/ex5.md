@@ -3,7 +3,8 @@ title: Cloud Manager-programma maken
 description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 608fb56797336fe17f99c1c2bf940de01612a45c
+exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -80,6 +81,6 @@ Ga terug naar Photoshop en u zult zien dat de plug-in nu klaar is om te worden g
 
 ![ WF ](./images/wf16.png)
 
-[Terug naar module 2.2](./workfront.md)
+[ ga terug naar Module 2.2 ](./workfront.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

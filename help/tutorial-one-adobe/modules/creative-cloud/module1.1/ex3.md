@@ -4,7 +4,7 @@ description: Werken met Photoshop API's
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 1.1.3.1 De Adobe I/O-integratie bijwerken
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home).
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"}.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/iohome.png)
 
@@ -49,7 +49,7 @@ Uw Adobe I/O-project wordt nu bijgewerkt en werkt nu met Photoshop &amp; Firefly
 
 ## 1.1.3.2 Programmatische interactie met een PSD-bestand
 
-Download het dossier gaat naar [ burgerschap-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd) aan uw Desktop.
+Download het dossier gaat naar [ burgerschap-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} aan uw Desktop.
 
 Open het dossier **burgersignaal-fiber.psd** in Photoshop. Dan moet je dit hebben.
 
@@ -229,8 +229,8 @@ Tot slot ziet u dat bestand ook in uw container met Azure Storage Explorer.
 
 Je hebt deze oefening nu voltooid.
 
-Volgende Stap: [ 1.1.4 de Modellen van de Douane van de Firefly ](./ex4.md)
+Volgende Stap: [ 1.1.4 de Modellen van de Douane van de Firefly ](./ex4.md){target="_blank"}
 
-[Terug naar module 1.1](./firefly-services.md)
+[ ga terug naar Module 1.1 ](./firefly-services.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

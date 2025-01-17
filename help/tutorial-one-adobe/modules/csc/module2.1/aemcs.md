@@ -4,9 +4,9 @@ description: ADOBE EXPERIENCE MANAGER CLOUD SERVICE & EDGE DELIVERY SERVICES
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -23,28 +23,29 @@ ht-degree: 0%
 
 ## Uitoefening
 
-[2.1.1 Uw Cloud Manager-programma maken](./ex1.md)
+[ 2.1.1 creeer uw Programma van Cloud Manager ](./ex1.md){target="_blank"}
 
 In deze oefening, zult u uw Cloud Manager Programma creëren dat de Sites, Assets en de producten van de Edge Delivery Services voor u zal creëren.
 
-[2.1.2 Uw op documenten gebaseerde website maken](./ex2.md)
+[ 2.1.2 creeer uw op document-gebaseerde website ](./ex2.md){target="_blank"}
 
 In deze aan de slag-oefening, zult u uw eigen op document-gebaseerde website door een bestaand Websitesjabloon te kopiëren opzetten.
 
-[2.1.3 De AEM CS-omgeving instellen](./ex3.md)
+[ 2.1.3 Opstelling uw milieu AEM CS ](./ex3.md){target="_blank"}
 
 In deze exercitie stelt u uw AEM CS-omgeving in en opent u uw CitiSignal-website.
 
-[2.1.4 Een aangepast blok ontwikkelen](./ex4.md)
+[ 2.1.4 ontwikkelt een douaneblok ](./ex4.md){target="_blank"}
 
 Hierbij ontwikkelt u een aangepaste blokcomponent voor uw website.
 
-[Samenvatting en voordelen](./summary.md)
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[Terug naar alle modules](../../../overview.md)
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}

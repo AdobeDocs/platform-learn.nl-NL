@@ -4,9 +4,9 @@ description: Workflowbeheer met Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,21 @@ ht-degree: 0%
 
 ## Uitoefening
 
-[2.2.1 Aan de slag met Workfront](./ex1.md)
+[ 2.2.1 Aan de slag met Workfront ](./ex1.md){target="_blank"}
 
 In deze exercitie ...
 
-[2.2.5 Integratie van Workfront en Photoshop](./ex5.md)
+[ 2.2.5 Workfront + de integratie van Photoshop ](./ex5.md){target="_blank"}
 
 In deze exercitie, zult u opstelling en beginnen gebruikend de stop die Adobe Photoshop met Adobe Workfront verbindt.
 
-[Samenvatting en voordelen](./summary.md)
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[Terug naar alle modules](../../../overview.md)
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}

@@ -3,7 +3,7 @@ title: Werken met Photoshop API's
 description: Werken met Photoshop API's
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 1.1.4 Aangepaste modellen Firefly
 
-Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com). Ga naar **Modellen van de Douane**.
+Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com) {target="_blank"}. Ga naar **Modellen van de Douane**.
 
 ![ Firefly ](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ Uw afbeeldingen worden nu geüpload. Dit kan enige tijd duren.
 
 Je hebt deze oefening nu voltooid.
 
-Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md)
+Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md){target="_blank"}
 
-[Terug naar module 1.1](./firefly-services.md)
+[ ga terug naar Module 1.1 ](./firefly-services.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

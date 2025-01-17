@@ -4,7 +4,7 @@ description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 2.1.1 Uw Cloud Manager-programma maken
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com). De org die u moet selecteren is `--aepImsOrgName--`. Dan zie je zoiets. Klik **toevoegen Programma**.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Dan zie je zoiets. Klik **toevoegen Programma**.
 
 ![ AEMCS ](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ Het maken van uw omgevingen duurt 10 tot 20 minuten.
 
 ![ AEMCS ](./images/aemcs4.png)
 
-Terwijl u wacht, kunt u reeds met oefening [ 2.1.2 beginnen creeer uw op document-gebaseerde website ](./ex2.md).
+Terwijl u wacht, kunt u reeds met oefening [ 2.1.2 beginnen creeer uw op document-gebaseerde website ](./ex2.md){target="_blank"}.
 
 Zodra de milieu&#39;s worden gecreeerd en klaar om te gebruiken, zult u een e-mailbevestiging ontvangen waarna u hier kunt terugkomen.
 
 ![ AEMCS ](./images/aemcs5.png)
 
-Zodra u uw e-mailbevestiging hebt ontvangen, ga terug naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com). U zult dan zien dat het statuut van uw programma is veranderd in **Klaar**. Klik op uw programma om het te openen.
+Zodra u uw e-mailbevestiging hebt ontvangen, ga terug naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. U zult dan zien dat het statuut van uw programma is veranderd in **Klaar**. Klik op uw programma om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ U zult dan uw milieudetails, met inbegrip van URL van uw **milieu van de Auteur*
 
 Zodra uw pijpleidingslooppas is gebeëindigd, kunt u met de volgende oefening verdergaan.
 
-Volgende Stap: [ 2.1.2 leidt tot uw op document-gebaseerde website ](./ex2.md)
+Volgende Stap: [ 2.1.2 leidt tot uw op document-gebaseerde website ](./ex2.md){target="_blank"}
 
-[Terug naar module 2.1](./aemcs.md)
+[ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

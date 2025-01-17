@@ -4,9 +4,9 @@ description: Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -19,32 +19,33 @@ ht-degree: 0%
 
 ## Vereisten
 
-- Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Toegang tot Adobe Firefly [ https://firefly.adobe.com/ ](https://firefly.adobe.com/) {target="_blank"}
 
 ## Uitoefening
 
-[1.1.1 Aan de slag met Firefly Services](./ex1.md)
+[ 1.1.1 die met de Diensten van de Firefly ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, verken de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[1.1.2 Optimaliseer uw Firefly processen met Microsoft Azure en vooraf ondertekende URL&#39;s](./ex2.md)
+[ 1.1.2 optimaliseer uw processen van de Firefly met Microsoft Azure en presigned URLs ](./ex2.md){target="_blank"}
 
 In deze oefening, verken de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[1.1.3 Adobe Firefly en Adobe Photoshop](./ex3.md)
+[ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md){target="_blank"}
 
 In deze oefening, zult u Firefly Services samen met Adobe Photoshop gebruiken.
 
-[1.1.4 Aangepaste modellen Firefly](./ex4.md)
+[ 1.1.4 de Modellen van de Douane van de Firefly ](./ex4.md){target="_blank"}
 
 In deze oefening, zult u Firefly Services samen met Adobe Photoshop gebruiken.
 
-[Samenvatting en voordelen](./summary.md)
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[Terug naar alle modules](../../../overview.md)
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}

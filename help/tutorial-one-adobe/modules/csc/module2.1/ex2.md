@@ -4,7 +4,7 @@ description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 2.1.2 Uw op documenten gebaseerde website maken
 
-Terwijl u wacht tot uw Cloud Manager-programma is gemaakt, hebt u genoeg tijd om uw eerste op documenten gebaseerde ontwerpwebsite in te stellen. De hieronder oefening is gebaseerd op [ aem.live het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial). Volg de onderstaande stappen om aan de slag te gaan.
+Terwijl u wacht tot uw Cloud Manager-programma is gemaakt, hebt u genoeg tijd om uw eerste op documenten gebaseerde ontwerpwebsite in te stellen. De hieronder oefening is gebaseerd op [ aem.live het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial) {target="_blank"}. Volg de onderstaande stappen om aan de slag te gaan.
 
 ## 2.1.2.1 Google Drive instellen
 
-Ga naar [ https://drive.google.com ](https://drive.google.com). Klik **+ Nieuw** en klik dan **Nieuwe Omslag**.
+Ga naar [ https://drive.google.com ](https://drive.google.com) {target="_blank"}. Klik **+ Nieuw** en klik dan **Nieuwe Omslag**.
 
 ![ AEMCS ](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Geef de map een naam `aemdocb-test` . Klik **creëren**.
 
 ![ AEMCS ](./images/googledrive2.png)
 
-Download het dossier [ aemboilerplate.zip ](./../../../assets/aem/aemboilerplate.zip) en haal het op uw computer uit.
+Download het dossier [ aemboilerplate.zip ](./../../../assets/aem/aemboilerplate.zip){target="_blank"} en haal het op uw computer uit.
 
 ![ AEMCS ](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ U moet de parameter voor de querytekenreeks `?usp=drive_link` verwijderen, zodat
 
 ## 2.1.2.2 Opstelling uw repo van GitHub
 
-Ga naar [ https://github.com ](https://github.com). Klik **Teken binnen**.
+Ga naar [ https://github.com ](https://github.com) {target="_blank"}. Klik **Teken binnen**.
 
 ![ AEMCS ](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ Zodra binnen ondertekend, zult u uw dashboard zien GitHub.
 
 ![ AEMCS ](./images/aemcssetup3.png)
 
-Ga naar [ https://github.com/adobe/aem-boilerplate ](https://github.com/adobe/aem-boilerplate). Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
+Ga naar [ https://github.com/adobe/aem-boilerplate ](https://github.com/adobe/aem-boilerplate) {target="_blank"}. Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
 
 ![ AEMCS ](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ Na een paar seconden wordt de repository gemaakt.
 
 ![ AEMCS ](./images/aemdocbcssetup6.png)
 
-Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync). Klik **vormen**.
+Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync) {target="_blank"}. Klik **vormen**.
 
 ![ AEMCS ](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ Klik **veranderingen** vastleggen.
 
 ## 2.1.2.4 De extensie AEM Sidekick installeren
 
-Ga naar [ https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo ](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Klik **toevoegen aan Chrome**.
+Ga naar [ https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo ](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo) {target="_blank"}. Klik **toevoegen aan Chrome**.
 
 ![ AEMCS ](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ U ziet dan de live versie van uw website.
 
 Deze oefening was een goede manier om aan de slag te gaan en zelf documenten te ontwerpen. U kunt nu doorgaan met de volgende oefening, waarbij u uw eigen demo-website instelt met CitiSignal als een demo-merk.
 
-Volgende Stap: [ 2.1.3 Opstelling uw milieu van AEMCS ](./ex3.md)
+Volgende Stap: [ 2.1.3 Opstelling uw milieu van AEMCS ](./ex3.md){target="_blank"}
 
-[Terug naar module 2.1](./aemcs.md)
+[ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

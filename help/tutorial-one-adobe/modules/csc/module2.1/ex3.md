@@ -4,7 +4,7 @@ description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 2.1.3.1 Opstelling uw repo van GitHub
 
-Ga naar [ https://github.com ](https://github.com). Klik **Teken binnen**.
+Ga naar [ https://github.com ](https://github.com) {target="_blank"}. Klik **Teken binnen**.
 
 ![ AEMCS ](./images/aemcssetup1.png)
 
@@ -27,7 +27,7 @@ Zodra binnen ondertekend, zult u uw dashboard zien GitHub.
 
 ![ AEMCS ](./images/aemcssetup3.png)
 
-Ga naar [ https://github.com/AdobeDevXSC/citisignal-one ](https://github.com/AdobeDevXSC/citisignal-one). Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
+Ga naar [ https://github.com/AdobeDevXSC/citisignal-one ](https://github.com/AdobeDevXSC/citisignal-one) {target="_blank"}. Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
 
 ![ AEMCS ](./images/aemcssetup4.png)
 
@@ -39,7 +39,7 @@ Na een paar seconden wordt de repository gemaakt.
 
 ![ AEMCS ](./images/aemcssetup6.png)
 
-Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync). Klik **vormen**.
+Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync) {target="_blank"}. Klik **vormen**.
 
 ![ AEMCS ](./images/aemcssetup7.png)
 
@@ -83,7 +83,7 @@ YYY zou door uw GitHub gebruikersrekening moeten worden vervangen.
 
 ZZZ zou door de naam van de bewaarplaats moeten worden vervangen GitHub die u in de vorige oefening gebruikte.
 
-U kunt URL van uw AEM milieu van de Auteur van CS vinden door [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) te gaan. Klik uw **Programma** om het te openen.
+U kunt URL van uw AEM milieu van de Auteur van CS vinden door [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) te gaan {target="_blank"}. Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png)
 
@@ -125,7 +125,7 @@ Het bestand `fstab.yaml` is nu bijgewerkt.
 
 ## 2.1.3.3 CitiSignal-middelen uploaden
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com). Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png)
 
@@ -155,7 +155,7 @@ Daarna, klik **uploadt pakket**.
 
 Klik **doorbladeren** om van het te uploaden pakket de plaats te bepalen.
 
-Het te uploaden pakket wordt genoemd **burgersignaal-assets.zip** en kan hier worden gedownload: [ https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip).
+Het te uploaden pakket wordt genoemd **burgersignaal-assets.zip** en kan hier worden gedownload: [ https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip) {target="_blank"}.
 
 ![ AEMCS ](./images/aemcssetup23.png)
 
@@ -188,7 +188,7 @@ U kunt dit venster nu sluiten.
 
 ## 2.1.3.4 Publish CitiSignal-activa
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com). Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png)
 
@@ -224,7 +224,7 @@ Uw middelen zijn nu gepubliceerd.
 
 ## 2.1.3.5 CitiSignal-website maken
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com). Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png)
 
@@ -248,7 +248,7 @@ Klik **Invoer**.
 
 ![ AEMCS ](./images/aemcssetup32.png)
 
-U moet nu een vooraf geconfigureerde sjabloon voor uw site importeren. U kunt het malplaatje [ hier ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip) downloaden. Sla het bestand op uw bureaublad op.
+U moet nu een vooraf geconfigureerde sjabloon voor uw site importeren. U kunt het malplaatje [ hier ](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"} downloaden. Sla het bestand op uw bureaublad op.
 
 Daarna, selecteer het dossier `citisignal-edge-delivery-services-template-0.0.4.zip` en klik **Open**.
 
@@ -325,7 +325,7 @@ Na een paar minuten worden alle elementen correct geladen.
 
 ## 2.1.3.7 Prestaties van testpagina&#39;s
 
-Ga naar [ https://pagespeed.web.dev/ ](https://pagespeed.web.dev/). Ga uw URL in en klik **analyseren**.
+Ga naar [ https://pagespeed.web.dev/ ](https://pagespeed.web.dev/) {target="_blank"}. Ga uw URL in en klik **analyseren**.
 
 ![ AEMCS ](./images/aemcssetup48.png)
 
@@ -339,8 +339,8 @@ Vervolgens ziet u dat uw website, zowel voor mobiele als voor desktoptoepassinge
 
 ![ AEMCS ](./images/aemcssetup50.png)
 
-Volgende Stap: [ 2.1.4 vormt een douaneblok ](./ex4.md)
+Volgende Stap: [ 2.1.4 vormt een douaneblok ](./ex4.md){target="_blank"}
 
-[Terug naar module 2.1](./aemcs.md)
+[ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

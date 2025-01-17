@@ -4,7 +4,7 @@ description: Uw Firefly optimaliseren met Microsoft Azure en vooraf ondertekende
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Als u al een bestaand Azure-abonnement hebt, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
 
-Ga naar [ https://portal.azure.com ](https://portal.azure.com) en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
+Ga naar [ https://portal.azure.com ](https://portal.azure.com) {target="_blank"} en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
 
 ![ Azure Opslag ](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ Uw container is nu klaar om te worden gebruikt.
 
 ## 1.1.2.3 Azure Storage Explorer installeren
 
-U gebruikt Microsoft Azure Storage Explorer om uw bestanden te beheren. U kunt het via [ deze verbinding ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) downloaden. Selecteer de juiste versie voor uw specifieke besturingssysteem, download deze en installeer deze.
+U gebruikt Microsoft Azure Storage Explorer om uw bestanden te beheren. U kunt het via [ deze verbinding ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) downloaden {target="_blank"}. Selecteer de juiste versie voor uw specifieke besturingssysteem, download deze en installeer deze.
 
 ![ Azure Opslag ](./images/az10.png)
 
@@ -125,7 +125,7 @@ Open **Containers van de Klodder** en klik dan de container u in de vorige oefen
 
 ## 1.1.2.4 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlreferentie
 
-U moet nu een afbeeldingsbestand naar keuze in uw container uploaden. U kunt om het even welk beelddossier van keus gebruiken, of u kunt [ dit dossier ](./images/gradient.jpg) gebruiken door het uw computer te downloaden.
+U moet nu een afbeeldingsbestand naar keuze in uw container uploaden. U kunt om het even welk beelddossier van keus gebruiken, of u kunt [ dit dossier ](./images/gradient.jpg){target="_blank"} gebruiken door het uw computer te downloaden.
 
 ![ Azure Opslag ](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ Dan, klik **Lichaam**.
 
 ![ Azure Opslag ](./images/az31.png)
 
-U moet nu een bestand op uw lokale computer selecteren. U kunt een nieuw beelddossier van keus gebruiken, of u kunt een ander beelddossier gebruiken dat u [ hier ](./images/gradient2-p.jpg) kunt vinden.
+U moet nu een bestand op uw lokale computer selecteren. U kunt een nieuw beelddossier van keus gebruiken, of u kunt een ander beelddossier gebruiken dat u [ hier ](./images/gradient2-p.jpg){target="_blank"} kunt vinden.
 
 ![ dossier van de Gradiënt ](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ Open de URL van de afbeelding om uw afbeelding te controleren.
 
 ![ Azure Opslag ](./images/az108.jpg)
 
-Volgende Stap: [ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md)
+Volgende Stap: [ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md){target="_blank"}
 
-[Terug naar module 1.1](./firefly-services.md)
+[ ga terug naar Module 1.1 ](./firefly-services.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

@@ -3,16 +3,16 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - één Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 710c985a0fb9d2be3b1a991aeb2330f24e66abc0
+source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
 
 # Uitgebreide technische zelfstudie - één Adobe
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png)
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="center"}
 
 ## Overzicht
 
@@ -42,58 +42,59 @@ Deze zelfstudie richt zich niet alleen op Adobe toepassingen, maar houdt rekenin
 
 Als u deze zelfstudie wilt gebruiken met uw eigen Adobe Experience Cloud-exemplaar, moeten de volgende toepassingen in uw exemplaar worden ingericht en moet u toegang hebben tot:
 
-- Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Adobe Firefly [ https://firefly.adobe.com/ ](https://firefly.adobe.com/) {target="_blank"}
 - Adobe Photoshop
 - Adobe Workfront
-- Adobe Workfront Fusion [ https://fusion.adobe.com/](https://fusion.adobe.com/)
-- Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- De Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot het Systeem van de Demo: [ https://dsn.adobe.com/](https://dsn.adobe.com/)
+- Adobe Workfront Fusion [ https://fusion.adobe.com/](https://fusion.adobe.com/) {target="_blank"}
+- Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform) {target="_blank"}
+- De Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) {target="_blank"}
+- Toegang tot het Systeem van de Demo: [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) {target="_blank"}
 
 ## Inhoud
 
-Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md) te gaan.
+Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md){target="_blank"} te gaan.
 
 ### Aan de slag
 
-[Aan de slag](./modules/getting-started/gettingstarted/getting-started.md)
+[Aan de slag](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
 In deze grondmodule, zult u alles plaatsen zodat u tot het demomilieu kunt toegang hebben en gebruiken.
 
 ### 1. Adobe Creative Cloud
 
-[1.1 Adobe Firefly](./modules/creative-cloud/module1.1/firefly-services.md)
+[ 1.1 de Diensten van de Adobe Firefly ](./modules/creative-cloud/module1.1/firefly-services.md){target="_blank"}
 
 In deze module gebruikt u Adobe Firefly Services API&#39;s, Photoshop API&#39;s en Microsoft Azure Storage Services om images te genereren en via programmacode op te slaan.
 
-[1.2 Creative Workflow Automation met Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+[ 1.2 de Automatisering van het Creatieve Werkschema met de Fusie van Workfront ](./modules/creative-cloud/module1.2/automation.md){target="_blank"}
 
 In deze basismodule gebruikt u Adobe Workfront Fusion om workflows voor het maken van inhoud te automatiseren en schalen.
 
 ### 2. Aanvoerketen voor inhoud
 
-[2.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./modules/csc/module2.1/aemcs.md)
+[ 2.1 de Cloud Service &amp; Edge Delivery Services van Adobe Experience Manager ](./modules/csc/module2.1/aemcs.md){target="_blank"}
 
 In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
 
-[2.2 Workflowbeheer met Adobe Workfront](./modules/csc/module2.2/workfront.md)
+[ 2.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/csc/module2.2/workfront.md){target="_blank"}
 
 In deze basismodule configureert en gebruikt u Adobe Workfront om goedkeuringsstromen te beheren en gebruikt u integraties met Adobe Experience Manager Assets, Universal Editor, Photoshop en meer.
 
 ### 3. Unified Customer Experience
 
-[3.1 Federatieve Audience Composition](./modules/uce/module3.1/fac.md)
+[ 3.1 de Federatieve Samenstelling van het Publiek ](./modules/uce/module3.1/fac.md){target="_blank"}
 
 In deze basismodule leert u meer over Adobe Experience Platform Data Collection en de nieuwe Web SDK-extensie.
 
-[3.2 Adobe Journey Optimizer: Vertaalservices](./modules/uce/module3.2/ajotranslationsvcs.md)
+[ 3.2 Adobe Journey Optimizer: De Diensten van de Vertaling ](./modules/uce/module3.2/ajotranslationsvcs.md){target="_blank"}
 
 In deze module gebruikt u Adobe Journey Optimizer voor het instellen en gebruiken van vertaalservices.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md)
+[ 3.3 Adobe Journey Optimizer: Offer decisioning ](./modules/uce/module3.3/offer-decisioning.md){target="_blank"}
 
 In deze module, zult u Adobe Journey Optimizer met de diensten van de offer decisioning op een hands-on manier gebruiken om Persoonlijke Aanbiedingen en uw eigen besluit te vormen.
 
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="center"}
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
