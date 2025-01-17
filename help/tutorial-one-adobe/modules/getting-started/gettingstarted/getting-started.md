@@ -3,9 +3,10 @@ title: Aan de slag - Overzicht
 description: Aan de slag - Overzicht
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -47,8 +48,10 @@ In deze oefening zult u de website plaatsen zodat kunt u het voor demonstraties 
 
 In deze oefening zult u de mobiele toepassing plaatsen zodat kunt u het voor demonstraties en enablement gebruiken.
 
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [Terug naar alle modules](../../../overview.md)

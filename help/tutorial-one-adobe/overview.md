@@ -3,7 +3,7 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - één Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 2%
@@ -94,8 +94,8 @@ In deze module gebruikt u Adobe Journey Optimizer voor het instellen en gebruike
 
 In deze module, zult u Adobe Journey Optimizer met de diensten van de offer decisioning op een hands-on manier gebruiken om Persoonlijke Aanbiedingen en uw eigen besluit te vormen.
 
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.

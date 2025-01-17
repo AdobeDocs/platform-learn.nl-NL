@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: d52ec3c8-8628-4a52-9107-471342118a53
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -64,9 +64,9 @@ In deze oefening zult u Postman en Adobe Experience Platform API gebruiken om uw
 
 Overzicht van deze module en overzicht van de voordelen.
 
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 

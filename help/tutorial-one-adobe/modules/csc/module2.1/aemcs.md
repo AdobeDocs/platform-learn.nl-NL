@@ -4,7 +4,7 @@ description: ADOBE EXPERIENCE MANAGER CLOUD SERVICE & EDGE DELIVERY SERVICES
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Hierbij ontwikkelt u een aangepaste blokcomponent voor uw website.
 
 Overzicht van deze module en overzicht van de voordelen.
 
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
