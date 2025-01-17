@@ -3,7 +3,7 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - één Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Uitgebreide technische zelfstudie - één Adobe
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="center"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
 
@@ -96,5 +96,6 @@ In deze module, zult u Adobe Journey Optimizer met de diensten van de offer deci
 
 >[!NOTE]
 >
->![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="center"}
+>![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.

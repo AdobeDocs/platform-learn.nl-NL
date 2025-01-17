@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer-vertaalservices
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 1%
@@ -33,7 +33,8 @@ Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [Terug naar alle modules](../../../overview.md)

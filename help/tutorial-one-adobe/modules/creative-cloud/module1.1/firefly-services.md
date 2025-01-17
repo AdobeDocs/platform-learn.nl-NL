@@ -4,7 +4,7 @@ description: Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -45,7 +45,8 @@ Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}

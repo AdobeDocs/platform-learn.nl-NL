@@ -3,9 +3,10 @@ title: Werken met Photoshop API's
 description: Werken met Photoshop API's
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
+source-git-commit: 153b070ffeb21c7111f4b954c4ba2d7c9042db0d
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,14 @@ Selecteer alle beelden en klik **Open**.
 Uw afbeeldingen worden nu geüpload. Dit kan enige tijd duren.
 
 ![ Firefly ](./images/ffcm10.png)
+
+![ Firefly ](./images/ffcm11.png)
+
+![ Firefly ](./images/ffcm12.png)
+
+![ Firefly ](./images/ffcm13.png)
+
+![ Firefly ](./images/ffcm14.png)
 
 Je hebt deze oefening nu voltooid.
 

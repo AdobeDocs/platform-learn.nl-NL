@@ -4,7 +4,7 @@ description: Workflowbeheer met Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -37,7 +37,8 @@ Overzicht van deze module en overzicht van de voordelen.
 
 >[!NOTE]
 >
->![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
