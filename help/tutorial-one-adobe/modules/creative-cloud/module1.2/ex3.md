@@ -4,9 +4,9 @@ description: Procesautomatisering met Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Schrap de tekst **hier** klikt, en vervangt het door de veranderlijke **Waarde**
 
 ![ WF Fusion ](./images/wffusion209.png)
 
-U moet ook de bestandsnaam bijwerken waarmee het bestand in uw Azure Storage Account wordt geschreven. Als de bestandsnaam statisch is, wordt het vorige bestand door elke nieuwe versie overschreven en gaan de aangepaste bestanden verloren. Huidige statische filename is **sevoi-psd-changed-text.psd**, en u moet nu dat bijwerken. Plaats de cursor achter het woord `text` .
+U moet ook de bestandsnaam bijwerken waarmee het bestand in uw Azure Storage Account wordt geschreven. Als de bestandsnaam statisch is, wordt het vorige bestand door elke nieuwe versie overschreven en gaan de aangepaste bestanden verloren. Huidige statische filename is **burgerschap-vezel-veranderd-text.psd**, en u moet nu dat bijwerken. Plaats de cursor achter het woord `text` .
 
 ![ WF Fusion ](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ Als het scenario eenmaal is uitgevoerd, gaat u terug naar uw Azure Storage Explo
 
 ![ WF Fusion ](./images/wffusion213.png)
 
-Download en open elk bestand. Vervolgens ziet u de verschillende teksten op de knoppen. Dit is bestand `sevoi-psd-changed-text-1.psd` .
+Download en open elk bestand. Vervolgens ziet u de verschillende teksten op de knoppen. Dit is bestand `citisignal-fiber-changed-text-1.psd` .
 
 ![ WF Fusion ](./images/wffusion214.png)
 
-Dit is bestand `sevoi-psd-changed-text-2.psd` .
+Dit is bestand `citisignal-fiber-changed-text-2.psd` .
 
 ![ WF Fusion ](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ Uw scenario zal dan opnieuw lopen, en creeer de 2 dossiers enkel als voordien.
 
 ![ WF Fusion ](./images/wffusion232.png)
 
-Ten slotte wijzigt u de naam van uw Postman-verzoek in `POST - Send Request to Workfront Fusion Webhook` .
+Wijzig de naam van uw Postman-aanvraag in `POST - Send Request to Workfront Fusion Webhook` .
 
 ![ WF Fusion ](./images/wffusion233.png)
+
+U moet nu beginnen veranderlijk **psdTemplate** te gebruiken. In plaats van hardcoding de plaats van het inputdossier in de **knoop van de Tekst van de Verandering van Photoshop**, zult u nu de inkomende variabele van het verzoek van Postman gebruiken.
+
+Open de **knoop van de Tekst van de Verandering van Photoshop** en ga naar **inhoud van het Verzoek**. Selecteer hardcoded filename **burgerschap-fiber.psd** onder **input** en schrap het.
+
+![ WF Fusion ](./images/wffusion234.png)
+
+Selecteer veranderlijk **psdTemplate**. Klik **O.K.** en bewaar dan uw scenario.
+
+![ WF Fusion ](./images/wffusion235.png)
+
+Klik **AAN** om uw scenario aan te zetten. Uw scenario zal nu zonder stop lopen.
+
+![ WF Fusion ](./images/wffusion236.png)
+
+Ga terug naar Postman. Ga filename `citisignal-fiber.psd` als waarde voor veranderlijke **psdTemplate** in en klik **verzend** opnieuw om uw scenario opnieuw in werking te stellen.
+
+![ WF Fusion ](./images/wffusion237.png)
+
+Door het malplaatje van de PSD als variabele te specificeren die door een extern systeem wordt verstrekt, hebt u nu een herbruikbaar scenario gebouwd.
+
+Je hebt deze oefening nu afgerond.
 
 Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md)
 
