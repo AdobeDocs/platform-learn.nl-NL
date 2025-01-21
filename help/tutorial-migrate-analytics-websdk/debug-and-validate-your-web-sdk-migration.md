@@ -4,13 +4,13 @@ description: Leer hoe u fouten in uw gegevens kunt opsporen en uw gegevens kunt 
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # Fouten opsporen en uw Web SDK-migratie valideren
 
@@ -70,7 +70,7 @@ Er zijn mogelijk meerdere manieren om deze vergelijkingen in te stellen, maar ik
 1. Een nieuw project maken in Analysis Workspace en twee deelvensters toevoegen
 1. Stel de rapportsuite in deelvenster 1 in op uw huidige Adobe Analytics-productierapportsuite
 1. Stel de rapportsuite in deelvenster 2 in op uw nieuwe Web SDK-ontwikkelingsrapportsuite
-1. Plaats hetzelfde rapport in beide deelvensters, met een tijdsperiode in de kalender waarin de gegevens via beide extensies naar Analytics stroomden
+1. Plaats hetzelfde rapport in beide deelvensters met een periode die alleen de volledige dagen omvat waarop gegevens naar beide rapportsuites zijn verzonden
 1. De gegevens vergelijken
 
 Dit zou ongeveer als dit kunnen kijken (het begrip dat er geen gegevens in deze lege demo rapportsuites zijn):

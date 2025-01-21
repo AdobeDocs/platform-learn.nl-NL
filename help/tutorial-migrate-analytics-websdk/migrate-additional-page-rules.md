@@ -4,13 +4,13 @@ description: Leer hoe te om extra op pagina-Gebaseerde regels aan de uitbreiding
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Extra paginaregels migreren
 
@@ -20,7 +20,7 @@ In deze oefening zult u leren hoe te om extra op pagina-Gebaseerde regels aan de
 
 Laten we een klein back-up maken en praten over analytische implementaties zoals ze zijn met de extensie Adobe Analytics-tags (ook wel &#39;AppMeasurement&#39;-implementatie genoemd, omdat dat de naam van het JavaScript-bestand is).
 
-Ik veronderstel niet om precies te weten hoe u wordt uitgevoerd, maar in vele implementaties die de markeringen van het Experience Platform gebruiken (vroeger die als &quot;Lancering&quot;worden bekend), zijn er om het even welk aantal regels die slechts voorwaardelijk in brand steken, die op iets op de pagina of in URL worden gebaseerd. Voorbeelden hiervan zijn:
+Ik veronderstel niet om precies te weten hoe u wordt uitgevoerd, maar in vele implementaties die Experience Platform markeringen gebruiken, zijn er om het even welk aantal regels die slechts voorwaardelijk in brand steken, die op iets op de pagina of in URL worden gebaseerd. Voorbeelden hiervan zijn:
 
 * De resultatenregel van het onderzoek, slechts het vuren wanneer een interne onderzoek heeft uitgevoerd en de pagina van onderzoeksresultaten omhoog komt
 * Regel voor landingspagina&#39;s campagne voeren, alleen vuren wanneer de URL een volgcode bevat
@@ -68,6 +68,3 @@ Hier is een voorbeeld van het migreren van een regel die voorwaardelijk brandt. 
 >[!IMPORTANT]
 >
 >Als de regel van de standaardpaginalading, verlieten wij de Veranderlijke **actie van de uitbreiding van de Analyse** Reeks Variabele in de regel zodat wij gegevens kunnen vergelijken aangezien wij onze migratie bevestigen. Vergeet niet later terug te komen en de actie van de extensie Analytics te verwijderen zoals u de definitieve opschoonbewerking uitvoert.
-
-
-

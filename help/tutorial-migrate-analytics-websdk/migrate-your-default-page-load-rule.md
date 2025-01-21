@@ -4,13 +4,13 @@ description: In deze oefening, zult u leren hoe te om een regel van de standaard
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
-
 
 # De standaard laadregel voor pagina&#39;s migreren
 
@@ -18,7 +18,7 @@ In deze oefening, zult u leren hoe te om een regel van de standaardpaginalading 
 
 ## Overzicht
 
-Laten we een klein beetje teruggaan. Het is waarschijnlijk dat u een regel in Markeringen hebt (voorheen &quot;Lancering&quot; genoemd) die op elke pagina wordt geactiveerd - die één of meerdere standaardvariabelen plaatst, en dan een baken, of een slag, aan Adobe Analytics in brand steekt. Deze regel gebruikt momenteel &quot;acties&quot;in de uitbreiding van Adobe Analytics om deze dingen te doen. Aangezien wij onze implementatie aan Web SDK migreren, moeten wij om het even welke verwijzingen (zoals de acties) aan de uitbreiding van de Analyse kunnen verwijderen, en hen vervangen met acties die tot Web SDK behoren. In de onderstaande stappen gaan we uit van het bovenstaande, dat wil zeggen dat u een standaardregel voor het laden van pagina hebt die zowel variabelen instelt als een trackingbaken naar Analytics verzendt.
+Laten we een klein beetje teruggaan. Het is waarschijnlijk dat u een regel in Markeringen hebt die op elke pagina wordt geactiveerd - die één of meerdere standaardvariabelen plaatst, en dan een baken, of een slag, aan Adobe Analytics brandt. Deze regel gebruikt momenteel &quot;acties&quot;in de uitbreiding van Adobe Analytics om deze dingen te doen. Aangezien wij onze implementatie aan Web SDK migreren, moeten wij om het even welke verwijzingen (zoals de acties) aan de uitbreiding van de Analyse kunnen verwijderen, en hen vervangen met acties die tot Web SDK behoren. In de onderstaande stappen gaan we uit van het bovenstaande, dat wil zeggen dat u een standaardregel voor het laden van pagina hebt die zowel variabelen instelt als een trackingbaken naar Analytics verzendt.
 
 ## De handeling Variabelen instellen migreren
 
