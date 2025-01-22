@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
+source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 19%
+source-wordcount: '195'
+ht-degree: 18%
 
 ---
 
@@ -27,14 +27,15 @@ ht-degree: 19%
    + [Regels maken](tags/build-rules.md)
    + [Stapelregels](tags/stack-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
-   + [ voert in websites met Web SDK uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) {target="_blank"}
+   + [ voert in websites met SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) {target="_blank"}
    + [ voert in websites met oplossing SDKs uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html) {target="_blank"}
    + [ voer in mobiele apps ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) uit {target="_blank"}
-+ Web SDK{#web-sdk}
++ Web SDK {#web-sdk}
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [ het leerprogramma van de Implementatie (met markeringen) ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) {target="_blank"}
    + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html) {target="_blank"}
+   + [ Migrate het leerprogramma van de Analyse ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview) {target="_blank"}
    + Toestemming {#consent}
       + [Overzicht](web-sdk/consent/overview.md)
       + [Stel waarden voor toestemming in met de standaard voor Adobe](web-sdk/consent/set-consent-adobe.md)
