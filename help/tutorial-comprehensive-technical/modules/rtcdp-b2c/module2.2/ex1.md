@@ -4,7 +4,7 @@ description: AI van de klant - Gegevensvoorbereiding (samenvatting)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Klik **creëren dataset van schema**.
 
 ![ Dataset ](./images/createdatasetfromschema.png)
 
-In het volgende scherm, selecteer de dataset u in de vorige oefening creeerde, die **[!UICONTROL ldap - Demo System - Customer Experience Event]** wordt genoemd. Klik **daarna**.
+In het volgende scherm, selecteer de dataset u in de vorige oefening creeerde, die `--aepUserLdap-- - Demo System - Customer Experience Event` wordt genoemd. Klik **daarna**.
 
 ![ Dataset ](./images/createds1.png)
 

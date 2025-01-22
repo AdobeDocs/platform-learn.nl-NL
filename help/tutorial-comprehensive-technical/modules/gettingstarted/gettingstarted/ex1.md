@@ -4,9 +4,9 @@ description: Aan de slag - Installeer de Chrome-extensie voor de documentatie va
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ De IMS-organisatie-id is de unieke id voor uw Adobe Experience Cloud-instantie e
 
 U kunt uw IMS-organisatie-id op meerdere manieren zoeken. Als u niet zeker bent, controleer met één van de systeembeheerders van uw instantie om identiteitskaart te vinden.
 
-U kunt het vinden door naar [ Admin Console ](https://https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
+U kunt het vinden door naar [ Admin Console ](https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
 
 ![ DSN ](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ Uw huurnummer is de unieke id voor de AEP-instantie van uw organisatie. Wanneer 
 
 ![ DSN ](./images/aeptenantid.png)
 
-Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen dat een onderstrepingsteken als prefix wordt toegevoegd, zodat in dit voorbeeld **ervaringsplatform** **_experiencePlatform** wordt.
+Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen dat een onderstrepingsteken als prefix wordt toegevoegd, zodat in dit voorbeeld **ervaringsplatform** **_experiencePlatform** wordt. Ook, zorg ervoor om het **@** symbool te verwijderen wanneer het kopiëren van URL.
 
 **AEP Sandbox Naam**
 

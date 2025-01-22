@@ -4,7 +4,7 @@ description: Klant-AI - Een nieuwe instantie maken (configureren)
 kt: 5342
 doc-type: tutorial
 exl-id: 067f3fa2-5c1e-4861-b26a-4315cad73a85
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Klik **sparen en ga** verder.
 
 ![ pagina 1 van de Opstelling ](./images/setuppage1.png)
 
-Dan zie je dit. Selecteer de dataset u in de vorige oefening creeerde die `--demoProfileLdap - Demo System - Customer Experience Event Dataset` wordt genoemd. Klik **toevoegen**.
+Dan zie je dit. Selecteer de dataset u in de vorige oefening creeerde die `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` wordt genoemd. Klik **toevoegen**.
 
 ![ pagina 1 van de Opstelling ](./images/custai2.png)
 

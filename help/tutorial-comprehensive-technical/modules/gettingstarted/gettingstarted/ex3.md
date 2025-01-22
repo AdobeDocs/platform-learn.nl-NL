@@ -4,9 +4,9 @@ description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.a
 
 ![ DSN ](./images/launchprop.png)
 
-Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige oefening, hebt u nu twee eigenschappen van de Inzameling van Gegevens: voor Web en voor mobiel.
+Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige exercitie hebt u nu drie eigenschappen voor gegevensverzameling: een voor het web, een voor mobiel en een voor de CX-app.
 
 ![ DSN ](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ Dit zie je nu.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig5.png)
 
-Dat is het voor nu. In [ Module 1.1 ](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) zult u meer over Web SDK leren en hoe te om elk van zijn mogelijkheden te vormen.
+Dat is het voor nu. In [ Module 1.1 ](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) zult u meer over SDK van het Web leren en hoe te om elk van zijn mogelijkheden te vormen.
 
 Klik in het linkermenu op **[!UICONTROL Tags]** .
 
-Filter de onderzoeksresultaten om uw twee eigenschappen van de Inzameling van Gegevens te zien. Open het bezit voor **Web** door het te klikken.
+Filter de zoekresultaten om de eigenschappen van de gegevensverzameling te bekijken. Open het bezit voor **Web** door het te klikken.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig10a.png)
 
@@ -139,7 +139,7 @@ Dan zie je dit.
 
 Uw datastream kan nu worden gebruikt in uw Adobe Experience Platform Data Collection Client-eigenschap voor mobiele apparatuur.
 
-Ga naar **Markeringen** en filter de onderzoeksresultaten om uw twee eigenschappen van de Inzameling van Gegevens te zien. Open het bezit voor **Mobiel** door het te klikken.
+Ga naar **Markeringen** en filter de onderzoeksresultaten om uw eigenschappen van de Inzameling van Gegevens te zien. Open het bezit voor **Mobiel** door het te klikken.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig10am.png)
 

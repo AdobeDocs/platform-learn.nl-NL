@@ -4,16 +4,16 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
+source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 Schema&#39;s, gegevensmodel en koppelingen maken
 
-U kunt nu uw gefedereerde database configureren in AEP.
+U kunt nu uw gefedereerde database configureren in Adobe Experience Platform.
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
