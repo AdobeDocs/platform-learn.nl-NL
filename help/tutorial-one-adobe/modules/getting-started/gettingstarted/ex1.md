@@ -3,9 +3,10 @@ title: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het 
 description: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ Om de documentatie herbruikbaar te maken, **Variabelen van het Milieu** werden g
 
 Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen momenteel nog niet worden gebruikt, maar zodra u de Chrome-extensie installeert en activeert, worden deze variabelen gewijzigd in normale tekst die u kunt kopiëren en opnieuw kunt gebruiken.
 
-| Naam | Sleutel |
-|:-------------:| :---------------:|
-| AEP IMS Org ID | `--aepImsOrgId--` |
-| AEP-huurnummer | `--aepTenantId--` |
-| Naam AEP-sandbox | `--aepSandboxName--` |
-| Leerlingprofiel LDAP | `--aepUserLdap--` |
+| Naam | Sleutel | Voorbeeld |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS Org Name | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP-huurnummer | `--aepTenantId--` | `_experienceplatform` |
+| Naam AEP-sandbox | `--aepSandboxName--` | `one-adobe` |
+| Leerlingprofiel LDAP | `--aepUserLdap--` | `vangeluw` |
 
-In de onderstaande schermafbeelding ziet u bijvoorbeeld een verwijzing naar `aepTenantId` .
+In de onderstaande schermafbeelding ziet u bijvoorbeeld een verwijzing naar `aepSandboxName` .
 
 ![ DSN ](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ Voordat u de naam van de sandbox opgeeft van de URL, moet u ervoor zorgen dat u 
 
 ![ DSN ](./images/aepsandboxsw.png)
 
-In dit voorbeeld, is de Naam van de zandbak AEP **technologie-insiders**.
+In dit voorbeeld, is de Naam van AEP Sandbox **één-adobe**.
 
 ![ DSN ](./images/aepsname.png)
 
@@ -123,7 +125,6 @@ Tot slot klik **creeer Nieuw**.
 
 ![ DSN ](./images/c8a.png)
 
-
 In het linkermenu van de extensie ziet u nu een nieuw pictogram met de initialen van uw omgeving. Klik erop. U zult dan de afbeelding tussen de **Variabelen van het Milieu** en uw specifieke de instantieswaarden van Adobe Experience Platform zien. Klik **activeren Configuratie**.
 
 ![ DSN ](./images/c9.png)
@@ -134,11 +135,11 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
 
-U zou nu moeten zien dat alle **Variabelen van het Milieu** door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
+U zou nu moeten zien dat alle **Variabelen van het Milieu** op deze pagina door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
-U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de omgevingsvariabele `aepTenantId` door uw echte identiteitskaart van de Huurder van AEP is vervangen, die in dit geval **_experiencePlatform** is.
+U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de milieuvariabele `aepSandboxName` door uw echte Naam van de Sandbox van AEP is vervangen, die in dit geval **one-adobe** is.
 
 ![ DSN ](./images/mod7.png)
 

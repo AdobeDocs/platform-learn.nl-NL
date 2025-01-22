@@ -4,9 +4,9 @@ description: Aan de slag - Installeer de Chrome-extensie voor de documentatie va
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ Om de documentatie herbruikbaar te maken, **Variabelen van het Milieu** werden g
 
 Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen momenteel nog niet worden gebruikt, maar zodra u de Chrome-extensie installeert en activeert, worden deze variabelen gewijzigd in normale tekst die u kunt kopiëren en opnieuw kunt gebruiken.
 
-| Naam | Sleutel |
-|:-------------:| :---------------:|
-| AEP IMS Org ID | `--aepImsOrgId--` |
-| AEP-huurnummer | `--aepTenantId--` |
-| Naam AEP-sandbox | `--aepSandboxName--` |
-| Leerlingprofiel LDAP | `--aepUserLdap--` |
+| Naam | Sleutel | Voorbeeld |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS Org Name | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP-huurnummer | `--aepTenantId--` | `_experienceplatform` |
+| Naam AEP-sandbox | `--aepSandboxName--` | `tech-insiders` |
+| Leerlingprofiel LDAP | `--aepUserLdap--` | `vangeluw` |
 
 In de onderstaande schermafbeelding ziet u bijvoorbeeld een verwijzing naar `aepTenantId` .
 

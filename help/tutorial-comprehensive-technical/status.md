@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [. Aan de slag ](./modules/gettingstarted/gettingstarted/getting-started.md) | 11-14-2024 | Ja | - |
 | [ 1.1 Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform &amp; SDK van het Web ](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 11-18-2024 | Ja | - |
 | [ 1.2 Stichting - de Ingestie van Gegevens ](./modules/datacollection/module1.2/data-ingestion.md) | 11-18-2024 | Ja | - |
-| [ 1.3 Federated de Samenstelling van het Publiek ](./modules/datacollection/module1.3/fac.md) | 01-07-2025 | Ja, 95% | Voorbeeldgegevensbestanden zijn in behandeling, inhoud is 95% gereed en getest |
+| [ 1.3 Federated de Samenstelling van het Publiek ](./modules/datacollection/module1.3/fac.md) | 01-07-2025 | Ja | - |
 | [ 2.1 Stichting - In real time het Profiel van de Klant ](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 11-19-2024 | Ja | - |
 | [ 2.2 de Intelligente Diensten ](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 12-03-2024 | Ja | - |
 | [ 2.3 Real-Time CDP - Bouw een publiek en neem actie ](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 11-2024 | Ja | - |

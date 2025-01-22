@@ -3,9 +3,10 @@ title: Aan de slag - Maak uw DataStream
 description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.a
 
 ![ DSN ](./images/launchprop.png)
 
-Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige oefening, hebt u nu twee eigenschappen van de Inzameling van Gegevens: voor Web en voor mobiel.
+Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige exercitie hebt u nu drie eigenschappen voor gegevensverzameling: een voor het web, een voor mobiel en een voor de CX-app.
 
 ![ DSN ](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--aepUserLdap-- - Demo System Datastream` in voor de **[!UICONTROL Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - One Adobe Datastream` in voor de **[!UICONTROL Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ Dit zie je nu.
 
 Klik in het linkermenu op **[!UICONTROL Tags]** .
 
-Filter de onderzoeksresultaten om uw twee eigenschappen van de Inzameling van Gegevens te zien. Open het bezit voor **Web** door het te klikken.
+Filter de zoekresultaten om de eigenschappen van de gegevensverzameling te bekijken. Open het bezit voor **Web** door het te klikken.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig10a.png)
 
@@ -114,7 +115,7 @@ Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--aepUserLdap-- - Demo System Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele Toepassing (Globale v1.1)**. Klik **sparen**.
+Voer `--aepUserLdap-- - One Adobe Datastream (Mobile)` in voor de **[!UICONTROL Friendly Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Mobiele Toepassing (Globale v1.1)**. Klik **sparen**.
 
 Klik op **[!UICONTROL Save]**.
 

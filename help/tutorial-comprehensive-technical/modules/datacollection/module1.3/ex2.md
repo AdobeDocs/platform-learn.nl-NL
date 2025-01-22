@@ -4,9 +4,9 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 
 ![ FAC ](./images/fdb20.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_MONTHLY_DATA_USAGE` en `CK_USERS` .
+Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MONTHLY_DATA_USAGE` .
 
 ![ FAC ](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_HOUSEHO
 
 ![ FAC ](./images/fdb23.png)
 
-Dan ben je hier weer. Klik **sparen**.
+Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
+
 ![ FAC ](./images/fdb24.png)
+
+Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MOBILE_DATA_USAGE` .
+
+![ FAC ](./images/fdb25.png)
+
+Dan moet je dit zien. Klik **sparen**.
+
+![ FAC ](./images/fdb26.png)
 
 Uw installatie in AEP is nu voltooid. U kunt nu uw gefedereerde gegevens in een gefederaliseerde publiekscompositie gebruiken.
 

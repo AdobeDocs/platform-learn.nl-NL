@@ -3,7 +3,8 @@ title: Aan de slag - Gebruik het demosysteem naast het instellen van de opstarte
 description: Aan de slag - Gebruik het demosysteem naast het instellen van de opstarteigenschap
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Daarna, klik **Begin**.
 
 ![ DSN ](./images/dsn2.png)
 
-In popup, ga een naam voor uw eigenschappen van de Inzameling van Gegevens en de projecten van de Bouwer van de Ervaring in. Gelieve te gebruiken deze noemende overeenkomst: **Systeem van de Demo (DD/MM/JJJJ)**. FYI: de LDAP wordt automatisch toegevoegd, u hoeft deze niet zelf toe te voegen.
+In popup, ga een naam voor uw eigenschappen van de Inzameling van Gegevens en de projecten van de Bouwer van de Ervaring in. Gelieve te gebruiken deze noemende overeenkomst: **Één Adobe (DD/MM/JJJJ)**. FYI: de LDAP wordt automatisch toegevoegd, u hoeft deze niet zelf toe te voegen.
 
 Klik **Begin**.
 
