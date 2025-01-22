@@ -4,7 +4,7 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -130,6 +130,8 @@ Selecteer uw schema&#39;s en klik **toevoegen**.
 
 Dan zie je dit. Klik **sparen**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
 ![ FAC ](./images/fdb16.png)
@@ -140,6 +142,9 @@ Klik **toevoegen**.
 
 ![ FAC ](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb17.png)
@@ -147,6 +152,8 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 Vervolgens definiëren we de koppeling tussen de tabel `CK_HOUSEHOLDS` en `CK_PERSONS` .
 
 ![ FAC ](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
@@ -156,6 +163,9 @@ Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MONTHLY
 
 ![ FAC ](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb22.png)
@@ -163,6 +173,8 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_HOUSEHOLDS` .
 
 ![ FAC ](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 

@@ -4,7 +4,7 @@ description: Aan de slag - Installeer de Chrome-extensie voor de documentatie va
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -136,7 +136,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
