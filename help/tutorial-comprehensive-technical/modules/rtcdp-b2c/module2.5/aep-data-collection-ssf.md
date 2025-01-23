@@ -4,9 +4,9 @@ description: In deze module, zult u de eerder gevormde datasets, schema's en het
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ In deze oefening, zult u uw milieu van AWS vormen gebruikend AWS IAM, AWS Kinesi
 [Samenvatting en voordelen](./summary.md)
 
 Overzicht van deze module en overzicht van de voordelen.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

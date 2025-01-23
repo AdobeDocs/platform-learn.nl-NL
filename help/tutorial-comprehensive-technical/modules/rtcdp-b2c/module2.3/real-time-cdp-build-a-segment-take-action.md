@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,15 @@ Gebruik het publiek u creeerde om een Ervaring te vormen richtend Activiteit in 
 
 Importeer soorten publiek van een extern bronsysteem naar Adobe Experience Platform.
 
-[2.3.7 SDK van bestemmingen](./ex7.md)
+[2.3.7 Doelen SDK](./ex7.md)
 
 Vorm uw eigen bestemming gebruikend Doelen SDK.
 
 [Samenvatting en voordelen](./summary.md)
 
 Overzicht van deze module en overzicht van de voordelen.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

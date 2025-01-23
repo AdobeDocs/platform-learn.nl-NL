@@ -3,14 +3,16 @@ title: Overzicht
 description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van Gegevens, de Architecten van Gegevens, de Wetenschappers van Gegevens, de Ingenieurs van Orchestratie en Marketers om een volledig inzicht in de bedrijfswaarde van Adobe Experience Platform en al zijn Diensten van de Toepassing te krijgen.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Uitgebreide technische zelfstudie voor Adobe Experience Platform
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
 
@@ -182,3 +184,9 @@ In deze module stelt u uw eigen exemplaar van Google Cloud Platform in, laadt u 
 In deze module leert u hoe u de Adobe Experience Platform Query Service kunt gebruiken.
 
 **de Investering van de Tijd:** 90 minuten
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.

@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
++ [Voorwerk](/help/tutorial-one-adobe/prework.md)
 
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
@@ -32,7 +33,7 @@ ht-degree: 4%
       + [1.1.1 Aan de slag met Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Optimaliseer uw Firefly processen met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly en Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
-      + [1.1.3 Aangepaste modellen-API voor Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
+      + [1.1.4 Aangepaste modellen Firefly-API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}
       + [Overzicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)

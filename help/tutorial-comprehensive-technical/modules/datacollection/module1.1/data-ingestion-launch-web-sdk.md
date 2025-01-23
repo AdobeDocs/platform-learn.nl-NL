@@ -1,12 +1,12 @@
 ---
 title: 1.1 Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web
-description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web
+description: Stichting - Opstelling van de Gegevensinzameling van Adobe Experience Platform en de uitbreiding van SDK van het Web
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe
 - Leer de gegevensstromen die door een merk worden gebruikt om gegevens aan hun producten van de Adobe in te voeren.
 - Leer hoe u gegevens naar de Adobe Experience Platform en andere producten kunt verzenden via de Adobe Experience Platform Edge Network.
 - Leer hoe u gegevenselementen en regels maakt die gegevens verzamelen van internet en mobiele apparatuur.
-- Leer over de het volgen gebeurtenissen van SDK van het Web en hoe te om hun inhoud te zuiveren.
+- Leer over het Web SDK die gebeurtenissen volgen en hoe te om hun inhoud te zuiveren.
 - Leer wat een gegevenslaag is en welke Adobe adviseert wanneer het uitvoeren van één.
 - Leer wat de stappen zijn Web SDK van kras uit te voeren.
 - Leer het verschil tussen een web- en mobiele implementatie.
@@ -52,7 +52,7 @@ In deze oefening, zult u leren hoe te opstelling een Uitbreiding, de Elementen v
 
 [1.1.4 Clientside Web Data Collection](./ex4.md)
 
-In deze oefening, zuivert SDK van het Web die is geïnstalleerd om te begrijpen hoe het werkt en welke gegevens in toekomstige oefeningen zullen worden gebruikt.
+In deze oefening, zuivert het Web SDK dat is geïnstalleerd om te begrijpen hoe het werkt en welke gegevens in toekomstige oefeningen zullen worden gebruikt.
 
 [1.1.5 Adobe Analytics en Adobe Audience Manager implementeren](./ex5.md)
 
@@ -64,11 +64,13 @@ In deze oefening, opstelling een activiteit in Adobe Target, die via het Web SDK
 
 [1.1.7 XDM-schemavereisten in Adobe Experience Platform](./ex7.md)
 
-Om ervoor te zorgen dat Web SDK en alloy.js gegevens in Adobe Experience Platform kunnen opnemen, is er een vereiste dat een specifieke XDM Mixin deel moet uitmaken van het XDM-schema in Adobe Experience Platform.
+Om ervoor te zorgen dat Web SDK en alloy.js gegevens kunnen invoeren in Adobe Experience Platform, is er een vereiste dat een specifieke XDM Mixin deel moet uitmaken van het XDM-schema in Adobe Experience Platform.
 
 [Samenvatting en voordelen](./summary.md)
 
 Overzicht van deze module en overzicht van de voordelen.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

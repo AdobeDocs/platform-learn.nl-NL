@@ -4,9 +4,9 @@ description: In deze module leert u alles wat er over Journey Optimizer te weten
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,8 @@ Hierbij installeert u een mobiele toepassing op uw iOS-apparaat en configureert 
 [Samenvatting en voordelen](./summary.md)
 
 Overzicht van deze module en overzicht van de voordelen.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

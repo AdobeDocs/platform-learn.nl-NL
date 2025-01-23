@@ -4,9 +4,9 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,12 @@ Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app) op uw compute
 
 ![ DSN ](./images/mobileapp.png)
 
-Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw apparaat te installeren. Voor dit enablement, moet u **Versie 2.x** installeren die Adobe Experience Platform Mobile SDK&#39;s gebruikt.
+Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw apparaat te installeren. Voor dit enablement, moet u **Versie 2.x** installeren die Adobe Experience Platform Mobile SDK gebruikt.
 
 >[!NOTE]
 >
 >Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **Vertrouwen Adobe Systems Inc.** klikken.
+>Uw iOS-apparaat moet waarschijnlijk opnieuw worden opgestart om het vertrouwen van een ontwikkelaar te voltooien.
 
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
 
