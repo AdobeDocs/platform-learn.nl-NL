@@ -4,9 +4,9 @@ description: Aan de slag met Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,93 @@ Klik **sparen**.
 
 ![ WF ](./images/wfb6.png)
 
-Uw integratie tussen Workfront en AEM Assets CS is nu geconfigureerd.
+Uw integratie van Workfront naar AEM Assets CS is nu geconfigureerd.
 
 ![ WF ](./images/wfb7.png)
+
+## 2.2.1.2 Integratie van metagegevens met AEM Assets configureren
+
+Vervolgens moet u AEM Assets zodanig configureren dat de metagegevensvelden van het element in Workfront worden gedeeld met AEM.
+
+Om dat te doen, ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Experience Manager Assets**.
+
+![ WF ](./images/wfbaem1.png)
+
+Klik om de AEM Assets-omgeving te selecteren. Deze moet de naam `--aepUserLdap-- - Citi Signal dev` hebben.
+
+![ WF ](./images/wfbaem2.png)
+
+Dan moet je dit zien. In het linkermenu, ga naar **Assets** en klik **creeer Omslag**.
+
+![ WF ](./images/wfbaem3.png)
+
+Noem uw omslag `--aepUserLdap-- - Workfront Assets` en klik **creëren**.
+
+![ WF ](./images/wfbaem4.png)
+
+Daarna, ga naar **Meta-gegevens Forms** in het linkermenu en klik dan **creeer**.
+
+![ WF ](./images/wfbaem5.png)
+
+Gebruik de naam `--aepUserLdap-- - Metadata Form` en klik **creëren**.
+
+![ WF ](./images/wfbaem6.png)
+
+Voeg 3 nieuwe **Enige gebieden van de Tekst van de Lijn** aan de vorm toe en selecteer het eerste gebied. Dan, klik het **pictogram van het Schema** naast het **bezit van Meta-gegevens** gebied.
+
+![ WF ](./images/wfbaem7.png)
+
+Op het onderzoeksgebied, ga `wm:project` in en selecteer dan de gebied **Beschrijving van het Project**. Klik **Uitgezocht**.
+
+![ WF ](./images/wfbaem8.png)
+
+Verander het etiket van het gebied in **Beschrijving van het Project**.
+
+![ WF ](./images/wfbaem9.png)
+
+Daarna, selecteer het tweede **Enige gebied van de Tekst van de Lijn** en klik opnieuw het **pictogram van het Schema** naast het **bezit van Meta-gegevens**.
+
+![ WF ](./images/wfbaem10b.png)
+
+Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:project` in en selecteer dan identiteitskaart van het gebied **Project**. Klik **Uitgezocht**.
+
+![ WF ](./images/wfbaem10.png)
+
+Verander het etiket van het gebied in **identiteitskaart van het Project**.
+
+![ WF ](./images/wfbaem10a.png)
+
+Selecteer het 3de **Enige gebied van de Tekst van de Lijn** en klik opnieuw het **Schema** pictogram naast het **bezit van Meta-gegevens** gebied.
+
+![ WF ](./images/wfbaem11a.png)
+
+Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:project` in en selecteer dan de gebied **Naam van het Project**. Klik **Uitgezocht**.
+
+![ WF ](./images/wfbaem11.png)
+
+Verander het etiket van het gebied in **Naam van het Project**. Klik **sparen**.
+
+![ WF ](./images/wfbaem12.png)
+
+Verander de **naam van het Lusje** op de vorm in `--aepUserLdap-- - Workfront Metadata`. Klik **sparen** en **dicht**.
+
+![ WF ](./images/wfbaem13.png)
+
+Uw **Vorm van Meta-gegevens** wordt nu gevormd.
+
+![ WF ](./images/wfbaem14.png)
+
+Vervolgens moet u het metagegevensformulier toewijzen aan de map die u eerder hebt gemaakt. Controleer checkbox voor uw Vorm van Meta-gegevens en klik **toewijzen aan Omslag(s)**.
+
+![ WF ](./images/wfbaem15.png)
+
+Selecteer de map met de naam `--aepUserLdap-- - Workfront Assets` . Klik **toewijzen**.
+
+![ WF ](./images/wfbaem16.png)
+
+Het metagegevensformulier is nu toegewezen aan uw map.
+
+![ WF ](./images/wfbaem17.png)
 
 ## 2.2.1.2 De AEM Sites-integratie configureren
 
@@ -155,6 +239,8 @@ Klik **toepassen**.
 U hebt dan twee aangepaste formulieren beschikbaar.
 
 ![ WF ](./images/wfb20.png)
+
+Volgende Stap: [ 2.2.2 het Bewijzen met Workfront ](./ex2.md){target="_blank"}
 
 [ ga terug naar Module 2.2 ](./workfront.md){target="_blank"}
 

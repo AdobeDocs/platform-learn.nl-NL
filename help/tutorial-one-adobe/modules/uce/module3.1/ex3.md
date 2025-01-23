@@ -3,9 +3,10 @@ title: Gegevensverzameling - FAC - Een gefederaliseerde compositie maken
 description: Foundation - FAC - Een gefederaliseerde compositie maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -139,6 +140,8 @@ Uw compositie is nu voltooid. Klik **Begin** om het in werking te stellen.
 De vraag zal nu neer in Snowflake worden geduwd, die de brongegevens daar zal vragen. De resultaten worden teruggezet naar AEP, maar de brongegevens blijven in Snowflake.
 
 Het publiek is nu bevolkt en het publiek is gericht vanuit het ecosysteem van AEP.
+
+![ FAC ](./images/fedcomp22.png)
 
 Volgende Stap: [ Samenvatting &amp; voordelen ](./summary.md)
 

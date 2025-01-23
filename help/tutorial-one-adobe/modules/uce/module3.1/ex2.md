@@ -3,16 +3,17 @@ title: Gegevensverzameling - FAC - Schema's, gegevensmodel en koppelingen maken
 description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
 # 3.1.2 Schema&#39;s, gegevensmodel en koppelingen maken
 
-U kunt nu uw gefedereerde database configureren in AEP.
+U kunt nu uw gefedereerde database configureren in Adobe Experience Platform.
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -129,6 +130,8 @@ Selecteer uw schema&#39;s en klik **toevoegen**.
 
 Dan zie je dit. Klik **sparen**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
 ![ FAC ](./images/fdb16.png)
@@ -139,6 +142,9 @@ Klik **toevoegen**.
 
 ![ FAC ](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb17.png)
@@ -147,13 +153,18 @@ Vervolgens definiëren we de koppeling tussen de tabel `CK_HOUSEHOLDS` en `CK_PE
 
 ![ FAC ](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb20.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_MONTHLY_DATA_USAGE` en `CK_USERS` .
+Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MONTHLY_DATA_USAGE` .
 
 ![ FAC ](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
@@ -163,8 +174,19 @@ Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_HOUSEHO
 
 ![ FAC ](./images/fdb23.png)
 
-Dan ben je hier weer. Klik **sparen**.
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
+
 ![ FAC ](./images/fdb24.png)
+
+Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MOBILE_DATA_USAGE` .
+
+![ FAC ](./images/fdb25.png)
+
+Dan moet je dit zien. Klik **sparen**.
+
+![ FAC ](./images/fdb26.png)
 
 Uw installatie in AEP is nu voltooid. U kunt nu uw gefedereerde gegevens in een gefederaliseerde publiekscompositie gebruiken.
 
