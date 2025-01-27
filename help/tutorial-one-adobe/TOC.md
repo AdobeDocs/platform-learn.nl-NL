@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,8 @@ ht-degree: 4%
       + [2.1.1 Uw Cloud Manager-programma maken](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [2.1.2 Uw op documenten gebaseerde website maken](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [2.1.3 De AEM CS-omgeving instellen](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
-      + [2.1.4 Een aangepast blok ontwikkelen](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
+      + [2.1.4 Aangepast basisblok](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
+      + [2.1.5 Geavanceerd aangepast blok](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Overzicht](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)

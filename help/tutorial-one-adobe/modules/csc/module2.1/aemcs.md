@@ -4,9 +4,9 @@ description: ADOBE EXPERIENCE MANAGER CLOUD SERVICE & EDGE DELIVERY SERVICES
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,13 @@ In deze aan de slag-oefening, zult u uw eigen op document-gebaseerde website doo
 
 In deze exercitie stelt u uw AEM CS-omgeving in en opent u uw CitiSignal-website.
 
-[ 2.1.4 ontwikkelt een douaneblok ](./ex4.md){target="_blank"}
+[ 2.1.4 BasisBlok van de Douane ](./ex4.md){target="_blank"}
 
-Hierbij ontwikkelt u een aangepaste blokcomponent voor uw website.
+In deze oefening zult u een basisdouaneblok voor uw website ontwikkelen.
+
+[ 2.1.5 Geavanceerd Blok van de Douane ](./ex5.md){target="_blank"}
+
+In deze oefening zult u een geavanceerd douaneblok voor uw website ontwikkelen.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
