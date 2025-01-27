@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ [Voorwerk](/help/tutorial-one-adobe/prework.md)
 
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [Uw gegevensstroom maken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [De website gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [De mobiele app gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [Voorwerk](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Adobe Firefly Services {#module11}

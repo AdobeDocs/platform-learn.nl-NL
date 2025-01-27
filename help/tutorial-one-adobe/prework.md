@@ -2,9 +2,10 @@
 title: Voorwerk
 description: Voorwerk
 doc-type: multipage-overview
-source-git-commit: 5f079d0b6f74ccc6e2cde06b32e4fd2d1f3fbcdc
+exl-id: 1799a0d1-e432-45e2-a373-192d9a351423
+source-git-commit: 8c45215e4374d8a2c1a110f2d3069c5e866767ae
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,11 @@ Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw 
 
 ![ Adobe I/O Nieuwe Integratie ](./assets/images/psd.png)
 
-## 3. Postman
+## 3. API
+
+>[!NOTE]
+>
+>Als u een werknemer van de Adobe bent, volg hier de instructies om [ PostBuster ](./postbuster.md) te downloaden en te installeren
 
 Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/).
 
