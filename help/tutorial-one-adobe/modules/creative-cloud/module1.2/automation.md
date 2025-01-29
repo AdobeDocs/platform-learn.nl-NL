@@ -1,42 +1,41 @@
 ---
 title: Creative Workflow Automation met Workfront Fusion
-description: Creative Workflow Automation met Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
-# 1.2 Creative Workflow Automation met Workfront Fusion
+# Creative Workflow Automation met Workfront Fusion
 
-## Leerdoelen
-
-- Leer hoe u Adobe Firefly Services op verschillende manieren kunt automatiseren.
+Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion.
 
 ## Vereisten
 
-- Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/)
-- Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Toegang tot Adobe Firefly [ https://firefly.adobe.com/ ](https://firefly.adobe.com/) {target="_blank"}
 
 ## Uitoefening
 
-[1.2.1 Aan de slag met Workfront Fusion](./ex1.md)
+[ Aan de slag met de Fusie van Workfront ](./ex1.md){target="_blank"}
 
 In deze oefening, verken Workfront Fusion in combinatie met de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[1.2.2 Adobe-API&#39;s gebruiken in Workfront Fusion](./ex2.md)
+[ Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
 
-In deze oefening, vormt en gebruikt u de Diensten APIs van de Firefly en Photoshop APIs binnen Workfront Fusion, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
+In deze oefening, leer hoe te om de Diensten APIs van de Firefly en Photoshop APIs binnen Workfront Fusion te vormen en te gebruiken, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
 
-[1.2.3 Procesautomatisering met Workfront Fusion](./ex3.md)
+[ automatisering van het Proces met de Fusie van Workfront ](./ex3.md){target="_blank"}
 
-In deze oefening, blijft u uw reis verfijnen om beeldverwezenlijking te automatiseren proces.
+In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
 
-[Samenvatting en voordelen](./summary.md)
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
@@ -46,4 +45,4 @@ Overzicht van deze module en overzicht van de voordelen.
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[Terug naar alle modules](../../../overview.md)
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}

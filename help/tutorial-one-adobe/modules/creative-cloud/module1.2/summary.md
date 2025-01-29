@@ -1,26 +1,22 @@
 ---
-title: Automatisering van Firefly Services - Overzicht
+title: Overzicht en voordelen van automatisering van Firefly Services
 description: Automatisering van Firefly Services - Overzicht
 kt: 5342
 doc-type: tutorial
 exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 0%
 
 ---
 
 # Samenvatting en voordelen
 
-Gefeliciteerd en bedankt dat u uw tijd hebt geïnvesteerd in het leren over Adobe toepassingen!
+Bedankt dat u hebt geïnvesteerd in het leren van toepassingen voor Adoben.
 
-## Voordelen
+## Volgende stappen
 
-Laten we de voordelen van het gebruik van Workfront Fusion benadrukken.
+Ga terug naar [ Automating de Diensten van de Adobe Firefly ](./automation.md){target="_blank"}
 
-## Bekijk dit
-
-[Terug naar module 1.2](./automation.md)
-
-[Terug naar alle modules](../../../overview.md)
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}

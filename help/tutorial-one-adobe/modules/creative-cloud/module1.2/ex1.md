@@ -1,63 +1,65 @@
 ---
 title: Aan de slag met Workfront Fusion
-description: Aan de slag met Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om query's uit te voeren op Adobe Firefly Services-API's
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
 
-# 1.2.1 Aan de slag met Workfront Fusion
+# Aan de slag met Workfront Fusion
 
-In deze oefening, zult u Workfront Fusion en Adobe I/O gebruiken om de Diensten APIs van de Adobe Firefly te vragen.
+Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om query&#39;s uit te voeren op Adobe Firefly Services API&#39;s.
 
-## 1.2.1.1 Nieuwe scenario&#39;s maken
+## Nieuw scenario maken
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik om **de Fusie van Workfront** te openen.
+1. Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Open **de Fusie van Workfront**.
 
-![ WF Fusion ](./images/wffusion1.png)
+   ![ WF Fusion ](./images/wffusion1.png)
 
-Dan moet je dit zien. Ga naar **Scenario&#39;s**.
+1. Ga naar **Scenario&#39;s**.
 
-![ WF Fusion ](./images/wffusion2.png)
+   ![ WF Fusion ](./images/wffusion2.png)
 
-Klik op het pictogram **+** om een nieuwe map te maken.
+1. Selecteer **creeer nieuw scenario**.
 
-![ WF Fusion ](./images/wffusion2a.png)
+   ![ WF Fusion ](./images/wffusion2a.png)
 
-Gebruik: `--aepUserLdap--` voor de mapnaam. Klik **sparen**.
+1. Noem de omslag `--aepUserLdap--` en selecteer **sparen**.
 
-![ WF Fusion ](./images/wffusion2b.png)
+   ![ WF Fusion ](./images/wffusion2b.png)
 
-Selecteer uw omslag, en klik dan **creeer nieuw scenario**.
+1. Selecteer uw omslag, en selecteer dan **nieuw scenario** creëren.
 
-![ WF Fusion ](./images/wffusion3.png)
+   ![ WF Fusion ](./images/wffusion3.png)
 
-U zult dan een leeg scenario zien. Klik het **hulpmiddelen** pictogram en selecteer **Vastgestelde veelvoudige variabelen**.
+1. Een leeg scenario verschijnt, selecteert **hulpmiddelen** en selecteert **Vastgestelde veelvoudige variabelen**.
 
-![ WF Fusion ](./images/wffusion4.png)
+   ![ WF Fusion ](./images/wffusion4.png)
 
-U moet nu het **klok** pictogram op de onlangs toegevoegde **Reeks veelvoudige variabelen** bewegen.
+1. Verplaats het **klok** pictogram op de onlangs toegevoegde **Vastgestelde veelvoudige variabelen**.
 
-![ WF Fusion ](./images/wffusion5.png)
+   ![ WF Fusion ](./images/wffusion5.png)
 
-Dan zie je dit.
+   Het scherm moet er zo uitzien.
 
-![ WF Fusion ](./images/wffusion6.png)
+   ![ WF Fusion ](./images/wffusion6.png)
 
-Dan, klik op het vraagteken met de rechtermuisknop aan en selecteer **module van de Schrapping**.
+1. Klik op het vraagteken met de rechtermuisknop aan en selecteer **module van de Schrapping**.
 
-![ WF Fusion ](./images/wffusion7.png)
+   ![ WF Fusion ](./images/wffusion7.png)
 
-Daarna, klik op het **Vastgestelde veelvoudige variabelen** voorwerp met de rechtermuisknop aan en selecteer **Montages**.
+1. Daarna, klik op **plaats veelvoudige variabelen** met de rechtermuisknop aan en selecteer **Montages**.
 
-![ WF Fusion ](./images/wffusion8.png)
+   ![ WF Fusion ](./images/wffusion8.png)
 
-## 1.2.1.2 Adobe I/O-verificatie configureren
+## Adobe I/O-verificatie configureren
 
 U moet nu de variabelen vormen die nodig zijn om tegen Adobe I/O voor authentiek te verklaren. In de vorige oefening, creeerde u een project van Adobe I/O. De variabelen van dat Adobe I/O-project moeten nu worden gedefinieerd in Workfront Fusion.
 
@@ -69,175 +71,177 @@ De volgende variabelen moeten worden gedefinieerd:
 | `CONST_client_secret` | uw Adobe I/O project Client Secret |
 | `CONST_scope` | bereik van uw Adobe I/O-project |
 
-U kunt deze variabelen vinden door [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects) te gaan en uw Adobe I/O project te openen, dat `--aepUserLdap-- Firefly` wordt genoemd.
+1. Vind deze variabelen door naar [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects) te gaan en uw Adobe I/O project te openen, dat `--aepUserLdap-- Firefly` wordt genoemd.
 
-![ WF Fusion ](./images/wffusion9.png)
+   ![ WF Fusion ](./images/wffusion9.png)
 
-In uw project, klik **OAuth server-Server** om de waarden voor de bovengenoemde sleutels te zien.
+1. In uw project, uitgezochte **OAuth server-Server** om de waarden voor de bovengenoemde sleutels te zien.
 
-![ WF Fusion ](./images/wffusion10.png)
+   ![ WF Fusion ](./images/wffusion10.png)
 
-Met de bovengenoemde sleutels en de waarden, kunt u **vormen Vastgestelde veelvoudige variabelen** voorwerp. Klik **toevoegen punt**.
+1. Gebruikend de bovengenoemde sleutels en de waarden, kunt u **vormen Vastgestelde veelvoudige variabelen** voorwerp. Selecteer **toevoegen punt**.
 
-![ WF Fusion ](./images/wffusion11.png)
+   ![ WF Fusion ](./images/wffusion11.png)
 
-Ga de **Veranderlijke naam** in: **CONST_client_id** en zijn **Veranderlijke waarde**, klik **toevoegen**.
+1. Ga de **Veranderlijke naam** in: **CONST_client_id** en zijn **Veranderlijke waarde**, uitgezocht **voeg** toe.
 
-![ WF Fusion ](./images/wffusion12.png)
+   ![ WF Fusion ](./images/wffusion12.png)
 
-Klik **toevoegen punt**.
+1. Selecteer **toevoegen punt**.
 
-![ WF Fusion ](./images/wffusion13.png)
+   ![ WF Fusion ](./images/wffusion13.png)
 
-Ga de **Veranderlijke naam** in: **CONST_client_geheime** en zijn **Veranderlijke waarde**, klik **toevoegen**.
+1. Ga **Veranderlijke naam** in: **CONST_client_geheime** en zijn **Veranderlijke waarde**, uitgezocht **voeg** toe.
 
-![ WF Fusion ](./images/wffusion14.png)
+   ![ WF Fusion ](./images/wffusion14.png)
 
-Klik **toevoegen punt**.
+1. Selecteer **toevoegen punt**.
 
-![ WF Fusion ](./images/wffusion15.png)
+   ![ WF Fusion ](./images/wffusion15.png)
 
-Ga de **Veranderlijke naam** in: **CONST_scope** en zijn **Veranderlijke waarde**, klik **toevoegen**.
+1. Ga **Veranderlijke naam** in: **CONST_scope** en zijn **Veranderlijke waarde**, uitgezocht **voeg** toe.
 
-![ WF Fusion ](./images/wffusion16.png)
+   ![ WF Fusion ](./images/wffusion16.png)
 
-Klik **OK**.
+1. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion17.png)
+   ![ WF Fusion ](./images/wffusion17.png)
 
-Beweeg over uw **Vastgestelde veelvoudige variabelen** voorwerp en klik het grote **+** pictogram om een andere module toe te voegen.
+1. Plaats over **veelvoudige variabelen** en selecteer het grote **+** pictogram om een andere module toe te voegen.
 
-![ WF Fusion ](./images/wffusion18.png)
+   ![ WF Fusion ](./images/wffusion18.png)
 
-Dan moet je dit zien.
+   Het scherm moet er zo uitzien.
 
-![ WF Fusion ](./images/wffusion19.png)
+   ![ WF Fusion ](./images/wffusion19.png)
 
-In de onderzoeksbar, ga **http** in. Selecteer **HTTP** om het te openen.
+1. In de onderzoeksbar, ga **http** in. Selecteer **HTTP** om het te openen.
 
-![ WF Fusion ](./images/wffusion21.png)
+   ![ WF Fusion ](./images/wffusion21.png)
 
-en selecteer dan **maak een verzoek**.
+1. Selecteer **maak een verzoek**.
 
-![ WF Fusion ](./images/wffusion20.png)
+   ![ WF Fusion ](./images/wffusion20.png)
 
-| Sleutel | Waarde |
-|:-------------:| :---------------:| 
-| `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
-| `Method` | `POST` |
-| `Body Type` | `x-www-form-urlencoded` |
+   | Sleutel | Waarde |
+   |:-------------:| :---------------:| 
+   | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
+   | `Method` | `POST` |
+   | `Body Type` | `x-www-form-urlencoded` |
 
-Klik **toevoegen punt**.
+1. Selecteer **toevoegen punt**.
 
-![ WF Fusion ](./images/wffusion22.png)
+   ![ WF Fusion ](./images/wffusion22.png)
 
-Voeg items toe voor elk van de onderstaande waarden:
+1. Voeg items toe voor elk van de onderstaande waarden:
 
-| Sleutel | Waarde |
-|:-------------:| :---------------:| 
-| `client_id` | de vooraf gedefinieerde variabele voor `CONST_client_id` |
-| `client_secret` | de vooraf gedefinieerde variabele voor `CONST_client_secret` |
-| `scope` | de vooraf gedefinieerde variabele voor `CONST_scope` |
-| `grant_type` | `client_credentials` |
+   | Sleutel | Waarde |
+   |:-------------:| :---------------:| 
+   | `client_id` | de vooraf gedefinieerde variabele voor `CONST_client_id` |
+   | `client_secret` | de vooraf gedefinieerde variabele voor `CONST_client_secret` |
+   | `scope` | de vooraf gedefinieerde variabele voor `CONST_scope` |
+   | `grant_type` | `client_credentials` |
 
-Configuratie voor `client_id` .
+1. Configuratie voor `client_id`:
 
-![ WF Fusion ](./images/wffusion23.png)
+   ![ WF Fusion ](./images/wffusion23.png)
 
-Configuratie voor `client_secret` .
+1. Configuratie voor `client_secret` .
 
-![ WF Fusion ](./images/wffusion25.png)
+   ![ WF Fusion ](./images/wffusion25.png)
 
-Configuratie voor `scope` .
+1. Configuratie voor `scope` .
 
-![ WF Fusion ](./images/wffusion26.png)
+   ![ WF Fusion ](./images/wffusion26.png)
 
-Configuratie voor `grant_type` .
+1. Configuratie voor `grant_type` .
 
-![ WF Fusion ](./images/wffusion28.png)
+   ![ WF Fusion ](./images/wffusion28.png)
 
-Overzicht van configuratie. De rol neer en controleert checkbox voor **ontleedt reactie**. Klik **OK**.
+1. De rol neer en controleert de doos voor **ontleedt reactie**. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion27.png)
+   ![ WF Fusion ](./images/wffusion27.png)
 
-Dan moet je dit zien. Klik **Looppas eens**.
+1. Het scherm moet er zo uitzien. Selecteer **Looppas eens**.
 
-![ WF Fusion ](./images/wffusion29.png)
+   ![ WF Fusion ](./images/wffusion29.png)
 
-Zodra het scenario is gelopen, zou u dit moeten zien.
+   Nadat het scenario is uitgevoerd, moet uw scherm er als volgt uitzien:
 
-![ WF Fusion ](./images/wffusion30.png)
+   ![ WF Fusion ](./images/wffusion30.png)
 
-Klik het **vraagteken** pictogram op het **Vastgestelde veelvoudige variabelen** voorwerp om te zien wat gebeurde toen dat voorwerp in werking werd gesteld.
+1. Selecteer het **vraagteken** pictogram op het **Vastgestelde veelvoudige variabelen** voorwerp om te zien wat gebeurde toen dat voorwerp liep.
 
-![ WF Fusion ](./images/wffusion31.png)
+   ![ WF Fusion ](./images/wffusion31.png)
 
-Klik het **vraagteken** pictogram op **HTTP - doe een verzoek** voorwerp om te zien wat gebeurde toen dat voorwerp in werking werd gesteld. In **OUTPUT**, zult u **access_token** zien die door Adobe I/O wordt teruggekeerd.
+1. Selecteer het **vraagteken** pictogram op **HTTP - doe een verzoek** voorwerp om te zien wat gebeurde toen dat voorwerp liep. In **OUTPUT**, zie **access_token** die door Adobe I/O wordt teruggekeerd.
 
-![ WF Fusion ](./images/wffusion32.png)
+   ![ WF Fusion ](./images/wffusion32.png)
 
-Beweeg over **HTTP - doe een verzoek** voorwerp en klik **+** pictogram om een andere module toe te voegen.
+1. Beweeg over **HTTP - doe een verzoek** en selecteer **+** pictogram om een andere module toe te voegen.
 
-![ WF Fusion ](./images/wffusion33.png)
+   ![ WF Fusion ](./images/wffusion33.png)
 
-Zoek in de zoekbalk naar `tools` . Selecteer **Hulpmiddelen**.
+1. Zoek in de zoekbalk naar `tools` . Selecteer **Hulpmiddelen**.
 
-![ WF Fusion ](./images/wffusion34.png)
+   ![ WF Fusion ](./images/wffusion34.png)
 
-Selecteer **Vastgestelde veelvoudige variabelen**.
+1. Selecteer **Vastgestelde veelvoudige variabelen**.
 
-![ WF Fusion ](./images/wffusion35.png)
+   ![ WF Fusion ](./images/wffusion35.png)
 
-Selecteer **toevoegen punt**.
+1. Selecteer **toevoegen punt**.
 
-![ WF Fusion ](./images/wffusion36.png)
+   ![ WF Fusion ](./images/wffusion36.png)
 
-Plaats de **naam van de Variabele** aan `bearer_token`. Selecteer `access_token` als dynamische **Variabele waarde**. CLick **voegt** toe.
+1. Plaats **Veranderlijke naam** aan `bearer_token`. Selecteer `access_token` als dynamische **Variabele waarde**. Selecteer **toevoegen**.
 
-![ WF Fusion ](./images/wffusion37.png)
+   ![ WF Fusion ](./images/wffusion37.png)
 
-Dan moet je dit hebben. Klik **OK**.
+1. Het scherm moet er zo uitzien. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion38.png)
+   ![ WF Fusion ](./images/wffusion38.png)
 
-Klik **Looppas eens** opnieuw.
+1. Selecteer **nogmaals Looppas**.
 
-![ WF Fusion ](./images/wffusion39.png)
+   ![ WF Fusion ](./images/wffusion39.png)
 
-Zodra het scenario in werking is gesteld, klik het **vraagteken** pictogram op het laatste **Vastgestelde veelvoudige variabelen** voorwerp. Vervolgens moet u zien dat het access_token wordt opgeslagen in de variabele `bearer_token` .
+1. Zodra het scenario loopt, selecteer het **vraagteken** pictogram op het laatste **Vastgestelde veelvoudige variabelen** voorwerp. Let op: het access_token wordt opgeslagen in de variabele `bearer_token` .
 
-![ WF Fusion ](./images/wffusion40.png)
+   ![ WF Fusion ](./images/wffusion40.png)
 
-Daarna, klik met de rechtermuisknop op het eerste voorwerp **plaats veelvoudige waarden** en selecteer **anders noemen**.
+1. Daarna, klik met de rechtermuisknop op het eerste voorwerp **plaats veelvoudige waarden** en selecteer **anders noemen**.
 
-![ WF Fusion ](./images/wffusion41.png)
+   ![ WF Fusion ](./images/wffusion41.png)
 
-Plaats de naam aan **initialiseert Constanten**. Klik **OK**.
+1. Plaats de naam aan **initialiseert Constanten**. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion42.png)
+   ![ WF Fusion ](./images/wffusion42.png)
 
-Wijzig de naam van het tweede voorwerp en plaats de naam aan **voor authentiek verklaren aan Adobe I/O**. Klik **OK**.
+1. Wijzig de naam van het tweede voorwerp aan **voor authentiek verklaren aan Adobe I/O**. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion43.png)
+   ![ WF Fusion ](./images/wffusion43.png)
 
-Wijzig de naam van het derde voorwerp en plaats de naam aan **plaats Token van de Drager**. Klik **OK**.
+1. Verander de naam van het derde voorwerp aan **plaats Token van de Drager**. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion44.png)
+   ![ WF Fusion ](./images/wffusion44.png)
 
-Dan moet je dit hebben.
+   Uw scherm moet er als volgt uitzien:
 
-![ WF Fusion ](./images/wffusion45.png)
+   ![ WF Fusion ](./images/wffusion45.png)
 
-Wijzig vervolgens de naam van het scenario in `--aepUSerLdap-- - Adobe I/O Authentication` .
+1. Wijzig vervolgens de naam van het scenario in `--aepUSerLdap-- - Adobe I/O Authentication` .
 
-![ WF Fusion ](./images/wffusion46.png)
+   ![ WF Fusion ](./images/wffusion46.png)
 
-Klik **sparen**.
+1. Selecteer **sparen**.
 
-![ WF Fusion ](./images/wffusion47.png)
+   ![ WF Fusion ](./images/wffusion47.png)
 
-Volgende Stap: [ 1.2.2 Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md)
+## Volgende stappen
 
-[Terug naar module 1.2](./automation.md)
+Ga naar [ Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
 
-[Terug naar alle modules](./../../../overview.md)
+Ga terug naar [ Automating de Diensten van de Adobe Firefly ](./automation.md){target="_blank"}
+
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}

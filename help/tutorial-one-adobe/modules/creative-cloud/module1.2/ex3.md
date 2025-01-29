@@ -1,195 +1,207 @@
 ---
 title: Procesautomatisering met Workfront Fusion
-description: Procesautomatisering met Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Meer informatie over het verwerken van automatisering met Workfront Fusion
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# 1.2.3 Procesautomatisering met Workfront Fusion
+# Procesautomatisering met Workfront Fusion
 
-Uw scenario ziet er nu zo uit.
+Leer hoe u automatisering kunt verwerken met Workfront Fusion.
+
+## Herhalen over meerdere waarden
+
+Uw scenario zou als dit moeten kijken:
 
 ![ WF Fusion ](./images/wffusion200.png)
 
-## 1.2.3.1 Iteratie over meerdere waarden
-
 Tot nu toe hebt u tekst in een Photoshop-bestand gewijzigd met een statische waarde. Als u uw workflows voor het maken van inhoud wilt schalen en automatiseren, moet u de lijst met waarden doorlopen en deze waarden dynamisch invoegen in het Photoshop-bestand. In de volgende stappen voegt u een herhaling toe over waarden in uw bestaande scenario.
 
-In tussen de **knoop van de Router** en de **knoop van de Tekst van de Verandering van Photoshop**, klik het **moersleutelpictogram** en selecteer **voeg een module** toe.
+1. In tussen de **knoop van de Router** en de **knoop van de Tekst van de Verandering van Photoshop**, selecteer het **moersleutelpictogram** en selecteer **voeg een module** toe.
 
-![ WF Fusion ](./images/wffusion201.png)
+   ![ WF Fusion ](./images/wffusion201.png)
 
-Onderzoek naar `flow` en selecteer **de Controle van de Stroom**.
+1. Onderzoek naar `flow` en selecteer **de Controle van de Stroom**.
 
-![ WF Fusion ](./images/wffusion202.png)
+   ![ WF Fusion ](./images/wffusion202.png)
 
-Selecteer **Teller**.
+1. Selecteer **Teller**.
 
-![ WF Fusion ](./images/wffusion203.png)
+   ![ WF Fusion ](./images/wffusion203.png)
 
-Dan moet je dit hebben.
+   Uw scherm moet er als volgt uitzien:
 
-![ WF Fusion ](./images/wffusion204.png)
+   ![ WF Fusion ](./images/wffusion204.png)
 
-Terwijl het mogelijk is om inputdossiers zoals Csv- dossiers te lezen, moet u momenteel een basisversie van een Csv- dossier gebruiken door een tekstkoord te bepalen en dat tekstdossier te verdelen.
+   Terwijl het mogelijk is om inputdossiers zoals Csv- dossiers te lezen, moet u momenteel een basisversie van een Csv- dossier gebruiken door een tekstkoord te bepalen en dat tekstdossier te verdelen.
 
-U kunt de **gespleten** functie vinden door het **t** pictogram te klikken, waar u alle beschikbare functies ziet om tekstwaarden te manipuleren. Klik de **gespleten** functie, en u zou dit dan moeten zien.
+1. U kunt de **gespleten** functie vinden door het **t** pictogram te selecteren, waar u alle beschikbare functies ziet om tekstwaarden te manipuleren. Selecteer de **gespleten** functie, dan zou u dit moeten zien.
 
-![ WF Fusion ](./images/wffusion206.png)
+   ![ WF Fusion ](./images/wffusion206.png)
 
-De splitsfunctie verwacht een array van waarden voor de puntkomma en verwacht dat u het scheidingsteken na de puntkomma opgeeft. Voor deze test, zou u een eenvoudige serie met 2 gebieden moeten gebruiken, **kopen nu** en **klikt hier**, en de separator aan gebruik is **,**.
+1. De splitsfunctie verwacht een array van waarden voor de puntkomma en verwacht dat u het scheidingsteken na de puntkomma opgeeft. Voor deze test, zou u een eenvoudige serie met 2 gebieden moeten gebruiken, **kopen nu** en **klikt hier**, en de separator aan gebruik is **,**.
 
-Ga dit op het **gebied van de Serie** door de momenteel lege **gespleten** functie te vervangen: `{{split("Buy now, Click here "; ",")}}`. Klik **OK**.
+1. Ga dit op het **gebied van de Serie** door de momenteel lege **gespleten** functie te vervangen: `{{split("Buy now, Click here "; ",")}}`. Selecteer **O.K.**.
 
-![ WF Fusion ](./images/wffusion205.png)
+   ![ WF Fusion ](./images/wffusion205.png)
 
-Uw iterator wordt nu gevormd en als u uw scenario nu in werking zou stellen, zou het het tweemaal uitvoeren. Er is niettemin nog een probleem, aangezien u momenteel statische waarden in uw **knoop van de Tekst van de Verandering van Photoshop** gebruikt. Klik **de Tekst van de Verandering van Photoshop** om in sommige variabelen in plaats van statische waarden voor de input en outputgebieden toe te voegen.
 
-![ WF Fusion ](./images/wffusion207.png)
 
-In de **inhoud van het Verzoek**, zult u de tekst **hier** zien klikken. Deze tekst moet worden vervangen door de waarden uit uw array.
+1. Selecteer **de Tekst van de Verandering van Photoshop** om in sommige variabelen in plaats van statische waarden voor de input en outputgebieden toe te voegen.
 
-![ WF Fusion ](./images/wffusion208.png)
+   ![ WF Fusion ](./images/wffusion207.png)
 
-Schrap de tekst **hier** klikt, en vervangt het door de veranderlijke **Waarde** van de **Iterator** knoop te selecteren. Zo zorgt u ervoor dat de tekst op de knop in uw Photoshop-document dynamisch wordt bijgewerkt.
+   In **inhoud van het Verzoek**, is de tekst **hier klikt**. Deze tekst moet worden vervangen door de waarden uit uw array.
 
-![ WF Fusion ](./images/wffusion209.png)
+   ![ WF Fusion ](./images/wffusion208.png)
 
-U moet ook de bestandsnaam bijwerken waarmee het bestand in uw Azure Storage Account wordt geschreven. Als de bestandsnaam statisch is, wordt het vorige bestand door elke nieuwe versie overschreven en gaan de aangepaste bestanden verloren. Huidige statische filename is **burgerschap-vezel-veranderd-text.psd**, en u moet nu dat bijwerken. Plaats de cursor achter het woord `text` .
+1. Schrap de tekst **hier** klikt, en vervangt het door de veranderlijke **Waarde** van de **Iterator** knoop te selecteren. Zo weet u zeker dat de tekst op de knop in uw Photoshop-document dynamisch wordt bijgewerkt.
 
-![ WF Fusion ](./images/wffusion210.png)
+   ![ WF Fusion ](./images/wffusion209.png)
 
-Eerst, voeg een afbreekstreepje `-` toe en selecteer dan de waarde **Positie van de Volgorde van de Bundel**. Zo zorgt u ervoor dat Workfront Fusion voor de eerste iteratie `-1` toevoegt aan de bestandsnaam, voor de tweede iteratie `-2` enzovoort. Klik **OK**.
+   U moet ook de bestandsnaam bijwerken waarmee het bestand in uw Azure Storage Account wordt geschreven. Als de bestandsnaam statisch is, wordt het vorige bestand door elke nieuwe versie overschreven en gaan de aangepaste bestanden verloren. Huidige statische filename is **burgerschap-vezel-veranderd-text.psd**, en u moet nu dat bijwerken.
 
-![ WF Fusion ](./images/wffusion211.png)
+1. Plaats de cursor achter het woord `text` .
 
-Sparen uw scenario en klik dan **Looppas eens**.
+   ![ WF Fusion ](./images/wffusion210.png)
 
-![ WF Fusion ](./images/wffusion212.png)
+1. Eerst, voeg een afbreekstreepje `-` toe en selecteer dan de waarde **Positie van de Volgorde van de Bundel**. Dit zorgt ervoor dat Workfront Fusion voor de eerste iteratie `-1` toevoegt aan de bestandsnaam, voor de tweede iteratie `-2` enzovoort. Selecteer **O.K.**.
 
-Als het scenario eenmaal is uitgevoerd, gaat u terug naar uw Azure Storage Explorer en vernieuwt u de map. De twee nieuwe bestanden worden dan weergegeven.
+   ![ WF Fusion ](./images/wffusion211.png)
 
-![ WF Fusion ](./images/wffusion213.png)
+1. Sparen uw scenario en selecteer dan **Looppas eens**.
 
-Download en open elk bestand. Vervolgens ziet u de verschillende teksten op de knoppen. Dit is bestand `citisignal-fiber-changed-text-1.psd` .
+   ![ WF Fusion ](./images/wffusion212.png)
 
-![ WF Fusion ](./images/wffusion214.png)
+   Als het scenario eenmaal is uitgevoerd, gaat u terug naar uw Azure Storage Explorer en vernieuwt u de map. De twee nieuwe bestanden worden dan weergegeven.
 
-Dit is bestand `citisignal-fiber-changed-text-2.psd` .
+   ![ WF Fusion ](./images/wffusion213.png)
 
-![ WF Fusion ](./images/wffusion215.png)
+1. Download en open elk bestand. U dient verschillende teksten op de knoppen te plaatsen. Dit is bestand `citisignal-fiber-changed-text-1.psd` .
 
-## 1.2.3.2 Actief uw scenario gebruikend een webhaak
+   ![ WF Fusion ](./images/wffusion214.png)
+
+   Dit is bestand `citisignal-fiber-changed-text-2.psd` .
+
+   ![ WF Fusion ](./images/wffusion215.png)
+
+## Uw scenario activeren met een webhaak
 
 Tot dusver, hebt u uw scenario manueel in werking gesteld om te testen. Werk nu uw scenario bij met een webhaak, zodat het vanuit een externe omgeving kan worden geactiveerd.
 
-Klik **+** pictogram, onderzoek naar **webhaak** en selecteer dan **Webhooks**.
+1. Selecteer **+**, onderzoek naar **webhaak** en selecteer dan **Webhooks**.
 
-![ WF Fusion ](./images/wffusion216.png)
+   ![ WF Fusion ](./images/wffusion216.png)
 
-Selecteer **Webhaak van de Douane**.
+1. Selecteer **Webhaak van de Douane**.
 
-Sleep en verbind de **knoop van de Douane webhaak** zodat het met de eerste knoop op het canvas verbindt, die **wordt genoemd initialiseert Constanten**.
+1. Sleep en verbind de **knoop van de Douane webhaak** zodat het met de eerste knoop op het canvas verbindt, die **wordt genoemd initialiseert Constanten**.
 
-![ WF Fusion ](./images/wffusion217.png)
+   ![ WF Fusion ](./images/wffusion217.png)
 
-Klik de **knoop van de Webhaak van de Douane**. Dan, klik **toevoegen**.
+1. Selecteer de **knoop van de Webhaak van de Douane**. Dan, selecteer **toevoegen**.
 
-![ WF Fusion ](./images/wffusion218.png)
+   ![ WF Fusion ](./images/wffusion218.png)
 
-Plaats de **naam van Webhaak** aan `--aepUserLdap-- - Tutorial 1.2`.
+1. Plaats **naam Webhaak** aan `--aepUserLdap-- - Tutorial 1.2`.
 
-![ WF Fusion ](./images/wffusion219.png)
+   ![ WF Fusion ](./images/wffusion219.png)
 
-Controle checkbox voor **krijgt verzoekkopballen**. Klik **sparen**.
+1. Controle de doos voor **krijgt verzoekkopballen**. Selecteer **sparen**.
 
-![ WF Fusion ](./images/wffusion220.png)
+   ![ WF Fusion ](./images/wffusion220.png)
 
-De URL van uw webhaak is nu beschikbaar. De URL kopiëren.
+1. De URL van uw webhaak is nu beschikbaar. De URL kopiëren.
 
-![ WF Fusion ](./images/wffusion221.png)
+   ![ WF Fusion ](./images/wffusion221.png)
 
-Open Postman en voeg een nieuwe omslag in de inzameling **toe FF - Firefly van de Diensten de Technologie Insiders van de Diensten**.
+1. Open Postman, en voeg een nieuwe omslag in de inzameling **toe FF - Firefly van de Diensten Tech Insiders**.
 
-![ WF Fusion ](./images/wffusion222.png)
+   ![ WF Fusion ](./images/wffusion222.png)
 
-Geef de map een naam `--aepUserLdap-- - Workfront Fusion` .
+1. Geef de map een naam `--aepUserLdap-- - Workfront Fusion` .
 
-![ WF Fusion ](./images/wffusion223.png)
+   ![ WF Fusion ](./images/wffusion223.png)
 
-In de omslag die u enkel creeerde, klik de 3 punten **...** en selecteer **verzoek** toevoegen.
+1. In de omslag die u enkel creeerde, selecteer de 3 punten **...** en selecteer **verzoek** toevoegen.
 
-![ WF Fusion ](./images/wffusion224.png)
+   ![ WF Fusion ](./images/wffusion224.png)
 
-Plaats het **type van Methode** aan **POST** en kleef URL van uw webhaak in de adresbar.
+1. Plaats het **type van Methode** aan **POST** en kleef URL van uw webhaak in de adresbar.
 
-![ WF Fusion ](./images/wffusion225.png)
+   ![ WF Fusion ](./images/wffusion225.png)
 
-U moet een douanelichaam verzenden, zodat de veranderlijke elementen van een externe bron aan uw scenario van de Fusie van Workfront kunnen worden verstrekt. Ga naar **Lichaam** en selecteer **onbewerkt**.
+   U moet een douanelichaam verzenden, zodat de veranderlijke elementen van een externe bron aan uw scenario van de Fusie van Workfront kunnen worden verstrekt.
 
-![ WF Fusion ](./images/wffusion226.png)
+1. Ga naar **Lichaam** en selecteer **onbewerkt**.
 
-Plak de onderstaande tekst in de hoofdtekst van uw verzoek. Klik **verzenden**.
+   ![ WF Fusion ](./images/wffusion226.png)
 
-```json
-{
-    "psdTemplate": "placeholder",
-    "xlsFile": "placeholder"
-}
-```
+1. Plak de onderstaande tekst in de hoofdtekst van uw verzoek. Selecteer **verzenden**.
 
-![ WF Fusion ](./images/wffusion229.png)
+   ```json
+   {
+       "psdTemplate": "placeholder",
+       "xlsFile": "placeholder"
+   }
+   ```
 
-Ga terug naar Workfront Fusion. U zult nu een bericht op uw douane webhaak zien die zegt: **met succes bepaalde**.
+   ![ WF Fusion ](./images/wffusion229.png)
 
-![ WF Fusion ](./images/wffusion227.png)
+1. Terug in de Fusie van Workfront, verschijnt een bericht op uw douane webhaak die zegt: **met succes bepaalde**.
 
-Klik **sparen** en klik dan **in werking stellen eens**. Uw scenario zal nu actief zijn maar zal niet lopen tot u **klikt verzendt** opnieuw in Postman.
+   ![ WF Fusion ](./images/wffusion227.png)
 
-![ WF Fusion ](./images/wffusion230.png)
+1. Selecteer **sparen** en selecteer dan **Looppas eens**. Uw scenario is nu actief maar zal niet lopen tot u **selecteert verzend** opnieuw in Postman.
 
-Ga naar Postman, en klik **verzenden** opnieuw.
+   ![ WF Fusion ](./images/wffusion230.png)
 
-![ WF Fusion ](./images/wffusion228.png)
+1. In Postman selecteert **verzend** opnieuw.
 
-Uw scenario zal dan opnieuw lopen, en creeer de 2 dossiers enkel als voordien.
+   ![ WF Fusion ](./images/wffusion228.png)
 
-![ WF Fusion ](./images/wffusion232.png)
+   Uw scenario wordt opnieuw uitgevoerd en leidt tot de 2 dossiers enkel als voordien.
 
-Wijzig de naam van uw Postman-aanvraag in `POST - Send Request to Workfront Fusion Webhook` .
+   ![ WF Fusion ](./images/wffusion232.png)
 
-![ WF Fusion ](./images/wffusion233.png)
+1. Wijzig de naam van uw Postman-aanvraag in `POST - Send Request to Workfront Fusion Webhook` .
 
-U moet nu beginnen veranderlijk **psdTemplate** te gebruiken. In plaats van hardcoding de plaats van het inputdossier in de **knoop van de Tekst van de Verandering van Photoshop**, zult u nu de inkomende variabele van het verzoek van Postman gebruiken.
+   ![ WF Fusion ](./images/wffusion233.png)
 
-Open de **knoop van de Tekst van de Verandering van Photoshop** en ga naar **inhoud van het Verzoek**. Selecteer hardcoded filename **burgerschap-fiber.psd** onder **input** en schrap het.
+   Nu moet u beginnen veranderlijk **psdTemplate** te gebruiken. In plaats van hardcoding de plaats van het inputdossier in de **knoop van de Tekst van de Verandering van Photoshop**, zult u de inkomende variabele van het verzoek van Postman gebruiken.
 
-![ WF Fusion ](./images/wffusion234.png)
+1. Open de **knoop van de Tekst van de Verandering van Photoshop** en ga naar **inhoud van het Verzoek**. Selecteer hardcoded filename **burgerschap-fiber.psd** onder **input** en schrap het.
 
-Selecteer veranderlijk **psdTemplate**. Klik **O.K.** en bewaar dan uw scenario.
+   ![ WF Fusion ](./images/wffusion234.png)
 
-![ WF Fusion ](./images/wffusion235.png)
+1. Selecteer veranderlijk **psdTemplate**. Selecteer **O.K.** en bewaar dan uw scenario.
 
-Klik **AAN** om uw scenario aan te zetten. Uw scenario zal nu zonder stop lopen.
+   ![ WF Fusion ](./images/wffusion235.png)
 
-![ WF Fusion ](./images/wffusion236.png)
+1. Selecteer **AAN** om uw scenario aan te zetten. Uw scenario loopt nu zonder onderbreking.
 
-Ga terug naar Postman. Ga filename `citisignal-fiber.psd` als waarde voor veranderlijke **psdTemplate** in en klik **verzend** opnieuw om uw scenario opnieuw in werking te stellen.
+   ![ WF Fusion ](./images/wffusion236.png)
 
-![ WF Fusion ](./images/wffusion237.png)
+1. Terug in Postman, ga filename `citisignal-fiber.psd` als waarde voor veranderlijke **psdTemplate** in en selecteer **verzend** opnieuw om uw scenario opnieuw in werking te stellen.
 
-Door het malplaatje van de PSD als variabele te specificeren die door een extern systeem wordt verstrekt, hebt u nu een herbruikbaar scenario gebouwd.
+   ![ WF Fusion ](./images/wffusion237.png)
 
-Je hebt deze oefening nu afgerond.
+   Door het malplaatje van de PSD als variabele te specificeren die door een extern systeem wordt verstrekt, hebt u nu een herbruikbaar scenario gebouwd.
 
-Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md)
+   Nu hebt u deze oefening afgerond.
 
-[Terug naar module 1.2](./automation.md)
+## Volgende stappen
 
-[Terug naar alle modules](./../../../overview.md)
+Ga naar [ Samenvatting en Voordelen van de Automatisering van de Diensten van de Firefly ](./summary.md){target="_blank"}
+
+Ga terug naar [ Automating de Diensten van de Adobe Firefly ](./automation.md){target="_blank"}
+
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}

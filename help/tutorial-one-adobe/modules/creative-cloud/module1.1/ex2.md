@@ -1,372 +1,374 @@
 ---
-title: Uw Firefly optimaliseren met Microsoft Azure en vooraf ondertekende URL's
-description: Uw Firefly optimaliseren met Microsoft Azure en vooraf ondertekende URL's
-kt: 5342
+title: Optimaliseer uw Firefly Proces gebruikend Microsoft Azure en Presigned URLs
+description: Leer hoe u uw Firefly kunt optimaliseren met Microsoft Azure en vooraf ondertekende URL's
+role: Developer
+level: Beginner
+jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
 
-# 1.1.2 Optimaliseer uw Firefly met Microsoft Azure en vooraf ondertekende URL&#39;s
+# Uw Firefly optimaliseren met Microsoft Azure en vooraf ondertekende URL&#39;s
 
-## 1.1.2.1 Een Azure-abonnement maken
+Leer hoe u uw Firefly kunt optimaliseren met Microsoft Azure en vooraf ondertekende URL&#39;s.
+
+## Een Azure-abonnement maken
 
 >[!NOTE]
 >
 >Als u al een bestaand Azure-abonnement hebt, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
 
-Ga naar [ https://portal.azure.com ](https://portal.azure.com) {target="_blank"} en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
+1. Ga naar [ https://portal.azure.com ](https://portal.azure.com) {target="_blank"} en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
 
-![ Azure Opslag ](./images/02azureportalemail.png)
+   ![ Azure Opslag ](./images/02azureportalemail.png)
 
-Na succesvolle login zult u het volgende scherm zien:
+   Na succesvolle login zou u het volgende scherm moeten zien:
 
-![ Azure Opslag ](./images/03azureloggedin.png)
+   ![ Azure Opslag ](./images/03azureloggedin.png)
 
-Klik op het aan linkermenu en selecteer **Alle Middelen**, zal het Azure abonnementsscherm verschijnen als u nog niet wordt ingetekend. In dat geval uitgezocht **Begin met een Azure vrije Proef**.
+1. Op het linkermenu uitgezocht **Alle Middelen**, verschijnt het Azure abonnementsscherm als u nog niet wordt ingetekend.
 
-![ Azure Opslag ](./images/04azurestartsubscribe.png)
+1. Als u niet wordt geabonneerd, uitgezochte **Begin met een Azure vrije Proef**.
 
-Vul het Azure-abonnementsformulier in, geef uw mobiele telefoon en creditcard op voor activering (u hebt 30 dagen een gratis label en u wordt geen kosten in rekening gebracht, tenzij u een upgrade uitvoert).
+   ![ Azure Opslag ](./images/04azurestartsubscribe.png)
 
-Als het abonnementsproces is voltooid, kunt u het beste gaan:
+1. Vul het Azure-abonnementsformulier in en geef uw mobiele telefoon en creditcard op voor activering (u hebt 30 dagen een gratis label en u wordt geen kosten in rekening gebracht, tenzij u een upgrade uitvoert).
 
-![ Azure Opslag ](./images/06azuresubscriptionok.png)
+   Als het abonnementsproces is voltooid, kunt u het beste gaan.
 
-## 1.1.2.2 Azure Storage Account maken
+   ![ Azure Opslag ](./images/06azuresubscriptionok.png)
 
-Onderzoek naar `storage account` en klik dan **rekeningen van de Opslag**.
+## Azure Storage Account maken
 
-![ Azure Opslag ](./images/azs1.png)
+1. Onderzoek naar `storage account` en selecteer dan **rekeningen van de Opslag**.
 
-Klik op **+ Maken** .
+   ![ Azure Opslag ](./images/azs1.png)
+
+1. Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png)
 
-Vul de volgende gegevens in:
+1. Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
 
-- Selecteer uw **Abonnement**
-- Selecteer (of creeer) de groep van het Middel van a ****
-- **de rekeningsnaam van de Opslag**: gebruik `--aepUserLdap--`
+1. Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
-Klik **Overzicht + creeer**.
+1. Selecteer **Overzicht + creeer**.
 
-![ Azure Opslag ](./images/azs3.png)
+   ![ Azure Opslag ](./images/azs3.png)
 
-Klik **creëren**.
+1. Selecteer **creeer**.
 
-![ Azure Opslag ](./images/azs4.png)
+   ![ Azure Opslag ](./images/azs4.png)
 
-Je krijgt dan een vergelijkbare bevestiging. Klik **gaan naar middel**.
+1. Na bevestiging selecteert **ga naar middel**.
 
-![ Azure Opslag ](./images/azs5.png)
-
+       ![Azure Storage](./images/azs5.png)
+   
 Uw Azure-opslagaccount is nu klaar om te worden gebruikt.
 
-![ Azure Opslag ](./images/azs6.png)
+    ![Azure Storage](./images/azs6.png)
 
-Klik {de Opslag van 0} Gegevens **en ga dan naar** Containers **.** Klik op **+ Container** .
+1. Selecteer **Opslag van Gegevens**, en ga dan naar **Containers**. Selecteer **+ Container**.
 
-![ Azure Opslag ](./images/azs7.png)
+   ![ Azure Opslag ](./images/azs7.png)
 
-Gebruik `--aepUserLdap--` voor de naam. Klik **creëren**.
+1. Het gebruik `--aepUserLdap--` voor de naam en selecteert **creeert**.
 
-![ Azure Opslag ](./images/azs8.png)
+   ![ Azure Opslag ](./images/azs8.png)
 
-Uw container is nu klaar om te worden gebruikt.
+   Uw container is nu klaar om te worden gebruikt.
 
-![ Azure Opslag ](./images/azs9.png)
+   ![ Azure Opslag ](./images/azs9.png)
 
 ## 1.1.2.3 Azure Storage Explorer installeren
 
-U gebruikt Microsoft Azure Storage Explorer om uw bestanden te beheren. U kunt het via [ deze verbinding ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) downloaden {target="_blank"}. Selecteer de juiste versie voor uw specifieke besturingssysteem, download deze en installeer deze.
+1. [ Download Microsoft Azure de Ontdekkingsreiziger van de Opslag om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) {target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
-![ Azure Opslag ](./images/az10.png)
+   ![ Azure Opslag ](./images/az10.png)
 
-Open de toepassing nadat deze is geïnstalleerd. Je zult iets gelijkaardigs zien. Klik **Teken binnen met Azure**.
+1. Open de toepassing en selecteer **Teken binnen met Azure**.
 
-![ Azure Opslag ](./images/az11.png)
+   ![ Azure Opslag ](./images/az11.png)
 
-Klik **Abonnement**.
+1. Selecteer **Abonnement**.
 
-![ Azure Opslag ](./images/az12.png)
+   ![ Azure Opslag ](./images/az12.png)
 
-Selecteer **Azure** en klik **daarna**.
+1. Selecteer **Azure** en dan **daarna**.
 
-![ Azure Opslag ](./images/az13.png)
+   ![ Azure Opslag ](./images/az13.png)
 
-Selecteer uw Microsoft Azure-account en voltooi het verificatieproces.
+1. Selecteer uw Microsoft Azure-account en voltooi het verificatieproces.
 
-![ Azure Opslag ](./images/az14.png)
+   ![ Azure Opslag ](./images/az14.png)
 
-Zodra voor authentiek verklaard, zult u een bericht als dit zien.
+   Na de verificatie wordt dit bericht weergegeven.
 
-![ Azure Opslag ](./images/az15.png)
+   ![ Azure Opslag ](./images/az15.png)
 
-Ga terug naar de Microsoft Azure Storage Explorer-app. Selecteer uw abonnement en klik **Open Ontdekkingsreiziger**.
+1. Terug in Microsoft Azure de app van de Ontdekkingsreiziger van de Opslag, selecteer uw abonnement en kies **Open Ontdekkingsreiziger**.
 
 >[!NOTE]
 >
 >Als uw rekening niet wordt getoond, klik het **versnelling** pictogram naast uw e-mailadres en selecteer **niet-filter**.
 
-![ Azure Opslag ](./images/az16.png)
+    ![Azure Storage](./images/az16.png)
 
-U zult dan uw opslagrekening onder **Rekeningen van de Opslag** vinden.
+Uw opslagrekening verschijnt onder **Rekeningen van de Opslag**.
 
-![ Azure Opslag ](./images/az17.png)
+    ![Azure Storage](./images/az17.png)
 
-Open **Containers van de Klodder** en klik dan de container u in de vorige oefening creeerde.
+1. Open **Containers van de Klodder** en selecteer dan de container u in de vorige oefening creeerde.
 
-![ Azure Opslag ](./images/az18.png)
+   ![ Azure Opslag ](./images/az18.png)
 
-## 1.1.2.4 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlreferentie
+## Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlverwijzing
 
-U moet nu een afbeeldingsbestand naar keuze in uw container uploaden. U kunt om het even welk beelddossier van keus gebruiken, of u kunt [ dit dossier ](./images/gradient.jpg){target="_blank"} gebruiken door het uw computer te downloaden.
+1. Upload een beelddossier van uw keus of [ dit dossier ](./images/gradient.jpg){target="_blank"} in de container.
 
-![ Azure Opslag ](./images/gradient.jpg)
+   ![ Azure Opslag ](./images/gradient.jpg)
 
-Zet het afbeeldingsbestand neer in uw container in Azure Storage Explorer.
+   Na het uploaden kunt u het zien in uw container:
 
-Na het uploaden ziet u het in uw container:
+   ![ Azure Opslag ](./images/az19.png)
 
-![ Azure Opslag ](./images/az19.png)
+1. Klik op `gradient.jpg` met de rechtermuisknop aan en selecteer dan **krijgen de Gedeelde Handtekening van de Toegang**.
 
-Klik uw dossier `gradient.jpg` met de rechtermuisknop aan en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+   ![ Azure Opslag ](./images/az20.png)
 
-![ Azure Opslag ](./images/az20.png)
+1. Onder **Toestemmingen**, slechts **Gelezen** wordt vereist. Selecteer **creeer**.
 
-Onder **Toestemmingen**, slechts **Gelezen** wordt vereist. Klik **creëren**.
+   ![ Azure Opslag ](./images/az21.png)
 
-![ Azure Opslag ](./images/az21.png)
+1. Kopieer de vooraf ondertekende URL voor dit afbeeldingsbestand voor de volgende API-aanvraag naar de Firefly.
 
-Vervolgens ziet u de vooraf ondertekende URL voor dit afbeeldingsbestand. Kopieer het naar wens voor de volgende API-aanvraag naar de Firefly.
+   ![ Azure Opslag ](./images/az22.png)
 
-![ Azure Opslag ](./images/az22.png)
+1. De rug in Postman opent de verzoek **POST - Firefly - T2I (styleref) V3**.
+Dit verschijnt in **Lichaam**.
 
-Ga terug naar Postman. Open het verzoek **POST - Firefly - T2I (styleref) V3**. U zult dan dit in **Lichaam** zien.
+   ![ Azure Opslag ](./images/az23.png)
 
-![ Azure Opslag ](./images/az23.png)
+1. Vervang placeholder URL met presigned URL voor uw beelddossier en selecteer **verzend**.
 
-Vervang de tijdelijke aanduiding-URL door de vooraf ondertekende URL voor het afbeeldingsbestand die u hebt gekopieerd vanuit Azure Storage Explorer. Dan heb je dit. Klik **verzenden**.
+   ![ Azure Opslag ](./images/az24.png)
 
-![ Azure Opslag ](./images/az24.png)
+1. Open de nieuwe afbeelding van de Firefly Services response in uw browser.
 
-U zult dan een reactie van de Diensten van de Firefly opnieuw, met een nieuw beeld krijgen. Open het afbeeldingsbestand in uw browser.
+   ![ Azure Opslag ](./images/az25.png)
 
-![ Azure Opslag ](./images/az25.png)
+   Er wordt een andere afbeelding weergegeven bij `horses in a field` , maar deze keer lijkt de stijl op het afbeeldingsbestand dat u als stijlverwijzing hebt opgegeven.
 
-Vervolgens ziet u een andere afbeelding met `horses in a field` , maar deze keer lijkt de stijl op het afbeeldingsbestand dat u als stijlverwijzing hebt opgegeven.
+   ![ Azure Opslag ](./images/az26.png)
 
-![ Azure Opslag ](./images/az26.png)
+## Programmatische bestandsupload
 
-## 1.1.2.5 Programmatische bestandsupload
+Om programmatic dossierupload met de Rekeningen van de Opslag te gebruiken Azure, moet u een nieuw **Gedeelde handtekening van de Toegang (SAS)** met toestemmingen tot stand brengen die u toestaan om een dossier te schrijven.
 
-Om programmatic dossier te gebruiken uploadt met de Rekeningen van de Opslag Azure, zult u een nieuw **Gedeelde handtekening van de Toegang (SAS)** token, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te schrijven.
+1. In de Verkenner van de Opslag van Azure, klik uw container met de rechtermuisknop aan, en selecteer **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+   ![ Azure Opslag ](./images/az27.png)
 
-![ Azure Opslag ](./images/az27.png)
+1. Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
-Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
+   - **Gelezen**
+   - **voeg toe**
+   - **creeer**
+   - **schrijf**
+   - **Lijst**
 
-- **Gelezen**
-- **voeg toe**
-- **creeer**
-- **schrijf**
-- **Lijst**
+1. Selecteer **creeer**.
 
-Klik **creëren**.
+   ![ Azure Opslag ](./images/az28.png)
 
-![ Azure Opslag ](./images/az28.png)
+1. Na het ontvangen van uw **SAS-teken**, uitgezochte **Exemplaar**.
 
-U zult dan uw **SAS-teken** krijgen. Klik **Exemplaar**.
+   ![ Azure Opslag ](./images/az29.png)
 
-![ Azure Opslag ](./images/az29.png)
+   Gebruik **SAS-teken** om een dossier in uw Azure Rekening van de Opslag te uploaden.
 
-U kunt dit **SAS-teken** nu gebruiken om een dossier in uw Azure Rekening van de Opslag te uploaden. Ga terug naar Postman om dat te doen.
+1. Terug in Postman, selecteer de omslag **FF - Firefly van de Diensten de Technologische Instanties van de Diensten**, dan uitgezocht **..** op de **Firefly** omslag, en selecteer dan **verzoek** toevoegen.
 
-Klik om de omslag **te selecteren FF - de Technologische Instanties van de Diensten van de Firefly**, dan klik de 3 punten **..** op de omslag **Firefly** en klik dan **verzoek** toevoegen.
+   ![ Azure Opslag ](./images/az30.png)
 
-![ Azure Opslag ](./images/az30.png)
+1. Verander de naam van het lege verzoek aan **uploadt dossier aan de Rekening van de Opslag Azure**, verander het **Type van Verzoek** in **PUT** en kleef SAS-token URL in de sectie URL, dan uitgezochte **Lichaam**.
 
-U hebt dan een leeg verzoek. Verander de naam van het verzoek aan **uploadt dossier aan de Rekening van de opslag Azure**, verander het **Type van Verzoek** in **PUT** en kleef SAS-token URL in de sectie URL.
+   ![ Azure Opslag ](./images/az31.png)
 
-Dan, klik **Lichaam**.
+1. Daarna, selecteer een dossier van uw lokale machine of gebruik een ander beelddossier dat [ hier ](./images/gradient2-p.jpg){target="_blank"} wordt gevestigd.
 
-![ Azure Opslag ](./images/az31.png)
+   ![ dossier van de Gradiënt ](./images/gradient2-p.jpg)
 
-U moet nu een bestand op uw lokale computer selecteren. U kunt een nieuw beelddossier van keus gebruiken, of u kunt een ander beelddossier gebruiken dat u [ hier ](./images/gradient2-p.jpg){target="_blank"} kunt vinden.
+1. In **Lichaam**, selecteer **binair** toen **Uitgezochte dossier**, dan uitgezocht **+ Nieuw dossier van lokale machine**.
 
-![ dossier van de Gradiënt ](./images/gradient2-p.jpg)
+   ![ Azure Opslag ](./images/az32.png)
 
-In **Lichaam**, selecteer **binair** en klik dan **Uitgezochte dossier**, dan klik **+ Nieuw dossier van lokale machine**.
+1. Selecteer uw dossier van keus en selecteer **Open**.
 
-![ Azure Opslag ](./images/az32.png)
+   ![ Azure Opslag ](./images/az33.png)
 
-Selecteer uw dossier van keus en klik **Open**.
+1. Geef vervolgens de bestandsnaam op die in uw Azure Storage Account moet worden gebruikt door de cursor vóór het vraagteken **te plaatsen?** in de URL als volgt:
 
-![ Azure Opslag ](./images/az33.png)
+   ![ Azure Opslag ](./images/az34.png)
 
-Dan zie je dit. Het volgende dat u moet doen, is het opgeven van de bestandsnaam die wordt gebruikt in uw Azure Storage Account. Om dat te doen, moet u uw cursos voor het vraagteken plaatsen **?** in de URL. U kunt dit hier op dit moment zien:
+   De URL ziet er momenteel als volgt uit, maar moet worden gewijzigd.
 
-![ Azure Opslag ](./images/az34.png)
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
 
-De URL ziet er momenteel als volgt uit, maar moet worden gewijzigd.
+1. Wijzig de bestandsnaam in `gradient2-p.jpg` en wijzig de URL zo en voeg de bestandsnaam als volgt toe:
 
-`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
+   `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-De te gebruiken bestandsnaam is `gradient2-p.jpg` . Dat betekent dat de URL moet worden gewijzigd om de bestandsnaam op te nemen, zoals in het volgende voorbeeld:
+   ![ Azure Opslag ](./images/az34a.png)
 
-`https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
+1. Daarna, ga aan **Kopballen** om een nieuwe kopbal manueel als dit toe te voegen:
 
-![ Azure Opslag ](./images/az34a.png)
+   | Sleutel | Waarde |
+   |:-------------:| :---------------:| 
+   | `x-ms-blob-type` | `BlockBlob` |
 
-Daarna, ga naar **Kopballen** waar u een nieuwe kopbal moet manueel toevoegen. Gebruik deze:
 
-| Sleutel | Waarde |
-|:-------------:| :---------------:| 
-| `x-ms-blob-type` | `BlockBlob` |
+   ![ Azure Opslag ](./images/az35.png)
 
+1. Ga naar **Vergunning** en plaats het **Type van Auth** aan **Geen Auth**, en selecteer **verzenden**.
 
-![ Azure Opslag ](./images/az35.png)
+   ![ Azure Opslag ](./images/az36.png)
 
-Ga naar **Vergunning** en plaats het **Type van Auth** aan **Geen Auth**. Klik **verzenden**.
+1. Vervolgens wordt deze lege reactie weergegeven in Postman, wat betekent dat het uploaden van het bestand is voltooid.
 
-![ Azure Opslag ](./images/az36.png)
+   ![ Azure Opslag ](./images/az37.png)
 
-Deze lege reactie wordt dan weergegeven in Postman, wat betekent dat het uploaden van het bestand goed is gegaan.
+1. In Azure Storage Explorer vernieuwt u de inhoud van uw map en wordt het nieuwe geüploade bestand weergegeven.
 
-![ Azure Opslag ](./images/az37.png)
+   ![ Azure Opslag ](./images/az38.png)
 
-Als u vervolgens teruggaat naar Azure Storage Explorer en de inhoud van uw map vernieuwt, vindt u nu het zojuist geüploade bestand.
+## Gebruik van programmatische bestanden
 
-![ Azure Opslag ](./images/az38.png)
-
-## 1.1.2.6 Programmatisch bestandsgebruik
-
-Om programmatically te gebruiken lees dossiers van de Rekeningen van de Opslag van Azure op de lange termijn, zult u een nieuw **Gedeelde teken van de Toegang (SAS)**, met toestemmingen moeten tot stand brengen die u toestaan om een dossier te lezen. U kon SAS-teken technisch gebruiken u in de vorige oefening creeerde, maar het is beste praktijken om een afzonderlijk teken met slechts **te hebben gelezen** toestemmingen en afzonderlijk teken met slechts **schrijft** toestemmingen.
+Om dossiers van de Rekeningen van de Opslag van Azure op lange termijn programmatically te lezen, moet u een nieuw **Gedeelde handtekening van de Toegang (SAS)** teken, met toestemmingen tot stand brengen die u toestaan om een dossier te lezen. Technisch kon u het SAS-teken gebruiken dat in de vorige oefening wordt gecreeerd, maar het is beste praktijken om een afzonderlijk teken met slechts **te hebben gelezen** toestemmingen en afzonderlijk teken met slechts **schrijft** toestemmingen.
 
 ### Leesbaar SAS-token op lange termijn
 
-Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+1. Ga terug naar Azure de Ontdekkingsreiziger van de Opslag, klik uw container met de rechtermuisknop aan en selecteer dan **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-![ Azure Opslag ](./images/az27.png)
+   ![ Azure Opslag ](./images/az27.png)
 
-Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
+1. Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
-- **Gelezen**
-- **Lijst**
+   - **Gelezen**
+   - **Lijst**
 
-Plaats de **Vervaltijd** aan 1 jaar van nu.
+1. Plaats **Vervaltijd** aan 1 jaar van nu.
 
-Klik **creëren**.
+1. Selecteer **creeer**.
 
-![ Azure Opslag ](./images/az100.png)
+   ![ Azure Opslag ](./images/az100.png)
 
-Vervolgens krijgt u uw SAS-token voor de lange termijn met leesrechten. Kopieer de URL en noteer deze in een bestand op uw computer.
+1. Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token voor de lange termijn met leesmachtigingen op te halen.
 
-![ Azure Opslag ](./images/az101.png)
+   ![ Azure Opslag ](./images/az101.png)
 
-Uw URL ziet er als volgt uit:
+   Uw URL moet er als volgt uitzien:
 
-`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 
-U kunt enkele waarden afleiden van de bovenstaande URL:
+   U kunt enkele waarden afleiden van de bovenstaande URL:
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+   - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+   - `AZURE_STORAGE_CONTAINER`: `vangeluw`
+   - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 
 ### SAS-token voor schrijven op lange termijn
 
-Ga hiervoor terug naar Azure Storage Explorer. Klik uw container met de rechtermuisknop aan, en klik dan **krijgen de Gedeelde Handtekening van de Toegang**.
+1. Ga terug naar Azure de Ontdekkingsreiziger van de Opslag, klik uw container met de rechtermuisknop aan en selecteer **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-![ Azure Opslag ](./images/az27.png)
+   ![ Azure Opslag ](./images/az27.png)
 
-Onder **Toestemmingen**, worden de volgende toestemmingen vereist:
+1. Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
-- **voeg toe**
-- **creeer**
-- **schrijf**
+   - **voeg toe**
+   - **creeer**
+   - **schrijf**
 
-Plaats de **Vervaltijd** aan 1 jaar van nu.
+1. Plaats de **Vervaltijd** aan 1 jaar van nu.
 
-Klik **creëren**.
+1. Selecteer **creeer**.
 
-![ Azure Opslag ](./images/az102.png)
+   ![ Azure Opslag ](./images/az102.png)
 
-Vervolgens krijgt u uw SAS-token voor de lange termijn met leesrechten. Kopieer de URL en noteer deze in een bestand op uw computer.
+1. Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token voor de lange termijn met leesmachtigingen op te halen.
 
-![ Azure Opslag ](./images/az103.png)
+   ![ Azure Opslag ](./images/az103.png)
 
-Uw URL ziet er als volgt uit:
+   Uw URL moet er als volgt uitzien:
 
-`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-U kunt opnieuw een paar waarden van bovengenoemde URL afleiden:
+U kunt enkele waarden afleiden van de bovenstaande URL:
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+     - ` AZURE_STORAGE_URL `: https://vangeluw.blob.core.windows.net ` 
+     - ` AZURE_STORAGE_CONTAINER `: vangeluw ` 
+     - ` AZURE_STORAGE_SAS_READ `?sv=2023-01-03&amp;st=2025-01-13D T07%3A36%3A35Z&amp;se=2026-01-14T07%3A36%3A00Z&amp;sr=c&amp;sp=rl&amp;sig=4r%2FcSJLlt%2BSt9HdFdN zWURxRK6UqhB8TEvbWkmAag%3D`
+     - ` AZURE_STORAGE_SAS_WRITE`?sv=2023-01-03&amp;st=2025-01-13T07%3A38%3A59Z&amp;sr=c&amp;sp=acw&amp;sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEEx AdOCOCUdMk%3D`
 
 ### Variabelen in Postman
 
 Zoals u in de bovengenoemde sectie kunt zien, zijn er sommige gemeenschappelijke variabelen in zowel Gelezen als het Schrijven teken.
 
-Nu moet u in Postman variabelen maken waarin de verschillende elementen van de bovenstaande SAS-tokens worden opgeslagen.
-Er zijn enkele waarden die hetzelfde zijn in beide URL&#39;s:
+Vervolgens moet u in Postman variabelen maken die de verschillende elementen van de bovenstaande SAS-tokens opslaan. Er zijn enkele waarden die hetzelfde zijn in beide URL&#39;s:
 
 - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
 - `AZURE_STORAGE_CONTAINER`: `vangeluw`
 - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-Voor toekomstige API-interacties is de naam van het element het belangrijkste wat wordt gewijzigd, terwijl de bovenstaande variabelen ongewijzigd blijven. In dat geval is het handig om variabelen te maken in Postman, zodat u ze niet telkens handmatig hoeft op te geven.
+Voor toekomstige API-interacties is de elementnaam het belangrijkste wat verandert, terwijl de bovenstaande variabelen ongewijzigd blijven. In dat geval is het verstandig om variabelen te maken in Postman, zodat u ze niet telkens handmatig hoeft op te geven.
 
-Open Postman om dit te doen. Klik het **pictogram van Milieu**, open het **Alle variabelen** menu en klik **Milieu**.
+1. In Postman, uitgezochte **Milieu**, open **Alle variabelen** en selecteer **Milieu**.
 
-![ Azure Opslag ](./images/az104.png)
+   ![ Azure Opslag ](./images/az104.png)
 
-Dan zie je dit. Creeer deze 4 variabelen in de lijst die wordt getoond en voor de kolommen **Aanvankelijke waarde** en **Huidige waarde**, ga uw specifieke persoonlijke waarden in.
+1. Creeer deze 4 variabelen in de lijst die wordt getoond en voor de kolommen **Aanvankelijke waarde** en **Huidige waarde**, ga uw specifieke persoonlijke waarden in.
 
-- `AZURE_STORAGE_URL`: uw URL
-- `AZURE_STORAGE_CONTAINER`: de naam van uw container
-- `AZURE_STORAGE_SAS_READ`: uw SAS-leestoken
-- `AZURE_STORAGE_SAS_WRITE`: uw SAS-schrijftoken
+   - `AZURE_STORAGE_URL`: uw URL
+   - `AZURE_STORAGE_CONTAINER`: de naam van uw container
+   - `AZURE_STORAGE_SAS_READ`: uw SAS-leestoken
+   - `AZURE_STORAGE_SAS_WRITE`: uw SAS-schrijftoken
 
-Klik **sparen**.
+1. Selecteer **sparen**.
 
-![ Azure Opslag ](./images/az105.png)
+   ![ Azure Opslag ](./images/az105.png)
 
-In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly - T2I (styleref) V3** als dit:
+   In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly - T2I (styleref) V3** als dit:
 
-`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-![ Azure Opslag ](./images/az24.png)
+   ![ Azure Opslag ](./images/az24.png)
 
-U kunt de URL nu wijzigen in:
+1. Wijzig de URL in:
 
-`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+   `"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
 
-Klik **verzenden** om de veranderingen te testen u aanbracht.
+1. Selecteer **verzenden** om de veranderingen te testen u aanbracht.
 
-![ Azure Opslag ](./images/az106.png)
+   ![ Azure Opslag ](./images/az106.png)
 
-Als de variabelen op een correcte manier werden gevormd, zult u een beeld URL zien die wordt teruggekeerd.
+   Als de variabelen correct zijn geconfigureerd, wordt een beeld-URL geretourneerd.
 
-![ Azure Opslag ](./images/az107.png)
+   ![ Azure Opslag ](./images/az107.png)
 
-Open de URL van de afbeelding om uw afbeelding te controleren.
+1. Open de URL van de afbeelding om uw afbeelding te controleren.
 
-![ Azure Opslag ](./images/az108.jpg)
+   ![ Azure Opslag ](./images/az108.jpg)
 
-Volgende Stap: [ 1.1.3 Adobe Firefly &amp; Adobe Photoshop ](./ex3.md){target="_blank"}
+## Volgende stappen
 
-[ ga terug naar Module 1.1 ](./firefly-services.md){target="_blank"}
+Ga naar [ Adobe Firefly &amp; Adobe Photoshop APIs ](./ex3.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [ Overzicht van de Diensten van de Adobe Firefly ](./firefly-services.md){target="_blank"}
+
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
