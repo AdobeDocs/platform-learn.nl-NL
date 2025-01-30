@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Adobe Analytics migreren naar Web SDK met tags
 
 Leer de stappen om een implementatie van Adobe Analytics te migreren gebruikend de uitbreiding van Analytics in de Markeringen van het Experience Platform (vroeger die als Lancering wordt bekend) aan Web SDK, die de uitbreiding van SDK van het Web ook in Markeringen gebruikt. Wanneer de extensie Adobe Analytics in Tags wordt gebruikt, wordt achter de schermen de code &quot;AppMeasurement.js&quot; gebruikt. Daarom kunt u aan dit als een leerprogramma denken dat AppMeasurement aan het Web SDK migreert, maar dit leerprogramma is volledig in Markeringen en behandelt NIET het bewegen van naar of van een implementatie van JavaScript (met uitzondering van de code van JavaScript die binnen de Codes UI wordt gebruikt). Voor migratie van de implementaties van JavaScript, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Soortgelijke migratiezelfstudies zijn beschikbaar voor:
+>
+> * [ Adobe Target ](../tutorial-migrate-target-websdk/introduction.md)
+> * [ Adobe Audience Manager ](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Omdat het Web SDK van het Platform veelvoudige Adobe toepassingen steunt, zouden alle bibliotheken van de Adobe op een bepaalde pagina tezelfdertijd moeten worden gemigreerd. Bijvoorbeeld, wordt een gemengde implementatie van Web SDK voor Doel en AppMeasurement voor Analytics op één enkele pagina _niet gesteund_. Nochtans, wordt een gemengde implementatie over verschillende pagina&#39;s gesteund, bijvoorbeeld Web SDK op pagina A, en at.js met AppMeasurement op pagina B.
 
 ## Wat u uit deze zelfstudie krijgt
 

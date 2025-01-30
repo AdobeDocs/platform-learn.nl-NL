@@ -3,9 +3,9 @@ title: Tutorials voor gegevensverzameling
 description: Hoe kan ik-video's en zelfstudies om u een krachtige gebruiker te maken van Gegevensverzameling
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '234'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,50 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
 
 <div id="staff-picks-section">
 
-## Personeelsselectie
+## Migratiehulplijnen
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Doel migreren naar Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong> Migreer Adobe Target aan Web SDK </strong>
+    </a>
+    </div>
+    <p>
+    <em> vervangt bij.js met Web SDK </em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="Adobe Experience Cloud implementeren met Web SDK" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong> Migreer Adobe Analytics aan Web SDK in markeringen </strong>
+    </a>
+    </div>
+    <p>
+    <em> vervangt AppMeasurement.js met Web SDK met markeringen </em>
+    <p>
+  </td>
+  <td>
+      <img alt="Doel migreren naar Web SDK" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong> Migreer Adobe Audience Manager aan Web SDK </strong>
+    </div>
+    <p>
+    <em> vervang <a href="https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank"> dil.js </a> of <a href="https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank"> updateserverkant door:sturen </a> </em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Implementatiehulplijnen
 
 <table>
 <tr>
@@ -33,7 +76,7 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong> voer het Experience Cloud met Web SDK uit </strong>
+    <strong> voer het Experience Cloud met Web SDK </strong> uit
     </a>
     </div>
     <p>
@@ -55,15 +98,15 @@ Gegevensverzameling is de volgende generatie van websitetags en mobiele SDK-behe
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Doel migreren naar SDK van web" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="Doel migreren naar Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong> Migreer Adobe Target aan Web SDK </strong>
+    <strong> voer erfenisbibliotheken met markeringen </strong> uit
     </a>
     </div>
     <p>
-    <em> Migreer van at.js aan Web SDK </em>
+    <em> de markeringen van het Gebruik om erfenisAnalytics, Doel, en de bibliotheken van de Audience Manager uit te voeren </em>
     <p>
   </td>
 </tr>
