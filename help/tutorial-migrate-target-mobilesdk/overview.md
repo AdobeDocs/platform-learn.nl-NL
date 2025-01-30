@@ -3,18 +3,18 @@ title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele ex
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 
-Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande implementaties van het Platform voor Adobe-ervaring voor mobiele SDK kunt migreren van de Adobe Target-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
+Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande implementaties van het Adobe Target Experience Platform voor mobiele SDK kunt migreren van de Adobe-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
 
-De Adobe Experience Platform Mobile SDK maakt volledige betrokkenheid mogelijk in uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen de app-ervaringen met Adobe Target aan te passen. De extensie Decisioning is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die Target helpen integreren met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
+Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen uw app-ervaringen met Adobe Target aan te passen. De extensie Decisioning is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die Target helpen integreren met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
 
 ## Belangrijkste voordelen
 
@@ -25,7 +25,7 @@ Enkele voordelen van de uitbreiding van het Besluit omvatten:
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
-Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. De SDK van het Web van het platform is een vereiste om deze eigenschappen van Real-Time CDP in uw Webkanaal te gebruiken.
+Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. Platform Mobile SDK en de extensie Decisioning zijn een vereiste om deze Real-Time CDP-functies in uw mobiele kanaal te kunnen gebruiken.
 
 ## Leerdoelstellingen
 
