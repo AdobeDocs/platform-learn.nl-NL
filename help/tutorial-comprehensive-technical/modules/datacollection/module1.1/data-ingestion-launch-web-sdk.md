@@ -4,16 +4,18 @@ description: Stichting - Opstelling van de Gegevensinzameling van Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# 1.1 Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de uitbreiding van SDK van het Web
+# 1.1 Stichting - Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de de marktextensie van SDK van het Web
 
-Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe en verklaart hoe te om gegevens van een website en mobiele toepassing in Adobe Experience Platform en andere toepassingen via de Inzameling van Gegevens van Adobe Experience Platform, de SDKs van Adobe Experience Platform en de Edge Network van Adobe Experience Platform te krijgen. Deze module introduceert enkele concepten en technologieën die een impact hebben buiten het bereik van een technische zelfstudie van Adobe Experience Platform. Het moet duidelijk zijn welke delen van deze oefeningen de basis vormen voor de rest van de uitgebreide zelfstudie, die u meer leert over de ervaring van Edge en zijn mogelijkheden, en waar u verder gaat voor informatie en zelfstudies.
+Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe en verklaart hoe te om gegevens van een website en mobiele toepassing in Adobe Experience Platform en andere toepassingen via de Inzameling van Gegevens van Adobe Experience Platform, de SDKs van Adobe Experience Platform en de Edge Network van Adobe Experience Platform te krijgen.
+
+Deze module introduceert enkele concepten en technologieën die een impact hebben buiten het bereik van een technische zelfstudie van Adobe Experience Platform. Het moet duidelijk zijn welke delen van deze oefeningen aan de rest van de uitvoerige zelfstudie, die u meer over de Edge Network en zijn mogelijkheden leert, en waar te om verdere informatie en leerprogramma&#39;s te gaan.
 
 ## Leerdoelen
 
@@ -21,9 +23,9 @@ Deze grondmodule introduceert u aan de visie van de gegevensinzameling van Adobe
 - Leer de gegevensstromen die door een merk worden gebruikt om gegevens aan hun producten van de Adobe in te voeren.
 - Leer hoe u gegevens naar de Adobe Experience Platform en andere producten kunt verzenden via de Adobe Experience Platform Edge Network.
 - Leer hoe u gegevenselementen en regels maakt die gegevens verzamelen van internet en mobiele apparatuur.
-- Leer over het Web SDK die gebeurtenissen volgen en hoe te om hun inhoud te zuiveren.
+- Leer over het [ Web SDK ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) volgende gebeurtenissen en hoe te om hun inhoud te zuiveren.
 - Leer wat een gegevenslaag is en welke Adobe adviseert wanneer het uitvoeren van één.
-- Leer wat de stappen zijn Web SDK van kras uit te voeren.
+- Leer wat de stappen [ SDK van het Web ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) van kras moeten uitvoeren.
 - Leer het verschil tussen een web- en mobiele implementatie.
 
 ## Vereisten
@@ -60,11 +62,11 @@ In deze oefening, zie en gebruik Webgegevens die met het Web SDK in Adobe Analyt
 
 [1.1.6 Adobe Target implementeren](./ex6.md)
 
-In deze oefening, opstelling een activiteit in Adobe Target, die via het Web SDK wordt uitgevoerd.
+Stel in deze oefening een activiteit in Adobe Target in, geïmplementeerd via de Web SDK.
 
 [1.1.7 XDM-schemavereisten in Adobe Experience Platform](./ex7.md)
 
-Om ervoor te zorgen dat Web SDK en alloy.js gegevens kunnen invoeren in Adobe Experience Platform, is er een vereiste dat een specifieke XDM Mixin deel moet uitmaken van het XDM-schema in Adobe Experience Platform.
+Om ervoor te zorgen dat de SDK van het Web gegevens in Adobe Experience Platform kan opnemen, is er een vereiste voor een specifieke mix XDM om deel uit te maken van het XDM-schema in Adobe Experience Platform.
 
 [Samenvatting en voordelen](./summary.md)
 

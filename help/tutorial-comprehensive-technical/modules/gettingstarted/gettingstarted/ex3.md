@@ -1,12 +1,12 @@
 ---
-title: Aan de slag - Maak uw DataStream
-description: Aan de slag - Maak uw DataStream
+title: Aan de slag - Maak uw gegevensstroom
+description: Aan de slag - Maak uw gegevensstroom
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Deze eigenschappen zijn bijna klaar om te worden gebruikt, maar alvorens u gegev
 
 Voer voorlopig deze stappen uit.
 
-## Maak uw gegevensstroom voor het web
+## Uw gegevensstroom maken voor webgegevensverzameling
 
 Klik op **[!UICONTROL Datastreams]**.
 
@@ -101,7 +101,7 @@ Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17a.png)
 
-## Maak uw gegevensstroom voor mobiele apparaten
+## Uw gegevensstroom maken voor mobiele gegevensverzameling
 
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
 

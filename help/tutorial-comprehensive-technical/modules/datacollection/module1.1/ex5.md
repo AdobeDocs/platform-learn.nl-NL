@@ -4,7 +4,7 @@ description: Foundation - Setup van Adobe Experience Platform Data Collection en
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,11 +19,11 @@ U weet nu dat XDM-gegevens naar een platform stromen. U zult meer over onderzoek
 
 ## Variabelen toewijzen in Analytics
 
-Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via de Web SDK zo snel mogelijk plaatsvindt. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+De Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via het Web SDK zo snel mogelijk wordt uitgevoerd. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
 Voor XDM gegevens die niet automatisch aan Adobe Analytics in kaart worden gebracht, kunt u [ contextgegevens ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=nl) gebruiken om uw [ schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) aan te passen. Dan kan het in Analytics worden in kaart gebracht gebruikend [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) om de variabelen van de Analyse te bevolken. De Regels van de Gegevens van de context en van de Verwerking zullen concepten vertrouwd aan die zijn geweest met Analytics in het verleden, maar maak zich geen zorgen over de details voor nu als zij nieuwe concepten zijn.
 
-U kunt een standaardreeks acties en productlijsten ook gebruiken om gegevens met het Web SDK van AEP te verzenden of terug te winnen. Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+U kunt ook een standaardset handelingen en productlijsten gebruiken om gegevens te verzenden of op te halen met AEP Web SDK. Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
 
 ### Contextgegevens
 
@@ -62,7 +62,7 @@ Server-kant door:sturen is geen nieuw concept voor Audience Manager, en het zelf
 
 ## Controleer uw gegevensstroom om gegevens naar Adobe Analytics te verzenden
 
-Voor het geval u gegevens wilt verzenden die door Web SDK aan Adobe Analytics en Adobe Audience Manager worden verzameld, volg deze stappen.
+Voer de volgende stappen uit als u gegevens die door Web SDK zijn verzameld, wilt verzenden naar Adobe Analytics en Adobe Audience Manager.
 
 Ga naar [ https://experience.adobe.com/launch/ ](https://experience.adobe.com/launch/) en ga naar **Datastreams**.
 
@@ -70,7 +70,7 @@ Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--a
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
-Dan zie je dit. Om Adobe Analytics toe te laten, klik **+ voeg de Dienst** toe.
+Dan zie je dit. Om Adobe Analytics toe te laten, klik **de Dienst** toevoegen.
 
 ![ Debugger AEP ](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Dan zie je dit. Selecteer de dienst **Adobe Analytics**, waarna u de rapportreek
 
 ## Controleer uw gegevensstroom om gegevens naar Adobe Audience Manager te verzenden
 
-Dan zie je dit. Om Adobe Audience Manager toe te laten, klik **+ voeg de Dienst** toe.
+Dan zie je dit. Om Adobe Audience Manager toe te laten, klik **de Dienst** toevoegen.
 
 ![ Debugger AEP ](./images/aa2.png)
 

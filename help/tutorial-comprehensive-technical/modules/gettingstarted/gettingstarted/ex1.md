@@ -4,9 +4,9 @@ description: Aan de slag - Installeer de Chrome-extensie voor de documentatie va
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Voer de waarden in zoals hieronder aangegeven. Deze zijn allemaal gerelateerd aa
 
 Als u niet zeker weet welke waarden u voor deze velden moet invoeren, volgt u de onderstaande aanwijzingen.
 
-**AEP IMS Org Name**
+**Adobe Experience Platform IMS Org Name**
 
 Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u de naam van uw instantie in de hoogste juiste hoek van uw scherm vinden.
 
 ![ DSN ](./images/aepname.png)
 
-**AEP IMS Org ID**
+**Adobe Experience Platform IMS Org ID**
 
 De IMS-organisatie-id is de unieke id voor uw Adobe Experience Cloud-instantie en er wordt in deze zelfstudie naar verwezen op meerdere locaties.
 
@@ -88,29 +88,29 @@ U kunt het vinden door naar [ Admin Console ](https://adminconsole.adobe.com/) t
 
 ![ DSN ](./images/aepid1.png)
 
-U kunt het ook vinden door naar **het Beheer van Gegevens > Vragen** in uw menu van AEP te gaan, waar u het onder **Gebruikersnaam** kunt vinden.
+U kunt het ook vinden door **het Beheer van Gegevens > Vragen** in uw menu van Adobe Experience Platform te gaan, waar u het onder **Gebruikersnaam** kunt vinden.
 
 ![ DSN ](./images/aepid2.png)
 
 Kopieer en plak het **@AdobeOrg** -onderdeel samen met de id.
 
-**identiteitskaart van de HUIDIGE VAN AEP**
+**identiteitskaart van de HTENT van Adobe Experience Platform**
 
-Uw huurnummer is de unieke id voor de AEP-instantie van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+Uw Tenant-id is de unieke id voor het Adobe Experience Platform-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
 ![ DSN ](./images/aeptenantid.png)
 
 Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen dat een onderstrepingsteken als prefix wordt toegevoegd, zodat in dit voorbeeld **ervaringsplatform** **_experiencePlatform** wordt. Ook, zorg ervoor om het **@** symbool te verwijderen wanneer het kopiëren van URL.
 
-**AEP Sandbox Naam**
+**Naam van zandbak van Adobe Experience Platform**
 
-De naam van de sandbox is de naam van de omgeving die u in uw AEP-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+De naam van de sandbox is de naam van de omgeving die u in uw Adobe Experience Platform-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
 Voordat u de naam van de sandbox opgeeft van de URL, moet u ervoor zorgen dat u zich in de sandbox bevindt die u voor deze zelfstudie moet gebruiken. U kunt naar de rechtersandbox schakelen door op het menu met sandboxswitches in de rechterbovenhoek van het scherm te klikken.
 
 ![ DSN ](./images/aepsandboxsw.png)
 
-In dit voorbeeld, is de Naam van de zandbak AEP **technologie-insiders**.
+In dit voorbeeld, is de Naam van de zandbak van Adobe Experience Platform **technologie-insiders**.
 
 ![ DSN ](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
-U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de omgevingsvariabele `aepTenantId` door uw echte identiteitskaart van de Huurder van AEP is vervangen, die in dit geval **_experiencePlatform** is.
+U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de omgevingsvariabele `aepTenantId` door uw echte identiteitskaart van de Huurder van Adobe Experience Platform is vervangen, die in dit geval **_experiencePlatform** is.
 
 ![ DSN ](./images/mod7.png)
 

@@ -4,7 +4,7 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -20,16 +20,16 @@ De Inzameling van Gegevens van Adobe Experience Platform wordt gebruikt door mer
 - Implementeer Adobe Experience Cloud-toepassingen en Adobe Experience Platform.
 - Beheer de verschillende vereisten van verschillende delen van de organisatie door elk van hun eigen **Bezit** te voorzien om te leiden.
 - Testen en levenscyclusbeheer toestaan.
-- Injecteer aangepaste javascript- en tags van derden, die allemaal op één plaats worden beheerd.
+- Injecteer aangepaste JavaScript en tags van derden, allemaal op één plaats beheerd.
 
 ## De gebruikersinterface verkennen
 
 Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/#/data-collection/).
 
-Ga naar **Markeringen**. U ziet nu de weergave **[!UICONTROL Properties]** . De eigenschappen die hier worden vermeld zijn voor zelfstudiemanagement. Deze eigenschappen vertegenwoordigen...
+Ga naar **Markeringen**. U ziet nu de weergave **[!UICONTROL Properties]** . De eigenschappen die hier worden vermeld zijn voor zelfstudiemanagement. Deze eigenschappen vertegenwoordigen:
 
 - Toepassings- en webinigenschappen
-- Verschillende websites die klanten op verschillende manieren bedienen. Luma Retail zou bijvoorbeeld één eigenschap hebben, Luma Travel zou een andere eigenschap hebben
+- Verschillende websites die klanten op verschillende manieren bedienen. Luma Retail zou bijvoorbeeld één eigenschap hebben, Luma Travel een andere.
 - Oudere en huidige websites
 - Een specifiek Adobe Analytics-ontwerp dat door meerdere verschillende websites wordt gebruikt
 - Interne intranetpagina&#39;s naast externe sites
@@ -56,7 +56,7 @@ Adobe Experience Platform Data Collection is een zeer geavanceerd hulpmiddel dat
 Hieronder vindt u wat meer lezingen voor degenen die geïnteresseerd zijn in het begrijpen van Adobe Experience Platform-gegevensverzameling.
 
 - [ Gids van de Gebruiker van de Verzameling van Gegevens van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)
-- [ voert Adobe Experience Cloud met het leerprogramma van SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
+- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
 - [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [ API documentatie ](https://developer.adobelaunch.com/api/)
 

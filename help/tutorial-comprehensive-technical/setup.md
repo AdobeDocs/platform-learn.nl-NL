@@ -1,16 +1,17 @@
 ---
 title: Instellen
-description: AEP-instantie instellen
+description: Adobe Experience Platform-instantie instellen
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
-# Instellen
+# Adobe Experience Platform-instantie instellen
 
 >[!IMPORTANT]
 >
@@ -29,9 +30,9 @@ Als u al deze zelfstudies in handen wilt hebben, dient u de volgende Adobe Exper
 
 Als een specifieke toepassingsservice niet is ingericht voor uw IMS-organisatie, kunt u die specifieke oefening niet in de praktijk uitvoeren.
 
-## Sandbox maken
+## Een sandbox maken
 
-Als u de zelfstudie wilt doorlopen in uw eigen AEP-instantie, is het raadzaam eerst een nieuwe ontwikkelingssandbox in te stellen. Om een nieuwe zandbak tot stand te brengen, ga [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), ga naar Sandboxes en ga dan naar **doorbladeren**. Klik **creeer zandbak**.
+Als u de zelfstudie wilt doorlopen in uw eigen Adobe Experience Platform-instantie, is het raadzaam eerst een nieuwe ontwikkelingssandbox in te stellen. Om een nieuwe zandbak tot stand te brengen, ga [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), ga naar Sandboxes en ga dan naar **doorbladeren**. Klik **creeer zandbak**.
 
 ![ creeer zandbak ](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ Maak uw zandbak als volgt:
 
 - Type: **Ontwikkeling**
 - Naam: **aep-tutorial**
-- Titel: **AEP Leerprogramma**
+- Titel: **Zelfstudie van Adobe Experience Platform**
 
 Klik **creëren**.
 
@@ -57,7 +58,7 @@ Klik om de specifieke **Rol** te openen die door de studenten zal worden gebruik
 
 ![ creeer zandbak ](./assets/images/perm1.png)
 
-Geef uw rol een naam als **Leerprogramma AEP**, klik **bevestigen**.
+Geef uw rol een naam als **Zelfstudie van Adobe Experience Platform**, klik **bevestigen**.
 
 ![ creeer zandbak ](./assets/images/perm2.png)
 
@@ -84,7 +85,7 @@ Ga naar
 
 ![ creeer zandbak ](./assets/images/io1.png)
 
-Klik **+ toevoegen aan Project** en klik dan **API**.
+Klik **toevoegen aan Project** en klik dan **API**.
 
 ![ creeer zandbak ](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ Selecteer een van de beschikbare productprofielen. Dit productprofiel bepaalt ge
 
 ![ creeer zandbak ](./assets/images/io5.png)
 
-Klik **+ toevoegen aan Project** en klik dan **API** opnieuw.
+Klik **toevoegen aan Project** en klik dan **API** opnieuw.
 
 ![ creeer zandbak ](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ Klik **uitgeven Project**.
 
 ![ creeer zandbak ](./assets/images/io11.png)
 
-Ga een nieuwe **Titel van het Project**, zoals **DSN AEP Leerprogramma** in. Klik **sparen**.
+Ga een nieuwe **Titel van het Project** in, zoals **het Leerprogramma van DSN Adobe Experience Platform**. Klik **sparen**.
 
 ![ creeer zandbak ](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ U zult dan de vooruitgang van de aan de gang zijnde installatie zien, die een pa
 
 ![ creeer zandbak ](./assets/images/dsnorg15.png)
 
-Zodra alles met succes wordt voltooid, wordt uw AEP-instantie met succes gevormd en klaar voor studenten om het leerprogramma te nemen.
+Zodra alles is voltooid, is uw Adobe Experience Platform-exemplaar geconfigureerd en is het klaar voor studenten om de zelfstudie uit te voeren.
 
 >[!NOTE]
 >

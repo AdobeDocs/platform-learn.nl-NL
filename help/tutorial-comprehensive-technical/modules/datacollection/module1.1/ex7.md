@@ -4,16 +4,16 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 1.1.7 XDM-schemavereisten in Adobe Experience Platform
 
-Om ervoor te zorgen dat Web SDK en alloy.js gegevens in Adobe Experience Platform kunnen opnemen, is er een vereiste dat een specifieke XDM Mixin deel moet uitmaken van het XDM-schema in Adobe Experience Platform.
+Om ervoor te zorgen dat de SDK van het Web gegevens in Adobe Experience Platform kan opnemen, is er een vereiste voor een specifieke mix XDM om deel uit te maken van het XDM-schema in Adobe Experience Platform.
 
 Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform) en login.
 
@@ -29,7 +29,7 @@ In het linkermenu, ga naar **Schema&#39;s** en open het **Systeem van de Demo - 
 
 ![ Debugger AEP ](./images/exp3.png)
 
-In dat schema, zult u zien dat de het gebiedsgroep van het Web SDK van het Web van het Web van het 0} AEP ExperienceEvent **is toegevoegd.** Deze veldgroep voegt alle minimaal vereiste velden toe aan het schema. Elk schema van de Gebeurtenis van de Ervaring in Adobe Experience Platform dat door Web SDK zal worden gebruikt zal altijd vereisen dat de gebiedsgroep deel van het Schema uitmaakt.
+In dat schema, zult u zien dat de het gebiedsgroep van de gebiedsgroep **AEP Web SDK ExperienceEvent** is toegevoegd. Deze veldgroep voegt alle minimaal vereiste velden toe aan het schema. Elk schema van de Gebeurtenis van de Ervaring in Adobe Experience Platform dat door Web SDK zal worden gebruikt zal altijd vereisen dat de gebiedsgroep deel van het Schema uitmaakt.
 
 ![ Debugger AEP ](./images/exp4.png)
 

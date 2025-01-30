@@ -4,9 +4,9 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Laten we nu dieper kijken naar de bouwstenen van Adobe Experience Platform Data Collection, om te begrijpen wat er op uw demo-website is geïnstalleerd. U zult een dichtere blik bij de Uitbreiding van SDK van het Web van Adobe Experience Platform hebben, zult u een gegevenselement en een regel vormen en u zult leren hoe te om een bibliotheek te publiceren.
 
-## Adobe Experience Platform Web SDK Extension
+## Adobe Experience Platform Web SDK-tagextensie
 
-Een extensie is een set verpakte code waarmee de interface van Adobe Experience Platform Data Collection en de bibliotheekfunctionaliteit worden uitgebreid. Adobe Experience Platform Data Collection is het platform en extensies zijn vergelijkbaar met apps die op het platform worden uitgevoerd. Alle extensies die in de zelfstudie worden gebruikt, worden gemaakt en beheerd door Adobe, maar derden kunnen hun eigen extensies maken om de hoeveelheid aangepaste code te beperken die Adobe Experience Platform-gebruikers moeten beheren.
+Een tagextensie is een set code in pakketten die de interface van Adobe Experience Platform Data Collection en de bibliotheekfunctionaliteit uitbreidt. Adobe Experience Platform Data Collection is het platform, en de markeringsuitbreidingen zijn als apps die op het platform lopen. Alle extensies die in de zelfstudie worden gebruikt, worden gemaakt en beheerd door Adobe, maar derden kunnen hun eigen extensies maken om de hoeveelheid aangepaste code te beperken die Adobe Experience Platform-gebruikers moeten beheren.
 
 Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/launch/) en selecteer **Markeringen**.
 
@@ -34,7 +34,7 @@ Klik om het **bezit te openen 0} van het Web {.**
 
 
 
-U zult dan de pagina van het Overzicht van het Bezit zien. Klik op **[!UICONTROL Extensions]** in het linkerspoor, dan klik op **het Web SDK van Adobe Experience Platform** en klik dan **[!UICONTROL Configure]**.
+U zult dan de pagina van het Overzicht van het Bezit zien. Klik op **[!UICONTROL Extensions]** in het linkerspoor, dan klik op **Adobe Experience Platform Web SDK** en klik dan **[!UICONTROL Configure]**.
 
 ![ pagina van het Overzicht van het Bezit ](./images/property7.png)
 
@@ -58,7 +58,7 @@ Gegevenselementen zijn de bouwstenen voor uw gegevenswoordenboek (of gegevenskaa
 
 Eén gegevenselement is een variabele waarvan de waarde kan worden toegewezen aan querytekenreeksen, URL&#39;s, cookie-waarden, JavaScript-variabelen enzovoort. U kunt naar deze waarde verwijzen met de variabelenaam in de hele Adobe Experience Platform-gegevensverzameling. Deze verzameling gegevenselementen wordt het woordenboek met gedefinieerde gegevens dat u kunt gebruiken om uw regels (gebeurtenissen, voorwaarden en handelingen) samen te stellen. Dit gegevenswoordenboek wordt door alle Adobe Experience Platform-gegevensverzameling gedeeld voor gebruik met extensies die u aan uw eigenschap hebt toegevoegd.
 
-U gaat nu een reeds bestaand gegevenselement in een vriendschappelijk formaat van SDK van het Web uitgeven.
+U gaat nu een reeds bestaand gegevenselement in een het vriendelijke formaat van SDK van het Web uitgeven.
 
 Klik op Data Elements in de linkertrack die naar de pagina Data Elements moet worden verplaatst.
 
@@ -86,7 +86,7 @@ Schuif omhoog en voer de tekst in `%Product Category%` . Klik op **[!UICONTROL S
 
 ![ sparen ](./images/dataelement4.png)
 
-Op dit punt, is de Uitbreiding van SDK van het Web van Adobe Experience Platform geïnstalleerd en u hebt een gegevenselement bijgewerkt om gegevens tegen een structuur te verzamelen XDM. Daarna, controleren de regels die gegevens op de correcte tijd zullen verzenden.
+Op dit punt, is de Uitbreiding van Adobe Experience Platform Web SDK geïnstalleerd en u hebt een gegevenselement bijgewerkt om gegevens tegen een structuur te verzamelen XDM. Daarna, controleren de regels die gegevens op de correcte tijd zullen verzenden.
 
 ## Regels
 
@@ -124,7 +124,7 @@ Klik op de Actie **verzenden de Gebeurtenis van de Ervaring van de Mening van he
 
 ![ verzendt de actie van de Gebeurtenis ](./images/rule5a.png)
 
-Hier kunt u de gegevens zien die door de SDK van het Web van Adobe Experience Platform naar de rand worden verzonden. Specifieker, gebruikt dit de **legering** **[!UICONTROL Instance]** van het Web SDK. De gebeurtenis **[!UICONTROL Type]** wordt geplaatst aan **het Productweergaven van Commerce (Cart)** en de Gegevens XDM u verzendt is **XDM - het gegevenselement van de Mening van het Product** u vroeger veranderde.
+Hier zie je de gegevens die naar de rand worden verzonden door de Adobe Experience Platform Web SDK. Specifieker, gebruikt dit de **legering** **[!UICONTROL Instance]** van het Web SDK. De gebeurtenis **[!UICONTROL Type]** wordt geplaatst aan **het Productweergaven van Commerce (Cart)** en de Gegevens XDM u verzendt is **XDM - het gegevenselement van de Mening van het Product** u vroeger veranderde.
 
 ![ verzendt de actie van de Gebeurtenis ](./images/rule5.png)
 

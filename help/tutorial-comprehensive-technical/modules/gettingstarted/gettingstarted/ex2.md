@@ -4,16 +4,16 @@ description: Aan de slag - Gebruik het demosysteem naast het instellen van de op
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling
 
-Om de lessen in dit leerprogramma te visualiseren en het voor u mogelijk te maken om uw configuratie in een veilige milieu te testen, gebruikt dit leerprogramma de hulpmiddelen van het Systeem van de Demo van de Adobe Volgende. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
+Om de lessen in dit leerprogramma te visualiseren en het voor u mogelijk te maken om uw configuratie in een veilige milieu te testen, gebruikt dit leerprogramma de hulpmiddelen van het Systeem van de Demo van de Adobe Volgende. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie van Adobe Experience Platform worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
 
 Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
@@ -21,7 +21,7 @@ Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) en navigeer aan **Ops
 
 ![ DSN ](./images/dsnsetup.png)
 
-In **Milieu** dropdown, selecteer uw instantie AEP en zandbak.
+In **Milieu** dropdown, selecteer uw instantie van Adobe Experience Platform en zandbak.
 
 ![ DSN ](./images/dsnh1.png)
 

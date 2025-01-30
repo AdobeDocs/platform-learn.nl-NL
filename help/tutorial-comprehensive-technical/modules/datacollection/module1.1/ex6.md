@@ -4,7 +4,7 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 1.1.6 Adobe Target implementeren
 
-## Uw DataStream bijwerken voor gebruik van Adobe Target
+## Uw gegevensstroom bijwerken naar Adobe Target
 
-Als u gegevens die door Web SDK worden verzameld naar Adobe Target wilt verzenden en Adobe Target een antwoord wilt geven met een persoonlijke ervaring voor elke klant, voert u deze stappen uit.
+Als u gegevens die door Web SDK zijn verzameld naar Adobe Target wilt verzenden en Adobe Target een antwoord wilt geven met een persoonlijke ervaring voor elke klant, volgt u deze stappen.
 
 Ga naar [ https://experience.adobe.com/launch/ ](https://experience.adobe.com/launch/) en ga naar **Datastreams**.
 
@@ -23,7 +23,7 @@ Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--a
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
-Dan zie je dit. Om Adobe Target toe te laten, klik **+ voeg de Dienst** toe.
+Dan zie je dit. Om Adobe Target toe te laten, klik **de Dienst** toevoegen.
 
 ![ Debugger AEP ](./images/aa2.png)
 
