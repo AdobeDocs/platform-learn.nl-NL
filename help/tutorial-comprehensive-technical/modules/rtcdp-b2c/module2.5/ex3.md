@@ -4,7 +4,7 @@ description: Een aangepaste webhaak maken en configureren
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Uw aangepaste webhaak maken
 
-Ga naar [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin). U gebruikte reeds deze toepassing in [ Uitoefening 2.3.7 Doelen SDK ](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+Ga naar [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin). U gebruikte reeds deze toepassing in [ oefent 2.3.6 Doelen SDK ](./../../../modules/rtcdp-b2c/module2.3/ex6.md) uit
 
 Als u die service nog niet hebt gebruikt, maakt u een account en maakt u een werkruimte. Als de werkruimte eenmaal is gemaakt, ziet u iets gelijkaardigs.
 
