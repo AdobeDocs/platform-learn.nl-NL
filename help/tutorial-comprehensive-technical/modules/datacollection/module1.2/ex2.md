@@ -4,9 +4,9 @@ description: Stichting - de Ingestie van Gegevens - vorm Schema's en reeks Herke
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2891'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Deze schemastructuur is nu ingesteld.
 ![ Ingestie van Gegevens ](./images/schemastructurem.png)
 
 Uw nieuwe [!UICONTROL Field Group] is nog steeds leeg, dus u moet nu velden aan die [!UICONTROL Field Group] toevoegen.
-Klik in de lijst [!UICONTROL Field Group] op uw aangepaste [!UICONTROL Field Group] .
+In [!UICONTROL Field Group] - lijst, klik uw douane [!UICONTROL Field Group], dan klik **doorbladeren**.
 
 ![ Ingestie van Gegevens ](./images/schemastructurem.png)
 
@@ -289,7 +289,7 @@ Vanuit schemaperspectief bekijken we dit als een **[!UICONTROL Class]** . De vra
 
 Dus wanneer u [!UICONTROL XDM Schema] creeert om het antwoord aan **te vangen wat doet deze klant?** , eerst, zult u 1 schema moeten creëren en bepalen dat verwijzingen de klasse **[!UICONTROL ExperienceEvent]**.
 
-Als u wilt opgeven welk soort antwoorden aan die vraag kan worden gegeven, moet u [!UICONTROL Field Group] definiëren. [!UICONTROL Field Groups] zijn uitbreidingen van de [!UICONTROL ExperienceEvent] -klasse en hebben zeer specifieke configuraties. Bijvoorbeeld, maakt de informatie over welk soort producten een klant bekeken of toegevoegd aan hun kar deel uit van [!UICONTROL Field Group] **Commerce Details**.
+Als u wilt opgeven welk soort antwoorden aan die vraag kan worden gegeven, moet u [!UICONTROL Field Group] definiëren. [!UICONTROL Field Groups] zijn extensies van de klasse [!UICONTROL ExperienceEvent] en hebben zeer specifieke configuraties. Bijvoorbeeld, maakt de informatie over welk soort producten een klant bekeken of toegevoegd aan hun kar deel uit van [!UICONTROL Field Group] **Commerce Details**.
 
 Ten tweede, moet uw organisatie beslissen hoe u het gedrag van deze klant zult identificeren. Aangezien we het hebben over interacties op een website, is het mogelijk dat uw organisatie de klant kent, maar het is evenzeer mogelijk dat een onbekende, anonieme bezoeker actief is op de website. We kunnen dus geen id gebruiken zoals een e-mailadres. In dit geval zal uw organisatie waarschijnlijk besluiten [!UICONTROL Experience Cloud ID (ECID)] als primaire id te gebruiken.
 
@@ -305,7 +305,7 @@ Selecteer een **[!UICONTROL sandbox]** voordat u verdergaat. De naam van [!UICON
 
 ![ Ingestie van Gegevens ](./images/sb1.png)
 
-Klik in Adobe Experience Platform op **[!UICONTROL Schemas]** in het menu aan de linkerkant van het scherm.
+In Adobe Experience Platform, klik op **[!UICONTROL Schemas]** in het menu op de linkerkant van uw scherm en ga **doorbladeren**.
 
 ![ Ingestie van Gegevens ](./images/menuschemas.png)
 
@@ -333,7 +333,7 @@ Nu moet u bepalen wat een antwoord op de vraag **wat deze klant doet?** moet er 
 In de inleiding van dit laboratorium, merkten wij op de behoefte aan volgende attributen om te bepalen wat een klant doet:
 
 - Welke pagina&#39;s of producten zijn bezocht?
-- Heeft deze klant een product aan zijn winkelwagen toegevoegd of zelfs een object gekocht?
+- Heeft deze klant een product aan zijn winkelwagentje toegevoegd of zelfs een object gekocht?
 - Welk apparaat en browser zijn gebruikt om door de website te bladeren?
 - Welk soort informatie zoekt deze klant en hoe kunnen wij dat gebruiken om een heerlijke ervaring aan deze klant te vormen en te leveren?
 - Primaire id voor een klant
@@ -446,10 +446,10 @@ Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 ![ Ingestie van Gegevens ](./images/applyidenee.png)
 
 Het is belangrijk om op te merken dat wanneer uiteindelijk het opnemen van gegevens tegen dit schema, dat sommige gebieden worden vereist.
-De velden **[!UICONTROL _id]** en **[!UICONTROL timestamp]** zijn bijvoorbeeld verplichte velden.
+De velden **[!UICONTROL _id]** en **[!UICONTROL timestamp]** zijn bijvoorbeeld verplichte velden. Dit is een vereiste die wordt opgelegd door de klasse ExperienceEvent.
 
 - _id moet een unieke id bevatten voor een specifieke gegevensinvoer
-- timestamp moet de tijdstempel van deze hit zijn, in de notatie **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]** , zoals bijvoorbeeld: **[!UICONTROL "2024-11-18T07:20:000Z"]**
+- timestamp moet de tijdstempel van deze hit zijn, in de notatie **`"YYYY-MM-DDTHH:MM:SSSZ"`** , zoals bijvoorbeeld: **`"2024-11-18T07:20:000Z"`**
 
 U hebt nu een schema gedefinieerd, bestaande en nieuwe gekoppelde [!UICONTROL Field Groups] en id&#39;s gedefinieerd.
 

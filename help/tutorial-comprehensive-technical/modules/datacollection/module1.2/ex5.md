@@ -4,7 +4,7 @@ description: Stichting - de Ingestie van Gegevens - de Ingestie van Gegevens van
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Als u lobs of bestanden naar de Adobe Experience Platform Data Landing Zone wilt
 
 ![ dlz-install-az-copy.png ](./images/dlz1.png)
 
-- Download het dossier van steekproefgegevens globaal-context-website interactions.csv, die de interactie van de steekproefwebsite bevat en het in de omslag bewaren waarin u **azcopy** uitzette.
+- Download het dossier van steekproefgegevens [ globaal-context-website interactions.csv ](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), die de interactie van de steekproefwebsite bevat en het in de omslag bewaart waarin u **azcopy** ontpitte.
 
 ![ dlz-install-az-copy.png ](./images/dlz2.png)
 

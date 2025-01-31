@@ -4,9 +4,9 @@ description: Stichting - Gegevensinsluiting - Van onbekend naar bekend op de web
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,10 @@ Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring 
 ![ Demo ](./images/pv5.png)
 
 Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurtenissen van de Ervaring**.
+
+>[!NOTE]
+>
+>Vernieuw de pagina als u de gebeurtenis niet meteen ziet verschijnen.
 
 ![ Demo ](./images/pv6.png)
 

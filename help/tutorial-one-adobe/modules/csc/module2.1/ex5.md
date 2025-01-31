@@ -3,9 +3,10 @@ title: AEM CS - Geavanceerd aangepast blok
 description: AEM CS - Geavanceerd aangepast blok
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Sla uw wijzigingen op.
 
 U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
 
-U zou dan de 3 dossiers moeten zien die u enkel onder **Veranderingen** uitgeeft. Controleer uw wijzigingen.
+U zou dan de 2 dossiers moeten zien die u enkel onder **Veranderingen** heeft uitgegeven. Controleer uw wijzigingen.
 
 Voer een naam in voor uw PR, `js css` . Klik **Vastleggen aan hoofd**.
 
@@ -344,7 +345,7 @@ Dan moet je dit zien.
 
 ![ Blok ](./images/blockadv20.png)
 
-Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md){target="_blank"}
+Volgende Stap: [ 2.1.6 AEM Edge Delivery Services MarTech stop ](./ex6.md){target="_blank"}
 
 [ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 

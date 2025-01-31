@@ -4,9 +4,9 @@ description: Stichting - de Ingestie van Gegevens - de Ingestie van Gegevens van
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,11 @@ U zult een gedeelde dataset gebruiken. De gedeelde gegevensset is al gemaakt en 
 
 ![ Ingestie van Gegevens ](./images/emeacrmoverview.png)
 
-
 Op het overzichtsscherm kunt u drie belangrijke stukken van informatie zien.
+
+>[!NOTE]
+>
+>Het is mogelijk dat de weergave van uw gegevensset leeg is als er in de afgelopen 7 dagen geen activiteit is opgetreden.
 
 ![ Ingestie van Gegevens ](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ Klik **daarna**.
 U moet nu de kolomkopballen van uw Csv- dossier met een XDM-bezit in uw **[!UICONTROL Demo System - Profile Dataset for CRM]** in kaart brengen.
 
 Adobe Experience Platform heeft al enkele voorstellen voor u gedaan door de [!UICONTROL Source Attributes] te koppelen aan de [!UICONTROL Target Schema Fields] .
+
+>[!NOTE]
+>
+>Als u om het even welke fouten op het kaartkaartscherm ziet, maak u geen zorgen. Na het volgen van de onderstaande instructies worden deze fouten opgelost.
 
 ![ Ingestie van Gegevens ](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Laten wij identiteitsgegevens voor de volledige dataset beperken. Houd de muis b
 
 ![ Ingestie van Gegevens ](./images/pencil.png)
 
-Ga naar **[!UICONTROL Identity Data]** en u zult zien dat de optie **[!UICONTROL I2]** wordt gecontroleerd - dit veronderstelt dat alle stukken van informatie in deze dataset ten minste onrechtstreeks identificeerbaar voor de persoon zijn.
+Ga naar **[!UICONTROL Identity Labels]** en u zult zien dat de optie **[!UICONTROL I2]** wordt gecontroleerd - dit veronderstelt dat alle stukken van informatie in deze dataset ten minste onrechtstreeks identificeerbaar voor de persoon zijn.
 
 Klik op **[!UICONTROL Save Changes]**.
 
