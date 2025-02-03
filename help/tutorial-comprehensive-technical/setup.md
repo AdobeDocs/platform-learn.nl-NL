@@ -4,9 +4,9 @@ description: Adobe Experience Platform-instantie instellen
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -253,5 +253,11 @@ Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/p
 >[!NOTE]
 >
 >Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [Terug naar alle modules](./overview.md)

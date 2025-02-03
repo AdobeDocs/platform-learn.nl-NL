@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -35,5 +35,11 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [ 5.1 de Dienst van de Vraag ](./modules/datadistiller/module5.1/query-service.md) | 12-04-2024 | Ja | - |
 
 {style="table-layout:auto"}
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
 [Terug naar alle modules](./overview.md)
