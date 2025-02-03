@@ -5,10 +5,10 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 6%
+source-wordcount: '873'
+ht-degree: 7%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 6%
    + [ Mobiele zelfstudies van SDK ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html) {target="_blank"}
 + Levenscyclus gegevens {#data-lifecycle}
    + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
-+ Data Science Workspace {#data-science-workspace}
-   + [Overzicht](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [Architectuur](data-science-workspace/architecture-overview.md)
-   + [Het cursusschema en de gegevensset maken](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [Gegevens laden in JupyterLab-laptops](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [Gegevens opvragen en detecteren in JupyterLab-laptops](data-science-workspace/dsw-query-service.md)
-   + [Analyse van verkennende gegevens](data-science-workspace/eda.md)
-   + [Overzicht van recept, modellen en services](data-science-workspace/recipes-models-services-overview.md)
-   + [Een model maken met de sjabloon voor het samenstellen van het recept](data-science-workspace/recipe-builder-template.md)
-   + [Modelprestaties analyseren](data-science-workspace/analyze-model-performance.md)
-   + [Een getraind model maken en publiceren (UI)](data-science-workspace/create-model-ui.md)
-   + [Geautomatiseerde training en scoring voor een service plannen](data-science-workspace/schedule-training-scoring.md)
-   + [Klantprofielen in realtime verrijken met leergegevens over computers](data-science-workspace/dsw-profile-segmentation.md)
-   + [ Bron van het Pakket dossiers in een recept ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html) {target="_blank"}
-   + [ de Invoer een verpakt recept (UI) ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html) {target="_blank"}
-   + [ de Invoer een verpakt recept (API) ](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html) {target="_blank"}
 + Doelen {#destinations}
    + [Overzicht van doelen](/help/platform/destinations/understanding-destinations.md)
    + [Verbinding maken met doelen](/help/platform/destinations/connecting-to-destinations.md)
