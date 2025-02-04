@@ -4,9 +4,9 @@ description: Real-time CDP - Doelen SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,17 @@ ht-degree: 0%
 
 In deze oefening zult u Adobe I/O opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw Adobe I/O project nog niet hebt gevormd, ga terug naar [ oefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar.
 
-## Postman-verificatie naar Adobe I/O
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
-In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw toepassing van Postman nog niet hebt gevormd, ga terug naar [ oefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar.
+## Verificatie naar Adobe I/O
+
+In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw toepassing van Postman nog niet hebt gevormd, ga terug naar [ Uitoefening 3 in Module 2.1 ](../module2.1/ex3.md) en volg de instructies daar.
+
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 ## Definiëren van eindpunt en formaat
 
@@ -101,7 +109,7 @@ Na het kleven van de bovengenoemde code, moet u het gebied **urlBasedDestination
 
 ![ Ingestie van Gegevens ](./images/sdkpm4.png)
 
-Na het bijwerken van het gebied **urlBasedDestiantion.url.value**, zou het als dit moeten kijken. Klik **verzenden**.
+Na het bijwerken van het gebied **urlBasedDestination.url.value**, zou het als dit moeten kijken. Klik **verzenden**.
 
 ![ Ingestie van Gegevens ](./images/sdkpm5.png)
 

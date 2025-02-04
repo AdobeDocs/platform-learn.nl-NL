@@ -4,9 +4,9 @@ description: Query-service - API voor query-service
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,10 @@ limit 10;
 ```
 
 ## Zoekopdrachten
+
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 Open Postman op uw computer. Als deel van Module 2.1, creeerde u een milieu van Postman en importeerde een inzameling van Postman. Volg de instructies in [ Uitoefening 2.1.3 ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) voor het geval u dat nog niet hebt gedaan.
 

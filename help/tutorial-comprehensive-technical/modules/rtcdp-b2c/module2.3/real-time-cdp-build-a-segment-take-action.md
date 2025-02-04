@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-# 2.3 Real-time CDP - Bouw een segment en neem actie
+# 2.3 CDP in real time - Bouw een publiek en neem actie
 
-In deze module, zult u een het stromen segment vormen en zult het segment aan veelvoudige bestemmingen activeren.
+In deze module, zult u een het stromen segment vormen en zult het publiek aan veelvoudige bestemmingen activeren.
 
 ## Leerdoelen
 
-- Leer hoe u een segment maakt en dit voor streaming inschakelt.
+- Leer hoe u een publiek kunt maken en dit voor streaming kunt inschakelen.
 - Leer hoe u een advertentiebestemming configureert met de gebruikersinterface van Adobe Experience Platform.
-- Leer hoe te om een segment met een bestemming te verbinden en het te activeren.
-- Leer hoe u Adobe Experience Platform-segmenten in Adobe Audience Manager gebruikt en hoe u Adobe Audience Manager-segmenten in Adobe Experience Platform gebruikt, dankzij bidirectioneel delen van segmenten.
+- Leer hoe u een publiek verbindt met een doel en dit activeert.
 
 ## Vereisten
 

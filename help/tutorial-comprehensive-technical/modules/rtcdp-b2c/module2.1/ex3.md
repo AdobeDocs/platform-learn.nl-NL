@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel - Visualiseer uw eigen real-tim
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,11 @@ Selecteer het pas gecreëerde project van Adobe I/O en klik **sparen**.
 
 ![ Toestemmingen ](./images/perm4.png)
 
-## Postman-verificatie naar Adobe I/O
+## Verificatie naar Adobe I/O
+
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/).
 

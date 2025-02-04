@@ -4,7 +4,7 @@ description: CDP in realtime - Een publiek maken en actie ondernemen - Uw publie
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ## Uw DataStream verifiëren
 
-De Adobe Target-bestemming in Real-Time CDP is verbonden met de gegevensstroom die wordt gebruikt om gegevens in te voeren in het Edge-netwerk van de Adobe. Als u de Adobe Target-bestemming wilt instellen, moet u eerst controleren of uw gegevensstroom al is ingeschakeld voor Adobe Target. Uw datastram werd gevormd in [ Uitoefening 0.2 creeer uw Datasstream ](./../../../modules/gettingstarted/gettingstarted/ex2.md) en werd genoemd `--aepUserLdap-- - Demo System Datastream`.
+De Adobe Target-bestemming in Real-Time CDP is verbonden met de gegevensstroom die wordt gebruikt om gegevens in te voeren in het Adobe Edge-netwerk. Als u de Adobe Target-bestemming wilt instellen, moet u eerst controleren of uw gegevensstroom al is ingeschakeld voor Adobe Target. Uw datastram werd gevormd in [ Uitoefening 0.2 creeer uw Datasstream ](./../../../modules/gettingstarted/gettingstarted/ex2.md) en werd genoemd `--aepUserLdap-- - Demo System Datastream`.
 
 In het linkermenu, scrol neer en klik **Datastreams**. Zoek in Datastreams naar de gegevensstroom met de naam `--aepUserLdap-- - Demo System Datastream` . Klik op de gegevensstroom om deze te openen.
 
@@ -159,11 +159,16 @@ Vervolgens moet u een personalisatietoken toevoegen van Adobe Experience Platfor
 
 Alvorens u **klikt voeg** knoop toe, zorg ervoor om naar de lijn te gaan waar u `... > h1").innerHTML="Hi there ";` ziet en uw curseur binnen de steunen na het woord `there`, als dit plaatst:
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 Dan klik **toevoegen** knoop, die dan het teken zou moeten toevoegen, dat de code als dit zal bijwerken:
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Klik **daarna**.
 
