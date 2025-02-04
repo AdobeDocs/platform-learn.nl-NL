@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 7%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 7%
    + [Reacties valideren](/help/platform/ai-assistant/validate-responses.md)
    + [Deelvenster Detectie](/help/platform/ai-assistant/discoverability-panel.md)
    + [Ongebruikt publiek zoeken](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Operationele inzichten](/help/platform/ai-assistant/operational-insights.md)
    + [Effectanalyse](/help/platform/ai-assistant/impact-analysis.md)
    + [Beveiligingsoverzicht](/help/platform/ai-assistant/security-overview.md)
 + Soorten publiek en segmentatie {#audiences}
@@ -141,6 +142,8 @@ ht-degree: 7%
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identiteitsgegevens labelen, opnemen en verifiëren](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Identiteitsgrafieken weergeven](/help/platform/identities/view-identity-graphs.md)
+   + Regels voor identiteitsgrafiek koppelen {#graph-linking-rules}
+      + [Grafieksimulatie](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligente services {#intelligent-services}
    + [Overzicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Overzicht van Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
