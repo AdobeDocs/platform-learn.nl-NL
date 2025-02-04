@@ -3,7 +3,7 @@ title: Voltooiing
 description: Hoe wordt de voltooiing gemeten?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Hieronder ziet u de verwachte voltooiingsproeven voor elke module.
 
 Het verwachte bewijs van voltooiing voor module **die** wordt begonnen is identiteitskaart van het project van het Systeem van de Demo voor Web dat u creeerde.
 
-De id van het project Demo System for web format ziet er als volgt uit: `--demoProfileLdap-- - QIMU`.
+De id van het project Demo System for web format ziet er als volgt uit: `--aepUserLdap-- - QIMU`.
 
 ![ 3 ](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ Identiteitskaart van het Federatieve Model van Gegevens kijkt als dit: **DMO5110
 
 ## 2.1 Klantprofiel in realtime
 
-Het verwachte bewijs van voltooiing voor module **Real-Time Profiel van de Klant** is **identiteitskaart van het Publiek** van het publiek dat u door UI, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro` creeerde.
+Het verwachte bewijs van voltooiing voor module **Real-Time Profiel van de Klant** is **identiteitskaart van het Publiek** van het publiek dat u door UI, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro` creeerde.
 
 Identiteitskaart van het publiek kijkt als dit: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ Identiteitskaart van het publiek kijkt als dit: **81a9acbe-12e6-424b-b658-abba3a
 
 ## 2.2 Intelligente diensten
 
-Het verwachte bewijs van voltooiing voor module **Intelligente Diensten** is **identiteitskaart van het Publiek** van het publiek dat u door UI, `--demoProfileLdap-- - Customer AI High Propensity` creeerde.
+Het verwachte bewijs van voltooiing voor module **Intelligente Diensten** is **identiteitskaart van het Publiek** van het publiek dat u door UI, `--aepUserLdap-- - Customer AI High Propensity` creeerde.
 
 Identiteitskaart van het publiek kijkt als dit: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ U kunt **Gebeurtenis vinden die identiteitskaart van het Bezit** door:sturen, di
 
 ## 2.6 Gegevens streamen van Apache Kafka naar Real-Time CDP
 
-Het verwachte bewijs van voltooiing voor module **gegevens van de Stroom van Apache Kafka in Real-Time CDP** is identiteitskaart van uw bronschakelaar `--demoProfileLdap-- - Kafka`.
+Het verwachte bewijs van voltooiing voor module **gegevens van de Stroom van Apache Kafka in Real-Time CDP** is identiteitskaart van uw bronschakelaar `--aepUserLdap-- - Kafka`.
 
 Identiteitskaart kijkt als dit **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, en u kunt het hier vinden:
 
@@ -132,7 +132,7 @@ Identiteitskaart van de reis kijkt als dit: **5f5efc7e-49f7-44c1-85df-b23482b38d
 
 ## 4.1 Customer Journey Analytics: een dashboard maken met Analysis Workspace
 
-Het verwachte bewijs van voltooiing voor module **Customer Journey Analytics: Bouw een dashboard gebruikend Analysis Workspace** is identiteitskaart van uw project `--demoProfileLdap-- - Omnichannel Analysis`.
+Het verwachte bewijs van voltooiing voor module **Customer Journey Analytics: Bouw een dashboard gebruikend Analysis Workspace** is identiteitskaart van uw project `--aepUserLdap-- - Omnichannel Analysis`.
 
 Het formaat kijkt als dit: **677bcb247064db3c7de2a0e4**, kunt u het in URL vinden wanneer u uw project hebt geopend.
 
@@ -148,7 +148,7 @@ U kunt **identiteitskaart van de Verbinding van BigQuery** vinden, die als dit *
 
 ## 5.1 Query-service
 
-Het verwachte bewijs van voltooiing voor de dienst van de module **Vraag** is identiteitskaart van de Dataset voor uw `--demoProfileLdap--_callcenter_interaction_analysis` - dataset die u na de voltooiing van de module krijgt.
+Het verwachte bewijs van voltooiing voor de dienst van de module **Vraag** is identiteitskaart van de Dataset voor uw `--aepUserLdap--_callcenter_interaction_analysis` - dataset die u na de voltooiing van de module krijgt.
 
 identiteitskaart kijkt als dit: **675033c903fb3b2aefed8a0a**.
 
