@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
 exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 2150ead50fee06b434d996183a959ad5f01dd2a8
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,9 @@ In deze activiteit, zullen wij een actie van SDK van het Web tot stand brengen d
 
 1. Selecteer **SDK van het Web van Adobe Experience Platform** van de drop-down Uitbreiding.
 1. Selecteer **Variabele van de Update** van het drop-down Type van Actie.
+1. Zorg ervoor dat het **element van Gegevens** dat bij de bovenkant van het juiste paneel wordt vermeld inderdaad uw nieuw veranderlijk-type gegevenselement is.
 1. In het rechterpaneel, selecteer het **voorwerp van Analytics** binnen het gegevensvoorwerp
-1. Zorg er ook voor dat het gegevenselement boven aan het rechterdeelvenster inderdaad het nieuwe gegevenselement van het type variabele is.
-
-   ![ veranderlijke actie van de Update ](assets/update-variable-action-analytics.jpg)
-
+   ![ veranderlijke actie van de Update ](assets/define-update-variable-action.jpg)
 1. Nu verander het radioknoop in **verstrekt JSON of het Element van Gegevens** en kleeft de code die u in de vorige stap van Vastgestelde Variabelen in dit codevenster kopieerde. Vergeet niet dat wat we hier in de zelfstudie laten zien, slechts voorbeelden zijn. U kopieert en plakt uw eigen variabelen.
 
    ![ Nieuwe de codedeeg van SDK van het Web ](assets/new-websdk-code-paste.jpg)
