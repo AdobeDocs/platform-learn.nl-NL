@@ -3,9 +3,9 @@ title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele ex
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiel
 
 ## Belangrijkste voordelen
 
-Enkele voordelen van de uitbreiding van het Besluit omvatten:
+Enkele voordelen van de Adobe Journey Optimizer-decisioning-extensie in vergelijking met de Target-extensie zijn:
 
 * Sneller het delen van publiek van [ Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
 * Het integreren Doel met Journey Optimizer om [ levering van de Offer decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
@@ -26,21 +26,6 @@ Enkele voordelen van de uitbreiding van het Besluit omvatten:
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
 Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. Platform Mobile SDK en de extensie Decisioning zijn een vereiste om deze Real-Time CDP-functies in uw mobiele kanaal te kunnen gebruiken.
-
-## Leerdoelstellingen
-
-Aan het einde van deze zelfstudie kunt u het volgende doen:
-
-* Opsommingsteken 1
-* Opsommingsteken 2
-
-
-## Vereisten
-
-Als u deze zelfstudie wilt voltooien, moet u eerst:
-
-* Opsommingsteken 1
-* Opsommingsteken 2
 
 
 >[!NOTE]
