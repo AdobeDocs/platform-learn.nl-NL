@@ -2,9 +2,9 @@
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,26 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 - Welke Adobe Target-extensiefuncties hebben Adobe Journey Optimizer-beslissingsequivalenten
 - Hoe de montages van het Doel met Adobe Journey Optimizer worden toegepast - Beslissing
 - Hoe de gegevens stromen gebruikend Adobe Journey Optimizer - Beslissende uitbreiding
+
+## Operationele verschillen
+
+| | Doelextensie | Decisitie-extensie |
+|---|---|---|
+| Proces | Wijzigingen in een doelimplementatie kunnen plaatsvinden na een proces dat andere eisen stelt aan de snelheid of kwaliteit van de kwaliteit in vergelijking met andere toepassingen, zoals Analytics. | Bij wijzigingen in een implementatie van een beslissingsextensie moeten alle downstreamtoepassingen in aanmerking worden genomen en moet het kwaliteitscontroleproces en het publicatieproces dienovereenkomstig worden aangepast. |
+| Collaboration | De gegevens specifiek voor Doel kunnen direct in de vraag van het Doel worden overgegaan. Als het Doel rapporteringsbron Adobe Analytics (A4T) is, kunnen de gegevens specifiek voor Doel ook aan Adobe Analytics worden overgegaan wanneer de aangewezen het volgen methodes in de uitbreiding van het Doel voor de inhoudvertoning en interactie van het Doel worden geroepen. | De gegevens die in de de uitbreidingsvraag van het Beslissen worden overgegaan kunnen aan zowel Doel als Analytics worden door:sturen als het Doel rapporteringsbron Adobe Analytics (A4T) is, wordt Adobe Analytics toegelaten in de gegevensstroom, en de aangewezen volgende methodes in de uitbreiding van het Beslissen worden geroepen wanneer de inhoud van het Doel wordt getoond en met interactie heeft. |
+
+## Basisverschillen
+
+| | Doelextensie | Decisitie-extensie |
+|---|---|---|
+| Afhankelijkheden | Alleen afhankelijk van Mobile Core SDK | Afhankelijk van de Mobile Core en Edge Network SDK |
+| Bibliotheekfunctionaliteit | Ondersteunt het ophalen van inhoud van alleen Adobe Target | Inhoud ophalen van Adobe Target en Offer decisioning |
+| Verzoeken | De vraag van het doel is grotendeels onafhankelijk van andere netwerkvraag | De het netwerkvraag van het doel wordt een rij gevormd samen met netwerkvraag naar andere op Edge-Gebaseerde oplossingen zoals Overseinen in Edge SDK en serieel uitgevoerd. |
+| Edge Network | Gebruikt de waarde van de server van het Doel of de Edge Network van Adobe Experience Cloud met de cliëntcode (clientcode.tt.omtrdc.net), beide gespecificeerd in de [ configuratie van het Doel ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in de Inzameling UI van Gegevens | Gebruikt het het netwerkdomein van Edge dat in de configuratie van de Edge Network van Adobe Experience Platform [ ](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) in de inzameling UI van Gegevens wordt gespecificeerd. |
+| Standaardterminologie | mbox, TargetParameters | DecisionScope, Map (Android)/dictionary (iOS) voor Target-parameters |
+| Standaardinhoud | Staat het overgaan van cliënt-kant standaardinhoud in TargetRequest toe die is teruggekeerd als de netwerkvraag ontbreekt of in fout resulteert. | Hiermee wordt het doorgeven van standaardinhoud aan de clientzijde niet toegestaan. Retourneert geen inhoud als de netwerkaanroep mislukt of als er een fout optreedt. |
+| Doelparameters | Hiermee worden algemene TargetParameters per aanvraag en verschillende TargetParameters per mbox doorgegeven | Staat het overgaan van globale TargetParameters per slechts verzoek toe |
+
 
 
 ## Functievergelijking
@@ -61,9 +81,9 @@ Vele functies van de uitbreiding van het Doel hebben een gelijkwaardige benaderi
 | Doelextensie | Decisitie-extensie | Notities |
 | --- | --- | --- | 
 | `prefetchContent` | `updatePropositions` |  |
-| `retrieveLocationContent` | `getPropositions` | Wanneer u de `getPropositions` API gebruikt, wordt geen externe aanroep uitgevoerd om niet-caching bereik op te halen in de SDK. |
-| `displayedLocations` | Voorstel -> `displayed()` | Daarnaast kan de methode `generateDisplayInteractionXdm` Offer worden gebruikt om de XDM voor itemweergave te genereren. Vervolgens kan de sendEvent-API van de SDK van het Edge-netwerk worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
-| `clickedLocation` | Voorstel -> `tapped()` | Daarnaast kan de methode `generateTapInteractionXdm` Aanbieding worden gebruikt om de XDM voor het tikken van items te genereren. Vervolgens kan de sendEvent-API van de SDK van het Edge-netwerk worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
+| `retrieveLocationContent` | `getPropositions` | Wanneer u de API van `getPropositions` gebruikt, wordt geen externe aanroep gemaakt om niet-caching-bereik op te halen in de SDK. |
+| `displayedLocations` | Voorstel -> `displayed()` | Daarnaast kan de methode `generateDisplayInteractionXdm` Offer worden gebruikt om de XDM voor itemweergave te genereren. Daarna kan de Edge-netwerk SDK sendEvent-API worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
+| `clickedLocation` | Voorstel -> `tapped()` | Daarnaast kan de methode `generateTapInteractionXdm` Aanbieding worden gebruikt om de XDM voor het tikken van items te genereren. Daarna kan de Edge-netwerk SDK sendEvent-API worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
 | `clearPrefetchCache` | `clearCachedPropositions` |  |
 | `resetExperience` | nvt | Gebruik de API `removeIdentity` van Identity voor Edge Network-extensie voor de SDK om te stoppen met het verzenden van de bezoeker-id naar het Edge-netwerk. Voor meer details, zie [ de removeIdentity API documentatie ](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br> Nota: De `resetIdentities` API van de Mobiele Kern ontruimt alle opgeslagen identiteiten in SDK, met inbegrip van Experience Cloud identiteitskaart (ECID) en het zou spaarzaam moeten worden gebruikt! |
 | `getSessionId` | nvt | `state:store` reactiehandgreep bevat informatie over sessies. De Edge-netwerkextensie helpt het te beheren door items in een niet-verlopen frameopslag aan volgende aanvragen toe te voegen. |
@@ -93,7 +113,7 @@ De uitbreiding van het Doel heeft [ configureerbare montages ](https://developer
 
 Het volgende diagram zou u moeten helpen de gegevensstroom begrijpen gebruikend Adobe Journey Optimizer - Beslissende uitbreiding.
 
-![ Adobe Target Edge die met cliënt-kant Mobiele SDK besluit ](assets/diagram.png)
+![ Adobe Target Edge die met cliënt-kant Mobiele SDK ](assets/diagram.png) beslist
 
 
 >[!NOTE]
