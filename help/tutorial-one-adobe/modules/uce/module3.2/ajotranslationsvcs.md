@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer-vertaalservices
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 1%
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 1%
 ## Vereisten
 
 - Toegang tot Adobe Journey Optimizer
+- Toegang tot Microsoft Azure-vertalers
 
 ## Uitoefening
 
-[3.2.1.](./ex1.md)
+[3.2.1 Vertaalbureau](./ex1.md)
 
-In deze exercitie ...
+In deze oefening, zult u uw Vertaalleverancier vormen gebruikend de Vertaler van Microsoft en zal het opstelling in Adobe Journey Optimizer.
+
+[3.2.2 Vertaalproject](./ex2.md)
+
+In deze oefening, zult u uw Vertaalleverancier vormen gebruikend de Vertaler van Microsoft en zal het opstelling in Adobe Journey Optimizer.
 
 [Samenvatting en voordelen](./summary.md)
 

@@ -1,10 +1,11 @@
 ---
-title: Voltooiing
+title: Voltooiing - Zelfstudie voor één Adobe
 description: Hoe wordt de voltooiing gemeten?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Hieronder ziet u de verwachte voltooiingsproeven voor elke module.
 
 Het verwachte bewijs van voltooiing voor module **die** wordt begonnen is identiteitskaart van het project van het Systeem van de Demo voor Web dat u creeerde.
 
-De id van het project Demo System for web format ziet er als volgt uit: `--demoProfileLdap-- - 8ERG`.
+De id van het project Demo System for web format ziet er als volgt uit: `--aepUserLdap-- - 8ERG`.
 
 ![ 3 ](./assets/images/module0dtl.png)
 
@@ -35,7 +36,7 @@ De URL ziet er als volgt uit: `https://ldap.blob.core.windows.net/folder/citisig
 
 ## 1.2 Creative Workflow Automation met Workfront Fusion
 
-Het verwachte bewijs van voltooiing voor module **Creatieve Automatisering van het Werkschema met de Fusie van Workfront** is **URL** van de webhaak die oefening 1.2.3 werd gecreeerd, na het gpoing door de stap **activeer uw scenario gebruikend een webhaak**.
+Het verwachte bewijs van voltooiing voor module **Creatieve Automatisering van het Werkschema met de Fusie van Workfront** is **URL** van de webhaak die oefening 1.2.3 werd gecreeerd, na het gaan door de stap **activeer uw scenario gebruikend een webhaak**.
 
 De URL ziet er als volgt uit: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
@@ -79,7 +80,7 @@ Het verwachte bewijs van voltooiing voor module **Adobe Journey Optimizer: De Ve
 
 Het verwachte bewijs van voltooiing voor module **Adobe Journey Optimizer: Offer decisioning** is identiteitskaart van het **Besluit** dat u creeerde.
 
-U kunt **identiteitskaart van het Besluit** vinden, die als dit **:offer-activity: 1a08ba4b529b2fb2** kijkt, hier:
+U kunt **identiteitskaart van het Besluit** vinden, die als dit **`dps:offer-activity:1a08ba4b529b2fb2`** kijkt, hier:
 
 ![ 14 ](./assets/images/offers.png)
 

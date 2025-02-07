@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met Workfront Fusion
+# 1.2.1 Aan de slag met Workfront Fusion
 
 Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om query&#39;s uit te voeren op Adobe Firefly Services API&#39;s.
 
-## Nieuw scenario maken
+## 1.2.1.1 Nieuwe scenario&#39;s maken
 
 1. Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Open **de Fusie van Workfront**.
 
@@ -59,7 +59,7 @@ Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om query&#39;s uit te vo
 
    ![ WF Fusion ](./images/wffusion8.png)
 
-## Adobe I/O-verificatie configureren
+## 1.2.1.2 Adobe I/O-verificatie configureren
 
 U moet nu de variabelen vormen die nodig zijn om tegen Adobe I/O voor authentiek te verklaren. In de vorige oefening, creeerde u een project van Adobe I/O. De variabelen van dat Adobe I/O-project moeten nu worden gedefinieerd in Workfront Fusion.
 

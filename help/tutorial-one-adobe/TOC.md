@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 4%
    + [Voorwerk](/help/tutorial-one-adobe/prework.md)
    + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-   + 1.1 Adobe Firefly Services {#module11}
++ 1 Maken en produceren {#production}
+   + 1.1 Overzicht van Adobe Firefly Services {#module11}
       + [Overzicht](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Aan de slag met Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Optimaliseer uw Firefly processen met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3 Adobe Firefly en Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Werken met Photoshop API&#39;s](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [1.1.4 Aangepaste modellen Firefly-API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}
@@ -61,7 +61,7 @@ ht-degree: 4%
       + [2.2.5 Integratie van Workfront en Photoshop](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3 Unified Customer Experience {#uce}
++ 3 Levering en activering {#activation}
    + 3.1 Federated Audience Composition {#module31}
       + [Overzicht](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
       + [3.1.1 De omgeving van uw Snowflake instellen](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -70,7 +70,9 @@ ht-degree: 4%
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: Vertaalservices {#module32}
       + [Overzicht](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-      + [3.2.1.](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.1 Vertaalbureau](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.2 Uw campagne maken](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+      + [3.2.3.](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
       + [Overzicht](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

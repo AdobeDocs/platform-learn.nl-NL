@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# Werken met Photoshop API&#39;s
+# 1.1.3 Werken met Photoshop API&#39;s
 
 Leer hoe u met de Photoshop API&#39;s en Firefly Services werkt.
 
-## De Adobe I/O-integratie bijwerken
+## 1.1.3.1 De Adobe I/O-integratie bijwerken
 
 1. Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"}.
 
@@ -51,7 +51,11 @@ Uw Adobe I/O-project wordt nu bijgewerkt en werkt nu met de API&#39;s van Photos
 
 ![ Azure Opslag ](./images/ps6.png)
 
-## Programmatische interactie met een PSD-bestand
+## 1.1.3.2 Programmatische interactie met een PSD-bestand
+
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 1. Download [ burgerschap-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} aan uw Desktop.
 

@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
-# Creative Workflow Automation met Workfront Fusion
+# 1.2 Creative Workflow Automation met Workfront Fusion
 
 Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion.
 
@@ -23,15 +23,15 @@ Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion.
 
 ## Uitoefening
 
-[ Aan de slag met de Fusie van Workfront ](./ex1.md){target="_blank"}
+[ 1.2.1 die met de Fusie van Workfront ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, verken Workfront Fusion in combinatie met de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[ Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
+[ 1.2.2 de Adobe APIs van het Gebruik binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
 
 In deze oefening, leer hoe te om de Diensten APIs van de Firefly en Photoshop APIs binnen Workfront Fusion te vormen en te gebruiken, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
 
-[ automatisering van het Proces met de Fusie van Workfront ](./ex3.md){target="_blank"}
+[ 1.2.3 de automatisering van het Proces met de Fusie van Workfront ](./ex3.md){target="_blank"}
 
 In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
 

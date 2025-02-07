@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# Overzicht van Adobe Firefly Services
+# 1.1 Overzicht van Adobe Firefly Services
 
 Leer de verschillende manieren u de Diensten van de Adobe Firefly kunt gebruiken.
 
@@ -23,19 +23,19 @@ Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.co
 
 ## Uitoefening
 
-[ Begonnen het worden met de Diensten van de Firefly ](./ex1.md){target="_blank"}
+[ 1.1.1 die met de Diensten van de Firefly ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, verken de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[ optimaliseer uw proces van de Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md){target="_blank"}
+[ 1.1.2 optimaliseer uw proces van de Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md){target="_blank"}
 
 In deze oefening, verken de Diensten van de Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[ Adobe Firefly &amp; Adobe Photoshop APIs ](./ex3.md){target="_blank"}
+[ 1.1.3 die met Photoshop APIs ](./ex3.md){target="_blank"} werkt
 
 In deze oefening, leer hoe te om de Diensten van de Firefly samen met Adobe Photoshop te gebruiken.
 
-[ Modellen API van de Aangepaste Modellen van de Firefly ](./ex4.md){target="_blank"}
+[ 1.1.4 de Modellen API van de Douane van de Firefly ](./ex4.md){target="_blank"}
 
 In deze oefening, leer hoe te om de Modellen API van de Klant van de Firefly te gebruiken.
 

@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met Firefly Services
+# 1.1.1 Aan de slag met Firefly Services
 
 Leer hoe u Postman en Adobe I/O gebruikt om query&#39;s uit te voeren op Adobe Firefly Services API&#39;s.
 
-## Uw Adobe I/O-project configureren
+## 1.1.1.2 Uw Adobe I/O-project configureren
 
 In deze oefening, wordt Adobe I/O gebruikt aan vraag tegen Firefly de Diensten APIs. Voer de volgende stappen uit om Adobe I/O in te stellen.
 
@@ -53,7 +53,7 @@ Uw Adobe I/O-integratie is nu klaar.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api11.png)
 
-## De Postman-omgeving downloaden
+## 1.1.1.3 Download de Postman-omgeving
 
 1. Selecteer **Download voor Postman**, dan kies **Server-aan-Server** om een milieu van Postman te downloaden.
 
@@ -75,7 +75,11 @@ De instellingen van uw Adobe I/O-integratie zijn nu voltooid.
 
 ![ Adobe I/O Nieuwe Integratie ](./images/api16.png)
 
-## Postman-verificatie naar Adobe I/O
+## 1.1.1.4 Postman-verificatie naar Adobe I/O
+
+>[!IMPORTANT]
+>
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 1. De download en installeert de relevante versie van Postman voor uw OS bij [ Downloads van Postman ](https://www.postman.com/downloads/) {target="_blank"}.
 
@@ -123,7 +127,7 @@ In **postman.zip** dossier zijn de volgende dossiers:
 
 U hebt niet alles wat u in Postman nodig hebt om via de API&#39;s te gaan communiceren met Firefly Services.
 
-## Een toegangstoken aanvragen
+## 1.1.1.5 Een toegangstoken aanvragen
 
 Daarna, om ervoor te zorgen u behoorlijk voor authentiek wordt verklaard, moet u om een toegangstoken verzoeken.
 
@@ -158,7 +162,7 @@ U zou een gelijkaardige reactie moeten zien die de volgende informatie bevat:
 
 Het Adobe I/O **drager-teken** heeft een specifieke waarde (zeer lange access_token) en een vervalvenster en is nu geldig voor 24 uren. Dit betekent dat na 24 uur, als u Postman wilt gebruiken om aan Adobe I/O voor authentiek te verklaren, u een nieuw teken zult moeten produceren door dit verzoek opnieuw in werking te stellen.
 
-## Firefly Services API, Text 2 Image
+## 1.1.1.6 Firefly Services API, Text 2 Image
 
 Nu bent u klaar om uw eerste verzoek naar de APIs van de Diensten van de Firefly te verzenden.
 

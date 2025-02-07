@@ -1,11 +1,11 @@
 ---
-title: Overzicht
+title: Overzicht - Uitgebreide technische zelfstudie voor AEP en toepassingen
 description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van Gegevens, de Architecten van Gegevens, de Wetenschappers van Gegevens, de Ingenieurs van Orchestratie en Marketers om een volledig inzicht in de bedrijfswaarde van Adobe Experience Platform en al zijn Diensten van de Toepassing te krijgen.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ U kunt veel interessante video&#39;s van onze webinars van de Academie van de Te
 
 ## Voltooiing en certificering
 
-Deze zelfstudie maakt deel uit van een Adobe Certification-cursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com ](https://certification.adobe.com) te gaan.
+Deze zelfstudie maakt deel uit van een Adobe Certification-cursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com/courses/1258 ](https://certification.adobe.com/courses/1258) te gaan.
 
 Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, moet u een bewijs van voltooiing voorleggen zoals vermeld [ hier ](./completion.md).
 
