@@ -4,7 +4,7 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 
-Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met de Adobe Experience Platform Mobile SDK.
+Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK is een client-side SDK waarmee klanten van Adobe Experience Cloud via de Adobe Experience Platform-Edge Network kunnen communiceren met zowel Adobe-toepassingen als services van derden. Zie de [ documentatie van SDK van Adobe Experience Platform Mobiele ](https://developer.adobe.com/client-sdks/home/) voor meer gedetailleerde informatie.
+Experience Platform Mobile SDK is een client-side SDK die klanten van Adobe Experience Cloud in staat stelt te communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie de [ documentatie van Adobe Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/home/) voor meer gedetailleerde informatie.
 
 ![Architectuur](assets/architecture.png)
 
 
-Deze zelfstudie begeleidt u bij de implementatie van de Platform Mobile SDK in een voorbeeldtoepassing die Luma wordt genoemd. De [ app van de Luma ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit die u een realistische implementatie laat bouwen. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
+Deze zelfstudie begeleidt u door de implementatie van Platform Mobile SDK in een voorbeeldtoepassing die Luma wordt genoemd. De [ app van de Luma ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit die u een realistische implementatie laat bouwen. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
 
 De lessen zijn ontworpen voor iOS en geschreven in Swift/SwiftUI, maar veel van de concepten zijn ook van toepassing op Android™.
 
@@ -29,10 +29,10 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 * Maak een schema met gebruik van standaard- en aangepaste veldgroepen.
 * Stel een gegevensstroom in.
 * Configureer een eigenschap voor een mobiele tag.
-* Opstelling een dataset van het Experience Platform (facultatief).
+* Stel een Experience Platform-gegevensset in (optioneel).
 * Tagextensies installeren en implementeren in een app.
-* Ga correct de parameters van het Experience Cloud tot a [ webview ](web-views.md) over.
-* Valideer de implementatie gebruikend [ de Verzekering van Adobe Experience Platform ](assurance.md).
+* Ga correct de parameters van Experience Cloud tot a [ webview ](web-views.md) over.
+* Valideer de implementatie gebruikend [ Adobe Experience Platform Assurance ](assurance.md).
 * Voeg de volgende Adobe Experience Cloud-toepassingen/extensies toe:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Levenscyclusgegevensverzameling](lifecycle-data.md)
@@ -50,11 +50,11 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 
 >[!NOTE]
 >
->Een gelijkaardige multi-oplossingsleerprogramma is beschikbaar voor [ Web SDK ](../tutorial-web-sdk/overview.md).
+>Een gelijkaardige multi-oplossingsleerprogramma is beschikbaar voor [ SDK van het Web ](../tutorial-web-sdk/overview.md).
 
-## Vereisten
+## Machtigingen
 
-In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de vereiste gebruiker-vlakke toestemmingen hebt om de oefeningen te voltooien. Zo niet, dan moet u contact opnemen met de beheerder van de Adobe om toegang aan te vragen.
+In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrechten hebt om de oefeningen te voltooien. Als dat niet het geval is, moet u contact opnemen met uw Adobe-beheerder om toegang aan te vragen.
 
 * In de Inzameling van Gegevens, moet u:
    * **[!UICONTROL Platforms]**—machtigingsitem **[!UICONTROL Mobile]**
@@ -67,7 +67,7 @@ In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de verei
    * **[!UICONTROL Identity Management]** - machtigingsitems om naamruimten voor identiteiten te beheren en weer te geven.
    * **[!UICONTROL Data Collection]** - machtigingsitems om gegevensstromen te beheren en weer te geven.
 
-   * Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, en de verwante lessen uitvoert die u ook moet hebben:
+   * Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, en de bijbehorende lessen uitvoert, moet u ook het volgende doen:
       * **[!UICONTROL Data Management]** - toestemmingspunten om datasets te beheren en te bekijken.
       * Een ontwikkelings **zandbak** die u voor dit leerprogramma kunt gebruiken.
 
@@ -92,7 +92,7 @@ In deze lessen, wordt verondersteld dat u een Adobe identiteitskaart en de verei
 U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versie kan worden gedownload/worden gekloond van [ Github ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). U vindt twee mappen:
 
 
-1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de Mobiele code van SDK van het Experience Platform u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
 1. [ Einde ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}: een versie met de volledige implementatie voor verwijzing.
 
 >[!NOTE]
@@ -109,6 +109,6 @@ Laten we beginnen!
 
 >[!SUCCESS]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[creeer een schema XDM](create-schema.md)**

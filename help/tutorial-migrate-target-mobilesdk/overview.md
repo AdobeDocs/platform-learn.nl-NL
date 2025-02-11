@@ -3,20 +3,20 @@ title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele ex
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
 # Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 
-Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande implementaties van het Adobe Target Experience Platform voor mobiele SDK kunt migreren van de Adobe-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
+Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande Adobe Experience Platform Mobile SDK-implementaties kunt migreren van de Adobe Target-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
 
-Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen uw app-ervaringen met Adobe Target aan te passen. De extensie Decisioning is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die Target helpen integreren met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
+Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen uw app-ervaringen met Adobe Target aan te passen. De extensie Decisioning is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die helpen bij de integratie van Target met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
 
-![ Diagram die Mobiele SDK tonen die met Doel door de Edge Network met de Decisioning uitbreiding verbinden ](assets/datacollection.png)
+![ Diagram die Mobiele SDK tonen die met Doel door Edge Network met de Decisioning uitbreiding verbinden ](assets/datacollection.png)
 
 >[!INFO]
 >
@@ -30,12 +30,12 @@ Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiel
 
 Enkele voordelen van de Adobe Journey Optimizer-decisioning-extensie in vergelijking met de Target-extensie zijn:
 
-* Sneller het delen van publiek van [ Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Het integreren Doel met Journey Optimizer om [ levering van de Offer decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
-Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten af te dwingen. Platform Mobile SDK en de extensie Decisioning zijn een vereiste om deze Real-Time CDP-functies in uw mobiele kanaal te kunnen gebruiken.
+Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-Time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in Experience Platform worden ingevoerd en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten af te dwingen. Platform Mobile SDK en de extensie Decisioning zijn een vereiste om deze Real-Time CDP-functies in uw mobiele kanaal te kunnen gebruiken.
 
 ## Migratiestappen
 
@@ -45,8 +45,8 @@ Hoe eenvoudig of complex uw implementatie ook is, het is belangrijk dat u de hui
 
 Het migratieproces omvat de volgende belangrijke stappen:
 
-1. Evalueer uw huidige implementatie en bepaal een migratiebenadering
-1. De eerste componenten instellen voor verbinding met de Adobe Experience Platform-Edge Network
+1. Evalueer uw huidige implementatie
+1. De eerste componenten instellen om verbinding te maken met de Adobe Experience Platform Edge Network
 1. Werk de fundamentele implementatie bij om de uitbreiding van het Doel met de Decisioning uitbreiding te vervangen
 1. Verbeter de implementatie van SDK optimaliseren voor uw specifieke gebruiksgevallen. Dit kan het doorgeven van extra parameters, het gebruiken van reactietokens, en meer impliceren.
 1. Objecten in de interface Doel bijwerken, zoals profielscripts, activiteiten en publieksdefinities

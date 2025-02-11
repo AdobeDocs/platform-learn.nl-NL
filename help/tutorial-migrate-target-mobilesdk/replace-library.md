@@ -2,26 +2,36 @@
 title: SDK vervangen - migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 description: Leer hoe u de SDK kunt vervangen bij het migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Vervang de uitbreiding van het Doel met de uitbreiding van de Beslissing
+# De Target SDK vervangen door de Optimize SDK
 
-Leer hoe u uw on-page Adobe Target-implementatie kunt vervangen om te migreren van at.js naar Platform Web SDK. Een basisvervanging bestaat uit de volgende stappen:
+Leer hoe u de SDK&#39;s van Adobe Target vervangt door de SDK&#39;s van Optimize in uw mobiele implementatie. Een basisvervanging bestaat uit de volgende stappen:
 
+* Afhankelijkheden bijwerken in het Podfile of het `build.gradle` bestand
+* Import bijwerken
+* Toepassingscode bijwerken
 
-## Decisioning-extensie (SDK optimaliseren) integreren in uw mobiele toepassing
+>[!INFO]
+>
+>In het ecosysteem van Adobe Experience Platform Mobile SDK worden extensies geïmplementeerd door SDK&#39;s die zijn geïmporteerd in uw toepassingen en die verschillende namen kunnen hebben:
+>
+> * **SDK van het Doel** voert de **uitbreiding van Adobe Target** uit
+> * **optimaliseer SDK** voert **Adobe Journey Optimizer uit - Beslissende uitbreiding**
+
+## Afhankelijkheden bijwerken
 
 
 >[!BEGINTABS]
 
->[!TAB  de gebiedsdelen van de app voor Beslissing uitbreiding-Android ]
+>[!TAB  App gebiedsdelen voor Optimize SDK-Android ]
 
-`build.gradle` afhankelijkheden
+`build.gradle` afhankelijkheden na migreren
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB  de gebiedsdelen van de app voor Beslissing uitbreiding-iOS ]
+>[!TAB  App gebiedsdelen voor Optimize SDK-iOS ]
 
-`Podfile` afhankelijkheden
+`Podfile` afhankelijkheden na migreren
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB  App gebiedsdelen voor uitbreiding-Android van het Doel ]
+>[!TAB  App gebiedsdelen voor doel SDK-Android ]
 
-`build.gradle` afhankelijkheden
+`build.gradle` afhankelijkheden voordat er wordt gemigreerd
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB  App gebiedsdelen voor uitbreiding-iOS van het Doel ]
+>[!TAB  App gebiedsdelen voor doel SDK-iOS ]
 
-`Podfile` afhankelijkheden
+`Podfile` afhankelijkheden voordat er wordt gemigreerd
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## Inhoud vooraf verbergen-benadering bijwerken
+## Importeren en code bijwerken
 
 >[!BEGINTABS]
 
->[!TAB  Beslissende uitbreiding-Android ]
+>[!TAB  optimaliseer SDK-Android ]
 
-Java-initialisatiecode
+Java-initialisatiecode na migreren
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB  Beslissende uitbreiding-iOS ]
+>[!TAB  optimaliseer SDK-iOS ]
 
-Swift-initialisatiecode
+Snelle initialisatiecode na migreren
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB  uitbreiding-Android van het Doel ]
+>[!TAB  Doel SDK-Android ]
 
-Java-initialisatiecode
+Java-initialisatiecode voor migreren
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB  uitbreiding-iOS van het Doel ]
+>[!TAB  Doel SDK-iOS ]
 
-Swift-initialisatiecode
+Snelle initialisatiecode voor migratie
 
 ```Swift
 import AEPCore

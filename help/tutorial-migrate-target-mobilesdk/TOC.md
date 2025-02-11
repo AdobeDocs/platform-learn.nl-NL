@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [Eerste instelling uitvoeren](initial-setup.md)
 
-+ [Bibliotheek vervangen en vooraf verbergen](replace-library.md)
++ [SDK&#39;s vervangen](replace-library.md)
 
 + [Renderactiviteiten](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [Conversiegebeurtenissen bijhouden](track-events.md)
 
-+ [Ondersteuning voor verschillende domeinen inschakelen](cross-domain.md)
++ [Ondersteuning voor WebView inschakelen](cross-domain.md)
 
 + [Soorten publiek en profielscripts bijwerken](update-audiences.md)
 
