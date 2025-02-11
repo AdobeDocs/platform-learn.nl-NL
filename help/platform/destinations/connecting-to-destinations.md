@@ -1,22 +1,25 @@
 ---
-title: Verbinding maken met doelen
-description: Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, moet u eerst de verbindingen aan die partners maken. Deze video doorloopt die pr... (beschrijvingen moeten tussen 60 en 160 tekens lang zijn)
+title: Verbinden met doelen
+description: Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, moet u de verbindingen aan die partners vormen. Leer hoe in deze video.
 feature: Destinations
 topic: Administration
 role: Admin
 level: Beginner
 jira: KT-10291
 thumbnail: 342471.jpg
+last-substantial-update: 2025-02-10T00:00:00Z
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
 
-# Verbinding maken met doelen
+# Verbinden met doelen
 
-Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, moet u eerst de verbindingen aan die partners maken. Deze video doorloopt dat proces, typisch die door Admins wordt uitgevoerd. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en) te bezoeken.
+Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, moet u eerst de verbindingen aan die partners maken. Deze video doorloopt dat proces, typisch uitgevoerd door Beheerders.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)
+
+Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination) te bezoeken.

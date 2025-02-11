@@ -5,7 +5,7 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 7%
@@ -15,14 +15,14 @@ ht-degree: 7%
 
 # Adobe Experience Platform-tutorials {#tutorials}
 
-+ [Platform Tutorials](/help/platform/overview.md)
++ [Zelfstudies voor platformen](/help/platform/overview.md)
 + Introductie tot platform {#intro-to-platform}
    + [Een klantervaring met Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Achter de schermen: een klantervaring met Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Overzicht van Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Belangrijkste mogelijkheden](/help/platform/intro-to-platform/key-capabilities.md)
    + [Platformgebaseerde toepassingen](/help/platform/intro-to-platform/native-applications.md)
-   + [Integratie met Experience Cloud toepassingen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Integratie met Experience Cloud-toepassingen](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Hoofdgebruik](/help/platform/intro-to-platform/key-use-cases.md)
    + [Basisarchitectuur](/help/platform/intro-to-platform/basic-architecture.md)
    + [Gebruikersinterface](/help/platform/intro-to-platform/interface-tour.md)
@@ -32,9 +32,9 @@ ht-degree: 7%
    + [Eind-aan-eind demonstratie](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Overzicht van B2B edition](/help/platform/rtcdp/b2b-overview.md)
-   + [Campagnes ordenen met Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
+   + [Campagnes met Marketo Engage ordenen](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) {target="_blank"}
-+ [Verifiëren voor Experience Platform-API&#39;s](/help/platform/authentication/platform-api-authentication.md)
++ [Verifiëren voor Experience Platform API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
    + [Waarschuwingen gebruiken](/help/platform/admin/use-alerts.md)
@@ -121,7 +121,7 @@ ht-degree: 7%
    + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
 + Doelen {#destinations}
    + [Overzicht van doelen](/help/platform/destinations/understanding-destinations.md)
-   + [Verbinding maken met doelen](/help/platform/destinations/connecting-to-destinations.md)
+   + [Verbinden met doelen](/help/platform/destinations/connecting-to-destinations.md)
    + [Doelen maken en gegevens activeren](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Profielen en segmenten naar een doel activeren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Vorm een bestemming van de datasetuitvoer](/help/platform/destinations/configure-dataset-export-destination.md)
@@ -137,7 +137,7 @@ ht-degree: 7%
       + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Real-Time CDP-segmenten in doel gebruiken](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Real-Time CDP-profielkenmerken gebruiken in Doel](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Gegevens activeren voor webinar van toepassingen zonder Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Gegevens activeren voor webinar van niet-Adobe-toepassingen](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identiteiten {#identities}
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identiteitsgegevens labelen, opnemen en verifiëren](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -147,7 +147,7 @@ ht-degree: 7%
 + Intelligente services {#intelligent-services}
    + [Overzicht](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Overzicht van Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Waarde van Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Attributie AI-waarde](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Attribution AI configureren](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Scores en inzichten van Attribution AI gebruiken](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
    + [AI-klantoverzicht](/help/platform/intelligent-services/introduction-to-customer-ai.md)
@@ -176,13 +176,13 @@ ht-degree: 7%
    + [Profielen verwijderen](/help/platform/profiles/delete-profiles.md)
    + [Een specifiek kenmerk bijwerken met behulp van upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy en beveiliging {#privacy}
-   + [Inleiding tot de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Inleiding tot Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Identiteitsgegevens in privacyverzoeken](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [Privacy JavaScript-bibliotheek](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Privacy-labels in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
-   + [Aan de slag met de Privacy Service-API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [UI PRIVACY SERVICE](/help/platform/privacy/using-privacy-services-ui.md)
-   + [Privacy Service-API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Aan de slag met de Privacy Service API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [Abonneren op privacygebeurtenissen](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [Door de klant beheerde sleutels instellen](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [10 overwegingen voor Verantwoordelijk beheer van klantgegevens](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
@@ -233,7 +233,7 @@ ht-degree: 7%
    + [Overzicht](/help/platform/use-case-playbooks/overview.md)
    + [Een sandbox voor een afspeelboek configureren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Een instantie voor een afspeelboek maken en publiceren](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Integraties van Experiencen Cloud {#experience-cloud}
++ Experience Cloud-integratie {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
