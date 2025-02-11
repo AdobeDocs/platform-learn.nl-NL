@@ -4,9 +4,9 @@ description: Stichting - de Ingestie van Gegevens - vorm Schema's en reeks Herke
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2891'
+source-wordcount: '2885'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Deze schemastructuur is nu ingesteld.
 ![ Ingestie van Gegevens ](./images/schemastructurem.png)
 
 Uw nieuwe [!UICONTROL Field Group] is nog steeds leeg, dus u moet nu velden aan die [!UICONTROL Field Group] toevoegen.
-In [!UICONTROL Field Group] - lijst, klik uw douane [!UICONTROL Field Group], dan klik **doorbladeren**.
+Klik in de lijst [!UICONTROL Field Group] op uw aangepaste [!UICONTROL Field Group] .
 
 ![ Ingestie van Gegevens ](./images/schemastructurem.png)
 
@@ -165,7 +165,7 @@ Klik **toepassen**.
 
 ![ Ingestie van Gegevens ](./images/tenantfielddef.png)
 
-U ziet nu een nieuw object in uw schema, dat een aangepast object **[!UICONTROL object]** in het schema vertegenwoordigt en dat naar uw Adobe Experience Platform Tenant-id is benoemd. De Adobe Experience Platform-huurder-id is `--aepTenantId--` en is ongelijk voor elke AEP-instantie.
+U ziet nu een nieuw object in uw schema, dat een aangepast object **[!UICONTROL object]** in het schema vertegenwoordigt en dat naar uw Adobe Experience Platform Tenant-id is benoemd. De Adobe Experience Platform-huurder-id is `--aepTenantId--` en is uniek voor elke AEP-instantie.
 
 ![ Ingestie van Gegevens ](./images/tenant.png)
 
@@ -176,26 +176,26 @@ U zult nu een 3 nieuw gebied onder die huurder, in het **identificatie** voorwer
 Gebruik de onderstaande informatie om deze drie nieuwe velden te maken onder het object **[!UICONTROL identification]** :
 
 - ecid:
-   - Veldnaam: **[!UICONTROL ecid]**
-   - Weergavenaam: **[!UICONTROL ecid]**
+   - Veldnaam: **`--aepUserLdap--_ecid`**
+   - Weergavenaam: **`--aepUserLdap--ecid`**
    - Type: **[!UICONTROL String]**
    - Veldgroep: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - Veldnaam: **[!UICONTROL emailId]**
-   - Weergavenaam: **[!UICONTROL emailId]**
+   - Veldnaam: **`--aepUserLdap--_emailId`**
+   - Weergavenaam: **`--aepUserLdap--_emailId`**
    - Type: **[!UICONTROL String]**
    - Veldgroep: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilist
-   - Veldnaam: **[!UICONTROL mobilenr]**
-   - Weergavenaam: **[!UICONTROL mobilenr]**
+   - Veldnaam: **`--aepUserLdap--_mobilenr`**
+   - Weergavenaam: **`--aepUserLdap--_mobilenr`**
    - Type: **[!UICONTROL String]**
    - Veldgroep: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 Dit is hoe elk gebied voor uw aanvankelijke gebiedsconfiguratie zou moeten kijken.
 
-- mobilist
+- `--aepUserLdap--_mobilenr`
 
 ![ Ingestie van Gegevens ](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Als u het veld wilt opslaan, schuift u omlaag in de **[!UICONTROL Field Properti
 
 ![ Ingestie van Gegevens ](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![ Ingestie van Gegevens ](./images/ecidfield.png)
 
 Vergeet niet neer te scrollen en **te klikken** van toepassing zijn.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![ Ingestie van Gegevens ](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ De drie velden moeten nu worden gedefinieerd als **[!UICONTROL Identity]** -veld
 
 Voer de volgende stappen uit om deze velden als **[!UICONTROL Identity]** -velden te definiëren:
 
-- Selecteer het veld **[!UICONTROL emailId]** .
+- Selecteer het veld **`--aepUserLdap--_emailId`** .
 - Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in.
 
 ![ Ingestie van Gegevens ](./images/emailidid.png)
@@ -236,15 +236,15 @@ Voer de volgende stappen uit om deze velden als **[!UICONTROL Identity]** -velde
 
 ![ Ingestie van Gegevens ](./images/emailidprimidns.png)
 
-Vervolgens moet u de andere velden voor **[!UICONTROL ecid]** en **[!UICONTROL mobilenr]** definiëren als standaard-id&#39;s.
+Vervolgens moet u de andere velden voor **`--aepUserLdap--_ecid`** en **`--aepUserLdap--_mobilenr`** definiëren als standaard-id&#39;s.
 
-Selecteer het veld **[!UICONTROL ecid]** . Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in.
+Selecteer het veld **`--aepUserLdap--_ecid`** . Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in.
 Selecteer vervolgens de naamruimte **[!UICONTROL ECID]** in de lijst met **[!UICONTROL Namespaces]** .
 Klik op **[!UICONTROL Apply]** om de wijzigingen op te slaan.
 
 ![ Ingestie van Gegevens ](./images/ecidid.png)
 
-Selecteer het veld **[!UICONTROL mobilenr]** . Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in.
+Selecteer het veld **`--aepUserLdap--_mobilenr`** . Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in.
 Selecteer de naamruimte **[!UICONTROL Phone]** in de lijst van **[!UICONTROL Namespaces]** .
 Klik op **[!UICONTROL Apply]** om de wijzigingen op te slaan.
 
@@ -415,12 +415,12 @@ U hebt nu een leeg veld. U moet het bovenstaande veld configureren zoals aangege
 
 - ecid:
 
-   - Veldnaam: **[!UICONTROL ecidweb]**
-   - Weergavenaam: **[!UICONTROL ecidweb]**
+   - Veldnaam: **`--aepUserLdap--_ecidweb`**
+   - Weergavenaam: **`--aepUserLdap--_ecidweb`**
    - Type: **[!UICONTROL String]**
    - Veldgroep: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-Zo moet het veld [!UICONTROL ecid] er voor zorgen dat de eerste veldconfiguratie wordt geactiveerd:
+Zo moet het veld `--aepUserLdap--_ecidweb` er voor zorgen dat de eerste veldconfiguratie wordt geactiveerd:
 
 ![ Ingestie van Gegevens ](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ U hebt nu een nieuw veld, maar dit veld is nog niet gedefinieerd als een **[!UIC
 
 ![ Ingestie van Gegevens ](./images/3fieldsee.png)
 
-Als u deze velden wilt definiëren als **[!UICONTROL Identity]** -velden, selecteert u het veld **[!UICONTROL ecid]** .
+Als u deze velden wilt definiëren als **[!UICONTROL Identity]** -velden, selecteert u het veld **`--aepUserLdap--_ecidweb`** .
 Schuif in de veldeigenschappen aan de rechterkant omlaag totdat u **[!UICONTROL Identity]** ziet. Schakel het selectievakje **[!UICONTROL Identity]** in en schakel het selectievakje **[!UICONTROL Primary Identity]** in.
 Selecteer de naamruimte **[!UICONTROL ECID]** in de lijst van **[!UICONTROL Namespaces]** .
 

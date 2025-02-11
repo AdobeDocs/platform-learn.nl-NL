@@ -3,15 +3,15 @@ title: Adobe Journey Optimizer-vertaalservices
 description: Adobe Journey Optimizer-vertaalservices
 kt: 5342
 doc-type: tutorial
-exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
 
 ---
 
-# 3.2 Adobe Journey Optimizer Translation Services
+# 3.5 Adobe Journey Optimizer: vertaalservices
 
 ## Leerdoelen
 
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 ## Uitoefening
 
-[3.2.1 Vertaalbureau](./ex1.md)
+[3.5.1 Vertaalbureau](./ex1.md)
 
 In deze oefening, zult u uw Vertaalleverancier vormen gebruikend de Vertaler van Microsoft en zal het opstelling in Adobe Journey Optimizer.
 
-[3.2.2 Vertaalproject](./ex2.md)
+[3.5.2 Vertaalproject](./ex2.md)
 
 In deze oefening, zult u uw Vertaalleverancier vormen gebruikend de Vertaler van Microsoft en zal het opstelling in Adobe Journey Optimizer.
 
-[3.2.3 Talen toevoegen aan uw e-mail](./ex3.md)
+[3.5.3 Talen toevoegen aan uw e-mail](./ex3.md)
 
 In deze oefening, zult u talen aan e-mail in uw campagne toevoegen.
 

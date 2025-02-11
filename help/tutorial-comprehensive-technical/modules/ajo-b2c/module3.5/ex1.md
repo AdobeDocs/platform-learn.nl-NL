@@ -1,19 +1,19 @@
 ---
-title: AJO-vertaalprovider
-description: AJO-vertaalprovider
+title: Aan de slag met AJO Translation Services
+description: Aan de slag met AJO Translation Services
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# 3.2.1 Vertaalbureau
+# 3.5.1 Vertaalbureau
 
-## 3.2.1.1 Microsoft Azure Translator configureren
+## 3.5.1.1 Microsoft Azure Translator configureren
 
 Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home).
 
@@ -47,7 +47,7 @@ In het linkermenu, ga naar **Beheer van het Middel** > **Sleutels en Eindpunt**.
 
 ![ Vertalingen ](./images/transl7.png)
 
-## 3.2.1.2 Landinstellingenwoordenboek
+## 3.5.1.2 Landinstellingenwoordenboek
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Journey Optimizer**.
 
@@ -61,7 +61,7 @@ Dan moet je dit zien.
 
 ![ Vertalingen ](./images/locale2.png)
 
-## 3.2.1.3 De aanbieder van vertalingen configureren in AJO
+## 3.5.1.3 De aanbieder van vertalingen configureren in AJO
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Journey Optimizer**.
 
@@ -91,7 +91,7 @@ Uw **Vertaalleverancier** is nu klaar om te worden gebruikt.
 
 ![ Vertalingen ](./images/transl13.png)
 
-## 3.2.1.4 Het vertaalproject configureren
+## 3.5.1.4 Vertaalproject configureren
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Journey Optimizer**.
 
@@ -125,7 +125,7 @@ Uw **Vertalingen** project is nu klaar om worden gebruikt.
 
 ![ Vertalingen ](./images/ajoprovider9.png)
 
-## 3.2.1.5 Taalinstellingen configureren
+## 3.5.1.5 Taalinstellingen configureren
 
 Ga naar **Kanalen** > **Algemene Montages** > **Montages van de Taal**. Klik **creeer taalmontages**.
 
@@ -171,8 +171,8 @@ U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 3.2.2 tot uw Campagne ](./ex2.md) leiden
+Ga naar [ 3.5.2 creeer uw Campagne ](./ex2.md)
 
-Ga terug naar [ Module 3.2 ](./ajotranslationsvcs.md){target="_blank"}
+Ga terug naar [ Module 3.5 ](./ajotranslationsvcs.md){target="_blank"}
 
 Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

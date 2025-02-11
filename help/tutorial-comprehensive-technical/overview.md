@@ -3,9 +3,9 @@ title: Overzicht - Uitgebreide technische zelfstudie voor AEP en toepassingen
 description: Het uitgangspunt voor de Ingenieurs van Gegevens, de Analysten van Gegevens, de Architecten van Gegevens, de Wetenschappers van Gegevens, de Ingenieurs van Orchestratie en Marketers om een volledig inzicht in de bedrijfswaarde van Adobe Experience Platform en al zijn Diensten van de Toepassing te krijgen.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Overzicht
 
-Deze zelfstudie is het perfecte startpunt voor gegevensengineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers en Marketers om een volledig inzicht te krijgen in de bedrijfswaarde van Adobe Experience Platform en alle toepassingsservices. Elke les concentreert zich op een echte uitdaging ondernemingen in het complexe ecosysteem van verpersoonlijking van vandaag zien en onderbreekt hoe het Experience Platform die uitdaging in diverse hands-on oefeningen oplost.
+Deze zelfstudie is het perfecte startpunt voor gegevensengineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers en Marketers om een volledig inzicht te krijgen in de bedrijfswaarde van Adobe Experience Platform en alle toepassingsservices. Elke les richt zich op een echte uitdaging waarmee bedrijven worden geconfronteerd in het complexe ecosysteem van personalisatie van vandaag en onderbreekt hoe Experience Platform die uitdaging oplost in diverse praktische oefeningen.
 
 Deze zelfstudie is zeer divers en biedt duidelijke inzichten in de volgende toepassingen:
 
@@ -26,7 +26,7 @@ Deze zelfstudie is zeer divers en biedt duidelijke inzichten in de volgende toep
 - Adobe Journey Optimizer
 - Customer Journey Analytics
 
-Deze zelfstudie richt zich niet alleen op Adobe toepassingen, maar houdt rekening met het bredere ecosysteem waarin merken werken. Om dat te doen, in sommige lessen is er een nadruk op hoe _niet-Adobe_ toepassingen met Adobe Experience Platform integreren. Als zodanig krijgt u meer inzicht in de manier waarop de volgende toepassingen samenwerken met Adobe Experience Platform:
+Deze zelfstudie richt zich niet alleen op Adobe-toepassingen, maar houdt rekening met het bredere ecosysteem waarin merken werken. Om dat te doen, in sommige lessen is er een nadruk op hoe _niet-Adobe_ toepassingen met Adobe Experience Platform integreren. Als zodanig krijgt u meer inzicht in de manier waarop de volgende toepassingen samenwerken met Adobe Experience Platform:
 
 - Amazon: AWS Lambda, AWS S3, AWS Kinesis
 - Google: Google Cloud Platform, Google BigQuery, Google Display&amp;Video 360, Google AdWords
@@ -48,7 +48,7 @@ Nadat u de oefeningen in deze zelfstudie hebt voltooid, kunt u het volgende doen
 - SQL gebruiken om query&#39;s uit te voeren op uw gegevens in Adobe Experience Platform
 - Realtime, op trigger gebaseerde reizen configureren en uitvoeren
 - Gebruik Real-time CDP om actie te ondernemen door een publiek aan diverse bestemmingen te activeren
-- Gebruik Customer Journey Analytics om te rapporteren over omnichannel klantgegevens uit verschillende bronnen, waaronder Google BigQuery
+- Customer Journey Analytics gebruiken om te rapporteren over omnichannel klantgegevens uit verschillende bronnen, waaronder Google BigQuery
 
 ## Vereisten
 
@@ -64,7 +64,7 @@ U kunt veel interessante video&#39;s van onze webinars van de Academie van de Te
 
 ## Voltooiing en certificering
 
-Deze zelfstudie maakt deel uit van een Adobe Certification-cursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com/courses/1258 ](https://certification.adobe.com/courses/1258) te gaan.
+Deze zelfstudie maakt deel uit van een Adobe-certificeringscursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com/courses/1258 ](https://certification.adobe.com/courses/1258) te gaan.
 
 Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, moet u een bewijs van voltooiing voorleggen zoals vermeld [ hier ](./completion.md).
 
@@ -163,15 +163,21 @@ In deze module leert u alles wat er over Journey Optimizer te weten is, wat bedr
 
 **de Investering van de Tijd:** 120 minuten
 
+[3.5 Adobe Journey Optimizer: vertaalservices](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+In deze module leert u hoe u de vertaalservices in Adobe Journey Optimizer kunt instellen en gebruiken om uw berichten te lokaliseren voor uw klanten.
+
+**de Investering van de Tijd:** 60 minuten
+
 ### 4. Adobe Customer Journey Analytics
 
-[4.1 Customer Journey Analytics: bouw een dashboard met Analysis Workspace bovenop Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
+[4.1 Customer Journey Analytics: maak een dashboard met Analysis Workspace bovenop Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
 
 In deze module, zult u Online aan Off-line inzichten door een dashboard te vormen die omni-kanaalgegevens zoals de Interacties van de Website, Mobiele Interacties van de App, Interacties van het Centrum van de Vraag, Interacties In-Store en veel meer bevatten.
 
 **de Investering van de Tijd:** 120 minuten
 
-[4.2 Customer Journey Analytics: Gegevens van Googles Analytics in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source-connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
+[4.2 Customer Journey Analytics: Google Analytics-gegevens in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
 
 In deze module stelt u uw eigen exemplaar van Google Cloud Platform in, laadt u demogegevens in het Google Cloud Platform en gebruikt u vervolgens de BigQuery Source Connector om deze gegevens van het Google Cloud Platform in Adobe Experience Platform in te voeren. Tot slot zult u Customer Journey Analytics gebruiken om die gegevens te visualiseren.
 

@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel - Visualiseer uw eigen real-tim
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In deze oefening, zult u Postman en Adobe I/O gebruiken om Adobe Experience Plat
 
 ## Context
 
-In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande publiekslidmaatschappen. De getoonde gegevens kunnen van overal, van de toepassingen van de Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het ervaringssysteem.
+In het profiel van de Klant in real time, worden alle profielgegevens getoond naast gebeurtenisgegevens, evenals bestaande publiekslidmaatschappen. De getoonde gegevens kunnen van overal, van toepassingen van Adobe en externe oplossingen komen. Dit is de krachtigste weergave in Adobe Experience Platform, het ervaringssysteem.
 
-Het profiel van de Klant in real time kan door alle toepassingen van de Adobe, maar ook door externe oplossingen zoals de Centers van de Vraag of in-store clienteling apps worden verbruikt. De manier om dit te doen is die externe oplossingen met Adobe Experience Platform APIs te verbinden.
+Het profiel van de Klant in real time kan door alle toepassingen van Adobe, maar ook door externe oplossingen zoals de Centers van de Vraag of in-store clienteling apps worden verbruikt. De manier om dit te doen is die externe oplossingen met Adobe Experience Platform APIs te verbinden.
 
 ## Uw id&#39;s
 
@@ -38,33 +38,33 @@ Op het röntgenpaneel, kunnen wij vier verschillende combinaties identiteitskaar
 
 Onthoud deze id&#39;s voor de volgende stap.
 
-## Uw Adobe I/O-project configureren
+## Adobe I/O-project configureren
 
-In deze oefening zult u Adobe I/O vrij intensief aan vraag tegen Platform APIs gebruiken. Volg de onderstaande stappen om Adobe I/O in te stellen.
+In deze oefening zult u Adobe I/O vrij intensief aan vraag tegen Platform APIs gebruiken. Volg onderstaande stappen om Adobe I/O in te stellen.
 
 Ga naar [ https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
 
-![ Adobe I/O Nieuwe Integratie ](./images/iohome.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png)
 
 Selecteer de juiste Adobe Experience Platform-instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` . Klik **creëren nieuw project**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/iocomp.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png)
 
 Selecteer **+ toevoegen aan Project** en selecteren **API**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/adobe_io_access_api.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png)
 
 U zult dan dit zien:
 
-![ Adobe I/O Nieuwe Integratie ](./images/api1.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png)
 
 Selecteer **Experience Platform API** en klik **daarna**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api3.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png)
 
 Dit zie je nu. Geef een naam op voor de referentie: `--aepUserLdap-- - OAuth credential` . Klik **daarna**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api4.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png)
 
 Vervolgens moet u een productprofiel selecteren waarmee wordt gedefinieerd welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -76,39 +76,43 @@ Selecteer de vereiste productprofielen.
 
 Klik **sparen Vormde API**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api9.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png)
 
-Uw Adobe I/O-integratie is nu klaar.
+Uw Adobe I/O-integratie is nu gereed.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api11.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api11.png)
 
 Klik de **Download voor Postman** knoop en klik dan **OAuth Server-aan-Server** om een milieu van Postman te downloaden (wacht tot het milieu wordt gedownload, kan dit een paar seconden) nemen.
 
-![ Adobe I/O Nieuwe Integratie ](./images/iopm.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopm.png)
 
 Uw IO-project heeft momenteel een algemene naam. Je moet je integratie een vriendelijke naam geven. Klik op **Project X** (of gelijkaardige naam) zoals vermeld
 
-![ Adobe I/O Nieuwe Integratie ](./images/api13.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api13.png)
 
 Klik **uitgeven Project**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api14.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api14.png)
 
 Voer een naam en beschrijving in voor uw integratie: `--aepUserLdap-- AEP Tutorial` .
 
 Klik **sparen**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api15.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api15.png)
 
 Uw Adobe I/O-integratie is nu voltooid.
 
-![ Adobe I/O Nieuwe Integratie ](./images/api16.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api16.png)
 
 >[!NOTE]
 >
->Er is een extra stap om ervoor te zorgen dat dit Adobe I/O project toegang tot de toestemmingsmontages van Adobe Experience Platform heeft. De API-referentie van uw project moet worden toegevoegd aan de interface voor machtigingen van Adobe Experience Platform, waarvoor toegangsrechten voor systeembeheerders vereist zijn. De stappen worden hieronder beschreven, maar u kunt uw Beheerder van het Systeem moeten contacteren om dit voor u te laten verwerken voor het geval u niet de vereiste toegangsrechten hebt.
+>Er is een extra stap om ervoor te zorgen dat dit Adobe I/O-project toegang heeft tot de machtigingsinstellingen voor Adobe Experience Platform. De API-referentie van uw project moet worden toegevoegd aan de interface voor machtigingen van Adobe Experience Platform, waarvoor toegangsrechten voor systeembeheerders vereist zijn. De stappen worden hieronder beschreven, maar u kunt uw Beheerder van het Systeem moeten contacteren om dit voor u te laten verwerken voor het geval u niet de vereiste toegangsrechten hebt.
 
 ## AEP-machtigingen voor API-referentie
+
+>[!IMPORTANT]
+>
+>Als u de toegangsrechten van Admin van het Systeem niet hebt, zult u deze stap zelf niet kunnen uitvoeren en u zult geen toestemming hebben om tot de **Toestemmingen** UI toegang te hebben. Neem in dat geval contact op met uw systeembeheerder of post uw vraag in het ondersteuningskanaal van uw organisatie.
 
 Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
@@ -128,7 +132,7 @@ Klik op **+ Add API credentials**.
 
 ![ Toestemmingen ](./images/perm3.png)
 
-Selecteer het pas gecreëerde project van Adobe I/O en klik **sparen**.
+Selecteer het onlangs gecreeerde project van Adobe I/O en klik **sparen**.
 
 ![ Toestemmingen ](./images/perm4.png)
 
@@ -136,13 +140,13 @@ Selecteer het pas gecreëerde project van Adobe I/O en klik **sparen**.
 
 >[!IMPORTANT]
 >
->Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
+>Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/).
 
 Download en installeer de relevante versie van Postman voor uw besturingssysteem.
 
-![ Adobe I/O Nieuwe Integratie ](./images/getstarted.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/getstarted.png)
 
 Start de toepassing nadat u Postman hebt geïnstalleerd.
 
@@ -151,7 +155,7 @@ In Postman zijn er twee concepten: omgevingen en verzamelingen.
 - Het milieu bevat al uw milieuvariabelen die min of meer samenhangend zijn. In het milieu, zult u dingen zoals IMSOrg van ons milieu van het Platform, naast veiligheidsgeloofsbrieven zoals uw Privé Sleutel en anderen vinden. Het omgevingsbestand is het bestand dat u tijdens de vorige Adobe I/O-installatie hebt gedownload. De naam ziet er als volgt uit: **`oauth_server_to_server.postman_environment.json`** .
 
 - De verzameling bevat een aantal API-aanvragen die u kunt gebruiken. We gebruiken twee verzamelingen
-   - 1 Verzameling voor Authentificatie aan Adobe I/O
+   - 1 Verzameling voor verificatie naar Adobe I/O
    - 1 Verzameling voor de oefeningen in deze module
    - 1 inzameling voor de oefeningen in de module van Real-Time CDP, voor de Authoring van de Bestemming
 
@@ -165,23 +169,23 @@ In dit {**dossier 0} postman.zip, zult u de volgende dossiers vinden:**
 
 Pak het {**dossier 0} postman.zip uit en sla deze 3 dossiers in een omslag op uw Desktop, samen met het gedownloade milieu van Postman van Adobe I/O op. U hebt deze 4 bestanden nodig in die map:**
 
-![ Adobe I/O Nieuwe Integratie ](./images/pmfolder.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/pmfolder.png)
 
 Ga terug naar Postman. Klik **Invoer**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/postmanui.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/postmanui.png)
 
 Klik **dossiers**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/choosefiles.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/choosefiles.png)
 
 Navigeer naar de map op uw bureaublad waarin u de vier gedownloade bestanden hebt uitgepakt. Selecteer deze 4 dossiers tezelfdertijd en klik **Open**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/selectfiles.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/selectfiles.png)
 
 Na het klikken **Open**, zal Postman u een overzicht van het Milieu en de Inzamelingen tonen u op het punt staat in te voeren. Klik **Invoer**.
 
-![ Adobe I/O Nieuwe Integratie ](./images/impconfirm.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/impconfirm.png)
 
 U hebt nu alles wat u nodig hebt in Postman om te gaan communiceren met Adobe Experience Platform via de API&#39;s.
 
@@ -195,7 +199,7 @@ De geselecteerde omgeving moet een naam hebben die vergelijkbaar is met deze, `-
 
 Uw Postman-omgeving en -verzamelingen zijn nu geconfigureerd en werken. U kunt nu verifiëren van Postman naar Adobe I/O.
 
-In de **Adobe IO - OAuth** inzameling, selecteer het verzoek met de naam **POST - krijg het Token van de Toegang**. Klik **verzenden**.
+In **Adobe IO - OAuth** inzameling, selecteer het verzoek met de naam **POST - krijg het Symbolische van de Toegang**. Klik **verzenden**.
 
 ![ Postman ](./images/ioauth.png)
 
@@ -213,7 +217,7 @@ Als uw configuratie succesvol was, zou u een gelijkaardige reactie moeten zien d
 
 Adobe I/O heeft u a **drager** - teken, met een specifieke waarde (zeer lange access_token) en een vervalvenster gegeven.
 
-De token die we hebben ontvangen, is nu 24 uur geldig. Dit betekent dat na 24 uur, als u Postman wilt gebruiken om aan Adobe I/O voor authentiek te verklaren, u een nieuw teken zult moeten produceren door dit verzoek opnieuw in werking te stellen.
+De token die we hebben ontvangen, is nu 24 uur geldig. Dit betekent dat als u Postman na 24 uur wilt gebruiken voor verificatie voor Adobe I/O, u een nieuwe token moet genereren door dit verzoek opnieuw uit te voeren.
 
 ## Real-time klantprofiel-API, schema: profiel
 
@@ -223,7 +227,7 @@ In Postman, bepaal de plaats van de inzameling **Leerprogramma AEP**.
 
 ![ Postman ](./images/coll_enablement.png)
 
-In **1. De verenigde Dienst van het Profiel**, klik het eerste verzoek met de naam **UPS - het Profiel van de GET door identiteitskaart van de Entiteit &amp; NS**.
+In **1. De verenigde Dienst van het Profiel**, klik het eerste verzoek met de naam **UPS - het Profiel van GET door identiteitskaart van de Entiteit &amp; NS**.
 
 ![ Postman ](./images/upscall.png)
 
@@ -476,7 +480,7 @@ In Postman, bepaal de plaats van de inzameling **Leerprogramma AEP**.
 
 ![ Postman ](./images/coll_enablement.png)
 
-In **1. De verenigde Dienst van het Profiel**, selecteer het tweede verzoek met de naam **UPS - het Profiel van de GET &amp; EE door identiteitskaart van de Entiteit &amp; NS**.
+In **1. De verenigde Dienst van het Profiel**, selecteer het tweede verzoek met de naam **UPS - het Profiel van GET &amp; EE door identiteitskaart van de Entiteit &amp; NS**.
 
 ![ Postman ](./images/upseecall.png)
 

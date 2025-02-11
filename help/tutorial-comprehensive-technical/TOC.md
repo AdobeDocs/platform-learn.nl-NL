@@ -5,9 +5,9 @@ user-guide-description: Een praktische zelfstudie waarin veel aspecten van Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c85cd82a8d66b456a36d4915c1067f5c195139d1
+source-git-commit: cc53577700ed66a8f3f47142e0148af34c4d9135
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [De Chrome-extensie installeren voor de documentatie van het Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [De Chrome-extensie installeren voor de Experience League-documentatie](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
       + [Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
       + [Uw gegevensstroom maken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
       + [De website gebruiken](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
@@ -95,7 +95,7 @@ ht-degree: 2%
       + [2.5.2 Werk uw DataStream bij om gegevens ter beschikking te stellen van uw Adobe Experience Platform-eigenschap van de Server van de Gegevensverzameling](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3 Een aangepaste webhaak maken en configureren](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
       + [2.5.4 Voorwaartse gebeurtenissen naar GCP Pub/Sub](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5 Gebeurtenissen doorsturen naar AWS Kinesis en AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.5 Gebeurtenissen doorsturen naar AWS Kinesis &amp; AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6 Gegevens streamen van Apache Kafka naar Real-Time CDP {#module26}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)
@@ -121,12 +121,12 @@ ht-degree: 2%
       + [3.2.4 Maak uw reis en uw berichten](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/ex4.md)
       + [3.2.5 Trigger je reis](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/summary.md)
-   + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
+   + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/offer-decisioning.md)
-      + [3.3.1 Offer decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
+      + [3.3.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
       + [3.3.2 Configureer uw aanbiedingen en besluit](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex2.md)
-      + [3.3.3 Bereid uw bezit van de Cliënt van de Gegevensverzameling van Adobe Experience Platform en de opstelling van het Web SDK voor Offer decisioning voor](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
-      + [3.3.4 Combineer Adobe Target en Offer decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
+      + [3.3.3 Bereid uw Adobe Experience Platform Data Collection Client-eigenschap en Web SDK-instelling voor Offer Decisioning voor](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
+      + [3.3.4 Combineer Adobe Target en Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
       + [3.3.5 Gebruik uw beslissing in een e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex5.md)
       + [3.3.6 Test uw besluit met behulp van de API](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex6.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/summary.md)
@@ -137,6 +137,12 @@ ht-degree: 2%
       + [3.4.3 Pas segment-gebaseerde verpersoonlijking in een e-mailbericht toe](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 Pushmeldingen instellen en gebruiken](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
+   + 3.5 Adobe Journey Optimizer: Vertaalservices {#module35}
+      + [Overzicht](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+      + [3.5.1 Vertaalbureau](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
+      + [3.5.2 Uw campagne maken](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
+      + [3.5.3 Talen toevoegen aan uw e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
+      + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
    + 4.1 Customer Journey Analytics: een dashboard maken met Analysis Workspace {#module41}
@@ -144,16 +150,16 @@ ht-degree: 2%
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Connect Adobe Experience Platform-gegevenssets in Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
       + [4.1.3 Een gegevensweergave maken](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex3.md)
-      + [4.1.4 Gegevensvoorbereiding in de Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex4.md)
+      + [4.1.4 Gegevensvoorbereiding in Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex4.md)
       + [4.1.5 Visualisatie met Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
-   + 4.2 Customer Journey Analytics: gegevens over Googles Analytics in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source-connector {#module42}
+   + 4.2 Customer Journey Analytics: Google Analytics-gegevens verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source Connector {#module42}
       + [Overzicht](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
       + [4.2.1 Start Google Cloud Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2 Maak uw eerste query in BigQuery](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)
       + [4.2.3 GCP en BigQuery aansluiten op Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex3.md)
       + [4.2.4 Gegevens laden van BigQuery naar Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex4.md)
-      + [4.2.5 Gegevens van Googles Analytics analyseren met behulp van Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex5.md)
+      + [4.2.5 Google Analytics-gegevens analyseren met Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/summary.md)
 
 + 5 Data Distiller {#datadistiller}
@@ -164,7 +170,7 @@ ht-degree: 2%
       + [5.1.3 Het gebruiken van de Dienst van de Vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
       + [5.1.4 Vragen, query&#39;s, query&#39;s... en churn-analyse](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
       + [5.1.5 Genereer een dataset van een vraag](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6 Query-service en -Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.6 Query-service en Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
       + [5.1.7 Query-service en Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
       + [5.1.8 API voor Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [Samenvatting en voordelen](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)

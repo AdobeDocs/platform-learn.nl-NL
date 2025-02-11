@@ -1,17 +1,17 @@
 ---
-title: Talen aan uw e-mail toevoegen met AJO-vertaalservices
-description: Talen aan uw e-mail toevoegen met AJO-vertaalservices
+title: AJO-vertaalservices
+description: AJO-vertaalservices
 kt: 5342
 doc-type: tutorial
-exl-id: 806e104a-3df9-4711-bc16-026f53b51118
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: e957856f-d6e5-4b39-ac0a-b9249f47eac4
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# 3.2.3 Talen toevoegen aan uw e-mail
+# 3.5.3 Talen toevoegen aan uw e-mail
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Journey Optimizer**.
 
@@ -91,6 +91,6 @@ Je hebt deze oefening nu afgerond.
 
 Ga naar [ Samenvatting &amp; Voordelen ](./summary.md)
 
-Ga terug naar [ Module 3.2 ](./ajotranslationsvcs.md){target="_blank"}
+Ga terug naar [ Module 3.5 ](./ajotranslationsvcs.md){target="_blank"}
 
 Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

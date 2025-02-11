@@ -3,15 +3,15 @@ title: Maak uw campagne met AJO Translation Services
 description: Maak uw campagne met AJO Translation Services
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2 Uw campagne maken
+# 3.5.2 Uw campagne maken
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw geri
 
 ![ ACOP ](./images/ajolp2.png)
 
-## 3.2.2.1 Een koptekstfragment maken
+>[!NOTE]
+>
+>Voor het geval u reeds uw fragmenten van de Kopbal en van de Voettekst als deel van oefening [ oefening 3.1.2.1 ](./../module3.1/ex2.md) en [ oefening 3.1.2.2 ](./../module3.1/ex2.md) hebt gecreeerd, gelieve vooruit te springen om 3.5.2.3 uit te oefenen creeer de campagne van de Vezel. Maak niet opnieuw kop- en voettekstfragmenten.
+
+## 3.5.2.1 Een koptekstfragment maken
 
 In het linkermenu, klik **Fragmenten**. Een fragment is een herbruikbare component in Journey Optimizer die dubbel werk voorkomt en toekomstige wijzigingen vergemakkelijkt die van invloed zijn op alle berichten, zoals wijzigingen in een kop- of voettekst in een e-mailbericht.
 
@@ -76,7 +80,7 @@ Maak vervolgens een nieuw fragment voor de voettekst van uw e-mailberichten. Kli
 
 ![ Journey Optimizer ](./images/fragm11.png)
 
-## 3.2.2.2 Een voettekstfragment maken
+## 3.5.2.2 Een voettekstfragment maken
 
 Klik **tot fragment** leiden.
 
@@ -230,7 +234,7 @@ Na een paar notulen, zult u zien dat het statuut van uw footer is veranderd in *
 
 ![ Journey Optimizer ](./images/fragm38.png)
 
-## 3.2.2.3 Vezelcampagne maken
+## 3.5.2.3 Vezelcampagne maken
 
 U maakt nu een campagne. In tegenstelling tot de op een gebeurtenis gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang baseert om een reis voor één specifieke klant teweeg te brengen, richten de campagnes één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op een regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
 
@@ -262,7 +266,7 @@ De rol omhoog aan **Publiek**. Klik **Uitgezochte publiek**.
 
 ![ Journey Optimizer ](./images/campaign2b.png)
 
-Voor het **publiek**, selecteer het publiek u in de vorige stap, `--aepUserLdap-- - CitiSignal Eligible for Fiber` creeerde. Klik **sparen**.
+Voor het **publiek**, selecteer het publiek u in [ 1.3.3 creeerde een gefedereerde samenstelling ](./../../datacollection/module1.3/ex3.md), die `--aepUserLdap-- - CitiSignal Eligible for Fiber` wordt genoemd. Klik **sparen**.
 
 ![ Journey Optimizer ](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 3.2.3 toevoegen Talen aan uw E-mail ](./ex3.md)
+Ga naar [ 3.5.3 toevoegen Talen aan uw E-mail ](./ex3.md)
 
-Ga terug naar [ Module 3.2 ](./ajotranslationsvcs.md){target="_blank"}
+Ga terug naar [ Module 3.5 ](./ajotranslationsvcs.md){target="_blank"}
 
 Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

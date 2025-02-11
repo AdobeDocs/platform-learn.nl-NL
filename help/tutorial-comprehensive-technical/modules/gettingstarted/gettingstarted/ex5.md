@@ -4,7 +4,7 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw 
 
 >[!NOTE]
 >
->Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **Vertrouwen Adobe Systems Inc.** klikken.
+>Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **het Vertrouwen Adobe Systems Inc.** klikken.
 >Uw iOS-apparaat moet waarschijnlijk opnieuw worden opgestart om het vertrouwen van een ontwikkelaar te voltooien.
 
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
@@ -62,7 +62,7 @@ Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gege
 
 ![ DSN ](./images/web8aa.png)
 
-Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)` wordt genoemd. Dan, klik **sparen**.
+Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)` wordt genoemd. Dan, klik **sparen**.
 
 ![ DSN ](./images/web8b.png)
 

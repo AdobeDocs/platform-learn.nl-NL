@@ -4,7 +4,7 @@ description: AEM CS - Geavanceerd aangepast blok
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In de vorige oefening, vormde u een basisdouaneblok genoemd **Aanbieding van de 
 
 U kunt nu aan dit blok blijven werken.
 
-![ AEMCS ](./images/nav7.png)
+![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 Stijl uw blok
 
@@ -25,23 +25,23 @@ Nu u een werkend **vezelaanbieding** blok hebt kunt u het stileren op het toepas
 
 Ga terug naar de Code van Visual Studio en open de omslag **blokken**. Er moeten nu meerdere mappen worden weergegeven die elk naar een specifiek blok verwijzen. Om uw **vezelaanbieding** blok geavanceerder te maken, moet u nu een omslag voor uw douaneblok tot stand brengen.
 
-![ AEMCS ](./images/blockadv1.png)
+![ AEMCS ](./images/blockadv1.png){zoomable="yes"}
 
 Selecteer de omslag **blokken** en klik dan **creëren Nieuwe Omslag** pictogram.
 
-![ AEMCS ](./images/blockadv2.png)
+![ AEMCS ](./images/blockadv2.png){zoomable="yes"}
 
 Noem uw omslag `fiberoffer` en de slag **gaat** binnen.
 
-![ AEMCS ](./images/blockadv3.png)
+![ AEMCS ](./images/blockadv3.png){zoomable="yes"}
 
 Selecteer de nieuwe **fiberoffer** omslag en klik **creëren Nieuw Dossier** pictogram.
 
-![ AEMCS ](./images/blockadv4.png)
+![ AEMCS ](./images/blockadv4.png){zoomable="yes"}
 
 Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.js** in en de slag gaat binnen.
 
-![ AEMCS ](./images/blockadv5.png)
+![ AEMCS ](./images/blockadv5.png){zoomable="yes"}
 
 U kunt blokversiering nu uitvoeren door volgende JavaScript in het dossier **toe te voegen fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![ AEMCS ](./images/blockadv6.png)
+![ AEMCS ](./images/blockadv6.png){zoomable="yes"}
 
 Selecteer de nieuwe **fiberoffer** omslag en klik **creeer opnieuw Nieuw Dossier** pictogram.
 
-![ AEMCS ](./images/blockadv7.png)
+![ AEMCS ](./images/blockadv7.png){zoomable="yes"}
 
 Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.css** in en de slag gaat binnen.
 
-![ AEMCS ](./images/blockadv8.png)
+![ AEMCS ](./images/blockadv8.png){zoomable="yes"}
 
 Kopieer en plak de volgende CSS-code in het nieuwe bestand.
 
@@ -88,7 +88,7 @@ Kopieer en plak de volgende CSS-code in het nieuwe bestand.
 
 Sla uw wijzigingen op.
 
-![ AEMCS ](./images/blockadv9.png)
+![ AEMCS ](./images/blockadv9.png){zoomable="yes"}
 
 U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
 
@@ -96,15 +96,15 @@ U zou dan de 2 dossiers moeten zien die u enkel onder **Veranderingen** heeft ui
 
 Voer een naam in voor uw PR, `js css` . Klik **Vastleggen aan hoofd**.
 
-![ Blok ](./images/blockadv10.png)
+![ Blok ](./images/blockadv10.png){zoomable="yes"}
 
 Dan moet je dit zien. Klik **Push oorsprong**.
 
-![ Blok ](./images/blockadv11.png)
+![ Blok ](./images/blockadv11.png){zoomable="yes"}
 
 Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiSignal hebt gemaakt. Dan zou je iets dergelijks moeten zien, waaruit blijkt dat je wijzigingen zijn ontvangen.
 
-![ Blok ](./images/blockadv12.png)
+![ Blok ](./images/blockadv12.png){zoomable="yes"}
 
 U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en` en/of `main--citisignal--XXX.aem.live/us/en` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
@@ -113,17 +113,17 @@ In dit voorbeeld wordt de volledige URL als volgt:
 
 Dit wordt dan weergegeven met de opmaak die op de pagina is toegepast.
 
-![ Blok ](./images/blockadv13.png)
+![ Blok ](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 Voeg logica en ladingsgegevens van een extern eindpunt toe
 
-Voor deze oefening, zult u een &quot;ruwe&quot;configuratie van het Web SDK van de Adobe doen en u zult de volgende beste aanbieding van de Offer decisioning van Adobe Journey Optimizer vragen.
+Voor deze oefening, zult u een &quot;ruwe&quot;configuratie van Adobe Web SDK doen en u zult het volgende beste voorstel van Adobe Journey Optimizer Offer Decisioning vragen.
 
 Om duidelijk te zijn: dit is niet bedoeld als een best practice-implementatie van Web SDK voor AEM as a Cloud Service. In de volgende oefening zult u gegevensinzameling gebruikend een specifieke stop uitvoeren die voor dit werd ontwikkeld.
 
 Deze oefening is bedoeld om u een paar basisdingen in JavaScript te tonen, als het laden van een externe bibliotheek JS, gebruikend de {**bibliotheek 0} alloy.js, die een verzoek en meer verzenden.**
 
-De bibliotheek **alloy.js** is de bibliotheek achter Web SDK die het mogelijk maakt om verzoeken van een website naar de Edge Network van de Adobe te verzenden, en van daar zo toepassingen zoals Adobe Experience Platform, Adobe Analytics, Adobe Target en meer.
+De bibliotheek **alloy.js** is de bibliotheek achter Web SDK die het mogelijk maakt om verzoeken van een website naar Adobe Edge Network, en van daar zo toepassingen zoals Adobe Experience Platform, Adobe Analytics, Adobe Target en meer te verzenden.
 
 Voeg deze code toe onder de vorige code die u hebt toegevoegd voor de opmaak van het blok:
 
@@ -148,7 +148,7 @@ Dan moet je dit hebben.
 
 De eerste manuscriptmarkering (script1) die u toevoegde, is een functie die door SDK van het Web wordt gebruikt en die tot een venstervoorwerp leidt, genoemd **legering**.
 
-De tweede scripttag (script2) laadt asynchroon de library.js vanuit de CDN van de Adobe.
+De tweede scripttag (script2) laadt asynchroon de bibliotheek alloy.js van de Adobe CDN.
 
 In het derde codeblok wordt in feite het legeringsobject geconfigureerd voor het verzenden van gegevens naar een specifieke Adobe IMS Org en DataStream.
 
@@ -156,11 +156,11 @@ In **Begonnen het Worden** module, vormde u reeds een datastream, geroepen `--ae
 
 U te hoeven niet om het gebied **edgeConfigId** op dit ogenblik te veranderen. In de volgende oefening zult u dit kunnen doen gebruikend de **MarTech** stop.
 
-![ Blok ](./images/blockadv15.png)
+![ Blok ](./images/blockadv15.png){zoomable="yes"}
 
 Dat zou u nu moeten doen.
 
-![ Blok ](./images/blockadv14.png)
+![ Blok ](./images/blockadv14.png){zoomable="yes"}
 
 Voeg vervolgens dit blok toe onder de vorige code die u hebt toegevoegd.
 
@@ -185,7 +185,7 @@ Dit codeblok wordt gebruikt om de waarde van de Experience Cloud-id (ECID) op te
 
 Zoals u in de bovenstaande code kunt zien, wordt een andere functie aangeroepen wanneer de ECID is opgehaald. Deze functie wordt genoemd **getOffer ()** die u daarna zult toevoegen.
 
-![ Blok ](./images/blockadv16.png)
+![ Blok ](./images/blockadv16.png){zoomable="yes"}
 
 Voeg vervolgens de onderstaande code toe onder de
 
@@ -318,11 +318,11 @@ async function getOffer(ECID) {
 
 Het is zeer belangrijk dat dit codeblok onder de sluitende steun wordt gekleefd die u op lijn 42 in dit voorbeeld kunt zien. De code u enkel plakte is een afzonderlijke functie die het heeft vereist eigen plaats in dit dossier, en kan niet in de bovengenoemde **standaardfunctie** worden genest.
 
-![ Blok ](./images/blockadv17.png)
+![ Blok ](./images/blockadv17.png){zoomable="yes"}
 
 Het codeblok u enkel plakte simuleert een verzoek dat normaal door Web SDK/alloy.js zou worden gemaakt. In dit voorbeeld zal a **halen** verzoek aan **edge.adobedc.net** worden gemaakt.
 
-In het verzoek, worden 2 **Scopes van het Besluit** gespecificeerd die de Offer decisioning van Adobe Journey Optimizer zullen vragen om een besluit over welke aanbieding te verstrekken door dit ECID moet worden gezien.
+In het verzoek, worden 2 **Scopes van het Besluit** gespecificeerd die Adobe Journey Optimizer Offer Decisioning zullen vragen om een besluit over welke aanbieding te verstrekken door dit ECID moet worden gezien.
 
 Zodra de reactie wordt ontvangen, zal deze code de reactie ontleden en dingen als URL van het beeld filtreren dat moet worden getoond en ook de reactie JSON die dingen zoals de Tekst van de Aanbieding en de CTA van de Aanbieding bevat, waarna zal het deze op de website tonen.
 
@@ -330,11 +330,11 @@ Herinner me - deze benadering wordt gebruikt enkel voor enablement doel en is ni
 
 Sla uw wijzigingen op. Dan, open **Desktop van Github**, geef een naam aan uw PR en klik **verbind aan hoofd**.
 
-![ Blok ](./images/blockadv18.png)
+![ Blok ](./images/blockadv18.png){zoomable="yes"}
 
 Daarna, klik **Push oorsprong**.
 
-![ Blok ](./images/blockadv19.png)
+![ Blok ](./images/blockadv19.png){zoomable="yes"}
 
 U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en` en/of `main--citisignal--XXX.aem.live/us/en` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
@@ -343,9 +343,9 @@ In dit voorbeeld wordt de volledige URL als volgt:
 
 Dan moet je dit zien.
 
-![ Blok ](./images/blockadv20.png)
+![ Blok ](./images/blockadv20.png){zoomable="yes"}
 
-Volgende Stap: [ 2.1.6 AEM Edge Delivery Services MarTech stop ](./ex6.md){target="_blank"}
+Volgende Stap: [ 2.1.6 AEM Edge Delivery Services MarTech plugin ](./ex6.md){target="_blank"}
 
 [ ga terug naar Module 2.1 ](./aemcs.md){target="_blank"}
 
