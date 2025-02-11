@@ -3,7 +3,7 @@ title: Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele ex
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Het migratieproces omvat de volgende belangrijke stappen:
 > * **SDK van het Doel** voert de **uitbreiding van Adobe Target** uit
 > * **optimaliseer SDK** voert **Adobe Journey Optimizer uit - Beslissende uitbreiding**
 
-Daarna, herzie de gedetailleerde [ vergelijking van de uitbreiding van het Doel en de Decisioning uitbreiding ](detailed-comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
+Daarna, herzie de gedetailleerde [ vergelijking van de uitbreiding van het Doel en de Decisioning uitbreiding ](comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
 
 >[!NOTE]
 >

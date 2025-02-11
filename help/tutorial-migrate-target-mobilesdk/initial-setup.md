@@ -2,9 +2,9 @@
 title: Eerste configuratie - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie kiezen
 description: Meer informatie over en stel de belangrijke basiselementen in die vereist zijn voor uw Web SDK-implementatie voor het platform
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,8 @@ Voor het migreren van Target SDK naar Optimize SDK is een eerste installatie nod
 - [ creeer een datastream ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream) {target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
 - [ vorm de datastream ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration) {target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
 - [ vorm het bezit van de Markering ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension) {target="_blank"} voor Beslissende uitbreiding
+
+## Extensieconfiguratie
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Extensies labelen die zijn geïnstalleerd wanneer de extensie Doel wordt gebruik
 
 >[!ENDTABS]
 
-Daarna, leer hoe te [ het Doel SDK ](replace-library.md) vervangen.
+## Configuratie DataStream
+
+De uitbreiding van het Doel heeft [ configureerbare montages ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) die met de uitbreiding van het Besluit [ in de datastream ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup) worden gevormd.
+
+| Doelextensie | Decisitie-extensie | Notities |
+| --- | --- | --- | 
+| Clientcode | nvt | Automatisch aan de rand instellen met de details van de IMS-organisatie |
+| Milieu-id | Id van doelomgeving | Gevormd in de datastream |
+| Doel Workspace-eigenschap | Eigenschapstoken | Gevormd in de datastream |
+| Time-out | Niet configureerbaar | De onderbreking met de uitbreiding van het Beslissen is 10 seconden |
+| Serverdomein | Edge Network-domein | Instellen in de Adobe Experience Platform Edge Network-extensie |
+
+Daarna, leer hoe te [ het Doel SDK ](replace-sdk.md) vervangen.
 
 >[!NOTE]
 >

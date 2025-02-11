@@ -1,24 +1,27 @@
 ---
 title: Trackgebeurtenissen - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
 description: Leer hoe u Adobe Target-conversiegebeurtenissen kunt bijhouden met de Adobe Journey Optimizer - Mobiele extensie bepalen
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
 # Conversiegebeurtenissen bijhouden met Adobe Journey Optimizer - De mobiele extensie bepalen
 
+Zie deze pagina voor inhoud: https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+
 Conversiegebeurtenissen voor Doel kunnen worden bijgehouden met.. Conversiegebeurtenissen behoren meestal tot de volgende categorieën:
 
 * Automatisch bijgehouden gebeurtenissen waarvoor geen configuratie vereist is
-* Aankoop conversiegebeurtenissen die moeten worden aangepast voor een Web SDK-implementatie van het platform voor best practices
+* Conversiegebeurtenissen voor aankopen die moeten worden aangepast voor de beste praktijken bij het nemen van beslissingen over de implementatie van extensies
 * Niet-aankoopconversiegebeurtenissen waarvoor code-updates vereist zijn
 
 ## Objectspatiëring vergelijken
 
-De volgende lijst vergelijkt hoe de de spooromzettingsgebeurtenissen van at.js en van SDK van het Web van het Platform
+De volgende lijst vergelijkt hoe de de spooromzettingsgebeurtenissen van at.js en van het Web van het Platform van SDK
 
 | Activiteitsdoelstelling | Doel op.js 2.x | Platform Web SDK |
 |---|---|---|
@@ -31,7 +34,7 @@ Voor de volgende omzettingsdoelstellingen zijn geen specifieke aanpassingen in u
 
 
 
-Daarna, leer hoe te [ om het delen van dwars-domeinidentiteitskaart ](cross-domain.md) voor verenigbare bezoekersprofielen toe te laten.
+Daarna, leer hoe te [ om het delen van dwars-domeinidentiteitskaart ](webview.md) voor verenigbare bezoekersprofielen toe te laten.
 
 >[!NOTE]
 >
