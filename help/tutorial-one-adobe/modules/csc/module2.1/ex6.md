@@ -4,7 +4,7 @@ description: AEM CS - MarTech-plug-in
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Navigeer aan de omslag die u voor uw **burgerschap** bewaarplaats GitHub gebruik
 Dan zie je dit. Plak het volgende bevel en de slag **gaat** binnen.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Dan moet je dit zien.
