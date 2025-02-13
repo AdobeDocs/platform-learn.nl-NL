@@ -4,7 +4,7 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Dan zie je dit. Kopieer **Huidige URL** en kleef het op het **gebied van de Serv
 **Wachtwoord**: het wachtwoord u vroeger, in oefening 1.3.1.1 creeerde
 **Gegevensbestand**: gebruik **CITISIGNAL**
 
-Dus ten slotte, zou je dit moeten hebben. Klik **Verbinding van de Test**. Als de test succesvol is, stelt de klik **Functies** op, die tot functies aan de kant van de Snowflake zullen leiden die noodzakelijk voor de werkschemamotor zijn.
+Dus ten slotte, zou je dit moeten hebben. Klik **Verbinding van de Test**. Als de test succesvol is, stelt de klik **Functies** op, die tot functies op de kant van Snowflake zullen leiden die noodzakelijk voor de werkschemamotor zijn.
 
 Zodra de verbinding met succes werd getest en de functies worden opgesteld, zal uw configuratie worden opgeslagen.
 
@@ -71,13 +71,13 @@ Selecteer uw gefedereerde database en klik op **+ Tabellen toevoegen** .
 
 ![ FAC ](./images/fdb6.png)
 
-Dan zie je dit. Selecteer de vijf tabellen die u eerder in de Snowflake hebt gemaakt:
+Dan zie je dit. Selecteer de vijf tabellen die u eerder in Snowflake hebt gemaakt:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Klik **toevoegen**.
 
@@ -98,11 +98,11 @@ Klik **creëren**.
 
 ![ FAC ](./images/fdb8.png)
 
-Dan zie je dit. U kunt op elk schema klikken en de gegevens bekijken. Als voorbeeld, klik **CK_PERSONS**.
+Dan zie je dit. U kunt op elk schema klikken en de gegevens bekijken. Als voorbeeld, klik **—aepUserLoad—_PERSONS**.
 
 ![ FAC ](./images/fdb9.png)
 
-U zult dan dit zien, met de capaciteit om de configuratie uit te geven. Klik **Gegevens** om een steekproef van het gegeven te zien dat in het gegevensbestand van de Snowflake is.
+U zult dan dit zien, met de capaciteit om de configuratie uit te geven. Klik **Gegevens** om een steekproef van het gegeven te zien dat in het gegevensbestand van Snowflake is.
 
 ![ FAC ](./images/fdb10.png)
 
@@ -130,57 +130,57 @@ Selecteer uw schema&#39;s en klik **toevoegen**.
 
 Dan zie je dit. Klik **sparen**.
 
-### `CK_USERS` - `CK_PERSONS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
 
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
 ![ FAC ](./images/fdb16.png)
 
-Eerst, bepalen wij de verbinding tussen de lijst `CK_USERS` en `CK_PERSONS`.
+Eerst, bepalen wij de verbinding tussen de lijst `--aepUserLdap--_USERS` en `--aepUserLdap--_PERSONS`.
 
 Klik **toevoegen**.
 
 ![ FAC ](./images/fdb18.png)
 
 
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb17.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_HOUSEHOLDS` en `CK_PERSONS` .
+Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_HOUSEHOLDS` en `--aepUserLdap--_PERSONS` .
 
 ![ FAC ](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb20.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MONTHLY_DATA_USAGE` .
+Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MONTHLY_DATA_USAGE` .
 
 ![ FAC ](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb22.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_HOUSEHOLDS` .
+Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_HOUSEHOLDS` .
 
 ![ FAC ](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
 ![ FAC ](./images/fdb24.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `CK_USERS` en `CK_MOBILE_DATA_USAGE` .
+Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MOBILE_DATA_USAGE` .
 
 ![ FAC ](./images/fdb25.png)
 

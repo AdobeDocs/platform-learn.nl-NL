@@ -4,9 +4,9 @@ description: Foundation - FAC - Een gefederaliseerde compositie maken
 kt: 5342
 doc-type: tutorial
 exl-id: 293bf825-d0d6-48cf-9cbf-69f622597678
-source-git-commit: d0469a38e2bef6031f796ed0946caba52c424e8c
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Dan zie je dit. Selecteer **tot publiek** leiden. Klik het **onderzoek** pictogr
 
 ![ FAC ](./images/fedcomp5.png)
 
-Selecteer het schema **CK_HOUSEHOLDS**. Klik **bevestigen**.
+Selecteer het schema **—aepUserLoad—_HOUSEHOLDS**. Klik **bevestigen**.
 
 ![ FAC ](./images/fedcomp6.png)
 
@@ -55,7 +55,7 @@ Daarna, klik **verdergaan**.
 
 ![ FAC ](./images/fedcomp7.png)
 
-U kunt nu beginnen de vraag te bouwen die naar Snowflake zal worden verzonden. Klik **+** pictogram en klik dan **de voorwaarde van de Douane**.
+U kunt nu beginnen met het maken van de query die naar Snowflake wordt verzonden. Klik **+** pictogram en klik dan **de voorwaarde van de Douane**.
 
 ![ FAC ](./images/fedcomp8.png)
 
@@ -71,7 +71,7 @@ Dan, klik opnieuw het **+** pictogram en klik **de voorwaarde van de Douane** op
 
 ![ FAC ](./images/fedcomp11.png)
 
-De tweede voorwaarde die moet worden toegevoegd, is: `Is the user an existing CitiSignal Mobile subscriber?` . De manier om die vraag te beantwoorden is het verband tussen het huishouden en de primaire klant in het huishouden te gebruiken, dat in een andere lijst wordt bepaald, **CK_PERSONS**. U kunt neer in het attributenmenu boren gebruikend de **huishouden2person** verbinding.
+De tweede voorwaarde die moet worden toegevoegd, is: `Is the user an existing CitiSignal Mobile subscriber?` . De manier om die vraag te beantwoorden is het verband tussen het huishouden en de primaire klant in het huishouden te gebruiken, dat in een andere lijst wordt bepaald, **- aepUserLDAP—_PERSONS**. U kunt neer in het attributenmenu boren gebruikend de **huishouden2person** verbinding.
 
 ![ FAC ](./images/fedcomp12.png)
 
@@ -129,7 +129,7 @@ Selecteer het gebied **EMAIL**. Klik **bevestigen**.
 
 ![ FAC ](./images/fedcomp20c.png)
 
-Dan zie je dit. U moet nu het **Primaire identiteitsgebied** plaatsen, het plaatsen aan **Household2person_EMAIL**.
+Dan zie je dit. U moet nu het **Primaire identiteitsgebied** plaatsen, het plaatsen aan **Household2person_EMAIL**. Plaats **Namespace van de Identiteit** aan **E-mail**.
 
 Klik **sparen**.
 
@@ -137,7 +137,9 @@ Klik **sparen**.
 
 Uw compositie is nu voltooid. Klik **Begin** om het in werking te stellen.
 
-De vraag zal nu neer in Snowflake worden geduwd, die de brongegevens daar zal vragen. De resultaten worden teruggezet naar AEP, maar de brongegevens blijven in Snowflake.
+![ FAC ](./images/fedcomp21a.png)
+
+De query wordt nu omlaag geduwd naar Snowflake, die de brongegevens daar zal opvragen. De resultaten worden teruggezet naar AEP, maar de brongegevens blijven in Snowflake.
 
 Het publiek is nu bevolkt en het publiek is gericht vanuit het ecosysteem van AEP.
 
