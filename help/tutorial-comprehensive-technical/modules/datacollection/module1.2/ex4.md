@@ -4,9 +4,9 @@ description: Stichting - de Ingestie van Gegevens - de Ingestie van Gegevens van
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In deze oefening, is het doel om externe gegevens zoals Gegevens CRM in Platform
 - Leer hoe u testgegevens kunt genereren
 - Leer hoe u CSV inneemt
 - Leer hoe u de webinterface kunt gebruiken voor gegevensinvoer via Workflows
-- Begrijp de eigenschappen van het gegevensbeheer van Experience Platform
+- Begrijp de functies voor gegevensbeheer van Experience Platform
 
 ## Bronnen
 
@@ -53,6 +53,10 @@ In de sjabloon ziet u de volgende velden:
 - country_code
 - stad
 - land
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Al deze gebieden zijn bepaald om gegevens te veroorzaken die met Platform compatibel zijn.
 
@@ -68,7 +72,9 @@ Als uw CSV-bestand gereed is, kunt u doorgaan met opnemen in AEP.
 
 ### De gegevensset verifiëren
 
-Open [ Adobe Experience Platform ](https://experience.adobe.com/platform) en ga naar **[!UICONTROL Datasets]**.
+Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+
+![ Ingestie van Gegevens ](./images/home.png)
 
 Selecteer een **[!UICONTROL sandbox]** voordat u verdergaat. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` .
 
@@ -115,8 +121,6 @@ Voor elk schema moet een aangepaste, primaire descriptor zijn gedefinieerd. In h
 U kunt ook zien dat uw primaire identiteit zich bevindt in `--aepTenantId--.identification.core.crmId` en is gekoppeld aan [!UICONTROL namespace] of **[!UICONTROL Demo System - CRMID]** .
 
 ![ Ingestie van Gegevens ](./images/schema_descriptor.png)
-
-
 
 Elk schema en dus elke gegevensset die in [!UICONTROL Real-time Customer Profile] moet worden gebruikt, moet er één hebben [!UICONTROL Primary identifier] . This [!UICONTROL Primary Identifier] is the identifier user by the brand for a customer in that dataset. In het geval van een dataset van CRM zou het e-mail-adres of identiteitskaart van CRM kunnen zijn, in het geval van een dataset van het Centrum van de Vraag het het mobiele aantal van een klant kunnen zijn.
 
@@ -229,6 +233,24 @@ Het gebied van het Schema van Source **identiteitskaart** zou aan het doelgebied
 Het gebied van het Schema van Source **last_name** zou met het doelgebied **person.name.lastName** moeten worden verbonden.
 
 ![ Ingestie van Gegevens ](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Het gebied van het Schema van Source **last_name** zou aan het doelgebied **toestemmingen.marketing.email.val** moeten worden verbonden.
+
+![ Ingestie van Gegevens ](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Het gebied van het Schema van Source **last_name** zou met het doelgebied **toestemmingen.marketing.commercialEmail.val** moeten worden verbonden.
+
+![ Ingestie van Gegevens ](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Het gebied van het Schema van Source **last_name** zou aan het doelgebied **toestemmingen.marketing.any.val** moeten worden verbonden.
+
+![ Ingestie van Gegevens ](./images/cons3.png)
 
 Dat zou u nu moeten doen. Klik **Afwerking**.
 
