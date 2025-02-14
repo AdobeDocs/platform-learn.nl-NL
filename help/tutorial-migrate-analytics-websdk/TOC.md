@@ -10,9 +10,9 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
+source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -20,30 +20,30 @@ ht-degree: 0%
 
 # Adobe Analytics migreren naar Web SDK met tags {#migrate-analytics-to-websdk}
 
-+ [Migratieoverzicht](migration-to-websdk-overview.md)
++ [1. Migratieoverzicht](migration-to-websdk-overview.md)
 
-+ [Een validatierapportsuite maken](create-a-validation-report-suite.md)
++ [2. Maak een validatierapportsuite](create-a-validation-report-suite.md)
 
-+ [Een gegevensstroom maken](create-and-configure-the-analytics-datastream.md)
++ [3. Een gegevensstroom maken](create-and-configure-the-analytics-datastream.md)
 
-+ [De extensie Web SDK toevoegen](add-and-configure-the-web-sdk-extension.md)
++ [4. Voeg de extensie Web SDK toe](add-and-configure-the-web-sdk-extension.md)
 
-+ [Een gegevenselement met variabele maken](create-a-variable-data-element.md)
++ [5. Een gegevenselement met variabele maken](create-a-variable-data-element.md)
 
-+ [De standaard laadregel voor pagina&#39;s migreren](migrate-your-default-page-load-rule.md)
++ [6. De standaard laadregel voor pagina&#39;s migreren](migrate-your-default-page-load-rule.md)
 
-+ [Aangepaste code migreren](migrate-custom-code-to-the-web-sdk.md)
++ [7. Eigen code migreren](migrate-custom-code-to-the-web-sdk.md)
 
-+ [Een ontwikkelingsbibliotheek maken](build-the-implementation-changes.md)
++ [8. Een ontwikkelingsbibliotheek maken](build-the-implementation-changes.md)
 
-+ [Foutopsporing en validatie](debug-and-validate-your-web-sdk-migration.md)
++ [9. Foutopsporing en validatie](debug-and-validate-your-web-sdk-migration.md)
 
-+ [Extra paginaregels migreren](migrate-additional-page-rules.md)
++ [10. Aanvullende paginaregels migreren](migrate-additional-page-rules.md)
 
-+ [Aangepaste koppelingsregels migreren](migrate-custom-link-rules.md)
++ [11. Aangepaste koppelingsregels migreren](migrate-custom-link-rules.md)
 
-+ [Globale variabelen migreren](migrate-global-variables.md)
++ [12. Globale variabelen migreren](migrate-global-variables.md)
 
-+ [De extensie Analytics verwijderen](delete-analytics-extension-items.md)
++ [13. Verwijder de extensie Analytics](delete-analytics-extension-items.md)
 
-+ [Publiceren naar staging en productie](publish-the-migration.md)
++ [14. Publiceren naar staging en productie](publish-the-migration.md)
