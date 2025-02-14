@@ -4,9 +4,9 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Selecteer uw schema&#39;s en klik **toevoegen**.
 
 Dan zie je dit. Klik **sparen**.
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
+### GEBRUIKERS - PERSONEN
 
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
@@ -143,7 +143,7 @@ Klik **toevoegen**.
 ![ FAC ](./images/fdb18.png)
 
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### HUISHOUDENS - PERSONEN
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
@@ -153,7 +153,7 @@ Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_HOUSEHOL
 
 ![ FAC ](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### GEBRUIKERS - MONTHLY_DATA_USAGE
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
@@ -164,7 +164,7 @@ Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` e
 ![ FAC ](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### GEBRUIKERS - HUISHOUDENS
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
@@ -174,7 +174,7 @@ Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` e
 
 ![ FAC ](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### GEBRUIKERS - MOBILE_DATA_USAGE
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 

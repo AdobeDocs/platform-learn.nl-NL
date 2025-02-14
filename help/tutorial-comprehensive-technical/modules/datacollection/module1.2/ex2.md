@@ -4,9 +4,9 @@ description: Stichting - de Ingestie van Gegevens - vorm Schema's en reeks Herke
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -61,13 +61,9 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./images/sb1.png)
 
-Klik in Adobe Experience Platform op **[!UICONTROL Schemas]** in het menu aan de linkerkant van het scherm. De lijst met beschikbare [!UICONTROL Schemas] wordt weergegeven.
+Klik in Adobe Experience Platform op **[!UICONTROL Schemas]** in het menu aan de linkerkant van het scherm. De lijst met beschikbare [!UICONTROL Schemas] wordt weergegeven. Maak een nieuw schema. Klik op **[!UICONTROL + Create Schema]** om een nieuw schema te maken.
 
 ![ Ingestie van Gegevens ](./images/menuschemas.png)
-
-Maak een nieuw schema. Klik op **[!UICONTROL + Create Schema]** om een nieuw schema te maken.
-
-![ Ingestie van Gegevens ](./images/createschema.png)
 
 Selecteer **Handboek** en klik **Uitgezocht**.
 
@@ -156,8 +152,8 @@ Nadat u op de knop **[!UICONTROL + Add Field]** hebt geklikt, ziet u nu een nieu
 
 Voer nu de gegevens van dit nieuwe veld in met behulp van de volgende objectdefinities:
 
-- Veldnaam: **[!UICONTROL identification]**
-- Weergavenaam: **[!UICONTROL identification]**
+- Veldnaam: **`--aepUserLdap--_identification`**
+- Weergavenaam: **`--aepUserLdap--_identification`**
 - Type: **[!UICONTROL Object]**
 - Veldgroep: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Uw schema is nu geconfigureerd als onderdeel van de [!UICONTROL Real-time Custom
 
 ![ Ingestie van Gegevens ](./images/sureyps.png)
 
-### Wat doet een klant?
+## Wat doet deze klant?
 
 Vang het antwoord op de vraag **wat deze klant doet?** voor uw organisatie wordt uitgevoerd via bijvoorbeeld een productweergave op een productpagina.
 
@@ -305,13 +301,9 @@ Selecteer een **[!UICONTROL sandbox]** voordat u verdergaat. De naam van [!UICON
 
 ![ Ingestie van Gegevens ](./images/sb1.png)
 
-In Adobe Experience Platform, klik op **[!UICONTROL Schemas]** in het menu op de linkerkant van uw scherm en ga **doorbladeren**.
+In Adobe Experience Platform, klik op **[!UICONTROL Schemas]** in het menu op de linkerkant van uw scherm en ga **doorbladeren**. Maak een nieuw schema. Als u een nieuw schema wilt maken, klikt u op de knop **[!UICONTROL + Create Schema]** .
 
 ![ Ingestie van Gegevens ](./images/menuschemas.png)
-
-In [!UICONTROL Schemas] ziet u alle bestaande schema&#39;s. Maak een nieuw schema. Als u een nieuw schema wilt maken, klikt u op de knop **[!UICONTROL + Create Schema]** .
-
-![ Ingestie van Gegevens ](./images/schemasee.png)
 
 Selecteer **Handboek** en klik **Uitgezocht**.
 
@@ -390,8 +382,8 @@ Nadat u op de knop **+** hebt geklikt, ziet u nu een nieuw naamloos veld in uw s
 
 Hiermee definieert u het nieuwe veld:
 
-- Veldnaam: **[!UICONTROL identification]**
-- Weergavenaam: **[!UICONTROL identification]**
+- Veldnaam: **`--aepUserLdap--_identification`**
+- Weergavenaam: **`--aepUserLdap--_identification`**
 - Type: **[!UICONTROL Object]**
 - Veldgroep: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
