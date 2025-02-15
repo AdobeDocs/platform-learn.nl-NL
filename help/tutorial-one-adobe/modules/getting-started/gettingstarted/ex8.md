@@ -3,9 +3,10 @@ title: Aan de slag - Postman instellen
 description: Aan de slag - Postman instellen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md) te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe. Als u reeds Postman hebt gevormd, dan overslaat deze oefening en gaat naar [ Toepassingen om ](./ex9.md) te installeren.
+>Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md) te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
 
 ## PostBuster installeren
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -290,6 +290,8 @@ Om dossiers van de Rekeningen van de Opslag van Azure op lange termijn programma
 
 1. Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
+   - **Gelezen**
+   - **Lijst**
    - **voeg toe**
    - **creeer**
    - **schrijf**
@@ -326,7 +328,7 @@ Vervolgens moet u in Postman variabelen maken die de verschillende elementen van
 - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-Voor toekomstige API-interacties is de elementnaam het belangrijkste wat verandert, terwijl de bovenstaande variabelen ongewijzigd blijven. In dat geval is het verstandig om variabelen te maken in Postman, zodat u ze niet telkens handmatig hoeft op te geven.
+Voor toekomstige API-interacties is de elementnaam het belangrijkste wat verandert, terwijl de bovenstaande variabelen ongewijzigd blijven. In dat geval is het handig om variabelen te maken in Postman, zodat u ze niet telkens handmatig hoeft op te geven.
 
 1. In Postman, uitgezochte **Milieu**, open **Alle variabelen** en selecteer **Milieu**.
 
@@ -343,11 +345,36 @@ Voor toekomstige API-interacties is de elementnaam het belangrijkste wat verande
 
    ![ Azure Opslag ](./images/az105.png){zoomable="yes"}
 
-   In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly - T2I (styleref) V3** als dit:
+### Variabelen in PostBuster
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+Zoals u in de bovengenoemde sectie kunt zien, zijn er sommige gemeenschappelijke variabelen in zowel Gelezen als het Schrijven teken.
 
-   ![ Azure Opslag ](./images/az24.png){zoomable="yes"}
+Vervolgens moet u variabelen maken in PostBuster waarin de verschillende elementen van de bovenstaande SAS-tokens worden opgeslagen. Er zijn enkele waarden die hetzelfde zijn in beide URL&#39;s:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Open Postbus. Selecteer **Milieu van de Basis** en klik dan **uitgeven** pictogram om het Milieu van de Basis te openen.
+
+![ Azure Opslag ](./images/pbbe1.png)
+
+Dan zie je 4 lege variabelen. Voer hier uw Azure Storage Account-gegevens in.
+
+![ Azure Opslag ](./images/pbbe2.png)
+
+Het bestand voor de basisomgeving moet er nu zo uitzien. Klik **dicht**.
+
+![ Azure Opslag ](./images/pbbe3.png)
+
+### Uw configuratie testen
+
+In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly - T2I (styleref) V3** als dit:
+
+    `` &quot;url&quot;: &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;`
+    
+    ![Azure Storage](./images/az24.png){zoomable="yes"}
 
 1. Wijzig de URL in:
 
