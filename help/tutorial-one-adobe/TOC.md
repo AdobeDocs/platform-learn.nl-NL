@@ -4,10 +4,10 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
@@ -26,8 +26,11 @@ ht-degree: 4%
       + [Uw gegevensstroom maken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [De website gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [De mobiele app gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+      + [Uw Adobe I/O-project configureren](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [Optie 1: Postman instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+      + [Optie 2: PostBuster instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+      + [Toepassingen om te installeren](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + [Voorwerk](/help/tutorial-one-adobe/prework.md)
-   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Maken en produceren {#production}
    + 1.1 Overzicht van Adobe Firefly Services {#module11}

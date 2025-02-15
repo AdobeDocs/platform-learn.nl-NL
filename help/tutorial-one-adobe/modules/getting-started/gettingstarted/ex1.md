@@ -1,17 +1,17 @@
 ---
-title: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het Experience League
-description: Aan de slag - Installeer de Chrome-extensie voor de documentatie van het Experience League
+title: Aan de slag - Installeer de Chrome-extensie voor de Experience League-documentatie
+description: Aan de slag - Installeer de Chrome-extensie voor de Experience League-documentatie
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# De Chrome-extensie installeren voor de documentatie van het Experience League
+# De Chrome-extensie installeren voor de Experience League-documentatie
 
 ## Over de Chrome-extensie
 
@@ -84,7 +84,7 @@ De IMS-organisatie-id is de unieke id voor uw Adobe Experience Cloud-instantie e
 
 U kunt uw IMS-organisatie-id op meerdere manieren zoeken. Als u niet zeker bent, controleer met één van de systeembeheerders van uw instantie om identiteitskaart te vinden.
 
-U kunt het vinden door naar [ Admin Console ](https://https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
+U kunt het vinden door [ Admin Console ](https://https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
 
 ![ DSN ](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de milieuvar
 
 ![ DSN ](./images/mod7.png)
 
-Volgende Stap: [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
+## Volgende stappen
 
-[Terug naar Aan de slag](./getting-started.md)
+Ga naar [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
 
-[Terug naar alle modules](./../../../overview.md)
+Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+
+Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

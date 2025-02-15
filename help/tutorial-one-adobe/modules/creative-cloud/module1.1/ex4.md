@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -135,10 +135,6 @@ Plak uw **identiteitskaart van de Technische Rekening** en klik **Uitnodiging om
 ![ Aangepaste Modellen van Firefly ](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4 Interactie met de API voor aangepaste modellen van Firefly Services
-
->[!IMPORTANT]
->
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 In Oefening 1.1.1 die met de Diensten van Firefly begonnen wordt, downloadde u dit dossier: [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip) aan uw lokale Desktop en u toen invoerde die inzameling in Postman.
 

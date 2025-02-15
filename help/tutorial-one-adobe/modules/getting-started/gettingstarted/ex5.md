@@ -4,9 +4,9 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw 
 
 >[!NOTE]
 >
->Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **Vertrouwen Adobe Systems Inc.** klikken.
+>Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **het Vertrouwen Adobe Systems Inc.** klikken.
 
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
 
@@ -81,8 +81,10 @@ Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
 
 ![ DSN ](./images/mobileappn8.png)
 
-U hebt nu de Getting Started module voltooid en u bent klaar om met de volgende oefeningen te beginnen.
+## Volgende stappen
 
-[Terug naar Aan de slag](./getting-started.md)
+Ga naar [ vorm uw project van Adobe I/O ](./ex6.md)
 
-[Terug naar alle modules](./../../../overview.md)
+Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+
+Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

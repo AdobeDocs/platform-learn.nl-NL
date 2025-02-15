@@ -4,9 +4,9 @@ description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '809'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Klik de **Edge Network van Adobe Experience Platform** uitbreiding en klik dan *
 
 Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxName--` en de datastream wordt `--aepUserLdap-- - Demo System Datastream (Mobile)` genoemd.
 
-Voor het **domein van de Edge Network**, gelieve het standaarddomein te gebruiken.
+Voor het **domein van Edge Network**, gelieve het standaarddomein te gebruiken.
 
 Klik **sparen** om uw veranderingen te bewaren.
 
@@ -173,8 +173,10 @@ Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig17ma.png)
 
-Volgende Stap: [ gebruik de website ](./ex4.md)
+## Volgende stappen
 
-[Terug naar Aan de slag](./getting-started.md)
+Ga naar [ Gebruik de website ](./ex4.md)
 
-[Terug naar alle modules](./../../../overview.md)
+Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+
+Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

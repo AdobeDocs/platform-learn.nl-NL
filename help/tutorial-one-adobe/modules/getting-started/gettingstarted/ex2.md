@@ -4,16 +4,16 @@ description: Aan de slag - Gebruik het demosysteem naast het instellen van de op
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 # Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling
 
-Om de lessen in dit leerprogramma te visualiseren en het voor u mogelijk te maken om uw configuratie in een veilige milieu te testen, gebruikt dit leerprogramma de hulpmiddelen van het Systeem van de Demo van de Adobe Volgende. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
+Om de lessen in deze zelfstudie te visualiseren en het voor u mogelijk te maken uw configuratie in een veilige omgeving te testen, gebruikt deze zelfstudie de volgende tools van het Adobe Demo System. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
 
 Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
@@ -55,8 +55,10 @@ Zodra het snelle opstellingsproces heeft voltooid, zult u hebben:
 
 Zorg dat dit scherm open blijft, zoals u het in de volgende stappen nodig hebt.
 
-Volgende Stap: [ creeer uw DataStream ](./ex3.md)
+## Volgende stappen
 
-[Terug naar Aan de slag](./getting-started.md)
+Ga naar [ creeer uw DataStream ](./ex3.md)
 
-[Terug naar alle modules](./../../../overview.md)
+Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+
+Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

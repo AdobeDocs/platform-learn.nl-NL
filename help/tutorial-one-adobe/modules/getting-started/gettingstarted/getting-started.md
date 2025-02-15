@@ -4,10 +4,10 @@ description: Aan de slag - één Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 1%
+source-wordcount: '318'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ In deze module zult u alles plaatsen zodat u gegevens kunt verzamelen, tot het d
 
 ## Uitoefening
 
-[De Chrome-extensie installeren voor de documentatie van het Experience League](./ex1.md)
+[De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
 
 In deze oefening zult u de uitbreiding van Chrome installeren en vormen zodat kunt u het gebruiken om de inhoud van het leerprogramma te personaliseren.
 
@@ -47,6 +47,26 @@ In deze oefening zult u de website plaatsen zodat kunt u het voor demonstraties 
 [De mobiele app gebruiken](./ex5.md)
 
 In deze oefening zult u de mobiele toepassing plaatsen zodat kunt u het voor demonstraties en enablement gebruiken.
+
+[Uw Adobe I/O-project configureren](./ex6.md)
+
+In deze oefening zult u uw Adobe I/O project vormen dat zal worden gebruikt om met diverse Adobe API eindpunten in wisselwerking te staan.
+
+[Optie 1: Postman instellen](./ex7.md)
+
+>[!NOTE]
+>
+>Als u geen Adobe-medewerker bent, volgt u de instructies om Postman te installeren.
+
+In deze oefening zult u uw Postman-omgeving voorbereiden op interactie met verschillende Adobe API-eindpunten
+
+[Optie 2: PostBuster instellen](./ex8.md)
+
+>[!NOTE]
+>
+>Als u een Adobe-medewerker bent, volgt u de instructies om PostBuster te installeren.
+
+In deze oefening zult u uw omgeving van PostBuster voor interactie met diverse Adobe API eindpunten voorbereiden
 
 ![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

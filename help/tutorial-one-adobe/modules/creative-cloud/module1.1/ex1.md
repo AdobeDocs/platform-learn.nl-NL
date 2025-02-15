@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ De installatie van uw Adobe I/O-integratie is nu voltooid.
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api16.png){zoomable="yes"}
 
 ## 1.1.1.3 Postman-verificatie naar Adobe I/O
-
->[!IMPORTANT]
->
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
 
 1. De download en installeert de relevante versie van Postman voor uw OS bij [ Downloads van Postman ](https://www.postman.com/downloads/) {target="_blank"}.
 
