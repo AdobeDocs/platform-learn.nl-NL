@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedra
 **Architecten van Gegevens** zullen identiteiten buiten dit leerprogramma moeten in kaart brengen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Herhaal het proces voor een deel van uw andere schema:
 
 >[!NOTE]
 >
->De gegevens die met SDK van het Web worden verzameld zijn een uitzondering op de typische praktijk van het etiketteren van identiteitsgebieden in het schema. Het Web SDK gebruikt de Kaart van de Identiteit aan etiketidentiteiten *op de implementatiekant* en zo zullen wij de identiteiten voor `Luma Web Events Schema` bepalen wanneer wij het Web SDK op de website van de Luma uitvoeren. In die latere les, zullen wij identiteitskaart van de Bezoeker van het Experience Cloud (ECID) als primaire identiteitskaart en crmId als secundaire identiteitskaart verzamelen.
+>De gegevens die met het Web SDK worden verzameld zijn een uitzondering op de typische praktijk van het etiketteren van identiteitsgebieden in het schema. SDK van het Web gebruikt de Kaart van de Identiteit aan etiketidentiteiten *op de implementatievijde* en zo zullen wij de identiteiten voor `Luma Web Events Schema` bepalen wanneer wij het Web SDK op de website van de Luma uitvoeren. In die latere les zullen we de Experience Cloud Visitor ID (ECID) verzamelen als primaire id en crmId als secundaire id.
 
 Door onze selectie van primaire identiteiten is het duidelijk hoe `Luma CRM Schema` verbinding kan maken met `Luma Offline Purchase Events Schema` omdat beide `loyaltyId` als id gebruiken. Maar hoe kunnen we onze offlineaankopen aan online gedrag verbinden? Hoe kunnen we de aangekochte producten indelen in onze productcatalogus? Wij zullen extra identiteitsgebieden en schemaverhoudingen gebruiken.
 

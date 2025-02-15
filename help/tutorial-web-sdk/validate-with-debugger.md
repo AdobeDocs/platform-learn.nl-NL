@@ -1,30 +1,30 @@
 ---
-title: Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
-description: Leer hoe te om uw implementatie van SDK van het Web van het Platform met Adobe Experience Platform Debugger te bevestigen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+title: Web SDK-implementaties valideren met Experience Platform Debugger
+description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience Platform Debugger kunt valideren. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
 
 ---
 
-# Valideer de implementaties van SDK van het Web met Foutopsporing van het Experience Platform
+# Web SDK-implementaties valideren met Experience Platform Debugger
 
 Leer hoe u uw Adobe Experience Platform Web SDK-implementatie met Adobe Experience Platform Debugger kunt valideren.
 
-Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
+De Experience Platform Debugger is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
 
 * [ uitbreiding Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [ de uitbreiding van Chrome ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Als u debugger nooit eerder hebt gebruikt, zou u deze vijf-minieme overzichtsvideo kunnen willen letten:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In deze les, gebruikt u de [ uitbreiding van het Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om het markeringsbezit te vervangen dat op de [ Luministoeplaats ](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen bezit wordt hard gecodeerd.
+In deze les, gebruikt u de [ uitbreiding van Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om het markeringsbezit te vervangen dat op de [ Luma demo plaats ](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen bezit wordt hard gecodeerd.
 
 Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. Het staat u toe om uw productiewebsite in uw browser te laden, maar met uw *ontwikkeling* de tagbibliotheek. Hierdoor kunt u op een betrouwbare manier wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases. Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
 
@@ -33,8 +33,8 @@ Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u m
 Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 
 * Een alternatieve tagbibliotheek laden
-* Valideer de client-side XDM-gebeurtenis vangt gegevens op en verzendt deze naar de Edge Network Platform
-* Edge Trace inschakelen om verzoeken aan de serverzijde die door de Edge Network van het Platform worden verzonden te bekijken
+* Valideren van de client-side XDM-gebeurtenis vangt gegevens op en verzendt deze naar het Platform Edge Network
+* Edge Trace inschakelen om verzoeken van Platform Edge Network op de server weer te geven
 
 ## Vereisten
 
@@ -43,16 +43,16 @@ U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaat
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
 * [Een gegevensstroom configureren](configure-datastream.md)
-* [Web SDK-extensie geïnstalleerd in de eigenschap Tag](install-web-sdk.md)
+* [Web SDK-extensie geïnstalleerd in de eigenschap tag](install-web-sdk.md)
 * [Gegevenselementen maken](create-data-elements.md)
 * [Identiteiten maken](create-identities.md)
 * [Tagregels maken](create-tag-rule.md)
 
 ## Alternatieve tagbibliotheken laden met Foutopsporing
 
-Foutopsporing op Experience Platform heeft een coole functie waarmee u een bestaande tagbibliotheek kunt vervangen door een andere. Deze techniek is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
+De Experience Platform Debugger beschikt over een coole functie waarmee u een bestaande tagbibliotheek kunt vervangen door een andere. Deze techniek is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
 
-1. Zorg ervoor u de [ de demowebsite van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} open hebt en het de uitbreidingspictogram van Foutopsporing van het Experience Platform selecteren
+1. Zorg ervoor u de [ de demowebsite van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} open hebt en het de uitbreidingspictogram van Debugger van Experience Platform selecteert
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Bevestig dat Debugger &quot;**[!UICONTROL Connected to Luma]**&quot;zoals hieronder afgebeeld is en selecteer dan het &quot;**[!UICONTROL lock]**&quot;pictogram is om Debugger aan de plaats van de Luma te sluiten.
 1. Selecteer de knop **[!UICONTROL Sign In]** en meld u aan bij Adobe Experience Cloud met uw Adobe-id.
@@ -75,11 +75,11 @@ Foutopsporing op Experience Platform heeft een coole functie waarmee u een besta
 
    ![ vervangen markeringsbezit ](assets/validate-switch-success.png)
 
-Aangezien u het leerprogramma voortzet, gebruikt u deze techniek om de plaats van de Luma aan uw eigen markeringsbezit in kaart te brengen om uw implementatie van SDK van het Web van het Platform te bevestigen. Wanneer u tags op uw eigen website gebruikt, kunt u dezelfde techniek gebruiken om bibliotheken met ontwikkelingslabels op uw productiewebsite te valideren.
+Terwijl u de zelfstudie voortzet, gebruikt u deze techniek om de Luministoewijzing toe te wijzen aan uw eigen tageigenschap om de implementatie van Platform Web SDK te valideren. Wanneer u tags op uw eigen website gebruikt, kunt u dezelfde techniek gebruiken om bibliotheken met ontwikkelingslabels op uw productiewebsite te valideren.
 
-## Valideer client-side netwerkverzoeken met Foutopsporing van Experience Platform
+## Clientnetwerkaanvragen valideren met Experience Platform Debugger
 
-U kunt Debugger gebruiken om cliënt-zijbakens te bevestigen die van uw implementatie van SDK van het Web van het Platform worden teweeggebracht om de gegevens te bekijken die naar de Edge Network van het Platform worden verzonden:
+U kunt Foutopsporing gebruiken om cliënt-zijbakens te bevestigen die van uw implementatie van het Web SDK van het Platform worden teweeggebracht om de gegevens te bekijken die naar Platform Edge Network worden verzonden:
 
 1. Ga naar **[!UICONTROL Summary]** in de linkernavigatie om de details van uw markeringseigenschap te zien
 
@@ -88,7 +88,7 @@ U kunt Debugger gebruiken om cliënt-zijbakens te bevestigen die van uw implemen
 1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]** te zien
 1. De rij **[!UICONTROL events]** openen
 
-   ![ het verzoek van SDK van het Web van Adobe Experience Platform ](assets/validate-aep-screen.png)
+   ![ SDK van het Web van Adobe Experience Platform verzoek ](assets/validate-aep-screen.png)
 
 1. Let op hoe u het gebeurtenistype `web.webpagedetails.pageView` kunt zien dat u in de [!UICONTROL Update variable] -handeling hebt opgegeven, en andere variabelen die zich buiten het vak bevinden en die aan de `AEP Web SDK ExperienceEvent` -veldgroep voldoen.
 
@@ -139,9 +139,9 @@ Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webon
    >
    > De waarde ECID is zichtbaar in de netwerkreactie. Het is niet inbegrepen in het `identityMap` gedeelte van het netwerkverzoek, noch wordt het opgeslagen in dit formaat in een koekje.
 
-## Valideer server-zijnetwerkverzoeken met Foutopsporing van het Experience Platform
+## Netwerkaanvragen op de server valideren met Experience Platform Debugger
 
-Zoals u in [ leerde vormen een datastream ](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar de Edge Network van het Platform. Dan, maakt de Edge Network van het Platform extra server-zijverzoeken aan de overeenkomstige diensten die in uw datastream worden toegelaten. U kunt de server-zijverzoeken bevestigen die door de Edge Network van het Platform door het Spoor van Edge in Debugger worden gemaakt te gebruiken.
+Zoals u in [ leerde vormen een datastream ](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens doet Platform Edge Network aanvullende verzoeken aan de serverzijde aan de overeenkomstige services die in uw datastream zijn ingeschakeld. U kunt de verzoeken aan de serverzijde die door Platform Edge Network worden gemaakt bevestigen door het Spoor van Edge in Debugger te gebruiken.
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
@@ -163,10 +163,10 @@ Edge-trace inschakelen:
 
    ![ het baken van Edge van de Analyse ](assets/validate-edge-trace.png)
 
-Op dit punt, kunt u geen verzoeken bekijken van de Edge Network van het Platform die naar de toepassingen van de Adobe gaan omdat u geen om het even welk in de datastream hebt toegelaten. In toekomstige lessen, gebruikt u het Spoor van Edge om de uitgaande server-zijverzoeken aan Adobe toepassingen en gebeurtenis te bekijken door:sturen. Maar eerst, leer over een ander hulpmiddel om server-zijverzoeken te bevestigen die door Platform Edge Network-Adobe Experience Platform Assurance worden gemaakt!
+Op dit moment kunt u geen Platform Edge Network-aanvragen weergeven die naar Adobe-toepassingen gaan omdat u in de gegevensstroom geen toepassingen hebt ingeschakeld. In toekomstige lessen gebruikt u Edge Trace om de uitgaande serververzoeken aan Adobe-toepassingen en het doorsturen van gebeurtenissen weer te geven. Maar eerst, leer over een ander hulpmiddel om server-zijverzoeken te bevestigen die door Platform Edge Network-Adobe Experience Platform Assurance worden gemaakt!
 
 [Volgende: ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

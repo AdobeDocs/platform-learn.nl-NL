@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blij
 **Architecten van Gegevens** zullen datasets buiten dit leerprogramma moeten tot stand brengen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over gegevenssets:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Vereiste machtigingen
 

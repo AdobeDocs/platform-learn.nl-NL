@@ -2,13 +2,13 @@
 title: Gegevens van groep samenvoegen
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Gegevens van groep samenvoegen
-description: In deze les, zult u partijgegevens in Experience Platform opnemen gebruikend diverse methodes.
+description: In deze les zult u batchgegevens via verschillende methoden in Experience Platform opnemen.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # Gegevens van groep samenvoegen
 
 <!-- 1hr-->
-In deze les, zult u partijgegevens in Experience Platform opnemen gebruikend diverse methodes.
+In deze les zult u batchgegevens via verschillende methoden in Experience Platform opnemen.
 
 Met gegevensinvoer via batch kunt u een grote hoeveelheid gegevens tegelijk in Adobe Experience Platform innemen. U kunt batchgegevens invoeren in één keer uploaden binnen de interface van Platform of met de API. U kunt ook regelmatig geplande batchuploads configureren van externe services, zoals cloudopslagservices, met Source-connectors.
 
@@ -26,7 +26,7 @@ Met gegevensinvoer via batch kunt u een grote hoeveelheid gegevens tegelijk in A
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over gegevensinvoer:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Vereiste machtigingen
@@ -191,7 +191,7 @@ De batch voltooien:
 1. Selecteer de aanvraag **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
 1. In het **lusje van Params**, ga `COMPLETE` als **actie** in
 1. In het **lusje van Params**, ga uw partijidentiteitskaart in. Maak zich geen zorgen over dataset id of filePath, als zij aanwezig zijn.
-1. Zorg ervoor dat de URL van de POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` is en dat er geen overbodige verwijzingen naar de `datasetId` of `filePath` zijn.
+1. Zorg ervoor dat de URL van de POST `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` is en dat er geen overbodige verwijzingen naar de `datasetId` of `filePath` zijn
 1. Selecteer **verzenden** en u zou een 200 o.k. reactie met &quot;1&quot;in het reactiekarakter moeten krijgen
 
    ![ Volledige Partij ](assets/ingestion-crm-complete.png)
@@ -332,7 +332,7 @@ Zoek het profiel met waarde `5625458` opnieuw op in de naamruimte `loyaltyId` om
 
 ## ETL-gereedschappen
 
-De partners van de Adobe met veelvoudige verkopers ETL om gegevensopname in Experience Platform te steunen. Wegens de verscheidenheid van derdeverkopers, is ETL niet behandeld in dit leerprogramma, hoewel u welkom bent om sommige van deze middelen te herzien:
+Adobe werkt samen met meerdere leveranciers van ETL om gegevensinvoer in Experience Platform te ondersteunen. Wegens de verscheidenheid van derdeverkopers, is ETL niet behandeld in dit leerprogramma, hoewel u welkom bent om sommige van deze middelen te herzien:
 
 * [ het Ontwikkelen ETL Integraties voor Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [ Informatica Adobe Experience Platform Connector pagina op Adobe Exchange ](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
@@ -344,4 +344,4 @@ De partners van de Adobe met veelvoudige verkopers ETL om gegevensopname in Expe
 * [ de documentatie van de Ingestie van de Partij ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [ Verwijzing van de Opname API van de Partij ](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-Nu laat [ stroomgegevens gebruiken van het Web SDK ](ingest-streaming-data.md)
+Nu laten [ stroomgegevens gebruiken het Web SDK ](ingest-streaming-data.md)

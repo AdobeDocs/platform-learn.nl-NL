@@ -3,7 +3,8 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Samenvatting en voordelen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -28,10 +29,10 @@ Dankzij Adobe Experience Platform Data Collection, kunt u als merk nu eindelijk 
 
 ## Bekijk dit
 
-- Tech Blog: [ het Oplossen van de Punten van het Pijn van de Implementatie met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
-- Tech Blog: [ het Van dienst zijn de Prestaties van de Website met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
+- Tech Blog: [ Oplossende Punten van het Pijn van het Pan van de Implementatie met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
+- Tech Blog: [ Van de Verhoging Prestaties van de Website met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - Documentatie: [ Zijoverzicht van de Server van de Gegevensverzameling van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- Video: [ voer de Server van de Gegevensverzameling van Edge en van Adobe Experience Platform uit gebruikend een niet-Adobe Oplossing van Tag Management ](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- Video: [ voer de Server van de Gegevensverzameling van Edge en van Adobe Experience Platform uit gebruikend een niet-Adobe Tag Management Oplossing ](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Ga terug naar Module 2.5](./aep-data-collection-ssf.md)
 

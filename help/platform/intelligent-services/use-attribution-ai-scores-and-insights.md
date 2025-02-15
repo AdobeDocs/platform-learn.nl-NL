@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 51%
@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Scores en inzichten van Attribution AI gebruiken
 
-Leer hoe u de pagina Attribution AI-inzichten gebruikt om inzicht te krijgen in de ROI van marketingkanalen en -campagnes. Voor meer informatie, gelieve de [ documentatie van de Attribution AI ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html) te bezoeken.
+Leer hoe u de pagina Kenmerken AI-inzichten gebruikt om inzicht te krijgen in de ROI van marketingkanalen en campagnes. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

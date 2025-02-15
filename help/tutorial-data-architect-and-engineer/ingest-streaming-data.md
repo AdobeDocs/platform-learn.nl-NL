@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3082'
 ht-degree: 0%
@@ -23,21 +23,21 @@ In deze les, zult u gegevens stromen gebruikend het Web SDK van Adobe Experience
 
 Er zijn twee belangrijke taken wij in de interface van de Inzameling van Gegevens moeten voltooien:
 
-* We moeten Web SDK implementeren op de Luma-website om gegevens over bezoekersactiviteit van de website naar het Adobe Edge-netwerk te verzenden. We zullen een eenvoudige implementatie uitvoeren met behulp van labels (voorheen Starten)
+* We moeten Web SDK implementeren op de Luma-website om gegevens over bezoekersactiviteiten van de website naar het Adobe Edge-netwerk te verzenden. We zullen een eenvoudige implementatie uitvoeren met behulp van labels (voorheen Starten)
 
 * We moeten een datastream configureren, die het Edge-netwerk vertelt waar de gegevens moeten worden doorgestuurd. Wij zullen het vormen om de gegevens naar onze `Luma Web Events` dataset in onze zandbak van het Platform te verzenden.
 
 **de Ingenieurs van Gegevens** zullen het stromen gegevens buiten dit leerprogramma moeten opnemen. Wanneer het uitvoeren van het Web van Adobe Experience Platform of Mobiele SDKs, typisch is een Web of een mobiele ontwikkelaar betrokken bij de verwezenlijking van de gegevenslaag en de configuratie van het markeringsbezit.
 
-Voordat u met de oefeningen begint, bekijkt u deze twee korte video&#39;s voor meer informatie over het streamen van gegevensinvoer en Web SDK:
+Voordat u de oefeningen start, bekijkt u deze twee korte video&#39;s voor meer informatie over het streamen van gegevens en Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Terwijl dit leerprogramma zich bij het stromen van opname van websites met Web SDK concentreert, kunt u gegevens ook stromen gebruikend [ Adobe Mobiele SDK ](https://developer.adobe.com/client-sdks/documentation/), [ Apache Kafka verbindt ](https://github.com/adobe/experience-platform-streaming-connect), en andere mechanismen.
+>Terwijl dit leerprogramma zich op het stromen ingestie van websites met het Web SDK concentreert, kunt u gegevens ook stromen gebruikend [ SDK van Adobe Mobile ](https://developer.adobe.com/client-sdks/documentation/), [ Apache Kafka verbindt ](https://github.com/adobe/experience-platform-streaming-connect), en andere mechanismen.
 
 ## Vereiste machtigingen
 
@@ -78,11 +78,11 @@ In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toega
 
 ## De gegevensstroom configureren
 
-Eerst zullen wij de datastream vormen. Een gegevensstroom vertelt het netwerk van Adobe Edge waar te om de gegevens te verzenden na het ontvangen van het van de vraag van SDK van het Web. Wilt u de gegevens bijvoorbeeld naar Experience Platform, Adobe Analytics of Adobe Target verzenden? De stromen van gegevens worden beheerd in het gebruikersinterface van de Inzameling van Gegevens (vroeger Lancering) en zijn kritiek aan gegevensinzameling met Web SDK.
+Eerst zullen wij de datastream vormen. Een gegevensstroom vertelt het netwerk van Adobe Edge waar te om de gegevens te verzenden nadat het van de vraag van SDK van het Web wordt ontvangen. Wilt u de gegevens bijvoorbeeld naar Experience Platform, Adobe Analytics of Adobe Target verzenden? De stromen van gegevens worden beheerd in het gebruikersinterface van de Inzameling van Gegevens (vroeger Lancering) en zijn kritiek aan gegevensinzameling met Web SDK.
 
 Maak uw [!UICONTROL datastream] als volgt:
 
-1. Logboek in het [ gebruikersinterface van de Inzameling van de Gegevens van het Experience Platform ](https://experience.adobe.com/launch/)
+1. Logboek in het [ gebruikersinterface van de Inzameling van Gegevens van Experience Platform ](https://experience.adobe.com/launch/)
    <!--when will the edge config go live?-->
 
 1. Selecteren **[!UICONTROL Datastreams]** in de linkernavigatie
@@ -101,7 +101,7 @@ In het volgende scherm geeft u op waar u gegevens wilt verzenden. Gegevens verze
 1. In-/uitschakelen **[!UICONTROL Adobe Experience Platform]** om extra velden beschikbaar te maken
 1. Selecteer `Luma Tutorial` bij **[!UICONTROL Sandbox]**
 1. Selecteer `Luma Web Events Dataset` bij **[!UICONTROL Event Dataset]**
-1. Als u andere toepassingen van de Adobe gebruikt, voel vrij om de andere secties te onderzoeken om te zien welke informatie in de Configuratie van Edge van deze andere oplossingen wordt vereist. Herinner me, werd SDK van het Web ontwikkeld niet alleen om gegevens in Experience Platform te stromen, maar ook om alle vorige bibliotheken te vervangen van JavaScript die door andere toepassingen van de Adobe worden gebruikt. De Configuratie van Edge wordt gebruikt om de rekeningsdetails van elke toepassing te specificeren waarnaar u de gegevens wilt verzenden.
+1. Als u andere Adobe-toepassingen gebruikt, kunt u de andere secties raadplegen om te zien welke informatie vereist is in de Edge-configuratie van deze andere oplossingen. Onthoud dat Web SDK niet alleen is ontwikkeld om gegevens te streamen naar Experience Platform, maar ook om alle vorige JavaScript-bibliotheken te vervangen die door andere Adobe-toepassingen worden gebruikt. De Configuratie van Edge wordt gebruikt om de rekeningsdetails van elke toepassing te specificeren waarnaar u de gegevens wilt verzenden.
 1. Selecteren **[!UICONTROL Save]**
    ![ vorm de datastream en bewaar ](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -109,7 +109,7 @@ Zodra de Configuratie van Edge heeft bewaard, zal het resulterende scherm drie m
 ![ Elke Configuratie van Edge kan veelvoudige milieu&#39;s ](assets/websdk-edgeConfig-environments.png) hebben
 Alle drie de milieu&#39;s bevatten de details van het Platform u enkel inging. Nochtans, kunnen deze details verschillend per milieu worden gevormd. U kunt bijvoorbeeld elke omgeving gegevens laten verzenden naar een andere platformsandbox. In deze zelfstudie maken we geen verdere aanpassingen van onze gegevensstroom door.
 
-## De web SDK-extensie installeren
+## De extensie Web SDK installeren
 
 ### Een eigenschap toevoegen
 
@@ -147,19 +147,19 @@ Now switch back to your browser tab with the Data Collection interface still ope
 ![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
 -->
 
-## De Web SDK-extensie toevoegen
+## De extensie Web SDK toevoegen
 
-Nu u een bezit hebt kunt u SDK van het Web toevoegen gebruikend een uitbreiding. Een extensie is een pakket code waarmee de interface en functionaliteit voor gegevensverzameling worden uitgebreid. De extensie toevoegen:
+Nu u een bezit hebt kunt u het Web SDK toevoegen gebruikend een uitbreiding. Een extensie is een pakket code waarmee de interface en functionaliteit voor gegevensverzameling worden uitgebreid. De extensie toevoegen:
 
 1. De eigenschap tag openen
 1. Ga naar **[!UICONTROL Extensions]** in de linkernavigatie
 1. Ga naar de tab **[!UICONTROL Catalog]**
 1. Er zijn veel extensies beschikbaar voor tags. De catalogus filteren met de term `Web SDK`
 1. Selecteer in de extensie **[!UICONTROL Adobe Experience Platform Web SDK]** de knop **[!UICONTROL Install]**
-   ![ installeer de uitbreiding van SDK van het Web van Adobe Experience Platform ](assets/websdk-property-addExtension.png)
-1. Er zijn verscheidene configuraties beschikbaar voor de uitbreiding van SDK van het Web, maar er slechts twee zullen wij voor dit leerprogramma vormen. Werk **[!UICONTROL Edge Domain]** aan `data.enablementadobe.com` bij. Met deze instelling kunt u cookies van de eerste partij instellen met uw Web SDK-implementatie, wat wordt aangemoedigd. Later in deze les wijst u een website op het domein `enablementadobe.com` toe aan uw eigenschap tag. De CNAME voor het `enablementadobe.com` -domein is al geconfigureerd, zodat `data.enablementadobe.com` door zal sturen naar Adobe servers. Wanneer u Web SDK op uw eigen website implementeert, moet u een CNAME maken voor uw eigen gegevensverzamelingsdoeleinden, bijvoorbeeld `data.YOUR_DOMAIN.com`
+   ![ installeer de extensie van Adobe Experience Platform Web SDK ](assets/websdk-property-addExtension.png)
+1. Er zijn verscheidene configuraties beschikbaar voor de uitbreiding van SDK van het Web, maar er slechts twee zullen wij voor dit leerprogramma vormen. Werk **[!UICONTROL Edge Domain]** aan `data.enablementadobe.com` bij. Met deze instelling kunt u cookies van eerste partijen instellen met uw Web SDK-implementatie, wat wordt aangemoedigd. Later in deze les wijst u een website op het domein `enablementadobe.com` toe aan uw eigenschap tag. De CNAME voor het `enablementadobe.com` -domein is al geconfigureerd, zodat `data.enablementadobe.com` naar Adobe-servers wordt doorgestuurd. Wanneer u Web SDK op uw eigen website implementeert, moet u een CNAME maken voor uw eigen gegevensverzamelingsdoeleinden, bijvoorbeeld `data.YOUR_DOMAIN.com`
 1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Datastream]** de `Luma Platform Tutorial` -gegevensstroom.
-1. Voel vrij om de andere configuratieopties (maar verander hen niet!) te bekijken en selecteer vervolgens **[!UICONTROL Save]**
+1. Bekijk de andere configuratieopties (maar wijzig deze niet!) en selecteer vervolgens **[!UICONTROL Save]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -188,7 +188,7 @@ Nu maken we een regel voor het verzenden van gegevens naar Platform. Een regel i
 1. Selecteer **[!UICONTROL Save]** om de regel op te slaan\
    ![ sparen de regel ](assets/websdk-property-saveRule.png)
 
-## Publish the rule in a library
+## De regel in een bibliotheek publiceren
 
 Vervolgens publiceren we de regel naar onze ontwikkelomgeving, zodat we kunnen controleren of deze werkt.
 
@@ -246,16 +246,16 @@ Zoals u kunt zien op het scherm [!UICONTROL Publishing Flow] , is er veel meer a
 
 ## De gegevens in de aanvraag valideren
 
-### Het Adobe Experience Platform Debugger toevoegen
+### De Adobe Experience Platform Debugger toevoegen
 
-Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
+De Experience Platform Debugger is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Download de versie voor uw voorkeursbrowser:
 
 * [ uitbreiding Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [ de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Als u Foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### De Luma-website openen
 
@@ -268,11 +268,11 @@ Daarom hebben we `enablementadobe.com` in het veld [!UICONTROL Domains] van de i
 
 ![ homepage Luma ](assets/websdk-luma-homepage.png)
 
-### Gebruik Foutopsporing Experience Platform om aan uw markeringsbezit in kaart te brengen
+### Foutopsporing in Experience Platform gebruiken om de tag-eigenschap toe te wijzen
 
-Foutopsporing voor Experience Platform heeft een coole functie waarmee u een bestaande eigenschap voor tags kunt vervangen door een andere eigenschap. Dit is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
+De Experience Platform Debugger heeft een coole functie waarmee u een bestaande tag-eigenschap kunt vervangen door een andere. Dit is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
 
-1. Zorg ervoor dat de Luminasite is geopend en selecteer het extensiepictogram Experience Platform debugger
+1. Zorg ervoor dat de Luminantiesite is geopend en selecteer het extensiepictogram van Experience Platform Debugger
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie, die met dit leerprogramma niet verwant is (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Bevestig dat Debugger &quot;**[!UICONTROL Connected to Luma]**&quot;zoals hieronder afgebeeld is en selecteer dan het &quot;**[!UICONTROL lock]**&quot;pictogram is om Debugger aan de plaats van de Luma te sluiten.
 1. Selecteer de knop **[!UICONTROL Sign In]** rechtsboven om te verifiëren.
@@ -291,7 +291,7 @@ Foutopsporing voor Experience Platform heeft een coole functie waarmee u een bes
 1. Ga nu naar **[!UICONTROL AEP Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]** te zien
 1. De rij **[!UICONTROL events]** openen
 
-   ![ het verzoek van SDK van het Web van Adobe Experience Platform ](assets/websdk-debugger-platformNetwork.png)
+   ![ SDK van het Web van Adobe Experience Platform verzoek ](assets/websdk-debugger-platformNetwork.png)
 1. Let op hoe we het gebeurtenistype `web.webpagedetails.pageView` zien dat we in onze [!UICONTROL Send Event] -actie hebben opgegeven, en andere variabelen die zich buiten het vak bevinden, in de `AEP Web SDK ExperienceEvent Mixin` -indeling.
    ![ de details van de Gebeurtenis ](assets/websdk-debugger-eventDetails.png)
 1. Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel. Open het en laad de pagina opnieuw. Filter voor vraag met `interact` om van de vraag de plaats te bepalen, het te selecteren, en dan in het **Kopballen** lusje, **gebied van de Payload van het Verzoek** te kijken.
@@ -301,7 +301,7 @@ Foutopsporing voor Experience Platform heeft een coole functie waarmee u een bes
 
 
 
-## Gegevens in Experience Platform valideren
+## De gegevens valideren in Experience Platform
 
 U kunt controleren of de gegevens in Platform landen door de batches met gegevens in de `Luma Web Events Dataset` te bekijken. (Ik weet dat het streaming data-opname heet, maar nu zeg ik dat het in batches aankomt! Het stroomt in real time aan Profiel, zodat kan het voor segmentatie en activering in real time worden gebruikt, maar wordt verzonden in partijen om de 15 minuten aan het gegevenspeer.)
 
@@ -389,9 +389,9 @@ U kunt ook controleren of de gegevens van de paginanaam zijn ontvangen in Platfo
 
 ## Extra identiteiten verzenden
 
-Uw implementatie van SDK van het Web verzendt nu gebeurtenissen met Experience Cloud identiteitskaart (ECID) als primaire herkenningsteken. De ECID wordt automatisch gegenereerd door de Web SDK en is uniek per apparaat en browser. Eén klant kan meerdere ECID&#39;s hebben, afhankelijk van het apparaat en de browser die hij of zij gebruikt. Dus hoe kunnen we een uniforme weergave van deze klant krijgen en hun online activiteiten koppelen aan onze gegevens over CRM, Loyalty en offline aankoop? Dat doen we door tijdens hun sessie aanvullende identiteiten te verzamelen en hun profiel via identiteitsstitching vastberaden te koppelen.
+Uw Web SDK-implementatie verzendt nu gebeurtenissen met de Experience Cloud-id (ECID) als primaire id. De ECID wordt automatisch gegenereerd door de Web SDK en is uniek per apparaat en browser. Eén klant kan meerdere ECID&#39;s hebben, afhankelijk van het apparaat en de browser die hij of zij gebruikt. Dus hoe kunnen we een uniforme weergave van deze klant krijgen en hun online activiteiten koppelen aan onze gegevens over CRM, Loyalty en offline aankoop? Dat doen we door tijdens hun sessie aanvullende identiteiten te verzamelen en hun profiel via identiteitsstitching vastberaden te koppelen.
 
-Als u zich herinnert, vermeldde ik dat wij ECID en identiteitskaart van CRM als identiteiten voor onze Webgegevens in de [ Identiteiten van de Kaart ](map-identities.md) les zouden gebruiken. Zo verzamelen wij CRM identiteitskaart met het Web SDK!
+Als u zich herinnert, vermeldde ik dat wij ECID en identiteitskaart van CRM als identiteiten voor onze Webgegevens in de [ Identiteiten van de Kaart ](map-identities.md) les zouden gebruiken. Dus laten we de CRM-id verzamelen met de Web SDK!
 
 ### Gegevenselement toevoegen voor de CRM-id
 
@@ -445,7 +445,7 @@ Om te bevestigen dat CRM identiteitskaart nu door het Web SDK wordt verzonden:
 1. Wijs het aan uw markeringsbezit toe gebruikend Debugger, zoals in vroegere instructies
 1. Selecteer de **Login** verbinding op het hoogste recht van de website van de Luma
 1. Meld u aan met de aanmeldingsgegevens `test@adobe.com`/`test`
-1. Zodra voor authentiek verklaard, inspecteer de vraag van SDK van het Web van het Experience Platform in Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** van het meest recente verzoek) en u zou `lumaCrmId` moeten zien:
+1. Zodra geverifieerd, inspecteert u de Experience Platform Web SDK-aanroep in Foutopsporing (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** van de meest recente aanvraag) en ziet u de `lumaCrmId` :
    ![ bevestigt de identiteit in Debugger ](assets/websdk-debugger-confirmIdentity.png)
 1. Zoek het gebruikersprofiel op met behulp van de ECID-naamruimte en -waarde. In het profiel, zult u CRM identiteitskaart en ook Loyalty identiteitskaart en de profieldetails zoals de naam en het telefoonaantal zien. Alle identiteiten en gegevens zijn samengevoegd tot één enkel, real-time klantenprofiel!
    ![ bevestigt de identiteit in Platform ](assets/websdk-platform-lumaCrmIdProfile.png)
@@ -457,7 +457,7 @@ Om te bevestigen dat CRM identiteitskaart nu door het Web SDK wordt verzonden:
 * [ Streaming de documentatie van de Ingestie ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=nl)
 * [ Streaming Ingestie API verwijzing ](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
-Geweldig werk! Dat was veel informatie over Web SDK en Starten. Er is veel meer betrokken bij een volledige implementatie, maar dat zijn de basisbeginselen om u te helpen aan de slag te gaan en de resultaten in Platform te zien.
+Geweldig werk! Dat was veel informatie over Web SDK en Launch. Er is veel meer betrokken bij een volledige implementatie, maar dat zijn de basisbeginselen om u te helpen aan de slag te gaan en de resultaten in Platform te zien.
 
 >[!NOTE]
 >

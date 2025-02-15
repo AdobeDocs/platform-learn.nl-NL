@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # Ontwikkelaars toevoegen en machtigingen voor API-referenties geven
 
-Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in de Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html) te bezoeken.
+Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
 
 >[!ADMIN]
 >

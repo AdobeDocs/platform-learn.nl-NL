@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Deze video loopt door hoe te om een partijenlijst van gegevens van een gegevensbestandbron in Adobe Experience Platform uit te voeren in real time het Profiel van de Klant en het Leer van Gegevens van de Ervaring, op een naadloze en scalable manier. Voor gedetailleerdere productdocumentatie, zie [ gegevensbestand ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) op de het overzichtspagina van de Verbindingen van Source of de [ van de Bron van de Vraag van Google de documentatie van de Grote Vraag ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)

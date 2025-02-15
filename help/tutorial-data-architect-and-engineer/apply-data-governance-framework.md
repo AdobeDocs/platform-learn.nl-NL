@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -24,9 +24,9 @@ In deze les, zult u het kader van het gegevensbeheer op de gegevens toepassen u 
 Met Adobe Experience Platform Data Governance kunt u klantgegevens beheren en ervoor zorgen dat de regels, beperkingen en beleidsregels die van toepassing zijn op het gebruik van gegevens worden nageleefd. Het speelt een sleutelrol binnen Experience Platform op diverse niveaus, met inbegrip van het controleren van het gebruik van gegevens.
 
 Bekijk voordat u de oefeningen start de volgende korte video&#39;s over gegevensbeheer:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -84,9 +84,9 @@ U kunt uw eigen beleid maken door de knop **[!UICONTROL Create policy]** te sele
 
 ## Beleid inzake governance afdwingen
 
-Handhaving van het governancebeleid is duidelijk een essentieel onderdeel van het kader. De handhaving gebeurt stroomafwaarts wanneer gegevens worden geactiveerd en verzonden vanuit Platform, met name met de Real-time Customer Data Platform, die u al dan niet in licentie geeft. Hoe dan ook, het valt buiten het bereik van deze zelfstudie. Maar dus je blijft niet hangen, je kunt meer leren over hoe beleid wordt afgedwongen in deze video, die ik in de rij heb gezet voor het relevante gedeelte. Het zal u ook tonen wat gebeurt wanneer een beleid wordt geschonden.
+Handhaving van het governancebeleid is duidelijk een essentieel onderdeel van het kader. De handhaving gebeurt stroomafwaarts wanneer gegevens worden geactiveerd en verzonden vanuit Platform, met name met de Real-Time Customer Data Platform, die u al dan niet in licentie geeft. Hoe dan ook, het valt buiten het bereik van deze zelfstudie. Maar dus je blijft niet hangen, je kunt meer leren over hoe beleid wordt afgedwongen in deze video, die ik in de rij heb gezet voor het relevante gedeelte. Het zal u ook tonen wat gebeurt wanneer een beleid wordt geschonden.
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## Aanvullende bronnen

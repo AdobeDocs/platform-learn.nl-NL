@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Standaardisering en interoperabiliteit zijn de belangrijkste concepten achter Ad
 
 XDM is een openbaar gedocumenteerde specificatie die wordt ontworpen om de macht van digitale ervaringen te verbeteren. Het verstrekt gemeenschappelijke structuren en definities voor om het even welke toepassing om met de diensten van het Platform te gebruiken te communiceren. Door zich aan de normen van XDM te houden, kunnen alle gegevens van de klantenervaring in een gemeenschappelijke vertegenwoordiging worden opgenomen die inzichten op een snellere, meer geïntegreerde manier kan leveren. U kunt waardevolle inzichten van klantenacties bereiken, klantenpubliek door segmenten bepalen, en klantenattributen voor verpersoonlijkingsdoeleinden uitdrukken.
 
-XDM is het grondkader dat Adobe Experience Cloud, aangedreven door Experience Platform, toestaat om het juiste bericht aan de juiste persoon, op het juiste kanaal, op precies het juiste moment te leveren. De methodologie waarop het Experience Platform wordt gebouwd, **XDM Systeem**, stelt de Modelschema&#39;s van Gegevens van de Ervaring voor gebruik door de diensten van het Platform in werking.
+XDM is het basiskader dat Adobe Experience Cloud, aangedreven door Experience Platform, toestaat om het juiste bericht aan de juiste persoon, op het juiste kanaal, op het juiste moment te leveren. De methodologie waarop Experience Platform wordt gebouwd, **XDM Systeem**, stelt de Modelschema&#39;s van Gegevens van de Ervaring voor gebruik door de diensten van het Platform in werking.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **Architecten van Gegevens** zullen schema&#39;s buiten dit leerprogramma moeten tot stand brengen, maar **de Ingenieurs van Gegevens** zullen nauw met de schema&#39;s werken die door de Architect van Gegevens worden gecreeerd.
 
 Voordat u met de oefeningen begint, bekijk deze korte video om meer over schema&#39;s en het Model van de Gegevens van de Ervaring te leren (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Voor een diepere duik in gegevens modellerend in Experience Platform, adviseren wij het letten op playlist [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), beschikbaar voor vrij op Experience League!
+> Voor een diepere duik in gegevens modellering in Experience Platform, adviseren wij het letten op playlist [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), beschikbaar voor vrije op Experience League!
 
 ## Vereiste machtigingen
 
@@ -84,7 +84,7 @@ In deze oefening, zullen wij een schema voor de loyaliteitsgegevens van Luma tot
 
 ### Standaardveldgroepen toevoegen
 
-Zodra het schema wordt gecreeerd, zult u aan de redacteur van het Schema worden opnieuw gericht waar u gebieden aan het schema kunt toevoegen. U kunt afzonderlijke velden rechtstreeks aan het schema toevoegen of veldgroepen gebruiken. Houd er rekening mee dat alle afzonderlijke velden nog steeds zijn gekoppeld aan een klasse of veldgroep. U kunt kiezen uit een groot aantal industriestandaard veldgroepen die door Adobe worden geleverd, of u kunt uw eigen veldgroepen maken. Wanneer u uw eigen gegevens in het Experience Platform gaat modelleren, is het goed om vertrouwd te raken met de industriestandaard veldgroepen die door de Adobe worden geleverd. Waar mogelijk, is het beste praktijken om hen te gebruiken aangezien zij soms stroomafwaartse diensten, zoals KlantenAI, Attribution AI, en Adobe Analytics aandrijven.
+Zodra het schema wordt gecreeerd, zult u aan de redacteur van het Schema worden opnieuw gericht waar u gebieden aan het schema kunt toevoegen. U kunt afzonderlijke velden rechtstreeks aan het schema toevoegen of veldgroepen gebruiken. Houd er rekening mee dat alle afzonderlijke velden nog steeds zijn gekoppeld aan een klasse of veldgroep. U kunt kiezen uit een groot aantal industriestandaard veldgroepen die door Adobe worden geleverd, of u kunt zelf veldgroepen maken. Wanneer u uw eigen gegevens in Experience Platform gaat modelleren, is het goed om bekend te raken met de industriestandaard veldgroepen die door Adobe worden geleverd. Het is aan te raden deze te gebruiken, aangezien zij soms stroomafwaartse services mogelijk maken, zoals Customer AI, Attribution AI en Adobe Analytics.
 
 Wanneer u met uw eigen gegevens werkt, is het belangrijk te bepalen welke van uw eigen gegevens in Platform moeten worden vastgelegd en hoe deze moeten worden gemodelleerd. Dit grote onderwerp wordt besproken in meer diepte in playlist [ Model Uw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In deze zelfstudie zal ik u enkel door de implementatie van sommige vooraf bepaalde schema&#39;s begeleiden.
 
@@ -330,7 +330,7 @@ Nu gaan we nog een schema maken voor de websitegegevens van Luma. Op dit punt zo
 
 Selecteer de veldgroep **[!UICONTROL Consumer Experience Event]** . Deze veldgroep bevat de objecten commerce en productListItems die zich ook in [!UICONTROL Commerce Details] bevonden. [!UICONTROL Consumer Experience Event] is een combinatie van verschillende andere standaardveldgroepen die ook afzonderlijk beschikbaar zijn. [!UICONTROL AEP Web SDK ExperienceEvent] -veldgroep bevat ook andere veldgroepen, waaronder enkele van dezelfde in [!UICONTROL Consumer Experience Event] . Gelukkig vloeien ze naadloos samen.
 
-We hebben de `Luma Identity ExperienceEvent field group` niet aan dit schema toegevoegd. Dit komt doordat de SDK van het Web een andere manier heeft om identiteiten te verzamelen. Als u de klasse **[!UICONTROL XDM ExperienceEvent]** selecteert in het gedeelte **[!UICONTROL Composition]** van de schema-editor, wordt een van de velden die de klasse standaard toevoegt, **[!UICONTROL IdentityMap]** genoemd. [!DNL IdentityMap] wordt gebruikt door verschillende Adobe toepassingen om aan Platform te verbinden. U zult zien hoe identiteiten via identityMap naar Platform worden verzonden in de streaming opname les.
+We hebben de `Luma Identity ExperienceEvent field group` niet aan dit schema toegevoegd. Dit komt omdat de Web SDK een andere manier heeft om identiteiten te verzamelen. Als u de klasse **[!UICONTROL XDM ExperienceEvent]** selecteert in het gedeelte **[!UICONTROL Composition]** van de schema-editor, wordt een van de velden die de klasse standaard toevoegt, **[!UICONTROL IdentityMap]** genoemd. [!DNL IdentityMap] wordt door verschillende Adobe-toepassingen gebruikt om een koppeling te maken naar Platform. U zult zien hoe identiteiten via identityMap naar Platform worden verzonden in de streaming opname les.
 
 
 ## Productcatalogusschema maken
@@ -339,7 +339,7 @@ Door de [!UICONTROL Commerce Details] en [!UICONTROL Consumer Experience Event] 
 
 >[!NOTE]
 >
->Als u een bestaande klant van Analytics of van het Doel bent, is het classificeren van entiteiten met schemaverhoudingen analoog aan SAINT classificaties of het uploaden van uw productcatalogus voor Recommendations
+>Als u een bestaande klant van Analytics of van het Doel bent, is het classificeren van entiteiten met schemaverhoudingen analoog aan de classificaties van SAINT of het uploaden van uw productcatalogus voor Aanbevelingen
 
 Eerst moeten we een schema voor de productcatalogus van Luma maken met behulp van een aangepaste klasse:
 

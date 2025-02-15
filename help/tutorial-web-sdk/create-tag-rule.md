@@ -1,10 +1,10 @@
 ---
 title: Tagregels maken voor Platform Web SDK
-description: Leer hoe u een gebeurtenis naar de Edge Network Platform verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u een gebeurtenis naar Platform Edge Network verzendt met uw XDM-object met behulp van een tagregel. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tagregels maken
 
-Leer hoe u gebeurtenissen naar de Adobe Experience Platform-Edge Network kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar de Edge Network van het Platform met de juiste gegevens te verzenden.
+Leer hoe u gebeurtenissen naar de Adobe Experience Platform Edge Network kunt verzenden met uw XDM-object aan de hand van tagregels. Een labelregel is een combinatie van gebeurtenissen, voorwaarden en handelingen die de eigenschap van de tag opgeeft iets te doen. Met het Web SDK van het Platform, worden de regels gebruikt om gebeurtenissen naar Platform Edge Network met de juiste gegevens te verzenden.
 
 ## Leerdoelstellingen
 
@@ -23,7 +23,7 @@ Aan het einde van deze les kunt u het volgende doen:
 * Een gebeurtenis verzenden met XDM-velden met de acties Variabele bijwerken en Gebeurtenis verzenden
 * Meerdere sets XDM-velden stapelen over meerdere regels
 * Afzonderlijke of volledige arraygegevenselementen toewijzen aan het XDM-object
-* Een tagregel Publish aan een ontwikkelingsbibliotheek koppelen
+* Een labelregel publiceren naar een ontwikkelingsbibliotheek
 
 
 ## Vereisten
@@ -56,7 +56,7 @@ waar;
 In tags worden regels gebruikt om handelingen (aanroepen naar brand) onder verschillende omstandigheden uit te voeren. De de etikettenuitbreiding van SDK van het Web van het Platform omvat twee acties die in deze les worden gebruikt:
 
 * **[!UICONTROL Update variable]** wijst gegevenselementen toe aan eigenschappen in een XDM-object
-* **[!UICONTROL Send Event]** verzendt het XDM-object naar de Edge Network Experience Platform
+* **[!UICONTROL Send Event]** verzendt het XDM-object naar Experience Platform Edge Network
 
 In de rest van deze les:
 
@@ -64,13 +64,13 @@ In de rest van deze les:
 
 1. Maak aanvullende regels met de handeling **[!UICONTROL Update variable]** die onze &quot;globale configuratie&quot; overschrijven en onder bepaalde voorwaarden aanvullende XDM-velden leveren (bijvoorbeeld door productdetails op productpagina&#39;s toe te voegen).
 
-1. Maak een andere regel met de handeling **[!UICONTROL Send Event]** , die het volledige XDM-object naar de Adobe Experience Platform-Edge Network verzendt.
+1. Maak een andere regel met de handeling **[!UICONTROL Send Event]** , die het volledige XDM-object naar Adobe Experience Platform Edge Network verzendt.
 
 Al deze regels zullen behoorlijk gebruikend de &quot;[!UICONTROL order]&quot;optie worden gesequenced.
 
 Deze video geeft een overzicht van het proces:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Algemene configuratievelden
 
@@ -332,7 +332,7 @@ Als u klaar bent, worden de volgende regels gemaakt.
 
 ### Gebeurtenisregel verzenden
 
-Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-object naar de Edge Network Platform te verzenden met de handeling **[!UICONTROL Send event]** .
+Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-object naar Platform Edge Network te verzenden met de handeling **[!UICONTROL Send event]** .
 
 1. Selecteer aan de rechterkant **[!UICONTROL Add Rule]** om een andere regel te maken
 
@@ -362,7 +362,7 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
    ![ sparen de regel ](assets/create-rule-save-rule.png)
 
-## Publish the rules in a library
+## De regels in een bibliotheek publiceren
 
 Vervolgens publiceert u de regel naar de ontwikkelomgeving, zodat u kunt controleren of deze werkt.
 
@@ -391,10 +391,10 @@ Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze i
 
 Zoals u op het [!UICONTROL Publishing Flow] scherm kunt zien, is er veel meer aan het het publiceren proces, dat voorbij het werkingsgebied van deze zelfstudie is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
 
-U kunt nu de gegevens in de aanvraag valideren met het Adobe Experience Platform Debugger.
+U kunt nu de gegevens in de aanvraag valideren met de Adobe Experience Platform Debugger.
 
 [Volgende ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

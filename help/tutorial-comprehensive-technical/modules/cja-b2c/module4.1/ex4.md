@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Work
 kt: 5342
 doc-type: tutorial
 exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Analysis Workspace verwijdert alle typische beperkingen van één Analytics-rapport. Het verstrekt een robuust, flexibel canvas voor de bouw van projecten van de douaneanalyse. Sleep een willekeurig aantal gegevenstabellen, visualisaties en componenten (afmetingen, Metriek, segmenten en tijdgranulariteit) naar een project. Creëer meteen onderverdelingen en segmenten, creeer cohorts voor analyse, creeer alarm, vergelijk segmenten, stroom en reserveanalyse, en curate en planningsrapporten voor het delen met iedereen in uw zaken.
 
-Customer Journey Analytics brengt deze oplossing bovenop de gegevens van het Platform. We raden u aan deze overzichtsvideo van vier minuten te bekijken:
+Customer Journey Analytics plaatst deze oplossing boven op de gegevens van het Platform. We raden u aan deze overzichtsvideo van vier minuten te bekijken:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Als u Analysis Workspace nog niet eerder hebt gebruikt, raden we u aan deze video te bekijken:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Uw project maken
 
@@ -121,11 +121,11 @@ Klik **sparen** opnieuw.
 
 ![ demo ](./images/calcbuildercr6a.png)
 
-## 4.1.4.3 Berekende Dimensionen: filters (segmentatie) en datumbereiken
+## 4.1.4.3 Berekende afmetingen: filters (segmentatie) en datumbereiken
 
-### Filters: berekende Dimensionen
+### Filters: berekende afmetingen
 
-Berekeningen zijn niet alleen bedoeld voor Metriek. Alvorens om het even welke analyse te beginnen is het ook interessant om sommige **Berekende Dimensionen** tot stand te brengen. Dit betekende eigenlijk **segmenten** terug in Adobe Analytics. In Customer Journey Analytics, worden deze segmenten genoemd **Filters**.
+Berekeningen zijn niet alleen bedoeld voor Metriek. Alvorens om het even welke analyse te beginnen is het ook interessant om sommige **Berekende Dimensies** tot stand te brengen. Dit betekende eigenlijk **segmenten** terug in Adobe Analytics. In Customer Journey Analytics, worden deze segmenten genoemd **Filters**.
 
 ![ demo ](./images/prfilters.png)
 
@@ -137,11 +137,11 @@ Het creëren van filters zal bedrijfs gebruikers helpen om de analyse met sommig
 
 Deze filters kunnen voor of tijdens het analysegedeelte worden gemaakt (dat u in de volgende oefening zult doen).
 
-### Datumbereik: Dimensionen voor berekende tijd
+### Datumbereik: berekende tijdafmetingen
 
-De Dimensionen van de tijd zijn een ander type berekende afmetingen. Sommige zijn reeds tot stand gebracht, maar u hebt ook de capaciteit om uw eigen Dimensionen van de douanetijd bij de fase van de gegevensvoorbereiding te creëren.
+Tijdafmetingen zijn een ander type berekende afmetingen. Sommige zijn reeds tot stand gebracht, maar u hebt ook de capaciteit om uw eigen Dimensies van de Douane bij de fase van de gegevensvoorbereiding tot stand te brengen.
 
-Deze berekende Dimensionen van de Tijd zullen wij analisten en bedrijfsgebruikers helpen om belangrijke data te herinneren en hen te gebruiken om de rapporttijd te filtreren en te veranderen. Typische vragen en twijfels die ons bij analyses opkomen:
+Deze berekende afmetingen van de Tijd zullen wij analisten en bedrijfsgebruikers helpen om belangrijke data te herinneren en hen te gebruiken om de rapporttijd te filtreren en te veranderen. Typische vragen en twijfels die ons bij analyses opkomen:
 
 - Wanneer was Zwarte Vrijdag vorig jaar? 21e-29e?
 - Wanneer hebben we die tv-campagne in december gevoerd?

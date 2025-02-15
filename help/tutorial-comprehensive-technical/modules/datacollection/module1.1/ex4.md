@@ -4,7 +4,7 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## De gegevens in de aanvraag valideren
 
-### Het Adobe Experience Platform Debugger installeren
+### De Adobe Experience Platform Debugger installeren
 
-Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Installeer de versie voor uw voorkeursbrowser:
+De Experience Platform Debugger is een extensie die beschikbaar is voor Chrome- en Firefox-browsers en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd. Installeer de versie voor uw voorkeursbrowser:
 
 - [ uitbreiding Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -25,9 +25,9 @@ Foutopsporing voor Experience Platforms is een extensie die beschikbaar is voor 
 
 Als u de foutopsporing nog nooit eerder hebt gebruikt - en deze is anders dan de vorige Adobe Experience Cloud Debugger - kunt u deze overzichtsvideo van vijf minuten bekijken:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-Aangezien u de demo-website in de incognitomodus gaat laden, moet u ervoor zorgen dat Foutopsporing voor Experience Platform ook beschikbaar is in de incognitomodus. Om dit te doen, ga **chrome://extensions** in uw browser en open de Debugger van het Experience Platform uitbreiding.
+Aangezien u de demo-website in de incognitomodus gaat laden, moet u ervoor zorgen dat de Experience Platform Debugger ook beschikbaar is in de incognitomodus. Om dit te doen, ga **chrome://extensions** in uw browser en open de Debugger van Experience Platform uitbreiding.
 
 Controleer of deze twee instellingen zijn ingeschakeld:
 
@@ -62,9 +62,9 @@ Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke d
 
 ![ DSN ](./../../gettingstarted/gettingstarted/images/web7.png)
 
-### Gebruik Debugger van het Experience Platform om de vraag te zien die naar Edge gaat
+### Gebruik Foutopsporing van Experience Platform om de vraag te zien die naar Edge gaat
 
-Zorg ervoor dat de demo-website is geopend en klik op het extensiepictogram Foutopsporing Experience Platform.
+Zorg ervoor dat de demo-website is geopend en klik op het extensiepictogram van Experience Platform Debugger.
 
 ![ EXP de Homepage van Nieuws ](./images/ext2.png)
 
@@ -96,11 +96,11 @@ Elke aanvraag bevat een **[!UICONTROL events]** rij.
 
 ![ Debugger AEP de uitbreiding van SDK van het Web van AEP ](./images/validate5.png)
 
-Klik om een **[!UICONTROL events]** rij te openen. Merk op hoe u de {**gebeurtenis 0} web.webpagedetails.pageViews, evenals andere, uit-van-de-doos variabelen ziet die aan het** XDM van SDK van het Web **formaat vasthangen.**
+Klik om een **[!UICONTROL events]** rij te openen. Merk op hoe u de {**gebeurtenis 0} web.webpagedetails.pageViews, evenals andere, uit-van-de-doosvariabelen die aan het** SDK ExperienceEvent XDM **formaat vasthouden van het Web kunt zien.**
 
 ![ waarde van Gebeurtenissen ](./images/validate8.png)
 
-Deze types van verzoekdetails zijn ook zichtbaar in het Netwerk tabel. Filter voor verzoeken met **wisselt** in om van de verzoeken de plaats te bepalen die door Web SDK worden verzonden. U kunt alle details van de XDM lading in de sectie van de Lading vinden:
+Deze types van verzoekdetails zijn ook zichtbaar in het Netwerk tabel. Filter voor verzoeken met **wisselt** in om van de verzoeken de plaats te bepalen die door SDK van het Web worden verzonden. U kunt alle details van de XDM lading in de sectie van de Lading vinden:
 
 ![ lusje van het Netwerk ](./images/validate9.png)
 

@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: 70b06cca-879a-451b-8126-de2f830f056a
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -24,13 +24,13 @@ O Customer Journey Analytics fornece uma interface em que os times de Analytics,
 
 Assista a este vídeo para compender o valor, a jornada do cliente e o processo de configuração:
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
 Mais informações sobre o Customer Journey Analytics podem ser encontradas [ aqui ](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizado
 
-- Vertrouwensbeheer-gebruik com een UI do Customer Journey Analytics
+- &#39;Vertrouwden-gebruik&#39; com a UI do Customer Journey Analytics
 - Traga os datasets da Adobe Experience Platform para o Customer Journey Analytics
 - Entenda o Person ID e a junção de dados no CJA
 - Entenda os conceitos de uma conexão de dados e uma visualização de dados
@@ -66,7 +66,7 @@ Aprenda como fazer alguma preparação de dados antes de continuar com a anális
 
 [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-Saiba como visualizar os dados da Adobe Experience Platform usando Customer Journey Analytics.
+Saiba como visualizar os dados da Adobe Experience Platform usando o Customer Journey Analytics.
 
 [4.6 De inzichten a ação](./ex6.md)
 

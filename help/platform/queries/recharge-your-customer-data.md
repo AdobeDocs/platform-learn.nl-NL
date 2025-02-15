@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In deze video wordt het volgende besproken:
 * Adobe Experience Platform-mogelijkheden voor gegevensvoorbereiding die u kunt benutten
 * Het verhogen van ROI van Adobe Real-Time CDP, Adobe Journey Optimizer, en Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL-voorbeeld
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Deze video is een fragment van de Adobe Summit 2020 zitting *[die Gegevens Omnichannel voor het Elektrificeren van Ervaringen ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* opnieuw oplaadt.
+>Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.

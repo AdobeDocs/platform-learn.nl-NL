@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-10249
 thumbnail: 342378.jpeg
 exl-id: 0ea3c648-7366-462a-b6ed-dc911186e1f6
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Wanneer u op een strategische partner beslist om gegevens met te delen, is het belangrijk om te weten hoe uw klanten zich aanpassen, zodat u weet hoe nuttig dat de gegevensaandeel zal zijn. De Overeenkomst van het segment staat u toe om de overlapping met potentiële gegevenspartners te zien alvorens om het even welke gegevens te delen. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)

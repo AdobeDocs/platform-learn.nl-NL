@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 29f1c26d370859fd2200610ed74a1ea744be08a8
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 6%
@@ -18,5 +18,5 @@ ht-degree: 6%
 
 Deze video laat zien hoe u gegevenssets kunt maken en gegevens kunt opnemen in de Adobe Experience Platform-interface. Voor meer gedetailleerde productdocumentatie, zie [ ingeste partijgegevens gebruikend UI ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html) en [ creeer een dataset gebruikend APIs ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 

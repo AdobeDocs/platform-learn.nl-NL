@@ -3,7 +3,7 @@ title: CSC Bootkamp - Overige voorbereidende werkzaamheden
 description: CSC Bootkamp - Overige voorbereidende werkzaamheden
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Zoals in het creatieve document wordt beschreven, zijn er enkele middelen die no
 
 ![ van ervaring-manager ](./images/wf-from-aem.png)
 
-- Als de hiërarchie AEM map eenmaal is weergegeven, navigeert u naar het volgende pad: Experience-Manager > Adobe Assets > Bike shots Selecteer 5 assets en klik op &#39;Link&#39;.
+- Als de AEM-maphiërarchie eenmaal is weergegeven, navigeert u naar het volgende pad: Experience-Manager > Adobe Assets > Bike shots Selecteer 5 assets en klik op &#39;Link&#39;.
 
 ![ geselecteerde activa ](./images/selected-assets.png)
 
@@ -43,7 +43,7 @@ Adobe Commerce is een van de vele producten in de Adobe Experience Cloud die u k
 
 Deze video maakt je bekend met Adobe Commerce en toont het product dat we hebben gemaakt om te gebruiken tijdens het bootkamp. In een levensecht scenario, zou u de eerder geselecteerde merkactiva aan Adobe Commerce aan de productconfiguratie uploaden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Als deze taak is voltooid, kunt u taak 3 markeren als 100% voltooid in Workfront.
 
