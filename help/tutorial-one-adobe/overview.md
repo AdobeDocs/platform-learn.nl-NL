@@ -3,9 +3,9 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 1%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 1%
 ![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
-
-Deze zelfstudie is het perfecte startpunt voor
 
 Deze zelfstudie is zeer divers en biedt duidelijke inzichten in de volgende toepassingen:
 
@@ -50,17 +48,13 @@ Als u deze zelfstudie wilt gebruiken met uw eigen Adobe Experience Cloud-exempla
 - De Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) {target="_blank"}
 - Toegang tot het Systeem van de Demo: [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) {target="_blank"}
 
-## Voorwerk
-
-Verifieer de vereiste toepassingen die op uw computer [ hier ](./prework.md){target="_blank"} moeten worden geïnstalleerd.
-
 ## Voltooiing en certificering
 
 Deze zelfstudie maakt deel uit van een Adobe-certificeringscursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com ](https://certification.adobe.com) te gaan.
 
 Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, moet u een bewijs van voltooiing voorleggen zoals vermeld [ hier ](./completion.md).
 
-## Inhoud
+## Content Status
 
 Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md){target="_blank"} te gaan.
 
@@ -68,7 +62,7 @@ Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statusp
 
 [Aan de slag](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-In deze grondmodule, zult u alles plaatsen zodat u tot het demomilieu kunt toegang hebben en gebruiken.
+In deze grondmodule, zult u alles voorbereiden zodat u tot het demomilieu toegang hebt en kunt gebruiken.
 
 ### 1. Workflow en planning
 
