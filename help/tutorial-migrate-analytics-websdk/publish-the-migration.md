@@ -1,18 +1,18 @@
 ---
-title: 'Publish: migratie naar staging en productie'
+title: De migratie naar staging en productie publiceren
 description: Wanneer alle ontwikkeling voor de migratie is voltooid en gevalideerd, kunt u opbouwen tot een gefaseerde installatie en vervolgens publiceren naar de productie wanneer u klaar bent.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish: migratie naar staging en productie
+# De migratie naar staging en productie publiceren
 
 Wanneer alle ontwikkeling voor de migratie is voltooid en gevalideerd, kunt u opbouwen tot een gefaseerde installatie en vervolgens publiceren naar de productie wanneer u klaar bent.
 
@@ -51,6 +51,6 @@ Ik wil hier een belangrijke opmerking toevoegen die we aan het begin van deze ze
 
 >[!IMPORTANT]
 >
->Het is belangrijk om op te merken dat een van de belangrijkste redenen dat u deze migratie van uw implementatie uitvoert, is om Adobe Experience Platform-toepassingen voor te bereiden, zoals Customer Journey Analytics, Real-Time CDP of Journey Optimizer (zoals vermeld in #3 hierboven). Het gebruik van uw websitegegevens voor dit doel bevat aanvullende stappen die niet in deze zelfstudie zijn opgenomen, maar deze zelfstudie is zeker een voorwaarde voor die verdere voortgang van uw implementatie. Voltooi deze zelfstudie dan ook en voer de stappen uit die nodig zijn om dezelfde websitegegevens ook naar het Experience Platform te verzenden.
+>Het is belangrijk om op te merken dat een van de belangrijkste redenen dat u deze migratie van uw implementatie uitvoert, het voorbereiden op het gebruik van Adobe Experience Platform-toepassingen, zoals Customer Journey Analytics, Real-Time CDP of Journey Optimizer is. Het gebruik van uw websitegegevens voor dit doel bevat aanvullende stappen die niet in deze zelfstudie zijn opgenomen, maar deze zelfstudie is zeker een voorwaarde voor die verdere voortgang van uw implementatie. Nu u deze zelfstudie hebt voltooid, bent u klaar om de stappen uit te voeren die nodig zijn om dezelfde websitegegevens ook naar de Experience Platform te verzenden.
 
 Veel succes op uw reis met analyses en andere content en marketinginspanningen!
