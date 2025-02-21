@@ -5,7 +5,7 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 7%
@@ -103,19 +103,19 @@ Campaigns
 + Soorten publiek en segmentatie {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
-   + [Overzicht van Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
-   + [Federale publiekscompositie verbinden en configureren](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Een federatieve publiekscompositie maken](audiences/create-a-federated-audience-composition.md)
-   + [Overzicht van Audience Rule builder](audiences/audience-rule-builder-overview.md)
-   + [Soorten publiek maken](audiences/create-audiences.md)
-   + [Tijdbeperkingen gebruiken](audiences/time-constraints.md)
-   + [Op inhoud gebaseerd publiek maken](audiences/create-content-based-audiences.md)
-   + [Conversiepubliek maken](audiences/create-conversion-audiences.md)
-   + [Soorten publiek maken van bestaand publiek](audiences/create-audiences-from-existing-audiences.md)
-   + [Opeenvolgend publiek maken](audiences/create-sequential-audiences.md)
-   + [Dynamisch publiek maken](audiences/create-dynamic-audiences.md)
-   + [Eenvoudig publiek maken](audiences/create-multi-entity-audiences.md)
-   + [Accountsoorten maken en activeren (B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [Overzicht van Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Federale publiekscompositie verbinden en configureren](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Een federatieve publiekscompositie maken](audiences/fac/create-a-federated-audience-composition.md)
+   + [Overzicht van Audience Rule builder](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [Soorten publiek maken](audiences/audience-builder/create-audiences.md)
+   + [Tijdbeperkingen gebruiken](audiences/audience-builder/time-constraints.md)
+   + [Op inhoud gebaseerd publiek maken](audiences/audience-builder/create-content-based-audiences.md)
+   + [Conversiepubliek maken](audiences/audience-builder/create-conversion-audiences.md)
+   + [Soorten publiek maken van bestaand publiek](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [Opeenvolgend publiek maken](audiences/audience-builder/create-sequential-audiences.md)
+   + [Dynamisch publiek maken](audiences/audience-builder/create-dynamic-audiences.md)
+   + [Eenvoudig publiek maken](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [Accountsoorten maken en activeren (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo van streamingsegmentatie](/help/platform/audiences/streaming-segmentation-demo.md)
    + [ evalueer een publieksregel ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html) {target="_blank"}
    + [ creeer een dataset om gegevens ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html) uit te voeren {target="_blank"}
