@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3 Procesautomatisering met Workfront Fusion
 
-Leer hoe u automatisering kunt verwerken met Workfront Fusion.
+Leer hoe u automatisering met Workfront Fusion kunt uitvoeren.
 
-## 1.2.3.1 Iteratie over meerdere waarden
+## 1.2.3.1 Herhalen over meerdere waarden
 
 Uw scenario zou als dit moeten kijken:
 
@@ -200,7 +200,7 @@ Tot dusver, hebt u uw scenario manueel in werking gesteld om te testen. Werk nu 
 
 ## Volgende stappen
 
-Ga naar [ Samenvatting en Voordelen van de Automatisering van de Diensten van Firefly ](./summary.md){target="_blank"}
+Ga naar [ 1.2.4 Automatisering gebruikend Schakelaars ](./ex4.md){target="_blank"}
 
 Ga terug naar [ het Automatiseren de Diensten van Adobe Firefly ](./automation.md){target="_blank"}
 

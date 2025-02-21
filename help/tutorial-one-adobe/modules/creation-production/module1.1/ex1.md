@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,76 @@ ht-degree: 0%
 
 Leer hoe u Postman en Adobe I/O kunt gebruiken om query&#39;s uit te voeren op Adobe Firefly Services-API&#39;s.
 
-## 1.1.1.1 Vereisten
+## 1.1.1.1 Voorwaarden
 
 Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
-## 1.1.1.2 Adobe I/O - access_token
+## 1.1.1.1 firefly.adobe.com
+
+Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com). Klik het **profiel** pictogram en zorg u aan de juiste **Rekening** het programma wordt geopend, die `--aepImsOrgName--` zou moeten zijn. Indien nodig, klik **Profiel van de Schakelaar** om aan die rekening over te schakelen.
+
+![ Postman ](./images/ffui1.png){zoomable="yes"}
+
+Ga de herinnering `Horses in a field` in en klik **produceert**.
+
+![ Postman ](./images/ffui2.png){zoomable="yes"}
+
+Dan zou je iets gelijkaardigs moeten zien.
+
+![ Postman ](./images/ffui3.png){zoomable="yes"}
+
+Daarna, open omhoog de **Hulpmiddelen van de Ontwikkelaar** in uw browser.
+
+![ Postman ](./images/ffui4.png){zoomable="yes"}
+
+Dan moet je dit zien. Ga naar het **Netwerk** lusje.
+
+![ Postman ](./images/ffui5.png){zoomable="yes"}
+
+Ga de onderzoekstermijn **in produceren** en klik dan **** opnieuw. U zou dan een verzoek met de naam **moeten zien produceren-async**. Selecteer het en ga dan naar **Payload** waar u de details van het verzoek zult zien.
+
+![ Postman ](./images/ffui6.png){zoomable="yes"}
+
+Het verzoek dat u hier ziet is het verzoek dat wordt verzonden naar de server-kant achtergrond van de Diensten van Firefly. Het bevat verschillende belangrijke parameters:
+
+- **herinnering**: Dit is uw herinnering, die om vraagt welk soort beeld Firefly zou moeten produceren
+
+- **zaden**: In dit verzoek, werden de zaden geproduceerd op een willekeurige manier. Wanneer Firefly een afbeelding genereert, wordt het proces standaard gestart door een willekeurig getal, een zaadgetal genaamd, te kiezen. Dit willekeurige getal draagt bij aan wat elke afbeelding uniek maakt. Dit is ideaal als u een groot aantal afbeeldingen wilt genereren. Het kan echter voorkomen dat u afbeeldingen wilt genereren die op meerdere aanvragen lijken. Als Firefly bijvoorbeeld een afbeelding genereert die u wilt wijzigen met behulp van andere Firefly-opties (zoals voorinstellingen voor stijlen, referentieafbeeldingen, enz.), kunt u in toekomstige HTTP-aanvragen de onzekerheid van toekomstige afbeeldingen beperken en inbellen op de gewenste afbeelding.
+
+![ Postman ](./images/ffui7.png){zoomable="yes"}
+
+Bekijk de UI opnieuw. Verander de **verhouding van de Verhouding** in **Liggend (4:3)**.
+
+![ Postman ](./images/ffui8.png){zoomable="yes"}
+
+De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect zoals **Stripboek**.
+
+![ Postman ](./images/ffui9.png){zoomable="yes"}
+
+Open opnieuw de **Hulpmiddelen van de Ontwikkelaar** in uw browser. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
+
+![ Postman ](./images/ffui10.png){zoomable="yes"}
+
+Wanneer u de details van het netwerkverzoek inspecteert, zult u nu het volgende zien:
+
+- **herinnering** is niet veranderd in vergelijking met het vorige verzoek
+- **zaden** zijn niet veranderd in vergelijking met het vorige verzoek
+- **grootte** is veranderd, gebaseerd op de verandering in **verhouding van de Verhouding**.
+- **stijlen** is toegevoegd, en heeft een verwijzing naar het **stripverhaal** effect dat u selecteerde
+
+![ Postman ](./images/ffui11.png){zoomable="yes"}
+
+Voor de volgende oefening, zult u één van de **zaad** aantallen moeten gebruiken. Schrijf een zaadnummer van keuze.
+
+In de volgende oefening, zult u gelijkaardige dingen met de Diensten van Firefly doen, maar dan door API in plaats van UI te gebruiken. In dit voorbeeld, is het zaadaantal **45781**.
+
+## 1.1.1.3 Adobe I/O - access_token
 
 In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**. De reactie zou een nieuwe **versnelling** moeten bevatten.
 
 ![ Postman ](./images/ioauthresp.png){zoomable="yes"}
 
-## 1.1.1.3 Firefly Services API, Text 2 Image
+## 1.1.1.4 Firefly Services API, Text 2 Image
 
 Nu u een geldig en vers access_token hebt, bent u klaar om uw eerste aanvraag naar Firefly Services API&#39;s te verzenden.
 
@@ -43,7 +102,35 @@ Er moet een mooie afbeelding worden afgebeeld `horses in a field` .
 
 ![ Firefly ](./images/ff3.png){zoomable="yes"}
 
-U kunt vrij spelen met de API-aanvraag voordat u verdergaat met de volgende oefening.
+In het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, voeg het volgende onder het gebied `"promptBiasingLocaleCode": "en-US"` toe en vervang veranderlijk `XXX` door één van de zaadaantallen die willekeurig door de Diensten UI van Firefly werden gebruikt. In dit voorbeeld, is het **zaad** aantal `45781`.
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+Klik **verzenden**. Vervolgens ontvangt u een reactie met een nieuwe afbeelding die door Firefly Services is gegenereerd. Open de afbeelding om deze weer te geven.
+
+![ Firefly ](./images/ff4.png){zoomable="yes"}
+
+U zou dan een nieuw beeld met lichte verschillen moeten zien, die op **worden gebaseerd zaad** dat werd gebruikt.
+
+![ Firefly ](./images/ff5.png){zoomable="yes"}
+
+Daarna, in het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, kleef het hieronder **stijlen** voorwerp onder het **zaden** voorwerp. Dit zal de stijl van het geproduceerde beeld in **comic_book** veranderen.
+
+```json
+,
+  "contentClass": "art",
+  "styles": {
+    "presets": [
+      "comic_book"
+    ],
+    "strength": 50
+  }
+```
 
 ## Volgende stappen
 

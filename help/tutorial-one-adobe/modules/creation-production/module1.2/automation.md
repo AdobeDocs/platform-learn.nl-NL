@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ In deze oefening, verken Workfront Fusion in combinatie met Firefly Services en 
 In deze oefening, leer hoe te om de APIs van de Diensten van Firefly en Photoshop APIs binnen Workfront Fusion te vormen en te gebruiken, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
 
 [ 1.2.3 de automatisering van het Proces met de Fusie van Workfront ](./ex3.md){target="_blank"}
+
+In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
+
+[ 1.2.4 Automatisering gebruikend Schakelaars ](./ex4.md){target="_blank"}
 
 In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
 
