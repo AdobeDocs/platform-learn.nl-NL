@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,7 @@ Campaigns
    + [Goedkeuring afdwingen](/help/platform/governance/enforce-consent.md)
    + [Integreren met IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Gegevenshygiëne {#data-hygiene}
+   + [Overzicht](/help/platform/data-hygiene/overview.md)
    + [Gegevensprep voor gegevenshygiëne](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Gegevenssets en batches verwijderen](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [ verval datasets ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
