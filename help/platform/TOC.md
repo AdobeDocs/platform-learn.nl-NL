@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '888'
 ht-degree: 7%
 
 ---
@@ -126,6 +126,8 @@ Campaigns
    + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
 + [ de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html) {target="_blank"}
++ Collaboration {#collaboration}
+   + [Real-Time CDP Collaboration - Overzicht](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
 + Gegevensbeheer {#data-governance}
