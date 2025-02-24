@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: c5a80b87ac8e997922cb8c69b4180c4220dd9862
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer hoe u Postman en Adobe I/O kunt gebruiken om query&#39;s uit te voeren op A
 
 Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
-## 1.1.1.1 firefly.adobe.com
+## 1.1.1.2 firefly.adobe.com
 
 Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com). Klik het **profiel** pictogram en zorg u aan de juiste **Rekening** het programma wordt geopend, die `--aepImsOrgName--` zou moeten zijn. Indien nodig, klik **Profiel van de Schakelaar** om aan die rekening over te schakelen.
 
@@ -131,6 +131,62 @@ Daarna, in het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, kleef het
     "strength": 50
   }
 ```
+
+Dan moet je dit hebben. Klik **verzenden**.
+
+![ Firefly ](./images/ff6.png){zoomable="yes"}
+
+Klik op de URL van de afbeelding om deze te openen.
+
+![ Firefly ](./images/ff7.png){zoomable="yes"}
+
+Uw afbeelding is nu een beetje gewijzigd. Bij het toepassen van voorinstellingen voor stijlen wordt de zaadafbeelding niet meer op dezelfde manier toegepast als voorheen.
+
+![ Firefly ](./images/ff8.png){zoomable="yes"}
+
+Verwijder de code voor het **zaden** voorwerp uit het **Lichaam** van uw verzoek. Klik **verzenden** en klik dan beeld URL die u van de reactie krijgt.
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+![ Firefly ](./images/ff9.png){zoomable="yes"}
+
+Uw afbeelding is nu weer een beetje gewijzigd.
+
+![ Firefly ](./images/ff10.png){zoomable="yes"}
+
+
+## 1.1.1.5 Firefly Services API, Gen Expand
+
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de Ingenieurs van de Diensten van Firefly** inzameling en gaat naar het **Lichaam** van het verzoek.
+
+- **grootte**: Ga de gewenste resolutie in. De waarde die u hier opgeeft, moet groter zijn dan de oorspronkelijke grootte van de afbeelding en mag niet groter zijn dan 4096.
+- **image.source.url**: Dit gebied vereist een verbinding aan het beeld dat moet worden uitgebreid. In dit voorbeeld wordt een variabele gebruikt om te verwijzen naar de afbeelding die tijdens de vorige oefening is gegenereerd.
+
+- **horizontale groepering**: Geaccepteerde waarden zijn: `"center"`, `"left`, `"right"`.
+- **verticale groepering**: Geaccepteerde waarden zijn: `"center"`, `"top`, `"bottom"`.
+
+![ Firefly ](./images/ff11.png){zoomable="yes"}
+
+Klik op de afbeeldings-URL die deel uitmaakt van het antwoord.
+
+![ Firefly ](./images/ff12.png){zoomable="yes"}
+
+U ziet nu dat de afbeelding die in de vorige oefening is gegenereerd, is uitgebreid naar de resolutie van 3999x3999.
+
+![ Firefly ](./images/ff13.png){zoomable="yes"}
+
+Wanneer u de uitlijning van de plaatsing wijzigt, zal de uitvoer ook iets anders zijn. In dit voorbeeld, wordt de plaatsing veranderd in **verlaten, bodem**. Klik **verzenden** en klik dan om het geproduceerde beeld URL te openen.
+
+![ Firefly ](./images/ff14.png){zoomable="yes"}
+
+Vervolgens ziet u dat de oorspronkelijke afbeelding op een andere plaats wordt gebruikt, wat van invloed is op de hele afbeelding.
+
+![ Firefly ](./images/ff15.png){zoomable="yes"}
 
 ## Volgende stappen
 
