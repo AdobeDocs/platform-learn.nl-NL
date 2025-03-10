@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren pro
 [ 1.2.4 Automatisering gebruikend Schakelaars ](./ex4.md){target="_blank"}
 
 In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
+
+[ 1.2.5 Kader I/O en de Fusie van Workfront ](./ex5.md){target="_blank"}
+
+In deze oefening, zult u Kader I/O met uw scenario van de Fusie van Workfront verbinden.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 

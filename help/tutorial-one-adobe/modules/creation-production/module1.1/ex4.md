@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Sluit het **aangepaste model van het Aandeel** popup.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 Gebruik uw aangepaste model in de gebruikersinterface
+## 1.1.4.2 Uw aangepaste model gebruiken in de gebruikersinterface
 
 Ga naar [ https://firefly.adobe.com/cme/train ](https://firefly.adobe.com/cme/train). Klik op het aangepaste model om het te openen.
 
@@ -100,7 +100,7 @@ U zult dan de steekproefherinnering zien die u alvorens wordt uitgevoerd inging.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Schakel uw aangepaste model voor de API voor aangepaste modellen van Firefly Services in
+## 1.1.4.3 Enable your Custom Model for Firefly Services Custom Models API
 
 Als uw aangepaste model is opgeleid, kan het ook worden gebruikt via de API. In oefening 1.1.1 reeds vormde u uw Adobe I/O project voor interactie met de Diensten van Firefly door API.
 
@@ -112,9 +112,9 @@ Klik de 3 punten **..** en klik dan **Aandeel**.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm20.png){zoomable="yes"}
 
-Om tot een Model van de Douane van Firefly toegang te hebben, moet het Model van de Douane aan **Technische identiteitskaart van de Rekening** van ons Project van Adobe I/O worden gedeeld.
+Om tot een Model van de Douane van Firefly toegang te hebben, moet het Model van de Douane aan **Technische E-mail van de Rekening** van uw Project van Adobe I/O worden gedeeld.
 
-Om uw **Technische identiteitskaart van de Rekening** terug te winnen, ga [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects). Klik om het project met de naam `--aepUserLdap-- Firefly` te openen.
+Om uw **Technische E-mail van de Rekening** terug te winnen, ga [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects). Klik om het project met de naam `--aepUserLdap-- One Adobe tutorial` te openen.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ Klik **Server-aan-Server**.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm25.png){zoomable="yes"}
 
-Klik om uw **identiteitskaart van de Technische Rekening te kopiëren**.
+Klik om uw **Technische E-mail van de Rekening** te kopiëren.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm23.png){zoomable="yes"}
 
-Plak uw **identiteitskaart van de Technische Rekening** en klik **Uitnodiging om** uit te geven.
+Plak uw **Technische E-mail van de Rekening** en klik **Uitnodiging om** uit te geven.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm21.png){zoomable="yes"}
 
-**identiteitskaart van de Technische Rekening** zou tot het Model van de Douane nu moeten kunnen toegang hebben.
+De **Technische E-mail van de Rekening** zou nu tot het Model van de Douane moeten kunnen toegang hebben.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm22.png){zoomable="yes"}
 
