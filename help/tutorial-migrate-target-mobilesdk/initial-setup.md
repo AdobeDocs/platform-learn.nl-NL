@@ -1,10 +1,10 @@
 ---
-title: Eerste configuratie - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie kiezen
+title: Eerste configuratie - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen
 description: Meer informatie over en stel de belangrijke basiselementen in die vereist zijn voor uw Web SDK-implementatie voor het platform
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---

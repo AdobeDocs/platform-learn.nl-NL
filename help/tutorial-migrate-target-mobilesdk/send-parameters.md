@@ -1,17 +1,17 @@
 ---
-title: Parameters verzenden - Migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen
+title: Parameters verzenden - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De beslissingsextensie
 description: Leer hoe u parameters mbox, profile en entity naar Adobe Target verzendt met Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
 
-# Parameters naar doel verzenden met de extensie Adobe Journey Optimizer - Mobiele beslissingen nemen
+# Parameters naar doel verzenden met de extensie Beslissing
 
-De doelimplementaties verschillen per website vanwege de sitearchitectuur, de zakelijke vereisten en de gebruikte functies. De meeste doelimplementaties bevatten het doorgeven van verschillende parameters voor contextuele informatie, doelgroepen en aanbevelingen voor inhoud.
+De doelimplementaties verschillen per mobiele toepassing vanwege de toepassingsarchitectuur, de zakelijke vereisten en de gebruikte functies. De meeste doelimplementaties bevatten het doorgeven van verschillende parameters voor contextuele informatie, doelgroepen en aanbevelingen voor inhoud.
 
 Met de extensie Doel zijn alle doelparameters doorgegeven via de functie `TargetParameters` .
 
@@ -27,7 +27,7 @@ Met de extensie Decisioning:
 
 ## Aangepaste parameters
 
-Aangepaste mbox-parameters zijn de eenvoudigste manier om gegevens door te geven aan Target en kunnen worden doorgegeven in de XDM- of `data.__adobe.target` -objecten.
+Aangepaste mbox-parameters zijn de eenvoudigste manier om gegevens door te geven aan Target en kunnen worden doorgegeven in de `xdm` - of `data.__adobe.target` -objecten.
 
 ## Profielparameters
 
@@ -35,7 +35,7 @@ Profielparameters slaan gegevens gedurende een langere periode op in het doelpro
 
 ## Parameters entiteit
 
-[ de parameters van de Entiteit ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor de Aanbevelingen van het Doel over te gaan. Net als profielparameters moeten alle entiteitsparameters onder het `data.__adobe.target` -object worden doorgegeven.
+[ de parameters van de Entiteit ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor de Aanbevelingen van het Doel over te gaan. Net als profielparameters moeten de meeste eenheidsparameters worden doorgegeven onder het `data.__adobe.target` -object. De enige uitzondering is dat de array `xdm.productListItems` aanwezig is en dat de eerste `SKU` -waarde als `entity.id` wordt gebruikt.
 
 Entiteiteits-parameters voor een specifiek item moeten vooraf met `entity.` worden vastgelegd om de gegevens correct vast te leggen. De gereserveerde `cartIds` - en `excludedIds` -parameters voor aanbevelingen-algoritmen mogen niet vooraf worden ingesteld en de waarde voor beide moet een door komma&#39;s gescheiden lijst met entiteit-id&#39;s bevatten.
 
@@ -45,7 +45,7 @@ De parameters van de aankoop worden overgegaan op een de bevestigingspagina van 
 
 Aankoopgegevens worden doorgegeven aan Target wanneer voor de veldgroep `commerce` `purchases.value` is ingesteld op `1` . De bestellings-id en het totaal van de bestellingen worden automatisch toegewezen aan het `order` -object. Als de array `productListItems` aanwezig is, worden de waarden `SKU` gebruikt voor `productPurchasedId` .
 
-Als u geen `commerce` -velden doorgeeft in het XDM-object, kunt u de ordergegevens doorgeven om als doel in te stellen met de velden `data.__adobe.target.orderId` , `data.__adobe.target.orderTotal` en `data.__adobe.target.productPurchasedId` .
+Als u geen `commerce` -velden doorgeeft in het `xdm` -object, kunt u de ordergegevens doorgeven om het object te activeren met de velden `data.__adobe.target.orderId` , `data.__adobe.target.orderTotal` en `data.__adobe.target.productPurchasedId` .
 
 ## Klant-id (mbox3rdPartyId)
 
@@ -56,7 +56,7 @@ Met Doel is het synchroniseren van profielen tussen apparaten en systemen mogeli
 | Voorbeeld van parameter at.js | Platform Web SDK, optie | Notities |
 | --- | --- | --- |
 | `at_property` | N.v.t. | De tokens van het bezit worden gevormd in [ datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kunnen niet in de `sendEvent` vraag worden geplaatst. |
-| `pageName` | `xdm.web.webPageDetails.name` | Alle parameters van Target mbox moeten worden doorgegeven als onderdeel van het `xdm` -object en moeten in overeenstemming zijn met een schema met behulp van de XDM ExperienceEvent-klasse. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van het `data` -object. |
+| `pageName` | `xdm.web.webPageDetails.name` of <br> `data.__adobe.target.pageName` | Doelparameters kunnen worden doorgegeven als onderdeel van het object `xdm` of als onderdeel van het object `data.__adobe.target` . |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters van het doelprofiel moeten worden doorgegeven als onderdeel van het `data` -object en vooraf ingesteld met `profile.` om correct te worden toegewezen. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de functie Categorie-affiniteit van Doel die moet worden doorgegeven als onderdeel van het `data` -object. |
 | `entity.id` | `data.__adobe.target.entity.id` <br> OF <br> `xdm.productListItems[0].SKU` | Identiteitskaart van de entiteit wordt gebruikt voor het gedrag van tellers van de Aanbevelingen van het Doel. Deze entiteit-id&#39;s kunnen worden doorgegeven als onderdeel van het `data` -object of automatisch worden toegewezen vanuit het eerste item in de `xdm.productListItems` -array als die veldgroep door de implementatie wordt gebruikt. |
@@ -65,9 +65,9 @@ Met Doel is het synchroniseren van profielen tussen apparaten en systemen mogeli
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
 | `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. Namespace voor klantidentiteitskaart te gebruiken moet in de [ configuratie van het Doel van de datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) worden gespecificeerd. |
-| `orderId` | `xdm.commerce.order.purchaseID`<br> (wanneer `commerce.purchases.value` is ingesteld op `1` ) | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
-| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (wanneer `commerce.purchases.value` is ingesteld op `1` ) | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
-| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (wanneer `commerce.purchases.value` aan `1` wordt geplaatst) <br> OF <br> `data.__adobe.target.productPurchasedId` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Verwijs naar de [ sectie van entiteitparameters ](#entity-parameters) hieronder voor details. |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`) <br> or <br> `data.__adobe.target.orderId` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (when `commerce.purchases.value` is set to `1`) <br> or <br> `data.__adobe.target.orderTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (wanneer `commerce.purchases.value` aan `1` wordt geplaatst) <br> OF <br> `data.__adobe.target.productPurchasedId` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activiteitendoel scoren. |
 
 {style="table-layout:auto"}
@@ -80,6 +80,42 @@ Gebruik een eenvoudig voorbeeld om de verschillen tussen de uitbreidingen aan te
 ### Android
 
 >[!BEGINTABS]
+
+>[!TAB  optimaliseer SDK ]
+
+```Java
+final Map<String, Object> data = new HashMap<>();
+final Map<String, String> targetParameters = new HashMap<>();
+ 
+// Mbox parameters
+targetParameters.put("status", "platinum");
+ 
+// Profile parameters - prefix with profile.
+targetParameters.put("profile.gender", "male");
+ 
+// Product parameters
+targetParameters.put("productId", "pId1");
+targetParameters.put("categoryId", "cId1");
+ 
+// Order parameters
+targetParameters.put("orderId", "id1");
+targetParameters.put("orderTotal", "1.0");
+targetParameters.put("purchasedProductIds", "ppId1");
+ 
+data.put("__adobe", new HashMap<String, Object>() {
+  {
+    put("target", targetParameters);
+  }
+});
+ 
+// Target location (or mbox)
+final DecisionScope decisionScope = DecisionScope("myTargetLocation")
+ 
+final List<DecisionScope> decisionScopes = new ArrayList<>();
+decisionScopes.add(decisionScope);
+ 
+Optimize.updatePropositions(decisionScopes, null, data);
+```
 
 >[!TAB  Doel SDK ]
 
@@ -109,6 +145,36 @@ TargetParameters targetParameters = new TargetParameters.Builder()
 ### iOS
 
 >[!BEGINTABS]
+
+>[!TAB  optimaliseer SDK ]
+
+```Swift
+var data: [String: Any] = [:]
+var targetParameters: [String: String] = [:]
+ 
+// Mbox parameters
+targetParameters["status"] = "platinum"
+ 
+// Profile parameters - prefix with profile.
+targetParameters["profile.gender"] = "make"
+ 
+// Product parameters
+targetParameters["productId"] = "pId1"
+targetParameters["categoryId"] = "cId1"
+ 
+// Add order parameters
+targetParameters["orderId"] = "id1"
+targetParameters["orderTotal"] = "1.0"
+targetParameters["purchasedProductIds"] = "ppId1"
+ 
+data["__adobe"] = [
+  "target": targetParameters
+]
+ 
+// Target location (or mbox)
+let decisionScope = DecisionScope(name: "myTargetLocation")
+Optimize.updatePropositions(for: [decisionScope] withXdm: nil andData: data)
+```
 
 >[!TAB  Doel SDK ]
 

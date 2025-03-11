@@ -1,62 +1,39 @@
 ---
-title: Doelimplementaties valideren in de Adobe Journey Optimizer - Mobiele extensie beslissen
-description: Leer hoe u activiteiten valideert en fouten opspoort in een Adobe Target-implementatie met behulp van de extensie Adobe Journey Optimizer - Besluit over mobiele apparaten.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Valideren en problemen oplossen de implementatie van de Decisioning-extensie
+description: Leer hoe u een mobiele Adobe Target-implementatie kunt valideren en problemen kunt oplossen met de extensie Decisioning.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
-# De Adobe Journey Optimizer valideren - De implementatie van de mobiele extensie bepalen
+# Valideren en problemen oplossen de implementatie van de Decisioning-extensie
 
-Nadat u uw implementatie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen hebt gemigreerd, is het belangrijk om alles te bevestigen behoorlijk werkt alvorens om het even welke veranderingen in uw productie app te publiceren. Adobe beveelt het volgende aan, dat in detail op deze pagina wordt besproken:
+Nadat u uw implementatie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen hebt gemigreerd, is het belangrijk om alles te bevestigen behoorlijk werkt alvorens om het even welke veranderingen in uw productie app te publiceren. Adobe raadt het volgende aan, dat in detail op deze pagina wordt besproken:
 
-* Voer een technische bevestiging uit om ervoor te zorgen de basisimplementatie en de Mobiele SDK van het Platform verzoeken en de reacties correct kijken
+* Voer een technische validatie uit om ervoor te zorgen dat de basisimplementatie en de verzoeken en antwoorden van Platform Mobile SDK er goed uitzien
 * Zorgen dat doelactiviteiten correct worden geleverd en weergegeven
 * Controleren of rapporten correct werken
-* Reviseer het publiek en profielscripts om ervoor te zorgen dat deze compatibel zijn met Platform Mobile SDK en de extensie Optimie
+* Reviseer het publiek en de profielscripts om ervoor te zorgen dat deze compatibel zijn met Platform Mobile SDK en de extensie Optimie
 * Ervoor zorgen dat integratie met Adobe- of externe toepassingen correct werkt
 
-Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur en -functies. U kunt de onderstaande tabellen als beginpunt gebruiken en items toevoegen die uniek zijn voor uw implementatie. De [ het Zuiveren pagina ](debugging.md) van dit leerprogramma toont u hulpmiddelen u kunt gebruiken om met deze bevestiging te helpen.
+Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur en -functies. U kunt de onderstaande tabellen als beginpunt gebruiken en items toevoegen die uniek zijn voor uw implementatie.
 
-## Technische validatie
+## Technische validatie en probleemoplossing
 
-| Validatie-item | Notities |
-|---|---|
-| | |
+De technische validatie en probleemoplossing met Platform Mobile SDK en de extensie voor besluitvorming worden aanzienlijk verbeterd met Assurance. Raadpleeg de volgende documentatiepagina&#39;s voor meer informatie over dit essentiële hulpmiddel:
 
+* [ Vestiging de stoppen van het Beslissen in Assurance ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/) {target=_blank}
 
-## Activiteit leveren en renderen
+* [ Valideren optimaliseert SDK opstelling ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/) {target=_blank}
 
-| Validatie-item | Notities |
-| | |
+* [ verzoeken van het Overzicht en simuleren verschillende ervaringen ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/) {target=_blank}
 
-## Rapportage
+Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u er zeker van zijn dat de implementatie van Platform Mobile SDK met de extensie Decisioning gereed is om over te stappen naar de productie.
 
-| Validatie-item | Notities |
-| | |
-
-## Scripts voor soorten publiek en profielen
-
-| Validatie-item | Notities |
-|---|---|
-| | |
-
-## Integratie met Adobe toepassingen
-
-| Validatie-item | Notities |
-| | |
-
-## Integraties met toepassingen van derden
-
-| Validatie-item | Notities |
-|---|---|
-| | |
-
-Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u er zeker van zijn dat de implementatie van Platform Mobile SDK met de extensie Decisioning gereed is om over te gaan naar de productie.
-
-Daarna, leer hoe te [ een implementatie van het Doel problemen oplossen gebruikend het Web SDK van het Platform ](debugging.md).
+Gefeliciteerd, u hebt het einde van de zelfstudie bereikt! Veel succes bij het migreren van uw Adobe Target-implementatie naar de decisioning-extensie!
 
 >[!NOTE]
 >

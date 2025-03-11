@@ -1,10 +1,10 @@
 ---
-title: De migratie plannen - migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie kiezen
+title: De migratie plannen - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De beslissingsextensie
 description: Ontdek de belangrijkste verschillen tussen at.js en Platform Web SDK en hoe u uw migratie-inspanning kunt plannen.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Hoe eenvoudig of complex uw implementatie ook is, het is belangrijk dat u de hui
 Het migratieproces omvat de volgende belangrijke stappen:
 
 1. Evalueer uw huidige implementatie en bepaal een migratiebenadering
-1. De eerste componenten instellen voor verbinding met de Adobe Experience Platform-Edge Network
+1. De eerste componenten instellen om verbinding te maken met de Adobe Experience Platform Edge Network
 1. Werk de fundamentele implementatie bij om de uitbreiding van het Doel met de Decisioning uitbreiding te vervangen
 1. Verbeter de implementatie van SDK optimaliseren voor uw specifieke gebruiksgevallen. Dit kan het doorgeven van extra parameters, het gebruiken van reactietokens, en meer impliceren.
 1. Objecten in de interface Doel bijwerken, zoals profielscripts, activiteiten en publieksdefinities
