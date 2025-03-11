@@ -2,9 +2,9 @@
 title: Doelactiviteiten ophalen - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen bepalen
 description: Leer hoe u Adobe Target-activiteiten ophaalt tijdens het migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Zorg er altijd voor dat u foutafhandeling opneemt om geschikte ervaringen onder 
 
 
 ## Inhoud aanvragen en op aanvraag toepassen
+
+>[!IMPORTANT]
+>
+>Nadat u inhoud op de app hebt toegepast, moet u de API van `displayed` starten om aan Target te laten weten dat de bezoeker de alternatieve of standaardinhoud heeft gezien die in de activiteit is opgegeven. Gelieve te zien de [ de omzettingsgebeurtenissen van het Doel van het Spoor ](track-events.md) pagina voor meer details.
+
 
 +++ Android-voorbeeld
 

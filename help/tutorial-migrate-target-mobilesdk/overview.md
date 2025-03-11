@@ -3,9 +3,9 @@ title: De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Jo
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ Hoe eenvoudig of complex uw implementatie ook is, het is belangrijk dat u de hui
 
 Het migratieproces omvat de volgende belangrijke stappen:
 
-1. Evalueer uw huidige implementatie
+1. Evalueer uw huidige implementatie, inclusief:
+   1. Alle doel-SDK-API&#39;s gebruikt
+   1. Wijzigingen in de algemene instellingen van Target
+   1. Integratie met Adobe Analytics
+   1. Het gebruik van mbox-, profiel- en entiteitsparameters
+   1. Gebruik van profielscripts en publiek
+   1. Aangepaste code die uniek is voor uw implementatie
 1. De eerste componenten instellen om verbinding te maken met de Adobe Experience Platform Edge Network
 1. Werk de fundamentele implementatie bij om de uitbreiding van het Doel met de Decisioning uitbreiding te vervangen
 1. Verbeter de implementatie van SDK optimaliseren voor uw specifieke gebruiksgevallen. Dit kan het doorgeven van extra parameters, het gebruiken van reactietokens, en meer impliceren.
 1. Objecten in de interface Doel bijwerken, zoals profielscripts, activiteiten en publieksdefinities
 1. Valideer de definitieve implementatie alvorens de schakelaar in uw productieapp te maken
+
 
 >[!INFO]
 >
