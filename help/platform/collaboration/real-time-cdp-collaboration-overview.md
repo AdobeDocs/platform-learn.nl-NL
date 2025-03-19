@@ -8,7 +8,7 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
+source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [ ](ht
 
 Ontvang een inleiding aan Adobe Real-Time Collaboration, een speciaal gebouwde toepassing van de gegevenssamenwerking die u high-value publiek laat ontdekken en activeren en meetmogelijkheden gebruikt om tastbare resultaten te drijven.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## Instellen
