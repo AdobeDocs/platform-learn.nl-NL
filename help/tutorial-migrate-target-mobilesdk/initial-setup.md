@@ -2,9 +2,9 @@
 title: Eerste configuratie - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen
 description: Meer informatie over en stel de belangrijke basiselementen in die vereist zijn voor uw Web SDK-implementatie voor het platform
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ De uitbreiding van het Doel heeft [ configureerbare montages ](https://developer
 | Clientcode | nvt | Automatisch aan de rand instellen met de details van de IMS-organisatie |
 | Milieu-id | Id van doelomgeving | Gevormd in de datastream |
 | Doel Workspace-eigenschap | Eigenschapstoken | Gevormd in de datastream |
-| Time-out | Niet configureerbaar | De onderbreking met de uitbreiding van het Beslissen is 10 seconden |
+| Time-out | Time-out | Configureerbaar in de extensie Beslissing en in de SDK Optimaliseren. De standaardtime-out is 10 seconden. |
 | Serverdomein | Edge Network-domein | Instellen in de Adobe Experience Platform Edge Network-extensie |
 
 Daarna, leer hoe te [ het Doel SDK ](replace-sdk.md) vervangen.

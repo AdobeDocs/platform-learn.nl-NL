@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
+source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 7%
 
 ---
@@ -117,6 +117,7 @@ Campaigns
    + [Eenvoudig publiek maken](audiences/audience-builder/create-multi-entity-audiences.md)
    + [Accountsoorten maken en activeren (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo van streamingsegmentatie](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Batchpubliek op aanvraag evalueren](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [ evalueer een publieksregel ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html) {target="_blank"}
    + [ creeer een dataset om gegevens ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html) uit te voeren {target="_blank"}
    + [Instellingen voor segmentovereenkomst](/help/platform/segments/segment-match-connection-setup.md)
