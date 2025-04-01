@@ -2,9 +2,9 @@
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,6 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 | thirdPartyId (mbox3rdPartyId) | Ondersteund | Ondersteund via Identity Map en Target Third Party ID Namespace in de gegevensstroom |
 | Meldingen (weergeven, klikken) | Ondersteund | Ondersteund |
 | Reactietokens | Ondersteund | Ondersteund |
-| Analyses voor doel (A4T) | Alleen client | Client en server |
 | Mobiele voorvertoningen (QA-modus) | Ondersteund | Beperkte ondersteuning voor Assurance |
 
 >[!IMPORTANT]

@@ -1,30 +1,22 @@
 ---
-title: De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De beslissingsextensie
+title: Uw mobiele app migreren van de Adobe Target naar de Adobe Journey Optimizer - De beslissingsextensie
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
-# De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De beslissingsextensie
+# Uw mobiele app migreren van de Adobe Target naar de Adobe Journey Optimizer - De beslissingsextensie
 
 Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren hoe u bestaande Adobe Experience Platform Mobile SDK-implementaties kunt migreren van de Adobe Target-extensie naar de Adobe Journey Optimizer - Decisioning-extensie.
 
 Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen uw app-ervaringen met Adobe Target aan te passen. De extensie Decisioning is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die helpen bij de integratie van Target met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
 
 ![ Diagram die Mobiele SDK tonen die met Doel door Edge Network met de Decisioning uitbreiding verbinden ](assets/datacollection.png)
-
->[!INFO]
->
->In het ecosysteem van Adobe Experience Platform Mobile SDK worden extensies geïmplementeerd door SDK&#39;s die zijn geïmporteerd in uw toepassingen en die verschillende namen kunnen hebben:
->
-> * **SDK van het Doel** voert de **uitbreiding van Adobe Target** uit
-> * **optimaliseer SDK** voert **Adobe Journey Optimizer uit - Beslissende uitbreiding**
-
 
 ## Belangrijkste voordelen
 
