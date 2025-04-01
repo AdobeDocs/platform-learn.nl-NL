@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '199'
 ht-degree: 18%
 
 ---
@@ -27,26 +27,28 @@ ht-degree: 18%
    + [Regels maken](tags/build-rules.md)
    + [Stapelregels](tags/stack-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
-   + [ voert in websites met SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) {target="_blank"}
+   + [ voert in websites met SDK van het Web uit ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview) {target="_blank"}
    + [ voert in websites met oplossing SDKs uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html) {target="_blank"}
-   + [ voer in mobiele apps ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) uit {target="_blank"}
+   + [ voer in mobiele apps ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview) uit {target="_blank"}
 + Web SDK {#web-sdk}
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [ het leerprogramma van de Implementatie (met markeringen) ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) {target="_blank"}
-   + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html) {target="_blank"}
+   + [ het leerprogramma van de Implementatie (met markeringen) ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview) {target="_blank"}
+   + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction) {target="_blank"}
    + [ Migrate het leerprogramma van de Analyse ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview) {target="_blank"}
    + Toestemming {#consent}
       + [Overzicht](web-sdk/consent/overview.md)
-      + [Stel waarden voor toestemming in met de standaard voor Adobe](web-sdk/consent/set-consent-adobe.md)
+      + [De waarden voor toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
       + [Stel toestemmingswaarden in met de IAB TCF 2.0-standaard](web-sdk/consent/set-consent-iab.md)
-      + [Inspect en valideren toestemmingsgegevens](web-sdk/consent/inspect.md)
+      + [Gegevens over toestemming controleren en valideren](web-sdk/consent/inspect.md)
       + [Zelfstudie voor verwerking van begin tot eind](web-sdk/consent/tutorial.md)
 + Mobiele SDK{#mobile-sdk}
    + [Overzicht](mobile-sdk/overview.md)
    + [Mobiele eigenschappen maken](mobile-sdk/create-mobile-properties.md)
    + [Afhankelijkheidsmanagers gebruiken](mobile-sdk/use-dependency-managers.md)
-   + [ voer in mobiele apps ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) uit {target="_blank"}
+   + [ voer in mobiele apps ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview) uit {target="_blank"}
+
+   + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview) {target="_blank"}
 + Server-API {#server-api}
    + [Overzicht](server-api/overview.md)
    + [Basisbeginselen van API&#39;s](server-api/introduction.md)
@@ -61,8 +63,8 @@ ht-degree: 18%
    + [Gebeurtenis controleren door:sturen](event-forwarding/monitor.md)
    + [Client-tags verplaatsen](event-forwarding/consider-moving-tags.md)
    + [Uitgebreide conversies voor Google Ads instellen](event-forwarding/set-up-google-ads-enhanced-conversions.md)
-   + [Adobe extensie voor Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Gegevensstromen &amp; Edge Network {#edge-network}
+   + [Adobe-extensie voor Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
++ DataStreams &amp; Edge Network {#edge-network}
    + [Gegevensstromen configureren](edge/configure-datastreams.md)
    + [Gegevensprep](edge/data-prep.md)
    + [Gevoelige gegevens beheren](edge/manage-sensitive-data-in-datastreams.md)
