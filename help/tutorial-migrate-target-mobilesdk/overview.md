@@ -3,7 +3,7 @@ title: Uw mobiele app migreren van de Adobe Target naar de Adobe Journey Optimiz
 description: Leer hoe u uw mobiele app-implementatie van de Adobe Target naar de Adobe Journey Optimizer kunt migreren - De extensie voor beslissingen
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -22,8 +22,8 @@ Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiel
 
 Enkele voordelen van de Adobe Journey Optimizer-decisioning-extensie in vergelijking met de Target-extensie zijn:
 
-* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
@@ -62,4 +62,4 @@ Daarna, herzie de gedetailleerde [ vergelijking van de uitbreiding van het Doel 
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

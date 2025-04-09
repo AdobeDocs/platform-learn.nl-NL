@@ -2,7 +2,7 @@
 title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
 description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -90,4 +90,4 @@ Het volgende diagram zou u moeten helpen de gegevensstroom begrijpen gebruikend 
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

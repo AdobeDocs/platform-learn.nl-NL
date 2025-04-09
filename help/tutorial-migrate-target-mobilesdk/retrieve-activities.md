@@ -2,7 +2,7 @@
 title: Doelactiviteiten ophalen - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen bepalen
 description: Leer hoe u Adobe Target-activiteiten ophaalt tijdens het migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -147,4 +147,4 @@ Daarna, leer hoe te [ parameters van het Punt overgaan gebruikend de Decisioning
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

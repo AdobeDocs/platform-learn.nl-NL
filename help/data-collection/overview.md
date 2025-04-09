@@ -3,7 +3,7 @@ title: Tutorials voor gegevensverzameling
 description: Hoe kan ik-video's en zelfstudies om u een krachtige gebruiker te maken van Gegevensverzameling
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 8%
@@ -90,11 +90,11 @@ Gegevensverzameling is de volgende generatie websitetags en mobiele SDK-beheermo
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview" target="_blank">
       <img alt="Adobe Experience Cloud implementeren met Web SDK" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview" target="_blank">
     <strong> voer Experience Cloud met Web SDK </strong> uit
     </a>
     </div>
@@ -103,11 +103,11 @@ Gegevensverzameling is de volgende generatie websitetags en mobiele SDK-beheermo
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementeren in mobiele apps" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong> voer Experience Cloud in mobiele apps </strong> uit
     </a>
     </div>
@@ -116,11 +116,11 @@ Gegevensverzameling is de volgende generatie websitetags en mobiele SDK-beheermo
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Doel migreren naar Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong> voer erfenisbibliotheken met markeringen </strong> uit
     </a>
     </div>

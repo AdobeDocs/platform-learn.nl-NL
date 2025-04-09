@@ -2,7 +2,7 @@
 title: Parameters verzenden - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De beslissingsextensie
 description: Leer hoe u parameters mbox, profile en entity naar Adobe Target verzendt met Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
@@ -15,15 +15,15 @@ De doelimplementaties verschillen per mobiele toepassing vanwege de toepassingsa
 
 Met de extensie Doel zijn alle doelparameters doorgegeven via de functie `TargetParameters` .
 
-Met de extensie Decisioning:
+With the Decisioning extension:
 
-* Parameters die bestemd zijn voor meerdere Adobe-toepassingen kunnen worden doorgegeven in het XDM-object
-* Parameters die alleen voor Doel zijn bedoeld, kunnen worden doorgegeven in het object `data.__adobe.target`
+* Parameters intended for multiple Adobe applications can be passed in the XDM object
+* Parameters intended only for Target can be passed in the `data.__adobe.target` object
 
 
 >[!IMPORTANT]
 >
-> Met de uitbreiding van het Besluit, zijn de parameters die in een verzoek worden verzonden op alle werkingsgebied in het verzoek van toepassing. Als u verschillende parameters voor verschillende werkingsgebieden moet plaatsen, moet u extra verzoeken doen.
+> With the Decsioning extension, parameters sent in a request apply to all scopes in the request. Als u verschillende parameters voor verschillende werkingsgebieden moet plaatsen, moet u extra verzoeken doen.
 
 ## Aangepaste parameters
 
@@ -35,7 +35,7 @@ Profielparameters slaan gegevens gedurende een langere periode op in het doelpro
 
 ## Parameters entiteit
 
-[ de parameters van de Entiteit ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor de Aanbevelingen van het Doel over te gaan. Net als profielparameters moeten de meeste eenheidsparameters worden doorgegeven onder het `data.__adobe.target` -object. De enige uitzondering is dat de array `xdm.productListItems` aanwezig is en dat de eerste `SKU` -waarde als `entity.id` wordt gebruikt.
+[Entity parameters](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes) are used to pass behavioral data and supplemental catalog information for Target Recommendations. Net als profielparameters moeten de meeste eenheidsparameters worden doorgegeven onder het `data.__adobe.target` -object. De enige uitzondering is dat de array `xdm.productListItems` aanwezig is en dat de eerste `SKU` -waarde als `entity.id` wordt gebruikt.
 
 Entiteiteits-parameters voor een specifiek item moeten vooraf met `entity.` worden vastgelegd om de gegevens correct vast te leggen. De gereserveerde `cartIds` - en `excludedIds` -parameters voor aanbevelingen-algoritmen mogen niet vooraf worden ingesteld en de waarde voor beide moet een door komma&#39;s gescheiden lijst met entiteit-id&#39;s bevatten.
 
@@ -53,9 +53,9 @@ Met Doel is het synchroniseren van profielen tussen apparaten en systemen mogeli
 
 ## Tabel
 
-| Voorbeeld van parameter at.js | Platform Web SDK, optie | Notities |
+| Example at.js parameter | Platform Web SDK option | Notities |
 | --- | --- | --- |
-| `at_property` | N.v.t. | De tokens van het bezit worden gevormd in [ datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kunnen niet in de `sendEvent` vraag worden geplaatst. |
+| `at_property` | N.v.t. | Property tokens are configured in the [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) and cannot be set in the `sendEvent` call. |
 | `pageName` | `xdm.web.webPageDetails.name` of <br> `data.__adobe.target.pageName` | Doelparameters kunnen worden doorgegeven als onderdeel van het object `xdm` of als onderdeel van het object `data.__adobe.target` . |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters van het doelprofiel moeten worden doorgegeven als onderdeel van het `data` -object en vooraf ingesteld met `profile.` om correct te worden toegewezen. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de functie Categorie-affiniteit van Doel die moet worden doorgegeven als onderdeel van het `data` -object. |
@@ -64,18 +64,18 @@ Met Doel is het synchroniseren van profielen tussen apparaten en systemen mogeli
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | De parameters van de douaneentiteit worden gebruikt voor het bijwerken van de het productcatalogus van Aanbevelingen. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het object `data` . |
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
-| `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. Namespace voor klantidentiteitskaart te gebruiken moet in de [ configuratie van het Doel van de datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) worden gespecificeerd. |
-| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`) <br> or <br> `data.__adobe.target.orderId` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
+| `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`) <br> or <br> `data.__adobe.target.orderId` | Used for identifying a unique order for Target conversion tracking. |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> (when `commerce.purchases.value` is set to `1`) <br> or <br> `data.__adobe.target.orderTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (wanneer `commerce.purchases.value` aan `1` wordt geplaatst) <br> OF <br> `data.__adobe.target.productPurchasedId` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activiteitendoel scoren. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score) activiteitendoel scoren. |
 
 {style="table-layout:auto"}
 
 
 ## Voorbeelden van parameters doorgeven
 
-Gebruik een eenvoudig voorbeeld om de verschillen tussen de uitbreidingen aan te tonen wanneer het overgaan van parameters aan Doel.
+Let&#39;s use a simple example to demonstrate the differences between the extensions when passing parameters to Target.
 
 ### Android
 
@@ -206,4 +206,4 @@ Daarna, leer hoe te [ de omzettingsgebeurtenissen van het spoordoel ](track-even
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
