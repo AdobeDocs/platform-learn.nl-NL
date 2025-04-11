@@ -5,9 +5,9 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '904'
 ht-degree: 7%
 
 ---
@@ -175,7 +175,7 @@ Campaigns
    + [Verbinden met doelen](/help/platform/destinations/connecting-to-destinations.md)
    + [Doelen maken en gegevens activeren](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Profielen en doelgroepen activeren](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [Vorm een bestemming van de datasetuitvoer](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [Gegevenssets exporteren met een bestemming voor cloudopslag](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integreren met Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [De Azure Blob-bestemming configureren](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [De Marketo-bestemming configureren](/help/platform/destinations/configure-the-marketo-destination.md)
