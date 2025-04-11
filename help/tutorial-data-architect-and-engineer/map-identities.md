@@ -2,15 +2,15 @@
 title: Identiteiten toewijzen
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Identiteiten toewijzen
-description: In deze les, zullen wij identiteitsnaamruimten creëren en identiteitsgebieden toevoegen aan onze schema's.
+description: In deze les maken we naamruimten voor identiteiten en voegen we identiteitsvelden toe aan onze schema's.
 role: Data Architect
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '892'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 <!-- 30 min-->
 
-In deze les, zullen wij identiteitsnaamruimten creëren en identiteitsgebieden toevoegen aan onze schema&#39;s. Na het doen van dit, zullen wij ook de schemaverhoudingen van de vorige les kunnen voltooien.
+In deze les maken we naamruimten voor identiteiten en voegen we identiteitsvelden toe aan onze schema&#39;s. Nadat we dit hebben gedaan, kunnen we ook de schemarelaties uit de vorige les voltooien.
 
-Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien door identiteiten tussen apparaten en systemen te overbruggen, zodat u in real-time een indrukwekkende, persoonlijke digitale ervaring kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
+Adobe Experience Platform Identity Service helpt je een beter beeld te krijgen van je klanten en hun gedrag door identiteiten op verschillende apparaten en systemen te overbruggen, zodat je in realtime impactvolle, persoonlijke digitale ervaringen kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360-graden realtime klantprofiel op te bouwen.
 
 **Architecten van Gegevens** zullen identiteiten buiten dit leerprogramma moeten in kaart brengen.
 
@@ -82,7 +82,7 @@ Stel nu een andere naamruimte in voor het schema Luminageproductcatalogus met de
 
 ## Identiteitsnaamruimte maken met API
 
-We maken onze CRM-naamruimte via API.
+We zullen onze CRM-naamruimte maken via API.
 
 >[!NOTE]
 >
@@ -92,13 +92,13 @@ We maken onze CRM-naamruimte via API.
 > 1. Als **[!UICONTROL Identity symbol]** gebruikt u `lumaCrmId`
 > 1. Als **[!UICONTROL Type]** gebruikt u Cross-device
 
-Laten we naamruimte maken `Luma CRM Id` :
+Laten we de Identity Namespace `Luma CRM Id`maken:
 
 1. De download [ Identiteitsdienst.postman_collection.json ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` omslag
 1. De verzameling importeren in [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteer **verzend** om een nieuw toegangstoken te verzoeken.
 1. Selecteer de aanvraag **[!UICONTROL Identity Service]> [!UICONTROL Identity Namespace] > [!UICONTROL Create a new identity namespace] .**
-1. Plak het volgende als [!DNL Body] van de aanvraag:
+1. Plak het volgende als de [!DNL Body] van de aanvraag:
 
    ```json
    {
@@ -123,16 +123,16 @@ Nu we onze naamruimten hebben, bestaat de volgende stap uit het bijwerken van on
 
 ### XDM-velden labelen voor primaire identiteit
 
-Elk schema dat met het Profiel van de Klant in real time wordt gebruikt wordt vereist om een primaire gespecificeerde identiteit te hebben. Elke opgenomen record moet een waarde voor dat veld hebben.
+Voor elk schema dat wordt gebruikt met Real-Time Customer Profile moet een primaire identiteit zijn opgegeven. En elke record die wordt opgenomen, moet een waarde voor dat veld hebben.
 
-Voeg een primaire identiteit toe aan `Luma Loyalty Schema`:
+Laten we een primaire identiteit toevoegen aan de `Luma Loyalty Schema`:
 
-1. De `Luma Loyalty Schema` openen
+1. Open de `Luma Loyalty Schema`
 1. Selecteer de `Luma Identity profile field group`
-1. Selecteer het veld `loyaltyId`
-1. Het selectievakje **[!UICONTROL Identity]** inschakelen
-1. Schakel ook het selectievakje **[!UICONTROL Primary Identity]** in
-1. De naamruimte `Luma Loyalty Id` selecteren in het vervolgkeuzemenu **[!UICONTROL Identity namespaces]**
+1. Selecteer het `loyaltyId` veld
+1. Vink het **[!UICONTROL Identity]** vakje aan
+1. Vink ook het **[!UICONTROL Primary Identity]** vakje aan
+1. Selecteer de naamruimte in **[!UICONTROL Identity namespaces]** de `Luma Loyalty Id` vervolgkeuzelijst
 1. Selecteren **[!UICONTROL Apply]**
 1. Selecteren **[!UICONTROL Save]**
 
@@ -148,7 +148,7 @@ Herhaal het proces voor een deel van uw andere schema:
 >
 >De gegevens die met het Web SDK worden verzameld zijn een uitzondering op de typische praktijk van het etiketteren van identiteitsgebieden in het schema. SDK van het Web gebruikt de Kaart van de Identiteit aan etiketidentiteiten *op de implementatievijde* en zo zullen wij de identiteiten voor `Luma Web Events Schema` bepalen wanneer wij het Web SDK op de website van de Luma uitvoeren. In die latere les zullen we de Experience Cloud Visitor ID (ECID) verzamelen als primaire id en crmId als secundaire id.
 
-Door onze selectie van primaire identiteiten is het duidelijk hoe `Luma CRM Schema` verbinding kan maken met `Luma Offline Purchase Events Schema` omdat beide `loyaltyId` als id gebruiken. Maar hoe kunnen we onze offlineaankopen aan online gedrag verbinden? Hoe kunnen we de aangekochte producten indelen in onze productcatalogus? Wij zullen extra identiteitsgebieden en schemaverhoudingen gebruiken.
+Als u primaire identiteiten selecteert, is het duidelijk hoe `Luma Loyalty Schema` verbinding kan maken met `Luma Offline Purchase Events Schema` omdat beide loyaltyId als id gebruiken. Maar hoe kan CRM met de Gebeurtenissen van de Off-line Aankoop verbinden? Hoe kunnen we onze offlineaankopen verbinden met online gedrag? En hoe kunnen we de aangekochte producten classificeren met onze productcatalogus? Wij zullen extra identiteitsgebieden en schemaverhoudingen gebruiken.
 
 <!--use a visual-->
 
@@ -170,9 +170,9 @@ U kunt meerdere identiteitsvelden toevoegen aan een schema. Niet-primaire identi
 Nu onze identiteitsgebieden geëtiketteerd hebben, kunnen wij de opstelling van de schemaverhoudingen tussen de productcatalogus van Luma en de gebeurtenisschema&#39;s voltooien:
 
 1. De `Luma Offline Purchase Events Schema` openen
-1. **[!UICONTROL Commerce Details]** -veldgroep selecteren
-1. Selecteren **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** -veld
-1. Het selectievakje **[!UICONTROL Relationship]** inschakelen
+1. Selecteer **[!UICONTROL Commerce Details]** veldgroep
+1. Selecteer **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** veld
+1. Vink het **[!UICONTROL Relationship]** vakje aan
 1. Selecteer `Luma Product Catalog Schema` als de **[!UICONTROL Reference schema]**
 1. `Luma Product SKU` moet automatisch worden gevuld als de **[!UICONTROL Reference Identity namespace]**
 1. Selecteren **[!UICONTROL Apply]**
