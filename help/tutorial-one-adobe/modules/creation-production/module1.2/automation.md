@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren pro
 
 In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren proces.
 
-[ 1.2.5 Kader I/O en de Fusie van Workfront ](./ex5.md){target="_blank"}
+[ 1.2.5 Frame.io en de Fusie van Workfront ](./ex5.md){target="_blank"}
 
-In deze oefening, zult u Kader I/O met uw scenario van de Fusie van Workfront verbinden.
+In deze oefening, zult u Frame.io met uw scenario van de Fusie van Workfront verbinden.
 
-[ 1.2.6 Kader I/O aan de Fusie van Workfront aan AEM Assets ](./ex6.md){target="_blank"}
+[ 1.2.6 Frame.io aan de Fusie van Workfront aan AEM Assets ](./ex6.md){target="_blank"}
 
-In deze oefening, zult u uw opstelling verder verfijnen, zodat uw goedgekeurd activa in Kader I/O een scenario van de Fusie van Workfront gebruikt om dan een vertoning van PNG van de activa naar AEM Assets uit te voeren.
+In deze oefening, zult u uw opstelling verder verfijnen, zodat uw goedgekeurd activa in Frame.io een scenario van de Fusie van Workfront gebruikt om dan een vertoning van PNG van de activa naar AEM Assets uit te voeren.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
