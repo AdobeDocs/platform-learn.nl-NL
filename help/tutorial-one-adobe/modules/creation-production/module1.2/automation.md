@@ -6,30 +6,30 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
-# 1.2 Creative Workflow Automation met Workfront Fusion
+# 1.2 Creative Workflow Automatiseren met Workfront Fusion
 
 Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion.
 
 ## Vereisten
 
-- Toegang tot Adobe Firefly [ https://firefly.adobe.com/ ](https://firefly.adobe.com/) {target="_blank"}
+- Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 
 ## Uitoefening
 
 [ 1.2.1 die met de Fusie van Workfront ](./ex1.md){target="_blank"} wordt begonnen
 
-In deze oefening, verken Workfront Fusion in combinatie met Firefly Services en krijg inzicht in zijn mogelijkheden.
+In deze oefening, verken Workfront Fusion in combinatie met Firefly Services en een inzicht in zijn mogelijkheden krijgen.
 
 [ 1.2.2 Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
 
-In deze oefening, leer hoe te om de APIs van de Diensten van Firefly en Photoshop APIs binnen Workfront Fusion te vormen en te gebruiken, terwijl het onderzoeken van de mogelijkheden van Workfront Fusion.
+In deze oefening, leer hoe te om Firefly Services APIs en Photoshop APIs binnen Workfront Fusion te vormen en te gebruiken, terwijl het onderzoeken van Workfront Fusion mogelijkheden.
 
 [ 1.2.3 de automatisering van het Proces met de Fusie van Workfront ](./ex3.md){target="_blank"}
 
@@ -42,6 +42,10 @@ In deze oefening, verfijnen uw reis om beeldverwezenlijking te automatiseren pro
 [ 1.2.5 Kader I/O en de Fusie van Workfront ](./ex5.md){target="_blank"}
 
 In deze oefening, zult u Kader I/O met uw scenario van de Fusie van Workfront verbinden.
+
+[ 1.2.6 Kader I/O aan de Fusie van Workfront aan AEM Assets ](./ex6.md){target="_blank"}
+
+In deze oefening, zult u uw opstelling verder verfijnen, zodat uw goedgekeurd activa in Kader I/O een scenario van de Fusie van Workfront gebruikt om dan een vertoning van PNG van de activa naar AEM Assets uit te voeren.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 

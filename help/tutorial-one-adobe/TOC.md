@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1150'
 ht-degree: 2%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 2%
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
       + [Overzicht](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
-      + [De Chrome-extensie installeren voor de Experience League-documentatie](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
-      + [Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
-      + [Uw gegevensstroom maken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
-      + [De website gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
-      + [De mobiele app gebruiken](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
-      + [Uw Adobe I/O-project configureren](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [Installeer de Chrome-extensie voor de Experience League-documentatie](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
+      + [Demosysteem gebruiken Naast om uw Adobe Experience Platform Data Collection-clienteigenschap in te stellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [Creëer uw datastream](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+      + [Gebruik de website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+      + [Gebruik de mobiele app](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+      + [Configureer uw Adobe I/O-project](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
       + [Optie 1: Postman instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [Optie 2: PostBuster instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Toepassingen om te installeren](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
@@ -42,16 +42,22 @@ ht-degree: 2%
       + [1.1.3 Werken met Photoshop API&#39;s](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly API voor aangepaste modellen](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2 Creative Workflow Automation with Workfront Fusion {#crpr2}
+   + 1.2 Creative Workflow Automatiseren met Workfront Fusion {#crpr2}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Aan de slag met Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Adobe API&#39;s gebruiken in Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Procesautomatisering met Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 Automatisering met behulp van connectors](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [1.2.5 Frame I/O en Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.6 Frame I/O naar Workfront Fusion naar AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
+   + 1.3 Adobe Express en Adobe Experience Cloud {#crpr3}
+      + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
+      + [1.3.1 Aan de slag met Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2 Animatie en video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
-+ Middelenbeheer {#assetmgmt}
++ Beheer van bedrijfsmiddelen {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [Overzicht](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Cloud Manager-programma maken](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
@@ -69,8 +75,8 @@ ht-degree: 2%
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Aflevering en activering {#activation}
-   + Gegevensverzameling {#dc}
-      + 1.1 Adobe Experience Platform Data Collection and Web SDK {#dc11}
+   + Dataverzameling {#dc}
+      + 1.1 Adobe Experience Platform Data Collection en Web SDK {#dc11}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1 Adobe Experience Platform-gegevensverzameling](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
          + [1.1.2 Edge Network, gegevensstreams en gegevensverzameling op de server](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex2.md)
@@ -82,20 +88,20 @@ ht-degree: 2%
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
       + 1.2 Gegevensinname {#dc12}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
-         + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
-         + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
-         + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [1.2.1 Verken de website](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
+         + [1.2.2 Schema&#39;s configureren en identifiers instellen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
+         + [1.2.3 Gegevenssets configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
+         + [1.2.4 Gegevensopname uit offline bronnen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
-      + 1.3 Federated Audience Composition {#dc13}
+      + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1 De Snowflake-omgeving instellen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2 Schema&#39;s, gegevensmodel en koppelingen maken](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3 Een gefederaliseerde compositie maken](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
    + Real-Time CDP B2C {#rtcdpb2c}
-      + 2.1 Real-time klantprofiel {#rtcdp21}
+      + 2.1 Klantprofiel in realtime {#rtcdp21}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
          + [2.1.1 Bezoek de website](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex1.md)
          + [2.1.2 Visualiseer uw eigen real-time klantprofiel - UI](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex2.md)
@@ -103,7 +109,7 @@ ht-degree: 2%
          + [2.1.4 Een publiek maken - gebruikersinterface](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
          + [2.1.5 Zie uw Real-time Profiel van de Klant in actie in het callcenter](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
-      + 2.2 Intelligente services {#rtcdp22}
+      + 2.2 Intelligente diensten {#rtcdp22}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
          + [2.2.1 AI van de Klant: Gegevensvoorbereiding (Ingest)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex1.md)
          + [2.2.2 Klantenservice: een nieuwe instantie maken (configureren)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
@@ -128,7 +134,7 @@ ht-degree: 2%
          + [2.4.6 Maak uw Microsoft Azure-project](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 End-to-end scenario](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/summary.md)
-      + 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen {#rtcdp25}
+      + 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen{#rtcdp25}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1 Een Adobe Experience Platform-eigenschap voor het doorsturen van gegevensverzamelingsgebeurtenissen maken](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
          + [2.5.2 Werk uw DataStream bij om gegevens ter beschikking te stellen van uw Adobe Experience Platform-eigenschap van de Server van de Gegevensverzameling](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex2.md)
@@ -144,9 +150,9 @@ ht-degree: 2%
          + [2.6.4 Kafka Connect en de Adobe Experience Platform Sink Connector installeren en configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
-      + 3.1 Adobe Journey Optimizer: Orchestration {#ajo31}
+      + 3.1 Adobe Journey Optimizer: Orkestratie {#ajo31}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
-         + [3.1.1 Een gebeurtenis maken](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
+         + [3.1.1 Creëer uw evenement](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
          + [3.1.2 Fragmenten maken voor gebruik in uw bericht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3 Maak uw reis en e-mailbericht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4 Werk uw bezit van de Inzameling van Gegevens bij en test uw Reizen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
@@ -159,11 +165,11 @@ ht-degree: 2%
          + [3.2.4 Maak uw reis en uw berichten](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5 Trigger je reis](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-      + 3.3 Adobe Journey Optimizer: Offer Decisioning {#ajo33}
+      + 3.3 Adobe Journey Optimizer: Besluitvorming over aanbiedingen {#ajo33}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-         + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-         + [3.3.2 Configureer uw aanbiedingen en besluit](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-         + [3.3.3 Bereid uw Adobe Experience Platform Data Collection Client-eigenschap en Web SDK-instelling voor Offer Decisioning voor](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
+         + [3.3.1 Beslissing over het aanbod 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.2 Configureer uw aanbiedingen en beslissing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+         + [3.3.3 Uw Adobe Experience Platform Data Collection Client-eigenschap en Web SDK-instellingen voorbereiden voor Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
          + [3.3.4 Combineer Adobe Target en Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
          + [3.3.5 Gebruik uw beslissing in een e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
          + [3.3.6 Test uw besluit met behulp van de API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
@@ -175,7 +181,7 @@ ht-degree: 2%
          + [3.4.3 Pas segment-gebaseerde verpersoonlijking in een e-mailbericht toe](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
          + [3.4.4 Pushmeldingen instellen en gebruiken](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
-      + 3.5 Adobe Journey Optimizer: Vertaalservices {#ajo35}
+      + 3.5 Adobe Journey Optimizer: vertaalservices {#ajo35}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
          + [3.5.1 Vertaalbureau](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2 Uw campagne maken](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
@@ -183,7 +189,7 @@ ht-degree: 2%
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
 
 + Rapportage en inzichten {#reporting}
-   + Customer Journey Analytics {#cjab2c}
+   + Customer Journey Analytics  {#cjab2c}
       + 1.1 Customer Journey Analytics: een dashboard maken met Analysis Workspace {#cja1}
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
@@ -192,7 +198,7 @@ ht-degree: 2%
          + [1.1.4 Gegevensvoorbereiding in Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
          + [1.1.5 Visualisatie met Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/summary.md)
-      + 1.2 Customer Journey Analytics: Google Analytics-gegevens verzamelen en analyseren in Adobe Experience Platform met de BigQuery Source Connector {#cja2}
+      + 1.2 Customer Journey Analytics: Google Analytics-gegevens in Adobe Experience Platform verzamelen en analyseren met de BigQuery Source Connector {#cja2}
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
          + [1.2.1 Start Google Cloud Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
          + [1.2.2 Maak uw eerste query in BigQuery](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)
@@ -205,9 +211,9 @@ ht-degree: 2%
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)
          + [2.1.1 Vereisten](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex1.md)
          + [2.1.2 Aan de slag](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex2.md)
-         + [2.1.3 Het gebruiken van de Dienst van de Vraag](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex3.md)
-         + [2.1.4 Vragen, query&#39;s, query&#39;s... en churn-analyse](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex4.md)
-         + [2.1.5 Genereer een dataset van een vraag](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex5.md)
+         + [2.1.3 Gebruik van de Query-service](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex3.md)
+         + [2.1.4 Vragen, vragen, vragen... en churn analyse](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex4.md)
+         + [2.1.5 Een gegevensset genereren op basis van een query](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex5.md)
          + [2.1.6 Query-service en Power BI](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex6.md)
          + [2.1.7 Query-service en Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
          + [2.1.8 API voor Query Service](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
