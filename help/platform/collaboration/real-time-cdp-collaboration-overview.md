@@ -1,16 +1,16 @@
 ---
 title: Real-Time CDP Collaboration - Overzicht
 description: Ontvang een inleiding aan Adobe Real-Time Collaboration, een speciaal gebouwde toepassing van de gegevenssamenwerking die u high-value publiek laat ontdekken en activeren en meetmogelijkheden gebruikt om tastbare resultaten te drijven.
-feature: Use Cases
+feature: Collaboration
 role: Leader, User
 level: Beginner
 duration: 92
-last-substantial-update: 2025-03-18T00:00:00Z
+last-substantial-update: 2025-04-17T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
+source-git-commit: c61d6117d523340b233a1bd1f58b35400e760b20
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ Met Adobe Real-Time Customer Data Platform (CDP) Collaboration, kunt u, hoogwaar
 
 Hieronder vindt u video&#39;s en andere bronnen die u helpen bij het instellen, gebruiken en waarderen van Real-Time CDP Collaboration. Er worden extra elementen toegevoegd aan deze pagina en site. Probeer het daarom vaak opnieuw. Gelukkig leren!
 
-Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [ ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home) {target="_blank"}.
+Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [ ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}.
+
+[![ExL LIVE apr 10, 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Inleiding
 
