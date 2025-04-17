@@ -4,7 +4,7 @@ description: Aan de slag - Installeer de Chrome-extensie voor de Experience Leag
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen mome
 |:-------------:| :---------------:| :---------------:|
 | AEP IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
 | AEP IMS Org Name | `--aepImsOrgName--` | `Experience Platform International` |
-| AEP-huurnummer | `--aepTenantId--` | `_experienceplatform` |
+| AEP Tenant ID | `--aepTenantId--` | `_experienceplatform` |
 | Naam AEP-sandbox | `--aepSandboxName--` | `one-adobe` |
 | Leerlingprofiel LDAP | `--aepUserLdap--` | `vangeluw` |
 
@@ -88,21 +88,21 @@ U kunt het vinden door [ Admin Console ](https://https://adminconsole.adobe.com/
 
 ![ DSN ](./images/aepid1.png)
 
-U kunt het ook vinden door naar **het Beheer van Gegevens > Vragen** in uw menu van AEP te gaan, waar u het onder **Gebruikersnaam** kunt vinden.
+U kunt het ook vinden door **het Beheer van Gegevens > Vragen** in uw menu van AEP te gaan, waar u het onder **Gebruikersnaam** kunt vinden.
 
 ![ DSN ](./images/aepid2.png)
 
 Kopieer en plak het **@AdobeOrg** -onderdeel samen met de id.
 
-**identiteitskaart van de HUIDIGE VAN AEP**
+**identiteitskaart van de HTENT van AEP**
 
-Uw huurnummer is de unieke id voor de AEP-instantie van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+Uw Tenant-id is de unieke id voor het AEP-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
 ![ DSN ](./images/aeptenantid.png)
 
 Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen dat een onderstrepingsteken als prefix wordt toegevoegd, zodat in dit voorbeeld **ervaringsplatform** **_experiencePlatform** wordt.
 
-**AEP Sandbox Naam**
+**Naam van zandbak van AEP**
 
 De naam van de sandbox is de naam van de omgeving die u in uw AEP-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
@@ -110,7 +110,7 @@ Voordat u de naam van de sandbox opgeeft van de URL, moet u ervoor zorgen dat u 
 
 ![ DSN ](./images/aepsandboxsw.png)
 
-In dit voorbeeld, is de Naam van AEP Sandbox **één-adobe**.
+In dit voorbeeld, is de Naam van de zandbak van AEP **one-adobe**.
 
 ![ DSN ](./images/aepsname.png)
 
@@ -135,7 +135,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** op deze pagina door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
