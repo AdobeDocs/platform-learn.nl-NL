@@ -4,7 +4,7 @@ description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -149,7 +149,7 @@ Klik de **Edge Network van Adobe Experience Platform** uitbreiding en klik dan *
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig12m.png)
 
-Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxName--` en de datastream wordt `--aepUserLdap-- - Demo System Datastream (Mobile)` genoemd.
+Dan zie je dit. U moet nu de juiste sandbox en datastream selecteren die u net hebt geconfigureerd. De sandbox die moet worden gebruikt, is `--aepSandboxName--` en de datastream wordt `--aepUserLdap-- - One Adobe Datastream (Mobile)` genoemd.
 
 Voor het **domein van Edge Network**, gelieve het standaarddomein te gebruiken.
 
