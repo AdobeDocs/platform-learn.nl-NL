@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -18,22 +19,30 @@ Leer hoe u creatieve workflows kunt automatiseren met Workfront Fusion.
 
 ## Vereisten
 
-- Toegang tot Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 
-## Oefeningen
+## Uitoefening
 
-[1.3.1 Aan de slag met Adobe Express](./ex1.md){target="_blank"}
+[ 1.3.1 die met Adobe Express ](./ex1.md){target="_blank"} wordt begonnen
 
-In deze oefening ontdek je Adobe Express in combinatie met Firefly Services en krijg je inzicht in de mogelijkheden ervan.
+In deze oefening, verken Adobe Express in combinatie met Firefly Services en een inzicht in zijn mogelijkheden krijgen.
 
-[Samenvatting en voordelen](./summary.md){target="_blank"}
+[ 1.3.2 Animatie en Video in Adobe Express ](./ex2.md){target="_blank"}
 
-Samenvatting van deze module en overzicht van de voordelen.
+In deze oefening gebruikt u Adobe Express om afbeeldingen te animeren en video&#39;s te maken.
 
-![Technische insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[ 1.3.3 Bulk leidt Assets in Adobe Express ](./ex3.md){target="_blank"}
+
+In deze oefening, zult u met Adobe Express werken om veelvoudige versies van activa tot stand te brengen door uit-van-de-doosautomatiseringsmogelijkheden van Adobe Express te gebruiken.
+
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+
+Overzicht van deze module en overzicht van de voordelen.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Als je vragen hebt, algemene feedback wilt delen of suggesties hebt over toekomstige inhoud, neem dan rechtstreeks contact op met Tech Insiders door een e-mail te sturen naar **techinsiders@adobe.com**.
+>Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [Alle modules](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}

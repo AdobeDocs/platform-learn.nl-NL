@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -29,7 +29,7 @@ De zakelijke teams hebben echter geen PSD-bestand nodig, maar een PNG-bestand of
 
 ## 1.2.6.1 Een nieuw scenario maken
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Open **de Fusie van Workfront**.
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
 
 ![ WF Fusion ](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Dan moet je dit zien. Klik **adres van het Exemplaar aan klembord**.
 
 ## 1.2.6.2 Webhaak configureren in Frame.io
 
-Ga naar [ https://developer.frame.io/ ](https://developer.frame.io/). Klik **TOOLS VAN DE ONTWIKKELAAR** en kies dan **de Acties van de Douane**.
+Ga naar [ https://developer.frame.io/ ](https://developer.frame.io/){target="_blank"}. Klik **TOOLS VAN DE ONTWIKKELAAR** en kies dan **de Acties van de Douane**.
 
 ![ Kader IO ](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Dan moet je dit zien.
 
 ![ Kader IO ](./images/aemf11.png)
 
-Ga naar [ https://app.frame.io/projects ](https://app.frame.io/projects) en ga naar de omslag die u eerder creeerde, die zou moeten worden genoemd `--aepUserLdap--`. Dubbelklik om het element te openen dat tijdens de vorige oefening is gemaakt.
+Ga naar [ https://app.frame.io/projects ](https://app.frame.io/projects){target="_blank"} en ga naar de omslag die u eerder creeerde, die zou moeten worden genoemd `--aepUserLdap--`. Dubbelklik om het element te openen dat tijdens de vorige oefening is gemaakt.
 
 ![ Kader IO ](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Uw verbinding wordt dan gevalideerd en wanneer de verbinding succesvol is, wordt
 
 ![ Kader IO ](./images/aemf51.png)
 
-Om een nieuwe specifieke omslag tot stand te brengen, ga [ https://experience.adobe.com ](https://experience.adobe.com/). Zorg ervoor dat de juiste Experience Cloud-instantie is geselecteerd, die moet zijn ingesteld op `--aepImsOrgName--` . Dan, klik **Experience Manager Assets**.
+Om een nieuwe specifieke omslag tot stand te brengen, ga [ https://experience.adobe.com ](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat de juiste Experience Cloud-instantie is geselecteerd, die moet zijn ingesteld op `--aepImsOrgName--` . Dan, klik **Experience Manager Assets**.
 
 ![ Kader IO ](./images/aemf52.png)
 

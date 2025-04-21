@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 0%
@@ -19,7 +19,7 @@ U gaat nu de out-of-the-box connectors gebruiken in Workfront Fusion for Photosh
 
 ## 1.2.4.1 Uw scenario dupliceren en voorbereiden
 
-In het linkermenu, ga naar **Scenario&#39;s** en selecteer uw omslag `--aepUserLdap--`. Vervolgens ziet u het scenario dat u eerder hebt gemaakt, met de naam `--aepUSerLdap-- - Adobe I/O Authentication` .
+In het linkermenu, ga naar **Scenario&#39;s** en selecteer uw omslag `--aepUserLdap--`. Vervolgens ziet u het scenario dat u eerder hebt gemaakt, met de naam `--aepUserLdap-- - Adobe I/O Authentication` .
 
 ![ WF Fusion ](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Vul de volgende velden in:
 - **identiteitskaart van de Cliënt**: kopieer **identiteitskaart van de Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
 - **Geheim van de Cliënt**: kopieer het **Geheime Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
 
-U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [ hier ](https://developer.adobe.com/console/projects.) vinden.
+U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [ hier ](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
 
 ![ WF Fusion ](./images/wffc20.png)
 

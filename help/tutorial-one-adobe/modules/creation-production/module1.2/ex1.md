@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.2.1 Aan de slag met Workfront Fusion
 
-Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om query&#39;s uit te voeren op Adobe Firefly Services-API&#39;s.
+Leer hoe u Workfront Fusion en Adobe I/O kunt gebruiken om Adobe Firefly Services API&#39;s te zoeken.
 
-## 1.2.1.1 Maak een nieuw scenario
+## 1.2.1.1 Nieuw scenario maken
 
-Ga naar [https://experience.adobe.com/](https://experience.adobe.com/). Open **de Fusie van Workfront**.
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
 
-![WF Fusie](./images/wffusion1.png)
+![ WF Fusion ](./images/wffusion1.png)
 
 Ga naar **Scenario&#39;s**.
 
@@ -71,9 +71,9 @@ De volgende variabelen moeten worden gedefinieerd:
 | `CONST_client_secret` | uw Adobe I/O-project clientgeheim |
 | `CONST_scope` | Adobe I/O-projectbereik |
 
-Vind deze variabelen door naar [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects) te gaan en uw project van Adobe I/O te openen, dat `--aepUserLdap-- One Adobe tutorial` wordt genoemd.
+Vind deze variabelen door naar [ https://developer.adobe.com/console/projects ](https://developer.adobe.com/console/projects){target="_blank"} te gaan en uw project van Adobe I/O te openen, dat `--aepUserLdap-- One Adobe tutorial` wordt genoemd.
 
-![WF Fusie](./images/wffusion9.png)
+![ WF Fusion ](./images/wffusion9.png)
 
 In uw project, uitgezochte **OAuth server-Server** om de waarden voor de bovengenoemde sleutels te zien.
 
@@ -85,7 +85,7 @@ Gebruikend de bovengenoemde sleutels en de waarden, kunt u **vormen Vastgestelde
 
 Ga de **Veranderlijke naam** in: **CONST_client_id** en zijn **Veranderlijke waarde**, uitgezocht **voeg** toe.
 
-![WF Fusie](./images/wffusion12.png)
+![ WF Fusion ](./images/wffusion12.png)
 
 Selecteer **toevoegen punt**.
 
@@ -95,7 +95,7 @@ Ga **Veranderlijke naam** in: **CONST_client_geheime** en zijn **Veranderlijke w
 
 ![ WF Fusion ](./images/wffusion14.png)
 
-Selecteer **Item** toevoegen.
+Selecteer **toevoegen punt**.
 
 ![ WF Fusion ](./images/wffusion15.png)
 
@@ -117,11 +117,11 @@ Het scherm moet er zo uitzien.
 
 In de onderzoeksbar, ga **http** in. Selecteer **HTTP** om het te openen.
 
-![WF Fusie](./images/wffusion21.png)
+![ WF Fusion ](./images/wffusion21.png)
 
-Selecteer **Een aanvraag** maken.
+Selecteer **maak een verzoek**.
 
-![WF Fusie](./images/wffusion20.png)
+![ WF Fusion ](./images/wffusion20.png)
 
 | Sleutel | Waarde |
 |:-------------:| :---------------:| 
@@ -129,15 +129,15 @@ Selecteer **Een aanvraag** maken.
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
 
-Selecteer **Item** toevoegen.
+Selecteer **toevoegen punt**.
 
-![WF Fusie](./images/wffusion22.png)
+![ WF Fusion ](./images/wffusion22.png)
 
 Voeg items toe voor elk van de onderstaande waarden:
 
 | Sleutel | Waarde |
 |:-------------:| :---------------:| 
-| `client_id` | uw vooraf gedefinieerde variabele voor `CONST_client_id` |
+| `client_id` | de vooraf gedefinieerde variabele voor `CONST_client_id` |
 | `client_secret` | de vooraf gedefinieerde variabele voor `CONST_client_secret` |
 | `scope` | de vooraf gedefinieerde variabele voor `CONST_scope` |
 | `grant_type` | `client_credentials` |
@@ -186,7 +186,7 @@ Zoek in de zoekbalk naar `tools` . Selecteer **Hulpmiddelen**.
 
 ![ WF Fusion ](./images/wffusion34.png)
 
-Selecteer **Meerdere variabelen** instellen.
+Selecteer **Vastgestelde veelvoudige variabelen**.
 
 ![ WF Fusion ](./images/wffusion35.png)
 
@@ -228,7 +228,7 @@ Verander de naam van het derde voorwerp aan **plaats Token van de Drager**. Sele
 
 Uw scherm moet er als volgt uitzien:
 
-![WF Fusie](./images/wffusion45.png)
+![ WF Fusion ](./images/wffusion45.png)
 
 Wijzig vervolgens de naam van het scenario in `--aepUSerLdap-- - Adobe I/O Authentication` .
 
@@ -236,12 +236,12 @@ Wijzig vervolgens de naam van het scenario in `--aepUSerLdap-- - Adobe I/O Authe
 
 Selecteer **sparen**.
 
-![WF Fusie](./images/wffusion47.png)
+![ WF Fusion ](./images/wffusion47.png)
 
 ## Volgende stappen
 
-Ga naar [Adobe-API&#39;s gebruiken in Workfront Fusion](./ex2.md){target="_blank"}
+Ga naar [ Gebruik Adobe APIs binnen de Fusie van Workfront ](./ex2.md){target="_blank"}
 
-Ga terug naar [Creatieve workflowautomatisering met Workfront Fusion](./automation.md){target="_blank"}
+Ga terug naar [ de Automatisering van het Werkschema van Creative met Workfront Fusion ](./automation.md){target="_blank"}
 
-Ga terug naar [Alle modules](./../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
