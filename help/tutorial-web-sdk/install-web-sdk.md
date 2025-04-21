@@ -1,10 +1,10 @@
 ---
-title: De tagextensie Adobe Experience Platform Web SDK installeren en configureren
-description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+title: De extensie Adobe Experience Platform Web SDK installeren en configureren
+description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van het Platform in de interface van de Inzameling van Gegevens te installeren en te vormen. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Adobe Experience Platform Web SDK-tagextensie installeren
 
-Leer hoe u de tagextensie Adobe Experience Platform Web SDK installeert en configureert. De gemakkelijkste manier om Web SDK uit te voeren is het gebruiken van de markeringsmanager van de Adobe, markeringen (vroeger die als Lancering wordt bekend). De de markeringsuitbreiding van SDK van het Web van het Platform is de _slechts markeringsuitbreiding_ wordt vereist om gegevens naar _alle toepassingen van Adobe Experience Cloud_, met inbegrip van [ Analytics ](setup-analytics.md), [ Doel ](setup-target.md), [ Audience Manager ](setup-audience-manager.md), Real-time Customer Data Platform, en [ Journey Optimizer ](setup-web-channel.md) te verzenden!
+Leer hoe u de Adobe Experience Platform Web SDK-tagextensie installeert en configureert. De eenvoudigste manier om Web SDK te implementeren is het gebruik van Adobe-tagbeheer, -tags (voorheen Launch genoemd). De de markeringsuitbreiding van SDK van het Platform is de _slechts markeringsuitbreiding_ wordt vereist om gegevens naar _alle toepassingen van Adobe Experience Cloud_, met inbegrip van [ Analytics ](setup-analytics.md), [ Doel ](setup-target.md), [ Audience Manager ](setup-audience-manager.md), Real-Time Customer Data Platform, en [ Journey Optimizer ](setup-web-channel.md) te verzenden!
 
 ## Leerdoelstellingen
 
 Aan het eind van deze les, zult u kunnen:
 
 * Een tageigenschap maken in de interface voor gegevensverzameling
-* De tagextensie Platform Web SDK installeren
+* De extensie Platform Web SDK installeren
 * Uw eerder gemaakte gegevensstroom toewijzen aan de extensie
 
 ## Vereisten
@@ -35,7 +35,7 @@ Eerst moet u een eigenschap tag hebben. Een eigenschap is een container voor all
 
 Een nieuwe eigenschap voor tags maken voor de zelfstudie:
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://launch.adobe.com/) {target="_blank"}
+1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Selecteren **[!UICONTROL Tags]** in de linkernavigatie
 1. Selecteer de knop **[!UICONTROL New Property]**
    ![ voeg een nieuw bezit ](assets/websdk-property-addNewProperty.png) toe
@@ -44,7 +44,7 @@ Een nieuwe eigenschap voor tags maken voor de zelfstudie:
 1. Selecteren **[!UICONTROL Save]**
    ![ de details van het Bezit ](assets/websdk-property-propertyDetails.png)
 
-## De Web SDK-extensie toevoegen
+## De extensie Web SDK toevoegen
 
 Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, kunt u de extensie Platform Web SDK installeren:
 
@@ -75,16 +75,16 @@ Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding v
 
 >[!NOTE]
 >
->Hoewel u geen CNAME in [!UICONTROL Edge domain] het plaatsen in deze les vormde, adviseert de Adobe u een CNAME te gebruiken wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
+>Hoewel u geen CNAME in het [!UICONTROL Edge domain] plaatsen in deze les vormde, adviseert Adobe u een CNAME te gebruiken wanneer u het Web SDK van het Platform op uw eigen website uitvoert. Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
 >[!NOTE]
 >
->Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u het Web SDK van het Platform op uw eigen website uitvoert, zou u een afzonderlijke gegevensstroom voor elk milieu moeten vormen en hen dienovereenkomstig in kaart brengen in de uitbreidingsconfiguratie.
+>Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u het Web SDK van het Platform op uw eigen website uitvoert, zou u een afzonderlijke gegevensstroom voor elk milieu moeten vormen en hen dienovereenkomstig in de uitbreidingsconfiguratie in kaart brengen.
 
-Nu u het Web SDK van het Platform hebt geïnstalleerd en het met de datastream associeerde, bent u klaar om te beginnen gegevens te verzamelen.
+Nu u Platform Web SDK hebt geïnstalleerd en het met de datastream hebt geassocieerd, bent u klaar om te beginnen gegevens te verzamelen.
 
 [Volgende: ](create-data-elements.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

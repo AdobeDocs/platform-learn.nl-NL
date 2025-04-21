@@ -1,12 +1,12 @@
 ---
 title: Journey Optimizer-webkanaal instellen met Platform Web SDK
-description: Leer hoe u Journey Optimizer-webkanaal implementeert met de Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u Journey Optimizer-webkanaal implementeert met Platform Web SDK. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '2436'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Journey Optimizer-webkanaal instellen met Web SDK
 
-Leer hoe te om het het Webkanaal van Adobe Journey Optimizer ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) uit te voeren gebruikend het Web SDK van Adobe Experience Platform. [ Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
+Leer hoe te om het Webkanaal van Adobe Journey Optimizer [ uit te voeren ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) gebruikend het Web SDK van Adobe Experience Platform. Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
 
 In deze les zijn Journey Optimizer-gebruikers uitgerust om het webkanaal te gebruiken voor geavanceerde onlinepersonalisatie met de Journey Optimizer-webontwerper.
 
@@ -26,7 +26,7 @@ In deze les zijn Journey Optimizer-gebruikers uitgerust om het webkanaal te gebr
 
 Aan het einde van deze les kunt u het volgende doen:
 
-* Begrijp de functie en de betekenis van Web SDK in het leveren van de ervaring van het Webkanaal.
+* Begrijp de functie en de betekenis van Web SDK bij het leveren van de ervaring van het Webkanaal.
 * Begrijp het proces van het creëren van een campagne van het Webkanaal van begin tot eind gebruikend het voorbeeld Luma Loyalty Rewards gebruiksgeval.
 * Vorm campagneeigenschappen, acties, en programma&#39;s binnen de interface.
 * Begrijp de functionaliteit en de voordelen van de extensie Adobe Experience Cloud Visual Editing Helper.
@@ -38,8 +38,8 @@ Aan het einde van deze les kunt u het volgende doen:
 
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
-* Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van opstellings gegevenselementen en regels.
-* Zorg ervoor dat de extensie van de Adobe Experience Platform Web SDK 2.16 of hoger is.
+* Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van vestiging gegevenselementen en regels.
+* Zorg ervoor dat de extensie Adobe Experience Platform Web SDK 2.16 of hoger is.
 * Als u de Journey Optimizer-webontwerper gebruikt om uw webkanaalervaring te ontwerpen, moet u controleren of u de Google Chrome- of Microsoft® Edge-browsers gebruikt.
 * Zorg ook u hebt gedownload en [ Adobe Experience Cloud Visuele het Uitgeven de browser van de Helper ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) toegelaten.
 * Zorg ervoor dat cookies van derden zijn toegestaan in uw browser. Het kan nodig zijn om ook eventuele advertentieblokkers in uw browser uit te schakelen.
@@ -52,11 +52,11 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
   > 1. De website is ingesloten in een iframe.
   > 1. De QA- of werkgebiedsite van de klant is niet extern toegankelijk (het is een interne site).
 
-* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van Adobe Experience Manager Assets Essentials, is het noodzakelijk om [ subdomain voor het publiceren van deze inhoud ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
+* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van de Hoofdzaak van de Activa van de Manager van de Ervaring van Adobe, is het noodzakelijk om [ subdomain voor het publiceren van deze inhoud ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
 * Als het gebruiken van de eigenschap van de inhoudstest, zorg ervoor dat uw Webdataset ook inbegrepen in uw rapporteringsconfiguratie is.
 * Momenteel worden twee typen implementaties ondersteund voor het maken en leveren van webkanaalcampagnes op uw wegeigenschappen:
-   * Alleen client: als u uw website wilt wijzigen, moet u de SDK van Adobe Experience Platform Web implementeren.
-   * Hybride modus: u kunt de API van de Platform Edge Network Server gebruiken om personalisatie op de server aan te vragen. De reactie van de API wordt dan verstrekt aan het Web SDK van Adobe Experience Platform voor het teruggeven van wijzigingen op de cliënt-kant. Raadpleeg de documentatie bij de Adobe Experience Platform Edge Network Server API voor meer informatie. In dit blogbericht vindt u meer details en implementatiemonsters voor de hybride modus.
+   * Alleen client: als u uw website wilt wijzigen, moet u de Adobe Experience Platform Web SDK implementeren.
+   * Hybride modus: u kunt de Platform Edge Network Server-API gebruiken om de personalisatie op de server aan te vragen. De reactie van de API wordt vervolgens doorgegeven aan de Adobe Experience Platform Web SDK voor het renderen van wijzigingen op de client. Raadpleeg de documentatie bij de Adobe Experience Platform Edge Network Server API voor meer informatie. In dit blogbericht vindt u meer details en implementatiemonsters voor de hybride modus.
 
   >[!NOTE]
   >
@@ -69,7 +69,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
 
 Ten eerste moet u de terminologie begrijpen die in webkanaalcampagnes wordt gebruikt.
 
-* **kanaal van het Web**: Een middel voor mededeling of de levering van inhoud via het Web. In de context van deze handleiding verwijst het naar het mechanisme waarmee gepersonaliseerde inhoud wordt geleverd aan websitebezoekers die de Platform Web SDK, binnen Adobe Journey Optimizer gebruiken.
+* **kanaal van het Web**: Een middel voor mededeling of de levering van inhoud via het Web. In de context van deze handleiding verwijst het naar het mechanisme waarmee gepersonaliseerde inhoud wordt geleverd aan websitebezoekers die de Platform Web SDK, in Adobe Journey Optimizer gebruiken.
 * **oppervlakte van het Web**: Verwijs naar een Webbezit dat door URL wordt geïdentificeerd waar de inhoud wordt geleverd. Het kan één of meerdere Web-pagina&#39;s omvatten.
 * **het Webontwerper van Journey Optimizer**: Een specifiek hulpmiddel of een interface binnen Journey Optimizer waar de gebruikers hun ervaringen van het Webkanaal kunnen ontwerpen.
 * **Adobe Experience Cloud Visuele het Uitgeven Helper**: Een browser uitbreiding die in visueel het uitgeven van en het ontwerpen van de ervaringen van het Webkanaal bijstaat.
@@ -89,7 +89,7 @@ U hebt de Adobe Experience Platform-service al toegevoegd aan uw gegevensstroom.
 
 Adobe Journey Optimizer configureren in de gegevensstroom:
 
-1. Ga naar de [ Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection) {target="blank"} interface.
+1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie.
 1. Selecteer de eerder gemaakte Luma Web SDK-gegevensstroom.
 
@@ -105,7 +105,7 @@ Adobe Journey Optimizer configureren in de gegevensstroom:
 
 1. Selecteer **[!UICONTROL Save]**.
 
-Dit zorgt ervoor dat binnenkomende gebeurtenissen voor Journey Optimizer correct door de Edge Network van Adobe Experience Platform worden behandeld.
+Dit zorgt ervoor dat binnenkomende gebeurtenissen voor Journey Optimizer correct worden afgehandeld door de Adobe Experience Platform Edge Network.
 
 ## Het samenvoegbeleid configureren
 
@@ -113,7 +113,7 @@ Zorg ervoor dat er een samenvoegbeleid is gedefinieerd met de optie **[!UICONTRO
 
 De optie configureren in het samenvoegbeleid:
 
-1. Ga naar de pagina **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de interface van het Experience Platform of Journey Optimizer.
+1. Ga naar de pagina **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de Experience Platform- of Journey Optimizer-interface.
 1. Selecteer het tabblad **[!UICONTROL Merge Policies]**. 
 1. Selecteer het beleid (u kunt het beste het [!UICONTROL Default Timebased] beleid gebruiken) en schakel de optie **[!UICONTROL Active-On-Edge Merge Policy]** in de stap **[!UICONTROL Configure]** in of uit.
 
@@ -123,15 +123,15 @@ De optie configureren in het samenvoegbeleid:
 
 Als u inhoudstests wilt gebruiken in webkanaalcampagnes, moet u ervoor zorgen dat de gebruikte webdataset ook wordt opgenomen in uw rapportconfiguratie. Het Journey Optimizer-rapportagesysteem gebruikt de dataset op een alleen-lezen manier om rapporten voor het experimenteren met inhoud buiten de box te vullen.
 
-[ het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
+[ het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Hoofdletters gebruiken - Loyalty&#39;s
 
-In deze les, wordt een geval van het de gebruiks van de beloningen van de steekproefLoyalty gebruikt om implementatie van een ervaring van het Webkanaal in detail te beschrijven gebruikend SDK van het Web.
+In deze les, wordt een geval van het de gebruiks van de beloningen van de steekproefLoyalty gebruikt om implementatie van een Webkanaalervaring te detailleren gebruikend het Web SDK.
 
 Met dit gebruiksgeval kunt u beter begrijpen hoe Journey Optimizer uw klanten de beste binnenkomende ervaringen kan bieden, door gebruik te maken van Journey Optimizer-campagnes en de webontwerper.
 
-Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Terwijl dergelijke interfacetaken typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om inzicht in het proces te krijgen, zelfs als zij typisch niet verantwoordelijk voor de verwezenlijking van de campagne van het Webkanaal zijn.
+Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Hoewel dergelijke interfacetaken doorgaans door marketers worden afgehandeld, kan het voor implementatoren gunstig zijn om insight in het proces te betrekken, zelfs als ze gewoonlijk niet verantwoordelijk zijn voor het maken van een webkanaalcampagne.
 
 ### Loyalty Rewards-campagne maken
 
@@ -139,11 +139,11 @@ Nu u onze gegevens van de steekproefloyaliteit hebt gegeten en ons segment creee
 
 De voorbeeldcampagne maken:
 
-1. Open de [ Journey Optimizer ](https://experience.adobe.com/journey-optimizer/home) {target="_blank"} interface
+1. Open [ Journey Optimizer ](https://experience.adobe.com/journey-optimizer/home){target="_blank"} interface
 
    >[!NOTE]
    >
-   > Het schema, de datasets, en het publiek kunnen ook in de interface van Journey Optimizer worden gebouwd aangezien zij allen gemeenschappelijke Experience Platform bouwt.
+   > Het schema, de datasets, en het publiek kunnen ook in de interface van Journey Optimizer worden gebouwd aangezien zij allen gemeenschappelijke constructs van Experience Platform zijn.
 
 1. Ga naar **[!UICONTROL Journey Management]** > **[!UICONTROL Campaigns]** in de linkernavigatie
 1. Klik op **[!UICONTROL Create campaign]** rechtsboven.
@@ -191,7 +191,7 @@ U kunt als volgt het inhoudexperiment maken:
 
    ![ creeer experiment ](assets/web-channel-create-content-experiment.png)
 
-1. Kies eerst een **[!UICONTROL Success metric]** . Dit is de maatstaf voor het bepalen van de doeltreffendheid van inhoud. Kies **[!UICONTROL Unique Inbound Clicks]** om te zien welke inhoudsbehandeling meer klikken op de webbeleving van CTA genereert.
+1. Kies eerst een **[!UICONTROL Success metric]** . Dit is de maatstaf voor het bepalen van de doeltreffendheid van inhoud. Kies **[!UICONTROL Unique Inbound Clicks]** om te zien welke inhoudsbehandeling meer klikken op het web genereert.
 
    ![ kies metrisch succes ](assets/web-channel-content-experiment-metric.png)
 
@@ -250,7 +250,7 @@ Voeg in de editor de HTML voor het publiek van `Luma Loyalty Rewards – Gold St
 
 Bekijk nu de nieuwe aangepaste HTML-component om deze passend te maken.
 
-![ Aangepaste HTML van het Overzicht ](assets/web-channel-review-custom-html.png)
+![ de douane HTML van het Overzicht ](assets/web-channel-review-custom-html.png)
 
 Bewerk een specifieke component met behulp van de **[!UICONTROL CSS selector type]** -wijziging.
 
@@ -318,7 +318,7 @@ De validatie starten met de foutopsporing:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. U kunt zich dan bij de plaats met diverse Luma loyaliteitsrekeningen aanmelden, en debugger gebruiken om de verzoeken te bevestigen die naar de Edge Network van Adobe Experience Platform worden verzonden.
+1. U kunt zich dan bij de plaats met diverse Luma loyaliteitsrekeningen aanmelden, en debugger gebruiken om de verzoeken te bevestigen die naar Adobe Experience Platform Edge Network worden verzonden.
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -339,4 +339,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

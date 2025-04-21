@@ -1,10 +1,10 @@
 ---
 title: Een XDM-schema voor webgegevens maken
-description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe te om een schema XDM voor Webgegevens in de interface van de Inzameling van Gegevens tot stand te brengen. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Leer hoe u een XDM-schema voor webgegevens maakt in de interface van de Adobe Ex
 
 De schema&#39;s van het Gegevensmodel van de ervaring (XDM) zijn de bouwstenen, de principes, en de beste praktijken voor het verzamelen van gegevens in Adobe Experience Platform.
 
-De SDK van het Web van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar de Edge Network van het Platform te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke Experience Cloud toepassingen die in de datastream worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
+Het Web SDK van het platform gebruikt uw schema om uw gegevens van de Webgebeurtenis te standaardiseren, het naar het Platform Edge Network te verzenden, en uiteindelijk door:sturen de gegevens aan om het even welke toepassingen van Experience Cloud die in de gegevensstroom worden gevormd. Deze stap is kritiek aangezien het een standaardgegevensmodel bepaalt dat voor het opnemen van gegevens van de klantenervaring in Experience Platform wordt vereist en stroomafwaartse diensten en toepassingen toelaat die op deze normen worden voortgebouwd.
 
 >[!NOTE]
 >
->Een schema XDM wordt _vereist_ niet om Adobe Analytics, Adobe Target, of Adobe Audience Manager met Web SDK uit te voeren (de gegevens kunnen in het `data` voorwerp in plaats van het `xdm` voorwerp worden overgegaan aangezien u later zult zien). Een XDM-schema is vereist voor de krachtigste implementaties van Platform-native toepassingen zoals Journey Optimizer, Real-time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om geen schema XDM in uw eigen implementatie te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
+>Een schema XDM wordt _vereist_ niet om Adobe Analytics, Adobe Target, of Adobe Audience Manager met het Web SDK uit te voeren (de gegevens kunnen in het `data` voorwerp in plaats van het `xdm` voorwerp worden overgegaan aangezien u later zult zien). Een XDM-schema is vereist voor de krachtigste implementaties van platformonafhankelijke toepassingen zoals Journey Optimizer, Real-Time Customer Data Platform en Customer Journey Analytics. Terwijl u kunt besluiten om geen schema XDM in uw eigen implementatie te gebruiken, wordt u geacht dit als deel van dit leerprogramma te doen.
 
 ## Waarom modelleren de gegevens?
 
@@ -51,7 +51,7 @@ Bijvoorbeeld, behandelen vele ondernemingen bevelen. Wat als deze bedrijven geza
 
 Als alle bedrijven die met orders te maken hebben, besloten hebben om hun ordergegevens op consistente wijze te modelleren voor termen die in de sector algemeen zijn, kunnen er magische dingen beginnen te gebeuren. De informatie zou vlotter binnen en buiten uw organisatie kunnen worden uitgewisseld in plaats van constant het interpreteren en vertalen van de gegevens (pro&#39;s en evars, om het even wie?). Het leren van de machine kon gemakkelijker begrijpen wat uw gegevens __ betekent en actionable inzichten verstrekken. Gebruikersinterfaces voor het opzoeken van relevante gegevens kunnen intuïtiever worden. Uw gegevens kunnen naadloos worden geïntegreerd met partners en leveranciers die dezelfde modellering volgen.
 
-Dit is het doel van het Model van de Gegevens van de Ervaring van de Adobe [ ](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM verstrekt voorschrijvende modellering voor gegevens die in de industrie gemeenschappelijk zijn, terwijl ook het toestaan van u om het model voor uw specifieke behoeften uit te breiden. Adobe Experience Platform is opgebouwd rond XDM en gegevens die naar Experience Platform worden verzonden, moeten daarom in XDM staan. In plaats van na te denken over waar en hoe u uw huidige gegevensmodellen in XDM kunt omzetten alvorens de gegevens naar Experience Platform te verzenden, overweeg doordringend het goedkeuren van XDM over uw organisatie zodat de vertaling zelden moet voorkomen.
+Dit is het doel van het Model van de Gegevens van de Ervaring van Adobe [ ](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM verstrekt voorschrijvende modellering voor gegevens die in de industrie gemeenschappelijk zijn, terwijl ook het toestaan van u om het model voor uw specifieke behoeften uit te breiden. Adobe Experience Platform is gebouwd rond XDM en gegevens die naar Experience Platform worden verzonden, moeten daarom in XDM zijn opgeslagen. Overweeg in plaats van na te denken over waar en hoe u uw huidige gegevensmodellen in XDM kunt omzetten alvorens de gegevens naar Experience Platform te verzenden, meer doordringend het goedkeuren van XDM over uw organisatie zodat de vertaling zelden hoeft voor te komen.
 
 
 >[!NOTE]
@@ -74,11 +74,11 @@ Alle noodzakelijke levering en gebruikerstoestemmingen voor de Inzameling van Ge
 
 ## Een XDM-schema maken
 
-De schema&#39;s XDM zijn de standaardmanier om gegevens in Experience Platform te beschrijven, toestaand alle gegevens die aan de schema&#39;s voldoen om over een organisatie zonder conflicten worden opnieuw gebruikt, of zelfs tussen veelvoudige organisaties worden gedeeld. Meer leren, zie de [ grondbeginselen van de samenstelling van het Schema ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
+De schema&#39;s XDM zijn de standaardmanier om gegevens in Experience Platform te beschrijven, toestaand alle gegevens die aan de schema&#39;s in overeenstemming zijn om over een organisatie zonder conflicten worden opnieuw gebruikt, of zelfs tussen veelvoudige organisaties worden gedeeld. Meer leren, zie de [ grondbeginselen van de samenstelling van het Schema ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
-In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van het basislijngebied voor het vangen van de gegevens van de Webgebeurtenis over de ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} Plaats van de Demo van 0} Luma creëren:[
+In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van het basislijngebied voor het vangen van de gegevens van de Webgebeurtenis over de [ Plaats van de Demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} tot stand brengen:
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://launch.adobe.com/) {target="_blank"}
+1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Zorg ervoor dat u zich in de juiste sandbox bevindt. De sandbox in de rechterbovenhoek zoeken
 
    >[!NOTE]
@@ -142,7 +142,7 @@ Er is een speciaal veld dat wordt gebruikt voor het identificeren van webgebruik
 
 ![ Gegevens van de Gebeurtenis van het Web Luma ](assets/schema-identityMap.png)
 
-Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensinzameling, aangezien het Experience Cloud identiteitskaart die voor het identificeren van gebruikers op het Web wordt vereist opslaat. Het is ook de sleutel aan het plaatsen van interne klant IDs voor voor authentiek verklaarde gebruikers. `[!UICONTROL identityMap]` wordt besproken meer in [ vormen de 2} les van Identiteiten {. ](configure-identities.md) Deze wordt automatisch opgenomen in alle schema&#39;s met behulp van de klasse **[!UICONTROL XDM ExperienceEvent]** .
+Het is een verplicht object voor elke gegevensverzameling voor het web, omdat het de Experience Cloud-id bevat die nodig is om gebruikers op het web te identificeren. Het is ook de sleutel aan het plaatsen van interne klant IDs voor voor authentiek verklaarde gebruikers. `[!UICONTROL identityMap]` wordt besproken meer in [ vormen de 2} les van Identiteiten {. ](configure-identities.md) Deze wordt automatisch opgenomen in alle schema&#39;s met behulp van de klasse **[!UICONTROL XDM ExperienceEvent]** .
 
 
 >[!IMPORTANT]
@@ -150,7 +150,7 @@ Het is een verplicht voorwerp voor om het even welke Web-gerelateerde gegevensin
 > U kunt **[!UICONTROL Profile]** mogelijk inschakelen voor een schema voordat u het schema opslaat. **laat niet** het op dit punt toe. Als een schema eenmaal is ingeschakeld voor Profiel, kan het niet worden uitgeschakeld of verwijderd zonder de volledige sandbox opnieuw in te stellen. De gebieden kunnen niet van schema&#39;s op dit punt of worden verwijderd, hoewel het mogelijk is [ Gebieden in UI ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate) te verwerpen. Deze implicaties zijn belangrijk om later in mening te houden wanneer u met uw eigen gegevens in uw milieu van de Productie werkt.
 >
 >
->Dit het plaatsen wordt besproken meer tijdens de ](setup-experience-platform.md) les van het Experience Platform van de Opstelling 0} {.[
+>Dit het plaatsen wordt besproken meer tijdens de [ Experience Platform van de Opstelling ](setup-experience-platform.md) les.
 >![Profielschema ](assets/schema-profile.png)
 
 Selecteer **[!UICONTROL Save]** rechtsboven om deze les te voltooien.
@@ -158,11 +158,11 @@ Selecteer **[!UICONTROL Save]** rechtsboven om deze les te voltooien.
 ![ sparen Schema ](assets/schema-select-save.png)
 
 
-Nu, kunt u dit schema van verwijzingen voorzien wanneer u de uitbreiding van SDK van het Web aan uw markeringsbezit toevoegt.
+U kunt nu naar dit schema verwijzen wanneer u de extensie Web SDK toevoegt aan de eigenschap tag.
 
 
 [Volgende: ](configure-identities.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,7 +3,7 @@ title: Doel migreren van at.js 2.x naar Web SDK
 description: Leer hoe u een Adobe Target-implementatie migreert van at.js 2.x naar Adobe Experience Platform Web SDK. De onderwerpen omvatten het laden van de bibliotheek van JavaScript, het verzenden van parameters, het teruggeven activiteiten, en andere opmerkelijke callouts.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze gids is voor ervaren implementatoren van Adobe Target leren hoe te om een implementatie at.js aan het Web SDK van Adobe Experience Platform te migreren.
 
-Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud via de Adobe Experience Platform-Edge Network kunnen communiceren met services van Experiencen Cloud. Deze nieuwe bibliotheek combineert de mogelijkheden van de afzonderlijke toepassingsbibliotheken van de Adobe tot één lichtgewichtpakket dat de nieuwe Adobe Experience Platform-functies ten volle kan benutten.
+Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee Adobe Experience Cloud-klanten via Adobe Experience Platform Edge Network kunnen communiceren met Experience Cloud-services. Deze nieuwe bibliotheek combineert de mogelijkheden van de afzonderlijke Adobe-toepassingsbibliotheken tot één lichtgewichtpakket dat de nieuwe Adobe Experience Platform-functies ten volle kan benutten.
 
 
 >[!NOTE]
@@ -26,7 +26,7 @@ Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waar
 
 >[!CAUTION]
 >
-> Omdat het Web SDK van het Platform veelvoudige Adobe toepassingen steunt, zouden alle bibliotheken van de Adobe op een bepaalde pagina tezelfdertijd moeten worden gemigreerd. Bijvoorbeeld, wordt een gemengde implementatie van Web SDK voor Doel en AppMeasurement voor Analytics op één enkele pagina _niet gesteund_. Nochtans, wordt een gemengde implementatie over verschillende pagina&#39;s gesteund, bijvoorbeeld Web SDK op pagina A, en at.js met AppMeasurement op pagina B.
+> Omdat Platform Web SDK meerdere Adobe-toepassingen ondersteunt, moeten alle Adobe-bibliotheken op een bepaalde pagina tegelijkertijd worden gemigreerd. Bijvoorbeeld, wordt een gemengde implementatie van Web SDK voor Doel en AppMeasurement voor Analytics op één enkele pagina _niet gesteund_. Een gemengde implementatie op verschillende pagina&#39;s wordt echter ondersteund, bijvoorbeeld Web SDK op pagina A en at.js met AppMeasurement op pagina B.
 
 
 
@@ -34,13 +34,13 @@ Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waar
 
 Enkele voordelen van het Web SDK van het Platform in vergelijking met de standalone bibliotheek at.js omvatten:
 
-* Sneller het delen van publiek van [ Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Het integreren Doel met Journey Optimizer om [ levering van de Offer decisioning te steunen ](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
+* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
 * Een kleinere voetafdruk voor verbeterde afmetingen voor de paginasnelheid
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
-Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in het Experience Platform worden opgenomen en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. Platform Web SDK is een vereiste om deze Real-Time CDP-functies in uw webkanaal te kunnen gebruiken.
+Het grootste voordeel van migratie voor klanten van Target is waarschijnlijk de integratie met Real-Time Customer Data Platform. Real-Time CDP biedt enorme mogelijkheden voor publieksopbouw op basis van het volledige scala aan gegevens die in Experience Platform worden ingevoerd en de mogelijkheid om in realtime een klantprofiel te maken. Een ingebouwd kader voor gegevensbeheer automatiseert verantwoord gebruik van die gegevens. Met AI van de klant kunt u eenvoudig modellen voor machinaal leren gebruiken voor het samenstellen van eigenschappen en churn-modellen waarvan de uitvoer naar Adobe Target kan worden gedeeld. Tot slot kunnen klanten van de optionele toevoegingen aan de gezondheidszorg en het privacyschild de functie voor het afdwingen van toestemming gebruiken om de voorkeuren voor toestemming van individuele klanten eenvoudig af te dwingen. Platform Web SDK is een vereiste om deze Real-Time CDP-functies in uw webkanaal te kunnen gebruiken.
 
 ## Leerdoelstellingen
 

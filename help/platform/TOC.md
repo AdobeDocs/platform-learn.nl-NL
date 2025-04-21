@@ -5,10 +5,10 @@ user-guide-description: Leer de vele componenten van Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Zelfstudies voor platformen](/help/platform/overview.md)
-+ Introductie tot platform {#intro-to-platform}
++ Inleiding tot platform {#intro-to-platform}
    + [Een klantervaring met Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Achter de schermen: een klantervaring met Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Overzicht van Experience Platform](/help/platform/intro-to-platform/overview.md)
@@ -75,7 +75,7 @@ Campaigns
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Overzicht van B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Campagnes met Marketo Engage ordenen](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) {target="_blank"}
++ [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Verifiëren voor Experience Platform API&#39;s](/help/platform/authentication/platform-api-authentication.md)
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
@@ -100,7 +100,7 @@ Campaigns
    + [Operationele inzichten](/help/platform/ai-assistant/operational-insights.md)
    + [Effectanalyse](/help/platform/ai-assistant/impact-analysis.md)
    + [Beveiligingsoverzicht](/help/platform/ai-assistant/security-overview.md)
-+ Soorten publiek en segmentatie {#audiences}
++ Segmentering en publiek {#audiences}
    + [Inleiding tot het Poort van het publiek en Samenstelling](audiences/introduction-to-audience-portal-and-composition.md)
    + [Soorten publiek uploaden](audiences/upload-audiences.md)
    + [Overzicht van Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
@@ -118,15 +118,15 @@ Campaigns
    + [Accountsoorten maken en activeren (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo van streamingsegmentatie](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Batchpubliek op aanvraag evalueren](/help/platform/audiences/evaluate-audiences-on-demand.md)
-   + [ evalueer een publieksregel ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html) {target="_blank"}
-   + [ creeer een dataset om gegevens ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html) uit te voeren {target="_blank"}
+   + [ evalueer een publieksregel ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [ creeer een dataset om gegevens ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"} uit te voeren
    + [Instellingen voor segmentovereenkomst](/help/platform/segments/segment-match-connection-setup.md)
    + [Beheer van segmentmatchgegevens](/help/platform/segments/segment-match-data-governance.md)
    + [Segment afstemmen, configuratiestroom](/help/platform/segments/segment-match-configuration-flow.md)
    + [Segment afstemmen op inzichten vóór delen](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Segmentovereenkomst die gegevens ontvangt](/help/platform/segments/segment-match-receiving-data.md)
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
-+ [ de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html) {target="_blank"}
++ [ de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
    + [Real-Time CDP Collaboration - Overzicht](collaboration/real-time-cdp-collaboration-overview.md)
    + [Machtigingen instellen](collaboration/set-permissions-for-collaboration.md)
@@ -135,7 +135,7 @@ Campaigns
    + [Verbinding maken met uitgevers](collaboration/connect-with-publishers.md)
 + Dashboards {#dashboards}
    + [Een dashboard maken](/help/platform/dashboards/create-a-dashboard.md)
-+ Gegevensbeheer {#data-governance}
++ Datagovernance {#data-governance}
    + [Overzicht](/help/platform/governance/understanding-data-governance.md)
    + [Eind-aan-eind demonstratie](/help/platform/governance/introduction-to-data-governance.md)
    + [Gegevens classificeren met labels](/help/platform/governance/classify-data-using-labels.md)
@@ -151,12 +151,12 @@ Campaigns
    + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [ de profielen van de Schrapping ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [ werk een profielattribuut ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert) bij
-+ Gegevensinname {#data-ingestion}
++ Gegevensopname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [ de datasets en de partijen van de Schrapping ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [ Kaart een Csv- dossier aan XDM ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) {target="_blank"}
+   + [ Kaart een Csv- dossier aan XDM ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [ Bronoverzicht ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [ Ingest gegevens van Adobe Analytics ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [ Ingest gegevens van Audience Manager ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -166,11 +166,11 @@ Campaigns
    + [Overzicht van het opnemen van streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [ gegevens van de Stroom met HTTP API ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [ gegevens van de Stroom gebruikend de Schakelaars van Source ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-   + ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html) {target="_blank"} zelfstudies van SDK van het 0} Web[
-   + [ Mobiele zelfstudies van SDK ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html) {target="_blank"}
-+ Levenscyclus gegevens {#data-lifecycle}
+   + [ Zelfstudies van SDK van het Web ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [ Mobiele zelfstudies van SDK ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Levenscyclus van gegevens {#data-lifecycle}
    + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
-+ Doelen {#destinations}
++ Bestemmingen {#destinations}
    + [Overzicht van doelen](/help/platform/destinations/understanding-destinations.md)
    + [Verbinden met doelen](/help/platform/destinations/connecting-to-destinations.md)
    + [Doelen maken en gegevens activeren](/help/platform/destinations/create-destinations-and-activate-data.md)
@@ -182,7 +182,7 @@ Campaigns
    + [Op bestanden gebaseerde cloudopslag of e-mailmarketingdoelen configureren](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Een sociale bestemming configureren](/help/platform/destinations/configure-a-social-destination.md)
    + [Activeren via LiveRamp-doelen](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Target en Aangepaste Personalization {#target}
+   + Adobe Target en Aangepast Personalization{#target}
       + [Volgend-klare personalisatie met Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [De Adobe Target-bestemming configureren](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Segmenten en profielkenmerken activeren](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -193,7 +193,7 @@ Campaigns
    + [Overzicht van identiteits- en identiteitsgrafieken](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Identiteitsgegevens labelen, opnemen en verifiëren](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Identiteitsgrafieken weergeven](/help/platform/identities/view-identity-graphs.md)
-   + Regels voor identiteitsgrafiek koppelen {#graph-linking-rules}
+   + Koppelingsregels voor identiteitsgrafiek {#graph-linking-rules}
       + [Overzicht](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [Grafieksimulatie](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligente services {#intelligent-services}
@@ -206,7 +206,7 @@ Campaigns
    + [AI-waarde van klant](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [AI van klant configureren](/help/platform/intelligent-services/configure-customer-ai.md)
    + [AI-scores en -inzichten van klant gebruiken](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Controleren {#monitoring}
++ Bewaking {#monitoring}
    + [Gegevens bijhouden](/help/platform/monitoring/monitoring-dashboard.md)
    + [Activering van monitorsegment](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Dataflows bewaken](/help/platform/monitoring/data-monitoring.md)
@@ -219,7 +219,7 @@ Campaigns
    + [Klantprofiel in realtime](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
    + [Gegevens in profiel plaatsen](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [ pas de details van de profielmening ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html) aan {target="_blank"}
+   + [ pas de details van de profielmening aan ](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
@@ -248,14 +248,14 @@ Campaigns
    + [Door Adobe gedefinieerde functies](/help/platform/queries/adobe-defined-functions.md)
    + [Gegevenstoepassingen](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Zoekopdrachten uitvoeren](/help/platform/queries/run-queries.md)
-   + [ produceer datasets van vraagresultaten ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html) {target="_blank"}
+   + [ produceer datasets van vraagresultaten ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Gegevens analyseren en visualiseren](/help/platform/queries/analyze-and-visualize.md)
    + [Dashboards maken met BI-gereedschappen](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [De gegevens van uw klant opnieuw laden](/help/platform/queries/recharge-your-customer-data.md)
-   + [ verbindt cliënten met de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html) {target="_blank"}
+   + [ verbindt cliënten met de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Gegevens valideren in de datalake](/help/platform/queries/validate-data-in-the-datalake.md)
-+ Schemas {#schemas}
++ Schema&#39;s {#schemas}
    + [Overzicht](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Bouwstenen](/help/platform/schemas/schema-building-blocks.md)
    + [Uw gegevensmodel plannen](/help/platform/schemas/plan-your-data-model.md)
@@ -269,7 +269,7 @@ Campaigns
    + [Opsommende velden en voorgestelde waarden gebruiken](/help/platform/schemas/use-enumerated-fields.md)
    + [Schema&#39;s kopiëren tussen sandboxen](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Schema&#39;s bijwerken](/help/platform/schemas/update-schemas.md)
-   + [ creeer een ad hoc schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html) {target="_blank"}
+   + [ creeer een ad hoc schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Bronnen {#sources}
    + [Overzicht](/help/platform/sources/overview.md)
    + [Gegevens van Adobe Analytics verzamelen](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -281,7 +281,7 @@ Campaigns
    + [Gegevens streamen met HTTP-API](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Gegevens streamen met Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Problemen oplossen: SFTP-connector](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Hoofdletters gebruiken {#use-case-playbooks}
++ Playbooks voor gebruiksscenario&#39;s {#use-case-playbooks}
    + [Overzicht](/help/platform/use-case-playbooks/overview.md)
    + [Een sandbox voor een afspeelboek configureren](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Een instantie voor een afspeelboek maken en publiceren](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
@@ -290,8 +290,8 @@ Campaigns
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [ Marketo Engage ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [ Doel ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ Tendensen in de branche {#industry}
+   + [ Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ Tendensen industrie {#industry}
    + [De toekomst van gegevensbeheer en de veranderende omgeving](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Een overzicht van twee percepties - merken versus consumenten](/help/platform/industry/brands-vs-consumers.md)
    + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
