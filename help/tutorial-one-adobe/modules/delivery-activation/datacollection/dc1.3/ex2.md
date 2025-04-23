@@ -4,9 +4,9 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../dc1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam `--aepSandboxName--` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../dc1.2/images/sb1.png)
 
-## 1.3.2.1 Een gefederaliseerde database in AEP instellen
+## 1.3.2.1 Een gefedereerde database instellen in AEP
 
 Klik **Verdeelde gegevensbestanden** in het linkermenu. Dan, klik **voegt gefederaliseerde gegevensbestand** toe.
 
@@ -83,7 +83,7 @@ Klik **toevoegen**.
 
 ![ FAC ](./images/fdb7.png)
 
-AEP zal dan de informatie van elke lijst laden en het tonen in UI.
+AEP laadt vervolgens de informatie van elke tabel en toont deze in de gebruikersinterface.
 
 Voor elke tabel kunt u:
 
@@ -98,7 +98,7 @@ Klik **creëren**.
 
 ![ FAC ](./images/fdb8.png)
 
-Dan zie je dit. U kunt op elk schema klikken en de gegevens bekijken. Als voorbeeld, klik **—aepUserLoad—_PERSONS**.
+Dan zie je dit. U kunt op elk schema klikken en de gegevens bekijken. Klik bijvoorbeeld op **`--aepUserLdap--_PERSONS`** .
 
 ![ FAC ](./images/fdb9.png)
 

@@ -4,7 +4,7 @@ description: Aan de slag - Gebruik het demosysteem naast het instellen van de op
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling
 
-Om de lessen in deze zelfstudie te visualiseren en het voor u mogelijk te maken uw configuratie in een veilige omgeving te testen, gebruikt deze zelfstudie de volgende tools van het Adobe Demo System. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
+Om de lessen in deze zelfstudie te visualiseren en het voor u mogelijk te maken uw configuratie in een veilige omgeving te testen, gebruikt deze zelfstudie de volgende tools van het Adobe Demo System. Om het grootste deel van dit leerprogramma te krijgen, moet uw instantie van AEP worden gevormd om met het Systeem van de Demo daarna te worden geïntegreerd.
 
 Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
-Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) en navigeer aan **Opstelling**.
+Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/){target="_blank"} en navigeer aan **Opstelling**.
 
 ![ DSN ](./images/dsnsetup.png)
 
-In **Milieu** dropdown, selecteer uw instantie AEP en zandbak.
+In **Milieu** dropdown, selecteer uw instantie van AEP en zandbak.
 
 ![ DSN ](./images/dsnh1.png)
 
-Daarna, selecteer de vooraf ingestelde **Gebruiker van het Leerprogramma AEP**.
+Daarna, selecteer de vooraf ingestelde **Gebruiker van het Leerprogramma van AEP**.
 
 ![ DSN ](./images/dsnhome.png)
 
@@ -57,7 +57,7 @@ Zorg dat dit scherm open blijft, zoals u het in de volgende stappen nodig hebt.
 
 ## Volgende stappen
 
-Ga naar [ creeer uw DataStream ](./ex3.md)
+Ga naar [ creeer uw DataStream ](./ex3.md){target="_blank"}
 
 Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
 

@@ -4,7 +4,7 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## De app downloaden
 
-Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app) op uw computer. Dan zie je dit.
+Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app){target="_blank"} op uw computer. Dan zie je dit.
 
 ![ DSN ](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ Na de vorige oefening, had u dit resultaat. Klik om het **Mobiele project van Ed
 
 ![ DSN ](./images/dsn5b.png)
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com ](https://dsn.adobe.com) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de drie punten **...** op uw mobiel app project en klik dan **uitgeven**.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com ](https://dsn.adobe.com){target="_blank"} te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de drie punten **...** op uw mobiel app project en klik dan **uitgeven**.
 
 ![ DSN ](./images/web8a.png)
 
@@ -83,7 +83,7 @@ Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
 
 ## Volgende stappen
 
-Ga naar [ vorm uw project van Adobe I/O ](./ex6.md)
+Ga naar [ vorm uw project van Adobe I/O ](./ex6.md){target="_blank"}
 
 Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
 

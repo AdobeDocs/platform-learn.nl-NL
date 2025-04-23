@@ -4,7 +4,7 @@ description: Aan de slag - Postman instellen
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md) te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
+>Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md){target="_blank"} te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
 
 ## PostBuster installeren
 
-Ga naar [ https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542 ](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542).
+Ga naar [ https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542 ](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}.
 
 Klik om de recentste versie van **PostBuster** te downloaden.
 
@@ -33,7 +33,7 @@ Open PostBuster nadat het downloaden is voltooid en geïnstalleerd. Dan moet je 
 
 ![ PostBuster ](./images/pb3.png)
 
-De download [ postbuster.json.zip ](./../../../assets/postman/postbuster.json.zip) en haalt het op uw Desktop uit.
+De download [ postbuster.json.zip ](./../../../assets/postman/postbuster.json.zip){target="_blank"} en haalt het op uw Desktop uit.
 
 ![ PostBuster ](./images/pbpb.png)
 
@@ -103,7 +103,7 @@ Dan moet je dit hebben.
 
 ## Adobe I/O-variabelen invoeren
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"} en open uw project.
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open uw project.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iopr.png){zoomable="yes"}
 

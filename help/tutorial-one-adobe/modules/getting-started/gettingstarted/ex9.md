@@ -2,7 +2,8 @@
 title: Aan de slag - Te installeren toepassingen
 description: Aan de slag - Te installeren toepassingen
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Hieronder vindt u een overzicht van de voorbereidingen die nodig zijn voordat u 
 
 ## Adobe Creative Cloud
 
-Ga naar [ https://creativecloud.adobe.com/apps/download/creative-cloud ](https://creativecloud.adobe.com/apps/download/creative-cloud).
+Ga naar [ https://creativecloud.adobe.com/apps/download/creative-cloud ](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/cc.png)
 
@@ -27,31 +28,31 @@ Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw 
 
 ## Visual Studio-code
 
-Ga naar [ https://code.visualstudio.com/ ](https://code.visualstudio.com/) {target="_blank"}, download en installeer **Code van Visual Studio**.
+Ga naar [ https://code.visualstudio.com/ ](https://code.visualstudio.com/){target="_blank"}, download en installeer **Code van Visual Studio**.
 
 ![ Blok ](./images/vsc1.png)
 
 ## Teksteditor
 
-Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [ https://www.sublimetext.com/ ](https://www.sublimetext.com/) gaan {target="_blank"} en deze Redacteur van Tekst downloaden en installeren.
+Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [ https://www.sublimetext.com/ ](https://www.sublimetext.com/){target="_blank"} gaan en deze Redacteur van Tekst downloaden en installeren.
 
 ![ Blok ](./images/text1.png)
 
 ## GitHub-account
 
-Als u nog geen rekening GitHub hebt, ga [ https://github.com/ ](https://github.com/) {target="_blank"}, en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
+Als u nog geen rekening GitHub hebt, ga [ https://github.com/ ](https://github.com/){target="_blank"}, en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
 
 ![ Blok ](./images/git.png)
 
 ## GitHub Desktop
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/) {target="_blank"}, download en installeer **Desktop van Github**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
 
 ![ Blok ](./images/block1.png)
 
 ## Azure Storage Explorer
 
-[ Download Microsoft Azure de Ontdekkingsreiziger van de Opslag om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) {target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
+[ Download Microsoft Azure Storage Explorer om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
 ![ Azure Opslag ](./images/az10.png){zoomable="yes"}
 

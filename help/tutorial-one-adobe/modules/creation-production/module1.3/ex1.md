@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Aan de slag met Adobe Express
 
-Open een nieuw Incognito browser venster en ga naar [ https://www.adobe.com/home ](https://www.adobe.com/home){target="_blank"}. Login die uw **van het Bedrijf of van de School rekening** gebruiken en dan de rekening selecteren **- aepImsOrgName—**.
+## 1.3.1.1 Aanmelden bij Adobe Express
+
+Open een nieuw Incognito browser venster en ga naar [ https://www.adobe.com/home ](https://www.adobe.com/home){target="_blank"}. Login die uw **van het Bedrijf of van de School rekening** gebruiken en dan de rekening **`--aepImsOrgName--`** selecteren.
 
 ![ Adobe Express ](./images/express1.png)
 
@@ -37,7 +39,7 @@ U wordt nu het programma geopend aan **Adobe Express**.
 
 ![ Adobe Express ](./images/express5.png)
 
-## 1.3.1.1 Aan de slag met een Brand-sjabloon
+## 1.3.1.2 Aan de slag met een merksjabloon
 
 In Adobe Express, ga naar **Banden**. De sjabloonbibliotheek van uw merk is momenteel waarschijnlijk leeg. CitiSignal heeft al eerder een merksjabloon gedefinieerd en u moet die bestaande sjabloon nu opnieuw gebruiken.
 

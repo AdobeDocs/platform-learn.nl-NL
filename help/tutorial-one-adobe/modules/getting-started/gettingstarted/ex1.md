@@ -4,7 +4,7 @@ description: Aan de slag - Installeer de Chrome-extensie voor de Experience Leag
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Nadat de extensie is geïnstalleerd, wordt dezelfde tekst automatisch gewijzigd 
 
 ## De Chrome-extensie installeren
 
-Om die uitbreiding van Chrome te installeren, open uw browser van Chrome en ga naar: [ https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi ](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Dan zie je dit.
+Om die uitbreiding van Chrome te installeren, open uw browser van Chrome en ga naar: [ https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi ](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Dan zie je dit.
 
 Klik **toevoegen aan Chrome**.
 
@@ -58,7 +58,7 @@ In het **menu van uitbreidingen**, klik het **puzzelstuk** pictogram en speld he
 
 ## De Chrome-extensie configureren
 
-Ga naar [ https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) en klik dan het uitbreidingspictogram om het te openen.
+Ga naar [ https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} en klik dan het uitbreidingspictogram om het te openen.
 
 ![ DSN ](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Als u niet zeker weet welke waarden u voor deze velden moet invoeren, volgt u de
 
 **AEP IMS Org Name**
 
-Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u de naam van uw instantie in de hoogste juiste hoek van uw scherm vinden.
+Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/){target="_blank"}, zult u de naam van uw instantie in de hoogste juiste hoek van uw scherm vinden.
 
 ![ DSN ](./images/aepname.png)
 
@@ -84,7 +84,7 @@ De IMS-organisatie-id is de unieke id voor uw Adobe Experience Cloud-instantie e
 
 U kunt uw IMS-organisatie-id op meerdere manieren zoeken. Als u niet zeker bent, controleer met één van de systeembeheerders van uw instantie om identiteitskaart te vinden.
 
-U kunt het vinden door [ Admin Console ](https://https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
+U kunt het vinden door [ Admin Console ](https://adminconsole.adobe.com/){target="_blank"} te gaan, waar u het als deel van URL kunt vinden.
 
 ![ DSN ](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Kopieer en plak het **@AdobeOrg** -onderdeel samen met de id.
 
 **identiteitskaart van de HTENT van AEP**
 
-Uw Tenant-id is de unieke id voor het AEP-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+Uw Tenant-id is de unieke id voor het AEP-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/){target="_blank"}, zult u huurder identiteitskaart in URL vinden.
 
 ![ DSN ](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen da
 
 **Naam van zandbak van AEP**
 
-De naam van de sandbox is de naam van de omgeving die u in uw AEP-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+De naam van de sandbox is de naam van de omgeving die u in uw AEP-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/){target="_blank"}, zult u huurder identiteitskaart in URL vinden.
 
 Voordat u de naam van de sandbox opgeeft van de URL, moet u ervoor zorgen dat u zich in de sandbox bevindt die u voor deze zelfstudie moet gebruiken. U kunt naar de rechtersandbox schakelen door op het menu met sandboxswitches in de rechterbovenhoek van het scherm te klikken.
 
@@ -135,7 +135,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** op deze pagina door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
@@ -145,7 +145,7 @@ U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de milieuvar
 
 ## Volgende stappen
 
-Ga naar [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
+Ga naar [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md){target="_blank"}
 
 Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
 

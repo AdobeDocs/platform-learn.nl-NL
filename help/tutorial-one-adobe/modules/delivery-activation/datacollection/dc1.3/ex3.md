@@ -4,16 +4,16 @@ description: Foundation - FAC - Een gefederaliseerde compositie maken
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # 1.3.3 Een gefederaliseerde compositie maken
 
-U kunt uw gefederaliseerde publiekssamenstelling in AEP nu vormen.
+U kunt nu uw gefederaliseerde publiekscompositie configureren in AEP.
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -21,7 +21,7 @@ Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 ![ Ingestie van Gegevens ](./../dc1.2/images/home.png)
 
-Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
+Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam `--aepSandboxName--` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
 ![ Ingestie van Gegevens ](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ Dan zie je dit. Selecteer **tot publiek** leiden. Klik het **onderzoek** pictogr
 
 ![ FAC ](./images/fedcomp5.png)
 
-Selecteer het schema **—aepUserLoad—_HOUSEHOLDS**. Klik **bevestigen**.
+Selecteer het schema **`--aepUserLdap--_HOUSEHOLDS`** . Klik **bevestigen**.
 
 ![ FAC ](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ Dan, klik opnieuw het **+** pictogram en klik **de voorwaarde van de Douane** op
 
 ![ FAC ](./images/fedcomp11.png)
 
-De tweede voorwaarde die moet worden toegevoegd, is: `Is the user an existing CitiSignal Mobile subscriber?` . De manier om die vraag te beantwoorden is het verband tussen het huishouden en de primaire klant in het huishouden te gebruiken, dat in een andere lijst wordt bepaald, **- aepUserLDAP—_PERSONS**. U kunt neer in het attributenmenu boren gebruikend de **huishouden2person** verbinding.
+De tweede voorwaarde die moet worden toegevoegd, is: `Is the user an existing CitiSignal Mobile subscriber?` . De manier om die vraag te beantwoorden is de verhouding tussen het huishouden en de primaire klant in het huishouden te gebruiken, die in een andere lijst, **`--aepUserLdap--_PERSONS`** wordt bepaald. U kunt neer in het attributenmenu boren gebruikend de **huishouden2person** verbinding.
 
 ![ FAC ](./images/fedcomp12.png)
 

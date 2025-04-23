@@ -3,7 +3,8 @@ title: Aan de slag - Postman instellen
 description: Aan de slag - Postman instellen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,21 +15,21 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, volg de instructies aan [ installeer PostBuster ](./ex8.md)!
+>Als u een werknemer van Adobe bent, volg de instructies aan [ installeer PostBuster ](./ex8.md){target="_blank"}!
 
 ## Postman-omgeving downloaden
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"} en open uw project.
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open uw project.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iopr.png){zoomable="yes"}
 
-Klik **Firefly - de Diensten van Firefly** API. Dan, klik **Download voor Postman** en kies **Server-aan-Server** om een milieu van Postman te downloaden.
+Klik **Firefly - Firefly Services** API. Dan, klik **Download voor Postman** en kies **Server-aan-Server** om een milieu van Postman te downloaden.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iopm.png){zoomable="yes"}
 
 ## Postman-verificatie naar Adobe I/O
 
-De download en installeert de relevante versie van Postman voor uw OS bij [ Downloads van Postman ](https://www.postman.com/downloads/) {target="_blank"}.
+De download en installeert de relevante versie van Postman voor uw OS bij [ Downloads van Postman ](https://www.postman.com/downloads/){target="_blank"}.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/getstarted.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ De verzameling bevat een aantal API-aanvragen die u kunt gebruiken. We gebruiken
 - 1 Verzameling voor verificatie naar Adobe I/O
 - 1 Verzameling voor de oefeningen in deze module
 
-Download [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip) aan uw lokale Desktop.
+Download [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip){target="_blank"} aan uw lokale Desktop.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Kies de drie dossiers van de omslag, dan selecteren **Open** en **Invoer**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/impconfirm.png){zoomable="yes"}
 
-Nu hebt u alles wat u nodig hebt in Postman om te beginnen met het communiceren met Firefly Services via de API&#39;s.
+Nu hebt u alles wat u nodig hebt in Postman om te beginnen met Firefly Services via de API&#39;s.
 
 ## Een toegangstoken aanvragen
 

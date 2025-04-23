@@ -4,7 +4,7 @@ description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uw gegevensstroom maken
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![ DSN ](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn
 
 ## Maak uw gegevensstroom voor mobiele apparaten
 
-Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/).
+Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 Klik op **[!UICONTROL Datastreams]**.
 
@@ -175,7 +175,7 @@ Uw veranderingen worden nu gepubliceerd en zullen in een paar notulen klaar zijn
 
 ## Volgende stappen
 
-Ga naar [ Gebruik de website ](./ex4.md)
+Ga naar [ Gebruik de website ](./ex4.md){target="_blank"}
 
 Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
 
