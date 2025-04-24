@@ -1,14 +1,14 @@
 ---
 title: Werken met Photoshop API's
-description: Leer hoe u met de Photoshop API's en Firefly Services kunt werken
+description: Leer hoe u met de Photoshop API's en Firefly Services werkt
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Leer hoe u met de Photoshop API&#39;s en Firefly Services werkt.
 
-## 1.1.3.1 Vereisten
+## 1.1.3.1 Voorwaarden
 
 Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
@@ -27,7 +27,7 @@ In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg
 
 ![ Postman ](./images/ioauthresp.png){zoomable="yes"}
 
-## 1.1.3.3 Programmatische interactie met een PSD-bestand
+## 1.1.3.3 Programmaticaal communiceren met een PSD-bestand
 
 Download [ burgerschap-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} aan uw Desktop.
 
@@ -43,7 +43,7 @@ Stuur uw eerste API-aanvraag naar Photoshop API&#39;s.
 
 Laten we nu de groeten overbrengen aan Photoshop API&#39;s om te testen of alle machtigingen en toegangsrechten correct zijn ingesteld.
 
-1. In de inzameling **Photoshop**, open verzoek **Photoshop Hello (de Auth van de Test.)**. Selecteer **verzenden**.
+In de inzameling **Photoshop**, open verzoek **Photoshop Hello (de Auth van de Test.)**. Selecteer **verzenden**.
 
 ![ Azure Opslag ](./images/ps10.png){zoomable="yes"}
 
@@ -55,7 +55,7 @@ Daarna, om programmatically met het dossier van PSD **te interactie aan te gaan 
 
 ### PSD uploaden naar Azure
 
-1. In Postman, open het verzoek **uploadt PSD aan Azure Rekening van de Opslag**. In de vorige oefening, vormde u deze milieuvariabelen in Postman, die u nu zult gebruiken:
+In Postman, open het verzoek **uploadt PSD aan Azure Rekening van de Opslag**. In de vorige oefening, vormde u deze milieuvariabelen in Postman, die u nu zult gebruiken:
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -66,11 +66,11 @@ Aangezien u in het verzoek **kunt zien uploadt PSD aan Azure Rekening van de Ops
 
 ![ Azure Opslag ](./images/ps12.png){zoomable="yes"}
 
-1. In **Lichaam**, selecteer het dossier **burgerschap-fiber.psd**.
+In **Lichaam**, selecteer het dossier **burgerschap-fiber.psd**.
 
 ![ Azure Opslag ](./images/ps13.png){zoomable="yes"}
 
-1. Het scherm moet er zo uitzien. Selecteer **verzenden**.
+Het scherm moet er zo uitzien. Selecteer **verzenden**.
 
 ![ Azure Opslag ](./images/ps14.png){zoomable="yes"}
 
@@ -86,33 +86,33 @@ Als u Azure Storage Explorer gebruikt om uw bestand te bekijken, moet u de map v
 
 Vervolgens moet u het manifestbestand van uw PSD-bestand ophalen.
 
-1. In Postman, open het verzoek **Photoshop - krijg PSD Manifest**. Ga naar **Lichaam**.
+In Postman, open het verzoek **Photoshop - krijg PSD Manifest**. Ga naar **Lichaam**.
 
 Het lichaam moet er als volgt uitzien:
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "thumbnails": {
-      "type": "image/jpeg"
+  {
+    "inputs": [
+      {
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "thumbnails": {
+        "type": "image/jpeg"
+      }
     }
   }
-}
 ```
 
-1. Selecteer **verzenden**.
+Selecteer **verzenden**.
 
 In het antwoord ziet u nu een koppeling. Aangezien het soms enige tijd kan duren om bewerkingen in Photoshop uit te voeren, verschaft Photoshop een statusbestand als antwoord op de meeste binnenkomende aanvragen. Als u wilt weten wat er met uw verzoek gebeurt, moet u het statusbestand lezen.
 
 ![ Azure Opslag ](./images/ps17.png){zoomable="yes"}
 
-1. Om het statusdossier te lezen, open het verzoek **Photoshop - krijgt PS Status**. U kunt zien dat dit verzoek een variabele als URL gebruikt, die een variabele is die door het vorige verzoek wordt geplaatst dat u verzendt, **Photoshop - krijgt PSD Manifest**. De variabelen worden geplaatst in **Manuscripten** van elk verzoek. Selecteer **verzenden**.
+Om het statusdossier te lezen, open het verzoek **Photoshop - krijgt PS Status**. U kunt zien dat dit verzoek een variabele als URL gebruikt, die een variabele is die door het vorige verzoek wordt geplaatst dat u verzendt, **Photoshop - krijgt PSD Manifest**. De variabelen worden geplaatst in **Manuscripten** van elk verzoek. Selecteer **verzenden**.
 
 ![ Azure Opslag ](./images/ps18.png){zoomable="yes"}
 
@@ -120,7 +120,7 @@ Het scherm moet er zo uitzien. Momenteel, wordt de status geplaatst aan **hangen
 
 ![ Azure Opslag ](./images/ps19.png){zoomable="yes"}
 
-1. Selecteer verzenden een paar meer tijden op **Photoshop - krijgt PS Status**, tot de statusveranderingen in **succesvol**. Dit kan een paar minuten duren.
+Selecteer verzenden een paar meer tijden op **Photoshop - krijgt PS Status**, tot de statusveranderingen in **succesvol**. Dit kan een paar minuten duren.
 
 Wanneer de reactie beschikbaar is, ziet u dat het JSON-bestand informatie bevat over alle lagen van het PSD-bestand. Dit is nuttige informatie, aangezien de dingen zoals de laagnaam of laagidentiteitskaart kunnen worden geïdentificeerd.
 
@@ -132,9 +132,9 @@ Zoek bijvoorbeeld naar de tekst `2048x2048-cta` . Uw scherm moet er als volgt ui
 
 ### Photoshop API - Tekst wijzigen
 
-Vervolgens moet u de tekst wijzigen voor de aanroep naar actie met behulp van de API&#39;s.
+Vervolgens moet u de tekst voor de call to action wijzigen met de API&#39;s.
 
-1. In Postman, open het verzoek **Photoshop - de Tekst van de Verandering** en ga naar **Lichaam**.
+In Postman, open het verzoek **Photoshop - de Tekst van de Verandering** en ga naar **Lichaam**.
 
 Uw scherm moet er als volgt uitzien:
 
@@ -143,37 +143,37 @@ Uw scherm moet er als volgt uitzien:
 - ten derde wordt een uitvoerbestand opgegeven: `citisignal-fiber-changed-text.psd`
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "layers": [
+  {
+    "inputs": [
       {
-        "name": "2048x2048-cta",
-        "text": {
-          "content": "Get Fiber now!"
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "layers": [
+        {
+          "name": "2048x2048-cta",
+          "text": {
+            "content": "Get Fiber now!"
+          }
         }
+      ]
+    },
+    "outputs": [
+      {
+        "storage": "azure",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+        "type": "vnd.adobe.photoshop",
+        "overwrite": true
       }
     ]
-  },
-  "outputs": [
-    {
-      "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-      "type": "vnd.adobe.photoshop",
-      "overwrite": true
-    }
-  ]
-}
+  }
 ```
 
 Het uitvoerbestand heeft een andere naam, omdat u het oorspronkelijke invoerbestand niet wilt overschrijven.
 
-1. Selecteer **verzenden**.
+Selecteer **verzenden**.
 
 ![ Azure Opslag ](./images/ps23.png){zoomable="yes"}
 
@@ -181,13 +181,13 @@ Net als voorheen bevat het antwoord een koppeling die verwijst naar het statusbe
 
 ![ Azure Opslag ](./images/ps22.png){zoomable="yes"}
 
-1. Om het statusdossier te lezen, open het verzoek **Photoshop - krijg PS Status** en selecteer **verzend**. Als de status niet aan **wordt geplaatst slaagde** onmiddellijk, wacht een paar seconden en selecteert dan **verzend** opnieuw.
+Om het statusdossier te lezen, open het verzoek **Photoshop - krijg PS Status** en selecteer **verzend**. Als de status niet aan **wordt geplaatst slaagde** onmiddellijk, wacht een paar seconden en selecteert dan **verzend** opnieuw.
 
-1. Selecteer de URL om het uitvoerbestand te downloaden.
+Selecteer de URL om het uitvoerbestand te downloaden.
 
 ![ Azure Opslag ](./images/ps24.png){zoomable="yes"}
 
-1. Open **burgerschap-vezel-veranderd-text.psd** na het downloaden van het dossier aan uw computer. U zou placeholder voor de vraag aan actie moeten zien is vervangen door de tekst **krijgt nu Vezel!**.
+Open **burgerschap-vezel-veranderd-text.psd** na het downloaden van het dossier aan uw computer. U zou placeholder voor call to action moeten zien is vervangen door de tekst **krijgt nu Vezel!**.
 
 ![ Azure Opslag ](./images/ps25.png){zoomable="yes"}
 
@@ -199,6 +199,6 @@ U kunt dit bestand ook in uw container zien met Azure Storage Explorer.
 
 Ga naar [ Firefly Eigen Modellen API ](./ex4.md){target="_blank"}
 
-Ga terug naar [ Overzicht van de Diensten van Adobe Firefly ](./firefly-services.md){target="_blank"}
+Ga terug naar [ Overzicht van Adobe Firefly Services ](./firefly-services.md){target="_blank"}
 
 Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
