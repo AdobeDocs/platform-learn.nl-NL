@@ -4,9 +4,9 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
 * In de Inzameling van Gegevens, moet u:
    * **[!UICONTROL Platforms]**—machtigingsitem **[!UICONTROL Mobile]**
    * **[!UICONTROL Property Rights]** - wijs items toe aan **[!UICONTROL Develop]** , **[!UICONTROL Approve]** , **[!UICONTROL Publish]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Manage Environments]** .
-   * **[!UICONTROL Company Rights]** - machtigingsitems naar **[!UICONTROL Manage Properties]** en, als de optionele les over pushberichten wordt voltooid, **[!UICONTROL Manage App Configurations]**
+   * **[!UICONTROL Company Rights]**—Items toestaan aan **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en) {target="_blank"} in de productdocumentatie.[
+     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en){target="_blank"} in de productdocumentatie.[
 * In Experience Platform moet u beschikken over:
    * **[!UICONTROL Data Modeling]** - machtigingsitems om schema&#39;s te beheren en weer te geven.
    * **[!UICONTROL Identity Management]** - machtigingsitems om naamruimten voor identiteiten te beheren en weer te geven.
@@ -92,8 +92,8 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
 U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versie kan worden gedownload/worden gekloond van [ Github ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). U vindt twee mappen:
 
 
-1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
-1. [ Einde ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}: een versie met de volledige implementatie voor verwijzing.
+1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+1. [ Einde ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een versie met de volledige implementatie voor verwijzing.
 
 >[!NOTE]
 >

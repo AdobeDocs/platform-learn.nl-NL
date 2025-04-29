@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 1%
+source-wordcount: '1470'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ In deze les zult u
 * Maak een App Surface in AJO.
 * De Journey Optimizer-tagextensie installeren en configureren.
 * Werk uw app bij om de Journey Optimizer-tagextensie te registreren.
-* Valideer installatie in Betrouwbaarheid.
+* Instellingen valideren in Assurance.
 * Definieer uw eigen campagne en berichtervaring in de app in Journey Optimizer.
 * Verzend uw eigen in-app-bericht vanuit de app.
 
@@ -55,17 +55,36 @@ In deze les zult u
 >Als u opstelling uw milieu reeds als deel van [ Journey Optimizer duw overseinen ](journey-optimizer-push.md) les hebt, zou u sommige stappen in deze opstellingssectie reeds kunnen reeds uitgevoerd hebben.
 
 
-### Een toepassingsoppervlak toevoegen aan gegevensverzameling
+### Een kanaalconfiguratie maken in Journey Optimizer
 
-1. Van de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/), selecteer **[!UICONTROL App Surfaces]** in het linkerpaneel.
-1. Selecteer **[!UICONTROL Create App Surface]** als u een configuratie wilt maken.
-   ![ app oppervlakte huis ](assets/push-app-surface.png)
-1. Voer een **[!UICONTROL Name]** in voor de configuratie, bijvoorbeeld `Luma App Tutorial` .
-1. Selecteer **[!UICONTROL Apple iOS]** in **[!UICONTROL Mobile Application Configuration]** .
-1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID (iOS Bundle ID)]** in. Bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
-1. Selecteer **[!UICONTROL Save]**.
+Om te beginnen moet u een kanaalconfiguratie maken om meldingen van App-berichten van Journey Optimizer te kunnen verzenden.
 
-   ![ de configuratie van de toepassingsoppervlakte ](assets/push-app-surface-config-inapp.png)
+1. Open in de Journey Optimizer-interface het menu **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** en selecteer vervolgens **[!UICONTROL Create channel configuration]** .
+
+   ![ creeer een kanaalconfiguratie ](assets/push-config-9.png)
+
+1. Voer een naam en beschrijving (optioneel) voor de configuratie in.
+
+   >[!NOTE]
+   >
+   > Namen moeten beginnen met een letter (A-Z). Het mag alleen alfanumerieke tekens bevatten. U kunt ook onderstrepingsteken `_` -, punt `.` - en afbreekstreepjes `-` gebruiken.
+
+
+1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Selecteer het **In-app overseinen** kanaal.
+
+1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren gebruikend deze configuratie. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Selecteer het platform waarvoor u de instellingen wilt definiëren. Op deze manier kunt u de doelapp voor elk platform opgeven en zorgt u voor consistente levering van inhoud op meerdere platforms.
+
+   >[!NOTE]
+   >
+   >Voor iOS- en Android-platforms is de levering uitsluitend gebaseerd op de toepassings-id. Als beide toepassingen dezelfde toepassings-id hebben, wordt inhoud geleverd aan beide toepassingen, ongeacht het platform dat is geselecteerd in de **[!UICONTROL Channel configuration]** .
+
+1. Selecteer **[!UICONTROL Submit]** om uw wijzigingen op te slaan.
+
+   ![ vorm het in-app kanaal ](assets/inapp_config_10.png)
 
 ### Gegevensstroomconfiguratie bijwerken
 
@@ -79,7 +98,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
 
-   ![ AEP gegevensstroomconfiguratie ](assets/datastream-ajo-inapp-configuration.png)
+   ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer-extensie installeren
@@ -97,14 +116,14 @@ Wanneer *slechts* gebruikend in-app berichten in uw app, in **[!UICONTROL Instal
 
 ### Journey Optimizer implementeren in de app
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de Messaging SDK installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
 
 >[!NOTE]
 >
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ het Overseinen AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. In Xcode, zorg ervoor dat [ het Overseinen van AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPMessaging` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -129,10 +148,10 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    ```
 
 
-## Setup valideren met betrouwbaarheid
+## Setup valideren met Assurance
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
-1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Verzekering.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Assurance.
    ![ vorm klik ](assets/push-validate-config.png)
 1. Selecteer ![ plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knoop naast **[!UICONTROL In-App Messaging]**.
 1. Selecteer **[!UICONTROL Save]**.
@@ -152,7 +171,7 @@ Als u uw eigen bericht in de app wilt maken, moet u een campagne in Journey Opti
 * levenscyclusgebeurtenissen van toepassingen, zoals starten, installeren, upgraden, sluiten of vastlopen,
 * gebeurtenissen voor geolocatie, zoals het betreden of afsluiten van een interessant punt.
 
-In dit leerprogramma, gaat u de Mobiele Kern generische en uitbreiding-onafhankelijke APIs gebruiken (zie [ Mobiele Kern generische APIs ](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om gebeurtenis het volgen van gebruikersschermen, acties, en PII gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die aan alle SDK-extensies van het mobiele platform is gekoppeld, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
+In dit leerprogramma, gaat u de Mobiele Kern generische en uitbreiding-onafhankelijke APIs gebruiken (zie [ Mobiele Kern generische APIs ](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) om gebeurtenis het volgen van gebruikersschermen, acties, en PII gegevens te vergemakkelijken. Gebeurtenissen die door deze API&#39;s worden gegenereerd, worden gepubliceerd naar de SDK-gebeurtenishub en zijn beschikbaar voor gebruik door extensies. De SDK-gebeurtenishub biedt de basisgegevensstructuur die is gekoppeld aan alle SDK-extensies van het mobiele platform, een lijst met geregistreerde extensies en interne modules, een lijst met geregistreerde gebeurtenislisteners en een database met gedeelde statussen.
 
 De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistreerde extensies om de integratie met Adobe en oplossingen van derden te vereenvoudigen. Wanneer bijvoorbeeld de extensie Optimize is geïnstalleerd, worden alle verzoeken en interacties met de aanbiedingsengine van Journey Optimizer - Decision Management afgehandeld door de gebeurtenishub.
 
@@ -222,16 +241,16 @@ U beschikt over alle ingrediënten om een bericht in de app te verzenden. Dit be
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## Implementatie valideren bij Betrouwbaarheid
+## Implementatie valideren in Assurance
 
-U kunt uw in-app berichten in de UI van de Verzekering bevestigen.
+U kunt uw berichten in de app valideren in de gebruikersinterface van Assurance.
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. Selecteer **[!UICONTROL In-App Messaging]**.
 1. Selecteer **[!UICONTROL Event List]**.
 1. Selecteer een **[!UICONTROL Display message]** -item.
-1. Inspect de onbewerkte gebeurtenis, met name de `html` , die de volledige lay-out en inhoud van het bericht in de app bevat.
-   ![ Verzekering In-app Bericht ](assets/assurance-in-app-display-message.png)
+1. Inspecteer de onbewerkte gebeurtenis, met name de `html` , die de volledige lay-out en inhoud van het bericht in de app bevat.
+   ![ Assurance In-App Bericht ](assets/assurance-in-app-display-message.png)
 
 
 ## Volgende stappen
@@ -240,8 +259,8 @@ U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in
 
 >[!SUCCESS]
 >
->U hebt de app voor berichten in de app ingeschakeld en een berichtencampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
+>U hebt de app voor berichten in de app ingeschakeld en een berichtcampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[creeer en vertoningsaanbiedingen](journey-optimizer-offers.md)**

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2599'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,8 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
 * Stel de app in voor Adobe Experience Platform.
 * Toegang tot Journey Optimizer en voldoende toestemmingen zoals die [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en) worden beschreven. U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
-   * Maak een toepassingsoppervlak.
+   * Maak een pushreferentie.
+   * Maak een push-kanaalconfiguratie.
    * Maak een reis.
    * Maak een bericht.
    * Voorinstellingen voor berichten maken.
@@ -43,12 +44,12 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 In deze les zult u
 
 * Registreer de toepassings-id bij de APNs (Apple Push Notification service).
-* Maak een App Surface in Journey Optimizer.
+* Maak een kanaalconfiguratie in Journey Optimizer.
 * Werk uw schema bij om velden voor pushberichten op te nemen.
 * Installeer en configureer de extensie Journey Optimizer.
 * Werk uw app bij om de Journey Optimizer-tagextensie te registreren.
-* Valideer installatie in Betrouwbaarheid.
-* Een testbericht verzenden vanuit de Betrouwbaarheid
+* Instellingen valideren in Assurance.
+* Een testbericht vanuit Assurance verzenden
 * Definieer uw eigen pushmelding voor een Journey Optimizer.
 * Verzend uw eigen pushmelding vanuit de app.
 
@@ -74,28 +75,75 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
 1. Selecteer **[!UICONTROL Continue]**.
    ![ vorm nieuwe sleutel ](assets/mobile-push-apple-dev-config-key.png)
 1. Controleer de configuratie en selecteer **[!UICONTROL Register]** .
-1. Download de persoonlijke sleutel van `.p8` . Het wordt gebruikt in de configuratie van de Oppervlakte van de Toepassing later in deze les.
-1. Noteer de **[!UICONTROL Key ID]** . Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
-1. Noteer de **[!UICONTROL Team ID]** . Het wordt gebruikt in de configuratie van de Oppervlakte van de App.
+1. Download de persoonlijke sleutel van `.p8` . Het wordt gebruikt in de kanaalconfiguratie van Journey Optimizer in de volgende oefening.
+1. Noteer de **[!UICONTROL Key ID]** . Deze wordt gebruikt in de Journey Optimizer-kanaalconfiguratie.
+1. Noteer de **[!UICONTROL Team ID]** . Deze wordt gebruikt in de Journey Optimizer-kanaalconfiguratie.
    ![ Zeer belangrijke Details ](assets/push-apple-dev-key-details.png)
 
 De extra documentatie kan [ hier ](https://help.apple.com/developer-account/#/devcdfbb56a3) worden gevonden.
 
-#### Een toepassingsoppervlak toevoegen aan gegevensverzameling
 
-1. Van de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/), selecteer **[!UICONTROL App Surfaces]** in het linkerpaneel.
-1. Selecteer **[!UICONTROL Create App Surface]** als u een configuratie wilt maken.
-   ![ app oppervlakte huis ](assets/push-app-surface.png)
-1. Voer een **[!UICONTROL Name]** in voor de configuratie, bijvoorbeeld `Luma App Tutorial` .
-1. Selecteer **[!UICONTROL Apple iOS]** in **[!UICONTROL Mobile Application Configuration]** .
-1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID (iOS Bundle ID)]** in. Bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
-1. Schakel de schakeloptie **[!UICONTROL Push Credentials]** in om uw referenties toe te voegen.
-1. De belemmering en laat vallen uw `.p8` **Sleutel van de Authentificatie van het Bericht van de Duw van Apple** dossier.
-1. Geef **[!UICONTROL Key ID]** op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van de `p8` auth-toets. Het kan onder het **[!UICONTROL Keys]** lusje in de **Certificaten, Herkenningstekens en de pagina van Profielen** van de de poortpagina&#39;s van de Ontwikkelaar van Apple worden gevonden. Zie ook [ tot een privé sleutel ](#create-a-private-key) leiden.
-1. Geef de **[!UICONTROL Team ID]** op. Identiteitskaart van het Team is een waarde die onder het **1} lusje van het Lidmaatschap {of bij de bovenkant van de het poortpagina van de Ontwikkelaar van Apple kan worden gevonden.** Zie ook [ tot een privé sleutel ](#create-a-private-key) leiden.
-1. Selecteer **[!UICONTROL Save]**.
+#### Uw pushgegevens voor de app toevoegen in Journey Optimizer
 
-   ![ de configuratie van de toepassingsoppervlakte ](assets/push-app-surface-config.png)
+Vervolgens moet u pushgegevens voor mobiele toepassingen toevoegen in Journey Optimizer. (In vroegere versies van het product, werden deze toegevoegd als deel van de configuratie &quot;van de Oppervlakte van de App&quot;in de Inzameling van Gegevens).
+
+De registratie van de pushreferenties voor de mobiele app is vereist om Adobe te machtigen pushberichten namens u te verzenden. Raadpleeg de onderstaande stappen:
+
+1. Open het menu **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** in de Journey Optimizer-interface.**[!UICONTROL Channels]**
+
+1. Selecteer **[!UICONTROL Create push credential]**.
+
+
+   ![ creeer een nieuwe duw credentiële configuratie in Journey Optimizer ](assets/add-push-credential-ios.png)
+
+1. Van **[!UICONTROL Platform]** drop-down, selecteer het **iOS** werkende systeem:
+
+
+   1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID]** (iOS Bundle ID) in. Bijvoorbeeld com.adobe.luma.tutorial.swiftui
+
+   1. Schakel de optie **[!UICONTROL Apply to all sandboxes]** in om deze pushgegevens beschikbaar te maken voor alle sandboxen. Als een specifieke zandbak zijn eigen geloofsbrieven voor het zelfde Platform en toepassings identiteitskaart paar heeft, zullen die zandbakspecifieke geloofsbrieven belangrijkheid nemen.
+
+
+   1. De belemmering en laat vallen uw .p8 **Sleutel van de Authentificatie van het Push- Bericht van Apple** dossier dat van de vorige oefening wordt verkregen.
+
+   1. Geef **[!UICONTROL Key ID]** op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van de `p8` auth-toets. Het kan onder het **[!UICONTROL Keys]** lusje in de **Certificaten, Herkenningstekens en de pagina van Profielen** van de de poortpagina&#39;s van de Ontwikkelaar van Apple worden gevonden. (U had dit tijdens de vorige oefening moeten opmerken.)
+
+   1. Geef de **[!UICONTROL Team ID]** op. Identiteitskaart van het Team is een waarde die onder het **1} lusje van het Lidmaatschap {of bij de bovenkant van de het poortpagina van de Ontwikkelaar van Apple kan worden gevonden.** (U had dit tijdens de vorige oefening moeten opmerken.)
+
+   ![ Push credential configuratie in Journey Optimizer ](assets/add-app-config-ios.png)
+
+1. Klik op **[!UICONTROL Submit]** om uw configuratie voor pushreferenties te maken.
+
+#### Een kanaalconfiguratie maken voor push in Journey Optimizer
+
+Als u eenmaal een configuratie voor pushreferenties hebt gemaakt, moet u een configuratie maken om pushberichten van Journey Optimizer te kunnen verzenden.
+
+1. Open in de Journey Optimizer-interface het menu **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** en selecteer vervolgens **[!UICONTROL Create channel configuration]** .
+
+   ![ creeer een nieuwe kanaalconfiguratie ](assets/push-config-9.png)
+
+1. Voer een naam en beschrijving (optioneel) voor de configuratie in.
+
+   >[!NOTE]
+   >
+   > Namen moeten beginnen met een letter (A-Z). Het mag alleen alfanumerieke tekens bevatten. U kunt ook onderstrepingsteken `_` -, punt `.` - en afbreekstreepjes `-` gebruiken.
+
+
+1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Selecteer het **Push** kanaal.
+
+
+1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren gebruikend deze configuratie. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Kies uw **[!UICONTROL Platform]** .
+
+1. Selecteer dezelfde **[!UICONTROL App id]** als voor de hierboven geconfigureerde pushreferentie.
+
+1. Selecteer **[!UICONTROL Submit]** om uw wijzigingen op te slaan.
+
+   ![ het kanaalconfiguratie van de duw ](assets/push-config-10.png)
+
 
 ### Gegevensstroomconfiguratie bijwerken
 
@@ -111,7 +159,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 
    1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
-   ![ AEP gegevensstroomconfiguratie ](assets/datastream-aep-configuration.png)
+   ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-aep-configuration.png)
 
 
 
@@ -135,10 +183,10 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 >Neem contact op met de klantenservice als u **[!UICONTROL AJO Push Tracking Experience Event Dataset]** niet ziet als een optie.
 >
 
-## Setup valideren met betrouwbaarheid
+## Setup valideren met Assurance
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
-1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Verzekering.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Selecteer **[!UICONTROL Configure]** in de gebruikersinterface van Assurance.
    ![ vorm klik ](assets/push-validate-config.png)
 1. Selecteer ![ plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Push Debug]**.
 1. Selecteer **[!UICONTROL Save]**.
@@ -198,14 +246,14 @@ Er moet nu een extensie voor pushmeldingen aan uw app worden toegevoegd, vergeli
 
 ## Journey Optimizer implementeren in de app
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK voor berichten installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de Messaging SDK installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
 
 >[!NOTE]
 >
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ het Overseinen AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. In Xcode, zorg ervoor dat [ het Overseinen van AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPMessaging` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -304,7 +352,7 @@ Met gebeurtenissen in Journey Optimizer kunt u uw reizen tijdelijk activeren om 
    1. Selecteer **[!UICONTROL Save]**.
       ![ geef gebeurtenisstap 2 ](assets/ajo-edit-event2.png) uit
 
-U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Deze gebeurtenisconfiguratie zal inkomende ervaringsgebeurtenissen filtreren gebruikend uw specifiek gebeurtenistype (`application.test`), zodat slechts de gebeurtenissen met dat specifieke type, die van uw mobiele app in werking worden gesteld, de reis zullen activeren u in de volgende stap bouwt. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform dat specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
+U hebt zojuist een gebeurtenisconfiguratie gemaakt die is gebaseerd op het gebeurtenissenschema voor mobiele apps dat u eerder hebt gemaakt in het kader van deze zelfstudie. Deze gebeurtenisconfiguratie zal inkomende ervaringsgebeurtenissen filtreren gebruikend uw specifiek gebeurtenistype (`application.test`), zodat slechts de gebeurtenissen met dat specifieke type, die van uw mobiele app in werking worden gesteld, de reis zullen activeren u in de volgende stap bouwt. In een echt scenario zou u dupberichten van de externe dienst kunnen willen verzenden, nochtans zijn de zelfde concepten van toepassing: van de externe toepassing verzendt een ervaringsgebeurtenis naar Experience Platform die specifieke gebieden heeft u kunt gebruiken om voorwaarden op toe te passen alvorens deze gebeurtenissen een reis teweegbrengen.
 
 ### De reis maken
 
@@ -395,7 +443,7 @@ Dit keer wordt de ervaringsgebeurtenis die u op het punt staat te verzenden, nie
    }
    ```
 
-   Met deze code wordt een instantie `testPushPayload` gemaakt met behulp van de parameters die aan de functie ( `applicationId` en `eventType` ) worden doorgegeven. Vervolgens wordt `sendExperienceEvent` aangeroepen tijdens het omzetten van de laadbewerking naar een woordenboek. In deze code wordt deze keer ook rekening gehouden met de asynchrone aspecten van het aanroepen van de Adobe Experience Platform SDK door gebruik te maken van het gelijktijdige aanroepen van Swift-model op basis van `await` en `async` .
+   Met deze code wordt een instantie `testPushPayload` gemaakt met behulp van de parameters die aan de functie ( `applicationId` en `eventType` ) worden doorgegeven. Vervolgens wordt `sendExperienceEvent` aangeroepen tijdens het omzetten van de laadbewerking naar een woordenboek. In deze code worden nu ook de asynchrone aspecten van het aanroepen van de Adobe Experience Platform SDK in aanmerking genomen door gebruik te maken van het gelijktijdige aanroepen van Swift op basis van `await` en `async` .
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** in de Xcode-projectnavigator. Voeg in de definitie van Knop voor pushmeldingen de volgende code toe om de lading van de testpushmelding tijdens de gebeurtenisbeleving te verzenden, zodat de rit wordt geactiveerd wanneer op die knop wordt getikt.
 
@@ -426,8 +474,8 @@ U moet nu over alle gereedschappen beschikken om pushmeldingen in uw app af te h
 
 >[!SUCCESS]
 >
->U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
+>U hebt de app voor pushberichten nu ingeschakeld met Journey Optimizer en de Journey Optimizer-extensie voor Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[creeer en verzend in-app berichten](journey-optimizer-inapp.md)**
