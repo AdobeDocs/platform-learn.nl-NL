@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2613'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,9 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
 1. Selecteer **[!UICONTROL Continue]**.
    ![ vorm nieuwe sleutel ](assets/mobile-push-apple-dev-config-key.png)
 1. Controleer de configuratie en selecteer **[!UICONTROL Register]** .
-1. Download de persoonlijke sleutel van `.p8` . Het wordt gebruikt in de kanaalconfiguratie van Journey Optimizer in de volgende oefening.
-1. Noteer de **[!UICONTROL Key ID]** . Deze wordt gebruikt in de Journey Optimizer-kanaalconfiguratie.
-1. Noteer de **[!UICONTROL Team ID]** . Deze wordt gebruikt in de Journey Optimizer-kanaalconfiguratie.
+1. Download de persoonlijke sleutel van `.p8` . Het wordt gebruikt in de volgende oefening wanneer u uw de dupcredentie van Journey Optimizer vormt.
+1. Noteer de **[!UICONTROL Key ID]** . Het wordt gebruikt in de volgende oefening wanneer u uw de dupcredentie van Journey Optimizer vormt.
+1. Noteer de **[!UICONTROL Team ID]** . Het wordt gebruikt in de volgende oefening wanneer u uw de dupcredentie van Journey Optimizer vormt.
    ![ Zeer belangrijke Details ](assets/push-apple-dev-key-details.png)
 
 De extra documentatie kan [ hier ](https://help.apple.com/developer-account/#/devcdfbb56a3) worden gevonden.
@@ -96,19 +96,17 @@ De registratie van de pushreferenties voor de mobiele app is vereist om Adobe te
 
    ![ creeer een nieuwe duw credentiële configuratie in Journey Optimizer ](assets/add-push-credential-ios.png)
 
-1. Van **[!UICONTROL Platform]** drop-down, selecteer het **iOS** werkende systeem:
+1. Van **[!UICONTROL Platform]** drop-down, selecteer het **iOS** werkende systeem.
 
+1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID]** (iOS Bundle ID) in. Bijvoorbeeld com.adobe.luma.tutorial.swiftui
 
-   1. Voer de bundel-id voor de mobiele app in het veld **[!UICONTROL App ID]** (iOS Bundle ID) in. Bijvoorbeeld com.adobe.luma.tutorial.swiftui
+1. Schakel de optie **[!UICONTROL Apply to all sandboxes]** in om deze pushgegevens beschikbaar te maken voor alle sandboxen. Als een specifieke zandbak zijn eigen geloofsbrieven voor het zelfde Platform en toepassings identiteitskaart paar heeft, zullen die zandbakspecifieke geloofsbrieven belangrijkheid nemen.
 
-   1. Schakel de optie **[!UICONTROL Apply to all sandboxes]** in om deze pushgegevens beschikbaar te maken voor alle sandboxen. Als een specifieke zandbak zijn eigen geloofsbrieven voor het zelfde Platform en toepassings identiteitskaart paar heeft, zullen die zandbakspecifieke geloofsbrieven belangrijkheid nemen.
+1. De belemmering en laat vallen uw .p8 **Sleutel van de Authentificatie van het Push- Bericht van Apple** dossier dat van de vorige oefening wordt verkregen.
 
+1. Geef **[!UICONTROL Key ID]** op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van de `p8` auth-toets. Het kan onder het **[!UICONTROL Keys]** lusje in de **Certificaten, Herkenningstekens en de pagina van Profielen** van de de poortpagina&#39;s van de Ontwikkelaar van Apple worden gevonden. (U had dit tijdens de vorige oefening moeten opmerken.)
 
-   1. De belemmering en laat vallen uw .p8 **Sleutel van de Authentificatie van het Push- Bericht van Apple** dossier dat van de vorige oefening wordt verkregen.
-
-   1. Geef **[!UICONTROL Key ID]** op, een tekenreeks van 10 tekens die is toegewezen tijdens het maken van de `p8` auth-toets. Het kan onder het **[!UICONTROL Keys]** lusje in de **Certificaten, Herkenningstekens en de pagina van Profielen** van de de poortpagina&#39;s van de Ontwikkelaar van Apple worden gevonden. (U had dit tijdens de vorige oefening moeten opmerken.)
-
-   1. Geef de **[!UICONTROL Team ID]** op. Identiteitskaart van het Team is een waarde die onder het **1} lusje van het Lidmaatschap {of bij de bovenkant van de het poortpagina van de Ontwikkelaar van Apple kan worden gevonden.** (U had dit tijdens de vorige oefening moeten opmerken.)
+1. Geef de **[!UICONTROL Team ID]** op. Identiteitskaart van het Team is een waarde die onder het **1} lusje van het Lidmaatschap {of bij de bovenkant van de het poortpagina van de Ontwikkelaar van Apple kan worden gevonden.** (U had dit tijdens de vorige oefening moeten opmerken.)
 
    ![ Push credential configuratie in Journey Optimizer ](assets/add-app-config-ios.png)
 
