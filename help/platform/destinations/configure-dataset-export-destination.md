@@ -22,4 +22,4 @@ Leer hoe u een verbinding instelt en de workflow gebruikt voor het exporteren va
 
 Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/activate/export-datasets) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448824/?learn=on&enablevpops&captions=dut)

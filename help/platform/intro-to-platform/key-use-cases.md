@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Bekijk een overzicht van de vijf belangrijkste gebruiksgevallen van Experience Platform: Intelligente re-engagement, &quot;Verlies niet&quot;-campagnes, optimalisatie van klantconversie, contextafhankelijke herkenning en eenmalige waarde voor de levensduurwaarde.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430460?learn=on&enablevpops&captions=dut)
 

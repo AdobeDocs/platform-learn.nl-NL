@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Leer hoe u Adobe Real-Time Customer Data Platform-profielkenmerken in Adobe Target kunt gebruiken voor persoonlijke ervaringen op uw website en mobiele apps. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451899/?learn=on&enablevpops&captions=dut)
 
 >[!CAUTION]
 >

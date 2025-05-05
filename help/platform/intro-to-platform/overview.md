@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Bekijk een overzicht van wat Experience Platform is en de zakelijke uitdagingen die het oplost.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428498?learn=on&enablevpops&captions=dut)
 
 

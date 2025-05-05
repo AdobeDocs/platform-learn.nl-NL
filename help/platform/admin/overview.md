@@ -57,7 +57,7 @@ Leer hoe u gebruikersmachtigingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Ontwikkelaars toevoegen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Ontwikkelaars toevoegen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446404?format=jpeg&nocache=1740173302176&captions=dut" alt="Ontwikkelaars toevoegen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ Leer hoe u gebruikersmachtigingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Op kenmerken gebaseerd toegangsbeheer configureren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Op kenmerken gebaseerd toegangsbeheer configureren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451837?format=jpeg&nocache=1740173302190&captions=dut" alt="Op kenmerken gebaseerd toegangsbeheer configureren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Leer hoe u sandboxomgevingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Sandboxen gebruiken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Sandboxen gebruiken"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430294/?format=jpeg&nocache=1740173302789&captions=dut" alt="Sandboxen gebruiken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Leer hoe u sandboxomgevingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Configuraties kopiëren tussen sandboxen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Configuraties kopiëren tussen sandboxen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446091/?format=jpeg&nocache=1740173302776&captions=dut" alt="Configuraties kopiëren tussen sandboxen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Leer hoe u sandboxomgevingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Pakketten delen over IMS Orgs" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Pakketten delen over IMS Orgs"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443923/?format=jpeg&nocache=1740173302764&captions=dut" alt="Pakketten delen over IMS Orgs"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

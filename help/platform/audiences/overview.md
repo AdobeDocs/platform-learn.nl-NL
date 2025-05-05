@@ -29,7 +29,7 @@ Meer informatie over het publiek in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Inleiding tot het Poort van het publiek en Samenstelling" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Inleiding tot het Poort van het publiek en Samenstelling"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432431/?format=jpeg&nocache=1740173577252&captions=dut" alt="Inleiding tot het Poort van het publiek en Samenstelling"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ Meer informatie over het publiek in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Soorten publiek uploaden naar Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Soorten publiek uploaden naar Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432429/?format=jpeg&nocache=1740173577237&captions=dut" alt="Soorten publiek uploaden naar Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ Meer informatie over het publiek in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Een federatieve publiekscompositie maken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Een federatieve publiekscompositie maken"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448584/?format=jpeg&nocache=1740173579467&captions=dut" alt="Een federatieve publiekscompositie maken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

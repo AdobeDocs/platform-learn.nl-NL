@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u kenmerken van derden kunt verzamelen in [!DNL Adobe Experience Platform Web SDK] en uw onsite ervaring kunt aanpassen aan onbekende bezoekers met behulp van de herkenning van bezoekers met instructies voor partners. Voor meer informatie, gelieve te bezoeken de [ partner-gesteunde bezoekerserkenning van het Gebruik om onsite ervaringen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=nl-NL) documentatie te personaliseren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449258/?learn=on&enablevpops&captions=dut)

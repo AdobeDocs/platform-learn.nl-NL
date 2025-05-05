@@ -20,4 +20,4 @@ Leer hoe u kunt controleren of de machtigingsinstellingen correct zijn toegepast
 >
 > Starten is nu **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443792/?learn=on&enablevpops&captions=dut)

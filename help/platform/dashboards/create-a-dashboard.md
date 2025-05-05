@@ -23,4 +23,4 @@ Leer hoe u een dashboard maakt in Adobe Experience Platform. Voor meer informati
 >
 >De door de gebruiker gedefinieerde dashboardfunctie bevindt zich in bèta. De kenmerken en documentatie van het programma kunnen worden gewijzigd.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3432449/?learn=on&enablevpops&captions=dut)

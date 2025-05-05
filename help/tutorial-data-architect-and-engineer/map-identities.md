@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service helpt je een beter beeld te krijgen v
 **Architecten van Gegevens** zullen identiteiten buiten dit leerprogramma moeten in kaart brengen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3432349?learn=on&enablevpops&captions=dut)
 
 >[!NOTE]
 >

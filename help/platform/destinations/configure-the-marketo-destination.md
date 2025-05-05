@@ -21,5 +21,5 @@ ht-degree: 1%
 
 Leer hoe u de Marketo-bestemming in Adobe Experience Platform configureert, zodat u uw platformsegmenten kunt activeren voor uw Marketo Engage-exemplaar. Voor meer informatie, te zien gelieve de [ documentatie van Profielen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440164?learn=on&enablevpops&captions=dut)
 

@@ -22,4 +22,4 @@ Leer hoe u vervalinstellingen voor pseudoniem-profielen en -gebeurtenissen in Ex
 Met deze instellingen kunnen in plaats van gegevens vervaldatums worden ingesteld voor niet-geverifieerde profielen en de bijbehorende gebeurtenissen. Hierdoor blijft [!DNL Profile Service] relevant voor uw marketing- en advertentiegevallen. Voor meer informatie, gelieve te bezoeken de [ vervaldatum van de Gebeurtenis van de Ervaring ](https://experienceleague.adobe.com/nl/docs/experience-platform/profile/event-expirations) en [ Pseudoniem de gegevensvervaldatum van Profielen ](https://experienceleague.adobe.com/nl/docs/experience-platform/profile/event-expirations) documentatie.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449861?learn=on&enablevpops&captions=dut)

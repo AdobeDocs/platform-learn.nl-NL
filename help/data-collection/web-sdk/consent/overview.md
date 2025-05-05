@@ -20,5 +20,5 @@ Leer hoe het beheer van toestemming in Adobe Experience Platform Web SDK u helpt
 >
 > Starten is nu **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437794/?learn=on&enablevpops&captions=dut)
 

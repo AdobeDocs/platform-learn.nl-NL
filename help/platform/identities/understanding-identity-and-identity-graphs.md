@@ -18,7 +18,7 @@ ht-degree: 9%
 
 Leer over de belangrijkste mogelijkheden van identiteitsresolutie in Adobe Experience Platform-identiteitsinzameling, identiteitsgrafieken, en APIs. Leer hoe de Identiteitsdienst losgemaakte identiteiten verbindt om een verenigbare verbonden ervaring te leveren door een verenigd profiel te construeren. Voor meer informatie, gelieve de [ documentatie van de identiteitsdienst ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3432349?learn=on&enablevpops&captions=dut)
 
 ## Identiteiten configureren
 
@@ -65,7 +65,7 @@ Leer over de belangrijkste mogelijkheden van identiteitsresolutie in Adobe Exper
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444049/?format=jpeg&nocache=1740414776009&captions=dut" alt="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

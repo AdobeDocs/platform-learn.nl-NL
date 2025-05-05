@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, moet u eerst de verbindingen aan die partners maken. Deze video doorloopt dat proces, typisch uitgevoerd door Beheerders.
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444273/?learn=on&enablevpops&captions=dut)
 
 Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/connect-destination) te bezoeken.

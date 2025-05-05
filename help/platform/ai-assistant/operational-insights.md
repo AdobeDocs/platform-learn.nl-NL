@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u AI Assistant gebruikt om operationele inzichten over zakelijke objecten, zoals publiek, datasets, schema&#39;s, bestemmingen en reizen in Adobe Experience Platform, te ontdekken
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444038/?learn=on&enablevpops&captions=dut)

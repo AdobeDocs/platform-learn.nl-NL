@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe u gegevenselementen maakt om waarden op te slaan die uit uw gegevenslaag zijn gehaald en deze beschikbaar te maken voor regels en extensies in uw tag-eigenschap. Voor meer informatie, zie de [ gegevenselementen ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=nl-NL) documentatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430476/?learn=on&enablevpops&captions=dut)

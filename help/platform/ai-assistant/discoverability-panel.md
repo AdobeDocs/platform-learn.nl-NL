@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u het deelvenster voor ontdekkingsmogelijkheden in AI Assistant gebruikt. Voor meer informatie, zie de [ AI Hulp UI gids ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
->[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440968/?learn=on&enablevpops&captions=dut)

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Leer meer over de belangrijkste mogelijkheden van Experience Platform en hoe deze waarde voor uw bedrijf opleveren.
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428510?learn=on&enablevpops&captions=dut)
 

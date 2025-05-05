@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Leer hoe u regels voor een tag-eigenschap stapelt. Bij het stapelen van regels wordt de functie `order` in gebeurtenissen met labelregels gebruikt om regels te ordenen, zodat u schaalbare implementaties van tags kunt beheren. Stel enkele variabelen in een algemene regel in, voeg variabelen toe en overschrijf variabelen in een paginaspecifieke regel en verstuur de gegevens naar de gewenste marketingtoepassing. Voor meer informatie bij regel het opdracht geven tot, zie de [ regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=nl-NL#rule-ordering) documentatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454033/?learn=on&enablevpops&captions=dut)

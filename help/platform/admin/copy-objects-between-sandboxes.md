@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe u configuraties tussen Experience Platform-sandboxen kunt kopiëren met pakketten. Eenvoudig schema&#39;s, datasets, reizen, en meer over uw zandbakken repliceren om versieprocessen en multi-regio/multibrand plaatsingen te steunen. Voor meer gedetailleerde informatie, zie de [ zandbak tooling documentatie ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446091/?learn=on&enablevpops&captions=dut)

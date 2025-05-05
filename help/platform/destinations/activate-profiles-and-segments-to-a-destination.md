@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Leer hoe u profielen en doelgroepen activeert voor bestemmingen in de Real-Time CDP.  Begin dit werkschema in of de bestemmingen of het publiek gebruikersinterface. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/activate/activation-overview) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445816/?learn=on&enablevpops&captions=dut)
 

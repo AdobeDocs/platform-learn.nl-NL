@@ -19,5 +19,5 @@ ht-degree: 2%
 
 Leer hoe u zich abonneert op privacygebeurtenissen om workflows op basis van een taakstatus te automatiseren. Voor meer informatie, gelieve de [ documentatie van de Diensten van de Privacy ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448178?learn=on&enablevpops&captions=dut)
 

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Meer informatie over de toepassingen die native op Adobe Experience Platform zijn gebouwd: Customer Journey Analytics, Real-Time Customer Data Platform, Journey Optimizer en Mix Modeler.
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428521?learn=on&enablevpops&captions=dut)
 

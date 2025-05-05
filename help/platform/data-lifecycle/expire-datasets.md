@@ -22,7 +22,7 @@ Leer hoe te om dataset te plannen schrapt gebruikend de eigenschap van de Hygië
 De schrapping van de gegevensreeks staat gegevenstewards en gegevensingenieurs toe om een vervaldatum voor een dataset te plaatsen. Voor meer informatie, gelieve de [ documentatie van de gegevenshygiëne ](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=nl-NL) te bezoeken.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430309?learn=on&enablevpops&captions=dut)
 
 >[!NOTE]
 >

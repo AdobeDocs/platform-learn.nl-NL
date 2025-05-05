@@ -20,4 +20,4 @@ ht-degree: 0%
 
 In deze video bekijken we hoe AI Assistant in Adobe Experience Platform u kan helpen efficiënter te werken met effectanalyses. Wijzigingen in gezamenlijke objecten, zoals kenmerken en publiek, kunnen workflows voor andere teams verstoren, processen compliceren en belangrijke marketinginspanningen riskeren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441686/?learn=on&enablevpops&captions=dut)

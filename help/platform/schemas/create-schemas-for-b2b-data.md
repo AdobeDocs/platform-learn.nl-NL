@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Leer hoe u schema&#39;s voor uw bedrijfsgegevens maakt met Real-Time Customer Data Platform, B2B edition. Leer meer over de bedrijfsklassen, veldgroepen en naamruimten en hoe u deze automatisch kunt maken in uw account met het Postman-hulpprogramma. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453399?learn=on&enablevpops&captions=dut)

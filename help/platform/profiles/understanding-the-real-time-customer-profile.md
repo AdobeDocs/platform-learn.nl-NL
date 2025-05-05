@@ -104,7 +104,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="Een berekend kenmerk maken voor de som van aankopen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="Een berekend kenmerk maken voor de som van aankopen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443557?format=jpeg&nocache=1740415066775&captions=dut" alt="Een berekend kenmerk maken voor de som van aankopen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +185,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443447/?format=jpeg&nocache=1740415067029&captions=dut" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,7 +218,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="Accountprofielen weergeven" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="Accountprofielen weergeven"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446583?format=jpeg&nocache=1740415067214&captions=dut" alt="Accountprofielen weergeven"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

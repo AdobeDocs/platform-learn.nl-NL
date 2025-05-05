@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Aangezien de platforms die het beheer van klantgegevens vergemakkelijken, moeten de doelgroepen en activeringsprogramma&#39;s zich ook ontwikkelen. Ook de mensen en processen die deze platforms ondersteunen. Een model van het Publiek van excellentie (COE) is al lang de optimale manier om de Platforms van het Beheer van Gegevens (DMPs) te steunen. Om deze video aan te vullen, kunt u ook [ een whitepaper ](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf) downloaden.
 
->[!VIDEO](https://video.tv.adobe.com/v/336938/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457362/?learn=on&enablevpops&captions=dut)
 

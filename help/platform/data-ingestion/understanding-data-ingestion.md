@@ -284,7 +284,7 @@ Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw geg
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Gegevens opnemen via de Adobe Analytics-bronaansluiting" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430252?format=jpeg&nocache=1740414617197&captions=dut" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw geg
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Gegevens van Marketo Engage verzamelen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Gegevens van Marketo Engage verzamelen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451866?format=jpeg&nocache=1740414617186&captions=dut" alt="Gegevens van Marketo Engage verzamelen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

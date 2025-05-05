@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u beginselen voor het minimaliseren van gegevens kunt ondersteunen met de functie data prep van Experience Platform. Leer hoe u alleen de velden die u nodig hebt kunt innemen en hoe u gegevens kunt hashen tijdens inname.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449281/?learn=on&enablevpops&captions=dut)

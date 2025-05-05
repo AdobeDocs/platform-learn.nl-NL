@@ -29,7 +29,7 @@ Leer hoe u de bronconnector voor Salesforce CRM configureert met behulp van de s
 
 Leer hoe te om de bronschakelaar voor Salesforce CRM te vormen gebruikend het malplaatjewerkschema. Deze workflow genereert automatisch elementen die nodig zijn voor het opnemen van Salesforce-gegevens op basis van sjablonen. Het bespaart u vooraf, en de activa kunnen worden aangepast aan uw behoeften. Deze workflow wordt niet ondersteund voor alle CRM-bronconnectors.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453329?learn=on&enablevpops&captions=dut)
 
 Raadpleeg de volgende documentatie voor meer informatie:
 * [ Salesforce creeert een verbindingsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=nl-NL).

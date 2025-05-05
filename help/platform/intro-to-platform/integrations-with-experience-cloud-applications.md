@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Meer informatie over hoe Experience Platform kan integreren met Experience Cloud-toepassingen.
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430390?learn=on&enablevpops&captions=dut)
 
 

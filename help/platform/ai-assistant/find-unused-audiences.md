@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u ongebruikte soorten publiek kunt identificeren met AI Assistant, zodat u ze kunt verwijderen en uw marketingactiviteiten efficiënter kunt maken. Voor meer informatie bij het vragen van de AI Medewerker, zie de [ gids van de Vraag voor AI Medewerker ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441993/?learn=on&enablevpops&captions=dut)

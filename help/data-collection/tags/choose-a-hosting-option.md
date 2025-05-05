@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe u de beste hostingoptie voor uw tagbibliotheek kunt kiezen. Voor meer informatie, zie de [ gastheren ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=nl-NL) documentatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428610/?learn=on&enablevpops&captions=dut)

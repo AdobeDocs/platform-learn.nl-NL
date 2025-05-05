@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446404?learn=on&enablevpops&captions=dut)
 
 >[!ADMIN]
 >

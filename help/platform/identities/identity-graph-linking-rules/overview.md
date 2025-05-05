@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Krijg een overzicht van hoe de grafiek die van de identiteitsgrafiek regels verbindt gegevensarchitecten nauwkeurige klantenprofielen handhaaft en grafiekondergang verhindert. Voor meer informatie, zie de [ identiteitsgrafiek die de documentatie van regels verbindt ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448278/?learn=on&enablevpops&captions=dut)

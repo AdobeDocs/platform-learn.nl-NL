@@ -26,7 +26,7 @@ Sandboxen bieden geïsoleerde omgevingen waarin u functionaliteit kunt uitprober
 **de Architecten van Gegevens 0&rbrace; en** Ingenieurs van Gegevens **zullen zandbakken buiten dit leerprogramma moeten tot stand brengen.**
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over sandboxen:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430294/?learn=on&enablevpops&captions=dut)
 
 ## Vereiste machtigingen
 

@@ -47,7 +47,7 @@ Met de functie voor gegevensuitwisseling kunt u alleen de velden invoeren die u 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Gegevensprep voor gegevenshygiëne" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Gegevensprep voor gegevenshygiëne"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449281/?format=jpeg&nocache=1740251397387&captions=dut" alt="Gegevensprep voor gegevenshygiëne"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ Er zijn veel mogelijkheden om u te helpen de gegevens uit het systeem te verwijd
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Gegevensset van schema verwijderen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Gegevensset van schema verwijderen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430309?format=jpeg&nocache=1740251397716&captions=dut" alt="Gegevensset van schema verwijderen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ Er zijn veel mogelijkheden om u te helpen de gegevens uit het systeem te verwijd
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Pseudoniem profiel en ervaringsverloop" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Pseudoniem profiel en ervaringsverloop"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449861?format=jpeg&nocache=1740251397705&captions=dut" alt="Pseudoniem profiel en ervaringsverloop"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Er zijn veel mogelijkheden om u te helpen de gegevens uit het systeem te verwijd
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Inleiding tot Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Inleiding tot Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445717?format=jpeg&nocache=1740251397727&captions=dut" alt="Inleiding tot Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Er zijn veel mogelijkheden om u te helpen de gegevens uit het systeem te verwijd
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443447/?format=jpeg&nocache=1740251398874&captions=dut" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

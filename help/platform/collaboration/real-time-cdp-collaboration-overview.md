@@ -29,7 +29,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
 
 Ontvang een inleiding aan Adobe Real-Time Collaboration, een speciaal gebouwde toepassing van de gegevenssamenwerking die u high-value publiek laat ontdekken en activeren en meetmogelijkheden gebruikt om tastbare resultaten te drijven.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446807?learn=on&enablevpops&captions=dut)
 
 
 ## Instellen
@@ -47,7 +47,7 @@ Ontvang een inleiding aan Adobe Real-Time Collaboration, een speciaal gebouwde t
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Machtigingen instellen voor Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1742338375674" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452236/?format=jpeg&nocache=1742338375674&captions=dut" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

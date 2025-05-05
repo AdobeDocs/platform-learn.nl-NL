@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Leer hoe met Use Case Playbooks klanten van Real-Time Customer Data Platform en Journey Optimizer sneller tijd-aan-waarde kunnen krijgen. De Playbooks van het Geval van het gebruik is een catalogus van tientallen malplaatjes die veelvoudige industrieën en marketing doelstellingen behandelen. Afspeelboeken genereren technische elementen zoals publiek, reizen en schema&#39;s, die vervolgens kunnen worden aangepast en gepubliceerd naar andere sandboxen. Voor meer informatie, zie de [ documentatie van de Playbooks van het Geval van het Gebruik ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441821/?learn=on&enablevpops&captions=dut)
 
 ## Aan de slag
 
@@ -37,7 +37,7 @@ Leer hoe u uw Platform-account configureert voor Use Case Playbooks en vervolgen
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Een sandbox voor een afspeelboek configureren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Een sandbox voor een afspeelboek configureren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449832/?format=jpeg&nocache=1739379898120&captions=dut" alt="Een sandbox voor een afspeelboek configureren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

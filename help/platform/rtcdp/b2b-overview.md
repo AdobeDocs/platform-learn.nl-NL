@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe handels-aan-zaken (B2B) marketers mensen en rekeningsprofielen over systemen kunnen verenigen en een volledig inzicht in hun klanten krijgen. Voor meer informatie, gelieve te bezoeken de [ documentatie van B2B edition van Real-Time CDP ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451925?learn=on&enablevpops&captions=dut)

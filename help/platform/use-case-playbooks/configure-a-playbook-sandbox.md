@@ -26,4 +26,4 @@ Leer hoe u een sandbox configureert voor Use Case Playbooks. Als u aan de slag w
 
 Voor meer informatie, zie [ begonnen worden met de Hoofdletters van het Gebruik ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=nl-NL).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449832/?learn=on&enablevpops&captions=dut)

@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Leer hoe u een specifiek kenmerk van een profiel kunt bijwerken met de functie `upsert` van Adobe Experience Platform. Wanneer u een record met alleen het specifieke kenmerk in Platform opgeeft, wordt de waarde meestal bijgewerkt, maar worden ook de andere kenmerken bijgewerkt met `null` -waarden. Met `Upsert` kunt u alleen het gewenste kenmerk bijwerken, terwijl de overige velden hun huidige waarden behouden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443447/?learn=on&enablevpops&captions=dut)

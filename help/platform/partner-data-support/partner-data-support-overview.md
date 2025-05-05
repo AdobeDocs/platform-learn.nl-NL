@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Leer hoe [!DNL Real-Time Customer Data Platform] full-funnel marketing gebruikend partnergegevens voor de verrijking van de eerste-partijgegevens en het prospecteren gebruiksgevallen als derdekoekjes blijft verouderd. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449695/?learn=on&enablevpops&captions=dut)

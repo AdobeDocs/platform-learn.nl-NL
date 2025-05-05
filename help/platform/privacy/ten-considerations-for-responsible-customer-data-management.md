@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Vluchtige marktkrachten en uiteenlopende privacyvereisten voor de consument kunnen ontstellende scenario&#39;s voor de digitale markt bieden. Om campagnes aan de rechterkant van regelgeving te houden, hebben marketingteams hun IT-tegenhangers nodig om een gestroomlijnd proces te hebben voor het testen van gegevens in de toekomst — een proces dat iedereen idealiter machtigt om regels voor verantwoord gebruik van consumentengegevens te volgen en te handhaven. Haak van Adobe en Scotiabank Digital over belangrijke overwegingen voor verantwoord gegevensbeheer.
 
->[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457053/?learn=on&enablevpops&captions=dut)
