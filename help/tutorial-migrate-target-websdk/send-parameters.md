@@ -113,7 +113,7 @@ In de onderstaande tabel wordt beschreven hoe de voorbeeldparameters opnieuw wor
 
 | Voorbeeld van parameter at.js | Platform Web SDK, optie | Notities |
 | --- | --- | --- |
-| `at_property` | N.v.t. | De tokens van het bezit worden gevormd in [ datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) en kunnen niet in de `sendEvent` vraag worden geplaatst. |
+| `at_property` | N.v.t. | De tokens van het bezit worden gevormd in [ datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=nl-NL#target) en kunnen niet in de `sendEvent` vraag worden geplaatst. |
 | `pageName` | `xdm.web.webPageDetails.name` | Alle parameters van Target mbox moeten worden doorgegeven als onderdeel van het `xdm` -object en moeten in overeenstemming zijn met een schema met behulp van de XDM ExperienceEvent-klasse. Mbox-parameters kunnen niet worden doorgegeven als onderdeel van het `data` -object. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Alle parameters van het doelprofiel moeten worden doorgegeven als onderdeel van het `data` -object en vooraf ingesteld met `profile.` om correct te worden toegewezen. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Gereserveerde parameter die wordt gebruikt voor de functie Categorie-affiniteit van Doel die moet worden doorgegeven als onderdeel van het `data` -object. |
@@ -122,11 +122,11 @@ In de onderstaande tabel wordt beschreven hoe de voorbeeldparameters opnieuw wor
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Parameters voor aangepaste entiteiten worden gebruikt voor het bijwerken van de Recommendations-productcatalogus. Deze aangepaste parameters moeten worden doorgegeven als onderdeel van het object `data` . |
 | `cartIds` | `data.__adobe.target.cartIds` | Wordt gebruikt voor op kaarten gebaseerde aanbevelingen-algoritmen van Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Wordt gebruikt om te voorkomen dat bepaalde id&#39;s van entiteiten terugkeren in een ontwerp met aanbevelingen. |
-| `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. Namespace voor klantidentiteitskaart te gebruiken moet in de [ configuratie van het Doel van de datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html) worden gespecificeerd. |
+| `mbox3rdPartyId` | Instellen in het object `xdm.identityMap` | Wordt gebruikt voor het synchroniseren van doelprofielen op verschillende apparaten en klantkenmerken. Namespace voor klantidentiteitskaart te gebruiken moet in de [ configuratie van het Doel van de datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=nl-NL) worden gespecificeerd. |
 | `orderId` | `xdm.commerce.order.purchaseID` | Wordt gebruikt voor het identificeren van een unieke volgorde voor het bijhouden van doelconversie. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Wordt gebruikt voor het bijhouden van ordertotalen voor doelconversie- en optimalisatiedoelstellingen. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br> OF <br> `xdm.productListItems[0-n].SKU` | Wordt gebruikt voor het bijhouden van doelconversie en aanbevelingen. Verwijs naar de [ sectie van entiteitparameters ](#entity-parameters) hieronder voor details. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activiteitendoel scoren. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Gebruikt voor het [ douane die ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=nl-NL) activiteitendoel scoren. |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijz
 
 ![ Toewijzing aan een XDM gebied in een XDM gegevenselement van Objecten ](assets/params-tags-pageName.png){zoomable="yes"}
 
-En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL#merged-objects)):
 
 ![ die een XDM objecten gegevenselement in een Send gebeurtenis ](assets/params-tags-sendEvent.png){zoomable="yes"} omvat
 
@@ -223,7 +223,7 @@ Maak in tags eerst een gegevenselement om het object `data.__adobe.target` te de
 
 ![ die uw gegevensvoorwerp in een gegevenselement bepalen ](assets/params-tags-dataObject.png){zoomable="yes"}
 
-En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL#merged-objects)):
 
 ![ Omvat een gegevensvoorwerp in een Send gebeurtenis ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL actio
 
 ## Parameters entiteit
 
-Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Alle [ entiteitparameters ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) die door at.js worden gesteund worden ook gesteund door het Web SDK van het Platform. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder het `data.__adobe.target` -object in de opdrachtpayload van de opdracht Platform Web SDK `sendEvent` .
+Entiteitsparameters worden gebruikt om gedragsgegevens en aanvullende catalogusinformatie voor Target Recommendations door te geven. Alle [ entiteitparameters ](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL) die door at.js worden gesteund worden ook gesteund door het Web SDK van het Platform. Net als profielparameters moeten alle entiteitsparameters worden doorgegeven onder het `data.__adobe.target` -object in de opdrachtpayload van de opdracht Platform Web SDK `sendEvent` .
 
 Entiteiteits-parameters voor een specifiek item moeten vooraf met `entity.` worden vastgelegd om de gegevens correct vast te leggen. De gereserveerde `cartIds` - en `excludedIds` -parameters voor aanbevelingen-algoritmen mogen niet vooraf worden ingesteld en de waarde voor beide moet een door komma&#39;s gescheiden lijst met entiteit-id&#39;s bevatten.
 
@@ -277,7 +277,7 @@ Maak in tags eerst een gegevenselement om het object `data.__adobe.target` te de
 
 ![ die uw gegevensvoorwerp in een gegevenselement bepalen ](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw gegevensvoorwerp in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL#merged-objects)):
 
 ![ Omvat een gegevensvoorwerp in een Send gebeurtenis ](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ Gebruik in tags eerst een gegevenselement [!UICONTROL XDM object] om toe te wijz
 
 ![ Toewijzing aan een XDM gebied in een XDM gegevenselement van Objecten ](assets/params-tags-purchase.png){zoomable="yes"}
 
-En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+En dan omvat uw [!UICONTROL XDM object] in uw [!UICONTROL Send event] [!UICONTROL action] (het veelvoud [!UICONTROL XDM objects] kan [ worden samengevoegd ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=nl-NL#merged-objects)):
 
 ![ die een XDM objecten gegevenselement in een Send gebeurtenis ](assets/params-tags-sendEvent-purchase.png){zoomable="yes"} omvat
 

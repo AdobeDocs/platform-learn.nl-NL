@@ -16,7 +16,7 @@ ht-degree: 10%
 
 # Overzicht van gegevensinvoer
 
-Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw gegevens samenbrengen tot één open en schaalbaar platform voor het beheer van realtime klantprofielen. Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) te bezoeken.
+Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw gegevens samenbrengen tot één open en schaalbaar platform voor het beheer van realtime klantprofielen. Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 

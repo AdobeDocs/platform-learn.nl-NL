@@ -17,7 +17,7 @@ Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
 De borging, die formeel Project Griffon wordt genoemd, wordt ontworpen om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen in uw mobiele app dient.
 
-Met de optie Betrouwbaarheid kunt u onbewerkte SDK-gebeurtenissen controleren die zijn gegenereerd door de Adobe Experience Platform Mobile SDK. Alle gebeurtenissen die door de SDK worden verzameld, zijn beschikbaar voor inspectie. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren in de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over de [ Verzekering ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) in de productdocumentatie.
+Met de optie Betrouwbaarheid kunt u onbewerkte SDK-gebeurtenissen controleren die zijn gegenereerd door de Adobe Experience Platform Mobile SDK. Alle gebeurtenissen die door de SDK worden verzameld, zijn beschikbaar voor inspectie. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren in de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over de [ Verzekering ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=nl-NL) in de productdocumentatie.
 
 
 ## Vereisten
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) in de gids van de Verzekering voor meer informatie.
+Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=nl-NL) in de gids van de Verzekering voor meer informatie.
 
 ## Implementeren
 
@@ -169,7 +169,7 @@ In uw browser:
 
          ![ betrouwbaarheidsgebeurtenissen ](assets/assurance-events.png)
 
-Als u in om het even welke uitdagingen loopt, herzie [ technisch ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}  en [ algemene documentatie ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"} .
+Als u in om het even welke uitdagingen loopt, herzie [ technisch ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}  en [ algemene documentatie ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=nl-NL){target="_blank"} .
 
 
 ## Extensies verifiëren

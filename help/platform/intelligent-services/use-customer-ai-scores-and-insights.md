@@ -17,7 +17,7 @@ ht-degree: 51%
 
 # AI-scores en -inzichten van klant gebruiken
 
-Leer hoe u klanten kunt converteren en behouden met de AI-garantiescore en -inzichten van klanten. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html) te bezoeken.
+Leer hoe u klanten kunt converteren en behouden met de AI-garantiescore en -inzichten van klanten. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
 

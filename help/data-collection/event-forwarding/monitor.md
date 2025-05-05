@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Gebeurtenis controleren door:sturen
 
-Leer hoe te om gebeurtenis te controleren die in de interface van de Inzameling van Gegevens door:sturen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) door:sturen.
+Leer hoe te om gebeurtenis te controleren die in de interface van de Inzameling van Gegevens door:sturen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)

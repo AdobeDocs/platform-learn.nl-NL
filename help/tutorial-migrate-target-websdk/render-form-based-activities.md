@@ -100,7 +100,7 @@ De SDK van het Web van het Platform biedt grotere controle voor het toepassen va
 | `replaceHtml` | De container verwijderen en vervangen door de aanbieding | Nee | Ja |
 | `appendHtml` | Hiermee wordt het aanbod toegevoegd na de opgegeven kiezer | Nee | Ja |
 
-Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) over het teruggeven van inhoud gebruikend het Web SDK van het Platform voor extra het teruggeven opties en voorbeelden.
+Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=nl-NL) over het teruggeven van inhoud gebruikend het Web SDK van het Platform voor extra het teruggeven opties en voorbeelden.
 
 ## Voorbeeld van implementatie
 

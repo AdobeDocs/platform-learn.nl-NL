@@ -39,17 +39,17 @@ Ook wil Adobe dat het voor klanten gemakkelijk is om de fiets online te bestelle
 
 ### Adobe Experience Manager
 
-- [ Overzicht van de Automatisering van de Inhoud met de diensten van het Creative Cloud ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
-- [ Aan de slag met AEM Commerce as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [ Inleiding aan Adobe Experience Manager als Koploze CMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [ Overzicht van de Automatisering van de Inhoud met de diensten van het Creative Cloud ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=nl-NL)
+- [ Aan de slag met AEM Commerce as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=nl-NL)
+- [ Inleiding aan Adobe Experience Manager als Koploze CMS ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=nl-NL)
 
 ### Adobe Express
 
-- [ Begonnen het worden met de malplaatjes van de Adobe Express ](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [ Begonnen het worden met de malplaatjes van de Adobe Express ](https://helpx.adobe.com/nl/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [ Documentatie van het Product Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=en)
+- [ Documentatie van het Product Adobe Workfront ](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=nl-NL)
 - [ Workfront voor AEM Assets ](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

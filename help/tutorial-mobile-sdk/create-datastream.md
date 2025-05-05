@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom in Experience Platform maakt.
 
-Een gegevensstroom is een server-zijconfiguratie op de Edge Network van het Platform. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan de Edge Network van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) of deze [ video ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+Een gegevensstroom is een server-zijconfiguratie op de Edge Network van het Platform. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan de Edge Network van het Platform aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=nl-NL) of deze [ video ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=nl-NL).
 
 ![Architectuur](assets/architecture.png)
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Voor meer informatie over gegevensstroommontages, herzie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+>Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Voor meer informatie over gegevensstroommontages, herzie de documentatie [ hier ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=nl-NL).
 
 Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, werkgebied en productie). Als u Platform Mobile SDK met op platform-gebaseerde toepassingen zoals Adobe Real-time Customer Data Platform of Adobe Journey Optimizer gebruikt, zou u zeker moeten zijn om die gegevensstromen in de aangewezen zandbakken tot stand te brengen.
 

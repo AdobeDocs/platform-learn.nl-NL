@@ -22,6 +22,6 @@ In deze video worden gebruikers door twee geavanceerde gebruiksscenario&#39;s ge
 1. De workflow gebruiken om referentieobjecten te maken. 
 1. De referentieobjecten worden gekopieerd naar een bestaande implementatie.
 
-Voor meer informatie over het snelle begin van het begin van de omzettingen van Meta API, bezoek [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start).
+Voor meer informatie over het snelle begin van het begin van de omzettingen van Meta API, bezoek [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=nl-NL#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

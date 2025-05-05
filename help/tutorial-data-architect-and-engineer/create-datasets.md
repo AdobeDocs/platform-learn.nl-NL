@@ -128,7 +128,7 @@ U kunt terug naar het **[!UICONTROL Datasets]** scherm in het gebruikersinterfac
 
 ## Aanvullende bronnen
 
-* [ documentatie van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)
+* [ documentatie van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=nl-NL)
 * [ Datasets API (deel van de Dienst van de Catalogus) verwijzing ](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
 
 Nu al onze schema&#39;s, identiteiten, en datasets op zijn plaats zijn, kunnen wij [ hen voor het Profiel van de Klant in real time ](enable-profiles.md) toelaten.

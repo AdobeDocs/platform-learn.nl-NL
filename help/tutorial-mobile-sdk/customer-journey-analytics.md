@@ -18,7 +18,7 @@ De mobiele gegevens van de toepassingsgebeurtenis, die u verzamelde en naar de E
 
 In tegenstelling tot Adobe Analytics, gebruikt Customer Journey Analytics ** gegevens van datasets die in Experience Platform worden gecreeerd. Gegevens worden niet rechtstreeks naar de Customer Journey Analytics verzonden met de Adobe Experience Platform Mobile SDK, maar de gegevens worden naar gegevenssets verzonden. De verbindingen worden dan gevormd in Customer Journey Analytics om de datasets te selecteren u in uw het melden en analyseprojecten zult gebruiken.
 
-Deze les in de zelfstudie is gericht op het rapporteren en analyseren van de gegevens die zijn vastgelegd in de zelfstudie-app Luma. Één van de unieke mogelijkheden van Customer Journey Analytics is het combineren van gegevens uit veelvoudige bronnen (CRM, verkooppunt, loyaliteitstoepassing, call-center) en kanalen (Web, mobiel, off-line) voor het verlenen van diepe inzichten in klantenreizen. Dat vermogen is voorbij het werkingsgebied van deze les. Zie [ overzicht van de Customer Journey Analytics ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) voor meer informatie.
+Deze les in de zelfstudie is gericht op het rapporteren en analyseren van de gegevens die zijn vastgelegd in de zelfstudie-app Luma. Één van de unieke mogelijkheden van Customer Journey Analytics is het combineren van gegevens uit veelvoudige bronnen (CRM, verkooppunt, loyaliteitstoepassing, call-center) en kanalen (Web, mobiel, off-line) voor het verlenen van diepe inzichten in klantenreizen. Dat vermogen is voorbij het werkingsgebied van deze les. Zie [ overzicht van de Customer Journey Analytics ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-overview/cja-overview) voor meer informatie.
 
 
 ## Vereisten
@@ -113,7 +113,7 @@ Nadat de verslagen van de datasets aan Customer Journey Analytics zijn toegevoeg
 
 Een gegevensmening is een container specifiek voor Customer Journey Analytics die u laat bepalen hoe te om gegevens van een verbinding te interpreteren. U kunt standaard en schemagebieden van om het even welke datasets vormen die u in uw Verbinding als componenten (afmetingen, metriek) in Analysis Workspace hebt bepaald.
 
-Een gegevensweergave in Customer Journey Analytics biedt een enorme mate van flexibiliteit bij het correct instellen en definiëren van de gegevens van uw verbinding. In deze zelfstudie gebruikt u alleen de functionaliteit die vereist is voor uw rapportage en analyse. Zie [ meningen van Gegevens ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) voor meer informatie.
+Een gegevensweergave in Customer Journey Analytics biedt een enorme mate van flexibiliteit bij het correct instellen en definiëren van de gegevens van uw verbinding. In deze zelfstudie gebruikt u alleen de functionaliteit die vereist is voor uw rapportage en analyse. Zie [ meningen van Gegevens ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-dataviews/data-views) voor meer informatie.
 
 
 Uw gegevensweergave maken:
@@ -213,7 +213,7 @@ U hebt de gegevensweergave gedefinieerd en alles is op zijn plaats om uw rapport
 
 ## Een project maken
 
-Workspace-projecten worden in Customer Journey Analytics gebruikt om rapporten en visualisaties samen te stellen. Er zijn vele mogelijkheden om uitvoerige rapporten en het in dienst nemen van visualisaties te bouwen, maar dit is buiten het werkingsgebied van deze zelfstudie. Zie [ het Overzicht van Workspace ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) en [ een nieuw project ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) voor meer informatie bouwen.
+Workspace-projecten worden in Customer Journey Analytics gebruikt om rapporten en visualisaties samen te stellen. Er zijn vele mogelijkheden om uitvoerige rapporten en het in dienst nemen van visualisaties te bouwen, maar dit is buiten het werkingsgebied van deze zelfstudie. Zie [ het Overzicht van Workspace ](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) en [ een nieuw project ](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) voor meer informatie bouwen.
 
 In deze sectie van de les, creeert u een project dat rapporten en visualisaties over toont:
 

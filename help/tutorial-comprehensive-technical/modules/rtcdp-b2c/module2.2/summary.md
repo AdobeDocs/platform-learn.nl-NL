@@ -38,7 +38,7 @@ Laat marketers meteen aan de slag met AI/ML en begin marketingrendement te verbe
 
 ## Bekijk dit
 
-- Intelligent het Overzicht van de Diensten: [ https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Intelligent het Overzicht van de Diensten: [ https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=nl-NL](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=nl-NL)
 
 [Terug naar module 2.2](./intelligent-services.md)
 

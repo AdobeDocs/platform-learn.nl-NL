@@ -29,7 +29,7 @@ Laten we de voordelen van het gebruik van Adobe Journey Optimizer en Adobe Exper
 - Tech Blog: [ Adobe Journey Optimizer in een Wereld Omnichannel ](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
 - Tech Blog: [ die de Macht van de Nieuwe Dienst van Adobe Journey Optimizer van Adobe aantoont om Persoonlijke Ervaringen Omnichannel in Echt - tijd ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
 - Zelfstudies: [ Zelfstudies voor Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=html?lang=nl)
-- De Documentatie van Experience Platform: [ Hulp van Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html)
+- De Documentatie van Experience Platform: [ Hulp van Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=nl-NL)
 
 ## Volgende stappen
 

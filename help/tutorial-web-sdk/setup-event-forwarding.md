@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe te om gebeurtenis te gebruiken die met de gegevens van SDK van het Web van Adobe Experience Platform door:sturen.
 
-Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers rechtstreeks van de Edge Network van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [ Gebeurtenis die overzicht ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
+Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Het door:sturen van gebeurtenissen geeft u de capaciteit om gegevens naar derde, niet-Adobe verkopers rechtstreeks van de Edge Network van Adobe Experience Platform in plaats van traditionele cliënt-zijbrowser te verzenden. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [ Gebeurtenis die overzicht ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
 
 
 ![ SDK van het Web en gebeurtenis die diagram ](assets/dc-websdk-eventforwarding.png) door:sturen
@@ -24,7 +24,7 @@ Om gebeurtenis te gebruiken die in Adobe Experience Platform door:sturen, moeten
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [ Adobe Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]

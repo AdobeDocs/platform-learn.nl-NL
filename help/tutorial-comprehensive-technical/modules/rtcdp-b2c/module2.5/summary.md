@@ -31,7 +31,7 @@ Dankzij Adobe Experience Platform Data Collection, kunt u als merk nu eindelijk 
 
 - Tech Blog: [ Oplossende Punten van het Pijn van het Pan van de Implementatie met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Tech Blog: [ Van de Verhoging Prestaties van de Website met het Web SDK van Adobe Experience Platform en Edge Network ](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- Documentatie: [ Zijoverzicht van de Server van de Gegevensverzameling van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- Documentatie: [ Zijoverzicht van de Server van de Gegevensverzameling van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL#server-side-info)
 - Video: [ voer de Server van de Gegevensverzameling van Edge en van Adobe Experience Platform uit gebruikend een niet-Adobe Tag Management Oplossing ](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Ga terug naar Module 2.5](./aep-data-collection-ssf.md)

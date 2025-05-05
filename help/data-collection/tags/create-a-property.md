@@ -16,7 +16,7 @@ ht-degree: 31%
 
 # Een tag-eigenschap maken
 
-Leer hoe u tag-eigenschappen kunt maken om de marketinglabels op uw website te beheren. Voor meer informatie, zie de [ eigenschappen ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) documentatie.
+Leer hoe u tag-eigenschappen kunt maken om de marketinglabels op uw website te beheren. Voor meer informatie, zie de [ eigenschappen ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=nl-NL) documentatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
 

@@ -20,6 +20,6 @@ In deze video wordt getoond hoe u een schema van de ene sandbox naar een andere 
 
 >[!TIP]
 >
->Eind 2023 werd een veel eenvoudiger, op interface gericht proces geïntroduceerd om schema&#39;s en andere voorwerpen tussen zanddozen te bewegen die wij in plaats daarvan adviseren gebruiken. Gelieve te zien [ voorwerpen van het Exemplaar tussen zandbakken ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html).
+>Eind 2023 werd een veel eenvoudiger, op interface gericht proces geïntroduceerd om schema&#39;s en andere voorwerpen tussen zanddozen te bewegen die wij in plaats daarvan adviseren gebruiken. Gelieve te zien [ voorwerpen van het Exemplaar tussen zandbakken ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)

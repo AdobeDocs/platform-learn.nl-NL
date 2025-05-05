@@ -18,7 +18,7 @@ ht-degree: 61%
 
 # Demo van Adobe Experience Platform Web SDK en Edge Network
 
-Zie Adobe Experience Platform Web SDK en Edge Network in actie, met één enkele vraag aan Adobe die gegevens naar Experience Platform, Analytics, Audience Manager, en Doel verzendt. Voor meer informatie, gelieve de [ documentatie van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) te bezoeken.
+Zie Adobe Experience Platform Web SDK en Edge Network in actie, met één enkele vraag aan Adobe die gegevens naar Experience Platform, Analytics, Audience Manager, en Doel verzendt. Voor meer informatie, gelieve de [ documentatie van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 

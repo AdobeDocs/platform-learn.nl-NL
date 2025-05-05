@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Op kenmerken gebaseerd toegangsbeheer configureren
 
-Leer hoe te om op attribuut-gebaseerde toegangsbeheer te vormen om toegang tot specifieke middelen van Experience Platform te beperken. Voor meer informatie, gelieve de [ documentatie van de toegangscontrole ](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html) te bezoeken.
+Leer hoe te om op attribuut-gebaseerde toegangsbeheer te vormen om toegang tot specifieke middelen van Experience Platform te beperken. Voor meer informatie, gelieve de [ documentatie van de toegangscontrole ](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)

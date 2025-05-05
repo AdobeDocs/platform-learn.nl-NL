@@ -44,8 +44,8 @@ Nadat u dit hebt voltooid, kunt u:
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
 > * Platform launch (de Kant van de Cliënt) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Nadat u dit hebt voltooid, kunt u:
 
 In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen hebt om de oefeningen te voltooien. Als dat niet het geval is, moet u mogelijk contact opnemen met de beheerder van het Experience Cloud om toegang aan te vragen.
 
-* Voor tags moet u toestemming hebben om omgevingen te ontwikkelen, goed te keuren, Publish, te beheren en extensies te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Voor tags moet u toestemming hebben om omgevingen te ontwikkelen, goed te keuren, Publish, te beheren en extensies te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL).
 * Voor Adobe Analytics moet u weten welke trackingserver u gebruikt om deze zelfstudie te voltooien.
 * Voor Audience Manager, moet u uw Audience Manager Subdomain (ook gekend als &quot;Partner Naam&quot;identiteitskaart van de Partner,&quot;of &quot;Partner Subdomain&quot;) kennen
 
@@ -125,7 +125,7 @@ In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandel
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/nl-NL/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Overzicht van uniale schema&#39;s
 
-Deze video geeft u een overzicht van verenigingsschema&#39;s die door Adobe Experience Platform in real time het Profiel van de Klant worden gebruikt. Met Unieschema&#39;s kunt u een samenvoeging zien van alle velden in schema&#39;s die dezelfde klasse delen. In real time het Profiel van de Klant gebruikt de verenigingsschema&#39;s om een holistische mening van elke individuele klant tot stand te brengen. Voor meer informatie, gelieve de [ documentatie van het unieschema ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html) te bezoeken.
+Deze video geeft u een overzicht van verenigingsschema&#39;s die door Adobe Experience Platform in real time het Profiel van de Klant worden gebruikt. Met Unieschema&#39;s kunt u een samenvoeging zien van alle velden in schema&#39;s die dezelfde klasse delen. In real time het Profiel van de Klant gebruikt de verenigingsschema&#39;s om een holistische mening van elke individuele klant tot stand te brengen. Voor meer informatie, gelieve de [ documentatie van het unieschema ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

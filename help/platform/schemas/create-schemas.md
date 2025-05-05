@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Schema&#39;s maken
 
-In deze video ziet u hoe u in Adobe Experience Platform schema&#39;s kunt maken met behulp van de klasse Individueel profiel XDM en verschillende veldgroepen. Voor gedetailleerde productdocumentatie, zie [ tot een schema in UI ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) leiden en [ tot een schema met API ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html).
+In deze video ziet u hoe u in Adobe Experience Platform schema&#39;s kunt maken met behulp van de klasse Individueel profiel XDM en verschillende veldgroepen. Voor gedetailleerde productdocumentatie, zie [ tot een schema in UI ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=nl-NL) leiden en [ tot een schema met API ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on&enablevpops)

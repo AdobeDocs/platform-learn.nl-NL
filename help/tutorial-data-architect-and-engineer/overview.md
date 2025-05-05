@@ -48,7 +48,7 @@ Adobe Experience Platform is een technisch platform dat u helpt marketingdoelste
 
 ## Voorwaarden
 
-* U hebt de [ Inleiding aan playlist van Adobe Experience Platform ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) op Experience League bekeken en bent vertrouwd met de mogelijkheden van het Platform
+* U hebt de [ Inleiding aan playlist van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction) op Experience League bekeken en bent vertrouwd met de mogelijkheden van het Platform
 * U hebt toegang tot een account die is ingericht voor Adobe Experience Platform (of een op een platform gebaseerde toepassing zoals Real-Time CDP of Journey Optimizer) en gegevensverzameling (voorheen Starten).
 * U bent een Beheerder van het Systeem van die rekening of kan één [ hebben gebruikerstoestemmingen ](configure-permissions.md) voor u vormen.
 
@@ -58,7 +58,7 @@ Deze zelfstudie combineert taken voor zowel gegevensengineers als gegevensarchit
 
 Terwijl u tijdens deze zelfstudie verschillende platformelementen maakt, kunt u proberen om de namen die ik aanbeveel zoveel mogelijk te gebruiken. Nochtans, zijn er een paar high-level elementennamen die u kunt willen aanpassen voor het geval dat er veelvoudige mensen bij uw organisatie zijn die deze zelfstudie gelijktijdig nemen. U kunt bijvoorbeeld de sandbox Platform de naam geven van &#39;&#39;Luma Tutorial Platform - Ignatius J Reilly&#39;&#39; in plaats van alleen &#39;&#39;Luma Tutorial Platform&#39;&#39;.
 
-Als u geplakt wordt, probeer eerst de instructies opnieuw te lezen, en dan het ![ Logboek en de kwestie ](https://experienceleague.adobe.com/assets/img/feedback.svg) verbinding op sidebar van elke pagina te gebruiken om me te contacteren.
+Als u geplakt wordt, probeer eerst de instructies opnieuw te lezen, en dan het ![ Logboek en de kwestie ](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=nl-NL) verbinding op sidebar van elke pagina te gebruiken om me te contacteren.
 
 ## Technische noten
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Valideer de implementaties van SDK van het Web met de Verzekering van het Experience Platform
 
-Adobe Experience Platform Assurance is een functie waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet. Lees meer over [ Verzekering van de Adobe ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance is een functie waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet. Lees meer over [ Verzekering van de Adobe ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home).
 
 
 ## Leerdoelstellingen

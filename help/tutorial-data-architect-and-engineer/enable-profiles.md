@@ -26,7 +26,7 @@ Met het Profiel van de Klant in real time, kunt u een holistische mening van elk
 
 Zo verbazend zoals al dat klinkt, te hoeven u niet om *elk van uw gegevens* voor profiel te activeren. In feite, zou u slechts de gegevens moeten toelaten u voor activeringsgebruiksgevallen nodig hebt. Laat gegevens toe die u voor de gevallen van het marketinggebruik wilt gebruiken, vraag centrumintegratie, etc., waar u snelle toegang tot een robuust klantenprofiel nodig hebt. Als u gegevens alleen uploadt voor analyse, moet dit waarschijnlijk niet worden ingeschakeld voor profiel.
 
-Er zijn belangrijke [ garanties voor de gegevens van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) die u zou moeten herzien wanneer het beslissen welke van uw eigen gegevens u voor profiel zou moeten toelaten.
+Er zijn belangrijke [ garanties voor de gegevens van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=nl-NL) die u zou moeten herzien wanneer het beslissen welke van uw eigen gegevens u voor profiel zou moeten toelaten.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

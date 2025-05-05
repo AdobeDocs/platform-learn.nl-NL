@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van Audience Rule builder
 
-Krijg een inleiding aan de de regelbouwer van het Publiek in Experience Platform, met inbegrip van de bouwstenen van publiek, het gebruikersinterface, en een paar uiteinden bij het worden begonnen met het bouwen van publieksregels. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+Krijg een inleiding aan de de regelbouwer van het Publiek in Experience Platform, met inbegrip van de bouwstenen van publiek, het gebruikersinterface, en een paar uiteinden bij het worden begonnen met het bouwen van publieksregels. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

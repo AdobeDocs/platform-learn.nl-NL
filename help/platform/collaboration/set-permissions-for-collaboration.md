@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Machtigingen instellen voor Real-Time CDP Collaboration
 
-Leer hoe u de benodigde machtigingen voor toegang tot en gebruik van Real-Time CDP Collaboration instelt. Voor gedetailleerde documentatie, ga naar [ overzicht van het Toegangsbeheer ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
+Leer hoe u de benodigde machtigingen voor toegang tot en gebruik van Real-Time CDP Collaboration instelt. Voor gedetailleerde documentatie, ga naar [ overzicht van het Toegangsbeheer ](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 

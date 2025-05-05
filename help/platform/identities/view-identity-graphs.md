@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Identiteitsgrafieken weergeven
 
-Leer hoe u met de viewerfunctie voor identiteitsgrafieken identiteitsgrafieken kunt zoeken, verkennen en filteren voor validatie en foutopsporing. Voor meer informatie, gelieve de [ documentatie van de kijker van de identiteitsgrafiek ](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html) te bezoeken.
+Leer hoe u met de viewerfunctie voor identiteitsgrafieken identiteitsgrafieken kunt zoeken, verkennen en filteren voor validatie en foutopsporing. Voor meer informatie, gelieve de [ documentatie van de kijker van de identiteitsgrafiek ](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
 

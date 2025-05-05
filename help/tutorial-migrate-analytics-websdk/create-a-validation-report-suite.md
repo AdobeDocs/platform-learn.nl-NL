@@ -35,5 +35,5 @@ Afhankelijk van de grootte en complexiteit van uw analytische implementatie kan 
 
 >[!TIP]
 >
->Voor een videolooppas-door van het creëren van rapportsuites, zie [ Begrip en het creëren van rapportsuites ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} .
+>Voor een videolooppas-door van het creëren van rapportsuites, zie [ Begrip en het creëren van rapportsuites ](https://experienceleague.adobe.com/nl/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"} .
 

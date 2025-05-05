@@ -89,7 +89,7 @@ Zoals vermeld, kunt u verschillende Persoon IDs voor elke dataset plaatsen. Dit 
 
 De naam van het veld Person-id is niet belangrijk, zolang de waarde in de velden Person-id overeenkomt. Als de persoon-id bijvoorbeeld `email` is in een gegevensset en `emailAddress` in een andere gegevensset en `dnb-bootcamp@adobe.com` dezelfde waarde is voor het veld Persoon-id in beide gegevenssets, kan CJA de gegevens naasten.
 
-Op dit moment zijn er nog enkele andere beperkingen, zoals het aanstichten van het anonieme gedrag aan gekend. Gelieve te herzien FAQs hier: [ Veelgestelde vragen ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Op dit moment zijn er nog enkele andere beperkingen, zoals het aanstichten van het anonieme gedrag aan gekend. Gelieve te herzien FAQs hier: [ Veelgestelde vragen ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=nl-NL).
 
 ### De gegevens tikken met de persoon-id
 

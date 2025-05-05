@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een eigenschap voor het doorsturen van gebeurtenissen maken
 
-Leer hoe te om een gebeurtenis-door:sturen bezit in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve te bezoeken [ een gebeurtenis creëren die bezitsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property) door:sturen.
+Leer hoe te om een gebeurtenis-door:sturen bezit in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve te bezoeken [ een gebeurtenis creëren die bezitsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=nl-NL#create-an-event-forwarding-property) door:sturen.
 
 >[!NOTE]
 >

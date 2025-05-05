@@ -62,11 +62,11 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, kan het delen van dwars-domeinidentiteitskaart zonder douanecode worden verwezenlijkt. Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) voor meer details.
+>Wanneer het gebruiken van de markeringseigenschap (vroeger Lancering) om Web SDK uit te voeren, kan het delen van dwars-domeinidentiteitskaart zonder douanecode worden verwezenlijkt. Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=nl-NL#tags-extension) voor meer details.
 
 >[!NOTE]
 >
->De Platform Web SDK steunt ook mobiel-aan-Web ID het delen voor inheemse mobiele toepassingsgebruiksgevallen. Voor meer informatie, verwijs naar de specifieke documentatie over [ mobiel-aan-web en het delen van dwars-domeinidentiteitskaart ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>De Platform Web SDK steunt ook mobiel-aan-Web ID het delen voor inheemse mobiele toepassingsgebruiksgevallen. Voor meer informatie, verwijs naar de specifieke documentatie over [ mobiel-aan-web en het delen van dwars-domeinidentiteitskaart ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=nl-NL).
 
 Daarna, leer hoe te [ bijwerk publiek en profielmanuscripten ](update-audiences.md) om verenigbaarheid met het Web SDK van het Platform te verzekeren.
 

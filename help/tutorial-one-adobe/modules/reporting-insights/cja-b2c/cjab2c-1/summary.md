@@ -38,7 +38,7 @@ U kunt nu het volgende:
 
 ## Bekijk dit
 
-- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
 
 ## Volgende stappen
 

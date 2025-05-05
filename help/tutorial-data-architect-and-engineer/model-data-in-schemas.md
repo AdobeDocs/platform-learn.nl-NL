@@ -47,7 +47,7 @@ Voordat u met de oefeningen begint, bekijk deze korte video om meer over schema&
 
 >[!TIP]
 >
-> Voor een diepere duik in gegevens modellering in Experience Platform, adviseren wij het letten op playlist [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), beschikbaar voor vrije op Experience League!
+> Voor een diepere duik in gegevens modellering in Experience Platform, adviseren wij het letten op playlist [ ModelUw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/nl/playlists/experience-platform-model-your-customer-experience-data-with-xdm), beschikbaar voor vrije op Experience League!
 
 ## Vereiste machtigingen
 
@@ -86,7 +86,7 @@ In deze oefening, zullen wij een schema voor de loyaliteitsgegevens van Luma tot
 
 Zodra het schema wordt gecreeerd, zult u aan de redacteur van het Schema worden opnieuw gericht waar u gebieden aan het schema kunt toevoegen. U kunt afzonderlijke velden rechtstreeks aan het schema toevoegen of veldgroepen gebruiken. Houd er rekening mee dat alle afzonderlijke velden nog steeds zijn gekoppeld aan een klasse of veldgroep. U kunt kiezen uit een groot aantal industriestandaard veldgroepen die door Adobe worden geleverd, of u kunt zelf veldgroepen maken. Wanneer u uw eigen gegevens in Experience Platform gaat modelleren, is het goed om bekend te raken met de industriestandaard veldgroepen die door Adobe worden geleverd. Het is aan te raden deze te gebruiken, aangezien zij soms stroomafwaartse services mogelijk maken, zoals Customer AI, Attribution AI en Adobe Analytics.
 
-Wanneer u met uw eigen gegevens werkt, is het belangrijk te bepalen welke van uw eigen gegevens in Platform moeten worden vastgelegd en hoe deze moeten worden gemodelleerd. Dit grote onderwerp wordt besproken in meer diepte in playlist [ Model Uw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In deze zelfstudie zal ik u enkel door de implementatie van sommige vooraf bepaalde schema&#39;s begeleiden.
+Wanneer u met uw eigen gegevens werkt, is het belangrijk te bepalen welke van uw eigen gegevens in Platform moeten worden vastgelegd en hoe deze moeten worden gemodelleerd. Dit grote onderwerp wordt besproken in meer diepte in playlist [ Model Uw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/nl/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In deze zelfstudie zal ik u enkel door de implementatie van sommige vooraf bepaalde schema&#39;s begeleiden.
 
 Veld toevoegen:
 

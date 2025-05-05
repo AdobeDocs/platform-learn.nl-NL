@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Samenvoegbeleid maken
 
-In deze video wordt getoond hoe u in Adobe Experience Platform beleid voor samenvoegen kunt maken. Het beleid van de fusie is de regels die het Platform gebruikt om te bepalen welke gegevens zullen worden gebruikt en aan prioriteit worden gegeven wanneer het combineren van datasets van ongelijksoortige bronnen, om klantenprofielen tot stand te brengen. Voor meer informatie, gelieve de [ documentatie van het samenvoegingsbeleid ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) te bezoeken.
+In deze video wordt getoond hoe u in Adobe Experience Platform beleid voor samenvoegen kunt maken. Het beleid van de fusie is de regels die het Platform gebruikt om te bepalen welke gegevens zullen worden gebruikt en aan prioriteit worden gegeven wanneer het combineren van datasets van ongelijksoortige bronnen, om klantenprofielen tot stand te brengen. Voor meer informatie, gelieve de [ documentatie van het samenvoegingsbeleid ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)

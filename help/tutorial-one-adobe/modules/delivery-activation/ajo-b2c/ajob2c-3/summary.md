@@ -23,8 +23,8 @@ Bij de publicatie van deze exercitie worden de hooglichten vermeld.
 
 ## Bekijk dit
 
-- De documentatie van het product: [ Verklarende woordenlijst van Offer Decisioning ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- De documentatie van het product: [ Web SDK - het Overzicht van Offer Decisioning ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- De documentatie van het product: [ Verklarende woordenlijst van Offer Decisioning ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=nl-NL)
+- De documentatie van het product: [ Web SDK - het Overzicht van Offer Decisioning ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=nl-NL)
 
 ## Volgende stappen
 

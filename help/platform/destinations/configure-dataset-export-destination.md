@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Leer hoe u een verbinding instelt en de workflow gebruikt voor het exporteren van gegevenssets met gebruik van een cloudservicebestemming. De voordelen en gebruiksgevallen voor deze functie worden eveneens behandeld.
 
-Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) te bezoeken.
+Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/activate/export-datasets) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

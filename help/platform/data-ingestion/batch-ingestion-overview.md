@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Overzicht van gegevensinvoer in batch
 
-In deze video wordt een overzicht gegeven van het gebruik van batchgegevens in Adobe Experience Platform en wordt getoond hoe u batchgegevens kunt invoeren met de API. Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) te bezoeken.
+In deze video wordt een overzicht gegeven van het gebruik van batchgegevens in Adobe Experience Platform en wordt getoond hoe u batchgegevens kunt invoeren met de API. Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)

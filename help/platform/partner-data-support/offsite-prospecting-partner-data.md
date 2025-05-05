@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Ondersteuning voor externe prospectie van gebruiksgevallen met partnergegevens in [!DNL Real-Time CDP]
 
-Meer informatie over de workflow die wordt gebruikt om nieuwe perspectieven in te voeren bij partners in [!DNL Real-Time CDP] voor doelgerichte acties vóór een bezoek. Voor meer informatie, gelieve te bezoeken de [ Vraag en nieuwe klanten door het prospecteren van gebruiksgevallen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) documentatie te verwerven.
+Meer informatie over de workflow die wordt gebruikt om nieuwe perspectieven in te voeren bij partners in [!DNL Real-Time CDP] voor doelgerichte acties vóór een bezoek. Voor meer informatie, gelieve te bezoeken de [ Vraag en nieuwe klanten door het prospecteren van gebruiksgevallen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=nl-NL) documentatie te verwerven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)

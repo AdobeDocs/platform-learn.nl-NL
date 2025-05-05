@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 3.3.1.1 Terminologie
 
-Om een beter begrip over Offer decisioning te krijgen, adviseren wij hoogst u om het [ overzicht ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) te lezen over hoe de Dienst van de Toepassing van de Offer decisioning met Adobe Experience Platform werkt.
+Om een beter begrip over Offer decisioning te krijgen, adviseren wij hoogst u om het [ overzicht ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) te lezen over hoe de Dienst van de Toepassing van de Offer decisioning met Adobe Experience Platform werkt.
 
 Als u met Offer decisioning werkt, moet u de volgende concepten begrijpen:
 

@@ -19,11 +19,11 @@ U weet nu dat XDM-gegevens naar een platform stromen. U zult meer over onderzoek
 
 ## Variabelen toewijzen in Analytics
 
-De Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via het Web SDK zo snel mogelijk wordt uitgevoerd. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+De Adobe Experience Platform [!DNL Web SDK] wijst bepaalde waarden automatisch toe, waardoor een nieuwe implementatie van Analytics via het Web SDK zo snel mogelijk wordt uitgevoerd. De automatisch in kaart gebrachte variabelen zijn vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=nl-NL#data-collection).
 
-Voor XDM gegevens die niet automatisch aan Adobe Analytics in kaart worden gebracht, kunt u [ contextgegevens ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=nl) gebruiken om uw [ schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) aan te passen. Dan kan het in Analytics worden in kaart gebracht gebruikend [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) om de variabelen van de Analyse te bevolken. De Regels van de Gegevens van de context en van de Verwerking zullen concepten vertrouwd aan die zijn geweest met Analytics in het verleden, maar maak zich geen zorgen over de details voor nu als zij nieuwe concepten zijn.
+Voor XDM gegevens die niet automatisch aan Adobe Analytics in kaart worden gebracht, kunt u [ contextgegevens ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=nl) gebruiken om uw [ schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=nl-NL) aan te passen. Dan kan het in Analytics worden in kaart gebracht gebruikend [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=nl-NL) om de variabelen van de Analyse te bevolken. De Regels van de Gegevens van de context en van de Verwerking zullen concepten vertrouwd aan die zijn geweest met Analytics in het verleden, maar maak zich geen zorgen over de details voor nu als zij nieuwe concepten zijn.
 
-U kunt ook een standaardset handelingen en productlijsten gebruiken om gegevens te verzenden of op te halen met AEP Web SDK. Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+U kunt ook een standaardset handelingen en productlijsten gebruiken om gegevens te verzenden of op te halen met AEP Web SDK. Om dit te doen, zie [ Producten ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=nl-NL#data-collection).
 
 ### Contextgegevens
 
@@ -54,7 +54,7 @@ Voor gebruik door Analytics worden XDM-gegevens afgevlakt met puntnotatie en bes
 
 ### Verwerkingsregels
 
-Alle gegevens die door het randnetwerk worden verzameld kunnen via [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) worden betreden. In Analytics, kunt u verwerkingsregels gebruiken om contextgegevens in de variabelen van de Analyse op te nemen.
+Alle gegevens die door het randnetwerk worden verzameld kunnen via [ verwerkingsregels ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=nl-NL) worden betreden. In Analytics, kunt u verwerkingsregels gebruiken om contextgegevens in de variabelen van de Analyse op te nemen.
 
 ## Audience Manager op de Experience Platform Edge Network
 

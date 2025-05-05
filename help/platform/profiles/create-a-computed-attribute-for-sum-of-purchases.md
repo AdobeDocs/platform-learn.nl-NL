@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Een berekend kenmerk maken voor de som van aankopen
 
-Leer hoe u berekende kenmerken kunt gebruiken om de aankoopbedragen van een gebruiker in meerdere verkoopkanalen op te tellen. Eén klant kan mogelijk een aankoop doen op uw website, in uw mobiele app en in uw baksteen- en mortierij. Met de berekende attributeneigenschap, kunt u de aankoopbedragen samenvatten die door een klant over deze kanalen worden gemaakt en dit bedrag gebruiken om publiek en voor andere verpersoonlijking te bepalen. Voor meer informatie, gelieve de [ gegevens verwerkte handleiding van attributen UI ](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?) te bezoeken.
+Leer hoe u berekende kenmerken kunt gebruiken om de aankoopbedragen van een gebruiker in meerdere verkoopkanalen op te tellen. Eén klant kan mogelijk een aankoop doen op uw website, in uw mobiele app en in uw baksteen- en mortierij. Met de berekende attributeneigenschap, kunt u de aankoopbedragen samenvatten die door een klant over deze kanalen worden gemaakt en dit bedrag gebruiken om publiek en voor andere verpersoonlijking te bepalen. Voor meer informatie, gelieve de [ gegevens verwerkte handleiding van attributen UI ](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=nl-NL&) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Streaming segmenteringsdemo
 
-Leer hoe de functie voor streamingsegmentatie in Adobe Experience Platform brandmerken in staat stelt om de ervaringen van klanten aan te passen op basis van realtime gegevens. Bekijk een voorbeeldervaring van de klant en krijg een snelle rondleiding van de interface. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+Leer hoe de functie voor streamingsegmentatie in Adobe Experience Platform brandmerken in staat stelt om de ervaringen van klanten aan te passen op basis van realtime gegevens. Bekijk een voorbeeldervaring van de klant en krijg een snelle rondleiding van de interface. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

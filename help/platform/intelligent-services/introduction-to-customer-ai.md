@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Inleiding tot AI van de Klant
 
-Een overzicht op hoog niveau van de manier waarop marketeers met de AI van de Klant de voorspellingen van de klant kunnen produceren. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html) te bezoeken.
+Een overzicht op hoog niveau van de manier waarop marketeers met de AI van de Klant de voorspellingen van de klant kunnen produceren. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)

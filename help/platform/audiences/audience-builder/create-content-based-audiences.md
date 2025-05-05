@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Op inhoud gebaseerd publiek maken
 
-Leer de grondbeginselen van het creëren van een publiek van de inhoudsaffiniteit in de bouwer van de publieksregel in Experience Platform. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+Leer de grondbeginselen van het creëren van een publiek van de inhoudsaffiniteit in de bouwer van de publieksregel in Experience Platform. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

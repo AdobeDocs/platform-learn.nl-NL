@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Pakketten delen over IMS Orgs
 
-Leer hoe u Experience Platform-configuraties tussen IMS Orgs kunt kopiëren met behulp van pakketten. Eenvoudig schema&#39;s, datasets, reizen, en meer over veelvoudige IMS Orgs repliceren om versieprocessen en multi-regio/multibrand plaatsingen te steunen. Voor meer gedetailleerde informatie, zie de [ zandbak tooling documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
+Leer hoe u Experience Platform-configuraties tussen IMS Orgs kunt kopiëren met behulp van pakketten. Eenvoudig schema&#39;s, datasets, reizen, en meer over veelvoudige IMS Orgs repliceren om versieprocessen en multi-regio/multibrand plaatsingen te steunen. Voor meer gedetailleerde informatie, zie de [ zandbak tooling documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)

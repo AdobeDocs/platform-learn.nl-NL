@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Het succes van de segmentactivering volgen
 
-Wanneer het verzenden van segmentprofielen uit naar uw activeringspartners, is het noodzakelijk om informatie betreffende het succes van deze gegevensoverdracht te zien, vooral zodat kunt u om het even welke problemen bevestigen. Deze video toont twee belangrijke manieren om de stroom van uw segmenten uit aan bestemmingen te controleren. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en) te bezoeken.
+Wanneer het verzenden van segmentprofielen uit naar uw activeringspartners, is het noodzakelijk om informatie betreffende het succes van deze gegevensoverdracht te zien, vooral zodat kunt u om het even welke problemen bevestigen. Deze video toont twee belangrijke manieren om de stroom van uw segmenten uit aan bestemmingen te controleren. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
 

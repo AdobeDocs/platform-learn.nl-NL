@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Een sociale bestemming configureren
 
-Leer hoe u een sociale bestemming in Adobe Experience Platform configureert, zoals verificatie, segmenttoewijzing, id-toewijzing, enz. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html) te bezoeken.
+Leer hoe u een sociale bestemming in Adobe Experience Platform configureert, zoals verificatie, segmenttoewijzing, id-toewijzing, enz. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 

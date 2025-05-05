@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Goedkeuring instellen met de IAB TCF 2.0-standaard
 
-Leer hoe u de Adobe Experience Platform Web SDK gebruikt om toestemmingswaarden in te stellen volgens de IAB TCF 2.0-standaard. Zie de documentatie over [ IAB FCF 2.0 steun in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) voor meer informatie.
+Leer hoe u de Adobe Experience Platform Web SDK gebruikt om toestemmingswaarden in te stellen volgens de IAB TCF 2.0-standaard. Zie de documentatie over [ IAB FCF 2.0 steun in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=nl-NL) voor meer informatie.
 
 >[!NOTE]
 >

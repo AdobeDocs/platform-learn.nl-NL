@@ -160,7 +160,7 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=nl-NL",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

@@ -27,7 +27,7 @@ In deze les zult u:
 
 ## Mogelijke problemen met bijhouden
 
-Als u gegevens verzendt vanuit het native gedeelte van de app en vanuit een WebView in de app, genereert elk zijn eigen Experience Cloud-id (ECID), wat leidt tot verbroken resultaten en opgeblazen bezoek-/bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) worden gevonden.
+Als u gegevens verzendt vanuit het native gedeelte van de app en vanuit een WebView in de app, genereert elk zijn eigen Experience Cloud-id (ECID), wat leidt tot verbroken resultaten en opgeblazen bezoek-/bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=nl-NL) worden gevonden.
 
 Om die ongewenste situatie op te lossen, is het belangrijk om de ECID van de gebruiker van het inheemse gedeelte van uw app tot een WebView over te gaan u in uw app zou kunnen willen gebruiken.
 

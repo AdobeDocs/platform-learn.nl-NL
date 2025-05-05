@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Tagomgevingen en insluitcodes gebruiken
 
-Leer hoe u ontwikkelings-, staging- en productieomgevingen kunt gebruiken en codes kunt insluiten om uw eigenschap tag te ontwikkelen en valideren. Voor meer informatie, zie de [ milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) documentatie.
+Leer hoe u ontwikkelings-, staging- en productieomgevingen kunt gebruiken en codes kunt insluiten om uw eigenschap tag te ontwikkelen en valideren. Voor meer informatie, zie de [ milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) documentatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)

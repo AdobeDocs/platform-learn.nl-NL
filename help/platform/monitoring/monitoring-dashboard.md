@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Gegevens bijhouden
 
-Leer hoe u gegevens die in Adobe Experience Platform worden ingevoerd, kunt bijhouden en volgen met het dashboard voor bewaking. Dit controledashboard verstrekt een top-down mening van brongegevensverwerking door gegevens meer aan de diensten van het Profiel en van de Identiteit, met actionable inzichten. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html).
+Leer hoe u gegevens die in Adobe Experience Platform worden ingevoerd, kunt bijhouden en volgen met het dashboard voor bewaking. Dit controledashboard verstrekt een top-down mening van brongegevensverwerking door gegevens meer aan de diensten van het Profiel en van de Identiteit, met actionable inzichten. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)

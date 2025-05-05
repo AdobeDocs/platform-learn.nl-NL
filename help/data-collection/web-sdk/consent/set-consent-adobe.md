@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Goedkeuring instellen met de Adobe-standaard
 
-Leer hoe u de Adobe Experience Platform Web SDK gebruikt om toestemmingswaarden in te stellen volgens Adobe standard 1.0 en 2.0. Zie de documentatie over [ toestemmingsverwerking in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) voor meer informatie bij het gebruiken van de norm van Adobe.
+Leer hoe u de Adobe Experience Platform Web SDK gebruikt om toestemmingswaarden in te stellen volgens Adobe standard 1.0 en 2.0. Zie de documentatie over [ toestemmingsverwerking in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=nl-NL) voor meer informatie bij het gebruiken van de norm van Adobe.
 
 >[!NOTE]
 >

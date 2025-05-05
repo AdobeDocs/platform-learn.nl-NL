@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Doelen maken en gegevens activeren
 
-Leer hoe u doelen maakt en gegevens activeert in Adobe Real-Time Customer Data Platform. Voor meer gedetailleerde productdocumentatie, zie [ profielen en segmenten aan een bestemming ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html) activeren, [ hoe te om een bestemming ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html) te verbinden en [ met het stromen bestemmingen te verbinden en gegevens met API ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html) te activeren.
+Leer hoe u doelen maakt en gegevens activeert in Adobe Real-Time Customer Data Platform. Voor meer gedetailleerde productdocumentatie, zie [ profielen en segmenten aan een bestemming ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=nl-NL) activeren, [ hoe te om een bestemming ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=nl-NL) te verbinden en [ met het stromen bestemmingen te verbinden en gegevens met API ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=nl-NL) te activeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
 

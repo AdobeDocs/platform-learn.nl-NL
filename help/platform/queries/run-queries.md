@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Zoekopdrachten uitvoeren
 
-Deze video laat zien hoe query&#39;s kunnen worden uitgevoerd in de Adobe Experience Platform-interface en in een PSQL-client. Bovendien wordt het gebruik van individuele eigenschappen in een XDM-object, met behulp van door Adobe gedefinieerde functies en met behulp van CREATE TABLE AS SELECT (CTAS) aangetoond. Voor gedetailleerde productdocumentatie, zie de [ gids UI van de Redacteur van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html).
+Deze video laat zien hoe query&#39;s kunnen worden uitgevoerd in de Adobe Experience Platform-interface en in een PSQL-client. Bovendien wordt het gebruik van individuele eigenschappen in een XDM-object, met behulp van door Adobe gedefinieerde functies en met behulp van CREATE TABLE AS SELECT (CTAS) aangetoond. Voor gedetailleerde productdocumentatie, zie de [ gids UI van de Redacteur van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=nl-NL).
 Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)

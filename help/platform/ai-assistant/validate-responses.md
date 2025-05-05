@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Reacties valideren vanuit AI Assistant
 
-Leer hoe u de reacties van AI Assistant in Adobe Experience Platform kunt verifiëren en valideren. Voor meer informatie, zie de [ AI Hulp UI gids ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
+Leer hoe u de reacties van AI Assistant in Adobe Experience Platform kunt verifiëren en valideren. Voor meer informatie, zie de [ AI Hulp UI gids ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)

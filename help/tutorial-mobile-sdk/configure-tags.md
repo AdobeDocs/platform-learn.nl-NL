@@ -23,7 +23,7 @@ Om de les te voltooien, moet u toestemming hebben om een markeringsbezit tot sta
 
 >[!NOTE]
 >
-> Platform launch (Kant van de Cliënt) is nu [ Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform launch (Kant van de Cliënt) is nu [ Markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
 
 ## Leerdoelstellingen
 

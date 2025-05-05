@@ -176,7 +176,7 @@ Wanneer u Adobe Commerce gebruikt dat is geïntegreerd met AEM, kunt u een algem
 
 >[!NOTE]
 >
-> Vreemd voor meer informatie over live kopieën? Check out [ &quot;Creating and Synchronizing Live Copies&quot;.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> Vreemd voor meer informatie over live kopieën? Check out [ &quot;Creating and Synchronizing Live Copies&quot;.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=nl-NL)
 
 - Als u klaar bent, ziet u nu de winkel die op uw website beschikbaar is. Selecteer het en klik vervolgens op Maken \> Pagina om onze inspirerende productpagina te maken.
 

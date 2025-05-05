@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Een dashboard maken
 
-Leer hoe u een dashboard maakt in Adobe Experience Platform. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+Leer hoe u een dashboard maakt in Adobe Experience Platform. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=nl-NL).
 
 >[!IMPORTANT]
 >

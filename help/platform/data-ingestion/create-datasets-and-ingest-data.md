@@ -16,7 +16,7 @@ ht-degree: 6%
 
 # Gegevenssets maken en gegevens opnemen
 
-Deze video laat zien hoe u gegevenssets kunt maken en gegevens kunt opnemen in de Adobe Experience Platform-interface. Voor meer gedetailleerde productdocumentatie, zie [ ingeste partijgegevens gebruikend UI ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html) en [ creeer een dataset gebruikend APIs ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) te bezoeken.
+Deze video laat zien hoe u gegevenssets kunt maken en gegevens kunt opnemen in de Adobe Experience Platform-interface. Voor meer gedetailleerde productdocumentatie, zie [ ingeste partijgegevens gebruikend UI ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=nl-NL) en [ creeer een dataset gebruikend APIs ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html?lang=nl-NL). Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 

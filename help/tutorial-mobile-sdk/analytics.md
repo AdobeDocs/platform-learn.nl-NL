@@ -54,11 +54,11 @@ Om uw gegevens XDM van de Edge Network naar Adobe Analytics te verzenden, vormt 
 
 ## Automatische toewijzing
 
-Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de volledige lijst [ hier ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
+Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de volledige lijst [ hier ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=nl-NL).
 
 ### Voorbeeld 1 - s.products
 
-Een goed voorbeeld is de [ productvariabele ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) die niet kan worden bevolkt gebruikend verwerkingsregels. Met een XDM-implementatie geeft u alle benodigde gegevens door in `productListItems` en `s.products` wordt automatisch ingevuld via Analytics-toewijzing.
+Een goed voorbeeld is de [ productvariabele ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=nl-NL) die niet kan worden bevolkt gebruikend verwerkingsregels. Met een XDM-implementatie geeft u alle benodigde gegevens door in `productListItems` en `s.products` wordt automatisch ingevuld via Analytics-toewijzing.
 
 Dit object:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Als `productListItems[].SKU` en `productListItems[].name` beide gegevens bevatten, wordt de waarde in `productListItems[].SKU` gebruikt. Zie [ veranderlijke afbeelding van Analytics in de Ervaring Edge van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) voor meer informatie.
+>Als `productListItems[].SKU` en `productListItems[].name` beide gegevens bevatten, wordt de waarde in `productListItems[].SKU` gebruikt. Zie [ veranderlijke afbeelding van Analytics in de Ervaring Edge van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=nl-NL) voor meer informatie.
 
 
 ### Voorbeeld 2 - scAdd
@@ -171,7 +171,7 @@ Neem nota van het volgende in de afbeelding van Analytics:
 
 ## Toewijzing met contextgegevens
 
-De gegevens XDM die aan Analytics door:sturen worden omgezet in [ contextgegevens ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) met inbegrip van zowel standaard als douanegebieden.
+De gegevens XDM die aan Analytics door:sturen worden omgezet in [ contextgegevens ](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=nl-NL) met inbegrip van zowel standaard als douanegebieden.
 
 De sleutel van contextgegevens wordt samengesteld volgens deze syntaxis:
 
@@ -211,7 +211,7 @@ Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in 
 
 ### Merchandising Vars
 
-Als u [ koopt merchandising eVars ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in uw opstelling van Analytics, bijvoorbeeld gebruikt om de kleur van producten, als `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` te vangen, moet u uw XDM nuttige lading uitbreiden die u in [ de gebeurtenisgegevens van het Spoor ](events.md) bepaalde om die koopjesinformatie te vangen.
+Als u [ koopt merchandising eVars ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=nl-NL) in uw opstelling van Analytics, bijvoorbeeld gebruikt om de kleur van producten, als `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60` te vangen, moet u uw XDM nuttige lading uitbreiden die u in [ de gebeurtenisgegevens van het Spoor ](events.md) bepaalde om die koopjesinformatie te vangen.
 
 * In JSON:
 
@@ -301,7 +301,7 @@ Zo ziet een verwerkingsregel met deze gegevens eruit:
 >De eerste keer u aan een verwerkingsregel in kaart brengt, toont de interface u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
 
 
-De extra informatie over verwerkingsregels en contextgegevens kan [ hier ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en) worden gevonden.
+De extra informatie over verwerkingsregels en contextgegevens kan [ hier ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=nl-NL) worden gevonden.
 
 >[!TIP]
 >

@@ -21,7 +21,7 @@ In deze oefening, zult u leren hoe te om uw gegevens te zuiveren en te bevestige
 
 ## Het Adobe Experience Platform Debugger
 
-Dit foutopsporingsprogramma is een browserextensie en is beschikbaar in de Chrome Store. Er is a [ videoleerprogramma ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) dat verklaart hoe te om debugger te downloaden en te gebruiken, en het wordt geadviseerd dat u eerst door dat gaat om het basisgebruik te kennen.
+Dit foutopsporingsprogramma is een browserextensie en is beschikbaar in de Chrome Store. Er is a [ videoleerprogramma ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview) dat verklaart hoe te om debugger te downloaden en te gebruiken, en het wordt geadviseerd dat u eerst door dat gaat om het basisgebruik te kennen.
 
 Als u de foutopsporing hebt uitgevoerd, kunt u deze gebruiken om ervoor te zorgen dat de gegevens van uw site en via de Edge Network correct stromen. Deze zelfstudie blijft bij vrij eenvoudig gebruik, maar gebruik de foutopsporing tot de volledige capaciteit om uw gegevens te controleren.
 

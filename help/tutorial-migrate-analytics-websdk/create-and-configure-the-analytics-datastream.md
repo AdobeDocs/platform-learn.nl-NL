@@ -35,7 +35,7 @@ In deze les leert u hoe u het systeem maakt en configureert, zodat uw gegevens v
 
    >[!NOTE]
    >
-   >U moet slechts een schema selecteren als het gebruiken van [ Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep), die wij niet in dit leerprogramma zullen doen. Ga naar de link voor meer informatie.
+   >U moet slechts een schema selecteren als het gebruiken van [ Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/data-prep), die wij niet in dit leerprogramma zullen doen. Ga naar de link voor meer informatie.
 
 1. Selecteren **[!UICONTROL Save]**
 

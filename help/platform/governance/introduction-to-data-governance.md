@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Eend-to-end demo over gegevensbeheer
 
-Leer hoe de mogelijkheden van het Beheer van Gegevens van Adobe Experience Platform en hoe het brands helpen gepersonaliseerde ervaringen aan hun klanten leveren terwijl het volledige controle over klantengegevens verstrekken. Voor meer informatie, gelieve de [ documentatie van het gegevensbeheer ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) te bezoeken.
+Leer hoe de mogelijkheden van het Beheer van Gegevens van Adobe Experience Platform en hoe het brands helpen gepersonaliseerde ervaringen aan hun klanten leveren terwijl het volledige controle over klantengegevens verstrekken. Voor meer informatie, gelieve de [ documentatie van het gegevensbeheer ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)

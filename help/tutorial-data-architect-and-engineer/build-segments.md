@@ -108,14 +108,14 @@ U zult het volgende segment tot stand brengen door de verhouding toe te passen u
 Klik op **[!UICONTROL Segments]** in de linkernavigatie en laten we even kijken naar onze drie segmenten:
 
 * Twee van onze segmenten zijn batchsegmenten en één is een streaming segment.
-* Platform blijft aan het stromen segmentatie waar mogelijk in gebreke, kwalificerend de klant voor een segment zodra zij aan de criteria voldoen. Wanneer segmentdefinities te complex zijn voor streaming, worden deze automatisch omgezet in batch. In dit geval werden de twee segmenten standaard in batch geplaatst omdat het terugkijkvenster van de aankoopgebeurtenissen langer was dan zeven dagen. Voor een volledige en huidige lijst van het stromen beperkingen, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
+* Platform blijft aan het stromen segmentatie waar mogelijk in gebreke, kwalificerend de klant voor een segment zodra zij aan de criteria voldoen. Wanneer segmentdefinities te complex zijn voor streaming, worden deze automatisch omgezet in batch. In dit geval werden de twee segmenten standaard in batch geplaatst omdat het terugkijkvenster van de aankoopgebeurtenissen langer was dan zeven dagen. Voor een volledige en huidige lijst van het stromen beperkingen, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=nl-NL).
 * De batchtaken worden dagelijks uitgevoerd en kunnen worden uitgeschakeld.
 
 ![ het zelfde product in het laatste 30 dagsegment ](assets/segment-review.png)
 
 ## Aanvullende bronnen
 
-* [ documentatie van de Dienst van de Segmentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
+* [ documentatie van de Dienst van de Segmentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=nl-NL)
 * [ de Verwijzing van de Dienst API van de Segmentatie ](https://www.adobe.io/experience-platform-apis/references/segmentation/)
 
 segmentatie is veel belangrijker, vooral bij het activeren van segmenten. Deze onderwerpen zullen in een andere zelfstudie worden besproken.

@@ -24,6 +24,6 @@ Leer hoe u een sandbox configureert voor Use Case Playbooks. Als u aan de slag w
 1. Machtigingen en gebruikers toevoegen aan de sandbox
 1. Kanaaloppervlakken configureren voor e-mail, push en SMS
 
-Voor meer informatie, zie [ begonnen worden met de Hoofdletters van het Gebruik ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
+Voor meer informatie, zie [ begonnen worden met de Hoofdletters van het Gebruik ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)

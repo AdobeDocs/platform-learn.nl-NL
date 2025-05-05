@@ -32,11 +32,11 @@ De visuele het Uitgeven browser van Helper uitbreiding werkt met websites die at
 
 De visuele het Uitgeven Helper wordt automatisch toegelaten wanneer een website in het Doel VEC aan macht authoring wordt geopend. De extensie heeft geen voorwaardelijke instellingen. De extensie verwerkt automatisch alle instellingen, inclusief de instellingen voor SameSite-cookies.
 
-Verwijs naar de specifieke documentatie voor meer informatie over de [ Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) en [ het oplossen van problemen de Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+Verwijs naar de specifieke documentatie voor meer informatie over de [ Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=nl-NL) en [ het oplossen van problemen de Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=nl-NL).
 
 >[!IMPORTANT]
 >
->De nieuwe [ Visuele het Uitgeven uitbreiding van de Helper ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) vervangt de vorige [ de Browser van de Helper van het Doel VEC uitbreiding ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
+>De nieuwe [ Visuele het Uitgeven uitbreiding van de Helper ](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) vervangt de vorige [ de Browser van de Helper van het Doel VEC uitbreiding ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=nl-NL). Als de oudere uitbreiding van de Helper VEC geïnstalleerd is, zou het moeten worden verwijderd of worden onbruikbaar gemaakt alvorens de Visuele Uitgevende uitbreiding van de Helper te gebruiken.
 
 ## Inhoud automatisch aanvragen en toepassen
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Het is mogelijk om [ manueel wijzigingen ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) terug te geven die in de Visuele Composer van de Ervaring worden gemaakt. Handmatige rendering van op VEC gebaseerde wijzigingen komt niet vaak voor. Controleer of uw at.js-implementatie de functie `getOffers()` gebruikt om handmatig een Target `pageLoad` -aanvraag uit te voeren zonder `applyOffers()` te gebruiken om de inhoud op de pagina toe te passen.
+>Het is mogelijk om [ manueel wijzigingen ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=nl-NL#manually-rendering-content) terug te geven die in de Visuele Composer van de Ervaring worden gemaakt. Handmatige rendering van op VEC gebaseerde wijzigingen komt niet vaak voor. Controleer of uw at.js-implementatie de functie `getOffers()` gebruikt om handmatig een Target `pageLoad` -aanvraag uit te voeren zonder `applyOffers()` te gebruiken om de inhoud op de pagina toe te passen.
 
-De SDK van het Web van het Platform biedt ontwikkelaars heel wat flexibiliteit met het vragen van en het teruggeven van inhoud aan. Verwijs naar de [ specifieke documentatie over het teruggeven van gepersonaliseerde inhoud ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) voor extra opties en details.
+De SDK van het Web van het Platform biedt ontwikkelaars heel wat flexibiliteit met het vragen van en het teruggeven van inhoud aan. Verwijs naar de [ specifieke documentatie over het teruggeven van gepersonaliseerde inhoud ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=nl-NL) voor extra opties en details.
 
 ## Voorbeeld van implementatie
 

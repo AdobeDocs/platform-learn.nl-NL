@@ -13,13 +13,13 @@ ht-degree: 1%
 
 Voor het migreren van Target SDK naar Optimize SDK is een eerste installatie nodig om het vastleggen van gegevens, de functies en functies van Optimize SDK te kunnen uitvoeren. De volgende stappen moeten worden uitgevoerd voordat wijzigingen in de implementatie van websites plaatsvinden:
 
-- [ vorm de aangewezen toestemmingen ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in Adobe Admin Console voor de Inzameling van Gegevens
-- [ vorm een schema XDM ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} voor het overgaan van gestructureerde gegevens tot Edge Network
-- [ vorm het schema ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} om de gegevens van Adobe Target te ontvangen
-- [ vorm een identiteit namespace ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} voor dwars-apparatenverpersoonlijking en mbox3rdPartyId functionaliteit
-- [ creeer een datastream ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
-- [ vorm de datastream ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
-- [ vorm het bezit van de Markering ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} voor de uitbreiding van het Beslissen
+- [ vorm de aangewezen toestemmingen ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in Adobe Admin Console voor de Inzameling van Gegevens
+- [ vorm een schema XDM ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} voor het overgaan van gestructureerde gegevens tot Edge Network
+- [ vorm het schema ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} om de gegevens van Adobe Target te ontvangen
+- [ vorm een identiteit namespace ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} voor dwars-apparatenverpersoonlijking en mbox3rdPartyId functionaliteit
+- [ creeer een datastream ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
+- [ vorm de datastream ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
+- [ vorm het bezit van de Markering ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} voor de uitbreiding van het Beslissen
 
 ## Extensieconfiguratie
 

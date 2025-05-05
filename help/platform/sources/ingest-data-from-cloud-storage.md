@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Gegevens verzamelen met behulp van Cloud Storage-bronconnectors
 
-In deze video ziet u hoe u eenvoudig en op een naadloze en schaalbare manier gecomprimeerde gegevens van cloudopslagservices kunt toevoegen aan Adobe Experience Platform Real-Time Customer Profile en Data Lake. Voor meer gedetailleerde productdocumentatie, zie [ wolkenopslag ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) op de overzichtspagina van de Verbindingen van Source of de [ de documentatie van de bron van Amazon S3 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html).
+In deze video ziet u hoe u eenvoudig en op een naadloze en schaalbare manier gecomprimeerde gegevens van cloudopslagservices kunt toevoegen aan Adobe Experience Platform Real-Time Customer Profile en Data Lake. Voor meer gedetailleerde productdocumentatie, zie [ wolkenopslag ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl-NL#cloud-storage) op de overzichtspagina van de Verbindingen van Source of de [ de documentatie van de bron van Amazon S3 ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)

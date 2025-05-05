@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Orchestrate campagnes with Marketo Engage and Real-Time Customer Data Platform (CDP), B2B edition.
 
-Leer hoe u B2B-campagnes kunt organiseren met Marketo Engage en Real-Time Customer Data Platform (CDP), B2B edition. Ontdek hoe gegevensinvoer, accountprofielen, segmentatie en doelen samenkomen om B2B-campagneorchestratie te versterken. Antwoorden op veelgestelde vragen. Voor meer informatie, gelieve te bezoeken de [ documentatie van B2B edition van Real-Time CDP ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Leer hoe u B2B-campagnes kunt organiseren met Marketo Engage en Real-Time Customer Data Platform (CDP), B2B edition. Ontdek hoe gegevensinvoer, accountprofielen, segmentatie en doelen samenkomen om B2B-campagneorchestratie te versterken. Antwoorden op veelgestelde vragen. Voor meer informatie, gelieve te bezoeken de [ documentatie van B2B edition van Real-Time CDP ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338254?learn=on&enablevpops)

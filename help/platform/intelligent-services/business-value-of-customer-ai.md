@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Bedrijfswaarde van AI van de Klant
 
-In deze video wordt getoond hoe de AI van de Klant klantprofielen verrijkt met op AI-Gebaseerde eigenschappen en klantensegmentatie en gerichte inspanningen toelaat. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html) te bezoeken.
+In deze video wordt getoond hoe de AI van de Klant klantprofielen verrijkt met op AI-Gebaseerde eigenschappen en klantensegmentatie en gerichte inspanningen toelaat. Voor meer informatie, gelieve de [ documentatie van AI van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
 

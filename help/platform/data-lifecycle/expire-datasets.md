@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Leer hoe te om dataset te plannen schrapt gebruikend de eigenschap van de Hygiëne van Gegevens van Adobe Experience Platform.
 
-De schrapping van de gegevensreeks staat gegevenstewards en gegevensingenieurs toe om een vervaldatum voor een dataset te plaatsen. Voor meer informatie, gelieve de [ documentatie van de gegevenshygiëne ](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html) te bezoeken.
+De schrapping van de gegevensreeks staat gegevenstewards en gegevensingenieurs toe om een vervaldatum voor een dataset te plaatsen. Voor meer informatie, gelieve de [ documentatie van de gegevenshygiëne ](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=nl-NL) te bezoeken.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
 
 >[!NOTE]
 >
-> Alle klanten van het Platform kunnen [ datasets op bestelling ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete) schrappen. Verwijderen van gegevenssets volgens planning is momenteel alleen beschikbaar voor klanten van het gezondheidsschild of het privacyschild.
+> Alle klanten van het Platform kunnen [ datasets op bestelling ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=nl-NL#delete) schrappen. Verwijderen van gegevenssets volgens planning is momenteel alleen beschikbaar voor klanten van het gezondheidsschild of het privacyschild.

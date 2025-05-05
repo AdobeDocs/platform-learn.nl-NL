@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Uw gegevensmodel converteren naar XDM
 
-In deze video ziet u hoe gegevensarchitecten hun bestaande transactionele gegevensmodel kunnen omzetten in een Experience Data Model. Het toont het verschil in modelleringsbenaderingen gebruikend entiteit-verhouding diagrammen. Voor meer informatie, gelieve de [ beste praktijken voor gegevens te bezoeken modelleringsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html).
+In deze video ziet u hoe gegevensarchitecten hun bestaande transactionele gegevensmodel kunnen omzetten in een Experience Data Model. Het toont het verschil in modelleringsbenaderingen gebruikend entiteit-verhouding diagrammen. Voor meer informatie, gelieve de [ beste praktijken voor gegevens te bezoeken modelleringsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)

@@ -56,8 +56,8 @@ Adobe Experience Platform Data Collection is een zeer geavanceerd hulpmiddel dat
 Hieronder vindt u wat meer lezingen voor degenen die geïnteresseerd zijn in het begrijpen van Adobe Experience Platform-gegevensverzameling.
 
 - [ Gids van de Gebruiker van de Verzameling van Gegevens van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)
-- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
-- [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL)
+- [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL)
 - [ API documentatie ](https://developer.adobelaunch.com/api/)
 
 ## Volgende stappen

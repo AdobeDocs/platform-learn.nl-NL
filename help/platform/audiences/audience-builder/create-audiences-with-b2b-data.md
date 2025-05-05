@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Accountsoorten maken en activeren voor [!DNL B2B] en [!DNL B2P]
 
-Leer meer over Account-Based Marketing-mogelijkheden in de [!DNL B2B] - en [!DNL B2P] edities van [!DNL Real-Time Customer Data Platform] , zoals het maken en activeren van accountsoorten. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Leer meer over Account-Based Marketing-mogelijkheden in de [!DNL B2B] - en [!DNL B2P] edities van [!DNL Real-Time Customer Data Platform] , zoals het maken en activeren van accountsoorten. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

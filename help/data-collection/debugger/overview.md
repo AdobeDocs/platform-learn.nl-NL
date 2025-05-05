@@ -26,4 +26,4 @@ Leer hoe de uitbreiding van Adobe Experience Platform Debugger [ Chrome ](https:
 * [ Download toe:voegen-op Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
 * [ Download de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [ Debugger van Experience Platform documentatie ](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
-* [ zuivert een markeringsimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [ zuivert een markeringsimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=nl-NL)

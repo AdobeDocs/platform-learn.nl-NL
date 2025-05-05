@@ -83,7 +83,7 @@ Personalization begint op grote schaal met het begrijpen wat verbeterd kan worde
 
 Voordat u begint met de praktische oefeningen, bekijkt u eerst de architectuur achter deze zelfstudie. Dit bootkamp zal diep op een aantal eigenschappen en functionaliteiten rond Adobe Experience Platform gaan, en zal ook veelvoudige integraties over een verscheidenheid van bronnen en bestemmingen bespreken. Om u de architectuur achter deze zelfstudie en de algemene positionering van Adobe Experience Platform in uw bedrijfseconomisch ecosysteem goed te begrijpen, begin door de architectuurvideo en het diagram te herzien.
 
-Ga naar [ Architectuur ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Ga naar [ Architectuur ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=nl-NL).
 
 ## Video&#39;s
 
@@ -93,7 +93,7 @@ Het belangrijkste doel van ons Experience Makers Bootkamp is om organisaties te 
 
 Er zijn verschillende andere video&#39;s gemaakt waarin elementen van het bootkamp en krachtige integratie tussen Adobe Experience Platform- en niet-Adobe-toepassingen worden geïllustreerd. Klik op de onderstaande koppeling voor een overzicht van deze video&#39;s.
 
-Ga naar [ Video&#39;s ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Ga naar [ Video&#39;s ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=nl-NL).
 
 ## YouTube
 

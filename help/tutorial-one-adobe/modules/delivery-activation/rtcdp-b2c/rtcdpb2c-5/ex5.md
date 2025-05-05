@@ -20,7 +20,7 @@ ht-degree: 0%
 ## Goed om te weten
 
 Adobe Experience Platform ondersteunt verschillende Amazon-services als bestemming.
-Kinesis en S3 zijn zowel [ de uitvoerbestemmingen van het profielaandeel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) en kunnen als deel van Adobe Experience Platform Real-Time CDP worden gebruikt.
+Kinesis en S3 zijn zowel [ de uitvoerbestemmingen van het profielaandeel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=nl-NL) en kunnen als deel van Adobe Experience Platform Real-Time CDP worden gebruikt.
 U kunt hoogwaardige segmentgebeurtenissen en de bijbehorende profielkenmerken eenvoudig in uw eigen systemen invoeren.
 
 In deze oefening, zult u leren hoe te om uw eigen stroom van Amazon Kinesis te plaatsen om gebeurtenisgegevens te stromen die van het ecosysteem van Adobe Experience Platform Edge aan een bestemming van de wolkenopslag, zoals Amazon S3 komen. Dit is handig voor het geval u ervaringsgebeurtenissen wilt verzamelen van web- en mobiele eigenschappen en deze in uw database wilt plaatsen voor analyse en operationele rapportage. Datalakes nemen over het algemeen gegevens op een partijwijze met grote dagelijkse dossierinvoer op, zij stellen openbaar http eindpunt niet bloot dat samen met gebeurtenis kon worden gebruikt door:sturen.

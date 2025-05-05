@@ -42,11 +42,11 @@ Adobe Experience Platform is het krachtigste, meest flexibele en open systeem op
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=nl-NL">
       <img alt="miniatuurafbeelding voor de zelfstudie &apos;Aan de slag voor gegevensarchitecten en -engineers&apos;" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=nl-NL">
     <strong> het Worden begonnen voor gegevensarchitecten en gegevensingenieurs </strong>
     </a>
     </div>

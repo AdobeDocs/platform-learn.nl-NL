@@ -44,7 +44,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
@@ -160,7 +160,7 @@ Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, k
 
 >[!INFO]
 >
->  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
+>  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
 
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen

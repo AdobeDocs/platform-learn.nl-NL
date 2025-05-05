@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waar
 
 Enkele voordelen van het Web SDK van het Platform in vergelijking met de standalone bibliotheek at.js omvatten:
 
-* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
-* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
+* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
+* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
 * Een kleinere voetafdruk voor verbeterde afmetingen voor de paginasnelheid
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
@@ -63,11 +63,11 @@ Aan het einde van deze zelfstudie kunt u het volgende doen:
 Als u deze zelfstudie wilt voltooien, moet u eerst:
 
 * Heb een technisch inzicht in uw huidige implementatie van Target at.js
-* Verzeker u een [ Redacteur of rol van de Uitgever ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw instantie van het Doel hebt zodat kunt u voorbeelden op uw eigen proberen
+* Verzeker u een [ Redacteur of rol van de Uitgever ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw instantie van het Doel hebt zodat kunt u voorbeelden op uw eigen proberen
 * Weet hoe u activiteiten kunt opzetten in Adobe Target. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
-   * [ Gebruik Composer van de Visuele Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [ gebruik de op vorm-Gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [ creeer ervaring richtend Activiteiten ](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [ Gebruik Composer van de Visuele Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=nl-NL)
+   * [ gebruik de op vorm-Gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=nl-NL)
+   * [ creeer ervaring richtend Activiteiten ](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=nl-NL)
 
 Zodra u klaar bent, moet de eerste stap aan een succesvolle migratie [ over het migratieproces ](migration-overview.md) leren en hoe at.js en het Web SDK van het Platform verschillen.
 

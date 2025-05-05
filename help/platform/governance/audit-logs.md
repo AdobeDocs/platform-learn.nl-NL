@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Controlelogboeken
 
-Leer hoe u met de functie voor auditlogbestanden kunt voldoen aan uw compatibiliteitsvereisten en uw Adobe Experience Platform-implementatie kunt oplossen. Voor meer informatie, gelieve de [ documentatie van de controlelogboeken ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html) of de [ API verwijzing ](https://developer.adobe.com/experience-platform-apis/references/audit-query/) te bezoeken.
+Leer hoe u met de functie voor auditlogbestanden kunt voldoen aan uw compatibiliteitsvereisten en uw Adobe Experience Platform-implementatie kunt oplossen. Voor meer informatie, gelieve de [ documentatie van de controlelogboeken ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=nl-NL) of de [ API verwijzing ](https://developer.adobe.com/experience-platform-apis/references/audit-query/) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on&enablevpops)
 

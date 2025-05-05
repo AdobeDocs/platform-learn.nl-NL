@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Opsommende velden en voorgestelde waarden gebruiken
 
-Leer hoe te om opgesomde gebieden en voorgestelde waarden te gebruiken om vriendschappelijke dropdown menu&#39;s in de segmentbouwerinterface tot stand te brengen. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+Leer hoe te om opgesomde gebieden en voorgestelde waarden te gebruiken om vriendschappelijke dropdown menu&#39;s in de segmentbouwerinterface tot stand te brengen. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van gegevensbeheer
 
-Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform. Gegevensbeheer is een eenvoudig uitbreidbaar kader dat diep is ingebed in workflows voor gegevensgebruik. Het framework is gebaseerd op drie belangrijke aspecten: labels, beleid en handhaving. Voor meer informatie, gelieve de [ documentatie van het gegevensbeheer ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) te bezoeken.
+Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform. Gegevensbeheer is een eenvoudig uitbreidbaar kader dat diep is ingebed in workflows voor gegevensgebruik. Het framework is gebaseerd op drie belangrijke aspecten: labels, beleid en handhaving. Voor meer informatie, gelieve de [ documentatie van het gegevensbeheer ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 

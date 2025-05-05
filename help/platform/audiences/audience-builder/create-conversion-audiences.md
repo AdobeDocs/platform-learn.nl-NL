@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Conversiepubliek maken
 
-In deze video, leer hoe te om de bouwer van de publieksregel in Experience Platform te gebruiken om een publiek tot stand te brengen dat een omzettingsgebeurtenis, of op een Website of in andere gegevenssystemen heeft uitgevoerd. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+In deze video, leer hoe te om de bouwer van de publieksregel in Experience Platform te gebruiken om een publiek tot stand te brengen dat een omzettingsgebeurtenis, of op een Website of in andere gegevenssystemen heeft uitgevoerd. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

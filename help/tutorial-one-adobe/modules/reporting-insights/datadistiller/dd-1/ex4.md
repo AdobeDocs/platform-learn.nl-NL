@@ -179,7 +179,7 @@ Het grootste deel van de bedrijfslogica vereist het verzamelen van de aanrakings
 
 ### Door Adobe gedefinieerde functies
 
-Adobe heeft een reeks **Adobe bepaalde Functies** aan de standaardSQL syntaxis toegevoegd die u toestaat om uw ervaringsgegevens beter te begrijpen. In de volgende paar vragen zult u over deze functies ADF leren. U kunt meer informatie en de volledige lijst [ in de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html) vinden.
+Adobe heeft een reeks **Adobe bepaalde Functies** aan de standaardSQL syntaxis toegevoegd die u toestaat om uw ervaringsgegevens beter te begrijpen. In de volgende paar vragen zult u over deze functies ADF leren. U kunt meer informatie en de volledige lijst [ in de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=nl-NL) vinden.
 
 ### Wat doen mensen op de site voordat ze de pagina &quot;Service annuleren&quot; bereiken als derde pagina in een sessie?
 

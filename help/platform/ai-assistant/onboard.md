@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # AI Assistant gebruiken om de instaptijd te verkorten
 
-Leer hoe u AI Assistant gebruikt om snel nieuwe functies te ontwikkelen en de instaptijd te verminderen. Voor meer informatie, zie de [ gids van de Vraag voor AI Medewerker ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Leer hoe u AI Assistant gebruikt om snel nieuwe functies te ontwikkelen en de instaptijd te verminderen. Voor meer informatie, zie de [ gids van de Vraag voor AI Medewerker ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

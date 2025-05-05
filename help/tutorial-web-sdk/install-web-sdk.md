@@ -71,7 +71,7 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 
    ![ selectie DataStream ](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
+Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
 
 >[!NOTE]
 >

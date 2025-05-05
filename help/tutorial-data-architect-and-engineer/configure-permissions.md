@@ -21,7 +21,7 @@ ht-degree: 1%
 
 In deze les configureert u Adobe Experience Platform-gebruikersmachtigingen met behulp van [!DNL Adobe's Admin Console] en het scherm [!UICONTROL Permissions] in de interface Platform.
 
-Toegangsbeheer is een sleutelfunctie voor privacy in Experience Platform en wij raden u aan de machtigingen tot het minimum te beperken dat vereist is voor het uitvoeren van hun taakfuncties. Zie de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html) voor meer informatie.
+Toegangsbeheer is een sleutelfunctie voor privacy in Experience Platform en wij raden u aan de machtigingen tot het minimum te beperken dat vereist is voor het uitvoeren van hun taakfuncties. Zie de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) voor meer informatie.
 
 Data Architects en Data Engineers zijn krachtige gebruikers van Adobe Experience Platform en u hebt veel machtigingen nodig om deze zelfstudie en later in uw dagelijkse werk te kunnen voltooien. De Architecten van gegevens zijn waarschijnlijk betrokken bij het beleid van *andere gebruikers van het Platform* bij hun bedrijf zoals marketers, analisten, en gegevenswetenschappers. Aangezien u deze les voltooit, denk over hoe u deze eigenschappen zou kunnen gebruiken om andere gebruikers bij uw bedrijf te beheren.
 

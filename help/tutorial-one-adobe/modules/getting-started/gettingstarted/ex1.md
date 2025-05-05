@@ -58,7 +58,7 @@ In het **menu van uitbreidingen**, klik het **puzzelstuk** pictogram en speld he
 
 ## De Chrome-extensie configureren
 
-Ga naar [ https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} en klik dan het uitbreidingspictogram om het te openen.
+Ga naar [ https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} en klik dan het uitbreidingspictogram om het te openen.
 
 ![ DSN ](./images/tuthome.png)
 
@@ -135,7 +135,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** op deze pagina door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 

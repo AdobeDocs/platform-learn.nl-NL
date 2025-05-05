@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Partnerkenmerken toevoegen aan profielen van eerste partijen in [!DNL Real-Time CDP]
 
-Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen in [!DNL Real-Time CDP] uit te breiden. Voor meer informatie, gelieve de [ eerste partijprofielen van de Supplement met partner-verstrekte attributen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentatie te bezoeken.
+Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen in [!DNL Real-Time CDP] uit te breiden. Voor meer informatie, gelieve de [ eerste partijprofielen van de Supplement met partner-verstrekte attributen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=nl-NL) documentatie te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

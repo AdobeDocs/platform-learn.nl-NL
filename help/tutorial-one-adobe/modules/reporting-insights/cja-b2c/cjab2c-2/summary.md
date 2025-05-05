@@ -36,8 +36,8 @@ U kunt nu het volgende:
 
 ## Bekijk dit
 
-- Help Center: [ Source Connectors - Google BigQuery-connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
-- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- Help Center: [ Source Connectors - Google BigQuery-connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=nl-NL)
+- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
 
 ## Volgende stappen
 

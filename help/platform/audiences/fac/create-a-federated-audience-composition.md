@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Een federatieve publiekscompositie maken
 
-Leer hoe te om een gefederaliseerde publiekssamenstelling tot stand te brengen, en hoe te om de vraag in UI tot stand te brengen die in uw gegevenspakhuis zal bereiken en de juiste gegevens zal selecteren. Voor meer informatie, gelieve te bezoeken {de documentatie van de Samenstelling van het 0} Federatieve publiek [&#128279;](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home){target="_blank"} .
+Leer hoe te om een gefederaliseerde publiekssamenstelling tot stand te brengen, en hoe te om de vraag in UI tot stand te brengen die in uw gegevenspakhuis zal bereiken en de juiste gegevens zal selecteren. Voor meer informatie, gelieve te bezoeken {de documentatie van de Samenstelling van het 0} Federatieve publiek [&#128279;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/home){target="_blank"} .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)

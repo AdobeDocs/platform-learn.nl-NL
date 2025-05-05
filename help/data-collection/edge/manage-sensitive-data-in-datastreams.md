@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Beheerde gegevens in gegevensstromen beheren
 
-Leer hoe u vertrouwelijke gegevens in gegevensstromen beheert.  Voor meer informatie, zie [ de documentatie van gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
+Leer hoe u vertrouwelijke gegevens in gegevensstromen beheert.  Voor meer informatie, zie [ de documentatie van gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)

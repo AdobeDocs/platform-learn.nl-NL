@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Goedkeuringssignalen controleren en valideren
 
-Leer hoe u kunt controleren of de machtigingsinstellingen correct zijn toegepast op uw gegevens in Adobe Experience Platform. Zie de toestemmingsdocumentatie voor meer informatie over [ het testen van uw implementatie ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation).
+Leer hoe u kunt controleren of de machtigingsinstellingen correct zijn toegepast op uw gegevens in Adobe Experience Platform. Zie de toestemmingsdocumentatie voor meer informatie over [ het testen van uw implementatie ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=nl-NL#test-implementation).
 
 >[!NOTE]
 >

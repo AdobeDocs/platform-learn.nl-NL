@@ -23,9 +23,9 @@ Deze module introduceert enkele concepten en technologieën die een impact hebbe
 - Leer de gegevensstromen die door een merk worden gebruikt om gegevens aan hun producten van de Adobe in te voeren.
 - Leer hoe u gegevens naar de Adobe Experience Platform en andere producten kunt verzenden via de Adobe Experience Platform Edge Network.
 - Leer hoe u gegevenselementen en regels maakt die gegevens verzamelen van internet en mobiele apparatuur.
-- Leer over het [ Web SDK ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) volgende gebeurtenissen en hoe te om hun inhoud te zuiveren.
+- Leer over het [ Web SDK ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) volgende gebeurtenissen en hoe te om hun inhoud te zuiveren.
 - Leer wat een gegevenslaag is en welke Adobe adviseert wanneer het uitvoeren van één.
-- Leer wat de stappen [ SDK van het Web ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) van kras moeten uitvoeren.
+- Leer wat de stappen [ SDK van het Web ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) van kras moeten uitvoeren.
 - Leer het verschil tussen een web- en mobiele implementatie.
 
 ## Vereisten

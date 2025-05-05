@@ -41,7 +41,7 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
 1. Inhoud-API voor levering
    - De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    - De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
-   - De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - De directe inhoudslevering is ook mogelijk met de [ uitvoer JSON van de Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL).
 
 ## Uitoefening
 

@@ -108,7 +108,7 @@ Iets echt belangrijk is de **montages van de persistentie**. Het concept gebeurt
 
 Als u deze montages niet verandert, zal CJA de dimensie als a **Prop** (klapniveau) interpreteren. Ook, kunnen wij Persistence veranderen om de dimensie tot **eVar** (voorhoud de waarde over de reis) te maken.
 
-Als u niet vertrouwd met eVars en Props bent, kunt u [ meer over hen in de documentatie ](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html) lezen.
+Als u niet vertrouwd met eVars en Props bent, kunt u [ meer over hen in de documentatie ](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=nl-NL) lezen.
 
 Laten we de paginanaam als een pop-up opgeven. Als dusdanig, te hoeven u om het even welke **Persistence Montages** niet te veranderen.
 

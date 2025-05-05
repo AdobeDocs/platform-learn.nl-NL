@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Attribution AI configureren
 
-Leer hoe u een instantie van Attribution AI kunt maken om de impact van uw marketingkanalen en campagnes te begrijpen. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Leer hoe u een instantie van Attribution AI kunt maken om de impact van uw marketingkanalen en campagnes te begrijpen. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)

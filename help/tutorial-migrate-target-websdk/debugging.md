@@ -40,7 +40,7 @@ Het Adobe Experience Platform Debugger kan worden geïnstalleerd in Google Chrom
 
 Nadat u de Chrome-extensie of de Firefox-invoegtoepassing hebt geïnstalleerd, wordt een pictogram (![](assets/start-icon.jpg)) toegevoegd aan de uitbreidingsbalk. Selecteer dit pictogram om de extensie te openen.
 
-Verwijs naar de specifieke gids voor meer informatie over de [ uitbreiding van het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) en hoe te om alle toepassingen van het Web van de Adobe te zuiveren.
+Verwijs naar de specifieke gids voor meer informatie over de [ uitbreiding van het Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL) en hoe te om alle toepassingen van het Web van de Adobe te zuiveren.
 
 ## Voorvertoning van doelactiviteiten weergeven met URL&#39;s met kwaliteitscontrole
 
@@ -52,7 +52,7 @@ Doel QA URLs die door at.js of het Web SDK van het Platform werken op te dragen 
 >
 >De functionaliteit van de doel-QA-modus wordt ondersteund door Platform Web SDK versie 2.13.0 of hoger. De doel-QA-modus wordt ingeschakeld op basis van de `xdm.web.webPageDetails.URL` -waarde die wordt doorgegeven in de `sendEvent` -aanroep. Eventuele wijzigingen in deze waarde, zoals het verlagen van alle tekens, kunnen ertoe leiden dat de modus Doel-QA niet goed werkt.
 
-Verwijs naar de specifieke gids voor meer informatie over [ activiteit QA van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Verwijs naar de specifieke gids voor meer informatie over [ activiteit QA van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=nl-NL).
 
 ## Implementatie van foutopsporing
 
@@ -130,7 +130,7 @@ Nadat u **[!UICONTROL View]** hebt geselecteerd, wordt een bedekking weergegeven
 - Gegevens aanvragen
 - Momentopname profiel
 
-Verwijs naar de specifieke gids over [ het zuiveren de inhoudslevering van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) voor meer informatie over de sporen van het Doel.
+Verwijs naar de specifieke gids over [ het zuiveren de inhoudslevering van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=nl-NL) voor meer informatie over de sporen van het Doel.
 
 ### Problemen oplossen met Betrouwbaarheid
 

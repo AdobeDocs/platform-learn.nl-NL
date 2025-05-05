@@ -217,10 +217,10 @@ Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten begi
 ![ de Toestemming Optie van de Bezoeker van Post ](assets/consent-post-user-optin.png)
 
 
-Voor meer informatie over toestemming in Web SDK, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Voor meer informatie over toestemming in Web SDK, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [ toestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [ toestemming ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
 
 [Volgende: ](setup-event-forwarding.md)
 

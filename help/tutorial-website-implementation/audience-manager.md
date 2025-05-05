@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Deze les zal u door de stappen begeleiden om Adobe Audience Manager toe te laten gebruikend Server-kant Door:sturen.
 
-[ Adobe Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
+[ Adobe Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=nl-NL) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
 > * Platform launch (de Kant van de Cliënt) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
 
 ## Leerdoelen
 
@@ -44,7 +44,7 @@ Om deze les te voltooien, zult u nodig hebben:
 
    ![ u kunt Debugger gebruiken om Audience Manager Subdomain op uw daadwerkelijke website ](images/aam-debugger-partner.png) te vinden
 
-Als u reeds uitgevoerde Audience Manager niet hebt, volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html) te verkrijgen.
+Als u reeds uitgevoerde Audience Manager niet hebt, volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 ## Implementatieopties
 
@@ -54,7 +54,7 @@ Er zijn twee manieren om Audience Manager in een website te implementeren:
 
 * **client-kant DIL** - deze benadering is voor klanten die geen Adobe Analytics hebben. DIL code (de Code van de Data Integration Library, de de configuratiecode van AAM JavaScript) verzendt direct gegevens van de Web-pagina in Audience Manager.
 
-Aangezien u Adobe Analytics in deze zelfstudie al hebt geïmplementeerd, implementeert u Audience Manager met behulp van Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
+Aangezien u Adobe Analytics in deze zelfstudie al hebt geïmplementeerd, implementeert u Audience Manager met behulp van Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=nl-NL), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
 
 ## Server-Side Forwarding inschakelen
 
@@ -95,7 +95,7 @@ Een configuratie in de Admin Console van Adobe Analytics wordt vereist beginnen 
 >
 >Aangezien SSF per rapportreeks moet worden toegelaten, vergeet niet deze stap voor uw echte rapportreeksen te herhalen wanneer u SSF op uw daadwerkelijke het rapportreeks van de plaats opstelt.
 >
->Ook, als de optie SSF uit grayed is, zult u de rapportreeks(en) aan uw Experience CloudOrg moeten in kaart brengen om de optie toe te laten. Dit wordt verklaard in [ de documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+>Ook, als de optie SSF uit grayed is, zult u de rapportreeks(en) aan uw Experience CloudOrg moeten in kaart brengen om de optie toe te laten. Dit wordt verklaard in [ de documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
 
 Zodra deze stap is voltooid en als u de Adobe Experience Platform Identity Service hebt ingeschakeld, worden de gegevens doorgestuurd van Analytics naar AAM. Als u het proces echter wilt voltooien, zodat de reactie correct terugkomt van AAM naar de pagina (en ook naar Analytics via de functie Audience Analytics), moet u ook de volgende stap in de labels uitvoeren. Maak je geen zorgen, het is supergemakkelijk.
 
@@ -117,7 +117,7 @@ Dit is de tweede van twee stappen om SSF toe te laten. U hebt de switch al gespi
 
 1. Schakel het selectievakje in op **[!UICONTROL Automatically share Analytics Data with Audience Manager]** . Hiermee voegt u de Audience Manager &quot;Module&quot; (code) toe aan de implementatie Analytics `AppMeasurement.js` .
 
-1. Voeg uw &quot;Subdomain van de Audience Manager&quot;toe (die ook als &quot;Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner&quot;wordt bekend). Volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html) te verkrijgen.
+1. Voeg uw &quot;Subdomain van de Audience Manager&quot;toe (die ook als &quot;Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner&quot;wordt bekend). Volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
