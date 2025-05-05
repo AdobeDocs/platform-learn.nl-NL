@@ -87,7 +87,7 @@ Eerst moeten we de `$id` van de `Luma CRM Schema` ophalen:
 
 Nu kunt u de dataset tot stand brengen:
 
-1. De dienst API.postman_collection.json van de Catalogus van de download [ ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) aan uw `Luma Tutorial Assets` omslag.
+1. De dienst API.postman_collection.json van de Catalogus van de download [&#128279;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) aan uw `Luma Tutorial Assets` omslag.
 1. De verzameling importeren in [!DNL Postman]
 1. Selecteer de aanvraag **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Plak het volgende als **Lichaam** van het verzoek, ***die de waarde van identiteitskaart met uw vervangen***:

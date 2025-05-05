@@ -30,7 +30,7 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 ## Vereiste machtigingen
 
-In [ vorm de 1} les van Toestemmingen {, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
+In [ vorm de 1&rbrace; les van Toestemmingen &lbrace;, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
 
 * Machtigingspunten **[!UICONTROL Profile Management]** > **[!UICONTROL Manage Segments]** , **[!UICONTROL View Segments]** en **[!UICONTROL Export Audience Segment]**
 * Machtigingspunten **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** en **[!UICONTROL Manage Profiles]**

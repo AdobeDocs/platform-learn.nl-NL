@@ -33,7 +33,7 @@ Klik **creëren nieuwe verbinding**.
 
 ![ demo ](./images/conn3.png)
 
-U zult dan **** UI zien creëren Verbinding.
+U zult dan **&#x200B;**&#x200B;UI zien creëren Verbinding.
 
 ![ demo ](./images/5.png)
 
@@ -127,7 +127,7 @@ U kunt nu componenten toevoegen aan uw gegevensweergave. Zoals u kunt zien, word
 
 ![ demo ](./images/24.png)
 
-Voeg de onderstaande componenten toe aan de gegevensweergave. Zorg er ook voor dat u de veldnamen bijwerkt naar vriendelijke namen. Om dat te doen, selecteer metrisch of afmeting en werk het **gebied van de 1} naam van de Component** in het juiste menu bij.
+Voeg de onderstaande componenten toe aan de gegevensweergave. Zorg er ook voor dat u de veldnamen bijwerkt naar vriendelijke namen. Om dat te doen, selecteer metrisch of afmeting en werk het **gebied van de 1&rbrace; naam van de Component** in het juiste menu bij.
 
 | Componenttype | Oorspronkelijke naam component | Weergavenaam | Componentpad |
 | -----------------| -----------------|-----------------|-----------------|
@@ -328,7 +328,7 @@ Om die functionaliteit te tonen, vormen wij uw eerste uitsplitsing die off-line 
 
 ![ demo ](./images/pro28.png)
 
-Daarna, analyseren welk **Type van Apparaat** door klanten wordt gebruikt die aan de plaats gebruikend **biologisch Onderzoek** met a **Niveau van de Loyaliteit** kwamen dat **** Bronze is. Neem het Type van Apparaat van Dimension **** en sleep en laat vallen het op **Bronze**. U zult dan dit zien:
+Daarna, analyseren welk **Type van Apparaat** door klanten wordt gebruikt die aan de plaats gebruikend **biologisch Onderzoek** met a **Niveau van de Loyaliteit** kwamen dat **&#x200B;**&#x200B;Bronze is. Neem het Type van Apparaat van Dimension **&#x200B;**&#x200B;en sleep en laat vallen het op **Bronze**. U zult dan dit zien:
 
 ![ demo ](./images/pro29.png)
 
@@ -376,7 +376,7 @@ Nu selecteer de **Vallout** Visualisatie.
 
 Als analist stelt u zich voor dat u wilt begrijpen wat er gebeurt met uw belangrijkste e-commercetrechter: Home > Intern zoeken > Productdetails > Afhandeling > Aanschaffen.
 
-Laten we beginnen met het toevoegen van nieuwe stappen aan de trechter. Om dat te doen, open de **dimensie van de Naam van de 0} Pagina.**
+Laten we beginnen met het toevoegen van nieuwe stappen aan de trechter. Om dat te doen, open de **dimensie van de Naam van de 0&rbrace; Pagina.**
 
 ![ demo ](./images/pro37.png)
 
@@ -392,7 +392,7 @@ Als tweede stap, gebruik de **onderzoeksresultaten van de Opslag**
 
 ![ demo ](./images/pro40.png)
 
-Nu moet u wat e-commerce acties toevoegen. In de Dimensies, onderzoek naar het Type van de Gebeurtenis van Dimension **** dimensie. Klik om de dimensie te openen.
+Nu moet u wat e-commerce acties toevoegen. In de Dimensies, onderzoek naar het Type van de Gebeurtenis van Dimension **&#x200B;**&#x200B;dimensie. Klik om de dimensie te openen.
 
 ![ demo ](./images/pro41.png)
 
@@ -480,7 +480,7 @@ Nu moet je de visualisatie als volgt zien:
 
 ![ demo ](./images/pro61.png)
 
-Laten we dingen compliceren. Stel dat u wilt analyseren wat de landingspagina was na twee marketingpaden? Hiervoor kunt u een secundaire dimensie gebruiken om het laatste pad te wijzigen. Vind de **dimensie van de Naam van de 0} Pagina {en sleep en laat vallen het als dit:**
+Laten we dingen compliceren. Stel dat u wilt analyseren wat de landingspagina was na twee marketingpaden? Hiervoor kunt u een secundaire dimensie gebruiken om het laatste pad te wijzigen. Vind de **dimensie van de Naam van de 0&rbrace; Pagina &lbrace;en sleep en laat vallen het als dit:**
 
 ![ demo ](./images/pro62n.png)
 
@@ -498,7 +498,7 @@ Dan heb je het volgende:
 
 ![ demo ](./images/pro64a.png)
 
-Vind het Type van de Gebeurtenis van Dimension **** en sleep en laat vallen het aan het **afmeting van de Uitgang** gebied.
+Vind het Type van de Gebeurtenis van Dimension **&#x200B;**&#x200B;en sleep en laat vallen het aan het **afmeting van de Uitgang** gebied.
 
 ![ demo ](./images/pro65.png)
 

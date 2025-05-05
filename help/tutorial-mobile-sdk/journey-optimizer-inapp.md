@@ -94,7 +94,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.[
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
 
@@ -123,7 +123,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ het Overseinen van AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. In Xcode, zorg ervoor dat [ het Overseinen van AEP ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPMessaging` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -180,6 +180,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
 1. In het **[!UICONTROL Create Campaign]** -scherm:
    1. Selecteer **[!UICONTROL In-app message]** en selecteer bijvoorbeeld een toepassingsoppervlak in de lijst **[!UICONTROL App surface]** **[!DNL Luma Mobile App]** .
    1. Selecteren **[!UICONTROL Create]**
+
       ![ Eigenschappen van de Campagne ](assets/ajo-campaign-properties.png)
 1. Voer in het definitiescherm Campagne op **[!UICONTROL Properties]** een **[!UICONTROL Name]** voor de campagne in, bijvoorbeeld `Luma - In-App Messaging Campaign` , en een **[!UICONTROL Description]** , bijvoorbeeld `In-app messaging campaign for Luma app` .
    ![ naam van de Campagne ](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
    4. Voer **[!UICONTROL Dismiss]** in als de **[!UICONTROL Button #1 text (primary)]** .
    5. De voorvertoning wordt bijgewerkt.
    6. Selecteer **[!UICONTROL Review to activate]**.
+
       ![ In-app redacteur ](assets/ajo-in-app-editor.png)
 1. In het **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** scherm, uitgezocht ![ geef ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in de **[!UICONTROL Schedule]** tegel uit.
    ![ programma van het Overzicht uitgezocht Programma ](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
    1. Om **[!UICONTROL Application launch event]** te verwijderen, selecteer ![ Sluiten ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).
    1. Het gebruik ![ voegt ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **[!UICONTROL Add condition]** herhaaldelijk om de volgende logica voor **[!UICONTROL Show message if]** te bouwen.
    1. Klik op **[!UICONTROL Done]**.
+
       ![ de logica van de Trekker ](assets/ajo-trigger-logic.png)
 
    U hebt een handeling track gedefinieerd, waarbij de waarde **[!UICONTROL Action]** gelijk is aan `in-app` en de waarde **[!UICONTROL Context data]** aan de handeling een sleutelwaardepaar is van `"showMessage" : "true"` .

@@ -302,7 +302,7 @@ Plaats de **Slaap** knoop binnen tussen **vastgestelde veelvoudige variabelen** 
 
 ![ WF Fusion ](./images/wffusion91.png)
 
-Het scherm moet er zo uitzien. De uitdaging met de onderstaande configuratie is dat 5 seconden wachten genoeg kan zijn, maar misschien is het niet genoeg. In werkelijkheid, zou het beter zijn om een intelligentere oplossing zoals een do.. terwijl lijn te hebben die de status om de 5 seconden controleert tot de status **** wordt geëist. Dus je kunt zo&#39;n tactiek in de volgende stappen implementeren.
+Het scherm moet er zo uitzien. De uitdaging met de onderstaande configuratie is dat 5 seconden wachten genoeg kan zijn, maar misschien is het niet genoeg. In werkelijkheid, zou het beter zijn om een intelligentere oplossing zoals een do.. terwijl lijn te hebben die de status om de 5 seconden controleert tot de status **&#x200B;**&#x200B;wordt geëist. Dus je kunt zo&#39;n tactiek in de volgende stappen implementeren.
 
 ![ WF Fusion ](./images/wffusion92.png)
 
@@ -396,7 +396,7 @@ Na het toevoegen van de router, selecteer het **moersleutelpictogram** en select
 
 ![ WF Fusion ](./images/wffusion114.png)
 
-Voor het etiket, gebruik **wij worden gedaan**. Plaats de **Voorwaarde** gebruikend de reactie van de **3} knoop van de Status van de Controle van Photoshop door het antwoordgebied te kiezen** data.outputs [] .status **, zou de exploitant aan** Gelijk aan **moeten worden geplaatst en de waarde zou `succeeded` moeten zijn.** Selecteer **O.K.**.
+Voor het etiket, gebruik **wij worden gedaan**. Plaats de **Voorwaarde** gebruikend de reactie van de **3&rbrace; knoop van de Status van de Controle van Photoshop door het antwoordgebied te kiezen** data.outputs [] .status **, zou de exploitant aan** Gelijk aan **moeten worden geplaatst en de waarde zou `succeeded` moeten zijn.** Selecteer **O.K.**.
 
 ![ WF Fusion ](./images/wffusion115.png)
 
@@ -436,7 +436,7 @@ Selecteer **sparen** om uw scenario te bewaren. Selecteer vervolgens   **Looppas
 
 ![ WF Fusion ](./images/wffusion124.png)
 
-Uw scenario wordt dan uitgevoerd en zou met succes moeten beëindigen. Bericht dat doe...while lijn die u vormde het werk fijn. In de onderste looppas, kunt u zien dat de **Repeater** 20 keer liep die op de bel op **wordt gebaseerd Hulpmiddelen > krijgt veelvoudige variabelen** knoop. Na die knoop, vormde u een filter dat de status controleerde en slechts als de status niet gelijk was aan **succesvol**, werden de volgende knopen uitgevoerd. In deze looppas, liep het deel na de filter slechts eenmaal, omdat de status reeds **** in de eerste looppas werd succesvol.
+Uw scenario wordt dan uitgevoerd en zou met succes moeten beëindigen. Bericht dat doe...while lijn die u vormde het werk fijn. In de onderste looppas, kunt u zien dat de **Repeater** 20 keer liep die op de bel op **wordt gebaseerd Hulpmiddelen > krijgt veelvoudige variabelen** knoop. Na die knoop, vormde u een filter dat de status controleerde en slechts als de status niet gelijk was aan **succesvol**, werden de volgende knopen uitgevoerd. In deze looppas, liep het deel na de filter slechts eenmaal, omdat de status reeds **&#x200B;**&#x200B;in de eerste looppas werd succesvol.
 
 ![ WF Fusion ](./images/wffusion125.png)
 

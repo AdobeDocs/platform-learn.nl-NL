@@ -27,7 +27,7 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 ![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-Ga naar **Doelen**, dan klik **doorbladeren**. U zult dan alle beschikbare bestemmingen zien. Bepaal de plaats van uw bestemming en klik de 3 punten**..** zoals hieronder vermeld, dan klik **actief publiek**.
+Ga naar **Doelen**, dan klik **doorbladeren**. U zult dan alle beschikbare bestemmingen zien. Bepaal de plaats van uw bestemming en klik de 3 punten&#x200B;**..** zoals hieronder vermeld, dan klik **actief publiek**.
 
 ![ 5-01-select-destination.png ](./images/501selectdestination.png)
 

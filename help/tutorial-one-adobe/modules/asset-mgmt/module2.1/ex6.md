@@ -157,7 +157,7 @@ Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan n
 
 ### orgId
 
-Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan naar **Vragen** in het linkermenu. Onder **Geloofsbrieven**, zult u **IMS Org identiteitskaart** als **Gebruikersnaam** vinden. Klik het **pictogram van het 0} exemplaar {om** IMS Org identiteitskaart **te kopiëren en het in de Code van Visual Studio, in het dossier** scripts.js **te kleven, door de placeholder waarde `XXX` naast `orgId:` te vervangen.**
+Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan naar **Vragen** in het linkermenu. Onder **Geloofsbrieven**, zult u **IMS Org identiteitskaart** als **Gebruikersnaam** vinden. Klik het **pictogram van het 0&rbrace; exemplaar &lbrace;om** IMS Org identiteitskaart **te kopiëren en het in de Code van Visual Studio, in het dossier** scripts.js **te kleven, door de placeholder waarde `XXX` naast `orgId:` te vervangen.**
 
 ![ AEMCS ](./images/scriptsvar2.png){zoomable="yes"}
 
@@ -382,7 +382,7 @@ In het linkermenu, ga naar **Klant** > **Profielen** > **doorbladeren**. Selecte
 
 ![ AEMCS ](./images/plweb4.png){zoomable="yes"}
 
-U zult dan het **overzicht van het Dashboard van het 0} Profiel zien {, dat ECID toont.** Daarna, ga naar **Gebeurtenissen**.
+U zult dan het **overzicht van het Dashboard van het 0&rbrace; Profiel zien &lbrace;, dat ECID toont.** Daarna, ga naar **Gebeurtenissen**.
 
 ![ AEMCS ](./images/plweb5.png){zoomable="yes"}
 

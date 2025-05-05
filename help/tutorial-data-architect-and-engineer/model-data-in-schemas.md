@@ -144,8 +144,10 @@ De nieuwe, lege veldgroep wordt toegevoegd aan uw schema. Met de knoppen **[!UIC
    1. **[!UICONTROL Display name]**: `System Identifier`
    1. **[!UICONTROL Type]**: **[!UICONTROL Object]**
    1. In **[!UICONTROL Field Group]** dropdown selecteer de **Luminantiegids de groep van het profielgebied van de Identiteit** die wij hebben gecreeerd.
+
       ![ voeg een nieuwe gebiedsgroep ](assets/schemas-loyalty-addSystemIdentifier.png) toe
    1. Selecteren **[!UICONTROL Apply]**
+
       ![ pas nieuwe gebiedseigenschappen ](assets/schemas-loyalty-applySystemIdentifier.png) toe
 
 Voeg nu twee velden toe onder het object `systemIdentifier` :

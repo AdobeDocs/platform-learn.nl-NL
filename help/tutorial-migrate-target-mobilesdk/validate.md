@@ -25,11 +25,11 @@ Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur
 
 De technische validatie en probleemoplossing met Platform Mobile SDK en de extensie voor besluitvorming worden aanzienlijk verbeterd met Assurance. Raadpleeg de volgende documentatiepagina&#39;s voor meer informatie over dit essentiële hulpmiddel:
 
-* [ Vestiging de stoppen van het Beslissen in Assurance ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/) {target=_blank}
+* [ Vestiging de stoppen van het Beslissen in Assurance ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank} 
 
-* [ Valideren optimaliseert SDK opstelling ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/) {target=_blank}
+* [ Valideren optimaliseert SDK opstelling ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank} 
 
-* [ verzoeken van het Overzicht en simuleren verschillende ervaringen ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/) {target=_blank}
+* [ verzoeken van het Overzicht en simuleren verschillende ervaringen ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank} 
 
 Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u er zeker van zijn dat de implementatie van Platform Mobile SDK met de extensie Decisioning gereed is om over te stappen naar de productie.
 

@@ -164,7 +164,7 @@ Open het verzoek **3. Krijg de Status van CM** en klik **verzenden**. Vervolgens
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm35.png){zoomable="yes"}
 
-Na een paar notulen, verzend **** opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
+Na een paar notulen, verzend **&#x200B;**&#x200B;opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm36.png){zoomable="yes"}
 

@@ -29,7 +29,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -80,7 +80,7 @@ In uw bezit van de Inzameling van Gegevens, ga naar **Uitbreidingen**. Vervolgen
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop1.png)
 
-U zult dan zien dat uw gegevensstroom voor mobiel hier verbonden is. Daarna, annuleert de klik **** om terug naar uw uitbreidingsoverzicht te gaan.
+U zult dan zien dat uw gegevensstroom voor mobiel hier verbonden is. Daarna, annuleert de klik **&#x200B;**&#x200B;om terug naar uw uitbreidingsoverzicht te gaan.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop2.png)
 
@@ -88,7 +88,7 @@ Dan ben je weer terug hier. U zult de uitbreiding voor **AEP Assurance** zien. M
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop8.png)
 
-Daarna, vormt de klik **** om de uitbreiding **Adobe Journey Optimizer** te openen.
+Daarna, vormt de klik **&#x200B;**&#x200B;om de uitbreiding **Adobe Journey Optimizer** te openen.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop9.png)
 
@@ -201,7 +201,7 @@ Ga naar **Push zuivert**.
 
 >[!NOTE]
 >
->In het geval dat u **Push niet kunt vinden zuivert** in het linkermenu, **** vormt {in de bodem linkerhoek van uw scherm en voegt **Push toe zuivert** aan het menu.
+>In het geval dat u **Push niet kunt vinden zuivert** in het linkermenu, **&#x200B;**&#x200B;vormt &lbrace;in de bodem linkerhoek van uw scherm en voegt **Push toe zuivert** aan het menu.
 
 Je ziet iets dergelijks.
 
@@ -238,7 +238,7 @@ Op het **scherm van Gebeurtenissen**, zult u een mening gelijkend op dit zien. K
 U ziet dan een lege gebeurtenisconfiguratie.
 Geef uw gebeurtenis eerst een naam zoals deze: `--aepUserLdap--StoreEntryEvent` en stel een beschrijving in op `Store Entry Event` .
 Daarna is het **Type van Gebeurtenis** selectie. Selecteer **Eenheids**.
-Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0}.** Selecteer **Gegenereerd Systeem**.
+Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0&rbrace;.** Selecteer **Gegenereerd Systeem**.
 
 ![ ACOP ](./images/eventname.png)
 
@@ -250,11 +250,11 @@ Klik **sparen**.
 
 ![ ACOP ](./images/eventschema.png)
 
-Uw gebeurtenis is nu geconfigureerd en opgeslagen. Klik opnieuw op uw gebeurtenis om **te openen geef het 1} scherm van de Gebeurtenis {opnieuw uit.**
+Uw gebeurtenis is nu geconfigureerd en opgeslagen. Klik opnieuw op uw gebeurtenis om **te openen geef het 1&rbrace; scherm van de Gebeurtenis &lbrace;opnieuw uit.**
 
 ![ ACOP ](./images/eventdone.png)
 
-Beweeg over het **gebied van de Payload** en klik op het **3} pictogram van de Payload van de Mening {.**
+Beweeg over het **gebied van de Payload** en klik op het **3&rbrace; pictogram van de Payload van de Mening &lbrace;.**
 
 ![ ACOP ](./images/hover.png)
 
@@ -313,7 +313,7 @@ Klik **sparen**.
 
 ![ Duw ](./images/bp10.png)
 
-U hebt dit nu. Klik het **verpersoonlijkings** pictogram voor het **3} gebied van het Lichaam {.**
+U hebt dit nu. Klik het **verpersoonlijkings** pictogram voor het **3&rbrace; gebied van het Lichaam &lbrace;.**
 
 ![ Duw ](./images/bp11.png)
 

@@ -183,7 +183,7 @@ Klik **sparen** om uw veranderingen te bewaren.
 
 ![ Kader IO ](./images/aemf32.png)
 
-Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **** wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0} tussen de modules** Frame.io - krijg een activa **en** Adobe Photoshop - zet beeldformaat **om en selecteer dan** Opstelling een filter **.**
+Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **&#x200B;**&#x200B;wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0&rbrace; tussen de modules** Frame.io - krijg een activa **en** Adobe Photoshop - zet beeldformaat **om en selecteer dan** Opstelling een filter **.**
 
 ![ Kader IO ](./images/aemf34.png)
 

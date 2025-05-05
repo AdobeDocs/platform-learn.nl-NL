@@ -93,6 +93,7 @@ De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Exp
    1. Selecteer **[!UICONTROL Mobile Core]** als de **[!UICONTROL Extension]** .
    1. Selecteer **[!UICONTROL Foreground]** als de **[!UICONTROL Event Type]** .
    1. Selecteer **[!UICONTROL Keep Changes]**.
+
       ![ Configuratie van de Gebeurtenis van de Regel ](assets/rule-event-configuration.png)
 1. Terug in het **[!UICONTROL Create Rule]** scherm, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** naast **[!UICONTROL Mobile Core - Foreground]** toe.
    ![ Volgende gebeurtenisconfiguratie ](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Exp
    1. Selecteer **[!UICONTROL Mobile Core]** als de **[!UICONTROL Extension]** .
    1. Selecteer **[!UICONTROL Background]** als de **[!UICONTROL Event Type]** .
    1. Selecteer **[!UICONTROL Keep Changes]**.
+
       ![ Configuratie van de Gebeurtenis van de Regel ](assets/rule-event-configuration-background.png)
 1. Terug in het **[!UICONTROL Create Rule]** scherm, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) toe **[!UICONTROL Add]** onder **[!UICONTROL ACTIONS]**.
    ![ Regel voegt Actie ](assets/rule-action-button.png) toe
@@ -107,6 +109,7 @@ De vorige oefening verzendt de voor- en achtergrondgebeurtenissen naar Adobe Exp
    1. Selecteer **[!UICONTROL Adobe Experience Edge Network]** als de **[!UICONTROL Extension]** .
    1. Selecteer **[!UICONTROL Forward event to Edge Network]** als de **[!UICONTROL Action Type]** .
    1. Selecteer **[!UICONTROL Keep Changes]**.
+
       ![ Configuratie van de Actie van de Regel ](assets/rule-action-configuration.png)
 1. Selecteer **[!UICONTROL Save to Library]**.
    ![ Regel - sparen aan Bibliotheek ](assets/rule-save-to-library.png)

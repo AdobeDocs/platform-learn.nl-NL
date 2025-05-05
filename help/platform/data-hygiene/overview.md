@@ -224,7 +224,7 @@ Er zijn veel mogelijkheden om u te helpen de gegevens uit het systeem te verwijd
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert ` </a>
+                        <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert &grave; </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een specifiek kenmerk van een profiel kunt bijwerken met de functie 'upsert' van Adobe Experience Platform.</p>
                 </div>

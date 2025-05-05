@@ -189,7 +189,7 @@ Voer de volgende stappen uit om de beslissingsregels te maken:
 
    ![ creeer de regel ](assets/decisioning-create-rule.png)
 
-1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
+1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **&#x200B;**&#x200B;is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
 
    ![ bepaal de regel ](assets/decisioning-define-rule.png)
 
@@ -240,7 +240,7 @@ Om de eerste **aanbieding** tot stand te brengen, volg deze stappen:
 
    ![ voeg aanbiedingsdetails toe ](assets/decisioning-add-offer-details.png)
 
-1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3} radioknoop van de Douane {.**
+1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3&rbrace; radioknoop van de Douane &lbrace;.**
 
    ![ voeg representatiedetails ](assets/decisioning-add-representation-details.png) toe
 
@@ -287,7 +287,7 @@ Ga als volgt te werk om de fallback-aanbieding te maken:
 
 **Besluiten** zijn containers voor aanbiedingen die de beste aanbieding beschikbaar voor een klant, afhankelijk van het doel kiezen.
 
-De lijst van besluiten is beschikbaar in het **1} lusje van Besluiten {van het** 3} menu van Aanbiedingen.****
+De lijst van besluiten is beschikbaar in het **1&rbrace; lusje van Besluiten {van het** 3} menu van Aanbiedingen.**&#x200B;**
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -335,7 +335,7 @@ Voer de volgende stappen uit om de beslissing te maken:
 
 Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze bevestiging doen door **testprofielen** te gebruiken. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
 
-Om met het testen te beginnen, selecteer het **** lusje van Simulaties van het **3} menu van Aanbiedingen {.**
+Om met het testen te beginnen, selecteer het **&#x200B;**&#x200B;lusje van Simulaties van het **3&rbrace; menu van Aanbiedingen &lbrace;.**
 
 ### Loyalty-aanbiedingen testen
 
@@ -391,7 +391,7 @@ De validatie starten met de foutopsporing:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Binnen het **lusje van de Configuratie**, Knevel op **toelaten het Zuiveren**. Dit laat registreren voor de zitting binnen een **1} zitting van de Verzekering van Adobe Experience Platform toe.**
+1. Binnen het **lusje van de Configuratie**, Knevel op **toelaten het Zuiveren**. Dit laat registreren voor de zitting binnen een **1&rbrace; zitting van de Verzekering van Adobe Experience Platform toe.**
    <!--
       ![ADD SCREENSHOT](#)
    -->

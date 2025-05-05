@@ -49,7 +49,7 @@ Als u deze zelfstudie wilt gebruiken met uw eigen Adobe Experience Cloud-exempla
 
 Deze zelfstudie maakt deel uit van een Adobe-certificeringscursus. Je kunt je naast deze tutorial aanmelden voor de cursus door naar [https://certification.adobe.com](https://certification.adobe.com) te gaan.
 
-Voor elke module die u voltooit met behulp van de onderstaande tutorial, moet u een bewijs van voltooiing indienen zoals hier](./completion.md) aangegeven[.
+Voor elke module die u voltooit met behulp van de onderstaande tutorial, moet u een bewijs van voltooiing indienen zoals hier[&#128279;](./completion.md) aangegeven.
 
 ## Status van de inhoud
 

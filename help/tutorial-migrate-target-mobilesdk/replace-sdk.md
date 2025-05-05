@@ -284,7 +284,7 @@ Veel API&#39;s voor Target-extensies hebben een equivalente aanpak met behulp va
 | [ setTntId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | n.v.t | [locationHint:de handle voor resultaatrespons](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} bevat de informatie over de hint voor de doellocatie. Er wordt aangenomen dat Target Edge zich op dezelfde locatie zal bevinden als Experience Edge. <br> <br>De Edge-netwerkextensie gebruikt de EdgeNetwork-locatiehint om te bepalen naar welk Edge-netwerkcluster aanvragen moeten worden verzonden. Als u een hint voor de locatie van het Edge-netwerk wilt delen met SDK&#39;s (hybride apps), gebruikt u `getLocationHint` API&#39;s `setLocationHint` van de Edge Network-extensie. Zie [de `getLocationHint` API-documentatie](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) voor meer informatie. |
 
 
-Leer vervolgens hoe u activiteiten](retrieve-activities.md) kunt [aanvragen en weergeven op de pagina.
+Leer vervolgens hoe u activiteiten[&#128279;](retrieve-activities.md) kunt aanvragen en weergeven op de pagina.
 
 >[!NOTE]
 >

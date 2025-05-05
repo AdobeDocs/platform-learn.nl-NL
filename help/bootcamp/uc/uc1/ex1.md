@@ -42,7 +42,7 @@ U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedra
 
 ![ Demo ](./images/pv3.png)
 
-Ga naar de **menuoptie van de Diensten van de Toepassing 0} {en klik op het product** Real-Time CDP **.**
+Ga naar de **menuoptie van de Diensten van de Toepassing 0&rbrace; &lbrace;en klik op het product** Real-Time CDP **.**
 
 ![ Demo ](./images/pv4.png)
 
@@ -50,7 +50,7 @@ Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring 
 
 ![ Demo ](./images/pv5.png)
 
-Ga naar de **menuoptie van de Diensten van de Toepassing 0} {en klik op het product** Adobe Journey Optimizer **.** Er is een andere Experience Event verzonden naar Adobe Experience Platform.
+Ga naar de **menuoptie van de Diensten van de Toepassing 0&rbrace; &lbrace;en klik op het product** Adobe Journey Optimizer **.** Er is een andere Experience Event verzonden naar Adobe Experience Platform.
 
 ![ Demo ](./images/pv7.png)
 

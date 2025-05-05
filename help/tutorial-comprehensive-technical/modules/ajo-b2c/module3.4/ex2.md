@@ -17,7 +17,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -136,7 +136,7 @@ Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_Phone.jpg** t
 
 ![ Journey Optimizer ](./images/campaign16.png)
 
-De belemmering en laat vallen a **component van de Tekst van 0} {op de 3de en 4de rij.**
+De belemmering en laat vallen a **component van de Tekst van 0&rbrace; &lbrace;op de 3de en 4de rij.**
 
 ![ Journey Optimizer ](./images/campaign17.png)
 

@@ -48,7 +48,7 @@ Nog op de linkerkolom, klik op &quot;Controle&quot;
 
 ![ klik controle ](./images/monitoring.png)
 
-Het hoogste deel geeft u inzichten over het statuut van een groep projecten, zowel van het **status van Taken** punt van mening en van het **3} punt van de projectomstandigheden {:**
+Het hoogste deel geeft u inzichten over het statuut van een groep projecten, zowel van het **status van Taken** punt van mening en van het **3&rbrace; punt van de projectomstandigheden &lbrace;:**
 
 ![ overzicht ](./images/group-status.png)
 
@@ -62,7 +62,7 @@ Klik nog steeds in de linkerkolom op &#39;DASHBOARD INHOUD&#39;:
 
 ![ klik inhouddashboard ](./images/content-dashboard.png)
 
-Het hoogste deel geeft goed inzicht over al uw **status van de proefgoedkeuring van 0} document (is het goedgekeurd, hoeveel versies wij, enz. nodig hadden)**
+Het hoogste deel geeft goed inzicht over al uw **status van de proefgoedkeuring van 0&rbrace; document (is het goedgekeurd, hoeveel versies wij, enz. nodig hadden)**
 
 ![ bewijs van goedkeuringen ](./images/proof-of-approval.png)
 

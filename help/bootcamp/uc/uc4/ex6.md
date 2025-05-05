@@ -93,7 +93,7 @@ Dan, in het linkerzijmenu, onder **Gebeurtenissen**, selecteer **de Kwalificatie
 
 ![ demo ](./images/aud23.png)
 
-Onder Segment, geeft de klik **** uit om een segment te selecteren:
+Onder Segment, geeft de klik **&#x200B;**&#x200B;uit om een segment te selecteren:
 
 ![ demo ](./images/aud24.png)
 

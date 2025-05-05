@@ -25,7 +25,7 @@ Aan het eind van deze les, zult u kunnen:
 
 ## Vereisten
 
-U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
+U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}  en hebt de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -60,7 +60,7 @@ In de les Foutopsporing bekijken hoe we dit deden:
 
 ### Een Assurance-sessie starten vanuit de interface voor Betrouwbaarheid
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection/home) {target="_blank"}
+1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection/home){target="_blank"} 
 1. Selecteer Betrouwbaarheid in de linkernavigatie
 1. Sessie maken selecteren
    ![ creeer een zitting van de Verzekering ](assets/assurance-create-session.png)

@@ -122,7 +122,7 @@ In deze oefening leert u hoe te opstelling een gebeurtenis-door:sturen gegevense
 
 >[!IMPORTANT]
 >
->U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0} Codes in de [ eerste vereisten ](setup-event-forwarding.md#prerequisites) sectie.** Die stappen zorgen ervoor dat het gegeven wordt verzonden naar de Edge Network van het Platform, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
+>U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0&rbrace; Codes in de [ eerste vereisten ](setup-event-forwarding.md#prerequisites) sectie.** Die stappen zorgen ervoor dat het gegeven wordt verzonden naar de Edge Network van het Platform, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
 
 
 ### Een gegevenselement voor het doorsturen van gebeurtenissen maken

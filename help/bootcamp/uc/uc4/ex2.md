@@ -39,7 +39,7 @@ Laten we uw eerste verbinding maken. Klik **creëren nieuwe verbinding**.
 
 ![ demo ](./images/cja4.png)
 
-U zult dan **** UI zien creëren Verbinding.
+U zult dan **&#x200B;**&#x200B;UI zien creëren Verbinding.
 
 ![ demo ](./images/cja5.png)
 

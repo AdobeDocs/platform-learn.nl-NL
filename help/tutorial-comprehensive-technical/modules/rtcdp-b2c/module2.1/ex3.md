@@ -203,7 +203,7 @@ In **Adobe IO - OAuth** inzameling, selecteer het verzoek met de naam **POST - k
 
 ![ Postman ](./images/ioauth.png)
 
-Na een paar seconden, zou u een reactie moeten zien die in de **1} sectie van het Lichaam {van Postman wordt getoond:**
+Na een paar seconden, zou u een reactie moeten zien die in de **1&rbrace; sectie van het Lichaam &lbrace;van Postman wordt getoond:**
 
 ![ Postman ](./images/ioauthresp.png)
 
@@ -263,7 +263,7 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 
 
-Zodra u de zandbaknaam hebt gecontroleerd, verzendt de klik **** om uw verzoek naar Platform te verzenden.
+Zodra u de zandbaknaam hebt gecontroleerd, verzendt de klik **&#x200B;**&#x200B;om uw verzoek naar Platform te verzenden.
 
 U zou een directe reactie van Platform moeten krijgen, die u iets als dit toont:
 

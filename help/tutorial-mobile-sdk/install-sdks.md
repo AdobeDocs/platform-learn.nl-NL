@@ -24,8 +24,8 @@ Leer hoe u de Adobe Experience Platform Mobile SDK kunt implementeren in een mob
 
 * Opvolger bouwde met succes een markeringsbibliotheek met de uitbreidingen die in de [ vorige les ](configure-tags.md) worden beschreven.
 * Identiteitskaart van het Dossier van het Milieu van de ontwikkeling van [ Mobiele Installatieinstructies ](configure-tags.md#generate-sdk-install-instructions).
-* Gedownload lege [ steekproef app ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) {target="_blank"}.
-* Ervaring met [ Xcode ](https://developer.apple.com/xcode/) {target="_blank"}.
+* Gedownload lege [ steekproef app ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} .
+* Ervaring met [ Xcode ](https://developer.apple.com/xcode/){target="_blank"} .
 
 ## Leerdoelstellingen
 
@@ -136,7 +136,7 @@ De bovenstaande code doet het volgende:
 1. Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
 1. Schakelt foutopsporingslogbestand in. Meer details en de opties kunnen in de [ Mobiele documentatie van SDK van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/) worden gevonden.
 1. Start levenscycluscontrole. Zie [ Levenscyclus ](lifecycle-data.md) stap in het leerprogramma voor meer details.
-1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie ](consent.md) stap 0} van de Toestemming {in het leerprogramma voor meer details.[
+1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [&#128279;](consent.md) stap 0&rbrace; van de Toestemming &lbrace;in het leerprogramma voor meer details.
 
 >[!IMPORTANT]
 >

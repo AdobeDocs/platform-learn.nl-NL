@@ -194,7 +194,7 @@ Daarna, klik het blauwe **verzenden** knoop om het segment tot stand te brengen 
 
 ![Segmentatie](./images/s2_bodydtl_results.png)
 
-Wanneer de aanvraag succesvol is, wordt een vergelijkbare reactie als hieronder gegeven. De **staat** van de reactie kan ****, **IN_PROGRESS** of **SUCCESS** worden VERZONDEN. Het kan verscheidene notulen nemen alvorens de vraag a **SUCCESS** staat heeft. U kunt het verzenden van dit verzoek verscheidene tijden herhalen, tot u de **SUCCESS** staat ziet.
+Wanneer de aanvraag succesvol is, wordt een vergelijkbare reactie als hieronder gegeven. De **staat** van de reactie kan **&#x200B;**, **IN_PROGRESS** of **SUCCESS** worden VERZONDEN. Het kan verscheidene notulen nemen alvorens de vraag a **SUCCESS** staat heeft. U kunt het verzenden van dit verzoek verscheidene tijden herhalen, tot u de **SUCCESS** staat ziet.
 
 ```json
 {

@@ -42,13 +42,13 @@ De naam van uw **Namespace van de Hubs van de Gebeurtenis** is nu duidelijk zich
 
 ### Gebeurtenissenhub
 
-Op uw **pagina van de Hubs Namespace van de Gebeurtenis 0}**, klik **Entiteiten > de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een Hub van de Gebeurtenis genoemd `--aepUserLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
+Op uw **pagina van de Hubs Namespace van de Gebeurtenis 0&rbrace;**, klik **Entiteiten > de Hubs van de Gebeurtenis** om een lijst van Gebeurtenishubs te krijgen die in uw Namespace van de Hubs van de Gebeurtenis wordt bepaald, als u de noemende overeenkomsten volgde die in de vorige oefening worden gebruikt zult u een Hub van de Gebeurtenis genoemd `--aepUserLdap---aep-enablement-event-hub` vinden. Neem er nota van, u zult het in de volgende oefening nodig hebben.
 
 ![ 2-04-gebeurtenis-hub-selected.png ](./images/204eventhubselected.png)
 
 ### SAS-sleutelnaam
 
-Voor uw **pagina van Namespace van de Hubs van de Gebeurtenis 0} {, klik** Montages > Gedeeld toegangsbeleid **.** U zult een lijst van Gedeeld toegangsbeleid zien. De SAS Sleutel die wij zoeken is **RootManageSharedAccessKey**, die de **SAS Zeer belangrijke Naam is. Schrijf het op.
+Voor uw **pagina van Namespace van de Hubs van de Gebeurtenis 0&rbrace; &lbrace;, klik** Montages > Gedeeld toegangsbeleid **.** U zult een lijst van Gedeeld toegangsbeleid zien. De SAS Sleutel die wij zoeken is **RootManageSharedAccessKey**, die de **SAS Zeer belangrijke Naam is. Schrijf het op.
 
 ![ 2-05-select-sas.png ](./images/205selectsas.png)
 

@@ -117,7 +117,7 @@ Selecteer een productprofiel waarmee u eigenschappen voor gegevensverzameling ku
 
 ![ creeer zandbak ](./assets/images/io9.png)
 
-Dan zie je dit. Klik de huidige **naam van 0} Project XXX.**
+Dan zie je dit. Klik de huidige **naam van 0&rbrace; Project XXX.**
 
 ![ creeer zandbak ](./assets/images/io10.png)
 

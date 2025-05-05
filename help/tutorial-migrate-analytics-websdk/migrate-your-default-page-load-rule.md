@@ -33,6 +33,7 @@ In deze activiteit, zullen wij een actie van SDK van het Web tot stand brengen d
 
    ![ Adobe Analytics - reeks Variabelen ](assets/aa-set-variables.jpg)
    1. U ziet welke variabelen in die regel worden ingesteld
+
       ![ Variabelen die ](assets/aa-vars-set.jpg) worden geplaatst
 
 1. Bij de bovenkant van de pagina, verander het radioknoop in **verstrekken JSON** en u zult met een codemening van de variabelen worden voorgesteld die worden geplaatst. Deze codemening en de mening UI zijn onderling verwisselbaar, en wanneer u om het even wat in één UI plaatst, zal het ook in andere UI worden bijgewerkt.
@@ -64,7 +65,7 @@ Dit JSON-kopieerprogramma is speciaal gemaakt om migratie gemakkelijker te maken
 
 1. U kunt op elk gewenst moment het keuzerondje heen en weer schakelen om de waarden in de codeversie (hierboven weergegeven) of de gebruikersinterface van het zien van de kenmerken weer te geven. Selecteer **verstrekken individuele attributen** radioknoop om de bevolkte attributen te zien.
 
-   ](assets/websdk-attributes-1.jpg) de attributen 1 van SDK van 0} Web![
+   ![&#128279;](assets/websdk-attributes-1.jpg) de attributen 1 van SDK van 0&rbrace; Web
    ![ de attributen 2 van SDK van het Web ](assets/websdk-attributes-2.jpg)
 
 1. Wanneer u uw die variabelen kunt zien correct worden geplaatst, klik **Veranderingen houden/sparen.**
@@ -78,7 +79,7 @@ In deze activiteit, zullen wij tot een equivalent van SDK van het Web van Analyt
 
    ![ voeg nieuwe actie 2 ](assets/add-new-action-2.jpg) toe
 
-1. Om de actie te vormen, selecteer **van het Web SDK van 0} Adobe Experience Platform van de drop-down Uitbreiding.**
+1. Om de actie te vormen, selecteer **van het Web SDK van 0&rbrace; Adobe Experience Platform van de drop-down Uitbreiding.**
 1. Selecteer **verzenden Gebeurtenis** van het Type van Actie.
 1. In het rechtse paneel, selecteer het pictogram van het gegevenselement naast het **Voorwerp van Gegevens**.
 

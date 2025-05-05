@@ -16,7 +16,7 @@ ht-degree: 0%
 
 In deze oefening, wordt Adobe I/O gebruikt om diverse eindpunten van Adobe te vragen. Voer de volgende stappen uit om Adobe I/O in te stellen.
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home) {target="_blank"}.
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} .
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png){zoomable="yes"}
 
@@ -67,7 +67,7 @@ Selecteer **daarna**.
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
-Selecteer {de Configuratie van de Diensten van standaardFirefly 1} en **configuratie van de Diensten van de Automatisering van standaardCreative Cloud**.****
+Selecteer {de Configuratie van de Diensten van standaardFirefly 1} en **configuratie van de Diensten van de Automatisering van standaardCreative Cloud**.**&#x200B;**
 
 Selecteer **sparen gevormde API**.
 

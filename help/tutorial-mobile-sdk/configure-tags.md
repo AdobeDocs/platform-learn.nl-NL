@@ -37,6 +37,7 @@ In deze les zult u:
 1. Maak een nieuwe eigenschap voor mobiele tags in de interface voor gegevensverzameling:
    1. Selecteer **[!UICONTROL Tags]** in de linkernavigatie.
    1. Selecteren **[!UICONTROL New Property]**
+
       ![ creeer een markeringsbezit ](assets/tags-new-property.png).
    1. Voer bij **[!UICONTROL Name]** `Luma Mobile App Tutorial` in.
    1. Selecteer **[!UICONTROL Mobile]** voor **[!UICONTROL Platform]** .
@@ -65,6 +66,7 @@ In deze les zult u:
       ![ bouwt de Bibliotheek ](assets/tags-save-library.png)
 
    1. Selecteer ten slotte **[!UICONTROL Initial Build]** als werkbibliotheek in het menu **[!UICONTROL Select a working library]** .
+
       ![ Uitgezocht als het werk bibliotheek ](assets/tags-working-library.png)
 1. Extensies controleren:
 
@@ -138,7 +140,7 @@ Uw bibliotheek is gemaakt voor de nieuwe extensies en configuraties. Een succesv
 
    >[!INFO]
    >
-   >Voor de rest van dit leerprogramma, zult u **** niet de instructies CocoaPods gebruiken maar in plaats daarvan een inheemse Swift gebaseerde Opstelling van de Manager van het Pakket (SPM) gebruiken.
+   >Voor de rest van dit leerprogramma, zult u **&#x200B;**&#x200B;niet de instructies CocoaPods gebruiken maar in plaats daarvan een inheemse Swift gebaseerde Opstelling van de Manager van het Pakket (SPM) gebruiken.
    >
 
 1. Selecteer de tab **[!UICONTROL Swift]** onder **[!UICONTROL Add Initialization Code]** . Dit codeblok laat zien hoe u de vereiste SDK&#39;s kunt importeren en de extensies kunt registreren bij het starten. Dit wordt behandeld meer in detail in [ installeert SDKs ](install-sdks.md).

@@ -84,6 +84,7 @@ Nu we een idee hebben van waar onze inhoud van moet bestaan, kunnen we ons inhou
 - In de modus die wordt geopend, ziet u dat sommige velden nog niet bewerkbaar zijn. Dit is logisch: op basis van waar we ons fragment maken, zijn er verschillende modellen beschikbaar.
   ![ creeer inhoudsfragment ](./images/prod-app-create-cf-details.png)
    - Selecteer eerst waar het fragment wordt gemaakt door op het mappictogram naast het veld Locatie te klikken. Vouw de structuur van de inhoud uit door op de mappen &quot;adocycle&quot; \> &quot;en&quot; \> &quot;mobile-app&quot; te klikken en vervolgens uw selectie te bevestigen door op de knop &quot;Choose&quot; te klikken.
+
      ![ selecteer de correcte plaats ](./images/prod-app-folder.png)
    - U zult merken dat het veld &quot;Inhoudsfragmentmodel&quot; nu bewerkbaar is. Klik op de pijl naast het veld om het vervolgkeuzemenu te openen en selecteer het inhoudsmodel waarnaar we eerder hebben gekeken: &#39;&#39;Mobiele startpagina van toepassing&#39;&#39;.
    - Geef uw inhoudsfragment vervolgens een betekenisvolle titel (tip: neem uw teamnummer op om de inhoud gemakkelijk terug te vinden). U zult merken dat het veld Naam automatisch wordt ingevuld. Dit is om uw leven makkelijker te maken: het is de naam die het systeem gebruikt om uw fragment te identificeren en mag niet worden aangeraakt.
@@ -94,6 +95,7 @@ Nu we een idee hebben van waar onze inhoud van moet bestaan, kunnen we ons inhou
    - Als u afbeeldingselementen wilt selecteren, klikt u op het mappictogram om in AEM Assets naar de juiste afbeelding te bladeren.
    - Voor het aanbevolen product klikt u op het opzoekpictogram van het product, zodat u eenvoudig ons Commerce-product &quot;Adobe-1&quot; kunt selecteren, zodat de gegevens over de handel in de app worden geladen.
    - Klik op de knop Opslaan als u klaar bent om alle geschreven inhoud op te slaan en uw wijzigingen te publiceren.
+
      ![ publiceer veranderingen ](./images/prod-app-publish.png)
 
 Nu we de mobiele app met wat inhoud hebben voorzien, zijn we klaar om onze campagne te leveren.

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Verbinding maken met uitgevers in Real-Time CDP Collaboration
 
-Als adverteerder leert u hoe u verbinding kunt maken met een uitgever om met deze uitgever samen te werken. Voor gedetailleerde documentatie, zie [ verbinden met adverteerders of uitgevers ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections) {target="_blank"}.
+Als adverteerder leert u hoe u verbinding kunt maken met een uitgever om met deze uitgever samen te werken. Voor gedetailleerde documentatie, zie [ verbinden met adverteerders of uitgevers ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"} .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

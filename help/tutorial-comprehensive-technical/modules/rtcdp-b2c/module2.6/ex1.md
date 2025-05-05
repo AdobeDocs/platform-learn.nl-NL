@@ -74,7 +74,7 @@ Een bericht is een mededeling die door een systeem naar Kafka wordt verzonden. E
 
 ### Onderwerp, partities, verschuivingen
 
-Een onderwerp is een bepaalde stroom van gegevens, gelijkend op een lijst in een gegevensbestand. U kunt zo vele onderwerpen hebben aangezien u wilt, en een onderwerp door zijn naam wordt geïdentificeerd. Onderwerpen worden in partities gesplitst. Elke verdeling wordt bevolen en elk bericht binnen een verdeling krijgt stijgende identiteitskaart, die **** wordt genoemd. De berichten worden opgeslagen in een onderwerp, op een verdeling en van verwijzingen voorzien gebruikend een compensatie. Berichten worden slechts gedurende een beperkte tijd bewaard (standaard is 1 week). Zodra een bericht aan een verdeling wordt geschreven, kan het niet meer worden veranderd.
+Een onderwerp is een bepaalde stroom van gegevens, gelijkend op een lijst in een gegevensbestand. U kunt zo vele onderwerpen hebben aangezien u wilt, en een onderwerp door zijn naam wordt geïdentificeerd. Onderwerpen worden in partities gesplitst. Elke verdeling wordt bevolen en elk bericht binnen een verdeling krijgt stijgende identiteitskaart, die **&#x200B;**&#x200B;wordt genoemd. De berichten worden opgeslagen in een onderwerp, op een verdeling en van verwijzingen voorzien gebruikend een compensatie. Berichten worden slechts gedurende een beperkte tijd bewaard (standaard is 1 week). Zodra een bericht aan een verdeling wordt geschreven, kan het niet meer worden veranderd.
 
 ### Brokers
 

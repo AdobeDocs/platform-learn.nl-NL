@@ -39,7 +39,7 @@ Dan zie je dit. Sleep een nieuwe **1:1 kolom** structuurcomponent op het canvas.
 
 ![ Journey Optimizer ](./images/emailoffer6.png)
 
-In het menu, ga naar **Inhoud**. Selecteer de **component van het besluit van de Aanbieding 0} {en sleep en laat vallen deze component in de inhoud van e-mail placeholder zoals vermeld aanbiedt.** Dan, klik **toevoegen**.
+In het menu, ga naar **Inhoud**. Selecteer de **component van het besluit van de Aanbieding 0&rbrace; &lbrace;en sleep en laat vallen deze component in de inhoud van e-mail placeholder zoals vermeld aanbiedt.** Dan, klik **toevoegen**.
 
 ![ Journey Optimizer ](./images/emailoffer7.png)
 

@@ -34,7 +34,7 @@ Laten we uw eerste verbinding maken. Klik **creëren nieuwe verbinding**.
 
 ![ demo ](./images/cja4.png)
 
-U zult dan **** UI zien creëren Verbinding.
+U zult dan **&#x200B;**&#x200B;UI zien creëren Verbinding.
 
 ![ demo ](./images/cja5.png)
 
@@ -108,7 +108,7 @@ U moet er ook voor zorgen dat voor beide datasets, deze opties worden toegelaten
 
 (Vergeet niet om beide opties voor de tweede dataset toe te laten)
 
-U moet ook het type van gegevensbron van a **** voor elke dataset selecteren.
+U moet ook het type van gegevensbron van a **&#x200B;**&#x200B;voor elke dataset selecteren.
 
 Dit zijn de montages voor het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**.
 

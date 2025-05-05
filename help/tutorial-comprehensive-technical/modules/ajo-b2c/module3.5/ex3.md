@@ -17,7 +17,7 @@ Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/). Klik *
 
 ![ Vertalingen ](./images/ajolp1.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/ajolp2.png)
 

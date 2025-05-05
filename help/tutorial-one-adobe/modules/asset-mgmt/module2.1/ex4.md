@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.4.1 De lokale ontwikkelomgeving instellen
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/) {target="_blank"}, download en installeer **Desktop van Github**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"} , download en installeer **Desktop van Github**.
 
 ![ Blok ](./images/block1.png){zoomable="yes"}
 
@@ -61,7 +61,7 @@ De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluit
 
 ![ Blok ](./images/block9.png){zoomable="yes"}
 
-Plak deze code en voer een komma **** na het codeblok in:
+Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
 
 ```json
 {
@@ -98,7 +98,7 @@ Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluiten
 
 ![ Blok ](./images/block12.png){zoomable="yes"}
 
-Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -173,7 +173,7 @@ Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiS
 
 Nu uw basis citaatblok wordt bepaald en aan het project CitiSignal geëngageerd, kunt u a **fiberbied** blok aan een bestaande pagina toevoegen.
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"} . Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png){zoomable="yes"}
 

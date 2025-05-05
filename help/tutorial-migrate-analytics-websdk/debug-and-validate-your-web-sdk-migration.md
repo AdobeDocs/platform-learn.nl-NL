@@ -46,7 +46,7 @@ Stappen voor het weergeven van uw gegevens:
 
    ![ Debugger Samenvatting ](assets/debugger-summary.jpg)
 
-1. Om de gegevens te zien die via het Web SDK worden toegevoegd, klik de **verbinding van SDK van het Web van 0} Experience Platform {in de linkerspoor**
+1. Om de gegevens te zien die via het Web SDK worden toegevoegd, klik de **verbinding van SDK van het Web van 0&rbrace; Experience Platform &lbrace;in de linkerspoor**
 1. Klik **Duidelijke gebeurtenissen** enkel om zich van om het even welke klappen te ontdoen die zijn gebeurd
 1. Vernieuw uw site opnieuw en kom terug naar foutopsporing
 1. Dan klik op het gegevensgebied naast **gebeurtenissen** in de lijst

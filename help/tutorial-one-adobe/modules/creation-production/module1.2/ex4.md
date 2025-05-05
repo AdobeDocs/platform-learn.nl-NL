@@ -117,7 +117,7 @@ U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project
 
 ![ WF Fusion ](./images/wffc20.png)
 
-Zodra u alle gebieden hebt ingevuld, gaat de klik **** verder. Uw verbinding wordt dan automatisch gevalideerd.
+Zodra u alle gebieden hebt ingevuld, gaat de klik **&#x200B;**&#x200B;verder. Uw verbinding wordt dan automatisch gevalideerd.
 
 ![ WF Fusion ](./images/wffcff6.png)
 
@@ -218,7 +218,7 @@ Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, kopiee
 
 ![ WF Fusion ](./images/wffc28.png)
 
-Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **** uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
+Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **&#x200B;**&#x200B;uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
 
 ![ WF Fusion ](./images/wffc29.png)
 

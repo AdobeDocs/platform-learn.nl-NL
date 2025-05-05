@@ -27,7 +27,7 @@ Ik veronderstel niet om precies te weten hoe u wordt uitgevoerd, maar in vele im
 * Regels voor paginatype, alleen branden voor een pagina die een bepaald type pagina is, bijvoorbeeld pagina met productdetails, winkelwagenpagina enzovoort.
 * Elke andere pagina die voorwaardelijk wordt geactiveerd
 
-Het belangrijkste punt hier is dat elk van deze gebruiksgevallen slechts soms **** op een pagina in brand steken, en wij **ook** verwachten de standaardpaginalijn om te branden. Daarom willen wij niet een Send Beacon (uitbreiding van AA) of een Send Gebeurtenis (de uitbreiding van SDK van het Web) met om het even welk van deze regels omvatten, of anders zou het in twee klappen resulteren die binnen voor de zelfde paginading gaan.
+Het belangrijkste punt hier is dat elk van deze gebruiksgevallen slechts soms **&#x200B;**&#x200B;op een pagina in brand steken, en wij **ook** verwachten de standaardpaginalijn om te branden. Daarom willen wij niet een Send Beacon (uitbreiding van AA) of een Send Gebeurtenis (de uitbreiding van SDK van het Web) met om het even welk van deze regels omvatten, of anders zou het in twee klappen resulteren die binnen voor de zelfde paginading gaan.
 
 Daarom bouwen deze regels het voorwerp op, maar zij verzenden niet de gegevens binnen. Wij zorgen enkel ervoor dat deze regels **vóór** de regel van de standaardpaginalading in brand steken, zodat nadat zij het voorwerp opbouwen, verzendt de Send actie van de Gebeurtenis Beacon/verzendt op de standaard de ladingsregel van de pagina alles binnen verzendt. Het is waarschijnlijk dat u dit allemaal weet en dat is hoe uw site is ingesteld. Maar als u nieuw bent aan uw eigen implementatie, of als u uw implementatie moet &quot;bevestigen&quot;om op deze methode te lijken, is deze oefening vooral nuttig voor u.
 
@@ -41,7 +41,7 @@ Hier is een voorbeeld van het migreren van een regel die voorwaardelijk brandt. 
 
 1. Wanneer de regel opent, kunnen wij zien dat er een voorwaarde op deze regel die op een parameter van het vraagkoord wordt gebaseerd is. We hoeven niets aan de voorwaarde te wijzigen, omdat we alleen de actie willen bijwerken/migreren, niet de gebeurtenis of de voorwaarde.
 1. Klik in **Adobe Analytics - Reeks Veranderlijke** actie
-1. Noteer alles wat in de handeling is ingesteld. In dit voorbeeld, merken wij op dat **event101** wordt geplaatst, evenals de **3} variabele van de Campagne {.**
+1. Noteer alles wat in de handeling is ingesteld. In dit voorbeeld, merken wij op dat **event101** wordt geplaatst, evenals de **3&rbrace; variabele van de Campagne &lbrace;.**
 
    ![ event101 ](assets/event101.jpg)
    ![ campagne var ](assets/campaign-variable.jpg)

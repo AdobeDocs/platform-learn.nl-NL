@@ -101,7 +101,7 @@ De bibliotheek at.js kan met diverse montages in het Doel UI worden gevormd en w
 | `enabled` | Doelfunctionaliteit is in- of uitgeschakeld met de configuratie van de gegevensstroom |
 | `globalMboxAutoCreate` | Stel de optie `renderDecisions` in op `true` met de opdracht `sendEvent` om VEC-ervaringen automatisch op te halen en weer te geven.<br><br> vraag a `decisionScope` voor `__view__` als u verkiest om op VEC-Gebaseerde ervaringen manueel terug te geven. |
 | `imsOrgId` | Stel de `orgId` in met de opdracht `configure` |
-| `optinEnabled` en `optoutEnabled` | Verwijs naar de de privacyopties van SDK van het Web van het Platform [ ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). De optie `defaultConsent` is van toepassing op alle Adobe-oplossingen die de Platform Web SDK ondersteunt. |
+| `optinEnabled` en `optoutEnabled` | Verwijs naar de de privacyopties van SDK van het Web van het Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). De optie `defaultConsent` is van toepassing op alle Adobe-oplossingen die de Platform Web SDK ondersteunt. |
 | `overrideMboxEdgeServer` en `overrideMboxEdgeServerTimeout` | Niet van toepassing. Alle verzoeken van het Web SDK van het Platform gebruiken het netwerk van Adobe Experience Platform Edge. |
 | `pageLoadEnabled` | Stel de optie `renderDecisions` in op `true` met de opdracht `sendEvent` |
 | `secureOnly` | Niet ondersteund. De Platform Web SDK plaatst alle koekjes met de `secure` en `sameSite="none"` attributen. |

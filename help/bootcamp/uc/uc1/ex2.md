@@ -47,7 +47,7 @@ In Adobe Experience Platform zijn alle id&#39;s even belangrijk. Eerder was de E
 
 De primaire id is doorgaans afhankelijk van de context. Als u uw Centrum van de Vraag vraagt, **wat belangrijkste identiteitskaart is?** zij zullen waarschijnlijk antwoorden, **het telefoonaantal!** Maar als u uw team van CRM vraagt, zullen zij, **het e-mailadres beantwoorden!** Adobe Experience Platform begrijpt deze complexiteit en beheert deze voor u. Elke toepassing, of een toepassing van de Adobe of niet-Adobe, zal met Adobe Experience Platform spreken door te verwijzen naar identiteitskaart zij primair beschouwen. Het werkt gewoon.
 
-Voor het gebied **Identiteitsnaamruimte**, uitgezochte **ECID** en voor de waarde van de 4} Identiteit van het gebied **gaat ECID in u op het paneel van de Kijker van het Profiel van de bootcampings website kunt vinden.** Klik **Mening**. Vervolgens ziet u uw profiel in de lijst. Klik **identiteitskaart van het Profiel** om uw profiel te openen.
+Voor het gebied **Identiteitsnaamruimte**, uitgezochte **ECID** en voor de waarde van de 4&rbrace; Identiteit van het gebied **gaat ECID in u op het paneel van de Kijker van het Profiel van de bootcampings website kunt vinden.** Klik **Mening**. Vervolgens ziet u uw profiel in de lijst. Klik **identiteitskaart van het Profiel** om uw profiel te openen.
 
 ![ Profiel van de Klant ](./images/popupecid.png)
 
@@ -59,7 +59,7 @@ Ga naar **Gebeurtenissen**, waar u ingangen voor elke ervaringsgebeurtenis kunt 
 
 ![ Profiel van de Klant ](./images/profileee.png)
 
-Tot slot ga naar het lidmaatschap van het Publiek van de menuoptie ****. U ziet nu alle soorten publiek die in aanmerking komen voor dit profiel.
+Tot slot ga naar het lidmaatschap van het Publiek van de menuoptie **&#x200B;**. U ziet nu alle soorten publiek die in aanmerking komen voor dit profiel.
 
 ![ Profiel van de Klant ](./images/profileseg.png)
 

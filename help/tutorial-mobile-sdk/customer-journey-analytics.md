@@ -134,7 +134,7 @@ Uw gegevensweergave maken:
 
    1. Het schemaveld zoeken:
 
-      - onderzoek naar de component die het ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ***[!UICONTROL Search schema fields]*** onderzoeksgebied van het 1} Onderzoek ![ gebruikt. bijvoorbeeld `productListAdd` , of
+      - onderzoek naar de component die het ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ***[!UICONTROL Search schema fields]*** onderzoeksgebied van het 1&rbrace; Onderzoek  gebruikt. bijvoorbeeld `productListAdd` , of
 
         ![ CJA DataView 2a ](assets/cja-dataview-2a.png)
 
@@ -154,7 +154,7 @@ Uw gegevensweergave maken:
 
       ![ CJA de componentenmontages van de mening van Gegevens ](assets/cja-dataview-component-settings.png)
 
-   1. Nu u begrijpt hoe u velden aan uw gegevensweergave kunt toevoegen en de resulterende component kunt configureren, gebruikt u de onderstaande tabellen voor een lijst met schemavelden die u als metriek of afmetingen wilt toevoegen. Gebruik de **kolomwaarde van de Weg van het Schema 0} {van de lijst hieronder om naar het specifieke schemagebied te zoeken of te doorlopen.** Zodra de metriek en de afmetingen worden toegevoegd, controleer de **kolomwaarde van de Montages van de Component** in de lijst of de specifieke montages voor een component, zoals zijn **[!UICONTROL Component name]** of het bepalen **[!UICONTROL INCLUDE EXCLUDE VALUES]** worden vereist.
+   1. Nu u begrijpt hoe u velden aan uw gegevensweergave kunt toevoegen en de resulterende component kunt configureren, gebruikt u de onderstaande tabellen voor een lijst met schemavelden die u als metriek of afmetingen wilt toevoegen. Gebruik de **kolomwaarde van de Weg van het Schema 0&rbrace; &lbrace;van de lijst hieronder om naar het specifieke schemagebied te zoeken of te doorlopen.** Zodra de metriek en de afmetingen worden toegevoegd, controleer de **kolomwaarde van de Montages van de Component** in de lijst of de specifieke montages voor een component, zoals zijn **[!UICONTROL Component name]** of het bepalen **[!UICONTROL INCLUDE EXCLUDE VALUES]** worden vereist.
 
       **METRICS**
 
@@ -263,7 +263,7 @@ U hebt nu uw project ingesteld. Een tabel met vrije vorm wordt standaard opgegev
 
 ### Toepassingsgebruik
 
-Nu kunt u aangeven hoe de app wordt gebruikt. U hebt de noodzakelijke code in app toegevoegd om toepassingsinteractie te registreren en welke schermen in app (zie de ](events.md) les van Gebeurtenissen van het 0} Spoor {) worden gebruikt en u wilt nu over deze gegevens rapporteren.[
+Nu kunt u aangeven hoe de app wordt gebruikt. U hebt de noodzakelijke code in app toegevoegd om toepassingsinteractie te registreren en welke schermen in app (zie de [&#128279;](events.md) les van Gebeurtenissen van het 0&rbrace; Spoor &lbrace;) worden gebruikt en u wilt nu over deze gegevens rapporteren.
 
 #### Schermnamen
 
@@ -275,7 +275,7 @@ Rapporteer de schermen die in de app worden weergegeven:
 
 1. Selecteer **[!UICONTROL Show all]** onder de lijst van **[!UICONTROL METRICS]** .
 
-1. Sleep en laat vallen de **[!UICONTROL Screen Views]** component op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ].
+1. Sleep en laat vallen de **[!UICONTROL Screen Views]** component op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
    ![ Projecten CJA 7 ](assets/cja-projects-7.png)
 Uw vrije lijst toont nu het schermmeningen voor elke dag voor uw geselecteerde tijdspanne. U wilt echter het aantal schermweergaven weergeven voor elk van de verschillende schermen die in de app worden gebruikt.
 
@@ -305,7 +305,7 @@ Vervolgens maakt u een tabel met Freeform om te rapporteren hoe gebruikers met d
 
 1. Wijzig de naam **[!UICONTROL Freeform table (2)]** in `App Interactions` .
 
-1. Sleep en laat vallen **[!UICONTROL App Interactions]** metrisch op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ].
+1. Sleep en laat vallen **[!UICONTROL App Interactions]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
 
 1. Sleep de **[!UICONTROL App Interaction Name]** -dimensie naar de koptekst van **[!UICONTROL Day]** om deze dimensie te vervangen.
 
@@ -337,7 +337,7 @@ U wilt nu in een afzonderlijk deelvenster rapporteren over de handelsgebeurtenis
 
 1. Wijzig de naam **[!UICONTROL Freeform table]** in `Commerce Events` .
 
-1. De belemmering en laat vallen **[!UICONTROL Product Views]** metrisch op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ].
+1. De belemmering en laat vallen **[!UICONTROL Product Views]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
 
 1. Sleep de metrische waarde van **[!UICONTROL Product Add To Lists]** naar rechts van de kolom van **[!UICONTROL Product Views]** om deze kolom in te voegen in de vrije-vormtabel. Zorg ervoor dat **[!UICONTROL + Add]** (in blauw) wordt weergegeven wanneer u de kolom invoegt.
    ![ Projecten CJA 15 ](assets/cja-projects-15.png)
@@ -390,7 +390,7 @@ U wilt rapporteren over hoeveel aanbiedingen en welke aanbiedingen worden weerge
 
 1. Wijzig de naam **[!UICONTROL Freeform table]** in `Monthly Overview` .
 
-1. Sleep en laat vallen **[!UICONTROL Display]** metrisch op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ].
+1. Sleep en laat vallen **[!UICONTROL Display]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
 
 1. Sleep de **[!UICONTROL Month]** -dimensie naar de kolom **[!UICONTROL Day]** om deze te vervangen.
 
@@ -411,11 +411,11 @@ U wilt ook een rapport hebben waarin wordt aangegeven welke aanbiedingen zijn we
 
 1. Wijzig de naam **[!UICONTROL Freeform table (2)]** in `People` .
 
-1. Sleep en laat vallen **[!UICONTROL People]** metrisch op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ].
+1. Sleep en laat vallen **[!UICONTROL People]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
 
 1. Sleep de **[!UICONTROL Activity Name]** over de kolom **[!UICONTROL Day]** om de dimensie te vervangen.
 
-1. Klik op de rij met de rechtermuisknop aan, identificerend één of meer van de aanbiedingsbesluiten u in [ creeerde en vertoningsaanbiedingen met de 1} les van het Beslissingsbeheer {bepaalde. ](journey-optimizer-offers.md) Bijvoorbeeld **[!UICONTROL Luma - Mobile App Decision]** .
+1. Klik op de rij met de rechtermuisknop aan, identificerend één of meer van de aanbiedingsbesluiten u in [ creeerde en vertoningsaanbiedingen met de 1&rbrace; les van het Beslissingsbeheer &lbrace;bepaalde. ](journey-optimizer-offers.md) Bijvoorbeeld **[!UICONTROL Luma - Mobile App Decision]** .
 
 1. Selecteer in het contextmenu **[!UICONTROL Breakdown]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Offer Name]** . Deze selectie zal de dimensie van de Naam van de Activiteit in de Namen van de Aanbieding verdelen.
    ![ Projecten CJA 20b ](assets/cja-projects-20b.png)
@@ -443,7 +443,7 @@ Tot slot wilt u verslag uitbrengen over winkelbezoeken.
 
 1. Wijzig de naam **[!UICONTROL Freeform table]** in `Store Entries / Exits Across Cities` .
 
-1. Sleep en laat vallen **[!UICONTROL Location Events]** metrisch op [!UICONTROL _Daling a **metrisch**hier (of een andere component_) ]. Het rapport bevat nu een dagelijks overzicht van alle locatiegebeurtenissen die in de app hebben plaatsgevonden. Herinner hoe u specifiek deze afmeting als deel van uw [ gegevensmening ](#create-a-data-view) vormde.
+1. Sleep en laat vallen **[!UICONTROL Location Events]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;]. Het rapport bevat nu een dagelijks overzicht van alle locatiegebeurtenissen die in de app hebben plaatsgevonden. Herinner hoe u specifiek deze afmeting als deel van uw [ gegevensmening ](#create-a-data-view) vormde.
 
 1. Sleep de **[!UICONTROL City]** -dimensie naar de kolomkop **[!UICONTROL Day]** om de dimensie te vervangen. In het verslag worden nu de steden voor de locatiegebeurtenissen getoond.
 

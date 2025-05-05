@@ -76,7 +76,7 @@ U ziet dan dit venster:
 
 ![ demo ](./images/ex119.png)
 
-Ga de steekproef van Google Analytics van de onderzoekstermijn **** in de onderzoeksbar in en klik het eerste onderzoeksresultaat.
+Ga de steekproef van Google Analytics van de onderzoekstermijn **&#x200B;**&#x200B;in de onderzoeksbar in en klik het eerste onderzoeksresultaat.
 
 ![ demo ](./images/ex120.png)
 

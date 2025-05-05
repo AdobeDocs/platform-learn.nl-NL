@@ -90,6 +90,7 @@ De uitbreiding van de Dienst van de Identiteit is één van de weinige marktexte
    1. `Cookies` aan de linkerkant uitvouwen
    1. Klik op het domein `https://luma.enablementadobe.com`
    1. Zoek naar het AMCV_ cookie aan de rechterkant. U ziet mogelijk verschillende keren dat de Luma-site is geladen met zowel de eigenschap hardcoded tag als de eigen eigenschap.
+
       ![ verifieer AMCV_cookie ](images/idservice-AMCVCookie.png)
 
 Dat is het! U hebt de eerste extensie toegevoegd! Voor meer details over de configuratieopties van de Dienst van de Identiteit, zie [ de documentatie ](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).

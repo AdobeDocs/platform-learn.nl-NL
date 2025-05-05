@@ -31,7 +31,7 @@ Dan zie je dit. Gebruik `--aepUserLdap---event-forwarding` voor uw onderwerpid. 
 
 ![ GCP ](./images/gcp6.png)
 
-Uw onderwerp is nu gemaakt. Klik identiteitskaart van het Abonnement van het onderwerp ****.
+Uw onderwerp is nu gemaakt. Klik identiteitskaart van het Abonnement van het onderwerp **&#x200B;**.
 
 ![ GCP ](./images/gcp7.png)
 

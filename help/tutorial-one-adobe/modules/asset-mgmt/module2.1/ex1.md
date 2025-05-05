@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 1.1.1 Cloud Manager-programma maken
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Dan zie je zoiets. Klik **toevoegen Programma**.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"} . De org die u moet selecteren is `--aepImsOrgName--`. Dan zie je zoiets. Klik **toevoegen Programma**.
 
 ![ AEMCS ](./images/aemcs1.png){zoomable="yes"}
 
@@ -41,7 +41,7 @@ Zodra de milieu&#39;s worden gecreeerd en klaar om te gebruiken, zult u een e-ma
 
 ![ AEMCS ](./images/aemcs5.png){zoomable="yes"}
 
-Zodra u uw e-mailbevestiging hebt ontvangen, ga terug naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) {target="_blank"}. U zult dan zien dat het statuut van uw programma is veranderd in **Klaar**. Klik op uw programma om het te openen.
+Zodra u uw e-mailbevestiging hebt ontvangen, ga terug naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"} . U zult dan zien dat het statuut van uw programma is veranderd in **Klaar**. Klik op uw programma om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png){zoomable="yes"}
 

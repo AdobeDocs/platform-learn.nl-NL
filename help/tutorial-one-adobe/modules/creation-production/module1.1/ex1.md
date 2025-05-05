@@ -43,7 +43,7 @@ Dan moet je dit zien. Ga naar het **Netwerk** lusje.
 
 ![ Postman ](./images/ffui5.png){zoomable="yes"}
 
-Ga de onderzoekstermijn **in produceren** en klik dan **** opnieuw. U zou dan een verzoek met de naam **moeten zien produceren-async**. Selecteer het en ga dan naar **Payload** waar u de details van het verzoek zult zien.
+Ga de onderzoekstermijn **in produceren** en klik dan **&#x200B;**&#x200B;opnieuw. U zou dan een verzoek met de naam **moeten zien produceren-async**. Selecteer het en ga dan naar **Payload** waar u de details van het verzoek zult zien.
 
 ![ Postman ](./images/ffui6.png){zoomable="yes"}
 
@@ -63,7 +63,7 @@ De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect
 
 ![ Postman ](./images/ffui9.png){zoomable="yes"}
 
-Open opnieuw de **Hulpmiddelen van de Ontwikkelaar** in uw browser. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
+Open opnieuw de **Hulpmiddelen van de Ontwikkelaar** in uw browser. Dan, produceert de klik **&#x200B;**&#x200B;en inspecteert het netwerkverzoek dat wordt verzonden.
 
 ![ Postman ](./images/ffui10.png){zoomable="yes"}
 

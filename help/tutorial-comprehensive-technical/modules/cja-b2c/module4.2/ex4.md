@@ -29,7 +29,7 @@ Na de vorige oefening, zou u deze pagina in Adobe Experience Platform moeten ope
 
 **als u het niet open hebt, ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform/home).**
 
-Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, ga naar de **** bronschakelaar van Google BigQuery en klik **Opstelling**.
+Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, ga naar de **&#x200B;**&#x200B;bronschakelaar van Google BigQuery en klik **Opstelling**.
 
 ![ demo ](./images/sourceshome.png)
 
@@ -113,7 +113,7 @@ Klik **daarna**.
 
 ## 4.2.4.3 Verbinding en planning van gegevensinvoer
 
-U zult nu **het plannen** tabel {zien:
+U zult nu **het plannen** tabel &lbrace;zien:
 
 In het **Plannend** lusje, kunt u een frequentie voor het proces van gegevensopname voor dit **Afbeelding** en gegevens bepalen.
 

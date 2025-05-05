@@ -97,7 +97,7 @@ Bericht onder **de Params van de Vraag**, worden twee variabelen van verwijzinge
 
 ![ Postman ](./images/ioauth.png){zoomable="yes"}
 
-Als succesvol, een reactie die een dragerteken, een toegangstoken, en een vervalsingsvenster bevat verschijnt in de **sectie van het Lichaam** {van Postman.
+Als succesvol, een reactie die een dragerteken, een toegangstoken, en een vervalsingsvenster bevat verschijnt in de **sectie van het Lichaam** &lbrace;van Postman.
 
 ![ Postman ](./images/ioauthresp.png){zoomable="yes"}
 

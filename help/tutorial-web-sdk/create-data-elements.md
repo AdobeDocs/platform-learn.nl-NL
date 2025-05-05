@@ -155,7 +155,7 @@ Deze benadering gebruikt functionaliteit die in de configuratie van de gegevenss
 
 ## Gegevenselementen maken om de gegevenslaag vast te leggen
 
-Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen voor de ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} gegevenslaag 1} van de Luminagedemo [:
+Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen voor de [&#128279;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}  gegevenslaag 1&rbrace; van de Luminagedemo :
 
 1. Ga naar **[!UICONTROL Data Elements]** en selecteer **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als de eigenschap tag geen bestaande gegevenselementen bevat)
 

@@ -29,7 +29,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
 
 ![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -47,7 +47,7 @@ Op de linkerkant van uw scherm, heb een blik bij **Gebeurtenissen**. De eerder g
 
 ![ Demo ](./images/joevents.png)
 
-Daarna, klik op **Orchestration**. U ziet nu de beschikbare **mogelijkheden van 0} Orchestratie {.** Selecteer **Voorwaarde**, dan belemmering en laat vallen het op het Canvas van de Reis.
+Daarna, klik op **Orchestration**. U ziet nu de beschikbare **mogelijkheden van 0&rbrace; Orchestratie &lbrace;.** Selecteer **Voorwaarde**, dan belemmering en laat vallen het op het Canvas van de Reis.
 
 ![ Demo ](./images/jo2.png)
 
@@ -65,7 +65,7 @@ Klik op de **Voorwaarde**.  Klik op **Path1** en geef de naam van de weg aan **K
 
 ![ Demo ](./images/jo5.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 
@@ -108,7 +108,7 @@ Dubbelklik op **Path1** en geef de wegnaam aan **tussen 10 en 25 C** uit. Klik *
 
 ![ Demo ](./images/joc6.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 
@@ -152,7 +152,7 @@ Dan klik op **uitgeven** pictogram voor de uitdrukking dit weg.
 
 ![ Demo ](./images/joct6.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 

@@ -41,7 +41,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 ![ ETL ](./images/s3home.png)
 
-In **creeer het 1} scherm van het Emmertje {, gebruik de naam `aepmodulertcdp--aepUserLdap--`**
+In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, gebruik de naam `aepmodulertcdp--aepUserLdap--`**
 
 ![ ETL ](./images/bucketname.png)
 
@@ -140,7 +140,7 @@ In het linkermenu, ga naar **Doelen**, dan gaan naar **Catalogus**. U zult dan d
 
 ![ RTCDP ](./images/rtcdpmenudest1.png)
 
-Klik {de Opslag van de Wolk 1}, dan klik de **Opstelling** knoop (of op **activeer Soorten publiek**, afhankelijk van uw milieu) op **Amazon S3** kaart.****
+Klik {de Opslag van de Wolk 1}, dan klik de **Opstelling** knoop (of op **activeer Soorten publiek**, afhankelijk van uw milieu) op **Amazon S3** kaart.**&#x200B;**
 
 ![ RTCDP ](./images/rtcdp2.png)
 

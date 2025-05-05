@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
@@ -57,7 +57,7 @@ Dan zie je dit. Uw afbeelding is wit en wordt nog niet weergegeven. U moet nu ee
 
 ![ Journey Optimizer ](./images/fragm6.png)
 
-In popup, verander de **kleurencode 0} Hex {in** #8821F4 **en verander dan nadruk door in het** 100% **gebied te klikken.** Vervolgens ziet u de nieuwe kleur die op de afbeelding is toegepast.
+In popup, verander de **kleurencode 0&rbrace; Hex &lbrace;in** #8821F4 **en verander dan nadruk door in het** 100% **gebied te klikken.** Vervolgens ziet u de nieuwe kleur die op de afbeelding is toegepast.
 
 ![ Journey Optimizer ](./images/fragm7.png)
 
@@ -166,7 +166,7 @@ Dan ben je weer in de editor. De pictogrammen zijn nog niet zichtbaar omdat de a
 
 ![ Journey Optimizer ](./images/fragm24.png)
 
-Verander de **kleurencode 0} Hex {in** #000000 **.**
+Verander de **kleurencode 0&rbrace; Hex &lbrace;in** #000000 **.**
 
 ![ Journey Optimizer ](./images/fragm25.png)
 
@@ -182,7 +182,7 @@ Klik om het beelddossier **`CitiSignal_Footer_Logo.png`** te selecteren en **Uit
 
 ![ Journey Optimizer ](./images/fragm28.png)
 
-Ga naar **Stijlen** en klik **de kleur van de Achtergrond** checkbox, veranderen het opnieuw in zwart. Verander de **kleurencode 0} Hex {in** #000000 **.**
+Ga naar **Stijlen** en klik **de kleur van de Achtergrond** checkbox, veranderen het opnieuw in zwart. Verander de **kleurencode 0&rbrace; Hex &lbrace;in** #000000 **.**
 
 ![ Journey Optimizer ](./images/fragm29.png)
 

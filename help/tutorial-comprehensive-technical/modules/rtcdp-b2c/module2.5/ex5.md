@@ -54,7 +54,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 ![ ETL ](./../../../modules/rtcdp-b2c/module2.3/images/s3home.png)
 
-In **creeer het 1} scherm van het Emmertje {, moet u twee dingen vormen:**
+In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, moet u twee dingen vormen:**
 
 - Naam: gebruik de naam `eventforwarding---aepUserLdap--` .
 

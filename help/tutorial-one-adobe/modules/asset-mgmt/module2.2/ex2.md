@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 1.2.2.1 Een nieuwe goedkeuringsstroom maken
 
-Ga naar [ https://experienceplatform.my.workfront.com/ ](https://experienceplatform.my.workfront.com/) {target="_blank"}.
+Ga naar [ https://experienceplatform.my.workfront.com/ ](https://experienceplatform.my.workfront.com/){target="_blank"} .
 
 Klik het 9 punten **hamburger** pictogram en selecteren **het Bewijzen**.
 

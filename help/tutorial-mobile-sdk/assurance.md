@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker ](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) in de gids van de Verzekering voor meer informatie.[
+Bevestig dat uw organisatie toegang tot Verzekering heeft. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) in de gids van de Verzekering voor meer informatie.
 
 ## Implementeren
 
@@ -55,7 +55,7 @@ Naast de algemene [ installatie van SDK ](install-sdks.md), voltooide u in de vr
 
    Met deze code wordt een verzekeringssessie gestart wanneer de toepassing op de achtergrond wordt uitgevoerd en via een diepe koppeling wordt geopend.
 
-Meer informatie kan [ hier ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/) {target="_blank"} worden gevonden.
+Meer informatie kan [ hier ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}  worden gevonden.
 
 
 
@@ -92,7 +92,7 @@ U moet een unieke bundle-id opgeven voor uw app.
    >
    >Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . U kunt het zelfde bundelherkenningsteken gebruiken dat u bij [ hebt gebruikt bepaalt bundelherkenningsteken ](#define-bundle-identifier).<br/> Op dezelfde manier gebruik een uniek schema URL, en vervang reeds verstrekt `lumatutorialswiftui` met uw uniek schema URL.
 
-Meer over regelingen URL in iOS leren, herzie [ de documentatie van Apple ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) {target="_blank"}.
+Meer over regelingen URL in iOS leren, herzie [ de documentatie van Apple ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} .
 
 De verzekering werkt door een URL, of via browser of QR code te openen. Die URL begint met de basis-URL die de app opent en aanvullende parameters bevat. Deze unieke parameters worden gebruikt om de sessie te verbinden.
 
@@ -146,6 +146,7 @@ In uw browser:
 
    1. Selecteer **[!UICONTROL Copy Link]**.
    1. Kopieer de diepe verbinding gebruikend ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe verbinding om app met Safari in de simulator te openen.
+
       ![ het exemplaarverbinding van de Verzekering ](assets/assurance-copy-link.png)
 
 1. Wanneer de app wordt geladen, ziet u een modaal dialoogvenster waarin u wordt gevraagd de pincode in te voeren die in stap 7 wordt getoond.
@@ -168,7 +169,7 @@ In uw browser:
 
          ![ betrouwbaarheidsgebeurtenissen ](assets/assurance-events.png)
 
-Als u in om het even welke uitdagingen loopt, herzie [ technisch ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/) {target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) {target="_blank"}.
+Als u in om het even welke uitdagingen loopt, herzie [ technisch ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}  en [ algemene documentatie ](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"} .
 
 
 ## Extensies verifiëren

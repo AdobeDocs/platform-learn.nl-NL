@@ -23,7 +23,7 @@ In deze les maakt u een sandbox voor de ontwikkelomgeving die u voor de rest van
 
 Sandboxen bieden geïsoleerde omgevingen waarin u functionaliteit kunt uitproberen zonder bronnen en gegevens te combineren met uw productieomgeving. Voor meer details, zie de [ zandbakdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=nl).
 
-**de Architecten van Gegevens 0} en** Ingenieurs van Gegevens **zullen zandbakken buiten dit leerprogramma moeten tot stand brengen.**
+**de Architecten van Gegevens 0&rbrace; en** Ingenieurs van Gegevens **zullen zandbakken buiten dit leerprogramma moeten tot stand brengen.**
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over sandboxen:
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)

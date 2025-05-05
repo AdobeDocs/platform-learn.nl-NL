@@ -57,11 +57,11 @@ Vervolgens ziet u de gegevens van AEP beschikbaar komen in Tableau. Klik **Blad 
 
 ![ tableau-drag-table.png ](./images/tableaudragtable2.png)
 
-Om uw gegevens op de kaart zichtbaar te maken, moet u lengte en breedte in dimensies omzetten. In **Maatregelen**, klik **Breedte** met de rechtermuisknop aan, uitgezochte **Bekeerling aan Dimension** in het menu. Doe het zelfde voor de **maatregel van de Lengte 0} {.**
+Om uw gegevens op de kaart zichtbaar te maken, moet u lengte en breedte in dimensies omzetten. In **Maatregelen**, klik **Breedte** met de rechtermuisknop aan, uitgezochte **Bekeerling aan Dimension** in het menu. Doe het zelfde voor de **maatregel van de Lengte 0&rbrace; &lbrace;.**
 
 ![ tableau-convert-Dimension.png ](./images/tableauconvertdimension.png)
 
-Sleep de **maatregel van de Lengte** {aan de **Kolommen** en de **5} maatregel van de Breedte {aan** Rijen **.** Automatisch zal de kaart van **België** met weinig punten verschijnen die de steden in uit gegevensreeks vertegenwoordigen.
+Sleep de **maatregel van de Lengte** {aan de **Kolommen** en de **5} maatregel van de Breedte &lbrace;aan** Rijen **.** Automatisch zal de kaart van **België** met weinig punten verschijnen die de steden in uit gegevensreeks vertegenwoordigen.
 
 ![ tableau-drag-lon-lat.png ](./images/tableaudraglonlat.png)
 

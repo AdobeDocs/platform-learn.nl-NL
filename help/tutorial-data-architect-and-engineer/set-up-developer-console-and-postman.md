@@ -42,7 +42,7 @@ Adobe Developer Console is de ontwikkelaarsbestemming om tot Adobe APIs &amp; SD
 
 1. Maak op uw lokale computer een map met de naam `Luma Tutorial Assets` voor bestanden die in de zelfstudie worden gebruikt.
 
-1. Open [ Adobe Developer Console ](https://console.adobe.io) {target="_blank"}
+1. Open [ Adobe Developer Console ](https://console.adobe.io){target="_blank"} 
 
 1. Meld u aan en bevestig dat u zich in de juiste organisatie bevindt
 

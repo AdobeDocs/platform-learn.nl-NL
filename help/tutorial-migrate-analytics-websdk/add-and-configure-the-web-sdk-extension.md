@@ -19,8 +19,10 @@ Voer de volgende stappen uit om de extensie toe te voegen en te configureren:
 
 1. Navigeer naar de gegevensverzameling van het Experience Platform. Dit kan op twee manieren worden verwezenlijkt:
    1. Ga naar de [ interface van Adobe Experience Platform ](https://platform.adobe.com/), dan uitgezocht **[!UICONTROL Tags]** dichtbij de bodem van de linkernavigatie.
+
       ![ Tags 1 van de Toegang ](assets/access-tags-1.jpg)
    1. Als u geen toegang tot Platform hebt, kunt u de toepassingsschakelaar (9 punten) bij het hoogste recht van het venster gebruiken en de Inzameling van Gegevens selecteren (na het hebben het programma geopend in Experience.Adobe.com).
+
       ![ Tags 2 van de Toegang ](assets/access-tags-2.jpg)
 1. Zoek en selecteer de eigenschap tag die u naar de Web SDK migreert.
 1. Selecteer **[!UICONTROL Extensions]** in de linkernavigatie van de eigenschap tag.

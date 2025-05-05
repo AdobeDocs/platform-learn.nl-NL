@@ -46,7 +46,7 @@ Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke o
 ![ DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
 In dit voorbeeld wilt u reageren op een specifieke klant die een specifiek product weergeeft.
-Van de **homepage van het Signaal 0} Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
+Van de **homepage van het Signaal 0&rbrace; Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
 
 ![ Ingestie van Gegevens ](./images/homegalaxy.png)
 

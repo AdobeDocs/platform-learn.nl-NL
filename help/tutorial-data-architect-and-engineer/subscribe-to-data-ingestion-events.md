@@ -22,11 +22,11 @@ ht-degree: 0%
 In deze les meldt u zich aan gebeurtenissen voor het opnemen van gegevens door een webhaak in te stellen met de Adobe Developer Console en een online hulpprogramma voor de ontwikkeling van webhaken. U zult deze gebeurtenissen gebruiken om de status van uw taken van de gegevensopname in de verdere lessen te controleren.
 
 **de Ingenieurs van Gegevens** zullen aan de gebeurtenissen van de gegevensopname buiten dit leerprogramma willen intekenen.
-**_de Architecten van Gegevens 0} {kunnen deze les_ overslaan en naar de [ partij ingesliples ](ingest-batch-data.md) gaan.**
+**_de Architecten van Gegevens 0&rbrace; &lbrace;kunnen deze les_ overslaan en naar de [ partij ingesliples ](ingest-batch-data.md) gaan.**
 
 ## Vereiste machtigingen
 
-In [ vorm de 1} les van Toestemmingen {, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
+In [ vorm de 1&rbrace; les van Toestemmingen &lbrace;, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
 
 <!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->

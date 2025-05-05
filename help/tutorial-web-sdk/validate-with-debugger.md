@@ -38,7 +38,7 @@ Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 
 ## Vereisten
 
-U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
+U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}  en hebt de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -52,7 +52,7 @@ U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ plaat
 
 De Experience Platform Debugger beschikt over een coole functie waarmee u een bestaande tagbibliotheek kunt vervangen door een andere. Deze techniek is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
 
-1. Zorg ervoor u de [ de demowebsite van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"} open hebt en het de uitbreidingspictogram van Debugger van Experience Platform selecteert
+1. Zorg ervoor u de [ de demowebsite van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}  open hebt en het de uitbreidingspictogram van Debugger van Experience Platform selecteert
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Bevestig dat Debugger &quot;**[!UICONTROL Connected to Luma]**&quot;zoals hieronder afgebeeld is en selecteer dan het &quot;**[!UICONTROL lock]**&quot;pictogram is om Debugger aan de plaats van de Luma te sluiten.
 1. Selecteer de knop **[!UICONTROL Sign In]** en meld u aan bij Adobe Experience Cloud met uw Adobe-id.
@@ -127,7 +127,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
 Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel (het veronderstellen van de website laadt uw markeringsbibliotheek).
 
-1. Open het 1} lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen {en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
+1. Open het 1&rbrace; lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen &lbrace;en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
 
    ![ lusje van het Netwerk ](assets/validate-dev-console.png)
 

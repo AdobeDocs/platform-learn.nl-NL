@@ -128,12 +128,12 @@ Het **goede nieuws** is dat dit **zou moeten in werking stellen** u verzendt geb
 
 Wel, ja en nee. Ja, u moet een paar kleine dingen veranderen, maar nee, u zult niet het grootste deel van uw code hoeven te veranderen zolang u deze kleine dingen verandert:
 
-_**verandering van de Code 1:**_
+_&#x200B;**verandering van de Code 1:**&#x200B;_
 Na (of vóór, uw keus) kleeft u uw &quot;stop-binnen&quot;code in het codevenster in de uitbreiding van SDK van het Web, **verwijdert** de &quot;doPlugin&quot;lijnen uit uw code. U hebt ze niet nodig en ze veroorzaken een fout omdat ze deel uitmaken van appMeturement.js, maar niet van de Web SDK-code.
 
 ![ verwijdert doPlugins coderegels ](assets/remove-doplugins.jpg)
 
-_**verandering van de Code 2:**_
+_&#x200B;**verandering van de Code 2:**&#x200B;_
 De andere verandering die u zult moeten doen is wat code toe te voegen zodat het voorwerp &quot;s&quot;wordt bepaald, zeer gelijkaardig aan wat hierboven met betrekking tot de code in regelacties wordt besproken. In dit geval, zullen wij de code enkel een beetje verschillend moeten bepalen, toevoegend een &quot;gegevens&quot;knoop die reeds in de regelactie, maar niet hier wordt bepaald.
 Deze definitie moet boven aan het codevenster worden geplaatst. De code die binnen moet worden gekopieerd (wanneer het plaatsen van de code in de uitbreiding van SDK van het Web) is als volgt:
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**met beide codeveranderingen:**_
+_&#x200B;**met beide codeveranderingen:**&#x200B;_
 Hier is de code hierboven vermeld, maar met beide veranderingen wij net bespraken:
 
 ![ Bijgewerkte code ](assets/update-code.jpg)

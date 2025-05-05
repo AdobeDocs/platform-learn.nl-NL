@@ -120,7 +120,7 @@ U zult iets als dit op uw scherm hebben:
 
 ![ demo ](./images/calcbuildercr6.png)
 
-Vergeet niet om **** te sparen Berekend Metrisch.
+Vergeet niet om **&#x200B;**&#x200B;te sparen Berekend Metrisch.
 
 ![ demo ](./images/pr9.png)
 

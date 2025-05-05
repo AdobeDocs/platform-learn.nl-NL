@@ -72,7 +72,7 @@ De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 1. Eerst, bepaalt u gegevensstroom met voeten treedt in de configuratie van de datastream dienst. Bijvoorbeeld, zou u afwisselende het rapportreeksen van Analytics, de werkruimten van het Doel, of de datasets van het Platform kunnen bepalen om als met voeten te treden.
 1. Dan, verzendt u de met voeten treedt naar Edge Network of met een SDK van het Web verzendt gebeurtenisactie, of door een configuratie in de de markeringsuitbreiding van SDK van het Web.
 
-In de ](setup-analytics.md) les van de Opstelling Adobe Analytics [ {, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
+In de [&#128279;](setup-analytics.md) les van de Opstelling Adobe Analytics  &lbrace;, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
 
 U kunt nu de extensie Platform Web SDK installeren in de eigenschap Tag.
 

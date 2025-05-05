@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 1.1.2 Uw op documenten gebaseerde website maken
 
-Terwijl u wacht tot uw Cloud Manager-programma is gemaakt, hebt u genoeg tijd om uw eerste op documenten gebaseerde ontwerpwebsite in te stellen. De hieronder oefening is gebaseerd op [ aem.live het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial) {target="_blank"}. Volg de onderstaande stappen om aan de slag te gaan.
+Terwijl u wacht tot uw Cloud Manager-programma is gemaakt, hebt u genoeg tijd om uw eerste op documenten gebaseerde ontwerpwebsite in te stellen. De hieronder oefening is gebaseerd op [ aem.live het Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial){target="_blank"} . Volg de onderstaande stappen om aan de slag te gaan.
 
 ## 1.1.2.1 Google Drive instellen
 
-Ga naar [ https://drive.google.com ](https://drive.google.com) {target="_blank"}. Klik **+ Nieuw** en klik dan **Nieuwe Omslag**.
+Ga naar [ https://drive.google.com ](https://drive.google.com){target="_blank"} . Klik **+ Nieuw** en klik dan **Nieuwe Omslag**.
 
 ![ AEMCS ](./images/googledrive1.png){zoomable="yes"}
 
@@ -65,7 +65,7 @@ U moet de parameter voor de querytekenreeks `?usp=drive_link` verwijderen, zodat
 
 ## 1.1.2.2 Opstelling uw repo van GitHub
 
-Ga naar [ https://github.com ](https://github.com) {target="_blank"}. Klik **Teken binnen**.
+Ga naar [ https://github.com ](https://github.com){target="_blank"} . Klik **Teken binnen**.
 
 ![ AEMCS ](./images/aemcssetup1.png){zoomable="yes"}
 
@@ -77,7 +77,7 @@ Zodra binnen ondertekend, zult u uw dashboard zien GitHub.
 
 ![ AEMCS ](./images/aemcssetup3.png){zoomable="yes"}
 
-Ga naar [ https://github.com/adobe/aem-boilerplate ](https://github.com/adobe/aem-boilerplate) {target="_blank"}. Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
+Ga naar [ https://github.com/adobe/aem-boilerplate ](https://github.com/adobe/aem-boilerplate){target="_blank"} . Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
 
 ![ AEMCS ](./images/aemdocbcssetup4.png){zoomable="yes"}
 
@@ -89,7 +89,7 @@ Na een paar seconden wordt de repository gemaakt.
 
 ![ AEMCS ](./images/aemdocbcssetup6.png){zoomable="yes"}
 
-Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync) {target="_blank"}. Klik **vormen**.
+Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync){target="_blank"} . Klik **vormen**.
 
 ![ AEMCS ](./images/aemcssetup7.png){zoomable="yes"}
 
@@ -133,7 +133,7 @@ Klik **veranderingen** vastleggen.
 
 ## 1.1.2.4 AEM Sidekick-extensie installeren
 
-Ga naar [ https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo ](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo) {target="_blank"}. Klik **toevoegen aan Chrome**.
+Ga naar [ https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo ](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"} . Klik **toevoegen aan Chrome**.
 
 ![ AEMCS ](./images/aemdocbcssetup16.png){zoomable="yes"}
 

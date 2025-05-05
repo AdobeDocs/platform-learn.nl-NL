@@ -45,7 +45,7 @@ Gender is een kenmerk van Person, dat te vinden is onder Kenmerken. Zo om daar t
 
 ![Segmentatie](./images/person.png)
 
-Dan zie je dit. In **Persoon**, kunt u het **3} attribuut van het Geslacht {vinden.** Sleep het attribuut Gender naar de publieksbouwer.
+Dan zie je dit. In **Persoon**, kunt u het **3&rbrace; attribuut van het Geslacht &lbrace;vinden.** Sleep het attribuut Gender naar de publieksbouwer.
 
 ![Segmentatie](./images/gender.png)
 
@@ -71,7 +71,7 @@ Ga naar **Punten van de Lijst van het Product**.
 
 ![Segmentatie](./images/plitems.png)
 
-Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **** sectie van Gebeurtenissen.
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **&#x200B;**&#x200B;sectie van Gebeurtenissen.
 
 ![Segmentatie](./images/eeweb.png)
 

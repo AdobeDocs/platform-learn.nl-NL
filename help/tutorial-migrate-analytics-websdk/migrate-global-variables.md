@@ -54,6 +54,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
    1. **Type van Gebeurtenis** kon klaar DOM, afhankelijk van uw implementatie zijn
    1. Breid **Geavanceerde Opties** uit
    1. Plaats de **Orde** aan een lager aantal dan uw andere regels, zodat het eerst zal uitvoeren.
+
       ![ vorm Globale Veranderlijke Gebeurtenis ](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >
@@ -62,7 +63,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
 1. U te hoeven niet om voorwaarden aan deze regel toe te voegen, zodat kunt u die sectie van regelverwezenlijking alleen verlaten.
 1. Klik het plusteken onder **sectie van Acties**
 1. De nieuwe handeling configureren
-   1. Kies de Extensie van SDK van het Web van Adobe Experience Platform ****
+   1. Kies de Extensie van SDK van het Web van Adobe Experience Platform **&#x200B;**
    1. Voor **Type van Actie**, kies de Variabele van de Update
    1. Op het recht, kies uw veranderlijk **Element van Gegevens** (voor dit leerprogramma, werd het genoemd &quot;Element van de Gegevens van de Mening van de Pagina,&quot;maar uw kan variëren)
    1. Selecteer **Analytics** onder het gegevensvoorwerp

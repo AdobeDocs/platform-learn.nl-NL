@@ -60,7 +60,7 @@ Ga naar **Punten van de Lijst van het Product**.
 
 ![Segmentatie](./images/plitems.png)
 
-Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **** sectie van Gebeurtenissen. U zult dan dit zien:
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **&#x200B;**&#x200B;sectie van Gebeurtenissen. U zult dan dit zien:
 
 ![Segmentatie](./images/eewebpdtlname.png)
 

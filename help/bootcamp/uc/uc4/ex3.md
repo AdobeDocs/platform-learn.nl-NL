@@ -192,7 +192,7 @@ Uw configuratie zou dan als dit moeten kijken:
 
 ![ demo ](./images/11-v2.png)
 
-Vergeet niet **** te bewaren uw Mening van Gegevens. Zo klik **sparen** nu.
+Vergeet niet **&#x200B;**&#x200B;te bewaren uw Mening van Gegevens. Zo klik **sparen** nu.
 
 ![ demo ](./images/12-v2s.png)
 
@@ -221,7 +221,7 @@ Wijzig nu de naam en beschrijving van de component in de volgende waarden:
 
 ![ demo ](./images/calcmetr3.png)
 
-Nu laat slechts **gebeurtenissen tellen van de Meningen van het 0} Product.** Om dat te doen, scrol neer op de **Montages van de Component** tot u **omvat Exclude Waarden** ziet. Zorg ervoor om de optie toe te laten **plaats omvat/sluit waarden** uit.
+Nu laat slechts **gebeurtenissen tellen van de Meningen van het 0&rbrace; Product.** Om dat te doen, scrol neer op de **Montages van de Component** tot u **omvat Exclude Waarden** ziet. Zorg ervoor om de optie toe te laten **plaats omvat/sluit waarden** uit.
 
 ![ demo ](./images/calcmetr4.png)
 

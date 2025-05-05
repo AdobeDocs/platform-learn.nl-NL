@@ -27,7 +27,7 @@ Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en se
 
 ![ 1-01-open-azure-portal.png ](./images/101openazureportal.png)
 
-In het middelscherm, ga **Gebeurtenis** in de onderzoeksbar in. Vind de **kaart van de Hubs van de Gebeurtenis 0} {, klik** creeer **en klik dan** de Hubs van de Gebeurtenis **.**
+In het middelscherm, ga **Gebeurtenis** in de onderzoeksbar in. Vind de **kaart van de Hubs van de Gebeurtenis 0&rbrace; &lbrace;, klik** creeer **en klik dan** de Hubs van de Gebeurtenis **.**
 
 ![ 1-02-onderzoek-gebeurtenis-hubs.png ](./images/102searcheventhubs.png)
 

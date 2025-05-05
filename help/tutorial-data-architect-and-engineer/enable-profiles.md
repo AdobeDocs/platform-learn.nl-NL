@@ -191,4 +191,4 @@ U kunt ook bevestigen dat de gebruikersinterface de toegelaten dataset toont:
 
 
 **Ingenieurs van Gegevens** zouden aan [ moeten blijven aan de gebeurtenissen van de gegevensopname ](subscribe-to-data-ingestion-events.md) les abonneren.
-**_de Architecten van Gegevens 0} {kunnen vooruit_ overslaan en naar de [ partij ingesliples ](ingest-batch-data.md) gaan.**
+**_de Architecten van Gegevens 0&rbrace; &lbrace;kunnen vooruit_ overslaan en naar de [ partij ingesliples ](ingest-batch-data.md) gaan.**

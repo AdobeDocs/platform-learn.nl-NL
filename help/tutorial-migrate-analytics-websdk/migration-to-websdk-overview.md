@@ -81,5 +81,5 @@ Het migratieproces omvat de volgende belangrijke stappen:
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn bij uw migratie van Analytics naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie mist in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604) {target="_blank"} te posten.
+>We helpen u graag succesvol te zijn bij uw migratie van Analytics naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie mist in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}  te posten.
 

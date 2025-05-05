@@ -28,7 +28,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 ![ pagina van Eigenschappen ](./images/launch1.png)
 
 In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** .
-Klik om het **bezit te openen 0} van het Web {.**
+Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
 
 ![ vakje van het Onderzoek ](./images/property6.png)
 

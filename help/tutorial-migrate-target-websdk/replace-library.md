@@ -52,7 +52,7 @@ De SDK van het Web van het Platform gebruikt een configuratie van de gegevensstr
 >
 >Als identiteitskaart van het Milieu niet in de gegevensstroomconfiguratie wordt gespecificeerd, dan gebruikt het Doel de domein-aan-milieu afbeelding zoals die in de **wordt gespecificeerd Gastheren** sectie.
 
-Voor meer informatie, verwijs naar de ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) gids van de de configuratie van de 0} datastream en van het Doel [ Gastheren ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) documentatie.[
+Voor meer informatie, verwijs naar de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) gids van de de configuratie van de 0&rbrace; datastream en van het Doel [ Gastheren ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) documentatie.
 
 ## De SDK van het Web Platform implementeren
 
@@ -173,7 +173,7 @@ Voeg in de eigenschap tag de extensie Adobe Experience Platform Web SDK toe:
 
 Voor de vooraf samengestelde zelfstandige versie is een &quot;basiscode&quot; vereist die rechtstreeks aan de pagina wordt toegevoegd en die een algemene functie met de naam legering maakt. Gebruik deze functie om te communiceren met de SDK. Als u de algemene functie een andere naam wilt geven, wijzigt u de naam `alloy` .
 
-Verwijs naar [ Installerend de 1} documentatie van SDK van het Web van het Platform {voor extra details en plaatsingsopties.](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+Verwijs naar [ Installerend de 1&rbrace; documentatie van SDK van het Web van het Platform &lbrace;voor extra details en plaatsingsopties.](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
 
 ## Inhoud vooraf verbergen-benadering bijwerken

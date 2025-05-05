@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Referentiepubliek als adverteerder in Real-Time CDP Collaboration
 
-Als adverteerder, leer hoe te om publiek van verwijzingen te voorzien, die hen in uw interface brengen zodat zij kunnen worden gebruikt aangezien u met partners samenwerkt. Voor gedetailleerde documentatie, zie [ Invoer en beheer publiek ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences) {target="_blank"}.
+Als adverteerder, leer hoe te om publiek van verwijzingen te voorzien, die hen in uw interface brengen zodat zij kunnen worden gebruikt aangezien u met partners samenwerkt. Voor gedetailleerde documentatie, zie [ Invoer en beheer publiek ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"} .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

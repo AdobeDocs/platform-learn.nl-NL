@@ -63,7 +63,7 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.[
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) voor meer informatie.
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
    ![ AEP gegevensstroomconfiguratie ](assets/datastream-aep-configuration-offers.png)
@@ -134,6 +134,7 @@ De Mobile JSON-plaatsing maken:
 1. In de **[!UICONTROL Details]** -stap van **[!UICONTROL Create new personalized offer]** :
    1. Voer een **[!UICONTROL Name]** in voor de aanbieding, bijvoorbeeld `Luma - Juno Jacket` , en voer een **[!UICONTROL Start date and time]** en een **[!UICONTROL End date and time]** in. Buiten deze datums wordt de aanbieding niet geselecteerd door de beslissingsengine.
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Aanbiedingen - Details ](assets/ajo-offers-details.png)
 
 1. In de **[!UICONTROL Add representations]** -stap van **[!UICONTROL Create new personalized offer]** :
@@ -152,14 +153,17 @@ De Mobile JSON-plaatsing maken:
          ```
 
       1. Selecteer **[!UICONTROL Save]**.
+
          ![ Aanbiedingen - de inhoud van de Douane ](assets/ajo-offers-customcontent.png)
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Vertegenwoordigingen van de Aanbieding ](assets/ajo-offers-representations.png)
 
 1. In de stap **[!UICONTROL Add constraints]** van **[!UICONTROL Create new personalized offer]** :
    1. Stel **[!UICONTROL Priority]** in op `10` .
    1. Schakelen **[!UICONTROL Include capping]** uit.
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Aanbiedingen - Beperkingen ](assets/ajo-offers-constraints.png)
 
 1. In de **[!UICONTROL Review]** -stap van **[!UICONTROL Create new personalized]** -aanbieding:
@@ -253,9 +257,11 @@ Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.
    1. In de **[!UICONTROL Evaluation Criteria]** tegel, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** toe.
       1. Selecteer in het dialoogvenster **[!UICONTROL Add Offer Collection]** de verzameling met aanbiedingen. Bijvoorbeeld **[!DNL Luma - Mobile App Collection]** .
       1. Selecteer **[!UICONTROL Add]**.
+
          ![ Besluit - de Uitgezochte inzameling ](assets/ajo-decision-selectcollection.png)
    1. Zorg ervoor dat **[!UICONTROL None]** is geselecteerd voor **[!UICONTROL Eligibility]** en dat **[!UICONTROL Offer priority]** is geselecteerd als **[!UICONTROL Ranking method]** .
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ werkingsgebied van het Besluit ](assets/ajo-decision-scopes.png).
 1. In de **[!UICONTROL Add fallback offer]** -stap van **[!UICONTROL Create a new offer decision]** :
    1. Selecteer de fallback-aanbieding, bijvoorbeeld de **[!DNL Luma - Fallback offer]** .
@@ -291,7 +297,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ AEP ](https://github.com/adobe/aepsdk-messaging-ios) optimaliseert aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. In Xcode, zorg ervoor dat [ AEP ](https://github.com/adobe/aepsdk-messaging-ios) optimaliseert aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPOptimize` deel uitmaakt van uw lijst met importbewerkingen.
 

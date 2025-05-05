@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Het migreren van at.js aan het Web SDK van het Platform vereist een aanvankelijke opstelling om juiste gegevensvangst, eigenschappen, en functies van het Web SDK van het Platform toe te laten. De volgende stappen van het [ de implementatieleerprogramma van SDK van het Web van het Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) moeten worden voltooid alvorens om het even welke veranderingen van de websiteimplementatie plaatsvinden:
 
-- [ vorm de aangewezen toestemmingen ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites) {target="_blank"} in Adobe Admin Console voor de Inzameling van Gegevens
-- [ vorm een schema XDM ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html) {target="_blank"} voor het overgaan van gestructureerde gegevens tot de Edge Network
-- [ vorm een identiteit namespace ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html) {target="_blank"} voor cross-device verpersoonlijking en mbox3rdPartyId functionaliteit
-- [ creeer een datastream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) {target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
-- [ vorm de datastream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream) {target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
+- [ vorm de aangewezen toestemmingen ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}  in Adobe Admin Console voor de Inzameling van Gegevens
+- [ vorm een schema XDM ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"}  voor het overgaan van gestructureerde gegevens tot de Edge Network
+- [ vorm een identiteit namespace ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"}  voor cross-device verpersoonlijking en mbox3rdPartyId functionaliteit
+- [ creeer een datastream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"}  om het door:sturen van gegevens van Edge Network toe te laten
+- [ vorm de datastream ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"}  om het door:sturen van gegevens aan Adobe Target toe te laten
 
 >[!CAUTION]
 >

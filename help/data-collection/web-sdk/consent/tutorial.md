@@ -32,7 +32,7 @@ Deze zelfstudie gebruikt de uitbreiding van SDK van het Web van het Platform om 
 
 De eerste vereisten voor het gebruiken van het Web SDK worden vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals).
 
-Op die pagina, is er een vereiste voor een &quot;Dataset van de Gebeurtenis&quot;en, enkel zoals het klinkt, is dit een dataset om uw gegevens van de ervaringsgebeurtenis te houden. Om toestemmingsinformatie met gebeurtenissen te verzenden, moet de ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) gebiedsgroep van de Details van de Toestemming 0} IAB TCF 2.0 worden toegevoegd aan uw schema van de Gebeurtenis van de Ervaring:[
+Op die pagina, is er een vereiste voor een &quot;Dataset van de Gebeurtenis&quot;en, enkel zoals het klinkt, is dit een dataset om uw gegevens van de ervaringsgebeurtenis te houden. Om toestemmingsinformatie met gebeurtenissen te verzenden, moet de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) gebiedsgroep van de Details van de Toestemming 0&rbrace; IAB TCF 2.0 worden toegevoegd aan uw schema van de Gebeurtenis van de Ervaring:
 
 ![](./images/event-schema.png)
 
@@ -44,7 +44,7 @@ Dit leerprogramma veronderstelt u toegang tot de Inzameling van Gegevens hebt en
 * [ Overzicht van bibliotheken ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
 * [ het Publiceren overzicht ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
 
-Wij zullen ook de ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding van Chrome gebruiken Debugger van het 0} Platform {om onze implementatie te inspecteren en te bevestigen.[
+Wij zullen ook de [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding van Chrome gebruiken Debugger van het 0&rbrace; Platform &lbrace;om onze implementatie te inspecteren en te bevestigen.
 
 Als u het TCF-voorbeeld voor IAB wilt implementeren met een CMP op uw eigen site, hebt u toegang tot een CMP nodig, zoals OneTrust of SourcePoint, om de gegevens te genereren die ze aanleveren, of u kunt hier eenvoudig volgen en de onderstaande resultaten bekijken.
 

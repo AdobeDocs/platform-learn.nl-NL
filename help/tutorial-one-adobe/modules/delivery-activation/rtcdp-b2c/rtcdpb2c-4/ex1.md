@@ -59,7 +59,7 @@ Installeer Azure Account en Sign-In voor de Code van Visual Studio van [ https:/
 
 ### macOS
 
-Zorg ervoor om [ eerst geïnstalleerde Homebrew ](https://brew.sh/) te hebben. Volg hier de instructies [ ](https://brew.sh/).
+Zorg ervoor om [ eerst geïnstalleerde Homebrew ](https://brew.sh/) te hebben. Volg hier de instructies [&#128279;](https://brew.sh/).
 
 ![ Knoop ](./images/brew.png)
 
@@ -107,7 +107,7 @@ sudo n 18
 
 Verwijder node.js uit Windows > Configuratiescherm > Software.
 
-Het installeren van de vereiste versie van de {](https://nodejs.org/en/) website 0} nodejs.org.[
+Het installeren van de vereiste versie van de {[&#128279;](https://nodejs.org/en/) website 0} nodejs.org.
 
 ## NPM-pakket installeren: verzoek
 

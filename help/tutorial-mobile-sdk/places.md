@@ -80,6 +80,7 @@ U definieert enkele aandachtspunten in de service Plaatsen.
    1. Selecteer **[!DNL Luma]** in de lijst **[!UICONTROL Select a Library]** .
    1. Controleer of u de werkbibliotheek hebt gekozen, bijvoorbeeld **[!UICONTROL Initial Build]** .
    1. Selecteer **[!UICONTROL Save to Library and Build]** in **[!UICONTROL Save to Library]** .
+
       ![ installeer de uitbreiding van Plaatsen ](assets/places-install-extension.png).
 
 1. Uw bibliotheek wordt opnieuw samengesteld.
@@ -139,6 +140,7 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
    1. Selecteer **[!UICONTROL Places]** in de **[!UICONTROL Extension]** lijst en selecteer **[!UICONTROL Enter POI]** in de **[!UICONTROL Event Type]** lijst.
    1. Selecteer **[!UICONTROL Keep Changes]**.
+
       ![ gebeurtenis van de Markering ](assets/tags-event-mobile-core.png).
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
    1. Selecteer **[!UICONTROL Mobile Core]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Attach Data]** in de lijst **[!UICONTROL Action Type]** . Met deze handeling worden gegevens over de lading gekoppeld.
@@ -169,6 +171,7 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
       U kunt `{%% ... %%}` placeholder van het gegevenselement ook opnemen waarden in JSON door de ![ Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) te selecteren. In een pop-updialoogvenster kunt u elk gegevenselement kiezen dat u hebt gemaakt.
 
    1. Selecteer **[!UICONTROL Keep Changes]**.
+
       ![ actie van Markeringen ](assets/tags-action-mobile-core.png)
 
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
@@ -257,7 +260,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK van Plaatsen reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ Plaatsen AEP ](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift ](install-sdks.md#swift-package-manager).[
+1. In Xcode, zorg ervoor dat [ Plaatsen AEP ](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPPlaces` deel uitmaakt van uw lijst met importbewerkingen.
 

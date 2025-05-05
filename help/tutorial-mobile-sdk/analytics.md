@@ -205,7 +205,7 @@ Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in 
 
   ![ het gebiedsgroep van ExperienceEvent FullExtension ](assets/schema-analytics-extension.png)
 
-* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de ](events.md) les van de Gegevens van de Gebeurtenis van het 0} Spoor {hebt gedaan, of[
+* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de [&#128279;](events.md) les van de Gegevens van de Gebeurtenis van het 0&rbrace; Spoor &lbrace;hebt gedaan, of
 * Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer details [ gegevens vastmaken aan de gebeurtenissen van SDK ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [ gegevens in gebeurtenissen van SDK wijzigen ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
 

@@ -45,7 +45,7 @@ In de dialoog van de Navigator, zet uw **LDAP** op het onderzoeksgebied (1) om v
 
 ![ macht-bi-lading-churn-data.png ](./images/powerbiloadchurndata.png)
 
-Zorg ervoor het **lusje van het 0} Rapport** (1) wordt geselecteerd.
+Zorg ervoor het **lusje van het 0&rbrace; Rapport** (1) wordt geselecteerd.
 
 ![ macht-bi-rapport-tab.png ](./images/powerbireporttab.png)
 

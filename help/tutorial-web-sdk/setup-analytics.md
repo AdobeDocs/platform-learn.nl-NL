@@ -315,7 +315,7 @@ Om Analytics te bevestigen vangt correct gegevens door het Web SDK van het Exper
 
 ### Validatie van Experience Cloud-id
 
-1. Ga naar de [ plaats van de Luminagedemo ](https://luma.enablementadobe.com/content/luma/us/en.html) {target="_blank"}
+1. Ga naar de [ plaats van de Luminagedemo ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 
 1. Selecteer de aanmeldknop rechtsboven en gebruik gebruikersgegevens u: test@adobe.com p: test voor verificatie
 1. Open Foutopsporing van het Experience Platform en [ schakelaar het markeringsbezit op de plaats aan uw eigen ontwikkelingsbezit ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
@@ -392,7 +392,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
    > De `ecommerce - pdp library loaded - AA (order 20)` -regel overschrijft de waarde van `eventType` ingesteld door de `all pages global content variables - library loaded - AA (order 1)` -regel wanneer deze is ingesteld om later in de reeks te worden geactiveerd
 
 
-   {de Mening van het Product van 0} Analytics ](assets/analytics-debugger-prodView.png)![
+   {de Mening van het Product van 0} Analytics ![&#128279;](assets/analytics-debugger-prodView.png)
 
 **bevestigt de rest e-commercegebeurtenissen en productkoorden worden geplaatst voor Analytics**
 
@@ -457,7 +457,7 @@ Omlaag schuiven naar **[!UICONTROL pageName]** om te controleren of de `Page Nam
 Volg dezelfde validatiegebruikstoepassingen die worden gebruikt voor validatie met bovenstaande foutopsporing voor Experience Platforms, ga verder met het gebruik van hetzelfde baken om de `Ecommerce Events` en de `Product String` te valideren.
 
 1. Zoeken naar lading waar de **[!UICONTROL events]** `prodView` bevat
-   {de bevestiging van het Koord van het 0} Product met Verzekering ](assets/assurance-hitdebugger-prodView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Verzekering ![&#128279;](assets/assurance-hitdebugger-prodView-event.png)
 1. Schuif omlaag naar **[!UICONTROL product-string]** om de `Product String` te valideren.
    * Noteer `Product SKU` en `Merchandizing eVar1` .
 1. Schuif verder omlaag en valideer dat `prop1` , dat u hebt geconfigureerd met de verwerkingsregels in de vorige sectie, de eigenschap `Product SKU` bevat\
@@ -466,11 +466,11 @@ Volg dezelfde validatiegebruikstoepassingen die worden gebruikt voor validatie m
 Ga door met het valideren van uw implementatie door de gebeurtenissen voor winkelwagentjes, kassa&#39;s en aankopen te controleren.
 
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scView` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Verzekering ](assets/assurance-hitdebugger-scView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Verzekering ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scCheckout` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Verzekering ](assets/assurance-hitdebugger-scView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Verzekering ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
 1. Zoeken naar lading waar de **[!UICONTROL events]** `purchase` bevat
-   {de bevestiging van het Koord van het 0} Product met Verzekering ](assets/assurance-hitdebugger-purchase-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Verzekering ![&#128279;](assets/assurance-hitdebugger-purchase-event.png)
 1. Wanneer u de `purchase` -gebeurtenis valideert, moet de `Product String` de `Product SKU` , `Product Quantity` en `Product Total Price` bevatten.
 1. Voor de `purchase` validate bovendien of `purchase-id` and/or `purchaseId` is ingesteld
 

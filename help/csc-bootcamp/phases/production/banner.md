@@ -29,10 +29,13 @@ Dankzij de automatisering van content beschikt Adobe Creative Cloud over de krac
 
 - De volgende zijn van belang voor u:
    - Adobe Drive Banner Donker: maakt een Adobe-banner met een donkere bedekking op basis van het geselecteerde element
+
      ![ donkere banner ](./images/prod-banner-dark.jpg)
    - Adobe fietbannerlicht: maakt een Adobe-banner met een lichtbedekking op basis van het geselecteerde element
+
      ![ lichte banner ](./images/prod-banner-light.jpg)
    - Adobe fietbanner Green: maakt een Adobe-banner met een groene overlay op basis van het geselecteerde middel
+
      ![ groene banner ](./images/prod-banner-green.jpg)
 
 - Nadat u het type banner hebt gekozen dat u wilt maken, selecteert u dat verwerkingsprofiel en selecteert u vervolgens Profiel toepassen op map(pen).

@@ -106,7 +106,7 @@ Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien 
 U moet ook voorbeeldrecords en velden kunnen zien met de functie **[!UICONTROL Preview dataset]** :
 ![ bevestigt levenscyclus die naar de dataset van het Platform wordt verzonden ](assets/lifecycle-platform-dataset.png)
 
-Een robuuster hulpmiddel om gegevens te bevestigen is de de vraagdienst van het Platform [ ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
+Een robuuster hulpmiddel om gegevens te bevestigen is de de vraagdienst van het Platform [&#128279;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
 
 ## Klantprofiel in realtime inschakelen
 
@@ -144,7 +144,7 @@ In de interface van het Platform,
 
 ![ kijkt omhoog een identiteitswaarde ](assets/platform-profile-lookup.png)
 
-Op het **[!UICONTROL Detail]** scherm, kunt u basisinformatie over de gebruiker, met inbegrip van de **[!UICONTROL ** verbonden identiteiten **]** zien:
+Op het **[!UICONTROL Detail]** scherm, kunt u basisinformatie over de gebruiker, met inbegrip van de **[!UICONTROL **&#x200B; verbonden identiteiten &#x200B;**]** zien:
 ![ profieldetails ](assets/platform-profile-details.png)
 
 In het **[!UICONTROL Events]** vindt u de gebeurtenissen die zijn verzameld in uw mobiele app-implementatie voor deze gebruiker:

@@ -22,7 +22,7 @@ In deze les, zult u leren om, vragen te plaatsen te schrijven en uit te voeren o
 
 Met de Adobe Experience Platform Query Service kunt u uw gegevens begrijpen door standaard SQL te gebruiken voor query&#39;s op gegevens in het Platform. Gebruikend de Dienst van de Vraag, kunt u zich bij om het even welke dataset in het meer van Gegevens aansluiten en de vraagresultaten vangen als nieuwe dataset voor gebruik in rapportering, machine het leren, of voor opname in het Profiel van de Klant in real time.
 
-**de Architecten van Gegevens 0} en** Ingenieurs van Gegevens **zullen de vraagdienst buiten dit leerprogramma moeten gebruiken.**
+**de Architecten van Gegevens 0&rbrace; en** Ingenieurs van Gegevens **zullen de vraagdienst buiten dit leerprogramma moeten gebruiken.**
 
 Alvorens u met de oefeningen begint, bekijk deze korte video om meer over de Dienst van de Vraag te leren:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)

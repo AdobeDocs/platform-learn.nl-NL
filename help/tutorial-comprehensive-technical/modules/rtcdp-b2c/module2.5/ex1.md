@@ -49,7 +49,7 @@ In het linkermenu, ga naar **Uitbreidingen**. U zult zien dat de **uitbreiding v
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/ssf3.png)
 
-Ga naar **Catalogus**. U zult de **uitbreiding van de Schakelaar van de Wolk van de Adobe 0} zien, samen vele anderen.** Klik **installeren** om het te installeren.
+Ga naar **Catalogus**. U zult de **uitbreiding van de Schakelaar van de Wolk van de Adobe 0&rbrace; zien, samen vele anderen.** Klik **installeren** om het te installeren.
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/ssf4.png)
 

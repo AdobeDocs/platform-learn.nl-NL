@@ -49,7 +49,7 @@ In het linkermenu, ga naar **Uitbreidingen**. U zult zien dat de **uitbreiding v
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/ssf3.png)
 
-Ga naar **Catalogus**. U zult de **uitbreiding van de Verbinding van de Wolk van 0} Adobe {, samen vele anderen zien.** Klik **installeren** om het te installeren.
+Ga naar **Catalogus**. U zult de **uitbreiding van de Verbinding van de Wolk van 0&rbrace; Adobe &lbrace;, samen vele anderen zien.** Klik **installeren** om het te installeren.
 
 ![ de Inzameling SSF van Gegevens van Adobe Experience Platform ](./images/ssf4.png)
 

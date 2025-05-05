@@ -23,7 +23,7 @@ Om deze reden, aangezien u regels migreert die de regels van de douaneverbinding
 
 1. De bestaande regel zal een **Adobe Analytics - Vastgestelde Variabelen** actie bevatten die steunen, steunen, gebeurtenissen, enz. plaatst, en dan een **Adobe Analytics - verzendt actie Beacon** bevat die de slag aan een slag van de douaneverbinding (A.K.A. en s.tl ()) plaatst, de verbindingsnaam en het type plaatst, en in de gegevens verzendt.
    1. In dit geval, zal het waarschijnlijk ook een definitieve actie bevatten die **Adobe Analytics - Duidelijke Variabelen** eveneens wordt genoemd, om &quot;nul uit&quot;de waarde van de variabelen te &quot;verwijderen nadat het gegeven is verzonden naar de servers van de Adobe.
-1. De bestaande regel zal slechts de **Adobe Analytics - verzend 1} actie van het Baken bevatten die de slag aan een slag van de douaneverbinding plaatst, de verbindingsnaam en het type plaatst, en in de gegevens verzendt.**
+1. De bestaande regel zal slechts de **Adobe Analytics - verzend 1&rbrace; actie van het Baken bevatten die de slag aan een slag van de douaneverbinding plaatst, de verbindingsnaam en het type plaatst, en in de gegevens verzendt.**
 
 ### Een belangrijke wijziging
 
@@ -67,7 +67,7 @@ Open uw regel van de verbinding van de regel de verbindingsregel en identificeer
 1. De actie Verzenden configureren
    1. Plaats de **Uitbreiding** aan het Web SDK van Adobe Experience Platform
    1. Plaats het **Type van Actie** aan Verzonden gebeurtenis
-   1. Klik het pictogram van het gegevenselement en kies het **gegevenselement 1} van de Gegevens van de Mening van de 10} Pagina Variabele**
+   1. Klik het pictogram van het gegevenselement en kies het **gegevenselement 1&rbrace; van de Gegevens van de Mening van de 10&rbrace; Pagina Variabele**
 
    ![ vorm verzenden gebeurtenis ](assets/configure-send-event.jpg)
 

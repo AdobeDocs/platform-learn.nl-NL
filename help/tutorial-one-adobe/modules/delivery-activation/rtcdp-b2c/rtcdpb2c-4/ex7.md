@@ -23,7 +23,7 @@ Zorg ervoor dat uw geopend en lopend project van de Code van Visual Studio hebt
 
 Om uw Azure functie in de Code van Visual Studio te beginnen/te stoppen/opnieuw te beginnen, verwijs naar de vorige oefening.
 
-Uw Eind van de Code van Visual Studio **** zou iets gelijkend op dit moeten vermelden:
+Uw Eind van de Code van Visual Studio **&#x200B;**&#x200B;zou iets gelijkend op dit moeten vermelden:
 
 ```code
 [2024-11-20T20:07:12.316Z] Debugger listening on ws://127.0.0.1:9229/86c8e251-8e2f-4c65-a063-cda77edbf2ca

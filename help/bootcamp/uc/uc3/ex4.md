@@ -43,7 +43,7 @@ Ga vervolgens terug naar de startpagina. Klik het **baken** pictogram.
 
 ![ DSN ](./images/app23.png)
 
-Dan zie je dit. Eerst, selecteer **Bandje van het Scherm van 0} Bootkamp en klik dan de** ingang **knoop.** Hierdoor kunt u een baken-item simuleren.
+Dan zie je dit. Eerst, selecteer **Bandje van het Scherm van 0&rbrace; Bootkamp en klik dan de** ingang **knoop.** Hierdoor kunt u een baken-item simuleren.
 
 ![ DSN ](./images/app21.png)
 

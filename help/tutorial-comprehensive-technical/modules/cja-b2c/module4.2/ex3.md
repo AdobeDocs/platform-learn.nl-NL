@@ -30,7 +30,7 @@ Voor het configureren van de BigQuery Source-connector in Adobe Experience Platf
 - clientSecret
 - refreshToken
 
-Tot dusverre hebt u slechts eerste, **identiteitskaart van het Project**. Deze **waarde van identiteitskaart van 0} Project is een willekeurige identiteitskaart die door Google werd geproduceerd toen u uw project BigQuery tijdens oefening 12.1 creeerde.**
+Tot dusverre hebt u slechts eerste, **identiteitskaart van het Project**. Deze **waarde van identiteitskaart van 0&rbrace; Project is een willekeurige identiteitskaart die door Google werd geproduceerd toen u uw project BigQuery tijdens oefening 12.1 creeerde.**
 
 Kopieer de project-id in een gescheiden tekstbestand.
 
@@ -62,7 +62,7 @@ Zodra u op de homepage bent, onderzoek naar **Platform van de Auth van Google** 
 
 ![ demo ](./images/ex24.png)
 
-U zult nu de **homepage van het Platform van de Auth van 0} Google {zien.** Klik **BEGONNEN** GET.
+U zult nu de **homepage van het Platform van de Auth van 0&rbrace; Google &lbrace;zien.** Klik **BEGONNEN** GET.
 
 ![ demo ](./images/ex26.png)
 
@@ -290,7 +290,7 @@ Uw **Authentificatie van de Rekening** - details zouden nu als dit moeten kijken
 
 ![ demo ](./images/ex239xx.png)
 
-Als uw **details van de Authentificatie van de 0} Rekening correct werden ingevuld, zou u nu een visuele bevestiging moeten zien dat de verbinding behoorlijk werkt, door de** Verbonden **bevestiging te zien.** Klik **daarna**.
+Als uw **details van de Authentificatie van de 0&rbrace; Rekening correct werden ingevuld, zou u nu een visuele bevestiging moeten zien dat de verbinding behoorlijk werkt, door de** Verbonden **bevestiging te zien.** Klik **daarna**.
 
 ![ demo ](./images/ex2projectid.png)
 

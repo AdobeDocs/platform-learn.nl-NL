@@ -42,11 +42,11 @@ of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account
 
 Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](https://www.postman.com/downloads/) hebt gedownload. Laten we beginnen!
 
-1. Download het {](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip, dat alle dossiers bevat die voor dit leerprogramma worden vereist.[
+1. Download het {[&#128279;](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip, dat alle dossiers bevat die voor dit leerprogramma worden vereist.
 
    >[!NOTE]
    >
-   >De gegevens van de gebruiker in het {](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.[
+   >De gegevens van de gebruiker in het {[&#128279;](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.
 
 1. Verplaats het `platform-utils-main.zip` -bestand vanuit de downloadmap naar de gewenste locatie op de computer en decomprimeer het bestand.
 1. Open in de map `luma-data` alle `json` -bestanden in een teksteditor en vervang alle instanties van `_yourTenantId` door uw eigen huurder-id, voorafgegaan door een onderstrepingsteken.
@@ -63,7 +63,7 @@ Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](htt
    > 
    > ![ het dossierweg van Vensters ](../assets/data-generator/images/windows-file-path.png)
 
-1. Open [!DNL Postman] en creeer een werkruimte van het **2} dropdown menu van de Werkruimten {:**\
+1. Open [!DNL Postman] en creeer een werkruimte van het **2&rbrace; dropdown menu van de Werkruimten &lbrace;:**\
    ![ creeer werkruimte ](../assets/data-generator/images/create-workspace.png)
 1. Ga a **Naam** en facultatieve **Samenvatting** voor uw werkruimte in en klik **creeer Workspace**. [!DNL Postman] schakelt over naar de nieuwe werkruimte wanneer u deze maakt.
    ![ sparen werkruimte ](../assets/data-generator/images/save-workspace.png)

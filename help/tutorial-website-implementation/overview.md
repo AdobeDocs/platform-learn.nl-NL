@@ -130,7 +130,7 @@ In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandel
    </html>
    ```
 
-+++
+   +++
 
 1. Hiermee krijgt u een teksteditor waarin u wijzigingen kunt aanbrengen in de HTML-voorbeeldpagina. (Als u geen hebt, adviseren wij het proberen [ Haakjes ](https://brackets.io/))
 1. Bladwijzer de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)

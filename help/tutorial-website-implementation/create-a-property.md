@@ -41,7 +41,7 @@ Aan het eind van deze les, zult u kunnen:
 
 1. Logboek in [ Adobe Experience Cloud ](https://experiencecloud.adobe.com)
 
-1. Klik het ](images/launch-solutionSwitcher.png) pictogram van de Schakelaar van de Oplossing van 0} {om app schakelaar te openen![
+1. Klik het ![&#128279;](images/launch-solutionSwitcher.png) pictogram van de Schakelaar van de Oplossing van 0&rbrace; &lbrace;om app schakelaar te openen
 
 1. Selecteer **[!UICONTROL Launch/Data Collection]** van het menu ![ Open de oplossingsschakelaar gebruikend het pictogram en klik de Inzameling van de Lancering/van Gegevens ](images/launch-solutionSwitcherActivation.png)
 

@@ -18,7 +18,7 @@ Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://exp
 
 ![ pagina van Eigenschappen ](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
 
 ![ vakje van het Onderzoek ](./../../../modules/datacollection/module1.1/images/property6.png)
 

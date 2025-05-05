@@ -28,31 +28,31 @@ Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw 
 
 ## Visual Studio-code
 
-Ga naar [ https://code.visualstudio.com/ ](https://code.visualstudio.com/) {target="_blank"}, download en installeer **Code van Visual Studio**.
+Ga naar [ https://code.visualstudio.com/ ](https://code.visualstudio.com/){target="_blank"} , download en installeer **Code van Visual Studio**.
 
 ![ Blok ](./assets/images/vsc1.png)
 
 ## Een teksteditor
 
-Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [ https://www.sublimetext.com/ ](https://www.sublimetext.com/) gaan {target="_blank"} en deze Redacteur van Tekst downloaden en installeren.
+Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [ https://www.sublimetext.com/ ](https://www.sublimetext.com/){target="_blank"} gaan  en deze Redacteur van Tekst downloaden en installeren.
 
 ![ Blok ](./assets/images/text1.png)
 
 ## GitHub-account
 
-Als u nog geen rekening GitHub hebt, ga [ https://github.com/ ](https://github.com/) {target="_blank"}, en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
+Als u nog geen rekening GitHub hebt, ga [ https://github.com/ ](https://github.com/){target="_blank"} , en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
 
 ![ Blok ](./assets/images/git.png)
 
 ## GitHub Desktop
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/) {target="_blank"}, download en installeer **Desktop van Github**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"} , download en installeer **Desktop van Github**.
 
 ![ Blok ](./assets/images/block1.png)
 
 ## Azure Storage Explorer
 
-[ Download Microsoft Azure de Ontdekkingsreiziger van de Opslag om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4) {target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
+[ Download Microsoft Azure de Ontdekkingsreiziger van de Opslag om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}  te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
 ![ Azure Opslag ](./assets/images/az10.png){zoomable="yes"}
 

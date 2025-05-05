@@ -88,7 +88,7 @@ Laten we de beste 5 bekeken producten vinden. In het linkerzijmenu, vind de **Na
 
 ![ demo ](./images/pro8.png)
 
-Nu belemmering en laat vallen {de Naam van het 0} Product **om de** 3} dimensie van de Dag te vervangen:****
+Nu belemmering en laat vallen {de Naam van het 0} Product **om de** 3&rbrace; dimensie van de Dag te vervangen:**&#x200B;**
 
 Dat zal het resultaat zijn. Selecteer de vier productnamen en u zult de vizualization update zien.
 
