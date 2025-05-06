@@ -4,9 +4,9 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## De app downloaden
 
-Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app){target="_blank"} op uw computer. Dan zie je dit.
+Ga naar [ https://dsn.adobe.com/install ](https://dsn.adobe.com/install){target="_blank"} op uw computer. Meld u aan met uw Adobe ID en dit ziet u.
 
 ![ DSN ](./images/mobileapp.png)
 

@@ -3,9 +3,10 @@ title: Aan de slag - Adobe I/O
 description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -16,16 +17,21 @@ ht-degree: 0%
 
 In deze oefening, wordt Adobe I/O gebruikt om diverse eindpunten van Adobe te vragen. Voer de volgende stappen uit om Adobe I/O in te stellen.
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} .
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"}.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png){zoomable="yes"}
 
 Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` .
+
+>[!NOTE]
+>
+> In de onderstaande schermafbeelding ziet u een specifieke org die wordt geselecteerd. Wanneer u door dit leerprogramma gaat, is het zeer waarschijnlijk dat uw org een verschillende naam heeft. Wanneer u zich hebt aangemeld voor deze zelfstudie, hebt u de te gebruiken omgevingsdetails ontvangen. Volg deze instructies.
+
 Daarna, uitgezochte **creeer nieuw project**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png){zoomable="yes"}
 
-### Firefly Services-API
+### FIREFLY SERVICES API
 
 Dan moet je dit zien. Selecteer **+ toevoegen aan Project** en kies **API**.
 
@@ -35,7 +41,7 @@ Het scherm moet er zo uitzien.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png){zoomable="yes"}
 
-Selecteer **Creative Cloud** en kies **Firefly - de Diensten van Firefly**, dan selecteren **daarna**.
+Selecteer **Creative Cloud** en kies **Firefly - Firefly Services**, dan selecteer **daarna**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ Verstrek een naam voor uw referentie: `--aepUserLdap-- - One Adobe OAuth credent
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png){zoomable="yes"}
 
-Selecteer de standaardprofiel **StandaardConfiguratie van de Diensten van Firefly** en selecteer **sparen Gevormde API**.
+Selecteer de standaardprofiel **StandaardConfiguratie van Firefly Services** en selecteer **sparen Gevormde API**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
 ![ Azure Opslag ](./images/ps2.png){zoomable="yes"}
 
-Selecteer **Creative Cloud** en kies **Photoshop - de Diensten van Firefly**. Selecteer **daarna**.
+Selecteer **Creative Cloud** en kies **Photoshop - Firefly Services**. Selecteer **daarna**.
 
 ![ Azure Opslag ](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ Selecteer **daarna**.
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
-Selecteer {de Configuratie van de Diensten van standaardFirefly 1} en **configuratie van de Diensten van de Automatisering van standaardCreative Cloud**.**&#x200B;**
+Selecteer **de Configuratie van de StandaardFirefly Services** en **configuratie van de Diensten van de Automatisering van Creative Cloud**.
 
 Selecteer **sparen gevormde API**.
 

@@ -4,9 +4,9 @@ description: Aan de slag - Maak uw DataStream
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 0%
 Ga naar [ https://experience.adobe.com/#/data-collection/ ](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![ DSN ](./images/launchprop.png)
+
+Voordat u verdergaat, moet u controleren of u de juiste omgeving hebt geselecteerd met behulp van de omgevingsschakelaar in de rechterbovenhoek van het scherm. De juiste omgeving wordt `--aepImsOrgName--` genoemd.
+
+>[!NOTE]
+>
+> In de onderstaande schermafbeelding ziet u een specifieke org die wordt geselecteerd. Wanneer u door dit leerprogramma gaat, is het zeer waarschijnlijk dat uw org een verschillende naam heeft. Wanneer u zich hebt aangemeld voor deze zelfstudie, hebt u de te gebruiken omgevingsdetails ontvangen. Volg deze instructies.
+
+
+![ DSN ](./images/org.png)
 
 Klik in het linkermenu op **[!UICONTROL Tags]** . Na de vorige exercitie hebt u nu drie eigenschappen voor gegevensverzameling: een voor het web, een voor mobiel en een voor de CX-app.
 
@@ -33,13 +42,17 @@ Klik op **[!UICONTROL Datastreams]**.
 
 Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
 
+>[!NOTE]
+>
+> In de onderstaande schermafbeelding ziet u een specifieke sandbox die wordt geselecteerd. Wanneer u deze zelfstudie doorloopt, is het zeer waarschijnlijk dat uw sandbox een andere naam heeft. Wanneer u zich hebt aangemeld voor deze zelfstudie, hebt u de te gebruiken omgevingsdetails ontvangen. Volg deze instructies.
+
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 
 Klik op **[!UICONTROL New Datastream]**.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1.png)
 
-Voer `--aepUserLdap-- - One Adobe Datastream` in voor de **[!UICONTROL Name]** en voor de optionele beschrijving. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
+Voor de **Naam**, en voor de facultatieve beschrijving, ga `--aepUserLdap-- - One Adobe Datastream` in. Voor **het Schema van de Toewijzing**, uitgezochte **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**. Klik **sparen**.
 
 ![ noem de Configuratie van Edge en bewaar ](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ Klik op **[!UICONTROL Datastreams]**.
 ![ klik het pictogram DataStream in de linkernavigatie ](./images/edgeconfig1a.png)
 
 Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn.
+
+>[!NOTE]
+>
+> In de onderstaande schermafbeelding ziet u een specifieke sandbox die wordt geselecteerd. Wanneer u deze zelfstudie doorloopt, is het zeer waarschijnlijk dat uw sandbox een andere naam heeft. Wanneer u zich hebt aangemeld voor deze zelfstudie, hebt u de te gebruiken omgevingsdetails ontvangen. Volg deze instructies.
 
 ![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
 

@@ -4,9 +4,9 @@ description: Aan de slag - Installeer de Chrome-extensie voor de Experience Leag
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Over de Chrome-extensie
 
-De documentatie is generiek gemaakt zodat het gemakkelijk door iedereen kan worden hergebruikt, gebruikend om het even welke instantie van Adobe Experience Platform.
-Om de documentatie herbruikbaar te maken, **Variabelen van het Milieu** werden geïntroduceerd in de documentatie, zo betekent het dat u hieronder **placeholders** in de documentatie zult vinden. Elke placeholder is een specifieke variabele voor een specifiek milieu, en de uitbreiding van Chrome zal die variabele voor u veranderen om het voor u gemakkelijk te maken om code en tekst van de leerzame pagina&#39;s te kopiëren en het te kleven in de diverse gebruikersinterfaces die u als deel van het leerprogramma zult gebruiken.
+Deze zelfstudie is algemeen gemaakt, zodat deze eenvoudig door iedereen kan worden hergebruikt, met elke Adobe Experience Cloud-instantie.
+
+Om de documentatie herbruikbaar te maken, **werden de Variabelen van het Milieu** geïntroduceerd in het leerprogramma, zo betekent het dat u hieronder **placeholders** in de documentatie zult vinden. Elke placeholder is een specifieke variabele voor een specifiek milieu, en de uitbreiding van Chrome zal die variabele voor u veranderen om het voor u gemakkelijk te maken om code en tekst van de leerzame pagina&#39;s te kopiëren en het te kleven in de diverse gebruikersinterfaces die u als deel van het leerprogramma zult gebruiken.
 
 Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen momenteel nog niet worden gebruikt, maar zodra u de Chrome-extensie installeert en activeert, worden deze variabelen gewijzigd in normale tekst die u kunt kopiëren en opnieuw kunt gebruiken.
 
 | Naam | Sleutel | Voorbeeld |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS Org Name | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS Org ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS-naam | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP Tenant ID | `--aepTenantId--` | `_experienceplatform` |
 | Naam AEP-sandbox | `--aepSandboxName--` | `one-adobe` |
 | Leerlingprofiel LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ In het **menu van uitbreidingen**, klik het **puzzelstuk** pictogram en speld he
 
 ## De Chrome-extensie configureren
 
-Ga naar [ https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} en klik dan het uitbreidingspictogram om het te openen.
+Ga naar [ https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} en klik dan het uitbreidingspictogram om het te openen.
 
 ![ DSN ](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initia
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Als test, ga [ deze pagina ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** op deze pagina door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
