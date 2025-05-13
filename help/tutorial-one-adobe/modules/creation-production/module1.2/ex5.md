@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -208,7 +208,7 @@ Kopieer de hieronder code JSON en kleef het op het gebied **Lichaam**.
 }
 ```
 
-Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. **&#x200B;**.
+Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. ****.
 
 ![ Kader IO ](./images/frame31.png)
 
@@ -250,7 +250,7 @@ U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in 
 
 ![ Kader IO ](./images/frame38.png)
 
-De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **module van de Reactie van Webhaak**. U zult zien dat onder **UITVOER**, u het lichaam ziet dat de nuttige lading JSON voor de vorm bevat. Klik **Looppas eens** opnieuw.
+De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **module van de Reactie van Webhaak**. U zult zien dat onder **INPUT**, u het lichaam ziet dat de nuttige lading JSON voor de vorm bevat. Klik **Looppas eens** opnieuw.
 
 ![ Kader IO ](./images/frame40.png)
 
@@ -272,7 +272,7 @@ De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **Webhaak 
 
 ## 1.2.5.4 Bestandslocatie ophalen van Frame.io
 
-Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig voor dit scenario aan functie. De eerste 3 gebieden zijn nu reeds beschikbaar maar **psdTemplate** aan gebruik nog mist. **psdTemplate** zal nu een plaats Frame.io van verwijzingen voorzien aangezien het dossier **wordt** ontvangen &lbrace;in Frame.io. Om de locatie van dat bestand op te halen, moet u de verbinding Frame.io configureren en gebruiken in Workfront Fusion.
+Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig voor dit scenario aan functie. De eerste 3 gebieden zijn nu reeds beschikbaar maar **psdTemplate** aan gebruik nog mist. **psdTemplate** zal nu een plaats Frame.io van verwijzingen voorzien aangezien het dossier **wordt** ontvangen {in Frame.io. Om de locatie van dat bestand op te halen, moet u de verbinding Frame.io configureren en gebruiken in Workfront Fusion.
 
 Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action` . Over de **heen?** klikt u op het pictogram **+** om een andere module toe te voegen en te zoeken naar `frame` . Klik **Frame.io**.
 
@@ -354,7 +354,7 @@ De schakelaar terug naar de Fusie van Workfront en klikt de bel op **Frame.io - 
 
 ![ Kader IO ](./images/frame60.png)
 
-U kunt nu veel meta-gegevens over de specifieke activa **&#x200B;**&#x200B;zien burgerschap-vezel.psd.
+U kunt nu veel meta-gegevens over de specifieke activa **** zien burgerschap-vezel.psd.
 
 ![ Kader IO ](./images/frame61.png)
 

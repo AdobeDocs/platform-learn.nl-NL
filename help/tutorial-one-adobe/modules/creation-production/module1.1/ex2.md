@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
@@ -186,7 +186,7 @@ Selecteer **creeer**.
 
 ![ Azure Opslag ](./images/az28.png){zoomable="yes"}
 
-Na het ontvangen van uw **SAS-teken**, uitgezochte **Exemplaar**.
+Na het ontvangen van uw **Gedeelde Ondertekening van de Toegang**, uitgezochte **Exemplaar** om URL te kopiëren.
 
 ![ Azure Opslag ](./images/az29.png){zoomable="yes"}
 

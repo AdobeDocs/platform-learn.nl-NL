@@ -4,9 +4,9 @@ description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ Selecteer **daarna**.
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
 Selecteer **Adobe Experience Platform - Alle Gebruikers - PROD**.
+
+>[!NOTE]
+>
+>De naam van het productprofiel voor AEP is afhankelijk van de configuratie van de omgeving. Als u het bovengenoemde productprofiel niet ziet, kunt u een productprofiel hebben dat **Standaardproductie Al Toegang** wordt genoemd. Als u niet zeker bent welke u moet kiezen, vraagt u de beheerder van het AEP-systeem.
 
 Selecteer **sparen gevormde API**.
 

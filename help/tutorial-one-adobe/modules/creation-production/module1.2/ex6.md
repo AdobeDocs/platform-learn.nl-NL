@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Dan moet je dit zien. Klik **adres van het Exemplaar aan klembord**.
 
 ## 1.2.6.2 Webhaak configureren in Frame.io
 
-Ga naar [ https://developer.frame.io/ ](https://developer.frame.io/){target="_blank"}. Klik **TOOLS VAN DE ONTWIKKELAAR** en kies dan **de Acties van de Douane**.
+Ga naar [ https://developer.frame.io/ ](https://developer.frame.io/){target="_blank"}. Klik **TOOLS VAN DE ONTWIKKELAAR** en kies dan **Webhooks**.
 
 ![ Kader IO ](./images/aemf7.png)
 
@@ -183,7 +183,7 @@ Klik **sparen** om uw veranderingen te bewaren.
 
 ![ Kader IO ](./images/aemf32.png)
 
-Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **&#x200B;**&#x200B;wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0&rbrace; tussen de modules** Frame.io - krijg een activa **en** Adobe Photoshop - zet beeldformaat **om en selecteer dan** Opstelling een filter **.**
+Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **** wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0} tussen de modules** Frame.io - krijg een activa **en** Adobe Photoshop - zet beeldformaat **om en selecteer dan** Opstelling een filter **.**
 
 ![ Kader IO ](./images/aemf34.png)
 

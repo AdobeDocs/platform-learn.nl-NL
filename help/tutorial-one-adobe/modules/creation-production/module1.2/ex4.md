@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Klik de pijl om het dropdown menu te openen en **Kloon** te selecteren.
 ![ WF Fusion ](./images/wffc2.png)
 
 Plaats de **Naam** van het gekloonde scenario aan `--aepUserLdap-- - Firefly + Photoshop` en selecteer het aangewezen **team van het Doel**. Klik **toevoegen** om een nieuwe webhaak toe te voegen.
+
+>[!NOTE]
+>
+>U kunt niet de optie zien om a **Team van het Doel** te selecteren. Deze optie wordt alleen weergegeven als u een gebruiker bent in meer dan 1 Team in Workfront Fusion. Als u deze optie niet ziet, betekent het eenvoudig dat u slechts aan 1 Team bent toegevoegd zodat geen keus wordt vereist.
 
 ![ WF Fusion ](./images/wffc3.png)
 
@@ -117,7 +121,7 @@ U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project
 
 ![ WF Fusion ](./images/wffc20.png)
 
-Zodra u alle gebieden hebt ingevuld, gaat de klik **&#x200B;**&#x200B;verder. Uw verbinding wordt dan automatisch gevalideerd.
+Zodra u alle gebieden hebt ingevuld, gaat de klik **** verder. Uw verbinding wordt dan automatisch gevalideerd.
 
 ![ WF Fusion ](./images/wffcff6.png)
 
@@ -214,11 +218,11 @@ Plak de naam **2048x2048-achtergrond** in de dialoog van de Fusie van Workfront.
 
 De rol neer tot u **Input** ziet. U moet nu definiëren wat op de achtergrondlaag moet worden ingevoegd. In dit geval, moet u de output van de **Adobe Firefly** module selecteren, die het dynamisch geproduceerde beeld bevat.
 
-Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, kopieer en kleef veranderlijk `{{XX.details[].url}}` van de output van de **Adobe Firefly** module. Vervang **XX** in de variabele door het opeenvolgingsaantal van de **Adobe Firefly** module, die in dit voorbeeld **22** is.
+Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, zult u veranderlijk `{{XX.details[].url}}` van de output van de **Adobe Firefly** module moeten kopiëren en kleven maar u moet **XX** in de variabele door het opeenvolgingsaantal van de **Adobe Firefly** module vervangen, die in dit voorbeeld **22** is.
 
 ![ WF Fusion ](./images/wffc28.png)
 
-Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **&#x200B;**&#x200B;uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
+Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **** uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
 
 ![ WF Fusion ](./images/wffc29.png)
 
