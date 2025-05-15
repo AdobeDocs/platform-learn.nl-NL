@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 0%
 
 ---
@@ -121,13 +121,17 @@ U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project
 
 ![ WF Fusion ](./images/wffc20.png)
 
-Zodra u alle gebieden hebt ingevuld, gaat de klik **&#x200B;**&#x200B;verder. Uw verbinding wordt dan automatisch gevalideerd.
+Zodra u alle gebieden hebt ingevuld, gaat de klik **** verder. Uw verbinding wordt dan automatisch gevalideerd.
 
 ![ WF Fusion ](./images/wffcff6.png)
 
-Daarna, selecteer de veranderlijke **herinnering** die aan het scenario door de inkomende **Douane webhaak** wordt verstrekt. Klik **OK**.
+Daarna, selecteer de veranderlijke **herinnering** die aan het scenario door de inkomende **Douane webhaak** wordt verstrekt.
 
 ![ WF Fusion ](./images/wffcff7.png)
+
+Daarna, plaats de **Modelversie** **herinnering** aan **image4 norm**. Klik **OK**.
+
+![ WF Fusion ](./images/wffcff7b.png)
 
 Alvorens u verdergaat, moet u de oude route in het scenario zoals voor deze oefening onbruikbaar maken, zult u slechts de nieuwe route gebruiken die u op het ogenblik vormt. Om dat te doen, klik het **moersleutelpictogram** tussen de **module van de Router** en de **Iterator** module, en selecteer **maak route** onbruikbaar.
 
@@ -222,7 +226,7 @@ Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, zult u
 
 ![ WF Fusion ](./images/wffc28.png)
 
-Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **&#x200B;**&#x200B;uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
+Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **** uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
 
 ![ WF Fusion ](./images/wffc29.png)
 
@@ -261,8 +265,6 @@ U ziet nu dat er een nieuw PSD-bestand is gegenereerd en opgeslagen in uw Micros
 
 ## 1.2.4.3 Tekstlagen van PSD-bestand wijzigen
 
-### Aanroep van handelingstekst
-
 Daarna, beweeg over **Adobe Photoshop - pas PSD uit geeft** module uit en klik **+** pictogram.
 
 ![ WF Fusion ](./images/wffc34.png)
@@ -277,67 +279,59 @@ Selecteer **tekstlagen** uitgeven.
 
 Dan moet je dit zien. Selecteer eerst de eerder geconfigureerde Adobe Photoshop-verbinding met de naam `--aepUserLdap-- Adobe IO` .
 
-U moet nu de plaats van het **dossier van de Input** bepalen, dat de output van de vorige stap en onder **Lagen** is, moet u de **Naam** van de tekstlaag ingaan u wilt veranderen.
+U moet nu de plaats van het **dossier van de Input** bepalen, dat de output van de vorige stap en onder **Lagen** is, zult u **+ moeten klikken toevoegt punt** voor elke laag waarvoor de tekst moet veranderen.
 
 ![ WF Fusion ](./images/wffc37.png)
 
-Voor het **dossier van de Input**, uitgezocht **Azure** voor **de opslag van het het dossierdossier van de Input** en zorg ervoor om de output van het vorige verzoek te selecteren, **Adobe Photoshop - pas PSD uit**, wat u van hier kunt nemen: `data[]._links.renditions[].href`
+Voor het **dossier van de Input**, uitgezocht **Azure** voor **het dossieropslag van de Input** en zorg ervoor om de output van het vorige verzoek te selecteren, **Adobe Photoshop - pas PSD uit**, die u als dit kunt bepalen: ``{{XX.data[].`_links`.renditions[].href}}`` (vervang XX door het opeenvolgingsaantal van de vorige module Adobe Photoshop - pas PSD uit).
+
+Daarna, klik **+ voeg punt** onder **Lagen** toe beginnen de tekstlagen toe te voegen die moeten worden bijgewerkt.
 
 ![ WF Fusion ](./images/wffc37a.png)
 
-Open het dossier **burgerschap-fiber.psd**. In het dossier, zult u opmerken dat de laag die de vraag aan actie bevat **2048x2048-cta** wordt genoemd.
+Er zijn 2 te maken veranderingen, de tekst van CTA en de knooptekst in het dossier **wordt aangebracht burgerschap-fiber.psd** moet worden bijgewerkt.
+
+Om de laagnamen te vinden, open het dossier **burgerschap-fiber.psd**. In het dossier, zult u opmerken dat de laag die de vraag aan actie bevat **2048x2048-cta** wordt genoemd.
 
 ![ WF Fusion ](./images/wffc38.png)
 
-Ga de naam **2048x2048-cta** onder **Naam** in de dialoog in.
+In het dossier **wordt** 2048x2048-knoop-tekst **genoemd.**
+
+![ WF Fusion ](./images/wffc44.png)
+
+U moet eerst de veranderingen vormen die aan de laag **moeten gebeuren 2048x2048-cta**. Ga de naam **2048x2048-cta** onder **Naam** in de dialoog in.
 
 ![ WF Fusion ](./images/wffc39.png)
 
-De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer veranderlijke **cta** van de lading van de Webhaak.
+De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer veranderlijke **cta** van de lading van de Webhaak. Klik **toevoegen**.
 
 ![ WF Fusion ](./images/wffc40.png)
 
-De rol neer tot u **Output** ziet. Voor **Opslag**, uitgezochte **Azure**. Voor **plaats van het Dossier**, ga de hieronder plaats in. Let op de toevoeging van de variabele `{{timestamp}}` aan de bestandsnaam die wordt gebruikt om ervoor te zorgen dat elk bestand dat wordt gegenereerd een unieke naam heeft. Ook, plaats het **Type** aan **vnd.adobe.photoshop**. Klik **OK**.
+Dan moet je dit zien. Klik **+ toevoegen punt** onder **Lagen** beginnen de tekstlagen toe te voegen die moeten worden bijgewerkt.
+
+![ WF Fusion ](./images/wffc40a.png)
+
+Ga de naam **2048x2048-knoop-tekst** onder **Naam** in de dialoog in.
+
+![ WF Fusion ](./images/wffc40b.png)
+
+De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer de veranderlijke **knoop** van de payload van de Webhaak. Klik **toevoegen**.
+
+![ WF Fusion ](./images/wffc40c.png)
+
+Dan moet je dit zien.
+
+![ WF Fusion ](./images/wffc40d.png)
+
+De rol neer tot u **Output** ziet. Voor **Opslag**, uitgezochte **Azure**. Voor **plaats van het Dossier**, ga de hieronder plaats in. Let op de toevoeging van de variabele `{{timestamp}}` aan de bestandsnaam die wordt gebruikt om ervoor te zorgen dat elk bestand dat wordt gegenereerd een unieke naam heeft. Ook, plaats het **Type** aan **vnd.adobe.photoshop**.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![ WF Fusion ](./images/wffc41.png)
 
-### Knoptekst
+Plaats **Type** aan **vnd.adobe.photoshop**. Klik **OK**.
 
-Klik met de rechtermuisknop op de module die u net hebt gemaakt en selecteer **Klonen** . Hiermee wordt een tweede vergelijkbare module gemaakt.
-
-![ WF Fusion ](./images/wffc42.png)
-
-Verbind de gekloonde module met vorige **Adobe Photoshop - geef tekstlagen** module uit.
-
-![ WF Fusion ](./images/wffc42a.png)
-
-Dan moet je dit zien. Selecteer eerst de eerder geconfigureerde Adobe Photoshop-verbinding met de naam `--aepUserLdap-- Adobe IO` .
-
-U moet nu de plaats van het **dossier van de Input** bepalen, dat de output van de vorige stap en onder **Lagen** is, moet u de **Naam** van de tekstlaag ingaan u wilt veranderen.
-
-![ WF Fusion ](./images/wffc43.png)
-
-Voor het **dossier van de Input**, uitgezocht **Azure** voor **het dossieropslag van de Input** en zorg ervoor om de output van het vorige verzoek te selecteren, **Adobe Photoshop - geef tekstlagen** uit, die u van hier kunt nemen: `data[]._links.renditions[].href`
-
-Open het dossier **burgerschap-fiber.psd**. In het dossier, zult u opmerken dat de laag die de vraag aan actie bevat wordt genoemd **2048x2048-knoop-tekst**.
-
-![ WF Fusion ](./images/wffc44.png)
-
-Ga de naam **2048x2048-knoop-tekst** onder **Naam** in de dialoog in.
-
-![ WF Fusion ](./images/wffc43.png)
-
-De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer de veranderlijke **knoop** van de payload van de Webhaak.
-
-![ WF Fusion ](./images/wffc45.png)
-
-De rol neer tot u **Output** ziet. Voor **Opslag**, uitgezochte **Azure**. Voor **plaats van het Dossier**, ga de hieronder plaats in. Let op de toevoeging van de variabele `{{timestamp}}` aan de bestandsnaam die wordt gebruikt om ervoor te zorgen dat elk bestand dat wordt gegenereerd een unieke naam heeft. Ook, plaats het **Type** aan **vnd.adobe.photoshop**. Klik **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![ WF Fusion ](./images/wffc46.png)
+![ WF Fusion ](./images/wffc41a.png)
 
 Klik **sparen** om uw veranderingen te bewaren.
 
@@ -369,9 +363,13 @@ Dan moet je dit zien. Plak hieronder nuttige lading in **Lichaam**.
 
 ![ WF Fusion ](./images/wffc51.png)
 
-Kopieer en kleef veranderlijk `{{XX.data[]._links.renditions[].href}}` en vervang **XX** door het opeenvolgingsaantal van laatste **Adobe Photoshop - geef tekstlagen** module uit, die in dit geval **25** is. Laat checkbox voor **toe tonen geavanceerde montages** en klik dan **toevoegen punt**.
+Kopieer en kleef veranderlijk `{{XX.data[]._links.renditions[].href}}` en vervang **XX** door het opeenvolgingsaantal van laatste **Adobe Photoshop - geef tekstlagen** module uit, die in dit geval **30** is.
 
 ![ WF Fusion ](./images/wffc52.png)
+
+Laat checkbox voor **toe tonen geavanceerde montages** en klik dan **toevoegen punt**.
+
+![ WF Fusion ](./images/wffc52b.png)
 
 Op het gebied **Sleutel**, ga `Content-Type` in. Op het gebied **Waarde**, ga `application/json` in. Klik **toevoegen**.
 
