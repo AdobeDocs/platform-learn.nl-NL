@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Krijg een overzicht van hoe de grafiek die van de identiteitsgrafiek regels verbindt gegevensarchitecten nauwkeurige klantenprofielen handhaaft en grafiekondergang verhindert. Voor meer informatie, zie de [ identiteitsgrafiek die de documentatie van regels verbindt ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448278/?learn=on&enablevpops&captions=dut)
 
 ## Configuratie
 
@@ -41,7 +41,7 @@ Leer hoe u uw regels kunt simuleren en toepassen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444049/?format=jpeg&nocache=1747355376342&captions=dut" alt="Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
