@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ Leer hoe u Postman en Adobe I/O kunt gebruiken om Adobe Firefly Services API&#39
 
 Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
-## 1.1.1.2 Ontdek firefly.adobe.com - fase 1
+## 1.1.1.2 API-basisbeginselen
+
+Er zijn meerdere typen API-aanvragen:
+
+- **GET**: dit wordt gebruikt wanneer het proberen om informatie van een API eindpunt terug te winnen, als het krijgen van een Rapport van de Status
+- **POST**: dit wordt gebruikt wanneer iets nieuw moet worden gedaan, als het hebben van Adobe Firefly Services een nieuw beeld produceren
+- **PUT**: dit wordt gebruikt om bestaande gegevens volledig bij te werken
+- **PATCH**: dit wordt gebruikt om bestaande gegevens selectief bij te werken
+- **DELETE**: dit wordt gebruikt om gegevens te schrappen
+
+Wanneer u met API&#39;s werkt, zult u ook zien dat responscodes worden geretourneerd door de verschillende API-eindpunten.
+
+Er zijn vijf verschillende categorieën reacties die u kunt verwachten:
+
+- **1xx informatieve reactie**: het verzoek werd ontvangen, lopend proces
+- **2xx succesvol**: het verzoek werd met succes ontvangen, begrepen en aanvaard
+- **3xx redirection**: de verdere actie moet worden genomen om het verzoek te voltooien
+- **4xx cliëntfout**: het verzoek bevat slechte syntaxis of kan niet worden vervuld
+- **5xx serverfout**: de server slaagde er niet in om een schijnbaar geldig verzoek te vervullen
+
+Hier is een voorbeeld van gemeenschappelijke reactiecodes u kunt verwachten:
+
+- **200 OK**: dit is goed, uw met succes voltooide verzoek
+- **201 creeerde**: dit is goed, als voorbeeld, is uw beeld gecreeerd
+- **202 Erkende**: dit is goed, wordt uw verzoek goedgekeurd en zal worden verwerkt
+- **401 onbevoegd**: dit is niet goed, waarschijnlijk is uw toegangstoken niet geldig
+- **403 Verboden**: dit is niet goed, u waarschijnlijk ontbreekt de vereiste toestemmingen voor de actie u probeert uit te voeren
+- **404 niet Gevonden**: dit is niet goed, waarschijnlijk URL u probeert te bereiken bestaat niet
+- **429 Te Vele Verzoeken**: dit is niet goed, u waarschijnlijk naar vele verzoeken in een korte periode hebt verzonden. Probeer het later opnieuw.
+
+## 1.1.1.3 Ontdek firefly.adobe.com - fase 1
 
 Laten we Adobe Firefly Services gaan verkennen. U begint bijvoorbeeld met het genereren van een CitiSignal-afbeelding. Het CitiSignal-ontwerpteam wil graag een neonversie van de merknaam CitiSignal genereren. Ze willen Adobe Firefly Services gebruiken om dat te doen.
 
@@ -29,7 +59,7 @@ Het eerste wat nodig is om dit te bereiken, is een zwarte en witte versie van de
 
 ![ Postman ](./images/CitiSignal.jpg)
 
-### &lbrace;0.1 Maak uw compositieverwijzingsafbeelding1.1.1.2
+### {0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
 
 U kunt [ dit steekproefbeeld ](./images/CitiSignal.jpg) gebruiken of u kunt uw eigen tekst tot stand brengen om te experimenteren. Volg de onderstaande stappen in Adobe Illustrator om uw eigen afbeeldingsbestand te maken. Als u de vooraf gedefinieerde afbeelding wilt gebruiken, slaat u de onderstaande sectie over en gaat u naar stap **1.1.1.2.2. Genereer de afbeelding** rechtstreeks.
 
@@ -81,7 +111,7 @@ Geef het bestand een naam en sla het op uw bureaublad op. Klik **sparen**.
 
 ![ Postman ](./images/ill13.png)
 
-### 1.1.1.2.2 Genereer uw afbeelding
+### 1.1.1.3.2 Genereer uw afbeelding
 
 Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com). Klik het **profiel** pictogram en zorg u aan de juiste **Rekening** het programma wordt geopend, die `--aepImsOrgName--` zou moeten zijn. Indien nodig, klik **Profiel van de Schakelaar** om aan die rekening over te schakelen.
 
@@ -109,7 +139,7 @@ U hebt nu verschillende afbeeldingen met een neonversie van de merknaam CitiSign
 
 Je hebt nu geleerd om Firefly te gebruiken om een ontwerpprobleem in een paar minuten op te lossen.
 
-## 1.1.1.3 Ontdek firefly.adobe.com - fase 2
+## 1.1.1.4 Ontdek firefly.adobe.com - fase 2
 
 Ga naar [ https://firefly.adobe.com/generate/image ](https://firefly.adobe.com/generate/image). Dan moet je dit zien. Klik de **Model** dropdown lijst van het Model. Er zijn drie beschikbare versies van Adobe Firefly Services:
 
@@ -163,7 +193,7 @@ De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect
 
 ![ Postman ](./images/ffui9.png)
 
-Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **&#x200B;**&#x200B;en inspecteert het netwerkverzoek dat wordt verzonden.
+Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
 
 ![ Postman ](./images/ffui10.png)
 
@@ -184,13 +214,13 @@ Voor de volgende oefening, zult u één van de **zaad** aantallen moeten gebruik
 
 In de volgende oefening, zult u gelijkaardige dingen met Firefly Services doen, maar dan door API in plaats van UI te gebruiken. In dit voorbeeld, is het zaadaantal **142194** voor het eerste beeld, dat 2 paarden heeft die naar elkaar kijken met hun hoofd die elkaar onder ogen zien.
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**. De reactie zou een nieuwe **versnelling** moeten bevatten.
 
 ![ Postman ](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API, Text 2 Image, Image 3
+## 1.1.1.6 Firefly Services API, Text 2 Image, Image 3
 
 Nu u een geldig en vers access_token hebt, bent u klaar om uw eerste aanvraag naar Firefly Services API&#39;s te verzenden.
 
@@ -269,9 +299,9 @@ Uw afbeelding is nu weer een beetje gewijzigd.
 
 ![ Firefly ](./images/ff10.png)
 
-## 1.1.1.6 Firefly Services API, Gen Expand
+## 1.1.1.7 Firefly Services API, Gen Expand
 
-Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en gaat naar het** Lichaam **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
 
 - **grootte**: Ga de gewenste resolutie in. De hier ingevoerde waarde moet groter zijn dan de oorspronkelijke grootte van de afbeelding en mag niet groter zijn dan 3999.
 - **image.source.url**: Dit gebied vereist een verbinding aan het beeld dat moet worden uitgebreid. In dit voorbeeld wordt een variabele gebruikt om te verwijzen naar de afbeelding die tijdens de vorige oefening is gegenereerd.
@@ -297,15 +327,25 @@ Vervolgens ziet u dat de oorspronkelijke afbeelding op een andere plaats wordt g
 
 ![ Firefly ](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API, Text 2 Image, Image 4 &amp; Image 4 Ultra
+## 1.1.1.8 Firefly Services API, Text 2 Image, Image 4 &amp; Image 4 Ultra
 
-### &lbrace;0.1 image4_standard1.1.1.7
+Met de recente release van Firefly Image Model 4 zijn verschillende verbeteringen beschikbaar gesteld:
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van de Technische Instanties van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+- Firefly Image Model 4 biedt uitvoer met een resolutie van 2.000 rpm en verbeterde definitie en details.
+- Firefly Image Model 4 biedt aanzienlijke verbeteringen op het gebied van tekstrendering, mensen, dieren en architectuur.
+- Firefly Image Model 4 houdt vast aan de toezegging van Adobe om IP-vriendelijke, commercieel veilige generatieve AI te gebruiken.
+
+Firefly Image Model 4 biedt u uitzonderlijke beelden van mensen, dieren en gedetailleerde scènes en u kunt Afbeeldingsmodel 4 Ultra gebruiken voor het genereren van beelden met hyperrealistische menselijke interacties, architectonische elementen en complexe landschappen. &#x200B;
+
+### {0.1 image4_standard1.1.1.8
+
+Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van de Technische Instanties van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 U zult opmerken dat URL van het verzoek van **Firefly Services API, Tekst 2 Beeld, Beeld 3** verzoek verschillend is, dat **https://firefly-api.adobe.io/v3/images/generate** was. Dit URL richt aan **https://firefly-api.adobe.io/v3/images/generate-async**. De toevoeging van **- async** in URL betekent u het asynchrone eindpunt gebruikt.
 
 In de **variabelen van de Kopbal**, zult u een nieuwe variabele genoemd **x-model-versie** opmerken. Dit is een vereiste koptekst bij interactie met Firefly Image 4 en Image 4 Ultra. Als u Firefly Image 4 of Image 4 Ultra wilt gebruiken bij het genereren van afbeeldingen, moet de koptekstwaarde worden ingesteld op `image4_standard` of `image4_ultra` . In dit voorbeeld gebruikt u `image4_standard` .
+
+Als u niet **x-model-versie** aan `image4_standard` of `image4_ultra` plaatst, dan zal Firefly Services aan het gebruiken `image3` momenteel in gebreke blijven.
 
 ![ Firefly ](./images/ffim4_1.png)
 
@@ -333,9 +373,9 @@ U zou dan een hyperrealistisch beeld van **paarden op een gebied** moeten zien.
 
 ![ Firefly ](./images/ffim4_7.png)
 
-### &lbrace;0.2 image4_ultra1.1.1.7
+### {0.2 image4_ultra1.1.1.8
 
-Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 Verander veranderlijk **x-model-versie** in `image4_ultra`. In dit voorbeeld gebruikt u `image4_standard` .
 

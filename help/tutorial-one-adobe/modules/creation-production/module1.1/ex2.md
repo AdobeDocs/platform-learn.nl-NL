@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,47 @@ ht-degree: 0%
 
 Leer hoe u uw Firefly-proces kunt optimaliseren met Microsoft Azure en vooraf ondertekende URL&#39;s.
 
-## 1.1.2.1 Een Azure-abonnement maken
+## 1.1.2.1 Wat zijn vooraf ondertekende URL&#39;s?
+
+Een vooraf ondertekende URL is een URL die u tijdelijke toegang verleent tot een specifiek object op een opslaglocatie. Met de URL kan een gebruiker bijvoorbeeld het object LEZEN of een object SCHRIJVEN (of een bestaand object bijwerken). De URL bevat specifieke parameters die door de toepassing worden ingesteld.
+
+Bij het maken van de automatisering van de toeleveringsketen voor inhoud zijn er vaak meerdere bestandsbewerkingen die moeten worden uitgevoerd voor een bepaald geval van gebruik. Het kan bijvoorbeeld nodig zijn de achtergrond van een bestand te wijzigen, de tekst van verschillende lagen te wijzigen, enzovoort. Het is niet altijd mogelijk om alle dossierverrichtingen tezelfdertijd te doen die tot de behoefte aan een multi-step benadering leidt. Na elke tussenstap is de uitvoer een tijdelijk bestand dat nodig is voor de volgende stap die moet worden uitgevoerd. Wanneer die volgende stap is uitgevoerd, verliest het tijdelijke bestand snel zijn waarde en is het vaak niet meer nodig, dus moet het worden verwijderd.
+
+Adobe Firefly Services biedt momenteel ondersteuning voor de volgende domeinen:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+De reden waarom vaak cloudopslagoplossingen worden gebruikt, is dat de tussenliggende elementen die worden gemaakt, snel waarde verliezen. Het probleem dat wordt opgelost door vooraf ondertekende URL&#39;s, kan het beste worden opgelost met een opslagoplossing voor basisproducten, die doorgaans een van de bovenstaande cloudservices is.
+
+Binnen het ecosysteem van Adobe zijn er ook opslagoplossingen, zoals Frame.io, Workfront Fusion en Adobe Experience Manager assets. Deze oplossingen ondersteunen ook vooraf ondertekende URL&#39;s, zodat het vaak een keuze wordt die tijdens de implementatie moet worden gemaakt. De keuze wordt dan vaak gebaseerd op een combinatie van reeds beschikbare toepassingen en opslagkosten.
+
+Vooraf ondertekende URL&#39;s worden daarom gebruikt in combinatie met Adobe Firefly Services-bewerkingen omdat:
+
+- organisaties moeten vaak meerdere wijzigingen in hetzelfde image in tussenliggende stappen verwerken en tussenliggende opslag is nodig om dat mogelijk te maken.
+- de toegang tot lezen en schrijven van de plaatsen van de cloudopslag zou veilig moeten zijn en in een server-zijmilieu, is het niet mogelijk manueel login zodat de veiligheid in URL direct moet worden bewaard.
+
+Een vooraf ondertekende URL gebruikt drie parameters om de toegang tot de gebruiker te beperken:
+
+- Opslaglocatie: dit kan een AWS S3 bucket-locatie zijn, een Microsoft Azure-opslaglocatie met container
+- Bestandsnaam: het specifieke bestand dat moet worden gelezen, bijgewerkt, verwijderd.
+- De het koordparameter van de vraag: een parameter van het vraagkoord begint altijd met een vraagteken en door een complexe reeks paramaters wordt gevolgd
+
+Voorbeeld:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Een Azure-abonnement maken
 
 >[!NOTE]
 >
 >Als u al een bestaand Azure-abonnement hebt, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
+
+>[!NOTE]
+>
+>Als u deze zelfstudie volgt als onderdeel van een persoonlijke geleide workshop of een training op aanvraag, hebt u waarschijnlijk al toegang tot een Microsoft Azure Storage Account. In dat geval hoeft u geen eigen account te maken. Gebruik de account die u hebt ontvangen als onderdeel van de training.
 
 Ga naar [ https://portal.azure.com ](https://portal.azure.com){target="_blank"} en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
 
@@ -43,7 +79,7 @@ Als het abonnementsproces is voltooid, kunt u het beste gaan.
 
 ![ Azure Opslag ](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Azure Storage Account maken
+## 1.1.2.3 Azure Storage Account maken
 
 Onderzoek naar `storage account` en selecteer dan **rekeningen van de Opslag**.
 
@@ -53,7 +89,7 @@ Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
@@ -85,7 +121,7 @@ Uw container is nu klaar om te worden gebruikt.
 
 ![ Azure Opslag ](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Azure Storage Explorer installeren
+## 1.1.2.4 Azure Storage Explorer installeren
 
 [ Download Microsoft Azure Storage Explorer om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
@@ -127,7 +163,7 @@ Open **Containers van de Klodder** en selecteer dan de container u in de vorige 
 
 ![ Azure Opslag ](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlverwijzing
+## 1.1.2.5 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlverwijzing
 
 Upload een beelddossier van uw keus of [ dit dossier ](./images/gradient.jpg){target="_blank"} in de container.
 
@@ -166,7 +202,7 @@ Er wordt een andere afbeelding weergegeven bij `horses in a field` , maar deze k
 
 ![ Azure Opslag ](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5 Programmatische bestandsupload
+## 1.1.2.6 Programmatische bestandsupload
 
 Om programmatic dossierupload met de Rekeningen van de Opslag te gebruiken Azure, moet u een nieuw **Gedeelde handtekening van de Toegang (SAS)** met toestemmingen tot stand brengen die u toestaan om een dossier te schrijven.
 
@@ -247,7 +283,7 @@ In Azure Storage Explorer vernieuwt u de inhoud van uw map en wordt het nieuwe g
 
 ![ Azure Opslag ](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 Programmatisch bestandsgebruik
+## 1.1.2.7 Programmatisch bestandsgebruik
 
 Om dossiers van de Rekeningen van de Opslag van Azure op lange termijn programmatically te lezen, moet u een nieuw **Gedeelde handtekening van de Toegang (SAS)** teken, met toestemmingen tot stand brengen die u toestaan om een dossier te lezen. Technisch kon u het SAS-teken gebruiken dat in de vorige oefening wordt gecreeerd, maar het is beste praktijken om een afzonderlijk teken met slechts **te hebben gelezen** toestemmingen en afzonderlijk teken met slechts **schrijft** toestemmingen.
 
