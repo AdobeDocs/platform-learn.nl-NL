@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek
 
-Leer hoe u met de grafieksimulator identiteitsgrafiekkoppelingsregels in Adobe Experience Platform kunt testen. Experimenteer met verschillende scenario&#39;s en speel met &quot;uniek per grafiek&quot;en prioritaire montages om te verifiëren welke regels u voor uw zaken nodig hebt om grafiekinstorting te vermijden. Voor meer informatie, zie de [ gids UI van de Simulatie van de Grafiek ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
+Leer hoe u met de grafieksimulator identiteitsgrafiekkoppelingsregels in Adobe Experience Platform kunt testen. Experimenteer met verschillende scenario&#39;s en speel met &quot;uniek per grafiek&quot;en prioritaire montages om te verifiëren welke regels u voor uw zaken nodig hebt om grafiekinstorting te vermijden. Voor meer informatie, zie de [ gids UI van de Simulatie van de Grafiek ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)

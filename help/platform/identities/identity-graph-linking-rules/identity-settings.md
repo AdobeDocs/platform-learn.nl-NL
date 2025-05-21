@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Identiteitsgrafiek die regels verbindt - de Simulatie van de Grafiek
 
-Leer hoe u regels voor identiteitsgrafieken in Adobe Experience Platform kunt inschakelen en configureren om nauwkeurige klantprofielen te maken. Deze video behandelt naamruimteprioritering, unieke instellingen en validatie, zodat u deze functies effectief kunt gebruiken in uw sandboxen. Voor meer informatie, zie de [ gids UI van de montages van de Identiteit ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
+Leer hoe u regels voor identiteitsgrafieken in Adobe Experience Platform kunt inschakelen en configureren om nauwkeurige klantprofielen te maken. Deze video behandelt naamruimteprioritering, unieke instellingen en validatie, zodat u deze functies effectief kunt gebruiken in uw sandboxen. Voor meer informatie, zie de [ gids UI van de montages van de Identiteit ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
