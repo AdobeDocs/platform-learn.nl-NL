@@ -89,7 +89,7 @@ Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
