@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
@@ -166,6 +166,13 @@ Open **Containers van de Klodder** en selecteer dan de container u in de vorige 
 ## 1.1.2.5 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlverwijzing
 
 Upload een beelddossier van uw keus of [ dit dossier ](./images/gradient.jpg){target="_blank"} in de container.
+
+>[!NOTE]
+>
+>Wanneer u afbeeldingen gebruikt als stijlverwijzing, compositieverwijzing of als maskerafbeelding, worden de volgende afbeeldingstypen geaccepteerd:
+>- image/jpeg
+>- image/png
+>- image/webpagina
 
 ![ Azure Opslag ](./images/gradient.jpg)
 

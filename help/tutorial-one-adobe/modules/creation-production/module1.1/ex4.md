@@ -6,16 +6,53 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
+source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Firefly API voor aangepaste modellen
 
-## 1.1.4.1 Uw aangepaste model configureren
+## 1.1.4.1 Wat zijn Firefly Custom Models?
+
+Met aangepaste Firefly-modellen kunt u afbeeldingsvariaties genereren die met uw merk worden uitgelijnd met de functie Tekst op afbeelding. Door deze modellen te trainen met uw eigen afbeeldingen, kunt u inhoud genereren die de identiteit van uw merk weerspiegelt.
+Transformeer uw stijl of onderwerp om nieuwe ideeën te verkennen, visualiseer verschillende omgevingen, produceer innovatieve inhoud, en pas inhoud aan specifieke segmenten aan.
+
+Met aangepaste Firefly-modellen kunt u...
+
+- Onmerkbare ideeën en concepten maken
+- Tekenthema&#39;s met consistente stijlen maken
+- Consistente merkstijlen maken om campagnes snel uit te breiden
+
+Hiervoor ondersteunt Firefly Custom Models:
+
+- Aangepaste onderwerpmodellen
+- Aangepaste stijlmodellen
+
+### Aangepaste onderwerpmodellen
+
+Bij het trainen van aangepaste modellen over een specifiek onderwerp — of het nu objecten of tekens betreft — is het de bedoeling de essentiële kenmerken van het onderwerp te identificeren en het model te helpen deze in verschillende contexten en posities te repliceren.
+
+Zoek naar beelden met de volgende kenmerken wanneer het leiden van een onderwerpmodel:
+
+- Consistentie van objecten: geef afbeeldingen van hetzelfde merk en model als het onderwerp, maar zorg dat het onderwerp er niet sterk anders uitziet in verschillende afbeeldingen. Meerdere kleuren niet mengen en er is een gemeenschappelijk thema of patroon tussen afbeeldingen mogelijk. Uw onderwerp kan echter per scène, pose, kleding en achtergrond verschillen.
+- Objectfocus: gebruik afbeeldingen van het onderwerp in duidelijke focus zonder onnodige afleidingen. Houd het onderwerp in de buurt van het midden van de afbeelding en zorg ervoor dat het ten minste 25% van het afbeeldingsgebied in beslag neemt.
+- Omgevingscontext: geef een beeld van het onderwerp in verschillende weergaven en contexten, en laat het zien in verschillende belichtingsomstandigheden. Terwijl afbeeldingen met een witte of transparante achtergrond kunnen worden gebruikt, is het beter om ook een combinatie met een complexere omgeving te hebben.
+- Vermijd andere objecten: vermijd grote items op de achtergrond of aan het teken. Om het even welk groot punt dat in de beelden wordt getoond wordt gememoriseerd door het model en zal in de geproduceerde beelden verschijnen, gelijkend op het zelfde punt in de trainingsdataset.
+
+### Aangepaste stijlmodellen
+
+Aangepaste modellen die zijn opgeleid voor een stijl, geven de vormgeving van de elementen aan en genereren zo vergelijkbare afbeeldingen als u hierom wordt gevraagd.
+
+Een effectief stijlmodel trainen:
+
+- Vergelijkbare esthetica bieden: neem afbeeldingen op die verschillende scènes en objecten weergeven, terwijl u hetzelfde uiterlijk behoudt.
+- Gebruik verschillende afbeeldingen: gebruik zoveel mogelijk afbeeldingen om te voorkomen dat het model te veel focus krijgt op ongewenste objecten of onderwerpen.
+- Vermijd vaste zinnen: een vast patroon heeft een groter gewicht dan andere zinnen. Als bijvoorbeeld elk bijschrift &#39;De achtergrond is effen zwart&#39; of &#39;schattige tekenstijlen&#39; bevat, is het model afhankelijk van deze zin. Als dit niet het geval is, worden de gewenste resultaten niet bereikt met een testaanwijzing.
+
+## 1.1.4.2 Uw aangepaste model configureren
 
 Ga naar [ https://firefly.adobe.com/ ](https://firefly.adobe.com/). Klik **Modellen van de Douane**.
 
@@ -86,7 +123,7 @@ Sluit het **aangepaste model van het Aandeel** popup.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 Uw aangepaste model gebruiken in de gebruikersinterface
+## 1.1.4.3 Uw aangepaste model gebruiken in de gebruikersinterface
 
 Ga naar [ https://firefly.adobe.com/cme/train ](https://firefly.adobe.com/cme/train). Klik op het aangepaste model om het te openen.
 
@@ -100,9 +137,9 @@ U zult dan de steekproefherinnering zien die u alvorens wordt uitgevoerd inging.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Enable your Custom Model for Firefly Services Custom Models API
+## 1.1.4.4 Enable your Custom Model for Firefly Services Custom Models API
 
-Als uw aangepaste model is opgeleid, kan het ook worden gebruikt via de API. In oefening 1.1.1 reeds vormde u uw Adobe I/O project voor interactie met de Diensten van Firefly door API.
+Als uw aangepaste model is opgeleid, kan het ook worden gebruikt via de API. In oefening 1.1.1 hebt u al uw Adobe I/O-project geconfigureerd voor interactie met Firefly Services via de API.
 
 Ga naar [ https://firefly.adobe.com/cme/train ](https://firefly.adobe.com/cme/train). Klik op het aangepaste model om het te openen.
 
@@ -134,9 +171,9 @@ De **Technische E-mail van de Rekening** zou nu tot het Model van de Douane moet
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interactie met de API voor aangepaste modellen van Firefly Services
+## 1.1.4.5 Interactie met de API voor aangepaste modellen van Firefly Services
 
-In Oefening 1.1.1 die met de Diensten van Firefly begonnen wordt, downloadde u dit dossier: [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip) aan uw lokale Desktop en u toen invoerde die inzameling in Postman.
+In Oefening 1.1.1 die met Firefly Services wordt begonnen, downloadde u dit dossier: [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip) aan uw lokale Desktop en u toen invoerde die inzameling in Postman.
 
 Open Postman en ga naar de omslag **FF - de Modellen API van de Douane**.
 
@@ -164,7 +201,7 @@ Open het verzoek **3. Krijg de Status van CM** en klik **verzenden**. Vervolgens
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm35.png){zoomable="yes"}
 
-Na een paar notulen, verzend **&#x200B;**&#x200B;opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
+Na een paar notulen, verzend **** opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm36.png){zoomable="yes"}
 
@@ -184,4 +221,4 @@ Ga naar [ Samenvatting &amp; voordelen ](./summary.md){target="_blank"}
 
 Ga terug naar [ Werkend met Photoshop APIs ](./ex3.md){target="_blank"}
 
-Ga terug naar [ Overzicht van de Diensten van Adobe Firefly ](./firefly-services.md){target="_blank"}
+Ga terug naar [ Overzicht van Adobe Firefly Services ](./firefly-services.md){target="_blank"}

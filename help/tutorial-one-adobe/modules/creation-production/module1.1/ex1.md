@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Aan de slag met Firefly Services
 
-Leer hoe u Postman en Adobe I/O kunt gebruiken om Adobe Firefly Services API&#39;s te zoeken.
+Firefly Services omvat **Firefly APIs**, **Lightroom APIs**, **Photoshop APIs**, **InDesign APIs**, en **Inhoud Tags APIs**.
+
+Deze API&#39;s combineren de kracht van creatieve Adobe-gereedschappen, zoals Photoshop en Lightroom, met geavanceerde AI/ML-functies, zoals Content Tagging, Generative Fill, Text to Image en nog veel meer.
+
+Met Firefly Services creëert u niet alleen maar — u automatiseert, schaalt uw inhoudsproductie en gebruikt de nieuwste AI/ML-technologieën om uw workflows op te vullen.
+
+In deze oefening, zult u leren hoe te om Postman en Adobe I/O te gebruiken om met diverse Adobe Firefly Services APIs te werken.
+
+Deze oefening richt zich specifiek op de Firefly APIs, zoals:
+
+- **Firefly produceert Beelden API**: dit API wordt gebruikt aan geproduceerde beelden gebruikend de Modellen van Firefly
+- **Firefly produceert Vergelijkbare Beelden API**: dit API wordt gebruikt aan geproduceerde beelden die aan een reeds bestaand beeld gelijkaardig zijn
+- **Firefly breidt Beeld API** uit: dit API wordt gebruikt om een bestaand beeld aan een grotere aspectverhouding/grootte uit te breiden
+- **Firefly vult Beeld API**: dit API vult een gebied van een bestaand beeld dat op beelden wordt gebaseerd die Firefly op uw herinnering produceert. Dit wordt bereikt met een masker dat het gebied definieert dat moet worden gevuld.
+- **Firefly produceert Samengestelde API van Objecten**: dit API staat u toe om een inputbeeld te verstrekken zelf, dat dan uw beeld met beelden combineert die door Firefly worden geproduceerd om een beeld samengestelde, of scène tot stand te brengen.
+- **Aangepaste Modellen API van Firefly**: dit API staat u toe om met uw eigen Modellen van de Douane van Firefly te werken, om nieuwe beelden te produceren die op uw Model van de Douane van Firefly worden gebaseerd
 
 ## 1.1.1.1 Voorwaarden
 
@@ -59,7 +74,7 @@ Het eerste wat nodig is om dit te bereiken, is een zwarte en witte versie van de
 
 ![ Postman ](./images/CitiSignal.jpg)
 
-### &lbrace;0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
+### {0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
 
 U kunt [ dit steekproefbeeld ](./images/CitiSignal.jpg) gebruiken of u kunt uw eigen tekst tot stand brengen om te experimenteren. Volg de onderstaande stappen in Adobe Illustrator om uw eigen afbeeldingsbestand te maken. Als u de vooraf gedefinieerde afbeelding wilt gebruiken, slaat u de onderstaande sectie over en gaat u naar stap **1.1.1.2.2. Genereer de afbeelding** rechtstreeks.
 
@@ -193,7 +208,7 @@ De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect
 
 ![ Postman ](./images/ffui9.png)
 
-Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **&#x200B;**&#x200B;en inspecteert het netwerkverzoek dat wordt verzonden.
+Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
 
 ![ Postman ](./images/ffui10.png)
 
@@ -216,7 +231,7 @@ In de volgende oefening, zult u gelijkaardige dingen met Firefly Services doen, 
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**. De reactie zou een nieuwe **versnelling** moeten bevatten.
+In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**. De reactie zou een nieuw **access_token** moeten bevatten.
 
 ![ Postman ](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg
 
 Nu u een geldig en vers access_token hebt, bent u klaar om uw eerste aanvraag naar Firefly Services API&#39;s te verzenden.
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V3** van de **FF - de Ingeurs van de Tech van Firefly Services** inzameling. Ga naar het **Lichaam** en verifieer de herinnering. Klik **verzenden**.
-
-Het verzoek u hier gebruikt is a **synchroon** verzoek, dat u van een reactie voorziet die het gevraagde beeld binnen een paar seconden bevat.
+Het verzoek u hier zult gebruiken is a **synchroon** verzoek, dat u van een reactie voorziet die het gevraagde beeld binnen een paar seconden bevat.
 
 >[!NOTE]
 >
 >Met de release van Firefly Image 4 en Image 4 Ultra worden synchrone aanvragen vervangen door asynchrone aanvragen. U zult oefeningen over asynchrone verzoeken verder onder in dit leerprogramma vinden.
+
+Selecteer het verzoek genoemd **POST - Firefly - T2I V3** van de **FF - de Ingeurs van de Tech van Firefly Services** inzameling. Ga naar **Kopballen** en verifieer de sleutel/waardepaarcombinaties.
+
+| Sleutel | Waarde |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+Beide waarden in deze aanvraag hebben betrekking op omgevingsvariabelen die vooraf zijn gedefinieerd. `{{API_KEY}}` verwijst naar het gebied **identiteitskaart van de Cliënt** van uw project van Adobe I/O. Als deel van **Begonnen** sectie dit leerprogramma, vormde u dat in Postman.
+
+De waarde voor het gebied **Vergunning** is een beetje speciaal: `Bearer {{ACCESS_TOKEN}}`. Het bevat een verwijzing naar het **Token van de Toegang** dat u in de vorige stap produceerde. Wanneer u uw **Token van de Toegang** door het verzoek **POST te gebruiken - krijgt het Token van de Toegang** in **Adobe IO - OAuth** inzameling, een manuscript liep in Postman dat het gebied **access_token** als milieuvariabele opsloeg, die nu in het verzoek **POST - Firefly - T2I V3** wordt van verwijzingen voorzien. Gelieve te nota van de specifieke toevoeging van het woord **Drager** en een ruimte vóór `{{ACCESS_TOKEN}}`. De woorddrager is hoofdlettergevoelig en de ruimte is vereist. Als dit niet correct wordt gedaan, zal Adobe I/O a **401 onbevoegde** fout terugkeren aangezien het niet uw **Symbolisch van de Toegang** correct zal kunnen verwerken.
+
+![ Firefly ](./images/ff0.png)
+
+Daarna, ga naar het **Lichaam** en verifieer de herinnering. Klik **verzenden**.
 
 ![ Firefly ](./images/ff1.png)
 
@@ -301,7 +329,7 @@ Uw afbeelding is nu weer een beetje gewijzigd.
 
 ## 1.1.1.7 Firefly Services API, Gen Expand
 
-Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en gaat naar het** Lichaam **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
 
 - **grootte**: Ga de gewenste resolutie in. De hier ingevoerde waarde moet groter zijn dan de oorspronkelijke grootte van de afbeelding en mag niet groter zijn dan 3999.
 - **image.source.url**: Dit gebied vereist een verbinding aan het beeld dat moet worden uitgebreid. In dit voorbeeld wordt een variabele gebruikt om te verwijzen naar de afbeelding die tijdens de vorige oefening is gegenereerd.
@@ -337,9 +365,9 @@ Met de recente release van Firefly Image Model 4 zijn verschillende verbeteringe
 
 Firefly Image Model 4 biedt u uitzonderlijke beelden van mensen, dieren en gedetailleerde scènes en u kunt Afbeeldingsmodel 4 Ultra gebruiken voor het genereren van beelden met hyperrealistische menselijke interacties, architectonische elementen en complexe landschappen. &#x200B;
 
-### &lbrace;0.1 image4_standard1.1.1.8
+### {0.1 image4_standard1.1.1.8
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van de Technische Instanties van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van de Technische Instanties van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 U zult opmerken dat URL van het verzoek van **Firefly Services API, Tekst 2 Beeld, Beeld 3** verzoek verschillend is, dat **https://firefly-api.adobe.io/v3/images/generate** was. Dit URL richt aan **https://firefly-api.adobe.io/v3/images/generate-async**. De toevoeging van **- async** in URL betekent u het asynchrone eindpunt gebruikt.
 
@@ -373,9 +401,9 @@ U zou dan een hyperrealistisch beeld van **paarden op een gebied** moeten zien.
 
 ![ Firefly ](./images/ffim4_7.png)
 
-### &lbrace;0.2 image4_ultra1.1.1.8
+### {0.2 image4_ultra1.1.1.8
 
-Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 Verander veranderlijk **x-model-versie** in `image4_ultra`. In dit voorbeeld gebruikt u `image4_standard` .
 
@@ -400,6 +428,30 @@ Vervolgens ziet u het statusrapport van de functie voor het genereren van afbeel
 U zou dan een hyperrealistisch beeld van **paarden op een gebied** moeten zien.
 
 ![ Firefly ](./images/ffim4_16.png)
+
+### Negatieve aanwijzingen
+
+Als u Firefly wilt verzoeken om niets op te nemen in de afbeelding die wordt gegenereerd, kunt u het veld `negativePrompt` opnemen wanneer u de API gebruikt (deze optie is momenteel niet beschikbaar voor de interface). Als voorbeeld, als u geen bloemen wilt inbegrepen zijn wanneer de herinnering **paarden op een gebied** wordt uitgevoerd, dan kunt u dit in het **Lichaam** van uw API verzoek specificeren:
+
+```
+"negativePrompt": "no flowers",
+```
+
+Ga naar het verzoek **POST - Firefly - T2I V4** van **FF - Firefly Services de inzameling van Tech Insiders** en ga naar het **Lichaam** van het verzoek. Plak de bovenstaande tekst in de hoofdtekst van de aanvraag. Klik **verzenden**.
+
+![ Firefly ](./images/ffim4_17.png)
+
+Dan moet je dit zien.
+
+![ Firefly ](./images/ffim4_18.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
+
+![ Firefly ](./images/ffim4_19.png)
+
+Dan zie je de gegenereerde afbeelding, die geen bloemen zou moeten bevatten.
+
+![ Firefly ](./images/ffim4_20.png)
 
 ## Volgende stappen
 
