@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3042'
 ht-degree: 0%
 
 ---
@@ -418,7 +418,14 @@ Nu we de CRM-id-waarde hebben vastgelegd, moeten we deze koppelen aan een specia
 
 1. Als **[!UICONTROL ID]** selecteert u het pictogram waarmee u het selectiemodel van het gegevenselement wilt openen en het gegevenselement `CRM Id` wilt kiezen
 1. Als **[!UICONTROL Authenticated State]** selecteert u **[!UICONTROL Authenticated]**
-1. Verlaat **[!UICONTROL Primary]** _ongecontroleerd_. Aangezien identiteitskaart van CRM niet aanwezig voor de meeste bezoekers aan de website van de Luma is, wilt u zeker _niet ECID als primaire herkenningsteken_ met voeten treden. Het zou een zeldzaam geval zijn om iets anders dan de ECID als primaire identificator te gebruiken. Meestal noem ik de standaardinstellingen niet in deze instructies, maar ik roep deze aan om u te helpen hoofdproblemen later in uw eigen implementatie te voorkomen.
+1. **[!UICONTROL Primary]** controleren
+
+   >[!TIP]
+   >
+   > Adobe raadt aan identiteiten die een persoon, zoals `Luma CRM Id` , vertegenwoordigen, als de [!UICONTROL primary] -identiteit te verzenden.
+   >
+   > Als het identiteitsoverzicht de persoon-id bevat (bijvoorbeeld `Luma CRM Id` ), wordt de persoon-id de [!UICONTROL primary] identity. Anders wordt `ECID` de [!UICONTROL primary] identiteit.
+
 1. Selecteer de knop **[!UICONTROL Save to Library]** (`Luma Platform Tutorial` moet nog steeds uw werkbibliotheek zijn)
    ![ voeg identiteitskaart CRM aan het de gegevenselement van de Kaart van de Identiteit toe ](assets/websdk-property-dataElement-identityMap.png)
 
