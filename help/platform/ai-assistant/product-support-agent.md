@@ -20,4 +20,4 @@ ht-degree: 0%
 
 De Agent van de Steun van het product is een altijd-op agent AI die de kwesties van de klantenzorg kan helpen oplossen door een enorme serie van kennisbronnen te gebruiken die door de deskundige de steunteams van Adobe en zelfs uw eigen gegevens worden beheerd om u toe te laten om binnen uw werkschema&#39;s problemen op te lossen. Als u extra hulp nodig hebt, kan de Agent van de Steun van het Product een steungeval met gedetailleerde contextafhankelijke informatie tot stand brengen, die de tijd en het werk beduidend vermindert die wordt vereist om steunkaartjes tot stand te brengen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443189/?learn=on&enablevpops&captions=dut)
