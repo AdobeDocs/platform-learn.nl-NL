@@ -4,9 +4,9 @@ description: Stichting - Opstelling van de Inzameling van Gegevens van Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ De Inzameling van Gegevens van Adobe Experience Platform wordt gebruikt door mer
 
 ## De gebruikersinterface verkennen
 
-Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/#/data-collection/).
+Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/#/data-collection/). Zorg ervoor dat u de juiste omgeving gebruikt, die `--aepImsOrgName--` moet zijn.
+
+>[!NOTE]
+>
+>Dit leerprogramma wordt gedocumenteerd gebruikend het milieu **Internationale Experience Platform**. Uw milieunaam is waarschijnlijk verschillend, zodat wanneer u de naam **Experience Platform Internationaal** in een schermafbeelding ziet, zou u dat door de naam van uw eigen milieu moeten vervangen, dat `--aepImsOrgName--` zou moeten zijn.
+
+![ Mening van Eigenschappen van de Lancering ](./images/launch0.png)
 
 Ga naar **Markeringen**. U ziet nu de weergave **[!UICONTROL Properties]** . De eigenschappen die hier worden vermeld zijn voor zelfstudiemanagement. Deze eigenschappen vertegenwoordigen:
 
@@ -56,8 +62,8 @@ Adobe Experience Platform Data Collection is een zeer geavanceerd hulpmiddel dat
 Hieronder vindt u wat meer lezingen voor degenen die geïnteresseerd zijn in het begrijpen van Adobe Experience Platform-gegevensverzameling.
 
 - [ Gids van de Gebruiker van de Verzameling van Gegevens van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)
-- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL)
-- [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL)
+- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
+- [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [ API documentatie ](https://developer.adobelaunch.com/api/)
 
 ## Volgende stappen

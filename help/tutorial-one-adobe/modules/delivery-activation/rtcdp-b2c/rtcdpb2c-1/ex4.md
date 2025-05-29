@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel - Een publiek maken - UI
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '707'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Selecteer **bouwt regel** en klik **creëren**.
 
 ![Segmentatie](./images/menusegbr.png)
 
-Zodra u in de nieuwe publieksbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
+Zodra u in de publieksbouwer bent, merkt u onmiddellijk de **het menuoptie van Attributen** en de **Individuele verwijzing van het Profiel XDM**.
 
 ![Segmentatie](./images/segmentationui.png)
 
@@ -45,7 +45,7 @@ Gender is een kenmerk van Person, dat te vinden is onder Kenmerken. Zo om daar t
 
 ![Segmentatie](./images/person.png)
 
-Dan zie je dit. In **Persoon**, kunt u het **3&rbrace; attribuut van het Geslacht &lbrace;vinden.** Sleep het attribuut Gender naar de publieksbouwer.
+Dan zie je dit. In **Persoon**, kunt u het **3} attribuut van het Geslacht {vinden.** Sleep het attribuut Gender naar de publieksbouwer.
 
 ![Segmentatie](./images/gender.png)
 
@@ -71,7 +71,7 @@ Ga naar **Punten van de Lijst van het Product**.
 
 ![Segmentatie](./images/plitems.png)
 
-Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **&#x200B;**&#x200B;sectie van Gebeurtenissen.
+Selecteer **Naam** en sleep en laat vallen het **voorwerp van de Naam** van het linkermenu op het canvas van de publieksbouwer in de **** sectie van Gebeurtenissen.
 
 ![Segmentatie](./images/eeweb.png)
 
@@ -82,6 +82,10 @@ U zult dan dit zien:
 De vergelijkingsparameter zou **gelijken** moeten zijn en op het inputgebied, ga **iPhone 15 Pro** in.
 
 ![Segmentatie](./images/pv.png)
+
+Plaats de tijdvoorwaarde op uw segment aan **in laatste 24 Uren**.
+
+![Segmentatie](./images/pv1.png)
 
 Telkens als u een element aan de publieksbouwer toevoegt, kunt u **klikken verfrist Schatting** knoop om een nieuwe schatting van de bevolking in uw publiek te krijgen.
 
@@ -102,7 +106,7 @@ U kunt een steekproef van de klantenprofielen ook voorproef die deel van dit pub
 ![Segmentatie](./images/previewprofilesdtl.png)
 
 Tot slot, geven wij uw publiek een naam,
-plaats de **methode van de Evaluatie** aan **het stromen** en klik **publiceren**.
+plaats de **methode van de Evaluatie** aan **Edge** en klik **publiceren**.
 
 Gebruik als naamgevingsconventie:
 

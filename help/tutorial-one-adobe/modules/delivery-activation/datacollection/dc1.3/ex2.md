@@ -4,9 +4,9 @@ description: Stichting - FAC - creeer schema's, gegevensmodel en verbindingen
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ In het linkermenu, klik **Modellen** en ga dan naar **Schema&#39;s**. Klik **cre
 
 ![ FAC ](./images/fdb5.png)
 
-Selecteer uw gefedereerde database en klik op **+ Tabellen toevoegen** .
+Selecteer uw gefedereerde gegevensbestand en klik **daarna**.
 
 ![ FAC ](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Dan zie je dit. Selecteer de vijf tabellen die u eerder in Snowflake hebt gemaak
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Klik **toevoegen**.
+Klik **daarna**.
 
 ![ FAC ](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Voor elke tabel kunt u:
 
 Voor deze oefening zijn geen veranderingen nodig.
 
-Klik **creëren**.
+Klik **Gedaan**.
 
 ![ FAC ](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ U zult dan dit zien, met de capaciteit om de configuratie uit te geven. Klik **G
 
 ![ FAC ](./images/fdb10.png)
 
-U ziet dan een voorbeeld van de gegevens.
+U ziet dan een voorbeeld van de gegevens. Deze gegevens worden rechtstreeks vanuit Snowflake geladen en blijven niet in AEP bestaan.
 
 ![ FAC ](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Dan zie je dit. Klik **sparen**.
 
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
-![ FAC ](./images/fdb16.png)
+![ FAC ](./images/fdb16a.png)
 
-Eerst, bepalen wij de verbinding tussen de lijst `--aepUserLdap--_USERS` en `--aepUserLdap--_PERSONS`.
+Eerst moet u de koppeling definiëren tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_PERSONS` .
 
 Klik **toevoegen**.
 
@@ -150,7 +150,9 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 
 ![ FAC ](./images/fdb17.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_HOUSEHOLDS` en `--aepUserLdap--_PERSONS` .
+Vervolgens moet u de koppeling definiëren tussen de tabel `--aepUserLdap--_HOUSEHOLDS` en `--aepUserLdap--_PERSONS` .
+
+Klik **toevoegen**.
 
 ![ FAC ](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 
 ![ FAC ](./images/fdb20.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MONTHLY_DATA_USAGE` .
+Vervolgens moet u de koppeling definiëren tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MONTHLY_DATA_USAGE` .
+
+Klik **toevoegen**.
 
 ![ FAC ](./images/fdb21.png)
-
 
 ### GEBRUIKERS - HUISHOUDENS
 
@@ -171,7 +174,9 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 
 ![ FAC ](./images/fdb22.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_HOUSEHOLDS` .
+Vervolgens moet u de koppeling definiëren tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_HOUSEHOLDS` .
+
+Klik **toevoegen**.
 
 ![ FAC ](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot 
 
 ![ FAC ](./images/fdb24.png)
 
-Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MOBILE_DATA_USAGE` .
+Vervolgens moet u de koppeling definiëren tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MOBILE_DATA_USAGE` .
+
+Klik **toevoegen**.
 
 ![ FAC ](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Dan moet je dit zien. Klik **sparen**.
 
 ![ FAC ](./images/fdb26.png)
 
-Uw installatie in AEP is nu voltooid. U kunt nu uw gefedereerde gegevens in een gefederaliseerde publiekscompositie gebruiken.
+De installatie van uw gefedereerde database in Adobe Experience Platform is nu voltooid. U kunt nu uw gefedereerde gegevens in een gefederaliseerde publiekscompositie gebruiken.
 
 ## Volgende stappen
 
