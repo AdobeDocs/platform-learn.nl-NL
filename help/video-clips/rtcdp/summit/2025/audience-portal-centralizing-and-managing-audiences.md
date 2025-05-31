@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe het Poortaal van het Publiek in Real-Time CDP helpt klantgegevens te verenigen, publiek te beheren, en activering in real time toe te laten.
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459743/?learn=on&enablevpops=true&captions=dut)

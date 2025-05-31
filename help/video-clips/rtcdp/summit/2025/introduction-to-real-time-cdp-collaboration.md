@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe Adobe Real-Time CDP Collaboration de ruimte voor het opschonen van gegevens vereenvoudigt voor marketers, zodat gebruikers probleemloos kunnen worden opgespoord, geactiveerd en gemeten.
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459973/?learn=on&enablevpops=true&captions=dut)

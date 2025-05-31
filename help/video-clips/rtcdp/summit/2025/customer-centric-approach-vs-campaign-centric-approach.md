@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe te om van een campagne-centric aan een klant-centric benadering over te gaan om duurzame groei te drijven en klantenervaringen te verbeteren.
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460109/?learn=on&enablevpops=true&captions=dut)

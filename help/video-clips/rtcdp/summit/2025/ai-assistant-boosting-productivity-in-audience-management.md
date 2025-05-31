@@ -20,4 +20,4 @@ ht-degree: 0%
 Zie hoe Adobe AI Assistant taken voor publieksbeheer vereenvoudigt, inzichten biedt en trends voor prognoses voor marketers.
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459600/?learn=on&enablevpops=true&captions=dut)

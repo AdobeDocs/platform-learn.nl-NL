@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe u met gereedschappen voor sandboxen workflows stroomlijnt en samenwerking tussen verschillende teams in Adobe Experience Platform mogelijk maakt.
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460558/?learn=on&enablevpops=true&captions=dut)

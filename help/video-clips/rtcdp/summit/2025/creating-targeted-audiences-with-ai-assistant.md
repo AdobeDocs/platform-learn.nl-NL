@@ -20,4 +20,4 @@ ht-degree: 0%
 Bekijk hoe AI Assistant marketers helpt voorspellende modellen te maken en een doelgericht publiek voor campagnes te maken.
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460193/?learn=on&enablevpops=true&captions=dut)

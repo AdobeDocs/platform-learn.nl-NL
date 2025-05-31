@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe Adobe voorspellende AI-mogelijkheden in Real-Time CDP marketers helpen segmentatie, personalisatie en inzicht in het publiek te optimaliseren.
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459962/?learn=on&enablevpops=true&captions=dut)

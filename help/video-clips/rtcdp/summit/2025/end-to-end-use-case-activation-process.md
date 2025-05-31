@@ -20,4 +20,4 @@ ht-degree: 0%
 Begrijp de zes fasen van het Adobe-proces voor de activering van gebruiksscenario&#39;s van begin tot eind, van ideatie tot optimalisatie.
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460248/?learn=on&enablevpops=true&captions=dut)

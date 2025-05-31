@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe look-alike publieksmodellen in Real-Time CDP marketers helpen hun bereik uit te breiden door gelijkaardige high-value klanten te identificeren.
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459929/?learn=on&enablevpops=true&captions=dut)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek een eenvoudig driefasenframework voor het maken, schalen en optimaliseren van publieksstrategieën met Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462996/?learn=on&enablevpops=true&captions=dut)

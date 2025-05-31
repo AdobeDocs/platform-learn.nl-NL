@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek het vijf-vraag kader van Adobe voor het bepalen van het gebruiksgevallen van de klantenervaring om teams te richten en bedrijfsresultaten te drijven.
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459786/?learn=on&enablevpops=true&captions=dut)

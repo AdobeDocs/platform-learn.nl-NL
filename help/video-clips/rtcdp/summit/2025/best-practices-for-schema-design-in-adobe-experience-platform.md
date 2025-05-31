@@ -20,4 +20,4 @@ ht-degree: 0%
 Vermijd dure fouten in schemaontwerp met deze beste praktijken voor rekbaarheid, bevestiging, en groepering met het gegevensmodel van Adobe Experience Platform.
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460120/?learn=on&enablevpops=true&captions=dut)

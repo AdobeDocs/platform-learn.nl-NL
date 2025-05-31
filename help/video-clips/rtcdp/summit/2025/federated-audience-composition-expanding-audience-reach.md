@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe u met Federated Audience Composition externe gegevensopslagruimten met Real-Time CDP kunt verbinden voor marketing op het moment.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459797/?learn=on&enablevpops=true&captions=dut)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Begrijp hoe de Federatieve Samenstelling van het Publiek marketing in real time door externe gegevensbronnen in Real-Time CDP toe te voegen toelaat.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459907/?learn=on&enablevpops=true&captions=dut)

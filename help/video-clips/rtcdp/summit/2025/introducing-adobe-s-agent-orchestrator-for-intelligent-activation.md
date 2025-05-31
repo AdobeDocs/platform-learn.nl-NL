@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer meer over het volgende tijdperk van GenAI-innovatie met Adobe Agent Orchestrator, waardoor klanten in real-time en op hyperpersonaliteit kunnen ervaren.
 
 <!-- 62_S653_3442539_67_introducing-adobes-agent-orchestrator-for-intelligent-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458205/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460030/?learn=on&enablevpops=true&captions=dut)

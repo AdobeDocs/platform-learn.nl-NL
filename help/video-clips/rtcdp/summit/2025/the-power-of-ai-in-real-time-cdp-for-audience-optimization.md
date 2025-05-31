@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe AI Assistant voor Soorten publiek in Adobe Real-Time CDP marketers helpt publieksstrategieën te optimaliseren met schatting van grootte, scoring van dichtheid en realtime inzichten.
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463019/?learn=on&enablevpops=true&captions=dut)

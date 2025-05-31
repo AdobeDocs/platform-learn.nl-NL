@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe Adobe Experience Platform het mogelijk maakt dat verbonden klanten gegevens, inhoud en transversale activering doorlopen.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459632/?learn=on&enablevpops=true&captions=dut)

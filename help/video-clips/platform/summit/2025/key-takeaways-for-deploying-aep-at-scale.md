@@ -20,4 +20,4 @@ ht-degree: 0%
 Begrijp de kritieke overwegingen voor het opstellen van Adobe Experience Platform, met inbegrip van bestuur, de groeiplanning, en architectuur.
 
 <!-- 62_S601_3442532_72_key-takeaways-for-deploying-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458314/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460522/?learn=on&enablevpops=true&captions=dut)

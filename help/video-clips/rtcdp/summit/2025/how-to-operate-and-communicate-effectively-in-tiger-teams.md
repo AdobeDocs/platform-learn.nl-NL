@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer beste praktijken voor het structureren en het communiceren binnen de Teams van de Tijger om samenwerking te verbeteren en inefficiënties in projecten van AEP te verminderen.
 
 <!-- 62_S926_3442625_155_how-to-operate-and-communicate-effectively-in-tiger-teams -->
->[!VIDEO](https://video.tv.adobe.com/v/3458270/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460219/?learn=on&enablevpops=true&captions=dut)

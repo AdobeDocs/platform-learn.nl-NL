@@ -20,4 +20,4 @@ ht-degree: 0%
 Zie hoe AI Assistant voor soorten publiek helpt bij het identificeren van hoogwaardige segmenten, het optimaliseren van publieksstrategieën en het besparen van tijd.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459666/?learn=on&enablevpops=true&captions=dut)

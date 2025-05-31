@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe Adobe Verenigde Profielen gebruikt om samenwerking over 70+ teams te drijven en gepersonaliseerde ervaringen voor de gebruikers van Creative Cloud te leveren.
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459677/?learn=on&enablevpops=true&captions=dut)

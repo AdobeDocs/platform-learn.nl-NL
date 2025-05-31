@@ -20,4 +20,4 @@ ht-degree: 0%
 Kies voor de kernmogelijkheden van Adobe Real-Time CDP Collaboration: ontdekking van het publiek, veilige activering en prestatiemeting.
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460177/?learn=on&enablevpops=true&captions=dut)

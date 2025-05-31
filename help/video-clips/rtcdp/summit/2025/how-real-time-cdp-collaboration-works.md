@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer het stapsgewijze proces van het instappen van publiek, het samenwerken met uitgevers, en het activeren van campagnes gebruikend Adobe Real-Time CDP Collaboration.
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459951/?learn=on&enablevpops=true&captions=dut)

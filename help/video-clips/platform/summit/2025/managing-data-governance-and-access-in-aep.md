@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe u gegevens effectief kunt besturen in Adobe Experience Platform met behulp van op rollen gebaseerde en op kenmerken gebaseerde toegangsbesturingselementen.
 
 <!-- 62_S601_3442532_118_managing-data-governance-and-access-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458316/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460536/?learn=on&enablevpops=true&captions=dut)

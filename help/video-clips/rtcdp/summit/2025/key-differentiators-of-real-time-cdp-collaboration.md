@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek de unieke kenmerken van Adobe Real-Time CDP Collaboration, waaronder de markeringsvriendelijke gebruikersinterface, interoperabiliteit en privacygericht ontwerp.
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460547/?learn=on&enablevpops=true&captions=dut)

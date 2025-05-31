@@ -20,4 +20,4 @@ ht-degree: 0%
 Leer hoe u uw publieksstrategie kunt versnellen door Real-Time CDP te gebruiken voor het verenigen van gegevens, het aanpassen van ervaringen en het aansturen van betrokkenheid.
 
 <!-- 62_S508_3442517_45_accelerating-your-audience-strategy-with-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458220/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459611/?learn=on&enablevpops=true&captions=dut)

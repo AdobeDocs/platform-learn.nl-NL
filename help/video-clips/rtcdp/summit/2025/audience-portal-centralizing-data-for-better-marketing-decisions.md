@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe het Poortaal van de Publiek in Adobe Real-Time CDP klantgegevens verenigt, toelatend geavanceerd publieksbeheer en activering in real time.
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459688/?learn=on&enablevpops=true&captions=dut)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe Adobe AI Assistant de gegevensinzichten verandert met zoekopdrachten in de natuurlijke taal en levert onmiddellijke, handelbare resultaten voor marketeers.
 
 <!-- 62_S653_3442539_57_how-ai-assistant-transforms-data-insights-in-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458199/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459863/?learn=on&enablevpops=true&captions=dut)
