@@ -4,9 +4,9 @@ description: Aan de slag - één Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,49 @@ In deze module zult u alles plaatsen zodat u gegevens kunt verzamelen, tot het d
 - Leer hoe u de omgeving voor activering instelt
 - Leer hoe u de website en mobiele toepassing gebruikt
 
-## Vereisten
+## Paden leren
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot het Systeem van de Demo daarna: [ https://dsn.adobe.com](https://dsn.adobe.com)
+### Pad: Firefly Services
+
+Als u omhoog voor een opleiding op bestelling die op **Adobe Firefly Services** wordt geconcentreerd, slechts worden de volgende oefeningen vereist:
+
+- [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
+- [Uw Adobe I/O-project configureren](./ex6.md)
+- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [Toepassingen om te installeren](./ex9.md)
+
+### Pad: Workfront Fusion
+
+Als u omhoog voor een opleiding op bestelling die op **wordt geconcentreerd de Fusie van Adobe Workfront**, slechts de volgende oefeningen worden vereist:
+
+- [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
+- [Uw Adobe I/O-project configureren](./ex6.md)
+- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [Toepassingen om te installeren](./ex9.md)
+
+### Pad: AEM CS + EDS
+
+Als u omhoog voor een opleiding op bestelling op **Adobe Experience Manager Cloud Service** en **Edge Delivery Services** concentreerde zich, slechts worden de volgende oefeningen vereist:
+
+- [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
+- [Toepassingen om te installeren](./ex9.md)
+
+### Pad: LIVE, ALL of AEP + Apps
+
+Als u a **levende workshop** bijwoont, of als u zich voor een opleiding op bestelling aanmeldt die op **ALLES** de oefeningen concentreert, van als u zich voor een opleiding op bestelling die op **AEP + Apps** wordt geconcentreerd, worden de volgende oefeningen vereist:
+
+- [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
+- [Demosysteem gebruiken naast het instellen van de client-eigenschap voor Adobe Experience Platform-gegevensverzameling](./ex2.md)
+- [Uw gegevensstroom maken](./ex3.md)
+- [De website gebruiken](./ex4.md)
+- [De mobiele app gebruiken](./ex5.md)
+- [Uw Adobe I/O-project configureren](./ex6.md)
+- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [Toepassingen om te installeren](./ex9.md)
 
 ## Uitoefening
+
+Afhankelijk van het leerpad dat u volgt, zijn enkele van de onderstaande oefeningen vereist, terwijl andere wellicht niet vereist zijn.
 
 [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
 
@@ -67,6 +103,10 @@ In deze oefening zult u uw Postman-omgeving voorbereiden op interactie met versc
 >Als u een Adobe-medewerker bent, volgt u de instructies om PostBuster te installeren.
 
 In deze oefening zult u uw omgeving van PostBuster voor interactie met diverse Adobe API eindpunten voorbereiden
+
+[Toepassingen om te installeren](./ex9.md)
+
+In deze oefening, zult u instructies op vinden hoe te om alle toepassingen te installeren u op uw computer zult moeten hebben alvorens de zelfstudie te beginnen.
 
 ![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

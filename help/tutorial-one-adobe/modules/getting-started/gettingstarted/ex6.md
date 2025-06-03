@@ -4,9 +4,9 @@ description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Daarna, uitgezochte **creeer nieuw project**.
 ![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png){zoomable="yes"}
 
 ### FIREFLY SERVICES API
+
+>[!IMPORTANT]
+>
+>Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Firefly Services API. U zult slechts toegang tot Firefly Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
 
 Dan moet je dit zien. Selecteer **+ toevoegen aan Project** en kies **API**.
 
@@ -59,6 +63,10 @@ Dan moet je dit zien.
 
 ### PHOTOSHOP SERVICES API
 
+>[!IMPORTANT]
+>
+>Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Photoshop Services API. U zult slechts toegang tot Photoshop Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
+
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
 ![ Azure Opslag ](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Dan moet je dit zien.
 ![ de Nieuwe Integratie van Adobe I/O ](./images/ps7.png){zoomable="yes"}
 
 ### ADOBE EXPERIENCE PLATFORM API
+
+>[!IMPORTANT]
+>
+>Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Adobe Experience Platform API. U zult slechts toegang tot Adobe Experience Platform API hebben als u op de het leren weg **AEP + Apps** bent, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
 
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 

@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1153'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 2%
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Voltooiing](/help/tutorial-one-adobe/completion.md)
-+ [Voorwerk](/help/tutorial-one-adobe/prework.md)
 
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}

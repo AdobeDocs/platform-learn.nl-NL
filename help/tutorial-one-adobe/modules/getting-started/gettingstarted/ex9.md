@@ -3,16 +3,16 @@ title: Aan de slag - Te installeren toepassingen
 description: Aan de slag - Te installeren toepassingen
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
 # Toepassingen om te installeren
 
-Hieronder vindt u een overzicht van de voorbereidingen die nodig zijn voordat u aan een live workshop kunt deelnemen.
+Hieronder vindt u een overzicht van de toepassingen die u op uw computer moet hebben geïnstalleerd voordat u de zelfstudie start.
 
 ## Adobe Creative Cloud
 
