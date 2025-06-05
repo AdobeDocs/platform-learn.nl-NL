@@ -1,10 +1,10 @@
 ---
-title: Verzamel identiteitsgegevens in een mobiele toepassing met Mobile SDK
+title: Verzamel identiteitsgegevens in een mobiele app met Mobile SDK
 description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -35,11 +35,11 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl-NL) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
->De mobiele SDK genereert een unieke identiteit in een eigen naamruimte, de zogenaamde Experience Cloud-id (ECID), wanneer de toepassing wordt geïnstalleerd. Deze ECID wordt opgeslagen in permanent geheugen op het mobiele apparaat en wordt bij elke hit verzonden. De ECID wordt verwijderd wanneer de gebruiker de app verwijdert of wanneer de gebruiker de algemene privacystatus van de Mobile SDK instelt op opt-out. In de voorbeeldtoepassing Luma moet u de toepassing verwijderen en opnieuw installeren om een nieuw profiel met een eigen unieke ECID te maken.
+>De Mobile SDK genereert een unieke identiteit in een eigen naamruimte, de naam Experience Cloud ID (ECID), wanneer de toepassing wordt geïnstalleerd. Deze ECID wordt opgeslagen in permanent geheugen op het mobiele apparaat en wordt bij elke hit verzonden. De ECID wordt verwijderd wanneer de gebruiker de app verwijdert of wanneer de gebruiker de algemene privacystatus van Mobile SDK instelt op opt-out. In de voorbeeldtoepassing Luma moet u de toepassing verwijderen en opnieuw installeren om een nieuw profiel met een eigen unieke ECID te maken.
 
 
 Een nieuwe naamruimte maken:
@@ -116,7 +116,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De uitbreiding van de Identiteit houdt op verzendend het herkenningsteken naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=nl-NL) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode Project navigator en voeg de volgende code toe aan de `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
@@ -125,7 +125,7 @@ U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in de Xcode-projectnavigator en zoek de uit te voeren code wanneer u de knop **[!UICONTROL Logout]** selecteert. Voeg de volgende code toe:
@@ -136,11 +136,11 @@ U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client
    ```
 
 
-## Valideren met betrouwbaarheid
+## Valideren met Assurance
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. In de app Luma
-   1. Selecteer de tab **[!UICONTROL Home]** en verplaats het pictogram Verzekering naar links.
+   1. Selecteer de tab **[!UICONTROL Home]** en verplaats het Assurance-pictogram naar links.
    1. Selecteer de <img src="assets/login.png" width="15" /> vanaf de rechterbovenhoek.
 
       <img src="./assets/identity1.png" width="300">
@@ -152,13 +152,13 @@ U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client
       <img src="./assets/identity2.png" width="300">
 
 
-1. Kijk in de webinterface van de **[!UICONTROL com.adobe.griffon.mobile]** -leverancier voor de **[!UICONTROL Edge Identity Update Identities]** -gebeurtenis.
+1. Kijk in de Assurance-webinterface voor de **[!UICONTROL Edge Identity Update Identities]** -gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** -leverancier.
 1. Selecteer de gebeurtenis en bekijk de gegevens in het **[!UICONTROL ACPExtensionEventData]** -object. U moet de identiteiten zien die u hebt bijgewerkt.
    ![ bevestigt identiteitsupdate ](assets/identity-validate-assurance.png)
 
 ## Valideren met identiteitsgrafiek
 
-Zodra u de stappen in de [ les van het Experience Platform ](platform.md) voltooit, kunt u de identiteit bevestigen vangen in de kijker van de identiteitsgrafiek van Platforms:
+Zodra u de stappen in de [ les van Experience Platform ](platform.md) voltooit, kunt u de identiteit bevestigen vangen in de kijker van de identiteitsgrafiek van Platforms:
 
 1. Selecteer **[!UICONTROL Identities]** in de gebruikersinterface voor gegevensverzameling.
 1. Selecteer **[!UICONTROL Identity Graph]** in de bovenste balk.
@@ -174,8 +174,8 @@ Zodra u de stappen in de [ les van het Experience Platform ](platform.md) voltoo
 
 >[!SUCCESS]
 >
->U hebt nu uw app ingesteld om de identiteiten in de Edge Network en (wanneer deze is ingesteld) met Adobe Experience Platform bij te werken.
+>U hebt nu een app ingesteld om de identiteiten in de Edge Network en (wanneer deze is ingesteld) in Adobe Experience Platform bij te werken.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 Volgende: **[verzamel profielgegevens](profile.md)**

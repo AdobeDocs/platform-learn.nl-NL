@@ -1,9 +1,9 @@
 ---
 title: Gegevens streamen naar Adobe Experience Platform met Platform Web SDK
-description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 0%
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Platform Web SDK.
 
-Experience Platform is de ruggengraat van alle nieuwe Experience Cloud toepassingen, zoals Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics en Adobe Journey Optimizer. Deze toepassingen worden ontworpen om het Web SDK van het Platform als hun optimale methode van Webgegevensinzameling te gebruiken.
+Experience Platform is de ruggengraat van alle nieuwe Experience Cloud-toepassingen, zoals Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics en Adobe Journey Optimizer. Deze toepassingen worden ontworpen om het Web SDK van het Platform als hun optimale methode van Webgegevensinzameling te gebruiken.
 
 ![ SDK van het Web en het diagram van Adobe Experience Platform ](assets/dc-websdk-aep.png)
 
-Experience Platform gebruikt hetzelfde XDM-schema dat u eerder hebt gemaakt om gebeurtenisgegevens van de Luma-website vast te leggen. Wanneer die gegevens naar de Edge Network van het Platform worden verzonden, kan de configuratie van de gegevensstroom het aan Experience Platform door:sturen.
+Experience Platform gebruikt hetzelfde XDM-schema dat u eerder hebt gemaakt om gebeurtenisgegevens van de Luma-website vast te leggen. Wanneer die gegevens naar Platform Edge Network worden verzonden, kan de configuratie van de datastream het naar Experience Platform doorsturen.
 
 ## Leerdoelstellingen
 
 Aan het eind van deze les, zult u kunnen:
 
 * Een gegevensset maken in Adobe Experience Platform
-* Vorm de gegevensstroom om de gegevens van SDK van het Web naar Adobe Experience Platform te verzenden
+* Configureer de gegevensstroom om Web SDK-gegevens naar Adobe Experience Platform te verzenden
 * Streaming webgegevens inschakelen voor realtime klantprofiel
 * Bevestig de gegevens zowel in de dataset van het Platform als in het Profiel van de Klant in real time zijn geland
 * De gegevens van het steekproefloyaliteitsprogramma in Platform opnemen
@@ -35,7 +35,7 @@ Aan het eind van deze les, zult u kunnen:
 
 Om deze les te voltooien, moet u eerst:
 
-* Toegang hebben tot een Adobe Experience Platform-toepassing zoals Real-time Customer Data Platform, Journey Optimizer of Customer Journey Analytics
+* Toegang hebben tot een Adobe Experience Platform-toepassing zoals Real-Time Customer Data Platform, Journey Optimizer of Customer Journey Analytics
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
 >[!NOTE]
@@ -44,12 +44,12 @@ Om deze les te voltooien, moet u eerst:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
 
-1. Ga naar het [ Experience Platform ](https://experience.adobe.com/platform/) of [ Journey Optimizer ](https://experience.adobe.com/journey-optimizer/) interface
+1. Ga naar [ Experience Platform ](https://experience.adobe.com/platform/) of [ Journey Optimizer ](https://experience.adobe.com/journey-optimizer/) interface
 1. Bevestig dat u zich in de ontwikkelingssandbox bevindt die u voor deze zelfstudie gebruikt
 1. **[!UICONTROL Data Management > Datasets]** openen vanuit de linkernavigatie
 1. Selecteren **[!UICONTROL Create dataset]**
@@ -68,13 +68,13 @@ Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
    ![ Naam gegevensset ](assets/experience-platform-create-dataset-schema-name.png)
 
-Een dataset wordt nu gevormd beginnen gegevens van uw implementatie van SDK van het Web van het Platform te verzamelen.
+Een dataset wordt nu gevormd om te beginnen gegevens van uw implementatie van het Web SDK van het Platform te verzamelen.
 
 ## De gegevensstroom configureren
 
-Nu kunt u uw [!UICONTROL datastream] configureren om gegevens naar [!UICONTROL Adobe Experience Platform] te verzenden. De gegevensstroom is het verband tussen uw markeringsbezit, de Edge Network van het Platform, en de dataset van het Experience Platform.
+Nu kunt u uw [!UICONTROL datastream] configureren om gegevens naar [!UICONTROL Adobe Experience Platform] te verzenden. De gegevensstroom is het verband tussen uw markeringsbezit, het Platform Edge Network, en de dataset van Experience Platform.
 
-1. Open de [&#128279;](https://experience.adobe.com/#/data-collection) {target="blank"} interface van de Inzameling van 0&rbrace; Gegevens
+1. Open de ](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0} Gegevens[
 1. Selecteer **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Open de datastream u in [ creeerde vormen een datastream ](configure-datastream.md) les, `Luma Web SDK`
 
@@ -109,7 +109,7 @@ Deze stappen zijn meer of minder het zelfde als wat u in de [ Debugger les ](val
 
    ![ Uw ontwikkelomgeving van de Lancering die in Debugger wordt getoond ](assets/experience-platform-debugger-dev.png)
 
-1. Meld u aan bij de Luministensite met de referenties `test@adobe.com`/`test`
+1. Meld u aan bij de Luministensite met de referenties `test@test.com`/`test`
 
 1. Terugkeer aan de [ homepage van Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -124,9 +124,9 @@ Gegevens moeten nu worden ingevuld in de gegevensset `Luma Web Event Data` en kl
 
 ### Een voorvertoning van de gegevensset weergeven
 
-Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, kunt u de functie **[!UICONTROL Preview dataset]** snel gebruiken. De gegevens van SDK van het Web zijn micro-gebatcheerd aan het gegevens meer en op periodieke basis verfrist in de interface van het Platform. Het kan 10 tot 15 minuten duren om de gegevens te zien die u hebt gegenereerd.
+Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, kunt u de functie **[!UICONTROL Preview dataset]** snel gebruiken. Web SDK-gegevens zijn microbatches aan het data-meer en worden periodiek vernieuwd in de Platform-interface. Het kan 10 tot 15 minuten duren om de gegevens te zien die u hebt gegenereerd.
 
-1. In de [ interface van het Experience Platform ](https://experience.adobe.com/platform/), selecteer **[!UICONTROL Data Management > Datasets]** in de linkernavigatie om het **[!UICONTROL Datasets]** dashboard te openen.
+1. In de [ interface van Experience Platform ](https://experience.adobe.com/platform/), selecteer **[!UICONTROL Data Management > Datasets]** in de linkernavigatie om het **[!UICONTROL Datasets]** dashboard te openen.
 
    Het dashboard maakt een lijst van alle beschikbare datasets voor uw organisatie. De details worden getoond voor elke vermelde dataset, met inbegrip van zijn naam, het schema de dataset zich aan, en status van de meest recente versiereeks houdt.
 
@@ -147,7 +147,7 @@ Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, k
 
 ### De gegevens opvragen
 
-1. In de [ interface van het Experience Platform ](https://experience.adobe.com/platform/), selecteer **[!UICONTROL Data Management > Queroes]** in de linkernavigatie om het **[!UICONTROL Queries]** scherm te openen.
+1. In de [ interface van Experience Platform ](https://experience.adobe.com/platform/), selecteer **[!UICONTROL Data Management > Queroes]** in de linkernavigatie om het **[!UICONTROL Queries]** scherm te openen.
 1. Selecteren **[!UICONTROL Create query]**
 1. Eerst, stel een vraag in werking om alle namen van de lijsten in het gegevensmeer te zien. Voer `SHOW TABLES` in de query-editor in en klik op het afspeelpictogram om de query uit te voeren.
 1. In de resultaten ziet u hoe de naam van de tabel er ongeveer als volgt uitziet `luma_web_event_data`
@@ -160,12 +160,12 @@ Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, k
 
 >[!INFO]
 >
->  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
+>  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
 
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen
 
-Voor klanten van Real-time Customer Data Platform en Journey Optimizer, is de volgende stap de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-Time Customer Profile:
+Voor klanten van Real-Time Customer Data Platform en Journey Optimizer, is de volgende stap de dataset en het schema voor het Profiel van de Klant in real time toe te laten. Gegevens die van SDK van het Web stromen zullen één van vele gegevensbronnen zijn die in Platform stromen en u wilt zich bij uw Webgegevens met andere gegevensbronnen aansluiten om klantenprofielen van 360 graads te bouwen. Bekijk deze korte video voor meer informatie over Real-Time Customer Profile:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -226,12 +226,12 @@ Het schema is nu ook ingeschakeld voor het profiel.
 
 U kunt een klantprofiel opzoeken in de interface Platform (of Journey Optimizer-interface) om te bevestigen dat de gegevens zijn geland in het Real-Time Klantprofiel. Zoals de naam suggereert, bevolken de profielen in real time, zodat is er geen vertraging zoals met het bevestigen van gegevens in de dataset.
 
-Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere versies in deze les om u aan te melden bij de Luma-website wanneer deze is toegewezen aan uw tag-eigenschap. Inspect het verzoek van de SDK van het Web van het Platform om ervoor te zorgen het gegevens met `lumaCRMId` verzendt.
+Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere versies in deze les om u aan te melden bij de Luma-website wanneer deze is toegewezen aan uw tag-eigenschap. Controleer het verzoek van Platform Web SDK om ervoor te zorgen dat het gegevens met `lumaCRMId` verzendt.
 
-1. In de [ interface van het Experience Platform ](https://experience.adobe.com/platform/), uitgezochte **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de linkernavigatie
+1. In de [ interface van Experience Platform ](https://experience.adobe.com/platform/), uitgezochte **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de linkernavigatie
 
 1. Als **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Kopieer en plak de waarde van de `lumaCRMId` die is doorgegeven in de aanroep die u hebt gecontroleerd in Foutopsporing op Experience Platform, in dit geval `112ca06ed53d3db37e4cea49cc45b71e` .
+1. Kopieer en plak de waarde van de `lumaCRMId` die is doorgegeven in de aanroep die u hebt gecontroleerd in Experience Platform Debugger, in dit geval `b642b4217b34b1e8d3bd915fc65c4452` .
 
    ![Profiel](assets/experience-platform-validate-dataset-profile.png)
 
@@ -250,13 +250,13 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
    ![ profiel van de Klant ](assets/experience-platform-validate-dataset-custProfile.png)
 
-U hebt nu Platform Web SDK voor Experience Platform ingeschakeld (En Real-Time CDP! En Journey Optimizer! En Customer Journey Analytics!).
+U hebt nu Platform Web SDK for Experience Platform (en Real-Time CDP) ingeschakeld! En Journey Optimizer! En Customer Journey Analytics!).
 
 ### Een kwaliteitsschema maken en voorbeeldgegevens invoeren
 
-Deze exercitie zal naar verwachting worden voltooid voor klanten van Real-time Customer Data Platform en Journey Optimizer.
+Deze exercitie zal naar verwachting worden voltooid voor klanten van Real-Time Customer Data Platform en Journey Optimizer.
 
-Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, creeer snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit zodat u de Profielen van de Klant in real time met Real-time Customer Data Platform en Journey Optimizer kunt gebruiken. Aangezien u reeds soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
+Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, creeer snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit zodat u de Profielen van de Klant in real time met Real-Time Customer Data Platform en Journey Optimizer kunt gebruiken. Aangezien u reeds soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
 
 Maak het loyaliteitsschema:
 
@@ -286,7 +286,7 @@ Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
 
 Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Bouw een snel publiek u in uw Webcampagne kunt gebruiken:
 
-1. Ga in de interface Experience Platform of Journey Optimizer naar **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in de linkernavigatie
+1. Ga in de Experience Platform- of Journey Optimizer-interface naar **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Create audience]**
 1. Selecteren **[!UICONTROL Build rule]**
 1. Selecteren **[!UICONTROL Create]**
@@ -302,11 +302,11 @@ Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. 
 
    ![De doelgroep definiëren](assets/web-campaign-define-audience.png)
 
-Omdat dit een heel eenvoudig publiek is, kunnen we de evaluatiemethode van Edge gebruiken. Het publiek van Edge evalueert op de rand, zodat in het zelfde verzoek dat door SDK van het Web aan de Edge Network van het Platform wordt gemaakt, kunnen wij de publieksdefinitie evalueren en onmiddellijk bevestigen als de gebruiker zal kwalificeren.
+Omdat dit een heel eenvoudig publiek is, kunnen we de evaluatiemethode van Edge gebruiken. Het publiek van Edge evalueert op de rand, zodat in het zelfde verzoek dat door Web SDK aan Platform Edge Network wordt gedaan, kunnen wij de publieksdefinitie evalueren en onmiddellijk bevestigen als de gebruiker zal kwalificeren.
 
 
 [Volgende: ](setup-analytics.md)
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

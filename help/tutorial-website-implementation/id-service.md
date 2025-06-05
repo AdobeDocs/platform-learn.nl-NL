@@ -3,7 +3,7 @@ title: De Adobe Experience Platform Identity Service toevoegen met tags
 description: Leer hoe u de extensie Adobe Experience Platform Identity Service toevoegt en de actie Customer ID's instellen gebruikt om id's van klanten te verzamelen. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1847'
 ht-degree: 0%
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # De Adobe Experience Platform Identity Service toevoegen
 
-Deze les zal uw door de stappen begeleiden die worden vereist om de [ uitbreiding van de Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=nl-NL) uit te voeren en klantenids te verzenden.
+Deze les zal uw door de stappen begeleiden die worden vereist om de [ uitbreiding van de Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) uit te voeren en klantenids te verzenden.
 
-De [ Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL) plaatst gemeenschappelijke bezoekersidentiteitskaart over alle oplossingen van de Adobe om de mogelijkheden van het Experience Cloud zoals publiek-deel tussen oplossingen te aandrijven. U kunt ook uw eigen klanten-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met uw CRM-systeem (Customer Relationship Management).
+De [ Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/id-service/using/home.html) plaatst gemeenschappelijke bezoekersidentiteitskaart over alle oplossingen van Adobe om de mogelijkheden van Experience Cloud zoals publiek-deel tussen oplossingen te aandrijven. U kunt ook uw eigen klanten-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met uw CRM-systeem (Customer Relationship Management).
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * Platform launch (de Kant van de Cliënt) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
+> * Platform Launch (Client Side) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## Leerdoelen
 
@@ -30,7 +30,7 @@ Aan het eind van deze les, zult u kunnen:
 
 * De extensie Identiteitsservice toevoegen
 * Een gegevenselement maken om uw klantgegevens te verzamelen
-* Maak een regel die de actie &quot;Customer ID&#39;s instellen&quot; gebruikt om de id&#39;s van de klant naar de Adobe te sturen
+* Maak een regel die gebruikmaakt van de actie &quot;Customer ID&#39;s instellen&quot; om de id&#39;s van de klant naar Adobe te verzenden
 * Gebruik de functie voor regelvolgorde om regels uit te voeren die op dezelfde gebeurtenis worden geactiveerd
 
 ## Vereisten
@@ -39,7 +39,7 @@ U zou de lessen in [ reeds moeten voltooid hebben vormt markeringen ](create-a-p
 
 ## De extensie Identiteitsservice toevoegen
 
-Aangezien dit de eerste extensie is die u toevoegt, volgt hier een kort overzicht van extensies. Extensies zijn een van de kernkenmerken van tags. Een extensie is een integratie die is opgebouwd door Adobe, een partner van een Adobe of een klant van een Adobe die nieuwe en eindeloze opties toevoegt voor de tags die u kunt implementeren op uw website. Als u tags als besturingssysteem beschouwt, zijn extensies de toepassingen die u installeert, zodat tags de taken kunnen uitvoeren die u nodig hebt.
+Aangezien dit de eerste extensie is die u toevoegt, volgt hier een kort overzicht van extensies. Extensies zijn een van de kernkenmerken van tags. Een extensie is een integratie die is gebouwd door Adobe, een Adobe-partner of een willekeurige Adobe-klant en die nieuwe en eindeloze opties toevoegt voor de tags die u kunt implementeren op uw website. Als u tags als besturingssysteem beschouwt, zijn extensies de toepassingen die u installeert, zodat tags de taken kunnen uitvoeren die u nodig hebt.
 
 **om de Uitbreiding van de Dienst van de Identiteit toe te voegen**
 
@@ -55,7 +55,7 @@ Aangezien dit de eerste extensie is die u toevoegt, volgt hier een kort overzich
 
    ![ installeer de Uitbreiding van de Dienst van de Identiteit ](images/idservice-install.png)
 
-1. De organisatie-id van het Experience Cloud is automatisch voor u gedetecteerd.
+1. De Experience Cloud-organisatie-id is automatisch voor u gedetecteerd.
 
 1. Alle standaardinstellingen behouden en klikken **[!UICONTROL Save to Library and Build]**
 
@@ -90,14 +90,13 @@ De uitbreiding van de Dienst van de Identiteit is één van de weinige marktexte
    1. `Cookies` aan de linkerkant uitvouwen
    1. Klik op het domein `https://luma.enablementadobe.com`
    1. Zoek naar het AMCV_ cookie aan de rechterkant. U ziet mogelijk verschillende keren dat de Luma-site is geladen met zowel de eigenschap hardcoded tag als de eigen eigenschap.
-
       ![ verifieer AMCV_cookie ](images/idservice-AMCVCookie.png)
 
-Dat is het! U hebt de eerste extensie toegevoegd! Voor meer details over de configuratieopties van de Dienst van de Identiteit, zie [ de documentatie ](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=nl-NL).
+Dat is het! U hebt de eerste extensie toegevoegd! Voor meer details over de configuratieopties van de Dienst van de Identiteit, zie [ de documentatie ](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Klant-id&#39;s verzenden
 
-Daarna, zult u identiteitskaart van de a [ Klant ](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=nl-NL) naar de Dienst van de Identiteit verzenden. Dit zal u toestaan om [ uw CRM ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) met het Experience Cloud evenals spoorbezoekers over apparaten te integreren.
+Daarna, zult u identiteitskaart van de a [ Klant ](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) naar de Dienst van de Identiteit verzenden. Dit zal u toestaan om uw CRM ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) met Experience Cloud evenals spoorbezoekers over apparaten te integreren.[
 
 In de vroegere les, [ voegt de Elementen van Gegevens, Regels, en Bibliotheken ](add-data-elements-rules.md) toe u een gegevenselement creeerde en het in een regel gebruikte. Nu gebruikt u dezelfde technieken om een klant-id te verzenden wanneer de bezoeker is geverifieerd.
 
@@ -237,7 +236,7 @@ Als u uw werk wilt valideren, meldt u zich aan bij de Lumasite om het gedrag van
 
    ![ klik Login binnen de hoogste navigatie ](images/idservice-loginNav.png)
 
-1. Voer `test@adobe.com` in als gebruikersnaam
+1. Voer `test@test.com` in als gebruikersnaam
 1. Voer `test` in als wachtwoord
 1. Klik op de knop **[!UICONTROL LOGIN]**
 

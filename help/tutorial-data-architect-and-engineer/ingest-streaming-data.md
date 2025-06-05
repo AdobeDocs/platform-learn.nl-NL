@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 0%
@@ -348,7 +348,7 @@ Nu zullen wij onze paginanaam aan het Web SDK in kaart brengen.
 >[!IMPORTANT]
 >
 >Om deze taak te voltooien, moeten wij ervoor zorgen dat uw gebruiker eerst toegang tot de zandbak van de Prod heeft. Als u nog geen toegang hebt tot de prod-sandbox vanuit een ander productprofiel, opent u snel het `Luma Tutorial Platform` -profiel en voegt u het machtigingsitem **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** toe. Voer vervolgens een SHIFT-Opnieuw laden op de pagina Data Elements uit om de cache te wissen
->![De sandbox Prod toevoegen ](assets/websdk-property-permissionToLoadSchema.png)
+>>![De sandbox Prod toevoegen ](assets/websdk-property-permissionToLoadSchema.png)
 
 Op de pagina **[!UICONTROL Data Elements]** :
 
@@ -451,7 +451,7 @@ Om te bevestigen dat CRM identiteitskaart nu door het Web SDK wordt verzonden:
 1. Open de [ website Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Wijs het aan uw markeringsbezit toe gebruikend Debugger, zoals in vroegere instructies
 1. Selecteer de **Login** verbinding op het hoogste recht van de website van de Luma
-1. Meld u aan met de aanmeldingsgegevens `test@adobe.com`/`test`
+1. Meld u aan met de aanmeldingsgegevens `test@test.com`/`test`
 1. Zodra geverifieerd, inspecteert u de Experience Platform Web SDK-aanroep in Foutopsporing (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** van de meest recente aanvraag) en ziet u de `lumaCrmId` :
    ![ bevestigt de identiteit in Debugger ](assets/websdk-debugger-confirmIdentity.png)
 1. Zoek het gebruikersprofiel op met behulp van de ECID-naamruimte en -waarde. In het profiel, zult u CRM identiteitskaart en ook Loyalty identiteitskaart en de profieldetails zoals de naam en het telefoonaantal zien. Alle identiteiten en gegevens zijn samengevoegd tot één enkel, real-time klantenprofiel!

@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Laten we eens kijken of het fusiebeleid doet wat we zouden verwachten:
 1. Ga naar de tab **[!UICONTROL Browse]**
 1. Wijzig de **[!UICONTROL Merge policy]** in uw nieuwe `Loyalty Prioritized` -beleid
 1. Als **[!UICONTROL Identity namespace]** gebruikt u uw `Luma CRM Id`
-1. Als **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Als **[!UICONTROL Identity value]** use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Selecteer de knop **[!UICONTROL Show profile]**
 1. `Daniel` is terug!
 
@@ -110,7 +110,7 @@ Laten we nu eens kijken wat dit samenvoegbeleid doet:
 1. Ga naar de tab **[!UICONTROL Browse]**
 1. Wijzig de **[!UICONTROL Merge policy]** in uw nieuwe `Loyalty Only` -beleid
 1. Als **[!UICONTROL Identity namespace]** gebruikt u uw `Luma CRM Id`
-1. Als **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Als **[!UICONTROL Identity value]** use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Selecteer de knop **[!UICONTROL Show profile]**
 1. Bevestig dat er geen profielen zijn gevonden:
    ![ Loyalty slechts geen raadpleging van identiteitskaart van CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Bijvoorbeeld, zeg 
 
 ## Aanvullende bronnen
 
-* [ documentatie van het Beleid van de Fusie ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=nl-NL)
+* [ documentatie van het Beleid van de Fusie ](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [ het Beleid van de Fusie API (deel van Realtime API van het Profiel van de Klant) verwijzing ](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Nu gaan op het [ kader van het gegevensbeheer ](apply-data-governance-framework.md).
