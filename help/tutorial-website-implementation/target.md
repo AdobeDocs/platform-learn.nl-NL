@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Adobe Target toevoegen
 
-In deze les, zullen wij de [ uitbreiding van Adobe Target ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) met een verzoek van de paginading en douaneparameters uitvoeren.
+In deze les, zullen wij de [ uitbreiding van Adobe Target ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=nl-NL) met een verzoek van de paginading en douaneparameters uitvoeren.
 
-[ Adobe Target ](https://experienceleague.adobe.com/docs/target/using/target-home.html) is de oplossing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, sociale media, en andere digitale kanalen maximaliseren.
+[ Adobe Target ](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL) is de oplossing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, sociale media, en andere digitale kanalen maximaliseren.
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ Laad de voorbeeldpagina opnieuw. De pagina wordt drie seconden verborgen voordat
 * `body {opacity: 0 !important}` geeft de css-definitie aan die moet worden gebruikt voor het vooraf verbergen totdat Doel wordt geladen. Standaard wordt het gehele lichaam verborgen. Als u een verenigbare DOM structuur met een gemakkelijk identificeerbaar containerelement hebt dat alle inhoud onder uw navigatie verpakt, bijvoorbeeld, en u nooit uw navigatie wilde testen of personaliseren, kon u dit plaatsen gebruiken om het pre-verbergen tot dat containerelement te beperken.
 * `3000` die de time-out-instelling voor het voorverbergen opgeeft. Als Doel niet in drie seconden is geladen, wordt de pagina standaard weergegeven. Dit zou zeer zeldzaam moeten zijn.
 
-Voor meer details en om het niet-geminiatuurde pre-verbergende fragment te verkrijgen, te zien gelieve [ de uitbreiding van Adobe Target met een asynchrone plaatsing &#x200B; ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
+Voor meer details en om het niet-geminiatuurde pre-verbergende fragment te verkrijgen, te zien gelieve [ de uitbreiding van Adobe Target met een asynchrone plaatsing &#x200B; ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=nl-NL#adobe-target-extension-with-an-asynchronous-deployment).
 
 ## De doelextensie toevoegen
 
-De Adobe Target-extensie ondersteunt client-side implementaties met behulp van de JavaScript SDK van Target voor het moderne web, at.js. De klanten nog die de oudere bibliotheek van het Doel, mbox.js gebruiken, [ zouden aan at.js 2.x ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) moeten bevorderen om markeringen te gebruiken.
+De Adobe Target-extensie ondersteunt client-side implementaties met behulp van de JavaScript SDK van Target voor het moderne web, at.js. De klanten nog die de oudere bibliotheek van het Doel, mbox.js gebruiken, [ zouden aan at.js 2.x ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=nl-NL) moeten bevorderen om markeringen te gebruiken.
 
 De extensie Doel v2 bestaat uit twee hoofdonderdelen:
 
@@ -208,9 +208,9 @@ Gefeliciteerd! U hebt Target geïmplementeerd!
 
 Het overgaan van parameters in het verzoek van het Doel voegt krachtige mogelijkheden aan uw het richten, het testen, en verpersoonlijkingsactiviteiten toe. De tagextensie biedt twee acties om parameters door te geven:
 
-1. `Add Params to Page Load Request`, die parameters aan de verzoeken van de paginading toevoegt (gelijkwaardig aan [ targetPageParams () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) methode)
+1. `Add Params to Page Load Request`, die parameters aan de verzoeken van de paginading toevoegt (gelijkwaardig aan [ targetPageParams () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=nl-NL) methode)
 
-1. `Add Params to All Requests`, die parameters in alle verzoeken van het Doel toevoegt, bijvoorbeeld het verzoek van de paginalading plus extra verzoeken die van de acties van de Code van de Douane worden gemaakt of op uw plaats (gelijkwaardig aan [ targetPageParamsAll () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) methode) worden gehard
+1. `Add Params to All Requests`, die parameters in alle verzoeken van het Doel toevoegt, bijvoorbeeld het verzoek van de paginalading plus extra verzoeken die van de acties van de Code van de Douane worden gemaakt of op uw plaats (gelijkwaardig aan [ targetPageParamsAll () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=nl-NL) methode) worden gehard
 
 Deze acties kunnen *vóór* de `Load Target` actie worden gebruikt en kunnen verschillende parameters op verschillende pagina&#39;s plaatsen die op uw regelconfiguraties worden gebaseerd. Gebruik de functie voor het ordenen van regels die u hebt gebruikt bij het instellen van id&#39;s van klanten met de identiteitsservice om aanvullende parameters in te stellen voor de gebeurtenis `Library Loaded` voordat de regel wordt geactiveerd die de aanvraag voor het laden van de pagina afvaagt.
 >[!TIP]
@@ -277,7 +277,7 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 
 ### Profielparameters
 
-Net als bij aanvraagparameters worden profielparameters ook doorgegeven via de aanvraag Doel. Nochtans, worden de profielparameters opgeslagen in het gegevensbestand van het de bezoekersprofiel van het Doel en zullen voor de [ duur van het profiel van de bezoeker ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) blijven. U kunt ze instellen op de ene pagina van uw site en ze gebruiken in doelactiviteiten op een andere pagina. Hier is een voorbeeld van een automobielwebsite. Wanneer een bezoeker naar een pagina met voertuigen gaat, kunt u een profielparameter &quot;profile.lastViewed=sportscar&quot; doorgeven om de interesse van de bezoeker in dat voertuig te registreren. Wanneer de bezoeker naar andere, niet-voertuigpagina&#39;s bladert, kunt u inhoud als doel instellen op basis van het laatst bekeken voertuig.  Profielparameters zijn ideaal voor kenmerken die zelden worden gewijzigd of die alleen beschikbaar zijn op bepaalde pagina&#39;s
+Net als bij aanvraagparameters worden profielparameters ook doorgegeven via de aanvraag Doel. Nochtans, worden de profielparameters opgeslagen in het gegevensbestand van het de bezoekersprofiel van het Doel en zullen voor de [ duur van het profiel van de bezoeker ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=nl-NL) blijven. U kunt ze instellen op de ene pagina van uw site en ze gebruiken in doelactiviteiten op een andere pagina. Hier is een voorbeeld van een automobielwebsite. Wanneer een bezoeker naar een pagina met voertuigen gaat, kunt u een profielparameter &quot;profile.lastViewed=sportscar&quot; doorgeven om de interesse van de bezoeker in dat voertuig te registreren. Wanneer de bezoeker naar andere, niet-voertuigpagina&#39;s bladert, kunt u inhoud als doel instellen op basis van het laatst bekeken voertuig.  Profielparameters zijn ideaal voor kenmerken die zelden worden gewijzigd of die alleen beschikbaar zijn op bepaalde pagina&#39;s
 
 In deze zelfstudie zult u geen profielparameters doorgeven, maar de workflow is bijna gelijk aan wat u zojuist hebt gedaan bij het doorgeven van de parameter `pageName` . Het enige verschil is dat u parameternamen voor profielen een voorvoegsel `profile.` moet geven. Zo ziet een profielparameter met de naam &quot;userType&quot; eruit in de handeling `Add Params to Page Load Request` :
 
@@ -285,7 +285,7 @@ In deze zelfstudie zult u geen profielparameters doorgeven, maar de workflow is 
 
 ### Entiteitsparameters
 
-De parameters van de entiteit zijn speciale parameters die in [ implementaties van Aanbevelingen ](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html) voor drie belangrijkste redenen worden gebruikt:
+De parameters van de entiteit zijn speciale parameters die in [ implementaties van Aanbevelingen ](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=nl-NL) voor drie belangrijkste redenen worden gebruikt:
 
 1. Als sleutel om productaanbevelingen teweeg te brengen. Als u bijvoorbeeld een aanbevolen algoritme gebruikt, zoals &quot;Mensen die Product X bekeken, ook Y bekeken,&quot;, is &quot;X&quot; de &quot;sleutel&quot; van de aanbeveling. Meestal is het de productsku (`entity.id`) of categorie (`entity.categoryId`) die de bezoeker momenteel bekijkt.
 1. Om het gedrag van de bezoeker aan machtsaanbevelingen algoritmen, zoals &quot;Onlangs Bekeken Producten&quot;of &quot;Meest Bekeken Producten te verzamelen
@@ -297,7 +297,7 @@ U hoeft geen entiteitsparameters in deze zelfstudie door te geven, maar de workf
 
 ### Parameters van klant-id toevoegen
 
-De inzameling van klantenidentiteitskaart met de Dienst van de Identiteit van Adobe Experience Platform maakt het gemakkelijk om de gegevens van CRM in Doel in te voeren gebruikend de [ eigenschap van de Attributen van de Klant ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) van Adobe Experience Cloud. Het laat ook [ dwars-apparatenbezoeker toe die ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html) stitching, u toestaat om een verenigbare gebruikerservaring te handhaven aangezien uw klanten tussen hun laptops en hun mobiele apparaten schakelen.
+De inzameling van klantenidentiteitskaart met de Dienst van de Identiteit van Adobe Experience Platform maakt het gemakkelijk om de gegevens van CRM in Doel in te voeren gebruikend de [ eigenschap van de Attributen van de Klant ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=nl-NL) van Adobe Experience Cloud. Het laat ook [ dwars-apparatenbezoeker toe die ](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=nl-NL) stitching, u toestaat om een verenigbare gebruikerservaring te handhaven aangezien uw klanten tussen hun laptops en hun mobiele apparaten schakelen.
 
 Het is absoluut noodzakelijk om de klant-id in te stellen in de actie `Set Customer IDs` van de identiteitsservice voordat de aanvraag voor het laden van de pagina wordt geactiveerd. Zorg er daarom voor dat u de volgende mogelijkheden op uw site hebt:
 
@@ -334,7 +334,7 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=nl-NL):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -349,7 +349,7 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 >
 >Dit is een optionele oefening voor Target Premium-klanten.
 
-Het bezitstoken is een gereserveerde parameter die met de 1&rbrace; eigenschap van de Toestemmingen van de Gebruiker van de Onderneming van Target Premium [ wordt gebruikt. ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) Het wordt gebruikt om verschillende digitale eigenschappen te bepalen zodat de verschillende leden van een Experience Cloud Organisatie verschillende toestemmingen op elk bezit kunnen worden toegewezen. U wilt bijvoorbeeld dat één groep gebruikers doelactiviteiten kan instellen op uw website, maar niet in uw mobiele toepassing.
+Het bezitstoken is een gereserveerde parameter die met de 1&rbrace; eigenschap van de Toestemmingen van de Gebruiker van de Onderneming van Target Premium [ wordt gebruikt. ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=nl-NL) Het wordt gebruikt om verschillende digitale eigenschappen te bepalen zodat de verschillende leden van een Experience Cloud Organisatie verschillende toestemmingen op elk bezit kunnen worden toegewezen. U wilt bijvoorbeeld dat één groep gebruikers doelactiviteiten kan instellen op uw website, maar niet in uw mobiele toepassing.
 
 De eigenschappen van het doel zijn analoog aan etiketeigenschappen en de rapportreeksen van Analytics. Een onderneming met meerdere merken, websites en marketingteams kan voor elke website of mobiele app een andere doeleigenschap, tag-eigenschap en analytische rapportsuite gebruiken. De eigenschappen van markeringen worden onderscheiden door hun insluitcodes, de rapportreeksen van Analytics worden onderscheiden door hun identiteitskaart van de rapportreeks, en de eigenschappen van het Doel worden verschillend door hun bezit symbolische parameter.
 
@@ -430,7 +430,7 @@ Het verzoek om bevestiging van de bestelling is een speciaal type verzoek dat wo
 
 De beste praktijk is om een verzoek tot bevestiging van de bestelling in alle orderkanalen, zelfs op niet-detailhandelslocaties, te gebruiken. De plaatsen van de loodgeneratie hebben bijvoorbeeld gewoonlijk loodtrechters met een unieke &quot;loodidentiteitskaart&quot;die aan het eind wordt geproduceerd. Deze plaatsen zouden een ordeverzoek moeten uitvoeren, gebruikend een statische waarde (b.v. &quot;1&quot;) voor orderTotal.
 
-Klanten die de integratie Analytics for Target (A4T) voor het grootste deel van hun rapportage gebruiken, willen mogelijk ook het orderverzoek implementeren als ze Automated Personalization-activiteiten gebruiken, die geen A4T ondersteunen. Bovendien, is het ordeverzoek een kritiek element in de implementaties van Aanbevelingen, die algoritmen aandrijven die op aankoopgedrag worden gebaseerd. Voor de recentste informatie over steun A4T, te zien gelieve [ de documentatie ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+Klanten die de integratie Analytics for Target (A4T) voor het grootste deel van hun rapportage gebruiken, willen mogelijk ook het orderverzoek implementeren als ze Automated Personalization-activiteiten gebruiken, die geen A4T ondersteunen. Bovendien, is het ordeverzoek een kritiek element in de implementaties van Aanbevelingen, die algoritmen aandrijven die op aankoopgedrag worden gebaseerd. Voor de recentste informatie over steun A4T, te zien gelieve [ de documentatie ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL#section_F487896214BF4803AF78C552EF1669AA).
 
 Het verzoek om bevestiging van de bestelling moet worden uitgevoerd vanuit een regel die alleen wordt geactiveerd op de pagina of gebeurtenis waarin uw bestelling wordt bevestigd. Vaak kan dit worden gecombineerd met een regel die de Adobe Analytics-aankoopgebeurtenis instelt. Het moet worden gevormd gebruikend de actie van de Code van de Douane van de uitbreiding van de Kern, gebruikend de aangewezen gegevenselementen om ordeId, orderTotal, en productPurchasedId parameters te plaatsen.
 
@@ -564,12 +564,12 @@ Voor het tijd-zijn, zijn de douaneparameters die met at.js 2.x- verzoeken worden
 
 Er zijn zeldzame gevallen waarin u een ander doelverzoek moet indienen dan het verzoek om pagina te laden en de bestelling te bevestigen. Soms worden bijvoorbeeld belangrijke gegevens die u voor personalisatie wilt gebruiken, niet op de pagina gedefinieerd vóór de insluitcodes van de tag. Deze kunnen onderaan op de pagina worden gecodeerd of worden geretourneerd door een asynchrone API-aanvraag. Deze gegevens kunnen naar Target worden verzonden met behulp van een extra aanvraag, maar het is niet optimaal om deze aanvraag voor de levering van inhoud te gebruiken omdat de pagina al zichtbaar is. Deze gegevens kunnen worden gebruikt om het bezoekersprofiel te verrijken voor later gebruik (met behulp van profielparameters) of om de catalogus met aanbevelingen te vullen.
 
-In deze omstandigheden, gebruik de actie van de Code van de Douane in de uitbreiding van de Kern om een verzoek in werking te stellen gebruikend [ getOffer () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html) [ applyOffer () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) en [ trackEvent () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) methodes. Dit is zeer gelijkaardig aan wat u enkel in het [ verzoek van de Bevestiging van de Orde ](#order-confirmation-request) oefening deed, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Gebruik de handeling **[!UICONTROL Load Target]** voordat u Target-aanvragen uitvoert vanuit aangepaste code.
+In deze omstandigheden, gebruik de actie van de Code van de Douane in de uitbreiding van de Kern om een verzoek in werking te stellen gebruikend [ getOffer () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=nl-NL) [ applyOffer () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=nl-NL) en [ trackEvent () ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=nl-NL) methodes. Dit is zeer gelijkaardig aan wat u enkel in het [ verzoek van de Bevestiging van de Orde ](#order-confirmation-request) oefening deed, maar u zult enkel een verschillende verzoeknaam gebruiken en zult niet de speciale orde parameters gebruiken. Gebruik de handeling **[!UICONTROL Load Target]** voordat u Target-aanvragen uitvoert vanuit aangepaste code.
 
 ## Bibliotheekkoptekst en Bibliotheekvoettekst
 
 Het scherm Edit at.js in het Doel gebruikersinterface heeft plaatsen waarin u douane JavaScript kunt kleven die onmiddellijk voor of na het at.js- dossier zal uitvoeren. De bibliotheekkoptekst wordt soms gebruikt om de instellingen van at.js te overschrijven via het dialoogvenster
-[ targetGlobalSettings () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) functie of pas gegevens van derden over gebruikend de [ 3&rbrace; eigenschap van de Leveranciers van Gegevens &lbrace;. ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) De Voettekst van de Bibliotheek wordt soms gebruikt om [ at.js de luisteraars van de douanegebeurtenis ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) toe te voegen.
+[ targetGlobalSettings () ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=nl-NL) functie of pas gegevens van derden over gebruikend de [ 3&rbrace; eigenschap van de Leveranciers van Gegevens &lbrace;. ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=nl-NL) De Voettekst van de Bibliotheek wordt soms gebruikt om [ at.js de luisteraars van de douanegebeurtenis ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=nl-NL) toe te voegen.
 
 Als u deze mogelijkheid in tags wilt repliceren, gebruikt u gewoon de handeling Aangepaste code in de Core-extensie en voert u de handeling voor (bibliotheekkoptekst) of na (Bibliotheekvoettekst) de handeling Doel laden uit. Dit kan worden gedaan in dezelfde regel als de `Load Target` -actie (zoals hieronder wordt afgebeeld) of in afzonderlijke regels met gebeurtenissen of orderinstellingen die op betrouwbare wijze worden geactiveerd voor of na de regel die `Load Target` bevat:
 
@@ -577,8 +577,8 @@ Als u deze mogelijkheid in tags wilt repliceren, gebruikt u gewoon de handeling 
 
 Zie de volgende bronnen voor meer informatie over de gebruiksgevallen voor aangepaste kop- en voetteksten:
 
-* [ DataProviders van het Gebruik om derdegegevens in Adobe Target ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) te integreren
-* [ voert dataProviders uit om derdegegevens in Adobe Target te integreren ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
-* [ Tokens van de Reactie van het Gebruik en de Gebeurtenissen van de Douane bij.js met Adobe Target ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
+* [ DataProviders van het Gebruik om derdegegevens in Adobe Target ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=nl-NL) te integreren
+* [ voert dataProviders uit om derdegegevens in Adobe Target te integreren ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=nl-NL)
+* [ Tokens van de Reactie van het Gebruik en de Gebeurtenissen van de Douane bij.js met Adobe Target ](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=nl-NL)
 
 [Volgende &quot;Adobe Analytics toevoegen&quot; >](analytics.md)

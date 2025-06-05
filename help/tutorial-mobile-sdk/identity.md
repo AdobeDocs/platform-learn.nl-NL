@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl-NL) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=nl-NL) voor meer informatie over identiteitsgrafieken.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode Project navigator en voeg de volgende code toe aan de `func removeIdentities(emailAddress: String, crmId: String)` functie:
 
