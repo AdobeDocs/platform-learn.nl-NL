@@ -147,6 +147,6 @@ Op dit moment is de klant-id een van de weinige parameters die niet worden weerg
    1. id - De waarde voor de klant-id die afkomstig is uit het gegevenselement `Email (Hashed)`
    1. as - De authentificatiestatus, met &quot;1&quot;betekent het programma geopend
 
-   {de Bevestiging van identiteitskaart van de Klant van 0} Analytics ](images/integrations-analyticsCustomerIDValidation.png)![
+   {de Bevestiging van identiteitskaart van de Klant van 0} Analytics ![&#128279;](images/integrations-analyticsCustomerIDValidation.png)
 
 [Volgende &quot;Publiceer uw Bezit&quot; >](publish.md)

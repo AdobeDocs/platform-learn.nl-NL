@@ -90,13 +90,14 @@ De uitbreiding van de Dienst van de Identiteit is één van de weinige marktexte
    1. `Cookies` aan de linkerkant uitvouwen
    1. Klik op het domein `https://luma.enablementadobe.com`
    1. Zoek naar het AMCV_ cookie aan de rechterkant. U ziet mogelijk verschillende keren dat de Luma-site is geladen met zowel de eigenschap hardcoded tag als de eigen eigenschap.
+
       ![ verifieer AMCV_cookie ](images/idservice-AMCVCookie.png)
 
 Dat is het! U hebt de eerste extensie toegevoegd! Voor meer details over de configuratieopties van de Dienst van de Identiteit, zie [ de documentatie ](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Klant-id&#39;s verzenden
 
-Daarna, zult u identiteitskaart van de a [ Klant ](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) naar de Dienst van de Identiteit verzenden. Dit zal u toestaan om uw CRM ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) met Experience Cloud evenals spoorbezoekers over apparaten te integreren.[
+Daarna, zult u identiteitskaart van de a [ Klant ](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) naar de Dienst van de Identiteit verzenden. Dit zal u toestaan om uw CRM [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) met Experience Cloud evenals spoorbezoekers over apparaten te integreren.
 
 In de vroegere les, [ voegt de Elementen van Gegevens, Regels, en Bibliotheken ](add-data-elements-rules.md) toe u een gegevenselement creeerde en het in een regel gebruikte. Nu gebruikt u dezelfde technieken om een klant-id te verzenden wanneer de bezoeker is geverifieerd.
 

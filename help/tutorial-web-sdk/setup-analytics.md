@@ -43,7 +43,7 @@ Om deze les te voltooien, moet u eerst:
 
 Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw datastream geeft vervolgens aan Platform Edge Network door aan welke Adobe Analytics-rapportages uw gegevens moeten worden verzonden.
 
-1. Ga naar ](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0} Gegevens[
+1. Ga naar [&#128279;](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0&rbrace; Gegevens
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
@@ -106,8 +106,8 @@ De afzonderlijke secties van de producttekenreeks Analytics worden ingesteld via
 >[!NOTE]
 >
 >Vanaf 18 augustus 2022 heeft `productListItems[].SKU` prioriteit voor het toewijzen aan de productnaam in de variabele s.products.
->>De waarde die is ingesteld op `productListItems[].name` , wordt alleen aan de productnaam toegewezen als `productListItems[].SKU` niet bestaat. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
->>Stel geen lege tekenreeks of null in op `productListItems[].SKU` . Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
+>&#x200B;>De waarde die is ingesteld op `productListItems[].name` , wordt alleen aan de productnaam toegewezen als `productListItems[].SKU` niet bestaat. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
+>&#x200B;>Stel geen lege tekenreeks of null in op `productListItems[].SKU` . Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
 
 
 ### Variabelen instellen in het gegevensobject
@@ -392,7 +392,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
    > De `ecommerce - pdp library loaded - AA (order 20)` -regel overschrijft de waarde van `eventType` ingesteld door de `all pages global content variables - library loaded - AA (order 1)` -regel wanneer deze is ingesteld om later in de reeks te worden geactiveerd
 
 
-   {de Mening van het Product van 0} Analytics ](assets/analytics-debugger-prodView.png)![
+   {de Mening van het Product van 0} Analytics ![&#128279;](assets/analytics-debugger-prodView.png)
 
 **bevestigt de rest e-commercegebeurtenissen en productkoorden worden geplaatst voor Analytics**
 
@@ -457,7 +457,7 @@ Omlaag schuiven naar **[!UICONTROL pageName]** om te controleren of de `Page Nam
 Volg dezelfde validatiegebruikscase die bij het valideren met de bovenstaande Experience Platform-foutopsporing wordt gebruikt, en ga verder met het gebruik van hetzelfde baken om de instructies `Ecommerce Events` en `Product String` te valideren.
 
 1. Zoeken naar lading waar de **[!UICONTROL events]** `prodView` bevat
-   {de bevestiging van het Koord van het 0} Product met Assurance ](assets/assurance-hitdebugger-prodView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-prodView-event.png)
 1. Schuif omlaag naar **[!UICONTROL product-string]** om de `Product String` te valideren.
    * Noteer `Product SKU` en `Merchandizing eVar1` .
 1. Schuif verder omlaag en valideer dat `prop1` , dat u hebt geconfigureerd met de verwerkingsregels in de vorige sectie, de eigenschap `Product SKU` bevat\
@@ -466,11 +466,11 @@ Volg dezelfde validatiegebruikscase die bij het valideren met de bovenstaande Ex
 Ga door met het valideren van uw implementatie door de gebeurtenissen voor winkelwagentjes, kassa&#39;s en aankopen te controleren.
 
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scView` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Assurance ](assets/assurance-hitdebugger-scView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scCheckout` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Assurance ](assets/assurance-hitdebugger-scView-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
 1. Zoeken naar lading waar de **[!UICONTROL events]** `purchase` bevat
-   {de bevestiging van het Koord van het 0} Product met Assurance ](assets/assurance-hitdebugger-purchase-event.png)![
+   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-purchase-event.png)
 1. Wanneer u de `purchase` -gebeurtenis valideert, moet de `Product String` de `Product SKU` , `Product Quantity` en `Product Total Price` bevatten.
 1. Voor de `purchase` validate bovendien of `purchase-id` and/or `purchaseId` is ingesteld
 

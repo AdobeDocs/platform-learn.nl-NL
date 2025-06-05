@@ -348,7 +348,7 @@ Nu zullen wij onze paginanaam aan het Web SDK in kaart brengen.
 >[!IMPORTANT]
 >
 >Om deze taak te voltooien, moeten wij ervoor zorgen dat uw gebruiker eerst toegang tot de zandbak van de Prod heeft. Als u nog geen toegang hebt tot de prod-sandbox vanuit een ander productprofiel, opent u snel het `Luma Tutorial Platform` -profiel en voegt u het machtigingsitem **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** toe. Voer vervolgens een SHIFT-Opnieuw laden op de pagina Data Elements uit om de cache te wissen
->>![De sandbox Prod toevoegen ](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![De sandbox Prod toevoegen ](assets/websdk-property-permissionToLoadSchema.png)
 
 Op de pagina **[!UICONTROL Data Elements]** :
 

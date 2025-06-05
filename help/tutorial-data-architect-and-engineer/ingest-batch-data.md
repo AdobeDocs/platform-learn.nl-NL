@@ -54,7 +54,7 @@ Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 
 >[!NOTE]
 >
->De gegevens in het {](assets/luma-data.zip) dossier 0} luma-data.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.[
+>De gegevens in het {[&#128279;](assets/luma-data.zip) dossier 0} luma-data.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.
 
 1. De download [ luma-data.zip ](assets/luma-data.zip) aan uw **omslag van het Luminantiemateriaal van Assets**.
 1. Pak het bestand uit en maak een map met de naam `luma-data` die de vier gegevensbestanden bevat die we in deze les gebruiken

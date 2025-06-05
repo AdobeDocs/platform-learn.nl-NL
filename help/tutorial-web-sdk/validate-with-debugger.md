@@ -127,7 +127,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
 Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel (het veronderstellen van de website laadt uw markeringsbibliotheek).
 
-1. Open het 1} lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen {en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
+1. Open het 1&rbrace; lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen &lbrace;en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
 
    ![ lusje van het Netwerk ](assets/validate-dev-console.png)
 
