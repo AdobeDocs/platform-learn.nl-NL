@@ -67,7 +67,7 @@ Dan moet je dit zien.
 >
 >Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Photoshop Services API. U zult slechts toegang tot Photoshop Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
 >
-Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
+>Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
 ![ Azure Opslag ](./images/ps2.png)
 

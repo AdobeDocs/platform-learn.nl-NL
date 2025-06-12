@@ -59,7 +59,7 @@ Dan moet je dit zien. Klik **adres van het Exemplaar aan klembord**.
 
 ## 1.2.6.2 Webhaak configureren in Frame.io
 
-Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Daarna, verzendt de klik **** om een nieuw **access_token** te verzoeken.
+Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Daarna, verzendt de klik **&#x200B;**&#x200B;om een nieuw **access_token** te verzoeken.
 
 ![ Kader IO ](./images/frameV4api2.png)
 
@@ -159,7 +159,7 @@ Ga terug naar de Fusie van Workfront en klik de bel op **Frame.io - maak een dou
 
 ![ Kader IO ](./images/aemf25.png)
 
-Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **** wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0} tussen de modules** Douane webhaak **en** Frame.io - maak een douane API vraag **en selecteer dan** Opstelling een filter **.**
+Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **&#x200B;**&#x200B;wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0&rbrace; tussen de modules** Douane webhaak **en** Frame.io - maak een douane API vraag **en selecteer dan** Opstelling een filter **.**
 
 ![ Kader IO ](./images/aemf25a.png)
 

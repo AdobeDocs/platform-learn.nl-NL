@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md){target="_blank"} te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
+>Als u geen werknemer van Adobe bent, volg de instructies om Postman [&#128279;](./ex7.md){target="_blank"} te installeren 0&rbrace;.  De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
 
 ## PostBuster installeren
 

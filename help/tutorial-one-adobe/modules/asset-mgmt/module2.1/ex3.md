@@ -163,7 +163,7 @@ Selecteer het pakket en klik **Open**.
 
 ![ AEMCS ](./images/aemcssetup24.png){zoomable="yes"}
 
-Daarna, klik O.K. ****.
+Daarna, klik O.K. **&#x200B;**.
 
 ![ AEMCS ](./images/aemcssetup25.png){zoomable="yes"}
 
