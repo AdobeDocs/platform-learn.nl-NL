@@ -3,9 +3,9 @@ title: Voltooiing - Eén zelfstudie voor Adobe
 description: Hoe wordt de voltooiing gemeten?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ De id van het project Demo System for web format ziet er als volgt uit: `--aepUs
 
 ## 1.1 Adobe Firefly Services
 
-Het verwachte bewijs van voltooiing voor module **de Diensten van Adobe Firefly** is **URL** van het dossier van PSD dat aan het eind van oefening 1.1.3 werd geproduceerd, na het gaan door de stap **Photoshop API - de Tekst van de Verandering**.
+Het verwachte bewijs van voltooiing voor module **Adobe Firefly Services** is **URL** van het dossier van PSD dat aan het eind van oefening 1.1.3 werd geproduceerd, na het gaan door de stap **Photoshop API - de Tekst van de Verandering**.
 
 De URL ziet er als volgt uit: `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
 ![ 3 ](./assets/images/ps24.png){zoomable="yes"}
 
-## 1.2 Creative Workflow Automation met Workfront Fusion
+## 1.2 Creative Workflow Automatiseren met Workfront Fusion
 
-Het verwachte bewijs van voltooiing voor module **Creatieve Automatisering van het Werkschema met de Fusie van Workfront** is **URL** van de webhaak die oefening 1.2.3 werd gecreeerd, na het gaan door de stap **activeer uw scenario gebruikend een webhaak**.
+Het verwachte bewijs van voltooiing voor module **de Automatisering van het Werkschema van Creative met de Fusie van Workfront** is **URL** van de webhaak die oefening 1.2.3 werd gecreeerd, na het gaan door de stap **activeer uw scenario gebruikend een webhaak**.
 
 De URL ziet er als volgt uit: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
@@ -47,13 +47,13 @@ De URL ziet er als volgt uit: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqhe
 
 Het verwachte bewijs van voltooiing voor module **Adobe Experience Manager Cloud Service &amp; Edge Delivery Services** is **URL** van de website die werd gecreeerd.
 
-De URL ziet er als volgt uit: `https://main--citisignal--xxx.aem.page/us/en`.
+De URL ziet er als volgt uit: `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![ 3 ](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Workflowbeheer met Adobe Workfront
 
-Het verwachte bewijs van voltooiing voor module **het Beheer van het Werkschema met Adobe Workfront** is **URL** van het beeld dat als deel van oefening **2.2.2.5 werd geupload Bekijk uw dossier in AEM Assets**.
+Het verwachte bewijs van voltooiing voor module **het Beheer van het Werkschema met Adobe Workfront** is **URL** van het beeld dat aan AEM Assets als deel van oefening **2.2.2.5werd geupload Mening uw dossier in AEM Assets**.
 
 Om URL te krijgen, klik **Verbinding van het Aandeel** op het geuploade beeld in AEM Assets.
 

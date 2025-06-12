@@ -4,9 +4,9 @@ description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In deze oefening, wordt Adobe I/O gebruikt om diverse eindpunten van Adobe te vr
 
 Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"}.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png)
 
 Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` .
 
@@ -29,7 +29,7 @@ Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instanti
 
 Daarna, uitgezochte **creeer nieuw project**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png)
 
 ### FIREFLY SERVICES API
 
@@ -39,45 +39,45 @@ Daarna, uitgezochte **creeer nieuw project**.
 
 Dan moet je dit zien. Selecteer **+ toevoegen aan Project** en kies **API**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png)
 
 Het scherm moet er zo uitzien.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png)
 
 Selecteer **Creative Cloud** en kies **Firefly - Firefly Services**, dan selecteer **daarna**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png)
 
 Verstrek een naam voor uw referentie: `--aepUserLdap-- - One Adobe OAuth credential` en selecteer **daarna**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png)
 
 Selecteer de standaardprofiel **StandaardConfiguratie van Firefly Services** en selecteer **sparen Gevormde API**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png)
 
 Dan moet je dit zien.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api10.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api10.png)
 
 ### PHOTOSHOP SERVICES API
 
 >[!IMPORTANT]
 >
 >Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Photoshop Services API. U zult slechts toegang tot Photoshop Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
-
+>
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
-![ Azure Opslag ](./images/ps2.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps2.png)
 
 Selecteer **Creative Cloud** en kies **Photoshop - Firefly Services**. Selecteer **daarna**.
 
-![ Azure Opslag ](./images/ps3.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps3.png)
 
 Selecteer **daarna**.
 
-![ Azure Opslag ](./images/ps4.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps4.png)
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -85,11 +85,11 @@ Selecteer **de Configuratie van de StandaardFirefly Services** en **configuratie
 
 Selecteer **sparen gevormde API**.
 
-![ Azure Opslag ](./images/ps5.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps5.png)
 
 Dan moet je dit zien.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/ps7.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/ps7.png)
 
 ### ADOBE EXPERIENCE PLATFORM API
 
@@ -99,15 +99,15 @@ Dan moet je dit zien.
 
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
-![ Azure Opslag ](./images/aep1.png){zoomable="yes"}
+![ Azure Opslag ](./images/aep1.png)
 
 Selecteer **Platform van de Ervaring van Adobe** en kies **Experience Platform API**. Selecteer **daarna**.
 
-![ Azure Opslag ](./images/aep2.png){zoomable="yes"}
+![ Azure Opslag ](./images/aep2.png)
 
 Selecteer **daarna**.
 
-![ Azure Opslag ](./images/aep3.png){zoomable="yes"}
+![ Azure Opslag ](./images/aep3.png)
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -119,11 +119,43 @@ Selecteer **Adobe Experience Platform - Alle Gebruikers - PROD**.
 
 Selecteer **sparen gevormde API**.
 
-![ Azure Opslag ](./images/aep4.png){zoomable="yes"}
+![ Azure Opslag ](./images/aep4.png)
 
 Dan moet je dit zien.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/aep5.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/aep5.png)
+
+### Frame.io-API
+
+>[!IMPORTANT]
+>
+>Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot Frame.io-API. U zult slechts toegang tot Frame.io API hebben als u op de het leren weg **Fusion van Workfront**, **ALLES** bent, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
+
+Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
+
+![ Azure Opslag ](./images/fiops2.png)
+
+Selecteer **Creative Cloud** en kies **Frame.io API**. Selecteer **daarna**.
+
+![ Azure Opslag ](./images/fiops3.png)
+
+Selecteer **Server-aan-Server Authentificatie** en klik dan **daarna**.
+
+![ Azure Opslag ](./images/fiops4.png)
+
+Selecteer **Server-aan-Server** en klik dan **daarna**.
+
+![ Azure Opslag ](./images/fiops5.png)
+
+Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
+
+Selecteer **StandaardOnderneming Frame.io - de Configuratie van Prime** en klik **sparen gevormde API**.
+
+![ Azure Opslag ](./images/fiops6.png)
+
+Dan moet je dit zien.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/fiops7.png)
 
 ### Projectnaam
 

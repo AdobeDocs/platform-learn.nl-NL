@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Selecteer **+ creëren**.
 
 ![ Azure Opslag ](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
@@ -233,7 +233,7 @@ Na het ontvangen van uw **Gedeelde Ondertekening van de Toegang**, uitgezochte *
 
 ![ Azure Opslag ](./images/az29.png){zoomable="yes"}
 
-Gebruik **SAS-teken** om een dossier in uw Azure Rekening van de Opslag te uploaden.
+Gebruik **SAS-token URL** om een dossier in uw Azure Rekening van de Opslag te uploaden.
 
 Terug in Postman, selecteer de omslag **FF - de Tech Insiders van Firefly Services**, dan uitgezocht **..** op de **Firefly** omslag, en selecteer dan **verzoek** toevoegen.
 
@@ -345,7 +345,7 @@ Selecteer **creeer**.
 
 ![ Azure Opslag ](./images/az102.png){zoomable="yes"}
 
-Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token voor de lange termijn met leesmachtigingen op te halen.
+Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token op lange termijn met lees- en schrijfmachtigingen op te halen.
 
 ![ Azure Opslag ](./images/az103.png){zoomable="yes"}
 

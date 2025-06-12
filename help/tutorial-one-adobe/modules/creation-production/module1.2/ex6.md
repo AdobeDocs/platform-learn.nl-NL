@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -59,35 +59,27 @@ Dan moet je dit zien. Klik **adres van het Exemplaar aan klembord**.
 
 ## 1.2.6.2 Webhaak configureren in Frame.io
 
-Ga naar [ https://developer.frame.io/ ](https://developer.frame.io/){target="_blank"}. Klik **TOOLS VAN DE ONTWIKKELAAR** en kies dan **Webhooks**.
+Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Daarna, verzendt de klik **** om een nieuw **access_token** te verzoeken.
 
-![ Kader IO ](./images/aemf7.png)
+![ Kader IO ](./images/frameV4api2.png)
 
-Klik **creeer een Webhaak**.
+In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **POST - creeer Webhaak** in de inzameling **Frame.io V4 - de Instanties van de Tech**, in de omslag **Webhooks**.
 
-![ Kader IO ](./images/aemf8.png)
+Ga naar het **Lichaam** van het verzoek. Verander het gebied **naam** aan `--aepUserLdap--  - Fusion to AEM Assets` en verander dan het gebied **url** in de waarde van Webhaak URL u van de Fusie van Workfront kopieerde.
 
-Voer de volgende waarden in:
+Klik **verzenden**.
 
-- **NAAM**: gebruik `--aepUserLdap-- - Asset Labels Updated`
-- **URL**: ga URL van de webhaak in die u enkel in de Fusie van Workfront creeerde
-- **TEAM**: selecteer het aangewezen team Frame.io, in dit geval, **Één Leerprogramma van Adobe**.
+![ Kader IO ](./images/framewh1.png)
 
-![ Kader IO ](./images/aemf9.png)
+Uw aangepaste actie Frame.io V4 is nu gemaakt.
 
-De rol neer en laat checkbox naast **Etiketten van Activa toe - bijgewerkt**. Klik **voorleggen**.
+![ Kader IO ](./images/framewh2.png)
 
-![ Kader IO ](./images/aemf10.png)
-
-Dan moet je dit zien.
-
-![ Kader IO ](./images/aemf11.png)
-
-Ga naar [ https://app.frame.io/projects ](https://app.frame.io/projects){target="_blank"} en ga naar de omslag die u eerder creeerde, die zou moeten worden genoemd `--aepUserLdap--`. Dubbelklik om het element te openen dat tijdens de vorige oefening is gemaakt.
+Ga naar [ https://next.frame.io/project ](https://next.frame.io/project){target="_blank"} en ga naar het project dat u eerder creeerde, die `--aepUserLdap--` zou moeten worden genoemd en de omslag **Campagne van de Vezel CitiSignal** openen. U zou nu de activa moeten zien die in de vorige oefening werden gecreeerd.
 
 ![ Kader IO ](./images/aemf11a.png)
 
-Dan moet je iets dergelijks zien. Klik het gebied **Geen Status** en verander de status in **Bezig**.
+Klik het gebied **Status** en verander de status in **Bezig**.
 
 ![ Kader IO ](./images/aemf12.png)
 
@@ -113,23 +105,45 @@ De gedetailleerde mening van de bel toont u de gegevens die van Frame.io werden 
 
 Nu de communicatie tussen Frame.io en Workfront Fusion via een aangepaste webhaak tot stand is gebracht, dient u meer informatie te krijgen over het element waarvoor het statuslabel is bijgewerkt. Om dit te doen, zult u opnieuw de Schakelaar Frame.io in Workfront Fusion, gelijkend op de vorige oefening gebruiken.
 
-Klik op **?** en voer de zoekterm `frame` in. Klik **Frame.io**.
+Beweeg over het **Webhaak van de Douane** voorwerp en klik **+** pictogram om een andere module toe te voegen.
+
+![ Kader IO ](./images/aemf18a.png)
+
+Voer de zoekterm in `frame` . Klik **Frame.io**.
 
 ![ Kader IO ](./images/aemf18.png)
 
-Klik **Frame.io (Verouderd)**.
+Klik **Frame.io**.
 
 ![ Kader IO ](./images/aemf19.png)
 
-Klik **krijgen activa**.
+Klik **maak een douane API vraag**.
 
 ![ Kader IO ](./images/aemf20.png)
 
-Controleer of de verbinding is ingesteld op dezelfde verbinding als die u in de vorige oefening hebt gemaakt. Deze moet de naam `--aepUserLdap-- - Frame.io Token` hebben.
+Controleer of de verbinding is ingesteld op dezelfde verbinding als die u in de vorige oefening hebt gemaakt. Deze moet de naam `--aepUserLdap-- - Adobe I/O - Frame.io S2S` hebben.
 
 ![ Kader IO ](./images/aemf21.png)
 
-Daarna, moet u **identiteitskaart van Activa verstrekken**. **identiteitskaart van Activa** wordt gedeeld door Frame.io aan de Fusie van Workfront als deel van de aanvankelijke **Webhaak van de Douane** mededeling en kan onder het gebied **resource.id** worden gevonden. Selecteer **resource.id** en klik **O.K.**.
+Voor de configuratie van de module **Frame.io - maak een douane API vraag**, gebruik URL: `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{1.account.id}}` en `{{1.resource.id}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabelen `{{1.account.id}}` en `{{1.resource.id}}` tot dat gebied van de module met opeenvolgingsaantal 1 zullen toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Daarna, klik **+ voeg punt** onder **Koord van de Vraag** toe.
+
+![ Kader IO ](./images/aemf21a.png)
+
+Ga deze waarden in en klik **toevoegen**.
+
+| Sleutel | Waarde |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![ Kader IO ](./images/aemf21b.png)
+
+Dat zou u nu moeten doen. Klik **OK**.
 
 ![ Kader IO ](./images/aemf22.png)
 
@@ -137,21 +151,36 @@ Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen e
 
 ![ Kader IO ](./images/aemf23.png)
 
-De schakelaar terug naar Frame.io en klikt het gebied **herzien** en verandert de status aan **Bezig**.
+De schakelaar terug naar Frame.io en verandert de status in **Bezig**.
 
 ![ Kader IO ](./images/aemf24.png)
 
-Ga terug naar de Fusie van Workfront en klik de bel op **Frame.io - krijg een activa** module. Dan zou u een gelijkaardig overzicht moeten zien.
+Ga terug naar de Fusie van Workfront en klik de bel op **Frame.io - maak een douane API vraag** module. Dan zou u een gelijkaardig overzicht moeten zien.
 
 ![ Kader IO ](./images/aemf25.png)
 
-In de activa details die door Frame.io werden verstrekt, kunt u een gebied genoemd **Etiket** vinden dat aan **in_progress** wordt geplaatst. U moet dat veld later gebruiken om een filter te configureren.
+Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **** wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0} tussen de modules** Douane webhaak **en** Frame.io - maak een douane API vraag **en selecteer dan** Opstelling een filter **.**
 
-![ Kader IO ](./images/aemf26.png)
+![ Kader IO ](./images/aemf25a.png)
+
+Configureer de volgende velden:
+
+- **Etiket**: gebruik `Status = Approved`.
+- **Voorwaarde**: `{{1.metadata.value[]}}`.
+- **Basisexploitanten**: uitgezochte **Gelijk aan**.
+- **Waarde**: `Approved`.
+
+Klik **OK**.
+
+![ Kader IO ](./images/aemf35.png)
+
+Dan moet je dit hebben. Klik **sparen** om uw veranderingen te bewaren.
+
+![ Kader IO ](./images/aemf35a.png)
 
 ## 1.2.6.4 Omzetten in PNG
 
-Beweeg over de module **Frame.io - krijg activa** en klik **+** pictogram.
+Beweeg over de module **Frame.io - maak een douane API vraag** en klik **+** pictogram.
 
 ![ Kader IO ](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ Klik **het Formaat van het Beeld van de Bekeerling**.
 
 Verifieer dat het gebied **Verbinding** uw eerder gecreeerde verbinding gebruikt, die `--aepUserLdap-- - Adobe IO` wordt genoemd.
 
-Onder **Input**, plaats de gebied **Opslag** aan **Extern** en plaats de **Plaats van het Dossier** om het veranderlijke **Originele** te gebruiken dat door de module **Frame.io is teruggekeerd - krijg een activa**.
+Onder **Input**, plaats de gebied **Opslag** aan **Extern** en plaats de **Plaats van het Dossier** om het veranderlijke **Originele** te gebruiken dat door de module **Frame.io is teruggekeerd - maak een douane API vraag**.
 
 Daarna, voegt de klik **punt** onder **Output** toe.
 
 ![ Kader IO ](./images/aemf30.png)
 
-Voor de **configuratie van Output**, plaats de gebied **Opslag** aan **interne opslag van de Fusie** en het **Type** aan **beeld/png**. Klik **sparen**.
+Voor de **configuratie van Output**, plaats de gebied **Opslag** aan **interne opslag van de Fusie** en het **Type** aan **beeld/png**. Klik **toevoegen**.
 
 ![ Kader IO ](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ Klik **OK**.
 
 ![ Kader IO ](./images/aemf33.png)
 
-Klik **sparen** om uw veranderingen te bewaren.
-
-![ Kader IO ](./images/aemf32.png)
-
-Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **&#x200B;**&#x200B;wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0&rbrace; tussen de modules** Frame.io - krijg een activa **en** Adobe Photoshop - zet beeldformaat **om en selecteer dan** Opstelling een filter **.**
-
-![ Kader IO ](./images/aemf34.png)
-
-Configureer de volgende velden:
-
-- **Etiket**: gebruik `Is Asset Approved`.
-- **Voorwaarde**: selecteer het gebied **Etiket** van de reactie van **Frame.io - krijg een activa** module.
-- **Basisexploitanten**: uitgezochte **Gelijk aan**.
-- **Waarde**: `approved`.
-
-Klik **OK**.
-
-![ Kader IO ](./images/aemf35.png)
-
 Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw configuratie te testen.
 
-![ Kader IO ](./images/aemf36.png)
+![ Kader IO ](./images/aemf32.png)
 
 De schakelaar terug naar Frame.io en klikt het gebied **Bezig** en verandert de status aan **Goedgekeurd**.
 
@@ -255,11 +265,19 @@ Klik **Teken binnen met Adobe**.
 
 ![ Kader IO ](./images/aemf47.png)
 
-U wordt dan genomen aan **Developer Console**. Klik **creëren nieuwe technische rekening**.
+Ga naar **Hulpmiddelen** > **Integraties**.
+
+![ Kader IO ](./images/aemf47a.png)
+
+Klik **creëren nieuwe technische rekening**.
 
 ![ Kader IO ](./images/aemf48.png)
 
-Dan moet je iets dergelijks zien. Kopieer de volledige JSON-lading naar het klembord.
+Dan moet je iets dergelijks zien. Open de nieuwe technische account. Klik de 3 punten **..** en selecteer dan **Mening**.
+
+![ Kader IO ](./images/aemf48a.png)
+
+Vervolgens ziet u een vergelijkbare technische tokenlading. Kopieer de volledige JSON-lading naar het klembord.
 
 ![ Kader IO ](./images/aemf50.png)
 
@@ -283,7 +301,7 @@ Ga naar **Activa** en klik **creeer Omslag**.
 
 ![ Kader IO ](./images/aemf54.png)
 
-Ga de naam `--aepUserLdap-- - Frame.io PNG` in en klik **creeer**.
+Ga de naam `--aepUserLdap-- - CitiSignal Fiber Campaign` in en klik **creeer**.
 
 ![ Kader IO ](./images/aemf55.png)
 
@@ -291,19 +309,19 @@ Uw map wordt vervolgens gemaakt.
 
 ![ Kader IO ](./images/aemf56.png)
 
-Ga terug naar de Fusie van Workfront, klik **hier om omslag** te kiezen en dan de omslag `--aepUserLdap-- - Frame.io PNG` te kiezen.
+Ga terug naar de Fusie van Workfront, uitgezochte **klik hier om omslag** te kiezen en dan de omslag `--aepUserLdap-- - CitiSignal Fiber Campaign` te kiezen.
 
 ![ Kader IO ](./images/aemf57.png)
 
-Controleer of het doel is ingesteld op `--aepUserLdap-- - Frame.io PNG` . Dan, onder **het Dossier van Source**, uitgezochte **Kaart**.
+Controleer of het doel is ingesteld op `--aepUserLdap-- - CitiSignal Fiber Campaign` . Dan, onder **het Dossier van Source**, uitgezochte **Kaart**.
 
-Onder **naam van het Dossier**, kies de variabele `{{3.filenames[]}}`.
+Onder **naam van het Dossier**, kies de variabele `{{3.filenames[1]}}`.
 
-Onder **Gegevens**, kies de variabele `{{3.files[]}}`.
+Onder **Gegevens**, kies de variabele `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{3.filenames[]}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de derde module in het scenario **Adobe Photoshop wordt genoemd - zet beeldformaat** om en heeft een opeenvolgingsaantal van **3**. Dit betekent dat veranderlijk `{{3.filenames[]}}` tot het gebied **filenames[]** van de module met opeenvolgingsaantal 3 zal toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{3.filenames[1]}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de derde module in het scenario **Adobe Photoshop wordt genoemd - zet beeldformaat** om en heeft een opeenvolgingsaantal van **3**. Dit betekent dat veranderlijk `{{3.filenames[1]}}` tot het gebied **filenames[]** van de module met opeenvolgingsaantal 3 zal toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
 
 Klik **OK**.
 

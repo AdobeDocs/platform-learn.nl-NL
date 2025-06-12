@@ -3,9 +3,9 @@ title: Aan de slag - Te installeren toepassingen
 description: Aan de slag - Te installeren toepassingen
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,15 @@ Ga naar [ https://creativecloud.adobe.com/apps/download/creative-cloud ](https:/
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw computer.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/psd.png)
+
+## Adobe Illustrator
+
+Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Illustrator op uw computer.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/psd.png)
 

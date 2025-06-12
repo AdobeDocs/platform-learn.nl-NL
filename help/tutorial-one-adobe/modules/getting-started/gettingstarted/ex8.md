@@ -4,9 +4,9 @@ description: Aan de slag - Postman instellen
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u geen werknemer van Adobe bent, volg de instructies om Postman [&#128279;](./ex7.md){target="_blank"} te installeren 0&rbrace;.  De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
+>Als u geen werknemer van Adobe bent, volg de instructies om Postman ](./ex7.md){target="_blank"} te installeren 0}. [ De onderstaande instructies zijn alleen bedoeld voor werknemers van Adobe.
 
 ## PostBuster installeren
 
-Ga naar [ https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542 ](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}.
+Ga naar [ https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542 ](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Klik om de recentste versie van **PostBuster** te downloaden.
 
@@ -69,7 +69,7 @@ Dan moet je dit zien.
 
 ![ PostBuster ](./images/pb11.png)
 
-Kopieer hieronder milieu placeholder en kleef het in het **Milieu van de Basis**.
+Kopieer hieronder milieu placeholder en kleef het in het **Milieu van de Basis**, door te vervangen wat daar is.
 
 ```json
 {
@@ -83,7 +83,8 @@ Kopieer hieronder milieu placeholder en kleef het in het **Milieu van de Basis**
 		"additional_info.projectedProductContext", 
 		"session",
 		"ff_apis",
-		"firefly_api"
+		"firefly_api",
+		"frame.s2s.all"
 	],
 	"TECHNICAL_ACCOUNT_ID": "",
 	"IMS": "ims-na1.adobelogin.com",
@@ -93,7 +94,10 @@ Kopieer hieronder milieu placeholder en kleef het in het **Milieu van de Basis**
 	"AZURE_STORAGE_URL": "",
 	"AZURE_STORAGE_CONTAINER": "",
 	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"AZURE_STORAGE_SAS_WRITE": "",
+	"FRAME_IO_BASE_URL": "https://api.frame.io",
+	"FRAME_IO_ACCOUNT_ID": "",
+	"FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -105,11 +109,11 @@ Dan moet je dit hebben.
 
 Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open uw project.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopr.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopr.png)
 
 Ga naar **Server-aan-Server**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar1.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar1.png)
 
 U moet nu de volgende waarden van uw Adobe I/O-project kopiëren en deze in uw PostBuster Base-omgeving plakken.
 
@@ -118,7 +122,7 @@ U moet nu de volgende waarden van uw Adobe I/O-project kopiëren en deze in uw P
 - Technisch account-id
 - Organisatie-id (schuif omlaag om uw organisatie-id te zoeken)
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar2.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar2.png)
 
 Kopieer de bovengenoemde variabelen één voor één, en kleef hen in uw **Milieu van de Basis** in PostBuster.
 
@@ -129,11 +133,15 @@ Kopieer de bovengenoemde variabelen één voor één, en kleef hen in uw **Milie
 | Technisch account-id | `TECHNICAL_ACCOUNT_ID` |
 | Organisatie-ID | `IMS_ORG` |
 
-Nadat u deze variabelen één voor één hebt gekopieerd, zou uw Milieu van de Basis van PostBuster als dit moeten kijken:
+Nadat u deze variabelen één voor één hebt gekopieerd, zou uw Milieu van de Basis van PostBuster als dit moeten kijken.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar3.png){zoomable="yes"}
+Klik **dicht**.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar3.png)
 
 In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar3a.png)
 
 U zou een gelijkaardige reactie moeten zien die de volgende informatie bevat:
 
@@ -145,9 +153,9 @@ U zou een gelijkaardige reactie moeten zien die de volgende informatie bevat:
 
 Adobe I/O **drager-teken** heeft een specifieke waarde (zeer lange access_token) en een vervalvenster en is nu geldig voor 24 uren. Dit betekent dat als u Postman na 24 uur wilt gebruiken voor interactie met Adobe API&#39;s, u een nieuw token moet genereren door dit verzoek opnieuw uit te voeren.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar4.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/iopbvar4.png)
 
-Uw PostBuster-omgeving is nu ingesteld en werkt. U hebt nu de module Aan de slag voltooid.
+Uw PostBuster-omgeving is nu geconfigureerd en werkt. Je hebt deze oefening nu voltooid.
 
 ## Volgende stappen
 

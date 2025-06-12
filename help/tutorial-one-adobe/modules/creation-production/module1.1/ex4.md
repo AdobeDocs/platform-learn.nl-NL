@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Geef het nieuwe project de naam: `--aepUserLdap-- - Custom Models`. Klik **creë
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm5.png){zoomable="yes"}
 
-Dan moet je dit zien. Klik **creëren**.
+Dan moet je dit zien. Klik **verdergaan**.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm6.png){zoomable="yes"}
 
@@ -201,7 +201,7 @@ Open het verzoek **3. Krijg de Status van CM** en klik **verzenden**. Vervolgens
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm35.png){zoomable="yes"}
 
-Na een paar notulen, verzend **&#x200B;**&#x200B;opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
+Na een paar notulen, verzend **** opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm36.png){zoomable="yes"}
 

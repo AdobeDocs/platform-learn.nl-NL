@@ -4,9 +4,9 @@ description: AEM CS - Aangepast basisblok
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.4.1 De lokale ontwikkelomgeving instellen
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"} , download en installeer **Desktop van Github**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
 
 ![ Blok ](./images/block1.png){zoomable="yes"}
 
@@ -43,7 +43,7 @@ U zult nu die omslag open in de Code van Visual Studio zien, bent u nu bereid om
 
 ![ Blok ](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Een eenvoudig aangepast blok maken
+## 1.1.4.2 Een aangepast basisblok maken
 
 Adobe raadt u aan blokken te ontwikkelen in drie fasen:
 
@@ -61,7 +61,7 @@ De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluit
 
 ![ Blok ](./images/block9.png){zoomable="yes"}
 
-Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
+Plak deze code en voer een komma **** na het codeblok in:
 
 ```json
 {
@@ -98,7 +98,7 @@ Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluiten
 
 ![ Blok ](./images/block12.png){zoomable="yes"}
 
-Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -169,11 +169,11 @@ Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiS
 
 ![ Blok ](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Voeg uw blok aan een pagina toe
+## 1.1.4.4 Voeg uw blok toe aan een pagina
 
 Nu uw basis citaatblok wordt bepaald en aan het project CitiSignal geëngageerd, kunt u a **fiberbied** blok aan een bestaande pagina toevoegen.
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"} . Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
 
 ![ AEMCS ](./images/aemcs6.png){zoomable="yes"}
 
@@ -259,7 +259,7 @@ Voeg met de tekst `Fiber` een menuoptie toe aan het navigatiemenu. Selecteer de 
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Ga dit voor **URL** in `/us/en/citisignal-fiber` en klik het **V** pictogram om te bevestigen.
+Ga dit voor **URL** in `/us/en//citisignal-fiber` en klik het **V** pictogram om te bevestigen.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Klik **publiceren** opnieuw.
 
 ![ AEMCS ](./images/nav5.png){zoomable="yes"}
 
-U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en` en/of `main--citisignal--XXX.aem.live/us/en` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
+U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
 In dit voorbeeld wordt de volledige URL als volgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en` .
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
 
 Dan moet je dit zien. Klik **Vezel**.
 
