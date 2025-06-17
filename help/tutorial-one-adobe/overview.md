@@ -3,9 +3,9 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -65,9 +65,13 @@ In deze module gebruikt u Adobe Firefly Services API&#39;s, Photoshop API&#39;s 
 
 [ 1.2 de Automatisering van het Werkschema van Creative met Workfront Fusion ](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-In deze basismodule gebruikt u Adobe Workfront Fusion om workflows voor het maken van inhoud te automatiseren en schalen.
+In deze module gebruikt u Adobe Workfront Fusion om workflows voor het maken van inhoud te automatiseren en schalen.
 
-[ 1.3 Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.3/express.md){target="_blank"}
+[ 1.3 GenStudio for Performance Marketing ](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+In deze module gebruikt u Adobe GenStudio for Performance Marketing, een algemene AI-eerste end-to-end workflowtoepassing voor marketing- en creatieve teams om lokale inhoud te maken, te activeren en te optimaliseren met ondernemingsbestuur voor digitale marketingcampagnes.
+
+[ 1.4 Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 In deze basismodule gebruikt u Adobe Express om afbeeldingen en video&#39;s te maken en deelt u deze elementen met het bredere Adobe Experience Cloud-ecosysteem.
 

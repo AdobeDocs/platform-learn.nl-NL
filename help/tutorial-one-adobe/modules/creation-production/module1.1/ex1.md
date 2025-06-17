@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Het eerste wat nodig is om dit te bereiken, is een zwarte en witte versie van de
 
 ![ Postman ](./images/CitiSignal.jpg)
 
-### &lbrace;0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
+### {0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
 
 U kunt [ dit steekproefbeeld ](./images/CitiSignal.jpg) gebruiken of u kunt uw eigen tekst tot stand brengen om te experimenteren. Volg de onderstaande stappen in Adobe Illustrator om uw eigen afbeeldingsbestand te maken. Als u de vooraf gedefinieerde afbeelding wilt gebruiken, slaat u de onderstaande sectie over en gaat u naar stap **1.1.1.2.2. Genereer de afbeelding** rechtstreeks.
 
@@ -208,7 +208,7 @@ De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect
 
 ![ Postman ](./images/ffui9.png)
 
-Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **&#x200B;**&#x200B;en inspecteert het netwerkverzoek dat wordt verzonden.
+Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
 
 ![ Postman ](./images/ffui10.png)
 
@@ -239,13 +239,13 @@ In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg
 
 Nu u een geldig en vers access_token hebt, bent u klaar om uw eerste aanvraag naar Firefly Services API&#39;s te verzenden.
 
-Het verzoek u hier zult gebruiken is a **synchroon** verzoek, dat u van een reactie voorziet die het gevraagde beeld binnen een paar seconden bevat.
+Het verzoek u hier zult gebruiken is a **asynchroon** verzoek, dat u van een reactie voorziet die URL van de baan bevat die is voorgelegd, zo betekent het dat u een tweede verzoek zult moeten gebruiken om de status van de baan te controleren en tot het beeld toegang te hebben dat werd geproduceerd.
 
 >[!NOTE]
 >
->Met de release van Firefly Image 4 en Image 4 Ultra worden synchrone aanvragen vervangen door asynchrone aanvragen. U zult oefeningen over asynchrone verzoeken verder onder in dit leerprogramma vinden.
+>Met de release van Firefly Image 4 en Image 4 Ultra worden synchrone aanvragen vervangen door asynchrone aanvragen.
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V3** van de **FF - de Ingeurs van de Tech van Firefly Services** inzameling. Ga naar **Kopballen** en verifieer de sleutel/waardepaarcombinaties.
+Selecteer het verzoek genoemd **POST - Firefly - T2I V3 async** van **FF - Firefly Services de Instanties van de Tech van de Tech {** inzameling. Ga naar **Kopballen** en verifieer de sleutel/waardepaarcombinaties.
 
 | Sleutel | Waarde |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Selecteer het verzoek genoemd **POST - Firefly - T2I V3** van de **FF - de Ingeu
 
 Beide waarden in deze aanvraag hebben betrekking op omgevingsvariabelen die vooraf zijn gedefinieerd. `{{API_KEY}}` verwijst naar het gebied **identiteitskaart van de Cliënt** van uw project van Adobe I/O. Als deel van **Begonnen** sectie dit leerprogramma, vormde u dat in Postman.
 
-De waarde voor het gebied **Vergunning** is een beetje speciaal: `Bearer {{ACCESS_TOKEN}}`. Het bevat een verwijzing naar het **Token van de Toegang** dat u in de vorige stap produceerde. Wanneer u uw **Token van de Toegang** door het verzoek **POST te gebruiken - krijgt het Token van de Toegang** in **Adobe IO - OAuth** inzameling, een manuscript liep in Postman dat het gebied **access_token** als milieuvariabele opsloeg, die nu in het verzoek **POST - Firefly - T2I V3** wordt van verwijzingen voorzien. Gelieve te nota van de specifieke toevoeging van het woord **Drager** en een ruimte vóór `{{ACCESS_TOKEN}}`. De woorddrager is hoofdlettergevoelig en de ruimte is vereist. Als dit niet correct wordt gedaan, zal Adobe I/O a **401 onbevoegde** fout terugkeren aangezien het niet uw **Symbolisch van de Toegang** correct zal kunnen verwerken.
+De waarde voor het gebied **Vergunning** is een beetje speciaal: `Bearer {{ACCESS_TOKEN}}`. Het bevat een verwijzing naar het **Token van de Toegang** dat u in de vorige stap produceerde. Wanneer u uw **Token van de Toegang** door het verzoek **POST te gebruiken - krijg het Token van de Toegang** in **Adobe IO - OAuth** inzameling, een manuscript liep in Postman dat het gebied **access_token** als milieuvariabele opsloeg, die nu in het verzoek **POST - Firefly - T2I V3 async** wordt van verwijzingen voorzien. Gelieve te nota van de specifieke toevoeging van het woord **Drager** en een ruimte vóór `{{ACCESS_TOKEN}}`. De woorddrager is hoofdlettergevoelig en de ruimte is vereist. Als dit niet correct wordt gedaan, zal Adobe I/O a **401 onbevoegde** fout terugkeren aangezien het niet uw **Symbolisch van de Toegang** correct zal kunnen verwerken.
 
 ![ Firefly ](./images/ff0.png)
 
@@ -262,7 +262,23 @@ Daarna, ga naar het **Lichaam** en verifieer de herinnering. Klik **verzenden**.
 
 ![ Firefly ](./images/ff1.png)
 
-Kopieer (of klik) de afbeeldings-URL uit het antwoord en open deze in uw webbrowser om de afbeelding weer te geven.
+Dan krijgt u onmiddellijk antwoord. Deze reactie bevat niet de beeld-URL&#39;s van gegenereerde afbeelding, maar een URL van het statusrapport van de taak die u hebt gestart en bevat een andere URL waarmee u de actieve taak kunt annuleren.
+
+>[!NOTE]
+>
+>De verzameling van Postman die u gebruikt, is geconfigureerd voor het gebruik van dynamische variabelen. Als voorbeeld, is het gebied **statusUrl** opgeslagen als dynamische variabele in Postman dankzij de **Manuscripten** die in Postman zijn gevormd.
+
+![ Firefly ](./images/ff1a.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
+
+>[!NOTE]
+>
+>De verzameling van Postman die u gebruikt, is geconfigureerd voor het gebruik van dynamische variabelen. Als voorbeeld, werd het gebied **statusUrl** van het vorige verzoek opgeslagen als dynamische variabele in Postman en het wordt nu gebruikt als URL voor **GET - Firefly - krijgt het verzoek van het Rapport van de Status**.
+
+![ Firefly ](./images/ff1b.png)
+
+U zou een gelijkaardige reactie moeten ontvangen hebben. Dit is het overzicht van de taak die is uitgevoerd. U kunt het gebied **url** zien, dat het geproduceerde beeld bevat. Kopieer (of klik) de afbeeldings-URL uit het antwoord en open deze in uw webbrowser om de afbeelding weer te geven.
 
 ![ Firefly ](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Er moet een mooie afbeelding worden afgebeeld `horses in a field` .
 
 ![ Firefly ](./images/ff3.png)
 
-In het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, voeg het volgende onder het gebied `"promptBiasingLocaleCode": "en-US"` toe en vervang veranderlijk `XXX` door één van de zaadaantallen die willekeurig door Firefly Services UI werden gebruikt. In dit voorbeeld, is het **zaad** aantal `142194`.
+In het **Lichaam** van uw verzoek **POST - Firefly - T2I V3 async**, voeg het volgende onder het gebied `"promptBiasingLocaleCode": "en-US"` toe en vervang veranderlijk `XXX` door één van de zaadaantallen die willekeurig door Firefly Services UI werden gebruikt. In dit voorbeeld, is het **zaad** aantal `142194`.
 
 ```json
 ,
@@ -279,7 +295,11 @@ In het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, voeg het volgende
   ]
 ```
 
-Klik **verzenden**. Vervolgens ontvangt u een reactie met een nieuwe afbeelding die door Firefly Services is gegenereerd. Open de afbeelding om deze weer te geven.
+Klik **verzenden**. Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
+
+![ Firefly ](./images/ff3a.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
 
 ![ Firefly ](./images/ff4.png)
 
@@ -287,7 +307,7 @@ U zou dan een nieuw beeld met lichte verschillen moeten zien, die op **worden ge
 
 ![ Firefly ](./images/ff5.png)
 
-Daarna, in het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, kleef het hieronder **stijlen** voorwerp onder het **zaden** voorwerp. Dit zal de stijl van het geproduceerde beeld in **art_deco** veranderen.
+Daarna, in het **Lichaam** van uw verzoek **POST - Firefly - T2I V3 async**, kleef het hieronder **stijlen** voorwerp onder het **zaden** voorwerp. Dit zal de stijl van het geproduceerde beeld in **art_deco** veranderen.
 
 ```json
 ,
@@ -300,11 +320,11 @@ Daarna, in het **Lichaam** van uw verzoek **POST - Firefly - T2I V3**, kleef het
   }
 ```
 
-Dan moet je dit hebben. Klik **verzenden**.
+Dan moet je dit hebben. Klik **verzenden**. Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
 
 ![ Firefly ](./images/ff6.png)
 
-Klik op de URL van de afbeelding om deze te openen.
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
 
 ![ Firefly ](./images/ff7.png)
 
@@ -312,7 +332,7 @@ Uw afbeelding is nu een beetje gewijzigd. Bij het toepassen van voorinstellingen
 
 ![ Firefly ](./images/ff8.png)
 
-Verwijder de code voor het **zaden** voorwerp uit het **Lichaam** van uw verzoek. Klik **verzenden** en klik dan beeld URL die u van de reactie krijgt.
+Verwijder de code voor het **zaad** voorwerp uit het **Lichaam** van uw **POST - Firefly - T2I V3 async** verzoek. Klik **verzenden** en klik dan beeld URL die u van de reactie krijgt. Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
 
 ```json
 ,
@@ -323,13 +343,17 @@ Verwijder de code voor het **zaden** voorwerp uit het **Lichaam** van uw verzoek
 
 ![ Firefly ](./images/ff9.png)
 
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
+
+![ Firefly ](./images/ff9a.png)
+
 Uw afbeelding is nu weer een beetje gewijzigd.
 
 ![ Firefly ](./images/ff10.png)
 
 ## 1.1.1.7 Firefly Services API, Gen Expand
 
-Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en gaat naar het** Lichaam **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
 
 - **grootte**: Ga de gewenste resolutie in. De hier ingevoerde waarde moet groter zijn dan de oorspronkelijke grootte van de afbeelding en mag niet groter zijn dan 3999.
 - **image.source.url**: Dit gebied vereist een verbinding aan het beeld dat moet worden uitgebreid. In dit voorbeeld wordt een variabele gebruikt om te verwijzen naar de afbeelding die tijdens de vorige oefening is gegenereerd.
@@ -339,7 +363,11 @@ Selecteer het verzoek genoemd **POST - Firefly - Gen breidt zich** uit van **FF 
 
 ![ Firefly ](./images/ff11.png)
 
-Klik op de afbeeldings-URL die deel uitmaakt van het antwoord.
+Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
+
+![ Firefly ](./images/ff11a.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
 
 ![ Firefly ](./images/ff12.png)
 
@@ -347,9 +375,27 @@ U ziet nu dat de afbeelding die in de vorige oefening is gegenereerd, is uitgebr
 
 ![ Firefly ](./images/ff13.png)
 
-Wanneer u de uitlijning van de plaatsing wijzigt, zal de uitvoer ook iets anders zijn. In dit voorbeeld, wordt de plaatsing veranderd in **verlaten, bodem**. Klik **verzenden** en klik dan om het geproduceerde beeld URL te openen.
+Produceer een nieuw beeld gebruikend **Firefly - T2I V3 async** verzoek.
+
+![ Firefly ](./images/ff13a.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
+
+![ Firefly ](./images/ff13b.png)
+
+Vervolgens ziet u een vergelijkbare afbeelding.
+
+![ Firefly ](./images/ff13c.png)
+
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
+
+Wanneer u de uitlijning van de plaatsing wijzigt, zal de uitvoer ook iets anders zijn. In dit voorbeeld, wordt de plaatsing veranderd in **verlaten, bodem**. Klik **verzenden**. Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
 
 ![ Firefly ](./images/ff14.png)
+
+Om het statusrapport van uw lopende baan te controleren, selecteer het verzoek genoemd **GET - Firefly - krijg het Rapport van de Status** van **FF - Firefly Services de Ingeurs van de Tech** inzameling. Klik om het te openen, en klik dan **verzenden**. Selecteer de URL van de gegenereerde afbeelding en open deze in uw browser.
+
+![ Firefly ](./images/ff14a.png)
 
 Vervolgens ziet u dat de oorspronkelijke afbeelding op een andere plaats wordt gebruikt, wat van invloed is op de hele afbeelding.
 
@@ -365,9 +411,9 @@ Met de recente release van Firefly Image Model 4 zijn verschillende verbeteringe
 
 Firefly Image Model 4 biedt u uitzonderlijke beelden van mensen, dieren en gedetailleerde scènes en u kunt Afbeeldingsmodel 4 Ultra gebruiken voor het genereren van beelden met hyperrealistische menselijke interacties, architectonische elementen en complexe landschappen. &#x200B;
 
-### &lbrace;0.1 image4_standard1.1.1.8
+### {0.1 image4_standard1.1.1.8
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van de Technische Instanties van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van de Technische Instanties van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 U zult opmerken dat URL van het verzoek van **Firefly Services API, Tekst 2 Beeld, Beeld 3** verzoek verschillend is, dat **https://firefly-api.adobe.io/v3/images/generate** was. Dit URL richt aan **https://firefly-api.adobe.io/v3/images/generate-async**. De toevoeging van **- async** in URL betekent u het asynchrone eindpunt gebruikt.
 
@@ -381,7 +427,7 @@ Ga naar het **Lichaam** van het verzoek. U moet zien dat in het lichaam vier afb
 
 ![ Firefly ](./images/ffim4_2.png)
 
-Dan krijgt u onmiddellijk antwoord. In tegenstelling tot de vorige synchrone verzoeken die u hebt gebruikt, bevat dit antwoord geen beeld-URL&#39;s van gegenereerde afbeeldingen. Het bevat wel een URL van het statusrapport van de taak die u hebt gestart en het bevat een andere URL waarmee u de actieve taak kunt annuleren.
+Dan krijgt u onmiddellijk antwoord. Deze reactie bevat niet de beeld-URL&#39;s van gegenereerde afbeelding, maar een URL van het statusrapport van de taak die u hebt gestart en bevat een andere URL waarmee u de actieve taak kunt annuleren.
 
 ![ Firefly ](./images/ffim4_3.png)
 
@@ -401,9 +447,9 @@ U zou dan een hyperrealistisch beeld van **paarden op een gebied** moeten zien.
 
 ![ Firefly ](./images/ffim4_7.png)
 
-### &lbrace;0.2 image4_ultra1.1.1.8
+### {0.2 image4_ultra1.1.1.8
 
-Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
+Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
 
 Verander veranderlijk **x-model-versie** in `image4_ultra`. In dit voorbeeld gebruikt u `image4_standard` .
 
