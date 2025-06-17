@@ -79,7 +79,7 @@ Dan moet je dit zien.
 
 ![ Adobe Express ](./images/express14.png)
 
-Klik textbox die **handel-op &amp; sparen** zegt. Dan, herschrijf **** en kies een stijl, dan klik **** produceren.
+Klik textbox die **handel-op &amp; sparen** zegt. Dan, herschrijf **&#x200B;**&#x200B;en kies een stijl, dan klik **&#x200B;**&#x200B;produceren.
 
 ![ Adobe Express ](./images/express15.png)
 
