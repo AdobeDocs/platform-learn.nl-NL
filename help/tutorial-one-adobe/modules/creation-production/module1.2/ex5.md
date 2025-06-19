@@ -99,7 +99,7 @@ Dan moet je dit zien. Laat dit scherm open en onaangeroerd zoals u het in een vo
 
 ## 1.2.5.4 Frame.io V4 API voor aangepaste handelingen
 
-Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Verifieer het gebied **werkingsgebied** onder **Params**. Het gebied **werkingsgebied** zou het werkingsgebied `frame.s2s.all` moeten omvatten. Voeg het toe als het ontbreekt. Daarna, verzendt de klik **** om een nieuw **access_token** te verzoeken.
+Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Verifieer het gebied **werkingsgebied** onder **Params**. Het gebied **werkingsgebied** zou het werkingsgebied `frame.s2s.all` moeten omvatten. Voeg het toe als het ontbreekt. Daarna, verzendt de klik **&#x200B;**&#x200B;om een nieuw **access_token** te verzoeken.
 
 ![ Kader IO ](./images/frameV4api2.png)
 
@@ -147,7 +147,7 @@ Ga terug naar [ https://next.frame.io/ ](https://next.frame.io/){target="_blank"
 
 ![ Kader IO ](./images/frame16.png)
 
-Na het hebben van de pagina verfrist, klik de 3 punten **...** op de activa **** en open het **menu van de Acties van de Douane**. De aangepaste handeling die u eerder hebt gemaakt, wordt dan weergegeven in het menu dat wordt weergegeven. Klik op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
+Na het hebben van de pagina verfrist, klik de 3 punten **...** op de activa **&#x200B;**&#x200B;en open het **menu van de Acties van de Douane**. De aangepaste handeling die u eerder hebt gemaakt, wordt dan weergegeven in het menu dat wordt weergegeven. Klik op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
 
 ![ Kader IO ](./images/frame17.png)
 
@@ -253,7 +253,7 @@ Kopieer de hieronder code JSON en kleef het op het gebied **Lichaam**.
 }
 ```
 
-Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. ****.
+Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. **&#x200B;**.
 
 ![ Kader IO ](./images/frame31.png)
 
@@ -323,7 +323,7 @@ De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **Webhaak 
 
 ## 1.2.5.6 Bestandslocatie ophalen van Frame.io
 
-Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig voor dit scenario aan functie. De eerste 3 gebieden zijn nu reeds beschikbaar maar **psdTemplate** aan gebruik nog mist. **psdTemplate** zal nu een plaats Frame.io van verwijzingen voorzien aangezien het dossier **wordt** ontvangen {in Frame.io. Om de locatie van dat bestand op te halen, moet u de verbinding Frame.io configureren en gebruiken in Workfront Fusion.
+Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig voor dit scenario aan functie. De eerste 3 gebieden zijn nu reeds beschikbaar maar **psdTemplate** aan gebruik nog mist. **psdTemplate** zal nu een plaats Frame.io van verwijzingen voorzien aangezien het dossier **wordt** ontvangen &lbrace;in Frame.io. Om de locatie van dat bestand op te halen, moet u de verbinding Frame.io configureren en gebruiken in Workfront Fusion.
 
 Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action V4` . Over de **heen?** klikt u op het pictogram **+** om een andere module toe te voegen en te zoeken naar `frame` . Klik **Frame.io**.
 
@@ -527,9 +527,9 @@ Voor de configuratie van de module **Frame.io - maak een douane API vraag**, geb
 >[!NOTE]
 >
 >Zoals eerder vermeld, kunnen variabelen in Workfront Fusion handmatig worden opgegeven met de volgende syntaxis: `{{1.account_id}}` en `{{4.body.data.parent_id}}` . Het getal in de variabele verwijst naar de module in het scenario.
->>In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabele `{{1.account_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 1.
->>In dit voorbeeld, kunt u zien dat de vierde module in het scenario **Frame.io wordt genoemd - maak een douane API vraag** en heeft een opeenvolgingsaantal van **4**. Dit betekent dat de variabele `{{4.body.data.parent_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 4.
->>Als de volgnummers van de modules verschillend zijn, moet u de variabelen in de bovenstaande URL bijwerken om deze aan de juiste module te kunnen koppelen.
+>&#x200B;>In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabele `{{1.account_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 1.
+>&#x200B;>In dit voorbeeld, kunt u zien dat de vierde module in het scenario **Frame.io wordt genoemd - maak een douane API vraag** en heeft een opeenvolgingsaantal van **4**. Dit betekent dat de variabele `{{4.body.data.parent_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 4.
+>&#x200B;>Als de volgnummers van de modules verschillend zijn, moet u de variabelen in de bovenstaande URL bijwerken om deze aan de juiste module te kunnen koppelen.
 
 ![ Kader IO ](./images/frame78.png)
 
@@ -549,7 +549,7 @@ Kopieer en kleef het hieronder fragment JSON in het gebied **Lichaam**.
 >[!NOTE]
 >
 >Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{6.data.newPsdTemplate}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de zesde module in het scenario **HTTP wordt genoemd - doe een verzoek** en heeft een opeenvolgingsaantal van **6**. Dit betekent dat veranderlijk `{{6.data.newPsdTemplate}}` tot het gebied **data.newPsdTemplate** van de module met opeenvolgingsaantal 6 zal toegang hebben.
->>Als de volgordenummers van de module verschillend zijn, moet u de variabele in bovenstaande URL bijwerken om aan de correcte module te worden gekoppeld.
+>&#x200B;>Als de volgordenummers van de module verschillend zijn, moet u de variabele in bovenstaande URL bijwerken om aan de correcte module te worden gekoppeld.
 
 Klik **OK**.
 
