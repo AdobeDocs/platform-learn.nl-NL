@@ -5,10 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 10%
+source-wordcount: '106'
+ht-degree: 8%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 10%
 
 ## Uitoefening
 
-[ 1.3.1 die met GenStudio for Performance Marketing ](./ex1.md){target="_blank"} wordt begonnen
+[ 1.3.1 Configuratie: Kantallen ](./ex1.md){target="_blank"}
 
-Verken in deze oefening GenStudio for Performance Marketing.
+In deze oefening, zult u een merk CitiSignal in GenStudio for Performance Marketing vormen.
+
+[ 1.3.2 Configuratie: Personas, Producten en Malplaatjes ](./ex2.md){target="_blank"}
+
+In deze oefening, zult u persona&#39;s en producten in GenStudio for Performance Marketing vormen.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 

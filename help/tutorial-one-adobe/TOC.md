@@ -4,9 +4,9 @@ breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1179'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,9 @@ ht-degree: 2%
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
-      + [1.3.1 Aan de slag met GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.1 Configuratie: merken](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2 Configuratie: persona&#39;s, producten en sjablonen](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Campagne activeren naar Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express en Adobe Experience Cloud {#crpr4}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)

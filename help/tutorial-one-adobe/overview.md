@@ -3,7 +3,7 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 1%
@@ -41,9 +41,9 @@ Deze zelfstudie richt zich niet alleen op Adobe-toepassingen, maar houdt rekenin
 Na de voltooiing van enkele modules in dit leerprogramma, kunt u een Onderzoek van de Referentie van Adobe nemen om een **Gekwalificeerde Adobe** badge te ontvangen.
 
 - Wanneer u het module [ Overzicht van Adobe Firefly Services ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} voltooit, bent u bereid om **Adobe Gekwalificeerd** examen **over te nemen AD2-E901**:
-  [ https://certification.adobe.com/certification/services-qualified-credential ](https://certification.adobe.com/certification/services-qualified-credential).
-- Wanneer u de module [ Automatisering van het Werkschema van Creative met de Fusie van Workfront ](./modules/creation-production/module1.2/automation.md){target="_blank"} voltooit, bent u bereid om het **Gekwalificeerde Adobe** examen **XXX** over te nemen en over te gaan:
-  [ TBC ](https://certification.adobe.com/certification/services-qualified-credential).
+  [ https://certification.adobe.com/certification/services-qualified-credential ](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- Wanneer u de module [ Automatisering van het Werkschema van Creative met de Fusie van Workfront ](./modules/creation-production/module1.2/automation.md){target="_blank"} voltooit, bent u bereid om het **Gekwalificeerde Adobe** examen **AD2-E902** over te nemen en over te gaan:
+  [ https://certification.adobe.com/certification/fusion-qualified-credential ](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Content Status
 
