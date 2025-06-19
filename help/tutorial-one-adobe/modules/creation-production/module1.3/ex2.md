@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 Configuratie: persona&#39;s, producten en sjablonen
 
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
+
+![ GSPeM ](./images/gspem1.png)
+
 ## 1.3.2.1 Producten
 
-Klik de 3 punten **..** en selecteer dan **Producten**.
+Producten in GenStudio for Performance Marketing maken gebruik van een diepgaand inzicht in productspecificaties, voordelen en differentiatiefactoren om effectvolle inhoud te genereren.
+
+De producten omvatten alle elementen van een specifiek product, zoals beeldspraak, beschrijvingen, en waardevoorstellen, om een samenhangende merkvertegenwoordiging tot stand te brengen. De hefboomwerking van de geavanceerde technologie van AI van Adobe, GenStudio for Performance Marketing richtlijnen-merken, Producten, en Persoonlijk-werk samen om dwingende inhoud te produceren die de sterke punten van uw producten toont en consistentie over al overseinen verzekert.
+
+Begin creërend uw eigen producten, klik de 3 punten **...** en selecteer dan **Producten**.
 
 ![ GSPeM ](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ U zou dan de 2 producten moeten zien die u vormde.
 
 ## 1.3.2.2 Persoonlijke personen
 
-Klik de 3 punten **..** en selecteer dan **Personas**.
+Persoonlijke gegevens bieden een authentieke weergave van de klantsegmenten, met inbegrip van hun informatie, interesses, pijnpunten, voorkeuren en gedragskenmerken.
+
+GenStudio for Performance Marketing gebruikt de macht van richtlijn-merken, Producten, en Persoonlijk-en generatieve AI van Adobe technologie om gepersonaliseerde marketing inhoud voor uw doelklanten te leiden. &#x200B;
+
+Om uw persona&#39;s te beginnen tot stand te brengen, klik de 3 punten **..** en selecteer dan **Personas**.
 
 ![ GSPeM ](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ U zou dan de 3 karakters moeten zien die u vormde.
 ![ GSPeM ](./images/gspem124.png)
 
 ## 1.3.2.3 Sjablonen
+
+Met GenStudio for Performance Marketing kunnen makers van inhoud snel consistente marketinginhoud voor het merk produceren met behulp van sjablonen. Een malplaatje vermindert beduidend de tijd en de inspanning die wordt vereist om nieuwe inhoud te produceren door een uitgangspunt te verstrekken dat pre-gevormde lay-outs en ontwerpelementen omvat.
+
+Hoewel GenStudio for Performance Marketing het rechtstreeks maken van sjablonen in de toepassing niet ondersteunt, kunt u eenvoudig sjablonen ontwerpen en voorbereiden met populaire ontwerpgereedschappen, zoals Adobe InDesign, Illustrator of Express. Zodra uw ontwerp volledig is, kunt u het voor gebruik in GenStudio for Performance Marketing aanpassen. In deze exercitie, zult u een aantal vooraf bepaalde malplaatjes in GenStudio for Performance Marketing invoeren.
 
 In de vorige oefening, downloadde u het dossier [ CitiSignal-GSPeM-assets.zip ](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) aan uw Desktop en unzipped het. Die map bevat vier voorbeeldsjablonen die u nu in GenStudio moet importeren.
 

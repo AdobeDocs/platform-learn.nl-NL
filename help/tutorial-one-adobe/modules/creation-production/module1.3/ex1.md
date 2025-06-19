@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Configuratie: Merk
+
+Een merk onderscheidt een organisatie, product, service of concept van anderen. Sommige aspecten van een merk zijn objectief, zoals een logo, terwijl andere subjectief zijn, zoals de toon van stem.
+
+GenStudio for Performance Marketing gebruikt de rijkdom aan merkinformatie van uw merk, koppelt deze aan product- en persoonlijke informatie en bouwt een uitgebreide merkidentiteit uit. Deze merkidentiteit wordt gebruikt om de creatie van on-brand-inhoud te informeren met behulp van de generatieve AI-technologie van Adobe.
+
+Volg onderstaande stappen om uw eigen merk te maken.
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
 
