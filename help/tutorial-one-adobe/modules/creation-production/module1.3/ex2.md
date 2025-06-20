@@ -1,23 +1,21 @@
 ---
-title: Aan de slag met Adobe Express
-description: Aan de slag met Adobe Express
+title: GenStudio for Performance Marketing Configuration Personas Products Templates
+description: GenStudio for Performance Marketing Configuration Personas Products Templates
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 Configuratie: persona&#39;s, producten en sjablonen
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
-
-![ GSPeM ](./images/gspem1.png)
+In deze oefening, zult u persona&#39;s, producten en malplaatjes in GenStudio for Performance Marketing vormen.
 
 ## 1.3.2.1 Producten
 

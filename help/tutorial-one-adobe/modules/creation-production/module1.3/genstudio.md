@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,9 @@ In deze module leert u hoe u alle bovenstaande stappen zelf kunt uitvoeren en vo
 
 ## Vereisten
 
-- Toegang tot Adobe GenStudio for Performance Marketing [ https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Toegang tot Adobe GenStudio for Performance Marketing
+- Toegang tot Adobe Workfront en Adobe Workfront Planning
+- Toegang tot een Adobe Experience Manager Cloud Service-sandbox met Content Hub ingeschakeld
 
 ## Uitoefening
 
@@ -40,11 +42,11 @@ In deze oefening, zult u een merk CitiSignal in GenStudio for Performance Market
 
 [ 1.3.2 Configuratie: Personas, Producten en Malplaatjes ](./ex2.md){target="_blank"}
 
-In deze oefening, zult u persona&#39;s en producten in GenStudio for Performance Marketing vormen.
+In deze oefening, zult u persona&#39;s, producten en malplaatjes in GenStudio for Performance Marketing vormen.
 
 [ 1.3.3 de Activering van de Campagne aan Meta ](./ex3.md){target="_blank"}
 
-In deze oefening, zult u een verbinding aan Meta vormen en zult u door alle stappen lopen nodig om een advertentie te kunnen tot stand brengen, een advertentie goedkeuren gebruikend Adobe Workfront, en een advertentie aan Meta publiceren.
+In deze oefening, zult u een Campagne creëren. U configureert ook een verbinding met Meta en u doorloopt alle stappen die nodig zijn om een advertentie te kunnen maken, een advertentie goed te keuren met Adobe Workfront en een advertentie naar Meta te publiceren.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
