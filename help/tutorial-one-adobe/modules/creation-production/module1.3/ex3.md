@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Als u deze bewerking wilt voltooien, hebt u toegang nodig tot een werkende AEM Assets CS Author-omgeving met AEM Content Hub ingeschakeld. Als u oefening [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} volgt zult u toegang tot zulk een milieu hebben.
+
+>[!IMPORTANT]
+>
+>Om alle stappen in deze oefening uit te voeren, moet u toegang tot een bestaande milieu van Adobe Workfront hebben, en in die milieu moet u een project en een goedkeuringswerkschema hebben gecreeerd. Als u oefening [ Beheer van het Werkschema met Adobe Workfront ](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} volgt zult u de vereiste beschikbare opstelling hebben.
 
 >[!IMPORTANT]
 >
@@ -169,7 +173,7 @@ Ga naar **Logo&#39;s** en klik het **witte** embleem van het Citisignaal om het 
 
 ![ GSPeM ](./images/gsasset5.png)
 
-Plaats het CitiSignal-logo in de linkerbovenhoek.
+Plaats het CitiSignal-logo boven aan de afbeelding, niet te ver van het midden.
 
 ![ GSPeM ](./images/gsasset6.png)
 
@@ -223,7 +227,124 @@ Ga terug naar GenStudio for Performance Marketing. In het linkermenu, ga naar **
 
 ## 1.3.3.4 Meta-advertentie maken en goedkeuren
 
+In het linkermenu, ga **creëren**. Selecteer **Meta**.
+
+![ GSPeM ](./images/gsad1.png)
+
+Selecteer het **Meta en** malplaatje dat u vroeger invoerde, dat `--aepUserLdap---citisignal-meta-ad` wordt genoemd. Klik **Gebruik**.
+
+![ GSPeM ](./images/gsad2.png)
+
+Dan moet je dit zien. Wijzig de naam van de advertentie in `--aepUserLdap-- - Meta Ad Fiber Max` .
+
+Onder **Paramaters**, selecteer de volgende opties:
+
+- **Merk**: `--aepUserLdap-- - CitiSignal`
+- **Taal**: `English (US)`
+- **Persona**: `--aepUserLdap-- - Smart Home Families`
+- **Product**: `--aepUserLdap-- - CitiSignal Fiber Max`
+
+Klik **Uitgezocht van Inhoud**.
+
+![ GSPeM ](./images/gsad3.png)
+
+Selecteer het element `--aepUserLdap-- - neon rabbit.png` . Klik **Gebruik**.
+
+![ GSPeM ](./images/gsad4.png)
+
+Ga de herinnering `focus on lightning fast internet for big families` in en klik **produceert**.
+
+![ GSPeM ](./images/gsad5.png)
+
+Dan moet je iets dergelijks zien. Je advertenties kunnen nu worden gecontroleerd en goedgekeurd. Om dat te doen, klik **Goedkeuring van het Verzoek**, die met Adobe Workfront zal verbinden.
+
+![ GSPeM ](./images/gsad6.png)
+
+Selecteer uw Adobe Workfront-project met de naam `--aepUserLdap-- - CitiSignal Fiber Launch` . Ga uw eigen e-mailadres onder **in nodigt mensen** uit en verzekert uw rol aan **wordt geplaatst fiatteur**.
+
+![ GSPeM ](./images/gsad7.png)
+
+U kunt ook een bestaande goedkeuringsworkflow in Adobe Workfront gebruiken. Om dat te doen, klik **malplaatje van het Gebruik** en selecteer het malplaatje `--aepuserLdap-- - Approval Workflow`. Klik **verzenden**.
+
+![ GSPeM ](./images/gsad8.png)
+
+Klik **commentaren van de Mening in Workfront**, zult u nu naar de UI van het Bewijs van Adobe Workfront worden verzonden.
+
+![ GSPeM ](./images/gsad9.png)
+
+In het Bewijs van Adobe Workfront UI, klik **besluit van het Merk**.
+
+![ GSPeM ](./images/gsad10.png)
+
+Selecteer **Goedgekeurd** en klik **besluit** maken.
+
+![ GSPeM ](./images/gsad11.png)
+
+Klik **publiceren**.
+
+![ GSPeM ](./images/gsad12.png)
+
+Selecteer uw Campagne `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` en klik **publiceren**.
+
+![ GSPeM ](./images/gsad13.png)
+
+Klik **Open in Inhoud**.
+
+![ GSPeM ](./images/gsad14.png)
+
+De 4 Metaadvertenties zijn nu beschikbaar onder **Inhoud** > **Ervaringen**.
+
+![ GSPeM ](./images/gsad15.png)
+
 ## 1.3.3.5 Advertentie publiceren naar Meta
+
+Selecteer één van de advertenties en klik dan **activeren**.
+
+![ GSPeM ](./images/gsmetaad1.png)
+
+Kies a **Call to action** uit de lijst en ga een voorbeeld URL in. Klik **daarna**.
+
+![ GSPeM ](./images/gsmetaad3.png)
+
+Selecteer de Meta-account, de gekoppelde Facebook-pagina, de Meta-campagne en de Meta Ad-set.
+
+Gebruik `--aepUserLdap-- Fiber Max Ad` om een naam toe te voegen.
+
+Klik **daarna**.
+
+![ GSPeM ](./images/gsmetaad4.png)
+
+Klik **publiceren**.
+
+![ GSPeM ](./images/gsmetaad5.png)
+
+Klik **OK**.
+
+![ GSPeM ](./images/gsmetaad6.png)
+
+Het statuut van uw advertentie wordt nu geplaatst aan **het Publiceren**, die een paar notulen kan nemen.
+
+![ GSPeM ](./images/gsmetaad7.png)
+
+Na een paar notulen, zal het statuut van de advertentie in **Gepubliceerd** veranderen. Dit betekent dat de advertentie van GenStudio for Performance Marketing naar Meta is verzonden. Het betekent niet dat de advertentie al in Meta is gepubliceerd! Er zijn nog een aantal stappen te nemen in de Meta Business Account om de advertentie te maken en te publiceren zodat deze door gebruikers op de verschillende Meta-platforms kan worden bekeken.
+
+Klik **details van de Mening**.
+
+![ GSPeM ](./images/gsmetaad8.png)
+
+Klik **Open**, die u aan uw Van Bedrijfs Meta rekening zal nemen.
+
+>[!IMPORTANT]
+>
+>Als u geen toegang hebt tot de zakelijke account van Meta die is verbonden met uw omgeving, kunt u deze advertentie niet visualiseren in Meta.
+
+![ GSPeM ](./images/gsmetaad9.png)
+
+Hier is een overzicht van de advertentie die je net hebt gemaakt, maar nu in Meta.
+
+![ GSPeM ](./images/gsmetaad10.png)
+
+Je hebt deze oefening nu voltooid.
 
 ## Volgende stappen
 
