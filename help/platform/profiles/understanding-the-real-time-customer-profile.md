@@ -35,7 +35,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="Overzicht Diagram van het Profiel van de Klant in real time" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="Overzicht Diagram van het Profiel van de Klant in real time"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463974?format=jpeg&nocache=1740415066741&captions=dut" alt="Overzicht Diagram van het Profiel van de Klant in real time"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
