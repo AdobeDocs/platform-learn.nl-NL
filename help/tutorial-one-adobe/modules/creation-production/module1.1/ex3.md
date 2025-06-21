@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: 2dd9c43bbf348805fe6c271d92b3db51fd25ca6f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project
 
 In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg het Token van de Toegang** en selecteer **verzend**. De reactie zou een nieuwe **versnelling** moeten bevatten.
 
-![ Postman ](./images/ioauthresp.png){zoomable="yes"}
+![ Postman ](./images/ioauthresp.png)
 
 ## 1.1.3.3 Programmaticaal communiceren met een PSD-bestand
 
@@ -33,7 +33,7 @@ Download [ burgerschap-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){ta
 
 Open **burgerschap-fiber.psd** in Photoshop.
 
-![ Azure Opslag ](./images/ps7.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps7.png)
 
 In de **ruit van Lagen**, heeft de ontwerper van het dossier een unieke naam aan elke laag gegeven. U kunt de laaginformatie zien door het PSD-bestand te openen in Photoshop, maar u kunt dit ook via programmacode doen.
 
@@ -45,11 +45,11 @@ Laten we nu de groeten overbrengen aan Photoshop API&#39;s om te testen of alle 
 
 In de inzameling **Photoshop**, open verzoek **Photoshop Hello (de Auth van de Test.)**. Selecteer **verzenden**.
 
-![ Azure Opslag ](./images/ps10.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps10.png)
 
 U zou het antwoord **Onthaal aan Photoshop API moeten ontvangen!**.
 
-![ Azure Opslag ](./images/ps11.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps11.png)
 
 Daarna, om programmatically met het dossier van PSD **te interactie aan te gaan  Citisignaal-fiber.psd**, moet u het aan uw opslagrekening uploaden. U kunt dat handmatig doen, door het bestand met Azure Storage Explorer naar uw container te slepen en neer te zetten, maar dit keer moet u het doen via de API.
 
@@ -64,23 +64,23 @@ In Postman, open het verzoek **uploadt PSD aan Azure Rekening van de Opslag**. I
 
 Aangezien u in het verzoek **kunt zien uploadt PSD aan Azure Rekening van de Opslag**, wordt URL gevormd om deze variabelen te gebruiken.
 
-![ Azure Opslag ](./images/ps12.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps12.png)
 
 In **Lichaam**, selecteer het dossier **burgerschap-fiber.psd**.
 
-![ Azure Opslag ](./images/ps13.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps13.png)
 
 Het scherm moet er zo uitzien. Selecteer **verzenden**.
 
-![ Azure Opslag ](./images/ps14.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps14.png)
 
 Deze lege reactie moet u terugkrijgen vanuit Azure, wat betekent dat uw bestand in uw container wordt opgeslagen in uw Azure Storage-account.
 
-![ Azure Opslag ](./images/ps15.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps15.png)
 
 Als u Azure Storage Explorer gebruikt om uw bestand te bekijken, moet u de map vernieuwen.
 
-![ Azure Opslag ](./images/ps16.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps16.png)
 
 ### Photoshop API - Get manifest
 
@@ -110,25 +110,92 @@ Selecteer **verzenden**.
 
 In het antwoord ziet u nu een koppeling. Aangezien het soms enige tijd kan duren om bewerkingen in Photoshop uit te voeren, verschaft Photoshop een statusbestand als antwoord op de meeste binnenkomende aanvragen. Als u wilt weten wat er met uw verzoek gebeurt, moet u het statusbestand lezen.
 
-![ Azure Opslag ](./images/ps17.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps17.png)
 
 Om het statusdossier te lezen, open het verzoek **Photoshop - krijgt PS Status**. U kunt zien dat dit verzoek een variabele als URL gebruikt, die een variabele is die door het vorige verzoek wordt geplaatst dat u verzendt, **Photoshop - krijgt PSD Manifest**. De variabelen worden geplaatst in **Manuscripten** van elk verzoek. Selecteer **verzenden**.
 
-![ Azure Opslag ](./images/ps18.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps18.png)
 
 Het scherm moet er zo uitzien. Momenteel, wordt de status geplaatst aan **hangend**, wat betekent dat het proces nog niet heeft voltooid.
 
-![ Azure Opslag ](./images/ps19.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps19.png)
 
 Selecteer verzenden een paar meer tijden op **Photoshop - krijgt PS Status**, tot de statusveranderingen in **succesvol**. Dit kan een paar minuten duren.
 
 Wanneer de reactie beschikbaar is, ziet u dat het JSON-bestand informatie bevat over alle lagen van het PSD-bestand. Dit is nuttige informatie, aangezien de dingen zoals de laagnaam of laagidentiteitskaart kunnen worden geïdentificeerd.
 
-![ Azure Opslag ](./images/ps20.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps20.png)
 
 Zoek bijvoorbeeld naar de tekst `2048x2048-cta` . Uw scherm moet er als volgt uitzien:
 
-![ Azure Opslag ](./images/ps21.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps21.png)
+
+
+### Photoshop API - SmartObject Replace
+
+Vervolgens moet u de achtergrond van het bestand Citisignaal-fiber.psd wijzigen door de afbeelding te gebruiken die u in een van de vorige oefeningen met Firefly hebt gegenereerd.
+
+In Postman, open het verzoek **Photoshop - SmartObject vervangt** en gaat naar **Lichaam**.
+
+Uw scherm moet er als volgt uitzien:
+
+- eerst wordt een invoerbestand opgegeven: `citisignal-fiber.psd`
+- ten tweede wordt de te wijzigen laag opgegeven met het nieuwe achtergrondbestand dat moet worden gebruikt
+- ten derde wordt een uitvoerbestand opgegeven: `citisignal-fiber-replacedbg.psd`
+
+```json
+  {
+    "inputs": [
+        {
+            "storage": "azure",
+            "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+        }
+    ],
+    "options": {
+        "layers": [
+            {
+                "name": "2048x2048-image",
+                "input": {
+                    "href": "{{FIREFLY_COMPLETED_ASSET_URL}}",
+                    "storage": "external"
+                }
+            }
+        ]
+    },
+    "outputs": [
+        {
+            "storage": "azure",
+            "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{AZURE_STORAGE_SAS_WRITE}}",
+            "type": "vnd.adobe.photoshop",
+            "overwrite": true
+        }
+    ]
+}
+```
+
+Het uitvoerbestand heeft een andere naam, omdat u het oorspronkelijke invoerbestand niet wilt overschrijven.
+
+Selecteer **verzenden**.
+
+![ Azure Opslag ](./images/psbg23.png)
+
+Net als voorheen bevat het antwoord een koppeling die verwijst naar het statusbestand en de voortgang bijhoudt.
+
+![ Azure Opslag ](./images/psbg22.png)
+
+Om het statusdossier te lezen, open het verzoek **Photoshop - krijg PS Status** en selecteer **verzend**. Als de status niet aan **wordt geplaatst slaagde** onmiddellijk, wacht een paar seconden en selecteert dan **verzend** opnieuw.
+
+Selecteer de URL om het uitvoerbestand te downloaden.
+
+![ Azure Opslag ](./images/psbg24.png)
+
+Open **burgerschap-vezel-vervangt bg.psd** na het downloaden van het dossier aan uw computer. De achtergrondafbeelding is gewijzigd in een vergelijkbare afbeelding, zoals hieronder:
+
+![ Azure Opslag ](./images/psbg25.png)
+
+U kunt dit bestand ook in uw container zien met Azure Storage Explorer.
+
+![ Azure Opslag ](./images/psbg26.png)
 
 ### Photoshop API - Tekst wijzigen
 
@@ -138,62 +205,62 @@ In Postman, open het verzoek **Photoshop - de Tekst van de Verandering** en ga n
 
 Uw scherm moet er als volgt uitzien:
 
-- eerst wordt een invoerbestand opgegeven: `citisignal-fiber.psd`
+- eerst wordt een invoerbestand opgegeven: `citisignal-fiber-replacedbg.psd` . Dit is het bestand dat in de vorige stap is gegenereerd toen u de achtergrondafbeelding hebt gewijzigd.
 - vervolgens wordt de te wijzigen laag opgegeven, waarbij de tekst moet worden gewijzigd in
 - ten derde wordt een uitvoerbestand opgegeven: `citisignal-fiber-changed-text.psd`
 
 ```json
   {
-    "inputs": [
+  "inputs": [
+    {
+      "storage": "external",
+      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{AZURE_STORAGE_SAS_READ}}"
+    }
+  ],
+  "options": {
+    "layers": [
       {
-        "storage": "external",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-      }
-    ],
-    "options": {
-      "layers": [
-        {
-          "name": "2048x2048-cta",
-          "text": {
-            "content": "Get Fiber now!"
-          }
+        "name": "2048x2048-cta",
+        "text": {
+          "content": "Get Fiber now!"
         }
-      ]
-    },
-    "outputs": [
-      {
-        "storage": "azure",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-        "type": "vnd.adobe.photoshop",
-        "overwrite": true
       }
     ]
-  }
+  },
+  "outputs": [
+    {
+      "storage": "azure",
+      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+      "type": "vnd.adobe.photoshop",
+      "overwrite": true
+    }
+  ]
+}
 ```
 
 Het uitvoerbestand heeft een andere naam, omdat u het oorspronkelijke invoerbestand niet wilt overschrijven.
 
 Selecteer **verzenden**.
 
-![ Azure Opslag ](./images/ps23.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps23.png)
 
 Net als voorheen bevat het antwoord een koppeling die verwijst naar het statusbestand en de voortgang bijhoudt.
 
-![ Azure Opslag ](./images/ps22.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps22.png)
 
 Om het statusdossier te lezen, open het verzoek **Photoshop - krijg PS Status** en selecteer **verzend**. Als de status niet aan **wordt geplaatst slaagde** onmiddellijk, wacht een paar seconden en selecteert dan **verzend** opnieuw.
 
 Selecteer de URL om het uitvoerbestand te downloaden.
 
-![ Azure Opslag ](./images/ps24.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps24.png)
 
 Open **burgerschap-vezel-veranderd-text.psd** na het downloaden van het dossier aan uw computer. U zou placeholder voor call to action moeten zien is vervangen door de tekst **krijgt nu Vezel!**.
 
-![ Azure Opslag ](./images/ps25.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps25.png)
 
 U kunt dit bestand ook in uw container zien met Azure Storage Explorer.
 
-![ Azure Opslag ](./images/ps26.png){zoomable="yes"}
+![ Azure Opslag ](./images/ps26.png)
 
 ## Volgende stappen
 
