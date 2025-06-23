@@ -5,9 +5,9 @@ feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
-thumbnail: 29795.jpg
+last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 8092c5f120a51b35f068261b70131ef303b4c51d
+source-git-commit: b0466e114d657c2584b23bfd76e4f6c185c83c06
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van Query Service en Data Distiller
 
-Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in het datumpomeer zijn opgeslagen, verkennen, valideren en transformeren met behulp van SQL, met verbeterde mogelijkheden zoals gegevensuitvoer en planning die beschikbaar zijn via de gegevensinvoegtoepassing Distiller. Deze video biedt een overzicht van de kernfuncties om gebruikers te helpen begrijpen hoe u Query Service kunt gebruiken in verschillende platformgebaseerde toepassingen. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
+Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in het datumpomeer zijn opgeslagen, verkennen, valideren en transformeren met behulp van SQL, met verbeterde mogelijkheden zoals gegevensuitvoer en planning die beschikbaar zijn via de gegevensinvoegtoepassing Distiller. Deze video biedt een overzicht van de kernfuncties om gebruikers te helpen begrijpen hoe u Query Service kunt gebruiken in verschillende platformgebaseerde toepassingen. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
@@ -186,7 +186,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445683?format=jpeg&nocache=1740415312076&captions=dut" alt="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="De gegevens van uw klant opladen voor elektrificatieervaringen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454948?format=jpeg&nocache=1740415313218&captions=dut" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
