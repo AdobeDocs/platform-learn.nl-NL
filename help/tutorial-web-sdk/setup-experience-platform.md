@@ -3,10 +3,10 @@ title: Gegevens streamen naar Adobe Experience Platform met Platform Web SDK
 description: Leer hoe u webgegevens kunt streamen naar Adobe Experience Platform met Web SDK. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '1994'
-ht-degree: 0%
+source-wordcount: '2172'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [ dataset ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
@@ -74,7 +74,7 @@ Een dataset wordt nu gevormd om te beginnen gegevens van uw implementatie van he
 
 Nu kunt u uw [!UICONTROL datastream] configureren om gegevens naar [!UICONTROL Adobe Experience Platform] te verzenden. De gegevensstroom is het verband tussen uw markeringsbezit, het Platform Edge Network, en de dataset van Experience Platform.
 
-1. Open de [&#128279;](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0&rbrace; Gegevens
+1. Open de ](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0} Gegevens[
 1. Selecteer **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Open de datastream u in [ creeerde vormen een datastream ](configure-datastream.md) les, `Luma Web SDK`
 
@@ -160,7 +160,7 @@ Om te bevestigen dat de gegevens in het gegevensmeer van Platform zijn geland, k
 
 >[!INFO]
 >
->  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
+>  Voor meer details over de vraagdienst van Adobe Experience Platform, zie [ gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
 
 
 ## De dataset en het schema voor het Profiel van de Klant in real time inschakelen
@@ -252,11 +252,15 @@ Eerst moet u meer voorbeeldgegevens genereren. Herhaal de stappen uit eerdere ve
 
 U hebt nu Platform Web SDK for Experience Platform (en Real-Time CDP) ingeschakeld! En Journey Optimizer! En Customer Journey Analytics!).
 
+## Een publiek met Edge-evaluatie maken
+
+Voor klanten van Real-Time Customer Data Platform en Journey Optimizer wordt aangeraden deze exercitie af te ronden.
+
+Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, zult u snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit tot stand brengen zodat u de Profielen van de Klant in real time met Real-Time Customer Data Platform en Journey Optimizer kunt gebruiken. Vervolgens maakt u een publiek op basis van deze gegevens.
+
 ### Een kwaliteitsschema maken en voorbeeldgegevens invoeren
 
-Deze exercitie zal naar verwachting worden voltooid voor klanten van Real-Time Customer Data Platform en Journey Optimizer.
-
-Wanneer de gegevens van SDK van het Web in Adobe Experience Platform worden opgenomen, kan het door andere gegevensbronnen worden verrijkt u in Platform hebt ingebed. Bijvoorbeeld, wanneer een gebruiker zich bij de plaats van de Luma aanmeldt, wordt een identiteitsgrafiek gebouwd in Experience Platform en alle andere profiel-toegelaten datasets kunnen potentieel samen worden samengevoegd om de Profielen van de Klant in real time te bouwen. Om dit in actie te zien, creeer snel een andere dataset in Adobe Experience Platform met wat gegevens van de steekproefloyaliteit zodat u de Profielen van de Klant in real time met Real-Time Customer Data Platform en Journey Optimizer kunt gebruiken. Aangezien u reeds soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
+Aangezien u reeds soortgelijke oefeningen hebt uitgevoerd, zullen de instructies kort zijn.
 
 Maak het loyaliteitsschema:
 
@@ -282,9 +286,33 @@ Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
 
    ![ Schema van de Loyalty ](assets/web-channel-loyalty-dataset.png)
 
+
+### Een samenvoegingsbeleid voor Active-on-Edge instellen
+
+Alle soorten publiek worden gemaakt met een samenvoegbeleid. Het beleid van de fusie leidt tot verschillende &quot;meningen&quot;van een profiel, kan een ondergroep datasets bevatten, en schrijft een prioritaire orde voor wanneer de verschillende datasets de zelfde profielattributen bijdragen. Om aan de rand te worden geëvalueerd, moet een publiek een samenvoegbeleid gebruiken met de **[!UICONTROL Active-On-Edge Merge Policy]** instelling heeft.
+
+
+>[!IMPORTANT]
+>
+>Slechts één samenvoegbeleid per sandbox kan de instelling **[!UICONTROL Active-On-Edge Merge Policy]** hebben
+
+
+1. Open de Experience Platform- of Journey Optimizer-interface en zorg ervoor dat u zich in de ontwikkelomgeving bevindt die u voor de zelfstudie gebruikt.
+1. Ga naar **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** pagina
+1. Open het dialoogvenster **[!UICONTROL Default Merge Policy]** (waarschijnlijk `Default Timebased` genoemd)
+   ![Een doelgroep maken](assets/merge-policy-open-default.png)
+1. De instelling **[!UICONTROL Active-On-Edge Merge Policy]** inschakelen
+1. Selecteren **[!UICONTROL Next]**
+
+   ![Een doelgroep maken](assets/merge-policy-set-active-on-edge.png)
+1. Blijf **[!UICONTROL Next]** selecteren om door de andere stappen van de workflow te gaan en selecteer **[!UICONTROL Finish]** om uw instellingen op te slaan
+   ![Een doelgroep maken](assets/merge-policy-finish.png)
+
+U kunt nu een publiek maken dat op de Edge wordt geëvalueerd.
+
 ### Een publiek maken
 
-Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Bouw een snel publiek u in uw Webcampagne kunt gebruiken:
+Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. Maak een eenvoudig publiek dat u kunt gebruiken in Real-Time CDP of Journey Optimizer:
 
 1. Ga in de Experience Platform- of Journey Optimizer-interface naar **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in de linkernavigatie
 1. Selecteren **[!UICONTROL Create audience]**
@@ -301,6 +329,11 @@ Groepprofielen van soorten publiek worden gecombineerd rond algemene kenmerken. 
 1. Selecteren **[!UICONTROL Save]**
 
    ![De doelgroep definiëren](assets/web-campaign-define-audience.png)
+
+>[!NOTE]
+>
+> Aangezien we het standaardsamenvoegbeleid instellen als **[!UICONTROL Active-On-Edge Merge Policy]** , wordt het publiek dat u hebt gemaakt automatisch gekoppeld aan dit samenvoegbeleid.
+
 
 Omdat dit een heel eenvoudig publiek is, kunnen we de evaluatiemethode van Edge gebruiken. Het publiek van Edge evalueert op de rand, zodat in het zelfde verzoek dat door Web SDK aan Platform Edge Network wordt gedaan, kunnen wij de publieksdefinitie evalueren en onmiddellijk bevestigen als de gebruiker zal kwalificeren.
 
