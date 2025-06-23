@@ -186,7 +186,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445683?format=jpeg&nocache=1740415312076&captions=dut" alt="Valideer gegevens in het gegevensbestand met de Dienst van de Vraag"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="De gegevens van uw klant opladen voor elektrificatieervaringen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454948?format=jpeg&nocache=1740415313218&captions=dut" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
