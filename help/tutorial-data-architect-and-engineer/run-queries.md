@@ -25,7 +25,7 @@ Met de Adobe Experience Platform Query Service kunt u uw gegevens begrijpen door
 **de Architecten van Gegevens 0&rbrace; en** Ingenieurs van Gegevens **zullen de vraagdienst buiten dit leerprogramma moeten gebruiken.**
 
 Alvorens u met de oefeningen begint, bekijk deze korte video om meer over de Dienst van de Vraag te leren:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464267?learn=on&enablevpops&captions=dut)
 
 ## Vereiste machtigingen
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in het datumpomeer zijn opgeslagen, verkennen, valideren en transformeren met behulp van SQL, met verbeterde mogelijkheden zoals gegevensuitvoer en planning die beschikbaar zijn via de gegevensinvoegtoepassing Distiller. Deze video biedt een overzicht van de kernfuncties om gebruikers te helpen begrijpen hoe u Query Service kunt gebruiken in verschillende platformgebaseerde toepassingen. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464267?learn=on&enablevpops&captions=dut)
 
 ## Basisgebruik
 
