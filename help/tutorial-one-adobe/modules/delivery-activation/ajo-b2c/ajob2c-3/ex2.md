@@ -1,341 +1,156 @@
 ---
-title: Offer Decisioning - Je voorstellen en beslissing-id configureren
-description: Offer Decisioning - Je voorstellen en beslissing-id configureren
+title: Een reis configureren met pushberichten
+description: Een reis configureren met pushberichten
 kt: 5342
 doc-type: tutorial
-exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 1%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
-# 3.3.2 Uw aanbiedingen en beslissingen configureren
+# 3.3.2 Vorm een reis met dupberichten
 
-## 3.3.2.1 Maak je persoonlijke aanbiedingen
 
-In deze oefening, zult u vier **Gepersonaliseerde Aanbiedingen** creëren. Hier volgen de details waarmee u rekening moet houden bij het maken van deze aanbiedingen:
+## 3.4.4.6 Een nieuwe gebeurtenis maken
 
-| Naam | Datumbereik | Afbeeldingskoppeling voor e-mail | Afbeeldingskoppeling voor web | Tekst | Prioriteit | Subsidiabiliteit | Taal | Bijschriftfrequentie | Afbeeldingsnaam |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
-| `--aepUserLdap-- - AirPods Max` | vandaag - 1 maand later | https://bit.ly/4a9RJ5d | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | all - Vrouwelijke klanten | Engels (Verenigde Staten) | 3 | Apple AirPods Max- Vrouwelijk.jpg |
-| `--aepUserLdap-- - Galaxy S24` | vandaag - 1 maand later | https://bit.ly/3W8yuDv | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | all - Vrouwelijke klanten | Engels (Verenigde Staten) | 3 | Galaxy S24 - Female.jpg |
-| `--aepUserLdap-- - Apple Watch` | vandaag - 1 maand later | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | all - Mannelijke klanten | Engels (Verenigde Staten) | 3 | Apple Watch - Male.jpg |
-| `--aepUserLdap-- - Galaxy Watch 7` | vandaag - 1 maand later | https://bit.ly/4gTrkeo | Kies uit Assets-bibliotheek | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | all - Mannelijke klanten | Engels (Verenigde Staten) | 3 | Galaxy Watch7 - Male.jpg |
+Ga naar **Journey Optimizer**. In het linkermenu, ga naar **Configuraties** en klik **leiden** onder **Gebeurtenissen**.
 
-{style="table-layout:auto"}
+![ ACOP ](./images/acopmenu.png)
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Op het **scherm van Gebeurtenissen**, zult u een mening gelijkend op dit zien. Klik **creëren Gebeurtenis**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ ACOP ](./images/add.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U ziet dan een lege gebeurtenisconfiguratie.
+Geef uw gebeurtenis eerst een naam zoals deze: `--aepUserLdap--StoreEntryEvent` en stel een beschrijving in op `Store Entry Event` .
+Daarna is het **Type van Gebeurtenis** selectie. Selecteer **Eenheids**.
+Daarna is het **selecteren van het Type van identiteitskaart van de Gebeurtenis 0}.** Selecteer **Gegenereerd Systeem**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ ACOP ](./images/eventname.png)
 
-In het linkermenu, klik **Aanbiedingen** en ga dan naar **Aanbiedingen**. Klik op **+ Voorstel maken** .
+Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1` .
 
-![ Regel van het Besluit ](./images/offers1.png)
+Na het selecteren van het Schema, zult u een aantal gebieden zien die in de **sectie van de Lading** worden geselecteerd. Uw gebeurtenis is nu volledig geconfigureerd.
 
-Dan zie je deze popup. Selecteer **Gepersonaliseerde aanbieding** en klik **daarna**.
+Klik **sparen**.
 
-![ Regel van het Besluit ](./images/offers2.png)
+![ ACOP ](./images/eventschema.png)
 
-U bent nu op de **mening van Details**.
+Uw gebeurtenis is nu geconfigureerd en opgeslagen. Klik opnieuw op uw gebeurtenis om **te openen geef het 1} scherm van de Gebeurtenis {opnieuw uit.**
 
-![ Regel van het Besluit ](./images/offers3.png)
+![ ACOP ](./images/eventdone.png)
 
-In dit geval moet u de aanbieding configureren `--aepUserLdap-- - AirPods Max` . Gebruik de informatie in de bovenstaande tabel om de velden in te vullen. In dit voorbeeld, is de naam van de Gepersonaliseerde Aanbieding **vangeluw - Max AirPods**. Ook, plaats de **datum en de tijd van het Begin** aan vandaag, en plaats de **datum en de tijd van het Eind** aan een datum in een maand van nu.
+Beweeg over het **gebied van de Payload** en klik op het **3} pictogram van de Payload van de Mening {.**
 
-Als je klaar bent, moet je dit hebben. Klik **daarna**.
+![ ACOP ](./images/hover.png)
 
-![ Regel van het Besluit ](./images/offers4.png)
+U zult nu een voorbeeld van de verwachte nuttige lading zien.
 
-U zult dan dit zien:
+Uw gebeurtenis heeft een unieke orchestration eventID, die u kunt vinden door neer in die lading te scrollen tot u `_experience.campaign.orchestration.eventID` ziet.
 
-![ Regel van het Besluit ](./images/constraints.png)
+![ ACOP ](./images/payloadeventID.png)
 
-Selecteer **door bepaalde besluitvormingsregel** en klik **+** pictogram om de regel **allen toe te voegen - Vrouwelijke Klanten**.
+De gebeurtenis-id is wat naar Adobe Experience Platform moet worden verzonden om de Reis te activeren die u in de volgende stap maakt. Schrijf deze eventID neer, aangezien u het in de volgende stap zult nodig hebben.
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
-Vul de **Prioriteit** zoals vermeld in de bovengenoemde lijst uit. Klik vervolgens op **+ Afbeelding maken** om het aantal keren te definiëren dat deze aanbieding aan een klant kan worden getoond.
+Klik **O.K.**, die door **wordt gevolgd annuleert**.
 
-![ Regel van het Besluit ](./images/constraints1.png)
+## 3.4.4.7 Een reis maken
 
-Selecteer de volgende opties voor de uitlijning:
+In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
-- **kies het Bedekken gebeurtenis**: **gebeurtenis van het Besluit**
-- **Afdekkend type**: **per profiel (pas GLB voor elk profiel toe)**
-- **de gebeurtenistelling van de Aftapping**: **3**
-- **Terugstellen die frequentie** begrenzen: **Dagelijks**
-- **Elke**: **1 dag**
+![ DSN ](./images/sjourney1.png)
 
-Dit zorgt ervoor dat dit voorstel niet meer dan drie keer per dag per klant wordt weergegeven.
+Dan zie je dit. Geef je reis een naam. Gebruik `--aepUserLdap-- - Store Entry journey` . Klik **sparen**.
 
-Klik **creëren**.
+![ DSN ](./images/sjourney3.png)
 
-![ Regel van het Besluit ](./images/constraints2.png)
+Eerst, moet u uw gebeurtenis toevoegen als uitgangspunt van uw reis. Zoek de gebeurtenis `--aepUserLdap--StoreEntryEvent` en sleep deze naar het canvas. Klik **sparen**.
 
-Dan ben je hier weer. Klik **daarna**.
+![ DSN ](./images/sjourney4.png)
 
-![ Regel van het Besluit ](./images/constraints3.png)
+Daarna, onder **Acties**, onderzoek naar de **Duw** actie. De belemmering en laat vallen **duw** actie op het canvas.
 
-U moet nu **Vertegenwoordigingen** tot stand brengen. De vertegenwoordiging is een combinatie a **Plaatsing** en een echt middel.
+Plaats de **Categorie** aan **Marketing** en selecteer een drukkend oppervlak dat u toelaat om pushberichten te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **duw-iOS-Android**.
 
-Voor **Vertegenwoordiging 1**, selecteer:
+>[!NOTE]
+>
+>Een Kanaal in Journey Optimizer moet bestaan dat de **Oppervlakte van de App** zoals eerder herzien gebruikt.
 
-- Kanaal: Web
-- Plaatsing: Web - Afbeelding
-- Inhoud: URL
-- Openbare plaats: kopieer URL van de kolom **Verbinding van het Beeld voor Web** in de bovengenoemde lijst
+![ ACOP ](./images/journeyactions1push.png)
 
-![ Regel van het Besluit ](./images/addcontent1.png)
+De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
 
-Alternatief, kunt u **bibliotheek van Activa** voor de inhoud selecteren en dan **klikken doorbladert**.
+![ ACOP ](./images/journeyactions2push.png)
 
-![ Regel van het Besluit ](./images/addcontent2.png)
+Dan zie je dit. Klik het **verpersoonlijkings** pictogram voor het **gebied van de Titel**.
 
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **Max Apple AirPods - Female.jpg**. Dan, klik **Uitgezocht**.
+![ Duw ](./images/bp5.png)
 
-![ Regel van het Besluit ](./images/addcontent3.png)
+Dan zie je dit. U kunt nu elk profiel rechtstreeks selecteren in het realtime profiel van de klant.
 
-Dan zie je dit. Klik op **+ Weergave toevoegen** .
+Onderzoek naar het gebied **Voornaam**, dan klik het **+** pictogram naast het gebied **Voornaam**. Vervolgens ziet u het personalisatietoken voor Voornaam die wordt toegevoegd: **{{profile.person.name.firstName}}** .
 
-![ Regel van het Besluit ](./images/addcontentrep20.png)
+![ Duw ](./images/bp9.png)
 
-Voor **Vertegenwoordiging 2**, selecteer:
+Voeg vervolgens de tekst **toe, welkom in onze winkel!** behind **{{profile.person.name.firstName}}** .
 
-- Kanaal: E-mail
-- Plaatsing: E-mail - Afbeelding
-- Inhoud: URL
-- Openbare plaats: uitgezochte **bibliotheek van Activa**. Klik **doorbladeren**
+Klik **sparen**.
 
-![ Regel van het Besluit ](./images/addcontentrep21.png)
+![ Duw ](./images/bp10.png)
 
-U zult dan popup van de Bibliotheek van Assets zien, ga naar de omslag **enablement-activa** en selecteer het beelddossier **Max Apple AirPods - Female.jpg**. Dan, klik **Uitgezocht**.
+U hebt dit nu. Klik het **verpersoonlijkings** pictogram voor het **3} gebied van het Lichaam {.**
 
-![ Regel van het Besluit ](./images/addcontent3b.png)
+![ Duw ](./images/bp11.png)
 
-Dan zie je dit. Klik vervolgens op **+ Voorstelling toevoegen** .
+Ga deze tekst **in Klik hier om een 10% korting te krijgen wanneer u vandaag koopt!** en klik **sparen**.
 
-![ Regel van het Besluit ](./images/addcontentrep20b.png)
+![ Duw ](./images/bp12.png)
 
-Voor **Vertegenwoordiging 3**, selecteer:
+Dan heb je dit. Klik op de pijl in de linkerbovenhoek om terug te gaan naar uw reis.
 
-- Kanaal: niet-digitaal
-- Plaatsing: niet-digitaal - tekst
+![ Journey Optimizer ](./images/bp12a.png)
 
-Vervolgens moet u inhoud toevoegen. In dit geval betekent dit dat de tekst wordt toegevoegd die moet worden gebruikt als een oproep tot actie.
+Klik **sparen** om uw duwactie te sluiten.
 
-Selecteer **Douane** en klik **toevoegen Inhoud**.
+![ DSN ](./images/sjourney8.png)
 
-![ Regel van het Besluit ](./images/addcontentrep31.png)
+Klik **publiceren**.
 
-Dan zie je deze popup.
+![ DSN ](./images/sjourney10.png)
 
-![ Regel van het Besluit ](./images/addcontent3text.png)
+Klik **publiceren** opnieuw.
 
-Kijk naar het **1&rbrace; gebied van de Tekst &lbrace;van de bovengenoemde lijst en ga die tekst hier in, in dit geval: `{{ profile.person.name.firstName }}, 10% discount on AirPods Max`.**
+![ DSN ](./images/sjourney10a.png)
 
-U zult ook opmerken dat u om het even welk profielattribuut kunt selecteren en het als dynamisch gebied in de aanbiedingstekst opnemen. In dit voorbeeld zorgt het veld `{{ profile.person.name.firstName }}` ervoor dat de voornaam van de klant die dit aanbod ontvangt, wordt opgenomen in de aanbiedingstekst.
+Uw reis is nu gepubliceerd.
 
-Dan zie je dit. Klik **sparen**.
+![ DSN ](./images/sjourney11.png)
 
-![ Regel van het Besluit ](./images/addcontentrep3text.png)
+## 3.4.4.8 Test uw reis en pushbericht
 
-U hebt dit nu. Klik **daarna**.
+In uw DX demo 2.0 mobiele toepassing, ga naar het **scherm van Montages**. Klik de **knoop van de Ingang van de Opslag**.
 
-![ Regel van het Besluit ](./images/addcontentrep3textdone.png)
+>[!NOTE]
+>
+>De **knoop van de Ingang van de Opslag** wordt momenteel uitgevoerd. U vindt deze nog niet in de app.
 
-U zult dan een overzicht van uw nieuwe **Gepersonaliseerde Aanbieding** zien. Klik **Afwerking**.
+![ DSN ](./images/demo1b.png)
 
-![ Regel van het Besluit ](./images/offeroverview.png)
+Zorg ervoor om app onmiddellijk te sluiten na het klikken van het **pictogram van de Ingang van de Opslag**, anders zal het duwbericht niet worden getoond.
 
-Klik **sparen en keur** goed.
+Na een paar seconden, zult u het bericht zien verschijnen.
 
-![ Regel van het Besluit ](./images/saveapprove.png)
+![ DSN ](./images/demo2.png)
 
-Je ziet dan dat je nieuwe persoonlijke aanbieding beschikbaar komt in het Overzicht van aanbiedingen:
-
-![ Regel van het Besluit ](./images/offeroverview1.png)
-
-Herhaal nu de bovenstaande stappen om de drie andere persoonlijke aanbiedingen te maken voor de producten die u in de bovenstaande tabel vindt.
-
-Wanneer gedaan, zouden uw **Overzichten van de Aanbieding** scherm voor **Gepersonaliseerde Aanbiedingen** al uw aanbiedingen moeten tonen.
-
-![ Definitieve Aanbiedingen ](./images/finaloffers.png)
-
-## 3.3.2.2 Maak je fallback-aanbieding
-
-Na het creëren van vier Gepersonaliseerde Aanbiedingen, zou u a **Aanbieding van de Fallback** nu moeten vormen.
-
-Zorg ervoor u in de **mening van Aanbiedingen** bent. Klik op **+ Voorstel maken** .
-
-![ Regel van het Besluit ](./images/createoffer.png)
-
-Dan zie je deze popup. Selecteer {de aanbieding van 0} Fallback **en klik** daarna **.**
-
-![ Regel van het Besluit ](./images/foffers2.png)
-
-Dan zie je dit. Voer deze naam in voor uw fallback-aanbieding: `--aepUserLdap-- - CitiSignal Fallback Offer` . Klik **daarna**.
-
-![ Regel van het Besluit ](./images/foffers4.png)
-
-U moet nu **Vertegenwoordigingen** tot stand brengen. De vertegenwoordiging is een combinatie a **Plaatsing** en een echt middel.
-
-Voor **Vertegenwoordiging 1**, selecteer:
-
-- **Kanaal**: **Web**
-- **Plaatsing**: **Web - Beeld**
-- **Inhoud**: **bibliotheek van Activa**
-
-Klik **doorbladeren** om uw beeld te selecteren.
-
-![ Regel van het Besluit ](./images/addcontent1fb.png)
-
-U zult dan popup van de Bibliotheek van Assets zien, naar de omslag **citi-signaal-beelden** gaan en het beelddossier **app-Banner-Ad.jpg** selecteren. Dan, klik **Uitgezocht**.
-
-![ Regel van het Besluit ](./images/addcontent3fb.png)
-
-Dan zie je dit. Klik op **+ Voorstelling toevoegen** .
-
-![ Regel van het Besluit ](./images/addcontentrep20fb.png)
-
-Voor **Vertegenwoordiging 2**, selecteer:
-
-- **Kanaal**: **E-mail**
-- **Plaatsing**: **E-mail - Beeld**
-- **Inhoud**: **bibliotheek van Activa**
-
-Klik **doorbladeren** om uw beeld te selecteren.
-
-![ Regel van het Besluit ](./images/addcontentrep21fb.png)
-
-U zult dan popup van de Bibliotheek van Assets zien, naar de omslag **citi-signaal-beelden** gaan en het beelddossier **app-Banner-Ad.jpg** selecteren. Dan, klik **Uitgezocht**.
-
-![ Regel van het Besluit ](./images/addcontent3bfb.png)
-
-Dan zie je dit. Klik op **+ Voorstelling toevoegen** .
-
-![ Regel van het Besluit ](./images/addcontentrep20bfb.png)
-
-Voor **Vertegenwoordiging 3**, selecteer:
-
-- **Kanaal**: **niet-digitaal**
-- **Plaatsing**: **niet-digitaal - Tekst**
-- **Inhoud**: **Douane**
-
-Klik **toevoegen Inhoud**.
-
-![ Regel van het Besluit ](./images/addcontentrep21text.png)
-
-Dan zie je deze popup. Ga de tekst `{{ profile.person.name.firstName }}, download the CitiSignal app now!` in en klik **sparen**.
-
-![ Regel van het Besluit ](./images/faddcontent3text.png)
-
-Dan zie je dit. Klik **daarna**.
-
-![ Regel van het Besluit ](./images/faddcontentrep3.png)
-
-U zult dan een overzicht van uw nieuwe **Aanbieding van de Fallback** zien. Klik **Afwerking**.
-
-![ Regel van het Besluit ](./images/fofferoverview.png)
-
-Tot slot klik **sparen en keur** goed.
-
-![ Regel van het Besluit ](./images/saveapprovefb.png)
-
-In uw **Overzichten van de Aanbieding** scherm, zult u dit nu zien:
-
-![ Definitieve Aanbiedingen ](./images/ffinaloffers.png)
-
-## 3.3.2.3 Maak uw collectie
-
-Een inzameling wordt gebruikt aan **filter** uit een ondergroep aanbiedingen van de gepersonaliseerde lijst van de aanbieding en gebruik dat als deel van een Besluit om het besluitvormingsproces te versnellen.
-
-Ga naar **Inzamelingen**. Klik op **+ Verzameling maken** .
-
-![ Regel van het Besluit ](./images/collections.png)
-
-Dan zie je deze popup. Configureer uw verzameling op deze manier. Klik **daarna**.
-
-- Naam van verzameling: gebruik `--aepUserLdap-- - CitiSignal Collection`
-- Selecteer **creeer statische inzameling**.
-
-Klik **daarna**.
-
-![ Regel van het Besluit ](./images/createcollectionpopup1.png)
-
-In het volgende scherm, selecteer de vier **Gepersonaliseerde Aanbiedingen** u in de vorige oefening creeerde. Klik **sparen**.
-
-![ Regel van het Besluit ](./images/createcollectionpopup2.png)
-
-U ziet nu het volgende:
-
-![ Regel van het Besluit ](./images/colldone.png)
-
-## 3.3.2.4 Maak uw beslissing
-
-In een besluit worden Plaatsingen, een collectie persoonlijke aanbiedingen en een terugvalaanbieding gecombineerd die uiteindelijk door de Offer Decisioning-engine worden gebruikt om de beste aanbieding voor een specifiek profiel te vinden, op basis van elk van de individuele kenmerken van gepersonaliseerde aanbiedingen, zoals prioriteit, geschiktheidsbeperking en totale/gebruikersbeperking.
-
-Om uw **Besluit** te vormen, ga **Besluiten**. Klik op **+ Beslissing maken** .
-
-![ Regel van het Besluit ](./images/activitydd.png)
-
-Dan zie je dit. Vul de velden zo in. Klik **daarna**.
-
-- Naam: `--aepUserLdap-- - CitiSignal Decision`
-- Begindatum en -tijd: vandaag
-- Einddatum en -tijd: vandaag + 1 maand
-
-![ Regel van het Besluit ](./images/activity2.png)
-
-In het volgende scherm, moet u plaatsingen in besluitvormingswerkingsgebied toevoegen. U zult besluitvormingswerkingsgebieden voor het Web van plaatsen **- Beeld**, **E-mail - Beeld** en **niet-digitaal - Tekst** moeten tot stand brengen.
-
-![ Regel van het Besluit ](./images/addplacements.png)
-
-Eerst, creeer het besluitvormingswerkingsgebied voor **niet-digitaal - Tekst** door die plaatsing in dropdown te selecteren. Dan, klik **toevoegen** knoop om evaluatiecriteria toe te voegen.
-
-![ Regel van het Besluit ](./images/activity3.png)
-
-Selecteer uw inzameling `--aepUserLdap-- - CitiSignal Collection` en klik **toevoegen**.
-
-![ Regel van het Besluit ](./images/activity4text.png)
-
-Dan zie je dit. Klik op de knop **+** om een nieuw beslissingsbereik toe te voegen.
-
-![ Regel van het Besluit ](./images/activity5text.png)
-
-Selecteer het plaatsing **Web - Beeld** en voeg uw inzameling `--aepUserLdap-- - CitiSignal Collection` onder evaluatiecriteria toe. Klik vervolgens nogmaals op de knop **+** om een nieuw beslissingsbereik toe te voegen.
-
-![ Regel van het Besluit ](./images/activity6text.png)
-
-Selecteer de plaatsing **E-mail - Beeld** en voeg uw inzameling `--aepUserLdap-- - CitiSignal Collection` onder evaluatiecriteria toe. Dan, klik **daarna**.
-
-![ Regel van het Besluit ](./images/activity4.png)
-
-U moet nu uw **Aanbieding van de Fallback** selecteren, die `--aepUserLdap-- - CitiSignal Fallback Offer` wordt genoemd. Klik **daarna**.
-
-![ Regel van het Besluit ](./images/activity10.png)
-
-Controleer uw beslissing. Klik **Afwerking**.
-
-![ Regel van het Besluit ](./images/activity11.png)
-
-In popup, klik **sparen en activeer**.
-
-![ Regel van het Besluit ](./images/activity12.png)
-
-Tot slot zie je nu je beslissing in het overzicht:
-
-![ Regel van het Besluit ](./images/activity13.png)
-
-U hebt nu met succes uw besluit gevormd. Uw besluit is nu live en kan worden gebruikt om uw klanten in real-time geoptimaliseerde en gepersonaliseerde aanbiedingen te bieden.
+U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 3.3.3 voorbereidingen uw bezit van de Cliënt van de Inzameling van Gegevens en de opstelling van SDK van het Web voor Offer Decisioning ](./ex3.md){target="_blank"}
+Ga naar [ 3.3.3 vormen een campagne met in-app berichten ](./ex3.md){target="_blank"}
 
-Ga terug naar [ Offer Decisioning ](offer-decisioning.md){target="_blank"}
+Ga terug naar [ Adobe Journey Optimizer: Duw en In-app Berichten ](ajopushinapp.md){target="_blank"}
 
 Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

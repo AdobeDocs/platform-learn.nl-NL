@@ -4,14 +4,14 @@ description: In deze module leert u alles wat er over Journey Optimizer te weten
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer: Bestelbevestigingstraject en -campagnes
 
 In deze module leert u alles wat er over Adobe Journey Optimizer te weten is, wat bedrijven helpt om verbonden, contextafhankelijke en persoonlijke ervaringen te ontwerpen en te leveren aan hun klanten.
 
@@ -45,10 +45,6 @@ In deze oefening, zult u een traditionele e-mailcampagne vormen.
 [3.4.3 Pas segment-gebaseerde verpersoonlijking in een e-mailbericht toe](./ex3.md)
 
 In deze oefening, zult u segmentlidmaatschap gebruiken om te bepalen welke inhoud binnen een e-mail zal worden getoond.
-
-[3.4.4 Pushmeldingen instellen en gebruiken](./ex4.md)
-
-Hierbij installeert u een mobiele toepassing op uw iOS-apparaat en configureert en levert u een pushmelding aan uw apparaat.
 
 [Samenvatting en voordelen](./summary.md)
 

@@ -4,9 +4,9 @@ description: Deze oefening verklaart hoe te om segment personalisatie binnen een
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Login aan Adobe Experience Cloud door naar [ Adobe Experience Cloud ](https://ex
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepTenantId--`` .
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepTenantId--`` .
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.3.1 personalisatie op basis van segmenten
+## 3.4.3.1 Op segmenten gebaseerde personalisatie
 
 In deze oefening zult u het nieuwsbrief e-mailbericht verbeteren dat u in de vorige oefening met een gepersonaliseerde tekst creeerde die op segmentlidmaatschap wordt gebaseerd.
 
@@ -71,12 +71,12 @@ Selecteer het segment `--aepUserLdap-- - Interest in Plans` en klik **+** pictog
 
 Vervolgens laat u de eerste regel ongewijzigd en vervangt u regel 2 en 3 door de volgende code:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Dan heb je dit. Klik **sparen**.
 
@@ -108,7 +108,7 @@ U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 3.4.4 de Opstelling en gebruiks dupberichten voor iOS ](./ex4.md){target="_blank"}
+Ga naar [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Ga terug naar [ Adobe Journey Optimizer ](journeyoptimizer.md){target="_blank"}
 

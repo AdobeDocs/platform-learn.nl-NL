@@ -4,22 +4,22 @@ description: Werk uw Configuratie-id bij en test uw reis
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
 # 3.1.3 Werk uw bezit van de Inzameling van Gegevens bij en test uw reis
 
-## 3.1.3.1 Werk uw bezit van de Gegevensverzameling bij
+## 3.1.3.1 De eigenschap Gegevensverzameling bijwerken
 
-Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/launch/) en selecteer **Markeringen**.
+Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/data-collection/home) en selecteer **Markeringen**.
 
 ![ pagina van Eigenschappen ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
+In **Aan de slag**, leidde het Systeem van de Demo daarna tot een paar eigenschappen van Markeringen voor u, met inbegrip van voor de website en voor mobiele app. Zoek naar `--aepUserLdap-- - One Adobe` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -49,7 +49,7 @@ U zult dan dit zien:
 
 Navigeer naar het veld `_experience.campaign.orchestration.eventID` . Verwijder de huidige waarde en plak de eventID daar.
 
-Als herinnering, identiteitskaart van de Gebeurtenis kan in Adobe Journey Optimizer onder **Configuraties > Gebeurtenissen** worden gevonden en u zult gebeurtenistidentiteitskaart in de steekproeflading van uw even vinden, die als dit kijkt: `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
+Als herinnering, identiteitskaart van de Gebeurtenis kan in Adobe Journey Optimizer onder **Configuraties > Gebeurtenissen** worden gevonden en u zult gebeurtenistidentiteitskaart in de steekproeflading van uw even vinden, die als dit kijkt: `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`.
 
 ![ ACOP ](./images/payloadeventID.png)
 

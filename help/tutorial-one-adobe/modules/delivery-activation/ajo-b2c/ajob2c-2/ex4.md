@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Uw reis en bericht configureren
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1484'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Voor dit gebruiksgeval, is het doel verschillende berichten te verzenden die op 
 
 Voor deze 3 voorwaarden moet u 3 berichten definiëren in Adobe Journey Optimizer.
 
-## 3.2.4.1 Maak uw reis
+## 3.2.4.1 Uw reis maken
 
 Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -43,11 +43,11 @@ Gebruik `--aepUserLdap-- - Geofence Entry Journey` als naam voor de rit. Er moge
 
 ![ Demo ](./images/joname.png)
 
-Op de linkerkant van uw scherm, heb een blik bij **Gebeurtenissen**. De eerder gemaakte gebeurtenis wordt in die lijst weergegeven. Selecteer het, sleep het en laat vallen het op het reiscanvas. Uw reis ziet er dan zo uit. Klik **sparen**.
+Op de linkerkant van uw scherm, heb een blik bij **Gebeurtenissen**. De eerder gemaakte gebeurtenis staat in die lijst met de naam `--aepUserLdap--GeofenceEntry` . Selecteer het, sleep het en laat vallen het op het reiscanvas. Uw reis ziet er dan zo uit.
 
 ![ Demo ](./images/joevents.png)
 
-Daarna, klik op **Orchestration**. U ziet nu de beschikbare **mogelijkheden van 0&rbrace; Orchestratie &lbrace;.** Selecteer **Voorwaarde**, dan belemmering en laat vallen het op het Canvas van de Reis.
+Daarna, klik op **Orchestration**. U ziet nu de beschikbare **mogelijkheden van 0} Orchestratie {.** Selecteer **Voorwaarde**, dan belemmering en laat vallen het op het Canvas van de Reis.
 
 ![ Demo ](./images/jo2.png)
 
@@ -65,7 +65,7 @@ Klik op de **Voorwaarde**.  Klik op **Path1** en geef de naam van de weg aan **K
 
 ![ Demo ](./images/jo5.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 
@@ -108,7 +108,7 @@ Dubbelklik op **Path1** en geef de wegnaam aan **tussen 10 en 25 C** uit. Klik *
 
 ![ Demo ](./images/joc6.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 
@@ -152,7 +152,7 @@ Dan klik op **uitgeven** pictogram voor de uitdrukking dit weg.
 
 ![ Demo ](./images/joct6.png)
 
-U zult dan een leeg **Eenvoudige** scherm van de Redacteur &lbrace;zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
+U zult dan een leeg **Eenvoudige** scherm van de Redacteur {zien. Uw vraag zal een beetje geavanceerder zijn, zodat zult u de **Geavanceerde Wijze** nodig hebben. Klik **Geavanceerde Wijze**.
 
 ![ Demo ](./images/jo7.png)
 
@@ -189,7 +189,7 @@ U hebt nu drie geconfigureerde paden. Klik **sparen**.
 
 Aangezien dit een reis voor het leren doel is, zult u nu een paar acties vormen om de verscheidenheid van opties te tonen moeten de verkopers nu berichten leveren.
 
-## 3.2.4.2 Berichten verzenden voor een pad: lager dan 10° Celsius
+## 3.2.4.2 Berichten verzenden voor pad: lager dan 10° Celsius
 
 Voor elk van de temperatuurcontexten, zult u proberen om een tekstbericht naar een klant te verzenden. Hiervoor stuurt u een echt bericht naar een Slack-kanaal in plaats van een mobiel telefoonnummer.
 
@@ -201,7 +201,7 @@ In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--
 
 ![ Demo ](./images/joa18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
+De rol neer aan **Parameters van het Verzoek** en klikt **geeft** pictogram voor de parameter `textToSlack` uit.
 
 ![ Demo ](./images/joa19.png)
 
@@ -215,13 +215,13 @@ Selecteer de hieronder code, kopieer het en kleef het in de **Geavanceerde Redac
 
 ![ Demo ](./images/joa21.png)
 
-Je ziet de voltooide actie. Klik **sparen**.
+Je ziet de voltooide actie. De rol omhoog en klikt **sparen**.
 
 ![ Demo ](./images/joa22.png)
 
 Deze weg van de reis is nu gereed.
 
-## 3.2.4.3 Berichten verzenden voor een pad: tussen 10° en 25° Celsius
+## 3.2.4.3 Berichten verzenden voor pad: tussen 10° en 25° Celsius
 
 Voor elk van de temperatuurcontexten, zult u proberen om een bericht naar uw klant te verzenden. Hiervoor stuurt u een echt bericht naar een Slack-kanaal in plaats van een mobiel telefoonnummer.
 
@@ -233,7 +233,7 @@ In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--
 
 ![ Demo ](./images/jop18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
+De rol neer aan **Parameters van het Verzoek** en klikt **geeft** pictogram voor de parameter `textToSlack` uit.
 
 ![ Demo ](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ Selecteer de hieronder code, kopieer het en kleef het in de **Geavanceerde Redac
 
 ![ Demo ](./images/jop21.png)
 
-Je ziet de voltooide actie. Klik **OK**.
+Je ziet de voltooide actie. De rol omhoog en klikt **sparen**.
 
 ![ Demo ](./images/jop22.png)
 
 Deze weg van de reis is nu gereed.
 
-## 3.2.4.4 Berichten verzenden voor een pad: Warmer dan 25° Celsius
+## 3.2.4.4 Berichten verzenden voor pad: Warmer dan 25° Celsius
 
 Voor elk van de temperatuurcontexten, zult u proberen om een bericht naar uw klant te verzenden. Hiervoor stuurt u een echt bericht naar een Slack-kanaal in plaats van een mobiel telefoonnummer.
 
@@ -265,7 +265,7 @@ In het linkermenu, ga terug naar **Acties**, selecteer de Actie `--aepUserLdap--
 
 ![ Demo ](./images/jod18.png)
 
-Ga naar **Parameters van de Actie** en klik **uitgeven** pictogram voor de parameter `textToSlack`.
+De rol neer aan **Parameters van het Verzoek** en klikt **geeft** pictogram voor de parameter `textToSlack` uit.
 
 ![ Demo ](./images/joa19zzz.png)
 

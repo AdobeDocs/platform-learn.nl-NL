@@ -4,7 +4,7 @@ description: Aan de slag - Gebruik het demosysteem naast het instellen van de op
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Om de lessen in deze zelfstudie te visualiseren en het voor u mogelijk te maken 
 
 Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
-Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/){target="_blank"} en navigeer aan **Opstelling**.
+Ga naar [ https://dsn.adobe.com/quick-setup ](https://dsn.adobe.com/quick-setup){target="_blank"} en navigeer aan **Opstelling**.
 
 ![ DSN ](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ In **Milieu** dropdown, selecteer uw instantie en zandbak.
 
 ![ DSN ](./images/dsnh1.png)
 
-Daarna, selecteer de vooraf ingestelde **Gebruiker van het Leerprogramma van AEP**.
+Daarna, selecteer vooraf ingesteld **Één Zelfstudie van Adobe**.
 
 ![ DSN ](./images/dsnhome.png)
 

@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - External Weather API, SMS Action & more -
 kt: 5342
 doc-type: tutorial
 exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -74,7 +74,7 @@ Gebruik `--aepUserLdap--WeatherApi` als naam voor de gegevensbron.
 
 Stel Beschrijving in op: `Access to the Open Weather Map` .
 
-URL voor Open Weather Kaart API is: **http://api.openweathermap.org/data/2.5/weather?units=metric**
+De URL voor de Open Weather Map API is: `http://api.openweathermap.org/data/2.5/weather?units=metric` .
 
 ![ Demo ](./images/dsname.png)
 

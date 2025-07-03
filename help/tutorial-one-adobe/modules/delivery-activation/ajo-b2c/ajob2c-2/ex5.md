@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Externe gegevensbronnen en aangepaste act
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling
 
 ![ pagina van Eigenschappen ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
+In **Aan de slag**, leidde het Systeem van de Demo daarna tot de eigenschappen van Markeringen voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -53,7 +53,7 @@ U zult dan dit zien:
 
 Navigeer naar het veld `_experience.campaign.orchestration.eventID` . Verwijder de huidige waarde en plak de eventID daar.
 
-Als herinnering, identiteitskaart van de Gebeurtenis kan in Adobe Journey Optimizer onder **Configuraties > Gebeurtenissen** worden gevonden en u zult gebeurtenistidentiteitskaart in de steekproeflading van uw even vinden, die als dit kijkt: `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`.
+Als herinnering, identiteitskaart van de Gebeurtenis kan in Adobe Journey Optimizer onder **Configuraties > Gebeurtenissen** worden gevonden en u zult gebeurtenistidentiteitskaart in de steekproeflading van uw even vinden, die als dit kijkt: `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`.
 
 ![ ACOP ](./images/payloadeventID.png)
 
@@ -69,7 +69,7 @@ Klik **toevoegen Alle Gewijzigde Middelen** en klik dan **sparen &amp; bouwen aa
 
 ![ Opstelling van de Lancering ](./images/rule9.png)
 
-## 3.2.5.2 Stem uw reis op
+## 3.2.5.2 Trigger uw reis
 
 Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
@@ -103,11 +103,17 @@ Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het d
 
 ![ Demo ](./images/pv2.png)
 
-Voor het paneel van de Kijker van het Profiel, klik **Hulpmiddelen**. Ga `geofenceevent` in en klik **verzenden**.
+Voor het paneel van de Kijker van het Profiel, klik **Hulpmiddelen** en selecteer dan **Directe Vraag**.
 
 >[!NOTE]
 >
 >In het geval dat u niet de optie op het paneel van de Kijker van het Profiel hebt om een directe vraaggebeurtenis te verzenden, kunt u manueel verzenden door de Mening van de Ontwikkelaar van uw doorbladeren te openen en naar **Console** te gaan, en dan te kleven en dit bevel te verzenden: `_satellite.track('geofenceevent')`.
+
+![ Demo ](./images/pv3.png)
+
+Ga `geofenceevent` in en klik **voorleggen**.
+
+![ Demo ](./images/pv4.png)
 
 Een paar seconden later wordt het bericht van Adobe Journey Optimizer weergegeven in het Slack-kanaal.
 

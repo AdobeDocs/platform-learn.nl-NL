@@ -4,14 +4,14 @@ description: Journey Optimizer Je e-mailbericht maken
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
 
-# 3.1.3 Maak uw reis, fragmenten en bericht
+# 3.1.3 Maak uw reis en e-mailbericht
 
 In deze oefening, zult u de reis en het bericht vormen die moeten worden teweeggebracht wanneer iemand een rekening op de demowebsite creeert.
 
@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
@@ -33,7 +33,7 @@ Dan zie je een leeg reisscherm.
 
 ![ ACOP ](./images/journeyempty.png)
 
-In de vorige oefening, creeerde u een nieuwe **Gebeurtenis**. U noemde het als dit `--aepUserLdap--AccountCreationEvent` en vervangt `ldap` door uw ldap. Dit was het resultaat van het maken van de gebeurtenis:
+In de vorige oefening, creeerde u een nieuwe **Gebeurtenis**. U noemde het zo `--aepUserLdap--AccountCreationEvent` . Dit was het resultaat van het maken van de gebeurtenis:
 
 ![ ACOP ](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ U moet deze gebeurtenis nu als begin van deze reis nemen. U kunt dit doen door n
 
 ![ ACOP ](./images/eventlist.png)
 
-Selecteer de gebeurtenis, sleep deze naar het canvas Reis. Uw reis ziet er nu als volgt uit:
+Selecteer de gebeurtenis, sleep deze naar het canvas van de reis. Uw reis ziet er nu als volgt uit:
 
 ![ ACOP ](./images/journeyevent.png)
 
@@ -57,7 +57,7 @@ Als derde stap in de reis, moet u een **E-mail** actie toevoegen. Ga naar de lin
 
 ![ ACOP ](./images/journeyactions.png)
 
-Plaats de **Categorie** aan **Marketing** en selecteer een e-mailconfiguratie die u toelaat om e-mail te verzenden. In dit geval, is de e-mailconfiguratie om te selecteren **E-mail**. Zorg ervoor dat checkboxes voor **klikt op e-mail** en **e-mail opent** allebei worden toegelaten.
+Plaats de **Categorie** aan **Marketing** en selecteer een e-mailconfiguratie die u toelaat om e-mail te verzenden. In dit geval, is de e-mailconfiguratie om te selecteren **e-mail-Ti**.
 
 ![ ACOP ](./images/journeyactions1.png)
 
@@ -133,7 +133,7 @@ Dan heb je het volgende:
 
 ![ Journey Optimizer ](./images/msg30.png)
 
-Daarna, ga naar **Inhoud** en sleep en laat vallen a **&#x200B;**&#x200B;component van de Tekst in de structuurcomponent op de vierde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst in de structuurcomponent op de vierde rij.
 
 ![ Journey Optimizer ](./images/msg33.png)
 
@@ -151,7 +151,7 @@ U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
 
 ![ Journey Optimizer ](./images/msg37.png)
 
-Op het zelfde tekstgebied, duik **&#x200B;**&#x200B;binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
+Op het zelfde tekstgebied, duik **** binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
 
 ```
 Welcome aboard! We're thrilled to have you join the CitiSignal family. 

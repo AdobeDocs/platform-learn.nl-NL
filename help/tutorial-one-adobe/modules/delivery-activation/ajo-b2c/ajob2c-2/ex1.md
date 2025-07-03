@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - External Weather API, SMS Action & more
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Zorg ervoor het **Type** aan **Eenheids** wordt geplaatst, en voor de **Verzamel
 
 ![ Demo ](./images/evname.png)
 
-Vervolgens moet u een schema selecteren. Alle schema&#39;s die hier worden getoond, zijn Adobe Experience Platform Schemas.
+Vervolgens moet u een schema selecteren.
 
 ![ Demo ](./images/evschema.png)
 
@@ -83,7 +83,7 @@ Een marketeer moet echter flexibele toegang hebben tot alle datapunten die conte
 
 - Plaats
 
-Zodra dat wordt gedaan, klik O.K. **&#x200B;**.
+Zodra dat wordt gedaan, klik O.K. ****.
 
 ![ Demo ](./images/popupok.png)
 
@@ -109,7 +109,7 @@ Het klikken van het **pictogram van de Payload van de Mening** opent omhoog een 
 
 Schrijf `eventID` neer aangezien u het in het laatste zult nodig hebben om uw configuratie te testen.
 
-In dit voorbeeld is de waarde `eventID` `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e` .
+In dit voorbeeld is de waarde `eventID` `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7` .
 
 U hebt nu de gebeurtenis gedefinieerd die de reis zal activeren die we aan het bouwen zijn. Zodra de reis in werking wordt gesteld, zullen de geofence-gebieden zoals Stad, en anderen die u (zoals Land, Breedtegraad en Lengtegraad) kunt kiezen ter beschikking worden gesteld aan de reis.
 

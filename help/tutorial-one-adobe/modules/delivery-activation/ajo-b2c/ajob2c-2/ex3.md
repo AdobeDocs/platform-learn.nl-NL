@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - External Weather API, SMS-actie en meer -
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -54,10 +54,6 @@ Voor de **Configuratie URL**, gebruik dit:
 
 ![ Demo ](./images/slackname.png)
 
-U hoeft de koptekstvelden niet te wijzigen.
-
-![ Demo ](./images/slackurl.png)
-
 **Authentificatie** zou aan **Geen Authentificatie** moeten worden geplaatst.
 
 ![ Demo ](./images/slackauth.png)
@@ -84,7 +80,7 @@ Kopieer de onderste tekst en plak deze in het lege pop-upvenster.
 }
 ```
 
-U zult dan dit zien:
+Dan zie je dit. Klik **sparen**.
 
 ![ Demo ](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ Uw douaneactie is nu een deel van de **lijst van Acties**.
 
 ![ Demo ](./images/slackdone.png)
 
-U hebt gebeurtenissen, externe gegevensbronnen en acties gedefinieerd. Laten we dat allemaal op één reis consolideren.
+U hebt gebeurtenissen, externe gegevensbronnen en acties gedefinieerd. Vervolgens combineer je dat allemaal op één reis.
 
 ## Volgende stappen
 
