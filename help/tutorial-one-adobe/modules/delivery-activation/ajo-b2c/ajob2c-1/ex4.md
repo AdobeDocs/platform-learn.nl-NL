@@ -19,7 +19,7 @@ Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://exp
 
 ![ pagina van Eigenschappen ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Aan de slag**, leidde het Systeem van de Demo daarna tot een paar eigenschappen van Markeringen voor u, met inbegrip van voor de website en voor mobiele app. Zoek naar `--aepUserLdap-- - One Adobe` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
+In **Aan de slag**, leidde het Systeem van de Demo daarna tot een paar eigenschappen van Markeringen voor u, met inbegrip van voor de website en voor mobiele app. Zoek naar `--aepUserLdap-- - One Adobe` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
 
 ![ vakje van het Onderzoek ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 

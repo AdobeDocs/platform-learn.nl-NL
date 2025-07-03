@@ -29,7 +29,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
+U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -80,7 +80,7 @@ In uw bezit van de Inzameling van Gegevens, ga naar **Uitbreidingen**. Vervolgen
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop1.png)
 
-U zult dan zien dat uw gegevensstroom voor mobiel hier verbonden is. Daarna, annuleert de klik **** om terug naar uw uitbreidingsoverzicht te gaan.
+U zult dan zien dat uw gegevensstroom voor mobiel hier verbonden is. Daarna, annuleert de klik **&#x200B;**&#x200B;om terug naar uw uitbreidingsoverzicht te gaan.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop2.png)
 
@@ -88,7 +88,7 @@ Dan ben je weer terug hier. U zult de uitbreiding voor **AEP Assurance** zien. M
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop8.png)
 
-Daarna, vormt de klik **** om de uitbreiding **Adobe Journey Optimizer** te openen.
+Daarna, vormt de klik **&#x200B;**&#x200B;om de uitbreiding **Adobe Journey Optimizer** te openen.
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop9.png)
 
@@ -201,7 +201,7 @@ Ga naar **Push zuivert**.
 
 >[!NOTE]
 >
->In het geval dat u **Push niet kunt vinden zuivert** in het linkermenu, **** vormt {in de bodem linkerhoek van uw scherm en voegt **Push toe zuivert** aan het menu.
+>In het geval dat u **Push niet kunt vinden zuivert** in het linkermenu, **&#x200B;**&#x200B;vormt &lbrace;in de bodem linkerhoek van uw scherm en voegt **Push toe zuivert** aan het menu.
 
 Je ziet iets dergelijks.
 
