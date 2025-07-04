@@ -86,7 +86,7 @@ U zult dan zien dat uw gegevensstroom voor mobiel hier verbonden is. Daarna, ann
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop2.png)
 
-Dan ben je weer terug hier. U zult de uitbreiding voor **AEP Assurance** zien. Met AEP Assurance kunt u controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet in uw mobiele app. U kunt meer over AEP Assurance hier lezen: [ https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Dan ben je weer terug hier. U zult de uitbreiding voor **AEP Assurance** zien. Met AEP Assurance kunt u controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet in uw mobiele app. U kunt meer over AEP Assurance hier lezen: [ https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home).
 
 ![ de Inzameling van Gegevens van Adobe Experience Platform ](./images/launchprop8.png)
 
