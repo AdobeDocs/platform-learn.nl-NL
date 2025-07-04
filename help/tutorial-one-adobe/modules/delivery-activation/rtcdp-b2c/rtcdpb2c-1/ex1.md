@@ -4,9 +4,9 @@ description: Foundation - Real-time klantprofiel - Van onbekend naar bekend op d
 kt: 5342
 doc-type: tutorial
 exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2264f26a0778c2570c36abe1bae4d6a1dc3a465c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -59,41 +59,39 @@ U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedra
 
 ![ Demo ](../../datacollection/dc1.2/images/pv3.png)
 
-Ga naar de **Telefoons &amp; apparaten** productcategorie. Daarna, klik op het product **iPhone 15 Pro**.
+Ga naar de **Telefoons &amp; apparaten** productcategorie. Daarna, klik op het product **iPhone 16 Pro**.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv4.png)
 
-Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring van type **Mening van het Product** is nu verzonden naar Adobe Experience Platform gebruikend de implementatie van SDK van het Web die u in Module 1 herzien.
+Vervolgens ziet u de pagina met productdetails. Een gebeurtenis van type **Mening van het Product** is nu verzonden naar Adobe Experience Platform gebruikend de implementatie van SDK van het Web die u in Module 1 herzien.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv5.png)
 
-Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurtenissen van de Ervaring**.
+Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurtenissen**.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv6.png)
 
-Ga terug naar de **Telefoons &amp; apparaten** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform. Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Terwijl het gedrag anoniem is, met de juiste toestemming op zijn plaats, kunt u elke klik volgen en het opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
+Ga terug naar de **Telefoons &amp; apparaten** categoriepagina, en klik een ander product. Er is een andere Experience Event verzonden naar Adobe Experience Platform. Open het deelvenster Profielviewer. U zult nu 2 gebeurtenissen van type **Mening van het Product** zien. Terwijl het gedrag anoniem is, met de juiste toestemming op zijn plaats, kunt u elke klik volgen en het opslaan in Adobe Experience Platform. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
+
+Klik **Teken binnen**.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv7.png)
 
-Ga naar de pagina Registreren/Aanmelden. Klik **Teken binnen**.
+Klik **creeer een rekening**.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv8.png)
 
-Klik **creeer een rekening**.
+Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv9.png)
 
-Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
+Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het deelvenster Profielviewer worden al uw persoonlijke gegevens weergegeven, zoals de zojuist toegevoegde e-mail- en telefoon-id&#39;s.
 
 ![ Demo ](../../datacollection/dc1.2/images/pv10.png)
 
-Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het deelvenster Profielviewer worden al uw persoonlijke gegevens weergegeven, zoals de zojuist toegevoegde e-mail- en telefoon-id&#39;s.
-
-![ Demo ](../../datacollection/dc1.2/images/pv11.png)
-
 Ga in het deelvenster Profile Viewer naar Experience Events. De twee producten die u eerder hebt bekeken, worden weergegeven in het deelvenster Profielviewer. Beide gebeurtenissen zijn nu ook verbonden met uw &#39;gekende&#39; profiel.
 
-![ Demo ](../../datacollection/dc1.2/images/pv12.png)
+![ Demo ](../../datacollection/dc1.2/images/pv11.png)
 
 U hebt nu gegevens in Adobe Experience Platform ingevoerd en u hebt die gegevens gekoppeld aan id&#39;s zoals ECID&#39;s en e-mailadressen. Het doel hiervan is om de zakelijke context te begrijpen van wat je gaat doen. In de volgende oefening, zult u beginnen alles te vormen u nodig hebt om al die gegevensopname mogelijk te maken.
 
@@ -105,21 +103,33 @@ Als u niet app hebt die meer wordt geïnstalleerd, of als u niet kunt herinneren
 
 Nadat u de app volgens de instructies hebt geïnstalleerd, ziet u de openingspagina van de app met het Citi Signal-merk geladen. Klik op het accountpictogram in het linkerbovengedeelte van het scherm.
 
-![ Demo ](./images/app_hp1.png)
+![ Demo ](./images/app_hpz.png)
 
 Meld u aan met het e-mailadres dat u op de bureaubladwebsite hebt gebruikt in het aanmeldingsscherm. Klik **Login**.
 
 ![ Demo ](./images/app_acc.png)
 
-Ga naar het beginscherm van de app en klik om een product te openen.
+U ontvangt dan een bevestiging dat u bent aangemeld.
 
-![ Demo ](./images/app_hp.png)
+![ Demo ](./images/app_acc1.png)
+
+Ga naar het huisscherm van app en ga naar de pagina **Telefoons &amp; Apparaten**.
+
+![ Demo ](./images/app_hp1.png)
+
+Klik op een product op de pagina.
+
+![ Demo ](./images/app_hp2.png)
 
 Vervolgens ziet u de pagina met productdetails.
 
 ![ Demo ](./images/app_galaxy.png)
 
-Ga naar het beginscherm in de app en vegen naar links op het scherm om het deelvenster Profielviewer weer te geven. U zult dan het product zien u enkel in de **sectie van de Gebeurtenissen van de Ervaring**, samen met alle productmeningen van de websitezitting voordien bekeken.
+Ga naar het beginscherm in de app en klik op het Adobe-pictogram om het deelvenster Profielviewer weer te geven. U zult dan de **mening van de Attributen van het Profiel** zien, die nu een gecombineerde mening van uw Web en mobiele toepassingsactiviteit toont. Ga naar **Gebeurtenissen**
+
+![ Demo ](./images/app_hp3.png)
+
+U zult dan het product zien u enkel in de **sectie van de Gebeurtenissen van de Ervaring**, samen met alle productmeningen van de websitezitting voordien bekeken.
 
 >[!NOTE]
 >

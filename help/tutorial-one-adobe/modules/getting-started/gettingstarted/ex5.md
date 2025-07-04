@@ -4,9 +4,9 @@ description: Aan de slag - De mobiele app gebruiken
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 53f21d39caa047170811a063ff9d01d57e456626
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,39 @@ ht-degree: 0%
 
 ## De app downloaden
 
-Ga naar [ https://dsn.adobe.com/install ](https://dsn.adobe.com/install){target="_blank"} op uw computer. Meld u aan met uw Adobe ID en dit ziet u.
+Ga naar [ https://dsn.adobe.com/install ](https://dsn.adobe.com/install){target="_blank"} op uw computer en ga naar **Versie van Beta**. Meld u aan met uw Adobe ID en dit ziet u.
 
 ![ DSN ](./images/mobileapp.png)
 
-Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw apparaat te installeren. Voor dit enablement, moet u **Versie 2.x** installeren die Adobe Experience Platform Mobile SDK gebruikt.
+Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw apparaat te installeren. Voor dit enablement, moet u versie **0.6.1** (of recenter) installeren die de Mobiele SDK van Adobe Experience Platform gebruikt.
 
 >[!NOTE]
 >
 >Na het installeren van app voor het eerst op een apparaat van iOS, zou u een foutenmelding kunnen krijgen wanneer het proberen om app te openen die zegt: **Untrusted de Ontwikkelaar van de Onderneming**. Om dit te bevestigen, moet u naar **Montages > Algemeen > VPN gaan &amp; het Beheer van het Apparaat > Adobe Systems Inc.** en **het Vertrouwen Adobe Systems Inc.** klikken.
 
+Na het aftasten van de code QR, uitgezochte **installeert**.
+
+![ DSN ](./images/mobileappn0.png)
+
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
 
 ![ DSN ](./images/mobileappn1.png)
 
-Wanneer u de app de eerste keer gebruikt, wordt u gevraagd u aan te melden met uw Adobe ID. Voltooi het aanmeldingsproces.
+Nadat u zich hebt aangemeld, wordt er een melding weergegeven waarin u wordt gevraagd om toestemming voor het verzenden van meldingen. Wij zullen berichten als deel van het leerprogramma verzenden, zo klik **toestaan**.
 
 ![ DSN ](./images/mobileappn2.png)
 
-Nadat u zich hebt aangemeld, wordt er een melding weergegeven waarin u wordt gevraagd om toestemming voor het verzenden van meldingen. Wij zullen berichten als deel van het leerprogramma verzenden, zo klik **toestaan**.
+Vervolgens ziet u de startpagina van de app. Ga naar **Montages**.
 
 ![ DSN ](./images/mobileappn3.png)
 
-Vervolgens ziet u de startpagina van de app. Ga naar **Montages**.
+In montages, zult u zien dat momenteel a **Openbaar Project** in app wordt geladen. Klik **Project van de Douane**.
 
 ![ DSN ](./images/mobileappn4.png)
 
-In montages, zult u zien dat momenteel a **Openbaar Project** in app wordt geladen. Klik **Project van de Douane**.
-
-![ DSN ](./images/mobileappn5.png)
-
 U kunt nu een aangepast project laden. Klik de code QR om uw project gemakkelijk te laden.
 
-![ DSN ](./images/mobileappn6.png)
+![ DSN ](./images/mobileappn5.png)
 
 Na de vorige oefening, had u dit resultaat. Klik om het **Mobiele project van Edge Telco** te openen dat voor u werd gecreeerd.
 
@@ -73,11 +73,11 @@ U zult dan deze popup zien, die een QR code bevat. Scan deze QR-code vanuit de m
 
 ![ DSN ](./images/web8c.png)
 
-U zult dan uw projectidentiteitskaart tonen in app zien, waarna u **kunt klikken sparen**.
+U zult dan uw projectidentiteitskaart die in app wordt geladen zien, waarna u **Schakelaar** kunt klikken.
 
 ![ DSN ](./images/mobileappn7.png)
 
-Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
+U zou dan het **CitiSignal** demobbrand moeten zien die wordt geladen. Uw app is nu klaar om te worden gebruikt.
 
 ![ DSN ](./images/mobileappn8.png)
 
