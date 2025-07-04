@@ -4,9 +4,9 @@ description: In deze sectie zult u een op trekker-gebaseerde reis - de Bevestigi
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Voor **Type van identiteitskaart van de Gebeurtenis**, uitgezochte **Gegenereerd
 
 ![ Journey Optimizer ](./images/eventidtype.png)
 
-Nu de selectie van het schema. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1` .
+Dan is de schemaselectie. Hiervoor is een schema opgesteld. Gebruik het schema `Demo System - Event Schema for Website (Global v1.1) v.1` .
 
 Na het selecteren van het Schema, zult u een aantal gebieden zien die in de **sectie van de Lading** worden geselecteerd. Klik het **uitgeven/Potlood** pictogram om extra gebieden aan deze gebeurtenis toe te voegen.
 
@@ -68,7 +68,7 @@ Vervolgens ziet u dat er extra velden zijn toegevoegd aan de gebeurtenis. Klik *
 
 Uw nieuwe gebeurtenis wordt dan opgeslagen en u zult uw gebeurtenis in de lijst van beschikbare gebeurtenissen nu zien.
 
-Klik opnieuw op uw gebeurtenis om **te openen geef het 1&rbrace; scherm van de Gebeurtenis &lbrace;opnieuw uit.**
+Klik opnieuw op uw gebeurtenis om **te openen geef het 1} scherm van de Gebeurtenis {opnieuw uit.**
 Beweeg over het **gebied van de Lading** opnieuw om de 3 pictogrammen opnieuw te zien. Klik op het **pictogram van de Payload van de Mening**.
 
 ![ Journey Optimizer ](./images/oc41.png)
@@ -78,13 +78,13 @@ U zult nu een voorbeeld van de verwachte nuttige lading zien. Uw gebeurtenis hee
 ![ Journey Optimizer ](./images/oc42.png)
 
 De gebeurtenis-id is wat naar Adobe Journey Optimizer moet worden verzonden om de reis te activeren die u in de volgende stap maakt. Schrijf deze eventID neer, aangezien u het in één van de volgende stappen zult nodig hebben.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Klik **O.K.**, die door **wordt gevolgd annuleert**.
 
 Uw gebeurtenis is nu geconfigureerd en klaar om te worden gebruikt.
 
-## 3.4.1.2 Maak uw reis
+## 3.4.1.2 Uw reis maken
 
 In het menu, ga naar **Reizen** en klik **creeer Reizen**.
 
@@ -102,19 +102,15 @@ Daarna, onder **Acties**, onderzoek naar de **E-mail** actie en voeg het op het 
 
 ![ Journey Optimizer ](./images/oc47.png)
 
-Plaats de **Categorie** aan **Marketing** en selecteer een e-mailoppervlakte die u toelaat om e-mail te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **E-mail**. Zorg ervoor dat checkboxes voor **klikt op e-mail** en **e-mail opent** allebei worden toegelaten.
+Plaats de **Categorie** aan **Marketing** en selecteer een e-mailoppervlakte die u toelaat om e-mail te verzenden. In dit geval, is de e-mailoppervlakte om te selecteren **E-mail**. De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
 
 ![ ACOP ](./images/journeyactions1.png)
-
-De volgende stap is uw bericht te creëren. Om dat te doen, klik **geef inhoud** uit.
-
-![ ACOP ](./images/journeyactions2.png)
 
 U ziet dit nu. Klik het **Onderwerplijn** tekstgebied.
 
 ![ ACOP ](./images/journeyactions3.png)
 
-In het tekstgebied begint te schrijven **Dank voor uw orde,** en klik het **Personalization** pictogram.
+In het tekstgebied begint te schrijven `Thanks for your order, ` en klik het **Personalization** pictogram.
 
 ![ Journey Optimizer ](./images/oc5.png)
 
@@ -136,7 +132,7 @@ De belemmering en laat vallen 8 keer a **1:1 kolom** op het canvas, dat u dit zo
 
 ![ Journey Optimizer ](./images/oc9.png)
 
-In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1 ](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de footer u vroeger in [ oefening 3.1.2.2 ](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
+In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de voettekst die u eerder in [ oefening 3.1.2.2](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
 
 ![ Journey Optimizer ](./images/fragm1.png)
 
@@ -156,7 +152,7 @@ Onder **Stijlen**, verander de breedte in **40%**.
 
 ![ Journey Optimizer ](./images/oc14a.png)
 
-Daarna, ga naar **Inhoud** en sleep en laat vallen a **&#x200B;**&#x200B;component van de Tekst op de derde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst op de derde rij.
 
 ![ Journey Optimizer ](./images/oc17.png)
 
@@ -188,7 +184,7 @@ U zult dan dit zien:
 
 ![ Journey Optimizer ](./images/oc21.png)
 
-Daarna, ga naar **Inhoud** en sleep en laat vallen a **&#x200B;**&#x200B;component van de Tekst op de vierde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst op de vierde rij.
 
 ![ Journey Optimizer ](./images/oc22.png)
 
@@ -345,15 +341,15 @@ Uw reis is nu gepubliceerd.
 
 ![ Journey Optimizer ](./images/oc513.png)
 
-## 3.4.1.5 Werk uw Adobe Experience Platform Data Collection Client-eigenschap bij
+## 3.4.1.5 De Adobe Experience Platform Data Collection Client-eigenschap bijwerken
 
 Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/launch/) en selecteer **Markeringen**.
 
-Dit is de pagina Eigenschappen van Adobe Experience Platform-gegevensverzameling die u eerder hebt gezien.
+Dit is de pagina met Adobe Experience Platform-eigenschappen voor gegevensverzameling die u eerder hebt gezien.
 
 ![ pagina van Eigenschappen ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0&rbrace; van het Web &lbrace;.**
+In **Aan de slag**, leidde het Systeem van de Demo tot twee eigenschappen van de Cliënt voor u: voor de website en voor mobiele app. Zoek naar `--aepUserLdap--` in het vak **[!UICONTROL Search]** . Klik om het **bezit te openen 0} van het Web {.**
 
 ![ vakje van het Onderzoek ](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -371,7 +367,7 @@ Sla de wijzigingen in de eigenschap op en publiceer de wijzigingen door de ontwi
 
 Uw wijzigingen worden nu geïmplementeerd en kunnen worden getest.
 
-## 3.4.1.6 Test het bevestigingsbericht voor uw bestelling via de demo-website
+## 3.4.1.6 Test het bevestigingsbericht voor uw bestelling met de demo-website
 
 Laten we de bijgewerkte reis testen door een product te kopen op de demo-website.
 
@@ -403,15 +399,11 @@ Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de 
 
 ![ Demo ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Ga naar de pagina Registreren/Aanmelden. Klik **CREËREN EEN ACCOUNT**.
+Ga naar het **Teken binnen** pagina, klik **CREEER EEN ACCOUNT** en vul deze gebieden in. Klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
 
 ![ Demo ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Vul uw details in en klik **Register** waarna u aan de vorige pagina opnieuw zult worden gericht.
-
-![ Demo ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Elk product aan uw winkelwagentje toevoegen
+Voeg een product toe aan uw winkelwagentje.
 
 ![ Journey Optimizer ](./images/cart1a.png)
 

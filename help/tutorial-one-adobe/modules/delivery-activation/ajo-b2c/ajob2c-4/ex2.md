@@ -4,9 +4,9 @@ description: In deze sectie configureert u een batch-e-mailtransport voor het ve
 kt: 5342
 doc-type: tutorial
 exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,11 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-
-## 3.4.2.1 Het publiek maken
+## 3.4.2.1 publiek maken
 
 Voordat u uw campagne maakt, moet u het publiek definiëren dat de campagne moet ontvangen. Om een publiek tot stand te brengen, ga naar **Soorten publiek** in het linkermenu. Je ziet hier al eerder gecreëerd publiek.
 
@@ -44,7 +43,7 @@ Plaats de naam van uw publiek aan `--aepUserLdap-- - All customers with email` e
 
 Uw publiek wordt nu gepubliceerd en kan in een campagne worden gebruikt.
 
-## 3.4.2.2 Een nieuwsbrief maken
+## 3.4.2.2 Nieuwsbrief maken
 
 U maakt nu een campagne. In tegenstelling tot de op een gebeurtenis gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang baseert om een reis voor één specifieke klant teweeg te brengen, richten de campagnes één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op een regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
 
@@ -96,7 +95,7 @@ De belemmering en laat vallen 3 keer a **1:1 kolom** op het canvas, 1 keer een 1
 
 ![ Journey Optimizer ](./images/campaign8.png)
 
-In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1 ](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de footer u vroeger in [ oefening 3.1.2.2 ](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
+In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de voettekst die u eerder in [ oefening 3.1.2.2](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
 
 ![ Journey Optimizer ](./images/campaign9.png)
 
@@ -136,7 +135,7 @@ Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_Phone.jpg** t
 
 ![ Journey Optimizer ](./images/campaign16.png)
 
-De belemmering en laat vallen a **component van de Tekst van 0&rbrace; &lbrace;op de 3de en 4de rij.**
+De belemmering en laat vallen a **component van de Tekst van 0} {op de 3de en 4de rij.**
 
 ![ Journey Optimizer ](./images/campaign17.png)
 

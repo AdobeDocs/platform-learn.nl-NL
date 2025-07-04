@@ -1,18 +1,18 @@
 ---
-user-guide-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van Creative Cloud tot Experience Cloud
-breadcrumb-title: Uitgebreide technische zelfstudie voor Adobe-toepassingen, van Creative Cloud tot Experience Cloud
+user-guide-title: Eén technische zelfstudie voor Adobe
+breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# Uitgebreide technische zelfstudie - Eén Adobe {#tutorial-one-adobe}
+# Eén technische zelfstudie voor Adobe {#tutorial-one-adobe}
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
