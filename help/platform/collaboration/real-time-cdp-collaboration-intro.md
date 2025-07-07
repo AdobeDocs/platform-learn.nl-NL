@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Ontvang een inleiding aan Adobe Real-Time CDP Collaboration, een speciaal gebouwde toepassing van de gegevenssamenwerking die u high-value publiek en gebruiks meetmogelijkheden laat ontdekken en activeren om tastbare resultaten te drijven.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446807/?learn=on&enablevpops&captions=dut)
