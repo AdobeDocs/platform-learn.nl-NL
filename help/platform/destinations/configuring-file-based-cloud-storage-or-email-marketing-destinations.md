@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Krijg uiteinden tijdens een analyse van de configuratie van een op dossier-gebaseerde bestemming in Adobe Real-Time Customer Data Platform (CDP). Dit geldt voor [!UICONTROL cloud storage] -doelen (bijvoorbeeld S3 of SFTP) en ook voor [!UICONTROL email marketing] -doelen. Zie voor meer gedetailleerde productdocumentatie:
 
-* [ activeer publieksgegevens aan de uitvoerbestemmingen van het partijprofiel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend Experience Platform UI
-* [ verbind met partijbestemmingen en activeer gegevens gebruikend de Dienst API van de Stroom ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend de Dienst API van de Stroom
+* [ activeer publieksgegevens aan de uitvoerbestemmingen van het partijprofiel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=nl-NL) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend Experience Platform UI
+* [ verbind met partijbestemmingen en activeer gegevens gebruikend de Dienst API van de Stroom ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=nl-NL) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend de Dienst API van de Stroom
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
