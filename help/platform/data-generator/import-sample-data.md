@@ -63,7 +63,7 @@ Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](htt
    > 
    > ![ het dossierweg van Vensters ](../assets/data-generator/images/windows-file-path.png)
 
-1. Open [!DNL Postman] en creeer een werkruimte van het **2} dropdown menu van de Werkruimten {:**\
+1. Open [!DNL Postman] en creeer een werkruimte van het **2&rbrace; dropdown menu van de Werkruimten &lbrace;:**\
    ![ creeer werkruimte ](../assets/data-generator/images/create-workspace.png)
 1. Ga a **Naam** en facultatieve **Samenvatting** voor uw werkruimte in en klik **creeer Workspace**. [!DNL Postman] schakelt over naar de nieuwe werkruimte wanneer u deze maakt.
    ![ sparen werkruimte ](../assets/data-generator/images/save-workspace.png)
