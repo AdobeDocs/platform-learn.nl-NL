@@ -22,4 +22,4 @@ Krijg uiteinden tijdens een analyse van de configuratie van een op dossier-gebas
 * [ activeer publieksgegevens aan de uitvoerbestemmingen van het partijprofiel ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=nl-NL) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend Experience Platform UI
 * [ verbind met partijbestemmingen en activeer gegevens gebruikend de Dienst API van de Stroom ](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=nl-NL) voor instructies op hoe te om gegevens aan partij of e-mail marketing bestemmingen te activeren gebruikend de Dienst API van de Stroom
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464515/?learn=on&enablevpops&captions=dut)
