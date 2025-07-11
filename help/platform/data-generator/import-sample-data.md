@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -20,20 +20,20 @@ Leer hoe u een Experience Platform-sandboxomgeving instelt met voorbeeldgegevens
 
 ## Voorbeeld van gebruik van gegevens
 
-Zakelijke gebruikers van Experience Platforms moeten vaak een reeks stappen doorlopen die het identificeren van veldgroepen, het creëren van schema&#39;s, het voorbereiden van gegevens, het creëren van datasets, en dan het opnemen van gegevens omvatten alvorens zij de marketing mogelijkheden kunnen onderzoeken die door Experience Platform worden aangeboden. In deze zelfstudie worden enkele stappen geautomatiseerd, zodat u gegevens zo snel mogelijk in een platformsandbox kunt plaatsen.
+Zakelijke gebruikers van Experience Platform moeten vaak een reeks stappen doorlopen die het identificeren van veldgroepen, het creëren van schema&#39;s, het voorbereiden van gegevens, het creëren van datasets, en dan het opnemen van gegevens omvatten alvorens zij de marketing mogelijkheden kunnen onderzoeken die door Experience Platform worden aangeboden. In deze zelfstudie worden enkele stappen geautomatiseerd, zodat u gegevens zo snel mogelijk in een platformsandbox kunt plaatsen.
 
 Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investeren in Adobe Experience Platform om loyaliteit, CRM, productcatalogus, en off-line aankoopgegevens in klantenprofielen in real time te combineren en deze profielen te activeren om hun marketing aan het volgende niveau te brengen. We hebben voorbeeldgegevens gegenereerd voor Luma en in de rest van deze zelfstudie importeert u deze gegevens in een van uw Experience Platform-sandboxomgevingen.
 
 >[!NOTE]
 >
->Het eindresultaat van dit leerprogramma is een zandbak die gelijkaardige gegevens aan [ bevat die met Adobe Experience Platform voor het leerprogramma van de Architecten van Gegevens en van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=nl-NL) worden begonnen. Het werd bijgewerkt in April 2023 om de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=nl-NL) te steunen. Het werd bijgewerkt in juni 2023 om de authentificatiemethode op OAuth te schakelen.
+>Het eindresultaat van dit leerprogramma is een zandbak die gelijkaardige gegevens aan [ bevat die met Adobe Experience Platform voor het leerprogramma van de Architecten van Gegevens en van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) worden begonnen. Het werd bijgewerkt in April 2023 om de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html) te steunen. Het werd bijgewerkt in juni 2023 om de authentificatiemethode op OAuth te schakelen.
 
 
 ## Vereisten
 
-* U hebt toegang tot Experience Platform APIs en weet hoe te voor authentiek te verklaren. Als niet, herzie dit [ leerprogramma ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=nl).
-* U hebt toegang tot een sandbox voor het ontwikkelen van Experience Platforms.
-* Je kent je Experience Platform huurder-id. U kunt het verkrijgen door een voor authentiek verklaard [ API verzoek ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=nl-NL#know-your-tenant_id) te maken
+* U hebt toegang tot Experience Platform API&#39;s en u weet hoe u deze kunt verifiëren. Als niet, herzie dit [ leerprogramma ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=nl).
+* U hebt toegang tot een Experience Platform-ontwikkelingssandbox.
+* Je kent je Experience Platform huurder-id. U kunt het verkrijgen door een voor authentiek verklaard [ API verzoek ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) te maken
 of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account. In de volgende URL is de huurder bijvoorbeeld &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home` .
 
 ## [!DNL Postman] gebruiken {#postman}
@@ -42,11 +42,11 @@ of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account
 
 Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](https://www.postman.com/downloads/) hebt gedownload. Laten we beginnen!
 
-1. Download het {[&#128279;](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip, dat alle dossiers bevat die voor dit leerprogramma worden vereist.
+1. Download het {[ dossier 0} platform-utils-main.zip, dat alle dossiers bevat die voor dit leerprogramma worden vereist.](../assets/data-generator/platform-utils-main.zip)
 
    >[!NOTE]
    >
-   >De gegevens van de gebruiker in het {[&#128279;](../assets/data-generator/platform-utils-main.zip) dossier 0} platform-utils-main.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.
+   >De gegevens van de gebruiker in het {[ dossier 0} platform-utils-main.zip zijn fictief en moeten slechts voor demonstratiedoeleinden worden gebruikt.](../assets/data-generator/platform-utils-main.zip)
 
 1. Verplaats het `platform-utils-main.zip` -bestand vanuit de downloadmap naar de gewenste locatie op de computer en decomprimeer het bestand.
 1. Open in de map `luma-data` alle `json` -bestanden in een teksteditor en vervang alle instanties van `_yourTenantId` door uw eigen huurder-id, voorafgegaan door een onderstrepingsteken.
@@ -63,7 +63,7 @@ Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](htt
    > 
    > ![ het dossierweg van Vensters ](../assets/data-generator/images/windows-file-path.png)
 
-1. Open [!DNL Postman] en creeer een werkruimte van het **2&rbrace; dropdown menu van de Werkruimten &lbrace;:**\
+1. Open [!DNL Postman] en creeer een werkruimte van het **2} dropdown menu van de Werkruimten {:**\
    ![ creeer werkruimte ](../assets/data-generator/images/create-workspace.png)
 1. Ga a **Naam** en facultatieve **Samenvatting** voor uw werkruimte in en klik **creeer Workspace**. [!DNL Postman] schakelt over naar de nieuwe werkruimte wanneer u deze maakt.
    ![ sparen werkruimte ](../assets/data-generator/images/save-workspace.png)
@@ -81,7 +81,7 @@ Alvorens u de stappen volgt, zorg ervoor dat u de [ toepassing van Postman ](htt
 1. Selecteer in Postman de omgeving in het vervolgkeuzemenu rechtsboven en klik op het oogpictogram om de omgevingsvariabelen weer te geven:
    ![ Selectie van het Milieu ](../assets/data-generator/images/env-selection.png)
 
-1. Controleer of de volgende omgevingsvariabelen zijn gevuld. Leren hoe te om de waarde van de milieuvariabelen te verkrijgen, controleer [ voor authentiek verklaren aan Experience Platform APIs ](/help/platform/authentication/platform-api-authentication.md) leerprogramma voor geleidelijke instructies.
+1. Controleer of de volgende omgevingsvariabelen zijn gevuld. Leren hoe te om de waarde van de milieuvariabelen te verkrijgen, controleer [ voor authentiek verklaart aan Experience Platform APIs ](/help/platform/api/platform-api-authentication.md) leerprogramma voor geleidelijke instructies.
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` in Adobe Developer Console
@@ -120,7 +120,7 @@ Vervolgens moet u de verzamelingen importeren in Postman.
 
 ### Verifiëren
 
-Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening mee dat de methoden voor het genereren van tokens die in deze zelfstudie worden gebruikt, alleen geschikt zijn voor niet-productiedoeleinden. Bij Lokaal ondertekenen wordt een JavaScript-bibliotheek geladen van een externe host en bij Extern ondertekenen wordt de persoonlijke sleutel verzonden naar een Adobe die eigendom is van en wordt beheerd via een webservice. Hoewel deze persoonlijke sleutel niet wordt opgeslagen in de Adobe, mogen productietoetsen nooit met iemand worden gedeeld.
+Vervolgens moet u een gebruikerstoken verifiëren en genereren. Houd er rekening mee dat de methoden voor het genereren van tokens die in deze zelfstudie worden gebruikt, alleen geschikt zijn voor niet-productiedoeleinden. Bij Lokaal ondertekenen wordt een JavaScript-bibliotheek geladen van een externe host en bij Extern ondertekenen wordt de persoonlijke sleutel naar een door Adobe beheerde webservice verzonden. Hoewel Adobe deze persoonlijke sleutel niet opslaat, mogen productietoetsen nooit met iemand worden gedeeld.
 
 1. Open de `0-Authentication` -verzameling, selecteer de `OAuth: Request Access Token` -aanvraag en klik op `SEND` om de toegangstoken te verifiëren en te verkrijgen.
 
@@ -185,18 +185,18 @@ Door de gegevens op de tabbladen **[!UICONTROL Attributes]** en **[!UICONTROL Ev
 
 ## Volgende stappen
 
-Als u over Adobe Journey Optimizer zou willen leren, bevat deze zandbak alles u de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=nl-NL) moet nemen
+Als u over Adobe Journey Optimizer zou willen leren, bevat deze zandbak alles u de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html) moet nemen
 
-Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer zou willen leren, over aan [ les 11 in het Begonnen krijgen voor de Architecten van Gegevens en het leerprogramma van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=nl-NL) springen. De vroegere lessen van dit andere leerprogramma hebben u manueel alles bouwen dat enkel door deze inzameling van Postman bevolkt was—geniet van het hoofdbegin!
+Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer zou willen leren, over aan [ les 11 in het Begonnen krijgen voor de Architecten van Gegevens en het leerprogramma van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en) springen. De vroegere lessen van dit andere leerprogramma hebben u manueel alles bouwen dat enkel door deze inzameling van Postman bevolkt was—geniet van het hoofdbegin!
 
-Als u een voorbeeldimplementatie van SDK van het Web aan verbinding aan deze zandbak wilt bouwen, ga door
-[ voert Adobe Experience Cloud met het leerprogramma van SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;Configuratie tags&quot; en &quot;Experience Platform instellen&quot; van de zelfstudie van de SDK van het web hebt ingesteld, meldt u zich aan bij de Luma-website met behulp van de eerste tien e-mailadressen in het `luma-crm.json` -bestand met behulp van het wachtwoord `test` om te zien hoe de profielfragmenten worden samengevoegd met de gegevens die in deze zelfstudie zijn geüpload.
+Als u een voorbeeld van een SDK-implementatie voor het web wilt maken om een koppeling naar deze sandbox te maken, doorloopt u de
+[ voert Adobe Experience Cloud met het leerprogramma van SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;Configuratie tags&quot; en &quot;Experience Platform instellen&quot; van de zelfstudie van Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met behulp van de eerste tien e-mailadressen in het `luma-crm.json` -bestand met behulp van het wachtwoord `test` om te zien hoe de profielfragmenten worden samengevoegd met gegevens die in deze zelfstudie zijn geüpload.
 
-Als u een voorbeeld van een mobiele SDK-implementatie wilt maken om een koppeling naar deze sandbox te maken, doorloopt u de
-[ voert Adobe Experience Cloud in mobiele apps leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=nl-NL). Nadat u de lesbestanden &quot;Eerste configuratie&quot;, &quot;App-implementatie&quot; en &quot;Experience Platform&quot; van de SDK van het web hebt ingesteld, meldt u zich met de eerste e-mailadressen in het bestand `luma-crm.json` aan bij de Luma-website om een profielfragment samen te voegen met gegevens die in deze zelfstudie zijn geüpload.
+Als u een voorbeeld wilt maken van een mobiele SDK-implementatie voor koppeling naar deze sandbox, doorloopt u de
+[ voert Adobe Experience Cloud in mobiele apps leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Nadat u de lesbestanden &quot;Eerste configuratie&quot;, &quot;App-implementatie&quot; en &quot;Experience Platform&quot; van de zelfstudie voor Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met de eerste e-mailadressen in het `luma-crm.json` -bestand om een profielfragment samen te voegen met gegevens die in deze zelfstudie zijn geüpload.
 
 ## Sandbox-omgeving opnieuw instellen {#reset-sandbox}
 
 Als u een niet-productiesandbox opnieuw instelt, worden alle bronnen verwijderd die aan die sandbox zijn gekoppeld (schema&#39;s, gegevenssets, enzovoort), terwijl de naam van de sandbox en de bijbehorende machtigingen behouden blijven. Deze &#39;schone&#39; sandbox blijft onder dezelfde naam beschikbaar voor gebruikers die er toegang toe hebben.
 
-Volg de stappen [ hier ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=nl-NL#reset-a-sandbox) om een zandbakmilieu terug te stellen.
+Volg de stappen [ hier ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) om een zandbakmilieu terug te stellen.
