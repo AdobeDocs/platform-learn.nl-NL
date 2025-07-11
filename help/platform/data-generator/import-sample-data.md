@@ -26,14 +26,14 @@ Deze zelfstudie richt zich op een fictief, handelsmerk genaamd Luma. Zij investe
 
 >[!NOTE]
 >
->Het eindresultaat van dit leerprogramma is een zandbak die gelijkaardige gegevens aan [ bevat die met Adobe Experience Platform voor het leerprogramma van de Architecten van Gegevens en van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html) worden begonnen. Het werd bijgewerkt in April 2023 om de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html) te steunen. Het werd bijgewerkt in juni 2023 om de authentificatiemethode op OAuth te schakelen.
+>Het eindresultaat van dit leerprogramma is een zandbak die gelijkaardige gegevens aan [ bevat die met Adobe Experience Platform voor het leerprogramma van de Architecten van Gegevens en van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=nl-NL) worden begonnen. Het werd bijgewerkt in April 2023 om de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=nl-NL) te steunen. Het werd bijgewerkt in juni 2023 om de authentificatiemethode op OAuth te schakelen.
 
 
 ## Vereisten
 
 * U hebt toegang tot Experience Platform API&#39;s en u weet hoe u deze kunt verifiëren. Als niet, herzie dit [ leerprogramma ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=nl).
 * U hebt toegang tot een Experience Platform-ontwikkelingssandbox.
-* Je kent je Experience Platform huurder-id. U kunt het verkrijgen door een voor authentiek verklaard [ API verzoek ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) te maken
+* Je kent je Experience Platform huurder-id. U kunt het verkrijgen door een voor authentiek verklaard [ API verzoek ](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=nl-NL#know-your-tenant_id) te maken
 of door deze uit de URL te halen wanneer u zich aanmeldt bij uw Platform-account. In de volgende URL is de huurder bijvoorbeeld &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home` .
 
 ## [!DNL Postman] gebruiken {#postman}
@@ -185,18 +185,18 @@ Door de gegevens op de tabbladen **[!UICONTROL Attributes]** en **[!UICONTROL Ev
 
 ## Volgende stappen
 
-Als u over Adobe Journey Optimizer zou willen leren, bevat deze zandbak alles u de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html) moet nemen
+Als u over Adobe Journey Optimizer zou willen leren, bevat deze zandbak alles u de [ uitdagingen van Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=nl-NL) moet nemen
 
-Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer zou willen leren, over aan [ les 11 in het Begonnen krijgen voor de Architecten van Gegevens en het leerprogramma van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en) springen. De vroegere lessen van dit andere leerprogramma hebben u manueel alles bouwen dat enkel door deze inzameling van Postman bevolkt was—geniet van het hoofdbegin!
+Als u over samenvoegingsbeleid, gegevensbeheer, vraagdienst, en de segmentbouwer zou willen leren, over aan [ les 11 in het Begonnen krijgen voor de Architecten van Gegevens en het leerprogramma van de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=nl-NL) springen. De vroegere lessen van dit andere leerprogramma hebben u manueel alles bouwen dat enkel door deze inzameling van Postman bevolkt was—geniet van het hoofdbegin!
 
 Als u een voorbeeld van een SDK-implementatie voor het web wilt maken om een koppeling naar deze sandbox te maken, doorloopt u de
-[ voert Adobe Experience Cloud met het leerprogramma van SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;Configuratie tags&quot; en &quot;Experience Platform instellen&quot; van de zelfstudie van Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met behulp van de eerste tien e-mailadressen in het `luma-crm.json` -bestand met behulp van het wachtwoord `test` om te zien hoe de profielfragmenten worden samengevoegd met gegevens die in deze zelfstudie zijn geüpload.
+[ voert Adobe Experience Cloud met het leerprogramma van SDK van het Web uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL). Nadat u de lessen &quot;Eerste configuratie&quot;, &quot;Configuratie tags&quot; en &quot;Experience Platform instellen&quot; van de zelfstudie van Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met behulp van de eerste tien e-mailadressen in het `luma-crm.json` -bestand met behulp van het wachtwoord `test` om te zien hoe de profielfragmenten worden samengevoegd met gegevens die in deze zelfstudie zijn geüpload.
 
 Als u een voorbeeld wilt maken van een mobiele SDK-implementatie voor koppeling naar deze sandbox, doorloopt u de
-[ voert Adobe Experience Cloud in mobiele apps leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Nadat u de lesbestanden &quot;Eerste configuratie&quot;, &quot;App-implementatie&quot; en &quot;Experience Platform&quot; van de zelfstudie voor Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met de eerste e-mailadressen in het `luma-crm.json` -bestand om een profielfragment samen te voegen met gegevens die in deze zelfstudie zijn geüpload.
+[ voert Adobe Experience Cloud in mobiele apps leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=nl-NL). Nadat u de lesbestanden &quot;Eerste configuratie&quot;, &quot;App-implementatie&quot; en &quot;Experience Platform&quot; van de zelfstudie voor Web SDK hebt ingesteld, meldt u zich aan bij de Luma-website met de eerste e-mailadressen in het `luma-crm.json` -bestand om een profielfragment samen te voegen met gegevens die in deze zelfstudie zijn geüpload.
 
 ## Sandbox-omgeving opnieuw instellen {#reset-sandbox}
 
 Als u een niet-productiesandbox opnieuw instelt, worden alle bronnen verwijderd die aan die sandbox zijn gekoppeld (schema&#39;s, gegevenssets, enzovoort), terwijl de naam van de sandbox en de bijbehorende machtigingen behouden blijven. Deze &#39;schone&#39; sandbox blijft onder dezelfde naam beschikbaar voor gebruikers die er toegang toe hebben.
 
-Volg de stappen [ hier ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) om een zandbakmilieu terug te stellen.
+Volg de stappen [ hier ](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=nl-NL#reset-a-sandbox) om een zandbakmilieu terug te stellen.
