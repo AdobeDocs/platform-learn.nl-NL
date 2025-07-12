@@ -20,4 +20,4 @@ ht-degree: 0%
 
 In deze video wordt uitgelegd hoe deze interfunctionele teams moeten samenwerken tussen verschillende gebruiksgevallen, gegevensbronnen, doelgroepen en doelen om succes en operationele efficiëntie te garanderen bij de goedkeuring van Real-Time CDP Collaboration
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464675/?learn=on&enablevpops&captions=dut)
