@@ -4,9 +4,9 @@ description: Journey Optimizer Je e-mailbericht maken
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: ea8255de9869061cd21d2b5e7c8690f84be0a25b
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
@@ -133,7 +133,7 @@ Dan heb je het volgende:
 
 ![ Journey Optimizer ](./images/msg30.png)
 
-Daarna, ga naar **Inhoud** en sleep en laat vallen a **&#x200B;**&#x200B;component van de Tekst in de structuurcomponent op de vierde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst in de structuurcomponent op de vierde rij.
 
 ![ Journey Optimizer ](./images/msg33.png)
 
@@ -151,7 +151,7 @@ U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
 
 ![ Journey Optimizer ](./images/msg37.png)
 
-Op het zelfde tekstgebied, duik **&#x200B;**&#x200B;binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
+Op het zelfde tekstgebied, duik **** binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
 
 ```
 Welcome aboard! We're thrilled to have you join the CitiSignal family. 
@@ -216,7 +216,7 @@ Klik **publiceren** opnieuw.
 
 ![ ACOP ](./images/publish1.png)
 
-Na een opeenvolging van notulen, zal het statuut van uw reis in **Levend** veranderen en u zult een dashboard in real time van de prestaties van uw reis zien.
+Na een paar notulen, zal het statuut van uw reis in **Levend** veranderen en u zult een dashboard in real time van de prestaties van uw reis zien.
 
 ![ ACOP ](./images/published.png)
 
