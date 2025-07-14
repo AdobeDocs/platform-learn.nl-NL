@@ -19,7 +19,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
 ![ ACOP ](./images/acoptriglp.png)
 
@@ -133,7 +133,7 @@ Dan heb je het volgende:
 
 ![ Journey Optimizer ](./images/msg30.png)
 
-Daarna, ga naar **Inhoud** en sleep en laat vallen a **** component van de Tekst in de structuurcomponent op de vierde rij.
+Daarna, ga naar **Inhoud** en sleep en laat vallen a **&#x200B;**&#x200B;component van de Tekst in de structuurcomponent op de vierde rij.
 
 ![ Journey Optimizer ](./images/msg33.png)
 
@@ -151,7 +151,7 @@ U zult nu zien hoe het verpersoonlijkingsgebied aan uw tekst is toegevoegd.
 
 ![ Journey Optimizer ](./images/msg37.png)
 
-Op het zelfde tekstgebied, duik **** binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
+Op het zelfde tekstgebied, duik **&#x200B;**&#x200B;binnen tweemaal om twee lijnen toe te voegen en de volgende tekst te kopiëren en te kleven:
 
 ```
 Welcome aboard! We're thrilled to have you join the CitiSignal family. 
