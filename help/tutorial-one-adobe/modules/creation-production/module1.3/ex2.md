@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,8 @@ In de vorige oefening, downloadde u het dossier [ CitiSignal-GSPeM-assets.zip ](
 
 ![ GSPeM ](./images/gspem17.png)
 
+### Meta-sjabloon
+
 Ga naar **Inhoud** > **Malplaatjes**. Klik op **+ Sjabloon toevoegen** .
 
 ![ GSPeM ](./images/gspem125.png)
@@ -261,6 +263,8 @@ Gebruik dit voor het gebied **naam van het Malplaatje**:
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
 ![ GSPeM ](./images/gspem131.png)
+
+### Banner Ad-sjablonen weergeven
 
 Klik op **+ Sjabloon toevoegen** .
 
@@ -348,6 +352,39 @@ Gebruik dit voor het gebied **naam van het Malplaatje**:
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
 ![ GSPeM ](./images/gspem152.png)
+
+### E-mailsjabloon
+
+Klik op **+ Sjabloon toevoegen** .
+
+![ GSPeM ](./images/gspem153.png)
+
+Selecteer **E-mail** en klik dan **doorbladeren**.
+
+![ GSPeM ](./images/gspem154.png)
+
+In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgerschap-email-template.html** en klik **Open**.
+
+![ GSPeM ](./images/gspem155.png)
+
+Dan moet je dit zien. Klik **daarna**.
+
+![ GSPeM ](./images/gspem156.png)
+
+Klik **daarna**.
+
+![ GSPeM ](./images/gspem157.png)
+
+Gebruik dit voor het gebied **naam van het Malplaatje**:
+`--aepUserLdap---citisignal-email-template` .
+
+Klik **publiceren malplaatje**.
+
+![ GSPeM ](./images/gspem158.png)
+
+Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
+
+![ GSPeM ](./images/gspem159.png)
 
 U hebt nu de malplaatjes gevormd die u voor de volgende oefening nodig hebt.
 

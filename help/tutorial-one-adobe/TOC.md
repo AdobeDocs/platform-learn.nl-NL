@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [1.3.1 Configuratie: merken](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Configuratie: persona&#39;s, producten en sjablonen](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
       + [1.3.3 Campagne activeren naar Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.4 E-mailbeleving voor AJO maken](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express en Adobe Experience Cloud {#crpr4}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,10 @@ In deze oefening, zult u persona&#39;s, producten en malplaatjes in GenStudio fo
 [ 1.3.3 de Activering van de Campagne aan Meta ](./ex3.md){target="_blank"}
 
 In deze oefening, zult u een Campagne creëren. U configureert ook een verbinding met Meta en u doorloopt alle stappen die nodig zijn om een advertentie te kunnen maken, een advertentie goed te keuren met Adobe Workfront en een advertentie naar Meta te publiceren.
+
+[ 1.3.4 creeer E-mailervaring voor AJO ](./ex4.md){target="_blank"}
+
+In deze exercitie, zult u een e-mailervaring gebruikend een malplaatje in GenStudio for Performance Marketing creëren, en u zult die ervaring met Adobe Journey Optimizer delen om een e-mailcampagne te verzenden.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
