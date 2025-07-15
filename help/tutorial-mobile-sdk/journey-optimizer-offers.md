@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
 workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op 
 
 ![Architectuur](assets/architecture-ajo.png)
 
-Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [ Ongeveer Beslissingsbeheer ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) voor meer informatie.
+Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [ Ongeveer Beslissingsbeheer ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) voor meer informatie.
 
 
 
@@ -35,7 +35,7 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer - het Beheer van het Besluit met de juiste toestemmingen om aanbiedingen en besluiten te beheren zoals [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=nl-NL#decisions-permissions) wordt beschreven.
+* Toegang tot Journey Optimizer - het Beheer van het Besluit met de juiste toestemmingen om aanbiedingen en besluiten te beheren zoals [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions) wordt beschreven.
 
 
 ## Leerdoelstellingen
@@ -63,7 +63,7 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=nl-NL#aep)
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
    ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-aep-configuration-offers.png)
@@ -98,7 +98,7 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 Uw instellingen valideren in Assurance:
 
 1. Ga naar de gebruikersinterface van Assurance.
-1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Validate Setup]** onder **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
+1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Validate Setup]** onder **[!UICONTROL OFFER DECISIONING AND TARGET]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Validate Setup]** in het linkerspoor. Zowel de gegevensstroominstelling als de SDK-instelling in uw toepassing worden gevalideerd.
    ![ AJO Beslissende bevestiging ](assets/ajo-decisioning-validation.png)
@@ -134,7 +134,6 @@ De Mobile JSON-plaatsing maken:
 1. In de **[!UICONTROL Details]** -stap van **[!UICONTROL Create new personalized offer]** :
    1. Voer een **[!UICONTROL Name]** in voor de aanbieding, bijvoorbeeld `Luma - Juno Jacket` , en voer een **[!UICONTROL Start date and time]** en een **[!UICONTROL End date and time]** in. Buiten deze datums wordt de aanbieding niet geselecteerd door de beslissingsengine.
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Aanbiedingen - Details ](assets/ajo-offers-details.png)
 
 1. In de **[!UICONTROL Add representations]** -stap van **[!UICONTROL Create new personalized offer]** :
@@ -153,17 +152,14 @@ De Mobile JSON-plaatsing maken:
          ```
 
       1. Selecteer **[!UICONTROL Save]**.
-
          ![ Aanbiedingen - de inhoud van de Douane ](assets/ajo-offers-customcontent.png)
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Vertegenwoordigingen van de Aanbieding ](assets/ajo-offers-representations.png)
 
 1. In de stap **[!UICONTROL Add constraints]** van **[!UICONTROL Create new personalized offer]** :
    1. Stel **[!UICONTROL Priority]** in op `10` .
    1. Schakelen **[!UICONTROL Include capping]** uit.
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Aanbiedingen - Beperkingen ](assets/ajo-offers-constraints.png)
 
 1. In de **[!UICONTROL Review]** -stap van **[!UICONTROL Create new personalized]** -aanbieding:
@@ -243,7 +239,7 @@ Een evaluatiecriterium is de combinatie van
 * subsidiabiliteitsregels: is het aanbod bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
 * een rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
 
-Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=nl-NL) tot stand te brengen en te beheren als u beter wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
+Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) tot stand te brengen en te beheren als u beter wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Offers]** in het linkerspoor.
 1. Selecteer **[!UICONTROL Decisions]** in de bovenste balk.
@@ -257,11 +253,9 @@ Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.
    1. In de **[!UICONTROL Evaluation Criteria]** tegel, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** toe.
       1. Selecteer in het dialoogvenster **[!UICONTROL Add Offer Collection]** de verzameling met aanbiedingen. Bijvoorbeeld **[!DNL Luma - Mobile App Collection]** .
       1. Selecteer **[!UICONTROL Add]**.
-
          ![ Besluit - de Uitgezochte inzameling ](assets/ajo-decision-selectcollection.png)
    1. Zorg ervoor dat **[!UICONTROL None]** is geselecteerd voor **[!UICONTROL Eligibility]** en dat **[!UICONTROL Offer priority]** is geselecteerd als **[!UICONTROL Ranking method]** .
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ werkingsgebied van het Besluit ](assets/ajo-decision-scopes.png).
 1. In de **[!UICONTROL Add fallback offer]** -stap van **[!UICONTROL Create a new offer decision]** :
    1. Selecteer de fallback-aanbieding, bijvoorbeeld de **[!DNL Luma - Fallback offer]** .
