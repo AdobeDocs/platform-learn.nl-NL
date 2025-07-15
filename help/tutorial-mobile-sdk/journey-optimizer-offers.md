@@ -134,6 +134,7 @@ De Mobile JSON-plaatsing maken:
 1. In de **[!UICONTROL Details]** -stap van **[!UICONTROL Create new personalized offer]** :
    1. Voer een **[!UICONTROL Name]** in voor de aanbieding, bijvoorbeeld `Luma - Juno Jacket` , en voer een **[!UICONTROL Start date and time]** en een **[!UICONTROL End date and time]** in. Buiten deze datums wordt de aanbieding niet geselecteerd door de beslissingsengine.
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Aanbiedingen - Details ](assets/ajo-offers-details.png)
 
 1. In de **[!UICONTROL Add representations]** -stap van **[!UICONTROL Create new personalized offer]** :
@@ -152,14 +153,17 @@ De Mobile JSON-plaatsing maken:
          ```
 
       1. Selecteer **[!UICONTROL Save]**.
+
          ![ Aanbiedingen - de inhoud van de Douane ](assets/ajo-offers-customcontent.png)
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Vertegenwoordigingen van de Aanbieding ](assets/ajo-offers-representations.png)
 
 1. In de stap **[!UICONTROL Add constraints]** van **[!UICONTROL Create new personalized offer]** :
    1. Stel **[!UICONTROL Priority]** in op `10` .
    1. Schakelen **[!UICONTROL Include capping]** uit.
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ Aanbiedingen - Beperkingen ](assets/ajo-offers-constraints.png)
 
 1. In de **[!UICONTROL Review]** -stap van **[!UICONTROL Create new personalized]** -aanbieding:
@@ -253,9 +257,11 @@ Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.
    1. In de **[!UICONTROL Evaluation Criteria]** tegel, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** toe.
       1. Selecteer in het dialoogvenster **[!UICONTROL Add Offer Collection]** de verzameling met aanbiedingen. Bijvoorbeeld **[!DNL Luma - Mobile App Collection]** .
       1. Selecteer **[!UICONTROL Add]**.
+
          ![ Besluit - de Uitgezochte inzameling ](assets/ajo-decision-selectcollection.png)
    1. Zorg ervoor dat **[!UICONTROL None]** is geselecteerd voor **[!UICONTROL Eligibility]** en dat **[!UICONTROL Offer priority]** is geselecteerd als **[!UICONTROL Ranking method]** .
    1. Selecteer **[!UICONTROL Next]**.
+
       ![ werkingsgebied van het Besluit ](assets/ajo-decision-scopes.png).
 1. In de **[!UICONTROL Add fallback offer]** -stap van **[!UICONTROL Create a new offer decision]** :
    1. Selecteer de fallback-aanbieding, bijvoorbeeld de **[!DNL Luma - Fallback offer]** .
