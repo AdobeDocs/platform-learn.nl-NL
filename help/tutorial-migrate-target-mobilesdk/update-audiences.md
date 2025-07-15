@@ -1,10 +1,10 @@
 ---
-title: Doelsoorten en profielscripts bijwerken - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen bepalen
-description: Leer hoe u het Adobe Target-publiek en profielscripts kunt bijwerken voor compatibiliteit met de extensie Decisioning.
+title: Doelsoorten en profielscripts bijwerken - De Adobe Target-implementatie in uw mobiele app migreren naar de Offer Decisioning- en Target-extensie
+description: Leer hoe u het Adobe Target-publiek en profielscripts kunt bijwerken voor compatibiliteit met de extensie Offer Decisioning en Target.
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # Doelpubliek en profielscripts bijwerken voor het bepalen van compatibiliteit met mobiele extensies
 
 
-Nadat u de technische updates hebt voltooid om Target te migreren naar de extensie Decisioning, moet u mogelijk een aantal van uw publiek, profielscripts en activiteiten bijwerken om een vloeiende overgang te garanderen.
+Nadat u de technische updates voor de migratie van Target naar de Offer Decisioning- en Target-extensie hebt voltooid, moet u mogelijk een aantal van uw publiek-, profielscripts en activiteiten bijwerken om een vloeiende overgang te garanderen.
 
 >[!INFO]
 >
@@ -29,9 +29,9 @@ Als u mbox-parameters naar het `xdm` -object migreert voordat u de wijzigingen i
 
 Als u mbox-parameters migreert naar het `xdm` -object, moeten doelgroepen die aangepaste mbox-parameters gebruiken, worden bijgewerkt om de nieuwe XDM-parameternamen te gebruiken. Een aangepaste parameter voor `page_name` wordt bijvoorbeeld waarschijnlijk toegewezen aan `web.webpagedetails.pageName` .
 
-Eén methode om compatibiliteit met zowel de doelextensie als de extensie voor besluitvorming te garanderen, is het bijwerken van relevante doelgroepen zodat `OR` -voorwaarden worden gebruikt, zoals hieronder wordt getoond:
+Eén methode om compatibiliteit met zowel de doelextensie als de Offer Decisioning- en doelextensie te garanderen, is het bijwerken van relevante doelgroepen zodat `OR` -voorwaarden worden gebruikt, zoals hieronder wordt getoond:
 
-![ hoe te om update een publiek van het Doel voor de verenigbaarheid van de Beslissingsuitbreiding ](assets/target-audience-update.png){zoomable="yes"} te bekijken
+![ hoe te om update een publiek van het Doel voor Offer Decisioning en de uitbreidingsverenigbaarheid van het Doel te bekijken ](assets/target-audience-update.png){zoomable="yes"}
 
 ## Profielscripts bewerken
 
@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [ profielmanuscripten ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [ profielmanuscripten ](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Parametertokens bijwerken voor dynamische inhoud
 
-Als u mbox paramters aan het `xdm` voorwerp migreert, en als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [ dynamische inhoudsvervanging ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om van de nieuwe XDM parameternamen rekenschap te geven.
+Als u mbox paramters aan het `xdm` voorwerp migreert, en als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [ dynamische inhoudsvervanging ](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om van de nieuwe XDM parameternamen rekenschap te geven.
 
 Afhankelijk van hoe u symbolische vervanging voor mbox parameters gebruikt, kunt u uw bestaande opstelling aan rekening voor zowel oude als nieuwe parameternamen kunnen verbeteren. In situaties waarin aangepaste JavaScript-code niet mogelijk is, zoals in JSON-aanbiedingen, moet u echter kopieën maken en updates uitvoeren nadat de migratie is voltooid en live op uw productiesite gaat.
 
@@ -88,4 +88,4 @@ Daarna, leer hoe te [ de implementatie van het Doel ](validate.md) bevestigen.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

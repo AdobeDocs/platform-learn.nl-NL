@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2181'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op 
 
 ![Architectuur](assets/architecture-ajo.png)
 
-Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [ Ongeveer Beslissingsbeheer ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) voor meer informatie.
+Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [ Ongeveer Beslissingsbeheer ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) voor meer informatie.
 
 
 
@@ -35,7 +35,7 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer - het Beheer van het Besluit met de juiste toestemmingen om aanbiedingen en besluiten te beheren zoals [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=nl-NL#decisions-permissions) wordt beschreven.
+* Toegang tot Journey Optimizer - het Beheer van het Besluit met de juiste toestemmingen om aanbiedingen en besluiten te beheren zoals [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions) wordt beschreven.
 
 
 ## Leerdoelstellingen
@@ -43,9 +43,9 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 In deze les zult u
 
 * Werk uw Edge-configuratie bij voor Beslissingsbeheer.
-* Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
+* Werk de eigenschap tag bij met de extensie Offer Decisioning en Target.
 * Werk uw schema bij om propositiegebeurtenissen vast te leggen.
-* Valideer installatie in Betrouwbaarheid.
+* Instellingen valideren in Assurance.
 * Maak een biedbesluit op basis van aanbiedingen in Journey Optimizer - Beslissingsbeheer.
 * Werk uw app bij om de extensie Optimizer te registreren.
 * Voer aanbiedingen van Beslissingsbeheer in uw app uit.
@@ -63,10 +63,10 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=nl-NL#aep) voor meer informatie.
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de les van het Doel zult doen, uitgezocht **[!UICONTROL Personalization Destinations]**, ook. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
-   ![ AEP gegevensstroomconfiguratie ](assets/datastream-aep-configuration-offers.png)
+   ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-aep-configuration-offers.png)
 
 
 
@@ -76,10 +76,10 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 1. Navigeer naar **[!UICONTROL Tags]** , zoek de eigenschap mobile tag en open deze.
 1. Selecteer **[!UICONTROL Extensions]**.
 1. Selecteer **[!UICONTROL Catalog]**.
-1. Zoek naar de extensie **[!UICONTROL Adobe Journey Optimizer - Decisioning]** .
+1. Zoek naar de extensie **[!UICONTROL Offer Decisioning and Target]** .
 1. De extensie installeren. Voor de extensie is geen aanvullende configuratie vereist.
 
-   ![ voeg de uitbreiding van het Beslissen toe ](assets/tag-add-decisioning-extension.png)
+   ![ voeg Offer Decisioning en de uitbreiding van het Doel toe ](assets/tag-add-decisioning-extension.png)
 
 
 ### Uw schema bijwerken
@@ -93,14 +93,14 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 1. Selecteer **[!UICONTROL Save]** om de wijzigingen in uw schema op te slaan.
 
 
-## Setup valideren bij Betrouwbaarheid
+## Instellingen valideren in Assurance
 
-Uw instellingen valideren in Betrouwbaarheid:
+Uw instellingen valideren in Assurance:
 
-1. Ga naar de betrouwbaarheidsinterface.
+1. Ga naar de gebruikersinterface van Assurance.
 1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Validate Setup]** onder **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecteer **[!UICONTROL Save]**.
-1. Selecteer **[!UICONTROL Validate Setup]** in het linkerspoor. Zowel de gegevensstroomopstelling als de opstelling van SDK in uw toepassing worden bevestigd.
+1. Selecteer **[!UICONTROL Validate Setup]** in het linkerspoor. Zowel de gegevensstroominstelling als de SDK-instelling in uw toepassing worden gevalideerd.
    ![ AJO Beslissende bevestiging ](assets/ajo-decisioning-validation.png)
 
 
@@ -128,13 +128,12 @@ De Mobile JSON-plaatsing maken:
 ## Aanbiedingen maken
 
 1. In Journey Optimizer UI, uitgezochte ![ Aanbiedingen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL Offers]** van **[!UICONTROL DECISION MANAGEMENT]** in het linkerspoor.
-1. Selecteer **[!UICONTROL Browse]** in het scherm **[!UICONTROL Offers]** om de lijst met aanbiedingen weer te geven.
+1. Selecteer **[!UICONTROL Offers]** in het scherm **[!UICONTROL Browse]** om de lijst met aanbiedingen weer te geven.
 1. Selecteer **[!UICONTROL Create offer]**.
-1. Selecteer **[!UICONTROL Personalized offer]** in het dialoogvenster **[!UICONTROL New offer]** en klik op **[!UICONTROL Next]** .
+1. Selecteer **[!UICONTROL New offer]** in het dialoogvenster **[!UICONTROL Personalized offer]** en klik op **[!UICONTROL Next]** .
 1. In de **[!UICONTROL Details]** -stap van **[!UICONTROL Create new personalized offer]** :
    1. Voer een **[!UICONTROL Name]** in voor de aanbieding, bijvoorbeeld `Luma - Juno Jacket` , en voer een **[!UICONTROL Start date and time]** en een **[!UICONTROL End date and time]** in. Buiten deze datums wordt de aanbieding niet geselecteerd door de beslissingsengine.
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Aanbiedingen - Details ](assets/ajo-offers-details.png)
 
 1. In de **[!UICONTROL Add representations]** -stap van **[!UICONTROL Create new personalized offer]** :
@@ -153,22 +152,19 @@ De Mobile JSON-plaatsing maken:
          ```
 
       1. Selecteer **[!UICONTROL Save]**.
-
          ![ Aanbiedingen - de inhoud van de Douane ](assets/ajo-offers-customcontent.png)
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Vertegenwoordigingen van de Aanbieding ](assets/ajo-offers-representations.png)
 
 1. In de stap **[!UICONTROL Add constraints]** van **[!UICONTROL Create new personalized offer]** :
    1. Stel **[!UICONTROL Priority]** in op `10` .
    1. Schakelen **[!UICONTROL Include capping]** uit.
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ Aanbiedingen - Beperkingen ](assets/ajo-offers-constraints.png)
 
 1. In de **[!UICONTROL Review]** -stap van **[!UICONTROL Create new personalized]** -aanbieding:
    1. Controleer de aanbieding en selecteer vervolgens **[!UICONTROL Finish]** .
-   1. Selecteer **[!UICONTROL Save and approve]** in het dialoogvenster **[!UICONTROL Save offer]** .
+   1. Selecteer **[!UICONTROL Save offer]** in het dialoogvenster **[!UICONTROL Save and approve]** .
 
 1. Herhaal stap 3 - 8 om nog vier aanbiedingen met verschillende namen en inhoud te maken. Alle andere configuratiewaarden, bijvoorbeeld Begindatum en -tijd of Prioriteit, zijn vergelijkbaar met de eerste aanbieding die u hebt gemaakt. U kunt snel dubbele aanbiedingen maken en deze bewerken.
 
@@ -189,7 +185,7 @@ De Mobile JSON-plaatsing maken:
 
 1. Als laatste stap moet u een fallback-aanbieding maken. Dit is een aanbieding die naar klanten wordt gestuurd als ze niet in aanmerking komen voor andere aanbiedingen.
    1. Selecteer **[!UICONTROL Create offer]**.
-   1. Selecteer **[!UICONTROL Personalized offer]** in het dialoogvenster **[!UICONTROL Next]** van **[!UICONTROL New offer]** .
+   1. Selecteer **[!UICONTROL New offer]** in het dialoogvenster **[!UICONTROL Personalized offer]** van **[!UICONTROL Next]** .
    1. Voer in de **[!UICONTROL Details]** stap van **[!UICONTROL Create new fallback offer]** een **[!UICONTROL Name]** voor de aanbieding in, bijvoorbeeld `Luma - Fallback Offer` , en selecteer **[!UICONTROL Next]** .
 
    1. In de **[!UICONTROL Add representations]** -stap van **[!UICONTROL Create new fallback offer]** :
@@ -211,7 +207,7 @@ De Mobile JSON-plaatsing maken:
 
 1. In de **[!UICONTROL Review]** -stap van **[!UICONTROL Create new fallback]** -aanbieding:
    1. Controleer de aanbieding en selecteer vervolgens **[!UICONTROL Finish]** .
-   1. Selecteer **[!UICONTROL Save and approve]** in het dialoogvenster **[!UICONTROL Save offer]** .
+   1. Selecteer **[!UICONTROL Save offer]** in het dialoogvenster **[!UICONTROL Save and approve]** .
 
 Je moet nu de volgende lijst met voorstellen hebben:
 ![ lijst van Aanbiedingen ](assets/ajo-offers-list.png)
@@ -243,7 +239,7 @@ Een evaluatiecriterium is de combinatie van
 * subsidiabiliteitsregels: is het aanbod bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
 * een rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
 
-Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=nl-NL) tot stand te brengen en te beheren als u beter wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
+Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) tot stand te brengen en te beheren als u beter wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Offers]** in het linkerspoor.
 1. Selecteer **[!UICONTROL Decisions]** in de bovenste balk.
@@ -257,18 +253,16 @@ Zie [ Zeer belangrijke stappen om aanbiedingen ](https://experienceleague.adobe.
    1. In de **[!UICONTROL Evaluation Criteria]** tegel, uitgezocht ![ voeg ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** toe.
       1. Selecteer in het dialoogvenster **[!UICONTROL Add Offer Collection]** de verzameling met aanbiedingen. Bijvoorbeeld **[!DNL Luma - Mobile App Collection]** .
       1. Selecteer **[!UICONTROL Add]**.
-
          ![ Besluit - de Uitgezochte inzameling ](assets/ajo-decision-selectcollection.png)
    1. Zorg ervoor dat **[!UICONTROL None]** is geselecteerd voor **[!UICONTROL Eligibility]** en dat **[!UICONTROL Offer priority]** is geselecteerd als **[!UICONTROL Ranking method]** .
    1. Selecteer **[!UICONTROL Next]**.
-
       ![ werkingsgebied van het Besluit ](assets/ajo-decision-scopes.png).
 1. In de **[!UICONTROL Add fallback offer]** -stap van **[!UICONTROL Create a new offer decision]** :
    1. Selecteer de fallback-aanbieding, bijvoorbeeld de **[!DNL Luma - Fallback offer]** .
    1. Selecteer **[!UICONTROL Next]**.
 1. In de **[!UICONTROL Summary]** -stap van **[!UICONTROL Create a new offer decision]** :
    1. Selecteer **[!UICONTROL Finish]**.
-   1. Selecteer **[!UICONTROL Save and activate]** in het dialoogvenster **[!UICONTROL Save offer decision]** .
+   1. Selecteer **[!UICONTROL Save offer decision]** in het dialoogvenster **[!UICONTROL Save and activate]** .
    1. Op het tabblad **[!UICONTROL Decisions]** wordt uw beslissing met status **[!UICONTROL Live]** weergegeven.
 
 Je biedingsbesluit, dat uit een reeks voorstellen bestaat, is nu klaar voor gebruik. Als u de beslissing in uw app wilt gebruiken, moet u in uw code naar het beslissingsbereik verwijzen.
@@ -297,7 +291,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ AEP ](https://github.com/adobe/aepsdk-messaging-ios) optimaliseert aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
+1. In Xcode, zorg ervoor dat [ AEP optimaliseert ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [.](install-sdks.md#swift-package-manager)
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPOptimize` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -399,11 +393,11 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    De aanbiedingen zijn willekeurig, aangezien u alle aanbiedingen dezelfde prioriteit heeft gegeven en de rangorde voor het besluit is gebaseerd op prioriteit.
 
 
-## Implementatie valideren bij Betrouwbaarheid
+## Implementatie valideren in Assurance
 
-U kunt als volgt de implementatie van de aanbiedingen in Betrouwbaarheid valideren:
+De implementatie van aanbiedingen in Assurance valideren:
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Review & Simulate]** onder **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Review & Simulate]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
@@ -422,8 +416,8 @@ Nu hebt u alle gereedschappen om meer functionaliteit toe te voegen aan uw Journ
 
 >[!SUCCESS]
 >
->U hebt de app ingeschakeld om aanbiedingen weer te geven met de Journey Optimizer-beslissingsextensie voor de Experience Platform Mobile SDK.
+>U hebt de app ingeschakeld om aanbiedingen weer te geven met de Offer Decisioning- en Target-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[voer A/B tests](target.md)** uit

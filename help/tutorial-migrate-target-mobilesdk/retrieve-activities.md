@@ -1,10 +1,10 @@
 ---
-title: Doelactiviteiten ophalen - De Adobe Target-implementatie in uw mobiele app migreren naar de Adobe Journey Optimizer - De extensie voor beslissingen bepalen
-description: Leer hoe u Adobe Target-activiteiten ophaalt tijdens het migreren van de Adobe Target naar de Adobe Journey Optimizer - Mobiele extensie beslissen.
+title: Doelactiviteiten ophalen - De Adobe Target-implementatie in uw mobiele app migreren naar de Offer Decisioning- en Target-extensie
+description: Leer hoe u Adobe Target-activiteiten ophaalt tijdens het migreren van de Adobe Target naar de extensie Offer Decisioning en Target Mobile.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ De inhoud die door Target wordt geretourneerd, ook wel &quot;aanbiedingen&quot; 
 * Functiemarkeringen inschakelen in uw toepassing
 * Alternatieve tekst of afbeeldingen behouden
 
-Als u activiteiten hebt die in zowel de uitbreiding van het Doel als de uitbreidingsversies van het Beslissen van uw toepassing moeten lopen, ben zeker om grondig te testen. Als u verschillende aanbiedingen voor verschillende versies van uw app moet gebruiken, kunt u overwegen de doelopties in de interface te gebruiken om verschillende aanbiedingen aan de verschillende versies te leveren.
+Als u activiteiten hebt die in zowel de extensie van het Doel als de extensie van Offer Decisioning en Doel van uw toepassing moeten worden uitgevoerd, moet u de test grondig uitvoeren. Als u verschillende aanbiedingen voor verschillende versies van uw app moet gebruiken, kunt u overwegen de doelopties in de interface te gebruiken om verschillende aanbiedingen aan de verschillende versies te leveren.
 
 Zorg er altijd voor dat u foutafhandeling opneemt om geschikte ervaringen onder fouten weer te geven.
 
@@ -143,8 +143,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-Daarna, leer hoe te [ parameters van het Punt overgaan gebruikend de Decisioning uitbreiding ](send-parameters.md).
+Daarna, leer hoe te [ parameters overgaan van het Doel gebruikend Offer Decisioning en de uitbreiding van het Doel ](send-parameters.md).
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

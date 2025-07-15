@@ -1,5 +1,5 @@
 ---
-user-guide-title: Uw mobiele app migreren van de Adobe Target naar de Adobe Journey Optimizer - De beslissingsextensie
+user-guide-title: Uw mobiele app migreren van de Adobe Target naar de Offer Decisioning- en Target-extensie
 user-guide-description: Een praktische zelfstudie voor doelklanten over het migreren van mobiele SDK-implementaties van de doelextensie naar de extensie Optimie
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -9,7 +9,7 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-17468
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# Uw mobiele app migreren van de Adobe Target naar de Adobe Journey Optimizer - De beslissingsextensie{#migrate-target-to-mobile-sdk-decisioning}
+# Uw mobiele app migreren van de Adobe Target naar de Offer Decisioning- en Target-extensie{#migrate-target-to-mobile-sdk-decisioning}
 
 + [Zelfstudie](overview.md)
 

@@ -1,14 +1,14 @@
 ---
 title: A/B-tests uitvoeren in mobiele apps met Target en Platform Mobile SDK
-description: Leer hoe u een Target A/B-test gebruikt in uw mobiele app met Platform Mobile SDK en Adobe Target.
+description: Leer hoe u een Target A/B-test kunt gebruiken in uw mobiele app met Platform Mobile SDK en Adobe Target.
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Leer hoe u de ervaringen in uw mobiele apps kunt optimaliseren en aanpassen met Platform Mobile SDK en Adobe Target.
 
-Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel. Zie het [ overzicht van de Test A/B ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL) voor meer informatie.
+Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel. Zie het [ overzicht van de Test A/B ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) voor meer informatie.
 
 ![Architectuur](assets/architecture-at.png)
 
@@ -31,7 +31,7 @@ Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juist
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* Toegang tot Adobe Target met toestemmingen, behoorlijk gevormde rollen, werkruimten, en eigenschappen zoals die [ hier ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=nl-NL) worden beschreven.
+* Toegang tot Adobe Target met toestemmingen, behoorlijk gevormde rollen, werkruimten, en eigenschappen zoals die [ hier ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en) worden beschreven.
 
 
 ## Leerdoelstellingen
@@ -39,13 +39,13 @@ Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juist
 In deze les zult u:
 
 * Werk uw gegevensstroom bij voor integratie van het Doel.
-* Werk de eigenschap tag bij met de extensie Journey Optimizer - Decisioning.
+* Werk de eigenschap tag bij met de extensie Offer Decisioning en Target.
 * Werk uw schema bij om aanvraaggebeurtenissen vast te leggen.
-* Valideer installatie in Betrouwbaarheid.
+* Instellingen valideren in Assurance.
 * Maak een eenvoudige A/B-test in Doel.
 * Werk uw app bij om de extensie Optimizer te registreren.
 * Implementeer de A/B-test in uw app.
-* Implementatie valideren in Betrouwbaarheid.
+* Implementatie valideren in Assurance.
 
 
 ## Instellen
@@ -58,17 +58,17 @@ In deze les zult u:
 
 #### Adobe Target
 
-Om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network van het Experience Platform worden verzonden, naar Adobe Target worden doorgestuurd, moet u de configuratie van de gegevensstroom bijwerken.
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Experience Platform Edge Network verzendt, naar Adobe Target worden doorgestuurd, moet u de configuratie van de gegevensstroom bijwerken.
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer **[!UICONTROL Add Service]** en selecteer **[!UICONTROL Adobe Target]** in de lijst **[!UICONTROL Service]** .
-1. Als u een klant van de Premium van het Doel bent en bezitstokens wilt gebruiken, ga de waarde van het Doel **[!UICONTROL Property Token]** in die u voor deze integratie wilt gebruiken. Target Standard-gebruikers kunnen deze stap overslaan.
+1. Als u een Target Premium-klant bent en eigenschapstokens wilt gebruiken, voert u de waarde Target **[!UICONTROL Property Token]** in die u voor deze integratie wilt gebruiken. Target Standard-gebruikers kunnen deze stap overslaan.
 
    U kunt de eigenschappen vinden in de doelinterface, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]** . Selecteer ![ Code ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschapstoken heeft een indeling zoals `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` ; u moet alleen de waarde `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` invoeren.
 
-   U kunt ook een doel-omgeving-id opgeven. Het doel gebruikt omgevingen om uw sites en pre-productieomgevingen te organiseren voor eenvoudig beheer en afzonderlijke rapportering. De vooraf ingestelde omgevingen zijn onder andere Productie, Staging en Ontwikkeling. Zie [ Milieu ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=nl-NL) en [ identiteitskaart van het Milieu van het Doel ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=nl-NL#target-environment-id) voor meer informatie.
+   U kunt ook een doel-omgeving-id opgeven. Het doel gebruikt omgevingen om uw sites en pre-productieomgevingen te organiseren voor eenvoudig beheer en afzonderlijke rapportering. De vooraf ingestelde omgevingen zijn onder andere Productie, Staging en Ontwikkeling. Zie [ Milieu ](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) en [ identiteitskaart van het Milieu van het Doel ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) voor meer informatie.
 
-   U kunt desgewenst een naamruimte van een externe doelid opgeven ter ondersteuning van profielsynchronisatie op een naamruimte van een identiteit (bijvoorbeeld CRM-id). Zie [ identiteitskaart van de Derde van het Doel namespace ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=nl-NL#target-third-party-id-namespace) voor meer informatie.
+   U kunt desgewenst een naamruimte van een externe doelid opgeven ter ondersteuning van profielsynchronisatie op een naamruimte van een identiteit (bijvoorbeeld CRM-id). Zie [ identiteitskaart van de Derde van het Doel namespace ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) voor meer informatie.
 
 1. Selecteer **[!UICONTROL Save]**.
 
@@ -77,25 +77,25 @@ Om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network 
 
 #### Adobe Journey Optimizer
 
-Om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network worden verzonden, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van uw gegevensstroom bij.
+Om ervoor te zorgen dat gegevens die u van uw mobiele app naar de Edge Network verzendt, naar Journey Optimizer - Beslissingsbeheer worden doorgestuurd, werkt u de configuratie van uw gegevensstroom bij.
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor dat **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Personalization Destinations]** worden geselecteerd. Als u ook de Journey Optimizer-lessen volgt, selecteert u **[!UICONTROL Adobe Journey Optimizer]** . Zie {de montages van 0} Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=nl-NL#aep) voor meer informatie.
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor dat **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Personalization Destinations]** worden geselecteerd. Als u ook de Journey Optimizer-lessen volgt, selecteert u **[!UICONTROL Adobe Journey Optimizer]** . Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
-   ![ AEP gegevensstroomconfiguratie ](assets/datastream-aep-configuration-target.png)
+   ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-aep-configuration-target.png)
 
 
-### Adobe Journey Optimizer installeren - extensie voor beslissingstags
+### Offer Decisioning- en Target-tagextensie installeren
 
 1. Navigeer naar **[!UICONTROL Tags]** , zoek de eigenschap mobile tag en open de eigenschap.
 1. Selecteer **[!UICONTROL Extensions]**.
 1. Selecteer **[!UICONTROL Catalog]**.
-1. Zoek naar de extensie **[!UICONTROL Adobe Journey Optimizer - Decisioning]** .
+1. Zoek naar de extensie **[!UICONTROL Offer Decisioning and Target]** .
 1. De extensie installeren. Voor de extensie is geen aanvullende configuratie vereist.
 
-   ![ voeg de uitbreiding van het Beslissen toe ](assets/tag-add-decisioning-extension.png)
+   ![ voeg Offer Decisioning en de uitbreiding van het Doel toe ](assets/tag-add-decisioning-extension.png)
 
 
 ### Uw schema bijwerken
@@ -109,11 +109,11 @@ Om ervoor te zorgen dat gegevens die vanuit uw mobiele app naar de Edge Network 
 1. Selecteer **[!UICONTROL Save]** om de wijzigingen in het schema op te slaan.
 
 
-### Setup valideren bij Betrouwbaarheid
+### Instellingen valideren in Assurance
 
-Uw instellingen valideren in Betrouwbaarheid:
+Uw instellingen valideren in Assurance:
 
-1. Ga naar de betrouwbaarheidsinterface.
+1. Ga naar de gebruikersinterface van Assurance.
 1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Validate Setup]** onder **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Validate Setup]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
@@ -125,7 +125,7 @@ Er zijn vele soorten activiteiten die u kunt maken in Adobe Target en implemente
 
 1. Selecteer in de interface Doel de optie **[!UICONTROL Activities]** in de bovenste balk.
 1. Selecteer **[!UICONTROL Create Activity]** en **[!UICONTROL A/B Test]** in het contextmenu.
-1. Selecteer in het dialoogvenster **[!UICONTROL Create A/B Test Activity]** **[!UICONTROL Mobile]** als **[!UICONTROL Type]** , selecteer een werkruimte in de lijst **[!UICONTROL Choose Workspace]** en selecteer uw eigenschap in de lijst **[!UICONTROL Choose property]** als u een Target Premium-klant bent en een eigenschapstoken hebt opgegeven in de gegevensstroom.
+1. Selecteer in het dialoogvenster **[!UICONTROL Create A/B Test Activity]** **[!UICONTROL Mobile]** als **[!UICONTROL Type]** , selecteer een werkruimte in de lijst **[!UICONTROL Choose Workspace]** en selecteer de eigenschap in de lijst **[!UICONTROL Choose property]** als u een Target Premium-klant bent en een eigenschapstoken in de gegevensstroom hebt opgegeven.
 1. Selecteer **[!UICONTROL Create]**.
    ![ creeer de activiteit van het Doel ](assets/target-create-activity1.png)
 
@@ -191,7 +191,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ AEP ](https://github.com/adobe/aepsdk-messaging-ios) optimaliseert aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
+1. In Xcode, zorg ervoor dat [ AEP optimaliseert ](https://github.com/adobe/aepsdk-messaging-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [.](install-sdks.md#swift-package-manager)
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPOptimize` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -240,7 +240,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    * wint de voorstellen voor het huidige profiel terug dat op het beslissingswerkingsgebied wordt gebaseerd (die de plaats is u in de A/B Test hebt bepaald);
    * het aanbod uit het voorstel ophaalt;
    * de inhoud van de aanbieding opheft, zodat deze correct in de app kan worden weergegeven, en
-   * activeert de `displayed()` -actie op de aanbieding die een gebeurtenis terugstuurt naar de Edge Network van Platform die aangeeft dat de aanbieding wordt weergegeven.
+   * activeert de `displayed()` -actie op de aanbieding die een gebeurtenis terugstuurt naar Platform Edge Network op de hoogte dat de aanbieding wordt weergegeven.
 
 1. Nog steeds in **[!DNL TargetOffersView]** , voeg de volgende code aan de `.onFirstAppear` bepaling toe. Deze code zorgt ervoor dat de callback voor het bijwerken van de aanbiedingen slechts eenmaal wordt geregistreerd.
 
@@ -272,11 +272,11 @@ U kunt extra parameters van het Doel (zoals mbox, profiel, product, of ordeparam
    <img src="assets/target-app-offer.png" width="300">
 
 
-## Implementatie valideren bij Betrouwbaarheid
+## Implementatie valideren in Assurance
 
-Om de A/B-test in betrouwbaarheid te valideren:
+De A/B-test in Assurance valideren:
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat aan Verzekering te verbinden.
+1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. Selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Review & Simulate]** onder **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Review & Simulate]** in het linkerspoor. Zowel de gegevensstroomopstelling wordt bevestigd als de opstelling van SDK in uw toepassing.
@@ -291,8 +291,8 @@ U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing me
 
 >[!SUCCESS]
 >
->U hebt de app voor A/B-tests ingeschakeld en de resultaten van een A/B-test met Adobe Target en de Adobe Journey Optimizer - Decisioning-extensie voor de Adobe Experience Platform Mobile SDK weergegeven.
+>U hebt de app voor A/B-tests ingeschakeld en de resultaten van een A/B-test met Adobe Target en de Offer Decisioning- en Target-extensie voor de Adobe Experience Platform Mobile SDK weergegeven.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[Conclusie en volgende stappen](conclusion.md)**

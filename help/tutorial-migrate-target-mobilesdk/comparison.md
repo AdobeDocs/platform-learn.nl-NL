@@ -1,35 +1,35 @@
 ---
-title: Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
-description: Leer over de verschillen tussen de uitbreiding van het Doel aan de uitbreiding van het Besluit met inbegrip van eigenschappen, functies, montages, en gegevensstroom.
+title: Vergelijking van de extensie Doel met de extensie Offer Decisioning en Target
+description: Leer meer over de verschillen tussen de extensie Target voor de Offer Decisioning en de extensie Target, zoals functies, instellingen en gegevensstroom.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
 
-# Vergelijking van de uitbreiding van het Doel met de Decisioning uitbreiding
+# Vergelijking van de extensie Doel met de extensie Offer Decisioning en Target
 
-De Adobe Journey Optimizer - beslissingsextensie verschilt van de Adobe Target-extensie voor mobiele apps. De volgende tabellen zijn een referentie om u te helpen gebieden van uw implementatie te evalueren waarop u zich tijdens het migratieproces moet concentreren.
+De extensie Offer Decisioning en Target verschilt van de extensie Adobe Target voor mobiele apps. De volgende tabellen zijn een referentie om u te helpen gebieden van uw implementatie te evalueren waarop u zich tijdens het migratieproces moet concentreren.
 
 Na het herzien van de informatie hieronder en het beoordelen van uw huidige technische implementatie van de uitbreiding van het Doel, zou u het volgende moeten kunnen begrijpen:
 
-- Welke doelfuncties door Adobe Journey Optimizer worden ondersteund - Beslissing
-- Welke Adobe Target-extensiefuncties hebben Adobe Journey Optimizer-beslissingsequivalenten
-- Hoe de montages van het Doel met Adobe Journey Optimizer worden toegepast - Beslissing
-- Hoe de gegevens stromen gebruikend Adobe Journey Optimizer - Beslissende uitbreiding
+- Welke doelfuncties door Offer Decisioning en Target worden ondersteund
+- Welke Adobe Target-uitbreidingsfuncties hebben Offer Decisioning- en Target-equivalenten
+- Hoe de montages van het Doel met Offer Decisioning en Doel worden toegepast
+- De gegevensstromen met de extensie Offer Decisioning en Target
 
 ## Operationele verschillen
 
-| | Doelextensie | Decisitie-extensie |
+| | Doelextensie | Offer Decisioning en Target-extensie |
 |---|---|---|
-| Proces | Wijzigingen in een doelimplementatie kunnen plaatsvinden na een proces dat andere eisen stelt aan de snelheid of kwaliteit van de kwaliteit in vergelijking met andere toepassingen, zoals Analytics. | Bij wijzigingen in een implementatie van een beslissingsextensie moeten alle downstreamtoepassingen in aanmerking worden genomen en moet het kwaliteitscontroleproces en het publicatieproces dienovereenkomstig worden aangepast. |
-| Collaboration | De gegevens specifiek voor Doel kunnen direct in de vraag van het Doel worden overgegaan. Als het Doel rapporteringsbron Adobe Analytics (A4T) is, kunnen de gegevens specifiek voor Doel ook aan Adobe Analytics worden overgegaan wanneer de aangewezen het volgen methodes in de uitbreiding van het Doel voor de inhoudvertoning en interactie van het Doel worden geroepen. | De gegevens die in de de uitbreidingsvraag van het Beslissen worden overgegaan kunnen aan zowel Doel als Analytics worden door:sturen als het Doel rapporteringsbron Adobe Analytics (A4T) is, wordt Adobe Analytics toegelaten in de gegevensstroom, en de aangewezen volgende methodes in de uitbreiding van het Beslissen worden geroepen wanneer de inhoud van het Doel wordt getoond en met interactie heeft. |
+| Proces | Wijzigingen in een doelimplementatie kunnen plaatsvinden na een proces dat andere eisen stelt aan de snelheid of kwaliteit van de kwaliteit in vergelijking met andere toepassingen, zoals Analytics. | Bij wijzigingen in een Offer Decisioning- en Target-extensie-implementatie moeten alle downstreamtoepassingen in aanmerking worden genomen en moet het kwaliteitscontroleproces en het publicatieproces dienovereenkomstig worden aangepast. |
+| Collaboration | De gegevens specifiek voor Doel kunnen direct in de vraag van het Doel worden overgegaan. Als het Doel rapporteringsbron Adobe Analytics (A4T) is, kunnen de gegevens specifiek voor Doel ook aan Adobe Analytics worden overgegaan wanneer de aangewezen het volgen methodes in de uitbreiding van het Doel voor de inhoudvertoning en interactie van het Doel worden geroepen. | Gegevens die in de Offer Decisioning en de uitbreidingsvraag van het Doel worden overgegaan kunnen aan zowel Doel als Analytics door:sturen als het Doel rapporteringsbron Adobe Analytics (A4T) is, Adobe Analytics wordt toegelaten in de gegevensstroom, en de aangewezen het volgen methodes in Offer Decisioning en de uitbreiding van het Doel worden geroepen wanneer de inhoud van het Doel wordt getoond en met interactie gecommuniceerd. |
 
 ## Basisverschillen
 
-| | Doelextensie | Decisitie-extensie |
+| | Doelextensie | Offer Decisioning en Target-extensie |
 |---|---|---|
 | Afhankelijkheden | Alleen afhankelijk van Mobile Core SDK | Afhankelijk van de Mobile Core en Edge Network SDK |
 | Bibliotheekfunctionaliteit | Ondersteunt het ophalen van inhoud van alleen Adobe Target | Ondersteuning voor het ophalen van inhoud van Adobe Target en de beslissing over aanbiedingen |
@@ -43,7 +43,7 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 
 ## Functievergelijking
 
-| Functie | Doelextensie | Decisioning-extensie (Doel via Edge) |
+| Functie | Doelextensie | Offer Decisioning and Target extension (Target via Edge) |
 |---|---|---|
 | Prefetmodus | Ondersteund | Ondersteund |
 | Uitvoeren, modus | Ondersteund | Niet ondersteund |
@@ -69,9 +69,9 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 
 >[!NOTE]
 >
->Houd de configuratie en de instellingen van de tags voor de extensie Doel op zijn plaats, zelfs nadat u uw toepassingscode hebt gemigreerd naar de extensie Decisioning. Hierdoor blijft Target werken voor klanten die de app nog niet naar de nieuwe versie hebben bijgewerkt.
+>Zorg dat de configuratie en instellingen van de tags voor de extensie Doel op de juiste plaats blijven staan, zelfs nadat u uw toepassingscode hebt gemigreerd naar de Offer Decisioning- en Target-extensie. Hierdoor blijft Target werken voor klanten die de app nog niet naar de nieuwe versie hebben bijgewerkt.
 >
->Als u Analytics voor de integratie van het Doel (A4T) gebruikt, ben zeker ook om uw implementatie Analytics met de uitbreiding van Edge Bridge tezelfdertijd te migreren u uw implementatie van het Doel aan de uitbreiding van het Beslissen migreert.
+>Als u Analytics for Target integration (A4T) gebruikt, moet u ook uw Analytics-implementatie migreren met de Edge Bridge-extensie en tegelijkertijd uw Target-implementatie migreren naar de Offer Decisioning- en Target-extensie.
 
 
 
@@ -79,15 +79,15 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 
 >[!IMPORTANT]
 >
-> Houd de instellingen voor de extensie Doel op zijn plaats, zelfs nadat u uw toepassingscode hebt gemigreerd naar de extensie Decisioning. Zo blijft Target werken voor gebruikers die hun app nog niet hebben bijgewerkt.
+> Houd de extensie-instellingen voor Doel op de plaats, zelfs nadat u uw toepassingscode hebt gemigreerd naar de Offer Decisioning- en Target-extensie. Zo blijft Target werken voor gebruikers die hun app nog niet hebben bijgewerkt.
 
-## Schema voor extensiesysteem voor besluitvorming
+## Schema voor Offer Decisioning- en Target-extensiesystemen
 
-Het volgende diagram zou u moeten helpen de gegevensstroom begrijpen gebruikend Adobe Journey Optimizer - Beslissende uitbreiding.
+Het volgende diagram zou u moeten helpen de gegevensstroom begrijpen gebruikend de uitbreiding van Offer Decisioning en van het Doel.
 
 ![ Adobe Target Edge die met cliënt-kant Mobiele SDK ](assets/diagram.png) beslist
 
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

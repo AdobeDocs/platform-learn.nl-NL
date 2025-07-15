@@ -3,9 +3,9 @@ title: Plaatsen gebruiken met Platform Mobile SDK
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1386'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Leer hoe u de geolocatieservice Plaatsen in uw app gebruikt.
 
-De Adobe Experience Platform Data Collection Places Service is een geolocatieservice waarmee mobiele apps met het bewustzijn van de locatie de context van de locatie kunnen begrijpen. De dienst gebruikt rijke en makkelijk te gebruiken interfaces van SDK vergezeld van een flexibele gegevensbestand van belangenpunten (POIs).
+De Adobe Experience Platform Data Collection Places Service is een geolocatieservice waarmee mobiele apps met het bewustzijn van de locatie de context van de locatie kunnen begrijpen. De dienst gebruikt rijke en makkelijk te gebruiken interfaces van SDK vergezeld van een flexibele gegevensbank van punten van belang (POIs).
 
 ## Vereisten
 
@@ -31,14 +31,14 @@ In deze les zult u
 * Begrijp hoe te om punten van belang in de dienst van Plaatsen te bepalen.
 * Werk de eigenschap tag bij met de extensie Plaatsen.
 * Werk uw schema bij om geolocatiegebeurtenissen vast te leggen.
-* Valideer installatie in Betrouwbaarheid.
+* Instellingen valideren in Assurance.
 * Werk uw app bij om de extensie Plaatsen te registreren.
 * Implementeer de functie voor het bijhouden van geolocaties via de service Plaatsen in uw app.
 
 
 ## Instellen
 
-De service Plaatsen werkt alleen binnen uw app en in de SDK voor mobiele apparaten als u een aantal instellingen opgeeft.
+De service Plaatsen werkt alleen in uw app en in de Mobile SDK als u de installatie uitvoert.
 
 ### Plaatsen definiëren
 
@@ -48,18 +48,18 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
 1. Selecteer **[!UICONTROL Manage Libraries]** in het contextmenu.
    ![ beheert bibliotheken ](assets/places-manage-libraries.png)
-1. Selecteer **[!UICONTROL New]** in het dialoogvenster **[!UICONTROL Manage Libraries]** .
+1. Selecteer **[!UICONTROL Manage Libraries]** in het dialoogvenster **[!UICONTROL New]** .
 1. Voer in het dialoogvenster **[!UICONTROL Create Library]** bijvoorbeeld een **[!UICONTROL Name]** `Luma` in.
 1. Selecteer **[!UICONTROL Confirm]**.
    ![ creeer bibliotheek ](assets/places-create-library.png)
-1. Selecteer **[!UICONTROL Close]** om het dialoogvenster **[!UICONTROL Manage Libraries]** te sluiten.
+1. Selecteer **[!UICONTROL Manage Libraries]** om het dialoogvenster **[!UICONTROL Close]** te sluiten.
 1. Ga terug in **[!UICONTROL POI Management]** en selecteer **[!UICONTROL Import POIs]** .
 1. Selecteer **[!UICONTROL Start]** in het dialoogvenster **[!UICONTROL Import Places]** .
 1. Selecteer **[!DNL Luma]** in de lijst met bibliotheken.
 1. Selecteer **[!UICONTROL Next]**.
    ![ Uitgezochte Bibliotheek ](assets/places-import-select-library.png)
 1. Download het [ dossier van het ZIP van POIs van de Luma ](assets/luma_pois.csv.zip) en haal het aan een plaats op uw computer uit.
-1. Sleep het uitgenomen `luma_pois.csv` -bestand naar **[!UICONTROL Choose CSV File - Drag and Drop your File]** in het dialoogvenster **[!UICONTROL Import Places]** . Zie **[!UICONTROL Validation Success]** - **[!UICONTROL Successfully validated the CSV file]** .
+1. Sleep het uitgenomen **[!UICONTROL Import Places]** -bestand naar `luma_pois.csv` in het dialoogvenster **[!UICONTROL Choose CSV File - Drag and Drop your File]** . Zie **[!UICONTROL Validation Success]** - **[!UICONTROL Successfully validated the CSV file]** .
 1. Selecteer **[!UICONTROL Begin Import]**. Zie **[!UICONTROL Success]** - **[!UICONTROL Successfully added 6 new POIs]** .
 1. Selecteer **[!UICONTROL Done]**.
 1. In **[!UICONTROL POI Management]** ziet u dat er zes nieuwe Luminantiewinkels aan de lijst worden toegevoegd. U kunt tussen ![ van de Lijst ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) en ![ Kaart ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) in- en uitschakelen kaartweergave.
@@ -74,13 +74,12 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 1. Zoek naar de extensie **[!UICONTROL Places]** .
 1. De extensie installeren.
 
-   ![ voeg de uitbreiding van het Beslissen toe ](assets/tag-places-extension.png)
+   ![ voeg Offer Decisioning en de uitbreiding van het Doel toe ](assets/tag-places-extension.png)
 
 1. In het dialoogvenster **[!UICONTROL Install Extension]** :
    1. Selecteer **[!DNL Luma]** in de lijst **[!UICONTROL Select a Library]** .
    1. Controleer of u de werkbibliotheek hebt gekozen, bijvoorbeeld **[!UICONTROL Initial Build]** .
    1. Selecteer **[!UICONTROL Save to Library and Build]** in **[!UICONTROL Save to Library]** .
-
       ![ installeer de uitbreiding van Plaatsen ](assets/places-install-extension.png).
 
 1. Uw bibliotheek wordt opnieuw samengesteld.
@@ -140,7 +139,6 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
    1. Selecteer **[!UICONTROL Places]** in de **[!UICONTROL Extension]** lijst en selecteer **[!UICONTROL Enter POI]** in de **[!UICONTROL Event Type]** lijst.
    1. Selecteer **[!UICONTROL Keep Changes]**.
-
       ![ gebeurtenis van de Markering ](assets/tags-event-mobile-core.png).
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
    1. Selecteer **[!UICONTROL Mobile Core]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Attach Data]** in de lijst **[!UICONTROL Action Type]** . Met deze handeling worden gegevens over de lading gekoppeld.
@@ -171,11 +169,10 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
       U kunt `{%% ... %%}` placeholder van het gegevenselement ook opnemen waarden in JSON door de ![ Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) te selecteren. In een pop-updialoogvenster kunt u elk gegevenselement kiezen dat u hebt gemaakt.
 
    1. Selecteer **[!UICONTROL Keep Changes]**.
-
       ![ actie van Markeringen ](assets/tags-action-mobile-core.png)
 
 1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
-   1. Selecteer **[!UICONTROL Adobe Experience Platform Edge Network]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Forward event to Edge Network]** . Deze actie zorgt ervoor dat de gebeurtenis en de extra ladingsgegevens aan de Edge Network van het Platform door:sturen.
+   1. Selecteer **[!UICONTROL Adobe Experience Platform Edge Network]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Forward event to Edge Network]** . Deze actie zorgt ervoor dat de gebeurtenis en de extra ladingsgegevens aan Platform Edge Network door:sturen.
    1. Selecteer **[!UICONTROL Keep Changes]**.
 
 1. Selecteer **[!UICONTROL Save to Library]** om de regel op te slaan.
@@ -234,11 +231,11 @@ Alle wijzigingen in de tag worden gepubliceerd
 
 
 
-## Setup valideren bij Betrouwbaarheid
+## Instellingen valideren in Assurance
 
-Uw instellingen valideren in Betrouwbaarheid:
+Uw instellingen valideren in Assurance:
 
-1. Ga naar de betrouwbaarheidsinterface.
+1. Ga naar de gebruikersinterface van Assurance.
 1. Als niet reeds beschikbaar in het linkerspoor, selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Events]** en **[!UICONTROL Map & Simulate]** onder **[!UICONTROL PLACES SERVICE]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Map & Simulate]** in het linkerspoor.
@@ -253,14 +250,14 @@ Uw instellingen valideren in Betrouwbaarheid:
 
 ## Plaatsen in uw app implementeren
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de SDK van Plaatsen installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de Places SDK installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
 
 >[!NOTE]
 >
 >Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK van Plaatsen reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
-1. In Xcode, zorg ervoor dat [ Plaatsen AEP ](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [&#128279;](install-sdks.md#swift-package-manager).
+1. In Xcode, zorg ervoor dat [ de Plaatsen van AEP ](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [.](install-sdks.md#swift-package-manager)
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPPlaces` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -333,13 +330,13 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
    <img src="assets/appentryexit.png" width="300" />
 
-1. U zou de gebeurtenissen in de Verzekering UI moeten zien.
+1. De gebeurtenissen worden weergegeven in de gebruikersinterface van Assurance.
 
 
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Aangezien u de gebeurtenissen aan de Edge Network door:sturen, zodra u opstelling app voor [ Experience Platform ](platform.md) hebt, zou u de ervaringsgebeurtenissen moeten zien die voor het profiel verschijnen in app wordt gebruikt.
+U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Aangezien u de gebeurtenissen aan Edge Network door:sturen, zodra u opstelling app voor [ Experience Platform ](platform.md) hebt, zou u de ervaringsgebeurtenissen moeten zien die voor het profiel verschijnen in app wordt gebruikt.
 
 In de sectie van Journey Optimizer van dit leerprogramma, zult u zien dat de ervaringsgebeurtenissen kunnen worden gebruikt om reizen (zie [ duw bericht ](journey-optimizer-inapp.md) en [ in-app overseinen ](journey-optimizer-push.md) met Journey Optimizer) teweeg te brengen. Bijvoorbeeld, het gebruikelijke voorbeeld om uw toepassingsgebruiker een dupbericht met één of andere productbevordering te verzenden wanneer die gebruiker de geofence van een fysieke opslag ingaat.
 
@@ -349,6 +346,6 @@ U hebt een implementatie van de functionaliteit voor uw app gezien, voornamelijk
 >
 >U hebt de app voor geolocatieservices nu ingeschakeld met de extensie Plaatsen in de Experience Platform Mobile SDK.
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van de Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[gegevens van de Kaart aan Adobe Analytics](analytics.md)**

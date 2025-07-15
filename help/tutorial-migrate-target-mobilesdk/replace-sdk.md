@@ -1,19 +1,19 @@
 ---
-title: De SDK vervangen - Migreer de Adobe Target-implementatie in uw mobiele app naar de extensie Adobe Journey Optimizer - Decisioning
-description: Meer informatie over het vervangen van de SDK bij het migreren van de extensie Adobe Target naar de Adobe Journey Optimizer - Decisioning Mobile.
+title: SDK vervangen - De Adobe Target-implementatie in uw mobiele app migreren naar de extensie Offer Decisioning en Target
+description: Leer hoe u de SDK kunt vervangen bij het migreren van de Adobe Target naar de extensie Offer Decisioning en Target Mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# Vervang de doel-SDK door de SDK optimaliseren
+# De Target SDK vervangen door de Optimize SDK
 
-Meer informatie over het vervangen van de Adobe Target SDK&#39;s door de Optimize SDK&#39;s in uw mobiele implementatie. Een basisvervanging bestaat uit de volgende stappen:
+Leer hoe u de SDK&#39;s van Adobe Target vervangt door de SDK&#39;s van Optimize in uw mobiele implementatie. Een basisvervanging bestaat uit de volgende stappen:
 
-* Afhankelijkheden in uw Podfile of `build.gradle` bestand bijwerken
+* Afhankelijkheden bijwerken in het Podfile of het `build.gradle` bestand
 * Import bijwerken
 * Toepassingscode bijwerken
 
@@ -23,7 +23,7 @@ Meer informatie over het vervangen van de Adobe Target SDK&#39;s door de Optimiz
 >In het ecosysteem van Adobe Experience Platform Mobile SDK worden extensies geïmplementeerd door SDK&#39;s die zijn geïmporteerd in uw toepassingen en die verschillende namen kunnen hebben:
 >
 > * **SDK van het Doel** voert de **uitbreiding van Adobe Target** uit
-> * **optimaliseer SDK** voert **Adobe Journey Optimizer uit - Beslissende uitbreiding**
+> * **optimaliseer SDK** voert **Offer Decisioning en de uitbreiding van het Doel** uit
 
 ## Afhankelijkheden bijwerken
 
@@ -69,9 +69,9 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 >[!BEGINTABS]
 
 
->[!TAB SDK optimaliseren]
+>[!TAB  optimaliseer SDK ]
 
-`Podfile` Afhankelijkheden na migratie
+`Podfile` afhankelijkheden na migreren
 
 ```Swift
 use_frameworks!
@@ -83,9 +83,9 @@ target 'YourAppTarget' do
 end
 ```
 
->[!TAB Doel SDK]
+>[!TAB  Doel SDK ]
 
-`Podfile` afhankelijkheden vóór de migratie
+`Podfile` afhankelijkheden voordat er wordt gemigreerd
 
 ```Swift
 use_frameworks!
@@ -102,9 +102,9 @@ pod 'AEPUserProfile', '~> 5.0'
 
 +++
 
-## Import en code bijwerken
+## Importeren en code bijwerken
 
-+++ Android voorbeeld
++++ Android-voorbeeld
 
 >[!BEGINTABS]
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,26 +266,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## API-vergelijking
 
-Veel API&#39;s voor Target-extensies hebben een equivalente aanpak met behulp van de Decisioning-extensie die in de onderstaande tabel wordt beschreven. Raadpleeg de API-referentie voor meer informatie over de [functies](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/).
+Veel API&#39;s voor doelextensies hebben een equivalente aanpak met de Offer Decisioning- en Target-extensie die in de onderstaande tabel wordt beschreven. Voor meer details over de [ functies ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), verwijs naar de API verwijzing.
 
-| Doel extensie | Uitbreiding van de besluitvorming | Notities |
+| Doelextensie | Offer Decisioning en Target-extensie | Notities |
 | --- | --- | --- | 
-| [ prefetchContent ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [update Proposities](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
-| [ retrieveLocationContent ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getProposities](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Wanneer u API gebruikt `getPropositions` , wordt er geen externe aanroep gedaan om niet-gecachete bereiken in de SDK op te halen. |
-| [weergegevenLocaties](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [Aanbieding -> weergegeven()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | Daarnaast kan de methode `generateDisplayInteractionXdm` Offer worden gebruikt om de XDM voor itemweergave te genereren. Daarna kan de Edge-netwerk SDK sendEvent-API worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
+| [ prefetchContent ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [ updateProposities ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
+| [ retrieveLocationContent ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [ getProposities ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Wanneer u de API van `getPropositions` gebruikt, wordt geen externe aanroep gemaakt om niet-caching-bereik op te halen in de SDK. |
+| [ displayedLocations ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [ Aanbieding -> getoond () ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | Daarnaast kan de methode `generateDisplayInteractionXdm` Offer worden gebruikt om de XDM voor itemweergave te genereren. Daarna kan de Edge-netwerk SDK sendEvent-API worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
 | [ clickedLocation ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [ Aanbieding -> uitgelijnd () ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | Daarnaast kan de methode `generateTapInteractionXdm` Aanbieding worden gebruikt om de XDM voor het tikken van items te genereren. Daarna kan de Edge-netwerk SDK sendEvent-API worden gebruikt om extra XDM-gegevens met een vrije vorm toe te voegen en een Experience Event naar de externe server te verzenden. |
 | [ clearPrefetchCache ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [ clearCachedProposities ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} |  |
 | [ resetExperience ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#resetexperience){target=_blank} | nvt | Gebruik [ removeIdentity ](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity){target=_blank} API van Identiteit voor de uitbreiding van Edge Network voor SDK ophouden verzendend het bezoekersherkenningsteken naar het netwerk van Edge. Voor meer details, zie [ de removeIdentity API documentatie ](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br> Nota: De `resetIdentities` API van de Mobiele Kern ontruimt alle opgeslagen identiteiten in SDK, met inbegrip van Experience Cloud identiteitskaart (ECID) en het zou spaarzaam moeten worden gebruikt! |
-| [ getSessionId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getsessionid){target=_blank} | n.v.t | `state:store` De responsgreep bevat sessiegerelateerde informatie. De Edge-netwerkextensie helpt bij het beheren door niet-verlopen statuswinkelitems aan volgende verzoeken toe te voegen. |
-| [ setSessionId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setsessionid){target=_blank} | n.v.t | `state:store` De responsgreep bevat sessiegerelateerde informatie. De Edge-netwerkextensie helpt bij het beheren door niet-verlopen statuswinkelitems aan volgende verzoeken toe te voegen. |
-| [ getThirdPartyId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | n.v.t | Gebruik de updateIdentities-API van de Identity for Edge Network-extensie om de ID-waarde van derden op te geven. Configureer vervolgens de ID-naamruimte van derden in de gegevensstroom. Zie [de mobiele documentatie](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id) van Target Third Party Id voor meer informatie. |
+| [ getSessionId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getsessionid){target=_blank} | nvt | `state:store` reactiehandgreep bevat informatie over sessies. De Edge-netwerkextensie helpt het te beheren door items in een niet-verlopen frameopslag aan volgende aanvragen toe te voegen. |
+| [ setSessionId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setsessionid){target=_blank} | nvt | `state:store` reactiehandgreep bevat informatie over sessies. De Edge-netwerkextensie helpt het te beheren door items in een niet-verlopen frameopslag aan volgende aanvragen toe te voegen. |
+| [ getThirdPartyId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | nvt | Gebruik de updateIdentities-API van Identity voor de Edge Network-extensie om de id-waarde van derden op te geven. Dan, vorm derde identiteitskaart namespace in de datastream. Voor meer details, zie [ de mobiele documentatie van Identiteitskaart van de Derde van het Doel ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
 | [ setThirdPartyId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setthirdpartyid){target=_blank} | nvt | Gebruik de updateIdentities-API van Identity voor de Edge Network-extensie om de id-waarde van derden op te geven. Dan, vorm derde identiteitskaart namespace in de datastream. Voor meer details, zie [ de mobiele documentatie van Identiteitskaart van de Derde van het Doel ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
-| [ getTntId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | nvt | `locationHint:result` De responsgreep bevat de informatie over de hint voor de doellocatie. Er wordt aangenomen dat Target Edge zich op dezelfde locatie zal bevinden als Experience Edge. <br> <br>De Edge-netwerkextensie gebruikt de EdgeNetwork-locatiehint om te bepalen naar welk Edge-netwerkcluster aanvragen moeten worden verzonden. Als u een hint voor de locatie van het Edge-netwerk wilt delen met SDK&#39;s (hybride apps), gebruikt u `getLocationHint` API&#39;s `setLocationHint` van de Edge Network-extensie. Zie [de `getLocationHint` API-documentatie](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) voor meer informatie. |
-| [ setTntId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | n.v.t | [locationHint:de handle voor resultaatrespons](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} bevat de informatie over de hint voor de doellocatie. Er wordt aangenomen dat Target Edge zich op dezelfde locatie zal bevinden als Experience Edge. <br> <br>De Edge-netwerkextensie gebruikt de EdgeNetwork-locatiehint om te bepalen naar welk Edge-netwerkcluster aanvragen moeten worden verzonden. Als u een hint voor de locatie van het Edge-netwerk wilt delen met SDK&#39;s (hybride apps), gebruikt u `getLocationHint` API&#39;s `setLocationHint` van de Edge Network-extensie. Zie [de `getLocationHint` API-documentatie](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint) voor meer informatie. |
+| [ getTntId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | nvt | `locationHint:result` reactiehandgreep bevat de informatie over de doellocatiehint. Aangenomen wordt dat Target edge zich op dezelfde locatie bevindt als Experience Edge. <br> <br> het netwerkuitbreiding van Edge gebruikt de het plaatswenk van EdgeNetwork om de het netwerkcluster van Edge te bepalen om verzoeken naar te verzenden. Als u Edge-netwerklocatiehint wilt delen met SDK&#39;s (hybride apps), gebruikt u `getLocationHint` - en `setLocationHint` -API&#39;s van de Edge Network-extensie. Voor meer details, zie [ de `getLocationHint` API documentatie ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+| [ setTntId ](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | nvt | [ locationHint:resultaat ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} reactiehandvat draagt de informatie van de de plaatshint van het Doel. Aangenomen wordt dat Target edge zich op dezelfde locatie bevindt als Experience Edge. <br> <br> het netwerkuitbreiding van Edge gebruikt de het plaatswenk van EdgeNetwork om de het netwerkcluster van Edge te bepalen om verzoeken naar te verzenden. Als u Edge-netwerklocatiehint wilt delen met SDK&#39;s (hybride apps), gebruikt u `getLocationHint` - en `setLocationHint` -API&#39;s van de Edge Network-extensie. Voor meer details, zie [ de `getLocationHint` API documentatie ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
 
 
-Leer vervolgens hoe u activiteiten[&#128279;](retrieve-activities.md) kunt aanvragen en weergeven op de pagina.
+Daarna, leer hoe te [ verzoeken en activiteiten ](retrieve-activities.md) aan de pagina teruggeven.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u te helpen met uw mobiele migratie van het Doel van de uitbreiding van het Doel aan de uitbreiding van het Beslissen succesvol te zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
