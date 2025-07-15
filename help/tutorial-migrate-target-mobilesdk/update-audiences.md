@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [ profielmanuscripten ](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [ profielmanuscripten ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Parametertokens bijwerken voor dynamische inhoud
 
-Als u mbox paramters aan het `xdm` voorwerp migreert, en als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [ dynamische inhoudsvervanging ](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om van de nieuwe XDM parameternamen rekenschap te geven.
+Als u mbox paramters aan het `xdm` voorwerp migreert, en als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [ dynamische inhoudsvervanging ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om van de nieuwe XDM parameternamen rekenschap te geven.
 
 Afhankelijk van hoe u symbolische vervanging voor mbox parameters gebruikt, kunt u uw bestaande opstelling aan rekening voor zowel oude als nieuwe parameternamen kunnen verbeteren. In situaties waarin aangepaste JavaScript-code niet mogelijk is, zoals in JSON-aanbiedingen, moet u echter kopieën maken en updates uitvoeren nadat de migratie is voltooid en live op uw productiesite gaat.
 

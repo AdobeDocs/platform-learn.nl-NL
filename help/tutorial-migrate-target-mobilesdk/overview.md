@@ -22,8 +22,8 @@ Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiel
 
 Enkele voordelen van de Adobe Journey Optimizer Offer Decisioning en de Target-extensie in vergelijking met de Target-extensie zijn:
 
-* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
