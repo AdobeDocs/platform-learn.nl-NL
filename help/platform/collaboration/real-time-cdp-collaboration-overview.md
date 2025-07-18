@@ -41,7 +41,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration intro" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1752870045626" alt="Real-Time CDP Collaboration intro"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446807/?format=jpeg&nocache=1752870045626&captions=dut" alt="Real-Time CDP Collaboration intro"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Real-Time CDP - Overzicht voor de Praktijken van het Bureau" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1752870045622" alt="Real-Time CDP - Overzicht voor de Praktijken van het Bureau"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464664/?format=jpeg&nocache=1752870045622&captions=dut" alt="Real-Time CDP - Overzicht voor de Praktijken van het Bureau"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Proces en mensen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1752870045616" alt="Real-Time CDP Collaboration - Proces en mensen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464675/?format=jpeg&nocache=1752870045616&captions=dut" alt="Real-Time CDP Collaboration - Proces en mensen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform (AEP
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Machtigingen instellen voor Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1752870046165" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452236/?format=jpeg&nocache=1752870046165&captions=dut" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform (AEP
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Een project maken in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1752870046719" alt="Een project maken in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464040/?format=jpeg&nocache=1752870046719&captions=dut" alt="Een project maken in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
