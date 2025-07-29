@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Deze video is bedoeld om uitzendbureaus of betaalmedia een overzicht op hoog niveau te geven van de value prop van Real-Time CDP, wat het is, hoe het werkt en wat het doet met een focus op gegevensbronnen en publiek die hun Real-Time CDP Collaboration-gebruiksscenario en -workflows voeden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464664/?learn=on&enablevpops&captions=dut)

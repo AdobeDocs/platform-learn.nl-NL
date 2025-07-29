@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Deze video biedt gebruikers van Real-Time CDP Collaboration, zowel accountants als technische teams, een leidraad voor de manier waarop deze interfunctionele teams moeten samenwerken in verschillende gebruiksgevallen, gegevensbronnen, doelgroepen en doelen om succes en operationele efficiëntie te waarborgen bij de goedkeuring van Real-Time CDP Collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464675/?learn=on&enablevpops&captions=dut)
