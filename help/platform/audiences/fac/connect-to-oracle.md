@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u Oracle-databases in Adobe Experience Platform met elkaar kunt verbinden om schema&#39;s te ontdekken, gegevensmodellen te maken en de gegevens te gebruiken voor publieksverrijking. De video loopt door het geleidelijke proces om een gefedereerd gegevensbestand van Oracle toe te voegen, van het navigeren aan de Federatieve sectie van Gegevens tot het ingaan van verbindingsdetails.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470082/?learn=on&enablevpops&captions=dut)

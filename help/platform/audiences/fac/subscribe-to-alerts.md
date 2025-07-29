@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer hoe u zich abonneert op Federated Audience Composition-waarschuwingen om in-app- of e-mailmeldingen te ontvangen voor zowel geslaagde als mislukte uitvoeringen. Om dit in te schakelen, configureert u hun voorkeuren in de meldingsinstellingen onder het Experience Platform-product.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470060/?learn=on&enablevpops&captions=dut)
 
 
 ## Meldingen inschakelen
