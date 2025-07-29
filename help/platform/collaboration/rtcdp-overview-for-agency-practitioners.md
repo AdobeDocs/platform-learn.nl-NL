@@ -9,7 +9,7 @@ duration: 321
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-18473
 exl-id: 32867ae0-67c5-47ff-a115-eae7638173d9
-source-git-commit: 34853ca057ddc7d94e16344f7716aceeff1c1f74
+source-git-commit: 250163d15e7ed54252bf1f2762dc35663bc7647d
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Real-Time CDP-overzicht voor accountants
 
-Deze video is bedoeld om uitzendbureaus of betaalmedia een overzicht op hoog niveau te geven van de waardeanalyse van Real-Time CDP, wat het is, hoe het werkt en wat het doet met een focus op gegevensbronnen en publiek die hun Real-Time CDP Collaboration-gebruiksscenario en -workflows voeden.
+Deze video is bedoeld om uitzendbureaus of betaalmedia een overzicht op hoog niveau te geven van de value prop van Real-Time CDP, wat het is, hoe het werkt en wat het doet met een focus op gegevensbronnen en publiek die hun Real-Time CDP Collaboration-gebruiksscenario en -workflows voeden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464664/?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
