@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2435'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Journey Optimizer-webkanaal instellen met Web SDK
 
-Leer hoe te om het Webkanaal van Adobe Journey Optimizer [ uit te voeren ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/web/get-started-web) gebruikend het Web SDK van Adobe Experience Platform. Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
+Leer hoe te om het Webkanaal van Adobe Journey Optimizer [ uit te voeren ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) gebruikend het Web SDK van Adobe Experience Platform. Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
 
 In deze les zijn Journey Optimizer-gebruikers uitgerust om het webkanaal te gebruiken voor geavanceerde onlinepersonalisatie met de Journey Optimizer-webontwerper.
 
@@ -52,7 +52,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
   > 1. De website is ingesloten in een iframe.
   > 1. De QA- of werkgebiedsite van de klant is niet extern toegankelijk (het is een interne site).
 
-* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van de Hoofdzaak van de Activa van de Manager van de Ervaring van Adobe, is het noodzakelijk om [ subdomain voor het publiceren van deze inhoud ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
+* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van de Hoofdzaak van de Activa van de Manager van de Ervaring van Adobe, is het noodzakelijk om [ subdomain voor het publiceren van deze inhoud ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
 * Als het gebruiken van de eigenschap van de inhoudstest, zorg ervoor dat uw Webdataset ook inbegrepen in uw rapporteringsconfiguratie is.
 * Momenteel worden twee typen implementaties ondersteund voor het maken en leveren van webkanaalcampagnes op uw wegeigenschappen:
    * Alleen client: als u uw website wilt wijzigen, moet u de Adobe Experience Platform Web SDK implementeren.
@@ -123,7 +123,7 @@ De optie configureren in het samenvoegbeleid:
 
 Als u inhoudstests wilt gebruiken in webkanaalcampagnes, moet u ervoor zorgen dat de gebruikte webdataset ook wordt opgenomen in uw rapportconfiguratie. Het Journey Optimizer-rapportagesysteem gebruikt de dataset op een alleen-lezen manier om rapporten voor het experimenteren met inhoud buiten de box te vullen.
 
-[ het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[ het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Hoofdletters gebruiken - Loyalty&#39;s
 
@@ -201,13 +201,13 @@ U kunt als volgt het inhoudexperiment maken:
 
 1. Kies desgewenst ook **[!UICONTROL Distribute evenly]** . Schakel deze optie in om ervoor te zorgen dat de splitsingen van de behandeling altijd gelijkmatig zijn verdeeld.
 
-[ Leer meer over inhoudsexperimenten in het Webkanaal van Adobe Journey Optimizer ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
+[ Leer meer over inhoudsexperimenten in het Webkanaal van Adobe Journey Optimizer ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 ### Inhoud bewerken met de visuele hulp
 
 Nu, auteur de ervaring van het Webkanaal. Gebruik hiervoor de Adobe Experience Cloud **[!UICONTROL Visual Helper]** . Dit gereedschap is een browserextensie die compatibel is met Google Chrome en Microsoft® Edge. Zorg ervoor dat u de extensie hebt gedownload voordat u uw ervaringen ontwikkelt. Zorg er ook voor dat de webpagina de Web SDK bevat.
 
-1. Klik op **[!UICONTROL Edit content]** op het tabblad **[!UICONTROL Action]** van de campagne. Aangezien u één pagina-URL hebt ingevoerd als het oppervlak, kunt u beter beginnen te werken in de composer.
+1. Klik op **[!UICONTROL Action]** op het tabblad **[!UICONTROL Edit content]** van de campagne. Aangezien u één pagina-URL hebt ingevoerd als het oppervlak, kunt u beter beginnen te werken in de composer.
 
    ![Content bewerken](assets/web-channel-edit-content.png)
 
@@ -256,7 +256,7 @@ Bewerk een specifieke component met behulp van de **[!UICONTROL CSS selector typ
 
 ![ wijzig CSS ](assets/web-channel-css-selector.png)
 
-Voeg douanecode toe gebruikend de `<head>` type **wijziging van de 1&rbrace; Pagina**.
+Voeg douanecode toe gebruikend de **type `<head>` wijziging van de 1} Pagina**.
 
 ![ wijzig hoofd ](assets/web-channel-page-head-modification.png)
 
@@ -302,7 +302,7 @@ Met de extensie Adobe Experience Platform Debugger, die beschikbaar is voor zowe
 
 Met het foutopsporingsprogramma op de Luminasite kunt u de ervaring met het webkanaal tijdens de productie valideren. Dit is beste praktijken zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview).
+[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -334,8 +334,6 @@ De validatie starten met de foutopsporing:
 <!--
    ![ADD SCREENSHOT](#)
 -->
-
-[Volgende: ](setup-decision-management.md)
 
 >[!NOTE]
 >

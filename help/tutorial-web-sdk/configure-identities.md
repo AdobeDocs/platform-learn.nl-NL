@@ -4,9 +4,9 @@ description: Leer hoe u naamruimten configureert voor gebruik met Adobe Experien
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
-De [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/nl/docs/id-service/using/home) plaatst een gemeenschappelijke bezoekersidentiteitskaart (ECID) over op SDK-Gebaseerde toepassingen van Adobe aan macht Experience Cloud mogelijkheden zoals publiek-deel tussen toepassingen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
+De [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/en/docs/id-service/using/home) plaatst een gemeenschappelijke bezoekersidentiteitskaart (ECID) over op SDK-Gebaseerde toepassingen van Adobe aan macht Experience Cloud mogelijkheden zoals publiek-deel tussen toepassingen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
 
-De [ Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) (ja, zijn er twee!) gebruikt ECIDs en klant IDs om identiteitsgrafieken te produceren, toestaand u om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
+De [ Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (ja, zijn er twee!) gebruikt ECIDs en klant IDs om identiteitsgrafieken te produceren, toestaand u om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ U moet de vorige lessen reeds hebben voltooid:
 >
 >De [ Uitbreiding van identiteitskaart van Experience Cloud ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig wanneer het uitvoeren van SDK van het Web van Adobe Experience Platform, aangezien de bibliotheek van JavaScript van het Web de dienstfunctionaliteit van identiteitskaart van de Bezoeker bevat.
 >
-> Als uw website de Experience Cloud-id-service al op uw website gebruikt (via de Bezoeker-API of de extensie voor de Experience Cloud-id-service) en u wilt deze blijven gebruiken wanneer u naar Adobe Experience Platform Web SDK migreert, moet u de nieuwste versie van de Bezoeker-API of de Experience Cloud ID Service-tagextensie gebruiken. Zie [ Migratie van identiteitskaart ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/overview) voor meer informatie.
+> Als uw website de Experience Cloud-id-service al op uw website gebruikt (via de Bezoeker-API of de extensie voor de Experience Cloud-id-service) en u wilt deze blijven gebruiken wanneer u naar Adobe Experience Platform Web SDK migreert, moet u de nieuwste versie van de Bezoeker-API of de Experience Cloud ID Service-tagextensie gebruiken. Zie [ Migratie van identiteitskaart ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) voor meer informatie.
 
 ## Naamruimte maken
 
@@ -53,7 +53,7 @@ In deze oefening, creeert u een identiteitsnaamruimte voor het gebied van de dou
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/3432349?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Maak nu een naamruimte voor de Luma CRM-id:
 
@@ -95,8 +95,6 @@ Maak nu een naamruimte voor de Luma CRM-id:
 > In [ creeer Identiteiten ](create-identities.md) les, zult u leren hoe te om dit te gebruiken namespace wanneer het verzenden van identiteiten naar Platform Edge Network.
 
 Nu de identiteiten op zijn plaats zijn, kan de gegevensstroom worden gevormd.
-
-[Volgende: ](configure-datastream.md)
 
 >[!NOTE]
 >

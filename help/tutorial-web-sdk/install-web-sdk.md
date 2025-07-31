@@ -4,9 +4,9 @@ description: Leer hoe te om de de markeringsuitbreiding van SDK van het Web van 
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 
    ![ selectie DataStream ](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
+Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
 
 >[!NOTE]
 >
@@ -82,8 +82,6 @@ Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding v
 >Tijdens deze zelfstudie configureert u slechts één gegevensstroom en koppelt u deze aan alle labelomgevingen (ontwikkeling, werkgebied en productie). Wanneer u het Web SDK van het Platform op uw eigen website uitvoert, zou u een afzonderlijke gegevensstroom voor elk milieu moeten vormen en hen dienovereenkomstig in de uitbreidingsconfiguratie in kaart brengen.
 
 Nu u Platform Web SDK hebt geïnstalleerd en het met de datastream hebt geassocieerd, bent u klaar om te beginnen gegevens te verzamelen.
-
-[Volgende: ](create-data-elements.md)
 
 >[!NOTE]
 >

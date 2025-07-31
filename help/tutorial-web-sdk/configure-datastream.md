@@ -4,9 +4,9 @@ description: Leer hoe u een datastream inschakelt en Experience Cloud-oplossinge
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom voor Adobe Experience Platform Web SDK configureert.
 
-[ gegevensstromen ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
+[ gegevensstromen ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
 
 ![ SDK van het Web, gegevensstromen, en het diagram van Edge Network ](assets/dc-websdk-datastreams.png)
 
@@ -65,18 +65,16 @@ Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegeven
 
 ## Een gegevensstroom overschrijven
 
-[ DataStream treedt ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
+[ DataStream treedt ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
 
 De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 
 1. Eerst, bepaalt u gegevensstroom met voeten treedt in de configuratie van de datastream dienst. Bijvoorbeeld, zou u afwisselende het rapportreeksen van Analytics, de werkruimten van het Doel, of de datasets van het Platform kunnen bepalen om als met voeten te treden.
 1. Dan, verzendt u de met voeten treedt naar Edge Network of met een SDK van het Web verzendt gebeurtenisactie, of door een configuratie in de de markeringsuitbreiding van SDK van het Web.
 
-In de [&#128279;](setup-analytics.md) les van de Opstelling Adobe Analytics  &lbrace;, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
+In de [ les van de Opstelling Adobe Analytics ](setup-analytics.md) {, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
 
 U kunt nu de extensie Platform Web SDK installeren in de eigenschap Tag.
-
-[Volgende: ](install-web-sdk.md)
 
 >[!NOTE]
 >

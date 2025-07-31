@@ -4,9 +4,9 @@ description: Leer hoe u een gebeurtenis naar Platform Edge Network verzendt met 
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Al deze regels zullen behoorlijk gebruikend de &quot;[!UICONTROL order]&quot;opt
 
 Deze video geeft een overzicht van het proces:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454033/?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Algemene configuratievelden
 
@@ -238,7 +238,7 @@ Vergelijk het gegevenselement met de `productListItems` -structuur (hint, it sho
 >[!IMPORTANT]
 >
 >Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` , die opnieuw worden opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [ vormen schema&#39;s ](configure-schemas.md) stap. In het voorbeeld gebruikt **[!UICONTROL quantity]** het gegevenstype **[!UICONTROL Integer]** .
-> ![Gegevenstype XDM-schema ](assets/set-up-analytics-quantity-integer.png)
+>> ![Gegevenstype XDM-schema ](assets/set-up-analytics-quantity-integer.png)
 
 Laten we nu onze array toewijzen aan het XDM-object:
 
@@ -374,7 +374,7 @@ Een bibliotheek maken:
 
    ![ Uitgezocht voeg Bibliotheek ](assets/rule-publish-library.png) toe
 1. Voer bij **[!UICONTROL Name]** `Luma Web SDK Tutorial` in
-1. Selecteer `Development` voor **[!UICONTROL Environment]**
+1. Selecteer **[!UICONTROL Environment]** voor `Development`
 1. Selecteren **[!UICONTROL Add All Changed Resources]**
 
    >[!NOTE]
@@ -392,8 +392,6 @@ Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze i
 Zoals u op het [!UICONTROL Publishing Flow] scherm kunt zien, is er veel meer aan het het publiceren proces, dat voorbij het werkingsgebied van deze zelfstudie is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
 
 U kunt nu de gegevens in de aanvraag valideren met de Adobe Experience Platform Debugger.
-
-[Volgende ](validate-with-debugger.md)
 
 >[!NOTE]
 >

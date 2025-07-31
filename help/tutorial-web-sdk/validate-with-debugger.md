@@ -4,9 +4,9 @@ description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience P
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ U kunt ook de identiteitskaartgegevens valideren:
 
 Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel (het veronderstellen van de website laadt uw markeringsbibliotheek).
 
-1. Open het 1&rbrace; lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen &lbrace;en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
+1. Open het 1} lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen {en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
 
    ![ lusje van het Netwerk ](assets/validate-dev-console.png)
 
@@ -143,7 +143,7 @@ Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webon
 
 Zoals u in [ leerde vormen een datastream ](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens doet Platform Edge Network aanvullende verzoeken aan de serverzijde aan de overeenkomstige services die in uw datastream zijn ingeschakeld. U kunt de verzoeken aan de serverzijde die door Platform Edge Network worden gemaakt bevestigen door het Spoor van Edge in Debugger te gebruiken.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Edge-trace inschakelen
@@ -164,8 +164,6 @@ Edge-trace inschakelen:
    ![ het baken van Edge van de Analyse ](assets/validate-edge-trace.png)
 
 Op dit moment kunt u geen Platform Edge Network-aanvragen weergeven die naar Adobe-toepassingen gaan omdat u in de gegevensstroom geen toepassingen hebt ingeschakeld. In toekomstige lessen gebruikt u Edge Trace om de uitgaande serververzoeken aan Adobe-toepassingen en het doorsturen van gebeurtenissen weer te geven. Maar eerst, leer over een ander hulpmiddel om server-zijverzoeken te bevestigen die door Platform Edge Network-Adobe Experience Platform Assurance worden gemaakt!
-
-[Volgende: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

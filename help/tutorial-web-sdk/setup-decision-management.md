@@ -1,21 +1,21 @@
 ---
 title: Journey Optimizer-besluitvormingsbeheer instellen met Platform Web SDK
-description: Leer hoe te om Beslissingsbeheer uit te voeren gebruikend Platform Web SDK. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u Beslissingsbeheer implementeert met Platform Web SDK. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 0%
 
 ---
 
 # Beslissingsbeheer instellen met Platform Web SDK
 
-Leer hoe u Adobe Journey Optimizer Decision Management-functionaliteit implementeert met Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
+Leer hoe u Adobe Journey Optimizer-mogelijkheden voor beslissingsbeheer implementeert met Platform Web SDK. Deze gids behandelt de basisvoorwaarden van het Beheer van het Besluit, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gericht.
 
 Met deze zelfstudie zijn Journey Optimizer-gebruikers uitgerust om functies voor Beslissingsbeheer te gebruiken, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
 
@@ -26,9 +26,9 @@ Met deze zelfstudie zijn Journey Optimizer-gebruikers uitgerust om functies voor
 
 Aan het einde van deze les kunt u het volgende doen:
 
-* Pak de kernconcepten van Beslissingsbeheer binnen de Adobe Journey Optimizer en de integratie ervan met de SDK van het Web van Adobe Experience Platform.
+* Neem de kernconcepten van Beslissingsbeheer binnen de Adobe Journey Optimizer en de integratie ervan met de Adobe Experience Platform Web SDK.
 
-* Leer het geleidelijke proces om SDK van het Web voor Offer decisioning te vormen, die naadloze integratie met Journey Optimizer verzekeren.
+* Leer het stap-voor-stap proces om het Web SDK for Offer Decisioning te vormen, die naadloze integratie met Journey Optimizer verzekeren.
 
 * Onderzoek een gedetailleerd gebruiksgeval dat op loyaliteitsstatusaanbiedingen wordt geconcentreerd, die inzicht in het creëren van en het leiden van aanbiedingen, besluiten, en plaatsen effectief krijgt.
 
@@ -42,7 +42,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
-* Zorg ervoor dat uw organisatie toegang heeft tot Adobe Journey Optimizer Ultimate (Journey Optimizer en Offer decisioning) of Adobe Experience Platform en de invoegtoepassing Offer decisioning.
+* Zorg ervoor dat uw organisatie toegang heeft tot Adobe Journey Optimizer Ultimate (Journey Optimizer en Offer Decisioning) of Adobe Experience Platform en de invoegtoepassing Offer Decisioning.
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform.
 
@@ -56,13 +56,13 @@ Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Ad
 
 ## Toegang verlenen tot het beheer van besluiten
 
-Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [ Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [ Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## De gegevensstroom configureren
 
-De offer decisioning moet in de **datastream** configuratie worden toegelaten alvorens om het even welke activiteiten van het Beheer van het Besluit door het Web SDK van het Platform kunnen worden geleverd.
+Offer Decisioning moet in de **datastream** configuratie worden toegelaten alvorens om het even welke activiteiten van het Beheer van het Besluit door het Web SDK van het Platform kunnen worden geleverd.
 
-Om Offer decisioning in de gegevensstroom te vormen:
+Offer Decisioning configureren in de gegevensstroom:
 
 1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection).
 
@@ -76,7 +76,7 @@ Om Offer decisioning in de gegevensstroom te vormen:
 
    ![ geeft de dienst ](assets/decisioning-edit-datastream.png) uit
 
-1. Controleer de **Offer decisioning** doos.
+1. Controleer **Offer Decisioning** doos.
 
    ![ VOEG SCREENSHOT ](assets/decisioning-check-offer-box.png) TOE
 
@@ -84,9 +84,9 @@ Om Offer decisioning in de gegevensstroom te vormen:
 
 Dit zorgt ervoor dat de binnenkomende gebeurtenissen voor Journey Optimizer correct door **Edge van Adobe Experience Platform** worden behandeld.
 
-## SDK configureren voor Beslissingsbeheer
+## SDK for Decision Management configureren
 
-Het Beheer van het besluit vereist extra stappen van SDK, afhankelijk van uw de implementatietype van SDK van het Web. Er zijn twee beschikbare opties om SDK voor Beslissingsbeheer te vormen.
+Voor Beslissingsbeheer zijn aanvullende SDK-stappen vereist, afhankelijk van het implementatietype van uw Web SDK. Er zijn twee beschikbare opties voor het configureren van de SDK voor Beslissingsbeheer.
 
 * Zelfstandige SDK-installatie
    1. Configureer de handeling `sendEvent` met uw `decisionScopes` .
@@ -111,7 +111,7 @@ Het Beheer van het besluit vereist extra stappen van SDK, afhankelijk van uw de 
    1. Selecteer het **Bezit van de Markering**.
 
    1. Creeer uw **Regels**.
-      * Voeg een van het Web SDK van het Platform **toe verzendt de actie van de Gebeurtenis** en voeg relevant `decisionScopes` aan de configuratie van die actie toe.
+      * Voeg een SDK van het Web van het Platform **toe verzendt de actie van de Gebeurtenis** en voeg relevant `decisionScopes` aan de configuratie van die actie toe.
 
    1. Creeer en publiceer a **Bibliotheek** die alle relevante **Regels** bevat, **Elementen van Gegevens**, en **Uitbreidingen** u hebt gevormd.
 
@@ -137,13 +137,13 @@ Ten eerste moet u de terminologie begrijpen die wordt gebruikt in de interface v
 
 ## Hoofdletters gebruiken - Loyalty&#39;s
 
-In deze les, implementeert u een voorbeeld van het gebruik van beloningen van de Loyalty om het Beheer van het Besluit te begrijpen gebruikend SDK van het Web.
+In deze les, implementeert u een voorbeeldLoyalty Rewards gebruiksgeval om het Beheer van het Besluit te begrijpen gebruikend het Web SDK.
 
 Met dit gebruiksscenario kunt u beter begrijpen hoe Journey Optimizer uw klanten de beste aanbieding kan bieden door gebruik te maken van de gecentraliseerde aanbiedingsbibliotheek en de beslissingsengine voor Beslissingsbeheer.
 
 >[!NOTE]
 >
-> Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Terwijl dergelijke interfacetaken typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om inzicht in het proces te krijgen, zelfs als zij niet verantwoordelijk voor de verwezenlijking van de campagne van het besluitvormingsbeheer op de lange termijn zijn.
+> Aangezien deze zelfstudie gericht is op implementatoren, is het vermeldenswaard dat deze les substantieel interfacewerk in Journey Optimizer impliceert. Terwijl dergelijke interfacetaken typisch door marketers worden behandeld, kan het voor uitvoerders nuttig zijn om insight in het proces te bereiken, zelfs als zij niet verantwoordelijk voor de verwezenlijking van de campagne van het besluitvormingsbeheer op de lange termijn zijn.
 
 ## Onderdelen
 
@@ -189,7 +189,7 @@ Voer de volgende stappen uit om de beslissingsregels te maken:
 
    ![ creeer de regel ](assets/decisioning-create-rule.png)
 
-1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **&#x200B;**&#x200B;is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
+1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
 
    ![ bepaal de regel ](assets/decisioning-define-rule.png)
 
@@ -240,15 +240,15 @@ Om de eerste **aanbieding** tot stand te brengen, volg deze stappen:
 
    ![ voeg aanbiedingsdetails toe ](assets/decisioning-add-offer-details.png)
 
-1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3&rbrace; radioknoop van de Douane &lbrace;.**
+1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3} radioknoop van de Douane {.**
 
    ![ voeg representatiedetails ](assets/decisioning-add-representation-details.png) toe
 
 1. Bewerk direct de aanbiedingsinhoud met de **Redacteur van de Uitdrukking**. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Verzeker u de correcte **wijze** bij de bodem van de redacteur selecteert, afhankelijk van uw inhoudstype. U kunt **ook raken bevestigt** om er geen fouten te verzekeren.
 
-   ![ voeg aanbiedingsHTML ](assets/decisioning-add-offer-html.png) toe
+   ![ voeg aanbieding HTML ](assets/decisioning-add-offer-html.png) toe
 
-1. U kunt ook de Expressieeditor gebruiken om kenmerken op te halen die zijn opgeslagen in Adobe Experience Platform. Laten we de voornaam van een profiel toevoegen aan de inhoud van het aanbod om de loyaliteitsleden op een 1:1-niveau beter te personaliseren.
+1. U kunt ook de Expressieeditor gebruiken om kenmerken op te halen die zijn opgeslagen in Adobe Experience Platform. Laten wij de voornaam van een profiel aan de aanbiedingsinhoud toevoegen om voor de loyaliteitsleden op een 1 :1 niveau beter te personaliseren.
 
    ![ voeg aanbiedingspitalisatie toe ](assets/decisioning-add-offer-personalization.png)
 
@@ -287,7 +287,7 @@ Ga als volgt te werk om de fallback-aanbieding te maken:
 
 **Besluiten** zijn containers voor aanbiedingen die de beste aanbieding beschikbaar voor een klant, afhankelijk van het doel kiezen.
 
-De lijst van besluiten is beschikbaar in het **1&rbrace; lusje van Besluiten {van het** 3} menu van Aanbiedingen.**&#x200B;**
+De lijst van besluiten is beschikbaar in het **1} lusje van Besluiten {van het** 3} menu van Aanbiedingen.****
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -335,11 +335,11 @@ Voer de volgende stappen uit om de beslissing te maken:
 
 Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze bevestiging doen door **testprofielen** te gebruiken. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
 
-Om met het testen te beginnen, selecteer het **&#x200B;**&#x200B;lusje van Simulaties van het **3&rbrace; menu van Aanbiedingen &lbrace;.**
+Om met het testen te beginnen, selecteer het **** lusje van Simulaties van het **3} menu van Aanbiedingen {.**
 
 ### Loyalty-aanbiedingen testen
 
-1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [ om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids ](https://experienceleague.adobe.com/nl/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
+1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [ om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids ](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -365,13 +365,13 @@ Om met het testen te beginnen, selecteer het **&#x200B;**&#x200B;lusje van Simul
    -->
 1. Selecteer een verschillend testprofiel, en klik **resultaten van de Mening**. In het ideale geval ziet u een andere gesimuleerde aanbieding die overeenkomt met de loyaliteitslaag van het testprofiel.
 
-## Beslissingsbeheervalidering met Adobe Experience Platform Debugger
+## Beslissingsbeheervalidatie met Adobe Experience Platform Debugger
 
 De **Adobe Experience Platform Debugger** uitbreiding, beschikbaar voor zowel Chrome als Firefox, analyseert uw Web-pagina&#39;s om kwesties in de implementatie van de oplossingen van Adobe Experience Cloud te identificeren.
 
 U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Deze bevestiging is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview).
+[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -383,25 +383,23 @@ De validatie starten met de foutopsporing:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Navigeer aan **Samenvatting**. Verifieer dat **identiteitskaart DataStream** de **datastream** in **de Inzameling van Gegevens van de Adobe** aanpast waarvoor u Offer decisioning toeliet.
+1. Navigeer aan **Samenvatting**. Verifieer dat **identiteitskaart DataStream** de **datastream** in **de Inzameling van Gegevens van Adobe** aanpast waarvoor u Offer Decisioning toeliet.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Onder **Oplossingen** navigeer aan het **Web SDK van het Experience Platform**.
+1. Onder **Oplossingen** navigeer aan het **Web SDK van Experience Platform**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Binnen het **lusje van de Configuratie**, Knevel op **toelaten het Zuiveren**. Dit laat registreren voor de zitting binnen een **1&rbrace; zitting van de Verzekering van Adobe Experience Platform toe.**
+1. Binnen het **lusje van de Configuratie**, Knevel op **toelaten het Zuiveren**. Dit laat registreren voor de zitting binnen een **Adobe Experience Platform Assurance** zitting toe.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. U kunt dan login aan de plaats met diverse Luma loyaliteitsrekeningen, en gebruiken debugger om de verzoeken te bevestigen die naar het **netwerk van Adobe Experience Platform Edge** worden verzonden. Al deze verzoeken zouden in **Verzekering** voor logboek het volgen moeten worden gevangen.
+1. U kunt dan login aan de plaats met diverse Luma loyaliteitsrekeningen, en gebruiken debugger om de verzoeken te bevestigen die naar het **netwerk van Adobe Experience Platform Edge** worden verzonden. Al deze verzoeken zouden in **Assurance** voor logboek het volgen moeten worden gevangen.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
-[Volgende: ](setup-consent.md)
-
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

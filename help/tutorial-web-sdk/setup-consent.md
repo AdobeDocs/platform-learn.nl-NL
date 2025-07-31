@@ -1,12 +1,12 @@
 ---
 title: Goedkeuring instellen met Platform Web SDK
-description: Leer hoe te om de privacymontages van de de markeringsuitbreiding van SDK van het Web van het Experience Platform te vormen. Deze les maakt deel uit van de Zelfstudie Adobe Experience Cloud met Web SDK implementeren.
+description: Leer hoe u de privacyinstellingen van de Experience Platform Web SDK-tagextensie configureert. Deze les maakt deel uit van de zelfstudie Adobe Experience Cloud met Web SDK implementeren.
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Aan het einde van deze les kunt u het volgende doen:
 
 * Een CMP laden met tags
 * Privacy-instellingen configureren in Experience Platform Web SDK-tagextensie
-* Toestemming voor het Web SDK van het Experience Platform instellen op basis van de actie van de bezoeker
+* Goedkeuring voor Experience Platform Web SDK instellen op basis van actie van bezoeker
 
 ## Vereisten
 
-U zou met markeringen en de stappen vertrouwd moeten zijn om regels, gegevenselementen tot stand te brengen, bibliotheken aan milieu&#39;s te bouwen, en markeringsbibliotheken te schakelen gebruikend Foutopsporing van het Experience Platform.
+U dient bekend te zijn met tags en de stappen voor het maken van regels, gegevenselementen, het bouwen van bibliotheken naar omgevingen en het wisselen van tagbibliotheken met de Experience Platform Debugger.
 
 Voordat u de privacy-instellingen gaat configureren en de regels voor het instellen van de toestemming gaat maken, moet u ervoor zorgen dat u het script van het toestemmingsbeheerplatform op de website hebt ingespoten en correct werkt. Een CMP kan rechtstreeks in de broncode worden geladen met behulp van siteontwikkelaars of door tags zelf worden geladen. Deze les toont de laatste aanpak aan.
 
@@ -70,7 +70,7 @@ Nu, zodra u met de configuraties van Klaro wordt gedaan, creeer markeringsregels
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] ingesteld op 1
-* [!UICONTROL Action]: [!UICONTROL Custom Code] , [!UICONTROL Language] : HTML om het CMP-script te laden.
+* [!UICONTROL Action]: [!UICONTROL Custom Code] , [!UICONTROL Language]: HTML om het CMP-script te laden.
 
 ![ Injecteer CMP Regel ](assets/consent-cmp-inject-rule-1.png)
 
@@ -106,23 +106,23 @@ Impliciete opt-in betekent dat het bedrijf de toestemming van de bezoeker (of de
 
 Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 
-1. Controleer in de sectie **[!UICONTROL Privacy]** van de extensie van de Web SDK-tag voor Experience Platforms of **[!UICONTROL Default consent]** is ingesteld op **[!UICONTROL In]** :
+1. Controleer in de sectie **[!UICONTROL Privacy]** van de Experience Platform Web SDK-tagextensie of **[!UICONTROL Default consent]** is ingesteld op **[!UICONTROL In]** :
 
 
-   ![ Consent AEP Config van de Privacy van de Uitbreiding ](assets/consent-web-sdk-privacy-in.png)
+   ![ de Config van de Privacy van de Uitbreiding van AEP toestemming ](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
    >Voor een dynamische oplossing selecteert u de optie Een gegevenselement opgeven en geeft u een gegevenselement door dat de waarde van ```klaro.getManager().consents``` retourneert
    >
-   >Deze optie wordt gebruikt als CMP in de broncode *vóór* de markering wordt ingebed code zodat de standaardtoestemming beschikbaar is alvorens de uitbreiding van SDK van het Web van het Experience Platform begint te laden. In ons voorbeeld kunnen we deze optie niet gebruiken omdat het CMP wordt geladen met tags en niet voor tags.
+   >Deze optie wordt gebruikt als CMP in de broncode *vóór* de markering ingebed code wordt ingespoten zodat de standaardtoestemming beschikbaar is alvorens de uitbreiding van SDK van het Web van Experience Platform begint te laden. In ons voorbeeld kunnen we deze optie niet gebruiken omdat het CMP wordt geladen met tags en niet voor tags.
 
 
 
 2. Deze wijziging opslaan en samenstellen in uw tagbibliotheek
 3. Laad uw tagbibliotheek op de Luma-demo-site
 4. Schakel foutopsporing van tags in op de Luministoepassing en laad de pagina opnieuw. In de ontwikkelaarsconsole van uw browser moet u zien dat defaultConsent gelijk is aan **[!UICONTROL In]**
-5. Met deze configuratie, blijft de uitbreiding van SDK van het Web van het Experience Platform netwerkverzoeken indienen, tenzij een bezoeker besluit om de koekjes en opt-out te verwerpen:
+5. Met deze configuratie blijft de extensie Experience Platform Web SDK netwerkaanvragen indienen, tenzij een bezoeker besluit de cookies en de opt-out te weigeren:
 
    ![ geïmpliceerde toestemming binnen ](assets/consent-Implied-optin-default.png)
 
@@ -156,7 +156,7 @@ Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de
 
    ![ de gebruiker van de Voorwaarde van de Regel klikt &quot;ik verval&quot;](assets/consent-optOut-clickEvent.png)
 
-1. Gebruik nu de SDK van het Web SDK van het Experience Platform, [!UICONTROL Set consent] [!UICONTROL action type] om de toestemming als &quot;uit&quot;te plaatsen:
+1. Gebruik nu de Experience Platform Web SDK, [!UICONTROL Set consent] [!UICONTROL action type] , om de toestemming in te stellen op &quot;out&quot;:
 
    ![ De Weg-uit Actie van de Regel van de Goedkeuring ](assets/consent-rule-optout-action.png)
 
@@ -164,26 +164,26 @@ Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de
 
    ![ sparen en bouwt uw bibliotheek ](assets/consent-rule-optout-saveAndBuild.png)
 
-Nu, wanneer een bezoeker opteert-uit, zou de regel die op de bovengenoemde manier wordt gevormd in brand steken en de toestemming van SDK van het Web plaatst als **[!UICONTROL Out]**.
+Nu, wanneer een bezoeker opteert-uit, zou de regel die op de bovengenoemde manier wordt gevormd in brand steken en de toestemming van Web SDK plaatst als **[!UICONTROL Out]**.
 
-Valideren door naar de Luma-demo-site te gaan, cookies negeren en bevestigen dat geen Web SDK-aanvraag wordt geactiveerd nadat u deze hebt uitgeschakeld.
+Valideren door naar de Luma-demo-site te gaan, cookies negeren en bevestigen dat geen enkele Web SDK-aanvraag wordt geactiveerd nadat u deze hebt uitgeschakeld.
 
 ### Scenario 2: Impliciete optie
 
 
-Impliciete opt-out houdt in dat bezoekers standaard moeten worden behandeld als opted-out en cookies niet mogen worden ingesteld. Web SDK-aanvragen mogen alleen worden gestart als bezoekers besluiten handmatig aan te melden door de cookies te accepteren via de machtigingsbanner. Misschien moet u een dergelijk gebruiksgeval aanpakken in de regio van de Europese Unie waar de GDPR van toepassing is.
+Impliciete opt-out houdt in dat bezoekers standaard moeten worden behandeld als opted-out en cookies niet mogen worden ingesteld. Webverzoeken van SDK mogen alleen worden afgehandeld als bezoekers besluiten om zich handmatig aan te melden door de cookies te accepteren via de machtigingsbanner. Misschien moet u een dergelijk gebruiksgeval aanpakken in de regio van de Europese Unie waar de GDPR van toepassing is.
 
 Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 1. In Klaro, knevel van de **StandaardStaat van de Dienst** in uw `aep web sdk` dienst en sparen de bijgewerkte configuratie.
 
-1. Stel in het gedeelte **[!UICONTROL Privacy]** van de Web SDK-extensie van Experience Platform de standaardtoestemming in op **[!UICONTROL Out]** of **[!UICONTROL Pending]** naar wens.
+1. Stel in het gedeelte **[!UICONTROL Privacy]** van de Experience Platform Web SDK-extensie de standaardtoestemming in op **[!UICONTROL Out]** of **[!UICONTROL Pending]** naar wens.
 
-   ![ Consent AEP Config van de Privacy van de Uitbreiding ](assets/consent-implied-opt-out.png)
+   ![ de Config van de Privacy van de Uitbreiding van AEP toestemming ](assets/consent-implied-opt-out.png)
 
 1. **sparen** de bijgewerkte configuratie aan uw markeringsbibliotheek en herbouwt het.
 
-   Met deze configuratie, zorgt het Web SDK van het Experience Platform ervoor dat geen verzoek brandt tenzij de toestemmingstoestemming in **[!UICONTROL In]** verandert. Dit kan gebeuren als een bezoeker de cookies handmatig accepteert door in te schakelen.
+   Met deze configuratie zorgt Experience Platform Web SDK ervoor dat geen aanvraag wordt geactiveerd tenzij de toestemmingstoestemming in **[!UICONTROL In]** verandert. Dit kan gebeuren als een bezoeker de cookies handmatig accepteert door in te schakelen.
 
 1. Zorg er in Foutopsporing voor dat de Luminantiesite is toegewezen aan uw tageigenschap en dat de logboekregistratie voor de tagconsole is ingeschakeld.
 1. Gebruik de ontwikkelaarsconsole van uw browser aan **Duidelijke plaatsgegevens** in **Toepassing** > **Opslag**
@@ -214,16 +214,14 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten beginnen wanneer een bezoeker opteert-binnen.
 
-![ de Toestemming Optie van de Bezoeker van Post ](assets/consent-post-user-optin.png)
+![ De toestemming Optie van de Bezoeker van Post ](assets/consent-post-user-optin.png)
 
 
-Voor meer informatie over toestemming in Web SDK, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/consent/supporting-consent).
+Voor meer informatie over toestemming in SDK van het Web, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [ toestemming ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
-
-[Volgende: ](setup-event-forwarding.md)
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [ toestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
 
 >[!NOTE]
 >
->Bedankt dat u tijd hebt geïnvesteerd in het leren over de SDK van Adobe Experience Platform Web. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van de Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

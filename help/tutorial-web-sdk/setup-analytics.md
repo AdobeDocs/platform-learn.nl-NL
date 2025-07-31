@@ -4,18 +4,18 @@ description: Leer hoe u Adobe Analytics instelt met Experience Platform Web SDK.
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics instellen met Adobe Experience Platform Web SDK
 
-Leer hoe te opstelling Adobe Analytics gebruikend [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/web-sdk/overview), markeringsregels tot stand brengen om gegevens naar Adobe Analytics te verzenden, en te bevestigen dat Analytics gegevens zoals verwacht vangt.
+Leer hoe te opstelling Adobe Analytics gebruikend [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), markeringsregels tot stand brengen om gegevens naar Adobe Analytics te verzenden, en te bevestigen dat Analytics gegevens zoals verwacht vangt.
 
-[ Adobe Analytics ](https://experienceleague.adobe.com/nl/docs/analytics) is een industrie-leidende toepassing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
+[ Adobe Analytics ](https://experienceleague.adobe.com/en/docs/analytics) is een industrie-leidende toepassing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
 
 ![ SDK van het Web aan het diagram van Adobe Analytics ](assets/dc-websdk-aa.png)
 
@@ -35,7 +35,7 @@ Om deze les te voltooien, moet u eerst:
 
 * Ben vertrouwd met en heb toegang tot Adobe Analytics.
 
-* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [ gelieve te creëren ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [ gelieve te creëren ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
@@ -43,7 +43,7 @@ Om deze les te voltooien, moet u eerst:
 
 Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw datastream geeft vervolgens aan Platform Edge Network door aan welke Adobe Analytics-rapportages uw gegevens moeten worden verzonden.
 
-1. Ga naar [&#128279;](https://experience.adobe.com/#/data-collection){target="blank"} interface van de Inzameling van 0&rbrace; Gegevens
+1. Ga naar [ interface van de Inzameling van 0} Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
@@ -78,7 +78,7 @@ Vanaf mei 2024 hoeft u niet langer een XDM-schema te maken om Adobe Analytics me
 
 ### Automatisch toegewezen velden
 
-Veel XDM-velden worden automatisch toegewezen aan analytische variabelen. Voor de meest bijgewerkte lijst van afbeeldingen, gelieve te zien [ veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Veel XDM-velden worden automatisch toegewezen aan analytische variabelen. Voor de meest bijgewerkte lijst van afbeeldingen, gelieve te zien [ veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Dit komt voor als _zelfs als u geen douaneschema_ hebt bepaald. Experience Platform Web SDK verzamelt automatisch bepaalde gegevens en verzendt deze naar Platform Edge Network als XDM-velden. Web SDK leest bijvoorbeeld de URL van de huidige pagina en verzendt deze als het XDM-veld `web.webPageDetails.URL` . Dit veld wordt doorgestuurd naar Adobe Analytics en de pagina-URL-rapporten worden automatisch ingevuld in Adobe Analytics.
 
@@ -106,8 +106,8 @@ De afzonderlijke secties van de producttekenreeks Analytics worden ingesteld via
 >[!NOTE]
 >
 >Vanaf 18 augustus 2022 heeft `productListItems[].SKU` prioriteit voor het toewijzen aan de productnaam in de variabele s.products.
->&#x200B;>De waarde die is ingesteld op `productListItems[].name` , wordt alleen aan de productnaam toegewezen als `productListItems[].SKU` niet bestaat. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
->&#x200B;>Stel geen lege tekenreeks of null in op `productListItems[].SKU` . Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
+>>De waarde die is ingesteld op `productListItems[].name` , wordt alleen aan de productnaam toegewezen als `productListItems[].SKU` niet bestaat. Anders wordt de koppeling verwijderd en beschikbaar in contextgegevens.
+>>Stel geen lege tekenreeks of null in op `productListItems[].SKU` . Dit heeft het ongewenste effect van afbeelding aan de productnaam in de s.products variabele.
 
 
 ### Variabelen instellen in het gegevensobject
@@ -396,7 +396,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
    > De `ecommerce - library loaded - set product details variables - 20` -regel overschrijft de waarde van `eventType` ingesteld door de `all pages - library loaded - set global variables - 1` -regel wanneer deze is ingesteld om later in de reeks te worden geactiveerd
 
 
-   {de Mening van het Product van 0} Analytics ![&#128279;](assets/analytics-debugger-prodView.png)
+   {de Mening van het Product van 0} Analytics ![](assets/analytics-debugger-prodView.png)
 
 **bevestigt de rest e-commercegebeurtenissen en productkoorden worden geplaatst voor Analytics**
 
@@ -467,7 +467,7 @@ Schuif omlaag naar **[!UICONTROL pageName]** om te controleren of de `Page Name`
 Volg dezelfde validatiegebruikscase die bij het valideren met de bovenstaande Experience Platform-foutopsporing wordt gebruikt, en ga verder met het gebruik van hetzelfde baken om de instructies `Ecommerce Events` en `Product String` te valideren.
 
 1. Zoeken naar lading waar de **[!UICONTROL events]** `prodView` bevat
-   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-prodView-event.png)
+   {de bevestiging van het Koord van het 0} Product met Assurance ![](assets/assurance-hitdebugger-prodView-event.png)
 1. Schuif omlaag naar **[!UICONTROL product-string]** om de `Product String` te valideren.
    * Noteer `Product SKU` en `Merchandizing eVar1` .
 1. Schuif verder omlaag en valideer dat `prop1` , dat u hebt geconfigureerd met de verwerkingsregels in de vorige sectie, de eigenschap `Product SKU` bevat\
@@ -476,18 +476,16 @@ Volg dezelfde validatiegebruikscase die bij het valideren met de bovenstaande Ex
 Ga door met het valideren van uw implementatie door de gebeurtenissen voor winkelwagentjes, kassa&#39;s en aankopen te controleren.
 
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scView` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
+   {de bevestiging van het Koord van het 0} Product met Assurance ![](assets/assurance-hitdebugger-scView-event.png)
 1. Zoek naar lading waar **[!UICONTROL events]** bevat `scCheckout` en bevestigt het productkoord.
-   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-scView-event.png)
+   {de bevestiging van het Koord van het 0} Product met Assurance ![](assets/assurance-hitdebugger-scView-event.png)
 1. Zoeken naar lading waar de **[!UICONTROL events]** `purchase` bevat
-   {de bevestiging van het Koord van het 0} Product met Assurance ![&#128279;](assets/assurance-hitdebugger-purchase-event.png)
+   {de bevestiging van het Koord van het 0} Product met Assurance ![](assets/assurance-hitdebugger-purchase-event.png)
 1. Wanneer u de `purchase` -gebeurtenis valideert, moet de `Product String` de `Product SKU` , `Product Quantity` en `Product Total Price` bevatten.
 1. Voor de `purchase` validate bovendien of `purchase-id` and/or `purchaseId` is ingesteld
 
 
 Gefeliciteerd! Je hebt het gedaan! Dit is het einde van de les en nu bent u klaar om Adobe Analytics met Platform Web SDK te implementeren voor uw eigen website.
-
-[Volgende: ](setup-audience-manager.md)
 
 >[!NOTE]
 >
