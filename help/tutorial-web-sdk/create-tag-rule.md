@@ -70,7 +70,7 @@ Al deze regels zullen behoorlijk gebruikend de &quot;[!UICONTROL order]&quot;opt
 
 Deze video geeft een overzicht van het proces:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454033/?learn=on&enablevpops&captions=dut)
 
 ### Algemene configuratievelden
 
