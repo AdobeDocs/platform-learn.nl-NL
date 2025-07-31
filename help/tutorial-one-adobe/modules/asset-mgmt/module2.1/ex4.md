@@ -4,7 +4,7 @@ description: AEM CS - Aangepast basisblok
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -61,7 +61,7 @@ De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluit
 
 ![ Blok ](./images/block9.png){zoomable="yes"}
 
-Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
+Plak deze code en voer een komma **** na het codeblok in:
 
 ```json
 {
@@ -98,7 +98,7 @@ Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluiten
 
 ![ Blok ](./images/block12.png){zoomable="yes"}
 
-Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -259,7 +259,7 @@ Voeg met de tekst `Fiber` een menuoptie toe aan het navigatiemenu. Selecteer de 
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Ga dit voor **URL** in `/us/en//citisignal-fiber` en klik het **V** pictogram om te bevestigen.
+Ga dit voor **URL** in `/us/en/citisignal-fiber` en klik het **V** pictogram om te bevestigen.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 

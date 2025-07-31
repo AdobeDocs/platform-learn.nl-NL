@@ -3,10 +3,10 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 1%
 Deze zelfstudie is zeer divers en biedt duidelijke inzichten in de volgende toepassingen:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront &amp; Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets en Edge Delivery Services
+- Adobe Workfront, Adobe Workfront Planning en Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms en Edge Delivery Services
+- AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 Deze zelfstudie richt zich niet alleen op Adobe-toepassingen, maar houdt rekening met het bredere ecosysteem waarin merken werken. Om dat te doen, is er in sommige lessen nadruk op hoe niet-Adobe toepassingen met Adobe toepassingen integreren. Als zodanig krijgt u meer inzicht in de manier waarop de volgende toepassingen samenwerken met Adobe Experience Platform:
 
@@ -57,6 +60,14 @@ In deze grondmodule, zult u alles voorbereiden zodat u tot het demomilieu toegan
 
 ### &#x200B;1. Workflow en planning
 
+[ 1.1 de Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+In deze module, zult u de Planning van Adobe Workfront vormen en gebruiken om een nieuwe werkruimte tot stand te brengen, verslagtypes te bepalen, verslagen te beheren, een nieuwe verzoekvorm tot stand te brengen en de AI medewerker te gebruiken.
+
+[ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+In deze module, zult u Adobe Workfront vormen en gebruiken om goedkeuringsstromen te beheren en u zult integraties met Adobe Experience Manager Assets, Universele Redacteur, Photoshop en meer gebruiken.
+
 ### &#x200B;2. Opbouw en productie
 
 [ 1.1 Overzicht van Adobe Firefly Services ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
@@ -80,10 +91,6 @@ In deze basismodule gebruikt u Adobe Express om afbeeldingen en video&#39;s te m
 [ 1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
-
-[ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-In deze basismodule configureert en gebruikt u Adobe Workfront om goedkeuringsstromen te beheren en gebruikt u integraties met Adobe Experience Manager Assets, Universal Editor, Photoshop en meer.
 
 ### &#x200B;4. Levering en activering
 

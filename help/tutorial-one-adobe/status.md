@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '406'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,8 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 
 | Naam | Laatste update | Werken 100% | Opmerkingen |
 | ---------------------- | ------------ | ------------ |------------ |
-| - | - | - | - |
+| [ 1.1 de Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 07-29-2025 | Nee | Inhoud nog niet voltooid |
+| [ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 07-29-2025 | Nee | Inhoud nog niet voltooid |
 
 ## &#x200B;2. Opbouw en productie
 
@@ -41,7 +42,6 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | Naam | Laatste update | Werken 100% | Opmerkingen |
 | ---------------------- | ------------ | ------------ |------------ |
 | [ 2.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05-01-2025 | Ja | - |
-| [ 2.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"} | 01-16-2025 | Nee | Inhoud nog niet voltooid |
 
 ## &#x200B;4. Levering en activering
 
@@ -61,7 +61,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [ 3.3 Adobe Journey Optimizer: Duw en In-app Berichten ](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 07-03-2025-2025 | Ja | - |
 | [ 3.4 Adobe Journey Optimizer: Op gebeurtenis-gebaseerde Reizen ](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 07-03-2025 | Ja | - |
 | [ 3.5 Adobe Journey Optimizer: Vertaaldiensten ](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 07-03-2025 | Ja | - |
-| [ 3.6 Adobe Journey Optimizer: Het Beheer van de inhoud ](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 07-03-2025 | Nee | Inhoud die wordt ontwikkeld |
+| [ 3.6 Adobe Journey Optimizer: Het Beheer van de inhoud ](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 07-03-2025 | Ja | - |
 | [ 3.7 Adobe Journey Optimizer: Beslissing ](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 07-03-2025 | Nee | Inhoud die wordt ontwikkeld |
 | [ 3.8 Adobe Journey Optimizer: Campagnes ](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 07-03-2025 | Nee | Inhoud die wordt ontwikkeld |
 
