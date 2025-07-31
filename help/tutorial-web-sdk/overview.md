@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Leer hoe u Experience Cloud-toepassingen implementeert met Adobe Experience Platform Web SDK.
 
-Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [ voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)
+Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [ voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/home)
 
 ![ de architectuur van SDK van het Web van Experience Platform ](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
    * **[!UICONTROL Property Rights]** - toestemming voor **[!UICONTROL Approve]** , **[!UICONTROL Develop]** , **[!UICONTROL Edit Property]** , **[!UICONTROL Manage Environments]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Publish]** ,
    * **[!UICONTROL Company Rights]** : toestemming voor **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie betreffende markeringstoestemmingen, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Voor meer informatie betreffende markeringstoestemmingen, zie [ de documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/admin/user-permissions).
 
 * Voor **Experience Platform**, moet u hebben:
 
@@ -62,13 +62,13 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
      De vereiste functies moeten beschikbaar zijn voor alle Experience Cloud-klanten, zelfs als u geen klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP.
 
-     Voor meer informatie over de toegangscontrole van het Platform, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+     Voor meer informatie over de toegangscontrole van het Platform, zie [ de documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/home).
 
-* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-console/home)
 
-* Voor de facultatieve **Adobe Target** les, moet u [ Redacteur of de toegang van de fiatteur ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
+* Voor de facultatieve **Adobe Target** les, moet u [ Redacteur of de toegang van de fiatteur ](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
 
-* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [ Audience Manager Op rol-Gebaseerd Toegangsbeheer ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [ Audience Manager Op rol-Gebaseerd Toegangsbeheer ](https://experienceleague.adobe.com/nl/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]

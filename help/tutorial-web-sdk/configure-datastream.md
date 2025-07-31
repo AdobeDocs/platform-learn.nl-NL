@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom voor Adobe Experience Platform Web SDK configureert.
 
-[ gegevensstromen ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
+[ gegevensstromen ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
 
 ![ SDK van het Web, gegevensstromen, en het diagram van Edge Network ](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +65,7 @@ Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegeven
 
 ## Een gegevensstroom overschrijven
 
-[ DataStream treedt ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
+[ DataStream treedt ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
 
 De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 

@@ -38,7 +38,7 @@ U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [ de duimplaats van 
 
 ## Experience Cloud-id
 
-[ identiteitskaart van Experience Cloud (ECID) ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) is een gedeelde identiteit namespace die over de toepassingen van Adobe Experience Platform en van Adobe Experience Cloud wordt gebruikt. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. ECID is de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag, omdat deze altijd aanwezig is.
+[ identiteitskaart van Experience Cloud (ECID) ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) is een gedeelde identiteit namespace die over de toepassingen van Adobe Experience Platform en van Adobe Experience Cloud wordt gebruikt. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. ECID is de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag, omdat deze altijd aanwezig is.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,7 +47,7 @@ U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [ de duimplaats van 
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Lees meer over hoe [ ECIDs gebruikend het Web SDK van het Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) wordt gevolgd.
+Lees meer over hoe [ ECIDs gebruikend het Web SDK van het Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/overview) wordt gevolgd.
 
 ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies en Platform Edge Network. Door gebrek, worden de eerste-partijidentiteitskoekjes geplaatst cliënt-kant door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen server-side cookies met de identiteit van de eerste partij in te stellen. Deze identiteitscookies worden ook wel FPID&#39;s (FPID&#39;s) genoemd.
 
@@ -61,7 +61,7 @@ FPIDs is eerste-partijkoekjes _u plaatst gebruikend uw eigen Webservers_ die Ado
 
 Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, die de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
 
-Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Lees meer over [ het apparaat IDs van de Eerste partij in het Web SDK van het Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Lees meer over [ het apparaat IDs van de Eerste partij in het Web SDK van het Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPI
 
 Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe bij het gebruik van Platform Web SDK. ECID is de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
-U kunt een voor authentiek verklaarde gebruikersidentiteitskaart ook verzenden zodat het Platform [ Grafieken van de Identiteit ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) kan tot stand brengen en het Doel kan zijn [ Identiteitskaart van de Derde ](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) plaatsen. Het instellen van de geverifieerde id gebeurt met behulp van het gegevenstype [!UICONTROL Identity Map] data element.
+U kunt een voor authentiek verklaarde gebruikersidentiteitskaart ook verzenden zodat het Platform [ Grafieken van de Identiteit ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) kan tot stand brengen en het Doel kan zijn [ Identiteitskaart van de Derde ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) plaatsen. Het instellen van de geverifieerde id gebeurt met behulp van het gegevenstype [!UICONTROL Identity Map] data element.
 
 Het gegevenselement [!UICONTROL Identity Map] maken:
 
