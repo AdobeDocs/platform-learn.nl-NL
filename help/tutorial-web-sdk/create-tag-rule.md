@@ -238,7 +238,7 @@ Vergelijk het gegevenselement met de `productListItems` -structuur (hint, it sho
 >[!IMPORTANT]
 >
 >Numerieke variabelen worden omgezet met tekenreekswaarden in de gegevenslaag, zoals `price` en `qty` , die opnieuw worden opgemaakt naar getallen in het gegevenselement. Deze formaatvereisten zijn belangrijk voor gegevensintegriteit in Platform en worden bepaald tijdens [ vormen schema&#39;s ](configure-schemas.md) stap. In het voorbeeld gebruikt **[!UICONTROL quantity]** het gegevenstype **[!UICONTROL Integer]** .
->> ![Gegevenstype XDM-schema ](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![Gegevenstype XDM-schema ](assets/set-up-analytics-quantity-integer.png)
 
 Laten we nu onze array toewijzen aan het XDM-object:
 

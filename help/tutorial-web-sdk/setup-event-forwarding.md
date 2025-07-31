@@ -88,7 +88,7 @@ Voor gebeurtenis door:sturen om de gegevens te gebruiken die u naar Platform Edg
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar [ interface van de Inzameling van 0} Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ga naar [ interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
@@ -122,7 +122,7 @@ In deze oefening leert u hoe te opstelling een gebeurtenis-door:sturen gegevense
 
 >[!IMPORTANT]
 >
->U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0} Codes in de** eerste vereisten [ sectie. ](setup-event-forwarding.md#prerequisites) Die stappen zorgen ervoor dat het gegeven wordt verzonden naar het Platform Edge Network, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
+>U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0&rbrace; Codes in de** eerste vereisten [ sectie. ](setup-event-forwarding.md#prerequisites) Die stappen zorgen ervoor dat het gegeven wordt verzonden naar het Platform Edge Network, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
 
 
 ### Een gegevenselement voor het doorsturen van gebeurtenissen maken
@@ -143,7 +143,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Expe
 >[!TIP]
 >
 >U kunt de XDM objecten weg ook vinden door uw hulpmiddelen van het Webbrowser netwerk te gebruiken, die voor `/ee` verzoeken filtreren, die de baken [!UICONTROL **Payload**] openen en neer aan veranderlijk boren u zoekt. Klik vervolgens met de rechtermuisknop en selecteer &quot;Pad eigenschap kopiëren&quot;. Hier volgt een voorbeeld voor de Viewport-hoogte van de browser:
->> ![Event Forwarding XDM Path ](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Event Forwarding XDM Path ](assets/event-forwarding-xdm-path.png)
 
 1. Ga naar de eigenschap **[!UICONTROL Event Forwarding]** die u onlangs hebt gemaakt
 

@@ -87,7 +87,7 @@ Het gegevenselement [!UICONTROL Identity Map] maken:
 
    ![ de interface van de Inzameling van Gegevens ](assets/identity-identityMap-setup.png)
 
-1. Als **[!UICONTROL Namespace]**, selecteer `lumaCrmId` namespace die u eerder in [ creeerde vormen de 3} les van Identiteiten {vormt. ](configure-identities.md) Als deze niet in de vervolgkeuzelijst wordt weergegeven, typt u deze.
+1. Als **[!UICONTROL Namespace]**, selecteer `lumaCrmId` namespace die u eerder in [ creeerde vormen de 3&rbrace; les van Identiteiten &lbrace;vormt. ](configure-identities.md) Als deze niet in de vervolgkeuzelijst wordt weergegeven, typt u deze.
 
 1. Nadat **[!UICONTROL Namespace]** is geselecteerd, moet een id worden ingesteld. Selecteer het `user.profile.attributes.username` gegevenselement dat vroeger in [ wordt gecreeerd creeer gegevenselementen ](create-data-elements.md#create-data-elements-to-capture-the-data-layer) les, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
 

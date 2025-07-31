@@ -64,11 +64,11 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
      Voor meer informatie over de toegangscontrole van het Platform, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* Voor de facultatieve **les van 0} Adobe Analytics {, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * Voor de facultatieve **Adobe Target** les, moet u [ Redacteur of de toegang van de fiatteur ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
 
-* Voor de facultatieve **les van 0} Audience Manager {, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [ Audience Manager Op rol-Gebaseerd Toegangsbeheer ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [ Audience Manager Op rol-Gebaseerd Toegangsbeheer ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]

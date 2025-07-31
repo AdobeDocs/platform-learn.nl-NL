@@ -256,7 +256,7 @@ Bewerk een specifieke component met behulp van de **[!UICONTROL CSS selector typ
 
 ![ wijzig CSS ](assets/web-channel-css-selector.png)
 
-Voeg douanecode toe gebruikend de **type `<head>` wijziging van de 1} Pagina**.
+Voeg douanecode toe gebruikend de **type `<head>` wijziging van de 1&rbrace; Pagina**.
 
 ![ wijzig hoofd ](assets/web-channel-page-head-modification.png)
 

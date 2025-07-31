@@ -74,7 +74,7 @@ Een dataset wordt nu gevormd om te beginnen gegevens van uw implementatie van he
 
 Nu kunt u uw [!UICONTROL datastream] configureren om gegevens naar [!UICONTROL Adobe Experience Platform] te verzenden. De gegevensstroom is het verband tussen uw markeringsbezit, het Platform Edge Network, en de dataset van Experience Platform.
 
-1. Open de [ interface van de Inzameling van 0} Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Open de [ interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Open de datastream u in [ creeerde vormen een datastream ](configure-datastream.md) les, `Luma Web SDK`
 

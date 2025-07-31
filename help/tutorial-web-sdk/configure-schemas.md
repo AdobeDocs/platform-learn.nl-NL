@@ -51,7 +51,7 @@ Bijvoorbeeld, behandelen vele ondernemingen bevelen. Wat als deze bedrijven geza
 
 Als alle bedrijven die met orders te maken hebben, besloten hebben om hun ordergegevens op consistente wijze te modelleren voor termen die in de sector algemeen zijn, kunnen er magische dingen beginnen te gebeuren. De informatie zou vlotter binnen en buiten uw organisatie kunnen worden uitgewisseld in plaats van constant het interpreteren en vertalen van de gegevens (pro&#39;s en evars, om het even wie?). Het leren van de machine kon gemakkelijker begrijpen wat uw gegevens __ betekent en actionable inzichten verstrekken. Gebruikersinterfaces voor het opzoeken van relevante gegevens kunnen intuïtiever worden. Uw gegevens kunnen naadloos worden geïntegreerd met partners en leveranciers die dezelfde modellering volgen.
 
-Dit is het doel van het Model van de Gegevens van de Ervaring van Adobe [ ](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM verstrekt voorschrijvende modellering voor gegevens die in de industrie gemeenschappelijk zijn, terwijl ook het toestaan van u om het model voor uw specifieke behoeften uit te breiden. Adobe Experience Platform is gebouwd rond XDM en gegevens die naar Experience Platform worden verzonden, moeten daarom in XDM zijn opgeslagen. Overweeg in plaats van na te denken over waar en hoe u uw huidige gegevensmodellen in XDM kunt omzetten alvorens de gegevens naar Experience Platform te verzenden, meer doordringend het goedkeuren van XDM over uw organisatie zodat de vertaling zelden hoeft voor te komen.
+Dit is het doel van het Model van de Gegevens van de Ervaring van Adobe [&#128279;](https://business.adobe.com/products/experience-platform/experience-data-model.html). XDM verstrekt voorschrijvende modellering voor gegevens die in de industrie gemeenschappelijk zijn, terwijl ook het toestaan van u om het model voor uw specifieke behoeften uit te breiden. Adobe Experience Platform is gebouwd rond XDM en gegevens die naar Experience Platform worden verzonden, moeten daarom in XDM zijn opgeslagen. Overweeg in plaats van na te denken over waar en hoe u uw huidige gegevensmodellen in XDM kunt omzetten alvorens de gegevens naar Experience Platform te verzenden, meer doordringend het goedkeuren van XDM over uw organisatie zodat de vertaling zelden hoeft voor te komen.
 
 
 >[!NOTE]
@@ -113,7 +113,7 @@ Indien mogelijk wordt aangeraden bestaande veldgroepen te gebruiken en zich te h
 
 >[!TIP]
 > 
->In deze exercitie voegt u de aanbevolen vooraf gedefinieerde veldgroepen voor het verzamelen van webgegevens toe: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_en_**[!UICONTROL Consumer Experience Event]**_ .
+>In deze exercitie voegt u de aanbevolen vooraf gedefinieerde veldgroepen voor het verzamelen van webgegevens toe: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_en_&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_ .
 >
 
 
@@ -142,7 +142,7 @@ Er is een speciaal veld dat wordt gebruikt voor het identificeren van webgebruik
 
 ![ Gegevens van de Gebeurtenis van het Web Luma ](assets/schema-identityMap.png)
 
-Het is een verplicht object voor elke gegevensverzameling voor het web, omdat het de Experience Cloud-id bevat die nodig is om gebruikers op het web te identificeren. Het is ook de sleutel aan het plaatsen van interne klant IDs voor voor authentiek verklaarde gebruikers. `[!UICONTROL identityMap]` wordt besproken meer in [ vormen de 2} les van Identiteiten {. ](configure-identities.md) Deze wordt automatisch opgenomen in alle schema&#39;s met behulp van de klasse **[!UICONTROL XDM ExperienceEvent]** .
+Het is een verplicht object voor elke gegevensverzameling voor het web, omdat het de Experience Cloud-id bevat die nodig is om gebruikers op het web te identificeren. Het is ook de sleutel aan het plaatsen van interne klant IDs voor voor authentiek verklaarde gebruikers. `[!UICONTROL identityMap]` wordt besproken meer in [ vormen de 2&rbrace; les van Identiteiten &lbrace;. ](configure-identities.md) Deze wordt automatisch opgenomen in alle schema&#39;s met behulp van de klasse **[!UICONTROL XDM ExperienceEvent]** .
 
 
 >[!IMPORTANT]
@@ -151,7 +151,7 @@ Het is een verplicht object voor elke gegevensverzameling voor het web, omdat he
 >
 >
 >Dit het plaatsen wordt besproken meer tijdens de [ Experience Platform van de Opstelling ](setup-experience-platform.md) les.
->>![Profielschema ](assets/schema-profile.png)
+>&#x200B;>![Profielschema ](assets/schema-profile.png)
 
 Selecteer **[!UICONTROL Save]** rechtsboven om deze les te voltooien.
 

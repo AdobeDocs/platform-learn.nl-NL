@@ -38,7 +38,7 @@ Om deze les te voltooien, moet u eerst:
 
 De implementatie van Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie gebruikend [ server-kant het door:sturen (SSF) ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Door:sturen op de server geeft u Adobe Analytics-aanvraaggegevens door aan Audience Manager. Een SDK-implementatie van het Platform geeft XDM-gegevens door die naar Platform Edge Network naar Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
-1. Ga naar [ interface van de Inzameling van 0} Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ga naar [ interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 

@@ -195,7 +195,7 @@ De visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe
 
 De visuele verpersoonlijkingsbesluiten van Doel worden geleverd door het Web SDK van het Platform, als het Doel in de datastream wordt toegelaten. Nochtans, _worden zij niet automatisch teruggegeven_. U moet de handeling [!UICONTROL Send event] bijwerken om automatische rendering in te schakelen.
 
-1. In de [ interface van de Inzameling van 0} Gegevens, open het markeringsbezit u voor dit leerprogramma gebruikt](https://experience.adobe.com/#/data-collection){target="blank"}
+1. In de [ interface van de Inzameling van 0&rbrace; Gegevens, open het markeringsbezit u voor dit leerprogramma gebruikt](https://experience.adobe.com/#/data-collection){target="blank"}
 1. De regel `all pages - library loaded - send event - 50` openen
 1. Selecteer de handeling `Adobe Experience Platform Web SDK - Send event`
 1. **[!UICONTROL Render visual personalization decisions]** inschakelen met het selectievakje
@@ -306,9 +306,9 @@ Wijzig de regel voor het laden van de pagina om een aangepast beslissingsbereik 
 Nu u Platform Web SDK hebt gevormd om inhoud voor het `homepage-hero` werkingsgebied te verzoeken, moet u iets met de reactie doen. De tagextensie Platform Web SDK biedt een [!UICONTROL Send Event Complete] -gebeurtenis die kan worden gebruikt om onmiddellijk een nieuwe regel te activeren wanneer een reactie van een [!UICONTROL Send Event] -actie wordt ontvangen.
 
 1. Maak een regel met de naam `homepage - send event complete - render homepage-hero` .
-1. Voeg een gebeurtenis aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0} Adobe Experience Platform {en het** gebeurtenistype.**[!UICONTROL Send event complete]**
+1. Voeg een gebeurtenis aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0&rbrace; Adobe Experience Platform &lbrace;en het** gebeurtenistype.**[!UICONTROL Send event complete]**
 1. Voeg een voorwaarde toe om de regel tot de homepage van Luma (weg zonder vraagkoord evenaart `/content/luma/us/en.html`) te beperken.
-1. Voeg een handeling aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0} Adobe Experience Platform {en** stel **actietype van voorstellen toe.**
+1. Voeg een handeling aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0&rbrace; Adobe Experience Platform &lbrace;en** stel **actietype van voorstellen toe.**
 
    ![ teruggeven homepage heldenregel ](assets/target-rule-render-hero.png)
 
@@ -513,7 +513,7 @@ U kunt als volgt het verzoek Analytics-on-bottom maken:
 
 1. Een nieuwe regel maken met de naam `all pages - page bottom - send event - 50`
 1. Voeg een gebeurtenis aan de regel toe. Gebruik de **uitbreiding van de Kern** en het **[!UICONTROL Page Bottom]** gebeurtenistype
-1. Voeg een handeling aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0} Adobe Experience Platform {en** verzenden gebeurtenis **actietype**
+1. Voeg een handeling aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0&rbrace; Adobe Experience Platform &lbrace;en** verzenden gebeurtenis **actietype**
 1. Selecteer **[!UICONTROL Use guided events]** en selecteer vervolgens **[!UICONTROL Collect analytics]**
 1. Hierdoor wordt het selectievakje **[!UICONTROL Include pending display notifications]** vergrendeld, zodat het weergavebericht in de wachtrij van het beslissingsverzoek wordt verzonden.
 
