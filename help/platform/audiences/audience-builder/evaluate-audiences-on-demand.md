@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Batchpubliek op aanvraag evalueren
 
-Evalueer het batchpubliek op aanvraag met de flexibele evaluatiefunctie voor het publiek van Adobe Experience Platform. Voor meer informatie en begeleiding, zie [ de flexibele gids van de publieksevaluatie ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Evalueer het batchpubliek op aanvraag met de flexibele evaluatiefunctie voor het publiek van Adobe Experience Platform. Voor meer informatie en begeleiding, zie [ de flexibele gids van de publieksevaluatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
