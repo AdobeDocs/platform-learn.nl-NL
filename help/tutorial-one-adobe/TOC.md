@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # Eén technische zelfstudie voor Adobe {#tutorial-one-adobe}
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
++ [GenStudio for Content Supply Chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Voltooiing](/help/tutorial-one-adobe/completion.md)
 
@@ -36,10 +37,11 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Aan de slag met Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2 Workfront {#wfpl2}
+   + 1.2 Workfront Workflow {#wfpl2}
       + [Overzicht](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Aan de slag met Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 Workfront + AEM Assets CS Metadata Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Proofing met Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.4 Workfront + AEM Sites CS Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
       + [1.2.5 Integratie van Workfront + Photoshop](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 

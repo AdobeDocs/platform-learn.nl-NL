@@ -3,9 +3,10 @@ title: Aan de slag met Workfront Planning
 description: Aan de slag met Workfront Planning
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -196,7 +197,7 @@ Dan zie je de nieuwe campagne in het overzicht.
 
 ![ Planning van Workfront ](./images/wfpl35.png)
 
-## 1.1.1.7 Een automatisering maken
+## 1.1.1.7 Portfolio en aangepast formulier maken
 
 In de volgende stap gaat u een automatisering maken die informatie neemt uit de campagne die u hebt gemaakt in Workfront Planning en die die informatie gebruikt in Workfront om een programma te maken. Voordat u de automatisering kunt maken, moet u eerst twee dingen configureren in Workfront: een portfolio en een aangepast formulier.
 
@@ -224,7 +225,7 @@ Selecteer **Programma** en klik **verdergaan**.
 
 ![ Planning van Workfront ](./images/wfplss6.png)
 
-Wijzig de naam van het formulier in `--aepUserLdap-- Program Information` .
+Wijzig de naam van het formulier in `--aepUserLdap-- - Program Information` .
 
 ![ Planning van Workfront ](./images/wfplss7.png)
 

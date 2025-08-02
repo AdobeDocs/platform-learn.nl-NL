@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u deze bewerking wilt voltooien, hebt u toegang nodig tot een werkende AEM Assets CS Author-omgeving met AEM Content Hub ingeschakeld. Als u oefening [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} volgt zult u toegang tot zulk een milieu hebben.
+>Als u deze bewerking wilt voltooien, hebt u toegang nodig tot een werkende AEM Assets CS Author-omgeving met AEM Assets Content Hub ingeschakeld.
+>
+>Er zijn twee opties die u kunt overwegen:
+>
+>- Als u de GenStudio for CSC Technical Enablement workshop bijwoont, hebben uw instructeurs een AEM Assets CS Author-omgeving voor u gemaakt. Controleer bij hen wat de naam is en hoe u verder wilt gaan.
+>
+>- Als u de volledige Één de zelfstudie van Adobe volgt, ga [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} uitoefenen. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >

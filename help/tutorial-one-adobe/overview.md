@@ -3,9 +3,9 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 Deze zelfstudie is zeer divers en biedt duidelijke inzichten in de volgende toepassingen:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront, Adobe Workfront Planning en Adobe Workfront Fusion
+- Adobe Workfront Workflow, Adobe Workfront-planning en Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms en Edge Delivery Services
 - AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ In deze grondmodule, zult u alles voorbereiden zodat u tot het demomilieu toegan
 
 In deze module, zult u de Planning van Adobe Workfront vormen en gebruiken om een nieuwe werkruimte tot stand te brengen, verslagtypes te bepalen, verslagen te beheren, een nieuwe verzoekvorm tot stand te brengen en de AI medewerker te gebruiken.
 
-[ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[ 1.2 het Beheer van het Werkschema met het Werkschema van Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 In deze module, zult u Adobe Workfront vormen en gebruiken om goedkeuringsstromen te beheren en u zult integraties met Adobe Experience Manager Assets, Universele Redacteur, Photoshop en meer gebruiken.
 
