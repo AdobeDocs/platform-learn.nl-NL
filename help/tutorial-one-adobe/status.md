@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 
 | Naam | Laatste update | Werken 100% | Opmerkingen |
 | ---------------------- | ------------ | ------------ |------------ |
-| [ 1.1 de Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 07-29-2025 | Nee | Inhoud nog niet voltooid |
-| [ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 07-29-2025 | Nee | Inhoud nog niet voltooid |
+| [ 1.1 de Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 08-02-2025 | Ja | - |
+| [ 1.2 het Beheer van het Werkschema met Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 08-02-2025 | Ja | Inhoud nog niet voltooid |
 
 ## &#x200B;2. Opbouw en productie
 
@@ -35,6 +35,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [ 1.2 de Automatisering van het Werkschema van Creative met Workfront Fusion ](./modules/creation-production/module1.2/automation.md){target="_blank"} | 06-04-2025 | Ja | - |
 | [ 1.3 GenStudio for Performance Marketing ](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 06-16-2025 | Ja | - |
 | [ 1.4 Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.4/express.md){target="_blank"} | 04-01-2025 | Ja | - |
+| [ 1.5 stroomlijnt uw werkschema met Frame.io ](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08-02-2025 | Ja | - |
 
 
 ## &#x200B;3. Beheer van bedrijfsmiddelen
@@ -72,6 +73,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [ 1.1 Customer Journey Analytics: Bouw een dashboard gebruikend Analysis Workspace bovenop Adobe Experience Platform ](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"} | 01-06-2025 | Ja | - |
 | [ 1.2 Customer Journey Analytics: Samenvatting en Analyseer de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 01-07-2025 | Nee | Er is een probleem met de modellering van de gegevensprep voor de brongegevens. Dit is in afwachting van een oplossing. |
 | [ 2.1 de Dienst van de Vraag ](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 12-04-2024 | Ja | - |
+| [ 3.1 Content Analytics ](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 08-02-2025 | Nee | Inhoud die wordt ontwikkeld |
 
 {style="table-layout:auto"}
 

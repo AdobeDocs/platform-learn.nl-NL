@@ -3,9 +3,9 @@ title: Aan de slag - Te installeren toepassingen
 description: Aan de slag - Te installeren toepassingen
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,26 @@ Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw 
 Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Illustrator op uw computer.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Installeer Adobe Premiere Pro Beta versie op uw computer van [ https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/prpro.png)
+
+Klik **Open de App van de Desktop van Creative Cloud**.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/prpro1.png)
+
+Klik **installeren** op de kaart voor **Premiere Pro (Beta)** app.
+
+![ de Nieuwe Integratie van Adobe I/O ](./images/prpro2.png)
+
+## Frame.io-overdrachtapp
+
+Ga naar [ https://frame.io/transfer ](https://frame.io/transfer) en download de versie voor uw computer.
+
+![ Frame.io ](./images/frameio11.png)
 
 ## Visual Studio-code
 

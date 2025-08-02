@@ -3,9 +3,9 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,11 @@ In deze module gebruikt u Adobe GenStudio for Performance Marketing, een algemen
 
 [ 1.4 Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-In deze basismodule gebruikt u Adobe Express om afbeeldingen en video&#39;s te maken en deelt u deze elementen met het bredere Adobe Experience Cloud-ecosysteem.
+In deze module gebruikt u Adobe Express om afbeeldingen en video&#39;s te maken en deelt u deze elementen met het bredere Adobe Experience Cloud-ecosysteem.
+
+[ 1.5 stroomlijnt uw werkschema met Frame.io ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+In deze module gebruikt u Adobe Frame.io in combinatie met Adobe Premiere Pro voor het samenwerken en bekijken van afbeeldingen en video&#39;s.
 
 ### &#x200B;3. Beheer van bedrijfsmiddelen
 
@@ -185,6 +189,12 @@ In deze module stelt u uw eigen exemplaar van Google Cloud Platform in, laadt u 
 [2.1 Query-service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 In deze module leert u hoe u de Adobe Experience Platform Query Service kunt gebruiken.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+In deze module leert u hoe u Adobe Content Analytics kunt implementeren en gebruiken.
 
 ![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
