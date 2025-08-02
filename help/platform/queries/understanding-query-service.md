@@ -105,7 +105,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Voer Vragen met de Dienst van de Vraag in" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="Voer Vragen met de Dienst van de Vraag in"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470201?format=jpeg&nocache=1740415310683&captions=dut" alt="Voer Vragen met de Dienst van de Vraag in"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
