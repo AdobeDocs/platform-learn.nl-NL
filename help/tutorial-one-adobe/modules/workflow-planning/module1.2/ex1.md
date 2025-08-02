@@ -169,7 +169,7 @@ Daarna, selecteer het zesde gebied en klik opnieuw het **pictogram van het Schem
 
 ![ WF ](./images/wfbaem106.png)
 
-Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:task` in en selecteer dan de 1} Naam van de Taak van het gebied **.** Klik **Uitgezocht**.
+Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:task` in en selecteer dan de 1&rbrace; Naam van de Taak van het gebied **.** Klik **Uitgezocht**.
 
 ![ WF ](./images/wfbaem107.png)
 
