@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -23,17 +23,17 @@ In deze les leert u hoe u een gefedereerd publiek kunt gebruiken tijdens reizen 
 
 ### Een reis maken met een leespubliek
 
-1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
+1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3} knoop van de Reis {.**
 
    ![ creeer-a-reis ](assets/create-journey.png)
 
-2. Werk de eigenschappen van de Reis bij met een nieuwe naam: `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. Werk de eigenschappen van de Reis bij met een nieuwe naam: **`SecurFinancial - Home Loan Offer`**.
 
 3. Klik op **Orchestration**, dan belemmering en laat vallen de **Gelezen publiek** tegel aan het canvas.
 
 4. Klik op het **potloodpictogram** naast de doos van het Publiek op de rechterkant van het scherm.
 
-5. In de onderzoeksbar, onderzoek naar `SecureFinancial Customers - No Loans, Good Credit`, dan klik **sparen**.
+5. In de onderzoeksbar, onderzoek naar **`SecureFinancial Customers - No Loans, Good Credit`**, dan klik **sparen**.
 
    ![ creeer-a-reis ](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ In deze les leert u hoe u een gefedereerd publiek kunt gebruiken tijdens reizen 
 
 2. Op het rechterzijmenu, klik op **E-mailconfiguratie** en selecteer **EmailMarketing**. Dan klik op **geef inhoud** uit.
 
-3. Voeg in de onderwerpregel het volgende toe: `Learn more about SecurFinancial Home Loan` . Dan klik op **uitgeeft e-maillichaam**.
+3. Voeg in de onderwerpregel het volgende toe: **`Learn more about SecurFinancial Home Loan`** . Dan klik op **uitgeeft e-maillichaam**.
 
 4. Klik het **malplaatje van de Inhoud** knoop in de hoogste juiste hoek. Vind en selecteer `SecureFinancial Template`, dan klik **bevestigen**.
 
@@ -59,7 +59,7 @@ In deze les leert u hoe u een gefedereerd publiek kunt gebruiken tijdens reizen 
 
 6. Je bent nu in de e-mail-Designer. Beweeg over de `{profile.person.name.firstName}` macro en klik **verpersoonlijkingsavatar**.
 
-7. Blader in het venster Verpersoonlijken naar het volgende mappad: `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. Blader in het venster Verpersoonlijken naar het volgende mappad: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Klik in de **gelezen publiek** omslag. De verrijkingskenmerken van uw gefedereerde publiek kunt u hier vinden.
 
@@ -69,7 +69,7 @@ In deze les leert u hoe u een gefedereerd publiek kunt gebruiken tijdens reizen 
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+   ![ reis-e-mail-sparen ](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 

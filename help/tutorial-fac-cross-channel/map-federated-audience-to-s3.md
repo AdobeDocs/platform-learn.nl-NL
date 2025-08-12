@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ In deze oefening, zult u leren hoe te hefboomwerkings publieksattributen in uw g
 
 5. In de **Plannende** sectie, verlaat alle standaardmontages en klik **daarna**.
 
-6. In de **Afbeelding** stap, zorg ervoor het volgende inbegrepen en als **Sleutel van de Deduplicatie** geselecteerd is. Dan klik **daarna**:
-   - `xdm: personalEmail.address`
+6. In de **Afbeelding** stap, zorg ervoor `xdm: personalEmail.address` inbegrepen en geselecteerd als **Sleutel van de Deduplicatie** is. Dan klik **daarna**:
 
    ![ deduplicatie-sleutel ](assets/deduplication-key.png)
 

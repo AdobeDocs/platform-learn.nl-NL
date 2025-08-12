@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -26,19 +26,21 @@ Deze oefening leidt u door het creëren van een publiek van uw Data Warehouse ge
 
    ![ creeer-samenstelling ](assets/create-composition.png)
 
-3. Label uw compositie als `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Klik **creëren**.
+3. Label uw compositie als `SecurFinancial Customers - No Loans, Good Credit`. Klik **creëren**.
 
 4. Klik **+** knoop in het canvas en selecteer **het publiek van de Bouwstijl**. De rechterspoorlijn moet worden weergegeven.
 
 5. Klik **Uitgezocht een schema** en selecteer het **FSI_CRM** schema, dan klik **bevestigen**.
 
 6. Klik **verdergaan**. In het venster van de vraagbouwer, klik **+** knoop en dan **de Voorwaarde van de Douane**. Maak de volgende voorwaarden:
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - We gebruiken voorkeursgegevens voor marketing om klanten te segmenteren die voor e-mail hebben gekozen als hun voorkeurscommunicatiekanaal:
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
+
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *de laatste voorwaarde verzekert marketing voorkeursgegevens worden gebruikt om klanten te segmenteren die voor e-mail als hun aangewezen kanaal van mededeling* hebben gekozen.
 
    **Nota:** het waardegebied is case-sensitive.
 
@@ -46,16 +48,16 @@ Deze oefening leidt u door het creëren van een publiek van uw Data Warehouse ge
 
    ![ vraag-bouwer ](assets/query-builder.png)
 
-7. Klik volgende **+** knoop, dan klik **sparen publiek**.
-
-   Label deze stap als `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Gebruik dezelfde waarde als het label voor het publiek.
+7. Klik volgende **+** knoop, dan klik **sparen publiek**. Label deze stap als `SecurFinancial Customers - No Loans, Good Credit`. Gebruik dezelfde waarde als het label voor het publiek.
 
 8. Voeg de volgende publieksafbeeldingen toe:
+
    - **het Gebied van het publiek van Source:** EMAIL
    - **het Gebied van het publiek van Source:** CURRENTPRODUCTS
    - **het Gebied van het publiek van Source:** EERSTE NAAM
 
 9. Selecteer de primaire identiteit en naamruimte die voor profielen moeten worden gebruikt:
+
    - **Primair identiteitsgebied:** E-mail
    - **Identiteitsnaamruimte:** E-mail
 
@@ -63,6 +65,6 @@ Deze oefening leidt u door het creëren van een publiek van uw Data Warehouse ge
 
 **Nota:** wij gebruikten product en kredietinformatie om ons publiek te bouwen dat geen gevoelige gegevens, zoals creditscore, aan stroomafwaartse platforms voor activering verplaatste.
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nu ons gefedereerd publiek is gecreeerd, zullen wij met [ voorwaartse afbeelding het aan een S3 rekening ](map-federated-audience-to-s3.md) bewegen.
