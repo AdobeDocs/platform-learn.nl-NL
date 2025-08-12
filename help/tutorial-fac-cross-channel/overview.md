@@ -66,4 +66,4 @@ Deze zelfstudie is gestructureerd voor technische gebruikers. De lessen bouwen o
 - **de Milieu&#39;s van Sandbox**: Creeer een zandbak in de instantie van Real-Time CDP van uw organisatie veilig experimenteren zonder productiegegevens te beïnvloeden.
 - **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund wolkenpakhuis ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
 
-Begin met de [ 1} les van de Verbinding van Data Warehouse {beginnen uw milieu te vormen.](data-warehouse-connection.md)
+Begin met de [ 1&rbrace; les van de Verbinding van Data Warehouse &lbrace;beginnen uw milieu te vormen.](data-warehouse-connection.md)
