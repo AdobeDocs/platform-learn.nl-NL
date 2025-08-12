@@ -63,6 +63,6 @@ Deze oefening leidt u door het creëren van een publiek van uw Data Warehouse ge
 
 **Nota:** wij gebruikten product en kredietinformatie om ons publiek te bouwen dat geen gevoelige gegevens, zoals creditscore, aan stroomafwaartse platforms voor activering verplaatste.
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nu ons gefedereerd publiek is gecreeerd, zullen wij met [ voorwaartse afbeelding het aan een S3 rekening ](map-federated-audience-to-s3.md) bewegen.

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In deze les, vormen wij een verbinding tussen Adobe Experience Platform en uw onderneming Data Warehouse om Federated Audience Composition toe te laten. Dit staat u toe om gegevens van gesteunde pakhuizen zonder replicatie direct te vragen. Daarnaast maken we schema&#39;s en gegevensmodellen op basis van de Data Warehouse-tabellen.
 
-Voor dit laboratorium, verbinden wij met een rekening van Snowflake. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het wolkenpakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Voor dit laboratorium, verbinden wij met een rekening van Snowflake. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het wolkenpakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 
 ## Stappen
