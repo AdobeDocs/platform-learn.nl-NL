@@ -65,6 +65,6 @@ Vervolgens begeleiden we u door een publiek te maken vanuit onze Data Warehouse 
 >
 > In dit voorbeeld werd product- en kredietinformatie gebruikt om ons publiek te maken via directe toegang tot bedrijfsgegevens van Snowflake, zonder een kopie ervan te maken Adobe Experience Platform. Nadat het externe systeem de query heeft verwerkt, worden alleen de relevante e-mail, huidige producten en voornaamwaarden naar de publieksdefinitie overgebracht voor downstreamactivering. Dit geldt voor alle bestemmingen die RTCDP ondersteunt.
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nu ons gefedereerde publiek is gecreeerd, zullen wij [ het aan een S3 rekening ](map-federated-audience-to-s3.md) in kaart brengen.
