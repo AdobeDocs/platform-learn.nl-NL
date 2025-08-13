@@ -2,29 +2,30 @@
 title: Conclusie
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Conclusie
-description: In deze les vatten we de lessen en belangrijke overgangen samen.
+description: Tot slot vatten we de lessen en belangrijke overgangen samen.
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
-
 
 # Conclusie
 
 Experience Platform Federated Audience Composition biedt nieuwe paden en uitgebreide toegang om publiek te maken van bedrijfsgegevensopslagplaatsen tot de kracht van merkgestarte en actuele ervaringen.
 
-Deze zelfstudie gaf een praktische introductie van Federated Audience Composition in Adobe Experience Platform. U hebt geleerd hoe te:
+Deze visuele gids is een inleiding aan Federated Audience Composition in Adobe Experience Platform. U hebt geleerd hoe te:
 
-- Verbind een gegevenspakhuis met Adobe Experience Platform.
-- Creeer en verrijk publiek gebruikend pakhuisgegevens zonder replicatie.
-- Exporteer het publiek naar Amazon S3 voor downstreamgebruik.
-- Aangepaste klantritten maken met een gefederaliseerd publiek.
-- Verrijk het Experience Platform-publiek met gefedereerde gegevens.
+- Verbind Adobe Experience Platform met een bedrijfs gegevenspakhuis.
+- Creeer en beheer publiek gebruikend Federated de Samenstelling van het Publiek.
+- Wijs een publiek met een federatie toe aan externe bestemmingen zoals Amazon S3.
+- Verrijk bestaande doelgroepen met gefederaliseerde gegevens.
+- Maak een publiek dat de personalisatie &quot;in-the-moment&quot; aanstuurt.
+- Bouw klantritten gebruikend gefederaliseerde publieksgegevens.
 
 ## Key Takeaways
 
