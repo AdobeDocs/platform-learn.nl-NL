@@ -25,7 +25,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 ### Een reis maken met een leespubliek
 
-1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3} knoop van de Reis {.**
+1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
 
    ![ creeer-a-reis ](assets/create-journey.png)
 
@@ -71,7 +71,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-   ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 
