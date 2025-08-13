@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Overzicht
 
-Federated Audience Composition is een krachtige functie die beschikbaar is voor Adobe Real-Time Customer Data Platform- (Real-Time CDP) en Adobe Journey Optimizer-omgevingen. Het laat gegevensarchitecten en gegevensingenieurs toe om publiek van [ gesteund ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} derdegegevenspakhuizen direct te bouwen en te verrijken zonder gegevens in Adobe Experience Platform te herhalen. Dit leerprogramma verstrekt hands-on begeleiding voor technische gebruikers om de pakhuizen van ondernemingsgegevens te verbinden, publiek tot stand te brengen en te verrijken, en hen voor gepersonaliseerde marketing ervaringen te activeren.
+Federated Audience Composition is een krachtige functie die beschikbaar is voor Adobe Real-Time Customer Data Platform- (Real-Time CDP) en Adobe Journey Optimizer-omgevingen. Het laat gegevensarchitecten en gegevensingenieurs toe om publiek van [ gesteund ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} derdegegevenspakhuizen direct te bouwen en te verrijken zonder gegevens in Adobe Experience Platform te herhalen. Dit leerprogramma verstrekt hands-on begeleiding voor technische gebruikers om de pakhuizen van ondernemingsgegevens te verbinden, publiek tot stand te brengen en te verrijken, en hen voor gepersonaliseerde marketing ervaringen te activeren.
 
 ## Visuele hulplijn
 
@@ -51,10 +51,10 @@ Als u vergelijkbare activiteiten wilt uitvoeren in uw omgeving, moet u ervoor zo
 
 - Toegang tot een Adobe Experience Platform-account die is ingericht voor Real-Time CDP of Journey Optimizer.
 - De toestemmingen van de Beheerder van het systeem of de capaciteit hebben gevormd toestemmingen.
-- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
+- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
 - Toegang tot een ondersteund bedrijfsgegevenspakhuis (bijvoorbeeld Amazon Redshift, Azure Synapse Analytics, Snowflake of Google BigQuery).
 - Basiskennis van SQL voor het vragen van gegevenspakhuizen.
 - **de Milieu&#39;s van Sandbox**: Creeer een zandbak in de instantie van Real-Time CDP van uw organisatie veilig experimenteren zonder productiegegevens te beïnvloeden.
-- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund wolkenpakhuis ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
+- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund wolkenpakhuis ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
 
 Laten wij met de [ Verbinding van Data Warehouse ](data-warehouse-connection.md) beginnen.
