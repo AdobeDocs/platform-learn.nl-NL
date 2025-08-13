@@ -6,9 +6,8 @@ description: In deze visuele oefening wordt een gefedereerd publiek gebruikt in 
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -25,7 +24,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 ### Een reis maken met een leespubliek
 
-1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
+1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3} knoop van de Reis {.**
 
    ![ creeer-a-reis ](assets/create-journey.png)
 
@@ -71,7 +70,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+   ![ reis-e-mail-sparen ](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 

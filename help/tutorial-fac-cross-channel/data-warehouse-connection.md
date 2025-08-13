@@ -6,9 +6,8 @@ description: In deze visuele oefening, vormen wij een verbinding tussen Adobe Ex
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
-hide: true
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 Wij beginnen door een verbinding tussen Adobe Experience Platform en uw onderneming Data Warehouse te vormen om Federated Audience Composition toe te laten. Dit staat u toe om gegevens van gesteunde pakhuizen zonder replicatie direct te vragen. Daarnaast maken we schema&#39;s en gegevensmodellen op basis van de Data Warehouse-tabellen.
 
-We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het wolkenpakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het wolkenpakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Stappen
 
