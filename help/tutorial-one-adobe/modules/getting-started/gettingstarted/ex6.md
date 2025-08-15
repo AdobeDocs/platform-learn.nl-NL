@@ -4,9 +4,9 @@ description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
+source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ Dan moet je dit zien. Selecteer **+ toevoegen aan Project** en kies **API**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png)
 
-Het scherm moet er zo uitzien.
-
-![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png)
-
 Selecteer **Adobe Firefly Services** en kies **Firefly - Firefly Services**, dan selecteer **daarna**.
 
 ![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png)
@@ -67,7 +63,7 @@ Dan moet je dit zien.
 >
 >Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Photoshop Services API. U zult slechts toegang tot Photoshop Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
 >
->Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
+Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
 ![ Azure Opslag ](./images/ps2.png)
 
