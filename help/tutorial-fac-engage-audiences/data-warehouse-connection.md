@@ -18,7 +18,7 @@ ht-degree: 0%
 
 We beginnen met het configureren van een verbinding tussen Adobe Experience Platform en uw Enterprise Data Warehouse. Wij gebruiken schema&#39;s en gegevensmodellen die op hoe de gegevens in Data Warehouse worden gebaseerd om vraagbouw te steunen.
 
-We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Stappen
 

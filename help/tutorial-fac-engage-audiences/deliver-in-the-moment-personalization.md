@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Lever &#39;op het moment&#39; personalisatie met Edge Network
 
-De Federatieve Samenstelling van het Publiek laat u toe om bestaand publiek in Adobe Experience Platform (AEP) te verrijken door samengestelde publieksgegevens te gebruiken die van het entrepot van ondernemingsgegevens zijn gefederaliseerd. Dit gegeven zal niet in Adobe Experience Platform worden voortgeduurd maar u kunt de [ gebeurtenis gebruiken die ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} mogelijkheden door:sturen om deze gegevens naar uw gegevenspakhuis te verzenden.
+De Federatieve Samenstelling van het Publiek laat u toe om bestaand publiek in Adobe Experience Platform (AEP) te verrijken door samengestelde publieksgegevens te gebruiken die van het entrepot van ondernemingsgegevens zijn gefederaliseerd. Dit gegeven zal niet in Adobe Experience Platform worden voortgeduurd maar u kunt de [ gebeurtenis gebruiken die ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} mogelijkheden door:sturen om deze gegevens naar uw gegevenspakhuis te verzenden.
 
 In deze oefening, gebruiken wij een gefedereerd publiek dat met kredietscore en leningsactiviteit wordt gevraagd om het gedragspubliek van de bezoekers van de de toepassingswebpagina van de lening te verrijken.
 
