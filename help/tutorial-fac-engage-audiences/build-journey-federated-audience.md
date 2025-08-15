@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 ### Een reis maken met een leespubliek
 
-1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
+1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3} knoop van de Reis {.**
 
    ![ creeer-a-reis ](assets/create-journey.png)
 
@@ -70,7 +70,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+   ![ reis-e-mail-sparen ](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 
@@ -78,4 +78,4 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 We creëerden een reis in AJO met behulp van een gefederaliseerd publiek en gefederaliseerde verrijkingskenmerken.
 
-Nu zullen wij bekijken hoe te [ bestaande publiek ](federated-audience-composition.md) in Experience Platform met gefederaliseerde gegevens van het gegevenspakhuis verrijken.
+Nu zullen wij bekijken hoe te [ een publiek ](federated-audience-composition.md) in Experience Platform met gegevens van het gegevenspakhuis verrijken.

@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 We beginnen met het configureren van een verbinding tussen Adobe Experience Platform en uw Enterprise Data Warehouse. Wij gebruiken schema&#39;s en gegevensmodellen die op hoe de gegevens in Data Warehouse worden gebaseerd om vraagbouw te steunen.
 
-We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Stappen
 
@@ -78,4 +78,4 @@ Hieronder ziet u een voorbeeld van de koppeling die u hebt gemaakt op basis van 
 
 ![ voorproef-gegeven-model ](assets/preview-data-model.png)
 
-Nu, zijn wij bereid om [ tot stand te brengen en publiek ](create-a-federated-audience.md).
+Nu, zijn wij bereid om [ tot een Federated Publiek ](create-a-federated-audience.md) te leiden.
