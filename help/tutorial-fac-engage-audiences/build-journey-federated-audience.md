@@ -1,13 +1,13 @@
 ---
 title: Een reis maken met een federaal publiek
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Een reis maken met een federaal publiek
 description: In deze oefening wordt een gefedereerd publiek gebruikt in een Journey Optimizer reis.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 Federaal publiek kan worden gebruikt voor reizen binnen Adobe Journey Optimizer (AJO). Dit omvat het gebruiken van vragen attributen van de Federatieve Samenstelling van het Publiek om overseinen te personaliseren.
 
-Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kwestie van het verpersoonlijkingsgebruik opnieuw richt, organiseren wij een reis voor pre-gekwalificeerde klanten. Het doel is om een gepersonaliseerde e-mail te verzenden die op attributen wordt gebaseerd die van de Data Warehouse van SecurFinancial worden gefedereerd.
+Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kwestie van het verpersoonlijkingsgebruik opnieuw richt, organiseren wij een reis voor pre-gekwalificeerde klanten. Het doel is een gepersonaliseerde e-mail te verzenden die op attributen wordt gebaseerd van het gegevenspakhuis van SecurFinancial worden gefedereerd.
 
 ## Stappen
 
 ### Een reis maken met een leespubliek
 
-1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
+1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3} knoop van de Reis {.**
 
    ![ creeer-a-reis ](assets/create-journey.png)
 
@@ -70,7 +70,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+   ![ reis-e-mail-sparen ](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 

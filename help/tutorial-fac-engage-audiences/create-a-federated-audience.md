@@ -1,22 +1,22 @@
 ---
 title: Een gefederaliseerd publiek maken
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Een gefederaliseerd publiek maken
-description: In deze oefening, vormen wij een verbinding tussen Adobe Experience Platform en uw onderneming Data Warehouse om Federated Audience Composition toe te laten.
+description: In deze oefening, creëren wij een publiek van het gegevenspakhuis van Snowflake gebruikend de Samenstelling van de Federatieve Publiek.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # Een federaal publiek maken
 
-Vervolgens begeleiden we u door een publiek te maken vanuit onze Data Warehouse met Federated Audience Composition. Het publiek bestaat uit SecurFinancial-klanten met een kredietscore van 650 of hoger en die momenteel geen lening in hun SecurFinancial-portefeuille hebben.
+Daarna, begeleiden wij u door het creëren van een publiek van het gegevenspakhuis van Snowflake gebruikend de Samenstelling van de Federatieve Publiek. Het publiek bestaat uit SecurFinancial-klanten met een kredietscore van 650 of hoger en die momenteel geen lening in hun SecurFinancial-portefeuille hebben.
 
 ## Stappen
 
@@ -64,6 +64,6 @@ Vervolgens begeleiden we u door een publiek te maken vanuit onze Data Warehouse 
 >
 > In dit voorbeeld werd product- en kredietinformatie gebruikt om ons publiek te maken via directe toegang tot bedrijfsgegevens van Snowflake, zonder een kopie ervan te maken Adobe Experience Platform. Nadat het externe systeem de query heeft verwerkt, worden alleen de relevante e-mail, huidige producten en voornaamwaarden naar de publieksdefinitie overgebracht voor downstreamactivering. Dit geldt voor alle bestemmingen die RTCDP ondersteunt.
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nu ons gefedereerde publiek is gecreeerd, zullen wij [ het aan een S3 rekening ](map-federated-audience-to-s3.md) in kaart brengen.

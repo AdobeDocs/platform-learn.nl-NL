@@ -1,12 +1,13 @@
 ---
 title: Federated Audience Composition High-level Architecture & Flow
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Federated Audience Composition High-level Architecture & Flow
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Federated Audience Composition-architectuur op hoog niveau en -stroom
 description: Overzicht van de architectuur op hoog niveau en stroom van Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
+source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Federated Audience Composition High-level Architecture &amp; Flow
+# Federated Audience Composition-architectuur op hoog niveau en -stroom
 
 Alvorens wij in de stappen duiken voor het steunen van het bedrijfsscenario voor SecurFinancial, zullen wij de architectuur en de stroom op hoog niveau voor deze composable CDP benadering herzien.
 
@@ -27,4 +28,3 @@ Het staat ondernemingen toe om informatie snel te verwerken die in één of meer
 ![ fac-architectuur ](assets/fac-architecture.png)
 
 Nu zullen wij zich op het creëren van de Verbinding van a [ Data Warehouse ](data-warehouse-connection.md) bewegen.
-

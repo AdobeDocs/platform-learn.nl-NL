@@ -1,20 +1,20 @@
 ---
-title: Wijs een gefederaliseerd publiek aan S3 toe
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Wijs een gefederaliseerd publiek aan S3 toe
+title: Wijs een Federale Publiek aan een S3 Bestemming toe
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Wijs een Federaal publiek aan S3 toe
 description: In deze oefening, zullen wij een federated publiek aan een stroomafwaartse bestemming van Real-Time CDP in kaart brengen om een gepersonaliseerde off-line ervaring te steunen.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Wijs Federale Publiek aan S3 aan de Attributen van het Publiek van de Hefboomwerking voor Verrijking toe
+# Wijs een Federaal publiek aan een S3 bestemming aan hefboompublieksattributen voor verrijking toe
 
 U kunt publieksattributen in uw gegevenspakhuis hefboomwerking om de ervaring van uw publiek in stroomafwaartse activeringswerkschema&#39;s te verrijken gebruikend de bestemmingen van RTCDP. Voor SecurFinancial, kunnen deze gefederaliseerde attributen worden gebruikt om de het verpersoonlijkingservaring van het klantenpubliek offline te verbeteren. Hieronder wordt het gefedereerde publiek toegewezen aan een vooraf geconfigureerde Amazon S3-bestemming.
 
@@ -50,6 +50,6 @@ U kunt publieksattributen in uw gegevenspakhuis hefboomwerking om de ervaring va
 
 >[**!SUMMARY**]
 >
-> We hebben met succes een publiek gemaakt en het geactiveerd naar een S3-bestemming. Met de gebruikersvriendelijke interface kunnen marketingteams snel een publiek maken en activeren zonder onderliggende gegevens te verplaatsen.
+> We hebben met succes een publiek gemaakt en het geactiveerd naar een S3-bestemming. Elke andere oplossing kan dit publiek oppakken en onmiddellijk gebruiken. Met de gebruikersvriendelijke interface kunnen marketingteams snel een publiek maken en activeren zonder onderliggende gegevens te verplaatsen. Klanten die deze aanpak volgen, hebben in ongeveer een maand LIVE voor het eerst gebruikt.
 
 Nu zullen wij [ een reis ](build-journey-federated-audience.md) bouwen.
