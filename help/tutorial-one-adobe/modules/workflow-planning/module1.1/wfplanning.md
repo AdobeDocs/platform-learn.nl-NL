@@ -3,22 +3,31 @@ title: Adobe Workfront Planning
 description: Adobe Workfront Planning
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
 # 1.1 Adobe Workfront-planning
 
+Deze oefening zal u door de fundamentele aspecten van de Planning van Workfront begeleiden, met inbegrip van het creëren van werkruimten, het bepalen van verslagtypes, het beheren van verslagen, en het gebruiken van de Medewerker AI voor gestroomlijnde verrichtingen. Het uitvoeren van dit laboratorium zal u leren kennen met deze krachtige oplossing en zal u een uitgangspunt geven om de mogelijkheden verder weg te onderzoeken.
+
 ## Leerdoelen
 
-- Leer hoe u Adobe Workfront Planning kunt gebruiken.
+Na de voltooiing van dit laboratorium, zult u vertrouwd met de volgende punten worden:
+
+- Begrijp de kerncomponenten van de Planning van Workfront: Werkruimten, de Types van Verslag, en Verslagen.
+- Maak een nieuwe Workspace die is afgestemd op een specifieke levenscyclus.
+- Definieer recordtypen en pas deze aan in de Workspace.
+- Records beheren, waaronder het maken, bijwerken en verwijderen van gegevens.
+- Gebruik de AI Assistant om handelingen efficiënt uit te voeren.
 
 ## Vereisten
 
-- Toegang tot Workfront Planning.
+- Toegang tot Adobe Workfront-account met het Workfront Planning Package.
 
 ## Uitoefening
 

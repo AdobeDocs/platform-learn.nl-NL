@@ -4,9 +4,9 @@ description: Aan de slag met Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Klik om het pas gecreëerde **BedrijfsEenheid** verslagtype te openen.
 
 ![ Planning van Workfront ](./images/wfpl10.png)
 
-Er wordt nu een lege tabelweergave weergegeven, omdat er voor het nieuwe recordtype nog geen veld is gedefinieerd.
+Er wordt nu een lege tabelweergave weergegeven, omdat er voor het nieuwe recordtype nog geen records van de Business Unit zijn gedefinieerd.
 
 ![ Planning van Workfront ](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Klik **sparen**.
 
 ![ Planning van Workfront ](./images/wfpl17.png)
 
-U hebt nu een nieuw recordtype gemaakt en u hebt zowel velden verwijderd als velden gemaakt. Ga terug naar het Workspace-overzichtsscherm door op de pijl in de linkerbovenhoek te klikken.
+Klik de 3 punten **...** op het eerste verslag en selecteer **Mening**.
+
+![ Planning van Workfront ](./images/wfpla1.png)
+
+Plaats de **Naam** aan `Consumer Services`.
+
+Plaats de **Beschrijving** aan `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Plaats de **Lood van de BedrijfsEenheid** aan zich.
+
+Klik eenmaal op de pijl om terug te gaan naar het vorige scherm.
+
+![ Planning van Workfront ](./images/wfpla2.png)
+
+Klik de 3 punten **...** op het tweede verslag en selecteer **Mening**.
+
+![ Planning van Workfront ](./images/wfpla3.png)
+
+Plaats de **Naam** aan `Enterprise & Business Solutions`
+
+Plaats de **Beschrijving** aan `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Plaats de **Lood van de BedrijfsEenheid** aan zich.
+
+Klik eenmaal op de pijl om terug te gaan naar het vorige scherm.
+
+![ Planning van Workfront ](./images/wfpla4.png)
+
+Klik de 3 punten **...** op het derde verslag en selecteer **Mening**.
+
+![ Planning van Workfront ](./images/wfpla5.png)
+
+Plaats de **Naam** aan `Sales & Marketing`
+
+Plaats de **Beschrijving** aan `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Plaats de **Lood van de BedrijfsEenheid** aan zich.
+
+Klik eenmaal op de pijl om terug te gaan naar het vorige scherm.
+
+![ Planning van Workfront ](./images/wfpla6.png)
+
+U hebt nu een nieuw recordtype gemaakt, u hebt zowel velden verwijderd als gemaakt en u hebt drie bedrijfseenheden gemaakt. Ga terug naar het Workspace-overzichtsscherm door op de pijl in de linkerbovenhoek te klikken.
 
 ![ Planning van Workfront ](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Klik om **Campagnes** te openen.
 
 ![ Planning van Workfront ](./images/wfpl20.png)
 
-Klik op het pictogram **+** om een nieuw veld te maken. Selecteer **Nieuwe verbinding** en selecteer dan **Personas**.
+Klik op het pictogram **+** om een nieuw veld te maken. Selecteer **Nieuwe verbinding** en selecteer dan **BedrijfsEenheid**.
 
 ![ Planning van Workfront ](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Op het het overzichtsscherm van Campagnes, klik de 3 punten **...** en selecteer
 
 ![ Planning van Workfront ](./images/wfpl25.png)
 
-Wijzig de naam in `Campaign Request Form` . Klik **sparen**.
+Wijzig de naam in `Campaign Request Form` . Klik **creëren**.
 
 ![ Planning van Workfront ](./images/wfpl26.png)
 
@@ -187,6 +229,8 @@ Plaats de **samenvatting van de Campagne** aan:
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
 
+Vul de overige velden naar wens in.
+
 Klik **voorleggen verzoek**.
 
 ![ Planning van Workfront ](./images/wfpl33.png)
@@ -195,7 +239,7 @@ Klik **X** om popup te sluiten.
 
 ![ Planning van Workfront ](./images/wfpl34.png)
 
-Dan zie je de nieuwe campagne in het overzicht.
+Dan zou u de nieuw gecreëerde campagne in het overzicht moeten zien.
 
 ![ Planning van Workfront ](./images/wfpl35.png)
 
@@ -297,19 +341,15 @@ Na een paar seconden ziet u een bevestiging dat de automatisering met succes is 
 
 ![ Planning van Workfront ](./images/wfpl47.png)
 
-Om het Programma in Workfront te controleren, open het menu en klik **Portfolio&#39;s**.
+Om het Programma in Workfront te controleren, scrol aan het recht en klik het programma in de **Verbonden kolom van het Programma**.
 
 ![ Planning van Workfront ](./images/wfpl48.png)
 
-Open uw portfolio met de naam `--aepUserLdap-- - Marketing` .
-
-![ Planning van Workfront ](./images/wfpl49.png)
-
-Ga naar **Programma&#39;s** en u zou dan het programma moeten zien dat enkel door de automatisering werd gecreeerd u vormde.
+U zou dan het programma moeten zien dat enkel door de automatisering werd gecreeerd u vormde.
 
 ![ Planning van Workfront ](./images/wfpl50.png)
 
-Volgende Stap: [ 1.2.2 TBD ](./ex1.md){target="_blank"}
+Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md){target="_blank"}
 
 Ga terug naar [ Inleiding aan de Planning van Workfront ](./wfplanning.md){target="_blank"}
 
