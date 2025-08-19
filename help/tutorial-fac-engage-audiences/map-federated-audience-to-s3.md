@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ U kunt publieksattributen in uw gegevenspakhuis hefboomwerking om de ervaring va
 
 8. Herzie uw publiekstoewijzing en slag **Afwerking**.
 
->[**!SUMMARY**]
->
-> We hebben met succes een publiek gemaakt en het geactiveerd naar een S3-bestemming. Elke andere oplossing kan dit publiek oppakken en onmiddellijk gebruiken. Met de gebruikersvriendelijke interface kunnen marketingteams snel een publiek maken en activeren zonder onderliggende gegevens te verplaatsen. Klanten die deze aanpak volgen, zijn in ongeveer een maand LIVE gaan met hun eerste gebruiksgeval.
+### OVERZICHT
+
+We hebben met succes een publiek gemaakt en het geactiveerd naar een S3-bestemming. Elke andere oplossing kan dit publiek oppakken en onmiddellijk gebruiken. Met de gebruikersvriendelijke interface kunnen marketingteams snel een publiek maken en activeren zonder onderliggende gegevens te verplaatsen. Klanten die deze aanpak volgen, zijn in ongeveer een maand LIVE gaan met hun eerste gebruiksgeval.
 
 
 Nu zullen wij [ een reis ](build-journey-federated-audience.md) bouwen.

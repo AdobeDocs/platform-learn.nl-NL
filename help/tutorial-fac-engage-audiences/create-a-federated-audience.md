@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -60,10 +60,10 @@ Daarna, begeleiden wij u door het creëren van een publiek van het gegevenspakhu
 
 10. Klik **sparen** en klik dan **Begin** om de vraag van de samenstelling in werking te stellen.
 
->[**SAMENVATTING**]
->
-> In dit voorbeeld werd product- en kredietinformatie gebruikt om ons publiek te maken via directe toegang tot bedrijfsgegevens van Snowflake, zonder een kopie ervan te maken Adobe Experience Platform. Nadat het externe systeem de query heeft verwerkt, worden alleen de relevante e-mail, huidige producten en voornaamwaarden naar de publieksdefinitie overgebracht voor downstreamactivering. Dit geldt voor alle bestemmingen die RTCDP ondersteunt.
+### OVERZICHT
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+In dit voorbeeld werd product- en kredietinformatie gebruikt om ons publiek te maken via directe toegang tot bedrijfsgegevens van Snowflake, zonder een kopie ervan te maken Adobe Experience Platform. Nadat het externe systeem de query heeft verwerkt, worden alleen de relevante e-mail, huidige producten en voornaamwaarden naar de publieksdefinitie overgebracht voor downstreamactivering. Dit geldt voor alle bestemmingen die RTCDP ondersteunt.
+
+Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Nu ons gefedereerde publiek is gecreeerd, zullen wij [ het aan een S3 bestemming in Experience Platform ](map-federated-audience-to-s3.md) in kaart brengen.
