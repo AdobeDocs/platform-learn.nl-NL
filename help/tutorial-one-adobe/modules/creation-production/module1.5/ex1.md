@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -114,37 +115,9 @@ Nadat de nieuwe map is geüpload, wordt deze beschikbaar in Frame.io.
 
 ![ Frame.io ](./images/frameio21.png)
 
-## 1.5.1.3 Adobe Premiere Pro Beta instellen
-
-U hebt Adobe Premiere Pro Beta al geïnstalleerd als onderdeel van de module Aan de slag. Als u Frame.io in combinatie met Adobe Premiere Pro Beta wilt gebruiken, kunt u ons de plug-in maken die voor deze integratie is ontwikkeld.
-
-Open de Creative Cloud-toepassing en zoek naar `frame.io` .
-
-![ Frame.io ](./images/frameio23.png)
-
-De rol neer in de onderzoeksresultaten om de stop te vinden **Frame.io V4 Commentaren**. Klik erop.
-
-![ Frame.io ](./images/frameio24.png)
-
-Dan moet je dit zien. Klik **installeren**.
-
-![ Frame.io ](./images/frameio25.png)
-
-Als Adobe Premiere Pro Beta open is, zult u **dicht** het moeten eerst sluiten alvorens u de stop kunt installeren.
-
-![ Frame.io ](./images/frameio26.png)
-
-Klik **OK**. De plug-in wordt nu geïnstalleerd.
-
-![ Frame.io ](./images/frameio27.png)
-
-Als de plug-in is geïnstalleerd, opent u Adobe Premiere Pro Beta op uw computer.
-
-![ Frame.io ](./images/frameio22.png)
-
 ## Volgende stappen
 
-Ga naar [ - ](./ex1.md){target="_blank"}
+Ga naar [ 1.5.2 Goedkeuringen met Frame.io ](./ex2.md){target="_blank"}
 
 Ga terug naar [ stroomlijn uw werkschema met Frame.io ](./frameio.md){target="_blank"}
 

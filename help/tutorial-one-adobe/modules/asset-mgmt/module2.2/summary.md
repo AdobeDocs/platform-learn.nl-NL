@@ -3,10 +3,9 @@ title: Samenvatting en voordelen
 description: Samenvatting en voordelen
 kt: 5342
 doc-type: tutorial
-exl-id: a465768c-349a-4671-99ef-d7a2f8bd8292
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '24'
+source-wordcount: '23'
 ht-degree: 4%
 
 ---
@@ -21,6 +20,6 @@ Gefeliciteerd...
 
 ## Bekijk dit
 
-Ga terug naar [ Beheer van het Werkschema met Adobe Workfront ](./workfront.md){target="_blank"}
+Ga terug naar [ Adobe Experience Manager Assets ](./aemassets.md){target="_blank"}
 
 [Terug naar alle modules](../../../overview.md)

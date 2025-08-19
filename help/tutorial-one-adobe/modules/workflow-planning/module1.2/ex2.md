@@ -4,7 +4,7 @@ description: Proofing met Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Dan moet je dit zien.
 
 Als onderdeel van deze taak moet u een nieuwe afbeelding maken en deze vervolgens als document uploaden in Workfront. U gaat dat middel nu zelf maken met Adobe Express.
 
-## 1.2.2.5 Asset maken met Adobe Firely Services en Adobe Express
+## 1.2.2.5 Asset maken met Adobe Firefly Services en Adobe Express
 
 Ga naar [ https://firefly.adobe.com/ ](https://firefly.adobe.com/){target="_blank"}. Ga de herinnering `a neon rabbit running very fast through space` in en klik **produceert**.
 
@@ -362,7 +362,7 @@ Selecteer **Goedgekeurd** en klik **besluit** opnieuw maken.
 
 ![ WF ](./images/wfp32a.png)
 
-Sluit **vergelijkt de 1&rbrace; mening van Bewijzen &lbrace;door de linkerversie van het beeld te sluiten.** Klik de **Naam van de Taak** terug naar het overzicht van de Taak.
+Sluit **vergelijkt de 1} mening van Bewijzen {door de linkerversie van het beeld te sluiten.** Klik de **Naam van de Taak** terug naar het overzicht van de Taak.
 
 ![ WF ](./images/wfp33.png)
 

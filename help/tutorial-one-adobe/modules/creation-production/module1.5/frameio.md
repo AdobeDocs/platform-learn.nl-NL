@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 1%
+source-wordcount: '126'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +26,14 @@ ht-degree: 1%
 [ 1.5.1 die met Frame.io ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, ontdek Frame.io en krijg een inzicht in zijn mogelijkheden.
+
+[ 1.5.2 goedkeurt met Frame.io ](./ex2.md){target="_blank"}
+
+In deze oefening, zult u door een standaardgoedkeuringsstroom met Frame.io gaan.
+
+[ 1.5.3 Frame.io en Premiere Pro ](./ex3.md){target="_blank"}
+
+In deze oefening, zult u de integratie tussen Frame.io en Adobe Premiere Pro ontdekken.
 
 [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Klik **Mening en los kwesties** op.
 
 ![ GSPeM ](./images/gsemail9.png)
 
-U kunt dan meer details zien over wat u kunt doen om de ingewikkeldheidsscore te optimaliseren.
+U kunt dan meer details zien over wat u kunt doen om de compliancescore te optimaliseren.
 
 ![ GSPeM ](./images/gsemail10.png)
 
@@ -118,7 +118,7 @@ Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://e
 
 ![ ACOP ](./../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
+U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
 
 ![ ACOP ](./../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 

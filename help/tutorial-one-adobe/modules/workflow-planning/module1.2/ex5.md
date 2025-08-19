@@ -3,16 +3,17 @@ title: Photoshop + Workfront-insteekmodule instellen
 description: Photoshop + Workfront-insteekmodule instellen
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
-# 2.2.5 Photoshop instellen + Workfront-plug-in
+# 1.2.5 Photoshop instellen + Workfront-plug-in
 
-## 2.2.5.1 Workfront for Photoshop-plug-in installeren
+## 1.2.5.1 Workfront for Photoshop-plug-in installeren
 
 Installeer de Creative Cloud-toepassing op uw computer om de integratie tussen Workfront en Photoshop in te stellen. Meld u aan met uw Adobe ID.
 
@@ -42,7 +43,7 @@ Dan zie je dit.
 
 ![ WF ](./images/wf7.png)
 
-## 2.2.5.2 De insteekmodule configureren in Photoshop
+## 1.2.5.2 De insteekmodule configureren in Photoshop
 
 Open Photoshop. In de bar van de Taak, ga **Insteekmodules** > **Workfront voor Adobe Photoshop** > klik **Adobe Workfront**.
 
