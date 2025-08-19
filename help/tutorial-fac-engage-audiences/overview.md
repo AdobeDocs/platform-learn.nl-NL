@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Neem rechtstreeks met publiek van uw gegevenspakhuis het in dienst gebruikend het Federale overzicht van de Samenstelling van het publiek
 
-Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gesneden oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [ gesteunde opslag van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
+Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gesneden oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [ gesteunde opslag van ondernemingsgegevens ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
 
 ## Bedrijfs context
 
@@ -51,10 +51,10 @@ Als u vergelijkbare activiteiten wilt uitvoeren in uw omgeving, moet u ervoor zo
 
 - Toegang tot een Adobe Experience Platform-account die is ingericht voor Real-Time CDP of Journey Optimizer.
 - De toestemmingen van de Beheerder van het systeem of de capaciteit hebben gevormd toestemmingen.
-- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
-- Toegang tot een gesteund [ entrepot van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
+- Toegang tot een gesteund [ entrepot van ondernemingsgegevens ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Basiskennis van SQL voor het vragen van gegevenspakhuizen.
 - **de Milieu&#39;s van Sandbox**: Creeer een zandbak in de instantie van uw organisatie veilig experimenteren zonder productiegegevens te beïnvloeden.
-- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund gegevenspakhuis ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
+- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund gegevenspakhuis ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
 
 Eerst, herzien de [ Architectuur op hoog niveau &amp; Stroom voor Federatieve Samenstelling van het Publiek ](fac-architecture-and-flow.md).
