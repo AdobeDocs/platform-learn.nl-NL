@@ -362,7 +362,7 @@ Selecteer **Goedgekeurd** en klik **besluit** opnieuw maken.
 
 ![ WF ](./images/wfp32a.png)
 
-Sluit **vergelijkt de 1} mening van Bewijzen {door de linkerversie van het beeld te sluiten.** Klik de **Naam van de Taak** terug naar het overzicht van de Taak.
+Sluit **vergelijkt de 1&rbrace; mening van Bewijzen &lbrace;door de linkerversie van het beeld te sluiten.** Klik de **Naam van de Taak** terug naar het overzicht van de Taak.
 
 ![ WF ](./images/wfp33.png)
 
