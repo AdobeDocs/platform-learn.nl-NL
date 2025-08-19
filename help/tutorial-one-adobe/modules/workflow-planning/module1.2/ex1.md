@@ -4,9 +4,9 @@ description: Aan de slag met Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,22 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Als u eerder een AEM CS-programma hebt geconfigureerd met een AEM Assets CS-omgeving, kan het zijn dat de AEM CS-sandbox is geminimaliseerd. Gezien het feit dat het vernietigen van zo&#39;n zandbak 10 tot 15 minuten duurt, zou het een goed idee zijn om het ontruimingsproces nu te beginnen zodat u niet op een later tijdstip hoeft te wachten.
+
+## 1.2.1.1 Workfront Workflow Terminology
+
+Hier volgen de belangrijkste Workfront-objecten en -concepten:
+
+| Naam | Laatste update |
+| ---------------------- | ------------ | 
+| Portfolio | Een verzameling projecten met verenigende kenmerken. Deze projecten concurreren doorgaans met dezelfde middelen, hetzelfde budget of dezelfde tijd. |
+| Programma | Een subset binnen een portefeuille, waar soortgelijke projecten kunnen worden gegroepeerd om een welomschreven voordeel te behalen. |
+| Project | Een groot deel van de werkzaamheden moet binnen een bepaald tijdsbestek worden voltooid en moet een specifiek budget en een bepaald aantal middelen gebruiken. Om het beheersbaar te maken, verdeelt u het project in een reeks taken. Als u alle taken uitvoert, wordt het project voltooid. |
+| Projectsjabloon | U kunt projectmalplaatjes gebruiken om de meeste herhaalbare processen, informatie, en montages te vangen verbonden aan de projecten in uw organisatie. Na het creëren van malplaatjes, kunt u hen aan bestaande projecten vastmaken, of u kunt hen gebruiken om nieuwe projecten te bouwen. |
+| Taak | Een activiteit die als stap naar het bereiken van een definitief doel (het voltooien van het Project) moet worden uitgevoerd. Taken kunnen nooit zelfstandig bestaan. Ze maken altijd deel uit van een project. |
+| Toewijzing | Een gebruiker, taakrol of team die is toegewezen aan een uitgave of een taak. Projecten, portfolio&#39;s of programma&#39;s kunnen geen toewijzingen hebben. |
+| Document/versie | Elk bestand dat binnen Workfront aan een object is gekoppeld. Telkens wanneer hetzelfde document naar hetzelfde object wordt geüpload, wordt er een versienummer aan toegewezen. Gebruikers kunnen verschillende opties voor een vorige versie van een document weergeven en wijzigen. |
+| Goedkeuring | Een bepaald het werkpunt, zoals een taak, een document, of een timesheet, kunnen vereisen dat een supervisor of een andere gebruiker weg op het het werkpunt ondertekent. Dit proces van het ondertekenen van weg wordt genoemd goedkeuring. |
+
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Klik om **Workfront** te openen.
 
@@ -169,7 +185,7 @@ Daarna, selecteer het zesde gebied en klik opnieuw het **pictogram van het Schem
 
 ![ WF ](./images/wfbaem106.png)
 
-Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:task` in en selecteer dan de 1&rbrace; Naam van de Taak van het gebied **.** Klik **Uitgezocht**.
+Dan zie je deze popup weer. Op het onderzoeksgebied, ga `wm:task` in en selecteer dan de 1} Naam van de Taak van het gebied **.** Klik **Uitgezocht**.
 
 ![ WF ](./images/wfbaem107.png)
 

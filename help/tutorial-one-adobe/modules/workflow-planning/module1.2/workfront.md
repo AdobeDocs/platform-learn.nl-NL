@@ -4,9 +4,9 @@ description: Workflowbeheer met Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ ht-degree: 0%
 
 ## Leerdoelen
 
-- Leer hoe u Adobe Workfront op verschillende manieren kunt gebruiken.
+Na de voltooiing van dit laboratorium, zult u vertrouwd met de volgende punten worden:
+
+- De hiërarchie van Workfront-objecten begrijpen, waaronder portfolio&#39;s, programma&#39;s, projecten en taken
+- Maak een nieuw project met een sjabloon die is ontworpen voor een marketingcampagne.
+- Wijs Taken aan middelen door rol en beschikbaarheid toe.
+- Een document uploaden en goedkeuring aanvragen
+- Het goedgekeurde document verzenden naar AEM Assets CS met ingebouwde integratie
 
 ## Vereisten
 
-- Toegang tot Workfront en Workfront Fusion
+- Toegang tot Adobe Workfront met een Workfront-norm/planerlicentie.
 
 ## Uitoefening
 
