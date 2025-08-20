@@ -1,18 +1,19 @@
 ---
-title: Overzicht en voordelen van GenStudio for Performance Marketing
-description: Overzicht en voordelen van GenStudio for Performance Marketing
+title: Samenvatting en voordelen van GenStudio for Performance Marketing - Uitbreidbaarheid
+description: Samenvatting en voordelen van GenStudio for Performance Marketing - Uitbreidbaarheid
 kt: 5342
 doc-type: tutorial
-source-git-commit: 52234e7b3b6743db79dec570b1a1f2d3ac4cf1ab
+exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
 # Samenvatting en voordelen
 
-Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe GenStudio for Performance Marketing!
+Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe GenStudio for Performance Marketing - Uitbreidbaarheid!
 
 
 ## Volgende stappen

@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# 1.6.3 Een externe DAM-app maken
+# 1.6.3 Een externe DAM-app maken en implementeren
 
 ## 1.6.3.1 Download voorbeeldbestanden voor de app
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-Het gebied **AWS_ACCESS_KEY_ID** en **AWS_SECRET_ACCESS_KEY** waren beschikbaar na het creëren van de gebruiker IAM in de vorige oefening. U werd gevraagd om hen neer te schrijven, kunt u nu de waarden kopiëren.
+Het veld **`AWS_ACCESS_KEY_ID`** en **`AWS_SECRET_ACCESS_KEY`** waren beschikbaar nadat de IAM-gebruiker in de vorige exercitie was gemaakt. U werd gevraagd om hen neer te schrijven, kunt u nu de waarden kopiëren.
 
 ![ ETL ](./images/cred1.png)
 
-Het gebied **AWS_REGION** kan van de mening van het Huis van AWS S3, naast uw emmernaam worden genomen. In dit voorbeeld, is het gebied **us-west-2**.
+Het veld **`AWS_REGION`** kan naast de naam van het emmertje uit de weergave AWS S3 Home worden genomen. In dit voorbeeld, is het gebied **us-west-2**.
 
 ![ ETL ](./images/bucket2.png)
 
-Het gebied **AWS_BUCKET_NAME** zou moeten zijn `--aepUserLdap---gspem-dam`.
+Het veld **`AWS_BUCKET_NAME`** moet `--aepUserLdap---gspem-dam` zijn.
 
 Met deze informatie kunt u de waarden van elk van deze variabelen bijwerken.
 
@@ -169,9 +170,53 @@ Voer de opdracht `aio app run` uit in uw terminalvenster. U moet dit na 1-2 minu
 
 ![ Ext DAM ](./images/extdam24.png)
 
+U hebt nu bevestigd dat uw app wordt uitgevoerd. De volgende stap is het opstellen.
+
+Eerst, duw **CTRL+C** om app tegen het lopen te houden. Voer vervolgens de opdracht `aio app deploy` in. Met deze opdracht wordt uw code geïmplementeerd op Adobe IO.
+
+Dientengevolge, zult u een gelijkaardige URL ontvangen om tot uw opgestelde toepassing toegang te hebben:
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![ Ext DAM ](./images/extdam27.png)
+
+Voor testdoeleinden kunt u die URL nu gebruiken als parameter voor een querytekenreeks door `?ext=` als voorvoegsel toe te voegen aan de bovenstaande URL. Dit resulteert in deze parameter van het vraagkoord:
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+Ga naar [ https://experience.adobe.com/genstudio/create ](https://experience.adobe.com/genstudio/create).
+
+![ Ext DAM ](./images/extdam25.png)
+
+Voeg vervolgens de parameter voor de querytekenreeks toe vlak voor **#** . Uw nieuwe URL moet er als volgt uitzien:
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+De pagina wordt normaal geladen. Klik **Banners** beginnen een nieuwe banner te creëren.
+
+![ Ext DAM ](./images/extdam26.png)
+
+Selecteer een malplaatje en klik **Gebruik**.
+
+![ Ext DAM ](./images/extdam28.png)
+
+Klik **Uitgezocht van inhoud**.
+
+![ Ext DAM ](./images/extdam29.png)
+
+Vervolgens kunt u de externe DAM selecteren uit de vervolgkeuzelijst.
+
+![ Ext DAM ](./images/extdam30.png)
+
+Wanneer u wijzigingen aanbrengt in de code op uw lokale computer, moet u uw app opnieuw implementeren. Wanneer u herstelt, gebruik dit eindbevel:
+
+`aio app deploy --force-build --force-deploy`
+
+Uw app is nu klaar om te worden gepubliceerd.
+
 ## Volgende stappen
 
-Ga naar [ stel uw code op en publiceer privé uw app ](./ex4.md){target="_blank"}
+Ga naar [ publiceer uw app privé ](./ex4.md){target="_blank"}
 
 Ga terug naar [ GenStudio for Performance Marketing - Uitbreidbaarheid ](./genstudioext.md){target="_blank"}
 

@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
+source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 3%
 
 ---
@@ -85,8 +85,8 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
       + [1.6.1 Adobe IO en App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
       + [1.6.2 Een AWS S3-emmertje maken](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3 Een externe DAM-app maken](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4 Implementeer uw code en publiceer uw app persoonlijk](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.3 Een externe DAM-app maken en implementeren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Uw app privé publiceren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Beheer van bedrijfsmiddelen {#assetmgmt}
