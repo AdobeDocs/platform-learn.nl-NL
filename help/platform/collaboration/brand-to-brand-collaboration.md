@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Lees meer over gebruiksgevallen die worden ondersteund door samenwerking tussen merken en merken en over specifieke functies die zijn geïntroduceerd om deze workflows te ondersteunen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470942/?learn=on&enablevpops&captions=dut)
