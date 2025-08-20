@@ -5,16 +5,169 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
 
 # 1.6.3 Een externe DAM-app maken
 
+## 1.6.3.1 Download voorbeeldbestanden voor de app
 
+Ga naar [ https://github.com/adobe/genstudio-extensibility-examples ](https://github.com/adobe/genstudio-extensibility-examples). Klik **Code** en selecteer dan **ZIP van de Download**.
+
+![ Ext DAM ](./images/extdam1.png)
+
+Pak het ZIP-bestand uit op uw bureaublad.
+
+![ Ext DAM ](./images/extdam2.png)
+
+Open de omslag **genstudio-rekbaarheid-examples-main**. U ziet dan meerdere voorbeeld-apps. Die van belang voor deze oefening is **genstudio-extern-dam-app**.
+
+Kopieer die map en plak deze op uw bureaublad.
+
+![ Ext DAM ](./images/extdam4.png)
+
+Dit moet u nu op uw bureaublad hebben:
+
+![ Ext DAM ](./images/extdam3.png)
+
+Voor de volgende oefeningen, zult u slechts de **genstudio-extern-dam-app** omslag gebruiken.
+
+## 1.6.3.2 De Adobe Developer-opdrachtregelinterface configureren
+
+Klik met de rechtermuisknop op de **genstudio-extern-dam-app** omslag en selecteer **Nieuwe Terminal bij Omslag**.
+
+![ Ext DAM ](./images/extdam5.png)
+
+Dan moet je dit zien. Voer de opdracht `aio login` in. Deze opdracht wordt omgeleid naar uw browser en u wordt verwacht dat u zich aanmeldt.
+
+![ Ext DAM ](./images/extdam6.png)
+
+Na succesvolle login, zou u dit in browser moeten zien.
+
+![ Ext DAM ](./images/extdam7.png)
+
+De browser zal dan naar het eindvenster opnieuw richten. U zou een bericht moeten zien dat **succesvolle Login** en een lang teken zegt dat door browser is teruggekeerd.
+
+![ Ext DAM ](./images/extdam8.png)
+
+De volgende stap bestaat uit het configureren van de instantie en het Adobe IO-project dat u wilt gebruiken voor de externe DAM-app.
+
+Hiervoor moet u een bestand downloaden van het Adobe IO-project dat u eerder hebt geconfigureerd.
+
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open het project u eerder creeerde, dat `--aepUserLdap-- GSPeM EXT` wordt genoemd. Open de **Werkruimte van de Productie**.
+
+![ Ext DAM ](./images/extdam9.png)
+
+Klik **Download allen**. Hiermee wordt een JSON-bestand gedownload.
+
+![ Ext DAM ](./images/extdam10.png)
+
+Kopieer het JSON- dossier van uw **Downloads** folder in de wortelfolder van externe DAM app.
+
+![ Ext DAM ](./images/extdam11.png)
+
+Ga terug naar uw eindvenster. Voer de opdracht `aio app use XXX-YYY-Production.json` in.
+
+>[!NOTE]
+>
+>U moet de naam van het bestand wijzigen, zodat deze overeenkomt met de naam van het bestand.
+
+Nadat de opdracht is uitgevoerd, wordt uw externe DAM-toepassing nu verbonden met het eerder gemaakte Adobe IO-project met App Builder.
+
+![ Ext DAM ](./images/extdam12.png)
+
+## 1.6.3.3 Installeer de GenStudio Extenability SDK
+
+Daarna, moet u **SDK van de Uitbreidbaarheid van GenStudio** installeren. U kunt meer details over SDK hier vinden: [ https://github.com/adobe/genstudio-extensibility-sdk ](https://github.com/adobe/genstudio-extensibility-sdk).
+
+Als u de SDK wilt installeren, voert u deze opdracht uit in uw terminalvenster:
+
+`npm install @adobe/genstudio-extensibility-sdk`
+
+![ Ext DAM ](./images/extdam13.png)
+
+Na een paar minuten wordt de SDK geïnstalleerd.
+
+![ Ext DAM ](./images/extdam14.png)
+
+## 1.6.3.4 Controleer de externe DAM-toepassing in Visual Studio Code
+
+Open Visual Studio Code. Klik **Open...** om een omslag te openen.
+
+![ Ext DAM ](./images/extdam15.png)
+
+Selecteer de omslag **genstudio-extern-dam-app** die app bevat u vóór downloadde.
+
+![ Ext DAM ](./images/extdam16.png)
+
+Klik om het bestand **.env** te openen.
+
+![ Ext DAM ](./images/extdam17.png)
+
+Het bestand **.env** is gemaakt met de opdracht `aio app use` die u in de vorige stap hebt uitgevoerd en bevat de informatie die nodig is om verbinding te maken met uw Adobe IO-project met App Builder.
+
+![ Ext DAM ](./images/extdam18.png)
+
+U moet nu twee nieuwe bestanden maken in de hoofdmap van uw map:
+
+- `.env.dev`. Klik het **Nieuwe Dossier** knoop en ga dan filename `.env.dev` in.
+
+![ Ext DAM ](./images/extdam19.png)
+
+- `.env.prod`.  Klik het **Nieuwe Dossier** knoop en ga dan filename `.env.prod` in.
+
+![ Ext DAM ](./images/extdam20.png)
+
+Deze bestanden bevatten de gegevens die nodig zijn om verbinding te maken met het AWS S3-emmertje dat u eerder hebt gemaakt.
+
+```
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=
+AWS_BUCKET_NAME=
+```
+
+Het gebied **AWS_ACCESS_KEY_ID** en **AWS_SECRET_ACCESS_KEY** waren beschikbaar na het creëren van de gebruiker IAM in de vorige oefening. U werd gevraagd om hen neer te schrijven, kunt u nu de waarden kopiëren.
+
+![ ETL ](./images/cred1.png)
+
+Het gebied **AWS_REGION** kan van de mening van het Huis van AWS S3, naast uw emmernaam worden genomen. In dit voorbeeld, is het gebied **us-west-2**.
+
+![ ETL ](./images/bucket2.png)
+
+Het gebied **AWS_BUCKET_NAME** zou moeten zijn `--aepUserLdap---gspem-dam`.
+
+Met deze informatie kunt u de waarden van elk van deze variabelen bijwerken.
+
+```
+AWS_ACCESS_KEY_ID=XXX
+AWS_SECRET_ACCESS_KEY=YYY
+AWS_REGION=us-west-2
+AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
+```
+
+U moet deze tekst nu in beide bestanden plakken, `.env.dev` en `.env.prod` . Vergeet niet uw wijzigingen op te slaan.
+
+![ Ext DAM ](./images/extdam21.png)
+
+
+![ Ext DAM ](./images/extdam22.png)
+
+Ga vervolgens terug naar uw terminalvenster. Voer deze opdracht uit:
+
+`export $(grep -v '^#' .env.dev | xargs)`
+
+![ Ext DAM ](./images/extdam23.png)
+
+## 1.6.3.5 De externe DAM-app uitvoeren
+
+Voer de opdracht `aio app run` uit in uw terminalvenster. U moet dit na 1-2 minuten zien.
+
+![ Ext DAM ](./images/extdam24.png)
 
 ## Volgende stappen
 
