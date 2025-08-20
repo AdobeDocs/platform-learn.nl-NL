@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
+source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1339'
 ht-degree: 3%
 
 ---
@@ -81,6 +81,13 @@ ht-degree: 3%
       + [1.5.2 Goedkeuringen met Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
       + [1.5.3 Frame.io en Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
+   + 1.6 GenStudio for Performance Marketing - Uitbreidbaarheid {#crpr6}
+      + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
+      + [1.6.1 Adobe IO en App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+      + [1.6.2 Een AWS S3-emmertje maken](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+      + [1.6.3 Een externe DAM-app maken](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Implementeer uw code en publiceer uw app persoonlijk](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Beheer van bedrijfsmiddelen {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

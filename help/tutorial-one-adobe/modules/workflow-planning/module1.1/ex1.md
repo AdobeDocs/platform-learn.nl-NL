@@ -4,16 +4,20 @@ description: Aan de slag met Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Aan de slag met Workfront Planning
 
-## 1.1.1.1 Terminologie voor Workfront-planning
+## 1.1.1.1 Beknopte CitiSignal-campagne
+
+Om de context van CitiSignal en wat te begrijpen zij proberen te bereiken, download en lees hier de Brief van de Campagne van CitiSignal: [ CitiSignal-Fibre-Launch-Winter-2026.pdf ](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## 1.1.1.2 Terminologie voor Workfront-planning
 
 Hieronder vindt u de belangrijkste Workfront-planningsobjecten en -concepten:
 
@@ -31,7 +35,7 @@ Hieronder vindt u de belangrijkste Workfront-planningsobjecten en -concepten:
 
 U gaat nu de handen in elkaar slaan en zelf een aantal van deze objecten maken.
 
-## 1.1.1.2 Workspace, Recordtype, Velden
+## 1.1.1.3 Workspace, Recordtype, Velden
 
 Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Klik om **Workfront** te openen.
 
@@ -61,7 +65,7 @@ Dan moet je dit hebben.
 
 ![ Planning van Workfront ](./images/wfpl7a.png)
 
-## 1.1.1.3 Taxonomies: Recordtype en velden
+## 1.1.1.4 Taxonomies: Recordtype en velden
 
 Onder **Taxonomies**, klik **+ voeg het Type van Verslag** toe en selecteer dan **voeg manueel** toe.
 
@@ -165,7 +169,7 @@ Dan moet je dit zien.
 
 ![ Planning van Workfront ](./images/wfpl19.png)
 
-## 1.1.1.4 Typen operationele records: velden
+## 1.1.1.5 Typen operationele records: velden
 
 Klik om **Campagnes** te openen.
 
@@ -187,7 +191,7 @@ Het nieuwe veld wordt vervolgens weergegeven in de tabelweergave.
 
 ![ Planning van Workfront ](./images/wfpl24.png)
 
-## 1.1.1.5 Een aanvraagformulier maken
+## 1.1.1.6 Een aanvraagformulier maken
 
 Op het het overzichtsscherm van Campagnes, klik de 3 punten **...** en selecteer dan **de verzoekvorm van de creatie**.
 
@@ -209,7 +213,7 @@ Klik op de pijl in de linkerbovenhoek om terug te keren naar het scherm Campagne
 
 ![ Planning van Workfront ](./images/wfpl29.png)
 
-## 1.1.1.6 Een nieuwe record verzenden met het aanvraagformulier
+## 1.1.1.7 Een nieuwe record verzenden met het aanvraagformulier
 
 Voor het het overzichtsscherm van Campagnes, klik **+ Nieuw Verslag**.
 
@@ -243,7 +247,7 @@ Dan zou u de nieuw gecreëerde campagne in het overzicht moeten zien.
 
 ![ Planning van Workfront ](./images/wfpl35.png)
 
-## 1.1.1.7 Portfolio en aangepast formulier maken
+## 1.1.1.8 Portfolio en aangepast formulier maken
 
 In de volgende stap gaat u een automatisering maken die informatie neemt uit de campagne die u hebt gemaakt in Workfront Planning en die die informatie gebruikt in Workfront om een programma te maken. Voordat u de automatisering kunt maken, moet u eerst twee dingen configureren in Workfront: een portfolio en een aangepast formulier.
 
