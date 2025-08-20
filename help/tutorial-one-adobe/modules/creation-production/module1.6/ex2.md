@@ -36,7 +36,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 ![ ETL ](./images/s3home.png)
 
-In **creeer het 1} scherm van het Emmertje {, gebruik de naam**.`--aepUserLdap---gspem-dam`
+In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, gebruik de naam**.`--aepUserLdap---gspem-dam`
 
 ![ ETL ](./images/bucketname.png)
 
