@@ -37,7 +37,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 ![ ETL ](./images/s3home.png)
 
-In **creeer het 1} scherm van het Emmertje {, gebruik de naam**.`--aepUserLdap---gspem-dam`
+In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, gebruik de naam**.`--aepUserLdap---gspem-dam`
 
 ![ ETL ](./images/bucketname.png)
 
@@ -150,7 +150,7 @@ Klik **toevoegen Omslag**.
 
 ![ ETL ](./images/bucket6.png)
 
-Selecteer de omslag **activa** van het pakket van de downloadomslag ****. Klik **uploaden**.
+Selecteer de omslag **activa** van het pakket van de downloadomslag **&#x200B;**. Klik **uploaden**.
 
 ![ ETL ](./images/bucket7.png)
 
@@ -158,7 +158,7 @@ Dan moet je dit zien. Klik **voeg opnieuw Omslag** toe.
 
 ![ ETL ](./images/bucket8.png)
 
-Selecteer de omslag **duimnagels** van het pakket van de downloadomslag ****. Klik **uploaden**.
+Selecteer de omslag **duimnagels** van het pakket van de downloadomslag **&#x200B;**. Klik **uploaden**.
 
 ![ ETL ](./images/bucket9.png)
 
