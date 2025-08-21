@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 1.6.3.1 Download voorbeeldbestanden voor de app
 
-Ga naar [ https://github.com/adobe/genstudio-extensibility-examples ](https://github.com/adobe/genstudio-extensibility-examples). Klik **Code** en selecteer dan **ZIP van de Download**.
+Ga naar [ https://github.com/woutervangeluwe/genstudio-external-dam-app ](https://github.com/woutervangeluwe/genstudio-external-dam-app). Klik **Code** en selecteer dan **ZIP van de Download**.
 
 ![ Ext DAM ](./images/extdam1.png)
 
@@ -25,21 +25,9 @@ Pak het ZIP-bestand uit op uw bureaublad.
 
 ![ Ext DAM ](./images/extdam2.png)
 
-Open de omslag **genstudio-rekbaarheid-examples-main**. U ziet dan meerdere voorbeeld-apps. Die van belang voor deze oefening is **genstudio-extern-dam-app**.
-
-Kopieer die map en plak deze op uw bureaublad.
-
-![ Ext DAM ](./images/extdam4.png)
-
-Dit moet u nu op uw bureaublad hebben:
-
-![ Ext DAM ](./images/extdam3.png)
-
-Voor de volgende oefeningen, zult u slechts de **genstudio-extern-dam-app** omslag gebruiken.
-
 ## 1.6.3.2 De Adobe Developer-opdrachtregelinterface configureren
 
-Klik met de rechtermuisknop op de **genstudio-extern-dam-app** omslag en selecteer **Nieuwe Terminal bij Omslag**.
+Klik met de rechtermuisknop op de **genstudio-extern-dam-app-main** omslag en selecteer **Nieuwe Terminal bij Omslag**.
 
 ![ Ext DAM ](./images/extdam5.png)
 
@@ -75,7 +63,7 @@ Ga terug naar uw eindvenster. Voer de opdracht `aio app use XXX-YYY-Production.j
 
 >[!NOTE]
 >
->U moet de naam van het bestand wijzigen, zodat deze overeenkomt met de naam van het bestand.
+>U moet de naam van het bestand in de bovenstaande opdracht wijzigen, zodat deze overeenkomt met de naam van het bestand.
 
 Nadat de opdracht is uitgevoerd, wordt uw externe DAM-toepassing nu verbonden met het eerder gemaakte Adobe IO-project met App Builder.
 
@@ -101,7 +89,7 @@ Open Visual Studio Code. Klik **Open...** om een omslag te openen.
 
 ![ Ext DAM ](./images/extdam15.png)
 
-Selecteer de omslag **genstudio-extern-dam-app** die app bevat u vóór downloadde.
+Selecteer de omslag **genstudio-extern-dam-app-main** die app bevat u vóór downloadde. Klik **Open**.
 
 ![ Ext DAM ](./images/extdam16.png)
 
@@ -113,17 +101,7 @@ Het bestand **.env** is gemaakt met de opdracht `aio app use` die u in de vorige
 
 ![ Ext DAM ](./images/extdam18.png)
 
-U moet nu twee nieuwe bestanden maken in de hoofdmap van uw map:
-
-- `.env.dev`. Klik het **Nieuwe Dossier** knoop en ga dan filename `.env.dev` in.
-
-![ Ext DAM ](./images/extdam19.png)
-
-- `.env.prod`.  Klik het **Nieuwe Dossier** knoop en ga dan filename `.env.prod` in.
-
-![ Ext DAM ](./images/extdam20.png)
-
-Deze bestanden bevatten de gegevens die nodig zijn om verbinding te maken met het AWS S3-emmertje dat u eerder hebt gemaakt.
+U moet nu de volgende details toevoegen aan het bestand **.env** , zodat de externe DAM-toepassing verbinding kan maken met de eerder gemaakte AWS S3-emmertje.
 
 ```
 AWS_ACCESS_KEY_ID=
@@ -155,14 +133,21 @@ U moet deze tekst nu in beide bestanden plakken, `.env.dev` en `.env.prod` . Ver
 
 ![ Ext DAM ](./images/extdam21.png)
 
-
-![ Ext DAM ](./images/extdam22.png)
-
 Ga vervolgens terug naar uw terminalvenster. Voer deze opdracht uit:
 
-`export $(grep -v '^#' .env.dev | xargs)`
+`export $(grep -v '^#' .env | xargs)`
 
 ![ Ext DAM ](./images/extdam23.png)
+
+Ten slotte moet u het label wijzigen dat in GenStudio for Performance Marketing wordt weergegeven, zodat u uw externe DAM-toepassing kunt onderscheiden van andere integraties. Om dat te doen, open het dossier **Constants.ts** dat u kunt vinden door neer in ontdekkingsreiziger te boren aan **src/genstudiopem > web-src > src**.
+
+Regel 14 moet worden gewijzigd in
+
+`export const extensionLabel: string = "--aepUserLdap-- - External S3 DAM";`
+
+Vergeet niet uw wijzigingen op te slaan.
+
+![ Ext DAM ](./images/extdam22.png)
 
 ## 1.6.3.5 De externe DAM-app uitvoeren
 
@@ -204,13 +189,23 @@ Klik **Uitgezocht van inhoud**.
 
 ![ Ext DAM ](./images/extdam29.png)
 
-Vervolgens kunt u de externe DAM selecteren uit de vervolgkeuzelijst.
+Vervolgens kunt u de externe DAM selecteren. Deze krijgt de naam `--aepUserLdap-- - External S3 DAM` uit de vervolgkeuzelijst.
 
 ![ Ext DAM ](./images/extdam30.png)
+
+Dan moet je dit zien. Selecteer het beeld **neon_rabbit_banner.jpg** en klik **Gebruik**.
+
+![ Ext DAM ](./images/extdam31.png)
+
+U hebt nu een afbeelding uit uw externe DAM geselecteerd die in een S3-emmertje wordt uitgevoerd. Als de afbeelding is geselecteerd, kunt u nu de normale workflow volgen die wordt beschreven in [1.3.3.4 Meta-advertentie maken en goedkeuren ](./../module1.3/ex3.md#create--approve-meta-ad) .
+
+![ Ext DAM ](./images/extdam32.png)
 
 Wanneer u wijzigingen aanbrengt in de code op uw lokale computer, moet u uw app opnieuw implementeren. Wanneer u herstelt, gebruik dit eindbevel:
 
 `aio app deploy --force-build --force-deploy`
+
+![ Ext DAM ](./images/extdam33.png)
 
 Uw app is nu klaar om te worden gepubliceerd.
 

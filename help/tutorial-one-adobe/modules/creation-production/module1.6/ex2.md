@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
 ![ ETL ](./images/s3home.png)
 
-In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, gebruik de naam**.`--aepUserLdap---gspem-dam`
+In **creeer het 1} scherm van het Emmertje {, gebruik de naam**.`--aepUserLdap---gspem-dam`
 
 ![ ETL ](./images/bucketname.png)
 
@@ -139,19 +140,39 @@ Dan moet je dit zien.
 
 ![ ETL ](./images/bucket4.png)
 
-U kunt CitiSignal beelddossiers [ hier downloaden ](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+U kunt CitiSignal beelddossiers [ hier downloaden ](./images/package.zip){target="_blank"}.
 
 Exporteer de bestanden naar uw bureaublad.
 
 ![ ETL ](./images/bucket5.png)
 
-Neem de twee beelddossiers in die omslag en zet hen in het S3 emmeruploadvenster neer. Klik **uploaden**.
+Klik **toevoegen Omslag**.
 
 ![ ETL ](./images/bucket6.png)
 
-Dan moet je dit zien. Uw S3-emmertje, afbeeldingsbestanden en uw IAM-gebruiker zijn nu klaar om te worden gebruikt door uw externe DAM-app.
+Selecteer de omslag **activa** van het pakket van de downloadomslag ****. Klik **uploaden**.
 
 ![ ETL ](./images/bucket7.png)
+
+Dan moet je dit zien. Klik **voeg opnieuw Omslag** toe.
+
+![ ETL ](./images/bucket8.png)
+
+Selecteer de omslag **duimnagels** van het pakket van de downloadomslag ****. Klik **uploaden**.
+
+![ ETL ](./images/bucket9.png)
+
+Dan moet je dit zien. Klik **uploaden**.
+
+![ ETL ](./images/bucket10.png)
+
+Het uploaden is nu voltooid. Klik **dicht**.
+
+![ ETL ](./images/bucket11.png)
+
+U zou deze omslagstructuur in uw S3 emmertje nu moeten hebben.
+
+![ ETL ](./images/bucket12.png)
 
 ## Volgende stappen
 
