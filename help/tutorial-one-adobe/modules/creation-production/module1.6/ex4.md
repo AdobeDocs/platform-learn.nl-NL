@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ Klik **voorleggen**.
 ![ Uitbreidbaarheid GSPeM ](./images/gspemextpub6.png)
 
 ## 1.6.4.2 Uw app goedkeuren
+
+>[!IMPORTANT]
+>
+>Deze stap kan slechts door de Beheerders van het Systeem in Adobe Admin Console worden uitgevoerd. Als u geen Beheerder van het Systeem bent, zult u niet dit kunnen uitvoeren. Neem contact op met uw systeembeheerder om goedkeuring van uw toepassing aan te vragen.
 
 Zodra een ontwikkelaar een nieuwe app voor publicatie indient, zullen de systeembeheerders van uw org op de hoogte worden gesteld en worden gevraagd deze te beoordelen en goed te keuren.
 
