@@ -8,9 +8,9 @@ duration: 92
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 8aa4a2ec16b1c95333569577658842460f3fa7d1
+source-git-commit: 08ebe74f7065acf20964c53e83d4de8e9bee637b
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Met Adobe Real-Time CDP Collaboration kunt u hoogwaardige soorten publiek detect
 
 Hieronder vindt u video&#39;s en andere bronnen die u helpen bij het instellen, gebruiken en waarderen van Real-Time CDP Collaboration. Er worden extra elementen toegevoegd aan deze pagina en site. Probeer het daarom vaak opnieuw. Gelukkig leren!
 
-Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128279;](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/home){target="_blank"}.
+Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [ ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}.
 
-[![ExL LIVE apr 10, 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE apr 10, 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Aan de slag
 
@@ -41,7 +41,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration intro" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446807/?format=jpeg&nocache=1755703749870&captions=dut" alt="Real-Time CDP Collaboration intro"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1756504084960" alt="Real-Time CDP Collaboration intro"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Real-Time CDP - Overzicht voor de Praktijken van het Bureau" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464664/?format=jpeg&nocache=1755703749854&captions=dut" alt="Real-Time CDP - Overzicht voor de Praktijken van het Bureau"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="Real-Time CDP - Overzicht voor de Praktijken van het Bureau"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Voor meer informatie, zie de documentatie van Real-Time CDP Collaboration [&#128
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Proces en mensen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464675/?format=jpeg&nocache=1755703749860&captions=dut" alt="Real-Time CDP Collaboration - Proces en mensen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration - Proces en mensen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1755703750314" alt="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Machtigingen instellen voor Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452236/?format=jpeg&nocache=1755703750284&captions=dut" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="Machtigingen instellen voor Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -174,7 +174,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-up-an-advertiser-account.md" title="Een Advertiser-account instellen in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1755703750299" alt="Een Advertiser-account instellen in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1756504085463" alt="Een Advertiser-account instellen in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -202,6 +202,8 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
 * reference-audiences-as-an-advertiser.md
 * connect-with-publishers.md
 * create-a-project.md
+* discover-audience-overlaps-in-projects.md
+* activate-audiences-in-projects.md
 * brand-to-brand-collaboration.md
 
 -->
@@ -212,7 +214,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="reference-audiences-as-an-advertiser.md" title="Referentiepubliek als adverteerder in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1755703750705" alt="Referentiepubliek als adverteerder in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1756504085960" alt="Referentiepubliek als adverteerder in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -235,7 +237,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="connect-with-publishers.md" title="Verbinding maken met uitgevers in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1755703750695" alt="Verbinding maken met uitgevers in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1756504085951" alt="Verbinding maken met uitgevers in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -258,7 +260,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Een project maken in Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464040/?format=jpeg&nocache=1755703750674&captions=dut" alt="Een project maken in Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="Een project maken in Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -276,12 +278,58 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             </div>
         </div>
     </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Discover audience overlaps inside of Collaboration projects">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="discover-audience-overlaps-in-projects.md" title="Ontdek overlappingen tussen publiek en Collaboration-projecten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="Ontdek overlappingen tussen publiek en Collaboration-projecten"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" title="Ontdek overlappingen tussen publiek en Collaboration-projecten"> ontdekt publiek overlapt binnen de projecten van Collaboration </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u overlappingen met het publiek in Real-Time CDP Collaboration-projecten kunt vergelijken.</p>
+                </div>
+                <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Activate audiences in Collaboration projects">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="activate-audiences-in-projects.md" title="Soorten publiek activeren in Collaboration-projecten" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1756504085925" alt="Soorten publiek activeren in Collaboration-projecten"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" title="Soorten publiek activeren in Collaboration-projecten"> activeer publiek in de projecten van Collaboration </a>
+                    </p>
+                    <p class="is-size-6">Leer hoe u het publiek activeert voor uw samenwerkingspartners in Real-Time CDP Collaboration-projecten.</p>
+                </div>
+                <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Brand to Brand Collaboration">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="Merk naar merk Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470942/?format=jpeg&nocache=1755703750685&captions=dut" alt="Merk naar merk Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="Merk naar merk Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
