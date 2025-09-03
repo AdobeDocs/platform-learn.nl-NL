@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Leer hoe de [!DNL Marketo Engage] bestemming naadloze synchronisatie in real time van publieksgegevens en profielattributen toelaat, toelatend verenigde marketing over uw technologiestapel. Dankzij de flexibele synchronisatieopties en de gestroomlijnde installatie worden gebruiksscenario&#39;s ondersteund, zoals opnieuw engageren van leads, het bijwerken van profielen en het uitbreiden van bereik voor persoonlijke B2B-reizen.
 
-Voor meer informatie, herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
+Voor meer informatie, herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
