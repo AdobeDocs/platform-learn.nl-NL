@@ -25,5 +25,5 @@ Leer hoe de [!DNL Marketo Engage] bestemming naadloze synchronisatie in real tim
 
 Voor meer informatie, herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440164?learn=on&enablevpops&captions=dut)
 
