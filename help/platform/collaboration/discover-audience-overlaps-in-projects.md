@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u overlappingen met het publiek in Real-Time CDP Collaboration-projecten kunt vergelijken. Voor meer informatie, bezoek de [ documentatie ](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471695/?learn=on&enablevpops&captions=dut)
