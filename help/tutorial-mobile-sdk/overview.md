@@ -4,25 +4,28 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
 
 # Zelfstudie Adobe Experience Cloud implementeren in mobiele apps
 
-Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met Adobe Experience Platform Mobile SDK.
+Leer hoe u Adobe Experience Cloud-toepassingen implementeert in uw mobiele app met de Adobe Experience Platform Mobile SDK.
 
 Experience Platform Mobile SDK is een client-side SDK die klanten van Adobe Experience Cloud in staat stelt te communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie de [ documentatie van Adobe Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/home/) voor meer gedetailleerde informatie.
 
-![Architectuur](assets/architecture.png)
+![Architectuur](assets/architecture.png){zoomable="yes"}
 
 
-Deze zelfstudie begeleidt u door de implementatie van Platform Mobile SDK in een voorbeeldtoepassing die Luma wordt genoemd. De [ app van de Luma ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit die u een realistische implementatie laat bouwen. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
+Deze zelfstudie begeleidt u door de implementatie van Platform Mobile SDK in een voorbeeldtoepassing met de naam Luma. De [ app van de Luma ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit die u een realistische implementatie laat bouwen. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
 
-De lessen zijn ontworpen voor iOS en geschreven in Swift/SwiftUI, maar veel van de concepten zijn ook van toepassing op Android™.
+De lessen zijn bedoeld voor:
+
+* iOS, met behulp van de programmeertaal Swift en het SwiftUI-framework.
+* Android, met de programmeertaal Kotlin en Java en het JetPack Compose-framework.
 
 Na het voltooien van deze zelfstudie kunt u het volgende doen:
 
@@ -33,7 +36,7 @@ Na het voltooien van deze zelfstudie kunt u het volgende doen:
 * Tagextensies installeren en implementeren in een app.
 * Ga correct de parameters van Experience Cloud tot a [ webview ](web-views.md) over.
 * Valideer de implementatie gebruikend [ Adobe Experience Platform Assurance ](assurance.md).
-* Voeg de volgende Adobe Experience Cloud-toepassingen/extensies toe:
+* Voeg de volgende Adobe Experience Cloud-toepassingen of -extensies toe:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Levenscyclusgegevensverzameling](lifecycle-data.md)
    * [Toestemming](consent.md)
@@ -61,17 +64,17 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
    * **[!UICONTROL Property Rights]** - wijs items toe aan **[!UICONTROL Develop]** , **[!UICONTROL Approve]** , **[!UICONTROL Publish]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Manage Environments]** .
    * **[!UICONTROL Company Rights]**—Items toestaan aan **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL){target="_blank"} in de productdocumentatie.
+     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [ in de productdocumentatie.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}
 * In Experience Platform moet u beschikken over:
    * **[!UICONTROL Data Modeling]** - machtigingsitems om schema&#39;s te beheren en weer te geven.
    * **[!UICONTROL Identity Management]** - machtigingsitems om naamruimten voor identiteiten te beheren en weer te geven.
    * **[!UICONTROL Data Collection]** - machtigingsitems om gegevensstromen te beheren en weer te geven.
 
-   * Als u de klant bent van een toepassing op basis van een platform, zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, en de bijbehorende lessen uitvoert, moet u ook het volgende doen:
+   * Als u de klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP, Journey Optimizer of Customer Journey Analytics, en van plan bent om de verwante lessen te doen zou u ook moeten hebben:
       * **[!UICONTROL Data Management]** - toestemmingspunten om datasets te beheren en te bekijken.
       * Een ontwikkelings **zandbak** die u voor dit leerprogramma kunt gebruiken.
 
-   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren zoals [ hier ](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=nl-NL#decisions-permissions) wordt beschreven.**
+   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Bovendien, voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren, zoals die in** niveaus van de Toestemming [ worden beschreven.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)
 
 * Voor Adobe Analytics, moet u weten welke **rapportreeksen** u kunt gebruiken om dit leerprogramma te voltooien.
 
@@ -84,26 +87,43 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
 
 ## Versiehistorie
 
+* 9 september 2025:
+   * Android-versie van de app met bijbehorende instructies.
+   * Updates voor wijzigingen in de functionaliteit van de toepassingsoppervlakte en de campagne in Journey Optimizer.
 * 29 nov. 2023: ingrijpende revisie met nieuwe voorbeeldapp en nieuwe lessen voor in-app messaging, beslissingsbeheer en Adobe Target.
 * 9 mrt. 2022: eerste publicatie
 
 ## De app Luma downloaden
 
-U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versie kan worden gedownload/worden gekloond van [ Github ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). U vindt twee mappen:
+>[!BEGINTABS]
 
+>[!TAB  iOS ]
 
-1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een project zonder code of met placeholdercode voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen van [ GitHub ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) worden gedownload/worden gekloond. U vindt twee mappen:
+
+1. [ Begin ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een project zonder code of met placeholder code voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
 1. [ Einde ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: een versie met de volledige implementatie voor verwijzing.
 
->[!NOTE]
->
->U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in iOS/Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
-
+U gebruikt iOS als platform, [!DNL Swift] als programmeertaal, [!DNL SwiftUI] als UI-framework en [!DNL Xcode] als de geïntegreerde ontwikkelomgeving (IDE). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al met succes voltooid met weinig tot geen eerdere ontwikkelervaring voor iOS en Swift(UI). U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
 
 U kunt de definitieve versie van de app downloaden van de App Store.
 
 [![ Download ](assets/download-app.svg) ](https://apps.apple.com/us/app/luma-app/id6466588487)
 
+>[!TAB  Android ]
+
+U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen van [ GitHub ](https://github.com/adobe/Luma-Android) worden gedownload of worden gekloond. U vindt twee mappen:
+
+1. [ Begin ](https://github.com/adobe/Luma-Android){target="_blank"}: een project zonder code of met placeholder code voor het grootste deel van de code van Experience Platform Mobile SDK u moet gebruiken om de hands-on oefeningen in dit leerprogramma te voltooien.
+1. [ Einde ](https://github.com/adobe/Luma-Android){target="_blank"}: een versie met de volledige implementatie voor verwijzing.
+
+U gebruikt Android als platform, [!DNL Kotlin] + [!DNL Java] als programmeertaal, [!DNL JetPack Compose] als kader UI en [!DNL Android Studio] als geïntegreerde ontwikkelomgeving (winde). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in Android / Kotlin+Java / JetPack Compose. U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
+
+U kunt een definitieve versie van de testversie van de app downloaden van Google Play.
+
+[![ Download ](assets/download-app-android.svg) ](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
+
+>[!ENDTABS]
 
 Laten we beginnen!
 
