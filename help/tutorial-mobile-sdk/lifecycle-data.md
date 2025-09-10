@@ -3,7 +3,7 @@ title: Levenscyclusgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u levenscyclusgegevens kunt verzamelen in een mobiele app.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Nu kunt u uw project bijwerken en de levenscyclusgebeurtenissen registreren.
 
 1. Wanneer de app de achtergrond betreedt, wilt u de gegevensverzameling tijdens de levenscyclus van de functie `override fun onActivityPaused` van uw app pauzeren. Deze code toevoegen aan `override fun onActivityPaused(activity: Activity)` :
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
