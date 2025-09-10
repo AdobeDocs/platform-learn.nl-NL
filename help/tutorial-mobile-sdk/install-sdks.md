@@ -142,7 +142,7 @@ De bovenstaande code doet het volgende:
 1. Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
 1. Schakelt foutopsporingslogbestand in. Meer details en de opties kunnen in de [ Mobiele documentatie van SDK van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/) worden gevonden.
 1. Start levenscycluscontrole. Zie [ Levenscyclus ](lifecycle-data.md) stap in het leerprogramma voor meer details.
-1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [ stap 0} van de Toestemming {in het leerprogramma voor meer details.](consent.md)
+1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [ stap 0&rbrace; van de Toestemming &lbrace;in het leerprogramma voor meer details.](consent.md)
 
 Zorg ervoor dat u `MobileCore.configureWith(appId: self.environmentFileId)` bijwerkt met de `appId` op basis van de `environmentFileId` -code uit de tagomgeving waarvoor u ontwikkelt (ontwikkelen, opvoeren of produceren).
 
@@ -242,7 +242,7 @@ Navigeer in de **[!UICONTROL Android]** -weergave naar **[!UICONTROL app]** > **
    1. Vormt MobileCore en andere uitbreidingen om uw configuratie van het markeringsbezit te gebruiken.
    1. Schakelt foutopsporingslogbestand in. Meer details en de opties kunnen in de [ Mobiele documentatie van SDK van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/) worden gevonden.
    1. Start levenscycluscontrole. Zie [ Levenscyclus ](lifecycle-data.md) stap in het leerprogramma voor meer details.
-   1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [ stap 0} van de Toestemming {in het leerprogramma voor meer details.](consent.md)
+   1. Hiermee stelt u de standaardtoestemming in op onbekend. Zie [ stap 0&rbrace; van de Toestemming &lbrace;in het leerprogramma voor meer details.](consent.md)
 
 Zorg ervoor dat u `MobileCore.configureWith(environmentFileId)` bijwerkt met de `environmentFileId` op basis van de Omgevingsbestands-id uit de tagomgeving waarvoor u ontwikkelt (ontwikkeling, staging of productie).
 

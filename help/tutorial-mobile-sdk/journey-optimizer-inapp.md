@@ -251,7 +251,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
          ![ In-app berichtmontages ](assets/in-app-message-settings.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Review to activate]**. Om naar keuze om het even welke configuraties voor **[!UICONTROL Content]** uit te geven, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, of meer, uitgezocht ![ geeft ](/help/assets/icons/Edit.svg) uit.
-1. In het **[!UICONTROL Review to activate (*campagnenaam *)]**scherm, selecteer **[!UICONTROL Activate]**.
+1. In het **[!UICONTROL Review to activate (*campagnenaam *)]**&#x200B;scherm, selecteer **[!UICONTROL Activate]**.
 1. Na een tijdje, ziet u uw **_campagnenaam_** met status **[!UICONTROL Live]** in de **[!UICONTROL Campaigns]** lijst.
    ![ lijst van de Campagne ](assets/ajo-campaign-list.png){zoomable="yes"}
 

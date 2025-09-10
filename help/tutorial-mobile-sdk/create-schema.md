@@ -105,7 +105,7 @@ Voor leerdoeleinden gebruikt u vooraf gebouwde en aangepaste veldgroepen.
 
 1. Selecteer **[!UICONTROL Next]**.
 
-   ![ de basisklasse van de Tovenaar van 0} Schema](assets/schema-wizard-base-class.png){zoomable="yes"}
+   ![ de basisklasse van de Tovenaar van 0&rbrace; Schema](assets/schema-wizard-base-class.png){zoomable="yes"}
 
 1. Voer in de stap **[!UICONTROL Name and review]** van de wizard **[!UICONTROL Create schema]** een **[!UICONTROL Schema display name]** in, bijvoorbeeld `Luma Mobile Event Schema` en een [!UICONTROL Description] , bijvoorbeeld `Schema for Luma mobile app experience events` .
 
@@ -219,7 +219,7 @@ Voeg nu een aangepaste veldgroep toe met behulp van het aangepaste gegevenstype:
 
    ![ verstrekkend naam &amp; beschrijving ](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
-1. Van het belangrijkste samenstellingsscherm, uitgezochte ** [!UICONTROL App Interactions**].
+1. Van het belangrijkste samenstellingsscherm, uitgezochte **&#x200B; [!UICONTROL App Interactions**].
 
 1. Voeg een gebied aan de wortel van het schema toe door ![ plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) knoop naast de schemanaam te selecteren.
 

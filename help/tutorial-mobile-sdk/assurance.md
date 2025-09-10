@@ -191,7 +191,7 @@ In Xcode:
 
 1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van Xcode in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Build Folder…]** in het menu Xcode **[!UICONTROL Product]** .
+   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Build Folder…] **&#x200B; in het menu Xcode &#x200B;** [!UICONTROL Product]** .
 
 
 1. Selecteer **[!UICONTROL Allow "Luma App" to use your location]** in het dialoogvenster **[!UICONTROL Allow While Using App]** .
@@ -264,7 +264,7 @@ In Android Studio:
 
 1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van de Studio van Android in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Project]** in het menu Android Studio **[!UICONTROL Build]** .
+   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Project] **&#x200B; in het menu Android Studio &#x200B;** [!UICONTROL Build]** .
 
 
 1. Selecteer **[!UICONTROL Allow Luma Android to send you notifications]** in het dialoogvenster **[!UICONTROL Allow]** .

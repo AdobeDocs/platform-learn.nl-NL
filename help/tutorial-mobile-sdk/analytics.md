@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >Aangepaste velden worden onder de Experience Cloud Org-id geplaatst.
 >
-De huurdersnaam `_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
+>De huurdersnaam `_techmarketingdemos` wordt vervangen door de unieke waarde van uw organisatie.
 
 
 
@@ -205,7 +205,7 @@ Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in 
 
   ![ het gebiedsgroep van ExperienceEvent FullExtension ](assets/schema-analytics-extension.png){zoomable="yes"}
 
-* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de [ les van de Gegevens van de Gebeurtenis van het 0} Spoor {hebt gedaan, of](events.md)
+* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de [ les van de Gegevens van de Gebeurtenis van het 0&rbrace; Spoor &lbrace;hebt gedaan, of](events.md)
 * Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer details [ gegevens vastmaken aan de gebeurtenissen van SDK ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [ gegevens in de gebeurtenissen van SDK wijzigen ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
 

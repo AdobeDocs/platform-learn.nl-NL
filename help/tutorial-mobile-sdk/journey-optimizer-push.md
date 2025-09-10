@@ -77,7 +77,7 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
    ![ creeer nieuwe sleutel ](assets/mobile-push-apple-dev-new-key.png){zoomable="yes"}
 
 1. Geef een **[!UICONTROL Key Name]** op.
-1. Selecteer **[!UICONTROL Apple Push Notification service](APNs)**, en selecteer **[!UICONTROL Configure]**.
+1. Selecteer **[!UICONTROL Apple Push Notification service] (APNs)**, en selecteer **[!UICONTROL Configure]**.
    1. Selecteer in het **[!UICONTROL Configure Key]** -scherm **[!UICONTROL Sandbox & Production]** in de vervolgkeuzelijst **[!UICONTROL Environment]** .
    1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Continue]**.
@@ -419,7 +419,7 @@ U moet het apparaattoken registreren voor pushberichten.
 >[!IMPORTANT]
 >
 >**slechts voor iOS**: `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` bepaalt of de dupberichten een zandbak van APNs of een productieserver voor het verzenden van dupberichten gebruiken. Wanneer u de app test in de simulator of op een apparaat, moet u controleren of `messaging.useSandbox` is ingesteld op `true` , zodat u pushmeldingen ontvangt. Wanneer u uw app voor productie implementeert om te testen met gebruik van Apple Testflight, moet u `messaging.useSandbox` instellen op `false` anders kan uw productie-app geen pushmeldingen ontvangen.<br/><br/>
->>Het Overseinen van de Wolk van de Vuurbasis (FCM) steunt **niet** het concept zandbakken voor dupberichten.
+>&#x200B;>Het Overseinen van de Wolk van de Vuurbasis (FCM) steunt **niet** het concept zandbakken voor dupberichten.
 
 
 ## Uw eigen pushmelding maken
