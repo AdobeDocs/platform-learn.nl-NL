@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom maakt in Experience Platform.
 
-Een gegevensstroom is een server-zijconfiguratie op Platform Edge Network. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Platform Edge Network aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) of deze [ video ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Een gegevensstroom is een server-zijconfiguratie op Platform Edge Network. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Platform Edge Network aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) of deze [ video ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architectuur](assets/architecture.png){zoomable="yes"}
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Zie [ gegevensstroommontages ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) voor meer informatie.
+>Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Zie [ gegevensstroommontages ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) voor meer informatie.
 
 Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, stadium en productie). Als u Platform Mobile SDK gebruikt met platformgebaseerde toepassingen, zoals Adobe Real-Time Customer Data Platform of Adobe Journey Optimizer, moet u deze gegevensstromen maken in de juiste sandboxen.
 

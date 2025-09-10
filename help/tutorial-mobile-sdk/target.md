@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Leer hoe u de ervaringen in uw mobiele apps kunt optimaliseren en aanpassen met Platform Mobile SDK en Adobe Target.
 
-Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel. Zie het [ overzicht van de Test A/B ](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab) voor meer informatie.
+Het doel biedt alles wat u moet aanpassen en aanpassen aan de ervaringen van uw klanten. Met Doel kunt u uw omzet maximaliseren op uw website en mobiele sites, apps, sociale media en andere digitale kanalen. Het doel kan tests A/B, multivariate tests uitvoeren, producten en inhoud, doelinhoud adviseren, inhoud auto-personalize met AI, en veel meer. De nadruk in deze les is op de A/B testfunctionaliteit van Doel. Zie het [ overzicht van de Test A/B ](https://experienceleague.adobe.com/nl/docs/target/using/activities/abtest/test-ab) voor meer informatie.
 
 ![Architectuur](assets/architecture-at.png){zoomable="yes"}
 
@@ -31,7 +31,7 @@ Voordat u A/B-tests kunt uitvoeren met Target, moet u ervoor zorgen dat de juist
 ## Vereisten
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
-* Toegang tot Adobe Target met [ toestemmingen, behoorlijk gevormde rollen, werkruimten, en eigenschappen ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
+* Toegang tot Adobe Target met [ toestemmingen, behoorlijk gevormde rollen, werkruimten, en eigenschappen ](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Leerdoelstellingen
@@ -66,9 +66,9 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar Experience Platfo
 
    U kunt de eigenschappen vinden in de doelinterface, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]** . Selecteer ![ Code ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) om het bezitstoken voor het bezit te openbaren u wilt gebruiken. De eigenschapstoken heeft een indeling zoals `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` ; u moet alleen de waarde `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` invoeren.
 
-   U kunt ook een doel-omgeving-id opgeven. Het doel gebruikt omgevingen om uw sites en pre-productieomgevingen te organiseren voor eenvoudig beheer en afzonderlijke rapportering. De vooraf ingestelde omgevingen zijn onder andere Productie, Staging en Ontwikkeling. Zie [ Milieu ](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) en [ identiteitskaart van het Milieu van het Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) voor meer informatie.
+   U kunt ook een doel-omgeving-id opgeven. Het doel gebruikt omgevingen om uw sites en pre-productieomgevingen te organiseren voor eenvoudig beheer en afzonderlijke rapportering. De vooraf ingestelde omgevingen zijn onder andere Productie, Staging en Ontwikkeling. Zie [ Milieu ](https://experienceleague.adobe.com/nl/docs/target/using/administer/environments) en [ identiteitskaart van het Milieu van het Doel ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) voor meer informatie.
 
-   U kunt desgewenst een naamruimte van een externe doelid opgeven ter ondersteuning van profielsynchronisatie op een naamruimte van een identiteit (bijvoorbeeld CRM-id). Zie [ identiteitskaart van de Derde van het Doel namespace ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) voor meer informatie.
+   U kunt desgewenst een naamruimte van een externe doelid opgeven ter ondersteuning van profielsynchronisatie op een naamruimte van een identiteit (bijvoorbeeld CRM-id). Zie [ identiteitskaart van de Derde van het Doel namespace ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) voor meer informatie.
 
 1. Selecteer **[!UICONTROL Save]**.
 
@@ -81,7 +81,7 @@ Om ervoor te zorgen dat gegevens die u van uw mobiele app naar de Edge Network v
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor dat **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Personalization Destinations]** worden geselecteerd. Als u ook de Journey Optimizer-lessen volgt, selecteert u **[!UICONTROL Adobe Journey Optimizer]** . Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor dat **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Personalization Destinations]** worden geselecteerd. Als u ook de Journey Optimizer-lessen volgt, selecteert u **[!UICONTROL Adobe Journey Optimizer]** . Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/configure)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
    ![ de gegevensstroomconfiguratie van AEP ](assets/datastream-aep-configuration-target.png){zoomable="yes"}

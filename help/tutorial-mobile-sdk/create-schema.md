@@ -25,11 +25,11 @@ Experience Platform gebruikt schema&#39;s om de gegevensstructuur op een consist
 
 Voordat gegevens in Platform kunnen worden opgenomen, moet een schema worden samengesteld om de gegevensstructuur te beschrijven en beperkingen te bieden aan het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied.
 
-Voor meer informatie over het model van de schemacompositie, met inbegrip van ontwerpprincipes, en beste praktijken, zie de [ grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) of playlist [ Model Uw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Voor meer informatie over het model van de schemacompositie, met inbegrip van ontwerpprincipes, en beste praktijken, zie de [ grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/schema/composition) of playlist [ Model Uw Gegevens van de Ervaring van de Klant met XDM ](https://experienceleague.adobe.com/nl/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken. Zie [ creëren en handhaven een Document van het Ontwerp van de Oplossing van de Verwijzing (SDR) ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) voor meer informatie.
+>Als u met de Verwijzing van het Ontwerp van de Oplossing van de Analyse vertrouwd bent (SDRs), kunt u aan een schema als robuustere SDR denken. Zie [ creëren en handhaven een Document van het Ontwerp van de Oplossing van de Verwijzing (SDR) ](https://experienceleague.adobe.com/nl/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) voor meer informatie.
 
 ## Vereisten
 
@@ -70,7 +70,7 @@ U bevindt zich nu op de pagina met hoofdschema&#39;s en krijgt een lijst met bes
 * **de Klassen** bepalen de gedragsaspecten van de gegevens die het schema bevat. `XDM ExperienceEvent` legt bijvoorbeeld tijdreeksen, gebeurtenisgegevens vast en `XDM Individual Profile` legt kenmerkgegevens over een individu vast.
 * **de types van Gegevens** worden gebruikt als types van verwijzingsgebied in klassen of gebiedsgroepen op de zelfde manier zoals fundamentele letterlijke gebieden.
 
-De bovenstaande beschrijvingen zijn een overzicht op hoog niveau. Voor meer details, zie de [ bouwstenen van het Schema ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) video of lees [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) in de productdocumentatie.
+De bovenstaande beschrijvingen zijn een overzicht op hoog niveau. Voor meer details, zie de [ bouwstenen van het Schema ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/schemas/schema-building-blocks) video of lees [ Grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/schema/composition) in de productdocumentatie.
 
 In deze zelfstudie gebruikt u de vervolgkeuzelijst Consumer Experience Event en maakt u een aangepaste les om het proces aan te tonen.
 

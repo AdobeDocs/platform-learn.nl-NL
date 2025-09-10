@@ -43,7 +43,7 @@ In deze les zult u:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens (typisch een lijst) die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Zie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) voor meer informatie.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens (typisch een lijst) die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Zie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) voor meer informatie.
 
 1. Navigeer naar de gebruikersinterface van Experience Platform. Selecteer **[!UICONTROL Experience Platform]** van Apps ![ Apps ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
 
@@ -106,7 +106,7 @@ Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien 
 U ziet ook voorbeeldrecords en velden met de functie **[!UICONTROL Preview dataset]** :
 ![ bevestigt levenscyclus die naar de dataset van het Platform wordt verzonden ](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-Een robuuster hulpmiddel om gegevens te bevestigen is de de vraagdienst van het Platform [&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data).
+Een robuuster hulpmiddel om gegevens te bevestigen is de de vraagdienst van het Platform [&#128279;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data).
 
 ## Klantprofiel in realtime inschakelen
 
@@ -157,7 +157,7 @@ Van het scherm van profieldetails:
 1. Als u de identiteitsgrafiek wilt weergeven, klikt u op de koppeling of navigeert u naar **[!UICONTROL Identities]** en selecteert u **[!UICONTROL Identity Graph]** in de bovenste balk.
 1. Als u de identiteitswaarde wilt opzoeken, geeft u `Luma CRM ID` op als de **[!UICONTROL Identity namespace]** en de gekopieerde waarde als de **[!UICONTROL Identity value]** . Selecteer vervolgens **[!UICONTROL View]** .
 
-   Deze visualisatie toont u de identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier is een voorbeeld van een identiteitsgrafiek die van gegevens wordt geconstrueerd die van de voltooiing van zowel dit Mobiele zelfstudie van SDK (Gegevens Source 2) worden verzameld en het [ Web SDK leerprogramma ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview) (Gegevens Source 1):
+   Deze visualisatie toont u de identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier is een voorbeeld van een identiteitsgrafiek die van gegevens wordt geconstrueerd die van de voltooiing van zowel dit Mobiele zelfstudie van SDK (Gegevens Source 2) worden verzameld en het [ Web SDK leerprogramma ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview) (Gegevens Source 1):
 
    ![ greep een identiteitswaarde ](assets/platform-profile-identitygraph.png){zoomable="yes"}
 

@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Leer hoe u een eigenschap tag in de interface [!UICONTROL Data Collection] configureert.
 
-Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig analyses, marketing en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Leer meer over [ Markeringen ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) in de productdocumentatie.
+Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig analyses, marketing en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Leer meer over [ Markeringen ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home) in de productdocumentatie.
 
 ## Vereisten
 
@@ -23,7 +23,7 @@ Om de les te voltooien, moet u toestemming hebben om een markeringsbezit tot sta
 
 >[!NOTE]
 >
-> Platform Launch (Kant van de Cliënt) is nu [ Markeringen ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch (Kant van de Cliënt) is nu [ Markeringen ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/home)
 
 ## Leerdoelstellingen
 

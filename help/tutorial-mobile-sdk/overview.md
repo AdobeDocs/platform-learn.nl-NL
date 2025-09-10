@@ -64,7 +64,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
    * **[!UICONTROL Property Rights]** - wijs items toe aan **[!UICONTROL Develop]** , **[!UICONTROL Approve]** , **[!UICONTROL Publish]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Manage Environments]** .
    * **[!UICONTROL Company Rights]**—Items toestaan aan **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [ in de productdocumentatie.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}
+     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [ in de productdocumentatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/admin/user-permissions){target="_blank"}
 * In Experience Platform moet u beschikken over:
    * **[!UICONTROL Data Modeling]** - machtigingsitems om schema&#39;s te beheren en weer te geven.
    * **[!UICONTROL Identity Management]** - machtigingsitems om naamruimten voor identiteiten te beheren en weer te geven.
@@ -74,7 +74,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
       * **[!UICONTROL Data Management]** - toestemmingspunten om datasets te beheren en te bekijken.
       * Een ontwikkelings **zandbak** die u voor dit leerprogramma kunt gebruiken.
 
-   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Bovendien, voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren, zoals die in** niveaus van de Toestemming [ worden beschreven.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)
+   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Bovendien, voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren, zoals die in** niveaus van de Toestemming [ worden beschreven.](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/high-low-permissions)
 
 * Voor Adobe Analytics, moet u weten welke **rapportreeksen** u kunt gebruiken om dit leerprogramma te voltooien.
 
