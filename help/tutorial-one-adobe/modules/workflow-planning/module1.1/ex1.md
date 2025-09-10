@@ -4,7 +4,7 @@ description: Aan de slag met Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
+source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Dan moet je dit zien. Klik **creëren Workspace**.
 
 ![ Planning van Workfront ](./images/wfpl3.png)
 
-Klik **van het Gebruik tempmate** voor het malplaatje **Basis Marketing Beheer**.
+Klik **malplaatje van het Gebruik** voor het malplaatje **Basis Marketing Beheer**.
 
 ![ Planning van Workfront ](./images/wfpl4.png)
 
