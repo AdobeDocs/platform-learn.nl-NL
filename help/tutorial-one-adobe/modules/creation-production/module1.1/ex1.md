@@ -74,7 +74,7 @@ Het eerste wat nodig is om dit te bereiken, is een zwarte en witte versie van de
 
 ![ Postman ](./images/CitiSignal.jpg)
 
-### {0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
+### &lbrace;0.1 Maak uw compositieverwijzingsafbeelding1.1.1.3
 
 U kunt [ dit steekproefbeeld ](./images/CitiSignal.jpg) gebruiken of u kunt uw eigen tekst tot stand brengen om te experimenteren. Volg de onderstaande stappen in Adobe Illustrator om uw eigen afbeeldingsbestand te maken. Als u de vooraf gedefinieerde afbeelding wilt gebruiken, slaat u de onderstaande sectie over en gaat u naar stap **1.1.1.3.2. Genereer de afbeelding** rechtstreeks.
 
@@ -208,7 +208,7 @@ De rol neer aan **Gevolgen**, gaat naar **Thema&#39;s** en selecteert een effect
 
 ![ Postman ](./images/ffui9.png)
 
-Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **** en inspecteert het netwerkverzoek dat wordt verzonden.
+Zorg ervoor **Hulpmiddelen van de Ontwikkelaar** nog open in uw browser is. Dan, produceert de klik **&#x200B;**&#x200B;en inspecteert het netwerkverzoek dat wordt verzonden.
 
 ![ Postman ](./images/ffui10.png)
 
@@ -245,7 +245,7 @@ Het verzoek u hier zult gebruiken is a **asynchroon** verzoek, dat u van een rea
 >
 >Met de release van Firefly Image 4 en Image 4 Ultra worden synchrone aanvragen vervangen door asynchrone aanvragen.
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V3 async** van **FF - Firefly Services de Instanties van de Tech van de Tech {** inzameling. Ga naar **Kopballen** en verifieer de sleutel/waardepaarcombinaties.
+Selecteer het verzoek genoemd **POST - Firefly - T2I V3 async** van **FF - Firefly Services de Instanties van de Tech van de Tech &lbrace;** inzameling. Ga naar **Kopballen** en verifieer de sleutel/waardepaarcombinaties.
 
 | Sleutel | Waarde |
 |:-------------:| :---------------:| 
@@ -353,7 +353,7 @@ Uw afbeelding is nu weer een beetje gewijzigd.
 
 ## 1.1.1.7 Firefly Services API, Gen Expand
 
-Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en gaat naar het** Lichaam **van het verzoek.**
 
 - **grootte**: Ga de gewenste resolutie in. De hier ingevoerde waarde moet groter zijn dan de oorspronkelijke grootte van de afbeelding en mag niet groter zijn dan 3999.
 - **image.source.url**: Dit gebied vereist een verbinding aan het beeld dat moet worden uitgebreid. In dit voorbeeld wordt een variabele gebruikt om te verwijzen naar de afbeelding die tijdens de vorige oefening is gegenereerd.
@@ -387,7 +387,7 @@ Vervolgens ziet u een vergelijkbare afbeelding.
 
 ![ Firefly ](./images/ff13c.png)
 
-Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en gaat naar het** Lichaam **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - Gen breidt async** uit van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en gaat naar het** Lichaam **van het verzoek.**
 
 Wanneer u de uitlijning van de plaatsing wijzigt, zal de uitvoer ook iets anders zijn. In dit voorbeeld, wordt de plaatsing veranderd in **verlaten, bodem**. Klik **verzenden**. Vervolgens ontvangt u een reactie met een koppeling naar het statusrapport van de taak die u zojuist hebt verzonden.
 
@@ -411,9 +411,9 @@ Met de recente release van Firefly Image Model 4 zijn verschillende verbeteringe
 
 Firefly Image Model 4 geeft u uitzonderlijke beelden van mensen, dieren en gedetailleerde scènes en u kunt Afbeeldingsmodel 4 Ultra gebruiken voor het genereren van beelden met hyperrealistische menselijke interacties, architectonische elementen en complexe landschappen. &#x200B;
 
-### {0.1 image4_standard1.1.1.8
+### &lbrace;0.1 image4_standard1.1.1.8
 
-Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van de Technische Instanties van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
+Selecteer het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van de Technische Instanties van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
 
 U zult opmerken dat URL van het verzoek van **Firefly Services API, Tekst 2 Beeld, Beeld 3** verzoek verschillend is, dat **https://firefly-api.adobe.io/v3/images/generate** was. Dit URL richt aan **https://firefly-api.adobe.io/v3/images/generate-async**. De toevoeging van **- async** in URL betekent u het asynchrone eindpunt gebruikt.
 
@@ -447,9 +447,9 @@ U zou dan een hyperrealistisch beeld van **paarden op een gebied** moeten zien.
 
 ![ Firefly ](./images/ffim4_7.png)
 
-### {0.2 image4_ultra1.1.1.8
+### &lbrace;0.2 image4_ultra1.1.1.8
 
-Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3} inzameling van Tech Insiders van Firefly Services {en ga naar de** Kopballen **van het verzoek.**
+Ga terug naar het verzoek genoemd **POST - Firefly - T2I V4** van **FF - de 3&rbrace; inzameling van Tech Insiders van Firefly Services &lbrace;en ga naar de** Kopballen **van het verzoek.**
 
 Verander veranderlijk **x-model-versie** in `image4_ultra`. In dit voorbeeld gebruikt u `image4_ultra` .
 
