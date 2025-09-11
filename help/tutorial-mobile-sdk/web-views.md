@@ -27,7 +27,7 @@ In deze les zult u:
 
 ## Mogelijke problemen met bijhouden
 
-Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) worden gevonden.
+Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) worden gevonden.
 
 Als u de verbroken resultaten en opgepompte gegevens wilt oplossen, moet u de ECID van de gebruiker doorgeven van het native gedeelte van uw app naar een WebView die u wellicht wilt gebruiken in uw app.
 
