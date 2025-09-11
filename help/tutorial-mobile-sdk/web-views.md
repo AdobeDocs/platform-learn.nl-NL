@@ -3,7 +3,7 @@ title: WebViews afhandelen met Platform Mobile SDK
 description: Leer hoe u gegevensverzameling kunt verwerken met WebViews in een mobiele app.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In deze les zult u:
 
 ## Mogelijke problemen met bijhouden
 
-Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) worden gevonden.
+Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) worden gevonden.
 
 Als u de verbroken resultaten en opgepompte gegevens wilt oplossen, moet u de ECID van de gebruiker doorgeven van het native gedeelte van uw app naar een WebView die u wellicht wilt gebruiken in uw app.
 
@@ -110,11 +110,11 @@ De code uitvoeren:
 
 >[!TAB  iOS ]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB  Android ]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 

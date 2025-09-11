@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde d
 
 ![Architectuur](assets/architecture-ajo.png){zoomable="yes"}
 
-Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Om de in-app overseinenstroom in Journey Optimizer te begrijpen, verwijs naar [ de documentatie ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/in-app/inapp-configuration).
+Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Om de in-app overseinenstroom in Journey Optimizer te begrijpen, verwijs naar [ de documentatie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* De toegang tot Journey Optimizer en [ voldoende toestemmingen voor dupberichten ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* De toegang tot Journey Optimizer en [ voldoende toestemmingen voor dupberichten ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Campagnes beheren.
 * Fysiek iOS-apparaat of simulator voor testen.
 
@@ -67,11 +67,11 @@ Om te beginnen moet u een kanaalconfiguratie maken om meldingen van App-berichte
    >
    > Namen moeten beginnen met een letter (A-Z). Het mag alleen alfanumerieke tekens bevatten. U kunt ook onderstrepingsteken `_` -, punt `.` - en afbreekstreepjes `-` gebruiken.
 
-1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/object-based-access).
+1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Selecteer het **In-app overseinen** kanaal.
 
-1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren die deze configuratie gebruiken. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Bijvoorbeeld: push-gericht.
+1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren die deze configuratie gebruiken. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Bijvoorbeeld: push-gericht.
 
 1. Selecteer het platform waarvoor u de instellingen wilt definiëren. Met deze instelling kunt u de doelapp voor elk platform opgeven en zorgt u voor consistente levering van inhoud op meerdere platforms.
 
@@ -93,7 +93,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![ uitgeven ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/configure)
+1. In **[!UICONTROL Datastreams]** > ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
 
@@ -251,7 +251,7 @@ De SDK-gebeurtenishub publiceert en ontvangt gebeurtenisgegevens van geregistree
          ![ In-app berichtmontages ](assets/in-app-message-settings.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Review to activate]**. Om naar keuze om het even welke configuraties voor **[!UICONTROL Content]** uit te geven, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, of meer, uitgezocht ![ geeft ](/help/assets/icons/Edit.svg) uit.
-1. In het **[!UICONTROL Review to activate (*campagnenaam *)]**&#x200B;scherm, selecteer **[!UICONTROL Activate]**.
+1. In het **[!UICONTROL Review to activate (*campagnenaam *)]**scherm, selecteer **[!UICONTROL Activate]**.
 1. Na een tijdje, ziet u uw **_campagnenaam_** met status **[!UICONTROL Live]** in de **[!UICONTROL Campaigns]** lijst.
    ![ lijst van de Campagne ](assets/ajo-campaign-list.png){zoomable="yes"}
 
@@ -317,7 +317,7 @@ U kunt de berichten in de app valideren vanuit de app zelf.
 
 1. Tik op **[!UICONTROL In-App Message]**. Het bericht in de app wordt weergegeven in uw app.
 
-   <img src="assets/ajo-in-app-message.png" width="300" />
+   <img src="assets/ajo-in-app-message.png" width="300">
 
 
 >[!TAB  Android ]
@@ -328,7 +328,7 @@ U kunt de berichten in de app valideren vanuit de app zelf.
 
 1. Tik op **[!UICONTROL In-App Message]**. Het bericht in de app wordt weergegeven in uw app.
 
-   <img src="assets/ajo-in-app-message-android.png" width="300" />
+   <img src="assets/ajo-in-app-message-android.png" width="300">
 
 
 >[!ENDTABS]

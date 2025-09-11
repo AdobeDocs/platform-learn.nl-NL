@@ -3,7 +3,7 @@ title: Plaatsen gebruiken met Platform Mobile SDK
 description: Leer hoe u de geolocatieservice Plaatsen in uw mobiele app gebruikt.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 1%
@@ -400,15 +400,15 @@ U kunt als volgt de functies voor geolocatie in uw app valideren:
 
 1. Verplaats (sleep) de kaart om ervoor te zorgen dat de blauwe middelste cirkel zich boven een van uw POI&#39;s bevindt, bijvoorbeeld Londen.
 
-1. Tikken <img src="assets/geobutton.png" width="20" /> totdat u de categorie en naam ziet in het label op de rode locatie met de pin.
+1. Tikken <img src="assets/geobutton.png" width="20"> totdat u de categorie en naam ziet in het label op de rode locatie met de pin.
 
 1. Tik op het label van de POI die het **[!UICONTROL Nearby POI]** -blad opent.
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. Druk op de knoppen **[!UICONTROL Entry]** of **[!UICONTROL Exit]** om geofence-item en geofence exit-gebeurtenissen uit de app te simuleren.
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. De gebeurtenissen worden weergegeven in de gebruikersinterface van Assurance. Zowel in de Gebeurtenissen als in de Gebeurtenissen van de Dienst van Plaatsen.
 
@@ -420,12 +420,12 @@ U kunt als volgt de functies voor geolocatie in uw app valideren:
 
 1. Tik ergens in de rode cirkel die wordt weergegeven.
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. Druk op de knoppen **[!UICONTROL Entry]** of **[!UICONTROL Exit]** om geofence-item en geofence exit-gebeurtenissen uit de app te simuleren.
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. De gebeurtenissen worden weergegeven in de gebruikersinterface van Assurance.
 

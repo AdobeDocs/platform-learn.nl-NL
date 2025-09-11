@@ -3,7 +3,7 @@ title: Profielgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor a
    Deze code:
 
    1. Roept de [`UserProfile.getUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `isPaidUser` attribuutnaam als enig element in de `attributeNames` serie.
-   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` en wanneer `yes` een badge op het tabblad <img src="assets/paiduser.png" width="20" /> in de werkbalk rechtsboven.
+   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` en wanneer `yes` een badge op het tabblad <img src="assets/paiduser.png" width="20"> in de werkbalk rechtsboven.
 
 >[!TAB  Android ]
 
@@ -139,7 +139,7 @@ Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor a
    Deze code:
 
    1. Roept de [`UserProfile.getUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `isPaidUser` attribuutnaam als enig element in de `attributeNames` serie.
-   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` . Wanneer `yes` , vervangt de code het persoonspictogram met een symbool op <img src="assets/paiduser.png" width="20" /> in de werkbalk rechtsboven.
+   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` . Wanneer `yes` , vervangt de code het persoonspictogram met een symbool op <img src="assets/paiduser.png" width="20"> in de werkbalk rechtsboven.
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ Zie de [ API verwijzing ](https://developer.adobe.com/client-sdks/documentation/
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer één product.
 1. Selecteren <img src="assets/saveforlater.png" width="15" />.
-1. Selecteren <img src="assets/addtocart.png" width="20" />.
+1. Selecteren <img src="assets/addtocart.png" width="20">.
 1. Selecteren <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ Zie de [ API verwijzing ](https://developer.adobe.com/client-sdks/documentation/
 
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer één product.
-1. Selecteren<img src="assets/heart.png" width="25" />.
-1. Selecteren <img src="assets/addtocart.png" width="20" />.
+1. Selecteren<img src="assets/heart.png" width="25">.
+1. Selecteren <img src="assets/addtocart.png" width="20">.
 1. Selecteren <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">

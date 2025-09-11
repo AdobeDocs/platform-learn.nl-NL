@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '3282'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Leer hoe u pushmeldingen voor mobiele apps maakt met Experience Platform Mobile SDK en Journey Optimizer.
 
-Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Om de de gegevensstroom van de Berichten van de Duw in Journey Optimizer te begrijpen, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/channels/push/push-config/push-gs).
+Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepen. Voordat u pushmeldingen verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie zijn geïnstalleerd. Om de de gegevensstroom van de Berichten van de Duw in Journey Optimizer te begrijpen, verwijs naar de [ documentatie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs).
 
 ![Architectuur](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ Met Journey Optimizer kunt u reizen maken en berichten verzenden naar doelgroepe
 
 * De app is gemaakt en uitgevoerd met SDK&#39;s geïnstalleerd en geconfigureerd.
 * Stel de app in voor Adobe Experience Platform.
-* De toegang tot Journey Optimizer en [ voldoende toestemmingen ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/channels/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* De toegang tot Journey Optimizer en [ voldoende toestemmingen ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Maak een pushreferentie.
    * Maak een push-kanaalconfiguratie.
    * Maak een reis.
@@ -77,7 +77,7 @@ De volgende stappen zijn niet Adobe Experience Cloud-specifiek en zijn ontworpen
    ![ creeer nieuwe sleutel ](assets/mobile-push-apple-dev-new-key.png){zoomable="yes"}
 
 1. Geef een **[!UICONTROL Key Name]** op.
-1. Selecteer **[!UICONTROL Apple Push Notification service] (APNs)**, en selecteer **[!UICONTROL Configure]**.
+1. Selecteer **[!UICONTROL Apple Push Notification service](APNs)**, en selecteer **[!UICONTROL Configure]**.
    1. Selecteer in het **[!UICONTROL Configure Key]** -scherm **[!UICONTROL Sandbox & Production]** in de vervolgkeuzelijst **[!UICONTROL Environment]** .
    1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Continue]**.
@@ -174,12 +174,12 @@ Als u eenmaal een configuratie voor pushreferenties hebt gemaakt, moet u een con
    > Namen moeten beginnen met een letter (A-Z). Het mag alleen alfanumerieke tekens bevatten. U kunt ook onderstrepingsteken `_` -, punt `.` - en afbreekstreepjes `-` gebruiken.
 
 
-1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/object-based-access).
+1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [ leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Selecteer het **Push** kanaal.
 
 
-1. Selecteer **[!UICONTROL Marketing action(s)]** om toestemmingsbeleid met de berichten te associëren gebruikend deze configuratie. Alle toestemmingsbeleid verbonden aan de marketing acties wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. Selecteer **[!UICONTROL Marketing action(s)]** om toestemmingsbeleid met de berichten te associëren gebruikend deze configuratie. Alle toestemmingsbeleid verbonden aan de marketing acties wordt gebruikt om de voorkeur van uw klanten te respecteren. [ leer meer over marketing acties ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
 1. Kies uw **[!UICONTROL Platform]** . U kunt zowel **[!UICONTROL iOS]** als **[!UICONTROL Android]** configureren voor een kanaalconfiguratie.
 
@@ -203,7 +203,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 
    1. Selecteer **[!UICONTROL AJO Push Profile Dataset]** in **[!UICONTROL Profile Dataset]** als dit nog niet is geselecteerd. Deze profieldataset wordt vereist wanneer het gebruiken van de `MobileCore.setPushIdentifier` API vraag (zie [ het apparatenteken van het Register voor duw berichten ](#register-device-token-for-push-notifications)). Deze selectie zorgt er ook voor dat de unieke id voor pushberichten (ook wel push-id genoemd) wordt opgeslagen als onderdeel van het profiel van de gebruiker.
 
-   1. **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/configure)
+   1. **[!UICONTROL Adobe Journey Optimizer]** is geselecteerd. Zie {de montages van 0} Adobe Experience Platform [ voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
    1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
@@ -256,11 +256,11 @@ Uw app werkt alleen met Journey Optimizer als u de eigenschap tag bijwerkt.
 
 >[!TAB  iOS ]
 
-<img src="assets/luma-app-push.png" width="300" />
+<img src="assets/luma-app-push.png" width="300">
 
 >[!TAB  Android ]
 
-<img src="assets/luma-app-push-android.png" width="300" />
+<img src="assets/luma-app-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -419,7 +419,7 @@ U moet het apparaattoken registreren voor pushberichten.
 >[!IMPORTANT]
 >
 >**slechts voor iOS**: `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` bepaalt of de dupberichten een zandbak van APNs of een productieserver voor het verzenden van dupberichten gebruiken. Wanneer u de app test in de simulator of op een apparaat, moet u controleren of `messaging.useSandbox` is ingesteld op `true` , zodat u pushmeldingen ontvangt. Wanneer u uw app voor productie implementeert om te testen met gebruik van Apple Testflight, moet u `messaging.useSandbox` instellen op `false` anders kan uw productie-app geen pushmeldingen ontvangen.<br/><br/>
->&#x200B;>Het Overseinen van de Wolk van de Vuurbasis (FCM) steunt **niet** het concept zandbakken voor dupberichten.
+>>Het Overseinen van de Wolk van de Vuurbasis (FCM) steunt **niet** het concept zandbakken voor dupberichten.
 
 
 ## Uw eigen pushmelding maken
@@ -443,7 +443,7 @@ U gaat een nieuw gebeurtenistype bepalen, nog niet beschikbaar als deel van de l
 
 ### Een gebeurtenis definiëren
 
-Met gebeurtenissen in Journey Optimizer kunt u reizen starten om berichten te verzenden, bijvoorbeeld pushberichten. Zie [ Ongeveer gebeurtenissen ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) voor meer informatie.
+Met gebeurtenissen in Journey Optimizer kunt u reizen starten om berichten te verzenden, bijvoorbeeld pushberichten. Zie [ Ongeveer gebeurtenissen ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) voor meer informatie.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Configurations]** in het linkerspoor.
 
@@ -682,7 +682,7 @@ U kunt als volgt de pushmelding en de rit valideren:
 
    De pushmelding wordt vóór de app weergegeven.
 
-   <img src="assets/ajo-test-push.png" width="300" />
+   <img src="assets/ajo-test-push.png" width="300">
 
 >[!TAB  Android ]
 
@@ -694,7 +694,7 @@ U kunt als volgt de pushmelding en de rit valideren:
 
    De pushmelding wordt vóór de app weergegeven.
 
-   <img src="assets/ajo-test-push-android.png" width="300" />
+   <img src="assets/ajo-test-push-android.png" width="300">
 
 >[!ENDTABS]
 
