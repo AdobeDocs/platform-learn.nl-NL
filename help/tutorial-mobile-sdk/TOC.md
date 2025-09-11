@@ -8,24 +8,24 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 58%
+source-wordcount: '79'
+ht-degree: 62%
 
 ---
 
 
-# Het Experience Cloud implementeren in mobiele apps {#implement-mobile-sdk}
+# Experience Cloud implementeren in mobiele apps {#implement-mobile-sdk}
 
 + [Overzicht van tutorial](overview.md)
-+ Initiële configuratie {#initial-configuration}
++ Oorspronkelijke configuratie {#initial-configuration}
    + [Een schema maken](create-schema.md)
    + [Een gegevensstroom maken](create-datastream.md)
    + [Tags configureren](configure-tags.md)
-+ Implementatie van toepassing {#app-implementation}
++ App-implementatie{#app-implementation}
    + [SDK&#39;s installeren](install-sdks.md)
-   + [Betrouwbaarheid](assurance.md)
+   + [Assurance](assurance.md)
    + [Toestemming](consent.md)
    + [Levenscyclusgegevens](lifecycle-data.md)
    + [Gebeurtenisgegevens](events.md)
@@ -33,7 +33,7 @@ ht-degree: 58%
    + [Identiteit](identity.md)
    + [Profiel](profile.md)
    + [Plaatsen](places.md)
-+ Experience Cloud {#experience-cloud}
++ Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + Journey Optimizer{#journey-optimizer}
@@ -42,5 +42,6 @@ ht-degree: 58%
       + [Beslissingsbeheer](journey-optimizer-offers.md)
    + [Target](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [Testen](test.md)
 + [Conclusie](conclusion.md)
 
