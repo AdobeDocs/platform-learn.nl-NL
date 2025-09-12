@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -93,6 +93,6 @@ Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-ses
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer een product.
-1. Selecteer ![ sparen voor later ](assets/saveforlater.png) (iOS) of ![ sparen voor later ](assets/heart.png){width=25} (Android).
+1. Selecteer ![ sparen voor later ](assets/saveforlater.png) (iOS) of ![ sparen voor later ](assets/heart.png) (Android).
 1. Selecteer ![ toe:voegen aan kar ](assets/addtocart.png).
 1. Selecteer ![ Aankoop ](assets/purchase.png).
