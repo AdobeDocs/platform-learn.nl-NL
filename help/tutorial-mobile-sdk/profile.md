@@ -3,7 +3,7 @@ title: Profielgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -160,7 +160,7 @@ Zie de [ API verwijzing ](https://developer.adobe.com/client-sdks/documentation/
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de knop >.
+1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de knop **[!UICONTROL A |]** .
 1. Selecteer **[!UICONTROL Login]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">

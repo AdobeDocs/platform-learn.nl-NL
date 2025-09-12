@@ -4,9 +4,9 @@ description: Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 
 Met Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien. De services bieden een brug tussen identiteiten op verschillende apparaten en systemen en bieden u de mogelijkheid om in real-time effectieve, persoonlijke digitale ervaringen te bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
-Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) in de documentatie.
+Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) in de documentatie.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
 
 
 >[!BEGINTABS]
@@ -246,6 +246,8 @@ MobileSDK.shared.removeIdentities(
 <img src="./assets/identity1-android.png" width="300">
 
 >[!ENDTABS]
+
+In het **[!UICONTROL Identities]** -scherm:
 
 1. Geef een e-mailadres en een CRM-id op, of
 1. Selecteer **[!UICONTROL A |]** (iOS) of **[!UICONTROL Generate Random Email]** (Android) om een **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** willekeurig te genereren.

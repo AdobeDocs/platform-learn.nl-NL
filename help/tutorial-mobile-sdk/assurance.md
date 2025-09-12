@@ -4,7 +4,7 @@ description: Leer hoe u de Assurance-extensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
 Assurance, officieel bekend als Project Griffon, is ontworpen om u te helpen bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet in uw mobiele app.
 
-Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [ Assurance ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home) in de productdocumentatie.
+Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [ Assurance ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) in de productdocumentatie.
 
 
 ## Vereisten
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [ in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/user-access)
+Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [ in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)
 
 ## Implementeren
 
@@ -105,7 +105,7 @@ U moet een unieke bundle-id opgeven voor uw app.
 
 Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
 
-![ Xcode ondertekenende mogelijkheden ](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![ Xcode ondertekenende mogelijkheden ](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB  Android ]
 
@@ -191,7 +191,7 @@ In Xcode:
 
 1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van Xcode in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Build Folder…] **&#x200B; in het menu Xcode &#x200B;** [!UICONTROL Product]** .
+   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Build Folder…]** in het menu Xcode **[!UICONTROL Product]** .
 
 
 1. Selecteer **[!UICONTROL Allow "Luma App" to use your location]** in het dialoogvenster **[!UICONTROL Allow While Using App]** .
@@ -264,7 +264,7 @@ In Android Studio:
 
 1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van de Studio van Android in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Project] **&#x200B; in het menu Android Studio &#x200B;** [!UICONTROL Build]** .
+   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Project]** in het menu Android Studio **[!UICONTROL Build]** .
 
 
 1. Selecteer **[!UICONTROL Allow Luma Android to send you notifications]** in het dialoogvenster **[!UICONTROL Allow]** .
@@ -341,7 +341,7 @@ In uw browser:
 
 >[!ENDTABS]
 
-Als u in om het even welke uitdagingen in werking stelt, herzie [ technische ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home){target="_blank"}.
+Als u in om het even welke uitdagingen in werking stelt, herzie [ technische ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}.
 
 
 ## Extensies verifiëren
