@@ -17,7 +17,7 @@ Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 
 Met Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien. De services bieden een brug tussen identiteiten op verschillende apparaten en systemen en bieden u de mogelijkheid om in real-time effectieve, persoonlijke digitale ervaringen te bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
-Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) in de documentatie.
+Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) in de documentatie.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
 
 
 >[!BEGINTABS]
