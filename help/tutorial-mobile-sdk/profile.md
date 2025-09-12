@@ -3,9 +3,9 @@ title: Profielgegevens verzamelen met Platform Mobile SDK
 description: Leer hoe u profielgegevens kunt verzamelen in een mobiele app.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Het is handig om gebruikers te laten kiezen voor een bepaald doel en om de app a
 
    1. Gebruikt het `profileMap` woordenboek als waarde aan de `attributeDict` parameter van de [`UserProfile.updateUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API vraag.
 
-1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in de Xcode Project navigator en zoek de aanroep naar `updateUserAttributes` (in de code voor Aankopen) <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
+1. Navigeer aan **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in de navigator van het Project van Xcode en vind de vraag aan `updateUserAttributes` (binnen de code voor de Aankopen ![ CreditCard ](/help/assets/icons/CreditCard.svg) knoop). Voeg de volgende code toe:
 
    ```swift
    // Update attributes
@@ -87,7 +87,7 @@ Het is handig om gebruikers te laten kiezen voor een bepaald doel en om de app a
 
    1. Gebruikt de `profileMap` kaart als waarde aan de `attributeDict` parameter van de [`UserProfile.updateUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API vraag.
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** en vind de vraag aan `updateUserAttributes` (binnen de code voor de Aankopen <img src="assets/purchase.png" width="15" /> ). Voeg de volgende code toe:
+1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** en vind de vraag aan `updateUserAttributes` (binnen de code voor de Aankopen ![ CreditCard ](/help/assets/icons/CreditCard.svg) knoop). Voeg de volgende code toe:
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor a
    Deze code:
 
    1. Roept de [`UserProfile.getUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `isPaidUser` attribuutnaam als enig element in de `attributeNames` serie.
-   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` en wanneer `yes` een badge op het tabblad <img src="assets/paiduser.png" width="20"> in de werkbalk rechtsboven.
+   1. Dan controles op de waarde van het `isPaidUser` attribuut en wanneer `yes`, een badge op het ![ UserCheckedOut ](/help/assets/icons/UserCheckedOut.svg) pictogram in de toolbar bij het hoogste recht plaatst.
 
 >[!TAB  Android ]
 
@@ -139,7 +139,7 @@ Nadat u het kenmerk van een gebruiker hebt bijgewerkt, is het beschikbaar voor a
    Deze code:
 
    1. Roept de [`UserProfile.getUserAttributes` ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API met de `isPaidUser` attribuutnaam als enig element in de `attributeNames` serie.
-   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` . Wanneer `yes` , vervangt de code het persoonspictogram met een symbool op <img src="assets/paiduser.png" width="20"> in de werkbalk rechtsboven.
+   1. Vervolgens wordt gecontroleerd op de waarde van het kenmerk `isPaidUser` . In `yes` vervangt de code het persoonlijke pictogram door een pictogram met een badge in de werkbalk rechtsboven.
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ Zie de [ API verwijzing ](https://developer.adobe.com/client-sdks/documentation/
 
 1. Selecteer **[!UICONTROL Home]** in de tabbalk.
 1. Het Assurance-pictogram naar links verplaatsen.
-1. Als u het aanmeldingsblad wilt openen, selecteert u de optie <img src="assets/login.png" width="15" /> .
+1. Om het Login blad te openen, selecteer de ![ knoop van de Gebruiker ](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de <img src="assets/insert.png" width="15" /> .
+1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de knop >.
 1. Selecteer **[!UICONTROL Login]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer één product.
-1. Selecteren <img src="assets/saveforlater.png" width="15" />.
-1. Selecteren <img src="assets/addtocart.png" width="20">.
-1. Selecteren <img src="assets/purchase.png" width="15" />.
+1. Selecteer ![ Hart ](/help/assets/icons/Heart.svg).
+1. Selecteer ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg).
+1. Selecteer ![ CreditCard ](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. Ga terug naar **[!UICONTROL Home]** screen. Je moet zien dat er een badge is toegevoegd <img src="assets/person-badge-icon.png" width="15" />.
+1. Ga terug naar **[!UICONTROL Home]** screen. U zou moeten zien dat een badge ![ UserCheckedOut ](/help/assets/icons/UserCheckedOut.svg) is toegevoegd.
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ Zie de [ API verwijzing ](https://developer.adobe.com/client-sdks/documentation/
 
 1. Selecteer **[!UICONTROL Home]** in de tabbalk.
 1. Het Assurance-pictogram naar links verplaatsen.
-1. Als u het aanmeldingsblad wilt openen, selecteert u de optie <img src="assets/login.png" width="15" /> .
+1. Om het Login blad te openen, selecteer de ![ knoop van de Gebruiker ](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. Als u een willekeurige e-mail en een klant-id wilt invoegen, selecteert u de <img src="assets/insert.png" width="15" /> .
+1. Selecteer **[!UICONTROL Generate Random Email]** als u een willekeurige e-mail en een klant-id wilt invoegen.
 1. Selecteer **[!UICONTROL Login]**.
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer één product.
-1. Selecteren<img src="assets/heart.png" width="25">.
-1. Selecteren <img src="assets/addtocart.png" width="20">.
-1. Selecteren <img src="assets/purchase.png" width="15" />.
+1. Selecteer ![ ThumbUp ](/help/assets/icons/ThumbUp.svg)
+1. Selecteer ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg).
+1. Selecteer ![ CreditCard ](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 

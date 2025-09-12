@@ -3,9 +3,9 @@ title: Gebeurtenisgegevens bijhouden in mobiele apps met de Experience Platform 
 description: Leer hoe u gebeurtenisgegevens kunt bijhouden in een mobiele app.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
@@ -200,9 +200,9 @@ U gaat nu deze code in uw project uitvoeren.
 U hebt verschillende acties met betrekking tot handelsproducten in uw app en u wilt gebeurtenissen verzenden op basis van deze acties die door de gebruiker worden uitgevoerd:
 
 * weergave: vindt plaats wanneer een gebruiker een specifiek product weergeeft,
-* toevoegen aan winkelwagentje: wanneer een gebruiker tikt <img src="assets/addtocart.png" width="20"> in een productdetailscherm,
-* opslaan voor later: wanneer een gebruiker op tikt <img src="assets/saveforlater.png" width="15" /> / <img src="assets/heart.png" width="25"> in een productdetailscherm,
-* aankoop: wanneer een gebruiker tikt <img src="assets/purchase.png" width="20"> in een productdetailscherm.
+* toevoegen aan kar: wanneer een gebruiker ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg) in het scherm van het productdetail tikt,
+* sparen voor later: wanneer een gebruiker ![ Hart ](/help/assets/icons/Heart.svg) / ![ ThumbUp ](/help/assets/icons/ThumbUp.svg) in het scherm van het productdetail tikt,
+* aankoop: wanneer een gebruiker ![ CreditCard ](/help/assets/icons/CreditCard.svg) in het scherm van het productdetail tikt.
 
 Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herbruikbare manier uit te voeren, gebruikt u een specifieke functie:
 
@@ -249,23 +249,23 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Voor elk van de knoppen (<img src="assets/saveforlater.png" width="15" /> , <img src="assets/addtocart.png" width="20"> en <img src="assets/purchase.png" width="20">) voegt u in de werkbalk de relevante aanroep toe in de map `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
+   1. Voor elk van de knopen (![ Hart ](/help/assets/icons/Heart.svg), ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg), en ![ CreditCard ](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen de `ATTrackingManager.trackingAuthorizationStatus == .authorized` sluiting toe:
 
-      1. Voor <img src="assets/saveforlater.png" width="15" />:
+      1. Voor ![ Hart ](/help/assets/icons/Heart.svg):
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Voor <img src="assets/addtocart.png" width="20">:
+      1. Voor ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg):
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Voor <img src="assets/purchase.png" width="20">:
+      1. Voor ![ CreditCard ](/help/assets/icons/CreditCard.svg):
 
          ```swift
          // Send purchase commerce experience event
@@ -308,23 +308,23 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. Voor elk van de knoppen (<img src="assets/heart.png" width="25">, <img src="assets/addtocart.png" width="20"> en <img src="assets/purchase.png" width="20">) in de werkbalk voegt u de relevante aanroep toe in de map `scope.launch` van de `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` :
+   1. Voor elk van de knopen (![ ThumbUp ](/help/assets/icons/ThumbUp.svg), ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg), en ![ CreditCard ](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen `scope.launch` van `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` toe:
 
-      1. Voor <img src="assets/heart.png" width="25">:
+      1. Voor ![ ThumbUp ](/help/assets/icons/ThumbUp.svg):
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. Voor <img src="assets/addtocart.png" width="20">:
+      1. Voor ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg):
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. Voor <img src="assets/purchase.png" width="20">:
+      1. Voor ![ CreditCard ](/help/assets/icons/CreditCard.svg):
 
          ```kotlin
          // Send purchase commerce experience event
@@ -638,9 +638,9 @@ Implementeer deze code opnieuw in uw project.
    1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
    1. Selecteer **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
-   1. Selecteren <img src="assets/saveforlater.png" width="15"> (iOS) of <img src="assets/heart.png" width="25"> (Android).
-   1. Selecteren <img src="assets/addtocart.png" width="20">.
-   1. Selecteren <img src="assets/purchase.png" width="15">.
+   1. Selecteer ![ Hart ](/help/assets/icons/Heart.svg) (iOS) of ![ ThumbUp ](/help/assets/icons/ThumbUp.svg) (Android).
+   1. Selecteer ![ ShoppingCartAdd ](/help/assets/icons/ShoppingCart.svg).
+   1. Selecteer ![ CreditCard ](/help/assets/icons/CreditCard.svg).
 
 >[!BEGINTABS]
 
