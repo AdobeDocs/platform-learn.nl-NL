@@ -17,7 +17,7 @@ Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
 Assurance, officieel bekend als Project Griffon, is ontworpen om u te helpen bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet in uw mobiele app.
 
-Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [ Assurance ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) in de productdocumentatie.
+Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [ Assurance ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home) in de productdocumentatie.
 
 
 ## Vereisten
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [ in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)
+Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [ in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/user-access)
 
 ## Implementeren
 
@@ -341,7 +341,7 @@ In uw browser:
 
 >[!ENDTABS]
 
-Als u in om het even welke uitdagingen in werking stelt, herzie [ technische ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}.
+Als u in om het even welke uitdagingen in werking stelt, herzie [ technische ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home){target="_blank"}.
 
 
 ## Extensies verifiëren
