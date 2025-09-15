@@ -1,6 +1,6 @@
 ---
-title: Neem rechtstreeks met publiek van uw gegevenspakhuis het in dienst gebruikend het Federale overzicht van de Samenstelling van het publiek
-description: Federated Audience Composition is een krachtige functie die gegevensarchitecten en gegevensengineers in staat stelt om hoogwaardig publiek rechtstreeks vanuit ondersteunde gegevenspakhuizen te beheren en te activeren.
+title: Met publiek in dienst nemen met Federatieve Audience Composition
+description: Leer over Federated Audience Composition (FAC) en hoe het gegevensarchitecten en gegevensingenieurs toelaat om hoogwaardig publiek van gesteunde gegevenspakhuizen direct te leiden en te activeren.
 breadcrumb-title: Overzicht
 role: Data Architect, Data Engineer
 jira: KT-18743
@@ -8,24 +8,24 @@ thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
-source-git-commit: ab9563d1ac4a0b97f45de0fd18186b34c98e2a36
+source-git-commit: e7484bcb8fa643a5c86b7d97da8c45d333e2e0ae
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
 
-# Neem rechtstreeks met publiek van uw gegevenspakhuis het in dienst gebruikend het Federale overzicht van de Samenstelling van het publiek
+# Betrokkenheid met publiek van gegevenspakhuis die de Samenstelling van het Federale publiek gebruikt
 
-Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gesneden oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [ gesteunde opslag van ondernemingsgegevens ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
+Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gemaakte oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [ gesteunde opslag van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
 
 ## Bedrijfs context
 
-SecurFinancial is een toonaangevende onderneming op het gebied van financiële diensten. Het gebruikt zijn rijkdom aan klantengegevens over verschillende bronnen om aanbiedingen en campagnes voor een groot aantal segmenten te personaliseren. Zij zijn van plan om de module van de Samenstelling van het Publiek van Adobe Real-Time CDP Federated te gebruiken die ondernemingen toestaat om hun gegevenspakhuis voor gegevensbeheer te gebruiken terwijl het gebruiken van Adobe Experience Platform voor het leveren van gepersonaliseerde klantenervaringen. Belangrijkste voordelen zijn:
+SecurFinancial is een toonaangevende onderneming op het gebied van financiële diensten. Het gebruikt zijn rijkdom aan klantengegevens over verschillende bronnen om aanbiedingen en campagnes voor een groot aantal segmenten te personaliseren. Zij zijn van plan om de module van de Samenstelling van het Publiek van Adobe Real-Time CDP Federated te gebruiken, die ondernemingen toestaat om hun gegevenspakhuis voor gegevensbeheer te gebruiken terwijl het gebruiken van Experience Platform voor het leveren van gepersonaliseerde klantenervaringen. Belangrijkste voordelen zijn:
 
 - **Toegang tot pakhuisgegevens**: Creeer high-value publiek van datasets in gesteunde gegevenspakhuizen zonder gegevensreplicatie.
 - **Geminimaliseerde gegevensbeweging**: De gegevens van de vraag direct in het pakhuis, zonder duplicatie en het handhaven van gegevensbeheer.
-- **Verenigde Werkschema&#39;s van de Ervaring**: Curseer en activeer publiek binnen Adobe Experience Platform voor kwesties van het dwars-kanaalgebruik.
+- **verenigde ervaringswerkschema&#39;s**: Wissel en activeer publiek binnen Adobe Experience Platform voor kwesties van het dwars-kanaalgebruik.
 - **Verbeterde verpersoonlijking**: Verrijkt profielen en publiek met pakhuisattributen aan macht in real time, teweeggebrachte ervaringen.
 
 ## Bedrijfsscenario
@@ -51,10 +51,10 @@ Als u vergelijkbare activiteiten wilt uitvoeren in uw omgeving, moet u ervoor zo
 
 - Toegang tot een Adobe Experience Platform-account die is ingericht voor Real-Time CDP of Journey Optimizer.
 - De toestemmingen van de Beheerder van het systeem of de capaciteit hebben gevormd toestemmingen.
-- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
-- Toegang tot een gesteund [ entrepot van ondernemingsgegevens ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
+- Toegang tot een gesteund [ entrepot van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Basiskennis van SQL voor het vragen van gegevenspakhuizen.
 - **de Milieu&#39;s van Sandbox**: Creeer een zandbak in de instantie van uw organisatie veilig experimenteren zonder productiegegevens te beïnvloeden.
-- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund gegevenspakhuis ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
+- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund gegevenspakhuis ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
 
 Eerst, herzien de [ Architectuur op hoog niveau &amp; Stroom voor Federatieve Samenstelling van het Publiek ](fac-architecture-and-flow.md).
