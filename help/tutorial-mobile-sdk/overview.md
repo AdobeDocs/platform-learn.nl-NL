@@ -4,9 +4,9 @@ description: Leer hoe u de mobiele Adobe Experience Cloud-toepassingen implement
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Experience Platform Mobile SDK is een client-side SDK die klanten van Adobe Expe
 ![Architectuur](assets/architecture.png){zoomable="yes"}
 
 
-Deze zelfstudie begeleidt u door de implementatie van Platform Mobile SDK in een voorbeeldtoepassing met de naam Luma. De [ app van de Luma ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) heeft functionaliteit die u een realistische implementatie laat bouwen. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
+Deze zelfstudie begeleidt u door de implementatie van Platform Mobile SDK in een voorbeeldtoepassing met de naam Luma. De app Luma heeft functionaliteit waarmee u een realistische implementatie kunt maken. Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingoplossingen implementeren via Experience Platform Mobile SDK in uw eigen mobiele apps.
 
 De lessen zijn bedoeld voor:
 
@@ -64,7 +64,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
    * **[!UICONTROL Property Rights]** - wijs items toe aan **[!UICONTROL Develop]** , **[!UICONTROL Approve]** , **[!UICONTROL Publish]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Manage Environments]** .
    * **[!UICONTROL Company Rights]**—Items toestaan aan **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [ in de productdocumentatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/admin/user-permissions){target="_blank"}
+     Voor meer informatie over markeringstoestemmingen, zie {de toestemmingen van 0} Gebruiker voor markeringen [ in de productdocumentatie.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}
 * In Experience Platform moet u beschikken over:
    * **[!UICONTROL Data Modeling]** - machtigingsitems om schema&#39;s te beheren en weer te geven.
    * **[!UICONTROL Identity Management]** - machtigingsitems om naamruimten voor identiteiten te beheren en weer te geven.
@@ -74,7 +74,7 @@ In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste gebruikersrech
       * **[!UICONTROL Data Management]** - toestemmingspunten om datasets te beheren en te bekijken.
       * Een ontwikkelings **zandbak** die u voor dit leerprogramma kunt gebruiken.
 
-   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Bovendien, voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren, zoals die in** niveaus van de Toestemming [ worden beschreven.](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/high-low-permissions)
+   * Voor de lessen van Journey Optimizer, hebt u toestemmingen nodig om de **duw- berichtdienst** te vormen en een **app oppervlakte**, a **reis**, a **bericht** te creëren, en **bericht stelt** vooraf in. Bovendien, voor Beslissingsbeheer, hebt u de juiste toestemmingen nodig om aanbiedingen **en** besluiten **te beheren, zoals die in** niveaus van de Toestemming [ worden beschreven.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)
 
 * Voor Adobe Analytics, moet u weten welke **rapportreeksen** u kunt gebruiken om dit leerprogramma te voltooien.
 
@@ -119,9 +119,8 @@ U kunt twee versies van de voorbeeldtoepassing downloaden. Beide versies kunnen 
 
 U gebruikt Android als platform, [!DNL Kotlin] + [!DNL Java] als programmeertaal, [!DNL JetPack Compose] als kader UI en [!DNL Android Studio] als geïntegreerde ontwikkelomgeving (winde). Veel van de beschreven implementatieconcepten zijn echter vergelijkbaar voor andere ontwikkelingsplatforms. Velen hebben deze zelfstudie al voltooid met weinig tot geen ervaring in Android / Kotlin+Java / JetPack Compose. U hoeft geen expert te zijn om de lessen te voltooien, maar u kunt meer uit de lessen halen als u de code comfortabel kunt lezen en begrijpen.
 
-U kunt een definitieve versie van de testversie van de app downloaden van Google Play.
+Als u verkiest, kunt u [ zich bij een test voor een geproduceerde versie ](https://play.google.com/apps/internaltest/4700642199234438150) van app van Google Play aansluiten.
 
-[![ Download ](assets/download-app-android.svg) ](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
