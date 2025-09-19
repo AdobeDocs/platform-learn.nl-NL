@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: d3f1a571cdb937c49b39cc149ce3f07f0f10dfab
+source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '444'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | ---------------------- | ------------ | ------------ |------------ |
 | [ 1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05-01-2025 | Ja | - |
 | [ 1.2 Adobe Experience Manager Assets ](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 08-20-2025 | Ja | - |
+| [ 1.5 Adobe Commerce as a Cloud Service ](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09-19-2025 | Ja | - |
 
 ## &#x200B;4. Levering en activering
 
