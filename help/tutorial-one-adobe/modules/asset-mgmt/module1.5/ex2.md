@@ -64,7 +64,7 @@ Klik **uitgeven** pictogram.
 
 ![ ACCS+AEM Sites ](./images/accsaemsites8.png)
 
-Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1} Config kopieerde.**
+Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1&rbrace; Config kopieerde.**
 
 Klik **Veranderingen vastleggen...**.
 

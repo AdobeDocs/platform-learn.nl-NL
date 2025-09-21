@@ -264,7 +264,7 @@ Plaats het statuut van het productbeeld aan **Goedgekeurd**. De integratie van A
 
 ![ ACCS+AEM Assets ](./images/accsaemassets44.png)
 
-Ga naar het **Commerce** lusje en klik dan **** toevoegen onder **de skus van het Product**.
+Ga naar het **Commerce** lusje en klik dan **&#x200B;**&#x200B;toevoegen onder **de skus van het Product**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets45.png)
 
