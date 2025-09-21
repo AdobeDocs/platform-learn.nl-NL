@@ -3,9 +3,9 @@ title: Aan de slag met Adobe Commerce as a Cloud Service
 description: Aan de slag met Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '688'
 ht-degree: 14%
 
 ---
@@ -100,6 +100,16 @@ Klik **sparen Mening van de Opslag**.
 Dan zie je dit bericht. Klik **OK**.
 
 ![AEM Assets](./images/accs15.png)
+
+Dan moet je hier weer zijn. Klik de **CitiSignal** website om het te openen.
+
+![AEM Assets](./images/accs16.png)
+
+Schakel het selectievakje in om deze website in te stellen als de standaardwebsite.
+
+Klik **sparen Website**.
+
+![AEM Assets](./images/accs16a.png)
 
 Dan moet je hier weer zijn.
 

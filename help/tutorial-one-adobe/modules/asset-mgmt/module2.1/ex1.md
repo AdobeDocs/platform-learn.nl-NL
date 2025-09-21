@@ -4,9 +4,9 @@ description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com)
 
 ![ AEMCS ](./images/aemcs1.png)
 
-Voor de **Naam van het Programma**, gebruik `--aepUserLdap-- - CitiSignal`. Selecteer de optie **Opstelling een zandbak**. Klik **verdergaan**.
+Voor de **Naam van het Programma**, gebruik `--aepUserLdap-- - CitiSignal AEM+ACCS`. Selecteer de optie **Opstelling een zandbak**. Klik **verdergaan**.
 
 ![ AEMCS ](./images/aemcs2.png)
 
@@ -51,8 +51,6 @@ Klik **creëren**.
 Het maken van uw omgeving duurt 10 tot 20 minuten.
 
 ![ AEMCS ](./images/aemcs4.png)
-
-Terwijl u wacht, kunt u reeds met oefening [ 1.1.2 beginnen creeer uw op document-gebaseerde website ](./ex2.md){target="_blank"}.
 
 Zodra de milieu&#39;s worden gecreeerd en klaar om te gebruiken, zult u een e-mailbevestiging ontvangen waarna u hier kunt terugkomen.
 
@@ -107,7 +105,7 @@ Na ongeveer 10 minuten, zal de activering van **Dynamische Media** worden gedaan
 
 Zodra uw pijpleidingslooppas is gebeëindigd, kunt u met de volgende oefening verdergaan.
 
-Volgende Stap: [ 1.1.2 leidt tot uw op document-gebaseerde website ](./ex2.md){target="_blank"}
+Volgende Stap: [ Opstelling uw milieu van AEM CS ](./ex3.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 

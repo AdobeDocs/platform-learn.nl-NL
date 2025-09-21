@@ -4,16 +4,16 @@ description: AEM CS - Aangepast basisblok
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 Een basisblok met aangepaste inhoud ontwikkelen
+# 1.1.3 Een basisblok met aangepaste inhoud ontwikkelen
 
-## 1.1.4.1 De lokale ontwikkelomgeving instellen
+## 1.1.3.1 De lokale ontwikkelomgeving instellen
 
 Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
 
@@ -43,7 +43,7 @@ U zult nu die omslag open in de Code van Visual Studio zien, bent u nu bereid om
 
 ![ Blok ](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Een aangepast basisblok maken
+## 1.1.3.2 Een aangepast basisblok maken
 
 Adobe raadt u aan blokken te ontwikkelen in drie fasen:
 
@@ -61,7 +61,7 @@ De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluit
 
 ![ Blok ](./images/block9.png){zoomable="yes"}
 
-Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
+Plak deze code en voer een komma **** na het codeblok in:
 
 ```json
 {
@@ -98,7 +98,7 @@ Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluiten
 
 ![ Blok ](./images/block12.png){zoomable="yes"}
 
-Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -145,7 +145,7 @@ Sla uw wijzigingen op.
 
 ![ Blok ](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Uw wijzigingen vastleggen
+## 1.1.3.3 Uw wijzigingen vastleggen
 
 U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
 
@@ -169,7 +169,7 @@ Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiS
 
 ![ Blok ](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Voeg uw blok toe aan een pagina
+## 1.1.3.4 Voeg uw blok toe aan een pagina
 
 Nu uw basis citaatblok wordt bepaald en aan het project CitiSignal geëngageerd, kunt u a **fiberbied** blok aan een bestaande pagina toevoegen.
 
@@ -249,7 +249,7 @@ Klik **publiceren** opnieuw.
 
 Uw nieuwe pagina is nu gepubliceerd.
 
-## 1.1.4.5 Nieuwe pagina toevoegen aan het navigatiemenu
+## 1.1.3.5 Nieuwe pagina toevoegen aan het navigatiemenu
 
 In uw overzicht van AEM Sites, ga **CitiSignal** > **Fragments** en controleer checkbox voor **Kopbal**. Klik **uitgeven**.
 
@@ -284,7 +284,7 @@ Hier is uw standaard aangepaste blok, maar nu weergegeven op de website.
 
 ![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
-Volgende Stap: [ 1.1.5 Geavanceerd Blok van de Douane ](./ex5.md){target="_blank"}
+Volgende Stap: [ Geavanceerd Blok van de Douane ](./ex5.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 

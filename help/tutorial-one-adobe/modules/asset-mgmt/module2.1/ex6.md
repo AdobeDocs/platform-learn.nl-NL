@@ -4,14 +4,14 @@ description: AEM CS - MarTech-plug-in
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
 
 ---
 
-# 1.1.6 AEM Edge Delivery Services MarTech-insteekmodule
+# 1.1.5 AEM Edge Delivery Services MarTech-insteekmodule
 
 Met de AEM MarTech-insteekmodule kunt u snel een complete MarTech-stapel instellen voor uw AEM-project.
 
@@ -19,7 +19,7 @@ Met de AEM MarTech-insteekmodule kunt u snel een complete MarTech-stapel instell
 >
 >Deze insteekmodule is momenteel beschikbaar voor klanten in samenwerking met AEM Engineering via co-innovatieprojecten. U kunt meer informatie over [ https://github.com/adobe-rnd/aem-martech ](https://github.com/adobe-rnd/aem-martech) vinden.
 
-## 1.1.6.1 Voeg de plug-in toe aan uw reactie
+## 1.1.5.1 Voeg de plug-in toe aan uw reactie
 
 Navigeer aan de omslag die u voor uw **burgerschap** bewaarplaats GitHub gebruikt. Klik de omslagnaam met de rechtermuisknop aan en selecteer dan **Nieuwe Terminal bij Omslag**.
 
@@ -39,7 +39,7 @@ Navigeer aan de omslag die u voor uw **burgerschap** GitHub bewaarplaats gebruik
 
 ![ AEMCS ](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 In de Code van Visual Studio, open het dossier **head.html**. Kopieer de hieronder code en kleef het in het dossier **head.html**.
 
@@ -54,7 +54,7 @@ Sla uw wijzigingen op.
 
 ![ AEMCS ](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 In de Code van Visual Studio, ga naar de omslag **manuscripten** en open het dossier **scripts.js**. Kopieer de hieronder code en kleef het in het dossier **scripts.js**, onder de bestaande de invoermanuscripten.
 
@@ -88,25 +88,25 @@ Onder **const AUDIENCES = {...};** kleef de hieronder code:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -157,7 +157,7 @@ Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan n
 
 ### orgId
 
-Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan naar **Vragen** in het linkermenu. Onder **Geloofsbrieven**, zult u **IMS Org identiteitskaart** als **Gebruikersnaam** vinden. Klik het **pictogram van het 0&rbrace; exemplaar &lbrace;om** IMS Org identiteitskaart **te kopiëren en het in de Code van Visual Studio, in het dossier** scripts.js **te kleven, door de placeholder waarde `XXX` naast `orgId:` te vervangen.**
+Ga naar [ https://platform.adobe.com/ ](https://platform.adobe.com/) en ga dan naar **Vragen** in het linkermenu. Onder **Geloofsbrieven**, zult u **IMS Org identiteitskaart** als **Gebruikersnaam** vinden. Klik het **pictogram van het 0} exemplaar {om** IMS Org identiteitskaart **te kopiëren en het in de Code van Visual Studio, in het dossier** scripts.js **te kleven, door de placeholder waarde** naast `XXX` te vervangen.`orgId:`
 
 ![ AEMCS ](./images/scriptsvar2.png){zoomable="yes"}
 
@@ -315,7 +315,7 @@ Klik **Push oorsprong** om uw veranderingen in uw bewaarplaats te duwen GitHub.
 
 ![ AEMCS ](./images/mtplugin13.png){zoomable="yes"}
 
-## 1.1.6.4 ACDL-extensie in eigenschap Codes
+## 1.1.5.4 ACDL-extensie in eigenschap Codes
 
 Als u de AEM Edge Delivery Services MarTech-insteekmodule correct wilt laten werken, moet u de extensie voor
 
@@ -341,7 +341,7 @@ Ga naar **het Publiceren Stroom** en open uw **Belangrijkste** bibliotheek. Klik
 
 Uw wijzigingen zijn nu geïmplementeerd.
 
-## 1.1.6.5 Gegevens verzenden naar Adobe Experience Platform Edge Network
+## 1.1.5.5 Gegevens verzenden naar Adobe Experience Platform Edge Network
 
 U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
@@ -366,7 +366,7 @@ Open de payload en boor omlaag naar het veld `events[0].xdm._experienceplatform.
 
 ![ AEMCS ](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Klantprofiel weergeven in Adobe Experience Platform
+## 1.1.5.6 Klantprofiel weergeven in Adobe Experience Platform
 
 Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
 
@@ -382,7 +382,7 @@ In het linkermenu, ga naar **Klant** > **Profielen** > **doorbladeren**. Selecte
 
 ![ AEMCS ](./images/plweb4.png){zoomable="yes"}
 
-U zult dan het **overzicht van het Dashboard van het 0&rbrace; Profiel zien &lbrace;, dat ECID toont.** Daarna, ga naar **Gebeurtenissen**.
+U zult dan het **overzicht van het Dashboard van het 0} Profiel zien {, dat ECID toont.** Daarna, ga naar **Gebeurtenissen**.
 
 ![ AEMCS ](./images/plweb5.png){zoomable="yes"}
 

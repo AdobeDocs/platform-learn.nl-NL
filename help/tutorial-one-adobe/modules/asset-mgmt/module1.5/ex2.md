@@ -3,9 +3,9 @@ title: ACCS verbinden met AEM Sites CS/EDS-winkel
 description: ACCS verbinden met AEM Sites CS/EDS-winkel
 kt: 5342
 doc-type: tutorial
-source-git-commit: 38b6b858e0439619c41008b2c38720d7a26e713e
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,63 @@ ht-degree: 0%
 >
 >Als u eerder een AEM CS-programma hebt geconfigureerd met een AEM Sites- en Assets CS-omgeving, kan het zijn dat uw AEM CS-sandbox is geminimaliseerd. Gezien het feit dat het vernietigen van zo&#39;n zandbak 10 tot 15 minuten duurt, zou het een goed idee zijn om het ontruimingsproces nu te beginnen zodat u niet op een later tijdstip hoeft te wachten.
 
+In deze oefening, zult u AEM Sites CS/EDS Storefront aan het ACCS achterste verbinden. Op dit ogenblik, wanneer u uw Opslag van AEM Sites CS/EDS opent en naar de **pagina van de de productlijst van Telefoons** gaat, ziet u nog geen producten.
+
+Aan het eind van deze oefening, zou u de producten moeten zien die u in de vorige oefening vormde verschijnen op de **pagina van de de productlijst van Telefoons** op uw Storefront van AEM Sites CS/EDS.
+
+![ ACCS+AEM Sites ](./images/accsaemsites0.png)
+
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat u zich in de juiste omgeving bevindt, die u `--aepImsOrgName--` moet noemen. Klik **Commerce**.
+
 ![ ACCS+AEM Sites ](./images/accsaemsites1.png)
+
+Klik het **info** pictogram naast uw instantie ACCS, die zou moeten worden genoemd `--aepUserLdap-- - ACCS`.
+
+![ ACCS+AEM Sites ](./images/accsaemsites2.png)
+
+Dan moet je dit zien. Kopieer het **eindpunt van GraphQL**.
+
+![ ACCS+AEM Sites ](./images/accsaemsites3.png)
+
+Ga naar [ https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator ](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). U moet nu een bestand config.json genereren dat wordt gebruikt om uw AEM Sites CS Storefront te koppelen aan uw ACCS-backend.
+
+Op de **pagina van de Generator Config**, kleef het **eindpunt van GraphQL** url die u kopieerde.
+
+Klik **produceren**.
+
+![ ACCS+AEM Sites ](./images/accsaemsites4.png)
+
+Kopieer de volledige gegenereerde JSON-lading.
+
+![ ACCS+AEM Sites ](./images/accsaemsites5.png)
+
+Ga naar de gegevensopslagplaats GitHub die werd gecreeerd toen vestiging uw milieu van AEM Sites CS/EDS. Die bewaarplaats werd gecreeerd in de oefening [ 1.1.2 Opstelling uw milieu van AEM CS ](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} en zou moeten worden genoemd **burgerschap-naam-toegang**.
+
+![ ACCS+AEM Sites ](./images/accsaemsites6.png)
+
+In de wortelfolder, scrol neer en klik om het dossier **config.json** te openen.
+
+![ ACCS+AEM Sites ](./images/accsaemsites7.png)
+
+Klik **uitgeven** pictogram.
+
+![ ACCS+AEM Sites ](./images/accsaemsites8.png)
+
+Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1} Config kopieerde.**
+
+Klik **Veranderingen vastleggen...**.
+
+![ ACCS+AEM Sites ](./images/accsaemsites9.png)
+
+Klik **Veranderingen** vastleggen.
+
+![ ACCS+AEM Sites ](./images/accsaemsites10.png)
+
+Het {**dossier 0} config.json werd nu bijgewerkt.** U moet uw wijzigingen binnen een paar minuten bekijken op de website. De manier om te verifiëren als de veranderingen met succes werden opgenomen is naar de **Telefoons** productpagina te gaan. U zou **iPhone AIR** nu moeten zien verschijnen op de pagina.
+
+![ ACCS+AEM Sites ](./images/accsaemsites11.png)
+
+Hoewel het product nu met succes wordt weergegeven, is er nog geen afbeelding beschikbaar voor het product. De volgende exercitie stelt u de koppeling met AEM Assets CS in voor productafbeeldingen.
 
 Volgende Stap: [ verbind ACCS met AEM Assets CS ](./ex3.md){target="_blank"}
 

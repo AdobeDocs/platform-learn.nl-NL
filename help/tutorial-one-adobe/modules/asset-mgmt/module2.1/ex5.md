@@ -4,14 +4,14 @@ description: AEM CS - Geavanceerd aangepast blok
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 Geavanceerd aangepast blok
+# 1.1.4 Geavanceerd aangepast blok
 
 In de vorige oefening, vormde u een basisdouaneblok genoemd **Aanbieding van de Vezel** dat showcases als **Tekst van de Aanbieding**, **Aanbieding CTA** en **Aanbieding** op uw website.
 
@@ -19,7 +19,7 @@ U kunt nu aan dit blok blijven werken.
 
 ![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 Stijl uw blok
+## 1.1.4.1 Stijl uw blok
 
 Nu u een werkend **vezelaanbieding** blok hebt kunt u het stileren op het toepassen.
 
@@ -115,7 +115,7 @@ Dit wordt dan weergegeven met de opmaak die op de pagina is toegepast.
 
 ![ Blok ](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 Logica toevoegen en gegevens laden vanaf een extern eindpunt
+## 1.1.4.2 Logica toevoegen en gegevens laden vanaf een extern eindpunt
 
 Voor deze oefening, zult u een &quot;ruwe&quot;configuratie van Adobe Web SDK doen en u zult het volgende beste voorstel van Adobe Journey Optimizer Offer Decisioning vragen.
 
@@ -345,7 +345,7 @@ Dan moet je dit zien.
 
 ![ Blok ](./images/blockadv20.png){zoomable="yes"}
 
-Volgende Stap: [ 1.1.6 AEM Edge Delivery Services MarTech plugin ](./ex6.md){target="_blank"}
+Volgende Stap: [ AEM Edge Delivery Services MarTech plugin ](./ex6.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 
