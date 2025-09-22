@@ -3,9 +3,9 @@ title: ACCS verbinden met AEM Assets CS
 description: ACCS verbinden met AEM Assets CS
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca895385f5c1f318a7c4d0b338dcfa4e91763005
+source-git-commit: 58448049d54ee6124985159577df0e307896a312
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Als u eerder een AEM CS-programma hebt geconfigureerd met een AEM Sites- en Assets CS-omgeving, kan het zijn dat uw AEM CS-sandbox is geminimaliseerd. Gezien het feit dat het vernietigen van zo&#39;n zandbak 10 tot 15 minuten duurt, zou het een goed idee zijn om het ontruimingsproces nu te beginnen zodat u niet op een later tijdstip hoeft te wachten.
+
+Na de vorige oefening kon u een product zien dat door ACCS aan uw website wordt teruggegeven maar het had nog geen beeld. Aan het eind van deze oefening, zou u een beeld moeten zien dat ook wordt teruggegeven.
+
+![ ACCS+AEM Sites ](./images/accsaemsites11.png)
 
 ## 1.5.3.1 Configuratie pijplijn bijwerken
 
@@ -172,6 +176,10 @@ Klik **sparen Config**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets51.png)
 
+Dan moet je dit zien.
+
+![ ACCS+AEM Assets ](./images/accsaemassets52.png)
+
 ## 1.5.3.3 Update config.json
 
 Ga naar de gegevensopslagplaats GitHub die werd gecreeerd toen vestiging uw milieu van AEM Sites CS/EDS. Die bewaarplaats werd gecreeerd in de oefening [ 1.1.2 Opstelling uw milieu van AEM CS ](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} en zou moeten worden genoemd **burgerschap-naam-toegang**.
@@ -252,37 +260,139 @@ Klik **uploaden**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets41.png)
 
-Uw afbeeldingen zijn dan beschikbaar in uw map.
+Uw afbeeldingen zijn dan beschikbaar in uw map. Beweeg over het product **iPhone-AIR-Light-Gold.png** en klik het **3} pictogram van Eigenschappen {.**
 
 ![ ACCS+AEM Assets ](./images/accsaemassets42.png)
 
-Klik op de eerste productafbeelding om deze te openen.
-
-![ ACCS+AEM Assets ](./images/accsaemassets43.png)
-
-Plaats het statuut van het productbeeld aan **Goedgekeurd**. De integratie van AEM Assets CS - ACCS werkt alleen voor goedgekeurde afbeeldingen.
+De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd**. De integratie van AEM Assets CS - ACCS werkt alleen voor goedgekeurde afbeeldingen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets44.png)
 
-Ga naar het **Commerce** lusje en klik dan **&#x200B;**&#x200B;toevoegen onder **de skus van het Product**.
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets45.png)
 
-Neem productSKU van de naam van het beelddossier, verhoog de waarde aan 1, en selecteer alle opties in de **gebruik** dropdown lijst.
+Voeg de volgende SKU&#39;s voor dit product toe:
 
-![ ACCS+AEM Assets ](./images/accsaemassets46.png)
+| Sleutel | Waarde | Gebruik |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
 Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
 
+![ ACCS+AEM Assets ](./images/accsaemassets46.png)
+
+Beweeg over het product **iPhone-Air-Space-Black.png** en klik het **3} pictogram van Eigenschappen {.**
+
 ![ ACCS+AEM Assets ](./images/accsaemassets47.png)
 
-Herhaal deze handeling waarbij u een middel goedkeurt en het tabblad Commerce instelt voor elke afbeelding die u in deze map hebt geïmporteerd. Zodra u wordt gedaan, zou elk beeld a **groene duimen omhoog** moeten hebben, erop wijzend dat de activa is goedgekeurd.
+De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd**. De integratie van AEM Assets CS - ACCS werkt alleen voor goedgekeurde afbeeldingen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets48.png)
 
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
+
+![ ACCS+AEM Assets ](./images/accsaemassets201.png)
+
+Voeg de volgende SKU&#39;s voor dit product toe:
+
+| Sleutel | Waarde | Gebruik |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets202.png)
+
+Beweeg over het product **iPhone-Air-Sky-Blue.png** en klik het **3} pictogram van Eigenschappen {.**
+
+![ ACCS+AEM Assets ](./images/accsaemassets203.png)
+
+De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd**. De integratie van AEM Assets CS - ACCS werkt alleen voor goedgekeurde afbeeldingen.
+
+![ ACCS+AEM Assets ](./images/accsaemassets204.png)
+
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
+
+![ ACCS+AEM Assets ](./images/accsaemassets205.png)
+
+Voeg de volgende SKU&#39;s voor dit product toe:
+
+| Sleutel | Waarde | Gebruik |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets206.png)
+
+Beweeg over het product **iPhone-Air-Cloud-White.png** en klik het **3} pictogram van Eigenschappen {.**
+
+![ ACCS+AEM Assets ](./images/accsaemassets207.png)
+
+De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd**. De integratie van AEM Assets CS - ACCS werkt alleen voor goedgekeurde afbeeldingen.
+
+![ ACCS+AEM Assets ](./images/accsaemassets208.png)
+
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
+
+![ ACCS+AEM Assets ](./images/accsaemassets209.png)
+
+Voeg de volgende SKU&#39;s voor dit product toe:
+
+| Sleutel | Waarde | Gebruik |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets210.png)
+
+Elk **beeld van iPhone AIR** zou a **groene duimen omhoog** nu moeten hebben, erop wijzend dat de activa is goedgekeurd.
+
+![ ACCS+AEM Assets ](./images/accsaemassets250.png)
+
 ## 1.5.3.5 Productafbeeldingen verifiëren op AEM Sites CS/EDS Store
 
+>[!NOTE]
+>
+>Het kan 15 minuten duren voordat de hierboven aangebrachte wijzigingen zijn geïmplementeerd. Als u nog niet ziet dat uw afbeelding wordt weergegeven, wacht u 15 minuten en probeert u het opnieuw.
 
+Als u wilt controleren of de integratie werkt, moet u uw CitiSignal-website openen.
+
+Ga naar `main--citisignal-aem-accs--XXX.aem.page` en/of `main--citisignal-aem-accs--XXX.aem.live` nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, wat in dit voorbeeld `woutervangeluwe` is.
+
+In dit voorbeeld wordt de volledige URL als volgt:
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
+
+Dan moet je dit zien. Ga naar **Telefoons**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets150.png)
+
+U zou dan een productbeeld moeten zien dat voor **AIR van iPhone** wordt getoond. Klik **AIR van iPhone**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets151.png)
+
+Dan moet je dit zien. Wijzig de kleur- en opslagopties en u ziet de afbeeldingen dynamisch wijzigen op basis van de keuzes die u hebt gemaakt.
+
+![ ACCS+AEM Assets ](./images/accsaemassets152.png)
+
+Hier is een voorbeeld van het veranderen van de kleur in **licht-Goud** en de opslaggrootte aan **256GB**.
+
+![ ACCS+AEM Assets ](./images/accsaemassets153.png)
 
 Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md){target="_blank"}
 
