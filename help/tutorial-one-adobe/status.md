@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,13 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | [ 1.2 Customer Journey Analytics: Samenvatting en Analyseer de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 01-07-2025 | Nee | Er is een probleem met de modellering van de gegevensprep voor de brongegevens. Dit is in afwachting van een oplossing. |
 | [ 2.1 de Dienst van de Vraag ](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 12-04-2024 | Ja | - |
 | [ 3.1 Content Analytics ](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 08-02-2025 | Nee | Inhoud die wordt ontwikkeld |
+
+## &#x200B;6. Agentische AI
+
+| Naam | Laatste update | Werken 100% | Opmerkingen |
+| ---------------------- | ------------ | ------------ |------------ |
+| [ 1.1 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
+| [ van 0} 1.2 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
 
 {style="table-layout:auto"}
 

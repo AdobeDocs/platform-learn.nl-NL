@@ -1,370 +1,290 @@
 ---
-title: AEM CS-omgeving instellen
-description: AEM CS-omgeving instellen
+title: AEM CS - Aangepast basisblok
+description: AEM CS - Aangepast basisblok
 kt: 5342
 doc-type: tutorial
-exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
-# 1.1.2 De AEM CS-omgeving instellen
+# 1.1.3 Een basisblok met aangepaste inhoud ontwikkelen
 
-## 1.1.2.1 Uw GitHub-repo instellen
+## 1.1.3.1 De lokale ontwikkelomgeving instellen
 
-Ga naar [ https://github.com ](https://github.com){target="_blank"}. Klik **Teken binnen**.
+Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
 
-![ AEMCS ](./images/aemcssetup1.png)
+![ Blok ](./images/block1.png){zoomable="yes"}
 
-Voer uw referenties in. Klik **Teken binnen**.
+Zodra de Desktop van Github geïnstalleerd is, ga naar de reactie GitHub u in de vorige oefening creeerde. Klik **&lt;> Code** en klik dan **Open met Desktop GitHub**.
 
-![ AEMCS ](./images/aemcssetup2.png)
+![ Blok ](./images/block2.png){zoomable="yes"}
 
-Zodra binnen ondertekend, zult u uw dashboard zien GitHub.
+Uw reactie GitHub zal dan in de Desktop worden geopend GitHub. Voel vrij om de **Lokale Weg** te veranderen. Klik **Kloon**.
 
-![ AEMCS ](./images/aemcssetup3.png)
+![ Blok ](./images/block3.png){zoomable="yes"}
 
-Ga naar [ https://github.com/adobe-rnd/aem-boilerplate-xcom ](https://github.com/adobe-rnd/aem-boilerplate-xcom){target="_blank"}. Dan zie je dit. Klik **Gebruik dit malplaatje** en klik dan **creeer een nieuwe bewaarplaats**.
+Er wordt nu een lokale map gemaakt.
 
-![ AEMCS ](./images/aemcssetup4.png)
+![ Blok ](./images/block4.png){zoomable="yes"}
 
-Voor de **naam van de Bewaarplaats**, gebruik `citisignal-aem-accs`. Plaats het zicht aan **Privé**. Klik **creeer bewaarplaats**.
+Open Visual Studio Code. Ga naar **Dossier** > **Open Omslag**.
 
-![ AEMCS ](./images/aemcssetup5.png)
+![ Blok ](./images/block5.png){zoomable="yes"}
 
-Na een paar seconden wordt de repository gemaakt.
+Selecteer de omslag die door uw opstelling GitHub voor **burgersignaal** wordt gebruikt.
 
-![ AEMCS ](./images/aemcssetup6.png)
+![ Blok ](./images/block6.png){zoomable="yes"}
 
-Daarna, ga naar [ https://github.com/apps/aem-code-sync ](https://github.com/apps/aem-code-sync){target="_blank"}. Klik **installeren** of **vormen**.
+U zult nu die omslag open in de Code van Visual Studio zien, bent u nu bereid om een nieuw blok tot stand te brengen.
 
-![ AEMCS ](./images/aemcssetup7.png)
+![ Blok ](./images/block7.png){zoomable="yes"}
 
-Klik **verdergaan** knoop naast uw GitHub gebruikersrekening.
+## 1.1.3.2 Een aangepast basisblok maken
 
-![ AEMCS ](./images/aemcssetup8.png)
+Adobe raadt u aan blokken te ontwikkelen in drie fasen:
 
-Klik **vormen** naast uw GitHub gebruikersrekening.
+- Maak de definitie en het model voor het blok, herzie het, en breng het aan productie.
+- Maak inhoud met het nieuwe blok.
+- Implementeer de decoratie en stijlen voor het nieuwe blok.
 
-![ AEMCS ](./images/aemcssetup8a.png)
+### component-definition.json
 
-Klik **slechts uitgezochte bewaarplaatsen** en voeg dan de bewaarplaats toe die u enkel creeerde.
+In de Code van Visual Studio, open het dossier **component-definition.json**.
 
-![ AEMCS ](./images/aemcssetup9.png)
+![ Blok ](./images/block8.png){zoomable="yes"}
 
-De rol neer en klikt **sparen**.
+De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluitende steun van de laatste component.
 
-![ AEMCS ](./images/aemcssetup9a.png)
+![ Blok ](./images/block9.png){zoomable="yes"}
 
-Je krijgt deze bevestiging.
+Plak deze code en voer een komma **** na het codeblok in:
 
-![ AEMCS ](./images/aemcssetup10.png)
+```json
+{
+  "title": "FiberOffer",
+  "id": "fiberoffer",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "FiberOffer",
+          "model": "fiberoffer",
+          "offerText": "<p>Fiber will soon be available in your region!</p>",
+          "offerCallToAction": "Get your offer now!",
+          "offerImage": ""
+        }
+      }
+    }
+  }
+}
+```
 
-## 1.1.2.2 Bestand fstab.yaml bijwerken
+Sla uw wijzigingen op.
 
-Klik in uw GitHub-repo om het bestand `fstab.yaml` te openen.
+![ Blok ](./images/block10.png){zoomable="yes"}
 
-![ AEMCS ](./images/aemcssetup11.png)
+### component-models.json
 
-Klik **uitgeven** pictogram.
+In de Code van Visual Studio, open het dossier **component-models.json**.
 
-![ AEMCS ](./images/aemcssetup12.png)
+![ Blok ](./images/block11.png){zoomable="yes"}
 
-U moet nu de waarde voor het gebied **url** op lijn 3 bijwerken.
+Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluitende steun van de laatste component.
 
-![ AEMCS ](./images/aemcssetup13.png)
+![ Blok ](./images/block12.png){zoomable="yes"}
 
-U moet de huidige waarde door URL van uw specifiek milieu van AEM Sites CS in combinatie met de montages van uw reactie vervangen GitHub.
+Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
 
-Dit is de huidige waarde van de URL: `https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xcom/main` .
+```json
+{
+  "id": "fiberoffer",
+  "fields": [
+     {
+       "component": "richtext",
+       "name": "offerText",
+       "value": "",
+       "label": "Offer Text",
+       "valueType": "string"
+     },
+     {
+       "component": "richtext",
+       "valueType": "string",
+       "name": "offerCallToAction",
+       "label": "Offer CTA",
+       "value": ""
+     },
+     {
+       "component": "reference",
+       "valueType": "string",
+       "name": "offerImage",
+       "label": "Offer Image",
+        "multi": false
+     }
+   ]
+}
+```
 
-Er zijn 3 delen van de URL die moeten worden bijgewerkt
+Sla uw wijzigingen op.
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
+![ Blok ](./images/block13.png){zoomable="yes"}
 
-XXX moet worden vervangen door de URL van uw AEM CS Author-omgeving.
+### component-filters.json
 
-YYY zou door uw GitHub gebruikersrekening moeten worden vervangen.
+In de Code van Visual Studio, open het dossier **component-filters.json**.
 
-ZZZ zou door de naam van de bewaarplaats moeten worden vervangen GitHub die u in de vorige oefening gebruikte.
+![ Blok ](./images/block14.png){zoomable="yes"}
 
-U kunt URL van uw milieu van de Auteur van AEM CS vinden door [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"} te gaan. Klik uw **Programma** om het te openen.
+Onder **sectie**, ga een komma **in,** en identiteitskaart van uw component **fiberaanbieding** na de huidige laatste lijn.
 
-![ AEMCS ](./images/aemcs6.png)
+Sla uw wijzigingen op.
+
+![ Blok ](./images/block15.png){zoomable="yes"}
+
+## 1.1.3.3 Uw wijzigingen vastleggen
+
+U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
+
+U zou dan de 3 dossiers moeten zien die u enkel onder **Veranderingen** uitgeeft. Controleer uw wijzigingen.
+
+![ Blok ](./images/block16.png){zoomable="yes"}
+
+Voer een naam in voor uw PR, `Fiber Offer custom block` . Klik **Vastleggen aan hoofd**.
+
+![ Blok ](./images/block17.png){zoomable="yes"}
+
+Dan moet je dit zien. Klik **Push oorsprong**.
+
+![ Blok ](./images/block18.png){zoomable="yes"}
+
+Na een paar seconden, zijn uw veranderingen geduwd aan uw bewaarplaats GitHub.
+
+![ Blok ](./images/block19.png){zoomable="yes"}
+
+Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiSignal hebt gemaakt. Dan zou je iets dergelijks moeten zien, waaruit blijkt dat je wijzigingen zijn ontvangen.
+
+![ Blok ](./images/block20.png){zoomable="yes"}
+
+## 1.1.3.4 Voeg uw blok toe aan een pagina
+
+Nu uw basis citaatblok wordt bepaald en aan het project CitiSignal geëngageerd, kunt u a **fiberbied** blok aan een bestaande pagina toevoegen.
+
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
+
+![ AEMCS ](./images/aemcs6.png){zoomable="yes"}
 
 Daarna, klik de 3 punten **..** op het **milieu&#39;s** lusje en klik **Details van de Mening**.
 
-![ AEMCS ](./images/aemcs9.png)
+![ AEMCS ](./images/aemcs9.png){zoomable="yes"}
 
-U zult dan uw milieudetails, met inbegrip van URL van uw **milieu van de Auteur** zien. De URL kopiëren.
+Dan zie je de omgevingsdetails. Klik URL van uw **milieu van de Auteur**.
 
-![ AEMCS ](./images/aemcs10.png)
+>[!NOTE]
+>
+>Het is mogelijk dat uw omgeving gehiberd is. Als dat het geval is, zult u uw milieu eerst moeten ontberen.
 
-XXX = `author-p166717-e1786231.adobeaemcloud.com`
+![ AEMCS ](./images/aemcs10.png){zoomable="yes"}
 
-Voor de naam van de GitHub-gebruikersaccount kunt u dat gemakkelijk vinden in de URL van uw browser. In dit voorbeeld is de naam van de gebruikersaccount `woutervangeluwe` .
+Je moet dan de AEM Author-omgeving zien. Ga naar **Plaatsen**.
 
-YYY = `woutervangeluwe`
+![ AEMCS ](./images/block21.png){zoomable="yes"}
 
-![ AEMCS ](./images/aemcs11.png)
+Ga naar **CitiSignal** > **gebruiken** > **en**.
 
-Voor de bewaarplaatsnaam GitHub, kunt u het in het browser venster ook vinden dat u in GitHub hebt geopend. In dit geval is de naam van de gegevensopslagruimte `citisignal` .
+![ AEMCS ](./images/block22.png){zoomable="yes"}
 
-ZZZ = `citisignal-aem-accs`
+Klik **creëren** en selecteren **Pagina**.
 
-![ AEMCS ](./images/aemcs12.png)
+![ AEMCS ](./images/block23.png){zoomable="yes"}
 
-Deze drie waarden samen leiden tot deze nieuwe URL die moet worden geconfigureerd in het bestand `fstab.yaml` .
+Selecteer **Pagina** en klik **daarna**.
 
-`https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+![ AEMCS ](./images/block24.png){zoomable="yes"}
 
-Klik **Veranderingen vastleggen...**.
+Voer de volgende waarden in:
 
-![ AEMCS ](./images/aemcs13.png)
+- Titel: **CitiSignal Fiber**
+- Naam: **burgerschap-vezel**
+- De Titel van de pagina: **CitiSignal Vezel**
 
-Klik **veranderingen** vastleggen.
+Klik **creëren**.
 
-![ AEMCS ](./images/aemcs14.png)
+![ AEMCS ](./images/block25.png){zoomable="yes"}
 
-Het bestand `fstab.yaml` is nu bijgewerkt.
+Dan moet je dit zien.
 
-## 1.1.2.3 CitiSignal-elementen uploaden
+![ AEMCS ](./images/block26.png){zoomable="yes"}
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
+Klik op het lege gebied om de **sectie** component te selecteren. Klik vervolgens op de plusknop **+** in het rechtermenu.
 
-![ AEMCS ](./images/aemcs6.png)
+![ AEMCS ](./images/block27.png){zoomable="yes"}
 
-Klik vervolgens op de URL van de omgeving van uw auteur.
+Vervolgens wordt het aangepaste blok weergegeven in de lijst met beschikbare blokken. Klik om het te selecteren.
 
-![ AEMCS ](./images/aemcssetup18.png)
+![ AEMCS ](./images/block28.png){zoomable="yes"}
 
-Klik **Teken binnen met Adobe**.
+U zult dan gebieden als **Tekst van de Aanbieding** zien, **CTA van de Aanbieding** en **Beeld van de Aanbieding** wordt toegevoegd aan de redacteur. Klik **+ voeg** op het **gebied van het Beeld van de Aanbieding** toe om een beeld te selecteren.
 
-![ AEMCS ](./images/aemcssetup19.png)
+![ AEMCS ](./images/block29.png){zoomable="yes"}
 
-U ziet dan de omgeving van uw auteur.
+Dan moet je dit zien. Klik om de omslag **burgersignaal** te openen.
 
-![ AEMCS ](./images/aemcssetup20.png)
+![ AEMCS ](./images/blockpub1.png){zoomable="yes"}
 
-Uw URL ziet er als volgt uit: `https://author-p166717-e1786231.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+Selecteer het beeld **product-verrijking-1.png**. Klik **Uitgezocht**.
 
-U moet nu tot het **milieu van de Manager van het Pakket van CRX** van AEM toegang hebben. U doet dit door `ui#/aem/aem/start.html?appId=aemshell` te verwijderen van de URL en deze te vervangen door `crx/packmgr` . Dit houdt in dat uw URL er nu als volgt moet uitzien:
-`https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr` .
-Het greep **gaat** binnen om het milieu van de pakketmanager te laden
+![ AEMCS ](./images/blockpub2.png){zoomable="yes"}
 
-![ AEMCS ](./images/aemcssetup22.png)
+Dan moet je dit hebben. Klik **publiceren**.
 
-Daarna, klik **uploadt pakket**.
+![ AEMCS ](./images/blockpub3.png){zoomable="yes"}
 
-![ AEMCS ](./images/aemcssetup21.png)
+Klik **publiceren** opnieuw.
 
-Klik **doorbladeren** om van het te uploaden pakket de plaats te bepalen.
+![ AEMCS ](./images/blockpub4.png){zoomable="yes"}
 
-Het te uploaden pakket wordt genoemd **burgersignaal-assets.zip** en kan hier worden gedownload: [ https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
+Uw nieuwe pagina is nu gepubliceerd.
 
-![ AEMCS ](./images/aemcssetup23.png)
+## 1.1.3.5 Nieuwe pagina toevoegen aan het navigatiemenu
 
-Selecteer het pakket en klik **Open**.
+In uw overzicht van AEM Sites, ga **CitiSignal** > **Fragments** en controleer checkbox voor **Kopbal**. Klik **uitgeven**.
 
-![ AEMCS ](./images/aemcssetup24.png)
+![ AEMCS ](./images/nav0.png){zoomable="yes"}
 
-Daarna, klik O.K. **&#x200B;**.
+Voeg met de tekst `Fiber` een menuoptie toe aan het navigatiemenu. Selecteer de tekst **Vezel** en klik het **verbindings** pictogram.
 
-![ AEMCS ](./images/aemcssetup25.png)
+![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Het pakket wordt vervolgens geüpload.
+Ga dit voor **URL** in `/us/en/citisignal-fiber` en klik het **V** pictogram om te bevestigen.
 
-![ AEMCS ](./images/aemcssetup26.png)
+![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
-Daarna, klik **installeer** op het pakket u enkel uploadde.
+Dan moet je dit hebben. Klik **publiceren**.
 
-![ AEMCS ](./images/aemcssetup27.png)
+![ AEMCS ](./images/nav4.png){zoomable="yes"}
 
-Klik **installeren**.
+Klik **publiceren** opnieuw.
 
-![ AEMCS ](./images/aemcssetup28.png)
+![ AEMCS ](./images/nav5.png){zoomable="yes"}
 
-Na een paar minuten wordt uw pakket geïnstalleerd.
-
-![ AEMCS ](./images/aemcssetup29.png)
-
-U kunt dit venster nu sluiten.
-
-## 1.1.2.4 CitiSignal-elementen publiceren
-
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
-
-![ AEMCS ](./images/aemcs6.png)
-
-Klik vervolgens op de URL van de omgeving van uw auteur.
-
-![ AEMCS ](./images/aemcssetup18.png)
-
-Klik **Teken binnen met Adobe**.
-
-![ AEMCS ](./images/aemcssetup19.png)
-
-U ziet dan de omgeving van uw auteur. Klik **Assets**.
-
-![ AEMCS ](./images/aemcsassets1.png)
-
-Klik **Dossiers**.
-
-![ AEMCS ](./images/aemcsassets2.png)
-
-Klik om de omslag **te selecteren CitiSignal** en dan **te klikken leidt Publicatie**.
-
-![ AEMCS ](./images/aemcsassets3.png)
-
-Klik **daarna**.
-
-![ AEMCS ](./images/aemcsassets4.png)
-
-Klik **publiceren**.
-
-![ AEMCS ](./images/aemcsassets5.png)
-
-Uw middelen zijn nu gepubliceerd.
-
-## 1.1.2.5 CitiSignal-website maken
-
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
-
-![ AEMCS ](./images/aemcs6.png)
-
-Klik vervolgens op de URL van de omgeving van uw auteur.
-
-![ AEMCS ](./images/aemcssetup18.png)
-
-Klik **Teken binnen met Adobe**.
-
-![ AEMCS ](./images/aemcssetup19.png)
-
-U ziet dan de omgeving van uw auteur. Klik **Plaatsen**.
-
-![ AEMCS ](./images/aemcssetup30.png)
-
-Klik **creëren** en klik dan **Plaats van malplaatje**.
-
-![ AEMCS ](./images/aemcssetup31.png)
-
-Klik **Invoer**.
-
-![ AEMCS ](./images/aemcssetup32.png)
-
-U moet nu een vooraf geconfigureerde sjabloon voor uw site importeren. U kunt het malplaatje [ hier ](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"} downloaden. Sla het bestand op uw bureaublad op.
-
-Daarna, selecteer het dossier `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` en klik **Open**.
-
-![ AEMCS ](./images/aemcssetup33.png)
-
-Dan zie je dit. Klik om het malplaatje te selecteren u enkel uploadde en dan, klik **daarna**.
-
-![ AEMCS ](./images/aemcssetup34.png)
-
-U moet nu enkele details invullen.
-
-- Plaats titel: gebruik **CitiSignal**
-- Sitenaam: gebruik **CitiSignal**
-- GitHub URL: kopieer URL van de reactie GitHub u vóór gebruikte
-
-![ AEMCS ](./images/aemcssetup35.png)
-
-Dan heb je dit. Klik **creëren**.
-
-![ AEMCS ](./images/aemcssetup36.png)
-
-Uw site wordt nu gemaakt. Dit kan een paar minuten duren. Klik **OK**.
-
-![ AEMCS ](./images/aemcssetup37.png)
-
-Vernieuw het scherm na een paar minuten en dan ziet u de zojuist gemaakte CitiSignal-website.
-
-![ AEMCS ](./images/aemcssetup38.png)
-
-## 1.1.2.6 Bestandspaden.json bijwerken
-
-Klik in uw GitHub-repo om het bestand `paths.json` te openen.
-
-![ AEMCS ](./images/aemcssetupjson1.png)
-
-Klik **uitgeven** pictogram.
-
-![ AEMCS ](./images/aemcssetupjson2.png)
-
-U moet nu de tekst vervangen `aem-boilerplate-commerce` door `CitiSignal` op de regels 3, 4, 5, 6, 7 en 10.
-
-Klik **Veranderingen** vastleggen.
-
-![ AEMCS ](./images/aemcssetupjson3.png)
-
-Klik **Veranderingen** vastleggen.
-
-![ AEMCS ](./images/aemcssetupjson4.png)
-
-Het bestand `paths.json` is nu bijgewerkt.
-
-## 1.1.2.7 CitiSignal-website publiceren
-
-Daarna, klik checkbox vóór **CitiSignal**. Dan, klik **leiden Publicatie**.
-
-![ AEMCS ](./images/aemcssetup39.png)
-
-Klik **daarna**.
-
-![ AEMCS ](./images/aemcssetup40.png)
-
-Klik **omvatten de Montages van Kinderen**.
-
-![ AEMCS ](./images/aemcssetup41.png)
-
-Klik om checkbox **te selecteren omvat kinderen** en klik dan om andere checkboxes te deselecteren. Klik **OK**.
-
-![ AEMCS ](./images/aemcssetup42.png)
-
-Klik **publiceren**.
-
-![ AEMCS ](./images/aemcssetup43.png)
-
-Je wordt hier teruggestuurd. Klik **CitiSignal**, selecteer checkbox voor **index** en klik dan **uitgeven**.
-
-![ AEMCS ](./images/aemcssetup44.png)
-
-Uw website zal dan in de **Universele Redacteur** openen.
-
-![ AEMCS ](./images/aemcssetup45.png)
-
-U kunt nu toegang krijgen tot uw website door naar `main--citisignal-aem-accs--XXX.aem.page` en/of `main--citisignal-aem-accs--XXX.aem.live` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
+U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
 In dit voorbeeld wordt de volledige URL als volgt:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
 
-Het kan enige tijd duren voordat alle activa correct zijn weergegeven, aangezien deze eerst moeten worden gepubliceerd.
+Dan moet je dit zien. Klik **Vezel**.
 
-U zult dan dit zien:
+![ AEMCS ](./images/nav6.png){zoomable="yes"}
 
-![ AEMCS ](./images/aemcssetup46.png)
+Hier is uw standaard aangepaste blok, maar nu weergegeven op de website.
 
-## 1.1.2.8 Paginaprestaties testen
+![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
-Ga naar [ https://pagespeed.web.dev/ ](https://pagespeed.web.dev/){target="_blank"}. Ga uw URL in en klik **analyseren**.
-
-![ AEMCS ](./images/aemcssetup48.png)
-
-Vervolgens ziet u dat uw website, zowel voor mobiele als voor desktoptoepassingen, een hoge score haalt:
-
-**Mobiel**:
-
-![ AEMCS ](./images/aemcssetup49.png)
-
-**Desktop**:
-
-![ AEMCS ](./images/aemcssetup50.png)
-
-Volgende Stap: [ ontwikkelt een douaneblok ](./ex4.md){target="_blank"}
+Volgende Stap: [ Geavanceerd Blok van de Douane ](./ex5.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 

@@ -1,290 +1,351 @@
 ---
-title: AEM CS - Aangepast basisblok
-description: AEM CS - Aangepast basisblok
+title: AEM CS - Geavanceerd aangepast blok
+description: AEM CS - Geavanceerd aangepast blok
 kt: 5342
 doc-type: tutorial
-exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 1%
+source-wordcount: '998'
+ht-degree: 0%
 
 ---
 
-# 1.1.3 Een basisblok met aangepaste inhoud ontwikkelen
+# 1.1.4 Geavanceerd aangepast blok
 
-## 1.1.3.1 De lokale ontwikkelomgeving instellen
+In de vorige oefening, vormde u een basisdouaneblok genoemd **Aanbieding van de Vezel** dat showcases als **Tekst van de Aanbieding**, **Aanbieding CTA** en **Aanbieding** op uw website.
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
+U kunt nu aan dit blok blijven werken.
 
-![ Blok ](./images/block1.png){zoomable="yes"}
+![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
-Zodra de Desktop van Github geïnstalleerd is, ga naar de reactie GitHub u in de vorige oefening creeerde. Klik **&lt;> Code** en klik dan **Open met Desktop GitHub**.
+## 1.1.4.1 Stijl uw blok
 
-![ Blok ](./images/block2.png){zoomable="yes"}
+Nu u een werkend **vezelaanbieding** blok hebt kunt u het stileren op het toepassen.
 
-Uw reactie GitHub zal dan in de Desktop worden geopend GitHub. Voel vrij om de **Lokale Weg** te veranderen. Klik **Kloon**.
+Ga terug naar de Code van Visual Studio en open de omslag **blokken**. Er moeten nu meerdere mappen worden weergegeven die elk naar een specifiek blok verwijzen. Om uw **vezelaanbieding** blok geavanceerder te maken, moet u nu een omslag voor uw douaneblok tot stand brengen.
 
-![ Blok ](./images/block3.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv1.png){zoomable="yes"}
 
-Er wordt nu een lokale map gemaakt.
+Selecteer de omslag **blokken** en klik dan **creëren Nieuwe Omslag** pictogram.
 
-![ Blok ](./images/block4.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv2.png){zoomable="yes"}
 
-Open Visual Studio Code. Ga naar **Dossier** > **Open Omslag**.
+Noem uw omslag `fiberoffer` en de slag **gaat** binnen.
 
-![ Blok ](./images/block5.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv3.png){zoomable="yes"}
 
-Selecteer de omslag die door uw opstelling GitHub voor **burgersignaal** wordt gebruikt.
+Selecteer de nieuwe **fiberoffer** omslag en klik **creëren Nieuw Dossier** pictogram.
 
-![ Blok ](./images/block6.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv4.png){zoomable="yes"}
 
-U zult nu die omslag open in de Code van Visual Studio zien, bent u nu bereid om een nieuw blok tot stand te brengen.
+Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.js** in en de slag gaat binnen.
 
-![ Blok ](./images/block7.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv5.png){zoomable="yes"}
 
-## 1.1.3.2 Een aangepast basisblok maken
+U kunt blokversiering nu uitvoeren door volgende JavaScript in het dossier **toe te voegen fiberoffer.js**.
 
-Adobe raadt u aan blokken te ontwikkelen in drie fasen:
+Sla het bestand op.
 
-- Maak de definitie en het model voor het blok, herzie het, en breng het aan productie.
-- Maak inhoud met het nieuwe blok.
-- Implementeer de decoratie en stijlen voor het nieuwe blok.
+```js
+export default function decorate(block) {
+  const offerText = block.children[0];
+  const offerCTA = block.children[1];
+  const offerImage = block.children[2];
 
-### component-definition.json
+  offerText.id = 'offerText';
+  offerText.className = 'offerText';
+  offerCTA.id = 'offerCTA';
+  offerCTA.className = 'offerCTA';
+  offerImage.id = 'offerImage';
+  offerImage.className = 'offerImage';
+}
+```
 
-In de Code van Visual Studio, open het dossier **component-definition.json**.
+![ AEMCS ](./images/blockadv6.png){zoomable="yes"}
 
-![ Blok ](./images/block8.png){zoomable="yes"}
+Selecteer de nieuwe **fiberoffer** omslag en klik **creeer opnieuw Nieuw Dossier** pictogram.
 
-De rol neer tot u de component **Citaat** ziet. Plaats uw curseur naast de sluitende steun van de laatste component.
+![ AEMCS ](./images/blockadv7.png){zoomable="yes"}
 
-![ Blok ](./images/block9.png){zoomable="yes"}
+Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.css** in en de slag gaat binnen.
 
-Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
+![ AEMCS ](./images/blockadv8.png){zoomable="yes"}
 
-```json
-{
-  "title": "FiberOffer",
-  "id": "fiberoffer",
-  "plugins": {
-    "xwalk": {
-      "page": {
-        "resourceType": "core/franklin/components/block/v1/block",
-        "template": {
-          "name": "FiberOffer",
-          "model": "fiberoffer",
-          "offerText": "<p>Fiber will soon be available in your region!</p>",
-          "offerCallToAction": "Get your offer now!",
-          "offerImage": ""
-        }
-      }
-    }
-  }
+Kopieer en plak de volgende CSS-code in het nieuwe bestand.
+
+```js
+.offerText, .offerCTA, .offerImage{
+    color: #14161A;
+    font-size: 30px;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    text-align: center;
 }
 ```
 
 Sla uw wijzigingen op.
 
-![ Blok ](./images/block10.png){zoomable="yes"}
-
-### component-models.json
-
-In de Code van Visual Studio, open het dossier **component-models.json**.
-
-![ Blok ](./images/block11.png){zoomable="yes"}
-
-Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluitende steun van de laatste component.
-
-![ Blok ](./images/block12.png){zoomable="yes"}
-
-Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
-
-```json
-{
-  "id": "fiberoffer",
-  "fields": [
-     {
-       "component": "richtext",
-       "name": "offerText",
-       "value": "",
-       "label": "Offer Text",
-       "valueType": "string"
-     },
-     {
-       "component": "richtext",
-       "valueType": "string",
-       "name": "offerCallToAction",
-       "label": "Offer CTA",
-       "value": ""
-     },
-     {
-       "component": "reference",
-       "valueType": "string",
-       "name": "offerImage",
-       "label": "Offer Image",
-        "multi": false
-     }
-   ]
-}
-```
-
-Sla uw wijzigingen op.
-
-![ Blok ](./images/block13.png){zoomable="yes"}
-
-### component-filters.json
-
-In de Code van Visual Studio, open het dossier **component-filters.json**.
-
-![ Blok ](./images/block14.png){zoomable="yes"}
-
-Onder **sectie**, ga een komma **in,** en identiteitskaart van uw component **fiberaanbieding** na de huidige laatste lijn.
-
-Sla uw wijzigingen op.
-
-![ Blok ](./images/block15.png){zoomable="yes"}
-
-## 1.1.3.3 Uw wijzigingen vastleggen
+![ AEMCS ](./images/blockadv9.png){zoomable="yes"}
 
 U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
 
-U zou dan de 3 dossiers moeten zien die u enkel onder **Veranderingen** uitgeeft. Controleer uw wijzigingen.
+U zou dan de 2 dossiers moeten zien die u enkel onder **Veranderingen** heeft uitgegeven. Controleer uw wijzigingen.
 
-![ Blok ](./images/block16.png){zoomable="yes"}
+Voer een naam in voor uw PR, `js css` . Klik **Vastleggen aan hoofd**.
 
-Voer een naam in voor uw PR, `Fiber Offer custom block` . Klik **Vastleggen aan hoofd**.
-
-![ Blok ](./images/block17.png){zoomable="yes"}
+![ Blok ](./images/blockadv10.png){zoomable="yes"}
 
 Dan moet je dit zien. Klik **Push oorsprong**.
 
-![ Blok ](./images/block18.png){zoomable="yes"}
-
-Na een paar seconden, zijn uw veranderingen geduwd aan uw bewaarplaats GitHub.
-
-![ Blok ](./images/block19.png){zoomable="yes"}
+![ Blok ](./images/blockadv11.png){zoomable="yes"}
 
 Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiSignal hebt gemaakt. Dan zou je iets dergelijks moeten zien, waaruit blijkt dat je wijzigingen zijn ontvangen.
 
-![ Blok ](./images/block20.png){zoomable="yes"}
-
-## 1.1.3.4 Voeg uw blok toe aan een pagina
-
-Nu uw basis citaatblok wordt bepaald en aan het project CitiSignal geëngageerd, kunt u a **fiberbied** blok aan een bestaande pagina toevoegen.
-
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
-
-![ AEMCS ](./images/aemcs6.png){zoomable="yes"}
-
-Daarna, klik de 3 punten **..** op het **milieu&#39;s** lusje en klik **Details van de Mening**.
-
-![ AEMCS ](./images/aemcs9.png){zoomable="yes"}
-
-Dan zie je de omgevingsdetails. Klik URL van uw **milieu van de Auteur**.
-
->[!NOTE]
->
->Het is mogelijk dat uw omgeving gehiberd is. Als dat het geval is, zult u uw milieu eerst moeten ontberen.
-
-![ AEMCS ](./images/aemcs10.png){zoomable="yes"}
-
-Je moet dan de AEM Author-omgeving zien. Ga naar **Plaatsen**.
-
-![ AEMCS ](./images/block21.png){zoomable="yes"}
-
-Ga naar **CitiSignal** > **gebruiken** > **en**.
-
-![ AEMCS ](./images/block22.png){zoomable="yes"}
-
-Klik **creëren** en selecteren **Pagina**.
-
-![ AEMCS ](./images/block23.png){zoomable="yes"}
-
-Selecteer **Pagina** en klik **daarna**.
-
-![ AEMCS ](./images/block24.png){zoomable="yes"}
-
-Voer de volgende waarden in:
-
-- Titel: **CitiSignal Fiber**
-- Naam: **burgerschap-vezel**
-- De Titel van de pagina: **CitiSignal Vezel**
-
-Klik **creëren**.
-
-![ AEMCS ](./images/block25.png){zoomable="yes"}
-
-Dan moet je dit zien.
-
-![ AEMCS ](./images/block26.png){zoomable="yes"}
-
-Klik op het lege gebied om de **sectie** component te selecteren. Klik vervolgens op de plusknop **+** in het rechtermenu.
-
-![ AEMCS ](./images/block27.png){zoomable="yes"}
-
-Vervolgens wordt het aangepaste blok weergegeven in de lijst met beschikbare blokken. Klik om het te selecteren.
-
-![ AEMCS ](./images/block28.png){zoomable="yes"}
-
-U zult dan gebieden als **Tekst van de Aanbieding** zien, **CTA van de Aanbieding** en **Beeld van de Aanbieding** wordt toegevoegd aan de redacteur. Klik **+ voeg** op het **gebied van het Beeld van de Aanbieding** toe om een beeld te selecteren.
-
-![ AEMCS ](./images/block29.png){zoomable="yes"}
-
-Dan moet je dit zien. Klik om de omslag **burgersignaal** te openen.
-
-![ AEMCS ](./images/blockpub1.png){zoomable="yes"}
-
-Selecteer het beeld **product-verrijking-1.png**. Klik **Uitgezocht**.
-
-![ AEMCS ](./images/blockpub2.png){zoomable="yes"}
-
-Dan moet je dit hebben. Klik **publiceren**.
-
-![ AEMCS ](./images/blockpub3.png){zoomable="yes"}
-
-Klik **publiceren** opnieuw.
-
-![ AEMCS ](./images/blockpub4.png){zoomable="yes"}
-
-Uw nieuwe pagina is nu gepubliceerd.
-
-## 1.1.3.5 Nieuwe pagina toevoegen aan het navigatiemenu
-
-In uw overzicht van AEM Sites, ga **CitiSignal** > **Fragments** en controleer checkbox voor **Kopbal**. Klik **uitgeven**.
-
-![ AEMCS ](./images/nav0.png){zoomable="yes"}
-
-Voeg met de tekst `Fiber` een menuoptie toe aan het navigatiemenu. Selecteer de tekst **Vezel** en klik het **verbindings** pictogram.
-
-![ AEMCS ](./images/nav1.png){zoomable="yes"}
-
-Ga dit voor **URL** in `/us/en/citisignal-fiber` en klik het **V** pictogram om te bevestigen.
-
-![ AEMCS ](./images/nav3.png){zoomable="yes"}
-
-Dan moet je dit hebben. Klik **publiceren**.
-
-![ AEMCS ](./images/nav4.png){zoomable="yes"}
-
-Klik **publiceren** opnieuw.
-
-![ AEMCS ](./images/nav5.png){zoomable="yes"}
+![ Blok ](./images/blockadv12.png){zoomable="yes"}
 
 U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
 In dit voorbeeld wordt de volledige URL als volgt:
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
 
-Dan moet je dit zien. Klik **Vezel**.
+Dit wordt dan weergegeven met de opmaak die op de pagina is toegepast.
 
-![ AEMCS ](./images/nav6.png){zoomable="yes"}
+![ Blok ](./images/blockadv13.png){zoomable="yes"}
 
-Hier is uw standaard aangepaste blok, maar nu weergegeven op de website.
+## 1.1.4.2 Logica toevoegen en gegevens laden vanaf een extern eindpunt
 
-![ AEMCS ](./images/nav7.png){zoomable="yes"}
+Voor deze oefening, zult u een &quot;ruwe&quot;configuratie van Adobe Web SDK doen en u zult het volgende beste voorstel van Adobe Journey Optimizer Offer Decisioning vragen.
 
-Volgende Stap: [ Geavanceerd Blok van de Douane ](./ex5.md){target="_blank"}
+Om duidelijk te zijn: dit is niet bedoeld als een best practice-implementatie van Web SDK voor AEM as a Cloud Service. In de volgende oefening zult u gegevensinzameling gebruikend een specifieke stop uitvoeren die voor dit werd ontwikkeld.
+
+Deze oefening is bedoeld om u een paar basisdingen in JavaScript te tonen, als het laden van een externe bibliotheek JS, gebruikend de {**bibliotheek 0} alloy.js, die een verzoek en meer verzenden.**
+
+De bibliotheek **alloy.js** is de bibliotheek achter Web SDK die het mogelijk maakt om verzoeken van een website naar Adobe Edge Network, en van daar zo toepassingen zoals Adobe Experience Platform, Adobe Analytics, Adobe Target en meer te verzenden.
+
+Voeg deze code toe onder de vorige code die u hebt toegevoegd voor de opmaak van het blok:
+
+```javascript
+var script1 = document.createElement('script');
+  script1.text = "!function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=function(){var u=arguments;return new Promise(function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}(window,['alloy']);"
+  document.head.appendChild(script1);
+
+  var script2 = document.createElement('script');
+  script2.async = true;
+  script2.src = "https://cdn1.adoberesources.net/alloy/2.14.0/alloy.min.js";
+  document.head.appendChild(script2);
+
+  alloy("configure", {
+    "edgeConfigId": "045c5ee9-468f-47d5-ae9b-a29788f5948f",
+    "orgId": "907075E95BF479EC0A495C73@AdobeOrg",
+    "defaultConsent": "in"
+  });
+```
+
+Dan moet je dit hebben.
+
+De eerste manuscriptmarkering (script1) die u toevoegde, is een functie die door SDK van het Web wordt gebruikt en die tot een venstervoorwerp leidt, genoemd **legering**.
+
+De tweede scripttag (script2) laadt asynchroon de bibliotheek alloy.js van de Adobe CDN.
+
+In het derde codeblok wordt in feite het legeringsobject geconfigureerd voor het verzenden van gegevens naar een specifieke Adobe IMS Org en DataStream.
+
+In **Begonnen het Worden** module, vormde u reeds een datastream, geroepen `--aepUserLdap-- - One Adobe Datastream`. Het gebied **edgeConfigId** in de bovengenoemde codeverwijzingen identiteitskaart van de gegevensstroom die werd gevormd.
+
+U te hoeven niet om het gebied **edgeConfigId** op dit ogenblik te veranderen. In de volgende oefening zult u dit kunnen doen gebruikend de **MarTech** stop.
+
+![ Blok ](./images/blockadv15.png){zoomable="yes"}
+
+Dat zou u nu moeten doen.
+
+![ Blok ](./images/blockadv14.png){zoomable="yes"}
+
+Voeg vervolgens dit blok toe onder de vorige code die u hebt toegevoegd.
+
+```javascript
+var ECID = "";
+
+  alloy("getIdentity")
+    .then(function (result) {
+      // The command succeeded.
+      console.log("ECID:", result.identity.ECID);
+      ECID = result.identity.ECID;
+      getOffer(ECID);
+
+    })
+    .catch(function (error) {
+      // The command failed.
+      // "error" will be an error object with additional information.
+    });
+```
+
+Dit codeblok wordt gebruikt om de waarde van de Experience Cloud-id (ECID) op te halen. De ECID is de unieke apparaat-id van uw browser.
+
+Zoals u in de bovenstaande code kunt zien, wordt een andere functie aangeroepen wanneer de ECID is opgehaald. Deze functie wordt genoemd **getOffer ()** die u daarna zult toevoegen.
+
+![ Blok ](./images/blockadv16.png){zoomable="yes"}
+
+Voeg vervolgens de onderstaande code toe onder de
+
+```javascript
+async function getOffer(ECID) {
+  var url = "https://edge.adobedc.net/ee/irl1/v1/interact?configId=045c5ee9-468f-47d5-ae9b-a29788f5948f";
+
+  var timestamp = new Date().toISOString();
+
+  var offerRequest = {
+    "events": [
+      {
+        "xdm": {
+          "eventType": "decisioning.propositionDisplay",
+          "timestamp": timestamp,
+          "_experienceplatform": {
+            "identification": {
+              "core": {
+                "ecid": ECID
+              }
+            }
+          },
+          "identityMap": {
+            "ECID": [
+              {
+                "id": ECID
+              }
+            ]
+          }
+        },
+        "query": {
+          "personalization": {
+            "schemas": [
+              "https://ns.adobe.com/personalization/default-content-item",
+              "https://ns.adobe.com/personalization/html-content-item",
+              "https://ns.adobe.com/personalization/json-content-item",
+              "https://ns.adobe.com/personalization/redirect-item",
+              "https://ns.adobe.com/personalization/ruleset-item",
+              "https://ns.adobe.com/personalization/message/in-app",
+              "https://ns.adobe.com/personalization/message/content-card",
+              "https://ns.adobe.com/personalization/dom-action"
+            ],
+            "decisionScopes": [
+              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM2MWJmYjJlMjIwIn0=",
+              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM0MzQyZjJlMjFlIn0="
+            ]
+          }
+        }
+      }
+    ]
+  }
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(offerRequest),
+    });
+
+    if (response.status === 200) {
+      var body = await response.json();
+      console.log("Offer Decisioning Response: ", body);
+
+      const decisions = body["handle"];
+
+      decisions.forEach(decision => {
+        if (decision["type"] == "personalization:decisions") {
+          console.log("Offer Decisioning decision detail: ", decision);
+          const payloads = decision["payload"];
+
+          if (payloads === undefined || payloads.length == 0) {
+            //do nothing
+          } else {
+            payloads.forEach(payload => {
+              if (payload["placement"]["name"] == "Web - Image") {
+                console.log("Web-Image payload");
+                const items = payload["items"];
+                items.forEach(item => {
+                  if (item["id"].includes("dps:fallback-offer")) {
+                    console.log("Item details: ", item);
+                    const deliveryURL = item["data"]["deliveryURL"];
+
+                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
+                  } else if (item["id"].includes("dps:personalized-offer")) {
+                    console.log("Item details: ", item);
+                    const deliveryURL = item["data"]["deliveryURL"];
+                    console.log("Web-Image Personalized Offer Content: ", deliveryURL)
+
+                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
+                  }
+                });
+              } else if (payload["placement"]["name"] == "Web - JSON") {
+                console.log("Web-JSON payload");
+                const items = payload["items"];
+                items.forEach(item => {
+                  if (item["id"].includes("dps:fallback-offer")) {
+                    const content = JSON.parse(item["data"]["content"]);
+
+                    console.log("Web-JSON Fallback Content: ", content)
+
+                    document.querySelector("#offerText").innerHTML = content.text;
+                    document.querySelector("#offerCTA").innerHTML = content.cta;
+                  } else if (item["id"].includes("dps:personalized-offer")) {
+                    const content = JSON.parse(item["data"]["content"]);
+
+                    console.log("Web-JSON Personalized Offer Content: " + content);
+
+                    document.querySelector("#offerText").innerHTML = content.text;
+                    document.querySelector("#offerCTA").innerHTML = content.cta;
+                  }
+                });
+              }
+            });
+          }
+          document.querySelector("#offerImage").style.display = "block";
+          document.querySelector("#offerText").style.display = "block";
+          document.querySelector("#offerCTA").style.display = "block";
+        }
+      });
+    } else {
+      console.warn("Offer Decisioning Response unsuccessful:", response.body);
+    }
+  } catch (error) {
+    console.error("Error when getting Offer Decisioning Response:", error);
+  }
+}
+```
+
+Het is zeer belangrijk dat dit codeblok onder de sluitende steun wordt gekleefd die u op lijn 42 in dit voorbeeld kunt zien. De code u enkel plakte is een afzonderlijke functie die het heeft vereist eigen plaats in dit dossier, en kan niet in de bovengenoemde **standaardfunctie** worden genest.
+
+![ Blok ](./images/blockadv17.png){zoomable="yes"}
+
+Het codeblok u enkel plakte simuleert een verzoek dat normaal door Web SDK/alloy.js zou worden gemaakt. In dit voorbeeld zal a **halen** verzoek aan **edge.adobedc.net** worden gemaakt.
+
+In het verzoek, worden 2 **Scopes van het Besluit** gespecificeerd die Adobe Journey Optimizer Offer Decisioning zullen vragen om een besluit over welke aanbieding te verstrekken door dit ECID moet worden gezien.
+
+Zodra de reactie wordt ontvangen, zal deze code de reactie ontleden en dingen als URL van het beeld filtreren dat moet worden getoond en ook de reactie JSON die dingen zoals de Tekst van de Aanbieding en de CTA van de Aanbieding bevat, waarna zal het deze op de website tonen.
+
+Herinner me - deze benadering wordt gebruikt enkel voor enablement doel en is niet de beste manier om gegevensinzameling uit te voeren.
+
+Sla uw wijzigingen op. Dan, open **Desktop van Github**, geef een naam aan uw PR en klik **verbind aan hoofd**.
+
+![ Blok ](./images/blockadv18.png){zoomable="yes"}
+
+Daarna, klik **Push oorsprong**.
+
+![ Blok ](./images/blockadv19.png){zoomable="yes"}
+
+U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
+
+In dit voorbeeld wordt de volledige URL als volgt:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
+
+Dan moet je dit zien.
+
+![ Blok ](./images/blockadv20.png){zoomable="yes"}
+
+Volgende Stap: [ AEM Edge Delivery Services MarTech plugin ](./ex5.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 
