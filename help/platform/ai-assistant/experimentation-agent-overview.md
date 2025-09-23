@@ -20,5 +20,5 @@ ht-degree: 0%
 
 De Experimentation Agent versnelt digitale optimalisering met inzicht, geleide opstelling, en geautomatiseerde analyse voor marketers, analisten, en beheerders.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 

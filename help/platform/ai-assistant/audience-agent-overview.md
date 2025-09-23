@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Audience Agent stroomlijnt het publieksbeheer met conversationele creatie, optimalisatie, inzichten, en veilige integratie over B2B/B2C apps.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](audience-agent-overview)
 
