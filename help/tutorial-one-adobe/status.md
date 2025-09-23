@@ -83,7 +83,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | Naam | Laatste update | Werken 100% | Opmerkingen |
 | ---------------------- | ------------ | ------------ |------------ |
 | [ 1.1 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
-| [ van 0} 1.2 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
+| [ van 0&rbrace; 1.2 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
 
 {style="table-layout:auto"}
 
