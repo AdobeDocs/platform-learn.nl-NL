@@ -3,9 +3,9 @@ title: Content Status
 description: Content Status
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: 47d036564be9c009e26903b20778e61fd1c78635
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '473'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 | ---------------------- | ------------ | ------------ |------------ |
 | [ 1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05-01-2025 | Ja | - |
 | [ 1.2 Adobe Experience Manager Assets ](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 08-20-2025 | Ja | - |
-| [ 1.5 Adobe Commerce as a Cloud Service ](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09-19-2025 | Ja | - |
+| [ 1.5 Adobe Commerce as a Cloud Service ](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09-23-2025 | Ja | - |
 
 ## &#x200B;4. Levering en activering
 
@@ -82,8 +82,8 @@ Hieronder vindt u een overzicht van de status van de inhoud in deze zelfstudie.
 
 | Naam | Laatste update | Werken 100% | Opmerkingen |
 | ---------------------- | ------------ | ------------ |------------ |
-| [ 1.1 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
-| [ van 0&rbrace; 1.2 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | NEE | - |
+| [ 1.1 Aggle AI ](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09-23-2025 | Nee | Werk in uitvoering |
+| [ 1.2 Agent Collaboration ](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 09-23-2025 | Nee | Werk in uitvoering |
 
 {style="table-layout:auto"}
 

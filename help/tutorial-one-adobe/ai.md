@@ -2,7 +2,8 @@
 title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Agentic AI Tech Labs is een werk in uitvoering en zal in november/december 2025 worden gepubliceerd.
 
-## 1.1 Aan de slag met agents en AI
+[1.1 Aan de slag met agents en AI](./modules/agentic-ai/module1.1/agenticai.md)
 
 **Doel**
 
@@ -37,7 +38,7 @@ Technische elementen:
 - MCP-server, Python-laptop
 - Adobe API&#39;s
 
-## 1.2 Agent Collaboration
+[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **Doel**
 

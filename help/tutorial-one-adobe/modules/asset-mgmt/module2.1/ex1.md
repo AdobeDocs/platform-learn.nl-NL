@@ -4,7 +4,7 @@ description: Cloud Manager-programma maken
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -105,7 +105,7 @@ Na ongeveer 10 minuten, zal de activering van **Dynamische Media** worden gedaan
 
 Zodra uw pijpleidingslooppas is gebeëindigd, kunt u met de volgende oefening verdergaan.
 
-Volgende Stap: [ Opstelling uw milieu van AEM CS ](./ex3.md){target="_blank"}
+Volgende Stap: [ Opstelling uw milieu van AEM CS ](./ex2.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 

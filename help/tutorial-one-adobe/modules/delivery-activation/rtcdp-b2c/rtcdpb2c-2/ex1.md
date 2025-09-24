@@ -4,7 +4,7 @@ description: AI van de klant - Gegevensvoorbereiding (samenvatting)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Zodra het **Schema** en **Dataset** worden gevormd, bent u nu klaar om de gegeve
 
 De gegevens die voor de ervaringsgebeurtenissen in deze oefening worden voorbereid moeten aan de vereisten en het schema van de [ Groep van het Gebied van de Gebeurtenis XDM van de Consumentenervaring ](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md) voldoen.
 
-Gelieve te downloaden het zip dossier met demo gegevens van deze plaats: [ https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Gelieve te downloaden het zip dossier met demo gegevens van deze plaats: [ https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
 U hebt nu een dossier genoemd **CUSTOM-CAI-EVENTS-WEB.zip** gedownload. Plaats het dossier op de Desktop van uw computer en unzip het, waarna zult u een omslag genoemd **CUSTOM-CAI-EVENTS-WEB** zien.
 

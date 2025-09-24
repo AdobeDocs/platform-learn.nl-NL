@@ -3,9 +3,10 @@ title: Agentic AI
 description: Agentic AI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '74'
 ht-degree: 1%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 ## Leerdoelen
 
-- ...
+In deze module, zult u uw eigen agent creëren en zult de diverse architecturale elementen onderzoeken die omhoog een agent maken.
 
 ## Vereisten
 

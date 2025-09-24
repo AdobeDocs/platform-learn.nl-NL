@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -87,7 +87,7 @@ U moet nu de referentieafbeeldingen opgeven die worden getraind in het aangepast
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm7.png){zoomable="yes"}
 
-Download de verwijzingsbeelden [ hier ](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Pak het downloadbestand uit, wat u dit kan geven.
+Download de verwijzingsbeelden [ hier ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Pak het downloadbestand uit, wat u dit kan geven.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm8.png){zoomable="yes"}
 
@@ -201,7 +201,7 @@ Open het verzoek **3. Krijg de Status van CM** en klik **verzenden**. Vervolgens
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm35.png){zoomable="yes"}
 
-Na een paar notulen, verzend **&#x200B;**&#x200B;opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
+Na een paar notulen, verzend **** opnieuw voor het verzoek **. Krijg de Status van CM**. U zou dan moeten zien dat de status die in **werd veranderd succesvol** was en u zou twee beeld URLs als deel van de output moeten zien. Klik om beide bestanden te openen.
 
 ![ Aangepaste Modellen van Firefly ](./images/ffcm36.png){zoomable="yes"}
 

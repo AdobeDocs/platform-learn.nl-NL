@@ -4,9 +4,9 @@ description: AEM CS-omgeving instellen
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Klik **veranderingen** vastleggen.
 
 Het bestand `fstab.yaml` is nu bijgewerkt.
 
-## 1.1.2.3 CitiSignal-elementen uploaden
+## 1.1.2.3 CitiSignal-middelen en -site uploaden
 
 Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
 
@@ -163,23 +163,19 @@ Daarna, klik **uploadt pakket**.
 
 Klik **doorbladeren** om van het te uploaden pakket de plaats te bepalen.
 
-Het te uploaden pakket wordt genoemd **burgersignaal-assets.zip** en kan hier worden gedownload: [ https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip ](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
+Het te uploaden pakket wordt genoemd **burgersignaal-assets.zip** en kan hier worden gedownload: [ https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip ](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}.
 
 ![ AEMCS ](./images/aemcssetup23.png)
 
-Selecteer het pakket en klik **Open**.
+Selecteer het pakket `citisignal_aem_accs.zip` en klik **Open**.
 
 ![ AEMCS ](./images/aemcssetup24.png)
 
-Daarna, klik O.K. **&#x200B;**.
+Daarna, klik O.K. ****.
 
 ![ AEMCS ](./images/aemcssetup25.png)
 
-Het pakket wordt vervolgens geüpload.
-
-![ AEMCS ](./images/aemcssetup26.png)
-
-Daarna, klik **installeer** op het pakket u enkel uploadde.
+Het pakket wordt vervolgens geüpload. Daarna, klik **installeer** op het pakket u enkel uploadde.
 
 ![ AEMCS ](./images/aemcssetup27.png)
 
@@ -229,61 +225,66 @@ Klik **publiceren**.
 
 Uw middelen zijn nu gepubliceerd.
 
-## 1.1.2.5 CitiSignal-website maken
+## 1.1.2.5 CitiSignal-website publiceren
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
+Klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm en klik dan de** pijl **naast** Assets **.**
 
-![ AEMCS ](./images/aemcs6.png)
+![ AEMCS ](./images/aemcssetup30a.png)
 
-Klik vervolgens op de URL van de omgeving van uw auteur.
-
-![ AEMCS ](./images/aemcssetup18.png)
-
-Klik **Teken binnen met Adobe**.
-
-![ AEMCS ](./images/aemcssetup19.png)
-
-U ziet dan de omgeving van uw auteur. Klik **Plaatsen**.
+Daarna, klik **Plaatsen**.
 
 ![ AEMCS ](./images/aemcssetup30.png)
 
-Klik **creëren** en klik dan **Plaats van malplaatje**.
+U zou dan uw **CitiSignal** website moeten zien die na het installeren van het pakket alvorens werd gecreeerd.
 
 ![ AEMCS ](./images/aemcssetup31.png)
 
-Klik **Invoer**.
+Om uw plaats aan de bewaarplaats te verbinden GitHub die u vóór creeerde, moet u een **Configuratie van Edge Delivery Services** tot stand brengen.
+
+De eerste stap om dat te doen is de Configuratie van de a **Wolk** tot stand te brengen.
+
+Om dat te doen, klik de **het productnaam van Adobe Experience Manager** in de hoogste linkerhoek van uw scherm, dan klik het **hulpmiddelen** pictogram en selecteer dan **Algemeen**. Klik om **Browser van de Configuratie te openen**.
+
+![ AEMCS ](./images/aemcssetup31a.png)
+
+Dan moet je dit zien. Klik **creëren**
+
+![ AEMCS ](./images/aemcssetup31b.png)
+
+Plaats de gebieden **Titel** en **Naam** aan `CitiSignal`. Laat checkbox voor **de Configuraties van de Wolk** toe.
+
+Klik **creëren**.
+
+![ AEMCS ](./images/aemcssetup31c.png)
+
+Dan moet je dit hebben.
+
+![ AEMCS ](./images/aemcssetup31d.png)
+
+Daarna, moet u sommige gebieden van de **Configuratie van de Wolk** bijwerken u enkel creeerde.
+
+Om dat te doen, klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm, dan klik het** hulpmiddelen **pictogram en selecteer dan** de Diensten van de Wolk **.** Klik om **Configuratie van Edge Delivery Services** te openen.
 
 ![ AEMCS ](./images/aemcssetup32.png)
 
-U moet nu een vooraf geconfigureerde sjabloon voor uw site importeren. U kunt het malplaatje [ hier ](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"} downloaden. Sla het bestand op uw bureaublad op.
+Selecteer **CitiSignal**, klik **creeer** en selecteer **Configuratie**.
 
-Daarna, selecteer het dossier `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` en klik **Open**.
+![ AEMCS ](./images/aemcssetup31e.png)
+
+U moet nu de gebieden **Organisatie** en **Naam van de Plaats** invullen. Om dat te doen, heb eerst een blik door URL van uw bewaarplaats GitHub.
+
+![ AEMCS ](./images/aemcssetup31f.png)
+
+- **Organisatie**: gebruik de naam van uw naam van GitHub org, in dit voorbeeld is het `woutervangeluwe`
+- **Naam van de Plaats**: gebruik de naam van de bewaarplaats GitHub, die `citisignal-aem-accs` zou moeten zijn.
+
+Klik **sparen &amp; Sluiten**.
 
 ![ AEMCS ](./images/aemcssetup33.png)
 
-Dan zie je dit. Klik om het malplaatje te selecteren u enkel uploadde en dan, klik **daarna**.
+Dan moet je dit hebben. Laat checkbox vóór uw nieuw creëren de Configuratie van de Wolk van Edge toe en klik **publiceren**.
 
 ![ AEMCS ](./images/aemcssetup34.png)
-
-U moet nu enkele details invullen.
-
-- Plaats titel: gebruik **CitiSignal**
-- Sitenaam: gebruik **CitiSignal**
-- GitHub URL: kopieer URL van de reactie GitHub u vóór gebruikte
-
-![ AEMCS ](./images/aemcssetup35.png)
-
-Dan heb je dit. Klik **creëren**.
-
-![ AEMCS ](./images/aemcssetup36.png)
-
-Uw site wordt nu gemaakt. Dit kan een paar minuten duren. Klik **OK**.
-
-![ AEMCS ](./images/aemcssetup37.png)
-
-Vernieuw het scherm na een paar minuten en dan ziet u de zojuist gemaakte CitiSignal-website.
-
-![ AEMCS ](./images/aemcssetup38.png)
 
 ## 1.1.2.6 Bestandspaden.json bijwerken
 
@@ -308,6 +309,10 @@ Klik **Veranderingen** vastleggen.
 Het bestand `paths.json` is nu bijgewerkt.
 
 ## 1.1.2.7 CitiSignal-website publiceren
+
+Klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm en selecteer dan** Plaatsen **.**
+
+![ AEMCS ](./images/aemcssetup38.png)
 
 Daarna, klik checkbox vóór **CitiSignal**. Dan, klik **leiden Publicatie**.
 
@@ -364,7 +369,7 @@ Vervolgens ziet u dat uw website, zowel voor mobiele als voor desktoptoepassinge
 
 ![ AEMCS ](./images/aemcssetup50.png)
 
-Volgende Stap: [ ontwikkelt een douaneblok ](./ex4.md){target="_blank"}
+Volgende Stap: [ ontwikkelt een douaneblok ](./ex3.md){target="_blank"}
 
 Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 
