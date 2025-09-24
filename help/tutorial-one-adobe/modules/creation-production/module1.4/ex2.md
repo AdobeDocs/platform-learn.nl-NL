@@ -199,7 +199,7 @@ Klik op **+ Toevoegen** om de invoegtoepassing toe te voegen.
 
 ![ Adobe Express ](./images/expressv48.png)
 
-Selecteer toe:voegen-op **Sociale Previewer** en klik de **3} voorproefoptie van de Post van het Installatieschema {.** Je kunt nu gemakkelijk bekijken hoe je advertentie eruit zal zien op de meest gangbare sociale media.
+Selecteer toe:voegen-op **Sociale Previewer** en klik de **3&rbrace; voorproefoptie van de Post van het Installatieschema &lbrace;.** Je kunt nu gemakkelijk bekijken hoe je advertentie eruit zal zien op de meest gangbare sociale media.
 
 ![ Adobe Express ](./images/expressv49.png)
 

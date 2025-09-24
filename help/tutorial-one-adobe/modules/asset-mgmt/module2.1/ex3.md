@@ -61,7 +61,7 @@ De rol neer tot u de **Blokken** ziet. Plaats uw curseur onder de sluitende steu
 
 ![ Blok ](./images/block9.png)
 
-Plak deze code en voer een komma **** na het codeblok in:
+Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
 
 ```json
 {
@@ -98,7 +98,7 @@ Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluiten
 
 ![ Blok ](./images/block12.png)
 
-Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -255,7 +255,7 @@ In uw overzicht van AEM Sites, ga **CitiSignal** en controleer checkbox voor het
 
 ![ AEMCS ](./images/nav0.png)
 
-Selecteer het **gebied van de Tekst** in het voorproefscherm en klik dan het **3} gebied van de Tekst {op de rechterkant van het scherm om het uit te geven.**
+Selecteer het **gebied van de Tekst** in het voorproefscherm en klik dan het **3&rbrace; gebied van de Tekst &lbrace;op de rechterkant van het scherm om het uit te geven.**
 
 ![ AEMCS ](./images/nav0a.png)
 

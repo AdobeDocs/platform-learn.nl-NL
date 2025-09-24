@@ -171,7 +171,7 @@ Selecteer het pakket `citisignal_aem_accs.zip` en klik **Open**.
 
 ![ AEMCS ](./images/aemcssetup24.png)
 
-Daarna, klik O.K. ****.
+Daarna, klik O.K. **&#x200B;**.
 
 ![ AEMCS ](./images/aemcssetup25.png)
 
@@ -227,7 +227,7 @@ Uw middelen zijn nu gepubliceerd.
 
 ## 1.1.2.5 CitiSignal-website publiceren
 
-Klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm en klik dan de** pijl **naast** Assets **.**
+Klik de **productnaam van 0&rbrace; Adobe Experience Manager &lbrace;in de hoogste linkerhoek van uw scherm en klik dan de** pijl **naast** Assets **.**
 
 ![ AEMCS ](./images/aemcssetup30a.png)
 
@@ -263,7 +263,7 @@ Dan moet je dit hebben.
 
 Daarna, moet u sommige gebieden van de **Configuratie van de Wolk** bijwerken u enkel creeerde.
 
-Om dat te doen, klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm, dan klik het** hulpmiddelen **pictogram en selecteer dan** de Diensten van de Wolk **.** Klik om **Configuratie van Edge Delivery Services** te openen.
+Om dat te doen, klik de **productnaam van 0&rbrace; Adobe Experience Manager &lbrace;in de hoogste linkerhoek van uw scherm, dan klik het** hulpmiddelen **pictogram en selecteer dan** de Diensten van de Wolk **.** Klik om **Configuratie van Edge Delivery Services** te openen.
 
 ![ AEMCS ](./images/aemcssetup32.png)
 
@@ -310,7 +310,7 @@ Het bestand `paths.json` is nu bijgewerkt.
 
 ## 1.1.2.7 CitiSignal-website publiceren
 
-Klik de **productnaam van 0} Adobe Experience Manager {in de hoogste linkerhoek van uw scherm en selecteer dan** Plaatsen **.**
+Klik de **productnaam van 0&rbrace; Adobe Experience Manager &lbrace;in de hoogste linkerhoek van uw scherm en selecteer dan** Plaatsen **.**
 
 ![ AEMCS ](./images/aemcssetup38.png)
 
