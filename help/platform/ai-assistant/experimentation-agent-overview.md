@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Overzicht van de experimentele agent
 
-De Experimentation Agent versnelt digitale optimalisering met inzicht, geleide opstelling, en geautomatiseerde analyse voor marketers, analisten, en beheerders. Voor meer informatie, zie de [ documentatie van de Versneller van de Experiment ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
+De Experimentation Agent versnelt digitale optimalisering met inzicht, geleide opstelling, en geautomatiseerde analyse voor marketers, analisten, en beheerders. Voor meer informatie, zie de [ documentatie van de Versneller van de Experiment ](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
 >[!SLIDE](experimentation-agent-overview)
