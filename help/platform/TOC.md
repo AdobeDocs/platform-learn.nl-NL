@@ -75,7 +75,7 @@ Campaigns
    + [Eind-aan-eind demonstratie](rtcdp/demo.md)
    + [Overzicht van B2B edition](rtcdp/b2b-overview.md)
    + [Campagnes met Marketo Engage ordenen](rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
++ [ Begonnen het worden: De Architecten van gegevens en de Ingenieurs van Gegevens](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [Voorbeeldgegevens importeren naar Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Beheer {#admin}
    + [Overzicht](/help/platform/admin/overview.md)
@@ -138,11 +138,11 @@ Campaigns
       + [Segment afstemmen op inzichten vóór delen](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
       + [Segment komt overeen met ontvangen gegevens](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
    + Tutorials{#audience-tutorials}
-      + [ evalueer een publieksregel ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
-      + [ creeer een dataset om gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"} uit te voeren
-      + [ Moeilijk met publiek van uw gegevenspakhuis ](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
+      + [ evalueer een publieksregel](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
+      + [ creeer een dataset om gegevens uit te voeren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
+      + [ Moeilijk met publiek van uw gegevenspakhuis](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
 + [Controlelogboeken](/help/platform/governance/audit-logs.md)
-+ [ de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
++ [ de Inzameling van Gegevens](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
 + Collaboration {#collaboration}
    + [Real-Time CDP Collaboration - Overzicht](collaboration/real-time-cdp-collaboration-overview.md)
    + [Introductie tot Collaboration](collaboration/real-time-cdp-collaboration-intro.md)
@@ -173,13 +173,13 @@ Campaigns
    + [ verval datasets ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Pseudoniem profiel en vervaldatum van gebeurtenis (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [ de profielen van de Schrapping ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [ werk een profielattribuut ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert) bij
+   + [ werk een profielattribuut  bij](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Data-opname {#data-ingestion}
    + [Overzicht](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Overzicht van inname in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Een gegevensset maken en vullen](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [ de datasets en de partijen van de Schrapping ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [ Kaart een Csv- dossier aan XDM ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
+   + [ Kaart een Csv- dossier aan XDM](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
    + [ Bronoverzicht ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/overview)
    + [ Ingest gegevens van Adobe Analytics ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
    + [ Ingest gegevens van Audience Manager ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
@@ -189,8 +189,8 @@ Campaigns
    + [Overzicht van het opnemen van streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [ gegevens van de Stroom met HTTP API ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
    + [ gegevens van de Stroom gebruikend de Schakelaars van Source ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
-   + [ Zelfstudies van SDK van het Web ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
-   + [ Mobiele zelfstudies van SDK ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
+   + [ Zelfstudies van SDK van het Web](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
+   + [ Mobiele zelfstudies van SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
 + Levenscyclus van gegevens {#data-lifecycle}
    + [Gegevenssets vervallen](/help/platform/data-lifecycle/expire-datasets.md)
 + Bestemmingen {#destinations}
@@ -243,7 +243,7 @@ Campaigns
    + [Het begrip van het profiel van de Klant in real time](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Profieloverzicht](/help/platform/profiles/overview-diagram.md)
    + [Gegevens in profiel plaatsen](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [ pas de details van de profielmening aan ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
+   + [ pas de details van de profielmening aan](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
    + [Accountprofielen weergeven](/help/platform/profiles/view-account-profiles.md)
    + [Samenvoegbeleid maken](/help/platform/profiles/create-merge-policies.md)
    + [Overzicht van uniale schema&#39;s](/help/platform/profiles/union-schemas-overview.md)
@@ -272,12 +272,12 @@ Campaigns
    + [Query Service-API](/help/platform/queries/query-service-api.md)
    + [Door Adobe gedefinieerde functies](/help/platform/queries/adobe-defined-functions.md)
    + [Gegevenstoepassingen](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-   + [ produceer datasets van vraagresultaten ](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
+   + [ produceer datasets van vraagresultaten](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Gegevens analyseren en visualiseren](/help/platform/queries/analyze-and-visualize.md)
    + [Dashboards maken met BI-gereedschappen](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [De gegevens van uw klant opnieuw laden](/help/platform/queries/recharge-your-customer-data.md)
-   + [ verbindt cliënten met de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
+   + [ verbindt cliënten met de Dienst van de Vraag](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
    + [Gegevens valideren in de datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schema&#39;s {#schemas}
    + [Overzicht](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -293,7 +293,7 @@ Campaigns
    + [Opsommende velden en voorgestelde waarden gebruiken](/help/platform/schemas/use-enumerated-fields.md)
    + [Schema&#39;s kopiëren tussen sandboxen](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Schema&#39;s bijwerken](/help/platform/schemas/update-schemas.md)
-   + [ creeer een ad hoc schema ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
+   + [ creeer een ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
 + Bronnen {#sources}
    + [Overzicht](/help/platform/sources/overview.md)
    + [Gegevens van Adobe Analytics verzamelen](/help/platform/sources/ingest-data-from-adobe-analytics.md)
