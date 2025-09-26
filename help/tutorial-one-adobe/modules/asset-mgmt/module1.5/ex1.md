@@ -3,10 +3,11 @@ title: Aan de slag met Adobe Commerce as a Cloud Service
 description: Aan de slag met Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ Vorm de tweede optie gebruikend de naam `512GB` in alle 3 kolommen, en klik dan 
 
 ![AEM Assets](./images/accs30.png)
 
-Vorm de derde optie gebruikend de naam `1TB` in alle 3 kolommen, en klik dan **voeg Optie** opnieuw toe.
+Configureer de derde optie met de naam `1TB` in alle 3 kolommen.
 
 ![AEM Assets](./images/accs31.png)
 
@@ -234,7 +235,7 @@ Dan moet je dit zien. Klik **produceren Producten**.
 
 ![AEM Assets](./images/accs42.png)
 
-Klik **sparen**.
+Plaats de **Hoeveelheid** van elk product aan `10000`. Klik **sparen**.
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ Dan moet je dit zien. Klik **terug**.
 U ziet nu het product **iPhone Air** en zijn variaties in de Catalogus van het Product.
 
 ![AEM Assets](./images/accs47.png)
-
 
 Volgende Stap: [ verbind ACCS met de Storefront van AEM Sites CS/EDS ](./ex2.md){target="_blank"}
 

@@ -3,9 +3,10 @@ title: ACCS verbinden met AEM Assets CS
 description: ACCS verbinden met AEM Assets CS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 58448049d54ee6124985159577df0e307896a312
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +91,9 @@ Zorg ervoor dat de map leeg is.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets15.png)
 
-Ga naar [ https://github.com/ankumalh/assets-commerce ](https://github.com/ankumalh/assets-commerce).
+Ga naar [ https://github.com/ankumalh/assets-commerce ](https://github.com/ankumalh/assets-commerce). Klik **&lt;> Code** en selecteer dan **ZIP van de Download**. Download het bestand en zet het neer op uw bureaublad.
+
+![ ACCS+AEM Assets ](./images/accsaemassets15a.png)
 
 Daarna, kopieer het dossier **activa-commerce-main.zip** aan uw Desktop en unzip het. Open de omslag **activa-handel-belangrijkste**.
 
@@ -260,7 +263,7 @@ Klik **uploaden**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets41.png)
 
-Uw afbeeldingen zijn dan beschikbaar in uw map. Beweeg over het product **iPhone-AIR-Light-Gold.png** en klik het **3&rbrace; pictogram van Eigenschappen &lbrace;.**
+Uw afbeeldingen zijn dan beschikbaar in uw map. Beweeg over het product **iPhone-AIR-Light-Gold.png** en klik het **3} pictogram van Eigenschappen {.**
 
 ![ ACCS+AEM Assets ](./images/accsaemassets42.png)
 
@@ -268,7 +271,7 @@ De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd*
 
 ![ ACCS+AEM Assets ](./images/accsaemassets44.png)
 
-De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **&#x200B;**&#x200B;onder **de skus van het Product** toevoegen.
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets45.png)
 
@@ -285,7 +288,7 @@ Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets46.png)
 
-Beweeg over het product **iPhone-Air-Space-Black.png** en klik het **3&rbrace; pictogram van Eigenschappen &lbrace;.**
+Beweeg over het product **iPhone-Air-Space-Black.png** en klik het **3} pictogram van Eigenschappen {.**
 
 ![ ACCS+AEM Assets ](./images/accsaemassets47.png)
 
@@ -293,7 +296,7 @@ De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd*
 
 ![ ACCS+AEM Assets ](./images/accsaemassets48.png)
 
-De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **&#x200B;**&#x200B;onder **de skus van het Product** toevoegen.
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets201.png)
 
@@ -311,7 +314,7 @@ Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets202.png)
 
-Beweeg over het product **iPhone-Air-Sky-Blue.png** en klik het **3&rbrace; pictogram van Eigenschappen &lbrace;.**
+Beweeg over het product **iPhone-Air-Sky-Blue.png** en klik het **3} pictogram van Eigenschappen {.**
 
 ![ ACCS+AEM Assets ](./images/accsaemassets203.png)
 
@@ -319,7 +322,7 @@ De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd*
 
 ![ ACCS+AEM Assets ](./images/accsaemassets204.png)
 
-De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **&#x200B;**&#x200B;onder **de skus van het Product** toevoegen.
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets205.png)
 
@@ -336,7 +339,7 @@ Dan moet je dit hebben. Klik **sparen &amp; Sluiten**.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets206.png)
 
-Beweeg over het product **iPhone-Air-Cloud-White.png** en klik het **3&rbrace; pictogram van Eigenschappen &lbrace;.**
+Beweeg over het product **iPhone-Air-Cloud-White.png** en klik het **3} pictogram van Eigenschappen {.**
 
 ![ ACCS+AEM Assets ](./images/accsaemassets207.png)
 
@@ -344,7 +347,7 @@ De rol neer en plaatst de status van het gebied **Overzicht** aan **Goedgekeurd*
 
 ![ ACCS+AEM Assets ](./images/accsaemassets208.png)
 
-De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **&#x200B;**&#x200B;onder **de skus van het Product** toevoegen.
+De rol omhoog, gaat naar het **Commerce** lusje en klikt dan **** onder **de skus van het Product** toevoegen.
 
 ![ ACCS+AEM Assets ](./images/accsaemassets209.png)
 

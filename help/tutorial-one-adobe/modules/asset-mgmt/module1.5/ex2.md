@@ -3,9 +3,10 @@ title: ACCS verbinden met AEM Sites CS/EDS-winkel
 description: ACCS verbinden met AEM Sites CS/EDS-winkel
 kt: 5342
 doc-type: tutorial
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,7 @@ Klik **uitgeven** pictogram.
 
 ![ ACCS+AEM Sites ](./images/accsaemsites8.png)
 
-Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1&rbrace; Config kopieerde.**
+Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1} Config kopieerde.**
 
 Klik **Veranderingen vastleggen...**.
 
@@ -75,6 +76,11 @@ Klik **Veranderingen** vastleggen.
 ![ ACCS+AEM Sites ](./images/accsaemsites10.png)
 
 Het {**dossier 0} config.json werd nu bijgewerkt.** U moet uw wijzigingen binnen een paar minuten bekijken op de website. De manier om te verifiëren als de veranderingen met succes werden opgenomen is naar de **Telefoons** productpagina te gaan. U zou **iPhone AIR** nu moeten zien verschijnen op de pagina.
+
+Als u toegang wilt tot uw website, gaat u naar `main--citisignal-aem-accs--XXX.aem.page` en/of `main--citisignal-aem-accs--XXX.aem.live` nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, wat in dit voorbeeld `woutervangeluwe` is.
+
+In dit voorbeeld wordt de volledige URL als volgt:
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
 
 ![ ACCS+AEM Sites ](./images/accsaemsites11.png)
 
