@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Leer hoe te om, gegevens van veelvoudige datasets schoon te maken voor te bereiden en te combineren om een nieuwe dataset tot stand te brengen gebruikend CTAS (Creeer Lijst AS) en SQL van de Vonk functies voor het melden en dashboarding. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475298?learn=on&enablevpops&captions=dut)

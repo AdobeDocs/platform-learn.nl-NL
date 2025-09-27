@@ -221,7 +221,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Gegevens voorbereiden" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="Gegevens voorbereiden"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475298?format=jpeg&nocache=1740415313086&captions=dut" alt="Gegevens voorbereiden"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
