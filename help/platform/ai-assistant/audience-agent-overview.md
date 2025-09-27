@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Audience Agent-overzicht
 
-Audience Agent stroomlijnt het publieksbeheer met conversationele creatie, optimalisatie, inzichten, en veilige integratie over B2B/B2C apps. Voor meer informatie, zie de [ documentatie van Audience Agent ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience).
+Audience Agent stroomlijnt het publieksbeheer met conversationele creatie, optimalisatie, inzichten, en veilige integratie over B2B/B2C apps. Voor meer informatie, zie de [ documentatie van Audience Agent ](https://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/audience).
 
 >[!SLIDE](audience-agent-overview)
