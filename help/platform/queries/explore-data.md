@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Gegevens valideren met Query Service
 
-Leer hoe u ingesloten gegevens kunt valideren met SQL-functies. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) te bezoeken.
+Leer hoe u ingesloten gegevens kunt valideren met SQL-functies. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)

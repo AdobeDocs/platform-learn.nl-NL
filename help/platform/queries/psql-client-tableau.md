@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Connect Tableau naar Query Service
 
-Leer hoe te met de Dienst van de Vraag van een verscheidenheid van Desktopcliënttoepassingen te verbinden die het protocol PostgreSQL steunen en hoe te om de hulpmiddelen en de bestuurders van PostSQL te gebruiken om vragen te verbinden en te schrijven. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) te bezoeken.
+Leer hoe te met de Dienst van de Vraag van een verscheidenheid van Desktopcliënttoepassingen te verbinden die het protocol PostgreSQL steunen en hoe te om de hulpmiddelen en de bestuurders van PostSQL te gebruiken om vragen te verbinden en te schrijven. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)

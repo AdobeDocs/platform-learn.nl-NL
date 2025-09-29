@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Het gebruikspatronen van gegevens met de Dienst van de Vraag
 
-Deze video deelt uiteinden en beste praktijken voor het runnen van vragen in de interface van de vraagredacteur, cliënten PSQL, bedrijfsintelligentie (BI) oplossingen en HTTP API. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) te bezoeken.
+Deze video deelt uiteinden en beste praktijken voor het runnen van vragen in de interface van de vraagredacteur, cliënten PSQL, bedrijfsintelligentie (BI) oplossingen en HTTP API. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
