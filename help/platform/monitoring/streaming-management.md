@@ -20,4 +20,4 @@ ht-degree: 0%
 
 De capaciteit en het stromen controledashboards van de controle bieden ondernemingen zichtbaarheid en controle over platformgebruik. Zij helpen productie toewijzen, spikes of ondergebruik ontdekken, en inzicht in prestaties in real time verstrekken, toelatend pro-actieve besluiten en alarm om overbelasting te verhinderen en kritieke diensten te verzekeren stabiel blijven.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475279/?learn=on&enablevpops&captions=dut)
