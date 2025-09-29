@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Leer hoe te bevestigen als de gegevens in de datalabel met succes hebben opgenomen gebruikend de Dienst van de Vraag van Adobe Experience Platform. Voor gedetailleerde productdocumentatie, zie de [ gids UI van de Redacteur van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445683?learn=on&enablevpops&captions=dut)

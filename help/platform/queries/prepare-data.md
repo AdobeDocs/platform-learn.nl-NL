@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe de gegevensingenieurs de vraagdienst kunnen gebruiken om gegevens te transformeren en nieuwe datasets uit te voeren. Stel deze vragen op een programma in werking aan macht geautomatiseerde dashboards en segmentatie. Voor meer informatie, gelieve te bezoeken [ output datasets van vraagresultaten ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/ui/create-datasets) produceert.
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475298?learn=on&enablevpops&captions=dut)
