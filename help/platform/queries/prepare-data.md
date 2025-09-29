@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Afleiden gegevens met Data Distiller
 
-Leer hoe de gegevensingenieurs de vraagdienst kunnen gebruiken om gegevens te transformeren en nieuwe datasets uit te voeren. Stel deze vragen op een programma in werking aan macht geautomatiseerde dashboards en segmentatie. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) te bezoeken.
+Leer hoe de gegevensingenieurs de vraagdienst kunnen gebruiken om gegevens te transformeren en nieuwe datasets uit te voeren. Stel deze vragen op een programma in werking aan macht geautomatiseerde dashboards en segmentatie. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
