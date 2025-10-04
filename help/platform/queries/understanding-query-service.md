@@ -58,7 +58,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Gegevens valideren met Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Gegevens valideren met Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475331?format=jpeg&nocache=1759180596397&captions=dut" alt="Gegevens valideren met Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
