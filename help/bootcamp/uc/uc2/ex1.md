@@ -28,49 +28,49 @@ Platform is een omgeving waarin het woord klant breder is dan alleen de bekende 
 
 ## Vervoersstroom voor klanten
 
-Ga naar [ https://bootcamp.aepdemo.net ](https://bootcamp.aepdemo.net). Klik **allen** toestaan. Gebaseerd op uw het doorbladeren gedrag in de vorige gebruikersstroom, zult u personalisering zien gebeuren op de homepage van de website.
+Ga naar [&#x200B; https://bootcamp.aepdemo.net &#x200B;](https://bootcamp.aepdemo.net). Klik **allen** toestaan. Gebaseerd op uw het doorbladeren gedrag in de vorige gebruikersstroom, zult u personalisering zien gebeuren op de homepage van de website.
 
-![ DSN ](./images/web8.png)
+![&#x200B; DSN &#x200B;](./images/web8.png)
 
 Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen. Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de Klant in real time met **identiteitskaart van het Experience Cloud** als primaire herkenningsteken voor deze momenteel onbekende klant.
 
-![ Demo ](./images/pv1.png)
+![&#x200B; Demo &#x200B;](./images/pv1.png)
 
 U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedrag van de klant.
 
-![ Demo ](./images/pv3.png)
+![&#x200B; Demo &#x200B;](./images/pv3.png)
 
 Klik het **pictogram van het Profiel** in de hoogste juiste hoek van uw scherm.
 
-![ Demo ](./images/pv4.png)
+![&#x200B; Demo &#x200B;](./images/pv4.png)
 
 Klik **creeer een rekening**.
 
-![ Demo ](./images/pv5.png)
+![&#x200B; Demo &#x200B;](./images/pv5.png)
 
 Vul alle velden van het formulier in. Gebruik een echte waarde voor e-mailadres en telefoonnummer, aangezien deze worden gebruikt bij latere oefeningen voor het verzenden van e-mail en sms.
 
-![ Demo ](./images/pv7.png)
+![&#x200B; Demo &#x200B;](./images/pv7.png)
 
 De rol neer en klikt **Register**.
 
-![ Demo ](./images/pv8.png)
+![&#x200B; Demo &#x200B;](./images/pv8.png)
 
 Dan zie je dit.
 
-![ Demo ](./images/pv9.png)
+![&#x200B; Demo &#x200B;](./images/pv9.png)
 
 U ontvangt ook deze e-mail:
 
-![ Demo ](./images/pv10.png)
+![&#x200B; Demo &#x200B;](./images/pv10.png)
 
 Een paar minuten later ontvang je ook deze e-mail:
 
-![ Demo ](./images/pv11.png)
+![&#x200B; Demo &#x200B;](./images/pv11.png)
 
 Laten we zien hoe deze onboarding reis daarna is geconfigureerd.
 
-Volgende Stap: [ 2.2 leidt tot uw gebeurtenis ](./ex2.md)
+Volgende Stap: [&#x200B; 2.2 leidt tot uw gebeurtenis &#x200B;](./ex2.md)
 
 [Ga terug naar Gebruikersstroom 2](./uc2.md)
 

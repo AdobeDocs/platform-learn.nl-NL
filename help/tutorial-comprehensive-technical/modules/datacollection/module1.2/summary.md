@@ -27,7 +27,7 @@ Laten we de voordelen van de mogelijkheden voor gegevensinvoer van Adobe Experie
 
 ## Bekijk dit
 
-- Tech Blog: [ Privacys Service en verder in Adobe Experience Platform ](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
+- Tech Blog: [&#x200B; Privacys Service en verder in Adobe Experience Platform &#x200B;](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
 
 [Terug naar module 1.2](./data-ingestion.md)
 

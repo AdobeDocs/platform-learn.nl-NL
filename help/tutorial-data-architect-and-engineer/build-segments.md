@@ -30,7 +30,7 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 ## Vereiste machtigingen
 
-In [ vorm de 1&rbrace; les van Toestemmingen &lbrace;, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
+In [&#x200B; vorm de 1&rbrace; les van Toestemmingen &lbrace;, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien, specifiek:](configure-permissions.md)
 
 * Machtigingspunten **[!UICONTROL Profile Management]** > **[!UICONTROL Manage Segments]** , **[!UICONTROL View Segments]** en **[!UICONTROL Export Audience Segment]**
 * Machtigingspunten **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** en **[!UICONTROL Manage Profiles]**
@@ -52,7 +52,7 @@ Laten we een eenvoudig segment maken voor klanten van een loyaliteitsprogramma m
 1. Selecteer **[!UICONTROL Refresh estimate]** om te zien hoeveel profielen in aanmerking komen voor uw segment
 1. Als **[!UICONTROL Name]** voert u `Luma customers with level Gold or Above` in
 1. Selecteren **[!UICONTROL Save]**
-   ![ Segment ](assets/segment-goldOrAbove.png)
+   ![&#x200B; Segment &#x200B;](assets/segment-goldOrAbove.png)
 
 <!--## Build a sequential segment-->
 
@@ -67,19 +67,19 @@ In deze oefening, zullen wij een segment voor klanten creëren die het zelfde pr
 1. Sleep het **[!UICONTROL Purchases]** gebeurtenistype op het canvas _twee afzonderlijke tijden_
 1. Selecteer het klokpictogram tussen de twee **[!UICONTROL Purchases]** -gebeurtenissen en kies &quot;binnen 30 dagen&quot;
 1. Bevestig dat uw segmentdefinitie op dit punt **&quot;omvat publiek die minstens 1 gebeurtenis van Aankopen dan binnen 30 dagen heeft minstens 1 gebeurtenis van Aankopen&quot;heeft**
-   ![ Twee aankopen binnen 30 dagen ](assets/segment-twoPurchases.png)
+   ![&#x200B; Twee aankopen binnen 30 dagen &#x200B;](assets/segment-twoPurchases.png)
 1. Wijzig nu het gebeurtenisfilter in `sku`
 1. Sleep het veld SKU naar de tweede aankoopgebeurtenis
-   ![ Twee aankopen binnen 30 dagen met SKU ](assets/segment-twoPurchases-addSku.png)
+   ![&#x200B; Twee aankopen binnen 30 dagen met SKU &#x200B;](assets/segment-twoPurchases-addSku.png)
 1. Wis nu het gebeurtenisfilter
 1. In de **[!UICONTROL Browse Variables]** -sectie ziet u mappen voor de twee aankoopgebeurtenissen. Klik om te verkennen **[!UICONTROL Purchases 1]**\
-   ![ Twee aankopen binnen 30 dagen met SKU, doorblader de eerste aankoop ](assets/segment-twoPurchases-browsePurchaseOne.png)
+   ![&#x200B; Twee aankopen binnen 30 dagen met SKU, doorblader de eerste aankoop &#x200B;](assets/segment-twoPurchases-browsePurchaseOne.png)
 1. Ga omlaag naar de map **[!UICONTROL Product list items]** , selecteer het veld **[!UICONTROL SKU]** en sleep dit naar de rechterkant van de operand **[!UICONTROL equals]** . Wanneer u de cursor op het gebied plaatst, zet u de aanwijzer neer in de sectie &quot;Toevoegen om operands te vergelijken&quot;
 1. Geef het segment een naam `Bought same product within 30 days`
 1. Bevestig dat uw publieksdefinitie **&quot;omvat publiek is die minstens 1 de gebeurtenis van Aankopen dan binnen 30 dagen hebben heeft minstens 1 de gebeurtenis van Aankopen waar (SKU evenaart aan Aankopen1 SKU)&quot;**
 1. Selecteer de knop **[!UICONTROL Save]**
 
-   ![ het zelfde product in het laatste 30 dagsegment ](assets/segment-boughtSameProduct.png)
+   ![&#x200B; het zelfde product in het laatste 30 dagsegment &#x200B;](assets/segment-boughtSameProduct.png)
 
 ## Een segment met meerdere entiteiten maken
 
@@ -101,23 +101,23 @@ U zult het volgende segment tot stand brengen door de verhouding toe te passen u
 1. De publieksdefinitie bevestigen `(Include audience who have at least 1 Purchases event where ((Product Category starts with men)) ) and occurs in last 30 day(s)`
 1. Selecteer de knop **[!UICONTROL Save]**
 
-   ![ het zelfde product in het laatste 30 dagsegment ](assets/segment-purchasedMens.png)
+   ![&#x200B; het zelfde product in het laatste 30 dagsegment &#x200B;](assets/segment-purchasedMens.png)
 
 ## Segmentering in batch- en streaming
 
 Klik op **[!UICONTROL Segments]** in de linkernavigatie en laten we even kijken naar onze drie segmenten:
 
 * Twee van onze segmenten zijn batchsegmenten en één is een streaming segment.
-* Platform blijft aan het stromen segmentatie waar mogelijk in gebreke, kwalificerend de klant voor een segment zodra zij aan de criteria voldoen. Wanneer segmentdefinities te complex zijn voor streaming, worden deze automatisch omgezet in batch. In dit geval werden de twee segmenten standaard in batch geplaatst omdat het terugkijkvenster van de aankoopgebeurtenissen langer was dan zeven dagen. Voor een volledige en huidige lijst van het stromen beperkingen, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=nl-NL).
+* Platform blijft aan het stromen segmentatie waar mogelijk in gebreke, kwalificerend de klant voor een segment zodra zij aan de criteria voldoen. Wanneer segmentdefinities te complex zijn voor streaming, worden deze automatisch omgezet in batch. In dit geval werden de twee segmenten standaard in batch geplaatst omdat het terugkijkvenster van de aankoopgebeurtenissen langer was dan zeven dagen. Voor een volledige en huidige lijst van het stromen beperkingen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=nl-NL).
 * De batchtaken worden dagelijks uitgevoerd en kunnen worden uitgeschakeld.
 
-![ het zelfde product in het laatste 30 dagsegment ](assets/segment-review.png)
+![&#x200B; het zelfde product in het laatste 30 dagsegment &#x200B;](assets/segment-review.png)
 
 ## Aanvullende bronnen
 
-* [ documentatie van de Dienst van de Segmentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=nl-NL)
-* [ de Verwijzing van de Dienst API van de Segmentatie ](https://www.adobe.io/experience-platform-apis/references/segmentation/)
+* [&#x200B; documentatie van de Dienst van de Segmentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=nl-NL)
+* [&#x200B; de Verwijzing van de Dienst API van de Segmentatie &#x200B;](https://www.adobe.io/experience-platform-apis/references/segmentation/)
 
 segmentatie is veel belangrijker, vooral bij het activeren van segmenten. Deze onderwerpen zullen in een andere zelfstudie worden besproken.
 
-Je hebt het gemaakt door alle oefeningen! Gelieve te werk te gaan aan de [ conclusie ](conclusion.md).
+Je hebt het gemaakt door alle oefeningen! Gelieve te werk te gaan aan de [&#x200B; conclusie &#x200B;](conclusion.md).

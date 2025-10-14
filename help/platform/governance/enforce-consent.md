@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Goedkeuring afdwingen
 
-Leer hoe u beleidsregels maakt om de voorkeuren voor toestemming van de klant af te dwingen. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=nl-NL).
+Leer hoe u beleidsregels maakt om de voorkeuren voor toestemming van de klant af te dwingen. Voor meer informatie, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
 

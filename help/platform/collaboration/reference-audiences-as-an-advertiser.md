@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Source-publiek als adverteerder in Real-Time CDP Collaboration
 
-Als adverteerder, leer hoe te om publiek te bronnen, die hen in uw interface brengen zodat zij kunnen worden gebruikt aangezien u met partners samenwerkt. Voor gedetailleerde documentatie, zie [ bron en beheer publiek ](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+Als adverteerder, leer hoe te om publiek te bronnen, die hen in uw interface brengen zodat zij kunnen worden gebruikt aangezien u met partners samenwerkt. Voor gedetailleerde documentatie, zie [&#x200B; bron en beheer publiek &#x200B;](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

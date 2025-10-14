@@ -38,10 +38,10 @@ U kunt nu het volgende:
 
 ## Bekijk dit
 
-- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
+- De Documentatie van Experience Platform: [&#x200B; Customer Journey Analytics - de Documentatie van het Product &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
 
 ## Volgende stappen
 
-Ga terug naar [ Customer Journey Analytics ](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
+Ga terug naar [&#x200B; Customer Journey Analytics &#x200B;](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

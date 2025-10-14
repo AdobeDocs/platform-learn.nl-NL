@@ -23,19 +23,19 @@ De Hubs van de gebeurtenis vertegenwoordigt de **voordeur** voor een gebeurtenis
 
 ## Een naamruimte voor gebeurtenishubs maken
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een middel**.
+Ga naar [&#x200B; https://portal.azure.com/#home &#x200B;](https://portal.azure.com/#home) en selecteer **creeer een middel**.
 
-![ 1-01-open-azure-portal.png ](./images/101openazureportal.png)
+![&#x200B; 1-01-open-azure-portal.png &#x200B;](./images/101openazureportal.png)
 
 In het middelscherm, ga **Gebeurtenis** in de onderzoeksbar in. Vind de **kaart van de Hubs van de Gebeurtenis 0&rbrace; &lbrace;, klik** creeer **en klik dan** de Hubs van de Gebeurtenis **.**
 
-![ 1-02-onderzoek-gebeurtenis-hubs.png ](./images/102searcheventhubs.png)
+![&#x200B; 1-02-onderzoek-gebeurtenis-hubs.png &#x200B;](./images/102searcheventhubs.png)
 
 Als dit de eerste keer is dat u een middel in Azure creeert, zult u een nieuwe **groep van het Middel** moeten creëren. Als u al een middelgroep hebt kunt u het selecteren (of nieuwe creëren).
 
 Klik **creeer nieuw** en noem uw groep `--aepUserLdap---aep-enablement`, klik **O.K.**.
 
-![ 1-04-creeer-middel-group.png ](./images/104createresourcegroup.png)
+![&#x200B; 1-04-creeer-middel-group.png &#x200B;](./images/104createresourcegroup.png)
 
 Vul de overige opgegeven velden in:
 
@@ -46,81 +46,81 @@ Vul de overige opgegeven velden in:
 
 Klik **Overzicht + creeer**.
 
-![ 1-05-create-namespace.png ](./images/105createnamespace.png)
+![&#x200B; 1-05-create-namespace.png &#x200B;](./images/105createnamespace.png)
 
 Klik **creëren**.
 
-![ 1-07-namespace-create.png ](./images/107namespacecreate.png)
+![&#x200B; 1-07-namespace-create.png &#x200B;](./images/107namespacecreate.png)
 
 De plaatsing van uw middelgroep kan 1-2 minuten vergen, wanneer succesvol u het volgende scherm zult zien:
 
-![ 1-08-namespace-deploy.png ](./images/108namespacedeploy.png)
+![&#x200B; 1-08-namespace-deploy.png &#x200B;](./images/108namespacedeploy.png)
 
 ## Uw gebeurtenishub in Azure instellen
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **Alle middelen**.
+Ga naar [&#x200B; https://portal.azure.com/#home &#x200B;](https://portal.azure.com/#home) en selecteer **Alle middelen**.
 
-![ 1-09-all-resources.png ](./images/109allresources.png)
+![&#x200B; 1-09-all-resources.png &#x200B;](./images/109allresources.png)
 
 Klik in de lijst met bronnen op de naamruimte `--aepUserLdap---aep-enablement` Gebeurtenishubs:
 
-![ 1-10-list-resources.png ](./images/110listresources.png)
+![&#x200B; 1-10-list-resources.png &#x200B;](./images/110listresources.png)
 
 In `--aepUserLdap---aep-enablement` detailscherm, ga **Entiteiten** en klik **de Hubs van de Gebeurtenis**:
 
-![ 1-11-eventhub-namespace.png ](./images/111eventhubnamespace.png)
+![&#x200B; 1-11-eventhub-namespace.png &#x200B;](./images/111eventhubnamespace.png)
 
 Klik **+ de Hub van de Gebeurtenis**.
 
-![ 1-12-toe:voegen-gebeurtenis-hub.png ](./images/112addeventhub.png)
+![&#x200B; 1-12-toe:voegen-gebeurtenis-hub.png &#x200B;](./images/112addeventhub.png)
 
 Gebruik `--aepUserLdap---aep-enablement-event-hub` als naam en klik **Overzicht + creeer**.
 
-![ 1-13-create-event-hub.png ](./images/113createeventhub.png)
+![&#x200B; 1-13-create-event-hub.png &#x200B;](./images/113createeventhub.png)
 
 Klik **creëren**.
 
-![ 1-13-create-event-hub.png ](./images/113createeventhub1.png)
+![&#x200B; 1-13-create-event-hub.png &#x200B;](./images/113createeventhub1.png)
 
 In **de Hubs van de Gebeurtenis** onder uw gebeurtenishub namespace, zult u uw **vermelde Hub van de Gebeurtenis** nu zien.
 
-![ 1-14-event-hub-list.png ](./images/114eventhublist.png)
+![&#x200B; 1-14-event-hub-list.png &#x200B;](./images/114eventhublist.png)
 
 ## Uw Azure Storage Account instellen
 
 Om uw functie van de Hub van de Gebeurtenis van de Azure in recentere oefeningen te zuiveren, zult u een Azure Rekening van de Opslag als deel van uw het projectopstelling van de Code van Visual Studio moeten verstrekken. U gaat nu die Azure Storage Account maken.
 
-Ga naar [ https://portal.azure.com/#home ](https://portal.azure.com/#home) en selecteer **creeer een Middel**.
+Ga naar [&#x200B; https://portal.azure.com/#home &#x200B;](https://portal.azure.com/#home) en selecteer **creeer een Middel**.
 
-![ 1-15-event-hub-storage.png ](./images/115eventhubstorage.png)
+![&#x200B; 1-15-event-hub-storage.png &#x200B;](./images/115eventhubstorage.png)
 
 Ga **opslagrekening** in het onderzoek in, vind de kaart voor **Rekening van de Opslag** en klik **rekening van de Opslag**.
 
-![ 1-16-event-hub-search-storage.png ](./images/116eventhubsearchstorage.png)
+![&#x200B; 1-16-event-hub-search-storage.png &#x200B;](./images/116eventhubsearchstorage.png)
 
 Specificeer uw **Groep van het Middel** (gecreeerd in het begin van deze oefening), gebruik `--aepUserLdap--aepstorage` als uw naam van de de rekeningsrekening van de Opslag en selecteer **lokaal-overtollige opslag (LRS)**, dan klik **Overzicht + creeer**.
 
-![ 1-18-event-hub-create-review-storage.png ](./images/118eventhubcreatereviewstorage.png)
+![&#x200B; 1-18-event-hub-create-review-storage.png &#x200B;](./images/118eventhubcreatereviewstorage.png)
 
 Klik **creëren**.
 
-![ 1-19-gebeurtenis-hub-submit-storage.png ](./images/119eventhubsubmitstorage.png)
+![&#x200B; 1-19-gebeurtenis-hub-submit-storage.png &#x200B;](./images/119eventhubsubmitstorage.png)
 
 Het maken van onze opslagaccount duurt een paar seconden:
 
-![ 1-20-gebeurtenis-hub-opstellen-storage.png ](./images/120eventhubdeploystorage.png)
+![&#x200B; 1-20-gebeurtenis-hub-opstellen-storage.png &#x200B;](./images/120eventhubdeploystorage.png)
 
 Wanneer gebeëindigd zal uw scherm **aan middel** knoop tonen.
 
 Klik **Huis**.
 
-![ 1-21-gebeurtenis-hub-opstellen-klaar-storage.png ](./images/121eventhubdeployreadystorage.png)
+![&#x200B; 1-21-gebeurtenis-hub-opstellen-klaar-storage.png &#x200B;](./images/121eventhubdeployreadystorage.png)
 
 Uw Rekening van de Opslag is nu zichtbaar onder **Recente Middelen**.
 
-![ 1-22-gebeurtenis-hub-opstellen-middelen-list.png ](./images/122eventhubdeployresourceslist.png)
+![&#x200B; 1-22-gebeurtenis-hub-opstellen-middelen-list.png &#x200B;](./images/122eventhubdeployresourceslist.png)
 
-Volgende Stap: [ 2.4.3 vormt uw Azure Doel van de Hub van de Gebeurtenis in Adobe Experience Platform ](./ex3.md)
+Volgende Stap: [&#x200B; 2.4.3 vormt uw Azure Doel van de Hub van de Gebeurtenis in Adobe Experience Platform &#x200B;](./ex3.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

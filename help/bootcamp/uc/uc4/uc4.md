@@ -26,7 +26,7 @@ Heb een blik bij deze video om de waarde, de klantenreis en het configuratieproc
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
-Meer informatie over Customer Journey Analytics kan [ hier ](https://spark.adobe.com/page/t62eiRu9l6iWJ/) worden gevonden.
+Meer informatie over Customer Journey Analytics kan [&#x200B; hier &#x200B;](https://spark.adobe.com/page/t62eiRu9l6iWJ/) worden gevonden.
 
 ## Leerdoelen
 
@@ -39,7 +39,7 @@ Meer informatie over Customer Journey Analytics kan [ hier ](https://spark.adobe
 ## Vereisten
 
 - Enige kennis van Analysis Workspace verdient de voorkeur, maar is niet vereist
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Customer Journey Analytics-toepassing
 
 >[!IMPORTANT]

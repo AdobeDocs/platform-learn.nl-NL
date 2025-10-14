@@ -36,7 +36,7 @@ De insluitcode is een `<script>` -tag die u op uw webpagina&#39;s plaatst om de 
 
 Klik in het scherm Overzicht van de eigenschap op **[!UICONTROL Environments]** in de linkernavigatie om naar de pagina met omgevingen te gaan. Merk op dat de milieu&#39;s van de Ontwikkeling, van het Staging, en van de Productie voor u vooraf zijn gecreeerd.
 
-![ klik Milieu&#39;s in hoogste nav ](images/launch-environments.png)
+![&#x200B; klik Milieu&#39;s in hoogste nav &#x200B;](images/launch-environments.png)
 
 De ontwikkeling, het Staging, en de milieu&#39;s van de Productie beantwoorden aan de typische milieu&#39;s in het codeontwikkeling en versieproces. De code wordt eerst geschreven door een ontwikkelaar in een milieu van de Ontwikkeling. Wanneer zij hun werk hebben voltooid, sturen zij het naar een het Opvoeren milieu voor QA en andere teams om te herzien. Zodra de kwaliteitscontrole en andere teams tevreden zijn, wordt de code vervolgens gepubliceerd naar de productieomgeving. Dit is de openbare omgeving die uw bezoekers ervaren wanneer ze naar uw website komen.
 
@@ -46,21 +46,21 @@ Dit zijn de enige omgevingen die we nodig hebben om de zelfstudie te voltooien. 
 
 Kopieer nu de insluitcode:
 
-1. In de **[!UICONTROL Development]** rij, klik het Install pictogram ![ installeren pictogram ](images/launch-installIcon.png) om modaal te openen.
+1. In de **[!UICONTROL Development]** rij, klik het Install pictogram ![&#x200B; installeren pictogram &#x200B;](images/launch-installIcon.png) om modaal te openen.
 
 1. Merk op dat de markeringen aan de asynchrone insluitcodes zullen gebrek
 
-1. Klik het pictogram van het Exemplaar ![ pictogram van het Exemplaar ](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren.
+1. Klik het pictogram van het Exemplaar ![&#x200B; pictogram van het Exemplaar &#x200B;](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren.
 
 1. Klik op **[!UICONTROL Close]** om het modaal te sluiten.
 
-   ![ installeer pictogram ](images/launch-copyInstallCode.png)
+   ![&#x200B; installeer pictogram &#x200B;](images/launch-copyInstallCode.png)
 
 ## De insluitcode implementeren in de `<head>` van de HTML-voorbeeldpagina
 
 De insluitcode moet worden geïmplementeerd in het element `<head>` van alle HTML-pagina&#39;s die de eigenschap delen. U hebt mogelijk een of meerdere sjabloonbestanden die de `<head>` globaal op de site beheren, waardoor het eenvoudig is tags toe te voegen.
 
-Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat nog niet hebt gedaan. [ Haakjes ](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
+Kopieer de HTML-voorbeeldpaginacode en plak deze in een code-editor als u dat nog niet hebt gedaan. [&#x200B; Haakjes &#x200B;](https://brackets.io/) is een vrije, open bronredacteur als u nodig hebt.
 
 +++HTML-voorbeeldcode
 
@@ -120,7 +120,7 @@ Vervang de bestaande insluitcode op of rond regel 34 door de code op het klembor
 ```
 
 Open de ontwikkelaarsgereedschappen van uw webbrowser en ga naar het tabblad Netwerk. Op dit punt wordt een fout van 404 weergegeven voor de URL van de tagomgeving:
-![ 404 fout ](images/samplepage-404.png)
+![&#x200B; 404 fout &#x200B;](images/samplepage-404.png)
 
 De fout 404 wordt verwacht omdat u nog geen bibliotheek in deze milieu van Markeringen hebt gebouwd. Dat zult u in de volgende les doen. Als u een &#39;&#39;failed&#39;&#39;-bericht ziet in plaats van een 404-fout, bent u waarschijnlijk vergeten het `https://` -protocol toe te voegen aan de insluitcode. U hoeft het `https://` -protocol alleen op te geven als u de voorbeeldpagina laadt met het `file://` -protocol. Breng deze wijziging aan en laad de pagina opnieuw totdat de fout 404 wordt weergegeven.
 
@@ -130,7 +130,7 @@ Neem even de tijd om enkele best practices bij de implementatie van Codes te bek
 
 * **Laag van Gegevens**:
 
-   * Wij *adviseren sterk* creërend een gegevenslaag op uw plaats die alle attributen bevat nodig om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Voor meer info over gegevenslagen, gelieve te zien [ de Ervaring Digitale Laag van Gegevens 1.0 van de Klant ](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * Wij *adviseren sterk* creërend een gegevenslaag op uw plaats die alle attributen bevat nodig om variabelen in Analytics, Doel, en andere marketing oplossingen te bevolken. Deze voorbeeldpagina bevat alleen een zeer eenvoudige gegevenslaag, maar een echte gegevenslaag kan veel meer details bevatten over de pagina, de bezoeker, hun winkelwagendetails, enzovoort. Voor meer info over gegevenslagen, gelieve te zien [&#x200B; de Ervaring Digitale Laag van Gegevens 1.0 van de Klant &#x200B;](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * Definieer de gegevenslaag vóór de code voor het insluiten van tags om te maximaliseren wat u kunt doen met oplossingen voor Experiencen Cloud.
 
@@ -138,7 +138,7 @@ Neem even de tijd om enkele best practices bij de implementatie van Codes te bek
 
 * **HTML5 doctype**: Het HTML5 documenttype wordt vereist door Doel
 
-* **preconnect en dns-prefetch**: Gebruik preconnect en dns-prefetch om de tijd van de paginading te verbeteren. Zie ook: [ https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
+* **preconnect en dns-prefetch**: Gebruik preconnect en dns-prefetch om de tijd van de paginading te verbeteren. Zie ook: [&#x200B; https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
 * **pre-verbergend fragment voor asynchrone implementaties van het Doel**: U zult meer over dit in de les van het Doel leren, maar wanneer het Doel via asynchrone markering wordt opgesteld bed codes in, zou u een pre-verbergend fragment op uw pagina&#39;s vóór de markering moeten hardcoderen bed codes in om inhoudflikkering te beheren
 

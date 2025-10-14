@@ -17,53 +17,53 @@ ht-degree: 0%
 
 ## 1.6.2.1 Een S3-emmertje maken
 
-Ga naar [ https://console.aws.amazon.com ](https://console.aws.amazon.com) en teken binnen.
+Ga naar [&#x200B; https://console.aws.amazon.com &#x200B;](https://console.aws.amazon.com) en teken binnen.
 
 >[!NOTE]
 >
 >Als je nog geen AWS-account hebt, maak dan een nieuwe AWS-account aan met je persoonlijke e-mailadres.
 
-![ ETL ](./images/awshome.png)
+![&#x200B; ETL &#x200B;](./images/awshome.png)
 
 Na het programma openen, zult u aan de **Console van het Beheer van AWS** opnieuw worden gericht.
 
-![ ETL ](./images/awsconsole.png)
+![&#x200B; ETL &#x200B;](./images/awsconsole.png)
 
 In de onderzoeksbar, onderzoek naar **s3**. Klik het eerste onderzoeksresultaat: **S3 - Schaalbare Opslag in de Wolk**.
 
-![ ETL ](./images/awsconsoles3.png)
+![&#x200B; ETL &#x200B;](./images/awsconsoles3.png)
 
 U zult dan de **homepage van Amazon S3** zien. Klik **creëren Emmertje**.
 
-![ ETL ](./images/s3home.png)
+![&#x200B; ETL &#x200B;](./images/s3home.png)
 
 In **creeer het 1&rbrace; scherm van het Emmertje &lbrace;, gebruik de naam**.`--aepUserLdap---gspem-dam`
 
-![ ETL ](./images/bucketname.png)
+![&#x200B; ETL &#x200B;](./images/bucketname.png)
 
 Laat alle andere standaardinstellingen ongewijzigd. De rol neer en klikt **creeert emmer**.
 
-![ ETL ](./images/createbucket.png)
+![&#x200B; ETL &#x200B;](./images/createbucket.png)
 
 Vervolgens ziet u dat uw emmer is gemaakt en wordt deze omgeleid naar de startpagina van Amazon S3.
 
-![ ETL ](./images/S3homeb.png)
+![&#x200B; ETL &#x200B;](./images/S3homeb.png)
 
 ## Toestemmingen plaatsen om tot uw S3 emmertje toegang te hebben
 
 De volgende stap is toegang tot uw S3 emmertje te plaatsen.
 
-Om dat te doen, ga naar [ https://console.aws.amazon.com/iam/home ](https://console.aws.amazon.com/iam/home).
+Om dat te doen, ga naar [&#x200B; https://console.aws.amazon.com/iam/home &#x200B;](https://console.aws.amazon.com/iam/home).
 
 De toegang tot AWS-bronnen wordt beheerd door Amazon Identity and Access Management (IAM).
 
 U ziet deze pagina nu.
 
-![ ETL ](./images/iam.png)
+![&#x200B; ETL &#x200B;](./images/iam.png)
 
 In het linkermenu, klik **Gebruikers**. U zult dan het **scherm van Gebruikers** zien. Klik **creëren gebruiker**.
 
-![ ETL ](./images/iammenu.png)
+![&#x200B; ETL &#x200B;](./images/iammenu.png)
 
 Configureer vervolgens de gebruiker:
 
@@ -71,39 +71,39 @@ Configureer vervolgens de gebruiker:
 
 Klik **daarna**.
 
-![ ETL ](./images/configuser.png)
+![&#x200B; ETL &#x200B;](./images/configuser.png)
 
 U zult dan dit toestemmingenscherm zien. Klik **beleid van de Band direct**.
 
-![ ETL ](./images/perm1.png)
+![&#x200B; ETL &#x200B;](./images/perm1.png)
 
 Ga de onderzoekstermijn **s3** in om al verwant S3 beleid te zien. Selecteer het beleid **AmazonS3FullAccess**. De rol neer en klikt **daarna**.
 
-![ ETL ](./images/perm2.png)
+![&#x200B; ETL &#x200B;](./images/perm2.png)
 
 Controleer uw configuratie. Klik **creëren Gebruiker**.
 
-![ ETL ](./images/review.png)
+![&#x200B; ETL &#x200B;](./images/review.png)
 
 Dan zie je dit. Klik **Gebruiker van de Mening**.
 
-![ ETL ](./images/review1.png)
+![&#x200B; ETL &#x200B;](./images/review1.png)
 
 Klik **geloofsbrieven van de Veiligheid** en klik dan **creeer toegangssleutel**.
 
-![ ETL ](./images/cred.png)
+![&#x200B; ETL &#x200B;](./images/cred.png)
 
 Selecteer **Toepassing die buiten AWS** loopt. De rol neer en klikt **daarna**.
 
-![ ETL ](./images/creda.png)
+![&#x200B; ETL &#x200B;](./images/creda.png)
 
 Klik **creëren toegangssleutel**
 
-![ ETL ](./images/credb.png)
+![&#x200B; ETL &#x200B;](./images/credb.png)
 
 Dan zie je dit. Klik **tonen** om uw Geheime toegangstoets te zien:
 
-![ ETL ](./images/cred1.png)
+![&#x200B; ETL &#x200B;](./images/cred1.png)
 
 Uw **Geheime toegangssleutel** wordt nu getoond.
 
@@ -118,7 +118,7 @@ Uw **Geheime toegangssleutel** wordt nu getoond.
 
 Klik **Gedaan**.
 
-![ ETL ](./images/cred2.png)
+![&#x200B; ETL &#x200B;](./images/cred2.png)
 
 U hebt nu een AWS S3 emmertje met succes gecreeerd en u hebt een gebruiker met toestemmingen gecreeerd om tot dit emmertje toegang te hebben.
 
@@ -126,58 +126,58 @@ U hebt nu een AWS S3 emmertje met succes gecreeerd en u hebt een gebruiker met t
 
 In de onderzoeksbar, onderzoek naar **s3**. Klik het eerste onderzoeksresultaat: **S3 - Schaalbare Opslag in de Wolk**.
 
-![ ETL ](./images/bucket1.png)
+![&#x200B; ETL &#x200B;](./images/bucket1.png)
 
 Klik om het nieuwe S3 emmertje te openen, dat `--aepUserLdap---gspem-dam` zou moeten worden genoemd.
 
-![ ETL ](./images/bucket2.png)
+![&#x200B; ETL &#x200B;](./images/bucket2.png)
 
 Klik **uploaden**.
 
-![ ETL ](./images/bucket3.png)
+![&#x200B; ETL &#x200B;](./images/bucket3.png)
 
 Dan moet je dit zien.
 
-![ ETL ](./images/bucket4.png)
+![&#x200B; ETL &#x200B;](./images/bucket4.png)
 
-U kunt CitiSignal beelddossiers [ hier downloaden ](./images/package.zip){target="_blank"}.
+U kunt CitiSignal beelddossiers [&#x200B; hier downloaden &#x200B;](./images/package.zip){target="_blank"}.
 
 Exporteer de bestanden naar uw bureaublad.
 
-![ ETL ](./images/bucket5.png)
+![&#x200B; ETL &#x200B;](./images/bucket5.png)
 
 Klik **toevoegen Omslag**.
 
-![ ETL ](./images/bucket6.png)
+![&#x200B; ETL &#x200B;](./images/bucket6.png)
 
 Selecteer de omslag **activa** van het pakket van de downloadomslag **&#x200B;**. Klik **uploaden**.
 
-![ ETL ](./images/bucket7.png)
+![&#x200B; ETL &#x200B;](./images/bucket7.png)
 
 Dan moet je dit zien. Klik **voeg opnieuw Omslag** toe.
 
-![ ETL ](./images/bucket8.png)
+![&#x200B; ETL &#x200B;](./images/bucket8.png)
 
 Selecteer de omslag **duimnagels** van het pakket van de downloadomslag **&#x200B;**. Klik **uploaden**.
 
-![ ETL ](./images/bucket9.png)
+![&#x200B; ETL &#x200B;](./images/bucket9.png)
 
 Dan moet je dit zien. Klik **uploaden**.
 
-![ ETL ](./images/bucket10.png)
+![&#x200B; ETL &#x200B;](./images/bucket10.png)
 
 Het uploaden is nu voltooid. Klik **dicht**.
 
-![ ETL ](./images/bucket11.png)
+![&#x200B; ETL &#x200B;](./images/bucket11.png)
 
 U zou deze omslagstructuur in uw S3 emmertje nu moeten hebben.
 
-![ ETL ](./images/bucket12.png)
+![&#x200B; ETL &#x200B;](./images/bucket12.png)
 
 ## Volgende stappen
 
-Ga naar [ creeer uw externe toepassing DAM ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; creeer uw externe toepassing DAM &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ GenStudio for Performance Marketing - Uitbreidbaarheid ](./genstudioext.md){target="_blank"}
+Ga terug naar [&#x200B; GenStudio for Performance Marketing - Uitbreidbaarheid &#x200B;](./genstudioext.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

@@ -26,23 +26,23 @@ Veel wettelijke privacyverordeningen hebben vereisten ingevoerd voor actieve en 
 
 Deze zelfstudie laat zien hoe u toestemmingsgegevens die zijn verkregen van een CMP (Consent Management Platform) implementeert en activeert met de extensie Platform Web SDK in Gegevensverzameling. We doen dit met behulp van zowel de Adobe standaarden als de IAB TCF 2.0 toestemmingsstandaard, met OneTrust of SourcePoint als voorbeeld-CMP&#39;s.
 
-Deze zelfstudie gebruikt de uitbreiding van SDK van het Web van het Platform om toestemmingsgegevens naar Platform te verzenden. Voor een overzicht van SDK van het Web, zie [ deze pagina ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL).
+Deze zelfstudie gebruikt de uitbreiding van SDK van het Web van het Platform om toestemmingsgegevens naar Platform te verzenden. Voor een overzicht van SDK van het Web, zie [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL).
 
 ## Vereisten
 
-De eerste vereisten voor het gebruiken van het Web SDK worden vermeld [ hier ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=nl-NL#fundamentals).
+De eerste vereisten voor het gebruiken van het Web SDK worden vermeld [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=nl-NL#fundamentals).
 
 Op die pagina, is er een vereiste voor een &quot;Dataset van de Gebeurtenis&quot;en, enkel zoals het klinkt, is dit een dataset om uw gegevens van de ervaringsgebeurtenis te houden. Om toestemmingsinformatie met gebeurtenissen te verzenden, moet de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html?lang=nl-NL) gebiedsgroep van de Details van de Toestemming 0&rbrace; IAB TCF 2.0 worden toegevoegd aan uw schema van de Gebeurtenis van de Ervaring:
 
 ![](./images/event-schema.png)
 
-Voor de toestemmingsnorm van het Platform v2.0, zullen wij ook toegang tot Adobe Experience Platform nodig hebben om een XDM Individueel schema en dataset van het Profiel tot stand te brengen. Voor een leerprogramma op schemaverwezenlijking, zie [ een schema creëren gebruikend de Redacteur van het Schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=nl-NL#tutorials) en voor de vereiste de gebiedsgroep van de Details van de Toestemming en van de Voorkeur zie [ een dataset vormen om toestemmings en voorkeursgegevens ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=nl-NL) te vangen.
+Voor de toestemmingsnorm van het Platform v2.0, zullen wij ook toegang tot Adobe Experience Platform nodig hebben om een XDM Individueel schema en dataset van het Profiel tot stand te brengen. Voor een leerprogramma op schemaverwezenlijking, zie [&#x200B; een schema creëren gebruikend de Redacteur van het Schema &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=nl-NL#tutorials) en voor de vereiste de gebiedsgroep van de Details van de Toestemming en van de Voorkeur zie [&#x200B; een dataset vormen om toestemmings en voorkeursgegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=nl-NL) te vangen.
 
 Dit leerprogramma veronderstelt u toegang tot de Inzameling van Gegevens hebt en een cliënt-kant bezit van Markeringen met de geïnstalleerde uitbreiding van SDK van het Web en een werkende bibliotheek gecreeerd en voor ontwikkeling gebouwd. Deze onderwerpen worden in de volgende documenten gedetailleerd en geïllustreerd:
 
-* [ creeer of vorm een bezit ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=nl-NL#create-or-configure-a-property)
-* [ Overzicht van bibliotheken ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=nl-NL)
-* [ het Publiceren overzicht ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=nl-NL)
+* [&#x200B; creeer of vorm een bezit &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=nl-NL#create-or-configure-a-property)
+* [&#x200B; Overzicht van bibliotheken &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=nl-NL)
+* [&#x200B; het Publiceren overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=nl-NL)
 
 Wij zullen ook de [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding van Chrome gebruiken Debugger van het 0&rbrace; Platform &lbrace;om onze implementatie te inspecteren en te bevestigen.
 
@@ -52,9 +52,9 @@ Als u het TCF-voorbeeld voor IAB wilt implementeren met een CMP op uw eigen site
 
 >[!NOTE]
 >
->De 1.0-standaard wordt geleidelijk vervangen door v2.0. Met de 2.0-standaard kunt u aanvullende gegevens over toestemming toevoegen die u kunt gebruiken om voorkeuren voor toestemming handmatig af te dwingen. De schermafbeeldingen onder de uitbreiding van SDK van het Web van het Platform zijn van versie [ 2.4.0 ](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=nl-NL#version-2.4.0) van de uitbreiding die met of v1.0 of v2.0 van de Standaard van de Adobe van de Toestemming compatibel is.
+>De 1.0-standaard wordt geleidelijk vervangen door v2.0. Met de 2.0-standaard kunt u aanvullende gegevens over toestemming toevoegen die u kunt gebruiken om voorkeuren voor toestemming handmatig af te dwingen. De schermafbeeldingen onder de uitbreiding van SDK van het Web van het Platform zijn van versie [&#x200B; 2.4.0 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=nl-NL#version-2.4.0) van de uitbreiding die met of v1.0 of v2.0 van de Standaard van de Adobe van de Toestemming compatibel is.
 
-Voor meer informatie over deze normen, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=nl-NL).
+Voor meer informatie over deze normen, zie [&#x200B; Ondersteunende voorkeur van de klantentoestemming &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=nl-NL).
 
 ### Stap 1: Vorm Toestemming in de uitbreiding van SDK van het Web
 
@@ -83,7 +83,7 @@ Met &quot;Opgegeven door gegevenselement&quot; hebben we toegang tot een gegeven
 
 Opmerking: deze configuratie-instelling voor de SDK blijft niet behouden voor gebruikersprofielen. Het is specifiek voor het instellen van het gedrag van de SDK voordat de bezoeker expliciete voorkeuren voor toestemming heeft opgegeven.
 
-Meer leren over het vormen van de uitbreiding van SDK van het Web ziet de [ de uitbreidingsoverzicht van SDK van het Web van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=nl-NL#configure-the-extension) en [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=nl-NL).
+Meer leren over het vormen van de uitbreiding van SDK van het Web ziet de [&#x200B; de uitbreidingsoverzicht van SDK van het Web van het Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=nl-NL#configure-the-extension) en [&#x200B; Ondersteunende voorkeur van de klantentoestemming &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=nl-NL).
 
 Voor dit voorbeeld, kiezen de optie voor &quot;In afwachting van&quot;en selecteren **sparen** om onze configuratiemontages te bewaren.
 
@@ -105,17 +105,17 @@ In dit voorbeeld, zullen wij &quot;binnen&quot;selecteren om erop te wijzen de b
 
 Opmerking: als een websitebezoeker de optie heeft uitgeschakeld, kunt u met de SDK niet meer instellen op welke gebruikers toestemming wordt gegeven.
 
-Uw markeringsregels kunnen door een verscheidenheid van ingebouwde of douane [ gebeurtenissen ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=nl-NL) worden teweeggebracht die kunnen worden gebruikt om deze toestemmingsgegevens op de aangewezen tijd tijdens een bezoekerszitting over te gaan. In het bovenstaande voorbeeld hebben we de geladen gebeurtenis van het venster gebruikt om de regel te activeren. In een recentere sectie, zullen wij een gebeurtenis van de toestemmingsvoorkeur van CMP gebruiken om een Vastgestelde Actie van de Toestemming teweeg te brengen. U kunt een actie van de Stem van de Reeks in een regel gebruiken die door om het even welke gebeurtenis wordt teweeggebracht u verkiest die opt-in voorkeur het plaatsen wijst.
+Uw markeringsregels kunnen door een verscheidenheid van ingebouwde of douane [&#x200B; gebeurtenissen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=nl-NL) worden teweeggebracht die kunnen worden gebruikt om deze toestemmingsgegevens op de aangewezen tijd tijdens een bezoekerszitting over te gaan. In het bovenstaande voorbeeld hebben we de geladen gebeurtenis van het venster gebruikt om de regel te activeren. In een recentere sectie, zullen wij een gebeurtenis van de toestemmingsvoorkeur van CMP gebruiken om een Vastgestelde Actie van de Toestemming teweeg te brengen. U kunt een actie van de Stem van de Reeks in een regel gebruiken die door om het even welke gebeurtenis wordt teweeggebracht u verkiest die opt-in voorkeur het plaatsen wijst.
 
 #### Instellen van toestemming met de standaard 2.0 voor platformgoedkeuring
 
-Versie 2.0 van de de toestemmingsnorm van het Platform werkt met [ XDM ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=nl-NL) gegevens. U moet ook de veldgroep Toestemming en Details voorkeuren toevoegen aan uw profielschema in Platform. Zie [ de verwerking van de Toestemming in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=nl-NL) voor meer informatie over de standaardversie 2.0 van de Adobe en deze gebiedsgroep.
+Versie 2.0 van de de toestemmingsnorm van het Platform werkt met [&#x200B; XDM &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=nl-NL) gegevens. U moet ook de veldgroep Toestemming en Details voorkeuren toevoegen aan uw profielschema in Platform. Zie [&#x200B; de verwerking van de Toestemming in Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=nl-NL) voor meer informatie over de standaardversie 2.0 van de Adobe en deze gebiedsgroep.
 
 Wij zullen een element van de douanegegevens van de codegegevens tot stand brengen om gegevens tot verzamelen en meta-gegevenseigenschappen van het toestemmingsvoorwerp over te gaan dat in het hieronder schema wordt getoond:
 
 ![](./images/collect-metadata.png)
 
-Deze Consents en de het gebiedsgroep van Details van de Voorkeur bevat gebieden voor het [ toestemmingen &amp; het gegevenstype van Voorkeur XDM ](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=nl-NL#prerequisites) dat de gegevens van de toestemmingsvoorkeur zal bevatten wij naar Platform met de uitbreiding van SDK van het Web van het Platform in onze regelactie verzenden. Momenteel zijn de enige vereiste eigenschappen voor het implementeren van de Platform Consent Standard 2.0 de verzamelwaarde (val) en de tijdwaarde van de metagegevens, die hierboven in rood zijn gemarkeerd.
+Deze Consents en de het gebiedsgroep van Details van de Voorkeur bevat gebieden voor het [&#x200B; toestemmingen &amp; het gegevenstype van Voorkeur XDM &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=nl-NL#prerequisites) dat de gegevens van de toestemmingsvoorkeur zal bevatten wij naar Platform met de uitbreiding van SDK van het Web van het Platform in onze regelactie verzenden. Momenteel zijn de enige vereiste eigenschappen voor het implementeren van de Platform Consent Standard 2.0 de verzamelwaarde (val) en de tijdwaarde van de metagegevens, die hierboven in rood zijn gemarkeerd.
 
 Laten we een gegevenselement voor deze gegevens maken. Selecteer Gegevenselementen en de blauwe knop Gegevenselement toevoegen. Laten we dit &#39;xdm-toestemming 2.0&#39; noemen en met de extensie Core selecteren we een type aangepaste code. U kunt de volgende gegevens invoeren of kopiëren en in het venster van de douaneredacteur van de code kleven:
 
@@ -146,13 +146,13 @@ We hebben nu twee regels, één voor elk van de normen voor platforminstemming. 
 
 ## Het gebruiken van het Web SDK met IAB TCF 2.0 Standaard van de Toestemming
 
-U kunt meer over versie 2.0 van het IAB Kader van de Transparantie en van de Toestemming bij de [ IAB Europa website ](https://iabeurope.eu/transparency-consent-framework/) leren.
+U kunt meer over versie 2.0 van het IAB Kader van de Transparantie en van de Toestemming bij de [&#x200B; IAB Europa website &#x200B;](https://iabeurope.eu/transparency-consent-framework/) leren.
 
 Om de gegevens van de toestemmingsvoorkeur gebruikend deze norm te plaatsen, moeten wij de IAB TCF 2.0 het schemagebiedgroep van de Details van de Toestemming aan ons schema van de Gebeurtenis van de Ervaring in Platform toevoegen:
 
 ![](./images/consentStrings.png)
 
-Deze veldgroep bevat de gebieden van de toestemmingsvoorkeur die door de norm IAB TCF 2.0 worden vereist. Voor meer op schema&#39;s en gebiedsgroepen, zie het [ Overzicht van het Systeem XDM ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl).
+Deze veldgroep bevat de gebieden van de toestemmingsvoorkeur die door de norm IAB TCF 2.0 worden vereist. Voor meer op schema&#39;s en gebiedsgroepen, zie het [&#x200B; Overzicht van het Systeem XDM &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl).
 
 ### Stap 1: Een gegevenselement voor toestemming maken
 
@@ -174,11 +174,11 @@ We stellen elk van de toestemmingStrings als volgt in:
 
 De velden `consentStandard` en `consentStandardVersion` zijn allebei gewoon tekenreeksen voor de standaard die we gebruiken, namelijk IAB TCF versie 2.0. `consentStringValue` verwijst naar een gegevenselement met de naam &quot;IAB TCF Consent String&quot;. De procenttekens rondom de tekst geven de naam van een data-element aan. Daar zullen we zo meteen naar kijken. Het veld `containsPersonalData` geeft aan of de toestemmingstekenreeks IAB TCF 2.0 persoonlijke gegevens bevat met de waarde &quot;Waar&quot; of &quot;Onwaar&quot;. Het veld `gdprApplies` geeft ‘true’ aan voor GDPR, ‘false’ voor GDPR is niet van toepassing of ‘undefined’ voor onbekend of GDPR van toepassing is. Op dit moment behandelt de Web SDK &quot;undefined&quot; als &quot;true&quot;, zodat toestemmingsgegevens die met &quot;gdprApplies: undefined&quot; worden verzonden, worden behandeld alsof de bezoeker zich in een gebied bevindt waar GDPR wel van toepassing is.
 
-Zie de [ toestemmingsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=nl-NL#getting-started) voor meer op deze eigenschappen en op IAB TCF 2.0 in markeringen.
+Zie de [&#x200B; toestemmingsdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=nl-NL#getting-started) voor meer op deze eigenschappen en op IAB TCF 2.0 in markeringen.
 
 ### Stap 2: Creeer een Regel om Toestemming met de Standaard IAB TCF 2.0 te plaatsen
 
-Daarna, creëren wij een regel om toestemming met SDK van het Web te plaatsen wanneer de toestemmingsgegevens voor deze norm door een websitebezoeker worden geplaatst of worden veranderd. In deze regel, zullen wij ook zien hoe te om die signalen van de toestemmingsverandering van een CMP als [ OneTrust ](https://www.onetrust.com/products/cookie-consent/) of [ Bronpunt ](https://www.sourcepoint.com/cmp/) te vangen.
+Daarna, creëren wij een regel om toestemming met SDK van het Web te plaatsen wanneer de toestemmingsgegevens voor deze norm door een websitebezoeker worden geplaatst of worden veranderd. In deze regel, zullen wij ook zien hoe te om die signalen van de toestemmingsverandering van een CMP als [&#x200B; OneTrust &#x200B;](https://www.onetrust.com/products/cookie-consent/) of [&#x200B; Bronpunt &#x200B;](https://www.sourcepoint.com/cmp/) te vangen.
 
 #### Een regelgebeurtenis toevoegen
 
@@ -206,7 +206,7 @@ function addEventListener() {
 addEventListener();
 ```
 
-Met deze code wordt eenvoudig een functie met de naam `addEventListener` gemaakt en uitgevoerd. De functie controleert of het `window.__tcfapi` -object bestaat en of dit wel het geval is, voegt een gebeurtenislistener toe volgens de specificaties van de API. U kunt meer over die specs in de [ IAB repo ](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) op GitHub lezen. Als deze gebeurtenislistener is toegevoegd en de websitebezoeker zijn toestemming en voorkeuren heeft voltooid, stelt de code aangepaste variabelen voor de `tcData.tcString` -gebeurtenis en de indicator voor GDPR-gebieden in. Opnieuw, om meer over IAB TCF te leren, zie de IAB [ website ](https://iabeurope.eu/transparency-consent-framework/) en [ reactie GitHub ](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) voor technische details. Na het plaatsen van die waarden, voert de code de trekkerfunctie uit die deze regel teweegbrengt om in werking te stellen.
+Met deze code wordt eenvoudig een functie met de naam `addEventListener` gemaakt en uitgevoerd. De functie controleert of het `window.__tcfapi` -object bestaat en of dit wel het geval is, voegt een gebeurtenislistener toe volgens de specificaties van de API. U kunt meer over die specs in de [&#x200B; IAB repo &#x200B;](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) op GitHub lezen. Als deze gebeurtenislistener is toegevoegd en de websitebezoeker zijn toestemming en voorkeuren heeft voltooid, stelt de code aangepaste variabelen voor de `tcData.tcString` -gebeurtenis en de indicator voor GDPR-gebieden in. Opnieuw, om meer over IAB TCF te leren, zie de IAB [&#x200B; website &#x200B;](https://iabeurope.eu/transparency-consent-framework/) en [&#x200B; reactie GitHub &#x200B;](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) voor technische details. Na het plaatsen van die waarden, voert de code de trekkerfunctie uit die deze regel teweegbrengt om in werking te stellen.
 
 Als het `window.__tcfapi` -object niet bestond toen deze functie voor het eerst werd uitgevoerd, controleert de functie er elke 100 milliseconden opnieuw op, zodat de gebeurtenislistener kan worden toegevoegd. De laatste coderegel voert eenvoudig de `addEventListener` functie uit die in de lijnen van code hierboven wordt bepaald.
 
@@ -218,7 +218,7 @@ Stel nu de regelactie Goedkeuring instellen in om deze waarden te gebruiken en n
 
 Selecteer Toevoegen in de sectie Handelingen. Kies in het vervolgkeuzemenu onder Extensie de optie Platform Web SDK. Kies Toestemming instellen onder Type handeling. Laten we deze handeling setConsent een naam geven.
 
-Kies Formulieren invullen in de actieconfiguratie onder Informatie over toestemming. Kies IAB TCF bij Standaard en Versie 2.0. Voor de Waarde, zullen wij de douanevariabele van onze gebeurtenis gebruiken en `%IAB TCF Consent String%` ingaan die uit [ tcData ](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) komt wij hierboven in onze functie van de regelgebeurtenis gevangen.
+Kies Formulieren invullen in de actieconfiguratie onder Informatie over toestemming. Kies IAB TCF bij Standaard en Versie 2.0. Voor de Waarde, zullen wij de douanevariabele van onze gebeurtenis gebruiken en `%IAB TCF Consent String%` ingaan die uit [&#x200B; tcData &#x200B;](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) komt wij hierboven in onze functie van de regelgebeurtenis gevangen.
 
 Onder GDPR is van toepassing, gebruiken we de andere aangepaste variabele van onze gebeurtenis en voeren we `%IAB TCF Consent GDPR%` in, die ook afkomstig is van de `tcData` die we hierboven in onze aangepaste functie voor regelgebeurtenissen hebben vastgelegd. Als u weet dat GDPR zeker van toepassing zal of niet zal zijn voor bezoekers aan deze website, kunt u Ja of Nee selecteren, al naar gelang van toepassing, in plaats van de keuze voor de aangepaste variabele (gegevenselement) te gebruiken. U kunt ook voorwaardelijke logica in een gegevenselement gebruiken om te controleren of GDPR wordt toegepast en de juiste waarde retourneren.
 
@@ -230,13 +230,13 @@ Selecteer de blauwe knop Opslaan om de handeling op te slaan en de blauwe knop O
 
 ### Stap 3: Opslaan in bibliotheek en bouwen
 
-Als u de [ werkende bibliotheek ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=nl-NL#use-the-working-library-feature) voorwaarde gebruikt, hebt u reeds deze veranderingen opgeslagen en uw ontwikkelingsbibliotheek gebouwd:
+Als u de [&#x200B; werkende bibliotheek &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=nl-NL#use-the-working-library-feature) voorwaarde gebruikt, hebt u reeds deze veranderingen opgeslagen en uw ontwikkelingsbibliotheek gebouwd:
 
 ![](./images/save-library.png)
 
 ### Stap 4: Inspect en validatie van gegevensverzameling
 
-Op onze plaats, verfrissen wij de pagina en bevestigen de bibliotheek bouwt in de [ Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding van Chrome, in de sectie van het markeringsmenu:
+Op onze plaats, verfrissen wij de pagina en bevestigen de bibliotheek bouwt in de [&#x200B; Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding van Chrome, in de sectie van het markeringsmenu:
 
 ![](./images/build-date.png)
 

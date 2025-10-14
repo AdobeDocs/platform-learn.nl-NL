@@ -15,23 +15,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, volg de instructies aan [ installeer PostBuster ](./ex8.md){target="_blank"}!
+>Als u een werknemer van Adobe bent, volg de instructies aan [&#x200B; installeer PostBuster &#x200B;](./ex8.md){target="_blank"}!
 
 ## Postman-omgeving downloaden
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open uw project.
+Ga naar [&#x200B; https://developer.adobe.com/console/home &#x200B;](https://developer.adobe.com/console/home){target="_blank"} en open uw project.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopr.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iopr.png)
 
 Klik **Firefly - Firefly Services** API. Dan, klik **Download voor Postman** en kies **Server-aan-Server** om een milieu van Postman te downloaden.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopm.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iopm.png)
 
 ## Postman-verificatie naar Adobe I/O
 
-De download en installeert de relevante versie van Postman voor uw OS bij [ Downloads van Postman ](https://www.postman.com/downloads/){target="_blank"}.
+De download en installeert de relevante versie van Postman voor uw OS bij [&#x200B; Downloads van Postman &#x200B;](https://www.postman.com/downloads/){target="_blank"}.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/getstarted.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/getstarted.png)
 
 Start de toepassing.
 
@@ -45,9 +45,9 @@ De verzameling bevat een aantal API-aanvragen die u kunt gebruiken. U gebruikt d
 - 1 Verzameling voor de oefeningen van de Diensten van Adobe Firefly in deze module
 - 1 Inzameling voor de oefeningen van Adobe Frame.io V4 in deze module
 
-Download [ postman-ff.zip ](./../../../assets/postman/postman-ff.zip){target="_blank"} aan uw lokale Desktop.
+Download [&#x200B; postman-ff.zip &#x200B;](./../../../assets/postman/postman-ff.zip){target="_blank"} aan uw lokale Desktop.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/pmfolder.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/pmfolder.png)
 
 In **postman-ff.zip** dossier zijn de volgende dossiers:
 
@@ -62,23 +62,23 @@ Unzip **postman-ff.zip** en sla de volgende dossiers in een omslag op uw Desktop
 - `Frame.io V4 - Tech Insiders.postman_collection.json`
 - `oauth_server_to_server.postman_environment.json`
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/pmfolder1.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/pmfolder1.png)
 
 In Postman, uitgezochte **Invoer**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/postmanui.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/postmanui.png)
 
 Selecteer **Dossiers**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/choosefiles.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/choosefiles.png)
 
 Kies alle dossiers van de omslag, dan selecteren **Open** en **Invoer**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/selectfiles.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/selectfiles.png)
 
 Klik **Invoer**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/impconfirm.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/impconfirm.png)
 
 Nu hebt u alles wat u nodig hebt in Postman om te beginnen met Firefly Services via de API&#39;s.
 
@@ -88,11 +88,11 @@ Daarna, om ervoor te zorgen u behoorlijk voor authentiek wordt verklaard, moet u
 
 Zorg ervoor dat u het juiste milieu hebt geselecteerd alvorens om het even welk verzoek uit te voeren door milieu-dropdown lijst in de hoogste juiste hoek te verifiëren. De geselecteerde omgeving moet een naam hebben die vergelijkbaar is met deze, `--aepUserLdap-- One Adobe OAuth Credential` .
 
-![ Postman ](./images/envselemea1.png)
+![&#x200B; Postman &#x200B;](./images/envselemea1.png)
 
 De geselecteerde omgeving moet een naam hebben die vergelijkbaar is met deze, `--aepUserLdap-- One Adobe OAuth Credential` .
 
-![ Postman ](./images/envselemea.png)
+![&#x200B; Postman &#x200B;](./images/envselemea.png)
 
 Nu uw Postman-omgeving en -verzamelingen zijn geconfigureerd en werken, kunt u verificatie uitvoeren van Postman naar Adobe I/O.
 
@@ -100,11 +100,11 @@ In **Adobe IO - OAuth** inzameling, selecteer het verzoek genoemd **POST - krijg
 
 Bericht onder **de Params van de Vraag**, worden twee variabelen van verwijzingen voorzien, `API_KEY` en `CLIENT_SECRET`. Deze variabelen zijn afkomstig uit de geselecteerde omgeving, `--aepUserLdap-- One Adobe OAuth Credential` .
 
-![ Postman ](./images/ioauth.png)
+![&#x200B; Postman &#x200B;](./images/ioauth.png)
 
 Als succesvol, een reactie die een dragerteken, een toegangstoken, en een vervalsingsvenster bevat verschijnt in de **sectie van het Lichaam** &lbrace;van Postman.
 
-![ Postman ](./images/ioauthresp.png)
+![&#x200B; Postman &#x200B;](./images/ioauthresp.png)
 
 U zou een gelijkaardige reactie moeten zien die de volgende informatie bevat:
 
@@ -120,8 +120,8 @@ Uw Postman-omgeving is nu geconfigureerd en werkt.
 
 ## Volgende stappen
 
-Ga naar [ Toepassingen om ](./ex9.md){target="_blank"} te installeren
+Ga naar [&#x200B; Toepassingen om &#x200B;](./ex9.md){target="_blank"} te installeren
 
-Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+Ga terug naar [&#x200B; Begonnen het worden &#x200B;](./getting-started.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../overview.md){target="_blank"}

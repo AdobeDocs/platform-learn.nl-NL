@@ -20,18 +20,18 @@ ht-degree: 1%
 
 ## Uitoefening
 
-[ 3.1.1 die met Content Analytics ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 3.1.1 die met Content Analytics &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, verken Content Analytics en krijg een inzicht in zijn mogelijkheden.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [ Alle Modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../../overview.md){target="_blank"}

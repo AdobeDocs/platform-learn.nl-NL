@@ -27,7 +27,7 @@ In deze les zult u:
 
 ## Mogelijke problemen met bijhouden
 
-Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [ overzicht ECID ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) worden gevonden.
+Afzonderlijke (Experience Cloud Identity) ECID&#39;s worden gegenereerd wanneer u gegevens verzendt vanuit het native gedeelte van uw app en vanuit een WebView in de app. Deze afzonderlijke ECID&#39;s leiden tot ongekoppelde treffers en tot opgeblazen bezoek- en bezoekersgegevens. Meer informatie over ECID kan in het [&#x200B; overzicht ECID &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) worden gevonden.
 
 Als u de verbroken resultaten en opgepompte gegevens wilt oplossen, moet u de ECID van de gebruiker doorgeven van het native gedeelte van uw app naar een WebView die u wellicht wilt gebruiken in uw app.
 
@@ -64,14 +64,14 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-De [`AEPEdgeIdentity.Identity.getUrlVariables` ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API plaatst - omhoog de variabelen voor URL om alle relevante informatie, zoals ECID, en meer te bevatten. In het voorbeeld gebruikt u een lokaal bestand, maar op externe pagina&#39;s zijn dezelfde concepten van toepassing.
+De [`AEPEdgeIdentity.Identity.getUrlVariables` &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API plaatst - omhoog de variabelen voor URL om alle relevante informatie, zoals ECID, en meer te bevatten. In het voorbeeld gebruikt u een lokaal bestand, maar op externe pagina&#39;s zijn dezelfde concepten van toepassing.
 
-U kunt meer over `Identity.getUrlVariables` API in de [ Identiteit voor de verwijzingsgids van de uitbreiding van Edge Network API ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) leren.
+U kunt meer over `Identity.getUrlVariables` API in de [&#x200B; Identiteit voor de verwijzingsgids van de uitbreiding van Edge Network API &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) leren.
 
 
 >[!TAB  Android ]
 
-Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL WebViewModel]**, en bepaal de plaats van de `fun loadUrl()` functie in `class WebViewModel: ViewModel()`. Voeg de volgende vraag toe om de Webmening te behandelen:
+Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL WebViewModel]**, en bepaal de plaats van de `fun loadUrl()` functie in `class WebViewModel: ViewModel()`. Voeg de volgende vraag toe om de Webmening te behandelen:
 
 ```kotlin
 // Handle web view
@@ -92,9 +92,9 @@ Identity.getUrlVariables {
 }
 ```
 
-De [`Identity.getUrlVariables` ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API plaatst - omhoog de variabelen voor URL om alle relevante informatie, zoals ECID, en meer te bevatten. In het voorbeeld gebruikt u een lokaal bestand, maar op externe pagina&#39;s zijn dezelfde concepten van toepassing.
+De [`Identity.getUrlVariables` &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API plaatst - omhoog de variabelen voor URL om alle relevante informatie, zoals ECID, en meer te bevatten. In het voorbeeld gebruikt u een lokaal bestand, maar op externe pagina&#39;s zijn dezelfde concepten van toepassing.
 
-U kunt meer over `Identity.getUrlVariables` API in de [ Identiteit voor de verwijzingsgids van de uitbreiding van Edge Network API ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) leren.
+U kunt meer over `Identity.getUrlVariables` API in de [&#x200B; Identiteit voor de verwijzingsgids van de uitbreiding van Edge Network API &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) leren.
 
 >[!ENDTABS]
 
@@ -102,7 +102,7 @@ U kunt meer over `Identity.getUrlVariables` API in de [ Identiteit voor de verwi
 
 De code uitvoeren:
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. Ga naar de **[!UICONTROL Settings]** in de app
 1. Tik op de knop **[!DNL View...]** om de **[!DNL Terms of Use]** weer te geven.
 
@@ -124,7 +124,7 @@ De code uitvoeren:
 1. Zoek in de gebruikersinterface van Assurance naar de gebeurtenis **[!UICONTROL Edge Identity Response URL Variables]** van de **[!UICONTROL com.adobe.griffon.mobile]** -leverancier.
 1. Selecteer de gebeurtenis en bekijk het veld **[!UICONTROL urlvariable]** in het **[!UICONTROL ACPExtensionEventData]** -object, waarbij de volgende parameters worden bevestigd: `adobe_mc` , `mcmid` en `mcorgid` .
 
-   ![ webview bevestiging ](assets/webview-validation.png){zoomable="yes"}
+   ![&#x200B; webview bevestiging &#x200B;](assets/webview-validation.png){zoomable="yes"}
 
    Hieronder ziet u een voorbeeldveld `urvariables` :
 
@@ -151,6 +151,6 @@ Jammer genoeg, is het zuiveren van de Webzitting beperkt. U kunt bijvoorbeeld de
 >
 >U hebt uw app nu ingesteld om inhoud weer te geven op basis van een URL in een webweergave met dezelfde ECID als de ECID die al is uitgegeven door de Adobe Experience Platform Mobile SDK.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 Volgende: **[Identiteit](identity.md)**

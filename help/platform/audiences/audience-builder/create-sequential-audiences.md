@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Opeenvolgend publiek maken
 
-In deze video leert u hoe u Experience Events kunt toevoegen aan een tijdlijn in uw publiek, zodat u een publiek kunt maken dat binnen een bepaalde tijd acties in een bepaalde volgorde heeft uitgevoerd. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
+In deze video leert u hoe u Experience Events kunt toevoegen aan een tijdlijn in uw publiek, zodat u een publiek kunt maken dat binnen een bepaalde tijd acties in een bepaalde volgorde heeft uitgevoerd. Voor meer informatie, gelieve te zien de [&#x200B; documentatie van de Bouwer van het Segment &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

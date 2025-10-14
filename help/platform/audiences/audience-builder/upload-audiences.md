@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Soorten publiek uploaden naar Adobe Experience Platform
 
-Leer hoe u publiek in CSV-indeling kunt uploaden naar Adobe Experience Platform. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
+Leer hoe u publiek in CSV-indeling kunt uploaden naar Adobe Experience Platform. Voor meer informatie, gelieve te zien de [&#x200B; documentatie van de Bouwer van het Segment &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432429/?learn=on&enablevpops&captions=dut)

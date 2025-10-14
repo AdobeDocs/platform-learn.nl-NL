@@ -24,45 +24,45 @@ Data Landing Zone is een Azure Blob-opslaginterface die door Adobe Experience Pl
 
 ## Vereisten
 
-Als u lobs of bestanden naar de Adobe Experience Platform Data Landing Zone wilt kopiëren, gebruikt u AzCopy, een opdrachtregelprogramma. U kunt een versie voor uw werkend systeem via [ https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10 ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) downloaden, scrol neer op die pagina aan **Download het draagbare binaire getal AzCopy** en selecteer de aangewezen versie voor uw OS.
+Als u lobs of bestanden naar de Adobe Experience Platform Data Landing Zone wilt kopiëren, gebruikt u AzCopy, een opdrachtregelprogramma. U kunt een versie voor uw werkend systeem via [&#x200B; https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10 &#x200B;](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) downloaden, scrol neer op die pagina aan **Download het draagbare binaire getal AzCopy** en selecteer de aangewezen versie voor uw OS.
 
-![ dlz-install-az-copy.png ](./images/dlzinstallazcopy.png)
+![&#x200B; dlz-install-az-copy.png &#x200B;](./images/dlzinstallazcopy.png)
 
 - Het gedownloade bestand uitpakken
 
-![ dlz-install-az-copy.png ](./images/dlz1.png)
+![&#x200B; dlz-install-az-copy.png &#x200B;](./images/dlz1.png)
 
-- Download het dossier van steekproefgegevens [ globaal-context-website interactions.csv ](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), die de interactie van de steekproefwebsite bevat en het in de omslag bewaart waarin u **azcopy** ontpitte.
+- Download het dossier van steekproefgegevens [&#x200B; globaal-context-website interactions.csv &#x200B;](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), die de interactie van de steekproefwebsite bevat en het in de omslag bewaart waarin u **azcopy** ontpitte.
 
-![ dlz-install-az-copy.png ](./images/dlz2.png)
+![&#x200B; dlz-install-az-copy.png &#x200B;](./images/dlz2.png)
 
 - Open een terminalvenster en navigeer naar de map op uw bureaublad. De volgende inhoud (azcopy en global-context-websiteinteractions.csv) wordt weergegeven, bijvoorbeeld op OSX:
 
-![ dlz-unzip-azcopy.png ](./images/dlzunzipazcopy.png)
+![&#x200B; dlz-unzip-azcopy.png &#x200B;](./images/dlzunzipazcopy.png)
 
 ## 1.2.5.2 Verbinding maken tussen gegevenslandingszone en Adobe Experience Platform
 
-Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+Login aan Adobe Experience Platform door naar dit URL te gaan: [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform).
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` .  Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![ Ingestie van Gegevens ](./images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/sb1.png)
 
 In het linkermenu, ga naar **Bronnen**. In de Broncatalogus, onderzoek naar **gegevens die** landen.
 
-![ Ingestie van Gegevens ](./images/sourcesdlz.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/sourcesdlz.png)
 
 Klik de **Gegevens LandingZone** kaart, zult u de geloofsbrieven op het juiste lusje zien.
 
-![ dlz-view-credentials.png ](./images/dlzviewcredentials.png)
+![&#x200B; dlz-view-credentials.png &#x200B;](./images/dlzviewcredentials.png)
 
 Klik het pictogram zoals vermeld om **SASUri** te kopiëren.
 
-![ dlz-copy-sas-uri.png ](./images/dlzcopysasuri.png)
+![&#x200B; dlz-copy-sas-uri.png &#x200B;](./images/dlzcopysasuri.png)
 
 ## Kopieer het CSV-bestand naar uw AEP-gegevenslandingszone
 
@@ -80,7 +80,7 @@ Zorg ervoor dat u de SASUri omringt met dubbele aanhalingstekens. Vervang `<your
 
 Na het uitvoeren van het bovengenoemde bevel in uw terminal, zult u dit zien:
 
-![ dlz-exec-copy-command.png ](./images/dlzexeccopycommand.png)
+![&#x200B; dlz-exec-copy-command.png &#x200B;](./images/dlzexeccopycommand.png)
 
 ## Het bestand opzoeken in uw landingszone voor gegevens
 
@@ -88,27 +88,27 @@ Ga naar je Data Landing Zone in Adobe Experience Platform.
 
 Selecteer **Bronnen**, onderzoek naar **gegevens die** landen en klik de **knoop van de Opstelling** landen.
 
-![ dlz-inspect-datalanding-zone.png ](./images/dlzinspectdatalandingzone.png)
+![&#x200B; dlz-inspect-datalanding-zone.png &#x200B;](./images/dlzinspectdatalandingzone.png)
 
 Hiermee wordt de gegevenslandingszone geopend. U zult het dossier zien dat u enkel in het gegevens het landen zone **uitgezochte gegevens** paneel uploadde.
 
-![ dlz-datalanding-zone-open.png ](./images/dlzdatalandingzoneopen.png)
+![&#x200B; dlz-datalanding-zone-open.png &#x200B;](./images/dlzdatalandingzoneopen.png)
 
 ## Uw bestand verwerken
 
 Selecteer uw dossier en selecteer **Gescheiden** als gegevensformaat. U ziet dan een voorvertoning van uw gegevens. Klik **daarna**.
 
-![ dlz-datalanding-select-file.png ](./images/dlzdatalandingselectfile.png)
+![&#x200B; dlz-datalanding-select-file.png &#x200B;](./images/dlzdatalandingselectfile.png)
 
 U kunt nu beginnen de geüploade gegevens in kaart te brengen om het XDM-schema van uw dataset aan te passen.
 
 Selecteer **Bestaande dataset** en selecteer het dataset **Systeem van de Demo - de Dataset van de Gebeurtenis voor Website (Globale v1.1)**. Klik **daarna**.
 
-![ dlz-target-dataset.png ](./images/dlztargetdataset.png)
+![&#x200B; dlz-target-dataset.png &#x200B;](./images/dlztargetdataset.png)
 
 Nu bent u klaar om de inkomende brongegevens van uw csv- dossier aan de doelgebieden van het schema XDM van de dataset in kaart te brengen.
 
-![ dlz-start-mapping.png ](./images/dlzstartmapping.png)
+![&#x200B; dlz-start-mapping.png &#x200B;](./images/dlzstartmapping.png)
 
 >[!NOTE]
 >
@@ -118,23 +118,23 @@ Nu bent u klaar om de inkomende brongegevens van uw csv- dossier aan de doelgebi
 
 Eerst van alles, klik **Duidelijk alle afbeeldingen** knoop. Vervolgens kunt u beginnen met een schone toewijzing.
 
-![ dlz-duidelijk-mappings.png ](./images/mappings1.png)
+![&#x200B; dlz-duidelijk-mappings.png &#x200B;](./images/mappings1.png)
 
 Daarna, klik **Nieuw gebiedstype** en selecteer dan **nieuw gebied** toevoegen.
 
-![ dlz-duidelijk-mappings.png ](./images/dlzclearmappings.png)
+![&#x200B; dlz-duidelijk-mappings.png &#x200B;](./images/dlzclearmappings.png)
 
 Om het **ecid** brongebied in kaart te brengen, selecteer het gebied **identities.ecid** en klik **Uitgezocht**.
 
-![ dlz-map-identity.png ](./images/dlzmapidentity.png)
+![&#x200B; dlz-map-identity.png &#x200B;](./images/dlzmapidentity.png)
 
 Daarna, klik **het doelgebied van de Kaart**.
 
-![ dlz-map-select-target-field.png ](./images/dlzmapselecttargetfield.png)
+![&#x200B; dlz-map-select-target-field.png &#x200B;](./images/dlzmapselecttargetfield.png)
 
 Selecteer het veld ``--aepTenantId--``.identification.core.ecid in de schemastructuur.
 
-![ dlz-map-target-field.png ](./images/dlzmaptargetfield.png)
+![&#x200B; dlz-map-target-field.png &#x200B;](./images/dlzmaptargetfield.png)
 
 U moet een paar andere gebieden in kaart brengen, **+ Nieuw gebiedstype** klikken dat door **wordt gevolgd voeg nieuw gebied** toe en voeg gebieden voor deze afbeelding toe
 
@@ -144,31 +144,31 @@ U moet een paar andere gebieden in kaart brengen, **+ Nieuw gebiedstype** klikke
 | tijdstempel | tijdstempel |
 | tijdstempel | _id |
 
-![ dlz-add-other-mapping.png ](./images/dlzaddothermapping.png)
+![&#x200B; dlz-add-other-mapping.png &#x200B;](./images/dlzaddothermapping.png)
 
 Als het scherm klaar is, ziet het er zo uit. Klik **daarna**.
 
-![ dlz-afbeelding-result.png ](./images/dlzmappingresult.png)
+![&#x200B; dlz-afbeelding-result.png &#x200B;](./images/dlzmappingresult.png)
 
 Klik **daarna**.
 
-![ dlz-gebrek-planning.png ](./images/dlzdefaultscheduling.png)
+![&#x200B; dlz-gebrek-planning.png &#x200B;](./images/dlzdefaultscheduling.png)
 
 Klik **Afwerking**.
 
-![ dlz-import-finish.png ](./images/dlzimportfinish.png)
+![&#x200B; dlz-import-finish.png &#x200B;](./images/dlzimportfinish.png)
 
 ## Gegevensstroom controleren
 
 Om u te controleren dataflow, ga naar **Bronnen**, **Dataflows** en klik op uw dataflow:
 
-![ dlz-monitor-dataflow.png ](./images/dlzmonitordataflow.png)
+![&#x200B; dlz-monitor-dataflow.png &#x200B;](./images/dlzmonitordataflow.png)
 
 Het laden van de gegevens kan een paar notulen nemen, wanneer succesvol, zult u een status van **Succes** zien:
 
-![ dlz-monitor-dataflow-result.png ](./images/dlzmonitordataflowresult.png)
+![&#x200B; dlz-monitor-dataflow-result.png &#x200B;](./images/dlzmonitordataflowresult.png)
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Terug naar module 1.2](./data-ingestion.md)
 

@@ -21,35 +21,35 @@ GenStudio for Performance Marketing gebruikt de rijkdom aan merkinformatie van u
 
 Volg onderstaande stappen om uw eigen merk te maken.
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
 
-![ GSPeM ](./images/gspem1.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem1.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem2.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem2.png)
 
 Het eerste wat u moet doen om GenStudio for Performance Marketing te gebruiken, is uw merk configureren. Klik het **pictogram van Banden**.
 
-![ GSPeM ](./images/gspem3.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem3.png)
 
 Klik op **+ Merk toevoegen** .
 
-![ GSPeM ](./images/gspem4.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem4.png)
 
 Voer de naam `--aepUserLdap-- - CitiSignal` voor uw merk in. Selecteer **toevoegen manueel** en klik dan **merk** toevoegen.
 
-![ GSPeM ](./images/gspem5.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem5.png)
 
 ## 1.3.1.1 Kleuren
 
 Dan moet je dit zien. Klik **Kleuren**.
 
-![ GSPeM ](./images/gspem6.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem6.png)
 
 Klik op **+ Kleur toevoegen** .
 
-![ GSPeM ](./images/gspem7.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem7.png)
 
 Er zijn vier verschillende kleuren om toe te voegen:
 
@@ -60,67 +60,67 @@ Er zijn vier verschillende kleuren om toe te voegen:
 
 Voer de hexadecimale code voor de kleur `#8821F4` in. Klik **toevoegen**.
 
-![ GSPeM ](./images/gspem8.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem8.png)
 
 Klik op **+ Kleur toevoegen** .
 
-![ GSPeM ](./images/gspem9.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem9.png)
 
 Voer de hexadecimale code voor de kleur `#14161A` in. Klik **toevoegen**.
 
-![ GSPeM ](./images/gspem10.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem10.png)
 
 Klik op **+ Kleur toevoegen** .
 
-![ GSPeM ](./images/gspem11.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem11.png)
 
 Voer de hexadecimale code voor de kleur `#EEEEEE ` in. Klik **toevoegen**.
 
-![ GSPeM ](./images/gspem12.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem12.png)
 
 Klik op **+ Kleur toevoegen** .
 
-![ GSPeM ](./images/gspem13.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem13.png)
 
 Voer de hexadecimale code voor de kleur `#FF006C ` in. Klik **toevoegen**.
 
-![ GSPeM ](./images/gspem14.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem14.png)
 
 Dat zou u nu moeten doen.
 
-![ GSPeM ](./images/gspem15.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem15.png)
 
 ## 1.3.1.2 Logo&#39;s
 
-Download het dossier [ CitiSignal-GSPeM-assets.zip ](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) aan uw Desktop en unzip het.
+Download het dossier [&#x200B; CitiSignal-GSPeM-assets.zip &#x200B;](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) aan uw Desktop en unzip het.
 
-![ GSPeM ](./images/gspem17.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem17.png)
 
 Daarna, ga naar **Logo&#39;s**. Klik op **+ Logo toevoegen** .
 
-![ GSPeM ](./images/gspem16.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem16.png)
 
 Klik **doorbladeren**.
 
-![ GSPeM ](./images/gspem18.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem18.png)
 
 Ga naar de omslag **CitiSignal-GSPeM-activa** > **logo&#39;s** en selecteer deze dossiers. Klik **Open**.
 
-![ GSPeM ](./images/gspem19.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem19.png)
 
 Dan moet je dit hebben. Klik **toevoegen logo&#39;s**.
 
-![ GSPeM ](./images/gspem20.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem20.png)
 
 Dan moet je dit hebben.
 
-![ GSPeM ](./images/gspem21.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem21.png)
 
 ## 1.3.1.3 Richtlijnen voor spraak van merken
 
 Daarna, ga naar **de stemrichtlijnen van het Merk**.
 
-![ GSPeM ](./images/gspem22.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem22.png)
 
 Voor **Toon &amp; Stem**, gebruik dit:
 
@@ -133,7 +133,7 @@ Voor **Toon &amp; Stem**, gebruik dit:
 • Use everyday language
 ```
 
-![ GSPeM ](./images/gspem23.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem23.png)
 
 Voor **Merk waarden**, gebruik dit:
 
@@ -150,7 +150,7 @@ Voor **Merk waarden**, gebruik dit:
 • Promote discovery
 ```
 
-![ GSPeM ](./images/gspem24.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem24.png)
 
 Voor **Redactionele richtlijnen**, gebruik dit:
 
@@ -161,7 +161,7 @@ Voor **Redactionele richtlijnen**, gebruik dit:
 • Use serial commas
 ```
 
-![ GSPeM ](./images/gspem25.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem25.png)
 
 Voor **Redactionele beperkingen**, gebruik dit:
 
@@ -171,13 +171,13 @@ Voor **Redactionele beperkingen**, gebruik dit:
 • Avoid technical language or jargon
 ```
 
-![ GSPeM ](./images/gspem26.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem26.png)
 
 ## 1.3.1.4 Richtlijnen voor afbeeldingen
 
 Daarna, ga naar **richtlijnen van het Beeld**.
 
-![ GSPeM ](./images/gspem27.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem27.png)
 
 Plaats **Type van Inhoud** aan **Kunst** en voor **Beschrijving**, gebruik dit:
 
@@ -185,7 +185,7 @@ Plaats **Type van Inhoud** aan **Kunst** en voor **Beschrijving**, gebruik dit:
 Capture candid, unposed shots of real people and futuristic animals engaging with technology in their daily lives to convey authenticity and relatability.
 ```
 
-![ GSPeM ](./images/gspem28.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem28.png)
 
 Voor **Samenstelling**, gebruik dit:
 
@@ -193,7 +193,7 @@ Voor **Samenstelling**, gebruik dit:
 Focus on the experiences, speed and emotions of using technology, rather than just the products themselves.
 ```
 
-![ GSPeM ](./images/gspem29.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem29.png)
 
 Voor **Milieu**, gebruik dit:
 
@@ -201,7 +201,7 @@ Voor **Milieu**, gebruik dit:
 Highlight futuristic, clean, and professional settings that reflect innovation and connectivity.
 ```
 
-![ GSPeM ](./images/gspem30.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem30.png)
 
 Voor **Kleur**, gebruik dit:
 
@@ -209,7 +209,7 @@ Voor **Kleur**, gebruik dit:
 Use a palette inspired by technology, including sleek metallics, cool purple and blue, and neutral tones.
 ```
 
-![ GSPeM ](./images/gspem31.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem31.png)
 
 Voor **Belichting**, gebruik dit:
 
@@ -217,7 +217,7 @@ Voor **Belichting**, gebruik dit:
 Utilize bright, natural lighting to create a welcoming and dynamic atmosphere.
 ```
 
-![ GSPeM ](./images/gspem32.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem32.png)
 
 Voor **Hout**, gebruik dit:
 
@@ -225,7 +225,7 @@ Voor **Hout**, gebruik dit:
 Each image should evoke a feeling of speed, innovation and being part of the future.
 ```
 
-![ GSPeM ](./images/gspem33.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem33.png)
 
 Voor **Beperkingen**, gebruik dit:
 
@@ -233,13 +233,13 @@ Voor **Beperkingen**, gebruik dit:
 Avoid cluttered or busy backgrounds that detract from the main subject.
 ```
 
-![ GSPeM ](./images/gspem34.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem34.png)
 
 ## 1.3.1.4 Kanaalrichtlijnen
 
 Daarna, ga naar **richtlijnen van het Kanaal**.
 
-![ GSPeM ](./images/gspem35.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem35.png)
 
 Voor **E-mail**, gebruik de volgende waarden:
 
@@ -299,7 +299,7 @@ Voor **E-mail**, gebruik de volgende waarden:
 • Use title case
 ```
 
-![ GSPeM ](./images/gspem36.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem36.png)
 
 Voor **Meta advertenties**, gebruik de volgende waarden:
 
@@ -333,7 +333,7 @@ Voor **Meta advertenties**, gebruik de volgende waarden:
 
 - **op beeldtekst**: verlaten leeg voor nu
 
-![ GSPeM ](./images/gspem37.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem37.png)
 
 Voor **Banner en de advertenties van de Vertoning**, gebruik de volgende waarden:
 
@@ -374,7 +374,7 @@ Voor **Banner en de advertenties van de Vertoning**, gebruik de volgende waarden
 • Avoid ending punctuation
 ```
 
-![ GSPeM ](./images/gspem38.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem38.png)
 
 Voor **LinkedIn**, gebruik de volgende waarden:
 
@@ -388,11 +388,11 @@ Voor **LinkedIn**, gebruik de volgende waarden:
 
 - **op beeldtekst**: verlaten leeg voor nu
 
-![ GSPeM ](./images/gspem39.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem39.png)
 
 Tot slot ga naar **Overzicht**. U kunt nu een overzicht van alles zien u vormde. Er is nog één ding te doen. Klik **+ voeg** onder **toe wanneer om dit merk** te gebruiken.
 
-![ GSPeM ](./images/gspem40.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem40.png)
 
 Ga hieronder tekst in en klik **sparen veranderingen**.
 
@@ -400,24 +400,24 @@ Ga hieronder tekst in en klik **sparen veranderingen**.
 This is the default brand for CitiSignal marketing campaign. Use the CitiSignal brand for all brand and product campaigns that don't require specific guidelines.
 ```
 
-![ GSPeM ](./images/gspem41.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem41.png)
 
 Klik **publiceren**.
 
-![ GSPeM ](./images/gspem42.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem42.png)
 
 Klik **publiceren** opnieuw.
 
-![ GSPeM ](./images/gspem43.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem43.png)
 
 Uw merk wordt nu gepubliceerd en dit merk kan nu worden gebruikt om inhoud met een merk te maken. Klik **Gedaan**.
 
-![ GSPeM ](./images/gspem44.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem44.png)
 
 ## Volgende stappen
 
-Ga naar [ Configuratie: Personas, Producten en Malplaatjes ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; Configuratie: Personas, Producten en Malplaatjes &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ GenStudio for Performance Marketing ](./genstudio.md){target="_blank"}
+Ga terug naar [&#x200B; GenStudio for Performance Marketing &#x200B;](./genstudio.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

@@ -22,9 +22,9 @@ In deze module zult u alles plaatsen zodat u gegevens kunt verzamelen, tot het d
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform-tags: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot het Systeem van de Demo daarna: [ https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform-tags: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot het Systeem van de Demo daarna: [&#x200B; https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 ## Uitoefening
 
@@ -48,7 +48,7 @@ In deze oefening zult u de website plaatsen zodat kunt u het voor demonstraties 
 
 In deze oefening zult u de mobiele toepassing plaatsen zodat kunt u het voor demonstraties en enablement gebruiken.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

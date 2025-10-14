@@ -15,29 +15,29 @@ ht-degree: 0%
 
 In deze oefening, zult u een douaneactie creëren om een bericht naar een kanaal van Slack te verzenden.
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 U gebruikt nu een bestaand Slack-kanaal en verzendt berichten naar dat Slack-kanaal. Slack heeft een gebruiksvriendelijke API en u gebruikt Adobe Journey Optimizer om de API te activeren.
 
-![ Demo ](./images/slack.png)
+![&#x200B; Demo &#x200B;](./images/slack.png)
 
 In het linkermenu, scrol neer en klik **Configuraties**. Daarna, klik **leiden** knoop onder **Acties**.
 
-![ Demo ](./images/menuactions.png)
+![&#x200B; Demo &#x200B;](./images/menuactions.png)
 
 U zult dan de **lijst van Acties** zien. Klik **tot Actie** leiden.
 
-![ Demo ](./images/acthome.png)
+![&#x200B; Demo &#x200B;](./images/acthome.png)
 
 Er verschijnt een leeg actiepopup.
 
-![ Demo ](./images/emptyact.png)
+![&#x200B; Demo &#x200B;](./images/emptyact.png)
 
 Gebruik `--aepUserLdap--TextSlack` als naam voor de handeling.
 
@@ -50,23 +50,23 @@ Voor de **Configuratie URL**, gebruik dit:
 
 >[!NOTE]
 >
->De bovenstaande URL verwijst naar een AWS Lambda-functie die uw verzoek doorstuurt naar het Slack-kanaal zoals hierboven vermeld. Dit wordt gedaan om de toegang tot een Slack-kanaal in eigendom van Adobe te beschermen. Als u uw eigen kanaal van Slack hebt, zou u een Slack App door [ https://api.slack.com/ ](https://api.slack.com/) moeten tot stand brengen, dan moet u een Inkomende Webhaak in die app van Slack tot stand brengen, en dan bovengenoemde URL door uw Inkomende URL van Webhaak vervangen.
+>De bovenstaande URL verwijst naar een AWS Lambda-functie die uw verzoek doorstuurt naar het Slack-kanaal zoals hierboven vermeld. Dit wordt gedaan om de toegang tot een Slack-kanaal in eigendom van Adobe te beschermen. Als u uw eigen kanaal van Slack hebt, zou u een Slack App door [&#x200B; https://api.slack.com/ &#x200B;](https://api.slack.com/) moeten tot stand brengen, dan moet u een Inkomende Webhaak in die app van Slack tot stand brengen, en dan bovengenoemde URL door uw Inkomende URL van Webhaak vervangen.
 
-![ Demo ](./images/slackname.png)
+![&#x200B; Demo &#x200B;](./images/slackname.png)
 
 **Authentificatie** zou aan **Geen Authentificatie** moeten worden geplaatst.
 
-![ Demo ](./images/slackauth.png)
+![&#x200B; Demo &#x200B;](./images/slackauth.png)
 
 Onder **Payloads**, moet u bepalen welke gebieden naar Slack zouden moeten worden verzonden. Logischerwijze wil je dat Adobe Journey Optimizer en Adobe Experience Platform het brein van personalisatie zijn, dus de tekst die naar Slack moet worden verzonden, moet door Adobe Journey Optimizer worden gedefinieerd en vervolgens naar Slack worden gestuurd voor uitvoering.
 
 Voor het **Verzoek**, klik **uitgeven het pictogram van de Lading**.
 
-![ Demo ](./images/slackmsgp.png)
+![&#x200B; Demo &#x200B;](./images/slackmsgp.png)
 
 Dan zie je een leeg popup-venster.
 
-![ Demo ](./images/slackmsgpopup.png)
+![&#x200B; Demo &#x200B;](./images/slackmsgpopup.png)
 
 Kopieer de onderste tekst en plak deze in het lege pop-upvenster.
 
@@ -82,22 +82,22 @@ Kopieer de onderste tekst en plak deze in het lege pop-upvenster.
 
 Dan zie je dit. Klik **sparen**.
 
-![ Demo ](./images/slackmsgpopup1.png)
+![&#x200B; Demo &#x200B;](./images/slackmsgpopup1.png)
 
 De rol omhoog en klikt **sparen** één meer tijd om uw actie te bewaren.
 
-![ Demo ](./images/slackmsgpopup3.png)
+![&#x200B; Demo &#x200B;](./images/slackmsgpopup3.png)
 
 Uw douaneactie is nu een deel van de **lijst van Acties**.
 
-![ Demo ](./images/slackdone.png)
+![&#x200B; Demo &#x200B;](./images/slackdone.png)
 
 U hebt gebeurtenissen, externe gegevensbronnen en acties gedefinieerd. Vervolgens combineer je dat allemaal op één reis.
 
 ## Volgende stappen
 
-Ga naar [ 3.2.4 creeer uw reis en berichten ](./ex4.md){target="_blank"}
+Ga naar [&#x200B; 3.2.4 creeer uw reis en berichten &#x200B;](./ex4.md){target="_blank"}
 
-Ga terug naar [ Adobe Journey Optimizer: Externe gegevensbronnen en douaneacties ](journey-orchestration-external-weather-api-sms.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Externe gegevensbronnen en douaneacties &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

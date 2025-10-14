@@ -52,7 +52,7 @@ De eerste stap in het gegevensbeheerproces is het toepassen van governancelabels
 
 Er zijn veel labels buiten de doos, plus u kunt uw creëren via de knoop [!UICONTROL Create label]. Er zijn drie hoofdtypen: [!UICONTROL Contract labels] , [!UICONTROL Identity labels] en [!UICONTROL Sensitive labels] die overeenkomen met algemene redenen waarom gegevens mogelijk beperkt zijn. Elk van de labels heeft een [!UICONTROL Friendly Name] en een korte [!UICONTROL Name] . Dit is slechts een afkorting van het type en een getal. Het label [!DNL C1] is bijvoorbeeld voor &#39;Geen export van derden&#39;, wat we nodig hebben voor ons kwaliteitsbeleid.
 
-![ Etiket van de Governance van Gegevens ](assets/governance-policies.png)
+![&#x200B; Etiket van de Governance van Gegevens &#x200B;](assets/governance-policies.png)
 
 Nu is het tijd om de gegevens te etiketteren waarvan gebruik wij willen beperken:
 
@@ -60,12 +60,12 @@ Nu is het tijd om de gegevens te etiketteren waarvan gebruik wij willen beperken
 1. De `Luma Loyalty Dataset` openen
 1. Ga naar de tab **[!UICONTROL Data Governance]**
 1. U kunt labels toepassen op afzonderlijke velden of deze toepassen op de gehele gegevensset. Wij zullen het etiket op de volledige dataset toepassen. Klik op het potloodpictogram. Als u het pictogram niet ziet, maakt u uw browser breder of schuift u het middelste deelvenster naar rechts.
-   ![ Beheer van Gegevens ](assets/governance-dataset.png)
+   ![&#x200B; Beheer van Gegevens &#x200B;](assets/governance-dataset.png)
 1. Vouw in het modaal de sectie **[!UICONTROL Contract Labels]** uit en controleer het label **[!UICONTROL C2]** .
 1. Selecteer de knop **[!UICONTROL Save changes]**
-   ![ Beheer van Gegevens ](assets/governance-applyLabel.png)
+   ![&#x200B; Beheer van Gegevens &#x200B;](assets/governance-applyLabel.png)
 1. Als u terugkeert naar het hoofdscherm van [!UICONTROL Data Governance] en de schakeloptie **[!UICONTROL Show inherited labels]** inschakelt, kunt u zien hoe het label is toegepast op alle velden in de gegevensset.
-   ![ Beheer van Gegevens ](assets/governance-labelsAdded.png)
+   ![&#x200B; Beheer van Gegevens &#x200B;](assets/governance-labelsAdded.png)
 
 
 <!--adding extra, unnecessary fields from field groups makes it harder to see which fields really need labels-->
@@ -78,7 +78,7 @@ Nu onze gegevens gelabeld zijn, kunnen we een beleid maken.
 1. Selecteer in de gebruikersinterface van Platform de optie **[!UICONTROL Policies]** in de linkernavigatie
 1. Op het Browse lusje, is er reeds een uit-van-de-doos beleid genoemd &quot;de uitvoerbeperking van de derde partij&quot;die het etiket C2 met de marketing actie [!UICONTROL Export to Third Party] associeert - precies wat wij nodig hebben!
 1. Selecteer het beleid en schakel het vervolgens in via de **[!UICONTROL Policy status]** -schakeloptie
-   ![ Beheer van Gegevens ](assets/governance-enablePolicy.png)
+   ![&#x200B; Beheer van Gegevens &#x200B;](assets/governance-enablePolicy.png)
 
 U kunt uw eigen beleid maken door de knop **[!UICONTROL Create policy]** te selecteren. Hierdoor wordt een wizard geopend waarmee u meerdere labels en beperkingen voor marketingacties kunt combineren.
 
@@ -91,8 +91,8 @@ Handhaving van het governancebeleid is duidelijk een essentieel onderdeel van he
 
 ## Aanvullende bronnen
 
-* [ documentatie van het Beheer van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL)
-* [ Verwijzing van de Dienst API van de Dataset ](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [ de Verwijzing van de Dienst API van het Beleid van het Beleid van het Beheer ](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [&#x200B; documentatie van het Beheer van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL)
+* [&#x200B; Verwijzing van de Dienst API van de Dataset &#x200B;](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [&#x200B; de Verwijzing van de Dienst API van het Beleid van het Beleid van het Beheer &#x200B;](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-Nu gaan op [ vraagdienst ](run-queries.md).
+Nu gaan op [&#x200B; vraagdienst &#x200B;](run-queries.md).

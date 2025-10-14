@@ -26,7 +26,7 @@ Met het Profiel van de Klant in real time, kunt u een holistische mening van elk
 
 Zo verbazend zoals al dat klinkt, te hoeven u niet om *elk van uw gegevens* voor profiel te activeren. In feite, zou u slechts de gegevens moeten toelaten u voor activeringsgebruiksgevallen nodig hebt. Laat gegevens toe die u voor de gevallen van het marketinggebruik wilt gebruiken, vraag centrumintegratie, etc., waar u snelle toegang tot een robuust klantenprofiel nodig hebt. Als u gegevens alleen uploadt voor analyse, moet dit waarschijnlijk niet worden ingeschakeld voor profiel.
 
-Er zijn belangrijke [ garanties voor de gegevens van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=nl-NL) die u zou moeten herzien wanneer het beslissen welke van uw eigen gegevens u voor profiel zou moeten toelaten.
+Er zijn belangrijke [&#x200B; garanties voor de gegevens van het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=nl-NL) die u zou moeten herzien wanneer het beslissen welke van uw eigen gegevens u voor profiel zou moeten toelaten.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
@@ -37,7 +37,7 @@ Voordat u met de oefeningen begint, bekijkt u deze korte video voor meer informa
 
 ## Vereiste machtigingen
 
-In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [&#x200B; vorm toestemmingen &#x200B;](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -68,7 +68,7 @@ Laten we beginnen met de eenvoudige taak om een schema in te schakelen:
    > 1. De gegevens opnieuw invoeren
 
 
-   ![ Wisselen van het Profiel ](assets/profile-loyalty-enableSchema.png)
+   ![&#x200B; Wisselen van het Profiel &#x200B;](assets/profile-loyalty-enableSchema.png)
 
 Eenvoudig, niet? Herhaal bovenstaande stappen voor dit andere schema:
 
@@ -90,7 +90,7 @@ Laten we eerst de `meta:altId` van de `Luma CRM Schema` ophalen:
 1. Selecteer **verzenden** knoop
 1. Je moet 200 reacties krijgen
 1. Zoek in het antwoord op het item `Luma CRM Schema` en kopieer de waarde `meta:altId` .
-   ![ Exemplaar meta:altIid ](assets/profile-crm-getMetaAltId.png)
+   ![&#x200B; Exemplaar meta:altIid &#x200B;](assets/profile-crm-getMetaAltId.png)
 
 ### Het schema inschakelen
 
@@ -111,10 +111,10 @@ Nu wij meta:altId van het schema hebben, kunnen wij het voor profiel toelaten:
 1. Selecteer **verzenden** knoop
 1. Je moet 200 reacties krijgen
 
-   ![ laat het schema van CRM voor profiel met uw douanemeta toe:altIid die als param SCHEMA_ID wordt gebruikt ](assets/profile-crm-enableProfile.png)
+   ![&#x200B; laat het schema van CRM voor profiel met uw douanemeta toe:altIid die als param SCHEMA_ID wordt gebruikt &#x200B;](assets/profile-crm-enableProfile.png)
 
 U moet in de gebruikersinterface kunnen zien dat alle vijf schema&#39;s zijn ingeschakeld voor Profiel (u moet mogelijk SHIFT opnieuw laden om te zien of `Luma CRM Schema` is ingeschakeld):
-![ Alle toegelaten schema&#39;s ](assets/profile-allSchemasEnabled.png)
+![&#x200B; Alle toegelaten schema&#39;s &#x200B;](assets/profile-allSchemasEnabled.png)
 
 
 ## Gegevenssets inschakelen voor realtime klantprofiel met behulp van de gebruikersinterface van het platform
@@ -125,7 +125,7 @@ De datasets moeten ook voor Profiel worden toegelaten, en het proces is nog eenv
 1. Schakelen tussen de schakeloptie **[!UICONTROL Profile]**
 1. Druk in het bevestigingsmodaal op de knop **[!UICONTROL Enable]** om te bevestigen
 
-   ![ Profiel in-/uitschakelen ](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; Profiel in-/uitschakelen &#x200B;](assets/profile-loyalty-enableDataset.png)
 
 Herhaal bovenstaande stappen voor deze andere datasets:
 
@@ -151,7 +151,7 @@ Eerst moeten we de `id` van de `Luma CRM Dataset` ophalen:
 1. Selecteer **verzenden** knoop
 1. Je moet 200 reacties krijgen
 1. Zoek in de reactie voor het `Luma CRM Dataset` -item en kopieer de id:
-   ![ Exemplaar identiteitskaart ](assets/profile-crm-copyDatasetId.png)
+   ![&#x200B; Exemplaar identiteitskaart &#x200B;](assets/profile-crm-copyDatasetId.png)
 
 ### De gegevensset inschakelen
 
@@ -175,10 +175,10 @@ Nu wij identiteitskaart van de dataset hebben, kunnen wij het voor profiel toela
 1. Selecteer **verzenden** knoop
 1. Je moet 200 reacties krijgen
 
-   ![ laat de dataset van CRM voor profiel toe, die ervoor zorgen om uw identiteitskaart van de douanedataset als param te gebruiken DATASET_ID ](assets/profile-crm-enableDataset.png)
+   ![&#x200B; laat de dataset van CRM voor profiel toe, die ervoor zorgen om uw identiteitskaart van de douanedataset als param te gebruiken DATASET_ID &#x200B;](assets/profile-crm-enableDataset.png)
 
 U kunt ook bevestigen dat de gebruikersinterface de toegelaten dataset toont:
-![ bevestigt ](assets/profile-crm-confirmEnabled.png)
+![&#x200B; bevestigt &#x200B;](assets/profile-crm-confirmEnabled.png)
 
 >[!IMPORTANT]
 >
@@ -186,9 +186,9 @@ U kunt ook bevestigen dat de gebruikersinterface de toegelaten dataset toont:
 
 ## Aanvullende bronnen
 
-* [ Real-Time documentatie van het Profiel van de Klant ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl)
-* [ Real-Time API van het Profiel van de Klant verwijzing ](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [&#x200B; Real-Time documentatie van het Profiel van de Klant &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl)
+* [&#x200B; Real-Time API van het Profiel van de Klant verwijzing &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**Ingenieurs van Gegevens** zouden aan [ moeten blijven aan de gebeurtenissen van de gegevensopname ](subscribe-to-data-ingestion-events.md) les abonneren.
-**_de Architecten van Gegevens 0&rbrace; &lbrace;kunnen vooruit_ overslaan en naar de [ partij ingesliples ](ingest-batch-data.md) gaan.**
+**Ingenieurs van Gegevens** zouden aan [&#x200B; moeten blijven aan de gebeurtenissen van de gegevensopname &#x200B;](subscribe-to-data-ingestion-events.md) les abonneren.
+**_de Architecten van Gegevens 0&rbrace; &lbrace;kunnen vooruit_ overslaan en naar de [&#x200B; partij ingesliples &#x200B;](ingest-batch-data.md) gaan.**

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Gegevens verzamelen met CRM-bronconnectors
 
-Leer hoe u eenvoudig en naadloos gecomprimeerde gegevens van CRM-bronnen kunt toevoegen aan Adobe Experience Platform Real-Time Customer Profile en data Lake. Voor meer gedetailleerde productdocumentatie, zie [ beheer van de klantenverhouding (CRM) ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl-NL#access-control-for-sources-in-data-ingestion) op de overzichtspagina van de Verbindingen van Source.
+Leer hoe u eenvoudig en naadloos gecomprimeerde gegevens van CRM-bronnen kunt toevoegen aan Adobe Experience Platform Real-Time Customer Profile en data Lake. Voor meer gedetailleerde productdocumentatie, zie [&#x200B; beheer van de klantenverhouding (CRM) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl-NL#access-control-for-sources-in-data-ingestion) op de overzichtspagina van de Verbindingen van Source.
 
 ## Standaardworkflow
 
@@ -32,6 +32,6 @@ Leer hoe te om de bronschakelaar voor Salesforce CRM te vormen gebruikend het ma
 >[!VIDEO](https://video.tv.adobe.com/v/3453329?learn=on&enablevpops&captions=dut)
 
 Raadpleeg de volgende documentatie voor meer informatie:
-* [ Salesforce creeert een verbindingsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=nl-NL).
-* [ creeer een bron dataflow gebruikend malplaatjes in UI ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=nl-NL#).
+* [&#x200B; Salesforce creeert een verbindingsdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=nl-NL).
+* [&#x200B; creeer een bron dataflow gebruikend malplaatjes in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=nl-NL#).
 

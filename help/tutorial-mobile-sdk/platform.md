@@ -18,7 +18,7 @@ Leer hoe u gegevens van mobiele apps naar Adobe Experience Platform verzendt.
 
 Deze optionele les is relevant voor alle klanten van Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer en Customer Journey Analytics. Experience Platform, de basis van Experience Cloud-producten, is een open systeem dat al uw gegevens (Adobe en niet-Adobe) omzet in robuuste klantprofielen. Deze profielen van klanten werken in real time bij en gebruiken AI-gedreven inzichten om u te helpen om de juiste ervaringen over elk kanaal te leveren.
 
-De [ gebeurtenis ](events.md), [ levenscyclus ](lifecycle-data.md), en [ identiteit ](identity.md) gegevens die u verzamelde en naar Platform Edge Network in vroegere lessen verzond wordt door:sturen aan de diensten die in uw gegevensstroom, met inbegrip van Adobe Experience Platform worden gevormd.
+De [&#x200B; gebeurtenis &#x200B;](events.md), [&#x200B; levenscyclus &#x200B;](lifecycle-data.md), en [&#x200B; identiteit &#x200B;](identity.md) gegevens die u verzamelde en naar Platform Edge Network in vroegere lessen verzond wordt door:sturen aan de diensten die in uw gegevensstroom, met inbegrip van Adobe Experience Platform worden gevormd.
 
 ![Architectuur](assets/architecture-aep.png){zoomable="yes"}
 
@@ -27,7 +27,7 @@ De [ gebeurtenis ](events.md), [ levenscyclus ](lifecycle-data.md), en [ identit
 
 Uw organisatie moet zijn voorzien en toestemmingen voor Adobe Experience Platform worden verleend.
 
-Als u geen toegang hebt, kunt u [ deze les ](install-sdks.md) overslaan.
+Als u geen toegang hebt, kunt u [&#x200B; deze les &#x200B;](install-sdks.md) overslaan.
 
 ## Leerdoelstellingen
 
@@ -43,33 +43,33 @@ In deze les zult u:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens (typisch een lijst) die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Zie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) voor meer informatie.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens (typisch een lijst) die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) voor meer informatie.
 
-1. Navigeer naar de gebruikersinterface van Experience Platform. Selecteer **[!UICONTROL Experience Platform]** van Apps ![ Apps ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
+1. Navigeer naar de gebruikersinterface van Experience Platform. Selecteer **[!UICONTROL Experience Platform]** van Apps ![&#x200B; Apps &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
 
 
 1. Selecteer **[!UICONTROL Datasets]** in het navigatiemenu links.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create dataset]**.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create dataset]**.
 
 1. Selecteer **[!UICONTROL Create dataset from schema]**.
-   ![ datasethuis ](assets/dataset-create.png){zoomable="yes"}
+   ![&#x200B; datasethuis &#x200B;](assets/dataset-create.png){zoomable="yes"}
 
 1. Zoek naar uw schema. bijvoorbeeld `Luma Mobile` gebruiken in het zoekveld.
 1. Selecteer het schema, bijvoorbeeld **[!DNL Luma Mobile App Event Schema]** .
 
 1. Selecteer **[!UICONTROL Next]**.
-   ![ dataset vormt ](assets/dataset-configure.png){zoomable="yes"}
+   ![&#x200B; dataset vormt &#x200B;](assets/dataset-configure.png){zoomable="yes"}
 
 1. Geef een **[!UICONTROL Name]** op, bijvoorbeeld `Luma Mobile App Events Dataset` en een **[!UICONTROL Description]** .
 
 1. Selecteer **[!UICONTROL Finish]**.
-   ![ dataset eindigt ](assets/dataset-finish.png){zoomable="yes"}
+   ![&#x200B; dataset eindigt &#x200B;](assets/dataset-finish.png){zoomable="yes"}
 
 
 ## Adobe Experience Platform-datastreamservice toevoegen
 
-Om uw gegevens XDM van Edge Network naar Adobe Experience Platform te verzenden, voeg de dienst van Adobe Experience Platform aan de datastream toe u opstelling als deel van [ creeer een datastream ](create-datastream.md).
+Om uw gegevens XDM van Edge Network naar Adobe Experience Platform te verzenden, voeg de dienst van Adobe Experience Platform aan de datastream toe u opstelling als deel van [&#x200B; creeer een datastream &#x200B;](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ Om uw gegevens XDM van Edge Network naar Adobe Experience Platform te verzenden,
 
 1. Selecteer **[!UICONTROL Datastreams]** en uw gegevensstroom in de gebruikersinterface voor gegevensverzameling.
 
-1. Dan selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
+1. Dan selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
 
 1. Selecteer **[!UICONTROL Adobe Experience Platform]** in de lijst [!UICONTROL Service] .
 
@@ -87,10 +87,10 @@ Om uw gegevens XDM van Edge Network naar Adobe Experience Platform te verzenden,
 
 1. Selecteer **[!UICONTROL Save]**.
 
-   ![ voegt Adobe Experience Platform als datastreamdienst ](assets/datastream-service-aep.png){zoomable="yes"} toe
+   ![&#x200B; voegt Adobe Experience Platform als datastreamdienst &#x200B;](assets/datastream-service-aep.png){zoomable="yes"} toe
 1. De uiteindelijke configuratie moet er ongeveer zo uitzien.
 
-   ![ gegevensstroommontages ](assets/datastream-settings.png){zoomable="yes"}
+   ![&#x200B; gegevensstroommontages &#x200B;](assets/datastream-settings.png){zoomable="yes"}
 
 
 ## Gegevens in de gegevensset valideren
@@ -101,10 +101,10 @@ Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt. U kunt lev
 
 Open uw dataset in de interface van het Platform. U zou de gegevens moeten zien aankomend in partijen aan de dataset. De gegevens worden gewoonlijk om de 15 minuten in microbatches weergegeven, zodat u de gegevens mogelijk niet meteen ziet.
 
-![ bevestigt gegevens die de gegevensreeksen van het Platform landen ](assets/platform-dataset-batches.png){zoomable="yes"}
+![&#x200B; bevestigt gegevens die de gegevensreeksen van het Platform landen &#x200B;](assets/platform-dataset-batches.png){zoomable="yes"}
 
 U ziet ook voorbeeldrecords en velden met de functie **[!UICONTROL Preview dataset]** :
-![ bevestigt levenscyclus die naar de dataset van het Platform wordt verzonden ](assets/lifecycle-platform-dataset.png){zoomable="yes"}
+![&#x200B; bevestigt levenscyclus die naar de dataset van het Platform wordt verzonden &#x200B;](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
 Een robuuster hulpmiddel om gegevens te bevestigen is de de vraagdienst van het Platform [&#128279;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data).
 
@@ -119,14 +119,14 @@ Met het Experience Platform-profiel voor realtime klanten kunt u een holistische
 1. Selecteer **[!UICONTROL Data for this schema contains a primary identity in the identityMap field.]** in het dialoogvenster.
 1. **[!UICONTROL Save]** het schema.
 
-   ![ laat het schema voor profiel ](assets/platform-profile-schema.png){zoomable="yes"} toe
+   ![&#x200B; laat het schema voor profiel &#x200B;](assets/platform-profile-schema.png){zoomable="yes"} toe
 
 ### De gegevensset inschakelen
 
 1. Open uw dataset, bijvoorbeeld **[!DNL Luma Mobile App Event Dataset]**.
 1. Schakel **[!UICONTROL Profile]** in.
 
-   ![ laat de dataset voor profiel ](assets/platform-profile-dataset.png){zoomable="yes"} toe
+   ![&#x200B; laat de dataset voor profiel &#x200B;](assets/platform-profile-dataset.png){zoomable="yes"} toe
 
 ### Gegevens in profiel valideren
 
@@ -134,7 +134,7 @@ Open de app en navigeer naar schermen waar u gebeurtenissen bijhoudt, bijvoorbee
 
 Gebruik Assurance om een van de identiteiten te zoeken die zijn doorgegeven in de identityMap (Email, lumaCrmId of ECID), bijvoorbeeld de CRM-id.
 
-![ greep een identiteitswaarde ](assets/platform-identity.png){zoomable="yes"}
+![&#x200B; greep een identiteitswaarde &#x200B;](assets/platform-identity.png){zoomable="yes"}
 
 In de interface van het Platform,
 
@@ -142,14 +142,14 @@ In de interface van het Platform,
 1. Geef de identiteitsgegevens op die u net hebt opgehaald, bijvoorbeeld `Luma CRM ID` for **[!UICONTROL Identity namespace]** en de waarde die u hebt gekopieerd voor **[!UICONTROL Identity value]** . Selecteer vervolgens **[!UICONTROL View]** .
 1. Selecteer het profiel om details weer te geven.
 
-![ kijkt omhoog een identiteitswaarde ](assets/platform-profile-lookup.png){zoomable="yes"}
+![&#x200B; kijkt omhoog een identiteitswaarde &#x200B;](assets/platform-profile-lookup.png){zoomable="yes"}
 
 Op het **[!UICONTROL Detail]** scherm, kunt u basisinformatie over de gebruiker, met inbegrip van de **[!UICONTROL **&#x200B; verbonden identiteiten &#x200B;**]** zien:
-![ profieldetails ](assets/platform-profile-details.png){zoomable="yes"}
+![&#x200B; profieldetails &#x200B;](assets/platform-profile-details.png){zoomable="yes"}
 
 In het **[!UICONTROL Events]** vindt u de gebeurtenissen die zijn verzameld in uw mobiele app-implementatie voor deze gebruiker:
 
-![ profielgebeurtenissen ](assets/platform-profile-events.png){zoomable="yes"}
+![&#x200B; profielgebeurtenissen &#x200B;](assets/platform-profile-events.png){zoomable="yes"}
 
 
 Van het scherm van profieldetails:
@@ -157,9 +157,9 @@ Van het scherm van profieldetails:
 1. Als u de identiteitsgrafiek wilt weergeven, klikt u op de koppeling of navigeert u naar **[!UICONTROL Identities]** en selecteert u **[!UICONTROL Identity Graph]** in de bovenste balk.
 1. Als u de identiteitswaarde wilt opzoeken, geeft u `Luma CRM ID` op als de **[!UICONTROL Identity namespace]** en de gekopieerde waarde als de **[!UICONTROL Identity value]** . Selecteer vervolgens **[!UICONTROL View]** .
 
-   Deze visualisatie toont u de identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier is een voorbeeld van een identiteitsgrafiek die van gegevens wordt geconstrueerd die van de voltooiing van zowel dit Mobiele zelfstudie van SDK (Gegevens Source 2) worden verzameld en het [ Web SDK leerprogramma ](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview) (Gegevens Source 1):
+   Deze visualisatie toont u de identiteiten die samen in een profiel en hun oorsprong verbonden zijn. Hier is een voorbeeld van een identiteitsgrafiek die van gegevens wordt geconstrueerd die van de voltooiing van zowel dit Mobiele zelfstudie van SDK (Gegevens Source 2) worden verzameld en het [&#x200B; Web SDK leerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview) (Gegevens Source 1):
 
-   ![ greep een identiteitswaarde ](assets/platform-profile-identitygraph.png){zoomable="yes"}
+   ![&#x200B; greep een identiteitswaarde &#x200B;](assets/platform-profile-identitygraph.png){zoomable="yes"}
 
 
 ## Volgende stappen
@@ -169,7 +169,7 @@ Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience 
 
 >[!SUCCESS]
 >
->U hebt nu een app ingesteld om gegevens niet alleen naar de Edge Network, maar ook naar Adobe Experience Platform te verzenden.<br> Dank u voor het investeren van uw tijd in het leren over Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>U hebt nu een app ingesteld om gegevens niet alleen naar de Edge Network, maar ook naar Adobe Experience Platform te verzenden.<br> Dank u voor het investeren van uw tijd in het leren over Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 >
 
 Volgende: **[creeer en verzend dupberichten](journey-optimizer-push.md)**

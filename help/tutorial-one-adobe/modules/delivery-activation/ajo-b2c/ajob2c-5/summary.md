@@ -19,6 +19,6 @@ Gefeliciteerd en bedankt dat u uw tijd hebt geïnvesteerd in het leren over Adob
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Vertaaldiensten ](./ajotranslationsvcs.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Vertaaldiensten &#x200B;](./ajotranslationsvcs.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

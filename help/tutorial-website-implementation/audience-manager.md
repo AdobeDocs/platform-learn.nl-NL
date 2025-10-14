@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Deze les zal u door de stappen begeleiden om Adobe Audience Manager toe te laten gebruikend Server-kant Door:sturen.
 
-[ Adobe Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=nl-NL) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
+[&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=nl-NL) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
 
 >[!NOTE]
 >
@@ -36,15 +36,15 @@ Aan het eind van deze les, zult u kunnen:
 
 Om deze les te voltooien, zult u nodig hebben:
 
-1. Om de lessen in [ te hebben voltooid vormen markeringen ](create-a-property.md), [ voeg Adobe Analytics ](analytics.md) toe, en [ voeg de Dienst van de Identiteit toe ](id-service.md).
+1. Om de lessen in [&#x200B; te hebben voltooid vormen markeringen &#x200B;](create-a-property.md), [&#x200B; voeg Adobe Analytics &#x200B;](analytics.md) toe, en [&#x200B; voeg de Dienst van de Identiteit toe &#x200B;](id-service.md).
 
 1. Beheerders hebben toegang tot Adobe Analytics, zodat u Server-Side Forwarding kunt inschakelen voor de rapportsuite die u voor deze zelfstudie gebruikt. U kunt ook een bestaande beheerder van uw organisatie vragen dit voor u te doen, volgens de onderstaande instructies.
 
 1. Uw &quot;Subdomain van de Audience Manager&quot;(die ook als &quot;identiteitskaart van de Partner&quot;,&quot;of &quot;Subdomain van de Partner&quot;wordt bekend). Als u Audience Manager al op uw daadwerkelijke website hebt geïmplementeerd, kunt u deze het gemakkelijkst verkrijgen door naar uw werkelijke website te gaan en Foutopsporing te openen. Het subdomein is beschikbaar op het tabblad Overzicht, in de sectie Audience Manager:
 
-   ![ u kunt Debugger gebruiken om Audience Manager Subdomain op uw daadwerkelijke website ](images/aam-debugger-partner.png) te vinden
+   ![&#x200B; u kunt Debugger gebruiken om Audience Manager Subdomain op uw daadwerkelijke website &#x200B;](images/aam-debugger-partner.png) te vinden
 
-Als u reeds uitgevoerde Audience Manager niet hebt, volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
+Als u reeds uitgevoerde Audience Manager niet hebt, volg deze instructies om [&#x200B; uw Audience Manager subdomain &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 ## Implementatieopties
 
@@ -54,7 +54,7 @@ Er zijn twee manieren om Audience Manager in een website te implementeren:
 
 * **client-kant DIL** - deze benadering is voor klanten die geen Adobe Analytics hebben. DIL code (de Code van de Data Integration Library, de de configuratiecode van AAM JavaScript) verzendt direct gegevens van de Web-pagina in Audience Manager.
 
-Aangezien u Adobe Analytics in deze zelfstudie al hebt geïmplementeerd, implementeert u Audience Manager met behulp van Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=nl-NL), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
+Aangezien u Adobe Analytics in deze zelfstudie al hebt geïmplementeerd, implementeert u Audience Manager met behulp van Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=nl-NL), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
 
 ## Server-Side Forwarding inschakelen
 
@@ -71,15 +71,15 @@ Een configuratie in de Admin Console van Adobe Analytics wordt vereist beginnen 
 
 1. Meld u aan bij Analytics via de gebruikersinterface van het Experience Cloud. Als u geen beheerdersrechten hebt voor Analytics, moet u met uw Experience Cloud- of analysebeheerder communiceren om toegang te krijgen tot de analysemogelijkheden of deze stappen voor u uit te voeren.
 
-   ![ Logboek in Adobe Analytics ](images/aam-logIntoAnalytics.png)
+   ![&#x200B; Logboek in Adobe Analytics &#x200B;](images/aam-logIntoAnalytics.png)
 
 1. Kies in de bovenste navigatie in Analytics de optie **[!UICONTROL Admin > Report Suites]** en selecteer in de lijst de rapportsuite(s) die u wilt doorsturen naar de Audience Manager (meervoudig selecteren).
 
-   ![ klik aan de Admin Console ](images/aam-analyticsAdminConsoleReportSuites.png)
+   ![&#x200B; klik aan de Admin Console &#x200B;](images/aam-analyticsAdminConsoleReportSuites.png)
 
 1. Kies **[!UICONTROL Edit Settings > General > Server-Side Forwarding]** in het scherm Rapportsets en met de rapportsuite(s) geselecteerd.
 
-   ![ selecteer het Menu SSF ](images/aam-selectSSFmenu.png)
+   ![&#x200B; selecteer het Menu SSF &#x200B;](images/aam-selectSSFmenu.png)
 
    >[!WARNING]
    >
@@ -89,13 +89,13 @@ Een configuratie in de Admin Console van Adobe Analytics wordt vereist beginnen 
 
 1. Klikken **[!UICONTROL Save]**
 
-   ![ Volledige opstelling SSF ](images/aam-enableSSFcomplete.png)
+   ![&#x200B; Volledige opstelling SSF &#x200B;](images/aam-enableSSFcomplete.png)
 
 >[!NOTE]
 >
 >Aangezien SSF per rapportreeks moet worden toegelaten, vergeet niet deze stap voor uw echte rapportreeksen te herhalen wanneer u SSF op uw daadwerkelijke het rapportreeks van de plaats opstelt.
 >
->Ook, als de optie SSF uit grayed is, zult u de rapportreeks(en) aan uw Experience CloudOrg moeten in kaart brengen om de optie toe te laten. Dit wordt verklaard in [ de documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
+>Ook, als de optie SSF uit grayed is, zult u de rapportreeks(en) aan uw Experience CloudOrg moeten in kaart brengen om de optie toe te laten. Dit wordt verklaard in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
 
 Zodra deze stap is voltooid en als u de Adobe Experience Platform Identity Service hebt ingeschakeld, worden de gegevens doorgestuurd van Analytics naar AAM. Als u het proces echter wilt voltooien, zodat de reactie correct terugkomt van AAM naar de pagina (en ook naar Analytics via de functie Audience Analytics), moet u ook de volgende stap in de labels uitvoeren. Maak je geen zorgen, het is supergemakkelijk.
 
@@ -111,17 +111,17 @@ Dit is de tweede van twee stappen om SSF toe te laten. U hebt de switch al gespi
 
 1. Ga naar **[!UICONTROL Extensions > Installed]** en klik om de extensie Analytics te configureren.
 
-   ![ vorm de Uitbreiding van Analytics ](images/aam-configAnalyticsExtension.png)
+   ![&#x200B; vorm de Uitbreiding van Analytics &#x200B;](images/aam-configAnalyticsExtension.png)
 
 1. De sectie `Adobe Audience Manager` uitbreiden
 
 1. Schakel het selectievakje in op **[!UICONTROL Automatically share Analytics Data with Audience Manager]** . Hiermee voegt u de Audience Manager &quot;Module&quot; (code) toe aan de implementatie Analytics `AppMeasurement.js` .
 
-1. Voeg uw &quot;Subdomain van de Audience Manager&quot;toe (die ook als &quot;Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner&quot;wordt bekend). Volg deze instructies om [ uw Audience Manager subdomain ](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
+1. Voeg uw &quot;Subdomain van de Audience Manager&quot;toe (die ook als &quot;Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner&quot;wordt bekend). Volg deze instructies om [&#x200B; uw Audience Manager subdomain &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
-   ![ vorm SSF ](images/aam-configLaunchSSF.png)
+   ![&#x200B; vorm SSF &#x200B;](images/aam-configLaunchSSF.png)
 
 Server-Side Forwarding Code is nu geïmplementeerd!
 
@@ -139,7 +139,7 @@ De code die markeringen installeert om het door:sturen, en vooral de reactie van
 1. Blader omlaag naar de sectie Analytics terwijl u op het tabblad Samenvatting blijft staan
 1. Verifieer dat **AudienceManagement** onder de sectie van Modules vermeld is
 
-   ![ bevestigt de AAM Module in Debugger ](images/aam-verifyAAMmodule.png)
+   ![&#x200B; bevestigt de AAM Module in Debugger &#x200B;](images/aam-verifyAAMmodule.png)
 
 #### Verifieer Partner ID in Debugger
 
@@ -148,7 +148,7 @@ Daarna, kunnen wij ook verifiëren dat debugger de juiste &quot;partner identite
 1. Terwijl nog in debugger, en nog op het Summiere lusje, scrol neer aan de sectie van de Audience Manager
 1. Verifieer uw identiteitskaart van de Partner/Subdomain onder &quot;Partner&quot;
 
-   ![ bevestigt identiteitskaart van de Partner in Debugger ](images/aam-verifyPartnerID.png)
+   ![&#x200B; bevestigt identiteitskaart van de Partner in Debugger &#x200B;](images/aam-verifyPartnerID.png)
 
 >[!WARNING]
 >
@@ -163,20 +163,20 @@ Jammer genoeg, op dit ogenblik, steunt debugger niet het tonen van de reactie op
 1. Typ in het filterveld `b/ss` wat wat u ziet, beperkt tot de Adobe Analytics-aanvragen
 1. De pagina vernieuwen om de analyseaanvraag weer te geven
 
-   ![ open de Hulpmiddelen van de Ontwikkelaar ](images/aam-openTheJSConsole.png)
+   ![&#x200B; open de Hulpmiddelen van de Ontwikkelaar &#x200B;](images/aam-openTheJSConsole.png)
 
 1. In het baken van Analytics (verzoek), zoek een &quot;callback&quot;parameter. Het wordt ingesteld op iets dergelijks: `s_c_il[1].doPostbacks`
 
-   ![ verzoek van A - callback param ](images/aam-callbackParam.png)
+   ![&#x200B; verzoek van A - callback param &#x200B;](images/aam-callbackParam.png)
 
 1. U krijgt een reactie op het Analytics-baken. Het zal verwijzingen naar doPostbacks bevatten, zoals geroepen in het verzoek, en het belangrijkste, zou het een &quot;spul&quot;voorwerp moeten hebben. Dit is waar AAM segment IDs terug naar browser zal worden verzonden. Als je het voorwerp &quot;dingen&quot;hebt, werkt SSF!
 
-   ![ de reactie van aa - spul voorwerp ](images/aam-stuffObjectInResponse.png)
+   ![&#x200B; de reactie van aa - spul voorwerp &#x200B;](images/aam-stuffObjectInResponse.png)
 
 >[!WARNING]
 >
 >Wees het Onjuiste &quot;Succes&quot; - als er een reactie is, en alles schijnt te werken, zorg **zeker** dat u dat &quot;spul&quot;voorwerp hebt. Als u niet, kunt u een bericht in het antwoord zien dat &quot;status&quot;zegt:&quot;SUCCESS&quot;. Als gek aangezien dit klinkt, is dit eigenlijk bewijs dat het **&#x200B;**&#x200B;niet &lbrace;correct werkt. Als u dit ziet, betekent het dat u deze tweede stap (de code in markeringen) hebt voltooid, maar dat het door:sturen in de Admin Console Analytics (eerste stap van deze sectie) nog niet heeft voltooid. In dit geval moet u controleren of SSF is ingeschakeld in de Admin Console Analytics. Als je dat hebt, en dat is nog geen 4 uur, wees geduld.
 
-![ de reactie van aa - vals succes ](images/aam-responseFalseSuccess.png)
+![&#x200B; de reactie van aa - vals succes &#x200B;](images/aam-responseFalseSuccess.png)
 
 [Volgende &quot;Experience Cloud Integrations&quot; >](integrations.md)

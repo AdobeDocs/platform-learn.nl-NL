@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Leer hoe u interacties tussen mobiele apps en Customer Journey Analytics kunt rapporteren en analyseren.
 
-De gebeurtenisgegevens van de mobiele app, die u in eerdere lessen hebt verzameld en naar Platform Edge Network hebt verzonden, worden doorgestuurd naar de services die in uw gegevensstroom zijn geconfigureerd. Als u [ volgde verzendt gegevens naar Experience Platform ](platform.md) les, wordt dat gegeven nu opgeslagen in een dataset van Experience Platform en voor Customer Journey Analytics beschikbaar voor rapportering en analyse te gebruiken.
+De gebeurtenisgegevens van de mobiele app, die u in eerdere lessen hebt verzameld en naar Platform Edge Network hebt verzonden, worden doorgestuurd naar de services die in uw gegevensstroom zijn geconfigureerd. Als u [&#x200B; volgde verzendt gegevens naar Experience Platform &#x200B;](platform.md) les, wordt dat gegeven nu opgeslagen in een dataset van Experience Platform en voor Customer Journey Analytics beschikbaar voor rapportering en analyse te gebruiken.
 
 In tegenstelling tot Adobe Analytics, gebruikt Customer Journey Analytics ** gegevens van datasets die in Experience Platform worden gecreeerd. Gegevens worden niet rechtstreeks naar Customer Journey Analytics verzonden met de Adobe Experience Platform Mobile SDK, maar de gegevens worden naar gegevenssets verzonden. De verbindingen worden dan gevormd in Customer Journey Analytics om de datasets te selecteren u in uw rapportering en analyseprojecten zult gebruiken.
 
-Deze les in de zelfstudie is gericht op het rapporteren en analyseren van de gegevens die zijn vastgelegd in de zelfstudie-app Luma. Een van de unieke mogelijkheden van Customer Journey Analytics is het combineren van gegevens uit meerdere bronnen (CRM, verkooppunt, loyaliteitstoepassing, callcenter) en kanalen (web, mobiel, offline) om diepgaande inzichten in klantreizen te kunnen krijgen. Dat vermogen is voorbij het werkingsgebied van deze les. Zie [ overzicht van Customer Journey Analytics ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-overview/cja-overview) voor meer informatie.
+Deze les in de zelfstudie is gericht op het rapporteren en analyseren van de gegevens die zijn vastgelegd in de zelfstudie-app Luma. Een van de unieke mogelijkheden van Customer Journey Analytics is het combineren van gegevens uit meerdere bronnen (CRM, verkooppunt, loyaliteitstoepassing, callcenter) en kanalen (web, mobiel, offline) om diepgaande inzichten in klantreizen te kunnen krijgen. Dat vermogen is voorbij het werkingsgebied van deze les. Zie [&#x200B; overzicht van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-overview/cja-overview) voor meer informatie.
 
 
 ## Vereisten
@@ -41,7 +41,7 @@ De reeks is opzettelijk. De verbindingen gebruiken datasets, en de gegevensmenin
 
 Een verbinding in Customer Journey Analytics bepaalt de datasets (en de gegevens binnen deze datasets) van Experience Platform die u voor rapportering en analyse wilt gebruiken.
 
-1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![ Apps ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
+1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![&#x200B; Apps &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
 
 1. Selecteer **[!UICONTROL Connections]** in de bovenste menubalk.
 
@@ -61,19 +61,19 @@ Een verbinding in Customer Journey Analytics bepaalt de datasets (en de gegevens
 
    5. Selecteer **[!UICONTROL Add datasets]** om de datasets van Experience Platform te selecteren u in Customer Journey Analytics wilt gebruiken.
 
-      ![ CJA Verbindingen 1 ](assets/cja-connections-1.png){zoomable="yes"}
+      ![&#x200B; CJA Verbindingen 1 &#x200B;](assets/cja-connections-1.png){zoomable="yes"}
 
    6. Ga in de stap **[!UICONTROL Add datasets]** van de wizard **[!UICONTROL Select datasets]** naar:
 
       1. Selecteer de volgende gegevenssets:
 
-         - **[!UICONTROL Luma Mobile App Event Dataset]**, de dataset u als deel van [ creeerde creeer een dataset ](platform.md#create-a-dataset) sectie in de les van Experience Platform.
+         - **[!UICONTROL Luma Mobile App Event Dataset]**, de dataset u als deel van [&#x200B; creeerde creeer een dataset &#x200B;](platform.md#create-a-dataset) sectie in de les van Experience Platform.
          - **[!UICONTROL ODE DecisionEvents - *zandbaknaam *]besluit**
          - **[!UICONTROL AJO Push Tracking Event Datasets]**
 
       1. Selecteer **[!UICONTROL Next]**.
 
-         ![ CJA Verbindingen 2 ](assets/cja-connections-2.png){zoomable="yes"}
+         ![&#x200B; CJA Verbindingen 2 &#x200B;](assets/cja-connections-2.png){zoomable="yes"}
 
    7. In de **[!UICONTROL Add datasets]** tovenaar, **[!UICONTROL Datasets settings]** stap, moet u de details voor elk van de gebeurtenisdatasets bepalen.
       1. Zie de volgende lijsten voor de juiste opstelling:
@@ -86,11 +86,11 @@ Een verbinding in Customer Journey Analytics bepaalt de datasets (en de gegevens
 
       1. Selecteer **[!UICONTROL Add datasets]**.
 
-         ![ CJA Verbindingen 3 ](assets/cja-connections-3.png){zoomable="yes"}
+         ![&#x200B; CJA Verbindingen 3 &#x200B;](assets/cja-connections-3.png){zoomable="yes"}
 
 1. Ga terug in **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Connection]** en selecteer **[!UICONTROL Save]** om uw verbinding op te slaan.
 
-   ![ CJA Verbindingen 4 ](assets/cja-connections-4.png){zoomable="yes"}
+   ![&#x200B; CJA Verbindingen 4 &#x200B;](assets/cja-connections-4.png){zoomable="yes"}
 
 U hebt nu uw verbinding gedefinieerd en Customer Journey Analytics voegt de gegevens uit de datasets toe aan zijn eigen interne database. Deze gegevensverzameling kan enige tijd in beslag nemen, afhankelijk van de hoeveelheid gegevens. Voor uw zelfstudie-app verwacht u een paar uur voordat de gegevens in Customer Journey Analytics worden weergegeven.
 
@@ -101,10 +101,10 @@ U kunt als volgt de status van uw verbinding weergeven:
 
 In de lus **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Connection]** ziet u:
 
-1. Informatie over het totaal aantal toegevoegde records, overgeslagen records en verwijderde records. Selecteer **[!UICONTROL All datasets]** en selecteer een geschikte tijdsperiode om details over uw verbinding weer te geven. U kunt ![ Kalender ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) gebruiken om een dialoog te openen om de tijdspanne te selecteren.
+1. Informatie over het totaal aantal toegevoegde records, overgeslagen records en verwijderde records. Selecteer **[!UICONTROL All datasets]** en selecteer een geschikte tijdsperiode om details over uw verbinding weer te geven. U kunt ![&#x200B; Kalender &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) gebruiken om een dialoog te openen om de tijdspanne te selecteren.
 1. Informatie voor individuele datasets over toegevoegde verslagen, overgeslagen verslagen, verslagen geschrapt, en meer.
 
-   ![ CJA Verbindingen 6 ](assets/cja-connections-6.png){zoomable="yes"}
+   ![&#x200B; CJA Verbindingen 6 &#x200B;](assets/cja-connections-6.png){zoomable="yes"}
 
 
 ## Een gegevensweergave maken
@@ -113,12 +113,12 @@ Nadat de verslagen van de datasets aan Customer Journey Analytics zijn toegevoeg
 
 Een gegevensweergave is een container specifiek voor Customer Journey Analytics waarmee u kunt bepalen hoe gegevens van een verbinding moeten worden geïnterpreteerd. U kunt standaard en schemagebieden van om het even welke datasets vormen die u in uw Verbinding als componenten (afmetingen, metriek) in Analysis Workspace hebt bepaald.
 
-Een gegevensweergave in Customer Journey Analytics biedt enorme flexibiliteit bij het correct instellen en definiëren van de gegevens van uw verbinding. In deze zelfstudie gebruikt u alleen de functionaliteit die vereist is voor uw rapportage en analyse. Zie [ meningen van Gegevens ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-dataviews/data-views) voor meer informatie.
+Een gegevensweergave in Customer Journey Analytics biedt enorme flexibiliteit bij het correct instellen en definiëren van de gegevens van uw verbinding. In deze zelfstudie gebruikt u alleen de functionaliteit die vereist is voor uw rapportage en analyse. Zie [&#x200B; meningen van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-dataviews/data-views) voor meer informatie.
 
 
 Uw gegevensweergave maken:
 
-1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![ Apps ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
+1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![&#x200B; Apps &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
 
 1. Selecteer **[!UICONTROL Data views]** in de bovenste menubalk.
 1. Selecteer **[!UICONTROL Create new data view]**.
@@ -128,31 +128,31 @@ Uw gegevensweergave maken:
    1. Voer een naam in voor de gegevensweergave, bijvoorbeeld: `Luma App - AEP Mobile SDK Tutorial Data view` .
    1. Selecteer **[!UICONTROL Save and continue]**.
 
-      ![ de mening 1 van Gegevens van CJA ](assets/cja-dataview-1.png){zoomable="yes"}
+      ![&#x200B; de mening 1 van Gegevens van CJA &#x200B;](assets/cja-dataview-1.png){zoomable="yes"}
 
-1. Op het tabblad **[!UICONTROL Components]** van het **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]** -venster kunt u de metriek en dimensie definiëren die u wilt gebruiken voor het rapporteren op uw mobiele app. Door gebrek, worden een aantal standaardmetriek en afmetingen (gezamenlijk die naar een componenten worden verwezen) reeds gevormd voor uw gegevensmening. Maar uw gegevensweergave vereist meer componenten. <br/> om een schemagebied van uw eerder bepaald schema of uit-van-de-doos schema&#39;s (zie [ tot een schema ](create-schema.md) les leiden) toe te voegen, als component (afmeting of metrisch):
+1. Op het tabblad **[!UICONTROL Components]** van het **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]** -venster kunt u de metriek en dimensie definiëren die u wilt gebruiken voor het rapporteren op uw mobiele app. Door gebrek, worden een aantal standaardmetriek en afmetingen (gezamenlijk die naar een componenten worden verwezen) reeds gevormd voor uw gegevensmening. Maar uw gegevensweergave vereist meer componenten. <br/> om een schemagebied van uw eerder bepaald schema of uit-van-de-doos schema&#39;s (zie [&#x200B; tot een schema &#x200B;](create-schema.md) les leiden) toe te voegen, als component (afmeting of metrisch):
 
    1. Het schemaveld zoeken:
 
-      - onderzoek naar de component die het ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) onderzoeksgebied van het 1&rbrace; Onderzoek ***[!UICONTROL Search schema fields]*** gebruikt. bijvoorbeeld `productListAdd` , of
+      - onderzoek naar de component die het ![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) onderzoeksgebied van het 1&rbrace; Onderzoek ***[!UICONTROL Search schema fields]*** gebruikt. bijvoorbeeld `productListAdd` , of
 
-        ![ CJA DataView 2a ](assets/cja-dataview-2a.png){zoomable="yes"}
+        ![&#x200B; CJA DataView 2a &#x200B;](assets/cja-dataview-2a.png){zoomable="yes"}
 
-      - Ga neer naar het schemagebied binnen ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![ Chevron ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/> bijvoorbeeld, ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![ Chevron ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** ![ Chevron ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![ Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![ Chevron ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Ga neer naar het schemagebied binnen ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![&#x200B; Chevron &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/> bijvoorbeeld, ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![&#x200B; Chevron &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** ![&#x200B; Chevron &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![&#x200B; Chevron &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
-        ![ CJA DataView 2a ](assets/cja-dataview-2b.png){zoomable="yes"}
+        ![&#x200B; CJA DataView 2a &#x200B;](assets/cja-dataview-2b.png){zoomable="yes"}
 
    1. Sleep het specifieke schemaveld van het venster van de gebieden van het Schema en laat vallen het op de **[!UICONTROL METRICS]** of **[!UICONTROL DIMENSIONS]** lijst in de [!UICONTROL Included components] ruit.
 
-      ![ CJA DataView 2a ](assets/cja-dataview-3.png){zoomable="yes"}
+      ![&#x200B; CJA DataView 2a &#x200B;](assets/cja-dataview-3.png){zoomable="yes"}
 
    1. U kunt de instellingen van een component configureren. Selecteer de component en configureer instellingen in het rechterdeelvenster. <br/> Bijvoorbeeld, kunt u **[!UICONTROL commerce.productListAdds]** aan `Product Add To Lists` anders noemen gebruikend het **[!UICONTROL COMPONENT SETTINGS]** > **[!UICONTROL Component name]** gebied in de juiste ruit.
 
-      ![ CJA DataView 3b ](assets/cja-dataview-3b.png){zoomable="yes"}
+      ![&#x200B; CJA DataView 3b &#x200B;](assets/cja-dataview-3b.png){zoomable="yes"}
 
       Of configureer **[!UICONTROL INCLUDE EXCLUDE VALUES]** .
 
-      ![ de componentenmontages van de de meningscomponent van Gegevens van CJA ](assets/cja-dataview-component-settings.png){zoomable="yes"}
+      ![&#x200B; de componentenmontages van de de meningscomponent van Gegevens van CJA &#x200B;](assets/cja-dataview-component-settings.png){zoomable="yes"}
 
    1. Nu u begrijpt hoe u velden aan uw gegevensweergave kunt toevoegen en de resulterende component kunt configureren, gebruikt u de onderstaande tabellen voor een lijst met schemavelden die u als metriek of afmetingen wilt toevoegen. Gebruik de **kolomwaarde van de Weg van het Schema 0&rbrace; &lbrace;van de lijst hieronder om naar het specifieke schemagebied te zoeken of te doorlopen.** Zodra de metriek en de afmetingen worden toegevoegd, controleer de **kolomwaarde van de Montages van de Component** in de lijst of de specifieke montages voor een component, zoals zijn **[!UICONTROL Component name]** of het bepalen **[!UICONTROL INCLUDE EXCLUDE VALUES]** worden vereist.
 
@@ -166,7 +166,7 @@ Uw gegevensweergave maken:
       | Weergave | Dataset voor AJO Push Tracking Experience, Luma Mobile App Event | Geheel | _experience.decisions.<br/> propositionEventType.display | Componentnaam: `Display` |
       | Verzenden | Dataset voor AJO Push Tracking Experience, Luma Mobile App Event | Geheel | _experience.decisions.<br/> propositionEventType.send | Componentnaam: `Send` |
       | Interactie | Dataset voor AJO Push Tracking Experience, Luma Mobile App Event | Geheel | _experience.decisions.<br/> propositionEventType.interact | Componentnaam: `Interact` |
-      | Locatiegebeurtenissen | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-cursussen beslissen | String | Type gebeurtenis | De Naam van de component: `Location Events`<br/><br/>![ omvat/sluit ](assets/cja-dataview-include-exclude.png){zoomable="yes"} uit |
+      | Locatiegebeurtenissen | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-cursussen beslissen | String | Type gebeurtenis | De Naam van de component: `Location Events`<br/><br/>![&#x200B; omvat/sluit &#x200B;](assets/cja-dataview-include-exclude.png){zoomable="yes"} uit |
       | Productweergaven | Dataset voor Luma Mobile-toepassingsgebeurtenis | Dubbel | commerce.productViews.value | Componentnaam: `Product Views` |
       | Product toevoegen aan lijsten | Dataset voor Luma Mobile-toepassingsgebeurtenis | Dubbel | commerce.productListAdds.value | Componentnaam: `Product Add To Lists` |
       | Aankopen | Dataset voor Luma Mobile-toepassingsgebeurtenis | Dubbel | commerce.purchases.value | Componentnaam: `Purchases` |
@@ -183,7 +183,7 @@ Uw gegevensweergave maken:
 
       De configuratie van de gegevensweergave voor **[!UICONTROL METRICS]** moet hieronder overeenkomen nadat u alle schemavelden uit de bovenstaande tabel hebt toegevoegd als een metrische component:
 
-      ![ CJA DataView 4 ](assets/cja-dataview-4.png){zoomable="yes"}
+      ![&#x200B; CJA DataView 4 &#x200B;](assets/cja-dataview-4.png){zoomable="yes"}
 
       **AFMETINGEN**
 
@@ -201,7 +201,7 @@ Uw gegevensweergave maken:
 
       De configuratie van de gegevensweergave voor **[!UICONTROL DIMENSIONS]** moet hieronder overeenkomen nadat u alle schemavelden uit de bovenstaande tabel hebt toegevoegd als een dimensiecomponent:
 
-      ![ CJA DataView 4 ](assets/cja-dataview-5.png){zoomable="yes"}
+      ![&#x200B; CJA DataView 4 &#x200B;](assets/cja-dataview-5.png){zoomable="yes"}
 
    1. Selecteer **[!UICONTROL Save and continue]**.
 
@@ -213,7 +213,7 @@ U hebt de gegevensweergave gedefinieerd en alles is op zijn plaats om uw rapport
 
 ## Een project maken
 
-Workspace-projecten worden in Customer Journey Analytics gebruikt om rapporten en visualisaties samen te stellen. Er zijn vele mogelijkheden om uitvoerige rapporten en het in dienst nemen van visualisaties te bouwen, maar dit is buiten het werkingsgebied van deze zelfstudie. Zie [ het Overzicht van Workspace ](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) en [ een nieuw project ](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) voor meer informatie bouwen.
+Workspace-projecten worden in Customer Journey Analytics gebruikt om rapporten en visualisaties samen te stellen. Er zijn vele mogelijkheden om uitvoerige rapporten en het in dienst nemen van visualisaties te bouwen, maar dit is buiten het werkingsgebied van deze zelfstudie. Zie [&#x200B; het Overzicht van Workspace &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) en [&#x200B; een nieuw project &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) voor meer informatie bouwen.
 
 In deze sectie van de les, creeert u een project dat rapporten en visualisaties over toont:
 
@@ -224,7 +224,7 @@ In deze sectie van de les, creeert u een project dat rapporten en visualisaties 
 
 Uw project maken:
 
-1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![ Apps ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
+1. Navigeer aan de interface van Customer Journey Analytics gebruikend Apps ![&#x200B; Apps &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in het hoogste recht.
 
 1. Selecteer **[!UICONTROL Workspace]** in de bovenste menubalk.
 
@@ -234,18 +234,18 @@ Uw project maken:
 
    1. Selecteer **[!UICONTROL Create]**.
 
-      ![ de Projecten van CJA - 1 ](assets/cja-projects-1.png){zoomable="yes"}
+      ![&#x200B; de Projecten van CJA - 1 &#x200B;](assets/cja-projects-1.png){zoomable="yes"}
 
 1. U krijgt de interface **[!UICONTROL New project]** te zien. In deze interface, bouwt u uw rapporten en visualisaties.
 
 1. Selecteer de naam van het project (**[!UICONTROL New project]**) en verstrek uw eigen naam voor het project. Bijvoorbeeld `Luma App - AEP Mobile SDK Tutorial Project` .
-   ![ Project van CJA 2 ](assets/cja-projects-2.png){zoomable="yes"}
+   ![&#x200B; Project van CJA 2 &#x200B;](assets/cja-projects-2.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Project]** > **[!UICONTROL Save]** om het project op te slaan.
-   ![ Project van CJA 3 ](assets/cja-projects-3.png){zoomable="yes"}
+   ![&#x200B; Project van CJA 3 &#x200B;](assets/cja-projects-3.png){zoomable="yes"}
 
 1. In het dialoogvenster **[!UICONTROL Save]** negeert u alle andere velden en selecteert u **[!UICONTROL Save]** .
-   ![ Project van CJA 4 ](assets/cja-projects-4.png){zoomable="yes"}
+   ![&#x200B; Project van CJA 4 &#x200B;](assets/cja-projects-4.png){zoomable="yes"}
 
 
 >[!IMPORTANT]
@@ -255,15 +255,15 @@ Uw project maken:
 U hebt nu uw project ingesteld. Een tabel met vrije vorm wordt standaard opgegeven. Voordat u componenten toevoegt, moet u ervoor zorgen dat het deelvenster Vrije vorm de juiste gegevensweergave en tijdsperiode gebruikt.
 
 1. Selecteer de gegevensweergave in de vervolgkeuzelijst. Bijvoorbeeld **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]** . Als de gegevensweergave niet in de lijst wordt weergegeven, selecteert u **[!UICONTROL Show all]** onder aan de vervolgkeuzelijst.
-   ![ Project van CJA 5 ](assets/cja-projects-5.png){zoomable="yes"}
+   ![&#x200B; Project van CJA 5 &#x200B;](assets/cja-projects-5.png){zoomable="yes"}
 
 1. Als u de juiste tijdsperiode voor het deelvenster wilt definiëren, selecteert u de standaardvoorinstelling **[!UICONTROL This month]** en voert u een aangepaste begin- en einddatum in. U kunt ook een **[!UICONTROL Preset]** (zoals **[!UICONTROL Last 6 full months]** ) gebruiken en **[!UICONTROL Apply]** selecteren.
-   ![ Project van CJA 6 ](assets/cja-projects-6.png){zoomable="yes"}
+   ![&#x200B; Project van CJA 6 &#x200B;](assets/cja-projects-6.png){zoomable="yes"}
 
 
 ### Toepassingsgebruik
 
-Nu kunt u aangeven hoe de app wordt gebruikt. U hebt de noodzakelijke code in app toegevoegd om toepassingsinteractie te registreren en welke schermen in app (zie de [ les van Gebeurtenissen van het 0&rbrace; Spoor &lbrace;) worden gebruikt en u wilt nu over deze gegevens rapporteren.](events.md)
+Nu kunt u aangeven hoe de app wordt gebruikt. U hebt de noodzakelijke code in app toegevoegd om toepassingsinteractie te registreren en welke schermen in app (zie de [&#x200B; les van Gebeurtenissen van het 0&rbrace; Spoor &lbrace;) worden gebruikt en u wilt nu over deze gegevens rapporteren.](events.md)
 
 #### Schermnamen
 
@@ -276,20 +276,20 @@ Rapporteer de schermen die in de app worden weergegeven:
 1. Selecteer **[!UICONTROL Show all]** onder de lijst van **[!UICONTROL METRICS]** .
 
 1. Sleep en laat vallen de **[!UICONTROL Screen Views]** component op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
-   ![ de Projecten van CJA 7 ](assets/cja-projects-7.png){zoomable="yes"}
+   ![&#x200B; de Projecten van CJA 7 &#x200B;](assets/cja-projects-7.png){zoomable="yes"}
 Uw vrije lijst toont nu het schermmeningen voor elke dag voor uw geselecteerde tijdspanne. U wilt echter het aantal schermweergaven weergeven voor elk van de verschillende schermen die in de app worden gebruikt.
 
-1. Om de **[!UICONTROL DIMENSIONS]** lijst van componenten te tonen, selecteer ![ Kruis ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) om de ![ Gebeurtenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metrics]** filter uit de componentenspoorstaaf te verwijderen.
-   ![ Project 8 van CJA van ](assets/cja-projects-8.png){zoomable="yes"}
+1. Om de **[!UICONTROL DIMENSIONS]** lijst van componenten te tonen, selecteer ![&#x200B; Kruis &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) om de ![&#x200B; Gebeurtenis &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metrics]** filter uit de componentenspoorstaaf te verwijderen.
+   ![&#x200B; Project 8 van CJA van &#x200B;](assets/cja-projects-8.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Show all]** onder de lijst van **[!UICONTROL DIMENSIONS]** .
 
-1. Sleep de component **[!UICONTROL Screen Name]** naar de koptekst van **[!UICONTROL Day]** . De verrichting toont ![ Schakelaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Replace]** om op de vervanging van de afmeting te wijzen.
-   ![ de Projecten 9 van CJA ](assets/cja-projects-9.png){zoomable="yes"}
+1. Sleep de component **[!UICONTROL Screen Name]** naar de koptekst van **[!UICONTROL Day]** . De verrichting toont ![&#x200B; Schakelaar &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Replace]** om op de vervanging van de afmeting te wijzen.
+   ![&#x200B; de Projecten 9 van CJA &#x200B;](assets/cja-projects-9.png){zoomable="yes"}
 
 Uw eerste Freeform-tabel in uw rapport is voltooid.
 
-![ Projecten 10 van CJA ](assets/cja-projects-10.png){zoomable="yes"}
+![&#x200B; Projecten 10 van CJA &#x200B;](assets/cja-projects-10.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -300,8 +300,8 @@ Uw eerste Freeform-tabel in uw rapport is voltooid.
 
 Vervolgens maakt u een tabel met Freeform om te rapporteren hoe gebruikers met de app hebben gewerkt.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en van popup ![ lijst van de Vrije vorm ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) om een nieuwe lijst van de Vrije vorm toe te voegen.
-   ![ de Projecten 11 van CJA ](assets/cja-projects-11.png){zoomable="yes"}
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en van popup ![&#x200B; lijst van de Vrije vorm &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) om een nieuwe lijst van de Vrije vorm toe te voegen.
+   ![&#x200B; de Projecten 11 van CJA &#x200B;](assets/cja-projects-11.png){zoomable="yes"}
 
 1. Wijzig de naam **[!UICONTROL Freeform table (2)]** in `App Interactions` .
 
@@ -310,7 +310,7 @@ Vervolgens maakt u een tabel met Freeform om te rapporteren hoe gebruikers met d
 1. Sleep de **[!UICONTROL App Interaction Name]** -dimensie naar de koptekst van **[!UICONTROL Day]** om deze dimensie te vervangen.
 
 Uw tweede rapport is nu klaar en toont de interactie tussen de apps.
-![ Projecten 12 van CJA ](assets/cja-projects-12.png){zoomable="yes"}
+![&#x200B; Projecten 12 van CJA &#x200B;](assets/cja-projects-12.png){zoomable="yes"}
 
 De informatie is beperkt, voornamelijk omdat u API-aanroepen van `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` alleen op het aanmeldingsscherm hebt geïmplementeerd. Als u deze API-aanroep toevoegt aan meer schermen van uw app, wordt dit rapport informatief.
 
@@ -325,13 +325,13 @@ U wilt nu in een afzonderlijk deelvenster rapporteren over de handelsgebeurtenis
 
 #### Commerce Events
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige [!UICONTROL App Usage] paneel, om een nieuw paneel tot stand te brengen.
-   ![ Projecten 13 van CJA ](assets/cja-projects-13.png){zoomable="yes"}
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige [!UICONTROL App Usage] paneel, om een nieuw paneel tot stand te brengen.
+   ![&#x200B; Projecten 13 van CJA &#x200B;](assets/cja-projects-13.png){zoomable="yes"}
 
 1. Zorg ervoor dat u de juiste tijdsperiode selecteert.
 
-1. Selecteer ![ Vrije lijst ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL Freeform table]** om een nieuwe lijst van de Vrije vorm tot stand te brengen.
-   ![ Projecten 14 van CJA ](assets/cja-projects-14.png){zoomable="yes"}
+1. Selecteer ![&#x200B; Vrije lijst &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL Freeform table]** om een nieuwe lijst van de Vrije vorm tot stand te brengen.
+   ![&#x200B; Projecten 14 van CJA &#x200B;](assets/cja-projects-14.png){zoomable="yes"}
 
 1. Wijzig de naam **[!UICONTROL Panel]** in `Commerce` .
 
@@ -340,7 +340,7 @@ U wilt nu in een afzonderlijk deelvenster rapporteren over de handelsgebeurtenis
 1. De belemmering en laat vallen **[!UICONTROL Product Views]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;].
 
 1. Sleep de metrische waarde van **[!UICONTROL Product Add To Lists]** naar rechts van de kolom van **[!UICONTROL Product Views]** om deze kolom in te voegen in de vrije-vormtabel. Zorg ervoor dat **[!UICONTROL + Add]** (in blauw) wordt weergegeven wanneer u de kolom invoegt.
-   ![ Projecten 15 van CJA ](assets/cja-projects-15.png){zoomable="yes"}
+   ![&#x200B; Projecten 15 van CJA &#x200B;](assets/cja-projects-15.png){zoomable="yes"}
 
 1. Herhaal de vorige stap om **[!UICONTROL Save For Laters]** metrisch en **[!UICONTROL Purchases]** metrisch aan de vrije vormlijst toe te voegen.
 
@@ -348,7 +348,7 @@ U wilt nu in een afzonderlijk deelvenster rapporteren over de handelsgebeurtenis
 
 Het Commerce Events-rapport is voltooid.
 
-![ Projecten 16 van CJA ](assets/cja-projects-16.png){zoomable="yes"}
+![&#x200B; Projecten 16 van CJA &#x200B;](assets/cja-projects-16.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -358,16 +358,16 @@ Het Commerce Events-rapport is voltooid.
 
 Daarna, zult u een fallout visualisatie voor de handelrechter bouwen die toont hoeveel gebruikers die producten bekeken deze producten aan hun kar toevoegden, en van daaruit, hoeveel gebruikers deze producten voor later bewaarde.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) binnen het **[!UICONTROL Commerce]** paneel en van popup uitgezocht ![ Uitval ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (die de visualisatie van de Uitval vertegenwoordigen).
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) binnen het **[!UICONTROL Commerce]** paneel en van popup uitgezocht ![&#x200B; Uitval &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (die de visualisatie van de Uitval vertegenwoordigen).
 
 1. Selecteer **[!UICONTROL Product Views]** van [!UICONTROL *toevoegen touchpoint*] dropdown lijst.
-   ![ Projecten 18 van CJA ](assets/cja-projects-18.png){zoomable="yes"}
+   ![&#x200B; Projecten 18 van CJA &#x200B;](assets/cja-projects-18.png){zoomable="yes"}
 U kunt de **[!UICONTROL Products View]** -dimensie ook onder de **[!UICONTROL All people]** -dimensie in de **[!UICONTROL Fallout]** visualisatie slepen.
 
 1. Herhaal de bovenstaande stap voor **[!UICONTROL Product Add To Lists]** - en **[!UICONTROL Purchases]** -afmetingen.
 
 Uw Fallout-visualisatierapport is voltooid.
-![ Projecten 19 van CJA ](assets/cja-projects-19.png){zoomable="yes"}
+![&#x200B; Projecten 19 van CJA &#x200B;](assets/cja-projects-19.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -380,13 +380,13 @@ U wilt rapporteren over hoeveel aanbiedingen en welke aanbiedingen worden weerge
 
 #### Maandelijks overzicht
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige paneel van Commerce, om een nieuw paneel tot stand te brengen.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige paneel van Commerce, om een nieuw paneel tot stand te brengen.
 
 1. Wijzig de naam **[!UICONTROL Panel]** in `Offers` .
 
 1. Zorg ervoor dat u de juiste periode selecteert.
 
-1. Selecteer ![ Vrije lijst van de Vorm ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Vrije vorm lijst om een nieuwe vrije vormlijst tot stand te brengen.
+1. Selecteer ![&#x200B; Vrije lijst van de Vorm &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Vrije vorm lijst om een nieuwe vrije vormlijst tot stand te brengen.
 
 1. Wijzig de naam **[!UICONTROL Freeform table]** in `Monthly Overview` .
 
@@ -396,7 +396,7 @@ U wilt rapporteren over hoeveel aanbiedingen en welke aanbiedingen worden weerge
 
 Je maandelijkse overzicht voor voorstellen is voltooid.
 
-![ Projecten 20 van CJA ](assets/cja-projects-20.png){zoomable="yes"}
+![&#x200B; Projecten 20 van CJA &#x200B;](assets/cja-projects-20.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -407,7 +407,7 @@ Je maandelijkse overzicht voor voorstellen is voltooid.
 
 U wilt ook een rapport hebben waarin wordt aangegeven welke aanbiedingen zijn weergegeven in welke nummers gebruikers van de app hebben ontvangen.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) binnen het **[!UICONTROL Offers]** paneel en ![ Vrije vormlijst ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) van popup om een nieuwe lijst van de Vrije vorm toe te voegen.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) binnen het **[!UICONTROL Offers]** paneel en ![&#x200B; Vrije vormlijst &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) van popup om een nieuwe lijst van de Vrije vorm toe te voegen.
 
 1. Wijzig de naam **[!UICONTROL Freeform table (2)]** in `People` .
 
@@ -415,14 +415,14 @@ U wilt ook een rapport hebben waarin wordt aangegeven welke aanbiedingen zijn we
 
 1. Sleep de **[!UICONTROL Activity Name]** over de kolom **[!UICONTROL Day]** om de dimensie te vervangen.
 
-1. Klik op de rij met de rechtermuisknop aan, identificerend één of meer van de aanbiedingsbesluiten u in [ creeerde en vertoningsaanbiedingen met de 1&rbrace; les van het Beslissingsbeheer &lbrace;bepaalde. ](journey-optimizer-offers.md) Bijvoorbeeld **[!UICONTROL Luma - Mobile App Decision]** .
+1. Klik op de rij met de rechtermuisknop aan, identificerend één of meer van de aanbiedingsbesluiten u in [&#x200B; creeerde en vertoningsaanbiedingen met de 1&rbrace; les van het Beslissingsbeheer &lbrace;bepaalde. &#x200B;](journey-optimizer-offers.md) Bijvoorbeeld **[!UICONTROL Luma - Mobile App Decision]** .
 
 1. Selecteer in het contextmenu **[!UICONTROL Breakdown]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Offer Name]** . Deze selectie zal de dimensie van de Naam van de Activiteit in de Namen van de Aanbieding verdelen.
-   ![ Projecten 20b van CJA ](assets/cja-projects-20b.png){zoomable="yes"}
+   ![&#x200B; Projecten 20b van CJA &#x200B;](assets/cja-projects-20b.png){zoomable="yes"}
 
 Je voorstel aan Personen is voltooid.
 
-![ Projecten 21 van CJA ](assets/cja-projects-21.png){zoomable="yes"}
+![&#x200B; Projecten 21 van CJA &#x200B;](assets/cja-projects-21.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -433,31 +433,31 @@ Je voorstel aan Personen is voltooid.
 
 Tot slot wilt u verslag uitbrengen over winkelbezoeken.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige paneel van Aanbiedingen, om een nieuw paneel tot stand te brengen.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) buiten het huidige paneel van Aanbiedingen, om een nieuw paneel tot stand te brengen.
 
 1. Wijzig de naam **[!UICONTROL Panel]** in `Store Visits` .
 
 1. Zorg ervoor dat u de juiste periode selecteert.
 
-1. Selecteer ![ Vrije lijst van de Vorm ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Vrije vorm lijst om een nieuwe vrije vormlijst tot stand te brengen.
+1. Selecteer ![&#x200B; Vrije lijst van de Vorm &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Vrije vorm lijst om een nieuwe vrije vormlijst tot stand te brengen.
 
 1. Wijzig de naam **[!UICONTROL Freeform table]** in `Store Entries / Exits Across Cities` .
 
-1. Sleep en laat vallen **[!UICONTROL Location Events]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;]. Het rapport bevat nu een dagelijks overzicht van alle locatiegebeurtenissen die in de app hebben plaatsgevonden. Herinner hoe u specifiek deze afmeting als deel van uw [ gegevensmening ](#create-a-data-view) vormde.
+1. Sleep en laat vallen **[!UICONTROL Location Events]** metrisch op [!UICONTROL _Daling a **metrisch**&#x200B;hier (of een andere component_) &#x200B;]. Het rapport bevat nu een dagelijks overzicht van alle locatiegebeurtenissen die in de app hebben plaatsgevonden. Herinner hoe u specifiek deze afmeting als deel van uw [&#x200B; gegevensmening &#x200B;](#create-a-data-view) vormde.
 
 1. Sleep de **[!UICONTROL City]** -dimensie naar de kolomkop **[!UICONTROL Day]** om de dimensie te vervangen. In het verslag worden nu de steden voor de locatiegebeurtenissen getoond.
 
-1. Om geolocatiegebeurtenissen zonder steden te verwijderen verbonden aan het selecteren ![ Filter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), en uit **[!UICONTROL Search]** popup, draai **[!UICONTROL Include "No value"]**, dan uitgezochte **[!UICONTROL Apply]**.
+1. Om geolocatiegebeurtenissen zonder steden te verwijderen verbonden aan het selecteren ![&#x200B; Filter &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), en uit **[!UICONTROL Search]** popup, draai **[!UICONTROL Include "No value"]**, dan uitgezochte **[!UICONTROL Apply]**.
 
-   ![ Projecten 22 van CJA ](assets/cja-projects-22.png){zoomable="yes"}
+   ![&#x200B; Projecten 22 van CJA &#x200B;](assets/cja-projects-22.png){zoomable="yes"}
 
    Met deze actie verwijdert u de rij **[!UICONTROL No value]** uit het rapport.
 
 1. Selecteer alle rijen in de tabel, klik met de rechtermuisknop en kies in het contextmenu Onderverdeling > Dimension > Gebeurtenistypen.
 
-Je winkelbezoekersrapport is voltooid. U hebt nu een rapport tonen dat gebruikers binnen en uit de nabijheid van uw opslagplaatsen (aangezien u deze plaatsen in de [ Plaatsen ](places.md) les) bepaalt.
+Je winkelbezoekersrapport is voltooid. U hebt nu een rapport tonen dat gebruikers binnen en uit de nabijheid van uw opslagplaatsen (aangezien u deze plaatsen in de [&#x200B; Plaatsen &#x200B;](places.md) les) bepaalt.
 
-![ Project 23 van CJA ](assets/cja-projects-23.png){zoomable="yes"}
+![&#x200B; Project 23 van CJA &#x200B;](assets/cja-projects-23.png){zoomable="yes"}
 
 Let op: als je echt wilt rapporteren over mensen die je winkel fysiek bezoeken, kun je bakens gebruiken. Maar hopelijk heb je het concept van rapportage over geolocatiegegevens vastgelegd.
 
@@ -468,6 +468,6 @@ U hebt nu een basiskennis van het rapporteren en visualiseren van het gebruik va
 >[!SUCCESS]
 >
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[Conclusie en volgende stappen](conclusion.md)**

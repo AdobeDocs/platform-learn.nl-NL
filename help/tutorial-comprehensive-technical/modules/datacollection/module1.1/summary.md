@@ -25,9 +25,9 @@ Laten we de voordelen benadrukken van het gebruik van Web SDK voor het opnemen v
 
 ## Bekijk dit
 
-- Tech Blog: [ het vereenvoudigen van de Werkschema&#39;s van de Klant met het Web SDK van Adobe Experience Platform ](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- Tech Blog: [ stroomlijnt de Integratie van de Cliënt-Server met de Edge Network van Adobe Experience Platform ](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-- Tech Blog: [ verenigt Uw Diensten van Adobe Experience Platform met het Web SDK van Adobe Experience Platform ](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+- Tech Blog: [&#x200B; het vereenvoudigen van de Werkschema&#39;s van de Klant met het Web SDK van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+- Tech Blog: [&#x200B; stroomlijnt de Integratie van de Cliënt-Server met de Edge Network van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- Tech Blog: [&#x200B; verenigt Uw Diensten van Adobe Experience Platform met het Web SDK van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 [Ga terug naar module 1](./data-ingestion-launch-web-sdk.md)
 

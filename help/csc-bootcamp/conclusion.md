@@ -32,7 +32,7 @@ Zoals je tijdens dit bootkamp hebt opgemerkt, gaat de toeleveringsketen van inho
 
 Nochtans, is het even belangrijk om opnieuw te benadrukken dat de Keten van de Levering van de Inhoud geen magische oplossing voor al uw problemen is. Het is een manier van werken die u toestaat om efficiënter te zijn en alle ervaringen te beheren u aan uw klanten wilt brengen. Je moet kruipen voordat je kunt lopen en uiteindelijk rennen.
 
-![ kruipt looppas van de Wandeling ](./images/crawl-walk-run.png)
+![&#x200B; kruipt looppas van de Wandeling &#x200B;](./images/crawl-walk-run.png)
 
 
 [Terug naar fase 4 - Inzichten voor een marketingmanager](./phases/insights/marketing-manager.md)

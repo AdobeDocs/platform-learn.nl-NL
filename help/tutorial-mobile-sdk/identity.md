@@ -17,7 +17,7 @@ Leer hoe u identiteitsgegevens kunt verzamelen in een mobiele app.
 
 Met Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien. De services bieden een brug tussen identiteiten op verschillende apparaten en systemen en bieden u de mogelijkheid om in real-time effectieve, persoonlijke digitale ervaringen te bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
-Leer meer over de [ uitbreiding van de Identiteit ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [ identiteitsdienst ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) in de documentatie.
+Leer meer over de [&#x200B; uitbreiding van de Identiteit &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) en de [&#x200B; identiteitsdienst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) in de documentatie.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Een aangepaste naamruimte voor identiteiten instellen
 
-Identiteitsnaamruimten zijn componenten van [ Dienst van de Identiteit ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
+Identiteitsnaamruimten zijn componenten van [&#x200B; Dienst van de Identiteit &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) die als indicatoren van de context dienen waarop een identiteit betrekking heeft. Ze onderscheiden bijvoorbeeld de waarde `name@email.com` als e-mailadres of `443522` als een numerieke CRM-id.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Een nieuwe naamruimte maken:
 1. Selecteer **[!UICONTROL Cross-device ID]**.
 1. Selecteer **[!UICONTROL Create]**.
 
-   ![ creeer identiteit namespace ](assets/identity-create.png){zoomable="yes"}
+   ![&#x200B; creeer identiteit namespace &#x200B;](assets/identity-create.png){zoomable="yes"}
 
 
 
@@ -115,7 +115,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 >[!TAB  Android ]
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio en vind de `fun updateIdentities(emailAddress: String, crmId: String) ` functie implementatie. Voeg de volgende code toe aan de functie.
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio en vind de `fun updateIdentities(emailAddress: String, crmId: String) ` functie implementatie. Voeg de volgende code toe aan de functie.
 
    ```kotlin
    // Set up identity map, add identities to map and update identities
@@ -157,7 +157,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
       Identity.updateIdentities(identityMap)
       ```
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in de navigator van Android Studio en vind de uit te voeren code wanneer het selecteren van de **[!UICONTROL Login]** knoop. Voeg de volgende code toe:
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in de navigator van Android Studio en vind de uit te voeren code wanneer het selecteren van de **[!UICONTROL Login]** knoop. Voeg de volgende code toe:
 
    ```kotlin
    // Update identities
@@ -179,7 +179,7 @@ U wilt zowel de standaardidentiteit (e-mail) als de aangepaste identiteit (Luma 
 
 ## Een identiteit verwijderen
 
-U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [ identiteitsgrafieken van de Mening ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
+U kunt [`Identity.removeIdentity` gebruiken &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API om de identiteit uit de opgeslagen cliënt-zijidentiteitskaart te verwijderen. De identiteitsextensie verzendt de id niet meer naar de Edge Network. Het gebruik van deze API verwijdert de id niet uit de identiteitsgrafiek aan de serverzijde. Zie [&#x200B; identiteitsgrafieken van de Mening &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/view-identity-graphs) voor meer informatie over identiteitsgrafieken.
 
 
 >[!BEGINTABS]
@@ -205,7 +205,7 @@ U kunt [`Identity.removeIdentity` gebruiken ](https://developer.adobe.com/client
 
 >[!TAB  Android ]
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio en voeg de volgende code aan de `fun removeIdentities(emailAddress: String, crmId: String)` functie toe:
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio en voeg de volgende code aan de `fun removeIdentities(emailAddress: String, crmId: String)` functie toe:
 
    ```kotlin
    // Remove identities and reset email and CRM Id to their defaults
@@ -230,10 +230,10 @@ MobileSDK.shared.removeIdentities(
 
 ## Valideren met Assurance
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 1. In de app Luma
    1. Selecteer de tab **[!UICONTROL Home]** en verplaats het Assurance-pictogram naar links.
-   1. Selecteer het ![ pictogram van de Gebruiker ](/help/assets/icons/User.svg) van het hoogste recht.
+   1. Selecteer het ![&#x200B; pictogram van de Gebruiker &#x200B;](/help/assets/icons/User.svg) van het hoogste recht.
 
 >[!BEGINTABS]
 
@@ -270,28 +270,28 @@ Terug in Assurance:
 
 1. Ga naar de Assurance-webinterface voor de **[!UICONTROL Edge Identity Update Identities]** -gebeurtenis van de **[!UICONTROL com.adobe.griffon.mobile]** -leverancier.
 1. Selecteer de gebeurtenis en bekijk de gegevens in het **[!UICONTROL ACPExtensionEventData]** -object. U moet de identiteiten zien die u hebt bijgewerkt.
-   ![ bevestigt identiteitsupdate ](assets/identity-validate-assurance.png){zoomable="yes"}
+   ![&#x200B; bevestigt identiteitsupdate &#x200B;](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## Valideren met identiteitsgrafiek
 
-Zodra u de stappen in de [ les van Experience Platform ](platform.md) voltooit, kunt u de identiteit bevestigen vangen in de kijker van de identiteitsgrafiek van Experience Platform:
+Zodra u de stappen in de [&#x200B; les van Experience Platform &#x200B;](platform.md) voltooit, kunt u de identiteit bevestigen vangen in de kijker van de identiteitsgrafiek van Experience Platform:
 
 1. Selecteer **[!UICONTROL Identities]** in de gebruikersinterface voor gegevensverzameling.
 1. Selecteer **[!UICONTROL Identity Graph]** in de bovenste balk.
 1. Voer `Luma CRM ID` in als de **[!UICONTROL Identity namespace]** en uw CRM-id (bijvoorbeeld `24e620e255734d8489820e74f357b5c8` ) als de **[!UICONTROL Identity value]** .
 1. U ziet de **[!UICONTROL Identities]** weergegeven.
 
-   ![ bevestigt identiteitsgrafiek ](assets/identity-validate-graph.png){zoomable="yes"}
+   ![&#x200B; bevestigt identiteitsgrafiek &#x200B;](assets/identity-validate-graph.png){zoomable="yes"}
 
 >[!INFO]
 >
->De toepassing bevat geen code om de ECID opnieuw in te stellen. U kunt de ECID alleen opnieuw instellen (en daadwerkelijk een nieuw profiel met een nieuwe ECID maken) door de toepassing te verwijderen en opnieuw te installeren. Om het terugstellen van herkenningstekens uit te voeren, zie [`Identity.resetIdentities` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API vraag. Ben zich ervan bewust dat wanneer u een herkenningsteken van het duw- bericht gebruikt (zie [ Verzendende dupberichten ](journey-optimizer-push.md)), dat herkenningsteken een andere &quot;kleverige&quot;profielherkenningsteken op het apparaat wordt.
+>De toepassing bevat geen code om de ECID opnieuw in te stellen. U kunt de ECID alleen opnieuw instellen (en daadwerkelijk een nieuw profiel met een nieuwe ECID maken) door de toepassing te verwijderen en opnieuw te installeren. Om het terugstellen van herkenningstekens uit te voeren, zie [`Identity.resetIdentities` &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) en [`MobileCore.resetIdentities` &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API vraag. Ben zich ervan bewust dat wanneer u een herkenningsteken van het duw- bericht gebruikt (zie [&#x200B; Verzendende dupberichten &#x200B;](journey-optimizer-push.md)), dat herkenningsteken een andere &quot;kleverige&quot;profielherkenningsteken op het apparaat wordt.
 
 
 >[!SUCCESS]
 >
 >U hebt nu een app ingesteld om de identiteiten in de Edge Network en (wanneer deze is ingesteld) in Adobe Experience Platform bij te werken.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 Volgende: **[verzamel profielgegevens](profile.md)**

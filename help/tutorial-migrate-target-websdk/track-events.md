@@ -80,7 +80,7 @@ In de onderstaande tabel worden de benadering at.js en het equivalent van Platfo
 >
 >Hoewel `decisioning.propositionDisplay` het meest wordt gebruikt voor het verhogen van indrukkingen voor specifiek werkingsgebied, zou het ook als directe vervanging voor at.js `trackEvent()` gewoonlijk moeten worden gebruikt. De functie `trackEvent()` heeft als standaardwaarde een type `display` als dat niet is opgegeven. Controleer uw implementatie om ervoor te zorgen dat u het juiste gebeurtenistype gebruikt voor aangepaste conversies die u hebt gedefinieerd.
 
-Verwijs naar de specifieke documentatie at.js voor meer informatie over hoe te om [`trackEvent()` ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) en [`sendNotifications()` ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) voor het volgen gebeurtenissen van het Doel te gebruiken.
+Verwijs naar de specifieke documentatie at.js voor meer informatie over hoe te om [`trackEvent()` &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) en [`sendNotifications()` &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) voor het volgen gebeurtenissen van het Doel te gebruiken.
 
 in.js-voorbeeld met `trackEvent()` om een klik op een locatie van een box bij te houden:
 
@@ -143,8 +143,8 @@ alloy("sendEvent", {
 });
 ```
 
-Daarna, leer hoe te [ om het delen van dwars-domeinidentiteitskaart ](cross-domain.md) voor verenigbare bezoekersprofielen toe te laten.
+Daarna, leer hoe te [&#x200B; om het delen van dwars-domeinidentiteitskaart &#x200B;](cross-domain.md) voor verenigbare bezoekersprofielen toe te laten.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

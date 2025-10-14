@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Een sociale bestemming configureren
 
-Leer hoe u een verbinding tot stand brengt en een publiek activeert op een sociale bestemming. Deze video demonstreert de workflow met een LinkedIn Matched Audiences-bestemming in Adobe Real-Time Customer Data Platform.  Voor meer informatie, herzie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/social/overview).
+Leer hoe u een verbinding tot stand brengt en een publiek activeert op een sociale bestemming. Deze video demonstreert de workflow met een LinkedIn Matched Audiences-bestemming in Adobe Real-Time Customer Data Platform.  Voor meer informatie, herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/social/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475119/?learn=on&enablevpops&captions=dut)
 

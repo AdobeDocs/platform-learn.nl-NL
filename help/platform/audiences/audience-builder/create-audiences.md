@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Soorten publiek maken
 
-Leer hoe u een publiek kunt maken in Adobe Experience Platform. Bouw publieksregels en pas hen op uw klantenprofielen in real time toe om het publiek te produceren dat klantenervaringen zal aandrijven. Voor gedetailleerde productdocumentatie, zie [ tot een segment in UI ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=nl-NL) leiden en [ tot een segment met API ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=nl-NL).
+Leer hoe u een publiek kunt maken in Adobe Experience Platform. Bouw publieksregels en pas hen op uw klantenprofielen in real time toe om het publiek te produceren dat klantenervaringen zal aandrijven. Voor gedetailleerde productdocumentatie, zie [&#x200B; tot een segment in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=nl-NL) leiden en [&#x200B; tot een segment met API &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=nl-NL).
 
 >[!NOTE]
 >

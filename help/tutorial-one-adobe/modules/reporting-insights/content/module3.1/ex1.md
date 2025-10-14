@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ## Volgende stappen
 
-Ga naar [ - ](./ex1.md){target="_blank"}
+Ga naar [&#x200B; - &#x200B;](./ex1.md){target="_blank"}
 
-Ga terug naar [ Content Analytics ](./contentanalytics.md){target="_blank"}
+Ga terug naar [&#x200B; Content Analytics &#x200B;](./contentanalytics.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../../overview.md){target="_blank"}

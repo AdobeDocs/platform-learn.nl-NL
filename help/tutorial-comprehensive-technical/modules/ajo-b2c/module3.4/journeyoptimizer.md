@@ -30,7 +30,7 @@ In deze module leert u alles wat er over Adobe Journey Optimizer te weten is, wa
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -54,7 +54,7 @@ Hierbij installeert u een mobiele toepassing op uw iOS-apparaat en configureert 
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

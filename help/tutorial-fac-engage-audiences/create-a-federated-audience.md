@@ -23,7 +23,7 @@ Daarna, begeleiden wij u door het creëren van een publiek van het gegevenspakhu
 1. In de **Klant > Publiek** portaal, klik de **Federated samenstellingen** tabel.
 2. Klik **creeer samenstelling**.
 
-   ![ creeer-samenstelling ](assets/create-composition.png)
+   ![&#x200B; creeer-samenstelling &#x200B;](assets/create-composition.png)
 
 3. Label uw compositie. In ons voorbeeld: `SecurFinancial Customers - No Loans, Good Credit`. Klik **creëren**.
 
@@ -43,7 +43,7 @@ Daarna, begeleiden wij u door het creëren van een publiek van het gegevenspakhu
 
    **Nota:** het waardegebied is case-sensitive.
 
-   ![ vraag-bouwer ](assets/query-builder.png)
+   ![&#x200B; vraag-bouwer &#x200B;](assets/query-builder.png)
 
 7. Klik volgende **+** knoop, dan klik **sparen publiek**. Label deze stap. In ons voorbeeld geven we het label `SecurFinancial Customers - No Loans, Good Credit` .
 
@@ -64,6 +64,6 @@ Daarna, begeleiden wij u door het creëren van een publiek van het gegevenspakhu
 
 In dit voorbeeld werd product- en kredietinformatie gebruikt om ons publiek te maken via directe toegang tot bedrijfsgegevens van Snowflake, zonder een kopie ervan te maken Adobe Experience Platform. Nadat het externe systeem de query heeft verwerkt, worden alleen de relevante e-mail, huidige producten en voornaamwaarden naar de publieksdefinitie overgebracht voor downstreamactivering. Dit geldt voor alle bestemmingen die RTCDP ondersteunt.
 
-Voor meer informatie over publiekssamenstelling, bezoek [ Experience League ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Voor meer informatie over publiekssamenstelling, bezoek [&#x200B; Experience League &#x200B;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Nu ons gefedereerde publiek is gecreeerd, zullen wij [ het aan een S3 bestemming in Experience Platform ](map-federated-audience-to-s3.md) in kaart brengen.
+Nu ons gefedereerde publiek is gecreeerd, zullen wij [&#x200B; het aan een S3 bestemming in Experience Platform &#x200B;](map-federated-audience-to-s3.md) in kaart brengen.

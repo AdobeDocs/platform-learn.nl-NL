@@ -25,7 +25,7 @@ Het profiel van de Klant in real time kan door alle toepassingen van Adobe, maar
 
 In het deelvenster Profielviewer op de website kunt u meerdere identiteiten vinden. Elke identiteit is gekoppeld aan een naamruimte.
 
-![ Profiel van de Klant ](./images/identities.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/identities.png)
 
 Op het röntgenpaneel, kunnen wij vier verschillende combinaties identiteitskaart en Namespaces zien:
 
@@ -42,29 +42,29 @@ Onthoud deze id&#39;s voor de volgende stap.
 
 In deze oefening zult u Adobe I/O vrij intensief aan vraag tegen Platform APIs gebruiken. Volg onderstaande stappen om Adobe I/O in te stellen.
 
-Ga naar [ https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+Ga naar [&#x200B; https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iohome.png)
 
 Selecteer de juiste Adobe Experience Platform-instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` . Klik **creëren nieuw project**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iocomp.png)
 
 Selecteer **+ toevoegen aan Project** en selecteren **API**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/adobe_io_access_api.png)
 
 U zult dan dit zien:
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api1.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api1.png)
 
 Selecteer **Experience Platform API** en klik **daarna**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api3.png)
 
 Dit zie je nu. Geef een naam op voor de referentie: `--aepUserLdap-- - OAuth credential` . Klik **daarna**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api4.png)
 
 Vervolgens moet u een productprofiel selecteren waarmee wordt gedefinieerd welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -76,33 +76,33 @@ Selecteer de vereiste productprofielen.
 
 Klik **sparen Vormde API**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api9.png)
 
 Uw Adobe I/O-integratie is nu gereed.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api11.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api11.png)
 
 Klik de **Download voor Postman** knoop en klik dan **OAuth Server-aan-Server** om een milieu van Postman te downloaden (wacht tot het milieu wordt gedownload, kan dit een paar seconden) nemen.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/iopm.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iopm.png)
 
 Uw IO-project heeft momenteel een algemene naam. Je moet je integratie een vriendelijke naam geven. Klik op **Project X** (of gelijkaardige naam) zoals vermeld
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api13.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api13.png)
 
 Klik **uitgeven Project**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api14.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api14.png)
 
 Voer een naam en beschrijving in voor uw integratie: `--aepUserLdap-- AEP Tutorial` .
 
 Klik **sparen**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api15.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api15.png)
 
 Uw Adobe I/O-integratie is nu voltooid.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/api16.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api16.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Uw Adobe I/O-integratie is nu voltooid.
 >
 >Als u de toegangsrechten van Admin van het Systeem niet hebt, zult u deze stap zelf niet kunnen uitvoeren en u zult geen toestemming hebben om tot de **Toestemmingen** UI toegang te hebben. Neem in dat geval contact op met uw systeembeheerder of post uw vraag in het ondersteuningskanaal van uw organisatie.
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
 Ga naar **Toestemmingen**, **Rollen**, en klik het relevante productprofiel.
 
@@ -122,31 +122,31 @@ Ga naar **Toestemmingen**, **Rollen**, en klik het relevante productprofiel.
 >
 > De namen van productprofielen variëren in uw Adobe Experience Platform-instantie omdat ze instantiespecifiek zijn. U moet ten minste één productprofiel selecteren met de juiste toegangsrechten, die zijn ingesteld in de Adobe Admin Console en de interface voor AEP-machtigingen.
 
-![ Toestemmingen ](./images/perm1.png)
+![&#x200B; Toestemmingen &#x200B;](./images/perm1.png)
 
 Klik **API geloofsbrieven**.
 
-![ Toestemmingen ](./images/perm2.png)
+![&#x200B; Toestemmingen &#x200B;](./images/perm2.png)
 
 Klik op **+ Add API credentials**.
 
-![ Toestemmingen ](./images/perm3.png)
+![&#x200B; Toestemmingen &#x200B;](./images/perm3.png)
 
 Selecteer het onlangs gecreeerde project van Adobe I/O en klik **sparen**.
 
-![ Toestemmingen ](./images/perm4.png)
+![&#x200B; Toestemmingen &#x200B;](./images/perm4.png)
 
 ## Verificatie naar Adobe I/O
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
+>Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../postbuster.md) te gebruiken.
 
-Ga naar [ https://www.postman.com/downloads/ ](https://www.postman.com/downloads/).
+Ga naar [&#x200B; https://www.postman.com/downloads/ &#x200B;](https://www.postman.com/downloads/).
 
 Download en installeer de relevante versie van Postman voor uw besturingssysteem.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/getstarted.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/getstarted.png)
 
 Start de toepassing nadat u Postman hebt geïnstalleerd.
 
@@ -159,7 +159,7 @@ In Postman zijn er twee concepten: omgevingen en verzamelingen.
    - 1 Verzameling voor de oefeningen in deze module
    - 1 inzameling voor de oefeningen in de module van Real-Time CDP, voor de Authoring van de Bestemming
 
-Gelieve te downloaden het dossier [ postman.zip ](./../../../assets/postman/postman_profile.zip) aan uw lokale Desktop.
+Gelieve te downloaden het dossier [&#x200B; postman.zip &#x200B;](./../../../assets/postman/postman_profile.zip) aan uw lokale Desktop.
 
 In dit {**dossier 0} postman.zip, zult u de volgende dossiers vinden:**
 
@@ -169,23 +169,23 @@ In dit {**dossier 0} postman.zip, zult u de volgende dossiers vinden:**
 
 Pak het {**dossier 0} postman.zip uit en sla deze 3 dossiers in een omslag op uw Desktop, samen met het gedownloade milieu van Postman van Adobe I/O op. U hebt deze 4 bestanden nodig in die map:**
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/pmfolder.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/pmfolder.png)
 
 Ga terug naar Postman. Klik **Invoer**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/postmanui.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/postmanui.png)
 
 Klik **dossiers**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/choosefiles.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/choosefiles.png)
 
 Navigeer naar de map op uw bureaublad waarin u de vier gedownloade bestanden hebt uitgepakt. Selecteer deze 4 dossiers tezelfdertijd en klik **Open**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/selectfiles.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/selectfiles.png)
 
 Na het klikken **Open**, zal Postman u een overzicht van het Milieu en de Inzamelingen tonen u op het punt staat in te voeren. Klik **Invoer**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/impconfirm.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/impconfirm.png)
 
 U hebt nu alles wat u nodig hebt in Postman om te gaan communiceren met Adobe Experience Platform via de API&#39;s.
 
@@ -195,17 +195,17 @@ Zorg ervoor dat u het juiste Milieu hebt geselecteerd alvorens om het even welk 
 
 De geselecteerde omgeving moet een naam hebben die vergelijkbaar is met deze, `--aepUserLdap-- OAuth Credential` .
 
-![ Postman ](./images/envselemea.png)
+![&#x200B; Postman &#x200B;](./images/envselemea.png)
 
 Uw Postman-omgeving en -verzamelingen zijn nu geconfigureerd en werken. U kunt nu verifiëren van Postman naar Adobe I/O.
 
 In **Adobe IO - OAuth** inzameling, selecteer het verzoek met de naam **POST - krijg het Symbolische van de Toegang**. Klik **verzenden**.
 
-![ Postman ](./images/ioauth.png)
+![&#x200B; Postman &#x200B;](./images/ioauth.png)
 
 Na een paar seconden, zou u een reactie moeten zien die in de **1&rbrace; sectie van het Lichaam &lbrace;van Postman wordt getoond:**
 
-![ Postman ](./images/ioauthresp.png)
+![&#x200B; Postman &#x200B;](./images/ioauthresp.png)
 
 Als uw configuratie succesvol was, zou u een gelijkaardige reactie moeten zien die de volgende informatie bevat:
 
@@ -225,11 +225,11 @@ Nu kunt u doorgaan en uw eerste aanvraag naar de realtime-API&#39;s van het klan
 
 In Postman, bepaal de plaats van de inzameling **Leerprogramma AEP**.
 
-![ Postman ](./images/coll_enablement.png)
+![&#x200B; Postman &#x200B;](./images/coll_enablement.png)
 
 In **1. De verenigde Dienst van het Profiel**, klik het eerste verzoek met de naam **UPS - het Profiel van GET door identiteitskaart van de Entiteit &amp; NS**.
 
-![ Postman ](./images/upscall.png)
+![&#x200B; Postman &#x200B;](./images/upscall.png)
 
 Voor dit verzoek zijn er drie vereiste variabelen:
 
@@ -247,11 +247,11 @@ Dus als u Adobe Experience Platform API&#39;s wilt vragen om u alle profielgegev
 | entiteitIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
 
-![ Postman ](./images/callecid.png)
+![&#x200B; Postman &#x200B;](./images/callecid.png)
 
 U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
 
-![ Postman ](./images/callecidheaders.png)
+![&#x200B; Postman &#x200B;](./images/callecidheaders.png)
 
 >[!NOTE]
 >
@@ -267,7 +267,7 @@ Zodra u de zandbaknaam hebt gecontroleerd, verzendt de klik **&#x200B;**&#x200B;
 
 U zou een directe reactie van Platform moeten krijgen, die u iets als dit toont:
 
-![ Postman ](./images/callecidresponse.png)
+![&#x200B; Postman &#x200B;](./images/callecidresponse.png)
 
 Dit is de volledige reactie van Platform:
 
@@ -405,15 +405,15 @@ Dus als u aan de API&#39;s van het Platform wilt vragen om u alle profielinforma
 
 Als uw telefoonaantal speciale symbolen zoals **+** bevat, moet u uw volledig telefoonaantal selecteren, met de rechtermuisknop klikken en **EncodeURIComponent** klikken.
 
-![ Postman ](./images/encodephone.png)
+![&#x200B; Postman &#x200B;](./images/encodephone.png)
 
 Dan heb je het volgende:
 
-![ Postman ](./images/callmobilenr.png)
+![&#x200B; Postman &#x200B;](./images/callmobilenr.png)
 
 U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
 
-![ Postman ](./images/callecidheaders.png)
+![&#x200B; Postman &#x200B;](./images/callecidheaders.png)
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 Klik **verzenden** en verifieer de reactie, zult u zien dat het het zelfde zoals vóór is toen u ECID als identiteit gebruikte.
 
-![ Postman ](./images/callmobilenrresponse.png)
+![&#x200B; Postman &#x200B;](./images/callmobilenrresponse.png)
 
 Laten wij het zelfde ding voor uw e-mailadres doen door namespace van **e-mail** en uw e-mailadres te specificeren.
 
@@ -440,11 +440,11 @@ Dus als u aan de API&#39;s van Platform wilt vragen om u alle profielgegevens vo
 
 Als uw e-mailadres speciale symbolen zoals **+** bevat, moet u uw volledig e-mailadres selecteren, met de rechtermuisknop klikken en **EncodeURIComponent** klikken.
 
-![ Postman ](./images/encodeemail.png)
+![&#x200B; Postman &#x200B;](./images/encodeemail.png)
 
 Dan heb je het volgende:
 
-![ Postman ](./images/callemail.png)
+![&#x200B; Postman &#x200B;](./images/callemail.png)
 
 U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
 
@@ -452,7 +452,7 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 >
 >U moet de naam opgeven van de Adobe Experience Platform-sandbox die u gebruikt. De naam van de x-sandbox moet `--aepSandboxName--` zijn.
 
-![ Postman ](./images/callecidheaders.png)
+![&#x200B; Postman &#x200B;](./images/callecidheaders.png)
 
 | Sleutel | Waarde |
 | ----------- | ----------- |
@@ -460,7 +460,7 @@ U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **
 
 Klik **verzenden** en verifieer de reactie, zult u opnieuw zien dat het het zelfde zoals vóór met ECID en telefoonaantal is.
 
-![ Postman ](./images/callemailresponse.png)
+![&#x200B; Postman &#x200B;](./images/callemailresponse.png)
 
 Dit is een zeer belangrijke vorm van flexibiliteit die aan merken wordt aangeboden. Dit betekent dat elke omgeving een aanvraag naar Platform kan verzenden met behulp van een eigen id en naamruimte, zonder dat de complexiteit van meerdere naamruimten en id&#39;s wordt begrepen.
 
@@ -478,11 +478,11 @@ Nadat de API&#39;s van het platform zijn gecontroleerd op profielgegevens, kunne
 
 In Postman, bepaal de plaats van de inzameling **Leerprogramma AEP**.
 
-![ Postman ](./images/coll_enablement.png)
+![&#x200B; Postman &#x200B;](./images/coll_enablement.png)
 
 In **1. De verenigde Dienst van het Profiel**, selecteer het tweede verzoek met de naam **UPS - het Profiel van GET &amp; EE door identiteitskaart van de Entiteit &amp; NS**.
 
-![ Postman ](./images/upseecall.png)
+![&#x200B; Postman &#x200B;](./images/upseecall.png)
 
 Voor dit verzoek zijn vier vereiste variabelen:
 
@@ -502,11 +502,11 @@ Dus als u aan de API&#39;s van Platform wilt vragen om u alle profielgegevens vo
 | relatedEntiteitId | **yourECID** |
 | relatedEntiteitIdNS | **ecid** |
 
-![ Postman ](./images/eecallecid.png)
+![&#x200B; Postman &#x200B;](./images/eecallecid.png)
 
 U zou ook de **Kopbal** - gebieden van uw verzoek moeten verifiëren. Ga naar **Kopballen**. U zult dan dit zien:
 
-![ Postman ](./images/eecallecidheaders.png)
+![&#x200B; Postman &#x200B;](./images/eecallecidheaders.png)
 
 >[!NOTE]
 >
@@ -520,7 +520,7 @@ Klik **verzenden** om uw verzoek naar Platform te verzenden.
 
 U zou een directe reactie van Platform moeten krijgen, die u iets als dit toont:
 
-![ Postman ](./images/eecallecidresponse.png)
+![&#x200B; Postman &#x200B;](./images/eecallecidresponse.png)
 
 Hieronder volgt de volledige reactie van Platform. In dit voorbeeld zijn er acht ExperienceEvents gekoppeld aan de ECID van deze klant. Bekijk hieronder de verschillende variabelen op het verzoek, aangezien wat u hieronder ziet het directe gevolg van uw configuratie in Lancering in vorige oefeningen is.
 
@@ -637,7 +637,7 @@ Dit zijn momenteel alle beschikbare ExperienceEvent-gegevens in Platform voor de
 
 U hoeft de ECID niet te gebruiken om ExperienceEvent-gegevens aan te vragen vanuit Adobe Experience Platform in real-time profiel. U kunt elke id in een naamruimte gebruiken om deze gegevens aan te vragen.
 
-Volgende Stap: [ 2.1.4 leidt tot een publiek - UI ](./ex4.md)
+Volgende Stap: [&#x200B; 2.1.4 leidt tot een publiek - UI &#x200B;](./ex4.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 U hebt deze oefening nu afgerond.
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Terug naar module 3.4](./journeyoptimizer.md)
 

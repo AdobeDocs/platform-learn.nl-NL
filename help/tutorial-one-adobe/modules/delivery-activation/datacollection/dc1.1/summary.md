@@ -25,12 +25,12 @@ Laten we de voordelen benadrukken van het gebruik van Web SDK voor het opnemen v
 
 ## Bekijk dit
 
-- Tech Blog: [ het vereenvoudigen van de Werkschema&#39;s van de Klant met het Web SDK van Adobe Experience Platform ](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- Tech Blog: [ stroomlijnt cliënt-Server Integraties met Adobe Experience Platform Edge Network ](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-- Tech Blog: [ verenigt Uw Diensten van Adobe Experience Platform met het Web SDK van Adobe Experience Platform ](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+- Tech Blog: [&#x200B; het vereenvoudigen van de Werkschema&#39;s van de Klant met het Web SDK van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+- Tech Blog: [&#x200B; stroomlijnt cliënt-Server Integraties met Adobe Experience Platform Edge Network &#x200B;](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- Tech Blog: [&#x200B; verenigt Uw Diensten van Adobe Experience Platform met het Web SDK van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 ## Volgende stappen
 
-Ga terug naar [ Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de de markeringsuitbreiding van SDK van het Web ](./data-ingestion-launch-web-sdk.md){target="_blank"}
+Ga terug naar [&#x200B; Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de de markeringsuitbreiding van SDK van het Web &#x200B;](./data-ingestion-launch-web-sdk.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

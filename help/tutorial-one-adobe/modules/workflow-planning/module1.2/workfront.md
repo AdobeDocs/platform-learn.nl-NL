@@ -29,7 +29,7 @@ Na de voltooiing van dit laboratorium, zult u vertrouwd met de volgende punten w
 
 ## Uitoefening
 
-[ 1.2.1 Workfront + de Integratie van Meta-gegevens van AEM Assets CS ](./ex1.md){target="_blank"}
+[&#x200B; 1.2.1 Workfront + de Integratie van Meta-gegevens van AEM Assets CS &#x200B;](./ex1.md){target="_blank"}
 
 In deze oefening, zult u de integratie van Workfront + AEM Assets CS. opzetten
 
@@ -37,22 +37,22 @@ In deze oefening, zult u de integratie van Workfront + AEM Assets CS. opzetten
 
 In deze oefening, zult u een het proefdrukken goedkeuringswerkschema vormen en gebruiken.
 
-[ 1.2.4 Workfront + de Integratie van AEM Sites CS ](./ex4.md){target="_blank"}
+[&#x200B; 1.2.4 Workfront + de Integratie van AEM Sites CS &#x200B;](./ex4.md){target="_blank"}
 
 In deze oefening, zult u opstelling en begint gebruikend de stop die de Plaatsen van Adobe Experience Manager Cloud Service met Adobe Workfront verbindt.
 
-[ 1.2.5 Workfront + de Integratie van Photoshop ](./ex5.md){target="_blank"}
+[&#x200B; 1.2.5 Workfront + de Integratie van Photoshop &#x200B;](./ex5.md){target="_blank"}
 
 In deze exercitie, zult u opstelling en beginnen gebruikend de stop die Adobe Photoshop met Adobe Workfront verbindt.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}

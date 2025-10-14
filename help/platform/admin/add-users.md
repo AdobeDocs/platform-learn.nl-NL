@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Gebruikers toevoegen en machtigingen beheren
 
-Leer hoe u gebruikers toevoegt en machtigingen beheert in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. De gebruikers worden eerst toegevoegd in Admin Console en dan verleend toestemmingen in het Platform of de interface van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
+Leer hoe u gebruikers toevoegt en machtigingen beheert in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. De gebruikers worden eerst toegevoegd in Admin Console en dan verleend toestemmingen in het Platform of de interface van Journey Optimizer. Voor meer informatie, gelieve de [&#x200B; documentatie van het Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)

@@ -21,7 +21,7 @@ ht-degree: 1%
 
 In deze les configureert u Adobe Experience Platform-gebruikersmachtigingen met behulp van [!DNL Adobe's Admin Console] en het scherm [!UICONTROL Permissions] in de interface Platform.
 
-Toegangsbeheer is een sleutelfunctie voor privacy in Experience Platform en wij raden u aan de machtigingen tot het minimum te beperken dat vereist is voor het uitvoeren van hun taakfuncties. Zie de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) voor meer informatie.
+Toegangsbeheer is een sleutelfunctie voor privacy in Experience Platform en wij raden u aan de machtigingen tot het minimum te beperken dat vereist is voor het uitvoeren van hun taakfuncties. Zie de [&#x200B; documentatie van het Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) voor meer informatie.
 
 Data Architects en Data Engineers zijn krachtige gebruikers van Adobe Experience Platform en u hebt veel machtigingen nodig om deze zelfstudie en later in uw dagelijkse werk te kunnen voltooien. De Architecten van gegevens zijn waarschijnlijk betrokken bij het beleid van *andere gebruikers van het Platform* bij hun bedrijf zoals marketers, analisten, en gegevenswetenschappers. Aangezien u deze les voltooit, denk over hoe u deze eigenschappen zou kunnen gebruiken om andere gebruikers bij uw bedrijf te beheren.
 
@@ -29,7 +29,7 @@ Data Architects en Data Engineers zijn krachtige gebruikers van Adobe Experience
 
 >[!IMPORTANT]
 >
->Een beheerder van het Systeem van de producten van Adobe Experience Cloud moet enkele stappen in deze les voltooien, die in de sectiekoppen wordt geroepen. Als u geen Beheerder van het Systeem bent, te bereiken gelieve bij uw bedrijf en hen te vragen deze taken te voltooien. Er is ook een taak zij tijdens de [ Opstelling Developer Console en Postman ](set-up-developer-console-and-postman.md) les moeten voltooien.
+>Een beheerder van het Systeem van de producten van Adobe Experience Cloud moet enkele stappen in deze les voltooien, die in de sectiekoppen wordt geroepen. Als u geen Beheerder van het Systeem bent, te bereiken gelieve bij uw bedrijf en hen te vragen deze taken te voltooien. Er is ook een taak zij tijdens de [&#x200B; Opstelling Developer Console en Postman &#x200B;](set-up-developer-console-and-postman.md) les moeten voltooien.
 
 ## Over de Admin Console
 
@@ -53,21 +53,21 @@ Hierbij voegt u of een systeembeheerder of productbeheerder u toe als gebruiker 
 
 De tutorial participant toevoegen als a [!UICONTROL User] en [!UICONTROL Developer] :
 
-1. Logboek in [ Adobe Admin Console ](https://adminconsole.adobe.com)
+1. Logboek in [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com)
 1. Selecteer **[!UICONTROL Products]** op de bovenste navigatie
 1. Selecteer **Adobe Experience Platform**
-   ![ Uitgezochte Adobe Experience Platform ](assets/adminconsole-experiencePlatform.png)
+   ![&#x200B; Uitgezochte Adobe Experience Platform &#x200B;](assets/adminconsole-experiencePlatform.png)
 1. U hebt mogelijk al meerdere profielen in uw Experience Platform-instantie. Selecteer het profiel `AEP-Default-All-Users`
-   ![ Uitgezocht voeg Nieuw Profiel toe ](assets/adminconsole-newProfile.png)
+   ![&#x200B; Uitgezocht voeg Nieuw Profiel toe &#x200B;](assets/adminconsole-newProfile.png)
 
 1. Ga naar de tab **[!UICONTROL Users]**
 1. Selecteer de knop **[!UICONTROL Add User]**
-   ![ Uitgezochte Add Gebruiker ](assets/adminconsole-addUser.png)
+   ![&#x200B; Uitgezochte Add Gebruiker &#x200B;](assets/adminconsole-addUser.png)
 1. Voltooi de workflow om de zelfstudie-deelnemer als gebruiker toe te voegen aan het productprofiel
 
 1. Ga naar de tab **[!UICONTROL Developers]**
 1. Selecteer de knop **[!UICONTROL Add Developer]**
-   ![ Uitgezochte Add Gebruiker ](assets/adminconsole-addDeveloper.png)
+   ![&#x200B; Uitgezochte Add Gebruiker &#x200B;](assets/adminconsole-addDeveloper.png)
 1. Voltooi de workflow om de tutorial deelnemer als ontwikkelaar toe te voegen aan het productprofiel
 
 
@@ -77,14 +77,14 @@ De korrelige toestemmingen aan Experience Platform worden beheerd in het scherm 
 
 De toestemmingen worden beheerd in Rollen. Een rol maken voor de zelfstudie:
 
-1. Logboek in [ Adobe Experience Platform ](https://platform.adobe.com)
+1. Logboek in [&#x200B; Adobe Experience Platform &#x200B;](https://platform.adobe.com)
 1. Selecteer **[!UICONTROL Permissions]** in de linkernavigatie die u naar het [!UICONTROL Roles] -scherm brengt.
 1. Selecteren **[!UICONTROL Create role]**
 
-   ![ creeer een rol in Experience Platform ](assets/permissions-addRole.png)
+   ![&#x200B; creeer een rol in Experience Platform &#x200B;](assets/permissions-addRole.png)
 1. Geef een naam op voor de rol `Luma Tutorial Platform` (voeg de naam van de tutorial-deelnemer toe aan het einde als meerdere personen van uw bedrijf deze zelfstudie volgen) en selecteer **[!UICONTROL Confirm]**
 
-   ![ creeer een rol in Experience Platform ](assets/permissions-nameRole.png)
+   ![&#x200B; creeer een rol in Experience Platform &#x200B;](assets/permissions-nameRole.png)
 
 
 1. Voeg met **[!UICONTROL +]** en **[!UICONTROL Add all]** alle machtigingsitems voor de volgende bronnen toe:
@@ -100,14 +100,14 @@ De toestemmingen worden beheerd in Rollen. Een rol maken voor de zelfstudie:
    1. Dashboards
    1. Waarschuwingen
 
-      ![ voeg de punten van de Toestemming ](assets/permissions-addPermissionItems.png) toe
+      ![&#x200B; voeg de punten van de Toestemming &#x200B;](assets/permissions-addPermissionItems.png) toe
 
 1. Onder de Ingestie van Gegevens, voeg de Manage Bronnen en de punten van de de toestemmingstoestemming van de Mening toe.
 
 1. Nadat u alle machtigingsitems hebt toegevoegd, moet u de knop Opslaan selecteren
-   ![ sparen toestemmingspunten ](assets/permissions-savePermissions.png)
+   ![&#x200B; sparen toestemmingspunten &#x200B;](assets/permissions-savePermissions.png)
 
-U zult een paar kleine updates aan deze rol na [ maken een zandbak ](create-a-sandbox.md) en [ Opstelling Developer Console en Postman ](set-up-developer-console-and-postman.md) lessen creëren.
+U zult een paar kleine updates aan deze rol na [&#x200B; maken een zandbak &#x200B;](create-a-sandbox.md) en [&#x200B; Opstelling Developer Console en Postman &#x200B;](set-up-developer-console-and-postman.md) lessen creëren.
 
 ## Een productprofiel voor gegevensverzameling maken (hiervoor is een systeembeheerder of productbeheerder vereist)
 
@@ -126,7 +126,7 @@ Het productprofiel maken:
 1. De tutorial-deelnemer toevoegen als beheerder van dit profiel
 
 Nadat u deze stappen hebt uitgevoerd, ziet u dat het `Luma Tutorial Data Collection` -profiel is ingesteld met één beheerder.
-![ gecreeerd profiel van de Inzameling van Gegevens ](assets/adminconsole-dc-profileCreated.png)
+![&#x200B; gecreeerd profiel van de Inzameling van Gegevens &#x200B;](assets/adminconsole-dc-profileCreated.png)
 
 ## Het productprofiel voor gegevensverzameling configureren
 
@@ -136,25 +136,25 @@ Nu u een beheerder bent van het productprofiel van `Luma Tutorial Data Collectio
 
 Nu gaat u de afzonderlijke machtigingsitems toevoegen aan het profiel:
 
-1. In [ Adobe Admin Console ](https://adminconsole.adobe.com), ga **[!UICONTROL Products]** > **[!UICONTROL Data Collection]**
+1. In [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com), ga **[!UICONTROL Products]** > **[!UICONTROL Data Collection]**
 1. Het profiel `Luma Tutorial Data Collection` openen
 1. Ga naar de tab **[!UICONTROL Permissions]**
 1. Openen **[!UICONTROL Platforms]**
 1. Zorg ervoor dat alle beschikbare platforms zijn geselecteerd (u ziet mogelijk verschillende opties op basis van uw licentie)
 1. **[!UICONTROL Save]** alle wijzigingen
-   ![ voegt platforms ](assets/adminconsole-launch-addPlatforms.png) toe
+   ![&#x200B; voegt platforms &#x200B;](assets/adminconsole-launch-addPlatforms.png) toe
 1. Openen **[!UICONTROL Properties]**
 1. Zorg ervoor dat de schakeloptie **[!UICONTROL Auto-Include]** uit is, zodat u geen toegang hebt tot eigenschappen (we voegen deze later toe)
 1. **[!UICONTROL Save]** alle wijzigingen
-   ![ verwijder eigenschappen ](assets/adminconsole-launch-removeProperties.png)
+   ![&#x200B; verwijder eigenschappen &#x200B;](assets/adminconsole-launch-removeProperties.png)
 1. Openen **[!UICONTROL Property Rights]**
 1. Selecteer **[!UICONTROL Add all]** om alle eigenschapsmachtigingen toe te voegen
 1. **[!UICONTROL Save]**
-   ![ verwijder eigenschappen ](assets/adminconsole-launch-addPropertyRights.png)
+   ![&#x200B; verwijder eigenschappen &#x200B;](assets/adminconsole-launch-addPropertyRights.png)
 1. Openen **[!UICONTROL Company Rights]**
 1. Toevoegen **[!UICONTROL Manage Properties]**
 1. Selecteren **[!UICONTROL Save]**
-   ![ verwijder eigenschappen ](assets/adminconsole-launch-companyRights.png)
+   ![&#x200B; verwijder eigenschappen &#x200B;](assets/adminconsole-launch-companyRights.png)
 
 
 ### uzelf toevoegen als gebruiker
@@ -163,9 +163,9 @@ Voeg nu uzelf toe als gebruiker aan het profiel voor gegevensverzameling:
 
 1. Ga naar de tab **[!UICONTROL Users]**
 1. Selecteer de knop **[!UICONTROL Add User]**
-   ![ Uitgezochte Add Gebruiker ](assets/adminconsole-launch-addUser.png)
+   ![&#x200B; Uitgezochte Add Gebruiker &#x200B;](assets/adminconsole-launch-addUser.png)
 1. Voltooi de workflow om uzelf als gebruiker toe te voegen aan het productprofiel
 
 U te hoeven niet om zich als Ontwikkelaar voor de Inzameling van Gegevens toe te voegen.
 
-Nu hebt u bijna alle vereiste machtigingen om de zelfstudie te voltooien! Er zullen enkel twee meer tweaks zijn die u binnen [!DNL Adobe Admin Console] zult maken, met inbegrip van één nadat u [ een zandbak ](create-a-sandbox.md) creeert!
+Nu hebt u bijna alle vereiste machtigingen om de zelfstudie te voltooien! Er zullen enkel twee meer tweaks zijn die u binnen [!DNL Adobe Admin Console] zult maken, met inbegrip van één nadat u [&#x200B; een zandbak &#x200B;](create-a-sandbox.md) creeert!

@@ -18,6 +18,6 @@ Gefeliciteerd en bedankt dat u uw tijd hebt geïnvesteerd in het leren over Adob
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Campagnes ](./ajocampaigns.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Campagnes &#x200B;](./ajocampaigns.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

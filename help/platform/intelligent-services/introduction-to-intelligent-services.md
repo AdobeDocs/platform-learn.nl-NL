@@ -17,7 +17,7 @@ ht-degree: 35%
 
 # Inleiding tot intelligente diensten
 
-Een introductie op hoog niveau van de Intelligente Diensten, die marketinganalisten en artsen in staat stelt om de kracht van Kunstmatige Intelligentie en het Leren van de Machine in de ervaring van de klant te gebruiken gevallen zonder deskundigheid op het gebied van gegevenswetenschap. Voor meer informatie, gelieve de [ Intelligente documentatie van de Diensten ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=nl-NL) te bezoeken.
+Een introductie op hoog niveau van de Intelligente Diensten, die marketinganalisten en artsen in staat stelt om de kracht van Kunstmatige Intelligentie en het Leren van de Machine in de ervaring van de klant te gebruiken gevallen zonder deskundigheid op het gebied van gegevenswetenschap. Voor meer informatie, gelieve de [&#x200B; Intelligente documentatie van de Diensten &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

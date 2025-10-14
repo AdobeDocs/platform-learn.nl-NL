@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 3.7.1.1 Terminologie
 
-Om een beter begrip over Ervaring te krijgen die, adviseren wij hoogst u om het [ overzicht ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) te lezen over hoe de Dienst van de Toepassing van Offer Decisioning met Adobe Experience Platform werkt.
+Om een beter begrip over Ervaring te krijgen die, adviseren wij hoogst u om het [&#x200B; overzicht &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) te lezen over hoe de Dienst van de Toepassing van Offer Decisioning met Adobe Experience Platform werkt.
 
 Als u met Offer Decisioning werkt, moet u de volgende concepten begrijpen:
 
@@ -36,20 +36,20 @@ Als u met Offer Decisioning werkt, moet u de volgende concepten begrijpen:
 
 ## 3.7.1.2 Ervaar zelf beslissingen
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ExD ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![&#x200B; ExD &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ExD ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![&#x200B; ExD &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 In de volgende oefening, zult u uw eigen aanbiedingen en besluit vormen.
 
 ## Volgende stappen
 
-Ga naar [ 3.7.2 vorm uw Aanbiedingen en Besluit ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 3.7.2 vorm uw Aanbiedingen en Besluit &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Beslissing van de Ervaring ](ajo-decisioning.md){target="_blank"}
+Ga terug naar [&#x200B; Beslissing van de Ervaring &#x200B;](ajo-decisioning.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

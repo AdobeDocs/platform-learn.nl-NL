@@ -24,13 +24,13 @@ In deze module gaat u diep in de mogelijkheden van het profiel en de identiteit 
 
 ## Vereisten
 
-- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
+- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
 - **Download deze activa**:
    - [Postman-verzamelingen](./../../../../assets/postman/postman_profile.zip)
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -58,7 +58,7 @@ In deze oefening, zult u een medewerker van het vraagcentrum nadoen die een vraa
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

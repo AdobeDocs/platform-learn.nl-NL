@@ -35,7 +35,7 @@ Aan het einde van dit artikel hebt u een duidelijk inzicht in deze grondbegrippe
 
 Wat betekent een woord of uitdrukking, en hoe kan ik er eenvoudig over denken? In een API betekent het &quot;toepassings&quot;deel een softwaretoepassing, of programma. In het gedeelte &quot;Programmeerinterface&quot; wordt aangegeven hoe en waar een toepassing voor bepaalde doeleinden met een andere toepassing communiceert. Wanneer u in ons voorbeeld van de webpagina op een koppeling klikt, verzendt de browser een aanvraag naar een server voor de webpagina.
 
-![ Beeld van hyperlink met bestemmingsURL ](../assets/api101-link-destination.png)
+![&#x200B; Beeld van hyperlink met bestemmingsURL &#x200B;](../assets/api101-link-destination.png)
 
 In dit schermafbeelding zweeft de muiscursor boven de Adobe Experience Platform-koppeling. Onderaan ziet u de statusbalk van de webbrowser met het &quot;adres&quot; van de pagina die de browser krijgt. Met andere woorden, als je op de Adobe Experience Platform link klikt, vertelt de browser dat ze die pagina voor mij krijgt zodat ik hem hier op mijn scherm kan zien.
 
@@ -43,13 +43,13 @@ Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagi
 
 ### Delen van een URL
 
-![ Browser adresbar met URL ](../assets/api101-address-bar.png)
+![&#x200B; Browser adresbar met URL &#x200B;](../assets/api101-address-bar.png)
 
 De meeste browsers hebben een &quot;adresbar&quot;die sommige of al &quot;adres&quot;voor een Web-pagina toont. Wanneer browser &quot;krijgt&quot;de pagina voor de verbinding wij klikte, toont het het &quot;adres&quot;van de pagina in deze adresbar. Wat is het &quot;adres&quot; van een webpagina?
 
 Dat `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
 
-![ Delen van een URL ](../assets/api101-url-parts.jpg)
+![&#x200B; Delen van een URL &#x200B;](../assets/api101-url-parts.jpg)
 
 Dit adres, de URL, bevat specifieke onderdelen die erg relevant zijn voor API&#39;s voor het web en de browser.
 
@@ -85,7 +85,7 @@ Het is gebruikelijk dat een webpagina inhoud of bronnen van andere hosts of bron
 
 ## Veelvoorkomende toepassingen voor web-API&#39;s
 
-Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en andere beschikken over een groot aantal API&#39;s die programmeurs kunnen gebruiken voor hun toepassingen. En natuurlijk, heeft de Adobe ook [ een grote verscheidenheid van APIs ](https://developer.adobe.com/apis) die de programmeurs gebruiken zodat kan hun software met de producten en de diensten van de Adobe in wisselwerking staan. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
+Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en andere beschikken over een groot aantal API&#39;s die programmeurs kunnen gebruiken voor hun toepassingen. En natuurlijk, heeft de Adobe ook [&#x200B; een grote verscheidenheid van APIs &#x200B;](https://developer.adobe.com/apis) die de programmeurs gebruiken zodat kan hun software met de producten en de diensten van de Adobe in wisselwerking staan. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
 
 ## Voorbeeld-API&#39;s
 

@@ -37,17 +37,17 @@ Nu u uw bibliotheek in de ontwikkelomgeving hebt gemaakt en gevalideerd, is het 
 
 1. Open het vervolgkeuzemenu naast uw bibliotheek en selecteer **[!UICONTROL Submit for Approval]**
 
-   ![ voorleggen voor Goedkeuring ](images/publishing-submitForApproval.png)
+   ![&#x200B; voorleggen voor Goedkeuring &#x200B;](images/publishing-submitForApproval.png)
 
 1. Klik op de knop **[!UICONTROL Submit]** in het dialoogvenster:
 
-   ![ klik voorleggen in Modal ](images/publishing-submit.png)
+   ![&#x200B; klik voorleggen in Modal &#x200B;](images/publishing-submit.png)
 
 1. De bibliotheek wordt nu in een niet-gebouwde staat in de kolom [!UICONTROL Submitted] weergegeven:
 
 1. Open het vervolgkeuzemenu en selecteer **[!UICONTROL Build for Staging]** :
 
-   ![ Bouwstijl voor het Opvoeren ](images/publishing-buildForStaging.png)
+   ![&#x200B; Bouwstijl voor het Opvoeren &#x200B;](images/publishing-buildForStaging.png)
 
 1. Zodra het pictogram met de groene stip wordt weergegeven, kunt u een voorvertoning van de bibliotheek weergeven in de testomgeving.
 
@@ -57,21 +57,21 @@ In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw
 
 1. Open de pagina [!UICONTROL Environments] in de eigenschap Tag
 
-1. In de [!UICONTROL Staging] rij, klik het Install pictogram ![ installeren pictogram ](images/launch-installIcon.png) om modaal te openen
+1. In de [!UICONTROL Staging] rij, klik het Install pictogram ![&#x200B; installeren pictogram &#x200B;](images/launch-installIcon.png) om modaal te openen
 
-   ![ ga naar de pagina van Milieu&#39;s en klik om modaal ](images/publishing-getStagingCode.png) te openen
+   ![&#x200B; ga naar de pagina van Milieu&#39;s en klik om modaal &#x200B;](images/publishing-getStagingCode.png) te openen
 
-1. Klik het pictogram van het Exemplaar ![ pictogram van het Exemplaar ](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren
+1. Klik het pictogram van het Exemplaar ![&#x200B; pictogram van het Exemplaar &#x200B;](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren
 
 1. Klik op **[!UICONTROL Close]** om het modale
 
-   ![ installeer pictogram ](images/publishing-copyStagingCode.png)
+   ![&#x200B; installeer pictogram &#x200B;](images/publishing-copyStagingCode.png)
 
-1. Open de [ plaats van de Luminagedemo ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
+1. Open de [&#x200B; plaats van de Luminagedemo &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
 
-1. Open de [ Debugger van het Experience Platform uitbreiding ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door het ![ Debugger pictogram ](images/icon-debugger.png) pictogram te klikken
+1. Open de [&#x200B; Debugger van het Experience Platform uitbreiding &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door het ![&#x200B; Debugger pictogram &#x200B;](images/icon-debugger.png) pictogram te klikken
 
-   ![ klik het Debugger pictogram ](images/switchEnvironments-openDebugger.png)
+   ![&#x200B; klik het Debugger pictogram &#x200B;](images/switchEnvironments-openDebugger.png)
 
 1. Ga naar het tabblad Gereedschappen
 
@@ -80,11 +80,11 @@ In een real-life scenario, zou de volgende stap in het proces typisch zijn om uw
 
 1. Klik op het schijfpictogram om op te slaan
 
-   ![ markeringsmilieu dat in Debugger ](images/switchEnvironments-debugger-save.png) wordt getoond
+   ![&#x200B; markeringsmilieu dat in Debugger &#x200B;](images/switchEnvironments-debugger-save.png) wordt getoond
 
 1. Laad en controleer het Summiere lusje van Debugger opnieuw. Onder de sectie Starten ziet u nu dat de eigenschap Staging is geïmplementeerd en de naam van uw eigenschap (dat wil zeggen &#39;tagzelfstudie&#39; of een andere naam voor uw eigenschap) wordt weergegeven!
 
-   ![ markeringsmilieu dat in Debugger ](images/publishing-debugger-staging.png) wordt getoond
+   ![&#x200B; markeringsmilieu dat in Debugger &#x200B;](images/publishing-debugger-staging.png) wordt getoond
 
 In het echte leven, zodra uw team QA door de veranderingen in het het Opvoeren milieu te herzien heeft afgemeld, is het tijd om aan productie te publiceren.
 
@@ -94,24 +94,24 @@ In het echte leven, zodra uw team QA door de veranderingen in het het Opvoeren m
 
 1. Klik in het vervolgkeuzemenu op **[!UICONTROL Approve for Publishing]** :
 
-   ![ goedkeuren voor het Publiceren ](images/publishing-approveForPublishing.png)
+   ![&#x200B; goedkeuren voor het Publiceren &#x200B;](images/publishing-approveForPublishing.png)
 
 1. Klik op de knop **[!UICONTROL Approve]** in het dialoogvenster:
 
-   ![ klik goedkeuren ](images/publishing-approve.png)
+   ![&#x200B; klik goedkeuren &#x200B;](images/publishing-approve.png)
 
 1. De bibliotheek wordt nu in de kolom [!UICONTROL Approved] in de ongebouwde staat (gele punt) weergegeven:
 
 1. Open het vervolgkeuzemenu en selecteer **[!UICONTROL Build and Publish to Production]** :
 
-   ![ klik Bouwstijl &amp; Publish aan Productie ](images/publishing-buildAndPublishToProduction.png)
+   ![&#x200B; klik Bouwstijl &amp; Publish aan Productie &#x200B;](images/publishing-buildAndPublishToProduction.png)
 
 1. Klik op **[!UICONTROL Publish]** in het dialoogvenster:
 
-   ![ klik Publish ](images/publishing-publish.png)
+   ![&#x200B; klik Publish &#x200B;](images/publishing-publish.png)
 
 1. De bibliotheek wordt nu in de kolom [!UICONTROL Published] weergegeven:
 
-   ![ Gepubliceerd ](images/publishing-published.png)
+   ![&#x200B; Gepubliceerd &#x200B;](images/publishing-published.png)
 
 Dat is het! U hebt de zelfstudie voltooid en uw eerste eigenschap in tags gepubliceerd!

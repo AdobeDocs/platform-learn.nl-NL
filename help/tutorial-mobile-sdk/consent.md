@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u toestemming implementeert in een mobiele app.
 
-Met de mobiele extensie Adobe Experience Platform Consent kunt u een verzameling voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Leer meer over de [ uitbreiding van de Toestemming ](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in de documentatie.
+Met de mobiele extensie Adobe Experience Platform Consent kunt u een verzameling voorkeuren voor toestemming vanuit uw mobiele app inschakelen wanneer u de Adobe Experience Platform Mobile SDK en de Edge Network-extensie gebruikt. Leer meer over de [&#x200B; uitbreiding van de Toestemming &#x200B;](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in de documentatie.
 
 ## Vereisten
 
@@ -39,7 +39,7 @@ Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebrui
 
 >[!TAB  iOS ]
 
-1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U combineert de Mobiele toestemming van SDK met de vereiste toestemming voor het volgen gebruikend het kader van de Transparantie van de Toepassing van Apple [ het Traceren van het Kader van de Transparantie ](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker toestemming geeft om gebeurtenissen te volgen, deze toestemming geeft om gebeurtenissen te verzamelen.
+1. U wilt de gebruiker slechts eenmaal om toestemming vragen. U combineert de Mobiele toestemming van SDK met de vereiste toestemming voor het volgen gebruikend het kader van de Transparantie van de Toepassing van Apple [&#x200B; het Traceren van het Kader van de Transparantie &#x200B;](https://developer.apple.com/documentation/apptrackingtransparency). In deze app gaat u ervan uit dat wanneer de gebruiker toestemming geeft om gebeurtenissen te volgen, deze toestemming geeft om gebeurtenissen te verzamelen.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in de Xcode-projectnavigator.
 
@@ -53,7 +53,7 @@ Om met het verzamelen van gegevens te beginnen, moet u toestemming van de gebrui
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in de projectnavigator van Xcode. De projectnavigator van Xode is de mening die na het installeren van of het opnieuw installeren van de toepassing en het beginnen van app voor de eerste keer wordt getoond. De gebruiker wordt ertoe aangezet om het volgen per Apple [ app het Volgen van het kader van de Transparantie ](https://developer.apple.com/documentation/apptrackingtransparency) toe te staan. Als de gebruiker autoriseert, werkt u ook de toestemming bij.
+1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in de projectnavigator van Xcode. De projectnavigator van Xode is de mening die na het installeren van of het opnieuw installeren van de toepassing en het beginnen van app voor de eerste keer wordt getoond. De gebruiker wordt ertoe aangezet om het volgen per Apple [&#x200B; app het Volgen van het kader van de Transparantie &#x200B;](https://developer.apple.com/documentation/apptrackingtransparency) toe te staan. Als de gebruiker autoriseert, werkt u ook de toestemming bij.
 
    Voeg de volgende code toe aan de `ATTrackingManager.requestTrackingAuthorization { status in` closure.
 
@@ -178,15 +178,15 @@ In het bovenstaande voorbeeld, registreert u eenvoudig de toestemmingsstatus aan
 ## Valideren met Assurance
 
 1. Verwijder de toepassing van het apparaat of de simulator om het bijhouden van gegevens en de toestemming opnieuw in te stellen en te initialiseren.
-1. Om uw simulator of apparaat met Assurance te verbinden, herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session).
+1. Om uw simulator of apparaat met Assurance te verbinden, herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session).
 1. Wanneer u de toepassing verplaatst van het **[!UICONTROL Home]** -scherm naar het **[!UICONTROL Products]** -scherm en terug naar het **[!UICONTROL Home]** -scherm, wordt een **[!UICONTROL Get Consents Response]** -gebeurtenis weergegeven in de gebruikersinterface van Assurance.
-   ![ bevestigt toestemming ](assets/consent-update.png){zoomable="yes"}
+   ![&#x200B; bevestigt toestemming &#x200B;](assets/consent-update.png){zoomable="yes"}
 
 
 >[!SUCCESS]
 >
 >U hebt uw toepassing nu ingeschakeld om de gebruiker bij de eerste start na de installatie (of herinstallatie) te vragen toestemming te geven met de Adobe Experience Platform Mobile SDK.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 Volgende: **[verzamel levenscyclusgegevens](lifecycle-data.md)**

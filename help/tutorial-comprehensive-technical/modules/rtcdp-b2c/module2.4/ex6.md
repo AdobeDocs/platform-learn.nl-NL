@@ -42,71 +42,71 @@ Open de Code van Visual Studio en klik het **Azure** pictogram.
 
 Volgende uitgezochte **Teken binnen aan Azure**:
 
-![ 3-01-vsc-open.png ](./images/301vscopen.png)
+![&#x200B; 3-01-vsc-open.png &#x200B;](./images/301vscopen.png)
 
 U wordt omgeleid naar uw browser om u aan te melden. Vergeet niet de Azure-account te selecteren die u hebt gebruikt om u te registreren.
 
 Wanneer u het volgende scherm in uw browser ziet, wordt u het programma geopend met Visual Code Studio:
 
-![ 3-03-vsc-login-ok.png ](./images/303vscloginok.png)
+![&#x200B; 3-03-vsc-login-ok.png &#x200B;](./images/303vscloginok.png)
 
 Terugkeer aan Visual Code Studio (u zult de naam van uw Azure abonnement zien, bijvoorbeeld **Azure abonnement 1**):
 
-![ 3-04-vsc-het programma geopend-in.png ](./images/304vscloggedin.png)
+![&#x200B; 3-04-vsc-het programma geopend-in.png &#x200B;](./images/304vscloggedin.png)
 
 ## Een Azure-project maken
 
 Klik **creëren het Project van de Functie...**:
 
-![ 3-05-vsc-create-project.png ](./images/vsc2.png)
+![&#x200B; 3-05-vsc-create-project.png &#x200B;](./images/vsc2.png)
 
 Selecteer of creeer een lokale omslag van uw keus om het project te bewaren en **Uitgezocht** te klikken:
 
-![ 3-06-vsc-select-folder.png ](./images/vsc3.png)
+![&#x200B; 3-06-vsc-select-folder.png &#x200B;](./images/vsc3.png)
 
 U gaat nu de wizard voor het maken van projecten openen. Klik **Javascript** als taal voor uw project:
 
-![ 3-07-vsc-select-language.png ](./images/vsc4.png)
+![&#x200B; 3-07-vsc-select-language.png &#x200B;](./images/vsc4.png)
 
 Dan selecteer **Model v4**.
 
-![ 3-07-vsc-select-language.png ](./images/vsc4a.png)
+![&#x200B; 3-07-vsc-select-language.png &#x200B;](./images/vsc4a.png)
 
 Selecteer {de trekker van de Hub van de Gebeurtenis 0} Azure **als eerste de functiesjabloon van uw project:**
 
-![ 3-08-vsc-function-template.png ](./images/vsc5.png)
+![&#x200B; 3-08-vsc-function-template.png &#x200B;](./images/vsc5.png)
 
 Voer een naam voor de functie in, gebruik de volgende notatie `--aepUserLdap---aep-event-hub-trigger` en druk op Enter:
 
-![ 3-09-vsc-function-name.png ](./images/vsc6.png)
+![&#x200B; 3-09-vsc-function-name.png &#x200B;](./images/vsc6.png)
 
 Selecteer **creeer nieuwe lokale app het plaatsen**:
 
-![ 3-10-vsc-function-local-app-setting.png ](./images/vsc7.png)
+![&#x200B; 3-10-vsc-function-local-app-setting.png &#x200B;](./images/vsc7.png)
 
 Klik om de naamruimte van de Hub van de Gebeurtenis te selecteren die u vroeger creeerde, die `--aepUserLdap---aep-enablement` wordt genoemd.
 
-![ 3-11-vsc-function-select-namespace.png ](./images/vsc8.png)
+![&#x200B; 3-11-vsc-function-select-namespace.png &#x200B;](./images/vsc8.png)
 
 Klik vervolgens om de gebeurtenishub te selecteren die u eerder hebt gemaakt en die de naam `--aepUserLdap---aep-enablement-event-hub` heeft.
 
-![ 3-12-vsc-function-select-eventhub.png ](./images/vsc9.png)
+![&#x200B; 3-12-vsc-function-select-eventhub.png &#x200B;](./images/vsc9.png)
 
 Klik om **RootManageSharedAccessKey** als uw beleid van de Hub van de Gebeurtenis te selecteren:
 
-![ 3-13-vsc-function-select-eventhub-policy.png ](./images/vsc10.png)
+![&#x200B; 3-13-vsc-function-select-eventhub-policy.png &#x200B;](./images/vsc10.png)
 
 Selecteer **toevoegen aan werkruimte** op hoe te om uw project te openen:
 
-![ 3-15-vsc-project-toe:voegen-aan-werkspace.png ](./images/vsc12.png)
+![&#x200B; 3-15-vsc-project-toe:voegen-aan-werkspace.png &#x200B;](./images/vsc12.png)
 
 Dan krijg je een bericht als deze. In dat geval, klik ja **, vertrouw ik de auteurs**.
 
-![ 3-15-vsc-project-toe:voegen-aan-werkspace.png ](./images/vsc12a.png)
+![&#x200B; 3-15-vsc-project-toe:voegen-aan-werkspace.png &#x200B;](./images/vsc12a.png)
 
 Nadat u een project hebt gemaakt, opent u het bestand `--aepUserLdap---aep-event-hub-trigger.js` in de editor:
 
-![ 3-16-vsc-open-index-js.png ](./images/vsc13.png)
+![&#x200B; 3-16-vsc-open-index-js.png &#x200B;](./images/vsc13.png)
 
 De lading die door Adobe Experience Platform naar uw Hub van de Gebeurtenis wordt verzonden zal als dit kijken:
 
@@ -174,33 +174,33 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 Het resultaat moet er als volgt uitzien:
 
-![ 3-16b-vsc-geef-index-js.png uit ](./images/vsc1.png)
+![&#x200B; 3-16b-vsc-geef-index-js.png uit &#x200B;](./images/vsc1.png)
 
 ## Azure Project uitvoeren
 
 Nu is het tijd om uw project uit te voeren. In dit stadium zullen wij niet het project aan Azure opstellen. Wij zullen het plaatselijk in zuivert wijze in werking stellen. Selecteer het pictogram Uitvoeren en klik op de groene pijl.
 
-![ 3-17-vsc-looppas-project.png ](./images/vsc14.png)
+![&#x200B; 3-17-vsc-looppas-project.png &#x200B;](./images/vsc14.png)
 
 De eerste keer u in werking stelt u zuivert wijze, zult u een Azure opslagrekening moeten vastmaken, **Uitgezochte opslagrekening** klikken.
 
-![ 3-17-vsc-looppas-project.png ](./images/vsc14a.png)
+![&#x200B; 3-17-vsc-looppas-project.png &#x200B;](./images/vsc14a.png)
 
 en selecteer vervolgens de opslagaccount die u eerder hebt gemaakt, met de naam `--aepUserLdap--aepstorage` .
 
-![ 3-17-vsc-looppas-project.png ](./images/vsc14b.png)
+![&#x200B; 3-17-vsc-looppas-project.png &#x200B;](./images/vsc14b.png)
 
 Uw project is nu in gebruik en maakt een lijst van voor gebeurtenissen in de Hub van de Gebeurtenis. In de volgende oefening zult u gedrag op de CitiSignal demo website aantonen die u voor publiek zal kwalificeren. Dientengevolge zult u een nuttige lading van de publiekskwalificatie in de terminal van uw de trekkerfunctie van de Hub van de Gebeurtenis ontvangen.
 
-![ 3-24-vsc-application-stop.png ](./images/vsc18.png)
+![&#x200B; 3-24-vsc-application-stop.png &#x200B;](./images/vsc18.png)
 
 ## Azure-project stoppen
 
 Om uw project tegen te houden, ga naar de KORTE **KNOPSTART** in VSC, klik op de pijl op uw lopend project en klik dan **Einde**.
 
-![ 3-24-vsc-application-stop.png ](./images/vsc17.png)
+![&#x200B; 3-24-vsc-application-stop.png &#x200B;](./images/vsc17.png)
 
-Volgende Stap: [ 2.4.7 scenario van begin tot eind ](./ex7.md)
+Volgende Stap: [&#x200B; 2.4.7 scenario van begin tot eind &#x200B;](./ex7.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

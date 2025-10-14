@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Dynamisch publiek maken
 
-Dynamisch publiek is een geavanceerde segmentatiefunctie in Adobe Experience Platform die de schaalbaarheidsproblemen oplost waarmee marketers traditioneel worden geconfronteerd bij het opbouwen van publiek voor marketingcampagnes. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
+Dynamisch publiek is een geavanceerde segmentatiefunctie in Adobe Experience Platform die de schaalbaarheidsproblemen oplost waarmee marketers traditioneel worden geconfronteerd bij het opbouwen van publiek voor marketingcampagnes. Voor meer informatie, gelieve te zien de [&#x200B; documentatie van de Bouwer van het Segment &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!NOTE]
 >

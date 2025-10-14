@@ -26,13 +26,13 @@ Laten we de voordelen van het gebruik van Adobe Journey Optimizer en Adobe Exper
 
 ## Bekijk dit
 
-- Tech Blog: [ Adobe Journey Optimizer in een Wereld Omnichannel ](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Tech Blog: [ die de Macht van de Nieuwe Dienst van Adobe Journey Optimizer van Adobe aantoont om Persoonlijke Ervaringen Omnichannel in Echt - tijd ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
-- Zelfstudies: [ Zelfstudies voor Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=html?lang=nl)
-- De Documentatie van Experience Platform: [ Hulp van Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=nl-NL)
+- Tech Blog: [&#x200B; Adobe Journey Optimizer in een Wereld Omnichannel &#x200B;](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
+- Tech Blog: [&#x200B; die de Macht van de Nieuwe Dienst van Adobe Journey Optimizer van Adobe aantoont om Persoonlijke Ervaringen Omnichannel in Echt - tijd &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
+- Zelfstudies: [&#x200B; Zelfstudies voor Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=html?lang=nl)
+- De Documentatie van Experience Platform: [&#x200B; Hulp van Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=nl-NL)
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Externe gegevensbronnen en douaneacties ](journey-orchestration-external-weather-api-sms.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Externe gegevensbronnen en douaneacties &#x200B;](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

@@ -29,7 +29,7 @@ Alvorens u met de oefeningen begint, bekijk deze korte video om meer over de Die
 
 ## Vereiste machtigingen
 
-In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [&#x200B; vorm toestemmingen &#x200B;](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -51,7 +51,7 @@ Laten we beginnen met enkele eenvoudige vragen:
 
 1. Hier wordt de lijst met beschikbare tabellen weergegeven
 
-   ![ TONEN de vraag van de LIJST ](assets/queries-showTables.png)
+   ![&#x200B; TONEN de vraag van de LIJST &#x200B;](assets/queries-showTables.png)
 
 
 1. Probeer nu deze query, waarbij u `_techmarketingdemos` vervangt door uw eigen huurdersnaamruimte, die, als u eraan herinnert, zichtbaar is in uw schema&#39;s.
@@ -62,14 +62,14 @@ Laten we beginnen met enkele eenvoudige vragen:
    WHERE loyalty.tier ='gold'
    ```
 
-   ![ UITGEZOCHTE gegevens van de loyaliteitsdataset ](assets/queries-loyaltySelect.png)
+   ![&#x200B; UITGEZOCHTE gegevens van de loyaliteitsdataset &#x200B;](assets/queries-loyaltySelect.png)
 
 1. Als er een fout optreedt, worden gedetailleerde berichten weergegeven op het tabblad **[!UICONTROL Console]** , zoals hieronder wordt weergegeven
-   ![ Fout in de vraag ](assets/queries-error.png)
+   ![&#x200B; Fout in de vraag &#x200B;](assets/queries-error.png)
 
 1. Met uw geslaagde query, **[!UICONTROL Name]** it `Luma Gold Level Customers`
 1. Selecteer de knop **[!UICONTROL Save]**
-   ![ het Opslaan van de vraag ](assets/queries-loyaltySelect-save.png)
+   ![&#x200B; het Opslaan van de vraag &#x200B;](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Aanvullende bronnen
 
-* [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
-* [ de Verwijzing van de Dienst API van de Vraag ](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
+* [&#x200B; de Verwijzing van de Dienst API van de Vraag &#x200B;](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-En nu voor de definitieve hands-on les, [ creërend segmenten ](build-segments.md)!
+En nu voor de definitieve hands-on les, [&#x200B; creërend segmenten &#x200B;](build-segments.md)!

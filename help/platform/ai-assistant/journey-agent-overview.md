@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Journey Agent-overzicht
 
-Journey Agent gebruikt AI om B2B/B2C-reizen te maken, te analyseren en te optimaliseren via een conversationele interface. Voor meer informatie, zie de [ documentatie van Journey Agent ](https://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze).
+Journey Agent gebruikt AI om B2B/B2C-reizen te maken, te analyseren en te optimaliseren via een conversationele interface. Voor meer informatie, zie de [&#x200B; documentatie van Journey Agent &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze).
 
 >[!SLIDE](journey-agent-overview)

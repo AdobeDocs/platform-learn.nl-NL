@@ -41,15 +41,15 @@ Als u Analysis Workspace nog niet eerder hebt gebruikt, raden we u aan deze vide
 Nu is het tijd om uw eerste CJA-project te maken. Ga naar het projectlusje binnen van CJA.
 Klik **creëren nieuw**.
 
-![ demo ](./images/prmenu.png)
+![&#x200B; demo &#x200B;](./images/prmenu.png)
 
 Dan zie je dit. Selecteer **Leeg project** en klik dan **creeer**.
 
-![ demo ](./images/prmenu1.png)
+![&#x200B; demo &#x200B;](./images/prmenu1.png)
 
 Dan zie je een leeg project.
 
-![ demo ](./images/premptyprojects.png)
+![&#x200B; demo &#x200B;](./images/premptyprojects.png)
 
 Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. In dit voorbeeld is de gegevensweergave die moet worden geselecteerd `CJA Bootcamp - Omnichannel Data View` .
 
@@ -62,7 +62,7 @@ Vervolgens slaat u uw project op en geeft u het een naam. U kunt de volgende opd
 
 U ziet deze pop-up:
 
-![ demo ](./images/prsave.png)
+![&#x200B; demo &#x200B;](./images/prsave.png)
 
 Gebruik deze naamgevingsconventie:
 
@@ -72,7 +72,7 @@ Gebruik deze naamgevingsconventie:
 
 Daarna, klik **sparen**.
 
-![ demo ](./images/prsave2.png)
+![&#x200B; demo &#x200B;](./images/prsave2.png)
 
 ## 4.4.2 Berekende cijfers
 
@@ -84,31 +84,31 @@ Als voorbeeld zullen wij tot een berekend **Tarief van de Omzetting** gebruikend
 
 Laten we beginnen met het openen van de berekende metrische builder. Klik op **+** om uw eerste Berekende Metrisch in Analysis Workspace tot stand te brengen.
 
-![ demo ](./images/pradd.png)
+![&#x200B; demo &#x200B;](./images/pradd.png)
 
 **Berekende Metrische Bouwer** zal omhoog verschijnen:
 
-![ demo ](./images/prbuilder.png)
+![&#x200B; demo &#x200B;](./images/prbuilder.png)
 
 Vind de **Aankopen** in de lijst van Metriek in het linkerzijmenu. Onder **Metriek** klik **tonen allen**
 
-![ demo ](./images/calcbuildercr1.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr1.png)
 
 Nu sleep en laat vallen de **Steekproeven** binnen aan de berekende metrische definitie.
 
-![ demo ](./images/calcbuildercr2.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr2.png)
 
 Typisch, betekent de omzettingspercentage **Conversies/Sessies**. Laten we dezelfde berekening uitvoeren in het berekende metrische definitiekanvas. Vind de **metrische Zittingen** en sleep en laat vallen het in de definitiebouwer, onder de **Aankopen** gebeurtenis.
 
-![ demo ](./images/calcbuildercr3.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr3.png)
 
 De operator voor delen wordt automatisch geselecteerd.
 
-![ demo ](./images/calcbuildercr4.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr4.png)
 
 De omrekeningskoers wordt gewoonlijk uitgedrukt in een percentage. Dus, veranderen wij het formaat om percentage te worden en ook 2 decimalen selecteren.
 
-![ demo ](./images/calcbuildercr5.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr5.png)
 
 Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 
@@ -118,11 +118,11 @@ Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 
 U zult iets als dit op uw scherm hebben:
 
-![ demo ](./images/calcbuildercr6.png)
+![&#x200B; demo &#x200B;](./images/calcbuildercr6.png)
 
 Vergeet niet om **&#x200B;**&#x200B;te sparen Berekend Metrisch.
 
-![ demo ](./images/pr9.png)
+![&#x200B; demo &#x200B;](./images/pr9.png)
 
 ## 4.4.3 Berekende afmetingen: filters (segmentatie) en datumbereiken
 
@@ -130,7 +130,7 @@ Vergeet niet om **&#x200B;**&#x200B;te sparen Berekend Metrisch.
 
 Berekeningen zijn niet alleen bedoeld voor Metriek. Alvorens om het even welke analyse te beginnen is het ook interessant om sommige **Berekende Dimensies** tot stand te brengen. Dit betekende eigenlijk **segmenten** terug in Adobe Analytics. In Customer Journey Analytics, worden deze segmenten genoemd **Filters**.
 
-![ demo ](./images/prfilters.png)
+![&#x200B; demo &#x200B;](./images/prfilters.png)
 
 Het creëren van filters zal bedrijfs gebruikers helpen om de analyse met sommige waardevolle berekende afmetingen te beginnen. Dit zal sommige taken automatiseren evenals aan het adoptiedeel helpen. Hier volgen enkele voorbeelden:
 
@@ -150,11 +150,11 @@ Deze berekende afmetingen van de Tijd zullen wij analisten en bedrijfsgebruikers
 - Wanneer hebben we die tv-campagne in december gevoerd?
 - Van wanneer tot wanneer deden we de zomerverkoop van 2018? Ik wil het vergelijken met 2019. Weet je trouwens de exacte dagen in 2019?
 
-![ demo ](./images/timedimensions.png)
+![&#x200B; demo &#x200B;](./images/timedimensions.png)
 
 U hebt nu de gegevensvoorbereidingsoefening met CJA Analysis Workspace voltooid.
 
-Volgende Stap: [ 4.5 Visualisatie gebruikend Customer Journey Analytics ](./ex5.md)
+Volgende Stap: [&#x200B; 4.5 Visualisatie gebruikend Customer Journey Analytics &#x200B;](./ex5.md)
 
 [Ga terug naar Gebruikersstroom 4](./uc4.md)
 

@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # De Privacy JavaScript-bibliotheek gebruiken
 
-Leer hoe u de Privacy JavaScript-bibliotheek kunt gebruiken om klantgegevens in uw toepassing te verzamelen voordat u ze naar Privacy Service verzendt. Leer bijvoorbeeld hoe u de tagextensie instelt in Gegevensverzameling (voorheen Starten). Voor meer informatie, gelieve de [ documentatie van de Diensten van de Privacy ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
+Leer hoe u de Privacy JavaScript-bibliotheek kunt gebruiken om klantgegevens in uw toepassing te verzamelen voordat u ze naar Privacy Service verzendt. Leer bijvoorbeeld hoe u de tagextensie instelt in Gegevensverzameling (voorheen Starten). Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452084?learn=on&enablevpops&captions=dut)

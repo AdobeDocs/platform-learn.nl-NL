@@ -36,11 +36,11 @@ U kunt nu het volgende:
 
 ## Bekijk dit
 
-- Help Center: [ Source Connectors - Google BigQuery-connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=nl-NL)
-- De Documentatie van Experience Platform: [ Customer Journey Analytics - de Documentatie van het Product ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
+- Help Center: [&#x200B; Source Connectors - Google BigQuery-connector &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=nl-NL)
+- De Documentatie van Experience Platform: [&#x200B; Customer Journey Analytics - de Documentatie van het Product &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
 
 ## Volgende stappen
 
-Ga terug naar [ Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
+Ga terug naar [&#x200B; Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

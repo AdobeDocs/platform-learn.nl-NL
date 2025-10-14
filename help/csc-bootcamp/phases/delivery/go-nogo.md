@@ -20,19 +20,19 @@ We keuren natuurlijk onze campagne goed, dus stel taak 20 &#39;CAMPAIGN GO/NO GO
 
 Laten we kijken naar het proces dat we hebben. Klik op de naam van taak 20 &#39;CAMPAIGN GO/NO GO&#39;:
 
-![ klik de taak ](./images/gonogo-button.png)
+![&#x200B; klik de taak &#x200B;](./images/gonogo-button.png)
 
-![ werk de details ](./images/gonogo-details.png) bij
+![&#x200B; werk de details &#x200B;](./images/gonogo-details.png) bij
 
 Laten we nu kijken naar de sectie goedkeuringen:
 
-![ klik de goedkeuringen ](./images/gonogo-approvals.png)
+![&#x200B; klik de goedkeuringen &#x200B;](./images/gonogo-approvals.png)
 
 We kunnen zien dat het een proces in twee stappen is waarbij ofwel ik, Petra, of iemand van u die dit go/nee-proces moet beoordelen en/of goedkeuren, als eerste stap gaat, en dan kan Olivia (onze Director of Marketing Operations) haar definitief toestemming geven.
 
 Rechtsboven verscheen dus mijn goedkeuringsknoppen en ik kan deze &#39;Go No/Go&#39; nu goedkeuren voor de eerste stap. Klik op de groene markering om goed te keuren:
 
-![ keur de campagne ](./images/gongo-given-approvals.png) goed
+![&#x200B; keur de campagne &#x200B;](./images/gongo-given-approvals.png) goed
 
 Al onze projecten moeten nu worden goedgekeurd door Olivia. Zodra ze haar goedkeuring heeft gehecht - wat ze natuurlijk zal doen - kan onze campagne worden gepubliceerd.
 
@@ -40,7 +40,7 @@ Al onze projecten moeten nu worden goedgekeurd door Olivia. Zodra ze haar goedke
 
 Nu we hebben geverifieerd dat onze campagne klaar is om te starten, en we zijn klaar om onze fietsen te gaan verkopen, is het tijd om een bozz te maken. En hoe kan je dat beter doen, dan met een bericht in de sociale media?
 
-![ de demo Instagram pagina ](./images/instagram-overview.png)
+![&#x200B; de demo Instagram pagina &#x200B;](./images/instagram-overview.png)
 
 Aangezien we al een bericht voor sociale media hebben gemaakt en goedgekeurd, kunnen we het nu op onze Instagram-demo-account plaatsen.
 
@@ -55,9 +55,9 @@ Aangezien we al een bericht voor sociale media hebben gemaakt en goedgekeurd, ku
 
 ## Gefeliciteerd, uw campagne is gepubliceerd!
 
-![ lancering van de Campagne ](./images/launch.jpg)
+![&#x200B; lancering van de Campagne &#x200B;](./images/launch.jpg)
 
-Volgende Stap: [ Fase 4 - Inzichten: Overzicht ](../insights/overview.md)
+Volgende Stap: [&#x200B; Fase 4 - Inzichten: Overzicht &#x200B;](../insights/overview.md)
 
 [Ga terug naar fase 3 - levering: pagina maken in AEM](./app.md)
 

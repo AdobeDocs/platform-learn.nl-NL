@@ -19,6 +19,6 @@ Aanvullende bronnen:
 
 ## Volgende stappen
 
-Ga terug naar [ stroomlijn uw werkschema met Frame.io ](./frameio.md){target="_blank"}
+Ga terug naar [&#x200B; stroomlijn uw werkschema met Frame.io &#x200B;](./frameio.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

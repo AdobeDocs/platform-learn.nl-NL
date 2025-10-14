@@ -58,7 +58,7 @@ Gegevenselementen zijn de versie van een gegevenslaag van een tag. Ze kunnen waa
 
 1. Klik op de knop **[!UICONTROL Save]** om het gegevenselement op te slaan
 
-   ![ creeer het gegevenselement van de Naam van de Pagina ](images/launch-dataElement.png).
+   ![&#x200B; creeer het gegevenselement van de Naam van de Pagina &#x200B;](images/launch-dataElement.png).
 
 >[!NOTE]
 >
@@ -84,13 +84,13 @@ U gaat een regel tot stand brengen die de het gegevenselementwaarde van de Naam 
 
 1. Klik onder Gebeurtenissen op **[!UICONTROL Add]** . De gebeurtenis vertelt tags wanneer de regel moet worden geactiveerd en kan vele dingen zijn, zoals het laden van een pagina, een klik, een aangepaste JavaScript-gebeurtenis, enzovoort.
 
-   ![ Naam de Regel en voeg een gebeurtenis ](images/launch-addEventToRule.png) toe
+   ![&#x200B; Naam de Regel en voeg een gebeurtenis &#x200B;](images/launch-addEventToRule.png) toe
 
    1. Selecteer **[!UICONTROL Library Loaded (Page Top)]** als gebeurtenistype. Wanneer u het gebeurtenistype selecteert, wordt met de labels vooraf een naam voor de gebeurtenis ingevuld met uw selectie. De standaardvolgorde voor de gebeurtenis is 50. Orderen is een krachtige functie in tags die u nauwkeurige controle geeft over de volgorde van handelingen wanneer u meerdere regels hebt die door dezelfde gebeurtenis worden geactiveerd. Deze functie wordt later in de zelfstudie gebruikt.
 
    1. Klik op de knop **[!UICONTROL Keep Changes]**
 
-   ![ selecteer een Gebeurtenis ](images/launch-ruleSelectEvent.png)
+   ![&#x200B; selecteer een Gebeurtenis &#x200B;](images/launch-ruleSelectEvent.png)
 
 1. Aangezien deze regel op alle pagina&#39;s moet worden toegepast, laat u **[!UICONTROL Conditions]** leeg. Als u het modaal van Voorwaarden opent, zult u zien dat de voorwaarden zowel beperkingen als uitsluitingen kunnen toevoegen die op een grote verscheidenheid van opties, met inbegrip van URLs, de waarden van het gegevenselement, datumwaaiers, en meer worden gebaseerd.
 
@@ -100,7 +100,7 @@ U gaat een regel tot stand brengen die de het gegevenselementwaarde van de Naam 
 
 1. Selecteer **[!UICONTROL </> Open Editor]** om de code-editor te openen
 
-   ![ Uitgezocht een Actie ](images/launch-selectAction.png)
+   ![&#x200B; Uitgezocht een Actie &#x200B;](images/launch-selectAction.png)
 
 1. Voeg het volgende toe aan de code-editor. Deze code zal de waarde van het gegevenselement van de Naam van de Pagina aan de browser console uitvoeren zodat kunt u het bevestigen werkt:
 
@@ -110,14 +110,14 @@ U gaat een regel tot stand brengen die de het gegevenselementwaarde van de Naam 
 
 1. De code-editor opslaan
 
-   ![ ga douanecode ](images/launch-customCodeAction.png) in
+   ![&#x200B; ga douanecode &#x200B;](images/launch-customCodeAction.png) in
 
 1. Klik in het configuratiescherm Handeling op **[!UICONTROL Keep Changes]**
 
 1. Klik op **[!UICONTROL Save]** om de regel op te slaan
 
 Op de pagina van Regels, zou u uw nieuwe regel moeten zien:
-![ Regel verschijnt op pagina ](images/launch-savedRule.png)
+![&#x200B; Regel verschijnt op pagina &#x200B;](images/launch-savedRule.png)
 
 ## Uw wijzigingen in een bibliotheek opslaan
 
@@ -131,7 +131,7 @@ In een vroegere les, uitvoerde u de inbedcode van uw ontwikkelomgeving op de ste
 
 1. Klikken **[!UICONTROL Add New Library]**
 
-   ![ voeg Nieuwe Bibliotheek ](images/launch-addNewLibrary.png) toe
+   ![&#x200B; voeg Nieuwe Bibliotheek &#x200B;](images/launch-addNewLibrary.png) toe
 
 1. Geef de bibliotheek een naam, bijvoorbeeld `Initial Setup`
 
@@ -139,17 +139,17 @@ In een vroegere les, uitvoerde u de inbedcode van uw ontwikkelomgeving op de ste
 
 1. Klikken **[!UICONTROL Add All Changed Resources]**
 
-   ![ voeg Alle Gewijzigde Middelen ](images/launch-addAllChangedResources.png) toe
+   ![&#x200B; voeg Alle Gewijzigde Middelen &#x200B;](images/launch-addAllChangedResources.png) toe
 
 1. Nadat u op **[!UICONTROL Add All Changed Resources]** -tags hebt geklikt, wordt een overzicht gegeven van de wijzigingen die u zojuist hebt aangebracht.
 
 1. Klikken **[!UICONTROL Save & Build for Development]**
 
-   ![ sparen en bouwt voor Ontwikkeling ](images/launch-saveAndBuild.png)
+   ![&#x200B; sparen en bouwt voor Ontwikkeling &#x200B;](images/launch-saveAndBuild.png)
 
 Na enkele ogenblikken wordt de statuspunt groen om aan te geven dat de bibliotheek is gemaakt.
 
-![ Bibliotheek bouwde ](images/launch-libraryBuilt.png)
+![&#x200B; Bibliotheek bouwde &#x200B;](images/launch-libraryBuilt.png)
 
 ## Uw werk valideren
 
@@ -157,11 +157,11 @@ Bevestig nu dat uw regel zoals verwacht werkt.
 
 Laad de voorbeeldpagina opnieuw. Als u de Hulpmiddelen van de Ontwikkelaar -> het lusje van het Netwerk bekijkt, zou u nu een 200 reactie voor uw markeringsbibliotheek moeten zien!
 
-![ Bibliotheek laadt met 200 reactie ](images/samplepage-200.png)
+![&#x200B; Bibliotheek laadt met 200 reactie &#x200B;](images/samplepage-200.png)
 
 Als u de Developer Tools -> Console bekijkt, ziet u de tekst &quot;De paginanaam is home&quot;
 
-![ Bericht van de Console ](images/samplepage-console.png)
+![&#x200B; Bericht van de Console &#x200B;](images/samplepage-console.png)
 
 Gefeliciteerd, u hebt uw eerste gegevenselement en regel gemaakt en uw eerste tagbibliotheek gemaakt!
 
@@ -171,11 +171,11 @@ Wanneer u veel wijzigingen aanbrengt in tags, is het niet handig om naar het tab
 
 Breng een kleine wijziging aan in de regel &quot;Alle pagina&#39;s - Bibliotheek geladen&quot;. Klik in de linkernavigatie op **[!UICONTROL Rules]** en klik vervolgens op de `All Pages - Library Loaded` -regel om deze te openen.
 
-![ heropen de regel ](images/launch-reopenRule.png)
+![&#x200B; heropen de regel &#x200B;](images/launch-reopenRule.png)
 
 Klik op de pagina `Edit Rule` op het vervolgkeuzemenu ***[!UICONTROL Working Library]*** en selecteer uw `Initial Setup` bibliotheek.
 
-![ Uitgezochte Eerste Opstelling als het Werk Bibliotheek ](images/launch-setWorkingLibrary.png)
+![&#x200B; Uitgezochte Eerste Opstelling als het Werk Bibliotheek &#x200B;](images/launch-setWorkingLibrary.png)
 
 Nadat u de bibliotheek hebt geselecteerd, ziet u dat de knop **[!UICONTROL Save]** nu standaard op **[!UICONTROL Save to Library]** staat. Als u een wijziging in de tags aanbrengt, kunt u deze optie gebruiken om de wijziging automatisch rechtstreeks toe te voegen aan uw werkbibliotheek en/of opnieuw samen te stellen.
 
@@ -187,11 +187,11 @@ console.log('The page name is: '+_satellite.getVar('Page Name'));
 
 Sla de code op, houd de wijzigingen in de actie en klik nu op de knop **[!UICONTROL Save to Library and Build]** .
 
-![ sparen en bouwt nu optie bestaat ](images/launch-workingLibrary-saveAndBuild.png)
+![&#x200B; sparen en bouwt nu optie bestaat &#x200B;](images/launch-workingLibrary-saveAndBuild.png)
 
 Wacht even totdat de groene stip weer verschijnt naast het vervolgkeuzemenu [!UICONTROL Working Library] . Laad nu de voorbeeldpagina opnieuw en u ziet dat de wijziging doorwerkt in het consolemelding (u moet mogelijk de cache van de browser wissen en opnieuw laden om de wijziging in de pagina te kunnen zien):
 
-![ Bericht van de Console met Colon ](images/samplepage-consoleWithColon.png)
+![&#x200B; Bericht van de Console met Colon &#x200B;](images/samplepage-consoleWithColon.png)
 
 Dit is een veel snellere manier van werken en u zult deze benadering voor de rest van het leerprogramma gebruiken.
 

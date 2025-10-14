@@ -21,7 +21,7 @@ In deze oefening, zult u leren hoe te om uw gegevens te zuiveren en te bevestige
 
 ## Het Adobe Experience Platform Debugger
 
-Dit foutopsporingsprogramma is een browserextensie en is beschikbaar in de Chrome Store. Er is a [ videoleerprogramma ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview) dat verklaart hoe te om debugger te downloaden en te gebruiken, en het wordt geadviseerd dat u eerst door dat gaat om het basisgebruik te kennen.
+Dit foutopsporingsprogramma is een browserextensie en is beschikbaar in de Chrome Store. Er is a [&#x200B; videoleerprogramma &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview) dat verklaart hoe te om debugger te downloaden en te gebruiken, en het wordt geadviseerd dat u eerst door dat gaat om het basisgebruik te kennen.
 
 Als u de foutopsporing hebt uitgevoerd, kunt u deze gebruiken om ervoor te zorgen dat de gegevens van uw site en via de Edge Network correct stromen. Deze zelfstudie blijft bij vrij eenvoudig gebruik, maar gebruik de foutopsporing tot de volledige capaciteit om uw gegevens te controleren.
 
@@ -36,7 +36,7 @@ Stappen voor het weergeven van uw gegevens:
 1. De ontwikkelomgeving van uw site openen in de browser
 1. Open debugger door op de browser uitbreiding van de uitbreidingsdienblad bij de bovenkant van uw browser venster te klikken
 
-   ![ Debugger uitbreiding ](assets/debugger-extension.jpg)
+   ![&#x200B; Debugger uitbreiding &#x200B;](assets/debugger-extension.jpg)
 
    >[!TIP]
    >
@@ -44,19 +44,19 @@ Stappen voor het weergeven van uw gegevens:
 
 1. Zorg ervoor u op de **Summiere** pagina van debugger (&quot;het pictogram van het Huis&quot;op de bovenkant linkerzijde) bent. **vernieuw uw plaats** in zijn browser venster. Als debugger de ingebedcode op uw plaats opneemt, en als u niet de code van de Analyse (zoals in deze zelfstudie) schrapte, zult u aanwijzingen zien dat er code voor zowel het Web SDK van Adobe Experience Platform als Adobe Analytics, evenals de Markeringen van Adobe Experience Platform was. Anderen worden grijs weergegeven.
 
-   ![ Debugger Samenvatting ](assets/debugger-summary.jpg)
+   ![&#x200B; Debugger Samenvatting &#x200B;](assets/debugger-summary.jpg)
 
 1. Om de gegevens te zien die via het Web SDK worden toegevoegd, klik de **verbinding van SDK van het Web van 0&rbrace; Experience Platform &lbrace;in de linkerspoor**
 1. Klik **Duidelijke gebeurtenissen** enkel om zich van om het even welke klappen te ontdoen die zijn gebeurd
 1. Vernieuw uw site opnieuw en kom terug naar foutopsporing
 1. Dan klik op het gegevensgebied naast **gebeurtenissen** in de lijst
 
-   ![ gebied van Gebeurtenissen in debugger ](assets/events-field-in-debugger.jpg)
+   ![&#x200B; gebied van Gebeurtenissen in debugger &#x200B;](assets/events-field-in-debugger.jpg)
 
 1. Vouw in het veld Waarde de waarden 0, data, __adobe en analytics uit
 1. U moet de variabelen zien die u instelt in de regel(s) die op die pagina worden geactiveerd, inclusief de standaard regel voor het laden van de pagina en eventuele speciale regels.
 
-   ![ voorwerp van Gegevens in debugger ](assets/data-object-in-debugger.jpg)
+   ![&#x200B; voorwerp van Gegevens in debugger &#x200B;](assets/data-object-in-debugger.jpg)
 
 1. Voer deze stappen uit wanneer u iets in uw markeringsbezit hebt veranderd en de veranderingen in ontwikkeling hebt gepubliceerd, zodat u het effect van de veranderingen kunt zien u aan uw implementatie Analytics hebt aangebracht.
 
@@ -75,7 +75,7 @@ Er zijn mogelijk meerdere manieren om deze vergelijkingen in te stellen, maar ik
 
 Dit zou ongeveer als dit kunnen kijken (het begrip dat er geen gegevens in deze lege demo rapportsuites zijn):
 
-![ vergelijk de aantallen van de rapportreeks ](assets/compare-report-suite-numbers-panels.jpg)
+![&#x200B; vergelijk de aantallen van de rapportreeks &#x200B;](assets/compare-report-suite-numbers-panels.jpg)
 
 Zoals u kunt zien, is het rapport hetzelfde in beide deelvensters en is de kalender ook hetzelfde. Het verschil is de rapportsuite, zoals in de bovenstaande stappen wordt beschreven.
 **Voordeel van deze optie:** u kunt één voor één met rapporten/afmetingen gaan en precies testen wat u wilt testen, aangezien u veranderingen in de implementatie aanbrengt.

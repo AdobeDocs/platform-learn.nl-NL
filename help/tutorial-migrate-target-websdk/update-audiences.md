@@ -25,7 +25,7 @@ Om het even welk publiek dat douanembox parameters gebruikt zou moeten worden bi
 
 Eén methode om compatibiliteit met zowel at.js als Platform Web SDK te garanderen, is het bijwerken van relevante doelgroepen zodat `OR` -voorwaarden worden gebruikt, zoals hieronder wordt getoond:
 
-![ hoe te om update een publiek van het Doel voor de verenigbaarheid van SDK van het Web van het Platform te bekijken ](assets/target-audience-update.png){zoomable="yes"}
+![&#x200B; hoe te om update een publiek van het Doel voor de verenigbaarheid van SDK van het Web van het Platform te bekijken &#x200B;](assets/target-audience-update.png){zoomable="yes"}
 
 ## Profielscripts bewerken
 
@@ -49,11 +49,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [ profielmanuscripten ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL).
+Voor meer informatie en beste praktijken, verwijs naar de specifieke documentatie over [&#x200B; profielmanuscripten &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL).
 
 ## Parametertokens bijwerken voor dynamische inhoud
 
-Als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [ dynamische inhoudsvervanging ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=nl-NL) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om voor de nieuwe XDM parameternamen rekening te houden.
+Als u om het even welke aanbiedingen, aanbevelingen ontwerpen, of activiteiten hebt die [&#x200B; dynamische inhoudsvervanging &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=nl-NL) gebruiken, kunnen zij dienovereenkomstig moeten worden bijgewerkt om voor de nieuwe XDM parameternamen rekening te houden.
 
 Afhankelijk van hoe u symbolische vervanging voor mbox parameters gebruikt, kunt u uw bestaande opstelling aan rekening voor zowel oude als nieuwe parameternamen kunnen verbeteren. In situaties waarin aangepaste JavaScript-code niet mogelijk is, zoals in JSON-aanbiedingen, moet u echter kopieën maken en updates uitvoeren nadat de migratie is voltooid en live op uw productiesite gaat.
 
@@ -77,8 +77,8 @@ Voorbeeld JSON-aanbieding met parameternamen van Platform Web SDK:
 
 Als u na de migratie aanpassingen wilt aanbrengen om rekening te houden met de nieuwe namen van XDM-box-parameters, moet u tijdens de migratiegebeurtenis alle betrokken activiteiten pauzeren om te voorkomen dat er weergavefouten optreden voor bezoekers.
 
-Daarna, leer hoe te [ de implementatie van het Doel ](validate.md) bevestigen.
+Daarna, leer hoe te [&#x200B; de implementatie van het Doel &#x200B;](validate.md) bevestigen.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 We beginnen met het configureren van een verbinding tussen Adobe Experience Platform en uw Enterprise Data Warehouse. Wij gebruiken schema&#39;s en gegevensmodellen die op hoe de gegevens in Data Warehouse worden gebaseerd om vraagbouw te steunen.
 
-We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [ bijgewerkte lijst van integraties ](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatieve Samenstelling van de Publiek steunt een groeiende lijst van de verbindingen van het gegevenspakhuis. Zie de [&#x200B; bijgewerkte lijst van integraties &#x200B;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Stappen
 
@@ -27,11 +27,11 @@ We maken verbinding met een Snowflake-account om dit aan te tonen. De Federatiev
 3. Voeg een naam toe en selecteer **Snowflake**.
 4. Vul de details in, klik op de **verbinding van de Test** knoop, en dan op **stelt functies** knoop op.
 
-   ![ sneeuwvlok-verbinding-opstelling ](assets/snowflake-connection-setup.png)
+   ![&#x200B; sneeuwvlok-verbinding-opstelling &#x200B;](assets/snowflake-connection-setup.png)
 
-   ![ sneeuwvlok-verbinding-opstelling-step2 ](assets/snowflake-connection-setup-step2.png)
+   ![&#x200B; sneeuwvlok-verbinding-opstelling-step2 &#x200B;](assets/snowflake-connection-setup-step2.png)
 
-   ![ sneeuwvlok-verbinding-opstelling-step3 ](assets/snowflake-connection-setup-step3.png)
+   ![&#x200B; sneeuwvlok-verbinding-opstelling-step3 &#x200B;](assets/snowflake-connection-setup-step3.png)
 
 ## Een schema maken
 
@@ -46,15 +46,15 @@ Voer de volgende stappen uit om schema&#39;s te maken in Federated Audience Comp
    - FSI_CRM
    - FSI_CRM_CONSENT_PREFERENCE
 
-   ![ creeer-schema ](assets/create-schema.png)
+   ![&#x200B; creeer-schema &#x200B;](assets/create-schema.png)
 
-   ![ selecteren-lijst ](assets/select-table.png)
+   ![&#x200B; selecteren-lijst &#x200B;](assets/select-table.png)
 
 Nadat u de tabellen hebt geselecteerd, controleert u de kolommen in elke tabel en selecteert u de primaire sleutel. Om het bedrijfsgeval te steunen, **EMAIL** wordt geselecteerd als primaire sleutel in beide lijsten.
 
-![ creeer-schema ](assets/create-schema.png)
+![&#x200B; creeer-schema &#x200B;](assets/create-schema.png)
 
-![ creeer-schema-step2 ](assets/create-schema-step2.png)
+![&#x200B; creeer-schema-step2 &#x200B;](assets/create-schema-step2.png)
 
 ## Een gegevensmodel maken
 
@@ -76,6 +76,6 @@ Kies bij het maken van een koppeling de toepasselijke kardinaliteit:
 
 Hieronder ziet u een voorbeeld van de koppeling die u hebt gemaakt op basis van de bovenstaande stappen. De verbinding laat toe om zich tussen CRM en toestemmingslijsten aan te sluiten, gebruikend de primaire sleutel van **E-MAIL** om toe te treden uit te voeren.
 
-![ voorproef-gegeven-model ](assets/preview-data-model.png)
+![&#x200B; voorproef-gegeven-model &#x200B;](assets/preview-data-model.png)
 
-Nu, zijn wij bereid om [ tot een Federated Publiek ](create-a-federated-audience.md) te leiden.
+Nu, zijn wij bereid om [&#x200B; tot een Federated Publiek &#x200B;](create-a-federated-audience.md) te leiden.

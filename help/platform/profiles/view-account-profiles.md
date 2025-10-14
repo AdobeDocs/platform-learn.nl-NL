@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Accountprofielen weergeven
 
-Leer hoe u accountprofielen en mogelijkheden bekijkt in Real-Time Customer Data Platform, B2B edition en Adobe Experience Platform. Voor meer informatie, te zien gelieve de [ documentatie van Profielen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=nl-NL).
+Leer hoe u accountprofielen en mogelijkheden bekijkt in Real-Time Customer Data Platform, B2B edition en Adobe Experience Platform. Voor meer informatie, te zien gelieve de [&#x200B; documentatie van Profielen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3446583?learn=on&enablevpops&captions=dut)
 

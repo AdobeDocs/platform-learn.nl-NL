@@ -22,4 +22,4 @@ Alvorens u gegevens naar bestemmingspartners van Real-Time CDP kunt verzenden, m
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444273/?learn=on&enablevpops&captions=dut)
 
-Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/connect-destination) te bezoeken.
+Voor meer informatie, gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/ui/connect-destination) te bezoeken.

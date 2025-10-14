@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen kunt doorsturen met Adobe Experience Platform Web SDK-gegevens.
 
-Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Door gebeurtenissen door:sturen kunt u gegevens rechtstreeks vanuit Adobe Experience Platform Edge Network naar andere leveranciers dan Adobe verzenden in plaats van naar de traditionele clientbrowser. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [ Gebeurtenis die overzicht ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
+Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Door gebeurtenissen door:sturen kunt u gegevens rechtstreeks vanuit Adobe Experience Platform Edge Network naar andere leveranciers dan Adobe verzenden in plaats van naar de traditionele clientbrowser. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [&#x200B; Gebeurtenis die overzicht &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
 
 
-![ SDK van het Web en gebeurtenis die diagram ](assets/dc-websdk-eventforwarding.png) door:sturen
+![&#x200B; SDK van het Web en gebeurtenis die diagram &#x200B;](assets/dc-websdk-eventforwarding.png) door:sturen
 
 Als u gebeurtenissen wilt doorsturen in Adobe Experience Platform, moeten gegevens eerst naar Adobe Experience Platform Edge Network worden verzonden met een of meer van de volgende drie opties:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [ Adobe Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/home/)
+* [&#x200B; Adobe Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -48,8 +48,8 @@ Aan dit eind van deze les, zult u kunnen:
 
 * Een softwarelicentie die het doorsturen van gebeurtenissen omvat. Het doorsturen van gebeurtenissen is een betaalde eigenschap van de Inzameling van Gegevens. Neem contact op met uw Adobe-accountteam voor meer informatie.
 * Het door:sturen van gebeurtenissen wordt toegelaten in uw organisatie van Experience Cloud.
-* Gebruikersmachtiging voor het doorsturen van gebeurtenissen. (In [ Admin Console ](https://adminconsole.adobe.com/), onder het product van Adobe Experience Platform Launch, toestemmingspunten voor [!UICONTROL Platforms] > [!UICONTROL Edge] en allen [!UICONTROL Property Rights]). Als deze eenmaal is toegekend, ziet u [!UICONTROL Event Forwarding] in de linkernavigatie van de interface voor gegevensverzameling:
-  ![ Gebeurtenis door:sturen eigenschappen ](assets/event-forwarding-menu.png)
+* Gebruikersmachtiging voor het doorsturen van gebeurtenissen. (In [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/), onder het product van Adobe Experience Platform Launch, toestemmingspunten voor [!UICONTROL Platforms] > [!UICONTROL Edge] en allen [!UICONTROL Property Rights]). Als deze eenmaal is toegekend, ziet u [!UICONTROL Event Forwarding] in de linkernavigatie van de interface voor gegevensverzameling:
+  ![&#x200B; Gebeurtenis door:sturen eigenschappen &#x200B;](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web of Mobile SDK is geconfigureerd om gegevens naar Edge Network te verzenden. U moet de volgende lessen uit deze zelfstudie hebben geleerd:
 
@@ -72,15 +72,15 @@ Aan dit eind van deze les, zult u kunnen:
 
 Begin door een gebeurtenis-door:sturen bezit te creëren:
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection)
+1. Open de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/#/data-collection)
 1. Selecteer **[!UICONTROL Event Forwarding]** in de linkernavigatie
 1. Selecteer **[!UICONTROL New Property]**.
-   ![ Gebeurtenis door:sturen eigenschappen ](assets/event-forwarding-new.png)
+   ![&#x200B; Gebeurtenis door:sturen eigenschappen &#x200B;](assets/event-forwarding-new.png)
 
 1. Geef de eigenschap een naam. In dit geval, `Server-Side - Web SDK Course`
 
 1. Selecteer **[!UICONTROL Save]**.
-   ![ gebeurtenis-door:sturen bezit sparen ](assets/event-forwarding-save.png)
+   ![&#x200B; gebeurtenis-door:sturen bezit sparen &#x200B;](assets/event-forwarding-save.png)
 
 ## De gegevensstroom configureren
 
@@ -88,14 +88,14 @@ Voor gebeurtenis door:sturen om de gegevens te gebruiken die u naar Platform Edg
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar [ interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ga naar [&#x200B; interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
-   ![ selecteer de datastream van SDK van het Web van Luma ](assets/datastream-luma-web-sdk-development.png)
+   ![&#x200B; selecteer de datastream van SDK van het Web van Luma &#x200B;](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Add Service]**
-   ![ voegt de dienst aan de datastream ](assets/event-forwarding-datastream-addService.png) toe
+   ![&#x200B; voegt de dienst aan de datastream &#x200B;](assets/event-forwarding-datastream-addService.png) toe
 1. Selecteer **[!UICONTROL Event Forwarding]** als de **[!UICONTROL Service]**
 
 1. Selecteer onder het vervolgkeuzemenu **[!UICONTROL Property ID]** de naam die u aan de eigenschap voor het doorsturen van gebeurtenissen hebt gegeven, in dit geval `Server-Side - Web SDK Course`
@@ -108,21 +108,21 @@ Om Doel in de gegevensstroom te vormen:
 
 1. Selecteer **[!UICONTROL Save]**.
 
-   ![ Gebeurtenis door:sturen DataStream Enablement ](assets/event-forwarding-datastream-enable.png)
+   ![&#x200B; Gebeurtenis door:sturen DataStream Enablement &#x200B;](assets/event-forwarding-datastream-enable.png)
 
 Herhaal deze stappen voor het opvoeren en productie gegevensstromen wanneer u bereid bent om uw veranderingen door de het publiceren stroom te bevorderen.
 
 ## Gegevens van Platform Edge Network doorsturen naar een niet-Adobe oplossing
 
-In deze oefening leert u hoe te opstelling een gebeurtenis-door:sturen gegevenselement, vormt een gebeurtenis-door:sturen regel, en bevestigt het gebruiken van een derdedeel hulpmiddel genoemd [ Webhaak.site ](https://webhook.site/).
+In deze oefening leert u hoe te opstelling een gebeurtenis-door:sturen gegevenselement, vormt een gebeurtenis-door:sturen regel, en bevestigt het gebruiken van een derdedeel hulpmiddel genoemd [&#x200B; Webhaak.site &#x200B;](https://webhook.site/).
 
 >[!NOTE]
 >
->Een webhaak is een manier om verschillende systemen in halfreal-time te integreren. [ WebHaak.site ](https://webhook.site/) is een derdehulpmiddel dat u gemakkelijk (met de visuele Bouwer van de Acties van de Douane, of WebHaakScript) om het even welke inkomende HTTP- verzoek of e-mail laat inspecteren, testen en automatiseren.
+>Een webhaak is een manier om verschillende systemen in halfreal-time te integreren. [&#x200B; WebHaak.site &#x200B;](https://webhook.site/) is een derdehulpmiddel dat u gemakkelijk (met de visuele Bouwer van de Acties van de Douane, of WebHaakScript) om het even welke inkomende HTTP- verzoek of e-mail laat inspecteren, testen en automatiseren.
 
 >[!IMPORTANT]
 >
->U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0&rbrace; Codes in de** eerste vereisten [ sectie. ](setup-event-forwarding.md#prerequisites) Die stappen zorgen ervoor dat het gegeven wordt verzonden naar het Platform Edge Network, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
+>U moet reeds gegevenselementen en in kaart gebrachte gegevenselementen aan een Voorwerp XDM, evenals gevormde markeringsregels hebben gecreeerd en die veranderingen binnen een bibliotheek aan een markeringsmilieu bouwt om verder te werk te gaan. Als u niet hebt, verwijs naar de **stappen van de Configuratie van 0&rbrace; Codes in de** eerste vereisten [&#x200B; sectie. &#x200B;](setup-event-forwarding.md#prerequisites) Die stappen zorgen ervoor dat het gegeven wordt verzonden naar het Platform Edge Network, en van daar kunt u een gebeurtenis-door:sturen bezit vormen om gegevens aan een niet-Adobe oplossing door:sturen.
 
 
 ### Een gegevenselement voor het doorsturen van gebeurtenissen maken
@@ -138,12 +138,12 @@ Het XDM voorwerp u eerder gebruikend de de markeringsuitbreiding van SDK van het
 >
 >Als dit pad onjuist is opgegeven, worden geen gegevens verzameld.
 
-In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Experience Cloud van het Voorwerp XDM aan een webhaak door:sturen. Het XDM gebiedspad wordt bepaald door het schema XDM dat tijdens [ wordt gecreeerd vormt een XDM schema ](configure-schemas.md) les.
+In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Experience Cloud van het Voorwerp XDM aan een webhaak door:sturen. Het XDM gebiedspad wordt bepaald door het schema XDM dat tijdens [&#x200B; wordt gecreeerd vormt een XDM schema &#x200B;](configure-schemas.md) les.
 
 >[!TIP]
 >
 >U kunt de XDM objecten weg ook vinden door uw hulpmiddelen van het Webbrowser netwerk te gebruiken, die voor `/ee` verzoeken filtreren, die de baken [!UICONTROL **Payload**] openen en neer aan veranderlijk boren u zoekt. Klik vervolgens met de rechtermuisknop en selecteer &quot;Pad eigenschap kopiëren&quot;. Hier volgt een voorbeeld voor de Viewport-hoogte van de browser:
->&#x200B;> ![Event Forwarding XDM Path ](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Event Forwarding XDM Path &#x200B;](assets/event-forwarding-xdm-path.png)
 
 1. Ga naar de eigenschap **[!UICONTROL Event Forwarding]** die u onlangs hebt gemaakt
 
@@ -151,7 +151,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Expe
 
 1. Selecteren tot **[!UICONTROL Create New Data Element]**
 
-   ![ Gebeurtenis door:sturen het Nieuwe Element van Gegevens ](assets/event-forwarding-new-dataelement.png)
+   ![&#x200B; Gebeurtenis door:sturen het Nieuwe Element van Gegevens &#x200B;](assets/event-forwarding-new-dataelement.png)
 
 1. **[!UICONTROL Name]** the data element `environment.browserDetails.viewportHeight`
 
@@ -163,7 +163,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Expe
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ Gebeurtenis door:sturen ECID weg ](assets/event-forwarding-browser-viewpoirt-height.png)
+   ![&#x200B; Gebeurtenis door:sturen ECID weg &#x200B;](assets/event-forwarding-browser-viewpoirt-height.png)
 
 
 1. Een ander gegevenselement maken
@@ -178,7 +178,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Expe
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ Gebeurtenis door:sturen ECID weg ](assets/event-forwarding-ecid.png)
+   ![&#x200B; Gebeurtenis door:sturen ECID weg &#x200B;](assets/event-forwarding-ecid.png)
 
    >[!CAUTION]
    >
@@ -188,7 +188,7 @@ In deze oefening, zult u de browser viewport hoogte en identiteitskaart van Expe
    >[!TIP]
    >
    >Wanneer het werken met uw eigen website, kunt u de XDM objecten weg met uw hulpmiddelen van het Webbrowser netwerk vinden, die voor `/ee` verzoeken filtreren, die het baken [!UICONTROL **Payload**] openen en neer aan de variabele boren u zoekt. Klik vervolgens met de rechtermuisknop en selecteer &quot;Pad eigenschap kopiëren&quot;. Hier volgt een voorbeeld voor de Viewport-hoogte van de browser:
-   > ![ Gebeurtenis door:sturen XDM Weg ](assets/event-forwarding-xdm-path.png)
+   > ![&#x200B; Gebeurtenis door:sturen XDM Weg &#x200B;](assets/event-forwarding-xdm-path.png)
 
 ### De extensie Adobe Cloud Connector installeren
 
@@ -200,7 +200,7 @@ Als u gegevens naar locaties van derden wilt verzenden, moet u eerst de extensie
 
 1. Zoek naar **[!UICONTROL Adobe Cloud Connector]**, uitgezocht **[!UICONTROL Install]**
 
-   ![ Gebeurtenis door:sturen ECID weg ](assets/event-forwarding-adobe-cloud-connector.png)
+   ![&#x200B; Gebeurtenis door:sturen ECID weg &#x200B;](assets/event-forwarding-adobe-cloud-connector.png)
 
 Er is geen extensieconfiguratie nodig. Met deze extensie kunt u nu gegevens doorsturen naar een niet-Adobe-oplossing!
 
@@ -230,7 +230,7 @@ Er zijn een paar belangrijkste verschillen tussen het vormen regels in een marke
 
 Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoonlijke webhaak eerst verkrijgen:
 
-1. Ga naar [ WebHaak.site ](https://webhook.site)
+1. Ga naar [&#x200B; WebHaak.site &#x200B;](https://webhook.site)
 
 1. Vind **Uw unieke URL**, gebruikt u dit als verzoek URL in uw gebeurtenis-door:sturen regel
 
@@ -238,13 +238,13 @@ Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoon
 
 1. Laat dit venster open aangezien u de gebeurtenis kunt bevestigen die gegevens in real time door:sturen die door Webhaak wordt gevangen
 
-   ![ Webhaak URL van het Exemplaar ](assets/event-forwarding-webhook.png)
+   ![&#x200B; Webhaak URL van het Exemplaar &#x200B;](assets/event-forwarding-webhook.png)
 
 1. Ga terug **[!UICONTROL Data Collection]** > **[!UICONTROL Event Forwarding]** > **[!UICONTROL Rules]** van de linkernavigatie
 
 1. Selecteren **[!UICONTROL Create New Rule]**
 
-   ![ Gebeurtenis die Nieuwe regel door:sturen ](assets/event-forwarding-new-rules.png)
+   ![&#x200B; Gebeurtenis die Nieuwe regel door:sturen &#x200B;](assets/event-forwarding-new-rules.png)
 
 1. Naam geven `all events - ad cloud connector - webhook`
 
@@ -256,7 +256,7 @@ Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoon
 
 1. Plak de URL van uw webhaak in het veld **[!UICONTROL URL]**
 
-   ![ Webhaak URL van het Exemplaar ](assets/event-forwarding-rule.png)
+   ![&#x200B; Webhaak URL van het Exemplaar &#x200B;](assets/event-forwarding-rule.png)
 
 1. Onder **[de Params van de Vraag]**, zult u beide gegevenselementen toevoegen u vroeger creeerde.
 
@@ -268,13 +268,13 @@ Om een regel te vormen om gegevens aan uw webhaak door:sturen, moet u uw persoon
 
 1. Selecteren **[!UICONTROL Keep Changes]**
 
-   ![ voeg vraagparameter ](assets/event-forwarding-rule-query-parameter.png) toe
+   ![&#x200B; voeg vraagparameter &#x200B;](assets/event-forwarding-rule-query-parameter.png) toe
 
 1. Je regel moet er hieronder uitzien
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ sparen gebeurtenis-door:sturen regel ](assets/event-forwarding-rule-save.png)
+   ![&#x200B; sparen gebeurtenis-door:sturen regel &#x200B;](assets/event-forwarding-rule-save.png)
 
 ### De bibliotheek maken en bouwen
 
@@ -284,19 +284,19 @@ Creeer een bibliotheek en bouw alle veranderingen in uw gebeurtenis-door:sturen 
 >
 >Als u het Staging en de productie gebeurtenis-door:sturen eigenschappen aan uw gegevensstroom niet hebt verbonden, zult u het milieu van de Ontwikkeling als enige optie zien om een bibliotheek aan te bouwen.
 
-![ sparen gebeurtenis-door:sturen regel ](assets/event-forwarding-initial-build.png)
+![&#x200B; sparen gebeurtenis-door:sturen regel &#x200B;](assets/event-forwarding-initial-build.png)
 
 ## Valideer gebeurtenis-door:sturen regel
 
 Nu kunt u uw gebeurtenis-door:sturen bezit bevestigen gebruikend de Debugger van het Platform, en WebHaak.site:
 
-1. Volg de stappen aan [ schakelaar de markeringsbibliotheek ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) op de [ plaats van de Demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en/men.html) aan het de markeringsbezit van SDK van het Web waaraan u uw gebeurtenis-door:sturen bezit in de datastream in kaart bracht.
+1. Volg de stappen aan [&#x200B; schakelaar de markeringsbibliotheek &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) op de [&#x200B; plaats van de Demo van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en/men.html) aan het de markeringsbezit van SDK van het Web waaraan u uw gebeurtenis-door:sturen bezit in de datastream in kaart bracht.
 
 1. Voordat u de pagina opnieuw laadt, opent u **[!UICONTROL Logs]** in Experience Platform Debugger vanuit de linkernavigatie
 
 1. Selecteer het tabblad **[!UICONTROL Edge]** en selecteer vervolgens **[!UICONTROL Connect]** om de Edge Network-verzoeken voor het platform weer te geven
 
-   ![ Gebeurtenis die de zitting van het randnetwerk door:sturen ](assets/event-forwarding-edge-session.png)
+   ![&#x200B; Gebeurtenis die de zitting van het randnetwerk door:sturen &#x200B;](assets/event-forwarding-edge-session.png)
 
 1. De pagina opnieuw laden
 
@@ -304,23 +304,23 @@ Nu kunt u uw gebeurtenis-door:sturen bezit bevestigen gebruikend de Debugger van
 
 1. De aanvraag om validatie te activeren is de aanvraag die de volledig samengestelde URL weergeeft die door het Edge-netwerk wordt verzonden
 
-   ![ Gebeurtenis door:sturen debugger ](assets/event-forwarding-debugger.png)
+   ![&#x200B; Gebeurtenis door:sturen debugger &#x200B;](assets/event-forwarding-debugger.png)
 
 
 1. Noteer de parameters viewPortHeight en ecid voor de queryreeks
 
-   ![ Gebeurtenis door:sturen bevestigt vraagkoorden ](assets/event-forwarding-validate-data.png)
+   ![&#x200B; Gebeurtenis door:sturen bevestigt vraagkoorden &#x200B;](assets/event-forwarding-validate-data.png)
 
 1. Ze komen overeen met de gegevens in het XDM-object
 
-   ![ Gebeurtenis door:sturen passende gegevens ](assets/event-forwarding-matching-data.png)
+   ![&#x200B; Gebeurtenis door:sturen passende gegevens &#x200B;](assets/event-forwarding-matching-data.png)
 
-1. Ten slotte, bevestig de gegevensgelijken in [ Webhaak.site ](https://webhook.site) eveneens door uw open venster van Webhaak te bekijken
+1. Ten slotte, bevestig de gegevensgelijken in [&#x200B; Webhaak.site &#x200B;](https://webhook.site) eveneens door uw open venster van Webhaak te bekijken
 
-   ![ Gebeurtenis die websitegegevens door:sturen webhaak ](assets/event-forwarding-webhook-data.png)
+   ![&#x200B; Gebeurtenis die websitegegevens door:sturen webhaak &#x200B;](assets/event-forwarding-webhook-data.png)
 
 Gefeliciteerd! U hebt gebeurtenis gevormd door:sturen!
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

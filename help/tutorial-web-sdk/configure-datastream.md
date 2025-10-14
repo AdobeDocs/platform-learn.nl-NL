@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom voor Adobe Experience Platform Web SDK configureert.
 
-[ gegevensstromen ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
+[&#x200B; gegevensstromen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
 
-![ SDK van het Web, gegevensstromen, en het diagram van Edge Network ](assets/dc-websdk-datastreams.png)
+![&#x200B; SDK van het Web, gegevensstromen, en het diagram van Edge Network &#x200B;](assets/dc-websdk-datastreams.png)
 
 ## Leerdoelstellingen
 
@@ -39,7 +39,7 @@ Nu, kunt u een gegevensstroom tot stand brengen om Platform Edge Network te vert
 
 **om een gegevensstroom tot stand te brengen:**
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/){target="_blank"}
+1. Open de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Zorg ervoor dat u zich in de juiste sandbox bevindt
 
    >[!NOTE]
@@ -51,13 +51,13 @@ Nu, kunt u een gegevensstroom tot stand brengen om Platform Edge Network te vert
 1. Voer `Luma Web SDK: Development Environment` in als de **[!UICONTROL Name]** . Deze naam wordt van verwijzingen voorzien later wanneer u de uitbreiding van SDK van het Web in uw markeringsbezit vormt.
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ creeer de datastream ](assets/datastream-create-new-datastream.png)
+   ![&#x200B; creeer de datastream &#x200B;](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >U hoeft geen schema te selecteren. Een schemaselectie wordt slechts vereist als u [ Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens ](/help/data-collection/edge/data-prep.md) gebruikt.
+   >U hoeft geen schema te selecteren. Een schemaselectie wordt slechts vereist als u [&#x200B; Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens &#x200B;](/help/data-collection/edge/data-prep.md) gebruikt.
 
-Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegevensstroom toevoegen, maar op dit moment kunt u geen services toevoegen. U zult dit later in de lessen [ Opstelling Experience Platform ](setup-experience-platform.md), [ Opstelling Analytics ](setup-analytics.md), [ Opstelling Audience Manager ](setup-audience-manager.md), [ het Doel van de Opstelling ](setup-target.md), of [ Gebeurtenis door:sturen ](setup-event-forwarding.md) doen.
+Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegevensstroom toevoegen, maar op dit moment kunt u geen services toevoegen. U zult dit later in de lessen [&#x200B; Opstelling Experience Platform &#x200B;](setup-experience-platform.md), [&#x200B; Opstelling Analytics &#x200B;](setup-analytics.md), [&#x200B; Opstelling Audience Manager &#x200B;](setup-audience-manager.md), [&#x200B; het Doel van de Opstelling &#x200B;](setup-target.md), of [&#x200B; Gebeurtenis door:sturen &#x200B;](setup-event-forwarding.md) doen.
 
 >[!NOTE]
 >
@@ -65,17 +65,17 @@ Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegeven
 
 ## Een gegevensstroom overschrijven
 
-[ DataStream treedt ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
+[&#x200B; DataStream treedt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
 
 De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 
 1. Eerst, bepaalt u gegevensstroom met voeten treedt in de configuratie van de datastream dienst. Bijvoorbeeld, zou u afwisselende het rapportreeksen van Analytics, de werkruimten van het Doel, of de datasets van het Platform kunnen bepalen om als met voeten te treden.
 1. Dan, verzendt u de met voeten treedt naar Edge Network of met een SDK van het Web verzendt gebeurtenisactie, of door een configuratie in de de markeringsuitbreiding van SDK van het Web.
 
-In de [ les van de Opstelling Adobe Analytics ](setup-analytics.md) &lbrace;, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
+In de [&#x200B; les van de Opstelling Adobe Analytics &#x200B;](setup-analytics.md) &lbrace;, treedt u de rapportreeks voor een pagina met voeten gebruikend SDK van het Web van het Platform verzendt de Actie van de Gebeurtenis.
 
 U kunt nu de extensie Platform Web SDK installeren in de eigenschap Tag.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

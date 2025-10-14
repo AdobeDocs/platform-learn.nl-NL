@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Productbeheerders toevoegen
 
-Leer hoe u productbeheerders voor Adobe Experience Platform kunt toevoegen. Productbeheerders beheren toegangsbeheer voor platformgebaseerde toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Zij kunnen gebruikers, ontwikkelaars, en extra beheerders in Admin Console tot stand brengen en dan hen (en API geloofsbrieven) toestemmingen in de interface van het Platform of van Journey Optimizer verlenen. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
+Leer hoe u productbeheerders voor Adobe Experience Platform kunt toevoegen. Productbeheerders beheren toegangsbeheer voor platformgebaseerde toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Zij kunnen gebruikers, ontwikkelaars, en extra beheerders in Admin Console tot stand brengen en dan hen (en API geloofsbrieven) toestemmingen in de interface van het Platform of van Journey Optimizer verlenen. Voor meer informatie, gelieve de [&#x200B; documentatie van het Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
 
 >[!TIP]
 >
->Wij adviseren u ook de productbeheerder als a **gebruiker** aan het `AEP-Default-All-Users` productprofiel in Admin Console toe te voegen en dan hen toe te voegen aan een rol in het toestemmingenscherm in de interface van het Platform. Zie [ gebruikers ](add-users.md) voor meer details toevoegen.
+>Wij adviseren u ook de productbeheerder als a **gebruiker** aan het `AEP-Default-All-Users` productprofiel in Admin Console toe te voegen en dan hen toe te voegen aan een rol in het toestemmingenscherm in de interface van het Platform. Zie [&#x200B; gebruikers &#x200B;](add-users.md) voor meer details toevoegen.

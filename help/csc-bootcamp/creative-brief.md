@@ -60,7 +60,7 @@ Het budget voor het project is $100.000.
 De lancering van onze nieuwe elektrische motor A1-productlijn biedt een geweldige kans om consumenten die zich bewust zijn van het milieu en de gezondheid, aan te trekken die op zoek zijn naar een betrouwbare, stijlvolle en handige manier van vervoer. Door ons merk te positioneren als modern, trendy en milieuvriendelijk, en door creatieve en innovatieve marketingstrategieën te gebruiken, kunnen we onze doelen bereiken en een marktleider worden in de elektrische fietsindustrie.
 
 
-Volgende Stap: [ Fase 1 - Planning: Planning ](./phases/planning/planning.md)
+Volgende Stap: [&#x200B; Fase 1 - Planning: Planning &#x200B;](./phases/planning/planning.md)
 
 [Ga terug naar de toeleveringsketen voor inhoud in vier fasen](./csc-in-4-phases.md)
 

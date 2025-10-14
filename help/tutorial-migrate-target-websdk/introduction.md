@@ -21,8 +21,8 @@ Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waar
 >
 >Soortgelijke migratiezelfstudies zijn beschikbaar voor:
 >
-> * [ Adobe Analytics ](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
-> * [ Adobe Audience Manager ](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [&#x200B; Adobe Analytics &#x200B;](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK is een client-side JavaScript-bibliotheek waar
 
 Enkele voordelen van het Web SDK van het Platform in vergelijking met de standalone bibliotheek at.js omvatten:
 
-* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
-* Capaciteit om [ eerste-partijids ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
+* Sneller het delen van publiek van [&#x200B; Real-Time Customer Data Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [&#x200B; levering van Offer Decisioning te steunen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
+* Capaciteit om [&#x200B; eerste-partijids &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) te gebruiken om ECID voor langere duur bezoekersidentificatie te produceren
 * Een kleinere voetafdruk voor verbeterde afmetingen voor de paginasnelheid
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
@@ -63,14 +63,14 @@ Aan het einde van deze zelfstudie kunt u het volgende doen:
 Als u deze zelfstudie wilt voltooien, moet u eerst:
 
 * Heb een technisch inzicht in uw huidige implementatie van Target at.js
-* Verzeker u een [ Redacteur of rol van de Uitgever ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw instantie van het Doel hebt zodat kunt u voorbeelden op uw eigen proberen
+* Verzeker u een [&#x200B; Redacteur of rol van de Uitgever &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL#section_8C425E43E5DD4111BBFC734A2B7ABC80) voor uw instantie van het Doel hebt zodat kunt u voorbeelden op uw eigen proberen
 * Weet hoe u activiteiten kunt opzetten in Adobe Target. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
-   * [ Gebruik Composer van de Visuele Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=nl-NL)
-   * [ gebruik de op vorm-Gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=nl-NL)
-   * [ creeer ervaring richtend Activiteiten ](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=nl-NL)
+   * [&#x200B; Gebruik Composer van de Visuele Ervaring &#x200B;](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=nl-NL)
+   * [&#x200B; gebruik de op vorm-Gebaseerde Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=nl-NL)
+   * [&#x200B; creeer ervaring richtend Activiteiten &#x200B;](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=nl-NL)
 
-Zodra u klaar bent, moet de eerste stap aan een succesvolle migratie [ over het migratieproces ](migration-overview.md) leren en hoe at.js en het Web SDK van het Platform verschillen.
+Zodra u klaar bent, moet de eerste stap aan een succesvolle migratie [&#x200B; over het migratieproces &#x200B;](migration-overview.md) leren en hoe at.js en het Web SDK van het Platform verschillen.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

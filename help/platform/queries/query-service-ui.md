@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Gebruikersinterface Query Service
 
-Leer hoe u query&#39;s schrijft en uitvoert, eerder uitgevoerde query&#39;s bekijkt en query&#39;s opent die zijn opgeslagen door andere gebruikers binnen uw IMS-organisatie in Adobe Experience Platform Query Service. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
+Leer hoe u query&#39;s schrijft en uitvoert, eerder uitgevoerde query&#39;s bekijkt en query&#39;s opent die zijn opgeslagen door andere gebruikers binnen uw IMS-organisatie in Adobe Experience Platform Query Service. Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333403?learn=on&enablevpops)

@@ -15,6 +15,6 @@ ht-degree: 33%
 
 # Gegevensstromen configureren
 
-Leer hoe te om gegevensstromen voor de implementaties van het Web en Mobiele SDK tot stand te brengen en te vormen. Voor meer informatie, gelieve te bezoeken [ de documentatie van gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL).
+Leer hoe te om gegevensstromen voor de implementaties van het Web en Mobiele SDK tot stand te brengen en te vormen. Voor meer informatie, gelieve te bezoeken [&#x200B; de documentatie van gegevensstromen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)

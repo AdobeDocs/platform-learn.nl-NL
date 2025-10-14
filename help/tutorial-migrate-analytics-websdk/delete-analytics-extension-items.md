@@ -27,13 +27,13 @@ We gaan ervan uit dat je alles al hebt getest en dat het correct werkt. Op dit p
 1. Open een van uw regels, bijvoorbeeld de standaard laadregel voor de pagina.
 1. Na de migratie voor deze regel hebt u waarschijnlijk 4 (of meer) acties uitgevoerd.
 
-   ![ Alle 4 acties ](assets/all-four-actions.jpg)
+   ![&#x200B; Alle 4 acties &#x200B;](assets/all-four-actions.jpg)
 
 1. Je kunt zien dat de eerste twee de id &#39;Adobe Analytics&#39; hebben. Dit zijn de acties die we willen verwijderen.
 1. Plaats de muis boven de eerste actie, zoals de actie &quot;Adobe Analytics - Set Variables&quot;, en een X staat verwijdering toe. Klik op de X en zie de handeling verdwijnen. Verwijder om het even welke en alle acties van Adobe Analytics in de regel, in dit geval de Vastgestelde actie van de Variabele en de Send actie van het Band.
 1. Hiermee blijven alleen de Web SDK-acties behouden
 
-   ![ de acties van SDK van het Web slechts ](assets/websdk-actions-only.jpg)
+   ![&#x200B; de acties van SDK van het Web slechts &#x200B;](assets/websdk-actions-only.jpg)
 
 1. Opslaan in bibliotheek
 1. Bouw de bibliotheek en test uw plaats, om ervoor te zorgen dat er geen nieuwe fouten zijn en dat alles behoorlijk werkt
@@ -48,7 +48,7 @@ Nu u de verwijzingen naar uw Adobe Analytics-extensie hebt verwijderd, kunt u de
 1. Selecteer de extensie Adobe Analytics.
 1. Kies in het rechterspoor of u de extensie wilt uitschakelen (of klik op de drie stippen en verwijder desgewenst de installatie).
 
-   ![ maak de uitbreiding van Analytics ](assets/disable-analytics-extension.jpg) onbruikbaar
+   ![&#x200B; maak de uitbreiding van Analytics &#x200B;](assets/disable-analytics-extension.jpg) onbruikbaar
 
 1. Doe het zelfde voor de uitbreiding van de Dienst van identiteitskaart van het Experience Cloud, aangezien u dat niet meer nodig zult hebben. De extensie Web SDK handelt de id af en u hebt dus geen extra extensie nodig.
 1. Doe het zelfde voor andere uitbreidingen die met de uitbreiding van Adobe Analytics worden geassocieerd, maar slechts nadat u de noodzakelijke migratieveranderingen hebt aangebracht.

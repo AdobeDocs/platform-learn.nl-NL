@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Overzicht van toestemming
 
-Leer hoe het beheer van toestemming in Adobe Experience Platform Web SDK u helpt aan wettelijke privacyvereisten te voldoen en de voorkeur van uw klanten te respecteren. Zie het overzicht op [ bestuur, privacy, en veiligheid in Platform ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=nl-NL#consent) voor meer informatie.
+Leer hoe het beheer van toestemming in Adobe Experience Platform Web SDK u helpt aan wettelijke privacyvereisten te voldoen en de voorkeur van uw klanten te respecteren. Zie het overzicht op [&#x200B; bestuur, privacy, en veiligheid in Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=nl-NL#consent) voor meer informatie.
 
 >[!NOTE]
 >

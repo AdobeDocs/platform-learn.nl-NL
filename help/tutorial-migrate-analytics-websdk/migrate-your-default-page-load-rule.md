@@ -27,18 +27,18 @@ In deze activiteit, zullen wij een actie van SDK van het Web tot stand brengen d
 1. Ga in de gebruikersinterface voor gegevensverzameling en in de eigenschap naar het scherm **[!UICONTROL Rules]** door deze te selecteren in de linkernavigatie.
 1. Selecteer de regel die uw **Analytics standaard ladingsregel** is. Als u niet weet welke regel uw standaard ladingsregel is, spreek met iemand die een kennis van de regels en wat in hen is. Opnieuw, zoeken wij een regel die op elke pagina loopt, sommige standaardvariabelen (b.v. paginanaam) plaatst, en dan een baken in Analytics verzendt. We zullen deze regel veranderen. Mijne naam is &quot;Alle pagina&#39;s - klaar voor DOM 50&quot;, maar u kunt alles een naam geven.
 
-   ![ Standaard paginalading regel ](assets/default-page-load-rule.jpg)
+   ![&#x200B; Standaard paginalading regel &#x200B;](assets/default-page-load-rule.jpg)
 
 1. Om de huidige acties van de uitbreiding van Analytics aan de uitbreiding van SDK van het Web te migreren, moeten wij weten welke variabelen worden geplaatst. Daarom klik in **Adobe Analytics - reeks Variabelen** actie zodat u kunt zien welke variabelen (b.v. PageName, steunen, steunen, gebeurtenissen, enz.) worden geplaatst.
 
-   ![ Adobe Analytics - reeks Variabelen ](assets/aa-set-variables.jpg)
+   ![&#x200B; Adobe Analytics - reeks Variabelen &#x200B;](assets/aa-set-variables.jpg)
    1. U ziet welke variabelen in die regel worden ingesteld
 
-      ![ Variabelen die ](assets/aa-vars-set.jpg) worden geplaatst
+      ![&#x200B; Variabelen die &#x200B;](assets/aa-vars-set.jpg) worden geplaatst
 
 1. Bij de bovenkant van de pagina, verander het radioknoop in **verstrekken JSON** en u zult met een codemening van de variabelen worden voorgesteld die worden geplaatst. Deze codemening en de mening UI zijn onderling verwisselbaar, en wanneer u om het even wat in één UI plaatst, zal het ook in andere UI worden bijgewerkt.
 
-   ![ een Reeks Vars JSON ](assets/aa-setvars-json.jpg)
+   ![&#x200B; een Reeks Vars JSON &#x200B;](assets/aa-setvars-json.jpg)
 
 1. Kopieer deze gegevens naar het klembord of sla deze op in een bestand dat u direct wilt gebruiken, omdat u in de volgende stappen die code gaat plakken in een nieuwe Web SDK-actie.
 1. Annuleer uit de Vastgestelde actie van Variabelen van de Analyse zodat u terug op de regel bent.
@@ -51,22 +51,22 @@ In deze activiteit, zullen wij een actie van SDK van het Web tot stand brengen d
 
 1. Klik **plus knoop** om een nieuwe actie van SDK van het Web toe te voegen.
 
-   ![ voeg nieuwe actie ](assets/add-new-action.jpg) toe
+   ![&#x200B; voeg nieuwe actie &#x200B;](assets/add-new-action.jpg) toe
 
 1. Selecteer **SDK van het Web van Adobe Experience Platform** van de drop-down Uitbreiding.
 1. Selecteer **Variabele van de Update** van het drop-down Type van Actie.
 1. Zorg ervoor dat het **element van Gegevens** dat bij de bovenkant van het juiste paneel wordt vermeld inderdaad uw nieuw veranderlijk-type gegevenselement is.
 1. In het rechterpaneel, selecteer het **voorwerp van Analytics** binnen het gegevensvoorwerp
-   ![ veranderlijke actie van de Update ](assets/define-update-variable-action.jpg)
+   ![&#x200B; veranderlijke actie van de Update &#x200B;](assets/define-update-variable-action.jpg)
 1. Nu verander het radioknoop in **verstrekt JSON of het Element van Gegevens** en kleeft de code die u in de vorige stap van Vastgestelde Variabelen in dit codevenster kopieerde. Vergeet niet dat wat we hier in de zelfstudie laten zien, slechts voorbeelden zijn. U kopieert en plakt uw eigen variabelen.
 
-   ![ Nieuwe de codedeeg van SDK van het Web ](assets/new-websdk-code-paste.jpg)
+   ![&#x200B; Nieuwe de codedeeg van SDK van het Web &#x200B;](assets/new-websdk-code-paste.jpg)
 Dit JSON-kopieerprogramma is speciaal gemaakt om migratie gemakkelijker te maken. Ik weet zeker dat u kunt zien hoe eenvoudig dit is in plaats van uitgebreide notities van de oude actie te moeten maken en deze toe te passen op de nieuwe actie.
 
 1. U kunt op elk gewenst moment het keuzerondje heen en weer schakelen om de waarden in de codeversie (hierboven weergegeven) of de gebruikersinterface van het zien van de kenmerken weer te geven. Selecteer **verstrekken individuele attributen** radioknoop om de bevolkte attributen te zien.
 
    ![&#128279;](assets/websdk-attributes-1.jpg) de attributen 1 van SDK van 0&rbrace; Web
-   ![ de attributen 2 van SDK van het Web ](assets/websdk-attributes-2.jpg)
+   ![&#x200B; de attributen 2 van SDK van het Web &#x200B;](assets/websdk-attributes-2.jpg)
 
 1. Wanneer u uw die variabelen kunt zien correct worden geplaatst, klik **Veranderingen houden/sparen.**
 
@@ -77,22 +77,22 @@ In deze activiteit, zullen wij tot een equivalent van SDK van het Web van Analyt
 1. Ga terug naar de standaardpaginalijn waar je net in zat.
 1. In de actiessectie, klik **plus knoop** om een andere actie toe te voegen. Dit zal onze **zijn verzendt gebeurtenis** actie.
 
-   ![ voeg nieuwe actie 2 ](assets/add-new-action-2.jpg) toe
+   ![&#x200B; voeg nieuwe actie 2 &#x200B;](assets/add-new-action-2.jpg) toe
 
 1. Om de actie te vormen, selecteer **van het Web SDK van 0&rbrace; Adobe Experience Platform van de drop-down Uitbreiding.**
 1. Selecteer **verzenden Gebeurtenis** van het Type van Actie.
 1. In het rechtse paneel, selecteer het pictogram van het gegevenselement naast het **Voorwerp van Gegevens**.
 
-   ![ Config verzendt gebeurtenis ](assets/send-event-config.jpg)
+   ![&#x200B; Config verzendt gebeurtenis &#x200B;](assets/send-event-config.jpg)
 
 1. Selecteer de Variabele van de Gegevens van de Mening van de Pagina (of wat u uw nieuw &quot;gegevens&quot;type gegevenselement) riep en klik dan **Uitgezochte** knoop.
 
-   ![ Uitgezochte het element van paginagegevens ](assets/select-data-element-variable.jpg)
+   ![&#x200B; Uitgezochte het element van paginagegevens &#x200B;](assets/select-data-element-variable.jpg)
 
 1. Klik **houden Veranderingen/sparen**.
 1. U zou nu alle vier acties (twee oude en twee nieuwe) in uw regel moeten zien
 
-   ![ Alle vier acties ](assets/all-four-actions.jpg)
+   ![&#x200B; Alle vier acties &#x200B;](assets/all-four-actions.jpg)
 
 ## Moet ik de acties van de extensie Analytics verwijderen?
 

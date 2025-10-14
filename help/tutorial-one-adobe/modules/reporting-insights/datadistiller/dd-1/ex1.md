@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Hulpprogramma PSQL-opdrachtregel installeren
 
 Volg de instructies in de documentatie van Adobe Experience Platform om de psql cliënt te installeren:
-[ PSQL installeert Gids ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=nl-NL)
+[&#x200B; PSQL installeert Gids &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=nl-NL)
 
 Zodra u PSQL hebt geïnstalleerd, kunt u uw **PAD** moeten bijwerken door het hieronder bevel in een eindvenster in werking te stellen:
 
@@ -28,7 +28,7 @@ Voor macOS (vervang XX in de onderstaande opdracht door het versienummer van de 
 
 Alleen voor Windows-gebruikers
 
-[ installeer Microsoft Power BI ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=nl-NL)
+[&#x200B; installeer Microsoft Power BI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=nl-NL)
 
 Zorg ervoor dat u de nauwkeurige versie van **npgsql** zoals vermeld op het document installeert, anders zult u geen Power BI met de Dienst van de Vraag van Adobe Experience Platform kunnen verbinden.
 
@@ -36,7 +36,7 @@ Zorg ervoor dat u de nauwkeurige versie van **npgsql** zoals vermeld op het docu
 
 Voor Windows- of Mac-gebruikers
 
-[ installeer de Desktop van Tableau ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=nl-NL) zoals per de documentatie.
+[&#x200B; installeer de Desktop van Tableau &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=nl-NL) zoals per de documentatie.
 
 Tableau geeft u automatisch een proefperiode van 14 dagen.
 
@@ -44,8 +44,8 @@ Als u Tableau langer dan die 14 dagen wilt gebruiken, hebt u een licentiecode no
 
 ## Volgende stappen
 
-Ga naar [ 2.1.2 Begonnen ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 2.1.2 Begonnen &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
+Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

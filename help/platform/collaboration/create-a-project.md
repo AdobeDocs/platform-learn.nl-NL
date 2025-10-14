@@ -22,4 +22,4 @@ Leer de basisbeginselen van het maken van projecten in Collaboration, inclusief 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464040/?learn=on&enablevpops&captions=dut)
 
-Voor meer informatie, bezoek de [ documentatie ](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
+Voor meer informatie, bezoek de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.

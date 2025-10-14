@@ -40,11 +40,11 @@ Kopieer de project-id in een gescheiden tekstbestand.
 
 U kunt uw identiteitskaart van het Project op elk ogenblik controleren door op uw **Naam van het Project** in de hoogste menubar te klikken:
 
-![ demo ](./images/ex1projectMenu.png)
+![&#x200B; demo &#x200B;](./images/ex1projectMenu.png)
 
 U ziet uw project-id aan de rechterkant:
 
-![ demo ](./images/ex1projetcselection.png)
+![&#x200B; demo &#x200B;](./images/ex1projetcselection.png)
 
 In deze oefening zult u leren hoe te om de andere 3 vereiste gebieden te krijgen:
 
@@ -56,15 +56,15 @@ In deze oefening zult u leren hoe te om de andere 3 vereiste gebieden te krijgen
 
 Ga om te beginnen terug naar de startpagina van het Google Cloud Platform. Klik hiertoe in de linkerbovenhoek van het scherm op het logo.
 
-![ demo ](./images/ex25.png)
+![&#x200B; demo &#x200B;](./images/ex25.png)
 
 Zodra u op de homepage bent, onderzoek naar **Platform van de Auth van Google** in de onderzoeksbar. Klik op het eerste resultaat om het te openen.
 
-![ demo ](./images/ex24.png)
+![&#x200B; demo &#x200B;](./images/ex24.png)
 
 U zult nu de **homepage van het Platform van de Auth van 0&rbrace; Google &lbrace;zien.** Klik **GET BEGONNEN**.
 
-![ demo ](./images/ex26.png)
+![&#x200B; demo &#x200B;](./images/ex26.png)
 
 Voor de **naam van de App**, gebruik dit:
 
@@ -76,33 +76,33 @@ Selecteer uw e-mailadres voor het gebied **e-mail van de de steunensteun van de 
 
 Klik **VOLGENDE**.
 
-![ demo ](./images/go1.png)
+![&#x200B; demo &#x200B;](./images/go1.png)
 
 Selecteer **Extern** en klik **VOLGENDE**.
 
-![ demo ](./images/go2.png)
+![&#x200B; demo &#x200B;](./images/go2.png)
 
 Ga uw e-mailadres in en klik **VOLGENDE**.
 
-![ demo ](./images/go3.png)
+![&#x200B; demo &#x200B;](./images/go3.png)
 
 Controleer checkbox en klik **DOORGAAN**. Dan, klik **CREËREN**.
 
-![ demo ](./images/go4.png)
+![&#x200B; demo &#x200B;](./images/go4.png)
 
 ## 1.2.3.2 OAuth-client maken
 
 Klik **CREEER OAUTH CLIENT**.
 
-![ demo ](./images/ex261.png)
+![&#x200B; demo &#x200B;](./images/ex261.png)
 
 Dan zie je dit.
 
-![ demo ](./images/ex2611.png)
+![&#x200B; demo &#x200B;](./images/ex2611.png)
 
 Selecteer **toepassing van het Web**.
 
-![ demo ](./images/ex212.png)
+![&#x200B; demo &#x200B;](./images/ex212.png)
 
 Er verschijnen meerdere nieuwe velden. U moet nu de **Naam** van identiteitskaart OAuth van de Cliënt ingaan en ook ingaan **Gemachtigde redirect URIs**.
 
@@ -112,7 +112,7 @@ Voor het gebied **Naam**, gebruik dit:
 | ----------------- |-------------| -------------| 
 | Naam | ldap - AEP BigQuery Connector | vangeluw - Platform BigQuery Connector |
 
-![ demo ](./images/ex2122.png)
+![&#x200B; demo &#x200B;](./images/ex2122.png)
 
 
 Klik **+ voeg URI** toe onder **Gemachtigde opnieuw richt URIs**. Voeg de onderstaande nieuwe URI toe.
@@ -125,11 +125,11 @@ Het **Gemachtigde opnieuw richten URIs** gebied is een zeer belangrijk gebied om
 
 Klik **creëren**.
 
-![ demo ](./images/ex2121.png)
+![&#x200B; demo &#x200B;](./images/ex2121.png)
 
 Uw OAuth-client-id is nu gemaakt. Klik erop om nu uw client-id en uw clientgeheim te zien.
 
-![ demo ](./images/ex220.png)
+![&#x200B; demo &#x200B;](./images/ex220.png)
 
 U zult dan de waarden voor identiteitskaart van de Cliënt en Geheime cliënt zien.
 
@@ -143,15 +143,15 @@ Als recap voor de configuratie van de BigQuery Source Connector in Adobe Experie
 | clientid | uzelf |
 | kindergeheim | uw clientgeheim |
 
-![ demo ](./images/ex2200.png)
+![&#x200B; demo &#x200B;](./images/ex2200.png)
 
 Vervolgens moet u uw OAuth-app publiceren. Ga naar **Publiek** en klik **PUBLISH APP**.
 
-![ demo ](./images/ex2pub1.png)
+![&#x200B; demo &#x200B;](./images/ex2pub1.png)
 
 Klik **BEVESTIGEN**.
 
-![ demo ](./images/ex2pub2.png)
+![&#x200B; demo &#x200B;](./images/ex2pub2.png)
 
 U mist nog **refreshToken**. refreshToken is een vereiste wegens veiligheidsredenen. In de wereld van APIs, verlopen de tekenen typisch om de 24 uur. Zo **refreshToken** is nodig om het veiligheidstoken om de 24 uur te verfrissen, zodat uw opstelling van de Verbinding van Source het verbinden met het Platform van de Wolk van Google en BigQuery kan houden.
 
@@ -160,17 +160,17 @@ U mist nog **refreshToken**. refreshToken is een vereiste wegens veiligheidsrede
 Er zijn verschillende manieren om een refreshToken te verkrijgen voor toegang tot API&#39;s van het Google Cloud-platform. Een van deze opties is bijvoorbeeld het gebruik van Postman.
 Nochtans, heeft Google iets gemakkelijker gebouwd om met hun APIs te testen en te spelen, een hulpmiddel genoemd **OAuth 2.0 Playground**.
 
-Om tot **OAuth 2.0 Playground** toegang te hebben, ga [ https://developers.google.com/oauthplayground ](https://developers.google.com/oauthplayground).
+Om tot **OAuth 2.0 Playground** toegang te hebben, ga [&#x200B; https://developers.google.com/oauthplayground &#x200B;](https://developers.google.com/oauthplayground).
 
 U zult dan **OAuth 2.0 de homepage van de Playground** zien.
 
-![ demo ](./images/ex222.png)
+![&#x200B; demo &#x200B;](./images/ex222.png)
 
 Klik op het **versnelling** pictogram in de hoogste juiste kant van uw scherm. Zorg ervoor dat de instellingen overeenkomen met de instellingen in de bovenstaande afbeelding.
 
 Controle checkbox: **gebruik uw eigen geloofsbrieven OAuth**
 
-![ demo ](./images/ex2221.png)
+![&#x200B; demo &#x200B;](./images/ex2221.png)
 
 Er worden twee velden weergegeven.
 
@@ -183,53 +183,53 @@ Vul de velden volgende op deze tabel in:
 
 Zodra u uw geloofsbrieven hebt ingevuld, te klikken gelieve **dicht**.
 
-![ demo ](./images/ex223a.png)
+![&#x200B; demo &#x200B;](./images/ex223a.png)
 
 In het linkermenu ziet u alle beschikbare Google API&#39;s. Onderzoek naar **BigQuery API v2** en klik het om het te openen.
 
-![ demo ](./images/ex227.png)
+![&#x200B; demo &#x200B;](./images/ex227.png)
 
 Selecteer vervolgens het bereik dat wordt aangegeven in de onderstaande afbeelding. U moet op elk van de beschikbare API&#39;s klikken en voor elke geselecteerde API wordt een vinkje weergegeven.
 
 Daarna, klik **autoriseer APIs**.
 
-![ demo ](./images/ex226.png)
+![&#x200B; demo &#x200B;](./images/ex226.png)
 
 Klik op het e-mailadres dat u hebt gebruikt voor het instellen van GCP en BigQuery.
 
-![ demo ](./images/ex2266.png)
+![&#x200B; demo &#x200B;](./images/ex2266.png)
 
 U zult dan een grote waarschuwing zien: **Deze app wordt niet geverifieerd**. Dit gebeurt omdat uw Platform BigQuery Connector nog niet formeel is gecontroleerd, zodat Google niet weet of het een authentieke app is of niet.
 
 Klik **Geavanceerd**.
 
-![ demo ](./images/ex232.png)
+![&#x200B; demo &#x200B;](./images/ex232.png)
 
 Daarna, klik op **gaan naar —aepUserLoad— - de Schakelaar van AEP BigQuery (onveilig)**.
 
-![ demo ](./images/ex233.png)
+![&#x200B; demo &#x200B;](./images/ex233.png)
 
 U zult dan een veiligheidsherinnering voor toegang zien. Klik **Uitgezocht allen**.
 
-![ demo ](./images/ex229.png)
+![&#x200B; demo &#x200B;](./images/ex229.png)
 
 De rol neer en klikt **gaat** verder.
 
-![ demo ](./images/ex230.png)
+![&#x200B; demo &#x200B;](./images/ex230.png)
 
 U wordt nu teruggestuurd naar OAuth 2.0 Playground en u zult dit zien. Klik **de vergunningscode van de Uitwisseling voor tokens**.
 
-![ demo ](./images/ex236.png)
+![&#x200B; demo &#x200B;](./images/ex236.png)
 
 Na een paar seconden, zal de **Stap 2 - de vergunningscode van de Uitwisseling voor tokens** mening automatisch sluiten, en u zult **Stap 3 zien - verzoek aan API** vormen.
 
 U moet terug naar **Stap 2 de vergunningscode van de Uitwisseling voor tokens** gaan, zodat klik op **Stap 2 de vergunningscode van de Uitwisseling voor tokens** opnieuw om **te visualiseren verfrissen teken**.
 
-![ demo ](./images/ex237.png)
+![&#x200B; demo &#x200B;](./images/ex237.png)
 
 U zult nu **het verfrissen teken** zien.
 
-![ demo ](./images/ex238.png)
+![&#x200B; demo &#x200B;](./images/ex238.png)
 
 Kopieer het **verfrissen teken** en kleef het in het tekstdossier op uw Desktop samen met andere Referenties van de Verbinding van BigQuery Source:
 
@@ -244,25 +244,25 @@ Stel vervolgens uw Source-connector in Adobe Experience Platform in.
 
 ## 1.2.3.5 - Verbind Platform met uw eigen Lijst van de BigQuery
 
-Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+Login aan Adobe Experience Platform door naar dit URL te gaan: [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform).
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, klik op **Gegevensbestanden**. Klik de **kaart van Google BigQuery**. Daarna, klik **Opstelling**.
 
-![ demo ](./images/s1.png)
+![&#x200B; demo &#x200B;](./images/s1.png)
 
 Maak nu een nieuwe verbinding.
 
 Klik **Nieuwe rekening**. U moet nu alle hieronder gebieden invullen, die op de opstelling worden gebaseerd u in GCP en BigQuery deed.
 
-![ demo ](./images/s3.png)
+![&#x200B; demo &#x200B;](./images/s3.png)
 
 Laten we beginnen met de naam van de verbinding:
 
@@ -275,7 +275,7 @@ Gebruik deze naamgevingsconventie:
 
 Dan heb je het volgende:
 
-![ demo ](./images/ex239a.png)
+![&#x200B; demo &#x200B;](./images/ex239a.png)
 
 Daarna, vul GCP en BigQuery API **de Authentificatie van de Rekening** - details in die u in een tekst-dossier op uw Desktop opsloeg:
 
@@ -288,22 +288,22 @@ Daarna, vul GCP en BigQuery API **de Authentificatie van de Rekening** - details
 
 Uw **Authentificatie van de Rekening** - details zouden nu als dit moeten kijken. Klik **verbinden met bron**.
 
-![ demo ](./images/ex239xx.png)
+![&#x200B; demo &#x200B;](./images/ex239xx.png)
 
 Als uw **details van de Authentificatie van de 0&rbrace; Rekening correct werden ingevuld, zou u nu een visuele bevestiging moeten zien dat de verbinding behoorlijk werkt, door de** Verbonden **bevestiging te zien.** Klik **daarna**.
 
-![ demo ](./images/ex2projectid.png)
+![&#x200B; demo &#x200B;](./images/ex2projectid.png)
 
 U zult nu de dataset zien BigQuery u in de vorige oefening creeerde.
 
-![ demo ](./images/datasets.png)
+![&#x200B; demo &#x200B;](./images/datasets.png)
 
 Goed gedaan! In de volgende oefening, zult u gegevens van die lijst laden en het tegen een schema en dataset in Adobe Experience Platform in kaart brengen.
 
 ## Volgende stappen
 
-Ga naar [ 1.2.4 gegevens van de Lading van BigQuery in Adobe Experience Platform ](./ex4.md){target="_blank"}
+Ga naar [&#x200B; 1.2.4 gegevens van de Lading van BigQuery in Adobe Experience Platform &#x200B;](./ex4.md){target="_blank"}
 
-Ga terug naar [ Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
+Ga terug naar [&#x200B; Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

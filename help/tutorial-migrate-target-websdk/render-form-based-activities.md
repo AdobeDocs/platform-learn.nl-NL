@@ -100,7 +100,7 @@ De SDK van het Web van het Platform biedt grotere controle voor het toepassen va
 | `replaceHtml` | De container verwijderen en vervangen door de aanbieding | Nee | Ja |
 | `appendHtml` | Hiermee wordt het aanbod toegevoegd na de opgegeven kiezer | Nee | Ja |
 
-Verwijs naar de [ specifieke documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=nl-NL) over het teruggeven van inhoud gebruikend het Web SDK van het Platform voor extra het teruggeven opties en voorbeelden.
+Verwijs naar de [&#x200B; specifieke documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=nl-NL) over het teruggeven van inhoud gebruikend het Web SDK van het Platform voor extra het teruggeven opties en voorbeelden.
 
 ## Voorbeeld van implementatie
 
@@ -197,8 +197,8 @@ De voorbeeldpagina hieronder bouwt verder op de implementatie die in de vorige s
 </html>
 ```
 
-Daarna, leer hoe te [ parameters overgaan van het Doel gebruikend het Web SDK van het Platform ](send-parameters.md).
+Daarna, leer hoe te [&#x200B; parameters overgaan van het Doel gebruikend het Web SDK van het Platform &#x200B;](send-parameters.md).
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

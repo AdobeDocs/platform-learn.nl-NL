@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Om deze oefening te voltooien, moet u toegang tot een werkende AEM Sites en Assets CS met milieu EDS hebben.
 >
->Als u zulk een milieu nog niet hebt, ga [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} uitoefenen. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
+>Als u zulk een milieu nog niet hebt, ga [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} uitoefenen. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >
@@ -27,53 +27,53 @@ In deze oefening, zult u AEM Sites CS/EDS Storefront aan het ACCS achterste verb
 
 Aan het eind van deze oefening, zou u de producten moeten zien die u in de vorige oefening vormde verschijnen op de **pagina van de de productlijst van Telefoons** op uw Storefront van AEM Sites CS/EDS.
 
-![ ACCS+AEM Sites ](./images/accsaemsites0.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites0.png)
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat u zich in de juiste omgeving bevindt, die u `--aepImsOrgName--` moet noemen. Klik **Commerce**.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat u zich in de juiste omgeving bevindt, die u `--aepImsOrgName--` moet noemen. Klik **Commerce**.
 
-![ ACCS+AEM Sites ](./images/accsaemsites1.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites1.png)
 
 Klik het **info** pictogram naast uw instantie ACCS, die zou moeten worden genoemd `--aepUserLdap-- - ACCS`.
 
-![ ACCS+AEM Sites ](./images/accsaemsites2.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites2.png)
 
 Dan moet je dit zien. Kopieer het **eindpunt van GraphQL**.
 
-![ ACCS+AEM Sites ](./images/accsaemsites3.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites3.png)
 
-Ga naar [ https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator ](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). U moet nu een bestand config.json genereren dat wordt gebruikt om uw AEM Sites CS Storefront te koppelen aan uw ACCS-backend.
+Ga naar [&#x200B; https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). U moet nu een bestand config.json genereren dat wordt gebruikt om uw AEM Sites CS Storefront te koppelen aan uw ACCS-backend.
 
 Op de **pagina van de Generator Config**, kleef het **eindpunt van GraphQL** url die u kopieerde.
 
 Klik **produceren**.
 
-![ ACCS+AEM Sites ](./images/accsaemsites4.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites4.png)
 
 Kopieer de volledige gegenereerde JSON-lading.
 
-![ ACCS+AEM Sites ](./images/accsaemsites5.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites5.png)
 
-Ga naar de gegevensopslagplaats GitHub die werd gecreeerd toen vestiging uw milieu van AEM Sites CS/EDS. Die bewaarplaats werd gecreeerd in de oefening [ 1.1.2 Opstelling uw milieu van AEM CS ](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} en zou moeten worden genoemd **burgerschap-naam-toegang**.
+Ga naar de gegevensopslagplaats GitHub die werd gecreeerd toen vestiging uw milieu van AEM Sites CS/EDS. Die bewaarplaats werd gecreeerd in de oefening [&#x200B; 1.1.2 Opstelling uw milieu van AEM CS &#x200B;](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} en zou moeten worden genoemd **burgerschap-naam-toegang**.
 
-![ ACCS+AEM Sites ](./images/accsaemsites6.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites6.png)
 
 In de wortelfolder, scrol neer en klik om het dossier **config.json** te openen.
 
-![ ACCS+AEM Sites ](./images/accsaemsites7.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites7.png)
 
 Klik **uitgeven** pictogram.
 
-![ ACCS+AEM Sites ](./images/accsaemsites8.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites8.png)
 
 Verwijder al huidige tekst en vervang het door de nuttige lading te kleven JSON u op de **pagina van de Generator van 1&rbrace; Config kopieerde.**
 
 Klik **Veranderingen vastleggen...**.
 
-![ ACCS+AEM Sites ](./images/accsaemsites9.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites9.png)
 
 Klik **Veranderingen** vastleggen.
 
-![ ACCS+AEM Sites ](./images/accsaemsites10.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites10.png)
 
 Het {**dossier 0} config.json werd nu bijgewerkt.** U moet uw wijzigingen binnen een paar minuten bekijken op de website. De manier om te verifiëren als de veranderingen met succes werden opgenomen is naar de **Telefoons** productpagina te gaan. U zou **iPhone AIR** nu moeten zien verschijnen op de pagina.
 
@@ -82,12 +82,12 @@ Als u toegang wilt tot uw website, gaat u naar `main--citisignal-aem-accs--XXX.a
 In dit voorbeeld wordt de volledige URL als volgt:
 `https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
 
-![ ACCS+AEM Sites ](./images/accsaemsites11.png)
+![&#x200B; ACCS+AEM Sites &#x200B;](./images/accsaemsites11.png)
 
 Hoewel het product nu met succes wordt weergegeven, is er nog geen afbeelding beschikbaar voor het product. De volgende exercitie stelt u de koppeling met AEM Assets CS in voor productafbeeldingen.
 
-Volgende Stap: [ verbind ACCS met AEM Assets CS ](./ex3.md){target="_blank"}
+Volgende Stap: [&#x200B; verbind ACCS met AEM Assets CS &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ Adobe Commerce as a Cloud Service ](./accs.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](./accs.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

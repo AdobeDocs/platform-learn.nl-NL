@@ -16,14 +16,14 @@ Deze handleiding is bedoeld voor ervaren Adobe Target-implementatoren die leren 
 
 Adobe Experience Platform Mobile SDK biedt volledige betrokkenheid bij uw mobiele toepassingen. De extensie Doel bouwt verder op de Mobile SDK om u te helpen uw app-ervaringen met Adobe Target aan te passen. De Offer Decisioning- en Target-extensie is een nieuwere benadering voor het implementeren van Adobe Target in mobiele apps die gebruikmaken van Adobe Experience Platform Edge Network-mogelijkheden die helpen bij de integratie van Target met platformgebaseerde apps zoals Real-Time CDP en Journey Optimizer.
 
-![ Diagram die Mobiele SDK tonen die met Doel door Edge Network met Offer Decisioning en de uitbreiding van het Doel verbinden ](assets/datacollection.png)
+![&#x200B; Diagram die Mobiele SDK tonen die met Doel door Edge Network met Offer Decisioning en de uitbreiding van het Doel verbinden &#x200B;](assets/datacollection.png)
 
 ## Belangrijkste voordelen
 
 Enkele voordelen van de Adobe Journey Optimizer Offer Decisioning en de Target-extensie in vergelijking met de Target-extensie zijn:
 
-* Sneller het delen van publiek van [ Real-Time Customer Data Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Het integreren Doel met Journey Optimizer om [ levering van Offer Decisioning te steunen ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
+* Sneller het delen van publiek van [&#x200B; Real-Time Customer Data Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Het integreren Doel met Journey Optimizer om [&#x200B; levering van Offer Decisioning te steunen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/ajo/offer-decision)
 * Een nauwere integratie met Adobe Analytics die niet afhankelijk is van het koppelen van informatie van afzonderlijke netwerkoproepen
 * Extra implementatieflexibiliteit voor ontwikkelaars
 
@@ -58,8 +58,8 @@ Het migratieproces omvat de volgende belangrijke stappen:
 > * **SDK van het Doel** voert de **uitbreiding van Adobe Target** uit
 > * **optimaliseer SDK** voert **Offer Decisioning en de uitbreiding van het Doel** uit
 
-Daarna, herzie de gedetailleerde [ vergelijking van de uitbreiding van het Doel en de uitbreiding van Offer Decisioning en van het Doel ](comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
+Daarna, herzie de gedetailleerde [&#x200B; vergelijking van de uitbreiding van het Doel en de uitbreiding van Offer Decisioning en van het Doel &#x200B;](comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

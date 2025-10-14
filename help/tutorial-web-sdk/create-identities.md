@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Identiteiten maken
 
-Leer hoe u identiteiten vastlegt met Adobe Experience Platform Web SDK. Vang zowel unauthenticated als voor authentiek verklaarde identiteitsgegevens over de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om de gegevenselementen te gebruiken u vroeger voor het verzamelen van voor authentiek verklaarde gegevens met een het gegevenselementtype van het Web SDK van het Platform riep Identiteitskaart creeerde.
+Leer hoe u identiteiten vastlegt met Adobe Experience Platform Web SDK. Vang zowel unauthenticated als voor authentiek verklaarde identiteitsgegevens over de [&#x200B; plaats van de de demo van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html). Leer hoe te om de gegevenselementen te gebruiken u vroeger voor het verzamelen van voor authentiek verklaarde gegevens met een het gegevenselementtype van het Web SDK van het Platform riep Identiteitskaart creeerde.
 
 Deze les richt zich op het element van de het kaartgegevens van de Identiteit beschikbaar met de de etikettenuitbreiding van Adobe Experience Platform Web SDK. U wijst gegevenselementen met een geverifieerde gebruikers-id en verificatiestatus toe aan XDM.
 
@@ -27,7 +27,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [ de duimplaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag wordt, en weet hoe te om gegevenselementen in markeringen van verwijzingen te voorzien. U moet de vorige lessen in het leerprogramma hebben voltooid:
+U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [&#x200B; de duimplaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag wordt, en weet hoe te om gegevenselementen in markeringen van verwijzingen te voorzien. U moet de vorige lessen in het leerprogramma hebben voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -38,7 +38,7 @@ U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [ de duimplaats van 
 
 ## Experience Cloud-id
 
-[ identiteitskaart van Experience Cloud (ECID) ](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) is een gedeelde identiteit namespace die over de toepassingen van Adobe Experience Platform en van Adobe Experience Cloud wordt gebruikt. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. ECID is de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag, omdat deze altijd aanwezig is.
+[&#x200B; identiteitskaart van Experience Cloud (ECID) &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/ecid) is een gedeelde identiteit namespace die over de toepassingen van Adobe Experience Platform en van Adobe Experience Cloud wordt gebruikt. ECID vormt de basis voor de identiteit van de klant en is de standaardidentiteit voor digitale eigenschappen. ECID is de ideale id voor het bijhouden van niet-geverifieerd gebruikersgedrag, omdat deze altijd aanwezig is.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,13 +47,13 @@ U hebt inzicht in wat een gegevenslaag is, vertrouwd met de [ de duimplaats van 
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Lees meer over hoe [ ECIDs gebruikend het Web SDK van het Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/overview) wordt gevolgd.
+Lees meer over hoe [&#x200B; ECIDs gebruikend het Web SDK van het Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/overview) wordt gevolgd.
 
 ECID&#39;s worden ingesteld met behulp van een combinatie van eersteklas cookies en Platform Edge Network. Door gebrek, worden de eerste-partijidentiteitskoekjes geplaatst cliënt-kant door het Web SDK. Als u browserbeperkingen voor de levensduur van cookies wilt compenseren, kunt u ervoor kiezen om uw eigen server-side cookies met de identiteit van de eerste partij in te stellen. Deze identiteitscookies worden ook wel FPID&#39;s (FPID&#39;s) genoemd.
 
 >[!IMPORTANT]
 >
->De [ uitbreiding van de Dienst van identiteitskaart van Experience Cloud ](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig wanneer het uitvoeren van SDK van het Web van Adobe Experience Platform, aangezien de functionaliteit van de Dienst van identiteitskaart in SDK van het Web van het Platform wordt gebouwd.
+>De [&#x200B; uitbreiding van de Dienst van identiteitskaart van Experience Cloud &#x200B;](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig wanneer het uitvoeren van SDK van het Web van Adobe Experience Platform, aangezien de functionaliteit van de Dienst van identiteitskaart in SDK van het Web van het Platform wordt gebouwd.
 
 ## FPID (First Party Device ID)
 
@@ -61,7 +61,7 @@ FPIDs is eerste-partijkoekjes _u plaatst gebruikend uw eigen Webservers_ die Ado
 
 Nadat een FPID-cookie is ingesteld, kan de waarde ervan worden opgehaald en naar Adobe worden verzonden wanneer gebeurtenisgegevens worden verzameld. Verzamelde FPID&#39;s worden gebruikt als zaden om ECID&#39;s te genereren op Platform Edge Network, die de standaard-id&#39;s blijven in Adobe Experience Cloud-toepassingen.
 
-Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Lees meer over [ het apparaat IDs van de Eerste partij in het Web SDK van het Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/first-party-device-ids)
+Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPIDs in uw eigen implementatie van SDK van het Web te gebruiken. Lees meer over [&#x200B; het apparaat IDs van de Eerste partij in het Web SDK van het Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Hoewel FPIDs niet in deze zelfstudie wordt gebruikt, wordt u aangemoedigd om FPI
 
 Zoals hierboven vermeld, wordt aan alle bezoekers van uw digitale eigenschappen een ECID toegewezen door Adobe bij het gebruik van Platform Web SDK. ECID is de standaardidentiteit voor het bijhouden van niet-geverifieerd digitaal gedrag.
 
-U kunt een voor authentiek verklaarde gebruikersidentiteitskaart ook verzenden zodat het Platform [ Grafieken van de Identiteit ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) kan tot stand brengen en het Doel kan zijn [ Identiteitskaart van de Derde ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) plaatsen. Het instellen van de geverifieerde id gebeurt met behulp van het gegevenstype [!UICONTROL Identity Map] data element.
+U kunt een voor authentiek verklaarde gebruikersidentiteitskaart ook verzenden zodat het Platform [&#x200B; Grafieken van de Identiteit &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) kan tot stand brengen en het Doel kan zijn [&#x200B; Identiteitskaart van de Derde &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) plaatsen. Het instellen van de geverifieerde id gebeurt met behulp van het gegevenstype [!UICONTROL Identity Map] data element.
 
 Het gegevenselement [!UICONTROL Identity Map] maken:
 
@@ -85,11 +85,11 @@ Het gegevenselement [!UICONTROL Identity Map] maken:
 
 1. Hierdoor wordt rechts in de **[!UICONTROL Data Collection interface]** een schermgebied voor u gevraagd om de identiteit te configureren:
 
-   ![ de interface van de Inzameling van Gegevens ](assets/identity-identityMap-setup.png)
+   ![&#x200B; de interface van de Inzameling van Gegevens &#x200B;](assets/identity-identityMap-setup.png)
 
-1. Als **[!UICONTROL Namespace]**, selecteer `lumaCrmId` namespace die u eerder in [ creeerde vormen de 3&rbrace; les van Identiteiten &lbrace;vormt. ](configure-identities.md) Als deze niet in de vervolgkeuzelijst wordt weergegeven, typt u deze.
+1. Als **[!UICONTROL Namespace]**, selecteer `lumaCrmId` namespace die u eerder in [&#x200B; creeerde vormen de 3&rbrace; les van Identiteiten &lbrace;vormt. &#x200B;](configure-identities.md) Als deze niet in de vervolgkeuzelijst wordt weergegeven, typt u deze.
 
-1. Nadat **[!UICONTROL Namespace]** is geselecteerd, moet een id worden ingesteld. Selecteer het `user.profile.attributes.username` gegevenselement dat vroeger in [ wordt gecreeerd creeer gegevenselementen ](create-data-elements.md#create-data-elements-to-capture-the-data-layer) les, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
+1. Nadat **[!UICONTROL Namespace]** is geselecteerd, moet een id worden ingesteld. Selecteer het `user.profile.attributes.username` gegevenselement dat vroeger in [&#x200B; wordt gecreeerd creeer gegevenselementen &#x200B;](create-data-elements.md#create-data-elements-to-capture-the-data-layer) les, die een identiteitskaart vangt wanneer de gebruikers in de plaats van de Luma worden geregistreerd.
 
    <!--  >[!TIP]
     >
@@ -103,7 +103,7 @@ Het gegevenselement [!UICONTROL Identity Map] maken:
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ de interface van de Inzameling van Gegevens ](assets/identity-id-namespace.png)
+   ![&#x200B; de interface van de Inzameling van Gegevens &#x200B;](assets/identity-id-namespace.png)
 
 >[!TIP]
 >
@@ -149,4 +149,4 @@ Met deze gegevenselementen op zijn plaats, bent u klaar om gegevens naar Platfor
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 1.2.5.1 Een verbinding maken
 
-Ga naar [ analytics.adobe.com ](https://analytics.adobe.com) om tot Customer Journey Analytics toegang te hebben.
+Ga naar [&#x200B; analytics.adobe.com &#x200B;](https://analytics.adobe.com) om tot Customer Journey Analytics toegang te hebben.
 
-![ demo ](./images/1a.png)
+![&#x200B; demo &#x200B;](./images/1a.png)
 
 Op de homepage van Customer Journey Analytics, ga naar **Verbindingen**.
 
@@ -31,11 +31,11 @@ Hier kunt u alle verschillende verbindingen zien die tussen CJA en Platform word
 
 Klik **creëren nieuwe verbinding**.
 
-![ demo ](./images/conn3.png)
+![&#x200B; demo &#x200B;](./images/conn3.png)
 
 U zult dan **&#x200B;**&#x200B;UI zien creëren Verbinding.
 
-![ demo ](./images/5.png)
+![&#x200B; demo &#x200B;](./images/5.png)
 
 Gebruik voor de naam: `--aepUserLdap-- - GA + Loyalty Data Connection` .
 
@@ -45,7 +45,7 @@ Plaats het **Gemiddelde aantal dagelijkse gebeurtenissen** aan **minder dan 1 mi
 
 In het datastemenu, kunt u beginnen datasets toe te voegen. Klik **toevoegen datasets**.
 
-![ demo ](./images/6.png)
+![&#x200B; demo &#x200B;](./images/6.png)
 
 De gegevenssets die moeten worden toegevoegd zijn:
 - `Demo System - Profile Dataset for CRM (Global v1.1)`
@@ -53,29 +53,29 @@ De gegevenssets die moeten worden toegevoegd zijn:
 
 Onderzoek naar beide datasets, controleer hun checkbox en klik dan **daarna**.
 
-![ demo ](./images/d1.png)
+![&#x200B; demo &#x200B;](./images/d1.png)
 
 U zult dan dit zien:
 
-![ demo ](./images/8.png)
+![&#x200B; demo &#x200B;](./images/8.png)
 
 Voor de dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verander **identiteitskaart van de Persoon** in **loyaltyId** en plaats het **Van de Gegevensbron type** aan **Gegevens van het Web**. Laat beide opties voor **invoer toe alle nieuwe gegevens** en **Achtergrond alle bestaande gegevens**.
 
-![ demo ](./images/d2.png)
+![&#x200B; demo &#x200B;](./images/d2.png)
 
 Voor de dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verifieer dat **identiteitskaart van de Persoon** aan **crmId** wordt geplaatst en het **Van de Gegevensbron type** plaatst aan **Gegevens van het Web**. Laat beide opties voor **invoer toe alle nieuwe gegevens** en **Achtergrond alle bestaande gegevens**. Klik **toevoegen datasets**.
 
-![ demo ](./images/d3.png)
+![&#x200B; demo &#x200B;](./images/d3.png)
 
 Dan ben je hier. Klik **sparen**.
 
-![ demo ](./images/d4.png)
+![&#x200B; demo &#x200B;](./images/d4.png)
 
 Na het creëren van uw **Verbinding** kan het een paar uren nemen alvorens uw gegevens in CJA beschikbaar zijn.
 
 U zult dan uw verbinding in de lijst van beschikbare verbindingen zien.
 
-![ demo ](./images/d5.png)
+![&#x200B; demo &#x200B;](./images/d5.png)
 
 ## 1.2.5.2 Een gegevensweergave maken
 
@@ -93,11 +93,11 @@ Als u uw bedrijf gegevensgedreven wilt worden, zou u moeten aanpassen hoe de geg
 
 Voor het **scherm van Verbindingen**, controleer checkbox voor de verbinding u enkel creeerde. Klik **creëren gegevensmening**.
 
-![ demo ](./images/exta.png)
+![&#x200B; demo &#x200B;](./images/exta.png)
 
 U zult aan **worden opnieuw gericht creeer het werkschema van de Mening van Gegevens**.
 
-![ demo ](./images/extc.png)
+![&#x200B; demo &#x200B;](./images/extc.png)
 
 U kunt de basisdefinities voor uw gegevensmening nu vormen. Dingen zoals Tijdzone, Sessietime-out of het filteren van de gegevensweergave (het segmenteringsonderdeel dat lijkt op Virtuele rapportsets in Adobe Analytics).
 
@@ -117,15 +117,15 @@ Voordat we een analyse of visualisatie kunnen uitvoeren, moeten we een gegevensw
 
 Klik **sparen en ga** verder.
 
-![ demo ](./images/22.png)
+![&#x200B; demo &#x200B;](./images/22.png)
 
 Klik **sparen**.
 
-![ demo ](./images/22a.png)
+![&#x200B; demo &#x200B;](./images/22a.png)
 
 U kunt nu componenten toevoegen aan uw gegevensweergave. Zoals u kunt zien, worden sommige metriek en afmetingen automatisch toegevoegd.
 
-![ demo ](./images/24.png)
+![&#x200B; demo &#x200B;](./images/24.png)
 
 Voeg de onderstaande componenten toe aan de gegevensweergave. Zorg er ook voor dat u de veldnamen bijwerkt naar vriendelijke namen. Om dat te doen, selecteer metrisch of afmeting en werk het **gebied van de 1&rbrace; naam van de Component** in het juiste menu bij.
 
@@ -154,7 +154,7 @@ Voeg de onderstaande componenten toe aan de gegevensweergave. Zorg er ook voor d
 
 Dan heb je iets als dit:
 
-![ demo ](./images/25b.png)
+![&#x200B; demo &#x200B;](./images/25b.png)
 
 Daarna, moet u sommige veranderingen in de Persoon en context van de Zitting voor sommige van deze componenten aanbrengen door de **Montages van de Attributie of van de Persistentie** te veranderen.
 
@@ -171,15 +171,15 @@ Gelieve te veranderen de **Montages van de Attributie** voor de hieronder compon
 
 Om dat te doen, selecteer de component, klik **model van de douaneattributie van het Gebruik** en plaats het **Model** aan **Recentste**, en de **Vervalsing** aan **Persoon die Venster** meldt. Herhaal dit voor alle bovengenoemde componenten.
 
-![ demo ](./images/27a.png)
+![&#x200B; demo &#x200B;](./images/27a.png)
 
 Na het aanbrengen van de veranderingen in attributie montages voor alle bovengenoemde componenten, zou u deze mening moeten hebben. Klik **sparen en ga** verder.
 
-![ demo ](./images/27.png)
+![&#x200B; demo &#x200B;](./images/27.png)
 
 Op het **scherm van Montages**, worden geen veranderingen vereist. Klik **sparen en beëindigen**.
 
-![ demo ](./images/27b.png)
+![&#x200B; demo &#x200B;](./images/27b.png)
 
 U kunt nu Google Analytics-gegevens analyseren in Adobe Analytics Analysis Workspace. Laten we naar de volgende oefening gaan.
 
@@ -187,15 +187,15 @@ U kunt nu Google Analytics-gegevens analyseren in Adobe Analytics Analysis Works
 
 In Customer Journey Analytics, ga naar **Workspace**. Klik **creëren Project**
 
-![ demo ](./images/pro1.png)
+![&#x200B; demo &#x200B;](./images/pro1.png)
 
 Selecteer **Leeg Project van Workspace** en klik **creëren**.
 
-![ demo ](./images/pro2.png)
+![&#x200B; demo &#x200B;](./images/pro2.png)
 
 U hebt nu een leeg project:
 
-![ demo ](./images/pro4.png)
+![&#x200B; demo &#x200B;](./images/pro4.png)
 
 Sla eerst het project op en geef het een naam. U kunt de volgende opdracht gebruiken om op te slaan:
 
@@ -212,11 +212,11 @@ Je ziet deze popup. Gebruik deze naamgevingsconventie:
 
 Daarna, klik **sparen**.
 
-![ demo ](./images/prsave.png)
+![&#x200B; demo &#x200B;](./images/prsave.png)
 
 Selecteer vervolgens de juiste gegevensweergave in de rechterbovenhoek van het scherm. Dit is de gegevensweergave die u in de vorige exercitie hebt gemaakt, met de naamgevingsconventie `--aepUserLdap-- - GA + Loyalty Data View` .
 
-![ demo ](./images/prdvlist.png)
+![&#x200B; demo &#x200B;](./images/prdvlist.png)
 
 ### 1.2.5.3.1 Vrije-vormtabellen
 
@@ -234,7 +234,7 @@ Laten we deze vragen en nog wat meer beantwoorden met Analysis Workspace in CJA.
 
 Eerst, selecteer de juiste datumwaaier (**vandaag**) op de rechterkant van het paneel. CLick **is van toepassing**.
 
-![ demo ](./images/pro11.png)
+![&#x200B; demo &#x200B;](./images/pro11.png)
 
 >[!NOTE]
 >
@@ -242,47 +242,47 @@ Eerst, selecteer de juiste datumwaaier (**vandaag**) op de rechterkant van het p
 
 Laten wij wat dimensies en metriek slepen en laten vallen om de kanalen van de Marketing te analyseren. Eerst gebruik het afmetings **In de handel brengen Kanaal** en sleep en laat vallen het aan het canvas van de **Vrije lijst van de Vorm**. (Klik op **tonen allen** in het geval u metrisch onmiddellijk in het menu van Metriek niet ziet)
 
-![ demo ](./images/pro14.png)
+![&#x200B; demo &#x200B;](./images/pro14.png)
 
 U zult dan dit zien:
 
-![ demo ](./images/pro14a.png)
+![&#x200B; demo &#x200B;](./images/pro14a.png)
 
 Vervolgens moet u de metriek toevoegen aan de tabel Vrije vorm. U zou deze Metriek moeten toevoegen: **Mensen**, **Sessies**, **de Kijken van het Product**, **Controles**, **Aankopen**, **Tarief van de Omzetting** (Berekend Metrisch).
 
 Alvorens u dat kunt doen, moet u het Berekende Metrische **Tarief van de Omzetting** tot stand brengen. Klik hiertoe op het pictogram **+** naast Metrisch:
 
-![ demo ](./images/procalc1.png)
+![&#x200B; demo &#x200B;](./images/procalc1.png)
 
 Als naam voor Berekend Metrisch, gebruik **Tarief van de Omzetting** en gebruik **conversionRate** voor **Externe identiteitskaart**. Dan sleep de metrieke **aankoop** en **Zittingen** op het canvas. Plaats **Formaat** aan **Percentage** en **Decimale Plaatsen** aan **2**. Tot slot klik **sparen**.
 
-![ demo ](./images/procalc2.png)
+![&#x200B; demo &#x200B;](./images/procalc2.png)
 
 Klik **sparen**.
 
-![ demo ](./images/procalc2a.png)
+![&#x200B; demo &#x200B;](./images/procalc2a.png)
 
 Daarna, om al deze Metriek in de **Vrije Lijst** te gebruiken, sleep en laat vallen hen één voor één op de **Vrije Lijst van de Vorm**. Zie het onderstaande voorbeeld.
 
-![ demo ](./images/pro16.png)
+![&#x200B; demo &#x200B;](./images/pro16.png)
 
 U zult eindigen met een tabel als deze:
 
-![ demo ](./images/pro16a.png)
+![&#x200B; demo &#x200B;](./images/pro16a.png)
 
 Zoals hierboven vermeld, **de lijsten van de Vrije vorm** geven u de vrijheid u diepe duikanalyse moet uitvoeren. U kunt bijvoorbeeld een andere Dimension kiezen om een bepaalde metrische waarde in de tabel op te splitsen.
 
 Als voorbeeld, ga naar afmetingen en onderzoek en selecteer de **Browser** variabele.
 
-![ demo ](./images/new1.png)
+![&#x200B; demo &#x200B;](./images/new1.png)
 
 Hierna volgt een overzicht van de beschikbare waarden voor deze Dimension.
 
-![ demo ](./images/new2.png)
+![&#x200B; demo &#x200B;](./images/new2.png)
 
 Kies Dimension **Safari** en sleep en laat vallen het bovenop een Metrisch, bijvoorbeeld **Controles**. U zult dan dit zien:
 
-![ demo ](./images/new3.png)
+![&#x200B; demo &#x200B;](./images/new3.png)
 
 Als u dit doet, hebt u zojuist een potentiële vraag beantwoord die u had: hoeveel mensen komen bij de kassa met Safari, gesplitst naar Marketing Channel?
 
@@ -290,35 +290,35 @@ Laten we nu de Attribution-vraag beantwoorden.
 
 Vind de **metrisch van de Aankoop** in de lijst.
 
-![ demo ](./images/pro20.png)
+![&#x200B; demo &#x200B;](./images/pro20.png)
 
 Beweeg over metrisch en a **pictogram van Montages** zal verschijnen. Klik erop.
 
-![ demo ](./images/pro21.png)
+![&#x200B; demo &#x200B;](./images/pro21.png)
 
 Er wordt een contextueel menu weergegeven. Controleer checkbox voor **niet-gebrek attributiemodel**.
 
-![ demo ](./images/pro22.png)
+![&#x200B; demo &#x200B;](./images/pro22.png)
 
 In popup zult u zien, kunt u de attributiemodellen en het raadplegingsvenster gemakkelijk veranderen (dat vrij complex is om met SQL te bereiken).
 
-![ demo ](./images/pro23.png)
+![&#x200B; demo &#x200B;](./images/pro23.png)
 
 Selecteer **Eerste Aanraak** als uw attributiemodel.
 
-![ demo ](./images/pro24.png)
+![&#x200B; demo &#x200B;](./images/pro24.png)
 
 Kies **Persoon** voor het Venster van de Lookback.
 
-![ demo ](./images/pro25.png)
+![&#x200B; demo &#x200B;](./images/pro25.png)
 
 Klik nu **toepassen**.
 
-![ demo ](./images/pro26.png)
+![&#x200B; demo &#x200B;](./images/pro26.png)
 
 U kunt nu zien dat het attributiemodel voor die bepaalde metrische waarde nu First Touch is.
 
-![ demo ](./images/pro27.png)
+![&#x200B; demo &#x200B;](./images/pro27.png)
 
 U kunt net zo veel uitsplitsen als u wilt, zonder beperkingen van typen variabelen, segmenten, dimensies of datumbereiken.
 
@@ -326,11 +326,11 @@ Nog iets bijzonders is de mogelijkheid om zich bij elke dataset van Adobe Experi
 
 Om die functionaliteit te tonen, vormen wij uw eerste uitsplitsing die off-line gegevens met online gegevens combineert. Kies het afmetings **Niveau van de Loyalty** en sleep en laat vallen het op om het even welk **Marketing Kanaal**, bijvoorbeeld, **Organic Onderzoek**:
 
-![ demo ](./images/pro28.png)
+![&#x200B; demo &#x200B;](./images/pro28.png)
 
 Daarna, analyseren welk **Type van Apparaat** door klanten wordt gebruikt die aan de plaats gebruikend **biologisch Onderzoek** met a **Niveau van de Loyaliteit** kwamen dat **&#x200B;**&#x200B;Bronze is. Neem het Type van Apparaat van Dimension **&#x200B;**&#x200B;en sleep en laat vallen het op **Bronze**. U zult dan dit zien:
 
-![ demo ](./images/pro29.png)
+![&#x200B; demo &#x200B;](./images/pro29.png)
 
 Je ziet dat voor je eerste uitsplitsing Loyalty Level wordt gebruikt. Deze afmeting komt uit een verschillende dataset en verschillend schema dan die u voor de schakelaar BigQuery gebruikte. Identiteitskaart van de Persoon **loyaltyID** (Systeem van de Manifestatie - het Schema van de Gebeurtenis voor BigQuery (Globale v1.1)) en **loyaltyID** (het Systeem van de Manifest - het Schema van het Profiel voor Loyalty (Globale v1.1)) passen met elkaar aan. Daarom kunt u Experience Events uit Google Analytics combineren met Profile Data uit het Loyalty-schema.
 
@@ -364,67 +364,67 @@ Om uw eerste fallout visualisatie te maken. Sluit het huidige deelvenster om te 
 
 Kijk naar de rechterkant van het deelvenster en klik op de pijl om het te sluiten.
 
-![ demo ](./images/pro33.png)
+![&#x200B; demo &#x200B;](./images/pro33.png)
 
 Klik vervolgens op **+** om een nieuw deelvenster te maken.
 
-![ demo ](./images/pro35.png)
+![&#x200B; demo &#x200B;](./images/pro35.png)
 
 Nu selecteer de **Vallout** Visualisatie.
 
-![ demo ](./images/pro36.png)
+![&#x200B; demo &#x200B;](./images/pro36.png)
 
 Als analist stelt u zich voor dat u wilt begrijpen wat er gebeurt met uw belangrijkste e-commercetrechter: Home > Intern zoeken > Productdetails > Afhandeling > Aanschaffen.
 
 Laten we beginnen met het toevoegen van nieuwe stappen aan de trechter. Om dat te doen, open de **dimensie van de Naam van de 0&rbrace; Pagina.**
 
-![ demo ](./images/pro37.png)
+![&#x200B; demo &#x200B;](./images/pro37.png)
 
 U zult dan alle beschikbare pagina&#39;s zien die zijn bezocht.
 
-![ demo ](./images/pro38.png)
+![&#x200B; demo &#x200B;](./images/pro38.png)
 
 De belemmering en laat vallen **Huis** aan de eerste stap.
 
-![ demo ](./images/pro39.png)
+![&#x200B; demo &#x200B;](./images/pro39.png)
 
 Als tweede stap, gebruik de **onderzoeksresultaten van de Opslag**
 
-![ demo ](./images/pro40.png)
+![&#x200B; demo &#x200B;](./images/pro40.png)
 
 Nu moet u wat e-commerce acties toevoegen. In de Dimensies, onderzoek naar het Type van de Gebeurtenis van Dimension **&#x200B;**&#x200B;dimensie. Klik om de dimensie te openen.
 
-![ demo ](./images/pro41.png)
+![&#x200B; demo &#x200B;](./images/pro41.png)
 
 Selecteer **Product_Detail_Views** en sleep en laat vallen het in de volgende stap.
 
-![ demo ](./images/pro43.png)
+![&#x200B; demo &#x200B;](./images/pro43.png)
 
 Selecteer **Product_Checkouts** en sleep en laat vallen het in de volgende stap.
 
-![ demo ](./images/pro44.png)
+![&#x200B; demo &#x200B;](./images/pro44.png)
 
 Pas de grootte van uw uitvalweergave aan.
 
-![ demo ](./images/pro45.png)
+![&#x200B; demo &#x200B;](./images/pro45.png)
 
 Uw uitvalvisualisatie is nu gereed.
 
 Beginnen de inzichten te analyseren en te documenteren, is het altijd een goed idee aan a **Tekst** visualisatie. Om a **Tekst** visualisatie toe te voegen, klik op het **Grafiek** pictogram in het linkermenu om alle beschikbare visualisaties te zien. Dan belemmering en laat vallen de **Tekst** visualisatie op het canvas. Wijzig het formaat en verplaats het zodat het lijkt op de afbeelding onder.
 
-![ demo ](./images/pro48.png)
+![&#x200B; demo &#x200B;](./images/pro48.png)
 
 En opnieuw, resize het om het dashboard te passen:
 
-![ demo ](./images/pro49.png)
+![&#x200B; demo &#x200B;](./images/pro49.png)
 
 Bij valutamatievisualisaties zijn ook uitsplitsingen mogelijk. Gebruik de **dimensie van het Type van Apparaat** door het te openen en sommige waarden op één voor één op visualisatie te slepen:
 
-![ demo ](./images/pro50.png)
+![&#x200B; demo &#x200B;](./images/pro50.png)
 
 U krijgt dan een geavanceerdere visualisatie:
 
-![ demo ](./images/pro51.png)
+![&#x200B; demo &#x200B;](./images/pro51.png)
 
 Customer Journey Analytics staat je toe dat te doen en nog veel meer. Door met de rechtermuisknop ergens in de fallout te klikken, kunt u...
 
@@ -435,7 +435,7 @@ Customer Journey Analytics staat je toe dat te doen en nog veel meer. Door met d
 
 Als voorbeeld, doe een met de rechtermuisknop aan klik in om het even welke stap van de reserve om sommige van deze analyseopties te zien.
 
-![ demo ](./images/pro52.png)
+![&#x200B; demo &#x200B;](./images/pro52.png)
 
 ## 1.2.5.3.3 Stroomanalyse en visualisatie
 
@@ -450,77 +450,77 @@ Andere vragen die Customer Journey Analytics u kan helpen beantwoorden:
 
 Laten we opnieuw met een leeg deelvenster beginnen om deze vragen te beantwoorden. Sluit het huidige paneel en klik **+**.
 
-![ demo ](./images/pro53.png)
+![&#x200B; demo &#x200B;](./images/pro53.png)
 
 Nu selecteer de **Stroom** visualisatie.
 
-![ demo ](./images/pro54.png)
+![&#x200B; demo &#x200B;](./images/pro54.png)
 
 Stel nu een Meerwegs Analyse van de Stroom van het Kanaal van de Marketing. De belemmering en laat vallen de **dimensie van het Kanaal van de Marketing** op het **Gebied van de Dimensies van de Ingang**.
 
-![ demo ](./images/pro55.png)
+![&#x200B; demo &#x200B;](./images/pro55.png)
 
 U kunt nu de eerste toegangspaden zien:
 
-![ demo ](./images/pro56.png)
+![&#x200B; demo &#x200B;](./images/pro56.png)
 
 Klik op het eerste pad om er omlaag over te boren.
 
-![ demo ](./images/pro58.png)
+![&#x200B; demo &#x200B;](./images/pro58.png)
 
 U kunt nu het volgende pad zien (Marketingkanaal).
 
-![ demo ](./images/pro59.png)
+![&#x200B; demo &#x200B;](./images/pro59.png)
 
 Laten we een derde boor-down doen. Klik op de eerste optie binnen de nieuwe weg, **Verwijzing**.
 
-![ demo ](./images/pro60.png)
+![&#x200B; demo &#x200B;](./images/pro60.png)
 
 Nu moet je de visualisatie als volgt zien:
 
-![ demo ](./images/pro61.png)
+![&#x200B; demo &#x200B;](./images/pro61.png)
 
 Laten we dingen compliceren. Stel dat u wilt analyseren wat de landingspagina was na twee marketingpaden? Hiervoor kunt u een secundaire dimensie gebruiken om het laatste pad te wijzigen. Vind de **dimensie van de Naam van de 0&rbrace; Pagina &lbrace;en sleep en laat vallen het als dit:**
 
-![ demo ](./images/pro62n.png)
+![&#x200B; demo &#x200B;](./images/pro62n.png)
 
 U ziet nu het volgende:
 
-![ demo ](./images/pro63n.png)
+![&#x200B; demo &#x200B;](./images/pro63n.png)
 
 Laten we nog een flowanalyse uitvoeren. Deze keer zult u analyseren wat na een specifiek uitgangspunt gebeurde. Andere analytische oplossingen vereisen het gebruik van SQL/ETL en opnieuw, een derdevisualisatiehulpmiddel om het zelfde ding te bereiken.
 
 Breng een nieuwe **Visualisatie van de Stroom** aan het paneel.
 
-![ demo ](./images/pro64.png)
+![&#x200B; demo &#x200B;](./images/pro64.png)
 
 Dan heb je het volgende:
 
-![ demo ](./images/pro64a.png)
+![&#x200B; demo &#x200B;](./images/pro64a.png)
 
 Vind het Type van de Gebeurtenis van Dimension **&#x200B;**&#x200B;en sleep en laat vallen het aan het **afmeting van de Uitgang** gebied.
 
-![ demo ](./images/pro65.png)
+![&#x200B; demo &#x200B;](./images/pro65.png)
 
 Nu kunt u zien welk **Type van Gebeurtenis** - wegen klanten aan de uitgang dreden.
 
-![ demo ](./images/pro66.png)
+![&#x200B; demo &#x200B;](./images/pro66.png)
 
 Laten we onderzoeken wat er is gebeurd voordat de kassa-actie is afgesloten. Klik op de **Product_Checkouts** weg:
 
-![ demo ](./images/pro67.png)
+![&#x200B; demo &#x200B;](./images/pro67.png)
 
 Er wordt een nieuw actiepad weergegeven met gegevens die niet begrijpelijk zijn.
 
-![ demo ](./images/pro68.png)
+![&#x200B; demo &#x200B;](./images/pro68.png)
 
 Laten we verder analyseren! Onderzoek de Naam van de Dimension **Pagina** en sleep en laat vallen het aan de nieuwe geproduceerde weg.
 
-![ demo ](./images/pro69.png)
+![&#x200B; demo &#x200B;](./images/pro69.png)
 
 U hebt nu een geavanceerde flowanalyse uitgevoerd in minuten. U kunt op de verschillende paden klikken om te zien hoe ze een verbinding tot stand brengen vanaf het einde tot aan de vorige stappen.
 
-![ demo ](./images/pro70.png)
+![&#x200B; demo &#x200B;](./images/pro70.png)
 
 U beschikt nu over een krachtige kit om trechters te analyseren en wegen van klantengedrag over digitaal maar ook, off-line aanraakpunten te verkennen.
 
@@ -534,14 +534,14 @@ Vergeet niet uw wijzigingen op te slaan!
 
 FYI - U kunt dit project met collega&#39;s delen om samen te werken of bedrijfsvragen samen te analyseren.
 
-![ demo ](./images/pro99.png)
+![&#x200B; demo &#x200B;](./images/pro99.png)
 
-![ demo ](./images/pro100.png)
+![&#x200B; demo &#x200B;](./images/pro100.png)
 
 ## Volgende stappen
 
-Ga naar [ Samenvatting &amp; voordelen ](./summary.md){target="_blank"}
+Ga naar [&#x200B; Samenvatting &amp; voordelen &#x200B;](./summary.md){target="_blank"}
 
-Ga terug naar [ Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
+Ga terug naar [&#x200B; Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

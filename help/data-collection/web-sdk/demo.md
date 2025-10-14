@@ -18,10 +18,10 @@ ht-degree: 61%
 
 # Demo van Adobe Experience Platform Web SDK en Edge Network
 
-Zie Adobe Experience Platform Web SDK en Edge Network in actie, met één enkele vraag aan Adobe die gegevens naar Experience Platform, Analytics, Audience Manager, en Doel verzendt. Voor meer informatie, gelieve de [ documentatie van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL) te bezoeken.
+Zie Adobe Experience Platform Web SDK en Edge Network in actie, met één enkele vraag aan Adobe die gegevens naar Experience Platform, Analytics, Audience Manager, en Doel verzendt. Voor meer informatie, gelieve de [&#x200B; documentatie van SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Deze video is een uittreksel van Adobe Summit 2020 zitting *[ontmoeten Alloy.js en nooit markering voor eVar of Mbox opnieuw ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Deze video is een uittreksel van Adobe Summit 2020 zitting *[ontmoeten Alloy.js en nooit markering voor eVar of Mbox opnieuw &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.

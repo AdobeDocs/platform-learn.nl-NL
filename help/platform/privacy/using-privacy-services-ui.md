@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # De Privacy Service-interface gebruiken
 
-Leer hoe u privacyverzoeken maakt in de Privacy Service en hoe u hun status in het dashboard kunt controleren en bekijken. Voor meer informatie, gelieve de [ documentatie van de Diensten van de Privacy ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
+Leer hoe u privacyverzoeken maakt in de Privacy Service en hoe u hun status in het dashboard kunt controleren en bekijken. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336079?learn=on&enablevpops)

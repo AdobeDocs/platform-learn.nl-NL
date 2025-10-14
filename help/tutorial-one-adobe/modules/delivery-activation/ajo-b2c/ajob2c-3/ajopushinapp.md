@@ -29,7 +29,7 @@ In deze module, zult u een hands-on analyse van de Push en mogelijkheden van Ber
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -49,7 +49,7 @@ In deze oefening zult u een campagne vormen die in-app berichten aan uw klanten 
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

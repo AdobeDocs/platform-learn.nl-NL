@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Overzicht van doelen
 
-De bestemmingen zijn pre-gebouwde integratie met bestemmingsplatforms die gegevens aan die partners op een naadloze manier activeren en uitvoeren. Leer meer over de doeltypen die u kunt gebruiken om gegevens op te halen uit [!DNL Real-Time CDP] , [!DNL Experience Platform] en [!DNL Tags] ter ondersteuning van een groot aantal verschillende gebruiksgevallen. Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=nl) te bezoeken.
+De bestemmingen zijn pre-gebouwde integratie met bestemmingsplatforms die gegevens aan die partners op een naadloze manier activeren en uitvoeren. Leer meer over de doeltypen die u kunt gebruiken om gegevens op te halen uit [!DNL Real-Time CDP] , [!DNL Experience Platform] en [!DNL Tags] ter ondersteuning van een groot aantal verschillende gebruiksgevallen. Voor meer informatie, gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on&enablevpops)
 

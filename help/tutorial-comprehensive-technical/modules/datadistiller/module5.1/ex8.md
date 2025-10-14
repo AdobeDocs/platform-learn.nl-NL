@@ -23,8 +23,8 @@ In deze oefening zult u API vraag uitvoeren om vraagmalplaatjes en vraagprogramm
 
 ## Documentatie
 
-- [ Hulp van de Dienst van de Vraag van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=nl-NL)
-- [ de Dienst API van de Vraag ](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
+- [&#x200B; Hulp van de Dienst van de Vraag van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=nl-NL)
+- [&#x200B; de Dienst API van de Vraag &#x200B;](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## Query Service-API
 
@@ -34,7 +34,7 @@ Niet-interactief betekent dat een verzoek om een query uit te voeren niet result
 
 ## Voorbeeldquery
 
-Als steekproefvraag zult u de eerste vraag gebruiken die in [ wordt vermeld 4.3 - Vragen, vragen, vragen... en koordanalyse ](./ex3.md):
+Als steekproefvraag zult u de eerste vraag gebruiken die in [&#x200B; wordt vermeld 4.3 - Vragen, vragen, vragen... en koordanalyse &#x200B;](./ex3.md):
 
 Hoeveel productweergaven hebben we dagelijks?
 
@@ -54,13 +54,13 @@ limit 10;
 
 >[!IMPORTANT]
 >
->Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../postbuster.md) te gebruiken.
 
-Open Postman op uw computer. Als deel van Module 2.1, creeerde u een milieu van Postman en importeerde een inzameling van Postman. Volg de instructies in [ Uitoefening 2.1.3 ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) voor het geval u dat nog niet hebt gedaan.
+Open Postman op uw computer. Als deel van Module 2.1, creeerde u een milieu van Postman en importeerde een inzameling van Postman. Volg de instructies in [&#x200B; Uitoefening 2.1.3 &#x200B;](./../../../modules/rtcdp-b2c/module2.1/ex3.md) voor het geval u dat nog niet hebt gedaan.
 
-Als deel van de inzameling van Postman u invoerde, zult u een omslag **zien. De Dienst van de vraag**. Als u deze omslag niet ziet, gelieve de [ inzameling van Postman ](./../../../assets/postman/postman_profile.zip) opnieuw te downloaden en die inzameling in Postman opnieuw in te voeren zoals die in [ oefening 2.1.3 ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) wordt geïnstrueerd.
+Als deel van de inzameling van Postman u invoerde, zult u een omslag **zien. De Dienst van de vraag**. Als u deze omslag niet ziet, gelieve de [&#x200B; inzameling van Postman &#x200B;](./../../../assets/postman/postman_profile.zip) opnieuw te downloaden en die inzameling in Postman opnieuw in te voeren zoals die in [&#x200B; oefening 2.1.3 &#x200B;](./../../../modules/rtcdp-b2c/module2.1/ex3.md) wordt geïnstrueerd.
 
-![ QS ](./images/pm3.png)
+![&#x200B; QS &#x200B;](./images/pm3.png)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Wanneer de POST is geslaagd, retourneert de aanvraag het volgende antwoord:
 
 De huidige **staat** van de vraag wordt **VERZONDEN**, zodra uitgevoerd zal zijn staat **SUCCESS** worden.
 
-U kunt voorgelegde vragen via Adobe Experience Platform UI ook zoeken, [ Adobe Experience Platform ](https://experience.adobe.com/#/@experienceplatform/platform/home) openen, aan **Vragen** navigeren, aan **Logboek** en uw vraag selecteren:
+U kunt voorgelegde vragen via Adobe Experience Platform UI ook zoeken, [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/#/@experienceplatform/platform/home) openen, aan **Vragen** navigeren, aan **Logboek** en uw vraag selecteren:
 
 ![Segmentatie](./images/s1_bodydtl_results_qs.png)
 
@@ -422,7 +422,7 @@ Het antwoord op dit verzoek zal naar de datasetdossiers richten:
 }
 ```
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Ga terug naar module 5.1](./query-service.md)
 

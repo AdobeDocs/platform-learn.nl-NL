@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u mobiele gegevens kunt toewijzen aan Adobe Analytics.
 
-De [ gebeurtenis ](events.md) gegevens die u verzamelde en naar Platform Edge Network in vroegere lessen verzendt door:sturen aan de diensten die in uw datastream, met inbegrip van Adobe Analytics worden gevormd. U brengt de gegevens aan de correcte variabelen in uw rapportreeks in kaart.
+De [&#x200B; gebeurtenis &#x200B;](events.md) gegevens die u verzamelde en naar Platform Edge Network in vroegere lessen verzendt door:sturen aan de diensten die in uw datastream, met inbegrip van Adobe Analytics worden gevormd. U brengt de gegevens aan de correcte variabelen in uw rapportreeks in kaart.
 
 ![Architectuur](assets/architecture-aa.png){zoomable="yes"}
 
@@ -35,11 +35,11 @@ In deze les zult u:
 
 ## Adobe Analytics-datastreamservice toevoegen
 
-Om uw gegevens XDM van Edge Network naar Adobe Analytics te verzenden, vormt u de dienst van Adobe Analytics aan de datastream u opstelling als deel van [ creeert een datastream ](create-datastream.md).
+Om uw gegevens XDM van Edge Network naar Adobe Analytics te verzenden, vormt u de dienst van Adobe Analytics aan de datastream u opstelling als deel van [&#x200B; creeert een datastream &#x200B;](create-datastream.md).
 
 1. Selecteer **[!UICONTROL Datastreams]** en uw gegevensstroom in de gebruikersinterface voor gegevensverzameling.
 
-1. Dan selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
+1. Dan selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
 
 1. Voeg **[!UICONTROL Adobe Analytics]** toe uit de lijst [!UICONTROL Service] ,
 
@@ -49,16 +49,16 @@ Om uw gegevens XDM van Edge Network naar Adobe Analytics te verzenden, vormt u d
 
 1. Selecteer **[!UICONTROL Save]**.
 
-   ![ voegt Adobe Analytics als datastreamdienst ](assets/datastream-service-aa.png){zoomable="yes"} toe
+   ![&#x200B; voegt Adobe Analytics als datastreamdienst &#x200B;](assets/datastream-service-aa.png){zoomable="yes"} toe
 
 
 ## Automatische toewijzing
 
-Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de [ volledige lijst ](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/xdm-var-mapping).
+Veel standaard XDM-velden worden automatisch toegewezen aan analytische variabelen. Zie de [&#x200B; volledige lijst &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 
 ### Voorbeeld 1 - s.products
 
-Een goed voorbeeld is de [ productvariabele ](https://experienceleague.adobe.com/nl/docs/analytics/implementation/vars/page-vars/products) die niet kan worden bevolkt gebruikend verwerkingsregels. Met een XDM-implementatie geeft u alle benodigde gegevens door in `productListItems` en `s.products` wordt automatisch ingevuld via Analytics-toewijzing.
+Een goed voorbeeld is de [&#x200B; productvariabele &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/implementation/vars/page-vars/products) die niet kan worden bevolkt gebruikend verwerkingsregels. Met een XDM-implementatie geeft u alle benodigde gegevens door in `productListItems` en `s.products` wordt automatisch ingevuld via Analytics-toewijzing.
 
 Dit object:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Als `productListItems[].SKU` en `productListItems[].name` beide gegevens bevatten, wordt de waarde in `productListItems[].SKU` gebruikt. Zie [ veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe ](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/xdm-var-mapping) voor meer informatie.
+>Als `productListItems[].SKU` en `productListItems[].name` beide gegevens bevatten, wordt de waarde in `productListItems[].SKU` gebruikt. Zie [&#x200B; veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/xdm-var-mapping) voor meer informatie.
 
 
 ### Voorbeeld 2 - scAdd
@@ -129,15 +129,15 @@ s.events = "scAdd:321435"
 
 ## Valideren met Assurance
 
-Gebruikend [ Assurance ](assurance.md) kunt u bevestigen dat u een ervaringsgebeurtenis verzendt, is het XDM- gegeven correct en de afbeelding van Analytics gebeurt zoals verwacht.
+Gebruikend [&#x200B; Assurance &#x200B;](assurance.md) kunt u bevestigen dat u een ervaringsgebeurtenis verzendt, is het XDM- gegeven correct en de afbeelding van Analytics gebeurt zoals verwacht.
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Verzend een **[!UICONTROL productListAdds]** -gebeurtenis (voeg een product toe aan uw mandje).
 
 1. Bekijk de ExperienceEvent hit.
 
-   ![ Analytics xdm hit ](assets/analytics-assurance-experiencevent.png){zoomable="yes"}
+   ![&#x200B; Analytics xdm hit &#x200B;](assets/analytics-assurance-experiencevent.png){zoomable="yes"}
 
 1. Controleer het XDM-gedeelte van de JSON.
 
@@ -160,7 +160,7 @@ Gebruikend [ Assurance ](assurance.md) kunt u bevestigen dat u een ervaringsgebe
 
 1. Controleer de **[!UICONTROL analytics.mapping]** -gebeurtenis.
 
-   ![ Analytics xdm hit ](assets/analytics-assurance-mapping.png){zoomable="yes"}
+   ![&#x200B; Analytics xdm hit &#x200B;](assets/analytics-assurance-mapping.png){zoomable="yes"}
 
 Neem nota van het volgende in de afbeelding van Analytics:
 
@@ -171,7 +171,7 @@ Neem nota van het volgende in de afbeelding van Analytics:
 
 ## Toewijzing met contextgegevens
 
-De gegevens XDM die aan Analytics door:sturen worden omgezet in [ contextgegevens ](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/getting-started/proc-rules.md?lang=en) met inbegrip van zowel standaard als douanegebieden.
+De gegevens XDM die aan Analytics door:sturen worden omgezet in [&#x200B; contextgegevens &#x200B;](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/getting-started/proc-rules.md?lang=en) met inbegrip van zowel standaard als douanegebieden.
 
 De sleutel van contextgegevens wordt samengesteld volgens deze syntaxis:
 
@@ -203,15 +203,15 @@ Om deze XDM contextgegevens aan uw gegevens van Analytics in uw rapportreeks in 
 
 * Voeg de **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** veldgroep toe aan uw schema.
 
-  ![ het gebiedsgroep van ExperienceEvent FullExtension ](assets/schema-analytics-extension.png){zoomable="yes"}
+  ![&#x200B; het gebiedsgroep van ExperienceEvent FullExtension &#x200B;](assets/schema-analytics-extension.png){zoomable="yes"}
 
-* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de [ les van de Gegevens van de Gebeurtenis van het 0&rbrace; Spoor &lbrace;hebt gedaan, of](events.md)
-* Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer details [ gegevens vastmaken aan de gebeurtenissen van SDK ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [ gegevens in de gebeurtenissen van SDK wijzigen ](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+* Bouw XDM nuttige lasten in uw app, die aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige in overeenstemming zijn, gelijkend op wat u in de [&#x200B; les van de Gegevens van de Gebeurtenis van het 0&rbrace; Spoor &lbrace;hebt gedaan, of](events.md)
+* Bouw regels in uw bezit van Markeringen die regelacties gebruiken om gegevens aan de het gebiedsgroep van de Uitbreiding van Adobe Analytics ExperienceEvent Volledige toe te voegen of te wijzigen. Zie voor meer details [&#x200B; gegevens vastmaken aan de gebeurtenissen van SDK &#x200B;](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) of [&#x200B; gegevens in de gebeurtenissen van SDK wijzigen &#x200B;](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
 
 ### Merchandising Vars
 
-Als u [ merchandising eVars ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) in uw opstelling van Analytics gebruikt, moet u uw nuttige lading uitbreiden XDM die u in [ de gebeurtenisgegevens van het Spoor ](events.md) bepaalde om die het verhandelen informatie te vangen. Voorbeeld van een handelswaar var is `evar1` waar u de kleur van producten wilt vastleggen, bijvoorbeeld `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
+Als u [&#x200B; merchandising eVars &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) in uw opstelling van Analytics gebruikt, moet u uw nuttige lading uitbreiden XDM die u in [&#x200B; de gebeurtenisgegevens van het Spoor &#x200B;](events.md) bepaalde om die het verhandelen informatie te vangen. Voorbeeld van een handelswaar var is `evar1` waar u de kleur van producten wilt vastleggen, bijvoorbeeld `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * In JSON:
 
@@ -290,7 +290,7 @@ Zo ziet een verwerkingsregel met deze gegevens eruit:
 
 * U **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) tot **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) als **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
 
-![ analytische verwerkingsregels ](assets/analytics-processing-rules.png){zoomable="yes"}
+![&#x200B; analytische verwerkingsregels &#x200B;](assets/analytics-processing-rules.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >
@@ -301,7 +301,7 @@ Zo ziet een verwerkingsregel met deze gegevens eruit:
 >De eerste keer u aan een verwerkingsregel in kaart brengt, toont de interface u niet de variabelen van contextgegevens van het voorwerp XDM. Als u een waarde wilt selecteren, slaat u Opslaan en keert u terug om te bewerken. Alle XDM-variabelen moeten nu worden weergegeven.
 
 
-Zie [ contextData variabelen van de Kaart in steunen en eVars met verwerkingsregels ](https://experienceleague.adobe.com/nl/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
+Zie [&#x200B; contextData variabelen van de Kaart in steunen en eVars met verwerkingsregels &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
 
 >[!TIP]
 >
@@ -309,18 +309,18 @@ Zie [ contextData variabelen van de Kaart in steunen en eVars met verwerkingsreg
 
 ## Migreren vanuit mobiele extensie Analytics
 
-Als u uw mobiele toepassing gebruikend de [ mobiele uitbreiding van Adobe Analytics ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) hebt ontwikkeld, hebt u hoogstwaarschijnlijk [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag gebruikt.
+Als u uw mobiele toepassing gebruikend de [&#x200B; mobiele uitbreiding van Adobe Analytics &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) hebt ontwikkeld, hebt u hoogstwaarschijnlijk [`MobileCore.trackAction` &#x200B;](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` &#x200B;](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag gebruikt.
 
 Als u besluit te migreren om de aanbevolen Edge Network te gebruiken, hebt u wel de volgende opties:
 
-* Voer de [ uitbreiding van Edge Network ](configure-tags.md#extension-configuration) uit en gebruik [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) APIs, zoals geïllustreerd in de les op hoe te [ de gebeurtenisgegevens van het Spoor ](events.md). Deze zelfstudie richt zich op deze implementatie.
-* Voer de [ uitbreiding van Edge Bridge ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) uit, en gebruik uw [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag. Zie [ de uitbreiding van Edge Bridge ](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) voor meer details en een afzonderlijk leerprogramma uitvoeren.
+* Voer de [&#x200B; uitbreiding van Edge Network &#x200B;](configure-tags.md#extension-configuration) uit en gebruik [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) APIs, zoals geïllustreerd in de les op hoe te [&#x200B; de gebeurtenisgegevens van het Spoor &#x200B;](events.md). Deze zelfstudie richt zich op deze implementatie.
+* Voer de [&#x200B; uitbreiding van Edge Bridge &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) uit, en gebruik uw [`MobileCore.trackAction` &#x200B;](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` &#x200B;](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API vraag. Zie [&#x200B; de uitbreiding van Edge Bridge &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) voor meer details en een afzonderlijk leerprogramma uitvoeren.
 
 
 
 
 >[!SUCCESS]
 >
->U hebt uw app zo ingesteld dat uw Experience Edge XDM-objecten worden toegewezen aan Adobe Analytics-variabelen door de Adobe Analytics-service in uw gegevensstroom in te schakelen. en in voorkomend geval met gebruikmaking van verwerkingsvoorschriften.<br/> Bedankt dat u hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>U hebt uw app zo ingesteld dat uw Experience Edge XDM-objecten worden toegewezen aan Adobe Analytics-variabelen door de Adobe Analytics-service in uw gegevensstroom in te schakelen. en in voorkomend geval met gebruikmaking van verwerkingsvoorschriften.<br/> Bedankt dat u hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[verzendt gegevens naar Experience Platform](platform.md)**

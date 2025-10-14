@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen in een mobiele app kunt bijhouden.
 
-De Edge Network-extensie biedt een API waarmee u ervaringsgebeurtenissen kunt verzenden naar het Platform Edge Network. Een ervaringsgebeurtenis is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, deze gebeurtenissen vangen wat mensen in uw mobiele app doen. Zodra het Platform Edge Network gegevens ontving, kunnen die gegevens aan toepassingen en de diensten worden door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Leer meer over de [ Gebeurtenissen van de Ervaring ](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
+De Edge Network-extensie biedt een API waarmee u ervaringsgebeurtenissen kunt verzenden naar het Platform Edge Network. Een ervaringsgebeurtenis is een object dat gegevens bevat die voldoen aan de XDM ExperienceEvent-schemadefinitie. Meer eenvoudig, deze gebeurtenissen vangen wat mensen in uw mobiele app doen. Zodra het Platform Edge Network gegevens ontving, kunnen die gegevens aan toepassingen en de diensten worden door:sturen die in uw gegevensstroom, zoals Adobe Analytics en Experience Platform worden gevormd. Leer meer over de [&#x200B; Gebeurtenissen van de Ervaring &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in de productdocumentatie.
 
 ## Vereisten
 
@@ -59,7 +59,7 @@ Voor de standaardveldgroepen ziet het proces er als volgt uit:
 
 * In uw schema, identificeer de gebeurtenissen die u probeert te verzamelen. In dit voorbeeld volgt u de gebeurtenissen van de handelservaring, bijvoorbeeld een gebeurtenis van de productmening (**[!UICONTROL productViews]**).
 
-  ![ schema van de productmening ](assets/datacollection-prodView-schema.png){zoomable="yes"}
+  ![&#x200B; schema van de productmening &#x200B;](assets/datacollection-prodView-schema.png){zoomable="yes"}
 
 * Als u een object wilt maken dat de ervaringsgebeurtenisgegevens in uw app bevat, gebruikt u de volgende code:
 
@@ -80,7 +80,7 @@ var xdmData: [String: Any] = [
 
 In deze code:
 
-* `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [ bekende waarde ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) wanneer mogelijk.
+* `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [&#x200B; bekende waarde &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) wanneer mogelijk.
 
 * `commerce.productViews.value` : de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
@@ -99,7 +99,7 @@ val xdmData = mapOf(
 
 In deze code:
 
-* `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [ bekende waarde ](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) wanneer mogelijk.
+* `eventType`: Beschrijft de gebeurtenis die voorkwam, gebruik a [&#x200B; bekende waarde &#x200B;](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) wanneer mogelijk.
 
 * `commerce.productViews.value` : de numerieke of Booleaanse waarde van de gebeurtenis. Als het een Booleaanse waarde (of &quot;Teller&quot; in Adobe Analytics) is, wordt de waarde altijd ingesteld op 1. Als het een numerieke of valutagebeurtenis is, kan de waarde > 1 zijn.
 
@@ -108,7 +108,7 @@ In deze code:
 
 * In uw schema, identificeer om het even welke extra gegevens verbonden aan de gebeurtenis van de de meningsmening van het handelsproduct. In dit voorbeeld neemt u **[!UICONTROL productListItems]** op. Dit is een standaardset velden die worden gebruikt met aan handel gerelateerde gebeurtenissen:
 
-  ![ schema van de punten van de productlijst ](assets/datacollection-prodListItems-schema.png){zoomable="yes"}
+  ![&#x200B; schema van de punten van de productlijst &#x200B;](assets/datacollection-prodListItems-schema.png){zoomable="yes"}
    * **[!UICONTROL productListItems]** is een array, zodat meerdere producten kunnen worden geleverd.
 
 * Als u deze gegevens wilt toevoegen, vouwt u het `xdmData` -object uit om aanvullende gegevens op te nemen:
@@ -194,15 +194,15 @@ Edge.sendEvent(productViewEvent, null)
 >[!ENDTABS]
 
 
-De [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is de AEP Mobile SDK equivalent aan de [`MobileCore.trackAction` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API vraag. Zie [ van de mobiele uitbreiding van Analytics aan Adobe Experience Platform Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) voor meer informatie migreren.
+De [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is de AEP Mobile SDK equivalent aan de [`MobileCore.trackAction` &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) en [`MobileCore.trackState` &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API vraag. Zie [&#x200B; van de mobiele uitbreiding van Analytics aan Adobe Experience Platform Edge Network &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) voor meer informatie migreren.
 
 U gaat nu deze code in uw project uitvoeren.
 U hebt verschillende acties met betrekking tot handelsproducten in uw app en u wilt gebeurtenissen verzenden op basis van deze acties die door de gebruiker worden uitgevoerd:
 
 * weergave: vindt plaats wanneer een gebruiker een specifiek product weergeeft,
-* toevoegen aan kar: wanneer een gebruiker ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg) in het scherm van het productdetail tikt,
-* sparen voor later: wanneer een gebruiker ![ Hart ](/help/assets/icons/Heart.svg) / ![ ThumbUp ](/help/assets/icons/ThumbUp.svg) in het scherm van het productdetail tikt,
-* aankoop: wanneer een gebruiker ![ CreditCard ](/help/assets/icons/CreditCard.svg) in het scherm van het productdetail tikt.
+* toevoegen aan kar: wanneer een gebruiker ![&#x200B; ShoppingCart &#x200B;](/help/assets/icons/ShoppingCart.svg) in het scherm van het productdetail tikt,
+* sparen voor later: wanneer een gebruiker ![&#x200B; Hart &#x200B;](/help/assets/icons/Heart.svg) / ![&#x200B; ThumbUp &#x200B;](/help/assets/icons/ThumbUp.svg) in het scherm van het productdetail tikt,
+* aankoop: wanneer een gebruiker ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg) in het scherm van het productdetail tikt.
 
 Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herbruikbare manier uit te voeren, gebruikt u een specifieke functie:
 
@@ -238,7 +238,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 
    * stelt de XDM-payload in als een woordenboek, waarbij de parameters van de functie worden gebruikt;
    * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** in de Xcode-projectnavigator en voeg verschillende aanroepen toe aan de functie `sendCommerceExperienceEvent` :
 
@@ -249,23 +249,23 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Voor elk van de knopen (![ Hart ](/help/assets/icons/Heart.svg), ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg), en ![ CreditCard ](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen de `ATTrackingManager.trackingAuthorizationStatus == .authorized` sluiting toe:
+   1. Voor elk van de knopen (![&#x200B; Hart &#x200B;](/help/assets/icons/Heart.svg), ![&#x200B; ShoppingCart &#x200B;](/help/assets/icons/ShoppingCart.svg), en ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen de `ATTrackingManager.trackingAuthorizationStatus == .authorized` sluiting toe:
 
-      1. Voor ![ Hart ](/help/assets/icons/Heart.svg):
+      1. Voor ![&#x200B; Hart &#x200B;](/help/assets/icons/Heart.svg):
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Voor ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg):
+      1. Voor ![&#x200B; ShoppingCart &#x200B;](/help/assets/icons/ShoppingCart.svg):
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Voor ![ CreditCard ](/help/assets/icons/CreditCard.svg):
+      1. Voor ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg):
 
          ```swift
          // Send purchase commerce experience event
@@ -274,7 +274,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 
 >[!TAB  Android ]
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio, en voeg het volgende aan de `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie toe.
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de navigator van Android Studio, en voeg het volgende aan de `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` functie toe.
 
    ```kotlin
    // Set up a data map, create an experience event and send the event.
@@ -297,7 +297,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 
    * stelt de XDM nuttige lading als kaart, gebruikend de parameters van de functie op;
    * stelt een ervaringsgebeurtenis op met behulp van de kaart;
-   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+   * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 1. Navigeer naar **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** in de Android Studio-navigator en voeg verschillende aanroepen toe aan de functie `sendCommerceExperienceEvent` :
 
@@ -308,23 +308,23 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. Voor elk van de knopen (![ ThumbUp ](/help/assets/icons/ThumbUp.svg), ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg), en ![ CreditCard ](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen `scope.launch` van `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` toe:
+   1. Voor elk van de knopen (![&#x200B; ThumbUp &#x200B;](/help/assets/icons/ThumbUp.svg), ![&#x200B; ShoppingCart &#x200B;](/help/assets/icons/ShoppingCart.svg), en ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg)) in de toolbar, voeg de relevante vraag binnen `scope.launch` van `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` toe:
 
-      1. Voor ![ ThumbUp ](/help/assets/icons/ThumbUp.svg):
+      1. Voor ![&#x200B; ThumbUp &#x200B;](/help/assets/icons/ThumbUp.svg):
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. Voor ![ ShoppingCart ](/help/assets/icons/ShoppingCart.svg):
+      1. Voor ![&#x200B; ShoppingCart &#x200B;](/help/assets/icons/ShoppingCart.svg):
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. Voor ![ CreditCard ](/help/assets/icons/CreditCard.svg):
+      1. Voor ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg):
 
          ```kotlin
          // Send purchase commerce experience event
@@ -343,7 +343,7 @@ Om het verzenden van aan handel gerelateerde ervaringsgebeurtenissen op een herb
 Stel dat u schermweergaven en interacties wilt bijhouden in de app zelf. U hebt een aangepaste veldgroep voor dit type gebeurtenissen gedefinieerd.
 
 * In uw schema, identificeer de gebeurtenissen u probeert te verzamelen.
-  ![ schema van de toepassingsinteractie ](assets/datacollection-appInteraction-schema.png){zoomable="yes"}
+  ![&#x200B; schema van de toepassingsinteractie &#x200B;](assets/datacollection-appInteraction-schema.png){zoomable="yes"}
 
 * Constructie van het object beginnen.
 
@@ -507,7 +507,7 @@ Implementeer deze code opnieuw in uw project.
 
       * stelt de XDM-payload in als een woordenboek, waarbij de parameter van de functie wordt gebruikt;
       * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 
    * En één voor het volgen van het scherm. Voeg deze code toe aan de functie `func sendTrackScreenEvent(stateName: String) ` :
@@ -536,7 +536,7 @@ Implementeer deze code opnieuw in uw project.
 
       * stelt de XDM-payload in als een woordenboek, waarbij de parameter van de functie wordt gebruikt;
       * stelt een ervaringsgebeurtenis op met behulp van het woordenboek;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** .
 
@@ -556,7 +556,7 @@ Implementeer deze code opnieuw in uw project.
 
 >[!TAB  Android ]
 
-1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]** . Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in uw navigator van Android Studio.
+1. Voor het gemak definieert u twee functies in **[!UICONTROL MobileSDK]** . Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in uw navigator van Android Studio.
 
    * Een voor app-interacties. Voeg deze code toe aan de functie `fun sendAppInteractionEvent(actionName: String)` :
 
@@ -581,7 +581,7 @@ Implementeer deze code opnieuw in uw project.
 
       * stelt de XDM nuttige lading als kaart, gebruikend de parameter van de functie op;
       * stelt een ervaringsgebeurtenis op met behulp van de kaart;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 
    * En één voor het volgen van het scherm. Voeg deze code toe aan de functie `fun sendTrackScreenEvent(stateName: String)` :
@@ -608,9 +608,9 @@ Implementeer deze code opnieuw in uw project.
 
       * stelt de XDM nuttige lading als kaart, gebruikend de parameter van de functie op;
       * stelt een ervaringsgebeurtenis op met behulp van de kaart;
-      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * verzendt de ervaringsgebeurtenis gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Ga aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL views]**>**[!UICONTROL LoginSheet.kt]**
+1. Ga aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL views]**>**[!UICONTROL LoginSheet.kt]**
 
    1. Voeg de volgende gemarkeerde code toe aan de gebeurtenis **[!UICONTROL Button]** **[!UICONTROL onClick]** :
 
@@ -632,15 +632,15 @@ Implementeer deze code opnieuw in uw project.
 
 ## Validatie
 
-1. Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+1. Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
    1. Het Assurance-pictogram naar links verplaatsen.
    1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
    1. Selecteer **[!DNL Products]** in de tabbalk.
    1. Selecteer een product.
-   1. Selecteer ![ Hart ](/help/assets/icons/Heart.svg) (iOS) of ![ ThumbUp ](/help/assets/icons/ThumbUp.svg) (Android).
-   1. Selecteer ![ ShoppingCartAdd ](/help/assets/icons/ShoppingCart.svg).
-   1. Selecteer ![ CreditCard ](/help/assets/icons/CreditCard.svg).
+   1. Selecteer ![&#x200B; Hart &#x200B;](/help/assets/icons/Heart.svg) (iOS) of ![&#x200B; ThumbUp &#x200B;](/help/assets/icons/ThumbUp.svg) (Android).
+   1. Selecteer ![&#x200B; ShoppingCartAdd &#x200B;](/help/assets/icons/ShoppingCart.svg).
+   1. Selecteer ![&#x200B; CreditCard &#x200B;](/help/assets/icons/CreditCard.svg).
 
 >[!BEGINTABS]
 
@@ -655,9 +655,9 @@ Implementeer deze code opnieuw in uw project.
 >[!ENDTABS]
 
 1. Zoek in de gebruikersinterface van Assurance naar de **[!UICONTROL hitReceived]** -gebeurtenissen van de **[!UICONTROL com.adobe.edge.konductor]** -leverancier.
-1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het **[!UICONTROL messages]** -object. Alternatief, kunt u ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) gebruiken **[!UICONTROL Copy Raw Event]** en een tekst of coderedacteur van uw voorkeur gebruiken om de gebeurtenis te kleven en te inspecteren.
+1. Selecteer de gebeurtenis en bekijk de XDM-gegevens in het **[!UICONTROL messages]** -object. Alternatief, kunt u ![&#x200B; Exemplaar &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) gebruiken **[!UICONTROL Copy Raw Event]** en een tekst of coderedacteur van uw voorkeur gebruiken om de gebeurtenis te kleven en te inspecteren.
 
-   ![ de bevestiging van de gegevensinzameling ](assets/datacollection-validation.png){zoomable="yes"}
+   ![&#x200B; de bevestiging van de gegevensinzameling &#x200B;](assets/datacollection-validation.png){zoomable="yes"}
 
 
 ## Volgende stappen
@@ -670,17 +670,17 @@ U moet nu over alle gereedschappen beschikken om gegevensverzameling aan uw app 
 
 >[!TIP]
 >
->Herzie [ voltooide app ](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden.
+>Herzie [&#x200B; voltooide app &#x200B;](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) voor meer voorbeelden.
 
 
 ## Gebeurtenissen verzenden naar Analytics en Platform
 
-Nu u de gebeurtenissen hebt verzameld en hen verzonden naar Platform Edge Network, worden zij verzonden naar de toepassingen en de diensten die in uw [ worden gevormd datastream ](create-datastream.md). In recentere lessen, brengt u deze gegevens in kaart aan [ Adobe Analytics ](analytics.md), [ Adobe Experience Platform ](platform.md), en andere oplossingen van Adobe Experience Cloud (als [ Adobe Target ](target.md) en Adobe Journey Optimizer).
+Nu u de gebeurtenissen hebt verzameld en hen verzonden naar Platform Edge Network, worden zij verzonden naar de toepassingen en de diensten die in uw [&#x200B; worden gevormd datastream &#x200B;](create-datastream.md). In recentere lessen, brengt u deze gegevens in kaart aan [&#x200B; Adobe Analytics &#x200B;](analytics.md), [&#x200B; Adobe Experience Platform &#x200B;](platform.md), en andere oplossingen van Adobe Experience Cloud (als [&#x200B; Adobe Target &#x200B;](target.md) en Adobe Journey Optimizer).
 
 >[!SUCCESS]
 >
 >U hebt nu uw app ingesteld om gebeurtenissen op het gebied van handel, interactie tussen apps en het bijhouden van schermen bij te houden op de Adobe Experience Platform Edge Network. En aan alle diensten die u in uw gegevensstroom hebt bepaald.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[Handle WebViews](web-views.md)**

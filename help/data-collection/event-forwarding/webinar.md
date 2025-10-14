@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Webinar: Het ontgrendelen van uw marketing gegevens met gebeurtenis door:sturen
 
-Leer over de gebruiksgevallen en de mogelijkheden van gebeurtenis het door:sturen in Adobe Experience Platform, zoals het beheren van conversie API vraag aan derdebestemmingen en het verzenden van gebeurtenisgegevens naar uw gegevenspakhuis. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
+Leer over de gebruiksgevallen en de mogelijkheden van gebeurtenis het door:sturen in Adobe Experience Platform, zoals het beheren van conversie API vraag aan derdebestemmingen en het verzenden van gebeurtenisgegevens naar uw gegevenspakhuis. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3456501?learn=on&enablevpops&captions=dut)

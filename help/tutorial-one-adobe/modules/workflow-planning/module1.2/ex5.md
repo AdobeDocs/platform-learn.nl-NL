@@ -17,70 +17,70 @@ ht-degree: 0%
 
 Installeer de Creative Cloud-toepassing op uw computer om de integratie tussen Workfront en Photoshop in te stellen. Meld u aan met uw Adobe ID.
 
-![ WF ](./images/wf1.png)
+![&#x200B; WF &#x200B;](./images/wf1.png)
 
 Selecteer **Onderneming of de Rekening van de School** en verifieer.
 
-![ WF ](./images/wf2.png)
+![&#x200B; WF &#x200B;](./images/wf2.png)
 
 Selecteer een profiel voor aanmelden.
 
-![ WF ](./images/wf3.png)
+![&#x200B; WF &#x200B;](./images/wf3.png)
 
 Dan ben je hier. Ga naar **Voorraad &amp; Marketplace**.
 
-![ WF ](./images/wf4.png)
+![&#x200B; WF &#x200B;](./images/wf4.png)
 
 Klik **Insteekmodules** en klik dan **leiden insteekmodules**. Klik **installeer** op **Adobe Workfront voor Photoshop** kaart.
 
-![ WF ](./images/wf5.png)
+![&#x200B; WF &#x200B;](./images/wf5.png)
 
 Klik **OK**.
 
-![ WF ](./images/wf6.png)
+![&#x200B; WF &#x200B;](./images/wf6.png)
 
 Dan zie je dit.
 
-![ WF ](./images/wf7.png)
+![&#x200B; WF &#x200B;](./images/wf7.png)
 
 ## 1.2.5.2 De insteekmodule configureren in Photoshop
 
 Open Photoshop. In de bar van de Taak, ga **Insteekmodules** > **Workfront voor Adobe Photoshop** > klik **Adobe Workfront**.
 
-![ WF ](./images/wf8.png)
+![&#x200B; WF &#x200B;](./images/wf8.png)
 
 Dan zie je dit.
 
-![ WF ](./images/wf9.png)
+![&#x200B; WF &#x200B;](./images/wf9.png)
 
 Voer het domein van uw Adobe Workfront-instantie in. Klik **Login**.
 
-![ WF ](./images/wf10.png)
+![&#x200B; WF &#x200B;](./images/wf10.png)
 
 Klik **toestaan**.
 
-![ WF ](./images/wf11.png)
+![&#x200B; WF &#x200B;](./images/wf11.png)
 
 Teken binnen met uw **Adobe ID**.
 
-![ WF ](./images/wf12.png)
+![&#x200B; WF &#x200B;](./images/wf12.png)
 
 Selecteer **Onderneming of de Rekening van de School**.
 
-![ WF ](./images/wf13.png)
+![&#x200B; WF &#x200B;](./images/wf13.png)
 
 Klik **Toestaan Toegang**.
 
-![ WF ](./images/wf14.png)
+![&#x200B; WF &#x200B;](./images/wf14.png)
 
 Je ziet deze bevestiging.
 
-![ WF ](./images/wf15.png)
+![&#x200B; WF &#x200B;](./images/wf15.png)
 
 Ga terug naar Photoshop en u zult zien dat de plug-in nu klaar is om te worden gebruikt en uw actieve taken toont.
 
-![ WF ](./images/wf16.png)
+![&#x200B; WF &#x200B;](./images/wf16.png)
 
-Ga terug naar [ Beheer van het Werkschema met Adobe Workfront ](./workfront.md){target="_blank"}
+Ga terug naar [&#x200B; Beheer van het Werkschema met Adobe Workfront &#x200B;](./workfront.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

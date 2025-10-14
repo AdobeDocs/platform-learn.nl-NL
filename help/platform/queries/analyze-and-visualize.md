@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Analyseer en visualiseer omni-channel inzichten in Tableau gebruikend de Dienst van de Vraag
 
-Leer hoe u de Dienst van de Vraag van Adobe Experience Platform met externe hulpmiddelen van de gegevensvisualisatie kunt gebruiken gebruikend een voorbeeld van de kanaalanalyse. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
+Leer hoe u de Dienst van de Vraag van Adobe Experience Platform met externe hulpmiddelen van de gegevensvisualisatie kunt gebruiken gebruikend een voorbeeld van de kanaalanalyse. Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

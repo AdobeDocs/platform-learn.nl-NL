@@ -21,7 +21,7 @@ Deze video laat zien hoe gegevens in real-time naar Adobe Experience Platform ku
 
 ## Aanvullende informatie
 
-* [ creeer een het stromen verbinding gebruikend de API documentatie ](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=nl-NL).
-* [ gegevens van het het verslag van de Stroom gebruikend de documentatie van Ingestie APIs Streaming ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=nl-NL)
-* [ de tijd-reeksen van de stroom gegevens gebruikend de Streaming documentatie van Ingestie APIs ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=nl-NL)
-* [ verzend veelvoudige berichten in één enkele HTTP- verzoekdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=nl-NL)
+* [&#x200B; creeer een het stromen verbinding gebruikend de API documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=nl-NL).
+* [&#x200B; gegevens van het het verslag van de Stroom gebruikend de documentatie van Ingestie APIs Streaming &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=nl-NL)
+* [&#x200B; de tijd-reeksen van de stroom gegevens gebruikend de Streaming documentatie van Ingestie APIs &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=nl-NL)
+* [&#x200B; verzend veelvoudige berichten in één enkele HTTP- verzoekdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=nl-NL)

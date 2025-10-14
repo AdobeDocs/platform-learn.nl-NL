@@ -38,12 +38,12 @@ U kunt nu het volgende:
 
 ## Bekijk dit
 
-- Tech Blog: [ Adobe Experience Platform biedt nu de Macht en Versnelling van de Dienst van de Vraag ](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b) aan
-- Tech Blog: [ versnelt het Versnellen Intelligente Inzichten met de Wetenschap van de Gegevens van Adobe Experience Platform Workspace ](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
-- De Documentatie van Experience Platform: [ overzicht van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
+- Tech Blog: [&#x200B; Adobe Experience Platform biedt nu de Macht en Versnelling van de Dienst van de Vraag &#x200B;](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b) aan
+- Tech Blog: [&#x200B; versnelt het Versnellen Intelligente Inzichten met de Wetenschap van de Gegevens van Adobe Experience Platform Workspace &#x200B;](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
+- De Documentatie van Experience Platform: [&#x200B; overzicht van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
 
 ## Volgende stappen
 
-Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
+Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

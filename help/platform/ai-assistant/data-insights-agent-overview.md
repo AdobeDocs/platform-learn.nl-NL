@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Data Insights Agent-overzicht
 
-De Insight Agent van gegevens tikt in gebeurtenis, profiel, reis, en off-line gegevens, vereenvoudigend ontdekking en toelatend gepersonaliseerde dashboards onmiddellijk. Voor meer informatie, zie de [ documentatie van Data Insights Agent ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
+De Insight Agent van gegevens tikt in gebeurtenis, profiel, reis, en off-line gegevens, vereenvoudigend ontdekking en toelatend gepersonaliseerde dashboards onmiddellijk. Voor meer informatie, zie de [&#x200B; documentatie van Data Insights Agent &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
 
 >[!SLIDE](data-insights-agent-overview)

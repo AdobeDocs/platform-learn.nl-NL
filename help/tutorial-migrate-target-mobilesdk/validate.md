@@ -25,11 +25,11 @@ Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur
 
 De technische validatie en probleemoplossing met Platform Mobile SDK en de Offer Decisioning- en Target-extensie worden aanzienlijk verbeterd met Assurance. Raadpleeg de volgende documentatiepagina&#39;s voor meer informatie over dit essentiële hulpmiddel:
 
-* [ de stop van het Beslissingsbesluit van de vestiging in Assurance ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
+* [&#x200B; de stop van het Beslissingsbesluit van de vestiging in Assurance &#x200B;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-* [ Valideren optimaliseert de opstelling van SDK ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
+* [&#x200B; Valideren optimaliseert de opstelling van SDK &#x200B;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-* [ verzoeken van het Overzicht en simuleren verschillende ervaringen ](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
+* [&#x200B; verzoeken van het Overzicht en simuleren verschillende ervaringen &#x200B;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
 Nadat u de bovenstaande validatiestappen hebt uitgevoerd, kunt u erop vertrouwen dat de implementatie van Platform Mobile SDK met de Offer Decisioning- en Target-extensie gereed is voor overstap naar de productie.
 
@@ -37,4 +37,4 @@ Gefeliciteerd, u hebt het einde van de zelfstudie bereikt! Veel succes bij het m
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

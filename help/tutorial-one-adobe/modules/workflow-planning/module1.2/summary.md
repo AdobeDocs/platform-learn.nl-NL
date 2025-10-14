@@ -21,6 +21,6 @@ Gefeliciteerd...
 
 ## Bekijk dit
 
-Ga terug naar [ Beheer van het Werkschema met Adobe Workfront ](./workfront.md){target="_blank"}
+Ga terug naar [&#x200B; Beheer van het Werkschema met Adobe Workfront &#x200B;](./workfront.md){target="_blank"}
 
 [Terug naar alle modules](../../../overview.md)

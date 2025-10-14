@@ -18,7 +18,7 @@ Leer hoe u een nieuwe gegevensstroom maakt en configureert, zodat uw websitegege
 
 In deze les leert u hoe u het systeem maakt en configureert, zodat uw gegevens van uw website naar de Adobe Edge stromen en vervolgens van daar naar Adobe Analytics worden gerouteerd.
 
-![ Diagram van de Architectuur ](assets/architecture_diagram.jpg)
+![&#x200B; Diagram van de Architectuur &#x200B;](assets/architecture_diagram.jpg)
 
 ## Een nieuwe ontwikkelingsgegevensstroom maken
 
@@ -27,7 +27,7 @@ In deze les leert u hoe u het systeem maakt en configureert, zodat uw gegevens v
    1. Zorg ervoor dat de juiste organisatie boven aan de pagina is geselecteerd (bijv. Adobe productie - Tech Marketing Demos in de onderstaande afbeelding)
    1. Klik op de &quot;negen punten,&quot;AKA de toepassingsschakelaar, en selecteer **Inzameling van Gegevens**
 
-      ![ ga aan gegevensinzameling ](assets/navigate-to-data-collection.jpg)
+      ![&#x200B; ga aan gegevensinzameling &#x200B;](assets/navigate-to-data-collection.jpg)
 
 1. Ga naar **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Selecteren **[!UICONTROL New Datastream]**
@@ -35,16 +35,16 @@ In deze les leert u hoe u het systeem maakt en configureert, zodat uw gegevens v
 
    >[!NOTE]
    >
-   >U moet slechts een schema selecteren als het gebruiken van [ Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/data-prep), die wij niet in dit leerprogramma zullen doen. Ga naar de link voor meer informatie.
+   >U moet slechts een schema selecteren als het gebruiken van [&#x200B; Prep van Gegevens voor de eigenschap van de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/data-prep), die wij niet in dit leerprogramma zullen doen. Ga naar de link voor meer informatie.
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ creeer de datastream ](assets/create-new-datastream.jpg)
+   ![&#x200B; creeer de datastream &#x200B;](assets/create-new-datastream.jpg)
 
 1. Zodra de gegevensstroom wordt bewaard, zal een nieuw scherm omhoog komen, latend u weten dat u geen diensten hebt die nog worden gevormd. Met andere woorden, uw gegevens worden naar Edge-servers verzonden, maar worden pas naar andere toepassingen verzonden als we een service toevoegen. We configureren de gegevensstroom nu om de gegevens naar Adobe Analytics te verzenden. Klik op **[!UICONTROL Add Service]**.
-   ![ voegt de Dienst ](assets/datastream-add-service.jpg) toe
+   ![&#x200B; voegt de Dienst &#x200B;](assets/datastream-add-service.jpg) toe
 1. Selecteer **[!UICONTROL Adobe Analytics]** in het vervolgkeuzemenu voor de service.
-1. Op het gebied van identiteitskaart van de rapportreeks, ga identiteitskaart (niet de titel, maar eerder rapportreeks identiteitskaart) van de reeks van het bevestigingsrapport in die u in [ creeerde creeer een de reeks van het bevestigingsrapport ](create-a-validation-report-suite.md) activiteit. Klik op **[!UICONTROL Save]**.
+1. Op het gebied van identiteitskaart van de rapportreeks, ga identiteitskaart (niet de titel, maar eerder rapportreeks identiteitskaart) van de reeks van het bevestigingsrapport in die u in [&#x200B; creeerde creeer een de reeks van het bevestigingsrapport &#x200B;](create-a-validation-report-suite.md) activiteit. Klik op **[!UICONTROL Save]**.
 
 ## Staging- en productiegegevensstromen
 

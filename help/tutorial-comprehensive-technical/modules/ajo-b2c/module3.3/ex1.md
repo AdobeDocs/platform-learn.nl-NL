@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 3.3.1.1 Terminologie
 
-Om een beter begrip over Offer decisioning te krijgen, adviseren wij hoogst u om het [ overzicht ](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) te lezen over hoe de Dienst van de Toepassing van de Offer decisioning met Adobe Experience Platform werkt.
+Om een beter begrip over Offer decisioning te krijgen, adviseren wij hoogst u om het [&#x200B; overzicht &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=nl-NL) te lezen over hoe de Dienst van de Toepassing van de Offer decisioning met Adobe Experience Platform werkt.
 
 Als u met Offer decisioning werkt, moet u de volgende concepten begrijpen:
 
@@ -37,27 +37,27 @@ Als u met Offer decisioning werkt, moet u de volgende concepten begrijpen:
 
 ## 3.3.1.2 Offer decisioning
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![&#x200B; ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak `--aepSandboxName--` zijn.**
 
-![ ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In het linkermenu, klik **Aanbiedingen**. U ziet nu het menu Aanbiedingen, dat dingen als Aanbiedingen, Verzamelingen en Besluiten bevat.
 
-![ Plaatsingen ](./images/homedec.png)
+![&#x200B; Plaatsingen &#x200B;](./images/homedec.png)
 
 Klik **Componenten**. U zult nu dingen zoals Plaatsen, het kwalificeren van de Inzameling, Regels en Rankingen zien.
 
-![ Plaatsingen ](./images/components.png)
+![&#x200B; Plaatsingen &#x200B;](./images/components.png)
 
 ## 3.3.1.3 Plaatsingen
 
 Ga naar **Plaatsen**.
 
-![ Plaatsingen ](./images/placements.png)
+![&#x200B; Plaatsingen &#x200B;](./images/placements.png)
 
 In het **lusje van Plaatsen** kunt u uw plaatsingen voor uw aanbiedingen bepalen. Wanneer u een beslissing definieert, bepaalt de plaatsing waar de resulterende aanbieding wordt weergegeven (Kanaaltype) en in welke vorm of vorm (Inhoudstype).
 
@@ -81,7 +81,7 @@ Als u geen plaatsingen in uw milieu ziet, te creëren gelieve hen zoals hieronde
 
 Klik op een willekeurige locatie om de instellingen van de locatie te visualiseren.
 
-![ Plaatsingen ](./images/placement1.png)
+![&#x200B; Plaatsingen &#x200B;](./images/placement1.png)
 
 U ziet nu alle velden van de Placement:
 
@@ -99,11 +99,11 @@ Aangezien u reeds weet hoe te om publiek te bepalen dat op de vorige enablement 
 
 Ga naar **Regels**. Klik op **+ Regel maken** .
 
-![ Regels van het Besluit ](./images/rules.png)
+![&#x200B; Regels van het Besluit &#x200B;](./images/rules.png)
 
 Dan zie je de interface Audience creation van Adobe Experience Platform.
 
-![ Regels van het Besluit ](./images/createrule1.png)
+![&#x200B; Regels van het Besluit &#x200B;](./images/createrule1.png)
 
 U kunt tot alle gebieden nu toegang hebben die deel van het Schema van de Vereniging voor het Profiel van de Klant in real time uitmaken en om het even welke regel kunnen bouwen.
 
@@ -111,7 +111,7 @@ Het is ook goed om te weten dat u reeds bepaald publiek in Adobe Experience Plat
 
 U zult dan dit zien:
 
-![ Regel van het Besluit ](./images/decisionruleaud.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/decisionruleaud.png)
 
 Als u wenst, kunt u uw eigen Regels nu vormen. Hiervoor hebt u twee regels nodig:
 
@@ -124,21 +124,21 @@ Het attribuut om de regel te gebruiken te bouwen is **XDM Individueel Profiel** 
 
 Als voorbeeld, hier is de regeldefinitie voor de regel **allen - Mannelijke Klanten**:
 
-![ Regel van het Besluit ](./images/allmale.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/allmale.png)
 
 Als voorbeeld, hier is de regeldefinitie voor de regel **allen - Vrouwelijke Klanten**:
 
-![ Regel van het Besluit ](./images/allfemale.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/allfemale.png)
 
 ## 3.3.1.5 Aanbiedingen
 
 Ga naar **Aanbiedingen** en selecteer **Aanbiedingen**. Klik op **+ Voorstel maken** .
 
-![ Regel van het Besluit ](./images/offers1.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/offers1.png)
 
 Dan zie je deze popup.
 
-![ Regel van het Besluit ](./images/offers2.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/offers2.png)
 
 Maak nu geen aanbiedingen, dat doe je in de volgende oefening.
 
@@ -157,11 +157,11 @@ In een besluit worden stages, een verzameling persoonlijke aanbiedingen en een t
 
 Om uw **Besluit** te vormen, klik **Besluiten**.
 
-![ Regel van het Besluit ](./images/activity.png)
+![&#x200B; Regel van het Besluit &#x200B;](./images/activity.png)
 
 In de volgende oefening, zult u uw eigen aanbiedingen en besluit vormen.
 
-Volgende Stap: [ 3.3.2 vormt uw Aanbiedingen en Besluit ](./ex2.md)
+Volgende Stap: [&#x200B; 3.3.2 vormt uw Aanbiedingen en Besluit &#x200B;](./ex2.md)
 
 [Terug naar module 3.3](./offer-decisioning.md)
 

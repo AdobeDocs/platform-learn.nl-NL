@@ -37,7 +37,7 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 ## Vereiste machtigingen
 
-In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [&#x200B; vorm toestemmingen &#x200B;](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 <!--
 * Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
@@ -68,7 +68,7 @@ Laten we beginnen met het maken van een naamruimte voor het Luma Loyalty-schema:
 
 1. Selecteren **[!UICONTROL Create]**
 
-   ![ creeer Namespaces ](assets/identity-createNamespace.png)
+   ![&#x200B; creeer Namespaces &#x200B;](assets/identity-createNamespace.png)
 
 Stel nu een andere naamruimte in voor het schema Luminageproductcatalogus met de volgende details:
 
@@ -94,7 +94,7 @@ We zullen onze CRM-naamruimte maken via API.
 
 Laten we de Identity Namespace `Luma CRM Id`maken:
 
-1. De download [ Identiteitsdienst.postman_collection.json ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` omslag
+1. De download [&#x200B; Identiteitsdienst.postman_collection.json &#x200B;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` omslag
 1. De verzameling importeren in [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteer **verzend** om een nieuw toegangstoken te verzoeken.
 1. Selecteer de aanvraag **[!UICONTROL Identity Service]> [!UICONTROL Identity Namespace] > [!UICONTROL Create a new identity namespace] .**
@@ -110,10 +110,10 @@ Laten we de Identity Namespace `Luma CRM Id`maken:
 
 1. Druk **verzenden** knoop en u zou a **200 O.K.** reactie moeten krijgen:
 
-   ![ Namespace van de Identiteit ](assets/identity-createUsingApi.png)
+   ![&#x200B; Namespace van de Identiteit &#x200B;](assets/identity-createUsingApi.png)
 
 Als u terugkeert naar de gebruikersinterface, zou u uw drie nieuwe douanenamespaces nu moeten zien:
-![ Identiteitsnaamruimte ](assets/identity-newIdentities.png)
+![&#x200B; Identiteitsnaamruimte &#x200B;](assets/identity-newIdentities.png)
 
 
 ## Identiteitsvelden in schema&#39;s labelen
@@ -136,7 +136,7 @@ Laten we een primaire identiteit toevoegen aan de `Luma Loyalty Schema`:
 1. Selecteren **[!UICONTROL Apply]**
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ Primaire identiteit ](assets/identity-loyalty-primary.png)
+   ![&#x200B; Primaire identiteit &#x200B;](assets/identity-loyalty-primary.png)
 
 Herhaal het proces voor een deel van uw andere schema:
 
@@ -163,7 +163,7 @@ U kunt meerdere identiteitsvelden toevoegen aan een schema. Niet-primaire identi
 1. De naamruimte `Luma CRM Id` selecteren in het vervolgkeuzemenu **[!UICONTROL Identity namespaces]**
 1. Selecteer **[!UICONTROL Apply]** en selecteer vervolgens de knop **[!UICONTROL Save]** om uw wijzigingen op te slaan
 
-   ![ Secundaire Identiteit ](assets/identity-loyalty-secondaryId.png)
+   ![&#x200B; Secundaire Identiteit &#x200B;](assets/identity-loyalty-secondaryId.png)
 
 ## De schemarelaties voltooien
 
@@ -178,19 +178,19 @@ Nu onze identiteitsgebieden geëtiketteerd hebben, kunnen wij de opstelling van 
 1. Selecteren **[!UICONTROL Apply]**
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ gebied van de Verwijzing ](assets/identity-offlinePurchase-relationship.png)
+   ![&#x200B; gebied van de Verwijzing &#x200B;](assets/identity-offlinePurchase-relationship.png)
 
 Herhaal dit proces om een relatie te maken tussen de `Luma Web Events Schema` en de `Luma Product Catalog Schema` .
 
 Nadat u de relatie hebt gedefinieerd, wordt deze zowel in de sectie **[!UICONTROL Composition]** als in de sectie **[!UICONTROL Structure]** van de schema-editor aangegeven.
 
-![ visualisatie van de Verhouding in de schemageditor ](assets/identity-webEvents-relationship.png)
+![&#x200B; visualisatie van de Verhouding in de schemageditor &#x200B;](assets/identity-webEvents-relationship.png)
 
 <!--need to verify that the relationship schema works-->
 
 ## Aanvullende bronnen
 
-* [ documentatie van de Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl)
-* [ Identiteitsdienst API ](https://www.adobe.io/experience-platform-apis/references/identity-service/)
+* [&#x200B; documentatie van de Dienst van de Identiteit &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl)
+* [&#x200B; Identiteitsdienst API &#x200B;](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
-Nu onze identiteiten op zijn plaats zijn, kunnen wij [ onze datasets ](create-datasets.md) tot stand brengen!
+Nu onze identiteiten op zijn plaats zijn, kunnen wij [&#x200B; onze datasets &#x200B;](create-datasets.md) tot stand brengen!

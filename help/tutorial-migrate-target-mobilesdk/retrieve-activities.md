@@ -27,7 +27,7 @@ Zorg er altijd voor dat u foutafhandeling opneemt om geschikte ervaringen onder 
 
 >[!IMPORTANT]
 >
->Nadat u inhoud op de app hebt toegepast, moet u de API van `displayed` starten om aan Target te laten weten dat de bezoeker de alternatieve of standaardinhoud heeft gezien die in de activiteit is opgegeven. Gelieve te zien de [ de omzettingsgebeurtenissen van het Doel van het Spoor ](track-events.md) pagina voor meer details.
+>Nadat u inhoud op de app hebt toegepast, moet u de API van `displayed` starten om aan Target te laten weten dat de bezoeker de alternatieve of standaardinhoud heeft gezien die in de activiteit is opgegeven. Gelieve te zien de [&#x200B; de omzettingsgebeurtenissen van het Doel van het Spoor &#x200B;](track-events.md) pagina voor meer details.
 
 
 +++ Android-voorbeeld
@@ -143,8 +143,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-Daarna, leer hoe te [ parameters overgaan van het Doel gebruikend Offer Decisioning en de uitbreiding van het Doel ](send-parameters.md).
+Daarna, leer hoe te [&#x200B; parameters overgaan van het Doel gebruikend Offer Decisioning en de uitbreiding van het Doel &#x200B;](send-parameters.md).
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

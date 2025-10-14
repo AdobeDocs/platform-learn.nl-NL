@@ -22,7 +22,7 @@ Met dit gegevenselement wordt het object &quot;Data&quot; gemaakt, dat wordt geb
 
    U zult aan de gegevenselementen landende pagina worden genomen waar u al uw reeds bestaande gegevenselementen zult zien. We moeten een nieuw gegevenselement maken om de migratie te vergemakkelijken. Klik **toevoegen het Element van Gegevens**.
 
-   ![ voeg gegevenselement ](assets/add-new-data-alement.jpg) toe
+   ![&#x200B; voeg gegevenselement &#x200B;](assets/add-new-data-alement.jpg) toe
 
 1. Configureer uw gegevenselement.
    1. Geef uw gegevenselement een naam wat u wilt - iets dat u eraan zal helpen herinneren dat dit de gegevens op uw pagina bouwt, en dat dit het type &quot;Variabele&quot;zal zijn. Voor dit leerprogramma, zullen wij het **Variabele van de Gegevens van de Mening van de Pagina** roepen.
@@ -32,4 +32,4 @@ Met dit gegevenselement wordt het object &quot;Data&quot; gemaakt, dat wordt geb
    1. Controleer de **oplossing van Adobe Analytics** en één van beide andere oplossingen die u eveneens migreert, b.v. **Adobe Target** die in dit schermafbeelding toont.
 1. Klik **sparen**.
 
-   ![ vorm veranderlijk gegevenselement ](assets/configure-variable-data-element.jpg)
+   ![&#x200B; vorm veranderlijk gegevenselement &#x200B;](assets/configure-variable-data-element.jpg)

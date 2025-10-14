@@ -20,6 +20,6 @@ Gefeliciteerd...
 
 ## Bekijk dit
 
-Ga terug naar [ Adobe Experience Manager Assets ](./aemassets.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Experience Manager Assets &#x200B;](./aemassets.md){target="_blank"}
 
 [Terug naar alle modules](../../../overview.md)

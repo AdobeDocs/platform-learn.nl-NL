@@ -31,12 +31,12 @@ Microsoft Azure Event Hubs is een volledig beheerde, realtime service voor gegev
 
 ## Vereisten
 
-- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
+- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
 - Begrijp hoe u publiek in Adobe Experience Platform definieert, gebruikt en activeert
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -72,7 +72,7 @@ Op dit punt is alles ingesteld. U kunt nu bladeren op uw demowebsite en publieks
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

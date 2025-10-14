@@ -22,12 +22,12 @@ In deze module nemen we de stappen om Adobe Journey Optimizer te gebruiken. U zu
 
 ## Vereisten
 
-- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
+- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
 - Toegang tot Adobe Journey Optimizer
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -51,7 +51,7 @@ Dit zal u door de configuratie van Lancering begeleiden om uw gebeurtenis teweeg
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

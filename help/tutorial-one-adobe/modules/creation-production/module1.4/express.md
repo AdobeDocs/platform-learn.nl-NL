@@ -23,30 +23,30 @@ U leert het volgende:
 
 ## Vereisten
 
-- Toegang tot Adobe Express [ https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Toegang tot Adobe Express [&#x200B; https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
 
 ## Uitoefening
 
-[ 1.4.1 die met Adobe Express ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.4.1 die met Adobe Express &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, verken Adobe Express in combinatie met Firefly Services en een inzicht in zijn mogelijkheden krijgen.
 
-[ 1.4.2 Animatie en Video in Adobe Express ](./ex2.md){target="_blank"}
+[&#x200B; 1.4.2 Animatie en Video in Adobe Express &#x200B;](./ex2.md){target="_blank"}
 
 In deze oefening gebruikt u Adobe Express om afbeeldingen te animeren en video&#39;s te maken.
 
-[ 1.4.3 Bulk leidt Assets in Adobe Express ](./ex3.md){target="_blank"}
+[&#x200B; 1.4.3 Bulk leidt Assets in Adobe Express &#x200B;](./ex3.md){target="_blank"}
 
 In deze oefening, zult u met Adobe Express werken om veelvoudige versies van activa tot stand te brengen door uit-van-de-doosautomatiseringsmogelijkheden van Adobe Express te gebruiken.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}

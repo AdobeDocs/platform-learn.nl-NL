@@ -19,6 +19,6 @@ Aanvullende bronnen:
 
 ## Volgende stappen
 
-Ga terug naar [ Content Analytics ](./contentanalytics.md){target="_blank"}
+Ga terug naar [&#x200B; Content Analytics &#x200B;](./contentanalytics.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../../overview.md){target="_blank"}

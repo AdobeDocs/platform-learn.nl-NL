@@ -15,37 +15,37 @@ ht-degree: 0%
 
 U kunt nu uw gefedereerde database configureren in Adobe Experience Platform.
 
-Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+Login aan Adobe Experience Platform door naar dit URL te gaan: [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform).
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./../module1.2/images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../module1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![ Ingestie van Gegevens ](./../module1.2/images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../module1.2/images/sb1.png)
 
 ## 1.3.2.1 Een gefederaliseerde database in AEP instellen
 
 Klik **Verdeelde gegevensbestanden** in het linkermenu. Dan, klik **voegt gefederaliseerde gegevensbestand** toe.
 
-![ FAC ](./images/fdb1.png)
+![&#x200B; FAC &#x200B;](./images/fdb1.png)
 
 Als a **Etiket**, gebruik `--aepUserLdap-- - CitiSignal Snowflake` en voor het type, kies **Snowflake**.
 
 Onder details, moet u uw geloofsbrieven invullen, die als dit zullen kijken:
 
-![ FAC ](./images/fdb2.png)
+![&#x200B; FAC &#x200B;](./images/fdb2.png)
 
 **Server**:
 
 In Snowflake, ga naar **Admin > Rekeningen**. Klik 3 **...** naast uw rekening en klik **leiden URLs**.
 
-![ FAC ](./images/fdburl1.png)
+![&#x200B; FAC &#x200B;](./images/fdburl1.png)
 
 Dan zie je dit. Kopieer **Huidige URL** en kleef het op het **gebied van de Server** in AEP.
 
-![ FAC ](./images/fdburl2.png)
+![&#x200B; FAC &#x200B;](./images/fdburl2.png)
 
 **Gebruiker**: De gebruikersnaam u vroeger, in oefening 1.3.1.1 creeerde
 **Wachtwoord**: het wachtwoord u vroeger, in oefening 1.3.1.1 creeerde
@@ -55,21 +55,21 @@ Dus ten slotte, zou je dit moeten hebben. Klik **Verbinding van de Test**. Als d
 
 Zodra de verbinding met succes werd getest en de functies worden opgesteld, zal uw configuratie worden opgeslagen.
 
-![ FAC ](./images/fdb3.png)
+![&#x200B; FAC &#x200B;](./images/fdb3.png)
 
 Wanneer u dan terug naar het **Verbond gegevensbestanden** menu gaat, zult u uw verbinding daar zien.
 
-![ FAC ](./images/fdb4.png)
+![&#x200B; FAC &#x200B;](./images/fdb4.png)
 
 ## 1.3.2.2 Schema&#39;s maken in AEP
 
 In het linkermenu, klik **Modellen** en ga dan naar **Schema&#39;s**. Klik **creeer schema**.
 
-![ FAC ](./images/fdb5.png)
+![&#x200B; FAC &#x200B;](./images/fdb5.png)
 
 Selecteer uw gefedereerde database en klik op **+ Tabellen toevoegen** .
 
-![ FAC ](./images/fdb6.png)
+![&#x200B; FAC &#x200B;](./images/fdb6.png)
 
 Dan zie je dit. Selecteer de vijf tabellen die u eerder in Snowflake hebt gemaakt:
 
@@ -81,7 +81,7 @@ Dan zie je dit. Selecteer de vijf tabellen die u eerder in Snowflake hebt gemaak
 
 Klik **toevoegen**.
 
-![ FAC ](./images/fdb7.png)
+![&#x200B; FAC &#x200B;](./images/fdb7.png)
 
 AEP zal dan de informatie van elke lijst laden en het tonen in UI.
 
@@ -96,102 +96,102 @@ Voor deze oefening zijn geen veranderingen nodig.
 
 Klik **creëren**.
 
-![ FAC ](./images/fdb8.png)
+![&#x200B; FAC &#x200B;](./images/fdb8.png)
 
 Dan zie je dit. U kunt op elk schema klikken en de gegevens bekijken. Als voorbeeld, klik **—aepUserLoad—_PERSONS**.
 
-![ FAC ](./images/fdb9.png)
+![&#x200B; FAC &#x200B;](./images/fdb9.png)
 
 U zult dan dit zien, met de capaciteit om de configuratie uit te geven. Klik **Gegevens** om een steekproef van het gegeven te zien dat in het gegevensbestand van Snowflake is.
 
-![ FAC ](./images/fdb10.png)
+![&#x200B; FAC &#x200B;](./images/fdb10.png)
 
 U ziet dan een voorbeeld van de gegevens.
 
-![ FAC ](./images/fdb11.png)
+![&#x200B; FAC &#x200B;](./images/fdb11.png)
 
 ## 1.3.2.3 Een model maken in AEP
 
 In het linkermenu, ga naar **Modellen** en ga dan naar **het model van Gegevens**. Klik **creëren gegevensmodel**.
 
-![ FAC ](./images/fdb12.png)
+![&#x200B; FAC &#x200B;](./images/fdb12.png)
 
 Gebruik `--aepUserLdap-- - CitiSignal Snowflake Data Model` voor het label. Klik **creëren**.
 
-![ FAC ](./images/fdb13.png)
+![&#x200B; FAC &#x200B;](./images/fdb13.png)
 
 Klik **schema&#39;s** toevoegen.
 
-![ FAC ](./images/fdb14.png)
+![&#x200B; FAC &#x200B;](./images/fdb14.png)
 
 Selecteer uw schema&#39;s en klik **toevoegen**.
 
-![ FAC ](./images/fdb15.png)
+![&#x200B; FAC &#x200B;](./images/fdb15.png)
 
 Dan zie je dit. Klik **sparen**.
 
-![ FAC ](./images/fdb16.png)
+![&#x200B; FAC &#x200B;](./images/fdb16.png)
 
 ### PERSONEN - GEBRUIKERS
 
 U kunt nu koppelingen tussen schema&#39;s definiëren. Begin bepalend een verbinding, moet u **klikken creeert verbindingen**.
 
-![ FAC ](./images/fdb16.png)
+![&#x200B; FAC &#x200B;](./images/fdb16.png)
 
 Eerst, bepalen wij de verbinding tussen de lijst `--aepUserLdap--_USERS` en `--aepUserLdap--_PERSONS`.
 
 Klik **toevoegen**.
 
-![ FAC ](./images/fdb18.png)
+![&#x200B; FAC &#x200B;](./images/fdb18.png)
 
 ### HUISHOUDENS - PERSONEN
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
-![ FAC ](./images/fdb17.png)
+![&#x200B; FAC &#x200B;](./images/fdb17.png)
 
 Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_HOUSEHOLDS` en `--aepUserLdap--_PERSONS` .
 
-![ FAC ](./images/fdb19.png)
+![&#x200B; FAC &#x200B;](./images/fdb19.png)
 
 ### GEBRUIKERS - MONTHLY_DATA_USAGE
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
-![ FAC ](./images/fdb20.png)
+![&#x200B; FAC &#x200B;](./images/fdb20.png)
 
 Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MONTHLY_DATA_USAGE` .
 
-![ FAC ](./images/fdb21.png)
+![&#x200B; FAC &#x200B;](./images/fdb21.png)
 
 
 ### GEBRUIKERS - HUISHOUDENS
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
-![ FAC ](./images/fdb22.png)
+![&#x200B; FAC &#x200B;](./images/fdb22.png)
 
 Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_HOUSEHOLDS` .
 
-![ FAC ](./images/fdb23.png)
+![&#x200B; FAC &#x200B;](./images/fdb23.png)
 
 ### GEBRUIKERS - MOBILE_DATA_USAGE
 
 Dan ben je hier weer. Klik **creeer verbindingen** om een andere verbinding tot stand te brengen.
 
-![ FAC ](./images/fdb24.png)
+![&#x200B; FAC &#x200B;](./images/fdb24.png)
 
 Vervolgens definiëren we de koppeling tussen de tabel `--aepUserLdap--_USERS` en `--aepUserLdap--_MOBILE_DATA_USAGE` .
 
-![ FAC ](./images/fdb25.png)
+![&#x200B; FAC &#x200B;](./images/fdb25.png)
 
 Dan moet je dit zien. Klik **sparen**.
 
-![ FAC ](./images/fdb26.png)
+![&#x200B; FAC &#x200B;](./images/fdb26.png)
 
 Uw installatie in AEP is nu voltooid. U kunt nu uw gefedereerde gegevens in een gefederaliseerde publiekscompositie gebruiken.
 
-Volgende Stap: [ 1.3.3 leidt tot een gefederaliseerde samenstelling ](./ex3.md)
+Volgende Stap: [&#x200B; 1.3.3 leidt tot een gefederaliseerde samenstelling &#x200B;](./ex3.md)
 
 [Terug naar module 1.3](./fac.md)
 

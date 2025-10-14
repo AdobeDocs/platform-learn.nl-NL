@@ -19,31 +19,31 @@ Leer de verschillende manieren waarop je Adobe Firefly Services kunt gebruiken.
 
 ## Vereisten
 
-Toegang tot Adobe Firefly [ https://firefly.adobe.com/](https://firefly.adobe.com/)
+Toegang tot Adobe Firefly [&#x200B; https://firefly.adobe.com/](https://firefly.adobe.com/)
 
 ## Uitoefening
 
-[ 1.1.1 Aan de slag met de Diensten van Firefly ](./ex1.md){target="_blank"}
+[&#x200B; 1.1.1 Aan de slag met de Diensten van Firefly &#x200B;](./ex1.md){target="_blank"}
 
 In deze oefening, onderzoek de Diensten van Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[ 1.1.2 optimaliseer uw proces van Firefly gebruikend Microsoft Azure en presigned URLs ](./ex2.md){target="_blank"}
+[&#x200B; 1.1.2 optimaliseer uw proces van Firefly gebruikend Microsoft Azure en presigned URLs &#x200B;](./ex2.md){target="_blank"}
 
 In deze oefening, onderzoek de Diensten van Firefly en krijg een inzicht in zijn mogelijkheden.
 
-[ 1.1.3 die met Photoshop APIs ](./ex3.md){target="_blank"} werkt
+[&#x200B; 1.1.3 die met Photoshop APIs &#x200B;](./ex3.md){target="_blank"} werkt
 
 In deze oefening, leer hoe te om de Diensten van Firefly samen met Adobe Photoshop te gebruiken.
 
-[ 1.1.4 Firefly Custom Models API ](./ex4.md){target="_blank"}
+[&#x200B; 1.1.4 Firefly Custom Models API &#x200B;](./ex4.md){target="_blank"}
 
 Leer hoe u de Firefly Customer Models API kunt gebruiken.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Meer informatie over een overzicht en voordelen van Firefly Services.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
@@ -51,4 +51,4 @@ Meer informatie over een overzicht en voordelen van Firefly Services.
 
 ## Volgende stappen
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}

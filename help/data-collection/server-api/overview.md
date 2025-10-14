@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Overzicht Adobe Experience Platform Edge Network Server API
 
-Leer hoe u gegevens naar Platform Edge Network kunt verzenden met behulp van een beveiligde, geverifieerde server-API. Voor meer informatie, gelieve de [ API documentatie van de Server ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=nl-NL) te bezoeken.
+Leer hoe u gegevens naar Platform Edge Network kunt verzenden met behulp van een beveiligde, geverifieerde server-API. Voor meer informatie, gelieve de [&#x200B; API documentatie van de Server &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on&enablevpops)

@@ -102,7 +102,7 @@ ZooKeeper is hoofdzakelijk de dienst voor verdeelde systemen die een hiërarchis
 
 U hebt deze oefening voltooid.
 
-Volgende Stap: [ 2.6.2 installeer en vorm uw cluster Kafka ](./ex2.md)
+Volgende Stap: [&#x200B; 2.6.2 installeer en vorm uw cluster Kafka &#x200B;](./ex2.md)
 
 [Terug naar module 2.6](./aep-apache-kafka.md)
 

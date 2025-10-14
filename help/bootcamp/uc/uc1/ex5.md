@@ -16,47 +16,47 @@ ht-degree: 0%
 
 # 1.5 Actie nemen: stuur je publiek naar Facebook
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``Bootcamp`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![ Ingestie van Gegevens ](./images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/sb1.png)
 
 In het linkermenu, ga naar **Doelen**, dan gaan naar **Catalogus**. U zult dan de **Catalogus van Doelen** zien. In **Doelen**, klik **activeren publiek** op de **kaart van het publiek van de Douane van Facebook**.
 
-![ RTCDP ](./images/rtcdpgoogleseg.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpgoogleseg.png)
 
 Selecteer de bestemming **bootkamp-facebook** en klik **daarna**.
 
-![ RTCDP ](./images/rtcdpcreatedest2.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest2.png)
 
 Selecteer in de lijst met beschikbare doelgroepen het publiek dat u in de vorige oefening hebt gemaakt. Klik **daarna**.
 
-![ RTCDP ](./images/rtcdpcreatedest3.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest3.png)
 
 Op de **Afbeelding** pagina, zorg ervoor dat **checkbox van de Transformatie** toepast wordt toegelaten. Klik **daarna**.
 
-![ RTCDP ](./images/rtcdpcreatedest4a.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest4a.png)
 
 Op de **pagina van het Programma van de Auditie**, selecteer de **Oorsprong van uw publiek** en plaats het aan **direct van klanten**. Klik **daarna**.
 
-![ RTCDP ](./images/rtcdpcreatedest4.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest4.png)
 
 Tot slot op de **pagina van het Overzicht**, klik **Afwerking**.
 
-![ RTCDP ](./images/rtcdpcreatedest5.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest5.png)
 
 Uw publiek is nu gekoppeld aan het aangepaste publiek van Facebook. Telkens wanneer een klant voor dit publiek in aanmerking komt, wordt een signaal verzonden naar de Facebook-server om die klant op te nemen in het aangepaste publiek aan Facebook-zijde.
 
 In Facebook vindt u uw publiek in Adobe Experience Platform onder Aangepast publiek:
 
-![ RTCDP ](./images/rtcdpcreatedest5b.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest5b.png)
 
 Je kunt nu een aangepast publiek weergeven in Facebook:
 
-![ RTCDP ](./images/rtcdpcreatedest5a.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest5a.png)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

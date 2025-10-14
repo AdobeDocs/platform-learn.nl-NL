@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## De app downloaden
 
-Ga naar [ https://bit.ly/dx-demo-app ](https://bit.ly/dx-demo-app) op uw computer. Dan zie je dit.
+Ga naar [&#x200B; https://bit.ly/dx-demo-app &#x200B;](https://bit.ly/dx-demo-app) op uw computer. Dan zie je dit.
 
-![ DSN ](./images/mobileapp.png)
+![&#x200B; DSN &#x200B;](./images/mobileapp.png)
 
 Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw apparaat te installeren. Voor dit enablement, moet u **Versie 2.x** installeren die Adobe Experience Platform Mobile SDK gebruikt.
 
@@ -28,59 +28,59 @@ Gebruik **de** app van de Camera op uw smartphone om mobiele app voor OS van uw 
 
 Nadat de app is geïnstalleerd, vindt u deze op het beginscherm van uw apparaat. Klik op het pictogram om de app te openen.
 
-![ DSN ](./images/mobileappn1.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn1.png)
 
 Wanneer u de app de eerste keer gebruikt, wordt u gevraagd u aan te melden met uw Adobe ID. Voltooi het aanmeldingsproces.
 
-![ DSN ](./images/mobileappn2.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn2.png)
 
 Nadat u zich hebt aangemeld, wordt er een melding weergegeven waarin u wordt gevraagd om toestemming voor het verzenden van meldingen. Wij zullen berichten als deel van het leerprogramma verzenden, zo klik **toestaan**.
 
-![ DSN ](./images/mobileappn3.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn3.png)
 
 Vervolgens ziet u de startpagina van de app. Ga naar **Montages**.
 
-![ DSN ](./images/mobileappn4.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn4.png)
 
 In montages, zult u zien dat momenteel a **Openbaar Project** in app wordt geladen. Klik **Project van de Douane**.
 
-![ DSN ](./images/mobileappn5.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn5.png)
 
 U kunt nu een aangepast project laden. Klik de code QR om uw project gemakkelijk te laden.
 
-![ DSN ](./images/mobileappn6.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn6.png)
 
 Na de vorige oefening, had u dit resultaat. Klik om het **Mobiele project van Edge Telco** te openen dat voor u werd gecreeerd.
 
-![ DSN ](./images/dsn5b.png)
+![&#x200B; DSN &#x200B;](./images/dsn5b.png)
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com ](https://dsn.adobe.com) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de drie punten **...** op uw mobiel app project en klik dan **uitgeven**.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige demo of enablement zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com) te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de drie punten **...** op uw mobiel app project en klik dan **uitgeven**.
 
-![ DSN ](./images/web8a.png)
+![&#x200B; DSN &#x200B;](./images/web8a.png)
 
 Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in de vorige oefening werd gecreeerd. Om dat te doen, klik **Uitgezochte milieu**.
 
-![ DSN ](./images/web8aa.png)
+![&#x200B; DSN &#x200B;](./images/web8aa.png)
 
 Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)` wordt genoemd. Dan, klik **sparen**.
 
-![ DSN ](./images/web8b.png)
+![&#x200B; DSN &#x200B;](./images/web8b.png)
 
 Dan zie je dit. Daarna, klik **Looppas**.
 
-![ DSN ](./images/web8bb.png)
+![&#x200B; DSN &#x200B;](./images/web8bb.png)
 
 U zult dan deze popup zien, die een QR code bevat. Scan deze QR-code vanuit de mobiele app.
 
-![ DSN ](./images/web8c.png)
+![&#x200B; DSN &#x200B;](./images/web8c.png)
 
 U zult dan uw projectidentiteitskaart tonen in app zien, waarna u **kunt klikken sparen**.
 
-![ DSN ](./images/mobileappn7.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn7.png)
 
 Nu, ga terug naar **Huis** in app. Uw app is nu klaar om te worden gebruikt.
 
-![ DSN ](./images/mobileappn8.png)
+![&#x200B; DSN &#x200B;](./images/mobileappn8.png)
 
 U hebt nu de Getting Started module voltooid en u bent klaar om met de volgende oefeningen te beginnen.
 

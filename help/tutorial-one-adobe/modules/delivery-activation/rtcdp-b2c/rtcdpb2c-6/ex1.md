@@ -105,8 +105,8 @@ U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 2.6.2 installeren en vormen uw cluster Kafka ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 2.6.2 installeren en vormen uw cluster Kafka &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ gegevens van de Stroom van Apache Kafka in Adobe Experience Platform ](./aep-apache-kafka.md){target="_blank"}
+Ga terug naar [&#x200B; gegevens van de Stroom van Apache Kafka in Adobe Experience Platform &#x200B;](./aep-apache-kafka.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

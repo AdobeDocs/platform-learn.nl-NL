@@ -18,23 +18,23 @@ Zoals in het creatieve document wordt beschreven, zijn er enkele middelen die no
 
 - Vouw taak 1 uit, &#39;OORSPRONKELIJKE TAKEN&#39; en open vervolgens de taak &#39;5 merkenmiddelen selecteren (voor, achter, ...)&#39; door erop te klikken.
 
-![ open activa taak ](./images/wf-open-assets-task.png)
+![&#x200B; open activa taak &#x200B;](./images/wf-open-assets-task.png)
 
 - Klik op &#39;Documents&#39; en vervolgens op &#39;Add new&#39;:
 
-![ voeg document ](./images/wf-add-new-doc.png) toe
+![&#x200B; voeg document &#x200B;](./images/wf-add-new-doc.png) toe
 
 - Selecteer &#39;Van ervaringsmanager&#39;. Hiermee kunnen we merkmiddelen kiezen die al beschikbaar zijn op AEM Assets:
 
-![ van ervaring-manager ](./images/wf-from-aem.png)
+![&#x200B; van ervaring-manager &#x200B;](./images/wf-from-aem.png)
 
 - Als de AEM-maphiërarchie eenmaal is weergegeven, navigeert u naar het volgende pad: Experience-Manager > Adobe Assets > Bike shots Selecteer 5 assets en klik op &#39;Link&#39;.
 
-![ geselecteerde activa ](./images/selected-assets.png)
+![&#x200B; geselecteerde activa &#x200B;](./images/selected-assets.png)
 
 - We hebben nu onze merkenbezittingen op onze taak. Dit betekent wij taak 2 als 100% volledige kunnen plaatsen:
 
-![ volledige taak ](./images/wf-task-2-complete.png)
+![&#x200B; volledige taak &#x200B;](./images/wf-task-2-complete.png)
 
 
 ## Demo van Adobe Commerce
@@ -53,32 +53,32 @@ Tijdens de herziening van ons werkplan hebben we een klein probleem opgemerkt: o
 
 - Ga naar de lijst van Taken en voeg onze &quot;Create taak van de Banner van de Homepage van het Product&quot;net onder taak 4 &quot;PRODUCTIE&quot;toe. U doet dit door de taak Inhoud van mobiele app voorbereiden te selecteren en op het pictogram &#39;Taak toevoegen boven pictogram&#39; te klikken:
 
-![ voegt taak toe boven ](./images/wf-add-task-above.png)
+![&#x200B; voegt taak toe boven &#x200B;](./images/wf-add-task-above.png)
 
 - Geef de toegevoegde taak een betekenisvolle naam, zoals &quot;Create product homepage banner&quot;.
 
-![ creeer taak ](./images/wf-create-banner.png)
+![&#x200B; creeer taak &#x200B;](./images/wf-create-banner.png)
 
 - Nu we de taak hebben gemaakt, laten we er wat inhoud aan toevoegen. Klik op de drie stippen rechts van de titel van het project en selecteer Sjabloon koppelen:
 
-![ bijvoegselmalplaatje ](./images/wf-attach-template.png)
+![&#x200B; bijvoegselmalplaatje &#x200B;](./images/wf-attach-template.png)
 
 - Selecteer &#39;Banner startpagina van product maken&#39; en klik op &#39;Aanpassen en bijvoegen&#39;:
 
-![ creeer product homepage banner ](./images/wf-homepage-banner.png)
+![&#x200B; creeer product homepage banner &#x200B;](./images/wf-homepage-banner.png)
 
 - Zorg ervoor dat u in het aanpassingsscherm de taak &#39;Banner productintroductiepagina maken&#39; opgeeft als bovenliggend element:
 
-![ voeg ouder ](./images/wf-create-banner-parent.png) toe
+![&#x200B; voeg ouder &#x200B;](./images/wf-create-banner-parent.png) toe
 
 - Tot slot moet u ervoor zorgen dat u de bovenliggende taak &#39;Introductiepagina van product maken&#39; markeert met een voorganger van taak 3 omdat er pas met de productie kan worden begonnen als het product in Adobe Commerce is gemaakt:
 
-![ voeg correcte voorganger ](./images/wf-predecessor.png) toe
+![&#x200B; voeg correcte voorganger &#x200B;](./images/wf-predecessor.png) toe
 
 We hebben nu een volledige en geplande campagne, wat betekent dat we nu kunnen beginnen met de productie en uitvoering van onze campagne!
 
 
-Volgende Stap: [ Fase 2 - Productie: creeer product homepage banner ](../production/banner.md)
+Volgende Stap: [&#x200B; Fase 2 - Productie: creeer product homepage banner &#x200B;](../production/banner.md)
 
 [Terug naar fase 1 - Planning: Planning](./planning.md)
 

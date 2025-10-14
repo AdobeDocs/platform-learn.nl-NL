@@ -20,13 +20,13 @@ In deze oefening, zult u een publiek creëren door gebruik van de Bouwer van het
 
 ## Artikel
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``Bootcamp`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![ Ingestie van Gegevens ](./images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/sb1.png)
 
 In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina, zult u dashboards met essentiële informatie over **publiek** prestaties zien.
 
@@ -92,7 +92,7 @@ U gaat nu terug naar de overzichtspagina van het publiek, waar u een voorbeeldvo
 
 U kunt nu doorgaan met de volgende oefening en uw publiek gebruiken met Adobe Target.
 
-Volgende Stap: [ 1.4 Actie nemen: verzend uw publiek naar Adobe Target ](./ex4.md)
+Volgende Stap: [&#x200B; 1.4 Actie nemen: verzend uw publiek naar Adobe Target &#x200B;](./ex4.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

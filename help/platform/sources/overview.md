@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # Overzicht van bronnen
 
-Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-interface. De bronnen zijn gemakkelijk configureerbare integratie die u toestaan om gegevens van Adobe, eerste-partij, en derdetoepassingen in het Echte-Time Profiel van de Klant van Platform en gegevensmeer in te voeren. Voor meer informatie, te zien gelieve de [ documentatie van bronnen ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
+Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-interface. De bronnen zijn gemakkelijk configureerbare integratie die u toestaan om gegevens van Adobe, eerste-partij, en derdetoepassingen in het Echte-Time Profiel van de Klant van Platform en gegevensmeer in te voeren. Voor meer informatie, te zien gelieve de [&#x200B; documentatie van bronnen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
 

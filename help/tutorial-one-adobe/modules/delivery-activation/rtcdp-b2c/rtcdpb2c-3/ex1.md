@@ -21,48 +21,48 @@ Reageren op de interesse van een klant moet realtime zijn. Één van de manieren
 
 ## Bepaal het gedrag waarop u wilt reageren
 
-Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
+Ga naar [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../datacollection/dc1.1/images/web8.png)
+![&#x200B; DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 In dit voorbeeld wilt u reageren op een specifieke klant die een specifiek product weergeeft.
 Van de **homepage van het Signaal 0&rbrace; Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
 
-![ Ingestie van Gegevens ](./images/homegalaxy.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/homegalaxy.png)
 
 Dus wanneer iemand de productpagina voor **Galaxy S24** bezoekt, wilt u actie kunnen nemen. Het eerste wat je moet doen om actie te ondernemen, is een publiek definiëren.
 
-![ Ingestie van Gegevens ](./images/homegalaxy1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/homegalaxy1.png)
 
 ## Het publiek maken
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 In het menu op de linkerkant, ga naar **Soorten publiek** en ga dan naar **doorbladeren** waar u een overzicht van alle bestaande wijzen kunt zien. Klik op **creeer de knoop van het Publiek** beginnen een nieuw publiek te creëren.
 
@@ -114,8 +114,8 @@ U gaat nu terug naar de overzichtspagina van het publiek.
 
 ## Volgende stappen
 
-Ga naar [ 2.3.2 Overzicht hoe te om Doel DV360 te vormen gebruikend Doelen ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 2.3.2 Overzicht hoe te om Doel DV360 te vormen gebruikend Doelen &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ in real time CDP - Bouw een publiek en neem actie ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
+Ga terug naar [&#x200B; in real time CDP - Bouw een publiek en neem actie &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

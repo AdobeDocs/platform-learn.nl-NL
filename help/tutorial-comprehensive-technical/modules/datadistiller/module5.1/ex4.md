@@ -179,7 +179,7 @@ Het grootste deel van de bedrijfslogica vereist het verzamelen van de aanrakings
 
 ### Door Adobe gedefinieerde functies
 
-De Adobe heeft een reeks **Adobe bepaalde Functies** aan de standaardSQL syntaxis toegevoegd die u toestaat om uw ervaringsgegevens beter te begrijpen. In de volgende paar vragen zult u over deze functies ADF leren. U kunt meer informatie en de volledige lijst [ in de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=nl-NL) vinden.
+De Adobe heeft een reeks **Adobe bepaalde Functies** aan de standaardSQL syntaxis toegevoegd die u toestaat om uw ervaringsgegevens beter te begrijpen. In de volgende paar vragen zult u over deze functies ADF leren. U kunt meer informatie en de volledige lijst [&#x200B; in de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=nl-NL) vinden.
 
 ### Wat doen mensen op de site voordat ze de pagina &quot;Service annuleren&quot; bereiken als derde pagina in een sessie?
 
@@ -503,11 +503,11 @@ U moet een query bewerken, dus laten we eerst de notebooks of vierkante haakjes 
 
 Op Vensters klik &quot;onderzoek&quot;- pictogram (1) in de vensterswerkbalk, type **notepad** in &quot;onderzoek&quot;- gebied (2), klik (3) het &quot;notebookpad&quot;resultaat:
 
-![ windows-start-notepad.png ](./images/windows-start-notepad.png)
+![&#x200B; windows-start-notepad.png &#x200B;](./images/windows-start-notepad.png)
 
 Op Mac
 
-![ osx-begin-steunen.png ](./images/osx-start-brackets.png)
+![&#x200B; osx-begin-steunen.png &#x200B;](./images/osx-start-brackets.png)
 
 Kopieer de volgende instructie naar de aantekeningen/haakjes:
 
@@ -541,7 +541,7 @@ enter your name
 
 Verwijder `/\*` en `\*/` niet. De aangepaste instructie in de laptop moet er als volgt uitzien:
 
-![ geef-vraag-notepad.png uit ](./images/editquerynotepad.png)
+![&#x200B; geef-vraag-notepad.png uit &#x200B;](./images/editquerynotepad.png)
 
 Kopieer uw gewijzigde verklaring van **notepad** in het **PSQL venster van de bevellijn** en de slag gaat binnen. U zou het volgende resultaat in het de bevellijnvenster van PSQL moeten zien:
 
@@ -578,7 +578,7 @@ and    l._experienceplatform.identification.core.ecid = e._experienceplatform.id
 
 In volgende zult u uw vraag (die ook als **wordt bekend creeert lijst zoals uitgezocht** of **CTAS**) als nieuwe dataset voortzetten die u in de Power BI van Microsoft zult gebruiken.
 
-Volgende Stap: [ 5.1.5 produceert een dataset van een vraag ](./ex5.md)
+Volgende Stap: [&#x200B; 5.1.5 produceert een dataset van een vraag &#x200B;](./ex5.md)
 
 [Ga terug naar module 5.1](./query-service.md)
 

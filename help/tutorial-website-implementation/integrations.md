@@ -28,12 +28,12 @@ U zou alle vorige lessen in deze zelfstudie moeten voltooien alvorens de instruc
 >
 >Er zijn vele gebruiker-toestemmingsvereisten, rekeningsconfiguraties, en leveringsstappen die worden vereist om deze integratie volledig te gebruiken en die buiten het werkingsgebied van dit leerprogramma zijn. Als u deze integratie nog niet gebruikt in uw huidige implementatie van de Experience Cloud, moet u het volgende overwegen:
 >
->* Herzie de volledige vereisten van de [ Integraties van de Diensten van de Kern ](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/getting-started)
->* Herzie de volledige vereisten van [ Analytics voor de integratie van het Doel ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/before-implement)
+>* Herzie de volledige vereisten van de [&#x200B; Integraties van de Diensten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/getting-started)
+>* Herzie de volledige vereisten van [&#x200B; Analytics voor de integratie van het Doel &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/before-implement)
 
 ## Doelgroepen
 
-[ Soorten publiek ](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/audiences/overview) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in Audience Manager maken en dit gebruiken om persoonlijke inhoud te leveren bij Target.
+[&#x200B; Soorten publiek &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/audiences/overview) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in Audience Manager maken en dit gebruiken om persoonlijke inhoud te leveren bij Target.
 
 De belangrijkste vereisten om A4T uit te voeren-die u reeds hebt gedaan-zijn:
 
@@ -47,11 +47,11 @@ De beste manier om de integratie van het publiek te bevestigen is een publiek te
 
 Deze validatiestappen zijn gericht op het kritieke onderdeel dat zichtbaar is in de implementatie op de client, namelijk de bezoeker-id.
 
-1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [ vroegere les ](switch-environments.md) wordt beschreven
+1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [&#x200B; vroegere les &#x200B;](switch-environments.md) wordt beschreven
 
-   ![ Uw milieu van de tagontwikkeling dat in Debugger wordt getoond ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; Uw milieu van de tagontwikkeling dat in Debugger wordt getoond &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Ga naar het tabblad Netwerk van Foutopsporing
 
@@ -65,13 +65,13 @@ Deze validatiestappen zijn gericht op het kritieke onderdeel dat zichtbaar is in
 
 1. Kijk in de rij met het label &quot;Experience Cloud Visitor ID.&quot; Ids in elk verzoek door elke oplossing zou altijd het zelfde moeten zijn.
 
-   ![ Bevestig passende SDIDs ](images/integrations-matchingECIDs.png)
+   ![&#x200B; Bevestig passende SDIDs &#x200B;](images/integrations-matchingECIDs.png)
 
 1. De id&#39;s zijn uniek per bezoeker. U kunt dit bevestigen door een collega te vragen deze stappen te herhalen.
 
 ## Analyses voor doel (A4T)
 
-De [ Analytics voor de integratie van het Doel (A4T) ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) staat u toe om uw gegevens van Analytics als bron voor het melden van metriek in Doel te hefboomwerking.
+De [&#x200B; Analytics voor de integratie van het Doel (A4T) &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) staat u toe om uw gegevens van Analytics als bron voor het melden van metriek in Doel te hefboomwerking.
 
 De belangrijkste vereisten om A4T uit te voeren-die u reeds hebt gedaan-zijn:
 
@@ -86,11 +86,11 @@ De beste manier om de integratie te bevestigen A4T is een activiteit van het Doe
 
 **om SDIDs** te bevestigen
 
-1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [ vroegere les ](switch-environments.md) wordt beschreven
+1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [&#x200B; vroegere les &#x200B;](switch-environments.md) wordt beschreven
 
-   ![ Uw milieu van de tagontwikkeling dat in Debugger wordt getoond ](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![&#x200B; Uw milieu van de tagontwikkeling dat in Debugger wordt getoond &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Ga naar het tabblad Netwerk van Foutopsporing
 
@@ -104,13 +104,13 @@ De beste manier om de integratie te bevestigen A4T is een activiteit van het Doe
 
 1. Zoek in de rij met het label &quot;Aanvullende gegevens-id&quot;. De id&#39;s van de eerste pagina die wordt geladen, moeten overeenkomen met die van Target en Analytics. De id&#39;s van het laden van de tweede pagina moeten ook overeenkomen, maar moeten verschillen van het laden van de eerste pagina.
 
-   ![ Bevestig passende SDIDs ](images/integrations-matchingSDIDs.png)
+   ![&#x200B; Bevestig passende SDIDs &#x200B;](images/integrations-matchingSDIDs.png)
 
 Als u extra verzoeken van het Doel in het werkingsgebied van een paginading (exclusief single-page apps) doet die deel van A4T activiteiten uitmaken, is het goed om hen unieke namen (niet doel-globaal-mbox) te geven zodat zij zelfde SDIDs van het aanvankelijke Doel en de verzoeken van de Analyse zullen blijven hebben.
 
 ## Klantkenmerken
 
-[ de Attributen van de Klant ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) is een deel van de Dienst van de Kern van Mensen die u toestaat om gegevens van uw gegevensbestand van het het beheer van de klantenverhouding (CRM) te uploaden en hefboomwerking het in Adobe Analytics en Adobe Target.
+[&#x200B; de Attributen van de Klant &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) is een deel van de Dienst van de Kern van Mensen die u toestaat om gegevens van uw gegevensbestand van het het beheer van de klantenverhouding (CRM) te uploaden en hefboomwerking het in Adobe Analytics en Adobe Target.
 
 De belangrijkste vereisten om de Attributen van de Klant uit te voeren—die u reeds hebt gedaan-zijn:
 
@@ -127,17 +127,17 @@ Op dit moment is de klant-id een van de weinige parameters die niet worden weerg
 1. Ga naar het tabblad Netwerk
 1. Typ in het filterveld `b/ss` wat wat u ziet, beperkt tot de Adobe Analytics-aanvragen
 
-   ![ open de Hulpmiddelen van de Ontwikkelaar en filter het lusje van het Netwerk om slechts de verzoeken van Analytics te tonen ](images/aam-openTheJSConsole.png)
+   ![&#x200B; open de Hulpmiddelen van de Ontwikkelaar en filter het lusje van het Netwerk om slechts de verzoeken van Analytics te tonen &#x200B;](images/aam-openTheJSConsole.png)
 
 1. Klik op de koppeling **[!UICONTROL LOGIN]** rechtsboven in de site
 
-   ![ klik Login op het hoogste recht ](images/idservice-loginNav.png)
+   ![&#x200B; klik Login op het hoogste recht &#x200B;](images/idservice-loginNav.png)
 
 1. Voer `test@test.com` in als gebruikersnaam
 1. Voer `test` in als wachtwoord
 1. Klik op de knop **[!UICONTROL LOGIN]**
 
-   ![ ga geloofsbrieven in en klik login ](images/idservice-login.png)
+   ![&#x200B; ga geloofsbrieven in en klik login &#x200B;](images/idservice-login.png)
 
 1. Het zou u aan de Homepage moeten terugkeren, die ook een baken zal teweegbrengen dat u in de Hulpmiddelen van de Ontwikkelaar kunt zien. Als u naar de pagina met accountinformatie wordt gebracht, klikt u op het WE.RETAIL-logo om terug te keren naar de startpagina.
 1. Klik op de aanvraag en selecteer het tabblad Koppen

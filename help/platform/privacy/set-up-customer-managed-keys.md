@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Door de klant beheerde sleutels instellen (CMK)
 
-Gegevens-bij-rust encryptie beheren gebruikend uw eigen encryptiesleutels. Voor meer informatie, gelieve de [ klant-geleide sleuteldocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=nl-NL) te bezoeken.
+Gegevens-bij-rust encryptie beheren gebruikend uw eigen encryptiesleutels. Voor meer informatie, gelieve de [&#x200B; klant-geleide sleuteldocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431110/?learn=on&enablevpops&captions=dut)
 

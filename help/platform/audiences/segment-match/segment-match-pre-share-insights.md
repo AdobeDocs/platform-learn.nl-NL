@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Segment afstemmen op inzichten vóór delen
 
-Wanneer u op een strategische partner beslist om gegevens met te delen, is het belangrijk om te weten hoe uw klanten zich aanpassen, zodat u weet hoe nuttig dat de gegevensaandeel zal zijn. De Overeenkomst van het segment staat u toe om de overlapping met potentiële gegevenspartners te zien alvorens om het even welke gegevens te delen. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
+Wanneer u op een strategische partner beslist om gegevens met te delen, is het belangrijk om te weten hoe uw klanten zich aanpassen, zodat u weet hoe nuttig dat de gegevensaandeel zal zijn. De Overeenkomst van het segment staat u toe om de overlapping met potentiële gegevenspartners te zien alvorens om het even welke gegevens te delen. Voor meer informatie, gelieve te zien de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)

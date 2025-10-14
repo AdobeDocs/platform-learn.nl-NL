@@ -23,113 +23,113 @@ In de vorige oefening vormde u het scenario `--aepUserLdap-- - Firefly + Photosh
 
 ## 1.2.5.1 Voorwaarden
 
-Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid met inbegrip van het toevoegen van **Frame.io API** aan uw project van Adobe I/O, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
+Alvorens met deze oefening verder te gaan, moet u de opstelling van [&#x200B; uw project van Adobe I/O &#x200B;](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid met inbegrip van het toevoegen van **Frame.io API** aan uw project van Adobe I/O, en u moet ook een toepassing gevormd hebben om met APIs, zoals [&#x200B; Postman &#x200B;](./../../../modules/getting-started/gettingstarted/ex7.md) of [&#x200B; PostBuster &#x200B;](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
 ## 1.2.5.2 Toegang tot Frame.io
 
-Ga naar [ https://next.frame.io/ ](https://next.frame.io/){target="_blank"}.
+Ga naar [&#x200B; https://next.frame.io/ &#x200B;](https://next.frame.io/){target="_blank"}.
 
-![ Kader IO ](./images/frame1.png)
+![&#x200B; Kader IO &#x200B;](./images/frame1.png)
 
 Controleer aan welke instantie u momenteel bent aangemeld door op het instantiepictogram te klikken. Kies de instantie waartoe u toegang hebt gekregen. Dit moet `--aepImsOrgName--` zijn.
 
 Klik **+ Nieuw Project** om uw eigen project in Frame.io tot stand te brengen.
 
-![ Kader IO ](./images/frame1a.png)
+![&#x200B; Kader IO &#x200B;](./images/frame1a.png)
 
 Selecteer het **Lege** malplaatje en ga dan de naam `--aepUserLdap--` voor uw project in. Klik **creëren Nieuw Project**.
 
-![ Kader IO ](./images/frame2.png)
+![&#x200B; Kader IO &#x200B;](./images/frame2.png)
 
 U zult dan uw project in het linkermenu zien. Klik **+** pictogram en selecteer dan **Nieuwe Omslag**.
 
-![ Kader IO ](./images/framev4_3.png)
+![&#x200B; Kader IO &#x200B;](./images/framev4_3.png)
 
 Voer de naam `CitiSignal Fiber Campaign` in en dubbelklik op de map om deze te openen.
 
-![ Kader IO ](./images/framev4_4.png)
+![&#x200B; Kader IO &#x200B;](./images/framev4_4.png)
 
 Klik **uploaden**.
 
-![ Kader IO ](./images/framev4_5.png)
+![&#x200B; Kader IO &#x200B;](./images/framev4_5.png)
 
-In één van de vorige oefeningen, downloadde u [ burgersignaal-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Selecteer dat dossier en klik **Open**.
+In één van de vorige oefeningen, downloadde u [&#x200B; burgersignaal-fiber.psd &#x200B;](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Selecteer dat dossier en klik **Open**.
 
-![ Kader IO ](./images/framev4_6.png)
+![&#x200B; Kader IO &#x200B;](./images/framev4_6.png)
 
 Het dossier **burgerschap-fiber.psd** zal dan beschikbaar in uw pas gecreëerde omslag zijn.
 
-![ Kader IO ](./images/framev4_7.png)
+![&#x200B; Kader IO &#x200B;](./images/framev4_7.png)
 
 ## 1.2.5.3 Workfront Fusion en Frame.io
 
 In de vorige oefening, creeerde u het scenario `--aepUserLdap-- - Firefly + Photoshop`, dat met een douane webhaak begon en dat met een webshreactie beëindigde. Het gebruik van de webhaken werd vervolgens getest met Postman, maar het is duidelijk dat het punt van een dergelijk scenario moet worden genoemd door een externe toepassing. Zoals eerder vermeld, is Frame.io die oefening, maar tussen Frame.io en `--aepUserLdap-- - Firefly + Photoshop` is een ander Workfront Fusion-scenario nodig. u zult nu dat scenario vormen.
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
 
-![ WF Fusion ](./images/wffusion1.png)
+![&#x200B; WF Fusion &#x200B;](./images/wffusion1.png)
 
 In het linkermenu, ga naar **Scenario&#39;s** en selecteer uw omslag `--aepUserLdap--`. Klik **creeer een nieuw scenario**.
 
-![ Kader IO ](./images/frame4.png)
+![&#x200B; Kader IO &#x200B;](./images/frame4.png)
 
 Gebruik de naam `--aepUserLdap-- - Frame IO Custom Action V4` .
 
-![ Kader IO ](./images/frame5.png)
+![&#x200B; Kader IO &#x200B;](./images/frame5.png)
 
 Klik het **voorwerp van het vraagteken** op het canvas. Ga de tekst `webhook` in het onderzoeksvakje in en klik **Webhooks**.
 
-![ Kader IO ](./images/frame6.png)
+![&#x200B; Kader IO &#x200B;](./images/frame6.png)
 
 Klik **WebHaak van de Douane**.
 
-![ Kader IO ](./images/frame7.png)
+![&#x200B; Kader IO &#x200B;](./images/frame7.png)
 
 Klik **toevoegen** om een nieuwe webhaakURL tot stand te brengen.
 
-![ Kader IO ](./images/frame8.png)
+![&#x200B; Kader IO &#x200B;](./images/frame8.png)
 
 Voor de **naam van Webhaak**, gebruik `--aepUserLdap-- - Frame IO Custom Action Webhook`. Klik **sparen**.
 
-![ Kader IO ](./images/frame9.png)
+![&#x200B; Kader IO &#x200B;](./images/frame9.png)
 
 Dan moet je dit zien. Laat dit scherm open en onaangeroerd zoals u het in een volgende stap nodig hebt. U zult WebHaak URL in een volgende stap moeten kopiëren, door **adres van het Exemplaar aan klembord** te klikken.
 
-![ Kader IO ](./images/frame10.png)
+![&#x200B; Kader IO &#x200B;](./images/frame10.png)
 
 ## 1.2.5.4 Frame.io V4 API voor aangepaste handelingen
 
 Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Verifieer het gebied **werkingsgebied** onder **Params**. Het gebied **werkingsgebied** zou het werkingsgebied `frame.s2s.all` moeten omvatten. Voeg het toe als het ontbreekt. Daarna, verzendt de klik **&#x200B;**&#x200B;om een nieuw **access_token** te verzoeken.
 
-![ Kader IO ](./images/frameV4api2.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api2.png)
 
 Daarna, open het verzoek **GET - de Rekeningen van de Lijst** in de inzameling **Frame.io V4 - de Instanties van de Tech**. Klik **verzenden**.
 
-![ Kader IO ](./images/frameV4api1.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api1.png)
 
 Vervolgens ziet u een vergelijkbare reactie die een of meer accounts bevat. Herzie de reactie en bepaal de plaats van het gebied **identiteitskaart** voor de rekening Frame.io V4 u gebruikt. U kunt de naam van de Rekening in Frame.io V4 gebruikersinterface vinden:
 
-![ Kader IO ](./images/frame1.png)
+![&#x200B; Kader IO &#x200B;](./images/frame1.png)
 
 Kopieer de waarde van het gebied **identiteitskaart**.
 
-![ Kader IO ](./images/frameV4api3.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api3.png)
 
 In het linkermenu, ga naar **Milieu&#39;s** en selecteer het milieu u gebruikt. Vind veranderlijk **`FRAME_IO_ACCOUNT_ID`** en kleef **identiteitskaart** die u van het vorige verzoek in zowel de **Aanvankelijke waarde** kolom en de **Huidige waarde** kolom kreeg. Klik **sparen**.
 
-![ Kader IO ](./images/frameV4api4.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api4.png)
 
 In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **GET - de Werkruimten van de Lijst** in de inzameling **Frame.io V4 - de Instanties van de Tech**. Klik **verzenden**.
 
-![ Kader IO ](./images/frameV4api5.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api5.png)
 
 Vervolgens ziet u een vergelijkbare reactie die een of meer accounts bevat. Herzie de reactie en bepaal de plaats van het gebied **identiteitskaart** voor Frame.io V4 Workspace u gebruikt. Kopieer de waarde van het gebied **identiteitskaart**.
 
-![ Kader IO ](./images/frameV4api6.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api6.png)
 
 In het linkermenu, ga naar **Milieu&#39;s** en selecteer het milieu u gebruikt. Vind veranderlijk **`FRAME_IO_WORKSPACE_ID`** en kleef **identiteitskaart** die u van het vorige verzoek in zowel de **Aanvankelijke waarde** kolom en de **Huidige waarde** kolom kreeg. Klik **sparen**.
 
-![ Kader IO ](./images/frameV4api7.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api7.png)
 
 In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **POST - creeer de Actie van de Douane** in de inzameling **Frame.io V4 - de Instanties van de Tech**, in de omslag **Acties van de Douane**.
 
@@ -137,43 +137,43 @@ Ga naar het **Lichaam** van het verzoek. Verander het gebied **naam** aan `--aep
 
 Klik **verzenden**.
 
-![ Kader IO ](./images/frameV4api8.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api8.png)
 
 Uw aangepaste actie Frame.io V4 is nu gemaakt.
 
-![ Kader IO ](./images/frameV4api9.png)
+![&#x200B; Kader IO &#x200B;](./images/frameV4api9.png)
 
-Ga terug naar [ https://next.frame.io/ ](https://next.frame.io/){target="_blank"} en ga naar de omslag **Campagne van de Vezel CitiSignal** die u in uw project `--aepUserLdap--` creeerde. Vernieuw de pagina.
+Ga terug naar [&#x200B; https://next.frame.io/ &#x200B;](https://next.frame.io/){target="_blank"} en ga naar de omslag **Campagne van de Vezel CitiSignal** die u in uw project `--aepUserLdap--` creeerde. Vernieuw de pagina.
 
-![ Kader IO ](./images/frame16.png)
+![&#x200B; Kader IO &#x200B;](./images/frame16.png)
 
 Na het hebben van de pagina verfrist, klik de 3 punten **...** op de activa **&#x200B;**&#x200B;en open het **menu van de Acties van de Douane**. De aangepaste handeling die u eerder hebt gemaakt, wordt dan weergegeven in het menu dat wordt weergegeven. Klik op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
 
-![ Kader IO ](./images/frame17.png)
+![&#x200B; Kader IO &#x200B;](./images/frame17.png)
 
 U zou dan een gelijkaardige **pop-up van de Actie van de Douane** moeten zien. Deze pop-up is het resultaat van de communicatie tussen Frame.io en Workfront Fusion.
 
-![ Kader IO ](./images/frame18.png)
+![&#x200B; Kader IO &#x200B;](./images/frame18.png)
 
 Zet het scherm terug op Workfront Fusion. U zou nu **met succes moeten zien bepaald** op het voorwerp van de Verbinding van de Douane verschijnen WebHaak. Klik **OK**.
 
-![ Kader IO ](./images/frame19.png)
+![&#x200B; Kader IO &#x200B;](./images/frame19.png)
 
 Klik **Looppas Eenmaal** om testwijze toe te laten, en de mededeling met Frame.io opnieuw te testen.
 
-![ Kader IO ](./images/frame20.png)
+![&#x200B; Kader IO &#x200B;](./images/frame20.png)
 
 Ga terug naar Frame.io en klik nogmaals op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
 
-![ Kader IO ](./images/frame21.png)
+![&#x200B; Kader IO &#x200B;](./images/frame21.png)
 
 Schakel het scherm weer in op Workfront Fusion. U zou nu een groen controleteken, en een bel moeten zien die **1** tonen. Klik op de ballon om de details weer te geven.
 
-![ Kader IO ](./images/frame22.png)
+![&#x200B; Kader IO &#x200B;](./images/frame22.png)
 
 De gedetailleerde mening van de bel toont u de gegevens die van Frame.io werden ontvangen. Je moet verschillende id&#39;s zien. Als voorbeeld, toont het gebied **resource.id** unieke identiteitskaart in Frame.io van de activa **burgerschap-fiber.psd**.
 
-![ Kader IO ](./images/frame23.png)
+![&#x200B; Kader IO &#x200B;](./images/frame23.png)
 
 Nu communicatie tot stand is gebracht tussen Frame.io en Workfront Fusion, kunt u uw configuratie voortzetten.
 
@@ -197,31 +197,31 @@ De eerste 3 gebieden, **herinnering**, **cta**, **knoop**, vereisen gebruikersin
 
 Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action` . Beweeg over het **Webhaak van de Douane** voorwerp en klik **+** pictogram om een andere module toe te voegen.
 
-![ Kader IO ](./images/frame24.png)
+![&#x200B; Kader IO &#x200B;](./images/frame24.png)
 
 Onderzoek naar `Flow Control` en klik **de Controle van de Stroom**.
 
-![ Kader IO ](./images/frame25.png)
+![&#x200B; Kader IO &#x200B;](./images/frame25.png)
 
 Klik om **Router** te selecteren.
 
-![ Kader IO ](./images/frame26.png)
+![&#x200B; Kader IO &#x200B;](./images/frame26.png)
 
 Dan moet je dit zien.
 
-![ Kader IO ](./images/frame27.png)
+![&#x200B; Kader IO &#x200B;](./images/frame27.png)
 
 Klik op **?** voorwerp en klik dan om **Webhooks** te selecteren.
 
-![ Kader IO ](./images/frame28.png)
+![&#x200B; Kader IO &#x200B;](./images/frame28.png)
 
 Selecteer **reactie Webhaak**.
 
-![ Kader IO ](./images/frame29.png)
+![&#x200B; Kader IO &#x200B;](./images/frame29.png)
 
 Dan moet je dit zien.
 
-![ Kader IO ](./images/frame30.png)
+![&#x200B; Kader IO &#x200B;](./images/frame30.png)
 
 Kopieer de hieronder code JSON en kleef het op het gebied **Lichaam**.
 
@@ -255,15 +255,15 @@ Kopieer de hieronder code JSON en kleef het op het gebied **Lichaam**.
 
 Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. **&#x200B;**.
 
-![ Kader IO ](./images/frame31.png)
+![&#x200B; Kader IO &#x200B;](./images/frame31.png)
 
 Klik **sparen** om uw veranderingen te bewaren.
 
-![ Kader IO ](./images/frame32.png)
+![&#x200B; Kader IO &#x200B;](./images/frame32.png)
 
 Daarna, moet u opstelling een filter ervoor zorgen dat dit weg van het scenario slechts loopt wanneer geen herinnering beschikbaar is. Klik het **moersleutelpictogram** en selecteer dan **Opstelling een filter**.
 
-![ Kader IO ](./images/frame33.png)
+![&#x200B; Kader IO &#x200B;](./images/frame33.png)
 
 Configureer de volgende velden:
 
@@ -277,31 +277,31 @@ Configureer de volgende velden:
 
 Klik **OK**.
 
-![ Kader IO ](./images/frame34.png)
+![&#x200B; Kader IO &#x200B;](./images/frame34.png)
 
 Dan moet je dit zien. Klik **sparen** pictogram eerst, en klik dan **in werking stellen eens** om uw scenario te testen.
 
-![ Kader IO ](./images/frame35.png)
+![&#x200B; Kader IO &#x200B;](./images/frame35.png)
 
 Dan moet je dit zien.
 
-![ Kader IO ](./images/frame36.png)
+![&#x200B; Kader IO &#x200B;](./images/frame36.png)
 
 Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion` op de activa **burgerschap-fiber.psd** opnieuw.
 
-![ Kader IO ](./images/frame37.png)
+![&#x200B; Kader IO &#x200B;](./images/frame37.png)
 
 U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
 
-![ Kader IO ](./images/frame38.png)
+![&#x200B; Kader IO &#x200B;](./images/frame38.png)
 
 De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **module van de Reactie van Webhaak**. U zult zien dat onder **INPUT**, u het lichaam ziet dat de nuttige lading JSON voor de vorm bevat. Klik **Looppas eens** opnieuw.
 
-![ Kader IO ](./images/frame40.png)
+![&#x200B; Kader IO &#x200B;](./images/frame40.png)
 
 Dan moet u dit nog eens zien.
 
-![ Kader IO ](./images/frame41.png)
+![&#x200B; Kader IO &#x200B;](./images/frame41.png)
 
 Ga terug naar Frame.io en vul de velden in zoals aangegeven.
 
@@ -311,15 +311,15 @@ Ga terug naar Frame.io en vul de velden in zoals aangegeven.
 
 Klik **voorleggen**.
 
-![ Kader IO ](./images/frame39.png)
+![&#x200B; Kader IO &#x200B;](./images/frame39.png)
 
 Dan zie je een popup in Frame.io die er zo uitziet.
 
-![ Kader IO ](./images/frame42.png)
+![&#x200B; Kader IO &#x200B;](./images/frame42.png)
 
 De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **Webhaak van de Douane** module. In Verrichting 1, onder **UITVOER**, kunt u een nieuw **gegevens** voorwerp nu zien dat gebieden als **Tekst van de Knoop** bevat, **Tekst van CTA** en **Vragen**. Met deze variabelen van de gebruikersinvoer beschikbaar in uw scenario, hebt u genoeg om uw configuratie voort te zetten.
 
-![ Kader IO ](./images/frame43.png)
+![&#x200B; Kader IO &#x200B;](./images/frame43.png)
 
 ## 1.2.5.6 Bestandslocatie ophalen van Frame.io
 
@@ -327,35 +327,35 @@ Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop
 
 Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action V4` . Over de **heen?** klikt u op het pictogram **+** om een andere module toe te voegen en te zoeken naar `frame` . Klik **Frame.io**.
 
-![ Kader IO ](./images/frame44.png)
+![&#x200B; Kader IO &#x200B;](./images/frame44.png)
 
 Klik **Frame.io**.
 
-![ Kader IO ](./images/frame45.png)
+![&#x200B; Kader IO &#x200B;](./images/frame45.png)
 
 Klik **maak een douane API vraag**.
 
-![ Kader IO ](./images/frame46.png)
+![&#x200B; Kader IO &#x200B;](./images/frame46.png)
 
 Om de verbinding te gebruiken Frame.io, moet u het eerst vormen. Klik **toevoegen** om dat te doen.
 
-![ Kader IO ](./images/frame47.png)
+![&#x200B; Kader IO &#x200B;](./images/frame47.png)
 
 Selecteer het **type van Verbinding** **Server IMS aan Server** en ga de naam `--aepUserLdap-- - Adobe I/O - Frame.io S2S` in.
 
-![ Kader IO ](./images/frame48.png)
+![&#x200B; Kader IO &#x200B;](./images/frame48.png)
 
-Daarna, moet u **identiteitskaart van de Cliënt** ingaan en **Geheime Cliënt** van het project van Adobe I/O dat u als deel van de **Begonnen** module vormde. U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [ hier ](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
+Daarna, moet u **identiteitskaart van de Cliënt** ingaan en **Geheime Cliënt** van het project van Adobe I/O dat u als deel van de **Begonnen** module vormde. U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [&#x200B; hier &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
 
-![ Kader IO ](./images/frame50.png)
+![&#x200B; Kader IO &#x200B;](./images/frame50.png)
 
 Ga terug naar je scenario in Workfront Fusion. Plak de waarden van **identiteitskaart van de Cliënt** en **Geheime Cliënt** op hun respectieve gebied in het venster van de verbindingsopstelling. Klik **verdergaan**. De verbinding wordt nu getest door Workfront Fusion.
 
-![ Kader IO ](./images/frame55.png)
+![&#x200B; Kader IO &#x200B;](./images/frame55.png)
 
 Als de verbinding met succes werd getest, zal het automatisch onder **Verbinding** verschijnen. U hebt nu een succesvolle verbinding, en u moet de configuratie voltooien om alle elementdetails van Frame.io, met inbegrip van de dossierplaats te krijgen. Om dit te doen, zult u **identiteitskaart van het Middel** moeten gebruiken.
 
-![ Kader IO ](./images/frame56.png)
+![&#x200B; Kader IO &#x200B;](./images/frame56.png)
 
 Het gebied **identiteitskaart van het Middel** wordt gedeeld door Frame.io aan de Fusie van Workfront als deel van de aanvankelijke **Webhaak van de Douane** mededeling en kan onder het gebied **resource.id** worden gevonden.
 
@@ -367,7 +367,7 @@ Voor de configuratie van de module **Frame.io - maak een douane API vraag**, geb
 
 Daarna, klik **+ voeg punt** onder **Koord van de Vraag** toe.
 
-![ Kader IO ](./images/frame57.png)
+![&#x200B; Kader IO &#x200B;](./images/frame57.png)
 
 Ga deze waarden in en klik **toevoegen**.
 
@@ -375,15 +375,15 @@ Ga deze waarden in en klik **toevoegen**.
 |:-------------:| :---------------:| 
 | `include` | `media_links.original` |
 
-![ Kader IO ](./images/frame58.png)
+![&#x200B; Kader IO &#x200B;](./images/frame58.png)
 
 Dat zou u nu moeten doen. Klik **OK**.
 
-![ Kader IO ](./images/frame58a.png)
+![&#x200B; Kader IO &#x200B;](./images/frame58a.png)
 
 Daarna, moet u opstelling een filter ervoor zorgen dat dit weg van het scenario slechts loopt wanneer geen herinnering beschikbaar is. Klik het **moersleutelpictogram** en selecteer dan **Opstelling een filter**.
 
-![ Kader IO ](./images/frame58c.png)
+![&#x200B; Kader IO &#x200B;](./images/frame58c.png)
 
 Configureer de volgende velden:
 
@@ -397,23 +397,23 @@ Configureer de volgende velden:
 
 Klik **OK**.
 
-![ Kader IO ](./images/frame58d.png)
+![&#x200B; Kader IO &#x200B;](./images/frame58d.png)
 
 U moet dit nu zien. Sparen uw veranderingen en klik dan **Looppas eens** om uw scenario te testen.
 
-![ Kader IO ](./images/frame58b.png)
+![&#x200B; Kader IO &#x200B;](./images/frame58b.png)
 
 Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion V4` op de activa **burgerschap-fiber.psd** opnieuw.
 
-![ Kader IO ](./images/frame37.png)
+![&#x200B; Kader IO &#x200B;](./images/frame37.png)
 
 U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
 
-![ Kader IO ](./images/frame38.png)
+![&#x200B; Kader IO &#x200B;](./images/frame38.png)
 
 Ga terug naar Workfront Fusion. Klik **Looppas eens** opnieuw.
 
-![ Kader IO ](./images/frame59.png)
+![&#x200B; Kader IO &#x200B;](./images/frame59.png)
 
 Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**.
 
@@ -421,19 +421,19 @@ Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**
 - **CTA**: Timetravel nu!
 - **Tekst van de Knoop**: Krijg aan boord!
 
-![ Kader IO ](./images/frame39.png)
+![&#x200B; Kader IO &#x200B;](./images/frame39.png)
 
 De schakelaar terug naar de Fusie van Workfront en klikt de bel op **Frame.io - maak een douane API vraag** module.
 
-![ Kader IO ](./images/frame60.png)
+![&#x200B; Kader IO &#x200B;](./images/frame60.png)
 
 Onder **UITVOER** > **Lichaam** > **gegevens**, kunt u een hoop meta-gegevens over de specifieke activa **nu zien burgerschap-fiber.psd**.
 
-![ Kader IO ](./images/frame61.png)
+![&#x200B; Kader IO &#x200B;](./images/frame61.png)
 
 Het specifieke stuk van informatie dat voor dit gebruiksgeval nodig is, is de plaatsURL van het dossier **burgersignaal-fiber.psd**, die u kunt vinden door neer aan het gebied **media_links** te scrollen > **Origineel** > **download_url**.
 
-![ Kader IO ](./images/frame62.png)
+![&#x200B; Kader IO &#x200B;](./images/frame62.png)
 
 U hebt nu al informatie (**herinnering**, **cta**, **knoop** en **psdTemplate**) beschikbaar die voor dit gebruiksgeval aan functie nodig is.
 
@@ -443,31 +443,31 @@ In de vorige oefening vormde u het scenario `--aepUserLdap-- - Firefly + Photosh
 
 Open het scenario `--aepUserLdap-- - Firefly + Photoshop` in een ander lusje en klik eerste **Adobe Photoshop - pas PSD uit** module. U moet nu zien dat het invoerbestand is geconfigureerd voor het gebruik van een dynamische locatie in Microsoft Azure. Aangezien voor dit gebruik het invoerbestand niet meer in Microsoft Azure wordt opgeslagen, maar in plaats daarvan met Frame.io-opslag, moet u deze instellingen wijzigen.
 
-![ Kader IO ](./images/frame63.png)
+![&#x200B; Kader IO &#x200B;](./images/frame63.png)
 
 De opslag van de verandering **aan** Externe **en verandert** plaats van het Dossier **om slechts de** psdTemplate **variabele te gebruiken die van de inkomende** WebHaak van de Douane **module wordt genomen.** Klik **O.K.** en klik dan **sparen** om uw veranderingen te bewaren.
 
-![ Kader IO ](./images/frame64.png)
+![&#x200B; Kader IO &#x200B;](./images/frame64.png)
 
 Klik de **Webhaak van de Douane** module en klik dan **adres van het Exemplaar aan klembord**. U moet URL kopiëren aangezien u het in het andere scenario zult moeten gebruiken.
 
-![ Kader IO ](./images/frame65.png)
+![&#x200B; Kader IO &#x200B;](./images/frame65.png)
 
 Ga terug naar uw scenario `--aepUserLdap-- - Frame IO Custom Action V4`. Beweeg over **Frame.io - maak een douane API vraag** module en klik **+** pictogram.
 
-![ Kader IO ](./images/frame66.png)
+![&#x200B; Kader IO &#x200B;](./images/frame66.png)
 
 Ga `http` in en klik dan **HTTP**.
 
-![ Kader IO ](./images/frame67.png)
+![&#x200B; Kader IO &#x200B;](./images/frame67.png)
 
 Selecteer **maak een verzoek**.
 
-![ Kader IO ](./images/frame68.png)
+![&#x200B; Kader IO &#x200B;](./images/frame68.png)
 
 Plak URL van de douane webhaak op het gebied **URL**. Plaats de **Methode** aan **POST**.
 
-![ Kader IO ](./images/frame69.png)
+![&#x200B; Kader IO &#x200B;](./images/frame69.png)
 
 Plaats **type van Lichaam** aan **Onbewerkte** en **inhoudstype** aan **JSON (toepassing/json)**.
 Plak hieronder JSON nuttige lading op het gebied **inhoud van het Verzoek** en laat checkbox voor **toe ontleed reactie**.
@@ -484,11 +484,11 @@ Plak hieronder JSON nuttige lading op het gebied **inhoud van het Verzoek** en l
 
 U hebt nu een statische gevormde lading, maar het moet dynamisch worden gebruikend de eerder verzamelde variabelen.
 
-![ Kader IO ](./images/frame70.png)
+![&#x200B; Kader IO &#x200B;](./images/frame70.png)
 
 Voor het gebied **psdTemplate**, vervang de statische veranderlijke **burgerschap-fiber.psd** door veranderlijk **`Body > data > media_links > original > download_url`**.
 
-![ Kader IO ](./images/frame71.png)
+![&#x200B; Kader IO &#x200B;](./images/frame71.png)
 
 Voor de gebieden **herinnering**, **cta** en **knoop**, vervang de statische variabelen door de dynamische variabelen die in het scenario door het inkomende webhaakverzoek van Frame.io werden opgenomen, die de velden **data.Prompt**, **data.CTA Tekst** en **data.Button Tekst** zijn.
 
@@ -496,11 +496,11 @@ Ook, laat checkbox voor **toe ontleed reactie**.
 
 Klik **OK**.
 
-![ Kader IO ](./images/frame72.png)
+![&#x200B; Kader IO &#x200B;](./images/frame72.png)
 
 Klik **sparen** om uw veranderingen te bewaren.
 
-![ Kader IO ](./images/frame73.png)
+![&#x200B; Kader IO &#x200B;](./images/frame73.png)
 
 ## 1.2.5.8 Nieuw element opslaan in Frame.io
 
@@ -508,19 +508,19 @@ Nadat het andere Workfront Fusion-scenario is aangeroepen, wordt het resultaat e
 
 Beweeg over **HTTP - doe een verzoek** module en klik **+** pictogram.
 
-![ Kader IO ](./images/frame74.png)
+![&#x200B; Kader IO &#x200B;](./images/frame74.png)
 
 Selecteer **Frame.io**.
 
-![ Kader IO ](./images/frame75.png)
+![&#x200B; Kader IO &#x200B;](./images/frame75.png)
 
 Selecteer **maak een douane API vraag**.
 
-![ Kader IO ](./images/frame76.png)
+![&#x200B; Kader IO &#x200B;](./images/frame76.png)
 
 De verbinding Frame.io wordt automatisch geselecteerd.
 
-![ Kader IO ](./images/frame77.png)
+![&#x200B; Kader IO &#x200B;](./images/frame77.png)
 
 Voor de configuratie van de module **Frame.io - maak een douane API vraag**, gebruik URL: `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
 
@@ -531,7 +531,7 @@ Voor de configuratie van de module **Frame.io - maak een douane API vraag**, geb
 >&#x200B;>In dit voorbeeld, kunt u zien dat de vierde module in het scenario **Frame.io wordt genoemd - maak een douane API vraag** en heeft een opeenvolgingsaantal van **4**. Dit betekent dat de variabele `{{4.body.data.parent_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 4.
 >&#x200B;>Als de volgnummers van de modules verschillend zijn, moet u de variabelen in de bovenstaande URL bijwerken om deze aan de juiste module te kunnen koppelen.
 
-![ Kader IO ](./images/frame78.png)
+![&#x200B; Kader IO &#x200B;](./images/frame78.png)
 
 Verander de gebied **Methode** aan **POST**.
 
@@ -553,33 +553,33 @@ Kopieer en kleef het hieronder fragment JSON in het gebied **Lichaam**.
 
 Klik **OK**.
 
-![ Kader IO ](./images/frame79.png)
+![&#x200B; Kader IO &#x200B;](./images/frame79.png)
 
 Klik **sparen** om uw veranderingen te bewaren.
 
-![ Kader IO ](./images/frame81.png)
+![&#x200B; Kader IO &#x200B;](./images/frame81.png)
 
 ## 1.2.5.9 Test uw gebruiksscenario van begin tot eind
 
 Klik **Looppas eens** in uw scenario `--aepUserLdap-- - Frame IO Custom Action`.
 
-![ Kader IO ](./images/frame85.png)
+![&#x200B; Kader IO &#x200B;](./images/frame85.png)
 
 Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion V4` op de activa **burgerschap-fiber.psd** opnieuw.
 
-![ Kader IO ](./images/frame37.png)
+![&#x200B; Kader IO &#x200B;](./images/frame37.png)
 
 U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
 
-![ Kader IO ](./images/frame38.png)
+![&#x200B; Kader IO &#x200B;](./images/frame38.png)
 
 Ga terug naar Workfront Fusion. Klik **Looppas eens** in uw scenario `--aepUserLdap-- - Frame IO Custom Action V4`.
 
-![ Kader IO ](./images/frame86.png)
+![&#x200B; Kader IO &#x200B;](./images/frame86.png)
 
 In de Fusie van Workfront, open het scenario `--aepUserLdap-- - Firefly + Photoshop` en klik ook **in werking stellen eens** in dat scenario.
 
-![ Kader IO ](./images/frame87.png)
+![&#x200B; Kader IO &#x200B;](./images/frame87.png)
 
 Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**.
 
@@ -587,23 +587,23 @@ Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**
 - **CTA**: Timetravel nu!
 - **Tekst van de Knoop**: Krijg aan boord!
 
-![ Kader IO ](./images/frame39.png)
+![&#x200B; Kader IO &#x200B;](./images/frame39.png)
 
 Na 1-2 minuten, zou u een nieuw middel moeten zien automatisch verschijnen in Frame.io. Dubbelklik op het nieuwe element om het te openen.
 
-![ Kader IO ](./images/frame88.png)
+![&#x200B; Kader IO &#x200B;](./images/frame88.png)
 
 U ziet nu duidelijk dat alle variabelen voor gebruikersinvoer automatisch zijn toegepast.
 
-![ Kader IO ](./images/frame89.png)
+![&#x200B; Kader IO &#x200B;](./images/frame89.png)
 
 U hebt deze oefening nu met succes voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 1.2.6 Frame.io aan Fusie aan AEM Assets ](./ex6.md){target="_blank"}
+Ga naar [&#x200B; 1.2.6 Frame.io aan Fusie aan AEM Assets &#x200B;](./ex6.md){target="_blank"}
 
-Ga terug naar [ de Automatisering van het Werkschema van Creative met Workfront Fusion ](./automation.md){target="_blank"}
+Ga terug naar [&#x200B; de Automatisering van het Werkschema van Creative met Workfront Fusion &#x200B;](./automation.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Relaties tussen schema&#39;s configureren
 
-Deze video toont hoe te om een verhouding tussen twee schema&#39;s in Adobe Experience Platform te vormen. De verhoudingen staan u toe om één dataset als raadplegingslijst voor een andere te gebruiken. Voor gedetailleerde productdocumentatie, zie [ een verband tussen twee schema&#39;s bepalen gebruikend de Redacteur van het Schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=nl-NL) en [ bepalen een verband tussen twee schema&#39;s gebruikend de Registratie API van het Schema ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=nl-NL)
+Deze video toont hoe te om een verhouding tussen twee schema&#39;s in Adobe Experience Platform te vormen. De verhoudingen staan u toe om één dataset als raadplegingslijst voor een andere te gebruiken. Voor gedetailleerde productdocumentatie, zie [&#x200B; een verband tussen twee schema&#39;s bepalen gebruikend de Redacteur van het Schema &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=nl-NL) en [&#x200B; bepalen een verband tussen twee schema&#39;s gebruikend de Registratie API van het Schema &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=nl-NL)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on&enablevpops)
 

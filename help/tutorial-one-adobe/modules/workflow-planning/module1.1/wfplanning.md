@@ -31,18 +31,18 @@ Na de voltooiing van dit laboratorium, zult u vertrouwd met de volgende punten w
 
 ## Uitoefening
 
-[ 1.1.1 die met de Planning van Workfront ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.1.1 die met de Planning van Workfront &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u een aantal basismontages in de Planning van Workfront vormen.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}

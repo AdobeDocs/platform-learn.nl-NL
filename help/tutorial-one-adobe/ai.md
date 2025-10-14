@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht - Agentic AI Tech Labs
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -54,7 +54,7 @@ Technische elementen:
 
 - De Interoperabiliteit van de agent met Google A2A protocol
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

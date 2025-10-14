@@ -24,13 +24,13 @@ De Inzameling van Gegevens van Adobe Experience Platform wordt gebruikt door mer
 
 ## De gebruikersinterface verkennen
 
-Ga naar [ de Inzameling van Gegevens van Adobe Experience Platform ](https://experience.adobe.com/#/data-collection/). Zorg ervoor dat u de juiste omgeving gebruikt, die `--aepImsOrgName--` moet zijn.
+Ga naar [&#x200B; de Inzameling van Gegevens van Adobe Experience Platform &#x200B;](https://experience.adobe.com/#/data-collection/). Zorg ervoor dat u de juiste omgeving gebruikt, die `--aepImsOrgName--` moet zijn.
 
 >[!NOTE]
 >
 >Dit leerprogramma wordt gedocumenteerd gebruikend het milieu **Internationale Experience Platform**. Uw milieunaam is waarschijnlijk verschillend, zodat wanneer u de naam **Experience Platform Internationaal** in een schermafbeelding ziet, zou u dat door de naam van uw eigen milieu moeten vervangen, dat `--aepImsOrgName--` zou moeten zijn.
 
-![ Mening van Eigenschappen van de Lancering ](./images/launch0.png)
+![&#x200B; Mening van Eigenschappen van de Lancering &#x200B;](./images/launch0.png)
 
 Ga naar **Markeringen**. U ziet nu de weergave **[!UICONTROL Properties]** . De eigenschappen die hier worden vermeld zijn voor zelfstudiemanagement. Deze eigenschappen vertegenwoordigen:
 
@@ -40,16 +40,16 @@ Ga naar **Markeringen**. U ziet nu de weergave **[!UICONTROL Properties]** . De 
 - Een specifiek Adobe Analytics-ontwerp dat door meerdere verschillende websites wordt gebruikt
 - Interne intranetpagina&#39;s naast externe sites
 
-![ Mening van Eigenschappen van de Lancering ](./images/launch1.png)
+![&#x200B; Mening van Eigenschappen van de Lancering &#x200B;](./images/launch1.png)
 
 Kijk nu naar de linkerspoorlijn.
 
-![ Begin Linkerspoor ](./images/launch2.png)
+![&#x200B; Begin Linkerspoor &#x200B;](./images/launch2.png)
 
 - **[!UICONTROL Tags]** geeft een overzicht van alle eigenschappen aan de clientzijde
 - **[!UICONTROL App Surfaces]** geeft een overzicht van alle App Configurations om pushmeldingen in te schakelen (wordt gebruikt/ingeschakeld in combinatie met Project Sierra)
-- **[!UICONTROL Datastreams]** worden verkend in de [ volgende oefening ](./ex2.md)
-- **[!UICONTROL Event Forwarding]** geeft een overzicht van alle server-zijeigenschappen die in [ Module 2.5 - de Verbindingen van Real-Time CDP worden verkend: Gebeurtenis door:sturen ](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
+- **[!UICONTROL Datastreams]** worden verkend in de [&#x200B; volgende oefening &#x200B;](./ex2.md)
+- **[!UICONTROL Event Forwarding]** geeft een overzicht van alle server-zijeigenschappen die in [&#x200B; Module 2.5 - de Verbindingen van Real-Time CDP worden verkend: Gebeurtenis door:sturen &#x200B;](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
 - **[!UICONTROL Monitoring]** geeft een overzicht van het inkomende en uitgaande gebeurtenisverkeer via Event Forwarding
 - **[!UICONTROL Assurance]** biedt toegang tot foutopsporing voor een implementatie met de Adobe Debugger
 - **[!UICONTROL Places]** biedt toegang tot het beheer van inhoud die toegankelijk wordt voor op locatie gebaseerde personalisatie in mobiele toepassingen
@@ -61,15 +61,15 @@ Kijk nu naar de linkerspoorlijn.
 Adobe Experience Platform Data Collection is een zeer geavanceerd hulpmiddel dat werkingsgebied voorbij een zelfstudie van Adobe Experience Platform heeft. Organisaties gebruiken Adobe Experience Platform Data Collection niet voor zijn mogelijkheden van het markeringsbeheer en in plaats daarvan gebruiken niet-Adobe oplossingen van het markeringsbeheer voor het injecteren van code en het beheren van markeringen. Adobe en Adobe Professional Services ondersteunen het gebruik van een niet-Adobe-oplossing voor tagbeheer.
 Hieronder vindt u wat meer lezingen voor degenen die geïnteresseerd zijn in het begrijpen van Adobe Experience Platform-gegevensverzameling.
 
-- [ Gids van de Gebruiker van de Verzameling van Gegevens van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)
-- [ voer Adobe Experience Cloud met het Web SDK leerprogramma uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL)
-- [ de gebruikerstoestemmingen van de opstelling ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL)
-- [ API documentatie ](https://developer.adobelaunch.com/api/)
+- [&#x200B; Gids van de Gebruiker van de Verzameling van Gegevens van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)
+- [&#x200B; voer Adobe Experience Cloud met het Web SDK leerprogramma uit &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=nl-NL)
+- [&#x200B; de gebruikerstoestemmingen van de opstelling &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL)
+- [&#x200B; API documentatie &#x200B;](https://developer.adobelaunch.com/api/)
 
 ## Volgende stappen
 
-Ga naar [ 1.1.2 Edge Network, Gegevensstromen en de Inzameling van Gegevens van de Server Zijde ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 1.1.2 Edge Network, Gegevensstromen en de Inzameling van Gegevens van de Server Zijde &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de de markeringsuitbreiding van SDK van het Web ](./data-ingestion-launch-web-sdk.md){target="_blank"}
+Ga terug naar [&#x200B; Opstelling van de Inzameling van Gegevens van Adobe Experience Platform en de de markeringsuitbreiding van SDK van het Web &#x200B;](./data-ingestion-launch-web-sdk.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Uitgebreide technische zelfstudie voor Adobe Experience Platform
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
 
@@ -52,25 +52,25 @@ Nadat u de oefeningen in deze zelfstudie hebt voltooid, kunt u het volgende doen
 
 ## Vereisten
 
-Als u dit leerprogramma wilt nemen gebruikend uw eigen instantie van Adobe Experience Platform, die de instructies [ hier ](./setup.md) volgt om uw org voor het leerprogramma voor te bereiden.
+Als u dit leerprogramma wilt nemen gebruikend uw eigen instantie van Adobe Experience Platform, die de instructies [&#x200B; hier &#x200B;](./setup.md) volgt om uw org voor het leerprogramma voor te bereiden.
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot het Systeem van de Demo: [ https://dsn.adobe.com/](https://dsn.adobe.com/)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot het Systeem van de Demo: [&#x200B; https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Video&#39;s
 
-U kunt veel interessante video&#39;s van onze webinars van de Academie van de Technologie, van bootcamps en meer op ons [ Communautaire kanaal van YouTube van de Makers van de Ervaring vinden Communautaire ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+U kunt veel interessante video&#39;s van onze webinars van de Academie van de Technologie, van bootcamps en meer op ons [&#x200B; Communautaire kanaal van YouTube van de Makers van de Ervaring vinden Communautaire &#x200B;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Voltooiing en certificering
 
-Deze zelfstudie maakt deel uit van een Adobe-certificeringscursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [ https://certification.adobe.com/courses/1258 ](https://certification.adobe.com/courses/1258) te gaan.
+Deze zelfstudie maakt deel uit van een Adobe-certificeringscursus. U kunt omhoog voor de cursus naast dit leerprogramma ondertekenen door [&#x200B; https://certification.adobe.com/courses/1258 &#x200B;](https://certification.adobe.com/courses/1258) te gaan.
 
-Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, moet u een bewijs van voltooiing voorleggen zoals vermeld [ hier ](./completion.md).
+Voor elke module die u het gebruiken van het hieronder leerprogramma voltooit, moet u een bewijs van voltooiing voorleggen zoals vermeld [&#x200B; hier &#x200B;](./completion.md).
 
 ## Inhoud
 
-Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md) te gaan.
+Om het statuut van de hieronder inhoud te controleren, gelieve naar de [&#x200B; statuspagina &#x200B;](./status.md) te gaan.
 
 [0. Aan de slag](./modules/gettingstarted/gettingstarted/getting-started.md)
 
@@ -191,7 +191,7 @@ In deze module leert u hoe u de Adobe Experience Platform Query Service kunt geb
 
 **de Investering van de Tijd:** 90 minuten
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

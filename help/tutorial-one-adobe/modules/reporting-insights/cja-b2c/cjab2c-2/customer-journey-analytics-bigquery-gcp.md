@@ -29,7 +29,7 @@ Bovendien kunnen wij die gegevens van Google Analytics verrijken door het met an
 ## Vereisten
 
 - Enige kennis van Customer Journey Analytics verdient de voorkeur, maar is niet vereist
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Customer Journey Analytics
 - Toegang tot Google Cloud Platform en Google BigQuery
 - **Download deze activa**:
@@ -37,7 +37,7 @@ Bovendien kunnen wij die gegevens van Google Analytics verrijken door het met an
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -65,7 +65,7 @@ Leer hoe u Google Analytics-gegevens analyseert in Customer Journey Analytics en
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

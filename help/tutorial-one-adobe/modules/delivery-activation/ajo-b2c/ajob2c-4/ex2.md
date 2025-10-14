@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 3.4.2 Een campagne configureren
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.4.2.1 publiek maken
 
@@ -27,11 +27,11 @@ Voordat u uw campagne maakt, moet u het publiek definiëren dat de campagne moet
 
 Klik op **+ Publiek maken** .
 
-![ Journey Optimizer ](./images/audcampaign1.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/audcampaign1.png)
 
 Selecteer **bouwt regel** en klik **creëren**.
 
-![ Journey Optimizer ](./images/audcampaign2.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/audcampaign2.png)
 
 Selecteer het gebied **Individueel Profiel XDM > Persoonlijke E-mail > Adres** en voeg het aan het canvas toe. Plaats de regelvoorwaarde aan **bestaat**.
 
@@ -39,7 +39,7 @@ Om het verzenden van e-mails naar andere gebruikers in uw gedeelde opleidingsmil
 
 Plaats de naam van uw publiek aan `--aepUserLdap-- - All customers with email` en klik **publiceren**.
 
-![ Journey Optimizer ](./images/audcampaign3.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/audcampaign3.png)
 
 Uw publiek wordt nu gepubliceerd en kan in een campagne worden gebruikt.
 
@@ -49,11 +49,11 @@ U maakt nu een campagne. In tegenstelling tot de op een gebeurtenis gebaseerde r
 
 In het menu, ga naar **Campagnes** en klik **creeer campagne**.
 
-![ Journey Optimizer ](./images/oc43.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/oc43.png)
 
 Selecteer **Gepland - Op de markt brengend** en klik **creeer**.
 
-![ Journey Optimizer ](./images/campaign1.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign1.png)
 
 Voor het scherm van de campagneverwezenlijking, vorm het volgende:
 
@@ -63,49 +63,49 @@ Voor het scherm van de campagneverwezenlijking, vorm het volgende:
 
 Klik **Uitgezochte publiek**.
 
-![ Journey Optimizer ](./images/campaign2.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign2.png)
 
 Voor het **publiek**, selecteer het publiek u in de vorige stap, `--aepUserLdap-- - All customers with email` creeerde. Klik **sparen**.
 
-![ Journey Optimizer ](./images/campaign2a.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign2a.png)
 
 Voor de **Actie**, selecteer **E-mail** en selecteer een bestaande **E-mailconfiguratie**. U gaat de inhoud over een paar minuten bewerken.
 
-![ Journey Optimizer ](./images/campaign3.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign3.png)
 
 Voor het **Programma**, kies **op een specifieke datum en een tijd** en plaats een tijd van keus.
 
-![ Journey Optimizer ](./images/campaign4.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign4.png)
 
 U kunt nu het e-mailbericht zelf maken. De rol omhoog een beetje, en klikt **geeft inhoud** uit.
 
-![ Journey Optimizer ](./images/campaign5.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign5.png)
 
 Dan zie je dit. Voor de **lijn van het Onderwerp**, gebruik dit: `Your monthly CitiSignal update has arrived.`. Daarna, klik **uitgeeft e-maillichaam**.
 
-![ Journey Optimizer ](./images/campaign6.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign6.png)
 
 Kies **Ontwerp van kras**.
 
-![ Journey Optimizer ](./images/campaign7.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign7.png)
 
 Dan zie je dit. In het linkermenu vindt u de structuurcomponenten die u kunt gebruiken om de structuur van de e-mail (rijen en kolommen) te definiëren.
 
 De belemmering en laat vallen 3 keer a **1:1 kolom** op het canvas, 1 keer een 1:2 kolom verlaten en 1 keer een 2:1 kolom recht die u deze structuur zou moeten geven:
 
-![ Journey Optimizer ](./images/campaign8.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign8.png)
 
-In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [ oefening 3.1.2.1](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de voettekst die u eerder in [ oefening 3.1.2.2](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
+In het linkermenu, ga naar **Fragments**. Sleep de kopbal u vroeger in [&#x200B; oefening 3.1.2.1](./../ajob2c-1/ex2.md) op de eerste component in het canvas creeerde. Sleep de voettekst die u eerder in [&#x200B; oefening 3.1.2.2](./../ajob2c-1/ex2.md) op de laatste component in het canvas creeerde.
 
-![ Journey Optimizer ](./images/campaign9.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign9.png)
 
 Klik op het pictogram **+** in het linkermenu. Ga naar **Inhoud** beginnen inhoud op het canvas toe te voegen.
 
-![ Journey Optimizer ](./images/campaign10.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign10.png)
 
 De belemmering en laat vallen component van de a **Tekst** op de tweede rij.
 
-![ Journey Optimizer ](./images/campaign11.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign11.png)
 
 Selecteer de standaardtekst in die component **gelieve te typen hier uw tekst.** en vervangt deze door de onderstaande tekst. Verander de groepering aan **groepering van het Centrum**.
 
@@ -117,27 +117,27 @@ As a CitiSignal member, you're part of a dynamic community that's constantly evo
 Stay connected.
 ```
 
-![ Journey Optimizer ](./images/campaign12.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign12.png)
 
 De belemmering en laat vallen een **component van het Beeld** op de 3de en 4de rij. Klik **doorbladeren** op de 3de rij.
 
-![ Journey Optimizer ](./images/campaign13.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign13.png)
 
 Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_AirPods.jpg** te selecteren, en **Uitgezocht** te klikken.
 
-![ Journey Optimizer ](./images/campaign14.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign14.png)
 
 Klik **doorbladeren** op beeldplaceholder op de 4de rij.
 
-![ Journey Optimizer ](./images/campaign15.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign15.png)
 
 Open de omslag **citi-signaal-beelden**, klik om het beeld **Offer_Phone.jpg** te selecteren, en **Uitgezocht** te klikken.
 
-![ Journey Optimizer ](./images/campaign16.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign16.png)
 
 De belemmering en laat vallen a **component van de Tekst van 0&rbrace; &lbrace;op de 3de en 4de rij.**
 
-![ Journey Optimizer ](./images/campaign17.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign17.png)
 
 Selecteer de standaardtekst in de component op de 3de rij **Gelieve te typen hier uw tekst.** en vervangt deze door de onderstaande tekst.
 
@@ -155,42 +155,42 @@ We'll pay off your phone:
 Make the switch to CitiSignal and say goodbye to phone payments! Switching to CitiSignal has never been more rewarding. Say farewell to hefty phone bills as we help pay off your phone, up to 800$!
 ```
 
-![ Journey Optimizer ](./images/campaign18.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign18.png)
 
 Je standaardnieuwsbrief is nu klaar. Klik **sparen**.
 
-![ Journey Optimizer ](./images/ready.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/ready.png)
 
 Ga terug naar het campagnesdashboard door de **pijl** naast de onderwerpregel tekst in de top-left hoek te klikken.
 
-![ Journey Optimizer ](./images/campaign19.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign19.png)
 
 Klik **Overzicht om** te activeren.
 
-![ Journey Optimizer ](./images/campaign20.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign20.png)
 
 Deze fout kan dan optreden. Als dat het geval is, dan kunt u tot 24 uur moeten wachten tot het publiek is geëvalueerd, en dan proberen om uw campagne opnieuw te activeren. Mogelijk moet u ook het programma van uw campagne bijwerken zodat deze later kan worden uitgevoerd.
 
 Klik **activeren**.
 
-![ Journey Optimizer ](./images/campaign21.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign21.png)
 
 Nadat de campagne is geactiveerd, wordt deze gepland.
 
-![ Journey Optimizer ](./images/campaign22.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign22.png)
 
 Uw campagne is nu geactiveerd. Uw e-mailbericht voor de nieuwsbrief wordt verzonden zoals u het in uw programma hebt gedefinieerd. Uw campagne wordt beëindigd zodra het laatste e-mailbericht is verzonden.
 
 U ontvangt de e-mail ook op het e-mailadres dat u hebt gebruikt voor het demoprofiel dat u eerder hebt gemaakt.
 
-![ Journey Optimizer ](./images/campaign23.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/campaign23.png)
 
 U hebt deze oefening voltooid.
 
 ## Volgende stappen
 
-Ga naar [ 3.4.3 toepassen op segment-gebaseerde verpersoonlijking in een e-mailbericht ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; 3.4.3 toepassen op segment-gebaseerde verpersoonlijking in een e-mailbericht &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ Adobe Journey Optimizer ](journeyoptimizer.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer &#x200B;](journeyoptimizer.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

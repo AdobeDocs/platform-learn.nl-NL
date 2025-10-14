@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Afhankelijkheidsmanagers gebruiken
 
-Leer hoe u CocoaPods en Gradle kunt gebruiken om Adobe Experience Platform Mobile SDK-extensies en -afhankelijkheden te beheren. Voor meer informatie over het installeren van SDK met CocoaPods en Gradle, gelieve te zien [ de documentatie ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+Leer hoe u CocoaPods en Gradle kunt gebruiken om Adobe Experience Platform Mobile SDK-extensies en -afhankelijkheden te beheren. Voor meer informatie over het installeren van SDK met CocoaPods en Gradle, gelieve te zien [&#x200B; de documentatie &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
 >[!NOTE]
 >

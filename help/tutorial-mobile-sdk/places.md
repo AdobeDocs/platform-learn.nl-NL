@@ -45,25 +45,25 @@ De service Plaatsen werkt alleen in uw app en in de Mobile SDK als u de installa
 U definieert enkele aandachtspunten in de service Plaatsen.
 
 1. Selecteer **[!UICONTROL Places]** in de gebruikersinterface voor gegevensverzameling.
-1. Selecteer ![ Meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
+1. Selecteer ![&#x200B; Meer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
 1. Selecteer **[!UICONTROL Manage Libraries]** in het contextmenu.
-   ![ beheert bibliotheken ](assets/places-manage-libraries.png){zoomable="yes"}
+   ![&#x200B; beheert bibliotheken &#x200B;](assets/places-manage-libraries.png){zoomable="yes"}
 1. Selecteer **[!UICONTROL Manage Libraries]** in het dialoogvenster **[!UICONTROL New]** .
 1. Voer in het dialoogvenster **[!UICONTROL Create Library]** bijvoorbeeld een **[!UICONTROL Name]** `Luma` in.
 1. Selecteer **[!UICONTROL Confirm]**.
-   ![ creeer bibliotheek ](assets/places-create-library.png){zoomable="yes"}
+   ![&#x200B; creeer bibliotheek &#x200B;](assets/places-create-library.png){zoomable="yes"}
 1. Selecteer **[!UICONTROL Manage Libraries]** om het dialoogvenster **[!UICONTROL Close]** te sluiten.
 1. Ga terug in **[!UICONTROL POI Management]** en selecteer **[!UICONTROL Import POIs]** .
 1. Selecteer **[!UICONTROL Start]** in het dialoogvenster **[!UICONTROL Import Places]** .
 1. Selecteer **[!DNL Luma]** in de lijst met bibliotheken.
 1. Selecteer **[!UICONTROL Next]**.
-   ![ Uitgezochte Bibliotheek ](assets/places-import-select-library.png){zoomable="yes"}
-1. Download het [ dossier van het ZIP van POIs van de Luma ](assets/luma_pois.csv.zip) en haal het aan een plaats op uw computer uit.
+   ![&#x200B; Uitgezochte Bibliotheek &#x200B;](assets/places-import-select-library.png){zoomable="yes"}
+1. Download het [&#x200B; dossier van het ZIP van POIs van de Luma &#x200B;](assets/luma_pois.csv.zip) en haal het aan een plaats op uw computer uit.
 1. Sleep het uitgenomen **[!UICONTROL Import Places]** -bestand naar `luma_pois.csv` in het dialoogvenster **[!UICONTROL Choose CSV File - Drag and Drop your File]** . Zie **[!UICONTROL Validation Success]** - **[!UICONTROL Successfully validated the CSV file]** .
 1. Selecteer **[!UICONTROL Begin Import]**. Zie **[!UICONTROL Success]** - **[!UICONTROL Successfully added 6 new POIs]** .
 1. Selecteer **[!UICONTROL Done]**.
-1. In **[!UICONTROL POI Management]** ziet u dat er zes nieuwe Luminantiewinkels aan de lijst worden toegevoegd. U kunt tussen ![ van de Lijst ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) en ![ Kaart ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) in- en uitschakelen kaartweergave.
-   ![ de lijst van Plaatsen ](assets/places-list.png){zoomable="yes"}.
+1. In **[!UICONTROL POI Management]** ziet u dat er zes nieuwe Luminantiewinkels aan de lijst worden toegevoegd. U kunt tussen ![&#x200B; van de Lijst &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) en ![&#x200B; Kaart &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) in- en uitschakelen kaartweergave.
+   ![&#x200B; de lijst van Plaatsen &#x200B;](assets/places-list.png){zoomable="yes"}.
 
 
 ### De extensie Plaatsen installeren
@@ -74,27 +74,27 @@ U definieert enkele aandachtspunten in de service Plaatsen.
 1. Zoek naar de extensie **[!UICONTROL Places]** .
 1. De extensie installeren.
 
-   ![ voegt Plaatsen ](assets/tag-places-extension.png) toe
+   ![&#x200B; voegt Plaatsen &#x200B;](assets/tag-places-extension.png) toe
 
 1. In het dialoogvenster **[!UICONTROL Install Extension]** :
    1. Selecteer **[!DNL Luma]** in de lijst **[!UICONTROL Select a Library]** .
    1. Controleer of u de werkbibliotheek hebt gekozen, bijvoorbeeld **[!UICONTROL Initial Build]** .
    1. Selecteer **[!UICONTROL Save to Library and Build]** in **[!UICONTROL Save to Library]** .
-      ![ installeer de uitbreiding van Plaatsen ](assets/places-install-extension.png){zoomable="yes"}.
+      ![&#x200B; installeer de uitbreiding van Plaatsen &#x200B;](assets/places-install-extension.png){zoomable="yes"}.
 
 1. Uw bibliotheek wordt opnieuw samengesteld.
 
 
 ### Uw schema verifiëren
 
-Verifieer of uw schema, zoals die in [ wordt bepaald leidt tot schema ](create-schema.md), de noodzakelijke gebiedsgroepen en de klassen opneemt om POI en geolocatiegegevens te verzamelen.
+Verifieer of uw schema, zoals die in [&#x200B; wordt bepaald leidt tot schema &#x200B;](create-schema.md), de noodzakelijke gebiedsgroepen en de klassen opneemt om POI en geolocatiegegevens te verzamelen.
 
 1. Navigeer naar de interface voor gegevensverzameling en selecteer **[!UICONTROL Schemas]** in de linkertrack.
 1. Selecteer **[!UICONTROL Browse]** in de bovenste balk.
 1. Selecteer het schema om het te openen.
 1. Selecteer **[!UICONTROL Consumer Experience Event]** in de schema-editor.
 1. U ziet een **[!UICONTROL placeContext]** -object met object en velden voor het vastleggen van POI-interactie en geolocatiegegevens.
-   ![ Plaatsen van het Schema ](assets/schema-places-context.png){zoomable="yes"}.
+   ![&#x200B; Plaatsen van het Schema &#x200B;](assets/schema-places-context.png){zoomable="yes"}.
 
 
 ### De eigenschap tag bijwerken
@@ -113,7 +113,7 @@ Eerst maakt u verschillende gegevenselementen.
 1. Selecteer **[!UICONTROL Name]** in de lijst **[!UICONTROL Data Element Type]** .
 1. Selecteer **[!UICONTROL Current POI]** onder **[!UICONTROL TARGET]** .
 1. Selecteer **[!UICONTROL Save to Library]**.
-   ![ element van Gegevens ](assets/tags-create-data-element.png){zoomable="yes"}
+   ![&#x200B; element van Gegevens &#x200B;](assets/tags-create-data-element.png){zoomable="yes"}
 
 1. Herhaal stap 4 - 8 met behulp van de informatie uit de onderstaande tabel om aanvullende gegevenselementen te maken.
 
@@ -127,7 +127,7 @@ Eerst maakt u verschillende gegevenselementen.
 
    U moet de volgende lijst met gegevenselementen hebben.
 
-   ![ Lijst van gegevenselementen ](assets/tags-data-elements-list.png){zoomable="yes"}
+   ![&#x200B; Lijst van gegevenselementen &#x200B;](assets/tags-data-elements-list.png){zoomable="yes"}
 
 **Regels**
 
@@ -136,11 +136,11 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
 1. Selecteer **[!UICONTROL Rules]** in de eigenschap Tag aan de linkerkant.
 1. Selecteer **[!UICONTROL Add Rule]**.
 1. Voer in het scherm **[!UICONTROL Create Rule]** een naam voor de regel in, bijvoorbeeld `POI - Entry` .
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
    1. Selecteer **[!UICONTROL Places]** in de **[!UICONTROL Extension]** lijst en selecteer **[!UICONTROL Enter POI]** in de **[!UICONTROL Event Type]** lijst.
    1. Selecteer **[!UICONTROL Keep Changes]**.
-      ![ gebeurtenis van de Markering ](assets/tags-event-mobile-core.png).
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
+      ![&#x200B; gebeurtenis van de Markering &#x200B;](assets/tags-event-mobile-core.png).
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
    1. Selecteer **[!UICONTROL Mobile Core]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Attach Data]** in de lijst **[!UICONTROL Action Type]** . Met deze handeling worden gegevens over de lading gekoppeld.
    1. Plak in de **[!UICONTROL JSON Payload]** de volgende payload:
 
@@ -166,26 +166,26 @@ Vervolgens gaat u regels definiëren om met deze gegevenselementen te werken.
       }
       ```
 
-      U kunt `{%% ... %%}` placeholder van het gegevenselement ook opnemen waarden in JSON door de ![ Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) te selecteren. In een pop-updialoogvenster kunt u elk gegevenselement kiezen dat u hebt gemaakt.
+      U kunt `{%% ... %%}` placeholder van het gegevenselement ook opnemen waarden in JSON door de ![&#x200B; Gegevens &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) te selecteren. In een pop-updialoogvenster kunt u elk gegevenselement kiezen dat u hebt gemaakt.
 
    1. Selecteer **[!UICONTROL Keep Changes]**.
-      ![ actie van Markeringen ](assets/tags-action-mobile-core.png){zoomable="yes"}
+      ![&#x200B; actie van Markeringen &#x200B;](assets/tags-action-mobile-core.png){zoomable="yes"}
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
    1. Selecteer **[!UICONTROL Adobe Experience Platform Edge Network]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Forward event to Edge Network]** . Deze actie zorgt ervoor dat de gebeurtenis en de extra ladingsgegevens aan Platform Edge Network door:sturen.
    1. Selecteer **[!UICONTROL Keep Changes]**.
 
 1. Selecteer **[!UICONTROL Save to Library]** om de regel op te slaan.
 
-   ![ Regel ](assets/tags-rule-poi-entry.png){zoomable="yes"}
+   ![&#x200B; Regel &#x200B;](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 Laten we een andere regel maken
 
 1. Voer in het scherm **[!UICONTROL Create Rule]** een naam voor de regel in, bijvoorbeeld `POI - Exit` .
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL EVENTS]**.
    1. Selecteer **[!UICONTROL Places]** in de **[!UICONTROL Extension]** lijst en selecteer **[!UICONTROL Exit POI]** in de **[!UICONTROL Event Type]** lijst.
    1. Selecteer **[!UICONTROL Keep Changes]**.
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onderaan **[!UICONTROL ACTIONS]**.
    1. Selecteer **[!UICONTROL Mobile Core]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Attach Data]** in de lijst **[!UICONTROL Action Type]** .
    1. Plak in de **[!UICONTROL JSON Payload]** de volgende payload:
 
@@ -213,20 +213,20 @@ Laten we een andere regel maken
 
    1. Selecteer **[!UICONTROL Keep Changes]**.
 
-1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
+1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast de **[!UICONTROL Mobile Core - Attach Data]** actie.
    1. Selecteer **[!UICONTROL Adobe Experience Platform Edge Network]** in de lijst **[!UICONTROL Extension]** en selecteer **[!UICONTROL Forward event to Edge Network]** .
    1. Selecteer **[!UICONTROL Keep Changes]**.
 
 1. Selecteer **[!UICONTROL Save to Library]** om de regel op te slaan.
 
-   ![ Regel ](assets/tags-rule-poi-exit.png){zoomable="yes"}
+   ![&#x200B; Regel &#x200B;](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 Alle wijzigingen in de tag worden gepubliceerd
 
 1. Selecteer **[!UICONTROL Initial Build]** als de bibliotheek die u wilt maken.
 1. Selecteer **[!UICONTROL Build]**.
-   ![ bouwt bibliotheek ](assets/tags-build-library.png){zoomable="yes"}
+   ![&#x200B; bouwt bibliotheek &#x200B;](assets/tags-build-library.png){zoomable="yes"}
 
 
 
@@ -236,39 +236,39 @@ Alle wijzigingen in de tag worden gepubliceerd
 Uw instellingen valideren in Assurance:
 
 1. Ga naar de gebruikersinterface van Assurance.
-1. Als niet reeds beschikbaar in het linkerspoor, selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Events]** en **[!UICONTROL Map & Simulate]** onder **[!UICONTROL PLACES SERVICE]**.
+1. Als niet reeds beschikbaar in het linkerspoor, selecteer **[!UICONTROL Configure]** in linkerspoor en selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) naast **[!UICONTROL Events]** en **[!UICONTROL Map & Simulate]** onder **[!UICONTROL PLACES SERVICE]**.
 1. Selecteer **[!UICONTROL Save]**.
 1. Selecteer **[!UICONTROL Map & Simulate]** in het linkerspoor.
 1. Verplaats de kaart naar een locatie van een van uw POI&#39;s.
-1. Selecteer ![ Vistuig ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) lading POIs simuleren. Uw POI wordt geïdentificeerd gebruikend een cirkel en een speld.
+1. Selecteer ![&#x200B; Vistuig &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) lading POIs simuleren. Uw POI wordt geïdentificeerd gebruikend een cirkel en een speld.
 1. Selecteer uw POI.
-1. Van popup, uitgezochte ![ Veer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
+1. Van popup, uitgezochte ![&#x200B; Veer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
 
-   ![ Simuleer de Gebeurtenis van de Ingang ](assets/places-simulate.png){zoomable="yes"}
+   ![&#x200B; Simuleer de Gebeurtenis van de Ingang &#x200B;](assets/places-simulate.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Events]** in de linkertrack en bekijk de gebeurtenissen die u hebt gesimuleerd.
 
-   ![ AJO Beslissende bevestiging ](assets/places-events.png){zoomable="yes"}
+   ![&#x200B; AJO Beslissende bevestiging &#x200B;](assets/places-events.png){zoomable="yes"}
 
 
 ## Plaatsen in uw app implementeren
 
-Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de Places SDK installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [ installeer SDKs ](install-sdks.md) sectie.
+Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor mobiele tags alleen de configuratie. Vervolgens moet u de Places SDK installeren en registreren. Als deze stappen niet duidelijk zijn, herzie [&#x200B; installeer SDKs &#x200B;](install-sdks.md) sectie.
 
 >[!NOTE]
 >
->Als u [ voltooide installeerde SDKs ](install-sdks.md) sectie, dan is SDK van Plaatsen reeds geïnstalleerd en u kunt deze stap overslaan.
+>Als u [&#x200B; voltooide installeerde SDKs &#x200B;](install-sdks.md) sectie, dan is SDK van Plaatsen reeds geïnstalleerd en u kunt deze stap overslaan.
 >
 
 >[!IMPORTANT]
 >
->Als u de Kaarten SDK voor Android in uw app instelt, moet u facturering instellen als kosten voor het gebruik. U kunt de kosten beperken door uw unieke toepassings-id en een SHA-1-sleutel te gebruiken. Voor meer details, zie [ Kaart SDK voor Android ](https://developers.google.com/maps/documentation/android-sdk/overview). Sla deze les over als u geen facturering wilt instellen of geen kosten wilt maken.
+>Als u de Kaarten SDK voor Android in uw app instelt, moet u facturering instellen als kosten voor het gebruik. U kunt de kosten beperken door uw unieke toepassings-id en een SHA-1-sleutel te gebruiken. Voor meer details, zie [&#x200B; Kaart SDK voor Android &#x200B;](https://developers.google.com/maps/documentation/android-sdk/overview). Sla deze les over als u geen facturering wilt instellen of geen kosten wilt maken.
 
 >[!BEGINTABS]
 
 >[!TAB  iOS ]
 
-1. In Xcode, zorg ervoor dat [ de Plaatsen van AEP ](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [.](install-sdks.md#swift-package-manager)
+1. In Xcode, zorg ervoor dat [&#x200B; de Plaatsen van AEP &#x200B;](https://github.com/adobe/aepsdk-places-ios) aan de lijst van pakketten in de Afhankelijkheden van het Pakket wordt toegevoegd. Zie {de Manager van het Pakket van 0} Swift [.](install-sdks.md#swift-package-manager)
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in de Xcode-projectnavigator.
 1. Controleer of `AEPPlaces` deel uitmaakt van uw lijst met importbewerkingen.
 
@@ -301,7 +301,7 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    Places.processRegionEvent(regionEvent, forRegion: region)
    ```
 
-   Deze [`Places.processRegionEvent` ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatieinformatie aan de dienst van Plaatsen mee.
+   Deze [`Places.processRegionEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatieinformatie aan de dienst van Plaatsen mee.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** in de projectnavigator van Xcode.
 
@@ -325,8 +325,8 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
 
 >[!TAB  Android ]
 
-1. In de Studio van Android, zorg ervoor dat [ aepsdk-place-android ](https://github.com/adobe/aepsdk-places-android) deel van de gebiedsdelen in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Gradle Scripts]** uitmaakt. Zie [ Gradle ](install-sdks.md#gradle).
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in de het projectnavigator van Android Studio.
+1. In de Studio van Android, zorg ervoor dat [&#x200B; aepsdk-place-android &#x200B;](https://github.com/adobe/aepsdk-places-android) deel van de gebiedsdelen in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Gradle Scripts]** uitmaakt. Zie [&#x200B; Gradle &#x200B;](install-sdks.md#gradle).
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in de het projectnavigator van Android Studio.
 1. Controleer of `com.adobe.marketing.mobile.Messaging` deel uitmaakt van uw lijst met importbewerkingen.
 
    `import import com.adobe.marketing.mobile.Places`
@@ -348,17 +348,17 @@ Zoals in vorige lessen is besproken, biedt het installeren van een extensie voor
    )
    ```
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de het projectnavigator van Android Studio. Zoek de functie `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` . Voeg de volgende code toe:
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in de het projectnavigator van Android Studio. Zoek de functie `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` . Voeg de volgende code toe:
 
    ```kotlin
    // Process geolocation event
    Places.processGeofence(geofence, transitionType)
    ```
 
-   Deze [`Places.processRegionEvent` ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatieinformatie aan de dienst van Plaatsen mee.
+   Deze [`Places.processRegionEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API deelt de geolocatieinformatie aan de dienst van Plaatsen mee.
 
 
-1. Navigeer aan **[!UICONTROL Android]** ![ ChevronDown ](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.k]** in de het projectnavigator van Android Studio.
+1. Navigeer aan **[!UICONTROL Android]** ![&#x200B; ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.k]** in de het projectnavigator van Android Studio.
 
    1. Voer voor de knop Item de volgende code in:
 
@@ -436,16 +436,16 @@ U kunt als volgt de functies voor geolocatie in uw app valideren:
 
 ## Volgende stappen
 
-U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Aangezien u de gebeurtenissen aan Edge Network door:sturen, zodra u opstelling app voor [ Experience Platform ](platform.md) hebt, zou u de ervaringsgebeurtenissen moeten zien die voor het profiel verschijnen in app wordt gebruikt.
+U moet nu over alle gereedschappen beschikken om meer functionaliteit toe te voegen aan de functie voor geolocatie in de app. Aangezien u de gebeurtenissen aan Edge Network door:sturen, zodra u opstelling app voor [&#x200B; Experience Platform &#x200B;](platform.md) hebt, zou u de ervaringsgebeurtenissen moeten zien die voor het profiel verschijnen in app wordt gebruikt.
 
-In de sectie van Journey Optimizer van dit leerprogramma, ziet u dat de ervaringsgebeurtenissen kunnen worden gebruikt om reizen (zie [ duw bericht ](journey-optimizer-inapp.md) en [ in-app overseinen ](journey-optimizer-push.md) met Journey Optimizer) teweeg te brengen. Bijvoorbeeld, het gebruikelijke voorbeeld om uw toepassingsgebruiker een dupbericht met één of andere productbevordering te verzenden wanneer die gebruiker de geofence van een fysieke opslag ingaat.
+In de sectie van Journey Optimizer van dit leerprogramma, ziet u dat de ervaringsgebeurtenissen kunnen worden gebruikt om reizen (zie [&#x200B; duw bericht &#x200B;](journey-optimizer-inapp.md) en [&#x200B; in-app overseinen &#x200B;](journey-optimizer-push.md) met Journey Optimizer) teweeg te brengen. Bijvoorbeeld, het gebruikelijke voorbeeld om uw toepassingsgebruiker een dupbericht met één of andere productbevordering te verzenden wanneer die gebruiker de geofence van een fysieke opslag ingaat.
 
-Deze implementatie van de geolocatiefunctie voor uw app minimaliseert de code. De service Plaatsen, gegevenselementen en regels die u in de eigenschap Tag hebt gedefinieerd, bieden het grootste deel van de functionaliteit. Alternatief, kunt u de zelfde functionaliteit direct in uw app uitvoeren gebruikend [`Edge.sendEvent` ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (zie [ Gebeurtenissen ](events.md) voor meer informatie) met een nuttige XDM die een bevolkt `placeContext` voorwerp bevat.
+Deze implementatie van de geolocatiefunctie voor uw app minimaliseert de code. De service Plaatsen, gegevenselementen en regels die u in de eigenschap Tag hebt gedefinieerd, bieden het grootste deel van de functionaliteit. Alternatief, kunt u de zelfde functionaliteit direct in uw app uitvoeren gebruikend [`Edge.sendEvent` &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (zie [&#x200B; Gebeurtenissen &#x200B;](events.md) voor meer informatie) met een nuttige XDM die een bevolkt `placeContext` voorwerp bevat.
 
 >[!SUCCESS]
 >
 >U hebt de app voor geolocatieservices nu ingeschakeld met de extensie Plaatsen in de Experience Platform Mobile SDK.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
 
 Volgende: **[gegevens van de Kaart aan Adobe Analytics](analytics.md)**

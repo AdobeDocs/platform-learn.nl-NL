@@ -25,12 +25,12 @@ In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen,
 
 ## Vereisten
 
-- Java JDK23 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [ https://www.oracle.com/java/technologies/javase-jdk11-downloads.html ](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [&#x200B; https://www.oracle.com/java/technologies/javase-jdk11-downloads.html &#x200B;](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Toegang tot Adobe Experience Platform
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -54,7 +54,7 @@ Hierbij gebruikt u Kafka Connect om de Adobe Experience Platform Sink Connector 
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

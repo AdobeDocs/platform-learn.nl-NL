@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Overzicht - GenStudio for Content Supply Chain Technical Enablement
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
 
@@ -26,7 +26,7 @@ In de Labs van de Tech als deel van deze technische enablement workshop, zult u 
 - Adobe Experience Manager Cloud Service Assets
 - Adobe Journey Optimizer
 
-De Tech Labs waaraan u deelneemt, maakt deel uit van een bredere One Adobe-zelfstudie, waarin u nog meer kunt leren over de brede Adobe Creative Cloud- en Adobe Experience Cloud-oplossingen. Als u in het zien van wat geinteresseerd is, heb hier een blik: [ Één Overzicht van het Leerprogramma van Adobe ](./overview.md)
+De Tech Labs waaraan u deelneemt, maakt deel uit van een bredere One Adobe-zelfstudie, waarin u nog meer kunt leren over de brede Adobe Creative Cloud- en Adobe Experience Cloud-oplossingen. Als u in het zien van wat geinteresseerd is, heb hier een blik: [&#x200B; Één Overzicht van het Leerprogramma van Adobe &#x200B;](./overview.md)
 
 ## GenStudio for Content Supply Chain Tech Labs
 
@@ -40,31 +40,31 @@ In deze grondmodule, zult u alles voorbereiden zodat u tot het demomilieu toegan
 
 ### Workflow en planning
 
-[ Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[&#x200B; Planning van Adobe Workfront &#x200B;](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 In deze module, zult u de Planning van Adobe Workfront vormen en gebruiken om een nieuwe werkruimte tot stand te brengen, verslagtypes te bepalen, verslagen te beheren, een nieuwe verzoekvorm tot stand te brengen en de AI medewerker te gebruiken.
 
-[ Beheer van het Werkschema met het Werkschema van Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[&#x200B; Beheer van het Werkschema met het Werkschema van Adobe Workfront &#x200B;](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 In deze module, zult u Adobe Workfront vormen en gebruiken om goedkeuringsstromen te beheren en u zult integraties met Adobe Experience Manager Assets, Universele Redacteur, Photoshop en meer gebruiken.
 
 ### Maken en produceren
 
-[ GenStudio for Performance Marketing ](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+[&#x200B; GenStudio for Performance Marketing &#x200B;](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
 
 In deze module gebruikt u Adobe GenStudio for Performance Marketing, een algemene AI-eerste end-to-end workflowtoepassing voor marketing- en creatieve teams om lokale inhoud te maken, te activeren en te optimaliseren met ondernemingsbestuur voor digitale marketingcampagnes.
 
-[ Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.4/express.md){target="_blank"}
+[&#x200B; Adobe Express en Adobe Experience Cloud &#x200B;](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 In deze basismodule gebruikt u Adobe Express om afbeeldingen en video&#39;s te maken en deelt u deze elementen met het bredere Adobe Experience Cloud-ecosysteem.
 
-[ Stroomlijn uw werkschema met Frame.io ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[&#x200B; Stroomlijn uw werkschema met Frame.io &#x200B;](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 In deze module gebruikt u Adobe Frame.io in combinatie met Adobe Premiere Pro voor het samenwerken en bekijken van afbeeldingen en video&#39;s.
 
 ### Beheer van bedrijfsmiddelen
 
-[ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
+[&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
 
@@ -76,7 +76,7 @@ In deze basismodule stelt u uw Adobe Experience Manager Cloud Service Program, S
 
 In deze module leert u hoe u Adobe Content Analytics kunt implementeren en gebruiken.
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

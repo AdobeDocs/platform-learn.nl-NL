@@ -28,7 +28,7 @@ _Begonnen het Worden met Adobe Experience Platform voor de Architecten van Gegev
 
 De Architecten van gegevens en de Ingenieurs van Gegevens moeten nauw samenwerken voor een succesvolle plaatsing van het Experience Platform. Dit hands-on leerprogramma leert u de belangrijkste taken die door _worden uitgevoerd beide rollen_ zodat weet u hoe te beginnen Platform voor uw eigen zaken uit te voeren. U zult door oefeningen worden geleid die u aan de belangrijkste terminologie, eigenschappen, interface, en APIs van Experience Platform zullen introduceren. Klanten van Adobe Experience Cloud-toepassingen zoals Real-time Customer Data Platform, Customer Journey Analytics en Journey Optimizer zullen deze inhoud ook nuttig vinden, omdat de platformservices essentiële fundamenten van deze toepassingen vormen.
 
-![ de marktectuur die van Adobe Experience Cloud de diensten van het Platform benadrukt in dit leerprogramma-identiteit, Profiel, Segmentatie, Opname, Vraag, en Governance ](assets/marketecture.png) worden behandeld
+![&#x200B; de marktectuur die van Adobe Experience Cloud de diensten van het Platform benadrukt in dit leerprogramma-identiteit, Profiel, Segmentatie, Opname, Vraag, en Governance &#x200B;](assets/marketecture.png) worden behandeld
 
 Onderwerpen zijn onder meer:
 
@@ -48,9 +48,9 @@ Adobe Experience Platform is een technisch platform dat u helpt marketingdoelste
 
 ## Voorwaarden
 
-* U hebt de [ Inleiding aan playlist van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction) op Experience League bekeken en bent vertrouwd met de mogelijkheden van het Platform
+* U hebt de [&#x200B; Inleiding aan playlist van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction) op Experience League bekeken en bent vertrouwd met de mogelijkheden van het Platform
 * U hebt toegang tot een account die is ingericht voor Adobe Experience Platform (of een op een platform gebaseerde toepassing zoals Real-Time CDP of Journey Optimizer) en gegevensverzameling (voorheen Starten).
-* U bent een Beheerder van het Systeem van die rekening of kan één [ hebben gebruikerstoestemmingen ](configure-permissions.md) voor u vormen.
+* U bent een Beheerder van het Systeem van die rekening of kan één [&#x200B; hebben gebruikerstoestemmingen &#x200B;](configure-permissions.md) voor u vormen.
 
 ## Deze zelfstudie gebruiken
 
@@ -58,7 +58,7 @@ Deze zelfstudie combineert taken voor zowel gegevensengineers als gegevensarchit
 
 Terwijl u tijdens deze zelfstudie verschillende platformelementen maakt, kunt u proberen om de namen die ik aanbeveel zoveel mogelijk te gebruiken. Nochtans, zijn er een paar high-level elementennamen die u kunt willen aanpassen voor het geval dat er veelvoudige mensen bij uw organisatie zijn die deze zelfstudie gelijktijdig nemen. U kunt bijvoorbeeld de sandbox Platform de naam geven van &#39;&#39;Luma Tutorial Platform - Ignatius J Reilly&#39;&#39; in plaats van alleen &#39;&#39;Luma Tutorial Platform&#39;&#39;.
 
-Als u geplakt wordt, probeer eerst de instructies opnieuw te lezen, en dan het ![ Logboek en de kwestie ](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=nl-NL) verbinding op sidebar van elke pagina te gebruiken om me te contacteren.
+Als u geplakt wordt, probeer eerst de instructies opnieuw te lezen, en dan het ![&#x200B; Logboek en de kwestie &#x200B;](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=nl-NL) verbinding op sidebar van elke pagina te gebruiken om me te contacteren.
 
 ## Technische noten
 
@@ -79,4 +79,4 @@ Hoewel u in deze zelfstudie meerdere technologieën gebruikt, blijft u vrijwel v
 * Juni 2023: Bijgewerkt om nieuw werkschema van de Toestemming te omvatten en de referentie van Server-aan-Server API van OAuth te gebruiken
 
 
-Nu beweging op de eerste les - [ vormt toestemmingen ](configure-permissions.md).
+Nu beweging op de eerste les - [&#x200B; vormt toestemmingen &#x200B;](configure-permissions.md).

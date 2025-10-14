@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Beheer van segmentmatchgegevens
 
-Leer hoe te opstelling en gebruik de controles van het gegevensbeheer in Real-Time CDP zodat u kunt beperken welke datasets (en daarom welke segmenten die datasets gebruiken) met gegevenspartners kunnen worden gedeeld. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
+Leer hoe te opstelling en gebruik de controles van het gegevensbeheer in Real-Time CDP zodat u kunt beperken welke datasets (en daarom welke segmenten die datasets gebruiken) met gegevenspartners kunnen worden gedeeld. Voor meer informatie, gelieve te zien de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)

@@ -34,8 +34,8 @@ U kunt nu bijvoorbeeld -
 
 ## Bekijk dit
 
-- Tech Blog: [ Journey Orchestration in een Wereld Omnichannel ](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Tech Blog: [ Demonstrating de Macht van de Nieuwe Dienst van het Journey Orchestration van de Adobe om Gepersonaliseerde Ervaringen Omnichannel in Echt - tijd ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
+- Tech Blog: [&#x200B; Journey Orchestration in een Wereld Omnichannel &#x200B;](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
+- Tech Blog: [&#x200B; Demonstrating de Macht van de Nieuwe Dienst van het Journey Orchestration van de Adobe om Gepersonaliseerde Ervaringen Omnichannel in Echt - tijd &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
 
 [Terug naar module 3.1](./journey-orchestration-create-account.md)
 

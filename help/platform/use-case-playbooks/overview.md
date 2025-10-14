@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Overzicht van hoofdletters en kleine letters gebruiken
 
-Leer hoe met Use Case Playbooks klanten van Real-Time Customer Data Platform en Journey Optimizer sneller tijd-aan-waarde kunnen krijgen. De Playbooks van het Geval van het gebruik is een catalogus van tientallen malplaatjes die veelvoudige industrieën en marketing doelstellingen behandelen. Afspeelboeken genereren technische elementen zoals publiek, reizen en schema&#39;s, die vervolgens kunnen worden aangepast en gepubliceerd naar andere sandboxen. Voor meer informatie, zie de [ documentatie van de Playbooks van het Geval van het Gebruik ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=nl-NL).
+Leer hoe met Use Case Playbooks klanten van Real-Time Customer Data Platform en Journey Optimizer sneller tijd-aan-waarde kunnen krijgen. De Playbooks van het Geval van het gebruik is een catalogus van tientallen malplaatjes die veelvoudige industrieën en marketing doelstellingen behandelen. Afspeelboeken genereren technische elementen zoals publiek, reizen en schema&#39;s, die vervolgens kunnen worden aangepast en gepubliceerd naar andere sandboxen. Voor meer informatie, zie de [&#x200B; documentatie van de Playbooks van het Geval van het Gebruik &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441821/?learn=on&enablevpops&captions=dut)
 

@@ -17,34 +17,34 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../postbuster.md) te gebruiken.
+>Als u een werknemer van de Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../postbuster.md) te gebruiken.
 
-Download [ deze Inzameling van Postman voor Offer decisioning ](./../../../assets/postman/postman_offer-decisioning.zip) aan uw Desktop en unzip het. Dan heb je het volgende:
+Download [&#x200B; deze Inzameling van Postman voor Offer decisioning &#x200B;](./../../../assets/postman/postman_offer-decisioning.zip) aan uw Desktop en unzip het. Dan heb je het volgende:
 
-![ OD API ](./images/unzip.png)
+![&#x200B; OD API &#x200B;](./images/unzip.png)
 
 Dit bestand staat nu op uw bureaublad:
 
 - `_AJO- Decisioning Service.postman_collection.json`
 
-In [ oefent 2.1.3 uit - de authentificatie van Postman aan Adobe I/O ](./../../../modules/rtcdp-b2c/module2.1/ex3.md) u Postman installeerde. U moet Postman opnieuw gebruiken voor deze oefening.
+In [&#x200B; oefent 2.1.3 uit - de authentificatie van Postman aan Adobe I/O &#x200B;](./../../../modules/rtcdp-b2c/module2.1/ex3.md) u Postman installeerde. U moet Postman opnieuw gebruiken voor deze oefening.
 
 Open Postman en importeer het bestand `_AJO- Decisioning Service.postman_collection.json` . Deze verzameling is dan beschikbaar in Postman.
 
-![ Adobe I/O Nieuwe Integratie ](./images/postmanui.png)
+![&#x200B; Adobe I/O Nieuwe Integratie &#x200B;](./images/postmanui.png)
 
 U hebt nu alles wat u nodig hebt in Postman om te gaan communiceren met Adobe Experience Platform via de API&#39;s.
 
 Alvorens u hieronder APIs kunt gebruiken, ben zeker om het gebruiken van de inzameling **Adobe IO - OAuth** opnieuw voor authentiek te verklaren die u in Uitoefening 2.1.3 vormde.
 
-![ Adobe I/O Nieuwe Integratie ](./images/postmanui1.png)
+![&#x200B; Adobe I/O Nieuwe Integratie &#x200B;](./images/postmanui1.png)
 
 
 ### 3.3.6.2 Aanbiedingen ophalen voor klantprofiel
 
 Klik om de verzoek **POST te openen - krijg Aanbiedingen voor het Profiel van de Klant**. Het eerste ding om bij te werken is de **variabele van de Kopbal** voor **x-zandbak-naam**. Stel dit in op `--aepSandboxName--` .
 
-![ OD API ](./images/api23.png)
+![&#x200B; OD API &#x200B;](./images/api23.png)
 
 Voor dit verzoek zijn er een aantal velden die moeten worden bijgewerkt. Ga naar **Lichaam**.
 
@@ -53,27 +53,27 @@ Voor dit verzoek zijn er een aantal velden die moeten worden bijgewerkt. Ga naar
 - **xdm:id**
 - **xdm:itemCount** (verander het in een waarde van keus)
 
-![ OD API ](./images/api24.png)
+![&#x200B; OD API &#x200B;](./images/api24.png)
 
 Het gebied **xdm:activityId** moet worden ingevuld. U kunt dat ophalen in de gebruikersinterface van Adobe Experience Platform, zoals hieronder aangegeven.
 
-![ OD API ](./images/activityid.png)
+![&#x200B; OD API &#x200B;](./images/activityid.png)
 
 Het veld **[!UICONTROL xdm:placementId]** moet worden ingevuld. U kunt dat ophalen in de gebruikersinterface van Adobe Experience Platform, zoals hieronder aangegeven. In het onderstaande voorbeeld ziet u de placementId voor de plaatsing **[!UICONTROL Web - Image]** .
 
-![ OD API ](./images/placementid.png)
+![&#x200B; OD API &#x200B;](./images/placementid.png)
 
 Voor het gebied **xdm:id**, ga het e-mailadres van het klantenprofiel in voor wie u een aanbieding zou willen verzoeken. Klik op **[!UICONTROL Send]** als alle waarden naar wens zijn ingesteld.
 
-![ OD API ](./images/api24a.png)
+![&#x200B; OD API &#x200B;](./images/api24a.png)
 
 Tot slot zult u dan het resultaat zien van welk soort gepersonaliseerde aanbieding en welke activa aan deze klant moeten worden getoond. In dit voorbeeld zijn twee objecten aangevraagd en zoals je kunt zien, zijn twee persoonlijke voorstellen geretourneerd. 1 aanbieding voor Apple Watch en een ander voorstel voor Galaxy Watch 7.
 
-![ OD API ](./images/api25.png)
+![&#x200B; OD API &#x200B;](./images/api25.png)
 
 Je hebt deze oefening nu voltooid.
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Terug naar module 3.3](./offer-decisioning.md)
 

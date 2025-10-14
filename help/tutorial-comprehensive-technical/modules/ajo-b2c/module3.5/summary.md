@@ -19,6 +19,6 @@ Gefeliciteerd en bedankt dat u uw tijd hebt geïnvesteerd in het leren over Adob
 
 ## Bekijk dit
 
-Ga terug naar [ Module 3.2 ](./ajotranslationsvcs.md){target="_blank"}
+Ga terug naar [&#x200B; Module 3.2 &#x200B;](./ajotranslationsvcs.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../overview.md){target="_blank"}

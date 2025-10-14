@@ -23,14 +23,14 @@ In deze module, zult u uw eigen agent creëren en zult de diverse architecturale
 
 ## Uitoefening
 
-[ 1.1.1 die met Agentische AI ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.1.1 die met Agentische AI &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze exercitie ...
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}

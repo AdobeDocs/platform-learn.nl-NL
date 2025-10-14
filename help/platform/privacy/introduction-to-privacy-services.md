@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Inleiding tot Privacy Service
 
-Meer informatie over privacyregels en het effect ervan op gegevensbewerkingen. Leer ook hoe Privacy Service met deze uitdagingen omgaat. Voor meer informatie, gelieve de [ documentatie van de Diensten van de Privacy ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
+Meer informatie over privacyregels en het effect ervan op gegevensbewerkingen. Leer ook hoe Privacy Service met deze uitdagingen omgaat. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3445717?learn=on&enablevpops&captions=dut)

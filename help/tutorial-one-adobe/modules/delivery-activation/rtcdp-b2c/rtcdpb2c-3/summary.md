@@ -25,11 +25,11 @@ Laten we de voordelen benadrukken van actie ondernemen met Adobe Experience Plat
 
 ## Bekijk dit
 
-- Tech Blog: [ de Verwerking van de Stroom bij Schaal binnen Adobe Experience Platform ](https://medium.com/adobetech/stream-processing-at-scale-within-adobe-experience-platform-909ed502da71)
-- Tech Blog: [ het Innoveren van de Ervaring van de Conferentie van de Ontwikkelaar met Adobe Experience Platform ](https://medium.com/adobetech/innovating-developer-conference-with-adobe-experience-platform-c8c2d1fe8d88)
+- Tech Blog: [&#x200B; de Verwerking van de Stroom bij Schaal binnen Adobe Experience Platform &#x200B;](https://medium.com/adobetech/stream-processing-at-scale-within-adobe-experience-platform-909ed502da71)
+- Tech Blog: [&#x200B; het Innoveren van de Ervaring van de Conferentie van de Ontwikkelaar met Adobe Experience Platform &#x200B;](https://medium.com/adobetech/innovating-developer-conference-with-adobe-experience-platform-c8c2d1fe8d88)
 
 ## Volgende stappen
 
-Ga terug naar [ in real time CDP - Bouw een publiek en neem actie ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
+Ga terug naar [&#x200B; in real time CDP - Bouw een publiek en neem actie &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

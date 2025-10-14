@@ -17,21 +17,21 @@ ht-degree: 0%
 
 Als u gegevens die door Web SDK zijn verzameld naar Adobe Target wilt verzenden en Adobe Target een antwoord wilt geven met een persoonlijke ervaring voor elke klant, volgt u deze stappen.
 
-Ga naar [ https://experience.adobe.com/launch/ ](https://experience.adobe.com/launch/) en ga naar **Datastreams**.
+Ga naar [&#x200B; https://experience.adobe.com/launch/ &#x200B;](https://experience.adobe.com/launch/) en ga naar **Datastreams**.
 
 Selecteer in de rechterbovenhoek van het scherm de naam van de sandbox, die `--aepSandboxName--` moet zijn. Open uw specifieke gegevensstroom, die `--aepUserLdap-- - Demo System Datastream` wordt genoemd.
 
-![ klik het pictogram van de Configuratie van Edge in de linkernavigatie ](./images/edgeconfig1b.png)
+![&#x200B; klik het pictogram van de Configuratie van Edge in de linkernavigatie &#x200B;](./images/edgeconfig1b.png)
 
 Dan zie je dit. Om Adobe Target toe te laten, klik **de Dienst** toevoegen.
 
-![ Debugger AEP ](./images/aa2.png)
+![&#x200B; Debugger AEP &#x200B;](./images/aa2.png)
 
 Dan zie je dit. Selecteer de dienst **Adobe Target**, waarna u naar keuze extra informatie kunt verstrekken. Klik **sparen**.
 
-![ Debugger AEP ](./images/at1.png)
+![&#x200B; Debugger AEP &#x200B;](./images/at1.png)
 
-Volgende Stap: [ 1.1.7 vereisten van het Schema XDM in Adobe Experience Platform ](./ex7.md)
+Volgende Stap: [&#x200B; 1.1.7 vereisten van het Schema XDM in Adobe Experience Platform &#x200B;](./ex7.md)
 
 [Terug naar module 1.1](./data-ingestion-launch-web-sdk.md)
 

@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Uitgebreide conversies voor Google Ads instellen
 
-Verbeter de Google-conversiegegevens met hashgegevens van de eerste partij door gebeurtenissen door te sturen en de Google Ads-API. Voor meer informatie, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=nl-NL)
+Verbeter de Google-conversiegegevens met hashgegevens van de eerste partij door gebeurtenissen door te sturen en de Google Ads-API. Voor meer informatie, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=nl-NL)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

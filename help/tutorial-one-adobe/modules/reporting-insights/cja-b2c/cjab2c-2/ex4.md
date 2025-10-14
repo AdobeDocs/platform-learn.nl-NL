@@ -23,23 +23,23 @@ ht-degree: 0%
 
 Na de vorige oefening, zou u deze pagina in Adobe Experience Platform moeten openen:
 
-![ demo ](./images/datasets.png)
+![&#x200B; demo &#x200B;](./images/datasets.png)
 
 **als u het open hebt, ga met de volgende oefening verder.**
 
-**als u het niet open hebt, ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform/home).**
+**als u het niet open hebt, ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform/home).**
 
 Ga in het linkermenu naar Bronnen. U zult dan de **Bronnen** homepage zien. In het **Bronnen** menu, ga naar de **&#x200B;**&#x200B;bronschakelaar van Google BigQuery en klik **Opstelling**.
 
-![ demo ](./images/sourceshome.png)
+![&#x200B; demo &#x200B;](./images/sourceshome.png)
 
 U ziet dan het selectiescherm voor Google BigQuery-accounts. Selecteer uw rekening en klik **daarna**.
 
-![ demo ](./images/0c.png)
+![&#x200B; demo &#x200B;](./images/0c.png)
 
 U zult dan het **Uitgezochte gegevens** scherm zien.
 
-![ demo ](./images/datasets.png)
+![&#x200B; demo &#x200B;](./images/datasets.png)
 
 ## 1.2.4.1 Selectie van BigQuery-tabel
 
@@ -47,23 +47,23 @@ In het **Uitgezochte gegevens** scherm, selecteer uw dataset BigQuery. U ziet nu
 
 Klik **daarna**.
 
-![ demo ](./images/datasets1.png)
+![&#x200B; demo &#x200B;](./images/datasets1.png)
 
 ## 1.2.4.2 XDM-toewijzing
 
 U ziet nu het volgende:
 
-![ demo ](./images/xdm4a.png)
+![&#x200B; demo &#x200B;](./images/xdm4a.png)
 
 U moet nu of een nieuwe dataset creÃ«ren of een bestaande dataset selecteren om de gegevens van Google Analytics in te laden. Voor deze oefening, zijn een dataset en een schema reeds gecreeerd. U hoeft geen nieuw schema of nieuwe gegevensset te maken.
 
 Selecteer **Bestaande dataset**. Open het vervolgkeuzemenu om een dataset te selecteren. Zoek naar de dataset genoemd `Demo System - Event Dataset for BigQuery (Global v1.1)` en selecteer het. Klik **daarna**.
 
-![ demo ](./images/xdm6.png)
+![&#x200B; demo &#x200B;](./images/xdm6.png)
 
 Omlaag schuiven. U moet nu elk **Gebied van Source** van Google Analytics/BigQuery aan een XDM **Gebied van het Doel** in kaart brengen, gebied door gebied. U ziet mogelijk een aantal fouten, die worden verholpen door onderstaande toewijzingsexercitie.
 
-![ demo ](./images/xdm8.png)
+![&#x200B; demo &#x200B;](./images/xdm8.png)
 
 Gebruik de onderstaande toewijzingstabel voor deze oefening.
 
@@ -97,11 +97,11 @@ Voor sommige gebieden, moet u de originele afbeelding verwijderen en nieuwe creÃ
 
 Om a **Berekend Gebied** tot stand te brengen, klik **+ Nieuw gebiedstype** en klik dan **Berekend gebied**.
 
-![ demo ](./images/xdm8a.png)
+![&#x200B; demo &#x200B;](./images/xdm8a.png)
 
 Plak de bovengenoemde regel en klik **sparen** voor elk van de gebieden in de bovengenoemde lijst.
 
-![ demo ](./images/xdm8b.png)
+![&#x200B; demo &#x200B;](./images/xdm8b.png)
 
 U hebt nu a **Afbeelding** als dit.
 
@@ -109,7 +109,7 @@ De brongebieden **GA_ID** en **customerID** worden in kaart gebracht aan een Her
 
 Klik **daarna**.
 
-![ demo ](./images/xdm34.png)
+![&#x200B; demo &#x200B;](./images/xdm34.png)
 
 ## 1.2.4.3 Verbinding en de planning van de gegevensinvoer
 
@@ -132,7 +132,7 @@ Het **delta** gebied wordt gebruikt om de verbinding te plannen en slechts nieuw
 Selecteer **timeStamp** als deltagebied.
 Klik **daarna**.
 
-![ demo ](./images/ex437.png)
+![&#x200B; demo &#x200B;](./images/ex437.png)
 
 ## 1.2.4.4 Verbinding controleren en starten
 
@@ -140,18 +140,18 @@ U ziet nu een gedetailleerd overzicht van uw verbinding. Zorg ervoor dat alles j
 
 Klik **Afwerking**.
 
-![ demo ](./images/xdm46.png)
+![&#x200B; demo &#x200B;](./images/xdm46.png)
 
 Zodra de verbinding is gecreeerd, zult u dit zien:
 
-![ demo ](./images/xdm48.png)
+![&#x200B; demo &#x200B;](./images/xdm48.png)
 
 U bent nu klaar om door te gaan met de volgende oefening, waarin u Customer Journey Analytics zult gebruiken om krachtige visualisaties bovenop Google Analytics-gegevens te bouwen.
 
 ## Volgende stappen
 
-Ga naar [ 1.2.5 analyseren de Gegevens van Google Analytics gebruikend Customer Journey Analytics ](./ex5.md){target="_blank"}
+Ga naar [&#x200B; 1.2.5 analyseren de Gegevens van Google Analytics gebruikend Customer Journey Analytics &#x200B;](./ex5.md){target="_blank"}
 
-Ga terug naar [ Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
+Ga terug naar [&#x200B; Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

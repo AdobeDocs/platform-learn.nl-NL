@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Inleiding tot het Poort van het publiek en Samenstelling
 
-Zie hoe Adobe het publiek in Adobe Experience Platform opnieuw inziet, inclusief hoe u het publiek kunt importeren, bouwen en beheren. Voor meer informatie, gelieve te zien de [ documentatie van de Bouwer van het Segment ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
+Zie hoe Adobe het publiek in Adobe Experience Platform opnieuw inziet, inclusief hoe u het publiek kunt importeren, bouwen en beheren. Voor meer informatie, gelieve te zien de [&#x200B; documentatie van de Bouwer van het Segment &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432431/?learn=on&enablevpops&captions=dut)

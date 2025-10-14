@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ## 1.6.1.1 Uw Adobe I/O-project maken
 
-Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"}.
+Ga naar [&#x200B; https://developer.adobe.com/console/home &#x200B;](https://developer.adobe.com/console/home){target="_blank"}.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext1.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext1.png)
 
 Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` .
 
@@ -28,19 +28,19 @@ Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instanti
 
 Daarna, uitgezochte **creeer project van malplaatje**.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext2.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext2.png)
 
 Selecteer **App Builder**.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext4.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext4.png)
 
 Voer de naam `--aepUserLdap-- GSPeM EXT` in. Klik **sparen**.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext5.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext5.png)
 
 Dan moet je iets dergelijks zien.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext6.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext6.png)
 
 ## 1.6.1.2 De ontwikkelomgeving configureren
 
@@ -54,9 +54,9 @@ Voer de volgende stappen uit als deze toepassingen of pakketten nog niet op uw c
 
 ### Node.js &amp; npm
 
-Ga naar [ https://nodejs.org/en/download ](https://nodejs.org/en/download). U zou dit, met een aantal eindbevelen dan moeten zien die moeten worden uitgevoerd om Node.js en npm geïnstalleerd te hebben. De hier getoonde opdrachten zijn van toepassing op MacBook.
+Ga naar [&#x200B; https://nodejs.org/en/download &#x200B;](https://nodejs.org/en/download). U zou dit, met een aantal eindbevelen dan moeten zien die moeten worden uitgevoerd om Node.js en npm geïnstalleerd te hebben. De hier getoonde opdrachten zijn van toepassing op MacBook.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext7.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext7.png)
 
 Open eerst een nieuw terminalvenster. Plak en voer de opdracht op regel 2 in de schermafbeelding uit:
 
@@ -72,7 +72,7 @@ Nadat beide opdrachten zijn uitgevoerd, voert u deze opdracht uit:
 
 Er wordt een versienummer weergegeven.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext8.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext8.png)
 
 Voer vervolgens deze opdracht uit:
 
@@ -80,7 +80,7 @@ Voer vervolgens deze opdracht uit:
 
 Er wordt een versienummer weergegeven.
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext9.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext9.png)
 
 Als de laatste 2 bevelen met succes een versieaantal terugkeerde, dan is uw configuratie van deze 2 mogelijkheden succesvol.
 
@@ -92,7 +92,7 @@ Om Adobe Developer bevel-lijn interface (CLI) te installeren, stel het volgende 
 
 Het uitvoeren van deze opdracht kan een paar minuten duren. Het eindresultaat moet er ongeveer als volgt uitzien:
 
-![ Uitbreidbaarheid GSPeM ](./images/gspemext10.png)
+![&#x200B; Uitbreidbaarheid GSPeM &#x200B;](./images/gspemext10.png)
 
 De opdrachtregelinterface (CLI) van Adobe Developer is nu ook geïnstalleerd.
 
@@ -100,8 +100,8 @@ U hebt nu de basiselementen ingesteld om een App Builder-project te kunnen uitvo
 
 ## Volgende stappen
 
-Ga naar [ creeer uw AWS S3 emmertje ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; creeer uw AWS S3 emmertje &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ GenStudio for Performance Marketing - Uitbreidbaarheid ](./genstudioext.md){target="_blank"}
+Ga terug naar [&#x200B; GenStudio for Performance Marketing - Uitbreidbaarheid &#x200B;](./genstudioext.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

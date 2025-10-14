@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Er zijn verschillende dwingende redenen om te overwegen tags van leveranciers aan de clientzijde uit browsers en apparaten en naar een server te verplaatsen. In dit artikel, bespreken wij hoe te om een cliënt-zijverkopersmarkering voor potentieel het bewegen van het naar een gebeurtenis te evalueren die bezit door:sturen.
 
-Deze evaluatie is slechts noodzakelijk als u overweegt verwijderend een cliënt-zijverkopersmarkering en het te vervangen met server-zijgegevensdistributie in een gebeurtenis die bezit door:sturen. Dit artikel veronderstelt u met de grondbeginselen van [ gegevensinzameling ](https://experienceleague.adobe.com/docs/data-collection.html?lang=nl-NL) vertrouwd bent, en [ gebeurtenis door:sturen ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL).
+Deze evaluatie is slechts noodzakelijk als u overweegt verwijderend een cliënt-zijverkopersmarkering en het te vervangen met server-zijgegevensdistributie in een gebeurtenis die bezit door:sturen. Dit artikel veronderstelt u met de grondbeginselen van [&#x200B; gegevensinzameling &#x200B;](https://experienceleague.adobe.com/docs/data-collection.html?lang=nl-NL) vertrouwd bent, en [&#x200B; gebeurtenis door:sturen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL).
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Gelieve te verwijzen naar het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde verwijzing van de terminologieveranderingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Adobe Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Gelieve te verwijzen naar het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde verwijzing van de terminologieveranderingen.
 
 Browser de verkopers veranderen hoe zij derdekoekjes behandelen. Advertising- en marketingleveranciers en -technologieën vereisen vaak het gebruik van veel tags aan de clientzijde. Deze uitdagingen zijn slechts twee dwingende redenen die onze klanten server-zijgegevensdistributie toevoegen.
 
@@ -31,7 +31,7 @@ Browser de verkopers veranderen hoe zij derdekoekjes behandelen. Advertising- en
 
 ## Gebruik gevallen en gegevens {#use-cases-data}
 
-De eerste stap bestaat uit het definiëren van de gebruiksgevallen die worden geïmplementeerd met de client-side leverancierstag. Neem bijvoorbeeld de Facebook-pixel (Meta). Bewegend het van onze plaats aan de [ Conversies API van Meta ](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) met de gebeurtenis door:sturen uitbreiding betekent het documenteren van de specifieke gebruiksgevallen eerst.
+De eerste stap bestaat uit het definiëren van de gebruiksgevallen die worden geïmplementeerd met de client-side leverancierstag. Neem bijvoorbeeld de Facebook-pixel (Meta). Bewegend het van onze plaats aan de [&#x200B; Conversies API van Meta &#x200B;](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) met de gebeurtenis door:sturen uitbreiding betekent het documenteren van de specifieke gebruiksgevallen eerst.
 
 Voor de huidige clientleveranciercode:
 
@@ -44,7 +44,7 @@ In ons voorbeeld volgen we conversies met de Facebook-pixel wanneer bezoekers op
 
 ### Gegevens {#data}
 
-Met de bestaande client-side tag, wanneer deze wordt uitgevoerd of uitgevoerd op onze site, wat gebeurt er dan met de gegevens voor ons gebruik? Kunnen wij de gegevens vangen wij in de cliënt, zonder de verkoperstag nodig hebben, zodat kunnen wij het naar gebeurtenis verzenden die door:sturen? Wanneer het gebruiken van [ markeringen ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) of andere systemen van het markeringsbeheer, zijn de meeste gegevens van de bezoekersinteractie beschikbaar voor inzameling en distributie. Maar zijn de gegevens die wij voor ons gebruiksgeval nodig hebben beschikbaar wanneer wij het nodig hebben, waar wij het, en in het formaat nodig hebben wij het-zonder de cliënt-zijverkoperstag nodig hebben? Hieronder volgen nog enkele vragen over de gegevens die u in overweging wilt nemen:
+Met de bestaande client-side tag, wanneer deze wordt uitgevoerd of uitgevoerd op onze site, wat gebeurt er dan met de gegevens voor ons gebruik? Kunnen wij de gegevens vangen wij in de cliënt, zonder de verkoperstag nodig hebben, zodat kunnen wij het naar gebeurtenis verzenden die door:sturen? Wanneer het gebruiken van [&#x200B; markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) of andere systemen van het markeringsbeheer, zijn de meeste gegevens van de bezoekersinteractie beschikbaar voor inzameling en distributie. Maar zijn de gegevens die wij voor ons gebruiksgeval nodig hebben beschikbaar wanneer wij het nodig hebben, waar wij het, en in het formaat nodig hebben wij het-zonder de cliënt-zijverkoperstag nodig hebben? Hieronder volgen nog enkele vragen over de gegevens die u in overweging wilt nemen:
 
 - Is er een gebruiker-id van de leverancier vereist met elke gebeurtenis?
 - Zo ja, hoe kan het worden verzameld of gegenereerd zonder de client-side tag?
@@ -69,8 +69,8 @@ Beschikt de leverancier over API&#39;s die zijn ontworpen voor overdracht van ge
 
 - Bestaan de API eindpunten om de vereiste gegevens te verzenden? Raadpleeg de ontwikkelaar- of API-documentatie van de leverancier voor informatie over de eindpunten die uw gebruiksgevallen ondersteunen.
 - Sta zij het stromen gebeurtenisgegevens, of slechts partijgegevens toe?
-- Welke authentificatiemethodes steunen zij? Token, HTTP, OAuth versie van de cliëntgeloofsbrieven, of ander? Zie [ hier ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html?lang=nl-NL) voor methodes die door gebeurtenis door:sturen worden gesteund.
-- Wat is de vernieuwingsverschuiving van hun API? Is die beperking verenigbaar met de gebeurtenis die minima door:sturen? Details [ hier ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html?lang=nl-NL#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- Welke authentificatiemethodes steunen zij? Token, HTTP, OAuth versie van de cliëntgeloofsbrieven, of ander? Zie [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html?lang=nl-NL) voor methodes die door gebeurtenis door:sturen worden gesteund.
+- Wat is de vernieuwingsverschuiving van hun API? Is die beperking verenigbaar met de gebeurtenis die minima door:sturen? Details [&#x200B; hier &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html?lang=nl-NL#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - Welke gegevens hebben zij voor de relevante eindpunten nodig?
 - Vereisen zij een verkoper-specifiek gebruikersherkenningsteken met elke vraag aan het eindpunt?
 - Als zij die herkenningsteken vereisen, waar en hoe kan het worden geproduceerd of worden gevangen, zonder cliënt-zijcode?
@@ -87,7 +87,7 @@ Als de leverancier niet de API eindpunten heeft om onze gebruiksgevallen te steu
 
 Wat gebeurt er als ze API&#39;s hebben, maar ook een unieke bezoeker- of gebruikers-id nodig hebben voor elke API-aanroep? Hoe kunnen wij tot die identiteitskaart toegang hebben als wij niet de verkoper cliënt-zijcode (markering) hebben die op de plaats loopt?
 
-Sommige leveranciers veranderen hun systemen voor de nieuwe wereld zonder derdekoekjes. Deze veranderingen omvatten het gebruik van alternatieve unieke herkenningstekens, als a [ UUID ](https://developer.mozilla.org/en-US/docs/Glossary/UUID) of andere [ klant-geproduceerde identiteitskaart ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=nl-NL). Als de verkoper een klant-geproduceerde identiteitskaart toestaat, kunnen wij of het van de cliënt naar de Edge Network van het Platform met Web of Mobiele SDK verzenden, of misschien het van een API vraag in gebeurtenis krijgen door:sturen. Wanneer wij gegevens naar die verkoper in een gebeurtenis verzenden die regel door:sturen, omvatten wij eenvoudig die herkenningsteken zoals-nodig.
+Sommige leveranciers veranderen hun systemen voor de nieuwe wereld zonder derdekoekjes. Deze veranderingen omvatten het gebruik van alternatieve unieke herkenningstekens, als a [&#x200B; UUID &#x200B;](https://developer.mozilla.org/en-US/docs/Glossary/UUID) of andere [&#x200B; klant-geproduceerde identiteitskaart &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=nl-NL). Als de verkoper een klant-geproduceerde identiteitskaart toestaat, kunnen wij of het van de cliënt naar de Edge Network van het Platform met Web of Mobiele SDK verzenden, of misschien het van een API vraag in gebeurtenis krijgen door:sturen. Wanneer wij gegevens naar die verkoper in een gebeurtenis verzenden die regel door:sturen, omvatten wij eenvoudig die herkenningsteken zoals-nodig.
 
 Als de leverancier gegevens (zoals een leverancier-specifieke unieke identiteitskaart, bijvoorbeeld) vereist die slechts door hun eigen cliënt-zijmarkering kunnen worden geproduceerd of worden betreden, dan is die verkoperstag waarschijnlijk geen goede kandidaat om zich te bewegen. _het proberen om een cliënt-zijmarkering met het idee om die gegevensinzameling aan gebeurtenis te bewegen die zonder aangewezen APIs door:sturen wordt ontmoedigd._
 
@@ -95,12 +95,12 @@ De [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/
 
 ## Tools {#tools}
 
-Het onderzoeken van en het testen van leveranciersAPI eindpunten is gemakkelijker met hulpmiddelen zoals [ Postman ](https://www.postman.com/), of de uitbreidingen van de tekstredacteur zoals de Code van Visual Studio [ Donder Cliënt ](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), of [ Cliënt van HTTP ](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+Het onderzoeken van en het testen van leveranciersAPI eindpunten is gemakkelijker met hulpmiddelen zoals [&#x200B; Postman &#x200B;](https://www.postman.com/), of de uitbreidingen van de tekstredacteur zoals de Code van Visual Studio [&#x200B; Donder Cliënt &#x200B;](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), of [&#x200B; Cliënt van HTTP &#x200B;](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## Volgende stappen {#next-steps}
 
 Dit artikel verstrekte een opeenvolging van stappen om een verkoper cliënt-zijmarkering te evalueren en potentieel het server-kant in een gebeurtenis te bewegen die bezit door:sturen. Zie de volgende koppelingen voor meer informatie over verwante onderwerpen:
 
-- [ het beheer van de Markering ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in Adobe Experience Platform
-- [ Gebeurtenis door:sturen ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) voor server-zij verwerking
-- [ de updates van de Terminologie ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) in gegevensinzameling
+- [&#x200B; het beheer van de Markering &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) in Adobe Experience Platform
+- [&#x200B; Gebeurtenis door:sturen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) voor server-zij verwerking
+- [&#x200B; de updates van de Terminologie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) in gegevensinzameling

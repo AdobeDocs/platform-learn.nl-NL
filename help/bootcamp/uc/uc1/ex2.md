@@ -24,9 +24,9 @@ In het profiel van de Klant in real time, worden alle profielgegevens getoond na
 
 ## 1.2.1 De weergave Klantprofiel in Adobe Experience Platform gebruiken
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``Bootcamp`` . U kunt dit doen door op de tekst **[!UICONTROL Production Prod]** in de blauwe lijn boven op het scherm te klikken. Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
@@ -34,11 +34,11 @@ Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox
 
 In het linkermenu, ga naar **Profielen** en **doorbladeren**.
 
-![ Profiel van de Klant ](./images/homemenu.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/homemenu.png)
 
 In het deelvenster Profielviewer op uw website vindt u het identiteitsoverzicht. Elke identiteit is gekoppeld aan een naamruimte.
 
-![ Profiel van de Klant ](./images/identities.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/identities.png)
 
 
 
@@ -49,23 +49,23 @@ De primaire id is doorgaans afhankelijk van de context. Als u uw Centrum van de 
 
 Voor het gebied **Identiteitsnaamruimte**, uitgezochte **ECID** en voor de waarde van de 4&rbrace; Identiteit van het gebied **gaat ECID in u op het paneel van de Kijker van het Profiel van de bootcampings website kunt vinden.** Klik **Mening**. Vervolgens ziet u uw profiel in de lijst. Klik **identiteitskaart van het Profiel** om uw profiel te openen.
 
-![ Profiel van de Klant ](./images/popupecid.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/popupecid.png)
 
 U ziet nu een overzicht van een paar belangrijke **Attributen van het Profiel** van uw klantenprofiel.
 
-![ Profiel van de Klant ](./images/profile.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/profile.png)
 
 Ga naar **Gebeurtenissen**, waar u ingangen voor elke ervaringsgebeurtenis kunt zien die met uw Profiel wordt verbonden.
 
-![ Profiel van de Klant ](./images/profileee.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/profileee.png)
 
 Tot slot ga naar het lidmaatschap van het Publiek van de menuoptie **&#x200B;**. U ziet nu alle soorten publiek die in aanmerking komen voor dit profiel.
 
-![ Profiel van de Klant ](./images/profileseg.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/profileseg.png)
 
 Laten wij nu een nieuw publiek creëren dat u zal toestaan om de klantenervaring voor een anonieme of bekende klant te personaliseren.
 
-Volgende Stap: [ 1.3 leidt tot een publiek - UI ](./ex3.md)
+Volgende Stap: [&#x200B; 1.3 leidt tot een publiek - UI &#x200B;](./ex3.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

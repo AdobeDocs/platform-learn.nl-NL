@@ -71,9 +71,9 @@ Personalization begint op grote schaal met het begrijpen wat verbeterd kan worde
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Toegang tot de bootkampwebsite op [ https://bootcamp.aepdemo.net ](https://bootcamp.aepdemo.net)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot de bootkampwebsite op [&#x200B; https://bootcamp.aepdemo.net &#x200B;](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ Personalization begint op grote schaal met het begrijpen wat verbeterd kan worde
 
 Voordat u begint met de praktische oefeningen, bekijkt u eerst de architectuur achter deze zelfstudie. Dit bootkamp zal diep op een aantal eigenschappen en functionaliteiten rond Adobe Experience Platform gaan, en zal ook veelvoudige integraties over een verscheidenheid van bronnen en bestemmingen bespreken. Om u de architectuur achter deze zelfstudie en de algemene positionering van Adobe Experience Platform in uw bedrijfseconomisch ecosysteem goed te begrijpen, begin door de architectuurvideo en het diagram te herzien.
 
-Ga naar [ Architectuur ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=nl-NL).
+Ga naar [&#x200B; Architectuur &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=nl-NL).
 
 ## Video&#39;s
 
@@ -93,27 +93,27 @@ Het belangrijkste doel van ons Experience Makers Bootkamp is om organisaties te 
 
 Er zijn verschillende andere video&#39;s gemaakt waarin elementen van het bootkamp en krachtige integratie tussen Adobe Experience Platform- en niet-Adobe-toepassingen worden geïllustreerd. Klik op de onderstaande koppeling voor een overzicht van deze video&#39;s.
 
-Ga naar [ Video&#39;s ](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=nl-NL).
+Ga naar [&#x200B; Video&#39;s &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=nl-NL).
 
 ## YouTube
 
-U kunt extra interessante video&#39;s [ op ons kanaal van YouTube ](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) vinden.
+U kunt extra interessante video&#39;s [&#x200B; op ons kanaal van YouTube &#x200B;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw) vinden.
 
 ## Gebruikersstromen
 
-[1. Verwerving ](./uc/uc1/uc1.md)
+[1. Verwerving &#x200B;](./uc/uc1/uc1.md)
 
 In deze gebruikersstroom, zult u alle elementen begrijpen u verwerving-geconcentreerde gebruiksgevallen voor onbekende, niet voor authentiek verklaarde gebruikers naast bekende, voor authentiek verklaarde gebruiker moet uitvoeren door Real-Time CDP te gebruiken.
 
-[ 2. Registratie en onboarding ](./uc/uc2/uc2.md)
+[&#x200B; 2. Registratie en onboarding &#x200B;](./uc/uc2/uc2.md)
 
 In deze gebruikersstroom begrijpt u alle elementen die u nodig hebt om registratie en gebruiksgevallen bij het instappen te implementeren met Real-Time CDP en Adobe Journey Optimizer.
 
-[ 3. Fysiek en digitaal overvloeien ](./uc/uc3/uc3.md)
+[&#x200B; 3. Fysiek en digitaal overvloeien &#x200B;](./uc/uc3/uc3.md)
 
 In deze gebruikersstroom, zult u de klantenervaring over online en off-line kanalen op een verenigbare manier aanpassen, door Real-Time CDP en Adobe Journey Optimizer te gebruiken.
 
-[ 4. De Analyse van de Reis van de klant ](./uc/uc4/uc4.md)
+[&#x200B; 4. De Analyse van de Reis van de klant &#x200B;](./uc/uc4/uc4.md)
 
 In deze gebruikersstroom, zult u vertrouwd met Customer Journey Analytics worden en u zult inzicht in krijgen in hoe klanten zich van één kanaal aan andere, van online aan off-line aan callcenter en meer ontwikkelen.
 

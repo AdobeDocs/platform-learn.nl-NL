@@ -15,43 +15,43 @@ ht-degree: 0%
 
 ## 1.3.1.1 Uw account maken
 
-Ga naar [ https://snowflake.com ](https://snowflake.com). Klik **BEGINNEN VOOR VRIJ**.
+Ga naar [&#x200B; https://snowflake.com &#x200B;](https://snowflake.com). Klik **BEGINNEN VOOR VRIJ**.
 
-![ FAC ](./images/sf1.png)
+![&#x200B; FAC &#x200B;](./images/sf1.png)
 
 Ga uw details in en klik **verdergaan**.
 
-![ FAC ](./images/sf2.png)
+![&#x200B; FAC &#x200B;](./images/sf2.png)
 
 Ga uw details in, kies uw wolkenleverancier en klik **begonnen worden**.
 
-![ FAC ](./images/sf3.png)
+![&#x200B; FAC &#x200B;](./images/sf3.png)
 
 Ga uw details in of klik **Overslaan** (x2).
 
-![ FAC ](./images/sf4.png)
+![&#x200B; FAC &#x200B;](./images/sf4.png)
 
 Dan zie je dit. Controleer uw e-mail en klik op het bevestigingsbericht dat naar u is verzonden.
 
-![ FAC ](./images/sf5.png)
+![&#x200B; FAC &#x200B;](./images/sf5.png)
 
 Klik op de koppeling in het bevestigingsbericht om uw account te activeren en geef uw gebruikersnaam en wachtwoord op. Klik **krijgen Begonnen**. U zult deze gebruikersnaam en wachtwoord in de volgende oefening moeten gebruiken.
 
-![ FAC ](./images/sf6.png)
+![&#x200B; FAC &#x200B;](./images/sf6.png)
 
 U wordt dan aangemeld bij Snowflake. Klik **Overslaan voor nu**.
 
-![ FAC ](./images/sf7.png)
+![&#x200B; FAC &#x200B;](./images/sf7.png)
 
 ## 1.3.1.2 Uw database maken
 
 Ga naar **Gegevens > Gegevensbestanden**. Klik **+ Gegevensbestand**.
 
-![ FAC ](./images/db1.png)
+![&#x200B; FAC &#x200B;](./images/db1.png)
 
 Gebruik de naam **CITISIGNAL** voor uw gegevensbestand. Klik **CREËREN**.
 
-![ FAC ](./images/db2.png)
+![&#x200B; FAC &#x200B;](./images/db2.png)
 
 ## 1.3.1.3 Tabellen maken
 
@@ -61,7 +61,7 @@ U kunt nu uw tabellen maken in Snowflake. Hieronder vindt u scripts waarmee u uw
 
 Klik **+ creëren**, dan klik **Lijst** en klik dan **Standaard**.
 
-![ FAC ](./images/tb1.png)
+![&#x200B; FAC &#x200B;](./images/tb1.png)
 
 Dan zie je dit. Kopieer de onderstaande query en plak deze in Snowflake. Zorg ervoor om het **CITISIGNAAL** gegevensbestand in de hoogste linkerhoek van uw scherm te selecteren alvorens uw lijst te creëren.
 
@@ -81,17 +81,17 @@ create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
 
 Klik **creëren Lijst**.
 
-![ FAC ](./images/tb2.png)
+![&#x200B; FAC &#x200B;](./images/tb2.png)
 
 Zodra het manuscript in werking is gesteld, kunt u uw lijst onder **Gegevensbestanden > CITISIGNAL > PUBLIC** vinden.
 
-![ FAC ](./images/tb3.png)
+![&#x200B; FAC &#x200B;](./images/tb3.png)
 
 ### Tabel `--aepUserLdap--_HOUSEHOLDS`
 
 Klik **+ creëren**, dan klik **Lijst** en klik dan **Standaard**.
 
-![ FAC ](./images/tb1.png)
+![&#x200B; FAC &#x200B;](./images/tb1.png)
 
 Dan zie je dit. Kopieer de onderstaande query en plak deze in Snowflake. Zorg ervoor om het **CITISIGNAAL** gegevensbestand in de hoogste linkerhoek van uw scherm te selecteren alvorens uw lijst te creëren.
 
@@ -112,17 +112,17 @@ create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
 
 Klik **creëren Lijst**.
 
-![ FAC ](./images/tb4.png)
+![&#x200B; FAC &#x200B;](./images/tb4.png)
 
 Zodra het manuscript in werking is gesteld, kunt u uw lijst onder **Gegevensbestanden > CITISIGNAL > PUBLIC** vinden.
 
-![ FAC ](./images/tb5.png)
+![&#x200B; FAC &#x200B;](./images/tb5.png)
 
 ### Tabel `--aepUserLdap--_USERS`
 
 Klik **+ creëren**, dan klik **Lijst** en klik dan **Standaard**.
 
-![ FAC ](./images/tb1.png)
+![&#x200B; FAC &#x200B;](./images/tb1.png)
 
 Dan zie je dit. Kopieer de onderstaande query en plak deze in Snowflake. Zorg ervoor om het **CITISIGNAAL** gegevensbestand in de hoogste linkerhoek van uw scherm te selecteren alvorens uw lijst te creëren.
 
@@ -139,17 +139,17 @@ create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
 
 Klik **creëren Lijst**.
 
-![ FAC ](./images/tb6.png)
+![&#x200B; FAC &#x200B;](./images/tb6.png)
 
 Zodra het manuscript in werking is gesteld, kunt u uw lijst onder **Gegevensbestanden > CITISIGNAL > PUBLIC** vinden.
 
-![ FAC ](./images/tb7.png)
+![&#x200B; FAC &#x200B;](./images/tb7.png)
 
 ### Tabel `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Klik **+ creëren**, dan klik **Lijst** en klik dan **Standaard**.
 
-![ FAC ](./images/tb1.png)
+![&#x200B; FAC &#x200B;](./images/tb1.png)
 
 Dan zie je dit. Kopieer de onderstaande query en plak deze in Snowflake. Zorg ervoor om het **CITISIGNAAL** gegevensbestand in de hoogste linkerhoek van uw scherm te selecteren alvorens uw lijst te creëren.
 
@@ -165,17 +165,17 @@ create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
 
 Klik **creëren Lijst**.
 
-![ FAC ](./images/tb8.png)
+![&#x200B; FAC &#x200B;](./images/tb8.png)
 
 Zodra het manuscript in werking is gesteld, kunt u uw lijst onder **Gegevensbestanden > CITISIGNAL > PUBLIC** vinden.
 
-![ FAC ](./images/tb9.png)
+![&#x200B; FAC &#x200B;](./images/tb9.png)
 
 ### Tabel `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Klik **+ creëren**, dan klik **Lijst** en klik dan **Standaard**.
 
-![ FAC ](./images/tb1.png)
+![&#x200B; FAC &#x200B;](./images/tb1.png)
 
 Dan zie je dit. Kopieer de onderstaande query en plak deze in Snowflake. Zorg ervoor om het **CITISIGNAAL** gegevensbestand in de hoogste linkerhoek van uw scherm te selecteren alvorens uw lijst te creëren.
 
@@ -197,11 +197,11 @@ create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
 
 Klik **creëren Lijst**.
 
-![ FAC ](./images/tb10.png)
+![&#x200B; FAC &#x200B;](./images/tb10.png)
 
 Zodra het manuscript in werking is gesteld, kunt u uw lijst onder **Gegevensbestanden > CITISIGNAL > PUBLIC** vinden.
 
-![ FAC ](./images/tb11.png)
+![&#x200B; FAC &#x200B;](./images/tb11.png)
 
 Alle tabellen worden nu gemaakt.
 
@@ -211,11 +211,11 @@ U kunt nu voorbeeldgegevens in uw database laden.
 
 Klik **+ creëren** en selecteer dan **SQL Werkblad**.
 
-![ FAC ](./images/dataload1.png)
+![&#x200B; FAC &#x200B;](./images/dataload1.png)
 
 Dan zou u het volgende moeten hebben:
 
-![ FAC ](./images/dataload2.png)
+![&#x200B; FAC &#x200B;](./images/dataload2.png)
 
 Kopieer de onderstaande query en plak deze in het Snowflake-werkblad.
 
@@ -530,19 +530,19 @@ SELECT user_id,
 
 Dan moet je dit zien. Klik om de **dropdown** lijst te openen, en dan **te selecteren in werking stellen allen** om alle vragen uit te voeren.
 
-![ FAC ](./images/dataload3.png)
+![&#x200B; FAC &#x200B;](./images/dataload3.png)
 
 Dit zal een paar minuten duren, waarna je dit zult zien.
 
-![ FAC ](./images/dataload4.png)
+![&#x200B; FAC &#x200B;](./images/dataload4.png)
 
 Er zijn nu demo-gegevens geladen in uw Snowflake-database. U kunt de gegevens daar vrij bekijken door een tabel te openen
 
 U hebt de installatie nu voltooid in Snowflake.
 
-![ FAC ](./images/dataload5.png)
+![&#x200B; FAC &#x200B;](./images/dataload5.png)
 
-Volgende Stap: [ 1.3.2 leidt schema&#39;s, gegevensmodel en verbindingen ](./ex2.md)
+Volgende Stap: [&#x200B; 1.3.2 leidt schema&#39;s, gegevensmodel en verbindingen &#x200B;](./ex2.md)
 
 [Terug naar module 1.3](./fac.md)
 

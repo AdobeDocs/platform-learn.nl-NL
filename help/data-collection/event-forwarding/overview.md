@@ -15,7 +15,7 @@ ht-degree: 23%
 
 # Overzicht van het doorsturen van gebeurtenissen
 
-Leer hoe het door:sturen van gebeurtenissen gegevensinzameling centraliseert, de hoeveelheid code vermindert die in uw Web en mobiele apps wordt vereist, en gegevens aan niet-Adobe oplossingen via Adobe Experience Platform Edge Network stroomt. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
+Leer hoe het door:sturen van gebeurtenissen gegevensinzameling centraliseert, de hoeveelheid code vermindert die in uw Web en mobiele apps wordt vereist, en gegevens aan niet-Adobe oplossingen via Adobe Experience Platform Edge Network stroomt. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
 
 >[!NOTE]
 >

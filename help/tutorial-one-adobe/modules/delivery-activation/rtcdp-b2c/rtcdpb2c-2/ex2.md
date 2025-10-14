@@ -19,15 +19,15 @@ De AI van de klant werkt door bestaande gegevens van de Gebeurtenis van de Consu
 
 In Adobe Experience Platform, klik **Diensten** in het linkermenu. De **browser van de Diensten** verschijnt en toont alle beschikbare diensten bij uw beschikking. In de kaart voor Klant AI, klik **Open**.
 
-![ navigatie van de Dienst ](./images/navigatetoservice.png)
+![&#x200B; navigatie van de Dienst &#x200B;](./images/navigatetoservice.png)
 
 Klik **creëren instantie**.
 
-![ creeer nieuwe instantie ](./images/createnewinstance.png)
+![&#x200B; creeer nieuwe instantie &#x200B;](./images/createnewinstance.png)
 
 Dan zie je dit.
 
-![ creeer nieuwe instantie ](./images/custai1.png)
+![&#x200B; creeer nieuwe instantie &#x200B;](./images/custai1.png)
 
 
 Voer de vereiste gegevens voor de AI-instantie van de Klant in:
@@ -38,35 +38,35 @@ Voer de vereiste gegevens voor de AI-instantie van de Klant in:
 
 Klik **sparen en ga** verder.
 
-![ pagina 1 van de Opstelling ](./images/setuppage1.png)
+![&#x200B; pagina 1 van de Opstelling &#x200B;](./images/setuppage1.png)
 
 Dan zie je dit. Selecteer de dataset u in de vorige oefening creeerde die `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` wordt genoemd. Klik **toevoegen**.
 
-![ pagina 1 van de Opstelling ](./images/custai2.png)
+![&#x200B; pagina 1 van de Opstelling &#x200B;](./images/custai2.png)
 
 Dan zie je dit. u moet het **gebied van de Identiteit** bepalen. Klik **niets**.
 
-![ pagina 1 van de Opstelling ](./images/custai2a.png)
+![&#x200B; pagina 1 van de Opstelling &#x200B;](./images/custai2a.png)
 
 In popup, uitgezochte **Identiteitskaart (identityMap)** en selecteer dan het namespace **Systeem van de Demo - CRMID (crmId)**. Daarna, klik **sparen**.
 
-![ pagina 1 van de Opstelling ](./images/custai2b.png)
+![&#x200B; pagina 1 van de Opstelling &#x200B;](./images/custai2b.png)
 
 Klik **sparen en ga** verder.
 
-![ pagina 1 van de Opstelling ](./images/custai2c.png)
+![&#x200B; pagina 1 van de Opstelling &#x200B;](./images/custai2c.png)
 
 Selecteer **zal voorkomen** in uw specifieke dataset, en bepaalt het gebied **commerce.purchase.value** als doelvariabele.
 
-![ die het Doel van CAI bepalen ](./images/caidefinegoal.png)
+![&#x200B; die het Doel van CAI bepalen &#x200B;](./images/caidefinegoal.png)
 
 Daarna, plaats uw programma om **wekelijks** in werking te stellen en de tijd zo dicht mogelijk aan uw huidige tijd te plaatsen. Zorg ervoor dat de knevel **scores voor Profiel** toelaat wordt toegelaten. Klik **sparen en ga** verder.
 
-![ bepalen CAI vooruit ](./images/caiadvancepage.png)
+![&#x200B; bepalen CAI vooruit &#x200B;](./images/caiadvancepage.png)
 
 Nadat u het exemplaar vormt, kunt u het in de de dienstlijst van AI van de Klant zien en u kunt de samenvatting van de opstelling en uitvoeringsdetails ook voorproef door op de de instantielijst van de KlantAI te klikken. In het deelvenster Samenvatting worden ook foutgegevens weergegeven voor het geval er fouten zijn gevonden.
 
-![ overzicht van de de opstellingsopstelling van de Instantie ](./images/caiinstancesummary.png)
+![&#x200B; overzicht van de de opstellingsopstelling van de Instantie &#x200B;](./images/caiinstancesummary.png)
 
 >[!NOTE]
 >
@@ -74,12 +74,12 @@ Nadat u het exemplaar vormt, kunt u het in de de dienstlijst van AI van de Klant
 
 Als je model eenmaal is uitgevoerd, zie je dit.
 
-![ overzicht van de de opstellingsopstelling van de Instantie ](./images/caiinstancesummary1.png)
+![&#x200B; overzicht van de de opstellingsopstelling van de Instantie &#x200B;](./images/caiinstancesummary1.png)
 
 ## Volgende stappen
 
-Ga naar [ 2.2.3 Klant AI - het Scoren Dashboard en de Segmentatie (Voorkeur &amp; neem Actie) ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; 2.2.3 Klant AI - het Scoren Dashboard en de Segmentatie (Voorkeur &amp; neem Actie) &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ Intelligente Diensten ](./intelligent-services.md){target="_blank"}
+Ga terug naar [&#x200B; Intelligente Diensten &#x200B;](./intelligent-services.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

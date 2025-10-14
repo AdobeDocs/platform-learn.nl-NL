@@ -26,21 +26,21 @@ Dus, laten we bouwen wat we tot nu toe hebben gedaan. Overigens kunnen we soms &
 
 1. Terwijl in uw bezit in de markeringen van het Experience Platform, uitgezocht **het Publiceren Stroom** van de linkernavigatie, en voeg dan een nieuwe bibliotheek toe.
 
-   ![ het Publiceren stroom ](assets/publishing-flow-new-library.jpg)
+   ![&#x200B; het Publiceren stroom &#x200B;](assets/publishing-flow-new-library.jpg)
 
 1. Noem de bibliotheek wat u wilt, bijvoorbeeld **Aanvankelijke Migratie van SDK van het Web**.
 1. Selecteer het **milieu van de Ontwikkeling**.
 1. Selecteer **toevoegen Alle Gewijzigde Middelen** om alle punten toe te voegen die u aan hebt gewerkt.
 
-   ![ Nieuwe bibliotheek ](assets/new-library-websdk-migration.jpg)
+   ![&#x200B; Nieuwe bibliotheek &#x200B;](assets/new-library-websdk-migration.jpg)
 
 1. Opslaan en samenstellen tot ontwikkeling
 
-   ![ sparen en bouwstijl om te ontwikkelen ](assets/save-and-build-to-dev.jpg)
+   ![&#x200B; sparen en bouwstijl om te ontwikkelen &#x200B;](assets/save-and-build-to-dev.jpg)
 
 1. Wanneer de build is voltooid, kunt u zien of de build is gelukt. Plaats de muisaanwijzer op de groene stip links van de nieuwe bibliotheek in de publicatiestroom. Als de bibliotheek groen is, is de publicatie voltooid en wordt u dat verteld.
 
-   ![ Geslaagd publiceren ](assets/successful-publish.jpg)
+   ![&#x200B; Geslaagd publiceren &#x200B;](assets/successful-publish.jpg)
 
 ### Een werkbibliotheek selecteren
 
@@ -48,5 +48,5 @@ Hier is een handige sneltoets als je door bewerkingen in tags gaat. In plaats va
 
 1. Van ongeveer overal in de markeringen UI, selecteer een het werk bibliotheek van het hoogste recht van UI, en kies één u wilt. Kies bij deze zelfstudie de optie Oorspronkelijke SDK-migratie op het web.
 
-   ![ Uitgezochte werkende bibliotheek ](assets/select-working-library.jpg)
+   ![&#x200B; Uitgezochte werkende bibliotheek &#x200B;](assets/select-working-library.jpg)
 

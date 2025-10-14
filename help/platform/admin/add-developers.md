@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Ontwikkelaars toevoegen en machtigingen voor API-referenties geven
 
-Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [ documentatie van het Toegangsbeheer ](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
+Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Ontwikkelaars worden eerst toegevoegd in Admin Console. Nadat zij hun project van het Platform in de Developer Console hebben gecreeerd, wordt hun API geloofsbrieven toegewezen toestemmingen in de interface van het Platform of van Journey Optimizer. Voor meer informatie, gelieve de [&#x200B; documentatie van het Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3446404?learn=on&enablevpops&captions=dut)
 
@@ -27,4 +27,4 @@ Leer hoe u ontwikkelaars kunt toevoegen aan Adobe Experience Platform-toepassing
 
 >[!TIP]
 >
->Wij adviseren u ook de ontwikkelaar als a **gebruiker** aan het `AEP-Default-All-Users` productprofiel in Admin Console toe te voegen en dan hen toe te voegen aan de zelfde rol in de interface van het Platform zoals de API referentie. Dit staat hen toe om de interface te gebruiken, indien nodig. Zie [ gebruikers ](add-users.md) voor meer details toevoegen.
+>Wij adviseren u ook de ontwikkelaar als a **gebruiker** aan het `AEP-Default-All-Users` productprofiel in Admin Console toe te voegen en dan hen toe te voegen aan de zelfde rol in de interface van het Platform zoals de API referentie. Dit staat hen toe om de interface te gebruiken, indien nodig. Zie [&#x200B; gebruikers &#x200B;](add-users.md) voor meer details toevoegen.

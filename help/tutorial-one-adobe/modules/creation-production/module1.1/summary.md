@@ -19,6 +19,6 @@ Firefly Services is een uitgebreide reeks generatieve AI- en creatieve API&#39;s
 
 ## Volgende stappen
 
-Ga terug naar [ de Diensten van Adobe Firefly ](./firefly-services.md){target="_blank"}
+Ga terug naar [&#x200B; de Diensten van Adobe Firefly &#x200B;](./firefly-services.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}

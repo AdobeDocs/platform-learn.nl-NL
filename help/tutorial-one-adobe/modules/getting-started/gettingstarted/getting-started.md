@@ -28,7 +28,7 @@ Als u omhoog voor een opleiding op bestelling die op **Adobe Firefly Services** 
 
 - [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
 - [Uw Adobe I/O-project configureren](./ex6.md)
-- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [&#x200B; Optie 1: De opstelling van Postman &#x200B;](./ex7.md) OF [&#x200B; Optie 2: De opstelling van PostBuster &#x200B;](./ex8.md)
 - [Toepassingen om te installeren](./ex9.md)
 
 ### Pad: Workfront Fusion
@@ -37,7 +37,7 @@ Als u omhoog voor een opleiding op bestelling die op **wordt geconcentreerd de F
 
 - [De Chrome-extensie installeren voor de Experience League-documentatie](./ex1.md)
 - [Uw Adobe I/O-project configureren](./ex6.md)
-- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [&#x200B; Optie 1: De opstelling van Postman &#x200B;](./ex7.md) OF [&#x200B; Optie 2: De opstelling van PostBuster &#x200B;](./ex8.md)
 - [Toepassingen om te installeren](./ex9.md)
 
 ### Pad: AEM CS + EDS
@@ -57,7 +57,7 @@ Als u a **levende workshop** bijwoont, of als u zich voor een opleiding op beste
 - [De website gebruiken](./ex4.md)
 - [De mobiele app gebruiken](./ex5.md)
 - [Uw Adobe I/O-project configureren](./ex6.md)
-- [ Optie 1: De opstelling van Postman ](./ex7.md) OF [ Optie 2: De opstelling van PostBuster ](./ex8.md)
+- [&#x200B; Optie 1: De opstelling van Postman &#x200B;](./ex7.md) OF [&#x200B; Optie 2: De opstelling van PostBuster &#x200B;](./ex8.md)
 - [Toepassingen om te installeren](./ex9.md)
 
 ## Uitoefening
@@ -108,7 +108,7 @@ In deze oefening zult u uw omgeving van PostBuster voor interactie met diverse A
 
 In deze oefening, zult u instructies op vinden hoe te om alle toepassingen te installeren u op uw computer zult moeten hebben alvorens de zelfstudie te beginnen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

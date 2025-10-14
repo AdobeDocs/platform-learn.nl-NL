@@ -22,6 +22,6 @@ In deze module hebt u geleerd hoe u de Offer Decisioning-toepassingsservice kunt
 
 ## Volgende stappen
 
-Ga terug naar [ Beslissing van de Ervaring ](ajo-decisioning.md){target="_blank"}
+Ga terug naar [&#x200B; Beslissing van de Ervaring &#x200B;](ajo-decisioning.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

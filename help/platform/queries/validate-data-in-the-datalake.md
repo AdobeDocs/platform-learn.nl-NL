@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Gegevens valideren in de datalake
 
-Leer hoe te bevestigen als de gegevens in de datalabel met succes hebben opgenomen gebruikend de Dienst van de Vraag van Adobe Experience Platform. Voor gedetailleerde productdocumentatie, zie de [ gids UI van de Redacteur van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
+Leer hoe te bevestigen als de gegevens in de datalabel met succes hebben opgenomen gebruikend de Dienst van de Vraag van Adobe Experience Platform. Voor gedetailleerde productdocumentatie, zie de [&#x200B; gids UI van de Redacteur van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3445683?learn=on&enablevpops&captions=dut)

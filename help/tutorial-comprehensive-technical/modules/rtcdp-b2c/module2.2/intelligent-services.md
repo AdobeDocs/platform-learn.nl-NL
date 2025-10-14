@@ -24,11 +24,11 @@ In deze module leert u hoe u Adobe Experience Platform Intelligent Services kunt
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van het Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -44,7 +44,7 @@ De marketinganalist configureert de gewenste voorspellingen door bedrijfsregels 
 
 Nadat de modellen klaar zijn met training en scoring, worden de scores teruggeschreven naar Platform. U kunt bepalen welke acties u wilt uitvoeren met de voorspelling, zoals het definiëren van segmenten, het maken van aangepaste dashboards enzovoort.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

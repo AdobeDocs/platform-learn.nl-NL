@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Een tagbibliotheek maken en publiceren
 
-Leer hoe u een bibliotheek maakt in de eigenschap tag en hoe u wijzigingen doorvoert in uw ontwikkelings-, staging- en productieomgeving. Leer hoe u meerdere ontwikkelomgevingen kunt gebruiken om meerdere teams te helpen de eigenschap in parallelle werkstromen bij te werken. Voor meer informatie, zie de [ het publiceren ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=nl-NL) documentatie.
+Leer hoe u een bibliotheek maakt in de eigenschap tag en hoe u wijzigingen doorvoert in uw ontwikkelings-, staging- en productieomgeving. Leer hoe u meerdere ontwikkelomgevingen kunt gebruiken om meerdere teams te helpen de eigenschap in parallelle werkstromen bij te werken. Voor meer informatie, zie de [&#x200B; het publiceren &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=nl-NL) documentatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Bedrijfswaarde van Attributie AI
 
-In deze video wordt getoond hoe marketers marketing- en reclameuitgaven kunnen meten en optimaliseren door inzicht te krijgen in de impact van elke individuele interactie van klanten in elke fase van de reizen van de klanten met Attribution AI. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
+In deze video wordt getoond hoe marketers marketing- en reclameuitgaven kunnen meten en optimaliseren door inzicht te krijgen in de impact van elke individuele interactie van klanten in elke fase van de reizen van de klanten met Attribution AI. Voor meer informatie, gelieve de [&#x200B; documentatie van AI van de Attributie te bezoeken &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 

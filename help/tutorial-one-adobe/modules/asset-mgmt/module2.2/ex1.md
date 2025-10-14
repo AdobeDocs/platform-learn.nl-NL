@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # 1.2.1 Aan de slag met AEM Assets
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat u zich in de juiste omgeving bevindt, die u `--aepImsOrgName--` moet noemen.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat u zich in de juiste omgeving bevindt, die u `--aepImsOrgName--` moet noemen.
 
 ![AEM Assets](./images/aemassets0.png)
 
@@ -38,7 +38,7 @@ Ga de naam `--aepUserLdap--` voor uw omslag in en klik **creeer**.
 
 Open de nieuwe map. In een van de vorige exercities hebt u twee afbeeldingen gemaakt met de namen `CitiSignal - Neon Rabbit - Get On Board Now!.png` en `CitiSignal - Neon Rabbit - Timetravel now!.png` . U moet deze afbeeldingen nu in deze map uploaden als ze er nog niet zijn.
 
-Voor het geval u deze dossiers niet meer hebt, kunt u hen [ hier ](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"} downloaden.
+Voor het geval u deze dossiers niet meer hebt, kunt u hen [&#x200B; hier &#x200B;](./images/CitiSignal_Neon_Rabbit.zip){target="_blank"} downloaden.
 
 Klik **toevoegen Assets**.
 
@@ -112,8 +112,8 @@ Uw middelen zijn nu goedgekeurd in AEM Assets.
 
 ![AEM Assets](./images/aemassets23.png)
 
-Volgende Stap: [ Samenvatting &amp; Voordelen ](./summary.md){target="_blank"}
+Volgende Stap: [&#x200B; Samenvatting &amp; Voordelen &#x200B;](./summary.md){target="_blank"}
 
-Ga terug naar [ Adobe Experience Manager Assets ](./aemassets.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Experience Manager Assets &#x200B;](./aemassets.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

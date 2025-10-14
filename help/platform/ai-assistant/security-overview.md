@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Beveiligingsoverzicht van AI Assistant
 
-Dit is een overzicht van de veiligheidseigenschappen voor AI Medewerker die op het <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf"> wordt gebaseerd veiligheidsinformatieblad </a>.  Voor extra informatie, zie de [ AI Hulp privacydocumentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/privacy).
+Dit is een overzicht van de veiligheidseigenschappen voor AI Medewerker die op het <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf"> wordt gebaseerd veiligheidsinformatieblad </a>.  Voor extra informatie, zie de [&#x200B; AI Hulp privacydocumentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/privacy).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441086/?learn=on&enablevpops&captions=dut)

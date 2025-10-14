@@ -16,76 +16,76 @@ Hieronder vindt u een overzicht van de toepassingen die u op uw computer moet he
 
 ## Adobe Creative Cloud
 
-Ga naar [ https://creativecloud.adobe.com/apps/download/creative-cloud ](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
+Ga naar [&#x200B; https://creativecloud.adobe.com/apps/download/creative-cloud &#x200B;](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/cc.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/cc.png)
 
 ## Adobe Photoshop
 
 Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Photoshop op uw computer.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/psd.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/psd.png)
 
 ## Adobe Illustrator
 
 Open **Adobe Creative Cloud** app, ga naar **Apps**. Installeer Illustrator op uw computer.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/psd.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/psd.png)
 
 ## Adobe Premiere Pro
 
-Installeer Adobe Premiere Pro Beta versie op uw computer van [ https://helpx.adobe.com/nl/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/nl/premiere-pro/using/premiere-pro-beta.html)
+Installeer Adobe Premiere Pro Beta versie op uw computer van [&#x200B; https://helpx.adobe.com/nl/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/nl/premiere-pro/using/premiere-pro-beta.html)
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/prpro.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/prpro.png)
 
 Klik **Open de App van de Desktop van Creative Cloud**.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/prpro1.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/prpro1.png)
 
 Klik **installeren** op de kaart voor **Premiere Pro (Beta)** app.
 
-![ de Nieuwe Integratie van Adobe I/O ](./images/prpro2.png)
+![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/prpro2.png)
 
 ## Frame.io-overdrachtapp
 
-Ga naar [ https://frame.io/transfer ](https://frame.io/transfer) en download de versie voor uw computer.
+Ga naar [&#x200B; https://frame.io/transfer &#x200B;](https://frame.io/transfer) en download de versie voor uw computer.
 
-![ Frame.io ](./images/frameio11.png)
+![&#x200B; Frame.io &#x200B;](./images/frameio11.png)
 
 ## Visual Studio-code
 
-Ga naar [ https://code.visualstudio.com/ ](https://code.visualstudio.com/){target="_blank"}, download en installeer **Code van Visual Studio**.
+Ga naar [&#x200B; https://code.visualstudio.com/ &#x200B;](https://code.visualstudio.com/){target="_blank"}, download en installeer **Code van Visual Studio**.
 
-![ Blok ](./images/vsc1.png)
+![&#x200B; Blok &#x200B;](./images/vsc1.png)
 
 ## Teksteditor
 
-Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [ https://www.sublimetext.com/ ](https://www.sublimetext.com/){target="_blank"} gaan en deze Redacteur van Tekst downloaden en installeren.
+Als u geen toepassing van de Redacteur van de Tekst hebt, kunt u naar [&#x200B; https://www.sublimetext.com/ &#x200B;](https://www.sublimetext.com/){target="_blank"} gaan en deze Redacteur van Tekst downloaden en installeren.
 
-![ Blok ](./images/text1.png)
+![&#x200B; Blok &#x200B;](./images/text1.png)
 
 ## GitHub-account
 
-Als u nog geen rekening GitHub hebt, ga [ https://github.com/ ](https://github.com/){target="_blank"}, en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
+Als u nog geen rekening GitHub hebt, ga [&#x200B; https://github.com/ &#x200B;](https://github.com/){target="_blank"}, en klik **Teken omhoog**. Gebruik uw persoonlijke e-mailadres en maak uw account.
 
-![ Blok ](./images/git.png)
+![&#x200B; Blok &#x200B;](./images/git.png)
 
 ## GitHub Desktop
 
-Ga naar [ https://desktop.github.com/download/ ](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
+Ga naar [&#x200B; https://desktop.github.com/download/ &#x200B;](https://desktop.github.com/download/){target="_blank"}, download en installeer **Desktop van Github**.
 
-![ Blok ](./images/block1.png)
+![&#x200B; Blok &#x200B;](./images/block1.png)
 
 ## Azure Storage Explorer
 
-[ Download Microsoft Azure Storage Explorer om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
+[&#x200B; Download Microsoft Azure Storage Explorer om uw dossiers &#x200B;](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
-![ Azure Opslag ](./images/az10.png){zoomable="yes"}
+![&#x200B; Azure Opslag &#x200B;](./images/az10.png){zoomable="yes"}
 
 U hebt nu de Aan de slag module gebeëindigd.
 
 ## Volgende stappen
 
-Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+Ga terug naar [&#x200B; Begonnen het worden &#x200B;](./getting-started.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}./images
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../overview.md){target="_blank"}./images

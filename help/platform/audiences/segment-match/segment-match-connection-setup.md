@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Instellingen voor segmentovereenkomst
 
-In deze video leert u hoe u de verbinding tussen u en een partner instelt, zodat u het publiek kunt delen. Na het vormen van deze eigenschap van de Gelijke van Segment, zult u gegevens kunnen delen over en naar uw gegevenspartner. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
+In deze video leert u hoe u de verbinding tussen u en een partner instelt, zodat u het publiek kunt delen. Na het vormen van deze eigenschap van de Gelijke van Segment, zult u gegevens kunnen delen over en naar uw gegevenspartner. Voor meer informatie, gelieve te zien de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)

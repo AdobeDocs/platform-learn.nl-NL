@@ -13,13 +13,13 @@ ht-degree: 8%
 
 # 3.6.2 Landingspagina&#39;s
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.6.2.1 Abonnementenlijsten
 
@@ -224,7 +224,7 @@ De bestemmingspagina is nu gepubliceerd en kan in een e-mail worden gebruikt.
 
 In oefening 3.1 creeerde u een reis die `--aepUserLdap-- - Registration Journey` wordt genoemd.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/published.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/published.png)
 
 U moet het e-mailbericht in die reis nu bijwerken om de koppeling naar de bestemmingspagina op te nemen.
 
@@ -302,51 +302,51 @@ Uw wijzigingen zijn nu gepubliceerd en u kunt uw reis testen.
 
 ## 3.6.2.5 Test uw reis- en landingspagina
 
-Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
+Ga naar [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../datacollection/dc1.1/images/web8.png)
+![&#x200B; DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden. Ga naar **binnen Teken**
 
-![ DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 Klik **CREËREN EEN ACCOUNT**. Vul uw details in en klik **Register**.
 
-![ Demo ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
+![&#x200B; Demo &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
 U wordt nu omgeleid naar de startpagina. Open het deelvenster Profielviewer en ga naar Klantprofiel in realtime. In het deelvenster Profielviewer worden al uw persoonlijke gegevens weergegeven, zoals de zojuist toegevoegde e-mail- en telefoon-id&#39;s.
 
-![ Demo ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
+![&#x200B; Demo &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
 
 1 minuut nadat je je account hebt gemaakt, ontvang je een e-mail over het aanmaken van je account van Adobe Journey Optimizer.
 
 Klik op de koppeling in de e-mail om uw voorkeuren bij te werken.
 
-![ Opstelling van de Lancering ](./images/email.png)
+![&#x200B; Opstelling van de Lancering &#x200B;](./images/email.png)
 
 Vervolgens ziet u het formulier dat u hebt gemaakt. Laat sommige controledozen toe en klik **sparen**.
 
-![ Opstelling van de Lancering ](./images/email1.png)
+![&#x200B; Opstelling van de Lancering &#x200B;](./images/email1.png)
 
 Vervolgens wordt een bevestigingsbericht weergegeven.
 
-![ Opstelling van de Lancering ](./images/email2.png)
+![&#x200B; Opstelling van de Lancering &#x200B;](./images/email2.png)
 
 ## 3.6.2.6 Rapportage abonnementenlijst
 
@@ -364,8 +364,8 @@ Vervolgens ziet u het overzicht van de lijst, met het aantal personen dat zich e
 
 ## Volgende stappen
 
-Ga naar [ 3.6.3 AJO en GenStudio for Performance Marketing ](./ex3.md)
+Ga naar [&#x200B; 3.6.3 AJO en GenStudio for Performance Marketing &#x200B;](./ex3.md)
 
-Ga terug naar [ Adobe Journey Optimizer: Het Beheer van de inhoud ](./ajocontent.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Het Beheer van de inhoud &#x200B;](./ajocontent.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

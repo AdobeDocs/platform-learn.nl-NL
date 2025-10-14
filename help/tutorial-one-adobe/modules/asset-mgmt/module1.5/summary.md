@@ -20,6 +20,6 @@ Gefeliciteerd...
 
 ## Bekijk dit
 
-Ga terug naar [ Adobe Commerce as a Cloud Service ](./accs.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](./accs.md){target="_blank"}
 
 [Terug naar alle modules](../../../overview.md)

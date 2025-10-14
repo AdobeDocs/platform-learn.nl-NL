@@ -36,8 +36,8 @@ Laten we de voordelen van Journey Optimizer benadrukken:
 
 ## Bekijk dit
 
-- Tech Blog: [ Adobe Experience Platform Mobile SDKs Beweging aan Swift voor iOS ](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
-- Tech Blog: [ hefboomwerkings Externe Platforms van Gegevens in het Journey Orchestration van Adobe Experience Platform ](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
+- Tech Blog: [&#x200B; Adobe Experience Platform Mobile SDKs Beweging aan Swift voor iOS &#x200B;](https://medium.com/adobetech/adobe-experience-platform-mobile-sdks-move-to-swift-for-ios-6aa67b67b4d4)
+- Tech Blog: [&#x200B; hefboomwerkings Externe Platforms van Gegevens in het Journey Orchestration van Adobe Experience Platform &#x200B;](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
 
 [Terug naar module 3.4](./journeyoptimizer.md)
 

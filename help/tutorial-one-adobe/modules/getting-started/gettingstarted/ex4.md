@@ -15,52 +15,52 @@ ht-degree: 0%
 
 Na de vorige oefening, had u dit resultaat. Klik om het **project van Telco van het Web** te openen dat voor u werd gecreeerd.
 
-![ DSN ](./images/dsn5a.png)
+![&#x200B; DSN &#x200B;](./images/dsn5a.png)
 
-Voor het geval u per ongeluk uw browser venster, of voor toekomstige zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [ https://dsn.adobe.com/ ](https://dsn.adobe.com/){target="_blank"} te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **uitgeven**.
+Voor het geval u per ongeluk uw browser venster, of voor toekomstige zittingen had gesloten, kunt u tot uw websiteproject ook toegang hebben door [&#x200B; https://dsn.adobe.com/ &#x200B;](https://dsn.adobe.com/){target="_blank"} te gaan. Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **uitgeven**.
 
-![ DSN ](./images/web8.png)
+![&#x200B; DSN &#x200B;](./images/web8.png)
 
 Dan zie je dit. Klik **Integraties**.
 
-![ DSN ](./images/web1.png)
+![&#x200B; DSN &#x200B;](./images/web1.png)
 
 Op de **pagina van de Integraties**, moet u het bezit van de Inzameling van Gegevens selecteren dat in de vorige oefening werd gecreeerd. Om dat te doen, klik **Uitgezochte milieu**.
 
-![ DSN ](./images/web2.png)
+![&#x200B; DSN &#x200B;](./images/web2.png)
 
 Klik **Uitgezocht** op het bezit van de Inzameling van Gegevens dat in de vorige stap werd gecreeerd, die `--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)` wordt genoemd. Klik **sparen**.
 
-![ DSN ](./images/web2a.png)
+![&#x200B; DSN &#x200B;](./images/web2a.png)
 
 Dan zie je dit. Klik **Looppas** om de demowebsite te openen.
 
-![ DSN ](./images/web2b.png)
+![&#x200B; DSN &#x200B;](./images/web2b.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](./images/web3.png)
+![&#x200B; DSN &#x200B;](./images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](./images/web4.png)
+![&#x200B; DSN &#x200B;](./images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](./images/web5.png)
+![&#x200B; DSN &#x200B;](./images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](./images/web6.png)
+![&#x200B; DSN &#x200B;](./images/web6.png)
 
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke demonstratie, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![ DSN ](./images/web7.png)
+![&#x200B; DSN &#x200B;](./images/web7.png)
 
 ## Volgende stappen
 
-Ga naar [ Gebruik mobiele app ](./ex5.md){target="_blank"}
+Ga naar [&#x200B; Gebruik mobiele app &#x200B;](./ex5.md){target="_blank"}
 
-Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
+Ga terug naar [&#x200B; Begonnen het worden &#x200B;](./getting-started.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../overview.md){target="_blank"}

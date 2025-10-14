@@ -19,37 +19,37 @@ ht-degree: 0%
 >
 >Als u al een Azure-abonnement hebt, kunt u deze stap overslaan. Ga in dat geval verder met de volgende exercitie.
 
-Ga naar [ https://portal.azure.com ](https://portal.azure.com) en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
+Ga naar [&#x200B; https://portal.azure.com &#x200B;](https://portal.azure.com) en login met uw Azure rekening. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om je Azure-account te maken.
 
-![ 02-azure-portal-email.png ](./images/02azureportalemail.png)
+![&#x200B; 02-azure-portal-email.png &#x200B;](./images/02azureportalemail.png)
 
 Na succesvolle login zult u het volgende scherm zien:
 
-![ 03-azure-gelogd-in.png ](./images/03azureloggedin.png)
+![&#x200B; 03-azure-gelogd-in.png &#x200B;](./images/03azureloggedin.png)
 
 Klik op het aan linkermenu en selecteer **Alle Middelen**, zal het Azure abonnementsscherm verschijnen als u nog niet wordt ingetekend. In dat geval uitgezocht **Begin met een Azure vrije Proef**.
 
-![ 04-azure-start-subscribe.png ](./images/04azurestartsubscribe.png)
+![&#x200B; 04-azure-start-subscribe.png &#x200B;](./images/04azurestartsubscribe.png)
 
 Vul het Azure-abonnementsformulier in, geef uw mobiele telefoon en creditcard op voor activering (u hebt 30 dagen een gratis label en u wordt geen kosten in rekening gebracht, tenzij u een upgrade uitvoert).
 
 Als het abonnementsproces is voltooid, kunt u het beste gaan:
 
-![ 06-azure-subscription-ok.png ](./images/06azuresubscriptionok.png)
+![&#x200B; 06-azure-subscription-ok.png &#x200B;](./images/06azuresubscriptionok.png)
 
 ## Visual Code Studio installeren
 
-U zult Microsoft Visual Code Studio gebruiken om uw Azure Project te beheren. U kunt het via [ deze verbinding ](https://code.visualstudio.com/download) downloaden. Volg de installatie-instructies voor uw specifieke besturingssysteem op dezelfde website.
+U zult Microsoft Visual Code Studio gebruiken om uw Azure Project te beheren. U kunt het via [&#x200B; deze verbinding &#x200B;](https://code.visualstudio.com/download) downloaden. Volg de installatie-instructies voor uw specifieke besturingssysteem op dezelfde website.
 
 ## Visuele codeextensies installeren
 
-Installeer de Azure Functies voor de Code van Visual Studio van [ https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions ](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Klik op de knop Installeren:
+Installeer de Azure Functies voor de Code van Visual Studio van [&#x200B; https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions &#x200B;](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Klik op de knop Installeren:
 
-![ 07-azure-code-uitbreiding-install.png ](./images/07azurecodeextensioninstall.png)
+![&#x200B; 07-azure-code-uitbreiding-install.png &#x200B;](./images/07azurecodeextensioninstall.png)
 
-Installeer Azure Account en Sign-In voor de Code van Visual Studio van [ https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account ](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account). Klik op de knop Installeren:
+Installeer Azure Account en Sign-In voor de Code van Visual Studio van [&#x200B; https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account &#x200B;](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account). Klik op de knop Installeren:
 
-![ 08-azure-account-extension-install.png ](./images/08azureaccountextensioninstall.png)
+![&#x200B; 08-azure-account-extension-install.png &#x200B;](./images/08azureaccountextensioninstall.png)
 
 ## Knooppunt.js installeren
 
@@ -59,9 +59,9 @@ Installeer Azure Account en Sign-In voor de Code van Visual Studio van [ https:/
 
 ### macOS
 
-Zorg ervoor om [ eerst geïnstalleerde Homebrew ](https://brew.sh/) te hebben. Volg hier de instructies [&#128279;](https://brew.sh/).
+Zorg ervoor om [&#x200B; eerst geïnstalleerde Homebrew &#x200B;](https://brew.sh/) te hebben. Volg hier de instructies [&#128279;](https://brew.sh/).
 
-![ Knoop ](./images/brew.png)
+![&#x200B; Knoop &#x200B;](./images/brew.png)
 
 Nadat u Homebrew hebt geïnstalleerd, voert u deze opdracht uit:
 
@@ -71,7 +71,7 @@ brew install node
 
 ### Windows
 
-Download direct de [ Installateur van Vensters ](https://nodejs.org/en/#home-downloadhead) van [ nodejs.org ](https://nodejs.org/en/) website.
+Download direct de [&#x200B; Installateur van Vensters &#x200B;](https://nodejs.org/en/#home-downloadhead) van [&#x200B; nodejs.org &#x200B;](https://nodejs.org/en/) website.
 
 ## Versie van node.js verifiëren
 
@@ -128,8 +128,8 @@ brew install azure-functions-core-tools@4
 
 ## Volgende stappen
 
-Ga naar [ 2.4.2 vorm uw milieu van Microsoft Azure EventHub ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; 2.4.2 vorm uw milieu van Microsoft Azure EventHub &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Real-Time CDP: Audience Activation aan Microsoft Azure de Hub van de Gebeurtenis ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Ga terug naar [&#x200B; Real-Time CDP: Audience Activation aan Microsoft Azure de Hub van de Gebeurtenis &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

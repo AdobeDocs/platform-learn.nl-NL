@@ -17,31 +17,31 @@ Om de lessen in dit leerprogramma te visualiseren en het voor u mogelijk te make
 
 Zodra u toegang tot het Systeem van de Demo daarna hebt, ga met de onderstaande stappen te werk.
 
-Ga naar [ https://dsn.adobe.com/ ](https://dsn.adobe.com/) en navigeer aan **Opstelling**.
+Ga naar [&#x200B; https://dsn.adobe.com/ &#x200B;](https://dsn.adobe.com/) en navigeer aan **Opstelling**.
 
-![ DSN ](./images/dsnsetup.png)
+![&#x200B; DSN &#x200B;](./images/dsnsetup.png)
 
 In **Milieu** dropdown, selecteer uw instantie van Adobe Experience Platform en zandbak.
 
-![ DSN ](./images/dsnh1.png)
+![&#x200B; DSN &#x200B;](./images/dsnh1.png)
 
 Daarna, selecteer de vooraf ingestelde **Gebruiker van het Leerprogramma AEP**.
 
-![ DSN ](./images/dsnhome.png)
+![&#x200B; DSN &#x200B;](./images/dsnhome.png)
 
 Daarna, klik **Begin**.
 
-![ DSN ](./images/dsn2.png)
+![&#x200B; DSN &#x200B;](./images/dsn2.png)
 
 In popup, ga een naam voor uw eigenschappen van de Inzameling van Gegevens en de projecten van de Bouwer van de Ervaring in. Gelieve te gebruiken deze noemende overeenkomst: **Systeem van de Demo (DD/MM/JJJJ)**. FYI: de LDAP wordt automatisch toegevoegd, u hoeft deze niet zelf toe te voegen.
 
 Klik **Begin**.
 
-![ DSN ](./images/dsn3.png)
+![&#x200B; DSN &#x200B;](./images/dsn3.png)
 
 Deze pop-up toont u de voortgang tijdens het maken van uw website en mobiele app-projecten en de eigenschappen van uw gegevensverzameling.
 
-![ DSN ](./images/dsn4.png)
+![&#x200B; DSN &#x200B;](./images/dsn4.png)
 
 Zodra het snelle opstellingsproces heeft voltooid, zult u hebben:
 
@@ -51,11 +51,11 @@ Zodra het snelle opstellingsproces heeft voltooid, zult u hebben:
 - 1 eigenschap Gegevensverzameling voor web, dat u gaat gebruiken om gegevens van de website te verzamelen
 - 1 eigenschap voor gegevensverzameling voor mobiele apparaten, die u gebruikt om gegevens te verzamelen van de mobiele app
 
-![ DSN ](./images/dsn5.png)
+![&#x200B; DSN &#x200B;](./images/dsn5.png)
 
 Zorg dat dit scherm open blijft, zoals u het in de volgende stappen nodig hebt.
 
-Volgende Stap: [ creeer uw DataStream ](./ex3.md)
+Volgende Stap: [&#x200B; creeer uw DataStream &#x200B;](./ex3.md)
 
 [Terug naar Aan de slag](./getting-started.md)
 

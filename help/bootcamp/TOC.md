@@ -32,9 +32,9 @@ ht-degree: 2%
    + [2.1 Bezoek de website en maak uw account](/help/bootcamp/uc/uc2/ex1.md)
    + [2.2 Uw gebeurtenis maken](/help/bootcamp/uc/uc2/ex2.md)
    + [2.3 Uw reis- en e-mailbericht maken](/help/bootcamp/uc/uc2/ex3.md)
-   + [ 2.4 Test uw reis ](/help/bootcamp/uc/uc2/ex4.md)
-   + [ 2.5 installeer en gebruik mobiele app ](/help/bootcamp/uc/uc2/ex5.md)
-   + [ 2.6 Personalization in het vraagcentrum ](/help/bootcamp/uc/uc2/ex6.md)
+   + [&#x200B; 2.4 Test uw reis &#x200B;](/help/bootcamp/uc/uc2/ex4.md)
+   + [&#x200B; 2.5 installeer en gebruik mobiele app &#x200B;](/help/bootcamp/uc/uc2/ex5.md)
+   + [&#x200B; 2.6 Personalization in het vraagcentrum &#x200B;](/help/bootcamp/uc/uc2/ex6.md)
 + 3 - Overvloeien van fysiek en digitaal {#uc3}
    + [Overzicht](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 De mobiele app gebruiken en een baken-item activeren](/help/bootcamp/uc/uc3/ex1.md)

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Gegevens in realtime klantprofiel plaatsen
 
-Het profiel van de Klant in real time machtigt kanaalpersonalisatie door schaal door elke fase van de klantenreis. Batch- of streaming-gegevens kunnen worden ingeschakeld voor realtime klantprofiel door zowel het schema als de bijbehorende gegevensset in te schakelen. Voor gedetailleerde productdocumentatie, zie [ gegevens aan het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=nl-NL) toevoegen en [ een dataset voor Profiel met API ](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=nl-NL) vormen.
+Het profiel van de Klant in real time machtigt kanaalpersonalisatie door schaal door elke fase van de klantenreis. Batch- of streaming-gegevens kunnen worden ingeschakeld voor realtime klantprofiel door zowel het schema als de bijbehorende gegevensset in te schakelen. Voor gedetailleerde productdocumentatie, zie [&#x200B; gegevens aan het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=nl-NL) toevoegen en [&#x200B; een dataset voor Profiel met API &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=nl-NL) vormen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)

@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Eigenschappen van mobiele tags maken
 
-Leer hoe u een eigenschap voor een mobiele tag maakt in Gegevensverzameling. Voeg de Mobile Core en andere extensies toe, publiceer de configuratie in een omgeving en verwijs naar de eigenschap in uw mobiele app. Voor meer informatie, gelieve de [ Mobiele documentatie van SDK ](https://developer.adobe.com/client-sdks/documentation/) te bezoeken.
+Leer hoe u een eigenschap voor een mobiele tag maakt in Gegevensverzameling. Voeg de Mobile Core en andere extensies toe, publiceer de configuratie in een omgeving en verwijs naar de eigenschap in uw mobiele app. Voor meer informatie, gelieve de [&#x200B; Mobiele documentatie van SDK &#x200B;](https://developer.adobe.com/client-sdks/documentation/) te bezoeken.
 
 >[!NOTE]
 >

@@ -27,6 +27,6 @@ In deze module, hebt u geleerd:
 
 ## Volgende stappen
 
-Ga terug naar [ gegevens van de Stroom van Apache Kafka in Adobe Experience Platform ](./aep-apache-kafka.md){target="_blank"}
+Ga terug naar [&#x200B; gegevens van de Stroom van Apache Kafka in Adobe Experience Platform &#x200B;](./aep-apache-kafka.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

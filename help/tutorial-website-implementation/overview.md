@@ -18,7 +18,7 @@ Elke les bevat hoe te oefeningen en fundamentele informatie om u te helpen het E
 
 >[!INFO]
 >
->Deze zelfstudie gebruikt toepassingsspecifieke extensies en bibliotheken (AppMeasurement.js voor Adobe Analytics, at.js voor Adobe Target). Als u SDK van het Web van Adobe Experience Platform wilt uitvoeren, gelieve te zien [ Adobe Experience Cloud met het leerprogramma van SDK van het Web uitvoeren ](/help/tutorial-web-sdk/overview.md).
+>Deze zelfstudie gebruikt toepassingsspecifieke extensies en bibliotheken (AppMeasurement.js voor Adobe Analytics, at.js voor Adobe Target). Als u SDK van het Web van Adobe Experience Platform wilt uitvoeren, gelieve te zien [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uitvoeren &#x200B;](/help/tutorial-web-sdk/overview.md).
 
 
 Nadat u dit hebt voltooid, kunt u:
@@ -49,13 +49,13 @@ Nadat u dit hebt voltooid, kunt u:
 
 >[!NOTE]
 >
->De gelijkaardige multi-oplossing leerprogramma&#39;s zijn ook beschikbaar voor [ Web SDK ](../tutorial-web-sdk/overview.md) en [ Mobiele SDK ](../tutorial-mobile-sdk/overview.md).
+>De gelijkaardige multi-oplossing leerprogramma&#39;s zijn ook beschikbaar voor [&#x200B; Web SDK &#x200B;](../tutorial-web-sdk/overview.md) en [&#x200B; Mobiele SDK &#x200B;](../tutorial-mobile-sdk/overview.md).
 
 ## Vereisten
 
 In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen hebt om de oefeningen te voltooien. Als dat niet het geval is, moet u mogelijk contact opnemen met de beheerder van het Experience Cloud om toegang aan te vragen.
 
-* Voor tags moet u toestemming hebben om omgevingen te ontwikkelen, goed te keuren, Publish, te beheren en extensies te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL).
+* Voor tags moet u toestemming hebben om omgevingen te ontwikkelen, goed te keuren, Publish, te beheren en extensies te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL).
 * Voor Adobe Analytics moet u weten welke trackingserver u gebruikt om deze zelfstudie te voltooien.
 * Voor Audience Manager, moet u uw Audience Manager Subdomain (ook gekend als &quot;Partner Naam&quot;identiteitskaart van de Partner,&quot;of &quot;Partner Subdomain&quot;) kennen
 
@@ -73,14 +73,14 @@ Tags zijn ook een platform waarmee externe leveranciers extensies kunnen maken, 
 
 ## Informatie over de lessen
 
-In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandelswebsite met de naam Luma. De [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) heeft een rijke gegevenslaag en functionaliteit die u zal toestaan om een realistische implementatie te bouwen. U zult uw eigen markeringsbezit, in uw eigen organisatie van het Experience Cloud bouwen, en het in kaart brengen aan onze ontvangen plaats van de Luma gebruikend het Experience Cloud Debugger.
+In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandelswebsite met de naam Luma. De [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) heeft een rijke gegevenslaag en functionaliteit die u zal toestaan om een realistische implementatie te bouwen. U zult uw eigen markeringsbezit, in uw eigen organisatie van het Experience Cloud bouwen, en het in kaart brengen aan onze ontvangen plaats van de Luma gebruikend het Experience Cloud Debugger.
 
-[![ Website Luma ](images/overview-luma.png) ](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![&#x200B; Website Luma &#x200B;](images/overview-luma.png) &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## De gereedschappen ophalen
 
-1. Omdat u sommige browser-specifieke uitbreidingen zult gebruiken, adviseren wij de voltooiing van het leerprogramma gebruikend [ Browser van het Web van Chrome ](https://www.google.com/chrome/)
-1. Voeg de [ Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding aan uw browser van Chrome toe
+1. Omdat u sommige browser-specifieke uitbreidingen zult gebruiken, adviseren wij de voltooiing van het leerprogramma gebruikend [&#x200B; Browser van het Web van Chrome &#x200B;](https://www.google.com/chrome/)
+1. Voeg de [&#x200B; Adobe Experience Platform Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) uitbreiding aan uw browser van Chrome toe
 1. De HTML-voorbeeldpaginacode kopiëren
 
    +++HTML-voorbeeldcode
@@ -132,8 +132,8 @@ In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandel
 
    +++
 
-1. Hiermee krijgt u een teksteditor waarin u wijzigingen kunt aanbrengen in de HTML-voorbeeldpagina. (Als u geen hebt, adviseren wij het proberen [ Haakjes ](https://brackets.io/))
-1. Bladwijzer de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Hiermee krijgt u een teksteditor waarin u wijzigingen kunt aanbrengen in de HTML-voorbeeldpagina. (Als u geen hebt, adviseren wij het proberen [&#x200B; Haakjes &#x200B;](https://brackets.io/))
+1. Bladwijzer de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 >[!NOTE]
 >

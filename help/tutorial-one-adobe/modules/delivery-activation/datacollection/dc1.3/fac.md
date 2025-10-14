@@ -31,7 +31,7 @@ Federated Audience Composition biedt Real-Time CDP- en Journey Optimizer-klanten
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot een Snowflake-gegevenspakhuis
 
 ## Uitoefening
@@ -52,7 +52,7 @@ In deze oefening, zult u uw gegevensmodel in AEP voor de gefederaliseerde gegeve
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

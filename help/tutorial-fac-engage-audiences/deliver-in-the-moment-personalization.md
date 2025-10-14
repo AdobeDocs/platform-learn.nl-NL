@@ -16,17 +16,17 @@ ht-degree: 0%
 
 # Lever &#39;op het moment&#39; personalisatie met Edge Network
 
-De Federatieve Samenstelling van het Publiek laat u toe om bestaand publiek in Adobe Experience Platform (AEP) te verrijken door samengestelde publieksgegevens te gebruiken die van het entrepot van ondernemingsgegevens zijn gefederaliseerd. Dit gegeven zal niet in Adobe Experience Platform worden voortgeduurd maar u kunt de [ gebeurtenis gebruiken die ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} mogelijkheden door:sturen om deze gegevens naar uw gegevenspakhuis te verzenden.
+De Federatieve Samenstelling van het Publiek laat u toe om bestaand publiek in Adobe Experience Platform (AEP) te verrijken door samengestelde publieksgegevens te gebruiken die van het entrepot van ondernemingsgegevens zijn gefederaliseerd. Dit gegeven zal niet in Adobe Experience Platform worden voortgeduurd maar u kunt de [&#x200B; gebeurtenis gebruiken die &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} mogelijkheden door:sturen om deze gegevens naar uw gegevenspakhuis te verzenden.
 
 In deze oefening, gebruiken wij een gefedereerd publiek dat met kredietscore en leningsactiviteit wordt gevraagd om het gedragspubliek van de bezoekers van de de toepassingswebpagina van de lening te verrijken.
 
 Door dit publiek op de Edge te evalueren, richten we de vooraf goedgekeurde bezoekers van de pagina&#39;s voor de toepassing van leningen onmiddellijk opnieuw op met persoonlijke aanbiedingen op de site.
 
-![ rand-publiek-verrijkt ](assets/edge-audience-enrich.png)
+![&#x200B; rand-publiek-verrijkt &#x200B;](assets/edge-audience-enrich.png)
 
 ## Stappen
 
 1. **sparen en Begin** uw gefedereerde publiekssamenstelling. Zodra de samenstelling is gelopen, zal het gefedereerde publiek in het publieksportaal verschijnen.
 2. **bouwt een publieksregel** gebruikend profielattributen en ervaringsgebeurtenissen van de Dienst van het Profiel, die uw gefedereerd publiek opnemen.
 
-Laten wij dit met a [ samenvatting van lessen en definitieve meta&#39;s ](conclusion.md) samenvatten!
+Laten wij dit met a [&#x200B; samenvatting van lessen en definitieve meta&#39;s &#x200B;](conclusion.md) samenvatten!

@@ -20,6 +20,6 @@ Gefeliciteerd...
 
 ## Bekijk dit
 
-Ga terug naar [ Inleiding aan de Planning van Workfront ](./wfplanning.md){target="_blank"}
+Ga terug naar [&#x200B; Inleiding aan de Planning van Workfront &#x200B;](./wfplanning.md){target="_blank"}
 
 [Terug naar alle modules](../../../overview.md)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Tijdbeperkingen in segmentdefinities gebruiken
 
-Leer hoe u de verschillende datum- en tijdopties gebruikt in de Adobe Experience Platform-interface voor het maken van publiek. Gebruik datums in profielkenmerken om een publiek te maken voor mensen met een geboortedatum. Gebruik datums in gebeurtenissen om een publiek te maken voor mensen die meerdere aankopen hebben gedaan in een bepaald tijdsbestek of binnen een bepaald tijdsbestek geen actie hebben ondernomen. Voor meer informatie, zie de [ gids UI van de Bouwer van het Segment ](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/ui/segment-builder).
+Leer hoe u de verschillende datum- en tijdopties gebruikt in de Adobe Experience Platform-interface voor het maken van publiek. Gebruik datums in profielkenmerken om een publiek te maken voor mensen met een geboortedatum. Gebruik datums in gebeurtenissen om een publiek te maken voor mensen die meerdere aankopen hebben gedaan in een bepaald tijdsbestek of binnen een bepaald tijdsbestek geen actie hebben ondernomen. Voor meer informatie, zie de [&#x200B; gids UI van de Bouwer van het Segment &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/segmentation/ui/segment-builder).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

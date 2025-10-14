@@ -26,41 +26,41 @@ Platform is een omgeving waarin het woord klant breder is dan alleen de bekende 
 
 ## Vervoersstroom voor klanten
 
-Ga naar [ https://bootcamp.aepdemo.net ](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Klik **allen** toestaan.
+Ga naar [&#x200B; https://bootcamp.aepdemo.net &#x200B;](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Klik **allen** toestaan.
 
-![ DSN ](./images/web8.png)
+![&#x200B; DSN &#x200B;](./images/web8.png)
 
 Klik op het Adobe-logopictogram in de linkerbovenhoek van het scherm om de Profile Viewer te openen.
 
-![ Demo ](./images/pv1.png)
+![&#x200B; Demo &#x200B;](./images/pv1.png)
 
 Heb een blik bij het paneel van de Kijker van het Profiel en het Profiel van de Klant in real time met **identiteitskaart van het Experience Cloud** als primaire herkenningsteken voor deze momenteel onbekende klant.
 
-![ Demo ](./images/pv2.png)
+![&#x200B; Demo &#x200B;](./images/pv2.png)
 
 U kunt ook alle Experience Events zien die zijn verzameld op basis van het gedrag van de klant. De lijst is momenteel leeg, maar dat zal binnenkort veranderen.
 
-![ Demo ](./images/pv3.png)
+![&#x200B; Demo &#x200B;](./images/pv3.png)
 
 Ga naar de **menuoptie van de Diensten van de Toepassing 0&rbrace; &lbrace;en klik op het product** Real-Time CDP **.**
 
-![ Demo ](./images/pv4.png)
+![&#x200B; Demo &#x200B;](./images/pv4.png)
 
 Vervolgens ziet u de pagina met productdetails. Een Gebeurtenis van de Ervaring van type **Mening van het Product** is nu verzonden naar Adobe Experience Platform gebruikend de implementatie van SDK van het Web die u in Module 1 herzien. Open het paneel van de Kijker van het Profiel en heb een blik bij uw **Gebeurtenissen van de Ervaring**.
 
-![ Demo ](./images/pv5.png)
+![&#x200B; Demo &#x200B;](./images/pv5.png)
 
 Ga naar de **menuoptie van de Diensten van de Toepassing 0&rbrace; &lbrace;en klik op het product** Adobe Journey Optimizer **.** Er is een andere Experience Event verzonden naar Adobe Experience Platform.
 
-![ Demo ](./images/pv7.png)
+![&#x200B; Demo &#x200B;](./images/pv7.png)
 
 Open het deelvenster Profielviewer. U zult nu 2 Gebeurtenissen van de Ervaring van type **Mening van het Product** zien. Terwijl het gedrag anoniem is, wordt elke klik gevolgd en in Adobe Experience Platform opgeslagen. Zodra de anonieme klant wordt gekend, zullen wij al anoniem gedrag automatisch aan het knowhowprofiel kunnen samenvoegen.
 
-![ Demo ](./images/pv8.png)
+![&#x200B; Demo &#x200B;](./images/pv8.png)
 
 Analyseer nu uw klantenprofiel en gebruik dan uw gedrag om uw klantenervaring op de website te personaliseren.
 
-Volgende Stap: [ 1.2 visualiseer uw eigen real-time klantenprofiel - UI ](./ex2.md)
+Volgende Stap: [&#x200B; 1.2 visualiseer uw eigen real-time klantenprofiel - UI &#x200B;](./ex2.md)
 
 [Ga terug naar gebruikersstroom 1](./uc1.md)
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer hoe u een verbinding instelt en gegevens verzendt naar de Azure Blob Storage-bestemming in Real-Time Customer Data Platform. Deze bestemming steunt het uitvoeren datasets en publiek, en staat u toe om de dossierkopballen en gegevensattributen aan te passen.
 
-Voor meer informatie, gelieve de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob) te bezoeken.
+Voor meer informatie, gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

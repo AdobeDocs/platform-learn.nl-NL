@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Inleiding tot Attribution AI
 
-Een overzicht op hoog niveau van hoe marketers en analisten Attribution AI kunnen gebruiken om het effect van hun marketing kanalen en campagnes te begrijpen. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
+Een overzicht op hoog niveau van hoe marketers en analisten Attribution AI kunnen gebruiken om het effect van hun marketing kanalen en campagnes te begrijpen. Voor meer informatie, gelieve de [&#x200B; documentatie van AI van de Attributie te bezoeken &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

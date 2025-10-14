@@ -58,8 +58,8 @@ De volgende video geeft een overzicht van de Adobe Experience Platform Web SDK e
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on&enablevpops)
 
-Nu u de verschillen op hoog niveau tussen at.js en het Web SDK van het Platform begrijpt, kunt u [ de migratie ](plan-migration.md) plannen.
+Nu u de verschillen op hoog niveau tussen at.js en het Web SDK van het Platform begrijpt, kunt u [&#x200B; de migratie &#x200B;](plan-migration.md) plannen.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

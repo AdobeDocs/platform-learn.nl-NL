@@ -16,6 +16,6 @@ ht-degree: 2%
 
 # Schema&#39;s bijwerken
 
-In deze video worden enkele basiszaken besproken die u in acht moet nemen wanneer u bestaande schema&#39;s in Adobe Experience Platform bijwerkt. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
+In deze video worden enkele basiszaken besproken die u in acht moet nemen wanneer u bestaande schema&#39;s in Adobe Experience Platform bijwerkt. Voor meer informatie, gelieve de [&#x200B; schemadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333612?learn=on&enablevpops)

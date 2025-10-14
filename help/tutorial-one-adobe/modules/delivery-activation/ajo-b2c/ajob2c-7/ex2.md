@@ -25,18 +25,18 @@ In deze oefening, zult u vier **Gepersonaliseerde Aanbiedingen** creëren. Hier 
 
 {style="table-layout:auto"}
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## Volgende stappen
 
-Ga naar [ 3.7.3 de opstelling van SDK van het Web voor Ervaring het Beslissen ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; 3.7.3 de opstelling van SDK van het Web voor Ervaring het Beslissen &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ Beslissing van de Ervaring ](ajo-decisioning.md){target="_blank"}
+Ga terug naar [&#x200B; Beslissing van de Ervaring &#x200B;](ajo-decisioning.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

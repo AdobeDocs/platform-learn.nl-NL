@@ -26,8 +26,8 @@ Laat ons de voordelen van het Profiel van de Klant benadrukken In real time:
 
 ## Bekijk dit
 
-- Tech Blog: [ de Grafiek van de Identiteit van Adobe Experience Platform is de Stichting voor het Verenigde Profiel ](https://medium.com/adobetech/adobe-experience-platform-identity-graph-is-the-foundation-for-the-unified-profile-e8435d26dce7)
-- Tech Blog: [ de Identiteitsdienst van Adobe Experience Platform — hoe te om de Identiteit van de Klant op te lossen Conundrum ](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
+- Tech Blog: [&#x200B; de Grafiek van de Identiteit van Adobe Experience Platform is de Stichting voor het Verenigde Profiel &#x200B;](https://medium.com/adobetech/adobe-experience-platform-identity-graph-is-the-foundation-for-the-unified-profile-e8435d26dce7)
+- Tech Blog: [&#x200B; de Identiteitsdienst van Adobe Experience Platform — hoe te om de Identiteit van de Klant op te lossen Conundrum &#x200B;](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

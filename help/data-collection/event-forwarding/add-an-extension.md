@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een extensie voor het doorsturen van gebeurtenissen toevoegen
 
-Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
+Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
 
 >[!NOTE]
 >

@@ -20,7 +20,7 @@ Leer hoe u uw on-page Adobe Target-implementatie kunt vervangen om te migreren v
 
 >[!NOTE]
 >
->De gegeven voorbeelden zijn ter illustratie en uw daadwerkelijke implementatie van het Doel kan variëren. Als uw bestaande implementatie van het Doel de markeringsmanager van de Inzameling van Gegevens van de Adobe gebruikt, kunt u ook naar het [ de implementatieleerprogramma van het Doel van het Web SDK van het Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=nl-NL) voor extra informatie verwijzen.
+>De gegeven voorbeelden zijn ter illustratie en uw daadwerkelijke implementatie van het Doel kan variëren. Als uw bestaande implementatie van het Doel de markeringsmanager van de Inzameling van Gegevens van de Adobe gebruikt, kunt u ook naar het [&#x200B; de implementatieleerprogramma van het Doel van het Web SDK van het Platform &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=nl-NL) voor extra informatie verwijzen.
 
 
 ## Doelbeheerinstellingen controleren
@@ -52,7 +52,7 @@ De SDK van het Web van het Platform gebruikt een configuratie van de gegevensstr
 >
 >Als identiteitskaart van het Milieu niet in de gegevensstroomconfiguratie wordt gespecificeerd, dan gebruikt het Doel de domein-aan-milieu afbeelding zoals die in de **wordt gespecificeerd Gastheren** sectie.
 
-Voor meer informatie, verwijs naar de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=nl-NL#target) gids van de de configuratie van de 0&rbrace; datastream en van het Doel [ Gastheren ](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=nl-NL) documentatie.
+Voor meer informatie, verwijs naar de [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=nl-NL#target) gids van de de configuratie van de 0&rbrace; datastream en van het Doel [&#x200B; Gastheren &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=nl-NL) documentatie.
 
 ## De SDK van het Web Platform implementeren
 
@@ -166,14 +166,14 @@ En vervang dit door een geldige JavsScript-bibliotheek of door uw tags insluitco
 
 Voeg in de eigenschap tag de extensie Adobe Experience Platform Web SDK toe:
 
-![ voeg de uitbreiding van SDK van het Web van Adobe Experience Platform ](assets/library-tags-addExtension.png){zoomable="yes"} toe
+![&#x200B; voeg de uitbreiding van SDK van het Web van Adobe Experience Platform &#x200B;](assets/library-tags-addExtension.png){zoomable="yes"} toe
 
 
 >[!ENDTABS]
 
 Voor de vooraf samengestelde zelfstandige versie is een &quot;basiscode&quot; vereist die rechtstreeks aan de pagina wordt toegevoegd en die een algemene functie met de naam legering maakt. Gebruik deze functie om te communiceren met de SDK. Als u de algemene functie een andere naam wilt geven, wijzigt u de naam `alloy` .
 
-Verwijs naar [ Installerend de 1&rbrace; documentatie van SDK van het Web van het Platform &lbrace;voor extra details en plaatsingsopties.](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=nl-NL)
+Verwijs naar [&#x200B; Installerend de 1&rbrace; documentatie van SDK van het Web van het Platform &lbrace;voor extra details en plaatsingsopties.](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=nl-NL)
 
 
 ## Inhoud vooraf verbergen-benadering bijwerken
@@ -213,9 +213,9 @@ Het gedrag voor het voorverbergen wordt bepaald door twee configuraties helemaal
 
 De Adobe adviseert asynchroon het uitvoeren van het Web SDK van het Platform voor de beste algemene paginaprestaties. Als de insluitcode van de bibliotheek alloy.js of -tags echter synchroon wordt geladen, is het voorverborgen fragment niet vereist. In plaats daarvan, wordt de prehide stijl gespecificeerd in de configuratie van SDK van het Web van het Platform.
 
-De prehide stijl voor synchrone implementaties kan worden gevormd gebruikend de [`prehidingStyle` ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL#prehidingStyle) optie. De configuratie van SDK van het Web van het platform is behandeld in de volgende sectie.
+De prehide stijl voor synchrone implementaties kan worden gevormd gebruikend de [`prehidingStyle` &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL#prehidingStyle) optie. De configuratie van SDK van het Web van het platform is behandeld in de volgende sectie.
 
-Om meer over te leren hoe SDK van het Web van het Platform flikkering kan beheren, kunt u naar de gidsensectie verwijzen: [ die flicker voor gepersonaliseerde ervaringen beheert ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=nl-NL)
+Om meer over te leren hoe SDK van het Web van het Platform flikkering kan beheren, kunt u naar de gidsensectie verwijzen: [&#x200B; die flicker voor gepersonaliseerde ervaringen beheert &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=nl-NL)
 
 ## Vorm de SDK van het Web van het Platform
 
@@ -238,7 +238,7 @@ alloy("configure", {
 
 In labels-implementaties worden veel velden automatisch ingevuld of kunnen deze worden geselecteerd in vervolgkeuzemenu&#39;s. U kunt verschillende platforms [!UICONTROL sandboxes] en [!UICONTROL datastreams] selecteren voor elke omgeving. De gegevensstroom wordt gewijzigd op basis van de status van de tagbibliotheek tijdens het publicatieproces.
 
-![ vormend de de markeringsuitbreiding van SDK van het Web ](assets/tags-config.png){zoomable="yes"}
+![&#x200B; vormend de de markeringsuitbreiding van SDK van het Web &#x200B;](assets/tags-config.png){zoomable="yes"}
 >[!ENDTABS]
 
 Als u van om van at.js aan het Web SDK van het Platform op een pagina-door-pagina basis van plan bent te migreren, dan worden de volgende configuratieopties vereist:
@@ -259,7 +259,7 @@ alloy("configure", {
 
 >[!TAB  Markeringen ]
 
-![ vormend de de migratieopties van de de marktextensie van SDK van het Web ](assets/tags-config-migration.png){zoomable="yes"}
+![&#x200B; vormend de de migratieopties van de de marktextensie van SDK van het Web &#x200B;](assets/tags-config-migration.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -274,7 +274,7 @@ De belangrijkste configuratieopties met betrekking tot Target worden hieronder b
 | `thirdPartyCookiesEnabled` | Hiermee schakelt u het instellen van cookies van derden voor de Adobe in. De SDK kan de bezoekersidentiteitskaart in een derdecontext voortzetten om de zelfde bezoekersidentiteitskaart toe te laten om over plaatsen worden gebruikt. Gebruik deze optie als u meerdere sites hebt, maar deze optie is soms niet gewenst vanwege privacyredenen. | `true` |
 | `prehidingStyle` | Wordt gebruikt om een CSS-stijldefinitie te maken die inhoudsgebieden van uw webpagina verbergt terwijl gepersonaliseerde inhoud van de server wordt geladen. Dit wordt slechts gebruikt met synchrone plaatsingen van SDK. | `body { opacity: 0 !important }` |
 
-Voor een volledige lijst van opties, verwijs naar [ vormend de gids van SDK van het Web van het Platform ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL).
+Voor een volledige lijst van opties, verwijs naar [&#x200B; vormend de gids van SDK van het Web van het Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=nl-NL).
 
 ## Voorbeeld van implementatie
 
@@ -384,10 +384,10 @@ Paginacode:
 
 Voeg de extensie Adobe Experience Platform Web SDK toe aan tags:
 
-![ voeg de uitbreiding van SDK van het Web van Adobe Experience Platform ](assets/library-tags-addExtension.png){zoomable="yes"} toe
+![&#x200B; voeg de uitbreiding van SDK van het Web van Adobe Experience Platform &#x200B;](assets/library-tags-addExtension.png){zoomable="yes"} toe
 
 Voeg de gewenste configuraties toe:
-![ vormend de de migratieopties van de de marktextensie van SDK van het Web ](assets/tags-config-migration.png){zoomable="yes"}
+![&#x200B; vormend de de migratieopties van de de marktextensie van SDK van het Web &#x200B;](assets/tags-config-migration.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -396,8 +396,8 @@ Voeg de gewenste configuraties toe:
 
 Het is belangrijk om op te merken dat eenvoudig het omvatten van en het vormen van de bibliotheek van SDK van het Web van het Platform zoals hierboven getoond geen netwerkvraag aan het Netwerk van Adobe Edge uitvoert.
 
-Daarna, leer hoe te [ verzoeken en op VEC-Gebaseerde activiteiten ](render-vec-activities.md) op de pagina toepassen.
+Daarna, leer hoe te [&#x200B; verzoeken en op VEC-Gebaseerde activiteiten &#x200B;](render-vec-activities.md) op de pagina toepassen.
 
 >[!NOTE]
 >
->Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>Wij zijn geëngageerd om u met uw migratie van het Doel van at.js aan Web SDK te helpen succesvol zijn. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

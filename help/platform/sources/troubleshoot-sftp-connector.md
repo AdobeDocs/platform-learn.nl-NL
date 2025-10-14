@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Problemen oplossen: kan geen verbinding maken met SFTP-bronconnector
 
-Leer beste praktijken om verbindingskwesties met de bron SFTP schakelaar te vermijden. Controleer de specifieke controlepunten om uw SFTP-server met succes te verbinden met Adobe Experience Platform. Voor meer informatie, zie de [ documentatie van de bron van SFTP bron ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=nl-NL).
+Leer beste praktijken om verbindingskwesties met de bron SFTP schakelaar te vermijden. Controleer de specifieke controlepunten om uw SFTP-server met succes te verbinden met Adobe Experience Platform. Voor meer informatie, zie de [&#x200B; documentatie van de bron van SFTP bron &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443477?learn=on&enablevpops&captions=dut)

@@ -23,18 +23,18 @@ ht-degree: 1%
 
 ## Uitoefening
 
-[ 1.2.1 die met AEM Assets ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.2.1 die met AEM Assets &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u een aantal basismontages in Adobe Experience Manager Assets vestigen.
 
-[ Samenvatting en voordelen ](./summary.md){target="_blank"}
+[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}

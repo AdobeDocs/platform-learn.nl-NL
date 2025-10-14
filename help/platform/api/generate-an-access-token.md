@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Experience Platform API-toegangstoken genereren met Postman
 
-Gebruik [ de Dienst APIs van Identity Management van Adobe ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims?lang=nl) om een Token van de Toegang te verkrijgen om tot Adobe Experience Platform APIs toegang te hebben.
+Gebruik [&#x200B; de Dienst APIs van Identity Management van Adobe &#x200B;](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims?lang=nl) om een Token van de Toegang te verkrijgen om tot Adobe Experience Platform APIs toegang te hebben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
 

@@ -51,38 +51,38 @@ and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identifica
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
 ```
 
-Navigeer aan Adobe Experience Platform UI - [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform)
+Navigeer aan Adobe Experience Platform UI - [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform)
 
 U zoekt naar de uitgevoerde instructie in de gebruikersinterface van de Adobe Experience Platform-query door uw LDAP in te voeren in het zoekveld:
 
 Selecteer **Vragen**, ga naar **Logboek** en ga uw ldap op het onderzoeksgebied in.
 
-![ onderzoek-vraag-voor-ctas.png ](./images/searchqueryforctas.png)
+![&#x200B; onderzoek-vraag-voor-ctas.png &#x200B;](./images/searchqueryforctas.png)
 
 Selecteer uw vraag en klik **Looppas als CTAS**.
 
-![ onderzoek-vraag-voor-ctas.png ](./images/searchqueryforctasa.png)
+![&#x200B; onderzoek-vraag-voor-ctas.png &#x200B;](./images/searchqueryforctasa.png)
 
 Ga `--aepUserLdap-- Callcenter Interaction Analysis` als naam en beschrijving voor de dataset in en klik **Looppas als CTAS**.
 
-![ create-ctas-dataset.png ](./images/createctasdataset.png)
+![&#x200B; create-ctas-dataset.png &#x200B;](./images/createctasdataset.png)
 
 Dientengevolge, zult u een nieuwe vraag met een status **Voorgelegd** zien.
 
-![ ctas-query-submitted.png ](./images/ctasquerysubmitted.png)
+![&#x200B; ctas-query-submitted.png &#x200B;](./images/ctasquerysubmitted.png)
 
 Op voltooiing, zult u een nieuwe ingang voor **Gemaakte Dataset** zien (u zou de pagina kunnen moeten verfrissen).
 
-![ ctas-dataset-created.png ](./images/ctasdatasetcreated.png)
+![&#x200B; ctas-dataset-created.png &#x200B;](./images/ctasdatasetcreated.png)
 
 Zodra uw dataset wordt gecreeerd (die 5-10 minuten kan vergen), kunt u de oefening voortzetten.
 
 ## Volgende stappen
 
-Ga naar Optie A: [ 2.1.6 de Dienst van de Vraag en Power BI ](./ex6.md){target="_blank"}
+Ga naar Optie A: [&#x200B; 2.1.6 de Dienst van de Vraag en Power BI &#x200B;](./ex6.md){target="_blank"}
 
-Ga naar Optie B: [ 2.1.7 de Dienst van de Vraag en Tableau ](./ex7.md){target="_blank"}
+Ga naar Optie B: [&#x200B; 2.1.7 de Dienst van de Vraag en Tableau &#x200B;](./ex7.md){target="_blank"}
 
-Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
+Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

@@ -30,53 +30,53 @@ Hieronder vindt u een voorbeeld van dergelijke waarden. Deze waarden kunnen mome
 
 In de onderstaande schermafbeelding ziet u bijvoorbeeld een verwijzing naar `aepTenantId` .
 
-![ DSN ](./images/mod7before.png)
+![&#x200B; DSN &#x200B;](./images/mod7before.png)
 
 Nadat de extensie is geïnstalleerd, wordt dezelfde tekst automatisch gewijzigd om de instantiespecifieke waarden weer te geven.
 
-![ DSN ](./images/mod7.png)
+![&#x200B; DSN &#x200B;](./images/mod7.png)
 
 ## De Chrome-extensie installeren
 
-Om die uitbreiding van Chrome te installeren, open uw browser van Chrome en ga naar: [ https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi ](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Dan zie je dit.
+Om die uitbreiding van Chrome te installeren, open uw browser van Chrome en ga naar: [&#x200B; https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi &#x200B;](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Dan zie je dit.
 
 Klik **toevoegen aan Chrome**.
 
-![ DSN ](./images/c2.png)
+![&#x200B; DSN &#x200B;](./images/c2.png)
 
 Dan zie je dit. Klik **toevoegen uitbreiding**.
 
-![ DSN ](./images/c3.png)
+![&#x200B; DSN &#x200B;](./images/c3.png)
 
 De extensie wordt dan geïnstalleerd en u ziet een vergelijkbare melding.
 
-![ DSN ](./images/c4.png)
+![&#x200B; DSN &#x200B;](./images/c4.png)
 
 In het **menu van uitbreidingen**, klik het **puzzelstuk** pictogram en speld het **Platform Leren - de uitbreiding van de Configuratie** aan het uitbreidingsmenu.
 
-![ DSN ](./images/c6.png)
+![&#x200B; DSN &#x200B;](./images/c6.png)
 
 ## De Chrome-extensie configureren
 
-Ga naar [ https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview) en klik dan het uitbreidingspictogram om het te openen.
+Ga naar [&#x200B; https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/overview) en klik dan het uitbreidingspictogram om het te openen.
 
-![ DSN ](./images/tuthome.png)
+![&#x200B; DSN &#x200B;](./images/tuthome.png)
 
 Dan zie je deze popup. Klik op het pictogram **+** .
 
-![ DSN ](./images/c7.png)
+![&#x200B; DSN &#x200B;](./images/c7.png)
 
 Voer de waarden in zoals hieronder aangegeven. Deze zijn allemaal gerelateerd aan uw Adobe Experience Platform-exemplaar.
 
-![ DSN ](./images/c8.png)
+![&#x200B; DSN &#x200B;](./images/c8.png)
 
 Als u niet zeker weet welke waarden u voor deze velden moet invoeren, volgt u de onderstaande aanwijzingen.
 
 **Adobe Experience Platform IMS Org Name**
 
-Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u de naam van uw instantie in de hoogste juiste hoek van uw scherm vinden.
+Wanneer u login aan uw instantie van Adobe Experience Platform op [&#x200B; https://platform.adobe.com/ &#x200B;](https://platform.adobe.com/), zult u de naam van uw instantie in de hoogste juiste hoek van uw scherm vinden.
 
-![ DSN ](./images/aepname.png)
+![&#x200B; DSN &#x200B;](./images/aepname.png)
 
 **Adobe Experience Platform IMS Org ID**
 
@@ -84,35 +84,35 @@ De IMS-organisatie-id is de unieke id voor uw Adobe Experience Cloud-instantie e
 
 U kunt uw IMS-organisatie-id op meerdere manieren zoeken. Als u niet zeker bent, controleer met één van de systeembeheerders van uw instantie om identiteitskaart te vinden.
 
-U kunt het vinden door naar [ Admin Console ](https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
+U kunt het vinden door naar [&#x200B; Admin Console &#x200B;](https://adminconsole.adobe.com/) te gaan, waar u het als deel van URL kunt vinden.
 
-![ DSN ](./images/aepid1.png)
+![&#x200B; DSN &#x200B;](./images/aepid1.png)
 
 U kunt het ook vinden door **het Beheer van Gegevens > Vragen** in uw menu van Adobe Experience Platform te gaan, waar u het onder **Gebruikersnaam** kunt vinden.
 
-![ DSN ](./images/aepid2.png)
+![&#x200B; DSN &#x200B;](./images/aepid2.png)
 
 Kopieer en plak het **@AdobeOrg** -onderdeel samen met de id.
 
 **identiteitskaart van de HTENT van Adobe Experience Platform**
 
-Uw Tenant-id is de unieke id voor het Adobe Experience Platform-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+Uw Tenant-id is de unieke id voor het Adobe Experience Platform-exemplaar van uw organisatie. Wanneer u login aan uw instantie van Adobe Experience Platform op [&#x200B; https://platform.adobe.com/ &#x200B;](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
-![ DSN ](./images/aeptenantid.png)
+![&#x200B; DSN &#x200B;](./images/aeptenantid.png)
 
 Wanneer u het in de uitbreiding van Chrome ingaat, zou u moeten ervoor zorgen dat een onderstrepingsteken als prefix wordt toegevoegd, zodat in dit voorbeeld **ervaringsplatform** **_experiencePlatform** wordt. Ook, zorg ervoor om het **@** symbool te verwijderen wanneer het kopiëren van URL.
 
 **Naam van zandbak van Adobe Experience Platform**
 
-De naam van de sandbox is de naam van de omgeving die u in uw Adobe Experience Platform-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [ https://platform.adobe.com/ ](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
+De naam van de sandbox is de naam van de omgeving die u in uw Adobe Experience Platform-instantie gebruikt. Wanneer u login aan uw instantie van Adobe Experience Platform op [&#x200B; https://platform.adobe.com/ &#x200B;](https://platform.adobe.com/), zult u huurder identiteitskaart in URL vinden.
 
 Voordat u de naam van de sandbox opgeeft van de URL, moet u ervoor zorgen dat u zich in de sandbox bevindt die u voor deze zelfstudie moet gebruiken. U kunt naar de rechtersandbox schakelen door op het menu met sandboxswitches in de rechterbovenhoek van het scherm te klikken.
 
-![ DSN ](./images/aepsandboxsw.png)
+![&#x200B; DSN &#x200B;](./images/aepsandboxsw.png)
 
 In dit voorbeeld, is de Naam van de zandbak van Adobe Experience Platform **technologie-insiders**.
 
-![ DSN ](./images/aepsname.png)
+![&#x200B; DSN &#x200B;](./images/aepsname.png)
 
 **Uw LDAP**
 
@@ -123,28 +123,28 @@ LDAP wordt gebruikt om ervoor te zorgen dat de configuratie u zult doen met u ve
 Uw waarden moeten er ongeveer zo uitzien.
 Tot slot klik **creeer Nieuw**.
 
-![ DSN ](./images/c8a.png)
+![&#x200B; DSN &#x200B;](./images/c8a.png)
 
 
 In het linkermenu van de extensie ziet u nu een nieuw pictogram met de initialen van uw omgeving. Klik erop. U zult dan de afbeelding tussen de **Variabelen van het Milieu** en uw specifieke de instantieswaarden van Adobe Experience Platform zien. Klik **activeren Configuratie**.
 
-![ DSN ](./images/c9.png)
+![&#x200B; DSN &#x200B;](./images/c9.png)
 
 Nadat u de configuratie hebt geactiveerd, ziet u een groene stip naast de initialen van uw omgeving. Dit betekent dat uw omgeving nu actief is.
 
-![ DSN ](./images/c10.png)
+![&#x200B; DSN &#x200B;](./images/c10.png)
 
 ## Inhoud van zelfstudie controleren
 
-Als test, ga [ deze pagina ](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
+Als test, ga [&#x200B; deze pagina &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
 
 U zou nu moeten zien dat alle **Variabelen van het Milieu** door hun ware waarden zijn vervangen, die op het geactiveerde milieu in de chroomuitbreiding worden gebaseerd.
 
 U zou nu een gelijkaardige mening aan hieronder moeten hebben, waar de omgevingsvariabele `aepTenantId` door uw echte identiteitskaart van de Huurder van Adobe Experience Platform is vervangen, die in dit geval **_experiencePlatform** is.
 
-![ DSN ](./images/mod7.png)
+![&#x200B; DSN &#x200B;](./images/mod7.png)
 
-Volgende Stap: [ Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform ](./ex2.md)
+Volgende Stap: [&#x200B; Systeem van de Demo van het Gebruik naast opstelling uw de cliëntbezit van de Inzameling van Gegevens van Adobe Experience Platform &#x200B;](./ex2.md)
 
 [Terug naar Aan de slag](./getting-started.md)
 

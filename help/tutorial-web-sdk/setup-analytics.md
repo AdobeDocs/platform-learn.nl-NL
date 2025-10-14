@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Adobe Analytics instellen met Adobe Experience Platform Web SDK
 
-Leer hoe te opstelling Adobe Analytics gebruikend [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/web-sdk/overview), markeringsregels tot stand brengen om gegevens naar Adobe Analytics te verzenden, en te bevestigen dat Analytics gegevens zoals verwacht vangt.
+Leer hoe te opstelling Adobe Analytics gebruikend [&#x200B; SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/web-sdk/overview), markeringsregels tot stand brengen om gegevens naar Adobe Analytics te verzenden, en te bevestigen dat Analytics gegevens zoals verwacht vangt.
 
-[ Adobe Analytics ](https://experienceleague.adobe.com/nl/docs/analytics) is een industrie-leidende toepassing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
+[&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics) is een industrie-leidende toepassing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
 
-![ SDK van het Web aan het diagram van Adobe Analytics ](assets/dc-websdk-aa.png)
+![&#x200B; SDK van het Web aan het diagram van Adobe Analytics &#x200B;](assets/dc-websdk-aa.png)
 
 ## Leerdoelstellingen
 
@@ -35,7 +35,7 @@ Om deze les te voltooien, moet u eerst:
 
 * Ben vertrouwd met en heb toegang tot Adobe Analytics.
 
-* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [ gelieve te creëren ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* minstens één test/dev rapportsuite-id hebben. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, [&#x200B; gelieve te creëren &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
 
@@ -43,19 +43,19 @@ Om deze les te voltooien, moet u eerst:
 
 Platform Web SDK verzendt gegevens van uw website naar Platform Edge Network. Uw datastream geeft vervolgens aan Platform Edge Network door aan welke Adobe Analytics-rapportages uw gegevens moeten worden verzonden.
 
-1. Ga naar [ interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ga naar [&#x200B; interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
-   ![ selecteer de datastream van SDK van het Web van Luma ](assets/datastream-luma-web-sdk-development.png)
+   ![&#x200B; selecteer de datastream van SDK van het Web van Luma &#x200B;](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Add Service]**
-   ![ voegt de dienst aan de datastream ](assets/datastream-analytics-addService.png) toe
+   ![&#x200B; voegt de dienst aan de datastream &#x200B;](assets/datastream-analytics-addService.png) toe
 1. Selecteer **[!UICONTROL Adobe Analytics]** als de **[!UICONTROL Service]**
 1. Voer de **[!UICONTROL Report Suite ID]** van uw ontwikkelrapport-suite in
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ DataStream sparen analyses ](assets/datastream-add-analytics.png)
+   ![&#x200B; DataStream sparen analyses &#x200B;](assets/datastream-add-analytics.png)
 
    >[!TIP]
    >
@@ -74,11 +74,11 @@ Er zijn verscheidene manieren om de variabelen van de Analyse in een implementat
 1. XDM-velden toewijzen aan analytische variabelen in de verwerkingsregels voor Analytics (niet langer aanbevolen).
 1. Wijs variabelen rechtstreeks toe aan Analytics in het XDM-schema (niet meer aanbevolen).
 
-Vanaf mei 2024 hoeft u niet langer een XDM-schema te maken om Adobe Analytics met Platform Web SDK te implementeren. Het `data` voorwerp (en het `data.variable` gegevenselement u in [ creeerde creëren gegevenselementen ](create-data-elements.md) les) kan worden gebruikt om alle variabelen van de douaneanalyse te plaatsen. Het instellen van deze variabelen in het gegevensobject is vertrouwd voor bestaande klanten van Analytics, is efficiënter dan het gebruik van de interface met verwerkingsregels en voorkomt dat overbodige gegevens ruimte in realtime-klantprofielen opnemen (belangrijk als u Real-Time Customer Data Platform of Journey Optimizer hebt).
+Vanaf mei 2024 hoeft u niet langer een XDM-schema te maken om Adobe Analytics met Platform Web SDK te implementeren. Het `data` voorwerp (en het `data.variable` gegevenselement u in [&#x200B; creeerde creëren gegevenselementen &#x200B;](create-data-elements.md) les) kan worden gebruikt om alle variabelen van de douaneanalyse te plaatsen. Het instellen van deze variabelen in het gegevensobject is vertrouwd voor bestaande klanten van Analytics, is efficiënter dan het gebruik van de interface met verwerkingsregels en voorkomt dat overbodige gegevens ruimte in realtime-klantprofielen opnemen (belangrijk als u Real-Time Customer Data Platform of Journey Optimizer hebt).
 
 ### Automatisch toegewezen velden
 
-Veel XDM-velden worden automatisch toegewezen aan analytische variabelen. Voor de meest bijgewerkte lijst van afbeeldingen, gelieve te zien [ veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Veel XDM-velden worden automatisch toegewezen aan analytische variabelen. Voor de meest bijgewerkte lijst van afbeeldingen, gelieve te zien [&#x200B; veranderlijke afbeelding van Analytics in de Ervaring Edge van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Dit komt voor als _zelfs als u geen douaneschema_ hebt bepaald. Experience Platform Web SDK verzamelt automatisch bepaalde gegevens en verzendt deze naar Platform Edge Network als XDM-velden. Web SDK leest bijvoorbeeld de URL van de huidige pagina en verzendt deze als het XDM-veld `web.webPageDetails.URL` . Dit veld wordt doorgestuurd naar Adobe Analytics en de pagina-URL-rapporten worden automatisch ingevuld in Adobe Analytics.
 
@@ -118,7 +118,7 @@ Ten eerste, wat is het `data` -object? In elke Web SDK-gebeurtenis kunt u twee o
 
 Hier zijn de twee voorwerpen in een generische vraag van SDK van het Web:
 
-![ gegevens en xdm voorwerpen ](assets/analytics-data-object-intro.png)
+![&#x200B; gegevens en xdm voorwerpen &#x200B;](assets/analytics-data-object-intro.png)
 
 Adobe Analytics is geconfigureerd om te zoeken naar eigenschappen in het `data.__adobe.analytics` -object en deze te gebruiken voor analytische variabelen.
 
@@ -218,9 +218,9 @@ U kunt wijzigen naar welke Adobe Analytics-rapportsuite gegevens worden verzonde
 U configureert als volgt de overschrijvingsinstelling van de Adobe Analytics-rapportsuite in de gegevensstroom:
 
 1. De gegevensstroom openen
-1. Bewerk de **[!UICONTROL Adobe Analytics]** configuratie door ![ meer ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu te openen en dan **[!UICONTROL Edit]** te selecteren
+1. Bewerk de **[!UICONTROL Adobe Analytics]** configuratie door ![&#x200B; meer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu te openen en dan **[!UICONTROL Edit]** te selecteren
 
-   ![ beschrijven de datastream ](assets/datastream-edit-analytics.png)
+   ![&#x200B; beschrijven de datastream &#x200B;](assets/datastream-edit-analytics.png)
 
 1. Selecteren **[!UICONTROL Advanced Options]** om te openen **[!UICONTROL Report Suite Overrides]**
 
@@ -228,7 +228,7 @@ U configureert als volgt de overschrijvingsinstelling van de Adobe Analytics-rap
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ beschrijven de datastream ](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
+   ![&#x200B; beschrijven de datastream &#x200B;](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
 
 ### Vorm een regel voor een de opheffing van de rapportreeks
@@ -246,7 +246,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 1. Selecteer deze optie om **[!UICONTROL Advanced Options]** te openen en typ in `51` . Dit zorgt ervoor dat de regel wordt uitgevoerd na de `all pages - library loaded - send event - 50` die de basislijn-XDM instelt met het actietype **[!UICONTROL Update variable]** .
 1. Selecteren **[!UICONTROL Keep Changes]**
 
-   ![ Overschrijving van de Reeks van het Rapport van Analytics ](assets/set-up-analytics-rs-override.png)
+   ![&#x200B; Overschrijving van de Reeks van het Rapport van Analytics &#x200B;](assets/set-up-analytics-rs-override.png)
 
 1. Onder **[!UICONTROL Conditions]** selecteert u **[!UICONTROL Add]**
 
@@ -262,7 +262,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. Selecteren **[!UICONTROL Keep Changes]**
 
-   ![ van de het rapportreeks van Analytics voorwaarde ](assets/set-up-analytics-override-condition.png)
+   ![&#x200B; van de het rapportreeks van Analytics voorwaarde &#x200B;](assets/set-up-analytics-override-condition.png)
 
 1. Onder **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 
@@ -270,11 +270,11 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. Als **[!UICONTROL Action Type]** selecteert u **[!UICONTROL Send Event]**
 
-1. Als **[!UICONTROL XDM data]**, selecteer het `xdm.variable.content` gegevenselement u in [ creeerde gegevenselementen ](create-data-elements.md) les
+1. Als **[!UICONTROL XDM data]**, selecteer het `xdm.variable.content` gegevenselement u in [&#x200B; creeerde gegevenselementen &#x200B;](create-data-elements.md) les
 
-1. Als **[!UICONTROL Data]**, selecteer het `data.variable` gegevenselement u in [ creeerde gegevenselementen ](create-data-elements.md) les
+1. Als **[!UICONTROL Data]**, selecteer het `data.variable` gegevenselement u in [&#x200B; creeerde gegevenselementen &#x200B;](create-data-elements.md) les
 
-   ![ de gegevensstroomopheffing van Analytics ](assets/set-up-analytics-datastream-override-1.png)
+   ![&#x200B; de gegevensstroomopheffing van Analytics &#x200B;](assets/set-up-analytics-datastream-override-1.png)
 
 1. Omlaag schuiven naar de sectie **[!UICONTROL Datastream Configurations Overrides]**
 
@@ -293,7 +293,7 @@ Laten wij een regel tot stand brengen om een extra vraag van de paginamening naa
 
 1. En **[!UICONTROL Save]** uw regel
 
-   ![ de gegevensstroomopheffing van Analytics ](assets/analytics-tags-report-suite-override.png)
+   ![&#x200B; de gegevensstroomopheffing van Analytics &#x200B;](assets/analytics-tags-report-suite-override.png)
 
 
 ## Bouw uw milieu van de Ontwikkeling
@@ -306,7 +306,7 @@ Gefeliciteerd! De volgende stap bestaat uit het valideren van uw Adobe Analytics
 
 Leer hoe u kunt valideren dat Adobe Analytics de ECID, paginaweergaven, de productreeks en e-commercegebeurtenissen vastlegt met de functie Edge Trace van de Experience Platform Debugger.
 
-In de [ Debugger ](validate-with-debugger.md) les, leerde u hoe te om het cliënt-kant XDM verzoek met de Debugger van het Platform en browser ontwikkelaarsconsole te inspecteren, die aan gelijkaardig is hoe u een `AppMeasurement.js` implementatie van Analytics zuivert. U hebt ook geleerd hoe u aanvragen van Platform Edge Network voor de server kunt valideren die naar Adobe-toepassingen zijn verzonden, en hoe u een volledig verwerkte lading kunt weergeven met Assurance.
+In de [&#x200B; Debugger &#x200B;](validate-with-debugger.md) les, leerde u hoe te om het cliënt-kant XDM verzoek met de Debugger van het Platform en browser ontwikkelaarsconsole te inspecteren, die aan gelijkaardig is hoe u een `AppMeasurement.js` implementatie van Analytics zuivert. U hebt ook geleerd hoe u aanvragen van Platform Edge Network voor de server kunt valideren die naar Adobe-toepassingen zijn verzonden, en hoe u een volledig verwerkte lading kunt weergeven met Assurance.
 
 Als u Analytics wilt valideren, worden gegevens correct vastgelegd via Experience Platform Web SDK, moet u twee stappen verder gaan:
 
@@ -315,23 +315,23 @@ Als u Analytics wilt valideren, worden gegevens correct vastgelegd via Experienc
 
 ### Validatie van Experience Cloud-id
 
-1. Ga naar de [ plaats van de Luminagedemo ](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. Ga naar de [&#x200B; plaats van de Luminagedemo &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
 1. Selecteer de aanmeldknop rechtsboven en gebruik gebruikersgegevens u: test@test.com p: test voor verificatie
-1. Open Debugger van Experience Platform en [ schakelaar het markeringsbezit op de plaats aan uw eigen ontwikkelingsbezit ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Open Debugger van Experience Platform en [&#x200B; schakelaar het markeringsbezit op de plaats aan uw eigen ontwikkelingsbezit &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
 1. Als u Edge Trace wilt inschakelen, gaat u naar Experience Platform Debugger, selecteert u in de linkernavigatie **[!UICONTROL Logs]** en selecteert u vervolgens de tab **[!UICONTROL Edge]** en selecteert u **[!UICONTROL Connect]** .
 
-   ![ verbindt het Spoor van Edge ](assets/analytics-debugger-edgeTrace.png)
+   ![&#x200B; verbindt het Spoor van Edge &#x200B;](assets/analytics-debugger-edgeTrace.png)
 
 1. Het zal nu leeg zijn
 
-   ![ Verbonden het Spoor van Edge ](assets/analytics-debugger-edge-connected.png)
+   ![&#x200B; Verbonden het Spoor van Edge &#x200B;](assets/analytics-debugger-edge-connected.png)
 
 1. Vernieuw de pagina Luminantie en controleer Experience Platform Debugger opnieuw. De gegevens worden dan weergegeven. De rij die begint met **[!UICONTROL Analytics Automatic Mapping]** is het baken van Adobe Analytics
 1. Selecteer deze optie om het vervolgkeuzemenu `[!UICONTROL mappedQueryParams]` en het tweede vervolgkeuzemenu te openen om de variabelen Analytics weer te geven
 
-   ![ het baken van Edge van de Analyse ](assets/analytics-debugger-edge-analytics.png)
+   ![&#x200B; het baken van Edge van de Analyse &#x200B;](assets/analytics-debugger-edge-analytics.png)
 
    >[!TIP]
    >
@@ -341,7 +341,7 @@ Als u Analytics wilt valideren, worden gegevens correct vastgelegd via Experienc
 1. Blijf omlaag schuiven totdat u de variabele Analytics `[!UICONTROL mid]` ziet. Beide id&#39;s komen overeen met de Experience Cloud-id van uw apparaat.
 1. Op de Luma-site:
 
-   ![ Analytics ECID ](assets/analytics-debugger-ecid.png)
+   ![&#x200B; Analytics ECID &#x200B;](assets/analytics-debugger-ecid.png)
 
    >[!NOTE]
    >
@@ -349,19 +349,19 @@ Als u Analytics wilt valideren, worden gegevens correct vastgelegd via Experienc
 
 ### Validatie van overschrijvingen van rapportsuite
 
-Boven u vormde een gegevensstroomopheffing voor de [ homepage van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html).  Om deze configuratie te bevestigen
+Boven u vormde een gegevensstroomopheffing voor de [&#x200B; homepage van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html).  Om deze configuratie te bevestigen
 
 1. Zoek een rij met **[!UICONTROL Datastream config after override was applied]** . Hier vindt u de primaire rapportsuite en de extra rapportsuite(s) die voor de rapportsuite-overschrijvingen zijn geconfigureerd.
 
-   ![ de Validering van de Lijst van de Opheffing van de Reeks van het Rapport van Analytics ](assets/aep-debugger-datastream-override.png)
+   ![&#x200B; de Validering van de Lijst van de Opheffing van de Reeks van het Rapport van Analytics &#x200B;](assets/aep-debugger-datastream-override.png)
 
 1. Blader omlaag naar de rij die begint met **[!UICONTROL Analytics Automatic Mapping]** en controleer of in `[!UICONTROL reportSuiteIds]` de rapportsuite wordt weergegeven die u hebt opgegeven in de overschrijvingsconfiguraties
 
-   ![ de Bevestiging van de Vraag van de Opheffing van de Reeks van het Rapport van Analytics ](assets/aep-debugger-analytics-report-suite-override.png)
+   ![&#x200B; de Bevestiging van de Vraag van de Opheffing van de Reeks van het Rapport van Analytics &#x200B;](assets/aep-debugger-analytics-report-suite-override.png)
 
 ### Validatie van weergaven van inhoudspagina
 
-Ga naar een productpagina zoals de [ Didi het productpagina van het Horloge van de Sport ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Controleer of de weergaven van de inhoudspagina worden vastgelegd door Analytics.
+Ga naar een productpagina zoals de [&#x200B; Didi het productpagina van het Horloge van de Sport &#x200B;](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Controleer of de weergaven van de inhoudspagina worden vastgelegd door Analytics.
 
 1. Ga naar `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Schuif omlaag om de variabele `[!UICONTROL gn]` weer te geven. Dit is de dynamische syntaxis van Analytics voor de variabele `[!UICONTROL s.pageName]` . De paginanaam wordt vastgelegd vanuit de gegevenslaag.
@@ -370,11 +370,11 @@ Ga naar een productpagina zoals de [ Didi het productpagina van het Horloge van 
    >
    > De `gn` -waarde kan `test` zijn als u het `xdm` -object in een eerdere exercitie met het `data` -object hebt overschreven.
 
-   ![ het productkoord van Analytics ](assets/analytics-debugger-edge-page-view.png)
+   ![&#x200B; het productkoord van Analytics &#x200B;](assets/analytics-debugger-edge-page-view.png)
 
 ### Validatie van productreeks- en e-commercegebeurtenissen
 
-Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge Trace gebruiken om productgegevens te bevestigen wordt gevangen door Analytics. Zowel worden het productkoord als e-commercegebeurtenissen automatisch in kaart gebracht XDM variabelen aan Analytics. Zolang u aan de juiste `productListItem` variabele XDM terwijl [ vormend een schema XDM voor Adobe Analytics ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) in kaart hebt gebracht, behandelt het Platform Edge Network de gegevens aan de juiste analytische variabelen in kaart brengen.
+Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge Trace gebruiken om productgegevens te bevestigen wordt gevangen door Analytics. Zowel worden het productkoord als e-commercegebeurtenissen automatisch in kaart gebracht XDM variabelen aan Analytics. Zolang u aan de juiste `productListItem` variabele XDM terwijl [&#x200B; vormend een schema XDM voor Adobe Analytics &#x200B;](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) in kaart hebt gebracht, behandelt het Platform Edge Network de gegevens aan de juiste analytische variabelen in kaart brengen.
 
 **Bevestig eerst dat `Product String` wordt geplaatst**
 
@@ -383,9 +383,9 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
 1. Schuif omlaag om de variabele `[!UICONTROL pl]` weer te geven. Dit is de dynamische syntaxis van de variabele van de producttekenreeks Analytics
 1. Merk op dat de productnaam uit de gegevenslaag zowel aan de parameter `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` als `[!UICONTROL product]` van het productkoord in kaart wordt gebracht.  Bovendien wordt de producttitel van de gegevenslaag in kaart gebracht aan merchandising evar1 in het productkoord.
 
-   ![ het productkoord van Analytics ](assets/analytics-debugger-prodstring.png)
+   ![&#x200B; het productkoord van Analytics &#x200B;](assets/analytics-debugger-prodstring.png)
 
-   In het Edge Trace worden gebeurtenissen `commerce` iets anders behandeld dan `productList` -afmetingen. Een Context Data-variabele wordt niet op dezelfde manier weergegeven als de productnaam die aan `[!UICONTROL c.a.x.productlistitem.[0].name]` hierboven is toegewezen. In plaats daarvan geeft het Edge-spoor de uiteindelijke gebeurtenis automatisch toe in de variabele Analytics `event` . Platform Edge Network brengt het dienovereenkomstig in kaart zolang u aan de juiste XDM `commerce` variabele terwijl [ vormend het schema voor Adobe Analytics ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) in kaart; in dit geval `commerce.productViews.value=1`.
+   In het Edge Trace worden gebeurtenissen `commerce` iets anders behandeld dan `productList` -afmetingen. Een Context Data-variabele wordt niet op dezelfde manier weergegeven als de productnaam die aan `[!UICONTROL c.a.x.productlistitem.[0].name]` hierboven is toegewezen. In plaats daarvan geeft het Edge-spoor de uiteindelijke gebeurtenis automatisch toe in de variabele Analytics `event` . Platform Edge Network brengt het dienovereenkomstig in kaart zolang u aan de juiste XDM `commerce` variabele terwijl [&#x200B; vormend het schema voor Adobe Analytics &#x200B;](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) in kaart; in dit geval `commerce.productViews.value=1`.
 
 1. Ga terug naar het venster Experience Platform Debugger en schuif omlaag naar de variabele `[!UICONTROL events]` , dan wordt deze ingesteld op `[!UICONTROL prodView]`
 
@@ -400,14 +400,14 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
 
 **bevestigt de rest e-commercegebeurtenissen en productkoorden worden geplaatst voor Analytics**
 
-1. Voeg [ Didi Sporthorloge ](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) aan kar toe
-1. Ga naar de [ Pagina van het Kart ](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), controleer het Spoor van Edge voor
+1. Voeg [&#x200B; Didi Sporthorloge &#x200B;](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) aan kar toe
+1. Ga naar de [&#x200B; Pagina van het Kart &#x200B;](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), controleer het Spoor van Edge voor
 
    * `eventType` ingesteld op `commerce.productListViews`
    * `[!UICONTROL events: "scView"]` en
    * de producttekenreeks is ingesteld
 
-   ![ Mening van de Kar van Analytics ](assets/analytics-debugger-cartView.png)
+   ![&#x200B; Mening van de Kar van Analytics &#x200B;](assets/analytics-debugger-cartView.png)
 
 1. Ga door met het afrekenen, controleer Edge Trace voor
 
@@ -415,7 +415,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
    * `[!UICONTROL events: "scCheckout"]` en
    * de producttekenreeks is ingesteld
 
-   ![ Controle van Analytics ](assets/analytics-debugger-checkout.png)
+   ![&#x200B; Controle van Analytics &#x200B;](assets/analytics-debugger-checkout.png)
 
 1. Vul enkel de **Voornaam** en **Familie** gebieden op de verzendende vorm in en selecteer **ga** verder. Voor de volgende pagina, uitgezochte **Orde van de Plaats**
 1. Controleer op de bevestigingspagina Edge Trace for
@@ -426,7 +426,7 @@ Aangezien u al op een productpagina staat, blijft deze oefening het zelfde Edge 
    * Aankoop-id die wordt ingesteld in `[!UICONTROL pi]`
    * Producttekenreeks `[!UICONTROL pl]` voor het instellen van de productnaam, hoeveelheid en prijs
 
-   ![ de Aankoop van Analytics ](assets/analytics-debugger-purchase.png)
+   ![&#x200B; de Aankoop van Analytics &#x200B;](assets/analytics-debugger-purchase.png)
 
 
 
@@ -436,19 +436,19 @@ Met Adobe Experience Platform Assurance kunt u controleren, testen, simuleren en
 
 In de vorige oefening bevestigde u dat Adobe Analytics ECID, paginameningen, het productkoord, en e-commercegebeurtenissen met de eigenschap van het Spoor van Edge van de Debugger van Experience Platform vangt.  Vervolgens valideert u dezelfde gebeurtenissen met Adobe Experience Platform Assurance, een alternatieve interface voor toegang tot dezelfde gegevens in Edge Trace.
 
-Zoals u in de [ Assurance ](validate-with-assurance.md) les leerde, zijn er verscheidene manieren om een zitting van Assurance in werking te stellen. Aangezien u Adobe Experience Platform Debugger hebt geopend met een Edge Trace-sessie die is gestart vanaf de laatste oefening, raden we u aan om Assurance te openen via Foutopsporing:
-![ Assurance door de Inzameling van Gegevens van Adobe Experience Platform ](assets/assurance-open-aep-debugger.png)
+Zoals u in de [&#x200B; Assurance &#x200B;](validate-with-assurance.md) les leerde, zijn er verscheidene manieren om een zitting van Assurance in werking te stellen. Aangezien u Adobe Experience Platform Debugger hebt geopend met een Edge Trace-sessie die is gestart vanaf de laatste oefening, raden we u aan om Assurance te openen via Foutopsporing:
+![&#x200B; Assurance door de Inzameling van Gegevens van Adobe Experience Platform &#x200B;](assets/assurance-open-aep-debugger.png)
 
 Voer in de **[!UICONTROL "Web SDK Tutorial 3"]** Assurance-sessie **[!UICONTROL "hitdebugger"]** de zoekbalk voor gebeurtenissen in om de resultaten naar de door Adobe Analytics Post verwerkte gegevens te filteren.
-![ Assurance Adobe Analyitcs Post Verwerkte Gegevens ](assets/assurance-hitdebugger.png)
+![&#x200B; Assurance Adobe Analyitcs Post Verwerkte Gegevens &#x200B;](assets/assurance-hitdebugger.png)
 
 ### Validatie van Experience Cloud-id
 
 Als u wilt valideren dat Adobe Analytics de ECID vastlegt, selecteert u een baken en opent u de Payload.  De leverancier voor dit baken moet **[!UICONTROL com.adobe.analytics.hitdebugger]** zijn
-![ de bevestiging van Adobe Analytics met Assurance ](assets/assurance-hitdebugger-payload.png)
+![&#x200B; de bevestiging van Adobe Analytics met Assurance &#x200B;](assets/assurance-hitdebugger-payload.png)
 
 Blader vervolgens omlaag naar **[!UICONTROL mcvisId]** om te controleren of de ECID correct is vastgelegd
-![ de bevestiging van identiteitskaart van Experience Cloud met Assurance ](assets/assurance-hitdebugger-mcvisId.png)
+![&#x200B; de bevestiging van identiteitskaart van Experience Cloud met Assurance &#x200B;](assets/assurance-hitdebugger-mcvisId.png)
 
 ### Validatie van weergaven van inhoudspagina
 
@@ -471,7 +471,7 @@ Volg dezelfde validatiegebruikscase die bij het valideren met de bovenstaande Ex
 1. Schuif omlaag naar **[!UICONTROL product-string]** om de `Product String` te valideren.
    * Noteer `Product SKU` en `Merchandizing eVar1` .
 1. Schuif verder omlaag en valideer dat `prop1` , dat u hebt geconfigureerd met de verwerkingsregels in de vorige sectie, de eigenschap `Product SKU` bevat\
-   ![ Koord van het Product met het Merchandizing van de bevestiging van Variabelen met Assurance ](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
+   ![&#x200B; Koord van het Product met het Merchandizing van de bevestiging van Variabelen met Assurance &#x200B;](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
 
 Ga door met het valideren van uw implementatie door de gebeurtenissen voor winkelwagentjes, kassa&#39;s en aankopen te controleren.
 
@@ -489,4 +489,4 @@ Gefeliciteerd! Je hebt het gedaan! Dit is het einde van de les en nu bent u klaa
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

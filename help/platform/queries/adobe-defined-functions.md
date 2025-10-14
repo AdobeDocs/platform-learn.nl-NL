@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Door Adobe gedefinieerde functies
 
-Leer hoe u door Adobe gedefinieerde functies in Adobe Experience Platform Query Service gebruikt om veelvoorkomende bedrijfsgerelateerde taken uit te voeren op Experience Event-gegevens. Voor meer informatie, gelieve te bezoeken [ Adobe-bepaalde SQL functies in de Dienst van de Vraag ](https://experienceleague.adobe.com/nl/docs/experience-platform/query/sql/adobe-defined-functions).
+Leer hoe u door Adobe gedefinieerde functies in Adobe Experience Platform Query Service gebruikt om veelvoorkomende bedrijfsgerelateerde taken uit te voeren op Experience Event-gegevens. Voor meer informatie, gelieve te bezoeken [&#x200B; Adobe-bepaalde SQL functies in de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/query/sql/adobe-defined-functions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)

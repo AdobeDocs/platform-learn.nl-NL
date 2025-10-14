@@ -26,7 +26,7 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 1. Navigeer aan het **portaal van de Reizen** en klik **creeer de 3&rbrace; knoop van de Reis &lbrace;.**
 
-   ![ creeer-a-reis ](assets/create-journey.png)
+   ![&#x200B; creeer-a-reis &#x200B;](assets/create-journey.png)
 
 2. Werk de eigenschappen van de Reis met een nieuwe naam bij. In ons voorbeeld: **`SecurFinancial - Home Loan Offer`** .
 
@@ -36,11 +36,11 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 5. Zoek in de zoekbalk naar het publiek. In ons voorbeeld: **`SecureFinancial Customers - No Loans, Good Credit`**. Klik **sparen**.
 
-   ![ creeer-a-reis ](assets/select-audience.png)
+   ![&#x200B; creeer-a-reis &#x200B;](assets/select-audience.png)
 
 6. Verlaat alle montages als gebrek in het juiste zijmenu en klik dan **sparen**.
 
-   ![ sparen-publiek-montages ](assets/save-audience-settings.png)
+   ![&#x200B; sparen-publiek-montages &#x200B;](assets/save-audience-settings.png)
 
 ### E-mail personaliseren
 
@@ -52,9 +52,9 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 4. Klik het **malplaatje van de Inhoud** knoop in de hoogste juiste hoek. Zoek en selecteer de gewenste sjabloon. In ons voorbeeld wordt `SecureFinancial Template` gebruikt. Dan klik **bevestigen**.
 
-   ![ reis-e-mail-config ](assets/journey-email-config.png)
+   ![&#x200B; reis-e-mail-config &#x200B;](assets/journey-email-config.png)
 
-   ![ reis-e-mail-bevestig ](assets/journey-email-confirm.png)
+   ![&#x200B; reis-e-mail-bevestig &#x200B;](assets/journey-email-confirm.png)
 
 5. Herzie het malplaatje en klik **Malplaatje van het Gebruik**.
 
@@ -70,12 +70,12 @@ Om verder te gaan met het verhaal SecurFinancial, met name de klant die en de kw
 
 11. Nu de voornaampersonalisatie is toegevoegd, voegt u `Hi, ` toe vóór de personalisatievariabele. Dan klik **sparen**.
 
-    ![ reis-e-mail-sparen ](assets/journey-email-save.png)
+    ![&#x200B; reis-e-mail-sparen &#x200B;](assets/journey-email-save.png)
 
 12. Klik op de **Achtergrond** knoop tweemaal om aan het wegcanvas terug te keren. Dan in de **Actie: E-mail** menu aan het recht, klik **sparen**.
 
-   ![ sparen-definitief-reis ](assets/save-final-journey.png)
+   ![&#x200B; sparen-definitief-reis &#x200B;](assets/save-final-journey.png)
 
 We creëerden een reis in AJO met behulp van een gefederaliseerd publiek en gefederaliseerde verrijkingskenmerken.
 
-Nu zullen wij bekijken hoe te [ een publiek ](federated-audience-composition.md) in Experience Platform met gegevens van het gegevenspakhuis verrijken.
+Nu zullen wij bekijken hoe te [&#x200B; een publiek &#x200B;](federated-audience-composition.md) in Experience Platform met gegevens van het gegevenspakhuis verrijken.

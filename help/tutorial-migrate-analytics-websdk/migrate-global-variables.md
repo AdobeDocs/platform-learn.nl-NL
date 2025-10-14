@@ -20,11 +20,11 @@ In deze oefening zult u leren hoe te om globale variabelen van de de uitbreiding
 
 In de extensie Adobe Analytics is er een configuratiesectie met de naam &quot;Algemene variabelen&quot;.
 
-![ Globale het Etiket van Variabelen ](assets/analytics-global-variables-label.jpg)
+![&#x200B; Globale het Etiket van Variabelen &#x200B;](assets/analytics-global-variables-label.jpg)
 
 Algemene variabelen zijn variabelen die in het object Analytics tracking worden ingesteld wanneer dat object op de pagina wordt geïnitialiseerd. Alle variabelen die u hier instelt, worden ingesteld wanneer het volgende object op elke pagina wordt gemaakt.
 
-![ Globale geplaatste variabelen ](assets/analytics-set-global-variables.jpg)
+![&#x200B; Globale geplaatste variabelen &#x200B;](assets/analytics-set-global-variables.jpg)
 
 Als u hier variabelen hebt worden geplaatst, moeten wij deze aan het Web SDK eveneens migreren.
 
@@ -39,7 +39,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
 
 1. De Adobe Analytics-extensieconfiguratie openen
 
-   ![ de uitbreidingsconfig van aa ](assets/configure-analytics-extension.jpg)
+   ![&#x200B; de uitbreidingsconfig van aa &#x200B;](assets/configure-analytics-extension.jpg)
 
 1. Schuif omlaag naar de sectie Algemene variabelen (afbeelding hierboven), open deze en noteer alle variabelen die worden ingesteld. U moet deze variabelen en waarden later kennen.
 1. Annuleer de extensie Analytics.
@@ -47,7 +47,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
 1. Noem uw nieuwe regel &quot;Globale Variabelen&quot;.
 1. Klik op de knop Toevoegen onder Gebeurtenissen.
 
-   ![ Globale Veranderlijke regel 1 ](assets/global-variable-rule-1.jpg)
+   ![&#x200B; Globale Veranderlijke regel 1 &#x200B;](assets/global-variable-rule-1.jpg)
 
 1. Vorm uw gebeurtenis om vóór uw andere regels teweeg te brengen. U moet het gebeurtenistype en de volgorde weten die u in andere regels hebt gebruikt. Voorbeelden:
    1. Plaats de **Uitbreiding** aan Kern
@@ -55,7 +55,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
    1. Breid **Geavanceerde Opties** uit
    1. Plaats de **Orde** aan een lager aantal dan uw andere regels, zodat het eerst zal uitvoeren.
 
-      ![ vorm Globale Veranderlijke Gebeurtenis ](assets/configure-global-variable-event.jpg)
+      ![&#x200B; vorm Globale Veranderlijke Gebeurtenis &#x200B;](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >
       >Het belangrijkste ding hier is dat deze regel vóór de standaardpaginalading regel in brand steekt, zodat om het even welke die variabelen in deze regel worden geplaatst naar Analytics via de sendEvent regel kunnen worden verzonden. Nochtans, stellen wij voor dat deze regel **eerst** in werking stelt algemeen, omdat de variabelen die in de Globale sectie van Variabelen in de uitbreiding van de Analyse worden geplaatst in andere regels konden worden veranderd. Die functionaliteit nastreven we. In het bovenstaande voorbeeld gaan we ervan uit dat &quot;10&quot; een lager bestelnummer is dan een van uw andere regels. Als dat niet juist is, wijzigt u het getal in een lager getal dan de andere regels.
@@ -69,7 +69,7 @@ Als u geen stappen nodig hebt die voor u zijn gedefinieerd, gaat u dat doen en b
    1. Selecteer **Analytics** onder het gegevensvoorwerp
    1. Vul de variabelen die u hebt opgeslagen vanuit de sectie Globale variabelen in de extensieconfiguratie Analytics (in het voorbeeld van deze zelfstudie, eVar10 instellen op het gegevenselement Paginatype)
 
-   ![ websdk-global-variables-action ](assets/websdk-global-variables-action.jpg)
+   ![&#x200B; websdk-global-variables-action &#x200B;](assets/websdk-global-variables-action.jpg)
 
 1. Wijzigingen behouden
 1. Sla de regel op in uw werkbibliotheek en build

@@ -28,11 +28,11 @@ Ik weet zeker dat u niet verrast zult zijn dat ik iets dergelijks ga toevoegen a
 
 De code die wij eerst in deze sectie zullen richten is de code die u in het venster van de &quot;Code van de Douane&quot;in om het even welke acties van Adobe Analytics kunt hebben, met inbegrip van de **Vastgestelde Veranderlijke** acties. Met andere woorden, open één van uw regels, en kijk neer in de actiesectie. Als u de actie &quot;Adobe Analytics - Variabelen instellen&quot; hebt, klikt u om deze te openen.
 
-![ plaats de code van Variabelen ](assets/set-variables-action.jpg)
+![&#x200B; plaats de code van Variabelen &#x200B;](assets/set-variables-action.jpg)
 
 Vervolgens schuift u naar beneden aan de rechterkant en ziet u de knop Editor openen voor het venster Aangepaste code. Klik om te openen.
 
-![ open de redacteur van de douanecode ](assets/open-aa-custom-code-editor.jpg)
+![&#x200B; open de redacteur van de douanecode &#x200B;](assets/open-aa-custom-code-editor.jpg)
 
 Als u daar code hebt, zal het moeten worden gemigreerd zodat het kan worden uitgevoerd en naar Adobe Analytics worden verzonden gebruikend het Web SDK.
 Het belangrijkste idee hier is dat we het object &#39;s&#39; gaan omzetten in &#39;content&#39;.__adobe.analytics&quot;.
@@ -67,20 +67,20 @@ Ga daarom als volgt te werk om de aangepaste code te migreren:
 1. Sluit dat codevenster en sluit (annuleer uit) de actie.
 1. Open het Web SDK - de veranderlijke actie van de Update door op het te klikken (of als u nog geen hebt, voeg toe).
 
-   ![ Open update veranderlijke actie ](assets/open-sdk-update-variable.jpg)
+   ![&#x200B; Open update veranderlijke actie &#x200B;](assets/open-sdk-update-variable.jpg)
 
 1. Selecteer het analyseobject boven in het rechtervenster
 
-   ![ Uitgezochte analysevoorwerpen ](assets/select-analytics-object.jpg)
+   ![&#x200B; Uitgezochte analysevoorwerpen &#x200B;](assets/select-analytics-object.jpg)
 
 1. Omlaag naar beneden schuiven en het venster Aangepaste code openen
 
-   ![ open het sdk venster van de douanecode ](assets/open-sdk-custom-code.jpg)
+   ![&#x200B; open het sdk venster van de douanecode &#x200B;](assets/open-sdk-custom-code.jpg)
 
 1. Plak in de code die u hebt overgenomen uit het venster voor aangepaste code Analytics
 1. Plaats nu de nieuwe coderegels in het midden van de bestaande code, zodat deze boven de eerste vermelding van het object s staan, zoals in het volgende voorbeeld:
 
-![ Nieuw s code ](assets/new-s-code.jpg)
+![&#x200B; Nieuw s code &#x200B;](assets/new-s-code.jpg)
 
 U kunt de code nu opslaan in het venster Aangepaste code en de wijzigingen behouden in de actie Variabelen bijwerken. U zult ook de regel willen bewaren en de nieuwe veranderingen in de het werk bibliotheek publiceren.
 
@@ -92,12 +92,12 @@ Het is echter ook waarschijnlijker dat de insteekcode zich in het codevenster be
 1. Selecteer het **Geïnstalleerde** lusje naar de bovenkant van de pagina, en selecteer dan uw uitbreiding van Adobe Analytics.
 1. Dan op de rechterkant van de pagina, klik **vormen**
 
-   ![ vormt de analytische uitbreiding ](assets/configure-analytics-extension.jpg)
+   ![&#x200B; vormt de analytische uitbreiding &#x200B;](assets/configure-analytics-extension.jpg)
 
 1. Breid **uit vormt Beheer Gebruikend de sectie van de Code van de Douane**
 1. Klik aan **Open Redacteur**
 
-   ![ open belangrijkste redacteur ](assets/aa-extension-custom-code-window.jpg)
+   ![&#x200B; open belangrijkste redacteur &#x200B;](assets/aa-extension-custom-code-window.jpg)
 
 Op dit punt kunt u de code zien die u daar hebt, en hebt u mogelijk JavaScript &quot;plug-ins&quot;, dat wil zeggen codefragmenten die u helpen bij het ophalen van gewenste gegevens en het toewijzen ervan aan aangepaste afmetingen, enz.
 
@@ -114,11 +114,11 @@ Nogmaals, niet alles in het codevenster is mogelijk een door Adobe Consulting ge
 1. Ervan uitgaande dat u reeds de uitbreiding van SDK van het Web aan uw bezit hebt toegevoegd, navigeer aan **Uitbreidingen** en selecteer het **Geïnstalleerde** lusje
 1. Selecteer de **uitbreiding van SDK van het Web van Adobe Experience Platform**, en open het door **te klikken vormt** op het juiste spoor.
 
-   ![ vorm de uitbreiding van SDK van het Web ](assets/configure-websdk-extension.jpg)
+   ![&#x200B; vorm de uitbreiding van SDK van het Web &#x200B;](assets/configure-websdk-extension.jpg)
 
 1. De rol neer aan de **sectie van de Inzameling van Gegevens** en klikt om het codevenster voor **onBeforeEventSend** te openen.
 
-   ![ onBeforeEventSend ](assets/on-before-event-send-window.jpg)
+   ![&#x200B; onBeforeEventSend &#x200B;](assets/on-before-event-send-window.jpg)
 
 Hier plakt u code die u wilt uitvoeren voordat de gebeurtenis vanuit Web SDK naar Analytics wordt verzonden. Dat is eigenlijk wat de functie doPlugins deed in uw oude analytische implementatie.
 
@@ -131,7 +131,7 @@ Wel, ja en nee. Ja, u moet een paar kleine dingen veranderen, maar nee, u zult n
 _&#x200B;**verandering van de Code 1:**&#x200B;_
 Na (of vóór, uw keus) kleeft u uw &quot;stop-binnen&quot;code in het codevenster in de uitbreiding van SDK van het Web, **verwijdert** de &quot;doPlugin&quot;lijnen uit uw code. U hebt ze niet nodig en ze veroorzaken een fout omdat ze deel uitmaken van appMeturement.js, maar niet van de Web SDK-code.
 
-![ verwijdert doPlugins coderegels ](assets/remove-doplugins.jpg)
+![&#x200B; verwijdert doPlugins coderegels &#x200B;](assets/remove-doplugins.jpg)
 
 _&#x200B;**verandering van de Code 2:**&#x200B;_
 De andere verandering die u zult moeten doen is wat code toe te voegen zodat het voorwerp &quot;s&quot;wordt bepaald, zeer gelijkaardig aan wat hierboven met betrekking tot de code in regelacties wordt besproken. In dit geval, zullen wij de code enkel een beetje verschillend moeten bepalen, toevoegend een &quot;gegevens&quot;knoop die reeds in de regelactie, maar niet hier wordt bepaald.
@@ -146,14 +146,14 @@ const s = content.data.__adobe.analytics;
 _&#x200B;**met beide codeveranderingen:**&#x200B;_
 Hier is de code hierboven vermeld, maar met beide veranderingen wij net bespraken:
 
-![ Bijgewerkte code ](assets/update-code.jpg)
+![&#x200B; Bijgewerkte code &#x200B;](assets/update-code.jpg)
 
 ### Stappen voor het migreren van belangrijkste uitbreidingscode aan Web SDK
 
 Zoals hierboven vermeld, is de aanbeveling tweeledig: om de nieuwe Gemeenschappelijke uitbreiding van de Insteekmodules van SDK van het Web te gebruiken en ook om uw code van de de uitbreidingsconfiguratie van de Analyse in de de uitbreidingsconfiguratie van SDK van het Web te kopiëren en te kleven. Met dit in mening, samen met de belangrijke nota bij de bovenkant van de pagina om uw code op te schonen, zijn hier de geadviseerde stappen op een hoog niveau:
 
 1. Kopieer al uw code van het de configuratiecode venster van de uitbreiding van de Analyse en plak het in het onBeforeEventSend venster in de configuratie van de uitbreiding van SDK van het Web (hoewel wij over code zouden kunnen kopiëren die moet worden verwijderd of worden bijgewerkt, zullen wij een paar passen bij de code in het nieuwe venster maken).
-1. Ga door uw code nu in de uitbreiding van SDK van het Web en zoek vraag aan stop-ins of functiedefinitie voor stop-ins die in de **Gemeenschappelijke Insteekmodules van SDK van het Web** uitbreiding worden bepaald. U kunt de lijst van stop-ins in het de gegevenselementdefinitievenster van SDK van het Web na het installeren van de pluginuitbreiding vinden. U kunt het in de [ documentatie voor die uitbreiding ](https://exchange.adobe.com/apps/ec/108520) ook vinden.
+1. Ga door uw code nu in de uitbreiding van SDK van het Web en zoek vraag aan stop-ins of functiedefinitie voor stop-ins die in de **Gemeenschappelijke Insteekmodules van SDK van het Web** uitbreiding worden bepaald. U kunt de lijst van stop-ins in het de gegevenselementdefinitievenster van SDK van het Web na het installeren van de pluginuitbreiding vinden. U kunt het in de [&#x200B; documentatie voor die uitbreiding &#x200B;](https://exchange.adobe.com/apps/ec/108520) ook vinden.
 1. Voor elk van de stop-ins die u in het nieuwe Web SDK insteekmodules uitbreiding vindt, verwijder de uitbreiding en de vraag aan het uit uw code, en zorg ervoor dat u dan voor die verwijdering compenseert door een gegevenselement te creëren en dan dat gegevenselement in de aangewezen regel te roepen om variabelen, enz. te plaatsen.
 1. Neem vervolgens een controle door de code om te zien of er aanroepen zijn naar functies die zijn gedefinieerd in het bestand appMeasurement.js. **Verandering 1 van de Code** hierboven is een voorbeeld van dit, en u kunt deze verwijdering van code doPlugins op dit ogenblik maken, als u niet reeds hebt. Voor andere instanties, zal dit het duidelijkst zijn wanneer u een vraag aan een functie hebt die nergens in uw code wordt bepaald. U kunt ook contact opnemen met de klantenondersteuning van de Adobe of met collega&#39;s in de community van Experiencen League om te controleren of dit het geval is met die code.
 1. Doorloop vervolgens de code om eventuele oude code bij te werken of te verwijderen die niet meer van toepassing is op uw analysebehoeften, zoals boven aan deze pagina wordt aanbevolen.

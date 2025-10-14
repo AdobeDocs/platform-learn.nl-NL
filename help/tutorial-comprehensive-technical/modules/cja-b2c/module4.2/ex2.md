@@ -27,22 +27,22 @@ De oplossing voor dit probleem is de gegevens van Googles Analytics om te zetten
 
 ## 4.2.2.1 creeer een dataset om nieuwe Lijsten te bewaren BigQuery
 
-Ga naar de [ Console BigQuery ](https://console.cloud.google.com/bigquery).
+Ga naar de [&#x200B; Console BigQuery &#x200B;](https://console.cloud.google.com/bigquery).
 
-![ demo ](./images/ex31.png)
+![&#x200B; demo &#x200B;](./images/ex31.png)
 
 In **Ontdekkingsreiziger**, zult u uw identiteitskaart van het Project zien. Klik uw identiteitskaart van het Project (klik niet **bigquery-public-data** dataset).
 
-![ demo ](./images/ex32.png)
+![&#x200B; demo &#x200B;](./images/ex32.png)
 
 Je kunt zien dat er nog geen dataset is, dus laten we er nu een maken.
 Klik 3 **...** en klik dan **CREEER DATASET**.
 
-![ demo ](./images/ex34.png)
+![&#x200B; demo &#x200B;](./images/ex34.png)
 
 Op de rechterkant van uw scherm, zult u **zien leiden dataset** menu.
 
-![ demo ](./images/ex35.png)
+![&#x200B; demo &#x200B;](./images/ex35.png)
 
 Voor **identiteitskaart van de Dataset**, gebruik de hieronder noemende overeenkomst. Voor de andere velden laat u de standaardinstellingen ongewijzigd.
 
@@ -52,17 +52,17 @@ Voor **identiteitskaart van de Dataset**, gebruik de hieronder noemende overeenk
 
 Klik **CREEER GEGEVENSSET**.
 
-![ demo ](./images/ex36.png)
+![&#x200B; demo &#x200B;](./images/ex36.png)
 
 U zult dan terug in de Console BigQuery met uw gemaakte dataset zijn.
 
-![ demo ](./images/ex38.png)
+![&#x200B; demo &#x200B;](./images/ex38.png)
 
 ## 4.2.2.2 Maak uw eerste SQL BigQuery
 
 Daarna, zult u uw eerste vraag in BigQuery creëren. Het doel van deze query is om de voorbeeldgegevens van de Googles Analytics te nemen en te transformeren zodat deze in Adobe Experience Platform kunnen worden opgenomen. Ga naar de **Naamloze vraag** tabel.
 
-![ demo ](./images/ex39.png)
+![&#x200B; demo &#x200B;](./images/ex39.png)
 
 Kopieer de volgende SQL-query en plak deze in die Query Editor. Voel vrij om de vraag te lezen en de syntaxis van Googles Analytics te begrijpen BigQuery.
 
@@ -231,23 +231,23 @@ GROUP BY
 
 Wanneer u klaar bent, klik **Looppas** om de vraag in werking te stellen:
 
-![ demo ](./images/ex310.png)
+![&#x200B; demo &#x200B;](./images/ex310.png)
 
 Het uitvoeren van de query kan een paar minuten duren.
 
 Zodra de vraag het lopen gebeëindigd heeft, zult u de hieronder output in de **resultaten van de Vraag** zien.
 
-![ demo ](./images/ex312.png)
+![&#x200B; demo &#x200B;](./images/ex312.png)
 
 ## 4.2.2.3 Sla de resultaten van uw BigQuery SQL-query op
 
 De volgende stap moet de output van uw vraag bewaren door **te klikken SLEEPT RESULTATEN** knoop.
 
-![ demo ](./images/ex313.png)
+![&#x200B; demo &#x200B;](./images/ex313.png)
 
 Als plaats voor uw output, uitgezochte **Lijst BigQuery**.
 
-![ demo ](./images/ex314.png)
+![&#x200B; demo &#x200B;](./images/ex314.png)
 
 U zult dan een nieuwe popup zien, waar uw **Naam van het Project** en **Naam van de Dataset** pre-bevolkt zijn. De naam van de dataset zou de dataset moeten zijn die u in het begin van deze oefening, met deze noemende overeenkomst creeerde:
 
@@ -263,15 +263,15 @@ U moet nu een tabelnaam invoeren. Gebruik deze naamgevingsconventie:
 
 Klik **OPSLAAN**.
 
-![ demo ](./images/ex316.png)
+![&#x200B; demo &#x200B;](./images/ex316.png)
 
 Het kan enige tijd duren tot de gegevens klaar zijn in de tabel die u hebt gemaakt. Vernieuw na een paar minuten de browser. U zou dan binnen uw dataset de `--aepUserLdap--_GAdataTableBigquery` lijst onder **Ontdekkingsreiziger** binnen uw project BigQuery moeten zien.
 
-![ demo ](./images/ex319.png)
+![&#x200B; demo &#x200B;](./images/ex319.png)
 
 U gaat nu verder met de volgende oefening, waar u deze lijst aan Adobe Experience Platform zult verbinden.
 
-Volgende Stap: [ 4.2.3 verbindt GCP &amp; BigQuery aan Adobe Experience Platform ](./ex3.md)
+Volgende Stap: [&#x200B; 4.2.3 verbindt GCP &amp; BigQuery aan Adobe Experience Platform &#x200B;](./ex3.md)
 
 [Terug naar module 4.2](./customer-journey-analytics-bigquery-gcp.md)
 

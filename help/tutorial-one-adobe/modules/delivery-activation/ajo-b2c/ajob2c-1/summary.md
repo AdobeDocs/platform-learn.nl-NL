@@ -35,11 +35,11 @@ U kunt nu bijvoorbeeld -
 
 ## Bekijk dit
 
-- Tech Blog: [ Journey Orchestration in een Wereld Omnichannel ](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Tech Blog: [ die de Macht van de Nieuwe Dienst van Journey Orchestration van Adobe aantoont om Persoonlijke Ervaringen Omnichannel in Echt - tijd ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
+- Tech Blog: [&#x200B; Journey Orchestration in een Wereld Omnichannel &#x200B;](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
+- Tech Blog: [&#x200B; die de Macht van de Nieuwe Dienst van Journey Orchestration van Adobe aantoont om Persoonlijke Ervaringen Omnichannel in Echt - tijd &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34) te bouwen
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Orchestratie ](./journey-orchestration-create-account.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Orchestratie &#x200B;](./journey-orchestration-create-account.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

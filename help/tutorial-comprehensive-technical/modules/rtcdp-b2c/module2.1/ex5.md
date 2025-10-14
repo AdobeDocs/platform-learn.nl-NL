@@ -23,25 +23,25 @@ Wanneer die zelfde klant uiteindelijk hun telefoon ophaalt en uw vraagcentrum ro
 
 ## De CX-app gebruiken
 
-Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **...** op uw CX App project en klik dan **uitgeven** om het te openen.
+Ga naar [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **...** op uw CX App project en klik dan **uitgeven** om het te openen.
 
-![ Demo ](./images/cxapp3.png)
+![&#x200B; Demo &#x200B;](./images/cxapp3.png)
 
 In uw project van CX App, ga naar **Integraties**. Klik **Uitgezochte milieu**.
 
-![ Demo ](./images/cxapp3a.png)
+![&#x200B; Demo &#x200B;](./images/cxapp3a.png)
 
 Selecteer het bezit van de Inzameling van Gegevens van Adobe Experience Platform dat in Aan de slag werd gecreeerd. U moet het bezit selecteren dat **(cx-app)** in zijn naam heeft.
 
-![ Demo ](./images/cxapp4.png)
+![&#x200B; Demo &#x200B;](./images/cxapp4.png)
 
 Dan zie je dit. Klik **Looppas**.
 
-![ Demo ](./images/cxapp4a.png)
+![&#x200B; Demo &#x200B;](./images/cxapp4a.png)
 
 Daarna, moet u één van uw identiteiten en volgens namespace selecteren, en **onderzoek-pictogram** klikken.
 
-![ Profiel van de Klant ](./images/identities.png)
+![&#x200B; Profiel van de Klant &#x200B;](./images/identities.png)
 
 | Identiteit | Naamruimte |
 |:-------------:| :---------------:|
@@ -50,13 +50,13 @@ Daarna, moet u één van uw identiteiten en volgens namespace selecteren, en **o
 | E-mailid | woutervangeluwe+18112024-01@gmail.com |
 | Mobiel nummer-id | +32473622044+18112024-01 |
 
-![ Demo ](./images/19.png)
+![&#x200B; Demo &#x200B;](./images/19.png)
 
 U zult nu de informatie zien die idealiter in het Centrum van de Vraag zou worden getoond, zodat de agenten van het Centrum van de Vraag alle relevante informatie beschikbaar wanneer het spreken aan een klant hebben.
 
-![ Demo ](./images/20.png)
+![&#x200B; Demo &#x200B;](./images/20.png)
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

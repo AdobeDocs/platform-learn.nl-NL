@@ -15,13 +15,13 @@ ht-degree: 2%
 
 In deze oefening, zult u een publiek creëren door gebruik van de Bouwer van het Publiek van Adobe Experience Platform te maken.
 
-Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../modules/datacollection/module1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 In het menu op de linkerkant, ga naar **Soorten publiek**. Op deze pagina ziet u een overzicht van alle bestaande doelgroepen. Klik op **+ creeer publiek** knoop om een nieuw publiek te beginnen creëren.
 
@@ -114,7 +114,7 @@ U gaat terug naar de overzichtspagina van het publiek.
 
 ![Segmentatie](./images/savedsegment.png)
 
-Volgende Stap: [ 2.1.5 zie uw Real-time Profiel van de Klant in actie in het Centrum van de Vraag ](./ex5.md)
+Volgende Stap: [&#x200B; 2.1.5 zie uw Real-time Profiel van de Klant in actie in het Centrum van de Vraag &#x200B;](./ex5.md)
 
 [Terug naar module 2.1](./real-time-customer-profile.md)
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Een Advertiser-account instellen in Real-Time CDP Collaboration
 
-Leer hoe u een Advertiser-account instelt in Real-Time CDP Collaboration. Voor gedetailleerde documentatie, zie [ aan boord en beheer organisatie ](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
+Leer hoe u een Advertiser-account instelt in Real-Time CDP Collaboration. Voor gedetailleerde documentatie, zie [&#x200B; aan boord en beheer organisatie &#x200B;](https://experienceleague.adobe.com/nl/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)

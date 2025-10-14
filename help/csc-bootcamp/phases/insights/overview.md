@@ -16,7 +16,7 @@ Laten we eens kijken naar een aantal rapporten die je goede inzichten geven over
 
 Het enige wat u moet onthouden, is dat elk veld dat op het platform bestaat (native of door u gemaakt, bijvoorbeeld aangepaste velden) deel kan uitmaken van een rapportage.  De keuzes zijn vrijwel onbeperkt.
 
-Volgende Stap: [ Fase 4 - Inzichten voor een Manager van het Project ](./project-manager.md)
+Volgende Stap: [&#x200B; Fase 4 - Inzichten voor een Manager van het Project &#x200B;](./project-manager.md)
 
 [Ga terug naar fase 3 - Levering: Go/No-Go](../delivery/go-nogo.md)
 

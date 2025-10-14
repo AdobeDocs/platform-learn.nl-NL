@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Experience Platform Web SDK-tagextensie installeren
 
-Leer hoe u de Adobe Experience Platform Web SDK-tagextensie installeert en configureert. De eenvoudigste manier om Web SDK te implementeren is het gebruik van Adobe-tagbeheer, -tags (voorheen Launch genoemd). De de markeringsuitbreiding van SDK van het Platform is de _slechts markeringsuitbreiding_ wordt vereist om gegevens naar _alle toepassingen van Adobe Experience Cloud_, met inbegrip van [ Analytics ](setup-analytics.md), [ Doel ](setup-target.md), [ Audience Manager ](setup-audience-manager.md), Real-Time Customer Data Platform, en [ Journey Optimizer ](setup-web-channel.md) te verzenden!
+Leer hoe u de Adobe Experience Platform Web SDK-tagextensie installeert en configureert. De eenvoudigste manier om Web SDK te implementeren is het gebruik van Adobe-tagbeheer, -tags (voorheen Launch genoemd). De de markeringsuitbreiding van SDK van het Platform is de _slechts markeringsuitbreiding_ wordt vereist om gegevens naar _alle toepassingen van Adobe Experience Cloud_, met inbegrip van [&#x200B; Analytics &#x200B;](setup-analytics.md), [&#x200B; Doel &#x200B;](setup-target.md), [&#x200B; Audience Manager &#x200B;](setup-audience-manager.md), Real-Time Customer Data Platform, en [&#x200B; Journey Optimizer &#x200B;](setup-web-channel.md) te verzenden!
 
 ## Leerdoelstellingen
 
@@ -35,14 +35,14 @@ Eerst moet u een eigenschap tag hebben. Een eigenschap is een container voor all
 
 Een nieuwe eigenschap voor tags maken voor de zelfstudie:
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/data-collection/){target="_blank"}
+1. Open de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Selecteren **[!UICONTROL Tags]** in de linkernavigatie
 1. Selecteer de knop **[!UICONTROL New Property]**
-   ![ voeg een nieuw bezit ](assets/websdk-property-addNewProperty.png) toe
+   ![&#x200B; voeg een nieuw bezit &#x200B;](assets/websdk-property-addNewProperty.png) toe
 1. Als **[!UICONTROL Name]**, ga `Web SDK Course` in (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf deze zelfstudie nemen)
 1. Als **[!UICONTROL Domains]** voert u `enablementadobe.com` in (zoals verderop wordt uitgelegd)
 1. Selecteren **[!UICONTROL Save]**
-   ![ de details van het Bezit ](assets/websdk-property-propertyDetails.png)
+   ![&#x200B; de details van het Bezit &#x200B;](assets/websdk-property-propertyDetails.png)
 
 ## De extensie Web SDK toevoegen
 
@@ -53,7 +53,7 @@ Met uw XDM-schema, gegevensstroom en markeringseigenschap die nu zijn gemaakt, k
 1. Zoeken naar `Adobe Experience Platform Web SDK`
 1. Selecteren **[!UICONTROL Install]**
 
-   ![ installeer de Uitbreiding van SDK van het Web ](assets/extension-platform-web-sdk.png)
+   ![&#x200B; installeer de Uitbreiding van SDK van het Web &#x200B;](assets/extension-platform-web-sdk.png)
 
 
 ## De extensie koppelen aan uw gegevensstroom
@@ -67,11 +67,11 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 
    >[!NOTE]
    >
-   > Als u niet uw gegevensstroom kunt vinden, ga naar [ een datastream ](configure-datastream.md) les vormen en de stappen volgen om te creëren
+   > Als u niet uw gegevensstroom kunt vinden, ga naar [&#x200B; een datastream &#x200B;](configure-datastream.md) les vormen en de stappen volgen om te creëren
 
-   ![ selectie DataStream ](assets/extension-luma-web-sdk-datastream-extension.png)
+   ![&#x200B; selectie DataStream &#x200B;](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [ de uitbreiding van SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
+Voor meer informatie over elke sectie van de uitbreiding, zie [&#x200B; de uitbreiding van SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
 
 >[!NOTE]
 >
@@ -85,4 +85,4 @@ Nu u Platform Web SDK hebt geïnstalleerd en het met de datastream hebt geassoci
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -23,6 +23,6 @@ Laten we de voordelen benadrukken van de mogelijkheden voor gegevensinvoer van F
 
 ## Volgende stappen
 
-Ga terug naar [ Federated de Samenstelling van het Publiek ](./fac.md){target="_blank"}
+Ga terug naar [&#x200B; Federated de Samenstelling van het Publiek &#x200B;](./fac.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

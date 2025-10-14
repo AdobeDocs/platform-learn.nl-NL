@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Bouwstenen voor schema
 
-Deze video bespreekt de belangrijkste bouwsteenelementen van de schema&#39;s van de Gegevens van de Ervaring van het Model (XDM), met inbegrip van gebieden, datatypes, de groepen van het schemagebied, klassen, en gedrag. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
+Deze video bespreekt de belangrijkste bouwsteenelementen van de schema&#39;s van de Gegevens van de Ervaring van het Model (XDM), met inbegrip van gebieden, datatypes, de groepen van het schemagebied, klassen, en gedrag. Voor meer informatie, gelieve de [&#x200B; schemadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)

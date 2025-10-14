@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Activeren aan advertentiepartners door de bestemmingen LiveRamp
 
-Leer hoe u de LiveRamp-doelen in Real-Time CDP configureert om een publiek naar uw activeringspartners te sturen. Voor gedetailleerde documentatie, te zien gelieve [ LiveRamp - op het instappen verbinding ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=nl-NL) en [ LiveRamp - de verbinding van de Distributie ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=nl-NL).
+Leer hoe u de LiveRamp-doelen in Real-Time CDP configureert om een publiek naar uw activeringspartners te sturen. Voor gedetailleerde documentatie, te zien gelieve [&#x200B; LiveRamp - op het instappen verbinding &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=nl-NL) en [&#x200B; LiveRamp - de verbinding van de Distributie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452663/?learn=on&enablevpops&captions=dut)

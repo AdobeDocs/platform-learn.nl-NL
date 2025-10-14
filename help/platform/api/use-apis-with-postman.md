@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Experience Platform API&#39;s gebruiken met Postman
 
-Onderzoek Adobe Experience Platform APIs gebruikend de [ Adobe-Verstrekte Experience Platform API Postman inzamelingen ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [ Variabelen van het Milieu van Adobe Developer Console ](platform-api-authentication.md) en [ geproduceerd toegangstoken ](generate-an-access-token.md).
+Onderzoek Adobe Experience Platform APIs gebruikend de [&#x200B; Adobe-Verstrekte Experience Platform API Postman inzamelingen &#x200B;](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), voortbouwend op de [&#x200B; Variabelen van het Milieu van Adobe Developer Console &#x200B;](platform-api-authentication.md) en [&#x200B; geproduceerd toegangstoken &#x200B;](generate-an-access-token.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)

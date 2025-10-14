@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Segment afstemmen, configuratiestroom
 
-Zodra een segmentaandeel met een gegevenspartner is verbonden, kunt u onderzoeken en beginnen gegevens met partners te delen. Deze video begeleidt u door het proces om een instantie van de Gelijke van het Segment voor een gegevensaandeel te vormen. Voor meer informatie, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
+Zodra een segmentaandeel met een gegevenspartner is verbonden, kunt u onderzoeken en beginnen gegevens met partners te delen. Deze video begeleidt u door het proces om een instantie van de Gelijke van het Segment voor een gegevensaandeel te vormen. Voor meer informatie, gelieve te zien de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)

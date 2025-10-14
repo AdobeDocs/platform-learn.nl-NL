@@ -25,19 +25,19 @@ De producten omvatten alle elementen van een specifiek product, zoals beeldspraa
 
 Begin creërend uw eigen producten, klik de 3 punten **...** en selecteer dan **Producten**.
 
-![ GSPeM ](./images/gspem101.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem101.png)
 
 Klik op **+ Product toevoegen** .
 
-![ GSPeM ](./images/gspem102.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem102.png)
 
 Selecteer **toevoegen manueel** en klik **verdergaan**.
 
-![ GSPeM ](./images/gspem103.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem103.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem104.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem104.png)
 
 Voor de productnaam gebruikt u `--aepUserLdap-- - CitiSignal Mobile Flex Plan` .
 
@@ -63,19 +63,19 @@ Smart Home Families: “One plan. One bill. One less thing to worry about.”
 
 Uw productconfiguratie zou nu als dit moeten kijken. Klik het **rug** pictogram.
 
-![ GSPeM ](./images/gspem105.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem105.png)
 
 Klik op **+ Product toevoegen** .
 
-![ GSPeM ](./images/gspem106.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem106.png)
 
 Selecteer **toevoegen manueel** en klik **verdergaan**.
 
-![ GSPeM ](./images/gspem107.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem107.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem108.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem108.png)
 
 Voor de productnaam gebruikt u `--aepUserLdap-- - CitiSignal Fiber Max` .
 
@@ -101,11 +101,11 @@ Smart Home Families: “Every room. Every device. Always on. Welcome to whole-ho
 
 Uw productconfiguratie zou nu als dit moeten kijken. Klik het **rug** pictogram.
 
-![ GSPeM ](./images/gspem109.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem109.png)
 
 U zou dan de 2 producten moeten zien die u vormde.
 
-![ GSPeM ](./images/gspem110.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem110.png)
 
 ## 1.3.2.2 Persoonlijke personen
 
@@ -115,19 +115,19 @@ GenStudio for Performance Marketing gebruikt de macht van richtlijn-merken, Prod
 
 Om uw persona&#39;s te beginnen tot stand te brengen, klik de 3 punten **..** en selecteer dan **Personas**.
 
-![ GSPeM ](./images/gspem111.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem111.png)
 
 Klik op **+ Person toevoegen** .
 
-![ GSPeM ](./images/gspem112.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem112.png)
 
 Selecteer **toevoegen manueel** en klik **verdergaan**.
 
-![ GSPeM ](./images/gspem113.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem113.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem114.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem114.png)
 
 Gebruik voor de naam van de persoon `--aepUserLdap-- - Smart Home Families` .
 
@@ -149,19 +149,19 @@ How-to content or setup guides for non-tech-savvy users
 
 Uw persoonlijke configuratie zou nu als dit moeten kijken. Klik het **rug** pictogram.
 
-![ GSPeM ](./images/gspem115.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem115.png)
 
 Klik op **+ Person toevoegen** .
 
-![ GSPeM ](./images/gspem116.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem116.png)
 
 Selecteer **toevoegen manueel** en klik **verdergaan**.
 
-![ GSPeM ](./images/gspem117.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem117.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem118.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem118.png)
 
 Gebruik voor de naam van de persoon `--aepUserLdap-- - Online Gamers` .
 
@@ -183,19 +183,19 @@ Promotions tied to gaming platforms or bundles (e.g., free months of Xbox Game P
 
 Uw persoonlijke configuratie zou nu als dit moeten kijken. Klik het **rug** pictogram.
 
-![ GSPeM ](./images/gspem119.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem119.png)
 
 Klik op **+ Person toevoegen** .
 
-![ GSPeM ](./images/gspem120.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem120.png)
 
 Selecteer **toevoegen manueel** en klik **verdergaan**.
 
-![ GSPeM ](./images/gspem121.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem121.png)
 
 Dan moet je dit zien.
 
-![ GSPeM ](./images/gspem122.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem122.png)
 
 Gebruik voor de naam van de persoon `--aepUserLdap-- - Remote Professionals` .
 
@@ -217,11 +217,11 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 Uw persoonlijke configuratie zou nu als dit moeten kijken. Klik het **rug** pictogram.
 
-![ GSPeM ](./images/gspem123.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem123.png)
 
 U zou dan de 3 karakters moeten zien die u vormde.
 
-![ GSPeM ](./images/gspem124.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem124.png)
 
 ## 1.3.2.3 Sjablonen
 
@@ -229,169 +229,169 @@ Met GenStudio for Performance Marketing kunnen makers van inhoud snel consistent
 
 Hoewel GenStudio for Performance Marketing het rechtstreeks maken van sjablonen in de toepassing niet ondersteunt, kunt u eenvoudig sjablonen ontwerpen en voorbereiden met populaire ontwerpgereedschappen, zoals Adobe InDesign, Illustrator of Express. Zodra uw ontwerp volledig is, kunt u het voor gebruik in GenStudio for Performance Marketing aanpassen. In deze exercitie, zult u een aantal vooraf bepaalde malplaatjes in GenStudio for Performance Marketing invoeren.
 
-In de vorige oefening, downloadde u het dossier [ CitiSignal-GSPeM-assets.zip ](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) aan uw Desktop en unzipped het. Die map bevat vier voorbeeldsjablonen die u nu in GenStudio moet importeren.
+In de vorige oefening, downloadde u het dossier [&#x200B; CitiSignal-GSPeM-assets.zip &#x200B;](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) aan uw Desktop en unzipped het. Die map bevat vier voorbeeldsjablonen die u nu in GenStudio moet importeren.
 
-![ GSPeM ](./images/gspem17.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem17.png)
 
 ### Meta-sjabloon
 
 Ga naar **Inhoud** > **Malplaatjes**. Klik op **+ Sjabloon toevoegen** .
 
-![ GSPeM ](./images/gspem125.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem125.png)
 
 Selecteer **Meta advertenties** en klik dan **doorbladeren**.
 
-![ GSPeM ](./images/gspem126.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem126.png)
 
 In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgersignaal-meta-ad.html** en klik **Open**.
 
-![ GSPeM ](./images/gspem127.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem127.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ GSPeM ](./images/gspem128.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem128.png)
 
 Klik **daarna**.
 
-![ GSPeM ](./images/gspem129.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem129.png)
 
 Gebruik dit voor het gebied **naam van het Malplaatje**:
 `--aepUserLdap---citisignal-meta-ad` en plaats de aspectverhouding aan **1:1**. Klik **publiceren malplaatje**.
 
-![ GSPeM ](./images/gspem130.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem130.png)
 
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
-![ GSPeM ](./images/gspem131.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem131.png)
 
 ### Banner Ad-sjablonen weergeven
 
 Klik op **+ Sjabloon toevoegen** .
 
-![ GSPeM ](./images/gspem132.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem132.png)
 
 Selecteer **Banner en vertoningsadvertenties** en klik dan **doorbladeren**.
 
-![ GSPeM ](./images/gspem133.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem133.png)
 
 In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgerschap-displaytemplate-300x250.html** en klik **Open**.
 
-![ GSPeM ](./images/gspem134.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem134.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ GSPeM ](./images/gspem135.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem135.png)
 
 Klik **daarna**.
 
-![ GSPeM ](./images/gspem136.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem136.png)
 
 Gebruik dit voor het gebied **naam van het Malplaatje**:
 `--aepUserLdap---citisignal-displaytemplate-300x250` en plaats **Advertentiebreedte** en **Advertentie** aan **300x250**. Klik **publiceren malplaatje**.
 
-![ GSPeM ](./images/gspem137.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem137.png)
 
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
-![ GSPeM ](./images/gspem138.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem138.png)
 
 Klik op **+ Sjabloon toevoegen** .
 
-![ GSPeM ](./images/gspem139.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem139.png)
 
 Selecteer **Banner en vertoningsadvertenties** en klik dan **doorbladeren**.
 
-![ GSPeM ](./images/gspem140.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem140.png)
 
 In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgerschap-displaytemplate-300x600.html** en klik **Open**.
 
-![ GSPeM ](./images/gspem141.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem141.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ GSPeM ](./images/gspem142.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem142.png)
 
 Klik **daarna**.
 
-![ GSPeM ](./images/gspem143.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem143.png)
 
 Gebruik dit voor het gebied **naam van het Malplaatje**:
 `--aepUserLdap---citisignal-displaytemplate-300x600` en plaats **Advertentiebreedte** en **Advertentie** aan **300x600**. Klik **publiceren malplaatje**.
 
-![ GSPeM ](./images/gspem144.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem144.png)
 
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
-![ GSPeM ](./images/gspem145.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem145.png)
 
 Klik op **+ Sjabloon toevoegen** .
 
-![ GSPeM ](./images/gspem146.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem146.png)
 
 Selecteer **Banner en vertoningsadvertenties** en klik dan **doorbladeren**.
 
-![ GSPeM ](./images/gspem147.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem147.png)
 
 In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgerschap-displaytemplate-970x250.html** en klik **Open**.
 
-![ GSPeM ](./images/gspem148.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem148.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ GSPeM ](./images/gspem149.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem149.png)
 
 Klik **daarna**.
 
-![ GSPeM ](./images/gspem150.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem150.png)
 
 Gebruik dit voor het gebied **naam van het Malplaatje**:
 `--aepUserLdap---citisignal-displaytemplate-970x250` en plaats **Advertentiebreedte** en **Advertentie** aan **970x250**. Klik **publiceren malplaatje**.
 
-![ GSPeM ](./images/gspem151.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem151.png)
 
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
-![ GSPeM ](./images/gspem152.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem152.png)
 
 ### E-mailsjabloon
 
 Klik op **+ Sjabloon toevoegen** .
 
-![ GSPeM ](./images/gspem153.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem153.png)
 
 Selecteer **E-mail** en klik dan **doorbladeren**.
 
-![ GSPeM ](./images/gspem154.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem154.png)
 
 In de omslag die de gedownloade **CitiSignal-GSPeM-activa** dossiers bevat, navigeer aan de omslag **malplaatjes**. Selecteer het dossier **burgerschap-email-template.html** en klik **Open**.
 
-![ GSPeM ](./images/gspem155.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem155.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ GSPeM ](./images/gspem156.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem156.png)
 
 Klik **daarna**.
 
-![ GSPeM ](./images/gspem157.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem157.png)
 
 Gebruik dit voor het gebied **naam van het Malplaatje**:
 `--aepUserLdap---citisignal-email-template` .
 
 Klik **publiceren malplaatje**.
 
-![ GSPeM ](./images/gspem158.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem158.png)
 
 Uw sjabloon is nu opgeslagen en is beschikbaar in de sjabloonbibliotheek.
 
-![ GSPeM ](./images/gspem159.png)
+![&#x200B; GSPeM &#x200B;](./images/gspem159.png)
 
 U hebt nu de malplaatjes gevormd die u voor de volgende oefening nodig hebt.
 
 ## Volgende stappen
 
-Ga naar [ Activering van de Campagne aan Meta ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; Activering van de Campagne aan Meta &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ GenStudio for Performance Marketing ](./genstudio.md){target="_blank"}
+Ga terug naar [&#x200B; GenStudio for Performance Marketing &#x200B;](./genstudio.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

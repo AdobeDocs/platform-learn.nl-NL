@@ -37,31 +37,31 @@ Hier is een voorbeeld van het migreren van een regel die voorwaardelijk brandt. 
 
 1. Zoek de voorwaardelijke regel. In dit voorbeeld vinden we de regel van de code voor het bijhouden van campagnes en selecteren deze.
 
-   ![ het volgen van de campagne coderegel uitgezocht ](assets/campaign-tracking-code-rule-select.jpg)
+   ![&#x200B; het volgen van de campagne coderegel uitgezocht &#x200B;](assets/campaign-tracking-code-rule-select.jpg)
 
 1. Wanneer de regel opent, kunnen wij zien dat er een voorwaarde op deze regel die op een parameter van het vraagkoord wordt gebaseerd is. We hoeven niets aan de voorwaarde te wijzigen, omdat we alleen de actie willen bijwerken/migreren, niet de gebeurtenis of de voorwaarde.
 1. Klik in **Adobe Analytics - Reeks Veranderlijke** actie
 1. Noteer alles wat in de handeling is ingesteld. In dit voorbeeld, merken wij op dat **event101** wordt geplaatst, evenals de **3&rbrace; variabele van de Campagne &lbrace;.**
 
-   ![ event101 ](assets/event101.jpg)
-   ![ campagne var ](assets/campaign-variable.jpg)
+   ![&#x200B; event101 &#x200B;](assets/event101.jpg)
+   ![&#x200B; campagne var &#x200B;](assets/campaign-variable.jpg)
 
 1. Wij klikten binnen slechts om de nota te maken, en wij te hoeven om het even wat niet te veranderen, zodat kunnen wij nu eenvoudig **annuleren** klikken.
 1. Creeer een nieuwe actie door op **plus pictogram** in de actiessectie te klikken
 
-   ![ nieuwe actie ](assets/new-action-conditional-rule.jpg)
+   ![&#x200B; nieuwe actie &#x200B;](assets/new-action-conditional-rule.jpg)
 
 1. Vorm de nieuwe regel
    1. Selecteer **SDK van het Web van Adobe Experience Platform** van de drop-down Uitbreiding.
    1. Selecteer **Variabele van de Update** van het drop-down Type van Actie.
    1. In het rechterpaneel, selecteer het **voorwerp van Analytics** binnen het gegevensvoorwerp
 
-      ![ veranderlijke actie van de Update ](assets/configure-conditional-rule-action.jpg)
+      ![&#x200B; veranderlijke actie van de Update &#x200B;](assets/configure-conditional-rule-action.jpg)
 
 1. Stel nu event101 en de campagnevariabele in op dezelfde waarden als in de bestaande actie.
 
-   ![ Reeks event101 ](assets/web-sdk-event101.jpg)
-   ![ Vastgestelde campagne ](assets/web-sdk-campaign-var.jpg)
+   ![&#x200B; Reeks event101 &#x200B;](assets/web-sdk-event101.jpg)
+   ![&#x200B; Vastgestelde campagne &#x200B;](assets/web-sdk-campaign-var.jpg)
 
 1. Nu kunt u **veranderingen** houden en **sparen aan Bibliotheek**, en uw regel is gemigreerd aan Web SDK.
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Experience Platform-toepassingen leren met AI Assistant
 
-Meer informatie over Adobe Experience Platform-toepassingen vindt u in AI Assistant. Voor meer informatie, zie de [ AI Hulp documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/home).
+Meer informatie over Adobe Experience Platform-toepassingen vindt u in AI Assistant. Voor meer informatie, zie de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441030/?learn=on&enablevpops&captions=dut)

@@ -21,7 +21,7 @@ Zie hieronder voor het testen van inline-afbeeldingen met verschillende syntaxis
 
 ## HTML / breedte zonder aanhalingstekens
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
@@ -34,7 +34,7 @@ Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-ses
 
 ## HTML / breedte met aanhalingstekens
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
@@ -48,33 +48,33 @@ Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-ses
 
 ## Markering/breedte zonder aanhalingstekens
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer een product.
-1. Selecteer ![ sparen voor later ](assets/saveforlater.png){width=15} (iOS) of ![ sparen voor later ](assets/heart.png){width=25} (Android).
-1. Selecteer ![ toe:voegen aan kar ](assets/addtocart.png){width=20}.
-1. Selecteer ![ Aankoop ](assets/purchase.png){width=15}.
+1. Selecteer ![&#x200B; sparen voor later &#x200B;](assets/saveforlater.png){width=15} (iOS) of ![&#x200B; sparen voor later &#x200B;](assets/heart.png){width=25} (Android).
+1. Selecteer ![&#x200B; toe:voegen aan kar &#x200B;](assets/addtocart.png){width=20}.
+1. Selecteer ![&#x200B; Aankoop &#x200B;](assets/purchase.png){width=15}.
 
 
 ## Markering/breedte met aanhalingstekens
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer een product.
-1. Selecteer ![ sparen voor later ](assets/saveforlater.png){width="15"} (iOS) of ![ sparen voor later ](assets/heart.png){width="25"} (Android).
-1. Selecteer ![ toe:voegen aan kar ](assets/addtocart.png){width="20"}.
-1. Selecteer ![ Aankoop ](assets/purchase.png){width="15"}.
+1. Selecteer ![&#x200B; sparen voor later &#x200B;](assets/saveforlater.png){width="15"} (iOS) of ![&#x200B; sparen voor later &#x200B;](assets/heart.png){width="25"} (Android).
+1. Selecteer ![&#x200B; toe:voegen aan kar &#x200B;](assets/addtocart.png){width="20"}.
+1. Selecteer ![&#x200B; Aankoop &#x200B;](assets/purchase.png){width="15"}.
 
 
 ## HTML / geen breedte
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
@@ -87,12 +87,12 @@ Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-ses
 
 ## Markering/geen breedte
 
-Herzie de [ sectie van opstellingsinstructies ](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
+Herzie de [&#x200B; sectie van opstellingsinstructies &#x200B;](assurance.md#connecting-to-a-session) om uw simulator of apparaat met Assurance te verbinden.
 
 1. Het Assurance-pictogram naar links verplaatsen.
 1. Selecteer **[!UICONTROL Home]** in de tabbalk en controleer of de **[!UICONTROL ECID]** , **[!UICONTROL Email]** en **[!UICONTROL CRM ID]** in het scherm Home worden weergegeven.
 1. Selecteer **[!DNL Products]** in de tabbalk.
 1. Selecteer een product.
-1. Selecteer ![ sparen voor later ](assets/saveforlater.png) (iOS) of ![ sparen voor later ](assets/heart.png) (Android).
-1. Selecteer ![ toe:voegen aan kar ](assets/addtocart.png).
-1. Selecteer ![ Aankoop ](assets/purchase.png).
+1. Selecteer ![&#x200B; sparen voor later &#x200B;](assets/saveforlater.png) (iOS) of ![&#x200B; sparen voor later &#x200B;](assets/heart.png) (Android).
+1. Selecteer ![&#x200B; toe:voegen aan kar &#x200B;](assets/addtocart.png).
+1. Selecteer ![&#x200B; Aankoop &#x200B;](assets/purchase.png).

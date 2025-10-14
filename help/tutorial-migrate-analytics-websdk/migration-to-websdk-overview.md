@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # Adobe Analytics migreren naar Web SDK met tags
 
-Leer de stappen om een implementatie van Adobe Analytics te migreren gebruikend de uitbreiding van Analytics in de Markeringen van het Experience Platform (vroeger die als Lancering wordt bekend) aan Web SDK, die de uitbreiding van SDK van het Web ook in Markeringen gebruikt. Wanneer de extensie Adobe Analytics in Tags wordt gebruikt, wordt achter de schermen de code &quot;AppMeasurement.js&quot; gebruikt. Daarom kunt u aan dit als een leerprogramma denken dat AppMeasurement aan het Web SDK migreert, maar dit leerprogramma is volledig in Markeringen en behandelt NIET het bewegen van naar of van een implementatie van JavaScript (met uitzondering van de code van JavaScript die binnen de Codes UI wordt gebruikt). Voor migratie van de implementaties van JavaScript, gelieve te zien de [ documentatie ](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+Leer de stappen om een implementatie van Adobe Analytics te migreren gebruikend de uitbreiding van Analytics in de Markeringen van het Experience Platform (vroeger die als Lancering wordt bekend) aan Web SDK, die de uitbreiding van SDK van het Web ook in Markeringen gebruikt. Wanneer de extensie Adobe Analytics in Tags wordt gebruikt, wordt achter de schermen de code &quot;AppMeasurement.js&quot; gebruikt. Daarom kunt u aan dit als een leerprogramma denken dat AppMeasurement aan het Web SDK migreert, maar dit leerprogramma is volledig in Markeringen en behandelt NIET het bewegen van naar of van een implementatie van JavaScript (met uitzondering van de code van JavaScript die binnen de Codes UI wordt gebruikt). Voor migratie van de implementaties van JavaScript, gelieve te zien de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
 >[!NOTE]
 >
 >Soortgelijke migratiezelfstudies zijn beschikbaar voor:
 >
-> * [ Adobe Target ](../tutorial-migrate-target-websdk/introduction.md)
-> * [ Adobe Audience Manager ](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [&#x200B; Adobe Target &#x200B;](../tutorial-migrate-target-websdk/introduction.md)
+> * [&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ Er zijn waarschijnlijk veel manieren waarop u dit migratieproces kunt uitvoeren,
 Terwijl u de stappen doorloopt, zijn er een aantal punten die belangrijk zijn om te begrijpen:
 
 1. Ten eerste hebt u wellicht al deze stappen nodig. Er is bijvoorbeeld een les over het migreren van aangepaste code. Als u een implementatie van Markeringen hebt die geen douanecode (met inbegrip van het gebruiken van stop-ins) gebruikt, dan zult u deze les niet nodig hebben. We hebben geprobeerd de lessen op te nemen die de meeste gebruikers nodig hebben, dus lees in ieder geval de lessen om te zien of u tijdens uw migratie aanpassingen aan uw site moet aanbrengen.
-1. Bovendien is er gewoon geen manier voor ons om een migratiezelfstudie te maken die 100% van de gebruiksgevallen zal bestrijken die iedereen gebruikt. Zoals in het vorige punt vermeld, hebben we geprobeerd de lessen op te nemen die de meeste mensen nodig zullen hebben en die betrekking zullen hebben op de meeste gevallen van gebruik. Er zullen echter ongetwijfeld gebruiksgevallen zijn die niet in deze zelfstudie aan de orde komen. In dit geval, zie of geven de inbegrepen lessen u een goed idee van hoe u voor uw gebruiksgeval zou moeten migreren. U kunt uw edelen in de [ Gemeenschap van het Experience League voor gegevensinzameling ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community) ook vragen.
+1. Bovendien is er gewoon geen manier voor ons om een migratiezelfstudie te maken die 100% van de gebruiksgevallen zal bestrijken die iedereen gebruikt. Zoals in het vorige punt vermeld, hebben we geprobeerd de lessen op te nemen die de meeste mensen nodig zullen hebben en die betrekking zullen hebben op de meeste gevallen van gebruik. Er zullen echter ongetwijfeld gebruiksgevallen zijn die niet in deze zelfstudie aan de orde komen. In dit geval, zie of geven de inbegrepen lessen u een goed idee van hoe u voor uw gebruiksgeval zou moeten migreren. U kunt uw edelen in de [&#x200B; Gemeenschap van het Experience League voor gegevensinzameling &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community) ook vragen.
 
 Het migratieproces omvat de volgende belangrijke stappen:
 
@@ -81,5 +81,5 @@ Het migratieproces omvat de volgende belangrijke stappen:
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn bij uw migratie van Analytics naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie mist in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}  te posten.
+>We helpen u graag succesvol te zijn bij uw migratie van Analytics naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie mist in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}  te posten.
 

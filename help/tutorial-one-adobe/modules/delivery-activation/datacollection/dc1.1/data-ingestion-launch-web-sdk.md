@@ -23,20 +23,20 @@ Deze module introduceert enkele concepten en technologieën die een impact hebbe
 - Leer de gegevensstromen die door een merk worden gebruikt om gegevens aan hun producten van Adobe in te voeren.
 - Leer hoe u gegevens naar de Adobe Experience Platform en andere producten kunt verzenden via de Adobe Experience Platform Edge Network.
 - Leer hoe u gegevenselementen en regels maakt die gegevens verzamelen van internet en mobiele apparatuur.
-- Leer over het [ Web SDK ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) volgende gebeurtenissen en hoe te om hun inhoud te zuiveren.
+- Leer over het [&#x200B; Web SDK &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) volgende gebeurtenissen en hoe te om hun inhoud te zuiveren.
 - Leer wat een gegevenslaag is en wat Adobe aanbeveelt bij de implementatie.
-- Leer wat de stappen [ SDK van het Web ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) van kras moeten uitvoeren.
+- Leer wat de stappen [&#x200B; SDK van het Web &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/home) van kras moeten uitvoeren.
 - Leer het verschil tussen een web- en mobiele implementatie.
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot de Inzameling van Gegevens van Adobe Experience Platform: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot de demo-website
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -72,7 +72,7 @@ Om ervoor te zorgen dat de SDK van het Web gegevens in Adobe Experience Platform
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

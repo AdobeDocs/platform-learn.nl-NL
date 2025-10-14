@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom maakt in Experience Platform.
 
-Een gegevensstroom is een server-zijconfiguratie op Platform Edge Network. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Platform Edge Network aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [ documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) of deze [ video ](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Een gegevensstroom is een server-zijconfiguratie op Platform Edge Network. De gegevensstroom zorgt ervoor dat de inkomende gegevens aan het Platform Edge Network aan de toepassingen en de diensten van Adobe Experience Cloud geschikt worden verpletterd. Voor meer informatie, zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) of deze [&#x200B; video &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architectuur](assets/architecture.png){zoomable="yes"}
 
@@ -39,23 +39,23 @@ Gegevensstromen kunnen in de [!UICONTROL Data Collection] interface worden gecre
 1. Selecteer **[!UICONTROL Datastreams]** in het linkerspoor.
 1. Selecteer **[!UICONTROL New Datastream]**.
 
-   ![ datastreams huis ](assets/datastream-new.png){zoomable="yes"}
+   ![&#x200B; datastreams huis &#x200B;](assets/datastream-new.png){zoomable="yes"}
 
 1. Geef bijvoorbeeld een **[!UICONTROL Name]** `Luma Mobile App` en een **[!UICONTROL Description]** `Datastream for Luma Mobile App` op.
 
    >[!NOTE]
    >
-   >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Dataset` in plaats van `Luma Mobile App Event Dataset - Joe Smith` . Zie ook de nota in [ Overzicht ](overview.md).
+   >Laatste herinnering: als u deze zelfstudie doorloopt met meerdere personen in één sandbox of als u een gedeelde account gebruikt, kunt u overwegen een identificatie toe te voegen of voor te bereiden als onderdeel van uw naamgevingsconventies. Gebruik bijvoorbeeld `Luma Mobile App Event Dataset` in plaats van `Luma Mobile App Event Dataset - Joe Smith` . Zie ook de nota in [&#x200B; Overzicht &#x200B;](overview.md).
 
 1. Selecteer het schema dat u in de vorige les van het **Schema van de Gebeurtenis** lijst creeerde.
 1. Selecteer **[!UICONTROL Save]**.
 
-   ![ nieuwe gegevensstromen ](assets/datastream-name.png){zoomable="yes"}
+   ![&#x200B; nieuwe gegevensstromen &#x200B;](assets/datastream-name.png){zoomable="yes"}
 
 
 ## Services toevoegen
 
-Wanneer u door de (facultatieve) [ Analytics ](analytics.md) en [ Experience Platform ](platform.md) lessen in dit leerprogramma gaat, voegt u de diensten aan uw gegevensstroom toe zodat de gegevens die naar Platform Edge Network worden verzonden aan deze toepassingen door:sturen.
+Wanneer u door de (facultatieve) [&#x200B; Analytics &#x200B;](analytics.md) en [&#x200B; Experience Platform &#x200B;](platform.md) lessen in dit leerprogramma gaat, voegt u de diensten aan uw gegevensstroom toe zodat de gegevens die naar Platform Edge Network worden verzonden aan deze toepassingen door:sturen.
 
 <!--
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Zie [ gegevensstroommontages ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) voor meer informatie.
+>Als u alle services inschakelt die uw organisatie gebruikt, zorgt u ervoor dat gegevens die in de mobiele app zijn verzameld, overal kunnen worden gebruikt. Zie [&#x200B; gegevensstroommontages &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) voor meer informatie.
 
 Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk drie gegevensstreams maken om toe te wijzen aan uw drie tagomgevingen (ontwikkeling, stadium en productie). Als u Platform Mobile SDK gebruikt met platformgebaseerde toepassingen, zoals Adobe Real-Time Customer Data Platform of Adobe Journey Optimizer, moet u deze gegevensstromen maken in de juiste sandboxen.
 
@@ -110,6 +110,6 @@ Wanneer u Platform Mobile SDK implementeert in uw eigen app, moet u uiteindelijk
 >
 >U hebt nu een gegevensstroom voor de rest van de zelfstudie te gebruiken.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 Volgende: **[vorm een markeringsbezit](configure-tags.md)**

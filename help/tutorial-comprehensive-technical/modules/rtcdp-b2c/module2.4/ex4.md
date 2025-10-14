@@ -34,39 +34,39 @@ Een publiekskwalificatie in Adobe Experience Platform heeft altijd a **status** 
 
 ## Het publiek samenstellen
 
-Login aan Adobe Experience Platform door naar dit URL te gaan: [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform).
+Login aan Adobe Experience Platform door naar dit URL te gaan: [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform).
 
 Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/home.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../modules/datacollection/module1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Na het selecteren van de aangewezen zandbak, zult u de het schermverandering zien en nu bent u in uw specifieke zandbak.
 
-![ Ingestie van Gegevens ](./../../../modules/datacollection/module1.2/images/sb1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 Ga naar **Soorten publiek**. Klik op de knop **+ voor een publiek maken** .
 
-![ Ingestie van Gegevens ](./images/seg.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/seg.png)
 
 Selecteer **bouwt regel** en klik **creëren**.
 
-![ Ingestie van Gegevens ](./images/seg1.png)
+![&#x200B; Ingestie van Gegevens &#x200B;](./images/seg1.png)
 
 Noem uw publiek `--aepUserLdap-- - Interest in Plans`, plaats de evaluatiemethode aan **Edge** en voeg de paginanaam van de ervaringsgebeurtenis toe.
 
 Klik op **Gebeurtenissen**, en belemmering en laat vallen **XDM ExperienceEvent > Web > Web-pagina details > Naam**. Ga **plannen** als waarde in:
 
-![ 4-05-create-ee-2.png ](./images/405createee2.png)
+![&#x200B; 4-05-create-ee-2.png &#x200B;](./images/405createee2.png)
 
 De belemmering en laat vallen **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Ga `--aepUserLdap--` als waarde in, plaats de vergelijkingsparameter aan **bevat** en klik **Publish**:
 
-![ 4-05-create-ee-2-brand.png ](./images/405createee2brand.png)
+![&#x200B; 4-05-create-ee-2-brand.png &#x200B;](./images/405createee2brand.png)
 
 Uw publiek is nu gepubliceerd.
 
-![ 4-05-create-ee-2-brand.png ](./images/405createee2brand1.png)
+![&#x200B; 4-05-create-ee-2-brand.png &#x200B;](./images/405createee2brand1.png)
 
-Volgende Stap: [ 2.4.5 activeert uw publiek ](./ex5.md)
+Volgende Stap: [&#x200B; 2.4.5 activeert uw publiek &#x200B;](./ex5.md)
 
 [Terug naar module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

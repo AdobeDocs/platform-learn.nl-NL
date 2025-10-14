@@ -28,7 +28,7 @@ Wij zullen gegevens gebruiken die in platform zijn ingespoten gebruikend of de G
 ## Vereisten
 
 - Enige vertrouwdheid met SQL wordt geprefereerd maar vereist
-- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Datasets (dataset die tijdens laboratorium wordt gebruikt, voorgeladen voor u)
 - PostgreSQL
 - Tableau of Microsoft Power BI Desktop
@@ -39,7 +39,7 @@ Wij zullen gegevens gebruiken die in platform zijn ingespoten gebruikend of de G
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -79,7 +79,7 @@ In deze oefening zult u de dienst API van de Vraag gebruiken om vraagmalplaatjes
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

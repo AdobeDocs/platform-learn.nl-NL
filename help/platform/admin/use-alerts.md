@@ -17,6 +17,6 @@ ht-degree: 5%
 
 # Waarschuwingen gebruiken
 
-Leer hoe je je kunt abonneren op en berichten beheren in Adobe Experience Platform. Met waarschuwingen kunt u verschillende processen controleren om ervoor te zorgen dat de implementatie van het platform probleemloos wordt uitgevoerd. Voor meer informatie, gelieve de [ documentatie van het Alarm ](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=nl-NL) te bezoeken.
+Leer hoe je je kunt abonneren op en berichten beheren in Adobe Experience Platform. Met waarschuwingen kunt u verschillende processen controleren om ervoor te zorgen dat de implementatie van het platform probleemloos wordt uitgevoerd. Voor meer informatie, gelieve de [&#x200B; documentatie van het Alarm &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=nl-NL) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on&enablevpops)

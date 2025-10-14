@@ -32,9 +32,9 @@ Als een specifieke toepassingsservice niet is ingericht voor uw IMS-organisatie,
 
 ## Een sandbox maken
 
-Als u de zelfstudie wilt doorlopen in uw eigen Adobe Experience Platform-instantie, is het raadzaam eerst een nieuwe ontwikkelingssandbox in te stellen. Om een nieuwe zandbak tot stand te brengen, ga [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), ga naar Sandboxes en ga dan naar **doorbladeren**. Klik **creeer zandbak**.
+Als u de zelfstudie wilt doorlopen in uw eigen Adobe Experience Platform-instantie, is het raadzaam eerst een nieuwe ontwikkelingssandbox in te stellen. Om een nieuwe zandbak tot stand te brengen, ga [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform), ga naar Sandboxes en ga dan naar **doorbladeren**. Klik **creeer zandbak**.
 
-![ creeer zandbak ](./assets/images/sandbox1.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/sandbox1.png)
 
 Maak uw zandbak als volgt:
 
@@ -44,11 +44,11 @@ Maak uw zandbak als volgt:
 
 Klik **creëren**.
 
-![ creeer zandbak ](./assets/images/sandbox2.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/sandbox2.png)
 
 Uw sandbox wordt nu gemaakt. Na een paar minuten zie je dit.
 
-![ creeer zandbak ](./assets/images/sandbox3.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/sandbox3.png)
 
 ## Machtigingen instellen
 
@@ -56,78 +56,78 @@ Ga naar **Toestemmingen**, dan gaan **Rollen**.
 
 Klik om de specifieke **Rol** te openen die door de studenten zal worden gebruikt die door dit leerprogramma zullen gaan. Klik **creeer rol**.
 
-![ creeer zandbak ](./assets/images/perm1.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm1.png)
 
 Geef uw rol een naam als **Zelfstudie van Adobe Experience Platform**, klik **bevestigen**.
 
-![ creeer zandbak ](./assets/images/perm2.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm2.png)
 
 In het **zandbakken** dropdown menu, selecteer de zandbak die u enkel creeerde en verzekerde om het even welke andere zandbak (ook verwijder **Prod**) te verwijderen.
 
-![ creeer zandbak ](./assets/images/perm3.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm3.png)
 
 Voeg de verschillende bronnen toe en stel machtigingen in. Gelieve te verzekeren niet om het even welke toestemmingen voor **Beleid Sandbox** toe te voegen.
 
-![ creeer zandbak ](./assets/images/perm4.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm4.png)
 
 Voeg meer bronnen toe zoals aangegeven en stel machtigingen in.
 
-![ creeer zandbak ](./assets/images/perm5.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm5.png)
 
 Voeg meer bronnen toe zoals aangegeven en stel machtigingen in. Klik **sparen**. Dan, klik **dicht**.
 
-![ creeer zandbak ](./assets/images/perm6.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/perm6.png)
 
 ## Adobe I/O instellen
 
 Ga naar
-[ https://developer.adobe.com/console/integrations ](https://developer.adobe.com/console/integrations). Zorg ervoor dat je in de juiste instantie bent. Klik **creëren nieuw project**.
+[&#x200B; https://developer.adobe.com/console/integrations &#x200B;](https://developer.adobe.com/console/integrations). Zorg ervoor dat je in de juiste instantie bent. Klik **creëren nieuw project**.
 
-![ creeer zandbak ](./assets/images/io1.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io1.png)
 
 Klik **toevoegen aan Project** en klik dan **API**.
 
-![ creeer zandbak ](./assets/images/io2.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io2.png)
 
 Klik **Adobe Experience Platform** en laat dan **Experience Platform API** toe. Klik **daarna**.
 
-![ creeer zandbak ](./assets/images/io3.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io3.png)
 
 Voor de **Referentienaam**, gebruik **DSN AEP Leerprogramma**. Klik **daarna**.
 
-![ creeer zandbak ](./assets/images/io4.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io4.png)
 
 Selecteer een van de beschikbare productprofielen. Dit productprofiel bepaalt geen toestemmingen voor dit project van Adobe I/O - dit zal in een volgende stap worden gedaan. Klik **sparen gevormde API**.
 
-![ creeer zandbak ](./assets/images/io5.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io5.png)
 
 Klik **toevoegen aan Project** en klik dan **API** opnieuw.
 
-![ creeer zandbak ](./assets/images/io6.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io6.png)
 
 Klik **Adobe Experience Platform** en laat dan **Experience Platform Launch API** toe. Klik **daarna**.
 
-![ creeer zandbak ](./assets/images/io7.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io7.png)
 
 Klik **daarna**.
 
-![ creeer zandbak ](./assets/images/io8.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io8.png)
 
 Selecteer een productprofiel waarmee u eigenschappen voor gegevensverzameling kunt maken en beheren. Klik **sparen gevormde API**.
 
-![ creeer zandbak ](./assets/images/io9.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io9.png)
 
 Dan zie je dit. Klik de huidige **naam van 0&rbrace; Project XXX.**
 
-![ creeer zandbak ](./assets/images/io10.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io10.png)
 
 Klik **uitgeven Project**.
 
-![ creeer zandbak ](./assets/images/io11.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io11.png)
 
 Ga een nieuwe **Titel van het Project** in, zoals **het Leerprogramma van DSN Adobe Experience Platform**. Klik **sparen**.
 
-![ creeer zandbak ](./assets/images/io12.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/io12.png)
 
 Uw Adobe I/O-project is nu klaar.
 
@@ -135,19 +135,19 @@ Uw Adobe I/O-project is nu klaar.
 
 Ga naar **Toestemmingen**, aan **Rollen** en klik dan de nieuwe rol u vroeger creeerde.
 
-![ creeer zandbak ](./assets/images/role1.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/role1.png)
 
 Ga naar **API geloofsbrieven**. Klik op **+ Add API credentials**.
 
-![ creeer zandbak ](./assets/images/role2.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/role2.png)
 
 Vervolgens ziet u de Adobe I/O-referentie die u in de vorige stap hebt gemaakt. Selecteer het en klik **sparen**.
 
-![ creeer zandbak ](./assets/images/role3.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/role3.png)
 
 Uw Adobe I/O Project is nu ingesteld met de vereiste machtigingen voor toegang tot Adobe Experience Platform API&#39;s.
 
-![ creeer zandbak ](./assets/images/role4.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/role4.png)
 
 >[!IMPORTANT]
 >
@@ -155,9 +155,9 @@ Uw Adobe I/O Project is nu ingesteld met de vereiste machtigingen voor toegang t
 
 ## Uw omgeving instellen in Demo System Next
 
-Ga naar [ https://dsn.adobe.com/tools/org-admin ](https://dsn.adobe.com/tools/org-admin). Klik op **+ Org toevoegen** .
+Ga naar [&#x200B; https://dsn.adobe.com/tools/org-admin &#x200B;](https://dsn.adobe.com/tools/org-admin). Klik op **+ Org toevoegen** .
 
-![ creeer zandbak ](./assets/images/dsnorg1.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg1.png)
 
 Vul de vereiste velden in:
 
@@ -170,31 +170,31 @@ Uw systeembeheerder zou u met de waarden voor deze gebieden moeten kunnen helpen
 
 Klik **sparen**.
 
-![ creeer zandbak ](./assets/images/dsnorg2.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg2.png)
 
 Uw omgeving wordt nu opgenomen in de lijst. Vind het in de lijst en klik het **verbindings** pictogram.
 
-![ creeer zandbak ](./assets/images/dsnorg3.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg3.png)
 
 U moet nu de waarden ingaan die u als deel van de geloofsbrieven van uw Project van Adobe I/O creeerde. U kunt **identiteitskaart van de Cliënt** vinden, **Geheime Cliënt** en **Scopes** hier:
 
-![ creeer zandbak ](./assets/images/dsnorg4.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg4.png)
 
 **identiteitskaart van de Technische Rekening**:
 
-![ creeer zandbak ](./assets/images/dsnorg5.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg5.png)
 
 Kopieer en kleef die hier, klik **sparen**.
 
-![ creeer zandbak ](./assets/images/dsnorg6.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg6.png)
 
 Uw DSN-omgeving is nu op de juiste wijze ingesteld.
 
 ## Uw toegang tot de DSN-omgeving instellen
 
-Ga naar [ https://dsn.adobe.com/tools/environment-admin ](https://dsn.adobe.com/tools/environment-admin). Selecteer IMS Org die u enkel creeerde, uw gebruiker selecteren en dan klikken **+ toewijzen** onder **Sandboxes**.
+Ga naar [&#x200B; https://dsn.adobe.com/tools/environment-admin &#x200B;](https://dsn.adobe.com/tools/environment-admin). Selecteer IMS Org die u enkel creeerde, uw gebruiker selecteren en dan klikken **+ toewijzen** onder **Sandboxes**.
 
-![ creeer zandbak ](./assets/images/dsnorg7.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg7.png)
 
 Ga de **Naam Sandbox** in die u in de eerste hierboven stap bepaalde. Het moet er als volgt uitzien:
 
@@ -202,33 +202,33 @@ Ga de **Naam Sandbox** in die u in de eerste hierboven stap bepaalde. Het moet e
 
 Klik **bevestigen**.
 
-![ creeer zandbak ](./assets/images/dsnorg8.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg8.png)
 
 Uw sandbox is nu beschikbaar voor de gebruiker die u hebt geselecteerd.
 
-![ creeer zandbak ](./assets/images/dsnorg9.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg9.png)
 
 ## DSN Quick Setup
 
-Ga naar [ https://dsn.adobe.com/quick-setup ](https://dsn.adobe.com/quick-setup). Open het **Milieu** dropdown menu en selecteer uw IMS Org/Sandbox.
+Ga naar [&#x200B; https://dsn.adobe.com/quick-setup &#x200B;](https://dsn.adobe.com/quick-setup). Open het **Milieu** dropdown menu en selecteer uw IMS Org/Sandbox.
 
-![ creeer zandbak ](./assets/images/dsnorg10.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg10.png)
 
 Voor **Configuratie**, uitgezochte **Globale v2.0**.
 
-![ creeer zandbak ](./assets/images/dsnorg11.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg11.png)
 
 De rol neer aan **Industrie - Telco** en selecteert **Signaal van Citi - Geavanceerd**.
 
-![ creeer zandbak ](./assets/images/dsnorg12.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg12.png)
 
 De rol omhoog en klikt **Begin**.
 
-![ creeer zandbak ](./assets/images/dsnorg13.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg13.png)
 
 Ga a **Titel** in en klik **Begin**.
 
-![ creeer zandbak ](./assets/images/dsnorg14.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg14.png)
 
 >[!NOTE]
 >
@@ -236,7 +236,7 @@ Ga a **Titel** in en klik **Begin**.
 
 U zult dan de vooruitgang van de aan de gang zijnde installatie zien, die een paar notulen zal nemen.
 
-![ creeer zandbak ](./assets/images/dsnorg15.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg15.png)
 
 Zodra alles is voltooid, is uw Adobe Experience Platform-exemplaar geconfigureerd en is het klaar voor studenten om de zelfstudie uit te voeren.
 
@@ -244,17 +244,17 @@ Zodra alles is voltooid, is uw Adobe Experience Platform-exemplaar geconfigureer
 >
 >De stap van de Invoer van Gegevens wordt niet gebruikt door het leerprogramma, zodat als die stap ontbreekt, maak zich geen zorgen en gelieve verder te gaan.
 
-![ creeer zandbak ](./assets/images/dsnorg16.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg16.png)
 
-Ga naar [ https://experience.adobe.com/platform ](https://experience.adobe.com/platform), aan **Datasets**. U zou nu een gelijkaardige lijst van datasets moeten zien, die allen door DSN Snelle Opstelling werden gecreeerd.
+Ga naar [&#x200B; https://experience.adobe.com/platform &#x200B;](https://experience.adobe.com/platform), aan **Datasets**. U zou nu een gelijkaardige lijst van datasets moeten zien, die allen door DSN Snelle Opstelling werden gecreeerd.
 
-![ creeer zandbak ](./assets/images/dsnorg17.png)
+![&#x200B; creeer zandbak &#x200B;](./assets/images/dsnorg17.png)
 
 >[!NOTE]
 >
 >Bedankt dat u uw tijd hebt geïnvesteerd in het leren van alles wat er over Adobe Experience Platform en zijn toepassingen te weten komt. Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

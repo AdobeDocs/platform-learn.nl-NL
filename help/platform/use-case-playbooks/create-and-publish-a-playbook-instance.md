@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Afspeelboekinstanties maken en publiceren
 
-Leer hoe te om, een geval van een Playbook van het Geval van het Gebruik van deze demonstratie van begin tot eind te ontdekken tot stand te brengen, te publiceren en problemen op te lossen. Voor meer informatie, zie [ creeer, deel, en hergebruik playbook instanties ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=nl-NL).
+Leer hoe te om, een geval van een Playbook van het Geval van het Gebruik van deze demonstratie van begin tot eind te ontdekken tot stand te brengen, te publiceren en problemen op te lossen. Voor meer informatie, zie [&#x200B; creeer, deel, en hergebruik playbook instanties &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

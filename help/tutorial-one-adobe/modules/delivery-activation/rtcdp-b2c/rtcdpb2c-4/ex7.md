@@ -41,43 +41,43 @@ For detailed output, run func with --verbose flag.
 
 ## Uw Citi Signal-website laden
 
-Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
+Ga naar [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![ DSN ](./../../datacollection/dc1.1/images/web8.png)
+![&#x200B; DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![ DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 ## Kwalificeren voor uw publiek
 
 Navigeer aan de **Punten** pagina. Deze actie komt in aanmerking voor het publiek van `--aepUserLdap-- - Interest in Plans` .
 
-![ 6-04-luma-telco-nav-sports.png ](./images/cs1.png)
+![&#x200B; 6-04-luma-telco-nav-sports.png &#x200B;](./images/cs1.png)
 
 Open het deelvenster Profielviewer om dit te verifiëren. U moet nu lid zijn van de `--aepUserLdap-- - Interest in Plans` . Als uw publiekslidmaatschappen nog niet in uw paneel van de Kijker van het Profiel worden bijgewerkt, klik de herladingsknoop.
 
-![ 6-05-luma-telco-nav-breedband.png ](./images/cs2.png)
+![&#x200B; 6-05-luma-telco-nav-breedband.png &#x200B;](./images/cs2.png)
 
 De schakelaar terug naar de Code van Visual Studio en bekijkt uw **TERMINAL** lusje, zou u een lijst van publiek voor uw specifiek **ECID** moeten zien. Deze activeringslading wordt geleverd aan uw gebeurtenishub zodra u voor het `--aepUserLdap-- - Interest in Plans` publiek kwalificeert.
 
-![ 6-06-vsc-activatie-gerealiseerde.png ](./images/cs3.png)
+![&#x200B; 6-06-vsc-activatie-gerealiseerde.png &#x200B;](./images/cs3.png)
 
 Wanneer u een dichtere blik bij de publiekslading neemt, kunt u zien dat `--aepUserLdap-- - Interest in Plans` in status **gerealiseerde** is.
 
@@ -110,8 +110,8 @@ Een publieksstatus van **realiseerde** betekent dat uw profiel deel van het publ
 
 ## Volgende stappen
 
-Ga naar [ Samenvatting en voordelen ](./summary.md){target="_blank"}
+Ga naar [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
 
-Ga terug naar [ Real-Time CDP: Audience Activation aan Microsoft Azure de Hub van de Gebeurtenis ](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Ga terug naar [&#x200B; Real-Time CDP: Audience Activation aan Microsoft Azure de Hub van de Gebeurtenis &#x200B;](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

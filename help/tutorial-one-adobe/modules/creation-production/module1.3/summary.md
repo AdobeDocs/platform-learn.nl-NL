@@ -18,6 +18,6 @@ Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe GenStudio for Per
 
 ## Volgende stappen
 
-Ga terug naar [ GenStudio for Performance Marketing ](./genstudio.md){target="_blank"}
+Ga terug naar [&#x200B; GenStudio for Performance Marketing &#x200B;](./genstudio.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

@@ -28,10 +28,10 @@ Laten we de voordelen van de mogelijkheden voor gegevensinvoer van Adobe Experie
 
 ## Bekijk dit
 
-- Tech Blog: [ Diensten van de Privacy en verder in Adobe Experience Platform ](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
+- Tech Blog: [&#x200B; Diensten van de Privacy en verder in Adobe Experience Platform &#x200B;](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
 
 ## Volgende stappen
 
-Ga terug naar [ Ingestie van Gegevens ](./data-ingestion.md){target="_blank"}
+Ga terug naar [&#x200B; Ingestie van Gegevens &#x200B;](./data-ingestion.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe u Adobe Target implementeert met Adobe Experience Platform Web SDK. Leer hoe u ervaringen kunt bieden en hoe u extra parameters aan Target kunt doorgeven.
 
-[ Adobe Target ](https://experienceleague.adobe.com/nl/docs/target/using/target-home) is de toepassing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, en andere digitale kanalen maximaliseren.
+[&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/target-home) is de toepassing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, en andere digitale kanalen maximaliseren.
 
-![ SDK van het Web en het diagram van Adobe Target ](assets/dc-websdk-at.png)
+![&#x200B; SDK van het Web en het diagram van Adobe Target &#x200B;](assets/dc-websdk-at.png)
 
 ## Leerdoelstellingen
 
@@ -34,7 +34,7 @@ Aan het eind van deze les, kunt u het volgende met een implementatie van SDK van
 
 >[!TIP]
 >
->Zie ons [ Doel van at.js 2.x aan het Web SDK van het Platform ](/help/tutorial-migrate-target-websdk/introduction.md) leerprogramma voor een geleidelijke gids migreren om uw bestaande implementatie te migreren at.js.
+>Zie ons [&#x200B; Doel van at.js 2.x aan het Web SDK van het Platform &#x200B;](/help/tutorial-migrate-target-websdk/introduction.md) leerprogramma voor een geleidelijke gids migreren om uw bestaande implementatie te migreren at.js.
 
 
 ## Vereisten
@@ -42,13 +42,13 @@ Aan het eind van deze les, kunt u het volgende met een implementatie van SDK van
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van vestiging gegevenselementen en regels.
-* Verzeker u een [ Redacteur of rol van de fiatteur ](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target hebt.
-* Installeer de [ Visuele de hulpuitbreiding van Composer van de Ervaring ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u browser van Google Chrome gebruikt.
+* Verzeker u een [&#x200B; Redacteur of rol van de fiatteur &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target hebt.
+* Installeer de [&#x200B; Visuele de hulpuitbreiding van Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u browser van Google Chrome gebruikt.
 * Weet hoe u activiteiten in Target kunt instellen. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
-   * [ Gebruik de Visuele Uitbreiding van de Hulp van Composer van de Ervaring (VEC) ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [ Gebruik Composer van de Visuele Ervaring ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [ gebruik de op vorm-Gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
-   * [ creeer ervaring richtend Activiteiten ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
+   * [&#x200B; Gebruik de Visuele Uitbreiding van de Hulp van Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [&#x200B; Gebruik Composer van de Visuele Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [&#x200B; gebruik de op vorm-Gebaseerde Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [&#x200B; creeer ervaring richtend Activiteiten &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## Flikkeringsafhandeling toevoegen
 
@@ -56,7 +56,7 @@ Bepaal voordat u begint of er een extra flikkerafhandelingsoplossing nodig is, a
 
 >[!NOTE]
 >
->Dit leerprogramma gebruikt de [ website van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, die een asynchrone implementatie van markeringen en het flikkeren matiging op zijn plaats heeft. Deze sectie is voor verwijzing om te begrijpen hoe de het flikkeren matiging met het Web SDK van het Platform werkt.
+>Dit leerprogramma gebruikt de [&#x200B; website van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, die een asynchrone implementatie van markeringen en het flikkeren matiging op zijn plaats heeft. Deze sectie is voor verwijzing om te begrijpen hoe de het flikkeren matiging met het Web SDK van het Platform werkt.
 
 
 ### Asynchrone implementatie
@@ -92,7 +92,7 @@ Het voorverborgen fragment is ook beschikbaar binnen tags:
 1. Selecteer **[!UICONTROL Configure]** voor de Adobe Experience Platform Web SDK-extensie
 1. Selecteer de knop **[!UICONTROL Copy pre-hiding snippet to clipboard]**
 
-   ![ het doel preverbergt fragment voor asynchrone implementaties ](assets/target-flicker-async.png)
+   ![&#x200B; het doel preverbergt fragment voor asynchrone implementaties &#x200B;](assets/target-flicker-async.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ De pre-verbergende stijl voor synchrone implementaties kan als volgt worden gevo
 1. Selecteer de knop **[!UICONTROL Configure]** voor de extensie Platform Web SDK
 1. Selecteer de knop **[!UICONTROL Edit pre-hiding style]**
 
-   ![ het doel preverbergt fragment voor asynchrone implementaties ](assets/target-flicker-sync.png)
+   ![&#x200B; het doel preverbergt fragment voor asynchrone implementaties &#x200B;](assets/target-flicker-sync.png)
 
 1. Wijzig de CSS zodanig dat deze de kiezers bevat en de methoden verbergt die u wilt gebruiken, bijvoorbeeld: `body { opacity: 0 !important }` als u de volledige hoofdtekst van de pagina wilt voorverbergen.
 1. Uw wijzigingen opslaan en bouwen naar een bibliotheek
@@ -117,7 +117,7 @@ De pre-verbergende stijl voor synchrone implementaties kan als volgt worden gevo
 >
 >De vooraf verborgen stijlinstelling is alleen bedoeld voor synchrone implementaties. Deze stijl moet leeg zijn of er moet commentaar op worden toegevoegd als u een asynchrone implementatie van tags gebruikt.
 
-Om meer over te leren hoe het Web SDK van het Platform flikkering kan leiden, kunt u naar de gidssectie verwijzen: [ die flikkering voor gepersonaliseerde ervaringen ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/personalization/manage-flicker) beheert.
+Om meer over te leren hoe het Web SDK van het Platform flikkering kan leiden, kunt u naar de gidssectie verwijzen: [&#x200B; die flikkering voor gepersonaliseerde ervaringen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/personalization/manage-flicker) beheert.
 
 
 ## De gegevensstroom configureren
@@ -126,43 +126,43 @@ Het doel moet in de gegevensstroomconfiguratie worden toegelaten alvorens om het
 
 Om Doel in de gegevensstroom te vormen:
 
-1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ga naar de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
 1. Selecteer de eerder gemaakte `Luma Web SDK: Development Environment` datastream
 
-   ![ selecteer de datastream van SDK van het Web van Luma ](assets/datastream-luma-web-sdk-development.png)
+   ![&#x200B; selecteer de datastream van SDK van het Web van Luma &#x200B;](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecteren **[!UICONTROL Add Service]**
-   ![ voegt de dienst aan de datastream ](assets/target-datastream-addService.png) toe
+   ![&#x200B; voegt de dienst aan de datastream &#x200B;](assets/target-datastream-addService.png) toe
 1. Selecteer **[!UICONTROL Adobe Target]** als de **[!UICONTROL Service]**
 1. Voer desgewenst de optionele details over uw doelimplementatie in volgens de onderstaande richtlijnen.
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ de configuratie van de gegevensstroom van het Doel ](assets/target-datastream.png)
+   ![&#x200B; de configuratie van de gegevensstroom van het Doel &#x200B;](assets/target-datastream.png)
 
 ### Eigenschappentoken
 
-Target Premium-klanten hebben de mogelijkheid om gebruikersmachtigingen te beheren met eigenschappen. Met de doeleigenschappen kunt u grenzen vaststellen waar gebruikers doelactiviteiten kunnen uitvoeren. Verwijs naar de [ sectie van de Toestemmingen van de Onderneming ](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview) van de documentatie van het Doel voor details.
+Target Premium-klanten hebben de mogelijkheid om gebruikersmachtigingen te beheren met eigenschappen. Met de doeleigenschappen kunt u grenzen vaststellen waar gebruikers doelactiviteiten kunnen uitvoeren. Verwijs naar de [&#x200B; sectie van de Toestemmingen van de Onderneming &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview) van de documentatie van het Doel voor details.
 
 Om bezitstokens te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Het pictogram `</>` geeft de implementatiecode weer. De `at_property` -waarde is de eigenschap token die u in de gegevensstroom zou gebruiken.
 
-![ het bezitstoken van het Doel ](assets/target-admin-properties.png)
+![&#x200B; het bezitstoken van het Doel &#x200B;](assets/target-admin-properties.png)
 
 <a id="advanced-pto"></a>
 
 Er kan slechts één eigenschapstoken per gegevensstroom worden opgegeven, maar met overschrijvingen van eigenschapstoken kunt u alternatieve eigenschapstokens opgeven ter vervanging van het primaire eigenschapstoken dat in de gegevensstroom is gedefinieerd. Een update van de handeling `sendEvent` is ook nodig om de gegevensstroom te overschrijven.
 
-![ Lijst van de Identiteit ](assets/advanced-property-token.png)
+![&#x200B; Lijst van de Identiteit &#x200B;](assets/advanced-property-token.png)
 
 ### Id van doelomgeving
 
-[ Milieu&#39;s ](https://experienceleague.adobe.com/nl/docs/target/using/administer/environments) in de hulp van het Doel u uw implementatie door alle stadia van ontwikkeling beheert. Deze optionele instelling geeft aan welke doelomgeving u voor elke gegevensstroom wilt gebruiken.
+[&#x200B; Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/environments) in de hulp van het Doel u uw implementatie door alle stadia van ontwikkeling beheert. Deze optionele instelling geeft aan welke doelomgeving u voor elke gegevensstroom wilt gebruiken.
 
-Adobe raadt u aan om de id van de doelomgeving voor elk van uw ontwikkelings-, staging- en productiegegevensstreams anders in te stellen om de zaken eenvoudig te houden. Alternatief, kunt u uw milieu&#39;s in de interface van het Doel organiseren gebruikend de [ gastheren ](https://experienceleague.adobe.com/nl/docs/target/using/administer/hosts) eigenschap.
+Adobe raadt u aan om de id van de doelomgeving voor elk van uw ontwikkelings-, staging- en productiegegevensstreams anders in te stellen om de zaken eenvoudig te houden. Alternatief, kunt u uw milieu&#39;s in de interface van het Doel organiseren gebruikend de [&#x200B; gastheren &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/hosts) eigenschap.
 
 Om milieu IDs te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Environments]**.
 
-![ milieu&#39;s van het Doel ](assets/target-admin-environments.png)
+![&#x200B; milieu&#39;s van het Doel &#x200B;](assets/target-admin-environments.png)
 
 >[!NOTE]
 >
@@ -170,13 +170,13 @@ Om milieu IDs te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICO
 
 ### Doelnaamruimte voor id van derden
 
-Met deze optionele instelling kunt u opgeven welk identiteitssymbool u wilt gebruiken voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie, kunt u naar het [ in real time profiel verwijzen dat voor mbox3rdPartyId ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) sectie van de gids van het Doel synchroniseert.
+Met deze optionele instelling kunt u opgeven welk identiteitssymbool u wilt gebruiken voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie, kunt u naar het [&#x200B; in real time profiel verwijzen dat voor mbox3rdPartyId &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) sectie van de gids van het Doel synchroniseert.
 
 De Symbolen van de Identiteit worden gevonden in de identiteitslijst onder **Inzameling van Gegevens** > **[!UICONTROL Customer]** > **[!UICONTROL Identities]**.
 
-![ Lijst van de Identiteit ](assets/target-identities.png)
+![&#x200B; Lijst van de Identiteit &#x200B;](assets/target-identities.png)
 
-Voor dit leerprogramma dat de plaats van de Luma gebruikt, gebruik de opstelling van het Symbool van de Identiteit `lumaCrmId` tijdens de les over [ Identiteiten ](configure-identities.md).
+Voor dit leerprogramma dat de plaats van de Luma gebruikt, gebruik de opstelling van het Symbool van de Identiteit `lumaCrmId` tijdens de les over [&#x200B; Identiteiten &#x200B;](configure-identities.md).
 
 
 
@@ -195,12 +195,12 @@ De visuele verpersoonlijkingsbesluiten verwijzen naar de ervaringen die in Adobe
 
 De visuele verpersoonlijkingsbesluiten van Doel worden geleverd door het Web SDK van het Platform, als het Doel in de datastream wordt toegelaten. Nochtans, _worden zij niet automatisch teruggegeven_. U moet de handeling [!UICONTROL Send event] bijwerken om automatische rendering in te schakelen.
 
-1. In de [ interface van de Inzameling van 0&rbrace; Gegevens, open het markeringsbezit u voor dit leerprogramma gebruikt](https://experience.adobe.com/#/data-collection){target="blank"}
+1. In de [&#x200B; interface van de Inzameling van 0&rbrace; Gegevens, open het markeringsbezit u voor dit leerprogramma gebruikt](https://experience.adobe.com/#/data-collection){target="blank"}
 1. De regel `all pages - library loaded - send event - 50` openen
 1. Selecteer de handeling `Adobe Experience Platform Web SDK - Send event`
 1. **[!UICONTROL Render visual personalization decisions]** inschakelen met het selectievakje
 
-   ![ laat het teruggeven van visuele verpersoonlijkingsbesluiten ](assets/target-rule-enable-visual-decisions.png) toe
+   ![&#x200B; laat het teruggeven van visuele verpersoonlijkingsbesluiten &#x200B;](assets/target-rule-enable-visual-decisions.png) toe
 
 <!--
 1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
@@ -216,42 +216,42 @@ Renderen visuele verpersoonlijkingsbesluiten die tot het Web SDK van het Platfor
 >
 >Doorgaans mag de instelling [!UICONTROL Render visual personalization decisions] alleen worden ingeschakeld voor één verzendgebeurtenis-actie per volledig geladen pagina. Als deze instelling is ingeschakeld voor meerdere Send Event-acties, worden daaropvolgende renderaanvragen genegeerd.
 
-Als u deze beslissingen liever zelf rendert of activeert met behulp van aangepaste code, kunt u de instelling [!UICONTROL Render visual personalization decisions] uitgeschakeld laten. Platform Web SDK is flexibel en biedt deze mogelijkheid om u volledige controle te geven. U kunt naar de gids voor meer informatie over [ verwijzen manueel teruggevend gepersonaliseerde inhoud ](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Als u deze beslissingen liever zelf rendert of activeert met behulp van aangepaste code, kunt u de instelling [!UICONTROL Render visual personalization decisions] uitgeschakeld laten. Platform Web SDK is flexibel en biedt deze mogelijkheid om u volledige controle te geven. U kunt naar de gids voor meer informatie over [&#x200B; verwijzen manueel teruggevend gepersonaliseerde inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Opstelling een activiteit van het Doel met Visuele Composer van de Ervaring
 
-Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richtend (XT) activiteit in Doel om te bevestigen dat alles correct werkt. U kunt naar het leerprogramma van het Doel voor [ het creëren van Ervaring richten activiteiten ](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities) verwijzen als u hulp nodig hebt.
+Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richtend (XT) activiteit in Doel om te bevestigen dat alles correct werkt. U kunt naar het leerprogramma van het Doel voor [&#x200B; het creëren van Ervaring richten activiteiten &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities) verwijzen als u hulp nodig hebt.
 
 >[!NOTE]
 >
->Als u Google Chrome als uw browser gebruikt, wordt de [ Visuele Composer van de Ervaring (VEC) helperuitbreiding ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) vereist om de plaats behoorlijk voor het uitgeven in VEC te laden.
+>Als u Google Chrome als uw browser gebruikt, wordt de [&#x200B; Visuele Composer van de Ervaring (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) vereist om de plaats behoorlijk voor het uitgeven in VEC te laden.
 
 1. Navigeren naar de Adobe Target-interface
 1. Een &#39;Experience Targeting&#39;-activiteit maken met de Luma-homepage voor de activiteit-URL
 
-   ![ creeer een nieuwe XT activiteit ](assets/target-xt-create-activity.png)
+   ![&#x200B; creeer een nieuwe XT activiteit &#x200B;](assets/target-xt-create-activity.png)
 
 1. Wijzig de pagina bijvoorbeeld, verander de tekst op de homepage hoofdbanner.  Selecteer **[!UICONTROL Save]** en vervolgens **[!UICONTROL Next]** als u klaar bent.
 
-   ![ wijziging van doel VEC ](assets/target-xt-vec-modification.png)
+   ![&#x200B; wijziging van doel VEC &#x200B;](assets/target-xt-vec-modification.png)
 
 1. Werk de naam van de gebeurtenis bij en selecteer vervolgens **[!UICONTROL Next]** .
 
-   ![ de updategebeurtenis van het Doel VEC ](assets/target-xt-vec-updateevent.png)
+   ![&#x200B; de updategebeurtenis van het Doel VEC &#x200B;](assets/target-xt-vec-updateevent.png)
 
 1. Kies Adobe Analytics als rapporteringsbron met de aangewezen rapportreeks en de metrische Orden als doel
 
-   ![ van het Doel VEC rapporterend bron ](assets/target-xt-vec-reportingsource.png)
+   ![&#x200B; van het Doel VEC rapporterend bron &#x200B;](assets/target-xt-vec-reportingsource.png)
 
    >[!NOTE]
    >
    >Als u Adobe Analytics dan niet gebruikt selecteer Doel als rapporteringsbron en kies verschillende metrisch zoals **Betrokkenheid > de Kijken van de Pagina** in plaats daarvan. Een doel metrisch wordt vereist om de activiteit te bewaren en voor te vertonen.
 
 1. De activiteit opslaan
-1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [ QA Voorproef URL ](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
+1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
 1. Laad de startpagina van de luminantie en u ziet dat de wijzigingen zijn toegepast
-1. Na een paar uur, zou u de activiteitsgegevens en omzettingen van het Doel in Adobe Analytics moeten kunnen zien. Verwijs naar de Gids van het Doel voor gedetailleerde informatie over [ Analytics voor Doel (A4T) die ](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/reporting) rapporteert.
+1. Na een paar uur, zou u de activiteitsgegevens en omzettingen van het Doel in Adobe Analytics moeten kunnen zien. Verwijs naar de Gids van het Doel voor gedetailleerde informatie over [&#x200B; Analytics voor Doel (A4T) die &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/reporting) rapporteert.
 
 
 
@@ -261,25 +261,25 @@ Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans
 
 >[!CAUTION]
 >
->Als u Google Chrome gebruikt en de [ Visual Experience Composer (VEC) helperuitbreiding ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) geïnstalleerd hebt, zorg ervoor de **Injecteer het plaatsen van de Bibliotheken van het Doel** gehandicapt is. Als u deze instelling inschakelt, worden er extra aanvragen voor het doel ingediend.
+>Als u Google Chrome gebruikt en de [&#x200B; Visual Experience Composer (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) geïnstalleerd hebt, zorg ervoor de **Injecteer het plaatsen van de Bibliotheken van het Doel** gehandicapt is. Als u deze instelling inschakelt, worden er extra aanvragen voor het doel ingediend.
 
 1. De Adobe Experience Platform Debugger-browserextensie openen
-1. Ga naar de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik debugger om [ het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property) te schakelen
+1. Ga naar de [&#x200B; plaats van de de demo van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik debugger om [&#x200B; het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property) te schakelen
 1. De pagina opnieuw laden
 1. Selecteer het gereedschap **[!UICONTROL Network]** in het foutopsporingsprogramma
 1. Filteren op **[!UICONTROL Experience Platform Web SDK]**
 1. Selecteer de waarde in de gebeurtenisrij voor de eerste aanroep
 
-   ![ vraag van het Netwerk in debugger van Adobe Experience Platform ](assets/target-debugger-network.png)
+   ![&#x200B; vraag van het Netwerk in debugger van Adobe Experience Platform &#x200B;](assets/target-debugger-network.png)
 
 1. Er zijn toetsen onder `query` > `personalization` en `decisionScopes` hebben de waarde `__view__` . Dit bereik komt overeen met het bereik `target-global-mbox` . Deze vraag van SDK van het Platform van het Web verzocht om besluiten van Target.
 
-   ![`__view__` DecisionScope request ](assets/target-debugger-view-scope.png)
+   ![`__view__` DecisionScope request &#x200B;](assets/target-debugger-view-scope.png)
 
 1. Sluit de bedekking en selecteer de gebeurtenisdetails voor de tweede netwerkvraag. Deze vraag is slechts aanwezig als het Doel een activiteit terugkeerde.
 1. U ziet dat er details zijn over de activiteit en ervaring die door Target zijn geretourneerd. Deze vraag van SDK van het Web van Platform verzendt een bericht dat een activiteit van het Doel aan de gebruiker werd teruggegeven en verhoogt een indruk.
 
-   ![ de indruk van de Activiteit van het Doel ](assets/target-debugger-activity-impression.png)
+   ![&#x200B; de indruk van de Activiteit van het Doel &#x200B;](assets/target-debugger-activity-impression.png)
 
 ## Een aangepast beslissingsbereik instellen en maken
 
@@ -293,7 +293,7 @@ Wijzig de regel voor het laden van de pagina om een aangepast beslissingsbereik 
 1. Selecteer de handeling `Adobe Experience Platform Web SDK - Send Event`
 1. Voeg een of meer bereiken toe die u wilt gebruiken. Gebruik `homepage-hero` voor dit voorbeeld.
 
-   ![ Eigen werkingsgebied ](assets/target-rule-custom-scope.png)
+   ![&#x200B; Eigen werkingsgebied &#x200B;](assets/target-rule-custom-scope.png)
 
 1. Uw wijzigingen opslaan en samenstellen in uw bibliotheek
 
@@ -310,7 +310,7 @@ Nu u Platform Web SDK hebt gevormd om inhoud voor het `homepage-hero` werkingsge
 1. Voeg een voorwaarde toe om de regel tot de homepage van Luma (weg zonder vraagkoord evenaart `/content/luma/us/en.html`) te beperken.
 1. Voeg een handeling aan de regel toe. Gebruik de **uitbreiding van SDK van het Web 0&rbrace; Adobe Experience Platform &lbrace;en** stel **actietype van voorstellen toe.**
 
-   ![ teruggeven homepage heldenregel ](assets/target-rule-render-hero.png)
+   ![&#x200B; teruggeven homepage heldenregel &#x200B;](assets/target-rule-render-hero.png)
 
    >[!TIP]
    >
@@ -323,7 +323,7 @@ Nu u Platform Web SDK hebt gevormd om inhoud voor het `homepage-hero` werkingsge
 1. Voor **[!UICONTROL Action Type]** select **[!UICONTROL Set HTML]**
 1. Selecteren **[!UICONTROL Keep Changes]**
 
-   ![ geef homepage heldenactie ](assets/target-action-render-hero.png) terug
+   ![&#x200B; geef homepage heldenactie &#x200B;](assets/target-action-render-hero.png) terug
 
    Naast het renderen van de activiteit, moet u een extra vraag aan Doel richten om erop te wijzen dat de op vorm-gebaseerde activiteit heeft teruggegeven:
 
@@ -362,7 +362,7 @@ Nu u Platform Web SDK hebt gevormd om inhoud voor het `homepage-hero` werkingsge
    }
    ```
 
-   ![ geef homepage heldenactie ](assets/target-action-fire-display.png) terug
+   ![&#x200B; geef homepage heldenactie &#x200B;](assets/target-action-fire-display.png) terug
 
 1. Selecteren **[!UICONTROL Keep Changes]**
 
@@ -377,15 +377,15 @@ Nu u Platform Web SDK hebt gevormd om inhoud voor het `homepage-hero` werkingsge
 
 Nu u een regel hebt om een gebied van de douanebeslissing manueel terug te geven, kunt u een andere Ervaring creëren richtend (XT) activiteit in Doel. Dit keer gebruikt u de Form-Based Experience Composer.
 
-1. Open [ Adobe Target ](https://experience.adobe.com/target)
+1. Open [&#x200B; Adobe Target &#x200B;](https://experience.adobe.com/target)
 1. De activiteit deactiveren die voor de vorige les wordt gebruikt
 1. Een Experience Targeting-activiteit (XT) maken met de optie Form-based Experience Composer
 
-   ![ creeer een nieuwe XT activiteit ](assets/target-xt-create-form-activity.png)
+   ![&#x200B; creeer een nieuwe XT activiteit &#x200B;](assets/target-xt-create-form-activity.png)
 
 1. Selecteer de locatie **`homepage-hero`** in het vervolgkeuzemenu Locatie en **[!UICONTROL Create HTML Offer]** in het vervolgkeuzemenu Inhoud. Als de locatie niet beschikbaar is, kunt u deze typen. Het doel vult periodiek nieuwe plaatsnamen na het ontvangen van verzoeken voor die plaats of werkingsgebied.
 
-   ![ creeer een nieuwe XT activiteit ](assets/target-xt-form-activity.png)
+   ![&#x200B; creeer een nieuwe XT activiteit &#x200B;](assets/target-xt-form-activity.png)
 
 1. Plak de volgende code in het inhoudsvak. Deze code is een standaardhoofdbanner met een andere achtergrondafbeelding:
 
@@ -405,7 +405,7 @@ Nu u een regel hebt om een gebied van de douanebeslissing manueel terug te geven
 
 1. Kies in de stap [!UICONTROL Goals & Settings] Adobe Target als bron voor rapportage en [!UICONTROL Engagement] > [!UICONTROL Page Views] als doel
 1. De activiteit opslaan
-1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [ QA Voorproef URL ](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
+1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
 1. Laad de startpagina van de luminantie en u ziet dat de wijzigingen zijn toegepast
 
 >[!NOTE]
@@ -417,22 +417,22 @@ Nu u een regel hebt om een gebied van de douanebeslissing manueel terug te geven
 Als u uw activiteit hebt geactiveerd, wordt de inhoud weergegeven op de pagina. Maar zelfs als er geen activiteiten actief zijn, kunt u ook naar de [!UICONTROL Send Event] -netwerkaanroep kijken om te bevestigen dat Target inhoud aanvraagt voor uw aangepaste bereik.
 
 1. De Adobe Experience Platform Debugger-browserextensie openen
-1. Ga naar de [ plaats van de de demo van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik debugger om [ het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property) te schakelen
+1. Ga naar de [&#x200B; plaats van de de demo van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) en gebruik debugger om [&#x200B; het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property) te schakelen
 1. De pagina opnieuw laden
 1. Selecteer het gereedschap **[!UICONTROL Network]** in Foutopsporing
 1. Filteren op **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. Selecteer de waarde in de gebeurtenisrij voor de eerste aanroep
 
-   ![ vraag van het Netwerk in debugger van Adobe Experience Platform ](assets/target-debugger-network.png)
+   ![&#x200B; vraag van het Netwerk in debugger van Adobe Experience Platform &#x200B;](assets/target-debugger-network.png)
 
 1. Er zijn toetsen onder `query` > `personalization` en `decisionScopes` met de waarde `__view__` zoals eerder, maar nu is er ook een `homepage-hero` bereik opgenomen. Dit Platform Web SDK vroeg om beslissingen van Target voor wijzigingen die zijn aangebracht met behulp van de VEC en de specifieke `homepage-hero` -locatie.
 
-   ![`__view__` DecisionScope request ](assets/target-debugger-view-custom-scope.png)
+   ![`__view__` DecisionScope request &#x200B;](assets/target-debugger-view-custom-scope.png)
 
 1. Sluit de bedekking en selecteer de gebeurtenisdetails voor de tweede netwerkvraag. Deze vraag is slechts aanwezig als het Doel een activiteit terugkeerde.
 1. U ziet dat er details zijn over de activiteit en ervaring die door Target zijn geretourneerd. Deze vraag van SDK van het Web van Platform verzendt een bericht dat een activiteit van het Doel aan de gebruiker werd teruggegeven en verhoogt een indruk. Deze actie is gestart door de aangepaste code-actie die u eerder hebt toegevoegd.
 
-   ![ de indruk van de Activiteit van het Doel ](assets/target-debugger-activity-impression.png)
+   ![&#x200B; de indruk van de Activiteit van het Doel &#x200B;](assets/target-debugger-activity-impression.png)
 
 ## Parameters naar doel verzenden
 
@@ -440,7 +440,7 @@ In deze sectie, zult u specifiek doel-specifieke gegevens overgaan en een dichte
 
 ### Parameters pagina (mbox) en XDM
 
-Alle gebieden XDM worden automatisch overgegaan tot Doel als [ paginaparameters ](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/page-parameters) of mbox parameters.
+Alle gebieden XDM worden automatisch overgegaan tot Doel als [&#x200B; paginaparameters &#x200B;](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/page-parameters) of mbox parameters.
 
 Sommige van deze XDM-velden worden toegewezen aan speciale objecten op de achtergrond van Target. `web.webPageDetails.URL` is bijvoorbeeld automatisch beschikbaar voor het maken van op URL gebaseerde doelvoorwaarden of als het `page.url` -object bij het maken van profielscripts.
 
@@ -450,14 +450,14 @@ U kunt ook paginaparameters toevoegen met het gegevensobject.
 
 Er zijn enkele gegevenspunten die nuttig kunnen zijn voor Doel en die niet zijn toegewezen vanuit het XDM-object. Deze speciale doelparameters zijn onder meer:
 
-* [ de attributen van het Profiel ](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [ de entiteitattributen van Aanbevelingen ](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/entities/entity-attributes)
-* [ Voorbehouden parameters van Aanbevelingen ](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* De waarden van de categorie voor [ categorieaffiniteit ](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/category-affinity)
+* [&#x200B; de attributen van het Profiel &#x200B;](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [&#x200B; de entiteitattributen van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/entities/entity-attributes)
+* [&#x200B; Voorbehouden parameters van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* De waarden van de categorie voor [&#x200B; categorieaffiniteit &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/category-affinity)
 
 Deze parameters moeten in het object `data` worden verzonden in plaats van in het object `xdm` . Bovendien kunnen pagina- (of mbox-)parameters ook in het `data` -object worden opgenomen.
 
-Om het gegevensvoorwerp te bevolken, creeer het volgende gegevenselement, hergebruikend gegevenselementen die in [ worden gecreeerd gegevenselementen ](create-data-elements.md) les creëren:
+Om het gegevensvoorwerp te bevolken, creeer het volgende gegevenselement, hergebruikend gegevenselementen die in [&#x200B; worden gecreeerd gegevenselementen &#x200B;](create-data-elements.md) les creëren:
 
 * **`data.content`** gebruiken van de volgende douanecode:
 
@@ -485,7 +485,7 @@ Als u aanvullende gegevens voor Doel buiten het XDM-object wilt doorgeven, moet 
 1. Selecteer de handeling `Adobe Experience Platform Web SDK - Send event`
 1. Het gegevenselement `data.content` toevoegen aan het veld Gegevens
 
-   ![ voeg de Gegevens van het Doel aan Regel toe ](assets/target-rule-data.png)
+   ![&#x200B; voeg de Gegevens van het Doel aan Regel toe &#x200B;](assets/target-rule-data.png)
 
 1. Uw wijzigingen opslaan en samenstellen in uw bibliotheek
 
@@ -507,7 +507,7 @@ Om verpersoonlijking-op-hoogste verzoek tot stand te brengen:
 1. Selecteer **[!UICONTROL Use guided events]** en selecteer vervolgens **[!UICONTROL Request personalization]**
 1. Dit sluit het **Type** als **[!UICONTROL Decisioning Proposition Fetch]**
 
-   ![ send_decisions_request_alone ](assets/target-decision-request.png)
+   ![&#x200B; send_decisions_request_alone &#x200B;](assets/target-decision-request.png)
 
 U kunt als volgt het verzoek Analytics-on-bottom maken:
 
@@ -517,7 +517,7 @@ U kunt als volgt het verzoek Analytics-on-bottom maken:
 1. Selecteer **[!UICONTROL Use guided events]** en selecteer vervolgens **[!UICONTROL Collect analytics]**
 1. Hierdoor wordt het selectievakje **[!UICONTROL Include pending display notifications]** vergrendeld, zodat het weergavebericht in de wachtrij van het beslissingsverzoek wordt verzonden.
 
-![ send_decisions_request_alone ](assets/target-aa-request-guided.png)
+![&#x200B; send_decisions_request_alone &#x200B;](assets/target-aa-request-guided.png)
 
 >[!TIP]
 >
@@ -528,33 +528,33 @@ U kunt als volgt het verzoek Analytics-on-bottom maken:
 
 Nu de regels zijn bijgewerkt, kunt u controleren of de gegevens correct worden doorgegeven via de Adobe Debugger.
 
-1. Navigeer aan de [ de demoplaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) en login met e-mail `test@test.com` en wachtwoord `test`
+1. Navigeer aan de [&#x200B; de demoplaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) en login met e-mail `test@test.com` en wachtwoord `test`
 1. Naar de pagina met productdetails gaan
-1. Open debugger browser van Adobe Experience Platform uitbreiding en [ schakelaar het markeringsbezit aan uw eigen ontwikkelbezit ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Open debugger browser van Adobe Experience Platform uitbreiding en [&#x200B; schakelaar het markeringsbezit aan uw eigen ontwikkelbezit &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. De pagina opnieuw laden
 1. Selecteer het **hulpmiddel van het Netwerk** in Debugger en filter door **SDK van het Web van Adobe Experience Platform**
 1. Selecteer de waarde in de gebeurtenisrij voor de eerste aanroep
 1. Er zijn toetsen onder `data` > `__adobe` > `target` en deze bevatten informatie over het product, de categorie en de aanmeldingsstatus.
 
-   ![`__view__` DecisionScope request ](assets/target-debugger-data.png)
+   ![`__view__` DecisionScope request &#x200B;](assets/target-debugger-data.png)
 
 ### Valideren in de interface Doel
 
 Daarna, kijk in de interface van het Doel om te bevestigen dat de gegevens werden ontvangen en beschikbaar om in publiek en activiteiten te gebruiken zijn. XDM-gegevens worden automatisch toegewezen aan aangepaste doelparameters. U kunt controleren of XDM-gegevens door Target zijn ontvangen en beschikbaar zijn door een publiek te maken.
 
-1. Open [ Adobe Target ](https://experience.adobe.com/target)
+1. Open [&#x200B; Adobe Target &#x200B;](https://experience.adobe.com/target)
 1. Navigeren naar de sectie **[!UICONTROL Audiences]**
 1. Een publiek maken en het kenmerktype **[!UICONTROL Custom]** kiezen
 1. Zoek in het veld **[!UICONTROL Parameter]** naar `web` . In het vervolgkeuzemenu moeten alle XDM-velden worden ingevuld die betrekking hebben op de details van de webpagina.
 
-   ![ bevestigt in de douaneattributen van het Doel ](assets/validate-in-target-customattribute.png)
+   ![&#x200B; bevestigt in de douaneattributen van het Doel &#x200B;](assets/validate-in-target-customattribute.png)
 
 Controleer vervolgens of het kenmerk voor het profiel van de aanmeldingsstatus is geslaagd.
 
 1. Het kenmerktype **[!UICONTROL Visitor Profile]** kiezen
 2. Zoeken naar `loggedIn` . Als het kenmerk beschikbaar is in het vervolgkeuzemenu, wordt het kenmerk op de juiste wijze aan Doel doorgegeven. Het kan enkele minuten duren voordat nieuwe kenmerken beschikbaar zijn in de doelinterface.
 
-   ![ bevestigt in het profiel van het Doel ](assets/validate-in-target-profile.png)
+   ![&#x200B; bevestigt in het profiel van het Doel &#x200B;](assets/validate-in-target-profile.png)
 
 Als u Target Premium hebt, kunt u ook controleren of de entiteitsgegevens correct zijn doorgegeven en de productgegevens zijn geschreven naar de productcatalogus met aanbevelingen.
 
@@ -562,34 +562,34 @@ Als u Target Premium hebt, kunt u ook controleren of de entiteitsgegevens correc
 1. Selecteer **[!UICONTROL Catalog Search]** in de linkerzijnavigatie
 1. Zoek naar product SKU of productnaam u eerder op de plaats van de Luma bezocht. Het product moet worden weergegeven in de productcatalogus. Het kan enige minuten duren voordat nieuwe producten doorzoekbaar zijn in de productcatalogus met aanbevelingen.
 
-   ![ bevestigt in het onderzoek van de de cataloguscatalogus van het Doel ](assets/validate-in-target-catalogsearch.png)
+   ![&#x200B; bevestigt in het onderzoek van de de cataloguscatalogus van het Doel &#x200B;](assets/validate-in-target-catalogsearch.png)
 
 ### Valideren met Assurance
 
 Bovendien kunt u Assurance waar nodig gebruiken om te bevestigen dat aanvragen voor doelbeslissingen de juiste gegevens krijgen en dat transformaties aan serverzijde correct plaatsvinden. U kunt campagne en ervaringsinformatie ook bevestigen is bevat in de vraag van Adobe Analytics zelfs wanneer het besluit van het Doel en de vraag van Adobe Analytics afzonderlijk worden verzonden.
 
-1. Open [ Assurance ](https://experience.adobe.com/assurance)
+1. Open [&#x200B; Assurance &#x200B;](https://experience.adobe.com/assurance)
 1. Start een nieuwe betrouwbaarheidssessie, voer de **[!UICONTROL session name]** in en voer de **[!UICONTROL base url]** in voor uw site of een andere pagina die u test
 1. Klikken **[!UICONTROL Next]**
 
-   ![ bevestigt in verzekering nieuwe zitting ](assets/validate-in-assurance-newsession.png)
+   ![&#x200B; bevestigt in verzekering nieuwe zitting &#x200B;](assets/validate-in-assurance-newsession.png)
 
 1. Selecteer de verbindingsmethode, in dit geval gebruiken we **[!UICONTROL copy link]**
 1. Kopieer de koppeling en plak deze in een nieuw browsertabblad
 1. Klikken **[!UICONTROL Done]**
 
-   ![ bevestigt in verzekering verbindt door exemplaarverbinding ](assets/validate-in-assurance-copylink.png)
+   ![&#x200B; bevestigt in verzekering verbindt door exemplaarverbinding &#x200B;](assets/validate-in-assurance-copylink.png)
 
 1. Nadat uw Assurance-sessie is gestart, ziet u gebeurtenissen die op het tabblad Gebeurtenissen worden gevuld
 1. Filteren op &quot;tnta&quot;
 1. Selecteer de meest recente vraag en breid de berichten uit om ervoor te zorgen het correct bevolkt en nota van de &quot;tnta&quot;waarden
 
-   ![ Valideer in het Actief van het betrouwbaarheidsdoel ](assets/validate-in-assurance-targetevent.png)
+   ![&#x200B; Valideer in het Actief van het betrouwbaarheidsdoel &#x200B;](assets/validate-in-assurance-targetevent.png)
 
 1. Vervolgens behoudt u het filter &quot;tnta&quot; en selecteert u de gebeurtenis analytics.mapping die plaatsvindt na de doelgebeurtenis die we net hebben weergegeven.
 1. Onderzoek &quot;context.mappedQueryParams.Waarde \&lt;yourSchemaName\>&quot; om te bevestigen dat het kenmerk &quot;tnta&quot; een samengevoegde tekenreeks bevat die overeenkomt met de &quot;tnta&quot;-waarden die zijn gevonden in de voorafgaande doelgebeurtenis.
 
-   ![ Valideer in de treffer van de Analytics van de Verzekering ](assets/validate-in-assurance-analyticsevent.png)
+   ![&#x200B; Valideer in de treffer van de Analytics van de Verzekering &#x200B;](assets/validate-in-assurance-analyticsevent.png)
 
 Dit bevestigt dat de informatie A4T die voor recentere transmissie een rij werd gevormd toen wij de vraag van het doelbesluit maakten behoorlijk werd verzonden wanneer de analytische volgende vraag later op de pagina in brand werd gestoken.
 
@@ -597,4 +597,4 @@ Nu u deze les hebt voltooid zou u een werkende implementatie van Adobe Target mo
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

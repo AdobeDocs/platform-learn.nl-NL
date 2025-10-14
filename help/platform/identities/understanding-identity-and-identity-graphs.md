@@ -16,7 +16,7 @@ ht-degree: 9%
 
 # Overzicht van identiteits- en identiteitsgrafieken
 
-Leer over de belangrijkste mogelijkheden van identiteitsresolutie in Adobe Experience Platform-identiteitsinzameling, identiteitsgrafieken, en APIs. Leer hoe de Identiteitsdienst losgemaakte identiteiten verbindt om een verenigbare verbonden ervaring te leveren door een verenigd profiel te construeren. Voor meer informatie, gelieve de [ documentatie van de identiteitsdienst ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) te bezoeken.
+Leer over de belangrijkste mogelijkheden van identiteitsresolutie in Adobe Experience Platform-identiteitsinzameling, identiteitsgrafieken, en APIs. Leer hoe de Identiteitsdienst losgemaakte identiteiten verbindt om een verenigbare verbonden ervaring te leveren door een verenigd profiel te construeren. Voor meer informatie, gelieve de [&#x200B; documentatie van de identiteitsdienst &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432349?learn=on&enablevpops&captions=dut)
 

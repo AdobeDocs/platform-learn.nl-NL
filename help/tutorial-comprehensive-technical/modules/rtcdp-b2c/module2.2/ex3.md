@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Zodra uw exemplaar van de Klant AI een modellooppas voltooit, zal het u toelaten om de volheidsscore visualiseren die wordt geëvalueerd om een klant te voorspellen die een aankoop in de volgende 30 dagen uitvoert.
 
-![ AI ](./images/caiinstancesummary1.png)
+![&#x200B; AI &#x200B;](./images/caiinstancesummary1.png)
 
 >[!NOTE]
 >
@@ -25,15 +25,15 @@ Zodra uw exemplaar van de Klant AI een modellooppas voltooit, zal het u toelaten
 
 Laten we nu de voorspelde eigenschappen bekijken die worden gegenereerd door het AI-instantiemodel van de klant. Klik op de instantienaam om het dashboard weer te geven.
 
-![ AI ](./images/caimodels1.png)
+![&#x200B; AI &#x200B;](./images/caimodels1.png)
 
 Het AI-dashboard van de Klant geeft een overzicht van de score, de verdeling van de populatie en de invloedrijke factoren voor het model dat moet worden geëvalueerd.
 
-![ AI Beschrijving ](./images/caidescription.png)
+![&#x200B; AI Beschrijving &#x200B;](./images/caidescription.png)
 
 Houd de invloedrijke factoren aan om de verdere uitsplitsing van de gegevensdistributie te bekijken.
 
-![ de factoren van de Gevolgen ](./images/caiinfluencefactors.png)
+![&#x200B; de factoren van de Gevolgen &#x200B;](./images/caiinfluencefactors.png)
 
 ## Handelingen
 
@@ -41,15 +41,15 @@ Houd de invloedrijke factoren aan om de verdere uitsplitsing van de gegevensdist
 
 Met het AI-dashboard van de Klant kunt u segmenten definiëren met één klik. Klik op **creeer de knoop van het Segment** op de bezitskaarten.
 
-![ creeer een segment ](./images/caiinfluencefactors1.png)
+![&#x200B; creeer een segment &#x200B;](./images/caiinfluencefactors1.png)
 
 U zult zien dat een segmentdefinitie automatisch wordt gecreeerd.
 
-![ de regel van het Segment ](./images/caicreatesegment.png)
+![&#x200B; de regel van het Segment &#x200B;](./images/caicreatesegment.png)
 
 Geef het segment een naam die volgt op de naamgevingsconventie: `--aepUserLdap-- - Customer AI High Propensity` . Klik **Publish**.
 
-![ de regel van het Segment ](./images/caicreatesegment1.png)
+![&#x200B; de regel van het Segment &#x200B;](./images/caicreatesegment1.png)
 
 U kunt dit segment nu gebruiken voor de doelversie, bijvoorbeeld Real-time CDP, Journey Optimizer en Adobe Target.
 
@@ -59,7 +59,7 @@ Om ervoor te zorgen dat er geen onnodige demo-gegevens in uw omgeving worden bew
 
 ![Profiel](./images/cleanup.png)
 
-Volgende Stap: [ Samenvatting en voordelen ](./summary.md)
+Volgende Stap: [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md)
 
 [Terug naar module 2.2](./intelligent-services.md)
 
