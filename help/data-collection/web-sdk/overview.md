@@ -24,7 +24,7 @@ Leer hoe Adobe Experience Platform Web SDK en Edge Network klanten toestaan om Ã
 
 >[!NOTE]
 >
->Deze video is een uittreksel van Adobe Summit 2020 zitting *[ontmoeten Alloy.js en nooit markering voor eVar of Mbox opnieuw &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Deze video is een uittreksel van Adobe Summit 2020 zitting *[ontmoeten Alloy.js en nooit markering voor eVar of Mbox opnieuw &#x200B;](https://business.adobe.com/nl/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >Het server-zij door:sturen vermogen dat in deze video wordt besproken is nu over het algemeen beschikbaar aan alle vergunning gegeven klanten. Zie de [&#x200B; Gebeurtenis door:sturen documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)
 
