@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u AI Assistant gebruikt om snel nieuwe functies te ontwikkelen en de instaptijd te verminderen. Voor meer informatie, zie de [&#x200B; gids van de Vraag voor AI Medewerker &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475936/?captions=dut&learn=on&enablevpops)

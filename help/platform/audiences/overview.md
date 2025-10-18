@@ -290,7 +290,7 @@ Meer informatie over het publiek in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Overzicht van Federated Audience Composition" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Overzicht van Federated Audience Composition"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450888/?captions=dut&format=jpeg&nocache=1740173579477" alt="Overzicht van Federated Audience Composition"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Meer informatie over het publiek in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Federale publiekscompositie verbinden en configureren" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Federale publiekscompositie verbinden en configureren"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451562/?captions=dut&format=jpeg&nocache=1740173579488" alt="Federale publiekscompositie verbinden en configureren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

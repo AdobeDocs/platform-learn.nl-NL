@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Leer hoe te met uw gegevenspakhuis te verbinden en die verbinding voor de Samenstelling van het Federale Publiek te vormen. Voor meer informatie, gelieve te bezoeken {de documentatie van de Samenstelling van het 0} Federatieve publiek [&#128279;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/home){target="_blank"} .
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451562/?captions=dut&learn=on&enablevpops)

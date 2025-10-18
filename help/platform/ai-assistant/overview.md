@@ -38,7 +38,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Toegang tot AI Assistant verkrijgen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Toegang tot AI Assistant verkrijgen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475925/?captions=dut&format=jpeg&nocache=1748392732990" alt="Toegang tot AI Assistant verkrijgen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ De AI-assistent is een handig hulpmiddel om nieuwe producten te leren of om snel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI Assistant gebruiken om de instaptijd te verkorten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="AI Assistant gebruiken om de instaptijd te verkorten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475936/?captions=dut&format=jpeg&nocache=1748392735030" alt="AI Assistant gebruiken om de instaptijd te verkorten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

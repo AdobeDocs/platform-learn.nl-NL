@@ -34,7 +34,7 @@ Leer hoe u gebruikersmachtigingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="Gebruikers toevoegen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="Gebruikers toevoegen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475979?captions=dut&format=jpeg&nocache=1740173302150" alt="Gebruikers toevoegen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ Leer hoe u gebruikersmachtigingen beheert.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="Beheerders toevoegen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="Beheerders toevoegen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475947?captions=dut&format=jpeg&nocache=1740173302208" alt="Beheerders toevoegen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

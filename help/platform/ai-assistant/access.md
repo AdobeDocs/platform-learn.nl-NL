@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u toegang en machtigingen voor AI Assistant instelt in Adobe Experience Platform. Voor meer informatie, zie [&#x200B; Medewerker van de Toegang AI in Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/access).
 
->[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475925/?captions=dut&learn=on&enablevpops)

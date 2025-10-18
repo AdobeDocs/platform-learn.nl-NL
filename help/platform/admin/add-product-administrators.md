@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Leer hoe u productbeheerders voor Adobe Experience Platform kunt toevoegen. Productbeheerders beheren toegangsbeheer voor platformgebaseerde toepassingen zoals Real-Time Customer Data Platform en Journey Optimizer. Zij kunnen gebruikers, ontwikkelaars, en extra beheerders in Admin Console tot stand brengen en dan hen (en API geloofsbrieven) toestemmingen in de interface van het Platform of van Journey Optimizer verlenen. Voor meer informatie, gelieve de [&#x200B; documentatie van het Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=nl-NL) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475947?captions=dut&learn=on&enablevpops)
 
 >[!TIP]
 >

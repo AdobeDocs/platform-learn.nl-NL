@@ -84,7 +84,7 @@ Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-in
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Gegevens opnemen met behulp van een databasebronaansluiting" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Gegevens opnemen met behulp van een databasebronaansluiting"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475989?captions=dut&format=jpeg&nocache=1740415500936" alt="Gegevens opnemen met behulp van een databasebronaansluiting"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -128,7 +128,7 @@ Om aan de slag te gaan, neemt u contact op met uw Adobe Experience Platform-behe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475947?captions=dut&format=jpeg&nocache=1756504085478" alt="Productbeheerders toevoegen voor op Adobe Experience Platform gebaseerde toepassingen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

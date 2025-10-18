@@ -60,7 +60,7 @@ Leer hoe u uw regels kunt simuleren en toepassen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="Identiteitsgrafiekkoppelingsregels - Identiteitsinstellingen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="Identiteitsgrafiekkoppelingsregels - Identiteitsinstellingen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475968/?captions=dut&format=jpeg&nocache=1747355376336" alt="Identiteitsgrafiekkoppelingsregels - Identiteitsinstellingen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
