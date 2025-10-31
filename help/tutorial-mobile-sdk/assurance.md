@@ -4,9 +4,9 @@ description: Leer hoe u de Assurance-extensie implementeert in een mobiele app.
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe u Adobe Experience Platform Assurance instelt in een mobiele app.
 
 Assurance, officieel bekend als Project Griffon, is ontworpen om u te helpen bij het inspecteren, testen, simuleren en valideren van de manier waarop u gegevens verzamelt of ervaringen opdoet in uw mobiele app.
 
-Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [&#x200B; Assurance &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home) in de productdocumentatie.
+Assurance helpt u onbewerkte SDK-gebeurtenissen die zijn gegenereerd door de Adobe Experience Platform Mobile SDK te inspecteren. Alle gebeurtenissen die door de SDK zijn verzameld, kunnen worden geïnspecteerd. SDK-gebeurtenissen worden geladen in een lijstweergave, gesorteerd op tijd. Elke gebeurtenis heeft een gedetailleerde weergave met meer details. Er worden ook extra weergaven geboden voor het bladeren door de SDK-configuratie, gegevenselementen, Gedeelde statussen en SDK-extensieversies. Leer meer over [ Assurance ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) in de productdocumentatie.
 
 
 ## Vereisten
@@ -35,7 +35,7 @@ In deze les zult u:
 
 ## Toegang bevestigen
 
-Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [&#x200B; in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/user-access)
+Bevestig dat uw organisatie toegang heeft tot Assurance. U moet als gebruiker aan het profiel voor Adobe Experience Platform worden toegevoegd. Zie {de toegang van 0} Gebruiker [ in de gids van Assurance voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)
 
 ## Implementeren
 
@@ -45,7 +45,7 @@ Assurance in uw app implementeren:
 
 >[!TAB  iOS ]
 
-Naast de algemene [&#x200B; installatie van SDK &#x200B;](install-sdks.md), vereist iOS ook de volgende extra code om de zitting van Assurance voor uw app te beginnen.
+Naast de algemene [ installatie van SDK ](install-sdks.md), vereist iOS ook de volgende extra code om de zitting van Assurance voor uw app te beginnen.
 
 1. Navigeer naar **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in de projectnavigator van uw Xcode.
 
@@ -63,7 +63,7 @@ Naast de algemene [&#x200B; installatie van SDK &#x200B;](install-sdks.md), vere
 
 >[!TAB  Android ]
 
-Naast de algemene [&#x200B; installatie van SDK &#x200B;](install-sdks.md), vereist Android ook de volgende extra code om de zitting van Assurance voor uw app te beginnen.
+Naast de algemene [ installatie van SDK ](install-sdks.md), vereist Android ook de volgende extra code om de zitting van Assurance voor uw app te beginnen.
 
 1. Navigeer in Android Studio in de **[!UICONTROL Android]** -weergave naar **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** .
 
@@ -85,7 +85,7 @@ Naast de algemene [&#x200B; installatie van SDK &#x200B;](install-sdks.md), vere
 >[!ENDTABS]
 
 
-Zie [&#x200B; Assurance API verwijzing &#x200B;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} voor meer informatie.
+Zie [ Assurance API verwijzing ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} voor meer informatie.
 
 
 
@@ -105,7 +105,7 @@ U moet een unieke bundle-id opgeven voor uw app.
 
 Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.swiftui` .
 
-![&#x200B; Xcode ondertekenende mogelijkheden &#x200B;](assets/xcode-signing-capabilities.png){zoomable="yes"}
+![ Xcode ondertekenende mogelijkheden ](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB  Android ]
 
@@ -116,7 +116,7 @@ Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.l
 
 Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . De voltooide versie van deze zelfstudie gebruikt bijvoorbeeld `com.adobe.luma.tutorial.android` .
 
-![&#x200B; Android ondertekeningsmogelijkheden &#x200B;](assets/android-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![ Android ondertekeningsmogelijkheden ](assets/android-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -136,11 +136,11 @@ U moet een basis-URL instellen om te zorgen dat deep linking werkt.
 1. Om een basis URL toe te voegen, scrol neer aan **Types URL** en selecteer **+** knoop.
 1. Plaats **Herkenningsteken** aan het bundelherkenningsteken van uw keus en plaats a **Schema&#39;s URL** van uw keus.
 
-   ![&#x200B; verzekeringsURL &#x200B;](assets/assurance-url-type.png){zoomable="yes"}
+   ![ verzekeringsURL ](assets/assurance-url-type.png){zoomable="yes"}
 
-Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . U kunt het zelfde bundelherkenningsteken gebruiken dat u bij [&#x200B; hebt gebruikt bepaalt bundelherkenningsteken &#x200B;](#define-bundle-identifier).<br/> Op dezelfde manier gebruik een uniek schema URL, en vervang reeds verstrekt `lumatutorialswiftui` met uw uniek schema URL.
+Verzeker u a _uniek_ bundelherkenningsteken gebruikt en vervang het `com.adobe.luma.tutorial.swiftui` bundelherkenningsteken, aangezien elk bundelherkenningsteken uniek moet zijn. Gewoonlijk gebruikt u een omgekeerde DNS-indeling voor bundle ID-tekenreeksen, zoals `com.organization.brand.uniqueidentifier` . U kunt het zelfde bundelherkenningsteken gebruiken dat u bij [ hebt gebruikt bepaalt bundelherkenningsteken ](#define-bundle-identifier).<br/> Op dezelfde manier gebruik een uniek schema URL, en vervang reeds verstrekt `lumatutorialswiftui` met uw uniek schema URL.
 
-Meer over regelingen URL in iOS leren, herzie [&#x200B; documentatie van Apple &#x200B;](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Meer over regelingen URL in iOS leren, herzie [ documentatie van Apple ](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance werkt door een URL te openen, via een browser of QR-code. Die URL begint met de basis-URL die de app opent en aanvullende parameters bevat. Deze unieke parameters worden gebruikt om de sessie te verbinden. In de voorbeeld-app is de diepe koppeling `lumatutorialswiftui://` .
 
@@ -172,7 +172,7 @@ Assurance werkt door een URL te openen, via een browser of QR-code. Die URL begi
 
 Zorg ervoor dat u een `android:scheme` opgeeft (bijvoorbeeld `lumatutorialandroid` ) en `android:host` (bijvoorbeeld `default` ) om de basis-URL te definiëren.
 
-Meer over diepe verbindingen in Android leren, zie [&#x200B; Diepe Verbindingen tot de Inhoud van de Toepassing &#x200B;](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"} creëren.
+Meer over diepe verbindingen in Android leren, zie [ Diepe Verbindingen ](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} in de documentatie van Android tot stand brengen.
 
 Assurance werkt door een URL te openen, via een browser of QR-code. Die URL begint met de basis-URL, die de app opent en aanvullende parameters bevat. Deze unieke parameters worden gebruikt om de sessie te verbinden.  In de voorbeeld-app is de diepe koppeling `lumatutorialandroid://default` .
 
@@ -189,9 +189,9 @@ U kunt nu met Assurance verbinding maken met een sessie.
 
 In Xcode:
 
-1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van Xcode in werking, gebruikend ![&#x200B; Spel &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van Xcode in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Build Folder…] **&#x200B; in het menu Xcode &#x200B;** [!UICONTROL Product]** .
+   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Build Folder…]** in het menu Xcode **[!UICONTROL Product]** .
 
 
 1. Selecteer **[!UICONTROL Allow "Luma App" to use your location]** in het dialoogvenster **[!UICONTROL Allow While Using App]** .
@@ -221,20 +221,20 @@ In uw browser:
 1. Selecteer **[!UICONTROL Start]**.
 1. Geef een **[!UICONTROL Session Name]** zoals `Luma Mobile App Session` en **[!UICONTROL Base URL]** op. Dit zijn de URL-schema&#39;s die u in Xcode hebt ingevoerd, gevolgd door `://` Bijvoorbeeld: `lumatutorialswiftui://`
 1. Selecteer **[!UICONTROL Next]**.
-   ![&#x200B; de verzekering leidt zitting &#x200B;](assets/assurance-create-session.png){zoomable="yes"}
+   ![ de verzekering leidt zitting ](assets/assurance-create-session.png){zoomable="yes"}
 1. In het modale dialoogvenster **[!UICONTROL Create New Session]** :
 
    Als u een fysiek apparaat gebruikt:
 
    * Selecteer **[!UICONTROL Scan QR Code]**. Als u de app wilt openen, gebruikt u de camera op het fysieke apparaat om de QR-code te scannen en tikt u op de koppeling.
 
-     ![&#x200B; garantieQa code &#x200B;](assets/assurance-qr-code.png){zoomable="yes"}
+     ![ garantieQa code ](assets/assurance-qr-code.png){zoomable="yes"}
 
    Als u een simulator gebruikt:
 
    1. Selecteer **[!UICONTROL Copy Link]**.
-   1. Kopieer de diepe verbinding gebruikend ![&#x200B; Exemplaar &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe verbinding om app met Safari in de simulator te openen.
-      ![&#x200B; de exemplaarverbinding van Assurance &#x200B;](assets/assurance-copy-link.png){zoomable="yes"}
+   1. Kopieer de diepe verbinding gebruikend ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe verbinding om app met Safari in de simulator te openen.
+      ![ de exemplaarverbinding van Assurance ](assets/assurance-copy-link.png){zoomable="yes"}
 
 1. Wanneer de app wordt geladen, ziet u een modaal dialoogvenster waarin u wordt gevraagd de pincode in te voeren die in stap 7 wordt getoond.
 
@@ -254,7 +254,7 @@ In uw browser:
       1. Details van een geselecteerde gebeurtenis.
       1. Het apparaat en de tijdlijn.
 
-         ![&#x200B; betrouwbaarheidsgebeurtenissen &#x200B;](assets/assurance-events.png){zoomable="yes"}
+         ![ betrouwbaarheidsgebeurtenissen ](assets/assurance-events.png){zoomable="yes"}
 
 1. Selecteer **[!UICONTROL Continue]** om naar het scherm Home te gaan.
 
@@ -262,9 +262,9 @@ In uw browser:
 
 In Android Studio:
 
-1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van de Studio van Android in werking, gebruikend ![&#x200B; Spel &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Bouw of herbouwt en stel app in de simulator of op een fysiek apparaat van de Studio van Android in werking, gebruikend ![ Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-   Naar keuze, zou u **&#x200B; uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer &#x200B;** [!UICONTROL Clean Project] **&#x200B; in het menu Android Studio &#x200B;** [!UICONTROL Build]** .
+   Naar keuze, zou u ** uw bouwstijl kunnen willen schoonmaken, vooral wanneer u onverwachte resultaten ziet. Selecteer **[!UICONTROL Clean Project]** in het menu Android Studio **[!UICONTROL Build]** .
 
 
 1. Selecteer **[!UICONTROL Allow Luma Android to send you notifications]** in het dialoogvenster **[!UICONTROL Allow]** .
@@ -300,7 +300,7 @@ In uw browser:
 1. Selecteer **[!UICONTROL Start]**.
 1. Geef een **[!UICONTROL Session Name]** zoals `Luma Mobile App Session` en de **[!UICONTROL Base URL]** op. Dit zijn de `android:scheme` en `android:host` die u in **[!UICONTROL AndroidManifest.xml]** in Android Studio hebt gedefinieerd, gescheiden door `://` bijvoorbeeld: `lumatutorialandroid://default`
 1. Selecteer **[!UICONTROL Next]**.
-   ![&#x200B; de verzekering leidt zitting &#x200B;](assets/assurance-create-session-android.png){zoomable="yes"}
+   ![ de verzekering leidt zitting ](assets/assurance-create-session-android.png){zoomable="yes"}
 
 1. In het modale dialoogvenster **[!UICONTROL Create New Session]** :
 
@@ -308,14 +308,14 @@ In uw browser:
 
    * Selecteer **[!UICONTROL Scan QR Code]**. Als u de app wilt openen, gebruikt u de camera op het fysieke apparaat om de QR-code te scannen en tikt u op de koppeling.
 
-     ![&#x200B; garantieQa code &#x200B;](assets/assurance-qr-code.png){zoomable="yes"}
+     ![ garantieQa code ](assets/assurance-qr-code.png){zoomable="yes"}
 
    Als u een simulator gebruikt:
 
    1. Selecteer **[!UICONTROL Copy Link]**.
-   1. Kopieer de diepe verbinding gebruikend ![&#x200B; Exemplaar &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe verbinding om app met Chrome in de simulator te openen.
+   1. Kopieer de diepe verbinding gebruikend ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) en gebruik de diepe verbinding om app met Chrome in de simulator te openen.
 
-   ![&#x200B; de exemplaarverbinding van Assurance &#x200B;](assets/assurance-copy-link.png){zoomable="yes"}
+   ![ de exemplaarverbinding van Assurance ](assets/assurance-copy-link.png){zoomable="yes"}
 
    Wanneer ertoe aangezet in Chrome **aan Luma Android** verdergaan, uitgezochte **gaat** verder.
 
@@ -337,11 +337,11 @@ In uw browser:
       1. Details van een geselecteerde gebeurtenis.
       1. Het apparaat en de tijdlijn.
 
-         ![&#x200B; betrouwbaarheidsgebeurtenissen &#x200B;](assets/assurance-events.png){zoomable="yes"}
+         ![ betrouwbaarheidsgebeurtenissen ](assets/assurance-events.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-Als u in om het even welke uitdagingen in werking stelt, herzie [&#x200B; technische &#x200B;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [&#x200B; algemene documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home){target="_blank"}.
+Als u in om het even welke uitdagingen in werking stelt, herzie [ technische ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} en [ algemene documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}.
 
 
 ## Extensies verifiëren
@@ -350,34 +350,34 @@ Om te controleren of uw app de meest actuele extensies gebruikt:
 
 1. Selecteer **[!UICONTROL Configure]**.
 
-1. Selecteer ![&#x200B; toevoegen &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) voor ![&#x200B; 123 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]**.
+1. Selecteer ![ toevoegen ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) voor ![ 123 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]**.
 
 1. Selecteer **[!UICONTROL Save]**.
 
-   ![&#x200B; vorm uitbreidingsversies &#x200B;](assets/assurance-configure-extension-versions.png){zoomable="yes"}
+   ![ vorm uitbreidingsversies ](assets/assurance-configure-extension-versions.png){zoomable="yes"}
 
-1. Selecteer ![&#x200B; 123 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]** om een overzicht van de recentste beschikbare uitbreidingen en de uitbreidingen te zien die in uw versie van app worden gebruikt.
+1. Selecteer ![ 123 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]** om een overzicht van de recentste beschikbare uitbreidingen en de uitbreidingen te zien die in uw versie van app worden gebruikt.
 
 >[!BEGINTABS]
 
 >[!TAB  iOS ]
 
-![&#x200B; de versies van de Uitbreiding &#x200B;](assets/assurance-extension-versions.png){zoomable="yes"}
+![ de versies van de Uitbreiding ](assets/assurance-extension-versions.png){zoomable="yes"}
 
 Als u uw extensieversies wilt bijwerken (bijvoorbeeld **[!UICONTROL Messaging]** en **[!UICONTROL Optimize]** ), selecteert u het pakket (de extensie) in **[!UICONTROL Package Dependencies]** (bijvoorbeeld **[!UICONTROL AEPMessaging]** ) en selecteert u **[!UICONTROL Update Package]** in het contextmenu. Xcode werkt de pakketafhankelijkheden bij.
 
 >[!TAB  Android ]
 
-![&#x200B; de versies van de Uitbreiding &#x200B;](assets/assurance-extension-versions-android.png){zoomable="yes"}
+![ de versies van de Uitbreiding ](assets/assurance-extension-versions-android.png){zoomable="yes"}
 
-Als u verouderde uitbreidingen ziet, verwijs naar de [&#x200B; documentatie van de Studio van Android &#x200B;](https://developer.android.com/build/agp-upgrade-assistant) op hoe te om uw gebiedsdeelmodules voor uw project bij te werken.
+Als u verouderde uitbreidingen ziet, verwijs naar de [ documentatie van de Studio van Android ](https://developer.android.com/build/agp-upgrade-assistant) op hoe te om uw gebiedsdeelmodules voor uw project bij te werken.
 
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->Zodra u uw uitbreidingen (pakketten) in uw ontwikkelomgeving hebt bijgewerkt, sluit en schrapt uw huidige zitting en herhaalt alle stappen van [&#x200B; die met een zitting &#x200B;](#connecting-to-a-session) verbinden en [&#x200B; verifiëren uitbreidingen &#x200B;](#verify-extensions) om ervoor te zorgen dat Assurance behoorlijk de correcte uitbreidingen in een nieuwe zitting van Assurance meldt.
+>Zodra u uw uitbreidingen (pakketten) in uw ontwikkelomgeving hebt bijgewerkt, sluit en schrapt uw huidige zitting en herhaalt alle stappen van [ die met een zitting ](#connecting-to-a-session) verbinden en [ verifiëren uitbreidingen ](#verify-extensions) om ervoor te zorgen dat Assurance behoorlijk de correcte uitbreidingen in een nieuwe zitting van Assurance meldt.
 >
 
 
@@ -388,7 +388,7 @@ Als u verouderde uitbreidingen ziet, verwijs naar de [&#x200B; documentatie van 
 >
 >U hebt nu uw app zo ingesteld dat deze voor de rest van de zelfstudie Assurance gebruikt.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [ Communautaire besprekingspost van Experience League ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen
 
 
 Volgende: **[voer Toestemming](consent.md)** uit
