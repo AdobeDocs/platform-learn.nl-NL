@@ -4,22 +4,28 @@ description: Aan de slag - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Uw Adobe I/O-project configureren
 
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
+
 ## Adobe I/O-project maken
 
 In deze oefening, wordt Adobe I/O gebruikt om diverse eindpunten van Adobe te vragen. Voer de volgende stappen uit om Adobe I/O in te stellen.
 
-Ga naar [&#x200B; https://developer.adobe.com/console/home &#x200B;](https://developer.adobe.com/console/home){target="_blank"}.
+Ga naar [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"}.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iohome.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/iohome.png)
 
 Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instantie is `--aepImsOrgName--` .
 
@@ -29,7 +35,7 @@ Selecteer de juiste instantie in de rechterbovenhoek van het scherm. Uw instanti
 
 Daarna, uitgezochte **creeer nieuw project**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/iocomp.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/iocomp.png)
 
 ### FIREFLY SERVICES API
 
@@ -39,23 +45,23 @@ Daarna, uitgezochte **creeer nieuw project**.
 
 Dan moet je dit zien. Selecteer **+ toevoegen aan Project** en kies **API**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/adobe_io_access_api.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/adobe_io_access_api.png)
 
 Selecteer **Adobe Firefly Services** en kies **Firefly - Firefly Services**, dan selecteer **daarna**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api3.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api3.png)
 
 Verstrek een naam voor uw referentie: `--aepUserLdap-- - One Adobe OAuth credential` en selecteer **daarna**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api4.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api4.png)
 
 Selecteer de standaardprofiel **StandaardConfiguratie van Firefly Services** en selecteer **sparen Gevormde API**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api9.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api9.png)
 
 Dan moet je dit zien.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api10.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/api10.png)
 
 ### PHOTOSHOP SERVICES API
 
@@ -63,17 +69,17 @@ Dan moet je dit zien.
 >
 >Afhankelijk van het leerpad dat u hebt geselecteerd, hebt u mogelijk geen toegang tot de Photoshop Services API. U zult slechts toegang tot Photoshop Services API hebben als u op de het leren weg **Firefly** bent, **de Fusie van Workfront**, **ALLES**, of wanneer u a **levende in-persoonworkshop** bijwoont. U kunt deze stap overslaan als u zich niet op een van deze leerpaden bevindt.
 >
->Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
+Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/ps2.png)
+![ Azure Opslag ](./images/ps2.png)
 
 Selecteer **Adobe Firefly Services** en kies **Photoshop - Firefly Services**. Selecteer **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/ps3.png)
+![ Azure Opslag ](./images/ps3.png)
 
 Selecteer **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/ps4.png)
+![ Azure Opslag ](./images/ps4.png)
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -81,11 +87,11 @@ Selecteer **de Configuratie van de StandaardFirefly Services** en **configuratie
 
 Selecteer **sparen gevormde API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/ps5.png)
+![ Azure Opslag ](./images/ps5.png)
 
 Dan moet je dit zien.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/ps7.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/ps7.png)
 
 ### ADOBE EXPERIENCE PLATFORM API
 
@@ -95,15 +101,15 @@ Dan moet je dit zien.
 
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/aep1.png)
+![ Azure Opslag ](./images/aep1.png)
 
 Selecteer **Platform van de Ervaring van Adobe** en kies **Experience Platform API**. Selecteer **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/aep2.png)
+![ Azure Opslag ](./images/aep2.png)
 
 Selecteer **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/aep3.png)
+![ Azure Opslag ](./images/aep3.png)
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
@@ -115,11 +121,11 @@ Selecteer **Adobe Experience Platform - Alle Gebruikers - PROD**.
 
 Selecteer **sparen gevormde API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/aep4.png)
+![ Azure Opslag ](./images/aep4.png)
 
 Dan moet je dit zien.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/aep5.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/aep5.png)
 
 ### Frame.io-API
 
@@ -129,54 +135,54 @@ Dan moet je dit zien.
 
 Selecteer **+ toevoegen aan Project** en selecteer dan **API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/fiops2.png)
+![ Azure Opslag ](./images/fiops2.png)
 
 Selecteer **Creative Cloud** en kies **Frame.io API**. Selecteer **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/fiops3.png)
+![ Azure Opslag ](./images/fiops3.png)
 
 Selecteer **Server-aan-Server Authentificatie** en klik dan **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/fiops4.png)
+![ Azure Opslag ](./images/fiops4.png)
 
 Selecteer **Server-aan-Server** en klik dan **daarna**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/fiops5.png)
+![ Azure Opslag ](./images/fiops5.png)
 
 Vervolgens moet u een productprofiel selecteren dat definieert welke machtigingen beschikbaar zijn voor deze integratie.
 
 Selecteer **StandaardOnderneming Frame.io - de Configuratie van Prime** en klik **sparen gevormde API**.
 
-![&#x200B; Azure Opslag &#x200B;](./images/fiops6.png)
+![ Azure Opslag ](./images/fiops6.png)
 
 Dan moet je dit zien.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/fiops7.png)
+![ de Nieuwe Integratie van Adobe I/O ](./images/fiops7.png)
 
 ### Projectnaam
 
 Klik op de projectnaam.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api13.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api13.png){zoomable="yes"}
 
 Selecteer **uitgeven Project**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api14.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api14.png){zoomable="yes"}
 
 Ga een vriendschappelijke naam voor uw integratie in: `--aepUserLdap-- One Adobe tutorial` en selecteer **sparen**.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api15.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api15.png){zoomable="yes"}
 
 De installatie van uw Adobe I/O-project is nu voltooid.
 
-![&#x200B; de Nieuwe Integratie van Adobe I/O &#x200B;](./images/api16.png){zoomable="yes"}
+![ de Nieuwe Integratie van Adobe I/O ](./images/api16.png){zoomable="yes"}
 
 ## Volgende stappen
 
-Ga naar [&#x200B; Optie 1: Opstelling van Postman &#x200B;](./ex7.md){target="_blank"}
+Ga naar [ Optie 1: Opstelling van Postman ](./ex7.md){target="_blank"}
 
-Ga naar [&#x200B; Optie 2: Opstelling PostBuster &#x200B;](./ex8.md){target="_blank"}
+Ga naar [ Optie 2: Opstelling PostBuster ](./ex8.md){target="_blank"}
 
-Ga terug naar [&#x200B; Begonnen het worden &#x200B;](./getting-started.md){target="_blank"}
+Ga terug naar [ Begonnen het worden ](./getting-started.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../overview.md){target="_blank"}

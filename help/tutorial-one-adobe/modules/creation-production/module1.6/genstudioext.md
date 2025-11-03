@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -27,32 +27,42 @@ GenStudio for Performance Marketing Add-ons zijn de Adobe App Builder-apps die u
 - Toegang tot App Builder
 - Toegang tot een Amazon AWS S3-emmertje
 
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!NOTE]
+>
+>Deze video heeft nog geen audio. Zodra audio beschikbaar is, zal een nieuwe versie worden geupload.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
+
 ## Uitoefening
 
-[&#x200B; 1.6.1 Adobe IO en App Builder &#x200B;](./ex1.md){target="_blank"}
+[ 1.6.1 Adobe IO en App Builder ](./ex1.md){target="_blank"}
 
 In deze oefening, zult u uw Adobe IO project met App Builder opzetten.
 
-[&#x200B; 1.6.2 leidt tot uw AWS S3 emmer &#x200B;](./ex2.md){target="_blank"}
+[ 1.6.2 leidt tot uw AWS S3 emmer ](./ex2.md){target="_blank"}
 
 In deze oefening, zult u uw Amazon AWS S3 emmer en uw gebruiker IAM creëren.
 
-[&#x200B; 1.6.3 creeer en stel uw externe toepassing DAM &#x200B;](./ex3.md){target="_blank"} in
+[ 1.6.3 creeer en stel uw externe toepassing DAM ](./ex3.md){target="_blank"} in
 
 In deze oefening, zult u uw externe DAM app gebruikend een vooraf bepaalde malplaatje creëren.
 
-[&#x200B; 1.6.4 publiceer uw app privé &#x200B;](./ex4.md){target="_blank"}
+[ 1.6.4 publiceer uw app privé ](./ex4.md){target="_blank"}
 
 In deze oefening, zult u uw app privé publiceren.
 
-[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
