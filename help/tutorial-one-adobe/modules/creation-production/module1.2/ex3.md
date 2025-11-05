@@ -1,205 +1,609 @@
 ---
-title: Procesautomatisering met Workfront Fusion
-description: Meer informatie over het verwerken van automatisering met Workfront Fusion
+title: Frame.io en Workfront Fusion
+description: Frame.io en Workfront Fusion
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
+source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '3353'
 ht-degree: 0%
 
 ---
 
-# 1.2.3 Procesautomatisering met Workfront Fusion
+# 1.2.3 Frame.io en Workfront Fusion
 
-Leer hoe u automatisering met Workfront Fusion kunt uitvoeren.
+In de vorige oefening vormde u het scenario `--aepUserLdap-- - Firefly + Photoshop` en vormde een inkomende webhaak om het scenario, en een webhaakreactie teweeg te brengen wanneer het scenario met succes voltooide. Vervolgens hebt u Postman gebruikt om dat scenario te activeren. Postman is een groot hulpmiddel voor het testen, maar in een echt bedrijfsscenario, zouden de bedrijfsgebruikers Postman niet gebruiken om een scenario teweeg te brengen. In plaats daarvan zouden ze een andere toepassing gebruiken en verwachten ze dat andere toepassing een scenario in Workfront Fusion activeert. In deze oefening, is dat precies wat u met Frame.io zult doen.
 
-## 1.2.3.1 Herhalen over meerdere waarden
+>[!NOTE]
+>
+>Deze oefening werd gecreeerd voor Frame.io V4. Enkele hieronder mogelijkheden die in de oefening worden gebruikt zijn momenteel in alpha en zijn over het algemeen nog niet beschikbaar.
 
-Uw scenario zou als dit moeten kijken:
+## 1.2.3.1 Voorwaarden
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion200.png)
+Alvorens met deze oefening verder te gaan, moet u de opstelling van [ uw project van Adobe I/O ](./../../../modules/getting-started/gettingstarted/ex6.md) hebben voltooid met inbegrip van het toevoegen van **Frame.io API** aan uw project van Adobe I/O, en u moet ook een toepassing gevormd hebben om met APIs, zoals [ Postman ](./../../../modules/getting-started/gettingstarted/ex7.md) of [ PostBuster ](./../../../modules/getting-started/gettingstarted/ex8.md) in wisselwerking te staan.
 
-Tot nu toe hebt u tekst in een Photoshop-bestand gewijzigd met een statische waarde. Als u uw workflows voor het maken van inhoud wilt schalen en automatiseren, moet u de lijst met waarden doorlopen en deze waarden dynamisch invoegen in het Photoshop-bestand. In de volgende stappen voegt u een herhaling toe over waarden in uw bestaande scenario.
+## 1.2.3.2 Toegang tot Frame.io
 
-In tussen de **knoop van de Router** en de **knoop van de Tekst van de Verandering van Photoshop**, selecteer het **moersleutelpictogram** en selecteer **voeg een module** toe.
+Ga naar [ https://next.frame.io/ ](https://next.frame.io/){target="_blank"}.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion201.png)
+![ Kader IO ](./images/frame1.png)
 
-Onderzoek naar `flow` en selecteer **de Controle van de Stroom**.
+Controleer aan welke instantie u momenteel bent aangemeld door op het instantiepictogram te klikken. Kies de instantie waartoe u toegang hebt gekregen. Dit moet `--aepImsOrgName--` zijn.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion202.png)
+Klik **+ Nieuw Project** om uw eigen project in Frame.io tot stand te brengen.
 
-Selecteer **Teller**.
+![ Kader IO ](./images/frame1a.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion203.png)
+Selecteer het **Lege** malplaatje en ga dan de naam `--aepUserLdap--` voor uw project in. Klik **creëren Nieuw Project**.
 
-Uw scherm moet er als volgt uitzien:
+![ Kader IO ](./images/frame2.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion204.png)
+U zult dan uw project in het linkermenu zien. Klik **+** pictogram en selecteer dan **Nieuwe Omslag**.
 
-Terwijl het mogelijk is om inputdossiers zoals Csv- dossiers te lezen, moet u momenteel een basisversie van een Csv- dossier gebruiken door een tekstkoord te bepalen en dat tekstdossier te verdelen.
+![ Kader IO ](./images/framev4_3.png)
 
-U kunt de **gespleten** functie vinden door het **t** pictogram te selecteren, waar u alle beschikbare functies ziet om tekstwaarden te manipuleren. Selecteer de **gespleten** functie, dan zou u dit moeten zien.
+Voer de naam `CitiSignal Fiber Campaign` in en dubbelklik op de map om deze te openen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion206.png)
+![ Kader IO ](./images/framev4_4.png)
 
-De splitsfunctie verwacht een array van waarden voor de puntkomma en verwacht dat u het scheidingsteken na de puntkomma opgeeft. Voor deze test, zou u een eenvoudige serie met 2 gebieden moeten gebruiken, **kopen nu** en **klikt hier**, en de separator aan gebruik is **,**.
+Klik **uploaden**.
 
-Ga dit op het **gebied van de Serie** door de momenteel lege **gespleten** functie te vervangen: `{{split("Buy now, Click here "; ",")}}`. Selecteer **O.K.**.
+![ Kader IO ](./images/framev4_5.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion205.png)
+In één van de vorige oefeningen, downloadde u [ burgersignaal-fiber.psd ](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Selecteer dat dossier en klik **Open**.
 
-Selecteer **de Tekst van de Verandering van Photoshop** om in sommige variabelen in plaats van statische waarden voor de input en outputgebieden toe te voegen.
+![ Kader IO ](./images/framev4_6.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion207.png)
+Het dossier **burgerschap-fiber.psd** zal dan beschikbaar in uw pas gecreëerde omslag zijn.
 
-In **inhoud van het Verzoek**, is de tekst **hier klikt**. Deze tekst moet worden vervangen door de waarden uit uw array.
+![ Kader IO ](./images/framev4_7.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion208.png)
+## 1.2.3.3 Workfront Fusion en Frame.io
 
-Schrap de tekst **hier** klikt, en vervangt het door de veranderlijke **Waarde** van de **Iterator** knoop te selecteren. Zo weet u zeker dat de tekst op de knop in uw Photoshop-document dynamisch wordt bijgewerkt.
+In de vorige oefening, creeerde u het scenario `--aepUserLdap-- - Firefly + Photoshop`, dat met een douane webhaak begon en dat met een webshreactie beëindigde. Het gebruik van de webhaken werd vervolgens getest met Postman, maar het is duidelijk dat het punt van een dergelijk scenario moet worden genoemd door een externe toepassing. Zoals eerder vermeld, is Frame.io die oefening, maar tussen Frame.io en `--aepUserLdap-- - Firefly + Photoshop` is een ander Workfront Fusion-scenario nodig. u zult nu dat scenario vormen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion209.png)
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
 
-U moet ook de bestandsnaam bijwerken waarmee het bestand in uw Azure Storage Account wordt geschreven. Als de bestandsnaam statisch is, wordt het vorige bestand door elke nieuwe versie overschreven en gaan de aangepaste bestanden verloren. Huidige statische filename is **burgerschap-vezel-veranderd-text.psd**, en u moet nu dat bijwerken.
+![ WF Fusion ](./images/wffusion1.png)
 
-Plaats de cursor achter het woord `text` .
+In het linkermenu, ga naar **Scenario&#39;s** en selecteer uw omslag `--aepUserLdap--`. Klik **creeer een nieuw scenario**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion210.png)
+![ Kader IO ](./images/frame4.png)
 
-Eerst, voeg een afbreekstreepje `-` toe en selecteer dan de waarde **Positie van de Volgorde van de Bundel**. Dit zorgt ervoor dat Workfront Fusion voor de eerste iteratie `-1` toevoegt aan de bestandsnaam, voor de tweede iteratie `-2` enzovoort. Selecteer **O.K.**.
+Gebruik de naam `--aepUserLdap-- - Frame IO Custom Action V4` .
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion211.png)
+![ Kader IO ](./images/frame5.png)
 
-Sparen uw scenario en selecteer dan **Looppas eens**.
+Klik het **voorwerp van het vraagteken** op het canvas. Ga de tekst `webhook` in het onderzoeksvakje in en klik **Webhooks**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion212.png)
+![ Kader IO ](./images/frame6.png)
 
-Als het scenario eenmaal is uitgevoerd, gaat u terug naar uw Azure Storage Explorer en vernieuwt u de map. De twee nieuwe bestanden worden dan weergegeven.
+Klik **WebHaak van de Douane**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion213.png)
+![ Kader IO ](./images/frame7.png)
 
-Download en open elk bestand. U dient verschillende teksten op de knoppen te plaatsen. Dit is bestand `citisignal-fiber-changed-text-1.psd` .
+Klik **toevoegen** om een nieuwe webhaakURL tot stand te brengen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion214.png)
+![ Kader IO ](./images/frame8.png)
 
-Dit is bestand `citisignal-fiber-changed-text-2.psd` .
+Voor de **naam van Webhaak**, gebruik `--aepUserLdap-- - Frame IO Custom Action Webhook`. Klik **sparen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion215.png)
+![ Kader IO ](./images/frame9.png)
 
-## 1.2.3.2 Activeer uw scenario met een webhaak
+Dan moet je dit zien. Laat dit scherm open en onaangeroerd zoals u het in een volgende stap nodig hebt. U zult WebHaak URL in een volgende stap moeten kopiëren, door **adres van het Exemplaar aan klembord** te klikken.
 
-Tot dusver, hebt u uw scenario manueel in werking gesteld om te testen. Werk nu uw scenario bij met een webhaak, zodat het vanuit een externe omgeving kan worden geactiveerd.
+![ Kader IO ](./images/frame10.png)
 
-Selecteer **+**, onderzoek naar **webhaak** en selecteer dan **Webhooks**.
+## 1.2.3.4 Frame.io V4 API voor aangepaste handelingen
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion216.png)
+Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Verifieer het gebied **werkingsgebied** onder **Params**. Het gebied **werkingsgebied** zou het werkingsgebied `frame.s2s.all` moeten omvatten. Voeg het toe als het ontbreekt. Daarna, verzendt de klik **** om een nieuw **access_token** te verzoeken.
 
-Selecteer **Webhaak van de Douane**.
+![ Kader IO ](./images/frameV4api2.png)
 
-Sleep en verbind de **knoop van de Douane webhaak** zodat het met de eerste knoop op het canvas verbindt, die **wordt genoemd initialiseert Constanten**.
+Daarna, open het verzoek **GET - de Rekeningen van de Lijst** in de inzameling **Frame.io V4 - de Instanties van de Tech**. Klik **verzenden**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion217.png)
+![ Kader IO ](./images/frameV4api1.png)
 
-Selecteer de **knoop van de Webhaak van de Douane**. Dan, selecteer **toevoegen**.
+Vervolgens ziet u een vergelijkbare reactie die een of meer accounts bevat. Herzie de reactie en bepaal de plaats van het gebied **identiteitskaart** voor de rekening Frame.io V4 u gebruikt. U kunt de naam van de Rekening in Frame.io V4 gebruikersinterface vinden:
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion218.png)
+![ Kader IO ](./images/frame1.png)
 
-Plaats **naam Webhaak** aan `--aepUserLdap-- - Tutorial 1.2`.
+Kopieer de waarde van het gebied **identiteitskaart**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion219.png)
+![ Kader IO ](./images/frameV4api3.png)
 
-Controle de doos voor **krijgt verzoekkopballen**. Selecteer **sparen**.
+In het linkermenu, ga naar **Milieu&#39;s** en selecteer het milieu u gebruikt. Vind veranderlijk **`FRAME_IO_ACCOUNT_ID`** en kleef **identiteitskaart** die u van het vorige verzoek in zowel de **Aanvankelijke waarde** kolom en de **Huidige waarde** kolom kreeg. Klik **sparen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion220.png)
+![ Kader IO ](./images/frameV4api4.png)
 
-De URL van uw webhaak is nu beschikbaar. De URL kopiëren.
+In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **GET - de Werkruimten van de Lijst** in de inzameling **Frame.io V4 - de Instanties van de Tech**. Klik **verzenden**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion221.png)
+![ Kader IO ](./images/frameV4api5.png)
 
-Open Postman, en voeg een nieuwe omslag in de inzameling **toe FF - de Instanties van de Tech van Firefly Services**.
+Vervolgens ziet u een vergelijkbare reactie die een of meer accounts bevat. Herzie de reactie en bepaal de plaats van het gebied **identiteitskaart** voor Frame.io V4 Workspace u gebruikt. Kopieer de waarde van het gebied **identiteitskaart**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion222.png)
+![ Kader IO ](./images/frameV4api6.png)
 
-Geef de map een naam `--aepUserLdap-- - Workfront Fusion` .
+In het linkermenu, ga naar **Milieu&#39;s** en selecteer het milieu u gebruikt. Vind veranderlijk **`FRAME_IO_WORKSPACE_ID`** en kleef **identiteitskaart** die u van het vorige verzoek in zowel de **Aanvankelijke waarde** kolom en de **Huidige waarde** kolom kreeg. Klik **sparen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion223.png)
+![ Kader IO ](./images/frameV4api7.png)
 
-In de omslag die u enkel creeerde, selecteer de 3 punten **...** en selecteer **verzoek** toevoegen.
+In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **POST - creeer de Actie van de Douane** in de inzameling **Frame.io V4 - de Instanties van de Tech**, in de omslag **Acties van de Douane**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion224.png)
+Ga naar het **Lichaam** van het verzoek. Verander het gebied **naam** aan `--aepUserLdap--  - Frame.io Custom Action V4` en verander dan het gebied **url** in de waarde van Webhaak URL u van de Fusie van Workfront kopieerde.
 
-Plaats het **type van Methode** aan **POST** en kleef URL van uw webhaak in de adresbar.
+Klik **verzenden**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion225.png)
+![ Kader IO ](./images/frameV4api8.png)
 
-U moet een douanelichaam verzenden, zodat de veranderlijke elementen van een externe bron aan uw scenario van de Fusie van Workfront kunnen worden verstrekt.
+Uw aangepaste actie Frame.io V4 is nu gemaakt.
 
-Ga naar **Lichaam** en selecteer **onbewerkt**.
+![ Kader IO ](./images/frameV4api9.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion226.png)
+Ga terug naar [ https://next.frame.io/ ](https://next.frame.io/){target="_blank"} en ga naar de omslag **Campagne van de Vezel CitiSignal** die u in uw project `--aepUserLdap--` creeerde. Vernieuw de pagina.
 
-Plak de onderstaande tekst in de hoofdtekst van uw verzoek. Selecteer **verzenden**.
+![ Kader IO ](./images/frame16.png)
+
+Na het hebben van de pagina verfrist, klik de 3 punten **...** op de activa **** en open het **menu van de Acties van de Douane**. De aangepaste handeling die u eerder hebt gemaakt, wordt dan weergegeven in het menu dat wordt weergegeven. Klik op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
+
+![ Kader IO ](./images/frame17.png)
+
+U zou dan een gelijkaardige **pop-up van de Actie van de Douane** moeten zien. Deze pop-up is het resultaat van de communicatie tussen Frame.io en Workfront Fusion.
+
+![ Kader IO ](./images/frame18.png)
+
+Zet het scherm terug op Workfront Fusion. U zou nu **met succes moeten zien bepaald** op het voorwerp van de Verbinding van de Douane verschijnen WebHaak. Klik **OK**.
+
+![ Kader IO ](./images/frame19.png)
+
+Klik **Looppas Eenmaal** om testwijze toe te laten, en de mededeling met Frame.io opnieuw te testen.
+
+![ Kader IO ](./images/frame20.png)
+
+Ga terug naar Frame.io en klik nogmaals op de aangepaste handeling `--aepUserLdap-- - Frame IO Custom Action Fusion V4` .
+
+![ Kader IO ](./images/frame21.png)
+
+Schakel het scherm weer in op Workfront Fusion. U zou nu een groen controleteken, en een bel moeten zien die **1** tonen. Klik op de ballon om de details weer te geven.
+
+![ Kader IO ](./images/frame22.png)
+
+De gedetailleerde mening van de bel toont u de gegevens die van Frame.io werden ontvangen. Je moet verschillende id&#39;s zien. Als voorbeeld, toont het gebied **resource.id** unieke identiteitskaart in Frame.io van de activa **burgerschap-fiber.psd**.
+
+![ Kader IO ](./images/frame23.png)
+
+Nu communicatie tot stand is gebracht tussen Frame.io en Workfront Fusion, kunt u uw configuratie voortzetten.
+
+## 1.2.3.5 Een aangepaste formulierreactie bieden op Frame.io
+
+Wanneer de aangepaste handeling wordt aangeroepen in Frame.io, verwacht Frame.io een reactie van Workfront Fusion te ontvangen. Als u terugdenkt aan het scenario u in de vorige oefening bouwde, wordt een aantal variabelen vereist om het standaardPhotoshop PSD dossier bij te werken. Deze variabelen worden gedefinieerd in de payload die u hebt gebruikt:
 
 ```json
 {
-	"psdTemplate": "placeholder",
-	"xlsFile": "placeholder"
+    "psdTemplate": "citisignal-fiber.psd",
+    "xlsFile": "placeholder",
+    "prompt":"misty meadows",
+    "cta": "Buy this now!",
+    "button": "Click here to buy!"
 }
 ```
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion229.png)
+Zo in orde voor het scenario `--aepUserLdap-- - Firefly + Photoshop` om met succes in werking te stellen, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig.
 
-Terug in de Fusie van Workfront, verschijnt een bericht op uw douane webhaak die zegt: **met succes bepaalde**.
+De eerste 3 gebieden, **herinnering**, **cta**, **knoop**, vereisen gebruikersinput die in Frame.io moet worden verzameld wanneer de gebruiker de douaneactie aanhaalt. Dus het eerste wat we moeten doen binnen Workfront Fusion is controleren of deze variabelen al dan niet beschikbaar zijn en als dat niet het geval is, moet Workfront Fusion reageren op Frame.io met het verzoek om deze variabelen in te voeren. De manier om dat te bereiken is door een formulier in Frame.io te gebruiken.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion227.png)
+Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action` . Beweeg over het **Webhaak van de Douane** voorwerp en klik **+** pictogram om een andere module toe te voegen.
 
-Selecteer **sparen** en selecteer dan **Looppas eens**. Uw scenario is nu actief maar zal niet lopen tot u **selecteert verzend** opnieuw in Postman.
+![ Kader IO ](./images/frame24.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion230.png)
+Onderzoek naar `Flow Control` en klik **de Controle van de Stroom**.
 
-In Postman selecteert **verzend** opnieuw.
+![ Kader IO ](./images/frame25.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion228.png)
+Klik om **Router** te selecteren.
 
-Uw scenario wordt opnieuw uitgevoerd en leidt tot de 2 dossiers enkel als voordien.
+![ Kader IO ](./images/frame26.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion232.png)
+Dan moet je dit zien.
 
-Wijzig de naam van uw Postman-aanvraag in `POST - Send Request to Workfront Fusion Webhook` .
+![ Kader IO ](./images/frame27.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion233.png)
+Klik op **?** voorwerp en klik dan om **Webhooks** te selecteren.
 
-Nu moet u beginnen veranderlijk **psdTemplate** te gebruiken. In plaats van hardcoding de plaats van het inputdossier in de **knoop van de Tekst van de Verandering van Photoshop**, zult u de inkomende variabele van het verzoek van Postman gebruiken.
+![ Kader IO ](./images/frame28.png)
 
-Open de **knoop van de Tekst van de Verandering van Photoshop** en ga naar **inhoud van het Verzoek**. Selecteer hardcoded filename **burgerschap-fiber.psd** onder **input** en schrap het.
+Selecteer **reactie Webhaak**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion234.png)
+![ Kader IO ](./images/frame29.png)
 
-Selecteer veranderlijk **psdTemplate**. Selecteer **O.K.** en bewaar dan uw scenario.
+Dan moet je dit zien.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion235.png)
+![ Kader IO ](./images/frame30.png)
 
-Selecteer **AAN** om uw scenario aan te zetten. Uw scenario loopt nu zonder onderbreking.
+Kopieer de hieronder code JSON en kleef het op het gebied **Lichaam**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion236.png)
 
-Terug in Postman, ga filename `citisignal-fiber.psd` als waarde voor veranderlijke **psdTemplate** in en selecteer **verzend** opnieuw om uw scenario opnieuw in werking te stellen.
+```json
+{
+  "title": "What do you want Firefly to generate?",
+  "description": "Enter your Firefly prompt.",
+  "fields": [
+    {
+      "type": "text",
+      "label": "Prompt",
+      "name": "Prompt",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "label": "CTA Text",
+      "name": "CTA Text",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "name": "Button Text",
+      "value": ""
+    }
+  ]
+}
+```
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion237.png)
+Klik op het pictogram om de JSON-code op te schonen en te verfraaien. Dan, klik O.K. ****.
 
-Door het malplaatje van PSD als variabele te specificeren die door een extern systeem wordt verstrekt, hebt u nu een herbruikbaar scenario gebouwd.
+![ Kader IO ](./images/frame31.png)
 
-Nu hebt u deze oefening afgerond.
+Klik **sparen** om uw veranderingen te bewaren.
+
+![ Kader IO ](./images/frame32.png)
+
+Daarna, moet u opstelling een filter ervoor zorgen dat dit weg van het scenario slechts loopt wanneer geen herinnering beschikbaar is. Klik het **moersleutelpictogram** en selecteer dan **Opstelling een filter**.
+
+![ Kader IO ](./images/frame33.png)
+
+Configureer de volgende velden:
+
+- **Etiket**: gebruik `Prompt isn't available`.
+- **Voorwaarde**: gebruik `{{1.data.Prompt}}`.
+- **Basisexploitanten**: uitgezochte **bestaat niet**.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{1.data.Prompt}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat veranderlijk `{{1.data.Prompt}}` tot het gebied **data.Prompt** van de module met opeenvolgingsaantal 1 zal toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Klik **OK**.
+
+![ Kader IO ](./images/frame34.png)
+
+Dan moet je dit zien. Klik **sparen** pictogram eerst, en klik dan **in werking stellen eens** om uw scenario te testen.
+
+![ Kader IO ](./images/frame35.png)
+
+Dan moet je dit zien.
+
+![ Kader IO ](./images/frame36.png)
+
+Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion` op de activa **burgerschap-fiber.psd** opnieuw.
+
+![ Kader IO ](./images/frame37.png)
+
+U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
+
+![ Kader IO ](./images/frame38.png)
+
+De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **module van de Reactie van Webhaak**. U zult zien dat onder **INPUT**, u het lichaam ziet dat de nuttige lading JSON voor de vorm bevat. Klik **Looppas eens** opnieuw.
+
+![ Kader IO ](./images/frame40.png)
+
+Dan moet u dit nog eens zien.
+
+![ Kader IO ](./images/frame41.png)
+
+Ga terug naar Frame.io en vul de velden in zoals aangegeven.
+
+- **Herinnering**: futuristische laserbeams die door ruimte lopen
+- **CTA**: Timetravel nu!
+- **Tekst van de Knoop**: Krijg aan boord!
+
+Klik **voorleggen**.
+
+![ Kader IO ](./images/frame39.png)
+
+Dan zie je een popup in Frame.io die er zo uitziet.
+
+![ Kader IO ](./images/frame42.png)
+
+De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **Webhaak van de Douane** module. In Verrichting 1, onder **UITVOER**, kunt u een nieuw **gegevens** voorwerp nu zien dat gebieden als **Tekst van de Knoop** bevat, **Tekst van CTA** en **Vragen**. Met deze variabelen van de gebruikersinvoer beschikbaar in uw scenario, hebt u genoeg om uw configuratie voort te zetten.
+
+![ Kader IO ](./images/frame43.png)
+
+## 1.2.3.6 Bestandslocatie ophalen van Frame.io
+
+Zoals eerder besproken, zijn de gebieden zoals **herinnering**, **cta**, **knoop** en **psdTemplate** nodig voor dit scenario aan functie. De eerste 3 gebieden zijn nu reeds beschikbaar maar **psdTemplate** aan gebruik nog mist. **psdTemplate** zal nu een plaats Frame.io van verwijzingen voorzien aangezien het dossier **wordt** ontvangen {in Frame.io. Om de locatie van dat bestand op te halen, moet u de verbinding Frame.io configureren en gebruiken in Workfront Fusion.
+
+Ga terug naar Workfront Fusion en open uw scenario `--aepUserLdap-- - Frame IO Custom Action V4` . Over de **heen?** klikt u op het pictogram **+** om een andere module toe te voegen en te zoeken naar `frame` . Klik **Frame.io**.
+
+![ Kader IO ](./images/frame44.png)
+
+Klik **Frame.io**.
+
+![ Kader IO ](./images/frame45.png)
+
+Klik **maak een douane API vraag**.
+
+![ Kader IO ](./images/frame46.png)
+
+Om de verbinding te gebruiken Frame.io, moet u het eerst vormen. Klik **toevoegen** om dat te doen.
+
+![ Kader IO ](./images/frame47.png)
+
+Selecteer het **type van Verbinding** **Server IMS aan Server** en ga de naam `--aepUserLdap-- - Adobe I/O - Frame.io S2S` in.
+
+![ Kader IO ](./images/frame48.png)
+
+Daarna, moet u **identiteitskaart van de Cliënt** ingaan en **Geheime Cliënt** van het project van Adobe I/O dat u als deel van de **Begonnen** module vormde. U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [ hier ](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
+
+![ Kader IO ](./images/frame50.png)
+
+Ga terug naar je scenario in Workfront Fusion. Plak de waarden van **identiteitskaart van de Cliënt** en **Geheime Cliënt** op hun respectieve gebied in het venster van de verbindingsopstelling. Klik **verdergaan**. De verbinding wordt nu getest door Workfront Fusion.
+
+![ Kader IO ](./images/frame55.png)
+
+Als de verbinding met succes werd getest, zal het automatisch onder **Verbinding** verschijnen. U hebt nu een succesvolle verbinding, en u moet de configuratie voltooien om alle elementdetails van Frame.io, met inbegrip van de dossierplaats te krijgen. Om dit te doen, zult u **identiteitskaart van het Middel** moeten gebruiken.
+
+![ Kader IO ](./images/frame56.png)
+
+Het gebied **identiteitskaart van het Middel** wordt gedeeld door Frame.io aan de Fusie van Workfront als deel van de aanvankelijke **Webhaak van de Douane** mededeling en kan onder het gebied **resource.id** worden gevonden.
+
+Voor de configuratie van de module **Frame.io - maak een douane API vraag**, gebruik URL: `/v4/accounts/{{1.account_id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{1.account_id}}` en `{{1.resource.id}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabelen `{{1.account_id}}` en `{{1.resource.id}}` tot dat gebied van de module met opeenvolgingsaantal 1 zullen toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Daarna, klik **+ voeg punt** onder **Koord van de Vraag** toe.
+
+![ Kader IO ](./images/frame57.png)
+
+Ga deze waarden in en klik **toevoegen**.
+
+| Sleutel | Waarde |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![ Kader IO ](./images/frame58.png)
+
+Dat zou u nu moeten doen. Klik **OK**.
+
+![ Kader IO ](./images/frame58a.png)
+
+Daarna, moet u opstelling een filter ervoor zorgen dat dit weg van het scenario slechts loopt wanneer geen herinnering beschikbaar is. Klik het **moersleutelpictogram** en selecteer dan **Opstelling een filter**.
+
+![ Kader IO ](./images/frame58c.png)
+
+Configureer de volgende velden:
+
+- **Etiket**: gebruik `Prompt is available`.
+- **Voorwaarde**: gebruik `{{1.data.Prompt}}`.
+- **Basisexploitanten**: uitgezochte **bestaat**.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{1.data.Prompt}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat veranderlijk `{{1.data.Prompt}}` tot het gebied **data.Prompt** van de module met opeenvolgingsaantal 1 zal toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Klik **OK**.
+
+![ Kader IO ](./images/frame58d.png)
+
+U moet dit nu zien. Sparen uw veranderingen en klik dan **Looppas eens** om uw scenario te testen.
+
+![ Kader IO ](./images/frame58b.png)
+
+Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion V4` op de activa **burgerschap-fiber.psd** opnieuw.
+
+![ Kader IO ](./images/frame37.png)
+
+U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
+
+![ Kader IO ](./images/frame38.png)
+
+Ga terug naar Workfront Fusion. Klik **Looppas eens** opnieuw.
+
+![ Kader IO ](./images/frame59.png)
+
+Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**.
+
+- **Herinnering**: futuristische laserbeams die door ruimte lopen
+- **CTA**: Timetravel nu!
+- **Tekst van de Knoop**: Krijg aan boord!
+
+![ Kader IO ](./images/frame39.png)
+
+De schakelaar terug naar de Fusie van Workfront en klikt de bel op **Frame.io - maak een douane API vraag** module.
+
+![ Kader IO ](./images/frame60.png)
+
+Onder **UITVOER** > **Lichaam** > **gegevens**, kunt u een hoop meta-gegevens over de specifieke activa **nu zien burgerschap-fiber.psd**.
+
+![ Kader IO ](./images/frame61.png)
+
+Het specifieke stuk van informatie dat voor dit gebruiksgeval nodig is, is de plaatsURL van het dossier **burgersignaal-fiber.psd**, die u kunt vinden door neer aan het gebied **media_links** te scrollen > **Origineel** > **download_url**.
+
+![ Kader IO ](./images/frame62.png)
+
+U hebt nu al informatie (**herinnering**, **cta**, **knoop** en **psdTemplate**) beschikbaar die voor dit gebruiksgeval aan functie nodig is.
+
+## 1.2.3.7 Een ander Workfront-scenario aanroepen
+
+In de vorige oefening vormde u het scenario `--aepUserLdap-- - Firefly + Photoshop`. Nu moet u een kleine wijziging aanbrengen in dat scenario.
+
+Open het scenario `--aepUserLdap-- - Firefly + Photoshop` in een ander lusje en klik eerste **Adobe Photoshop - pas PSD uit** module. U moet nu zien dat het invoerbestand is geconfigureerd voor het gebruik van een dynamische locatie in Microsoft Azure. Aangezien voor dit gebruik het invoerbestand niet meer in Microsoft Azure wordt opgeslagen, maar in plaats daarvan met Frame.io-opslag, moet u deze instellingen wijzigen.
+
+![ Kader IO ](./images/frame63.png)
+
+De opslag van de verandering **aan** Externe **en verandert** plaats van het Dossier **om slechts de** psdTemplate **variabele te gebruiken die van de inkomende** WebHaak van de Douane **module wordt genomen.** Klik **O.K.** en klik dan **sparen** om uw veranderingen te bewaren.
+
+![ Kader IO ](./images/frame64.png)
+
+Klik de **Webhaak van de Douane** module en klik dan **adres van het Exemplaar aan klembord**. U moet URL kopiëren aangezien u het in het andere scenario zult moeten gebruiken.
+
+![ Kader IO ](./images/frame65.png)
+
+Ga terug naar uw scenario `--aepUserLdap-- - Frame IO Custom Action V4`. Beweeg over **Frame.io - maak een douane API vraag** module en klik **+** pictogram.
+
+![ Kader IO ](./images/frame66.png)
+
+Ga `http` in en klik dan **HTTP**.
+
+![ Kader IO ](./images/frame67.png)
+
+Selecteer **maak een verzoek**.
+
+![ Kader IO ](./images/frame68.png)
+
+Plak URL van de douane webhaak op het gebied **URL**. Plaats de **Methode** aan **POST**.
+
+![ Kader IO ](./images/frame69.png)
+
+Plaats **type van Lichaam** aan **Onbewerkte** en **inhoudstype** aan **JSON (toepassing/json)**.
+Plak hieronder JSON nuttige lading op het gebied **inhoud van het Verzoek** en laat checkbox voor **toe ontleed reactie**.
+
+```json
+{
+    "psdTemplate": "citisignal-fiber.psd",
+    "xlsFile": "placeholder",
+    "prompt":"misty meadows",
+    "cta": "Buy this now!",
+    "button": "Click here to buy!"
+}
+```
+
+U hebt nu een statische gevormde lading, maar het moet dynamisch worden gebruikend de eerder verzamelde variabelen.
+
+![ Kader IO ](./images/frame70.png)
+
+Voor het gebied **psdTemplate**, vervang de statische veranderlijke **burgerschap-fiber.psd** door veranderlijk **`Body > data > media_links > original > download_url`**.
+
+![ Kader IO ](./images/frame71.png)
+
+Voor de gebieden **herinnering**, **cta** en **knoop**, vervang de statische variabelen door de dynamische variabelen die in het scenario door het inkomende webhaakverzoek van Frame.io werden opgenomen, die de velden **data.Prompt**, **data.CTA Tekst** en **data.Button Tekst** zijn.
+
+Ook, laat checkbox voor **toe ontleed reactie**.
+
+Klik **OK**.
+
+![ Kader IO ](./images/frame72.png)
+
+Klik **sparen** om uw veranderingen te bewaren.
+
+![ Kader IO ](./images/frame73.png)
+
+## 1.2.3.8 Nieuw element opslaan in Frame.io
+
+Nadat het andere Workfront Fusion-scenario is aangeroepen, wordt het resultaat een nieuwe Photoshop PSD-sjabloon die beschikbaar is. Dat PSD-bestand moet weer worden opgeslagen in Frame.io. Dit is de laatste stap in dit scenario.
+
+Beweeg over **HTTP - doe een verzoek** module en klik **+** pictogram.
+
+![ Kader IO ](./images/frame74.png)
+
+Selecteer **Frame.io**.
+
+![ Kader IO ](./images/frame75.png)
+
+Selecteer **maak een douane API vraag**.
+
+![ Kader IO ](./images/frame76.png)
+
+De verbinding Frame.io wordt automatisch geselecteerd.
+
+![ Kader IO ](./images/frame77.png)
+
+Voor de configuratie van de module **Frame.io - maak een douane API vraag**, gebruik URL: `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
+
+>[!NOTE]
+>
+>Zoals eerder vermeld, kunnen variabelen in Workfront Fusion handmatig worden opgegeven met de volgende syntaxis: `{{1.account_id}}` en `{{4.body.data.parent_id}}` . Het getal in de variabele verwijst naar de module in het scenario.
+>In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabele `{{1.account_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 1.
+>In dit voorbeeld, kunt u zien dat de vierde module in het scenario **Frame.io wordt genoemd - maak een douane API vraag** en heeft een opeenvolgingsaantal van **4**. Dit betekent dat de variabele `{{4.body.data.parent_id}}` toegang heeft tot dat veld vanuit de module met volgnummer 4.
+>Als de volgnummers van de modules verschillend zijn, moet u de variabelen in de bovenstaande URL bijwerken om deze aan de juiste module te kunnen koppelen.
+
+![ Kader IO ](./images/frame78.png)
+
+Verander de gebied **Methode** aan **POST**.
+
+Kopieer en kleef het hieronder fragment JSON in het gebied **Lichaam**.
+
+```json
+{
+  "data": {
+    "name": "citisignal-fiber-{{timestamp}}.psd",
+    "source_url": "{{6.data.newPsdTemplate}}"
+  }
+}
+```
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{6.data.newPsdTemplate}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de zesde module in het scenario **HTTP wordt genoemd - doe een verzoek** en heeft een opeenvolgingsaantal van **6**. Dit betekent dat veranderlijk `{{6.data.newPsdTemplate}}` tot het gebied **data.newPsdTemplate** van de module met opeenvolgingsaantal 6 zal toegang hebben.
+>Als de volgordenummers van de module verschillend zijn, moet u de variabele in bovenstaande URL bijwerken om aan de correcte module te worden gekoppeld.
+
+Klik **OK**.
+
+![ Kader IO ](./images/frame79.png)
+
+Klik **sparen** om uw veranderingen te bewaren.
+
+![ Kader IO ](./images/frame81.png)
+
+## 1.2.3.9 Test uw gebruiksscenario van begin tot eind
+
+Klik **Looppas eens** in uw scenario `--aepUserLdap-- - Frame IO Custom Action`.
+
+![ Kader IO ](./images/frame85.png)
+
+Ga terug naar Frame.io en klik de douaneactie `--aepUserLdap-- - Frame IO Custom Action Fusion V4` op de activa **burgerschap-fiber.psd** opnieuw.
+
+![ Kader IO ](./images/frame37.png)
+
+U zou nu een herinnering binnen Frame.io moeten zien. Vul de velden nog niet in en verzend het formulier nog niet. Deze herinnering wordt getoond gebaseerd van de reactie van de Fusie van Workfront die u enkel vormde.
+
+![ Kader IO ](./images/frame38.png)
+
+Ga terug naar Workfront Fusion. Klik **Looppas eens** in uw scenario `--aepUserLdap-- - Frame IO Custom Action V4`.
+
+![ Kader IO ](./images/frame86.png)
+
+In de Fusie van Workfront, open het scenario `--aepUserLdap-- - Firefly + Photoshop` en klik ook **in werking stellen eens** in dat scenario.
+
+![ Kader IO ](./images/frame87.png)
+
+Ga terug naar Frame.io en vul de velden in zoals aangegeven. Klik **voorleggen**.
+
+- **Herinnering**: futuristische laserbeams die door ruimte lopen
+- **CTA**: Timetravel nu!
+- **Tekst van de Knoop**: Krijg aan boord!
+
+![ Kader IO ](./images/frame39.png)
+
+Na 1-2 minuten, zou u een nieuw middel moeten zien automatisch verschijnen in Frame.io. Dubbelklik op het nieuwe element om het te openen.
+
+![ Kader IO ](./images/frame88.png)
+
+U ziet nu duidelijk dat alle variabelen voor gebruikersinvoer automatisch zijn toegepast.
+
+![ Kader IO ](./images/frame89.png)
+
+U hebt deze oefening nu met succes voltooid.
 
 ## Volgende stappen
 
-Ga naar [&#x200B; 1.2.4 Automatisering gebruikend Schakelaars &#x200B;](./ex4.md){target="_blank"}
+Ga naar [ 1.2.4 Frame.io aan Fusie aan AEM Assets ](./ex4.md){target="_blank"}
 
-Ga terug naar [&#x200B; de Automatisering van het Werkschema van Creative met Workfront Fusion &#x200B;](./automation.md){target="_blank"}
+Ga terug naar [ de Automatisering van het Werkschema van Creative met Workfront Fusion ](./automation.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+

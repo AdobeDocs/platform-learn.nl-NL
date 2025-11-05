@@ -1,180 +1,25 @@
 ---
-title: Adobe API's gebruiken in Workfront Fusion
-description: Meer informatie over het gebruik van Adobe API's in Workfront Fusion
+title: Automatisering met behulp van connectors
+description: Automatisering met behulp van connectors
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
 
-# 1.2.2 Adobe API&#39;s gebruiken in Workfront Fusion
+# 1.2.4 Automatisering met behulp van connectors
 
-Leer hoe u Adobe API&#39;s kunt gebruiken in Workfront Fusion.
+U gaat nu de out-of-the-box connectors gebruiken in Workfront Fusion for Photoshop en u gaat de Firefly Text-2-Image-aanvraag en de Photoshop-aanvragen verbinden met één scenario.
 
-## 1.2.2.1 Firefly Text To Image API gebruiken met Workfront Fusion
+## 1.2.4.1 Variabelen bijwerken
 
-Plaats over de tweede **plaats veelvoudige variabelen** knoop en selecteer **+** om een andere module toe te voegen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion48.png)
-
-Onderzoek naar **http** en selecteer **HTTP**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion49.png)
-
-Selecteer **maak een verzoek**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion50.png)
-
-Selecteer deze variabelen:
-
-- **URL**: `https://firefly-api.adobe.io/v3/images/generate`
-- **Methode**: `POST`
-
-Selecteer **toevoegen een kopbal**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion51.png)
-
-Voer de volgende kopteksten in:
-
-| Sleutel | Waarde |
-|:-------------:| :---------------:| 
-| `x-api-key` | opgeslagen variabele voor `CONST_client_id` |
-| `Authorization` | `Bearer ` + de opgeslagen variabele voor `bearer_token` |
-| `Content-Type` | `application/json` |
-| `Accept` | `*/*` |
-
-Voer de details in voor `x-api-key` . Selecteer **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion52.png)
-
-Selecteer **toevoegen een kopbal**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion53.png)
-
-Voer de details in voor `Authorization` . Selecteer **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion54.png)
-
-Selecteer **toevoegen een kopbal**. Voer de details in voor `Content-Type` . Selecteer **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion541.png)
-
-Selecteer **toevoegen een kopbal**. Voer de details in voor `Accept` . Selecteer **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion542.png)
-
-Plaats het **type van Lichaam** aan **Onbewerkte**. Voor **inhoudstype**, uitgezochte **JSON (toepassing/json)**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion55.png)
-
-Plak deze nuttige lading in het **inhoud van het Verzoek** gebied.
-
-```json
-{
-	"numVariations": 1,
-	"size": {
-		"width": 2048,
-      "height": 2048
-    },
-    "prompt": "Horses in a field",
-    "promptBiasingLocaleCode": "en-US"
-}
-```
-
-Controle de doos voor **ontleed reactie**. Selecteer **O.K.**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion56.png)
-
-Selecteer **Looppas eens**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion57.png)
-
-Het scherm moet er zo uitzien.
-
-![WF Fusie](./images/wffusion58.png)
-
-Wilt u de **selecteren?** op het vierde knooppunt, HTTP, om het antwoord te zien. Er wordt een afbeeldingsbestand weergegeven in het antwoord.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion59.png)
-
-Kopieer de URL van de afbeelding en open deze in een browservenster. Uw scherm moet er als volgt uitzien:
-
-![WF Fusie](./images/wffusion60.png)
-
-Klik met de rechtermuisknop op **HTTP** en hernoem naar **Firefly T2I**.
-
-![WF Fusie](./images/wffusion62.png)
-
-Selecteer **Opslaan** om uw wijzigingen op te slaan.
-
-![WF Fusie](./images/wffusion61.png)
-
-## 1.2.2.2 Photoshop API gebruiken met Workfront Fusion
-
-Selecteer **moersleutel** tussen de knopen **plaats Token van de Drager** en **Firefly T2I**. Selecteer **een router** toevoegen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion63.png)
-
-Klik **Firefly T2I** voorwerp met de rechtermuisknop aan en selecteer **Kloon**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion64.png)
-
-Sleep en laat vallen het gekloonde voorwerp dicht bij **Router** voorwerp-het auto-verbindt met de **Router**. Uw scherm moet er als volgt uitzien:
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion65.png)
-
-U hebt nu een identiek exemplaar gebaseerd op het **Firefly T2I** HTTP- verzoek. Sommige montages van **Firefly T2I** HTTP- verzoek zijn gelijkaardig aan wat u met **Photoshop API** moet in wisselwerking staan, die een tijdspaarder is. Nu, moet u slechts de variabelen veranderen die niet het zelfde, zoals verzoek URL en de lading zijn.
-
-Verander **URL** in `https://image.adobe.io/pie/psdService/text`.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion66.png)
-
-Vervang **inhoud van het Verzoek** door de hieronder nuttige lading:
-
-```json
-  {
-    "inputs": [
-      {
-        "storage": "external",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-      }
-    ],
-    "options": {
-      "layers": [
-        {
-          "name": "2048x2048-button-text",
-          "text": {
-            "content": "Click here"
-          }
-        },
-        {
-          "name": "2048x2048-cta",
-          "text": {
-            "content": "Buy this stuff"
-          }
-        }
-      ]
-    },
-    "outputs": [
-      {
-        "storage": "azure",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-        "type": "vnd.adobe.photoshop",
-        "overwrite": true
-      }
-    ]
-  }
-```
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion67.png)
-
-Opdat dit **inhoud van het Verzoek** om behoorlijk te functioneren, zijn er sommige variabelen die ontbreken:
+Alvorens met de schakelaaropstelling verder te gaan, moeten de volgende variabelen aan **worden toegevoegd initialiseert Constanten** module.
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -183,7 +28,7 @@ Opdat dit **inhoud van het Verzoek** om behoorlijk te functioneren, zijn er somm
 
 Ga terug naar uw eerste knoop, uitgezochte **initialiseert Constanten** en kies dan **punt** voor elk van deze variabelen toevoegen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion69.png)
+![ WF Fusion ](./images/wffusion69.png)
 
 | Sleutel | Voorbeeldwaarde |
 |:-------------:| :---------------:| 
@@ -194,262 +39,410 @@ Ga terug naar uw eerste knoop, uitgezochte **initialiseert Constanten** en kies 
 
 U kunt uw variabelen vinden door terug naar Postman te gaan, en uw **Variabelen van het Milieu** te openen.
 
-![&#x200B; Azure Opslag &#x200B;](./../module1.1/images/az105.png)
+![ Azure Opslag ](./../module1.1/images/az105.png)
 
 Kopieer deze waarden naar Workfront Fusion en voeg een nieuw item toe voor elk van deze 4 variabelen.
 
 Het scherm moet er zo uitzien. Selecteer **O.K.**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion68.png)
+![ WF Fusion ](./images/wffusion68.png)
 
-Daarna, ga terug naar het gekloonde verzoek van HTTP om de **inhoud van het Verzoek** bij te werken. Merk de zwarte variabelen in de **inhoud van het Verzoek** op, die de variabelen zijn u over van Postman kopieerde. U moet de variabelen wijzigen die u zojuist hebt gedefinieerd in Workfront Fusion. Vervang elke variabele één door één door de zwarte tekst te schrappen en het te vervangen door de correcte variabele.
+## 1.2.4.2 Activeer uw scenario met een webhaak
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion70.png)
+Tot dusver, hebt u uw scenario manueel in werking gesteld om te testen. Werk nu uw scenario bij met een webhaak, zodat het vanuit een externe omgeving kan worden geactiveerd.
 
-Maak deze 3 veranderingen in de **input** sectie. Selecteer **O.K.**.
+Selecteer **+**, onderzoek naar **webhaak** en selecteer dan **Webhooks**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion71.png)
+![ WF Fusion ](./images/wffusion216.png)
 
-Maak deze 3 veranderingen in de **output** sectie. Selecteer **O.K.**.
+Selecteer **Webhaak van de Douane**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion72.png)
+![ WF Fusion ](./images/wffusion217.png)
 
-Klik de gekloonde knoop met de rechtermuisknop aan, en selecteer **anders noemen**. Verander de naam in **de Tekst van de Verandering van Photoshop**.
+Sleep de **Webhaak van de Douane** module aan het begin van uw scenario. Daarna, selecteer het **klok** pictogram en sleep het op de **Eigen webhaak** module.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion73.png)
+![ WF Fusion ](./images/wffusion217a.png)
 
-Uw scherm moet er als volgt uitzien:
+Dan moet je dit zien. Sleep vervolgens de rode stip op de eerste module naar de paarse stip op de tweede module.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion74.png)
+![ WF Fusion ](./images/wffusion217b.png)
 
-Selecteer **Looppas eens**.
+Dan moet je dit zien. Nieuw, klik de **Webhaak van de Douane** module.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion75.png)
+![ WF Fusion ](./images/wffusion217c.png)
 
-Selecteer het **onderzoek** pictogram op de **knoop van de Tekst van de Verandering van Photoshop** om de reactie te zien. U moet een reactie hebben die er als volgt uitziet, met een koppeling naar een statusbestand.
+Klik **toevoegen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion76.png)
+![ WF Fusion ](./images/wffusion218.png)
 
-Alvorens met de interactie van Photoshop API verder te gaan, maak de route aan de **knoop van Firefly T2I** onbruikbaar om onnodige API vraag aan dat API eindpunt niet te verzenden. Selecteer het **moersleutelpictogram**, en selecteer dan **maak route** onbruikbaar.
+Plaats de **naam van Webhaak** aan `--aepUserLdap-- - Firefly + Photoshop Webhook`. Klik **sparen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion77.png)
+![ WF Fusion ](./images/wffusion219.png)
 
-Uw scherm moet er als volgt uitzien:
+De URL van uw webhaak is nu beschikbaar. Klik **adres van het Exemplaar aan klembord** om URL te kopiëren.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion78.png)
+![ WF Fusion ](./images/wffusion221.png)
 
-Daarna, voeg een andere **Vastgestelde veelvoudige variabelen** knoop toe.
+Open Postman, en voeg een nieuwe omslag in de inzameling **toe FF - de Instanties van de Tech van Firefly Services**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion79.png)
+![ WF Fusion ](./images/wffusion222.png)
 
-Plaats het na de **knoop van de Tekst van de Verandering van Photoshop**.
+Geef de map een naam `--aepUserLdap-- - Workfront Fusion` .
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion80.png)
+![ WF Fusion ](./images/wffusion223.png)
 
-Selecteer de **Vastgestelde veelvoudige variabelen** knoop, uitgezocht **punt** toevoegen. Selecteer de waarde van de variabele in het antwoord op de vorige aanvraag.
+In de omslag die u enkel creeerde, selecteer de 3 punten **...** en selecteer **verzoek** toevoegen.
 
-| Naam variabele | Waarde variabele |
-|:-------------:| :---------------:| 
-| `psdStatusUrl` | `data > _links > self > href` |
+![ WF Fusion ](./images/wffusion224.png)
 
-Selecteer **toevoegen**.
+Plaats het **type van Methode** aan **POST** en kleef URL van uw webhaak in de adresbar.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion81.png)
+![ WF Fusion ](./images/wffusion225.png)
 
-Selecteer **O.K.**.
+U moet een douanelichaam verzenden, zodat de veranderlijke elementen van een externe bron aan uw scenario van de Fusie van Workfront kunnen worden verstrekt.
 
-![WF Fusie](./images/wffusion82.png)
+Ga naar **Lichaam** en selecteer **onbewerkt**.
 
-Klik met de rechtermuisknop op het **knooppunt Photoshop Tekst** wijzigen en selecteer **Kloon**.
+![ WF Fusion ](./images/wffusion226.png)
 
-![WF Fusie](./images/wffusion83.png)
+Plak de onderstaande tekst in de hoofdtekst van uw verzoek. Selecteer **verzenden**.
 
-Sleep de gekloonde HTTP-aanvraag na het **knooppunt Meerdere variabelen** instellen dat u zojuist hebt gemaakt.
+```json
+{
+    "psdTemplate": "citisignal-fiber.psd",
+    "xlsFile": "placeholder",
+    "prompt":"misty meadows",
+    "cta": "Buy this now!",
+    "button": "Click here to buy!"
+}
+```
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion83.png)
+![ WF Fusion ](./images/wffusion229.png)
 
-Klik met de rechtermuisknop op de gekloonde HTTP-aanvraag, selecteer **Naam wijzigen** en wijzig de naam in **Photoshop Check Status** .
+Terug in de Fusie van Workfront, verschijnt een bericht op uw douane webhaak die zegt: **met succes bepaalde**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion84.png)
+![ WF Fusion ](./images/wffusion227.png)
 
-Selecteer deze optie om de HTTP-aanvraag te openen. Verander URL zodat het de variabele verwijzingen die u in de vorige stap creeerde, en plaats de **Methode** aan **GET**.
+## 1.2.4.3 Adobe Firefly Connector
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion85.png)
+Klik op het pictogram **+** om een nieuwe module toe te voegen.
 
-Verwijder het **Lichaam** door de lege optie te selecteren.
+![ WF Fusion ](./images/wffcff2.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion86.png)
+Ga de onderzoekstermijn `Adobe Firefly` in en selecteer dan **Adobe Firefly**.
 
-Selecteer **O.K.**.
+![ WF Fusion ](./images/wffcff2a.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion87.png)
+Selecteer **produceer een beeld**.
 
-Selecteer **Looppas eens**.
+![ WF Fusion ](./images/wffcff3.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion88.png)
+Klik de **Adobe Firefly** module om het te openen, en dan te klikken **voeg** toe om een nieuwe verbinding tot stand te brengen.
 
-Een reactie die het gebied **status** bevat, met status die aan **wordt geplaatst lopend** verschijnt. Het duurt een paar seconden voordat Photoshop het proces heeft voltooid.
+![ WF Fusion ](./images/wffcff5.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion89.png)
+Vul de volgende velden in:
 
-Nu u weet dat de reactie iets meer tijd nodig heeft om te worden gebeëindigd, kan het een goed idee zijn om een tijdopnemer vóór deze HTTP- verzoek toe te voegen zodat het niet onmiddellijk loopt.
+- **naam van de Verbinding**: gebruik `--aepUserLdap-- - Firefly connection`.
+- **Milieu**: gebruik **Productie**.
+- **Type**: gebruik **Persoonlijke rekening**.
+- **identiteitskaart van de Cliënt**: kopieer **identiteitskaart van de Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
+- **Geheim van de Cliënt**: kopieer het **Geheime Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
 
-Selecteer de **knoop van Hulpmiddelen** en selecteer dan **Slaap**.
+U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [ hier ](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion90.png)
+![ WF Fusion ](./images/wffc20.png)
 
-Plaats de **Slaap** knoop binnen tussen **vastgestelde veelvoudige variabelen** en **Status van de Controle van Photoshop**. Plaats de **Vertraging** aan **5** seconden. Selecteer **O.K.**.
+Zodra u alle gebieden hebt ingevuld, gaat de klik **** verder. Uw verbinding wordt dan automatisch gevalideerd.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion91.png)
+![ WF Fusion ](./images/wffcff6.png)
 
-Het scherm moet er zo uitzien. De uitdaging met de onderstaande configuratie is dat 5 seconden wachten genoeg kan zijn, maar misschien is het niet genoeg. In werkelijkheid, zou het beter zijn om een intelligentere oplossing zoals een do.. terwijl lijn te hebben die de status om de 5 seconden controleert tot de status **&#x200B;**&#x200B;wordt geëist. Dus je kunt zo&#39;n tactiek in de volgende stappen implementeren.
+Daarna, selecteer de veranderlijke **herinnering** die aan het scenario door de inkomende **Douane webhaak** wordt verstrekt.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion92.png)
+![ WF Fusion ](./images/wffcff7.png)
 
-Selecteer het **moersleutelpictogram** binnen tussen **plaats veelvoudige variabelen** en **Slaap**. Selecteer **module** toevoegen.
+Plaats de **Modelversie** **herinnering** aan **image4 norm**. Klik **OK**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion93.png)
+![ WF Fusion ](./images/wffcff7b.png)
 
-Onderzoek naar `flow` en selecteer dan **de Controle van de Stroom**.
+Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw configuratie te testen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion94.png)
+![ WF Fusion ](./images/wffcff8.png)
 
-Selecteer **Repeater**.
+Ga naar Postman, verifieer de herinnering in uw verzoek en klik dan **verzenden**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion95.png)
+![ WF Fusion ](./images/wffcff8a.png)
 
-Plaats **herhaalt** aan **20**. Selecteer **O.K.**.
+Zodra u hebt geklikt verzend, ga terug naar de Fusie van Workfront en klik het borstelpictogram op de **Adobe Firefly** module om de details te verifiëren.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion96.png)
+![ WF Fusion ](./images/wffcff9.png)
 
-Daarna, uitgezochte **+** op de **Status van de Controle van Photoshop** om een andere module toe te voegen.
+Ga in **UITVOER** naar **Details** > **url** om URl van het beeld te vinden dat door **Adobe Firefly** werd geproduceerd.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion97.png)
+![ WF Fusion ](./images/wffcff10.png)
 
-Onderzoek naar **stroom** en selecteer **de Controle van de Stroom**.
+Kopieer de URL en passeer deze in uw browser. U zou nu een beeld moeten zien dat de herinnering vertegenwoordigt u binnen van het verzoek van Postman, in dit geval **misty graslanden** verzond.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion98.png)
+![ WF Fusion ](./images/wffcff11.png)
 
-Selecteer **de Samenvoegaar van de Serie**.
+## 1.2.4.2 De achtergrond van een PSD-bestand wijzigen
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion99.png)
+U zult nu uw scenario bijwerken om het slimmer te maken door meer uit-van-de-doos schakelaars te gebruiken. U gaat ook de uitvoer van Firefly naar Photoshop verbinden, zodat de achtergrondafbeelding van het PSD-bestand dynamisch verandert door de uitvoer van de actie Afbeelding genereren door Firefly te gebruiken.
 
-Plaats **Module van Source** aan **Repeater**. Selecteer **O.K.**.
+Dan moet je dit zien. Daarna, beweegt over de **Adobe Firefly** module en klikt **+** pictogram.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion100.png)
+![ WF Fusion ](./images/wffc15.png)
 
-Uw scherm moet er als volgt uitzien:
+In het onderzoeksmenu, ga `Photoshop` in en klik dan de **Adobe Photoshop** actie.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion101.png)
+![ WF Fusion ](./images/wffc16.png)
 
-Selecteer het **moersleutelpictogram** en selecteer **een module** toevoegen.
+Selecteer **toepassen PSD geeft uit**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion102.png)
+![ WF Fusion ](./images/wffc17.png)
 
-Onderzoek naar **hulpmiddelen** en selecteer **Hulpmiddelen**.
+Dan moet je dit zien. Klik **toevoegen** om een nieuwe verbinding aan Adobe Photoshop toe te voegen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion103.png)
+![ WF Fusion ](./images/wffc18.png)
 
-Selecteer **krijgen veelvoudige variabelen**.
+Configureer de verbinding als volgt:
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion104.png)
+- Het type van verbinding: selecteer **Adobe Photoshop (Server-aan-Server)**
+- Naam van verbinding: enter `--aepUserLdap-- - Adobe I/O`
+- Client-id: uw client-id plakken
+- Clientgeheim: plak uw clientgeheim
 
-Selecteer **+ voeg punt** toe en plaats **Veranderlijke naam** aan `done`.
+Klik **verdergaan**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion105.png)
+![ WF Fusion ](./images/wffc19.png)
 
-Selecteer **O.K.**.
+Om uw **identiteitskaart van de Cliënt te vinden** en **Geheim van de Cliënt**, ga [ https://developer.adobe.com/console/home ](https://developer.adobe.com/console/home){target="_blank"} en open uw project van Adobe I/O, dat `--aepUserLdap-- One Adobe tutorial` wordt genoemd. Ga naar **OAuth Server-aan-Server** om uw identiteitskaart van de Cliënt en Geheime cliënt te vinden. Kopieer deze waarden en plak ze in de verbindingsinstelling in Workfront Fusion.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion106.png)
+![ WF Fusion ](./images/wffc20.png)
 
-Selecteer de **Vastgestelde veelvoudige variabelen** knoop die u vóór vormde. Om veranderlijk **te initialiseren gedaan**, moet u het aan `false` hier plaatsen. Selecteer **+ toevoegen punt**.
+Na het klikken **ga** verder, zal een popup venster kort worden getoond terwijl uw geloofsbrieven worden geverifieerd. Als je klaar bent, moet je dit zien.
 
-![WF Fusie](./images/wffusion107.png)
+![ WF Fusion ](./images/wffc21.png)
 
-Gebruik `done` voor de naam van de **variabele**
+U moet nu de bestandslocatie invoeren van het PSD-bestand waarmee u Fusion wilt gebruiken. Voor **Opslag**, uitgezochte **Azure** en voor **plaats van het Dossier**, ga `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` in. Plaats de cursor naast de tweede `/` . Dan, heb een blik op de beschikbare variabelen en scrol neer om veranderlijk **psdTemplate** te vinden. Klik veranderlijk **psdTemplate** om het te selecteren.
 
-Om de status in te stellen, is een booleaanse waarde nodig. Als u de booleaanse waarde wilt vinden, selecteert u **tandwiel** en vervolgens .`false` Selecteer **Toevoegen**.
+![ WF Fusion ](./images/wffc22.png)
 
-![WF Fusie](./images/wffusion108.png)
+Dan moet je dit zien.
 
-Selecteer **OK.**
+![ WF Fusion ](./images/wffc23.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion109.png)
+Schuif al manier neer tot u **Lagen** ziet. Klik **toevoegen punt**.
 
-Daarna, selecteer het **moersleutelpictogram** na **krijgt veelvoudige variabelen** knoop die u vormde.
+![ WF Fusion ](./images/wffc24.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion110.png)
+Dan moet je dit zien. U moet nu de naam invoeren van de laag in de Photoshop PSD-sjabloon die wordt gebruikt voor de achtergrond van het bestand.
 
-Selecteer **Opstelling een filter**. U moet nu de waarde van veranderlijk controleren **gedaan**. Als die waarde aan **vals** wordt geplaatst, dan moet het volgende deel van de lijn worden uitgevoerd. Als de waarde aan **waar** wordt geplaatst, betekent het dat het proces reeds met succes heeft voltooid zodat is er geen behoefte om met het volgende deel van de lijn verder te gaan.
+![ WF Fusion ](./images/wffc25.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion111.png)
+In het dossier **wordt** gebruikt het burgerschap-vezel.psd, zult u de laag vinden die voor de achtergrond gebruikte. In dit voorbeeld, wordt die laag genoemd **2048x2048-background**.
 
-Voor het etiket, gebruik **zijn wij gedaan?**. Plaats de **Voorwaarde** gebruikend reeds bestaande variabele **gereed**, zou de exploitant aan **Gelijk aan** moeten worden geplaatst en de waarde zou de booleaanse variabele `false` moeten zijn. Selecteer **O.K.**.
+![ WF Fusion ](./images/wffc26.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion112.png)
+Plak de naam **2048x2048-achtergrond** in de dialoog van de Fusie van Workfront.
 
-Daarna, maak één of andere ruimte tussen de knopen **Status van de Controle van Photoshop** en **de aggregator van de Serie**. Dan, selecteer het **moersleutelpictogram** en selecteer **een router** toevoegen. U doet dit omdat er na het controleren van de status van het Photoshop-bestand twee paden moeten zijn. Als de status `succeeded` is, dan zou de variabele van **gedaan** aan `true` moeten worden geplaatst. Als de status niet gelijk is aan `succeeded` , moet de lus worden voortgezet. De router zal het mogelijk maken om dit te controleren en te plaatsen.
+![ WF Fusion ](./images/wffc27.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion113.png)
+De rol neer tot u **Input** ziet. U moet nu definiëren wat op de achtergrondlaag moet worden ingevoegd. In dit geval, moet u de output van de **Adobe Firefly** module selecteren, die het dynamisch geproduceerde beeld bevat.
 
-Na het toevoegen van de router, selecteer het **moersleutelpictogram** en selecteer **Opstelling een filter**.
+Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, zult u veranderlijk `{{XX.details[].url}}` van de output van de **Adobe Firefly** module moeten kopiëren en kleven maar u moet **XX** in de variabele door het opeenvolgingsaantal van de **Adobe Firefly** module vervangen, die in dit voorbeeld **5** is.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion114.png)
+![ WF Fusion ](./images/wffc28.png)
 
-Voor het etiket, gebruik **wij worden gedaan**. Plaats de **Voorwaarde** gebruikend de reactie van de **3&rbrace; knoop van de Status van de Controle van Photoshop door het antwoordgebied te kiezen** data.outputs [] .status **, zou de exploitant aan** Gelijk aan **moeten worden geplaatst en de waarde zou `succeeded` moeten zijn.** Selecteer **O.K.**.
+Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **** uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion115.png)
+![ WF Fusion ](./images/wffc29.png)
 
-Daarna, selecteer de lege knoop met het vraagteken en onderzoek naar **hulpmiddelen**. Dan, selecteer **Hulpmiddelen**.
+Dan moet je dit zien. Vervolgens moet u de uitvoer van de handeling definiëren. Klik **toevoegen punt** onder **output**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion116.png)
+![ WF Fusion ](./images/wffc30.png)
 
-Selecteer **Vastgestelde veelvoudige variabelen**.
+Selecteer **Azure** voor **Opslag**, kleef dit `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` onder **Plaats van het Dossier** en selecteer **vnd.adobe.photoshop** onder **Type**. Klik om **toe te laten tonen geavanceerde montages**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion117.png)
+![ WF Fusion ](./images/wffc31.png)
 
-Wanneer deze tak van de router wordt gebruikt, betekent dit dat de status van het maken van het Photoshop-bestand is voltooid. Dit betekent dat de do... terwijl lus niet langer de status in Photoshop hoeft te blijven controleren, dus u moet de variabele `done` instellen op `true`.
+Onder **Geavanceerde Montages**, uitgezochte **ja** om dossiers met de zelfde naam te beschrijven.
+Klik **toevoegen**.
 
-Voor de **naam van de Variabele**, gebruik `done`.
+![ WF Fusion ](./images/wffc32.png)
 
-Voor de **Variabele waarde**, zou u de booleaanse waarde `true` moeten gebruiken. Selecteer het **tandwiel** pictogram en selecteer dan `true`. Selecteer **toevoegen**.
+Dan moet je dit hebben. Klik **OK**.
 
-![WF Fusie](./images/wffusion118.png)
+![ WF Fusion ](./images/wffc33.png)
 
-Selecteer **OK.**
+Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw configuratie te testen.
 
-![WF Fusie](./images/wffusion119.png)
+![ WF Fusion ](./images/wffc33a.png)
 
-Klik vervolgens met de rechtermuisknop op het **knooppunt Meerdere variabelen** instellen dat u zojuist hebt gemaakt en selecteer **Kloon**.
+Ga naar Postman, verifieer de herinnering in uw verzoek en klik dan **verzenden**.
 
-![WF Fusie](./images/wffusion120.png)
+![ WF Fusion ](./images/wffcff8a.png)
 
-Sleep de gekloonde knoop zodat het met de **aggregator van de Serie** verbindt. Dan, klik de knoop met de rechtermuisknop aan en selecteer **anders noemen**, en verander de naam in `Placeholder End`.
+Dan moet je dit zien. Klik de bel op **Adobe Photoshop - pas PSD uit** module uitgeeft.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion122.png)
+![ WF Fusion ](./images/wffc33b.png)
 
-Verwijder de bestaande variabele en selecteer **+ Punt toevoegen**. Voor de **Veranderlijke naam**, gebruik `placeholder`, voor de **Variabele waarde**, gebruik `end`. Selecteer **toevoegen** en dan selecteren **O.K.**.
+U ziet nu dat er een nieuw PSD-bestand is gegenereerd en opgeslagen in uw Microsoft Azure Storage Account.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion123.png)
+![ WF Fusion ](./images/wffc33c.png)
 
-Selecteer **sparen** om uw scenario te bewaren. Selecteer vervolgens   **Looppas eens**.
+## 1.2.4.3 Tekstlagen van PSD-bestand wijzigen
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion124.png)
+Daarna, beweeg over **Adobe Photoshop - pas PSD uit geeft** module uit en klik **+** pictogram.
 
-Uw scenario wordt dan uitgevoerd en zou met succes moeten beëindigen. Bericht dat doe...while lijn die u vormde het werk fijn. In de onderste looppas, kunt u zien dat de **Repeater** 20 keer liep die op de bel op **wordt gebaseerd Hulpmiddelen > krijgt veelvoudige variabelen** knoop. Na die knoop, vormde u een filter dat de status controleerde en slechts als de status niet gelijk was aan **succesvol**, werden de volgende knopen uitgevoerd. In deze looppas, liep het deel na de filter slechts eenmaal, omdat de status reeds **&#x200B;**&#x200B;in de eerste looppas werd succesvol.
+![ WF Fusion ](./images/wffc34.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion125.png)
+Selecteer **Adobe Photoshop**.
 
-U kunt het statuut van de verwezenlijking van uw nieuw dossier van Photoshop verifiëren door de bel op het **verzoek van HTTP van de Status van de Controle van Photoshop** te klikken en neer te boren aan het **status** gebied.
+![ WF Fusion ](./images/wffc35.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion126.png)
+Selecteer **tekstlagen** uitgeven.
 
-U hebt nu de basisversie van een herhaalbaar scenario gevormd dat een aantal stappen automatiseert. In de volgende oefening, zult u op dat herhalen door ingewikkeldheid toe te voegen.
+![ WF Fusion ](./images/wffc36.png)
+
+Dan moet je dit zien. Selecteer eerst de eerder geconfigureerde Adobe Photoshop-verbinding met de naam `--aepUserLdap-- Adobe I/O` .
+
+![ WF Fusion ](./images/wffc37.png)
+
+Voor het **dossier van de Input**, uitgezocht **Azure** voor **het dossieropslag van de Input** en zorg ervoor om de output van het vorige verzoek te selecteren, **Adobe Photoshop - pas PSD uit**, die u als dit kunt bepalen: ``{{XX.data[].`_links`.renditions[].href}}`` (vervang XX door het opeenvolgingsaantal van de vorige module Adobe Photoshop - pas PSD uit).
+
+Daarna, klik **+ voeg punt** onder **Lagen** toe beginnen de tekstlagen toe te voegen die moeten worden bijgewerkt.
+
+![ WF Fusion ](./images/wffc37a.png)
+
+Er zijn 2 te maken veranderingen, de tekst van CTA en de knooptekst in het dossier **wordt aangebracht burgerschap-fiber.psd** moet worden bijgewerkt.
+
+Om de laagnamen te vinden, open het dossier **burgerschap-fiber.psd**. In het dossier, zult u opmerken dat de laag die call to action bevat **wordt genoemd 2048x2048-cta**.
+
+![ WF Fusion ](./images/wffc38.png)
+
+In het dossier **wordt** 2048x2048-knoop-tekst **genoemd.**
+
+![ WF Fusion ](./images/wffc44.png)
+
+U moet eerst de veranderingen vormen die aan de laag **moeten gebeuren 2048x2048-cta**. Ga de naam **2048x2048-cta** onder **Naam** in de dialoog in.
+
+![ WF Fusion ](./images/wffc39.png)
+
+De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer veranderlijke **cta** van de lading van de Webhaak. Klik **toevoegen**.
+
+![ WF Fusion ](./images/wffc40.png)
+
+Dan moet je dit zien. Klik op **+ Add item** onder **Lagen** om de volgende tekstlaag toe te voegen die moet worden bijgewerkt.
+
+![ WF Fusion ](./images/wffc40a.png)
+
+Ga de naam **2048x2048-knoop-tekst** onder **Naam** in de dialoog in.
+
+![ WF Fusion ](./images/wffc40b.png)
+
+De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer de veranderlijke **knoop** van de payload van de Webhaak. Klik **toevoegen**.
+
+![ WF Fusion ](./images/wffc40c.png)
+
+Dan moet je dit zien.
+
+![ WF Fusion ](./images/wffc40d.png)
+
+De rol neer tot u **Output** ziet. Voor **Opslag**, uitgezochte **Azure**. Voor **plaats van het Dossier**, ga de hieronder plaats in. Let op de toevoeging van de variabele `{{timestamp}}` aan de bestandsnaam die wordt gebruikt om ervoor te zorgen dat elk bestand dat wordt gegenereerd een unieke naam heeft. Ook, plaats het **Type** aan **vnd.adobe.photoshop**.
+
+`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
+
+Plaats **Type** aan **vnd.adobe.photoshop**. Klik **OK**.
+
+![ WF Fusion ](./images/wffc41.png)
+
+Klik **sparen** om uw veranderingen te bewaren.
+
+![ WF Fusion ](./images/wffc47.png)
+
+## 1.2.4.4 Webhacerespons
+
+Na het toepassen van deze veranderingen in uw dossier van Photoshop, moet u nu de reactie van de a **Webhaak** vormen die zal worden teruggestuurd naar welke toepassing dit scenario heeft geactiveerd.
+
+Beweeg over de module **Adobe Photoshop - geef tekstlagen** uit en klik **+** pictogram.
+
+![ WF Fusion ](./images/wffc48.png)
+
+Onderzoek naar `webhooks` en selecteer **Webhaak**.
+
+![ WF Fusion ](./images/wffc49.png)
+
+Selecteer **reactie Webhaak**.
+
+![ WF Fusion ](./images/wffc50.png)
+
+Dan moet je dit zien. Plak hieronder nuttige lading in **Lichaam**.
+
+```json
+{
+    "newPsdTemplate": ""
+}
+```
+
+![ WF Fusion ](./images/wffc51.png)
+
+Kopieer en kleef veranderlijk `{{XX.data[]._links.renditions[].href}}` en vervang **XX** door het opeenvolgingsaantal van laatste **Adobe Photoshop - geef tekstlagen** module uit, die in dit geval **7** is.
+
+![ WF Fusion ](./images/wffc52.png)
+
+Laat checkbox voor **toe tonen geavanceerde montages** en klik dan **toevoegen punt**.
+
+![ WF Fusion ](./images/wffc52b.png)
+
+Op het gebied **Sleutel**, ga `Content-Type` in. Op het gebied **Waarde**, ga `application/json` in. Klik **toevoegen**.
+
+![ WF Fusion ](./images/wffc52a.png)
+
+Dan moet je dit hebben. Klik **OK**.
+
+![ WF Fusion ](./images/wffc53.png)
+
+Klik **auto-richt**.
+
+![ WF Fusion ](./images/wffc54.png)
+
+Dan moet je dit zien. Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw scenario te testen.
+
+![ WF Fusion ](./images/wffc55.png)
+
+Ga terug naar Postman en klik **verzenden**. De herinnering die hier wordt gebruikt is **slechte graslanden**.
+
+![ WF Fusion ](./images/wffc56.png)
+
+Het scenario wordt vervolgens geactiveerd en na enige tijd wordt een reactie weergegeven in Postman die de URL van het nieuwe PSD-bestand bevat.
+
+![ WF Fusion ](./images/wffc58.png)
+
+Als herinnering: zodra het scenario in Workfront Fusion in werking is gesteld, zult u informatie over elke module kunnen zien door de bel boven elke module te klikken.
+
+![ WF Fusion ](./images/wffc59.png)
+
+Met Azure Storage Explorer kunt u het nieuwe PSD-bestand zoeken en openen door erop te dubbelklikken in Azure Storage Explorer.
+
+![ WF Fusion ](./images/wffc60.png)
+
+Uw dossier zou dan als dit, met de achtergrond moeten kijken die door een achtergrond met **slechte graslanden** wordt vervangen.
+
+![ WF Fusion ](./images/wffc61.png)
+
+Als u uw scenario opnieuw in werking stelt, en dan een nieuw verzoek van Postman verzendt gebruikend een verschillende herinnering, zult u dan zien hoe gemakkelijk en herbruikbaar uw scenario is geworden. In dit voorbeeld, is de nieuwe herinnering die wordt gebruikt **zonnige woestijn**.
+
+![ WF Fusion ](./images/wffc62.png)
+
+Een paar minuten later is er een nieuw PSD-bestand met een nieuwe achtergrond gemaakt.
+
+![ WF Fusion ](./images/wffc63.png)
 
 ## Volgende stappen
 
-Ga naar [&#x200B; automatisering van het Proces met de Fusie van Workfront &#x200B;](./ex3.md){target="_blank"}
+Ga naar [ 1.2.3 Frame.io en Workfront Fusion ](./ex3.md){target="_blank"}
 
-Ga terug naar [&#x200B; de Automatisering van het Werkschema van Creative met Workfront Fusion &#x200B;](./automation.md){target="_blank"}
+Ga terug naar [ de Automatisering van het Werkschema van Creative met Workfront Fusion ](./automation.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}

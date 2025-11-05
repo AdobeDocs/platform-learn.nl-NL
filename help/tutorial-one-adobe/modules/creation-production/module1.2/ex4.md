@@ -1,448 +1,393 @@
 ---
-title: Automatisering met behulp van connectors
-description: Automatisering met behulp van connectors
+title: Frame I/O naar Workfront Fusion naar AEM Assets
+description: Frame I/O naar Workfront Fusion naar AEM Assets
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
 
-# 1.2.4 Automatisering met behulp van connectors
+# 1.2.4 Frame I/O naar Workfront Fusion naar AEM Assets
 
-U gaat nu de out-of-the-box connectors gebruiken in Workfront Fusion for Photoshop en u gaat de Firefly Text-2-Image-aanvraag en de Photoshop-aanvragen verbinden met één scenario.
+>[!IMPORTANT]
+>
+>Als u deze bewerking wilt voltooien, hebt u toegang nodig tot een werkende AEM Assets CS Author-omgeving. Als u oefening [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} volgt zult u toegang tot zulk een milieu hebben.
 
-## 1.2.4.1 Variabelen bijwerken
+>[!IMPORTANT]
+>
+>Als u eerder een AEM Assets CS-programma hebt geconfigureerd met een auteursomgeving, kan het zijn dat de AEM CS-sandbox is geminimaliseerd. Gezien het feit dat het vernietigen van zo&#39;n zandbak 10 tot 15 minuten duurt, zou het een goed idee zijn om nu het ontruimingsproces te beginnen zodat u niet op een later tijdstip vastloopt.
 
-Alvorens met de schakelaaropstelling verder te gaan, moeten de volgende variabelen aan **worden toegevoegd initialiseert Constanten** module.
+In de vorige oefening vormde u een scenario dat automatisch variaties van een dossier van Adobe Photoshop PSD gebruikend Adobe Firefly, Photoshop APIs en Workfront Fusion produceert. De uitvoer van dat scenario was een nieuw Photoshop PSD-bestand.
 
-- `AZURE_STORAGE_URL`
-- `AZURE_STORAGE_CONTAINER`
-- `AZURE_STORAGE_SAS_READ`
-- `AZURE_STORAGE_SAS_WRITE`
+De zakelijke teams hebben echter geen PSD-bestand nodig, maar een PNG-bestand of een JPG-bestand. In deze oefening, zult u een nieuwe automatisering vormen die in een PNG- dossier zal resulteren dat wordt geproduceerd zodra de activa in Kader I/O wordt goedgekeurd, en dat PNG- dossier zal automatisch in AEM Assets worden opgeslagen.
 
-Ga terug naar uw eerste knoop, uitgezochte **initialiseert Constanten** en kies dan **punt** voor elk van deze variabelen toevoegen.
+## 1.2.4.1 Een nieuw scenario maken
 
-![&#x200B; WF Fusion &#x200B;](./images/wffusion69.png)
+Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **de Fusie van Workfront**.
 
-| Sleutel | Voorbeeldwaarde |
+![ WF Fusion ](./images/wffusion1.png)
+
+In het linkermenu, ga naar **Scenario&#39;s** en selecteer uw omslag `--aepUserLdap--`. Klik **creeer een nieuw scenario**.
+
+![ Kader IO ](./images/aemf1.png)
+
+Gebruik de naam `--aepUserLdap-- - Asset Approved PNG AEM Assets` . Klik vervolgens op **?** module, ga de onderzoekstermijn `webhook` in en klik dan **Webhooks**.
+
+![ Kader IO ](./images/aemf2.png)
+
+Klik **WebHaak van de Douane**.
+
+![ Kader IO ](./images/aemf3.png)
+
+Klik **toevoegen** om een nieuwe webhaak tot stand te brengen.
+
+![ Kader IO ](./images/aemf4.png)
+
+Gebruik de naam `--aepUserLdap-- - Frame.io Webhook` . Klik **sparen**.
+
+![ Kader IO ](./images/aemf5.png)
+
+Dan moet je dit zien. Klik **adres van het Exemplaar aan klembord**.
+
+![ Kader IO ](./images/aemf6.png)
+
+## 1.2.4.2 Webhaak configureren in Frame.io
+
+Ga naar Postman en open het verzoek **POST - krijg het Symbolische van de Toegang** in de inzameling **Adobe IO - OAuth**. Daarna, verzendt de klik **** om een nieuw **access_token** te verzoeken.
+
+![ Kader IO ](./images/frameV4api2.png)
+
+In het linkermenu, ga terug naar **Inzamelingen**. Open het verzoek **POST - creeer Webhaak** in de inzameling **Frame.io V4 - de Instanties van de Tech**, in de omslag **Webhooks**.
+
+Ga naar het **Lichaam** van het verzoek. Verander het gebied **naam** aan `--aepUserLdap--  - Fusion to AEM Assets` en verander dan het gebied **url** in de waarde van Webhaak URL u van de Fusie van Workfront kopieerde.
+
+Klik **verzenden**.
+
+![ Kader IO ](./images/framewh1.png)
+
+Uw aangepaste actie Frame.io V4 is nu gemaakt.
+
+![ Kader IO ](./images/framewh2.png)
+
+Ga naar [ https://next.frame.io/project ](https://next.frame.io/project){target="_blank"} en ga naar het project dat u eerder creeerde, die `--aepUserLdap--` zou moeten worden genoemd en de omslag **Campagne van de Vezel CitiSignal** openen. U zou nu de activa moeten zien die in de vorige oefening werden gecreeerd.
+
+![ Kader IO ](./images/aemf11a.png)
+
+Klik het gebied **Status** en verander de status in **Bezig**.
+
+![ Kader IO ](./images/aemf12.png)
+
+Ga terug naar Workfront Fusion. U zou nu moeten zien dat de verbinding **met succes werd bepaald**.
+
+![ Kader IO ](./images/aemf13.png)
+
+Klik **sparen** om uw veranderingen te bewaren, en dan **te klikken in werking stellen eens** om een snelle test te doen.
+
+![ Kader IO ](./images/aemf14.png)
+
+De schakelaar terug naar Frame.io en klikt het gebied **Bezig** en verandert de status in **Overzicht van Behoeften**.
+
+![ Kader IO ](./images/aemf15.png)
+
+De schakelaar terug naar de Fusie van Workfront en klikt de bel op de **Webhaak van de Douane** module.
+
+De gedetailleerde mening van de bel toont u de gegevens die van Frame.io werden ontvangen. Je moet verschillende id&#39;s zien. Als voorbeeld, toont het gebied **resource.id** unieke identiteitskaart in Frame.io van de activa **burgerschap-fiber.psd**.
+
+![ Kader IO ](./images/aemf16.png)
+
+## 1.2.4.3 Asset Details ophalen van Frame.io
+
+Nu de communicatie tussen Frame.io en Workfront Fusion via een aangepaste webhaak tot stand is gebracht, dient u meer informatie te krijgen over het element waarvoor het statuslabel is bijgewerkt. Om dit te doen, zult u opnieuw de Schakelaar Frame.io in Workfront Fusion, gelijkend op de vorige oefening gebruiken.
+
+Beweeg over het **Webhaak van de Douane** voorwerp en klik **+** pictogram om een andere module toe te voegen.
+
+![ Kader IO ](./images/aemf18a.png)
+
+Voer de zoekterm in `frame` . Klik **Frame.io**.
+
+![ Kader IO ](./images/aemf18.png)
+
+Klik **Frame.io**.
+
+![ Kader IO ](./images/aemf19.png)
+
+Klik **maak een douane API vraag**.
+
+![ Kader IO ](./images/aemf20.png)
+
+Controleer of de verbinding is ingesteld op dezelfde verbinding als die u in de vorige oefening hebt gemaakt. Deze moet de naam `--aepUserLdap-- - Adobe I/O - Frame.io S2S` hebben.
+
+![ Kader IO ](./images/aemf21.png)
+
+Voor de configuratie van de module **Frame.io - maak een douane API vraag**, gebruik URL: `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{1.account.id}}` en `{{1.resource.id}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de eerste module in het scenario **Webhooks** wordt genoemd en een opeenvolgingsaantal van **1** heeft. Dit betekent dat de variabelen `{{1.account.id}}` en `{{1.resource.id}}` tot dat gebied van de module met opeenvolgingsaantal 1 zullen toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Daarna, klik **+ voeg punt** onder **Koord van de Vraag** toe.
+
+![ Kader IO ](./images/aemf21a.png)
+
+Ga deze waarden in en klik **toevoegen**.
+
+| Sleutel | Waarde |
 |:-------------:| :---------------:| 
-| `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
-| `AZURE_STORAGE_CONTAINER` | `vangeluw` |
-| `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
-| `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
+| `include` | `media_links.original` |
 
-U kunt uw variabelen vinden door terug naar Postman te gaan, en uw **Variabelen van het Milieu** te openen.
+![ Kader IO ](./images/aemf21b.png)
 
-![&#x200B; Azure Opslag &#x200B;](./../module1.1/images/az105.png)
+Dat zou u nu moeten doen. Klik **OK**.
 
-Kopieer deze waarden naar Workfront Fusion en voeg een nieuw item toe voor elk van deze 4 variabelen.
-
-Het scherm moet er zo uitzien. Selecteer **O.K.**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion68.png)
-
-## 1.2.4.2 Activeer uw scenario met een webhaak
-
-Tot dusver, hebt u uw scenario manueel in werking gesteld om te testen. Werk nu uw scenario bij met een webhaak, zodat het vanuit een externe omgeving kan worden geactiveerd.
-
-Selecteer **+**, onderzoek naar **webhaak** en selecteer dan **Webhooks**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion216.png)
-
-Selecteer **Webhaak van de Douane**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion217.png)
-
-Sleep de **Webhaak van de Douane** module aan het begin van uw scenario. Daarna, selecteer het **klok** pictogram en sleep het op de **Eigen webhaak** module.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion217a.png)
-
-Dan moet je dit zien. Sleep vervolgens de rode stip op de eerste module naar de paarse stip op de tweede module.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion217b.png)
-
-Dan moet je dit zien. Nieuw, klik de **Webhaak van de Douane** module.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion217c.png)
-
-Klik **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion218.png)
-
-Plaats de **naam van Webhaak** aan `--aepUserLdap-- - Firefly + Photoshop Webhook`. Klik **sparen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion219.png)
-
-De URL van uw webhaak is nu beschikbaar. Klik **adres van het Exemplaar aan klembord** om URL te kopiëren.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion221.png)
-
-Open Postman, en voeg een nieuwe omslag in de inzameling **toe FF - de Instanties van de Tech van Firefly Services**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion222.png)
-
-Geef de map een naam `--aepUserLdap-- - Workfront Fusion` .
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion223.png)
-
-In de omslag die u enkel creeerde, selecteer de 3 punten **...** en selecteer **verzoek** toevoegen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion224.png)
-
-Plaats het **type van Methode** aan **POST** en kleef URL van uw webhaak in de adresbar.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion225.png)
-
-U moet een douanelichaam verzenden, zodat de veranderlijke elementen van een externe bron aan uw scenario van de Fusie van Workfront kunnen worden verstrekt.
-
-Ga naar **Lichaam** en selecteer **onbewerkt**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion226.png)
-
-Plak de onderstaande tekst in de hoofdtekst van uw verzoek. Selecteer **verzenden**.
-
-```json
-{
-    "psdTemplate": "citisignal-fiber.psd",
-    "xlsFile": "placeholder",
-    "prompt":"misty meadows",
-    "cta": "Buy this now!",
-    "button": "Click here to buy!"
-}
-```
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion229.png)
-
-Terug in de Fusie van Workfront, verschijnt een bericht op uw douane webhaak die zegt: **met succes bepaalde**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffusion227.png)
-
-## 1.2.4.3 Adobe Firefly Connector
-
-Klik op het pictogram **+** om een nieuwe module toe te voegen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff2.png)
-
-Ga de onderzoekstermijn `Adobe Firefly` in en selecteer dan **Adobe Firefly**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff2a.png)
-
-Selecteer **produceer een beeld**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff3.png)
-
-Klik de **Adobe Firefly** module om het te openen, en dan te klikken **voeg** toe om een nieuwe verbinding tot stand te brengen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff5.png)
-
-Vul de volgende velden in:
-
-- **naam van de Verbinding**: gebruik `--aepUserLdap-- - Firefly connection`.
-- **Milieu**: gebruik **Productie**.
-- **Type**: gebruik **Persoonlijke rekening**.
-- **identiteitskaart van de Cliënt**: kopieer **identiteitskaart van de Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
-- **Geheim van de Cliënt**: kopieer het **Geheime Cliënt** van uw project van Adobe I/O dat `--aepUserLdap-- - One Adobe tutorial` wordt genoemd.
-
-U kunt **identiteitskaart van de Cliënt** en **Geheime Cliënt** van uw project van Adobe I/O [&#x200B; hier &#x200B;](https://developer.adobe.com/console/projects.){target="_blank"} vinden.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc20.png)
-
-Zodra u alle gebieden hebt ingevuld, gaat de klik **&#x200B;**&#x200B;verder. Uw verbinding wordt dan automatisch gevalideerd.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff6.png)
-
-Daarna, selecteer de veranderlijke **herinnering** die aan het scenario door de inkomende **Douane webhaak** wordt verstrekt.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff7.png)
-
-Plaats de **Modelversie** **herinnering** aan **image4 norm**. Klik **OK**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffcff7b.png)
+![ Kader IO ](./images/aemf22.png)
 
 Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw configuratie te testen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff8.png)
+![ Kader IO ](./images/aemf23.png)
 
-Ga naar Postman, verifieer de herinnering in uw verzoek en klik dan **verzenden**.
+De schakelaar terug naar Frame.io en verandert de status in **Bezig**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff8a.png)
+![ Kader IO ](./images/aemf24.png)
 
-Zodra u hebt geklikt verzend, ga terug naar de Fusie van Workfront en klik het borstelpictogram op de **Adobe Firefly** module om de details te verifiëren.
+Ga terug naar de Fusie van Workfront en klik de bel op **Frame.io - maak een douane API vraag** module. Dan zou u een gelijkaardig overzicht moeten zien.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff9.png)
+![ Kader IO ](./images/aemf25.png)
 
-Ga in **UITVOER** naar **Details** > **url** om URl van het beeld te vinden dat door **Adobe Firefly** werd geproduceerd.
+Daarna, zou u opstelling een filter moeten ervoor zorgen dat slechts voor activa die een status hebben die **** wordt goedgekeurd, een PNG- dossier wordt teruggegeven. Om dat te doen, klik het **pictogram van de Sleutel 0} tussen de modules** Douane webhaak **en** Frame.io - maak een douane API vraag **en selecteer dan** Opstelling een filter **.**
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff10.png)
+![ Kader IO ](./images/aemf25a.png)
 
-Kopieer de URL en passeer deze in uw browser. U zou nu een beeld moeten zien dat de herinnering vertegenwoordigt u binnen van het verzoek van Postman, in dit geval **misty graslanden** verzond.
+Configureer de volgende velden:
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff11.png)
+- **Etiket**: gebruik `Status = Approved`.
+- **Voorwaarde**: `{{1.metadata.value[]}}`.
+- **Basisexploitanten**: uitgezochte **Gelijk aan**.
+- **Waarde**: `Approved`.
 
-## 1.2.4.2 De achtergrond van een PSD-bestand wijzigen
+Klik **OK**.
 
-U zult nu uw scenario bijwerken om het slimmer te maken door meer uit-van-de-doos schakelaars te gebruiken. U gaat ook de uitvoer van Firefly naar Photoshop verbinden, zodat de achtergrondafbeelding van het PSD-bestand dynamisch verandert door de uitvoer van de actie Afbeelding genereren door Firefly te gebruiken.
+![ Kader IO ](./images/aemf35.png)
 
-Dan moet je dit zien. Daarna, beweegt over de **Adobe Firefly** module en klikt **+** pictogram.
+Dan moet je dit hebben. Klik **sparen** om uw veranderingen te bewaren.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc15.png)
+![ Kader IO ](./images/aemf35a.png)
 
-In het onderzoeksmenu, ga `Photoshop` in en klik dan de **Adobe Photoshop** actie.
+## 1.2.4.4 Omzetten in PNG
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc16.png)
+Beweeg over de module **Frame.io - maak een douane API vraag** en klik **+** pictogram.
 
-Selecteer **toepassen PSD geeft uit**.
+![ Kader IO ](./images/aemf27.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc17.png)
+Ga de onderzoekstermijn `photoshop` in en klik dan **Adobe Photoshop**.
 
-Dan moet je dit zien. Klik **toevoegen** om een nieuwe verbinding aan Adobe Photoshop toe te voegen.
+![ Kader IO ](./images/aemf28.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc18.png)
+Klik **het Formaat van het Beeld van de Bekeerling**.
 
-Configureer de verbinding als volgt:
+![ Kader IO ](./images/aemf29.png)
 
-- Het type van verbinding: selecteer **Adobe Photoshop (Server-aan-Server)**
-- Naam van verbinding: enter `--aepUserLdap-- - Adobe I/O`
-- Client-id: uw client-id plakken
-- Clientgeheim: plak uw clientgeheim
+Verifieer dat het gebied **Verbinding** uw eerder gecreeerde verbinding gebruikt, die `--aepUserLdap-- - Adobe IO` wordt genoemd.
 
-Klik **verdergaan**.
+Onder **Input**, plaats de gebied **Opslag** aan **Extern** en plaats de **Plaats van het Dossier** om het veranderlijke **Originele** te gebruiken dat door de module **Frame.io is teruggekeerd - maak een douane API vraag**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc19.png)
+Daarna, voegt de klik **punt** onder **Output** toe.
 
-Om uw **identiteitskaart van de Cliënt te vinden** en **Geheim van de Cliënt**, ga [&#x200B; https://developer.adobe.com/console/home &#x200B;](https://developer.adobe.com/console/home){target="_blank"} en open uw project van Adobe I/O, dat `--aepUserLdap-- One Adobe tutorial` wordt genoemd. Ga naar **OAuth Server-aan-Server** om uw identiteitskaart van de Cliënt en Geheime cliënt te vinden. Kopieer deze waarden en plak ze in de verbindingsinstelling in Workfront Fusion.
+![ Kader IO ](./images/aemf30.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc20.png)
+Voor de **configuratie van Output**, plaats de gebied **Opslag** aan **interne opslag van de Fusie** en het **Type** aan **beeld/png**. Klik **toevoegen**.
 
-Na het klikken **ga** verder, zal een popup venster kort worden getoond terwijl uw geloofsbrieven worden geverifieerd. Als je klaar bent, moet je dit zien.
+![ Kader IO ](./images/aemf31.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc21.png)
+Klik **OK**.
 
-U moet nu de bestandslocatie invoeren van het PSD-bestand waarmee u Fusion wilt gebruiken. Voor **Opslag**, uitgezochte **Azure** en voor **plaats van het Dossier**, ga `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}` in. Plaats de cursor naast de tweede `/` . Dan, heb een blik op de beschikbare variabelen en scrol neer om veranderlijk **psdTemplate** te vinden. Klik veranderlijk **psdTemplate** om het te selecteren.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc22.png)
-
-Dan moet je dit zien.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc23.png)
-
-Schuif al manier neer tot u **Lagen** ziet. Klik **toevoegen punt**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc24.png)
-
-Dan moet je dit zien. U moet nu de naam invoeren van de laag in de Photoshop PSD-sjabloon die wordt gebruikt voor de achtergrond van het bestand.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc25.png)
-
-In het dossier **wordt** gebruikt het burgerschap-vezel.psd, zult u de laag vinden die voor de achtergrond gebruikte. In dit voorbeeld, wordt die laag genoemd **2048x2048-background**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc26.png)
-
-Plak de naam **2048x2048-achtergrond** in de dialoog van de Fusie van Workfront.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc27.png)
-
-De rol neer tot u **Input** ziet. U moet nu definiëren wat op de achtergrondlaag moet worden ingevoegd. In dit geval, moet u de output van de **Adobe Firefly** module selecteren, die het dynamisch geproduceerde beeld bevat.
-
-Voor **Opslag**, uitgezochte **Extern**. Voor **plaats van het Dossier**, zult u veranderlijk `{{XX.details[].url}}` van de output van de **Adobe Firefly** module moeten kopiëren en kleven maar u moet **XX** in de variabele door het opeenvolgingsaantal van de **Adobe Firefly** module vervangen, die in dit voorbeeld **5** is.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc28.png)
-
-Daarna, scrol neer tot u **ziet uitgeven**. De reeks **geeft** **&#x200B;**&#x200B;uit en plaatst **Type** aan **Laag**. Klik **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc29.png)
-
-Dan moet je dit zien. Vervolgens moet u de uitvoer van de handeling definiëren. Klik **toevoegen punt** onder **output**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc30.png)
-
-Selecteer **Azure** voor **Opslag**, kleef dit `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` onder **Plaats van het Dossier** en selecteer **vnd.adobe.photoshop** onder **Type**. Klik om **toe te laten tonen geavanceerde montages**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc31.png)
-
-Onder **Geavanceerde Montages**, uitgezochte **ja** om dossiers met de zelfde naam te beschrijven.
-Klik **toevoegen**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc32.png)
-
-Dan moet je dit hebben. Klik **OK**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc33.png)
+![ Kader IO ](./images/aemf33.png)
 
 Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw configuratie te testen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc33a.png)
+![ Kader IO ](./images/aemf32.png)
 
-Ga naar Postman, verifieer de herinnering in uw verzoek en klik dan **verzenden**.
+De schakelaar terug naar Frame.io en klikt het gebied **Bezig** en verandert de status aan **Goedgekeurd**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffcff8a.png)
+![ Kader IO ](./images/aemf37.png)
 
-Dan moet je dit zien. Klik de bel op **Adobe Photoshop - pas PSD uit** module uitgeeft.
+Ga terug naar Workfront Fusion. U zou nu moeten zien dat alle modules in uw scenario met succes zijn uitgevoerd. Klik de bel op **Adobe Photoshop - zet beeldformaat** module om.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc33b.png)
+![ Kader IO ](./images/aemf38.png)
 
-U ziet nu dat er een nieuw PSD-bestand is gegenereerd en opgeslagen in uw Microsoft Azure Storage Account.
+In de details van de uitvoering van **Adobe Photoshop - zet beeldformaat** module om, kunt u zien dat een PNG- dossier nu werd geproduceerd. Vervolgens slaat u dat bestand op in AEM Assets CS.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc33c.png)
+![ Kader IO ](./images/aemf39.png)
 
-## 1.2.4.3 Tekstlagen van PSD-bestand wijzigen
+## 1.2.4.5 PNG opslaan in AEM Assets CS
 
-Daarna, beweeg over **Adobe Photoshop - pas PSD uit geeft** module uit en klik **+** pictogram.
+Beweeg over **Adobe Photoshop - zet beeldformaat** module om en klik **+** pictogram.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc34.png)
+![ Kader IO ](./images/aemf40.png)
 
-Selecteer **Adobe Photoshop**.
+Ga de onderzoekstermijn `aem` in en selecteer **AEM Assets**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc35.png)
+![ Kader IO ](./images/aemf41.png)
 
-Selecteer **tekstlagen** uitgeven.
+Klik **uploaden activa**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc36.png)
+![ Kader IO ](./images/aemf42.png)
 
-Dan moet je dit zien. Selecteer eerst de eerder geconfigureerde Adobe Photoshop-verbinding met de naam `--aepUserLdap-- Adobe I/O` .
+U moet nu uw verbinding met AEM Assets CS configureren. Klik **toevoegen**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc37.png)
+![ Kader IO ](./images/aemf43.png)
 
-Voor het **dossier van de Input**, uitgezocht **Azure** voor **het dossieropslag van de Input** en zorg ervoor om de output van het vorige verzoek te selecteren, **Adobe Photoshop - pas PSD uit**, die u als dit kunt bepalen: ``{{XX.data[].`_links`.renditions[].href}}`` (vervang XX door het opeenvolgingsaantal van de vorige module Adobe Photoshop - pas PSD uit).
+Gebruik de volgende instellingen:
 
-Daarna, klik **+ voeg punt** onder **Lagen** toe beginnen de tekstlagen toe te voegen die moeten worden bijgewerkt.
+- **Type van Verbinding**: **AEM Assets as a Cloud Service**.
+- **Naam van de Verbinding**: `--aepUserLdap-- AEM Assets CS`.
+- **Instantie URL**: kopieer de instantie URL van uw milieu van de Auteur van AEM Assets CS, dat als dit zou moeten kijken: `https://author-pXXXXX-eXXXXXXX.adobeaemcloud.com`.
+- **de detailvulopties van de Toegang**: selecteer **verstrekken JSON**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc37a.png)
+U moet nu de **Technische rekeningsgeloofsbrieven in formaat verstrekken JSON**. Hiervoor moet u een aantal stappen ondernemen met AEM Cloud Manager. Zorg dat dit scherm open blijft terwijl u dat doet.
 
-Er zijn 2 te maken veranderingen, de tekst van CTA en de knooptekst in het dossier **wordt aangebracht burgerschap-fiber.psd** moet worden bijgewerkt.
+![ Kader IO ](./images/aemf44.png)
 
-Om de laagnamen te vinden, open het dossier **burgerschap-fiber.psd**. In het dossier, zult u opmerken dat de laag die call to action bevat **wordt genoemd 2048x2048-cta**.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Dan zie je zoiets. Klik om uw programma te openen, dat `--aepUserLdap-- - Citi Signal` zou moeten worden genoemd.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc38.png)
+![ Kader IO ](./images/aemf45.png)
 
-In het dossier **wordt** 2048x2048-knoop-tekst **genoemd.**
+Klik de 3 punten **..** en selecteer **Developer Console**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc44.png)
+![ Kader IO ](./images/aemf46.png)
 
-U moet eerst de veranderingen vormen die aan de laag **moeten gebeuren 2048x2048-cta**. Ga de naam **2048x2048-cta** onder **Naam** in de dialoog in.
+Klik **Teken binnen met Adobe**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc39.png)
+![ Kader IO ](./images/aemf47.png)
 
-De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer veranderlijke **cta** van de lading van de Webhaak. Klik **toevoegen**.
+Ga naar **Hulpmiddelen** > **Integraties**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc40.png)
+![ Kader IO ](./images/aemf47a.png)
 
-Dan moet je dit zien. Klik op **+ Add item** onder **Lagen** om de volgende tekstlaag toe te voegen die moet worden bijgewerkt.
+Klik **creëren nieuwe technische rekening**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc40a.png)
+![ Kader IO ](./images/aemf48.png)
 
-Ga de naam **2048x2048-knoop-tekst** onder **Naam** in de dialoog in.
+Dan moet je iets dergelijks zien. Open de nieuwe technische account. Klik de 3 punten **..** en selecteer dan **Mening**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc40b.png)
+![ Kader IO ](./images/aemf48a.png)
 
-De rol neer tot u **Tekst** > **Inhoud** ziet. Selecteer de veranderlijke **knoop** van de payload van de Webhaak. Klik **toevoegen**.
+Vervolgens ziet u een vergelijkbare technische tokenlading. Kopieer de volledige JSON-lading naar het klembord.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc40c.png)
+![ Kader IO ](./images/aemf50.png)
 
-Dan moet je dit zien.
+Ga terug naar de Fusie van Workfront en kleef de volledige nuttige lading JSON in de **Technische rekeningsgeloofsbrieven in JSON formaat** gebied. Klik **verdergaan**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc40d.png)
+![ Kader IO ](./images/aemf49.png)
 
-De rol neer tot u **Output** ziet. Voor **Opslag**, uitgezochte **Azure**. Voor **plaats van het Dossier**, ga de hieronder plaats in. Let op de toevoeging van de variabele `{{timestamp}}` aan de bestandsnaam die wordt gebruikt om ervoor te zorgen dat elk bestand dat wordt gegenereerd een unieke naam heeft. Ook, plaats het **Type** aan **vnd.adobe.photoshop**.
+Uw verbinding wordt dan gevalideerd en wanneer de verbinding succesvol is, wordt deze automatisch geselecteerd in de AEM Assets-module. Het volgende te doen moet een omslag vormen. Als onderdeel van de oefening, zou u een nieuwe specifieke omslag moeten tot stand brengen.
 
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
+![ Kader IO ](./images/aemf51.png)
 
-Plaats **Type** aan **vnd.adobe.photoshop**. Klik **OK**.
+Om een nieuwe specifieke omslag tot stand te brengen, ga [ https://experience.adobe.com ](https://experience.adobe.com/){target="_blank"}. Zorg ervoor dat de juiste Experience Cloud-instantie is geselecteerd, die moet zijn ingesteld op `--aepImsOrgName--` . Dan, klik **Experience Manager Assets**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc41.png)
+![ Kader IO ](./images/aemf52.png)
+
+Klik **Uitgezocht** op uw milieu van AEM Assets CS, dat zou moeten worden genoemd `--aepUserLdap-- - Citi Signal dev`.
+
+![ Kader IO ](./images/aemf53.png)
+
+Ga naar **Activa** en klik **creeer Omslag**.
+
+![ Kader IO ](./images/aemf54.png)
+
+Ga de naam `--aepUserLdap-- - CitiSignal Fiber Campaign` in en klik **creeer**.
+
+![ Kader IO ](./images/aemf55.png)
+
+Uw map wordt vervolgens gemaakt.
+
+![ Kader IO ](./images/aemf56.png)
+
+Ga terug naar de Fusie van Workfront, uitgezochte **klik hier om omslag** te kiezen en dan de omslag `--aepUserLdap-- - CitiSignal Fiber Campaign` te kiezen.
+
+![ Kader IO ](./images/aemf57.png)
+
+Controleer of het doel is ingesteld op `--aepUserLdap-- - CitiSignal Fiber Campaign` . Dan, onder **het Dossier van Source**, uitgezochte **Kaart**.
+
+Onder **naam van het Dossier**, kies de variabele `{{3.filenames[1]}}`.
+
+Onder **Gegevens**, kies de variabele `{{3.files[1]}}`.
+
+>[!NOTE]
+>
+>Variabelen in Workfront Fusion kunnen handmatig worden opgegeven met de volgende syntaxis: `{{3.filenames[1]}}` . Het getal in de variabele verwijst naar de module in het scenario. In dit voorbeeld, kunt u zien dat de derde module in het scenario **Adobe Photoshop wordt genoemd - zet beeldformaat** om en heeft een opeenvolgingsaantal van **3**. Dit betekent dat veranderlijk `{{3.filenames[1]}}` tot het gebied **filenames[]** van de module met opeenvolgingsaantal 3 zal toegang hebben. De aantallen van de opeenvolging kunnen soms verschillend zijn zodat let op wanneer het kopiëren/het kleven van dergelijke variabelen en verifieer altijd dat het gebruikte opeenvolgingsaantal het correcte is.
+
+Klik **OK**.
+
+![ Kader IO ](./images/aemf58.png)
 
 Klik **sparen** om uw veranderingen te bewaren.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc47.png)
+![ Kader IO ](./images/aemf59.png)
 
-## 1.2.4.4 Webhacerespons
+Vervolgens moet u specifieke machtigingen instellen voor de technische account die u zojuist hebt gemaakt. Wanneer de rekening in **Developer Console** in **Cloud Manager** werd gecreeerd, werd het **Gelezen** toegangsrechten gegeven maar voor dit gebruiksgeval, **schrijft** toegangsrechten worden vereist. U kunt dat doen door naar de AEM CS Author-omgeving te gaan.
 
-Na het toepassen van deze veranderingen in uw dossier van Photoshop, moet u nu de reactie van de a **Webhaak** vormen die zal worden teruggestuurd naar welke toepassing dit scenario heeft geactiveerd.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Klik om uw programma te openen, dat `--aepUserLdap-- - Citi Signal` zou moeten worden genoemd. Dan zie je zoiets. Klik op de URL van de auteur.
 
-Beweeg over de module **Adobe Photoshop - geef tekstlagen** uit en klik **+** pictogram.
+![ Kader IO ](./images/aemf60.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc48.png)
+Klik **Teken binnen met Adobe**.
 
-Onderzoek naar `webhooks` en selecteer **Webhaak**.
+![ Kader IO ](./images/aemf61.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc49.png)
+Ga naar **Montages** > **Veiligheid** > **Gebruikers**.
 
-Selecteer **reactie Webhaak**.
+![ Kader IO ](./images/aemf62.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc50.png)
+Klik hierop om de gebruikersaccount voor de technische account te openen.
 
-Dan moet je dit zien. Plak hieronder nuttige lading in **Lichaam**.
+![ Kader IO ](./images/aemf63.png)
 
-```json
-{
-    "newPsdTemplate": ""
-}
-```
+Ga naar **Groepen** en voeg deze Technische gebruiker van de Rekening aan de groep **DAM-Gebruikers** toe.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc51.png)
+![ Kader IO ](./images/aemf64.png)
 
-Kopieer en kleef veranderlijk `{{XX.data[]._links.renditions[].href}}` en vervang **XX** door het opeenvolgingsaantal van laatste **Adobe Photoshop - geef tekstlagen** module uit, die in dit geval **7** is.
+Klik **sparen &amp; Sluiten**.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc52.png)
+![ Kader IO ](./images/aemf65.png)
 
-Laat checkbox voor **toe tonen geavanceerde montages** en klik dan **toevoegen punt**.
+Ga terug naar Workfront Fusion. Klik **Looppas eens** om uw scenario te testen.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc52b.png)
+![ Kader IO ](./images/aemf66.png)
 
-Op het gebied **Sleutel**, ga `Content-Type` in. Op het gebied **Waarde**, ga `application/json` in. Klik **toevoegen**.
+De schakelaar terug naar Frame.io en zorgt ervoor dat het statuut van uw activa wordt veranderd in **goedgekeurd** opnieuw.
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc52a.png)
+>[!NOTE]
+>
+>U kunt het eerst terug naar **moeten veranderen Bezig** of **het Overzicht van Behoeften**, om het dan terug naar **Goedgekeurd** te veranderen.
 
-Dan moet je dit hebben. Klik **OK**.
+![ Kader IO ](./images/aemf15.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc53.png)
+Uw Workfront Fusion-scenario wordt vervolgens geactiveerd en moet correct worden voltooid. Door de informatie in de bel op de **AEM Assets** module te bekijken, kunt u reeds zien dat het PNG- dossier met succes in AEM Assets CS werd opgeslagen.
 
-Klik **auto-richt**.
+![ Kader IO ](./images/aemf67.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc54.png)
+Ga terug naar AEM Assets CS en open de map `--aepUserLdap-- - Frame.io PNG` . Het PNG-bestand dat is gegenereerd, wordt nu weergegeven in het Workfront Fusion-scenario. Dubbelklik op het bestand om het te openen.
 
-Dan moet je dit zien. Klik **sparen** om uw veranderingen op te slaan en dan **in werking te stellen eens** om uw scenario te testen.
+![ Kader IO ](./images/aemf68.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc55.png)
+U ziet nu meer details over de metagegevens van het gegenereerde PNG-bestand.
 
-Ga terug naar Postman en klik **verzenden**. De herinnering die hier wordt gebruikt is **slechte graslanden**.
+![ Kader IO ](./images/aemf69.png)
 
-![&#x200B; WF Fusion &#x200B;](./images/wffc56.png)
-
-Het scenario wordt vervolgens geactiveerd en na enige tijd wordt een reactie weergegeven in Postman die de URL van het nieuwe PSD-bestand bevat.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc58.png)
-
-Als herinnering: zodra het scenario in Workfront Fusion in werking is gesteld, zult u informatie over elke module kunnen zien door de bel boven elke module te klikken.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc59.png)
-
-Met Azure Storage Explorer kunt u het nieuwe PSD-bestand zoeken en openen door erop te dubbelklikken in Azure Storage Explorer.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc60.png)
-
-Uw dossier zou dan als dit, met de achtergrond moeten kijken die door een achtergrond met **slechte graslanden** wordt vervangen.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc61.png)
-
-Als u uw scenario opnieuw in werking stelt, en dan een nieuw verzoek van Postman verzendt gebruikend een verschillende herinnering, zult u dan zien hoe gemakkelijk en herbruikbaar uw scenario is geworden. In dit voorbeeld, is de nieuwe herinnering die wordt gebruikt **zonnige woestijn**.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc62.png)
-
-Een paar minuten later is er een nieuw PSD-bestand met een nieuwe achtergrond gemaakt.
-
-![&#x200B; WF Fusion &#x200B;](./images/wffc63.png)
+U hebt deze oefening nu met succes voltooid.
 
 ## Volgende stappen
 
-Ga naar [&#x200B; 1.2.5 Frame.io en Workfront Fusion &#x200B;](./ex5.md){target="_blank"}
+Ga naar [ Samenvatting en Voordelen van de Automatisering van het Werkschema van Creative met Workfront Fusion ](./summary.md){target="_blank"}
 
-Ga terug naar [&#x200B; de Automatisering van het Werkschema van Creative met Workfront Fusion &#x200B;](./automation.md){target="_blank"}
+Ga terug naar [ de Automatisering van het Werkschema van Creative met Workfront Fusion ](./automation.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+1.2.4.
