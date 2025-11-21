@@ -4,7 +4,7 @@ description: AEM CS - Geavanceerd aangepast blok
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In de vorige oefening, vormde u een basisdouaneblok genoemd **Aanbieding van de 
 
 U kunt nu aan dit blok blijven werken.
 
-![&#x200B; AEMCS &#x200B;](./images/nav7.png){zoomable="yes"}
+![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
 ## 1.1.4.1 Stijl uw blok
 
@@ -25,23 +25,23 @@ Nu u een werkend **vezelaanbieding** blok hebt kunt u het stileren op het toepas
 
 Ga terug naar de Code van Visual Studio en open de omslag **blokken**. Er moeten nu meerdere mappen worden weergegeven die elk naar een specifiek blok verwijzen. Om uw **vezelaanbieding** blok geavanceerder te maken, moet u nu een omslag voor uw douaneblok tot stand brengen.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv1.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv1.png){zoomable="yes"}
 
 Selecteer de omslag **blokken** en klik dan **creëren Nieuwe Omslag** pictogram.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv2.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv2.png){zoomable="yes"}
 
 Noem uw omslag `fiberoffer` en de slag **gaat** binnen.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv3.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv3.png){zoomable="yes"}
 
 Selecteer de nieuwe **fiberoffer** omslag en klik **creëren Nieuw Dossier** pictogram.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv4.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv4.png){zoomable="yes"}
 
 Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.js** in en de slag gaat binnen.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv5.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv5.png){zoomable="yes"}
 
 U kunt blokversiering nu uitvoeren door volgende JavaScript in het dossier **toe te voegen fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv6.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv6.png){zoomable="yes"}
 
 Selecteer de nieuwe **fiberoffer** omslag en klik **creeer opnieuw Nieuw Dossier** pictogram.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv7.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv7.png){zoomable="yes"}
 
 Er wordt nu een nieuw bestand gemaakt. Ga de naam **fiberoffer.css** in en de slag gaat binnen.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv8.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv8.png){zoomable="yes"}
 
 Kopieer en plak de volgende CSS-code in het nieuwe bestand.
 
@@ -88,7 +88,7 @@ Kopieer en plak de volgende CSS-code in het nieuwe bestand.
 
 Sla uw wijzigingen op.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv9.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv9.png){zoomable="yes"}
 
 U hebt nu verscheidene veranderingen in uw project aangebracht die terug naar uw bewaarplaats moeten worden geëngageerd GitHub. Om dat te doen, open **Desktop GitHub**.
 
@@ -96,24 +96,24 @@ U zou dan de 2 dossiers moeten zien die u enkel onder **Veranderingen** heeft ui
 
 Voer een naam in voor uw PR, `js css` . Klik **Vastleggen aan hoofd**.
 
-![&#x200B; Blok &#x200B;](./images/blockadv10.png){zoomable="yes"}
+![ Blok ](./images/blockadv10.png){zoomable="yes"}
 
 Dan moet je dit zien. Klik **Push oorsprong**.
 
-![&#x200B; Blok &#x200B;](./images/blockadv11.png){zoomable="yes"}
+![ Blok ](./images/blockadv11.png){zoomable="yes"}
 
 Ga in uw browser naar uw GitHub-account en naar de opslagplaats die u voor CitiSignal hebt gemaakt. Dan zou je iets dergelijks moeten zien, waaruit blijkt dat je wijzigingen zijn ontvangen.
 
-![&#x200B; Blok &#x200B;](./images/blockadv12.png){zoomable="yes"}
+![ Blok ](./images/blockadv12.png){zoomable="yes"}
 
-U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
+U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal-aem-accs--XXX.aem.page` en/of `main--citisignal-aem-accs--XXX.aem.live` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
 In dit voorbeeld wordt de volledige URL als volgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
 
 Dit wordt dan weergegeven met de opmaak die op de pagina is toegepast.
 
-![&#x200B; Blok &#x200B;](./images/blockadv13.png){zoomable="yes"}
+![ Blok ](./images/blockadv13.png){zoomable="yes"}
 
 ## 1.1.4.2 Logica toevoegen en gegevens laden vanaf een extern eindpunt
 
@@ -156,11 +156,11 @@ In **Begonnen het Worden** module, vormde u reeds een datastream, geroepen `--ae
 
 U te hoeven niet om het gebied **edgeConfigId** op dit ogenblik te veranderen. In de volgende oefening zult u dit kunnen doen gebruikend de **MarTech** stop.
 
-![&#x200B; Blok &#x200B;](./images/blockadv15.png){zoomable="yes"}
+![ Blok ](./images/blockadv15.png){zoomable="yes"}
 
 Dat zou u nu moeten doen.
 
-![&#x200B; Blok &#x200B;](./images/blockadv14.png){zoomable="yes"}
+![ Blok ](./images/blockadv14.png){zoomable="yes"}
 
 Voeg vervolgens dit blok toe onder de vorige code die u hebt toegevoegd.
 
@@ -185,7 +185,7 @@ Dit codeblok wordt gebruikt om de waarde van de Experience Cloud-id (ECID) op te
 
 Zoals u in de bovenstaande code kunt zien, wordt een andere functie aangeroepen wanneer de ECID is opgehaald. Deze functie wordt genoemd **getOffer ()** die u daarna zult toevoegen.
 
-![&#x200B; Blok &#x200B;](./images/blockadv16.png){zoomable="yes"}
+![ Blok ](./images/blockadv16.png){zoomable="yes"}
 
 Voeg vervolgens de onderstaande code toe onder de
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 Het is zeer belangrijk dat dit codeblok onder de sluitende steun wordt gekleefd die u op lijn 42 in dit voorbeeld kunt zien. De code u enkel plakte is een afzonderlijke functie die het heeft vereist eigen plaats in dit dossier, en kan niet in de bovengenoemde **standaardfunctie** worden genest.
 
-![&#x200B; Blok &#x200B;](./images/blockadv17.png){zoomable="yes"}
+![ Blok ](./images/blockadv17.png){zoomable="yes"}
 
 Het codeblok u enkel plakte simuleert een verzoek dat normaal door Web SDK/alloy.js zou worden gemaakt. In dit voorbeeld zal a **halen** verzoek aan **edge.adobedc.net** worden gemaakt.
 
@@ -330,23 +330,23 @@ Herinner me - deze benadering wordt gebruikt enkel voor enablement doel en is ni
 
 Sla uw wijzigingen op. Dan, open **Desktop van Github**, geef een naam aan uw PR en klik **verbind aan hoofd**.
 
-![&#x200B; Blok &#x200B;](./images/blockadv18.png){zoomable="yes"}
+![ Blok ](./images/blockadv18.png){zoomable="yes"}
 
 Daarna, klik **Push oorsprong**.
 
-![&#x200B; Blok &#x200B;](./images/blockadv19.png){zoomable="yes"}
+![ Blok ](./images/blockadv19.png){zoomable="yes"}
 
-U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal--XXX.aem.page/us/en/` en/of `main--citisignal--XXX.aem.live/us/en/` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
+U kunt nu de wijzigingen in uw website bekijken door naar `main--citisignal-aem-accs--XXX.aem.page` en/of `main--citisignal-aem-accs--XXX.aem.live` te gaan, nadat u XXX hebt vervangen door uw GitHub-gebruikersaccount, die in dit voorbeeld `woutervangeluwe` is.
 
 In dit voorbeeld wordt de volledige URL als volgt:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` en/of `https://main--citisignal--woutervangeluwe.aem.live/us/en/` .
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` en/of `https://main--citisignal-aem-accs--woutervangeluwe.aem.live` .
 
 Dan moet je dit zien.
 
-![&#x200B; Blok &#x200B;](./images/blockadv20.png){zoomable="yes"}
+![ Blok ](./images/blockadv20.png){zoomable="yes"}
 
-Volgende Stap: [&#x200B; AEM Edge Delivery Services MarTech plugin &#x200B;](./ex5.md){target="_blank"}
+Volgende Stap: [ AEM Edge Delivery Services MarTech plugin ](./ex5.md){target="_blank"}
 
-Ga terug naar [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./aemcs.md){target="_blank"}
+Ga terug naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./aemcs.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

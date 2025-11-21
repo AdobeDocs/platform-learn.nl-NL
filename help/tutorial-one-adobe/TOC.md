@@ -4,7 +4,7 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
 + [GenStudio for Content Supply chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ [Voltooiing](/help/tutorial-one-adobe/completion.md)
++ [Architectuur](/help/tutorial-one-adobe/architecture.md)
 
 + Aan de slag {#gettingstarted}
    + Aan de slag {#gettingstarted}
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Aan de slag met Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - Agentische AI](/help/tutorial-one-adobe/ai.md)
-+ WIP - Agentische AI {#agenticai}
++ (WIP) Agentic AI {#agenticai}
+   + [Overzicht van Agentic AI](/help/tutorial-one-adobe/ai.md)
    + 1.1 Aan de slag met agents en AI {#agenticai1}
       + [Overzicht](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
