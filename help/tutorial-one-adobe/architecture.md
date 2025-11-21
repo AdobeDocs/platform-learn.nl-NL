@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Eén Adobe-zelfstudie - Overzicht van architectuur
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht van GenStudio-architectuur
 
@@ -25,7 +25,7 @@ In deze video leert u meer over de architectuur achter de Adobe Experience Platf
 
 In deze video leert u over de architectuur achter de volledige end-to-end zelfstudie.
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
