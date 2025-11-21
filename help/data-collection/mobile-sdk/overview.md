@@ -14,7 +14,7 @@ ht-degree: 64%
 
 # Adobe Experience Platform Mobile SDK - overzicht
 
-Leer hoe de Adobe Experience Platform Mobile SDK volledige betrokkenheid in uw mobiele toepassingen mogelijk maakt. Platform Mobile SDK helpt u bij aanschaffen, analyseren, inschakelen en optimaliseren. Zeer krachtig, modulair, uitbreidbaar en geïntegreerd met gegevensverzameling. De geavanceerde de regelingenmotor, toestemmingen, en het publiceren van werkschema&#39;s van de Inzameling van gegevens helpen u efficiënt Adobe Analytics, Campagne, Audience Manager, Doel, en derdeoplossingen in uw mobiele apps uitvoeren. Voor meer informatie, gelieve te bezoeken de [ Mobiele documentatie van SDK van het Platform ](https://developer.adobe.com/client-sdks/documentation/).
+Leer hoe de Adobe Experience Platform Mobile SDK volledige betrokkenheid in uw mobiele toepassingen mogelijk maakt. Platform Mobile SDK helpt u bij aanschaffen, analyseren, inschakelen en optimaliseren. Zeer krachtig, modulair, uitbreidbaar en geïntegreerd met gegevensverzameling. De geavanceerde de regelingenmotor, toestemmingen, en het publiceren van werkschema&#39;s van de Inzameling van gegevens helpen u efficiënt Adobe Analytics, Campagne, Audience Manager, Doel, en derdeoplossingen in uw mobiele apps uitvoeren. Voor meer informatie, gelieve te bezoeken de [&#x200B; Mobiele documentatie van SDK van het Platform &#x200B;](https://developer.adobe.com/client-sdks/documentation/).
 
 >[!NOTE]
 >

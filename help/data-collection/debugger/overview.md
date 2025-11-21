@@ -17,13 +17,13 @@ ht-degree: 53%
 
 # Adobe Experience Platform Debugger-overzicht
 
-Leer hoe de uitbreiding van Adobe Experience Platform Debugger [ Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [ toe:voegen-op Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) u helpt uw Webimplementaties van het Web SDK van Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, markeringen en meer zuiveren.
+Leer hoe de uitbreiding van Adobe Experience Platform Debugger [&#x200B; Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en [&#x200B; toe:voegen-op Firefox &#x200B;](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/) u helpt uw Webimplementaties van het Web SDK van Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, markeringen en meer zuiveren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Aanvullende bronnen
 
-* [ Download toe:voegen-op Firefox ](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
-* [ Download de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [ Debugger van Experience Platform documentatie ](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
-* [ zuivert een markeringsimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [&#x200B; Download toe:voegen-op Firefox &#x200B;](https://addons.mozilla.org/nl/firefox/addon/adobe-experience-platform-dbg/)
+* [&#x200B; Download de uitbreiding van Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [&#x200B; Debugger van Experience Platform documentatie &#x200B;](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
+* [&#x200B; zuivert een markeringsimplementatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

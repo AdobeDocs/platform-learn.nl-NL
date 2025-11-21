@@ -16,6 +16,6 @@ ht-degree: 35%
 
 # Identiteitsgegevens labelen, opnemen en verifiëren
 
-Leer hoe u gegevensvelden kunt labelen als identiteiten, identiteitsgegevens kunt invoeren en de gegevens kunt verifiëren in de persoonlijke grafiek van de Adobe Experience Platform Identity Service. Voor meer informatie, gelieve de [ documentatie van de identiteitsdienst ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) te bezoeken
+Leer hoe u gegevensvelden kunt labelen als identiteiten, identiteitsgegevens kunt invoeren en de gegevens kunt verifiëren in de persoonlijke grafiek van de Adobe Experience Platform Identity Service. Voor meer informatie, gelieve de [&#x200B; documentatie van de identiteitsdienst &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl) te bezoeken
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
