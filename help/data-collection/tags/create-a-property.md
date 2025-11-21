@@ -18,5 +18,5 @@ ht-degree: 31%
 
 Leer hoe u tag-eigenschappen kunt maken om de marketinglabels op uw website te beheren. Voor meer informatie, zie de [&#x200B; eigenschappen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=nl-NL) documentatie.
 
->[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428599/?captions=dut&learn=on&enablevpops)
 
