@@ -16,6 +16,6 @@ ht-degree: 16%
 
 # Overzicht van het gegevensmodel voor schema&#39;s en ervaringen (XDM)
 
-Het Model van Gegevens van de ervaring (XDM) is het standaardgegevensmodel om klantenervaringen te beschrijven. Als u XDM gebruikt om schema&#39;s te bouwen en gegevens in te voeren die aan deze schema&#39;s voldoen, kunt u beginnen om systeem te gebruiken XDM. XDM System is de infrastructuur die klantenprofielen in real time, machine het leren, en Customer Journey Analytics in Adobe Experience Platform steunt. Voor meer informatie, gelieve de [&#x200B; schemadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
+Het Model van Gegevens van de ervaring (XDM) is het standaardgegevensmodel om klantenervaringen te beschrijven. Als u XDM gebruikt om schema&#39;s te bouwen en gegevens in te voeren die aan deze schema&#39;s voldoen, kunt u beginnen om systeem te gebruiken XDM. XDM System is de infrastructuur die klantenprofielen in real time, machine het leren, en Customer Journey Analytics in Adobe Experience Platform steunt. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)

@@ -10,12 +10,12 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# Adobe Experience Cloud implementeren met Web SDK-zelfstudie. {#implement-web-sdk}
+# Zelfstudie Adobe Experience Cloud implementeren met Web SDK. {#implement-web-sdk}
 
 + [Overzicht van tutorial](overview.md)
 + Eerste configuratie {#initial-configuration}
@@ -29,9 +29,9 @@ ht-degree: 13%
    + [Identiteiten maken](create-identities.md)
    + [Tagregels maken](create-tag-rule.md)
    + [Valideren met foutopsporing](validate-with-debugger.md)
-   + [Valideren met betrouwbaarheid](validate-with-assurance.md)
+   + [Valideren met Assurance](validate-with-assurance.md)
 
-+ Toepassingen instellen {#applications-setup}
++ Toepassingsinstellingen {#applications-setup}
    + [Experience Platform instellen](setup-experience-platform.md)
    + [Adobe Analytics instellen](setup-analytics.md)
    + [Audience Manager instellen](setup-audience-manager.md)

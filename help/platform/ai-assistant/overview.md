@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # AI-assistent
 
-Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/home) te bezoeken.
+Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [ AI Hulp documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 
@@ -38,7 +38,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Toegang tot AI Assistant verkrijgen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475925/?captions=dut&format=jpeg&nocache=1748392732990" alt="Toegang tot AI Assistant verkrijgen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Toegang tot AI Assistant verkrijgen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Het deelvenster voor ontdekkingsmogelijkheden in de AI-assistent gebruiken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440968/?format=jpeg&nocache=1748392732984&captions=dut" alt="Het deelvenster voor ontdekkingsmogelijkheden in de AI-assistent gebruiken"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Het deelvenster voor ontdekkingsmogelijkheden in de AI-assistent gebruiken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Reacties valideren vanuit AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441745/?format=jpeg&nocache=1748392733006&captions=dut" alt="Reacties valideren vanuit AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Reacties valideren vanuit AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ Er zijn vele andere gebruiksgevallen waarin AI Assistant u kan helpen uw account
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Operationele inzichten ophalen met AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444038/?format=jpeg&nocache=1748392734347&captions=dut" alt="Operationele inzichten ophalen met AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Operationele inzichten ophalen met AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -145,7 +145,7 @@ Er zijn vele andere gebruiksgevallen waarin AI Assistant u kan helpen uw account
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI Assistent - Gebruiksscenario voor opschonen van het publiek" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441993/?format=jpeg&nocache=1748392734324&captions=dut" alt="AI Assistent - Gebruiksscenario voor opschonen van het publiek"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="AI Assistent - Gebruiksscenario voor opschonen van het publiek"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ Er zijn vele andere gebruiksgevallen waarin AI Assistant u kan helpen uw account
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Effectanalyse met AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441686/?format=jpeg&nocache=1748392734336&captions=dut" alt="Effectanalyse met AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Effectanalyse met AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ De AI-assistent is een handig hulpmiddel om nieuwe producten te leren of om snel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Experience Platform-toepassingen leren met AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441030/?format=jpeg&nocache=1748392735046&captions=dut" alt="Experience Platform-toepassingen leren met AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Experience Platform-toepassingen leren met AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ De AI-assistent is een handig hulpmiddel om nieuwe producten te leren of om snel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI Assistant gebruiken om de instaptijd te verkorten" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475936/?captions=dut&format=jpeg&nocache=1748392735030" alt="AI Assistant gebruiken om de instaptijd te verkorten"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="AI Assistant gebruiken om de instaptijd te verkorten"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -262,7 +262,7 @@ Los problemen op en open de kaartjes van de klantenzorg.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Product Support Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443189/?format=jpeg&nocache=1748392735554&captions=dut" alt="Product Support Agent"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Product Support Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -297,7 +297,7 @@ Leer meer over de beveiligingsfuncties in AI Assistant.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Beveiligingsoverzicht van AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441086/?format=jpeg&nocache=1748392736016&captions=dut" alt="Beveiligingsoverzicht van AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Beveiligingsoverzicht van AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

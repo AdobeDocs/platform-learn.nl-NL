@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Scores en inzichten van Attribution AI gebruiken
 
-Leer hoe u de pagina Kenmerken AI-inzichten gebruikt om inzicht te krijgen in de ROI van marketingkanalen en campagnes. Voor meer informatie, gelieve de [&#x200B; documentatie van AI van de Attributie te bezoeken &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=nl-NL).
+Leer hoe u de pagina Kenmerken AI-inzichten gebruikt om inzicht te krijgen in de ROI van marketingkanalen en campagnes. Voor meer informatie, gelieve de [ documentatie van AI van de Attributie te bezoeken ](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

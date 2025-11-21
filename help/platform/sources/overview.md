@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # Overzicht van bronnen
 
-Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-interface. De bronnen zijn gemakkelijk configureerbare integratie die u toestaan om gegevens van Adobe, eerste-partij, en derdetoepassingen in het Echte-Time Profiel van de Klant van Platform en gegevensmeer in te voeren. Voor meer informatie, te zien gelieve de [&#x200B; documentatie van bronnen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
+Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-interface. De bronnen zijn gemakkelijk configureerbare integratie die u toestaan om gegevens van Adobe, eerste-partij, en derdetoepassingen in het Echte-Time Profiel van de Klant van Platform en gegevensmeer in te voeren. Voor meer informatie, te zien gelieve de [ documentatie van bronnen ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=nl).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
 
@@ -84,7 +84,7 @@ Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-in
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Gegevens opnemen met behulp van een databasebronaansluiting" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475989?captions=dut&format=jpeg&nocache=1740415500936" alt="Gegevens opnemen met behulp van een databasebronaansluiting"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Gegevens opnemen met behulp van een databasebronaansluiting"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-in
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Gegevens opnemen via de Adobe Analytics-bronaansluiting" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430252?format=jpeg&nocache=1740415502122&captions=dut" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-in
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Gegevens van Marketo Engage verzamelen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451866?format=jpeg&nocache=1740415502109&captions=dut" alt="Gegevens van Marketo Engage verzamelen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Gegevens van Marketo Engage verzamelen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Leer hoe u bronnen of bronconnectors gebruikt in de Adobe Experience Platform-in
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Problemen oplossen - Kan geen verbinding maken met SFTP-bronconnector" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443477?format=jpeg&nocache=1740415502267&captions=dut" alt="Problemen oplossen - Kan geen verbinding maken met SFTP-bronconnector"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Problemen oplossen - Kan geen verbinding maken met SFTP-bronconnector"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,24 +18,24 @@ ht-degree: 0%
 Adobe Experience Cloud-toepassingen hebben van oudsher cookies gegenereerd om apparaatid&#39;s op te slaan met behulp van verschillende technologieën, zoals:
 
 1. Cookies van andere bedrijven
-1. De koekjes van de eerste partij die door een server van de Adobe worden geplaatst gebruikend de configuratie van CNAME van een domeinnaam
+1. CNAME-configuraties van eerste bedrijven die zijn ingesteld door een Adobe-server met de CNAME-configuratie van een domeinnaam
 1. Door JavaScript ingestelde cookies van de eerste partij
 
-Recente browserwijzigingen beperken de duur van dit type cookies. De koekjes van de eerste partij zijn het meest efficiënt wanneer zij gebruikend een klant-bezeten server gebruikend DNS A/AAAA-verslag in tegenstelling tot DNS CNAME worden geplaatst. De [&#x200B; eerste-partij apparaat identiteitskaart (FPID) functionaliteit &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/identity/first-party-device-ids) staat klanten die SDK van het Web van Adobe Experience Platform uitvoeren toe om apparaat IDs in koekjes van servers te gebruiken die DNS A/AAAA-verslagen gebruiken. Deze id&#39;s kunnen vervolgens naar de Adobe worden verzonden en worden gebruikt als zaden om Experience Cloud-id&#39;s (ECID&#39;s) te genereren, wat de primaire id blijft in Adobe Experience Cloud-toepassingen.
+Recente browserwijzigingen beperken de duur van dit type cookies. De koekjes van de eerste partij zijn het meest efficiënt wanneer zij gebruikend een klant-bezeten server gebruikend DNS A/AAAA-verslag in tegenstelling tot DNS CNAME worden geplaatst. De [ eerste-partij apparaat identiteitskaart (FPID) functionaliteit ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) staat klanten die het Web SDK van Adobe Experience Platform uitvoeren toe om apparaat IDs in koekjes van servers te gebruiken die DNS A/AAAA-verslagen gebruiken. Deze id&#39;s kunnen vervolgens naar Adobe worden verzonden en worden gebruikt als zaden voor het genereren van Experience Cloud-id&#39;s (ECID&#39;s), wat de primaire id blijft in Adobe Experience Cloud-toepassingen.
 
 Hier volgt een kort voorbeeld van de werking van de functionaliteit:
 
-![&#x200B; Eerste-partij apparaat IDs (FPIDs) en Experience Cloud IDs (ECIDs) &#x200B;](../assets/kt-9728.png)
+![ Eerste-partij apparaat IDs (FPIDs) en Experience Cloud IDs (ECIDs) ](../assets/kt-9728.png)
 
 1. De browser van een eindgebruiker vraagt om een webpagina van de webserver of CDN van een klant.
 1. De klant genereert een apparaat-id (FPID) op zijn webserver of CDN (de webserver moet zijn gekoppeld aan de DNS A/AAAA-record van de domeinnaam).
 1. De klant stelt een cookie van de eerste partij in om de FPID in de browser van de eindgebruiker op te slaan.
-1. De Adobe Experience Platform Web SDK-implementatie van de Web SDK van de klant vraagt de Edge Network van het platform om:
+1. De Adobe Experience Platform Web SDK-implementatie van door de klant doet een verzoek aan het Platform Edge Network en:
    1. Hiermee neemt u de FPID op in de identiteitskaart.
    1. Vormt een CNAME voor hun verzoeken van SDK van het Web en vormt hun gegevensstroom met de naam van hun koekje FPID.
-1. De Edge Network van het Experience Platform ontvangt FPID en gebruikt het om een Experience Cloud identiteitskaart (ECID) te produceren.
+1. Experience Platform Edge Network ontvangt de FPID en gebruikt deze om een Experience Cloud-id (ECID) te genereren.
 1. De reactie van SDK van het Web van het platform verzendt ECID terug naar browser van de eindgebruiker.
-1. Als de `idMigrationEnabled=true` , gebruikt Platform Web SDK JavaScript om ECID als `AMCV_` koekje in browser van de eindgebruiker op te slaan.
+1. Als de `idMigrationEnabled=true` , gebruikt Platform Web SDK JavaScript om de ECID op te slaan als de `AMCV_` -cookie in de browser van de eindgebruiker.
 1. Als het `AMCV_` -cookie vervalt, wordt het proces zelf herhaald. Zolang dezelfde apparaat-id van de eerste fabrikant beschikbaar is, wordt een nieuw `AMCV_` -cookie gemaakt met dezelfde ECID-waarde als voorheen.
 
 >[!NOTE]
@@ -146,10 +146,10 @@ De laatste stap is om PHP te gebruiken om de koekjeswaarde aan de Kaart van de I
 Valideer de implementatie door te bevestigen dat dezelfde ECID wordt gegenereerd op basis van uw apparaat-id van de eerste partij:
 
 1. Een FPID-cookie genereren.
-1. Verzend een verzoek naar de Edge Network van het Platform gebruikend het Web SDK van het Platform.
+1. Verzend een aanvraag naar Platform Edge Network met Platform Web SDK.
 1. Er wordt een cookie met de notatie `AMCV_<IMSORGID@AdobeOrg>` gegenereerd. Dit cookie bevat de ECID.
 1. Maak een notitie van de cookiewaarde die wordt gegenereerd en verwijder vervolgens alle cookies voor uw site, behalve het `FPID` -cookie.
-1. Verzend een ander verzoek naar de Edge Network van het Platform.
+1. Stuur nog een aanvraag naar Platform Edge Network.
 1. Bevestig dat de waarde in het `AMCV_<IMSORGID@AdobeOrg>` -cookie dezelfde `ECID` -waarde is als in het `AMCV_` -cookie dat is verwijderd. Als de cookiewaarde voor een bepaalde FPID gelijk is, is het zaadproces voor de ECID geslaagd.
 
-Voor meer informatie over deze eigenschap, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=nl-NL).
+Voor meer informatie over deze eigenschap, zie [ de documentatie ](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

@@ -20,17 +20,17 @@ ht-degree: 6%
 
 Leer hoe u aan de slag gaat met Adobe Experience Platform API&#39;s. De eerste stap is een project in Adobe Developer Console te creëren en geloofsbrieven te verkrijgen. Deze zelfstudie begeleidt u bij het maken van een project in Adobe Developer Console en het exporteren van een Postman-milieubestand, zodat u Experience Platform API-aanvragen kunt maken.
 
-[[!DNL Postman] &#x200B;](https://www.postman.com/) is een derdetoepassing die ontwikkelaars snel en gemakkelijk met Adobe Experience Platform APIs helpt in wisselwerking te staan.
+[[!DNL Postman] ](https://www.postman.com/) is een derdetoepassing die ontwikkelaars snel en gemakkelijk met Adobe Experience Platform APIs helpt in wisselwerking te staan.
 
-[&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/home) **de Details van de Uitvoer voor Postman** vermogen verstrekt een gemakkelijke manier om de rekeningsdetails uit te voeren die worden vereist om tot en met Experience Platform APIs in één enkel dossier van het Milieu van Postman toegang te hebben, verwijderend de behoefte om waarden van Adobe Developer Console in Postman te kopiëren en te kleven.
+[ Adobe Developer Console ](https://developer.adobe.com/console/home) **de Details van de Uitvoer voor Postman** vermogen verstrekt een gemakkelijke manier om de rekeningsdetails uit te voeren die worden vereist om tot en met Experience Platform APIs in één enkel dossier van het Milieu van Postman toegang te hebben, verwijderend de behoefte om waarden van Adobe Developer Console in Postman te kopiëren en te kleven.
 
 >[!IMPORTANT]
 >
->Om tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/home) toegang te hebben, moet u a of a [&#x200B; Beheerder van het Systeem &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html) of a [&#x200B; Ontwikkelaar &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com) zijn.
+>Om tot [ Adobe Developer Console ](https://developer.adobe.com/console/home) toegang te hebben, moet u a of a [ Beheerder van het Systeem ](https://helpx.adobe.com/enterprise/using/admin-roles.html) of a [ Ontwikkelaar ](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [ Adobe Admin Console ](https://adminconsole.adobe.com) zijn.
 >
 > Nadat u de API-referentie hebt gemaakt, moet een systeembeheerder de referentie koppelen aan een rol in de Experience Platform.
 >
->Zie [&#x200B; ontwikkelaars toevoegen en toestemmingen aan API geloofsbrieven leerprogramma &#x200B;](../admin/add-developers.md) voor gedetailleerde instructies geven.
+>Zie [ ontwikkelaars toevoegen en toestemmingen aan API geloofsbrieven leerprogramma ](../admin/add-developers.md) voor gedetailleerde instructies geven.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
