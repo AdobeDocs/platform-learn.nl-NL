@@ -26,7 +26,7 @@ Leer hoe u aan de slag gaat met Adobe Experience Platform API&#39;s. De eerste s
 
 >[!IMPORTANT]
 >
->Om tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/home) toegang te hebben, moet u a of a [&#x200B; Beheerder van het Systeem &#x200B;](https://helpx.adobe.com/enterprise/using/admin-roles.html) of a [&#x200B; Ontwikkelaar &#x200B;](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com) zijn.
+>Om tot [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/home) toegang te hebben, moet u a of a [&#x200B; Beheerder van het Systeem &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html) of a [&#x200B; Ontwikkelaar &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [&#x200B; Adobe Admin Console &#x200B;](https://adminconsole.adobe.com) zijn.
 >
 > Nadat u de API-referentie hebt gemaakt, moet een systeembeheerder de referentie koppelen aan een rol in de Experience Platform.
 >

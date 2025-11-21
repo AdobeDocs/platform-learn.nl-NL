@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # AI-assistent
 
-Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home) te bezoeken.
+Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 

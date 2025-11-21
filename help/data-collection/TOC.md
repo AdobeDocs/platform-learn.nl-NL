@@ -27,15 +27,15 @@ ht-degree: 21%
    + [Regels maken](tags/build-rules.md)
    + [Stapelregels](tags/stack-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
-   + [&#x200B; voert in websites met Web SDK uit](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [&#x200B; voert in websites met oplossing SDKs uit](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [&#x200B; voert in websites met Web SDK uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [&#x200B; voert in websites met oplossing SDKs uit](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=nl-NL){target="_blank"}
+   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [&#x200B; zelfstudie van de Implementatie (met markeringen)](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [&#x200B; Migrate het leerprogramma van de Analyse](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [&#x200B; zelfstudie van de Implementatie (met markeringen)](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [&#x200B; Migrate het leerprogramma van de Analyse](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Toestemming{#consent}
       + [Overzicht](web-sdk/consent/overview.md)
       + [De waarden voor toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
@@ -46,9 +46,9 @@ ht-degree: 21%
    + [Overzicht](mobile-sdk/overview.md)
    + [Mobiele eigenschappen maken](mobile-sdk/create-mobile-properties.md)
    + [Afhankelijkheidsmanagers gebruiken](mobile-sdk/use-dependency-managers.md)
-   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
-   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + Server-API{#server-api}
    + [Overzicht](server-api/overview.md)
    + [Basisbeginselen van API&#39;s](server-api/introduction.md)

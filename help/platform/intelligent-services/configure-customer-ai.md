@@ -21,6 +21,6 @@ Leer hoe u een instantie van Customer AI kunt maken om klantgedrag te voorspelle
 
 >[!TIP]
 >
->KlantAI ondersteunt zowel Adobe Analytics- als Adobe Audience Manager-gegevenssets zonder dat u uw gegevens hoeft af te leiden om te voldoen aan het schema Consumer Experience Event (CEE). Meer leren, bezoek de [&#x200B; Intelligente gids van de de gegevensvoorbereiding van de Diensten &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
+>KlantAI ondersteunt zowel Adobe Analytics- als Adobe Audience Manager-gegevenssets zonder dat u uw gegevens hoeft af te leiden om te voldoen aan het schema Consumer Experience Event (CEE). Meer leren, bezoek de [&#x200B; Intelligente gids van de de gegevensvoorbereiding van de Diensten &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
