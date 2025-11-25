@@ -64,7 +64,7 @@ Show me purchases by mainCategory over the last 2 monthzoom into fiber performan
 
 Bouw neer in Vezel-specifieke tendensen.
 
-**de groeicurve van de Actie van 0} {en regionale pieken.**
+**de groeicurve van de Actie van 0&rbrace; &lbrace;en regionale pieken.**
 
 ## 1.1.3 Orders correleren met voorkeuren voor inhoud
 
@@ -362,6 +362,6 @@ Valideer wrijvingspunten (CJA fallout op reis SciFi).
 Activeer tegen segmenten met hoge dichtheid (zware downloaders ∩ SciFi).
 
 
-Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

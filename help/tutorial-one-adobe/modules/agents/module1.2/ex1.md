@@ -12,6 +12,6 @@ ht-degree: 0%
 
 # 1.2.1 Aan de slag met kunstmatige intelligentie
 
-Ga terug naar [ Agentische AI ](./agenticai.md){target="_blank"}
+Ga terug naar [&#x200B; Agentische AI &#x200B;](./agenticai.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
