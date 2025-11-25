@@ -14,15 +14,15 @@ ht-degree: 0%
 
 ## 1.1.1.1 Context instellen in Agent Orchestrator
 
-Ga naar [ https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat ](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
 
-![ Agent Orchestrator ](./images/ao1.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao1.png)
 
 Klik het **context** venster.
 
-![ Agent Orchestrator ](./images/ao2.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao2.png)
 
 Stel de context in op:
 
@@ -32,7 +32,7 @@ Stel de context in op:
 
 Klik **Vastgestelde context**.
 
-![ Agent Orchestrator ](./images/ao3.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao3.png)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![ Agent Orchestrator ](./images/ao4.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao4.png)
 
 U zou dan dit moeten zien:
 
@@ -70,19 +70,19 @@ U zou dan dit moeten zien:
 >
 >Houd de aandacht op achterblijvende attributie-De orden van de vezel kunnen onder &quot;Internet&quot;in sommige erfenisschema&#39;s worden gevangen. Zo ja, de taxonomie vóór de beslissingen met elkaar in overeenstemming brengen.
 
-![ Agent Orchestrator ](./images/ao5.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao5.png)
 
 Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 `Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-![ Agent Orchestrator ](./images/ao6.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao6.png)
 
 Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
 **Actie**: Noteer de de groeicurve en regionale pieken.
 
-![ Agent Orchestrator ](./images/ao7.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao7.png)
 
 ## 1.1.1.3 Orders correleren met voorkeuren voor inhoud
 
@@ -114,17 +114,17 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 Show me ordersYTD by preferredGenre for the last 2 months
 ```
 
-![ Agent Orchestrator ](./images/ao8.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao8.png)
 
 U zou dan dit moeten zien:
 
-![ Agent Orchestrator ](./images/ao9.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao9.png)
 
 ## 1.1.1.4 Bestaande vezelreizen identificeren
 
 Klik het **context** venster.
 
-![ Agent Orchestrator ](./images/ao10.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao10.png)
 
 Stel de context in op:
 
@@ -132,7 +132,7 @@ Stel de context in op:
 - **Sandbox**: **versnelt**
 - **Dataview**: **versnelt 2026 B2C**
 
-![ Agent Orchestrator ](./images/ao11.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao11.png)
 
 **Intentie** ontdekt welke actieve of onlangs voltooide reizen &quot;Vezel&quot;in titel-bv, &quot;de Verbetering van de Vezel NYC - Zin&quot;omvatten, &quot;de Proefversie van de Vezel - het Streamen Bundel&quot;.
 
@@ -154,11 +154,11 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 What journeys exist? 
 ```
 
-![ Agent Orchestrator ](./images/ao12.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao12.png)
 
 U zou dan dit moeten zien:
 
-![ Agent Orchestrator ](./images/ao13.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao13.png)
 
 Maak een lijst actief of verleden reizen met het overseinen van de Vezel.
 
@@ -170,11 +170,11 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![ Agent Orchestrator ](./images/ao14.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao14.png)
 
 U zou dan dit moeten zien:
 
-![ Agent Orchestrator ](./images/ao15.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao15.png)
 
 ## 1.1.1.5 Controleer het zaad
 
@@ -204,7 +204,7 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
-![ Agent Orchestrator ](./images/ao16.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/ao16.png)
 Bekijk de publiekscriteria (streaminggewoonten, aantal apparaten).
 
 **Doel**: Begrijp eigenschappen voor hoge bandbreedtebehoeften.
@@ -401,6 +401,6 @@ Ga de volgende **Herinnering** in en klik **produceren** knoop.
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
-Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
