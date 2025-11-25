@@ -3,42 +3,52 @@ title: Aan de slag met Agent Orchestrator
 description: Aan de slag met Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: e90dee164dfe098c9fc56a04c481a733c0843858
+source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Aan de slag met Agent Orchestrator
 
-## 1.1.1 Context instellen in Agent Orchestrator
+## 1.1.1.1 Context instellen in Agent Orchestrator
 
-Navigeer naar de AI-assistent en zet deze in de weergave Groot.
+Ga naar [ https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat ](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-Bevestig dat u in CJA-context werkt voor analytische taken.
+Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
+
+![ Agent Orchestrator ](./images/ao1.png)
+
+Klik het **context** venster.
+
+![ Agent Orchestrator ](./images/ao2.png)
+
+Stel de context in op:
+
+- **Documentatie Source**: **Customer Journey Analytics**
+- **Sandbox**: **versnelt**
+- **Dataview**: **versnelt 2026 B2C**
+
+Klik **Vastgestelde context**.
+
+![ Agent Orchestrator ](./images/ao3.png)
 
 >[!NOTE]
 >
->Gebruik contextomschakeling bij het schakelen tussen analyse (CJA) en orkest (JO).
+>In dit laboratorium, zult u context schakelen wanneer het bewegen tussen analyse en orchestratie.
 
-## 1.1.2 Begin met algemene aankooptrends om context te verankeren en in vezel te zoomen
-
-**Herinnering**:
-
-```javascript
-Show me purchases by mainCategory over the last 2 month
-```
+## 1.1.1.2 Begin met algemene aankooptrends om context te verankeren en in vezel te zoomen
 
 **Intentie**: Krijg een impuls op hoogste niveau op vraag-mobiel, Landline, Internet, TV, specifiek voor de meest recente 60 dagen. Dit bepaalt basislijnen voor seizoensgebondenheid, bevorderingeffecten, en regionale variantie na de NY-rollout.
 
-Dacht:
+**het Dinken**:
 
 &quot;Krijgt Vezel postNY? Ziet u kannibalisatie van het internet van Copper/DSL? Wat is de mix verschuiven ten opzichte van tv-bundels?&quot;
 
 &quot;Dit zal me helpen het adresseerbare publiek voor Wenen te meten en realistische doelen te stellen.&quot;
 
-De markeertekens worden in actie gebracht en worden verwacht:
+**de Handelbare lezingen de teller verwacht**:
 
 Een gestapelde staaf/lijngrafiek van Aankopen door mainCategorie (dagelijkse/wekelijkse korrel).
 
@@ -46,35 +56,37 @@ Percentage van de aankopen per categorie versus voorafgaande periode.
 
 Opvallende pieken correleren met promotiedata.
 
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
+
+```javascript
+Show me purchases by mainCategory over the last 2 months.
+```
+
+![ Agent Orchestrator ](./images/ao4.png)
+
+U zou dan dit moeten zien:
+
 >[!NOTE]
 >
 >Houd de aandacht op achterblijvende attributie-De orden van de vezel kunnen onder &quot;Internet&quot;in sommige erfenisschema&#39;s worden gevangen. Zo ja, de taxonomie vóór de beslissingen met elkaar in overeenstemming brengen.
 
- 
+![ Agent Orchestrator ](./images/ao5.png)
 
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
-```javascript
-Show me purchases by mainCategory over the last 2 monthzoom into fiber performance
-```
+`Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-**Volgende Herinnering**
+![ Agent Orchestrator ](./images/ao6.png)
 
-`Show me purchases by mainCategory = Fiber over the last 2 months`
+Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
-Bouw neer in Vezel-specifieke tendensen.
+**Actie**: Noteer de de groeicurve en regionale pieken.
 
-**de groeicurve van de Actie van 0&rbrace; &lbrace;en regionale pieken.**
+![ Agent Orchestrator ](./images/ao7.png)
 
-## 1.1.3 Orders correleren met voorkeuren voor inhoud
+## 1.1.1.3 Orders correleren met voorkeuren voor inhoud
 
-**Herinnering**:
-
-```javascript
-Show me ordersYTD by preferred genre for the last 2 months
-```
-
-**Intentie** test de hypothese dat de inhoudvoorkeur (b.v., SciFi, Sport, Drama) breedbandverbetering gedrag-vooral voor hoge bandbreedtebehoeften voorspelt.
+**Intentie**: Test de hypothese dat de inhoudsvoorkeur (b.v., SciFi, Sport, Drama) breedbandverbetering gedrag-vooral voor hoge bandbreedtebehoeften voorspelt.
 
 **het Dinken**
 
@@ -90,23 +102,37 @@ Rankgenres volgens de orderomrekeningskoers en AOV (gemiddelde orderwaarde).
 
 Besluit: als SciFi een sterk signaal geeft, wordt dit een primaire creatieve pijler voor de Fiber Max-lancering van Wenen (bv. &quot;nooit meer bufferen&quot; berichten, premiebundels).
 
-**Vragen**
-
-`Show me ordersYTD by preferred genre for the last 2 months`
-
 **Intentie**
 
 Conversie via genre analyseren (bv. Sci-Fi, Sport).
 
 **Doel** bevestigt als de ventilatoren Sci-Fi over-index voor de verbeteringen van de Vezel.
 
-## 1.1.4 Bestaande vezelreizen identificeren
-
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
-What journey was running and had Fiber in the name
+Show me ordersYTD by preferredGenre for the last 2 months
 ```
+
+![ Agent Orchestrator ](./images/ao8.png)
+
+U zou dan dit moeten zien:
+
+![ Agent Orchestrator ](./images/ao9.png)
+
+## 1.1.1.4 Bestaande vezelreizen identificeren
+
+Klik het **context** venster.
+
+![ Agent Orchestrator ](./images/ao10.png)
+
+Stel de context in op:
+
+- **Documentatie Source**: **Adobe Journey Optimizer**
+- **Sandbox**: **versnelt**
+- **Dataview**: **versnelt 2026 B2C**
+
+![ Agent Orchestrator ](./images/ao11.png)
 
 **Intentie** ontdekt welke actieve of onlangs voltooide reizen &quot;Vezel&quot;in titel-bv, &quot;de Verbetering van de Vezel NYC - Zin&quot;omvatten, &quot;de Proefversie van de Vezel - het Streamen Bundel&quot;.
 
@@ -122,23 +148,39 @@ Lijst van reizen met status (actief, gepauzeerd, beëindigd), datumbereiken, doe
 
 Volgende stap: Korte lijst met een of twee geslaagde vezelritten voor klonen/aanpassen.
 
-**Vragen**
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
-`What journey was running and had Fiber in the name?`
+```javascript
+What journeys exist? 
+```
+
+![ Agent Orchestrator ](./images/ao12.png)
+
+U zou dan dit moeten zien:
+
+![ Agent Orchestrator ](./images/ao13.png)
 
 Maak een lijst actief of verleden reizen met het overseinen van de Vezel.
 
 Actie: Kortstondige snelritten voor klonen.
 
-## 1.1.5 Controleer het publiek van de zaadjes op een relevante historische protestactie
-
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey
+Which of these journeys has 'Fiber' in its name?
 ```
 
-**Intentie** begrijpt de zaaddefinitie van &quot;SciFi Promo 2024 - jl&quot;reis-welke eigenschappen reden het richten (b.v., &quot;SciFi Genre Voorkeur,&quot;4+ apparaten,&quot;stroom ≥ 300GB/maand&quot;).
+![ Agent Orchestrator ](./images/ao14.png)
+
+U zou dan dit moeten zien:
+
+![ Agent Orchestrator ](./images/ao15.png)
+
+## 1.1.1.5 Controleer het zaad
+
+**Intentie**:
+
+Begrijp de zaaddefinitie van de &quot;CitiSignal - Fiber Max Launch Promotion&quot;-reis - welke kenmerken reden voor het kiezen van doelen (bijvoorbeeld &quot;SciFi Genre Preference&quot;, &quot;4+ devices&quot;, &quot;stream ≥ 300 GB/maand&quot;).
 
 **het Dinken**
 
@@ -156,41 +198,44 @@ Criteria van het publiek (inclusie/uitsluiting), publieksgrootte, regiofilters, 
 
 Vanaf dit punt schakelt de markeerteken over naar de analysemodus om een juiste rapportage te garanderen.
 
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
-What was the initial audience in that SCi-Fi promo 2024 - jl journey?
+What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
+![ Agent Orchestrator ](./images/ao16.png)
 Bekijk de publiekscriteria (streaminggewoonten, aantal apparaten).
 
-Doel: Begrijp de kenmerken voor hoge bandbreedtebehoeften.
+**Doel**: Begrijp eigenschappen voor hoge bandbreedtebehoeften.
 
-## 1.1.6 De reisprestaties valideren via een valutanotanalyse
+## 1.1.1.6 De reisprestaties valideren via een falloutanalyse
 
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
 >[!NOTE]
 >
 >Context wijzigen in CJA)
 
-**Intentie** bouwt een stapsgewijze funnel in Customer Journey Analytics
+**Intentie**:
+
+Een stapsgewijze funnel maken in Customer Journey Analytics
 
 Geleverd → Geopend → Geklikt → Aangeland → Productweergave → Toevoegen aan winkelwagentje → Afhandeling voltooid
 
 Inclusief aan vezels gerelateerde SKU-weergaven als vertakking.
 
-Dacht:
+**het Dinken**:
 
 &quot;Waar verliezen wij mensen—e-mail open, het laden van de landingspagina, PDPs, de wrijving van de checkout?&quot;
 
 &quot;Stuiteren SciFi-gebruikers meer of minder dan gemiddeld op Fibre PDP?&quot;
 
-Verwachte uitvoer:
+**Verwachte output**:
 
 Een uitvalvisualisatie met uitvalpercentages bij elke stap.
 
@@ -198,7 +243,7 @@ Segmentbedekkingen (SciFi versus Sport vs. Andere).
 
 Apparaat/browser defect voor technische wrijving.
 
-Besluiten:
+**Besluiten**:
 
 Als de afrekenactie hoog is, moet u coördineren met product/UX om de betalingsstroom te herstellen.
 
@@ -210,20 +255,19 @@ Als de PDP uitgang hoog is, eisen de herwerkbaarheid helderheid (snelheden, inst
 
 Nu beweegt de markator naar Adobe Journey Optimizer voor orkest en publiek.
 
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
-Create a fall-out report on the "Sci-Fi Promo 2024 - jl" journey 
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
 ```
 
 Funnel-visualisatie bouwen: geleverd → geopend → geklikt → Afhandeling → Bestelling.
 
-Actie: Identificeer drop-down punten en optimaliseer overseinen of UX.
+**Actie**: Identificeer drop-off punten en optimaliseer overseinen of UX.
 
+## 1.1.1.7 Bestaande doelgroepen zoeken die zijn uitgelijnd op hoog gebruik
 
-## 1.1.7 Bestaande doelgroepen zoeken die zijn uitgelijnd op hoog gebruik
-
-**Herinnering**:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -233,77 +277,67 @@ Is there an audience that has "heavy downloaders" in the title?
 >
 >Context wijzigen in Adobe Journey Optimizer
 
-Intentie: zoek een JO-publiek met de naam &quot;zware downloaders&quot;. Dit wordt waarschijnlijk gedefinieerd door de maandelijkse drempels voor gegevensgebruik, de streaminguren of de gelijktijdige aansluiting van apparaten.
+**Intentie**:
 
-Dacht:
+Zoek een JO-publiek met de naam &quot;zware downloaders&quot;. Dit wordt mogelijk gedefinieerd door de maandelijkse drempels voor gegevensgebruik, streaminguren of gelijktijdige uitvoering van apparaten.
+
+**het Dinken**:
 
 &quot;Als er een publiek als Zware downloaders bestaat, is dit ideaal voor maximale positionering van de vezel: snelheid, betrouwbaarheid, onbeperkte lagen.&quot;
 
-Verwachte uitvoer:
+**Verwachte output**:
 
 Metagegevens van het publiek: definitiecriteria, grootte, laatste verfrissing, governance markeringen, gebiedsbeschikbaarheid.
 
-**Herinnering**:
-
-```javascript
-Is there an audience that has " heavy downloaders" in the title 
-```
-
 Zoek een publiek met veel gegevensgebruik.
 
-Doel: Combineer met de voorkeur van Sci-Fi voor het Max richten van de Vezel.
+**Doel**: Combineer met Sci-Fi voorkeur voor Max het richten van Vezel.
 
-## 1.1.8 Bepalen of dit publiek al in gebruik is
+## 1.1.1.8 Bepalen of dat publiek al in gebruik is
 
-**Herinnering**:
+**Intentie**:
 
-```javascript
-Which of the above are used in a journey? 
-```
+Koppeling publiek-naar-reis controleren: zorg dat we geen dubbele vlek maken of botsen met de huidige programma&#39;s.
 
-Intentie: controleer de koppeling tussen publiek en reis. Controleer of u geen dubbele vlek hebt of niet botst met de huidige programma&#39;s.
-
-Dacht:
+**het Dinken**:
 
 &quot;Als de Zware Downloaders reeds in een retentietraject is, hebben wij redelogica of frequentiegrenzen nodig om vermoeidheid te vermijden.&quot;
 
-Verwachte uitvoer:
+**Verwachte output**:
 
 Toewijzingen: publiek → naam, status, contactbeleid, laatste verzending, prestaties.
 
-Besluit:
+**Besluit**:
 
 Indien in gebruik, creeer uitsluitingen of gedeelde onderdrukking voor de lancering van Wenen.
 
 Als het niet in gebruik is, groen licht voor een nieuwe reis.
 
-Vragen:
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
-welke van de bovenstaande gegevens worden gebruikt op een reis ?
+```javascript
+Which of the above are used in a journey? 
+```
 
 Zorg ervoor dat actieve campagnes elkaar niet overlappen.
 
-Handeling: onderdrukking toepassen indien nodig.
+**Actie**: Pas onderdrukking indien nodig toe.
 
-## 1.1.9 Nieuwe reis maken voor maximale start van Fibre
+## 1.1.1.9 Nieuwe reis maken voor maximale start van Fibre
 
-**Herinnering**:
+**Intentie**:
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
-```
-
-Intent: Bouw een nieuwe JO-reis voor het samengestelde publiek:
+Een nieuwe reis maken voor het samengestelde publiek:
 
 Zware downloaders ∩ voorkeur SciFi (kbaa_5207bf publiekssleutel).
 
-Dacht:
+**het Dinken**:
 
 &quot;Dit is de zoete plek voor Fiber Max: hoge neiging + creatieve relevantie.&quot;
 
 &quot;We organiseren een multitouch-ervaring met Wenen.&quot;
 
-Reisontwerp (JO):
+**het ontwerp van de Reis (JO)**:
 
 Invoercriteria:
 
@@ -353,7 +387,7 @@ Hoe dit allemaal samenpast (het mentale model van de markeerster)
 
 Diagnose van de vraag (algemene categorieën → Vezel specifiek).
 
-Inhoud conversiesignaal (orders per genre) aantonen.
+Inhoud aantonen tot conversiesignaal (orders per genre).
 
 Mijn reis is geslaagd (zoek naar Fiberbenoemde reizen en het SciFi-promo-publiek).
 
@@ -361,7 +395,12 @@ Valideer wrijvingspunten (CJA fallout op reis SciFi).
 
 Activeer tegen segmenten met hoge dichtheid (zware downloaders ∩ SciFi).
 
+Ga de volgende **Herinnering** in en klik **produceren** knoop.
 
-Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
+```javascript
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
