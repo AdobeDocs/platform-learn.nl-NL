@@ -3,9 +3,9 @@ title: Aan de slag met Agent Orchestrator
 description: Aan de slag met Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: dee5b0855eeeb455bf22f511d11cd13f7e904889
+source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -14,25 +14,33 @@ ht-degree: 0%
 
 ## 1.1.1.1 Context instellen in Agent Orchestrator
 
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Ga naar [ https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat ](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao1.png)
+![ Agent Orchestrator ](./images/ao1.png)
 
 Klik het **context** venster.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao2.png)
+![ Agent Orchestrator ](./images/ao2.png)
 
 Stel de context in op:
 
-- **Documentatie Source**: **Customer Journey Analytics**
-- **Sandbox**: **versnelt**
+- **Documentatie Source**: **Journey Optimizer**
+
+Met de instelling Documentation Source kunt u de voorkeur geven aan documenten met de league (Engelstalig) waarin u kunt controleren op vragen die betrekking hebben op productkennis/Experience League.
+
+- **Sandbox**: **Prod - versnelt (VA7)**
+
+Met de instelling Sandbox kunt u bepalen naar welke sandbox AI-assistent moet worden gekeken wanneer vragen worden gesteld.
+
 - **Dataview**: **versnelt 2026 B2C**
+
+Met de instelling Gegevensweergave kunt u bepalen naar welke AI-assistent voor gegevensweergave moet worden gekeken wanneer u vragen stelt.
 
 Klik **Vastgestelde context**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao3.png)
+![ Agent Orchestrator ](./images/ao3.png)
 
 ## 1.1.1.2 Begin met algemene aankooptrends om context te verankeren en in vezel te zoomen
 
@@ -46,29 +54,43 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao4.png)
+![ Agent Orchestrator ](./images/ao4.png)
 
 U zou dan dit moeten zien:
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao5.png)
+![ Agent Orchestrator ](./images/ao5.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
 `Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao6.png)
+![ Agent Orchestrator ](./images/ao6.png)
 
 Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
-**Actie**: Noteer de de groeicurve en regionale pieken.
-
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao7.png)
+![ Agent Orchestrator ](./images/ao7.png)
 
 ## 1.1.1.3 Orders correleren met voorkeuren voor inhoud
 
 **Intentie**
 
-Test de hypothese dat de voorkeur van de inhoud (b.v., SciFi, Sport, Drama) breedbandverbeteringsgedrag-vooral voor hoge bandbreedtebehoeften voorspelt.
+Test de hypothese dat een voorkeur voor een specifieke genre (bijvoorbeeld, SciFi, Sport, Drama) breedbandverbeteringsgedrag-vooral voor hoge bandbreedtebehoeften voorspelt.
+
+Eerst moet u erachter komen welk veld wordt gebruikt om de voorkeur voor genre op te slaan.
+
+Ga de volgende **Herinnering** in en klik **verzenden** knoop.
+
+```javascript
+Which field is used to store the preferred genre?
+```
+
+![ Agent Orchestrator ](./images/ao7a.png)
+
+Vervolgens ziet u dit. Het veld dat voor genre wordt gebruikt, is **_experiencePlatform.individualCharacteristics.preferences.preferredGenre** .
+
+![ Agent Orchestrator ](./images/ao7b.png)
+
+Met deze informatie kunt u beginnen met het uitboren in de aankoopgegevens.
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -76,11 +98,15 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me ordersYTD by preferredGenre for the last 2 months
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao8.png)
+![ Agent Orchestrator ](./images/ao8.png)
 
-U zou dan dit moeten zien:
+Dan moet je dit zien. Klik het pictogram op het **Volledige** blok van de Redding volledig {om te begrijpen wat in Agent Orchestrator achter de scènes gebeurt.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao9.png)
+![ Agent Orchestrator ](./images/ao9.png)
+
+Dan zou je een vergelijkbare verklaring moeten zien.
+
+![ Agent Orchestrator ](./images/ao10.png)
 
 ## 1.1.1.4 Bestaande vezelreizen identificeren
 
@@ -94,59 +120,65 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 What journeys exist? 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao12.png)
+![ Agent Orchestrator ](./images/ao12.png)
 
-U zou dan dit moeten zien:
+Dan moet je dit zien. Klik **tonen meer**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao13.png)
+![ Agent Orchestrator ](./images/ao13.png)
 
-Maak een lijst actief of verleden reizen met het overseinen van de Vezel.
+Daarna moet u een grotere lijst zien van actieve of vroegere reizen. Klik het **download** pictogram om een lijst van deze reizen te downloaden.
 
-Actie: Kortstondige snelritten voor klonen.
+![ Agent Orchestrator ](./images/ao13a.png)
 
-Ga de volgende **Herinnering** in en klik **verzenden** knoop.
+Hiermee wordt een CSV-bestand voor u gegenereerd dat alle uitvoer van de AI-assistent bevat.
+
+![ Agent Orchestrator ](./images/ao13b.png)
+
+Klik om het rechterdeelvenster te sluiten. Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao14.png)
+![ Agent Orchestrator ](./images/ao14.png)
 
-U zou dan dit moeten zien:
+Dan moet je dit zien. Klik de verbinding op één van de reizen en selecteer **Details van de Reis**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao15.png)
+![ Agent Orchestrator ](./images/ao15.png)
 
-## 1.1.1.5 Controleer het zaad
+Er wordt een nieuw venster geopend en u wordt meteen doorgestuurd naar het overzicht met reisgegevens.
+
+![ Agent Orchestrator ](./images/ao15a.png)
+
+## 1.1.1.5 Controleren welk publiek wordt gebruikt
 
 **Intentie**:
 
 Begrijp de zaaddefinitie van de &quot;CitiSignal - Fiber Max Launch Promotion&quot;-reis - welke kenmerken reden voor het kiezen van doelen (bijvoorbeeld &quot;SciFi Genre Preference&quot;, &quot;4+ devices&quot;, &quot;stream ≥ 300 GB/maand&quot;).
 
-Ga de volgende **Herinnering** in en typ dan in **+CitiSignal fib** om autocomplete toe te laten. Selecteer de reis **CitiSignal - de Max Bevordering van de Lancering van de Vezel**.
+Ga de volgende **Herinnering** in:
 
 ```javascript
 What was the initial audience in the journey named 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao16.png)
+Typ vervolgens handmatig in `+CitiSignal fib` om automatisch aanvullen in te schakelen. Selecteer de reis **CitiSignal - de Max Bevordering van de Lancering van de Vezel**.
+
+![ Agent Orchestrator ](./images/ao16.png)
 
 Dan moet je dit zien. Klik **verzenden** knoop.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao17.png)
+![ Agent Orchestrator ](./images/ao17.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao18.png)
+![ Agent Orchestrator ](./images/ao18.png)
 
 ## 1.1.1.6 De reisprestaties valideren via een falloutanalyse
 
 **Intentie**
 
-Een stapsgewijze funnel maken in Customer Journey Analytics
-
-Geleverd → Geopend → Geklikt → Aangeland → Productweergave → Toevoegen aan winkelwagentje → Afhandeling voltooid
-
-Inclusief aan vezels gerelateerde SKU-weergaven als vertakking.
+U wilt de gevolgen van de reisprestaties begrijpen om te weten of zijn er om het even welke knopen of omstandigheden binnen de reis die een groot percentage van profielen ervaren die worden gelaten vallen. Dit is nuttig om te begrijpen of er extra aanpassingen nodig zijn in de reis.
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -154,55 +186,69 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao19.png)
+![ Agent Orchestrator ](./images/ao19.png)
+
+Dan moet je dit zien.
+
+![ Agent Orchestrator ](./images/ao20.png)
+
+Schuif een beetje omlaag. U kunt de lijst nu herzien door elke knoop en zijn respectieve ingaat aantallen, valutanummers, en valutarief te inspecteren.
+
+In de AI Assistant vindt u opmerkingen en aanbevelingen.
+
+Klik de zin **hier is hoe ik de resultaten** kreeg.
+
+![ Agent Orchestrator ](./images/ao21.png)
+
+U kunt dan de stappen zien die door AI Medewerker worden gevolgd om aan de resultaten te krijgen.
+
+![ Agent Orchestrator ](./images/ao22.png)
 
 ## 1.1.1.7 Een nieuw publiek maken
 
 **Intentie**
 
-Op basis van de bovenstaande bevindingen is er een correlatie tussen klanten die veel gegevens gebruiken en die een genre van sci-fi of fantasie bij voorkeur hebben. U gaat deze kenmerken nu combineren in een publiek.
-
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Op basis van de bovenstaande bevindingen en het onderzoek is er een correlatie tussen klanten die veel gegevens gebruiken en die een genre van sci-fi of fantasie bij voorkeur hebben. U gaat deze kenmerken nu combineren in een publiek.
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
-
->[!NOTE]
->
->Gelieve te verifiëren dat de context van de medewerker aan zandbak **richt versnelt** en gegevensmening **versnelt 2026 B2C**
 
 ```javascript
 Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao32.png)
+![ Agent Orchestrator ](./images/ao32.png)
 
 Controleer het plan. Ga `yes` in en klik **verzenden**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao33.png)
+>[!NOTE]
+>
+>Dit plan wordt geproduceerd gebaseerd op een verwijzingsgids in het systeem. De klanten zullen uiteindelijk plannen kunnen aanpassen en hun eigen plannen toevoegen, maar voor nu zijn zij statisch.
+
+![ Agent Orchestrator ](./images/ao33.png)
 
 Herzie de uitdrukking van de segmentvraag. Ga `yes` in en klik **verzenden** knoop.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao34.png)
+![ Agent Orchestrator ](./images/ao34.png)
 
 Herzie de raming van de segmentgrootte. Ga `yes` in en klik **verzenden** knoop.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao35.png)
+![ Agent Orchestrator ](./images/ao35.png)
 
 Klik **Overzicht**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao36.png)
+![ Agent Orchestrator ](./images/ao36.png)
 
 Herzie de segmentdefinitie. Klik **creëren**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao37.png)
+![ Agent Orchestrator ](./images/ao37.png)
 
 Uw publiek is nu gemaakt.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao38.png)
+![ Agent Orchestrator ](./images/ao38.png)
 
 >[!NOTE]
 >
->Wanneer het creëren van een nieuw publiek, zal het 24 uren vergen alvorens het publiek aan de medewerker voor verder gebruik beschikbaar is.
+>Wanneer u een nieuw publiek maakt, duurt het 24 uur voordat het publiek beschikbaar is voor AI Assistant voor verder gebruik.
 
 ## 1.1.1.8 Bestaande doelgroepen zoeken die zijn uitgelijnd op hoog gebruik en controleren of ze in gebruik zijn
 
@@ -212,27 +258,37 @@ Zoek een publiek met de naam &quot;zware downloaders&quot;, gedefinieerd door dr
 
 >[!NOTE]
 >
->In de vorige stap hebt u een nieuw publiek gemaakt. Vergeet niet dat het 24 uur zal duren voordat het publiek beschikbaar is voor de assistent voor verder gebruik. U moet nu een ander, reeds bestaand publiek gebruiken.
-
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
+>In de vorige stap hebt u een nieuw publiek gemaakt. Vergeet niet dat het 24 uur duurt voordat het publiek beschikbaar is voor AI Assistant voor verder gebruik. U moet nu een ander, reeds bestaand publiek gebruiken.
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
-
->[!NOTE]
->
->Gelieve te verifiëren dat de context van de medewerker aan zandbak **richt versnelt** en gegevensmening **versnelt 2026 B2C**
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao30.png)
+![ Agent Orchestrator ](./images/ao30.png)
 
-Dan moet je dit zien.
+Dan moet je dit zien. U wilt nu al uw publiek zien en hoeveel er de afgelopen dagen veranderd is.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao31.png)
+Ga de volgende **Herinnering** in en klik **verzenden** knoop.
+
+```javascript
+List how much these audiences changed over the last few days.
+```
+
+![ Agent Orchestrator ](./images/ao31.png)
+
+Dan moet je dit zien. Klik **tonen meer**.
+
+![ Agent Orchestrator ](./images/ao31a.png)
+
+Dan moet je dit zien. Klik om het rechterdeelvenster te sluiten.
+
+![ Agent Orchestrator ](./images/ao31b.png)
+
+Schuif een beetje omlaag om de stappen te bekijken die door AI Assistant zijn uitgevoerd.
+
+![ Agent Orchestrator ](./images/ao31c.png)
 
 Er zijn al een aantal bestaande doelgroepen voor &quot;zware downloaders&quot;. Laten we eens kijken of ze al in gebruik zijn.
 
@@ -242,23 +298,23 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which of the above are used in a journey? 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao50.png)
+![ Agent Orchestrator ](./images/ao50.png)
 
 Dan zou je iets gelijkaardigs moeten zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao51.png)
+![ Agent Orchestrator ](./images/ao51.png)
 
 Nu moet u controleren of die reis actief is. Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
 ```javascript
-Which of the above are used in a journey? 
+Are these journeys active? 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao52.png)
+![ Agent Orchestrator ](./images/ao52.png)
 
-Dan zou je iets gelijkaardigs moeten zien. Die reis loopt op dit moment niet.
+Dan zou je iets gelijkaardigs moeten zien. Geen van deze reizen loopt momenteel.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/ao53.png)
+![ Agent Orchestrator ](./images/ao53.png)
 
 Voor de aanstaande lancering van Fiber Max, zou u nu een nieuwe reis moeten creëren.
 
@@ -268,128 +324,116 @@ Voor de aanstaande lancering van Fiber Max, zou u nu een nieuwe reis moeten cre�
 
 Een nieuwe reis maken voor het samengestelde publiek:
 
-Zware downloaders ∩ voorkeur SciFi (kbaa_5207bf publiekssleutel).
-
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
+Zware downloaders ∩ voorkeur SciFi.
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
-
->[!NOTE]
->
->Gelieve te verifiëren dat de context van de medewerker aan zandbak **richt versnelt** en gegevensmening **versnelt 2026 B2C**
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj1.png)
+![ Agent Orchestrator ](./images/aocj1.png)
 
 Dan moet je dit zien. Voer `yes` in en klik op Genereren.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj2.png)
+![ Agent Orchestrator ](./images/aocj2.png)
 
 Dan moet je dit zien. Voer `yes` in en klik op Genereren.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj3.png)
+![ Agent Orchestrator ](./images/aocj3.png)
 
-Dan moet je dit zien. Voer `The first one` in en klik op Genereren.
+Dan moet je dit zien. Voer `The first one` in en klik op Verzenden.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj4.png)
+![ Agent Orchestrator ](./images/aocj4.png)
 
-Dan moet je dit zien. Voer `yes` in en klik op Genereren.
+Dan moet je dit zien. Voer `yes` in en klik op Verzenden.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj5.png)
+![ Agent Orchestrator ](./images/aocj5.png)
 
-Bekijk het antwoord. Voer `yes` in en klik op Genereren.
+Bekijk het antwoord. Voer `yes` in en klik op Verzenden.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj6.png)
+![ Agent Orchestrator ](./images/aocj6.png)
 
 Klik **Overzicht**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj7.png)
+![ Agent Orchestrator ](./images/aocj7.png)
 
 Werk de reisnaam bij met uw LDAP om deze uniek te maken. Klik **sparen**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj8.png)
+![ Agent Orchestrator ](./images/aocj8.png)
 
 Uw reis is nu gecreeerd in ontwerp wijze.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj9.png)
+![ Agent Orchestrator ](./images/aocj9.png)
 
 ## 1.1.1.10 Beheer van geschillen op reis
 
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
-
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
-
->[!NOTE]
->
->Gelieve te verifiëren dat de context van de medewerker aan de documentatiebron **Journey Optimizer** richt, versnelt zandbak **&#x200B;**&#x200B;en gegevensmening **versnelt 2026 B2C**
 
 ```javascript
 How can I manage journey conflicts?
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj80.png)
+![ Agent Orchestrator ](./images/aocj80.png)
 
 Controleer de gegevens.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj81.png)
+![ Agent Orchestrator ](./images/aocj81.png)
 
 De rol neer en selecteert de **Bronnen** om te vinden dat de informatie uit Experience League wordt voortgebracht.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj82.png)
+![ Agent Orchestrator ](./images/aocj82.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
 ```javascript
-List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
+List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj70.png)
+Dan selecteer manueel de reis **CitiSignal - de Max Bevordering van de Lancering van de Vezel** van de lijst.
+
+![ Agent Orchestrator ](./images/aocj70.png)
+
+Dan moet je dit zien. Klik **verzenden**.
+
+![ Agent Orchestrator ](./images/aocj70a.png)
 
 Controleer de gegevens van het reisconflict.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj71.png)
+![ Agent Orchestrator ](./images/aocj71.png)
 
 Schuif omlaag om meer details over het transportconflict te vinden.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aocj72.png)
+![ Agent Orchestrator ](./images/aocj72.png)
 
 ## 1.1.1.11 Experimenten
 
-Ga naar [&#x200B; https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat &#x200B;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dan moet je dit zien. Zorg ervoor u in de org **Internationale Experience Platform** bent.
-
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
-
->[!NOTE]
->
->Gelieve te verifiëren dat de context van de medewerker aan zandbak **richt versnelt** en gegevensmening **versnelt 2026 B2C**
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aoea0.png)
+![ Agent Orchestrator ](./images/aoea0.png)
 
 U zou dan dit moeten zien:
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aoea1.png)
+![ Agent Orchestrator ](./images/aoea1.png)
 
-Klik de suggestie om de omzettingspercentages van elke behandeling te vergelijken en dan te klikken **verzendt**.
+Blader omlaag en klik op een van de suggesties. Klik **verzenden**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aoea2.png)
+>[!NOTE]
+>
+>De suggesties zijn dynamisch zodat zou u moeten verwachten om verschillende suggesties te zien telkens als een reactie wordt geproduceerd. Uw suggesties zullen waarschijnlijk anders zijn dan de suggesties die in deze schermafbeelding worden getoond.
 
-Vervolgens ziet u een gedetailleerde vergelijking zoals deze:
+![ Agent Orchestrator ](./images/aoea2.png)
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/aoea4.png)
+Dan zou u een gedetailleerd antwoord moeten zien over de suggestie die is gekozen.
 
-Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
+![ Agent Orchestrator ](./images/aoea4.png)
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+Je hebt dit lab voltooid.
+
+Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
