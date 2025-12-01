@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 1.2.1 Aan de slag met Aan de slag met Agent Collaboration
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

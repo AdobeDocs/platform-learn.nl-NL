@@ -17,6 +17,6 @@ ht-degree: 2%
 In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
 
 
-Ga terug naar [ Brand Concierge ](./brandconcierge.md){target="_blank"}
+Ga terug naar [&#x200B; Brand Concierge &#x200B;](./brandconcierge.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 1.1.1 Aan de slag met kunstmatige intelligentie
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
