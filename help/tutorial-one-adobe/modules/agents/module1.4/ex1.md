@@ -65,21 +65,21 @@ Tijdens het configureren van Brand Concierge zijn de twee belangrijkste elemente
 
 Volg de onderstaande stappen om uw eigen Brand Concierge-exemplaar te maken.
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Open **Brand Concierge**.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Open **Brand Concierge**.
 
-![ Brand Concierge ](./images/bc1.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc1.png)
 
 Dan moet je dit zien. Klik het **zandbakselectie** menu.
 
-![ Brand Concierge ](./images/bc2.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc2.png)
 
 Kies de sandbox die aan u is toegewezen. Die sandbox moet de naam `--aepUserLdap--` hebben.
 
-![ Brand Concierge ](./images/bc3.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc3.png)
 
 Klik **krijgen Begonnen**.
 
-![ Brand Concierge ](./images/bc4.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc4.png)
 
 Gebruik voor de naam van uw Brand Concierge-instantie: `--aepUserLdap-- - CitiSignal Brand Concierge` .
 
@@ -91,43 +91,43 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 Klik **creëren**.
 
-![ Brand Concierge ](./images/bc5.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc5.png)
 
 Dan moet je dit zien. Klik **krijgen Begonnen** om een kennisbron toe te voegen.
 
-![ Brand Concierge ](./images/bc6.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc6.png)
 
 Selecteer **de Verbindingen van de Website** en klik **verdergaan**.
 
-![ Brand Concierge ](./images/bc7.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc7.png)
 
 Dan moet je dit zien. Voer `CitiSignal website` in als naam voor uw kennisbron.
 
-U moet nu een CSV-bestand uploaden dat de koppelingen van uw website bevat. De download [ CitiSignal websiteverbindingen CSV- dossier ](./assets/citisignal-website-links.csv) aan uw Desktop.
+U moet nu een CSV-bestand uploaden dat de koppelingen van uw website bevat. De download [&#x200B; CitiSignal websiteverbindingen CSV- dossier &#x200B;](./assets/citisignal-website-links.csv) aan uw Desktop.
 
 Klik **doorbladeren Dossiers**.
 
-![ Brand Concierge ](./images/bc8.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc8.png)
 
 Open het dossier **burgersignaal-website-links.csv** en werk de verbindingen bij om aan uw eigen website te richten CitiSignal.
 
-![ Brand Concierge ](./images/bc8a.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc8a.png)
 
 Selecteer het dossier **burgersignaal-website-links.csv** dat u enkel en alleen downloadde en uitgeeft. Klik **Open**.
 
-![ Brand Concierge ](./images/bc9.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc9.png)
 
 Uw bestand wordt nu toegevoegd aan deze kennisbron. Klik **toevoegen**.
 
-![ Brand Concierge ](./images/bc10.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc10.png)
 
 Dan moet je dit zien. Klik **neem me** mee naar huis.
 
-![ Brand Concierge ](./images/bc11.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc11.png)
 
 Dan moet je dit zien. Klik **krijgen Begonnen** op het **advies van het Product voor consumenten** kaart.
 
-![ Brand Concierge ](./images/bc12.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc12.png)
 
 
 
@@ -145,27 +145,27 @@ Competitor pricing, competitor products
 
 Uw updates worden automatisch opgeslagen. Klik de **pijl** om terug naar het vorige scherm te gaan.
 
-![ Brand Concierge ](./images/bc13.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc13.png)
 
 Dan moet je dit zien. Klik **krijgen Begonnen** om uw merkuitdrukking aan te passen.
 
-![ Brand Concierge ](./images/bc14.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc14.png)
 
 U kunt uw eigen keuzen op de **Uitdrukking van het Merk** pagina maken.
 
-![ Brand Concierge ](./images/bc15.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc15.png)
 
 De rol neer en selecteert om het even welk plaatsen voor de lengte van de gebied **Reactie**.
 
 Uw updates worden automatisch opgeslagen.
 
-![ Brand Concierge ](./images/bc16.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc16.png)
 
 De rol omhoog en klikt de **pijl** om terug naar het vorige scherm te gaan.
 
-![ Brand Concierge ](./images/bc17.png)
+![&#x200B; Brand Concierge &#x200B;](./images/bc17.png)
 
 
-Ga terug naar [ Brand Concierge ](./brandconcierge.md){target="_blank"}
+Ga terug naar [&#x200B; Brand Concierge &#x200B;](./brandconcierge.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
