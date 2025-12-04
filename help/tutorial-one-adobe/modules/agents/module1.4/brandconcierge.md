@@ -21,7 +21,7 @@ Leer hoe u Adobe Experience Platform Agents en Brand Concierge kunt gebruiken om
 ## Vereisten
 
 - Toegang tot Adobe Journey Optimizer en Customer Journey Analytics
-- Het vertrouwd met [&#x200B; concepten van Brand Concierge &#x200B;](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
+- Het vertrouwd met [&#x200B; concepten van Brand Concierge &#x200B;](https://experienceleague.adobe.com/nl/docs/brand-concierge/content/home)
 - Toegang tot demonstratiegegevens van CitiSignal: Aankopen, Bestellingen, Soorten publiek, Reizen
 
 ## Uitoefening
