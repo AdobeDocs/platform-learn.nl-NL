@@ -3,9 +3,9 @@ title: Brand Concierge op uw website implementeren
 description: Brand Concierge op uw website implementeren
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >U hebt toegang nodig tot een werkende AEM Assets CS Author-omgeving en een AEM CS/EDS-website om deze oefening te kunnen voltooien.
 >
->Als u zulk een milieu niet hebt, ga naar [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
+>Als u zulk een milieu niet hebt, ga naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >
@@ -37,23 +37,23 @@ U moet nu de volgende dingen in deze orde vormen:
 
 Als u het nieuwe aangepaste blok wilt maken, navigeert u naar de GitHub-opslagplaats die aan uw website is gekoppeld.
 
-![&#x200B; Blok &#x200B;](./images/block1.png)
+![ Blok ](./images/block1.png)
 
 #### component-definition.json
 
 De rol neer tot u het dossier **component-definition.json** ziet en het opent
 
-![&#x200B; Blok &#x200B;](./images/block8.png)
+![ Blok ](./images/block8.png)
 
-Klik het **pictogram 0&rbrace; pencl &lbrace;beginnen het dossier uit te geven.**
+Klik het **pictogram 0} pencl {beginnen het dossier uit te geven.**
 
-![&#x200B; Blok &#x200B;](./images/block8a.png)
+![ Blok ](./images/block8a.png)
 
 De rol neer tot u de **Blokken** ziet. Plaats uw curseur onder de sluitende steun van de component **Kaarten**
 
-![&#x200B; Blok &#x200B;](./images/block9.png)
+![ Blok ](./images/block9.png)
 
-Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
+Plak deze code en voer een komma **** na het codeblok in:
 
 ```json
 {
@@ -75,23 +75,23 @@ Plak deze code en voer een komma **&#x200B;**&#x200B;na het codeblok in:
 
 Klik **Veranderingen vastleggen...**.
 
-![&#x200B; Blok &#x200B;](./images/block10.png)
+![ Blok ](./images/block10.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Blok &#x200B;](./images/block10a.png)
+![ Blok ](./images/block10a.png)
 
 #### component-models.json
 
 De rol neer tot u het dossier **component-models.json** ziet en klikt het **potlood** pictogram beginnen het dossier uit te geven.
 
-![&#x200B; Blok &#x200B;](./images/block11.png)
+![ Blok ](./images/block11.png)
 
 Schuif omlaag totdat u het laatste item ziet. Plaats uw curseur naast de sluitende steun van de laatste component.
 
-![&#x200B; Blok &#x200B;](./images/block12.png)
+![ Blok ](./images/block12.png)
 
-Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel en plak deze code:
+Voer een komma **** in en druk op Enter en op de volgende regel en plak deze code:
 
 ```json
 {
@@ -102,31 +102,31 @@ Voer een komma **&#x200B;**&#x200B;in en druk op Enter en op de volgende regel e
 
 Klik **Veranderingen vastleggen...**.
 
-![&#x200B; Blok &#x200B;](./images/block13.png)
+![ Blok ](./images/block13.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Blok &#x200B;](./images/block13a.png)
+![ Blok ](./images/block13a.png)
 
 #### component-filters.json
 
 De rol neer tot u het dossier **component-filters.json** ziet en klikt het **potlood** pictogram beginnen het dossier uit te geven.
 
-![&#x200B; Blok &#x200B;](./images/block14.png)
+![ Blok ](./images/block14.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Blok &#x200B;](./images/block14a.png)
+![ Blok ](./images/block14a.png)
 
 Onder **sectie**, ga een komma `,` in en kleef identiteitskaart van uw component `"brandconcierge"` na de huidige laatste lijn.
 
 Klik **Veranderingen vastleggen...**.
 
-![&#x200B; Blok &#x200B;](./images/block15.png)
+![ Blok ](./images/block15.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Blok &#x200B;](./images/block15a.png)
+![ Blok ](./images/block15a.png)
 
 #### brandconcierge.css
 
@@ -134,15 +134,15 @@ Wanneer u een blok maakt, kunt u het beste een bestand voor de opmaak van het bl
 
 Ga naar de **blokken** omslag. Dan, klik **voeg dossier** toe en selecteer **creeer nieuw dossier**.
 
-![&#x200B; Blok &#x200B;](./images/css1.png)
+![ Blok ](./images/css1.png)
 
 Typ `brandconcierge/brandconcierge.css` in het tekstvak. Het bestand kan voorlopig leeg blijven. Klik **Veranderingen vastleggen...**.
 
-![&#x200B; Blok &#x200B;](./images/css2.png)
+![ Blok ](./images/css2.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Blok &#x200B;](./images/css3.png)
+![ Blok ](./images/css3.png)
 
 #### brandconcierge.js
 
@@ -150,7 +150,7 @@ Wanneer het creëren van een blok, is het beste praktijken om een dossier voor j
 
 Klik **toevoegen dossier** en selecteren **nieuw dossier** creëren.
 
-![&#x200B; Blok &#x200B;](./images/js1.png)
+![ Blok ](./images/js1.png)
 
 Typ `brandconcierge.js` in het tekstvak. Het bestand kan voorlopig leeg blijven. Klik **Veranderingen vastleggen...**.
 
@@ -160,41 +160,43 @@ export default function decorate(block) {
 }
 ```
 
-![&#x200B; Blok &#x200B;](./images/js2.png)
+![ Blok ](./images/js2.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Blok &#x200B;](./images/js3.png)
+![ Blok ](./images/js3.png)
 
 ### Nieuwe pagina maken en nieuw aangepast blok koppelen
 
-Ga naar [&#x200B; https://my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. Klik uw **Programma** om het te openen.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs6.png)
+![ AEMCS ](./images/aemcs6.png)
 
 Daarna, klik de 3 punten **..** op het **milieu&#39;s** lusje en klik **Details van de Mening**.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs9.png)
+![ AEMCS ](./images/aemcs9.png)
 
 Dan zie je de omgevingsdetails. Klik URL van uw **milieu van de Auteur**.
 
 >[!NOTE]
 >
->Het is mogelijk dat uw omgeving gehiberd is. Als dat het geval is, zult u uw milieu eerst moeten ontberen.
+>Het is mogelijk dat uw omgeving gehiberd is. Als dat het geval is, zult u uw milieu eerst moeten ontberen. In de onderstaande video vindt u instructies over het dehiberneren van de historie.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs10.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
+
+![ AEMCS ](./images/aemcs10.png)
 
 Je moet dan de AEM Author-omgeving zien. Ga naar **Plaatsen**.
 
-![&#x200B; AEMCS &#x200B;](./images/block21.png)
+![ AEMCS ](./images/block21.png)
 
 Ga naar **CitiSignal**. Klik **creëren** en selecteren **Pagina**.
 
-![&#x200B; AEMCS &#x200B;](./images/block23.png)
+![ AEMCS ](./images/block23.png)
 
 Selecteer **Pagina** en klik **daarna**.
 
-![&#x200B; AEMCS &#x200B;](./images/block24.png)
+![ AEMCS ](./images/block24.png)
 
 Voer de volgende waarden in:
 
@@ -204,33 +206,33 @@ Voer de volgende waarden in:
 
 Klik **creëren**.
 
-![&#x200B; AEMCS &#x200B;](./images/block25.png)
+![ AEMCS ](./images/block25.png)
 
 Selecteer **Open**.
 
-![&#x200B; AEMCS &#x200B;](./images/block22.png)
+![ AEMCS ](./images/block22.png)
 
 Dan moet je dit zien.
 
-![&#x200B; AEMCS &#x200B;](./images/block26.png)
+![ AEMCS ](./images/block26.png)
 
 Klik op het lege gebied om de **sectie** component te selecteren. Klik vervolgens op de plusknop **+** in het rechtermenu.
 
-![&#x200B; AEMCS &#x200B;](./images/block27.png)
+![ AEMCS ](./images/block27.png)
 
 Vervolgens wordt het aangepaste blok weergegeven in de lijst met beschikbare blokken. Klik om het te selecteren.
 
-![&#x200B; AEMCS &#x200B;](./images/block28.png)
+![ AEMCS ](./images/block28.png)
 
 Vervolgens wordt er een leeg blok aan deze pagina toegevoegd. Dit blok wordt dynamisch geladen met de JavaScript-bibliotheken die u in de volgende stap toevoegt.
 
 Klik **publiceren**.
 
-![&#x200B; AEMCS &#x200B;](./images/block29.png)
+![ AEMCS ](./images/block29.png)
 
 Klik **publiceren** opnieuw.
 
-![&#x200B; AEMCS &#x200B;](./images/block30.png)
+![ AEMCS ](./images/block30.png)
 
 De nieuwe pagina wordt nu gepubliceerd en kan nu in de volgende stap worden toegevoegd aan de navigatiekop.
 
@@ -238,31 +240,31 @@ De nieuwe pagina wordt nu gepubliceerd en kan nu in de volgende stap worden toeg
 
 In uw overzicht van AEM Sites, ga **CitiSignal** en controleer checkbox voor het dossier **Kopbal/nav**. Klik **uitgeven**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav0.png)
+![ AEMCS ](./images/nav0.png)
 
-Selecteer het **gebied van de Tekst** in het voorproefscherm en klik dan het **3&rbrace; gebied van de Tekst &lbrace;op de rechterkant van het scherm om het uit te geven.**
+Selecteer het **gebied van de Tekst** in het voorproefscherm en klik dan het **3} gebied van de Tekst {op de rechterkant van het scherm om het uit te geven.**
 
-![&#x200B; AEMCS &#x200B;](./images/nav0a.png)
+![ AEMCS ](./images/nav0a.png)
 
 Maak een nieuwe menuoptie in het navigatiemenu met de tekst `Brand Concierge` . Dan, selecteer de tekst **Brand Concierge** en klik het **verbindings** pictogram.
 
-![&#x200B; AEMCS &#x200B;](./images/nav1.png)
+![ AEMCS ](./images/nav1.png)
 
 Ga dit voor het gebied **Weg of URL** `/content/CitiSignal/brandconcierge.html` in en ga `Brand Concierge` voor het gebied **Titel** in. Klik **sparen**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav3.png)
+![ AEMCS ](./images/nav3.png)
 
 Dan moet je dit hebben. Klik **Gedaan**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4.png)
+![ AEMCS ](./images/nav4.png)
 
 Dan moet je dit hebben. Klik **publiceren**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4a.png)
+![ AEMCS ](./images/nav4a.png)
 
 Klik **publiceren** opnieuw.
 
-![&#x200B; AEMCS &#x200B;](./images/nav5.png)
+![ AEMCS ](./images/nav5.png)
 
 De nieuwe pagina wordt nu toegevoegd aan het menu.
 
@@ -280,27 +282,27 @@ U hebt de volgende bibliotheken nodig om Brand Concierge te implementeren op uw 
 
 Download alle 3 bestanden naar uw bureaublad.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem0.png)
+![ Brand Concierge ](./images/aem0.png)
 
 Ga naar het GitHub-project van uw AEM CS/EDS-website. Ga naar **manuscripten**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem1.png)
+![ Brand Concierge ](./images/aem1.png)
 
 Klik **toevoegen dossier** en selecteer dan **dossiers** uploaden.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem3.png)
+![ Brand Concierge ](./images/aem3.png)
 
 Klik **kiezen uw dossiers**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem3a.png)
+![ Brand Concierge ](./images/aem3a.png)
 
 Selecteer alle 3 dossiers **styleConfigurations.js, alloy.js en brandconciergemain.js** van uw Desktop en klik **Open**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem4.png)
+![ Brand Concierge ](./images/aem4.png)
 
 Klik **veranderingen** vastleggen.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem5.png)
+![ Brand Concierge ](./images/aem5.png)
 
 ### head.html bijwerken
 
@@ -310,19 +312,19 @@ Bovendien, moet u ook instructies in het {**dossier verstrekken 0} head.html om 
 
 Om dat te doen, ga naar het project GitHub van uw website van AEM CS/EDS door **Code** te klikken.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem6.png)
+![ Brand Concierge ](./images/aem6.png)
 
 Schuif een beetje omlaag. Open het dossier **head.html**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem7.png)
+![ Brand Concierge ](./images/aem7.png)
 
 Klik het **potlood** pictogram om dit dossier uit te geven.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem8.png)
+![ Brand Concierge ](./images/aem8.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem9.png)
+![ Brand Concierge ](./images/aem9.png)
 
 Schuif omlaag naar regel 43 en plak de volgende tekst:
 
@@ -383,15 +385,15 @@ window["alloy"]("sendEvent", {
 
 Klik **Verandering vastleggen...**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem10.png)
+![ Brand Concierge ](./images/aem10.png)
 
 Klik **Verandering** vastleggen.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem11.png)
+![ Brand Concierge ](./images/aem11.png)
 
 U hebt nu de vereiste code bijgewerkt om de bibliotheken op uw website te laden.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem12.png)
+![ Brand Concierge ](./images/aem12.png)
 
 ## 1.4.2.3 De configuratie testen
 
@@ -404,12 +406,12 @@ Het kan enige tijd duren voordat alle activa correct zijn weergegeven, aangezien
 
 Dan moet je dit zien. Klik **Brand Concierge**.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem13.png)
+![ Brand Concierge ](./images/aem13.png)
 
 Je moet dan deze Brand Concierge zien waar je je vraag kunt invoeren.
 
-![&#x200B; Brand Concierge &#x200B;](./images/aem14.png)
+![ Brand Concierge ](./images/aem14.png)
 
-Ga terug naar [&#x200B; Brand Concierge &#x200B;](./brandconcierge.md){target="_blank"}
+Ga terug naar [ Brand Concierge ](./brandconcierge.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -18,26 +18,32 @@ Brand Concierge is een door AI aangedreven digitale metgezel die de manier veran
 
 Leer hoe u Adobe Experience Platform Agents en Brand Concierge kunt gebruiken om:
 
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478139?quality=12&learn=on)
+
 ## Vereisten
 
 - Toegang tot Adobe Journey Optimizer en Customer Journey Analytics
-- Het vertrouwd met [&#x200B; concepten van Brand Concierge &#x200B;](https://experienceleague.adobe.com/nl/docs/brand-concierge/content/home)
+- Het vertrouwd met [ concepten van Brand Concierge ](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Toegang tot demonstratiegegevens van CitiSignal: Aankopen, Bestellingen, Soorten publiek, Reizen
 
 ## Uitoefening
 
-[&#x200B; 1.4.1 die met Brand Concierge &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.4.1 die met Brand Concierge ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u Brand Concierge-mogelijkheden onderzoeken.
 
-[&#x200B; 1.4.2 voert Brand Concierge op uw website uit &#x200B;](./ex1.md){target="_blank"}
+[ 1.4.2 voert Brand Concierge op uw website uit ](./ex1.md){target="_blank"}
 
 Hierbij implementeert u uw Brand Concierge-exemplaar op uw website.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
