@@ -28,23 +28,23 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 Ga naar https://chatgpt.com/ en meld u aan met uw accountgegevens. Nadat u zich hebt aangemeld, kunt u dit beter zien. Klik op uw gebruikersnaam.
 
-![ ChatGPT ](./images/chatgpt1.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt1.png)
 
 Selecteer **Montages**.
 
-![ ChatGPT ](./images/chatgpt2.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt2.png)
 
 Ga naar **Apps** en selecteer dan **Geavanceerde montages**.
 
-![ ChatGPT ](./images/chatgpt3.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt3.png)
 
 Zet **wijze van de Ontwikkelaar** aan en klik dan **terug**.
 
-![ ChatGPT ](./images/chatgpt4.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt4.png)
 
 Klik **Create app**.
 
-![ ChatGPT ](./images/chatgpt5.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt5.png)
 
 Vul de velden als volgt in:
 
@@ -56,25 +56,25 @@ Controleer checkbox voor **ik begrijp en wil** verdergaan.
 
 Klik **creëren**.
 
-![ ChatGPT ](./images/chatgpt6.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt6.png)
 
 ChatGPT probeert nu verbinding te maken met uw Adobe-account. Selecteer **Toestaan Toegang** en dan zult u login met uw rekening van Adobe moeten.
 
-![ ChatGPT ](./images/chatgpt7.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt7.png)
 
 Zodra u zich met succes hebt aangemeld, zou u moeten zien dat uw Adobe Marketing Agent nu met succes wordt verbonden.
 
-![ ChatGPT ](./images/chatgpt8.png)
+![&#x200B; ChatGPT &#x200B;](./images/chatgpt8.png)
 
 ## 1.1.2.2 Context instellen in Adobe Marketing Agent
 
 Sluit dit venster.
 
-![ Agent Orchestrator ](./images/chatgpt9.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt9.png)
 
 Dan moet je dit zien. Klik **+** pictogram, ga **Meer** en selecteer dan **Adobe Marketing Agent**.
 
-![ Agent Orchestrator ](./images/chatgpt10.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt10.png)
 
 Voordat u via ChatGPT verder kunt gaan met Adobe Marketing Agent, moet de context worden ingesteld.
 
@@ -94,7 +94,7 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 list sandboxes
 ```
 
-![ Agent Orchestrator ](./images/chatgpt11.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt11.png)
 
 Vervolgens wordt een vergelijkbare lijst met beschikbare sandboxen weergegeven. De huidige zandbak in dit voorbeeld wordt geplaatst aan **prod**.
 
@@ -104,11 +104,11 @@ Om dat aan zandbak te veranderen die moet worden gebruikt, ga de volgende **Heri
 switch to sandbox accelerate
 ```
 
-![ Agent Orchestrator ](./images/chatgpt12.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt12.png)
 
 Dan moet je dit zien. Klik **Vastgestelde Context**.
 
-![ Agent Orchestrator ](./images/chatgpt13.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt13.png)
 
 Dan moet je dit zien. Ga de volgende **Herinnering** in en klik **verzenden** knoop om de gegevensmening te plaatsen om te gebruiken.
 
@@ -116,7 +116,7 @@ Dan moet je dit zien. Ga de volgende **Herinnering** in en klik **verzenden** kn
 list dataviews
 ```
 
-![ Agent Orchestrator ](./images/chatgpt14.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt14.png)
 
 Vervolgens wordt een vergelijkbare lijst met beschikbare sandboxen weergegeven. De huidige zandbak in dit voorbeeld wordt geplaatst aan **prod**.
 
@@ -126,15 +126,15 @@ Om dat aan zandbak te veranderen die moet worden gebruikt, ga de volgende **Heri
 switch to Accelerate 2026 B2C
 ```
 
-![ Agent Orchestrator ](./images/chatgpt15.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt15.png)
 
 Dan moet je dit zien. Klik **Vastgestelde Context**.
 
-![ Agent Orchestrator ](./images/chatgpt16.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt16.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/chatgpt17.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt17.png)
 
 Uw context heeft nu de juiste set, zodat u volgende specifieke aanwijzingen kunt verzenden.
 
@@ -150,11 +150,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![ Agent Orchestrator ](./images/chatgpt18.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt18.png)
 
 U zou dan dit moeten zien:
 
-![ Agent Orchestrator ](./images/chatgpt19.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt19.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -162,11 +162,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
-![ Agent Orchestrator ](./images/chatgpt20.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt20.png)
 
 Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
-![ Agent Orchestrator ](./images/chatgpt21.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt21.png)
 
 ## 1.1.2.4 Orders correleren met voorkeuren voor inhoud
 
@@ -182,11 +182,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which field is used to store the preferred genre in the sandbox accelerate?
 ```
 
-![ Agent Orchestrator ](./images/chatgpt22.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt22.png)
 
 Vervolgens ziet u dit. Het veld dat voor genre wordt gebruikt, is **_experiencePlatform.individualCharacteristics.preferences.preferredGenre** .
 
-![ Agent Orchestrator ](./images/chatgpt23.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt23.png)
 
 Met deze informatie kunt u beginnen met het uitboren in de aankoopgegevens.
 
@@ -196,19 +196,19 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me ordersYTD by preferredGenre for the last 2 months
 ```
 
-![ Agent Orchestrator ](./images/chatgpt24.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt24.png)
 
 Dan moet je dit zien. Klik **Onderzoek**.
 
-![ Agent Orchestrator ](./images/chatgpt25.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt25.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/chatgpt26.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt26.png)
 
 Schuif omlaag voor meer informatie.
 
-![ Agent Orchestrator ](./images/chatgpt27.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt27.png)
 
 ## 1.1.2.5 Bestaande vezelreizen identificeren
 
@@ -222,15 +222,15 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 What journeys exist? 
 ```
 
-![ Agent Orchestrator ](./images/chatgpt28.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt28.png)
 
 Dan moet je dit zien. Klik **Onderzoek**.
 
-![ Agent Orchestrator ](./images/chatgpt29.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt29.png)
 
 Daarna moet u een lijst met reizen zien.
 
-![ Agent Orchestrator ](./images/chatgpt30.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt30.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -238,19 +238,19 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![ Agent Orchestrator ](./images/chatgpt31.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt31.png)
 
 Dan moet je dit zien. Klik **Onderzoek**.
 
-![ Agent Orchestrator ](./images/chatgpt32.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt32.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/chatgpt33.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt33.png)
 
 Schuif omlaag voor meer details.
 
-![ Agent Orchestrator ](./images/chatgpt34.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt34.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -258,11 +258,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
-![ Agent Orchestrator ](./images/chatgpt35.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt35.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/chatgpt36.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt36.png)
 
 ## 1.1.2.6 De reisprestaties valideren via een falloutanalyse
 
@@ -276,22 +276,22 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![ Agent Orchestrator ](./images/chatgpt37.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt37.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/chatgpt38.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt38.png)
 
 Schuif een beetje omlaag. U kunt de lijst nu herzien door elke knoop en zijn respectieve ingaat aantallen, valutanummers, en valutarief te inspecteren.
 
-![ Agent Orchestrator ](./images/chatgpt39.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt39.png)
 
 Schuif een beetje meer omlaag om waarnemingen en aanbevelingen te zien.
 
-![ Agent Orchestrator ](./images/chatgpt40.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/chatgpt40.png)
 
 Je hebt dit lab voltooid.
 
-Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
