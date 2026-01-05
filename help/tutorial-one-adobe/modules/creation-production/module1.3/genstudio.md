@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 815bea1378de139f8d19b6f46669f4d53b5775b4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -38,38 +38,34 @@ In deze module leert u hoe u alle bovenstaande stappen zelf kunt uitvoeren en vo
 
 In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
 
->[!NOTE]
->
->Deze video heeft nog geen audio. Zodra audio beschikbaar is, zal een nieuwe versie worden geupload.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
 ## Uitoefening
 
-[&#x200B; 1.3.1 Configuratie: Kantallen &#x200B;](./ex1.md){target="_blank"}
+[ 1.3.1 Configuratie: Kantallen ](./ex1.md){target="_blank"}
 
 In deze oefening, zult u een merk CitiSignal in GenStudio for Performance Marketing vormen.
 
-[&#x200B; 1.3.2 Configuratie: Personas, Producten en Malplaatjes &#x200B;](./ex2.md){target="_blank"}
+[ 1.3.2 Configuratie: Personas, Producten en Malplaatjes ](./ex2.md){target="_blank"}
 
 In deze oefening, zult u persona&#39;s, producten en malplaatjes in GenStudio for Performance Marketing vormen.
 
-[&#x200B; 1.3.3 de Activering van de Campagne aan Meta &#x200B;](./ex3.md){target="_blank"}
+[ 1.3.3 de Activering van de Campagne aan Meta ](./ex3.md){target="_blank"}
 
 In deze oefening, zult u een Campagne creëren. U configureert ook een verbinding met Meta en u doorloopt alle stappen die nodig zijn om een advertentie te kunnen maken, een advertentie goed te keuren met Adobe Workfront en een advertentie naar Meta te kunnen publiceren.
 
-[&#x200B; 1.3.4 creeer E-mailervaring voor AJO &#x200B;](./ex4.md){target="_blank"}
+[ 1.3.4 creeer E-mailervaring voor AJO ](./ex4.md){target="_blank"}
 
 In deze exercitie, zult u een e-mailervaring gebruikend een malplaatje in GenStudio for Performance Marketing creëren, en u zult die ervaring met Adobe Journey Optimizer delen om een e-mailcampagne te verzenden.
 
-[&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
+[ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
