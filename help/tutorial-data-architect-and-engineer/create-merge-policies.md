@@ -140,7 +140,7 @@ Een belangrijke reden voor samenvoegbeleid is gegevensbeheer. Bijvoorbeeld, zeg 
 
 ## Aanvullende bronnen
 
-* [&#x200B; documentatie van het Beleid van de Fusie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [&#x200B; documentatie van het Beleid van de Fusie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=nl-NL)
 * [&#x200B; het Beleid van de Fusie API (deel van Realtime API van het Profiel van de Klant) verwijzing &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Nu gaan op het [&#x200B; kader van het gegevensbeheer &#x200B;](apply-data-governance-framework.md).
