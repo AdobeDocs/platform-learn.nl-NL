@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Adobe-extensie voor Mailchimp
 
-Overzichtsvideo van de Adobe-gebeurtenis die extensie voor Mailchimp doorstuurt. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken Mailchimp die uitbreidingsdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html) door:sturen.
+Overzichtsvideo van de Adobe-gebeurtenis die extensie voor Mailchimp doorstuurt. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken Mailchimp die uitbreidingsdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=nl-NL) door:sturen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)

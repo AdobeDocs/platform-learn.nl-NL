@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Creeer een gebeurtenis-door:sturen regel
 
-Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) door:sturen.
+Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
 
 >[!NOTE]
 >

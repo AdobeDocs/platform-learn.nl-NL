@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Adobe Analytics toevoegen
 
-In deze les, zult u de [&#x200B; uitbreiding van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) uitvoeren en zult regels creëren om gegevens naar Adobe Analytics te verzenden.
+In deze les, zult u de [&#x200B; uitbreiding van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitvoeren en zult regels creëren om gegevens naar Adobe Analytics te verzenden.
 
-[&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics.html) is een industrie-leidende oplossing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
+[&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics.html?lang=nl-NL) is een industrie-leidende oplossing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
 > * Platform Launch (Client Side) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
 
 ## Leerdoelen
 
@@ -41,7 +41,7 @@ Er zijn veel dingen die voor Analytics in markeringen zouden kunnen worden uitge
 
 U zou de lessen in [&#x200B; reeds moeten hebben voltooid vormen markeringen &#x200B;](create-a-property.md) en [&#x200B; voeg de Dienst van de Identiteit toe &#x200B;](id-service.md).
 
-Daarnaast hebt u ten minste één rapportsuite-id en uw traceringsserver nodig. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, te creëren gelieve. Als u onzeker bent hoe te om dat te doen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). U kunt uw traceringsserver ophalen van uw huidige implementatie, Adobe Consultant of Customer Care-medewerker.
+Daarnaast hebt u ten minste één rapportsuite-id en uw traceringsserver nodig. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, te creëren gelieve. Als u onzeker bent hoe te om dat te doen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). U kunt uw traceringsserver ophalen van uw huidige implementatie, Adobe Consultant of Customer Care-medewerker.
 
 ## De extensie Analytics toevoegen
 
@@ -196,7 +196,7 @@ Vervolgens verzamelt u de product-id van de huidige productdetailpagina met een 
 
 ### De extensie Adobe Analytics-productreeks toevoegen
 
-Als u reeds vertrouwd met de implementaties van Adobe Analytics bent, bent u waarschijnlijk vertrouwd met de [&#x200B; productvariabele &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). De productvariabele heeft een zeer specifieke syntaxis en wordt gebruikt lichtjes verschillende manieren afhankelijk van de context. Om de populatie van de productvariabele in markeringen gemakkelijker te maken, zijn drie extra uitbreidingen reeds gecreeerd in de markt van de marktextensie! In deze sectie voegt u een extensie toe die door Adobe Consulting is gemaakt voor gebruik op de pagina Productdetails.
+Als u reeds vertrouwd met de implementaties van Adobe Analytics bent, bent u waarschijnlijk vertrouwd met de [&#x200B; productvariabele &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=nl-NL). De productvariabele heeft een zeer specifieke syntaxis en wordt gebruikt lichtjes verschillende manieren afhankelijk van de context. Om de populatie van de productvariabele in markeringen gemakkelijker te maken, zijn drie extra uitbreidingen reeds gecreeerd in de markt van de marktextensie! In deze sectie voegt u een extensie toe die door Adobe Consulting is gemaakt voor gebruik op de pagina Productdetails.
 
 **om toe te voegen voegt `Adobe Analytics Product String` uitbreiding** toe
 
@@ -426,7 +426,7 @@ U gaat eigenlijk twee stop-ins in deze code roepen, maar één van hen wordt geb
 
 Het doel van deze plug-in is om te voorkomen dat waarden onjuist worden gedupliceerd in de code wanneer een bezoeker een pagina vernieuwt of de knop Vorige van de browser gebruikt om terug te gaan naar een pagina waarop een waarde is ingesteld. In deze les gebruikt u deze methode om te voorkomen dat de gebeurtenis `clickthrough` wordt gedupliceerd.
 
-De code voor deze stop-binnen is beschikbaar in de [&#x200B; Documentatie van de Analyse &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), maar het is inbegrepen hier voor uw gemak van exemplaar/deeg.
+De code voor deze stop-binnen is beschikbaar in de [&#x200B; Documentatie van de Analyse &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=nl-NL), maar het is inbegrepen hier voor uw gemak van exemplaar/deeg.
 
 1. De volgende code kopiëren
 

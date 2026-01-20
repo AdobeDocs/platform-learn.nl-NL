@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Een gegevensstroom instellen voor het doorsturen van gebeurtenissen
 
-Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen. Voor meer informatie, gelieve te bezoeken [&#x200B; de gebeurtenis die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream) door:sturen
+Leer hoe te opstelling een gegevensstroom voor gebeurtenis door:sturen. Voor meer informatie, gelieve te bezoeken [&#x200B; de gebeurtenis die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=nl-NL#create-a-datastream) door:sturen
 
 
 >[!NOTE]

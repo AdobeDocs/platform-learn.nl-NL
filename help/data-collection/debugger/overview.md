@@ -24,4 +24,4 @@ Leer hoe de extensie van Adobe Experience Platform Debugger [&#x200B; Chrome &#x
 
 * [&#x200B; Download de uitbreiding van Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [&#x200B; Debugger van Experience Platform documentatie &#x200B;](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
-* [&#x200B; zuivert een markeringsimplementatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [&#x200B; zuivert een markeringsimplementatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=nl-NL)

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gegevens opnemen via de Adobe Audience Manager-gegevensconnector
 
-In deze integratievideo leert u hoe u de Audience Manager-gegevensconnector kunt gebruiken om kenmerken en segmenten van AAM naar het platform te brengen en deze te combineren met andere rijke gegevens. Voor meer informatie, te zien gelieve de [&#x200B; documentatie van de de bronschakelaar van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+In deze integratievideo leert u hoe u de Audience Manager-gegevensconnector kunt gebruiken om kenmerken en segmenten van AAM naar het platform te brengen en deze te combineren met andere rijke gegevens. Voor meer informatie, te zien gelieve de [&#x200B; documentatie van de de bronschakelaar van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=nl-NL).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

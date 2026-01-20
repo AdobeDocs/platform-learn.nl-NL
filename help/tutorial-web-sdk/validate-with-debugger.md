@@ -142,7 +142,7 @@ Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webon
 
 Zoals u in [&#x200B; leerde vormen een datastream &#x200B;](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens doet Platform Edge Network aanvullende verzoeken aan de serverzijde aan de overeenkomstige services die in uw datastream zijn ingeschakeld. U kunt de verzoeken aan de serverzijde die door Platform Edge Network worden gemaakt bevestigen door het Spoor van Edge in Debugger te gebruiken.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home). -->
 
 
 ### Edge-trace inschakelen
@@ -166,4 +166,4 @@ Op dit moment kunt u geen Platform Edge Network-aanvragen weergeven die naar Ado
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
