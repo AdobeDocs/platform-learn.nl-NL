@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Gegevensvoorvoegsel voor gegevensverzameling
 
-Leer hoe u uw gegevenslaag aan een nieuwe gegevensstroom in de Inzameling van Gegevens toevoegt. Leer ook hoe u basistoewijzingsfuncties kunt uitvoeren met de functie Data Prep for Data Collection. Voor meer informatie, zie [ Prep van Gegevens voor de documentatie van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
+Leer hoe u uw gegevenslaag aan een nieuwe gegevensstroom in de Inzameling van Gegevens toevoegt. Leer ook hoe u basistoewijzingsfuncties kunt uitvoeren met de functie Data Prep for Data Collection. Voor meer informatie, zie [&#x200B; Prep van Gegevens voor de documentatie van de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)

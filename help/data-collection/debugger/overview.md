@@ -16,12 +16,12 @@ ht-degree: 51%
 
 # Adobe Experience Platform Debugger-overzicht
 
-Leer hoe de extensie van Adobe Experience Platform Debugger [ Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) u helpt uw implementaties van het Web SDK van Adobe Experience Platform, AppMeasurement.js, en at.js-de bibliotheken zuiveren die Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager,, markeringen en meer aandrijven.
+Leer hoe de extensie van Adobe Experience Platform Debugger [&#x200B; Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) u helpt uw implementaties van het Web SDK van Adobe Experience Platform, AppMeasurement.js, en at.js-de bibliotheken zuiveren die Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager,, markeringen en meer aandrijven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Aanvullende bronnen
 
-* [ Download de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [ Debugger van Experience Platform documentatie ](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
-* [ zuivert een markeringsimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [&#x200B; Download de uitbreiding van Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [&#x200B; Debugger van Experience Platform documentatie &#x200B;](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=nl)
+* [&#x200B; zuivert een markeringsimplementatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

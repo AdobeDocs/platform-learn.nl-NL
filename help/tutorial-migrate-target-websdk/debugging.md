@@ -18,7 +18,7 @@ De onderstaande tabel geeft een overzicht van functies en ondersteuning voor het
 | Functie of gereedschap | at.js-ondersteuning | Platform Web SDK-ondersteuning |
 | --- | --- | --- |
 | Activiteit QA URLs | Ja | Ja |
-| `mboxDisable` URL, parameter | Ja | Verwijs naar informatie hieronder aan [ onbruikbaar maken Functionaliteit van het Doel ](#disable-target-functionality) |
+| `mboxDisable` URL, parameter | Ja | Verwijs naar informatie hieronder aan [&#x200B; onbruikbaar maken Functionaliteit van het Doel &#x200B;](#disable-target-functionality) |
 | `mboxDebug` URL, parameter | Ja | De parameter `alloy_debug` gebruiken voor vergelijkbare foutopsporingsgegevens |
 | `mboxTrace` URL, parameter | Ja | De browserextensie van Experience Platform Debugger gebruiken |
 | Adobe Experience Platform Debugger-extensie | Ja | Ja |
@@ -35,11 +35,11 @@ U kunt Foutopsporing van het Platform op om het even welke Web-pagina in werking
 
 De Adobe Experience Platform Debugger kan worden geïnstalleerd in Google Chrome. Volg de onderstaande koppeling om de extensie te installeren:
 
-- [ Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+- [&#x200B; Chrome &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Nadat u de Chrome-extensie of de Firefox-invoegtoepassing hebt geïnstalleerd, wordt een pictogram (![](assets/start-icon.jpg)) toegevoegd aan de uitbreidingsbalk. Selecteer dit pictogram om de extensie te openen.
 
-Verwijs naar de specifieke gids voor meer informatie over de [ uitbreiding van Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) en hoe te om alle het Webtoepassingen van Adobe te zuiveren.
+Verwijs naar de specifieke gids voor meer informatie over de [&#x200B; uitbreiding van Adobe Experience Platform Debugger &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) en hoe te om alle het Webtoepassingen van Adobe te zuiveren.
 
 ## Voorvertoning van doelactiviteiten weergeven met URL&#39;s met kwaliteitscontrole
 
@@ -51,7 +51,7 @@ Doel-URL&#39;s voor kwaliteitscontrole die werken door at.js of Platform Web SDK
 >
 >De functionaliteit van de doel-QA-modus wordt ondersteund door Platform Web SDK versie 2.13.0 of hoger. De doel-QA-modus wordt ingeschakeld op basis van de `xdm.web.webPageDetails.URL` -waarde die wordt doorgegeven in de `sendEvent` -aanroep. Eventuele wijzigingen in deze waarde, zoals het verlagen van alle tekens, kunnen ertoe leiden dat de modus Doel-QA niet goed werkt.
 
-Verwijs naar de specifieke gids voor meer informatie over [ activiteit QA van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Verwijs naar de specifieke gids voor meer informatie over [&#x200B; activiteit QA van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
 
 ## Implementatie van foutopsporing
 
@@ -120,7 +120,7 @@ Ga als volgt te werk om Platform SDK Target sporen met de Adobe Experience Platf
 1. Laad de pagina opnieuw en het logboek zou met gedetailleerde informatie over de interacties van het randnetwerk moeten bevolken
 1. Focus op de logitems die beginnen met &quot;Doelsporen&quot; in de beschrijving en selecteer **[!UICONTROL View]** om de gegevens van het doelspoor weer te geven
 
-![ hoe te om de sporen van het Doel met Adobe Experience Platform Debugger ](assets/target-trace-debugger.png){zoomable="yes"} te bekijken
+![&#x200B; hoe te om de sporen van het Doel met Adobe Experience Platform Debugger &#x200B;](assets/target-trace-debugger.png){zoomable="yes"} te bekijken
 
 Nadat u **[!UICONTROL View]** hebt geselecteerd, wordt een bedekking weergegeven waarmee u de volgende informatie over de aanvraag kunt zien:
 
@@ -129,7 +129,7 @@ Nadat u **[!UICONTROL View]** hebt geselecteerd, wordt een bedekking weergegeven
 - Gegevens aanvragen
 - Momentopname profiel
 
-Verwijs naar de specifieke gids over [ het zuiveren de inhoudslevering van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) voor meer informatie over de sporen van het Doel.
+Verwijs naar de specifieke gids over [&#x200B; het zuiveren de inhoudslevering van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) voor meer informatie over de sporen van het Doel.
 
 ### Problemen met Assurance oplossen
 
@@ -142,7 +142,7 @@ De informatie van het doel spoor is viewable in zowel de browser van Adobe Exper
 1. Selecteer een logbestandvermelding met het type `com.adobe.target.trace`
 1. Vouw de details van de lading uit en bekijk de informatie onder `context > targetTrace`
 
-![ hoe te om de sporen van het Doel met Assurance ](assets/target-trace-assurance.png){zoomable="yes"} te bekijken
+![&#x200B; hoe te om de sporen van het Doel met Assurance &#x200B;](assets/target-trace-assurance.png){zoomable="yes"} te bekijken
 
 ## Onderzoek netwerkverzoek en reactie
 
@@ -150,7 +150,7 @@ De vraag van de verzoeklading en de reactie van het Web SDK van het Platform `se
 
 ### Payload voor inhoudsverzoek
 
-![ Doel specifieke elementen van de nuttige lading van SDK van het Web van het Platform ](assets/target-payload.png){zoomable="yes"}
+![&#x200B; Doel specifieke elementen van de nuttige lading van SDK van het Web van het Platform &#x200B;](assets/target-payload.png){zoomable="yes"}
 
 - Profiel, entiteit en andere niet-maboxparameters worden doorgegeven in de gebeurtenisarray onder `data.__adobe.target`
 - Beslissingsbereiken bevinden zich in de gebeurtenisarray onder `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ De vraag van de verzoeklading en de reactie van het Web SDK van het Platform `se
 
 ### Inhoudsresponsinstantie
 
-![ Doel specifieke elementen van het de reactiekader van SDK van het Web van het Platform ](assets/target-response.png){zoomable="yes"}
+![&#x200B; Doel specifieke elementen van het de reactiekader van SDK van het Web van het Platform &#x200B;](assets/target-response.png){zoomable="yes"}
 
 - De Platform Web SDK geeft acties voor alle Adobe-toepassingen onder het `handle` -object
 - De handeling `personalization:decisions` geeft een reactie van Target aan of biedt een beslissing
@@ -169,7 +169,7 @@ De vraag van de verzoeklading en de reactie van het Web SDK van het Platform `se
 
 ### Payload van Proposition-gebeurtenis
 
-![ de voorstellingsgebeurtenisvoorbeeld van het Doel ](assets/target-proposition-event.png){zoomable="yes"}
+![&#x200B; de voorstellingsgebeurtenisvoorbeeld van het Doel &#x200B;](assets/target-proposition-event.png){zoomable="yes"}
 
 - Doelspecifieke SDK-gebeurtenissen zijn `decisioning.propositionDisplay` voor een indruk of `decisioning.propositionInteract` voor een interactie, zoals een klik
 - De details van de proposition-gebeurtenis bevinden zich in de gebeurtenisarray onder `xdm._experience.decisioning`
@@ -180,4 +180,4 @@ Gefeliciteerd, u hebt het einde van de zelfstudie bereikt! Veel succes bij het m
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
