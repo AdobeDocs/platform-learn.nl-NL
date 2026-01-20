@@ -4,9 +4,8 @@ description: Overzichtsvideo van de Adobe-gebeurtenis die extensie voor Mailchim
 feature: Event Forwarding
 level: Experienced
 jira: KT-10714
-thumbnail: 345140.jpeg
 exl-id: 2aad8921-6330-4e81-ad3a-044423889abd
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -15,6 +14,6 @@ ht-degree: 0%
 
 # Adobe-extensie voor Mailchimp
 
-Overzichtsvideo van de Adobe-gebeurtenis die extensie voor Mailchimp doorstuurt. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken Mailchimp die uitbreidingsdocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=nl-NL) door:sturen.
+Overzichtsvideo van de Adobe-gebeurtenis die extensie voor Mailchimp doorstuurt. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken Mailchimp die uitbreidingsdocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html) door:sturen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)

@@ -4,9 +4,8 @@ description: Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling v
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # Creeer een gebeurtenis-door:sturen regel
 
-Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
+Leer hoe te om een gebeurtenis-door:sturen regel in de Inzameling van Gegevens tot stand te brengen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) door:sturen.
 
 >[!NOTE]
 >

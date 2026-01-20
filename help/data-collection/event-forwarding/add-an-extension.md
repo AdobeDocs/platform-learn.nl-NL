@@ -4,9 +4,8 @@ description: Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzame
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6422
-thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # Een extensie voor het doorsturen van gebeurtenissen toevoegen
 
-Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Voor meer informatie, gelieve de [&#x200B; gebeurtenis te bezoeken die documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL) door:sturen.
+Leer hoe te om een gebeurtenis-door:sturen uitbreiding in de Inzameling van Gegevens toe te voegen. Voor meer informatie, gelieve de [ gebeurtenis te bezoeken die documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Adobe Analytics toevoegen
 description: Leer hoe u Adobe Analytics implementeert met de extensie van de Adobe Analytics-tag, hoe u het baken van de paginaweergave verzendt, variabelen toevoegt, gebeurtenissen bijhoudt en insteekmodules toevoegt. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
 source-wordcount: '3586'
 ht-degree: 0%
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Adobe Analytics toevoegen
 
-In deze les, zult u de [&#x200B; uitbreiding van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL) uitvoeren en zult regels creëren om gegevens naar Adobe Analytics te verzenden.
+In deze les, zult u de [ uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) uitvoeren en zult regels creëren om gegevens naar Adobe Analytics te verzenden.
 
-[&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics.html?lang=nl-NL) is een industrie-leidende oplossing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
+[ Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics.html) is een industrie-leidende oplossing die u machtigt om uw klanten als mensen te begrijpen en uw zaken met klantenintelligentie te sturen.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
 >
-> * Platform launch (de Kant van de Cliënt) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * De Server zijde van de platform launch is nu **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
+> * Platform Launch (Client Side) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## Leerdoelen
 
@@ -39,9 +39,9 @@ Er zijn veel dingen die voor Analytics in markeringen zouden kunnen worden uitge
 
 ## Vereisten
 
-U zou de lessen in [&#x200B; reeds moeten hebben voltooid vormen markeringen &#x200B;](create-a-property.md) en [&#x200B; voeg de Dienst van de Identiteit toe &#x200B;](id-service.md).
+U zou de lessen in [ reeds moeten hebben voltooid vormen markeringen ](create-a-property.md) en [ voeg de Dienst van de Identiteit toe ](id-service.md).
 
-Daarnaast hebt u ten minste één rapportsuite-id en uw traceringsserver nodig. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, te creëren gelieve. Als u onzeker bent hoe te om dat te doen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=nl-NL). U kunt uw traceringsserver ophalen van uw huidige implementatie, Adobe Consultant of medewerker van de klantenservice.
+Daarnaast hebt u ten minste één rapportsuite-id en uw traceringsserver nodig. Als u geen test/dev- rapportreeks hebt die u voor dit leerprogramma kunt gebruiken, te creëren gelieve. Als u onzeker bent hoe te om dat te doen, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). U kunt uw traceringsserver ophalen van uw huidige implementatie, Adobe Consultant of Customer Care-medewerker.
 
 ## De extensie Analytics toevoegen
 
@@ -59,11 +59,11 @@ De extensie Analytics bestaat uit twee hoofdonderdelen:
 1. De Adobe Analytics-extensie zoeken
 1. Klikken **[!UICONTROL Install]**
 
-   ![&#x200B; installeer de uitbreiding van de Analyse &#x200B;](images/analytics-catalog-install.png)
+   ![ installeer de uitbreiding van de Analyse ](images/analytics-catalog-install.png)
 
 1. Voer onder [!UICONTROL Library Management > Report Suites] de rapportsuite-id&#39;s in die u voor elke tagomgeving wilt gebruiken. Als uw gebruikers toegang hebben tot Adobe Analytics, merkt u op dat wanneer u begint in de doos te typen, u een vooraf ingevulde lijst van al uw rapportreeksen zult zien. (Het is oké om één rapportenreeks voor alle milieu&#39;s in dit leerprogramma te gebruiken, maar in echt zou u afzonderlijke rapportseries willen gebruiken, zoals aangetoond in hieronder beeld)
 
-   ![&#x200B; ga rapportreeks ids &#x200B;](images/analytics-config-reportSuite.png) in
+   ![ ga rapportreeks ids ](images/analytics-config-reportSuite.png) in
 
    >[!TIP]
    >
@@ -71,13 +71,13 @@ De extensie Analytics bestaat uit twee hoofdonderdelen:
 
 1. Voer onder [!UICONTROL General > Tracking Server] uw trackingserver in, bijvoorbeeld `tmd.sc.omtrdc.net` . Voer uw SSL-traceringsserver in als uw site ondersteuning biedt voor `https://`
 
-   ![&#x200B; ga de volgende servers &#x200B;](images/analytics-config-trackingServer.png) in
+   ![ ga de volgende servers ](images/analytics-config-trackingServer.png) in
 
-1. Stel in de map [!UICONTROL Global Variables section] onder [!UICONTROL Additional Settings] de variabele [!UICONTROL Page Name] in met behulp van het gegevenselement `Page Name` . Klik het ![&#x200B; pictogram van het gegevenselement &#x200B;](images/icon-dataElement.png) pictogram om modaal te openen en het pagina `Page Name` gegevenselement te kiezen)
+1. Stel in de map [!UICONTROL Global Variables section] onder [!UICONTROL Additional Settings] de variabele [!UICONTROL Page Name] in met behulp van het gegevenselement `Page Name` . Klik het ![ pictogram van het gegevenselement ](images/icon-dataElement.png) pictogram om modaal te openen en het pagina `Page Name` gegevenselement te kiezen)
 
 1. Klikken **[!UICONTROL Save to Library]**
 
-   ![&#x200B; plaats de variabele van de paginanaam en bewaar &#x200B;](images/analytics-extension-pageName.png)
+   ![ plaats de variabele van de paginanaam en bewaar ](images/analytics-extension-pageName.png)
 
 >[!NOTE]
 >
@@ -87,26 +87,26 @@ De extensie Analytics bestaat uit twee hoofdonderdelen:
 
 Nu zult u een regel creëren om het baken van de Analyse in brand te steken, dat [!UICONTROL Page Name] variabele zal verzenden die in de uitbreidingsconfiguratie wordt geplaatst.
 
-U hebt reeds een &quot;Alle Pagina&#39;s - Bibliotheek Geladen&quot;regel in [&#x200B; gecreeerd voegt een gegevenselement, een regel en een bibliotheek &#x200B;](add-data-elements-rules.md) les van dit leerprogramma toe, dat op elke pagina wordt teweeggebracht wanneer de markeringsbibliotheek laadt. U *kon* deze regel voor Analytics ook gebruiken, nochtans vereist deze opstelling alle attributen van de gegevenslaag die in het baken van Analytics worden gebruikt om vóór de markering worden bepaald bed codes in. Om meer flexibiliteit met de gegevensinzameling toe te staan, zult u een nieuwe &quot;alle pagina&#39;s&quot;regel tot stand brengen die op DOM Klaar wordt teweeggebracht om het baken van de Analyse in brand te steken.
+U hebt reeds een &quot;Alle Pagina&#39;s - Bibliotheek Geladen&quot;regel in [ gecreeerd voegt een gegevenselement, een regel en een bibliotheek ](add-data-elements-rules.md) les van dit leerprogramma toe, dat op elke pagina wordt teweeggebracht wanneer de markeringsbibliotheek laadt. U *kon* deze regel voor Analytics ook gebruiken, nochtans vereist deze opstelling alle attributen van de gegevenslaag die in het baken van Analytics worden gebruikt om vóór de markering worden bepaald bed codes in. Om meer flexibiliteit met de gegevensinzameling toe te staan, zult u een nieuwe &quot;alle pagina&#39;s&quot;regel tot stand brengen die op DOM Klaar wordt teweeggebracht om het baken van de Analyse in brand te steken.
 
 **om het Baken van de Mening van de Pagina te verzenden**
 
 1. Ga naar de sectie **[!UICONTROL Rules]** in de linkernavigatie en klik vervolgens op **[!UICONTROL Add Rule]**
 
-   ![&#x200B; voeg Regel &#x200B;](images/analytics-addRule.png) toe
+   ![ voeg Regel ](images/analytics-addRule.png) toe
 
 1. Naam van de regel `All Pages - DOM Ready`
 1. Klik op **[!UICONTROL Events > Add]** om het scherm `Event Configuration` te openen
 
-   ![&#x200B; Naam de regel en voeg de gebeurtenis &#x200B;](images/analytics-domReady-nameAddAnalyticsEvent.png) toe
+   ![ Naam de regel en voeg de gebeurtenis ](images/analytics-domReady-nameAddAnalyticsEvent.png) toe
 
 1. Selecteer **[!UICONTROL Event Type > DOM Ready]** (De volgorde van de regel is &quot;50&quot;)
 1. Klikken **[!UICONTROL Keep Changes]**
-   ![&#x200B; vorm de Gebeurtenis &#x200B;](images/analytics-configureEventDomReady.png)
+   ![ vorm de Gebeurtenis ](images/analytics-configureEventDomReady.png)
 
-1. Onder Acties, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een nieuwe actie toe te voegen
+1. Onder Acties, klik ![ plus pictogram ](images/icon-plus.png) om een nieuwe actie toe te voegen
 
-   ![&#x200B; klik plus pictogram om een nieuwe actie toe te voegen &#x200B;](images/analytics-ruleAddAction.png)
+   ![ klik plus pictogram om een nieuwe actie toe te voegen ](images/analytics-ruleAddAction.png)
 
 1. Selecteren **[!UICONTROL Extension > Adobe Analytics]**
 
@@ -116,27 +116,27 @@ U hebt reeds een &quot;Alle Pagina&#39;s - Bibliotheek Geladen&quot;regel in [&#
 
 1. Klik op de knop **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; klik plus pictogram om een nieuwe actie toe te voegen &#x200B;](images/analytics-sendBeacon.png)
+   ![ klik plus pictogram om een nieuwe actie toe te voegen ](images/analytics-sendBeacon.png)
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
-   ![&#x200B; klik sparen aan Bibliotheek en Bouwstijl &#x200B;](images/analytics-saveToLibraryAndBuild.png)
+   ![ klik sparen aan Bibliotheek en Bouwstijl ](images/analytics-saveToLibraryAndBuild.png)
 
 ### Valideer het Paginaweergavebaken
 
-Nu u een regel hebt gecreeerd om een baken van Analytics te verzenden, zou u het verzoek in het Experience Cloud Debugger moeten kunnen zien.
+Nu u een regel hebt gemaakt voor het verzenden van een Analytics-baken, kunt u de aanvraag weergeven in Foutopsporing voor de cloud.
 
-1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
-1. Klik het Debugger pictogram ![&#x200B; Open het Experience Cloud Debugger &#x200B;](images/analytics-debuggerIcon.png) om **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
-1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [&#x200B; vroegere les &#x200B;](switch-environments.md) wordt beschreven
+1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
+1. Klik het Debugger pictogram ![ Open de Debugger van de Wolk van de Ervaring ](images/analytics-debuggerIcon.png) om **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
+1. Zorg ervoor debugger het markeringsbezit aan *in kaart brengt uw* milieu van de Ontwikkeling, zoals die in de [ vroegere les ](switch-environments.md) wordt beschreven
 
-   ![&#x200B; Uw milieu van de tagontwikkeling dat in Debugger wordt getoond &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![ Uw milieu van de tagontwikkeling dat in Debugger wordt getoond ](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Klik om het tabblad Analyse te openen
 1. Breid uw naam van de Reeks van het Rapport uit om alle verzoeken te tonen die aan het worden gemaakt
 1. Bevestig dat het verzoek is geactiveerd met de variabele en waarde Paginanaam
 
-   ![&#x200B; bevestigt de paginareet &#x200B;](images/analytics-validatePageHit.png)
+   ![ bevestigt de paginareet ](images/analytics-validatePageHit.png)
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Wanneer u de extensie Analytics hebt geconfigureerd, hebt u de variabele `pageNa
 
 Een flexibelere locatie voor het instellen van variabelen (en gebeurtenissen) bevindt zich in regels met de handeling `Set Variables` . Met regels kunt u verschillende analytische variabelen en gebeurtenissen onder verschillende omstandigheden instellen. U kunt de eigenschap `prodView` bijvoorbeeld alleen instellen op pagina&#39;s met productdetails en de gebeurtenis `purchase` alleen instellen op pagina&#39;s waarop het bestellen wordt bevestigd. Deze sectie zal u leren hoe te om variabelen te plaatsen gebruikend regels.
 
-### Hoofdletters gebruiken
+### Gebruiksscenario
 
 De Pagina&#39;s van het Detail van het product (PDP) zijn belangrijke punten voor gegevensinzameling op detailhandelsplaatsen. Doorgaans wilt u dat Analytics registreert dat een productweergave heeft plaatsgevonden en welk product is weergegeven. Dit is handig om te begrijpen welke producten populair zijn bij uw klanten. Op een mediasite kunnen artikel- of videopagina&#39;s soortgelijke volgtechnieken gebruiken als in deze sectie.  Wanneer u een pagina met productdetails laadt, kunt u die waarde in een &quot;Paginatype&quot; `eVar` plaatsen en een aantal gebeurtenissen en de product-id instellen. Op die manier kunnen we in onze analyse het volgende zien:
 
@@ -165,7 +165,7 @@ Eerst moet u identificeren welke pagina&#39;s de pagina&#39;s van het Detail van
 1. Klik op **[!UICONTROL Data Elements]** in de linkernavigatie
 1. Klikken **[!UICONTROL Add Data Element]**
 
-   ![&#x200B; voeg een nieuw Element van Gegevens toe &#x200B;](images/analytics-addDataElement.png)
+   ![ voeg een nieuw Element van Gegevens toe ](images/analytics-addDataElement.png)
 
 1. Naam van het gegevenselement `Page Type`
 1. Selecteren **[!UICONTROL Data Element Type > JavaScript Variable]**
@@ -173,7 +173,7 @@ Eerst moet u identificeren welke pagina&#39;s de pagina&#39;s van het Detail van
 1. Controleer de opties **[!UICONTROL Clean text]** en **[!UICONTROL Force Lower Case]**
 1. Klikken **[!UICONTROL Save to Library]**
 
-   ![&#x200B; voeg een nieuw Element van Gegevens voor het Type van Pagina &#x200B;](images/analytics-PageTypeDataElement.png) toe
+   ![ voeg een nieuw Element van Gegevens voor het Type van Pagina ](images/analytics-PageTypeDataElement.png) toe
 
 ### Gegevenselement maken voor product-id
 
@@ -184,7 +184,7 @@ Vervolgens verzamelt u de product-id van de huidige productdetailpagina met een 
 1. Klik op **[!UICONTROL Data Elements]** in de linkernavigatie
 1. Klikken **[!UICONTROL Add Data Element]**
 
-   ![&#x200B; voeg een nieuw Element van Gegevens toe &#x200B;](images/analytics-addDataElement.png)
+   ![ voeg een nieuw Element van Gegevens toe ](images/analytics-addDataElement.png)
 
 1. Naam van het gegevenselement `Product Id`
 1. Selecteren **[!UICONTROL Data Element Type > JavaScript Variable]**
@@ -192,21 +192,21 @@ Vervolgens verzamelt u de product-id van de huidige productdetailpagina met een 
 1. Controleer de opties **[!UICONTROL Clean text]** en **[!UICONTROL Force Lower Case]**
 1. Klikken **[!UICONTROL Save to Library]**
 
-   ![&#x200B; voeg een nieuw Element van Gegevens voor het Type van Pagina &#x200B;](images/analytics-ProductIdDataElement.png) toe
+   ![ voeg een nieuw Element van Gegevens voor het Type van Pagina ](images/analytics-ProductIdDataElement.png) toe
 
 ### De extensie Adobe Analytics-productreeks toevoegen
 
-Als u reeds vertrouwd met de implementaties van Adobe Analytics bent, bent u waarschijnlijk vertrouwd met de [&#x200B; productvariabele &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=nl-NL). De productvariabele heeft een zeer specifieke syntaxis en wordt gebruikt lichtjes verschillende manieren afhankelijk van de context. Om de populatie van de productvariabele in markeringen gemakkelijker te maken, zijn drie extra uitbreidingen reeds gecreeerd in de markt van de marktextensie! In deze sectie voegt u een extensie toe die door Adobe Consulting is gemaakt voor gebruik op de pagina Productdetails.
+Als u reeds vertrouwd met de implementaties van Adobe Analytics bent, bent u waarschijnlijk vertrouwd met de [ productvariabele ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). De productvariabele heeft een zeer specifieke syntaxis en wordt gebruikt lichtjes verschillende manieren afhankelijk van de context. Om de populatie van de productvariabele in markeringen gemakkelijker te maken, zijn drie extra uitbreidingen reeds gecreeerd in de markt van de marktextensie! In deze sectie voegt u een extensie toe die door Adobe Consulting is gemaakt voor gebruik op de pagina Productdetails.
 
 **om toe te voegen voegt `Adobe Analytics Product String` uitbreiding** toe
 
 1. Ga naar de [!UICONTROL Extensions > Catalog] -pagina
 1. Zoek de extensie `Adobe Analytics Product String` van Adobe Consulting Services en klik op **[!UICONTROL Install]**
-   ![&#x200B; voeg de uitbreiding van het Koord van het Product van Adobe Analytics door Adobe Consulting &#x200B;](images/analytics-addProductStringExtension.png) toe
+   ![ voeg de uitbreiding van het Koord van het Product van Adobe Analytics door Adobe Consulting ](images/analytics-addProductStringExtension.png) toe
 1. Neem even de tijd om de instructies te lezen
 1. Klikken **[!UICONTROL Save to Library]**
 
-   ![&#x200B; sparen de uitbreiding en bouwt het aan uw bibliotheek &#x200B;](images/analytics-addProductStringExtensionSave.png)
+   ![ sparen de uitbreiding en bouwt het aan uw bibliotheek ](images/analytics-addProductStringExtensionSave.png)
 
 ### De regel voor productdetailpagina&#39;s maken
 
@@ -216,20 +216,20 @@ Nu, zult u uw nieuwe gegevenselementen en uitbreiding gebruiken om uw de paginal
 
 1. Ga naar de sectie **[!UICONTROL Rules]** in de linkernavigatie en klik vervolgens op **[!UICONTROL Add Rule]**
 
-   ![&#x200B; voeg Regel &#x200B;](images/analytics-addRule2.png) toe
+   ![ voeg Regel ](images/analytics-addRule2.png) toe
 
 1. Naam van de regel `Product Details - DOM Ready - 40`
 1. Klik op **[!UICONTROL Events > Add]** om het scherm `Event Configuration` te openen
 
-   ![&#x200B; Naam de regel en voeg de gebeurtenis &#x200B;](images/analytics-domReadyAddEvent.png) toe
+   ![ Naam de regel en voeg de gebeurtenis ](images/analytics-domReadyAddEvent.png) toe
 
 1. Selecteren **[!UICONTROL Event Type > DOM Ready]**
 1. Plaats **[!UICONTROL Order]** aan 40, zodat de regel *vóór* de regel zal in werking stellen die de Analytics > verzendt actie van het Beken bevat
 1. Klikken **[!UICONTROL Keep Changes]**
-   ![&#x200B; vorm de Gebeurtenis &#x200B;](images/analytics-configDOMReadyEvent.png)
+   ![ vorm de Gebeurtenis ](images/analytics-configDOMReadyEvent.png)
 
-1. Onder **[!UICONTROL Conditions]**, klik ![&#x200B; klikken plus pictogram &#x200B;](images/icon-plus.png) om het `Condition Configuration` scherm te openen
-   ![&#x200B; klik plus pictogram om een nieuwe voorwaarde &#x200B;](images/analytics-PDPRuleAddCondition.png) toe te voegen
+1. Onder **[!UICONTROL Conditions]**, klik ![ klikken plus pictogram ](images/icon-plus.png) om het `Condition Configuration` scherm te openen
+   ![ klik plus pictogram om een nieuwe voorwaarde ](images/analytics-PDPRuleAddCondition.png) toe te voegen
 
    1. Selecteren **[!UICONTROL Condition Type > Value Comparison]**
    1. Gebruik de kiezer voor het gegevenselement en kies `Page Type` in het eerste veld
@@ -237,11 +237,11 @@ Nu, zult u uw nieuwe gegevenselementen en uitbreiding gebruiken om uw de paginal
    1. In het volgende veldtype `product-page` (dit is het unieke deel van de waarde van het paginatype dat uit de gegevenslaag op PDP&#39;s wordt gehaald)
    1. Klikken **[!UICONTROL Keep Changes]**
 
-      ![&#x200B; bepaalt de voorwaarde &#x200B;](images/analytics-PDP-condition.png)
+      ![ bepaalt de voorwaarde ](images/analytics-PDP-condition.png)
 
-1. Onder Acties, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een nieuwe actie toe te voegen
+1. Onder Acties, klik ![ plus pictogram ](images/icon-plus.png) om een nieuwe actie toe te voegen
 
-   ![&#x200B; klik plus pictogram om een nieuwe actie toe te voegen &#x200B;](images/analytics-PDPAddAction.png)
+   ![ klik plus pictogram om een nieuwe actie toe te voegen ](images/analytics-PDPAddAction.png)
 
 1. Selecteren **[!UICONTROL Extension > Adobe Analytics Product String]**
 1. Selecteren **[!UICONTROL Action Type > Set s.products]**
@@ -252,12 +252,12 @@ Nu, zult u uw nieuwe gegevenselementen en uitbreiding gebruiken om uw de paginal
 
 1. Klikken **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; voeg de Variabele van het Koord van het Product toe gebruikend de uitbreiding van het Koord van het Product van Adobe Analytics &#x200B;](images/analytics-PDPaddProductString.png)
+   ![ voeg de Variabele van het Koord van het Product toe gebruikend de uitbreiding van het Koord van het Product van Adobe Analytics ](images/analytics-PDPaddProductString.png)
 
 
-1. Onder Acties, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een nieuwe actie toe te voegen
+1. Onder Acties, klik ![ plus pictogram ](images/icon-plus.png) om een nieuwe actie toe te voegen
 
-   ![&#x200B; voeg een andere Actie voor het Koord van het Product &#x200B;](images/analytics-PDPaddAnotherAction.png) toe
+   ![ voeg een andere Actie voor het Koord van het Product ](images/analytics-PDPaddAnotherAction.png) toe
 
 1. Selecteren **[!UICONTROL Extension > Adobe Analytics]**
 1. Selecteren **[!UICONTROL Action Type > Set Variables]**
@@ -267,26 +267,26 @@ Nu, zult u uw nieuwe gegevenselementen en uitbreiding gebruiken om uw de paginal
 1. Stel de gebeurtenis **[!UICONTROL prodView]** in en laat de optionele waarden leeg
 1. Klikken **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; plaats de Variabelen van de Analyse in Regel PDP &#x200B;](images/analytics-PDPsetVariables.png)
+   ![ plaats de Variabelen van de Analyse in Regel PDP ](images/analytics-PDPsetVariables.png)
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
-   ![&#x200B; sparen de regel &#x200B;](images/analytics-PDP-saveRule.png)
+   ![ sparen de regel ](images/analytics-PDP-saveRule.png)
 
 ### De gegevens van de productdetailpagina valideren
 
-U hebt zojuist een regel gemaakt die variabelen instelt voordat het baken wordt verzonden. Je moet nu in staat zijn om de nieuwe gegevens in de hit in het Experience Cloud Debugger te zien.
+U hebt zojuist een regel gemaakt die variabelen instelt voordat het baken wordt verzonden. U moet nu de nieuwe gegevens kunnen zien verschijnen in de hit bij Experience Cloud Debugger.
 
 **om de de paginagegevens van het Detail van het Product te bevestigen**
 
-1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
+1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
 1. Naar een pagina met productdetails navigeren
-1. Klik het Debugger pictogram ![&#x200B; Open het Experience Cloud Debugger &#x200B;](images/analytics-debuggerIcon.png) om uw **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
+1. Klik het Debugger pictogram ![ Open de Debugger van de Wolk van de Ervaring ](images/analytics-debuggerIcon.png) om uw **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
 1. Klik op het tabblad Analyse
 1. Uw rapportsuite uitbreiden
 1. Merk op de Variabelen van het Detail van het Product die nu in debugger zijn, namelijk dat `eVar1` aan &quot;productdetailpagina&quot;is geplaatst, dat de `Events` variabele aan &quot;event1&quot;en &quot;prodView&quot;is geplaatst, dat de productvariabele met product identiteitskaart van het product wordt geplaatst u bekijkt, en dat uw Naam van de Pagina nog door de uitbreiding van de Analytics wordt geplaatst
 
-   ![&#x200B; bevestigt de paginareet &#x200B;](images/analytics-validatePDPvars.png)
+   ![ bevestigt de paginareet ](images/analytics-validatePDPvars.png)
 
 ## Verstuur een baken van de Verbinding van het Spoor
 
@@ -303,11 +303,11 @@ Voor dit gebruiksgeval, wilt u weten of schuiven de mensen neer op onze homepage
 ### De regel in tags maken
 
 1. Ga naar de sectie **[!UICONTROL Rules]** in de linkernavigatie en klik vervolgens op **[!UICONTROL Add Rule]**
-   ![&#x200B; voeg Regel &#x200B;](images/analytics-addRule3.png) toe
+   ![ voeg Regel ](images/analytics-addRule3.png) toe
 1. Naam van de regel `Homepage - Featured Products enters Viewport`
 1. Klik op **[!UICONTROL Events > Add]** om het scherm `Event Configuration` te openen
 
-   ![&#x200B; voeg Aanbevolen Regel van Producten toe &#x200B;](images/analytics-newArrivalsRuleAdd2.png)
+   ![ voeg Aanbevolen Regel van Producten toe ](images/analytics-newArrivalsRuleAdd2.png)
 
 1. Selecteer **[!UICONTROL Event Type > Enters Viewport]**. Hiermee wordt een veld weergegeven waarin u de CSS-kiezer moet invoeren die het item op de pagina identificeert dat de regel moet activeren wanneer deze in de browser wordt weergegeven.
 1. Ga terug naar de startpagina van Luma en blader omlaag naar de sectie Aanbevolen producten.
@@ -315,23 +315,23 @@ Voor dit gebruiksgeval, wilt u weten of schuiven de mensen neer op onze homepage
 1. Hier, mogelijk direct onder de geselecteerde sectie, zoekt u naar een div met `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"` . Zoek dit element.
 1. Klik met de rechtermuisknop op dit element en selecteer **[!UICONTROL Copy > Copy Selector]**
 
-   ![&#x200B; vorm de Gebeurtenis van Viewport van Ingangen &#x200B;](images/analytics-copyElementSelector.png)
+   ![ vorm de Gebeurtenis van Viewport van Ingangen ](images/analytics-copyElementSelector.png)
 
 1. Ga terug naar labels en plak deze waarde van het klembord in het veld met het label `Elements matching the CSS selector` .
    1. Aan de zijkant bepaalt u hoe CSS-kiezers worden geïdentificeerd. Deze methode is een beetje kwetsbaar, omdat deze kiezer door bepaalde wijzigingen op de pagina kan worden verbroken. Houd hier rekening mee wanneer u CSS-kiezers in tags gebruikt.
 1. Klikken **[!UICONTROL Keep Changes]**
-   ![&#x200B; vorm de Gebeurtenis van Viewport van Ingangen &#x200B;](images/analytics-configEntersViewportEvent.png)
+   ![ vorm de Gebeurtenis van Viewport van Ingangen ](images/analytics-configEntersViewportEvent.png)
 
-1. Onder Voorwaarden, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een nieuwe voorwaarde toe te voegen
+1. Onder Voorwaarden, klik ![ plus pictogram ](images/icon-plus.png) om een nieuwe voorwaarde toe te voegen
 1. Selecteren **[!UICONTROL Condition Type > Value Comparison]**
 1. Gebruik de kiezer voor het gegevenselement en kies `Page Name` in het eerste veld
 1. Selecteer **[!UICONTROL Equals]** in het vervolgkeuzemenu van de vergelijkingsoperator
 1. In het volgende veldtype `content:luma:us:en` (dit is de paginanaam van de homepage zoals getrokken uit de gegevenslaag - wij willen slechts deze regel op de homepage lopen)
 1. Klikken **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; vorm de Voorwaarde van de Homepage &#x200B;](images/analytics-configHomepageCondition.png)
+   ![ vorm de Voorwaarde van de Homepage ](images/analytics-configHomepageCondition.png)
 
-1. Onder Acties, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een nieuwe actie toe te voegen
+1. Onder Acties, klik ![ plus pictogram ](images/icon-plus.png) om een nieuwe actie toe te voegen
 1. Selecteren **[!UICONTROL Extension > Adobe Analytics]**
 1. Selecteren **[!UICONTROL Action Type > Set Variables]**
 1. `eVar3` instellen op `Home Page - Featured Products`
@@ -339,33 +339,33 @@ Voor dit gebruiksgeval, wilt u weten of schuiven de mensen neer op onze homepage
 1. Stel de variabele `Events` in op `event3`
 1. Klikken **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; vorm de Gebeurtenis van Viewport van Ingangen &#x200B;](images/analytics-configViewportAction.png)
+   ![ vorm de Gebeurtenis van Viewport van Ingangen ](images/analytics-configViewportAction.png)
 
-1. Onder Acties, klik ![&#x200B; plus pictogram &#x200B;](images/icon-plus.png) om een andere nieuwe actie toe te voegen
+1. Onder Acties, klik ![ plus pictogram ](images/icon-plus.png) om een andere nieuwe actie toe te voegen
 
 1. Selecteren **[!UICONTROL Extension > Adobe Analytics]**
 1. Selecteren **[!UICONTROL Action Type > Send Beacon]**
 1. Kies de optie **[!UICONTROL `s.tl()`]** Tekstspatiëring
-1. Typ `Scrolled down to Featured Products` in het veld **[!UICONTROL Link Name]** . Deze waarde wordt in het rapport Aangepaste koppelingen in Analytics geplaatst.
+1. Typ **[!UICONTROL Link Name]** in het veld `Scrolled down to Featured Products` . Deze waarde wordt in het rapport Aangepaste koppelingen in Analytics geplaatst.
 1. Klikken **[!UICONTROL Keep Changes]**
 
-   ![&#x200B; Config het Aanbevolen Bandje van Producten &#x200B;](images/analytics-configEntersViewportBeacon.png)
+   ![ Config het Aanbevolen Bandje van Producten ](images/analytics-configEntersViewportBeacon.png)
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
-   ![&#x200B; sparen de regel en bouwt &#x200B;](images/analytics-saveCustomLinkRule.png)
+   ![ sparen de regel en bouwt ](images/analytics-saveCustomLinkRule.png)
 
 ### Valideer het baken van de Verbinding van het Spoor
 
 Nu wilt u ervoor zorgen dat deze hit wordt weergegeven wanneer u naar de sectie Aanbevolen producten op de startpagina van onze site schuift. Wanneer u de startpagina laadt, moet het verzoek niet worden gedaan, maar wanneer u omlaag schuift en de sectie in beeld komt, moet de treffer met onze nieuwe waarden branden.
 
-1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome en zorg ervoor u bij de bovenkant van de homepage bent.
-1. Klik **[!UICONTROL debugger icon]** ![&#x200B; open het Experience Cloud Debugger &#x200B;](images/analytics-debuggerIcon.png) om uw [!UICONTROL Adobe Experience Cloud Debugger] te openen
+1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome en zorg ervoor u bij de bovenkant van de homepage bent.
+1. Klik **[!UICONTROL debugger icon]** ![ open de Debugger van de Wolk van de Ervaring ](images/analytics-debuggerIcon.png) om uw [!UICONTROL Adobe Experience Cloud Debugger] te openen
 1. Klik op het tabblad Analyse
 1. De hit van de rapportsuite uitbreiden
 1. U ziet dat de normale paginaweergave is geactiveerd voor de startpagina met de paginanaam, enz. (maar niets in eVar3 of prop3).
 
-   ![&#x200B; Debugger met een Mening van de Pagina &#x200B;](images/analytics-debuggerPageView.png)
+   ![ Debugger met een Mening van de Pagina ](images/analytics-debuggerPageView.png)
 
 1. Als u Foutopsporing geopend laat, schuift u omlaag op uw site totdat u de sectie Aanbevolen producten kunt zien
 1. Bekijk de foutopsporing opnieuw en er had nog een hit voor Analytics moeten verschijnen. Bij deze hit moeten de params gekoppeld zijn aan de s.tl() hit die u hebt ingesteld, namelijk:
@@ -375,11 +375,11 @@ Nu wilt u ervoor zorgen dat deze hit wordt weergegeven wanneer u naar de sectie 
    1. `eVar3 = "Home Page - Featured Products"`
    1. `Events = "event3"`
 
-      ![&#x200B; Debugger met een Mening van de Pagina &#x200B;](images/analytics-debuggerEntersViewport.png)
+      ![ Debugger met een Mening van de Pagina ](images/analytics-debuggerEntersViewport.png)
 
 ## Een plug-in toevoegen
 
-Een plug-in is een stuk JavaScript-code dat u aan de implementatie kunt toevoegen om een specifieke functie uit te voeren die niet in het product is ingebouwd. Plug-ins kunnen door u, door andere klanten/partners van de Adobe of door Adobe Consulting worden gebouwd.
+Een plug-in is een stuk JavaScript-code dat u aan de implementatie kunt toevoegen om een specifieke functie uit te voeren die niet in het product is ingebouwd. Plug-ins kunnen door u, door andere klanten/partners van Adobe of door Adobe Consulting worden gebouwd.
 
 Voor het implementeren van plug-ins zijn er drie stappen:
 
@@ -395,14 +395,14 @@ Als u de functie doPlugins (hieronder) toevoegt en stop-ins gebruikt, moet u een
 
 1. Klik in de extensie Adobe Analytics op **[!UICONTROL Configure]**
 
-   ![&#x200B; vorm Analytics &#x200B;](images/analytics-configureExtension.png)
+   ![ vorm Analytics ](images/analytics-configureExtension.png)
 
 1. Selecteer onder **[!UICONTROL Library Management]** het vak met het label `Make tracker globally accessible` . Zoals u in de Help bubble kunt zien, zal dit de tracker globaal onder window.s maken, wat belangrijk zal zijn aangezien u naar het in uw klant JavaScript verwijst.
-   ![&#x200B; maak spoor globaal toegankelijk &#x200B;](images/analytics-makeTrackerGlobal.png)
+   ![ maak spoor globaal toegankelijk ](images/analytics-makeTrackerGlobal.png)
 
 ### Inclusief de functie doPlugins
 
-Als u plug-ins wilt toevoegen, moet u een functie met de naam doPlugins toevoegen. Deze functie wordt niet standaard toegevoegd, maar wordt na toevoeging afgehandeld door de bibliotheek van het AppMeasurement en wordt als laatste aangeroepen wanneer een hit naar Adobe Analytics wordt verzonden. Daarom kunt u deze functie gebruiken om sommige JavaScript in te stellen om variabelen in te stellen die gemakkelijker op deze manier zijn ingesteld.
+Als u plug-ins wilt toevoegen, moet u een functie met de naam doPlugins toevoegen. Deze functie wordt niet standaard toegevoegd, maar wordt na toevoeging afgehandeld door de AppMeasurement-bibliotheek en wordt als laatste aangeroepen wanneer een hit naar Adobe Analytics wordt verzonden. Daarom kunt u deze functie gebruiken om sommige JavaScript in te stellen om variabelen in te stellen die gemakkelijker op deze manier zijn ingesteld.
 
 1. Schuif omlaag en vouw de sectie met de naam `Configure Tracker Using Custom Code.` uit terwijl u de extensie Analytics gebruikt
 1. Klikken **[!UICONTROL Open Editor]**
@@ -420,13 +420,13 @@ Als u plug-ins wilt toevoegen, moet u een functie met de naam doPlugins toevoege
 
 ### Functiecode toevoegen voor de plug-in
 
-U gaat eigenlijk twee stop-ins in deze code roepen, maar één van hen wordt gebouwd in de bibliotheek van het AppMeasurement, zodat moet u niet de aan vraag te roepen functie toevoegen. Voor de tweede functie moet u echter ook de functiecode toevoegen. Deze functie wordt getValOnce() genoemd.
+U gaat eigenlijk twee stop-ins in deze code roepen, maar één van hen wordt gebouwd in de bibliotheek van AppMeasurement, zodat moet u niet de te roepen functie toevoegen. Voor de tweede functie moet u echter ook de functiecode toevoegen. Deze functie wordt getValOnce() genoemd.
 
 ### De getValOnce()-plug-in
 
 Het doel van deze plug-in is om te voorkomen dat waarden onjuist worden gedupliceerd in de code wanneer een bezoeker een pagina vernieuwt of de knop Vorige van de browser gebruikt om terug te gaan naar een pagina waarop een waarde is ingesteld. In deze les gebruikt u deze methode om te voorkomen dat de gebeurtenis `clickthrough` wordt gedupliceerd.
 
-De code voor deze stop-binnen is beschikbaar in de [&#x200B; Documentatie van de Analyse &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=nl-NL), maar het is inbegrepen hier voor uw gemak van exemplaar/deeg.
+De code voor deze stop-binnen is beschikbaar in de [ Documentatie van de Analyse ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), maar het is inbegrepen hier voor uw gemak van exemplaar/deeg.
 
 1. De volgende code kopiëren
 
@@ -437,7 +437,7 @@ De code voor deze stop-binnen is beschikbaar in de [&#x200B; Documentatie van de
 
 1. Plak het in het codevenster in de uitbreiding van de Analyse (als u het nog niet hebt geopend, heropen het zoals in de vorige stap), **volledig onder** de doPlugins functie (niet binnen het).
 
-   ![&#x200B; voeg Plug-in Code &#x200B;](images/analytics-doPluginsAndGeValOnceCode2.png) toe
+   ![ voeg Plug-in Code ](images/analytics-doPluginsAndGeValOnceCode2.png) toe
 
 U kunt deze plug-in nu aanroepen vanuit doPlugins.
 
@@ -445,7 +445,7 @@ U kunt deze plug-in nu aanroepen vanuit doPlugins.
 
 Nu de code daar is en kan worden van verwijzingen voorzien, kunt u de vraag aan stop-ins binnen de doPlugins functie maken.
 
-Eerst roept u een insteekmodule aan die in de bibliotheek van het AppMeasurement is opgenomen, en die als &quot;nut&quot;wordt bekend. Deze wordt `s.Util.getQueryParam` genoemd, omdat deze een onderdeel is van het object s, een ingebouwd hulpprogramma is en waarden (gebaseerd op een parameter) uit de querytekenreeks in de URL ophaalt.
+Eerst roept u een insteekmodule aan die in de AppMeasurement-bibliotheek is opgenomen en die ook wel een &quot;hulpprogramma&quot; wordt genoemd. Deze wordt `s.Util.getQueryParam` genoemd, omdat deze een onderdeel is van het object s, een ingebouwd hulpprogramma is en waarden (gebaseerd op een parameter) uit de querytekenreeks in de URL ophaalt.
 
 1. Kopieer de volgende code:
 
@@ -462,12 +462,12 @@ Eerst roept u een insteekmodule aan die in de bibliotheek van het AppMeasurement
 
    Deze code zorgt ervoor dat dezelfde waarde gedurende 30 dagen niet meer dan één keer per rij wordt verzonden (zie de documentatie voor manieren om deze code aan uw behoeften aan te passen).
 
-   ![&#x200B; Plug-ins van de Vraag in doPlugins &#x200B;](images/analytics-doPluginsWithPlugins2.png)
+   ![ Plug-ins van de Vraag in doPlugins ](images/analytics-doPluginsWithPlugins2.png)
 
 1. Het codevenster opslaan
 1. Klikken **[!UICONTROL Save to Library and Build]**
 
-   ![&#x200B; Plug-ins van de Vraag in doPlugins &#x200B;](images/analytics-saveExtensionAndBuild2.png)
+   ![ Plug-ins van de Vraag in doPlugins ](images/analytics-saveExtensionAndBuild2.png)
 
 ### De plug-ins valideren
 
@@ -475,23 +475,23 @@ Nu kunt u ervoor zorgen dat de plug-ins werken.
 
 **om de plugins** te bevestigen
 
-1. Open de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
-1. Klik het Debugger pictogram ![&#x200B; Open het Experience Cloud Debugger &#x200B;](images/analytics-debuggerIcon.png) om **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
+1. Open de [ plaats van de Luma ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
+1. Klik het Debugger pictogram ![ Open de Debugger van de Wolk van de Ervaring ](images/analytics-debuggerIcon.png) om **[!UICONTROL Adobe Experience Cloud Debugger]** te openen
 1. Klik op het tabblad Analyse
 1. Uw rapportsuite uitbreiden
 1. Let op: de treffer voor Analytics heeft geen variabele Campagne
 1. Als u Foutopsporing geopend laat, gaat u terug naar de site Luma en voegt u `?cid=1234` toe aan de URL. Klik vervolgens op Enter om de pagina te vernieuwen met de queryreeks die u hebt opgenomen
 
-   ![&#x200B; voeg een Koord van de Vraag toe &#x200B;](images/analytics-cidAdded.png)
+   ![ voeg een Koord van de Vraag toe ](images/analytics-cidAdded.png)
 
 1. Controleer Foutopsporing en bevestig dat er een tweede analyseverzoek is met een variabele van de Campagne die aan `1234` wordt geplaatst
 
-   ![&#x200B; getQueryParam stap 1 &#x200B;](images/analytics-getQueryParam1.png)
+   ![ getQueryParam stap 1 ](images/analytics-getQueryParam1.png)
 
 1. Ga terug en vernieuw de pagina Luma opnieuw, met het vraagkoord nog in URL
 1. Controleer de volgende klap in Debugger, en de variabele van de Campagne zou **niet** aanwezig moeten zijn, omdat de stop getValOnce ervoor heeft gezorgd dat het niet gedupliceerd wordt en als een andere persoon binnen van de campagne volgende code kwam.
 
-   ![&#x200B; getQueryParam stap 1 &#x200B;](images/analytics-getQueryParam2.png)
+   ![ getQueryParam stap 1 ](images/analytics-getQueryParam2.png)
 
 1. BONUS: U kunt dit telkens opnieuw testen door de waarde van de parameter `cid` in de queryreeks te wijzigen. De variabele van de Campagne zou daar slechts moeten zijn als het de **eerste** tijd is u de pagina met de waarde in werking stelt. Als u niet de waarde van de Campagne in debugger ziet, verander eenvoudig de waarde van `cid` in het vraagkoord van URL, druk binnengaan, en u zou het opnieuw in debugger moeten zien.
 
