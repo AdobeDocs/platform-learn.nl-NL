@@ -169,7 +169,7 @@ Marketers en analytici kunnen nog veel meer doen met gegevens die in Experience 
 
 >[!SUCCESS]
 >
->U hebt nu een app ingesteld om gegevens niet alleen naar de Edge Network, maar ook naar Adobe Experience Platform te verzenden.<br> Dank u voor het investeren van uw tijd in het leren over Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>U hebt nu een app ingesteld om gegevens niet alleen naar de Edge Network, maar ook naar Adobe Experience Platform te verzenden.<br> Dank u voor het investeren van uw tijd in het leren over Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=nl) delen.
 >
 
 Volgende: **[creeer en verzend dupberichten](journey-optimizer-push.md)**

@@ -196,6 +196,6 @@ Hopelijk hebt u een succesvolle `200 OK` reactie gekregen die een lijst van de b
 
 ![&#x200B; Eerste API vraag in Postman &#x200B;](assets/postman-firstAPICall.png)
 
-Als uw vraag niet succesvol was, neem een ogenblik om het gebruiken van de details van de foutenreactie van de API vraag te zuiveren en de stappen hierboven te herzien. Als u geplakt wordt, gelieve om hulp in het [&#x200B; Communautaire Forum &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) of gebruik de verbinding in de rechterkant van deze pagina aan &quot;Logboek een kwestie&quot;.
+Als uw vraag niet succesvol was, neem een ogenblik om het gebruiken van de details van de foutenreactie van de API vraag te zuiveren en de stappen hierboven te herzien. Als u geplakt wordt, gelieve om hulp in het [&#x200B; Communautaire Forum &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=nl) of gebruik de verbinding in de rechterkant van deze pagina aan &quot;Logboek een kwestie&quot;.
 
 Met uw toestemmingen van het Platform, zandbak, en [!DNL Postman] opstelling, bent u klaar aan [&#x200B; modelgegevens in schema&#39;s &#x200B;](model-data-in-schemas.md)!
