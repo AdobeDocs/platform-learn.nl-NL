@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}

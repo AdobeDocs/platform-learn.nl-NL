@@ -23,22 +23,22 @@ In deze module gaat u gegevens analyseren die zich in Adobe Analytics en/of Cust
 
 ## Uitoefening
 
-[ 1.5.1 CJA &amp; ChatGPT met server MCP ](./ex1.md){target="_blank"}
+[&#x200B; 1.5.1 CJA &amp; ChatGPT met server MCP &#x200B;](./ex1.md){target="_blank"}
 
 In deze oefening, zult u opstelling een douane MCP server in ChatGPT om ChatGPT rechtstreeks met Customer Journey Analytics te verbinden en u zult beginnen uw gegevens te analyseren die in Adobe Customer Journey Analytics (CJA) direct in ChatGPT worden ontvangen.
 
-[ 1.5.2 CJA &amp; Claude.ai met server MCP ](./ex2.md){target="_blank"}
+[&#x200B; 1.5.2 CJA &amp; Claude.ai met server MCP &#x200B;](./ex2.md){target="_blank"}
 
 In deze oefening, zult u een douaneMCP server in Claude.ai opzetten om Claude.ai aan Customer Journey Analytics direct te verbinden en u zult beginnen uw gegevens te analyseren die in Adobe Customer Journey Analytics (CJA) direct van Claude.ai worden ontvangen.
 
-[ 1.5.3 Adobe Analytics &amp; ChatGPT met server MCP ](./ex3.md){target="_blank"}
+[&#x200B; 1.5.3 Adobe Analytics &amp; ChatGPT met server MCP &#x200B;](./ex3.md){target="_blank"}
 
 In deze oefening, zult u opstelling een douane MCP server in ChatGPT om ChatGPT rechtstreeks met Adobe Analytics te verbinden en u zult beginnen uw gegevens te analyseren die in Adobe Analytics (AA) direct van ChatGPT worden ontvangen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht - Agentic AI Tech Labs
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -62,7 +62,7 @@ In deze oefening zult u leren hoe te:
 - Brand Concierge-instantie configureren in uw Adobe Experience Platform-sandbox
 - Brand Concierge implementeren op uw AEM CS/EDS-website
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -12,6 +12,6 @@ ht-degree: 0%
 
 # 1.5.2 CJA en Claude.ai met MCP-server
 
-Ga terug naar [ Analytics &amp; Agenten ](./analyticsagents.md){target="_blank"}
+Ga terug naar [&#x200B; Analytics &amp; Agenten &#x200B;](./analyticsagents.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
