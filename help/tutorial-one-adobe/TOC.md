@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Aan de slag met Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent met ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent met Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 Aan de slag met agents en AI {#agents2}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 Agent Collaboration {#agents3}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 Aan de slag met Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4 Brand Concierge {#agents4}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Aan de slag met Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2 Brand Concierge implementeren op uw website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analyses en agents {#agents5}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA en ChatGPT met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA en Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics en ChatGPT met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

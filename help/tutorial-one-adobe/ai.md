@@ -3,16 +3,16 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -51,27 +51,18 @@ Technische elementen:
 - MCP-server, Python-laptop
 - Adobe API&#39;s
 
-[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->Deze module is nog niet vrijgegeven.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Doel**
 
-Verbind uw eigen agent met de agenten van Adobe. De studenten zullen opstelling het Agent2Agent (A2A) protocol om hun agenten met AEP Agent Orchestrator te verbinden.
+Brand Concierge is een door AI aangedreven digitale metgezel die de manier verandert waarop merken met hun websitebezoekers omgaan. In tegenstelling tot algemene chatbots biedt Brand Concierge persoonlijke, conversatieve ervaringen die zijn afgestemd op de intentie van elke bezoeker. Het helpt bezoekers producten ontdekken, opties vergelijken, onmiddellijke antwoorden krijgen, en geleide aanbevelingen in echt ontvangen - tijd. Het platform dient zowel B2C als B2B en fungeert als een intelligente uitbreiding van uw merk op om het even welk digitaal kanaal, terwijl het behoud van uw merkstem, inhoudsintegriteit, en naleving.
 
-- Agent Chaining
-- Agent Collaboration
+In deze oefening zult u leren hoe te:
 
-Wat is de architectuur achter een Adobe agent?
-Wat is de architectuur achter A2A?
+- Brand Concierge-instantie configureren in uw Adobe Experience Platform-sandbox
+- Brand Concierge implementeren op uw AEM CS/EDS-website
 
-Technische elementen:
-
-- De Interoperabiliteit van de agent met Google A2A protocol
-
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
