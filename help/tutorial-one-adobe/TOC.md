@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1448'
 ht-degree: 3%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
@@ -273,8 +273,8 @@ ht-degree: 3%
    + 1.1 Agent Orchestrator {#agents1}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Aan de slag met Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-      + [1.1.2 Adobe Marketing Agent met ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-      + [1.1.3 Adobe Marketing Agent met Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+      + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 Aan de slag met agents en AI {#agents2}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
