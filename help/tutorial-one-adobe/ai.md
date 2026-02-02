@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht - Agentic AI Tech Labs
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -73,7 +73,7 @@ In deze oefening zult u leren hoe te:
 - Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
 - Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
