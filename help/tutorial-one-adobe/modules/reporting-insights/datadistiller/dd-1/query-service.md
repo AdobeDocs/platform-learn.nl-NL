@@ -1,12 +1,12 @@
 ---
-title: Query-service
-description: Query-service
+title: Queryservice
+description: Queryservice
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -28,18 +28,14 @@ Wij zullen gegevens gebruiken die in platform zijn ingespoten gebruikend of de G
 ## Vereisten
 
 - Enige vertrouwdheid met SQL wordt geprefereerd maar vereist
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Datasets (dataset die tijdens laboratorium wordt gebruikt, voorgeladen voor u)
 - PostgreSQL
 - Tableau of Microsoft Power BI Desktop
-- **Download deze activa**:
-   - [JSON - Voorbeeldgegevens: interacties website](./../../../../assets/json/ee.json)
-   - [JSON - Voorbeeldgegevens: Interacties tussen callcenter](./../../../../assets/json/callcenter.json)
-   - [JSON - Voorbeeldgegevens: Loyalty](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -79,7 +75,7 @@ In deze oefening zult u de dienst API van de Vraag gebruiken om vraagmalplaatjes
 
 Overzicht van deze module en overzicht van de voordelen.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

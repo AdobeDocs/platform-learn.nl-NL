@@ -3,16 +3,16 @@ title: CJA & ChatGPT met MCP-server
 description: CJA & ChatGPT met MCP-server
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 CJA en ChatGPT met MCP-server
 
-[!BADGE &#x200B; Alpha &#x200B;]
+[!BADGE  Alpha ]
 
 +++Alpha-gegevens
 Door CJA &amp; Claude.ai te gebruiken met MCP server Alpha, erkent U hierbij dat Alpha &quot;zoals is&quot;zonder enige garantie van welke aard ook wordt verstrekt. Adobe is niet verplicht de Alpha te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen. U wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de juiste werking of prestaties van dergelijke Alpha en/of begeleidende materialen. De Alpha wordt beschouwd als vertrouwelijke informatie van Adobe. Alle &quot;Feedback&quot; (informatie over de Alpha, inclusief maar niet beperkt tot problemen of defecten die u tegenkomt bij het gebruik van de Alpha, suggesties, verbeteringen en aanbevelingen) die u aan Adobe verstrekt, worden hierbij aan Adobe toegewezen, inclusief alle rechten, titel en interesse in en voor dergelijke feedback.
@@ -21,7 +21,7 @@ Door CJA &amp; Claude.ai te gebruiken met MCP server Alpha, erkent U hierbij dat
 
 >[!NOTE]
 >
->Deze oefening op vestiging en het gebruiken van een Server MCP met ChatGPT om met CJA te verbinden is verwant met deze oefening [&#x200B; 1.1 Customer Journey Analytics: Bouw een dashboard gebruikend Analysis Workspace bovenop Adobe Experience Platform &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md). De CJA-gegevensweergave en -verbinding die in de onderstaande exercitie worden gebruikt, zijn de gegevensweergave en de verbinding die in die oefening is ingesteld. Als u de onderstaande resultaten wilt herhalen, volgt u deze instructies eerst.
+>Deze oefening op vestiging en het gebruiken van een Server MCP met ChatGPT om met CJA te verbinden is verwant met deze oefening [ 1.1 Customer Journey Analytics: Bouw een dashboard gebruikend Analysis Workspace bovenop Adobe Experience Platform ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md). De CJA-gegevensweergave en -verbinding die in de onderstaande exercitie worden gebruikt, zijn de gegevensweergave en de verbinding die in die oefening is ingesteld. Als u de onderstaande resultaten wilt herhalen, volgt u deze instructies eerst.
 
 ## Video
 
@@ -37,25 +37,25 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 >- een betaalde versie van ChatGPT van OpenAI
 >- de ChatGPT-webclient gebruiken
 
-Ga naar [&#x200B; https://chatgpt.com/ &#x200B;](https://chatgpt.com/){target="_blank"} en login die uw rekeningsdetails gebruiken. Nadat u zich hebt aangemeld, kunt u dit beter zien. Klik op uw gebruikersnaam.
+Ga naar [ https://chatgpt.com/ ](https://chatgpt.com/){target="_blank"} en login die uw rekeningsdetails gebruiken. Nadat u zich hebt aangemeld, kunt u dit beter zien. Klik op uw gebruikersnaam.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt1.png)
+![ ChatGPT ](./images/chatgpt1.png)
 
 Selecteer **Montages**.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt2.png)
+![ ChatGPT ](./images/chatgpt2.png)
 
 Ga naar **Apps** en selecteer dan **Geavanceerde montages**.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt3.png)
+![ ChatGPT ](./images/chatgpt3.png)
 
 Zet **wijze van de Ontwikkelaar** aan en klik dan **terug**.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt4.png)
+![ ChatGPT ](./images/chatgpt4.png)
 
 Klik **Create app**.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt5.png)
+![ ChatGPT ](./images/chatgpt5.png)
 
 Vul de velden als volgt in:
 
@@ -67,21 +67,21 @@ Controleer checkbox voor **ik begrijp en wil** verdergaan.
 
 Klik **creëren**.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt6.png)
+![ ChatGPT ](./images/chatgpt6.png)
 
 Nadat u zich hebt aangemeld, ziet u dat de CJA-toepassing nu verbinding heeft.
 
-![&#x200B; ChatGPT &#x200B;](./images/chatgpt8.png)
+![ ChatGPT ](./images/chatgpt8.png)
 
 ## 1.5.1.2 Context instellen in CJA
 
 Sluit dit venster.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt9.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt9.png)
 
 Dan moet je dit zien. Klik **+** pictogram, ga **Meer** en selecteer dan **CJA**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt10.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt10.png)
 
 Voordat u via ChatGPT verder kunt gaan met CJA, moet de context worden ingesteld.
 
@@ -97,11 +97,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 list dataviews
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt11.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt11.png)
 
 Vervolgens wordt een vergelijkbare lijst met beschikbare gegevensweergaven weergegeven.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt11a.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt11a.png)
 
 Om dat aan de gegevensmening te veranderen die moet worden gebruikt, ga de volgende **Herinnering** in en klik **verzend** knoop.
 
@@ -109,11 +109,11 @@ Om dat aan de gegevensmening te veranderen die moet worden gebruikt, ga de volge
 switch to dataview --aepUserLdap-- - Omnichannel Data View
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt12.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt12.png)
 
 Dan moet je dit zien.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt16.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt16.png)
 
 Uw context is nu correct ingesteld, zodat u volgende specifieke vragen kunt verzenden.
 
@@ -121,7 +121,7 @@ Uw context is nu correct ingesteld, zodat u volgende specifieke vragen kunt verz
 
 >[!NOTE]
 >
->De gegevensmening die hier wordt gebruikt is opstelling als deel van oefening [&#x200B; creeert een gegevensmening &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md).
+>De gegevensmening die hier wordt gebruikt is opstelling als deel van oefening [ creeert een gegevensmening ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md).
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop om te onderzoeken welke metriek en afmetingen aan u beschikbaar zijn.
 
@@ -129,11 +129,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop om te onderzoeken 
 list the available metrics and dimensions
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt101.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt101.png)
 
-U zou deze reactie dan moeten zien, die de metriek en de dimensies omvat die opstelling als deel van de oefening [&#x200B; creeert een gegevensmening &#x200B;](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md).
+U zou deze reactie dan moeten zien, die de metriek en de dimensies omvat die opstelling als deel van de oefening [ creeert een gegevensmening ](./../../../modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md).
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt102.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt102.png)
 
 ## 1.5.1.4 Vrije-vormtabel - Productweergaven
 
@@ -143,15 +143,15 @@ U kunt nu de gegevens gaan verkennen. Begin door de hieronder herinnering in te 
 how many product views happened on January 21?
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt103.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt103.png)
 
 Selecteer **RunReport**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt104.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt104.png)
 
 Dan zie je een reactie als deze.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt105.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt105.png)
 
 U kunt de reactie nu onderbreken door een dimensie toe te voegen. Ga de volgende **herinnering** in en klik **verzenden** knoop.
 
@@ -159,11 +159,11 @@ U kunt de reactie nu onderbreken door een dimensie toe te voegen. Ga de volgende
 break down product views by product name
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt106.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt106.png)
 
 Dan zie je een reactie als deze.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt107.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt107.png)
 
 U kunt nu ook een visualisatie maken. Ga de volgende **herinnering** in en klik **verzenden** knoop.
 
@@ -171,23 +171,23 @@ U kunt nu ook een visualisatie maken. Ga de volgende **herinnering** in en klik 
 create a line visualization by hour for product views on January 21
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt108.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt108.png)
 
 Selecteer **UpsertProject**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt109.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt109.png)
 
 Selecteer **RunReport**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt110.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt110.png)
 
 Dan moet je dit zien.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt111.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt111.png)
 
 Omlaag schuiven.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt112.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt112.png)
 
 U kunt deze lijngrafiek nu ook downloaden. Ga de volgende **herinnering** in en klik **verzenden** knoop.
 
@@ -195,11 +195,11 @@ U kunt deze lijngrafiek nu ook downloaden. Ga de volgende **herinnering** in en 
 export this chart to PNG
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt113.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt113.png)
 
 Dan moet je dit zien. Klik **Download PNG**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt114.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt114.png)
 
 Ga de volgende **herinnering** in en klik **verzenden** knoop.
 
@@ -207,15 +207,15 @@ Ga de volgende **herinnering** in en klik **verzenden** knoop.
 can you breakdown product views by user agent?
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt115.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt115.png)
 
 Selecteer **RunReport**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt116.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt116.png)
 
 Dan moet je dit zien.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt117.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt117.png)
 
 ## 1.5.1.5 Visualisatie van de val
 
@@ -225,15 +225,15 @@ Ga de volgende **herinnering** in en klik **verzenden** knoop.
 can you create a fallout visualization for the product interaction funnel, starting with all traffic and then in the next steps add Product Views, Add to Cart and purchases?
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt118.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt118.png)
 
 Selecteer **UpsertProject**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt119.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt119.png)
 
 Selecteer **RunReport**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt120.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt120.png)
 
 Dan moet je iets dergelijks zien. Ga de volgende **herinnering** in en klik **verzenden** knoop.
 
@@ -241,28 +241,18 @@ Dan moet je iets dergelijks zien. Ga de volgende **herinnering** in en klik **ve
 can you show me a visualization of the above fallout analysis?
 ```
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt120a.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt120a.png)
 
 Klik **Download PNG**.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt121.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt121.png)
 
 Je ziet nu de visualisatie van je falloutanalyse.
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt122.png)
+![ ChatGPT &amp; CJA ](./images/chatgpt122.png)
 
-Ga de volgende **herinnering** in en klik **verzenden** knoop.
+Volgende Stap: [ CJA &amp; Claude.ai met server MCP ](./ex2.md){target="_blank"}
 
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
+Ga terug naar [ Analytics &amp; Agenten ](./analyticsagents.md){target="_blank"}
 
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt123.png)
-
-Selecteer **RunReport**.
-
-![&#x200B; ChatGPT &amp; CJA &#x200B;](./images/chatgpt124.png)
-
-Ga terug naar [&#x200B; Analytics &amp; Agenten &#x200B;](./analyticsagents.md){target="_blank"}
-
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
