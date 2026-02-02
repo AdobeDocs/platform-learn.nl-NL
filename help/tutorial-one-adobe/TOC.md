@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3 Een externe DAM-app maken en implementeren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Uw app privé publiceren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 Workflow Builder {#crpr7}
+      + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Aan de slag met Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + Beheer van bedrijfsmiddelen {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -124,7 +127,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Aan de slag met Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Medewerkers {#agents}
    + [Overzicht van Agentic AI](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

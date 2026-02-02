@@ -3,16 +3,16 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -51,7 +51,7 @@ Technische elementen:
 - MCP-server, Python-laptop
 - Adobe API&#39;s
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Doel**
 
@@ -62,7 +62,18 @@ In deze oefening zult u leren hoe te:
 - Brand Concierge-instantie configureren in uw Adobe Experience Platform-sandbox
 - Brand Concierge implementeren op uw AEM CS/EDS-website
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+[1.5 Analyses en agents](./modules/agents/module1.5/analyticsagents.md)
+
+**Doel**
+
+Als Analyst van Gegevens, AI Ontwikkelaar of AI Architect van de Toepassing, zult u leren hoe te om rapporttaken zoals rapportverwezenlijking te automatiseren, die analyse plannen gebruikend externe agenten. U leert hoe u nieuwe campagnegegevens, publieksgegevens of prestatiegegevens in uw agentische workflows opneemt.
+
+In deze oefening zult u leren hoe te:
+
+- Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
+- Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
