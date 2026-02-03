@@ -3,16 +3,16 @@ title: Adobe Analytics & Claude.ai met MCP-server
 description: Adobe Analytics & Claude.ai met MCP-server
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
 
 # 1.5.3 Adobe Analytics &amp; Claude.ai met MCP-server
 
-[!BADGE &#x200B; Alpha &#x200B;]
+[!BADGE  Alpha ]
 
 +++Alpha-gegevens
 Door CJA &amp; Claude.ai te gebruiken met MCP server Alpha, erkent U hierbij dat Alpha &quot;zoals is&quot;zonder enige garantie van welke aard ook wordt verstrekt. Adobe is niet verplicht de Alpha te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen. U wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de juiste werking of prestaties van dergelijke Alpha en/of begeleidende materialen. De Alpha wordt beschouwd als vertrouwelijke informatie van Adobe. Alle &quot;Feedback&quot; (informatie over de Alpha, inclusief maar niet beperkt tot problemen of defecten die u tegenkomt bij het gebruik van de Alpha, suggesties, verbeteringen en aanbevelingen) die u aan Adobe verstrekt, worden hierbij aan Adobe toegewezen, inclusief alle rechten, titel en interesse in en voor dergelijke feedback.
@@ -33,17 +33,17 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 >- een betaalde versie van Claude.ai
 >- de Claude.ai-webclient gebruiken
 
-Ga naar [&#x200B; https://claude.ai/ &#x200B;](https://claude.ai/){target="_blank"} en login die uw rekeningsdetails gebruiken. Nadat u zich hebt aangemeld, kunt u dit beter zien. Klik op het pictogram **+** .
+Ga naar [ https://claude.ai/ ](https://claude.ai/){target="_blank"} en login die uw rekeningsdetails gebruiken. Nadat u zich hebt aangemeld, kunt u dit beter zien. Klik op het pictogram **+** .
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa1.png)
+![ Claude.ai ](./images/claudeaa1.png)
 
 Selecteer **toevoegen schakelaars**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa2.png)
+![ Claude.ai ](./images/claudeaa2.png)
 
 Klik **toevoegen een douane**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa3.png)
+![ Claude.ai ](./images/claudeaa3.png)
 
 Vul de velden als volgt in:
 
@@ -52,23 +52,23 @@ Vul de velden als volgt in:
 
 Klik **toevoegen**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa4.png)
+![ Claude.ai ](./images/claudeaa4.png)
 
 Dan moet je dit zien. Klik **verbinden**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa5.png)
+![ Claude.ai ](./images/claudeaa5.png)
 
 Zodra u met succes voor authentiek wordt verklaard, zou u dit moeten zien. Klik op het pictogram **+** om een nieuwe chat te starten.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa6.png)
+![ Claude.ai ](./images/claudeaa6.png)
 
 Ga naar **+**, aan **Schakelaars** en u zou moeten zien dat de **Adobe Analytics** schakelaar nu wordt toegelaten.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa7.png)
+![ Claude.ai ](./images/claudeaa7.png)
 
 U bent nu klaar om uw gegevensanalyse te starten.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa8.png)
+![ Claude.ai ](./images/claudeaa8.png)
 
 ## 1.5.3.2 Context instellen in Adobe Analytics
 
@@ -86,19 +86,19 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 list report suites
 ```
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa9.png)
+![ Claude.ai ](./images/claudeaa9.png)
 
 Selecteer **altijd toestaan**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa10.png)
+![ Claude.ai ](./images/claudeaa10.png)
 
 Selecteer **altijd toestaan**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa11.png)
+![ Claude.ai ](./images/claudeaa11.png)
 
 Dan moet je iets dergelijks zien.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa12.png)
+![ Claude.ai ](./images/claudeaa12.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -106,15 +106,15 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 use report suite CID Demo Data
 ```
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa13.png)
+![ Claude.ai ](./images/claudeaa13.png)
 
 Selecteer **altijd toestaan**.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa14.png)
+![ Claude.ai ](./images/claudeaa14.png)
 
 Uw rapportsuite is nu geselecteerd.
 
-![&#x200B; Claude.ai &#x200B;](./images/claudeaa15.png)
+![ Claude.ai ](./images/claudeaa15.png)
 
 ## 1.5.2.3 Ontdek de rapportsuite
 
@@ -124,19 +124,19 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop om te onderzoeken 
 list the available metrics and dimensions
 ```
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa101.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa101.png)
 
 Selecteer **altijd toestaan**.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa102.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa102.png)
 
 Selecteer **altijd** opnieuw toestaan.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa103.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa103.png)
 
 Deze reactie, die de metriek en de dimensies omvat die in dit rapportpakket werden opgesteld, zou u dan moeten zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa104.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa104.png)
 
 ## 1.5.2.4 Rapporten
 
@@ -146,11 +146,11 @@ U kunt nu de gegevens gaan verkennen. Begin door de hieronder herinnering in te 
 show me pageviews for Feb 2?
 ```
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa105.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa105.png)
 
 Dan moet je iets dergelijks zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa106.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa106.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -158,11 +158,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 break down pageviews by page name
 ```
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa107.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa107.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa108.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa108.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -170,15 +170,15 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 give me an overview of page names, page views by marketing channel
 ```
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa109.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa109.png)
 
 Dan moet je iets dergelijks zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa110.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa110.png)
 
 Schuif een beetje omlaag om de analyse te zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa111.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa111.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -186,14 +186,34 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Analyze different metrics by marketing channel
 ```
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa112.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa112.png)
 
 Dan moet je iets dergelijks zien.
 
-![&#x200B; Claude.ai &amp; CJA &#x200B;](./images/claudeaa113.png)
+![ Claude.ai &amp; CJA ](./images/claudeaa113.png)
+
+Ga de volgende **Herinnering** in en klik **verzenden** knoop.
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![ Claude.ai &amp; CJA ](./images/claudeaa114.png)
+
+U zou dan iets als dit moeten zien, eerst tonend **Hoogste het Volgen Codes door Bezoeken**.
+
+![ Claude.ai &amp; CJA ](./images/claudeaa115.png)
+
+U kunt de volgende codes dan zien die de meeste aankopen in de **Hoogste het Volgen Codes door Orders (Aankopen)** rapport reden.
+
+![ Claude.ai &amp; CJA ](./images/claudeaa116.png)
+
+En dan vind je aanvullende inzichten van Claude.ai gebaseerd op de gegevens van Adobe Analytics.
+
+![ Claude.ai &amp; CJA ](./images/claudeaa117.png)
 
 Je hebt deze oefening nu afgerond.
 
-Ga terug naar [&#x200B; Analytics &amp; Agenten &#x200B;](./analyticsagents.md){target="_blank"}
+Ga terug naar [ Analytics &amp; Agenten ](./analyticsagents.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
