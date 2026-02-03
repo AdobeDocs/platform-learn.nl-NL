@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ## Volgende stappen
 
-Volgende Stap: [ Frame.io &amp; ESM ](./ex2.md){target="_blank"}
+Volgende Stap: [&#x200B; Frame.io &amp; ESM &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Beheer van de Opslag van de Onderneming ](./esm.md){target="_blank"}
+Ga terug naar [&#x200B; Beheer van de Opslag van de Onderneming &#x200B;](./esm.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

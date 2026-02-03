@@ -26,22 +26,22 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[ 1.8.1 Workfront &amp; ESM ](./ex1.md){target="_blank"}
+[&#x200B; 1.8.1 Workfront &amp; ESM &#x200B;](./ex1.md){target="_blank"}
 
 Hierbij gebruikt u Adobe Workfront in combinatie met Enterprise Storage Management.
 
-[ 1.8.2 Frame.io &amp; ESM ](./ex2.md){target="_blank"}
+[&#x200B; 1.8.2 Frame.io &amp; ESM &#x200B;](./ex2.md){target="_blank"}
 
 In deze oefening, zult u Frame.io in combinatie met het Beheer van de Opslag van de Onderneming gebruiken.
 
-[ 1.8.3 Adobe Express &amp; ESM ](./ex3.md){target="_blank"}
+[&#x200B; 1.8.3 Adobe Express &amp; ESM &#x200B;](./ex3.md){target="_blank"}
 
 Hierbij gebruikt u Adobe Express in combinatie met Enterprise Storage Management.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
