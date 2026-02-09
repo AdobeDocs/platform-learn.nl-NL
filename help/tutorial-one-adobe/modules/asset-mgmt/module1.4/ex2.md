@@ -14,23 +14,23 @@ ht-degree: 0%
 
 ## 1.4.2.1 Uw campagne maken in Adobe Journey Optimizer
 
-Login aan Adobe Journey Optimizer door naar [ Adobe Experience Cloud ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ ACOP ](./images/acophome.png)
+![&#x200B; ACOP &#x200B;](./images/acophome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis {van uw zandbak** zijn.`--aepSandboxName--`
+U zult aan de **1&rbrace; mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd. U zult dan in de **1} mening van het Huis &lbrace;van uw zandbak** zijn.`--aepSandboxName--`
 
-![ ACOP ](./images/acoptriglp.png)
+![&#x200B; ACOP &#x200B;](./images/acoptriglp.png)
 
 U maakt nu een campagne. In tegenstelling tot de op een gebeurtenis gebaseerde reis van de vorige oefening die op inkomende ervaringsgebeurtenissen of publieksingangen of uitgang baseert om een reis voor één specifieke klant teweeg te brengen, richten de campagnes één keer een heel publiek met unieke inhoud zoals nieuwsbrieven, eenmalige bevorderingen, of generische informatie of periodiek met gelijkaardige inhoud die op een regelmatige basis wordt verzonden zoals bijvoorbeeld verjaardagscampagnes en herinneringen.
 
 In het menu, ga naar **Campagnes** en klik **creeer campagne**.
 
-![ Journey Optimizer ](./images/gsemail21.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail21.png)
 
 Selecteer **Gepland - Op de markt brengend** en klik **creeer**.
 
-![ Journey Optimizer ](./images/gsemail22.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail22.png)
 
 Voor het scherm van de campagneverwezenlijking, vorm het volgende:
 
@@ -38,15 +38,15 @@ Voor het scherm van de campagneverwezenlijking, vorm het volgende:
 
 Klik **Acties**.
 
-![ Journey Optimizer ](./images/gsemail23.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail23.png)
 
 Klik **+ voeg Actie** toe en selecteer dan **E-mail**.
 
-![ Journey Optimizer ](./images/gsemail24.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail24.png)
 
 Dan, selecteer een bestaande **E-mailconfiguratie** en klik dan **uitgeven inhoud**.
 
-![ Journey Optimizer ](./images/gsemail25.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail25.png)
 
 Dan zie je dit. Voor de **lijn van het Onderwerp**, gebruik dit:
 
@@ -56,38 +56,38 @@ Dan zie je dit. Voor de **lijn van het Onderwerp**, gebruik dit:
 
 Daarna, klik **uitgeven inhoud**.
 
-![ Journey Optimizer ](./images/gsemail26.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail26.png)
 
 Selecteer **Ontwerp van kras**.
 
-![ Journey Optimizer ](./images/gsemail27.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail27.png)
 
 Dan moet je dit zien.
 
-![ Journey Optimizer ](./images/gsemail28.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail28.png)
 
 Voeg 2x **1 :1 kolom** aan het canvas toe.
 
-![ Journey Optimizer ](./images/gsemail29.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail29.png)
 
 Ga naar **Fragmenten**, sleep het **kopbal** fragment aan de eerste 1 :1 kolom en sleep dan het **footer** fragment aan de tweede 1 :1 kolom.
 
-![ Journey Optimizer ](./images/gsemail30.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail30.png)
 
 Voeg een nieuwe 1 :1 kolom binnen tussen de 2 fragmenten toe, en voeg dan een **Beeld** in die 1 :1 kolom toe. Dan, klik **doorbladeren**.
 
-![ Journey Optimizer ](./images/gsemail31.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail31.png)
 
 Navigeer naar de map waarin u de sjabloon Dynamische media hebt opgeslagen. Selecteer uw Dynamische malplaatje van Media en klik dan **Uitgezocht**.
 
-![ Journey Optimizer ](./images/gsemail32.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail32.png)
 
 Dan moet je dit zien.
 
-![ Journey Optimizer ](./images/gsemail33.png)
+![&#x200B; Journey Optimizer &#x200B;](./images/gsemail33.png)
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Experience Manager Assets &amp; Dynamische Media ](./aemassetsdm.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Experience Manager Assets &amp; Dynamische Media &#x200B;](./aemassetsdm.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

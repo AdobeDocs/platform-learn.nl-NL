@@ -25,18 +25,18 @@ ht-degree: 0%
 
 ## Uitoefening
 
-[ 1.4.1 creeer uw activa en dynamisch media malplaatje ](./ex1.md){target="_blank"}
+[&#x200B; 1.4.1 creeer uw activa en dynamisch media malplaatje &#x200B;](./ex1.md){target="_blank"}
 
 In deze oefening, zult u Adobe Photoshop gebruiken om diverse beelden tot stand te brengen, die u dan opstelling als dynamisch malplaatje met AEM Assets Dynamic Media zult.
 
-[ 1.4.2 Gebruik uw dynamisch media malplaatje met Adobe Journey Optimizer ](./ex2.md){target="_blank"}
+[&#x200B; 1.4.2 Gebruik uw dynamisch media malplaatje met Adobe Journey Optimizer &#x200B;](./ex2.md){target="_blank"}
 
 In deze oefening, zult u het malplaatje gebruiken u met de Dynamische Media van AEM Assets in Adobe Journey Optimizer creeerde om e-mails te hyper-personaliseren.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
