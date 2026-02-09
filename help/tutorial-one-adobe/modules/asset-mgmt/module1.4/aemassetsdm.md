@@ -3,10 +3,11 @@ title: Adobe Experience Manager Assets en dynamische media
 description: Adobe Experience Manager Assets en dynamische media
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8c2abe62aa14af103f90eac71b57261846d3346a
+exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
+source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 1%
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +20,23 @@ ht-degree: 1%
 ## Vereisten
 
 - Toegang tot AEM Assets en dynamische media
+- Toegang tot Adobe Photoshop
+- Toegang tot Adobe Journey Optimizer
 
 ## Uitoefening
 
-[&#x200B; 1.4.1 die met AEM Assets &amp; Dynamische Media &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.4.1 creeer uw activa en dynamisch media malplaatje ](./ex1.md){target="_blank"}
 
-TBC.
+In deze oefening, zult u Adobe Photoshop gebruiken om diverse beelden tot stand te brengen, die u dan opstelling als dynamisch malplaatje met AEM Assets Dynamic Media zult.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[ 1.4.2 Gebruik uw dynamisch media malplaatje met Adobe Journey Optimizer ](./ex2.md){target="_blank"}
+
+In deze oefening, zult u het malplaatje gebruiken u met de Dynamische Media van AEM Assets in Adobe Journey Optimizer creeerde om e-mails te hyper-personaliseren.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
