@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,11 @@ Leer hoe u Adobe Journey Optimizer-mogelijkheden voor beslissingsbeheer implemen
 Met deze zelfstudie zijn Journey Optimizer-gebruikers uitgerust om functies voor Beslissingsbeheer te gebruiken, waardoor de personalisatie en relevantie van hun klantinteracties wordt vergroot.
 
 
-![&#x200B; SDK van het Web en het diagram van Adobe Analytics &#x200B;](assets/dc-websdk-ajo.png)
+>[!WARNING]
+>
+> De Luma-website die in deze zelfstudie wordt gebruikt, wordt naar verwachting vervangen in de week van 16 februari 2026. Het werk dat in het kader van deze zelfstudie wordt uitgevoerd, is mogelijk niet van toepassing op de nieuwe website.
+
+![ SDK van het Web en het diagram van Adobe Analytics ](assets/dc-websdk-ajo.png)
 
 ## Leerdoelen
 
@@ -56,7 +60,7 @@ Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Ad
 
 ## Toegang verlenen tot het beheer van besluiten
 
-Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [&#x200B; Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [ Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## De gegevensstroom configureren
 
@@ -64,21 +68,21 @@ Offer Decisioning moet in de **datastream** configuratie worden toegelaten alvor
 
 Offer Decisioning configureren in de gegevensstroom:
 
-1. Ga naar de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/#/data-collection).
+1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection).
 
 1. Voor de linkernavigatie, uitgezochte **Gegevensstromen**.
 
 1. Selecteer de eerder gemaakte Luma Web SDK-gegevensstroom.
 
-   ![&#x200B; Uitgezochte datastream &#x200B;](assets/decisioning-datastream-select.png)
+   ![ Uitgezochte datastream ](assets/decisioning-datastream-select.png)
 
 1. Selecteer **uitgeven** binnen de **Dienst van Adobe Experience Platform**.
 
-   ![&#x200B; geeft de dienst &#x200B;](assets/decisioning-edit-datastream.png) uit
+   ![ geeft de dienst ](assets/decisioning-edit-datastream.png) uit
 
 1. Controleer **Offer Decisioning** doos.
 
-   ![&#x200B; VOEG SCREENSHOT &#x200B;](assets/decisioning-check-offer-box.png) TOE
+   ![ VOEG SCREENSHOT ](assets/decisioning-check-offer-box.png) TOE
 
 1. Selecteer **sparen**.
 
@@ -106,7 +110,7 @@ Voor Beslissingsbeheer zijn aanvullende SDK-stappen vereist, afhankelijk van het
 
    1. Voor de linkernavigatie, uitgezochte **Markeringen**.
 
-      ![&#x200B; Uitgezochte Markeringen &#x200B;](assets/decisioning-data-collection-tags.png)
+      ![ Uitgezochte Markeringen ](assets/decisioning-data-collection-tags.png)
 
    1. Selecteer het **Bezit van de Markering**.
 
@@ -155,13 +159,13 @@ Voordat u de aanbiedingen gaat maken, moet u verschillende onderdelen definiëre
 
 De lijst van plaatsen is toegankelijk in het **menu van Componenten**. Er zijn filters beschikbaar waarmee u plaatsingen kunt ophalen op basis van een specifiek kanaal of specifieke inhoud.
 
-![&#x200B; Plaatsen van de Mening &#x200B;](assets/decisioning-placements-list.png)
+![ Plaatsen van de Mening ](assets/decisioning-placements-list.png)
 
 Voer de volgende stappen uit om de plaatsing te maken:
 
 1. Klik **creëren plaatsing**.
 
-   ![&#x200B; creeer plaatsing &#x200B;](assets/decisioning-create-placement.png)
+   ![ creeer plaatsing ](assets/decisioning-create-placement.png)
 
 1. Definieer de eigenschappen van de plaatsing:
    * **Naam**: De naam van de plaatsing. Laten wij de voorbeeldplaatsing *&quot;Banner van de Homepage&quot;roepen*.
@@ -169,13 +173,13 @@ Voer de volgende stappen uit om de plaatsing te maken:
    * **inhoudstype**: Het type van inhoud dat de plaatsing wordt toegestaan om te tonen: Tekst, HTML, de Verbinding van het Beeld, of JSON. U kunt *&quot;HTML&quot;* voor de aanbieding gebruiken.
    * **Beschrijving**: Een beschrijving van de plaatsing (facultatief).
 
-   ![&#x200B; voeg details &#x200B;](assets/decisioning-placement-details.png) toe
+   ![ voeg details ](assets/decisioning-placement-details.png) toe
 
 1. Klik **sparen**.
 1. Zodra de plaatsing wordt gecreeerd, toont het in de plaatsingslijst.
 1. Selecteer de rij met uw nieuwe plaatsing en neem nota van plaatsidentiteitskaart, aangezien dit voor configuratie binnen uw Reikwijdte van het Besluit noodzakelijk kan zijn.
 
-   ![&#x200B; Zie Plaatsing-id &#x200B;](assets/decisioning-placement-id.png)
+   ![ Zie Plaatsing-id ](assets/decisioning-placement-id.png)
 
 ### Beslissingsregels voor de status van Loyalty
 
@@ -187,16 +191,16 @@ Voer de volgende stappen uit om de beslissingsregels te maken:
 
 1. Navigeer aan het **Regels** lusje, en klik **creeer regel**.
 
-   ![&#x200B; creeer de regel &#x200B;](assets/decisioning-create-rule.png)
+   ![ creeer de regel ](assets/decisioning-create-rule.png)
 
-1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **&#x200B;**&#x200B;is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
+1. Laat de eerste regel &quot;*Gouden Regel van de Status van de Loyalty*&quot;noemen. U kunt XDM-velden gebruiken om de regel te definiëren. De Bouwer van het Segment van Adobe Experience Platform **** is een intuïtieve interface die u kunt gebruiken om de regelvoorwaarden te bouwen.
 
-   ![&#x200B; bepaal de regel &#x200B;](assets/decisioning-define-rule.png)
+   ![ bepaal de regel ](assets/decisioning-define-rule.png)
 
 1. Klik **sparen** om de regelvoorwaarde te bevestigen.
 1. De onlangs bewaarde &#39;*Gouden Regel van de Status van de Loyalty*&#39; zal in de **lijst van Regels** tonen. Selecteer deze optie om de eigenschappen ervan weer te geven.
 
-   ![&#x200B; Mening leidde tot regel &#x200B;](assets/decisioning-view-rules.png)
+   ![ Mening leidde tot regel ](assets/decisioning-view-rules.png)
 
 1. Creëer nu de resterende voorwaarden van de loyaliteitsaanbieding voor het gebruiksgeval.
 
@@ -211,11 +215,11 @@ Voer de volgende stappen uit om de verzamelingskwalificatie Loyalty Rewards te m
 
 1. Navigeer aan de **kwalificeerders van de Inzameling** tabel, en klik **creeer inzamelingsbepaler**.
 
-   ![&#x200B; creeer inzamelingsbepaler &#x200B;](assets/decisioning-create-collection-qualifier.png)
+   ![ creeer inzamelingsbepaler ](assets/decisioning-create-collection-qualifier.png)
 
 1. Laat de inzamelingskwalificatie &quot;*Beloningen van de Loyalty* noemen
 
-   ![&#x200B; Naam de inzameling &#x200B;](assets/decisioning-name-collection.png)
+   ![ Naam de inzameling ](assets/decisioning-name-collection.png)
 
 1. Het nieuwe inzamelingsbepaler zou nu in het **bepalende gebied van de Inzameling** tabel moeten tonen
 
@@ -225,7 +229,7 @@ Nu is het tijd om de Loyalty Rewards aanbiedingen te creëren.
 
 De lijst van aanbiedingen is toegankelijk in het **menu van Aanbiedingen**.
 
-![&#x200B; de aanbiedingen van de Mening menu &#x200B;](assets/decisioning-offers-menu.png)
+![ de aanbiedingen van de Mening menu ](assets/decisioning-offers-menu.png)
 
 
 ### Aanbiedingen maken voor verschillende kwaliteitstips
@@ -238,23 +242,23 @@ Om de eerste **aanbieding** tot stand te brengen, volg deze stappen:
 
 1. Laten wij de eerste aanbieding noemen &quot;*Luma Loyalty Rij - Goud*&#39;. Je moet een begin-/einddatum en -tijd voor dit voorstel opgeven. U zou het **inzamelingsbepalende** &quot;*Loyalty beloningen*&quot;aan de aanbieding ook moeten associëren, toestaand u om binnen de **Bibliotheek van de Aanbieding** beter te organiseren. Daarna, klik **daarna**.
 
-   ![&#x200B; voeg aanbiedingsdetails toe &#x200B;](assets/decisioning-add-offer-details.png)
+   ![ voeg aanbiedingsdetails toe ](assets/decisioning-add-offer-details.png)
 
-1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3&rbrace; radioknoop van de Douane &lbrace;.**
+1. Nu moet u **vertegenwoordiging** toevoegen om te bepalen waar de aanbiedingsvertoningen. Laten wij het **Webkanaal** kiezen. Laten wij ook kiezen de &quot;*Banner van de Homepage* &quot; **plaatsing** u eerder vormde. De geselecteerde **plaatsing** is HTML-type, zodat kunt u HTML, JSON, of inhoud van de TEKST direct aan de redacteur toevoegen om de aanbieding te bouwen gebruikend het **3} radioknoop van de Douane {.**
 
-   ![&#x200B; voeg representatiedetails &#x200B;](assets/decisioning-add-representation-details.png) toe
+   ![ voeg representatiedetails ](assets/decisioning-add-representation-details.png) toe
 
 1. Bewerk direct de aanbiedingsinhoud met de **Redacteur van de Uitdrukking**. U kunt HTML-, JSON- of TEXT-inhoud aan deze plaatsing toevoegen. Verzeker u de correcte **wijze** bij de bodem van de redacteur selecteert, afhankelijk van uw inhoudstype. U kunt **ook raken bevestigt** om er geen fouten te verzekeren.
 
-   ![&#x200B; voeg aanbieding HTML &#x200B;](assets/decisioning-add-offer-html.png) toe
+   ![ voeg aanbieding HTML ](assets/decisioning-add-offer-html.png) toe
 
 1. U kunt ook de Expressieeditor gebruiken om kenmerken op te halen die zijn opgeslagen in Adobe Experience Platform. Laten wij de voornaam van een profiel aan de aanbiedingsinhoud toevoegen om voor de loyaliteitsleden op een 1 :1 niveau beter te personaliseren.
 
-   ![&#x200B; voeg aanbiedingspitalisatie toe &#x200B;](assets/decisioning-add-offer-personalization.png)
+   ![ voeg aanbiedingspitalisatie toe ](assets/decisioning-add-offer-personalization.png)
 
 1. Voeg beperkingen toe om de aanbieding aan profielen slechts te tonen die voor de &quot;*Gouden Regel van de Status van de Loyalty*&quot;kwalificeren.
 
-   ![&#x200B; voeg regelbeperking &#x200B;](assets/decisioning-add-rule-constraint.png) toe
+   ![ voeg regelbeperking ](assets/decisioning-add-rule-constraint.png) toe
 
 1. Zodra u klaar bent met het herzien van uw aanbieding, klik **Afwerking**. Selecteer **sparen en keur** goed.
 
@@ -287,7 +291,7 @@ Ga als volgt te werk om de fallback-aanbieding te maken:
 
 **Besluiten** zijn containers voor aanbiedingen die de beste aanbieding beschikbaar voor een klant, afhankelijk van het doel kiezen.
 
-De lijst van besluiten is beschikbaar in het **1&rbrace; lusje van Besluiten {van het** 3} menu van Aanbiedingen.**&#x200B;**
+De lijst van besluiten is beschikbaar in het **1} lusje van Besluiten {van het** 3} menu van Aanbiedingen.****
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -335,11 +339,11 @@ Voer de volgende stappen uit om de beslissing te maken:
 
 Als beste praktijken, zou u de Luma het besluitvormingslogica van de Loyalty moeten bevestigen om ervoor te zorgen dat de correcte aanbiedingen aan het juiste loyaliteitspubliek worden geleverd. U kunt deze bevestiging doen door **testprofielen** te gebruiken. Het is ook een goed idee om wijzigingen in aanbiedingen te testen via testprofielen voordat nieuwe aanbiedingsversies naar de productie worden verplaatst.
 
-Om met het testen te beginnen, selecteer het **&#x200B;**&#x200B;lusje van Simulaties van het **3&rbrace; menu van Aanbiedingen &lbrace;.**
+Om met het testen te beginnen, selecteer het **** lusje van Simulaties van het **3} menu van Aanbiedingen {.**
 
 ### Loyalty-aanbiedingen testen
 
-1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [&#x200B; om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids &#x200B;](https://experienceleague.adobe.com/nl/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
+1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [ om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids ](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +375,7 @@ De **Adobe Experience Platform Debugger** uitbreiding, beschikbaar voor zowel Ch
 
 U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Deze bevestiging is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[&#x200B; Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview).
+[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -402,4 +406,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
