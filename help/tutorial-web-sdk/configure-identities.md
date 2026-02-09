@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Leer hoe u naamruimten configureert voor gebruik met Adobe Experience Platform Web SDK.
 
-De [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/id-service/using/home) plaatst een gemeenschappelijke bezoekersidentiteitskaart (ECID) over op SDK-Gebaseerde toepassingen van Adobe aan macht Experience Cloud mogelijkheden zoals publiek-deel tussen toepassingen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
+De [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/nl/docs/id-service/using/home) plaatst een gemeenschappelijke bezoekersidentiteitskaart (ECID) over op SDK-Gebaseerde toepassingen van Adobe aan macht Experience Cloud mogelijkheden zoals publiek-deel tussen toepassingen. U kunt ook uw eigen klant-id&#39;s naar de service sturen, zodat u toepassingen op verschillende apparaten kunt zoeken en kunt integreren met andere systemen, zoals uw CRM-systeem (Customer Relationship Management).
 
-De [&#x200B; Dienst van de Identiteit van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (ja, zijn er twee!) gebruikt ECIDs en klant IDs om identiteitsgrafieken te produceren, toestaand u om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
+De [&#x200B; Dienst van de Identiteit van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/home) (ja, zijn er twee!) gebruikt ECIDs en klant IDs om identiteitsgrafieken te produceren, toestaand u om attributen en gedrag in de Profielen van de Klant in real time samen te voegen.
 
 >[!WARNING]
 >
@@ -49,7 +49,7 @@ U moet de vorige lessen reeds hebben voltooid:
 >
 >De [&#x200B; Uitbreiding van identiteitskaart van Experience Cloud &#x200B;](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is niet nodig wanneer het uitvoeren van SDK van het Web van Adobe Experience Platform, aangezien de bibliotheek van JavaScript van het Web de dienstfunctionaliteit van identiteitskaart van de Bezoeker bevat.
 >
-> Als uw website de Experience Cloud-id-service al op uw website gebruikt (via de Bezoeker-API of de extensie voor de Experience Cloud-id-service) en u wilt deze blijven gebruiken wanneer u naar Adobe Experience Platform Web SDK migreert, moet u de nieuwste versie van de Bezoeker-API of de Experience Cloud ID Service-tagextensie gebruiken. Zie [&#x200B; Migratie van identiteitskaart &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) voor meer informatie.
+> Als uw website de Experience Cloud-id-service al op uw website gebruikt (via de Bezoeker-API of de extensie voor de Experience Cloud-id-service) en u wilt deze blijven gebruiken wanneer u naar Adobe Experience Platform Web SDK migreert, moet u de nieuwste versie van de Bezoeker-API of de Experience Cloud ID Service-tagextensie gebruiken. Zie [&#x200B; Migratie van identiteitskaart &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/identity/overview) voor meer informatie.
 
 ## Naamruimte maken
 
@@ -102,4 +102,4 @@ Nu de identiteiten op zijn plaats zijn, kan de gegevensstroom worden gevormd.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)

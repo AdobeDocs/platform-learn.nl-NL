@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u gebeurtenissen kunt doorsturen met Adobe Experience Platform Web SDK-gegevens.
 
-Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Door gebeurtenissen door:sturen kunt u gegevens rechtstreeks vanuit Adobe Experience Platform Edge Network naar andere leveranciers dan Adobe verzenden in plaats van naar de traditionele clientbrowser. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [&#x200B; Gebeurtenis die overzicht &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
+Het door:sturen van de gebeurtenis is een nieuw type van bezit beschikbaar in de Inzameling van Gegevens. Door gebeurtenissen door:sturen kunt u gegevens rechtstreeks vanuit Adobe Experience Platform Edge Network naar andere leveranciers dan Adobe verzenden in plaats van naar de traditionele clientbrowser. Kom meer over de voordelen van gebeurtenis te weten door:sturen in de [&#x200B; Gebeurtenis die overzicht &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/event-forwarding/overview) door:sturen.
 
 
 >[!WARNING]
@@ -28,7 +28,7 @@ Als u gebeurtenissen wilt doorsturen in Adobe Experience Platform, moeten gegeve
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [&#x200B; Adobe Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -327,4 +327,4 @@ Gefeliciteerd! U hebt gebeurtenis gevormd door:sturen!
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)

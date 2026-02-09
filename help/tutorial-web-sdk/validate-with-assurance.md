@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Web SDK-implementaties valideren met Experience Platform Assurance
 
-Adobe Experience Platform Assurance is een functie waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet. Lees meer over [&#x200B; Adobe Assurance &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance is een functie waarmee u kunt controleren, testen, simuleren en valideren hoe u gegevens verzamelt of ervaringen opdoet. Lees meer over [&#x200B; Adobe Assurance &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home).
 
 
 >[!WARNING]
@@ -98,4 +98,4 @@ Met een XDM-object dat nu op een pagina wordt geactiveerd, en met de kennis van 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)

@@ -60,7 +60,7 @@ Aanbiedingen op basis van gebeurtenissen worden momenteel niet ondersteund in Ad
 
 ## Toegang verlenen tot het beheer van besluiten
 
-Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [&#x200B; Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Om toegang tot de functionaliteit van het Beheer van het Besluit te verlenen, moet u het profiel van het a **Product** tot stand brengen en de overeenkomstige toestemmingen aan uw gebruikers toewijzen. [&#x200B; Leer meer bij het beheren van de gebruikers en de toestemmingen van Journey Optimizer in deze sectie &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## De gegevensstroom configureren
 
@@ -343,7 +343,7 @@ Om met het testen te beginnen, selecteer het **&#x200B;**&#x200B;lusje van Simul
 
 ### Loyalty-aanbiedingen testen
 
-1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [&#x200B; om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids &#x200B;](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
+1. Selecteer een testprofiel voor de simulatie. Klik **leiden profiel**. [&#x200B; om een nieuw testprofiel voor aanbieding het testen tot stand te brengen of aan te wijzen, deze gids &#x200B;](https://experienceleague.adobe.com/nl/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv) te volgen.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -375,7 +375,7 @@ De **Adobe Experience Platform Debugger** uitbreiding, beschikbaar voor zowel Ch
 
 U kunt debugger op de plaats van de Luma gebruiken om de besluitvormingslogica in productie te bevestigen. Deze bevestiging is een goede praktijk zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[&#x200B; Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[&#x200B; Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -406,4 +406,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
