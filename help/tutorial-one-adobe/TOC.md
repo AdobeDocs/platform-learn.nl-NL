@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Workflow Builder {#crpr7}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Aan de slag met Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Opslagbeheer voor bedrijven {#crpr8}
+   + 1.8 Unified Review &amp; Approval met Workfront, Frame.io en Enterprise Storage Management {#crpr8}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io &amp; ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Aan de slag met Workfront, Frame.io en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Een nieuw middel maken, dit beoordelen en goedkeuren](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Beheer van bedrijfsmiddelen {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -135,7 +134,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
