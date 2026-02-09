@@ -38,18 +38,18 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[ 1.8.1 die met Workfront, Frame.io &amp; ESM ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.8.1 die met Workfront, Frame.io &amp; ESM &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u lopen door de diverse configuraties nodig in Adobe Workfront, en u zult verwijzingsbeelden verstrekken zodat de ontwerper een nieuw middel kan creëren.
 
-[ 1.8.2 creeer een nieuw middel, herzie en keur het ](./ex2.md){target="_blank"} goed
+[&#x200B; 1.8.2 creeer een nieuw middel, herzie en keur het &#x200B;](./ex2.md){target="_blank"} goed
 
 In deze exercitie, zal een nieuw middel worden gecreeerd gebruikend Adobe Express, en het nieuwe middel zal dan in Frame.io worden geupload, om het overzicht en goedkeuringsproces te beginnen.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
