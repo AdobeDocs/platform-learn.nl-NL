@@ -47,7 +47,7 @@ Dan moet je dit zien.
 
 ![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp4.png)
 
-U ontvangt nu een e-mail zoals hieronder, die uw tijdelijk wachtwoord bevat. Om uw wachtwoord te veranderen, of het terug te winnen voor het geval u geen e-mail ontving, zou u **Adobe Dynamic Media Classic Desktop app** moeten installeren. U kunt installatieinstructies hier vinden: [&#x200B; https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+U ontvangt nu een e-mail zoals hieronder, die uw tijdelijk wachtwoord bevat. Om uw wachtwoord te veranderen, of het terug te winnen voor het geval u geen e-mail ontving, zou u **Adobe Dynamic Media Classic Desktop app** moeten installeren. U kunt installatieinstructies hier vinden: [&#x200B; https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Volg de instructies hier en kom hier terug zodra de app op uw systeem is geïnstalleerd.
 
