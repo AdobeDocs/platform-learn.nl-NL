@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >U hebt toegang nodig tot een werkende AEM Assets CS Author-omgeving met AEM Assets Dynamic Media ingeschakeld om deze oefening te kunnen voltooien.
 >
->Als u zulk een milieu niet hebt, ga naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
+>Als u zulk een milieu niet hebt, ga naar [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 1.4.1.1 Uw Dynamic Media-bedrijf maken
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`.
+Ga naar [&#x200B; https://my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp1.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp1.png)
 
 De rol neer aan **Dynamische Bedrijven van Media**. Klik op het pictogram **+** om een nieuw Dynamic Media Company te maken.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp2.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp2.png)
 
 Voer de volgende gegevens in:
 
@@ -41,13 +41,13 @@ Voer de volgende gegevens in:
 
 Klik **creëren**.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp3.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp3.png)
 
 Dan moet je dit zien.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp4.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp4.png)
 
-U ontvangt nu een e-mail zoals hieronder, die uw tijdelijk wachtwoord bevat. Om uw wachtwoord te veranderen, of het terug te winnen voor het geval u geen e-mail ontving, zou u **Adobe Dynamic Media Classic Desktop app** moeten installeren. U kunt installatieinstructies hier vinden: [ https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+U ontvangt nu een e-mail zoals hieronder, die uw tijdelijk wachtwoord bevat. Om uw wachtwoord te veranderen, of het terug te winnen voor het geval u geen e-mail ontving, zou u **Adobe Dynamic Media Classic Desktop app** moeten installeren. U kunt installatieinstructies hier vinden: [&#x200B; https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Volg de instructies hier en kom hier terug zodra de app op uw systeem is geïnstalleerd.
 
@@ -55,35 +55,35 @@ Open de **Desktopapp van Adobe Dynamic Media Classic**. Als u het wachtwoord ken
 
 Als u uw wachtwoord niet kent, klik **vergeten uw wachtwoord** verbinding en volg de instructie om uw wachtwoord terug te stellen, dan hier terug te komen en binnen te registreren.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp5.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp5.png)
 
 Na succesvolle login, zou u een scherm gelijkend op dit moeten zien.
 
-![ Dynamische Media van AEM Assets ](./images/aaemassdmcomp6.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aaemassdmcomp6.png)
 
 ## 1.4.1.2 Dynamische media configureren in AEM
 
-Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`.
+Ga naar [&#x200B; https://my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`.
 
 Klik hierop om het Cloud Manager-programma te openen. Dit wordt `--aepUserLdap-- - CitiSignal AEM+ACCS` genoemd.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets1.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets1.png)
 
 Klik op uw omgeving.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets3.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets3.png)
 
 Klik op de URL van de omgeving.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets2.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets2.png)
 
 Ga naar **Hulpmiddelen**, naar **de Diensten van de Wolk** en dan naar **Dynamische Configuratie van Media**.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets4.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets4.png)
 
 Selecteer **Globaal** (controleer niet checkbox), en klik dan **creeer**.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets5.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets5.png)
 
 Voer de volgende gegevens in:
 
@@ -94,7 +94,7 @@ Voer de volgende gegevens in:
 
 Klik **verbinden met Dynamische Media**.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets6.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets6.png)
 
 Dan moet je dit zien. Configureer het volgende:
 
@@ -104,149 +104,149 @@ Dan moet je dit zien. Configureer het volgende:
 
 Klik **sparen**.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets7.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets7.png)
 
 De configuratie van DYnamic Media is nu voltooid. Klik **OK**.
 
-![ Dynamische Media van AEM Assets ](./images/accsaemassets8.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/accsaemassets8.png)
 
 ## 1.4.1.3 Uw elementen exporteren
 
-Download dit dossier [ burgerschap-vezel-max-is-coming.psd ](./assets/citisignal-fiber-max-is-coming.psd){target="_blank"} en open het met Adobe Photoshop.
+Download dit dossier [&#x200B; burgerschap-vezel-max-is-coming.psd &#x200B;](./assets/citisignal-fiber-max-is-coming.psd){target="_blank"} en open het met Adobe Photoshop.
 
 Dan moet je dit zien. CitiSignal plant een uitrol van Fiber Max in drie steden: New York, Parijs en Dubai.
 
 Door specifieke lagen weer te geven of te verbergen, kunt u de afbeelding weergeven die door de ontwerpers is gemaakt.
 
-Hieronder vindt u de instructies voor het exporteren van de afbeeldingsbestanden uit de Photoshop PSD-sjabloon. Als u verkiest, kunt u de gebeëindigde beelden hier ook downloaden [ burgerschap-dm-email-assets.zip ](./assets/citisignal-dm-email-assets.zip){target="_blank"} en het dossier op uw Desktop openen.
+Hieronder vindt u de instructies voor het exporteren van de afbeeldingsbestanden uit de Photoshop PSD-sjabloon. Als u verkiest, kunt u de gebeëindigde beelden hier ook downloaden [&#x200B; burgerschap-dm-email-assets.zip &#x200B;](./assets/citisignal-dm-email-assets.zip){target="_blank"} en het dossier op uw Desktop openen.
 
 Dit is de versie voor New York.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm1.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm1.png)
 
 Dit is de versie voor Dubai.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm2.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm2.png)
 
 Dit is de versie voor Parijs.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm3.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm3.png)
 
 Er zullen mogelijk nog veel andere steden zijn waar CitiSignal in de toekomst de Fiber Max-versie van start zal gaan. Er kunnen nieuwe lagen in dit bestand worden gemaakt. Voorlopig ligt de nadruk op de drie steden die al genoemd zijn.
 
 Als u deze variaties wilt gebruiken in combinatie met AEM Assets Dynamic Media, moeten de lagen voor elke stad afzonderlijk worden geëxporteerd als afbeeldingen zonder het achtergrondbestand. Voor de achtergrondlaag moet dan een andere bewerking worden uitgevoerd, zonder dat steden worden opgenomen.
 
-Verberg en toon nu slechts een van de lagen. De eerste te tonen laag is de **laag van 0} Parijs {, en alle andere lagen zouden moeten worden verborgen.**
+Verberg en toon nu slechts een van de lagen. De eerste te tonen laag is de **laag van 0&rbrace; Parijs &lbrace;, en alle andere lagen zouden moeten worden verborgen.**
 
 Om die laag uit te voeren, ga naar **Dossier** > **Uitvoer** > **Uitvoer als...**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm4.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm4.png)
 
 Dan moet je dit zien. Selecteer het dossiertype **PNG**, zorg ervoor **Transparantie** wordt toegelaten en klik dan **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm5.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm5.png)
 
 Verander filename in `citisignal-fiber-max-is-coming-paris.png` en klik **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm6.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm6.png)
 
 De volgende te tonen laag is de **Dubai** laag, en alle andere lagen zouden moeten worden verborgen.
 
 Om die laag uit te voeren, ga naar **Dossier** > **Uitvoer** > **Uitvoer als...**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm4a.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm4a.png)
 
 Dan moet je dit zien. Selecteer het dossiertype **PNG**, zorg ervoor **Transparantie** wordt toegelaten en klik dan **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm5a.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm5a.png)
 
 Verander filename in `citisignal-fiber-max-is-coming-dubai.png` en klik **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm6a.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm6a.png)
 
-De volgende te tonen laag is de **laag van 0} New York {, en alle andere lagen zouden moeten worden verborgen.**
+De volgende te tonen laag is de **laag van 0&rbrace; New York &lbrace;, en alle andere lagen zouden moeten worden verborgen.**
 
 Om die laag uit te voeren, ga naar **Dossier** > **Uitvoer** > **Uitvoer als...**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm4b.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm4b.png)
 
 Dan moet je dit zien. Selecteer het dossiertype **PNG**, zorg ervoor **Transparantie** wordt toegelaten en klik dan **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm5b.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm5b.png)
 
 Verander filename in `citisignal-fiber-max-is-coming-newyork.png` en klik **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm6b.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm6b.png)
 
 De volgende te tonen laag is de **achtergrond** laag, en alle andere lagen zouden moeten worden verborgen.
 
 Om die laag uit te voeren, ga naar **Dossier** > **Uitvoer** > **Uitvoer als...**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm4c.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm4c.png)
 
 Dan moet je dit zien. Selecteer het dossiertype **PNG**, zorg ervoor **Transparantie** wordt toegelaten en klik dan **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm5c.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm5c.png)
 
 Verander filename in `citisignal-fiber-max-is-coming-background` en klik **Uitvoer**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm6c.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm6c.png)
 
 Deze bestanden moeten vervolgens beschikbaar zijn op de exportlocatie die u hebt geselecteerd.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm7.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm7.png)
 
 ## 1.4.1.4 Uw elementen uploaden naar AEM Assets CS
 
-Ga naar [ https://experience.adobe.com/ ](https://experience.adobe.com/){target="_blank"}. Ga naar **Experience Manager Assets**.
+Ga naar [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/){target="_blank"}. Ga naar **Experience Manager Assets**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm8.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm8.png)
 
 Selecteer de opslagplaats met de naam `--aepUserLdap-- - CitiSignal AEM + ACCS` .
 
-![ Dynamische Media van AEM Assets ](./images/aemdm9.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm9.png)
 
 Ga naar **Assets** en klik dan **creeer Omslag**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm10.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm10.png)
 
 Gebruik voor de map de naam: `--aepUserLdap-- - CitiSignal Dynamic Media` . Klik **creëren**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm11.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm11.png)
 
 Dubbelklik om de map te openen die u net hebt gemaakt.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm12.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm12.png)
 
 Klik **toevoegen Assets**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm13.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm13.png)
 
 Klik **doorbladeren** en selecteer dan **doorbladeren Dossiers**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm15.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm15.png)
 
 Selecteer de 4 PNG-bestanden die u in de vorige stap hebt geëxporteerd.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm16.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm16.png)
 
 Klik **uploaden**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm17.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm17.png)
 
 Uw afbeeldingen zijn nu beschikbaar in AEM Assets CS.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm18.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm18.png)
 
 Wacht een paar notulen en open dan de **Desktopapp van Adobe Dynamic Media Classic**, zou u ook de geuploade beelden moeten nu zien beschikbaar binnen Dynamische Media worden.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm19.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm19.png)
 
 ## 1.4.1.5 Dynamische mediasjabloon configureren
 
 In het linkermenu, ga naar **Dynamische Media Assets**. Klik om de map te openen `--aepUserLdap-- - CitiSignal Dynamic Media` . Dan, klik **creeer Malplaatje**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm20.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm20.png)
 
 Voer de volgende gegevens in:
 
@@ -256,111 +256,111 @@ Voer de volgende gegevens in:
 
 Klik **creëren**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm21.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm21.png)
 
 Dan moet je dit zien. Klik **voeg het pictogram van het Beeld** toe.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm22.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm22.png)
 
 Sleep het dossier **burgerschap-fiber-max-is-coming_Citisignaal-background.png** op het canvas en maak het het canvas passen.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm23.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm23.png)
 
 Daarna, sleep het dossier **burgerschap-vezel-max-is-coming_Citisignaal-newyork.png** op het canvas en maak het het canvas passen.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm24.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm24.png)
 
 Daarna, sleep het dossier **burgerschap-vezel-max-is-coming_Citisignaal-dubai.png** op het canvas en maak het het canvas passen.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm25.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm25.png)
 
 Daarna, sleep het dossier **burgerschap-vezel-max-is-coming_Citisignaal-paris.png** op het canvas en maak het het canvas passen.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm26.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm26.png)
 
 U hebt nu alle drie variaties in de sjabloon als afzonderlijke lagen tegelijk. U kunt specifieke lagen tonen/verbergen door het **lagen** pictogram te klikken, waar u ziet dat alle lagen momenteel zichtbaar zijn.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm27.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm27.png)
 
 Door een aantal lagen te verbergen, kunt u bepalen hoe het beeld eruit ziet. In dit voorbeeld, slechts is de laag voor **Parijs** en de achtergrondlaag zichtbaar.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm28.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm28.png)
 
 Vervolgens moet u een tekstlaag toevoegen. Klik het **pictogram van de tekstlaag**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm29.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm29.png)
 
 Dan moet je dit zien.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm30.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm30.png)
 
 Voel u vrij om het tekstveld aan te passen op de manier die u nodig acht, hier is een voorbeeld. Vergeet niet om de optie **Slimme Tekst toe te laten vergroot** zodat de echte tekst die in een recentere fase wordt opgenomen fijn zal kijken.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm31.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm31.png)
 
 Voeg een tweede tekstlaag toe en zorg ervoor dat deze er zo uitziet. Vergeet niet om de optie **Slimme Tekst toe te laten vergroot** zodat de echte tekst die in een recentere fase wordt opgenomen fijn zal kijken.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm32.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm32.png)
 
 Selecteer de eerste tekstlaag. Klik de 3 punten **..** en selecteer dan **uitgeven**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm33.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm33.png)
 
 Dan moet je dit zien. Omlaag schuiven.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm34.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm34.png)
 
 Klik het **schakelaar** pictogram zodat de gebied **Tekst** wordt toegelaten. Verander de **Naam van de Parameter** in `title`.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm35.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm35.png)
 
 Selecteer de tweede tekstlaag. Klik de 3 punten **..** en selecteer dan **uitgeven**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm36.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm36.png)
 
 Dan moet je dit zien. Omlaag schuiven.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm37.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm37.png)
 
 Klik het **schakelaar** pictogram zodat de gebied **Tekst** wordt toegelaten. Verander de **Naam van de Parameter** in `body`.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm38.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm38.png)
 
 Selecteer de laag voor **Parijs**. Klik de 3 punten **..** en klik **uitgeven**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm39.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm39.png)
 
 Ga naar **Paramaters**. Laat het gebied **toe Verbergen** en ga de **Naam van de Parameter** in: `city_paris`. Klik **sparen**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm40.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm40.png)
 
 Selecteer de laag voor **Dubai**. Klik de 3 punten **..** en klik **uitgeven**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm41.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm41.png)
 
 Ga naar **Paramaters**. Laat het gebied **toe Verbergen** en ga de **Naam van de Parameter** in: `city_dubai`. Klik **sparen**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm42.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm42.png)
 
 Selecteer de laag voor **New York**. Klik de 3 punten **..** en klik **uitgeven**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm43.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm43.png)
 
 Ga naar **Paramaters**. Laat het gebied **toe Verbergen** en ga de **Naam van de Parameter** in: `city_ny`. Klik **sparen**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm44.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm44.png)
 
 Klik **Voorproef**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm45.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm45.png)
 
 Laat de schakelaar voor **toe omvat alle parameters** en verandert sommige inputvariabelen zoals die in het schermschot worden vermeld. De afbeelding wordt dynamisch gewijzigd op basis van de ingevoerde gegevens. Voor de gebieden **city_paris**, **city_dubai** en **city_ny**, betekent een waarde van 0 dat dit beeld NIET zal worden verborgen en een waarde van 1 betekent dit beeld zal worden verborgen.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm46.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm46.png)
 
 Door sommige variabelen te wijzigen, wordt nu een andere afbeelding weergegeven.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm47.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm47.png)
 
 Als u meer variabelen wijzigt, wordt nu een andere afbeelding weergegeven.
 
@@ -372,7 +372,7 @@ Tijdens dataprep, werd een gebied gecreeerd in het Schema van Adobe Experience P
 >
 >De schermafbeelding hieronder van het Adobe Experience Platform-schema is alleen ter informatie. U hoeft niet naar AEP te navigeren om dit zelf te visualiseren.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm50.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm50.png)
 
 In de volgende oefening, zult u dat gebied gebruiken om dynamisch te selecteren welk beeld aan welke klant zou moeten worden getoond.
 
@@ -380,14 +380,14 @@ U kunt dit het beste een nieuwe afbeeldingslaag toevoegen.
 
 Laten we eerst de andere lagen verbergen die afbeeldingen voor de uitrollsteden bevatten.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm51.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm51.png)
 
 Daarna, ga naar **Beelden** en selecteer een willekeurig beeld van een stad en voeg het aan het canvas toe, en zorg ervoor het het volledige canvas past. Het maakt niet uit welke stadsafbeelding u kiest, aangezien het pad tijdens de volgende oefening dynamisch wordt gewijzigd door AJO.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm52.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm52.png)
 
 
-![ Dynamische Media van AEM Assets ](./images/aemdm53.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm53.png)
 
 Ga naar **Parameters**.
 
@@ -397,11 +397,11 @@ Klik het **schakelaar** pictogram zodat het gebied **Verbergen** wordt toegelate
 
 Klik **sparen**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm54.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm54.png)
 
 Klik **Voorproef**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm55.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm55.png)
 
 Dan moet je dit zien. Laat het schakelaarpictogram aan **toe omvat alle parameters**. Wijzig enkele invoervariabelen zoals aangegeven in de schermafbeelding. De afbeelding wordt dynamisch gewijzigd op basis van de ingevoerde gegevens. De statische gebieden **city_paris**, **city_dubai** en **city_ny**, zouden aan 1 moeten worden geplaatst wat betekent dat deze beelden zullen worden verborgen.
 
@@ -409,32 +409,32 @@ Het gebied **dynamic_city_hide** zou aan 0 moeten worden geplaatst, zo betekent 
 
 Het gebied **dynamic_city_image** heeft nu URL aan het beeld van Parijs, dat als dit kijkt: `vangeluwCitiSignalDM/citisignal-fiber-max-is-coming_citisignal-paris-1`.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm56.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm56.png)
 
 Selecteer het woord **parijs** in URL.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm57.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm57.png)
 
 Verandering **parijs** aan `newyork` en klik dan ergens anders in UI om de beeldverandering in het de plaatsbeeld van New York te zien.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm58.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm58.png)
 
 Selecteer het woord **newyork** en verander het in `dubai` en klik dan ergens anders in UI om de beeldverandering in het Dubai stadbeeld te zien.
 
 Tot slot klik **publiceren**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm60.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm60.png)
 
 Dan moet je dit zien. Klik **ja**.
 
-![ Dynamische Media van AEM Assets ](./images/aemdm61.png)
+![&#x200B; Dynamische Media van AEM Assets &#x200B;](./images/aemdm61.png)
 
 Uw sjabloon Dynamische media is nu geconfigureerd en gepubliceerd. In de volgende oefening, zult u dat malplaatje in combinatie met een e-mailcampagne in Adobe Journey Optimizer gebruiken.
 
 ## Volgende stappen
 
-Volgende Stap: [ gebruik uw dynamisch media malplaatje met Adobe Journey Optimizer ](./ex2.md){target="_blank"}
+Volgende Stap: [&#x200B; gebruik uw dynamisch media malplaatje met Adobe Journey Optimizer &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Adobe Experience Manager Assets &amp; Dynamische Media ](./aemassetsdm.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Experience Manager Assets &amp; Dynamische Media &#x200B;](./aemassetsdm.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
