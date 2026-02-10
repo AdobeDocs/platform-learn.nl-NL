@@ -3,7 +3,8 @@ title: Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce
 description: Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 1%
@@ -22,14 +23,14 @@ TBC
 
 ## Uitoefening
 
-[&#x200B; 1.7.1 Vestiging uw ontwikkelomgeving &#x200B;](./ex1.md){target="_blank"}
+[ 1.7.1 Vestiging uw ontwikkelomgeving ](./ex1.md){target="_blank"}
 
 TBC
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
