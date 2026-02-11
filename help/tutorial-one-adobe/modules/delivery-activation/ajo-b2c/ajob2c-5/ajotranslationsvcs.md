@@ -36,7 +36,7 @@ In deze oefening, zult u uw Vertaalleverancier vormen gebruikend de Vertaler van
 
 In deze oefening, zult u talen aan e-mail in uw campagne toevoegen.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -35,7 +35,7 @@ In deze module, zult u:
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -59,7 +59,7 @@ In deze oefening, zult u een Functie van de Wolk van Google creëren en vormen e
 
 In deze oefening, zult u uw milieu van AWS vormen gebruikend AWS IAM, AWS Kinesis, AWS Firehose en AWS S3 waarna u begint gebeurtenisgegevens door:sturen die door Web SDK worden verzameld.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

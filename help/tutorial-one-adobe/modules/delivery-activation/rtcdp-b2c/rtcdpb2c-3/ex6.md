@@ -15,27 +15,27 @@ ht-degree: 0%
 
 ## Adobe I/O-project instellen
 
-In deze oefening zult u Adobe I/O opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw project van Adobe I/O nog niet hebt gevormd, ga terug naar [&#x200B; oefening 3 in Module 2.1 &#x200B;](../rtcdpb2c-1/ex3.md) en volg de instructies daar.
+In deze oefening zult u Adobe I/O opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw project van Adobe I/O nog niet hebt gevormd, ga terug naar [ oefening 3 in Module 2.1 ](../rtcdpb2c-1/ex3.md) en volg de instructies daar.
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
+>Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
 
 ## Verificatie naar Adobe I/O
 
-In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw toepassing van Postman nog niet hebt gevormd, ga terug naar [&#x200B; Uitoefening 3 in Module 2.1 &#x200B;](../rtcdpb2c-1/ex3.md) en volg de instructies daar.
+In deze oefening zult u Postman opnieuw gebruiken om Adobe Experience Platform API&#39;s te vragen. Als u uw toepassing van Postman nog niet hebt gevormd, ga terug naar [ Uitoefening 3 in Module 2.1 ](../rtcdpb2c-1/ex3.md) en volg de instructies daar.
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
+>Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
 
 ## Definiëren van eindpunt en formaat
 
-Voor deze oefening, zult u een eindpunt nodig hebben om te vormen zodat wanneer een publiek kwalificeert, de kwalificatiegebeurtenis aan dat eindpunt kan worden gestroomd. In deze oefening, zult u een steekproefeindpunt gebruiken gebruikend [&#x200B; https://pipedream.com/requestbin &#x200B;](https://pipedream.com/requestbin). Ga naar [&#x200B; https://pipedream.com/requestbin &#x200B;](https://pipedream.com/requestbin), creeer een rekening en creeer dan een werkruimte. Als de werkruimte eenmaal is gemaakt, ziet u iets gelijkaardigs.
+Voor deze oefening, zult u een eindpunt nodig hebben om te vormen zodat wanneer een publiek kwalificeert, de kwalificatiegebeurtenis aan dat eindpunt kan worden gestroomd. In deze oefening, zult u een steekproefeindpunt gebruiken gebruikend [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin). Ga naar [ https://pipedream.com/requestbin ](https://pipedream.com/requestbin), creeer een rekening en creeer dan een werkruimte. Als de werkruimte eenmaal is gemaakt, ziet u iets gelijkaardigs.
 
 Klik **exemplaar** om url te kopiëren. U zult deze url in de volgende oefening moeten specificeren. De URL in dit voorbeeld is `https://eodts05snjmjz67.m.pipedream.net` .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/webhook1.png)
+![ Ingestie van Gegevens ](./images/webhook1.png)
 
 Wat de indeling betreft, gebruiken we een standaardsjabloon voor het streamen van publiekskwalificaties of -kwalificaties, samen met metagegevens zoals klantid&#39;s. De malplaatjes kunnen worden aangepast om aan de verwachtingen van specifieke eindpunten te voldoen, maar in deze oefening zullen wij een standaardmalplaatje opnieuw gebruiken, dat in een nuttige last als dit zal resulteren die aan het eindpunt zal worden gestroomd.
 
@@ -68,19 +68,19 @@ Om dat te doen, open uw toepassing van Postman en ga naar **Authoring API van de
 
 >[!NOTE]
 >
->Als u niet die inzameling van Postman hebt, ga terug naar [&#x200B; oefening 3 in Module 2.1 &#x200B;](../rtcdpb2c-1/ex3.md) en volg de instructies daar aan opstelling Postman met de verstrekte inzamelingen van Postman.
+>Als u niet die inzameling van Postman hebt, ga terug naar [ oefening 3 in Module 2.1 ](../rtcdpb2c-1/ex3.md) en volg de instructies daar aan opstelling Postman met de verstrekte inzamelingen van Postman.
 
 Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm1.png)
+![ Ingestie van Gegevens ](./images/sdkpm1.png)
 
 Vervang deze door `--aepSandboxName--` .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm2.png)
+![ Ingestie van Gegevens ](./images/sdkpm2.png)
 
 Daarna, ga naar **Lichaam**. Selecteer de tijdelijke aanduiding **{{body}}** .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm3.png)
+![ Ingestie van Gegevens ](./images/sdkpm3.png)
 
 U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande code:
 
@@ -107,11 +107,11 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
 
 Na het kleven van de bovengenoemde code, moet u het gebied **urlBasedDestination.url.value** manueel bijwerken, en u moet het aan url van Webhaak plaatsen u in de vorige stap creeerde, die `https://eodts05snjmjz67.m.pipedream.net` in dit voorbeeld was.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm4.png)
+![ Ingestie van Gegevens ](./images/sdkpm4.png)
 
 Na het bijwerken van het gebied **urlBasedDestination.url.value**, zou het als dit moeten kijken. Klik **verzenden**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm5.png)
+![ Ingestie van Gegevens ](./images/sdkpm5.png)
 
 >[!NOTE]
 >
@@ -120,17 +120,17 @@ Na het bijwerken van het gebied **urlBasedDestination.url.value**, zou het als d
 Na het klikken **verzend**, zal uw servermalplaatje worden gecreeerd, en als deel van de reactie zult u een gebied genoemd **instanceId** zien. Schrijf het neer, aangezien u het in de volgende stap zult nodig hebben. In dit voorbeeld, is **instanceId**
 `52482c90-8a1e-42fc-b729-7f0252e5cebd` .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm6.png)
+![ Ingestie van Gegevens ](./images/sdkpm6.png)
 
 ## Uw doelconfiguratie maken
 
 In Postman, onder **Authoring API van de Bestemming**, ga naar **configuraties van de Bestemming** en klik om het verzoek **POST te openen - creeer een bestemmingsconfiguratie**. Dan zie je dit. Onder **Kopballen**, moet u de waarde voor sleutel **x-zandbak-naam** manueel bijwerken en het plaatsen aan `--aepSandboxName--`. Selecteer de waarde **{{SANDBOX_NAME}}** en vervang deze door `--aepSandboxName--` .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm7.png)
+![ Ingestie van Gegevens ](./images/sdkpm7.png)
 
 Daarna, ga naar **Lichaam**. Selecteer de tijdelijke aanduiding **{{body}}** .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm9.png)
+![ Ingestie van Gegevens ](./images/sdkpm9.png)
 
 U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande code:
 
@@ -160,7 +160,7 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=nl-NL",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -197,109 +197,109 @@ U moet nu de tijdelijke aanduiding **{{body}}** vervangen door de onderstaande c
 }
 ```
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm11.png)
+![ Ingestie van Gegevens ](./images/sdkpm11.png)
 
 Na het kleven van de bovengenoemde code, moet u het gebied **destinationDelivery manueel bijwerken. destinationServerId**, en u moet het plaatsen aan **instanceId** van het malplaatje van de bestemmingsserver u in de vorige stap creeerde, die `52482c90-8a1e-42fc-b729-7f0252e5cebd` in dit voorbeeld was. Daarna, klik **verzenden**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm10.png)
+![ Ingestie van Gegevens ](./images/sdkpm10.png)
 
 Dan zie je dit antwoord.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/sdkpm12.png)
+![ Ingestie van Gegevens ](./images/sdkpm12.png)
 
 Je bestemming is nu gemaakt in Adobe Experience Platform. Laten we daar naartoe gaan en het controleren.
 
-Ga naar [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
+Ga naar [ Adobe Experience Platform ](https://experience.adobe.com/platform). Na het aanmelden landt je op de homepage van Adobe Experience Platform.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Alvorens u verdergaat, moet u a **zandbak** selecteren. De te selecteren sandbox krijgt de naam ``--aepSandboxName--`` . Nadat u de juiste [!UICONTROL sandbox] hebt geselecteerd, ziet u de schermwijziging en nu bevindt u zich in uw toegewezen [!UICONTROL sandbox] .
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![ Ingestie van Gegevens ](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 In het linkermenu, ga naar **Doelen**, klik **Catalogus** en scrol neer aan de categorie **Streaming**. Je ziet je bestemming nu beschikbaar.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk1.png)
+![ Ingestie van Gegevens ](./images/destsdk1.png)
 
 ## Uw publiek aan uw bestemming koppelen
 
 In **Doelen** > **Catalogus**, klik **Opstelling** op uw bestemming beginnen publiek aan uw nieuwe bestemming toe te voegen.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk2.png)
+![ Ingestie van Gegevens ](./images/destsdk2.png)
 
 Ga een willekeurige waarde voor het **dragerteken** in, als **1234**. Klik **verbinden met bestemming**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk3.png)
+![ Ingestie van Gegevens ](./images/destsdk3.png)
 
 Dan zie je dit. Gebruik `--aepUserLdap-- - Webhook` als naam voor uw doel. Selecteer een eindpunt van keus, in dit voorbeeld **EU**. Klik **daarna**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk4.png)
+![ Ingestie van Gegevens ](./images/destsdk4.png)
 
 U kunt desgewenst een beleid voor gegevensbeheer selecteren. Klik **daarna**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk5.png)
+![ Ingestie van Gegevens ](./images/destsdk5.png)
 
 Selecteer het publiek dat u eerder hebt gemaakt en dat de naam `--aepUserLdap-- - Interest in Galaxy S24` heeft. Klik **daarna**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk6.png)
+![ Ingestie van Gegevens ](./images/destsdk6.png)
 
 Dan zie je dit. Zorg ervoor om het **VELD van SOURCE** `--aepTenantId--.identification.core.ecid` aan het gebied `Identity: ecid` in kaart te brengen. Klik **daarna**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk7.png)
+![ Ingestie van Gegevens ](./images/destsdk7.png)
 
 Klik **Afwerking**.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk8.png)
+![ Ingestie van Gegevens ](./images/destsdk8.png)
 
 Uw bestemming is nu live. Nieuwe publiekskwalificaties worden nu gestreamd naar uw aangepaste webhaak.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk9.png)
+![ Ingestie van Gegevens ](./images/destsdk9.png)
 
 ## Activering van het publiek testen
 
-Ga naar [&#x200B; https://dsn.adobe.com &#x200B;](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
+Ga naar [ https://dsn.adobe.com ](https://dsn.adobe.com). Nadat je je hebt aangemeld bij je Adobe ID, kun je dit zien. Klik de 3 punten **..** op uw websiteproject en klik dan **Looppas** om het te openen.
 
-![&#x200B; DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
+![ DSN ](./../../datacollection/dc1.1/images/web8.png)
 
 Vervolgens wordt uw demowebsite geopend. Selecteer de URL en kopieer deze naar het klembord.
 
-![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
+![ DSN ](../../../getting-started/gettingstarted/images/web3.png)
 
 Open een nieuw Incognito-browservenster.
 
-![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
+![ DSN ](../../../getting-started/gettingstarted/images/web4.png)
 
 Plak de URL van uw demowebsite, die u in de vorige stap hebt gekopieerd. Vervolgens wordt u gevraagd u aan te melden met uw Adobe ID.
 
-![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
+![ DSN ](../../../getting-started/gettingstarted/images/web5.png)
 
 Selecteer uw accounttype en voltooi het aanmeldingsproces.
 
-![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
+![ DSN ](../../../getting-started/gettingstarted/images/web6.png)
 
 Uw website wordt vervolgens geladen in een Incognito-browservenster. Voor elke oefening, zult u een vers, incognito browser venster moeten gebruiken om uw demowebsite URL te laden.
 
-![&#x200B; DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
+![ DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
 In dit voorbeeld wilt u reageren op een specifieke klant die een specifiek product weergeeft.
-Van de **homepage van het Signaal 0&rbrace; Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
+Van de **homepage van het Signaal 0} Citi, ga** Telefoons &amp; apparaten **, en klik het product** Galaxy S24 **.**
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/homegalaxy.png)
+![ Ingestie van Gegevens ](./images/homegalaxy.png)
 
 De productpagina voor Galaxy S24 is nu weergegeven. Uw doelgroep komt dus in aanmerking voor uw profiel in de volgende minuten.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/homegalaxy1.png)
+![ Ingestie van Gegevens ](./images/homegalaxy1.png)
 
 Wanneer u de Kijker van het Profiel opent, en naar **Soorten publiek** gaat gaan, zult u het publiek zien kwalificeren.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/homegalaxydsdk.png)
+![ Ingestie van Gegevens ](./images/homegalaxydsdk.png)
 
-Ga nu terug naar uw open webhaak op [&#x200B; https://eodts05snjmjz67.m.pipedream.net &#x200B;](https://eodts05snjmjz67.m.pipedream.net), waar u een nieuw inkomend verzoek zou moeten zien, dat uit Adobe Experience Platform voortkomt en die de gebeurtenis van de publiekskwalificatie bevat.
+Ga nu terug naar uw open webhaak op [ https://eodts05snjmjz67.m.pipedream.net ](https://eodts05snjmjz67.m.pipedream.net), waar u een nieuw inkomend verzoek zou moeten zien, dat uit Adobe Experience Platform voortkomt en die de gebeurtenis van de publiekskwalificatie bevat.
 
-![&#x200B; Ingestie van Gegevens &#x200B;](./images/destsdk10.png)
+![ Ingestie van Gegevens ](./images/destsdk10.png)
 
 ## Volgende stappen
 
-Ga terug naar [&#x200B; in real time CDP - Bouw een publiek en neem actie &#x200B;](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
+Ga terug naar [ in real time CDP - Bouw een publiek en neem actie ](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

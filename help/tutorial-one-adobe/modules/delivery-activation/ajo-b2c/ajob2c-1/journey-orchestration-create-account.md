@@ -22,12 +22,12 @@ In deze module nemen we de stappen om Adobe Journey Optimizer te gebruiken. U co
 
 ## Vereisten
 
-- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
+- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
 - Toegang tot Adobe Journey Optimizer
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -47,7 +47,7 @@ In deze oefening, zult u leren hoe te om een e-mailbericht te vormen.
 
 Dit zal u door de configuratie van Lancering begeleiden om uw gebeurtenis teweeg te brengen en de juiste lading te verstrekken en, zult u zich een e-mail kunnen verzenden.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

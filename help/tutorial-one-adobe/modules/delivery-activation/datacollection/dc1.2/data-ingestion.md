@@ -26,13 +26,13 @@ In deze module, is het doel alles over gegevensopname te leren. U leert meer ove
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform Launch: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform Launch: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot Postman
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -56,7 +56,7 @@ In deze exercitie gaat u naar de website en de mobiele app en gedraagt u zich al
 
 Stel uw Source-connector voor de landingszone voor gegevens in met Azure Blob-opslag.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
