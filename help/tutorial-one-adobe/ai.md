@@ -3,16 +3,16 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -73,7 +73,13 @@ In deze oefening zult u leren hoe te:
 - Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
 - Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+[1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
+
+**Doel**
+
+In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor.ai, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze services wordt ondersteund door Cursor.ai.
+
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
