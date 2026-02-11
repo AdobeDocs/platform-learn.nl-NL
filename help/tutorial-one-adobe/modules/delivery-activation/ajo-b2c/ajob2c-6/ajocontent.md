@@ -37,7 +37,7 @@ In deze oefening, zult u het Bestaan van Pagina&#39;s in Adobe Journey Optimizer
 
 In deze oefening, zult u een malplaatje van het Merk van GenStudio for Performance Marketing invoeren en het in Adobe Journey Optimizer gebruiken, en u zult Generative AI in GenStudio for Performance Marketing gebruiken om een e-mailervaring tot stand te brengen, en u zult dan dat in Adobe Journey Optimizer gebruiken.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
