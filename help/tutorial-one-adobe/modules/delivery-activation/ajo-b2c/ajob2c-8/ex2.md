@@ -16,22 +16,22 @@ ht-degree: 0%
 
 Ga naar **Campagnes**. Klik **creeer campagne**.
 
-![ AJO OC ](./images/ajooc1.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc1.png)
 
 Selecteer **Orchestration - marketing** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc2.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc2.png)
 
 Ga de campagnenaam in: `--aepUserLdap-- - CitiSignal Family Account Optimization Campaign` en klik **sparen**.
 
-![ AJO OC ](./images/ajooc3.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc3.png)
 
 Dan moet je dit zien. Klik op het pictogram **+** .
 
-![ AJO OC ](./images/ajooc4.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc4.png)
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Campagnes ](./ajocampaigns.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Campagnes &#x200B;](./ajocampaigns.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

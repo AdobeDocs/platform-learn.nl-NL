@@ -42,7 +42,7 @@ In deze oefening, zult u Campagnes in Adobe Journey Optimizer vormen en gebruike
 
 In deze oefening, zult u uw georkestreerde campagne creëren.
 
-![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
