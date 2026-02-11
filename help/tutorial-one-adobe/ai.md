@@ -3,7 +3,7 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -77,9 +77,9 @@ In deze oefening zult u leren hoe te:
 
 **Doel**
 
-In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor.ai, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze services wordt ondersteund door Cursor.ai.
+In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze diensten zal door Cursor worden gesteund.
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
