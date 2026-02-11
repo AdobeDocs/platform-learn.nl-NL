@@ -4,9 +4,9 @@ description: In deze module leert u alles wat er over Journey Optimizer te weten
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ In deze module leert u alles wat er over Adobe Journey Optimizer te weten is, wa
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -45,11 +45,7 @@ In deze oefening, zult u een traditionele e-mailcampagne vormen.
 
 In deze oefening, zult u segmentlidmaatschap gebruiken om te bepalen welke inhoud binnen een e-mail zal worden getoond.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

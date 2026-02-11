@@ -4,9 +4,9 @@ description: In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt,
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ In deze module leert u hoe u uw eigen Apache Kafka-cluster instelt, onderwerpen,
 
 ## Vereisten
 
-- Java JDK23 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [&#x200B; https://www.oracle.com/java/technologies/javase-jdk11-downloads.html &#x200B;](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 of hierboven moet op uw computer worden geïnstalleerd, kunt u dat JDK hier downloaden: [ https://www.oracle.com/java/technologies/javase-jdk11-downloads.html ](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Toegang tot Adobe Experience Platform
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -50,11 +50,7 @@ In deze oefening, zult u een Schakelaar van HTTP API Source in Adobe Experience 
 
 Hierbij gebruikt u Kafka Connect om de Adobe Experience Platform Sink Connector te installeren en gebruiken en u verzendt gebeurtenissen handmatig naar Adobe Experience Platform.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

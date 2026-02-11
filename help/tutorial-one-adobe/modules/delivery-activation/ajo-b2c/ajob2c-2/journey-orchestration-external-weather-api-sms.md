@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f18a0ec9-ee56-42b9-98bd-b5e433d77043
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ In deze module, zult u Adobe Journey Optimizer gebruiken om aan klantengedrag, z
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Adobe Journey Optimizer
 - Toegang tot de API voor Open Weather
 
@@ -37,7 +37,7 @@ Als merk begrijpt u ook dat de context een grote invloed heeft op de belangen va
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -61,11 +61,7 @@ Combineer gebeurtenissen, gegevensbronnen en acties tot een intelligente en cont
 
 Trigger uw specifieke reis.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

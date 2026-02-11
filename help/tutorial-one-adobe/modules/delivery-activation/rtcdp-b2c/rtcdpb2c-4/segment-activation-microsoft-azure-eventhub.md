@@ -4,16 +4,16 @@ description: Audience Activation naar Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP: Audience Activation naar Microsoft Azure Event Hub
 
-In deze module, zult u een bestemming Microsoft Azure EventHub als bestemming in real time voor Adobe Experience Platform in real time CDP plaatsen. U zult ook opstelling en een Azure functie opstellen die in real time zal teweegbrengen wanneer Adobe Experience Platform een publiekslading aan uw Azure bestemming EventHub levert. De Azure Functie die u zult teweegbrengen zal het mechanisme van Adobe Experience Platform in real time CDP activeringsmogelijkheden tonen.
+In deze module, zult u een bestemming Microsoft Azure EventHub als bestemming in real time voor Adobe Experience Platform in real time CDP plaatsen. U zult ook opstelling en een functie van Azure opstellen die in real time zal teweeggebracht worden wanneer Adobe Experience Platform een publiekslading aan uw bestemming van Azure EventHub levert. De functie van Azure die u zult teweegbrengen zal het mechanisme van Adobe Experience Platform in real time CDP activeringsmogelijkheden tonen.
 
 Als deel van deze module zult u ook een begrip van krijgen wat in real time CDP teweegbrengt om een nuttige lading aan een gespecificeerde bestemming eigenlijk te leveren. We zullen ook de status van een publiekskwalificatie bespreken en de relatie ervan met activering.
 
@@ -26,17 +26,17 @@ Microsoft Azure Event Hubs is een volledig beheerde, realtime service voor gegev
 - Word vertrouwd met de Microsoft Azure Event Hubs
 - Een RTCDP-bestemming instellen voor uw Microsoft Azure Event Hub
 - Begrijp wanneer CDP in real time activeert en wat de activeringslading als kijkt
-- De Code van Visual Studio van de opstelling om uw Azure project te ontwikkelen, te testen en op te stellen
-- Maak en implementeer een Azure-functie die publiekskwalificaties gebruikt die in real-time door RTCDP worden geleverd
+- De Code van Visual Studio van de opstelling om uw project van Azure te ontwikkelen, te testen en op te stellen
+- Een Azure-functie maken en implementeren die de publiekskwalificaties gebruikt die in real-time door RTCDP worden geleverd
 
 ## Vereisten
 
-- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
+- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
 - Begrijp hoe u publiek in Adobe Experience Platform definieert, gebruikt en activeert
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -62,17 +62,13 @@ In deze oefening zult u uw publiek aan uw bestemming activeren EventHub.
 
 [2.4.6 Maak uw Microsoft Azure-project](./ex6.md)
 
-In deze oefening zult u een Azure functie creëren die in real time zal teweegbrengen wanneer het platform van de Ervaring van Adobe publiekskwalificaties aan de overeenkomstige Azure bestemming van de Hub van de Gebeurtenis levert.
+In deze oefening zult u een functie van Azure tot stand brengen die in real time zal teweegbrengen wanneer het platform van de Ervaring van Adobe publiekskwalificaties aan de overeenkomstige bestemming van de Hub van de Gebeurtenis van Azure levert.
 
 [2.4.7 End-to-end scenario](./ex7.md)
 
-Op dit punt is alles ingesteld. U kunt nu bladeren op uw demowebsite en publiekskwalificaties krijgen die worden geleverd aan uw Microsoft Azure Event Hub Trigger-functie.
+Op dit punt is alles ingesteld. U kunt nu bladeren op uw demowebsite en publiekskwalificaties krijgen die worden geleverd aan uw Microsoft Azure Event Hub Trigger functie.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

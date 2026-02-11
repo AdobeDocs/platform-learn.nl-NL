@@ -4,16 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
 # 3.1 Adobe Journey Optimizer: Orchestratie
 
-In deze module nemen we de stappen om Adobe Journey Optimizer te gebruiken. U zult gebeurtenissen en reizen vormen die op een trekker gebaseerd van een ervaringsgebeurtenis beginnen die naar AEP wordt verzonden.
+In deze module nemen we de stappen om Adobe Journey Optimizer te gebruiken. U configureert gebeurtenissen en reizen die beginnen op basis van een trigger van een ervaringsgebeurtenis die naar AEP is verzonden.
 
 ## Leerdoelen
 
@@ -22,12 +22,12 @@ In deze module nemen we de stappen om Adobe Journey Optimizer te gebruiken. U zu
 
 ## Vereisten
 
-- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
+- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
 - Toegang tot Adobe Journey Optimizer
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -47,11 +47,7 @@ In deze oefening, zult u leren hoe te om een e-mailbericht te vormen.
 
 Dit zal u door de configuratie van Lancering begeleiden om uw gebeurtenis teweeg te brengen en de juiste lading te verstrekken en, zult u zich een e-mail kunnen verzenden.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

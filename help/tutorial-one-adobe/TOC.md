@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+source-git-commit: 5f3add0f1304d95fdd4da06909dca80151c8a9f1
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1497'
 ht-degree: 3%
 
 ---
@@ -129,21 +129,18 @@ ht-degree: 3%
          + [1.1.5 Adobe Analytics en Adobe Audience Manager implementeren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex5.md)
          + [1.1.6 Adobe Target implementeren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex6.md)
          + [1.1.7 XDM-schemavereisten in Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex7.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
       + 1.2 Gegevensinname {#dc12}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1 De Snowflake-omgeving instellen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2 Schema&#39;s, gegevensmodel en koppelingen maken](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3 Een gefederaliseerde compositie maken](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
    + Real-Time CDP B2C {#rtcdpb2c}
       + 2.1 Klantprofiel in realtime {#rtcdp21}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
@@ -152,13 +149,11 @@ ht-degree: 3%
          + [2.1.3 Visualiseer uw eigen real-time klantprofiel - API](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)
          + [2.1.4 Een publiek maken - gebruikersinterface](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
          + [2.1.5 Zie uw Real-time Profiel van de Klant in actie in het callcenter](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
       + 2.2 Intelligente diensten {#rtcdp22}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
          + [2.2.1 AI van de Klant: Gegevensvoorbereiding (Ingest)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex1.md)
          + [2.2.2 Klantenservice: een nieuwe instantie maken (configureren)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
          + [2.2.3 AI van de Klant: Scoredashboard en segmentatie (Voorspelling en actie ondernemen)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/summary.md)
       + 2.3 Real-Time CDP: Bouw een publiek en doe actie! {#rtcdp23}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
          + [2.3.1 Een publiek maken](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex1.md)
@@ -167,7 +162,6 @@ ht-degree: 3%
          + [2.3.4 Actie ondernemen: stuur je publiek naar een S3-bestemming](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex4.md)
          + [2.3.5 Actie nemen: stuur je publiek naar Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6 Doelen SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/summary.md)
       + 2.4 Real-Time CDP: Audience Activation naar Microsoft Azure Event Hub {#rtcdp24}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Uw omgeving configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
@@ -177,7 +171,6 @@ ht-degree: 3%
          + [2.4.5 Activeer uw publiek](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6 Maak uw Microsoft Azure-project](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 End-to-end scenario](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/summary.md)
       + 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen{#rtcdp25}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1 Een Adobe Experience Platform-eigenschap voor het doorsturen van gegevensverzamelingsgebeurtenissen maken](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
@@ -185,14 +178,12 @@ ht-degree: 3%
          + [2.5.3 Een aangepaste webhaak maken en configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex3.md)
          + [2.5.4 Voorwaartse gebeurtenissen naar GCP Pub/Sub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex4.md)
          + [2.5.5 Gebeurtenissen doorsturen naar AWS Kinesis &amp; AWS S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex5.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/summary.md)
       + 2.6 Gegevens streamen van Apache Kafka naar Real-Time CDP {#rtcdp26}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
          + [2.6.1 Inleiding tot Apache Kafka](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex1.md)
          + [2.6.2 Uw Kafka-cluster installeren en configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex2.md)
          + [2.6.3 Het HTTP API-streamingeindpunt in Adobe Experience Platform configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex3.md)
          + [2.6.4 Kafka Connect en de Adobe Experience Platform Sink Connector installeren en configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
       + 3.1 Adobe Journey Optimizer: Orchestratie {#ajo31}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
@@ -200,7 +191,6 @@ ht-degree: 3%
          + [3.1.2 Fragmenten maken voor gebruik in uw bericht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3 Maak uw reis en e-mailbericht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4 Werk uw bezit van de Inzameling van Gegevens bij en test uw Reizen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/summary.md)
       + 3.2 Adobe Journey Optimizer: Externe gegevensbronnen en aangepaste acties {#ajo32}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
          + [3.2.1 Een gebeurtenis definiëren](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
@@ -208,41 +198,35 @@ ht-degree: 3%
          + [3.2.3 Een aangepaste handeling definiëren](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
          + [3.2.4 Maak uw reis en uw berichten](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5 Trigger je reis](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
       + 3.3 Adobe Journey Optimizer: pushberichten en in-app-berichten {#ajo33}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
          + [3.3.1 Aan de slag met pushmeldingen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
          + [3.3.2 Vorm een reis met dupberichten](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
          + [3.3.3 Een campagne configureren met berichten in de app](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
       + 3.4 Adobe Journey Optimizer: Bestelbevestigingstraject en -campagnes {#ajo34}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1 Een op een trigger gebaseerde reis configureren - Bestelbevestiging](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2 Een campagne configureren](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3 Pas segment-gebaseerde verpersoonlijking in een e-mailbericht toe](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
       + 3.5 Adobe Journey Optimizer: vertaalservices {#ajo35}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
          + [3.5.1 Vertaalbureau](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2 Uw campagne maken](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3 Talen toevoegen aan uw e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
       + 3.6 Adobe Journey Optimizer: inhoudsbeheer  {#ajo36}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
          + [3.6.1 Inhoudskaarten](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
          + [3.6.2 Landingspagina&#39;s](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
          + [3.6.3 AJO en GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
       + 3.7 Adobe Journey Optimizer: Ervaring beslissen {#ajo37}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
          + [3.7.1 Ervaring met besluitvorming 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
          + [3.7.2 Uw aanbiedingen en beslissingen configureren](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
          + [3.7.3 Web SDK Setup for Experience Decisition](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
       + 3.8 Adobe Journey Optimizer: campagnes {#ajo38}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
-         + [3.8.1 Aan de slag met campagnes](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
-         + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
+         + [3.8.1 De stichting van uw relationele gegevens instellen](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+         + [3.8.2 Maak uw georkestreerde campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
 
 + Rapportage en inzichten {#reporting}
    + Customer Journey Analytics  {#cjab2c}

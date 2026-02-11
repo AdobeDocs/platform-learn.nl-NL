@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer-inhoudsbeheer
 description: Adobe Journey Optimizer-inhoudsbeheer
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -36,11 +37,7 @@ In deze oefening, zult u het Bestaan van Pagina&#39;s in Adobe Journey Optimizer
 
 In deze oefening, zult u een malplaatje van het Merk van GenStudio for Performance Marketing invoeren en het in Adobe Journey Optimizer gebruiken, en u zult Generative AI in GenStudio for Performance Marketing gebruiken om een e-mailervaring tot stand te brengen, en u zult dan dat in Adobe Journey Optimizer gebruiken.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

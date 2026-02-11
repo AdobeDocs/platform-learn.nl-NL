@@ -1,18 +1,19 @@
 ---
-title: Ervaar beslissingsvermogen
-description: Ervaar beslissingsvermogen
+title: Adobe Journey Optimizer-beslissing
+description: Adobe Journey Optimizer-beslissing
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# 3.7 Adobe Journey Optimizer: Ervaring beslissen
+# 3.7 Adobe Journey Optimizer: Besluit
 
 In deze module, zult u een hands-on analyse van de mogelijkheden van het Beslissen van de Ervaring van Adobe Journey Optimizer krijgen.
 
@@ -31,11 +32,11 @@ Met Ervaring beslissen kunt u de beste optie bepalen op basis van een set beschi
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
-[3.7.1 Ervaring met besluitvorming 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer-besluit 101](./ex1.md)
 
 In deze oefening zult u een beter inzicht in alle verschillende concepten van Offer Decisioning krijgen, en hoe te om tot Offer Decisioning in Adobe Journey Optimizer toegang te hebben.
 
@@ -43,15 +44,11 @@ In deze oefening zult u een beter inzicht in alle verschillende concepten van Of
 
 In deze oefening zult u uw eigen gepersonaliseerde aanbiedingen en uw eigen besluit vormen, die dan zullen worden gepubliceerd.
 
-[3.7.3 Web SDK Setup for Experience Decisition](./ex3.md)
+[3.7.3 Web SDK instellen voor Adobe Journey Optimizer-beslissing](./ex3.md)
 
 In deze oefening zult u de demo website gebruiken om uw besluit te testen.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

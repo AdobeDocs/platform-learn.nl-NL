@@ -4,9 +4,9 @@ description: Gegevensverzameling - Federale Audience Composition
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Federated Audience Composition biedt Real-Time CDP- en Journey Optimizer-klanten
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot een Snowflake-gegevenspakhuis
 
 ## Uitoefening
@@ -48,11 +48,7 @@ In deze oefening, zult u uw gegevensmodel in AEP voor de gefederaliseerde gegeve
 
 In deze oefening, zult u uw gegevensmodel in AEP voor de gefederaliseerde gegevens vormen.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

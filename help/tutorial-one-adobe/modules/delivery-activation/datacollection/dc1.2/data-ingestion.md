@@ -4,9 +4,9 @@ description: Foundation - gegevensinname
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ In deze module, is het doel alles over gegevensopname te leren. U leert meer ove
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Toegang tot Adobe Experience Platform Launch: [&#x200B; https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform Launch: [ https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Toegang tot Postman
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -54,13 +54,9 @@ In deze exercitie gaat u naar de website en de mobiele app en gedraagt u zich al
 
 [1.2.5 Gegevenslandingszone](./ex5.md)
 
-Stel uw Source-connector voor gegevenslandingszone in met Azure Blob-opslag.
+Stel uw Source-connector voor de landingszone voor gegevens in met Azure Blob-opslag.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

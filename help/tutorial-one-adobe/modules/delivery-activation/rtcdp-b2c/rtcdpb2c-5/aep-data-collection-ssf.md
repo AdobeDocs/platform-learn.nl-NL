@@ -4,9 +4,9 @@ description: In deze module, zult u de eerder gevormde datasets, schema's en het
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In deze module, zult u:
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -59,11 +59,7 @@ In deze oefening, zult u een Functie van de Wolk van Google creëren en vormen e
 
 In deze oefening, zult u uw milieu van AWS vormen gebruikend AWS IAM, AWS Kinesis, AWS Firehose en AWS S3 waarna u begint gebeurtenisgegevens door:sturen die door Web SDK worden verzameld.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ In deze module, zult u een hands-on analyse van de Push en mogelijkheden van Ber
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -45,11 +45,7 @@ In deze oefening zult u uw eigen reis vormen die dupberichten aan uw apparaat za
 
 In deze oefening zult u een campagne vormen die in-app berichten aan uw klanten levert.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

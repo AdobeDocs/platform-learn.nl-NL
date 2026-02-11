@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ In deze module gaat u diep in de mogelijkheden van het profiel en de identiteit 
 
 ## Vereisten
 
-- Toegang tot [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform)
+- Toegang tot [ Adobe Experience Platform ](https://experience.adobe.com/platform)
 - **Download deze activa**:
    - [Postman-verzamelingen](./../../../../assets/postman/postman_profile.zip)
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -54,11 +54,7 @@ In deze oefening, zult u een segment tot stand brengen door gebruik van de Bouwe
 
 In deze oefening, zult u een medewerker van het vraagcentrum nadoen die een vraag van een klant ontvangt. Om werkelijk invloed op de ervaring van deze klant te kunnen uitoefenen, hebt u toegang tot alle beschikbare informatie in real time nodig.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

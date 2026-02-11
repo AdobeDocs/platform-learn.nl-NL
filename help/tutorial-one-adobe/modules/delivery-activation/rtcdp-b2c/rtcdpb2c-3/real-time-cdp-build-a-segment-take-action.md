@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ In deze module, zult u een het stromen segment vormen en zult het publiek aan ve
 
 ## Vereisten
 
-- Toegang tot Adobe Experience Platform: [&#x200B; https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Toegang tot Adobe Experience Platform: [ https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Toegang tot Adobe Target
 - Toegang tot AWS S3
 
 >[!NOTE]
 >
->Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [&#x200B; wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League &#x200B;](../../../getting-started/gettingstarted/ex1.md)
+>Vergeet niet om de Uitbreiding van Chrome te installeren, te vormen en te gebruiken zoals die in [ wordt van verwijzingen voorzien installeer de uitbreiding van Chrome voor de documentatie van Experience League ](../../../getting-started/gettingstarted/ex1.md)
 
 ## Uitoefening
 
@@ -59,11 +59,7 @@ Gebruik het publiek u creeerde om een Ervaring te vormen richtend Activiteit in 
 
 Vorm uw eigen bestemming gebruikend Doelen SDK.
 
-[Samenvatting en voordelen](./summary.md)
-
-Overzicht van deze module en overzicht van de voordelen.
-
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
