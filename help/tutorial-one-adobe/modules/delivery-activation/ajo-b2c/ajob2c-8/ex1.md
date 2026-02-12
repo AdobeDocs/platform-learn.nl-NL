@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 3.8.1 De stichting van uw relationele gegevens instellen
 
-Login aan Adobe Journey Optimizer door naar [ https://experience.adobe.com ](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
+Login aan Adobe Journey Optimizer door naar [&#x200B; https://experience.adobe.com &#x200B;](https://experience.adobe.com) te gaan. Klik **Journey Optimizer**.
 
-![ AJO OC ](./images/aechome.png)
+![&#x200B; AJO OC &#x200B;](./images/aechome.png)
 
-U zult aan de **1} mening van het Huis {in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
+U zult aan de **1&rbrace; mening van het Huis &lbrace;in Journey Optimizer worden opnieuw gericht.** Eerst, zorg ervoor u de correcte zandbak gebruikt. De sandbox die moet worden gebruikt, wordt `--aepSandboxName--` genoemd.
 
-![ AJO OC ](./images/ajohome.png)
+![&#x200B; AJO OC &#x200B;](./images/ajohome.png)
 
 ## 3.8.1.1 Instellingen voor relationeel schema
 
@@ -47,27 +47,27 @@ Bij het opnemen van gegevens in voor gebruik met Adobe Journey Optimizer Orchest
 
 De eerste stap in deze oefening is de configuratie van uw op relationele-Gebaseerde schema&#39;s XDM. In het linkermenu, scrol neer aan **Beheer van Gegevens** en selecteer **Schema&#39;s**. Klik op **+ Schema maken** .
 
-![ AJO OC ](./images/ajoocdata1.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata1.png)
 
 Selecteer **Relationeel**.
 
-![ AJO OC ](./images/ajoocdata2.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata2.png)
 
 Selecteer **uploadt Ddl- dossier** en klik dan **kiezen dossiers**.
 
-![ AJO OC ](./images/ajoocdata3.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata3.png)
 
-Download het dossier [ burgersignaal_ddl_tables_only.sql ](./assets/citisignal_ddl_tables_only.sql) aan uw Desktop.
+Download het dossier [&#x200B; burgersignaal_ddl_tables_only.sql &#x200B;](./assets/citisignal_ddl_tables_only.sql) aan uw Desktop.
 
-![ AJO OC ](./images/ajoocdata4.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata4.png)
 
 Selecteer het dossier **`citisignal_ddl_tables_only.sql`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdata5.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata5.png)
 
 Dan moet je dit zien. Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdata6.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata6.png)
 
 ### Identiteit
 
@@ -77,13 +77,13 @@ Sommige van uw schema&#39;s bevatten persoonlijke herkenningstekens en die gebie
 
 Voor dit schema, ga naar het gebied **account_id** en plaats het **Type van Identiteit** aan **Systeem van de Manifestatie - CRMID**.
 
-![ AJO OC ](./images/ajoocdata7.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata7.png)
 
 **`citisignal_recipients`**
 
 Voor dit schema, ga naar het gebied **account_id** en plaats het **Type van Identiteit** aan **het Systeem van de Manifestatie - CRMID** en ga naar het gebied **e-mail** en plaats het **type van Identiteit** aan **E-mail**.
 
-![ AJO OC ](./images/ajoocdata8.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata8.png)
 
 ### Versioning
 
@@ -95,79 +95,79 @@ U moet nu checkbox voor **Versioning** voor het gebied **laatst gewijzigd** in e
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata9.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata9.png)
 
 **`citisignal_product_bundles`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata10.png)
 
 **`citisignal_product_relationships`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata11.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata11.png)
 
 **`citisignal_accounts`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata12.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata12.png)
 
 **`citisignal_recipients`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata13.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata13.png)
 
 **`citisignal_mobile_subscriptions`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata14.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata14.png)
 
 **`citisignal_internet_subscriptions`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata15.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata15.png)
 
 **`citisignal_tv_subscriptions`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata16.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata16.png)
 
 **`citisignal_equipment_subscriptions`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata17.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata17.png)
 
 **`citisignal_mobile_usage_summary`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata18.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata18.png)
 
 **`citisignal_internet_usage_summary`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata19.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata19.png)
 
 **`citisignal_offers`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata20.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata20.png)
 
 **`citisignal_offer_eligibility`**
 
 Controleer checkbox voor **Versioning** voor het gebied **laatst gewijzigd**.
 
-![ AJO OC ](./images/ajoocdata21.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata21.png)
 
 ### Schemanaam
 
@@ -179,99 +179,99 @@ Voor dit laboratorium, zou u uw LDAP vóór elke schemanaam moeten toevoegen, wa
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_products`.
 
-![ AJO OC ](./images/ajoocdatan9.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan9.png)
 
 **`citisignal_product_bundles`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_product_bundles`.
 
-![ AJO OC ](./images/ajoocdatan10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan10.png)
 
 **`citisignal_product_relationships`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_product_relationships`.
 
-![ AJO OC ](./images/ajoocdatan11.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan11.png)
 
 **`citisignal_accounts`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_accounts`.
 
-![ AJO OC ](./images/ajoocdatan12.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan12.png)
 
 **`citisignal_recipients`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_recipients`.
 
-![ AJO OC ](./images/ajoocdatan13.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan13.png)
 
 **`citisignal_mobile_subscriptions`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_mobile_subscriptions`.
 
-![ AJO OC ](./images/ajoocdatan14.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan14.png)
 
 **`citisignal_internet_subscriptions`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_internet_subscriptions`.
 
-![ AJO OC ](./images/ajoocdatan15.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan15.png)
 
 **`citisignal_tv_subscriptions`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_internet_subscriptions`.
 
-![ AJO OC ](./images/ajoocdatan16.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan16.png)
 
 **`citisignal_equipment_subscriptions`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_equipment_subscriptions`.
 
-![ AJO OC ](./images/ajoocdatan17.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan17.png)
 
 **`citisignal_mobile_usage_summary`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_mobile_usage_summary`.
 
-![ AJO OC ](./images/ajoocdatan18.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan18.png)
 
 **`citisignal_internet_usage_summary`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_internet_usage_summary`.
 
-![ AJO OC ](./images/ajoocdatan19.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan19.png)
 
 **`citisignal_offers`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_offers`.
 
-![ AJO OC ](./images/ajoocdatan20.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan20.png)
 
 **`citisignal_offer_eligibility`**
 
 Verander de naam van uw schema in `--aepUserLdap--_ citisignal_offer_eligibility`.
 
-![ AJO OC ](./images/ajoocdatan21.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatan21.png)
 
 Uw schema&#39;s kunnen nu worden opgeslagen. Klik **Gedaan**.
 
-![ AJO OC ](./images/ajoocdata22.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata22.png)
 
 Dan moet je dit zien. Klik **sparen**.
 
-![ AJO OC ](./images/ajoocdata23.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata23.png)
 
 Klik **Open banen**.
 
-![ AJO OC ](./images/ajoocdata24.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata24.png)
 
 Dan moet je dit zien. U moet wachten tot de taak met succes is voltooid voordat u verdergaat met de volgende stap.
 
-![ AJO OC ](./images/ajoocdata25.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata25.png)
 
 Als de taak met succes is voltooid, kunt u verdergaan met de volgende stap. Dit kan 5-10 minuten duren.
 
-![ AJO OC ](./images/ajoocdata26.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata26.png)
 
 Nu uw relationele schema&#39;s XDM en met gegevens worden gevormd die worden opgenomen, kunt u beginnen die gegevens te gebruiken om uw georkestreerde campagne in de volgende oefening tot stand te brengen.
 
@@ -279,21 +279,21 @@ Nu uw relationele schema&#39;s XDM en met gegevens worden gevormd die worden opg
 
 Ga naar **Datasets**. U zou dan een dataset moeten zien die voor elk schema werd gecreeerd dat u creeerde.
 
-![ AJO OC ](./images/ajoocdata27.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata27.png)
 
-Download het dossier [ data.zip ](./assets/data.zip) aan uw Desktop en decomprimeer het.
+Download het dossier [&#x200B; data.zip &#x200B;](./assets/data.zip) aan uw Desktop en decomprimeer het.
 
-![ AJO OC ](./images/ajoocdata28.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata28.png)
 
 Open de omslag **gegevens**. U zou een CSV dossier voor elk van de schema&#39;s moeten zien die werden gecreeerd. U moet nu die gegevens in elke overeenkomstige dataset uploaden. Voor dit laboratorium, zult u dat doen door een lokaal dossier te doen uploadt in elke dataset.
 
-![ AJO OC ](./images/ajoocdata29.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdata29.png)
 
 **`vangeluw_citisignal_products`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -301,29 +301,29 @@ Selecteer de gegevensset `vangeluw_citisignal_products` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas9a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas9a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_products.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas9b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas9b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas9c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas9c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas9d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas9d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas9e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas9e.png)
 
 **`vangeluw_citisignal_product_bundles`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -331,29 +331,29 @@ Selecteer de gegevensset `vangeluw_citisignal_product_bundles` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas10a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_product_bundles.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas10b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas10c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas10d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas10e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10e.png)
 
 **`vangeluw_citisignal_product_relationships`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -361,29 +361,29 @@ Selecteer de gegevensset `vangeluw_citisignal_product_relationships` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas11a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas11a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_product_relationships.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas11b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas11b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas11c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas11c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas11d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas11d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas11e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas11e.png)
 
 **`vangeluw_citisignal_accounts`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -391,29 +391,29 @@ Selecteer de gegevensset `vangeluw_citisignal_accounts` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas12a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas12a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_accounts.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas12b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas12b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas12c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas12c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas12d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas12d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas12e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas12e.png)
 
 **`vangeluw_citisignal_recipients`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -421,29 +421,29 @@ Selecteer de gegevensset `vangeluw_citisignal_recipients` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas13a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas13a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_recipients.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas13b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas13b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas13c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas13c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas13d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas13d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas13e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas13e.png)
 
 **`vangeluw_citisignal_mobile_subscriptions`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -451,29 +451,29 @@ Selecteer de gegevensset `vangeluw_citisignal_mobile_subscriptions` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas14a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas14a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_mobile_subscriptions.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas14b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas14b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas14c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas14c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas14d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas14d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas14e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas14e.png)
 
 **`vangeluw_citisignal_internet_subscriptions`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -481,29 +481,29 @@ Selecteer de gegevensset `vangeluw_citisignal_internet_subscriptions` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas15a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas15a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_internet_subscriptions.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas15b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas15b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas15c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas15c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas15d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas15d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas15e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas15e.png)
 
 **`vangeluw_citisignal_tv_subscriptions`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -511,29 +511,29 @@ Selecteer de gegevensset `vangeluw_citisignal_tv_subscriptions` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas16a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas16a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_tv_subscriptions.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas16b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas16b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas16c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas16c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas16d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas16d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas16e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas16e.png)
 
 **`vangeluw_citisignal_equipment_subscriptions`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -541,29 +541,29 @@ Selecteer de gegevensset `vangeluw_citisignal_equipment_subscriptions` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas17a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas17a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_equipment_subscriptions.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas17b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas17b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas17c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas17c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas17d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas17d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas17e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas17e.png)
 
 **`vangeluw_citisignal_mobile_usage_summary`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -571,29 +571,29 @@ Selecteer de gegevensset `vangeluw_citisignal_mobile_usage_summary` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas18a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas18a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_mobile_usage_summary.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas18b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas18b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas18c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas18c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas18d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas18d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas18e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas18e.png)
 
 **`vangeluw_citisignal_internet_usage_summary`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -601,29 +601,29 @@ Selecteer de gegevensset `vangeluw_citisignal_internet_usage_summary` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas19a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas19a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_internet_usage_summary.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas19b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas19b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas19c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas19c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas19d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas19d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas19e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas19e.png)
 
 **`vangeluw_citisignal_offers`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -631,29 +631,29 @@ Selecteer de gegevensset `vangeluw_citisignal_offers` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas20a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas20a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_offers.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas20b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas20b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas20c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas20c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas20d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas20d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas20e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas20e.png)
 
 **`vangeluw_citisignal_offer_eligibility`**
 
 Ga naar **Bronnen**, onderzoek naar `local` en klik dan **gegevens** toevoegen onder **Lokaal Dossier uploadt**.
 
-![ AJO OC ](./images/ajoocdatas10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas10.png)
 
 Laat knevel voor **toe toelaten veranderingsgegevens vangen**.
 
@@ -661,30 +661,30 @@ Selecteer de gegevensset `vangeluw_citisignal_offer_eligibility` .
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajoocdatas21a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas21a.png)
 
 Klik **kiezen dossiers**. Selecteer het dossier **`citisignal_offer_eligibility.csv`** en klik **open**.
 
-![ AJO OC ](./images/ajoocdatas21b.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas21b.png)
 
 Klik **daarna**
 
-![ AJO OC ](./images/ajoocdatas21c.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas21c.png)
 
 Klik **Afwerking**.
 
-![ AJO OC ](./images/ajoocdatas21d.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas21d.png)
 
 Na een paar notulen, kunt u de gegevens zien die in uw dataset worden opgenomen.
 
-![ AJO OC ](./images/ajoocdatas21e.png)
+![&#x200B; AJO OC &#x200B;](./images/ajoocdatas21e.png)
 
 Alle gegevens worden nu opgenomen. In de volgende oefening zult u beginnen om die gegevens als deel van een georkestreerde campagne te gebruiken.
 
 ## Volgende stappen
 
-Ga naar [ creeer uw georkestreerde campagne ](./ex2.md){target="_blank"}
+Ga naar [&#x200B; creeer uw georkestreerde campagne &#x200B;](./ex2.md){target="_blank"}
 
-Ga terug naar [ Adobe Journey Optimizer: Campagnes ](./ajocampaigns.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Campagnes &#x200B;](./ajocampaigns.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
