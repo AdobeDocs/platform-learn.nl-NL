@@ -3,16 +3,16 @@ title: Overzicht - Uitgebreide technische zelfstudie - Eén Adobe
 description: Uitgebreide technische zelfstudie - Eén Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
 
 # Uitgebreide technische zelfstudie - Eén Adobe
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht
 
@@ -39,18 +39,18 @@ Deze zelfstudie richt zich niet alleen op Adobe-toepassingen, maar houdt rekenin
 
 ## Toon uw kennis
 
-![&#x200B; Adobe Gekwalificeerd &#x200B;](./assets/images/badge.png){width="100px" align="left"}
+![ Adobe Gekwalificeerd ](./assets/images/badge.png){width="100px" align="left"}
 
 Na de voltooiing van enkele modules in dit leerprogramma, kunt u een Onderzoek van de Referentie van Adobe nemen om een **Gekwalificeerde Adobe** badge te ontvangen.
 
-- Wanneer u het module [&#x200B; Overzicht van Adobe Firefly Services &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} voltooit, bent u bereid om **Adobe Gekwalificeerd** examen **over te nemen AD2-E901**:
-  [&#x200B; https://certification.adobe.com/certification/services-qualified-credential &#x200B;](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- Wanneer u de module [&#x200B; Automatisering van het Werkschema van Creative met de Fusie van Workfront &#x200B;](./modules/creation-production/module1.2/automation.md){target="_blank"} voltooit, bent u bereid om het **Gekwalificeerde Adobe** examen **AD2-E902** over te nemen en over te gaan:
-  [&#x200B; https://certification.adobe.com/certification/fusion-qualified-credential &#x200B;](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
+- Wanneer u het module [ Overzicht van Adobe Firefly Services ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} voltooit, bent u bereid om **Adobe Gekwalificeerd** examen **over te nemen AD2-E901**:
+  [ https://certification.adobe.com/certification/services-qualified-credential ](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- Wanneer u de module [ Automatisering van het Werkschema van Creative met de Fusie van Workfront ](./modules/creation-production/module1.2/automation.md){target="_blank"} voltooit, bent u bereid om het **Gekwalificeerde Adobe** examen **AD2-E902** over te nemen en over te gaan:
+  [ https://certification.adobe.com/certification/fusion-qualified-credential ](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Content Status
 
-Om het statuut van de hieronder inhoud te controleren, gelieve naar de [&#x200B; statuspagina &#x200B;](./status.md){target="_blank"} te gaan.
+Om het statuut van de hieronder inhoud te controleren, gelieve naar de [ statuspagina ](./status.md){target="_blank"} te gaan.
 
 ### Aan de slag
 
@@ -60,63 +60,63 @@ In deze grondmodule, zult u alles voorbereiden zodat u tot het demomilieu toegan
 
 ### &#x200B;1. Workflow en planning
 
-[&#x200B; 1.1 de Planning van Adobe Workfront &#x200B;](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[ 1.1 de Planning van Adobe Workfront ](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 In deze module, zult u de Planning van Adobe Workfront vormen en gebruiken om een nieuwe werkruimte tot stand te brengen, verslagtypes te bepalen, verslagen te beheren, een nieuwe verzoekvorm tot stand te brengen en de AI medewerker te gebruiken.
 
-[&#x200B; 1.2 het Beheer van het Werkschema met het Werkschema van Adobe Workfront &#x200B;](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[ 1.2 het Beheer van het Werkschema met het Werkschema van Adobe Workfront ](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 In deze module, zult u Adobe Workfront vormen en gebruiken om goedkeuringsstromen te beheren en u zult integraties met Adobe Experience Manager Assets, Universele Redacteur, Photoshop en meer gebruiken.
 
 ### &#x200B;2. Opbouw en productie
 
-[&#x200B; 1.1 Overzicht van Adobe Firefly Services &#x200B;](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[ 1.1 Overzicht van Adobe Firefly Services ](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 In deze module gebruikt u Adobe Firefly Services API&#39;s, Photoshop API&#39;s en Microsoft Azure Storage Services om afbeeldingen te genereren en via programmacode op te slaan.
 
-[&#x200B; 1.2 de Automatisering van het Werkschema van Creative met Workfront Fusion &#x200B;](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[ 1.2 de Automatisering van het Werkschema van Creative met Workfront Fusion ](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 In deze module gebruikt u Adobe Workfront Fusion om workflows voor het maken van inhoud te automatiseren en schalen.
 
-[&#x200B; 1.3 GenStudio for Performance Marketing &#x200B;](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+[ 1.3 GenStudio for Performance Marketing ](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
 
 In deze module gebruikt u Adobe GenStudio for Performance Marketing, een algemene AI-eerste end-to-end workflowtoepassing voor marketing- en creatieve teams om lokale inhoud te maken, te activeren en te optimaliseren met ondernemingsbestuur voor digitale marketingcampagnes.
 
-[&#x200B; 1.4 Adobe Express en Adobe Experience Cloud &#x200B;](./modules/creation-production/module1.4/express.md){target="_blank"}
+[ 1.4 Adobe Express en Adobe Experience Cloud ](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 In deze module gebruikt u Adobe Express om afbeeldingen en video&#39;s te maken en deelt u deze elementen met het bredere Adobe Experience Cloud-ecosysteem.
 
-[&#x200B; 1.5 stroomlijnt uw werkschema met Frame.io &#x200B;](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[ 1.5 stroomlijnt uw werkschema met Frame.io ](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 In deze module gebruikt u Adobe Frame.io in combinatie met Adobe Premiere Pro voor het samenwerken en bekijken van afbeeldingen en video&#39;s.
 
-[&#x200B; 1.6 GenStudio for Performance Marketing - Uitbreidbaarheid &#x200B;](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+[ 1.6 GenStudio for Performance Marketing - Uitbreidbaarheid ](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
 
 In deze module maakt u een aangepaste toepassing voor het uitbreiden van de mogelijkheden in GenStudio for Performance Marketing met Adobe IO en App Builder.
 
-[&#x200B; 1.7 de Bouwer van het Werkschema &#x200B;](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[ 1.7 de Werkschema&#39;s van de Douane van Firefly ](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-In deze module, zult u de Bouwer van het Werkschema gebruiken om voor herhaalbare creatieve ontwerp en automatiseringsgebruiksgevallen op te lossen.
+In deze module gebruikt u Aangepaste workflows in Firefly om herhaalbare gevallen van creatief ontwerp en gebruik van automatisering op te lossen.
 
-[&#x200B; 1.8 verenigde Overzicht &amp; Goedkeuring met Workfront, Frame.io en het Beheer van de Opslag van de Onderneming &#x200B;](./modules/creation-production/module1.8/esm.md){target="_blank"}
+[ 1.8 verenigde Overzicht &amp; Goedkeuring met Workfront, Frame.io en het Beheer van de Opslag van de Onderneming ](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
 In deze module, zult u het project van Workfront en het werkbeheermogelijkheden direct met Frame.io revisie en samenwerkingservaring in real time verbinden.
 
 ### &#x200B;3. Middelenbeheer en sites
 
-[&#x200B; 1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
+[ 1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In deze module stelt u uw Adobe Experience Manager Cloud Service Program, Site en Assets-opslagplaats in.
 
-[&#x200B; 1.2 Adobe Experience Manager Assets &#x200B;](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+[ 1.2 Adobe Experience Manager Assets ](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 In deze module gaat u AEM Assets verkennen.
 
-[&#x200B; 1.4 Adobe Experience Manager Assets &amp; Dynamische Media &#x200B;](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+[ 1.4 Adobe Experience Manager Assets &amp; Dynamische Media ](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
 
 In deze module stelt u AEM Assets Dynamic Media in en gebruikt u de sjabloon Dynamic Media in Adobe Journey Optimizer.
 
-[&#x200B; 1.5 Adobe Commerce as a Cloud Service &#x200B;](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+[ 1.5 Adobe Commerce as a Cloud Service ](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
 In deze module maakt u een Adobe Commerce as a Cloud Service-exemplaar. U koppelt uw Commerce-exemplaar aan uw AEM Sites CS Store en uw AEM Assets CS-omgeving.
 
@@ -220,7 +220,7 @@ In deze module leert u hoe u de Adobe Experience Platform Query Service kunt geb
 
 In deze module leert u hoe u Adobe Content Analytics kunt implementeren en gebruiken.
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
