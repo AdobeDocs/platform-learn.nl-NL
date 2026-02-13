@@ -22,15 +22,15 @@ Door de Adobe Marketing Agent samen met Microsoft 365 Copilot Beta te gebruiken,
 
 +++
 
-Ga naar [ https://firefly.adobe.com ](https://firefly.adobe.com). Klik op het profielpictogram in de rechterbovenhoek en controleer of u de juiste instantie hebt geselecteerd, die `--aepImsOrgName--` moet zijn.
+Ga naar [&#x200B; https://firefly.adobe.com &#x200B;](https://firefly.adobe.com). Klik op het profielpictogram in de rechterbovenhoek en controleer of u de juiste instantie hebt geselecteerd, die `--aepImsOrgName--` moet zijn.
 
 Ga naar **Productie**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw1.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw1.png)
 
 Dan moet je dit zien. Klik **creeer werkschema (bèta)**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw2.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw2.png)
 
 ## 1.7.1.1 Achtergrond verwijderen
 
@@ -38,97 +38,97 @@ Om de aangepaste workflows van Firefly te leren kennen, implementeert u nu een s
 
 Wijzig de naam van de workflow in `vangeluw - remove background` .
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw3.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw3.png)
 
 Open het **Beeld**
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw4.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw4.png)
 
 Selecteer **verwijderen Achtergrond**, dan belemmering en laat vallen deze knoop op het canvas.
 
 U moet nu een knoop van het inputbeeld en een knoop van het outputbeeld met **verbinden verwijdert Achtergrond**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw5.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw5.png)
 
 De rol omhoog en gaat naar **Input en Output**. Klik de **knoop van de Beelden van de Input** en sleep het op het canvas.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw6.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw6.png)
 
-Dan moet je dit hebben. Verbind de **knoop van de Beelden van de Input** met **verwijder Achtergrond** knoop door over de blauwe punt naast **Beeld** op de **7} knoop van de Beelden van de Input, en tekenend een lijn aan de blauwe punt naast** Beeld van de Input **op** verwijdert Achtergrond **knoop.**
+Dan moet je dit hebben. Verbind de **knoop van de Beelden van de Input** met **verwijder Achtergrond** knoop door over de blauwe punt naast **Beeld** op de **7&rbrace; knoop van de Beelden van de Input, en tekenend een lijn aan de blauwe punt naast** Beeld van de Input **op** verwijdert Achtergrond **knoop.**
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw7.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw7.png)
 
 Dan moet je dit hebben. Daarna, klik de **knoop van de Beelden van de Output** en sleep het op het canvas.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw8.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw8.png)
 
-Dan moet je dit hebben. Verbind de **verwijder Achtergrond** knoop met de **3} knoop van de Beelden van de Output door over de blauwe punt naast** Beeld van de Output **op** verwijdert Achtergrond **knoop, en tekenend een lijn aan de blauwe punt naast** Beeld **op de** knoop van de Beelden van de Output **.**
+Dan moet je dit hebben. Verbind de **verwijder Achtergrond** knoop met de **3&rbrace; knoop van de Beelden van de Output door over de blauwe punt naast** Beeld van de Output **op** verwijdert Achtergrond **knoop, en tekenend een lijn aan de blauwe punt naast** Beeld **op de** knoop van de Beelden van de Output **.**
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw9.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw9.png)
 
 Dan moet je dit hebben.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw10.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw10.png)
 
-Uw basisworkflow kan nu worden getest. Download het beeld [ phone.png ](./assets/phone.png) aan uw Desktop.
+Uw basisworkflow kan nu worden getest. Download het beeld [&#x200B; phone.png &#x200B;](./assets/phone.png) aan uw Desktop.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw11.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw11.png)
 
-Ga terug naar uw workflow. Klik het **belemmering en dalings** gebied van de **3} knoop van de Beelden van de Input {.**
+Ga terug naar uw workflow. Klik het **belemmering en dalings** gebied van de **3&rbrace; knoop van de Beelden van de Input &lbrace;.**
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw11a.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw11a.png)
 
 Selecteer het dossier **phone.png**. Klik **Open**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw12.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw12.png)
 
 Dan moet je dit zien. Klik **Looppas**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw13.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw13.png)
 
 Na 1-2 minuten moet dit resultaat zichtbaar zijn.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw14.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw14.png)
 
 ## 1.7.1.2 Achtergrond verwijderen + Uitsnijden
 
-U zou a **knoop van het Gewas {nu moeten toevoegen 0} {aan het canvas.** In het menu, ga naar **Beeld** en scrol neer om **Uitsnijden** te vinden. Sleep het naar het canvas.
+U zou a **knoop van het Gewas {nu moeten toevoegen 0} &lbrace;aan het canvas.** In het menu, ga naar **Beeld** en scrol neer om **Uitsnijden** te vinden. Sleep het naar het canvas.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw15.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw15.png)
 
 Plaats de **knoop van het Gewas** tussen **verwijdert Achtergrond** knoop en de **knoop van het Beeld van de Output**.
 
 U moet nu de verbinding tussen **verwijderen verwijdert Achtergrond** knoop en de **knoop van het Beeld van de Output**. U kunt dat doen door op de lijn tussen beide knooppunten te dubbelklikken.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw16.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw16.png)
 
 Dan moet je dit hebben. Verbind **Achtergrond** knoop aan de **knoop van het Gewas** verwijdert, en sluit dan de **knoop van het Gewas** aan de **knoop van het Beeld van de Output** aan.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw17.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw17.png)
 
 Controle checkbox aan **AutoUitsnijden**, en dan kunt u uw werkschema testen door **Looppas** te klikken.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw18.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw18.png)
 
 Na 1-2 minuten, zou u dit moeten zien, die een beeld met een verschillende resolutie nu toont.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw19.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw19.png)
 
 ## 1.7.1.3 Achtergrond verwijderen + Uitsnijden + Samengestelde afbeelding
 
 In het menu, onder **Beeld** selecteer a **Samengestelde Beelden (2D)** knoop en sleep het op het canvas.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw20.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw20.png)
 
 Voeg een tweede verbinding aan de **knoop van het Gewas** toe, door de blauwe punt naast **Uitgesneden beeld** aan de blauwe punt naast **beeld van de Input** op de **Samengestelde Beelden (2D)** knoop aan te sluiten.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw21.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw21.png)
 
-In het menu, onder **Input en Output**, selecteer een **3} knoop van de Tekst van de Input {en sleep het op het canvas.**
+In het menu, onder **Input en Output**, selecteer een **3&rbrace; knoop van de Tekst van de Input &lbrace;en sleep het op het canvas.**
 
-Verbind de groene punt naast **Tekst** op de **3} knoop van de Tekst van de Input {met de groene punt naast** Herinnering **op de** Samengestelde Beelden (2D) **knoop.**
+Verbind de groene punt naast **Tekst** op de **3&rbrace; knoop van de Tekst van de Input &lbrace;met de groene punt naast** Herinnering **op de** Samengestelde Beelden (2D) **knoop.**
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw22.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw22.png)
 
 Dan moet je dit hebben. Ga hieronder herinnering in de **knoop van de Tekst van de Input** in.
 
@@ -140,11 +140,11 @@ Verbind de blauwe punt naast **Samengesteld beeld** op de **Samengestelde Beelde
 
 Klik **Looppas**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw23.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw23.png)
 
 Na een paar minuten, zou u iets als dit moeten zien, die uw originele beeld in een samenstelling toont die op de herinnering wordt gebaseerd die, in een specifieke resolutie werd verstrekt.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw24.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw24.png)
 
 ## 1.7.1.4 Achtergrond verwijderen + Uitsnijden + Samengestelde afbeelding + Video genereren
 
@@ -152,11 +152,11 @@ In het menu, ga naar **Video**. Selecteer **produceer Video** knoop en sleep het
 
 Verbind de blauwe punt naast **Samengesteld beeld** van de **Samengestelde Beelden (2D)** knoop met de blauwe punt naast **beeld van de Input** van **produceer Video** knoop.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw25.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw25.png)
 
 In het menu, ga naar **Input en Output**. Selecteer de **knoop van de Tekst van de Input** en sleep het op het canvas.
 
-Verbind de groene punt naast **Tekst** op de **3} knoop van de Tekst van de Input {aan de groene punt naast** Herinnering **van** produceer Video **knoop.**
+Verbind de groene punt naast **Tekst** op de **3&rbrace; knoop van de Tekst van de Input &lbrace;aan de groene punt naast** Herinnering **van** produceer Video **knoop.**
 
 Ga de herinnering `background hearts fluttering` in de **tekst van de Input** knoop in.
 
@@ -166,11 +166,11 @@ Verbind de paarse punt naast **VideoOutput** van **produceer Video** knoop aan d
 
 Klik **Looppas**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw26.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw26.png)
 
 Na een paar video&#39;s, zou u dit moeten zien die een video toont die op de combinatie van het verstrekte beeld en de herinnering wordt gebaseerd.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw27.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw27.png)
 
 ## 1.7.1.4 Schalen
 
@@ -178,35 +178,35 @@ U hebt dit nu gedaan voor 1 afbeelding. Laten we deze workflow nu gebruiken, maa
 
 Download deze afbeeldingen naar uw bureaublad:
 
-- [ watch.jpg ](./assets/watch.jpg)
-- [ airpods.jpg ](./assets/airpods.jpg)
+- [&#x200B; watch.jpg &#x200B;](./assets/watch.jpg)
+- [&#x200B; airpods.jpg &#x200B;](./assets/airpods.jpg)
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw28.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw28.png)
 
 In uw werkschema, ga terug naar de eerste knoop, **Beelden van de Input**. Verwijder de momenteel geselecteerde afbeelding.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw29.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw29.png)
 
 Klik het **belemmering en dalings** gebied.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw30.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw30.png)
 
 Selecteer de 3 afbeeldingen die u hebt gedownload. Klik **Open**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw31.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw31.png)
 
 Dan moet je dit zien. klik **Looppas**.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw32.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw32.png)
 
 Na enkele minuten ziet u een vergelijkbare uitvoer, met 3 afbeeldingen die worden gegenereerd en 3 video&#39;s.
 
-![ de Aangepaste Werkschema&#39;s van Firefly ](./images/ffcw33.png)
+![&#x200B; de Aangepaste Werkschema&#39;s van Firefly &#x200B;](./images/ffcw33.png)
 
 ## Volgende stappen
 
-Ga naar [... ](./ex1.md){target="_blank"}
+Ga naar [... &#x200B;](./ex1.md){target="_blank"}
 
-Ga terug naar [ Bouwer van het Werkschema ](./workflowbuilder.md){target="_blank"}
+Ga terug naar [&#x200B; Bouwer van het Werkschema &#x200B;](./workflowbuilder.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

@@ -43,14 +43,14 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[ 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u beginnen de Bouwer van het Werkschema te gebruiken.
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
