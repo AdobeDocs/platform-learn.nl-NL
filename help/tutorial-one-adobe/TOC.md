@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -86,9 +86,9 @@ ht-degree: 3%
       + [1.6.3 Een externe DAM-app maken en implementeren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Uw app privé publiceren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Workflow Builder {#crpr7}
+   + 1.7 Aangepaste Firefly-workflows {#crpr7}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Aan de slag met Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Aan de slag met aangepaste Firefly-workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
    + 1.8 Unified Review &amp; Approval met Workfront, Frame.io en Enterprise Storage Management {#crpr8}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Aan de slag met Workfront, Frame.io en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
@@ -134,7 +134,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
