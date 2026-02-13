@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: d5008825c083357b5b1479157cb01f795120d409
+source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -43,14 +43,14 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[&#x200B; 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u beginnen de Bouwer van het Werkschema te gebruiken.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}
