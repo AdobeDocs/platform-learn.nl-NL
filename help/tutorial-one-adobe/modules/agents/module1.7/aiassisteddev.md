@@ -23,8 +23,8 @@ In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor
 - Toegang tot Adobe Experience Manager as a Cloud Service.
 - Toegang tot Adobe I/O met ontwikkelaar of systeembeheerder.
 - Toegang tot cursor.
-- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md).
-- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [ Adobe Commerce as a Cloud Service ](./../../../modules/asset-mgmt/module1.5/accs.md).
+- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md).
+- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](./../../../modules/asset-mgmt/module1.5/accs.md).
 
 ## Video
 
@@ -34,18 +34,18 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[ 1.7.1 Vestiging uw ontwikkelomgeving ](./ex1.md){target="_blank"}
+[&#x200B; 1.7.1 Vestiging uw ontwikkelomgeving &#x200B;](./ex1.md){target="_blank"}
 
 In deze exercitie zult u uw Adobe I/O App Builder-project creëren, en zult u wat basisopstelling op uw computer doen.
 
-[ 1.7.2 de Curseur van het Gebruik om uw project ](./ex2.md){target="_blank"} te ontwikkelen
+[&#x200B; 1.7.2 de Curseur van het Gebruik om uw project &#x200B;](./ex2.md){target="_blank"} te ontwikkelen
 
 In deze oefening, zult u de integratiestarterkit van Adobe gebruiken die Adobe Developer App Builder gebruikt om verbindingsbetrouwbaarheid in real time te verbeteren en de tijd-aan-markt voor integratie tussen Adobe Commerce en andere achterkantoorsystemen, zoals ERPs, CRMs, en PIMs te verminderen
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
