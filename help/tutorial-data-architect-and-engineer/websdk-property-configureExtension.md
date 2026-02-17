@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '2884'
 ht-degree: 0%
 
 ---
@@ -91,32 +91,31 @@ Eerst zullen wij de datastream vormen. Een gegevensstroom vertelt Experience Pla
 
 Maak uw [!UICONTROL datastream] als volgt:
 
-1. Logboek in het [ gebruikersinterface van de Inzameling van Gegevens van Experience Platform ](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. Zorg ervoor u nog in de ` Luma Tutorial` zandbak bent
 1. Selecteren **[!UICONTROL Datastreams]** in de linkernavigatie
 1. Selecteer de knop **[!UICONTROL New Datastream]** in de rechterbovenhoek
 
-   ![ Uitgezochte gegevensstromen in de linkernavigatie ](assets/websdk-edgeConfig-clickNav.png)
+   ![ Uitgezochte gegevensstromen in de linkernavigatie ](assets/websdk-datastream-newDatastream.png)
 
 
 1. Voor **[!UICONTROL Friendly Name]**, ga `Luma Platform Tutorial` in (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf deze zelfstudie nemen)
 1. Selecteer de knop **[!UICONTROL Save]**
 
-   ![ Naam datastram en sparen ](assets/websdk-edgeConfig-name.png)
+   ![ Naam datastram en sparen ](assets/websdk-datastream-name.png)
 
-In het volgende scherm geeft u op waar u gegevens wilt verzenden. Gegevens verzenden naar Experience Platform:
+Zodra de gegevens op de Edge aankomen, stuurt de [!UICONTROL Datastream] deze door naar de geconfigureerde [!UICONTROL Services] . Gegevens verzenden naar Experience Platform:
 
-1. In-/uitschakelen **[!UICONTROL Adobe Experience Platform]** om extra velden beschikbaar te maken
-1. Selecteer **[!UICONTROL Sandbox]** bij `Luma Tutorial`
-1. Selecteer **[!UICONTROL Event Dataset]** bij `Luma Web Events Dataset`
-1. Als u andere Adobe-toepassingen gebruikt, kunt u de andere secties raadplegen om te zien welke informatie vereist is in de Edge-configuratie van deze andere oplossingen. Onthoud dat Web SDK niet alleen is ontwikkeld om gegevens te streamen naar Experience Platform, maar ook om alle vorige JavaScript-bibliotheken te vervangen die door andere Adobe-toepassingen worden gebruikt. De Configuratie van Edge wordt gebruikt om de rekeningsdetails van elke toepassing te specificeren waarnaar u de gegevens wilt verzenden.
+1. Selecteren **[!UICONTROL Add Service]**
+   ![ voegt de Dienst ](assets/websdk-datastream-addService.png) toe
+
+1. Selecteer uw `Luma Web Events Dataset`
 1. Selecteren **[!UICONTROL Save]**
-   ![ vorm de datastream en bewaar ](assets/websdk-edgeConfig-addEnvironment.png)
 
-Zodra de Configuratie van Edge heeft bewaard, zal het resulterende scherm drie milieu&#39;s voor Ontwikkeling, het Opvoeren, en Productie tonen zijn gecreeerd. Er kunnen extra ontwikkelomgevingen worden toegevoegd:
-![ Elke Configuratie van Edge kan veelvoudige milieu&#39;s ](assets/websdk-edgeConfig-environments.png) hebben
-Alle drie de milieu&#39;s bevatten de details van het Platform u enkel inging. Nochtans, kunnen deze details verschillend per milieu worden gevormd. U kunt bijvoorbeeld elke omgeving gegevens laten verzenden naar een andere platformsandbox. In deze zelfstudie maken we geen verdere aanpassingen van onze gegevensstroom door.
+   ![ selecteer uw dataset en bewaar ](assets/websdk-datastream-addPlatformService.png)
+
+Hoewel er een optie van de Dataset van het Profiel in de gegevensstroomconfiguratie is, zou dit niet moeten worden gebruikt om normale gegevens van het Individuele Profiel XDM naar Platform te verzenden. Deze instelling mag alleen worden gebruikt voor het verzenden van gegevens over toestemmingen, pushtoken en gebruikersactiviteiten.
+
+Met de selectievakjes [!UICONTROL Offer Decisioning], [!UICONTROL Edge Segmentation], [!UICONTROL Personalization Destinations] en [!UICONTROL Adobe Journey Optimizer] kunt u gegevens activeren op de Edge, maar deze selectievakjes worden niet gebruikt in deze zelfstudie.
 
 ## De extensie Web SDK installeren
 
@@ -126,8 +125,8 @@ Eerst moeten we een eigenschap tag maken (voorheen een eigenschap tag). Een eige
 
 Een eigenschap maken:
 
-1. Ga naar **[!UICONTROL Properties]** in de linkernavigatie
-1. Selecteer de knop **[!UICONTROL New Property]**
+1. Ga naar **[!UICONTROL Tags]** in de linkernavigatie
+1. Selecteren **[!UICONTROL New Property]**
    ![ voeg een nieuw bezit ](assets/websdk-property-addNewProperty.png) toe
 1. Als **[!UICONTROL Name]**, ga `Luma Platform Tutorial` in (voeg uw naam aan het eind toe, als de veelvoudige mensen van uw bedrijf deze zelfstudie nemen)
 1. Als **[!UICONTROL Domains]** voert u `enablementadobe.com` in (zoals verderop wordt uitgelegd)
@@ -164,10 +163,11 @@ Nu u een bezit hebt kunt u het Web SDK toevoegen gebruikend een uitbreiding. Een
 1. Ga naar **[!UICONTROL Extensions]** in de linkernavigatie
 1. Ga naar de tab **[!UICONTROL Catalog]**
 1. Er zijn veel extensies beschikbaar voor tags. De catalogus filteren met de term `Web SDK`
-1. Selecteer in de extensie **[!UICONTROL Adobe Experience Platform Web SDK]** de knop **[!UICONTROL Install]**
+1. Selecteer de extensie **[!UICONTROL Adobe Experience Platform Web SDK]** om het zijpaneel te openen
+1. Selecteer de knop **[!UICONTROL Install]**
    ![ installeer de extensie van Adobe Experience Platform Web SDK ](assets/websdk-property-addExtension.png)
 1. Er zijn verscheidene configuraties beschikbaar voor de uitbreiding van SDK van het Web, maar er slechts twee zullen wij voor dit leerprogramma vormen. Werk **[!UICONTROL Edge Domain]** aan `data.enablementadobe.com` bij. Met deze instelling kunt u cookies van eerste partijen instellen met uw Web SDK-implementatie, wat wordt aangemoedigd. Later in deze les wijst u een website op het domein `enablementadobe.com` toe aan uw eigenschap tag. De CNAME voor het `enablementadobe.com` -domein is al geconfigureerd, zodat `data.enablementadobe.com` naar Adobe-servers wordt doorgestuurd. Wanneer u Web SDK op uw eigen website implementeert, moet u een CNAME maken voor uw eigen gegevensverzamelingsdoeleinden, bijvoorbeeld `data.YOUR_DOMAIN.com`
-1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Datastream]** de `Luma Platform Tutorial` -gegevensstroom.
+1. Selecteer in de sectie **[!UICONTROL Datastreams]** voor de productieomgeving de `Luma Tutorial` sandbox en de `Luma Platform Tutorial` -gegevensstroom.
 1. Bekijk de andere configuratieopties (maar wijzig deze niet!) en selecteer vervolgens **[!UICONTROL Save]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
@@ -179,7 +179,7 @@ Nu u een bezit hebt kunt u het Web SDK toevoegen gebruikend een uitbreiding. Een
 
 Nu maken we een regel voor het verzenden van gegevens naar Platform. Een regel is een combinatie van gebeurtenissen, voorwaarden en handelingen die ervoor zorgen dat tags iets doen. Een regel maken:
 
-1. Ga naar **[!UICONTROL Rules]** in de linkernavigatie
+1. Navigeren naar **[!UICONTROL Rules]**
 1. Selecteer de knop **[!UICONTROL Create New Rule]**
    ![ creeer een regel ](assets/websdk-property-createRule.png)
 1. Naam van de regel `All Pages - Library Loaded`
@@ -191,7 +191,7 @@ Nu maken we een regel voor het verzenden van gegevens naar Platform. Een regel i
 1. Laat **[!UICONTROL Conditions]** leeg, want we willen dat deze regel op alle pagina&#39;s wordt toegepast, zoals bij de naam die we hem gaven
 1. Selecteer onder **[!UICONTROL Actions]** de knop **[!UICONTROL Add]**
 1. Gebruik **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL Extension]** en selecteer **[!UICONTROL Send Event]** als **[!UICONTROL Action Type]**
-1. Selecteer rechts in het vervolgkeuzemenu **[!UICONTROL web.webpagedetails.pageViews]** de optie **[!UICONTROL Type]** . Dit is een van de XDM-velden in onze `Luma Web Events Schema`
+1. Selecteer rechts in het vervolgkeuzemenu **[!UICONTROL Web Webpagedetails Page Views]** de optie **[!UICONTROL Type]** . Hiermee wordt het veld eventType van onze `Luma Web Events Schema` gevuld
 1. Selecteer **[!UICONTROL Keep Changes]** om terug te keren naar het hoofdregelscherm
    ![ voeg de Send actie van de Gebeurtenis ](assets/websdk-property-addAction.png) toe
 1. Selecteer **[!UICONTROL Save]** om de regel op te slaan\
@@ -261,7 +261,7 @@ De Experience Platform Debugger is een extensie die beschikbaar is voor Chrome e
 
 * [ de uitbreiding van Chrome ](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Als u Foutopsporing nooit eerder hebt gebruikt—en deze is anders dan de oudere Adobe Experience Cloud Debugger—kunt u deze overzichtsvideo van vijf minuten bekijken:
+Als u Foutopsporing nog nooit eerder hebt gebruikt, kunt u deze overzichtsvideo van vijf minuten bekijken:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
@@ -284,7 +284,7 @@ De Experience Platform Debugger heeft een coole functie waarmee u een bestaande 
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie, die met dit leerprogramma niet verwant is (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Bevestig dat Debugger &quot;**[!UICONTROL Connected to Luma]**&quot;zoals hieronder afgebeeld is en selecteer dan het &quot;**[!UICONTROL lock]**&quot;pictogram is om Debugger aan de plaats van de Luma te sluiten.
 1. Selecteer de knop **[!UICONTROL Sign In]** rechtsboven om te verifiëren.
-1. Ga nu naar **[!UICONTROL Launch]** in de linkernavigatie
+1. Ga nu naar **[!UICONTROL Experience Platform Tags]** in de linkernavigatie
 1. Selecteer het tabblad Configuratie
 1. Open rechts van waar de **[!UICONTROL Page Embed Codes]** wordt weergegeven het vervolgkeuzemenu **[!UICONTROL Actions]** en selecteer **[!UICONTROL Replace]**
    ![ Uitgezochte Acties > vervangen ](assets/websdk-debugger-replaceLibrary.png)
@@ -292,16 +292,16 @@ De Experience Platform Debugger heeft een coole functie waarmee u een bestaande 
 1. Selecteer uw `Development` -omgeving
 1. Selecteer de knop **[!UICONTROL Apply]**
    ![ selecteer het afwisselende markeringsbezit ](assets/websdk-debugger-selectProperty.png)
-1. De website van de Luma zal _met uw markeringsbezit_ nu opnieuw laden. Help, ik ben gehackt! Grapje.
+1. De website van de Luma zal _met uw markeringsbezit_ nu opnieuw laden.
    ![ vervangen markeringsbezit ](assets/websdk-debugger-propertyReplaced.png)
 1. Ga naar **[!UICONTROL Summary]** in de linkernavigatie om de details van uw eigenschap [!UICONTROL Launch] te bekijken
    ![ Samenvatting tabel ](assets/websdk-debugger-summary.png)
-1. Ga nu naar **[!UICONTROL AEP Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]** te zien
+1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]** te zien
 1. De rij **[!UICONTROL events]** openen
+1. Opmerking: het gebeurtenistype `web.webpagedetails.pageView` dat we in de [!UICONTROL Send Event] -handeling hebben opgegeven, wordt weergegeven
 
    ![ SDK van het Web van Adobe Experience Platform verzoek ](assets/websdk-debugger-platformNetwork.png)
-1. Let op hoe we het gebeurtenistype `web.webpagedetails.pageView` zien dat we in onze [!UICONTROL Send Event] -actie hebben opgegeven, en andere variabelen die zich buiten het vak bevinden, in de `AEP Web SDK ExperienceEvent Mixin` -indeling.
-   ![ de details van de Gebeurtenis ](assets/websdk-debugger-eventDetails.png)
+
 1. Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel. Open het en laad de pagina opnieuw. Filter voor vraag met `interact` om van de vraag de plaats te bepalen, het te selecteren, en dan in het **Kopballen** lusje, **gebied van de Payload van het Verzoek** te kijken.
    ![ het lusje van het Netwerk ](assets/websdk-debugger-networkTab.png)
 1. Ga naar het **lusje van de Reactie** en neem nota hoe de ECID waarde in de reactie inbegrepen is. Kopieer deze waarde zoals u deze gebruikt om de profielgegevens in de volgende oefening te valideren.
@@ -334,16 +334,34 @@ U kunt ook bevestigen dat het nieuwe profiel wordt weergegeven:
 
 ## Aangepaste gegevens aan de gebeurtenis toevoegen
 
-### Een gegevenselement voor een paginanaam maken
+### Een gegevenselement maken om XDM-gegevens op te slaan
 
-1. Open in de interface met tags voor gegevensverzameling rechtsboven in de eigenschap `Luma Platform Tutorial` het vervolgkeuzemenu **[!UICONTROL Select a Working Library]** en selecteer de `Luma Platform Tutorial` -bibliotheek. Met deze instelling kunt u gemakkelijker aanvullende updates naar onze bibliotheek publiceren.
+1. Ga terug naar de eigenschap `Luma Platform Tutorial` tag
+1. Open het vervolgkeuzemenu **[!UICONTROL Select a Working Library]** en selecteer de `Luma Platform Tutorial` -bibliotheek. Met deze instelling kunt u gemakkelijker aanvullende updates naar onze bibliotheek publiceren.
 1. Ga nu naar **[!UICONTROL Data Elements]** in de linkernavigatie
 1. Selecteer de knop **[!UICONTROL Create New Data Element]**
 
    ![ creeer een nieuw gegevenselement ](assets/websdk-property-createNewDataElement.png)
+
+Op de pagina **[!UICONTROL Data Elements]** :
+
+
+1. Als **[!UICONTROL Name]** voert u `XDM Object` in
+1. Als **[!UICONTROL Extension]** selecteert u `Adobe Experience Platform Web SDK`
+1. Als **[!UICONTROL Data Element Type]** selecteert u `XDM object`
+1. Als **[!UICONTROL Sandbox]** selecteert u de `Luma Tutorial` -sandbox
+1. Als de **[!UICONTROL Schema]** , selecteert u uw `Luma Web Events Schema`
+1. Selecteer het veld `web.webPageDetails.name`
+1. Als **[!UICONTROL Value]** selecteert u het pictogram waarmee u het selectiemodel van het gegevenselement wilt openen en het gegevenselement `Page Name` wilt kiezen
+1. Selecteren **[!UICONTROL Save to Library]**
+   ![ Wijs de paginanaam aan het XDM gegevenselement van Objecten ](assets/websdk-property-dataElement-createXDMVariable.png) toe
+
+### Een gegevenselement voor een paginanaam maken
+
+1. Een nieuw gegevenselement maken
 1. Als **[!UICONTROL Name]** voert u `Page Name` in
 1. Als **[!UICONTROL Data Element Type]** selecteert u `JavaScript Variable`
-1. Als **[!UICONTROL JavaScript variable name]** voert u `digitalData.page.pageInfo.pageName` in
+1. Als **[!UICONTROL JavaScript variable name]** voert u `adobeDataLayer.0.page.name` in
 1. Als u de notatie van de waarden wilt standaardiseren, schakelt u de selectievakjes **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** in
 1. Zorg ervoor dat `Luma Platform Tutorial` is geselecteerd als de werkbibliotheek
 1. Selecteren **[!UICONTROL Save to Library]**
@@ -353,25 +371,10 @@ U kunt ook bevestigen dat het nieuwe profiel wordt weergegeven:
 
 Nu zullen wij onze paginanaam aan het Web SDK in kaart brengen.
 
->[!IMPORTANT]
->
->Om deze taak te voltooien, moeten wij ervoor zorgen dat uw gebruiker eerst toegang tot de zandbak van de Prod heeft. Als u nog geen toegang hebt tot de prod-sandbox vanuit een ander productprofiel, opent u snel het `Luma Tutorial Platform` -profiel en voegt u het machtigingsitem **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]** toe. Voer vervolgens een SHIFT-Opnieuw laden op de pagina Data Elements uit om de cache te wissen
->![De sandbox Prod toevoegen ](assets/websdk-property-permissionToLoadSchema.png)
 
-Op de pagina **[!UICONTROL Data Elements]** :
 
-1. Een nieuw gegevenselement maken
-1. Als **[!UICONTROL Name]** voert u `XDM Object` in
-1. Als **[!UICONTROL Extension]** selecteert u `Adobe Experience Platform Web SDK`
-1. Als **[!UICONTROL Data Element Type]** selecteert u `XDM object`
-1. Als **[!UICONTROL Sandbox]** selecteert u de `Luma Tutorial` -sandbox
-1. Als de **[!UICONTROL Schema]** , selecteert u uw `Luma Web Events Schema`
-1. Selecteer het veld `web.webPageDetails.name`
-1. Als **[!UICONTROL Value]** selecteert u het pictogram waarmee u het selectiemodel van het gegevenselement wilt openen en het gegevenselement `Page Name` wilt kiezen
-1. Selecteren **[!UICONTROL Save to Library]**
-   ![ Wijs de paginanaam aan het XDM gegevenselement van Objecten ](assets/websdk-property-dataElement-createXDMObject.png) toe
 
-Hetzelfde proces wordt gebruikt om extra aangepaste gegevens op uw website toe te wijzen aan XDM-velden.
+
 
 ### De XDM-gegevens toevoegen aan de handeling Verzendgebeurtenis
 
