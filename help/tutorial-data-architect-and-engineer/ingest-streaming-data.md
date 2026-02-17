@@ -44,7 +44,7 @@ Voordat u de oefeningen start, bekijkt u deze twee korte video&#39;s voor meer i
 
 >[!NOTE]
 >
->Terwijl dit leerprogramma zich bij het stromen van opname van websites met Web SDK concentreert, kunt u gegevens ook stromen gebruikend [&#x200B; Mobiele SDK &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [&#x200B; de Server API van Edge Network &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview), en [&#x200B; HTTP API &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
+>Terwijl dit leerprogramma zich bij het stromen van opname van websites met Web SDK concentreert, kunt u gegevens ook stromen gebruikend [&#x200B; Mobiele SDK &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/overview), [&#x200B; de Server API van Edge Network &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/data-collection/server-api/overview), en [&#x200B; HTTP API &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Vereiste machtigingen
 

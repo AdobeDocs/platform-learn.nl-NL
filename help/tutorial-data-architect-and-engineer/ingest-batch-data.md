@@ -79,8 +79,8 @@ Eerst, krijg de steekproefgegevens en pas het voor uw huurder aan:
 >
 >Er zijn een paar opties, **[!UICONTROL Error diagnostics]** en **[!UICONTROL Partial ingestion]**, die u op verschillende schermen in deze les zult zien. Deze opties worden niet behandeld in de zelfstudie. Enkele snelle informatie:
 >
->* Als u foutdiagnostiek inschakelt, worden gegevens over de inname van uw gegevens gegenereerd. U kunt deze gegevens vervolgens controleren met de API voor gegevenstoegang. Leer meer over het in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* Gedeeltelijke invoer maakt het mogelijk gegevens met fouten in te voeren, tot een bepaalde drempel die u kunt opgeven. Leer meer over het in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* Als u foutdiagnostiek inschakelt, worden gegevens over de inname van uw gegevens gegenereerd. U kunt deze gegevens vervolgens controleren met de API voor gegevenstoegang. Leer meer over het in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=nl-NL).
+>* Gedeeltelijke invoer maakt het mogelijk gegevens met fouten in te voeren, tot een bepaalde drempel die u kunt opgeven. Leer meer over het in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=nl-NL)
 
 ### De gegevens valideren
 
@@ -115,7 +115,7 @@ Als u zich in de vorige les hebt geabonneerd op gegevensinsluitingsgebeurtenisse
 
 ![&#x200B; Web-haak van Gegevens ingestie &#x200B;](assets/ingestion-loyalty-webhook.png)
 
-Zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) voor meer details op de berichten.
+Zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=nl-NL#available-status-notification-events) voor meer details op de berichten.
 
 ## Gegevens in batches samenvoegen met platform-API
 
@@ -226,7 +226,7 @@ Als u zich in de vorige les hebt geabonneerd op gegevensinsluitingsgebeurtenisse
 
 ![&#x200B; Web-haak van Gegevens ingestie &#x200B;](assets/ingestion-crm-webhook.png)
 
-Zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) voor meer details op de berichten.
+Zie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=nl-NL#available-status-notification-events) voor meer details op de berichten.
 
 ## Gegevens samenvoegen met workflows
 
@@ -282,7 +282,7 @@ Veel van de Bronnen hebben een gelijkaardige configuratiewerkschema, waarin u:
 
 >[!NOTE]
 >
->De gegevens voor offline aanschaf die we in deze exercitie gebruiken, bevatten gegevens over datumtijd. De gegevens van de tijd van de datum zouden in of [&#x200B; ISO 8061 geformatteerde koorden &#x200B;](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15 :05: 59.000-08 :00&quot;) of Unix Tijd moeten zijn die in milliseconden wordt geformatteerd (153126999500 00) en worden bij inname omgezet in het doel-XDM-type. Voor meer op gegevensomzetting en andere beperkingen, zie [&#x200B; de documentatie van de Ingestie API van de Partij &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>De gegevens voor offline aanschaf die we in deze exercitie gebruiken, bevatten gegevens over datumtijd. De gegevens van de tijd van de datum zouden in of [&#x200B; ISO 8061 geformatteerde koorden &#x200B;](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15 :05: 59.000-08 :00&quot;) of Unix Tijd moeten zijn die in milliseconden wordt geformatteerd (153126999500 00) en worden bij inname omgezet in het doel-XDM-type. Voor meer op gegevensomzetting en andere beperkingen, zie [&#x200B; de documentatie van de Ingestie API van de Partij &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=nl-NL#types).
 
 ### Download, prep en upload de gegevens naar de voorkeursleverancier voor cloudopslag
 
@@ -334,12 +334,12 @@ Zoek het profiel met waarde `5625458` opnieuw op in de naamruimte `loyaltyId` om
 
 Adobe werkt samen met meerdere leveranciers van ETL om gegevensinvoer in Experience Platform te ondersteunen. Wegens de verscheidenheid van derdeverkopers, is ETL niet behandeld in dit leerprogramma, hoewel u welkom bent om sommige van deze middelen te herzien:
 
-* [&#x200B; het Ontwikkelen ETL Integraties voor Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [&#x200B; het Ontwikkelen ETL Integraties voor Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=nl-NL)
 * [[!DNL Snaplogic]  Adobe Experience Platform Snap Pack &#x200B;](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Aanvullende bronnen
 
-* [&#x200B; de documentatie van de Ingestie van de Partij &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [&#x200B; de documentatie van de Ingestie van de Partij &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=nl-NL)
 * [&#x200B; Verwijzing van de Opname API van de Partij &#x200B;](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Nu laten [&#x200B; stroomgegevens gebruiken het Web SDK &#x200B;](ingest-streaming-data.md)
