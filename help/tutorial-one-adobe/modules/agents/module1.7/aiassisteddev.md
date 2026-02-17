@@ -4,9 +4,9 @@ description: Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -23,23 +23,29 @@ In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor
 - Toegang tot Adobe Experience Manager as a Cloud Service.
 - Toegang tot Adobe I/O met ontwikkelaar of systeembeheerder.
 - Toegang tot cursor.
-- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md).
-- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [&#x200B; Adobe Commerce as a Cloud Service &#x200B;](./../../../modules/asset-mgmt/module1.5/accs.md).
+- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md).
+- U zou deze module moeten voltooien aangezien er gebiedsdelen zijn: [ Adobe Commerce as a Cloud Service ](./../../../modules/asset-mgmt/module1.5/accs.md).
+
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
 
 ## Uitoefening
 
-[&#x200B; 1.7.1 Vestiging uw ontwikkelomgeving &#x200B;](./ex1.md){target="_blank"}
+[ 1.7.1 Vestiging uw ontwikkelomgeving ](./ex1.md){target="_blank"}
 
 In deze exercitie zult u uw Adobe I/O App Builder-project creëren, en zult u wat basisopstelling op uw computer doen.
 
-[&#x200B; 1.7.2 de Curseur van het Gebruik om uw project &#x200B;](./ex2.md){target="_blank"} te ontwikkelen
+[ 1.7.2 de Curseur van het Gebruik om uw project ](./ex2.md){target="_blank"} te ontwikkelen
 
 In deze oefening, zult u de integratiestarterkit van Adobe gebruiken die Adobe Developer App Builder gebruikt om verbindingsbetrouwbaarheid in real time te verbeteren en de tijd-aan-markt voor integratie tussen Adobe Commerce en andere achterkantoorsystemen, zoals ERPs, CRMs, en PIMs te verminderen
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}

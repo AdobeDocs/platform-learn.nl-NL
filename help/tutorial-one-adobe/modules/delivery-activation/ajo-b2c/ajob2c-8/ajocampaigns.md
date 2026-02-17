@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 2e4808654f285b21ea2dcc4570ea879b98a772b0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,12 @@ Adobe Journey Optimizer Campaign Orchestration wordt geleverd met een relationee
 
 - Toegang tot georkestreerde Adobe Journey Optimizer-campagnes
 
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
+
 ## Uitoefening
 
 [3.8.1 De stichting van uw relationele gegevens instellen](./ex1.md)
@@ -44,7 +50,7 @@ In deze oefening, zult u Campagnes in Adobe Journey Optimizer vormen en gebruike
 
 In deze oefening, zult u uw georkestreerde campagne creëren.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -3,10 +3,11 @@ title: Adobe Experience Manager & Agents
 description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 2%
 
 ---
 
@@ -20,16 +21,22 @@ TBC
 
 - Toegang tot Adobe Experience Manager (AEM)
 
+## Video
+
+In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze oefening betrokken zijn.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479941?quality=12&learn=on)
+
 ## Uitoefening
 
-[&#x200B; 1.6.1 Content Production Agent &#x200B;](./ex1.md){target="_blank"}
+[ 1.6.1 Content Production Agent ](./ex1.md){target="_blank"}
 
 TBC
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"} AEM
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"} AEM
