@@ -4,18 +4,28 @@ description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
+source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 2%
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 # 1.6 Adobe Experience Manager en agents
 
+Adobe Experience Manager beschikt nu over verschillende speciaal gebouwde agentia, die elk ontworpen zijn om werk te doen dat historisch veel handmatige inspanningen vereist. Dit zijn geen algemene AI-assistenten, maar domeingetrainde agents die AEM diep begrijpen en die werken op verschillende content, code, assets, governance en optimalisatie.
+
+- **de Agent van de Productie van de Ervaring**, die updates, inhoudsveranderingen, en zelfs volledige plaatsmigraties versnelt.
+- **Agent van de Governance**, dwingt merk, rechten, en nalevingsregels automatisch af.
+- **de Agent van de Ontdekking**, bereidt inhoud voor AI-inheemse ontdekking voor en doet dienst als intelligente strategist.
+- **de Agent van de Optimalisering van de Inhoud**, leidt onmiddellijk tot prestaties-klaar, kanaal-specifieke activavariaties.
+- **Agent van de Ontwikkeling**, versnelt ontwikkelaars met AI-bijgewoonde het oplossen van problemen en prestaties het stemmen.
+
+Samen bewegen deze agenten AEM ver voorbij traditionele mogelijkheden van CMS en in geautomatiseerde ervaringsverrichtingen. Elk van deze agenten wordt ontworpen met mensen in controle, die nauwkeurigheid, vertrouwen, en toezicht verzekeren.
+
 ## Leerdoelen
 
-TBC
+- Leer hoe u de verschillende beschikbare AEM Agents kunt gebruiken
 
 ## Vereisten
 
@@ -29,14 +39,14 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[&#x200B; 1.6.1 Content Production Agent &#x200B;](./ex1.md){target="_blank"}
+[ 1.6.1 die met de Agenten van AEM ](./ex1.md){target="_blank"} wordt begonnen
 
-TBC
+In deze oefening, zult u {de Agent van de Ontdekking 1} en **de Agent van de Productie van de Ervaring** onderzoeken.****
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"} AEM
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"} AEM

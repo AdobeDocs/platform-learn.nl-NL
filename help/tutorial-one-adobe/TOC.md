@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1509'
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -285,7 +285,7 @@ ht-degree: 3%
       + [1.5.3 Adobe Analytics &amp; Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
    + 1.6 AEM en agents {#agents6}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.1 Aan de slag met AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
    + 1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce {#agents7}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 De ontwikkelomgeving instellen](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
