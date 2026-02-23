@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht - Agentic AI Tech Labs
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -73,7 +73,7 @@ In deze oefening zult u leren hoe te:
 - Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
 - Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
 
-[ 1.6 AEM &amp; Agenten ](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[&#x200B; 1.6 AEM &amp; Agenten &#x200B;](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **Doel**
 
@@ -93,7 +93,7 @@ In deze oefening zult u leren hoe te om deze agenten te gebruiken gebruikend zow
 
 In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze diensten zal door Cursor worden gesteund.
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

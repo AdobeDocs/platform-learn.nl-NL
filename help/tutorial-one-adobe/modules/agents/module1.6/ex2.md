@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Om deze oefening te voltooien, moet u toegang tot een werkende AEM Sites en Assets CS met milieu EDS en de diverse agenten van AEM worden toegelaten voor IMS Org u gebruikt.
 >
->Als u zulk een milieu nog niet hebt, ga [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} uitoefenen. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
+>Als u zulk een milieu nog niet hebt, ga [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} uitoefenen. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >
@@ -42,27 +42,27 @@ U kunt de onderstaande instructies gebruiken om vergelijkbare MCP-servers in te 
 
 Maak een nieuwe lege map op uw bureaublad.
 
-![ Cursor + AEM ](./images/cursorai1.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai1.png)
 
 Open de cursor. Klik **Open project**.
 
-![ Cursor + AEM ](./images/cursorai2.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai2.png)
 
 Selecteer de omslag u vóór creeerde en klik **Open**.
 
-![ Cursor + AEM ](./images/cursorai3.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai3.png)
 
 Klik **ja, vertrouw ik de auteurs**.
 
-![ Cursor + AEM ](./images/cursorai4.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai4.png)
 
 Dan moet je dit zien. Gebruik de sneltoets `Cmd + Shift + J` om de cursorinstellingen te openen. Dan moet je dit zien. Ga naar **Hulpmiddelen &amp; MCP**.
 
-![ Cursor + AEM ](./images/cursorai5.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai5.png)
 
 Klik **+ Nieuwe Server MCP**.
 
-![ Cursor + AEM ](./images/cursorai6.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai6.png)
 
 Voeg de volgende server MCP aan het dossier **mcp.json** toe. Er zijn mogelijk andere MCP-servers die al in dit bestand zijn opgegeven. Verwijder deze servers niet en voeg alleen de onderstaande nieuwe regels toe. Sla uw wijzigingen op.
 
@@ -72,19 +72,19 @@ Voeg de volgende server MCP aan het dossier **mcp.json** toe. Er zijn mogelijk a
 	}
 ```
 
-![ Cursor + AEM ](./images/cursorai7.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai7.png)
 
 De schakelaar terug naar de lusje **Montages van de Curseur**. U zou een hulpmiddel moeten nu zien genoemd **genoemd** toegevoegd in de lijst van servers MCP. Klik **verbinden** om het gebruiken van uw rekening van Adobe voor authentiek te verklaren.
 
-![ Cursor + AEM ](./images/cursorai8.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai8.png)
 
 Klik **Open** voor het geval u dit bericht ziet. Vervolgens moet u de verificatie uitvoeren in uw browser.
 
-![ Cursor + AEM ](./images/cursorai9.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai9.png)
 
 Na succesvolle authentificatie, zou u iets als dit moeten zien.
 
-![ Cursor + AEM ](./images/cursorai10.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai10.png)
 
 Sluit de **Montages van de Curseur** en **mcp.json** lusjes. Plak de volgende herinnering in het praatje en klik **verzenden**.
 
@@ -92,17 +92,17 @@ Sluit de **Montages van de Curseur** en **mcp.json** lusjes. Plak de volgende he
 I just created a new custom mcp server named 'aem'. what can I do with that?
 ```
 
-![ Cursor + AEM ](./images/cursorai11.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai11.png)
 
 Klik **Looppas**.
 
-![ Cursor + AEM ](./images/cursorai12.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai12.png)
 
 Daarna moet u een vergelijkbare reactie zien.
 
-![ Cursor + AEM ](./images/cursorai13.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai13.png)
 
-![ Cursor + AEM ](./images/cursorai14.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai14.png)
 
 Zoals u kunt zien, worden de gelijkaardige mogelijkheden blootgesteld door de server MCP in Cursor in vergelijking met wat mogelijk gebruikend AI Medewerker in de vorige oefening was.
 
@@ -112,7 +112,7 @@ Ga de volgende herinnering in en klik **verzenden**.
 List AEM Author instances
 ```
 
-![ Cursor + AEM ](./images/cursorai15.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai15.png)
 
 Dan moet je iets dergelijks zien. Onderzoek naar het milieu u wilt gebruiken en dan de volgende herinnering ingaan en **klikken verzendt**.
 
@@ -120,11 +120,11 @@ Dan moet je iets dergelijks zien. Onderzoek naar het milieu u wilt gebruiken en 
 use environment number X
 ```
 
-![ Cursor + AEM ](./images/cursorai16.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai16.png)
 
 Dan moet je dit zien.
 
-![ Cursor + AEM ](./images/cursorai17.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai17.png)
 
 Plak de volgende herinnering en klik **verzenden**. Vervang XXX in deze herinnering door URL die u in de vorige oefening kopieerde.
 
@@ -137,15 +137,15 @@ On the page https://author-p185022-e1936676.adobeaemcloud.com/content/CitiSignal
 - change the text '99.9% network reliability' to '99.998% network reliability'
 ```
 
-![ Cursor + AEM ](./images/cursorai18.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai18.png)
 
 Na 1-2 minuten dient u een vergelijkbare reactie te krijgen. Kopieer de URL en open de pagina in uw browser.
 
-![ Cursor + AEM ](./images/cursorai19.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai19.png)
 
 Dan moet je dit zien.
 
-![ Cursor + AEM ](./images/cursorai20.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai20.png)
 
 Ga de volgende herinnering in en klik **verzenden**.
 
@@ -153,15 +153,15 @@ Ga de volgende herinnering in en klik **verzenden**.
 promote the changes by creating a new launch and promoting it
 ```
 
-![ Cursor + AEM ](./images/cursorai21.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai21.png)
 
 Na 1-2 minuten zijn de wijzigingen bevorderd.
 
-![ Cursor + AEM ](./images/cursorai22.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai22.png)
 
 De wijzigingen worden nu live op uw website weergegeven.
 
-![ Cursor + AEM ](./images/cursorai23.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursorai23.png)
 
 Voel vrij om de andere mogelijkheden van de Server van AEM te onderzoeken MCP.
 
@@ -169,7 +169,7 @@ Voel vrij om de andere mogelijkheden van de Server van AEM te onderzoeken MCP.
 
 Gebruik de sneltoets `Cmd + Shift + J` om de cursorinstellingen te openen. Dan moet je dit zien. Ga naar **Hulpmiddelen &amp; MCP**. Klik **+ Nieuwe Server MCP**.
 
-![ Cursor + AEM ](./images/cursoraiz5.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz5.png)
 
 Voeg de volgende server MCP aan het dossier **mcp.json** toe. Er zijn mogelijk andere MCP-servers die al in dit bestand zijn opgegeven. Verwijder deze servers niet en voeg alleen de onderstaande nieuwe regels toe. Sla uw wijzigingen op.
 
@@ -180,15 +180,15 @@ Voeg de volgende server MCP aan het dossier **mcp.json** toe. Er zijn mogelijk a
 }
 ```
 
-![ Cursor + AEM ](./images/cursoraiz7.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz7.png)
 
 De schakelaar terug naar de lusje **Montages van de Curseur**. U zou een hulpmiddel moeten nu zien genoemd **genoemd** toegevoegd in de lijst van servers MCP. Klik **verbinden** om het gebruiken van uw rekening van Adobe voor authentiek te verklaren.
 
-![ Cursor + AEM ](./images/cursoraiz8.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz8.png)
 
 Na het voor authentiek verklaren, zou u dit moeten zien.
 
-![ Cursor + AEM ](./images/cursoraiz9.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz9.png)
 
 Sluit de **Montages van de Curseur** en **mcp.json** lusjes. Plak de volgende herinnering in het praatje en klik **verzenden**.
 
@@ -196,20 +196,20 @@ Sluit de **Montages van de Curseur** en **mcp.json** lusjes. Plak de volgende he
 I just created a new custom mcp server named 'aem-discovery'. what can I do with that?
 ```
 
-![ Cursor + AEM ](./images/cursoraiz10.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz10.png)
 
 ```
 for the environment https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/, list all assets tagged with 'Spring 2026'
 ```
 
-![ Cursor + AEM ](./images/cursoraiz11.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz11.png)
 
 Dan moet je iets dergelijks zien.
 
-![ Cursor + AEM ](./images/cursoraiz12.png)
+![&#x200B; Cursor + AEM &#x200B;](./images/cursoraiz12.png)
 
 ## Volgende stappen
 
-Ga terug naar [ AEM &amp; Agenten ](./aemagents.md){target="_blank"}
+Ga terug naar [&#x200B; AEM &amp; Agenten &#x200B;](./aemagents.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

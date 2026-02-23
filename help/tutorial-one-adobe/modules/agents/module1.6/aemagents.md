@@ -39,19 +39,19 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[ 1.6.1 die met de Agenten van AEM ](./ex1.md){target="_blank"} wordt begonnen
+[&#x200B; 1.6.1 die met de Agenten van AEM &#x200B;](./ex1.md){target="_blank"} wordt begonnen
 
-In deze oefening, zult u {de Agent van de Ontdekking 1} en **de Agent van de Productie van de Ervaring** onderzoeken.****
+In deze oefening, zult u {de Agent van de Ontdekking 1} en **de Agent van de Productie van de Ervaring** onderzoeken.**&#x200B;**
 
 [1.6.2 AEM MCP-servers en -cursor](./ex2.md)
 
 In deze oefening, zult u uw milieu van de Curseur met AEM verbinden gebruikend de Server van AEM MCP.
 
 
-![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"} AEM
+[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"} AEM
