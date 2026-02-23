@@ -3,16 +3,16 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -73,13 +73,27 @@ In deze oefening zult u leren hoe te:
 - Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
 - Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
 
+[ 1.6 AEM &amp; Agenten ](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Doel**
+
+Adobe Experience Manager beschikt nu over verschillende speciaal gebouwde agentia, die elk ontworpen zijn om werk te doen dat historisch veel handmatige inspanningen vereist. Dit zijn geen algemene AI-assistenten, maar domeingetrainde agents die AEM diep begrijpen en die werken op verschillende content, code, assets, governance en optimalisatie.
+
+- **de Agent van de Productie van de Ervaring**, die updates, inhoudsveranderingen, en zelfs volledige plaatsmigraties versnelt.
+- **Agent van de Governance**, dwingt merk, rechten, en nalevingsregels automatisch af.
+- **de Agent van de Ontdekking**, bereidt inhoud voor AI-inheemse ontdekking voor en doet dienst als intelligente strategist.
+- **de Agent van de Optimalisering van de Inhoud**, leidt onmiddellijk tot prestaties-klaar, kanaal-specifieke activavariaties.
+- **Agent van de Ontwikkeling**, versnelt ontwikkelaars met AI-bijgewoonde het oplossen van problemen en prestaties het stemmen.
+
+In deze oefening zult u leren hoe te om deze agenten te gebruiken gebruikend zowel AI Medewerker als Cursor door de serveropstelling van douane MCP.
+
 [1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
 **Doel**
 
 In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze diensten zal door Cursor worden gesteund.
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

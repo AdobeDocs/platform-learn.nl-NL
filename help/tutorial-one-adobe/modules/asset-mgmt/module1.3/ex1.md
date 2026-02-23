@@ -3,7 +3,8 @@ title: Uw eerste formulier maken
 description: Uw eerste formulier maken
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 8%
@@ -16,7 +17,7 @@ ht-degree: 8%
 >
 >U hebt toegang nodig tot een werkende AEM Assets CS Author-omgeving met AEM Assets Dynamic Media ingeschakeld om deze oefening te kunnen voltooien.
 >
->Als u zulk een milieu niet hebt, ga naar [&#x200B; Adobe Experience Manager Cloud Service &amp; Edge Delivery Services &#x200B;](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
+>Als u zulk een milieu niet hebt, ga naar [ Adobe Experience Manager Cloud Service &amp; Edge Delivery Services ](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Volg de instructies daar, en u zult toegang tot zulk een milieu hebben.
 
 >[!IMPORTANT]
 >
@@ -100,9 +101,9 @@ Gelieve te verifiëren uw configuratie van de Github repo, specifiek in het doss
 
 Met deze vereisten kunt u het eerste formulier maken.
 
-## 1.3.1.1 Formulier maken
+## 1.3.1.2 Formulier maken
 
-Ga naar [&#x200B; https://my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Open uw omgeving.
+Ga naar [ https://my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com){target="_blank"}. De org die u moet selecteren is `--aepImsOrgName--`. Open uw omgeving.
 
 ![AEM Forms](./images/aemforms1.png)
 
@@ -270,7 +271,7 @@ Nadat u het formulier hebt gepubliceerd, is het nu ook beschikbaar op uw Edge De
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 Formulier verzenden
+## 1.3.1.3 Formulier verzenden
 
 Voor het verzenden van uw formulier zijn twee dingen vereist:
 
@@ -281,7 +282,7 @@ In deze exercitie moet u ook een Google-spreadsheet gebruiken om verzendingen va
 
 ### Google-spreadsheet
 
-Ga naar [&#x200B; https://drive.google.com &#x200B;](https://drive.google.com) en creeer een nieuw leeg spreadsheet.
+Ga naar [ https://drive.google.com ](https://drive.google.com) en creeer een nieuw leeg spreadsheet.
 
 ![AEM Forms](./images/sheet1.png)
 
@@ -324,7 +325,7 @@ Verzendacties maken deel uit van een extensie voor de universele editor.
 
 >[!NOTE]
 >
->Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram uit, betekent het dat deze uitbreiding nog niet voor uw milieu wordt toegelaten. Om deze uitbreiding toe te laten, ga [&#x200B; https://experience.adobe.com/#/aem/extension-manager &#x200B;](https://experience.adobe.com/#/aem/extension-manager) en laat **toe geef de uitbreiding van de Eigenschappen van de Vorm** uit.
+>Als u niet **ziet geef de Eigenschappen van de Vorm** pictogram uit, betekent het dat deze uitbreiding nog niet voor uw milieu wordt toegelaten. Om deze uitbreiding toe te laten, ga [ https://experience.adobe.com/#/aem/extension-manager ](https://experience.adobe.com/#/aem/extension-manager) en laat **toe geef de uitbreiding van de Eigenschappen van de Vorm** uit.
 >
 >![AEM Forms](./images/extmgr.png)
 
@@ -366,6 +367,6 @@ U hebt deze oefening nu met succes voltooid.
 
 ## Volgende stappen
 
-Ga terug naar [&#x200B; Adobe Experience Manager Forms met Edge Delivery Services &#x200B;](./aemforms.md){target="_blank"}
+Ga terug naar [ Adobe Experience Manager Forms met Edge Delivery Services ](./aemforms.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
