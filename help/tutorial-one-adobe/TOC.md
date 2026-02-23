@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
+source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -107,6 +107,9 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 Aan de slag met AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.3 Adobe Experience Manager Forms met Edge Delivery Services {#assetm5}
+      + [Overzicht](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
+      + [1.3.1 Het eerste formulier maken](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
    + 1.4 Adobe Experience Manager Assets en dynamische media {#assetm4}
       + [Overzicht](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
       + [1.4.1 Uw elementen en dynamische mediasjablonen maken](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
@@ -134,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
