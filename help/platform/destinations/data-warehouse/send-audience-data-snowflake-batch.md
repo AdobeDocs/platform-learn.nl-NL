@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Leer hoe u de Snowflake Batch-bestemming in Adobe Real-Time CDP configureert en gebruikt voor het dagelijks volledig vernieuwen van de momentopnamen van uw publiek in uw Snowflake-account. Bekijk de end-to-end workflow in Adobe Experience Platform, hoe de gegevens als een dynamische tabel in Snowflake worden weergegeven en de belangrijkste stappen en validaties voor het instellen van de gegevens om een geslaagde integratie te garanderen.
 
-Voor meer informatie, herzie de [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
+Voor meer informatie, herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
