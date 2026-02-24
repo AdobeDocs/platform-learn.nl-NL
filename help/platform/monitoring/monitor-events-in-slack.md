@@ -52,7 +52,7 @@ Adobe App Builder is een compleet raamwerk waarmee ontwikkelaars van onderneming
 
 * **Malplaatje van het Project**: De projecten van App Builder worden gecreeerd specifiek gebruikend het **[!UICONTROL App Builder]** malplaatje in [!DNL Developer Console] ([!UICONTROL Project from Template] > [!UICONTROL App Builder]). De sjabloon stelt automatisch de vereiste werkruimten en runtimeomgevingen in.
 
-* **App Builder die Begonnen Gids** wordt: Verwijs naar de documentatie [ aan voorziening en creeer uw eerste project van het malplaatje ](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}.
+* **App Builder die Begonnen Gids** wordt: Verwijs naar de documentatie [&#x200B; aan voorziening en creeer uw eerste project van het malplaatje &#x200B;](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}.
 
 ### Wat is Adobe I/O Runtime?
 
@@ -60,7 +60,7 @@ Adobe I/O Runtime is het serverloze platform dat App Builder macht geeft. Het st
 
 In deze implementatie, gebruiken wij een **Actie**. Een handeling is een stateless functie (geschreven in Node.js) die op de Adobe I/O Runtime wordt uitgevoerd. Onze actie fungeert als het openbare HTTP-eindpunt waar Adobe I/O Events het over heeft.
 
-Voor meer informatie, zie de [ documentatie van Adobe I/O Runtime ](https://developer.adobe.com/runtime/){target=_blank}.
+Voor meer informatie, zie de [&#x200B; documentatie van Adobe I/O Runtime &#x200B;](https://developer.adobe.com/runtime/){target=_blank}.
 
 ## Implementatiehandleiding
 
@@ -68,28 +68,28 @@ Voor meer informatie, zie de [ documentatie van Adobe I/O Runtime ](https://deve
 
 Zorg ervoor dat u het volgende hebt voordat u begint:
 
-* **de Toegang van Adobe Developer Console**: U moet toegang tot Admin van het Systeem of [ rol van de Ontwikkelaar ](../admin/add-developers.md) binnen een organisatie hebben die App Builder toegelaten heeft.
+* **de Toegang van Adobe Developer Console**: U moet toegang tot Admin van het Systeem of [&#x200B; rol van de Ontwikkelaar &#x200B;](../admin/add-developers.md) binnen een organisatie hebben die App Builder toegelaten heeft.
 
   >[!TIP]
-  > Om App Builder levering te verifiëren, login [ Adobe Developer Console ](https://developer.adobe.com/console/){target=_blank}, zorg ervoor u in de gewenste organisatie bent, selecteer **[!UICONTROL Create project from template]**, en verifieer dat het malplaatje van App Builder beschikbaar is. Als het niet is, gelieve de sectie van FAQ van App Builder &quot;[ te herzien hoe te App Builder ](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} krijgen&quot;
+  > Om App Builder levering te verifiëren, login [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/){target=_blank}, zorg ervoor u in de gewenste organisatie bent, selecteer **[!UICONTROL Create project from template]**, en verifieer dat het malplaatje van App Builder beschikbaar is. Als het niet is, gelieve de sectie van FAQ van App Builder &quot;[&#x200B; te herzien hoe te App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} krijgen&quot;
 
 
 * **Node.js &amp; npm**: Dit project vereist Node.js, die NPM (de Manager van het Pakket van de Knoop) omvat. NPM wordt gebruikt om Adobe CLI te installeren en projectgebiedsdelen te beheren.
 
-   * [ Download Node.js (Aanbevolen versie LTS) ](https://nodejs.org/){target=_blank}
-   * [ npm Begonnen Gids ](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm){target=_blank} - een gids op hoe te om uw installatie te verifiëren.
+   * [&#x200B; Download Node.js (Aanbevolen versie LTS) &#x200B;](https://nodejs.org/){target=_blank}
+   * [&#x200B; npm Begonnen Gids &#x200B;](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm){target=_blank} - een gids op hoe te om uw installatie te verifiëren.
 
 * **`aio CLI`**: Geïnstalleerd via uw terminal: `npm install -g @adobe/aio-cli`
 * **de Configuratie van de Toepassing van Slack**: U hebt een opstelling van de Toepassing van Slack in uw werkruimte met **Inkomende WebHaak** geactiveerd nodig.
 
-   * [ creeer een app van Slack ](https://api.slack.com/apps){target=_blank}
-   * [ Inkomende Gids van Webhooks van Slack ](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - volg deze gids om uw app tot stand te brengen en WebHaak URL (begint met `https://hooks.slack.com/`..) te produceren.
+   * [&#x200B; creeer een app van Slack &#x200B;](https://api.slack.com/apps){target=_blank}
+   * [&#x200B; Inkomende Gids van Webhooks van Slack &#x200B;](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - volg deze gids om uw app tot stand te brengen en WebHaak URL (begint met `https://hooks.slack.com/`..) te produceren.
 
 ### Stap 1: Een project maken in Adobe Developer Console
 
 Maak eerst een project met de App Builder-sjabloon in Adobe Developer Console:
 
-1. Logboek in [ Adobe Developer Console ](https://developer.adobe.com/console)
+1. Logboek in [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console)
 1. Selecteren **[!UICONTROL Create project from template]**
 1. De App Builder-sjabloon selecteren
 1. Voer een projecttitel in, bijvoorbeeld `Slack webhook integration`
@@ -322,13 +322,13 @@ Je actie wordt uitgevoerd naar Adobe I/O Runtime en is beschikbaar in de Develop
 
 Nu uw handeling is geïmplementeerd, registreert u deze als de bestemming voor Adobe Events.
 
-1. Navigeer aan [ Adobe Developer Console ](https://developer.adobe.com/console){target=_blank} en open uw project van App Builder.
+1. Navigeer aan [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console){target=_blank} en open uw project van App Builder.
 1. Kies uw **[!UICONTROL Workspace]**
 1. Selecteer **[!UICONTROL Add Service]** en selecteer **[!UICONTROL Event]** .
 1. Selecteer **[!UICONTROL Adobe Experience Platform]** als het product.
 1. Selecteer **[!UICONTROL Platform Notifications]** als het type gebeurtenis.
 1. Selecteer de specifieke gebeurtenissen (of alle gebeurtenissen) waarvan u een melding wilt ontvangen in Slack en selecteer **[!UICONTROL Next]** .
-1. Selecteer of [ creeer uw referentie OAuth ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Selecteer of [&#x200B; creeer uw referentie OAuth &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configureer **[!UICONTROL Event registration details]**:
    1. **[!UICONTROL Registration Name]**: geef uw registratie een beschrijvende naam.
    1. **[!UICONTROL Registration Description]**: Zorg ervoor dat dit expliciet is, zodat andere contribuanten weten wat het doet.
@@ -344,7 +344,7 @@ U kunt de volledige stroom van begin tot eind testen door de &quot;Send steekpro
 
 De voorbeeldgebeurtenis wordt verzonden naar het kanaal dat u hebt geconfigureerd bij het maken van uw Slack-app en het maken van de webhaak. Er wordt iets gelijkaardigs weergegeven als:
 
-![ Voorbeeld van een controlegebeurtenis in Slack ](../assets/slack-monitor.png)
+![&#x200B; Voorbeeld van een controlegebeurtenis in Slack &#x200B;](../assets/slack-monitor.png)
 
 Gefeliciteerd, u hebt Slack geïntegreerd met Experience Platform-gebeurtenissen!
 
