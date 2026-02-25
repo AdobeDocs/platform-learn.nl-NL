@@ -20,7 +20,7 @@ ht-degree: 0%
 Leer hoe u Experience Platform-meldingen in Slack kunt ontvangen door te integreren met een Adobe App Builder-proxy voor webhaken. Gegevenstechnici en beheerders willen mogelijk proactieve meldingen in Slack van Adobe Experience Platform ontvangen om de status van hun platformimplementaties te controleren. In deze zelfstudie worden de architectuur- en implementatiestappen beschreven waarmee Adobe I/O Events via Adobe App Builder kan worden verbonden met Slack.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480201?captions=dut&learn=on)
 
 ## Waarom een webhaakproxy?
 
