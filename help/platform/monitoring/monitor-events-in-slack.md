@@ -326,7 +326,7 @@ Nu uw handeling is geïmplementeerd, registreert u deze als de bestemming voor A
 1. Selecteer **[!UICONTROL Adobe Experience Platform]** als het product.
 1. Selecteer **[!UICONTROL Platform Notifications]** als het type gebeurtenis.
 1. Selecteer de specifieke gebeurtenissen (of alle gebeurtenissen) waarvan u een melding wilt ontvangen in Slack en selecteer **[!UICONTROL Next]** .
-1. Selecteer of [&#x200B; creeer uw referentie OAuth &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Selecteer of [&#x200B; creeer uw referentie OAuth &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configureer **[!UICONTROL Event registration details]**:
    1. **[!UICONTROL Registration Name]**: geef uw registratie een beschrijvende naam.
    1. **[!UICONTROL Registration Description]**: Zorg ervoor dat dit expliciet is, zodat andere contribuanten weten wat het doet.
