@@ -17,85 +17,85 @@ ht-degree: 0%
 
 Ga naar **Campagnes**. Klik **creeer campagne**.
 
-![ AJO OC ](./images/ajooc1.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc1.png)
 
 Selecteer **Orchestration - marketing** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc2.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc2.png)
 
 Ga de campagnenaam in: `--aepUserLdap-- - CitiSignal Family Account Optimization Campaign` en klik **sparen**.
 
-![ AJO OC ](./images/ajooc3.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc3.png)
 
 Dan moet je dit zien. Klik op het pictogram **+** .
 
-![ AJO OC ](./images/ajooc4.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc4.png)
 
 Selecteer **Fork**.
 
-![ AJO OC ](./images/ajooc5.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc5.png)
 
 ### Gebouwd publiek 1
 
 Klik het **+** pictogram en selecteer dan **Publiek van de Bouwstijl**.
 
-![ AJO OC ](./images/ajooc6.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc6.png)
 
 Klik om de omslag voor **het richten afmeting** te openen.
 
-![ AJO OC ](./images/ajooc7.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc7.png)
 
 Selecteer **`--aepUserLdap--_citisignal_recipients`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc8.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc8.png)
 
 Klik **creëren publiek**.
 
-![ AJO OC ](./images/ajooc9.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc9.png)
 
 Klik **toevoegen voorwaarde**.
 
-![ AJO OC ](./images/ajooc10.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc10.png)
 
 Selecteer **receiving_type** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc11.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc11.png)
 
 Ga **`account_holder`** op het gebied **Waarde** in en klik **berekent**.
 
-![ AJO OC ](./images/ajooc12.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc12.png)
 
 U zou dan een aantal voor **gerichte profielen** moeten zien. Klik ergens in het grijze gebied zoals aangegeven.
 
-![ AJO OC ](./images/ajooc13.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc13.png)
 
 Klik **toevoegen voorwaarde**.
 
-![ AJO OC ](./images/ajooc14.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc14.png)
 
 Boor neer aan **`citisignal_accounts`**.
 
-![ AJO OC ](./images/ajooc15.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc15.png)
 
 Selecteer **`account_status`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc16.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc16.png)
 
 Ga **`active`** op het gebied **Waarde** in. Klik vervolgens ergens in het grijze gebied zoals aangegeven.
 
-![ AJO OC ](./images/ajooc17.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc17.png)
 
 Klik **toevoegen voorwaarde**.
 
-![ AJO OC ](./images/ajooc18.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc18.png)
 
 Boor neer aan **`citisignal_mobile_subscriptions`**.
 
-![ AJO OC ](./images/ajooc19.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc19.png)
 
 Selecteer **`subscription_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc20.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc20.png)
 
 Laat de schakelaar voor **samengevoegde gegevens** toe. Selecteer vervolgens het volgende:
 
@@ -105,471 +105,471 @@ Laat de schakelaar voor **samengevoegde gegevens** toe. Selecteer vervolgens het
 
 Klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc21.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc21.png)
 
 Dan moet je dit zien. Klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc22.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc22.png)
 
 ### publiek 2 samenstellen
 
 Klik op het pictogram **+** op het volgende knooppunt in het andere pad.
 
-![ AJO OC ](./images/ajooc23.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc23.png)
 
 Selecteer **Bouwstijl publiek**.
 
-![ AJO OC ](./images/ajooc24.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc24.png)
 
 Klik om de omslag voor **het richten afmeting** te openen.
 
-![ AJO OC ](./images/ajooc25.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc25.png)
 
 Selecteer **`--aepUserLdap--_mobile_subscriptions`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc26.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc26.png)
 
 Klik **creëren publiek**.
 
-![ AJO OC ](./images/ajooc27.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc27.png)
 
 Klik **toevoegen voorwaarde**.
 
-![ AJO OC ](./images/ajooc28.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc28.png)
 
 Selecteer **subscription_status** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc29.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc29.png)
 
 Ga **`active`** op het gebied **Waarde** in. Dan, klik **toevoegen voorwaarde**.
 
-![ AJO OC ](./images/ajooc30.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc30.png)
 
 Selecteer **`is_upgrade_eligible`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc31.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc31.png)
 
 Plaats de **Waarde** aan **waar**
 
-![ AJO OC ](./images/ajooc32.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc32.png)
 
 Klik **berekenen** om een schatting van de profielen te zien die voor dit publiek kwalificeren. Dan, klik **bevestigen**
 
-![ AJO OC ](./images/ajooc33.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc33.png)
 
 ### Splitsen
 
 Klik **+** pictogram en selecteer dan **Splitsen**.
 
-![ AJO OC ](./images/ajooc34.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc34.png)
 
 Verander het gebied **Etiket** in **Behandeling 90/10 vs Controle**. Klik om de objecten **Subset** te openen.
 
-![ AJO OC ](./images/ajooc35.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc35.png)
 
 Laat de schakelaar voor **toe toelaten grens** en plaats de **grootte van de Grens** aan **10 percenten**.
 
-![ AJO OC ](./images/ajooc36.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc36.png)
 
 Klik **toevoegen segment** en dan zou u het **voorwerp moeten zien van het Resultaat** dat wordt toegevoegd.
 
 Klik **sparen**.
 
-![ AJO OC ](./images/ajooc37.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc37.png)
 
 ### Doelgroep opslaan
 
 Klik **+** pictogram en selecteer dan **sparen publiek**.
 
-![ AJO OC ](./images/ajooc38.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc38.png)
 
 Plaats het etiket van het gebied **publiek** aan **`--aepUserLdap-- - Control Group`**. Klik **Toewijzing van het publiek** toevoegen.
 
-![ AJO OC ](./images/ajooc39.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc39.png)
 
 Boor neer aan **richtend afmeting**.
 
-![ AJO OC ](./images/ajooc40.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc40.png)
 
 Selecteer **`account_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc41.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc41.png)
 
 Plaats het **de afbeeldingsgebied van het Profiel** aan **`--aepUserLdap--_citisignal_recipients - account_id`**.
 
-![ AJO OC ](./images/ajooc41a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc41a.png)
 
 ### Verrijking: internetabonnement
 
 Klik op het pictogram **+** .
 
-![ AJO OC ](./images/ajooc42.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc42.png)
 
 Selecteer **Verrijking**.
 
-![ AJO OC ](./images/ajooc43.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc43.png)
 
 Dan moet je dit zien. Klik **verrijkingsgegevens** toevoegen.
 
-![ AJO OC ](./images/ajooc44.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc44.png)
 
 Boor neer aan **`Targeting dimension`**.
 
-![ AJO OC ](./images/ajooc44a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc44a.png)
 
 Boor neer aan **`citisignal_accounts`**.
 
-![ AJO OC ](./images/ajooc45.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc45.png)
 
 Boor neer aan **`citisignal_internet_subscriptions`**.
 
-![ AJO OC ](./images/ajooc45a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc45a.png)
 
 Selecteer **`account_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc46.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc46.png)
 
 Dan moet je dit zien. Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc47.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc47.png)
 
 Selecteer **`subscription_status`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc48.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc48.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc49.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc49.png)
 
 Selecteer **`connection_type`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc50.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc50.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc51.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc51.png)
 
 Selecteer **`service_city`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc52.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc52.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc53.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc53.png)
 
 Selecteer **`avg_bandwidth_usage_gb`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc54.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc54.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc55.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc55.png)
 
 Selecteer **`data_cap_gb`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc56.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc56.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc57.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc57.png)
 
 Selecteer **`advertised_speed_mbps`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc58.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc58.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc59.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc59.png)
 
 Selecteer **`monthly_recurring_charge`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc60.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc60.png)
 
 Klik **sparen**.
 
-![ AJO OC ](./images/ajooc61.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc61.png)
 
 De rol omhoog en verandert het gebied **Etiket** aan `Enrichment: Internet Subscription`.
 
-![ AJO OC ](./images/ajooc61a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc61a.png)
 
 ### Verrijking: abonnement op mobiele apparaten
 
 Klik **+** pictogram op de volgende knoop en selecteer **Verrijking**.
 
-![ AJO OC ](./images/ajooc62.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc62.png)
 
 Verander het gebied **Etiket** aan `Enrichment: Mobile Devices Subscription` en klik dan **verrijkingsgegevens** toevoegen.
 
-![ AJO OC ](./images/ajooc63.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc63.png)
 
 Boor neer aan **het richten afmeting**.
 
-![ AJO OC ](./images/ajooc64.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc64.png)
 
 Boor neer aan **`citisignal_accounts`**.
 
-![ AJO OC ](./images/ajooc65.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc65.png)
 
 Boor neer aan **`citisignal_mobile_subscriptions`**.
 
-![ AJO OC ](./images/ajooc65a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc65a.png)
 
 Selecteer **`phone_number`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc66.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc66.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc67.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc67.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc68.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc68.png)
 
 Selecteer **`model`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc68a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc68a.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc69.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc69.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc69a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc69a.png)
 
 Selecteer **`recommended_device_model`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc70.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc70.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc71.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc71.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc71a.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc71a.png)
 
 Selecteer **`is_upgrade_eligible`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc72.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc72.png)
 
 U kunt nu de voortgang testen door een test uit te voeren en te zien welke gegevens beschikbaar zijn in uw campagne.
 
 Sparen uw veranderingen en klik dan **Begin**.
 
-![ AJO OC ](./images/ajooctest1.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooctest1.png)
 
 Na enige tijd moet je dit zien. Klik **resultaten van de Voorproef**.
 
-![ AJO OC ](./images/ajooctest2.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooctest2.png)
 
 Dan zou je iets gelijkaardigs moeten zien. Klik **dicht**.
 
-![ AJO OC ](./images/ajooctest3.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooctest3.png)
 
 Ga terug in de knoop **Verrijking: Mobiele Abonnement van Apparaten**.
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc73.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc73.png)
 
 Selecteer **`account_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc74.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc74.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc75.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc75.png)
 
 Selecteer **`subscription_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc76.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc76.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc77.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc77.png)
 
 Selecteer **`renewal_eligibility_date`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc78.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc78.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc79.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc79.png)
 
 Selecteer **`line_user_recipient_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc80.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc80.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc81.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc81.png)
 
 Selecteer **`current_device_id`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc82.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc82.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc86.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc86.png)
 
 Selecteer **`contract_start_date`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc87.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc87.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc89.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc89.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc90.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc90.png)
 
 Selecteer **`manufacturer`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc91.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc91.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc92.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc92.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc93.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc93.png)
 
 Selecteer **`device_age_months`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc94.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc94.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc95.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc95.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc96.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc96.png)
 
 Selecteer **`trade_in_value`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc97.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc97.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc98.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc98.png)
 
 Boor neer aan **`citisignal_equipment_subscriptions`**.
 
-![ AJO OC ](./images/ajooc99.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc99.png)
 
 Selecteer **`monthly_payment`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc100.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc100.png)
 
 ### Verrijking: abonnement op mobiele apparaten
 
 Dan moet je dit hebben. Klik **sparen**. Dan, klik het **+** pictogram om een nieuwe knoop toe te voegen en **Verrijking** te selecteren.
 
-![ AJO OC ](./images/ajooc101.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc101.png)
 
 Dan moet je dit zien. Klik **verrijkingsgegevens** toevoegen.
 
-![ AJO OC ](./images/ajooc102.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc102.png)
 
 Boor neer aan **het richten afmeting**.
 
-![ AJO OC ](./images/ajooc103.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc103.png)
 
 Boor neer aan **`citisignal_offer_eligibility`**.
 
-![ AJO OC ](./images/ajooc104.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc104.png)
 
 Boor neer aan **`citisignal_offers`**.
 
-![ AJO OC ](./images/ajooc105.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc105.png)
 
 Selecteer **`offer_name`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc106.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc106.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc107.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc107.png)
 
 Boor neer aan **`citisignal_offers`**.
 
-![ AJO OC ](./images/ajooc108.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc108.png)
 
 Selecteer **`offer_code`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc109.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc109.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc110.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc110.png)
 
 Boor neer aan **`citisignal_offers`**.
 
-![ AJO OC ](./images/ajooc111.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc111.png)
 
 Selecteer **`offer_description`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc112.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc112.png)
 
 Klik **toevoegen attributen**.
 
-![ AJO OC ](./images/ajooc110.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc110.png)
 
 Boor neer aan **`citisignal_offers`**.
 
-![ AJO OC ](./images/ajooc113.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc113.png)
 
 Selecteer **`offer_description`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc114.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc114.png)
 
 Schakel **toe laat het sorteren**.
 
-![ AJO OC ](./images/ajooc115.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc115.png)
 
 Boor neer aan **`citisignal_offers`**.
 
-![ AJO OC ](./images/ajooc116.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc116.png)
 
 Selecteer **`offer_priority`** en klik **bevestigen**.
 
-![ AJO OC ](./images/ajooc117.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc117.png)
 
 Je kunt nu je campagne testen. Klik **Begin**.
 
-![ AJO OC ](./images/ajooc118.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc118.png)
 
 Na enige tijd moet u dit zien. Klik het **Resultaat** en selecteer dan **Resultaten van de Voorproef**.
 
-![ AJO OC ](./images/ajooc120.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc120.png)
 
 Dan zou je iets gelijkaardigs moeten zien.
 
-![ AJO OC ](./images/ajooc121.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc121.png)
 
 ### E-mailactiviteit
 
 Klik **+** pictogram en selecteer dan **E-mail**.
 
-![ AJO OC ](./images/ajooc122.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc122.png)
 
 Klik **uitgeven e-mail**.
 
-![ AJO OC ](./images/ajooc123.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc123.png)
 
 Ga naar **Acties**.
 
-![ AJO OC ](./images/ajooc124.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc124.png)
 
 Selecteer de **configuratie van het E-mailkanaal** die u vóór creeerde en dan **klikt geef inhoud** uit.
 
-![ AJO OC ](./images/ajooc125.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc125.png)
 
 Voor de **Onderwerpregel**, kleef dit:
 
@@ -577,34 +577,34 @@ Voor de **Onderwerpregel**, kleef dit:
 
 Klik **uitgeeft e-maillichaam**.
 
-![ AJO OC ](./images/ajooc126.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc126.png)
 
-Download het dossier [ family_account_review.zip ](./assets/family_account_review.zip) aan uw Desktop.
+Download het dossier [&#x200B; family_account_review.zip &#x200B;](./assets/family_account_review.zip) aan uw Desktop.
 
-![ AJO OC ](./images/ajooc127.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc127.png)
 
 Klik **de Invoer HTML**.
 
-![ AJO OC ](./images/ajooc128.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc128.png)
 
 Klik om het bestand te selecteren.
 
-![ AJO OC ](./images/ajooc129.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc129.png)
 
 Selecteer het bestand **`family_account_review.zip`** .
 
-![ AJO OC ](./images/ajooc130.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc130.png)
 
 Klik **daarna**.
 
-![ AJO OC ](./images/ajooc131.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc131.png)
 
 Dan moet je dit zien.
 
-![ AJO OC ](./images/ajooc132.png)
+![&#x200B; AJO OC &#x200B;](./images/ajooc132.png)
 
 ## Volgende stappen
 
-Ga terug naar [ Adobe Journey Optimizer: Geordende Campagnes ](./ajocampaigns.md){target="_blank"}
+Ga terug naar [&#x200B; Adobe Journey Optimizer: Geordende Campagnes &#x200B;](./ajocampaigns.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
