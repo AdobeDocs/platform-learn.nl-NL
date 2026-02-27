@@ -70,7 +70,7 @@ Laat de meeste standaardinstellingen ongewijzigd en werk deze indien nodig later
 
    ![&#x200B; selectie DataStream &#x200B;](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Voor meer informatie over elke sectie van de uitbreiding, zie [&#x200B; de uitbreiding van SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
+Voor meer informatie over elke sectie van de uitbreiding, zie [&#x200B; de uitbreiding van SDK van het Web van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) vormen.
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ Nu u Platform Web SDK hebt geïnstalleerd en het met de datastream hebt geassoci
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)

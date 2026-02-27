@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Leer hoe u Experience Cloud-toepassingen implementeert met Adobe Experience Platform Web SDK.
 
-Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [&#x200B; voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)
+Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [&#x200B; voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/home)
 
 ![&#x200B; de architectuur van SDK van het Web van Experience Platform &#x200B;](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
    * **[!UICONTROL Property Rights]** - toestemming voor **[!UICONTROL Approve]** , **[!UICONTROL Develop]** , **[!UICONTROL Edit Property]** , **[!UICONTROL Manage Environments]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Publish]** ,
    * **[!UICONTROL Company Rights]** : toestemming voor **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie betreffende markeringstoestemmingen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Voor meer informatie betreffende markeringstoestemmingen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/admin/user-permissions).
 
 * Voor **Experience Platform**, moet u hebben:
 
@@ -62,20 +62,20 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
      De vereiste functies moeten beschikbaar zijn voor alle Experience Cloud-klanten, zelfs als u geen klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP.
 
-     Voor meer informatie over de toegangscontrole van het Platform, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+     Voor meer informatie over de toegangscontrole van het Platform, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/home).
 
 * Voor **Journey Optimizer**:
    * Voor de facultatieve **les 0&rbrace; van de Campagne van het Web &lbrace;, moet u toestemmingspunten aan** hebben, **[!UICONTROL Manage campaigns]**, en **[!UICONTROL Publish campaigns]**.**[!UICONTROL View campaigns report]**
   <!--
   * For the optional **Decisioning** lesson, you must have permission items to **[!UICONTROL Manage decisions]**, **[!UICONTROL View decisions]**, **[!UICONTROL Manage offers]**, **[!UICONTROL Manage ranking strategies]**.
-  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
+  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
   -->
 
-* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-console/home)
 
-* Voor de facultatieve **Adobe Target** les, moet u [&#x200B; Redacteur of de toegang van de fiatteur &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
+* Voor de facultatieve **Adobe Target** les, moet u [&#x200B; Redacteur of de toegang van de fiatteur &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
 
-* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [&#x200B; Audience Manager Op rol-Gebaseerd Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [&#x200B; Audience Manager Op rol-Gebaseerd Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
@@ -98,4 +98,4 @@ Laten we beginnen!
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)

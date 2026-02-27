@@ -215,7 +215,7 @@ Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten begi
 ![&#x200B; De toestemming Optie van de Bezoeker van Post &#x200B;](assets/consent-post-user-optin.png)
 
 
-Voor meer informatie over toestemming in SDK van het Web, zie [&#x200B; Ondersteunende voorkeur van de klantentoestemming &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Voor meer informatie over toestemming in SDK van het Web, zie [&#x200B; Ondersteunende voorkeur van de klantentoestemming &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Voor meer informatie over toestemming in SDK van het Web, zie [&#x200B; Onderste
 
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [&#x200B; toestemming &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [&#x200B; toestemming &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
