@@ -4,21 +4,18 @@ description: Leer hoe u een XDM-object maakt en er gegevenselementen aan toewijs
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 30581466024454c7e8f5bd469864161f48f4ce5a
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
 
 # Gegevenselementen maken
 
-Leer hoe te om gegevenselementen in markeringen voor inhoud, handel, en identiteitsgegevens over de [&#x200B; de demoplaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) tot stand te brengen. Vul vervolgens velden in uw XDM-schema met het gegevenstype Variabele voor variabele-gegevenselement voor de extensie Adobe Experience Platform Web SDK.
+Leer hoe te om gegevenselementen in markeringen voor inhoud, handel, en identiteitsgegevens over de [ de demoplaats van de Luma ](https://newluma.enablementadobe.com) tot stand te brengen. Vul vervolgens velden in uw XDM-schema met het gegevenstype Variabele voor variabele-gegevenselement voor de extensie Adobe Experience Platform Web SDK.
 
 
->[!WARNING]
->
-> De Luma-website die in deze zelfstudie wordt gebruikt, wordt naar verwachting vervangen in de week van 16 februari 2026. Het werk dat in het kader van deze zelfstudie wordt uitgevoerd, is mogelijk niet van toepassing op de nieuwe website.
 
 ## Leerdoelstellingen
 
@@ -41,7 +38,7 @@ U hebt inzicht in wat een gegevenslaag is en de vorige lessen in het leerprogram
 
 >[!IMPORTANT]
 >
->De gegevens voor deze les komen uit de `[!UICONTROL digitalData]` gegevenslaag op de plaats van de Luma. Als u de gegevenslaag wilt weergeven, opent u de ontwikkelaarsconsole en typt u in `[!UICONTROL digitalData]` om de volledige beschikbare gegevenslaag weer te geven.![&#x200B; digitalData gegevenslaag &#x200B;](assets/data-element-data-layer.png)
+>De gegevens voor deze les komen uit de `[!UICONTROL adobeDataLayer]` gegevenslaag op de plaats van de Luma. Als u de gegevenslaag wilt weergeven, opent u de ontwikkelaarsconsole en typt u in `[!UICONTROL adobeDataLayer]` om de volledige beschikbare gegevenslaag weer te geven.![ adobeDataLayer gegevenslaag ](assets/data-element-data-layer-new.png)
 
 
 ## Datalaagbenaderingen
@@ -59,7 +56,7 @@ Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM 
 
 ### XDM in de gegevenslaag implementeren
 
-Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als uw implementatie geen markeringsmanager gebruikt, kan deze benadering ideaal zijn omdat u gegevens naar XDM direct van uw toepassing kunt verzenden gebruikend het [&#x200B; XDM sendEvent bevel &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
+Deze benadering impliceert het gebruiken van het volledig bepaalde voorwerp XDM als structuur voor uw gegevenslaag. Vervolgens wijst u de volledige gegevenslaag toe aan een XDM-objectelement in tags. Als uw implementatie geen markeringsmanager gebruikt, kan deze benadering ideaal zijn omdat u gegevens naar XDM direct van uw toepassing kunt verzenden gebruikend het [ XDM sendEvent bevel ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
 
 Hieronder ziet u hoe de gegevenslaag eruit zou zien als u de indeling Adobe Client Data Layer zou gebruiken:
 
@@ -84,7 +81,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://luma.enablementadobe.com/",
+            "URL":"https://newluma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -112,7 +109,7 @@ Cons
 * Volledige afhankelijkheid van ontwikkelingsteam en ontwikkelingscyclus voor het bijwerken van welke gegevens naar XDM gaan
 * Beperkte flexibiliteit omdat XDM de exacte lading van de gegevenslaag ontvangt
 * Kan ingebouwde tagfuncties, zoals plakken, persistentie, functies voor snelle implementatie niet gebruiken
-* Harder om de gegevenslaag voor derdepixel te gebruiken (maar u zou deze pixel aan [&#x200B; gebeurtenis kunnen willen bewegen door:sturen &#x200B;](setup-event-forwarding.md)!
+* Harder om de gegevenslaag voor derdepixel te gebruiken (maar u zou deze pixel aan [ gebeurtenis kunnen willen bewegen door:sturen ](setup-event-forwarding.md)!
 * Kan de gegevens niet transformeren tussen de gegevenslaag en XDM
 
 ### Gegevenslaag toewijzen in tags
@@ -134,17 +131,17 @@ Deze benadering omvat het in kaart brengen van individuele gegevenslaagvariabele
 >
 > Google-gegevenslaag
 > 
-> Als uw organisatie reeds Google Analytics gebruikt en het traditionele Google dataLayer voorwerp op uw website heeft, kunt u de [&#x200B; uitbreiding van de Laag van Gegevens van Google &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in markeringen gebruiken. Hierdoor kunt u sneller Adobe-technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+> Als uw organisatie reeds Google Analytics gebruikt en het traditionele Google dataLayer voorwerp op uw website heeft, kunt u de [ uitbreiding van de Laag van Gegevens van Google ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in markeringen gebruiken. Hierdoor kunt u sneller Adobe-technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
 
 ### Toewijzen aan XDM in de gegevensstroom
 
-Deze benadering gebruikt functionaliteit die in de configuratie van de gegevensstroom [&#x200B; wordt ingebouwd Prep van Gegevens voor de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
+Deze benadering gebruikt functionaliteit die in de configuratie van de gegevensstroom [ wordt ingebouwd Prep van Gegevens voor de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
 
 #### Pros
 
 * Flexibel omdat u individuele variabelen aan XDM kunt in kaart brengen
-* Capaciteit om [&#x200B; nieuwe waarden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/data-prep/functions) of [&#x200B; transformatie gegevenstypes &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/data-prep/data-handling) van een gegevenslaag gegevens uit te werken alvorens het naar XDM gaat
-* Hefboomwerking a [&#x200B; Afbeelding UI &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/data-prep#create-mapping) aan kaartgebieden in uw brongegevens aan XDM met een punt-en-klik UI
+* Capaciteit om [ nieuwe waarden ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [ transformatie gegevenstypes ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag gegevens uit te werken alvorens het naar XDM gaat
+* Hefboomwerking a [ Afbeelding UI ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) aan kaartgebieden in uw brongegevens aan XDM met een punt-en-klik UI
 
 #### Cons
 
@@ -160,14 +157,14 @@ Deze benadering gebruikt functionaliteit die in de configuratie van de gegevenss
 
 ## Gegevenselementen maken om de gegevenslaag vast te leggen
 
-Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen voor de [&#x200B; de duimplaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} gegevenslaag:
+Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen voor de [ de duimplaats van de Luma ](https://newluma.enablementadobe.com){target="_blank"} gegevenslaag:
 
 1. Ga naar **[!UICONTROL Data Elements]** en selecteer **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als de eigenschap tag geen bestaande gegevenselementen bevat)
 
-   ![&#x200B; creeer het Element van Gegevens &#x200B;](assets/data-element-create.png)
+   ![ creeer het Element van Gegevens ](assets/data-element-create.png)
 
-1. Naam van het gegevenselement `page.pageInfo.pageName`
-1. Gebruik **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar een waarde in de gegevenslaag van Luma te wijzen: `digitalData.page.pageInfo.pageName`
+1. Naam van het gegevenselement `Page Name`
+1. Gebruik **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar een waarde in de gegevenslaag van Luma te wijzen: `adobeDataLayer.0.page.name`
 
 1. Schakel de selectievakjes voor **[!UICONTROL Force lowercase value]** en **[!UICONTROL Clean text]** in om het hoofdlettergebruik te standaardiseren en overbodige spaties te verwijderen
 
@@ -175,100 +172,60 @@ Alvorens u het voorwerp XDM creeert, creeer de volgende reeks gegevenselementen 
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![&#x200B; het Element van Gegevens van de Naam van de Pagina &#x200B;](assets/data-element-pageName.png)
+   ![ het Element van Gegevens van de Naam van de Pagina ](assets/data-element-pageName.png)
 
 Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
-* **`page.pageInfo.server`** toegewezen aan
-  `digitalData.page.pageInfo.server`
+* **`User Id`** toegewezen aan
+  `adobeDataLayer.0.user.id`
 
-* **`page.pageInfo.hierarchie1`** toegewezen aan
-  `digitalData.page.pageInfo.hierarchie1`
+* **`User Logged In`** toegewezen aan
+  `adobeDataLayer.0.user.loggedIn`
 
-* **`user.profile.attributes.username`** toegewezen aan
-  `digitalData.user.0.profile.0.attributes.username`
-
-* **`user.profile.attributes.loggedIn`** toegewezen aan
-  `digitalData.user.0.profile.0.attributes.loggedIn`
-
-* **`product.productInfo.sku`** toegewezen aan `digitalData.product.0.productInfo.sku`
-<!--digitalData.product.0.productInfo.sku
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.productInfo.title`** toegewezen aan `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** toegewezen aan `digitalData.cart.orderId`
-<!--
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.title;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.category`** door de URL van de site te parseren voor de categorie op hoofdniveau met de **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** en de volgende aangepaste code:
+* **`Ecommerce Product Id`** toegewezen aan `adobeDataLayer.0.ecommerce.detail.products.0.id`
+* **`Ecommerce Product Name`** toegewezen aan `adobeDataLayer.0.ecommerce.detail.products.0.name`
+* **`Ecommerce Purchase Id`** toegewezen aan `adobeDataLayer.0.ecommerce.purchase.actionField.id`
+* **`Ecommerce Product Category`** gebruiken van **[!UICONTROL Custom Code]** **[!UICONTROL Data Element type]** en de volgende douanecode:
 
   ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
+  return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
   ```
 
-* **`cart.productInfo`** gebruiken van de volgende douanecode:
+* **`Ecommerce Cart Products`** gebruiken van de volgende douanecode:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
+  const cartProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return cartProducts;
   ```
 
-* **`cart.productInfo.purchase`** gebruiken van de volgende douanecode:
+* **`Ecommerce Checkout Products`** gebruiken van de volgende douanecode:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
+  const checkoutProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return checkoutProducts;
   ```
-
 
 
 >[!CAUTION]
 >
->Het [!UICONTROL JavaScript variable] type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zodat zal het van verwijzingen voorzien van het element van gebruikersnaamelementen zoals `digitalData.user[0].profile[0].attributes.username` **niet** werken.
+>Het [!UICONTROL JavaScript variable] type van gegevenselement behandelt serieverwijzingen als punten in plaats van haakjes, zodat zal het van verwijzingen voorzien van het element van gebruikersnaamelementen zoals `adobeDataLayer[0].page.name` **niet** werken.
 
 ## Variabele-gegevenselementen maken voor XDM- en gegevensobjecten
 
 De gegevenselementen u enkel creeerde zullen worden gebruikt om een voorwerp XDM (voor de toepassingen van het Platform) en een gegevensvoorwerp (voor Analytics, Doel, en Audience Manager) te bouwen. Deze objecten hebben hun eigen speciale gegevenselementen, **[!UICONTROL Variable]** gegevenselementen, die u heel gemakkelijk kunt maken.
 
-Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aan het schema u in [&#x200B; creeerde vormt een schema &#x200B;](configure-schemas.md) les:
+Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aan het schema u in [ creeerde vormt een schema ](configure-schemas.md) les:
 
 1. Selecteren **[!UICONTROL Add Data element]**
-1. Geef uw gegevenselement een naam `xdm.variable.content`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor XDM, vooraf in te delen met &quot;xdm&quot; om de eigenschap tag beter te organiseren
+1. Geef uw gegevenselement een naam `XDM Variable`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor XDM, vooraf in te delen met &quot;xdm&quot; om de eigenschap tag beter te organiseren
 1. Selecteer **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Extension]**
 1. Selecteer **[!UICONTROL Variable]** als **[!UICONTROL Data Element Type]**
 1. Selecteer **[!UICONTROL XDM]** als de **[!UICONTROL property]**
@@ -276,43 +233,38 @@ Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aa
 1. Selecteer in dit geval de juiste **[!UICONTROL Schema]** `Luma Web Event Data` .
 1. Selecteren **[!UICONTROL Save]**
 
-   ![&#x200B; Variabel gegevenselement voor XDM &#x200B;](assets/analytics-tags-data-element-xdm-variable.png)
+   ![ Variabel gegevenselement voor XDM ](assets/analytics-tags-data-element-xdm-variable.png)
 
 Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
 
 1. Selecteren **[!UICONTROL Add Data element]**
-1. Geef uw gegevenselement een naam `data.variable`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor het gegevensobject, vooraf in te stellen op &#39;data&#39; om de eigenschap tag beter te organiseren
+1. Geef uw gegevenselement een naam `Data Variable`.
 1. Selecteer **[!UICONTROL Adobe Experience Platform Web SDK]** als **[!UICONTROL Extension]**
 1. Selecteer **[!UICONTROL Variable]** als **[!UICONTROL Data Element Type]**
 1. Selecteer **[!UICONTROL data]** als de **[!UICONTROL property]**
 1. Selecteer de Experience Cloud-oplossingen die u wilt implementeren als onderdeel van deze zelfstudie
 1. Selecteren **[!UICONTROL Save]**
 
-   ![&#x200B; Variabel gegevenselement voor gegevensvoorwerp &#x200B;](assets/data-element-data-variable.png.png)
+   ![ Variabel gegevenselement voor gegevensvoorwerp ](assets/data-element-data-variable.png)
 
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
 
 | Core Extension Data Elements | Platform Web SDK Extension Data Elements |
 -----------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category` | |
-| `product.productInfo.sku` | |
-| `product.productInfo.title` | |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
-
->[!TIP]
->
->In een toekomstige [&#x200B; creeer markeringsregels &#x200B;](create-tag-rule.md) les, leert u hoe de **[!UICONTROL Variable]** gegevenselementen u toestaan om veelvoudige regels in markeringen te stapelen gebruikend **[!UICONTROL Update Variable Action type]**.
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Checkout Products` | `XDM Variable` |
+| `Ecommerce Checkout Products` | |
+| `Ecommerce Product Category` | |
+| `Ecommerce Product Id` | |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id` | |
+| `Page Name` | |
+| `User Id` | |
+| `User Logged In` | |
 
 Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar Platform Edge Network met een markeringsregel te beginnen verzenden. Maar eerst, leer over het verzamelen van identiteiten met Web SDK.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
+source-git-commit: cecf8a4dcbf41ce23fd6b04c8401ba2dbb824f39
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 15%
+source-wordcount: '89'
+ht-degree: 16%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 15%
    + [Audience Manager instellen](setup-audience-manager.md)
    + [Doel instellen](setup-target.md)
    + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
-   + [Journey Optimizer-besluitvormingsbeheer instellen](setup-decision-management.md)
 
 + Beheer van toestemming {#consent-management}
    + [Goedkeuring instellen](setup-consent.md)

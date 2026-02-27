@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,7 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
 1. Selecteer de knop **[!UICONTROL Create Schema]** rechtsboven
 
    ![ creeer Schema ](assets/schema-xdm-create-schema.png)
+1. **[!UICONTROL Manual]** selecteren in het volgende scherm
 1. Selecteer **[!UICONTROL Experience Event]** in het volgende scherm
 1. Selecteren **[!UICONTROL Next]**
 
@@ -103,7 +104,7 @@ In deze oefening, zult u een schema XDM gebruikend de geadviseerde groepen van h
    >Een gemeenschappelijke noemende overeenkomst voor schema XDM moet het schema na de bron van de gegevens noemen.
 
 
-1. Voltooien selecteren
+1. Selecteren **[!UICONTROL Finish]**
 
    ![ Einde van de Gebeurtenis van de Ervaring van het Schema ](assets/schema-name-schema.png)
 
