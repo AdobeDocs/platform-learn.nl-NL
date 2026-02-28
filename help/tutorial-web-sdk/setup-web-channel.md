@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # Journey Optimizer-webkanaal instellen met Web SDK
 
-Leer hoe te om het Webkanaal van Adobe Journey Optimizer [ uit te voeren ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) gebruikend het Web SDK van Adobe Experience Platform. Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
+Leer hoe te om het Webkanaal van Adobe Journey Optimizer [&#x200B; uit te voeren &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) gebruikend het Web SDK van Adobe Experience Platform. Deze les behandelt de fundamentele vereisten van het Webkanaal, gedetailleerde stappen voor configuratie, en een diepe duik in een gebruiksgeval dat op loyaliteitsstatus wordt gecentreerd.
 
 In deze les zijn Journey Optimizer-gebruikers uitgerust om het webkanaal te gebruiken voor geavanceerde onlinepersonalisatie met de Journey Optimizer-webontwerper.
 
 
 
-![ SDK van het Web en het diagram van Adobe Analytics ](assets/dc-websdk-ajo.png)
+![&#x200B; SDK van het Web en het diagram van Adobe Analytics &#x200B;](assets/dc-websdk-ajo.png)
 
 ## Leerdoelen
 
@@ -43,7 +43,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van vestiging gegevenselementen en regels.
 * Zorg ervoor dat de extensie Adobe Experience Platform Web SDK 2.16 of hoger is.
 * Voltooi de Experience Platform-les instellen, inclusief de oefening om het `Luma Loyalty Rewards – Gold Status` -publiek te maken.
-* Gedownload en laat [ Adobe Experience Cloud Visual Editing Helper browser uitbreiding ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) toe.
+* Gedownload en laat [&#x200B; Adobe Experience Cloud Visual Editing Helper browser uitbreiding &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) toe.
 * Als u de Journey Optimizer-webontwerper gebruikt om uw webkanaalervaring te ontwerpen, moet u controleren of u de Google Chrome- of Microsoft® Edge-browsers gebruikt.
 * Zorg ervoor dat cookies van derden zijn toegestaan in uw browser. Het kan nodig zijn om ook eventuele advertentieblokkers in uw browser uit te schakelen.
 
@@ -55,7 +55,7 @@ Om de lessen in deze sectie te voltooien, moet u eerst:
   > 1. De website is ingesloten in een iframe.
   > 1. De QA- of werkgebiedsite van de klant is niet extern toegankelijk (het is een interne site).
 
-* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van de Hoofdzaak van de Activa van de Manager van de Ervaring van Adobe, is het noodzakelijk om [ subdomain voor het publiceren van deze inhoud ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
+* Wanneer het creëren van Webervaringen en met inbegrip van inhoud van de bibliotheek van de Hoofdzaak van de Activa van de Manager van de Ervaring van Adobe, is het noodzakelijk om [&#x200B; subdomain voor het publiceren van deze inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains) te vormen.
 * Als het gebruiken van de eigenschap van de inhoudstest, zorg ervoor dat uw Webdataset ook inbegrepen in uw rapporteringsconfiguratie is.
 * Momenteel worden twee typen implementaties ondersteund voor het maken en leveren van webkanaalcampagnes op uw wegeigenschappen:
    * Alleen client: als u uw website wilt wijzigen, moet u de Adobe Experience Platform Web SDK implementeren.
@@ -92,21 +92,21 @@ U hebt de Adobe Experience Platform-service al toegevoegd aan uw gegevensstroom.
 
 Adobe Journey Optimizer configureren in de gegevensstroom:
 
-1. Ga naar de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection){target="blank"}.
+1. Ga naar de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie.
 1. Selecteer de eerder gemaakte Luma Web SDK-gegevensstroom.
 
-   ![ Uitgezochte datastream ](assets/web-channel-select-datastream.png)
+   ![&#x200B; Uitgezochte datastream &#x200B;](assets/web-channel-select-datastream.png)
 
 1. Selecteer **[!UICONTROL Edit]** in Adobe Experience Platform.
 
-   ![ geef datastream ](assets/web-channel-edit-datastream.png) uit
+   ![&#x200B; geef datastream &#x200B;](assets/web-channel-edit-datastream.png) uit
 
 1. Schakel het selectievakje **[!UICONTROL Adobe Journey Optimizer]** in.
 
 1. **[!UICONTROL Save]** de bijgewerkte configuratie.
 
-   ![ de doos van AJO van de Controle ](assets/web-channel-check-ajo-box.png)
+   ![&#x200B; de doos van AJO van de Controle &#x200B;](assets/web-channel-check-ajo-box.png)
 
 
 Dit zorgt ervoor dat binnenkomende gebeurtenissen voor Journey Optimizer correct worden afgehandeld door de Adobe Experience Platform Edge Network.
@@ -122,13 +122,13 @@ De optie configureren in het samenvoegbeleid:
 1. Selecteer het tabblad **[!UICONTROL Merge Policies]**. 
 1. Selecteer het beleid (u kunt het beste het [!UICONTROL Default Timebased] beleid gebruiken) en schakel de optie **[!UICONTROL Active-On-Edge Merge Policy]** in de stap **[!UICONTROL Configure]** in of uit.
 
-   ![ knevel fusiebeleid ](assets/web-channel-active-on-edge-merge-policy.png)
+   ![&#x200B; knevel fusiebeleid &#x200B;](assets/web-channel-active-on-edge-merge-policy.png)
 
 ## De webdataset configureren voor het experimenteren met inhoud
 
 Als u inhoudstests wilt gebruiken in webkanaalcampagnes, moet u ervoor zorgen dat de gebruikte webdataset ook wordt opgenomen in uw rapportconfiguratie. Het Journey Optimizer-rapportagesysteem gebruikt de dataset op een alleen-lezen manier om rapporten voor het experimenteren met inhoud buiten de box te vullen.
 
-[ het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[&#x200B; het Toevoegen van datasets voor inhoudexperiment het melden is gedetailleerd in deze sectie &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Hoofdletters gebruiken - Loyalty&#39;s
 
@@ -144,7 +144,7 @@ Nu u onze gegevens van de steekproefloyaliteit hebt gegeten en ons segment creee
 
 De voorbeeldcampagne maken:
 
-1. Open [ Journey Optimizer ](https://experience.adobe.com/journey-optimizer/home){target="_blank"} interface
+1. Open [&#x200B; Journey Optimizer &#x200B;](https://experience.adobe.com/journey-optimizer/home){target="_blank"} interface
 
    >[!NOTE]
    >
@@ -154,11 +154,11 @@ De voorbeeldcampagne maken:
 1. Klik op **[!UICONTROL Create campaign]** rechtsboven.
 1. Kies het type campagne. Voor het de gebruikscase van de Beloningen van de Loyalty, kies **Gepland - Op de markt brengend**.
 
-   ![ Geplande campagne ](assets/web-channel-campaign-properties-scheduled.png)
+   ![&#x200B; Geplande campagne &#x200B;](assets/web-channel-campaign-properties-scheduled.png)
 
 1. Voeg enkele aanvullende details toe aan de nieuwe webkanaalcampagne. Geef eerst de naam van de campagne. Roep het `Luma Loyalty Rewards – Gold Status` aan. U kunt desgewenst een beschrijving aan de campagne toevoegen. Voeg ook **[!UICONTROL Tags]** toe om de algemene campagnetaxonomie te verbeteren.
 
-   ![ Naam de campagne ](assets/web-channel-campaign-name.png)
+   ![&#x200B; Naam de campagne &#x200B;](assets/web-channel-campaign-name.png)
 
 1. Ga naar de tab **[!UICONTROL Actions]**
 1. Kies de **[!UICONTROL Web]** als de **[!UICONTROL Action name]** .
@@ -171,7 +171,7 @@ De voorbeeldcampagne maken:
    1. `https://newluma.enablementadobe.com/index.html` als de **[!UICONTROL Page URL]** .
 1. **[!UICONTROL Submit]** de nieuwe kanaalconfiguratie
 
-   ![ vorm het Kanaal van het Web ](assets/web-channel-configuration.png)
+   ![&#x200B; vorm het Kanaal van het Web &#x200B;](assets/web-channel-configuration.png)
 1. Selecteer de nieuwe `LumaHomepage` configuratie op het browsertabblad met uw campagne
 
    >[!TIP]
@@ -187,7 +187,7 @@ U kunt als volgt het inhoudexperiment maken:
 
 1. Klik op **[!UICONTROL Create experiment]**.
 
-   ![ creeer experiment ](assets/web-channel-create-content-experiment.png)
+   ![&#x200B; creeer experiment &#x200B;](assets/web-channel-create-content-experiment.png)
 
 1. Kies eerst een **[!UICONTROL Success metric]** . Dit is de maatstaf voor het bepalen van de doeltreffendheid van inhoud. Kies **[!UICONTROL Unique Clicks]** om te zien welke inhoudsbehandeling meer klikken op het web genereert.
 
@@ -199,16 +199,16 @@ U kunt als volgt het inhoudexperiment maken:
 
 1. Selecteer **[!UICONTROL Create]**.
 
-   ![ kies metrisch succes ](assets/web-channel-content-experiment-metric.png)
+   ![&#x200B; kies metrisch succes &#x200B;](assets/web-channel-content-experiment-metric.png)
 
 
-[ Leer meer over inhoudsexperimenten in het Webkanaal van Adobe Journey Optimizer ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
+[&#x200B; Leer meer over inhoudsexperimenten in het Webkanaal van Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 
 
 ### Inhoud bewerken met de visuele hulp
 
-Nu, auteur de ervaring van het Webkanaal. Eerst, installeer [ Adobe Experience Cloud Visual Editing Helper ](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) browser uitbreiding voor Google Chrome en Microsoft® Edge, als u niet reeds hebt. Ga na installatie verder met de stappen in de Journey Optimizer-interface:
+Nu, auteur de ervaring van het Webkanaal. Eerst, installeer [&#x200B; Adobe Experience Cloud Visual Editing Helper &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) browser uitbreiding voor Google Chrome en Microsoft® Edge, als u niet reeds hebt. Ga na installatie verder met de stappen in de Journey Optimizer-interface:
 
 1. Selecteer **[!UICONTROL Edit Content]** (of navigeer naar het tabblad Inhoud van de campagne). Aangezien u één pagina-URL hebt ingevoerd als het oppervlak, kunt u beter beginnen te werken in de composer.
 
@@ -216,22 +216,22 @@ Nu, auteur de ervaring van het Webkanaal. Eerst, installeer [ Adobe Experience C
 
 1. Klik nu op **[!UICONTROL Edit web page]** om te beginnen met het ontwerpen van Behandeling A van uw ervaring.
 
-   ![ geef Web-pagina ](assets/web-channel-edit-web-page.png) uit
+   ![&#x200B; geef Web-pagina &#x200B;](assets/web-channel-edit-web-page.png) uit
 
 1. Begin door sommige elementen te bewerken met de webcomposer. Gebruik het contextmenu om de koptekst van de hoofdafbeelding van de Luma te bewerken. Pas de stijl van het contextafhankelijke venster aan de rechterkant aan.
 
-   ![ voeg contextafhankelijke uitgeeft toe ](assets/web-channel-some-contextual-edit.png)
+   ![&#x200B; voeg contextafhankelijke uitgeeft toe &#x200B;](assets/web-channel-some-contextual-edit.png)
 
 
 
 1. Voeg ook personalisatie aan de container toe gebruikend **[!UICONTROL Expression editor]**.
 
-   ![ Open de uitdrukkingsredacteur ](assets/web-channel-open-expression-editor.png)
-   ![ voeg verpersoonlijking ](assets/web-channel-add-basic-personalization.png) toe
+   ![&#x200B; Open de uitdrukkingsredacteur &#x200B;](assets/web-channel-open-expression-editor.png)
+   ![&#x200B; voeg verpersoonlijking &#x200B;](assets/web-channel-add-basic-personalization.png) toe
 
 1. Zorg ervoor dat de ervaring correct voor kliks wordt gevolgd. Kies **[!UICONTROL Click track element]** in het contextmenu.
 
-   ![ klik spoor ](assets/web-channel-click-tracking.png)
+   ![&#x200B; klik spoor &#x200B;](assets/web-channel-click-tracking.png)
 
 Er zijn vele opties beschikbaar om het overseinen te personaliseren.
 
@@ -241,18 +241,18 @@ Er zijn een paar beschikbare methodes als u geavanceerdere, of douaneverandering
 
 Gebruik het deelvenster **[!UICONTROL Components]** om HTML of andere inhoud rechtstreeks toe te voegen aan de Luministensite.
 
-![ Onderzoek de componentenruit ](assets/web-channel-components-pane.png)
+![&#x200B; Onderzoek de componentenruit &#x200B;](assets/web-channel-components-pane.png)
 
 Voeg een nieuwe HTML-component toe boven aan de pagina. Open **[!UICONTROL expression editor]** opnieuw om de HTML te bewerken.
 
-![ Open de uitdrukkingsredacteur ](assets/web-channel-open-expression-editor-html.png)
+![&#x200B; Open de uitdrukkingsredacteur &#x200B;](assets/web-channel-open-expression-editor-html.png)
 
 
 U kunt ook HTML-bewerkingen toevoegen vanuit het deelvenster **[!UICONTROL Modifications]** . In dit deelvenster kunt u een component op de pagina selecteren en deze bewerken vanuit de ontwerpinterface.
 
 Voeg in de editor de HTML voor het publiek van `Luma Loyalty Rewards – Gold Status` toe. Selecteer **[!UICONTROL Validate]**.
 
-![ bevestigt HTML ](assets/web-channel-add-custom-html-validate.png)
+![&#x200B; bevestigt HTML &#x200B;](assets/web-channel-add-custom-html-validate.png)
 
 Bekijk nu de nieuwe aangepaste HTML-component om deze passend te maken.
 
@@ -266,9 +266,9 @@ Standaard is de campagne actief voor alle sitebezoekers. Voor de toepassing van 
 
 1. **[!UICONTROL Select audience]**
 
-   ![ Uitgezochte publiek ](assets/web-channel-select-audience.png)
+   ![&#x200B; Uitgezochte publiek &#x200B;](assets/web-channel-select-audience.png)
 
-1. Kies het `Luma Loyalty Rewards - Gold Status` publiek u in de [ Opstelling Experience Platform ](setup-experience-platform.md) les creeerde.
+1. Kies het `Luma Loyalty Rewards - Gold Status` publiek u in de [&#x200B; Opstelling Experience Platform &#x200B;](setup-experience-platform.md) les creeerde.
 1. **[!UICONTROL Save]** het publiek voor de campagne
 
    ![Doelgroep opslaan](assets/web-channel-save-audience.png)
@@ -302,7 +302,7 @@ To simulate the experience:
 
 Standaard worden campagnes gestart en gestopt wanneer u ze handmatig activeert en deactiveert. U kunt deze echter plannen om op bepaalde datums en tijden te starten en te stoppen. Verlaat de standaardmontages en selecteer **Overzicht om** te activeren:
 
-![ Programma van de Campagne ](assets/web-channel-campaign-schedule.png)
+![&#x200B; Programma van de Campagne &#x200B;](assets/web-channel-campaign-schedule.png)
 
 >[!NOTE]
 >
@@ -314,11 +314,11 @@ Standaard worden campagnes gestart en gestopt wanneer u ze handmatig activeert e
 
 U wordt gevraagd de details van de campagne een laatste keer te bevestigen. Selecteer **[!UICONTROL Activate]**. Het kan tot 15 minuten duren voordat de campagne live gaat op de site.
 
-![ activeer de campagne ](assets/web-channel-campaign-activate.png)
+![&#x200B; activeer de campagne &#x200B;](assets/web-channel-campaign-activate.png)
 
 ### Loyalty Rewards QA
 
-Er zijn een paar logins die u kunt gebruiken om gebruikers met de status &quot;goud&quot; te simuleren en in aanmerking te komen voor uw campagne. U moet de steekproefgegevens in de [ Opstelling Experience Platform ](setup-experience-platform.md) hebben geüpload en rekeningen creëren gebruikend deze geloofsbrieven op de website voor deze te werken.
+Er zijn een paar logins die u kunt gebruiken om gebruikers met de status &quot;goud&quot; te simuleren en in aanmerking te komen voor uw campagne. U moet de steekproefgegevens in de [&#x200B; Opstelling Experience Platform &#x200B;](setup-experience-platform.md) hebben geüpload en rekeningen creëren gebruikend deze geloofsbrieven op de website voor deze te werken.
 
 1. `cleavlandeuler@emailsim.io`/`test`
 1. `leftybeagen@emailsim.io`/`test`
@@ -326,7 +326,7 @@ Er zijn een paar logins die u kunt gebruiken om gebruikers met de status &quot;g
 
 U kunt het beste de campagnestatistieken van **[!UICONTROL Web]** volgen in het scherm met het campagneoverzicht nadat u de campagne hebt gestart of op **[!UICONTROL Reports]** klikken voor een uitgebreidere rapportage:
 
-![ het Webrapport van de Mening ](assets/web-channel-web-report.png)
+![&#x200B; het Webrapport van de Mening &#x200B;](assets/web-channel-web-report.png)
 
 ### Webkanaalvalidatie met Adobe Experience Platform Debugger
 
@@ -334,7 +334,7 @@ Met de extensie Adobe Experience Platform Debugger, die beschikbaar is voor zowe
 
 Met het foutopsporingsprogramma op de Luminasite kunt u de ervaring met het webkanaal tijdens de productie valideren. Dit is beste praktijken zodra de het gebruiksgeval van de Beloningen van de Loyalty in werking is, om ervoor te zorgen dat alles correct wordt gevormd.
 
-[ Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier ](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[&#x200B; Leer hoe te om debugger in uw browser te vormen gebruikend de gids hier &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 De validatie starten met de foutopsporing:
 
@@ -369,4 +369,4 @@ De validatie starten met de foutopsporing:
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
