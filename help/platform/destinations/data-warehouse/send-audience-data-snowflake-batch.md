@@ -24,4 +24,4 @@ Leer hoe u de Snowflake Batch-bestemming in Adobe Real-Time CDP configureert en 
 Voor meer informatie, herzie de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480190/?captions=dut&learn=on&enablevpops)
