@@ -3,9 +3,9 @@ title: Tutorial voor Adobe Experience Cloud met Web SDK implementeren
 description: Leer hoe u Experience Cloud-toepassingen implementeert met Adobe Experience Platform Web SDK.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
@@ -14,14 +14,14 @@ ht-degree: 2%
 
 Leer hoe u Experience Cloud-toepassingen implementeert met Adobe Experience Platform Web SDK.
 
-Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [&#x200B; voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/home)
+Experience Platform Web SDK is een client-side JavaScript-bibliotheek waarmee klanten van Adobe Experience Cloud kunnen communiceren met zowel Adobe-toepassingen als services van derden via Adobe Experience Platform Edge Network. Zie {het Overzicht van SDK van het Web van Adobe Experience Platform 0} [ voor meer gedetailleerde informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)
 
-![&#x200B; de architectuur van SDK van het Web van Experience Platform &#x200B;](assets/dc-websdk.png)
+![ de architectuur van SDK van het Web van Experience Platform ](assets/dc-websdk.png)
 
-Deze zelfstudie begeleidt u door de implementatie van het Platform Web SDK op een voorbeeldwebsite in de detailhandel met de naam Luma. De [&#x200B; plaats van de Luma &#x200B;](https://newluma.enablementadobe.com) heeft een rijke gegevenslaag en functionaliteit die u een realistische implementatie laat bouwen. Voor deze zelfstudie:
+Deze zelfstudie begeleidt u door de implementatie van het Platform Web SDK op een voorbeeldwebsite in de detailhandel met de naam Luma. De [ plaats van de Luma ](https://newluma.enablementadobe.com) heeft een rijke gegevenslaag en functionaliteit die u een realistische implementatie laat bouwen. In deze zelfstudie:
 
 * Maak in uw eigen account uw eigen eigenschap voor tags met een Platform Web SDK-implementatie voor de Luma-website.
-* Vorm alle eigenschappen van de gegevensinzameling voor de implementaties van SDK van het Web zoals gegevensstromen, schema&#39;s, en identiteitsnamespaces.
+* Vorm belangrijke eigenschappen die van de gegevensinzameling in de implementaties van SDK van het Web zoals gegevensstromen, schema&#39;s, en identiteitsnamespaces worden gebruikt.
 * Voeg de volgende Adobe Experience Cloud-toepassingen toe:
    * **[Adobe Experience Platform](setup-experience-platform.md)** (en toepassingen die op Platform zoals Adobe Real-Time Customer Data Platform, Adobe Journey Optimizer, en Adobe Customer Journey Analytics worden gebouwd)
    * **[Adobe Analytics](setup-analytics.md)**
@@ -35,20 +35,20 @@ Nadat u deze zelfstudie hebt voltooid, kunt u al uw marketingtoepassingen implem
 
 >[!NOTE]
 >
->Een gelijkaardige multi-oplossingsleerprogramma is beschikbaar voor [&#x200B; Mobiele SDK &#x200B;](../tutorial-mobile-sdk/overview.md).
+>Een gelijkaardige zelfstudie is ook beschikbaar voor [ Mobiele SDK ](../tutorial-mobile-sdk/overview.md).
 
 ## Vereisten
 
 Alle Experience Cloud-klanten kunnen Platform Web SDK gebruiken. Het is niet verplicht een licentie te verlenen voor een toepassing op basis van een platform, zoals Real-Time Customer Data Platform of Journey Optimizer, om Web SDK te gebruiken.
 
-In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigingen hebt om de lessen te voltooien. Als dat niet het geval is, moet u contact opnemen met een Experience Cloud Administrator van uw bedrijf om toegang te krijgen.
+In deze lessen wordt aangenomen dat u een Adobe-gebruikersaccount en de vereiste machtigingen hebt om de lessen te voltooien. Als dat niet het geval is, moet u contact opnemen met een Experience Cloud Administrator van uw bedrijf om toegang te krijgen.
 
 * Voor **de Inzameling van Gegevens**, moet u hebben:
    * **[!UICONTROL Platforms]** - machtiging voor **[!UICONTROL Web]** en, indien gelicentieerd, **[!UICONTROL Edge]**
    * **[!UICONTROL Property Rights]** - toestemming voor **[!UICONTROL Approve]** , **[!UICONTROL Develop]** , **[!UICONTROL Edit Property]** , **[!UICONTROL Manage Environments]** , **[!UICONTROL Manage Extensions]** en **[!UICONTROL Publish]** ,
    * **[!UICONTROL Company Rights]** : toestemming voor **[!UICONTROL Manage Properties]**
 
-     Voor meer informatie betreffende markeringstoestemmingen, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/admin/user-permissions).
+     Voor meer informatie betreffende markeringstoestemmingen, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Voor **Experience Platform**, moet u hebben:
 
@@ -56,26 +56,25 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
    * Toegang tot **[!UICONTROL Manage Schemas]** en **[!UICONTROL View Schemas]** under **[!UICONTROL Data Modeling]** .
    * Toegang tot **[!UICONTROL Manage Identity Namespaces]** en **[!UICONTROL View Identity Namespaces]** under **[!UICONTROL Identity Management]** .
    * Toegang tot **[!UICONTROL Manage Datastreams]** en **[!UICONTROL View Datastreams]** under **[!UICONTROL Data Collection]** .
-   * Als u een klant van een op platform-gebaseerde toepassing bent en de [&#x200B; Reeks Experience Platform &#x200B;](setup-experience-platform.md) les zult voltooien, zou u ook moeten hebben:
+   * Als u een klant van een op platform-gebaseerde toepassing bent en de [ Reeks Experience Platform ](setup-experience-platform.md) les zult voltooien, zou u ook moeten hebben:
       * Toegang tot de zandbak van de a **ontwikkeling**.
       * Alle machtigingsitems onder **[!UICONTROL Data Management]** en **[!UICONTROL Profile Management]** :
 
      De vereiste functies moeten beschikbaar zijn voor alle Experience Cloud-klanten, zelfs als u geen klant bent van een op een platform gebaseerde toepassing zoals Real-Time CDP.
 
-     Voor meer informatie over de toegangscontrole van het Platform, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/home).
+     Voor meer informatie over de toegangscontrole van het Platform, zie [ de documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* Voor **Journey Optimizer**:
-   * Voor de facultatieve **les 0&rbrace; van de Campagne van het Web &lbrace;, moet u toestemmingspunten aan** hebben, **[!UICONTROL Manage campaigns]**, en **[!UICONTROL Publish campaigns]**.**[!UICONTROL View campaigns report]**
+* Voor de facultatieve **Journey Optimizer** les, moet u toestemmingspunten aan **[!UICONTROL Manage campaigns]**, **[!UICONTROL Publish campaigns]**, en **[!UICONTROL View campaigns report]** hebben.
   <!--
   * For the optional **Decisioning** lesson, you must have permission items to **[!UICONTROL Manage decisions]**, **[!UICONTROL View decisions]**, **[!UICONTROL Manage offers]**, **[!UICONTROL Manage ranking strategies]**.
-  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
+  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
   -->
 
-* Voor de facultatieve **les van 0&rbrace; Adobe Analytics &lbrace;, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [&#128279;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-console/home)
+* Voor de facultatieve **les van 0} Adobe Analytics {, moet u** beheerdertoegang hebben tot de Montages van de Reeks van het Rapport, de Regels van de Verwerking, en Analysis Workspace [](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Voor de facultatieve **Adobe Target** les, moet u [&#x200B; Redacteur of de toegang van de fiatteur &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
+* Voor de facultatieve **Adobe Target** les, moet u [ Redacteur of de toegang van de fiatteur ](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) hebben.
 
-* Voor de facultatieve **les van 0&rbrace; Audience Manager &lbrace;, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [&#x200B; Audience Manager Op rol-Gebaseerd Toegangsbeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Voor de facultatieve **les van 0} Audience Manager {, moet u toegang hebben tot creeer, lees, en schrijf sporen, segmenten, en bestemmingen.** Voor meer informatie, verwijs naar het leerprogramma op [ Audience Manager Op rol-Gebaseerd Toegangsbeheer ](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
@@ -84,18 +83,19 @@ In deze lessen wordt aangenomen dat u een Adobe-account en de vereiste machtigin
 
 ## Updates
 
+* 27 februari 2026: Nieuwe Luma-website met een gebeurtenisgestuurde gegevenslaag.
 * 24 april 2024: belangrijke updates, waaronder toevoeging van Set Variable/Update Variable, split personalization and analytics request, Journey Optimizer lessen
 
 ## De Luma-website laden
 
 
 
-Laad de [&#x200B; website van de Luma &#x200B;](https://newluma.enablementadobe.com){target="blank"} in een afzonderlijk browser lusje en referentie het zodat kunt u het gemakkelijk laden wanneer nodig tijdens het leerprogramma. U hebt geen andere aanvullende toegang tot Luma nodig dan de gehoste productiesite te kunnen laden.
+Laad de [ website van de Luma ](https://newluma.enablementadobe.com){target="blank"} in een afzonderlijk browser lusje en referentie het zodat kunt u het gemakkelijk laden wanneer nodig tijdens het leerprogramma. U hebt geen andere aanvullende toegang tot Luma nodig dan de gehoste productiesite te kunnen laden.
 
-[![&#x200B; Website Luma &#x200B;](assets/old-overview-luma.png) &#x200B;](https://newluma.enablementadobe.com){target="blank"}
+[![ Website Luma ](assets/overview-luma.png) ](https://newluma.enablementadobe.com){target="blank"}
 
-Laten we beginnen!
+Laten we beginnen! Volgende: [ creeer een schema XDM voor Webgegevens ](configure-schemas.md)
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
