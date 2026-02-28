@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u een gegevensstroom voor Adobe Experience Platform Web SDK configureert.
 
-[&#x200B; gegevensstromen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
+[&#x200B; gegevensstromen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) vertellen Adobe Experience Platform Edge Network waar te om gegevens te verzenden die door het Web SDK van het Platform worden verzameld. In de configuratie van gegevensstromen, laat u uw toepassingen van Experience Cloud, uw rekening van Experience Platform, en gebeurtenis toe die door:sturen.
 
 
 ![&#x200B; SDK van het Web, gegevensstromen, en het diagram van Edge Network &#x200B;](assets/dc-websdk-datastreams.png)
@@ -66,7 +66,7 @@ Op het volgende scherm kunt u services, zoals Adobe-toepassingen, aan de gegeven
 
 ## Een gegevensstroom overschrijven
 
-[&#x200B; DataStream treedt &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
+[&#x200B; DataStream treedt &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overrides) met voeten staat u toe om extra configuraties voor uw gegevensstroom te bepalen en dan uw standaardconfiguratie onder bepaalde voorwaarden met voeten te treden.
 
 De configuratieopheffing van gegevensstroom is een proces in twee stappen:
 
@@ -79,4 +79,4 @@ U kunt nu de extensie Platform Web SDK installeren in de eigenschap Tag.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)

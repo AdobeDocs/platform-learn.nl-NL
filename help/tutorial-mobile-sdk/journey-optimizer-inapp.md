@@ -21,7 +21,7 @@ Met Journey Optimizer kunt u campagnes maken om in-app berichten naar bepaalde d
 
 ![Architectuur](assets/architecture-ajo.png){zoomable="yes"}
 
-Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Om de in-app overseinenstroom in Journey Optimizer te begrijpen, verwijs naar [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration).
+Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen dat de juiste configuraties en integratie aanwezig zijn. Om de in-app overseinenstroom in Journey Optimizer te begrijpen, verwijs naar [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/in-app/inapp-configuration).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Voordat u in-app berichten verzendt met Journey Optimizer, moet u ervoor zorgen 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* De toegang tot Journey Optimizer en [&#x200B; voldoende toestemmingen voor dupberichten &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
+* De toegang tot Journey Optimizer en [&#x200B; voldoende toestemmingen voor dupberichten &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/push/push-config/push-configuration). U hebt ook voldoende machtigingen nodig voor de volgende Journey Optimizer-functies.
    * Campagnes beheren.
 * Fysiek iOS-apparaat of simulator voor testen.
 
@@ -67,11 +67,11 @@ Om te beginnen moet u een kanaalconfiguratie maken om meldingen van App-berichte
    >
    > Namen moeten beginnen met een letter (A-Z). Het mag alleen alfanumerieke tekens bevatten. U kunt ook onderstrepingsteken `_` -, punt `.` - en afbreekstreepjes `-` gebruiken.
 
-1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [&#x200B; leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+1. Als u aangepaste of basislabels voor gegevensgebruik aan de configuratie wilt toewijzen, kunt u **[!UICONTROL Manage access]** selecteren. [&#x200B; leer meer over de Controle van de Toegang van het Niveau van Objecten (OLAC) &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Selecteer het **In-app overseinen** kanaal.
 
-1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren die deze configuratie gebruiken. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [&#x200B; leer meer over marketing acties &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Bijvoorbeeld: push-gericht.
+1. Selecteer **[!UICONTROL Marketing action]**(s) om het toestemmingsbeleid aan de berichten te associëren die deze configuratie gebruiken. Alle toestemmingsbeleid verbonden aan de marketing actie wordt gebruikt om de voorkeur van uw klanten te respecteren. [&#x200B; leer meer over marketing acties &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Bijvoorbeeld: push-gericht.
 
 1. Selecteer het platform waarvoor u de instellingen wilt definiëren. Met deze instelling kunt u de doelapp voor elk platform opgeven en zorgt u voor consistente levering van inhoud op meerdere platforms.
 
@@ -93,7 +93,7 @@ Werk de configuratie van Experience Edge bij om ervoor te zorgen dat gegevens di
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![&#x200B; Meer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![&#x200B; uitgeven &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform [&#x200B; voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+1. In **[!UICONTROL Datastreams]** > ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg ervoor **[!UICONTROL Adobe Journey Optimizer]** wordt geselecteerd. Zie {de montages van 0} Adobe Experience Platform [&#x200B; voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/configure)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
 
@@ -354,6 +354,6 @@ U moet nu over alle gereedschappen beschikken om waar nodig en van toepassing in
 >
 >U hebt de app voor berichten in de app ingeschakeld en een berichtcampagne in de app toegevoegd met Journey Optimizer en de Journey Optimizer-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=nl) delen.
 
 Volgende: **[creeer en vertoningsaanbiedingen](journey-optimizer-offers.md)**

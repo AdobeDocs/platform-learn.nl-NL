@@ -21,7 +21,7 @@ Met Journey Optimizer-Beslissingsbeheer kunt u uw klanten op elk aanraakpunt op 
 
 ![Architectuur](assets/architecture-ajo.png){zoomable="yes"}
 
-Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [&#x200B; Ongeveer Beslissingsbeheer &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) voor meer informatie.
+Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek van marketingaanbiedingen en een beslissingsmotor die regels en beperkingen toepast op rijke, real-time profielen die door Adobe Experience Platform worden gecreëerd. Dientengevolge, laat het u toe om uw klanten de juiste aanbieding op het juiste ogenblik te verzenden. Zie [&#x200B; Ongeveer Beslissingsbeheer &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning) voor meer informatie.
 
 
 
@@ -35,7 +35,7 @@ Beslissingsbeheer maakt personalisatie gemakkelijk met een centrale bibliotheek 
 
 * App met SDK&#39;s geïnstalleerd en geconfigureerd met succes gemaakt en uitgevoerd.
 * Stel de app in voor Adobe Experience Platform.
-* Toegang tot Journey Optimizer - het Beheer van het Besluit met de [&#x200B; juiste toestemmingen om aanbiedingen en besluiten &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions) te beheren.
+* Toegang tot Journey Optimizer - het Beheer van het Besluit met de [&#x200B; juiste toestemmingen om aanbiedingen en besluiten &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/access-control/high-low-permissions) te beheren.
 
 
 ## Leerdoelstellingen
@@ -63,7 +63,7 @@ Om ervoor te zorgen dat gegevens die van uw mobiele app naar Platform Edge Netwo
 
 1. Selecteer **[!UICONTROL Datastreams]** in de gebruikersinterface voor gegevensverzameling en selecteer de gegevensstroom, bijvoorbeeld **[!DNL Luma Mobile App]** .
 1. Selecteer ![&#x200B; Meer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) voor **[!UICONTROL Experience Platform]** en selecteer ![&#x200B; uitgeven &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** van het contextmenu.
-1. In **[!UICONTROL Datastreams]** > ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de doelles doet, selecteert u ook **[!UICONTROL Personalization Destinations]** . Zie {de montages van 0} Adobe Experience Platform [&#x200B; voor meer informatie.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+1. In **[!UICONTROL Datastreams]** > ![&#x200B; Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** scherm, zorg **[!UICONTROL Offer Decisioning]** ervoor, **[!UICONTROL Edge Segmentation]**, en **[!UICONTROL Adobe Journey Optimizer]** worden geselecteerd. Als u de doelles doet, selecteert u ook **[!UICONTROL Personalization Destinations]** . Zie {de montages van 0} Adobe Experience Platform [&#x200B; voor meer informatie.](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/configure)
 1. Selecteer **[!UICONTROL Save]** om de configuratie van de gegevensstroom op te slaan.
 
    ![&#x200B; de gegevensstroomconfiguratie van AEP &#x200B;](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
@@ -237,7 +237,7 @@ Een evaluatiecriterium is de combinatie van
 * subsidiabiliteitsregels: is het aanbod bijvoorbeeld alleen beschikbaar voor een specifiek publiek;
 * een rangschikkingsmethode: wanneer er meerdere aanbiedingen beschikbaar zijn waaruit u kunt kiezen, welke methode gebruikt u om deze te rangschikken (bijvoorbeeld op aanbiedingsprioriteit, met behulp van een formule of een AI-model).
 
-Zie [&#x200B; Zeer belangrijke stappen om aanbiedingen &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) tot stand te brengen en te beheren als u wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
+Zie [&#x200B; Zeer belangrijke stappen om aanbiedingen &#x200B;](https://experienceleague.adobe.com/nl/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) tot stand te brengen en te beheren als u wilt begrijpen hoe de plaatsen, de regels, de rangschikkingen, aanbiedingen, vertegenwoordiging, inzamelingen, besluiten, etc., op elkaar inwerken en op elkaar betrekking hebben. Deze les richt zich uitsluitend op het gebruik van de output van een besluit in plaats van op de flexibiliteit bij het bepalen van beslissingen binnen Journey Optimizer - Decision Management.
 
 1. Selecteer in de gebruikersinterface van Journey Optimizer de optie **[!UICONTROL Offers]** in het linkerspoor.
 1. Selecteer **[!UICONTROL Decisions]** in de bovenste balk.
@@ -543,6 +543,6 @@ Nu hebt u alle gereedschappen om meer functionaliteit toe te voegen aan uw Journ
 >
 >U hebt de app ingeschakeld om aanbiedingen weer te geven met de Offer Decisioning- en Target-extensie voor de Experience Platform Mobile SDK.
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796) delen.
+>Bedankt dat je tijd hebt geïnvesteerd in het leren van Adobe Experience Platform Mobile SDK. Als u vragen hebt, algemene terugkoppelen willen delen, of suggesties over toekomstige inhoud hebben, hen op deze [&#x200B; Communautaire besprekingspost van Experience League &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=nl) delen.
 
 Volgende: **[voer A/B tests](target.md)** uit
