@@ -17,6 +17,6 @@ ht-degree: 37%
 
 # Demo van Real-Time Customer Data Platform
 
-In deze video wordt getoond hoe Real-Time CDP wordt gebruikt om gegevens van meerdere bronnen te verzamelen, die gegevens samen te voegen tot één realtime klantprofiel en deze gegevens te activeren om persoonlijke klantervaringen te creëren. Voor meer informatie, gelieve de [ documentatie van Real-Time Customer Data Platform ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=nl) te bezoeken.
+In deze video wordt getoond hoe Real-Time CDP wordt gebruikt om gegevens van meerdere bronnen te verzamelen, die gegevens samen te voegen tot één realtime klantprofiel en deze gegevens te activeren om persoonlijke klantervaringen te creëren. Voor meer informatie, gelieve de [&#x200B; documentatie van Real-Time Customer Data Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34558?learn=on&enablevpops)
