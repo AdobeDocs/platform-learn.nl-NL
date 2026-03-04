@@ -50,7 +50,7 @@ In deze oefening, creeert u een identiteitsnaamruimte voor het gebied van de dou
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3432349?captions=dut&learn=on&enablevpops)
 
 Maak nu een naamruimte voor de Luma CRM-id:
 
