@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Web SDK-implementaties valideren met Experience Platform Assurance
 
-[&#x200B; Adobe Experience Platform Assurance &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) is een eigenschap om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen dient.
+[&#x200B; Adobe Experience Platform Assurance &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home) is een eigenschap om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen dient.
 
 Zoals u in [&#x200B; leerde vormen een datastream &#x200B;](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens maakt Platform Edge Network de gegevens door naar de services die in uw gegevensstroom zijn ingeschakeld. Met Assurance kunt u de aanvragen die in en uit Platform Edge Network komen, valideren.
 
@@ -124,4 +124,4 @@ Met een XDM-object dat nu op een pagina wordt geactiveerd, en met de kennis van 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
