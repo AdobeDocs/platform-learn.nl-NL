@@ -4,9 +4,9 @@ description: Leer hoe u uw Platform Web SDK-implementatie met Adobe Experience P
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -16,16 +16,16 @@ ht-degree: 0%
 Leer hoe u uw Adobe Experience Platform Web SDK-implementatie met Adobe Experience Platform Debugger kunt valideren.
 
 
+Experience Platform Debugger is de uitbreiding van a [ Chrome ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) die u helpt de technologie zien van Adobe die in uw Web-pagina&#39;s wordt uitgevoerd. Experience Platform Debugger en de ontwikkelaarsconsole van uw browser zijn de beste manieren om de browser-zijaspecten van uw implementatie van Web SDK te bevestigen en te zuiveren. Adobe Experience Platform Assurance, dat in de volgende les wordt behandeld, geeft de beste mening van de gegevens aangezien het van en naar het Platform Edge Network reist.
 
-De Experience Platform Debugger is een extensie die beschikbaar is voor Chrome en waarmee u de Adobe-technologie kunt bekijken die in uw webpagina&#39;s is geïmplementeerd:
+![ SDK van het Web en de bevestigingsdiagram van Adobe Experience Platform ](assets/dc-websdk-validation.png)
 
-* [&#x200B; de uitbreiding van Chrome &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Als u debugger nooit eerder hebt gebruikt, zou u deze vijf-minieme overzichtsvideo kunnen willen letten:
+Als u Foutopsporing nog nooit eerder hebt gebruikt, kunt u deze overzichtsvideo van vijf minuten bekijken:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In deze les, gebruikt u de [&#x200B; uitbreiding van Adobe Experience Platform Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om het markeringsbezit te vervangen dat op de [&#x200B; Luma demo plaats &#x200B;](https://luma.enablementadobe.com) met uw eigen bezit wordt hard gecodeerd.
+In deze les, gebruikt u de [ uitbreiding van Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) om het markeringsbezit te vervangen dat op de [ Luma demo plaats ](https://luma.enablementadobe.com) met uw eigen bezit wordt hard gecodeerd.
 
 Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. Het staat u toe om uw productiewebsite in uw browser te laden, maar met uw *ontwikkeling* de tagbibliotheek. Hierdoor kunt u op een betrouwbare manier wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases. Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
 
@@ -39,7 +39,7 @@ Aan het eind van deze les, zult u debugger kunnen gebruiken om:
 
 ## Vereisten
 
-U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [&#x200B; de demomoeplaats van de Luma &#x200B;](https://luma.enablementadobe.com/){target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
+U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ de demomoeplaats van de Luma ](https://luma.enablementadobe.com/){target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -53,119 +53,133 @@ U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [&#x200
 
 De Experience Platform Debugger beschikt over een coole functie waarmee u een bestaande tagbibliotheek kunt vervangen door een andere. Deze techniek is nuttig voor bevestiging en staat ons toe om vele implementatiestappen in dit leerprogramma over te slaan.
 
-1. Zorg ervoor u de [&#x200B; de demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com){target="_blank"} open hebt en selecteert het Debugger van Experience Platform uitbreidingspictogram
+1. Zorg ervoor u de [ de demowebsite van de Luma ](https://luma.enablementadobe.com){target="_blank"} open hebt en selecteert het Debugger van Experience Platform uitbreidingspictogram
 1. Foutopsporing opent en toont sommige details van de hard-gecodeerde implementatie (u kunt de plaats van de Luma na het openen van Debugger moeten opnieuw laden)
 1. Bevestig dat Debugger &quot;**[!UICONTROL Connected to Luma]**&quot;zoals hieronder afgebeeld is en selecteer dan het &quot;**[!UICONTROL lock]**&quot;pictogram is om Debugger aan de plaats van de Luma te sluiten.
-1. Selecteer de knop **[!UICONTROL Sign In]** en meld u aan bij Adobe Experience Cloud met uw Adobe-id.
+1. Selecteer de knop **[!UICONTROL Sign In]** , meld u aan bij Adobe Experience Cloud met uw Adobe-id en selecteer uw organisatie.
+
+   >[!TIP]
+   >
+   > Als de debugger uw gebruikersbenaming in plaats van uw naam van de Org na het ondertekenen binnen toont, teken uit en probeer opnieuw.
+
+
+   ![ Debugger de markeringsscherm ](assets/validate-launch-screen.png)
+
 1. Ga nu naar **[!UICONTROL Experience Platform Tags]** in de linkernavigatie
-
-   ![&#x200B; Debugger de markeringsscherm &#x200B;](assets/validate-launch-screen.png)
-
 1. Selecteer de tab **[!UICONTROL Configuration]**
 1. Open rechts van waar de **[!UICONTROL Page Embed Codes]** wordt weergegeven het vervolgkeuzemenu **[!UICONTROL Actions]** en selecteer **[!UICONTROL Replace]**
 
-   ![&#x200B; Uitgezochte Acties > vervangen &#x200B;](assets/validate-switch-environment.png)
+   ![ Uitgezochte Acties > vervangen ](assets/validate-switch-environment.png)
 
 1. Aangezien u voor authentiek wordt verklaard, zal Foutopsporing uw beschikbare markeringseigenschappen en milieu&#39;s trekken. Selecteer uw eigenschap
 1. Selecteer uw `Development` -omgeving
-1. Selecteer de knop **[!UICONTROL Apply]**
+   ![ selecteer het afwisselende markeringsbezit ](assets/validate-switch-selection.png)
 
-   ![&#x200B; selecteer het afwisselende markeringsbezit &#x200B;](assets/validate-switch-selection.png)
+   >[!TIP]
+   >
+   > Als u de eigenschap en de omgeving niet kunt selecteren met de vervolgkeuzelijst, gaat u naar [!UICONTROL Tags] > [!UICONTROL Environments] > [!UICONTROL Development] > [!UICONTROL Install] en selecteert u het pictogram om de ingesloten code te kopiëren en in Foutopsporing te plakken:
+   > ![ selecteer het afwisselende markeringsbezit ](assets/validate-copy-embed-code.png)
+
+1. Selecteer de knop **[!UICONTROL Apply]**
 
 1. De website van de Luma zal _met uw eigen markeringsbezit_ nu opnieuw laden.
 
-   ![&#x200B; vervangen markeringsbezit &#x200B;](assets/validate-switch-success.png)
+   ![ vervangen markeringsbezit ](assets/validate-switch-success.png)
 
 Terwijl u de zelfstudie voortzet, gebruikt u deze techniek om de Luministoewijzing toe te wijzen aan uw eigen tageigenschap om de implementatie van Platform Web SDK te valideren. Wanneer u tags op uw eigen website gebruikt, kunt u dezelfde techniek gebruiken om bibliotheken met ontwikkelingslabels op uw productiewebsite te valideren.
 
-## Clientnetwerkaanvragen valideren met Experience Platform Debugger
+
+
+## Valideren met foutopsporing
+
+### Valideer netwerkverzoeken en XDM
 
 U kunt Foutopsporing gebruiken om cliënt-zijbakens te bevestigen die van uw implementatie van het Web SDK van het Platform worden teweeggebracht om de gegevens te bekijken die naar Platform Edge Network worden verzonden:
 
 1. Ga naar **[!UICONTROL Summary]** in de linkernavigatie om de details van uw markeringseigenschap te zien
 
-   ![&#x200B; Samenvatting tabel &#x200B;](assets/validate-summary.png)
+   ![ Samenvatting tabel ](assets/validate-summary.png)
 
 1. Ga nu naar **[!UICONTROL Experience Platform Web SDK]** in de linkernavigatie om de **[!UICONTROL Network Requests]** te zien
 1. De rij **[!UICONTROL events]** openen
 
-   ![&#x200B; SDK van het Web van Adobe Experience Platform verzoek &#x200B;](assets/validate-aep-screen.png)
+   ![ SDK van het Web van Adobe Experience Platform verzoek ](assets/validate-aep-screen.png)
 
-1. Let op hoe u het gebeurtenistype `web.webpagedetails.pageView` kunt zien dat u in de [!UICONTROL Update variable] -handeling hebt opgegeven, en andere variabelen die zich buiten het vak bevinden en die aan de `AEP Web SDK ExperienceEvent` -veldgroep voldoen.
+1. Let op hoe u het gebeurtenistype `web.webPageDetails.pageView` kunt zien dat u in de [!UICONTROL Update variable] -handeling hebt opgegeven, en andere variabelen die zich buiten het vak bevinden en die aan de `AEP Web SDK ExperienceEvent` -veldgroep voldoen.
 
-   ![&#x200B; de details van de Gebeurtenis &#x200B;](assets/validate-event-pageViews.png)
+   ![ de details van de Gebeurtenis ](assets/validate-event-pageViews.png)
 
-1. Schuif omlaag naar het `web` -object, selecteer dit om het te openen en inspecteer de `webPageDetails.name` , `webPageDetails.server` en `webPageDetails.siteSection` . Deze moeten overeenkomen met de overeenkomstige gegevenslaagvariabelen voor `digitalData` op de startpagina
+1. Schuif omlaag naar het `web` -object, selecteer dit om het te openen en inspecteer het `webPageDetails.name` . Deze moeten overeenkomen met de overeenkomstige gegevenslaagvariabelen voor `adobeDataLayer` op de startpagina
 
 >[!TIP]
 >
-> U kunt als volgt de gegevenslaag `digitalData` op de startpagina weergeven en vergelijken:
+> U kunt als volgt de gegevenslaag `adobeDataLayer` op de startpagina weergeven en vergelijken:
 >
 > 1. Open de browsergereedschappen voor ontwikkelaars op de startpagina van Luma. In het geval van Chrome selecteert u de knop `F12` op het toetsenbord
 > 1. Selecteer de tab **[!UICONTROL Console]**
-> 1. Voer `digitalData` in en selecteer `Enter` op het toetsenbord om de waarden van de gegevenslaag weer te geven
+> 1. Voer `adobeDataLayer` in en selecteer `Enter` op het toetsenbord om de waarden van de gegevenslaag weer te geven
 
-![&#x200B; lusje van het Netwerk &#x200B;](assets/validate-xdm-content.png)
+![ lusje van het Netwerk ](assets/validate-xdm-content.png)
+
+Valideer de gebeurtenissen en variabelen die zijn ingesteld op de productpagina&#39;s, de tekstpagina en de pagina voor bevestiging van de bestelling.
+
+### Identiteitskaart valideren
 
 U kunt ook de identiteitskaartgegevens valideren:
 
-1. Meld u aan bij de Luministensite met de referenties `test@test.com`/`test`
+1. Selecteer **[!DNL Sign In]** op de [ website van de Luma ](https://luma.enablementadobe.com/){target=_blank}. Selecteer **[!DNL Create Account]** en maak een account aan de hand van de referenties `test@test.com`/ `test`
 
-1. Terugkeer aan de [&#x200B; homepage van Luma &#x200B;](https://luma.enablementadobe.com)
+1. Gebruik de sneltoets **[!UICONTROL Jump to most recent]** in Foutopsporing om snel naar de meest recente Web SDK-gebeurtenis te gaan (dit is de laatste kolom). Selecteer de rij **[!UICONTROL events]** om de modale details te openen.
 
-1. De sectie **[!UICONTROL Experience Platform Web SDK]** openen in de linkernavigatie
+1. Onderzoek naar **identityMap** binnen modal. Hier ziet u `lumaCrmId` met drie sleutels van authenticatedState, id, en primaire aanwijzing:
+   ![ SDK van het Web in Debugger ](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-   ![&#x200B; SDK van het Web in Debugger &#x200B;](assets/identity-debugger-websdk-dark.png)
+## Valideren met ontwikkelaarsgereedschappen voor browsers
 
-1. Selecteer de rij **[!UICONTROL events]** om details in een pop-up te openen
+Veel webontwikkelaars geven de voorkeur aan de implementatie in de ontwikkelprogramma&#39;s van hun browser. Dit is vooral belangrijk omdat niet alle browsers de Debugger uitbreiding steunen. Vanwege het flexibele framework zijn er aanvullende implementatiedetails die u kunt inspecteren, zoals cookies en reactiegegevens.
 
-   ![&#x200B; SDK van het Web in Debugger &#x200B;](assets/identity-deugger-websdk-event-dark.png)
+### Netwerkverzoeken valideren
 
-1. Onderzoek naar **identityMap** binnen pop-up. Hier ziet u `lumaCrmId` met drie toetsen voor authenticatedState, id en primary:
-   ![&#x200B; SDK van het Web in Debugger &#x200B;](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
+De de verzoekdetails van SDK van het Web zijn ook zichtbaar in het Web van de browser ontwikkelaars hulpmiddelen **van het Netwerk** tabel (het veronderstellen van de website laadt uw markeringsbibliotheek).
 
-### Clientverzoeken valideren met de hulpprogramma&#39;s voor het ontwikkelen van browsers
+1. Open het 1} lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen {en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
 
-Deze types van verzoekdetails zijn ook zichtbaar in de hulpmiddelen van de Webontwikkelaar van browser **Netwerk** tabel (het veronderstellen van de website laadt uw markeringsbibliotheek).
+   ![ lusje van het Netwerk ](assets/validate-dev-console.png)
 
-1. Open het 1&rbrace; lusje van het Netwerk **van de de Webontwikkelaar van browser hulpmiddelen &lbrace;en laad de pagina opnieuw.** Filter voor vraag met `/ee` om van de vraag de plaats te bepalen, het te selecteren, en dan in de **Kopballen** tabel te kijken, en **nuttige lading** tabel
+1. Ga naar het **lusje van de Voorproef** en neem nota hoe de ECID waarde in de netwerkreactie inbegrepen is.
 
-   ![&#x200B; lusje van het Netwerk &#x200B;](assets/validate-dev-console.png)
-
-1. Ga naar het **lusje van de Reactie** en neem nota hoe de ECID waarde in de reactie inbegrepen is.
-
-   ![&#x200B; lusje van het Netwerk &#x200B;](assets/validate-dev-console-ecid.png)
+   ![ lusje van het Netwerk ](assets/validate-dev-console-ecid.png)
 
    >[!NOTE]
    >
    > De waarde ECID is zichtbaar in de netwerkreactie. Het is niet inbegrepen in het `identityMap` gedeelte van het netwerkverzoek, noch wordt het opgeslagen in dit formaat in een koekje.
 
-## Netwerkaanvragen op de server valideren met Experience Platform Debugger
+### Web SDK cookies
 
-Zoals u in [&#x200B; leerde vormen een datastream &#x200B;](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens doet Platform Edge Network aanvullende verzoeken aan de serverzijde aan de overeenkomstige services die in uw datastream zijn ingeschakeld. U kunt de verzoeken aan de serverzijde die door Platform Edge Network worden gemaakt bevestigen door het Spoor van Edge in Debugger te gebruiken.
+Terwijl wij in de ontwikkelaarshulpmiddelen zijn, nemen een blik bij sommige koekjesWeb SDK reeksen in browser. Open Application > Cookies > https://luma.enablementadobe.com
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home). -->
+Verschillende cookies worden ingesteld door Web SDK:
+
+* kndctr_[ IMS_ORGID ]_AdobeOrg_identity: dit slaat gegevens met betrekking tot ECID op
+* kndctr_[ IMS_ORGID ]_AdobeOrg_cluster: dit slaat de plaats op van het gegevenscentrum die wordt gebruikt zodat de verdere netwerkvraag wordt verpletterd aan de zelfde servers van Edge
+* AMCV_[ IMS_ORGID ]%40AdobeOrg: dit is het erfenisCookie van AMCV die door de bibliotheken van Experience Cloud van de pre-Web wordt gebruikt en het wordt geplaatst omdat wij het gebrek **[!UICONTROL Migrate ECID to VisitorAPI to the web SDK]** plaatsen selecteerde in de de etikettenuitbreiding van SDK van het Web van Adobe Experience Platform. Deze instelling is belangrijk om ingeschakeld te zijn wanneer u uw pagina&#39;s migreert van oudere bibliotheken naar Web SDK, maar u kunt deze instelling uitschakelen nadat al uw pagina&#39;s gedurende een bepaalde tijd zijn gemigreerd.
+
+![ Cookies lusje ](assets/debugger-cookies.png)
+
+Als u deze cookies wist en de pagina opnieuw laadt, ziet u mogelijk extra cookies van derden die zijn ingesteld op het `.demdex.net` -domein. Deze worden ingesteld omdat de standaardinstelling **[!UICONTROL Use third party-cookies]**: **[!UICONTROL Enabled]** in de Adobe Experience Platform Web SDK-tagextensie is ingeschakeld. Als uw browser cookies van derden niet toestaat, worden deze verwijderd wanneer u de pagina opnieuw laadt.
+
+![ Cookies van de Index ](assets/debugger-demdex-cookies.png)
 
 
-### Edge-trace inschakelen
+### Lokale opslag met luminantie
 
-Edge-trace inschakelen:
+De Luma-demo-website gebruikt uitsluitend clienttechnologieën zoals HTML, CSS en JavaScript. Er zijn geen back-endopslagmechanismen, behalve de Experience Cloud-implementatie die door de standaardstatus van de website wordt gebruikt. Informatie zoals gebruikersnamen wordt alleen lokaal in uw browser opgeslagen met localStorage. Als u deze gegevens verwijdert of een incognitorvenster gebruikt, zult u dus zien dat u mogelijk een gebruikersaccount voor de test opnieuw moet maken die u eerder hebt gemaakt.
 
-1. In de linkernavigatie van **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Logs]**
-1. Selecteer de tab **[!UICONTROL Edge]** en selecteer **[!UICONTROL Connect]**
+![ Lokale opslag ](assets/debugger-local-storage.png)
 
-   ![&#x200B; verbindt het Spoor van Edge &#x200B;](assets/analytics-debugger-edgeTrace.png)
 
-1. Het is nu leeg
-
-   ![&#x200B; Verbonden het Spoor van Edge &#x200B;](assets/analytics-debugger-edge-connected.png)
-
-1. Vernieuw de [&#x200B; homepage van de Luma &#x200B;](https://luma.enablementadobe.com/) en controleer **[!UICONTROL Experience Platform Debugger]** opnieuw, om gegevens te zien door komen.
-
-   ![&#x200B; het baken van Edge van de Analyse &#x200B;](assets/validate-edge-trace.png)
-
-Op dit moment kunt u geen Platform Edge Network-aanvragen weergeven die naar Adobe-toepassingen gaan omdat u in de gegevensstroom geen toepassingen hebt ingeschakeld. In toekomstige lessen gebruikt u Edge Trace om de uitgaande serververzoeken aan Adobe-toepassingen en het doorsturen van gebeurtenissen weer te geven. Maar eerst, leer over een ander hulpmiddel om server-zijverzoeken te bevestigen die door Platform Edge Network-Adobe Experience Platform Assurance worden gemaakt!
+Leer vervolgens hoe u deze netwerkverzoeken valideert wanneer ze via Adobe Experience Platform Assurance worden ontvangen en verzonden vanuit Platform Edge Network!
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
