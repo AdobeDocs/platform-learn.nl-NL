@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u Adobe Target implementeert met Adobe Experience Platform Web SDK. Leer hoe u ervaringen kunt bieden en hoe u extra parameters aan Target kunt doorgeven.
 
-[&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/target-home) is de toepassing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, en andere digitale kanalen maximaliseren.
+[&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/target-home) is de toepassing van Adobe Experience Cloud die alles verstrekt u uw klanten&#39; ervaring moet aanpassen en personaliseren, zodat kunt u opbrengst op uw Web en mobiele plaatsen, apps, en andere digitale kanalen maximaliseren.
 
 
 
@@ -44,13 +44,13 @@ Aan het eind van deze les, kunt u het volgende met een implementatie van SDK van
 Om de lessen in deze sectie te voltooien, moet u eerst:
 
 * Voltooi alle lessen voor aanvankelijke configuratie van het Web SDK van het Platform, met inbegrip van vestiging gegevenselementen en regels.
-* Verzeker u een [&#x200B; Redacteur of rol van de fiatteur &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target hebt.
-* Installeer de [&#x200B; Visuele de hulpuitbreiding van Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u browser van Google Chrome gebruikt.
+* Verzeker u een [&#x200B; Redacteur of rol van de fiatteur &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target hebt.
+* Installeer de [&#x200B; Visuele de hulpuitbreiding van Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) als u browser van Google Chrome gebruikt.
 * Weet hoe u activiteiten in Target kunt instellen. Als u een herhaling nodig hebt, zijn de volgende zelfstudies en hulplijnen handig voor deze les:
-   * [&#x200B; Gebruik de Visuele Uitbreiding van de Hulp van Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [&#x200B; Gebruik Composer van de Visuele Ervaring &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [&#x200B; gebruik de op vorm-Gebaseerde Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
-   * [&#x200B; creeer ervaring richtend Activiteiten &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
+   * [&#x200B; Gebruik de Visuele Uitbreiding van de Hulp van Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [&#x200B; Gebruik Composer van de Visuele Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [&#x200B; gebruik de op vorm-Gebaseerde Composer van de Ervaring &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [&#x200B; creeer ervaring richtend Activiteiten &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## Flikkeringsafhandeling toevoegen
 
@@ -119,7 +119,7 @@ De pre-verbergende stijl voor synchrone implementaties kan als volgt worden gevo
 >
 >De vooraf verborgen stijlinstelling is alleen bedoeld voor synchrone implementaties. Deze stijl moet leeg zijn of er moet commentaar op worden toegevoegd als u een asynchrone implementatie van tags gebruikt.
 
-Om meer over te leren hoe het Web SDK van het Platform flikkering kan leiden, kunt u naar de gidssectie verwijzen: [&#x200B; die flikkering voor gepersonaliseerde ervaringen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker) beheert.
+Om meer over te leren hoe het Web SDK van het Platform flikkering kan leiden, kunt u naar de gidssectie verwijzen: [&#x200B; die flikkering voor gepersonaliseerde ervaringen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/personalization/manage-flicker) beheert.
 
 
 ## De gegevensstroom configureren
@@ -144,7 +144,7 @@ Om Doel in de gegevensstroom te vormen:
 
 ### Eigenschappentoken
 
-Target Premium-klanten hebben de mogelijkheid om gebruikersmachtigingen te beheren met eigenschappen. Met de doeleigenschappen kunt u grenzen vaststellen waar gebruikers doelactiviteiten kunnen uitvoeren. Verwijs naar de [&#x200B; sectie van de Toestemmingen van de Onderneming &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview) van de documentatie van het Doel voor details.
+Target Premium-klanten hebben de mogelijkheid om gebruikersmachtigingen te beheren met eigenschappen. Met de doeleigenschappen kunt u grenzen vaststellen waar gebruikers doelactiviteiten kunnen uitvoeren. Verwijs naar de [&#x200B; sectie van de Toestemmingen van de Onderneming &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/manage-users/enterprise/properties-overview) van de documentatie van het Doel voor details.
 
 Om bezitstokens te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Het pictogram `</>` geeft de implementatiecode weer. De `at_property` -waarde is de eigenschap token die u in de gegevensstroom zou gebruiken.
 
@@ -158,9 +158,9 @@ Er kan slechts één eigenschapstoken per gegevensstroom worden opgegeven, maar 
 
 ### Id van doelomgeving
 
-[&#x200B; Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) in de hulp van het Doel u uw implementatie door alle stadia van ontwikkeling beheert. Deze optionele instelling geeft aan welke doelomgeving u voor elke gegevensstroom wilt gebruiken.
+[&#x200B; Milieu&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/environments) in de hulp van het Doel u uw implementatie door alle stadia van ontwikkeling beheert. Deze optionele instelling geeft aan welke doelomgeving u voor elke gegevensstroom wilt gebruiken.
 
-Adobe raadt u aan om de id van de doelomgeving voor elk van uw ontwikkelings-, staging- en productiegegevensstreams anders in te stellen om de zaken eenvoudig te houden. Alternatief, kunt u uw milieu&#39;s in de interface van het Doel organiseren gebruikend de [&#x200B; gastheren &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts) eigenschap.
+Adobe raadt u aan om de id van de doelomgeving voor elk van uw ontwikkelings-, staging- en productiegegevensstreams anders in te stellen om de zaken eenvoudig te houden. Alternatief, kunt u uw milieu&#39;s in de interface van het Doel organiseren gebruikend de [&#x200B; gastheren &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/administer/hosts) eigenschap.
 
 Om milieu IDs te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Environments]**.
 
@@ -172,7 +172,7 @@ Om milieu IDs te plaatsen of te vinden, navigeer aan **Adobe Target** > **[!UICO
 
 ### Doelnaamruimte voor id van derden
 
-Met deze optionele instelling kunt u opgeven welk identiteitssymbool u wilt gebruiken voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie, kunt u naar het [&#x200B; in real time profiel verwijzen dat voor mbox3rdPartyId &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) sectie van de gids van het Doel synchroniseert.
+Met deze optionele instelling kunt u opgeven welk identiteitssymbool u wilt gebruiken voor de doel-id van derden. Het doel ondersteunt alleen profielsynchronisatie op één identiteitssymbool of naamruimte. Voor meer informatie, kunt u naar het [&#x200B; in real time profiel verwijzen dat voor mbox3rdPartyId &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/3rd-party-id) sectie van de gids van het Doel synchroniseert.
 
 De Symbolen van de Identiteit worden gevonden in de identiteitslijst onder **Inzameling van Gegevens** > **[!UICONTROL Customer]** > **[!UICONTROL Identities]**.
 
@@ -218,16 +218,16 @@ Renderen visuele verpersoonlijkingsbesluiten die tot het Web SDK van het Platfor
 >
 >Doorgaans mag de instelling [!UICONTROL Render visual personalization decisions] alleen worden ingeschakeld voor één verzendgebeurtenis-actie per volledig geladen pagina. Als deze instelling is ingeschakeld voor meerdere Send Event-acties, worden daaropvolgende renderaanvragen genegeerd.
 
-Als u deze beslissingen liever zelf rendert of activeert met behulp van aangepaste code, kunt u de instelling [!UICONTROL Render visual personalization decisions] uitgeschakeld laten. Platform Web SDK is flexibel en biedt deze mogelijkheid om u volledige controle te geven. U kunt naar de gids voor meer informatie over [&#x200B; verwijzen manueel teruggevend gepersonaliseerde inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/personalization/render-manual-propositions).
+Als u deze beslissingen liever zelf rendert of activeert met behulp van aangepaste code, kunt u de instelling [!UICONTROL Render visual personalization decisions] uitgeschakeld laten. Platform Web SDK is flexibel en biedt deze mogelijkheid om u volledige controle te geven. U kunt naar de gids voor meer informatie over [&#x200B; verwijzen manueel teruggevend gepersonaliseerde inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/collection/use-cases/personalization/render-manual-propositions).
 
 
 ### Opstelling een activiteit van het Doel met Visuele Composer van de Ervaring
 
-Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richtend (XT) activiteit in Doel om te bevestigen dat alles correct werkt. U kunt naar het leerprogramma van het Doel voor [&#x200B; het creëren van Ervaring richten activiteiten &#x200B;](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities) verwijzen als u hulp nodig hebt.
+Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richtend (XT) activiteit in Doel om te bevestigen dat alles correct werkt. U kunt naar het leerprogramma van het Doel voor [&#x200B; het creëren van Ervaring richten activiteiten &#x200B;](https://experienceleague.adobe.com/nl/docs/target-learn/tutorials/activities/create-experience-targeting-activities) verwijzen als u hulp nodig hebt.
 
 >[!NOTE]
 >
->Als u Google Chrome als uw browser gebruikt, wordt de [&#x200B; Visuele Composer van de Ervaring (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) vereist om de plaats behoorlijk voor het uitgeven in VEC te laden.
+>Als u Google Chrome als uw browser gebruikt, wordt de [&#x200B; Visuele Composer van de Ervaring (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) vereist om de plaats behoorlijk voor het uitgeven in VEC te laden.
 
 1. Navigeren naar de Adobe Target-interface
 1. Maak een Experience Targeting-activiteit (XT) met behulp van de Luma-homepage voor de activiteit-URL en uw doelwerkruimte, indien aanwezig:
@@ -251,9 +251,9 @@ Nu het basisgedeelte van de implementatie volledig is, creeer een Ervaring richt
    >Als u Adobe Analytics dan niet gebruikt selecteer Doel als rapporteringsbron en kies verschillende metrisch zoals **Betrokkenheid > de Kijken van de Pagina** in plaats daarvan. Een doel metrisch wordt vereist om de activiteit te bewaren en voor te vertonen.
 
 1. De activiteit opslaan
-1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
+1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
 1. Laad de startpagina van de luminantie en u ziet dat de wijzigingen zijn toegepast
-1. Na een paar uur, zou u de activiteitsgegevens en omzettingen van het Doel in Adobe Analytics moeten kunnen zien. Verwijs naar de Gids van het Doel voor gedetailleerde informatie over [&#x200B; Analytics voor Doel (A4T) die &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting) rapporteert.
+1. Na een paar uur, zou u de activiteitsgegevens en omzettingen van het Doel in Adobe Analytics moeten kunnen zien. Verwijs naar de Gids van het Doel voor gedetailleerde informatie over [&#x200B; Analytics voor Doel (A4T) die &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/reporting) rapporteert.
 
 
 
@@ -263,7 +263,7 @@ Als u een activiteit instelt, wordt de inhoud weergegeven op de pagina. Nochtans
 
 >[!CAUTION]
 >
->Als u Google Chrome gebruikt en de [&#x200B; Visual Experience Composer (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) geïnstalleerd hebt, zorg ervoor de **Injecteer het plaatsen van de Bibliotheken van het Doel** gehandicapt is. Als u deze instelling inschakelt, worden er extra aanvragen voor het doel ingediend.
+>Als u Google Chrome gebruikt en de [&#x200B; Visual Experience Composer (VEC) helperuitbreiding &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) geïnstalleerd hebt, zorg ervoor de **Injecteer het plaatsen van de Bibliotheken van het Doel** gehandicapt is. Als u deze instelling inschakelt, worden er extra aanvragen voor het doel ingediend.
 
 1. De Adobe Experience Platform Debugger-browserextensie openen
 1. Ga naar de [&#x200B; plaats van de de demo van de Luma &#x200B;](https://luma.enablementadobe.com) en gebruik debugger om [&#x200B; het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property) te schakelen
@@ -397,7 +397,7 @@ Nu u een regel hebt om een gebied van de douanebeslissing manueel terug te geven
 1. Geef een naam op voor de activiteit
 1. Kies in de stap [!UICONTROL Goals & Settings] Adobe Target als bron voor rapportage en [!UICONTROL Engagement] > [!UICONTROL Page Views] als doel
 1. De activiteit opslaan
-1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
+1. Als u op de hoogte bent van uw wijzigingen, kunt u uw activiteit activeren. Anders, als u de ervaring zou willen voorproef zonder u te activeren kunt kopiëren [&#x200B; QA Voorproef URL &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/activities/activity-qa/activity-qa).
 1. Laad de startpagina van de luminantie en u ziet dat de wijzigingen zijn toegepast
 
 >[!NOTE]
@@ -432,7 +432,7 @@ In deze sectie, zult u specifiek doel-specifieke gegevens overgaan en een dichte
 
 ### Parameters pagina (mbox) en XDM
 
-Alle gebieden XDM worden automatisch overgegaan tot Doel als [&#x200B; paginaparameters &#x200B;](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) of mbox parameters.
+Alle gebieden XDM worden automatisch overgegaan tot Doel als [&#x200B; paginaparameters &#x200B;](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/page-parameters) of mbox parameters.
 
 Sommige van deze XDM-velden worden toegewezen aan speciale objecten op de achtergrond van Target. `web.webPageDetails.URL` is bijvoorbeeld automatisch beschikbaar voor het maken van op URL gebaseerde doelvoorwaarden of als het `page.url` -object bij het maken van profielscripts.
 
@@ -442,10 +442,10 @@ U kunt ook paginaparameters toevoegen met het gegevensobject.
 
 Er zijn parameters nuttig aan Doel die niet van het voorwerp XDM in kaart worden gebracht. Deze speciale doelparameters zijn onder meer:
 
-* [&#x200B; de attributen van het Profiel &#x200B;](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [&#x200B; de entiteitattributen van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
-* [&#x200B; Voorbehouden parameters van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* De waarden van de categorie voor [&#x200B; categorieaffiniteit &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
+* [&#x200B; de attributen van het Profiel &#x200B;](https://experienceleague.adobe.com/nl/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [&#x200B; de entiteitattributen van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/entities/entity-attributes)
+* [&#x200B; Voorbehouden parameters van Aanbevelingen &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* De waarden van de categorie voor [&#x200B; categorieaffiniteit &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/audiences/visitor-profiles/category-affinity)
 
 Deze parameters moeten in het object `data` worden verzonden in plaats van in het object `xdm` . Bovendien kunnen pagina- (of mbox-)parameters ook in het `data` -object worden opgenomen.
 
@@ -587,4 +587,4 @@ Nu u deze les hebt voltooid zou u een werkende implementatie van Adobe Target mo
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
