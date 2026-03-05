@@ -177,7 +177,7 @@ Om de kwestie van de grafiekineenstorting op voorhand te behandelen, gebruik de 
 >
 > Deze stappen worden typisch gevormd door een gegevensarchitect die de volledige implementatie van het Platform beheert. Er is veel meer aan de eigenschap dan wat hier wordt getoond en vele complexe scenario&#39;s die eerst zorgvuldig zouden moeten worden gesimuleerd.
 >
-> Voer deze stappen alleen uit als u deze zelfstudie voltooit in een specifieke ontwikkelingssandbox die u kunt verwijderen nadat u deze zelfstudie hebt voltooid. Deze wijzigingen in de sandbox kunnen niet worden teruggedraaid. Gelieve te zien de [&#x200B; identiteitsgrafiek die regels verbinden leerprogramma&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) om meer te leren.
+> Voer deze stappen alleen uit als u deze zelfstudie voltooit in een specifieke ontwikkelingssandbox die u kunt verwijderen nadat u deze zelfstudie hebt voltooid. Deze wijzigingen in de sandbox kunnen niet worden teruggedraaid. Gelieve te zien de [&#x200B; identiteitsgrafiek die regels verbinden leerprogramma&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) om meer te leren.
 
 De koppelingsregels voor identiteitsgrafieken inschakelen:
 
@@ -291,4 +291,4 @@ Omdat dit een heel eenvoudig publiek is, kunnen we de evaluatiemethode van Edge 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)

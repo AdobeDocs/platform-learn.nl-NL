@@ -44,7 +44,7 @@ Om deze les te voltooien, moet u eerst:
 
 ## Een gegevensset maken
 
-Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [&#x200B; dataset &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, blijven binnen het datumpeer als datasets voortbestaan. A [&#x200B; dataset &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/catalog/datasets/overview) is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
 Stel een gegevensset in voor uw Luma-webgebeurtenisgegevens:
 
@@ -177,9 +177,9 @@ U kunt aangepaste query&#39;s op de gegevens uitvoeren en gegevensinvoer valider
 
 >[!INFO]
 >
->  De dienst van de vraag is een zeer krachtig hulpmiddel voor gegevensingenieurs en analisten. Voor meer details over de vraagdienst van Adobe Experience Platform, zie [&#x200B; gegevens &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
+>  De dienst van de vraag is een zeer krachtig hulpmiddel voor gegevensingenieurs en analisten. Voor meer details over de vraagdienst van Adobe Experience Platform, zie [&#x200B; gegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/tutorials/queries/explore-data) in de sectie van de Leerprogramma&#39;s van het Platform onderzoeken.
 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)

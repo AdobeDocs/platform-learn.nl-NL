@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Leer hoe u Adobe Audience Manager instelt met de Adobe Experience Platform Web SDK en de implementatie valideert met een cookie-bestemming.
 
-[&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/audience-manager) is de oplossing van Adobe Experience Cloud die alles verstrekt die wordt vereist om commercieel relevante informatie over plaatsbezoekers te verzamelen, verhandelbare segmenten tot stand te brengen, en gerichte reclame en inhoud aan het juiste publiek te dienen.
+[&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager) is de oplossing van Adobe Experience Cloud die alles verstrekt die wordt vereist om commercieel relevante informatie over plaatsbezoekers te verzamelen, verhandelbare segmenten tot stand te brengen, en gerichte reclame en inhoud aan het juiste publiek te dienen.
 
 
 
@@ -34,11 +34,11 @@ Aan het eind van deze les, zult u kunnen:
 Om deze les te voltooien, moet u eerst:
 
 * Voltooi de vroegere lessen in de Aanvankelijke secties van de Configuratie van de Configuratie en van de Markeringen van dit leerprogramma.
-* Heb toegang tot Adobe Audience Manager en de aangewezen toestemmingen om, attributen, segmenten, en bestemmingen tot stand te brengen te lezen en te schrijven. Voor meer informatie, te herzien gelieve [&#x200B; op rol-Gebaseerd Toegangsbeheer van Audience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Heb toegang tot Adobe Audience Manager en de aangewezen toestemmingen om, attributen, segmenten, en bestemmingen tot stand te brengen te lezen en te schrijven. Voor meer informatie, te herzien gelieve [&#x200B; op rol-Gebaseerd Toegangsbeheer van Audience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## De gegevensstroom configureren
 
-De implementatie van Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie gebruikend [&#x200B; server-kant het door:sturen (SSF) &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Door:sturen op de server geeft u Adobe Analytics-aanvraaggegevens door aan Audience Manager. Een SDK-implementatie van het Platform geeft XDM-gegevens door die naar Platform Edge Network naar Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
+De implementatie van Audience Manager die het Web SDK van het Platform gebruikt verschilt van de implementatie gebruikend [&#x200B; server-kant het door:sturen (SSF) &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Door:sturen op de server geeft u Adobe Analytics-aanvraaggegevens door aan Audience Manager. Een SDK-implementatie van het Platform geeft XDM-gegevens door die naar Platform Edge Network naar Audience Manager worden verzonden. Audience Manager is ingeschakeld in de gegevensstroom:
 
 1. Ga naar [&#x200B; interface van de Inzameling van 0&rbrace; Gegevens](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Selecteer **[!UICONTROL Datastreams]** bij de linkernavigatie
@@ -55,7 +55,7 @@ De implementatie van Audience Manager die het Web SDK van het Platform gebruikt 
 
 ## Een gegevensbron maken
 
-Daarna, creeer a [&#x200B; Gegevens Source &#x200B;](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), een fundamenteel hulpmiddel om gegevens binnen Audience Manager te organiseren:
+Daarna, creeer a [&#x200B; Gegevens Source &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), een fundamenteel hulpmiddel om gegevens binnen Audience Manager te organiseren:
 
 1. Ga naar [&#x200B; Audience Manager &#x200B;](https://experience.adobe.com/#/audience-manager/) interface
 1. Selecteer **[!UICONTROL Audience Data]** in de bovenste navigatie
@@ -75,7 +75,7 @@ Daarna, creeer a [&#x200B; Gegevens Source &#x200B;](https://experienceleague.ad
 
 ## Een kenmerk maken
 
-Nadat het Gegevens Source wordt bewaard, opstelling a [&#x200B; spoor &#x200B;](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Treinen zijn een combinatie van een of meer signalen in Audience Manager. Maak een kenmerk voor bezoekers van de startpagina.
+Nadat het Gegevens Source wordt bewaard, opstelling a [&#x200B; spoor &#x200B;](https://experienceleague.adobe.com/nl/docs/audience-manager/user-guide/features/traits/traits-overview). Treinen zijn een combinatie van een of meer signalen in Audience Manager. Maak een kenmerk voor bezoekers van de startpagina.
 
 >[!NOTE]
 >
@@ -185,4 +185,4 @@ Nu u deze les hebt voltooid, zou u moeten kunnen zien hoe het Web SDK van het Pl
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
