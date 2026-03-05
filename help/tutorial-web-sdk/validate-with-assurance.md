@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Web SDK-implementaties valideren met Experience Platform Assurance
 
-[ Adobe Experience Platform Assurance ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) is een eigenschap om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen dient.
+[&#x200B; Adobe Experience Platform Assurance &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home) is een eigenschap om u te helpen inspecteren, beproeven, simuleren, en bevestigen hoe u gegevens verzamelt of ervaringen dient.
 
-Zoals u in [ leerde vormen een datastream ](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens maakt Platform Edge Network de gegevens door naar de services die in uw gegevensstroom zijn ingeschakeld. Met Assurance kunt u de aanvragen die in en uit Platform Edge Network komen, valideren.
+Zoals u in [&#x200B; leerde vormen een datastream &#x200B;](configure-datastream.md) les, verzendt het Web SDK van het Platform eerst gegevens van uw digitaal bezit naar Platform Edge Network. Vervolgens maakt Platform Edge Network de gegevens door naar de services die in uw gegevensstroom zijn ingeschakeld. Met Assurance kunt u de aanvragen die in en uit Platform Edge Network komen, valideren.
 
-![ SDK van het Web en de bevestigingsdiagram van Adobe Experience Platform ](assets/dc-websdk-validation.png)
+![&#x200B; SDK van het Web en de bevestigingsdiagram van Adobe Experience Platform &#x200B;](assets/dc-websdk-validation.png)
 
 
 ## Leerdoelstellingen
@@ -29,7 +29,7 @@ Aan het eind van deze les, zult u kunnen:
 
 ## Vereisten
 
-U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ demowebsite van de Luma ](https://luma.enablementadobe.com){target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
+U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [&#x200B; demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com){target="_blank"} en hebt de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -50,45 +50,45 @@ Er zijn verschillende manieren om een Assurance-sessie te starten.
 
 Edge-trace inschakelen:
 
-1. Ga naar de [ de demowebsite van de Luma ](https://luma.enablementadobe.com) en gebruik debugger [ schakelaar het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Ga naar de [&#x200B; de demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com) en gebruik debugger [&#x200B; schakelaar het markeringsbezit op de plaats aan uw eigen ontwikkelingeigenschap &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Zorg ervoor dat u bent aangemeld bij Foutopsporing en dat de naam van uw organisatie wordt weergegeven. Als uw gebruikersnaam wordt weergegeven, meldt u zich af en probeert u zich weer aan te melden.
 1. In de linkernavigatie van **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Logs]**
 1. Selecteer de tab **[!UICONTROL Edge]** en selecteer **[!UICONTROL Connect]**
 
-   ![ verbindt het Spoor van Edge ](assets/assurance-edgeTrace-connect.png)
+   ![&#x200B; verbindt het Spoor van Edge &#x200B;](assets/assurance-edgeTrace-connect.png)
 
 1. Het is nu leeg
 
-   ![ Verbonden het Spoor van Edge ](assets/analytics-debugger-edge-connected.png)
+   ![&#x200B; Verbonden het Spoor van Edge &#x200B;](assets/analytics-debugger-edge-connected.png)
 
-1. Vernieuw de [ homepage van de Luma ](https://luma.enablementadobe.com/) en controleer **[!UICONTROL Experience Platform Debugger]** opnieuw, om gegevens te zien komen in Platform Edge Network. In toekomstige lessen, zult u uitgaande verzoeken kunnen zien aangezien u de diensten in uw datastream toelaat.
+1. Vernieuw de [&#x200B; homepage van de Luma &#x200B;](https://luma.enablementadobe.com/) en controleer **[!UICONTROL Experience Platform Debugger]** opnieuw, om gegevens te zien komen in Platform Edge Network. In toekomstige lessen, zult u uitgaande verzoeken kunnen zien aangezien u de diensten in uw datastream toelaat.
 
-   ![ Verzoeken in het Spoor van Edge ](assets/validate-edge-trace.png)
+   ![&#x200B; Verzoeken in het Spoor van Edge &#x200B;](assets/validate-edge-trace.png)
 
    Elke keer dat u Edge Trace inschakelt in Adobe Experience Platform Debugger, wordt een Assurance-sessie gestart op de achtergrond. Hoewel u de informatie hier kunt bekijken, is de Assurance-interface waarschijnlijk veel nuttiger.
 
 1. Als Edge Trace is ingeschakeld, ziet u bovenaan een uitgaande koppelingspictogram. Selecteer het pictogram om Assurance te openen.
 
-   ![ de zitting van Assurance van het Begin ](assets/validate-debugger-start-assurnance.png)
+   ![&#x200B; de zitting van Assurance van het Begin &#x200B;](assets/validate-debugger-start-assurnance.png)
 
 1. Er wordt een nieuw browsertabblad geopend met de Assurance-interface.
 
 ### Een Assurance-sessie starten vanuit de Assurance-interface
 
-1. Open de [ interface van de Inzameling van Gegevens ](https://experience.adobe.com/#/data-collection/home){target="_blank"}
+1. Open de [&#x200B; interface van de Inzameling van Gegevens &#x200B;](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Selecteer Assurance in de linkernavigatie
 1. Sessie maken selecteren
-   ![ creeer een zitting van Assurance ](assets/assurance-create-session.png)
+   ![&#x200B; creeer een zitting van Assurance &#x200B;](assets/assurance-create-session.png)
 1. De optie **[!UICONTROL Deep link connect]** gebruiken
 1. Selecteren **[!UICONTROL Start]**
 1. Geef de sessie een naam, bijvoorbeeld `Luma Web SDK validation`
 1. Als **[!UICONTROL Base URL]** enter `https://luma.enablementadobe.com/`
-   ![ Naam de zitting van Assurance ](assets/assurance-name-session.png)
+   ![&#x200B; Naam de zitting van Assurance &#x200B;](assets/assurance-name-session.png)
 1. Selecteer **[!UICONTROL Copy Link]** in het volgende scherm
 1. Selecteer het pictogram om de koppeling naar het klembord te kopiëren
 1. Plak de URL in uw browser, die de Luma-website opent met een speciale URL-parameter `adb_validation_sessionid` en de sessie start
 1. In de Assurance-interface ziet u een bericht dat u verbinding hebt gemaakt met de sessie. Gebeurtenissen worden dan weergegeven in de Assurance-interface.
-   ![ de zitting van Assurance heeft verbonden ](assets/assurance-success.png)
+   ![&#x200B; de zitting van Assurance heeft verbonden &#x200B;](assets/assurance-success.png)
 
 ## De huidige status van uw Web SDK-implementatie valideren
 
@@ -101,7 +101,7 @@ We kunnen de binnenkomende hit van Web SDK bekijken zoals deze door de edge word
 1. De rij `Alloy Request` selecteren
 1. Zoek in de Raw-gebeurtenis (of vouw knooppunten uit in de map [!UICONTROL Payload] > `ACPExtensionEventData` ) totdat u het XDM-object met vertrouwde variabelen vindt:
 
-   ![ Verzoek van de Legering ](assets/assurance-alloy-request.png)
+   ![&#x200B; Verzoek van de Legering &#x200B;](assets/assurance-alloy-request.png)
 
 
 ### Het antwoord weergeven in `Alloy Response Handle`
@@ -112,7 +112,7 @@ Zoals u weet, is de Experience Cloud-id (ECID) zichtbaar in de Web SDK-respons n
 1. Rechts wordt een menu weergegeven. Selecteer het `+` -teken naast `[!UICONTROL ACPExtensionEventData]`
 1. Selecteer `[!UICONTROL payload > 0 > payload > 0 > namespace]` om omlaag te gaan. De id die onder de laatste `0` wordt weergegeven, komt overeen met de `ECID` . U weet dat aan de hand van de waarde die wordt weergegeven onder `namespace` Overeenkomende `ECID`
 
-   ![ Assurance Alloy Response ](assets/assurance-alloy-response.png)
+   ![&#x200B; Assurance Alloy Response &#x200B;](assets/assurance-alloy-response.png)
 
    >[!CAUTION]
    >
@@ -124,4 +124,4 @@ Met een XDM-object dat nu op een pagina wordt geactiveerd, en met de kennis van 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

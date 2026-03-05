@@ -31,13 +31,13 @@ Het schema inschakelen voor profiel:
 
 1. Selecteer de **[!UICONTROL Profile Toggle]** om deze in te schakelen
 
-   ![ Wisselen van het Profiel ](assets/setup-experience-platform-profile-schema.png)
+   ![&#x200B; Wisselen van het Profiel &#x200B;](assets/setup-experience-platform-profile-schema.png)
 
 1. Selecteren **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]**
 
 1. Selecteren **[!UICONTROL Enable]**
 
-   ![ Profiel laat Wisselen ](assets/setup-experience-platform-profile-schema-enable.png) toe
+   ![&#x200B; Profiel laat Wisselen &#x200B;](assets/setup-experience-platform-profile-schema-enable.png) toe
 
    >[!IMPORTANT]
    >
@@ -62,7 +62,7 @@ Om de dataset toe te laten:
 
 1. Selecteer de **[!UICONTROL Profile Toggle]** om deze in te schakelen
 
-   ![ Wisselen van het Profiel ](assets/setup-experience-platform-profile.png)
+   ![&#x200B; Wisselen van het Profiel &#x200B;](assets/setup-experience-platform-profile.png)
 
 1. Bevestig dat u de gegevensset wilt **[!UICONTROL Enable]**
 
@@ -86,11 +86,11 @@ U kunt een klantprofiel opzoeken in de interface Platform (of Journey Optimizer-
 
 Eerst moet u meer steekproefgegevens in uw profiel-toegelaten dataset produceren:
 
-1. Open de [ de demowebsite van de Luma ](https://luma.enablementadobe.com) en selecteer het [!UICONTROL Experience Platform Debugger] uitbreidingspictogram
+1. Open de [&#x200B; de demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com) en selecteer het [!UICONTROL Experience Platform Debugger] uitbreidingspictogram
 
-1. Vorm Debugger om het markeringsbezit aan *in kaart te brengen uw* milieu van de Ontwikkeling, zoals die in [ wordt beschreven bevestigt met Debugger ](validate-with-debugger.md) les
+1. Vorm Debugger om het markeringsbezit aan *in kaart te brengen uw* milieu van de Ontwikkeling, zoals die in [&#x200B; wordt beschreven bevestigt met Debugger &#x200B;](validate-with-debugger.md) les
 
-   ![ Uw die Org Id in Debugger wordt getoond ](assets/experience-platform-debugger-dev.png)
+   ![&#x200B; Uw die Org Id in Debugger wordt getoond &#x200B;](assets/experience-platform-debugger-dev.png)
 
 1. Blader door de website. Bekijk sommige producten en voeg er wat aan toe in uw winkelwagentje.
 
@@ -99,12 +99,12 @@ Eerst moet u meer steekproefgegevens in uw profiel-toegelaten dataset produceren
 1. Open de rij &quot;events&quot; om te zoeken naar enkele XDM-variabelen
 1. Zoek naar &quot;identityMap&quot;binnen pop-up. Hier zou u lumaCrmId met drie sleutels van authenticatedState, identiteitskaart, en primair moeten zien. De lumaCrmId-waarde voor deze aanmelding is `f660ab912ec121d1b1e928a0bb4bc61b` .
 
-   ![ SDK van het Web in Debugger ](assets/experience-platform-debugger-dev-idMap.png)
+   ![&#x200B; SDK van het Web in Debugger &#x200B;](assets/experience-platform-debugger-dev-idMap.png)
 
 
 Nu zoeken we ons profiel in Experience Platform:
 
-1. In de [ interface van Experience Platform ](https://experience.adobe.com/platform/), uitgezochte **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de linkernavigatie
+1. In de [&#x200B; interface van Experience Platform &#x200B;](https://experience.adobe.com/platform/), uitgezochte **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in de linkernavigatie
 
 1. Als **[!UICONTROL Identity namespace]** use `Luma CRM ID`
 1. Kopieer en plak de waarde van de `lumaCrmId` die is doorgegeven in de aanroep die u hebt gecontroleerd in Experience Platform Debugger, in dit geval `f660ab912ec121d1b1e928a0bb4bc61b`
@@ -120,11 +120,11 @@ Nu zoeken we ons profiel in Experience Platform:
 
 1. Eerst wordt een overzicht van het profiel weergegeven. Dit profiel bevat nog niet veel, maar hier zijn de id&#39;s gekoppeld in het profiel, de `lumaCRMId` en `ECID` :
 
-   ![ profiel van de Klant ](assets/experience-platform-validate-dataset-custProfile.png)
+   ![&#x200B; profiel van de Klant &#x200B;](assets/experience-platform-validate-dataset-custProfile.png)
 
 1. De meeste profielgegevens die op dit moment beschikbaar zijn, zijn de gebeurtenisgegevens van de webactiviteit. Selecteer **[!UICONTROL Events]** om de gegevens van de klikstroom weer te geven:
 
-   ![ de gegevens van de Gebeurtenis ](assets/profile-view-events.png)
+   ![&#x200B; de gegevens van de Gebeurtenis &#x200B;](assets/profile-view-events.png)
 
 
 ## Profiel niet samenvouwen
@@ -135,11 +135,11 @@ Nu kijken naar iets u nooit in uw eigen implementatie-grafiek wilt zien gebeurt.
 
 Ten eerste zullen we nog wat voorbeeldgegevens genereren zodat we het probleem kunnen zien:
 
-1. Zonder om het even welke koekjes of localStorage voorwerpen te schrappen, open de [ de demowebsite van de Luma ](https://luma.enablementadobe.com) en selecteer het [!UICONTROL Experience Platform Debugger] uitbreidingspictogram
+1. Zonder om het even welke koekjes of localStorage voorwerpen te schrappen, open de [&#x200B; de demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com) en selecteer het [!UICONTROL Experience Platform Debugger] uitbreidingspictogram
 
-1. Vorm Debugger om het markeringsbezit aan *in kaart te brengen uw* milieu van de Ontwikkeling, zoals die in [ wordt beschreven bevestigt met Debugger ](validate-with-debugger.md) les
+1. Vorm Debugger om het markeringsbezit aan *in kaart te brengen uw* milieu van de Ontwikkeling, zoals die in [&#x200B; wordt beschreven bevestigt met Debugger &#x200B;](validate-with-debugger.md) les
 
-   ![ Uw die Org Id in Debugger wordt getoond ](assets/experience-platform-debugger-dev.png)
+   ![&#x200B; Uw die Org Id in Debugger wordt getoond &#x200B;](assets/experience-platform-debugger-dev.png)
 
 1. Hopelijk wordt u nog geregistreerd in de plaats van de Luma gebruikend de geloofsbrieven `test@test.com`/ `test`. Indien niet, log terug in.
 
@@ -150,7 +150,7 @@ Ten eerste zullen we nog wat voorbeeldgegevens genereren zodat we het probleem k
 1. Meld u nu opnieuw aan en maak een account als een andere gebruiker (`spouse@test.com/test`). Wat we proberen te doen, is een &#39;gedeeld apparaat&#39;-scenario te repliceren, waarbij twee gebruikers dezelfde webbrowser delen, op dezelfde website verifiëren en dezelfde `ECID` -waarde delen.
 1. Controleer in Foutopsporing of u een andere lumaCrmId, `98d73957f59c67617611d56ba7e8dbaa` for `spouse@test.com/test` hebt.
 
-   ![ Teken binnen als verschillende gebruiker ](assets/profile-different-user.png)
+   ![&#x200B; Teken binnen als verschillende gebruiker &#x200B;](assets/profile-different-user.png)
 
 1. Andere producten weergeven
 
@@ -161,11 +161,11 @@ Nu het profiel opnieuw opzoeken:
 
 1. Selecteren **[!UICONTROL View Identity Graph]**
 
-   ![ Profiel verbonden aan twee Ids van CRM ](assets/profile-two-crmids.png)
+   ![&#x200B; Profiel verbonden aan twee Ids van CRM &#x200B;](assets/profile-two-crmids.png)
 
 1. De identiteitsgrafiek helpt dit profiel visualiseren waarin, wegens het delen van het apparaat, twee `lumaCrmId` waarden door een gemeenschappelijke `ECID` waarde worden verbonden.
 
-   ![ Profiel verbonden aan twee Ids van CRM ](assets/profile-two-crmids-graph.png)
+   ![&#x200B; Profiel verbonden aan twee Ids van CRM &#x200B;](assets/profile-two-crmids-graph.png)
 
 Dit kan een groot probleem zijn voor een Experience Platform-implementatie. Niet alleen worden de gebeurtenisgegevens van beide gebruikers opgenomen in één profiel, maar ook andere typen gegevens die met deze `lumaCrmId` -waarden in Platform worden ingevoerd, worden samengevoegd.
 
@@ -177,19 +177,19 @@ Om de kwestie van de grafiekineenstorting op voorhand te behandelen, gebruik de 
 >
 > Deze stappen worden typisch gevormd door een gegevensarchitect die de volledige implementatie van het Platform beheert. Er is veel meer aan de eigenschap dan wat hier wordt getoond en vele complexe scenario&#39;s die eerst zorgvuldig zouden moeten worden gesimuleerd.
 >
-> Voer deze stappen alleen uit als u deze zelfstudie voltooit in een specifieke ontwikkelingssandbox die u kunt verwijderen nadat u deze zelfstudie hebt voltooid. Deze wijzigingen in de sandbox kunnen niet worden teruggedraaid. Gelieve te zien de [ identiteitsgrafiek die regels verbinden leerprogramma&#39;s ](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) om meer te leren.
+> Voer deze stappen alleen uit als u deze zelfstudie voltooit in een specifieke ontwikkelingssandbox die u kunt verwijderen nadat u deze zelfstudie hebt voltooid. Deze wijzigingen in de sandbox kunnen niet worden teruggedraaid. Gelieve te zien de [&#x200B; identiteitsgrafiek die regels verbinden leerprogramma&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/graph-linking-rules/overview) om meer te leren.
 
 De koppelingsregels voor identiteitsgrafieken inschakelen:
 
 1. Open **[!UICONTROL Settings]** vanuit een willekeurig scherm Identites:
 
-   ![ Open montages van de Identiteit ](assets/profile-open-identity-settings.png)
+   ![&#x200B; Open montages van de Identiteit &#x200B;](assets/profile-open-identity-settings.png)
 
 1. Controleer de waarschuwingen in het modaal en selecteer **[!UICONTROL Proceed]**
 1. Sleep de naamruimte `Luma CRM ID` zodat dit de naamruimte met de hoogste prioriteit in de lijst is
 1. Controleer de instelling **[!UICONTROL Unique per Graph]** voor `Luma CRM ID`
 1. Selecteren **[!UICONTROL Next]**
-   ![ zorg ervoor identiteitskaart van CRM Luma eerst en uniek is ](assets/profile-open-identity-settings.png)
+   ![&#x200B; zorg ervoor identiteitskaart van CRM Luma eerst en uniek is &#x200B;](assets/profile-open-identity-settings.png)
 1. Bekijk het modaal en **[!UICONTROL Confirm]**
 1. Selecteer **[!UICONTROL Next]** om de simulatiestap over te slaan
 
@@ -199,7 +199,7 @@ De koppelingsregels voor identiteitsgrafieken inschakelen:
 
 1. Voer de naam van de sandbox in en selecteer **[!UICONTROL Confirm]**
 
-   ![ Open montages van de Identiteit ](assets/profile-confirm-settings.png)
+   ![&#x200B; Open montages van de Identiteit &#x200B;](assets/profile-confirm-settings.png)
 
 Kom over 24 uur terug naar de site, meld u weer aan als `test@test.com` of `spouse@test.com` en controleer of uw profielen zijn gescheiden.
 
@@ -225,18 +225,18 @@ Maak het loyaliteitsschema:
 1. Het schema inschakelen voor [!UICONTROL Profile] . Als u de schakeloptie Profiel niet kunt vinden, klikt u op de schemanaam linksboven.
 1. Het schema opslaan
 
-   ![ Schema van de Loyalty ](assets/web-channel-loyalty-schema.png)
+   ![&#x200B; Schema van de Loyalty &#x200B;](assets/web-channel-loyalty-schema.png)
 
 Om de dataset tot stand te brengen en de steekproefgegevens in te gaan:
 
 1. Een nieuwe gegevensset maken met de `Luma Loyalty Schema`
 1. Geef de gegevensset een naam `Luma Loyalty Dataset`
 1. De gegevensset inschakelen voor [!UICONTROL Profile]
-1. Download het steekproefdossier [ luma-loyalty-forWeb.json ](assets/luma-loyalty-forWeb.json)
+1. Download het steekproefdossier [&#x200B; luma-loyalty-forWeb.json &#x200B;](assets/luma-loyalty-forWeb.json)
 1. Sleep het bestand naar uw gegevensset en zet het neer
 1. Bevestig dat de gegevens correct zijn ingevoerd
 
-   ![ Schema van de Loyalty ](assets/web-channel-loyalty-dataset.png)
+   ![&#x200B; Schema van de Loyalty &#x200B;](assets/web-channel-loyalty-dataset.png)
 
 
 ### Een samenvoegingsbeleid voor Active-on-Edge instellen
@@ -291,4 +291,4 @@ Omdat dit een heel eenvoudig publiek is, kunnen we de evaluatiemethode van Edge 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
