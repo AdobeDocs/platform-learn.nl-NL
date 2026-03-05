@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 5645331be467c4128d9267b8c2656f46bada25c2
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 16%
+source-wordcount: '95'
+ht-degree: 15%
 
 ---
 
@@ -33,10 +33,11 @@ ht-degree: 16%
 
 + Toepassingsinstellingen {#applications-setup}
    + [Experience Platform instellen](setup-experience-platform.md)
+   + [Profiel en Edge-segmentatie instellen](setup-profile-and-edge-segmentation.md)
+   + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
    + [Adobe Analytics instellen](setup-analytics.md)
    + [Audience Manager instellen](setup-audience-manager.md)
    + [Doel instellen](setup-target.md)
-   + [Journey Optimizer-webkanaal instellen](setup-web-channel.md)
 
 + Beheer van toestemming {#consent-management}
    + [Goedkeuring instellen](setup-consent.md)

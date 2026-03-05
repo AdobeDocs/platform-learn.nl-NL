@@ -4,9 +4,9 @@ description: Leer hoe u een gebeurtenis naar Platform Edge Network verzendt met 
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Aan het einde van deze les kunt u het volgende doen:
 
 ## Vereisten
 
-U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [&#x200B; de demomoeplaats van de Luma &#x200B;](https://luma.enablementadobe.com) en hebt de vorige lessen in het leerprogramma voltooid:
+U bent vertrouwd met de markeringen van de Inzameling van Gegevens en de [ demowebsite van de Luma ](https://luma.enablementadobe.com) en hebt de vorige lessen in het leerprogramma voltooid:
 
 * [Een XDM-schema configureren](configure-schemas.md)
 * [Naamruimte configureren](configure-identities.md)
@@ -63,7 +63,7 @@ De extensie toevoegen:
 1. Filteren naar **[!UICONTROL Adobe Client Data Layer]**
 1. Selecteren **[!UICONTROL Install]**
 
-   ![&#x200B; voeg de uitbreiding van de Laag van de Gegevens van de Cliënt van Adobe toe &#x200B;](assets/rules-acdl-extension.png)
+   ![ voeg de uitbreiding van de Laag van de Gegevens van de Cliënt van Adobe toe ](assets/rules-acdl-extension.png)
 
 1. De standaardinstellingen behouden
 1. Selecteren **[!UICONTROL Save]**
@@ -91,7 +91,7 @@ Al deze regels zullen behoorlijk gebruikend de &quot;[!UICONTROL order]&quot;opt
 
 Deze video geeft een overzicht van het proces:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454033/?captions=dut&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Algemene configuratievelden
 
@@ -103,13 +103,13 @@ Een labelregel maken voor de globale XDM-velden:
 
 1. Selecteer de knop **[!UICONTROL Create New Rule]**
 
-   ![&#x200B; creeer een regel &#x200B;](assets/rules-create.png)
+   ![ creeer een regel ](assets/rules-create.png)
 
 1. Naam van de regel `all pages - adobeDataLayer push - set global variables - 1`
 
 1. Selecteer in de sectie **[!UICONTROL Events]** de optie **[!UICONTROL Add]**
 
-   ![&#x200B; Naam de regel en voeg een gebeurtenis &#x200B;](assets/rule-name-new.png) toe
+   ![ Naam de regel en voeg een gebeurtenis ](assets/rule-name-new.png) toe
 
 1. Gebruik de extensie **[!UICONTROL Adobe Client Data Layer]** en selecteer **[!UICONTROL Data Pushed]** als **[!UICONTROL Event Type]**
 
@@ -121,7 +121,7 @@ Een labelregel maken voor de globale XDM-velden:
 
 1. Luisteren naar **[!UICONTROL All Events]**
 1. Selecteer **[!UICONTROL Keep Changes]** om terug te keren naar het hoofdregelscherm
-   ![&#x200B; Uitgezochte Bibliotheek Geladen Trekker &#x200B;](assets/create-tag-rule-trigger-loaded.png)
+   ![ Uitgezochte Bibliotheek Geladen Trekker ](assets/create-tag-rule-trigger-loaded.png)
 
 1. Selecteer in de sectie **[!UICONTROL Actions]** de optie **[!UICONTROL Add]**
 
@@ -129,9 +129,9 @@ Een labelregel maken voor de globale XDM-velden:
 
 1. Als **[!UICONTROL Action Type]** selecteert u **[!UICONTROL Update variable]**
 
-1. Als **[!UICONTROL Data element]**, selecteer `XDM Variable` u in [&#x200B; creeerde gegevenselementen &#x200B;](create-data-elements.md) les
+1. Als **[!UICONTROL Data element]**, selecteer `XDM Variable` u in [ creeerde gegevenselementen ](create-data-elements.md) les
 
-   ![&#x200B; veranderlijk Schema van de Update &#x200B;](assets/create-rule-update-variable.png)
+   ![ veranderlijk Schema van de Update ](assets/create-rule-update-variable.png)
 
 1. Geef nu de XDM-velden op door deze aan de juiste waarden toe te wijzen:
 
@@ -152,7 +152,7 @@ Een labelregel maken voor de globale XDM-velden:
    > Het plaatsen `web.webPageDetails.pageViews.value` verstrekt een standaardmanier om op een paginamening voor andere stroomafwaartse toepassingen te wijzen. Adobe Analytics hoeft een netwerkaanroep niet als paginaweergave te verwerken.
 
 1. Als u klaar bent, ziet uw `XDM Variable` er ongeveer zo uit. Let op hoe de gevulde en gedeeltelijk gevulde velden worden aangeduid met de blauwe cirkels:
-   ![&#x200B; Variabele XDM &#x200B;](assets/rule-xdm-variable.png)
+   ![ Variabele XDM ](assets/rule-xdm-variable.png)
 1. Selecteer **[!UICONTROL Keep Changes]** en **[!UICONTROL Save]** de regel
 
 
@@ -170,7 +170,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 
 1. Selecteren **[!UICONTROL Add Rule]**
 1. Naam geven [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
-1. Selecteer het ![+-symbool &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Selecteer het ![+-symbool ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]** selecteert u **[!UICONTROL Adobe Client Data Layer]**
 1. Onder **[!UICONTROL Event Type]** selecteert u **[!UICONTROL Data Pushed]**
 1. Selecteer deze optie om **[!UICONTROL Advanced Options]** te openen en typ in `20` . Deze ordewaarde verzekert de regellooppas _na_ de globale veranderingsregel.
@@ -178,7 +178,7 @@ Eerst volgt u de productweergaven op de pagina met productdetails van Luma:
 1. Voer `productView` in als de **[!UICONTROL Event / Key to register for]**
 1. Selecteren **[!UICONTROL Keep changes]**
 
-   ![&#x200B; de regels van Analytics XDM &#x200B;](assets/rule-pdp-event.png)
+   ![ de regels van Analytics XDM ](assets/rule-pdp-event.png)
 
 
 1. Onder **[!UICONTROL Actions]** select **[!UICONTROL Add]**
@@ -213,7 +213,7 @@ U kunt een volledige array toewijzen aan een XDM-object, mits de array overeenko
 
 Zie de vergelijking hieronder van de gegevenslaag van de Luminasite (links) met het vertaalde gegevenselement (rechts) voor illustratie:
 
-![&#x200B; XDM voorwerp matrixformaat &#x200B;](assets/data-element-xdm-array.png)
+![ XDM voorwerp matrixformaat ](assets/data-element-xdm-array.png)
 
 
 Vergelijk het gegevenselement met de `productListItems` -structuur (hint, it should match).
@@ -225,13 +225,13 @@ Vergelijk het gegevenselement met de `productListItems` -structuur (hint, it sho
 >[!IMPORTANT]
 >
 >Wanneer het in kaart brengen van gebieden van uw gegevenslaag aan XDM, zorg ervoor de gebieden het gegevenstype van het XDM gebied aanpassen. In het bovenstaande voorbeeld moeten `quantity` en `priceTotal` gehele getallen zijn, anders wordt de record niet opgenomen in Platform.
-> ![Gegevenstype XDM-schema &#x200B;](assets/set-up-analytics-quantity-integer.png)
+> ![Gegevenstype XDM-schema ](assets/set-up-analytics-quantity-integer.png)
 
 Laten we nu onze array toewijzen aan het XDM-object:
 
 
 1. Een nieuwe regel maken met de naam `cart page - adobeDataLayer push - set cart variables - 20`
-1. Selecteer het ![+-symbool &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Selecteer het ![+-symbool ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]** selecteert u **[!UICONTROL Adobe Client Data Layer]**
 1. Onder **[!UICONTROL Event Type]** selecteert u **[!UICONTROL Data Pushed]**
 1. Selecteer deze optie om **[!UICONTROL Advanced Options]** te openen en typ in `20` . Deze ordewaarde verzekert de regellooppas _na_ de globale veranderingsregel.
@@ -240,7 +240,7 @@ Laten we nu onze array toewijzen aan het XDM-object:
 1. Selecteren **[!UICONTROL Keep Changes]**
 
 
-   ![&#x200B; Gebeurtenis voor de regel van de Kar &#x200B;](assets/rule-cart-event.png)
+   ![ Gebeurtenis voor de regel van de Kar ](assets/rule-cart-event.png)
 
 1. Onder **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 1. Extensie **[!UICONTROL Adobe Experience Platform Web SDK]** selecteren
@@ -268,7 +268,7 @@ Laten we nu onze array toewijzen aan het XDM-object:
 Maak een andere regel voor aankoopgebeurtenissen:
 
 1. Een nieuwe regel maken met de naam `order confirmation - adobeDataLayer push - set purchase variables -  20`
-1. Selecteer het ![+-symbool &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Selecteer het ![+-symbool ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]** selecteert u **[!UICONTROL Adobe Client Data Layer]**
 1. Onder **[!UICONTROL Event Type]** selecteert u **[!UICONTROL Data Pushed]**
 1. Selecteer deze optie om **[!UICONTROL Advanced Options]** te openen en typ in `20` . Deze ordewaarde verzekert de regellooppas _na_ de globale veranderingsregel.
@@ -304,7 +304,7 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
 
 1. Een nieuwe regel maken met de naam `all pages - adobeDataLayer push - send event - 50`
-1. Selecteer het ![+-symbool &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
+1. Selecteer het ![+-symbool ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) onder Gebeurtenis om een nieuwe trigger toe te voegen
 1. Onder **[!UICONTROL Extension]** selecteert u **[!UICONTROL Adobe Client Data Layer]**
 1. Onder **[!UICONTROL Event Type]** selecteert u **[!UICONTROL Data Pushed]**
 1. Selecteer deze optie om **[!UICONTROL Advanced Options]** te openen en typ in `50` (dit is waarschijnlijk de standaardinstelling). Deze ordewaarde verzekert de regellooppas _na_ veranderlijk-plaatsende regels.
@@ -322,14 +322,14 @@ Nu u de variabelen hebt ingesteld, kunt u de regel maken om het volledige XDM-ob
 
 1. Selecteer **[!UICONTROL Keep Changes]** om terug te keren naar het hoofdregelscherm
 
-   ![&#x200B; voeg de Send actie van de Gebeurtenis &#x200B;](assets/create-rule-send-event-action.png) toe
+   ![ voeg de Send actie van de Gebeurtenis ](assets/create-rule-send-event-action.png) toe
 1. Selecteer **[!UICONTROL Save]** om de regel op te slaan
 
-   ![&#x200B; sparen de regel &#x200B;](assets/create-rule-save-rule.png)
+   ![ sparen de regel ](assets/create-rule-save-rule.png)
 
 U zou de volgende regels in uw bezit moeten hebben:
 
-    ![Verifieer lijst van regels] (assets/create-rule-list-of-rules.png) 
+![ verifieer lijst van regels ](assets/create-rule-list-of-rules.png)
 
 ## De regels in een bibliotheek publiceren
 
@@ -341,7 +341,7 @@ Een bibliotheek maken:
 
 1. Selecteren **[!UICONTROL Add Library]**
 
-   ![&#x200B; Uitgezocht voeg Bibliotheek &#x200B;](assets/rule-publish-library.png) toe
+   ![ Uitgezocht voeg Bibliotheek ](assets/rule-publish-library.png) toe
 1. Voer bij **[!UICONTROL Name]** `Luma Web SDK Tutorial` in
 1. Selecteer **[!UICONTROL Environment]** voor `Development`
 1. Selecteren **[!UICONTROL Add All Changed Resources]**
@@ -352,11 +352,11 @@ Een bibliotheek maken:
 
 1. Selecteren **[!UICONTROL Save & Build for Development]**
 
-   ![&#x200B; creeer en bouwt de bibliotheek &#x200B;](assets/create-tag-rule-library-changes.png)
+   ![ creeer en bouwt de bibliotheek ](assets/create-tag-rule-library-changes.png)
 
 Het kan enkele minuten duren voordat de bibliotheek is gemaakt en wanneer deze is voltooid, wordt links van de naam van de bibliotheek een groene stip weergegeven:
 
-![&#x200B; bouwt volledig &#x200B;](assets/create-rule-development-success.png)
+![ bouwt volledig ](assets/create-rule-development-success.png)
 
 Zoals u op het [!UICONTROL Publishing Flow] scherm kunt zien, is er veel meer aan het het publiceren proces, dat voorbij het werkingsgebied van deze zelfstudie is. Deze zelfstudie gebruikt slechts één bibliotheek in uw ontwikkelomgeving.
 
@@ -364,4 +364,4 @@ U kunt nu de gegevens in de aanvraag valideren met de Adobe Experience Platform 
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -4,7 +4,7 @@ description: Leer hoe u de privacyinstellingen van de Experience Platform Web SD
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Leer hoe u de privacyinstellingen van de Adobe Experience Platform Web SDK-tagex
 
 >[!NOTE]
 > 
->Voor demonstratiedoeleinden, gebruikt dit leerprogramma [&#x200B; Klaro &#x200B;](https://klaro.org/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
+>Voor demonstratiedoeleinden, gebruikt dit leerprogramma [ Klaro ](https://klaro.org/) als CMP. U kunt met Klaro of het CMP dat u voor uw website gebruikt doorgaan.
 
 
 ## Leerdoelstellingen
@@ -46,7 +46,7 @@ Voordat u de privacy-instellingen gaat configureren en de regels voor het instel
 
 Voordat u in de tagconfiguraties gaat, leert u meer over het platform voor het beheer van de toestemming dat in deze zelfstudie Klaro wordt gebruikt.
 
-1. Bezoek [&#x200B; Klaro &#x200B;](https://klaro.org/) en opstelling een rekening.
+1. Bezoek [ Klaro ](https://klaro.org/) en opstelling een rekening.
 1. Ga naar **de Manager van de Privacy** en creeer een geval volgens de instructies.
 1. Gebruik de **Code van de Integratie** om Klaro in uw markeringsbezit (de instructies zijn in de volgende oefening) te injecteren.
 1. Skip de **Scanning** sectie, aangezien het het markeringsbezit ontdekt dat op de de demowebsite van de Luma en niet wordt gehard die u voor dit leerprogramma hebt gebouwd.
@@ -74,11 +74,11 @@ Nu, zodra u met de configuraties van Klaro wordt gedaan, creeer markeringsregels
 * [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] ingesteld op 1
 * [!UICONTROL Action]: [!UICONTROL Custom Code] , [!UICONTROL Language]: HTML om het CMP-script te laden.
 
-![&#x200B; Injecteer CMP Regel &#x200B;](assets/consent-cmp-inject-rule-1.png)
+![ Injecteer CMP Regel ](assets/consent-cmp-inject-rule-1.png)
 
 Het aangepaste codeblok moet er ongeveer als volgt uitzien:
 
-![&#x200B; Injecteer CMP Regel &#x200B;](assets/consent-cmp-inject-rule-2.png)
+![ Injecteer CMP Regel ](assets/consent-cmp-inject-rule-2.png)
 
 Sla deze regel nu op en maak deze regel op in uw ontwikkelingsbibliotheek. valideer de toestemmingsbanner wordt weergegeven door de tagbibliotheek van de Luministensite naar uw eigen bibliotheek te verplaatsen. U ziet hieronder een CMP-banner op de website. En om de toestemming van de huidige bezoeker te controleren kunt u het volgende fragment op de console van browser gebruiken.
 
@@ -86,20 +86,20 @@ Sla deze regel nu op en maak deze regel op in uw ontwikkelingsbibliotheek. valid
     klaro.getManager().consents 
 ```
 
-![&#x200B; Toegelaten Banner &#x200B;](assets/consent-cmp-banner.png)
+![ Toegelaten Banner ](assets/consent-cmp-banner.png)
 
 Gebruik het volgende selectievakje in Adobe Experience Platform debugger om naar de foutopsporingsmodus te gaan.
 
-![&#x200B; markering zuivert wijze &#x200B;](assets/consent-rule-debugging.png)
+![ markering zuivert wijze ](assets/consent-rule-debugging.png)
 
 Mogelijk moet u uw cookies en lokale opslag meerdere keren wissen tijdens het doorlopen van deze zelfstudie, aangezien de waarde van de toestemming van de bezoeker daar wordt opgeslagen. Je kunt dat gewoon als volgt doen:
 
-![&#x200B; het Ontruimen Opslag &#x200B;](assets/consent-clearning-cookies.png)
+![ het Ontruimen Opslag ](assets/consent-clearning-cookies.png)
 
 ## Goedkeuringsscenario&#39;s
 
 Privacyhandelingen zoals GDPR, CCPA en andere spelen een cruciale rol in de manier waarop u de uitvoering van de toestemming ontwikkelt. In deze les, onderzoekt u hoe een bezoeker met de toestemmingsbanner onder twee meest prominente privacyhandelingen zou kunnen in wisselwerking staan.
-![&#x200B; Goedgekeurde Scenario&#39;s &#x200B;](assets/consent-scenarios.jpeg)
+![ Goedgekeurde Scenario&#39;s ](assets/consent-scenarios.jpeg)
 
 
 ### Scenario 1: Impliciete optie
@@ -111,7 +111,7 @@ Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 1. Controleer in de sectie **[!UICONTROL Consent]** van de Experience Platform Web SDK-tagextensie of **[!UICONTROL Default consent]** is ingesteld op **[!UICONTROL In]** :
 
 
-   ![&#x200B; de Config van de Privacy van de Uitbreiding van AEP toestemming &#x200B;](assets/consent-web-sdk-privacy-in.png)
+   ![ de Config van de Privacy van de Uitbreiding van AEP toestemming ](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
@@ -122,11 +122,11 @@ Nu zult u toestemming voor dit scenario vormen en uitvoeren:
 
 
 2. Deze wijziging opslaan en samenstellen in uw tagbibliotheek
-3. Laad uw tagbibliotheek op de Luma-demo-site
+3. De tagbibliotheek laden op de Luma-demo-website
 4. Schakel foutopsporing van tags in op de Luministoepassing en laad de pagina opnieuw. In de ontwikkelaarsconsole van uw browser moet u zien dat defaultConsent gelijk is aan **[!UICONTROL In]**
 5. Met deze configuratie doet de extensie Experience Platform Web SDK netwerkverzoeken aan Platform Edge Network totdat een bezoeker besluit de cookies en de opt-out af te wijzen:
 
-   ![&#x200B; geïmpliceerde toestemming binnen &#x200B;](assets/consent-Implied-optin-default.png)
+   ![ geïmpliceerde toestemming binnen ](assets/consent-Implied-optin-default.png)
 
 
 
@@ -156,18 +156,18 @@ Als een bezoeker besluit om te weigeren (de volgende cookies negeren), moet u de
 
 1. Als de **[!UICONTROL Event]** , gebruikt u **[!UICONTROL Click]** on **[!UICONTROL Elements matching the CSS selector]** `#klaro .cn-decline`
 
-   ![&#x200B; de gebruiker van de Voorwaarde van de Regel klikt &quot;ik verval&quot;](assets/consent-optOut-clickEvent.png)
+   ![ de gebruiker van de Voorwaarde van de Regel klikt &quot;ik verval&quot;](assets/consent-optOut-clickEvent.png)
 
 1. Als **[!UICONTROL Action]** gebruikt u de Experience Platform Web SDK-extensie [!UICONTROL Set consent] [!UICONTROL action type] om de toestemming in te stellen op &#39;out&#39;:
 
-   ![&#x200B; De Weg-uit Actie van de Regel van de Goedkeuring &#x200B;](assets/consent-rule-optout-action.png)
+   ![ De Weg-uit Actie van de Regel van de Goedkeuring ](assets/consent-rule-optout-action.png)
 
 1. Uw bibliotheek opslaan en opnieuw samenstellen
 
 
 Nu, wanneer een bezoeker opteert-uit, zou de regel die op de bovengenoemde manier wordt gevormd in brand steken en de toestemming van Web SDK plaatst als **[!UICONTROL Out]**.
 
-Valideren door naar de Luma-demo-site te gaan, cookies negeren en bevestigen dat geen enkele Web SDK-aanvraag wordt geactiveerd nadat u deze hebt uitgeschakeld.
+Valideren door naar de Luma-demo-website te gaan, cookies negeren en bevestigen dat geen Web SDK-aanvraag wordt geactiveerd nadat u dit hebt uitgeschakeld.
 
 ### Scenario 2: Impliciete optie
 
@@ -182,7 +182,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 1. **sparen** de bijgewerkte configuratie aan uw markeringsbibliotheek en herbouwt het.
 
-   ![&#x200B; Config van de Uitbreiding van AEP Consent &#x200B;](assets/consent-implied-opt-out.png)
+   ![ Config van de Uitbreiding van AEP Consent ](assets/consent-implied-opt-out.png)
 
 
    Met deze configuratie zorgt Experience Platform Web SDK ervoor dat geen aanvraag wordt geactiveerd tenzij de toestemmingstoestemming in **[!UICONTROL In]** verandert. Dit kan gebeuren als een bezoeker de cookies handmatig accepteert door in te schakelen.
@@ -192,7 +192,7 @@ Hier is hoe u opstelling de configuratie voor een impliciet opt-outscenario:
 
 1. Laad de Luminasite opnieuw. Zorg dat `defaultConsent` is ingesteld op **[!UICONTROL Out]** en dat er geen Web SDK-aanvragen zijn ingediend.
 
-   ![&#x200B; geïmpliceerde toestemming uit &#x200B;](assets/consent-implied-out-cmp.png)
+   ![ geïmpliceerde toestemming uit ](assets/consent-implied-out-cmp.png)
 
 Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), moet u de toestemming wijzigen en instellen op **[!UICONTROL In]** . Hieronder wordt beschreven hoe u dit kunt doen met een regel:
 
@@ -200,11 +200,11 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 1. Als de **[!UICONTROL Event]** , gebruikt u **[!UICONTROL Click]** on **[!UICONTROL Elements matching the CSS selector]** `#klaro .cm-btn-success`
 
-   ![&#x200B; de gebruiker van de Voorwaarde van de Regel klikt &quot;dat is ok&quot;](assets/consent-optIn-clickEvent.png)
+   ![ de gebruiker van de Voorwaarde van de Regel klikt &quot;dat is ok&quot;](assets/consent-optIn-clickEvent.png)
 
 1. Voeg een handeling toe met de Experience Platform Web SDK [!UICONTROL Extension] , **[!UICONTROL Action Type]** of **[!UICONTROL Set consent]** , **[!UICONTROL General consent]** as **[!UICONTROL In]** .
 
-   ![&#x200B; De regel van de Goedkeuring verkiest-binnen Actie &#x200B;](assets/consent-rule-optin-action.png)
+   ![ De regel van de Goedkeuring verkiest-binnen Actie ](assets/consent-rule-optin-action.png)
 
    Eén ding om hier op te merken is dat deze [!UICONTROL Set consent] actie het eerste verzoek zal zijn dat uitgaat en identiteit vestigt. Daarom kan het belangrijk zijn om identiteiten op het eerste verzoek zelf te synchroniseren. De identiteitskaart kan aan [!UICONTROL Set consent] actie worden toegevoegd door een identiteitstype gegevenselement over te gaan.
 
@@ -212,10 +212,10 @@ Als een bezoeker besluit zich aan te melden (de volgende cookies accepteren), mo
 
 Zodra u deze regel op zijn plaats hebt, zou de gebeurtenisinzameling moeten beginnen wanneer een bezoeker opteert-binnen.
 
-![&#x200B; De toestemming Optie van de Bezoeker van Post &#x200B;](assets/consent-post-user-optin.png)
+![ De toestemming Optie van de Bezoeker van Post ](assets/consent-post-user-optin.png)
 
 
-Voor meer informatie over toestemming in SDK van het Web, zie [&#x200B; Ondersteunende voorkeur van de klantentoestemming &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/edge/consent/supporting-consent).
+Voor meer informatie over toestemming in SDK van het Web, zie [ Ondersteunende voorkeur van de klantentoestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Voor meer informatie over toestemming in SDK van het Web, zie [&#x200B; Onderste
 
 
 
-Voor meer informatie over de [!UICONTROL Set consent] actie, zie [&#x200B; toestemming &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
+Voor meer informatie over de [!UICONTROL Set consent] actie, zie [ toestemming ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent) plaatsen.
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=nl)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
