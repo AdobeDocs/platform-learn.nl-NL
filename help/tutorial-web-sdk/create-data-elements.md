@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gegevenselementen maken
 
-Leer hoe te om gegevenselementen in markeringen voor inhoud, handel, en identiteitsgegevens op de [ de demowebsite van de Luma ](https://luma.enablementadobe.com) tot stand te brengen. Vul vervolgens velden in uw XDM-schema.
+Leer hoe te om gegevenselementen in markeringen voor inhoud, handel, en identiteitsgegevens op de [&#x200B; de demowebsite van de Luma &#x200B;](https://luma.enablementadobe.com) tot stand te brengen. Vul vervolgens velden in uw XDM-schema.
 
 
 
@@ -38,7 +38,7 @@ U hebt inzicht in wat een gegevenslaag is en de vorige lessen in het leerprogram
 
 >[!IMPORTANT]
 >
->De gegevens voor deze les komen uit de `[!UICONTROL adobeDataLayer]` gegevenslaag op de [ plaats van de Luma ](https://luma.enablementadobe.com). Als u de gegevenslaag wilt weergeven, opent u de ontwikkelaarsconsole en typt u in `[!UICONTROL adobeDataLayer]` om de volledige beschikbare gegevenslaag weer te geven.![ adobeDataLayer gegevenslaag ](assets/data-element-data-layer-new.png)
+>De gegevens voor deze les komen uit de `[!UICONTROL adobeDataLayer]` gegevenslaag op de [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com). Als u de gegevenslaag wilt weergeven, opent u de ontwikkelaarsconsole en typt u in `[!UICONTROL adobeDataLayer]` om de volledige beschikbare gegevenslaag weer te geven.![&#x200B; adobeDataLayer gegevenslaag &#x200B;](assets/data-element-data-layer-new.png)
 
 
 ## Datalaagbenaderingen
@@ -56,7 +56,7 @@ Er zijn meerdere manieren om gegevens van uw gegevenslaag toe te wijzen aan XDM 
 
 ### XDM in de gegevenslaag implementeren
 
-In deze aanpak implementeren webontwikkelaars een volledig gedefinieerd XDM-object als de structuur voor de gegevenslaag. Vervolgens wijst u gewoon de volledige gegevenslaag toe aan een XDM-object in tags. Als uw implementatie geen markeringsmanager gebruikt, kan deze benadering ideaal zijn omdat u gegevens naar XDM direct van uw toepassing kunt verzenden gebruikend het [ XDM sendEvent bevel ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
+In deze aanpak implementeren webontwikkelaars een volledig gedefinieerd XDM-object als de structuur voor de gegevenslaag. Vervolgens wijst u gewoon de volledige gegevenslaag toe aan een XDM-object in tags. Als uw implementatie geen markeringsmanager gebruikt, kan deze benadering ideaal zijn omdat u gegevens naar XDM direct van uw toepassing kunt verzenden gebruikend het [&#x200B; XDM sendEvent bevel &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Als u wel tags gebruikt, kunt u een aangepast code-gegevenselement maken waarmee de gehele gegevenslaag als een pass-through JSON-object wordt vastgelegd op de XDM. Vervolgens wijst u de pass-through JSON toe aan het XDM-objectveld in de Send Event-handeling.
 
 Hieronder ziet u hoe de gegevenslaag eruit zou zien als u de indeling Adobe Client Data Layer zou gebruiken:
 
@@ -109,7 +109,7 @@ Cons
 * Volledige afhankelijkheid van ontwikkelingsteam en ontwikkelingscyclus voor het bijwerken van welke gegevens naar XDM gaan
 * Beperkte flexibiliteit omdat XDM de exacte lading van de gegevenslaag ontvangt
 * Kan ingebouwde tagfuncties, zoals plakken, persistentie, functies voor snelle implementatie niet gebruiken
-* Harder om de gegevenslaag voor derdepixel te gebruiken (maar u zou deze pixel aan [ gebeurtenis kunnen willen bewegen door:sturen ](setup-event-forwarding.md)!)
+* Harder om de gegevenslaag voor derdepixel te gebruiken (maar u zou deze pixel aan [&#x200B; gebeurtenis kunnen willen bewegen door:sturen &#x200B;](setup-event-forwarding.md)!)
 * Kan de gegevens niet transformeren tussen de gegevenslaag en XDM
 
 ### Toewijzen aan XDM in tags
@@ -133,12 +133,12 @@ Deze benadering omvat het in kaart brengen van individuele gegevenslaagvariabele
 
 ### Toewijzen aan XDM in de gegevensstroom
 
-Deze benadering gebruikt functionaliteit die in de configuratie van de gegevensstroom [ wordt ingebouwd Prep van Gegevens voor de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
+Deze benadering gebruikt functionaliteit die in de configuratie van de gegevensstroom [&#x200B; wordt ingebouwd Prep van Gegevens voor de Inzameling van Gegevens &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) en slaat de variabelen van de kaartgegevenslaag aan XDM in markeringen over.
 
 #### Pros
 
 * Flexibele toewijzing van individuele variabelen aan XDM in een punt-en-klik UI
-* Capaciteit om [ nieuwe waarden ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [ transformatie gegevenstypes ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag gegevens uit te werken alvorens het naar XDM gaat
+* Capaciteit om [&#x200B; nieuwe waarden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) of [&#x200B; transformatie gegevenstypes &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) van een gegevenslaag gegevens uit te werken alvorens het naar XDM gaat
 
 #### Cons
 
@@ -151,7 +151,7 @@ Deze benadering gebruikt functionaliteit die in de configuratie van de gegevenss
 >
 > Google-gegevenslaag
 > 
-> Als uw organisatie reeds Google Analytics gebruikt en het traditionele Google dataLayer voorwerp op uw website heeft, kunt u de [ uitbreiding van de Laag van Gegevens van Google ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in markeringen gebruiken. Hierdoor kunt u sneller Adobe-technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
+> Als uw organisatie reeds Google Analytics gebruikt en het traditionele Google dataLayer voorwerp op uw website heeft, kunt u de [&#x200B; uitbreiding van de Laag van Gegevens van Google &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in markeringen gebruiken. Hierdoor kunt u sneller Adobe-technologie implementeren zonder dat u ondersteuning van uw IT-team nodig hebt. Als u de Google-gegevenslaag toewijst aan XDM, worden dezelfde stappen uitgevoerd als hierboven.
 
 
 ## Gegevenselementen maken om de gegevenslaag vast te leggen
@@ -160,7 +160,7 @@ Voordat u XDM-velden vult, legt u eerst de gegevenspunten vast die u nodig hebt 
 
 1. Ga naar **[!UICONTROL Data Elements]** en selecteer **[!UICONTROL Add Data Element]** (of **[!UICONTROL Create New Data Element]** als de eigenschap tag geen bestaande gegevenselementen bevat)
 
-   ![ creeer het Element van Gegevens ](assets/data-element-create.png)
+   ![&#x200B; creeer het Element van Gegevens &#x200B;](assets/data-element-create.png)
 
 1. Naam van het gegevenselement `Page Name`
 1. Gebruik **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** om naar de waarde in de gegevenslaag van Luma te wijzen: `adobeDataLayer.0.page.name`
@@ -171,7 +171,7 @@ Voordat u XDM-velden vult, legt u eerst de gegevenspunten vast die u nodig hebt 
 
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ het Element van Gegevens van de Naam van de Pagina ](assets/data-element-pageName.png)
+   ![&#x200B; het Element van Gegevens van de Naam van de Pagina &#x200B;](assets/data-element-pageName.png)
 
 Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
@@ -233,7 +233,7 @@ Maak deze aanvullende gegevenselementen door dezelfde stappen uit te voeren:
 
 De gegevenselementen u enkel creeerde zullen worden gebruikt om een voorwerp XDM (voor de toepassingen van het Platform) en een gegevensvoorwerp (voor Analytics, Doel, en Audience Manager) te bouwen. Deze objecten hebben hun eigen speciale gegevenselementen, **[!UICONTROL Variable]** gegevenselementen, die u heel gemakkelijk kunt maken.
 
-Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aan het schema u in [ creeerde vormt een schema ](configure-schemas.md) les:
+Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aan het schema u in [&#x200B; creeerde vormt een schema &#x200B;](configure-schemas.md) les:
 
 1. Selecteren **[!UICONTROL Add Data element]**
 1. Geef uw gegevenselement een naam `XDM Variable`. Het wordt aanbevolen om de gegevenselementen die specifiek zijn voor XDM, vooraf in te stellen op &quot;XDM&quot; om de eigenschap tag beter te organiseren
@@ -244,7 +244,7 @@ Om het Variabele gegevenselement voor XDM tot stand te brengen, koppelt u het aa
 1. Selecteer in dit geval de juiste **[!UICONTROL Schema]** `Luma Web Event Data` .
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ Variabel gegevenselement voor XDM ](assets/analytics-tags-data-element-xdm-variable.png)
+   ![&#x200B; Variabel gegevenselement voor XDM &#x200B;](assets/analytics-tags-data-element-xdm-variable.png)
 
 Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
 
@@ -256,7 +256,7 @@ Maak vervolgens het gegevenselement Variabele voor het gegevensobject:
 1. Selecteer de Experience Cloud-oplossingen die u wilt implementeren als onderdeel van deze zelfstudie
 1. Selecteren **[!UICONTROL Save]**
 
-   ![ Variabel gegevenselement voor gegevensvoorwerp ](assets/data-element-data-variable.png)
+   ![&#x200B; Variabel gegevenselement voor gegevensvoorwerp &#x200B;](assets/data-element-data-variable.png)
 
 
 Aan het einde van deze stappen moeten de volgende gegevenselementen worden gemaakt:
@@ -277,4 +277,4 @@ Met deze gegevenselementen op zijn plaats, bent u bereid om gegevens naar Platfo
 
 >[!NOTE]
 >
->Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [ Communautaire besprekingspost van Experience League te delen ](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe Experience Platform Web SDK. Als u vragen hebt, algemene terugkoppelen wilt delen, of suggesties over toekomstige inhoud hebben, gelieve hen op deze [&#x200B; Communautaire besprekingspost van Experience League te delen &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

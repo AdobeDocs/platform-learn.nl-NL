@@ -19,7 +19,7 @@ Nadat u uw implementatie van het Doel van at.js aan het Web SDK van het Platform
 * Reviseer publiek en profielscripts om ervoor te zorgen dat deze compatibel zijn met Platform Web SDK
 * Ervoor zorgen dat integratie met Adobe- of externe toepassingen correct werkt
 
-Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur en -functies. U kunt de onderstaande tabellen als beginpunt gebruiken en items toevoegen die uniek zijn voor uw implementatie. De [ het Zuiveren pagina ](debugging.md) van dit leerprogramma toont u hulpmiddelen u kunt gebruiken om met deze bevestiging te helpen.
+Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur en -functies. U kunt de onderstaande tabellen als beginpunt gebruiken en items toevoegen die uniek zijn voor uw implementatie. De [&#x200B; het Zuiveren pagina &#x200B;](debugging.md) van dit leerprogramma toont u hulpmiddelen u kunt gebruiken om met deze bevestiging te helpen.
 
 ## Technische validatie
 
@@ -92,8 +92,8 @@ Elke implementatie van het Doel is afhankelijk van de gebruikte sitearchitectuur
 
 Na het uitvoeren van de bevestigingsstappen hierboven, kunt u erop vertrouwen dat de implementatie van het Web SDK van het Platform klaar is om aan productie te bewegen.
 
-Daarna, leer hoe te [ een implementatie van het Doel problemen oplossen gebruikend het Web SDK van het Platform ](debugging.md).
+Daarna, leer hoe te [&#x200B; een implementatie van het Doel problemen oplossen gebruikend het Web SDK van het Platform &#x200B;](debugging.md).
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.
+>We helpen u graag succesvol te zijn met uw doelmigratie van at.js naar Web SDK. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463) te posten.

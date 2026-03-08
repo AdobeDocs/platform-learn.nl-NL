@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Query Service-API
 
-Leer hoe u query&#39;s schrijft en uitvoert, planningquery&#39;s maakt en een querysjabloon maakt met de Adobe Experience Platform Query Service API. Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
+Leer hoe u query&#39;s schrijft en uitvoert, planningquery&#39;s maakt en een querysjabloon maakt met de Adobe Experience Platform Query Service API. Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)

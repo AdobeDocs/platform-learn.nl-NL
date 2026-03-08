@@ -35,5 +35,5 @@ Leer hoe u de bronconnector voor Marketo configureert met behulp van de standaar
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 Raadpleeg de volgende documentatie voor meer informatie:
-* [ de documentatie van de de bronschakelaar van Marketo Engage ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [ creeer een bronnen dataflow gebruikend malplaatjes in UI ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [&#x200B; de documentatie van de de bronschakelaar van Marketo Engage &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [&#x200B; creeer een bronnen dataflow gebruikend malplaatjes in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

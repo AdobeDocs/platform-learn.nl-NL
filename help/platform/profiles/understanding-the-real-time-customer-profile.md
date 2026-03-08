@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van het realtime klantprofiel
 
-In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen van klanten samenstelt en bijwerkt en hoe u deze profielen kunt openen en gebruiken. Voor meer informatie, gelieve de [ documentatie van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl) te bezoeken.
+In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen van klanten samenstelt en bijwerkt en hoe u deze profielen kunt openen en gebruiken. Voor meer informatie, gelieve de [&#x200B; documentatie van het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
@@ -193,7 +193,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert ` </a>
+                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert &grave; </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een specifiek kenmerk van een profiel kunt bijwerken met de functie 'upsert' van Adobe Experience Platform.</p>
                 </div>

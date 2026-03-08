@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Klassen maken
 
-In deze video ziet u hoe u klassen maakt in Adobe Experience Platform voor gebruik in XDM-schema&#39;s (Experience Data Model). Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
+In deze video ziet u hoe u klassen maakt in Adobe Experience Platform voor gebruik in XDM-schema&#39;s (Experience Data Model). Voor meer informatie, gelieve de [&#x200B; schemadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)

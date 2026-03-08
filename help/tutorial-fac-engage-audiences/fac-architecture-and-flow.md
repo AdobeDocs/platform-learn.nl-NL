@@ -25,6 +25,6 @@ Dit verstrekt organisaties ook de vereiste Composable architectuur, die reeds de
 
 Het staat ondernemingen toe om informatie snel te verwerken die in één of meerdere gegevenspakhuizen wordt opgeslagen. Het verwijdert de noodzaak om gegevens in te voeren naar Adobe Experience. Bovendien, verleent het toegang tot nieuwe datasets die in de pakhuizen van ondernemingsgegevens verblijven maar tot nu toe ontoegankelijk voor de werkschema&#39;s van de klantenervaring zijn geweest. Voorbeelden zijn bijvoorbeeld historische transacties of persoonlijke gegevens die op geaggregeerd publieksniveau nuttig zullen zijn voor de betrokkenheid van klanten.
 
-![ fac-architectuur ](assets/fac-architecture.png)
+![&#x200B; fac-architectuur &#x200B;](assets/fac-architecture.png)
 
-Nu zullen wij zich op het creëren van de Verbinding van a [ Data Warehouse ](data-warehouse-connection.md) bewegen.
+Nu zullen wij zich op het creëren van de Verbinding van a [&#x200B; Data Warehouse &#x200B;](data-warehouse-connection.md) bewegen.

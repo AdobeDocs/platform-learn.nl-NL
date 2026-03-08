@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Schema-veldgroepen maken
 
-In deze video ziet u hoe u groepen schemavelden maakt in Adobe Experience Platform. De het gebiedsgroepen van het schema zijn herbruikbare componenten die de meeste gebieden in schema&#39;s van het Model van Gegevens van de Ervaring (XDM) bepalen. Voor meer informatie, gelieve de [ schemadocumentatie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
+In deze video ziet u hoe u groepen schemavelden maakt in Adobe Experience Platform. De het gebiedsgroepen van het schema zijn herbruikbare componenten die de meeste gebieden in schema&#39;s van het Model van Gegevens van de Ervaring (XDM) bepalen. Voor meer informatie, gelieve de [&#x200B; schemadocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27013?learn=on&enablevpops)

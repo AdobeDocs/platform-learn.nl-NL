@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Labels toewijzen aan analysegegevens voor privacyverzoeken
 
-Leer het proces om de etiketten van de Privacy van Gegevens aan de variabelen van de Analyse toe te voegen, met inbegrip van een onderverdeling van wat elk etikettype en wanneer om hen te gebruiken betekent. Voor meer informatie, gelieve de [ documentatie van de Diensten van de Privacy ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
+Leer het proces om de etiketten van de Privacy van Gegevens aan de variabelen van de Analyse toe te voegen, met inbegrip van een onderverdeling van wat elk etikettype en wanneer om hen te gebruiken betekent. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)

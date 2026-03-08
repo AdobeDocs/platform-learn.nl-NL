@@ -33,7 +33,7 @@ Voer `show tables;` in uw **bevel-lijn PSQL interface** uit. (vergeet niet uw op
 
 Kopieer de opdracht `show tables;` en plak deze bij de prompt:
 
-![ bevel-herinnering-show-tables.png ](./images/commandpromptshowtables.png)
+![&#x200B; bevel-herinnering-show-tables.png &#x200B;](./images/commandpromptshowtables.png)
 
 Het volgende resultaat wordt weergegeven:
 
@@ -57,7 +57,7 @@ Druk op de dubbelepunten op de spatiebalk om de volgende pagina van de resultaat
 
 Elke dataset in AEP heeft zijn overeenkomstige lijst van de Dienst van de Vraag. U kunt de lijst van een dataset via Datasets UI vinden:
 
-![ ui-dataset-tablename.png ](./images/uidatasettablename.png)
+![&#x200B; ui-dataset-tablename.png &#x200B;](./images/uidatasettablename.png)
 
 De tabel `demo_system_event_dataset_for_website_global_v1_1` is de tabel Query Service die overeenkomt met de gegevensset `Demo System - Event Schema for Website (Global v1.1)` .
 
@@ -140,19 +140,19 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Ga terug naar uw Adobe Experience Platform UI (zou open in uw browser moeten zijn) of aan [ Adobe Experience Platform ](https://experience.adobe.com/platform) navigeren.
+Ga terug naar uw Adobe Experience Platform UI (zou open in uw browser moeten zijn) of aan [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform) navigeren.
 
 Selecteer **Schema&#39;s**, ga `Demo System - Event Schema for Website` op het **onderzoek** gebied in en klik om het schema `Demo System - Event Schema for Website (Global v1.1) Schema` te openen.
 
-![ browse-schema.png ](./images/browseschema.png)
+![&#x200B; browse-schema.png &#x200B;](./images/browseschema.png)
 
 Onderzoek het model XDM voor **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**, door op een voorwerp te klikken. Breid de boom voor **placecontext**, **geo** en **schema** uit. Wanneer u de daadwerkelijke attributen **lengtegraad** selecteert, zult u de volledige weg in de benadrukte rode doos zien. Als u het pad van het kenmerk wilt kopiëren, klikt u op het pictogram van het kopieerpad.
 
-![ onderzoek-schema-voor-weg.png ](./images/exploreschemaforpath.png)
+![&#x200B; onderzoek-schema-voor-weg.png &#x200B;](./images/exploreschemaforpath.png)
 
 De schakelaar aan uw notitieblok/steunen en verwijdert **your_attribute_path_here** uit de eerste lijn. Plaats uw curseur na **uitgezocht** op de eerste lijn en deeg (CTRL-V).
 
-![ onderzoek-schema-voor-weg.png ](./images/exploreschemaforpath1.png)
+![&#x200B; onderzoek-schema-voor-weg.png &#x200B;](./images/exploreschemaforpath1.png)
 
 Kopieer de gewijzigde verklaring en kleef het bij de herinnering in uw **bevel-lijn PSQL interface** en de slag gaat binnen.
 
@@ -172,8 +172,8 @@ limit 1;
 
 ## Volgende stappen
 
-Ga naar [ 2.1.4 Vragen, vragen, vragen... en klonen analyse ](./ex4.md){target="_blank"}
+Ga naar [&#x200B; 2.1.4 Vragen, vragen, vragen... en klonen analyse &#x200B;](./ex4.md){target="_blank"}
 
-Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
+Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
 
-Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}

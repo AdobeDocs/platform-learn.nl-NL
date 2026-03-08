@@ -20,4 +20,4 @@ Bedankt dat je tijd hebt geïnvesteerd in het leren over Adobe GenStudio for Per
 
 Ga terug naar <!--[GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}-->
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

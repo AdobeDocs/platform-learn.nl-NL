@@ -17,7 +17,7 @@ ht-degree: 0%
 # De gegevens van uw klant opladen voor elektrificatieervaringen
 
 Omnichannel-gegevens zijn een essentieel ingrediënt van energieke klantprofielen die door marketers worden gebruikt om activering te organiseren en de resulterende klantritten te meten. Organisaties staan echter voor uitdagingen bij het beheer van de kwaliteit, schaal en diversiteit van deze gegevens. Ze vereisen gestroomlijnde oplossingen om de impact van gegevens van lage kwaliteit te beperken, tijd tot waarde te beperken en rendement te vermenigvuldigen door dezelfde gegevens te gebruiken voor een groot aantal gebruiksgevallen.
-Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
+Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 In deze video wordt het volgende besproken:
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.
+>Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen &#x200B;](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.

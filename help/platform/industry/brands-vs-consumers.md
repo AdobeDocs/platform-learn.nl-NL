@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Een overzicht van twee percepties - merken versus consumenten
 
-Tegenwoordig zijn marketers in de wirwar van informatie die gewijd is aan identiteitspraktijken. En slechts 37% van de marketingprofessionals zei dat ze erg voorbereid zijn op een toekomst zonder koeien, volgens recent onderzoek van Adobe en [!DNL Advanis] . In dit webinar onthult Adobe het begrip en de gereedheid van adverteerders en uitgevers voor een kokloze toekomst, de impact op hun gebruiksgevallen en hun perceptie van het bredere ecosysteem. Om deze video aan te vullen, kunt u ook [ een whitepaper ](assets/whitepaper-a-tale-of-two-perceptions.pdf) downloaden
+Tegenwoordig zijn marketers in de wirwar van informatie die gewijd is aan identiteitspraktijken. En slechts 37% van de marketingprofessionals zei dat ze erg voorbereid zijn op een toekomst zonder koeien, volgens recent onderzoek van Adobe en [!DNL Advanis] . In dit webinar onthult Adobe het begrip en de gereedheid van adverteerders en uitgevers voor een kokloze toekomst, de impact op hun gebruiksgevallen en hun perceptie van het bredere ecosysteem. Om deze video aan te vullen, kunt u ook [&#x200B; een whitepaper &#x200B;](assets/whitepaper-a-tale-of-two-perceptions.pdf) downloaden
 
 >[!VIDEO](https://video.tv.adobe.com/v/332060/?learn=on&enablevpops)
 

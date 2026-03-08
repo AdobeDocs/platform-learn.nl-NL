@@ -34,7 +34,7 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 | Afhankelijkheden | Alleen afhankelijk van Mobile Core SDK | Afhankelijk van de Mobile Core en Edge Network SDK |
 | Bibliotheekfunctionaliteit | Ondersteunt het ophalen van inhoud van alleen Adobe Target | Ondersteuning voor het ophalen van inhoud van Adobe Target en de beslissing over aanbiedingen |
 | Verzoeken | De vraag van het doel is grotendeels onafhankelijk van andere netwerkvraag | De het netwerkvraag van het doel wordt een rij gevormd samen met netwerkvraag naar andere op Edge-Gebaseerde oplossingen zoals Overseinen in Edge SDK en serieel uitgevoerd. |
-| Edge Network | Gebruikt de de serverwaarde van het Doel of Adobe Experience Cloud Edge Network met de cliëntcode (clientcode.tt.omtrdc.net), allebei die in de [ configuratie van het Doel ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in de Inzameling UI van Gegevens wordt gespecificeerd | Gebruikt het het netwerkdomein van Edge in de configuratie van Adobe Experience Platform [ wordt gespecificeerd Edge Network ](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) in de inzameling UI die van Gegevens. |
+| Edge Network | Gebruikt de de serverwaarde van het Doel of Adobe Experience Cloud Edge Network met de cliëntcode (clientcode.tt.omtrdc.net), allebei die in de [&#x200B; configuratie van het Doel &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in de Inzameling UI van Gegevens wordt gespecificeerd | Gebruikt het het netwerkdomein van Edge in de configuratie van Adobe Experience Platform [&#x200B; wordt gespecificeerd Edge Network &#x200B;](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) in de inzameling UI die van Gegevens. |
 | Standaardterminologie | mbox, TargetParameters | DecisionScope, Map (Android)/dictionary (iOS) voor Target-parameters |
 | Standaardinhoud | Staat het overgaan van cliënt-kant standaardinhoud in TargetRequest toe die is teruggekeerd als de netwerkvraag ontbreekt of in fout resulteert. | Hiermee wordt het doorgeven van standaardinhoud aan de clientzijde niet toegestaan. Retourneert geen inhoud als de netwerkaanroep mislukt of als er een fout optreedt. |
 | Doelparameters | Hiermee worden algemene TargetParameters per aanvraag en verschillende TargetParameters per mbox doorgegeven | Staat het overgaan van globale TargetParameters per slechts verzoek toe |
@@ -85,9 +85,9 @@ Na het herzien van de informatie hieronder en het beoordelen van uw huidige tech
 
 Het volgende diagram zou u moeten helpen de gegevensstroom begrijpen gebruikend de uitbreiding van Offer Decisioning en van het Doel.
 
-![ Adobe Target Edge die met cliënt-kant Mobiele SDK ](assets/diagram.png) beslist
+![&#x200B; Adobe Target Edge die met cliënt-kant Mobiele SDK &#x200B;](assets/diagram.png) beslist
 
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

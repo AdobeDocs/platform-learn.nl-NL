@@ -59,93 +59,93 @@ Voorbeeld:
 >
 >Als u deze zelfstudie volgt als onderdeel van een persoonlijke geleide workshop of een training op aanvraag, hebt u waarschijnlijk al toegang tot een Microsoft Azure Storage-account. In dat geval hoeft u geen eigen account te maken. Gebruik de account die u hebt ontvangen als onderdeel van de training.
 
-Ga naar [ https://portal.azure.com ](https://portal.azure.com){target="_blank"} en login met uw rekening van Azure. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om een Azure-account te maken.
+Ga naar [&#x200B; https://portal.azure.com &#x200B;](https://portal.azure.com){target="_blank"} en login met uw rekening van Azure. Als je er geen hebt, gebruik dan je persoonlijke e-mailadres om een Azure-account te maken.
 
-![ de Opslag van Azure ](./images/02azureportalemail.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/02azureportalemail.png){zoomable="yes"}
 
 Na succesvolle login zou u het volgende scherm moeten zien:
 
-![ de Opslag van Azure ](./images/03azureloggedin.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/03azureloggedin.png){zoomable="yes"}
 
 Op het linkermenu uitgezocht **Alle Middelen**, verschijnt het het abonnementsscherm van Azure als u nog niet wordt ingetekend.
 
 Als u niet wordt geabonneerd, uitgezochte **Begin met een vrije Proef van Azure**.
 
-![ de Opslag van Azure ](./images/04azurestartsubscribe.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/04azurestartsubscribe.png){zoomable="yes"}
 
 Vul het Azure-abonnementsformulier in en geef uw mobiele telefoon en creditcard op voor activering (u hebt 30 dagen een gratis label en u wordt geen bedrag in rekening gebracht, tenzij u een upgrade uitvoert).
 
 Als het abonnementsproces is voltooid, kunt u het beste gaan.
 
-![ de Opslag van Azure ](./images/06azuresubscriptionok.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/06azuresubscriptionok.png){zoomable="yes"}
 
 ## 1.1.2.3 Azure-opslagaccount maken
 
 Onderzoek naar `storage account` en selecteer dan **rekeningen van de Opslag**.
 
-![ de Opslag van Azure ](./images/azs1.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs1.png){zoomable="yes"}
 
 Selecteer **+ creëren**.
 
-![ de Opslag van Azure ](./images/azs2.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs2.png){zoomable="yes"}
 
-Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a ****.
+Selecteer uw **Abonnement** en selecteer (of creeer) de groep van het Middel van a **&#x200B;**.
 
 Onder **naam van de de rekeningsrekening van de Opslag** gebruik `--aepUserLdap--`.
 
 Selecteer **Overzicht + creeer**.
 
-![ de Opslag van Azure ](./images/azs3.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs3.png){zoomable="yes"}
 
 Selecteer **creeer**.
 
-![ de Opslag van Azure ](./images/azs4.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs4.png){zoomable="yes"}
 
 Na bevestiging selecteert **ga naar middel**.
 
-![ de Opslag van Azure ](./images/azs5.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs5.png){zoomable="yes"}
 
 Je Azure Storage-account is nu klaar om te worden gebruikt.
 
-![ de Opslag van Azure ](./images/azs6.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs6.png){zoomable="yes"}
 
 Selecteer **Opslag van Gegevens**, en ga dan naar **Containers**. Selecteer **+ Container**.
 
-![ de Opslag van Azure ](./images/azs7.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs7.png){zoomable="yes"}
 
 Het gebruik `--aepUserLdap--` voor de naam en selecteert **creeert**.
 
-![ de Opslag van Azure ](./images/azs8.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs8.png){zoomable="yes"}
 
 Uw container is nu klaar om te worden gebruikt.
 
-![ de Opslag van Azure ](./images/azs9.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/azs9.png){zoomable="yes"}
 
 ## 1.1.2.4 Azure Storage Explorer installeren
 
-[ de Ontdekkingsreiziger van de Opslag van Microsoft Azure van de Download om uw dossiers ](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
+[&#x200B; de Ontdekkingsreiziger van de Opslag van Microsoft Azure van de Download om uw dossiers &#x200B;](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"} te beheren. Selecteer de juiste versie voor uw specifieke besturingssysteem, download en installeer deze.
 
-![ de Opslag van Azure ](./images/az10.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az10.png){zoomable="yes"}
 
 Open de toepassing en selecteer **Teken binnen met Azure**.
 
-![ de Opslag van Azure ](./images/az11.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az11.png){zoomable="yes"}
 
 Selecteer **Abonnement**.
 
-![ de Opslag van Azure ](./images/az12.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az12.png){zoomable="yes"}
 
 Selecteer **Azure** en dan **daarna**.
 
-![ de Opslag van Azure ](./images/az13.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az13.png){zoomable="yes"}
 
 Selecteer uw Microsoft Azure-account en voltooi het verificatieproces.
 
-![ de Opslag van Azure ](./images/az14.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az14.png){zoomable="yes"}
 
 Na de verificatie wordt dit bericht weergegeven.
 
-![ de Opslag van Azure ](./images/az15.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az15.png){zoomable="yes"}
 
 Terug in de toepassing van de Ontdekkingsreiziger van de Opslag van Microsoft Azure, selecteer uw abonnement en kies **Open Ontdekkingsreiziger**.
 
@@ -153,19 +153,19 @@ Terug in de toepassing van de Ontdekkingsreiziger van de Opslag van Microsoft Az
 >
 >Als uw rekening niet wordt getoond, klik het **versnelling** pictogram naast uw e-mailadres en selecteer **niet-filter**.
 
-![ de Opslag van Azure ](./images/az16.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az16.png){zoomable="yes"}
 
 Uw opslagrekening verschijnt onder **Rekeningen van de Opslag**.
 
-![ de Opslag van Azure ](./images/az17.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az17.png){zoomable="yes"}
 
 Open **Containers van de Klodder** en selecteer dan de container u in de vorige oefening creeerde.
 
-![ de Opslag van Azure ](./images/az18.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az18.png){zoomable="yes"}
 
 ## 1.1.2.5 Handmatig bestanden uploaden en een afbeeldingsbestand gebruiken als stijlverwijzing
 
-Upload een beelddossier van uw keus of [ dit dossier ](./images/gradient.jpg){target="_blank"} in de container.
+Upload een beelddossier van uw keus of [&#x200B; dit dossier &#x200B;](./images/gradient.jpg){target="_blank"} in de container.
 
 >[!NOTE]
 >
@@ -174,40 +174,40 @@ Upload een beelddossier van uw keus of [ dit dossier ](./images/gradient.jpg){ta
 >- image/png
 >- image/webpagina
 
-![ de Opslag van Azure ](./images/gradient.jpg)
+![&#x200B; de Opslag van Azure &#x200B;](./images/gradient.jpg)
 
 Na het uploaden kunt u het zien in uw container:
 
-![ de Opslag van Azure ](./images/az19.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az19.png){zoomable="yes"}
 
 Klik op `gradient.jpg` met de rechtermuisknop aan en selecteer dan **krijgen de Gedeelde Handtekening van de Toegang**.
 
-![ de Opslag van Azure ](./images/az20.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az20.png){zoomable="yes"}
 
 Onder **Toestemmingen**, slechts **Gelezen** wordt vereist. Selecteer **creeer**.
 
-![ de Opslag van Azure ](./images/az21.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az21.png){zoomable="yes"}
 
 Kopieer uw vooraf ondertekende URL voor dit afbeeldingsbestand voor de volgende API-aanvraag naar Firefly.
 
-![ de Opslag van Azure ](./images/az22.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az22.png){zoomable="yes"}
 
 Terug in Postman open het verzoek **POST - Firefly - T2I (styleref) V3**.
 Dit verschijnt in **Lichaam**.
 
-![ de Opslag van Azure ](./images/az23.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az23.png){zoomable="yes"}
 
 Vervang placeholder URL met presigned URL voor uw beelddossier en selecteer **verzend**.
 
-![ de Opslag van Azure ](./images/az24.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az24.png){zoomable="yes"}
 
 Open de reactie Firefly Services nieuwe afbeelding in uw browser.
 
-![ de Opslag van Azure ](./images/az25.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az25.png){zoomable="yes"}
 
 Er wordt een andere afbeelding weergegeven bij `horses in a field` , maar deze keer lijkt de stijl op het afbeeldingsbestand dat u als stijlverwijzing hebt opgegeven.
 
-![ de Opslag van Azure ](./images/az26.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az26.png){zoomable="yes"}
 
 ## 1.1.2.6 Programmatische bestandsupload
 
@@ -215,7 +215,7 @@ Om programmatic dossier te gebruiken uploadt met de Rekeningen van de Opslag van
 
 In de Ontdekkingsreiziger van de Opslag van Azure, klik uw container met de rechtermuisknop aan, en selecteer **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-![ de Opslag van Azure ](./images/az27.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az27.png){zoomable="yes"}
 
 Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
@@ -227,37 +227,37 @@ Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
 Selecteer **creeer**.
 
-![ de Opslag van Azure ](./images/az28.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az28.png){zoomable="yes"}
 
 Na het ontvangen van uw **Gedeelde Ondertekening van de Toegang**, uitgezochte **Exemplaar** om URL te kopiëren.
 
-![ de Opslag van Azure ](./images/az29.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az29.png){zoomable="yes"}
 
 Gebruik **SAS-token URL** om een dossier in uw Rekening van de Opslag van Azure te uploaden.
 
 Terug in Postman, selecteer de omslag **FF - de Tech Insiders van Firefly Services**, dan uitgezocht **..** op de **Firefly** omslag, en selecteer dan **verzoek** toevoegen.
 
-![ de Opslag van Azure ](./images/az30.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az30.png){zoomable="yes"}
 
 Verander de naam van het lege verzoek aan **uploadt dossier aan de Rekening van de Opslag van Azure**, verander het **Type van Verzoek** in **PUT** en kleef SAS-token URL in de sectie URL, dan uitgezochte **Lichaam**.
 
-![ de Opslag van Azure ](./images/az31.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az31.png){zoomable="yes"}
 
-Daarna, selecteer een dossier van uw lokale machine of gebruik een ander beelddossier dat [ hier ](./images/gradient2-p.jpg){target="_blank"} wordt gevestigd.
+Daarna, selecteer een dossier van uw lokale machine of gebruik een ander beelddossier dat [&#x200B; hier &#x200B;](./images/gradient2-p.jpg){target="_blank"} wordt gevestigd.
 
-![ dossier van de Gradiënt ](./images/gradient2-p.jpg)
+![&#x200B; dossier van de Gradiënt &#x200B;](./images/gradient2-p.jpg)
 
 In **Lichaam**, selecteer **binair** toen **Uitgezochte dossier**, dan uitgezocht **+ Nieuw dossier van lokale machine**.
 
-![ de Opslag van Azure ](./images/az32.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az32.png){zoomable="yes"}
 
 Selecteer uw dossier van keus en selecteer **Open**.
 
-![ de Opslag van Azure ](./images/az33.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az33.png){zoomable="yes"}
 
 Geef vervolgens de bestandsnaam op die u in uw Azure Storage-account wilt gebruiken door de cursor vóór het vraagteken **te plaatsen?** in de URL als volgt:
 
-![ de Opslag van Azure ](./images/az34.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az34.png){zoomable="yes"}
 
 De URL ziet er momenteel als volgt uit, maar moet worden gewijzigd.
 
@@ -267,7 +267,7 @@ Wijzig de bestandsnaam in `gradient2-p.jpg` en wijzig de URL zo en voeg de besta
 
 `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-![ de Opslag van Azure ](./images/az34a.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az34a.png){zoomable="yes"}
 
 Daarna, ga aan **Kopballen** om een nieuwe kopbal manueel als dit toe te voegen:
 
@@ -276,19 +276,19 @@ Daarna, ga aan **Kopballen** om een nieuwe kopbal manueel als dit toe te voegen:
 | `x-ms-blob-type` | `BlockBlob` |
 
 
-![ de Opslag van Azure ](./images/az35.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az35.png){zoomable="yes"}
 
 Ga naar **Vergunning** en plaats het **Type van Auth** aan **Geen Auth**, en selecteer **verzenden**.
 
-![ de Opslag van Azure ](./images/az36.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az36.png){zoomable="yes"}
 
 Vervolgens wordt deze lege reactie weergegeven in Postman, wat betekent dat het uploaden van het bestand is voltooid.
 
-![ de Opslag van Azure ](./images/az37.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az37.png){zoomable="yes"}
 
 In Azure Storage Explorer vernieuwt u de inhoud van uw map en wordt het nieuwe geüploade bestand weergegeven.
 
-![ de Opslag van Azure ](./images/az38.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.7 Programmatisch bestandsgebruik
 
@@ -298,7 +298,7 @@ Om dossiers van de Rekeningen van de Opslag van Azure programmatically op lange 
 
 Ga terug naar de Ontdekkingsreiziger van de Opslag van Azure, klik uw container met de rechtermuisknop aan en selecteer dan **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-![ de Opslag van Azure ](./images/az27.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az27.png){zoomable="yes"}
 
 Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
@@ -309,11 +309,11 @@ Plaats **Vervaltijd** aan 1 jaar van nu.
 
 Selecteer **creeer**.
 
-![ de Opslag van Azure ](./images/az100.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az100.png){zoomable="yes"}
 
 Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token voor de lange termijn met leesmachtigingen op te halen.
 
-![ de Opslag van Azure ](./images/az101.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az101.png){zoomable="yes"}
 
 Uw URL moet er als volgt uitzien:
 
@@ -329,7 +329,7 @@ U kunt enkele waarden afleiden van de bovenstaande URL:
 
 Ga terug naar de Ontdekkingsreiziger van de Opslag van Azure, klik uw container met de rechtermuisknop aan en selecteer **krijgen de Gedeelde Ondertekening van de Toegang**.
 
-![ de Opslag van Azure ](./images/az27.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az27.png){zoomable="yes"}
 
 Onder **Toestemmingen**, selecteer de volgende vereiste toestemmingen:
 
@@ -343,11 +343,11 @@ Plaats de **Vervaltijd** aan 1 jaar van nu.
 
 Selecteer **creeer**.
 
-![ de Opslag van Azure ](./images/az102.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az102.png){zoomable="yes"}
 
 Kopieer de URL en noteer deze in een bestand op uw computer om uw SAS-token op lange termijn met lees- en schrijfmachtigingen op te halen.
 
-![ de Opslag van Azure ](./images/az103.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az103.png){zoomable="yes"}
 
 Uw URL moet er als volgt uitzien:
 
@@ -375,7 +375,7 @@ Voor toekomstige API-interacties is de elementnaam het belangrijkste wat verande
 
 In Postman, uitgezochte **Milieu**, open **Alle variabelen** en selecteer **Milieu**.
 
-![ de Opslag van Azure ](./images/az104.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az104.png){zoomable="yes"}
 
 Creeer deze 4 variabelen in de lijst die wordt getoond en voor de kolommen **Aanvankelijke waarde** en **Huidige waarde**, ga uw specifieke persoonlijke waarden in.
 
@@ -386,7 +386,7 @@ Creeer deze 4 variabelen in de lijst die wordt getoond en voor de kolommen **Aan
 
 Selecteer **sparen**.
 
-![ de Opslag van Azure ](./images/az105.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az105.png){zoomable="yes"}
 
 ### Variabelen in PostBuster
 
@@ -401,15 +401,15 @@ Vervolgens moet u variabelen maken in PostBuster waarin de verschillende element
 
 Open Postbus. Selecteer **Milieu van de Basis** en klik dan **uitgeven** pictogram om het Milieu van de Basis te openen.
 
-![ de Opslag van Azure ](./images/pbbe1.png)
+![&#x200B; de Opslag van Azure &#x200B;](./images/pbbe1.png)
 
 Dan zie je 4 lege variabelen. Voer hier uw Azure-opslagaccountgegevens in.
 
-![ de Opslag van Azure ](./images/pbbe2.png)
+![&#x200B; de Opslag van Azure &#x200B;](./images/pbbe2.png)
 
 Het bestand voor de basisomgeving moet er nu zo uitzien. Klik **dicht**.
 
-![ de Opslag van Azure ](./images/pbbe3.png)
+![&#x200B; de Opslag van Azure &#x200B;](./images/pbbe3.png)
 
 ### Uw configuratie testen
 
@@ -417,7 +417,7 @@ In één van de vorige oefeningen, zag het **Lichaam** van uw verzoek **Firefly 
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-![ de Opslag van Azure ](./images/az24.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az24.png){zoomable="yes"}
 
 Wijzig de URL in:
 
@@ -425,20 +425,20 @@ Wijzig de URL in:
 
 Selecteer **verzenden** om de veranderingen te testen u aanbracht.
 
-![ de Opslag van Azure ](./images/az106.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az106.png){zoomable="yes"}
 
 Als de variabelen correct zijn geconfigureerd, wordt een beeld-URL geretourneerd.
 
-![ de Opslag van Azure ](./images/az107.png){zoomable="yes"}
+![&#x200B; de Opslag van Azure &#x200B;](./images/az107.png){zoomable="yes"}
 
 Open de URL van de afbeelding om uw afbeelding te controleren.
 
-![ de Opslag van Azure ](./images/az108.jpg)
+![&#x200B; de Opslag van Azure &#x200B;](./images/az108.jpg)
 
 ## Volgende stappen
 
-Ga naar [ Werkend met Photoshop APIs ](./ex3.md){target="_blank"}
+Ga naar [&#x200B; Werkend met Photoshop APIs &#x200B;](./ex3.md){target="_blank"}
 
-Ga terug naar [ Overzicht van Adobe Firefly Services ](./firefly-services.md){target="_blank"}
+Ga terug naar [&#x200B; Overzicht van Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
