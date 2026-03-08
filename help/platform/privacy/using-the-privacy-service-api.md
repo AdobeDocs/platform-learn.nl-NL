@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Leer hoe te om vraag aan API eindpunten, met inbegrip van lijsten en raadplegingen te maken, creërend een baanverzoek, en creërend een toestemmingsverzoek. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448879?captions=dut&learn=on&enablevpops)

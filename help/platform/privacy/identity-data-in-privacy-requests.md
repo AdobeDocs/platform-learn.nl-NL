@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Leer belangrijke concepten en besluiten met betrekking tot de controle van persoonsgegevens en het prepping overeenkomstig de privacybehoeften van het bedrijf. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447654?captions=dut&learn=on&enablevpops)

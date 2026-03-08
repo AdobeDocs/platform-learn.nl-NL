@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Gegevens-bij-rust encryptie beheren gebruikend uw eigen encryptiesleutels. Voor meer informatie, gelieve de [&#x200B; klant-geleide sleuteldocumentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=nl-NL) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3431110/?captions=dut&learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

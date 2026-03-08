@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in het datumpomeer zijn opgeslagen, verkennen, valideren en transformeren met behulp van SQL, met verbeterde mogelijkheden zoals gegevensuitvoer en planning die beschikbaar zijn via de gegevensinvoegtoepassing Distiller. Deze video biedt een overzicht van de kernfuncties om gebruikers te helpen begrijpen hoe u Query Service kunt gebruiken in verschillende platformgebaseerde toepassingen. Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464267?captions=dut&learn=on&enablevpops)
 
 ## Basisgebruik
 
@@ -35,7 +35,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Voer Vragen met de Dienst van de Vraag in" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Voer Vragen met de Dienst van de Vraag in"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470201?captions=dut&format=jpeg&nocache=1759180596408" alt="Voer Vragen met de Dienst van de Vraag in"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Gegevens valideren met Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Gegevens valideren met Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475331?captions=dut&format=jpeg&nocache=1759180596397" alt="Gegevens valideren met Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Afleiden gegevens met Data Distiller" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Afleiden gegevens met Data Distiller"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475298?captions=dut&format=jpeg&nocache=1759180596403" alt="Afleiden gegevens met Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Met Adobe Experience Platform Query Service kunnen gebruikers gegevens die in he
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="De gegevens van uw klant opladen voor elektrificatieervaringen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454948?captions=dut&format=jpeg&nocache=1759180596865" alt="De gegevens van uw klant opladen voor elektrificatieervaringen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

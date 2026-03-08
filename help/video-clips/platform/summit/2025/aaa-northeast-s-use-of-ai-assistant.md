@@ -20,4 +20,4 @@ ht-degree: 0%
 Ontdek hoe AAA Northeast de Medewerker van AI gebruikt om werkschema&#39;s te optimaliseren, tijd te besparen, en persoonlijke ervaringen voor hun leden te amberen.
 
 <!--  -->
->[!VIDEO](https://video.tv.adobe.com/v/3459307?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462081?captions=dut&learn=on&enablevpops=true)

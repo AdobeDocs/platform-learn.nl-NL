@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Deze video bespreekt u een overzichtsdiagram dat het vermogen van het Profiel van de Klant in real time van Adobe Experience Platform illustreert. Voor meer informatie, gelieve de [&#x200B; documentatie van het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463974?captions=dut&learn=on&enablevpops)

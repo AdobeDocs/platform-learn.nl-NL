@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Leer hoe u ingesloten gegevens kunt valideren met SQL-functies. Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/query/home) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475331?captions=dut&learn=on&enablevpops)

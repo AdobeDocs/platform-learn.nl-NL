@@ -18,4 +18,4 @@ ht-degree: 2%
 
 Leer hoe u de Privacy Service API instelt en verifieert. Voor meer informatie, gelieve de [&#x200B; documentatie van de Diensten van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl) te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447182?captions=dut&learn=on&enablevpops)

@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Leer over de rollen, de fasen, en de belangrijkste resultaten betrokken bij een succesvol project van Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430454?captions=dut&learn=on&enablevpops)
 

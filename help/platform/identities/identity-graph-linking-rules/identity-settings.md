@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Leer hoe u regels voor identiteitsgrafieken in Adobe Experience Platform kunt inschakelen en configureren om nauwkeurige klantprofielen te maken. Deze video behandelt naamruimteprioritering, unieke instellingen en validatie, zodat u deze functies effectief kunt gebruiken in uw sandboxen. Voor meer informatie, zie de [&#x200B; gids UI van de montages van de Identiteit &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
 
->[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475968/?captions=dut&learn=on&enablevpops)

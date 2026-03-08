@@ -20,4 +20,4 @@ ht-degree: 0%
 Bekijk hoe Adobe Audience Agent proactief de gezondheid van het publiek controleert, problemen identificeert en actiemogelijkheden aandraagt om betrokkenheid te optimaliseren.
 
 <!-- 65_S653_3442539_53_audience-agent-proactive-audience-health-monitoring -->
->[!VIDEO](https://video.tv.adobe.com/v/3458184/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459754/?captions=dut&learn=on&enablevpops=true)
