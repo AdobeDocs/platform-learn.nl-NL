@@ -91,7 +91,7 @@ Handhaving van het governancebeleid is duidelijk een essentieel onderdeel van he
 
 ## Aanvullende bronnen
 
-* [&#x200B; documentatie van het Beheer van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
+* [&#x200B; documentatie van het Beheer van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL)
 * [&#x200B; Verwijzing van de Dienst API van de Dataset &#x200B;](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
 * [&#x200B; de Verwijzing van de Dienst API van het Beleid van het Beleid van het Beheer &#x200B;](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 

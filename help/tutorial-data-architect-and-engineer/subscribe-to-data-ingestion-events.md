@@ -81,7 +81,7 @@ Dat is het voor nu, zult u meer over deze berichten in de volgende lessen leren 
 ## Aanvullende bronnen
 
 * [&#x200B; WebHaak.site &#x200B;](https://webhook.site/)
-* [&#x200B; de kennisgevingsdocumentatie van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [&#x200B; de kennisgevingsdocumentatie van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=nl-NL)
 * [&#x200B; Begonnen het worden met de documentatie van Adobe I/O Events &#x200B;](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, laten eindelijk beginnen [&#x200B; het opnemen gegevens &#x200B;](ingest-batch-data.md)!

@@ -23,7 +23,7 @@ In deze oefening zult u API vraag uitvoeren om vraagmalplaatjes en vraagprogramm
 
 ## Documentatie
 
-- [&#x200B; Hulp van de Dienst van de Vraag van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [&#x200B; Hulp van de Dienst van de Vraag van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=nl-NL)
 - [&#x200B; de Dienst API van de Vraag &#x200B;](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## Query Service-API

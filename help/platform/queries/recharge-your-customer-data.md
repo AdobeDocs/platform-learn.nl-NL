@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen &#x200B;](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.
+>Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen &#x200B;](https://business.adobe.com/nl/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.

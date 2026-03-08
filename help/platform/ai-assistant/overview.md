@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # AI-assistent
 
-Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home) te bezoeken.
+Leer wat u kunt doen met AI Assistant in Adobe Experience Platform-toepassingen zoals Real-Time Customer Data Platform, Journey Optimizer en Customer Journey Analytics. Voor meer informatie, gelieve de [&#x200B; AI Hulp documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ai-assistant/home) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 
@@ -111,15 +111,15 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
 
     {cta = Watch}
 
-* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
-* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
-* audience-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
-* journey-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
-* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
-* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
+* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/nl/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
+* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/nl/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
+* audience-agent-overview.md{image = https://experienceleague.adobe.com/nl/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
+* journey-agent-overview.md{image = https://experienceleague.adobe.com/nl/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
+* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/nl/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
+* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/nl/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
+* https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
+* https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
+* https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -128,7 +128,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-overview.md" title="Agent Orchestrator - Overzicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Agent Orchestrator - Overzicht"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Agent Orchestrator - Overzicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-ui.md" title="De Adobe Experience Platform Agent Orchestrator-interface gebruiken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="De Adobe Experience Platform Agent Orchestrator-interface gebruiken"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="De Adobe Experience Platform Agent Orchestrator-interface gebruiken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -174,7 +174,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-agent-overview.md" title="Audience Agent-overzicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Audience Agent-overzicht"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Audience Agent-overzicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -197,7 +197,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="journey-agent-overview.md" title="Journey Agent-overzicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Journey Agent-overzicht"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Journey Agent-overzicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-insights-agent-overview.md" title="Data Insights Agent - Overzicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Data Insights Agent - Overzicht"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Data Insights Agent - Overzicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -243,7 +243,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="experimentation-agent-overview.md" title="Experimentation Agent-overzicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Experimentation Agent-overzicht"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/nl/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Experimentation Agent-overzicht"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -265,7 +265,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Klantervaring van de volgende generatie en efficiëntie met Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Klantervaring van de volgende generatie en efficiëntie met Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476153/?format=jpeg&nocache=1770666473854" alt="Klantervaring van de volgende generatie en efficiëntie met Adobe Experience Platform Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -274,11 +274,11 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Klantervaring van de volgende generatie en efficiëntie met Adobe Experience Platform Agent Orchestrator"> de Ervaringen en de Efficiëntie van de Klant van de Volgende-Gen met Adobe Experience Platform Agent Orchestrator </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Klantervaring van de volgende generatie en efficiëntie met Adobe Experience Platform Agent Orchestrator"> de Ervaringen en de Efficiëntie van de Klant van de Volgende-Gen met Adobe Experience Platform Agent Orchestrator </a>
                     </p>
                     <p class="is-size-6">Experience Platform Agent Orchestrator is de drijvende kracht achter de intelligentie en redenering achter speciaal opgezette Adobe Experience Platform Agents, die hen in staat stellen complexe besluitvormings- en probleemoplossende taken op snelheid en schaal uit te voeren.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -288,7 +288,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Medewerkers op het werk - Doelgroepen en reizen creëren en activeren" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Medewerkers op het werk - Doelgroepen en reizen creëren en activeren" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479512/?format=jpeg&nocache=1770666473650" alt="Medewerkers op het werk - Doelgroepen en reizen creëren en activeren"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -297,11 +297,11 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Medewerkers op het werk - Doelgroepen en reizen creëren en activeren"> Agenten bij het werk - het creëren van en het activeren van publiek en reizen </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Medewerkers op het werk - Doelgroepen en reizen creëren en activeren"> Agenten bij het werk - het creëren van en het activeren van publiek en reizen </a>
                     </p>
                     <p class="is-size-6">Zie Audience Agent om inzicht te krijgen in het publiek en gebruiksklare doelgroepen te maken in enkele minuten. Bekijk vervolgens hoe Journey Agent de herinneringen voor natuurlijke talen verandert in meerstapse reizen, van publiekskwalificatie tot transkanaalactivering.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -311,7 +311,7 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" title="Het volgende tijdperk van experimenten - Hoe AI door een bureau wordt gestimuleerd om slimmer te testen en te groeien" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" title="Het volgende tijdperk van experimenten - Hoe AI door een bureau wordt gestimuleerd om slimmer te testen en te groeien" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476426/?format=jpeg&nocache=1770666473723" alt="Het volgende tijdperk van experimenten - Hoe AI door een bureau wordt gestimuleerd om slimmer te testen en te groeien"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -320,11 +320,11 @@ Ontvang opstelling met AI Medewerker en leer zijn basiseigenschappen.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" title="Het volgende tijdperk van experimenten - Hoe AI door een bureau wordt gestimuleerd om slimmer te testen en te groeien"> het Volgende tijdperk van Experimentatie - hoe de Agentische AI het Smarter Testen en de Groei van de Fusie is </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" title="Het volgende tijdperk van experimenten - Hoe AI door een bureau wordt gestimuleerd om slimmer te testen en te groeien"> het Volgende tijdperk van Experimentatie - hoe de Agentische AI het Smarter Testen en de Groei van de Fusie is </a>
                     </p>
                     <p class="is-size-6">Meld u aan bij ons voor een Experience League Live-sessie terwijl we Adobe Journey Optimizer Experimentation Accelerator onthullen — een nieuwe AI-eerste toepassing die is ontworpen om te transformeren hoe experimenteren, product- en groeiteams campagnes en klantreizen testen, leren en optimaliseren.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>
@@ -482,7 +482,7 @@ Los problemen op en open de kaartjes van de klantenzorg.
 
 <!-- CARDS
 * product-support-agent.md
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
+* https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -513,7 +513,7 @@ Los problemen op en open de kaartjes van de klantenzorg.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Vereenvoudig het oplossen van problemen en steun gevallenbeheer met de Agent van de Steun van het Product" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Vereenvoudig het oplossen van problemen en steun gevallenbeheer met de Agent van de Steun van het Product" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3477984/?format=jpeg&nocache=1770666474994" alt="Vereenvoudig het oplossen van problemen en steun gevallenbeheer met de Agent van de Steun van het Product"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -522,11 +522,11 @@ Los problemen op en open de kaartjes van de klantenzorg.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Vereenvoudig het oplossen van problemen en steun gevallenbeheer met de Agent van de Steun van het Product"> vereenvoudig het oplossen van problemen en steun gevalbeheer met de Agent van de Steun van het Product </a>
+                        <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Vereenvoudig het oplossen van problemen en steun gevallenbeheer met de Agent van de Steun van het Product"> vereenvoudig het oplossen van problemen en steun gevalbeheer met de Agent van de Steun van het Product </a>
                     </p>
                     <p class="is-size-6">De Product Support Agent wordt door Adobe Experience Platform Agent Orchestrator aangestuurd en is ontworpen voor deze teams in hun Adobe Experience Platform-toepassingen door een interactieve manier te bieden voor het oplossen van problemen, het opsporen van diagnoses en het doorverwijzen van problemen, waardoor snellere oplossingen en een hogere operationele efficiëntie mogelijk worden.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/nl/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold"> Controle </span>
                 </a>
             </div>

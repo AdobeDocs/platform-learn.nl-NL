@@ -23,7 +23,7 @@ Leer hoe u gegevens in real-time kunt streamen van een bron voor cloudopslag naa
 
 ## Aanvullende bronnen
 
-* [&#x200B; creeer een bron van Amazon Kinesis verbinding in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [&#x200B; creeer een Bron van de Hubs van de Gebeurtenis van Azure verbinding in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [&#x200B; creeer een bron van Amazon Kinesis verbinding in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=nl-NL)
+* [&#x200B; creeer een Bron van de Hubs van de Gebeurtenis van Azure verbinding in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=nl-NL)
 * [&#x200B; de documentatie van de Hubs van de Gebeurtenis van Azure &#x200B;](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [&#x200B; de documentatie van de Streams van de Gegevens van Amazon Kinesis &#x200B;](https://docs.aws.amazon.com/kinesis/index.html)

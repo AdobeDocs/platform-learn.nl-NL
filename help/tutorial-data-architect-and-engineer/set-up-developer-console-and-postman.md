@@ -189,13 +189,13 @@ Nu, maken onze eerste API vraag:
 1. Importeren in [!DNL Postman]
 1. Open **de Registratie API van het Schema > Schema&#39;s > de schema&#39;s van de Lijst**
 1. Bekijk de **Punten van Params** en **Kopballen** lusjes en neem nota hoe zij enkele milieuvariabelen omvatten die wij vroeger inging.
-1. Merk op dat de **Kopballen > waardegebied** goedkeurt aan `application/vnd.adobe.xed-id+json` wordt geplaatst. De Registratie APIs van het Schema vereist één van deze [&#x200B; gespecificeerde Accept kopbalwaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) die verschillende formaten in de reactie verstrekken.
+1. Merk op dat de **Kopballen > waardegebied** goedkeurt aan `application/vnd.adobe.xed-id+json` wordt geplaatst. De Registratie APIs van het Schema vereist één van deze [&#x200B; gespecificeerde Accept kopbalwaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=nl-NL#accept) die verschillende formaten in de reactie verstrekken.
 1. Selecteer **verzenden** om uw eerste vraag van Platform API te maken!
 
 Hopelijk hebt u een succesvolle `200 OK` reactie gekregen die een lijst van de beschikbare Adobe-Geleide schema&#39;s XDM in uw zandbak, zoals hieronder wordt afgebeeld bevat.
 
 ![&#x200B; Eerste API vraag in Postman &#x200B;](assets/postman-firstAPICall.png)
 
-Als uw vraag niet succesvol was, neem een ogenblik om het gebruiken van de details van de foutenreactie van de API vraag te zuiveren en de stappen hierboven te herzien. Als u geplakt wordt, gelieve om hulp in het [&#x200B; Communautaire Forum &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) of gebruik de verbinding in de rechterkant van deze pagina aan &quot;Logboek een kwestie&quot;.
+Als uw vraag niet succesvol was, neem een ogenblik om het gebruiken van de details van de foutenreactie van de API vraag te zuiveren en de stappen hierboven te herzien. Als u geplakt wordt, gelieve om hulp in het [&#x200B; Communautaire Forum &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=nl) of gebruik de verbinding in de rechterkant van deze pagina aan &quot;Logboek een kwestie&quot;.
 
 Met uw toestemmingen van het Platform, zandbak, en [!DNL Postman] opstelling, bent u klaar aan [&#x200B; modelgegevens in schema&#39;s &#x200B;](model-data-in-schemas.md)!

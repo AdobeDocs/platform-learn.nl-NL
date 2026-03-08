@@ -47,8 +47,8 @@ Ik stel voor dat u het vasthoudt en gebruikt voor verdere experimenten met Platf
 
 De belangrijkste bronnen:
 
-* [&#x200B; zelfstudies van Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
-* [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-* [&#x200B; cursussen van Experience League &#x200B;](https://experienceleague.adobe.com/#dashboard/learning)
+* [&#x200B; zelfstudies van Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=nl-NL)
+* [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
+* [&#x200B; cursussen van Experience League &#x200B;](https://experienceleague.adobe.com/nl#dashboard/learning)
 
 Hartelijk dank voor uw inspanningen en veel succes op uw reis met Adobe Experience Platform!

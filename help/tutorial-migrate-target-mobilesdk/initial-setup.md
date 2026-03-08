@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Voor het migreren van Target SDK naar Optimize SDK is een eerste installatie nodig om het vastleggen van gegevens, de functies en functies van Optimize SDK te kunnen uitvoeren. De volgende stappen moeten worden uitgevoerd voordat eventuele wijzigingen in de implementatie van mobiele apps plaatsvinden:
 
-- [&#x200B; vorm de aangewezen toestemmingen &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in Adobe Admin Console voor de Inzameling van Gegevens
-- [&#x200B; vorm een schema XDM &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} voor het overgaan van gestructureerde gegevens tot Edge Network
-- [&#x200B; vorm het schema &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} om de gegevens van Adobe Target te ontvangen
-- [&#x200B; vorm een identiteit namespace &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} voor dwars-apparatenverpersoonlijking en mbox3rdPartyId functionaliteit
-- [&#x200B; creeer een datastream &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
-- [&#x200B; vorm de datastream &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
-- [&#x200B; vorm het bezit van de Markering &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} voor Offer Decisioning en de uitbreiding van het Doel
+- [&#x200B; vorm de aangewezen toestemmingen &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in Adobe Admin Console voor de Inzameling van Gegevens
+- [&#x200B; vorm een schema XDM &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} voor het overgaan van gestructureerde gegevens tot Edge Network
+- [&#x200B; vorm het schema &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} om de gegevens van Adobe Target te ontvangen
+- [&#x200B; vorm een identiteit namespace &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} voor dwars-apparatenverpersoonlijking en mbox3rdPartyId functionaliteit
+- [&#x200B; creeer een datastream &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} om het door:sturen van gegevens van Edge Network toe te laten
+- [&#x200B; vorm de datastream &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} om het door:sturen van gegevens aan Adobe Target toe te laten
+- [&#x200B; vorm het bezit van de Markering &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} voor Offer Decisioning en de uitbreiding van het Doel
 
 ## Extensieconfiguratie
 
@@ -68,4 +68,4 @@ Daarna, leer hoe te [&#x200B; het Doel SDK &#x200B;](replace-sdk.md) vervangen.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=nl#M625) te posten.

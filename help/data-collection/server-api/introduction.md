@@ -47,7 +47,7 @@ Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagi
 
 De meeste browsers hebben een &quot;adresbar&quot;die sommige of al &quot;adres&quot;voor een Web-pagina toont. Wanneer browser &quot;krijgt&quot;de pagina voor de verbinding wij klikte, toont het het &quot;adres&quot;van de pagina in deze adresbar. Wat is het &quot;adres&quot; van een webpagina?
 
-Dat `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
+Dat `https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
 
 ![&#x200B; Delen van een URL &#x200B;](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Het is zeer gemeenschappelijk om de termijn _gastheer_ te zien verwijzen naar ee
 
 **Oorsprong**
 
-Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` as `https://business.adobe.com` . Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com` en `http://business.adobe.com` , zijn niet dezelfde oorsprong omdat ze verschillende schema&#39;s hebben. `https://www.adobe.com` en `https://business.adobe.com` zijn in veel toepassingen ook niet dezelfde oorsprong vanwege de verschillende subdomeinen.
+Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` as `https://business.adobe.com/nl` . Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com/nl` en `http://business.adobe.com/nl` , zijn niet dezelfde oorsprong omdat ze verschillende schema&#39;s hebben. `https://www.adobe.com` en `https://business.adobe.com/nl` zijn in veel toepassingen ook niet dezelfde oorsprong vanwege de verschillende subdomeinen.
 
 **Weg**
 
@@ -133,13 +133,13 @@ Er zijn verschillende andere methoden, maar dit is een lijst met de meest gebrui
 
 Nu u de basistermen, concepten en stappen hebt die met API&#39;s samenhangen, kunnen we in de praktijk naar een voorbeeld-API-verzoek kijken.
 
-De pagina in ons browservoorbeeld heeft de URL `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` . Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, vraagt de browser `GET` om deze pagina. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
+De pagina in ons browservoorbeeld heeft de URL `https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html` . Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, vraagt de browser `GET` om deze pagina. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
 
 Hier is hoe dat in de code zou kunnen kijken:
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:
