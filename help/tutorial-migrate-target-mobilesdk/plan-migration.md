@@ -2,9 +2,9 @@
 title: De migratie plannen - De Adobe Target-implementatie in uw mobiele app migreren naar de Offer Decisioning- en Target-extensie
 description: Ontdek de belangrijkste verschillen tussen at.js en Platform Web SDK en hoe u uw migratie-inspanning kunt plannen.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ Het migratieproces omvat de volgende belangrijke stappen:
 > * **optimaliseer SDK** voert **Offer Decisioning en de uitbreiding van het Doel** uit
 
 
-Daarna, herzie de gedetailleerde [&#x200B; vergelijking van de uitbreiding van het Doel en de uitbreiding van Offer Decisioning en van het Doel &#x200B;](detailed-comparison.md) om een beter inzicht in de technische verschillen te krijgen en gebieden te identificeren die extra nadruk vereisen.
+Lees vervolgens de gedetailleerde <!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)--> om meer inzicht te krijgen in de technische verschillen en om gebieden te identificeren die extra focus nodig hebben.
 
 >[!NOTE]
 >
->We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [&#x200B; deze communautaire bespreking &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=nl#M625) te posten.
+>We helpen u graag succesvol te zijn met uw mobiele doelmigratie van de doelextensie naar de Offer Decisioning en de doelextensie. Als u in obstakels met uw migratie loopt of als er kritieke informatie ontbreekt in deze gids voelt, gelieve ons te vertellen door in [ deze communautaire bespreking ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) te posten.

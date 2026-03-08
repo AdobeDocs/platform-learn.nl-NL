@@ -1,16 +1,16 @@
 ---
 user-guide-title: Doel migreren van at.js 2.x naar Web SDK
 breadcrumb-title: Doel migreren van at.js 2.x naar Web SDK
-user-guide-description: Een hands-on zelfstudie voor de klanten van het Doel die hoe te met succes van een implementatie van at.js aan het Web SDK behandelen.
+user-guide-description: Een hands-on zelfstudie voor de klanten van het Doel die hoe te om van een implementatie van at.js aan de implementatie van SDK van het Web met succes te migreren.
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-11159
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [De migratie plannen](plan-migration.md)
 
-+ [Vergelijk om.js aan het Web SDK van het Platform](detailed-comparison.md)
++ [Vergelijk om.js met Platform Web SDK](detailed-comparison.md)
 
 + [Eerste instelling uitvoeren](initial-setup.md)
 

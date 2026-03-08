@@ -4,9 +4,9 @@ description: Google Analytics-gegevens in Adobe Experience Platform verzamelen e
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Hiervoor hebt u toegang nodig tot een Google Cloud Platform-omgeving. Als u nog geen toegang hebt tot GCP, maakt u een nieuw account met uw persoonlijke e-mailadres.
 
-## 1.2.1.1 Waarom maakt u verbinding met Google BigQuery met Adobe Experience Platform om Google Analytics-gegevens op te halen
+## 1.2.1.1 Waarom Google BigQuery verbinden met Adobe Experience Platform om Google Analytics-gegevens op te halen
 
 Google Cloud Platform (GCP) is een pakket openbare cloudcomputingdiensten die door Google worden aangeboden. Het Google Cloud Platform bevat een reeks gehoste services voor computer-, opslag- en toepassingsontwikkeling die op Google-hardware worden uitgevoerd.
 
@@ -40,15 +40,15 @@ De connector GCP/BigQuery Source moet worden gebruikt voor...
 
 ## 1.2.1.3 Een project selecteren of maken
 
-Ga naar [&#x200B; https://console.cloud.google.com/ &#x200B;](https://console.cloud.google.com/).
+Ga naar [ https://console.cloud.google.com/ ](https://console.cloud.google.com/).
 
 Daarna, klik op **selecteer een project** of klik een bestaand project.
 
-![&#x200B; demo &#x200B;](./images/ex12.png)
+![ demo ](./images/ex12.png)
 
 Als u nog geen project hebt, klik op **NIEUW PROJECT**. Als u al een project hebt, kunt u ervoor kiezen om dat te selecteren en door te gaan naar de volgende stap.
 
-![&#x200B; demo &#x200B;](./images/ex1createproject.png)
+![ demo ](./images/ex1createproject.png)
 
 Geef uw project een naam volgens deze naamgevingsconventie. Klik **CREËREN**.
 
@@ -56,45 +56,45 @@ Geef uw project een naam volgens deze naamgevingsconventie. Klik **CREËREN**.
 | ----------------- |
 | `--aepUserLdap---googlecloud` |
 
-![&#x200B; demo &#x200B;](./images/ex13.png)
+![ demo ](./images/ex13.png)
 
 Wacht tot het bericht in de rechterbovenhoek van het scherm u vertelt dat het maken is voltooid. Dan, klik **UITGEZOCHT PROJECT**.
 
-![&#x200B; demo &#x200B;](./images/ex14.png)
+![ demo ](./images/ex14.png)
 
 Daarna, ga naar de onderzoeksbar bovenop het scherm en type **BigQuery**. Selecteer het eerste resultaat.
 
-![&#x200B; demo &#x200B;](./images/ex17.png)
+![ demo ](./images/ex17.png)
 
 Het doel van deze module is om Google Analytics-gegevens in Adobe Experience Platform te krijgen. Om dat te doen, hebt u dummygegevens in een dataset van Google Analytics nodig om met te beginnen.
 
 Klik op **+ voeg** toe, en klik dan **Openbare datasets** in het juiste menu.
 
-![&#x200B; demo &#x200B;](./images/ex118.png)
+![ demo ](./images/ex118.png)
 
 U ziet dan dit venster:
 
-![&#x200B; demo &#x200B;](./images/ex119.png)
+![ demo ](./images/ex119.png)
 
-Ga de steekproef van Google Analytics van de onderzoekstermijn **&#x200B;**&#x200B;in de onderzoeksbar in en klik het eerste onderzoeksresultaat.
+Ga de steekproef van Google Analytics van de onderzoekstermijn **** in de onderzoeksbar in en klik het eerste onderzoeksresultaat.
 
-![&#x200B; demo &#x200B;](./images/ex120.png)
+![ demo ](./images/ex120.png)
 
 U zult het volgende scherm met een beschrijving van de dataset zien. Klik op **DATASET VAN DE MENING**.
 
-![&#x200B; demo &#x200B;](./images/ex121.png)
+![ demo ](./images/ex121.png)
 
 U zult dan aan BigQuery opnieuw worden gericht waar u dit **bigquery-public-data** dataset onder **Ontdekkingsreiziger** zult zien.
 
-![&#x200B; demo &#x200B;](./images/ex122a.png)
+![ demo ](./images/ex122a.png)
 
 In **Ontdekkingsreiziger**, zou u een aantal lijsten nu moeten zien. Voel je vrij om ze te verkennen. Ga naar `google_analytics_sample` .
 
-![&#x200B; demo &#x200B;](./images/ex122.png)
+![ demo ](./images/ex122.png)
 
 Klik om de tabel te openen `ga_sessions` .
 
-![&#x200B; demo &#x200B;](./images/ex123.png)
+![ demo ](./images/ex123.png)
 
 Voordat u verdergaat met de volgende oefening, noteer gelieve de volgende dingen in een afzonderlijk tekstdossier op uw computer:
 
@@ -105,18 +105,18 @@ Voordat u verdergaat met de volgende oefening, noteer gelieve de volgende dingen
 
 U kunt uw Naam van het Project en identiteitskaart van het Project vinden door op uw **Naam van het Project** in de hoogste menubar te klikken:
 
-![&#x200B; demo &#x200B;](./images/ex1projectMenu.png)
+![ demo ](./images/ex1projectMenu.png)
 
 U ziet dan uw project-id aan de rechterkant:
 
-![&#x200B; demo &#x200B;](./images/ex1projetcselection.png)
+![ demo ](./images/ex1projetcselection.png)
 
 Je kunt nu naar de volgende oefening gaan waar je handen vuil wordt door Google Analytics data te vragen.
 
 ## Volgende stappen
 
-Ga naar [&#x200B; 1.2.2 creeer uw eerste vraag in BigQuery &#x200B;](./ex2.md){target="_blank"}
+Ga naar [ 1.2.2 creeer uw eerste vraag in BigQuery ](./ex2.md){target="_blank"}
 
-Ga terug naar [&#x200B; Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source &#x200B;](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
+Ga terug naar [ Samenvatten en analyseren de gegevens van Google Analytics in Adobe Experience Platform met de Schakelaar van BigQuery Source ](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

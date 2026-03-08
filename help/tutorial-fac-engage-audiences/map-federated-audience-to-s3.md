@@ -3,11 +3,11 @@ title: Wijs een Federale Publiek aan een S3 Bestemming toe
 seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Wijs een Federaal publiek aan S3 toe
 description: In deze oefening, zullen wij een federated publiek aan een stroomafwaartse bestemming van Real-Time CDP in kaart brengen om een gepersonaliseerde off-line ervaring te steunen.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -24,27 +24,27 @@ U kunt publieksattributen in uw gegevenspakhuis hefboomwerking om de ervaring va
 
 2. Klik het **3 punt menu** knoop naast de pre-gevormde bestemming van Amazon S3, dan klik **actief Soorten publiek**.
 
-   ![&#x200B; activeer-publiek &#x200B;](assets/activate-audiences.png)
+   ![ activeer-publiek ](assets/activate-audiences.png)
 
 3. Selecteer de **S3 bestemming**, dan klik **daarna**.
 
-   ![&#x200B; uitgezocht-s3-bestemming &#x200B;](assets/select-s3-destination.png)
+   ![ uitgezocht-s3-bestemming ](assets/select-s3-destination.png)
 
 4. Selecteer het juiste publiek. In ons voorbeeld: **SecureFinancial Klanten - Geen Leningen, het Goede publiek van de Krediet**.
 
-   ![&#x200B; selecteren-s3-publiek &#x200B;](assets/select-s3-audience.png)
+   ![ selecteren-s3-publiek ](assets/select-s3-audience.png)
 
 5. In **plannend** sectie, gebruik de standaardmontages en klik **daarna**.
 
 6. In de **Afbeelding** stap, kies de deduplicatietoets. In ons voorbeeld, `xdm: personalEmail.address` is inbegrepen en geselecteerd als **De-duplicatie Sleutel**. Dan klik **daarna**:
 
-   ![&#x200B; deduplicatie-sleutel &#x200B;](assets/deduplication-key.png)
+   ![ deduplicatie-sleutel ](assets/deduplication-key.png)
 
 7. In de afbeeldingsstap, uitgezochte verrijkingsattributen die op de afbeeldingen van het publieksgebied in de gefedereerde publiekssamenstelling worden gebaseerd. Klik het **potlood (geef uit)** pictogram om de pre-geselecteerde attributen te bekijken.
 
-   ![&#x200B; geef-attributen uit &#x200B;](assets/edit-attributes.png)
+   ![ geef-attributen uit ](assets/edit-attributes.png)
 
-   ![&#x200B; definitief-attributen &#x200B;](assets/final-attribution.png)
+   ![ definitief-attributen ](assets/final-attribution.png)
 
 8. Herzie uw publiekstoewijzing en slag **Afwerking**.
 
@@ -53,4 +53,4 @@ U kunt publieksattributen in uw gegevenspakhuis hefboomwerking om de ervaring va
 We hebben met succes een publiek gemaakt en het geactiveerd naar een S3-bestemming. Elke andere oplossing kan dit publiek oppakken en onmiddellijk gebruiken. Met de gebruikersvriendelijke interface kunnen marketingteams snel een publiek maken en activeren zonder onderliggende gegevens te verplaatsen. Klanten die deze aanpak volgen, zijn in ongeveer een maand LIVE gaan met hun eerste gebruiksgeval.
 
 
-Nu zullen wij [&#x200B; een reis &#x200B;](build-journey-federated-audience.md) bouwen.
+Nu zullen wij [ een reis ](build-journey-federated-audience.md) bouwen.

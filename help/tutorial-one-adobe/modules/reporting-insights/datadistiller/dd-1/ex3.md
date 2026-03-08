@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: ce04fa00-0247-4693-ba60-efc1746b9fec
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Voer `show tables;` in uw **bevel-lijn PSQL interface** uit. (vergeet niet uw op
 
 Kopieer de opdracht `show tables;` en plak deze bij de prompt:
 
-![&#x200B; bevel-herinnering-show-tables.png &#x200B;](./images/commandpromptshowtables.png)
+![ bevel-herinnering-show-tables.png ](./images/commandpromptshowtables.png)
 
 Het volgende resultaat wordt weergegeven:
 
@@ -41,14 +41,14 @@ Het volgende resultaat wordt weergegeven:
 tech-insiders:all=> show tables;
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset                  :
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
@@ -57,7 +57,7 @@ Druk op de dubbelepunten op de spatiebalk om de volgende pagina van de resultaat
 
 Elke dataset in AEP heeft zijn overeenkomstige lijst van de Dienst van de Vraag. U kunt de lijst van een dataset via Datasets UI vinden:
 
-![&#x200B; ui-dataset-tablename.png &#x200B;](./images/uidatasettablename.png)
+![ ui-dataset-tablename.png ](./images/uidatasettablename.png)
 
 De tabel `demo_system_event_dataset_for_website_global_v1_1` is de tabel Query Service die overeenkomt met de gegevensset `Demo System - Event Schema for Website (Global v1.1)` .
 
@@ -140,19 +140,19 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Ga terug naar uw Adobe Experience Platform UI (zou open in uw browser moeten zijn) of aan [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform) navigeren.
+Ga terug naar uw Adobe Experience Platform UI (zou open in uw browser moeten zijn) of aan [ Adobe Experience Platform ](https://experience.adobe.com/platform) navigeren.
 
 Selecteer **Schema&#39;s**, ga `Demo System - Event Schema for Website` op het **onderzoek** gebied in en klik om het schema `Demo System - Event Schema for Website (Global v1.1) Schema` te openen.
 
-![&#x200B; browse-schema.png &#x200B;](./images/browseschema.png)
+![ browse-schema.png ](./images/browseschema.png)
 
 Onderzoek het model XDM voor **Systeem van de Demo - het Schema van de Gebeurtenis voor Website (Globale v1.1)**, door op een voorwerp te klikken. Breid de boom voor **placecontext**, **geo** en **schema** uit. Wanneer u de daadwerkelijke attributen **lengtegraad** selecteert, zult u de volledige weg in de benadrukte rode doos zien. Als u het pad van het kenmerk wilt kopiëren, klikt u op het pictogram van het kopieerpad.
 
-![&#x200B; onderzoek-schema-voor-weg.png &#x200B;](./images/exploreschemaforpath.png)
+![ onderzoek-schema-voor-weg.png ](./images/exploreschemaforpath.png)
 
 De schakelaar aan uw notitieblok/steunen en verwijdert **your_attribute_path_here** uit de eerste lijn. Plaats uw curseur na **uitgezocht** op de eerste lijn en deeg (CTRL-V).
 
-![&#x200B; onderzoek-schema-voor-weg.png &#x200B;](./images/exploreschemaforpath1.png)
+![ onderzoek-schema-voor-weg.png ](./images/exploreschemaforpath1.png)
 
 Kopieer de gewijzigde verklaring en kleef het bij de herinnering in uw **bevel-lijn PSQL interface** en de slag gaat binnen.
 
@@ -172,8 +172,8 @@ limit 1;
 
 ## Volgende stappen
 
-Ga naar [&#x200B; 2.1.4 Vragen, vragen, vragen... en klonen analyse &#x200B;](./ex4.md){target="_blank"}
+Ga naar [ 2.1.4 Vragen, vragen, vragen... en klonen analyse ](./ex4.md){target="_blank"}
 
-Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
+Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

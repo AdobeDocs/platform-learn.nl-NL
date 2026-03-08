@@ -2,12 +2,12 @@
 title: Overzicht van gegevensinscriptie
 description: Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw gegevens samenbrengen tot één open en schaalbaar platform voor het beheer van een uniform profiel.
 feature: Data Ingestion
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 10%
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 # Overzicht van gegevensinvoer
 
-Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw gegevens samenbrengen tot één open en schaalbaar platform voor het beheer van realtime klantprofielen. Voor meer informatie, gelieve de [&#x200B; documentatie van de Ingestie van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=nl-NL) te bezoeken.
+Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw gegevens samenbrengen tot één open en schaalbaar platform voor het beheer van realtime klantprofielen. Voor meer informatie, gelieve de [ documentatie van de Ingestie van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
@@ -284,7 +284,7 @@ Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw geg
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Gegevens opnemen via de Adobe Analytics-bronaansluiting" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430252?format=jpeg&nocache=1740414617197&captions=dut" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Gegevens opnemen via de Adobe Analytics-bronaansluiting"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Met de Adobe Experience Platform-mogelijkheden voor gegevensinvoer kunt u uw geg
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Gegevens van Marketo Engage verzamelen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451866?format=jpeg&nocache=1740414617186&captions=dut" alt="Gegevens van Marketo Engage verzamelen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Gegevens van Marketo Engage verzamelen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

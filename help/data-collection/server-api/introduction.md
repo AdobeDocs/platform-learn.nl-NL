@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User, Data Engineer, Developer
+role: User, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Aan het einde van dit artikel hebt u een duidelijk inzicht in deze grondbegrippe
 
 Wat betekent een woord of uitdrukking, en hoe kan ik er eenvoudig over denken? In een API betekent het &quot;toepassings&quot;deel een softwaretoepassing, of programma. In het gedeelte &quot;Programmeerinterface&quot; wordt aangegeven hoe en waar een toepassing voor bepaalde doeleinden met een andere toepassing communiceert. Wanneer u in ons voorbeeld van de webpagina op een koppeling klikt, verzendt de browser een aanvraag naar een server voor de webpagina.
 
-![&#x200B; Beeld van hyperlink met bestemmingsURL &#x200B;](../assets/api101-link-destination.png)
+![ Beeld van hyperlink met bestemmingsURL ](../assets/api101-link-destination.png)
 
 In dit schermafbeelding zweeft de muiscursor boven de Adobe Experience Platform-koppeling. Onderaan ziet u de statusbalk van de webbrowser met het &quot;adres&quot; van de pagina die de browser krijgt. Met andere woorden, als je op de Adobe Experience Platform link klikt, vertelt de browser dat ze die pagina voor mij krijgt zodat ik hem hier op mijn scherm kan zien.
 
@@ -43,13 +43,13 @@ Wanneer op een koppeling wordt geklikt, vraagt de browser een server om een pagi
 
 ### Delen van een URL
 
-![&#x200B; Browser adresbar met URL &#x200B;](../assets/api101-address-bar.png)
+![ Browser adresbar met URL ](../assets/api101-address-bar.png)
 
 De meeste browsers hebben een &quot;adresbar&quot;die sommige of al &quot;adres&quot;voor een Web-pagina toont. Wanneer browser &quot;krijgt&quot;de pagina voor de verbinding wij klikte, toont het het &quot;adres&quot;van de pagina in deze adresbar. Wat is het &quot;adres&quot; van een webpagina?
 
-Dat `https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
+Dat `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` hierboven is het adres van een pagina op het web. Het wordt een URL of Uniform Resource Locator genoemd. URL&#39;s kunnen verwijzen naar pagina&#39;s zoals deze, afbeeldingsbestanden, video&#39;s of andere bestandstypen.
 
-![&#x200B; Delen van een URL &#x200B;](../assets/api101-url-parts.jpg)
+![ Delen van een URL ](../assets/api101-url-parts.jpg)
 
 Dit adres, de URL, bevat specifieke onderdelen die erg relevant zijn voor API&#39;s voor het web en de browser.
 
@@ -69,7 +69,7 @@ Het is zeer gemeenschappelijk om de termijn _gastheer_ te zien verwijzen naar ee
 
 **Oorsprong**
 
-Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` as `https://business.adobe.com/nl` . Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com/nl` en `http://business.adobe.com/nl` , zijn niet dezelfde oorsprong omdat ze verschillende schema&#39;s hebben. `https://www.adobe.com` en `https://business.adobe.com/nl` zijn in veel toepassingen ook niet dezelfde oorsprong vanwege de verschillende subdomeinen.
+Oorsprong is een andere term om te weten dat die nauw verwant is aan de delen van een URL. Op basisniveau is een oorsprong ruwweg de `scheme` plus de `host` plus de `domain` as `https://business.adobe.com` . Verschillende waarden vertegenwoordigen vaak verschillende oorsprong, zoals `https://business.adobe.com` en `http://business.adobe.com` , zijn niet dezelfde oorsprong omdat ze verschillende schema&#39;s hebben. `https://www.adobe.com` en `https://business.adobe.com` zijn in veel toepassingen ook niet dezelfde oorsprong vanwege de verschillende subdomeinen.
 
 **Weg**
 
@@ -85,7 +85,7 @@ Het is gebruikelijk dat een webpagina inhoud of bronnen van andere hosts of bron
 
 ## Veelvoorkomende toepassingen voor web-API&#39;s
 
-Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en andere beschikken over een groot aantal API&#39;s die programmeurs kunnen gebruiken voor hun toepassingen. En natuurlijk, heeft de Adobe ook [&#x200B; een grote verscheidenheid van APIs &#x200B;](https://developer.adobe.com/apis) die de programmeurs gebruiken zodat kan hun software met de producten en de diensten van de Adobe in wisselwerking staan. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
+Naast de tijd van de dag, het weer, of gepersonaliseerde inhoud, zijn er vele toepassingen voor Web APIs. Sociaal-mediaplatforms als Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest en anderen hebben een verscheidenheid aan API&#39;s die programmeurs kunnen gebruiken met hun toepassingen. En natuurlijk, heeft Adobe ook [ een grote verscheidenheid van APIs ](https://developer.adobe.com/apis) die de programmeurs gebruiken zodat kan hun software met de producten en de diensten van Adobe in wisselwerking staan. Softwareproducten en -services hebben via deze API&#39;s toegang tot andere softwareproducten en -services.
 
 ## Voorbeeld-API&#39;s
 
@@ -97,7 +97,7 @@ Adobe Experience Platform Data Access-API is een web-API waarmee programmeurs to
 
 Wanneer programmeurs een browser of web-API in hun programma&#39;s &#39;gebruiken&#39;, doen ze doorgaans aanvragen om bronnen te verzenden of te ontvangen, zoals onze voorbeeldbrowser die een webpagina aanvraagt. In API-documentatie wordt vaak &quot;eindpunten&quot; voor deze aanvragen vermeld, bijvoorbeeld: `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}` . Dit is het specifieke patroon of het &quot;eindpunt&quot;van de Toegang API van de Gegevens van het Platform een programmeur zal gebruiken om een datasetdossier te krijgen.
 
-De `{dataSetFileId}` die door deze accolades wordt omringd, vertegenwoordigt een waarde die de programmeur in de aanvraag moet verzenden. De URL in de eigenlijke API-aanvraag zou er dus ongeveer als volgt uitzien: `xyz123brb` moet een geldige id zijn van het gegevensbestand dat de programmeur wil ontvangen.`https://platform.adobe.io/data/foundation/export/files/xyz123brb`
+De `{dataSetFileId}` die door deze accolades wordt omringd, vertegenwoordigt een waarde die de programmeur in de aanvraag moet verzenden. De URL in de eigenlijke API-aanvraag zou er dus ongeveer als volgt uitzien: `https://platform.adobe.io/data/foundation/export/files/xyz123brb` moet een geldige id zijn van het gegevensbestand dat de programmeur wil ontvangen.`xyz123brb`
 
 Met andere woorden, net zoals browser een pagina bij een specifieke URL krijgt, krijgen de API verzoeken middelen van, of verzenden middelen naar, een specifiek eindpunt zoals dit datasetvoorbeeld.
 
@@ -133,13 +133,13 @@ Er zijn verschillende andere methoden, maar dit is een lijst met de meest gebrui
 
 Nu u de basistermen, concepten en stappen hebt die met API&#39;s samenhangen, kunnen we in de praktijk naar een voorbeeld-API-verzoek kijken.
 
-De pagina in ons browservoorbeeld heeft de URL `https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html` . Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, vraagt de browser `GET` om deze pagina. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
+De pagina in ons browservoorbeeld heeft de URL `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` . Wanneer op de Adobe Experience Platform-koppeling wordt geklikt, vraagt de browser `GET` om deze pagina. Omdat we de browser hebben om het werk voor ons te doen, hoeven we alleen maar te klikken, maar als een programmeur dat verzoek in een softwaretoepassing wil uitvoeren, moet hij alle vereiste details verstrekken om de API-aanvraag succesvol te kunnen uitvoeren.
 
 Hier is hoe dat in de code zou kunnen kijken:
 
 ```js
 fetch(
-  "https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

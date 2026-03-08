@@ -3,11 +3,11 @@ title: Federated Audience Composition High-level Architecture & Flow
 seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Federated Audience Composition-architectuur op hoog niveau en -stroom
 description: Overzicht van de architectuur op hoog niveau en stroom van Federated Audience Composition.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
 exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
-source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -25,6 +25,6 @@ Dit verstrekt organisaties ook de vereiste Composable architectuur, die reeds de
 
 Het staat ondernemingen toe om informatie snel te verwerken die in één of meerdere gegevenspakhuizen wordt opgeslagen. Het verwijdert de noodzaak om gegevens in te voeren naar Adobe Experience. Bovendien, verleent het toegang tot nieuwe datasets die in de pakhuizen van ondernemingsgegevens verblijven maar tot nu toe ontoegankelijk voor de werkschema&#39;s van de klantenervaring zijn geweest. Voorbeelden zijn bijvoorbeeld historische transacties of persoonlijke gegevens die op geaggregeerd publieksniveau nuttig zullen zijn voor de betrokkenheid van klanten.
 
-![&#x200B; fac-architectuur &#x200B;](assets/fac-architecture.png)
+![ fac-architectuur ](assets/fac-architecture.png)
 
-Nu zullen wij zich op het creëren van de Verbinding van a [&#x200B; Data Warehouse &#x200B;](data-warehouse-connection.md) bewegen.
+Nu zullen wij zich op het creëren van de Verbinding van a [ Data Warehouse ](data-warehouse-connection.md) bewegen.

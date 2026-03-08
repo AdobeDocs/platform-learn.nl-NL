@@ -2,12 +2,12 @@
 title: Klantprofiel in realtime
 description: In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen van klanten samenstelt en bijwerkt en hoe u deze profielen kunt openen en gebruiken.
 feature: Profiles
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van het realtime klantprofiel
 
-In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen van klanten samenstelt en bijwerkt en hoe u deze profielen kunt openen en gebruiken. Voor meer informatie, gelieve de [&#x200B; documentatie van het Profiel van de Klant in real time &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl) te bezoeken.
+In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen van klanten samenstelt en bijwerkt en hoe u deze profielen kunt openen en gebruiken. Voor meer informatie, gelieve de [ documentatie van het Profiel van de Klant in real time ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=nl) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
@@ -35,7 +35,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="Overzicht Diagram van het Profiel van de Klant in real time" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463974?format=jpeg&nocache=1740415066741&captions=dut" alt="Overzicht Diagram van het Profiel van de Klant in real time"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="Overzicht Diagram van het Profiel van de Klant in real time"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +104,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="Een berekend kenmerk maken voor de som van aankopen" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443557?format=jpeg&nocache=1740415066775&captions=dut" alt="Een berekend kenmerk maken voor de som van aankopen"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="Een berekend kenmerk maken voor de som van aankopen"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +185,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443447/?format=jpeg&nocache=1740415067029&captions=dut" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +193,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert &grave; </a>
+                        <a href="update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Specifieke profielkenmerken bijwerken met behulp van &quot;upsert&quot;"> werk specifieke profielattributen bij gebruikend "upsert ` </a>
                     </p>
                     <p class="is-size-6">Leer hoe u een specifiek kenmerk van een profiel kunt bijwerken met de functie 'upsert' van Adobe Experience Platform.</p>
                 </div>
@@ -218,7 +218,7 @@ In deze video wordt uitgelegd hoe Adobe Experience Platform realtime profielen v
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="Accountprofielen weergeven" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446583?format=jpeg&nocache=1740415067214&captions=dut" alt="Accountprofielen weergeven"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="Accountprofielen weergeven"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -4,9 +4,9 @@ description: Query-service - API voor query-service
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ In deze oefening zult u API vraag uitvoeren om vraagmalplaatjes en vraagprogramm
 
 ## Documentatie
 
-- [&#x200B; Hulp van de Dienst van de Vraag van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=nl-NL)
-- [&#x200B; de Dienst API van de Vraag &#x200B;](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
+- [ Hulp van de Dienst van de Vraag van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [ de Dienst API van de Vraag ](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## Query Service-API
 
@@ -34,7 +34,7 @@ Niet-interactief betekent dat een verzoek om een query uit te voeren niet result
 
 ## Voorbeeldquery
 
-Als steekproefvraag zult u de eerste vraag gebruiken die in [&#x200B; wordt vermeld 4.3 - Vragen, vragen, vragen... en koordanalyse &#x200B;](./ex3.md):
+Als steekproefvraag zult u de eerste vraag gebruiken die in [ wordt vermeld 4.3 - Vragen, vragen, vragen... en koordanalyse ](./ex3.md):
 
 Hoeveel productweergaven hebben we dagelijks?
 
@@ -54,13 +54,13 @@ limit 10;
 
 >[!IMPORTANT]
 >
->Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [&#x200B; PostBuster &#x200B;](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
+>Als u een werknemer van Adobe bent, te volgen gelieve de instructies hier om [ PostBuster ](./../../../../modules/getting-started/gettingstarted/ex8.md) te gebruiken.
 
-Open Postman op uw computer. Als deel van Module 2.1, creeerde u een milieu van Postman en importeerde een inzameling van Postman. Volg de instructies in [&#x200B; Uitoefening 2.1.3 &#x200B;](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) voor het geval u dat nog niet hebt gedaan.
+Open Postman op uw computer. Als deel van Module 2.1, creeerde u een milieu van Postman en importeerde een inzameling van Postman. Volg de instructies in [ Uitoefening 2.1.3 ](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) voor het geval u dat nog niet hebt gedaan.
 
-Als deel van de inzameling van Postman u invoerde, zult u een omslag **zien. De Dienst van de vraag**. Als u deze omslag niet ziet, gelieve de [&#x200B; inzameling van Postman &#x200B;](./../../../../assets/postman/postman_profile.zip) opnieuw te downloaden en die inzameling in Postman opnieuw in te voeren zoals die in [&#x200B; oefening 2.1.3 &#x200B;](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) wordt geïnstrueerd.
+Als deel van de inzameling van Postman u invoerde, zult u een omslag **zien. De Dienst van de vraag**. Als u deze omslag niet ziet, gelieve de [ inzameling van Postman ](./../../../../assets/postman/postman_profile.zip) opnieuw te downloaden en die inzameling in Postman opnieuw in te voeren zoals die in [ oefening 2.1.3 ](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md) wordt geïnstrueerd.
 
-![&#x200B; QS &#x200B;](./images/pm3.png)
+![ QS ](./images/pm3.png)
 
 >[!NOTE]
 >
@@ -93,9 +93,9 @@ Ga de **sectie van het Lichaam** van dit verzoek. In het **Lichaam** van dit ver
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,15 +106,15 @@ Na het toevoegen van uw specifieke **ldap**, zou het Lichaam aan dit gelijkaardi
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->De sleutel **dbName** in het bovengenoemde lichaam JSON verwijst naar de zandbak die in uw instantie van Adobe Experience Platform wordt gebruikt. Als u de zandbak van PROD gebruikt, zou dbName **prod moeten zijn:al**, als u een andere zandbak zoals bijvoorbeeld **technologie-insiders** gebruikt, zou dbName aan **technologie-insiders moeten gelijk zijn:al**.
+>De sleutel **dbName** in het bovengenoemde lichaam JSON verwijst naar de zandbak die in uw instantie van Adobe Experience Platform wordt gebruikt. Als u de zandbak van PROD gebruikt, zou dbName **prod:all** moeten zijn, als u een andere zandbak zoals bijvoorbeeld **technologie-insiders** gebruikt, zou dbName aan **technologie-insiders:all** gelijk moeten zijn.
 
 Daarna, klik het blauwe **verzenden** knoop om het segment tot stand te brengen en de resultaten van dat te bekijken.
 
@@ -164,7 +164,7 @@ Wanneer de POST-aanvraag succesvol is, wordt de volgende reactie geretourneerd:
 
 De huidige **staat** van de vraag wordt **VERZONDEN**, zodra uitgevoerd zal zijn staat **SUCCESS** worden.
 
-U kunt voorgelegde vragen via Adobe Experience Platform UI ook zoeken, [&#x200B; Adobe Experience Platform &#x200B;](https://experience.adobe.com/#/@experienceplatform/platform/home) openen, aan **Vragen** navigeren, aan **Logboek** en uw vraag selecteren:
+U kunt voorgelegde vragen via Adobe Experience Platform UI ook zoeken, [ Adobe Experience Platform ](https://experience.adobe.com/#/@experienceplatform/platform/home) openen, aan **Vragen** navigeren, aan **Logboek** en uw vraag selecteren:
 
 ![Segmentatie](./images/s1_bodydtl_results_qs.png)
 
@@ -194,7 +194,7 @@ Daarna, klik het blauwe **verzenden** knoop om het segment tot stand te brengen 
 
 ![Segmentatie](./images/s2_bodydtl_results.png)
 
-Wanneer de aanvraag succesvol is, wordt een vergelijkbare reactie als hieronder gegeven. De **staat** van de reactie kan **&#x200B;**, **IN_PROGRESS** of **SUCCESS** worden VERZONDEN. Het kan verscheidene notulen nemen alvorens de vraag a **SUCCESS** staat heeft. U kunt het verzenden van dit verzoek verscheidene tijden herhalen, tot u de **SUCCESS** staat ziet.
+Wanneer de aanvraag succesvol is, wordt een vergelijkbare reactie als hieronder gegeven. De **staat** van de reactie kan ****, **IN_PROGRESS** of **SUCCESS** worden VERZONDEN. Het kan verscheidene notulen nemen alvorens de vraag a **SUCCESS** staat heeft. U kunt het verzenden van dit verzoek verscheidene tijden herhalen, tot u de **SUCCESS** staat ziet.
 
 ```json
 {
@@ -424,8 +424,8 @@ Het antwoord op dit verzoek zal naar de datasetdossiers richten:
 
 ## Volgende stappen
 
-Ga naar [&#x200B; Samenvatting en voordelen &#x200B;](./summary.md){target="_blank"}
+Ga naar [ Samenvatting en voordelen ](./summary.md){target="_blank"}
 
-Ga terug naar [&#x200B; Dienst van de Vraag &#x200B;](./query-service.md){target="_blank"}
+Ga terug naar [ Dienst van de Vraag ](./query-service.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

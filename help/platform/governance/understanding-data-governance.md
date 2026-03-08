@@ -2,12 +2,12 @@
 title: Overzicht van gegevensbeheer
 description: Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform.
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 2978464d69b182b196d4e21ece46dce56dc6dcfc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Overzicht van gegevensbeheer
 
-Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform. Gegevensbeheer is een eenvoudig uitbreidbaar kader dat diep is ingebed in workflows voor gegevensgebruik. Het framework is gebaseerd op drie belangrijke aspecten: labels, beleid en handhaving. Voor meer informatie, gelieve de [&#x200B; documentatie van het gegevensbeheer &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=nl-NL) te bezoeken.
+Leer hoe u volledige controle over uw gegevens kunt krijgen vanaf het punt dat wordt verzameld bij gegevensbronnen tot wanneer deze worden gesynchroniseerd met doelen buiten Adobe Experience Platform. Gegevensbeheer is een eenvoudig uitbreidbaar kader dat diep is ingebed in workflows voor gegevensgebruik. Het framework is gebaseerd op drie belangrijke aspecten: labels, beleid en handhaving. Voor meer informatie, gelieve de [ documentatie van het gegevensbeheer ](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) te bezoeken.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 

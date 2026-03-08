@@ -2,13 +2,13 @@
 title: Met publiek in dienst nemen met Federatieve Audience Composition
 description: Leer over Federated Audience Composition (FAC) en hoe het gegevensarchitecten en gegevensingenieurs toelaat om hoogwaardig publiek van gesteunde gegevenspakhuizen direct te leiden en te activeren.
 breadcrumb-title: Overzicht
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
-source-git-commit: e7484bcb8fa643a5c86b7d97da8c45d333e2e0ae
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Betrokkenheid met publiek van gegevenspakhuis die de Samenstelling van het Federale publiek gebruikt
 
-Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gemaakte oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [&#x200B; gesteunde opslag van ondernemingsgegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
+Federated Audience Composition (FAC) is een module voor Adobe Real-Time Customer Data Platform (Real-Time CDP) en Adobe Journey Optimizer. Het is ook beschikbaar bij het Adobe Real-Time CDP Composable publiek (een op maat gemaakte oplossing voor klanten als Composable CDP). Het machtigt gegevensarchitecten en gegevensingenieurs om hoogwaardig publiek direct van [ gesteunde opslag van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} te leiden en te activeren, zonder klantengegevens te kopiëren of te bewegen in Adobe Experience Platform (AEP). Deze composable CDP benadering (een op maat gesneden oplossing voor klanten) richt zich op industrietrends, toelatend ondernemingen om hun gegevensinfrastructuur voor gepersonaliseerde digitale ervaringen te gebruiken terwijl het handhaven van gegevensbeheer.
 
 ## Bedrijfs context
 
@@ -51,10 +51,10 @@ Als u vergelijkbare activiteiten wilt uitvoeren in uw omgeving, moet u ervoor zo
 
 - Toegang tot een Adobe Experience Platform-account die is ingericht voor Real-Time CDP of Journey Optimizer.
 - De toestemmingen van de Beheerder van het systeem of de capaciteit hebben gevormd toestemmingen.
-- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [&#x200B; Inleiding aan playlist Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
-- Toegang tot een gesteund [&#x200B; entrepot van ondernemingsgegevens &#x200B;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+- De bekendheid met de concepten van Adobe Experience Platform, zoals schema&#39;s, datasets, en (geadviseerde) publiek: voltooi de [ Inleiding aan playlist Adobe Experience Platform ](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} op Experience League).
+- Toegang tot een gesteund [ entrepot van ondernemingsgegevens ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Basiskennis van SQL voor het vragen van gegevenspakhuizen.
 - **de Milieu&#39;s van Sandbox**: Creeer een zandbak in de instantie van uw organisatie veilig experimenteren zonder productiegegevens te beïnvloeden.
-- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [&#x200B; gesteund gegevenspakhuis &#x200B;](https://experienceleague.adobe.com/nl/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
+- **Verbinding van Data Warehouse**: Dit leerprogramma gebruikt een verbinding van Snowflake, maar u kunt om het even welk [ gesteund gegevenspakhuis ](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites) gebruiken.
 
-Eerst, herzien de [&#x200B; Architectuur op hoog niveau &amp; Stroom voor Federatieve Samenstelling van het Publiek &#x200B;](fac-architecture-and-flow.md).
+Eerst, herzien de [ Architectuur op hoog niveau &amp; Stroom voor Federatieve Samenstelling van het Publiek ](fac-architecture-and-flow.md).

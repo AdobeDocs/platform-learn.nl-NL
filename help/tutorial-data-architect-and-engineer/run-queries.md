@@ -3,12 +3,12 @@ title: Zoekopdrachten uitvoeren
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Zoekopdrachten uitvoeren
 description: In deze les zult u leren om, vragen te plaatsen te schrijven en uit te voeren om de gegevens te bevestigen u hebt opgenomen.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -22,14 +22,14 @@ In deze les, zult u leren om, vragen te plaatsen te schrijven en uit te voeren o
 
 Met de Adobe Experience Platform Query Service kunt u uw gegevens begrijpen door standaard SQL te gebruiken voor query&#39;s op gegevens in het Platform. Gebruikend de Dienst van de Vraag, kunt u zich bij om het even welke dataset in het meer van Gegevens aansluiten en de vraagresultaten vangen als nieuwe dataset voor gebruik in rapportering, machine het leren, of voor opname in het Profiel van de Klant in real time.
 
-**de Architecten van Gegevens 0&rbrace; en** Ingenieurs van Gegevens **zullen de vraagdienst buiten dit leerprogramma moeten gebruiken.**
+**de Architecten van Gegevens 0} en** Ingenieurs van Gegevens **zullen de vraagdienst buiten dit leerprogramma moeten gebruiken.**
 
 Alvorens u met de oefeningen begint, bekijk deze korte video om meer over de Dienst van de Vraag te leren:
->[!VIDEO](https://video.tv.adobe.com/v/3464267?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Vereiste machtigingen
 
-In [&#x200B; vorm toestemmingen &#x200B;](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -51,7 +51,7 @@ Laten we beginnen met enkele eenvoudige vragen:
 
 1. Hier wordt de lijst met beschikbare tabellen weergegeven
 
-   ![&#x200B; TONEN de vraag van de LIJST &#x200B;](assets/queries-showTables.png)
+   ![ TONEN de vraag van de LIJST ](assets/queries-showTables.png)
 
 
 1. Probeer nu deze query, waarbij u `_techmarketingdemos` vervangt door uw eigen huurdersnaamruimte, die, als u eraan herinnert, zichtbaar is in uw schema&#39;s.
@@ -62,14 +62,14 @@ Laten we beginnen met enkele eenvoudige vragen:
    WHERE loyalty.tier ='gold'
    ```
 
-   ![&#x200B; UITGEZOCHTE gegevens van de loyaliteitsdataset &#x200B;](assets/queries-loyaltySelect.png)
+   ![ UITGEZOCHTE gegevens van de loyaliteitsdataset ](assets/queries-loyaltySelect.png)
 
 1. Als er een fout optreedt, worden gedetailleerde berichten weergegeven op het tabblad **[!UICONTROL Console]** , zoals hieronder wordt weergegeven
-   ![&#x200B; Fout in de vraag &#x200B;](assets/queries-error.png)
+   ![ Fout in de vraag ](assets/queries-error.png)
 
 1. Met uw geslaagde query, **[!UICONTROL Name]** it `Luma Gold Level Customers`
 1. Selecteer de knop **[!UICONTROL Save]**
-   ![&#x200B; het Opslaan van de vraag &#x200B;](assets/queries-loyaltySelect-save.png)
+   ![ het Opslaan van de vraag ](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Aanvullende bronnen
 
-* [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
-* [&#x200B; de Verwijzing van de Dienst API van de Vraag &#x200B;](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl)
+* [ de Verwijzing van de Dienst API van de Vraag ](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-En nu voor de definitieve hands-on les, [&#x200B; creërend segmenten &#x200B;](build-segments.md)!
+En nu voor de definitieve hands-on les, [ creërend segmenten ](build-segments.md)!

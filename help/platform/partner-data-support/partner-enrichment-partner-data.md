@@ -4,13 +4,13 @@ description: Leer hoe te om partnerattributen aan uw eerste-partijprofielen toe 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
-role: Architect, Data Architect, User
+role: Developer, User
 level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Partnerkenmerken toevoegen aan profielen van eerste partijen in [!DNL Real-Time CDP]
 
-Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen in [!DNL Real-Time CDP] uit te breiden. Voor meer informatie, gelieve de [&#x200B; eerste partijprofielen van de Supplement met partner-verstrekte attributen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=nl-NL) documentatie te bezoeken.
+Leer hoe u partnerkenmerken kunt toevoegen aan uw profielen van de eerste partij om het bereik via extra kanalen in [!DNL Real-Time CDP] uit te breiden. Voor meer informatie, gelieve de [ eerste partijprofielen van de Supplement met partner-verstrekte attributen ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentatie te bezoeken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452459/?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

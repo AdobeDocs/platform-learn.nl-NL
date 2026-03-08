@@ -5,13 +5,13 @@ solution: Real-Time Customer Data Platform
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integratie" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
@@ -26,14 +26,14 @@ Leer hoe u gegevens van Marketo Engage eenvoudig kunt opnemen in Real-Time Custo
 
 Leer hoe u de bronconnector voor Marketo configureert met behulp van de sjabloonworkflow. Deze workflow genereert automatisch elementen die nodig zijn voor het opnemen van Marketo-gegevens op basis van sjablonen. Het bespaart u vooraf, en de activa kunnen worden aangepast aan uw behoeften.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451866?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
 
 ## Standaardworkflow
 
 Leer hoe u de bronconnector voor Marketo configureert met behulp van de standaardworkflow. Voor de standaardworkflow moeten vooraf schema&#39;s en naamruimten worden gemaakt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452911?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 Raadpleeg de volgende documentatie voor meer informatie:
-* [&#x200B; de documentatie van de de bronschakelaar van Marketo Engage &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=nl-NL).
-* [&#x200B; creeer een bronnen dataflow gebruikend malplaatjes in UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=nl-NL#)
+* [ de documentatie van de de bronschakelaar van Marketo Engage ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [ creeer een bronnen dataflow gebruikend malplaatjes in UI ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

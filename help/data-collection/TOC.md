@@ -5,8 +5,8 @@ user-guide-description: Instructievideo's en tutorials waarmee u een krachtige g
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+role: Developer
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 21%
@@ -27,15 +27,15 @@ ht-degree: 21%
    + [Regels maken](tags/build-rules.md)
    + [Stapelregels](tags/stack-rules.md)
    + [Een bibliotheek maken en publiceren](tags/build-and-publish-a-library.md)
-   + [&#x200B; voert in websites met Web SDK uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [&#x200B; voert in websites met oplossing SDKs uit](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=nl-NL){target="_blank"}
-   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [ voert in websites met Web SDK ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"} uit
+   + [ voert in websites met oplossing SDKs uit ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [ voer in mobiele apps ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"} uit
 + Web SDK{#web-sdk}
    + [Overzicht](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [&#x200B; zelfstudie van de Implementatie (met markeringen)](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [&#x200B; Migrate het leerprogramma van de Analyse](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [ zelfstudie van de Implementatie (met markeringen) ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [ Migrate het leerprogramma van de Analyse ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Toestemming{#consent}
       + [Overzicht](web-sdk/consent/overview.md)
       + [De waarden voor toestemming instellen met de Adobe-standaard](web-sdk/consent/set-consent-adobe.md)
@@ -46,9 +46,9 @@ ht-degree: 21%
    + [Overzicht](mobile-sdk/overview.md)
    + [Mobiele eigenschappen maken](mobile-sdk/create-mobile-properties.md)
    + [Afhankelijkheidsmanagers gebruiken](mobile-sdk/use-dependency-managers.md)
-   + [&#x200B; voer in mobiele apps uit](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [ voer in mobiele apps ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"} uit
 
-   + [&#x200B; Migrate het leerprogramma van het Doel](https://experienceleague.adobe.com/nl/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [ Migrate het leerprogramma van het Doel ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + Server-API{#server-api}
    + [Overzicht](server-api/overview.md)
    + [Basisbeginselen van API&#39;s](server-api/introduction.md)

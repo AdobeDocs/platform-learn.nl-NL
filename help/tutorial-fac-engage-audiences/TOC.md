@@ -2,11 +2,11 @@
 user-guide-title: Neem rechtstreeks met publiek van uw gegevenspakhuis het in dienst gebruikend de Samenstelling van het Federale publiek
 breadcrumb-title: Samenstelling van Federated-doelgroep
 user-guide-description: Een gids om gegevensexemplaar te minimaliseren door van uw bestaande technologiestapel gebruik te maken om publiek te bouwen en te verrijken gebruikend Federated Audience Composition.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 2%

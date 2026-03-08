@@ -2,11 +2,11 @@
 title: Conclusie
 seo-title: Conclusion | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Conclusie
-description: In deze les, zult u de gebruikerstoestemmingen van Adobe Experience Platform gebruikend de Admin Console van de Adobe vormen.
-role: Data Architect, Data Engineer
+description: In deze les configureert u Adobe Experience Platform-gebruikersmachtigingen met behulp van Adobe Admin Console.
+role: Developer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Gefeliciteerd, u hebt de hele zelfstudie doorlopen!
 
-U hebt nu praktijkervaring met de mogelijkheden van het Platform die algemeen door zowel de Architecten van Gegevens als de Ingenieurs van Gegevens worden gebruikt. Ik begrijp dat uw rol enkel één van twee is en dat u a _partij_ van het werk deed dat vaak door een collega wordt gedaan. Ik hoop dat u daarmee begrijpt hoe alle onderdelen op elkaar aansluiten en dat u begrip hebt voor het teamwerk dat nodig is om het Experience Platform met succes te implementeren.
+U hebt nu praktijkervaring met de mogelijkheden van het Platform die algemeen door zowel de Architecten van Gegevens als de Ingenieurs van Gegevens worden gebruikt. Ik begrijp dat uw rol enkel één van twee is en dat u a _partij_ van het werk deed dat vaak door een collega wordt gedaan. Ik hoop dat u daarmee begrijpt hoe alle onderdelen op elkaar aansluiten en dat u begrip hebt voor het teamwerk dat nodig is om Experience Platform met succes te implementeren.
 
 U hebt geleerd hoe te:
 
-* Beheer gebruikers en toestemmingen in de Admin Console, waarmee **Architecten van Gegevens** vaak worden belast
+* Beheer gebruikers en toestemmingen in Admin Console, waarmee **de Architecten van Gegevens** vaak worden belast
 * Creeer een zandbak, die zowel **Architecten van Gegevens** als **de Ingenieurs van Gegevens** kunnen gebruiken om met nieuwe schema&#39;s en gegevens te experimenteren
 * De toegang van de opstelling tot Platform API in Developer Console en gebruikt de inzamelingen van Experience Platform Postman, die zowel **Architecten van Gegevens** als **de Ingenieurs van Gegevens** nuttig zullen vinden
 * Modelgegevens in XDM-schema&#39;s, die een bouwsteen vormen die relevant is voor alle gebruikers van het platform
@@ -43,12 +43,12 @@ U hebt geleerd hoe te:
 
 Ik stel voor dat u het vasthoudt en gebruikt voor verdere experimenten met Platform. Wij hopen om extra leerprogramma&#39;s tot stand te brengen die op de schema&#39;s en de gegevens voortbouwen die hier worden gebruikt. Als u alle sandboxen in uw account hebt gebruikt en deze voor een ander doel nodig hebt, kunt u de sandboxen opnieuw instellen of verwijderen.
 
-## Waar moet ik meer over Experience Platform leren?
+## Waar moet ik meer weten over Experience Platform?
 
 De belangrijkste bronnen:
 
-* [&#x200B; zelfstudies van het Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=nl-NL)
-* [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=nl-NL)
-* [&#x200B; cursussen van het Experience League &#x200B;](https://experienceleague.adobe.com/nl#dashboard/learning)
+* [ zelfstudies van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [ cursussen van Experience League ](https://experienceleague.adobe.com/#dashboard/learning)
 
 Hartelijk dank voor uw inspanningen en veel succes op uw reis met Adobe Experience Platform!

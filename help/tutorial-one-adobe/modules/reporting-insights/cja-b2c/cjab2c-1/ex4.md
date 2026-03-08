@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Gegevensvoorbereiding in Analysis Work
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -36,42 +36,42 @@ Als u Analysis Workspace nog niet eerder hebt gebruikt, raden we u aan deze vide
 Nu is het tijd om uw eerste CJA-werkruimte te maken. Ga naar het **Workspace** lusje binnen van CJA.
 Klik **tot project** leiden.
 
-![&#x200B; demo &#x200B;](./images/prmenu.png)
+![ demo ](./images/prmenu.png)
 
 Dan zie je dit. Selecteer **Leeg project van Workspace** en klik dan **creeer**.
 
-![&#x200B; demo &#x200B;](./images/prmenu1.png)
+![ demo ](./images/prmenu1.png)
 
 Dan zie je een leeg project.
 
-![&#x200B; demo &#x200B;](./images/premptyprojects.png)
+![ demo ](./images/premptyprojects.png)
 
 Selecteer eerst de juiste gegevensweergave in de rechterbovenhoek van het scherm. De gegevensweergave die moet worden geselecteerd, is `--aepUserLdap-- - Omnichannel Data View` .
 
-![&#x200B; demo &#x200B;](./images/prdv.png)
+![ demo ](./images/prdv.png)
 
 Vervolgens slaat u uw project op en geeft u het een naam. U kunt de volgende opdracht gebruiken om op te slaan:
 
 | OS | Korte snede |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Command + S |
 
 U ziet deze pop-up:
 
-![&#x200B; demo &#x200B;](./images/prsave.png)
+![ demo ](./images/prsave.png)
 
 Gebruik deze naamgevingsconventie:
 
 | Naam | Beschrijving |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 Daarna, klik **sparen**.
 
-![&#x200B; demo &#x200B;](./images/prsave2.png)
+![ demo ](./images/prsave2.png)
 
-## 1.1.4.2 Berekende cijfers
+## 1.1.4.2 Berekende waarden
 
 Hoewel wij alle componenten in de Mening van Gegevens hebben georganiseerd, moet u nog enkele hen aanpassen, zodat de bedrijfsgebruikers bereid zijn om hun analyse te beginnen. Ook, tijdens om het even welke analyse kunt u berekende metrisch tot stand brengen om dieper op de inzichten het vinden te gaan.
 
@@ -81,45 +81,45 @@ Als voorbeeld zullen wij tot een berekend **Tarief van de Omzetting** gebruikend
 
 Laten we beginnen met het openen van de berekende metrische builder. Klik op **+** om uw eerste Berekende Metrisch in Analysis Workspace tot stand te brengen.
 
-![&#x200B; demo &#x200B;](./images/pradd.png)
+![ demo ](./images/pradd.png)
 
 **Berekende Metrische Bouwer** zal omhoog verschijnen:
 
-![&#x200B; demo &#x200B;](./images/prbuilder.png)
+![ demo ](./images/prbuilder.png)
 
 Vind de **Aankopen** in de lijst van Metriek in het linkerzijmenu. Onder **Metriek** klik **tonen allen**
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr1.png)
+![ demo ](./images/calcbuildercr1.png)
 
 Nu sleep en laat vallen de **Steekproeven** binnen aan de berekende metrische definitie.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr2.png)
+![ demo ](./images/calcbuildercr2.png)
 
 Typisch, betekent de omzettingspercentage **Conversies/Sessies**. Laten we dezelfde berekening uitvoeren in het berekende metrische definitiekanvas. Vind de **metrische Zittingen** en sleep en laat vallen het in de definitiebouwer, onder de **Aankopen** gebeurtenis.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr3.png)
+![ demo ](./images/calcbuildercr3.png)
 
 De operator voor delen wordt automatisch geselecteerd.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr4.png)
+![ demo ](./images/calcbuildercr4.png)
 
 De omrekeningskoers wordt gewoonlijk uitgedrukt in een percentage. Dus, veranderen wij het formaat om percentage te worden en ook 2 decimalen selecteren.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr5.png)
+![ demo ](./images/calcbuildercr5.png)
 
 Ten slotte wijzigt u de naam en beschrijving van de berekende metrische waarde:
 
 | Titel | Beschrijving | Externe id |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Conversiesnelheid | Conversiesnelheid | conversionRate |
 
 Dan heb je dit. Klik **sparen**.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr6.png)
+![ demo ](./images/calcbuildercr6.png)
 
 Klik **sparen** opnieuw.
 
-![&#x200B; demo &#x200B;](./images/calcbuildercr6a.png)
+![ demo ](./images/calcbuildercr6a.png)
 
 ## 1.1.4.3 Berekende afmetingen: filters (segmentatie) en datumbereiken
 
@@ -127,7 +127,7 @@ Klik **sparen** opnieuw.
 
 Berekeningen zijn niet alleen bedoeld voor Metriek. Alvorens om het even welke analyse te beginnen is het ook interessant om sommige **Berekende Dimensies** tot stand te brengen. Dit betekende eigenlijk **segmenten** terug in Adobe Analytics. In Customer Journey Analytics, worden deze segmenten genoemd **Filters**.
 
-![&#x200B; demo &#x200B;](./images/prfilters.png)
+![ demo ](./images/prfilters.png)
 
 Het creëren van filters zal bedrijfs gebruikers helpen om de analyse met sommige waardevolle berekende afmetingen te beginnen. Dit zal sommige taken automatiseren evenals aan het adoptiedeel helpen. Hier volgen enkele voorbeelden:
 
@@ -147,14 +147,14 @@ Deze berekende afmetingen van de Tijd zullen wij analisten en bedrijfsgebruikers
 - Wanneer hebben we die tv-campagne in december gevoerd?
 - Van wanneer tot wanneer deden we de zomerverkoop van 2018? Ik wil het vergelijken met 2019. Weet je trouwens de exacte dagen in 2019?
 
-![&#x200B; demo &#x200B;](./images/timedimensions.png)
+![ demo ](./images/timedimensions.png)
 
-U hebt nu de gegevensvoorbereidingsoefening met CJA Analysis Workspace voltooid.
+Je hebt nu de voorbereiding van data voltooid met CJA Analysis Workspace.
 
 ## Volgende stappen
 
-Ga naar [&#x200B; 1.1.5 Visualisatie gebruikend Customer Journey Analytics &#x200B;](./ex5.md) (./ex2.md){target="_blank"}
+Ga naar [ 1.1.5 Visualisatie gebruikend Customer Journey Analytics ](./ex5.md) (./ex2.md){target="_blank"}
 
-Ga terug naar [&#x200B; Customer Journey Analytics &#x200B;](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
+Ga terug naar [ Customer Journey Analytics ](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 
-Ga terug naar [&#x200B; Alle modules &#x200B;](./../../../../overview.md){target="_blank"}
+Ga terug naar [ Alle modules ](./../../../../overview.md){target="_blank"}

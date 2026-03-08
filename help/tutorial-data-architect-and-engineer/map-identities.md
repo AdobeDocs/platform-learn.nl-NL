@@ -2,13 +2,13 @@
 title: Identiteiten toewijzen
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Identiteiten toewijzen
-description: In deze les maken we naamruimten voor identiteiten en voegen we identiteitsvelden toe aan onze schema's.
-role: Data Architect
+description: In deze les, zullen wij identiteitsnaamruimten creëren en identiteitsgebieden toevoegen aan onze schema's.
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 1%
@@ -19,14 +19,14 @@ ht-degree: 1%
 
 <!-- 30 min-->
 
-In deze les maken we naamruimten voor identiteiten en voegen we identiteitsvelden toe aan onze schema&#39;s. Nadat we dit hebben gedaan, kunnen we ook de schemarelaties uit de vorige les voltooien.
+In deze les, zullen wij identiteitsnaamruimten creëren en identiteitsgebieden toevoegen aan onze schema&#39;s. Na het doen van dit, zullen wij ook de schemaverhoudingen van de vorige les kunnen voltooien.
 
-Adobe Experience Platform Identity Service helpt je een beter beeld te krijgen van je klanten en hun gedrag door identiteiten op verschillende apparaten en systemen te overbruggen, zodat je in realtime impactvolle, persoonlijke digitale ervaringen kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360-graden realtime klantprofiel op te bouwen.
+Met de Adobe Experience Platform Identity Service kunt u uw klanten en hun gedrag beter zien door identiteiten tussen apparaten en systemen te overbruggen, zodat u in real-time een indrukwekkende, persoonlijke digitale ervaring kunt bieden. Identiteitsvelden en naamruimten zijn de lijm die verschillende gegevensbronnen samenvoegt om het 360 graden klantenprofiel in real time te bouwen.
 
 **Architecten van Gegevens** zullen identiteiten buiten dit leerprogramma moeten in kaart brengen.
 
 Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie over identiteit in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/3432349?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Voordat u de oefeningen start, bekijkt u deze korte video voor meer informatie o
 
 ## Vereiste machtigingen
 
-In [&#x200B; vorm toestemmingen &#x200B;](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
+In [ vorm toestemmingen ](configure-permissions.md) les, u opstelling alle toegangscontroles die worden vereist om deze les te voltooien.
 
 <!--
 * Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
@@ -68,7 +68,7 @@ Laten we beginnen met het maken van een naamruimte voor het Luma Loyalty-schema:
 
 1. Selecteren **[!UICONTROL Create]**
 
-   ![&#x200B; creeer Namespaces &#x200B;](assets/identity-createNamespace.png)
+   ![ creeer Namespaces ](assets/identity-createNamespace.png)
 
 Stel nu een andere naamruimte in voor het schema Luminageproductcatalogus met de volgende details:
 
@@ -82,7 +82,7 @@ Stel nu een andere naamruimte in voor het schema Luminageproductcatalogus met de
 
 ## Identiteitsnaamruimte maken met API
 
-We zullen onze CRM-naamruimte maken via API.
+We maken onze CRM-naamruimte via API.
 
 >[!NOTE]
 >
@@ -92,13 +92,13 @@ We zullen onze CRM-naamruimte maken via API.
 > 1. Als **[!UICONTROL Identity symbol]** gebruikt u `lumaCrmId`
 > 1. Als **[!UICONTROL Type]** gebruikt u Cross-device
 
-Laten we de Identity Namespace `Luma CRM Id`maken:
+Laten we naamruimte maken `Luma CRM Id` :
 
-1. De download [&#x200B; Identiteitsdienst.postman_collection.json &#x200B;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` omslag
+1. De download [ Identiteitsdienst.postman_collection.json ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) aan uw `Luma Tutorial Assets` omslag
 1. De verzameling importeren in [!DNL Postman]
 1. Als u geen toegangstoken hebt, open het verzoek **[!DNL OAuth: Request Access Token]** en selecteer **verzend** om een nieuw toegangstoken te verzoeken.
 1. Selecteer de aanvraag **[!UICONTROL Identity Service]> [!UICONTROL Identity Namespace] > [!UICONTROL Create a new identity namespace] .**
-1. Plak het volgende als de [!DNL Body] van de aanvraag:
+1. Plak het volgende als [!DNL Body] van de aanvraag:
 
    ```json
    {
@@ -110,10 +110,10 @@ Laten we de Identity Namespace `Luma CRM Id`maken:
 
 1. Druk **verzenden** knoop en u zou a **200 O.K.** reactie moeten krijgen:
 
-   ![&#x200B; Namespace van de Identiteit &#x200B;](assets/identity-createUsingApi.png)
+   ![ Namespace van de Identiteit ](assets/identity-createUsingApi.png)
 
 Als u terugkeert naar de gebruikersinterface, zou u uw drie nieuwe douanenamespaces nu moeten zien:
-![&#x200B; Identiteitsnaamruimte &#x200B;](assets/identity-newIdentities.png)
+![ Identiteitsnaamruimte ](assets/identity-newIdentities.png)
 
 
 ## Identiteitsvelden in schema&#39;s labelen
@@ -123,20 +123,20 @@ Nu we onze naamruimten hebben, bestaat de volgende stap uit het bijwerken van on
 
 ### XDM-velden labelen voor primaire identiteit
 
-Voor elk schema dat wordt gebruikt met Real-Time Customer Profile moet een primaire identiteit zijn opgegeven. En elke record die wordt opgenomen, moet een waarde voor dat veld hebben.
+Elk schema dat met het Profiel van de Klant in real time wordt gebruikt wordt vereist om een primaire gespecificeerde identiteit te hebben. Elke opgenomen record moet een waarde voor dat veld hebben.
 
-Laten we een primaire identiteit toevoegen aan de `Luma Loyalty Schema`:
+Voeg een primaire identiteit toe aan `Luma Loyalty Schema`:
 
-1. Open de `Luma Loyalty Schema`
+1. De `Luma Loyalty Schema` openen
 1. Selecteer de `Luma Identity profile field group`
-1. Selecteer het `loyaltyId` veld
-1. Vink het **[!UICONTROL Identity]** vakje aan
-1. Vink ook het **[!UICONTROL Primary Identity]** vakje aan
-1. Selecteer de naamruimte in **[!UICONTROL Identity namespaces]** de `Luma Loyalty Id` vervolgkeuzelijst
+1. Selecteer het veld `loyaltyId`
+1. Het selectievakje **[!UICONTROL Identity]** inschakelen
+1. Schakel ook het selectievakje **[!UICONTROL Primary Identity]** in
+1. De naamruimte `Luma Loyalty Id` selecteren in het vervolgkeuzemenu **[!UICONTROL Identity namespaces]**
 1. Selecteren **[!UICONTROL Apply]**
 1. Selecteren **[!UICONTROL Save]**
 
-   ![&#x200B; Primaire identiteit &#x200B;](assets/identity-loyalty-primary.png)
+   ![ Primaire identiteit ](assets/identity-loyalty-primary.png)
 
 Herhaal het proces voor een deel van uw andere schema:
 
@@ -163,34 +163,34 @@ U kunt meerdere identiteitsvelden toevoegen aan een schema. Niet-primaire identi
 1. De naamruimte `Luma CRM Id` selecteren in het vervolgkeuzemenu **[!UICONTROL Identity namespaces]**
 1. Selecteer **[!UICONTROL Apply]** en selecteer vervolgens de knop **[!UICONTROL Save]** om uw wijzigingen op te slaan
 
-   ![&#x200B; Secundaire Identiteit &#x200B;](assets/identity-loyalty-secondaryId.png)
+   ![ Secundaire Identiteit ](assets/identity-loyalty-secondaryId.png)
 
 ## De schemarelaties voltooien
 
 Nu onze identiteitsgebieden geëtiketteerd hebben, kunnen wij de opstelling van de schemaverhoudingen tussen de productcatalogus van Luma en de gebeurtenisschema&#39;s voltooien:
 
 1. De `Luma Offline Purchase Events Schema` openen
-1. Selecteer **[!UICONTROL Commerce Details]** veldgroep
-1. Selecteer **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** veld
-1. Vink het **[!UICONTROL Relationship]** vakje aan
+1. **[!UICONTROL Commerce Details]** -veldgroep selecteren
+1. Selecteren **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** -veld
+1. Het selectievakje **[!UICONTROL Relationship]** inschakelen
 1. Selecteer `Luma Product Catalog Schema` als de **[!UICONTROL Reference schema]**
 1. `Luma Product SKU` moet automatisch worden gevuld als de **[!UICONTROL Reference Identity namespace]**
 1. Selecteren **[!UICONTROL Apply]**
 1. Selecteren **[!UICONTROL Save]**
 
-   ![&#x200B; gebied van de Verwijzing &#x200B;](assets/identity-offlinePurchase-relationship.png)
+   ![ gebied van de Verwijzing ](assets/identity-offlinePurchase-relationship.png)
 
 Herhaal dit proces om een relatie te maken tussen de `Luma Web Events Schema` en de `Luma Product Catalog Schema` .
 
 Nadat u de relatie hebt gedefinieerd, wordt deze zowel in de sectie **[!UICONTROL Composition]** als in de sectie **[!UICONTROL Structure]** van de schema-editor aangegeven.
 
-![&#x200B; visualisatie van de Verhouding in de schemageditor &#x200B;](assets/identity-webEvents-relationship.png)
+![ visualisatie van de Verhouding in de schemageditor ](assets/identity-webEvents-relationship.png)
 
 <!--need to verify that the relationship schema works-->
 
 ## Aanvullende bronnen
 
-* [&#x200B; documentatie van de Dienst van de Identiteit &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl)
-* [&#x200B; Identiteitsdienst API &#x200B;](https://www.adobe.io/experience-platform-apis/references/identity-service/)
+* [ documentatie van de Dienst van de Identiteit ](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=nl)
+* [ Identiteitsdienst API ](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
-Nu onze identiteiten op zijn plaats zijn, kunnen wij [&#x200B; onze datasets &#x200B;](create-datasets.md) tot stand brengen!
+Nu onze identiteiten op zijn plaats zijn, kunnen wij [ onze datasets ](create-datasets.md) tot stand brengen!

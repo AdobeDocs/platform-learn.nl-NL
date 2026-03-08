@@ -2,12 +2,12 @@
 title: De gegevens van uw klant opladen voor elektrificatieervaringen
 description: Leer hoe u de impact van gegevens van lage kwaliteit kunt beperken, tijd tot waarde kunt beperken en rendement op investeringen kunt vermenigvuldigen door dezelfde gegevens te gebruiken voor een groot aantal gebruiksgevallen.
 feature: Queries
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -17,14 +17,14 @@ ht-degree: 0%
 # De gegevens van uw klant opladen voor elektrificatieervaringen
 
 Omnichannel-gegevens zijn een essentieel ingrediënt van energieke klantprofielen die door marketers worden gebruikt om activering te organiseren en de resulterende klantritten te meten. Organisaties staan echter voor uitdagingen bij het beheer van de kwaliteit, schaal en diversiteit van deze gegevens. Ze vereisen gestroomlijnde oplossingen om de impact van gegevens van lage kwaliteit te beperken, tijd tot waarde te beperken en rendement te vermenigvuldigen door dezelfde gegevens te gebruiken voor een groot aantal gebruiksgevallen.
-Voor meer informatie, gelieve de [&#x200B; documentatie van de Dienst van de Vraag &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
+Voor meer informatie, gelieve de [ documentatie van de Dienst van de Vraag ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=nl) te bezoeken.
 
 In deze video wordt het volgende besproken:
 
 * Adobe Experience Platform-mogelijkheden voor gegevensvoorbereiding die u kunt benutten
 * Het verhogen van ROI van Adobe Real-Time CDP, Adobe Journey Optimizer, en Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/3454948?learn=on&enablevpops&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL-voorbeeld
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen &#x200B;](https://business.adobe.com/nl/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.
+>Deze video is een uittreksel van de zitting van Adobe Summit 2020 *[die Omnichannel Gegevens voor het Elektrificeren van Ervaringen ](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html) oplaadt*.
