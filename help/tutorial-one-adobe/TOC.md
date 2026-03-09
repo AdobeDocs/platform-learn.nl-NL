@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
+source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -137,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -290,6 +290,7 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 Aan de slag met AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
       + [1.6.2 AEM MCP-servers en -cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 Inhoudsfragmenten schalen met ChatGPT en MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
    + 1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce {#agents7}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 De ontwikkelomgeving instellen](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
