@@ -4,9 +4,9 @@ description: Adobe Experience Manager & Agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
+source-git-commit: deea7c9e7e6fa70843b3bf621d51c5502d46a431
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -39,22 +39,22 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[&#x200B; 1.6.1 die met de Agenten van AEM &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.6.1 die met de Agenten van AEM ](./ex1.md){target="_blank"} wordt begonnen
 
-In deze oefening, zult u {de Agent van de Ontdekking 1} en **de Agent van de Productie van de Ervaring** onderzoeken.**&#x200B;**
+In deze oefening, zult u {de Agent van de Ontdekking 1} en **de Agent van de Productie van de Ervaring** onderzoeken.****
 
-[1.6.2 AEM MCP-servers en -cursor](./ex2.md)
+[ 1.6.2 de Servers &amp; Cursor van AEM MCP ](./ex2.md)
 
 In deze oefening, zult u uw milieu van de Curseur met AEM verbinden gebruikend de Server van AEM MCP.
 
-[1.6.3 Inhoudsfragmenten schalen met ChatGPT en MCP Server](./ex3.md)
+[ 1.6.3 de Fragmenten van de Inhoud van de Schaal met Server ChatGPT &amp; MCP ](./ex3.md)
 
-In deze oefening, zult u de Fragmenten van de Inhoud creëren, beheren en vertalen gebruikend ChatGPT en de de serverfunctionaliteit van douane MCP.
+In deze oefening, zult u tevreden Fragments creëren, leiden en vertalen gebruikend ChatGPT en de serverfunctionaliteit van douane MCP.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"} AEM
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
