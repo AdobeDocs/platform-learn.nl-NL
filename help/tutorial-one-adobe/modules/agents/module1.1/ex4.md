@@ -36,6 +36,6 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 Dit lab is in ontwikkeling.
 
-Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}

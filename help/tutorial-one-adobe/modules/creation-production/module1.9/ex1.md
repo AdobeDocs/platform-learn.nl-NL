@@ -18,6 +18,6 @@ Deze inhoud wordt momenteel ontwikkeld.
 
 ## Volgende stappen
 
-Ga terug naar [ Boards van Firefly ](./fireflyboards.md){target="_blank"}
+Ga terug naar [&#x200B; Boards van Firefly &#x200B;](./fireflyboards.md){target="_blank"}
 
-Ga terug naar [ Alle Modules ](./../../../overview.md){target="_blank"}
+Ga terug naar [&#x200B; Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
