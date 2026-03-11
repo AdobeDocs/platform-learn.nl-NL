@@ -3,16 +3,16 @@ title: Overzicht van Agentic AI Tech Labs
 description: Overzicht van Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Overzicht - Agentic AI Tech Labs
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht - Werk in uitvoering
 
@@ -26,30 +26,6 @@ Leer hoe u Adobe Experience Platform Agents en Agent Orchestrator kunt gebruiken
 - Doelgroep identificeren
 - Reisprestaties valideren
 - Maak een nieuwe reis voor de Maximale uitrol CitiSignal Fibre
-
-[1.2 Aan de slag met agents en AI](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->Deze module is nog niet vrijgegeven.
-
-**Doel**
-
-Bouw uw eigen agent.
-
-De studenten zullen hun eigen agent bouwen die een LLM gebruikt om verzoeken te analyseren. De analyse van het verzoek zal dan worden gebruikt om een plan te bouwen dat instructies bevat, die goed dan één voor één worden uitgevoerd. Om dit mogelijk te maken, moet de agent begrijpen welke vaardigheden beschikbaar zijn. Studenten bouwen zelf een aantal vaardigheden op, vaardigheden die elk met een MCP-server worden opgebouwd en die Adobe product API&#39;s zoals Adobe Firefly Services, Workfront Fusion en andere gebruiken.
-
-- Gen.-Image AI
-- Text GenAI
-
-Wat is de architectuur achter een agent?
-
-Technische elementen:
-
-- Azure AI Foundry, LLM, Co-pilot
-- n8n
-- MCP-server, Python-laptop
-- Adobe API&#39;s
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
@@ -73,7 +49,7 @@ In deze oefening zult u leren hoe te:
 - Verbind ChatGPT en/of Claude.ai met **Customer Journey Analytics** en voer de taken van de gegevensanalyse uit
 - Verbind ChatGPT en/of Claude.ai met **Adobe Analytics** en voer de taken van de gegevensanalyse uit
 
-[&#x200B; 1.6 AEM &amp; Agenten &#x200B;](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[ 1.6 AEM &amp; Agenten ](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **Doel**
 
@@ -93,7 +69,7 @@ In deze oefening zult u leren hoe te om deze agenten te gebruiken gebruikend zow
 
 In deze module gebruikt u intelligente ontwikkelaarsgereedschappen, zoals Cursor, om een extensie voor uw Adobe Commerce as a Cloud Service-omgeving te ontwikkelen. Het doel van die uitbreiding is inkomende ordegebeurtenissen aan een derde partijeindpunt door:sturen. Het doorsturen van gebeurtenissen in Adobe Commerce as a Cloud Service is afhankelijk van Adobe I/O App Builder, Adobe I/O Events en Adobe I/O Runtime. De configuratie van al deze diensten zal door Cursor worden gesteund.
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

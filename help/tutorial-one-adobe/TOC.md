@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1550'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 3%
 # Eén technische zelfstudie voor Adobe {#tutorial-one-adobe}
 
 + [Overzicht van tutorial](/help/tutorial-one-adobe/overview.md)
-+ [GenStudio for Content Supply chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Architectuur](/help/tutorial-one-adobe/architecture.md)
 
@@ -31,6 +30,35 @@ ht-degree: 3%
       + [Optie 1: Postman instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [Optie 2: PostBuster instellen](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Toepassingen om te installeren](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+
++ Agentic AI {#agents}
+   + 1.1 Agent Orchestrator {#agents1}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Aan de slag met Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+      + [1.1.4 Adobe Marketing Agent voor Google Gemini](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+   + 1.2 Aan de slag met agents en AI {#agents2}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.4 Brand Concierge {#agents4}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+      + [1.4.1 Aan de slag met Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+      + [1.4.2 Brand Concierge implementeren op uw website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analyses en agents {#agents5}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA en ChatGPT met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA en Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics &amp; Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEM en agents {#agents6}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 Aan de slag met AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP-servers en -cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 Inhoudsfragmenten schalen met ChatGPT en MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+   + 1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce {#agents7}
+      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 De ontwikkelomgeving instellen](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2 De Cursor van het gebruik om uw project te ontwikkelen](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
 
 + Workflow en planning {#wfplanning}
    + 1.1 Workfront-planning {#wfpl1}
@@ -93,6 +121,9 @@ ht-degree: 3%
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Aan de slag met Workfront, Frame.io en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
       + [1.8.2 Een nieuw middel maken, dit beoordelen en goedkeuren](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+   + 1.9 Firefly-borden {#crpr9}
+      + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
+      + [1.9.1 Aan de slag met Firefly-borden](/help/tutorial-one-adobe/modules/creation-production/module1.9/ex1.md)
 
 + Beheer van bedrijfsmiddelen {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -137,7 +168,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -266,32 +297,3 @@ ht-degree: 3%
          + [Overzicht](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Aan de slag met Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-
-+ Medewerkers {#agents}
-   + [Overzicht van Agentic AI](/help/tutorial-one-adobe/ai.md)
-   + 1.1 Agent Orchestrator {#agents1}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Aan de slag met Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-      + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-   + 1.2 Aan de slag met agents en AI {#agents2}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-      + [1.2.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.4 Brand Concierge {#agents4}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-      + [1.4.1 Aan de slag met Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-      + [1.4.2 Brand Concierge implementeren op uw website](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
-   + 1.5 Analyses en agents {#agents5}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
-      + [1.5.1 CJA en ChatGPT met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
-      + [1.5.2 CJA en Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics &amp; Claude.ai met MCP-server](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
-   + 1.6 AEM en agents {#agents6}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Aan de slag met AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-      + [1.6.2 AEM MCP-servers en -cursor](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-      + [1.6.3 Inhoudsfragmenten schalen met ChatGPT en MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-   + 1.7 Intelligente ontwikkelaarsgereedschappen voor Adobe Commerce {#agents7}
-      + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
-      + [1.7.1 De ontwikkelomgeving instellen](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2 De Cursor van het gebruik om uw project te ontwikkelen](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

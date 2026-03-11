@@ -3,10 +3,11 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 3%
+source-wordcount: '248'
+ht-degree: 2%
 
 ---
 
@@ -30,27 +31,31 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 ## Vereisten
 
 - Toegang tot Adobe Journey Optimizer en Customer Journey Analytics
-- Het vertrouwd met [&#x200B; concepten van Agent Orchestrator &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
+- Het vertrouwd met [ concepten van Agent Orchestrator ](https://experienceleague.adobe.com/nl/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)
 - Toegang tot demonstratiegegevens van CitiSignal: Aankopen, Bestellingen, Soorten publiek, Reizen
 
 ## Uitoefening
 
-[&#x200B; 1.1.1 Aan de slag met Agent Orchestrator &#x200B;](./ex1.md){target="_blank"}
+[ 1.1.1 Aan de slag met Agent Orchestrator ](./ex1.md){target="_blank"}
 
 In deze exercitie gaat u Agent Orchestrator-mogelijkheden verkennen tegen de achtergrond van de CitiSignal-opstartiecampagne voor Fiber Max.
 
-[&#x200B; 1.1.2 Adobe Marketing Agent voor Onderneming ChatGPT &#x200B;](./ex2.md){target="_blank"}
+[ 1.1.2 Adobe Marketing Agent voor Onderneming ChatGPT ](./ex2.md){target="_blank"}
 
 In deze oefening, zult u Agent Orchestrator mogelijkheden tegen de achtergrond van de CitiSignal lanceringscampagne voor Fiber Max onderzoeken, door Adobe Marketing Agent met ChatGPT te gebruiken.
 
-[&#x200B; 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot &#x200B;](./ex3.md){target="_blank"}
+[ 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot ](./ex3.md){target="_blank"}
 
 In deze oefening, zult u Agent Orchestrator mogelijkheden tegen de achtergrond van de CitiSignal lanceringscampagne voor Fiber Max, door Adobe Marketing Agent met Microsoft Copilot te gebruiken onderzoeken.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[ 1.1.4 Adobe Marketing Agent voor Google Gemini ](./ex4.md){target="_blank"}
+
+In deze oefening, zult u Agent Orchestrator mogelijkheden tegen de achtergrond van de CitiSignal lanceringscampagne voor Fiber Max, door Adobe Marketing Agent met Google Gemini te gebruiken onderzoeken.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](../../../overview.md){target="_blank"}
