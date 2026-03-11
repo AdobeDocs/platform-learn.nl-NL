@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,18 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[&#x200B; 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u beginnen de Bouwer van het Werkschema te gebruiken.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[ 1.7.2 voert programmatically uw douanewerkschema uit ](./ex2.md){target="_blank"}
+
+In deze oefening, zult u uw douanewerkschema programmatically uitvoeren gebruikend Postman en Workfront Fusion.
+
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}

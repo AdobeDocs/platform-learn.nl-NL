@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1557'
 ht-degree: 3%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 3%
    + 1.7 Aangepaste Firefly-workflows {#crpr7}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Aan de slag met aangepaste Firefly-workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.2 De aangepaste workflow programmatisch uitvoeren](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Unified Review &amp; Approval met Workfront, Frame.io en Enterprise Storage Management {#crpr8}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Aan de slag met Workfront, Frame.io en ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
@@ -168,7 +169,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
