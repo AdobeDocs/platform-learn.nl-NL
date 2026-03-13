@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Eén Adobe-zelfstudie - Overzicht van architectuur
 
-![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht van één Adobe-architectuur
 
@@ -22,7 +22,7 @@ In deze video leert u over de architectuur achter de volledige end-to-end One Ad
 
 Download de overzichtsafbeelding van de architectuur hieronder:
 
-![ Indexen van de Tech ](./assets/images/architecture_all.jpg)
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/architecture_all.jpg)
 
 ## Overzicht van de AI-architectuur van de website
 
@@ -32,7 +32,7 @@ In deze video leert u meer over de architectuur achter het onderdeel Agentic AI 
 
 Download de overzichtsafbeelding van de architectuur hieronder:
 
-![ Indexen van de Tech ](./assets/images/architecture_agentic.jpg)
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/architecture_agentic.jpg)
 
 ## Overzicht van de inhoudsarchitectuur
 
@@ -42,7 +42,7 @@ In deze video leert u over de architectuur achter het GenStudio-onderdeel van de
 
 Download de overzichtsafbeelding van de architectuur hieronder:
 
-![ Indexen van de Tech ](./assets/images/architecture_content.jpg)
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/architecture_content.jpg)
 
 ## Overzicht gegevensarchitectuur
 
@@ -52,7 +52,7 @@ In deze video leert u meer over de architectuur achter de Adobe Experience Platf
 
 Download de overzichtsafbeelding van de architectuur hieronder:
 
-![ Indexen van de Tech ](./assets/images/architecture_data.jpeg)
+![&#x200B; Indexen van de Tech &#x200B;](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >
