@@ -1,21 +1,22 @@
 ---
-title: Adobe Marketing Agent voor Google Gemini
-description: Adobe Marketing Agent voor Google Gemini
+title: Adobe Marketing Agent for Google Gemini Enterprise
+description: Adobe Marketing Agent for Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
+source-git-commit: eb8fb8c62e841115c79b3f655f604f77b7f47ea7
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 Adobe Marketing Agent voor Google Gemini
+# 1.1.4 Adobe Marketing Agent voor Google Gemini Enterprise
 
 [!BADGE Bèta]
 
 +++Beta-gegevens
-Door de Adobe Marketing Agent samen met Google Gemini Beta te gebruiken, bevestigt u hierbij dat de Beta &quot;zoals is&quot; zonder enige garantie wordt geleverd. Adobe is niet verplicht de Beta te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen. U wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de juiste werking of prestaties van dergelijke Beta en/of begeleidende materialen. De Beta wordt beschouwd als vertrouwelijke informatie van Adobe.  Alle &quot;Feedback&quot; (informatie over de Beta, inclusief maar niet beperkt tot problemen of defecten die u tegenkomt bij het gebruik van de Beta, suggesties, verbeteringen en aanbevelingen) die u aan Adobe verstrekt, worden hierbij aan Adobe toegewezen, inclusief alle rechten, titel en interesse in en voor dergelijke feedback.
+Door de Adobe Marketing Agent samen met Google Gemini Enterprise Beta te gebruiken, bevestigt u hierbij dat de Beta &quot;as is&quot; wordt geleverd zonder enige garantie. Adobe is niet verplicht de Beta te onderhouden, te corrigeren, bij te werken, te wijzigen, te wijzigen of anderszins te ondersteunen. U wordt aangeraden voorzichtig te zijn en op geen enkele wijze te vertrouwen op de juiste werking of prestaties van dergelijke Beta en/of begeleidende materialen. De Beta wordt beschouwd als vertrouwelijke informatie van Adobe.  Alle &quot;Feedback&quot; (informatie over de Beta, inclusief maar niet beperkt tot problemen of defecten die u tegenkomt bij het gebruik van de Beta, suggesties, verbeteringen en aanbevelingen) die u aan Adobe verstrekt, worden hierbij aan Adobe toegewezen, inclusief alle rechten, titel en interesse in en voor dergelijke feedback.
 
 +++
 
@@ -36,6 +37,6 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 Dit lab is in ontwikkeling.
 
-Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
+Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

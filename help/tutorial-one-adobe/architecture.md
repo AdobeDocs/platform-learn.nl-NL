@@ -2,30 +2,57 @@
 title: Eén Adobe-zelfstudie - Overzicht van architectuur
 description: Eén Adobe-zelfstudie - Overzicht van architectuur
 doc-type: multipage-overview
-source-git-commit: 92a903ca8269fbf7af1981c1176646091766573b
+exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
+source-git-commit: d271e771b75cd4cbc6d526cd8c438d8858930878
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
 
 # Eén Adobe-zelfstudie - Overzicht van architectuur
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
-
-## Overzicht van GenStudio-architectuur
-
-In deze video leert u over de architectuur achter het GenStudio-onderdeel van deze zelfstudie.
-
-## Overzicht van AEP+Apps-architectuur
-
-In deze video leert u meer over de architectuur achter de Adobe Experience Platform en het onderdeel Toepassingen van deze zelfstudie.
+![ Indexen van de Tech ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overzicht van één Adobe-architectuur
 
-In deze video leert u over de architectuur achter de volledige end-to-end zelfstudie.
+In deze video leert u over de architectuur achter de volledige end-to-end One Adobe-zelfstudie.
 
-![&#x200B; Indexen van de Tech &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
+
+Download de overzichtsafbeelding van de architectuur hieronder:
+
+![ Indexen van de Tech ](./assets/images/architecture_all.jpg)
+
+## Overzicht van de AI-architectuur van de website
+
+In deze video leert u meer over de architectuur achter het onderdeel Agentic AI van de zelfstudie One Adobe.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+Download de overzichtsafbeelding van de architectuur hieronder:
+
+![ Indexen van de Tech ](./assets/images/architecture_agentic.jpg)
+
+## Overzicht van de inhoudsarchitectuur
+
+In deze video leert u over de architectuur achter het GenStudio-onderdeel van deze zelfstudie.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
+
+Download de overzichtsafbeelding van de architectuur hieronder:
+
+![ Indexen van de Tech ](./assets/images/architecture_content.jpg)
+
+## Overzicht gegevensarchitectuur
+
+In deze video leert u meer over de architectuur achter de Adobe Experience Platform en het onderdeel Toepassingen van deze zelfstudie.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
+
+Download de overzichtsafbeelding van de architectuur hieronder:
+
+![ Indexen van de Tech ](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >

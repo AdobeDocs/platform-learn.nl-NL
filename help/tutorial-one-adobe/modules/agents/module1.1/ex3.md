@@ -4,9 +4,9 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -41,63 +41,63 @@ Open Microsoft Teams en meld u aan met uw accountgegevens. Nadat u zich hebt aan
 
 Klik **Apps**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot1.png)
+![ ChatGPT ](./images/copilot1.png)
 
 Selecteer **beheer uw apps**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot2.png)
+![ ChatGPT ](./images/copilot2.png)
 
 Selecteer **uploadt app**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot3.png)
+![ ChatGPT ](./images/copilot3.png)
 
 Selecteer **uploadt een douanetoepassing**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot4.png)
+![ ChatGPT ](./images/copilot4.png)
 
 Selecteer het manifestdossier dat aan u door uw instructeur werd gegeven en klik **Open**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot5.png)
+![ ChatGPT ](./images/copilot5.png)
 
 Klik **toevoegen**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot6.png)
+![ ChatGPT ](./images/copilot6.png)
 
 Klik **Open met Copilot**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot7.png)
+![ ChatGPT ](./images/copilot7.png)
 
 Adobe Marketing Agent is nu geladen.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilot8.png)
+![ ChatGPT ](./images/copilot8.png)
 
 Ga de herinnering `login` in en klik **verzenden** knoop.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin1.png)
+![ ChatGPT ](./images/copilotlogin1.png)
 
 Klik **Teken binnen aan Adobe Marketing Agent**.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin2.png)
+![ ChatGPT ](./images/copilotlogin2.png)
 
 Er wordt een nieuw venster geopend waarin u wordt gevraagd u aan te melden met uw Adobe-accountgegevens.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin3.png)
+![ ChatGPT ](./images/copilotlogin3.png)
 
 Na succesvolle authentificatie, kunt u de specifieke instantie moeten selecteren u wilt gebruiken. Selecteer de instantie aepImsOrgName als dit scherm wordt weergegeven.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin4.png)
+![ ChatGPT ](./images/copilotlogin4.png)
 
 Vervolgens wordt een vergelijkbare code gegenereerd. Klik **Exemplaar** om de code te kopiëren.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin5.png)
+![ ChatGPT ](./images/copilotlogin5.png)
 
 Plak de code in het venster van Adobe Marketing Agent in Copilot en klik **verzenden** knoop.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin6.png)
+![ ChatGPT ](./images/copilotlogin6.png)
 
 Dan zou je iets gelijkaardigs moeten zien. U bent nu aangemeld bij Adobe Marketing Agent in Microsoft 365 Copilot.
 
-![&#x200B; ChatGPT &#x200B;](./images/copilotlogin7.png)
+![ ChatGPT ](./images/copilotlogin7.png)
 
 ## 1.1.3.2 Context instellen in Adobe Marketing Agent
 
@@ -113,7 +113,7 @@ Voor deze exercitie moet de context worden ingesteld op:
 
   Met de instelling voor gegevensweergave kunt u bepalen naar welke AI-assistent voor gegevensweergave moet worden gekeken wanneer u vragen stelt.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilotlogin7.png)
+![ Agent Orchestrator ](./images/copilotlogin7.png)
 
 Om de zandbak te veranderen, ga het volgende bevel in en klik **verzend** knoop.
 
@@ -121,11 +121,11 @@ Om de zandbak te veranderen, ga het volgende bevel in en klik **verzend** knoop.
 change sandbox
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot9.png)
+![ Agent Orchestrator ](./images/copilot9.png)
 
 Dan zou je iets gelijkaardigs moeten zien. Selecteer zandbak u moet gebruiken en **selecteren** klikken.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot10.png)
+![ Agent Orchestrator ](./images/copilot10.png)
 
 Dan moet je dit zien. Om de gegevensmening te veranderen, ga het volgende bevel in en klik **verzend** knoop.
 
@@ -133,15 +133,15 @@ Dan moet je dit zien. Om de gegevensmening te veranderen, ga het volgende bevel 
 change dataview
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot11.png)
+![ Agent Orchestrator ](./images/copilot11.png)
 
 Dan zou je iets gelijkaardigs moeten zien. Selecteer de gegevensmening u moet gebruiken en **selecteren** klikken.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot12.png)
+![ Agent Orchestrator ](./images/copilot12.png)
 
 Dan moet je dit zien. De context is nu op de juiste wijze ingesteld, zodat u nu specifieke aanwijzingen kunt verzenden.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot13.png)
+![ Agent Orchestrator ](./images/copilot13.png)
 
 ## 1.1.3.3 Begin met algemene aankooptrends om context te verankeren en in vezel te zoomen
 
@@ -155,11 +155,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory over the last 4 months.
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot18.png)
+![ Agent Orchestrator ](./images/copilot18.png)
 
 U zou dan dit moeten zien:
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot19.png)
+![ Agent Orchestrator ](./images/copilot19.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -167,11 +167,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot20.png)
+![ Agent Orchestrator ](./images/copilot20.png)
 
 Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot21.png)
+![ Agent Orchestrator ](./images/copilot21.png)
 
 ## 1.1.3.4 Orders correleren met voorkeuren voor inhoud
 
@@ -187,11 +187,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which field is used to store the preferred genre
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot22.png)
+![ Agent Orchestrator ](./images/copilot22.png)
 
 Vervolgens ziet u dit. Het veld dat voor genre wordt gebruikt, is **_experiencePlatform.individualCharacteristics.preferences.preferredGenre** .
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot23.png)
+![ Agent Orchestrator ](./images/copilot23.png)
 
 Met deze informatie kunt u beginnen met het uitboren in de aankoopgegevens.
 
@@ -201,15 +201,15 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me ordersYTD by preferredGenre for the last 4 months
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot24.png)
+![ Agent Orchestrator ](./images/copilot24.png)
 
 Dan moet je dit zien. Klik **Gegevens van de Mening**.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot25.png)
+![ Agent Orchestrator ](./images/copilot25.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot26.png)
+![ Agent Orchestrator ](./images/copilot26.png)
 
 ## 1.1.3.5 Bestaande vezelreizen identificeren
 
@@ -223,11 +223,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 What journeys exist? 
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot28.png)
+![ Agent Orchestrator ](./images/copilot28.png)
 
 Daarna moet u een lijst met reizen zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot29.png)
+![ Agent Orchestrator ](./images/copilot29.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -235,11 +235,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot31.png)
+![ Agent Orchestrator ](./images/copilot31.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot33.png)
+![ Agent Orchestrator ](./images/copilot33.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -247,11 +247,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot35.png)
+![ Agent Orchestrator ](./images/copilot35.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot36.png)
+![ Agent Orchestrator ](./images/copilot36.png)
 
 ## 1.1.3.6 De reisprestaties valideren via een falloutanalyse
 
@@ -265,26 +265,26 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot37.png)
+![ Agent Orchestrator ](./images/copilot37.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot38.png)
+![ Agent Orchestrator ](./images/copilot38.png)
 
 Schuif een beetje meer omlaag om waarnemingen en aanbevelingen te zien. Klik de 3 punten **..** en selecteer dan **Details van de Reis** om de specifieke reis in Adobe Journey Optimizer te openen.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot40.png)
+![ Agent Orchestrator ](./images/copilot40.png)
 
 Dan moet je dit zien.
 
-![&#x200B; Agent Orchestrator &#x200B;](./images/copilot41.png)
+![ Agent Orchestrator ](./images/copilot41.png)
 
 Je hebt dit lab voltooid.
 
 ## Volgende stappen
 
-Ga naar [&#x200B; Adobe Marketing Agent voor Google Gemini &#x200B;](./ex4.md){target="_blank"}
+Ga naar [ Adobe Marketing Agent voor Google Gemini Onderneming ](./ex4.md){target="_blank"}
 
-Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
+Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
 
-[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
+[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}

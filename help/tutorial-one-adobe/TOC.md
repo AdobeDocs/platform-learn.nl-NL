@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1558'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
       + [1.1.1 Aan de slag met Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-      + [1.1.4 Adobe Marketing Agent voor Google Gemini](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.4 Adobe Marketing Agent voor Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
    + 1.2 Aan de slag met agents en AI {#agents2}
       + [Overzicht](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Aan de slag met kunstmatige intelligentie](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -169,7 +169,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
