@@ -2,31 +2,24 @@
 title: Overschakelen van labelomgevingen met Adobe Experience Cloud Debugger
 description: Leer hoe u met Foutopsporing in de cloud verschillende insluitcodes kunt laden. Deze les maakt deel uit van de zelfstudie Experience Cloud implementeren in websites.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
 # Overschakelen van labelomgevingen met Experience Cloud Debugger
 
-In deze les zult u de [&#x200B; uitbreiding van Adobe Experience Platform Debugger &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) gebruiken om het markeringsbezit te vervangen dat op de [&#x200B; Luma demo plaats &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen bezit wordt hard gecodeerd.
+In deze les zult u de [ uitbreiding van Adobe Experience Platform Debugger ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) gebruiken om het markeringsbezit te vervangen dat op de [ Luma demo plaats ](https://luma.enablementadobe.com/content/luma/us/en.html) met uw eigen bezit wordt hard gecodeerd.
 
 
 >[!WARNING]
 >
-> De Luma-website die in deze zelfstudie wordt gebruikt, wordt naar verwachting vervangen in de week van 16 februari 2026. Het werk dat in het kader van deze zelfstudie wordt uitgevoerd, is mogelijk niet van toepassing op de nieuwe website.
+> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [ Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
 
 Deze techniek wordt omgevingsomschakeling genoemd en is later handig wanneer u met tags op uw eigen website werkt. U zult uw productiewebsite in uw browser, maar met uw *ontwikkelings* markeringsmilieu kunnen laden. Hierdoor kunt u met vertrouwen wijzigingen in tags doorvoeren en valideren, onafhankelijk van uw reguliere code-releases.  Per slot van rekening is deze scheiding van marketing markeringsversies van uw regelmatige codeversies één van de belangrijkste redenen klanten in de eerste plaats labels gebruiken!
 
->[!NOTE]
->
->Adobe Experience Platform Launch wordt in Adobe Experience Platform geïntegreerd als een reeks technologieën voor gegevensverzameling. Verschillende terminologiewijzigingen zijn geïmplementeerd in de interface die u tijdens het gebruik van deze inhoud moet onthouden:
->
-> * Platform Launch (Client Side) is nu **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl)**
-> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=nl-NL)**
-> * De configuraties van Edge zijn nu **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=nl-NL)**
 
 ## Leerdoelen
 
@@ -39,25 +32,25 @@ Aan het eind van deze les, zult u kunnen:
 
 1. Open de pagina `Environments` in de eigenschap Tag
 
-1. In de **[!UICONTROL Development]** rij, klik het Install pictogram ![&#x200B; installeren pictogram &#x200B;](images/launch-installIcon.png) om modaal te openen
+1. In de **[!UICONTROL Development]** rij, klik het Install pictogram ![ installeren pictogram ](images/launch-installIcon.png) om modaal te openen
 
-1. Klik het pictogram van het Exemplaar ![&#x200B; pictogram van het Exemplaar &#x200B;](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren
+1. Klik het pictogram van het Exemplaar ![ pictogram van het Exemplaar ](images/launch-copyIcon.png) om de ingebedde code aan uw klembord te kopiëren
 
 1. Klik op **[!UICONTROL Close]** om het modale
 
-   ![&#x200B; installeer pictogram &#x200B;](images/launch-copyInstallCode.png)
+   ![ installeer pictogram ](images/launch-copyInstallCode.png)
 
 ## De URL van de tag op de demopsite van Luma vervangen
 
-1. Open de [&#x200B; plaats van de Luminagedemo &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
+1. Open de [ plaats van de Luminagedemo ](https://luma.enablementadobe.com/content/luma/us/en.html) in uw browser van Chrome
 
-1. Open de [&#x200B; Debugger van Experience Platform uitbreiding &#x200B;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door het ![&#x200B; Debugger pictogram &#x200B;](images/icon-debugger.png) pictogram te klikken
+1. Open de [ Debugger van Experience Platform uitbreiding ](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) door het ![ Debugger pictogram ](images/icon-debugger.png) pictogram te klikken
 
-   ![&#x200B; klik het Debugger pictogram &#x200B;](images/switchEnvironments-openDebugger.png)
+   ![ klik het Debugger pictogram ](images/switchEnvironments-openDebugger.png)
 
 1. De momenteel geïmplementeerde eigenschap tag wordt weergegeven op het tabblad Overzicht
 
-   ![&#x200B; markeringsmilieu dat in Debugger &#x200B;](images/switchEnvironments-debuggerOnWeRetail-prod.png) wordt getoond
+   ![ markeringsmilieu dat in Debugger ](images/switchEnvironments-debuggerOnWeRetail-prod.png) wordt getoond
 
 1. Ga naar het tabblad Gereedschappen
 1. Naar de sectie schuiven **[!UICONTROL Replace Launch Embed Code]**
@@ -65,11 +58,11 @@ Aan het eind van deze les, zult u kunnen:
 1. Schakel de functie Toepassen op luma.enablementadobe.com in en uit, zodat alle pagina&#39;s op de Luministsite worden toegewezen aan uw tag-eigenschap
 1. Klik op de knop **[!UICONTROL Save]**
 
-   ![&#x200B; markeringsmilieu dat in Debugger &#x200B;](images/switchEnvironments-debugger-save.png) wordt getoond
+   ![ markeringsmilieu dat in Debugger ](images/switchEnvironments-debugger-save.png) wordt getoond
 
 1. Laad de Luminasite opnieuw en controleer het tabblad Samenvatting van Foutopsporing. Onder de sectie van de Lancering, zou u uw Bezit van de Ontwikkeling nu moeten zien wordt gebruikt. Bevestig dat zowel de Naam van het bezit van u als dat het Milieu &quot;ontwikkeling&quot;zegt.
 
-   ![&#x200B; markeringsmilieu dat in Debugger &#x200B;](images/switchEnvironments-debuggerOnWeRetail.png) wordt getoond
+   ![ markeringsmilieu dat in Debugger ](images/switchEnvironments-debuggerOnWeRetail.png) wordt getoond
 
 >[!NOTE]
 >
