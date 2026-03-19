@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Deze les zal u door de stappen begeleiden om Adobe Audience Manager toe te laten gebruikend Server-kant Door:sturen.
 
-[&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
+[&#x200B; Adobe Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=nl-NL) (AAM) verleent de industrie-leidende diensten voor online beheer van publieksgegevens, die digitale adverteerders en uitgevers de hulpmiddelen geven die zij hebben moeten controleren en hefboomwerking hun gegevensactiva helpen verkoopsucces drijven.
 
 
 >[!WARNING]
 >
-> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
+> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview).
 
 
 ## Leerdoelen
@@ -42,7 +42,7 @@ Om deze les te voltooien, zult u nodig hebben:
 
    ![&#x200B; u kunt Debugger gebruiken om Audience Manager Subdomain op uw daadwerkelijke website te vinden &#x200B;](images/aam-debugger-partner.png)
 
-Als u Audience Manager niet reeds hebt uitgevoerd, volg deze instructies om [&#x200B; uw Subdomain van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html) te verkrijgen.
+Als u Audience Manager niet reeds hebt uitgevoerd, volg deze instructies om [&#x200B; uw Subdomain van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 ## Implementatieopties
 
@@ -52,7 +52,7 @@ Er zijn twee manieren om Audience Manager in een website te implementeren:
 
 * **client-kant DIL** - deze benadering is voor klanten die geen Adobe Analytics hebben. DIL-code (Data Integration Library Code, de AAM JavaScript-configuratiecode) verzendt gegevens rechtstreeks van de webpagina naar Audience Manager.
 
-Aangezien u Adobe Analytics al in deze zelfstudie hebt geïmplementeerd, implementeert u Audience Manager met Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
+Aangezien u Adobe Analytics al in deze zelfstudie hebt geïmplementeerd, implementeert u Audience Manager met Server-Side Forwarding. Voor een volledige beschrijving en vereisten lijst voor server-zij het door:sturen, te herzien gelieve de [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=nl-NL), zodat u met vertrouwd bent hoe het werkt, wat wordt vereist, en hoe te bevestigen.
 
 ## Server-Side Forwarding inschakelen
 
@@ -93,7 +93,7 @@ Een configuratie in Adobe Analytics Admin Console is vereist om gegevens van Ado
 >
 >Aangezien SSF per rapportreeks moet worden toegelaten, vergeet niet deze stap voor uw echte rapportreeksen te herhalen wanneer u SSF op uw daadwerkelijke het rapportreeks van de plaats opstelt.
 >
->Als de SSF-optie grijs wordt weergegeven, moet u ook de rapportsuite(s) toewijzen aan uw Experience Cloud-organisatie om deze optie in te schakelen. Dit wordt verklaard in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+>Als de SSF-optie grijs wordt weergegeven, moet u ook de rapportsuite(s) toewijzen aan uw Experience Cloud-organisatie om deze optie in te schakelen. Dit wordt verklaard in [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=nl-NL).
 
 Als deze stap is voltooid en u de Adobe Experience Platform Identity Service hebt ingeschakeld, worden de gegevens doorgestuurd van Analytics naar AAM. Als u het proces echter wilt voltooien, zodat de reactie correct terugkomt van AAM naar de pagina (en ook naar Analytics via de Audience Analytics-functie), moet u ook de volgende stap in de tags uitvoeren. Maak je geen zorgen, het is supergemakkelijk.
 
@@ -115,7 +115,7 @@ Dit is de tweede van twee stappen om SSF toe te laten. U hebt de switch al gespi
 
 1. Schakel het selectievakje in op **[!UICONTROL Automatically share Analytics Data with Audience Manager]** . Hiermee voegt u de Audience Manager &quot;Module&quot; (code) toe aan de Analytics `AppMeasurement.js` -implementatie.
 
-1. Voeg uw &quot;Subdomain van Audience Manager&quot;toe (die ook als &quot;de Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner wordt bekend&quot;). Volg deze instructies om [&#x200B; uw Subdomain van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html) te verkrijgen.
+1. Voeg uw &quot;Subdomain van Audience Manager&quot;toe (die ook als &quot;de Naam van de Partner,&quot;identiteitskaart van de Partner,&quot;of &quot;Subdomain van de Partner wordt bekend&quot;). Volg deze instructies om [&#x200B; uw Subdomain van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=nl-NL) te verkrijgen.
 
 1. Klikken **[!UICONTROL Save to Library and Build]**
 

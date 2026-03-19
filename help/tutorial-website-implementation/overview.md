@@ -18,7 +18,7 @@ Elke les bevat hoe kan ik-oefeningen en fundamentele informatie om u te helpen E
 
 >[!WARNING]
 >
-> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
+> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview).
 
 
 Nadat u dit hebt voltooid, kunt u:
@@ -48,7 +48,7 @@ Nadat u dit hebt voltooid, kunt u:
 
 In deze lessen wordt aangenomen dat u een Adobe-id en de vereiste machtigingen hebt om de oefeningen te voltooien. Als dat niet het geval is, moet u mogelijk contact opnemen met uw Experience Cloud-beheerder om toegang aan te vragen.
 
-* Voor tags moet u gemachtigd zijn om omgevingen te ontwikkelen, goed te keuren, te publiceren, te beheren en te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Voor tags moet u gemachtigd zijn om omgevingen te ontwikkelen, goed te keuren, te publiceren, te beheren en te beheren. Voor meer informatie over de toestemmingen van de markeringsgebruiker, zie [&#x200B; de documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=nl-NL).
 * Voor Adobe Analytics moet u weten welke trackingserver u gebruikt om deze zelfstudie te voltooien.
 * Voor Audience Manager, moet u uw Subdomain van Audience Manager kennen (die ook als &quot;Partner identiteitskaart,&quot;of &quot;Partner Subdomain&quot; wordt bekend)
 
@@ -69,7 +69,7 @@ Tags zijn ook een platform waarmee externe leveranciers extensies kunnen maken, 
 
 >[!WARNING]
 >
-> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
+> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview).
 
 In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandelswebsite met de naam Luma. De [&#x200B; plaats van de Luma &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) heeft een rijke gegevenslaag en functionaliteit die u zal toestaan om een realistische implementatie te bouwen. U gaat uw eigen tag-eigenschap maken in uw eigen Experience Cloud-organisatie en deze toewijzen aan onze gehoste Luma-site met de Experience Cloud Debugger.
 
@@ -123,7 +123,7 @@ In deze lessen implementeert u de Adobe Experience Cloud in een nep-detailhandel
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/nl-NL/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

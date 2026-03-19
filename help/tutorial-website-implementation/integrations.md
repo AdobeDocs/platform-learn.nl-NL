@@ -16,7 +16,7 @@ In deze les, zult u de belangrijkste integraties tussen de oplossingen herzien u
 
 >[!WARNING]
 >
-> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview).
+> Deze zelfstudie en de bijbehorende Luma-website-oefeningen blijven niet meer behouden en zijn afhankelijk van oudere JavaScript-bibliotheken. Om de huidige beste praktijken te leren, te gebruiken gelieve [&#x200B; Adobe Experience Cloud met het leerprogramma van SDK van het Web uit te voeren &#x200B;](https://experienceleague.adobe.com/nl/docs/platform-learn/implement-web-sdk/overview).
 
 ## Leerdoelen
 
@@ -33,12 +33,12 @@ U zou alle vorige lessen in deze zelfstudie moeten voltooien alvorens de instruc
 >
 >Er zijn vele gebruiker-toestemmingsvereisten, rekeningsconfiguraties, en leveringsstappen die worden vereist om deze integratie volledig te gebruiken en die buiten het werkingsgebied van dit leerprogramma zijn. Als u deze integratie nog niet gebruikt in uw huidige implementatie van de Experience Cloud, moet u het volgende overwegen:
 >
->* Herzie de volledige vereisten van de [&#x200B; Integraties van de Diensten van de Kern &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
->* Herzie de volledige vereisten van [&#x200B; Analytics voor de integratie van het Doel &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
+>* Herzie de volledige vereisten van de [&#x200B; Integraties van de Diensten van de Kern &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/getting-started)
+>* Herzie de volledige vereisten van [&#x200B; Analytics voor de integratie van het Doel &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/integrate/a4t/before-implement)
 
 ## Doelgroepen
 
-[&#x200B; Soorten publiek &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in Audience Manager maken en dit gebruiken om persoonlijke inhoud te leveren bij Target.
+[&#x200B; Soorten publiek &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/services/audiences/overview) maakt deel uit van de Dienst van de Kern van Mensen en staat u toe om publiek tussen oplossingen te delen. U kunt bijvoorbeeld een publiek in Audience Manager maken en dit gebruiken om persoonlijke inhoud te leveren bij Target.
 
 De belangrijkste vereisten om A4T uit te voeren-die u reeds hebt gedaan-zijn:
 
@@ -76,7 +76,7 @@ Deze validatiestappen zijn gericht op het kritieke onderdeel dat zichtbaar is in
 
 ## Analyses voor doel (A4T)
 
-De [&#x200B; Analytics voor de integratie van het Doel (A4T) &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) staat u toe om uw gegevens van Analytics als bron voor het melden van metriek in Doel te hefboomwerking.
+De [&#x200B; Analytics voor de integratie van het Doel (A4T) &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) staat u toe om uw gegevens van Analytics als bron voor het melden van metriek in Doel te hefboomwerking.
 
 De belangrijkste vereisten om A4T uit te voeren-die u reeds hebt gedaan-zijn:
 
@@ -115,7 +115,7 @@ Als u extra verzoeken van het Doel in het werkingsgebied van een paginading (exc
 
 ## Klantkenmerken
 
-[&#x200B; de Attributen van de Klant &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) is een deel van de Dienst van de Kern van Mensen die u toestaat om gegevens van uw gegevensbestand van het het beheer van de klantenverhouding (CRM) te uploaden en hefboomwerking het in Adobe Analytics en Adobe Target.
+[&#x200B; de Attributen van de Klant &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) is een deel van de Dienst van de Kern van Mensen die u toestaat om gegevens van uw gegevensbestand van het het beheer van de klantenverhouding (CRM) te uploaden en hefboomwerking het in Adobe Analytics en Adobe Target.
 
 De belangrijkste vereisten om de Attributen van de Klant uit te voeren—die u reeds hebt gedaan-zijn:
 
