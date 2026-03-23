@@ -39,61 +39,61 @@ Dit lab is in ontwikkeling.
 
 ## 1.1.4.1 Toegang tot Google Gemini Enterprise
 
-Ga naar [ https://cloud.google.com/gemini-enterprise ](https://cloud.google.com/gemini-enterprise). Klik **Begin 30 dag vrije proef**.
+Ga naar [&#x200B; https://cloud.google.com/gemini-enterprise &#x200B;](https://cloud.google.com/gemini-enterprise). Klik **Begin 30 dag vrije proef**.
 
-![ Gemini ](./images/gemini1.png)
+![&#x200B; Gemini &#x200B;](./images/gemini1.png)
 
 Ga het e-mailadres van uw Google rekening in en klik **verdergaan met e-mail**.
 
-![ Gemini ](./images/gemini2.png)
+![&#x200B; Gemini &#x200B;](./images/gemini2.png)
 
 Verstrek uw eerste en achternaam en klik dan **akkoord &amp; begonnen worden**.
 
-![ Gemini ](./images/gemini3.png)
+![&#x200B; Gemini &#x200B;](./images/gemini3.png)
 
 Klik **ik zal dit later** doen.
 
-![ Gemini ](./images/gemini4.png)
+![&#x200B; Gemini &#x200B;](./images/gemini4.png)
 
 Dan moet je dit zien.
 
-![ Gemini ](./images/gemini5.png)
+![&#x200B; Gemini &#x200B;](./images/gemini5.png)
 
-Ga naar [ https://cloud.google.com/gemini-enterprise ](https://cloud.google.com/gemini-enterprise).
+Ga naar [&#x200B; https://cloud.google.com/gemini-enterprise &#x200B;](https://cloud.google.com/gemini-enterprise).
 
 Dan moet je iets dergelijks zien. Mogelijk moet u ook eerst uw factureringsaccount maken en deze daarna hier selecteren.
 
-![ Gemini ](./images/gemini6.png)
+![&#x200B; Gemini &#x200B;](./images/gemini6.png)
 
 Klik **Begin 30 dag kostenvrije proef**.
 
-![ Gemini ](./images/gemini7.png)
+![&#x200B; Gemini &#x200B;](./images/gemini7.png)
 
 Klik **verdergaan en activeren API**.
 
-![ Gemini ](./images/gemini8.png)
+![&#x200B; Gemini &#x200B;](./images/gemini8.png)
 
 Klik **creëren**.
 
-![ Gemini ](./images/gemini9.png)
+![&#x200B; Gemini &#x200B;](./images/gemini9.png)
 
 Dan moet je dit zien.
 
-![ Gemini ](./images/gemini10.png)
+![&#x200B; Gemini &#x200B;](./images/gemini10.png)
 
 ## 1.1.4.2 Een aangepaste agent maken met A2A
 
-Ga naar [ https://console.cloud.google.com/gemini-enterprise ](https://console.cloud.google.com/gemini-enterprise). Klik **Agenten**.
+Ga naar [&#x200B; https://console.cloud.google.com/gemini-enterprise &#x200B;](https://console.cloud.google.com/gemini-enterprise). Klik **Agenten**.
 
-![ Gemini ](./images/gemini10a.png)
+![&#x200B; Gemini &#x200B;](./images/gemini10a.png)
 
 Klik **+ voeg agent** toe.
 
-![ Gemini ](./images/gemini11.png)
+![&#x200B; Gemini &#x200B;](./images/gemini11.png)
 
 Selecteer **de agent van de Douane via A2A**.
 
-![ Gemini ](./images/gemini12.png)
+![&#x200B; Gemini &#x200B;](./images/gemini12.png)
 
 Plak de **Kaart JSON van de Agent**.
 
@@ -101,19 +101,19 @@ Plak de **Kaart JSON van de Agent**.
 >
 >Controle met uw vertegenwoordiger van Adobe om de **Kaart JSON van de Agent** informatie te krijgen.
 
-![ Gemini ](./images/gemini13.png)
+![&#x200B; Gemini &#x200B;](./images/gemini13.png)
 
 Na het kleven van de **Kaart JSON van de Agent**, klik **de agentendetails van de Voorproef**.
 
-![ Gemini ](./images/gemini14.png)
+![&#x200B; Gemini &#x200B;](./images/gemini14.png)
 
 Dan moet je iets dergelijks zien. De rol neer en klikt **daarna**.
 
-![ Gemini ](./images/gemini15.png)
+![&#x200B; Gemini &#x200B;](./images/gemini15.png)
 
 Dan moet je iets dergelijks zien.
 
-![ Gemini ](./images/gemini16.png)
+![&#x200B; Gemini &#x200B;](./images/gemini16.png)
 
 Vul de velden voor uw instantie in.
 
@@ -149,49 +149,49 @@ openid email profile
 
 Klik **Afwerking**.
 
-![ Gemini ](./images/gemini17.png)
+![&#x200B; Gemini &#x200B;](./images/gemini17.png)
 
 Dan moet je dit zien.
 
-![ Gemini ](./images/gemini18.png)
+![&#x200B; Gemini &#x200B;](./images/gemini18.png)
 
 ## 1.1.4.3 Aanmelden bij Adobe Marketing Agent
 
 Ga naar **Overzicht** en klik dan **Voorproef**.
 
-![ Gemini ](./images/gemini19.png)
+![&#x200B; Gemini &#x200B;](./images/gemini19.png)
 
 Klik **begonnen krijgen**
 
-![ Gemini ](./images/gemini20.png)
+![&#x200B; Gemini &#x200B;](./images/gemini20.png)
 
 Ga naar **Agenten**. U zou **Adobe Marketing Agent** daar moeten zien.
 
-![ Gemini ](./images/gemini21.png)
+![&#x200B; Gemini &#x200B;](./images/gemini21.png)
 
 Klik de 3 punten **..** en selecteer dan **Vastzetten**.
 
-![ Gemini ](./images/gemini22.png)
+![&#x200B; Gemini &#x200B;](./images/gemini22.png)
 
 Ga naar **Nieuwe praatje** en ga het symbool **@** in het praatje in. Klik **Adobe Marketing Agent**.
 
-![ Gemini ](./images/gemini23.png)
+![&#x200B; Gemini &#x200B;](./images/gemini23.png)
 
 Ga het bevel `login` in en klik dan **verzenden**.
 
-![ Gemini ](./images/gemini24.png)
+![&#x200B; Gemini &#x200B;](./images/gemini24.png)
 
 Dan moet je dit zien. Klik **autoriseren**.
 
-![ Gemini ](./images/gemini25.png)
+![&#x200B; Gemini &#x200B;](./images/gemini25.png)
 
 Klik **Toestaan Toegang** en voltooi login gebruikend uw Adobe ID, en selecteer de instantie `--aepImsOrgName--` wanneer ertoe aangezet.
 
-![ Gemini ](./images/gemini26.png)
+![&#x200B; Gemini &#x200B;](./images/gemini26.png)
 
 Dan moet je dit zien.
 
-![ Gemini ](./images/gemini27.png)
+![&#x200B; Gemini &#x200B;](./images/gemini27.png)
 
 ## 1.1.4.4 Context instellen in Adobe Marketing Agent
 
@@ -213,11 +213,11 @@ Om de zandbak te veranderen, ga het volgende bevel in en klik **verzend** knoop.
 list sandboxes
 ```
 
-![ Agent Orchestrator ](./images/gemini28.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/gemini28.png)
 
 Dan zou je iets gelijkaardigs moeten zien. Ga het bevel `switch to sandbox accelerate` in en klik **verzenden** knoop.
 
-![ Agent Orchestrator ](./images/geminilab10.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab10.png)
 
 Dan moet je dit zien. Om de gegevensmening te veranderen, ga het volgende bevel in en klik **verzend** knoop.
 
@@ -225,15 +225,15 @@ Dan moet je dit zien. Om de gegevensmening te veranderen, ga het volgende bevel 
 list dataviews
 ```
 
-![ Agent Orchestrator ](./images/geminilab11.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab11.png)
 
 Dan zou je iets gelijkaardigs moeten zien. Ga het bevel `switch dataview to Accelerate 2026 B2C` in en klik **verzenden** knoop.
 
-![ Agent Orchestrator ](./images/geminilab12.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab12.png)
 
 Dan moet je dit zien. De context is nu op de juiste wijze ingesteld, zodat u nu specifieke aanwijzingen kunt verzenden.
 
-![ Agent Orchestrator ](./images/geminilab13.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab13.png)
 
 ## 1.1.4.5 Begin met algemene aankooptrends om context te verankeren en in vezel te zoomen
 
@@ -247,11 +247,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory over the last 7 months.
 ```
 
-![ Agent Orchestrator ](./images/geminilab18.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab18.png)
 
 U zou dan dit moeten zien:
 
-![ Agent Orchestrator ](./images/geminilab19.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab19.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -259,11 +259,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
 ```
 
-![ Agent Orchestrator ](./images/geminilab20.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab20.png)
 
 Je zou dan dit moeten zien, die naar vezelspecifieke tendensen daalt.
 
-![ Agent Orchestrator ](./images/geminilab21.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab21.png)
 
 ## 1.1.4.6 Orders correleren met voorkeuren voor inhoud
 
@@ -279,11 +279,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which field is used to store the preferred genre
 ```
 
-![ Agent Orchestrator ](./images/geminilab22.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab22.png)
 
 Vervolgens ziet u dit. Het veld dat voor genre wordt gebruikt, is **_experiencePlatform.individualCharacteristics.preferences.preferredGenre** .
 
-![ Agent Orchestrator ](./images/geminilab23.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab23.png)
 
 Met deze informatie kunt u beginnen met het uitboren in de aankoopgegevens.
 
@@ -293,11 +293,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
-![ Agent Orchestrator ](./images/geminilab24.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab24.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/geminilab25.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab25.png)
 
 ## 1.1.4.7 Bestaande vezelreizen identificeren
 
@@ -311,11 +311,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 What journeys exist? 
 ```
 
-![ Agent Orchestrator ](./images/geminilab28.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab28.png)
 
 Daarna moet u een lijst met reizen zien.
 
-![ Agent Orchestrator ](./images/geminilab29.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab29.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -323,11 +323,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![ Agent Orchestrator ](./images/geminilab31.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab31.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/geminilab33.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab33.png)
 
 Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 
@@ -335,11 +335,11 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
-![ Agent Orchestrator ](./images/geminilab35.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab35.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/geminilab36.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab36.png)
 
 ## 1.1.4.8 De reisprestaties valideren via een falloutanalyse
 
@@ -353,14 +353,14 @@ Ga de volgende **Herinnering** in en klik **verzenden** knoop.
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![ Agent Orchestrator ](./images/geminilab37.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab37.png)
 
 Dan moet je dit zien.
 
-![ Agent Orchestrator ](./images/geminilab38.png)
+![&#x200B; Agent Orchestrator &#x200B;](./images/geminilab38.png)
 
 Je hebt dit lab voltooid.
 
-Ga terug naar [ Agent Orchestrator ](./agentorchestrator.md){target="_blank"}
+Ga terug naar [&#x200B; Agent Orchestrator &#x200B;](./agentorchestrator.md){target="_blank"}
 
-[ ga terug naar Alle Modules ](./../../../overview.md){target="_blank"}
+[&#x200B; ga terug naar Alle Modules &#x200B;](./../../../overview.md){target="_blank"}
