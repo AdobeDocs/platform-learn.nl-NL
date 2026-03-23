@@ -1,23 +1,23 @@
 ---
-title: Aangepaste Firefly-workflows
-description: Aangepaste Firefly-workflows
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
-# 1.7 Aangepaste Firefly-workflows
+# 1.7 Firefly Creative Production for Enterprise
 
-Firefly Custom Workflows richt zich vooral op creatieve technologen en ontwikkelaars van oplossingen die workflows maken en configureren.
+Firefly Creative Production for Enterprise richt zich in de eerste plaats op creatieve technologen en oplossingsontwikkelaars die workflows creëren en configureren.
 
-Met aangepaste Firefly-workflows kunt u:
+Met Firefly Creative Production for Enterprise kunt u:
 
 - Workflows maken: in meerdere stappen productieworkflows maken met behulp van een visuele interface met handmatige of AI-ondersteuning.
 - Workflows uitvoeren: workflows op schaal uitvoeren, inclusief batchverwerking, met een robuuste runtime die buiten de browser werkt.
@@ -33,7 +33,7 @@ De belangrijkste ondersteunde gebruiksgevallen zijn onder andere:
 
 ## Vereisten
 
-- Toegang tot aangepaste Firefly-workflows
+- Toegang tot Firefly Creative Production for Enterprise
 
 ## Video
 
@@ -43,18 +43,18 @@ In deze video krijgt u een uitleg en demonstratie van alle stappen die bij deze 
 
 ## Uitoefening
 
-[&#x200B; 1.7.1 die met de Werkschema&#39;s van de Douane van Firefly &#x200B;](./ex1.md){target="_blank"} wordt begonnen
+[ 1.7.1 die met Firefly Creative Production for Enterprise ](./ex1.md){target="_blank"} wordt begonnen
 
 In deze oefening, zult u beginnen de Bouwer van het Werkschema te gebruiken.
 
-[&#x200B; 1.7.2 voert programmatically uw douanewerkschema uit &#x200B;](./ex2.md){target="_blank"}
+[ 1.7.2 voert programmatically uw douanewerkschema uit ](./ex2.md){target="_blank"}
 
 In deze oefening, zult u uw douanewerkschema programmatically uitvoeren gebruikend Postman en Workfront Fusion.
 
-![&#x200B; Indexen van de Tech &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![ Indexen van de Tech ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Als u vragen hebt, wil algemene terugkoppelen van hebben suggesties over toekomstige inhoud delen, gelieve direct contactTech Insiders, door een e-mail naar **techinsiders@adobe.com** te verzenden.
 
-Ga terug naar [&#x200B; Alle Modules &#x200B;](../../../overview.md){target="_blank"}
+Ga terug naar [ Alle Modules ](../../../overview.md){target="_blank"}

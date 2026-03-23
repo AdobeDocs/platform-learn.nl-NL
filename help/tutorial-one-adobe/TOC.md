@@ -4,9 +4,9 @@ breadcrumb-title: Eén technische zelfstudie voor Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 3%
    + 1.1 Overzicht van Adobe Firefly Services {#crpr1}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
       + [1.1.1 Aan de slag met Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2 Optimaliseer uw Firefly-processen met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.2 Firefly-processen optimaliseren met Microsoft Azure en vooraf ondertekende URL&#39;s](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Werken met Photoshop API&#39;s](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly API voor aangepaste modellen](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
@@ -114,9 +114,9 @@ ht-degree: 3%
       + [1.6.3 Een externe DAM-app maken en implementeren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Uw app privé publiceren](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Samenvatting en voordelen](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Aangepaste Firefly-workflows {#crpr7}
+   + 1.7 Firefly Creative Production for Enterprise {#crpr7}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Aan de slag met aangepaste Firefly-workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Aan de slag met Firefly Creative Production for Enterprise](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
       + [1.7.2 De aangepaste workflow programmatisch uitvoeren](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Unified Review &amp; Approval met Workfront, Frame.io en Enterprise Storage Management {#crpr8}
       + [Overzicht](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
@@ -169,7 +169,7 @@ ht-degree: 3%
          + [1.2.1 De website verkennen](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 Vorm Schema&#39;s en plaats Herkenningstekens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 Gegevensbestanden configureren](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [&#x200B; 1.2.4 Ingestie van Gegevens van Off-line Bronnen &#x200B;](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + [ 1.2.4 Ingestie van Gegevens van Off-line Bronnen ](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Gegevenslandingszone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 Federale Audience Composition {#dc13}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -200,11 +200,11 @@ ht-degree: 3%
       + 2.4 Real-Time CDP: Audience Activation naar Microsoft Azure Event Hub {#rtcdp24}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Uw omgeving configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
-         + [2.4.2 Uw Microsoft Azure EventHub-omgeving configureren](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3 Configureer uw Azure Event Hub Destination in Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.2 Configureer uw Microsoft Azure EventHub-omgeving](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
+         + [2.4.3 Vorm uw Bestemming van de Hub van de Gebeurtenis van Azure in Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4 Soorten publiek maken](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5 Activeer uw publiek](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
-         + [2.4.6 Maak uw Microsoft Azure-project](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
+         + [2.4.6 Uw Microsoft Azure-project maken](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 End-to-end scenario](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
       + 2.5 Real-Time CDP-verbindingen: gebeurtenissen doorsturen{#rtcdp25}
          + [Overzicht](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
